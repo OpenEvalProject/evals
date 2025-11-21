@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C47",
+      "C48",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C23",
+      "C62"
+    ],
+    "result": "The study identifies thousands of sex-biased genes across mouse organs (13-5,645 in somatic organs; 3,444-13,383 in gonadal comparisons), with marked organ-specific and taxon-specific differences. Brain shows the lowest numbers among somatic organs while kidney shows the highest. Female-biased genes consistently outnumber male-biased genes across all comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C70 are well-supported by Figure 1 data showing consistent patterns across 576 samples from 4 taxa. The statistical methodology (1.25-fold cutoff + Wilcoxon test + FDR<0.1) is appropriately stringent. The observation that gonads harbor the largest numbers (C23) is confirmed by both citations and data. Sample size (n=9 per sex per taxon) provides adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C2",
+      "C3"
+    ],
+    "result": "Sex-biased gene expression shows extremely high evolutionary turnover in somatic tissues, with fewer than 10% of genes in brain and heart conserved across more than one taxon, and only 0.3-5.3% conserved across all four taxa. In contrast, gonadal tissues show higher conservation but still substantial turnover. Notably, 596 somatic genes and 3,895 gonadal genes reverse their sex-bias direction between taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 are strongly supported by Figure 2A data showing clear quantitative patterns of gene sharing. The finding of sex-bias reversal (C80-C82) is documented in source data. The contrast between somatic and gonadal turnover (C2, C3) is consistently demonstrated. However, the interpretation that gonadal conservation reflects cell-type differences (C89) is somewhat speculative, though biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Comparative turnover analysis reveals that somatic sex-biased genes evolve significantly faster than non-sex-biased genes (negative values in Figure 2B for all somatic organs except DOM-MUS kidney), while gonadal sex-biased genes show similar or slower turnover rates compared to non-sex-biased genes (positive values).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by the resampling analysis in Figure 2B with appropriate statistical controls (1,000 resamples of 1,000 genes). The methodology of comparing sex-biased turnover to same-sex between-taxa comparisons is sound. The kidney exception in DOM-MUS (C87) is acknowledged but unexplained, which is appropriately cautious. Standard deviations are reported as very small (~0.015), supporting statistical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C34",
+      "C94",
+      "C95"
+    ],
+    "result": "Sex-biased genes exhibit significantly higher expression variance than non-sex-biased genes, particularly in somatic tissues. Reciprocal gene sets (sex-biased in one taxon but not another) show variance levels comparable to sex-biased genes, suggesting that higher baseline variation facilitates the evolution of sex-biased expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by Figure 3A using appropriate non-parametric variance measures (IQR/median). The reciprocal gene set analysis (C94) provides a clever control for testing whether sex-biased genes are recruited from high-variance genes. Most pairwise comparisons are significant (p<<0.01), with non-significant comparisons appropriately marked. The inference about facilitation (C95) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "McDonald-Kreitman tests reveal elevated adaptive substitution rates (alpha values) in sex-biased genes compared to non-biased genes, with female-biased genes showing higher rates than male-biased genes. Genes sex-biased in both DOM and MUS show higher alpha values (0.35-0.37) than genes sex-biased in only one taxon (0.14-0.22), indicating stronger selection with longer evolutionary time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 are supported by Figure 3B using the asymptotic MK test, which appropriately controls for demographic factors and slightly deleterious variants. The use of 1,000 bootstrap replications provides robust statistical estimates. The comparison with reciprocal orthologs (C101) strengthens the inference of lineage-specific adaptive evolution. However, combining female- and male-biased genes for lineage-specific tests (mentioned in text) may reduce power to detect sex-specific patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "WGCNA analysis reveals that sex-biased genes are non-randomly enriched in specific co-expression modules rather than proportionally distributed across all modules. Module enrichment patterns tend to be retained across taxa despite gene turnover, with organ-specific patterns (e.g., heart module 1, liver module 2, mammary module 6). However, this pattern is heterogeneous and does not apply uniformly across all organs and taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C119 are supported by Figure 4 showing clear module enrichment patterns. The WGCNA methodology is appropriate, using 48 DOM female samples to achieve sufficient power (soft power \u03b2=4-8 reaching saturation). The acknowledgment of heterogeneity (C119) is scientifically honest. However, the analysis is limited to female-biased genes due to sample size requirements, which may miss male-specific module patterns. The inference about module-based recruitment (C118) is plausible but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C131",
+      "C132",
+      "C39"
+    ],
+    "result": "SBI values show no significant correlation between different organs within the same individuals (Spearman's rank correlation, all p>0.05 after multiple testing correction), indicating that the degree of 'femaleness' or 'maleness' varies independently across organs within individuals, supporting a mosaic model of somatic sex determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C131-C132, C39 are supported by statistical analysis documented in Figure 5\u2014source data 2. The use of Spearman's rank correlation is appropriate for this data type, and multiple testing correction is properly applied. The inference of mosaic patterns (C132, C39) follows logically from the lack of correlation. This is a novel finding that directly addresses individual-level variation, which has been lacking in previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C130",
+      "C6"
+    ],
+    "result": "SBI distributions show variable patterns of overlap versus separation between sexes across organs and taxa. Somatic organs display variable overlap patterns (e.g., kidney and liver show separation in DOM/MUS but overlap in SPR/SPI), while gonadal comparisons consistently show strict binary separation. These patterns evolve rapidly between taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C130 are well-supported by Figure 5 showing density distributions of normalized SBI values. The contrast between somatic overlap and gonadal separation is clear and consistent. The organ-specific and taxon-specific variation in overlap patterns is documented. However, the interpretation that gonadal separation is expected due to different morphological structures (C130) somewhat conflates cell-type composition with sex-biased expression, though this is acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C145",
+      "C146",
+      "C147",
+      "C38",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C215"
+    ],
+    "result": "Human tissues show substantially fewer sex-biased genes than mice (only 10 of 27 tissues have \u22655 sex-biased genes per sex), with 'Adipose Subcutaneous' and 'Breast Mammary Tissue' showing the highest numbers. SBI distributions in humans show stronger overlap between sexes than in mice, with only ovary vs. testis showing clear separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C151, C215 are supported by Figure 7 comparing human GTEx data to mouse data using the same statistical criteria. The comparison with Oliva et al. 2020 gene lists (C150-C151) provides validation. However, the human data has significant limitations acknowledged by the authors: heterogeneous age distributions, variable data quality, death reasons, and different individuals for different organs. The more stringent filtering (1.25-fold + FDR) appropriately reduces false positives but may also reduce sensitivity in the noisier human dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Single-cell RNA-seq analysis of human brain tissues (DLPFC and MTG) reveals low levels of sex-biased expression across 12-15 cell types, with no particular cell type showing strong male-female differentiation. This may be partly due to individual age or insufficient coverage of low-expressed genes in single-cell datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C161 are based on Table 1 data from Alzheimer's disease control individuals. While the analysis is methodologically sound, the interpretation is limited by several factors: (1) individuals are older (though 'control' for disease), (2) single-cell RNA-seq has known coverage limitations for lowly expressed genes, (3) sample sizes are small (6-7 per sex), and (4) the conclusion about lack of cell-type differentiation (C161) may be premature given these technical limitations. The speculation about causes (C160) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C172",
+      "C173",
+      "C224"
+    ],
+    "result": "Only 11 genes show conserved sex-biased expression across mice and humans in multiple tissues: 8 female-biased (including Xist) and 3 male-biased (all Y-chromosomal). Four conserved genes (Kdm5c, Kdm5d, Kdm6a, Uty) are epigenetic regulators involved in histone modification, and these themselves show tissue-specific sex-biased expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C173, C224 are supported by Figure 8 using stringent conservation criteria (sex-biased in all 4 mouse taxa + \u22652 tissues + human ortholog sex-biased). The identification of epigenetic regulators is well-documented with appropriate citations (C169-C170). The observation that these regulators themselves show sex-biased expression (C172-C173) is an important finding suggesting complex regulatory networks. However, the inference about their role in driving fast evolution (C171) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C189",
+      "C190"
+    ],
+    "result": "The authors argue that sex-biased gene expression turnover is driven by adaptive selection rather than neutral divergence, based on: (1) Wilcoxon tests showing sex-biased genes have significantly different variance distributions between sexes, (2) faster turnover of sex-biased vs. non-sex-biased genes, (3) non-random module enrichment, and (4) variable numbers across organs/taxa inconsistent with neutral expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C183-C190 present a logical argument for adaptive evolution, but the evidence is circumstantial rather than definitive. The Wilcoxon test (C183-C185) demonstrates non-random differences but doesn't directly prove selection. The faster turnover (C186) is consistent with selection but assumes non-sex-biased genes evolve neutrally, which may not be entirely accurate. The module patterns (C189) argue against neutrality but could also reflect developmental constraints. The interpretation is reasonable but alternative explanations (e.g., relaxed constraint, drift in small effective population sizes for regulatory elements) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C49",
+      "C50",
+      "C33"
+    ],
+    "result": "Most sex-biased genes are organ-specific, with only very few genes showing sex-biased expression across all organs within a taxon. These genes are expressed in organ-specific co-expression modules, and only a small percentage shows conserved sex-biased expression across all four mouse lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C49-C50 are supported by Figure 1\u2014source data 5 and previous citations. The organ-specificity is well-documented and consistent with prior studies (Naqvi et al. 2019, Rodr\u00edguez-Montes et al. 2023). The module analysis (C32) is supported by Figure 4. The low conservation across lineages (C33) is shown in Figure 2A. These findings are internally consistent and well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "X-chromosomal genes show complex patterns of sex-biased expression. Genes sex-biased across all tissues include Xist and Eif2s3x, plus genes that escape X-inactivation in tissue-specific patterns. Averaged across somatic tissues, the X-chromosome shows 4.3% female-biased vs. 2.3% male-biased genes, reflecting a relative deficiency of male-biased genes rather than excess female-biased genes (given 4.7% of genes are X-linked). Gonadal organs show the opposite trend, and patterns vary substantially between organs and taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by Figure 1\u2014source data 1 and appropriate citations. The mathematical reasoning about X-chromosome enrichment (C57-C59) is sound: comparing observed percentages (4.3% female, 2.3% male) to the expected 4.7% shows male deficiency rather than female excess. The identification of X-inactivation escapees (C53-C55) is well-documented. However, the conclusion that there is 'no simple explanation' (C61) may be overstated\u2014the patterns could reflect known mechanisms of X-inactivation escape and dosage compensation, though their tissue-specificity adds complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C27"
+    ],
+    "result": "The study design includes 576 samples: 9 age-matched females and males from each of 4 taxa, with 5 somatic organs and 3 gonadal organ parts per individual. Sex-biased genes were identified using a 1.25-fold ratio cutoff combined with Wilcoxon rank sum test and FDR<0.1, criteria more stringent than previous somatic studies. The Wilcoxon test filters out genes with neutrally fluctuating variances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 describe the experimental design and statistical methodology, which are well-documented and appropriate. The sample size (n=9 per sex per taxon) provides adequate statistical power for non-parametric tests. The 1.25-fold cutoff is conservative compared to some studies but appropriate for somatic tissues where differences are more subtle than in gonads. The use of median-based ratios and Wilcoxon tests (C43, C45) appropriately handles outliers and non-normal distributions common in RNA-seq data. The claim of greater stringency (C44) is supported by comparison with cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "SBI heatmap visualizations show that each individual has a more or less unique combination of sex-biased expression patterns across organs. While male and female patterns are distinct, they show overlaps for individual values in middle ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 are supported by Figure 6 heatmaps showing individual-level variation. The visualization effectively demonstrates the mosaic nature of sex-biased expression across organs within individuals. The observation of overlap in middle ranges is consistent with the density plots in Figure 5. This provides a complementary view of the same data supporting the mosaic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "The authors propose that differences between mouse and human sex-biased gene patterns reflect both biological factors (smaller human population sizes cannot maintain as many adaptive differences) and methodological factors (human samples are more heterogeneous in age and environment). They argue that human data represent more natural conditions favoring larger overlapping variances, which are more relevant for understanding adaptive processes and sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C203-C206 present reasonable interpretations but mix biological and methodological explanations in ways that are difficult to disentangle. The population size argument (C203) is theoretically sound but doesn't account for other differences between species (generation time, selection pressures, etc.). The characterization of mouse data as 'artificial accentuation' (C205) may be overstated\u2014controlled conditions reduce noise but don't necessarily create artifacts. The conclusion about natural conditions (C206) is somewhat circular: if human data are noisier, they may show more overlap due to measurement error rather than true biological overlap. These interpretations are plausible but not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C210",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "The authors conclude that adult individuals are composed of a mosaic spectrum of sex characteristics in somatic tissues that should not be cumulated into a simple binary classification. This conclusion is based on the lack of correlation between organs, overlapping SBI distributions, and fast evolutionary turnover with high individual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C207-C210 represent the main conclusion of the paper, which is well-supported by multiple converging lines of evidence: (1) lack of SBI correlation between organs (C4, C131), (2) overlapping distributions in most somatic tissues (C35, C122), (3) fast evolutionary turnover (C71-C83), and (4) high individual variance (C92-C95). The conclusion is appropriately nuanced, acknowledging that this applies to somatic tissues and that gonadal tissues show binary patterns. However, the normative claim that characteristics 'should not be cumulated into a simple binary classification' goes beyond the data to make a prescriptive statement about how sex should be conceptualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The authors argue their findings have implications for sex-specific medical treatments: while average disease etiology differences between sexes are documented, individual placement in the maleness/femaleness spectrum becomes difficult with overlapping variances. They caution that fast evolution of sex-biased expression suggests mouse models may not be suitable for developing gender-specific treatments for humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C211-C214 extend the findings to medical implications, but this extrapolation requires caution. The observation of overlapping variances (C213) is data-supported, but the inference about medical treatment decisions is complex and depends on many factors beyond gene expression (e.g., hormonal effects, disease mechanisms, treatment responses). The warning about mouse models (C214) is reasonable given the demonstrated species differences, but may be overstated\u2014many sex-biased disease mechanisms may still be conserved even if the specific genes involved differ. These are important considerations but require additional evidence specific to disease contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C174",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "The authors claim this is the first micro-evolutionary study of sex-biased gene expression in outbred animals with sufficient data for within-population comparisons, the largest systematic dataset on micro-evolutionary patterns, and the first to explore individual variation patterns. They introduce the SBI as a new procedure to visualize variance patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174, C216-C218 about novelty and scope are supported by comparison with cited literature. The combination of (1) micro-evolutionary scale, (2) outbred populations, (3) multiple organs, (4) sufficient replication (n=9 per group), and (5) individual-level analysis is indeed unique. The SBI metric (C218) is a genuine methodological contribution that effectively visualizes individual variation in a single value per organ per individual. The claim of being the 'largest systematic dataset' (C216) is supported by the 576 samples across 4 taxa and 8 organ types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The authors provide theoretical context from sexual selection theory and population genetics, noting that mouse populations show massive positive selection (likely due to short generation times and large population sizes), sexual dimorphisms occur at many levels including cryptic differences, and mice are cooperative breeders where intrasexual competition may occur in both sexes. They speculate that the larger number of female-biased genes could indicate stronger intrasexual selection in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C202 provide appropriate theoretical context with proper citations. The statements about positive selection in mice (C191-C192), sexual selection theory (C193-C196), and cooperative breeding (C201-C202) are well-supported by literature. However, the speculation about female intrasexual selection (C199) based on gene numbers is acknowledged as speculative and represents one possible interpretation among several. The theoretical framework is sound, but the specific inference about female competition requires additional evidence beyond gene counts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "The authors conclude that at the micro-evolutionary level studied, gonadal sex-biased expression turnover is not faster than non-sex-biased expression, contrasting with somatic tissues. This suggests sexual selection effects are stronger in somatic tissues, with evolutionary changes continuously acting even in taxa without strong overt sexual dimorphism. Turnover occurs within regulatory modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C220-C223 are supported by Figure 2B showing positive values for gonadal comparisons and negative values for somatic comparisons. The inference about stronger selection in somatic tissues (C221) follows logically from the turnover data. The conclusion about continuous evolutionary change (C222) is supported by the high turnover rates and variance patterns. The module-based turnover (C223) is supported by Figure 4. These conclusions appropriately synthesize multiple lines of evidence.",
+    "result_type": "MAJOR"
+  }
+]

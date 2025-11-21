@@ -1,0 +1,137 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study demonstrates successful optogenetic stimulation of single RGCs in living primate eyes using ChrimsonR and GCaMP6s. Targeted cells showed large responses (3-4 times background noise) while non-targeted cells showed no significant response above background noise, with response time courses consistent with prior in vivo AOSLO imaging.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this core finding. The editor states the article 'shows that it is possible to optogenetically activate single retinal ganglion cells in vivo in monkeys' and presents 'convincing evidence for the promise of the approach.' One reviewer notes 'the four examples shown look quite convincing,' and another confirms 'neurons targeted for stimulation were activated strongly whereas neighboring neurons were not.' The reviewers accept the selectivity and effectiveness of single-cell stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Most cells strongly co-express both GCaMP6s and ChrimsonR as evidenced by substantial overlap of tdTomato and GCaMP6s fluorescence, though expression levels vary between cells and some cells may express only one or neither agent.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss the co-expression claims, but one reviewer raises concerns about methodological rigor and requests 'more raw data' and better characterization of 'the density of labeled RGCs in these animals.' This suggests uncertainty about the completeness of the expression characterization, though the basic observation is not directly challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C77",
+      "C78"
+    ],
+    "result": "The study targeted isolated foveal RGCs at 1.5\u00b0 eccentricity with >20 \u03bcm separation from nearest neighbors. Statistical analysis showed nearby cells (<50 \u03bcm) did not show significantly elevated responses compared to more distant cells (p>>0.05).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the technical achievement, one reviewer specifically critiques the limited scope: 'more raw data should be shown for activations of neighboring RGCs to pinpoint the actual resolution of the technique, and more than two cells (one from each field of view) should be tested.' This indicates the reviewers find the spatial selectivity data insufficient despite the statistical claim, requesting more comprehensive testing of resolution limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors discuss technical limitations related to AOSLO resolution (1.6 \u03bcm transverse, 25 \u03bcm axial) and acknowledge that the method's applicability to densely packed RGC regions (0.5-2.5\u00b0 eccentricity) remains unexplored, though peripheral regions with monolayer RGC organization may be more favorable.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly states 'further work will be needed to fully explore its limitations and specificity,' and another reviewer emphasizes 'it will be important to follow this work with a more detailed methodological description to guide related work, to explore limitations, and to build confidence in the specificity of the approach.' The reviewers accept the authors' acknowledgment of limitations but require more thorough exploration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The experimental methods involved AAV2-mediated co-expression of ChrimsonR and GCaMP6s via intravitreal injection, adaptive optics imaging with multiple wavelengths (488 nm for GCaMP, 640 nm for optogenetic stimulation, 796 nm for cone imaging), and stabilized stimulation protocols with specific parameters (12.5 \u03bcm diameter, 800 ms duration, 750 \u03bcW power).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly states the 'presentation lacks the rigor that I would expect from what is really a methods paper' and notes 'there is a higher burden to report the methodological details, full data sets, calibrations, and limitations of the method. There is considerable room for improvement in reporting those aspects.' While the methods are described, reviewers find the level of detail and validation insufficient for a methods-focused paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C88"
+    ],
+    "result": "The authors argue that the 488 nm imaging light produces minimal optogenetic activation (~2% of probe) and constant background activation, and that fluorophore emission is 4 orders of magnitude lower than the imaging stimulus. They report no evidence of cone pathway activation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss these control claims, but the general call for 'more raw data,' 'calibrations,' and exploration of 'limitations' suggests these control experiments and calculations may need more thorough validation. The lack of specific reviewer commentary on these important controls indicates they were not sufficiently convinced by the evidence presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C53",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors speculate about future technical improvements (two-photon excitation with ChRmine, retrograde injections, class-specific vectors) and potential applications including perceptual testing in awake monkeys and vision restoration therapies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge these as appropriate future directions. The editor notes this is 'an important step toward causal tests of the role of specific ganglion cell types in visual perception,' and reviewers recognize 'the eventual goals of this line of research have an enormous potential impact.' The speculative nature is accepted as part of establishing a new methodology.",
+    "result_type": "MINOR"
+  }
+]

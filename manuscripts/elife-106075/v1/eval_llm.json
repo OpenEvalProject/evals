@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on head and neck cancer (HNC) epidemiology and established risk factors. HNC is among the ten most common cancers in Europe with ~90% being squamous cell carcinomas. Tobacco smoking, alcohol consumption, and HPV infection are well-established risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are all supported by appropriate citations to established literature and databases (Global Cancer Observatory, multiple peer-reviewed studies). These are well-accepted epidemiological facts that provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior observational evidence suggests a complex relationship between adiposity and HNC risk. Higher body fatness likely increases HNC risk according to WCRF/AICR, but higher BMI has been inversely associated with HNC among current smokers, possibly due to nicotine-induced weight loss. Among never smokers, BMI shows positive associations with HNC risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 accurately summarize prior observational evidence with appropriate citations. The authors correctly identify the confounding issue between smoking and BMI that motivates their MR study design. This establishes the rationale for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The relationship between adiposity and smoking is bidirectional and complex. MR studies suggest higher adiposity increases smoking risk while smoking may lead to lower adiposity. Additionally, adiposity, socioeconomic deprivation, and smoking are strongly correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by multiple citations to prior MR studies and observational research. This correctly characterizes the complex confounding structure that justifies the MVMR approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Previous MR studies on adiposity and HNC risk had limited statistical power (maximum 6,034 cases) and could not fully discount causality. The current study uses the HEADSpAcE consortium GWAS with over twice the number of cases compared to the largest prior study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 accurately characterize the limitations of prior work and the improvement offered by the current study. The sample size comparison is verifiable from the cited studies and the current manuscript (12,264 vs 6,034 cases).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The study obtained HNC GWAS summary statistics from the European HEADSpAcE consortium (N=31,523, including 12,264 cases and 19,259 controls), which excluded UK Biobank participants to avoid sample overlap and includes the European GAME-ON data with more granular subsite information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe the outcome data source with appropriate citations. The exclusion of UK Biobank participants is methodologically sound to prevent sample overlap bias. The data characteristics are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "After harmonization and QC, 442 SNPs remained as instruments for BMI (mean F=77, R\u00b2=4.8%), 267 for WHR (mean F=73, R\u00b2=3.1%), and 353 for waist circumference (mean F=58, R\u00b2=4.4%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 report instrument characteristics with data referenced in supplementary files. The F-statistics all exceed 10, indicating strong instruments that satisfy the relevance assumption. The variance explained values are reasonable for polygenic traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study had 80% power to detect ORs as small as 1.16 for BMI, 1.20 for WHR, and 1.17 for waist circumference at \u03b1=0.05, representing improved power compared to previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 report power calculations based on the instrument strength and sample size. While the authors acknowledge post-hoc power calculations have limited value, these calculations are correctly performed and demonstrate the study's improved capacity to detect modest effects compared to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Univariable IVW MR showed higher genetically predicted BMI increased overall HNC risk (OR=1.17, 95% CI 1.02-1.34, p=0.03) with no subsite heterogeneity. However, this finding was inconsistent across pleiotropy-robust methods, with evidence of SNP heterogeneity (Q=609, p<0.001) and minor horizontal pleiotropy (MR-Egger intercept=0.007, p=0.03). MR-PRESSO identified two outliers but the outlier-corrected estimate was not significantly different from the main estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C33 report the primary BMI-HNC analysis. While the IVW estimate shows a nominally significant positive association, the inconsistency across sensitivity methods (C29), evidence of heterogeneity (C30), and pleiotropy (C31) raise concerns about the robustness of this finding. The p-value is borderline (0.03) and the effect attenuates in outlier-corrected analysis (p=0.05). This uncertainty is appropriately acknowledged by the authors and motivates further sensitivity analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "No association was found between genetically predicted WHR and HNC risk (IVW OR=1.05, 95% CI 0.89-1.24, p=0.53) with no subsite heterogeneity. There was evidence of SNP heterogeneity (Q=332, p=0.004) and horizontal pleiotropy (MR-Egger intercept=0.008, p=0.03), but MR-PRESSO identified no significant outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 report null findings for WHR. The confidence interval clearly includes the null, and while there is evidence of pleiotropy, the consistent null finding across methods supports the conclusion of no association. The presence of pleiotropy without a significant effect suggests the pleiotropy is balanced or the true effect is null.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "No association was found between genetically predicted waist circumference and HNC risk (IVW OR=1.01, 95% CI 0.85-1.21, p=0.87) with no subsite heterogeneity. There was SNP heterogeneity (Q=563, p<0.001) but no horizontal pleiotropy (MR-Egger intercept=-0.002, p=0.68). MR-PRESSO identified four outliers but the outlier-corrected estimate was not significantly different from the main estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 report null findings for waist circumference. The point estimate is essentially 1.0 with a confidence interval clearly spanning the null. The absence of directional pleiotropy (C42) and consistency of the outlier-corrected estimate support the null finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In MVMR analyses accounting for smoking behavior, the effect of BMI on HNC risk was attenuated to null (OR=0.93 for CSI, 95% CI 0.78-1.12, p=0.47; OR=1.09 for smoking initiation, 95% CI 0.88-1.34, p=0.43). Smoking behavior remained strongly associated with HNC risk after accounting for BMI. Conditional F-statistics were adequate for BMI (30.5 and 30.3) but lower for smoking (13.4 and 19.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 report the key MVMR findings showing the BMI-HNC association disappears when accounting for smoking. This is a critical result suggesting the univariable association was confounded. The conditional F-statistics for smoking are somewhat low (13.4 and 19.5), which could indicate weak instrument bias, but they exceed the commonly used threshold of 10. The strong persistent effect of smoking (C49-C50) supports its role as a confounder.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "After Steiger filtering to remove six SNPs more strongly associated with smoking than BMI, the BMI-HNC effect attenuated toward the null (OR=1.14, 95% CI 1.00-1.31, p=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 reports an additional sensitivity analysis addressing correlated pleiotropy. The attenuation from OR=1.17 (p=0.03) to OR=1.14 (p=0.05) after removing SNPs more associated with smoking supports the hypothesis that the univariable association was biased by smoking-related pleiotropy. This complements the MVMR findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "CAUSE analysis found no evidence against bias due to correlated pleiotropy, as the causal model did not fit significantly better than the sharing model (delta ELPD=-0.07, p=0.47). Neither the sharing nor causal model fit significantly better than the null model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 report CAUSE results that are consistent with either no causal effect or an effect confounded by correlated pleiotropy. The failure of both sharing and causal models to improve over the null model (C55) is particularly informative, suggesting the observed association may be spurious. This provides additional evidence against a causal BMI-HNC relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "MR-Clust analysis identified only a null cluster containing 372 SNPs after filtering, revealing no distinct mechanistic pathways underlying the BMI-HNC relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 report MR-Clust findings showing no evidence of distinct causal pathways. The presence of only a null cluster is consistent with no causal effect or with pleiotropy obscuring any true effect. This negative finding is appropriately reported and interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "No consistent evidence was found for effects of other anthropometric measures on HNC risk. IVW estimates suggested PC2 (taller/slimmer) and PC3 (taller/narrower hips) body shapes decreased HNC risk, but these findings were inconsistent with pleiotropy-robust methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 report secondary analyses of other adiposity measures. The authors appropriately note the inconsistency between IVW and sensitivity methods (C61), which suggests these nominally significant findings are likely false positives due to pleiotropy. The conservative interpretation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors accurately summarize prior MR studies showing no causal effect of adiposity on HNC risk, including studies by Gormley et al. (2023), Vithayathil et al. (2021), and Larsson and Burgess (2021), all reporting null findings for BMI, WHR, and waist circumference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 accurately cite and summarize prior MR literature. The reported effect estimates and confidence intervals from prior studies are correctly stated and support the authors' characterization that previous studies found no evidence of causality, though they were limited by sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study found evidence that the genetically predicted effect of BMI on HNC risk was influenced by smoking, potentially due to bidirectional relationships between smoking and adiposity or their shared genetic architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 synthesize the study's findings with appropriate citations to prior work. C68 is supported by the MVMR and sensitivity analyses. C69-C70 offer plausible mechanistic explanations with appropriate citations, though these remain speculative hypotheses rather than tested mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "This was the first study to use MVMR to disentangle BMI and smoking effects on HNC risk. However, the smoking behavior instruments may capture additional traits beyond smoking, including risk-taking phenotypes and socioeconomic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 describes a methodological strength that is verifiable from the literature. Claim C72 appropriately acknowledges a limitation of the smoking instruments with supporting citations. This limitation is important for interpretation but does not invalidate the findings, as it would likely bias toward finding an independent BMI effect (which was not observed).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study's strengths include larger sample size (12,264 cases) providing greater statistical power than previous MR studies, and availability of data on HNC subsites including HPV-stratified oropharyngeal cancers. Despite different aetiologies across subsites, no heterogeneity was observed for adiposity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 accurately describe study strengths. The sample size advantage is verifiable (C73), the subsite data availability is documented (C74), and the lack of heterogeneity across subsites is reported with statistical tests (C76). The citation to Thomas et al. regarding different aetiologies (C75) is appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The study was limited to individuals of European ancestry, and findings should be replicated in other ancestry groups before generalization to non-European populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 appropriately acknowledge a limitation and recommend future work. This is a standard limitation of MR studies using European GWAS data, as genetic instruments and their effects may differ across ancestries. The recommendation for replication is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study concludes that adiposity does not play a major role in HNC risk. However, since obesity is an established risk factor for other cancers and chronic diseases, there remains value in reducing population levels of excess adiposity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by the totality of evidence presented: null findings for WHR and waist circumference, attenuation of BMI effect in MVMR and sensitivity analyses, and consistency with prior MR studies. Claims C80-C81 appropriately contextualize the findings with citations, noting that the null finding for HNC does not diminish the importance of addressing obesity for other health outcomes.",
+    "result_type": "MAJOR"
+  }
+]

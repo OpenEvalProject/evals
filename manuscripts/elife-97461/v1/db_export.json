@@ -1,0 +1,1745 @@
+{
+  "submission": {
+    "id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:26:16.252678Z",
+    "updated_at": "2025-11-21T04:26:16.252678Z"
+  },
+  "content": [
+    {
+      "id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "content_type": "manuscript",
+      "content_text": "# The success of artificial selection for collective composition hinges on initial and target values\n\n## Authors\n\n- Juhee Lee<sup>1</sup> ([ORCID: 0000-0003-3318-6377](https://orcid.org/0000-0003-3318-6377))\n- Wenying Shou<sup>3</sup> ([ORCID: 0000-0001-5693-381X](https://orcid.org/0000-0001-5693-381X)) \u2020\n- Hye Jin Park<sup>1</sup> ([ORCID: 0000-0003-3552-6275](https://orcid.org/0000-0003-3552-6275)) \u2020\n\n### Affiliations\n\n1. Department of Physics, Inha University Incheon Republic of Korea ([ROR:01easw929](https://ror.org/01easw929))\n2. Asia Pacific Center for Theoretical Physics Pohang Republic of Korea ([ROR:011hxwn54](https://ror.org/011hxwn54))\n3. Centre for Life\u2019s Origins and Evolution, Department of Genetics, Evolution and Environment, University College London London United Kingdom ([ROR:001mm6w73](https://ror.org/001mm6w73))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrobial collectives can perform functions beyond the capability of individual members. Enhancing collective functions through artificial selection is, however, challenging. Here, we explore the \u2018rafting-a-waterfall\u2019 metaphor where achieving a target population composition depends on both target and initial compositions. Specifically, collectives comprising fast-growing (F) and slow-growing (S) individuals were grown for \u2018maturation\u2019 time, and the collective with S-frequency closest to the target value is chosen to \u2018reproduce\u2019 via inoculating offspring collectives. During collective maturation, intra-collective selection acts like a waterfall, relentlessly driving the S-frequency to lower values, while during collective reproduction, inter-collective selection resembles a rafter striving to reach the target frequency. Using simulations and analytical calculations, we show that intermediate target S frequencies are the most challenging, akin to a target within the vertical drop of a waterfall, rather than above or below it. This arises because intra-collective selection is the strongest at intermediate S-frequencies, which can overpower inter-collective selection. While achieving a low target S frequencies is consistently feasible, attaining high target S-frequencies requires an initially high S-frequency \u2014 much like a raft that can descend but not ascend a waterfall. As Newborn size increases, the region of achievable target frequency is reduced until no frequency is achievable. In contrast, the number of collectives under selection plays a less critical role. In scenarios involving more than two populations, the evolutionary trajectory must navigate entirely away from the metaphorical \u2018waterfall drop.\u2019 Our findings illustrate that the strength of intra-collective evolution is frequency-dependent, with implications in experimental planning.\n\n## Introduction\n\nMicrobial collectives can carry out functions that arise from interactions among member species. These functions, such as waste degradation (Woo et al., 2020; Sun et al., 2022), probiotics (Bober et al., 2018), and vitamin production (Wang et al., 2016), can be useful for human health and biotechnology. To improve collective functions, one can perform artificial selection (directed evolution) on collectives (see Figure 1): Low-density \u2018Newborn\u2019 collectives are allowed to \u2018mature\u2019 during which cells proliferate and possibly mutate, and community function develops. \u2018Adult\u2019 collectives with high functions are then chosen to reproduce, each seeding multiple offspring Newborns. Artificial selection of collectives have been attempted both in experiments (Goodnight, 1990; Swenson et al., 2000b; Swenson et al., 2000a; Blouin et al., 2015; Panke-Buisse et al., 2015; Panke-Buisse et al., 2017; Jochum et al., 2019; Wright et al., 2019; Raynaud et al., 2019; Arora et al., 2020; Chang et al., 2020; Mueller et al., 2021; Jacquiod et al., 2022; Raynaud et al., 2022; Arias-S\u00e1nchez et al., 2024) and in simulations (Penn, 2003; Penn and Harvey, 2004; Williams and Lenton, 2007; Xie et al., 2019; Doulcier et al., 2020; Xie and Shou, 2021; Chang et al., 2021; Fraboul et al., 2023; Lalejini et al., 2022; Zaccaria et al., 2023; Vessman et al., 2023), often with unimpressive outcomes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97461/elife-97461-fig1-v1.jpg)\n\n**Figure 1.:** Each selection cycle begins with a total of $g$ Newborn collectives, each with $N_{0}$ total cells of slow-growing S population (light gray dots) and fast-growing F population (dark gray dots). During maturation (over time $\\tau$), S and F cells divide at rates $r_{S}$ and $r_{S}+\\omega$ ($\\omega>0$), respectively, and S mutates to F at rate $\\mu$. During inter-collective selection, the Adult collective with F frequency $f$ closest to the target composition $f^$ is chosen to reproduce $g$ Newborns for the next cycle. Newborns are sampled from the chosen Adult (yellow star) with $N_{0}$ cells per Newborn. The selection cycle is then repeated until the F frequency reaches a steady state, which may or may not be the target composition. To denote a variable $x$ of $i$-th collective in cycle $k$ at time $t$ ($0\\leqt\\leq\\tau$), we use notation $x_{k,t}^{(i)}$ where $x\\in{S,F,s,\u00a0f}$. Note that time $t=0$ is for Newborns and $t=\\tau$ is for Adults.\n\nOne of the major challenges in selecting collectives is to ensure the inheritance of a collective function (Xie et al., 2023; Thomas et al., 2024). Inheritance from a parent collective to offspring collectives can be compromised by changes in genotype and species compositions. During maturation of a collective, genotype compositions within each species can change due to intra-collective selection favoring fast-growing individuals (Figure 1, \u2018intra-collective\u2019 selection), while species compositions can change due to ecological interactions. Furthermore, during the reproduction of a collective, genotype and species compositions of offspring can vary stochastically from those of the parent (Figure 1, \u2018genetic drift\u2019).\n\nHere, we consider the selection of collectives comprising two or three populations with different growth rates, and our goal is to achieve a target composition in the Adult collective. This is a common quest: whenever a collective function depends on both populations, the collective function is maximized, by definition, at an intermediate frequency (e.g. too little of either population will hamper function; Xie et al., 2019). Earlier work has demonstrated that nearly any target species composition can be achieved when selecting communities of two competing species with unequal growth rates (Doulcier et al., 2020; Rainey, 2023), so long as the shared resource is depleted during collective maturation (Doulcier et al., 2020). In this case, initially, both species evolved to grow faster, and the slower-growing species was preserved due to stochastic fluctuations in species composition during collective reproduction. Eventually, both species evolved to grow sufficiently fast to deplete the shared resource during collective maturation, and evolution in competition coefficients then acted to stabilize the species ratio to the target value (Doulcier et al., 2020). Regardless, earlier studies are often limited to numerical explorations, with prohibitive costs for a full characterization of the parameter space for such nested populations (population of collectives, and populations of variants within a collective).\n\nWe mathematically examine the selection of composition in collectives consisting of populations growing at different rates. We made simplifying assumptions so that we can analytically examine the evolutionary tipping point between intra-collective and inter-collective selection. We show that this tipping point creates a \u2018waterfall\u2019 effect which restricts not only which target compositions are achievable, but also the initial composition required to achieve the target. We also investigate how the range of achievable target composition is affected by the total population size in Newborns and the total number of collectives under selection. Finally, we show that the waterfall phenomenon extends to systems with more than 2 populations.\n\n## Results and discussion\n\nTo enable the derivation of an analytical expression, we have made the following simplifying assumptions. First, growth is always exponential, without complications such as resource limitation, ecological interactions between the two populations, or density-dependent growth. Thus, the exponential growth equation can be used. Second, we initially consider only two populations (genotypes or species): the fast-growing F population with size $F$ and the slow-growing S population with size $S$. We do not consider a spectrum of mutants or species, since with more than two populations, an analytical solution becomes very difficult. Finally, the single top-functioning community is chosen to reproduce, which allows us to employ the simplest version of the extreme value theory (see section below for further justification).\n\nOur goal is to select for collective composition in terms of F frequency $f=F/(S+F)$, or equivalently, S frequency $s=1\u2212f$. More precisely, we want collectives such that after maturation time $\\tau$, $f(\\tau)$ is as close to the target value $f^$ as possible (Figure 1). Note that even if the target frequency has been achieved, since F frequency will always increase during maturation, inter-collective selection is required in each cycle to maintain the target frequency.\n\nWe will start with a complete model where S mutates to F at a nonzero mutation rate $\\mu$. We made this choice because it is more challenging to attain or maintain the target frequency when the abundance of fast-growing F is further increased via mutations. This scenario is encountered in biotechnology: an engineered pathway will slow down cell growth, and breaking the pathway (and thus faster growth) is much easier than the other way around. When the mutation rate is set to zero, the same model can be used to capture collectives of two species with different growth rates. We show that intermediate F frequencies or equivalently, intermediate S frequencies, are the hardest targets to achieve. We then show using simulations that similar conclusions hold when selecting for a target composition in collectives of three populations.\n\n### Model structure\n\nA selection cycle (Figure 1; Table 1) starts with a total of $g$ Newborn collectives. At the beginning of cycle $k$ ($t=0$), each Newborn collective has a fixed total cell number $N_{0}=S_{k,0}^{(i)}+F_{k,0}^{(i)}$ where $S_{k,t}^{(i)}$ and $F_{k,t}^{(i)}$ denote the numbers of S and F cells in collective $i$ ($1\\leqi\\leqg$) at time $t$ ($0\\leqt\\leq\\tau$) of cycle $k$. The average F frequency among the $g$ Newborn collectives in cycle $k$ is $f\u00af_{k,0}$, such that the initial F cell number in each Newborn is drawn from the binomial distribution $Binom(N_{0},f\u00af_{k,0})$.\n\n**Table 1.**\n Nomenclature.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variables</th>\n      <th>Representing</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>S\\begin{document}$S$\\end{document}</td>\n      <td>Number of slower-growing (S) cells</td>\n    </tr>\n    <tr>\n      <td>F\\begin{document}$ F$\\end{document}</td>\n      <td>Number of faster-growing (F) cells</td>\n    </tr>\n    <tr>\n      <td>N\\begin{document}$ N$\\end{document}</td>\n      <td>Total cell numbers in a collective, N=S+F\\begin{document}$N=S+F$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>s\\begin{document}$  s$\\end{document}</td>\n      <td>Frequency of S cells, s=S/(S+F)\\begin{document}$s = S/(S + F)$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>f\\begin{document}$f$\\end{document}</td>\n      <td>Frequency of F cells, f=F/(S+F)=1\u2212s\\begin{document}$f=F/(S+F)=1-s$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>f\u2217\\begin{document}$ f^{*}$\\end{document}</td>\n      <td>F frequency of the selected collective in a cycle</td>\n    </tr>\n    <tr>\n      <td>Parameters</td>\n      <td>Representing</td>\n    </tr>\n    <tr>\n      <td>rS\\begin{document}$ r_{S}$\\end{document}</td>\n      <td>Growth rate of S</td>\n    </tr>\n    <tr>\n      <td>\u03c9&gt;0\\begin{document}$\\omega \\gt 0$\\end{document}</td>\n      <td>Growth rate advantage of F over S</td>\n    </tr>\n    <tr>\n      <td>\u03bc\\begin{document}$  \\mu$\\end{document}</td>\n      <td>Mutation rate from S to F</td>\n    </tr>\n    <tr>\n      <td>g\\begin{document}$ g$\\end{document}</td>\n      <td>Total number of collectives</td>\n    </tr>\n    <tr>\n      <td>\u03c4\\begin{document}$\\tau$\\end{document}</td>\n      <td>Maturation time</td>\n    </tr>\n    <tr>\n      <td>N0\\begin{document}$N_{0}$\\end{document}</td>\n      <td>Total number of cells in Newborn, or Newborn size</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Target frequency in s\\begin{document}$s$\\end{document} or f\\begin{document}$f$\\end{document}.</td>\n    </tr>\n    <tr>\n      <td>fL,fH\\begin{document}$f^{L},f^H$\\end{document}</td>\n      <td>Low and High thresholds of inaccessible f^\\begin{document}$\\hat{f}$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>R\u03c4\\begin{document}$ R_{\\tau}$\\end{document}</td>\n      <td>Fold-growth of S cells over time \u03c4\\begin{document}$\\tau$\\end{document}, R\u03c4=erS\u03c4\\begin{document}$R_{\\tau}=e^{r_{S}\\tau}$\\end{document}</td>\n    </tr>\n    <tr>\n      <td>W\u03c4\\begin{document}$ W_{\\tau}$\\end{document}</td>\n      <td>Fold ratio change of F cells over S cells over time \u03c4\\begin{document}$\\tau$\\end{document}, W\u03c4=e\u03c9\u03c4\\begin{document}$W_{\\tau}=e^{\\omega\\tau}$\\end{document}</td>\n    </tr>\n  </tbody>\n</table>\n\nCollectives are allowed to grow for time $\\tau$ (\u2018Maturation\u2019 in Figure 1). During maturation, S and F grow at rates $r_{S}$ and $r_{S}+\\omega$ ($\\omega>0$), respectively. If maturation time $\\tau$ is too small, a matured collective (\u2018Adult\u2019) does not have enough cells to reproduce $g$ Newborn collectives with $N_{0}$ cells. On the other hand, if maturation time $\\tau$ is too long, fast-growing F will take over. Hence, we set the maturation time $\\tau=ln\u2061(g+1)/r_{S}$, which guarantees sufficient cells to produce $g$ Newborn collectives from a single Adult collective. At the end of a cycle, a single Adult with the highest function (with F frequency $f$ closest to the target frequency $f^$) is chosen to reproduce $g$ Newborn collectives, each with $N_{0}$ cells (\u2018Selection\u2019 and \u2019Reproduction\u2019 in Figure 1). Note that even though S and F do not compete for nutrients, they compete for space: because the total number of cells transferred to the next cycle is fixed, an overabundance of one population will reduce the likelihood of the other being propagated.\n\nCollective function is dictated by the Adult\u2019s F frequency $f$. Among all Adult collectives, the selected Adult is the one whose F frequency is closest to the target value, $f^$. In contrast with findings from an earlier study (Xie et al., 2019), choosing top 1 is more effective than the less stringent \u2018choosing top 5%.\u2019 In the earlier study, variation in the collective trait is partly due to nonheritable factors such as random fluctuations in Newborn biomass. In that context, a less stringent selection criterion proved more effective, as it helped retain collectives with favorable genotypes that might have exhibited suboptimal collective traits due to unfavorable non-heritable factors. However, since this study excludes non-heritable variations in collective traits, selecting the top 1 collective is more effective than selecting the top 5% (see Appendix 7\u2014figure 1).\n\nThe selected Adult, with F frequency denoted as $f^{\u2217}$, is then used to reproduce $g$ offspring collectives, each with $N_{0}$ total cells. The number of F cells in a newborn follows a binomial distribution $B(N_{0},f^{\u2217})$. By repeating the selection cycle, we aim to achieve and maintain the target composition $f^$.\n\nOverall, our model considers mutational stochasticity, as well as demographic stochasticity in terms of stochastic birth and stochastic sampling of a parent collective by offspring collectives. Other types of stochasticity, such as environmental stochasticity and measurement noise, are not considered and require future research.\n\n### The success of collective selection is constrained by the target composition, and sometimes also by the initial composition\n\nSince intra-collective selection favors F, we expect that a higher target $f^$ (a lower target $s^$) is easier to achieve. By \u2018achieve,\u2019 we mean that the absolute error $d$ between the target frequency $f^$ and the selected frequency averaged among independent simulations $\u27e8f^{\u2217}\u27e9$ is smaller than 0.05 (i.e.$d=|\u27e8f^{\u2217}\u27e9\u2212f^|\\leq0.05$).\n\nWe fixed $N_{0},$ the total population size of a Newborn to 1000, and obtained selection dynamics for various initial and target F frequencies by implementing stochastic simulations (Appendix 1). If the target $f^$ is high (e.g. 0.9, Figure 2a magenta), selection is successful (computed absolute errors Appendix 1\u2014figure 4): regardless of the initial frequency, $f^{\u2217}$ of the chosen collective eventually converges to the target $f^$ and stays around it. In contrast, without collective-level selection (e.g. choosing a random collective to reproduce), F frequency increases until F reaches fixation (Supplementary information Appendix 1\u2014figure 3b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97461/elife-97461-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013c) F frequency of the selected Adult collective ($f^{\u2217}$) over cycles at different target $f^$ values (long dashed lines). $f^$ between $f^{L}$ and $f^{H}$ (orange dotted and solid line segments) is inaccessible where selection will fail. (a) A high target F frequency (e.g.$f^=0.9>f^{H}$; magenta) can be achieved from any initial frequency (black dots). (b) An intermediate target frequency (e.g.$f^{L}<f^=0.5<f^{H}$; green) is never achievable, as all initial conditions converge to  $f^{H}$. (c) A low target frequency (e.g. $f^=0.1<f^{L}$; dark blue) is achievable, but only from initial frequencies below $f^{L}$. For initial frequencies at $f^{L}$, stochastic outcomes (gray curves) are observed: while some replicates reached the target frequency, others reached $f^{H}$. For parameters, we used S growth rate $r_{S}=0.5$, F growth advantage $\\omega=0.03$, mutation rate $\\mu=0.0001$, maturation time $\\tau\u22484.8$, and $N_{0}=1000$. The number of collectives $g=10$. Each black line is averaged from independent 300 realizations. (d) Inter-collective selection opposes intra-collective selection. We plot probability density distributions of F frequency $f$ during two consecutive cycles when selection is successful. Data correspond to cycles 31 and 32 from the second lowest initial point in c. $\u0394f$ is the selection progress within a cycle (see Box 1). Black triangle: median. (e) Two accessible regions (gold). Either high $f^$ ($f^>f^{H}$; region 2) or low $f^$ starting from low initial $f$ ($f^<f^{L}$ and $f\u00af_{1,0}<f^{L}$; region 1) can be achieved. We theoretically predict (by numerically integrating Equation 1) $f^{H}$ (orange solid line) and $f^{L}$ (orange dotted line), which agree with simulation results (gold regions). (f) Example trajectories from initial compositions (black dots) to the target compositions (dashed lines). The gold areas indicate the region of initial frequencies where the target frequency can be achieved. (g) The tension between intra-collective selection and inter-collective selection creates a \u2018waterfall\u2019 phenomenon. See the main text for details.\n\nIn contrast, an intermediate target frequency (e.g. $f^=0.5$; Figure 2b green) is never achievable. High initial F frequencies (e.g. 0.95) decline toward the target but stabilize at the \u2018high-threshold\u2019 $f^{H}$ (\u223c 0.7, solid orange line segment in Figure 2a-c) above the target. Low initial F frequencies (e.g. 0) increase toward the target, but then overshoot and stabilize at the $f^{H}$ value.\n\nIf the target frequency is low (e.g. $f^=0.1$; Figure 2c dark blue), artificial selection succeeds when the initial frequency is below the \u2018lower-threshold\u2019 $f^{L}$ (dotted orange line segment in Figure 2a-c). Initial F frequencies above $f^{L}$ (e.g. 0.45 and 0.95) converge to $f^{H}$ instead. Initial F frequencies near $f^{L}$ display stochastic trajectories, converging to either $f^{H}$ or $f^$.\n\nTo achieve target $f^$, inter-collective selection must overcome intra-collective selection. We can visualize the distributions of $f$ over two consecutive cycles (bottom to top, Figure 2d) where $f$ started above target $f^$. When newborns matured into adults, the distribution of $f$ up-shifted due to intra-collective selection. The distribution of $f$ was then down-shifted toward the target due to inter-collective selection. If the magnitude of down-shift exceeded that of up-shift, progress toward the target was made. During reproduction of collectives, the distribution of $f$ retained the same mean but became broader due to stochastic sampling by the Newborns from their parent.\n\nIn summary, two regions of target frequencies are \u2018accessible\u2019 (gold in Figure 2e, f; Box 1): (1) target frequencies above $f^{H}$ ($f^>f^{H}$) or (2) target frequencies below $f^{L}$ ($f^<f^{L}$) and starting at an average frequency below $f^{L}$ ($f\u00af_{1,0}<f^{L}$).\n\n### Intra-collective evolution is the fastest at intermediate F frequencies, creating the \u2018waterfall\u2019 phenomenon\n\nTo understand what gives rise to the two accessible regions, we calculated $\u25b3f$, the selection progress in F frequency over two consecutive cycles (Box 1, Equation 2). The solution (Figure 3a, green) has the same shape as results from numerically integrating Equation 1 (Figure 3a, orange) and from stochastic simulations (Figure 3a, blue).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97461/elife-97461-fig3-v1.jpg)\n\n**Figure 3.:** (a) The change in F frequency over one cycle. When $f_{k}^{\u2217}$ is sufficiently low or high, inter-collective selection can lower the F frequency to below $f_{k}^{\u2217}$ ($\u0394f<0$). The points where $\u0394f=0$ (in the orange line) are denoted as $f^{L}$ and $f^{H}$, corresponding to the boundaries in Figure 2. (b) The distributions of frequency differences obtained by 1000 numerical simulations. The cyan, purple, and black box plots respectively indicate the changes in F frequency after intra-collective selection (the mean frequency among the 100 Adults minus the mean frequency among the 100 Newborns during maturation), after inter-collective selection (the frequency of the 1 selected Adult minus the mean frequency among the 100 Adults), and over one selection cycle (the frequency of the selected Adult of one cycle minus that of the previous cycle). The box ranges from 25% to 75% of the distribution, and the median is indicated by a line across the box. The upper and lower whiskers indicate maximum and minimum values of the distribution. ***p<0.001  in an unpaired $t$-test.\n\nIf $\u25b3f$ is negative, then inter-collective selection will succeed in countering intra-collective selection and reducing $f$ toward the target. $\u25b3f$ is negative if the selected $f_{k}^{\u2217}$ is low or high, but not if it is intermediate between $f^{L}$ and $f^{H}$ (Figure 3a). This is because the increase in $f$ during maturation is the most drastic when Newborn $f$ is intermediate (Figure 3b), for intuitive reasons: when Newborn $f$ is low, the increase in $f$ will be minor; when Newborn $f$ is high, the fitness advantage of F over the population average is small and hence the increase is also minor. Thus, when Newborn F frequency is intermediate, intra-collective selection is the strongest and may overwhelm inter-collective selection (Figure 3b and Appendix 2\u2014figure 2a). Not surprisingly, similar conclusions are derived where S and F are slow-growing and fast-growing species which cannot be converted through mutations (Appendix 4 and Appendix 4\u2014figure 1).\n\nThus, inter-collective selection is akin to a raftman rowing the raft to a target, while intra-collective selection is akin to a waterfall. This metaphor is best understood in terms of S frequency $s=1\u2212f$. The lower-threshold $f^{L}$ corresponds to higher-threshold in $s^{H}=1\u2212f^{L}$. Intra-collective selection is akin to a waterfall, driving the S frequency $s$ from high to low (Figure 2g). Intra-collective selection acts the strongest when $s$ is intermediate ($s^{L}<s<s^{H}$), similar to the vertical drop of the fall. Intra-collective selection acts weakly at high ($>s^{H}$) or low ($<s^{L}$) $s$ , similar to the gentle sloped upper and lower pools of the fall (regions 1 and 2 of Figure 2e and g). Thus, an intermediate target frequency can be impossible to achieve: a raft starting from the upper pool will be flushed down to $s^{L}$ ($f^{H}$), while a raft starting from the lower pool cannot go beyond $s^{L}$ ($f^{H}$). In contrast, a low target S frequency (in the lower pool) is always achievable. Finally, a high target S frequency (in the upper pool) can only be achieved if starting from the upper pool (as the raft cannot jump to the upper pool if starting from below).\n\n### Manipulating experimental setups to expand the achievable target region\n\nIn Equation 2; Box 1, selection progress $\u25b3f$ depends on the total number of collectives under selection ($g$). $\u25b3f$ also depends on the mean and the standard deviation of Adult F frequency \u2014 $f\u00af(\\tau)$ and $\\sigma_{f}(\\tau)$. Equations 3 and 4 of Box 1 provide simplified expressions of $f\u00af(\\tau)$ and $\\sigma_{f}(\\tau)$ when mutation rate $\\mu$ has been set to 0. When the mutation rate $\\mu$ is not zero (Equations 48 and 49 in Appendix 2), selection progress is additionally influenced by $\\frac{\\mu}{\\omega}$ (mutation rate $\\mu$ scaled with fitness difference $\\omega$).\n\nOur goal is to make $\u25b3f$ as negative as possible so that any increase in $f$ during collective maturation may be reduced. From Equation 2 in Box 1, a small $f\u00af(\\tau)$ will facilitate collective-level selection. Additionally, a large $\\sigma_{f}(\\tau)$ will also facilitate collective-level selection due to negative $\u03a6^{\u22121}(\\frac{ln\u20612}{g})$. Note that since $\\frac{ln\u20612}{g}$<0.5 for $g\\geq2$, $\u03a6^{\u22121}(\\frac{ln\u20612}{g})$ \u2014 corresponding to the number $y$ such that the probability of a standard normal random variable being less than or equal to $y$ is $\\frac{ln\u20612}{g}$ \u2014 is negative.\n\nFrom Equation 4 in Box 1, $\\sigma_{f}(\\tau)$ will be large if Newborn size $N_{0}$ is small. Indeed, as Newborn size $N_{0}$ declines, the region of achievable target frequency expands (gold area in Figure 4a). If the Newborn size $N_{0}$ is sufficiently small (e.g. \u2264 700 in our parameter regime), any target frequency can be reached. An analytical approximation of the maximal Newborn size permissible for all target frequencies is given in Appendix 3.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97461/elife-97461-fig4-v1.jpg)\n\n**Figure 4.:** (a) Reducing the population size in Newborn $N_{0}$ expands the region of success. In the gold area, the probability that $f_{k+1}^{\u2217}$ becomes smaller than $f_{k}^{\u2217}$ in a cycle is more than 50%. We used $g=10$ and $\\tau\u22484.8$. Figures 2\u20133 correspond to $N\u02d8_{0}=1000$ in this graph. Black dotted line indicates the critical Newborn size below which all target frequencies can be achieved. (b) Increasing the total number of collectives $g$ also expands the region of success, although only slightly. We used a fixed Newborn size $N_{0}=1000$. The maturation time $\\tau=log\u2061(100)/r_{S}\u22489.2$ is set to be long enough so that an Adult can generate at least 100 Newborns. (c) Increasing the maturation time shrinks the region of success. We used a fixed Newborn size $N_{0}=1000$ and number of collectives $g=10$.\n\nFrom Equations 3 and 4 in Box 1, maturation time $\\tau$ affects $f\u00af(\\tau)$ and $\\sigma_{f}(\\tau)$ through $W_{\\tau}=e^{\\omega\\tau}$ (the fold change in F/S over $\\tau$), and affects $\\sigma_{f}(\\tau)$ additionally through $R_{\\tau}=e^{r_{S}\\tau}$ (fold-growth of S over $\\tau$). Longer $\\tau$ increases $f\u00af(\\tau)$ and is thus detrimental to selection progress. The relationship between $\\sigma_{f}(\\tau)$ and $\\tau$ is not monotonic (Appendix 2\u2014figure 2c), meaning that an intermediate value of $\\tau$ is the best for achieving large $\\sigma_{f}(\\tau)$. However, the effect of $f\u00af(\\tau)$ dominates that of $\\sigma_{f}(\\tau)$ and therefore, the region of success monotonically reduces with longer maturation time (Figure 4c). Similarly, $f\u00af(\\tau)$ will be small if $\\omega$ (fitness advantage of F over S) is small. Indeed, as $\\omega$ becomes larger, the region of success becomes smaller (Appendix 5\u2014figure 1).\n\n$g$, the number of collectives under selection, also affects selection outcomes. As $g$ increases, the value of $\u03a6^{\u22121}(\\frac{ln\u20612}{g})$ becomes more negative, and so does $\u25b3f$ \u2014 meaning collective-level selection will be more effective. Intuitively, with more collectives, the chance of finding a $f$ closer to the target is more likely. Thus, a larger number of collectives broadens the region of success (Figure 4b). However, the effect of $g$ is not dramatic. To see why, we note that the only place that $g$ appears is Equation 2 in $\u03a6^{\u22121}(\\frac{1}{g})$. When $g$ becomes large, $\u03a6^{\u22121}(\\frac{1}{g})$ is asymptotically expressed as $\u03a6^{\u22121}(\\frac{1}{g})\u2248\u2212\\sqrt{2ln\u2061g\u2212ln\u2061[ln\u2061g]+\u22ef}$ (Appendix 2) (Phllip, 1960), and thus does not change dramatically as $g$ varies.\n\n### The waterfall phenomenon in a higher dimension\n\nTo examine the waterfall effect in a higher dimension, we investigate a three-population system where a faster-growing population (FF) grows faster than the fast-growing population (F) which grows faster than the slow-growing population (S) (Figure 5a and Appendix 8\u2014figure 1). In the three-population case, the evolutionary trajectory travels in a two-dimensional plane. A target population composition can be achieved if inter-collective selection can sufficiently reduce the frequencies of F as well as FF (accessible regions, gold in Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97461/elife-97461-fig5-v1.jpg)\n\n**Figure 5.:** (a) During collective maturation, a slow-growing population (S) (with growth rate $r_{S}$; light gray) can mutate to a fast-growing population (F) (with growth rate $r_{S}+\\omega$; medium gray), which can mutate further into a faster-growing population (FF) (with growth rate $r_{S}+2\\omega$; dark gray). Here, the rates of both mutational steps are $\\mu$, and $\\omega>0$. (b) Evolutionary trajectories from various initial compositions (open circles) to various targets (filled triangles). Intra-collective evolution favors FF over F (vertical blue arrow) over S (horizontal blue arrow). The accessible regions are marked gold (see Appendix 1). We obtain final compositions starting from several initial compositions while aiming for different target compositions in i, ii, and iii. The evolutionary trajectories are shown in dots with color gradients from initial time (light grey) to final time (dark grey). (i) A target composition with a high FF frequency is always achievable. (ii) A target composition with intermediate FF frequency is never achievable. (iii) A target composition with low FF frequency is achievable only if starting from an appropriate initial composition such that the entire trajectory never meanders away from the accessible region. The figures are drawn using the mpltern package (Ikeda et al., 2019). (c) The accessible region in the three-population problem is interpreted as an extension of the two-population problem. First, the accessible region between FF and S+F is given, and then the S+F region is stretched into S and F.\n\nFrom numerical simulations, we identified two accessible regions: a small region near FF and a band region spanning from S to F (gold in Figure 5b i). Intuitively, the rate at which FF grows faster than S+F is greater than the rate at which F grows faster than S (see Appendix 8). Thus, the problem can initially be reduced to a two-population problem (i.e. FF versus F+S; Figure 5c left), and then expanded to a three-population problem (Figure 5c right).\n\nSimilar to the two-population case, targets in the inaccessible region are never achievable (Figure 5b ii), while those in the FF region are always achievable (Figure 5b i). Strikingly, a target composition in an accessible region may not be achievable even when the initial composition is within the same region: once the composition escapes the accessible region, the trajectory cannot return back to the accessible region (Figure 5biii, the leftmost initial condition). However, if the initial position is closer to the target in the accessible region, the target becomes achievable (Figure 5b iii, initial condition near the bottom). Note that here, the selection outcome is path-dependent in the sense of being sensitive to initial conditions. This phenomenon is distinct from hysteresis, where path-dependence results from whether a tuning parameter is increased or decreased.\n\nIn conclusion, we have investigated the evolutionary trajectories of population compositions in collectives under selection, which are governed by intra-collective selection (which favors fast-growing populations) and inter-collective selection (which, in our case, strives to counter fast-growing populations). Intra-collective selection has the strongest effect at intermediate frequencies of faster-growing populations, potentially creating an inaccessible region of target frequency analogous to the vertical drop of a waterfall. High and low target frequencies are both accessible, analogous to the lower and the upper pools of a waterfall, respectively. A less challenging target (high $f^$; low $s^$) is achievable from any initial position. In contrast, a more challenging target (low $f^$; high $s^$) is only achievable if the entire trajectory is contained within the region, similar to a raft striving to reach a point in the upper pool must start at and remain in the upper pool. Our work suggests that the strength of intra-collective selection is not constant, and that strategically choosing an appropriate starting point can be essential for successful collective selection.\n\n## Materials and methods\n\n### Stochastic simulations\n\nA selection cycle is composed of three steps: maturation, selection, and reproduction. At the beginning of the cycle $k$, a collective $i$ has $S_{k,0}^{(i)}$ slow-growing cells and $F_{k,0}^{(i)}$ fast-growing cells. At the first cycle, the mean F frequency of collectives is set to be $f\u00af_{1,0}.\u00a0F_{1,0}^{(i)}$ is sampled from the binomial distribution with mean $N_{0}f\u00af_{1,0}$. Then, $S_{1,0}^{(i)}(=N_{0}\u2212F_{1,0}^{(i)})$ S cells are in the collective $i$. In the maturation step, we calculate $S_{k,\\tau}^{(i)}$ and $F_{k,\\tau}^{(i)}$ by using stochastic simulation. We can simulate the division and mutation of each individual cell stochastically by using the tau-leaping algorithm (Gillespie, 2001; Cao et al., 2006; see Appendix 1\u2014figure 3). However, individual-based simulations require a long computing time. Instead, we randomly sample $S_{k,\\tau}^{(i)}$ and $F_{k,\\tau}^{(i)}$ from the joint probability density distribution $P(S_{k,\\tau}^{(i)},F_{k,\\tau}^{(i)})$. To obtain $P(S_{k,\\tau}^{(i)},F_{k,\\tau}^{(i)})$, we solve the master equation which describes the time evolution of the probability distribution $P(S_{k,t}^{(i)},F_{k,t}^{(i)})$ under the random processes (see Appendix 1). We assumed that $S_{k,\\tau}^{(i)}\u00a0and\u00a0F_{k,\\tau}^{(i)}$ are independent (as S and F populations grow independently without ecological interactions), and thus $P(S_{k,\\tau}^{(i)},F_{k,\\tau}^{(i)})$ is product of two probability density functions $P(S_{k,\\tau}^{(i)})\u00a0and\u00a0P(F_{k,\\tau}^{(i)})$. Each distribution follows a Gaussian distribution, with the mean and variance numerically obtained from ordinary differential equations derived from the master equation (see Appendix 1). We choose the collective with the closest frequency to the target $f^$ to generates $g$ Newborns. The number of F cells is sampled from the binomial distribution with the mean of $N_{0}f_{k}^{\u2217}$. We start a new cycle with those Newborn collectives. Then, the number of S cells in a collective $i$ is $S_{k+1,0}^{(i)}=N_{0}\u2212F_{k+1,0}^{(i)}$.\n\n### Analytical approach to the conditional probability\n\nThe conditional probability distribution $\u03a8(f_{k+1}^{\u2217}|f_{k}^{\u2217})$ of observing $f_{k+1}^{\u2217}$ at a given $f_{k}^{\u2217}$ is calculated by the following procedure. Given the selected collective in cycle $k$ with $f_{k}^{\u2217}$, the collective-level reproduction proceeds by sampling $g$ Newborn collectives with $N_{0}$ cells in cycle $k+1$. Each Newborn collective contains certain F numbers $F_{k+1,0}^{(1)},\u22ef,F_{k+1,0}^{(g)}$ at the beginning of the cycle $k+1$, which can be mapped into $f_{k+1,0}^{(1)},\u22ef,f_{k+1,0}^{(g)}$ with the constraint of $N_{0}$ cells. If the number of cells in the selected collective is large enough, the joint conditional distribution function $P(f_{k+1,0}^{(1)},\u22ef,f_{k+1,0}^{(g)}|f_{k}^{\u2217})$ is well described by the product of $g$ independent and identical Gaussian distribution $N(\\mu,\\sigma^{2})$. So we consider the frequencies of $g$ Newborn collectives as $g$ identical copies of the Gaussian random variable $f_{k+1,0}$. The mean and variance of $f_{k+1,0}$ are given by $m=f_{k}^{\u2217}$ and $\\sigma^{2}=f_{k}^{\u2217}(1\u2212f_{k}^{\u2217})/N_{0}$. Then, the conditional probability distribution function of $f_{k+1,0}$ being $\u03b6$ is given by\n\n$$\nP_{f_{k+1,0}}(\u03b6|f_{k}^{\u2217})=\\frac{1}{\\sqrt{2\\pi}}exp\u2061(\u2212\\frac{(\u03b6\u2212m)^{2}}{2\\sigma^{2}}).\n$$\n\nAfter the reproduction step, the Newborn collectives grow for time $\\tau$. The frequency is changed from the given frequency $\u03b6$ to $f$ by division and mutation processes. We assume that the frequency $f$ of an Adult is also approximated by a Gaussian random variable $N(f\u00af(\\tau),\\sigma_{f}^{2}(\\tau))$. The mean $f\u00af(\\tau)$ and variance $\\sigma_{f}^{2}(\\tau)$ are calculated by using means and variances of $S$ and $F$ (see Appendix 2). Since $f\u00af(\\tau)$ and $\\sigma_{f}^{2}(\\tau)$ also depend on $\u03b6$, the conditional probability distribution function of $f_{k+1,\\tau}$ being $f$ is given by\n\n$$\nP_{f_{k+1,\\tau}}(f|\u03b6)=\\frac{1}{\\sqrt{2\\pi}}exp\u2061(\u2212\\frac{(f\u2212f\u00af(\\tau))^{2}}{2\\sigma_{f}^{2}(\\tau)}).\n$$\n\nThe conditional probability distribution of an Adult collective in cycle $k+1$ ($f_{k+1,\\tau}$) to have frequency $f$ at a given $f_{k}^{\u2217}$ is calculated by multiplying two Gaussian distribution functions and integrating overall $\u03b6$ values, which is given by\n\n$$\nP_{f_{k+1,\\tau}}(f|f_{k}^{\u2217})=\\int_{0}^{1}d\u03b6\u00a0P_{f_{k+1,\\tau}}(f|\u03b6)\u00a0P_{f_{k+1,0}}(\u03b6|f_{k}^{\u2217}).\n$$\n\nSince we select the minimum frequency $f_{k+1}^{min}$ among $g$ identical copies of $f_{k+1,\\tau}$, the conditional probability distribution function of $f_{k+1}^{min}$ follows a minimum value distribution, which is given in Equation 1. Here, for the case of $f^<f_{k}^{\u2217}$, the selected frequency $f_{k+1,0}$ is the minimum frequency $f_{k+1}^{min}$. So we have $\u03a8(f_{k+1}^{\u2217}|f_{k}^{\u2217})$ by replacing $f_{k+1}^{min}$ with $f_{k+1}^{\u2217}$.\n\nWe assume that the conditional probability distribution in Equation 7 follows a normal distribution, whose mean and variances are described by Equation 48 and Equation 49. Then, the extreme value theory (Gumbel, 1958) estimates the median of the selected Adult by\n\n$$\nMedian(f_{k+1}^{\u2217})=f\u00af(\\tau)+[\u03a6^{\u22121}(\\frac{ln\u20612}{g})]\\sigma_{f}(\\tau).\n$$\n\nThe selection progress $\u0394f$ in Equation 2 is obtained by subtracting $f_{k}^{\u2217}$ from Equation 8.\n",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne-Florence Bitbol, Ecole Polytechnique Federale de Lausanne (EPFL) Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97461.3.sa0](https://doi.org/10.7554/eLife.97461.3.sa0)\n\nThis important study of artificial selection in microbial communities shows that the possibility of selecting a desired fraction of slow and fast-growing types is impacted by their initial fractions. The evidence, which relies on mathematical analysis and simulations of a stochastic model, is compelling. It highlights the tension between selection at the strain and the community level. This study should be of interest to researchers interested in ecology, both theoretical and experimental.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97461.3.sa1](https://doi.org/10.7554/eLife.97461.3.sa1)\n\nSummary:\n\nThe authors demonstrate with a simple stochastic model that the initial composition of the community is important in achieving a target frequency during the artificial selection of a community.\n\nStrengths:\n\nTo my knowledge, the intra-collective selection during artificial selection has not been seriously theoretically considered. However, in many cases, the species dynamics during the incubation of each selection cycle is important and relevant to the outcome of the artificial selection experiment. Stochasticity from birth and death (demographic stochasticity) plays a big role in these species' abundance dynamics. This work uses a simple framework to tackle this idea meticulously.\n\nThis work may or may not be related to hysteresis (path dependency). If this is true, maybe it would be nice to have a discussion paragraph talking about how this may be the case. Then, this work would even attract the interest of people studying dynamical systems.\n\nWeaknesses:\n\n(1) Connecting structure and function.\n\nIn typical artificial selection literature, most of them select the community based on collective function. Here in this paper, the authors are selecting a target composition. Although there is a schematic cartoon illustrating the relationship between collective function (y-axis) and the community composition in the main figure 1, there is no explicit explanation or justification of what may be the origin of this relationship. I think giving the readers a na\u00efve idea about how this structure-function relationship arises in the introduction section would help. This is because the conclusion of this paper is that the intra-collective selection makes it hard to artificially select for a community that has an intermediate frequency of f (or s). If there is really evidence or theoretical derivation from this framework that indeed the highest function comes from the intermediate frequency of f, then the impact of this paper would increase because the conclusions of this stochastic model could allude to the reasons for the prevalent failures of artificial selection in literature.\n\n(2) Explain intra-collective and inter-collective selection better for readers.\n\nThe abstract, the introduction, and the result section use these terms or intra-collective and inter-collective selection without much explanation. For the wide readership of eLife, a clear definition in the beginning would help the audience grasp the importance of this paper, because these concepts are at the core of this work.\n\n(3) Achievable target frequency strongly depending on the degree of demographic stochasticity.\n\nI would expect that the experimentalists would find these results interesting and would want to consider these results during their artificial selection experiments. The main figure 4 indicates that the Newborn size N0 is a very important factor to consider during the artificial selection experiment. This would be equivalent to how much bottleneck you impose on the artificial selection process in every iteration step (i.e., the ratio of serial dilution experiment). However, with a low population size, all target frequencies can be achieved, and therefore in these regimes, the initial frequency now does not matter much. It would be great for the authors to provide what the N0 parameter actually means during the artificial selection experiments. Maybe relative to some other parameter in the model. I know this could be very hard. But without this, the main result of this paper (initial frequency matters) cannot be taken advantage of by the experimentalists.\n\n(4) Consideration of environmental stochasticity.\n\nThe success (gold area of Figure 2d) in this framework mainly depends on the size of the demographic stochasticity (birth-only model) during the intra-collective selection. However, during experiments, a lot of environmental stochasticity appears to be occurring during artificial selection. This may be out of the scope of this study. But it would definitely be exciting to see how much environmental stochasticity relative to the demographic stochasticity (variation in the Gaussian distribution of F and S) matters in succeeding in achieving the target composition from artificial selection.\n\n(5) Assumption about mutation rates\n\nIf setting the mutation rates to zero does not change the result of the simulations and the conclusion, what is the purpose of having the mutation rates \\mu? Also, is the unidirectional (S -> F -> FF) mutation realistic? I didn't quite understand how the mutations could fit into the story of this paper.\n\n(6) Minor points\n\nIn Figure 3b, it is not clear to me how the frequency difference for the Intra-collective and the Inter-collective selection is computed.\n\nIn Figure 5b, the gold region (success) near the FF is not visible. Maybe increase the size of the figure or have an inset for zoom-in. Why is the region not as big as the bottom gold region?\n\nComments on revisions:\n\nI thank the authors for addressing many points raised by the reviewers. Overall, the readability of the manuscript has improved with more context provided around why they were solving this specific problem. However, I've found many of the responses to be too terse. It would have been nicer if there had been more discussion and description of the thought process that led up to the conclusions they made for each comment or question. Instead, many of the responses only showed the screenshot of the text they added.\n\nMost of my comments or questions were answered. Below are my comments on some of the authors' responses.\n\n(2) Explain intra-collective and inter-collective selection better for readers.\n\nIn the Abstract and Introduction, you've added more sentences about the intra-collective or inter-collective selection. However, these are either making analogies to the waterfall or just describing the result of the intra/inter-collective selection. I would still appreciate a proper definition of those terms, which is paramount for readers to understand the entire paper.\n\n(4) Consideration of environmental stochasticity.\n\nI think providing the reason 'why' the paper focuses on demographic stochasticity and not environmental stochasticity will greatly justify the paper's work. For example, citing papers that actually performed artificial selection and pointing out that your model captures the stochasticity from those kinds of experiments would be great.\n\n(5) Assumption about mutation rates.\n\nIt would be great if you could add a citation in the added sentence to support your claim: \"This scenario is encountered in biotechnology: .....\".\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97461.3.sa2](https://doi.org/10.7554/eLife.97461.3.sa2)\n\nThe authors address the process of community evolution under collective-level selection for a prescribed community composition. They mostly consider communities composed of two types that reproduce at different rates, and that can mutate one into the other. Due to such difference in 'fitness' and to the absence of density dependence, within-collective selection is expected to always favour the fastest grower, but collective-level selection can oppose this tendency, to a certain extent at least. By approximating the stochastic within-generation dynamics and solving it analytically, the authors show that not only high frequencies of fast growers can be reproducibly achieved, aligned with their fitness advantage. Small target frequencies can also be maintained, provided that the initial proportion of fast growers is sufficiently small. In this regime, similar to the 'stochastic corrector' model, variation upon which selection acts is maintained by a combination of demographic stochasticity and of sampling at reproduction. These two regions of achievable target compositions are separated by a gap, encompassing intermediate frequencies that are only achievable when the bottleneck size is small enough or the number of communities is (disproportionately) large.\n\nA similar conclusion, that stochastic fluctuations can maintain the system over evolutionary time far from the prevalence of the faster-growing type, is then confirmed by analyzing a three-species community, suggesting that the qualitative conclusions of this study are generalizable to more complex communities.\n\nI expect that these results will be of broad interest to the community of researchers who strive to improve community-level selection but are often limited to numerical explorations, with prohibitive costs for a full characterization of the parameter space of such embedded populations. The realization that not all target collective functions can be as easily achieved and that they should be adapted to the initial conditions and the selection protocol is also a sobering message for designing concrete applications.\n\nA major strength of this work is that the qualitative behaviour of the system is captured by an analytically solvable approximation so that the extent of the 'forbidden region' can be directly and generically related to the parameters of the selection protocol.\n\nThe phenomenon the authors characterize is ecological in nature, though it is maintained even when switching between types is possible. Calling this dynamics community evolution reflects a widespread ambiguity in the field, not ascribable just to this work.\n\nAlthough different types compete for being represented in the next generation's propagules, within-generation ecology is here representative of exponential growth. As species interactions are commonly manifest in lab serial dilution experiments, it would be interesting if future work explores the extent of the robustness of these results to density-dependent demography.\n",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "013c83b7-f5b0-43e1-97f3-10ea37679dba",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C1",
+      "claim": "Microbial collectives can perform functions beyond the capability of individual members.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial collectives can perform functions beyond the capability of individual members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about microbial collectives that is presented as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "f2e0b8be-b8a0-4b3c-8f8e-77d4f5b2c39c",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C2",
+      "claim": "Enhancing collective functions through artificial selection is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing collective functions through artificial selection is, however, challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the context of the manuscript and references to previous work showing unimpressive outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "1fbb8fea-4762-4339-95eb-d5cffd53e8a2",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C3",
+      "claim": "Intermediate target S frequencies are the most challenging to achieve.",
+      "claim_type": "EXPLICIT",
+      "source": "Using simulations and analytical calculations, we show that intermediate target S frequencies are the most challenging, akin to a target within the vertical drop of a waterfall, rather than above or below it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both simulations and analytical calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "45cb6868-ca70-4f40-bce8-b9bad46af917",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C4",
+      "claim": "Intra-collective selection is the strongest at intermediate S-frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "This arises because intra-collective selection is the strongest at intermediate S-frequencies, which can overpower inter-collective selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analytical calculations and simulations showing the relationship between frequency and selection strength.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "d4ebc144-e928-47d9-a510-4e48d9ae6480",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C5",
+      "claim": "Achieving a low target S frequency is consistently feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "While achieving a low target S frequencies is consistently feasible, attaining high target S-frequencies requires an initially high S-frequency \u2014 much like a raft that can descend but not ascend a waterfall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations showing successful achievement of low target frequencies from various initial conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "03e1eaa5-0de8-4cf8-8181-d70511f87f95",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C6",
+      "claim": "Attaining high target S-frequencies requires an initially high S-frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "While achieving a low target S frequencies is consistently feasible, attaining high target S-frequencies requires an initially high S-frequency \u2014 much like a raft that can descend but not ascend a waterfall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations showing that high target frequencies can only be achieved from high initial frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "e25e620b-172f-44d0-8640-6f8241a5c60a",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C7",
+      "claim": "As Newborn size increases, the region of achievable target frequency is reduced until no frequency is achievable.",
+      "claim_type": "EXPLICIT",
+      "source": "As Newborn size increases, the region of achievable target frequency is reduced until no frequency is achievable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 4a showing the relationship between Newborn size and achievable target frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "680a3f66-9b3e-4460-952d-9598b616119f",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C8",
+      "claim": "The number of collectives under selection plays a less critical role than Newborn size.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the number of collectives under selection plays a less critical role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analytical calculations and simulations comparing the effects of different parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "d161f606-bfc4-4201-ba05-50f13218142c",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C9",
+      "claim": "In scenarios involving more than two populations, the evolutionary trajectory must navigate entirely away from the metaphorical 'waterfall drop.'",
+      "claim_type": "EXPLICIT",
+      "source": "In scenarios involving more than two populations, the evolutionary trajectory must navigate entirely away from the metaphorical 'waterfall drop.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations of three-population systems shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "3c3093c8-8f8b-4779-8b9c-8296fc79a19f",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C10",
+      "claim": "The strength of intra-collective evolution is frequency-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings illustrate that the strength of intra-collective evolution is frequency-dependent, with implications in experimental planning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through analytical calculations and simulations showing varying selection strength at different frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "0c6ef0a1-3462-43cc-9063-6baa113c0946",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C11",
+      "claim": "Microbial collectives can carry out functions such as waste degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial collectives can carry out functions that arise from interactions among member species. These functions, such as waste degradation (Woo et al., 2020; Sun et al., 2022), probiotics (Bober et al., 2018), and vitamin production (Wang et al., 2016), can be useful for human health and biotechnology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "9c1d2375-f649-4c40-a338-2e51186b710f",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C12",
+      "claim": "Microbial collectives can carry out functions such as probiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial collectives can carry out functions that arise from interactions among member species. These functions, such as waste degradation (Woo et al., 2020; Sun et al., 2022), probiotics (Bober et al., 2018), and vitamin production (Wang et al., 2016), can be useful for human health and biotechnology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "9e1b3c4c-b0b7-4da9-be0f-339d40c133e7",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C13",
+      "claim": "Microbial collectives can carry out functions such as vitamin production.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial collectives can carry out functions that arise from interactions among member species. These functions, such as waste degradation (Woo et al., 2020; Sun et al., 2022), probiotics (Bober et al., 2018), and vitamin production (Wang et al., 2016), can be useful for human health and biotechnology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "59bfdc8b-37b5-45ab-ba36-7ec8b029fedc",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C14",
+      "claim": "Artificial selection of collectives have been attempted in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial selection of collectives have been attempted both in experiments (Goodnight, 1990; Swenson et al., 2000b; Swenson et al., 2000a; Blouin et al., 2015; Panke-Buisse et al., 2015; Panke-Buisse et al., 2017; Jochum et al., 2019; Wright et al., 2019; Raynaud et al., 2019; Arora et al., 2020; Chang et al., 2020; Mueller et al., 2021; Jacquiod et al., 2022; Raynaud et al., 2022; Arias-S\u00e1nchez et al., 2024) and in simulations (Penn, 2003; Penn and Harvey, 2004; Williams and Lenton, 2007; Xie et al., 2019; Doulcier et al., 2020; Xie and Shou, 2021; Chang et al., 2021; Fraboul et al., 2023; Lalejini et al., 2022; Zaccaria et al., 2023; Vessman et al., 2023), often with unimpressive outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "8943ef39-85f3-43af-951f-aa04ee543c33",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C15",
+      "claim": "Artificial selection of collectives have been attempted in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial selection of collectives have been attempted both in experiments (Goodnight, 1990; Swenson et al., 2000b; Swenson et al., 2000a; Blouin et al., 2015; Panke-Buisse et al., 2015; Panke-Buisse et al., 2017; Jochum et al., 2019; Wright et al., 2019; Raynaud et al., 2019; Arora et al., 2020; Chang et al., 2020; Mueller et al., 2021; Jacquiod et al., 2022; Raynaud et al., 2022; Arias-S\u00e1nchez et al., 2024) and in simulations (Penn, 2003; Penn and Harvey, 2004; Williams and Lenton, 2007; Xie et al., 2019; Doulcier et al., 2020; Xie and Shou, 2021; Chang et al., 2021; Fraboul et al., 2023; Lalejini et al., 2022; Zaccaria et al., 2023; Vessman et al., 2023), often with unimpressive outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "c1afc541-6167-4f7f-95e6-c383fa75ecf6",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C16",
+      "claim": "Artificial selection of collectives often has unimpressive outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial selection of collectives have been attempted both in experiments (Goodnight, 1990; Swenson et al., 2000b; Swenson et al., 2000a; Blouin et al., 2015; Panke-Buisse et al., 2015; Panke-Buisse et al., 2017; Jochum et al., 2019; Wright et al., 2019; Raynaud et al., 2019; Arora et al., 2020; Chang et al., 2020; Mueller et al., 2021; Jacquiod et al., 2022; Raynaud et al., 2022; Arias-S\u00e1nchez et al., 2024) and in simulations (Penn, 2003; Penn and Harvey, 2004; Williams and Lenton, 2007; Xie et al., 2019; Doulcier et al., 2020; Xie and Shou, 2021; Chang et al., 2021; Fraboul et al., 2023; Lalejini et al., 2022; Zaccaria et al., 2023; Vessman et al., 2023), often with unimpressive outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited literature on collective selection attempts.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "09ffba77-d6f2-456b-94a9-5700ee00cd8f",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C17",
+      "claim": "One of the major challenges in selecting collectives is to ensure the inheritance of a collective function.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the major challenges in selecting collectives is to ensure the inheritance of a collective function (Xie et al., 2023; Thomas et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "bd9f0fc2-bb6f-42e3-816f-7429374faa0e",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C18",
+      "claim": "Inheritance from a parent collective to offspring collectives can be compromised by changes in genotype and species compositions.",
+      "claim_type": "EXPLICIT",
+      "source": "Inheritance from a parent collective to offspring collectives can be compromised by changes in genotype and species compositions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the biological processes described.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "0f242fac-da4c-44b3-b272-f069f9aba89a",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C19",
+      "claim": "During maturation of a collective, genotype compositions within each species can change due to intra-collective selection favoring fast-growing individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "During maturation of a collective, genotype compositions within each species can change due to intra-collective selection favoring fast-growing individuals (Figure 1, 'intra-collective' selection), while species compositions can change due to ecological interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on established evolutionary principles and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "c594e767-2322-4fba-b67d-09f25c6e0df9",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C20",
+      "claim": "Species compositions can change due to ecological interactions during collective maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "During maturation of a collective, genotype compositions within each species can change due to intra-collective selection favoring fast-growing individuals (Figure 1, 'intra-collective' selection), while species compositions can change due to ecological interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on established ecological principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "b6438e44-6e97-4f0c-a6b7-96c6454cb688",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C21",
+      "claim": "During the reproduction of a collective, genotype and species compositions of offspring can vary stochastically from those of the parent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, during the reproduction of a collective, genotype and species compositions of offspring can vary stochastically from those of the parent (Figure 1, 'genetic drift').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the principle of genetic drift, a well-established concept in population genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "0f50c370-c421-4371-83b6-c70960bced00",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C22",
+      "claim": "Whenever a collective function depends on both populations, the collective function is maximized at an intermediate frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a common quest: whenever a collective function depends on both populations, the collective function is maximized, by definition, at an intermediate frequency (e.g. too little of either population will hamper function; Xie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "2fabbb74-bb5a-440d-b46f-469db51a0106",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C23",
+      "claim": "Nearly any target species composition can be achieved when selecting communities of two competing species with unequal growth rates, so long as the shared resource is depleted during collective maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier work has demonstrated that nearly any target species composition can be achieved when selecting communities of two competing species with unequal growth rates (Doulcier et al., 2020; Rainey, 2023), so long as the shared resource is depleted during collective maturation (Doulcier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "d6e4aebd-9fa9-4b2e-b9e6-5e571795b1d7",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C24",
+      "claim": "In the case of resource depletion, initially both species evolved to grow faster, and the slower-growing species was preserved due to stochastic fluctuations in species composition during collective reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, initially, both species evolved to grow faster, and the slower-growing species was preserved due to stochastic fluctuations in species composition during collective reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from earlier work (Doulcier et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "9714b704-1bb5-4c4f-9576-292638ccfd24",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C25",
+      "claim": "Eventually, both species evolved to grow sufficiently fast to deplete the shared resource during collective maturation, and evolution in competition coefficients then acted to stabilize the species ratio to the target value.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, both species evolved to grow sufficiently fast to deplete the shared resource during collective maturation, and evolution in competition coefficients then acted to stabilize the species ratio to the target value (Doulcier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from earlier work (Doulcier et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "66626535-8c88-491b-881d-f304009320c3",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C26",
+      "claim": "Earlier studies are often limited to numerical explorations, with prohibitive costs for a full characterization of the parameter space for nested populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, earlier studies are often limited to numerical explorations, with prohibitive costs for a full characterization of the parameter space for such nested populations (population of collectives, and populations of variants within a collective).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the limitations of previous research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "8e88b79b-ca71-4591-8a48-a599f5b830b0",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C27",
+      "claim": "The model assumes growth is always exponential, without complications such as resource limitation, ecological interactions between the two populations, or density-dependent growth.",
+      "claim_type": "EXPLICIT",
+      "source": "First, growth is always exponential, without complications such as resource limitation, ecological interactions between the two populations, or density-dependent growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "3073ff2a-f600-4295-9c74-2693666e4237",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C29",
+      "claim": "The model does not consider a spectrum of mutants or species because with more than two populations, an analytical solution becomes very difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not consider a spectrum of mutants or species, since with more than two populations, an analytical solution becomes very difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated justification for a modeling choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "9eb3672f-0ef8-42fe-b9d2-d3bd417d2513",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C30",
+      "claim": "The single top-functioning community is chosen to reproduce, which allows the use of the simplest version of the extreme value theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the single top-functioning community is chosen to reproduce, which allows us to employ the simplest version of the extreme value theory (see section below for further justification).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption and justification for the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "c520f107-86d0-473e-9d74-6312c24c1b4d",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C31",
+      "claim": "The model scenario is encountered in biotechnology where an engineered pathway will slow down cell growth, and breaking the pathway is much easier than the other way around.",
+      "claim_type": "EXPLICIT",
+      "source": "We made this choice because it is more challenging to attain or maintain the target frequency when the abundance of fast-growing F is further increased via mutations. This scenario is encountered in biotechnology: an engineered pathway will slow down cell growth, and breaking the pathway (and thus faster growth) is much easier than the other way around.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of biotechnology applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "23a6cc43-2758-44f0-98eb-b1c589974ab5",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C32",
+      "claim": "When the mutation rate is set to zero, the same model can be used to capture collectives of two species with different growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "When the mutation rate is set to zero, the same model can be used to capture collectives of two species with different growth rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated property of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "f6e363a7-0aec-45af-93ce-c2df5df7951e",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C37",
+      "claim": "Even though S and F do not compete for nutrients, they compete for space because the total number of cells transferred to the next cycle is fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that even though S and F do not compete for nutrients, they compete for space: because the total number of cells transferred to the next cycle is fixed, an overabundance of one population will reduce the likelihood of the other being propagated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "e093a42c-e92c-4302-9bee-6163be46a34a",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C38",
+      "claim": "Choosing top 1 is more effective than the less stringent 'choosing top 5%' in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with findings from an earlier study (Xie et al., 2019), choosing top 1 is more effective than the less stringent 'choosing top 5%.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with earlier work and data in Appendix 7\u2014figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "f544538e-105b-4a8a-bd0d-925eec2b11e4",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C39",
+      "claim": "In an earlier study, variation in the collective trait is partly due to nonheritable factors such as random fluctuations in Newborn biomass.",
+      "claim_type": "EXPLICIT",
+      "source": "In the earlier study, variation in the collective trait is partly due to nonheritable factors such as random fluctuations in Newborn biomass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from earlier work (Xie et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "46773f40-8ef0-45ab-bede-e6db97d4c59b",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C40",
+      "claim": "This study excludes non-heritable variations in collective traits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since this study excludes non-heritable variations in collective traits, selecting the top 1 collective is more effective than selecting the top 5% (see Appendix 7\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated property of the model in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "57e1f710-2ce4-455a-9218-4b8348f737c5",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C41",
+      "claim": "The model considers mutational stochasticity and demographic stochasticity in terms of stochastic birth and stochastic sampling of a parent collective by offspring collectives.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our model considers mutational stochasticity, as well as demographic stochasticity in terms of stochastic birth and stochastic sampling of a parent collective by offspring collectives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the types of stochasticity included in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "22c2b8d0-67f8-4656-b874-5a501eed9980",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C42",
+      "claim": "Other types of stochasticity, such as environmental stochasticity and measurement noise, are not considered and require future research.",
+      "claim_type": "EXPLICIT",
+      "source": "Other types of stochasticity, such as environmental stochasticity and measurement noise, are not considered and require future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "6e4c4337-d9f7-4b5c-aeec-eac905eabe39",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C45",
+      "claim": "Without collective-level selection, F frequency increases until F reaches fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, without collective-level selection (e.g. choosing a random collective to reproduce), F frequency increases until F reaches fixation (Supplementary information Appendix 1\u2014figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Appendix 1\u2014figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "69d3590b-de34-465e-80f4-639868f26621",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C52",
+      "claim": "If the magnitude of down-shift due to inter-collective selection exceeds that of up-shift due to intra-collective selection, progress toward the target is made.",
+      "claim_type": "EXPLICIT",
+      "source": "If the magnitude of down-shift exceeded that of up-shift, progress toward the target was made.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the visualization in Figure 2d.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "ce404a78-fc6d-4734-a887-f0e1fd0128aa",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C56",
+      "claim": "When Newborn F frequency is intermediate, intra-collective selection is the strongest and may overwhelm inter-collective selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, when Newborn F frequency is intermediate, intra-collective selection is the strongest and may overwhelm inter-collective selection (Figure 3b and Appendix 2\u2014figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3b and Appendix 2\u2014figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "bf680a5e-e53f-4c78-a446-b60dbf6b9e08",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C57",
+      "claim": "Similar conclusions about the waterfall phenomenon are derived where S and F are slow-growing and fast-growing species which cannot be converted through mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, similar conclusions are derived where S and F are slow-growing and fast-growing species which cannot be converted through mutations (Appendix 4 and Appendix 4\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Appendix 4 and Appendix 4\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "bd7cf6b2-ca4c-44d3-bcc5-5cae364d967b",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C65",
+      "claim": "A larger number of collectives broadens the region of success.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a larger number of collectives broadens the region of success (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "6318d373-77a0-4440-8708-4a572cfe68df",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C68",
+      "claim": "In the three-population case, the evolutionary trajectory travels in a two-dimensional plane.",
+      "claim_type": "EXPLICIT",
+      "source": "In the three-population case, the evolutionary trajectory travels in a two-dimensional plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of having three populations with frequencies that sum to 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "2896cdea-e302-4381-8c89-c95ea39556b6",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C69",
+      "claim": "A target population composition in the three-population system can be achieved if inter-collective selection can sufficiently reduce the frequencies of F as well as FF.",
+      "claim_type": "EXPLICIT",
+      "source": "A target population composition can be achieved if inter-collective selection can sufficiently reduce the frequencies of F as well as FF (accessible regions, gold in Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "a75b8c0c-5443-480c-86e9-1177c4cc16ef",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C70",
+      "claim": "The rate at which FF grows faster than S+F is greater than the rate at which F grows faster than S in the three-population system.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, the rate at which FF grows faster than S+F is greater than the rate at which F grows faster than S (see Appendix 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained in Appendix 8.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "c9c60229-42ed-4da8-8da0-9c346ac886a3",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C71",
+      "claim": "The three-population problem can initially be reduced to a two-population problem (FF versus F+S), and then expanded to a three-population problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the problem can initially be reduced to a two-population problem (i.e. FF versus F+S; Figure 5c left), and then expanded to a three-population problem (Figure 5c right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 5c and explained through logical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "bb2c3880-4e64-4600-8c4f-924762973c8c",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C72",
+      "claim": "In the three-population system, targets in the inaccessible region are never achievable.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the two-population case, targets in the inaccessible region are never achievable (Figure 5b ii), while those in the FF region are always achievable (Figure 5b i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "a1765b6a-eea2-483e-a91d-76b25c44be8e",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C73",
+      "claim": "In the three-population system, targets in the FF region are always achievable.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the two-population case, targets in the inaccessible region are never achievable (Figure 5b ii), while those in the FF region are always achievable (Figure 5b i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "e8c4c26b-a79c-434c-8dfd-6b56a26b5636",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C74",
+      "claim": "A target composition in an accessible region may not be achievable even when the initial composition is within the same region if the composition escapes the accessible region during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, a target composition in an accessible region may not be achievable even when the initial composition is within the same region: once the composition escapes the accessible region, the trajectory cannot return back to the accessible region (Figure 5biii, the leftmost initial condition).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5b iii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "616ae8fd-e316-406b-8cae-a554019381d8",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C75",
+      "claim": "If the initial position is closer to the target in the accessible region, the target becomes achievable in the three-population system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the initial position is closer to the target in the accessible region, the target becomes achievable (Figure 5b iii, initial condition near the bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5b iii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "442efe5e-dd95-4974-88f0-95c86b26e4b3",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C76",
+      "claim": "In the three-population system, the selection outcome is path-dependent in the sense of being sensitive to initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that here, the selection outcome is path-dependent in the sense of being sensitive to initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the results shown in Figure 5b iii.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "17b84835-1834-4543-b380-512476abe282",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C77",
+      "claim": "The path-dependence in the three-population system is distinct from hysteresis, where path-dependence results from whether a tuning parameter is increased or decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is distinct from hysteresis, where path-dependence results from whether a tuning parameter is increased or decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification distinguishing the observed phenomenon from hysteresis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "2cb6c467-412e-4977-82c7-1183aac065f3",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C78",
+      "claim": "Strategically choosing an appropriate starting point can be essential for successful collective selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work suggests that the strength of intra-collective selection is not constant, and that strategically choosing an appropriate starting point can be essential for successful collective selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "bac692a0-f4fc-44cb-9a98-6ae125596909",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C79",
+      "claim": "The model uses the tau-leaping algorithm for stochastic simulation of cell division and mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "We can simulate the division and mutation of each individual cell stochastically by using the tau-leaping algorithm (Gillespie, 2001; Cao et al., 2006; see Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation method with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "c4055a09-c40d-4a65-a888-49a304f90e43",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C80",
+      "claim": "Individual-based simulations require a long computing time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, individual-based simulations require a long computing time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated justification for using an alternative approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "862e85cd-9a90-4cbb-9d41-360ab212dd74",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "claim_id": "C82",
+      "claim": "Each distribution of S and F follows a Gaussian distribution, with the mean and variance numerically obtained from ordinary differential equations derived from the master equation.",
+      "claim_type": "EXPLICIT",
+      "source": "Each distribution follows a Gaussian distribution, with the mean and variance numerically obtained from ordinary differential equations derived from the master equation (see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analytical approach used in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6ab5c7de-f889-4cf7-8a03-a1d7646c3767",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microbial collectives can perform functions beyond individual capabilities, including waste degradation, probiotics, and vitamin production, which are useful for human health and biotechnology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C13 establish the functional capabilities of microbial collectives based on cited prior work. These are well-established background claims supported by appropriate citations and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Artificial selection of microbial collectives is challenging due to difficulties in ensuring inheritance of collective functions, which can be compromised by changes in genotype and species compositions during maturation (intra-collective selection) and reproduction (genetic drift).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14-C21 collectively establish the challenge of collective selection based on extensive prior work and established evolutionary principles. The claims are well-supported by citations and represent accepted knowledge about the difficulties in collective-level selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "7e7a62ff-1b56-496d-af05-9f35058c8282",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Intermediate target S frequencies are the most challenging to achieve because intra-collective selection is strongest at intermediate frequencies and can overpower inter-collective selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, and C56 are supported by both analytical calculations and stochastic simulations (Figures 2-3). The data clearly demonstrate that intermediate frequencies experience the strongest intra-collective selection, creating the 'waterfall' phenomenon. This is a core finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "58c97ec6-a71c-42d5-941c-f7f1fd47335d",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Low target S frequencies are consistently achievable from any initial condition, while high target S frequencies require initially high S frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C6 are directly supported by simulation data in Figure 2a-c showing that low targets are accessible from all initial conditions while high targets require high initial frequencies. This asymmetry is a key prediction of the waterfall model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "3a63d07a-65b4-491b-aae2-2c34c3075c6d",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "As Newborn size increases, the region of achievable target frequency is reduced until no frequency is achievable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is directly supported by Figure 4a, which shows the systematic reduction in accessible regions as N\u2080 increases. The analytical framework (Equations 2-4 in Box 1) provides theoretical justification for this relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "8e4e5e52-55de-45a8-87a5-19c35693e086",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The number of collectives under selection plays a less critical role than Newborn size, though larger numbers of collectives do broaden the region of success.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C65 are supported by Figure 4b and analytical reasoning showing that g appears only in \u03a6\u207b\u00b9(ln2/g), which changes slowly with g. The comparison between effects of N\u2080 and g is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In three-population systems, the evolutionary trajectory must navigate entirely away from the inaccessible region, and success depends critically on initial conditions, creating path-dependent outcomes distinct from hysteresis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C68-C77 are supported by simulations shown in Figure 5. The data clearly demonstrate accessible and inaccessible regions, path-dependence, and the extension of the waterfall phenomenon to higher dimensions. The distinction from hysteresis (C77) is appropriately clarified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "89036cc8-6839-439e-ba24-e07f6a62d71f",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The strength of intra-collective evolution is frequency-dependent, and strategically choosing an appropriate starting point is essential for successful collective selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C78 represent the main conclusions drawn from the entire body of work. They are well-supported by the analytical framework and simulation data showing frequency-dependent selection strength (Figures 2-5).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "87dd79d9-2164-4e39-aaa1-6577a66ed7c6",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work has shown that intermediate frequencies maximize collective function and that nearly any target composition can be achieved under resource depletion conditions, though earlier studies were limited to numerical explorations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 accurately describe prior work with appropriate citations (Doulcier et al., 2020; Rainey, 2023; Xie et al., 2019). These claims establish the context and motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "38a69964-9014-42ad-9342-4fda22a9b90e",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model makes simplifying assumptions including exponential growth, two populations only, and selection of the single top-functioning collective, which are justified by analytical tractability and relevance to biotechnology applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C29-C32 clearly state the model assumptions and provide justifications. These are appropriately transparent about model limitations and their rationale, which is essential for proper interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "2de4a87d-4849-4500-bfe6-08398f57555a",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model includes competition for space, mutational and demographic stochasticity, and excludes non-heritable variations, making 'top 1' selection more effective than 'top 5%' selection in this context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 describe model features and their implications, supported by Appendix 7\u2014figure 1 for C38 and C40. The comparison with prior work (C39) is appropriately cited. The stated limitations (C42) are transparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "7f1bc10a-559d-4cfc-9df2-f8f2901c6038",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Without collective-level selection, F frequency increases to fixation, while progress toward target requires inter-collective selection to exceed intra-collective selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C52 are supported by data in Appendix 1\u2014figure 3b and the visualization in Figure 2d. These claims establish the necessity of inter-collective selection and the balance between opposing forces.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "95461030-51e3-4bac-89c3-ba3a431ecd73",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Similar waterfall conclusions apply when S and F are distinct species that cannot interconvert through mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by data in Appendix 4 and Appendix 4\u2014figure 1, demonstrating that the waterfall phenomenon is robust to whether populations are genotypes or species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "bbd0b228-b180-404f-9522-dc2c74d0e8ea",
+      "content_id": "dcf2985b-c8c7-4a3e-9f55-5a7df5ffec05",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model uses tau-leaping algorithm for stochastic simulations but employs Gaussian approximations derived from master equations to reduce computational time, with distributions obtained from ordinary differential equations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C80, and C82 describe the computational methodology with appropriate citations (Gillespie, 2001; Cao et al., 2006). The justification for using Gaussian approximations instead of individual-based simulations is reasonable given computational constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "64e629b3-c54f-44c3-9fa9-a58daf84812f",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that intermediate target frequencies of slow-growing (S) types are the most challenging to achieve because intra-collective selection is strongest at intermediate frequencies, potentially overpowering inter-collective selection. This creates a 'waterfall' phenomenon where certain frequency ranges are inaccessible.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this core finding. The editor states the evidence is 'compelling' and highlights 'the tension between selection at the strain and the community level.' Reviewer 3 notes 'a major strength of this work is that the qualitative behaviour of the system is captured by an analytically solvable approximation' and that intermediate frequencies form a 'forbidden region.' No reviewer challenges this central result.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "3534009c-26dd-4248-98e7-943adec2f30d",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors show an asymmetry in achievability: low target S-frequencies are consistently feasible from various initial conditions, while high target S-frequencies require initially high S-frequencies. This is analogous to a raft that can descend but not ascend a waterfall.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding without challenge. The editor describes the study as showing 'the possibility of selecting a desired fraction of slow and fast-growing types is impacted by their initial fractions.' Reviewer 3 explicitly states 'not only high frequencies of fast growers can be reproducibly achieved...Small target frequencies can also be maintained, provided that the initial proportion of fast growers is sufficiently small.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "00a92b6d-7b93-4002-891c-511b423b29a9",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that Newborn size (bottleneck size) is the most critical parameter affecting achievable target frequencies\u2014as it increases, the region of achievable targets shrinks until none are achievable. In contrast, the number of collectives under selection plays a less critical role, though larger numbers broaden the success region.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not challenge the technical findings, Reviewer 2 raises a significant concern about practical interpretation: 'It would be great for the authors to provide what the N0 parameter actually means during the artificial selection experiments...without this, the main result of this paper (initial frequency matters) cannot be taken advantage of by the experimentalists.' This suggests the result's practical applicability remains unclear despite technical correctness.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "5acb6938-51d0-484b-a444-e0016f9b6e22",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors extend their analysis to three-population systems (S, F, FF), showing that evolutionary trajectories must navigate away from the 'waterfall drop' entirely. They demonstrate path-dependence where success depends on initial conditions, with some targets in accessible regions still unachievable if trajectories escape those regions during evolution. This path-dependence is distinct from hysteresis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly affirms this extension: 'A similar conclusion, that stochastic fluctuations can maintain the system over evolutionary time far from the prevalence of the faster-growing type, is then confirmed by analyzing a three-species community, suggesting that the qualitative conclusions of this study are generalizable to more complex communities.' Reviewer 2 notes interest in the connection to path-dependence and hysteresis, which the authors address.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "fd2a5dcd-0297-4670-9c13-88ffa89cd13d",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The model makes several simplifying assumptions: exponential growth without resource limitation or ecological interactions, only two populations (to enable analytical solutions), selection of the single top-functioning community (to use extreme value theory), and unidirectional mutations from S to F. These choices are justified by analytical tractability and relevance to biotechnology scenarios.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 explicitly notes a key limitation: 'Although different types compete for being represented in the next generation's propagules, within-generation ecology is here representative of exponential growth. As species interactions are commonly manifest in lab serial dilution experiments, it would be interesting if future work explores the extent of the robustness of these results to density-dependent demography.' Reviewer 2 questions the mutation assumption, asking about its purpose and realism. While reviewers accept these as modeling choices, they identify them as limitations affecting generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "ce447240-82fe-45a8-b7b0-f30ddfa67fa6",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The model incorporates mutational and demographic stochasticity (stochastic birth and sampling), but excludes environmental stochasticity and measurement noise, which are noted as requiring future research.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises a substantive concern: 'The success (gold area of Figure 2d) in this framework mainly depends on the size of the demographic stochasticity...However, during experiments, a lot of environmental stochasticity appears to be occurring during artificial selection.' The reviewer requests justification for why the paper focuses on demographic rather than environmental stochasticity and suggests citing papers showing the model captures relevant experimental stochasticity. This indicates the scope limitation is significant for practical application.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "8a602a5e-b29c-45de-a522-0a5ad154855f",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors employ both individual-based stochastic simulations using the tau-leaping algorithm and an analytical approach where distributions of S and F follow Gaussian distributions with means and variances obtained from ODEs derived from the master equation. The analytical approach is used due to computational efficiency.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly praises this methodological contribution: 'A major strength of this work is that the qualitative behaviour of the system is captured by an analytically solvable approximation so that the extent of the 'forbidden region' can be directly and generically related to the parameters of the selection protocol.' The editor notes the evidence 'relies on mathematical analysis and simulations of a stochastic model' and is 'compelling.' No reviewer challenges the methodological approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "462c4997-a034-4877-b4a2-8e30ee96a3ea",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors conclude that the strength of intra-collective evolution is frequency-dependent, with implications for experimental planning, and that strategically choosing appropriate starting points is essential for successful collective selection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 affirms this practical implication: 'The realization that not all target collective functions can be as easily achieved and that they should be adapted to the initial conditions and the selection protocol is also a sobering message for designing concrete applications.' The editor describes the study as 'important' and of interest to 'researchers interested in ecology, both theoretical and experimental,' implying acceptance of the practical implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f",
+      "content_id": "a893231d-30c4-403e-9724-908f2d886b9a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors provide background context on microbial collectives, their functions, challenges in artificial selection, inheritance issues, and limitations of earlier studies. They note that collective functions are often maximized at intermediate frequencies and reference prior work on achieving target compositions in two-species systems.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers treat these as accepted background context. Reviewer 2 requests better explanation of structure-function relationships (C22) to strengthen impact, but does not challenge the claims themselves. Reviewer 1 notes 'the intra-collective selection during artificial selection has not been seriously theoretically considered,' affirming the novelty relative to this background. These claims frame the study but are not the focus of reviewer evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "013c83b7-f5b0-43e1-97f3-10ea37679dba",
+      "result_id": "6ab5c7de-f889-4cf7-8a03-a1d7646c3767"
+    },
+    {
+      "claim_id": "0c6ef0a1-3462-43cc-9063-6baa113c0946",
+      "result_id": "6ab5c7de-f889-4cf7-8a03-a1d7646c3767"
+    },
+    {
+      "claim_id": "9c1d2375-f649-4c40-a338-2e51186b710f",
+      "result_id": "6ab5c7de-f889-4cf7-8a03-a1d7646c3767"
+    },
+    {
+      "claim_id": "9e1b3c4c-b0b7-4da9-be0f-339d40c133e7",
+      "result_id": "6ab5c7de-f889-4cf7-8a03-a1d7646c3767"
+    },
+    {
+      "claim_id": "f2e0b8be-b8a0-4b3c-8f8e-77d4f5b2c39c",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "59bfdc8b-37b5-45ab-ba36-7ec8b029fedc",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "8943ef39-85f3-43af-951f-aa04ee543c33",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "c1afc541-6167-4f7f-95e6-c383fa75ecf6",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "09ffba77-d6f2-456b-94a9-5700ee00cd8f",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "bd9f0fc2-bb6f-42e3-816f-7429374faa0e",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "0f242fac-da4c-44b3-b272-f069f9aba89a",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "c594e767-2322-4fba-b67d-09f25c6e0df9",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "b6438e44-6e97-4f0c-a6b7-96c6454cb688",
+      "result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc"
+    },
+    {
+      "claim_id": "1fbb8fea-4762-4339-95eb-d5cffd53e8a2",
+      "result_id": "7e7a62ff-1b56-496d-af05-9f35058c8282"
+    },
+    {
+      "claim_id": "45cb6868-ca70-4f40-bce8-b9bad46af917",
+      "result_id": "7e7a62ff-1b56-496d-af05-9f35058c8282"
+    },
+    {
+      "claim_id": "ce404a78-fc6d-4734-a887-f0e1fd0128aa",
+      "result_id": "7e7a62ff-1b56-496d-af05-9f35058c8282"
+    },
+    {
+      "claim_id": "d4ebc144-e928-47d9-a510-4e48d9ae6480",
+      "result_id": "58c97ec6-a71c-42d5-941c-f7f1fd47335d"
+    },
+    {
+      "claim_id": "03e1eaa5-0de8-4cf8-8181-d70511f87f95",
+      "result_id": "58c97ec6-a71c-42d5-941c-f7f1fd47335d"
+    },
+    {
+      "claim_id": "e25e620b-172f-44d0-8640-6f8241a5c60a",
+      "result_id": "3a63d07a-65b4-491b-aae2-2c34c3075c6d"
+    },
+    {
+      "claim_id": "680a3f66-9b3e-4460-952d-9598b616119f",
+      "result_id": "8e4e5e52-55de-45a8-87a5-19c35693e086"
+    },
+    {
+      "claim_id": "bd7cf6b2-ca4c-44d3-bcc5-5cae364d967b",
+      "result_id": "8e4e5e52-55de-45a8-87a5-19c35693e086"
+    },
+    {
+      "claim_id": "d161f606-bfc4-4201-ba05-50f13218142c",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "6318d373-77a0-4440-8708-4a572cfe68df",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "2896cdea-e302-4381-8c89-c95ea39556b6",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "a75b8c0c-5443-480c-86e9-1177c4cc16ef",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "c9c60229-42ed-4da8-8da0-9c346ac886a3",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "bb2c3880-4e64-4600-8c4f-924762973c8c",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "a1765b6a-eea2-483e-a91d-76b25c44be8e",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "e8c4c26b-a79c-434c-8dfd-6b56a26b5636",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "616ae8fd-e316-406b-8cae-a554019381d8",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "442efe5e-dd95-4974-88f0-95c86b26e4b3",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "17b84835-1834-4543-b380-512476abe282",
+      "result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a"
+    },
+    {
+      "claim_id": "3c3093c8-8f8b-4779-8b9c-8296fc79a19f",
+      "result_id": "89036cc8-6839-439e-ba24-e07f6a62d71f"
+    },
+    {
+      "claim_id": "2cb6c467-412e-4977-82c7-1183aac065f3",
+      "result_id": "89036cc8-6839-439e-ba24-e07f6a62d71f"
+    },
+    {
+      "claim_id": "0f50c370-c421-4371-83b6-c70960bced00",
+      "result_id": "87dd79d9-2164-4e39-aaa1-6577a66ed7c6"
+    },
+    {
+      "claim_id": "2fabbb74-bb5a-440d-b46f-469db51a0106",
+      "result_id": "87dd79d9-2164-4e39-aaa1-6577a66ed7c6"
+    },
+    {
+      "claim_id": "d6e4aebd-9fa9-4b2e-b9e6-5e571795b1d7",
+      "result_id": "87dd79d9-2164-4e39-aaa1-6577a66ed7c6"
+    },
+    {
+      "claim_id": "9714b704-1bb5-4c4f-9576-292638ccfd24",
+      "result_id": "87dd79d9-2164-4e39-aaa1-6577a66ed7c6"
+    },
+    {
+      "claim_id": "66626535-8c88-491b-881d-f304009320c3",
+      "result_id": "87dd79d9-2164-4e39-aaa1-6577a66ed7c6"
+    },
+    {
+      "claim_id": "8e88b79b-ca71-4591-8a48-a599f5b830b0",
+      "result_id": "38a69964-9014-42ad-9342-4fda22a9b90e"
+    },
+    {
+      "claim_id": "3073ff2a-f600-4295-9c74-2693666e4237",
+      "result_id": "38a69964-9014-42ad-9342-4fda22a9b90e"
+    },
+    {
+      "claim_id": "9eb3672f-0ef8-42fe-b9d2-d3bd417d2513",
+      "result_id": "38a69964-9014-42ad-9342-4fda22a9b90e"
+    },
+    {
+      "claim_id": "c520f107-86d0-473e-9d74-6312c24c1b4d",
+      "result_id": "38a69964-9014-42ad-9342-4fda22a9b90e"
+    },
+    {
+      "claim_id": "23a6cc43-2758-44f0-98eb-b1c589974ab5",
+      "result_id": "38a69964-9014-42ad-9342-4fda22a9b90e"
+    },
+    {
+      "claim_id": "f6e363a7-0aec-45af-93ce-c2df5df7951e",
+      "result_id": "2de4a87d-4849-4500-bfe6-08398f57555a"
+    },
+    {
+      "claim_id": "e093a42c-e92c-4302-9bee-6163be46a34a",
+      "result_id": "2de4a87d-4849-4500-bfe6-08398f57555a"
+    },
+    {
+      "claim_id": "f544538e-105b-4a8a-bd0d-925eec2b11e4",
+      "result_id": "2de4a87d-4849-4500-bfe6-08398f57555a"
+    },
+    {
+      "claim_id": "46773f40-8ef0-45ab-bede-e6db97d4c59b",
+      "result_id": "2de4a87d-4849-4500-bfe6-08398f57555a"
+    },
+    {
+      "claim_id": "57e1f710-2ce4-455a-9218-4b8348f737c5",
+      "result_id": "2de4a87d-4849-4500-bfe6-08398f57555a"
+    },
+    {
+      "claim_id": "22c2b8d0-67f8-4656-b874-5a501eed9980",
+      "result_id": "2de4a87d-4849-4500-bfe6-08398f57555a"
+    },
+    {
+      "claim_id": "6e4c4337-d9f7-4b5c-aeec-eac905eabe39",
+      "result_id": "7f1bc10a-559d-4cfc-9df2-f8f2901c6038"
+    },
+    {
+      "claim_id": "69d3590b-de34-465e-80f4-639868f26621",
+      "result_id": "7f1bc10a-559d-4cfc-9df2-f8f2901c6038"
+    },
+    {
+      "claim_id": "bf680a5e-e53f-4c78-a446-b60dbf6b9e08",
+      "result_id": "95461030-51e3-4bac-89c3-ba3a431ecd73"
+    },
+    {
+      "claim_id": "bac692a0-f4fc-44cb-9a98-6ae125596909",
+      "result_id": "bbd0b228-b180-404f-9522-dc2c74d0e8ea"
+    },
+    {
+      "claim_id": "c4055a09-c40d-4a65-a888-49a304f90e43",
+      "result_id": "bbd0b228-b180-404f-9522-dc2c74d0e8ea"
+    },
+    {
+      "claim_id": "862e85cd-9a90-4cbb-9d41-360ab212dd74",
+      "result_id": "bbd0b228-b180-404f-9522-dc2c74d0e8ea"
+    },
+    {
+      "claim_id": "1fbb8fea-4762-4339-95eb-d5cffd53e8a2",
+      "result_id": "64e629b3-c54f-44c3-9fa9-a58daf84812f"
+    },
+    {
+      "claim_id": "45cb6868-ca70-4f40-bce8-b9bad46af917",
+      "result_id": "64e629b3-c54f-44c3-9fa9-a58daf84812f"
+    },
+    {
+      "claim_id": "ce404a78-fc6d-4734-a887-f0e1fd0128aa",
+      "result_id": "64e629b3-c54f-44c3-9fa9-a58daf84812f"
+    },
+    {
+      "claim_id": "d4ebc144-e928-47d9-a510-4e48d9ae6480",
+      "result_id": "3534009c-26dd-4248-98e7-943adec2f30d"
+    },
+    {
+      "claim_id": "03e1eaa5-0de8-4cf8-8181-d70511f87f95",
+      "result_id": "3534009c-26dd-4248-98e7-943adec2f30d"
+    },
+    {
+      "claim_id": "e25e620b-172f-44d0-8640-6f8241a5c60a",
+      "result_id": "00a92b6d-7b93-4002-891c-511b423b29a9"
+    },
+    {
+      "claim_id": "680a3f66-9b3e-4460-952d-9598b616119f",
+      "result_id": "00a92b6d-7b93-4002-891c-511b423b29a9"
+    },
+    {
+      "claim_id": "bd7cf6b2-ca4c-44d3-bcc5-5cae364d967b",
+      "result_id": "00a92b6d-7b93-4002-891c-511b423b29a9"
+    },
+    {
+      "claim_id": "d161f606-bfc4-4201-ba05-50f13218142c",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "6318d373-77a0-4440-8708-4a572cfe68df",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "2896cdea-e302-4381-8c89-c95ea39556b6",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "a75b8c0c-5443-480c-86e9-1177c4cc16ef",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "c9c60229-42ed-4da8-8da0-9c346ac886a3",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "bb2c3880-4e64-4600-8c4f-924762973c8c",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "a1765b6a-eea2-483e-a91d-76b25c44be8e",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "e8c4c26b-a79c-434c-8dfd-6b56a26b5636",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "616ae8fd-e316-406b-8cae-a554019381d8",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "442efe5e-dd95-4974-88f0-95c86b26e4b3",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "17b84835-1834-4543-b380-512476abe282",
+      "result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22"
+    },
+    {
+      "claim_id": "8e88b79b-ca71-4591-8a48-a599f5b830b0",
+      "result_id": "fd2a5dcd-0297-4670-9c13-88ffa89cd13d"
+    },
+    {
+      "claim_id": "3073ff2a-f600-4295-9c74-2693666e4237",
+      "result_id": "fd2a5dcd-0297-4670-9c13-88ffa89cd13d"
+    },
+    {
+      "claim_id": "9eb3672f-0ef8-42fe-b9d2-d3bd417d2513",
+      "result_id": "fd2a5dcd-0297-4670-9c13-88ffa89cd13d"
+    },
+    {
+      "claim_id": "c520f107-86d0-473e-9d74-6312c24c1b4d",
+      "result_id": "fd2a5dcd-0297-4670-9c13-88ffa89cd13d"
+    },
+    {
+      "claim_id": "23a6cc43-2758-44f0-98eb-b1c589974ab5",
+      "result_id": "fd2a5dcd-0297-4670-9c13-88ffa89cd13d"
+    },
+    {
+      "claim_id": "57e1f710-2ce4-455a-9218-4b8348f737c5",
+      "result_id": "ce447240-82fe-45a8-b7b0-f30ddfa67fa6"
+    },
+    {
+      "claim_id": "22c2b8d0-67f8-4656-b874-5a501eed9980",
+      "result_id": "ce447240-82fe-45a8-b7b0-f30ddfa67fa6"
+    },
+    {
+      "claim_id": "bac692a0-f4fc-44cb-9a98-6ae125596909",
+      "result_id": "8a602a5e-b29c-45de-a522-0a5ad154855f"
+    },
+    {
+      "claim_id": "c4055a09-c40d-4a65-a888-49a304f90e43",
+      "result_id": "8a602a5e-b29c-45de-a522-0a5ad154855f"
+    },
+    {
+      "claim_id": "862e85cd-9a90-4cbb-9d41-360ab212dd74",
+      "result_id": "8a602a5e-b29c-45de-a522-0a5ad154855f"
+    },
+    {
+      "claim_id": "3c3093c8-8f8b-4779-8b9c-8296fc79a19f",
+      "result_id": "462c4997-a034-4877-b4a2-8e30ee96a3ea"
+    },
+    {
+      "claim_id": "2cb6c467-412e-4977-82c7-1183aac065f3",
+      "result_id": "462c4997-a034-4877-b4a2-8e30ee96a3ea"
+    },
+    {
+      "claim_id": "013c83b7-f5b0-43e1-97f3-10ea37679dba",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "f2e0b8be-b8a0-4b3c-8f8e-77d4f5b2c39c",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "0c6ef0a1-3462-43cc-9063-6baa113c0946",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "9c1d2375-f649-4c40-a338-2e51186b710f",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "9e1b3c4c-b0b7-4da9-be0f-339d40c133e7",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "59bfdc8b-37b5-45ab-ba36-7ec8b029fedc",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "8943ef39-85f3-43af-951f-aa04ee543c33",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "c1afc541-6167-4f7f-95e6-c383fa75ecf6",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "09ffba77-d6f2-456b-94a9-5700ee00cd8f",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "bd9f0fc2-bb6f-42e3-816f-7429374faa0e",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "0f242fac-da4c-44b3-b272-f069f9aba89a",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "c594e767-2322-4fba-b67d-09f25c6e0df9",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "b6438e44-6e97-4f0c-a6b7-96c6454cb688",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "0f50c370-c421-4371-83b6-c70960bced00",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "2fabbb74-bb5a-440d-b46f-469db51a0106",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "d6e4aebd-9fa9-4b2e-b9e6-5e571795b1d7",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "9714b704-1bb5-4c4f-9576-292638ccfd24",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    },
+    {
+      "claim_id": "66626535-8c88-491b-881d-f304009320c3",
+      "result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "3494c73f-b708-43d1-959e-6244ee7a0e66",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7e7a62ff-1b56-496d-af05-9f35058c8282",
+      "peer_result_id": "64e629b3-c54f-44c3-9fa9-a58daf84812f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on the core 'waterfall' finding (C3, C4, C56). Both evaluations rate this as SUPPORTED. OpenEval emphasizes analytical and simulation support from Figures 2-3, while peer reviewers explicitly call the evidence 'compelling' and note it as a 'major strength' with analytically solvable approximations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "b4716e25-dd42-41bd-bdbf-223784ba63b8",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "58c97ec6-a71c-42d5-941c-f7f1fd47335d",
+      "peer_result_id": "3534009c-26dd-4248-98e7-943adec2f30d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on asymmetric accessibility (C5, C6). Both rate as SUPPORTED. OpenEval cites Figure 2a-c as direct support, while peer reviewers accept without challenge and explicitly affirm that 'small target frequencies can also be maintained' with appropriate initial conditions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "d35d8c06-2b6e-4662-91b2-6be42aa7d978",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "3fbe9431-fc85-4b0f-b28a-f63fd9cf192a",
+      "peer_result_id": "5acb6938-51d0-484b-a444-e0016f9b6e22",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on multi-species extension (C9, C68-C77). Both rate as SUPPORTED. OpenEval emphasizes Figure 5 data and the distinction from hysteresis, while Reviewer 3 explicitly confirms the extension to three-species communities and generalizability of qualitative conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "d59011f9-0b37-4e0d-92f6-3614d74625c3",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "89036cc8-6839-439e-ba24-e07f6a62d71f",
+      "peer_result_id": "462c4997-a034-4877-b4a2-8e30ee96a3ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on main conclusions (C10, C78). Both rate as SUPPORTED. OpenEval views these as well-supported by the entire analytical framework and simulation data, while peer reviewers affirm the practical implications and describe the study as 'important' with 'sobering message for designing concrete applications.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "7c27d57d-9843-4101-b146-bac90f9407af",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "38a69964-9014-42ad-9342-4fda22a9b90e",
+      "peer_result_id": "fd2a5dcd-0297-4670-9c13-88ffa89cd13d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on model assumptions (C27, C29-C32). OpenEval rates as SUPPORTED, viewing transparent statement of assumptions as appropriate. Peer reviewers rate as UNCERTAIN, with Reviewer 3 explicitly noting limitations of exponential growth assumption and questioning generalizability to density-dependent demography.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "85cafea1-3d7e-461b-8c8c-485d21497561",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "bbd0b228-b180-404f-9522-dc2c74d0e8ea",
+      "peer_result_id": "8a602a5e-b29c-45de-a522-0a5ad154855f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on computational methodology (C79, C80, C82). Both rate as SUPPORTED. OpenEval finds the approach reasonable with appropriate citations, while Reviewer 3 explicitly praises the analytically solvable approximation as a 'major strength' and the editor affirms the mathematical analysis is 'compelling.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "b09ce2a6-885a-4d0f-9b41-dd3d29b9ffa4",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "3a63d07a-65b4-491b-aae2-2c34c3075c6d",
+      "peer_result_id": "00a92b6d-7b93-4002-891c-511b423b29a9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on parameter effects. OpenEval R5 addresses C7 (N\u2080 effects) rated SUPPORTED, while peer R3 addresses C7, C8, C65 (both N\u2080 and g effects) rated UNCERTAIN. Peer reviewers don't challenge technical correctness but Reviewer 2 questions practical interpretation, asking what N\u2080 means in experiments and noting 'the main result...cannot be taken advantage of by experimentalists' without clarification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "6f32f38c-5257-4fba-ad1c-38953c73727f",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8e4e5e52-55de-45a8-87a5-19c35693e086",
+      "peer_result_id": "00a92b6d-7b93-4002-891c-511b423b29a9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on growth rate parameter. OpenEval R6 addresses C8, C65 (g parameter effects) rated SUPPORTED with analytical justification. Peer R3 includes these claims with C7, rated UNCERTAIN due to practical interpretation concerns about experimental applicability rather than technical correctness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "5b4e15e7-1811-4f45-8b38-7cf377677d83",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "2de4a87d-4849-4500-bfe6-08398f57555a",
+      "peer_result_id": "ce447240-82fe-45a8-b7b0-f30ddfa67fa6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on stochasticity scope (C41, C42). OpenEval rates as SUPPORTED, viewing transparent statement of limitations as appropriate. Peer reviewers rate as UNCERTAIN, with Reviewer 2 raising substantive concern that the model focuses on demographic rather than environmental stochasticity, questioning whether this captures relevant experimental conditions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "d753731c-3c87-4424-84b8-57b99bfec1db",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "6ab5c7de-f889-4cf7-8a03-a1d7646c3767",
+      "peer_result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on background context. OpenEval R1 addresses C1, C11-C13 (microbial collective capabilities), while peer R9 addresses broader background including C1, C2, C11-C26. Both rate as SUPPORTED. Peer reviewers treat these as accepted context and focus evaluation elsewhere, with Reviewer 1 affirming novelty relative to this background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "074376c9-cd52-43a8-8115-7f26bc80999a",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "bb51f26f-5d5c-4e16-98b4-9e53fd2a05dc",
+      "peer_result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on background context. OpenEval R2 addresses C2, C14-C21 (challenges of collective selection), while peer R9 addresses broader background C1, C2, C11-C26. Both rate as SUPPORTED. OpenEval emphasizes extensive prior work citations, while peer reviewers accept as framing context without detailed evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "4cedeac5-eb0b-43de-8415-de77c589db83",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "87dd79d9-2164-4e39-aaa1-6577a66ed7c6",
+      "peer_result_id": "73a2c9d0-4011-486c-bbfc-9e2fc9ac925f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on prior work context. OpenEval R9 addresses C22-C26 (specific prior experimental work), while peer R9 addresses broader background C1, C2, C11-C26. Both rate as SUPPORTED. Peer Reviewer 2 requests better explanation of structure-function relationships but doesn't challenge the claims themselves.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "2568cfe5-c22f-4ef0-b14e-5631ad2fac23",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "7f1bc10a-559d-4cfc-9df2-f8f2901c6038",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates C45, C52 (necessity of inter-collective selection and balance of forces) as SUPPORTED based on Appendix 1\u2014figure 3b and Figure 2d. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    },
+    {
+      "id": "396ecc08-9215-44da-845d-c0c5dab3271f",
+      "submission_id": "cdd6250f-1e06-44f9-a630-b6dda4dea290",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "95461030-51e3-4bac-89c3-ba3a431ecd73",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates C57 (robustness to genotypes vs species distinction) as SUPPORTED based on Appendix 4 data. No corresponding peer review evaluation found for this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:16.252678Z"
+    }
+  ]
+}

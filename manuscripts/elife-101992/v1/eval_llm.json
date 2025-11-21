@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The meta-analysis included 23 studies with 297 effect sizes, comprising 730 participants with an average age of 24.8 years (range 7.3-78.0), 49.5% female representation, and average sample size of 31.7 participants per study. Studies included 17 overnight and 6 nap studies measuring 19 declarative and 6 procedural memory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C52 provide descriptive statistics about the meta-analysis dataset that are internally consistent and clearly reported. These are straightforward data summaries with no analytical concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C82",
+      "C114",
+      "C115"
+    ],
+    "result": "Precise and strong SO-fast SP coupling in the frontal lobe predicts memory consolidation, with very strong evidence supporting a small-sized association between preferred coupling phase and memory consolidation (rz,pooled = 0.07 [0.01, 0.13], BF10 = 58.35, probability = 0.98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53, C82, C114, C115 present the primary finding with appropriate statistical evidence from Bayesian meta-analysis. The effect size is small but statistically robust with strong Bayes factor support and no publication bias detected (C90). The conclusion is appropriately qualified given the small effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C55",
+      "C101",
+      "C118"
+    ],
+    "result": "The association between SO-fast SP coupling and memory consolidation is moderated by age, memory type, cortical area, and SP frequency. Each ten-year increase in age is associated with a 0.06 decrease in effect size, with stronger associations observed in young adults, frontal regions, fast spindles, and declarative memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C83, C55, C101, C118 report moderator analyses with appropriate statistical support. The age effect shows strong evidence (BF10 = 160.94), and the pattern of stronger effects in specific subgroups is consistent across multiple moderators. However, the limited number of studies on children and older adults (acknowledged in C101) introduces some uncertainty about developmental effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "There is a considerable spatiotemporal shift in preferred coupling phase from frontal to posterior regions, with frontal areas showing phase around 0.13 rad [0.00, 0.27] (closest to SO peak), central at -0.27 rad [-0.37, -0.18], and posterior at -0.41 rad [-0.54, -0.27]. Frontal coupling shows the strongest association with memory consolidation and a significant quadratic phase-memory relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C93-C95, C97 present spatiotemporal analysis findings with extremely strong statistical evidence (BF10 = +\u221e for regional differences). The Bayesian circular mixed-effects model appropriately accounts for repeated measurements. The quadratic relationship in frontal regions (C95) is supported by Figure 5A showing r=0.26, p<0.01. This represents a novel contribution to the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C71",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C116"
+    ],
+    "result": "SP amplitude shows high variability in its association with memory consolidation. Only fast SP amplitude in frontal regions and hippocampal-dependent memory shows strong evidence of association. The precision and strength of SO-SP coupling are more crucial indicators than SP amplitude alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C71, C84-C87, C116 present findings on SP amplitude with appropriate caveats about variability. The overall model shows moderate evidence (BF10 = 8.28) but wide credible intervals. The comparison with prior meta-analyses (C84) is appropriate. The conclusion that coupling measures are more predictive than amplitude alone (C87) is supported by comparing effect sizes across analyses, though this is an inference rather than direct statistical comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C79",
+      "C80"
+    ],
+    "result": "Mean SO-fast SP coupling strength measured by mean vector length is 0.33 [0.27, 0.39], while SO-slow SP coupling strength is 0.23 [0.19, 0.27]. Mean SO-fast SP coupling percentage is 21.17 [15.95, 26.39]%, while SO-slow SP coupling percentage is 24.07 [17.59, 30.56]%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C79-C80 provide descriptive statistics for coupling measures. These are straightforward data summaries with credible intervals reported. The values are consistent with the ranges expected from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The phase and strength of coupling between fast SPs and SOs retain strong predictive ability for memory retention in most moderator subgroups, with similar results not observed for slow SPs. No publication bias was detected for coupling phase and strength analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 summarize robustness findings across moderator analyses. The lack of publication bias is supported by Egger's regression (p=0.59) and rank correlation test (p=0.52) for phase, and similar tests for strength. The differential findings for fast vs. slow SPs are consistent across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The coupling phase has widespread predictive role for both declarative and procedural memory, while coupling strength only correlates with hippocampus-dependent memory. Region-specific associations exist with declarative memory in frontal lobe and procedural memory in motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 present memory type moderation findings. However, the authors acknowledge limited effect sizes for emotional (k=12) and spatial (k=7) tasks, requiring cautious interpretation. The differential findings for phase vs. strength across memory types are interesting but the mechanisms remain unclear. C100 appropriately cites prior work supporting region-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Sleep stage and bout conditions did not moderate the coupling-memory association. Co-occurrence rate of SO-SP coupling is higher during SWS compared to N2, but no differences were found between overnight sleep and naps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 report null findings for stage and bout moderators with appropriate statistical evidence (weak BF10 values). The authors acknowledge this is surprising (C103) and provide a reasonable explanation focusing on precision/strength over prevalence. The nap finding (C105) is consistent with prior meta-analyses (Kumral et al., 2023; Schmid et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Frontal fast SPs (~10-14 Hz) occur near the up-state peak of frontal-predominant global SOs with lower frequency than centro-parietal fast SPs (~14-17 Hz), while slow SPs occur before the trough of the SO down-state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 present findings on SP frequency and timing with supporting citations. This addresses confusion in the literature about SP classification and provides evidence for detailed categorization of SP types. The findings are supported by both current data and cited literature (Hahn et al., 2019; Shinomiya et al., 1999; McConnell et al., 2021, 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Less than half of included studies conducted corrections for multiple comparisons, the majority selectively reported results for significant findings, and only 2 of 23 studies disclosed all processed data and analysis code. However, almost all authors provided data upon request.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 identify methodological limitations in the literature. These are observational findings about the included studies that highlight important issues with reporting practices and reproducibility. The authors' efforts to obtain unreported data (C112) helped mitigate these concerns for the meta-analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C119"
+    ],
+    "result": "SO-fast SP coupling should be considered as a general physiological mechanism for memory consolidation and can offer more precise predictions within the context of spatiotemporal specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C119 present the main conclusions drawn from the meta-analysis findings. These are supported by the consistent evidence across multiple coupling measures (C115), the robustness across moderator subgroups (C88), and the spatiotemporal specificity findings (C97). However, the small effect sizes (C117) and the inference nature of these conclusions should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C91",
+      "C92",
+      "C96",
+      "C102",
+      "C113"
+    ],
+    "result": "The manuscript provides extensive background on the active system consolidation theory, neurobiological mechanisms of SO-SP coupling, phase-amplitude coupling concepts, and prior research on moderating factors including memory types, aging, development, and spatiotemporal features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C47, C91-C92, C96, C102, C113 present background information and prior research findings, all supported by appropriate citations. These establish the theoretical framework and justify the meta-analysis approach. The claims accurately represent cited work and provide necessary context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The effect sizes of the main models are relatively small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 acknowledges that pooled effect sizes are small (rz = 0.07-0.08 for phase and strength). This is an important limitation appropriately noted by the authors. Small effect sizes are common in neuroscience meta-analyses due to complexity and confounding variables, as the authors note.",
+    "result_type": "MINOR"
+  }
+]

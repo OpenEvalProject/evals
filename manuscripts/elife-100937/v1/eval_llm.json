@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study identified multiple gradients of functional connectivity, structural connectivity, and receptor coexpression in the human pulvinar using diffusion embedding. The first three functional connectivity gradients (GFC1-GFC3) explained ~80% of variance, with GFC1 (~50% variance) showing dorsomedial-to-ventrolateral organization. Structural connectivity gradients GSC1-GSC2 explained ~90% of variance, with GSC1 (~70%) arranged medio-laterally and GSC2 (~20%) dorso-ventrally. Receptor coexpression gradients GRC1-GRC3 explained ~80% of variance, with GRC1 (60-70%) showing dorso-medial to ventro-lateral organization. These results were consistent across different thalamic atlases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C44 collectively demonstrate robust gradient identification across three modalities (functional, structural, receptor) with clear spatial organization patterns and high variance explained. The consistency across atlases (C44) and detailed quantification of variance explained for each gradient provide strong convergent evidence. The spatial patterns are well-characterized and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Gradient values showed limited correspondence to discrete anatomical pulvinar nuclei, and k-means clustering of gradient values resulted in poor overlap with anatomical nuclei (maximum Dice coefficients ranging from 0.42-0.67 for single modalities and 0.57-0.67 for combined modalities).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate that the continuous gradient organization does not align well with traditional discrete nuclear boundaries. The quantitative Dice coefficients provide objective measures of poor correspondence, supporting the conclusion that gradient organization transcends anatomical subdivisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Pulvinar functional connectivity gradients showed strong correlations with cortico-cortical functional connectivity gradients. GFC1 correlated highly with the first cortico-cortical gradient (r=0.89 left, r=0.83 right, p<0.01), which represents unimodal-to-transmodal hierarchy. GFC2 correlated with the third cortico-cortical gradient (r=0.71 left, r=0.67 right, p<0.01), and GFC3 with the second cortico-cortical gradient (r=0.78 bilateral, p<0.01). Structural connectivity gradients did not show the same correlation pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 provide strong statistical evidence (high correlation coefficients with p<0.01) for the 'replication principle' in functional connectivity, showing that pulvinar organization mirrors cortical organization. The contrast with structural connectivity (C54) strengthens the specificity of the functional findings. Statistical corrections for spatial autocorrelation enhance reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The principal functional connectivity gradient (GFC1) representing unimodal-to-transmodal hierarchy showed strong correlation with the main receptor expression gradient GRC1 (r=-0.71 to -0.78, p<0.01) and structural gradient GSC2 (r=0.70-0.72, p<0.01). GFC1 progressed from unimodal sensory networks ventrally to multimodal associative networks dorsally. GRC1 showed increasing 5HTT and NAT expression ventrally and increasing D2 and NMDA receptor expression dorsally. This delineates multiscale differences between ventral and dorsal pulvinar aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C69 demonstrate convergent multimodal evidence for the dorso-ventral organizational axis. The strong correlations between functional, structural, and molecular gradients (all p<0.01) provide robust support for a unified organizational principle. The specific receptor patterns (C60-C61) add mechanistic insight to the connectivity findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The secondary functional connectivity gradient GFC3 (~10% variance) showed strong negative correlation with the principal structural gradient GSC1 (r=-0.61 to -0.77, p<0.01) and negative correlation with receptor gradient GRC2 (r=-0.47 to -0.72, p<0.01). GFC3 reflected transitions from visual-related to action-related processing networks along a medial-lateral axis. GRC2 showed increasing MOR and decreasing 5HTT expression medially (sensorimotor-associative regions) and the opposite pattern laterally (associative-visual regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C82 establish a second major organizational axis (medio-lateral) with convergent evidence from functional, structural, and molecular modalities. The strong correlations (p<0.01) and specific receptor patterns provide robust support. This complements the dorso-ventral axis findings to establish a comprehensive organizational framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Structural connectivity gradients showed excellent stability (median r>0.99), repeatability (r>0.99), and reproducibility (r=0.85-0.88). Functional connectivity gradients showed high to moderate stability and reproducibility, with stability decreasing with decreasing variance explained (GFC1: median r=0.85-0.87; GFC2: r=0.70-0.75; GFC3: r=0.59-0.72). Reproducibility across datasets was high for all functional gradients (left r>0.75, right r>0.80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 provide comprehensive reliability and reproducibility evidence through split-half, test-retest, and cross-dataset validation. The quantitative metrics demonstrate that the gradient findings are robust and replicable, with structural gradients showing exceptional stability and functional gradients showing acceptable to high reliability depending on variance explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Functional connectivity gradients showed weak but significant correlations with signal-to-noise ratio (SNR), with the strongest correlation for GFC3 (r=0.52-0.55, SA-corrected p<0.001-0.017). Structural connectivity gradients were not significantly associated with SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 address potential confounding by image quality. The weak correlations for functional gradients and lack of correlation for structural gradients suggest that the findings are not primarily driven by SNR differences. The spatial autocorrelation correction strengthens the statistical validity. However, the significant correlation with GFC3 (which also showed lower stability) warrants caution in interpreting this gradient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "The pulvinar is the largest thalamic nucleus and serves as a pivotal hub in cortico-subcortical networks supporting perception, visuospatial attention, and emotional processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C11 state well-established anatomical and functional facts about the pulvinar, supported by citations and general neuroscience knowledge. These provide appropriate background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The pulvinar's organization relies on precise topographical organization reflected in anatomical connectivity and neurochemical markers. Traditional subdivisions into discrete subnuclei only partially explain its organization, which is better captured by continuous gradients along dorso-ventral and medio-lateral axes. This gradient-based architecture remains less explored in humans compared to primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 establish the rationale and gap in knowledge that motivates the study. These are supported by citations to prior work in primates and are consistent with the study's findings demonstrating gradient organization in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior anatomical studies in primates have characterized pulvinar connectivity patterns, showing connections primarily to visual areas but extending to temporal, sensory, prefrontal, and cingulate cortices. The pulvinar plays a role in visuospatial attention and may mediate information selection through alpha oscillations. Traditional anatomical subdivisions into four nuclei exist, but connectivity patterns extend beyond discrete cytoarchitectonic boundaries, following spatially continuous organization with multiple cortical representations adhering to a 'replication principle' and loosely associated with chemoarchitectural domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 accurately summarize prior literature on pulvinar anatomy and connectivity, appropriately cited. These establish the scientific context and theoretical framework (replication principle) that the current study tests in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Translating understanding of pulvinar organization to humans has been challenging due to small structure size and imaging limitations, resulting in scarcity of in vivo human studies. Previous human studies confirm that functional regions are loosely associated with anatomical nuclei, but voxel-wise clustering methods may not fully capture spatially continuous connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 accurately describe limitations of prior human pulvinar research and methodological challenges, providing clear justification for the gradient-based approach used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Gradient mapping techniques using dimensional decomposition algorithms map high-dimensional brain features to low-dimensional gradients representing smooth spatial transitions. These methods have been applied to various biological features and have revealed thalamic organizational principles partially reflected in cytoarchitecture. However, global patterns may only partly account for pulvinar complexity, and isolating pulvinar connectivity from the broader thalamocortical connectome would prevent obscuring local organizational principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide methodological background on gradient mapping and justify the study's approach of focusing specifically on the pulvinar rather than the entire thalamus. These are well-supported by citations and provide clear rationale for the analytical strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Previous pulvinar connectivity studies were either ROI-based/hypothesis-driven or used hard parcellations that force heterogeneity into discrete units rather than capturing continuous transitions. A prevailing principle suggests connectivity follows topographical organization spanning anatomical nuclei rather than adhering to clear histological distinctions. Existing parcellation models show moderate-to-low correspondence with histological nuclei. The gradient approach reconciles continuous cortical representations with functional specialization of discrete subregions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 provide critical discussion of how the current findings relate to and improve upon previous methodological approaches. The interpretation that gradients reconcile continuous and discrete organization is well-supported by the data showing both gradient patterns and nuclear-specific connectivity profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study's findings confirm Shipp's model of dorsal-ventral pulvinar dissociation with distinct cortical representations along the latero-medial axis. The two major axes of structural and functional connectivity converge on dorso-medial and ventro-lateral axes. The study provides robust formal evidence of the 'replication principle' in humans, demonstrating one-to-one correspondence between cortico-cortical and pulvinar-cortical functional connectivity gradients, showing that pulvinar connectivity mirrors cortical organizational principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 appropriately contextualize the findings within established theoretical frameworks (Shipp's model, replication principle) and demonstrate how the current results extend primate findings to humans. The strong correlations between pulvinar and cortical gradients provide robust evidence for these interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The principal cortical connectivity gradient reflects hierarchical information transfer from unimodal to multimodal cortices. This gradient accounted for the largest variance in pulvinar functional connectivity and delineated the ventro-dorsal axis. The second-most cortical gradient corresponds to the third pulvinar gradient along the medio-lateral axis. The third cortical gradient progresses from task-negative to task-positive networks. These results reinforce pulvinar involvement in multimodal sensory integration, top-down attention, and enhancing cortical communication in a context-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 provide appropriate interpretation of the functional significance of the identified gradients, well-supported by the correlation data and consistent with cited literature on cortical organization and pulvinar function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The observed gradient organization may exhibit specific patterns in the temporal domain. Intrinsic neural timescales have been associated with cortical gradient organization, with shorter timescales in unimodal regions and longer in transmodal networks. Thalamocortical connectivity correlates with intrinsic timescale patterns, and modulatory neurotransmitters like serotonin and dopamine modulate functional dynamics across timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C115 propose interesting hypotheses about temporal dynamics based on cited literature, but these are speculative extensions beyond the current data. The study did not measure temporal dynamics or intrinsic timescales, so these claims represent future directions rather than supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Previous thalamocortical gradient studies revealed a principal medio-lateral gradient correlated with structural subdivisions and a secondary antero-posterior gradient associated with functional subfields showing unimodal-to-transmodal progression. The principal thalamic gradient shows medio-lateral arrangement on the pulvinar while secondary gradients correspond to ventral-dorsal axis. This progression is associated with core and matrix cell type density. The current study found the unimodal-transmodal gradient accounted for highest variance in pulvinar connectivity. The pulvinar's position toward the 'sensorimotor' extreme likely reflects its prominent visual/sensory connectivity. Isolating pulvinar-cortical connectivity provided additional insights into its functional diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 appropriately contextualize the findings within broader thalamic organization literature and explain how the pulvinar-specific analysis complements and extends whole-thalamus studies. The interpretations are well-supported by the data and cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Existing accounts describe medio-lateral thalamocortical structural organization anchored to genetic markers of cell types. The study describes a principal structural connectivity axis on the medio-lateral pulvinar axis. The hierarchical organization of pulvinar-cortical connectivity aligns with the principal receptor expression axis, reflecting diverging catecholaminergic neurotransmission patterns (dopaminergic, noradrenergic, serotonergic). Previous studies confirm pulvinar receives these projections. Primate studies show receptor markers whose distribution mirrors connectivity patterns. The macroscale PET coexpression pattern may reflect broader cellular-level chemoarchitectural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C131 provide appropriate interpretation of the molecular findings in the context of prior literature. The alignment between connectivity and receptor gradients is well-demonstrated by the correlation data. The interpretation that PET patterns may reflect cellular-level features is appropriately cautious (C131) given the resolution limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The findings reveal stronger associations between pulvinar-cortical connectivity and spatial distribution of serotonergic, noradrenergic, dopaminergic, and opioid system markers. Pharmacological studies suggest these systems may modulate thalamocortical connectivity or influence neuronal gain in cortico-cortical connectivity. Serotonergic neurotransmission plays a crucial role in higher-order sensory integration, with psychedelics mediating this process. Increasing dopamine receptor/transporter expression in dorsal pulvinar is consistent with dopamine's role in attention, supported by modafinil studies and multimodal investigations showing higher dopamine levels in dorsal attention network regions including dorsomedial pulvinar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 provide well-supported functional interpretation of the molecular findings, appropriately citing pharmacological and multimodal studies. The interpretations are consistent with the observed receptor distributions and known neurotransmitter functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The proposed multimodal gradient model holds promise for understanding pulvinar alterations in pathological conditions. Examples include: reduced D2/3 receptors correlating with connectivity and autistic symptoms in autism spectrum disorders; reduced right anterior pulvinar volume in Parkinson's disease with depression, with serotonergic antidepressants associated with increased volume; heightened dorsal pulvinar connectivity in first-episode psychosis. The model may provide a framework for understanding pulvinar involvement in various neuropsychiatric disorders and inform therapeutic interventions including deep brain stimulation for epilepsy, where medial pulvinar is the desired target due to medial temporal lobe connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C146 propose interesting clinical applications and cite relevant pathological findings, but these are largely speculative extensions. The cited clinical studies (C139-C142) provide some support, but the proposed model has not been validated in clinical populations. These represent promising future directions rather than established applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Study limitations include the small size of the pulvinar complex relative to imaging resolution, which poses challenges for current techniques. Higher-resolution approaches like ultrahigh-field fMRI may offer more granular insights. PET data limitations include resampling to 2mm resolution, partial volume effects, and tracer spillout. The neurotransmitter atlas is derived from group-level averages across different individuals and centers, as radioactive tracers prevent multi-system studies in single individuals. However, the atlas has been validated against autoradiography and ex vivo gene expression. Gold-standard ex vivo studies on receptor expression in human pulvinar are substantially sparse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C154 provide honest and appropriate acknowledgment of methodological limitations. The discussion of PET atlas limitations (C151-C152) is balanced by noting its validation (C153). The recognition of sparse gold-standard data (C154) appropriately contextualizes the molecular findings. These limitations are inherent to current technology and do not invalidate the findings but appropriately qualify their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study confirms the 'replication principle' hypothesis, showing the pulvinar harbors multiple representations of cortico-cortical functional connectivity organized hierarchically across ventro-dorsal and medio-lateral axes. These representations traverse pulvinar nuclei continuously, reconciling discrete nuclear connectivity patterns with gradient-like organization. The study reveals substantial convergence among functional connectivity, anatomical connectivity, and receptor coexpression. This underscores the pulvinar's pivotal role in mediating information integration across brain networks at multiple organizational levels and may offer a unified framework for understanding pulvinar involvement in perceptual and cognitive functions in health and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 provide appropriate summary of the major findings and their significance. The conclusions are well-supported by the convergent multimodal evidence presented throughout the results. The proposal of a unified framework (C159) is appropriately qualified as a potential application rather than an established fact.",
+    "result_type": "MAJOR"
+  }
+]

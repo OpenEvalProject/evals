@@ -1,0 +1,159 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C61",
+      "C69"
+    ],
+    "result": "Setd2 deletion accelerates KRASG12C-driven lung adenocarcinoma tumorigenesis in vivo. Setd2 ablation in the KcP mouse model results in loss of H3K36me3, increased tumor nodule numbers, fourfold increase in tumor burden, increased cellular proliferation, and 40% reduction in median survival (151 days vs 92 days), without significantly affecting apoptosis levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C24-C29, C61, and C69 collectively demonstrate that Setd2 functions as a tumor suppressor in the KRASG12C-driven LUAD model. The data from Figure 1 provide comprehensive evidence including IHC validation of H3K36me3 loss, quantitative tumor burden measurements, proliferation/apoptosis markers, and survival analysis with appropriate statistical testing (n=6-8 per group, p-values reported). The results are consistent with prior studies in KRASG12D models (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C63"
+    ],
+    "result": "SETD2SET catalytic domain methylates nucleosome substrates independent of pre-existing H3K36 methylation state in vitro. SETD2SET shows highest activity on unmodified nucleosomes, with decreasing activity on H3K36me1 and H3K36me2 substrates, and no activity on H3K36me3. The enzyme can generate all three methylation states (me1, me2, me3) from unmodified substrates, with most efficient conversion to me3 occurring from H3K36me2 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 and C63 are well-supported by multiple complementary assays shown in Figure 2 (autoradiography, MTase-Glo, Western blot with methyl-state specific antibodies). The data demonstrate that SETD2SET does not require pre-existing methylation at H3K36, consistent with prior work (C30, C40). The sequential decrease in signal intensity on pre-methylated substrates is appropriately interpreted as reflecting reduced capacity for further methylation rather than substrate preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Polyacetylation of histone tails enhances SETD2SET methylation activity on nucleosomes in vitro. Tetra-acetylation of H2A, H3, or H4 N-terminal tails increases SETD2SET activity as measured by radiolabeled SAM incorporation and SAH production. Similar enhancement is observed for NSD2SET (particularly with H3 tetra-acetylation), but not for DOT1L, which methylates H3K79 in the nucleosome globular domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C44-C47 are supported by data in Figure 3 using two independent methylation assays (autoradiography and MTase-Glo) with appropriate replication (n=12 for MTase-Glo) and statistical analysis (one-way ANOVA). The specificity is demonstrated by the lack of effect on DOT1L (C46), which targets a different nucleosome region. The interpretation that acetylation increases H3K36 accessibility is reasonable but remains mechanistically inferential (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C66"
+    ],
+    "result": "Specific mono-acetylation sites on histone H3 differentially enhance SETD2SET methylation activity, with H3K27ac showing the strongest effect. H3K27ac, H3K14ac, and H3K23ac enhance SETD2SET activity (likely in the order K27ac>K14ac>K23ac), while H3K4ac, H3K9ac, and H3K18ac do not. H3K27ac subtly enhances SETD2SET binding to nucleosomes as shown by pulldown and EMSA assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C52, and C66 are supported by data in Figure 4 using multiple assays (autoradiography, MTase-Glo with n=6, nucleosome pulldown, EMSA). The position-specific effects are clearly demonstrated, though the rank order (C49) is appropriately qualified as 'likely' given the semi-quantitative nature of some assays. The binding enhancement shown by pulldown and EMSA (C50-C51) is described as 'subtle,' which is appropriate given the modest differences observed in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C67"
+    ],
+    "result": "Histone ubiquitination does not affect SETD2SET methylation activity in vitro, unlike NSD2. Mono-ubiquitination at H2AK15, H2AK119, H2BK120, H3K14, and H3K18 does not impact SETD2SET activity as measured by three independent methods (radiolabeled SAM incorporation, Western blot detection of methylation states, SAH production). In contrast, H2AK119ub specifically reduces NSD2SET activity as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C56-C58, and C67 are well-supported by comprehensive data in Figure 5 using three independent methylation assays (n=6 for MTase-Glo with appropriate statistics). The inclusion of NSD2 as a positive control (C57) strengthens the conclusion. The authors appropriately note that the H3K36me2 antibody is blocked by H3K14ub and H3K18ub, demonstrating awareness of technical limitations. The divergence between SETD2 and NSD2 is consistent with structural studies cited (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C59",
+      "C60"
+    ],
+    "result": "Background knowledge claims about H3K36 methylation, SETD2, and cancer. These claims establish that SETD2 is the sole H3K36me3 methyltransferase in human somatic cells, functions as a tumor suppressor (particularly in ccRCC and LUAD), influences multiple cellular processes, and is frequently mutated across cancer types. H3K36me2 is generated by NSD1/2/3 and ASH1L, which have oncogenic roles contrasting with SETD2's tumor suppressive function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C23, C59-C60 represent established knowledge supported by appropriate citations throughout the manuscript. These background claims provide context for the experimental work but are not novel findings of this study. The citations appear appropriate and the claims are consistent with the current understanding of H3K36 methylation biology and SETD2's role in cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C42",
+      "C43",
+      "C53",
+      "C54",
+      "C55",
+      "C62",
+      "C68"
+    ],
+    "result": "Prior work citations establishing mechanistic context. These claims cite previous findings that SETD2SET methylates unmodified nucleosomes efficiently, histone acetylation promotes transcription through multiple mechanisms, H3K27me3/PRC1/H2AK119ub pathway antagonizes NSD2, and yeast Set2 is influenced by H2BK120ub. Also notes that EZM0414 (SETD2 inhibitor) was evaluated in clinical trials for hematologic malignancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C42-C43, C53-C55, C62, and C68 appropriately cite prior work to provide mechanistic context for the current findings. The citations appear accurate and relevant. C62 correctly notes the clinical trial was terminated, providing appropriate context for the potential context-dependent roles of SETD2 in cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Speculative mechanistic interpretations about SETD2 substrate usage and acetylation effects. The authors speculate that SETD2 physiologically uses all three lower methylation states (me0-me2) to generate H3K36me3 depending on biological context, and that acetylation events like H3K27ac may alter histone-DNA interactions to increase H3K36 accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 are explicitly speculative (using terms like 'speculate' and 'one possibility') and represent mechanistic hypotheses to explain the in vitro observations. While these are reasonable interpretations consistent with the data, they lack direct experimental validation. The authors appropriately present these as speculation rather than established findings, and note that structural studies would be needed to understand the molecular basis (referenced in Discussion).",
+    "result_type": "MINOR"
+  }
+]

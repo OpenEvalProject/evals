@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The IT cortex explicitly encodes spatial frequency information at both single-neuron and population levels, with LSF decoded more accurately than HSF. At the single-neuron level, 105 neurons showed significant SF decoding (4.02% above chance at 120ms), with maximum accuracy of 19.08% above chance. At the population level, peak accuracy reached 24.68% above chance at 115ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C34-C37 provide converging evidence from both single-neuron and population analyses with appropriate statistical tests and clear quantitative results. The use of LDA classification with proper cross-validation (leave-p-out) and significance testing (Wilcoxon signed-rank) supports these findings. The LSF preference is demonstrated with specific recall values shown in Figure 1e.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C38",
+      "C18",
+      "C19",
+      "C20",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48"
+    ],
+    "result": "SF coding exhibits coarse-to-fine temporal dynamics, with LSF decoded faster than HSF (R1 onset: 84.5\u00b13.02ms vs R5: 97.15\u00b14.9ms, p<0.001). Early responses (70-170ms) show LSF-preferred tuning that shifts to HSF-preferred tuning in the late phase (170-270ms), with preferred SF peaking at 215ms and a second peak at 320ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C48 describe detailed temporal dynamics with specific time windows, statistical comparisons, and quantitative measurements. The coarse-to-fine pattern is supported by onset time differences, changes in neuron response percentages across time windows, and shifts in firing rate patterns. Statistical tests (Bonferroni corrected p-values) are appropriately applied. The bimodal temporal pattern is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Neurons cluster into four SF profiles (LP, HP, U, IU) based on their responses to scrambled stimuli, and these profiles predict category selectivity. HP neurons show highest face selectivity (SI=0.89\u00b10.05), significantly higher than other profiles (p<0.001). LP neurons also show higher face than non-face selectivity, while IU neurons show the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C58 demonstrate a novel relationship between SF profiles and category coding using appropriate methods (quadratic curve fitting, separability index). The statistical comparisons are rigorous with multiple corrections. The distribution of face/non-face selective neurons across profiles (LP=13/3, HP=6/2, IU=3/9) supports the profile-category relationship. However, the lack of significant firing rate differences between faces and non-faces within profiles (C58) suggests the relationship is based on information content rather than simple response magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C59"
+    ],
+    "result": "SF coding capability at the single-neuron level is strongly correlated with category coding capacity at the population level. When neurons are sorted by SF performance, sub-populations show correlation of 0.66 (p=10^-31) between SF and category accuracy. When sorted by category, correlation is 0.39 (p=10^-10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C59 demonstrate a relationship between single-level SF coding and population-level category coding using a novel sub-population analysis approach. The high correlations with extremely significant p-values support this finding. The asymmetry in correlation values (0.66 vs 0.39) depending on sorting method is interesting and suggests SF coding may be more predictive of category coding than vice versa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C60",
+      "C61"
+    ],
+    "result": "At the single-neuron level, SF and category coding capabilities are uncorrelated (r=0.024, p=0.53). At the population level, neuron contributions to SF and category decoding are also uncorrelated (r=0.002, p=0.39), indicating distinct underlying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C60-C61 provide clear evidence for uncorrelated mechanisms using both single-neuron accuracy and LDA weight analyses. The near-zero correlations with non-significant p-values are convincing. This finding appears to contradict the relationship shown in the previous result, but the authors distinguish between single-level vs population-level relationships and coding capability vs contribution patterns, which resolves the apparent contradiction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C62",
+      "C63"
+    ],
+    "result": "SF coding relies on sparser, more independent single-neuron representations compared to category coding. Single-neuron contribution (SNC) is significantly higher for SF (0.51\u00b10.02%) than category (0.1\u00b10.04%, p=1.6\u00d710^-13). Conditional mutual information (CMI) is significantly lower for SF (0.66\u00b10.0009) than category (0.69\u00b10.0007, p\u22480).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C62-C63 demonstrate distinct coding characteristics using two complementary measures (SNC and CMI). The SNC analysis shows individual neurons are more critical for SF coding, while CMI shows neurons carry more independent SF information. Both measures converge on the conclusion of sparse SF coding. Statistical significance is strong, though the extremely small p-value (p\u22480) for CMI should be reported more precisely.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Temporal dynamics of sparseness differ between SF and category coding. In the early phase (70-170ms), SF coding is more sparse than category coding, but this reverses in the late phase (170-270ms). SF shows trimodal sparseness peaks (100, 215, 320ms) while category shows bimodal peaks (110, 210ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C64-C69 describe detailed temporal sparseness patterns with specific peak times and statistical comparisons (p<0.001 for both time intervals). The reversal of sparseness relationship between early and late phases is well-documented. The different temporal patterns (trimodal vs bimodal) suggest distinct processing dynamics. The sparseness measure is appropriately defined and applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C70",
+      "C71",
+      "C102"
+    ],
+    "result": "CNNs exhibit robust SF coding capabilities with significantly higher accuracies than IT cortex. Pre-training generally improves SF coding (up to 64% in EfficientNetb0, except CORNet-z). Like IT cortex, most CNNs show LSF-preferred decoding (except CORNet family).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C70-C71, and C102 provide comprehensive CNN analysis across multiple architectures with both random and pre-trained weights. The quantitative comparisons are detailed with specific accuracy values and p-values for LSF vs HSF differences. The finding that pre-training improves SF coding is interesting and well-supported, though the exception of CORNet-z deserves more investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C72"
+    ],
+    "result": "CNNs do not replicate the SF-based profiles that predict neuron category selectivity observed in IT cortex. While CNNs form similar SF profiles, these profiles are not associated with category decoding performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C72 identify a key difference between biological and artificial neural networks. The finding is clearly stated and supported by Figure 6c. This represents an important limitation of current CNNs as models of biological vision. However, the analysis could be strengthened by quantifying the lack of association (e.g., correlation values) rather than just stating it qualitatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Baseline and stimulus-evoked firing rates differ significantly across conditions. Scrambled stimuli evoke 26.3 Hz (vs 23.4 Hz baseline, p=3\u00d710^-5). Intact face stimuli evoke 30.5 Hz, non-face 28.8 Hz. In T2, rates are 19.5 Hz (scrambled), 19.4 Hz (face), 22.4 Hz (non-face).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C49 provide important control data showing neurons respond to stimuli above baseline. The firing rate differences between conditions are modest but significant. These data help rule out the possibility that SF effects are due to lack of neural response. However, the relatively small differences between face and non-face responses suggest category coding may rely more on population patterns than individual firing rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Category classification performance is high (94.2% for face vs non-face in intact stimuli). Object vs scrambled achieves 90.45%, face vs scrambled 92.45% (p=0.44), indicating high generalizability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 demonstrate that the neural population effectively encodes category information, validating the dataset and recording quality. The high accuracies and lack of significant difference between object and face discrimination against scrambled stimuli (p=0.44) support generalizability. These are important validation results but represent expected findings given the IT cortex's known role in object recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Results are consistent when analyzing individual monkeys separately (Appendix 2), though some inconsistencies in LSF-preferring neurons across monkeys may reflect individual differences or sampling variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 address an important concern about pooling data from two subjects. The consistency across monkeys strengthens the main findings, while the acknowledged inconsistencies for LSF-preferring neurons show appropriate scientific caution. However, without seeing Appendix 2, it's difficult to fully evaluate the extent of consistency vs variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The LSF-preferred nature of IT responses reflects processing characteristics rather than weak HSF input, and may be inherited from lower visual areas (V3A, SC, V1, V4) that also show LSF preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 provide important interpretation supported by comparison with prior studies (C92-C98). The argument that HSF input exists but is processed differently is supported by the temporal shift to HSF preference in late responses. The hypothesis about inheritance from lower areas is reasonable given the cited evidence, though it remains speculative without direct measurements of inputs to IT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C122",
+      "C123"
+    ],
+    "result": "Stimuli were controlled for brightness, contrast, and SF power across conditions. ANOVA showed no significant differences in brightness (p=0.62) or contrast (p=0.25) among groups. SF power did not vary significantly across conditions (p>0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C122-C123 describe important methodological controls that rule out confounding factors. The statistical tests (ANOVA) are appropriate and the non-significant results support that observed SF effects are not due to low-level stimulus differences. These controls are essential for interpreting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Dataset imbalance in samples per category does not impact results because samples were equalized during classifier training through random sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 address a potential methodological concern. The equalization procedure during training is appropriate. However, the claim that imbalance has no impact (C106) is somewhat circular since the imbalance was corrected. The statement would be stronger if it acknowledged that imbalance was addressed through equalization rather than claiming it has no impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior research establishes that SF is a fundamental component of visual encoding, with HSF encoding details and LSF encoding broader information. Psychophysical studies show SF influences object recognition, with coarse-to-fine processing and middle/higher SFs critical for face recognition. Different brain regions process different SF contents, though understanding of SF in IT cortex remains limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide comprehensive background from established literature with appropriate citations. These claims accurately represent prior knowledge and identify the gap this study addresses. The citations appear appropriate and the characterization of prior work is fair. This background effectively motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors propose that IT cortex explicitly represents SF to facilitate object recognition through 'characteristic SF signatures' that enable robust discrimination, invariance to transformations, and categorical organization. SF information may contribute to predictive coding in early processing phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C84 and C86 present speculative interpretations of the findings. While these hypotheses are reasonable and consistent with the data, they go beyond what is directly demonstrated. The concept of 'characteristic SF signatures' is introduced without direct evidence that objects have unique SF patterns or that IT encodes them as signatures. The predictive coding hypothesis is interesting but speculative. These ideas could guide future research but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C104"
+    ],
+    "result": "IT cortex uses different mechanisms for SF coding compared to contemporary deep neural networks, suggesting artificial networks may not fully capture biological visual processing complexity despite encompassing some SF representation aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C104 draw appropriate conclusions from the CNN comparison, particularly the absence of SF profile-category relationships in CNNs. This represents an important limitation of current models. However, the claim about 'different mechanisms' is somewhat vague - the specific differences (presence/absence of profile-category relationships) are clear, but whether this reflects fundamentally different mechanisms or just incomplete implementation in CNNs is uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Study limitations include relatively low number of objects in stimulus set and inability to distinguish whether observations reflect sensitivity to cycles per degree vs cycles per image, requiring further experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 appropriately acknowledge limitations. The small stimulus set is a valid concern, though the high category decoding performance (C73-C74) suggests sufficient diversity. The cycles per degree vs per image ambiguity is an important limitation that affects interpretation of whether neurons encode retinal or object-based SF. These honest acknowledgments strengthen the paper's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Methodological details: 266 neurons recorded from two male macaque monkeys (10-11 kg) in IT cortex using approved procedures. Stimuli presented on 144Hz monitor at 65.5cm (5\u00d75 degrees). Main phase used 9 images filtered in 5 SF ranges (1-5, 5-10, 10-18, 18-45, 45-75 cycles/image) with scrambled versions. Butterworth filters applied. Stimulus duration 33ms with 465ms fixation. Neurons sorted with ROSS toolbox. Responses normalized with z-score. Analysis used 70-170ms window with 50ms sliding window, 5ms steps. LDA classification with leave-p-out (30% test, 1000 runs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and C112-C138 provide comprehensive methodological details that enable reproducibility. The experimental design is appropriate with proper controls. The passive viewing task eliminates attention confounds. The use of scrambled stimuli to isolate SF from shape is clever. Statistical methods (Wilcoxon tests, LDA with cross-validation) are appropriate. The 33ms stimulus duration is very brief, which the authors address in Appendix 1 with 200ms control. Sample size of 266 neurons is reasonable for this type of study.",
+    "result_type": "MINOR"
+  }
+]

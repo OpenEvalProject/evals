@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C54",
+      "C57",
+      "C64",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors developed a stochastic individual-based model of cancer-immune coevolution that explicitly models interactions between cancer and effector cells using a Gillespie algorithm. The model incorporates mutation accumulation, immune escape mechanisms, and specialized effector responses to antigenic mutations, with computational optimizations to handle large populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C51, C54, C57, C64, C137-C143 collectively describe the model structure and implementation. The methodology is clearly specified with appropriate citations (Gillespie 1976, Kimura 1969), model assumptions are stated, and computational optimizations are described. The model framework is well-defined and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80"
+    ],
+    "result": "The model reveals complex cyclic dynamics between cancer and effector cell populations, with irregular effector population spikes following in-phase cycles. Higher mutation rates lead to more cycles, predominantly counter-clockwise, with effector spikes arising from mutations with high immunogenicity but unexpectedly also low antigenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C68, C71-C76, C80 are supported by simulation results shown in Figure 2 and Appendix figures 3, 6, 7. The observations are quantified using a novel method to count cycles, validated against predator-prey systems. The unexpected finding about low antigenicity (C80) is directly observed in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C87",
+      "C88",
+      "C93"
+    ],
+    "result": "The outcome of tumor-immune coevolution depends strongly on interaction parameters (recruitment rate \u03b1\u2080 and killing rate \u03b2\u2080). For low mutation rates, only a small fraction of tumors are suppressed due to limited antigenic visibility. For high mutation rates, an intermediate parameter range allows tumors to persist without extinction or reaching capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C87, C88, C93 are supported by systematic parameter sweeps shown in Figure 3 and Appendix figures 9-10. The heat maps demonstrate clear parameter-dependent outcomes, and the explanations for mutation rate effects are consistent with the model structure and supported by referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C115",
+      "C116"
+    ],
+    "result": "Under low immune effectiveness, the average number of antigenic mutations per cell increases consistently with time, matching neutral expectations. Under high immune effectiveness, selective killing prevents continuous increase, and cells with more antigenic mutations are pruned from the population, as evidenced by decreased average mutations and truncated MBD tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C98, C99, C115, C116 are supported by Figure 4 showing average mutation trajectories and Figure 5 showing MBD distributions. The comparison to neutral expectations (with appropriate corrections cited) is valid, and the interpretation of selection signatures is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "The model demonstrates signatures of selection in sequencing-derived statistics. Under high immune effectiveness, the MBD shows significant deviation from neutral expectations with truncated high-burden tails, while the SFS shows limited deviation. The Wasserstein distance quantifies these differences, with patterns consistent across parameter space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C101-C105, C107-C108, C110-C111 are supported by Figure 5 and Appendix figures 13-14. The comparison to neutral expectations is based on established theory (Gunnarsson et al. 2021, Morison et al. 2023). The Wasserstein distance provides quantitative validation, and the consistency across parameter space (C111) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C108",
+      "C114"
+    ],
+    "result": "Bulk and single-cell sequencing may provide information about coevolutionary dynamics, with the immune system molding the genetic landscape in identifiable ways. Integration of single-cell and bulk data is important for identifying immune effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C108, C114 are supported by the differential signatures observed in SFS (bulk) versus MBD (single-cell) data shown in Figure 5. The model demonstrates that single-cell data reveals selection signatures not visible in bulk data alone, providing mechanistic justification for this inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The model unveils effector population dynamics during burst-like responses to subclones with high immunogenicity, with these spikes serving to eliminate specific mutations from the cancer population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are directly supported by Figure 2 and Appendix figure 3 showing effector spikes correlated with specific antigenic mutations. The mechanistic interpretation is consistent with the model structure where specialized effector populations respond to specific neoantigens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "When mutation rate is low, the fraction of the tumor visible to the immune system is low, leading to largely neutral cancer population dynamics, though the model still reveals complex effector dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by Appendix figure 10 showing low antigenic fractions at low mutation rates, with citation to Lakatos et al. 2020 for neutral dynamics. The observation of complex effector dynamics despite neutral cancer dynamics (C133) is a novel finding from the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The manuscript provides extensive background on cancer-immune interactions, including the three Es of immunoediting (Elimination, Equilibrium, Escape), mechanisms of immune recognition through neoantigens, cancer immune evasion strategies, and immunotherapy approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C42 constitute background knowledge supported by appropriate citations to established literature. These claims provide context for the model but are not novel findings of this work. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Prior modeling approaches include deterministic Lotka-Volterra models, stochastic models by George and Levine characterizing escape and optimization, models by Lakatos et al. describing negative selection of neoantigens, and frequency-dependent models by Chen et al.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 accurately summarize prior work with appropriate citations. These claims establish the gap that the current work addresses (explicit stochastic modeling of both populations with direct genetic information).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C130",
+      "C134"
+    ],
+    "result": "The discussion contextualizes findings within existing knowledge about neoantigen presentation, treatment response, immunotherapy mechanisms, and limitations of current biomarkers. Prior work by Wilkie and Hahnfeldt, Yang et al., and others is appropriately cited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C126, C130, C134 provide appropriate discussion context with relevant citations. These claims interpret the model findings in light of clinical relevance and prior theoretical work, though they do not present new empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C135",
+      "C136"
+    ],
+    "result": "Understanding cancer-immune coevolution and interaction signatures may inform when therapies will succeed and provide information about tumor evolutionary history and immunotherapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43, C135-C136 are speculative statements about potential applications. While the model provides mechanistic insights that could inform these applications, no direct validation with clinical data or treatment outcomes is provided. These remain hypotheses requiring future work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Synchronous ensembles comprising approximately 40% of CA1 pyramidal neurons fire simultaneously in brief windows (~25ms) during novel exploration. Cross-correlogram analysis revealed a FWHM of 23\u00b114ms for population synchrony, with 63% of cell pairs showing significant peaks. Synchronous events occurred 7.8-fold more frequently in original data compared to jittered controls, with ensemble sizes ranging from 32-53% (median 42%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C31 provide converging evidence from multiple analytical approaches (grand average CCG, pairwise CCG, jittered controls) demonstrating robust synchronous ensembles. The statistical comparisons with jittered controls (p=0.002) and the consistency of measurements across different metrics strongly support the existence and characterization of these synchronous ensembles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41"
+    ],
+    "result": "Synchronous ensembles were not associated with contralateral ripple oscillations. C-ripples occurred only during immobility (0.04\u00b10.02 Hz) with no co-occurrence with synchronous ensembles. During c-ripples, 85-90% of cells showed complete suppression of spiking (modulation index of -1), and nearly all cells exhibited decreased fluorescence indicating hyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C37, C40-C41 provide strong evidence from multiple recording sessions showing temporal separation between synchronous ensembles and c-ripples. The complete lack of co-occurrence and the strong suppression of both spiking and subthreshold activity during c-ripples are well-documented with clear statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Synchronous ensembles were phase-locked to theta oscillations recorded in the contralateral CA1 region. Synchronous ensembles showed high modulation by LFP theta (0.61\u00b10.05 during immobility, 0.74\u00b10.04 during locomotion). Spikes participating in synchrony were strongly coupled to subVm theta oscillations, with coherent intracellular theta oscillations (coherence: 0.50 immobility, 0.40 locomotion) that were negatively correlated with soma distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C50 demonstrate robust theta coupling through multiple complementary measures: LFP theta modulation, subVm theta coupling, and coherence analysis. The theta cycle randomization experiment (C50) provides causal evidence that spiking at specific theta cycles drives population synchrony. The negative correlation with soma distance suggests spatial organization of theta coherence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "The subthreshold membrane potentials of neurons exhibited coherent intracellular theta oscillations with a depolarizing peak at the moment of synchrony. Spikes participating in synchrony were strongly coupled to subVm theta oscillations, with mean preferred phase in the latter half of the rising phase closer to theta peaks. SubVm theta coherences were increased (0.50 immobility, 0.40 locomotion) and negatively correlated with soma distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46, C48-C49 provide direct voltage imaging evidence of coherent subthreshold oscillations. The phase-locking of synchronous spikes to the depolarizing phase of theta and the distance-dependent coherence provide mechanistic insight into how theta oscillations coordinate synchronous ensembles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Among newly formed place cells (40% of recorded cells), pairs with more robust synchronization during locomotion displayed more distinct place-specific activities. Cell pairs with stronger synchronization showed negative correlation (r=-0.4) with spatial tuning similarity. However, synchronization during immobility showed little correlation with spatial tuning similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C53 demonstrate a counterintuitive relationship where synchronous activity is associated with distinct rather than similar place fields. The negative correlation (r=-0.4, p<0.001) is statistically significant and specific to locomotion, suggesting a functional role in coordinating place cells with different spatial representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Synchronous ensembles differed between immobility and locomotion states. The FWHM of grand average CCGs was broader during immobility (27\u00b112ms) compared to locomotion (18\u00b19ms). Synchronous events occurred more frequently during immobility (1.4\u00b10.7 Hz) than locomotion (0.6\u00b10.5 Hz), and ensemble sizes were significantly larger during immobility (median 47%) compared to locomotion (median 32%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide consistent evidence across multiple metrics (FWHM, event rate, ensemble size) showing state-dependent differences in synchronous ensembles. Statistical tests confirm significant differences (p<0.001 for ensemble size, p=0.002 for event rate), indicating distinct network dynamics during different behavioral states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Contextual novelty strongly influenced hippocampal neuronal activities. Mean firing rates were significantly reduced in familiar contexts (median 2.3 Hz) compared to novel contexts (median 4.2 Hz, p=0.0083). In familiar contexts, 15% of neurons showed positive c-ripple modulation (versus predominantly negative in novel), and synchronous event frequencies were significantly lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate clear context-dependent differences in neuronal activity patterns. The statistical comparisons between novel and familiar contexts are well-controlled, with the same animals tested in both conditions. The shift from suppression to activation during c-ripples in familiar contexts is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Behavioral and experimental parameters during novel exploration were characterized. Mice moved at 8.3\u00b10.9 cm/s during locomotion, spent 53\u00b17% of time in locomotion and 36\u00b16% in immobility, and completed 10\u00b12.5 laps during 180s imaging periods. Voltage imaging recorded 14\u00b14 cells per field of view, totaling 71 cells from 5 fields of view in 5 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide basic experimental parameters that are clearly stated with appropriate sample sizes and error estimates. These descriptive statistics are straightforward and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Neurons labeled on E14.5 were located deeper in the pyramidal layer than E17.5-labeled neurons (t(601)=22.8, p<0.0001). Mean firing rates ranged from 2.3-4.3 Hz (median 3.2 Hz). Most CA1PCs exhibited elevated firing rates during immobility relative to locomotion, with firing rates negatively correlated with animal speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide well-supported characterization of the recorded neurons. The laminar position finding is consistent with known developmental patterns and strongly supported statistically. The firing rate properties are consistent with previous literature (Adam et al., 2019) and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "In immobilized mice, approximately 40% of recorded neurons participated in synchronous ensembles. Across imaging sessions, 1052 synchronous ensembles and 174 c-ripple episodes were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide descriptive statistics from the immobilized mouse experiments that are consistent with the main novel exploration experiments, supporting the generalizability of the synchronous ensemble phenomenon across behavioral conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C52"
+    ],
+    "result": "Synchronous ensembles play a role in coordinating place cells of different place fields. This interpretation is based on the finding that cell pairs with more robust synchronization during locomotion exhibited more distinct place-tuning profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C52 represent an interpretive conclusion based on the empirical finding of negative correlation between synchronization strength and place field similarity. While the data support this interpretation, the causal mechanism remains to be fully elucidated. The interpretation is reasonable given the evidence but represents an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background knowledge claims about hippocampal function and synchronous ensembles. These include the role of the hippocampus in memory formation, the association of synchronous ensembles with sharp-wave ripples during memory consolidation, and the properties of subthreshold membrane voltage in triggering spiking activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16 represent established knowledge in the field, supported by appropriate citations to previous research. These claims provide necessary context for the current study and are generally well-accepted in the neuroscience community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Discussion of theta oscillation types, their mechanisms, and functional roles in memory. This includes the distinction between type 1 (translational) and type 2 (attentional) theta, the role of cholinergic and GABAergic inputs, and the relationship between theta oscillations and memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 represent established knowledge from the literature, appropriately cited and used to contextualize the current findings. These claims provide important background for interpreting the observed theta-associated synchronous ensembles.",
+    "result_type": "MINOR"
+  }
+]

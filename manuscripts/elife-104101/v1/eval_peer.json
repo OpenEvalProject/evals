@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors demonstrate that online value-RNN with random feedback (oVRNNrf) can learn state values in a simple Pavlovian conditioning task with cue-reward delay, performing comparably to backpropagation-based training (oVRNNbp), though with somewhat lower success rates. Both trained models outperformed untrained RNN controls across various network sizes and delay lengths.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge that the authors successfully demonstrate random feedback can work for TD learning in RNNs. Reviewer 1 states 'The authors show that random feedback can approximate well a model trained with detailed credit assignment' and Reviewer 2 notes 'The authors describe well the issues regarding biologically plausible learning' and confirm the results. The data in Figures 2E-M support these claims with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C68",
+      "C69"
+    ],
+    "result": "The mechanism of feedback alignment (FA) operates in TD learning: the value weight vector w becomes aligned with the random feedback vector c over trials, and this alignment correlates with better state value learning. The alignment occurs because TD-RPEs tend to have consistent signs across trials and RNN trajectories show similarity due to observation-driven entrainment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the feedback alignment mechanism as demonstrated. Reviewer 1 notes 'This random feedback approach is motivated by a similar approach used for deep feed-forward neural networks' and accepts the extension to TD learning. The data in Figures 3A-E showing alignment dynamics and correlations are not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C107"
+    ],
+    "result": "Non-negative constraints on weights and feedback (oVRNNrf-bio) not only preserve learning but enhance it compared to unconstrained models. This enhancement occurs through 'loose alignment' where non-negative constraints ensure w and c vectors are in the same quadrant from initialization, eliminating the need for gradual alignment during training.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly highlights this as a key contribution: 'I find that non-negative FA (FA with non negative c and w) is the most valuable theoretical insight of this paper: I understand why the alignment between w and c is automatically better at initialization.' Reviewer 1 notes the paper 'examines the impact of more biologically realistic learning rules and the results are still quite similar to the detailed back-prop model.' The data in Figures 6 and 8 support these claims with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The online value-RNN models (both oVRNNbp and oVRNNrf) can learn probabilistic task structures and reproduce experimentally observed dopamine response patterns from Starkweather et al. 2017, showing differential TD-RPE patterns between tasks with certain vs. uncertain reward delivery.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The authors simulate several experiments including some with probabilistic reward schedules and show results similar to those obtained with detailed credit assignments as well as in experiments.' Reviewer 3 notes 'The task choice is relevant, since it connects with experimental settings of reward conditioning with possible plasticity measurements.' The results in Figures 4F-G are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The biologically constrained models (oVRNNbp-rev and oVRNNrf-bio) with non-negative constraints and monotonic plasticity rules successfully reproduce the differential TD-RPE patterns in probabilistic tasks, while untrained RNN controls fail to do so.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This extends the probabilistic task results to the more constrained models. Reviewers accept these findings as part of the overall demonstration that biological constraints preserve learning capability. The data in Figures 7A-D support these claims without reviewer objection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Extended models with explicit excitatory (E) and inhibitory (I) units (oVRNNbp-rev-ei and oVRNNrf-bio-ei) show similar learning performance to the original models with mixed positive/negative weights, demonstrating that the simplified models are reasonable approximations of more biologically detailed E-I architectures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these E-I unit results. The mathematical equivalence argument (C114) and empirical results in Figures 9B-C are presented without reviewer critique. This is treated as a supporting validation of the main approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The biologically constrained models maintain learning ability even with distractor cues present, though with moderately decreased accuracy, demonstrating robustness in more realistic scenarios.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these robustness results. The distractor experiments (Figure 10) are presented as additional validation without critique. This addresses potential concerns about task simplicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The models extended to action selection (oVRNNbp-rev-ac and oVRNNrf-bio-ac) can learn to select advantageous actions in both simple choice and inter-temporal choice tasks, though performance varies with network size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these action selection results as demonstrations that the approach extends beyond pure value learning. The data in Figure 11 are not challenged. This shows broader applicability of the framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C94"
+    ],
+    "result": "Principal component analysis reveals that trained models (oVRNNbp, oVRNNrf, oVRNNbp-rev, oVRNNrf-bio) develop representations with higher contributions from later principal components compared to untrained RNNs, which underlies their superior learning performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the PCA analysis. This mechanistic insight into how training affects representational structure is presented in Figures 2K and 6H without reviewer objection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "oVRNNrf-bio outperforms oVRNNbp-rev in early trials because the non-negative fixed random feedback works effectively from the start, while backprop-type feedback requires value weights to develop first.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This temporal dynamics finding (Figure 6I) is not questioned by reviewers. It provides additional mechanistic insight into why non-negative random feedback can be advantageous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Adding value-weight decay mitigates prominent growth of individual weight elements and promotes alignment beyond initial loose alignment, though with slightly increased value error.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This exploration of weight decay effects (Figure 8E-G) is presented without reviewer challenge. It addresses a potential concern about weight growth dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes the background that while recent value-RNN models can learn state representation and value through TDRL and BPTT, the biological implementation remains unclear due to BPTT's requirement for weight transport and offline acausal updates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accept this motivation. Reviewer 1 summarizes: 'The learning rule in previous work was back-prop...Such a learning rule is non-local...This is non-local, and in addition, these weights themselves change over learning.' Reviewer 2 states 'The authors describe well the issues regarding biologically plausible learning in recurrent networks.' This background is uncontested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript establishes that feedback alignment has been shown to work in supervised learning contexts (both feedforward and RNN), but whether it extends to TD learning with scalar error signals in value-RNN was previously unclear.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this literature review and gap identification. Reviewer 1 notes 'This random feedback approach is motivated by a similar approach used for deep feed-forward neural networks' and accepts the novelty of extending it to TD learning. The citations and logic are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "TD learning provides temporal credit assignment and feedback alignment enables gradient approximation without weight transport, forming the theoretical basis for the proposed approach.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these established principles. Reviewer 1 explicitly acknowledges both mechanisms work together in the proposed model. This theoretical foundation is uncontested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the neuroscientific context that TDRL is implemented in cortico-basal ganglia-dopamine circuits, that appropriate state representation enables sophisticated behavior, and that representation learning is important for brain function and mental health.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this neuroscientific background without challenge. These are well-established findings from the literature that motivate the biological relevance of the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors propose testable predictions including that cortical DA modulates RNN plasticity for state learning, that w-c alignment should be observable (gradual in oVRNNrf, immediate in oVRNNrf-bio), and that DA silencing should diminish cortical contributions to striatal value signals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these predictions. They are presented as logical extensions of the model's implications. Reviewer 3's emphasis on the 'low-level fashion' of learning rules ('interpretable in terms of measurable quantities in the wet-lab') implicitly supports the testability of these predictions.",
+    "result_type": "MINOR"
+  }
+]

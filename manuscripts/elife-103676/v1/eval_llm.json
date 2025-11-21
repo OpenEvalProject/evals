@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors established a head-fixed virtual reality (VR) navigation task in which mice ran through an ~8-m virtual corridor containing six visual landmarks for water reward. Two-photon calcium imaging of ~1000 CA1 pyramidal cells was performed across 163 sessions in 45 mice. Place cells exhibited spatially tuned activity that tiled the corridor with increased density around visual landmarks, comparable to activity observed in freely moving animals exploring large environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 collectively describe the experimental setup and basic characterization of place cell activity. The methods are clearly described with appropriate sample sizes (n=163 sessions, 45 mice), and the behavioral validation (speed profiles, licking behavior) demonstrates successful task learning. The comparison to prior work (C25) appropriately contextualizes the findings, though this is an inference rather than direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "New place fields (PFs) formed spontaneously during navigation in the familiar virtual corridor. Using conservative criteria based on formation lap gain and backward shift, 311 PFs were categorized as BTSP-like and 58 as non-BTSP-like. Bootstrap analysis confirmed that 88% of non-BTSP-like events were unlikely to be misclassified due to random calcium activity. Similar proportions of BTSP- and non-BTSP-like events were observed in both landmark-dominated and visually complex VR environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 establish the existence of two distinct categories of place field formation. The categorization criteria are clearly defined and conservative (C27-C28), and the bootstrap analysis (C29) addresses a key potential confound. The replication in a different VR environment (C30) strengthens the generalizability. However, the conservative approach excluded 38% of PFFs (C75), which could bias the relative proportions reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "BTSP-like and non-BTSP-like place fields differed primarily in formation lap calcium dynamics, with BTSP-like events showing significantly larger calcium transients during formation (p<0.001). After formation, the two groups exhibited similar calcium transient amplitudes, place field characteristics (widths, peak rates, out-of-field firing rates, fractions of active laps), and spatial distributions along the corridor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 demonstrate that the two PFF categories differ specifically in their formation dynamics but not in their stabilized properties. The statistical analysis (C32) is appropriate with mixed ANOVA and post-hoc tests. The similarity in stabilized properties (C33) is important for establishing that both mechanisms produce functionally equivalent place fields, though the lack of significant differences could also reflect insufficient statistical power given the smaller non-BTSP sample size (n=58 vs n=311).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Place field width correlated with running speed during formation for BTSP-like (R=0.29, p=2.7\u00d710\u207b\u2076) but not non-BTSP-like PFFs (R=0.015, p=0.92). Distance to the nearest visual landmark significantly correlated with PF width for both BTSP-like (R=0.59, p=1.4\u00d710\u207b\u00b2\u2075) and non-BTSP-like (R=0.67, p=2.4\u00d710\u207b\u2077) events. Variance partitioning revealed that cue distance explained similar variance in PF width for both groups, while speed explained variance only for BTSP-like PFFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide independent validation that the two PFF categories differ mechanistically. The speed-width correlation for BTSP but not non-BTSP events (C35) is consistent with BTSP's temporal integration window. The strong cue distance effects (C36-C37) are well-supported statistically but complicate interpretation, as they suggest environmental structure dominates PF width determination. The authors appropriately acknowledge this complexity and use bootstrapping to confirm the speed effect difference is robust despite unequal sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In a subset of sessions, concentrated 'surges' of place field formation occurred over 3-10 consecutive laps, including both BTSP-like (n=40) and non-BTSP-like (n=22) events with a ratio of 0.55. These surges coincided with rapid, global representational switches in the CA1 population, with only 5.4% of cells retaining their pre-switch tuning. The calcium dynamics during surges were similar to those outside surges, except for larger post-formation signals in non-BTSP events during surges. Behavioral performance (running speed, lick rate) remained stable during switches, and some animals showed reversible switching between the same two representations across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 describe a novel phenomenon of spontaneous representational switches in a familiar, unchanging environment. The population vector correlation analysis (C41) provides strong evidence for global remapping. The stability of behavior during switches (C44) is important for ruling out task disengagement or other behavioral confounds. However, the mechanism triggering these switches remains unexplained, and the small number of such events limits statistical power. The multiday observations (C45) strengthen the finding but are presented as supplementary data without detailed quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "When the familiar corridor was extended with a novel 6-m segment, population vector correlations confirmed representational reorganization. Many new PFs appeared during the first traversal of the novel segment, with additional formations in subsequent laps. The frequency of PFFs was highest in the first few laps for both BTSP- and non-BTSP-like events. Calcium transient amplitudes during formation were similar between novel and familiar environments. Notably, the non-BTSP/BTSP ratio was much higher in the first two laps of the novel segment (0.60) compared to the familiar environment (0.19, p<0.001), but returned to lower levels (0.15) in subsequent laps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 demonstrate context-dependent differences in PFF mechanisms. The maze extension paradigm is well-designed to probe novelty effects while maintaining behavioral continuity. The statistical comparison of non-BTSP/BTSP ratios (C52 vs C27-C28) is appropriate using chi-square test. However, the interpretation that higher non-BTSP ratios reflect 'global remapping' (C64) is speculative. The sample size for the novel environment (n=6 mice) is smaller than for familiar environments (n=29 mice), which could affect the reliability of the ratio comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "In approximately one quarter of sessions, large calcium transients ('solitary events') with amplitudes exceeding those of BTSP-inducing transients failed to initiate new place fields. These solitary events had significantly higher calcium amplitudes during the event lap (p<0.001) but significantly lower amplitudes in the subsequent lap (p<0.001) compared to BTSP-like formation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 demonstrate that large somatic calcium transients are not sufficient for place field formation. The statistical analysis (C54) using mixed ANOVA with post-hoc tests is appropriate. However, the interpretation assumes that large somatic calcium signals reflect dendritic plateau potentials, which cannot be confirmed with somatic imaging alone. The authors acknowledge this limitation in the Discussion. The finding is important for understanding BTSP mechanisms but the frequency ('approximately one quarter') lacks precise quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study demonstrates that while many place fields form through BTSP-like mechanisms, a substantial fraction form through non-BTSP-like mechanisms lacking the characteristic large initial calcium transients and backward shifts. Both types of PFFs occur spontaneously in familiar environments, during representational switches, and in novel environments. Large calcium transients alone are insufficient for place field formation, suggesting additional factors beyond complex spike bursts are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 represent the main conclusions synthesizing the experimental findings. These conclusions are well-supported by the data presented in C26-C54. However, they are primarily descriptive rather than mechanistic. The claim that 'additional factors are required' (C59) is supported by the solitary event data (C53-C54) but the nature of these factors remains unidentified. The conclusions appropriately acknowledge the limitations of somatic calcium imaging for inferring dendritic mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose that non-BTSP-like PFFs may result from either changes in synaptic inputs without plasticity in CA1 pyramidal cells, or from alternative plasticity mechanisms such as local dendritic spike-induced LTP that do not require global calcium plateaus. They suggest BTSP dominates during gradual representational drift in familiar environments, while non-BTSP mechanisms contribute more during global remapping in novel environments and representational switches. The failure of some large calcium transients to induce PFFs may indicate insufficient plasticity strength or gating by modulatory signals or inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C66 are primarily speculative interpretations of the experimental findings. While the hypotheses are plausible and supported by citations to relevant literature (C61-C62), they lack direct experimental validation. The proposed mechanisms (local dendritic plasticity, network reorganization) cannot be distinguished with the somatic calcium imaging approach used. The interpretation that different ratios of BTSP/non-BTSP reflect distinct mechanisms (C65) is an inference from correlational data. These claims represent reasonable hypotheses for future work but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study used 45 double-transgenic mice (Ai9xGP4.3) expressing GCaMP6s and tdTomato. Data analysis employed Suite2p for motion correction, ROI detection, and activity deconvolution, followed by custom Python scripts. Conservative criteria were applied for place field detection and categorization, including correlation thresholds (r>0.25), spatial information criteria (99th percentile of shuffled distribution), activity thresholds (>64 a.u.), and minimum lap requirements (\u226517 pre-formation laps). The conservative approach resulted in excluding 38% of detected PFFs that did not clearly fit either BTSP or non-BTSP categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 describe the methods and analytical approach. The methods are generally well-documented with appropriate sample sizes and statistical criteria. The conservative categorization approach (C76) is a strength but also a limitation, as it excludes a large fraction of events (C75) that may represent intermediate or mixed mechanisms. The acknowledgment that BTSP might occur without the defining features used for categorization (C77) is important but undermines confidence in the classification scheme. The reliance on somatic calcium imaging limits mechanistic interpretation, as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction reviews established knowledge about hippocampal place cells, spatial remapping, and the BTSP mechanism. Place cells in CA1 exhibit spatially restricted firing that reorganizes across environments. BTSP, characterized by dendritic plateau potentials driving complex spike bursts, was proposed as a mechanism for rapid place field formation based on prior electrophysiology and calcium imaging studies. BTSP has distinctive features including large initial calcium transients, backward spatial shifts, and speed-dependent place field widths. However, some studies have observed place field formation without complex spike bursts, suggesting alternative mechanisms may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 accurately summarize prior work with appropriate citations. The review establishes the scientific context and identifies the key question: whether BTSP is the exclusive mechanism for place field formation. The characterization of BTSP features (C15-C17) is important for establishing the criteria used to categorize events in the current study. However, these are background claims rather than novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

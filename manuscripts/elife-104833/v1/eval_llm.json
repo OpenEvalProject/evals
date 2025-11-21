@@ -1,0 +1,449 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "HABITS is a fully autonomous home-cage behavioral training system for mice that includes hardware components (cage, stimulus modules, lickports, pumps, weighting platform) and software framework (microcontroller-based state machine with millisecond precision, wireless connectivity, GUI for monitoring). The system costs less than $100 per unit and over 100 units were deployed for high-throughput training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C77 provide detailed technical specifications and capabilities of the HABITS system that are directly supported by the figures (Figure 1 and supplements) and materials/methods descriptions. The hardware design, software architecture, cost, and scalability are well-documented with specific measurements and implementation details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Autonomous training in HABITS achieved similar learning outcomes to manual training but with significantly more trials per day (980\u00b125 vs 611\u00b126), more water consumption (1.65\u00b10.06 vs 0.97\u00b10.03 ml/day), and better maintenance of body weight. Autonomous training required more total trials (10,164\u00b11062 vs 6845\u00b1782) but slightly fewer days to reach criterion performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C96 present a comprehensive comparison between autonomous and manual training supported by quantitative data in Figure 2D-H with statistical comparisons. The logistic regression analysis (C85) and body weight monitoring provide convergent evidence. The inference that mice needed more water than provided in manual training (C95) is reasonably supported by the transfer experiment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "HABITS successfully trained mice on d2AFC tasks with multiple sensory modalities (sound orientation: 10 mice, light orientation: 11 mice, light color: 8 mice). Light color discrimination was most challenging (82,932\u00b16817 trials), consistent with limited mouse wavelength sensitivity. Learning rates were similar between sound and light orientation (p=0.439) but with high variability for light orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by data in Figure 2I-J and Table 1, showing successful training across modalities with quantitative metrics. The interpretation connecting light color difficulty to mouse physiology (C101) is reasonable given established knowledge. Statistical comparisons are provided for learning rate differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Mice in HABITS exhibited clear nocturnal behavior with >66% of trials during dark periods (except light color: 57.89\u00b13.18%). Trial organization showed >2/3 of trials in blocks of >5 trials with inter-trial intervals <2s for >55% of trials. Performance and engagement increased with longer block lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C119 describe circadian and temporal behavioral patterns supported by Figure 2K-L. The nocturnal behavior is consistent with cited previous studies. The block structure analysis and correlation with performance (C117-C119) are data-driven observations, though the inference about engagement (C119) is reasonable but somewhat interpretive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "In contingency reversal experiments, all 8 mice underwent an average of 52.25\u00b116.39 reversals (one mouse achieved 125 reversals in 113 days). Most mice (6/8) showed learning-to-learn effects with decreased trials to criterion across reversals. Average reversal performance correlated with first reversal performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by Figure 3A data showing extensive reversal training enabled by HABITS' autonomous capabilities. The learning-to-learn effect (C122) is supported by Figure 3A3 and citations to relevant literature. The correlation analysis (C123) is shown in Figure 3A4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In the evidence accumulation task, 8/10 mice were successfully trained and exhibited behavioral patterns correlated with evidence: longer sample periods and higher stimulus contrast both led to higher performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are directly supported by Figure 3C2-C3 showing psychometric curves and performance as a function of sample duration and contrast. The success rate and behavioral patterns are clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "In multimodal integration, 13/15 mice were successfully trained with multimodal or sound clicks stimuli, but only 3 mice achieved criteria with light flashes. Mice favored earlier stimuli in decision-making, consistent with previous research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by Figure 3D2 and D4. The temporal weighting analysis (C130) using logistic regression is methodologically sound and consistent with cited previous work (Odoemene et al., 2018). The low success rate with light flashes is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "In the confidence-probing task, 5/6 mice were successfully trained. Time investment (TI) differed between correct and incorrect trials, with longer TIs associated with higher accuracy. TI was modulated by stimulus contrast, indicating reduced confidence with lower contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 are supported by Figure 3E2-E5 showing the relationship between TI and performance/confidence. The interpretation that TI reflects confidence is reasonable given the task design and is consistent with previous confidence literature cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "In continuous learning across 5 tasks, mice quickly switched between tasks with learning rates following modality difficulty. Frequency reversal required longer learning than orientation reversal. Mice showed higher reaction times for new tasks and exhibited large initial bias in all tasks, suggesting exploration-to-exploitation strategy shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C140 are supported by Figure 4A2-A4 showing learning dynamics across multiple tasks. The interpretation of reaction time patterns (C138) is supported by citation. The bias patterns and exploration-exploitation interpretation (C139-C140) are reasonable inferences from the data shown in Figure 4A4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "All 10 mice achieved performance criteria in the novel double delayed match sample (dDMS) task, requiring an average of 64.45\u00b17.88 days (>120,000 trials). All four trial types showed equal performance after training, and error/early lick rates increased with longer delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 are supported by Figure 4B2-B5. This represents a novel implementation of dDMS in mice with auditory modality, which is a significant behavioral innovation. The delay-dependent performance degradation (C144) is clearly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "All 14 mice were successfully trained in d3AFC task in 13.85\u00b11.05 days with equal performance across trial types. Mice showed spatial bias in errors (proximity effect) and exhibited two psychological thresholds for frequency discrimination. Sound orientation-based d3AFC required longer training (45.16\u00b111.46 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 are supported by Figure 4C2-C5 and supplementary figures. The d3AFC represents an expansion of the behavioral repertoire. The error pattern analysis (C147) and threshold identification (C148) are data-driven observations. The modality comparison (C149) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "All 6 mice were successfully trained in the novel context-dependent attention task (48.09\u00b17.54 days). Mice exceeded criterion across trial types but showed reduced speed/accuracy for conflicting trials. Performance declined with reduced context contrast for conflict trials but remained near-optimal for non-conflict trials. Mice showed modality bias (orientation over frequency) at low context contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C156 are supported by Figure 4D2-D6. This represents a challenging novel task implementation in mice using auditory-only modalities. The differential performance patterns between conflict and non-conflict trials (C152-C155) are clearly demonstrated and represent sophisticated cognitive processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "In working memory task with full stimulus matrix, MT algorithm enabled mice to reach criteria with significantly fewer trials than random training (3/8 random mice failed to reach criteria in 60 days). MT training exhibited curriculum learning trajectory (easier trials first, gradually increasing difficulty) and maintained consistently higher performance throughout training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C160 are supported by Figure 5C-E showing clear differences between MT and random training. The curriculum learning pattern (C159) is objectively demonstrated in Figure 5D. However, the high failure rate in the random group (C158) raises questions about whether the task difficulty was appropriately calibrated for comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "In 2AFC task, all three training groups (MT, anti-bias, random) achieved similar efficiency and final performance. However, MT algorithm effectively reduced bias throughout training and minimized reliance on noise variables (A1, R1, S1) while significantly increasing reliance on current stimulus (S0) compared to other groups, indicating higher quality training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C166 are supported by Figure 5F-K with model-based analysis using logistic regression. The similar overall performance (C161) but differential strategy use (C162-C165) represents a sophisticated finding. The interpretation of 'higher quality' (C166) is reasonable given the increased S0 weights, though this assumes S0-based decisions are inherently superior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "In multi-dimensional task, both groups achieved >80% correct rate across three goals. MT group showed significantly higher learning rate and faster forgetting of irrelevant cues in the second goal (orientation to frequency transition). MT algorithm suppressed irrelevant modality sensitivity while maintaining low noise sensitivity, resulting in lower bias in testing and more stable, task-aligned behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C174 are supported by Figure 6C-G and supplements. The differential learning trajectories in latent space (C170-C171) and dynamic trial type adjustment (C172) demonstrate sophisticated algorithmic optimization. The reduced bias in testing (C173) provides evidence for lasting effects of MT training. The interpretation of 'internal influence' (C174) is somewhat speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "This study provides an extensive behavioral dataset from ~300 mice training in >20 diverse paradigms, consisting of entire learning trajectories with documented training strategies and behavioral outcomes. This represents the first demonstration of machine teaching utility in augmenting animal behavioral training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C177 are supported by Table 1 showing 200/284 trained mice across multiple paradigms and the comprehensive data presented throughout. The novelty claim (C177) regarding machine teaching in real animal training is supported by citations showing previous work was limited to simulations. The scale and scope of the dataset is unprecedented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C178",
+      "C179",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Machine teaching algorithm in HABITS optimizes trial sequences in real-time, leading to more efficient training (reduced duration for complex tasks) and higher-quality outcomes (less influence from task-irrelevant variables, reduced noise dependency). The algorithm lowers barriers for designing anti-bias strategies in multidimensional tasks and can automatically guide mice toward goals by setting targets in the fitted decision model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C178-C183 summarize the MT algorithm's benefits, which are supported by the experimental results in Figures 5-6. The efficiency gains (C11, C178) and quality improvements (C12, C179) are demonstrated across multiple tasks. The mechanistic explanations (C181-C183) are reasonable interpretations of the results, though some are somewhat general statements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript establishes context by noting that mice are prevalent neuroscience models with extensive tools available, but behavioral paradigm development has been laborious and inconsistent, impeding complex cognition investigation. Traditional training was labor-intensive, inconsistent, and introduced stress. Recent standardization efforts have improved reproducibility but human intervention remains a source of variability and training efficiency is limited by experimental time constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 provide background context supported by appropriate citations to established literature. These claims accurately characterize the state of the field and identify genuine limitations in traditional and recent approaches. The citations are appropriate and the characterizations are fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Recent research has focused on combining home-cage environments with automated training, including voluntary head fixation systems and group-housed training with RFID. However, many studies focused on single paradigms with complex components hindering high-throughput deployment. Training protocols were often artificially designed and potentially suboptimal, with anti-bias techniques of unproven efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C42 review prior automated training work with appropriate citations. The critical assessment of limitations (C38-C42) is reasonable though somewhat subjective. The claim about unproven efficacy of anti-bias techniques (C42) is a fair characterization of the literature gap that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Machine learning theory suggests that accurately inferring animal internal models enables selection of optimal stimulus sequences to maximize learning rate. Machine teaching algorithms like AlignMax have been developed and validated in simulations but not applied to real animal training. Barriers include discontinuous session-based training introducing noise and high computational complexity. Integrating automated training with machine teaching could yield mutually beneficial outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 establish the theoretical foundation and identify the gap that this study addresses. The citations to machine teaching literature (C43-C45) are appropriate. The identification of barriers (C47-C49) is reasonable and supported by citations. The hypothesis (C51) is logical and sets up the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "RT-2AFC and random foraging tasks were successfully tested in HABITS. The dynamic foraging task was demonstrated for the first time in a fully autonomous training scheme for freely moving mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by supplementary figures and citations. The novelty claim for dynamic foraging (C107) is appropriately qualified and supported by citations to previous work on this task in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C13"
+    ],
+    "result": "HABITS is supported by a general programming framework that has replicated established paradigms and developed novel paradigms previously unexplored in mice, with >300 mice demonstrated across various cognitive functions. This represents the first systematic optimization of mouse behavior by algorithmic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C13 summarize the main contributions. The scale (C9) is supported by Table 1. The novelty claims (C8, C13) are supported by the demonstration of tasks like dDMS and context-dependent attention that were not previously implemented in mice, and the machine teaching application. These are appropriate summary claims of the work's significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Mice in HABITS underwent 24/7 training for up to 3 months in this study, though the system supports longer durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe the training duration capabilities demonstrated in the study. This is supported by the data presented and Video 2. The statement about supporting longer durations (C79) is a reasonable claim about system capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C180"
+    ],
+    "result": "Prior studies indicate that suboptimal strategies like biases are common among expert mice trained in various paradigms, potentially stemming from exploration in uncertain environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C180 is a literature-based statement supported by multiple appropriate citations. This provides context for why the MT algorithm's bias reduction is significant.",
+    "result_type": "MINOR"
+  }
+]

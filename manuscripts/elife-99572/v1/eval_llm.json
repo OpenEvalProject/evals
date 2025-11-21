@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors present a theoretical framework for protein expression constraints, categorizing mechanisms into four types (resource overload, stoichiometry imbalance, pathway modulation, promiscuous interaction) and proposing that protein burden represents the final constraint when all others are removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 establish a well-supported theoretical framework based on extensive prior literature (Bruggeman et al., 2020; Moriya, 2015; multiple other citations). The classification system and barrel model are logical syntheses of existing knowledge, though they represent conceptual organization rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Previous model proteins (fluorescent proteins and glycolytic enzymes) used for protein burden studies have expression limits around 15% of total protein, but EGFP has constraints beyond protein burden (aggregation, heat shock response), while moxGFP shows improved properties but still lacks anticipated cellular responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 accurately summarize prior work with appropriate citations (Eguchi et al., 2018; Kintaka et al., 2016; Namba et al., 2022). This establishes the motivation for the current study by identifying limitations in previous model systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Non-fluorescent mutations (YG) in fluorescent proteins increase expression limits up to threefold (>40% total protein). The authors introduce a neutrality index (NI = %MGR \u00d7 %protein level) showing that mox-YG and sfGFP-YG are the least constrained proteins with NI ~2400, demonstrating that fluorescence itself is a constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C53 present the core methodological innovation (neutrality index) and key finding (fluorescence as constraint) with strong experimental support from growth curves and protein quantification (Figure 2). The NI provides a quantitative framework for comparing constraints across proteins, though its generalizability requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Experimental characterization shows all fluorescent proteins and YG mutants cause growth inhibition, with mox-YG reaching 44% of total protein. The neutrality index is independent of translation efficiency (codon optimization), and growth inhibition from mox-YG overexpression is due to translational rather than transcriptional burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C57 are well-supported by growth curves, SDS-PAGE quantification, and frameshift mutant controls (Figure 2, supplements). The frameshift experiment (C57) provides strong evidence for translational burden, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The constraint from fluorescence is not due to phototoxicity itself (expression limits unchanged by light/dark), number of tyrosine residues, or localization/aggregation. Partial fluorescence reduction (mox-T203I) shows intermediate neutrality, and the phenol-type fluorophore may be a limiting factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 systematically test alternative explanations with appropriate controls (light/dark, H2O2, tyrosine addition, microscopy). The data support exclusion of phototoxicity and tyrosine number, though the mechanism involving the phenol fluorophore (C69) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Transcriptome analysis reveals that mox and mox-YG induce similar but distinct responses (r=0.64). Mox-YG specifically induces amino acid/nitrogen transporter genes (AGP1, GAP1) and decreases ribosome biogenesis genes, suggesting nitrogen source depletion. These responses are due to translational burden, not transcriptional competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 are supported by RNA-seq data (Figure 3) and validated by reporter assays. The frameshift control (moxFS) strengthens the conclusion about translational burden. However, the inference of nitrogen depletion (C77) is indirect, based on transporter upregulation rather than direct metabolite measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Proteome analysis shows mox-YG overexpression reduces other proteins while maintaining constant total protein per cell, suggesting a homeostatic mechanism. Mox-YG accounts for 40% of total protein, with increased mitochondrial proteins and decreased ribosomal proteins. Proteomic and transcriptomic changes show little correlation except for oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 are supported by proteome data (Figure 4), though the normalization approach is conservative and may not fully capture per-cell changes. The transcriptome-proteome discordance (C88) is striking and well-documented, suggesting post-transcriptional regulation under protein burden.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "About 40% of proteins with altered expression in mox-YG overexpression overlap with TORC1-regulated proteins. Carbohydrate metabolism, TCA cycle elevation, and decreased ribosome synthesis are TORC1-dependent responses, while endocytosis, cytoskeleton, and glycolysis changes are TORC1-independent. Mox-YG overexpression reduces rapamycin sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by comparison with published rapamycin data (Gowans et al., 2018) and rapamycin sensitivity assays (Figure 4 supplements). However, direct evidence of TORC1 inactivation (e.g., Atg13 phosphorylation) was inconclusive (noted in text), making the TORC1 connection inferential rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Mox-YG overexpression induces mitochondrial development (Rip1-mScarlet-I labeling) and increases oxygen consumption, indicating a metabolic shift toward oxidative respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are well-supported by microscopy (Figure 4D) and oxygen consumption measurements (Figure 4E). The data provide direct evidence for metabolic remodeling under protein burden, consistent with transcriptome/proteome findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Most ribosomal proteins (45/84) decrease in mox-YG cells, while six increase. Decreased proteins are nucleolus-assembled; increased proteins are cytoplasm-assembled. Electron microscopy shows abnormal nucleolar formation. The authors hypothesize an imbalance between cytoplasmic ribosomal protein synthesis and nucleolar rRNA synthesis leads to misassembled ribosomes degraded by the nuclear exosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by proteome data (Figure 5 supplement 1) and electron microscopy (Figure 5B). The hypothesis (C105-C107) is logical but remains speculative without direct evidence of misassembled ribosomes or their degradation. The exosome hypothesis is based on prior genetic screens rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The mtr4-1 exosome mutant does not show growth retardation upon mox-YG overexpression and partially rescues nucleolus formation defects, supporting the hypothesis that the nuclear exosome degrades misassembled ribosomes during protein burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide strong genetic evidence supporting the exosome hypothesis through rescue experiments (Figure 5E-G). The partial rescue of nucleolus formation is particularly compelling, though the mechanism remains incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Mox-YG overexpressing cells show temperature-sensitive growth defects (38\u00b0C). Hyperosmolarity suppresses growth at 30\u00b0C but not at 38\u00b0C in mox-YG cells, suggesting hyperosmolarity may suppress nucleolar abnormalities caused by mox-YG overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C116 present intriguing observations (Figure 5H-J, supplements) linking protein burden to liquid-liquid phase separation. However, the interpretation (C116) is speculative, based on recent literature (Watson et al., 2023) rather than direct mechanistic evidence. The nucleolus size data provide some support but are not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Enzymatically inactive Gpm1 (Gpm1-CCmut) shows neutrality equivalent to mox-YG (NI ~2400-2800), suggesting enzyme activity can be a constraint. However, Gpm1-CCmut overexpression produces different phenotypes than mox-YG: no nitrogen starvation response, no increased oxygen consumption, but similar nucleolar shrinkage and abnormal cell morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C126 are supported by neutrality index calculations, reporter assays, oxygen consumption measurements, and microscopy (Figure 6). The divergent phenotypes between mox-YG and Gpm1-CCmut are well-documented but complicate interpretation of which effects are general protein burden responses versus protein-specific. The conclusion (C125-C126) appropriately acknowledges this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors conclude that massive protein overexpression (protein burden) causes nitrogen source starvation, metabolic shift to respiration, and ribosomal biosynthesis defects due to imbalanced ribosomal protein/rRNA synthesis in the nucleolus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C42-C44 represent the main conclusions, integrating transcriptome (C37), metabolic (C43), and ribosome biogenesis (C44) findings. These are well-supported by the collective data, though some mechanistic details remain inferential. The nitrogen starvation conclusion is based on transporter upregulation rather than direct metabolite measurements, and the ribosome imbalance model, while logical, lacks direct evidence of misassembled ribosomes.",
+    "result_type": "MAJOR"
+  }
+]

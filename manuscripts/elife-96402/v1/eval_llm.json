@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "LIP neurons showed nonlinear modulation of motion direction selectivity by saccade direction. Specifically, motion DS was significantly greater in the contralateral target (CT) condition compared to the ipsilateral target (IT) condition across all coherence levels, with elevated activity for preferred directions and reduced activity for nonpreferred directions in CT trials. This modulation emerged even before stimulus onset and was not explained by simple saccade direction selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C22 provide converging statistical evidence from nested ANOVAs and ROC analyses showing differential motion DS between CT and IT conditions. The nonlinear nature is demonstrated by opposing modulation for preferred vs. nonpreferred directions (C18), and the temporal dynamics (C20) and control analyses (C21-C22) rule out simple saccade DS explanations. The statistical tests are appropriate and consistently significant across multiple coherence levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34"
+    ],
+    "result": "The feedback modulation of saccade choice on sensory evaluation predominantly impacted decision-correlated activity rather than stimulus-correlated activity in LIP. The decision-related component (r-decision) of LIP DS was significantly greater in CT than IT conditions, while the stimulus-related component (r-stimulus) was similar between conditions. This effect emerged before stimulus onset and was evident in correlations with trial-by-trial choices, error trials, and reaction times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31, C34 demonstrate through partial correlation analysis, ROC analysis on correct/error trials, and RT correlations that the modulation specifically affects decision-related rather than sensory-related components. The statistical evidence is robust (nested ANOVAs, bootstrap tests) and the dissociation between r-decision and r-stimulus (C28, C30) is critical for establishing the decision-specific nature of the effect. The temporal dynamics (C29) and behavioral correlations (C32-C33) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Multi-module RNNs trained on the FVMD task replicated the nonlinear feedback modulation observed in monkey electrophysiology. Units in motion modules showed coherence-correlated motion DS that was significantly greater in CT than IT conditions, with enhanced activity for preferred directions and reduced activity for nonpreferred directions in CT trials. The decision-correlated component (r-decision) was dramatically reduced in IT versus CT conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 demonstrate that RNNs successfully replicate the key neurophysiological findings. Statistical tests (t-tests, two-way ANOVAs, ROC analyses) consistently show significant effects across 50 trained networks. The parallel between RNN results and monkey data strengthens both findings. However, the evaluation should note that RNNs are models and may not capture all biological mechanisms, though the consistency across 50 independently trained networks is reassuring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Trained RNNs developed selectivity-specific feedback connections between motion and target modules. Feedback connection weights were significantly greater between selectivity-matched unit pairs (e.g., units preferring 315\u00b0 motion and red targets) than selectivity-nonmatched pairs. The feedback connectivity was primarily excitatory for matched pairs and inhibitory for nonmatched pairs, with positive correlations between connection weight and selectivity match extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 provide statistical evidence (paired t-tests, one-sample t-tests, correlation analysis) for the emergence of structured feedback connectivity. The analysis is appropriate for examining learned network structure. However, the evaluation should note that this is an emergent property of training rather than a designed feature, and the biological plausibility of such precise connectivity patterns remains to be demonstrated in vivo (as acknowledged in C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Selectivity-specific feedback connections are causally necessary for optimal RNN performance and nonlinear modulation. Ablating or disrupting feedback connections dramatically reduced performance accuracy and prolonged reaction times, eliminated the difference in motion DS between CT and IT conditions, and was more detrimental when selectivity-matched connections were ablated compared to nonmatched connections. RNNs trained without feedback connections showed significantly lower performance on untrained stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 provide comprehensive causal evidence through multiple in silico inactivation experiments with appropriate statistical tests (two-way ANOVAs, paired t-tests). The pattern-specific ablation (C50-C51) and connectivity disruption (C52-C54) experiments provide strong evidence for the specificity of the effect. The training without feedback experiment (C55-C56) confirms the necessity of feedback for optimal generalization. The convergence of multiple experimental approaches strengthens the causal conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Nonlinear feedback modulation enhances decision consistency by strengthening attractor basins in network dynamics. Projection-specific inactivation reduced saccade DS magnitude and its correlation with coherence levels. Energy landscape analysis revealed that ablating feedback connections reduced the depth and positional separation of attractor basins, with more pronounced effects for selectivity-specific connections. Shallower attractor basins were associated with less consistent decisions due to increased susceptibility to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 provide mechanistic insight through energy landscape analysis with appropriate statistical tests (paired t-tests, two-way ANOVAs). The connection between attractor basin properties and decision consistency is well-established theoretically (C83-C87) and the empirical results are consistent with this framework. However, the energy landscape reconstruction is a numerical approximation in a reduced 1-D subspace, which may not capture all relevant dynamics. The interpretation (C65) is reasonable but somewhat speculative about the precise mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The feedback modulation observed during decision-making is distinct from feature-based attention modulation in early sensory cortex. While both effects match stimulus tuning of recipient cells, only the feedback modulation in the current study specifically affects decision-related rather than stimulus-related components of neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 make a conceptual distinction supported by the dissociation between decision-related and stimulus-related components (C28, C30, C68). The comparison to attention literature (C67) is appropriate and well-cited. However, this is primarily an interpretive claim based on the pattern of results rather than a direct experimental comparison with attention tasks. The distinction is logical and supported by the data pattern, but additional experiments directly comparing attention and decision contexts would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Selectivity-specific feedback modulation emerged during RNN training despite random initialization of cross-module connections, and causal in silico experiments demonstrated that these precise feedback connections play an essential role in mediating the modulation of action selection on sensory evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 summarize key findings about the emergence and causal role of feedback connections, which are well-supported by the detailed results in other claim groups (C44-C46 for emergence, C47-C57 for causal role). These are high-level summary claims that accurately reflect the supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C89",
+      "C90"
+    ],
+    "result": "The nonlinear feedback modulation intensified attractor basins of population activity associated with saccade choice, leading to more reliable decisions. This provides in silico evidence that energy landscape configuration causally influences decision consistency and presents an initial circuit mechanism for how feedback modulation shapes the energy landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C89-C90 are high-level conclusions supported by the detailed energy landscape analysis (C60-C65). The causal claim (C89) is justified by the inactivation experiments, though it is limited to in silico evidence. The novelty claim (C90) is reasonable given the literature review, though such claims are inherently difficult to verify completely. The conclusions are appropriately qualified and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The results are consistent with predictive coding theories of feedback function. The selectivity-specific feedback connectivity in RNNs fits the functional segregation of expectations in hierarchical predictive coding schemes, where descending predictions from action selection are limited to matched/associated stimulus attributes in sensory evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 make theoretical connections to predictive coding frameworks. While the pattern of results is indeed consistent with predictive coding (C91, C94), the specific interpretations about hierarchical architecture and functional segregation (C92-C93) are more speculative. The study was not designed to test predictive coding specifically, and alternative theoretical frameworks might also explain the results. The connection is plausible and well-articulated but represents one possible interpretation rather than definitive evidence for predictive coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Neural ensembles related to sensory evaluation and action selection for the same choice might form precise recurrently connected loops. The prediction signal carried by precise feedback connections might facilitate evaluation of associated stimuli while inhibiting nonmatched stimuli, amplifying task-relevant sensory input and resulting in faster, more accurate decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 are explicitly speculative hypotheses (using 'might' and 'could') about mechanisms and functional consequences. While these hypotheses are reasonable extrapolations from the RNN findings and are consistent with the data, they represent proposed mechanisms for future testing rather than established results. The speculative nature is appropriate for a discussion section but these claims lack direct empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Behavioral and neurophysiological methods were appropriate for the study. Two monkeys performed the FVMD task with coherence-dependent accuracy and reaction times. 104 of 194 LIP neurons showed significant direction selectivity, with 83 neurons recorded in sessions where saccade targets were aligned horizontally. The task design included random target positioning to avoid fixed stimulus-response mappings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 describe methodological details and basic behavioral/neural results that are well-documented and appropriate. The sample sizes are reasonable for this type of study, the task design is sound, and the neuron selection criteria are clearly stated. These are foundational results that support the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The modulation of action selection on sensory processing may be a general process in perceptual decision-making, as similar effects have been observed in middle temporal area neurons in a different task context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 make a generalization based on comparison with a recent study (Laamerad et al., 2024). The cited study provides independent evidence for similar modulation effects in a different brain area and task, which strengthens the generality claim. However, the generalization is based on limited evidence (one other study) and would benefit from additional supporting studies across different tasks and brain areas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The observed modulation of saccade direction on LIP neurons' responses to motion stimuli cannot be simply explained by saccade direction selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by multiple lines of evidence presented in the discussion and results: the nonlinear nature of modulation (C18), similar mean activity between conditions (C21-C22), and the specific pattern of effects. The claim is well-justified by the control analyses, though the discussion acknowledges this is based on inference from the data pattern rather than direct experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Previous studies show functionally specific feedback connections in visual processing (corticocortical and corticogeniculate), but similar segregation reflecting encoding properties has not been evident in decision networks in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 accurately summarize prior literature (C76 with appropriate citations) and identify a gap in current knowledge (C77). These are literature review claims that provide context for the novelty of the current findings. The citations support the claims about visual system feedback organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Feedback connections are extensive in the brain but their functions are less understood than feedforward connections. Prior work has implicated feedback in attention, expectation, and weak decision-correlated activity in early sensory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide literature review context with appropriate citations. These accurately summarize the state of knowledge about feedback connections and their proposed functions. The claims are well-supported by the cited literature and provide important background for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Two-state attractor models have been widely used to explain decision-making, with decision consistency influenced by energy landscape configuration. Steep, deep basins promote consistent decisions while shallow basins lead to stochastic decisions. RNN modeling confirmed that shallower, less separated attractor basins were associated with decreased decision consistency in more difficult trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 provide theoretical background (C83-C87, well-cited) and empirical confirmation in the current RNNs (C88). The theoretical framework is well-established in the literature, and the RNN results are consistent with these predictions. This provides important context for interpreting the energy landscape findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Neural activity correlates with both sensory evaluation and action selection in decision-making, but the intricate interaction between these processes and their impact on behavior remains unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the motivation for the study. C1 is well-established in the field (stated as knowledge), and C2 identifies a clear gap that the study addresses. These are appropriate framing claims for the introduction/abstract.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Sensory evaluation and action selection are fundamental processes in perceptual decision-making, with neural activity distributed across brain areas including PPC, frontal cortex, superior colliculus, and caudate. While these processes involve distinct neural processing, they also overlap temporally and spatially, with action selection-related activity arising early during evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide comprehensive literature review establishing the background for the study. All claims are well-supported by extensive citations to prior work. C15 includes data from the current study showing early modulation, which is supported by the temporal analyses (C20, C29). These claims effectively establish the scientific context and motivation.",
+    "result_type": "MINOR"
+  }
+]

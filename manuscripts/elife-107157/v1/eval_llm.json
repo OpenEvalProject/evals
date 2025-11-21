@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Apj1 is a negative regulator of Hsf1 during the HSR attenuation phase. In apj1\u0394 cells, Btn2 levels remain elevated during prolonged heat shock (C42-C43), and Hsf1 target gene expression is significantly increased at 60 min post-heat shock compared to wild-type (C51-C52), indicating impaired HSR attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence converge: Western blot analysis shows persistent Btn2 accumulation in apj1\u0394 cells (C42-C43), ribosome profiling demonstrates elevated Hsf1 target expression at 60 min in apj1\u0394 but not sis1-4xcga cells (C51-C52), and cycloheximide experiments confirm the effect depends on ongoing transcription (C44-C45). The data consistently support Apj1's role in HSR attenuation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Apj1 deletion prevents the dissociation of Hsf1 from heat shock gene loci during HSR attenuation. Microscopy shows that apj1\u0394 cells maintain Hsf1-GFP nuclear foci throughout 60 min of heat shock (C57), and gene coalescence assays demonstrate persistent colocalization of HSP104 and HSP12 genes in apj1\u0394 cells (~60%) compared to wild-type where coalescence returns to baseline (C60, C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two complementary microscopy approaches provide consistent evidence: Hsf1-GFP localization shows persistent nuclear foci in apj1\u0394 cells (C57), and the gene coalescence assay demonstrates maintained colocalization of heat shock genes in apj1\u0394 cells while wild-type cells show dissociation (C59-C62). Both assays report on Hsf1 activity and show concordant results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C127"
+    ],
+    "result": "Apj1 binds to HSE-containing promoter regions with kinetics that inversely correlate with Hsf1 occupancy. ChIP experiments show GFP-Apj1* specifically binds HSE-containing promoters (C64-C65), with maximum Apj1 occupancy occurring at 20-60 min post-heat shock when Hsf1 occupancy declines (C68-C69). In apj1\u0394 cells, Hsf1 occupancy fails to decline during heat shock (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq and ChIP-qPCR data demonstrate specific Apj1 binding to HSE-containing regions (C64-C65), with temporal dynamics showing inverse correlation with Hsf1 occupancy (C68-C69). The genetic evidence from apj1\u0394 cells, where Hsf1 occupancy does not decline (C71), supports a causal role for Apj1 in displacing Hsf1. The delayed Apj1 binding (C127) is consistent with an attenuation-phase function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Among the three major JDPs tested, only Apj1 shows detectable occupancy at heat shock gene UAS regions during heat stress. ChIP-qPCR reveals very low Ydj1 binding (<0.1%) with no significant changes (C73), and low Sis1 binding with only slight increases at some loci (C74), while Apj1 shows substantial binding (3-4% of input) that increases during heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data directly compare occupancies of three JDPs at the same loci under identical conditions (C73-C75). The quantitative differences are substantial (Apj1 shows 30-40-fold higher occupancy than Ydj1), and the conclusion (C76) is appropriately limited to detectable interactions during heat stress, acknowledging technical detection limits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C40",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C115"
+    ],
+    "result": "Ydj1 and Apj1 synergistically repress Hsf1 in non-stressed cells. Single deletions of apj1\u0394 or ydj1-4xcga show minimal Hsf1 activation at 25\u00b0C (C77, C80-C81), but apj1\u0394 ydj1-4xcga double mutants exhibit strong activation of nearly all Hsf1 targets (C84-C85), with protein levels of Btn2 and Hsp42 elevated to near-maximal levels even without heat shock (C87, C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Translatome analysis (C80-C85) and Western blot data (C87) consistently show that only the double mutant exhibits strong Hsf1 activation at 25\u00b0C. Microscopy data confirm nearly complete Hsf1 activation in apj1\u0394 ydj1\u0394 cells (C89). The synergistic effect is clear: single mutants show minimal activation while the double mutant shows near-maximal activation, supporting distinct but overlapping regulatory roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Hsf1 activation in apj1\u0394 ydj1\u0394 double mutants partially rescues the growth defects of ydj1 mutants. While ydj1-4xcga and ydj1\u0394 cells show impaired growth at 30\u00b0C (C91), apj1\u0394 ydj1-4xcga or apj1\u0394 ydj1\u0394 double mutants grow up to 33-35\u00b0C (C92). This rescue requires Hsf1 activity, as apj1\u0394 ydj1-4xcga hsf1-848 triple mutants do not grow at 30\u00b0C (C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Spot test data clearly show temperature-dependent growth phenotypes (C91-C92), and the genetic epistasis experiment with hsf1-848 demonstrates that the rescue depends on Hsf1 activity (C95). The improved growth of apj1\u0394 hsf1-848 cells at 37\u00b0C (C96) provides additional support for Apj1's repressive role. The data support the interpretation that increased PQC capacity from Hsf1 activation improves proteostasis (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Apj1's repression of Hsf1 requires its J-domain function. The apj1-H34Q mutant, which cannot interact with Hsp70, fails to downregulate Hsf1 activity, as evidenced by high Btn2 and Hsp42 levels in ydj1-4xcga apj1-H34Q cells under non-stress conditions (C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The H34Q mutation in the J-domain is a well-established mutation that abolishes Hsp70 interaction. Western blot data show that despite elevated Apj1-H34Q levels, Hsf1 targets remain high (C97), demonstrating that the J-domain function is required. This supports the model that Apj1 acts as a canonical Hsp70 co-chaperone (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Proteostasis defects in ydj1\u0394 cells do not trigger Hsf1 activation, suggesting direct JDP regulation rather than indirect sensing of protein damage. Sis1-GFP forms massive cytosolic foci in 60.5% of ydj1\u0394 cells after 60 min heat shock (C102), indicating severe proteostasis defects, yet these cells do not activate Hsf1 (C105). In contrast, apj1\u0394 ydj1\u0394 double mutants show Hsf1 activation despite improved proteostasis (C103-C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Microscopy data clearly show extensive Sis1-GFP foci formation in ydj1\u0394 cells (C101-C102), indicating proteostasis defects. The observation that these defects do not trigger Hsf1 activation (C105), while the double mutant shows activation despite fewer cytosolic foci (C103), argues against protein damage as the primary trigger. This supports direct JDP regulation of Hsf1 (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Sis1 overexpression cannot efficiently repress Hsf1 activity in apj1\u0394 ydj1-4xcga cells, despite restoring growth. Elevated Sis1 levels only partially reduce Btn2 while Hsp42 remains unaffected (C107), yet Sis1 overexpression restores growth of ydj1-4xcga and apj1\u0394 ydj1-4xcga cells to 35\u00b0C (C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data show that Sis1 overexpression does not normalize Hsf1 target protein levels (C107), while spot tests demonstrate growth rescue (C108). This dissociation between Hsf1 repression and growth rescue indicates that Sis1 can compensate for Ydj1's PQC functions but not its Hsf1 regulatory function, supporting the specificity of Apj1's role in Hsf1 regulation (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C128"
+    ],
+    "result": "The authors propose a model where different JDPs regulate distinct phases of the HSR: Sis1 and Ydj1 maintain Hsf1 repression in non-stressed cells, while Apj1 specifically mediates attenuation after stress activation (C110). This phase-specific regulation may reflect distinct conformational states of free versus HSE-bound Hsf1 (C116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data support phase-specific functions (C112-C113 show Sis1 affects basal but not attenuation), the mechanistic explanation involving conformational states (C116) is speculative. The model is consistent with the data but lacks direct evidence for conformational differences. The prediction of synergistic activation in apj1\u0394 sis1-4xcga cells (C114) was not observed, indicating the model is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Apj1 is present at low abundance (1000 copies/cell) compared to Sis1 and Ydj1 (28,000 and 50,000 copies/cell) in non-stressed cells (C119), with translatome analysis showing 22- and 46-fold higher translation of SIS1 and YDJ1 mRNAs compared to APJ1 at 25\u00b0C (C120). Upon heat shock, APJ1 mRNA translation increases 32-fold, the highest among the three JDPs (C121).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein abundance data (C119) from prior literature is confirmed by the authors' translatome analysis (C120-C121). The fold-changes are substantial and consistent between the two measurements. The authors appropriately speculate about functional implications (C122-C123) but clearly distinguish speculation from data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C130"
+    ],
+    "result": "Apj1's dual role in nuclear PQC and Hsf1 regulation links nuclear proteostasis status to HSR control. Apj1 targets misfolded proteins for proteasomal degradation (C124), and the authors propose that repair or removal of nuclear non-native proteins frees Apj1 to target HSE-bound Hsf1 (C126), with delayed Apj1 binding to HSEs (C127) consistent with this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Apj1's role in nuclear PQC is established (C124), and the ChIP data show delayed Apj1 binding (C127), the proposed mechanism (C126) is speculative. The model is plausible and consistent with the data, but lacks direct evidence that Apj1 is sequestered by misfolded proteins during early heat shock or that its release triggers attenuation. Additional experiments would be needed to test this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Hsf1 phosphorylation and protein levels are similar in wild-type and apj1\u0394 cells during heat shock, excluding altered Hsf1 stability or phosphorylation as explanations for increased Hsf1 activity in apj1\u0394 cells during attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot analysis directly shows similar Hsf1 phosphorylation patterns (indicated by gel mobility shifts) and total Hsf1 levels in both strains (C63). This negative result appropriately rules out alternative explanations for the apj1\u0394 phenotype and supports the model that Apj1 acts through DNA binding rather than affecting Hsf1 stability or modification.",
+    "result_type": "MINOR"
+  }
+]

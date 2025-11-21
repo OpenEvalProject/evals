@@ -1,0 +1,2311 @@
+{
+  "submission": {
+    "id": "12688db8-7829-455c-b465-cf82e4026c07",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:02:21.960711Z",
+    "updated_at": "2025-11-21T04:02:21.960711Z"
+  },
+  "content": [
+    {
+      "id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "content_type": "manuscript",
+      "content_text": "# Spatial and longitudinal tracking of enhancer-AAV vectors that target transgene expression to injured mouse myocardium\n\n## Authors\n\n- David W Wolfson<sup>1</sup> ([ORCID: 0000-0003-3850-3925](https://orcid.org/0000-0003-3850-3925))\n- Joshua A Hull<sup>2</sup>\n- Yongwu Li<sup>3</sup>\n- Trevor J Gonzalez<sup>2</sup>\n- Mourya D Jayaram<sup>2</sup>\n- Garth W Devlin<sup>2</sup>\n- Valentina Cigliola<sup>1</sup>\n- Kelsey A Oonk<sup>1</sup>\n- Alan Rosales<sup>3</sup>\n- Nenad Bursac<sup>3</sup> ([ORCID: 0000-0002-5688-6061](https://orcid.org/0000-0002-5688-6061))\n- Aravind Asokan<sup>2</sup> \u2020\n- Kenneth D Poss<sup>1</sup> ([ORCID: 0000-0002-6743-5709](https://orcid.org/0000-0002-6743-5709)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology, Duke Regeneration Center, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))\n2. Department of Surgery, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))\n3. Department of Biomedical Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))\n4. Department of Pharmacology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))\n5. Morgridge Institute for Research Madison United States ([ROR:05cb4rb43](https://ror.org/05cb4rb43))\n6. Department of Cell and Regenerative Biology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTissue regeneration enhancer elements (TREEs) direct expression of target genes in injured and regenerating tissues. Additionally, TREEs of zebrafish origin were shown to direct expression of transgenes in border zone regions after cardiac injury when packaged into recombinant adeno-associated viral (AAV) vectors and introduced into mice. Future implementation of TREEs into AAV-based vectors as research tools and potential gene therapy modalities requires a deeper understanding of expression dynamics and potential off-target effects. Here, we applied in vivo bioluminescent imaging to mice systemically injected with AAV vectors containing different combinations of capsids, enhancers, and timing of delivery. Longitudinal tracking of expression directed by different TREEs revealed distinct amplitudes and durations of reporter gene expression in the injured heart. The liver-de-targeted AAV capsid, AAV.cc84, could deliver TREEs either pre- or post-cardiac injury to negate off-target expression in the liver while maintaining transduction in the heart. By screening AAV9-based capsid libraries dosed systemically in mice post-cardiac injury, we discovered a new capsid variant, AAV.IR41, with enhanced transduction in cardiac injuries and with elevated transduction of TREE-driven transgenes versus conventional AAV9 vectors. In vivo bioluminescence imaging offers insights into how enhancers and engineered capsids can be implemented to modulate spatiotemporal transgene expression for targeted therapies.\n\n## Introduction\n\nThe inability of the adult mammalian heart to regenerate after an infarction injury has motivated attempts to discover factors with cardiomyogenic, angiogenic, or anti-fibrotic potential. Many genes have been implicated by genetic studies in zebrafish and mouse to elevate or restrict cardiomyocyte (CM) proliferation after cardiac injury, with groups targeting factors controlling differentiation, chromatin state, metabolism, and other events (Eulalio et al., 2012; Choi et al., 2013; Fang et al., 2013; Mahmoud et al., 2013; Karra et al., 2015; Bassat et al., 2017; Toischer et al., 2017; Hirose et al., 2019; Chen et al., 2021; Li et al., 2023; Nguyen et al., 2023). Notable mitogenic influences include the secreted factor Neuregulin1 (Nrg1), signaling through ErbB family receptors (Bersell et al., 2009; D\u2019Uva et al., 2015; Gemberling et al., 2015), the transcription factor (TF) Klf1 (Ogawa et al., 2021), and Yap/Taz factors, normally restrained from the nucleus by Hippo in CMs (von Gise et al., 2012; Heallen et al., 2013; Xin et al., 2013; Morikawa et al., 2015; Bassat et al., 2017; Leach et al., 2017; Morikawa et al., 2017; Monroe et al., 2019). The signaling environment is complex, with epicardium, endocardium, nerves, macrophages, T cells, vasculature, and oxygen levels each influencing CM regeneration (Lepilina et al., 2006; Kim et al., 2010; Kikuchi et al., 2011; Aurora et al., 2014; Mahmoud et al., 2015; Wang et al., 2015; Hui et al., 2017; Nakada et al., 2017; Sugimoto et al., 2017; Zhao et al., 2019; Xia et al., 2022; Peterson et al., 2024; Shin et al., 2024; Sun et al., 2024; Weinberger et al., 2024).\n\nIt has become crucial to decipher how genes involved in regenerative events engage upon injury in CMs and other cardiac cells. Recently, distal regulatory elements referred to as tissue regeneration enhancer elements (TREEs) were described that direct gene expression in regenerating zebrafish hearts, a new concept for the field of regenerative biology (Kang et al., 2016). TREEs have been identified by chromatin profiling in CMs, epicardium, and other tissues of zebrafish like spinal cord and fins (Goldman et al., 2017; Thompson et al., 2020; Cao et al., 2022; Cigliola et al., 2023), as well as in a variety of other species, tissues, and injury contexts (Harris et al., 2016; Vizcaya-Molina et al., 2018; Gehrke et al., 2019; Harris et al., 2020; Wang et al., 2020; Jimenez et al., 2022; Sun et al., 2022; Suzuki et al., 2022; Li et al., 2023; Sun and Poss, 2023; Zlatanova et al., 2023; Kawaguchi et al., 2024). Critically, TREEs of zebrafish origin can be recognized by the transcriptional machinery of small (mice) or even large (pigs) mammals. Systemic introduction of adeno-associated viral (AAV) vectors with TREE-cargo cassettes can spatiotemporally target factor delivery to the injured mammalian heart or spinal cord (Cigliola et al., 2023; Yan et al., 2023). For instance, a TREE paired with a heavily mutated YAP transgene transiently directs expression to the border zone of a mouse heart injured by ischemia/reperfusion (I/R), stimulating localized CM cycling and functional recovery (Yan et al., 2023). Thus, short TREE sequences found in zebrafish, and presumably elements with similar properties from other organisms, can act as targeting vehicles for regenerative augmentation.\n\nCritical remaining questions include how TREEs interact with target genes and TFs, and how they can be harnessed for safe regenerative applications. Translational use of TREEs for delivering pro-regenerative factors requires optimized delivery systems to maximize efficacy and safety while minimizing off-target risks. Recently, new engineered and variant forms of AAV capsids have been developed to modulate tissue tropism and cell type specificity, such as liver de-targeting with AAV.cc84 (Gonzalez et al., 2023). Here, we performed a study to assess how choice of TREE and AAV capsid can influence the spatiotemporal control of transgene expression in mouse models of myocardial infarction (MI). Using bioluminescence imaging, we mapped and longitudinally tracked AAV transgene expression in a whole-body manner and screened for new variant AAV9 capsids with enhanced tropism for infarcted myocardial tissue over healthy myocardium.\n\n## Results and discussion\n\n### IVIS detects TREE-directed gene expression after myocardial injury\n\nWe previously showed that TREEs are capable of directing AAV transgene expression in an injury-responsive manner in mouse models of spinal cord and cardiac damage (Cigliola et al., 2023; Yan et al., 2023). In these studies, TREEs were placed upstream of a murine Heat shock protein 1a (Hspa1a) promoter, normally silent in mouse tissues, and an EGFP reporter transgene, and AAV vectors were delivered systemically. EGFP transgene expression to observe TREE activity could not be longitudinally tracked in individual mice, limiting our ability to observe whole-body spatial distribution of expression (on- and off-target).\n\nTo longitudinally monitor AAV transgene expression using in vivo bioluminescence imaging (IVIS), albino BALB/c mice were injected intravenously with AAV9 containing either a chicken beta actin (CBA) or Hspa1a promoter upstream of a firefly luciferase (fLuc) transgene (Figure 1\u2014figure supplement 1A). As expected, the strong, constitutively active CBA promoter directed robust fLuc expression across the mouse body, whereas mice transduced with AAV9 harboring Hspa1a::fLuc had relatively minimal luminescence, mostly originating from the liver (Figure 1\u2014figure supplement 1B). Luminescence in the heart, liver, and whole-body plateaued and remained stable from 30 to 68 days post-AAV delivery for both CBA and Hspa1a vectors, as indicated by average radiance measurement (Figure 1\u2014figure supplement 1C\u2013E).\n\nTo determine if IVIS detected gene expression directed by zebrafish TREE sequences in injured mouse tissues, we then systemically delivered AAV9 vectors containing Hspa1a::fLuc with or without a TREE sequence 60 days prior to I/R or sham surgery. This 60-day period was intended to allow AAV expression to stabilize prior to surgery (Figure 1A). We employed two TREEs that previously indicated different injury responsiveness and temporal dynamics by histology, the runx1-linked enhancer (REN) and the 2ankrd1a-linked enhancer 2ankrd1aEN (Goldman et al., 2017). Transduction of either TREE sequence resulted in a marked increase in bioluminescence signal in the thoracic cage overlying the heart. Bioluminescence peaked within the first 3 days after I/R and returned to pre-injury baseline levels within 35 days post-injury (dpi) (Figure 1B and C; n=2 mice). Cardiac bioluminescence showed no change after sham surgery for all mice, indicating that TREE-directed expression occurred in response to myocardial trauma (Figure 1D). Notably, each AAV vector (CBA, Hspa1a, and TREE) demonstrated off-target expression in the abdominal region directly above the liver after transduction, which was also indicated to a limited degree by histology in our previous study (Figure 1B, Figure 1\u2014figure supplement 1B; Yan et al., 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustration of study design. Albino BALB/c mice were systemically injected with AAV9 vectors packaging fLuc reporter cassettes directed by TREEs and a permissive promoter. Mice underwent ischemia/reperfusion (I/R) surgery at D61 and were imaged by IVIS at indicated time points. (B) Representative IVIS images indicate changes of expression over time and space for each vector. Cardiac region of interest (ROI) indicated by red box. n=2 mice. (C) Average radiance measured from cardiac ROIs plotted over days post-injury (dpi). Average radiance normalized to their baseline pre-injury was also plotted (right). n=2 mice. (D) Average cardiac radiance showed a transient increase in expression for both REN (left) and 2ankrd1aEN (right) after I/R injury, whereas sham-operated animals showed relatively constant expression. n=2 mice for I/R, n=3 mice for sham.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic showing comparison of AAV9 vectors packaging either the strong, constitutively active chicken beta actin (CBA) promoter or minimal Heat shock protein 1a (Hsp1a) promoter to direct fLuc expression. n=5 mice/AAV group. (B) Representative IVIS images of mice injected with AAV containing either CBA (top) or Hsp1a (bottom) promoters. Red boxes indicate regions of interest (ROIs) marking cardiac, liver, and whole-body expression. (C) Average radiance measured from cardiac ROIs from CBA (top) or Hsp1a (bottom) promoters shows relatively consistent expression from 30 to 68 days post-AAV injection. Square, male mice. Circle, female mice. (D, E) Average radiance measured from liver (D) and whole-body (E) ROIs showed relatively consistent levels of expression over time for both promoters.\n\n### Live imaging of a liver de-targeted AAV9 capsid variant\n\nTo attempt to reduce hepatic transgene expression while maintaining cardiac tropism, we packaged REN-Hspa1a::fLuc into AAV.cc84, a recently discovered AAV9 variant with reduced liver transduction (Gonzalez et al., 2023), as well as AAV9 for comparison. REN was selected as the liver luminescence was more prominent with respect to the cardiac signal in the above experiments. Following AAV delivery, mice were imaged weekly and also given a sham surgery at day 28, to assess spatiotemporal dynamics of bioluminescence (Figure 2A). IVIS images revealed off-target luminescence in male and female livers with AAV9, whereas AAV.cc84 showed no detectable signal in the liver for all sexes of mice over 35 days following AAV (Figure 2B, Figure 2\u2014figure supplement 1A). Quantification indicated that AAV9 enabled substantially higher expression in liver than AAV.cc84, which remained minimal over time (Figure 2C, n=6 mice). Luminescence in the heart was similar between AAV9 and AAV.cc84, and, as expected, luminescence showed no change upon sham surgery (Figure 2\u2014figure supplement 1B). Six weeks post-AAV, while AAV.cc84-injected mice continued to show minimal expression across many biopsied organs, AAV9-injected mice showed off-target expression in the liver (Figure 2D). Vector genome quantification by qPCR revealed AAV9-injected mice contained a much higher viral load in liver tissue compared to AAV.cc84, for both males and females (Figure 2E, n=3 mice). Vector genomes in the heart were similar between AAV9 and AAV.cc84 for both sexes of mice (Figure 2\u2014figure supplement 1C). In addition to heart and liver, luminescence was also observed in the head/neck and lower abdomen regions, which showed no difference between AAV9 and AAV.cc84 (Figure 2\u2014figure supplement 1D and E). These results indicate that AAV.cc84 can be implemented to minimize off-target liver expression of TREEs, evading liver transduction while maintaining cardiac tropism.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of experimental timeline, comparing AAV9 and AAV.cc84 capsids for systemic delivery of REN-Hsp1a::fLuc. Mice were in vivo bioluminescence imaging (IVIS) imaged in the weeks following AAV delivery and post-sham surgery. (B) Representative IVIS images of mice injected with either AAV9 (left) or AAV.cc84 (right) at 14 (top) and 21 days (bottom) post-AAV injection. Mice were also subdivided by biological sex to account for sex differences in AAV liver tropism. (C) Average radiance from liver regions of interest (ROIs) showed significantly higher expression in AAV9-transduced mice compared to AAV.cc84 through all timepoints (n=6 mice, Holm\u2013Sidak multiple comparisons test). (D) Representative IVIS images of harvested organs at 42 days post-AAV demonstrate liver expression with AAV9 (left) while undetected with AAV.cc84 (right). (E) Vector genome quantification from collected liver samples reveals higher liver transduction with AAV9 compared to AAV.cc84 for both female and male mice.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative in vivo bioluminescence imaging (IVIS) images of mice injected with either AAV9 (left) or AAV.cc84 (right) at 7 (top) and 35 days (bottom) post-AAV injection. (B) Average radiance in the heart was similar between AAV9 and AAV.cc84 (n=6 mice, Holm\u2013Sidak multiple comparisons test). (C) Vector genome quantification from cardiac tissues showed similar levels of vector genomes between AAV9 and AAV.cc84 for both sexes (n=3 mice, Holm\u2013Sidak multiple comparisons test). (D) Representative IVIS images of mice with regions of interest (ROIs) used to measure expression in head/neck and lower abdomen (white dashed box). (E) Average radiance measured in the head/neck (left) and lower abdomen (right) was similar between AAV9 and AAV.cc84 over the course of the study (n=6 mice, Holm\u2013Sidak multiple comparisons test).\n\n### Live imaging of post injury, liver de-targeted TREE-AAV transduction\n\nTherapeutic TREE use would require their delivery after injury occurs. To examine expression dynamics in a therapeutically relevant context, we systemically delivered the liver-detargeted vector AAV.cc84 carrying 2ankrd1aEN-Hspa1a::fLuc or Hspa1a::fLuc at 4 dpi in mice given an I/R injury (Figure 3A). Echocardiograms to measure cardiac ejection fraction before and after I/R were used to estimate and compare injury size in both treatment groups (Figure 3\u2014figure supplement 1A). 2ankrd1aEN-Hspa1a::fLuc-transduced mice showed robust fLuc activity in the thoracic cage overlying the heart, which increased up to 28 dpi and plateaued afterwards (Figure 3B and C; n=4 mice). Conversely, cardiac bioluminescence in Hspa1a::fLuc-transduced mice remained relatively minimal over time (Figure 3B and C, Figure 3\u2014figure supplement 1B; n=4 mice). IVIS imaging revealed a baseline of 2ankrd1aEN-directed cardiac expression in sham-operated mice (Figure 3\u2014figure supplement 1C), which was elevated approximately threefold in mice with I/R injury compared to sham at 7 dpi (Figure 3D, n=4 mice). 2ankrd1aEN-directed bioluminescence in the heart increased during the first 28 days for sham-operated mice, likely indicative of increased AAV transduction and transgene expression over time (noting that AAV deliveries in Figure 1 experiments were 60 days prior to luminescence measurements; Figure 3E). Notably, I/R injured mice maintained higher cardiac activity throughout the 63-day time course, with the greatest differences at 7 and 21 dpi (Figure 3E). Together, these results indicate that 2ankrd1aEN-directed gene expression can be estimated longitudinally over long time periods, and in agreement with our previous histological analysis, 2ankrd1aEN directs long-lasting gene expression in the injured mouse heart.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of experimental timeline comparing expression between Hsp1a and 2ankrd1aEN when delivered at 4 dpi. (B) Representative in vivo bioluminescence imaging (IVIS) images of mice injected with Hsp1a (top) or 2ankrd1aEN- Hsp1a (bottom) after ischemia/reperfusion (I/R) injury. (C) Cardiac average radiance normalized to the 7 dpi time point increased over time with 2ankrd1aEN while remaining stable with Hsp1a (n=4 mice, Holm\u2013Sidak multiple comparisons test). (D) Average cardiac radiance directed by 2ankrd1aEN was significantly higher in mice with I/R injury compared to sham at 7 dpi (n=4 mice, Welch\u2019s t-test). (E) Average cardiac radiance was more significantly elevated in the first 21 days post-injury in mice with I/R injury compared to sham (n=4 mice, Mann\u2013Whitney tests).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Ischemia/reperfusion (I/R) surgery injury extent was assessed by ejection fraction via echocardiography to estimate injury prior to AAV delivery (n=4 mice). (B) Cardiac average radiance plotted for each individual mouse with I/R injury plotted over time with either Hsp1a::fLuc (gray) or 2ankrd1aEN- Hsp1a::fLuc (black). (C) Representative in vivo bioluminescence imaging (IVIS) images of sham-operated mice injected with AAV.cc84 packaged with 2ankrd1aEN- Hsp1a::fLuc.\n\n### In vivo library screen for AAV9 capsid variants with increased targeting of injury sites\n\nDirected evolution of AAV libraries has been previously used to discover new capsids with improved functional properties, such as liver de-targeting (AAV.cc84), enhanced potency (AAV.cc47), and tropism for specific cell types (AAV.ark313, AAV.k20) (Gonzalez et al., 2022; Gonzalez et al., 2023; Nyberg et al., 2023; Nyberg et al., 2025; Rosales et al., 2025). We reasoned that this approach may be useful to identify variants with enhanced tropism for infarcted myocardium, which has altered extracellular matrix and cell type landscapes.\n\nTo find capsid variants with enhanced tropism for infarcted myocardial tissue over healthy myocardium, we incorporated previously described AAV capsid libraries with saturation mutagenesis at the variable region IV epitope (Gonzalez et al., 2023). A previous report indicated that AAV9 is observed to preferentially transduce border zones of infarcted myocardium when delivered acutely (10 min to 3 dpi) after injury, which was speculated to be driven by a combination of increased capillary permeability, sialidase activity, and DNA damage after cardiac ischemia (Konkalmatt et al., 2012). We attempted to limit the effects of these acute changes by delivering capsid libraries to mice that had undergone sham or I/R surgery at 9 dpi, when the acute inflammation phase is complete and the repair phase with myofibroblast activation and proliferation has begun (Figure 4A, n=2 mice). At 11 dpi, cardiac tissue was harvested and separate biopsies were acquired from infarcted or remote myocardium. Viral genomes from each biopsy were amplified and sequenced, and infarcted tissue fold-change over remote tissue was calculated from mapped reads for each capsid variant (Figure 4B). We found three unique capsids that were enriched in the infarcted tissue over remote for both I/R mice, while being comparably expressed in both biopsies of the sham mouse (Figure 4B, Figure 4\u2014figure supplement 1A). Of the three variant capsids, we found the capsid with the highest number of reads in infarcted tissue (AAV.IR41) transduced I/R-injured hearts more effectively than AAV9 and the other two variant capsids (IR42, IR43) when packaged with a CBA::EGFP transgene (Figure 4C, Figure 4\u2014figure supplement 1B). When systemically delivered at 9 dpi, IR41 transduced larger areas of myocardium surrounding areas of infarct compared to AAV9 (Figure 4C). Using F-actin staining to mark the border zone, AAV9 and IR41 primarily transduced CMs directly at the border zone with similar effectiveness (Figure 4C). EGFP did not notably co-localize with vimentin staining of non-myocytes for either AAV9 or IR41, thus both capsids still primarily transduce CM (Figure 4\u2014figure supplement 1C). Thus, sequence-based screening identified a capsid with enhanced transduction and expression in injured myocardium.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of AAV capsid library screening delivered systemically to mice with either sham (n=1 mouse) or ischemia/reperfusion (I/R) (n=2 mice) injury at 9 dpi. Two days later, hearts were biopsied to collect AAV genomes in either injured or remote tissues. (B) Capsid sequenced reads enriched in the injured tissues were plotted against sham animals. Each point represents a unique capsid. Wild-type AAV9 capsid is marked by blue arrow. (C) Representative fluorescence imaging of AAV9 (top) or variant capsid IR41 (bottom) delivering a self-complementary CBA::EGFP cassette at 16 dpi. Asterisks indicate infarct site, imaged at higher magnification in middle and right panel. Dashed white lines indicate the border zone region. Left scale bar, 1 mm. Middle and right scale bar, 100 um.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Injury site-enriched capsids in I/R-injured mice. Each point represents a unique capsid. Top-left quadrant, capsids co-enriched at injury site. Wild-type AAV9 capsid is marked by an orange arrow. (B) Representative fluorescence imaging of variant capsids, IR42 (left) and IR43 (right), delivering a self-complementary CBA::EGFP cassette at 16 dpi. Asterisks indicate infarction area. Scale bar, 1 mm. (C) Immunofluorescence of infarct sites of mice transduced with either AAV9 (left) or IR41 (right) shows no colocalization of EGFP and Vimentin. Scale bar, 100 um.\n\n### IR41 capsid delivery of TREE-directed transgene expression in injured hearts\n\nTo assess the efficacy of TREE-directed transgene targeting using IR41 capsid, we systemically transduced mice at 4 days after permanent left coronary artery ligation (MI) with either AAV9 or IR41 harboring a 2ankrd1aEN-Hspa1a::fLuc transgene. IVIS imaging revealed higher expression levels in animals transduced with IR41 compared to AAV9, in both sham and MI groups (Figure 5A, Figure 5\u2014figure supplement 1A; n=3 mice). We also noted higher hepatic expression in both sham and infarcted mice with IR41 compared to AAV9 (Figure 5A), although no new tissue transduction was introduced as detectable by biodistribution and reporter gene expression. The average and maximum radiances recorded in IR41-transduced mouse hearts were significantly higher than AAV9 by 7 dpi and remained elevated at 21 dpi (Figure 5B and C). In mice that underwent sham surgery, IR41 had a higher average and maximum radiance than AAV9 at 7 dpi alone but was relatively similar at 14 and 21 dpi (Figure 5\u2014figure supplement 1B and C). Vector genome quantification by qPCR showed that IR41 had roughly twice as high viral uptake than AAV9 in mice given cardiac injuries (Figure 5D, n=3 mice). Interestingly, IR41-transduced mice showed a trend toward higher cardiac viral genome loads than AAV9-transduced mice upon sham injury, indicating that IR41 might increase tropism in uninjured hearts, but its effects will be greatest when delivered to injured hearts (Figure 5D). Together, our experiments indicate that increased tropism of AAV.IR41 for injured myocardium, defined by enhanced uptake and higher transgene expression versus control AAV9, can be complemented by injury-responsive TREEs for targeting cargo delivery to sites of cardiac damage.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative in vivo bioluminescence imaging (IVIS) images of mice with sham (top) or (bottom) surgery transduced with either AAV9 (left) or IR41 (right) packaged with 2ankrd1aEN- Hsp1a::fLuc (n=3\u20134 mice). (B, C) Cardiac average (B) and maximum (C) radiance was elevated in MI mice transduced with IR41 compared to AAV9 (n=3\u20134 mice, Holm\u2013Sidak multiple comparisons test). (D) Viral genome quantification from heart tissues was elevated in MI mice injected with IR41 compared to AAV9 (n=3\u20134 mice, Holm\u2013Sidak multiple comparisons test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/107148/elife-107148-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Compiled in vivo bioluminescence imaging (IVIS) images of mice that underwent sham or MI surgery with AAV9 or IR41 transduced at 3 dpi. Mice were imaged at 7, 14, and 21 dpi. (B, C) Cardiac average (B) and maximum (C) radiance were statistically similar between AAV9 and IR41 in sham-operated mice.\n\n### Conclusions and limitations\n\nHere, we report techniques for spatial and longitudinal tracking of injury- and regeneration-responsive, TREE-directed transgene expression from AAV vectors systemically infused into mice, either pre- or post injury. We characterized whole-body temporal dynamics of TREE-directed AAV expression and how expression may be modulated with the incorporation of engineered capsids, including those that may better target injured tissue. Our study indicates that IVIS imaging for assessing amplitude and specificity of TREE-directed transgene expression will aid future development of enhancer-based gene therapies relevant to cardiac regeneration and disease. With an IVIS imaging modality, effects of capsid alterations and enhancer sequence alterations can be efficiently and noninvasively assessed to refine their ability to target gene expression in the injured heart.\n\nThere are several limitations we point out from these techniques. Expression by internal organs must also be approximated with potentially subjective ROIs that cannot be verified until harvesting the organs at sacrifice. Although the expression is approximated, we were able to observe unexpected off-target TREE expression in the liver, neck, and abdomen, which was modulated by capsid engineering. Additionally, future work exploring cell surface markers or receptors is needed to better understand the apparent enhanced tropism of IR41 over AAV9, and to engineer liver detargeting attributes into this form. For instance, it is possible that combining the modifications in AAV.cc84 and AAV.IR41 would produce additive effects. Finally, larger animal models are not suited for IVIS imaging due to limitations of tissue penetrance, and findings in mice may not fully recapitulate those in larger animal models and humans. Our AAV capsid library screening was limited to mice, and capsid hits remain to be tested in other species. While further optimization is required, this work lays a foundation for refining TREE-targeted factor delivery to injured myocardium and expanding their use in applications for therapeutic tissue repair.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Male and female C57BL/6J</td>\n      <td>The Jackson Laboratory</td>\n      <td>Strain 000664;RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Male and female BALB/c</td>\n      <td>Charles River</td>\n      <td>Strain 028;RRID:IMSR_CRL:028</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV9: CBA::fLuc</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV9: Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV9: REN- Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV9: 2ankrd1aEN- Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV.cc84: REN- Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV.cc84: Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV.cc84: 2ankrd1aEN - Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV.IR41: 2ankrd1aEN - Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td>IR41 VR4 peptide sequence: GPGVGAR</td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV.IR42: 2ankrd1aEN - Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td>IR42 VR4 peptide sequence: ASRNVVT</td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV.IR43: 2ankrd1aEN - Hspa1a::fLuc</td>\n      <td>This paper</td>\n      <td>IR43 VR4 peptide sequence: SDSQYVQ</td>\n      <td>Available from corresponding authors</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV9 capsid library</td>\n      <td>Gonzalez et al., 2022; Gonzalez et al., 2023</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HEK293</td>\n      <td>ATCC; UNC Viral Vector Core; Gonzalez et al., 2022; Gonzalez et al., 2023</td>\n      <td>RRID:CVCL_0045</td>\n      <td>Obtained from UNC Viral Vector Core for production of recombinant AAV at Duke, see Asokan lab citations</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti- GFP</td>\n      <td>Invitrogen</td>\n      <td>#A-11122;RRID:AB_221569</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-vimentin</td>\n      <td>DSHB</td>\n      <td>#40E-C;RRID:AB_528504</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit IgG Alexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>#A-11008;RRID:AB_143165</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti- mouse IgG Alexa Fluor 555</td>\n      <td>Invitrogen</td>\n      <td>#A21422;RRID:AB_2535844</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ITR F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>5\u2019 AACATGCTACGCAGAGAGGGAGTGG 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ITR R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>5\u2019CATGAGACAAGGAACCCCTAGTGATGGAG 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AAV9 lib amp F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>5\u2019 AGCACGGTCCAGGTCTTCAC 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AAV9 lib amp R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>5\u2019 ATGTCAGTCTAGACCAAAGTTCAACTGAAACGAATTAAACGG 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>WPRE-bGH F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>5\u2019 CTTCGCCCTCAGACGAGTCGGA 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>WPRE-bGH R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>5\u2019 TGGCTGGCAACTAGAAGGCACA 3\u2019</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PureLink Genomic DNA mini kit</td>\n      <td>Invitrogen</td>\n      <td>K182002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-luciferin, potassium salt</td>\n      <td>Gold Biotechnology</td>\n      <td>LUCK-1G</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nAll mouse protocols were approved by the Institutional Animal Care and Use Committee (IACUC) at Duke University (Protocols #A003-22-01, #A025-24-01), which is accredited by the Association for Assessment and Accreditation of Laboratory Animal Care-International (AAALAC). All mice were housed and maintained in the Duke University DLAR mouse facility. Wild-type male and female C57BL/6J (The Jackson Laboratory, Strain #000664) and BALB/c (Charles River, Strain #028) mice were used for this study.\n\n### Ischemia/reperfusion and LAD ligation injury models\n\nThe procedure for I/R myocardial injury via temporary LCA ligation was adapted from previously described protocols (Kaiser et al., 2005). Briefly, adult mice, 8\u201312 weeks of age, were anesthetized with ketamine/xylazine, intubated, and placed on a rodent ventilator. The chest cavity was entered in the third intercostal space at the left lateral border. The left atrium was gently deflected out of the field to expose the left anterior descending artery. Coronary ligation was performed by tying an 8\u20130 nylon suture ligature around the proximal LAD artery. Occlusion of the LAD was confirmed by the anterior wall of the left ventricle turning a pale color. LAD occlusion was maintained for 40 min. After the ischemia period, the suture was untied, and reperfusion of the LAD was confirmed by the return of a pink-red color to the anterior wall. The procedures for LAD ligation were performed with the same approach but with permanent ligation of the left coronary artery by tying an 8\u20130 nylon suture ligature around the proximal LAD artery. Occlusion of the LAD was confirmed by the anterior wall of the left ventricle turning a pale color. The chest was then closed, and the mice were extubated and allowed to recover from anesthesia. Mice were given post-operative analgesics (buprenorphine-sustained release formula by s.c. injection at 0.1 mg/kg) and allowed to recover until the experimental time points indicated, at which point mice were then further analyzed or tissues were harvested. I/R procedures were performed in the Duke Cardiovascular Physiology Core. LAD ligation procedures were performed in collaboration with Dr. Bursac\u2019s lab at Duke University.\n\n### Echocardiography\n\nTo assess cardiac function before and after injury, mice were anesthetized by 2% isoflurane inhalation and imaged by B-mode and M-mode echocardiography using a Vevo3100LT instrument with a 25\u201355 MHz transducer (MX550D, VisualSonics). At least 5x short axis M-mode traces of 8\u201310 s were recorded across the mid-papillary region of the LV. Systole and diastole LV dimensions were measured using VevoLab\u2019s Auto LV analysis tool. All measurements were averaged for each heart at each time point. Heart function was measured by calculating ejection fraction (EF) from the following formula: EF(%)=100*[(LVED\u2013LVES)/LVED], where LVED = [7.0/(2.4+LVIDd)]*(LVIDd)3 and LVES = [7.0/(2.4+LVIDs)]*(LVIDs)3. Abbreviations: LVED, left ventricular end-diastolic volume; LVES, left ventricular end-systolic volume; LVIDd, left ventricular internal dimension at end-diastole; LVIDs, left ventricular internal dimension at end-systole.\n\n### AAV capsid library\n\nAAV9-based capsid libraries were constructed using saturation mutagenesis of residues within the VR-IV site as previously described (Gonzalez et al., 2023; Rosales et al., 2025). The parental library plasmid, containing AAV2 ITRs flanking AAV2 Rep and AAV9 Cap genes (pTR-wtAAV9-VR-IV), was generated with degenerate primers flanking the VR-IR region (amino acids 452\u2013458 in Cap). Prior to saturation mutagenesis with degenerate primers, the VR-IV region of Cap was replaced with a partial GFP sequence to prevent incorporation of wild-type VR-IV sequences in the parental library. The parental library insert was incorporated into the pTR-wtAAV9-VR-IV plasmid to replace the GFP sequence via restriction enzyme digestion with XbaI and BsiWI followed by ligation (New England Biolabs). Purified ligation products were electroporated into DH10B ElectroMax cells (Invitrogen #18290015) and immediately plated on 245 mm Square BioAssay dishes (Corning #431111) containing LB agar with ampicillin. Plates were incubated at 32\u00b0C overnight to allow colony growth and formation. The following day colonies were pooled and harvested for plasmid DNA collection via ZymoPURE plasmid MaxiPrep kit (Zymo Research, #D402). Purified library plasmids were co-transfected with adenovirus helper plasmid into adherent HEK293 cells to generate AAV9 capsid libraries as described below.\n\n### AAV vector production and dosing\n\nRecombinant AAV vectors and libraries were prepared using adherent or suspension HEK293 cell cultures as previously described (Gonzalez et al., 2022; Gonzalez et al., 2023; Rosales et al., 2025). For AAV libraries, at 80\u201390% confluency in 150 cm tissue culture dishes (Fisher Scientific, #087726), cells were triple transfected via polyethylenimine (PEI, Sigma-Aldrich) in a 1:3 DNA:PEI ratio, containing transfer plasmid (pITR), adenovirus helper plasmid (pXX680), and RepCap plasmid (AAV9, AAV.cc84, or AAV.IR41). Cell media was harvested at days 4 and 6 post-transfection. For recombinant AAV vectors, suspension HEK293 cells were used. HEK293 cells were originally obtained from the UNC Vector Core and authenticated by whole-genome sequencing. Similar to adherent transfection, suspension cells were triple-plasmid-transfected with PEI, containing pITR (0.3 ug/mL), pXX680 (0.6 ug/mL), and RepCap (0.5 ug/mL). Media was harvested at 6 days post-transfection with cells pelted and discarded by centrifugation. Both adherent and suspension AAV packaging workflows follow the same downstream purification processes. Briefly, harvested media was incubated with 12% polyethylene glycol (PEG) overnight at 4\u00b0C. Media was then centrifuged at 4000 \u00d7 g at 4\u00b0C for 45 min to precipitate PEG containing AAV. PEG was resuspended in AAV formulation buffer, containing 1 mM MgCl2 and 0.001% F-68 in dPBS. Resuspended PEG and AAV was DNase treated at 37\u00b0C for 1 h, followed by iodixanol gradient purification via ultracentrifugation at 30,000 RPM at 17\u00b0C overnight. Iodixanol gradients consisted of 60%, 40%, 25%, and 17% densities. Following centrifugation, 550 ul fractions were collected starting from the 25\u201340% border and ending at the 40\u201360% border. All fractions were titered for AAV by qPCR using primers targeting the ITR region (see Key Resources Table). Iodixanol fractions containing the highest titer were selected for downstream desalting and buffer exchange. Desalting was performed using manufacturer\u2019s instructions with a PD MidiTrap G-25 column (Cytiva). Following desalting, buffer exchange with sterile AAV formulation buffer was performed according to manufacturer\u2019s instructions with a Pierce high-capacity endotoxin removal spin column (Thermo Scientific). Purified final AAV titer was measured by QIAcuity Digital PCR (dPCR) system with QIAcuity probes targeting AAV2-ITR (QIAGEN, #250102). Titered AAV was systemically delivered in 8\u201312-week-old mice via retro-orbital injection. AAV dose was calculated as viral genomes per kilogram body weight to account for body size differences across age and sex.\n\n### In vivo AAV capsid library screening in mice\n\nThe parental AAV9 capsid library for the VR-IV region was titered by qPCR using primers targeting the ITR region (see Key Resources Table). Parental libraries were systemically delivered to adult C57BL/6J mice (The Jackson Laboratory, #000664) that had undergone sham (n=1) or I/R (n=2) surgeries at 9 dpi. Sufficient cardiac injury by I/R was confirmed by echocardiography measurements of left ventricular ejection fraction. All mice were dosed with 2.5 \u00d7 1013 v.g./kg b.w. of the parental library. Two days after library delivery, at 11 dpi, all mice were sacrificed, and hearts were separately biopsied at the injury (infarct and border zone) and remote sites (right ventricle). Sham mice had heart biopsies captured from approximately the same areas, although no infarct was present. Injured and remote collected tissues were digested with Proteinase K for DNA isolation using a PureLink Genomic DNA mini kit (Invitrogen #K182002). AAV genomes were amplified from the genomic DNA using PCR primers targeting the AAV9 Cap gene (see Key Resources Table). Amplified AAV9 Cap sequences were then ligated into our AAV library plasmid backbone (pTR-wtAAV9-VR-IV) and used to generate a second AAV library. The parental and second viral libraries for all biopsies (remote, injured) and mice (sham, I/R) were prepared for high-throughput sequencing to assess sequence diversity and enrichment. All viral libraries were Dnase I-treated prior to extraction of viral genome from the capsid, and subsequently fortified with Illumina adapter and index sequences by PCR. All PCR products were purified using the PureLink PCR micro kit (Invitrogen). Prepared libraries were then prepared for sequencing with the Illumina NovaSeq 6000 S-Prime Reagent Kit and sequenced with the Illumina NovaSeq system. Demultiplexed reads were analyzed with an updated in-house Perl script (Gonzalez et al., 2022; Gonzalez et al., 2023; Rosales et al., 2025). Reads are surveyed for nucleotide sequences flanking the AAV9 VR-IV library region and intermediate sequences are counted and ranked. These nucleotide sequences are then translated, and the resulting amino acid sequences are also counted and ranked. Fold change enrichment in the injury versus remote biopsy was calculated using normalized read counts for each amino acid sequence. Co-expressed amino acid sequences found in both I/R-injured mice were plotted against each other to find amino acid sequences with >100-fold injury enrichment in I/R-injured mice. Injury fold change over remote was then averaged for both I/R-injured mice and plotted against the injury fold change for the corresponding amino acid sequence found in the sham mouse. Scatterplots were generated using the RStudio graphics package v3.5.2.\n\n### IVIS imaging\n\nAll IVIS bioluminescence imaging was conducted with adult albino BALB/c mice (Charles River) using equipment provided by the Duke Optical Molecular Imaging and Analysis shared resource (OMIA) core. D-luciferin, potassium salt (Gold Biotechnology), was dissolved in dPBS (without calcium or magnesium) at a final concentration of 15 mg/mL. The D-luciferin was sterile-filtered with a 0.22 um filter, and aliquots were stored frozen for future use. At each imaging timepoint, D-luciferin was thawed on ice in a covered container to protect from light. While mice were anesthetized under 2% isoflurane, thawed D-luciferin was injected intraperitoneally at 150 mg/kg b.w. dose. Regions of interest for this study, such as the heart and liver, had body hair above them removed using Nair to improve signal-to-noise ratio. Luciferase signals were allowed a 10\u201315 min plateau time. Bioluminescence images were then collected using an IVIS Kinetic instrument and Living Image Software (PerkinElmer). Average and maximum radiances were quantified in specified ROIs with the Living Image software. For ex vivo bioluminescence imaging, mice were sacrificed and organs immediately harvested for imaging. Organs were quickly washed with ice-cold PBS and DMEM to remove blood and debris. After washing, organs were submerged in room temperature D-luciferin solution for 10 min, then immediately placed on black construction paper and imaged in the IVIS Kinetic.\n\n### Viral genome biodistribution\n\nGenomic DNA was extracted from tissues using a PureLink Genomic DNA mini kit (Invitrogen #K182002) following manufacturer\u2019s instructions. Viral genomes were then quantified by qPCR with a known DNA mass of pITR transfer plasmid standard used for AAV packaging. qPCR primers were designed to target the border region between the transgene and bgh-PolyA sequence (below). Quantified viral genomes are presented as a ratio of viral genomes per microgram of extracted genomic DNA used for the reaction.\n\nPrimers used in this study are listed in the Key Resources Table.\n\n### Immunofluorescence\n\nAdult mouse hearts were immediately harvested after sacrifice, perfused with room temperature dPBS (without calcium or magnesium), and fixed overnight in 4% paraformaldehyde (Fisher #50-980-487) at 4\u00b0C. After fixing, hearts were washed in PBS three times for 15 min each and incubated in 30% sucrose in PBS overnight at 4\u00b0C. Hearts were then transferred and embedded in Tissue-Plus OCT (Fisher #23-730-571). Tissue blocks were cryosectioned at 10 um and placed on a Superfrost Plus Microscope slide (Fisher #22-037-246). Slides were stored at \u201380\u00b0C until staining. On the day of staining, slides were thawed on a slide warmer and allowed to dry for 30 min. Tissues were rehydrated with PBS, washed 3\u00d7 with PBS-T (PBS +0.1% Triton X100), and then blocked for 1 h at room temperature in PBS-T with 5% normal goat serum. After blocking, slides were incubated with primary antibodies diluted in antibody solution (PBS-T + 1% BSA) overnight in a humidified chamber at 4\u00b0C. Primary antibodies included: anti-GFP (Invitrogen #A-11122) at 1:1000 dilution and anti-vimentin (DSHB #40E-C) at 1:100 dilution. Following primary antibody incubation, slides were washed 3\u00d7 with PBS-T and incubated with secondary antibodies, DAPI (Thermo Scientific #62248, 1:1000 dilution), and Alexa Fluor 546 Phalloidin (Invitrogen #A22283, 1:200 dilution) in antibody solution for 2 h at room temperature. Secondary antibodies included goat anti-rabbit IgG Alexa Fluor 488 (Invitrogen #A-11008) at 1:500 dilution and goat anti-mouse IgG Alexa Fluor 555 (Invitrogen #A-21422) at 1:500 dilution. Following incubation, slides were washed 3\u00d7 with PBS for 5 min each and mounted with Vectashield HardSet Antifade Mounting media (Vector Laboratories #H-1400\u201310). Mounted slides were stored at 4\u00b0C until imaged.\n",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Guo N Huang, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.107148.3.sa0](https://doi.org/10.7554/eLife.107148.3.sa0)\n\nThis study identifies novel approaches to improving transgene expression in the injured mammalian myocardium through a combination of a tissue regeneration enhancer element and engineered AAVs - specifically, a liver-detargeting capsid, AAV.cc84, and an in vivo library screen-selected AAV-IR41. The evidence is convincing, and the AAV vectors are of fundamental value to the field of cardiac gene therapy. Future research exploring how to combine the features of AAV.cc84 and AAV-IR41 could yield an even more promising vector for therapeutic use.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.107148.3.sa1](https://doi.org/10.7554/eLife.107148.3.sa1)\n\nIn this manuscript, Wolfson and co-authors demonstrate a combination of an injury-specific enhancer and engineered AAV that enhances transgene expression in injured myocardium. The authors characterize spatiotemporal dynamics of TREE-directed AAV expression in the injured heart using a non-invasive longitudinal monitoring system. They show that transgene expression is drastically increased 3 days post-injury, driven by 2ankrd1a. They reported a liver-detargeted capsid, AAV cc.84, with decreased viral entry into the liver while maintaining TREE transgene specificity. They further identified the IR41 serotype with enhanced transgene expression in injured myocardium from AAV library screening. This is an interesting study that optimizes the potential application of TREE delivery for cardiac repair.\n\nComments on revisions:\n\nThe authors are responsive and have addressed my concerns.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.107148.3.sa2](https://doi.org/10.7554/eLife.107148.3.sa2)\n\nSummary:\n\nIn this manuscript by Wolfson et al., various adeno-associated viruses (AAVs) were delivered to mice to assess the cardiac-specificity, injury border-zone cardiomyocyte transduction rate, and temporal dynamics in the goal to find better AAVs for gene therapies targeting the heart. The authors delivered tissue regeneration enhancer elements (TREEs) controlling luciferase expression and used IVIS imaging to examine transduction in the heart and other organs. They found that luciferase expression increased in the first week after injury when using AAV9-TREE-Hsp68 promoter, waning to baseline levels by 7 weeks. However, AAV9 vectors transduced the liver, which was significantly reduced by using an AAV.cc84 liver de-targeting capsid. The authors then performed in vivo screening of AAV9 capsids and found AAV-IR41 to preferentially transduce injured myocardium when compared to AAV9. Finally, the authors combined TREEs with AAV-IR41 to show improved luciferase expression compared to AAV9-TREE at 7, 14 and 21 days after injury.\n\nOverall, this manuscript provides insights into TREE expression dynamics when paired with various heart-targeting capsids, which can be useful for researchers studying ischemic injury of murine hearts. While the authors have shown the success of using AAV9-TREEs in porcine hearts, it is unknown whether the expression dynamics would be similar in pigs or humans, as mentioned in the limitations.\n\nStrengths:\n\nImportant contribution to the AAV gene therapy literature.\n\nComments on revised version:\n\nMy concerns have been adequately addressed.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.107148.3.sa3](https://doi.org/10.7554/eLife.107148.3.sa3)\n\nSummary:\n\nThe tissue regeneration enhancer elements (TREEs) identified in zebrafish have been shown to drive injury-activated temporal-spatial gene expression in mice and large animals. These findings increase the translational potential of findings in zebrafish to mammals. In this manuscript, the authors tested TREEs in combination with different adeno-associated viral (AAV) vectors using in vivo luciferase bioluminescent imaging that allows for longitudinal tracking. The TREE-driven luciferase delivered by a liver de-targeted AAV.cc84 decreased off-target transduction in liver. They further screened an AAV library to identify capsid variants that display enhanced transduction for infarcted myocardium post ischemia reperfusion and myocardial infarction. A new capsid variant, AAV.IR41, was found to show increased transduction post I/R and MI.\n\nStrengths:\n\nThe authors injected AAV-cargo several days after ischemia/reperfusion (I/R) injury as a clinically relevant approach. Overall, this study is significant in that it identifies new AAV vectors that can be used to deliver promising genes as potential new gene therapies in the future. The manuscript is well-written and the data are also of high quality.\n\nWeaknesses:\n\nThe authors have addressed my previous concerns.\n",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "64230dae-b6ec-4524-b052-125e89b0e004",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C1",
+      "claim": "Tissue regeneration enhancer elements (TREEs) direct expression of target genes in injured and regenerating tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue regeneration enhancer elements (TREEs) direct expression of target genes in injured and regenerating tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement about TREEs that is supported by citations to prior work and experimental data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "6b27ad67-8fda-4f35-86d9-565384a4c149",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C2",
+      "claim": "TREEs of zebrafish origin direct expression of transgenes in border zone regions after cardiac injury when packaged into recombinant adeno-associated viral (AAV) vectors and introduced into mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, TREEs of zebrafish origin were shown to direct expression of transgenes in border zone regions after cardiac injury when packaged into recombinant adeno-associated viral (AAV) vectors and introduced into mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior published work and is referenced in the abstract as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "50dd0e10-24c6-484b-8e83-43d356b6e5c1",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C3",
+      "claim": "Longitudinal tracking of expression directed by different TREEs revealed distinct amplitudes and durations of reporter gene expression in the injured heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinal tracking of expression directed by different TREEs revealed distinct amplitudes and durations of reporter gene expression in the injured heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from IVIS imaging experiments shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "53b010af-7746-4663-8000-1dd2c3c72ad0",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C4",
+      "claim": "The liver-de-targeted AAV capsid, AAV.cc84, can deliver TREEs either pre- or post-cardiac injury to negate off-target expression in the liver while maintaining transduction in the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "The liver-de-targeted AAV capsid, AAV.cc84, could deliver TREEs either pre- or post-cardiac injury to negate off-target expression in the liver while maintaining transduction in the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing AAV9 and AAV.cc84 shown in Figure 2 and related experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "bd5ed5cc-5574-456b-81c4-fb4b8b6295ed",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C5",
+      "claim": "AAV.IR41 is a new capsid variant with enhanced transduction in cardiac injuries and with elevated transduction of TREE-driven transgenes versus conventional AAV9 vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "By screening AAV9-based capsid libraries dosed systemically in mice post-cardiac injury, we discovered a new capsid variant, AAV.IR41, with enhanced transduction in cardiac injuries and with elevated transduction of TREE-driven transgenes versus conventional AAV9 vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from capsid library screening and validation experiments shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "674f4a66-1304-4b46-be00-ba8100c323b1",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C6",
+      "claim": "Many genes have been implicated by genetic studies in zebrafish and mouse to elevate or restrict cardiomyocyte (CM) proliferation after cardiac injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Many genes have been implicated by genetic studies in zebrafish and mouse to elevate or restrict cardiomyocyte (CM) proliferation after cardiac injury, with groups targeting factors controlling differentiation, chromatin state, metabolism, and other events (Eulalio et al., 2012; Choi et al., 2013; Fang et al., 2013; Mahmoud et al., 2013; Karra et al., 2015; Bassat et al., 2017; Toischer et al., 2017; Hirose et al., 2019; Chen et al., 2021; Li et al., 2023; Nguyen et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3e553167-9b41-487f-8f4a-74c0ec357f6e",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C7",
+      "claim": "Notable mitogenic influences include the secreted factor Neuregulin1 (Nrg1), signaling through ErbB family receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable mitogenic influences include the secreted factor Neuregulin1 (Nrg1), signaling through ErbB family receptors (Bersell et al., 2009; D'Uva et al., 2015; Gemberling et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "9f129043-dc70-4a07-9a66-533e1fd65cc7",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C8",
+      "claim": "The transcription factor Klf1 is a notable mitogenic influence on cardiomyocyte proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable mitogenic influences include the secreted factor Neuregulin1 (Nrg1), signaling through ErbB family receptors (Bersell et al., 2009; D'Uva et al., 2015; Gemberling et al., 2015), the transcription factor (TF) Klf1 (Ogawa et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "7c2b61f7-16e6-47e1-9597-6aa09752b673",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C9",
+      "claim": "Yap/Taz factors are notable mitogenic influences that are normally restrained from the nucleus by Hippo in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable mitogenic influences include the secreted factor Neuregulin1 (Nrg1), signaling through ErbB family receptors (Bersell et al., 2009; D'Uva et al., 2015; Gemberling et al., 2015), the transcription factor (TF) Klf1 (Ogawa et al., 2021), and Yap/Taz factors, normally restrained from the nucleus by Hippo in CMs (von Gise et al., 2012; Heallen et al., 2013; Xin et al., 2013; Morikawa et al., 2015; Bassat et al., 2017; Leach et al., 2017; Morikawa et al., 2017; Monroe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "2101209b-e5e2-4b8d-8242-0cd39e8f4ad9",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C10",
+      "claim": "The signaling environment for cardiomyocyte regeneration is complex, with epicardium, endocardium, nerves, macrophages, T cells, vasculature, and oxygen levels each influencing CM regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The signaling environment is complex, with epicardium, endocardium, nerves, macrophages, T cells, vasculature, and oxygen levels each influencing CM regeneration (Lepilina et al., 2006; Kim et al., 2010; Kikuchi et al., 2011; Aurora et al., 2014; Mahmoud et al., 2015; Wang et al., 2015; Hui et al., 2017; Nakada et al., 2017; Sugimoto et al., 2017; Zhao et al., 2019; Xia et al., 2022; Peterson et al., 2024; Shin et al., 2024; Sun et al., 2024; Weinberger et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "5c17b650-0381-42df-9c70-9e6d54f7f13e",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C11",
+      "claim": "TREEs were first described as distal regulatory elements that direct gene expression in regenerating zebrafish hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, distal regulatory elements referred to as tissue regeneration enhancer elements (TREEs) were described that direct gene expression in regenerating zebrafish hearts, a new concept for the field of regenerative biology (Kang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the original work describing TREEs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "8470792c-8881-4237-85d3-34a90b34fddb",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C12",
+      "claim": "TREEs have been identified by chromatin profiling in cardiomyocytes, epicardium, and other tissues of zebrafish like spinal cord and fins.",
+      "claim_type": "EXPLICIT",
+      "source": "TREEs have been identified by chromatin profiling in CMs, epicardium, and other tissues of zebrafish like spinal cord and fins (Goldman et al., 2017; Thompson et al., 2020; Cao et al., 2022; Cigliola et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "603cc2c8-454a-4b74-8718-8a20e22bc9cd",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C13",
+      "claim": "TREEs have been identified in a variety of other species, tissues, and injury contexts beyond zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "TREEs have been identified by chromatin profiling in CMs, epicardium, and other tissues of zebrafish like spinal cord and fins (Goldman et al., 2017; Thompson et al., 2020; Cao et al., 2022; Cigliola et al., 2023), as well as in a variety of other species, tissues, and injury contexts (Harris et al., 2016; Vizcaya-Molina et al., 2018; Gehrke et al., 2019; Harris et al., 2020; Wang et al., 2020; Jimenez et al., 2022; Sun et al., 2022; Suzuki et al., 2022; Li et al., 2023; Sun and Poss, 2023; Zlatanova et al., 2023; Kawaguchi et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "6c75f0b2-d90a-4d93-b212-d813175dfae2",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C14",
+      "claim": "TREEs of zebrafish origin can be recognized by the transcriptional machinery of small mammals (mice) or even large mammals (pigs).",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, TREEs of zebrafish origin can be recognized by the transcriptional machinery of small (mice) or even large (pigs) mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior published work and experimental data.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "0475ae9c-aa3c-48fe-b6f2-7fadfa015d58",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C15",
+      "claim": "Systemic introduction of AAV vectors with TREE-cargo cassettes can spatiotemporally target factor delivery to the injured mammalian heart or spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic introduction of adeno-associated viral (AAV) vectors with TREE-cargo cassettes can spatiotemporally target factor delivery to the injured mammalian heart or spinal cord (Cigliola et al., 2023; Yan et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "22edb8ab-adc9-4627-a073-f3fab6a789d8",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C16",
+      "claim": "A TREE paired with a heavily mutated YAP transgene transiently directs expression to the border zone of a mouse heart injured by ischemia/reperfusion, stimulating localized cardiomyocyte cycling and functional recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a TREE paired with a heavily mutated YAP transgene transiently directs expression to the border zone of a mouse heart injured by ischemia/reperfusion (I/R), stimulating localized CM cycling and functional recovery (Yan et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "588ac60a-64c5-4ae9-bb5d-51580fe1850d",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C17",
+      "claim": "Short TREE sequences found in zebrafish can act as targeting vehicles for regenerative augmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, short TREE sequences found in zebrafish, and presumably elements with similar properties from other organisms, can act as targeting vehicles for regenerative augmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental evidence and prior work cited in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "69bfb2d4-6096-4aef-8626-1e02780ddb98",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C18",
+      "claim": "New engineered and variant forms of AAV capsids have been developed to modulate tissue tropism and cell type specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, new engineered and variant forms of AAV capsids have been developed to modulate tissue tropism and cell type specificity, such as liver de-targeting with AAV.cc84 (Gonzalez et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "104a4bd4-5cdc-4a7f-b9a8-026150f0bd7f",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C19",
+      "claim": "AAV.cc84 is a liver de-targeting capsid variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, new engineered and variant forms of AAV capsids have been developed to modulate tissue tropism and cell type specificity, such as liver de-targeting with AAV.cc84 (Gonzalez et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior published work and experimental data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "092c4b96-9081-414b-b333-e467cdc80c39",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C20",
+      "claim": "The strong, constitutively active CBA promoter directs robust fLuc expression across the mouse body.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the strong, constitutively active CBA promoter directed robust fLuc expression across the mouse body, whereas mice transduced with AAV9 harboring Hspa1a::fLuc had relatively minimal luminescence, mostly originating from the liver (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "9a5fd3bd-333b-4857-9422-15a12a63506b",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C21",
+      "claim": "Mice transduced with AAV9 harboring Hspa1a::fLuc had relatively minimal luminescence, mostly originating from the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the strong, constitutively active CBA promoter directed robust fLuc expression across the mouse body, whereas mice transduced with AAV9 harboring Hspa1a::fLuc had relatively minimal luminescence, mostly originating from the liver (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "f412dbf2-06e6-4cb2-af07-02a44daa709d",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C22",
+      "claim": "Luminescence in the heart, liver, and whole-body plateaued and remained stable from 30 to 68 days post-AAV delivery for both CBA and Hspa1a vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Luminescence in the heart, liver, and whole-body plateaued and remained stable from 30 to 68 days post-AAV delivery for both CBA and Hspa1a vectors, as indicated by average radiance measurement (Figure 1\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "cb6567e4-d4d9-4930-b94e-da1617e793ca",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C23",
+      "claim": "Transduction of either REN or 2ankrd1aEN TREE sequences resulted in a marked increase in bioluminescence signal in the thoracic cage overlying the heart after I/R injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Transduction of either TREE sequence resulted in a marked increase in bioluminescence signal in the thoracic cage overlying the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "ff326b75-b741-4353-af4d-760886f1a98e",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C24",
+      "claim": "Bioluminescence from TREE-directed expression peaked within the first 3 days after I/R and returned to pre-injury baseline levels within 35 days post-injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioluminescence peaked within the first 3 days after I/R and returned to pre-injury baseline levels within 35 days post-injury (dpi) (Figure 1B and C; n=2 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "1706f9db-029f-46d3-8d6e-6c411998bf8b",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C25",
+      "claim": "Cardiac bioluminescence showed no change after sham surgery for all TREE-containing AAV vectors, indicating that TREE-directed expression occurred in response to myocardial trauma.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiac bioluminescence showed no change after sham surgery for all mice, indicating that TREE-directed expression occurred in response to myocardial trauma (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "b2c90bb8-7dd8-427b-90e4-d8fe31755a80",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C26",
+      "claim": "Each AAV vector (CBA, Hspa1a, and TREE) demonstrated off-target expression in the abdominal region directly above the liver after transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, each AAV vector (CBA, Hspa1a, and TREE) demonstrated off-target expression in the abdominal region directly above the liver after transduction, which was also indicated to a limited degree by histology in our previous study (Figure 1B, Figure 1\u2014figure supplement 1B; Yan et al., 2023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1B, as well as a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "fa65a7b1-7535-4760-ab1e-4acde0a4f0f5",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C27",
+      "claim": "AAV.cc84 showed no detectable signal in the liver for all sexes of mice over 35 days following AAV delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "IVIS images revealed off-target luminescence in male and female livers with AAV9, whereas AAV.cc84 showed no detectable signal in the liver for all sexes of mice over 35 days following AAV (Figure 2B, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "2f337590-620e-4256-a401-4fa003fff043",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C28",
+      "claim": "AAV9 enabled substantially higher expression in liver than AAV.cc84.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification indicated that AAV9 enabled substantially higher expression in liver than AAV.cc84, which remained minimal over time (Figure 2C, n=6 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "e33ff1aa-8424-4c52-a58e-cf4aaa87d6cd",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C29",
+      "claim": "Luminescence in the heart was similar between AAV9 and AAV.cc84.",
+      "claim_type": "EXPLICIT",
+      "source": "Luminescence in the heart was similar between AAV9 and AAV.cc84, and, as expected, luminescence showed no change upon sham surgery (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "1449089b-aa51-4d01-9e73-39c955c23e0a",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C30",
+      "claim": "AAV9-injected mice contained a much higher viral load in liver tissue compared to AAV.cc84, for both males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "Vector genome quantification by qPCR revealed AAV9-injected mice contained a much higher viral load in liver tissue compared to AAV.cc84, for both males and females (Figure 2E, n=3 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "a95e33a0-043e-47d8-bbe1-12ff15020078",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C31",
+      "claim": "Vector genomes in the heart were similar between AAV9 and AAV.cc84 for both sexes of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Vector genomes in the heart were similar between AAV9 and AAV.cc84 for both sexes of mice (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "b68b84ac-8f02-4b77-83c9-77a566eb8088",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C32",
+      "claim": "AAV.cc84 can be implemented to minimize off-target liver expression of TREEs, evading liver transduction while maintaining cardiac tropism.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that AAV.cc84 can be implemented to minimize off-target liver expression of TREEs, evading liver transduction while maintaining cardiac tropism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data presented in Figure 2 and related experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3d0d0564-4ad5-45aa-b9c3-3703ef301529",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C33",
+      "claim": "2ankrd1aEN-Hspa1a::fLuc-transduced mice showed robust fLuc activity in the thoracic cage overlying the heart, which increased up to 28 dpi and plateaued afterwards.",
+      "claim_type": "EXPLICIT",
+      "source": "2ankrd1aEN-Hspa1a::fLuc-transduced mice showed robust fLuc activity in the thoracic cage overlying the heart, which increased up to 28 dpi and plateaued afterwards (Figure 3B and C; n=4 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "eedfbd37-2165-4634-a90e-47b2e4d12b24",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C34",
+      "claim": "Cardiac bioluminescence in Hspa1a::fLuc-transduced mice remained relatively minimal over time after I/R injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, cardiac bioluminescence in Hspa1a::fLuc-transduced mice remained relatively minimal over time (Figure 3B and C, Figure 3\u2014figure supplement 1B; n=4 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B, C, and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3f461178-83c8-4584-99c2-f3902e6a6e12",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C35",
+      "claim": "2ankrd1aEN-directed cardiac expression was elevated approximately threefold in mice with I/R injury compared to sham at 7 dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "IVIS imaging revealed a baseline of 2ankrd1aEN-directed cardiac expression in sham-operated mice (Figure 3\u2014figure supplement 1C), which was elevated approximately threefold in mice with I/R injury compared to sham at 7 dpi (Figure 3D, n=4 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3115fe77-5f83-4235-9c3b-cf4c7efb24d3",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C36",
+      "claim": "2ankrd1aEN-directed bioluminescence in the heart increased during the first 28 days for sham-operated mice, likely indicative of increased AAV transduction and transgene expression over time.",
+      "claim_type": "EXPLICIT",
+      "source": "2ankrd1aEN-directed bioluminescence in the heart increased during the first 28 days for sham-operated mice, likely indicative of increased AAV transduction and transgene expression over time (noting that AAV deliveries in Figure 1 experiments were 60 days prior to luminescence measurements; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E and includes speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "12a39403-ae41-424c-a759-cda5761ac92a",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C37",
+      "claim": "I/R injured mice maintained higher cardiac activity throughout the 63-day time course, with the greatest differences at 7 and 21 dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, I/R injured mice maintained higher cardiac activity throughout the 63-day time course, with the greatest differences at 7 and 21 dpi (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "5d28c03f-c4e6-471f-b66d-11635aa2ae7b",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C38",
+      "claim": "2ankrd1aEN directs long-lasting gene expression in the injured mouse heart.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that 2ankrd1aEN-directed gene expression can be estimated longitudinally over long time periods, and in agreement with our previous histological analysis, 2ankrd1aEN directs long-lasting gene expression in the injured mouse heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data and agreement with prior histological analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "2e17a131-b616-4dbc-8320-c74defc8bd18",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C39",
+      "claim": "Directed evolution of AAV libraries has been previously used to discover new capsids with improved functional properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Directed evolution of AAV libraries has been previously used to discover new capsids with improved functional properties, such as liver de-targeting (AAV.cc84), enhanced potency (AAV.cc47), and tropism for specific cell types (AAV.ark313, AAV.k20) (Gonzalez et al., 2022; Gonzalez et al., 2023; Nyberg et al., 2023; Nyberg et al., 2025; Rosales et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "469b1436-58b4-4003-8b59-6b6296f778de",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C40",
+      "claim": "AAV9 is observed to preferentially transduce border zones of infarcted myocardium when delivered acutely (10 min to 3 dpi) after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report indicated that AAV9 is observed to preferentially transduce border zones of infarcted myocardium when delivered acutely (10 min to 3 dpi) after injury, which was speculated to be driven by a combination of increased capillary permeability, sialidase activity, and DNA damage after cardiac ischemia (Konkalmatt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "c707176c-963c-41b6-91a5-bda316d5f879",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C41",
+      "claim": "Preferential transduction of border zones by AAV9 was speculated to be driven by a combination of increased capillary permeability, sialidase activity, and DNA damage after cardiac ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report indicated that AAV9 is observed to preferentially transduce border zones of infarcted myocardium when delivered acutely (10 min to 3 dpi) after injury, which was speculated to be driven by a combination of increased capillary permeability, sialidase activity, and DNA damage after cardiac ischemia (Konkalmatt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior published work that includes speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "58b4f84b-cf80-41d5-a17c-08b60e189714",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C42",
+      "claim": "Three unique capsids were enriched in the infarcted tissue over remote for both I/R mice, while being comparably expressed in both biopsies of the sham mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "We found three unique capsids that were enriched in the infarcted tissue over remote for both I/R mice, while being comparably expressed in both biopsies of the sham mouse (Figure 4B, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "27e52d39-afa3-4f6d-9c51-f6f1c668fcdf",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C43",
+      "claim": "AAV.IR41 transduced I/R-injured hearts more effectively than AAV9 and the other two variant capsids (IR42, IR43) when packaged with a CBA::EGFP transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the three variant capsids, we found the capsid with the highest number of reads in infarcted tissue (AAV.IR41) transduced I/R-injured hearts more effectively than AAV9 and the other two variant capsids (IR42, IR43) when packaged with a CBA::EGFP transgene (Figure 4C, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "afb154ca-0c91-4e02-a4de-16a3432c41aa",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C44",
+      "claim": "When systemically delivered at 9 dpi, IR41 transduced larger areas of myocardium surrounding areas of infarct compared to AAV9.",
+      "claim_type": "EXPLICIT",
+      "source": "When systemically delivered at 9 dpi, IR41 transduced larger areas of myocardium surrounding areas of infarct compared to AAV9 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "bd06c465-d647-4579-b0d4-1db10e2b32da",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C45",
+      "claim": "AAV9 and IR41 primarily transduced cardiomyocytes directly at the border zone with similar effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Using F-actin staining to mark the border zone, AAV9 and IR41 primarily transduced CMs directly at the border zone with similar effectiveness (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "4692f765-8434-4f9a-8e58-0e163a2f6444",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C46",
+      "claim": "EGFP did not notably co-localize with vimentin staining of non-myocytes for either AAV9 or IR41, thus both capsids still primarily transduce cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP did not notably co-localize with vimentin staining of non-myocytes for either AAV9 or IR41, thus both capsids still primarily transduce CM (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "096da95e-ca15-4715-bf38-f05259cc0236",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C47",
+      "claim": "Sequence-based screening identified a capsid with enhanced transduction and expression in injured myocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sequence-based screening identified a capsid with enhanced transduction and expression in injured myocardium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "612a0c65-0363-47ee-8bc3-34bd425d075e",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C48",
+      "claim": "IVIS imaging revealed higher expression levels in animals transduced with IR41 compared to AAV9, in both sham and MI groups.",
+      "claim_type": "EXPLICIT",
+      "source": "IVIS imaging revealed higher expression levels in animals transduced with IR41 compared to AAV9, in both sham and MI groups (Figure 5A, Figure 5\u2014figure supplement 1A; n=3 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "c23808df-3fc2-4532-ba90-1bcab6d8b732",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C49",
+      "claim": "Higher hepatic expression was noted in both sham and infarcted mice with IR41 compared to AAV9.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted higher hepatic expression in both sham and infarcted mice with IR41 compared to AAV9 (Figure 5A), although no new tissue transduction was introduced as detectable by biodistribution and reporter gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "1c716d0b-07bc-4ded-84dc-3364f54f3da9",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C50",
+      "claim": "The average and maximum radiances recorded in IR41-transduced mouse hearts were significantly higher than AAV9 by 7 dpi and remained elevated at 21 dpi.",
+      "claim_type": "EXPLICIT",
+      "source": "The average and maximum radiances recorded in IR41-transduced mouse hearts were significantly higher than AAV9 by 7 dpi and remained elevated at 21 dpi (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "c733fc3b-5a6f-4187-9d6f-b5bbfbe730e2",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C51",
+      "claim": "IR41 had roughly twice as high viral uptake than AAV9 in mice given cardiac injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "Vector genome quantification by qPCR showed that IR41 had roughly twice as high viral uptake than AAV9 in mice given cardiac injuries (Figure 5D, n=3 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "fdfbd50d-eeb5-48dd-9b63-1fb8594c1884",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C52",
+      "claim": "IR41-transduced mice showed a trend toward higher cardiac viral genome loads than AAV9-transduced mice upon sham injury, indicating that IR41 might increase tropism in uninjured hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IR41-transduced mice showed a trend toward higher cardiac viral genome loads than AAV9-transduced mice upon sham injury, indicating that IR41 might increase tropism in uninjured hearts, but its effects will be greatest when delivered to injured hearts (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D and includes speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "786a406b-6669-404f-8d5f-378e21241314",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C53",
+      "claim": "Increased tropism of AAV.IR41 for injured myocardium, defined by enhanced uptake and higher transgene expression versus control AAV9, can be complemented by injury-responsive TREEs for targeting cargo delivery to sites of cardiac damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our experiments indicate that increased tropism of AAV.IR41 for injured myocardium, defined by enhanced uptake and higher transgene expression versus control AAV9, can be complemented by injury-responsive TREEs for targeting cargo delivery to sites of cardiac damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "eed4e2e9-e1be-4c71-b0c9-baded1ce8f50",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C54",
+      "claim": "IVIS imaging for assessing amplitude and specificity of TREE-directed transgene expression will aid future development of enhancer-based gene therapies relevant to cardiac regeneration and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study indicates that IVIS imaging for assessing amplitude and specificity of TREE-directed transgene expression will aid future development of enhancer-based gene therapies relevant to cardiac regeneration and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data and represents a conclusion about future applications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "8ec064dc-9bc2-4f8e-9e74-36ac10b86344",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C55",
+      "claim": "With an IVIS imaging modality, effects of capsid alterations and enhancer sequence alterations can be efficiently and noninvasively assessed to refine their ability to target gene expression in the injured heart.",
+      "claim_type": "EXPLICIT",
+      "source": "With an IVIS imaging modality, effects of capsid alterations and enhancer sequence alterations can be efficiently and noninvasively assessed to refine their ability to target gene expression in the injured heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data and represents a conclusion about the utility of the technique.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "b755fd50-7267-4955-8923-ba0ce7ec170b",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C56",
+      "claim": "Expression by internal organs must be approximated with potentially subjective ROIs that cannot be verified until harvesting the organs at sacrifice.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression by internal organs must also be approximated with potentially subjective ROIs that cannot be verified until harvesting the organs at sacrifice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the IVIS imaging technique acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "2ac05a21-1441-424e-b5eb-1b9a7e456a04",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C57",
+      "claim": "Unexpected off-target TREE expression was observed in the liver, neck, and abdomen, which was modulated by capsid engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the expression is approximated, we were able to observe unexpected off-target TREE expression in the liver, neck, and abdomen, which was modulated by capsid engineering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the IVIS imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "49628e27-1647-4337-8952-8fe90e31e1bd",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C58",
+      "claim": "Future work exploring cell surface markers or receptors is needed to better understand the apparent enhanced tropism of IR41 over AAV9.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, future work exploring cell surface markers or receptors is needed to better understand the apparent enhanced tropism of IR41 over AAV9, and to engineer liver detargeting attributes into this form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions based on the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "cdd05603-2693-427c-b9b3-152fbaaabac1",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C59",
+      "claim": "It is possible that combining the modifications in AAV.cc84 and AAV.IR41 would produce additive effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, it is possible that combining the modifications in AAV.cc84 and AAV.IR41 would produce additive effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "bf5c7df1-a800-4917-aa35-e09da07c5e25",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C60",
+      "claim": "Larger animal models are not suited for IVIS imaging due to limitations of tissue penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, larger animal models are not suited for IVIS imaging due to limitations of tissue penetrance, and findings in mice may not fully recapitulate those in larger animal models and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the IVIS imaging technique based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "ba780a68-74db-494a-8387-f5438b5aed50",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C61",
+      "claim": "Findings in mice may not fully recapitulate those in larger animal models and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, larger animal models are not suited for IVIS imaging due to limitations of tissue penetrance, and findings in mice may not fully recapitulate those in larger animal models and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general limitation of mouse models based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "f1cdb331-61d7-4be3-9ed5-123b7e26b91e",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C62",
+      "claim": "The AAV capsid library screening was limited to mice, and capsid hits remain to be tested in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our AAV capsid library screening was limited to mice, and capsid hits remain to be tested in other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the current study acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3332fcf7-dc05-48eb-b9cf-86c8abccff93",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C63",
+      "claim": "This work lays a foundation for refining TREE-targeted factor delivery to injured myocardium and expanding their use in applications for therapeutic tissue repair.",
+      "claim_type": "EXPLICIT",
+      "source": "While further optimization is required, this work lays a foundation for refining TREE-targeted factor delivery to injured myocardium and expanding their use in applications for therapeutic tissue repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the significance of the work based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "6d39f63f-c44c-4711-8234-37f398b682b0",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C64",
+      "claim": "The procedure for I/R myocardial injury via temporary LCA ligation was adapted from previously described protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The procedure for I/R myocardial injury via temporary LCA ligation was adapted from previously described protocols (Kaiser et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "7bcf34f9-85a8-46b6-b976-9a695e27b89d",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C65",
+      "claim": "Occlusion of the LAD was confirmed by the anterior wall of the left ventricle turning a pale color.",
+      "claim_type": "EXPLICIT",
+      "source": "Occlusion of the LAD was confirmed by the anterior wall of the left ventricle turning a pale color.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail based on established knowledge of cardiac physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "51b56dff-d784-4ad6-85da-959b351828b7",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C66",
+      "claim": "LAD occlusion was maintained for 40 min during I/R surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "LAD occlusion was maintained for 40 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "b31d9e16-be59-4177-862e-5779a754e0d6",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C67",
+      "claim": "Reperfusion of the LAD was confirmed by the return of a pink-red color to the anterior wall.",
+      "claim_type": "EXPLICIT",
+      "source": "After the ischemia period, the suture was untied, and reperfusion of the LAD was confirmed by the return of a pink-red color to the anterior wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail based on established knowledge of cardiac physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "09f48688-6299-4f8f-926a-1d00a396564f",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C68",
+      "claim": "AAV9-based capsid libraries were constructed using saturation mutagenesis of residues within the VR-IV site.",
+      "claim_type": "EXPLICIT",
+      "source": "AAV9-based capsid libraries were constructed using saturation mutagenesis of residues within the VR-IV site as previously described (Gonzalez et al., 2023; Rosales et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3012a604-b3b7-4d73-ac5b-c7197864341f",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C69",
+      "claim": "The VR-IV region of Cap was replaced with a partial GFP sequence to prevent incorporation of wild-type VR-IV sequences in the parental library.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to saturation mutagenesis with degenerate primers, the VR-IV region of Cap was replaced with a partial GFP sequence to prevent incorporation of wild-type VR-IV sequences in the parental library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "36055442-bef1-4229-a529-d7b2bf24aba2",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C70",
+      "claim": "D-luciferin was injected intraperitoneally at 150 mg/kg b.w. dose for IVIS imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "While mice were anesthetized under 2% isoflurane, thawed D-luciferin was injected intraperitoneally at 150 mg/kg b.w. dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "db5efa08-9663-413e-8ab4-196be62ecbad",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C71",
+      "claim": "Body hair above regions of interest was removed using Nair to improve signal-to-noise ratio in IVIS imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions of interest for this study, such as the heart and liver, had body hair above them removed using Nair to improve signal-to-noise ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "f458a492-26cc-4381-9cca-be99abd292f6",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C72",
+      "claim": "Luciferase signals were allowed a 10\u201315 min plateau time before imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Luciferase signals were allowed a 10\u201315 min plateau time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "b7d6904b-379c-49ec-b798-d64b0ab13456",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C73",
+      "claim": "The REN TREE was selected for liver de-targeting experiments because liver luminescence was more prominent with respect to the cardiac signal.",
+      "claim_type": "EXPLICIT",
+      "source": "REN was selected as the liver luminescence was more prominent with respect to the cardiac signal in the above experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "6d84da38-b227-4c85-8f53-d33257449437",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C74",
+      "claim": "Capsid libraries were delivered to mice at 9 dpi to limit the effects of acute changes after cardiac ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted to limit the effects of these acute changes by delivering capsid libraries to mice that had undergone sham or I/R surgery at 9 dpi, when the acute inflammation phase is complete and the repair phase with myofibroblast activation and proliferation has begun (Figure 4A, n=2 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision based on knowledge of cardiac injury phases.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "051d148c-bab8-48ed-b138-3e7a839728ee",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C75",
+      "claim": "At 9 dpi, the acute inflammation phase is complete and the repair phase with myofibroblast activation and proliferation has begun.",
+      "claim_type": "IMPLICIT",
+      "source": "We attempted to limit the effects of these acute changes by delivering capsid libraries to mice that had undergone sham or I/R surgery at 9 dpi, when the acute inflammation phase is complete and the repair phase with myofibroblast activation and proliferation has begun (Figure 4A, n=2 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of cardiac injury phases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "904da7da-19d4-493d-8ff2-62d904b9bc47",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C76",
+      "claim": "IR41 has the VR4 peptide sequence GPGVGAR.",
+      "claim_type": "EXPLICIT",
+      "source": "IR41 VR4 peptide sequence: GPGVGAR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement from the Key Resources Table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "55e6a0b2-2ba5-4070-948b-585257ada74b",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C77",
+      "claim": "IR42 has the VR4 peptide sequence ASRNVVT.",
+      "claim_type": "EXPLICIT",
+      "source": "IR42 VR4 peptide sequence: ASRNVVT",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement from the Key Resources Table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "1da66464-119a-47ca-a000-1bd18839531b",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C78",
+      "claim": "IR43 has the VR4 peptide sequence SDSQYVQ.",
+      "claim_type": "EXPLICIT",
+      "source": "IR43 VR4 peptide sequence: SDSQYVQ",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement from the Key Resources Table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "adc4d8c9-ce15-4e71-bce6-4966a986de18",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C79",
+      "claim": "All mouse protocols were approved by the Institutional Animal Care and Use Committee (IACUC) at Duke University.",
+      "claim_type": "EXPLICIT",
+      "source": "All mouse protocols were approved by the Institutional Animal Care and Use Committee (IACUC) at Duke University (Protocols #A003-22-01, #A025-24-01), which is accredited by the Association for Assessment and Accreditation of Laboratory Animal Care-International (AAALAC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about regulatory compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "00eb3dc1-905b-481c-b84b-d36d53a5e948",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C80",
+      "claim": "Wild-type male and female C57BL/6J and BALB/c mice were used for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type male and female C57BL/6J (The Jackson Laboratory, Strain #000664) and BALB/c (Charles River, Strain #028) mice were used for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the animal models used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "53c5a490-827d-43eb-a75c-d30e13bcc8aa",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C81",
+      "claim": "I/R procedures were performed in the Duke Cardiovascular Physiology Core.",
+      "claim_type": "EXPLICIT",
+      "source": "I/R procedures were performed in the Duke Cardiovascular Physiology Core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about where procedures were performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "17553030-dcbb-4e8d-aa73-7679eb027379",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C82",
+      "claim": "LAD ligation procedures were performed in collaboration with Dr. Bursac's lab at Duke University.",
+      "claim_type": "EXPLICIT",
+      "source": "LAD ligation procedures were performed in collaboration with Dr. Bursac's lab at Duke University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about collaborations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "1b7774ed-bce6-4c90-a865-8683d7933843",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C83",
+      "claim": "Ejection fraction was calculated from the formula: EF(%)=100*[(LVED\u2013LVES)/LVED].",
+      "claim_type": "EXPLICIT",
+      "source": "Heart function was measured by calculating ejection fraction (EF) from the following formula: EF(%)=100*[(LVED\u2013LVES)/LVED], where LVED = [7.0/(2.4+LVIDd)]*(LVIDd)3 and LVES = [7.0/(2.4+LVIDs)]*(LVIDs)3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about how ejection fraction was calculated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "cb03207e-11ec-40cb-aba7-267e439f8845",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "claim_id": "C84",
+      "claim": "HEK293 cells were originally obtained from the UNC Vector Core and authenticated by whole-genome sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293 cells were originally obtained from the UNC Vector Core and authenticated by whole-genome sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about cell line authentication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc4f9546-d65c-4d80-817d-b2a7e3034621",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IVIS imaging with CBA and Hspa1a promoters shows stable baseline expression patterns. The CBA promoter directs robust whole-body fLuc expression while Hspa1a::fLuc shows minimal luminescence primarily from liver, with both remaining stable from 30-68 days post-AAV delivery (C20-C22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 establish baseline expression patterns for control promoters using IVIS imaging. The data in Figure 1\u2014figure supplement 1 demonstrates expected differences between constitutive (CBA) and minimal (Hspa1a) promoters with appropriate temporal stability, providing validation for the imaging approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "ff1661a0-f681-435e-96a6-a8dac90b0590",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TREE sequences (REN and 2ankrd1aEN) direct injury-responsive transgene expression in mouse hearts after I/R injury. Both TREEs showed marked increases in cardiac bioluminescence that peaked within 3 days post-injury and returned to baseline by 35 dpi, with no change after sham surgery (C23-C25). However, off-target liver expression was observed for all AAV vectors including TREE-containing constructs (C26).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 demonstrate injury-responsive TREE activity using longitudinal IVIS imaging. The temporal dynamics (peak at 3 dpi, return to baseline by 35 dpi) and injury-specificity (no change with sham) support the conclusion. However, sample size is very small (n=2 mice for I/R, n=3 for sham in C24-C25), which limits statistical power. The off-target liver expression (C26) is an important finding that motivates subsequent experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "912ca693-6ea4-497c-a96e-b724defa83b4",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AAV.cc84 eliminates off-target liver expression while maintaining cardiac transduction. AAV.cc84 showed no detectable liver signal over 35 days (C27) with substantially lower liver expression than AAV9 (C28), while cardiac luminescence remained similar between capsids (C29). This was confirmed by qPCR showing much higher AAV9 liver viral loads (C30) but similar cardiac loads (C31) between capsids (C32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 provide convergent evidence from IVIS imaging, ex vivo organ imaging, and qPCR that AAV.cc84 successfully detargets liver while maintaining cardiac tropism. The data includes appropriate sample sizes (n=6 for imaging, n=3 for qPCR) and multiple complementary measurements. Statistical comparisons are reported with specific p-values in figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "4790c5b3-7263-482c-afa2-868316dbdfd4",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Post-injury AAV.cc84 delivery of 2ankrd1aEN directs long-lasting, injury-responsive cardiac expression. When delivered at 4 dpi, 2ankrd1aEN-Hspa1a::fLuc showed robust cardiac activity that increased through 28 dpi and plateaued (C33), while Hspa1a alone remained minimal (C34). Expression was ~3-fold higher in I/R vs sham at 7 dpi (C35) and remained elevated throughout 63 days (C37), though sham mice also showed increasing baseline expression over time (C36), indicating long-lasting TREE-directed expression in injured hearts (C38).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 demonstrate therapeutically relevant post-injury TREE delivery with appropriate controls and longitudinal tracking (n=4 mice per group). The data show both injury-responsiveness and durability of expression. The observation of increasing baseline in sham mice (C36) is appropriately noted and likely reflects AAV transduction kinetics rather than injury response. The conclusion about long-lasting expression (C38) is supported by the 63-day time course.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "0acb35bb-d550-456e-9ac6-b5ea8764079d",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AAV capsid library screening identified AAV.IR41 with enhanced transduction of injured myocardium. Three capsids were enriched in infarcted vs remote tissue in I/R mice but not sham (C42). AAV.IR41 showed the highest reads and transduced I/R hearts more effectively than AAV9 and other variants (C43), with larger areas of transduction around infarcts (C44). Both AAV9 and IR41 primarily transduced cardiomyocytes at the border zone (C45-C46), identifying IR41 as having enhanced injured myocardium transduction (C47).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C47 describe capsid screening and validation, but the screening used only n=2 I/R mice and n=1 sham mouse (C42), which is insufficient for robust identification of enriched variants. The validation experiments (C43-C46) lack sample size information and statistical analysis. While the approach is sound and the fluorescence imaging is compelling, the limited replication in the discovery phase and unclear validation statistics make the strength of this result uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AAV.IR41 shows enhanced cardiac transduction and TREE-driven expression compared to AAV9. IR41 delivered with 2ankrd1aEN-Hspa1a::fLuc showed higher expression in both sham and MI groups (C48), with significantly elevated cardiac radiance by 7 dpi that remained elevated at 21 dpi (C50). IR41 had ~2-fold higher cardiac viral uptake in MI mice (C51) and showed trends toward higher uptake in sham hearts (C52). The enhanced tropism of IR41 can complement injury-responsive TREEs for targeted cargo delivery (C53).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 demonstrate enhanced performance of IR41 vs AAV9 with appropriate sample sizes (n=3-4 mice) and statistical testing showing significant differences at 7 and 21 dpi (C50). The qPCR data (C51) provides mechanistic support for the imaging observations. However, IR41 also showed higher hepatic expression (C49), which is a limitation. The conclusion (C53) appropriately integrates the findings about combining enhanced capsid tropism with injury-responsive enhancers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "bacc819b-0bfc-4d08-8fe2-54caddaed850",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IVIS imaging enables efficient, noninvasive assessment of TREE-directed transgene expression for developing enhancer-based cardiac gene therapies. The technique allows longitudinal tracking of expression amplitude and specificity (C54) and can assess effects of capsid and enhancer alterations to refine cardiac targeting (C55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 represent appropriate conclusions about the utility of the IVIS imaging approach based on the experimental demonstrations throughout the manuscript. The work successfully shows longitudinal tracking of multiple TREE/capsid combinations with quantitative measurements, supporting these methodological conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3efea81b-a0e8-4529-9fab-5459a55a3e2f",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IVIS imaging has limitations but revealed unexpected off-target TREE expression. Internal organ expression must be approximated with subjective ROIs that cannot be verified until sacrifice (C56), but this approach detected unexpected off-target TREE expression in liver, neck, and abdomen that was modulated by capsid engineering (C57).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 appropriately acknowledge limitations of the IVIS technique while noting its utility in detecting off-target expression. The limitation about ROI subjectivity (C56) is a valid concern for internal organs, but the detection of off-target expression (C57) demonstrates the technique's practical value despite this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "29b5e708-dc53-42cc-9808-56a41facb42a",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study has several limitations requiring future work. Understanding IR41's enhanced tropism requires exploring cell surface markers/receptors and engineering liver detargeting (C58), potentially by combining AAV.cc84 and IR41 modifications (C59). IVIS imaging is not suited for larger animals due to tissue penetrance limitations (C60), mouse findings may not translate to larger models or humans (C61), and capsid screening was limited to mice (C62).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 appropriately identify limitations and future directions. These are reasonable acknowledgments of the study's scope and the need for additional mechanistic work (C58-C59) and validation in other species (C60-C62). These represent standard limitations for mouse-based AAV studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "0f5648bd-a859-443a-b9d5-bd51c646be64",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "This work establishes a foundation for refining TREE-targeted factor delivery to injured myocardium and expanding therapeutic tissue repair applications, though further optimization is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is an appropriate summary conclusion based on the demonstrated ability to longitudinally track TREE expression, reduce off-target effects with AAV.cc84, and identify enhanced capsids like IR41. The acknowledgment that further optimization is required is appropriate given the identified limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "766aef4e-6bfe-406e-9c67-3e19ebce1427",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TREEs are injury-responsive regulatory elements that can direct transgene expression across species. TREEs direct expression in injured/regenerating tissues (C1) and zebrafish TREEs work in mammalian hearts after AAV delivery (C2). Originally described in zebrafish hearts (C11), TREEs have been identified across multiple tissues and species (C12-C13) and zebrafish TREEs are recognized by mammalian transcriptional machinery (C14). AAV-TREE vectors can spatiotemporally target injured hearts or spinal cord (C15), with examples like TREE-YAP stimulating cardiac recovery (C16), establishing TREEs as targeting vehicles for regenerative augmentation (C17).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C11-C17 establish the background on TREEs based on prior published work (multiple citations provided). These claims appropriately summarize established knowledge from the field and provide context for the current study. The claims are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "ea8c69be-c629-4f94-9aaa-95cba809bc80",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple genetic and environmental factors influence cardiomyocyte proliferation and regeneration after cardiac injury. Many genes affecting CM proliferation have been identified in zebrafish and mouse (C6), including mitogenic factors like Neuregulin1/ErbB signaling (C7), transcription factor Klf1 (C8), and Yap/Taz factors normally restrained by Hippo (C9). The signaling environment is complex with multiple cell types and factors influencing CM regeneration (C10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 provide appropriate background on cardiac regeneration biology based on extensive prior literature (multiple citations for each claim). These establish the scientific context and rationale for developing targeted delivery approaches like TREE-AAV vectors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "a3dccfe5-db36-40a7-8317-47fec0f0da63",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Engineered AAV capsids can modulate tissue tropism and cell-type specificity. New capsid variants have been developed including liver-detargeting AAV.cc84 (C18-C19), and directed evolution of AAV libraries has been used to discover capsids with improved properties like liver detargeting, enhanced potency, and cell-type tropism (C39).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C39 establish background on AAV capsid engineering based on prior published work (citations provided). These provide context for the use of AAV.cc84 and the capsid library screening approach in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "4e36c4bf-a01d-4b8b-af5a-01715320e7a5",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "AAV9 preferentially transduces border zones of infarcted myocardium when delivered acutely after injury, potentially due to increased capillary permeability, sialidase activity, and DNA damage after cardiac ischemia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 cite prior work (Konkalmatt et al., 2012) establishing AAV9's preferential border zone transduction. This provides rationale for the timing choice (9 dpi) in the capsid library screening to avoid acute injury effects. The mechanistic speculation (C41) is appropriately attributed to the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "82b4ad4d-d922-414b-8be8-b777aa825365",
+      "content_id": "4289f121-38f4-4c5c-aa17-2a72c70a8161",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Detailed methodological procedures for I/R injury, AAV production, IVIS imaging, and other experimental techniques are described, including surgical procedures (C64-C67), capsid library construction (C68-C69), imaging protocols (C70-C72), experimental design decisions (C73-C75), capsid sequences (C76-C78), and other technical details (C79-C84).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C84 describe methodological details that are appropriately documented. These include established procedures (I/R surgery adapted from Kaiser et al. 2005), standard techniques (AAV production, IVIS imaging), and specific experimental parameters. The methods appear sufficiently detailed for reproducibility, with appropriate citations to prior protocols and clear documentation of modifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "afafe06b-8d2e-4342-85a4-b9cec59e5b62",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Longitudinal IVIS imaging revealed that TREE-directed luciferase expression in injured hearts peaked within 3 days post-injury and returned to baseline by 35 days, with no change after sham surgery, demonstrating injury-responsive temporal dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this finding. Reviewer 1 states 'transgene expression is drastically increased 3 days post-injury, driven by 2ankrd1a.' Reviewer 2 notes 'luciferase expression increased in the first week after injury...waning to baseline levels by 7 weeks.' The editor describes the evidence as 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "AAV.cc84 liver-detargeted capsid eliminated off-target liver expression while maintaining cardiac transduction, as demonstrated by IVIS imaging and qPCR showing no detectable liver signal with AAV.cc84 compared to substantial liver expression with AAV9.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently affirm this finding. Reviewer 1 states 'They reported a liver-detargeted capsid, AAV cc.84, with decreased viral entry into the liver while maintaining TREE transgene specificity.' Reviewer 2 notes 'AAV9 vectors transduced the liver, which was significantly reduced by using an AAV.cc84 liver de-targeting capsid.' The editor describes AAV.cc84 as one of the 'novel approaches' with 'convincing' evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In vivo AAV library screening identified AAV.IR41 as a capsid variant with enhanced transduction in injured myocardium, showing larger areas of transduction surrounding infarct compared to AAV9 while maintaining cardiomyocyte tropism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly support this finding. Reviewer 1 states 'They further identified the IR41 serotype with enhanced transgene expression in injured myocardium from AAV library screening.' Reviewer 2 notes 'the authors performed in vivo screening of AAV9 capsids and found AAV-IR41 to preferentially transduce injured myocardium when compared to AAV9.' The editor describes AAV-IR41 as 'in vivo library screen-selected' with 'convincing' evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "4c36c502-1b50-452b-9be5-f571529d6118",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "AAV.IR41 demonstrated enhanced transgene expression and approximately twice the viral uptake compared to AAV9 in injured hearts, with significantly higher average and maximum radiance at 7 and 21 days post-injury.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this finding. Reviewer 2 states 'the authors combined TREEs with AAV-IR41 to show improved luciferase expression compared to AAV9-TREE at 7, 14 and 21 days after injury.' Reviewer 3 notes 'A new capsid variant, AAV.IR41, was found to show increased transduction post I/R and MI.' The editor describes the evidence as 'convincing' and notes the vectors are 'of fundamental value to the field.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Post-injury AAV delivery with 2ankrd1aEN TREE showed robust cardiac expression that increased up to 28 days post-injury and remained elevated throughout a 63-day time course, with approximately threefold higher expression in injured versus sham hearts at 7 days.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers support this finding. Reviewer 1 states 'The authors characterize spatiotemporal dynamics of TREE-directed AAV expression in the injured heart using a non-invasive longitudinal monitoring system.' Reviewer 3 notes 'The authors injected AAV-cargo several days after ischemia/reperfusion (I/R) injury as a clinically relevant approach.' No concerns were raised about these temporal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "20e9c0e5-4f60-4174-a59d-b6b63271fa41",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Off-target TREE expression was observed in liver, neck, and abdomen regions, which could be modulated by capsid engineering approaches.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept this finding as it motivates the liver-detargeting experiments. Reviewer 2 notes 'AAV9 vectors transduced the liver' as context for the AAV.cc84 solution. The observation of off-target expression is not challenged and is presented as a problem that the study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "b70c19c1-c041-4721-8695-19bfa911207b",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "IVIS imaging provides a useful non-invasive modality for longitudinally assessing TREE-directed transgene expression to aid future development of enhancer-based cardiac gene therapies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the utility of the approach. Reviewer 1 states 'The authors characterize spatiotemporal dynamics of TREE-directed AAV expression in the injured heart using a non-invasive longitudinal monitoring system.' Reviewer 3 notes 'in vivo luciferase bioluminescent imaging that allows for longitudinal tracking.' The methodology is accepted without critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "164f1f9d-8be6-49d4-93d7-c13e20f9667e",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Combining modifications from AAV.cc84 and AAV.IR41 might produce additive effects for improved cardiac gene therapy vectors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly endorses this direction, stating 'Future research exploring how to combine the features of AAV.cc84 and AAV-IR41 could yield an even more promising vector for therapeutic use.' This speculative claim is treated as a logical next step by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "e0bd106e-bf8b-4e7e-95ae-ecbad4c148bc",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The study has limitations including that IVIS imaging is not suited for larger animals due to tissue penetrance limitations, findings in mice may not translate to larger animals or humans, and capsid screening was limited to mice.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these limitations. Reviewer 2 states 'While the authors have shown the success of using AAV9-TREEs in porcine hearts, it is unknown whether the expression dynamics would be similar in pigs or humans, as mentioned in the limitations.' These limitations are accepted as inherent to the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "8527d151-e20f-4199-a861-0b39bf6bb339",
+      "content_id": "df4c6f2a-e1c9-4b62-8d95-d50d2cc74773",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "TREEs are injury-responsive regulatory elements originally identified in zebrafish that can be recognized by mammalian transcriptional machinery and used with AAV vectors to spatiotemporally target transgene delivery to injured hearts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this foundational context without challenge. Reviewer 3 states 'The tissue regeneration enhancer elements (TREEs) identified in zebrafish have been shown to drive injury-activated temporal-spatial gene expression in mice and large animals.' This background is treated as established knowledge supporting the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "092c4b96-9081-414b-b333-e467cdc80c39",
+      "result_id": "cc4f9546-d65c-4d80-817d-b2a7e3034621"
+    },
+    {
+      "claim_id": "9a5fd3bd-333b-4857-9422-15a12a63506b",
+      "result_id": "cc4f9546-d65c-4d80-817d-b2a7e3034621"
+    },
+    {
+      "claim_id": "f412dbf2-06e6-4cb2-af07-02a44daa709d",
+      "result_id": "cc4f9546-d65c-4d80-817d-b2a7e3034621"
+    },
+    {
+      "claim_id": "cb6567e4-d4d9-4930-b94e-da1617e793ca",
+      "result_id": "ff1661a0-f681-435e-96a6-a8dac90b0590"
+    },
+    {
+      "claim_id": "ff326b75-b741-4353-af4d-760886f1a98e",
+      "result_id": "ff1661a0-f681-435e-96a6-a8dac90b0590"
+    },
+    {
+      "claim_id": "1706f9db-029f-46d3-8d6e-6c411998bf8b",
+      "result_id": "ff1661a0-f681-435e-96a6-a8dac90b0590"
+    },
+    {
+      "claim_id": "b2c90bb8-7dd8-427b-90e4-d8fe31755a80",
+      "result_id": "ff1661a0-f681-435e-96a6-a8dac90b0590"
+    },
+    {
+      "claim_id": "fa65a7b1-7535-4760-ab1e-4acde0a4f0f5",
+      "result_id": "912ca693-6ea4-497c-a96e-b724defa83b4"
+    },
+    {
+      "claim_id": "2f337590-620e-4256-a401-4fa003fff043",
+      "result_id": "912ca693-6ea4-497c-a96e-b724defa83b4"
+    },
+    {
+      "claim_id": "e33ff1aa-8424-4c52-a58e-cf4aaa87d6cd",
+      "result_id": "912ca693-6ea4-497c-a96e-b724defa83b4"
+    },
+    {
+      "claim_id": "1449089b-aa51-4d01-9e73-39c955c23e0a",
+      "result_id": "912ca693-6ea4-497c-a96e-b724defa83b4"
+    },
+    {
+      "claim_id": "a95e33a0-043e-47d8-bbe1-12ff15020078",
+      "result_id": "912ca693-6ea4-497c-a96e-b724defa83b4"
+    },
+    {
+      "claim_id": "b68b84ac-8f02-4b77-83c9-77a566eb8088",
+      "result_id": "912ca693-6ea4-497c-a96e-b724defa83b4"
+    },
+    {
+      "claim_id": "3d0d0564-4ad5-45aa-b9c3-3703ef301529",
+      "result_id": "4790c5b3-7263-482c-afa2-868316dbdfd4"
+    },
+    {
+      "claim_id": "eedfbd37-2165-4634-a90e-47b2e4d12b24",
+      "result_id": "4790c5b3-7263-482c-afa2-868316dbdfd4"
+    },
+    {
+      "claim_id": "3f461178-83c8-4584-99c2-f3902e6a6e12",
+      "result_id": "4790c5b3-7263-482c-afa2-868316dbdfd4"
+    },
+    {
+      "claim_id": "3115fe77-5f83-4235-9c3b-cf4c7efb24d3",
+      "result_id": "4790c5b3-7263-482c-afa2-868316dbdfd4"
+    },
+    {
+      "claim_id": "12a39403-ae41-424c-a759-cda5761ac92a",
+      "result_id": "4790c5b3-7263-482c-afa2-868316dbdfd4"
+    },
+    {
+      "claim_id": "5d28c03f-c4e6-471f-b66d-11635aa2ae7b",
+      "result_id": "4790c5b3-7263-482c-afa2-868316dbdfd4"
+    },
+    {
+      "claim_id": "58b4f84b-cf80-41d5-a17c-08b60e189714",
+      "result_id": "0acb35bb-d550-456e-9ac6-b5ea8764079d"
+    },
+    {
+      "claim_id": "27e52d39-afa3-4f6d-9c51-f6f1c668fcdf",
+      "result_id": "0acb35bb-d550-456e-9ac6-b5ea8764079d"
+    },
+    {
+      "claim_id": "afb154ca-0c91-4e02-a4de-16a3432c41aa",
+      "result_id": "0acb35bb-d550-456e-9ac6-b5ea8764079d"
+    },
+    {
+      "claim_id": "bd06c465-d647-4579-b0d4-1db10e2b32da",
+      "result_id": "0acb35bb-d550-456e-9ac6-b5ea8764079d"
+    },
+    {
+      "claim_id": "4692f765-8434-4f9a-8e58-0e163a2f6444",
+      "result_id": "0acb35bb-d550-456e-9ac6-b5ea8764079d"
+    },
+    {
+      "claim_id": "096da95e-ca15-4715-bf38-f05259cc0236",
+      "result_id": "0acb35bb-d550-456e-9ac6-b5ea8764079d"
+    },
+    {
+      "claim_id": "612a0c65-0363-47ee-8bc3-34bd425d075e",
+      "result_id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a"
+    },
+    {
+      "claim_id": "c23808df-3fc2-4532-ba90-1bcab6d8b732",
+      "result_id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a"
+    },
+    {
+      "claim_id": "1c716d0b-07bc-4ded-84dc-3364f54f3da9",
+      "result_id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a"
+    },
+    {
+      "claim_id": "c733fc3b-5a6f-4187-9d6f-b5bbfbe730e2",
+      "result_id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a"
+    },
+    {
+      "claim_id": "fdfbd50d-eeb5-48dd-9b63-1fb8594c1884",
+      "result_id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a"
+    },
+    {
+      "claim_id": "786a406b-6669-404f-8d5f-378e21241314",
+      "result_id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a"
+    },
+    {
+      "claim_id": "eed4e2e9-e1be-4c71-b0c9-baded1ce8f50",
+      "result_id": "bacc819b-0bfc-4d08-8fe2-54caddaed850"
+    },
+    {
+      "claim_id": "8ec064dc-9bc2-4f8e-9e74-36ac10b86344",
+      "result_id": "bacc819b-0bfc-4d08-8fe2-54caddaed850"
+    },
+    {
+      "claim_id": "b755fd50-7267-4955-8923-ba0ce7ec170b",
+      "result_id": "3efea81b-a0e8-4529-9fab-5459a55a3e2f"
+    },
+    {
+      "claim_id": "2ac05a21-1441-424e-b5eb-1b9a7e456a04",
+      "result_id": "3efea81b-a0e8-4529-9fab-5459a55a3e2f"
+    },
+    {
+      "claim_id": "49628e27-1647-4337-8952-8fe90e31e1bd",
+      "result_id": "29b5e708-dc53-42cc-9808-56a41facb42a"
+    },
+    {
+      "claim_id": "cdd05603-2693-427c-b9b3-152fbaaabac1",
+      "result_id": "29b5e708-dc53-42cc-9808-56a41facb42a"
+    },
+    {
+      "claim_id": "bf5c7df1-a800-4917-aa35-e09da07c5e25",
+      "result_id": "29b5e708-dc53-42cc-9808-56a41facb42a"
+    },
+    {
+      "claim_id": "ba780a68-74db-494a-8387-f5438b5aed50",
+      "result_id": "29b5e708-dc53-42cc-9808-56a41facb42a"
+    },
+    {
+      "claim_id": "f1cdb331-61d7-4be3-9ed5-123b7e26b91e",
+      "result_id": "29b5e708-dc53-42cc-9808-56a41facb42a"
+    },
+    {
+      "claim_id": "3332fcf7-dc05-48eb-b9cf-86c8abccff93",
+      "result_id": "0f5648bd-a859-443a-b9d5-bd51c646be64"
+    },
+    {
+      "claim_id": "64230dae-b6ec-4524-b052-125e89b0e004",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "6b27ad67-8fda-4f35-86d9-565384a4c149",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "5c17b650-0381-42df-9c70-9e6d54f7f13e",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "8470792c-8881-4237-85d3-34a90b34fddb",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "603cc2c8-454a-4b74-8718-8a20e22bc9cd",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "6c75f0b2-d90a-4d93-b212-d813175dfae2",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "0475ae9c-aa3c-48fe-b6f2-7fadfa015d58",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "22edb8ab-adc9-4627-a073-f3fab6a789d8",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "588ac60a-64c5-4ae9-bb5d-51580fe1850d",
+      "result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427"
+    },
+    {
+      "claim_id": "674f4a66-1304-4b46-be00-ba8100c323b1",
+      "result_id": "ea8c69be-c629-4f94-9aaa-95cba809bc80"
+    },
+    {
+      "claim_id": "3e553167-9b41-487f-8f4a-74c0ec357f6e",
+      "result_id": "ea8c69be-c629-4f94-9aaa-95cba809bc80"
+    },
+    {
+      "claim_id": "9f129043-dc70-4a07-9a66-533e1fd65cc7",
+      "result_id": "ea8c69be-c629-4f94-9aaa-95cba809bc80"
+    },
+    {
+      "claim_id": "7c2b61f7-16e6-47e1-9597-6aa09752b673",
+      "result_id": "ea8c69be-c629-4f94-9aaa-95cba809bc80"
+    },
+    {
+      "claim_id": "2101209b-e5e2-4b8d-8242-0cd39e8f4ad9",
+      "result_id": "ea8c69be-c629-4f94-9aaa-95cba809bc80"
+    },
+    {
+      "claim_id": "69bfb2d4-6096-4aef-8626-1e02780ddb98",
+      "result_id": "a3dccfe5-db36-40a7-8317-47fec0f0da63"
+    },
+    {
+      "claim_id": "104a4bd4-5cdc-4a7f-b9a8-026150f0bd7f",
+      "result_id": "a3dccfe5-db36-40a7-8317-47fec0f0da63"
+    },
+    {
+      "claim_id": "2e17a131-b616-4dbc-8320-c74defc8bd18",
+      "result_id": "a3dccfe5-db36-40a7-8317-47fec0f0da63"
+    },
+    {
+      "claim_id": "469b1436-58b4-4003-8b59-6b6296f778de",
+      "result_id": "4e36c4bf-a01d-4b8b-af5a-01715320e7a5"
+    },
+    {
+      "claim_id": "c707176c-963c-41b6-91a5-bda316d5f879",
+      "result_id": "4e36c4bf-a01d-4b8b-af5a-01715320e7a5"
+    },
+    {
+      "claim_id": "6d39f63f-c44c-4711-8234-37f398b682b0",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "7bcf34f9-85a8-46b6-b976-9a695e27b89d",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "51b56dff-d784-4ad6-85da-959b351828b7",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "b31d9e16-be59-4177-862e-5779a754e0d6",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "09f48688-6299-4f8f-926a-1d00a396564f",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "3012a604-b3b7-4d73-ac5b-c7197864341f",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "36055442-bef1-4229-a529-d7b2bf24aba2",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "db5efa08-9663-413e-8ab4-196be62ecbad",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "f458a492-26cc-4381-9cca-be99abd292f6",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "b7d6904b-379c-49ec-b798-d64b0ab13456",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "6d84da38-b227-4c85-8f53-d33257449437",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "051d148c-bab8-48ed-b138-3e7a839728ee",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "904da7da-19d4-493d-8ff2-62d904b9bc47",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "55e6a0b2-2ba5-4070-948b-585257ada74b",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "1da66464-119a-47ca-a000-1bd18839531b",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "adc4d8c9-ce15-4e71-bce6-4966a986de18",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "00eb3dc1-905b-481c-b84b-d36d53a5e948",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "53c5a490-827d-43eb-a75c-d30e13bcc8aa",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "17553030-dcbb-4e8d-aa73-7679eb027379",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "1b7774ed-bce6-4c90-a865-8683d7933843",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "cb03207e-11ec-40cb-aba7-267e439f8845",
+      "result_id": "82b4ad4d-d922-414b-8be8-b777aa825365"
+    },
+    {
+      "claim_id": "50dd0e10-24c6-484b-8e83-43d356b6e5c1",
+      "result_id": "afafe06b-8d2e-4342-85a4-b9cec59e5b62"
+    },
+    {
+      "claim_id": "cb6567e4-d4d9-4930-b94e-da1617e793ca",
+      "result_id": "afafe06b-8d2e-4342-85a4-b9cec59e5b62"
+    },
+    {
+      "claim_id": "ff326b75-b741-4353-af4d-760886f1a98e",
+      "result_id": "afafe06b-8d2e-4342-85a4-b9cec59e5b62"
+    },
+    {
+      "claim_id": "1706f9db-029f-46d3-8d6e-6c411998bf8b",
+      "result_id": "afafe06b-8d2e-4342-85a4-b9cec59e5b62"
+    },
+    {
+      "claim_id": "53b010af-7746-4663-8000-1dd2c3c72ad0",
+      "result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7"
+    },
+    {
+      "claim_id": "fa65a7b1-7535-4760-ab1e-4acde0a4f0f5",
+      "result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7"
+    },
+    {
+      "claim_id": "2f337590-620e-4256-a401-4fa003fff043",
+      "result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7"
+    },
+    {
+      "claim_id": "e33ff1aa-8424-4c52-a58e-cf4aaa87d6cd",
+      "result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7"
+    },
+    {
+      "claim_id": "1449089b-aa51-4d01-9e73-39c955c23e0a",
+      "result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7"
+    },
+    {
+      "claim_id": "a95e33a0-043e-47d8-bbe1-12ff15020078",
+      "result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7"
+    },
+    {
+      "claim_id": "b68b84ac-8f02-4b77-83c9-77a566eb8088",
+      "result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7"
+    },
+    {
+      "claim_id": "bd5ed5cc-5574-456b-81c4-fb4b8b6295ed",
+      "result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff"
+    },
+    {
+      "claim_id": "58b4f84b-cf80-41d5-a17c-08b60e189714",
+      "result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff"
+    },
+    {
+      "claim_id": "27e52d39-afa3-4f6d-9c51-f6f1c668fcdf",
+      "result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff"
+    },
+    {
+      "claim_id": "afb154ca-0c91-4e02-a4de-16a3432c41aa",
+      "result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff"
+    },
+    {
+      "claim_id": "bd06c465-d647-4579-b0d4-1db10e2b32da",
+      "result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff"
+    },
+    {
+      "claim_id": "4692f765-8434-4f9a-8e58-0e163a2f6444",
+      "result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff"
+    },
+    {
+      "claim_id": "096da95e-ca15-4715-bf38-f05259cc0236",
+      "result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff"
+    },
+    {
+      "claim_id": "612a0c65-0363-47ee-8bc3-34bd425d075e",
+      "result_id": "4c36c502-1b50-452b-9be5-f571529d6118"
+    },
+    {
+      "claim_id": "c23808df-3fc2-4532-ba90-1bcab6d8b732",
+      "result_id": "4c36c502-1b50-452b-9be5-f571529d6118"
+    },
+    {
+      "claim_id": "1c716d0b-07bc-4ded-84dc-3364f54f3da9",
+      "result_id": "4c36c502-1b50-452b-9be5-f571529d6118"
+    },
+    {
+      "claim_id": "c733fc3b-5a6f-4187-9d6f-b5bbfbe730e2",
+      "result_id": "4c36c502-1b50-452b-9be5-f571529d6118"
+    },
+    {
+      "claim_id": "fdfbd50d-eeb5-48dd-9b63-1fb8594c1884",
+      "result_id": "4c36c502-1b50-452b-9be5-f571529d6118"
+    },
+    {
+      "claim_id": "786a406b-6669-404f-8d5f-378e21241314",
+      "result_id": "4c36c502-1b50-452b-9be5-f571529d6118"
+    },
+    {
+      "claim_id": "3d0d0564-4ad5-45aa-b9c3-3703ef301529",
+      "result_id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0"
+    },
+    {
+      "claim_id": "eedfbd37-2165-4634-a90e-47b2e4d12b24",
+      "result_id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0"
+    },
+    {
+      "claim_id": "3f461178-83c8-4584-99c2-f3902e6a6e12",
+      "result_id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0"
+    },
+    {
+      "claim_id": "3115fe77-5f83-4235-9c3b-cf4c7efb24d3",
+      "result_id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0"
+    },
+    {
+      "claim_id": "12a39403-ae41-424c-a759-cda5761ac92a",
+      "result_id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0"
+    },
+    {
+      "claim_id": "5d28c03f-c4e6-471f-b66d-11635aa2ae7b",
+      "result_id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0"
+    },
+    {
+      "claim_id": "b2c90bb8-7dd8-427b-90e4-d8fe31755a80",
+      "result_id": "20e9c0e5-4f60-4174-a59d-b6b63271fa41"
+    },
+    {
+      "claim_id": "2ac05a21-1441-424e-b5eb-1b9a7e456a04",
+      "result_id": "20e9c0e5-4f60-4174-a59d-b6b63271fa41"
+    },
+    {
+      "claim_id": "eed4e2e9-e1be-4c71-b0c9-baded1ce8f50",
+      "result_id": "b70c19c1-c041-4721-8695-19bfa911207b"
+    },
+    {
+      "claim_id": "8ec064dc-9bc2-4f8e-9e74-36ac10b86344",
+      "result_id": "b70c19c1-c041-4721-8695-19bfa911207b"
+    },
+    {
+      "claim_id": "cdd05603-2693-427c-b9b3-152fbaaabac1",
+      "result_id": "164f1f9d-8be6-49d4-93d7-c13e20f9667e"
+    },
+    {
+      "claim_id": "bf5c7df1-a800-4917-aa35-e09da07c5e25",
+      "result_id": "e0bd106e-bf8b-4e7e-95ae-ecbad4c148bc"
+    },
+    {
+      "claim_id": "ba780a68-74db-494a-8387-f5438b5aed50",
+      "result_id": "e0bd106e-bf8b-4e7e-95ae-ecbad4c148bc"
+    },
+    {
+      "claim_id": "f1cdb331-61d7-4be3-9ed5-123b7e26b91e",
+      "result_id": "e0bd106e-bf8b-4e7e-95ae-ecbad4c148bc"
+    },
+    {
+      "claim_id": "64230dae-b6ec-4524-b052-125e89b0e004",
+      "result_id": "8527d151-e20f-4199-a861-0b39bf6bb339"
+    },
+    {
+      "claim_id": "6b27ad67-8fda-4f35-86d9-565384a4c149",
+      "result_id": "8527d151-e20f-4199-a861-0b39bf6bb339"
+    },
+    {
+      "claim_id": "5c17b650-0381-42df-9c70-9e6d54f7f13e",
+      "result_id": "8527d151-e20f-4199-a861-0b39bf6bb339"
+    },
+    {
+      "claim_id": "6c75f0b2-d90a-4d93-b212-d813175dfae2",
+      "result_id": "8527d151-e20f-4199-a861-0b39bf6bb339"
+    },
+    {
+      "claim_id": "0475ae9c-aa3c-48fe-b6f2-7fadfa015d58",
+      "result_id": "8527d151-e20f-4199-a861-0b39bf6bb339"
+    },
+    {
+      "claim_id": "22edb8ab-adc9-4627-a073-f3fab6a789d8",
+      "result_id": "8527d151-e20f-4199-a861-0b39bf6bb339"
+    },
+    {
+      "claim_id": "588ac60a-64c5-4ae9-bb5d-51580fe1850d",
+      "result_id": "8527d151-e20f-4199-a861-0b39bf6bb339"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "679a06c6-ba80-4880-adfe-f05165cfbcbc",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4790c5b3-7263-482c-afa2-868316dbdfd4",
+      "peer_result_id": "ad3f6a32-2d92-4924-813b-6abf2fb867c0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C33-C38 regarding post-injury TREE delivery with longitudinal tracking. Both evaluations are SUPPORTED. OpenEval notes appropriate controls and sample sizes (n=4 per group), while peer reviewers affirm the spatiotemporal dynamics and clinically relevant timing approach without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "ae613630-d9a2-4a08-baa8-6e9b32ca55c6",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "e01502b1-8ff9-4b57-baae-cf4ca94fef5a",
+      "peer_result_id": "4c36c502-1b50-452b-9be5-f571529d6118",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C48-C53 regarding IR41 capsid performance versus AAV9. Both evaluations are SUPPORTED. OpenEval notes significant differences at 7 and 21 dpi with appropriate sample sizes (n=3-4) and statistical testing, while peer reviewers affirm improved luciferase expression and describe evidence as 'convincing' and 'of fundamental value to the field.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "55719d6a-055d-46ef-b939-cd3a8795402c",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "bacc819b-0bfc-4d08-8fe2-54caddaed850",
+      "peer_result_id": "b70c19c1-c041-4721-8695-19bfa911207b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C54-C55 regarding utility of IVIS imaging approach. Both evaluations are SUPPORTED. OpenEval concludes the work successfully demonstrates longitudinal tracking with quantitative measurements, while peer reviewers affirm the non-invasive longitudinal monitoring system without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "5f83e05f-4618-49f3-bf28-984b0f942c68",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "912ca693-6ea4-497c-a96e-b724defa83b4",
+      "peer_result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on claims C27-C32 regarding AAV.cc84 liver detargeting. Both evaluations are SUPPORTED. OpenEval notes convergent evidence from multiple methods with appropriate sample sizes and statistical comparisons, while peer reviewers describe AAV.cc84 as a 'novel approach' with 'convincing' evidence that significantly reduced liver transduction.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "a0a1bbcf-6264-49f7-b053-74c12a4414c1",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "0acb35bb-d550-456e-9ac6-b5ea8764079d",
+      "peer_result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Strong alignment on claims C42-C47 regarding capsid screening and IR41 identification. Both evaluations are SUPPORTED, though with different emphases. OpenEval rates as UNCERTAIN due to insufficient sample size in screening (n=2 I/R, n=1 sham) and lack of validation statistics, while peer reviewers explicitly support the finding without raising methodological concerns about sample sizes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "e61d63df-542a-48a3-b4a8-4ce215c55a20",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "766aef4e-6bfe-406e-9c67-3e19ebce1427",
+      "peer_result_id": "8527d151-e20f-4199-a861-0b39bf6bb339",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on background claims C1-C2, C11-C17 regarding TREEs and injury-responsive expression. Both evaluations are SUPPORTED. OpenEval notes these appropriately summarize established knowledge from cited literature, while peer reviewers accept this foundational context as established knowledge without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "9c526eec-2b3b-4011-8a38-97d766289205",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ff1661a0-f681-435e-96a6-a8dac90b0590",
+      "peer_result_id": "afafe06b-8d2e-4342-85a4-b9cec59e5b62",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial alignment on claims C23-C25 regarding injury-responsive TREE activity. Both evaluations are SUPPORTED. OpenEval notes temporal dynamics and injury-specificity but flags very small sample sizes (n=2 I/R, n=3 sham) limiting statistical power, while peer reviewers explicitly affirm the finding with descriptions like 'drastically increased 3 days post-injury' and 'convincing' evidence without raising sample size concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "9a861b47-e645-4d54-9c03-191a691a9fe9",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "29b5e708-dc53-42cc-9808-56a41facb42a",
+      "peer_result_id": "e0bd106e-bf8b-4e7e-95ae-ecbad4c148bc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on claims C60-C62 regarding species translation limitations. Both evaluations are SUPPORTED. OpenEval describes these as reasonable acknowledgments and standard limitations for mouse-based AAV studies, while peer reviewers explicitly acknowledge these limitations as inherent to the approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "76cc4e83-7502-4a98-84ca-266801387247",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "3efea81b-a0e8-4529-9fab-5459a55a3e2f",
+      "peer_result_id": "20e9c0e5-4f60-4174-a59d-b6b63271fa41",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on claim C57 regarding detection of off-target expression. Both evaluations are SUPPORTED. OpenEval notes the utility of IVIS in detecting off-target expression despite ROI subjectivity limitations (C56-C57), while peer reviewers implicitly accept off-target liver expression (C26, C57) as a problem that motivates the liver-detargeting experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "a1b8c88d-6f71-44c7-8c93-a000cd6120fa",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ff1661a0-f681-435e-96a6-a8dac90b0590",
+      "peer_result_id": "20e9c0e5-4f60-4174-a59d-b6b63271fa41",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on claim C26 regarding off-target liver expression. Both evaluations are SUPPORTED. OpenEval describes this as an important finding motivating subsequent experiments, while peer reviewers implicitly accept it as context for the AAV.cc84 solution without challenging the observation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "b33d1f35-7f66-4bad-b923-6dc769441c7e",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "29b5e708-dc53-42cc-9808-56a41facb42a",
+      "peer_result_id": "164f1f9d-8be6-49d4-93d7-c13e20f9667e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on claim C59 regarding future optimization directions. Both evaluations are SUPPORTED. OpenEval describes this as appropriate acknowledgment of need for additional mechanistic work, while the editor explicitly endorses combining AAV.cc84 and AAV-IR41 features as a logical next step.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "36b9623f-6c92-474a-b18c-857341744e86",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "cc4f9546-d65c-4d80-817d-b2a7e3034621",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C20-C22 regarding baseline expression patterns for control promoters (CBA and Hspa1a) using IVIS imaging as SUPPORTED. No corresponding peer review evaluation found for these specific control validation experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "1b94eda4-7beb-4612-9d4f-59034c1fda6c",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "0f5648bd-a859-443a-b9d5-bd51c646be64",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claim C63 as SUPPORTED, describing it as an appropriate summary conclusion about longitudinal tracking, reducing off-target effects, and identifying enhanced capsids with acknowledgment of need for further optimization. No corresponding peer review evaluation found for this specific summary claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "d53e4e00-cfbe-4562-b489-627e3792b00e",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "ea8c69be-c629-4f94-9aaa-95cba809bc80",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C6-C10 regarding cardiac regeneration biology background as SUPPORTED based on extensive prior literature. No corresponding peer review evaluation found for these specific background claims on cardiac regeneration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "aca901cd-762c-4951-adac-6081489b3bab",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "a3dccfe5-db36-40a7-8317-47fec0f0da63",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C18-C19, C39 regarding AAV capsid engineering background as SUPPORTED based on prior published work. No corresponding peer review evaluation found for these specific background claims on capsid engineering.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "082563d7-47fd-46b3-b9c3-b406d80f2c91",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "4e36c4bf-a01d-4b8b-af5a-01715320e7a5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C40-C41 regarding AAV9's preferential border zone transduction and timing rationale as SUPPORTED based on Konkalmatt et al. 2012. No corresponding peer review evaluation found for these specific claims about AAV9 transduction patterns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "87e192d7-94ec-43f3-b07e-b1039bae0f06",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "82b4ad4d-d922-414b-8be8-b777aa825365",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C64-C84 regarding methodological details (I/R surgery, AAV production, IVIS imaging, experimental parameters) as SUPPORTED with sufficient documentation for reproducibility. No corresponding peer review evaluation found for these specific methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3a700bf0-d837-4d18-8f66-ba9218c2d275",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP18",
+      "openeval_result_id": null,
+      "peer_result_id": "afafe06b-8d2e-4342-85a4-b9cec59e5b62",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers evaluated claim C3 (along with C23-C25) regarding transgene expression drastically increased 3 days post-injury driven by 2ankrd1a as SUPPORTED with 'convincing' evidence. OpenEval did not separately evaluate claim C3, though related temporal dynamics in C23-C25 were evaluated in OpenEval R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "3d10d07a-b088-41a5-8269-fac1bf6b2c8c",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP19",
+      "openeval_result_id": null,
+      "peer_result_id": "898dc4b3-7d1a-408a-97cb-018ab107f4a7",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers evaluated claim C4 (along with C27-C32) regarding liver-detargeted capsid AAV.cc84 as SUPPORTED. OpenEval did not separately evaluate claim C4, though the AAV.cc84 liver detargeting evidence in C27-C32 was evaluated in OpenEval R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    },
+    {
+      "id": "357d08d0-19be-4764-8e9c-79e9b98efea4",
+      "submission_id": "12688db8-7829-455c-b465-cf82e4026c07",
+      "comparison_id": "CMP20",
+      "openeval_result_id": null,
+      "peer_result_id": "a00b15a1-2502-44a4-96e5-ec5ec00374ff",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers evaluated claim C5 (along with C42-C47) regarding IR41 serotype identification from AAV library screening as SUPPORTED with 'convincing' evidence. OpenEval did not separately evaluate claim C5, though the capsid screening and IR41 validation in C42-C47 was evaluated in OpenEval R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:21.960711Z"
+    }
+  ]
+}

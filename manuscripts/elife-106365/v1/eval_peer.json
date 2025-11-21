@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed a method that integrates birth-death population models with structurally constrained substitution (SCS) models to forecast protein evolution. This method simultaneously simulates evolutionary history and molecular evolution in a single forward-in-time process, where fitness based on protein folding stability influences both birth/death rates and sequence evolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the methodological contribution, with one stating 'the general modelling approach is solid' and another noting the work 'is of great interest to molecular evolution and phylodynamics, which has struggled to couple non-neutral models of sequence evolution to phylodynamic models.' The integration of structural constraints with birth-death processes is recognized as a useful advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The fitness model parameterizes birth and death rates based on protein folding stability, with death rate defined as 1-b (where b is birth rate) to maintain a constant global birth-death rate. Variants with higher fitness have higher birth rates and lower death rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 1 explicitly critiques this parameterization, stating 'a variant with a birth rate b = 1 would have a death rate d = 0 and so would be immortal and never die, which does not seem plausible.' The reviewer questions whether this would 'allow a constant global (birth-death) rate' and suggests 'it seems more reasonable to assume that protein stability affects only either the birth or death rate and assume the other rate is constant.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C98",
+      "C99",
+      "C114",
+      "C121"
+    ],
+    "result": "The method showed acceptable errors in predicting folding stability of protein variants (differences below 1-7 kcal/mol for most proteins), with SCS models producing more accurate stability predictions than neutral models. However, sequence prediction errors were larger (5-36% Grantham distance depending on protein), with minimal difference between SCS and neutral models for sequence accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the stability prediction results but question the overall predictive power. The editor notes 'the evidence for the model's predictive power remains limited, since it shows little improvement over neutral models in predicting protein evolution.' Reviewer 1 states 'the model shows little improvement over neutral models in predicting protein sequence evolution, although it can predict protein stability better.' Reviewer 3 emphasizes 'the model does not predict future sequences with measurable accuracy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C106",
+      "C110",
+      "C111",
+      "C116",
+      "C117"
+    ],
+    "result": "Neutral evolution models produced sequence dissimilarities similar to SCS models, particularly for datasets with low sequence diversity. However, SCS models consistently predicted protein variants with folding stability closer to real variants than neutral models, with the difference more pronounced in datasets with higher diversity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these comparative findings as they form the basis for their critique that the method shows 'little improvement over neutral models in predicting protein evolution' (editor's summary). The observation that stability predictions differ between models while sequence predictions do not is central to the reviewers' assessment that the method preserves stability but lacks sequence-level predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C77",
+      "C127"
+    ],
+    "result": "Birth-death models with constant versus variable global birth-death rates among lineages showed no statistically significant differences in prediction accuracy for sequence similarity or folding stability across the studied proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding. The result supports their broader assessment that population dynamics parameters have limited impact compared to substitution model choice, though they do not explicitly discuss this specific comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C104",
+      "C105"
+    ],
+    "result": "For HIV-1 protease data from patients under antiretroviral treatment, prediction accuracy varied among viral populations, with most showing Grantham distances below 30% but one population reaching nearly 60%. The number of accumulated substitutions did not correlate with prediction error (R\u00b2=0.0001).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises concerns about the datasets, noting 'the analyzed datasets are also under-characterized: we are not given insight into how variable the sequences are or how surprising the simulated sequences might be relative to natural diversity.' The high variability in this complex therapeutic scenario and lack of correlation analysis suggests limitations in understanding when predictions succeed or fail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The method was evaluated using viral proteins sampled longitudinally, with predictions made from initial timepoints to later timepoints. Evaluation used consensus sequences to avoid rare variants, with 100 simulated alignments per prediction and evolutionary time measured by number of substitutions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 criticizes the validation approach, stating 'validation is limited to endpoint comparisons in a few datasets' with 'no assessment of mutation-level predictive accuracy or quantification of how well simulated sequences recapitulate real evolutionary paths.' The use of consensus sequences is problematic as 'a consensus sequence may not accurately reflect the underlying population structure' in viral evolution. Reviewer 3 also notes 'no comparison is made to real intermediate variants available from extensive viral sequencing datasets.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Prediction accuracy was assessed using three metrics: Grantham distance for evolutionary trajectories, KL divergence for amino acid frequency distributions, and direct comparison of folding stability (\u0394G) values between predicted and real variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 2 states 'it is difficult to evaluate the predictive performance of protein sequence evolution' because 'performance is compared in terms of percent divergence, which is difficult to compare across viral proteins and datasets.' The reviewer suggests normalizing 'the divergence between predicted and observed sequences by the expected or empirically observed amount of divergence.' Reviewer 3 notes KL divergence 'is only applied to a single protein (HIV-1 MA).'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C112",
+      "C113",
+      "C125"
+    ],
+    "result": "The studied datasets showed overall low sequence diversity (sequence identity 0.802-0.973), and prediction accuracy varied among evolutionary scenarios, being lower in more complex scenarios. Higher sequence diversity was associated with improved prediction quality due to containing more evolutionary information.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these characterizations as they align with their critiques. Reviewer 3 notes 'the analyzed datasets are also under-characterized' but does not dispute the diversity measurements. The observation about low diversity helps explain why substitution models had limited impact, which reviewers acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C16",
+      "C39",
+      "C91"
+    ],
+    "result": "Structurally constrained substitution (SCS) models that incorporate protein structure information outperformed traditional empirical substitution models in terms of phylogenetic likelihood and other evolutionary properties in previous studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this claim about prior work. The editor notes the method 'effectively preserves folding stability,' implicitly accepting the utility of SCS models for this purpose. However, reviewers question whether this advantage translates to improved forecasting in the current application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors conclude that forecasting protein evolution is feasible in certain evolutionary scenarios, particularly for predicting folding stability, and that combining structural constraints with birth-death processes is beneficial for modeling protein evolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 directly challenges the forecasting claim, stating 'the study does not substantiate its central claim of forecasting' and 'the model does not predict future sequences with measurable accuracy, nor does it reproduce observed evolutionary paths.' The reviewer concludes 'the model constrains sequence evolution to stability-compatible trajectories but does not forecast which of these trajectories are likely to occur. It is better understood as a filter of biophysically plausible outcomes than as a predictive tool.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Fitness is calculated from protein folding stability using the Boltzmann distribution, based on the principle that folding stability constrains protein evolution. The authors propose that stability resembling real proteins may indicate high fitness, as real stability results from selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 critiques the fitness function, noting 'the fitness function used in the main simulations is based on absolute \u0394G and rewards increased stability without testing whether real evolutionary trajectories tend to maintain, increase, or reduce folding stability over time for the particular systems (proteins) that are studied.' The reviewer adds that an alternative model 'does attempt to center selection around empirical \u0394G values' but 'this more biologically plausible version is underutilized and not well validated.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C123",
+      "C124"
+    ],
+    "result": "Under SCS models, protein stability can be modeled more accurately than sequence similarity because selection maintains structural stability despite amino acid changes. Observed sequence diversity is much greater than structural diversity, and substitutions between physicochemically similar amino acids can maintain stability even when exact sequences differ.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these biological principles, which are well-established in the literature. These observations help explain the results showing better stability than sequence prediction, which reviewers acknowledge. However, this does not resolve their concerns about the method's overall predictive utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The method assumes protein structure is maintained over evolutionary time (reasonable for short timescales) and ignores unpredictable environmental shifts. Modeling structural evolution remains challenging and would require substantial methodological development.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these limitations as reasonable caveats. Reviewer 2 notes 'predictability may also vary significantly across different sites in a protein' and suggests 'there remains much work to be done here in terms of figuring out where and when sequence evolution might be predictable.' These comments align with the authors' acknowledgment of limitations.",
+    "result_type": "MINOR"
+  }
+]

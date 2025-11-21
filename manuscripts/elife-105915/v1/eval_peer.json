@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors developed and optimized urea ChIP-seq, a modified ChIP-seq method that isolates stringently purified whole intact genomic DNA retaining only directly bound proteins from crosslinked cells. The method uses 8 M urea ultracentrifugation to remove indirectly bound proteins while preserving double-stranded DNA and directly bound proteins, allowing detection of genomic regions based solely on direct protein binding regardless of chromatin accessibility status.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised the innovation, with one stating 'A new and innovative adaptation of ChIP-seq (urea ChIP-seq) has enabled the authors to successfully question existing data.' Another reviewer noted the authors 'provide relevant background information concerning the effect of urea on the denaturation of macromolecules' and 'argue convincingly that urea does not denature DNA under their conditions.' The method's technical validity is affirmed throughout the reviews.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C5",
+      "C49",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Urea ChIP-seq revealed that SATB1 directly binds to BURs (base-unpairing regions) genome-wide, producing binding profiles entirely different from standard ChIP-seq. Only 0.92% of urea ChIP-seq peaks coincided with standard ChIP-seq peaks, with 77% of urea ChIP-seq peaks corresponding to BURs (p<0.001). SATB1 sites from urea ChIP-seq avoided CTCF sites, H3K27ac-marked sites, and DNase 1 hypersensitive regions, indicating direct binding to DNase 1-inaccessible chromatin.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly endorsed this finding. One stated 'The authors convincingly make the case that SATB1 and a key genome organiser, CTCF, largely bind different sites, as particularly evident in Figure 2A.' Another noted this 'drastically changes the pattern of chromatin interactions observed for SATB1' and that the finding is 'supported by a wealth of controls, making the evidence compelling.' The mutually exclusive binding patterns are accepted as valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Validation experiments showed that urea ChIP-seq produces similar binding profiles to standard ChIP-seq for CTCF and polycomb repressive complex 2 (PRC2) subunits, demonstrating that the method accurately identifies DNA-binding sites of chromatin-associated proteins. However, only urea ChIP-seq faithfully detects direct SATB1 interactions with BURs, suggesting SATB1 has a different mode of chromatin interaction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly validated this control. One stated 'They also show that the urea-ChIP and standard ChIP yield similar profiles for CTCF and polycomb complex subunits.' This demonstrates the specificity of the urea ChIP-seq findings to SATB1 and confirms the method's general validity, which reviewers accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "CTCF binding to genomic DNA is SATB1-independent genome-wide, as shown by urea ChIP-seq in wild-type and SATB1-KO thymocytes. Urea ChIP-Western experiments confirmed that SATB1 does not co-bind chromatin directly with CTCF or RAD21 (cohesin component), and CTCF/RAD21 direct co-binding occurs much less frequently than their individual binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these findings as part of the comprehensive controls. The evidence that 'SATB1 and CTCF are two independent proteins that have distinct roles in chromatin organization' is supported by the reviewers' statement that the study shows SATB1 and CTCF 'largely bind different sites' and that the findings are 'supported by a wealth of controls.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Hi-C analysis revealed that SATB1 depletion does not affect TAD organization, TAD number, TAD sizes, intra-TAD interactivity, A/B compartmentalization, or chromosome compaction. These results, combined with SATB1-independent CTCF binding and non-overlapping direct genomic DNA-binding of SATB1 and CTCF/cohesin, indicate that SATB1 and CTCF have distinct roles in chromatin organization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly endorsed this finding. One stated 'The report documents convincingly that SATB1 partitions the genome independent of so-called TADs to influence expression patterns' and 'knock down of SATB1 does not affect the TAD patterns.' This is treated as a key validated finding distinguishing SATB1 function from CTCF/cohesin-mediated TAD organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C114",
+      "C115"
+    ],
+    "result": "Validation with SATB1-KO cells showed that 4.1% of standard ChIP-seq peaks are false positives, while urea ChIP-seq had 0.0% false positives. Most SATB1 sites detected by standard ChIP-seq are bound by SATB1 but through indirect binding. At specific loci (Rag1/2, Foxp3, Runx3), both urea ChIP-seq and standard ChIP-seq detected SATB1-dependent binding, with peaks that were proximal but non-overlapping, indicating two different modes of DNA binding: direct binding to BURs and indirect binding to open chromatin.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly validated this finding. One stated 'They showed that all SATB1 peaks in urea-ChIP and 96% of peaks in standard-ChIP represent true signals, as they are not observed in a SATB1 knockout cell line.' Another noted 'The SATB1 KO cells provide a nice control for the specificity of signals.' The two-tiered binding model is accepted as explaining the mutually exclusive yet both valid binding profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C55",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "SATB1 establishes a two-tiered chromatin organization: direct binding to BURs (mutually exclusive with enhancer-enriched sites from standard ChIP-seq) and indirect binding to accessible chromatin. Urea 4C-seq showed that SATB1-bound BURs interact extensively over megabase-scale gene-rich regions within DNase 1 hypersensitive regions, crossing multiple TADs. These interactions are SATB1-dependent and correlate with gene expression, forming a large interaction network covering entire gene-rich regions rather than merely connecting specific gene loci with nearby enhancers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers endorsed this model. One stated the study 'highlights that the urea protocols provide a complementary view of protein-chromatin interactions for some proteins, which can uncover previously hidden, functionally significant layers of chromatin organization.' Another noted 'SATB1 controls long-range interactions in thymocytes' and the findings are 'supported by a wealth of controls.' The two-tiered organization is accepted as a major discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C53",
+      "C54",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "BURs bound to the SATB1 nuclear substructure interact with accessible chromatin crossing multiple TADs, and SATB1 is required for these megabase-scale interactions linked to cell-type-specific gene expression. In the 5.8 Mb gene-rich region, 3 genes (Rag1, Rag2, Prrg4) showed strong SATB1-dependent expression, and 10 additional genes in neighboring gene-rich regions showed SATB1-dependent expression changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the functional significance of these interactions. One stated the study shows SATB1 'controls long-range interactions in thymocytes' and another noted the findings demonstrate 'functionally significant layers of chromatin organization.' The correlation between SATB1-mediated interactions and gene expression is treated as validated, though the mechanistic details are acknowledged as complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "BURs are highly enriched within transcriptionally repressive lamina-associated domains (LADs), with the majority of BURs overlapping with LADs genome-wide. SATB1-bound BURs coincide with LAD distribution, while SATB1-bound sites from standard ChIP-seq avoid LADs. CTCF-binding sites are found at LAD borders and inter-LAD regions. BURs represent an important sequence component of LADs, some of which are specifically targeted by SATB1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this finding as part of the comprehensive characterization. One noted 'BURs are AT-rich and apparently enriched in equally AT-rich LADs' and that the authors 'now gain many binding events in silent regions of the genome, represented by lamin-associated domains (LADs).' The genome-wide overlap between BURs and LADs is treated as a validated discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "18% of SATB1-bound BURs reside in inter-LADs (outside LADs), with 82% within LADs. Among inter-LAD BURs, 39% are located within \u00b15 kb of H3K4me1 peaks. However, genome-wide analyses show that SATB1-bound BURs generally exclude the peaks of enhancers marked by H3K4me1 and H3K27ac in both inter-LAD regions and DiPS (locally euchromatic regions within LADs). SATB1-bound BURs reside in discrete DNase 1-inaccessible chromatin, excluding enhancers and CTCF-bound sites, even in otherwise gene-rich accessible chromatin neighborhoods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this characterization as part of the comprehensive analysis. One noted 'BURs are found enriched in LADs, but are also present in active chromatin,' acknowledging the complexity. The finding that BURs exclude enhancer peaks even in accessible regions is treated as a validated aspect of SATB1's unique binding pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C52",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Only a subset of total BURs is bound to SATB1, depending on cell type. Among thymocytes, brain, and skin, the percentage of SATB1-bound BURs varied from 3.7% (skin) to 13.5% (thymocytes) to 35.0% (brain), representing more than 10-fold variation. However, cell types share an overlapping set of SATB1-bound BURs, with 83.9% of skin BURs bound in thymocytes and 91.6% of thymocyte BURs bound in brain, indicating increasing/decreasing numbers rather than distinct subsets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the cell-type specificity as part of the functional significance. One stated 'Because cell type-specific differences are observed, they suggest that the SATB1 interactions are functionally relevant.' The hierarchical overlap pattern is treated as a validated finding supporting the model of cell-type-specific SATB1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors propose that the SATB1 protein network forms a chromatin scaffold, with direct binding to BURs within the SATB1-rich nuclear substructure forming a stable scaffold. This scaffold interacts dynamically with active gene-rich regions through indirect binding, creating functional chromatin complexes (or hubs) that regulate gene expression in a cell-type-specific manner, thereby facilitating three-dimensional organization linked to cell-type-specific gene expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers endorsed the model while acknowledging its complexity. One stated the study 'may significantly further our understanding of chromatin organization' and another noted it 'rectifies misconceptions about SATB1 function.' However, one reviewer noted 'some readers may be left confused due to the complexity of the system' and that 'exactly how this relates to the indirect and direct chromatin binding modes is mechanistically unclear,' indicating the model is accepted but mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C56",
+      "C57"
+    ],
+    "result": "Background claims about SATB1 properties, BUR characteristics, SATB1 expression patterns, and previous findings from standard ChIP-seq showing SATB1 binding to enhancers and CTCF sites but not BURs. These include SATB1's salt-resistant nuclear substructure, direct binding to BURs in vitro, cell-type-restricted expression, and roles in T cell development and gene regulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these as established background. One stated 'The nuclear protein SATB1 was originally identified as a protein of the nuclear matrix' and 'SATB1 had previously been shown by the authors and others to bind to DNA with special properties, termed BUR.' These background claims provide context for the current findings and are treated as accepted knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C45",
+      "C46"
+    ],
+    "result": "Background claims about chromatin architecture, including 3D chromatin organization, A/B compartments, LADs, TADs, CTCF/cohesin function in loop extrusion, TAD dynamics at single-cell level, and limitations of standard ChIP-seq (biased capture of accessible chromatin, inability to distinguish direct vs. indirect binding).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these as established background knowledge that contextualizes the study. The claims are supported by extensive citations and provide the framework for understanding why the urea ChIP-seq findings are significant. No reviewer challenged these background assertions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C138",
+      "C139",
+      "C144"
+    ],
+    "result": "Background and contextual claims about specific SATB1 target loci (Rag1/2, Foxp3, Runx3) and their roles in T cell development, SATB1 protein levels in thymus, LAD characteristics, and the relationship between SATB1-bound BURs and enhancers at specific loci.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these as supporting details that contextualize the main findings. These claims provide biological context for the functional significance of SATB1 binding patterns but are not the primary focus of reviewer discussion. They are treated as established or adequately supported contextual information.",
+    "result_type": "MINOR"
+  }
+]

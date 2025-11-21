@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Telomere length bidirectionally regulates TERT expression through TL-dependent TRF2 binding at the TERT promoter. Telomere elongation in HT1080, MDA-MB-231, and HCT116 cells reduced TRF2 occupancy at the TERT promoter, decreased H3K27me3, and increased TERT expression by >2-3 fold. Conversely, telomere shortening increased TRF2 binding, elevated H3K27me3, and suppressed TERT expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent cell line models using different TL manipulation methods (TERT/TERC overexpression, GTR oligonucleotides, CRISPR-Cas9 trimming, TERC knockdown) consistently demonstrate the inverse relationship between TL and TRF2 promoter occupancy, with corresponding changes in H3K27me3 and TERT expression (C19-C27). The use of 3'UTR-specific primers in HT1080 cells to distinguish endogenous from exogenous TERT strengthens the findings (C21). Statistical significance is reported with appropriate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C32",
+      "C33",
+      "C34",
+      "C80"
+    ],
+    "result": "TRF2 binding at the TERT promoter is non-telomeric and does not involve physical telomere looping. An artificially inserted TERT promoter-reporter at the CCR5 locus (46 Mb from nearest telomere) showed TL-dependent TRF2 binding, H3K27me3 deposition, and promoter activity, with reduced activity in short telomere cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CCR5 insertion experiment (C32-C34) provides strong evidence against telomere looping by demonstrating TL-dependent regulation at a distance (>40 Mb) where physical looping is unlikely. The observation that TRF2 binding decreases when telomeres elongate (C37, C80) is logically inconsistent with telomere-associated TRF2, which would increase with longer telomeres. The absence of other telomeric factors (RAP1, TRF1) at the TERT promoter further supports non-telomeric TRF2 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C78",
+      "C79"
+    ],
+    "result": "Non-telomeric TRF2 at the TERT promoter recruits REST and the PRC2 complex (EZH2), inducing repressive H3K27me3 in a TL-dependent manner. Long telomeres induce permissive chromatin while short telomeres create closed chromatin at the TERT promoter through this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP experiments consistently demonstrate coordinated changes in TRF2, REST, EZH2, and H3K27me3 occupancy across multiple cell lines and TL manipulation methods (C28-C31). The mechanistic link is supported by prior work showing TRF2-dependent recruitment of these factors. The chromatin state conclusions (C78-C79) logically follow from the histone modification data, though direct chromatin accessibility measurements would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Temporal TL modulation demonstrates dynamic, reversible TERT regulation. In doxycycline-inducible TERT models (HT1080 and MDA-MB-231), TL elongation over 10 days reduced TRF2/REST/EZH2/H3K27me3 at the TERT promoter and increased endogenous TERT expression. Upon doxycycline withdrawal, TL shortening restored promoter occupancy and reduced TERT expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal experiments (C35-C46) provide compelling evidence for dynamic regulation by showing coordinated changes in TL, TRF2 binding, epigenetic marks, and TERT expression over time. The use of 3'UTR-specific primers to measure endogenous TERT while manipulating exogenous TERT is methodologically sound. Statistical analysis using one-way ANOVA with Tukey's post-hoc test is appropriate for the time-course design. The consistency between two independent cell lines strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C87"
+    ],
+    "result": "TL-dependent TERT regulation operates during cellular reprogramming. iPSCs derived from fibroblasts showed telomere elongation, reduced TRF2/REST/EZH2 binding, decreased H3K27me3, and increased TERT expression. CRISPR-Cas9-mediated telomere shortening in iPSCs (~50% reduction) restored TRF2 binding, increased H3K27me3 1.5-fold, and significantly reduced TERT expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The iPSC experiments (C67-C77) demonstrate the mechanism operates in a physiologically relevant context beyond engineered cancer cell lines. The bidirectional manipulation (reprogramming-induced elongation and CRISPR-induced shortening) strengthens causal inference. However, the iPSC experiments used only two biological replicates, which is below the standard of three used elsewhere in the manuscript, slightly weakening statistical power. The characterization of iPSCs appears adequate (C67-C69, stemness markers in Figure 10B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C92"
+    ],
+    "result": "TL-dependent TERT regulation is retained in vivo in xenograft tumors. HT1080-LT xenografts maintained longer telomeres, higher TERT expression, and lower TRF2 occupancy with reduced H3K27me3 at the TERT promoter compared to HT1080-ST xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The xenograft experiments (C47-C50) provide important in vivo validation with n=5 mice per group and appropriate statistical analysis (unpaired t-test with Welch's correction). However, the limitation to a single cell line (HT1080) and use of pre-engineered cells rather than natural TL variation reduces generalizability. The authors acknowledge this limitation (C92), noting results are primarily from engineered cells. Additional cell lines and natural TL variation models would strengthen in vivo relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C91"
+    ],
+    "result": "G-quadruplex structures in the TERT promoter are essential for TL-dependent regulation. Cancer-associated mutations (-124G>A and -146G>A) that disrupt G4 structures abolished TL-dependent TRF2 binding, eliminated differences in H3K27me3 deposition, and removed TL-dependent reporter activity between short and long telomere cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The G4 disruption experiments (C53-C55) provide strong mechanistic evidence by showing loss of TL-dependent regulation when G4 structures are disrupted. The use of two independent clinically-relevant mutations strengthens the findings. Statistical analysis using two-way ANOVA is appropriate for comparing multiple conditions. This connects the mechanism to cancer biology, as these mutations are frequently found in cancers. The loss of function with G4 disruption supports the requirement for these structures in TRF2 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C84",
+      "C85"
+    ],
+    "result": "The R17 residue of TRF2 is necessary for TERT repression and H3K27 trimethylation. TRF2-R17H mutant failed to bind the TERT promoter, lost recruitment of REST/EZH2, and did not enhance H3K27me3 in vitro, while TRF2-WT repressed TERT and enhanced H3K27 trimethylation in the presence of PRC2 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TRF2 mutant analysis (C58, C61-C66) combined with in vitro methyltransferase assays (C65-C66, C84-C85) provides strong mechanistic evidence for the R17 residue's role. The loss-of-function approach with the R17H mutant is complemented by gain-of-function with WT TRF2. The in vitro assay directly demonstrates TRF2's role in enhancing PRC2 activity. Testing across three cell lines (HT1080, HCT116, MDA-MB-231) demonstrates generalizability. The connection to prior knowledge about R17's interaction with G4 DNA and histone H3 (C59-C60) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C105"
+    ],
+    "result": "The findings support a feed-forward model where long telomeres sequester TRF2, reducing TERT promoter occupancy and de-repressing TERT, which then synthesizes and maintains longer telomeres, with implications for tumorigenesis, aging, and de-differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The feed-forward model (C81-C83) is a logical synthesis of the experimental findings, though it represents an interpretive framework rather than directly tested hypothesis. The model is supported by the bidirectional TL manipulation experiments and temporal dynamics showing that TL changes drive TERT expression changes, which would be expected to affect TL. However, the manuscript does not directly demonstrate that TERT changes induced by this mechanism actually alter TL in a feedback manner - this is inferred from established TERT function (C82). The broader implications (C105) are speculative but reasonable extrapolations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The TPE-OLD and TSP models of TL-dependent TERT regulation are likely context-specific, though additional experimentation is required to determine the contexts or TL ranges where each mechanism operates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors acknowledge (C88-C89) that distinguishing between TPE-OLD (telomere looping) and TSP (non-telomeric TRF2) mechanisms requires further work. While the CCR5 insertion experiment argues against looping at that distance, it doesn't exclude looping at the endogenous TERT locus (1.2 Mb from telomeres). The absence of RAP1/TRF1 at the TERT promoter supports non-telomeric TRF2, but doesn't definitively rule out context-dependent looping. This represents an important unresolved question requiring additional experimentation, as the authors explicitly state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C51",
+      "C52",
+      "C86",
+      "C90",
+      "C94",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The manuscript establishes context through established knowledge about telomeres, TERT, cancer biology, TPE-OLD mechanism, TSP model, G-quadruplexes, stem cell biology, and sirtuins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C18, C51-C52, C86, C90, C94, C100-C103) represent established knowledge appropriately cited from the literature. They provide necessary context for interpreting the novel findings. The citations appear appropriate and accurately represent prior work. These background claims are not novel findings but are correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104"
+    ],
+    "result": "The authors identify several important unresolved questions and future directions, including: how initial TL elongation is triggered in tumorigenesis, potential roles of telomere transfer between cells, effects in senescing cells and ALT-positive cancers, and potential involvement of other shelterin proteins, DDR proteins, and sirtuins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C93, C95-C99, C104) represent speculative hypotheses and acknowledged limitations rather than supported findings. They appropriately identify gaps in understanding and suggest future research directions. The speculation about telomere transfer (C95-C96) based on recent T cell work (C94) is interesting but unsupported. The potential roles of other proteins (C98-C99, C104) are reasonable but require experimental validation. These represent honest acknowledgment of limitations and productive speculation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior work in humans has established that background invariance is hierarchically organized in auditory cortex, with non-primary areas showing stronger background invariance than primary areas. This hierarchical organization is independent of attention and not fully explained by speech/music processing pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C9 collectively describe well-established findings from prior human studies (Kell and McDermott 2019; Khalighinejad et al. 2019) that are appropriately cited. These claims provide the foundational context for the current study and are supported by multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C20"
+    ],
+    "result": "Background-invariant neurons exist throughout the auditory pathway across species, but whether a hierarchical gradient similar to humans exists in non-human animals remains unclear and untested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C20 appropriately identify a gap in knowledge based on prior work showing background-invariant neurons across species but inconsistent evidence for hierarchical organization. The citations support the existence of background invariance in non-human animals while acknowledging the uncertainty about hierarchical gradients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Spectrotemporal tuning can explain auditory cortex responses to natural sounds in ferrets across regions, and may underlie regional differences in background invariance, but in humans this tuning only explains primary cortex responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by appropriate citations to prior work (Landemard et al. 2021; Santoro et al. 2014; Norman-Haignere and McDermott 2018). The speculative aspects (C17, C19) are appropriately qualified and provide mechanistic hypotheses that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C29",
+      "C52"
+    ],
+    "result": "In ferrets, background invariance increases hierarchically from primary (MEG) to secondary (dPEG) to tertiary (VP) auditory cortex regions, as measured by functional ultrasound imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C29, and C52 describe the main experimental finding supported by data in Figures 2E-F showing statistically significant increases in background invariance across the hierarchy (p\u22640.001 for comparisons). The use of fUSI provides appropriate spatial resolution and the statistical testing with permutation tests is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Foreground and background sounds were classified by stationarity, elicited reliable hemodynamic responses in auditory cortex, and were stably encoded throughout their duration despite amplitude variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the experimental design and basic response properties supported by data in Figure 1. The stationarity-based classification is methodologically sound and the cross-correlation analysis (Figure 1E) demonstrates stable encoding. These are appropriate methodological validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Foreground and background sounds differ in their spectrotemporal modulation energy patterns, with foregrounds having higher energy at low temporal rates (<8 Hz) and backgrounds at higher rates (>8 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by acoustic analysis shown in Figures 3B-C. The temporal modulation axis provides clear discrimination between sound categories, which is critical for the subsequent modeling approach. The analysis appropriately characterizes the acoustic differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C36",
+      "C37",
+      "C40",
+      "C43",
+      "C53"
+    ],
+    "result": "A spectrotemporal filter-bank model based on frequency and spectrotemporal modulations accurately predicts ferret auditory cortex responses and largely explains the hierarchical gradient in background invariance through regional differences in tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C36-C37, C40, C43, and C53 are supported by modeling results in Figures 3-4. The model achieves good prediction accuracy (Figure 4\u2014supplement 1), recapitulates tonotopic organization (C37), and explains hierarchical invariance differences (Figure 4D, p\u22640.05). The noise-corrected correlation between measured and predicted invariance (r=0.65\u00b10.007) demonstrates strong explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C51",
+      "C54",
+      "C55",
+      "C61"
+    ],
+    "result": "The spectrotemporal model performs significantly worse at explaining background invariance patterns in human non-primary auditory cortex compared to ferrets, suggesting additional higher-order mechanisms contribute to background segregation in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C51, C54-C55, and C61 are supported by comparative analysis in Figure 5. The model explains less variance in humans (r=0.23\u00b10.04) than ferrets (r=0.65\u00b10.007, p=0.0167), particularly in non-primary regions. Statistical testing appropriately uses Wilcoxon tests. However, the conclusion about 'additional mechanisms' is somewhat inferential\u2014the poorer fit could also reflect methodological differences or measurement noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Foregrounds and backgrounds are similarly represented in primary auditory cortex in both ferrets and humans, with no significant bias toward foregrounds. This encoding may functionally support background denoising at later processing stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is supported by data showing similar background and foreground invariance in primary cortex (p=0.063 in ferrets, p=0.577 in humans). However, C57 is purely speculative about functional roles without direct evidence. The lack of significant bias is noted but the p-value of 0.063 in ferrets suggests a trend that may warrant larger sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Methodological differences between ferret (fUSI, CBV) and human (fMRI, BOLD) experiments are unlikely to fully account for the observed species differences in how well the spectrotemporal model explains background invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C64 attempt to rule out methodological confounds, but the reasoning is somewhat circular. While C63 correctly cites that CBV provides better spatial/temporal precision than BOLD, this could actually contribute to species differences in model performance. The authors acknowledge differences exist but assert they are 'unlikely' to explain results without providing quantitative evidence. Additional controls would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Multiple alternative explanations could account for species differences in background invariance mechanisms, including differences in attention/engagement, ecological relevance of stimuli, cortical architecture complexity, speech-specific processing, or adaptation dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 appropriately discuss alternative explanations for the species differences with appropriate citations (C68-C70). These are presented as speculative possibilities rather than definitive conclusions, which is appropriate for a Discussion section. The authors acknowledge important limitations including the lack of behavioral validation in ferrets (C66) and potential confounds from task differences (C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study used appropriate methods including fUSI in three ferrets, stationarity-based sound classification, noise-corrected correlation metrics, ridge regression modeling, and permutation-based statistical testing, with human data from Kell and McDermott 2019 for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C87 describe methodological details that are generally appropriate and well-documented. The noise-correction procedure (C81) is important for controlling reliability differences. The use of ridge regression with cross-validation (C84) is appropriate. Statistical testing with permutation tests (C87) is rigorous. However, the small sample size (n=3 ferrets, C75) is a limitation, though this is partially offset by the large number of voxels analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Foreground sounds are dynamic and convey new information over short timescales, while background sounds are stationary, predictable, and can be synthesized from time-averaged statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 describe established properties of foreground and background sounds supported by appropriate citations (Singh and Theunissen 2003; McWalter and McDermott 2018, 2019). These definitions provide the conceptual framework for the experimental design and are well-supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Prior work shows mixed evidence for hierarchical organization in ferret auditory cortex, with one study finding no clear distinction in natural sound representations between primary and non-primary regions, while another found hierarchical temporal integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 appropriately cite prior work (Landemard et al. 2021; Sabat et al. 2025) showing apparently contradictory findings about ferret auditory hierarchy. This contextualizes the current findings and highlights the complexity of defining hierarchical organization. The citations are appropriate and the apparent contradiction is acknowledged.",
+    "result_type": "MINOR"
+  }
+]

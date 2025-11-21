@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A Halo-TDP-43 knock-in iPSC line was successfully generated and validated. The HaloTag was inserted at the N-terminus of TDP-43, resulting in a heterozygous knock-in with one allele tagged and one untagged. The tagged line showed normal karyotype, proper nuclear localization of Halo-TDP-43, and appropriate molecular weight shift on western blot. Halo-TDP-43 expression was approximately 60% of endogenous TDP-43 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, C47-C57 collectively demonstrate successful generation and comprehensive validation of the Halo-TDP-43 knock-in line. Multiple orthogonal methods (sequencing, karyotyping, microscopy, western blot) confirm correct editing and expected protein properties. The lower expression of tagged versus untagged TDP-43 (C56-C57) is acknowledged but does not invalidate the tool's utility for the screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C70"
+    ],
+    "result": "A genome-wide CRISPRi FACS screen identified modifiers of TDP-43 levels in neurons. The screen used a dual sgRNA library enabling 1000x genome coverage with 20 million neurons. TARDBP knockdown decreased TDP-43 as expected, validating the approach. All eight BORC complex components were identified as hits specifically in neurons but not iPSCs, demonstrating cell-type specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, C58-C64, C70 describe a well-designed screen with appropriate controls. The positive control (TARDBP knockdown, C61-C62) validates the screening approach. Non-targeting guides cluster in the middle of rank plots (C63), confirming specificity. The identification of all eight BORC subunits specifically in neurons (C64) provides strong internal consistency and biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Meta-analysis of the Halo-TDP-43 screen with publicly available CRISPRi screens in neurons identified common pathways across screens (ubiquitination, neddylation, autophagy) likely responsible for generic protein homeostasis, and enabled prioritization of TDP-43-specific hits like BORC components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, C71-C82, C161-C163 describe a systematic meta-analysis approach with clear criteria for hit definition (C77-C78). The identification of common pathways across multiple screens (C75-C76, C79) provides validation, while the specificity of BORC to the TDP-43 screen (C80) justifies the focus on this complex. The analytical framework is sound and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C64",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "All eight BORC complex subunits were validated as modifiers of TDP-43 levels through multiple orthogonal approaches. Microscopy-based validation confirmed 58% of tested genes altered Halo-TDP-43 levels. BORC knockdown decreased both Halo-tagged and endogenous TDP-43 levels consistently. BORC knockout using CRISPR/Cas9 confirmed the effect, ruling out off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C64, C84-C87, C89-C90, C93-C95 demonstrate rigorous validation using multiple methods (microscopy with Halo tag, immunofluorescence for endogenous protein, and knockout validation). The consistency across all eight BORC subunits (C37, C93) and validation with both CRISPRi knockdown and CRISPR knockout (C94-C95) provides strong evidence. The 58% validation rate (C86) is reasonable for a genome-wide screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "BORC knockdown reduced TDP-43 protein levels but not mRNA levels. qPCR showed TDP-43 mRNA was unchanged or slightly increased upon BORCS6 knockdown, while TDP-43 knockdown decreased mRNA as expected. RNA sequencing confirmed BORCS6 mRNA was reduced by ~50% but TDP-43 mRNA levels were unchanged, indicating BORC affects TDP-43 protein levels independent of transcript expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C112-C113, C115-C117 demonstrate through multiple methods (qPCR and RNA-seq) that BORC affects TDP-43 at the protein but not mRNA level. The positive control (TDP-43 knockdown decreasing mRNA, C113) validates the assays. The consistency between qPCR (C112) and RNA-seq (C116) strengthens the conclusion. The inference that BORC acts post-transcriptionally (C117) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C42",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C173"
+    ],
+    "result": "BORC loss led to longer half-life of TDP-43 and many other proteins. Dynamic SILAC proteomics showed TDP-43 protein levels decreased in BORCS6 knockdown neurons, but TDP-43 half-life was longer compared to control. Similar effects were observed across the proteome, with many proteins showing decreased abundance but longer turnover times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C42, C134-C140, C173 present a counterintuitive but well-documented finding using dSILAC proteomics. The observation that decreased protein levels correlate with longer half-lives (C138-C140) is paradoxical but consistently observed for both TDP-43 and the broader proteome. The methodology is appropriate and the data internally consistent, though the mechanism remains unclear (acknowledged in C157, C178).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C179",
+      "C180"
+    ],
+    "result": "Lysosome function and location influenced TDP-43 levels in neurons. Multiple lysosome-inhibiting drugs (chloroquine, CTSBI, NH4Cl, GPN) decreased Halo-TDP-43 levels, while others (BafA1, LLOME, apilimod) did not. Translation inhibitors also decreased TDP-43 levels. These results demonstrate that active and properly localized lysosomes are required for maintaining TDP-43 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C98-C107, C179-C180 describe systematic drug treatment experiments testing multiple aspects of lysosome function. The varied responses to different drugs (C99-C105) suggest specific mechanisms rather than general toxicity. The inclusion of translation inhibitors (C107) provides additional mechanistic insight. The conclusion that active, properly localized lysosomes are required (C180) is well-supported by the drug panel results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Motile TDP-43 in neurites was primarily associated with lysosomes rather than mitochondria. Upon BORC knockdown, which restricts lysosomes to the soma, the fraction of motile Halo-TDP-43 in the periphery was reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 describe live-cell imaging experiments showing TDP-43 co-trafficking with lysosomes. The prior work (C108-C109) provides context, and the current observations (C110-C111) are supported by imaging data. The reduction in motile TDP-43 upon BORC knockdown (C111) provides a mechanistic link between lysosome localization and TDP-43 distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "RNA sequencing of BORCS6 knockdown neurons identified 98 upregulated and 139 downregulated genes, with enrichment in neuron development and axon outgrowth terms. Cryptic exon inclusion in STMN2 and UNC13A was not observed, indicating BORCS6 knockdown does not reduce TDP-43 levels sufficiently to cause functional loss of splicing repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 describe RNA-seq analysis with appropriate differential expression and GO enrichment analyses (C119-C120). The absence of cryptic exons (C122) is a negative result but important for interpreting the functional consequences of TDP-43 reduction. The inference that TDP-43 levels remain sufficient for splicing function (C123) is reasonable given the ~60% remaining TDP-43 (C184).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Alternative polyadenylation analysis showed many polyA sites changed upon BORCS6 knockdown, with affected genes relating to splicing, catabolism, and transport. However, TDP-43 polyA site usage was unchanged, indicating alternative polyadenylation cannot explain the changes in TDP-43 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 describe REPAC analysis of alternative polyadenylation. The observation of widespread polyA changes (C125-C126) indicates BORC affects RNA processing broadly, but the lack of TDP-43 polyA changes (C127) rules out this mechanism for TDP-43 regulation specifically. The analysis is appropriate and the negative result for TDP-43 is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The initial hypothesis that BORC loss decreases TDP-43 through reduced axonal translation was tested using SunTag translation assays. Surprisingly, no change in TDP-43 translation was observed, leading to the alternative hypothesis that BORC affects protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C133 describe a hypothesis-testing experiment. The SunTag assay (C132) is appropriate but has limitations acknowledged by the authors (C156) - the necessity of overexpressing tagged TDP-43 may not accurately reflect endogenous translation. The negative result shifts the focus to degradation (C133), but the translation hypothesis cannot be definitively ruled out with this experiment alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Pathway analysis of proteins with longer half-lives in BORCS6 knockdown showed enrichment in ribosome and biosynthetic pathways, overlapping with mRNAs whose localization is altered in BORC knockout. Phosphoproteomics identified 1333 phosphorylation sites, with 10 proteins showing significantly changed phosphosites upon BORCS6 knockdown at day 7. No PTMs were detected on TDP-43.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C152 describe additional analyses of the proteomics data. The pathway overlap with prior BORC studies (C143) provides validation. The phosphoproteomics analysis (C144-C152) is comprehensive, though the lack of TDP-43 PTMs (C145) limits mechanistic insight. The suggestion that PTM enrichment may be needed (C146) is reasonable. The identification of specific phosphosites on other proteins (C147-C151) provides leads for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Many genes involved in ubiquitination and m6A RNA methylation changed untagged TDP-43 levels in the opposite direction from Halo-TDP-43 levels. This difference may be due to inherent destabilization of the HaloTagged TDP-43.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 identify a discrepancy between Halo-tagged and endogenous TDP-43 responses for specific gene categories. The proposed explanation (C92) is speculative. This finding raises concerns about the generalizability of Halo-TDP-43 results for these specific pathways, though it does not affect the BORC findings which show consistent directionality (C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C12",
+      "C13",
+      "C45",
+      "C46",
+      "C165",
+      "C166",
+      "C180",
+      "C188",
+      "C189",
+      "C199",
+      "C200",
+      "C201",
+      "C203",
+      "C205"
+    ],
+    "result": "The study identifies BORC as a novel modifier of TDP-43 protein levels and proposes that lysosome location is required for proper protein turnover. The findings suggest lysosomal dysfunction may be an upstream actor in TDP-43 pathology and that CRISPRi screens are powerful tools for identifying specific therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C12-C13, C45-C46, C165-C166, C180, C188-C189, C199-C201, C203, C205 represent the major conclusions and implications of the study. The identification of BORC as a TDP-43 modifier (C45) is well-supported by the data. The mechanistic conclusions about lysosome location and protein turnover (C12-C13, C180) are supported but incompletely understood. The disease implications (C188-C189) and therapeutic potential (C199-C201, C203) are appropriately framed as possibilities requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C96",
+      "C187",
+      "C198"
+    ],
+    "result": "Background claims establish that TDP-43 mislocalization is a hallmark of neurodegenerative diseases, TDP-43 regulates gene expression and splicing, TDP-43 autoregulation is insufficient in disease, other regulatory factors are not well understood, and CRISPRi screens in iPSC-derived neurons are now feasible. Lysosomal dysfunction is associated with FTD/ALS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C32, C96, C187, C198 provide background context supported by appropriate citations to prior literature. These establish the rationale for the study and the feasibility of the approach. The claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

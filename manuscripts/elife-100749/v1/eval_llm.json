@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Bactofilins are a widespread family of bacterial cytoskeletal proteins with diverse cellular functions including morphogenesis, chromosome organization, and motility. They are characterized by a central Bactofilin A/B domain that polymerizes into non-polar filaments and typically associate with the cytoplasmic membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 establish the background knowledge about bactofilins based on established literature and prior work. These claims are well-supported by multiple citations and represent accepted knowledge in the field, providing appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior work suggested that bactofilin membrane interaction involves a short N-terminal peptide, with only a small subset containing transmembrane helices, indicating an unconventional membrane-targeting mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, and C27 accurately summarize prior findings from cited references (Deng et al., 2019; Lee et al., 2023) and bioinformatic analysis showing that ~3.2% of bactofilins contain transmembrane helices. This establishes the knowledge gap addressed by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The N-terminal sequence MFSKQAKS of C. crescentus BacA functions as a membrane-targeting sequence (MTS), with residues F2 and K4/K7 being critical for membrane binding. The MTS does not form an amphipathic helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C37 are supported by systematic mutagenesis experiments (Figure 1B) showing that deletion of residues 2-8 or specific substitutions (F2Y, F2E, K4S-K7S, K4E-K7E) disrupt BacA localization. Computational analysis (Figure 1A, 1C) confirms the MTS does not form an amphipathic helix, and TEM data (Figure 1\u2014figure supplement 1) shows the \u03942-8 variant can still polymerize in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "BacA membrane binding depends on the MTS, as demonstrated by single-particle tracking showing reduced mobility of wild-type BacA, cell fractionation showing membrane association, and in vitro liposome binding assays showing ~80% binding for wild-type but severe defects for MTS mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by multiple complementary approaches: single-particle tracking (Figure 2A) showing wild-type has low mobility while MTS mutants are more mobile, cell fractionation (Figure 2B-C) showing wild-type in membrane fraction while \u03942-8 is soluble, and liposome co-sedimentation assays (Figure 3) showing ~80% binding for wild-type but severe defects for F2E and K4E-K7E variants. The convergent evidence from in vivo and in vitro approaches strongly supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C46",
+      "C47"
+    ],
+    "result": "The polymerization-deficient F130R variant of BacA fails to form polymeric structures in vitro and shows dispersed cytoplasmic localization with minimal membrane binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C46-C47 are supported by TEM and size-exclusion chromatography (Figure 1\u2014figure supplements 1-2) showing F130R fails to polymerize, fluorescence microscopy (Figure 1B) showing dispersed localization, cell fractionation (Figure 4A) showing minimal membrane association, and liposome binding assays (Figure 4B) showing marginal binding activity. The data consistently demonstrate that polymerization is required for efficient membrane binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C79",
+      "C80"
+    ],
+    "result": "BacA polymerization and membrane binding are mutually stimulating processes, with membrane binding facilitating polymerization by enriching BacA at the membrane surface, and polymerization increasing membrane avidity through cooperative binding of multiple MTS-containing tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C48-C52, C79-C80 are supported by domain swapping experiments showing that replacing the native MTS with the E. coli MreB amphipathic helix restores membrane binding and focus formation (Figure 4C-E), but only when polymerization is intact. The F130R variant of the MreB-BacA fusion shows dispersed localization and reduced membrane binding. The crescentin domain swap (Figure 4\u2014figure supplement 1) provides additional support. The cooperative mechanism is inferred from the observation that monomeric BacA (F130R) shows minimal membrane binding despite having an intact MTS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Molecular dynamics simulations show that the BacA MTS peptides rapidly bind to membranes in a disordered, tilted orientation, with N-terminal residues M1 and F2 inserting deeply into the lipid bilayer below the phosphate headgroup region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by 500-ns MD simulations (Figure 5) showing rapid membrane binding, lack of persistent secondary structure, and density profiles demonstrating that residues 1-2 insert below the phosphate headgroups while residues 3-10 are shifted toward the aqueous phase. The F2Y variant shows altered positioning with M1 and Y2 pulled toward the headgroup/water interface (Figure 5\u2014figure supplement 1B), consistent with tyrosine's preferential hydration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C81"
+    ],
+    "result": "MD simulations reveal that residues M1, K4, and K7 are key determinants of membrane binding, with M1 showing the strongest interaction energy (primarily from the N-terminal NH3+ group), and K4/K7 making electrostatic interactions with anionic PG lipids that dominate peptide-lipid contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C81 are supported by lipid contact analysis (Figure 6A) showing residues 1-2 have strongest lipid association and that PG contacts dominate despite lower abundance than GLY lipids. Interaction energy analysis (Figure 6B) shows M1, K4, and K7 have the most favorable energies. The K4S-K7S variant shows reduced PG contacts compensated by increased GLY contacts. The inference that M1's interaction energy comes primarily from the NH3+ group (C81) is supported by the moderate effect of \u0394M deletion (Figure 3) compared to the strong interaction energy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The affinity of BacA for membranes arises from hydrophobic residue-driven water exclusion and electrostatic interactions with negatively charged phospholipid headgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by the MD simulation results showing that hydrophobic residues M1 and F2 insert into the lipid bilayer (C55-C57), driving water exclusion, while charged residues K4 and K7 make electrostatic interactions with PG lipid headgroups (C59-C61). The convergent evidence from mutagenesis, binding assays, and MD simulations provides strong support for this mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C7"
+    ],
+    "result": "Bioinformatic analysis of 14,337 bactofilin sequences reveals a conserved N-terminal motif (MFSKKKK) in Pseudomonadota and Bacillota, with variations in Bacteroidota, suggesting that MTS-mediated membrane binding is conserved across diverse bacterial phyla. Approximately 3.2% of bactofilins contain transmembrane helices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66, C7 are supported by comprehensive bioinformatic analysis (Figure 7, Figure 7\u2014figure supplements 1-2) of 14,337 unique bactofilin sequences showing a global consensus motif MFSKKKK that resembles the BacA MTS. Phylum-specific analysis shows conservation in Pseudomonadota and Bacillota, with variations in Bacteroidota. The analysis pipeline is well-described and includes appropriate filtering steps. The finding that ~3.2% contain transmembrane helices is documented in Figure 7\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C67",
+      "C68"
+    ],
+    "result": "BacA forms membrane-associated polymeric sheets at the old pole of C. crescentus cells and recruits the cell wall synthase PbpC, with BacA being the main interactor among the two bactofilin paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C67-C68 are supported by prior work (cited references) and new data showing that mVenus-PbpC retains wild-type localization in \u0394bacB but fails to form polar foci in \u0394bacA cells (Figure 8, Figure 8\u2014figure supplement 1A), identifying BacA as the main interactor. The N-terminal cytoplasmic tail of PbpC is sufficient for recruitment based on cited references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Region C1 (residues 2-13) of PbpC is necessary and sufficient for recruitment to BacA assemblies but dispensable for stalk biogenesis. The PbpC1-13 peptide binds BacA with KD = 4.9 \u03bcM, and this binding requires BacA polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by localization studies (Figure 8A) showing that deletion of region C1 abolishes polar localization while a chimera containing only C1 localizes normally, stalk length measurements (Figure 8\u2014figure supplement 4) showing C1 is dispensable for stalk elongation, biolayer interferometry (Figure 8B-C, Figure 8\u2014figure supplement 5) showing KD = 4.9 \u03bcM for wild-type BacA but only residual binding for F130R. The data consistently support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C82"
+    ],
+    "result": "HDX mass spectrometry reveals that PbpC binding induces changes in the C-terminal half of the BacA bactofilin domain near the polymerization interface, suggesting that inter-subunit contacts may induce conformational changes that promote PbpC binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C82 are supported by HDX-MS data (Figure 8C-D, Figure 8\u2014figure supplement 6) showing decreased HDX rates in the C-terminal region near the polymerization interface upon PbpC peptide binding. The inference that inter-subunit contacts may induce conformational changes (C82) is reasonable given the HDX data and the requirement for polymerization for efficient PbpC binding, though the authors appropriately note that additional studies are needed to precisely define the interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C74",
+      "C83"
+    ],
+    "result": "Both polymerization and membrane binding are necessary for recruiting PbpC, with BacA assembly being critical for efficient PbpC binding, potentially through increased avidity and/or conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C74, C83 are supported by data showing that BacA localization is unchanged in \u0394pbpC cells (Figure 8\u2014figure supplement 1B), indicating PbpC is not required for BacA assembly, but the polymerization-deficient F130R variant shows only residual PbpC binding (Figure 8C), indicating polymerization is required for efficient PbpC recruitment. The inference about increased avidity (C83) is reasonable given the polymerization requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C75",
+      "C76"
+    ],
+    "result": "Overproduced PbpC can functionally replace the MTS of BacA, fully restoring polar localization to the MTS-free \u03942-8 variant but not to the polymerization-deficient F130R variant, demonstrating that client proteins contribute to bactofilin-membrane association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C75-C76 are supported by localization studies (Figure 9) showing that overproduction of PbpC1-132-mCherry restores polar localization to the \u03942-8 variant but not to F130R. Western blot analysis (Figure 9\u2014figure supplement 1) confirms protein expression. This demonstrates that membrane-bound client proteins can contribute to bactofilin membrane association when present at high levels, though polymerization is still required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The lipid composition used in liposome binding assays and MD simulations approximates the native composition of C. crescentus membranes under standard growth conditions, with phosphatidylglycerol being the most abundant lipid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by cited references (Contreras et al., 1978; Stankeviciute et al., 2019; Chow and Schmidt, 1974) describing C. crescentus membrane composition. The simulated bilayer composition (50% GLY, 33% PG, 16% DAG) is documented in Supplementary file 2 and approximates the native composition. The use of pure PG liposomes in binding assays is a simplification but appropriate for initial characterization.",
+    "result_type": "MINOR"
+  }
+]

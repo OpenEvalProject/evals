@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C38",
+      "C39",
+      "C40",
+      "C144"
+    ],
+    "result": "The study systematically analyzed approximately 17,000 transcriptomes from 35 human tissues (combining 13 brain regions into 4 functional regions) using the GTEx dataset. Gene expression and alternative splicing were quantified using Paean, and a novel principal component-based signal-to-variation ratio (pcSVR) method was designed to evaluate sex and age effects on global transcriptomic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34, C38-C40, and C144 collectively describe the study's dataset and analytical approach. The manuscript explicitly states the sample size (~17,000), tissue count (35 after combining brain regions), and methods (Paean for quantification, pcSVR for effect evaluation). These are methodological claims directly supported by the Materials and Methods section and Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Using pcSVR analysis, the study found that age showed substantially larger effects than sex on human transcriptome in most tissues for both gene expression and alternative splicing. Alternative splicing was significantly affected by both sex and age across most tissues, while gene expression was affected by sex in fewer tissues. The age contribution to transcriptome variation was largely consistent between GE and AS (R=0.67), but sex effects showed weaker correlation (R=0.21). Age effects were larger in males than females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C59 describe findings from the pcSVR analysis shown in Figure 2. The statistical tests (permutation tests), correlation coefficients, and tissue-specific patterns are explicitly reported with p-values and effect sizes. Control analyses removing sex chromosomes and using different PC cutoffs support robustness. The conclusions about relative contributions of age vs. sex are well-supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Differential analysis identified sex- and age-differential genes and AS events across tissues. Breast tissue contained the largest number of sex-differentially expressed genes, while age-biased genes were widely discovered in brain regions and artery-related tissues. In most tissues, there were no significant overlaps between age-differential genes and AS events, but significant overlaps existed between sex-differential genes and AS events. Thousands of genes and AS events showed age-by-sex interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 describe findings from differential expression/splicing analysis using linear regression models (Equations 4-5). The findings are supported by data in Figure 3 and supplementary figures, with hypergeometric tests for overlap significance. Control analyses (C64) demonstrate that sample size did not confound results. The age-by-sex interaction term identified extensive sex-dimorphic changes during aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The linear regression models effectively controlled for confounding factors through surrogate variables (SVs). SVs significantly correlated with donor ethnicity and genetic background (WGS PCs), and PMI/TOD effects were effectively regressed. Permutation analysis showed FDRs of most differential genes/AS events were \u22645%, lower than DESeq2 and edgeR. Quality control confirmed that most differential genes had TPM>1 and differential AS events had junction counts>10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 describe methodological validation and quality control analyses shown in Figure 3 supplements. The correlation analyses between SVs and ethnicity/WGS PCs (C67-C68), PMI/TOD controls (C69-C70), permutation-based FDR estimation (C72-C73), and expression/coverage thresholds (C74-C77) are all supported by explicit data. The comparison to DESeq2/edgeR (C73) is supported by citation to Li et al., 2022.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Age-associated genes significantly overlapped between females and males in most tissues (p<0.01), whereas overlaps of age-associated AS events were much smaller. The age effect on gene expression was more correlated between sexes (Spearman's correlation of \u03b2F and \u03b2M) than the age effect on AS. This suggests that splicing regulation had stronger sex dimorphism during aging than gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 describe comparative analysis of sex-stratified age effects shown in Figure 3A-C. The hypergeometric tests for overlap significance (C78-C79), Spearman correlations between effect sizes (C80), and the inference about stronger sex dimorphism in AS (C81-C82) are all supported by quantitative data. The conclusion is a reasonable inference from the differential overlap and correlation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "Sex-biased age-associated AS events (sBASEs) in brain regions were enriched in pathways including amyloid-beta formation and cytoskeleton, with male decision-related brain sBASEs associated with cognitive and psychotic disorders. AD-related AS events significantly overlapped with sBASEs in males (p=0.037) but not females (p=0.425). In the ROSMAP validation dataset, AD-associated AS changes of sBASEs in males showed stronger correlation with age-associated changes (R=0.509) than in females (R=0.371), suggesting AS changes during aging contribute more to AD in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86, C89, C91-C92 describe the male-biased association between age-associated AS and Alzheimer's disease, shown in Figure 4. The GO enrichment (C83-C84), overlap analysis with AD datasets (C86), validation in ROSMAP (C91), and the inference about male vulnerability (C92) are all supported by statistical tests with reported p-values and correlation coefficients. The use of two independent AD datasets strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Specific sBASEs showed sex-specific associations with AD pathology: exon 10 skipping in SLC43A2 negatively correlated with neuritic plaques in males but not females, and exons 3-4 skipping in FAM107A showed male-specific negative association with neurofibrillary tangles. Random forest prediction models based on sBASEs performed significantly better in males than females, suggesting age-associated AS events could serve as better predictors for AD risk in male patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe specific AS events associated with AD pathology and prediction model performance shown in Figure 4E-G. The sex-specific associations with plaques and tangles (C93-C94) are supported by correlation analyses, and the prediction model performance (C95) is quantified by AUC across 100 iterations. The inference about AS events as better predictors in males (C96) is supported by the differential model performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The study identified numerous age-associated splicing factors (SFs) in human brain, with several SFs showing age association only in females (e.g., TIA1) while others were associated with age in both sexes (e.g., FXR2). Most sBASEs were regulated by sex-specific age-associated SFs rather than SFs associated with aging in both sexes. sBASEs regulated by female-specific age-associated SFs were enriched in glial cells and oligodendrocyte development, indicating that SFs with sex-dimorphic expression during aging were main factors regulating sBASEs with important biological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103, C105 describe the SF regulatory network analysis shown in Figure 5A-D. The identification of age-associated SFs (C100), sex-specific patterns (C101), regulatory relationships (C102), functional enrichment (C103), and the inference about their regulatory importance (C105) are all supported by the multi-step network construction integrating correlation, knockdown, and motif analyses. The functional enrichment is supported by statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Estrogen may regulate transcription of SFs during aging through nuclear receptors. ESR1-binding ratios on female-specific age-associated SFs were significantly higher than on SFs common to both sexes (p=0.032). Age-associated decline of ESR1 was more substantial in females than males. SRSF1 and SRSF7 were stimulated by estrogen receptor agonist and estradiol treatment in cells with wild-type ESR1 but not mutated ESR1, and showed decreased expression during female aging. Validation in mouse brain arcuate nucleus showed consistent estrogen regulation of Srsf1, Srsf7, and Hnrnpa2b1, with ESR1 ChIP-seq confirming binding to Srsf7 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C119 describe the estrogen-mediated regulation of female-specific SFs shown in Figure 5E-I and supplements. The ChIP-Atlas analysis (C108-C109), expression patterns (C110, C115), experimental validation in MCF-7 cells with ESR1 mutants (C111-C114), and mouse validation with ChIP-seq (C116-C118) provide converging evidence. However, C107 is stated as speculation, and the mechanistic link is correlative rather than causally demonstrated. The inference (C119) is reasonable but requires additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Breakpoint analysis revealed that males showed significantly larger gene expression changes during aging in most tissues compared to females. In some tissues like sun-exposed skin and colon, males showed two main breakpoints around ages 35 and 50, whereas females had one breakpoint at age ~45. The major aging breakpoints occurred earlier in males than females across most tissues, with more prominent magnitudes of change, suggesting males may age faster with larger age-associated gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 describe sex-dimorphic aging rates from breakpoint analysis shown in Figure 6 and supplements. The ARIMA time series modeling followed by breakpoint detection is methodologically sound. The quantitative comparisons of breakpoint timing and magnitude (C123-C124) are supported by statistical tests (Wilcoxon signed-rank test). The inference about faster male aging (C125) is reasonable given the earlier and larger transcriptome changes, though 'aging rate' is defined specifically as transcriptomic change rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study identified 1,035 aging-modulated genes (AMGs) across tissues, with ~70% (723/1035) being sex-specific. Female-specific AMGs were enriched in cellular respiration and NADH dehydrogenase pathways, while male-specific AMGs were enriched in myeloid leukocyte differentiation, phagocytosis, and macrophage apoptotic processes. This implies female aging may be more sensitive to mitochondrial and oxidative functions, while there is a sex-differential role of the immune system during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128, C130-C132 describe AMG identification and functional characterization shown in Figure 6. The disturbance analysis approach (randomly removing 20% of genes 200 times and testing for significant changes in breakpoints) is a reasonable method to identify genes contributing to aging rate. The functional enrichment analyses (C128, C131) are supported by statistical tests. The inferences about sex-differential sensitivity (C130, C132) are reasonable interpretations of the enrichment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Androgen receptor (AR) tends to bind promoters of male-specific AMGs (p=0.007), suggesting potential regulation by androgen during male aging. Female-specific AMGs were more likely to be bound and regulated by estrogen receptor ESR1, suggesting potential regulation by distinct sex hormones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 describe hormone receptor binding to AMGs shown in Figure 6G-H. The ChIP-Atlas analysis provides evidence for preferential binding of AR to male-specific AMGs and ESR1 to female-specific AMGs. The statistical significance (p=0.007 for AR) supports the association. However, the inference about 'regulation' (C134, C136) is speculative since binding does not prove functional regulation. The claims are supported as associations but the mechanistic interpretation requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "AMGs common to both sexes can be grouped into three clusters based on age-associated expression profiles. The largest cluster showed sex-specific patterns: expression increased at young ages and abruptly decreased in mid-ages in males, but monotonically decreased in females. These genes were enriched in neutrophil and granulocyte migration and RNA splicing. While most sex-specific AMGs showed decreased expression at old ages, some male-specific AMGs gradually increased during aging, suggesting age-associated genes modulating transcriptome aging rate showed different functional impacts in females and males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 describe detailed expression patterns of AMGs shown in Figure 6 supplements. The clustering analysis (C137), sex-specific temporal patterns (C138), functional enrichment (C139), and identification of increasing male-specific AMGs (C140) are all supported by data. The inference about different functional impacts (C141) is a reasonable summary of the differential patterns and enrichments observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C66",
+      "C82",
+      "C97",
+      "C145",
+      "C148"
+    ],
+    "result": "The study discovered extensive sex dimorphisms during aging with distinct patterns of change in gene expression and alternative splicing. Alternative splicing regulation showed stronger sex dimorphism during aging than gene expression. The study clarified sex and age effects on transcriptomic changes, revealing sex-dimorphic aging at a multi-tissue level and potential mechanisms, including the critical role of AS regulation in sex-dimorphisms of age-related diseases such as Alzheimer's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, C66, C82, C97, C145, C148 are high-level summary statements of the study's main findings. These are supported by the collective evidence from pcSVR analysis (showing differential sex/age effects), overlap analysis (showing stronger sex dimorphism in AS), AD association analysis (showing sex-biased AS-AD relationships), SF regulatory networks (showing estrogen-mediated regulation), and breakpoint analysis (showing sex-dimorphic aging rates). The conclusions are well-supported by the comprehensive multi-level analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C35",
+      "C36"
+    ],
+    "result": "Male-biased age-associated AS events have stronger association with Alzheimer's disease, while female-biased AS events are often regulated by sex-biased splicing factors that may be controlled by estrogen receptors. Males have larger and earlier transcriptome changes during aging compared to females. Sex-dimorphic aging rates are significantly associated with decline of sex hormones, with males showing earlier onset and faster aging rate in most tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C35-C36 are key findings stated in the abstract and supported throughout the manuscript. The male-biased AD-AS association (C4, C35) is supported by overlap analysis and correlation studies in Figure 4. The estrogen receptor regulation of female-biased AS (C5) is supported by ChIP-seq and experimental validation in Figure 5. The earlier and larger male transcriptome changes (C6, C36) are supported by breakpoint analysis in Figure 6. The association with sex hormone decline (C7) is inferred from timing correspondence but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C166",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C177",
+      "C178"
+    ],
+    "result": "The study has several technical limitations: cell type and sample heterogeneity in GTEx datasets may confound results; bulk RNA-seq does not capture cell-type-specific changes; observed differences may be influenced by shifts in cellular composition rather than intrinsic regulation; batch effects entangled with sex/age groups are challenging to remove; small sample sizes in some tissues required omission or combining; and AS regulatory networks derived from cancer cell lines may not ideally represent post-mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166, C171-C174, C177-C178 describe study limitations discussed by the authors. These are honest assessments of potential confounding factors and data limitations. The authors acknowledge these issues and describe mitigation strategies (C175-C176, C179-C183), but the limitations remain valid concerns. The evaluation is 'SUPPORTED' because these are accurate descriptions of the study's limitations, not because the limitations are resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C179",
+      "C182",
+      "C183"
+    ],
+    "result": "To address confounding factors, the study utilized original TPM/PSI data with permutation analysis for empirical p-values, preserved all possible confounders in differential analysis to identify changes more obvious than confounder effects, dissected RBP-RNA regulatory networks by integrating multi-dimensional orthogonal data (eCLIP-seq, RNA affinity, RBP knockdown, chromatin association), constructed SF-RNA networks using shRNA-seq data representing reduction at both RNA and protein levels, and incorporated three-step processes to minimize tissue biases including restrictions on correlations between RBP expression and AS events within each tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C176, C179, C182-C183 describe methodological approaches to address the limitations discussed in the previous result. The permutation analysis (C175), confounder preservation strategy (C176), multi-dimensional network construction (C179), use of shRNA-seq (C182), and tissue bias minimization (C183) are all explicitly described in the Methods section. These represent reasonable approaches to mitigate the identified limitations, though they do not completely eliminate the concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Mechanistically, the study found a prominent role of sex hormones in regulating sex-dimorphic aging or age-related diseases. Using RNA-seq and ChIP-seq data, the study uncovered female-specific age-associated AS regulation, which may be achieved partially through estrogen-mediated regulation of female-specific SFs. The study quantified chronological changes of transcriptome dynamics using breakpoint analysis and observed sex-dimorphic aging rates across multiple tissues. The aging breakpoints are largely consistent with changes in circulating sex hormones during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C188 summarize the mechanistic findings from the study. The role of sex hormones (C184) is supported by ChIP-Atlas analysis showing hormone receptor binding to sex-specific genes and SFs. The female-specific AS regulation via estrogen (C185-C186) is supported by experimental validation in Figure 5, though the mechanism is correlative and the word 'partially' appropriately hedges the claim. The breakpoint analysis (C187) and correspondence with hormone decline timing (C188) are supported by data in Figure 6, though the hormone correspondence is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Testosterone levels start to decrease at age 35-40 in males, while estrogen levels start to decrease at age ~50 in females. Breakpoints could represent key junctures in the aging process that align with non-linear patterns of aging and disease progression. The study identified female- and male-specific AMGs whose functions are consistent with reported roles of sex hormones: estrogen participates in the antioxidant system via NADPH (enriched in female-specific AMGs), while androgen affects inflammation in immune response (enriched in male-specific AMGs). Sex-specific AMGs were more likely to be regulated by androgen receptor in males or estrogen receptor in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C195 connect the study's findings to known sex hormone biology. The hormone decline timing (C189-C190) is established knowledge supported by citations. The interpretation of breakpoints (C191) is reasonable given their timing correspondence. The functional enrichment of AMGs (C192-C194) is supported by GO analysis and consistent with cited literature on hormone functions. The hormone receptor binding to sex-specific AMGs (C195) is supported by ChIP-Atlas data. The overall narrative connecting hormones, AMGs, and aging is well-supported.",
+    "result_type": "MAJOR"
+  }
+]

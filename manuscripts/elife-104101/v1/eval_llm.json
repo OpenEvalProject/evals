@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work has shown that state representation and value can be learned simultaneously through TDRL and BPTT in RNNs, but the biological implementation remains unclear due to the implausibility of BPTT, which requires offline updates using transported downstream weights and acausal temporal accumulation of errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C16 establish prior work on value-RNN learning, while C2, C17-C20 document well-established biological implausibility concerns with BPTT. These claims are supported by appropriate citations to prior work and established knowledge about biological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C30",
+      "C51"
+    ],
+    "result": "The authors demonstrate that online training of RNNs using TD reward prediction error and random feedback can learn task structure with cue-reward delays and timing variability, because TD learning solves temporal credit assignment and feedback alignment enables gradient approximation without weight transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C30 state the main finding, supported by experimental data (C47-C60). Claims C4-C5 provide mechanistic explanation based on established principles. The demonstration is well-supported by systematic simulations across multiple conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the Pavlovian cue-reward association task, oVRNNbp and oVRNNrf successfully learned state values between cue and reward, with largely comparable performance that consistently outperformed untrained RNN controls (p < 0.00022), though performance varied with RNN unit number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 present systematic experimental results with appropriate statistical tests (Wilcoxon rank sum test) and multiple control conditions. The data in Figure 2 supports the claims about learning performance across different model architectures and RNN unit numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PCA analysis revealed that trained models (oVRNNbp and oVRNNrf) had smaller contributions from initial principal components and larger contributions from later components compared to untrained RNN, which underlies their superior learning performance. Learning converged by the 1000th trial and remained superior across longer delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 provides detailed statistical analysis of PC contributions with specific p-values. Claims C58-C60 are supported by data in Figures 2K-M. The inference about PC contributions underlying performance (C58) is reasonable given the correlation between PC structure and learning outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The angle between value weight vector w and random feedback vector c decreased over trials in oVRNNrf, with smaller angles correlating with larger state values (r = -0.288, p = 0.00362), indicating that feedback alignment works for TD learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 present quantitative results with appropriate statistical measures (correlation coefficient and p-value) supported by Figure 3A-B. Claim C63's inference that FA works for TD learning is justified by the observed alignment and its correlation with performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "TD-RPEs at successive trials tend to have the same sign despite differing in magnitude, and RNN activity trajectories show similarity across trials due to entrainment by observation inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by data in Figures 3D-E. These observations provide mechanistic insight into how feedback alignment can occur across trials despite the online learning constraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The online value-RNN models (oVRNNbp and oVRNNrf) reproduced experimentally observed DA response patterns in tasks with probabilistic reward timing, learning the probabilistic task structures even with fixed random feedback, while control models failed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 establish the experimental context from prior work. Claims C75-C78 present results supported by Figure 4F-H showing the expected TD-RPE patterns. The models successfully replicate prior experimental findings, validating their ability to learn probabilistic structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Biologically constraining downstream weights and random feedback to be non-negative not only preserves but may enhance learning through loose alignment. Models with non-negative constraints (oVRNNbp-rev and oVRNNrf-bio) developed state values comparably or better than unconstrained models and consistently outperformed untrained RNN controls (p < 2.5\u00d710\u207b\u00b9\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 state the main finding about non-negative constraints. Claims C85-C91 provide extensive experimental support with appropriate statistical tests and multiple controls (naive and shuffled untrained RNN). Figure 6 data supports all quantitative claims. The enhancement effect (C91) is particularly well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In models with non-negative constraints, recurrent and feed-forward connections learned to become negative on average (inhibition-dominant), later PCs had higher contributions, and oVRNNrf-bio outperformed oVRNNbp-rev in early trials, with superiority maintained across longer delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 present detailed mechanistic findings supported by Figures 6F-J. Statistical tests are appropriate. Claim C93 is speculative but clearly marked as such. The early trial advantage (C95-C96) provides insight into the mechanism of loose alignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Models with non-negative constraints and modified update rules (oVRNNbp-rev and oVRNNrf-bio) successfully produced the expected differential TD-RPE patterns in probabilistic tasks, while untrained RNN models failed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by Figure 7A-D showing the expected TD-RPE patterns. This demonstrates that biological constraints do not impair the ability to learn complex probabilistic structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In oVRNNrf-bio, the angle between value weights w and random feedback c was smaller than 90\u00b0 from the beginning with no further alignment over trials, because the non-negative constraint ensures loose alignment by placing both vectors in the same quadrant, allowing random feedback to act like backprop feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 present quantitative observations from Figure 8A. Claims C103-C104 provide mechanistic explanation for loose alignment. The inference is logical and well-supported by the geometric constraint of non-negativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The w-c angle at 1500th trial showed no correlation with developed state values (r = 0.0117, p = 0.908), but the angle at initial trials (2nd-10th) was negatively correlated with developed values at 500th trial, suggesting that initial loose alignment supports learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 present correlation analyses with appropriate statistics supported by Figure 8B-C. The finding that initial but not late alignment matters is consistent with the loose alignment hypothesis and provides temporal insight into the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A few elements of w grew prominently during learning, but assuming slight value weight decay mitigated this growth and enabled alignment beyond initial loose alignment, though with slightly increased value error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by Figure 8E-G. The decay manipulation provides mechanistic insight and demonstrates that further alignment can occur under certain conditions, though at a cost to performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Extended models incorporating separate excitatory and inhibitory units (oVRNNbp-rev-ei and oVRNNrf-bio-ei) learned state values and probabilistic task structures much more accurately than untrained controls (p < 5.2\u00d710\u207b\u00b9\u00b2), showing similar behavior to original models with mixed weights, which can be regarded as simplified descriptions of E-I models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 present experimental results with appropriate statistics supported by Figure 9B-C. Claims C113-C114 provide mathematical justification for the equivalence between models. This demonstrates biological plausibility under Dale's law.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Models with biological constraints maintained learning ability in the presence of distractor cues, performing better than untrained controls (p < 1.7\u00d710\u207b\u00b9\u2070) despite moderate accuracy decrease, demonstrating robustness in realistic situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 present results from distractor experiments supported by Figure 10 with appropriate statistical tests. The demonstration of robustness to distractors is important for ecological validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Models incorporating actor-critic architecture (oVRNNbp-rev-ac and oVRNNrf-bio-ac) successfully learned to select advantageous actions in both simple and inter-temporal choice tasks, while untrained RNN models failed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 present results from action selection tasks supported by Figure 11. The extension to action selection demonstrates broader applicability of the approach, though the inter-temporal choice results show some dependence on RNN unit number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior work on feedback alignment in supervised learning showed that random feedback can replace transported weights, but whether this extends to TD learning with scalar errors (as in value-RNN) was non-trivial and previously untested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 document prior work on feedback alignment with appropriate citations. Claims C25-C29 identify the gap in prior work that motivates the current study. The distinction between supervised learning and TD learning is clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Biological considerations motivate non-negative constraints on neuronal activities, value weights, and random feedback (based on non-negative firing rates, excitatory projections, and Hebbian plasticity), as well as monotonic dependence on post-synaptic activity in plasticity rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 present biological constraints based on established knowledge (firing rates, projection types, plasticity properties) with appropriate citations. These provide clear biological motivation for the model modifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The models generate testable predictions about DA's role in cortical plasticity, alignment patterns between feedback and value weights, effects of DA silencing, and potential explanations for fMRI correlates of value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 present predictions and implications derived from the model results. These are appropriately framed as inferences and speculations. The predictions are specific enough to be testable, though some (like C127) are more directly testable than others (like C129).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior work has established that TDRL is implemented in cortico-basal ganglia-DA circuits, can achieve sophisticated behavior with appropriate state representations, and that representation learning is necessary in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 summarize established prior work with extensive citations. These provide important context for the study but are not novel findings. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The model architecture maps cortical RNN to state representation, striatal neurons to value encoding, and VTA DA neurons to TD-RPE, with specific assumptions about neural population correspondence, time scales (500ms per step), and training procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 describe the model architecture and assumptions. These are clearly stated and justified with citations where appropriate (e.g., C41 for time scale). The mapping to biological circuits is explicit and reasonable, though some assumptions (like C39) are speculative.",
+    "result_type": "MINOR"
+  }
+]

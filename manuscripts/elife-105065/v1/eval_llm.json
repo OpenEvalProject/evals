@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The Generalized Price equation reconnects the Price equation with statistics by generating a family of Price-like equations, one for each statistical model choice. The original Price equation is a special case corresponding to a linear model, and standard statistical model selection considerations now apply to choosing among Price-like equations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17, C18, C19, and C20 collectively establish the mathematical framework and its statistical interpretation. The manuscript provides mathematical derivations showing how different models generate different Price-like equations (C4, C17), demonstrates that the original Price equation is the linear special case (C18), and argues that this reconnects the Price equation with statistics (C3, C19, C20). The mathematical framework is presented with formal derivations in the appendices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C42",
+      "C43",
+      "C46",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "When the Generalized Price equation is applied with an underspecified model, the regression coefficients are not unbiased estimators of true model parameters and may depend on population state, but the equation remains an identity. This dependence on population state reflects model misspecification, not dynamic insufficiency as commonly claimed in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, C46, C50, and C51 establish key properties of underspecified models through mathematical analysis and examples (particularly Figure 1). The manuscript demonstrates that underspecification leads to biased coefficient estimates that vary with population state (C46, C51), while the Price-like equation remains an identity (C43). The distinction between misspecification and dynamic insufficiency (C50, C51) is argued conceptually and represents a reinterpretation of existing literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C69",
+      "C70"
+    ],
+    "result": "A general version of Hamilton's rule can be constructed that produces multiple Hamilton-like rules (one for each model specification), all of which are correct identities with equal generality, but differ in meaningfulness. A specific Hamilton's rule is only meaningful when based on an appropriately specified model for the evolutionary system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C22, C23, C26, C27, C69, and C70 establish the core theoretical contribution. The manuscript provides mathematical derivations showing how different models produce different Hamilton-like rules (C69, C70), demonstrates that all are identities with equal generality (C22, C26), and argues that meaningfulness requires appropriate model specification (C23). The nested hierarchy of rules is demonstrated through explicit examples with Models 1, 2, and 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "There exists a nested hierarchy of selection rules, starting with the simplest linear rule for non-social traits, nested within the classical Hamilton's rule for social traits with linear independent effects, which is itself nested within Queller's rule that allows for interaction effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C7, C8, C72-C76, and C106-C109 establish the nested hierarchy through mathematical derivations and explicit model specifications. The manuscript demonstrates how simpler models are special cases of more complex ones (C73, C74, C76), with each producing a corresponding rule. The hierarchy is clearly presented in Table 1 and supported by formal derivations showing how setting certain parameters to zero recovers simpler rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "When an underspecified rule is applied to a more complex model, it still correctly predicts the direction of selection but fails to reveal the actual population genetic dynamics. The appropriate rule should be selected based on model specification, not just correctness of directional prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C85, C99, C100, C101, and C102 establish that underspecified rules get direction right but lack meaningful interpretation. This is demonstrated through explicit examples with Models 1, 2, and 3 (C77, C79), showing that regression coefficients from underspecified models depend on population state (C90) and don't reflect true model parameters. Table 1 (C103) systematically presents all combinations, providing comprehensive evidence for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Being an identity that holds generally cannot be the sole criterion for selecting among Hamilton-like rules, because all such rules share this property. Additional criteria based on meaningfulness\u2014specifically, whether the rule separates model parameters from population state properties\u2014are needed to choose the appropriate rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C111-C118 establish the logical argument that generality alone is insufficient for rule selection. The manuscript demonstrates that all rules are identities with equal generality (C26, C113), argues that this cannot distinguish among them (C25, C114), and proposes meaningfulness as the appropriate criterion (C115, C116). The argument is supported by showing that meaningful rules separate parameters from population state (C116, C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C110",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "The debate over Hamilton's rule generality has been long-standing and contentious, with positions ranging from 'almost never holds' to 'as general as natural selection itself.' The debate has focused on whether rules are correct rather than whether they are meaningful, and has involved disputes over the Price equation's usefulness and the interpretation of population-state-dependent coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C12, C13-C15, C110, C119-C121, and C123 characterize the historical debate through extensive citations to the literature. The manuscript accurately represents opposing positions (C12) with appropriate citations, describes the evolution of derivation methods (C13, C14), and identifies key points of contention (C15, C16, C123). The characterization of the debate's focus on correctness vs. meaningfulness (C119) is supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C87",
+      "C133"
+    ],
+    "result": "The appropriate Hamilton-like rule for a given system should be determined empirically through statistical model selection with sufficient data, which will identify both the correct statistical model and the corresponding meaningful rule. Well-specified rules have constant parameters that do not vary with population composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C30, C87, and C133 establish methodological recommendations for empirical work. The manuscript argues that standard statistical principles apply to model selection (C28, C29, C87) and that constant parameters indicate good specification (C30). The recommendation to focus on fitness function form rather than whether Hamilton's rule holds (C133) follows logically from the theoretical framework. These are well-reasoned methodological implications of the mathematical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "The Generalized Price equation can be applied in modeling contexts under specific conditions (infinite population, zero-expectation error terms, fair meiosis), where models deterministically produce offspring generations and minimizing squared differences recovers model coefficients exactly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 and C57 describe the application of the framework to theoretical models. The conditions for application (C53) are stated with reference to detailed derivations in the appendix. The properties of infinite population models (C54, C55) are standard results in population genetics. The application to heterozygote advantage (C57) is stated with reference to appendix details, providing a concrete example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C75",
+      "C98"
+    ],
+    "result": "The general version of Hamilton's rule requires a two-variable setup with p-scores (genes for social behavior) and q-scores (partner's p-score). The classical Hamilton's rule corresponds to a model with linear effects of both p and q, while Queller's rule adds an interaction term between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 define the mathematical setup for social traits, while C75 and C98 specify the models corresponding to classical Hamilton's rule and Queller's rule. These are clearly stated definitions and model specifications supported by mathematical derivations. The connection to Queller's rule (C98) is appropriately cited and qualified with the assumption of perfect genotype-phenotype correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C50",
+      "C51"
+    ],
+    "result": "True dynamic insufficiency occurs when a model cannot predict future population states (e.g., cannot determine partner matching in the next generation). This is distinct from regression coefficients varying with population state, which reflects model misspecification rather than dynamic insufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124, C50, and C51 distinguish between genuine dynamic insufficiency and misspecification. The manuscript provides a clear example of true dynamic insufficiency (C124) and argues that population-state-dependent coefficients reflect misspecification (C51). This distinction is conceptually sound and addresses terminology issues in the literature (C50), though it represents a reinterpretation rather than new empirical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The general version of Hamilton's rule provides a constructive resolution to the debate by offering a framework for multiple models and rules. This has major implications for empirical research: whether Hamilton's rule holds is not a meaningful question; instead, researchers should determine which version applies to which trait.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 present the author's assessment of the contribution and its implications. The claim of resolution (C126) is supported by the mathematical framework developed. The characterization as constructive (C129) is accurate given the provision of alternatives. The implications for empirical research (C130-C133) follow logically from the theoretical results, though the assessment of 'major implications' (C130) is somewhat speculative. The reframing of empirical questions (C131, C133) is a reasonable consequence of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C7"
+    ],
+    "result": "Hamilton's rule was originally derived by Hamilton in 1964, and there is consensus that the classical version works for social traits with linear, independent fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C7 are historical statements supported by appropriate citations. The original derivation date (C10) is directly cited to Hamilton's 1964 papers. The claim of consensus (C7) regarding the classical version's applicability to linear, independent effects is a reasonable characterization of the field, though 'consensus' is somewhat strong given the documented debate.",
+    "result_type": "MINOR"
+  }
+]

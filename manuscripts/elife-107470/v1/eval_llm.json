@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C25",
+      "C29",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "DIRseq is a sequence-based method adapted from SeqDYN to predict drug-interacting residues in IDPs. The method was developed by implementing four changes to SeqDYN, including reassigning q parameters to downgrade hydrophobic interactions and upgrade electrostatic interactions, adjusting the correlation half-length parameter b to expect 3-4 residues to interact with a drug molecule simultaneously, eliminating terminal effects by padding sequences with Gln residues, and converting R2 values to drug-interacting propensities using a sigmoid function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C25, C29, C32, C34-C35 collectively describe the methodological development of DIRseq from SeqDYN. The modifications are clearly stated and justified based on physical reasoning (C29) and prior observations (C13, C16). The parameter choices are explained with logical rationale (C32, C34, C35), providing a coherent methodological framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "DIRseq correctly predicts three aromatic-centered drug-interacting motifs in p27 (R58KWN61, Y74EWQ77, and Y88Y89) that bind to SJ403, showing very strong correlation (r=0.82) with NMR CSP data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 demonstrate strong agreement between DIRseq predictions and experimental CSP data for p27. The specific motifs are identified (C41-C43), visual agreement is shown (C44), and quantitative correlation is high (C45, r=0.82). This represents successful validation of the method on a well-characterized system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "DIRseq correctly predicts drug-interacting residues in p21, identifying the first two motifs (W49N50 and F63A64) above the 50% threshold and the third motif below threshold, consistent with CSP data showing weaker binding at the third site due to amino acid composition differences from p27.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 show DIRseq correctly distinguishes between strong and weak binding sites in p21. The method predicts the first two motifs above threshold and third below (C47), consistent with CSP observations (C46). The amino acid composition explanation (C48-C49) provides mechanistic insight. Strong correlation (r=0.66, C51) supports the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DIRseq correctly predicts two drug-interacting motifs in p53 (L22WK24 and E51QWFT55) that bind EGCG, showing strong correlation (r=0.67) with NMR CSP data and agreement with MD simulation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 demonstrate successful DIRseq prediction for p53-EGCG binding. The two motifs are identified by both CSP (C52) and DIRseq (C54-C55), with MD simulation support (C53). The strong correlation (r=0.67, C56) validates the predictions. This represents independent validation on a different IDP-drug system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DIRseq identifies C-terminal drug-interacting residues in \u03b1-synuclein (A124YE126 and Y133QDYEP138) binding to Fasudil, showing moderate correlation (r=0.51) with CSP data. The correlation between CSPs elicited by two different compounds (Fasudil and Ligand 47, r=0.78) may represent an upper bound for CSP-DIRseq correlation since DIRseq does not use drug-specific information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 show DIRseq successfully identifies drug-binding regions in \u03b1-synuclein with moderate correlation (C59). The comparison between two different ligands (C62-C63) provides important context for interpreting the CSP-DIRseq correlation (C64), suggesting the method performs reasonably well given its sequence-only approach. The MD simulation context (C60-C61) adds validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Parameter optimization shows that DIRseq's final parameters (b=0.3, s1=m+1.5 SD) achieve optimal performance. Alternative models based solely on aromatic residues or stickiness parameters perform poorly, indicating that drug binding requires a balanced consideration of aromatic, electrostatic, and hydrophobic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C73, C77-C80 demonstrate systematic parameter optimization and comparison with alternative models. The aromatic-only model has poor TP-FP balance (C71), the stickiness model fails (C73), and the final parameter choices are justified (C77-C80). This provides evidence that the method captures appropriate physical interactions for drug binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CSP-identified drug-interacting motifs in the four well-characterized IDPs are all anchored on aromatic residues, which likely contributes to DIRseq's good performance. When clear aromatic signals are absent, consensus identification by CSP and DIRseq may be more reliable than either method alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 provide important insights into the method's scope and limitations. The observation about aromatic anchoring (C82-C83) is supported by the data from four IDPs. The speculation about combining methods (C84-C85) is reasonable and supported by examples from prior work (C86). This appropriately qualifies the method's applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DIRseq identifies drug-interacting residues in Tau-5* of the androgen receptor (R360DYY363, A396WAA399, W433H434) that were not definitively assigned by CSP alone due to small signal amplitudes. The predictions are supported by MD simulations showing high drug-contact probabilities for the latter two motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C98 demonstrate DIRseq's utility in cases where CSP data are ambiguous. The NMR studies (C87-C95) identified regions but did not assign specific residues, while DIRseq makes specific predictions (C96) that are supported by MD simulations (C97). The proposed expanded motifs (C98) represent reasonable consensus assignments combining multiple data sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "For NS5A-D2D3 binding to 5-fluorindole, where CSPs were nearly undetectable, DIRseq predicts the motif P310AWARPD316 as drug-interacting residues. An expanded motif A308LPAWARPD316 is proposed based on combining CSP and DIRseq data, and two additional motifs are predicted but remain to be tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 present predictions for a challenging case with very weak CSP signals (C100). While DIRseq makes specific predictions (C102, C104), the experimental validation is limited due to the weak CSP data. The speculation about ligand size (C101) is reasonable but unproven. The proposed motifs (C103) require experimental validation to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "For \u03b22 microglobulin binding to rifamycin SV, DIRseq predicts D59WSFY63 as drug-interacting residues. Combined with mutational data showing that F62A/Y63A/Y67A weakens binding, the major drug-binding site is proposed to be D59WSFYLLYY67, with an additional predicted motif K94WDR97.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 show successful integration of DIRseq predictions with mutational data. The DIRseq prediction (C109) overlaps with the mutationally-defined binding region (C106-C107), and CSP measurements were prevented by technical issues (C108). The proposed expanded motif (C110) represents a reasonable consensus combining computational and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "For the short IDP hIAPP (37 residues) binding to YX-I-1, DIRseq identifies T9QRLA13 and F15 as drug-interacting residues, which partially overlap with CSP identifications (R11, V17H18) using a lowered threshold (m+1.0 SD). The proposed primary binding site T9QRLANFLVH18 is also prone to \u03b1-helix formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 demonstrate DIRseq application to a short IDP with small CSPs (C113). The methodological adjustment for short sequences (C114) is reasonable. The partial overlap between DIRseq (C116) and CSP (C115) predictions supports the consensus assignment (C117). The connection to helix propensity (C118) provides additional structural context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "For A\u03b242 binding to myricetin, DIRseq predicts E3FRH6 and H13H14 as drug-interacting residues. Combined with NMR data showing prominent chemical shift movements and peak broadening at specific residues, the primary ligand-binding sites are proposed to be E3FRH6 and V12HHQKLV18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 show successful integration of DIRseq with qualitative NMR data. While CSPs were not calculated (C120), chemical shift movements and peak broadening (C121) provide experimental support. The DIRseq predictions (C122) overlap with the NMR observations, and the proposed binding sites (C123) represent reasonable consensus assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "For c-Myc binding to multiple compounds, DIRseq predicts two motifs (E363RQRR367 and K371RSFFA376) that overlap with CSP-identified sites, and a third motif (K397KATAY402) with moderate propensities. Combining CSP and DIRseq data, three revised drug-binding sites are proposed: E363RQRRNELKRSFF375, S373FFALRDQI381, and K397KATAYILS405.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 demonstrate DIRseq's utility for a complex case with multiple binding sites and compounds. The reanalysis of CSP data with a more stringent threshold (C129) is methodologically sound. DIRseq predictions (C130-C131) show good agreement with CSP for two sites and moderate agreement for the third. The revised binding sites (C132) represent reasonable consensus assignments supported by multiple compounds (C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "DIRseq is the first sequence-based method to predict drug-interacting residues of IDPs. Assessment against NMR CSP demonstrates its accuracy. Drug-binding motifs are anchored on aromatic residues for \u03c0-\u03c0 interactions, and the method's success without drug-specific information suggests IDPs may have a relatively simple sequence code for drug binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 summarize the main findings. The novelty claim (C134) appears valid based on the literature cited. The accuracy assessment (C135) is supported by the correlation data from multiple IDPs. The mechanistic insights about aromatic anchoring (C136) are well-supported. The speculation about a simple sequence code (C138) is reasonable given the method's success (C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The same drug can bind to different IDPs (e.g., EGCG binds to multiple IDPs, 10074-G5 binds to c-Myc and A\u03b242), while different compounds can bind to distinct sites on a single IDP (e.g., c-Myc, p27). Chemical properties of compounds (e.g., aromaticity, electronegative group orientation in SJ403) may explain binding site selectivity. Future development should incorporate drug-specific parameters when more data become available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C149 provide important context about drug-IDP binding promiscuity and specificity. The examples of cross-binding (C140-C141) and site-specific binding (C142-C144) are well-documented in the cited literature. The chemical reasoning about SJ403 vs SJ710 (C145-C148) is sound. The suggestion for future development (C149) is reasonable and appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "DIRseq offers fast speed and a direct link between sequence and drug-binding propensity. The method can be used to define IDP fragments for in-depth MD simulations and NMR studies, as shorter constructs reduce computational cost and experimental challenges. CSP, MD simulations, and DIRseq are orthogonal approaches with great potential to complement each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C160 discuss practical applications and limitations. The narrow drug size range (C151) is acknowledged. The proposed applications for fragment selection (C154, C158, C160) are reasonable and supported by examples from prior work (C156-C157). The advantages of DIRseq (C153) are clear. The statement about complementary approaches (C152) is well-justified by the examples presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Drug-binding sites predicted by DIRseq can guide virtual screening against IDP conformational ensembles, drastically reducing computational cost. The subset of conformations generating high docking scores at known sites can provide insight into drug action mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C164 propose applications for virtual screening. While virtual screening against IDPs has been conducted (C161), the utility of DIRseq for guiding such screening (C162) remains speculative and untested. The logical reasoning about computational cost reduction (C163) and mechanistic insights (C164) is sound, but experimental validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "IDPs are recognized drug targets, with NMR CSP as the primary experimental method for identifying drug-interacting residues. Aromatic residues are frequently involved in drug binding through \u03c0-\u03c0 interactions with aromatic-rich drug molecules. MD simulations provide atomic details but suffer from force field inaccuracies and sampling limitations. CSPs can be small and difficult to interpret due to spectral resolution limits or conformational changes upon binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 establish the scientific context and motivation for the study. These claims are well-supported by extensive citations to published literature (C1-C10, C12) and established knowledge about MD simulation limitations (C11). This background appropriately frames the need for the DIRseq method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Drug-interacting residues overlap with residues exhibiting elevated R2 values, which are caused by local inter-residue interactions or residual secondary structures. This observation motivated the development of DIRseq from SeqDYN, based on the premise that propensities for intramolecular interactions (elevating R2) should be similar to those for intermolecular interactions with drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 establish the conceptual foundation for DIRseq. The observation about R2 overlap (C13) is supported by citations. The mechanistic understanding of elevated R2 (C14) and the development of SeqDYN (C15) provide the basis for the adaptation. The key premise (C16) is reasonable and forms the logical foundation for the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C165",
+      "C166"
+    ],
+    "result": "IDP conformations were generated using the TraDES method, and docking of EGCG onto p53 was performed using SwissDock with Autodock Vina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166 describe computational methods used for generating example docking poses. These are standard, well-established methods appropriately cited. The docking results are presented as illustrations rather than primary validation data.",
+    "result_type": "MINOR"
+  }
+]

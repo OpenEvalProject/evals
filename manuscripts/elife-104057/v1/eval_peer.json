@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors generated a Halo-TDP-43 knock-in iPSC line by endogenously tagging the N-terminus of TDP-43 with HaloTag. The knock-in was heterozygous with a normal karyotype, and imaging showed nuclear localization of Halo-TDP-43 as expected. Western blot analysis confirmed the tag with appropriate molecular weight shift, though Halo-TDP-43 expression was ~60% of endogenous TDP-43.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accepted this foundational tool without criticism. Reviewer 1 noted the study is 'convincing,' Reviewer 2 described it as 'state-of-the-art,' and Reviewer 3 called it 'highly significant' with 'novel' methods. No concerns were raised about the knock-in line generation or characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A genome-wide CRISPRi FACS-based screen was performed in both iPSCs and iNeurons using a dual sgRNA library that enabled 1000x genome coverage by sorting 20 million neurons. The screen successfully identified genes that decrease TDP-43 levels, as evidenced by sgRNAs targeting TARDBP decreasing Halo-TDP-43 levels in both screens, with non-targeting guides clustering in the middle of rank plots.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers unanimously praised the screen methodology. Reviewer 1 stated it 'identifies a number of genes and pathways,' Reviewer 2 emphasized 'the novelty and information provided by the CRISPRi screen,' and Reviewer 3 noted 'high reproducibility' and that it 'demonstrated to yield novel results.' No methodological concerns were raised about the screen design or execution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C64",
+      "C80",
+      "C93",
+      "C95"
+    ],
+    "result": "All eight components of the BORC complex were identified as hits specifically in the iNeuron screen but not the iPSC screen, decreasing Halo-TDP-43 levels. This finding was validated by both CRISPRi knockdown and CRISPR knockout approaches, with consistent effects on both Halo-tagged and endogenous TDP-43 by immunofluorescence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers highlighted BORC as a key finding. Reviewer 1 noted BORC 'is required for anterograde lysosome transport as one such regulator,' Reviewer 2 stated the authors 'uncover the lysosomal transport complex BORC as a regulator of TDP-43 protein levels,' and Reviewer 3 emphasized BORC as 'a novel TDP-43 expression modifier that has never been described before.' The cell-type specificity (neurons vs iPSCs) was implicitly accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C72",
+      "C75",
+      "C76",
+      "C79",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Meta-analysis of the Halo-TDP-43 screen with publicly available CRISPRi screens in iNeurons revealed common pathways across screens (including ubiquitination, neddylation, autophagy, protein targeting, cell division/differentiation) that are likely responsible for generic protein level maintenance, enabling identification and ranking of TDP-43-specific hits like BORC.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the meta-analysis approach without criticism. Reviewer 2 noted 'the methods and concepts will have an impact to the larger community,' and Reviewer 3 stated the work 'could eventually be used to search for expression modifiers of many other proteins.' The distinction between common and specific pathways was implicitly validated by reviewers' focus on BORC as a specific hit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C41",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "BORC knockdown reduced TDP-43 protein levels but did not affect TDP-43 mRNA levels, as demonstrated by qPCR showing unchanged or slightly increased TDP-43 mRNA upon BORCS6 KD, and RNA sequencing confirming no change in TDP-43 transcript levels despite ~50% reduction in BORCS6 mRNA. This indicates BORC affects TDP-43 protein levels independent of transcript expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly accepted this finding. Reviewer 3 stated BORC 'seemingly acts on regulating protein half life rather than transcriptome level,' directly acknowledging the mRNA vs protein distinction. Reviewer 1 noted BORC affects 'TDP-43 protein, but not mRNA, levels.' No concerns were raised about the RNA measurements or interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C42",
+      "C138",
+      "C140",
+      "C141",
+      "C173"
+    ],
+    "result": "Dynamic SILAC proteomics revealed that BORC loss resulted in longer half-life of TDP-43 and many other proteins in the proteome, with effects observed at both day 7 and day 15 (though reduced at later timepoints). This suggests protein degradation is decreased in BORC KD neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged this finding, with Reviewer 2 noting 'BORC subunit knockouts impair lysosomal function, leading to slower protein turnover' and highlighting 'the somewhat paradoxical findings that even though the tagged TDP-43 protein is reduced in the screen...there is a longer TDP-43 half-life with BORC KD.' Reviewer 3 stated this 'has for the time identified one of these factors which could account for these differences' in reported TDP-43 half-lives. The paradox was noted but the data were accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C106",
+      "C107",
+      "C179",
+      "C180"
+    ],
+    "result": "Lysosome function and location influenced Halo-TDP-43 levels in iNeurons. Multiple lysosome-disrupting drugs (chloroquine, CTSBI, NH4Cl, GPN) and protein translation inhibitors (anisomycin, CHX) decreased Halo-TDP-43 levels, while other drugs (BafA1, LLOME, apilimod) did not, indicating that active and properly localized lysosomes are required for maintenance of TDP-43 levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the lysosomal connection. Reviewer 2 stated the study 'implicating lysosomal activity in the regulation of TDP-43 levels' and noted 'the importance of localized lysosome activity in axons.' Reviewer 1 noted BORC 'is required for anterograde lysosome transport.' The drug experiments supporting this conclusion were not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Live-cell imaging showed that motile Halo-TDP-43 in neurites was most often associated with lysosomes rather than mitochondria, and upon restricting lysosomes to the soma by BORC knockdown, the fraction of motile Halo-TDP-43 in the periphery was reduced.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accepted this finding as part of the mechanistic link between BORC, lysosomes, and TDP-43. Reviewer 2 noted the study 'show a mechanistic link between lysosome mislocalization and TDP-43 dysregulation' and 'highlights the importance of localized lysosome activity in axons.' No concerns were raised about the live imaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "BORCS6 KD did not induce cryptic exon inclusion in commonly mis-spliced genes (STMN2, UNC13A) despite reducing TDP-43 protein levels to ~60% of normal (compared to ~20% with direct TDP-43 KD). This suggests BORCS6 KD does not reduce TDP-43 sufficiently to cause functional loss of splicing repression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged this finding as part of the paradoxical phenotype. Reviewer 2 explicitly noted 'the work also sets up for further work to understand the somewhat paradoxical findings that even though the tagged TDP-43 protein is reduced in the screen, it does not alter cryptic exon splicing.' This was treated as an interesting observation requiring future investigation rather than a flaw in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "Microscopy-based validation showed that 34 of 59 (58%) tested genes altered Halo-TDP-43 levels, and 18 of 22 (82%) genes tested showed changes in endogenous TDP-43 by immunofluorescence. However, many genes (particularly those involved in ubiquitination and m6A RNA methylation) changed untagged TDP-43 in the opposite direction from Halo-TDP-43.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the validation approach and results. The discrepancy between Halo-tagged and endogenous TDP-43 for some genes was noted in the manuscript but not criticized by reviewers. The focus remained on BORC, which showed consistent effects in both assays. Reviewer 1's statement that the study is 'convincing' and Reviewer 2's emphasis on 'high reproducibility' suggest acceptance of the validation strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C170",
+      "C171"
+    ],
+    "result": "The initial hypothesis that BORC loss would reduce neuritic translation of TDP-43 was not supported by SunTag translation assays, which showed no change in TDP-43 translation upon BORC knockdown. This led to focusing on protein degradation rather than synthesis as the mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this negative result and the resulting shift in mechanistic focus. Reviewer 3 noted the work 'has for the time identified one of these factors' affecting TDP-43 half-life, implicitly accepting the degradation-focused mechanism. The transparency about the initial hypothesis being incorrect was not criticized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "RNA sequencing of BORCS6 KD neurons identified 98 upregulated and 139 downregulated genes with GO enrichment for neuron development and axon outgrowth. Many polyA sites changed upon BORCS6 KD, but TDP-43 polyA site usage was unchanged, ruling out alternative polyadenylation as an explanation for altered TDP-43 protein levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the RNA-seq findings or the conclusion that alternative mechanisms beyond transcription/polyadenylation must explain the protein level changes. This supports the overall narrative that BORC acts post-transcriptionally on TDP-43 protein stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The screen identified that knockdown of genes related to mitochondrial function decreases Halo-TDP-43 levels, while knockdown of genes involved in RNA processing increases Halo-TDP-43 levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these findings as part of the broader screen results. Reviewer 1 noted the screen 'identifies a number of genes and pathways,' and Reviewer 2 stated it provides 'information' that will 'have an impact to the larger community.' These pathway-level findings were not specifically critiqued.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "Comparison of KEGG and REACTOME pathway enrichment showed overlap between proteins with longer turnover times in BORCS6 KD neurons and mRNAs whose localization is altered in BORC KO neurons (from prior literature), including ribosome and biosynthetic pathways.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This cross-validation with published data was not challenged by reviewers and supports the mechanistic model linking BORC-mediated lysosome transport to both mRNA and protein localization/turnover.",
+    "result_type": "MINOR"
+  }
+]

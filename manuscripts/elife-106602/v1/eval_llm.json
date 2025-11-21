@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mesoscale simulations reproduce experimentally observed multiphase separation in PSD proteins. In 3D solution, active CaMKII induces core-shell droplets with AMPAR/PSD-95 at the core and NMDAR/CaMKII in the shell. In 2D membrane systems, the morphology reverses with NMDAR/CaMKII clustering centrally and AMPAR peripherally. CaMKII activation is necessary for multiphase separation in both systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C56 collectively demonstrate that simulations reproduce experimental observations in both 3D and 2D systems (C30, C31, C44-C56), validate against experimental data (C46, C56), and establish CaMKII activation as the trigger for multiphase separation (C47-C50). The simulation results are internally consistent and match cited experimental studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Specific interactions are similar between 3D and 2D systems, but non-specific interactions are markedly reduced (up to 10-fold) in 2D. Despite smaller clusters in 2D, CaMKII exhibits higher effective valency by binding more NMDARs per complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 present quantitative analysis of interaction networks from simulations (Figure 3A, 3B). The 10-fold reduction in non-specific interactions (C60-C61) and increased effective valency in 2D (C62-C63) are directly supported by simulation data, providing mechanistic insight into the morphology differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "In 2D systems, the four molecular complexes adopt a layered organization with CaMKII predominantly oriented horizontally to the membrane with hexagonal kinase domains attached to the membrane plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe spatial organization derived from simulation analysis (Figure 3C-E). The layered distribution and horizontal CaMKII orientation (maximum frequency at 0\u00b0 angle) are quantitatively demonstrated in the simulation data, explaining how membrane geometry affects molecular arrangements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C32",
+      "C33",
+      "C34",
+      "C80"
+    ],
+    "result": "CaMKII has two competing effects on multiphase morphology: multivalent specific interactions favor NMDAR-containing phase inside, while large excluded volume favors it outside. The balance differs between 3D (volume dominates) and 2D (multivalency dominates) due to layered organization reducing excluded volume effects in 2D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C32-C34, C80 present the central mechanistic hypothesis supported by multiple lines of simulation evidence: interaction analysis (C57-C63), layered organization (C64-C65), and perturbation experiments (C68-C75). The hypothesis coherently explains the reversed morphologies and is substantiated by interfacial tension calculations (C77, C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In 3D systems, reducing CaMKII volume inverts multiphase morphology: at 2/3 radius, Janus droplets form; at 1/2 radius, NMDAR phase moves inside. Reducing CaMKII valency does not change 3D morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe systematic perturbation experiments (Figure 4) that test the hypothesis about competing effects. The volume reduction results (C68-C70) support the role of excluded volume in 3D, while the lack of effect from valency reduction (C71) confirms that non-specific interactions dominate in 3D. Data are clearly presented in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In 2D systems, reducing CaMKII valency progressively shifts morphology: at valency 6, mixed morphologies appear; at valency 3, homogeneous clusters form with no segregation. Reducing CaMKII volume in 2D increases rigidity and complete separation of AMPAR and NMDAR clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 present complementary perturbation experiments in 2D (Figure 5) showing that multivalent interactions dominate in 2D systems. The progressive changes with valency reduction (C72-C74) and the distinct effect of volume reduction (C75) are well-documented in simulation snapshots and quantitative distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C79"
+    ],
+    "result": "Interfacial tension calculations qualitatively explain observed multiphase morphologies. For wild-type CaMKII in 3D, the core-shell morphology with AMPAR at core and NMDAR in shell is most stable based on interfacial tension relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C79 describe interfacial tension analysis (Figure 6) that provides thermodynamic rationalization for observed morphologies. While acknowledging limitations in quantitative accuracy (discussed in text), the overall trends support the mechanistic interpretation. The analysis uses established Kirkwood-Buff methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A mesoscale model represents PSD proteins at domain resolution with parameters calibrated to experimental dissociation constants: TARP-PSD95 (2.66 \u03bcM), GluN2Bc-PSD95 (1.19 \u03bcM), and GluN2Bc-CaMKII (0.10 \u03bcM). GluN2Bc can bind both PSD-95 and CaMKII simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 describe the computational model and its parameterization (Figure 1, Methods). The model design is clearly specified with appropriate domain resolution (C35-C39), and parameters are calibrated to experimental measurements from cited studies (C40-C42). The simultaneous binding capability (C43) is supported by structural knowledge of binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Simulations show NMDAR nanodomains near the membrane center and AMPAR at periphery, consistent with in vivo observations. This suggests postsynaptic proteins alone may be sufficient to form observed nanodomain morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 compare simulation results to experimental observations and draw implications. C83 is well-supported by both simulation data and cited in vivo studies. C84 is a reasonable inference given that simulations lack presynaptic/cleft proteins yet reproduce key features, though it remains speculative about sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In 2D systems, NMDAR-containing domains have larger boundary costs than AMPAR domains based on fluctuation analysis. Multivalence, not dissociation constant, is the primary determinant of interfacial cost and domain morphology. NMDARs migrate outward when CaMKII valency decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 present analysis of 2D domain properties using capillary-wave theory and perturbation experiments. The inference about boundary costs (C85) is supported by fluctuation data (C52). The primacy of multivalence (C86) is demonstrated by experiments showing Kd changes don't affect morphology while valence changes do (Figure 2-supplement 1, Figure 5). C87 is directly observed in simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "Coordination number differences between 3D and 2D systems explain the balance of interactions. In 3D, large coordination allows both specific and many non-specific interactions. In 2D, smaller coordination limits interactions, prioritizing specific over non-specific ones. Thus, multivalency is more important on membranes than in 3D solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91, C93 provide theoretical framework explaining why dimensionality affects interaction balance. The reasoning is sound: coordination number is geometrically constrained by dimensionality (C88), and competitive binding under limited coordination favors stronger specific interactions (C91). This framework coherently explains the simulation observations (C57-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The modulation of specific vs non-specific interaction balance by membrane geometry is proposed as a general phenomenon beyond PSD. This is supported by observations in other systems (Nephrin/Nck/N-WASP, multiphase LLPS at interfaces) and may explain differential evolution of membrane-associated vs nuclear condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92, C94-C99, C104-C106 extrapolate findings to general principles and other systems. While the core PSD findings are solid, the generalization is speculative (C92, C99, C105, C106 are explicitly speculation). Supporting evidence from other systems (C94-C98) is cited but not directly tested. The hypothesis is plausible and well-reasoned but requires additional experimental validation across diverse systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background on biomolecular condensates: multi-component condensates can separate into multiple phases with various morphologies (core-shell, nested) that serve functional roles. Morphology is determined by molecular sequences and interactions, including multivalent attractions (associative) and excluded volume effects (segregative).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide established background knowledge supported by multiple citations to prior literature. These are well-accepted principles in the condensate field and appropriately contextualize the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "PSD is a protein condensate beneath the postsynaptic membrane that exhibits puzzling reversed multiphase morphology between solution and membrane systems. PSD condensation is functionally important for synaptic plasticity, memory/learning, and is associated with pathologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 establish PSD as the model system and motivate the study. The reversed morphology puzzle (C10) is supported by cited experimental studies. The functional significance (C12-C15) and pathological associations (C16) are well-documented in cited literature, providing strong rationale for the investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CaMKII triggers nanodomain formation and has two key properties: high multivalency (12-14 subunits binding GluN2B) promoting LLPS, and large size (15-35 nm diameter) that can disrupt LLPS through excluded volume. Extension of CaMKII linker disrupts condensate formation, suggesting volume-based repulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 characterize CaMKII properties relevant to the study. The triggering role (C17), abundance (C18), multivalency (C19-C21), and size (C22) are supported by cited experimental studies. The linker extension experiment (C23) and its interpretation (C24) provide evidence for volume effects. The synthesis (C25) appropriately summarizes these opposing properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Experimental observations show CaMKII activation induces multiphase separation with reversed morphologies: in vivo, NMDAR is central and AMPAR peripheral on membranes; in vitro solution, AMPAR/PSD-95 form the core and NMDAR/CaMKII the shell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 summarize key experimental observations from cited studies (Hosokawa et al., 2021; Hruska et al., 2022) that motivate the computational investigation. These establish the puzzle that the simulations aim to explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Discussion of functional significance and broader context: receptor nanodomain segregation has functional importance for synaptic transmission. Membrane-associated condensates are linked to various cellular processes and typically involve multidomain proteins with specific multivalent interactions, contrasting with nuclear condensates rich in IDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C100-C103 provide functional context and compare different condensate systems. The functional significance (C81-C82) is supported by cited studies. The characterization of membrane-associated (C100-C101) vs nuclear (C102-C103) condensates is based on established literature and appropriately contextualizes the findings.",
+    "result_type": "MINOR"
+  }
+]

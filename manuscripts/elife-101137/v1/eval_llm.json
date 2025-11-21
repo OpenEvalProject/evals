@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "T-ALL represents 10-15% of pediatric and 25% of adult acute lymphoblastic leukemia cases, originates in the thymus, and is characterized by gain-of-function mutations in NOTCH1 (>50% of patients) and IL7R (~10% of patients) genes. These mutations have demonstrated leukemogenic potential across vertebrate models, reflecting evolutionary conservation of thymic developmental mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by citations to peer-reviewed literature (Vadillo et al., 2018; Liu et al., 2017; multiple studies for C7; Bajoghli et al., 2019). These claims establish the epidemiological and molecular background for T-ALL and are appropriately referenced to prior work. The statistical data and mechanistic insights are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The virtual thymus model simulates individual thymocytes in a spatially resolved computational framework representing 1/10 of a medaka embryonic thymus. The model spans 8.3 days of simulation time (48,000 steps \u00d7 15 seconds/step) and reaches homeostasis with ~100 cells, which corresponds to the experimental observation of 877\u00b1146 thymocytes at 11 dpf in medaka when scaled appropriately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 describe the computational model setup and validation. The model parameters are clearly defined (C11-C14), and the validation against experimental data (C15-C16) shows good agreement within error margins. The scaling factor (1/10 of organ volume) is explicitly stated and the population dynamics match experimental observations, supporting the model's validity as a representation of medaka thymus development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The virtual thymus model implements key biological features: all TECs express Dll4, a subset release IL-7 creating a spatial gradient, ETPs uniformly express Notch1, and IL7R expression varies randomly (0-1) per lineage. The cell cycle averages 7 hours with G1-S-G2-M phases, requires pro-proliferative signals during G1, and stops after differentiation, allowing up to 4 rounds of division. Selection is modeled probabilistically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 describe model implementation details that are consistent with cited prior work (Aghaallaei et al., 2021, 2022) and biological observations (Ruijtenberg and van den Heuvel, 2016 for C22). The model parameters are clearly defined and biologically motivated. The 7-hour cell cycle and up to 4 division rounds are supported by citations and appear reasonable for the system being modeled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TEC architecture (size, protrusion number, density) synergistically modulates thymocyte population size. Experimental confocal imaging shows thymocytes occupy 53\u00b13% and TECs 47\u00b13% of thymic area, matching in silico predictions (56\u00b12% and 44\u00b12%). Increasing TEC density, size, and protrusions nearly doubled thymocyte numbers (200\u00b113 vs 98\u00b17 reference), while reducing these parameters halved population size (45\u00b11 to 51\u00b12). Statistical analysis confirmed all three parameters and their interactions significantly predict population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 present a systematic computational exploration of TEC architecture effects, validated by experimental measurements. The in silico and experimental tissue density measurements are remarkably consistent (C26-C27). The systematic parameter variation (C28-C31) with appropriate replicates (N=3-19) and statistical validation (C32) including interaction effects (C33) provides strong evidence for synergistic effects (C34). The statistical analysis appears rigorous with reference to supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Spatial distribution of IL-7 critically impacts thymocyte proliferation. When all TECs express IL-7 (scenario 27), population size (155\u00b111) was similar to increased TEC architecture (scenario 26: 200\u00b113), despite higher average IL-7 levels in scenario 27. Spatially restricted IL-7 at the organ periphery (scenario 26) is more effective because thymocytes enter where IL-7 is highest and migrate to IL-7-depleted centers as they become non-proliferative, whereas ubiquitous IL-7 (scenario 27) requires cell migration deeper into the organ before effects manifest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 demonstrate sophisticated spatial modeling revealing that IL-7 distribution pattern matters more than average concentration. The simulation results (C35-C36) are well-documented with appropriate replicates. The mechanistic explanation (C37-C41) is logical and consistent with cited prior work on thymocyte migration patterns (Aghaallaei et al., 2021). This represents an important insight about spatial organization that would be difficult to test experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Experimental validation in medaka confirms IL-7's critical role in thymocyte proliferation. IL-7 knockout (il7 crispant) embryos showed fewer thymocytes, smaller thymus size, and reduced pH3+ mitotic cells. Conversely, TEC:IL-7HI embryos with elevated IL-7 had visibly larger thymuses and significantly increased pH3+ cells. These results confirm evolutionary conservation of IL-7's proliferative role and suggest regulatory crosstalk between thymocyte proliferation and TEC architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide strong experimental validation of computational predictions using CRISPR knockout and overexpression approaches. The use of pH3 as a mitotic marker is appropriate, and the bidirectional manipulation (loss and gain of function) strengthens conclusions. The evolutionary conservation claim (C46) is supported by citation to Iwanami et al., 2011. The inference about TEC-thymocyte crosstalk (C47) is reasonable given the thymic size changes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "IL7R signaling dynamics significantly affect thymocyte population size. High signal activation with low deactivation yielded maximum cells (274\u00b111, scenario 45), while the opposite yielded minimum (42\u00b11, scenario 29). Statistical analysis confirmed both activation and deactivation rates are significant predictors. IL-7 depletion by thymocytes had limited effect (91\u00b111 vs 98\u00b17 reference) and was not statistically significant overall, though effects were more pronounced at higher cell numbers, suggesting self-inhibition via IL-7 depletion occurs only at very high cell densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 systematically explore IL7R signaling parameters with appropriate statistical analysis. The parameter sweep is well-designed with adequate replicates (N=4-19). Statistical significance is properly assessed (C50, C52) with reference to supplementary figures. The observation that IL-7 depletion effects are density-dependent (C53-C54) is a nuanced finding that demonstrates model sophistication. The inference about self-inhibition (C54) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Introducing IL7RDA or IL7RHI lesioned clones into simulations showed they acquire proliferative advantage (4.20\u00b10.34 and 4.10\u00b10.13 rounds of division respectively) compared to non-lesioned clones (1.04\u00b11.26 rounds), resulting in nearly eightfold larger clone size. However, this represents only one additional division round compared to the upper range of non-lesioned clones, leading to the prediction that single IL7R lesions alone are not clinically impactful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 introduce lesioned clone modeling with clear quantification. The clonal analysis (C55-C57) shows appropriate statistical reporting with means and standard deviations. The proliferative advantage is well-documented (C58), but the interpretation (C59) that single lesions are insufficient for clinical impact is appropriately conservative given the modest effect size. This sets up the rationale for exploring combinatorial effects in subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A systematic computational screen of 1580 scenarios explored combinations of TEC architecture, IL-7 signaling, proliferation parameters, and secondary lesions (reduced motility, autocrine IL-7, delayed differentiation). Lesioned clones consistently showed higher proliferation than non-lesioned counterparts, disproportionally gaining up to 6 rounds of division (vs 2 for normal clones) under increased proliferation conditions. This advantage results from cell crowding: early-arriving lesioned clones can proliferate massively and surround TECs, preventing later non-lesioned clones from accessing pro-proliferative signals, while lesioned clones proliferate despite lacking TEC contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 describe an extensive systematic exploration with clear documentation of scope (1580 scenarios, C61). The citation supporting autocrine IL-7 production (Buffi\u00e8re et al., 2019, C60) grounds this choice in patient data. The consistent proliferative advantage (C62-C65) is well-documented across multiple parameter combinations. The mechanistic explanation involving cell crowding (C66-C67) is logical and supported by video evidence (Figure 4\u2014video 2), representing an emergent property of the spatial model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Modifying IL-7 activity parameters enhanced proliferation of non-lesioned clones (up to 3 rounds of division between extremes) but showed no impact on IL7RHI or IL7RDA clones. For IL7RHI clones, 10-fold receptor overexpression is sufficient to activate downstream pro-proliferative effects regardless of IL-7 parameter permutations tested, while IL7RDA clones are inherently insensitive to IL-7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 reveal differential responses to IL-7 signaling modulation between lesioned and non-lesioned clones. The observation that IL7RHI clones are saturated at 10-fold overexpression (C69) is a reasonable inference from the data showing no additional response to IL-7 parameter changes. The contrast with normal clone behavior (C70) strengthens the conclusion that lesioned clones have fundamentally altered signaling dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Among secondary lesions tested, delayed differentiation was the most critical for conferring proliferative advantage, essentially doubling the proliferative phase duration and enabling up to 8 rounds of cell division (double that of single IL7R lesions). Reduced cell motility and autocrine IL-7 production showed no added effect when combined with IL7R lesions. This finding aligns with in vivo data implicating differentiation perturbations in cancer initiation and progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 identify delayed differentiation as the key secondary lesion through systematic testing. The quantitative result (8 vs 4 rounds, C74) is clearly stated. The lack of effect from other lesions (C71-C72) is important negative data. The connection to cancer biology (C75) is appropriately supported by citation (Ruijtenberg and van den Heuvel, 2016), placing findings in broader context. This represents a key mechanistic insight about the importance of differentiation control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Unexpectedly, sparse TEC networks amplified lesioned clone expansion while dense TEC networks inhibited it (opposite to non-lesioned clones). Lesioned clones lost 2 rounds of division with increased TEC density while non-lesioned clones gained 2 rounds. The most extreme scenario showed 18 rounds of division in lesioned clones\u2014far exceeding the 12 rounds predicted from additive effects of individual parameter changes\u2014indicating synergistic interactions. At 18 rounds, lesioned clone volume exceeded the simulated organ volume by >1000-fold, suggesting this would cause thymus hyperplasia in vivo, consistent with experimental observations that IL-7 manipulations directly affect organ size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 present a counterintuitive and important finding about TEC density effects. The systematic documentation (C76-C78) with clear quantification (C77, C79) supports the conclusion. The synergistic effect calculation (C79) explicitly shows non-additivity (18 vs 12 predicted rounds). The volume calculation (C81-C82) provides physical context for the biological implications. The experimental validation (C84) strengthens confidence in the prediction. This represents a novel, experimentally-testable prediction about niche-lesion interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The mechanism underlying sparse TEC benefit for lesioned clones involves NOTCH1 signaling dynamics. In sparse TEC environments, reduced NOTCH1-DLL4 engagement prolongs the undifferentiated proliferative state (turnover time ~80 hr vs <60 hr in dense TECs). While normal clones require both NOTCH1 and IL7R signals for proliferation, lesioned clones with constitutively active IL7R signaling can proliferate without NOTCH1 engagement, thus benefiting from prolonged proliferative windows in sparse TEC conditions. Dense TEC networks promote differentiation, which terminates proliferation in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 provide a mechanistic explanation for the sparse TEC advantage through the model's implementation of NOTCH1 signaling. The turnover time measurements (C91) provide quantitative support. The logic is internally consistent with the model structure where NOTCH1 promotes both proliferation and differentiation (incoherent feed-forward loop). The inference that lesioned clones bypass NOTCH1 requirements (C93) follows logically from the constitutive IL7R activation. This represents sophisticated mechanistic insight from the computational model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The model implements NOTCH1 signaling as an incoherent feed-forward loop: NOTCH1 promotes proliferation and accelerates differentiation, while differentiation inhibits proliferation. IL7R promotes proliferation independently without affecting differentiation. Simulations predicted that NOTCH1DA lesions alone confer minimal advantage (marginally above high endogenous IL7R), while delayed differentiation lesions substantially increase proliferation. Adding NOTCH1DA to IL7R lesions showed no effect, but combining delayed differentiation with IL7R lesions doubled proliferation, indicating that global NOTCH1 modulation is ineffective due to feedback inhibition, but specifically targeting differentiation enables clonal expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 describe the NOTCH1 signaling implementation and its effects on lesioned clones. The incoherent feed-forward loop structure (C95) is well-established in biology and appropriately cited (Aghaallaei et al., 2021). The simulation results (C97-C100) clearly distinguish between global NOTCH1 activation (ineffective) and differentiation-specific effects (effective). The mechanistic interpretation about feedback inhibition (C101) is reasonable given the model structure. This sets up important predictions for experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Experimental validation in medaka showed that NICD\u2206PEST alone (N=32) did not cause thymus hyperplasia at 11 dpf, supporting the model prediction that NOTCH1 activation alone is insufficient within 8 days. However, combining NICD\u2206PEST with mycn resulted in 25% thymus hyperplasia (N=36), with 8% showing T-ALL with organ infiltration. Analysis revealed ectopic il7 expression in transformed thymocytes while endogenous il7r remained unchanged. MYCN, a downstream effector of NOTCH1 in thymocytes, likely shifts the proliferation-differentiation balance toward proliferation, and transformed cells acquire autocrine IL-7 production capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 provide strong experimental validation with appropriate sample sizes and clear phenotypic criteria. The negative result with NICD\u2206PEST alone (C103) validates the model prediction. The positive result with NICD\u2206PEST+mycn (C104-C105) demonstrates the importance of downstream effectors. The molecular analysis (C106-C107) using FACS sorting and qPCR/WISH provides mechanistic insight. The interpretation about MYCN's role (C108-C109) is well-supported by citations. The autocrine IL-7 finding (C110) represents an important emergent property of transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "IL7R overexpression experiments showed thymus hyperplasia in 26% (il7r, N=49) or 59% (il7rNPC, N=29) of embryos. The il7rNPC condition showed significant lck upregulation compared to WT, while il7rHI did not. Combining il7rNPC with NICD\u2206PEST and mycn yielded 73% thymus hyperplasia (N=33) with 33% showing T-ALL phenotype, suggesting additive effects. GFP/pH3 double staining confirmed increased mitotic cells in thymuses, notably in the inner zone where WT thymocytes are normally quiescent, indicating ectopic proliferation in differentiated compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 demonstrate dose-dependent and combinatorial effects of IL7R manipulations with appropriate sample sizes. The differential lck upregulation (C113-C114) suggests il7rNPC is more potently activating than simple overexpression. The high frequency of hyperplasia/T-ALL with triple manipulation (C115-C116) supports synergistic effects. The pH3 staining in the inner zone (C118) with appropriate citations (Bajoghli et al., 2015, 2021) demonstrates spatial disruption of normal proliferation patterns, representing strong phenotypic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The model prediction that NOTCH1 activation alone doesn't increase proliferation (due to incoherent feed-forward loop triggering differentiation) was validated experimentally: NOTCH1 activation alone showed no hyperplasia within 8 days, but combining with mycn did. However, this contrasts with other systems where long-term NOTCH1 activation (weeks in zebrafish, months in mice) drives T-ALL. Possible explanations for this discrepancy include: different proliferation-differentiation balance in vivo than modeled, additional negative feedbacks not considered, proliferation continuing past differentiation with sufficient NOTCH1 stimulation, or long-term misregulation promoting additional compounding lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C129 identify an important discrepancy between the model/short-term experiments and long-term in vivo studies. The experimental validation (C120-C121) supports the model within the 8-day window. The citations to long-term studies (C122-C123) are appropriate. However, the proposed explanations (C126-C129) are speculative without additional data. The 8-day timeframe limitation (C124) is acknowledged but doesn't fully resolve the discrepancy. The model's inability to produce hyperplasia with NOTCH1 alone regardless of duration (C125) suggests a fundamental limitation that requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "In vivo results support computational predictions: IL7R overexpression alone, but not NOTCH1 alone, induces thymus hyperplasia rapidly. Dual activation of IL7R and the NOTCH1-MYCN axis promotes clonal expansion in vivo, leading to rapid thymus hyperplasia and T-ALL development in medaka within 8 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 summarize the key experimental findings that validate major model predictions. The differential effects of IL7R vs NOTCH1 manipulation (C130) are clearly demonstrated across multiple experiments. The rapid T-ALL development within 8 days (C131) is remarkable and well-documented with appropriate sample sizes and phenotypic criteria. This represents strong validation of the model's predictive power for combinatorial effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "When all TECs express IL-7 (scenario 27), lesioned clones with IL7RHI or extended differentiation showed significant clonal expansion advantage. Experimentally, TEC:IL-7HI embryos showed 12% thymus hyperplasia (N=24) without organ infiltration. Co-injecting il7 overexpression in TECs with il7r in thymocytes increased hyperplasia to 41% (N=32). Combining TEC il7 overexpression with thymocyte NICD and mycn showed synergistic effects, with 25% developing T-ALL (N=48). These results demonstrate that excess thymic IL-7 combined with alterations affecting thymocyte differentiation triggers rapid T-ALL development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C138 systematically test the role of niche-derived IL-7 in disease progression. The computational prediction (C132) is validated experimentally with appropriate controls and sample sizes (C133-C137). The progression from single manipulations (12%, 41%) to combined manipulations (25% T-ALL) demonstrates clear synergy. The conclusion (C138) appropriately integrates computational and experimental findings. This represents a key insight about niche-tumor interactions that challenges gene-centric views of T-ALL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Experimental observations suggest additional negative feedback from pro-proliferative signaling to differentiation not included in the model. Manipulations in IL7R or thymic IL-7 levels alone are sufficient to induce hyperplasia and T-ALL in vivo\u2014more severe than model predictions. In simulations, massive overproliferation required modifying multiple parameters (delayed differentiation, accelerated divisions, reduced TEC density) because differentiation is a hard stop to proliferation regardless of pro-proliferative stimuli. The authors propose that continued thymocyte proliferation can downregulate differentiation pathways, maintaining cells in a constant proliferative state\u2014a negative feedback loop from proliferation to differentiation that could explain model-experiment discrepancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C145 identify an important limitation of the current model. The observation that experimental effects exceed predictions (C140-C141) is well-documented. The model constraint (C142) is clearly stated. However, the proposed negative feedback mechanism (C144-C145) is speculative without direct experimental evidence. While the hypothesis is reasonable and could explain discrepancies, it requires additional experiments to test. The authors appropriately acknowledge this as a limitation and propose a testable mechanism for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "This study demonstrates synergy between computational modeling and in vivo validation for dissecting organ-level disease mechanisms, highlighting the previously underexplored role of TECs and thymic niche in T-ALL development. Through >1500 simulated scenarios, the study identified TEC network alterations (shape, density, spatial organization) as drivers\u2014factors difficult to manipulate experimentally. In vivo results confirmed that enriched thymic IL-7 accelerates disease progression, especially with enhanced IL7R or constitutively active NOTCH1/MYCN. These findings challenge the gene-centric T-ALL paradigm and emphasize the critical influence of thymic microenvironment spatial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 provide appropriate summary and contextualization of the study's contributions. The methodological integration (C146) is well-demonstrated throughout. The novelty regarding TEC/niche roles (C147) is justified given the focus on cell-autonomous factors in prior T-ALL research. The computational scope (C148) is accurately stated. The experimental validation (C149) is well-documented. The paradigm challenge (C150) is appropriate given the demonstrated importance of spatial niche structure. These summary claims accurately reflect the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The model has several limitations: it was calibrated for medaka embryonic thymus and may not fully capture dynamics of other species (particularly human); it cannot represent TEC shape changes over time or TEC proliferation due to treating particles as loose objects; it simplifies T-cell developmental stages by not considering IL-7/Notch cross-regulatory feedback loops or thymic growth over time. These simplifications stem from lack of species-specific knowledge and tools in medaka. Adapting the framework for murine or human contexts with well-characterized markers and emerging TEC architecture data could enable exploration of these questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 provide honest assessment of model limitations. The species-specificity concern (C151) is valid and appropriately cited. The technical limitations (C152) are clearly explained with mechanistic reasoning. The biological simplifications (C153) are acknowledged with appropriate justification (C154). The forward-looking statement (C155) with citation to emerging work (Lagou et al., 2024) is reasonable. This transparent discussion of limitations strengthens confidence in the work by showing the authors understand the model's scope and boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Despite current simplifications, the integrative approach offers valuable insights into how microenvironmental factors influence leukemia expansion and provides a framework for exploring their role in chemoresistance and relapse. These findings open avenues for developing therapeutic strategies targeting the leukemic-supportive niche to potentially improve T-ALL treatment outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 appropriately contextualize the study's translational potential while acknowledging limitations. The framework's value (C156) is supported by the demonstrated ability to generate testable predictions about niche-tumor interactions. The therapeutic implications (C157) are appropriately cautious ('open avenues', 'potential') given that this is basic research. These forward-looking statements are reasonable extensions of the findings without overstating clinical applicability.",
+    "result_type": "MINOR"
+  }
+]

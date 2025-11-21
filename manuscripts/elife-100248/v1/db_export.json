@@ -1,0 +1,2546 @@
+{
+  "submission": {
+    "id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:20:08.086421Z",
+    "updated_at": "2025-11-21T04:20:08.086421Z"
+  },
+  "content": [
+    {
+      "id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "content_type": "manuscript",
+      "content_text": "# SARS-CoV-2 NSP13 interacts with TEAD to suppress Hippo-YAP signaling\n\n## Authors\n\n- Fansen Meng<sup>1</sup> ([ORCID: 0000-0003-3173-5512](https://orcid.org/0000-0003-3173-5512))\n- Jong Hwan Kim<sup>2</sup>\n- Chang-Ru Tsai<sup>3</sup>\n- Jeffrey D Steimle<sup>3</sup>\n- Jun Wang<sup>2</sup>\n- Yufeng Shi<sup>2</sup>\n- Rich G Li<sup>1</sup>\n- Bing Xie<sup>3</sup>\n- Vaibhav Deshmukh<sup>3</sup>\n- Shijie Liu<sup>4</sup>\n- Xiao Li<sup>1</sup> ([ORCID: 0000-0001-8527-4438](https://orcid.org/0000-0001-8527-4438))\n- James F Martin<sup>1</sup> ([ORCID: 0000-0002-7842-9857](https://orcid.org/0000-0002-7842-9857)) \u2020\n\n### Affiliations\n\n1. McGill Gene Editing Lab, The Texas Heart Institute Houston United States ([ROR:00r4vsg44](https://ror.org/00r4vsg44))\n2. Cardiomyocyte Renewal Laboratory, The Texas Heart Institute Houston United States ([ROR:00r4vsg44](https://ror.org/00r4vsg44))\n3. Department of Integrative Physiology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n4. The Heart Institute, Division of Molecular Cardiovascular Biology, Cincinnati Children's Hospital Medical Center Cincinnati United States ([ROR:01hcyya48](https://ror.org/01hcyya48))\n5. Department of Pediatrics, University of Cincinnati College of Medicine Cincinnati United States ([ROR:01e3m7079](https://ror.org/01e3m7079))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Hippo pathway controls organ development, homeostasis, and regeneration primarily by modulating YAP/TEAD-mediated gene expression. Although emerging studies report Hippo-YAP dysfunction after viral infection, it is largely unknown in the context of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Here, we analyzed RNA sequencing data from human-induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) and SARS-CoV-2-infected human lung samples, and observed a decrease in YAP target gene expression. In screening SARS-CoV-2 nonstructural proteins, we found that nonstructural protein 13 (NSP13), a conserved coronavirus helicase, inhibits YAP transcriptional activity independent of the upstream Hippo kinases LATS1/2. Consistently, introducing NSP13 into mouse cardiomyocytes suppresses an active form of YAP (YAP5SA) in vivo. Subsequent investigations on NSP13 mutants revealed that NSP13 helicase activity, including DNA binding and unwinding, is crucial for suppressing YAP transactivation in HEK293T cells. Mechanistically, TEAD4 serves as a platform to recruit NSP13 and YAP. NSP13 likely inactivates the YAP/TEAD4 transcription complex by remodeling chromatin to recruit proteins, such as transcription termination factor 2 (TTF2), to bind the YAP/TEAD/NSP13 complex. These findings reveal a novel YAP/TEAD regulatory mechanism and uncover molecular insights into Hippo-YAP regulation after SARS-CoV-2 infection in humans.\n\n## Introduction\n\nThe evolutionarily conserved Hippo-YAP signaling pathway integrates various extracellular signals, including mechanical force, cell adhesion, and nutrient availability, through the protein kinases LATS1/2 (Ma et al., 2019). YAP is the primary substrate of LATS kinases, and following phosphorylation, is inactivated via cytoplasmic retention or degradation. Unphosphorylated YAP translocates to the nucleus and complexes with transcription factor partners, notably TEAD, to activate target genes (Ma et al., 2019; Wang et al., 2018) involved in tissue development, homeostasis, and regeneration across multiple organs (Wang et al., 2018; Meng et al., 2022; Russell and Camargo, 2022; Hong et al., 2016; Moya and Halder, 2019; Zhang et al., 2018). YAP/TEAD is regulated by intricate molecular mechanisms that govern its activity, localization, and interaction. Dysregulation of these processes has been implicated in various diseases, including cancer (Paul et al., 2022; Pocaterra et al., 2020; Lin et al., 2017; Huh et al., 2019).\n\nRecent studies reveal that YAP is an endogenous brake of innate antiviral immunity (Wang et al., 2017; Zhang et al., 2017). Genetic loss of YAP enhances antiviral responses, whereas expression of a transactivation-deficient mutant (YAP-6SA) suppresses these responses. Conversely, multiple canonical YAP target genes, such as Il-6, Ccl2, and Csf1, modulate innate-immune signaling and cytokine production (Meli et al., 2023; Wang et al., 2020; Xiao et al., 2019). Notably, different types of viral infection distinctly influence YAP expression, degradation, and nuclear localization (Wang et al., 2019). Although these observations shed light on the complex dynamics of YAP during viral responses, the mechanisms underlying YAP/TEAD regulation after SARS-CoV-2 infection are poorly understood. SARS-CoV-2, the center of the COVID-19 pandemic, has well-documented effects on the respiratory, digestive, central nervous, and cardiovascular systems (Ma et al., 2020; De Felice et al., 2020; Nishiga et al., 2020). Investigating SARS-CoV-2 and Hippo-YAP signaling provides molecular insight into virus-induced pathophysiology. Two groups recently reported opposite effects on YAP activity after SARS-CoV-2 infection (Garcia et al., 2022; Pinto et al., 2023). However, the lack of YAP/TEAD target gene expression data in these studies prevents a full understanding of these disparate results. Thus, the precise understanding of YAP/TEAD regulation after SARS-CoV-2 infection remains elusive.\n\nHere, we found that SARS-CoV-2 infection reduces YAP target gene expression in human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs) and lung epithelial cells of COVID-19 patients. By comprehensively screening SARS-CoV-2 nonstructural proteins, we identified NSP13 as a key factor in inhibiting YAP transcriptional activity and suppressing active YAP5SA activity in vivo. Moreover, NSP13 suppression of YAP is dependent on its helicase activity, where both DNA binding and unwinding are required. Mechanistically, NSP13 is directly bound to TEAD4 and inhibits the transcriptional activity of the YAP/TEAD4 complex by remodeling chromatin and recruiting transcriptional suppressors such as TTF2. These findings reveal a novel function of NSP13 in regulating YAP/TEAD activity and provide key insights into how the SARS-CoV-2 genome modulates transcriptional activity of the YAP-TEAD complex.\n\n## Results\n\n### SARS-CoV-2 infection suppresses YAP activity in host cells\n\nTo assess YAP activity following SARS-CoV-2 infection in vitro, we evaluated a bulk RNA-sequencing dataset derived from hiPSC-CMs exposed to varying SARS-CoV-2 concentrations (Perez-Bermejo et al., 2021; Figure 1A). Cardiomyocyte-specific YAP target gene (Monroe et al., 2019) expression revealed that YAP targets were decreased in a dose-dependent manner after SARS-CoV-2 infection (Figure 1B). YAP is known to directly regulate several innate-immunity genes in mouse, including Ccl2, Thbs1, and Csf1 (Wang et al., 2020; Xiao et al., 2019). We observed that these genes are downregulated in SARS-CoV-2-infected cells, mirroring the decrease in canonical YAP targets such as VGLL3, AMOTL2, and CCN1 (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of SARS-CoV-2 infection in human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs). (B) Box plot showing the mean expression scores of known YAP target genes in hiPSC-CM bulk RNA-sequencing data. Each dot represents a biological replicate. Student\u2019s t-test; **p<0.01, ****p<0.0001. (C) Heatmap displaying the expression Z-scores of example YAP targets in the iPSC-CM bulk RNA-sequencing data. Each column corresponds to a single biological sample. (D) Overview of integrated single-nucleus RNA sequencing and uniform manifold approximation and projection (UMAP) of cell types in lung samples from controls and patients with COVID-19. EC, endothelial cells; NK, natural killer cells; SMC, smooth muscle cells. (E) UMAP visualization of TMPRESS2 expression in the 10 cell types. (F) GO analysis of downregulated genes in AT1 cells from COVID patients. (G) Yap scores in alveolar type 1 (AT1) and alveolar type 2 (AT2) epithelial cells from lung samples in controls and patients with COVID-19. Wilcoxon test, ****p<0.0001. (H) Expression of Yap targets in AT1 and AT2 cells of control and COVID-positive lung samples.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig1-figsupp2-v1.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) UMAP of epithelial cell subclusters. (B) Dot plot showing the relative expression of alveolar type 1 (AT1) and alveolar type 2 (AT2) markers in human lung samples.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig1-figsupp4-v1.jpg)\n\nWe then assessed YAP activity with SARS-CoV-2 infection in vivo by integrating and reanalyzing single-nuclei RNA (snRNA) sequencing data derived from human lung samples (Delorey et al., 2021; Melms et al., 2021). We identified 10 major cell types (Figure 1D, Figure 1\u2014figure supplement 1). TMPRSS2 and ACE2, two key entry factors for SARS-CoV-2 infection (Hoffmann et al., 2020), were more highly expressed in lung epithelial cells compared to other cell types (Figure 1E, Figure 1\u2014figure supplement 2). Lung epithelial cells were categorized into alveolar type 1 (AT1) and alveolar type 2 (AT2) (Figure 1\u2014figure supplement 3). SARS-CoV-2 is more likely to infect AT1 cells as they cover >95% of the alveolar surface. We performed an unbiased GO analysis of the differentially expressed genes (DEGs) and observed that genes associated with or regulating the Hippo pathway were downregulated in AT1 cells from COVID-19 patients (Figure 1F). Consistent with previous data in vitro, the YAP score, evaluated via YAP target gene expression, was lower in AT1 cells from COVID-19 patients than in controls (Figure 1G). Signature genes associated with AT1 cells, including the reported YAP target genes AGER and CLIC5 (Penkala et al., 2021; Gokey et al., 2021), were downregulated in COVID-19 patient lung samples (Figure 1H). These data support the notion that SARS-CoV-2 infection suppresses YAP activity in host cells. However, further analysis revealed that multiple YAP target genes involved in innate immunity and cytokine signaling were paradoxically elevated (Figure 1\u2014figure supplement 4). This discrepancy likely reflects a combination of factors, including cell-type specificity, activation of parallel signaling pathways, and alterations in mechanical cues or tissue architecture that can independently drive expression of these genes.\n\n### NSP13 inhibits YAP5SA transactivation\n\nTo identify which SARS-CoV-2 protein suppresses YAP activity, we screened 11 NSP proteins using a dual-luciferase reporter assay. This assay measures firefly and Renilla luciferase activities sequentially from the same sample. Normalization to Renilla luciferase serves as an internal control, ensuring accuracy and reproducibility of the results. Compared with other NSPs, NSP13 strongly inhibited YAP transcription activity (Figure 2A). By using a constitutively active form of YAP (YAP5SA) that is resistant to phosphorylation and inactivation by LATS1/2 (Zhao et al., 2007), we observed that NSP13 suppresses YAP transactivation independent of its upstream kinase LATS2 (Figure 2\u2014figure supplement 1). Moreover, NSP13 attenuated YAP5SA activity dose-dependently (Figure 2B). A recent study reported that NSP13 suppresses episomal DNA transcription, as evidenced by reduced Renilla luciferase activity and decreased GFP expression upon co-expression with NSP13 (Li et al., 2023). To evaluate this in our system, we examined our raw Renilla luciferase data and found that while 100 \u202fng of NSP13 had no effect, 400 \u202fng of NSP13 reduced Renilla luciferase levels by approximately 50% compared to the YAP5SA-only group (Figure 2\u2014figure supplement 2). Notably, the firefly luciferase signal, driven by YAP/TEAD interaction (HOP-Flash), exhibited an even greater reduction. To assess the specificity of this suppression, we also conducted a Notch reporter assay and observed that co-expression of NSP13 with NICD (Notch intracellular domain) did not inhibit Notch signaling (Figure 2\u2014figure supplement 3). These results reveal a specific suppressive effect of NSP13 on YAP-mediated transcriptional activity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig2-v1.jpg)\n\n**Figure 2.:** (A) Screening of 11 NSPs for YAP activation by using a dual-luciferase reporter assay (HOP-flash). Compared with other NSPs, NSP13 strongly inhibited YAP transactivation at low protein expression levels. (n=3 independent experiments; data are reported as mean \u00b1 SD). ****p<0.0001, one-way ANOVA. (B) Reporter assay (8xGTIIC) results showing that NSP13 but not YAP upstream kinase LATS2 inhibited YAP5SA transactivation in a dose-dependent manner. (n=3 independent experiments; data are presented as the mean \u00b1 SD). ***p<0.001, ****p<0.0001, one-way ANOVA. (C) Experimental design of NSP13 study in mice. Control (aMyHC-MerCreMer;WT) and YAP5SA (aMyHC-MerCreMer;YAP 5SA) mice were injected with AAV9-GFP or AAV9-NSP13. At 12 days after virus injection, the mice received two low doses of TAM (10 ug/g). Cardiac function was recorded by echocardiography at days 4 and 8 after the second shot of tamoxifen. Hearts of all surviving mice were collected at day 21 post-tamoxifen injection. (D) NSP13 expression in cardiomyocytes improved the survival rate of YAP5SA mice after TAM injection compared to YAP5SA mice with AAV9-GFP infection. **p=0.0099, log-rank (Mantel\u2013Cox) test. (E) Ejection fraction in YAP5SA mice was increased on day 8 after tamoxifen injections (10 ug/g x2). NSP13 expression reversed the increase of EF in YAP5SA mice. (n=6 in MCM + GFP, MCM + NSP13, and YAP5SA + GFP group; n=8 in YAP5SA + NSP13 group). ****p<0.0001, three-way ANOVA. (F) Representative B-mode and M-mode echocardiographic images of mouse hearts in four groups, 8 days after tamoxifen (TAM) induction. (G) A reduction in the left ventricle size was seen in YAP5SA mice at day 8 after tamoxifen injection. NSP13 introduction reversed this trend as evidenced by an increase in the diameter of the left ventricle (n=6 in MCM + GFP, MCM + NSP13, and YAP5SA + GFP group; n=8 in YAP5SA + NSP13 group). ***p<0.001, three-way ANOVA. (H, I) Representative whole mount and H&E images of mouse hearts at 21 days after tamoxifen induction. Scale bar, 2 mm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** n=3 independent experiments; data are presented as mean \u00b1 SD. ****p<0.0001, one-way ANOVA.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** n=3 independent experiments; data are presented as mean \u00b1 SD.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig2-figsupp4-v1.jpg)\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** This increase was reversed by NSP13 expression. (n=6 in MCM + GFP, MCM + NSP13, and YAP5SA + GFP group; n=8 in YAP5SA + NSP13 group). ****p<0.0001, three-way ANOVA.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** n=6 in MCM + GFP and MCM + NSP13 group; n=4 in YAP5SA + GFP group; n=8 in YAP5SA + NSP13 group. *p=0.0175, one-way ANOVA.\n\nTo investigate NSP13 function in vivo, we used YAP5SA transgenic mice (aMyHC-MerCreMer;YAP5SA), which express YAP5SA in cardiomyocytes following tamoxifen administration. YAP5SA induction produces cardiomyocyte hyperplasia and increased ejection fraction (EF) and fractional shortening (FS), ultimately leading to mortality (Monroe et al., 2019). We used the adenovirus expressing NSP13 (AAV9-NSP13), which specifically infects cardiomyocytes (Figure 2\u2014figure supplement 4, Figure 2C). NSP13-induced expression in YAP5SA mouse cardiomyocytes increased survival rates (Figure 2D) and restored cardiac function (Figure 2E, Figure 2\u2014figure supplement 5). Furthermore, NSP13 expression reversed the smaller left ventricle (LV) chamber in YAP5SA mouse hearts (Monroe et al., 2019; Figure 2F and G). To investigate NSP13 induction in the mouse heart further, we collected heart tissue from surviving mice 21 days after tamoxifen injection. Notably, NSP13 expression in YAP5SA mice reversed heart overgrowth (Figure 2H and I, Figure 2\u2014figure supplement 6). Together, these data indicate that NSP13 suppresses YAP activity in vitro and in vivo.\n\n### NSP13 helicase activity is required for YAP suppression\n\nNSP13, a helicase with conserved sequence across all coronaviruses (Figure 3A), plays a critical role in viral replication and is a promising target for antiviral treatment (Yan et al., 2021; Chen et al., 2020; Yan et al., 2020; Newman et al., 2021; Chen et al., 2022; Malone et al., 2021; Nandi et al., 2022; Zeng et al., 2021). K131, K345/K347, and R567 were identified as important amino acid sites for NSP13 helicase activity in SARS-CoV (Jia et al., 2019). Given the 99.8% sequence identity of NSP13 between SARS-CoV-2 and SARS-CoV, we speculated that these sites were similarly crucial for SARS-CoV-2 NSP13. Reporter assays revealed that NSP13-K131A, which retains partial helicase activity, can suppress YAP, whereas NSP13-R567A (no ATP consumption) and NSP13-K345A/K347A (obstructed nucleic acid binding channel) failed to inhibit YAP transcriptional activity (Figure 3B). To assess the contribution of each domain to YAP regulation, we constructed six NSP13 truncations (Figure 3C), yet none of these truncations reduced YAP transactivation (Figure 3D). These findings suggest that full-length NSP13 with helicase activity (DNA binding and ATP\u2010dependent unwinding) is required to suppress YAP transactivation, and that partial helicase function is sufficient to fully inhibit YAP.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig3-v1.jpg)\n\n**Figure 3.:** (A) Conserved amino acid sequences of NSP13 among coronaviruses. (B) SARS-CoV-2 NSP13 mutant plasmids were constructed to examine YAP suppression mechanisms. NSP13-R567A, which loses its ATP consumption ability, did not inhibit YAP5SA transactivation, whereas NSP13 K345A/K347A, which loses its nucleic acid binding activity, mildly promoted YAP5SA transactivation (n=3 independent experiments; data are reported as the mean \u00b1 SD). **p<0.01, ****p<0.0001, one-way ANOVA. (C) Six NSP13 truncations were constructed based on the NSP13 domain map. (D) Reporter assay: none of the truncations led to a reduction in YAP transactivation, and the NSP13 DNA binding domains 1A and 2A slightly increased YAP5SA activation, suggesting that the full-length NSP13 with helicase activity may be required for suppression of YAP transactivation (n=3 independent experiments; data are reported as the mean \u00b1 SD). *p<0.05, ****p<0.0001, one-way ANOVA. (E) Summary of NSP13 mutants from SARS-CoV-2 variants. (F) HOP-flash reporter assay: NSP13 mutations did not affect suppression of YAP5SA transactivation (n=3 independent experiments; data are reported as mean \u00b1 SD). ****p<0.0001, one-way ANOVA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The location of the NSP13 mutations from SARS-CoV2 variants on the NSP13 protein structure model (PDB: 7NN0). (B) Reporter assay (8xGTIIC) results indicating that NSP13 mutations did not affect its suppression on YAP5SA transactivation (n=3 independent experiments; data are presented as mean \u00b1 SD). ****p<0.0001, one-way ANOVA.\n\nSARS-CoV-2 has consistently mutated over time, resulting in variants that differ from the original virus. We evaluated NSP13 mutations (Newman et al., 2021) and observed that all mutants can suppress YAP transactivation (Figure 3E and F, Figure 3\u2014figure supplement 1).\n\n### NSP13 interacts with TEAD4 and recruits YAP repressors\n\nTo determine the molecular mechanism(s) underlying NSP13 suppression of YAP, we performed immunofluorescence (IF) analyses. Our data revealed that NSP13 localizes to the cytoplasm and nucleus, whereas most YAP5SA colocalizes with NSP13 in the nucleus three days after tamoxifen injection (Figure 4A). However, co-immunoprecipitation (co-IP) assays revealed no direct interaction between NSP13 and YAP5SA (Figure 4\u2014figure supplement 1). Additional assays indicated that NSP13 is associated with the transcription factor TEAD4 (Figure 4B), and both the N- and C-terminal ends of TEAD4 interact with NSP13 (Figure 4\u2014figure supplement 2), suggesting that NSP13 prevents YAP transactivation by competitively interacting with TEAD4. Unexpectedly, introduction of NSP13 had no effect on the YAP/TEAD4 association (Figure 4\u2014figure supplement 3). However, the YAP/NSP13 interaction was much stronger in the presence of TEAD4, indicating that TEAD4 is a platform to recruit YAP and NSP13 (Figure 4C). Consistent with this, IF analysis of HeLa cells and heart sections revealed that YAP5SA is restricted to the nucleus when co-expressed with either NSP13 WT or R567A, in contrast to the vector control (Figure 4D, Figure 4\u2014figure supplement 4). Moreover, NSP13 protein levels in cardiomyocytes accumulated following YAP5SA induction (Figure 4D and E), suggesting that nuclear NSP13/YAP/TEAD4 prevents NSP13 degradation. Given that NSP13 preferentially interacts with TEAD4 in the nucleus (Figure 4B-C, Figure 4\u2014figure supplement 3), we next determined whether this association was DNA\u2010dependent using multiple nucleases: Universal Nuclease (which degrades all forms of DNA and RNA), DNase\u202fI (which cleaves both single\u2010 and double\u2010stranded DNA), and RNase\u202fH (which selectively cleaves the RNA strand in RNA/DNA hybrids). These treatments did not disrupt the NSP13/TEAD4 interaction (Figure 4\u2014figure supplement 5), revealing that their binding is not dependent on nucleic acids.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-v1.jpg)\n\n**Figure 4.:** (A) Immunofluorescence imaging showing that NSP13 colocalized with YAP5SA in cardiomyocytes of YAP5SA transgenic mice 3 days after tamoxifen injection. Scale bar, 20 \u03bcm. (B) Co-IP: NSP13 interacts with TEAD4, a major binding partner of YAP, in the nucleus. (C) Co-IP of HEK293T nuclei: NSP13 does not disrupt the interaction between YAP and TEAD4, whereas TEAD4 promotes the interaction between YAP and NSP13. (D, E) Immunofluorescence imaging and western blot analysis reveal that NSP13 protein levels increase after YAP5SA expression is induced in YAP5SA mouse cardiomyocytes. Scale bar, 50 \u03bcm. (F) Workflow of IP-MS. (G) IP-MS in nuclei (IP: NSP13), suggesting NSP13 interacts with proteins with or without YAP co-expression. Significance Analysis of INTeractome (SAINT), AvgP >0.6 are labeled in red. (H) GO analysis in subclusters of NSP13 interacting proteins (SAINT, AvgP >0.6, labeled with red in Figure S4C). (I) HOP-flash reporter assay: endogenous YAP activity is increased after the siRNA knockdown of CCT3 and TTF2 in HeLa cells (n=3 independent experiments; data are reported as mean \u00b1 SD). ***p<0.001, ****p<0.0001, one-way ANOVA. (J) Working model for NSP13 regulation of YAP/TEAD.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp2-v1.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp3-v1.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Scale bar, 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp5-v1.jpg)\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp6-v1.jpg)\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp7-v1.jpg)\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp8-v1.jpg)\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp9-v1.jpg)\n\n**Figure 4\u2014figure supplement 9.:** n=3 independent experiments; data are presented as mean \u00b1 SD. ****p<0.0001, one-way ANOVA.\n\n![Figure 4\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/100248/elife-100248-fig4-figsupp10-v1.jpg)\n\n**Figure 4\u2014figure supplement 10.:** Data are presented as mean \u00b1 SD (n=3). *p<0.05, **p<0.01, ***p<0.001, two-way ANOVA.\n\nGiven that NSP13 forms a complex with YAP and TEAD4 (Figure 4C, Figure 4\u2014figure supplement 3), we hypothesized that it recruits nuclear repressors to inhibit YAP transactivation. To investigate this, we performed immunoprecipitation followed by mass spectrometry (IP-MS) to identify NSP13-interacting proteins in the presence or absence of YAP in HEK293T cell nuclei (Figure 4F and Source data 1). Our analyses identified hundreds of candidate proteins that interact with NSP13 in the nucleus (Figure 4G and Source data 2), which were further analyzed by STRING-based network analysis (Figure 4\u2014figure supplement 6 and Source data 3). Gene Ontology (GO) analysis indicated that the largest clusters are involved in RNA polymerase II transcription termination, chromatin remodeling, and protein folding (Figure 4H). To validate these candidate interactors, we evaluated several proteins\u2014CCT3, SMARCD1, EIF4A1, LMNA, TTF2, and YY2\u2014and conducted co-IP assays. Whereas TEAD4 strongly interacts with NSP13 (Figure 4\u2014figure supplement 7), the candidate repressors exhibited relatively weak binding to NSP13, suggesting that NSP13 associates with these proteins indirectly, potentially through a larger multiprotein complex or via chromatin-dependent interactions (Figure 4J).\n\nNext, we evaluated the functional consequence of siRNA knockdown of selected candidates in YAP transactivation (Figure 4\u2014figure supplement 8). Reporter assays revealed that knockdown of CCT3 and TTF2 increased endogenous YAP transactivation in HeLa cells (Figure 4I, Figure 4\u2014figure supplement 9). To confirm the function of CCT3, we performed quantitative PCR analysis of classical YAP target genes and observed increased expression of CTGF and CYR61 following CCT3 knockdown (Figure 4\u2014figure supplement 10). These findings support a model where NSP13 suppresses YAP activity by recruiting suppressors to the YAP/TEAD4 complex.\n\n## Discussion\n\nIn this study, we observed that SARS-CoV-2 infection in human lung and hiPSC-CMs reduces YAP transcriptional activity, wherein the SARS-CoV-2 helicase NSP13 significantly inhibited YAP activity. Mechanistically, NSP13 directly interacts with TEAD4 to form a YAP/TEAD4/NSP13 complex in the nucleus, which recruits suppressors such as TTF2 and CCT3 to repress YAP-TEAD transcriptional activity (Figure 4J).\n\nOur data reveal a helicase\u2010dependent inhibition of YAP by NSP13, where the K131, K345/K347, and R567 NSP13 residues are required. Based on published structural and biochemical studies, each of these residues uniquely supports helicase function: Substituting K131 with alanine (K131A) severely reduces helicase efficiency; K345/K347 are key DNA\u2010binding residues as mutating both (K345A/K347A) abolishes DNA binding; mutation of the ATP hydrolysis residue R567 (R567A) disables DNA unwinding. As illustrated in Figure 4J, NSP13 must bind DNA and hydrolyze ATP to unwind nucleic acids. This helicase\u2010dependent process likely enables NSP13 to remodel chromatin by binding TEAD and organizing YAP repressors at the YAP/TEAD complex to prevent YAP/TEAD transactivation. In support of this mechanism, the K345A/K347A mutant, unable to anchor to DNA, fails to repress YAP as YAP\u2010driven transcription is slightly increased in this mutant (Figure 3B). Likewise, the ATPase\u2010dead R567A can bind DNA but does not unwind and remodel chromatin to recruit YAP repressors, resulting in a loss of YAP suppression (Figure 3B and F). Our model demonstrates that both DNA binding and ATP\u2010dependent unwinding are essential for NSP13 to suppress YAP transcriptional activity.\n\nTEAD transcription factors, the major partners of YAP, are the primary nuclear effectors of Hippo-YAP signaling and play critical roles in cancer development (Huh et al., 2019; Pobbati et al., 2023). We observed that NSP13 interacts with TEAD4, but does not disrupt the YAP/TEAD4 interaction, suggesting a novel regulatory mechanism for TEAD. IP-MS revealed that NSP13-interacting proteins such as TTF2 and CCT3 suppress the YAP-TEAD4 complex. TTF2, an SWI2/SNF2 family member, facilitates the removal of RNA polymerase II from the DNA template via ATP hydrolysis (Liu et al., 1998; Jiang et al., 2004). Importantly, termination of transcription complex elongation by TTF2 appears minimally affected by template position (Jiang et al., 2004). CCT3 is a component of the chaperonin-containing T-complex, a molecular chaperone complex that promotes protein folding following ATP hydrolysis. Previous reports revealed that the liver cancer biomarker CCT3 (Liu et al., 2019) positively regulates YAP protein stability. We found that CCT3 interacts with NSP13 and inhibits YAP transactivation. Moreover, CCT3 knockdown increases YAP target gene expression, suggesting a context-dependent role of CCT3 in YAP regulation. While Co-IP assays detected weak interactions between NSP13 and CCT3 or TTF2, a strong NSP13/TEAD4 interaction was evident. These data suggest that NSP13 associates with CCT3 and TTF2 indirectly as part of a multiprotein complex in a chromatin structure-dependent manner, although further study is required to elucidate these mechanisms.\n\nIn conclusion, our study reveals a novel function of NSP13 in suppressing the YAP/TEAD transcriptional complex. These findings advance our understanding of the pathological effects of SARS-CoV-2 on host cells. Given that NSP13 directly interacts with TEAD4 and strongly suppresses YAP transactivation, this work provides a new avenue for modulating YAP activity as a potential treatment for YAP-driven diseases.\n\n## Materials and methods\n\n### Mice\n\nMouse studies were performed in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and with approval from the Institutional Animal Care and Use Committee at Baylor College of Medicine. We used \u03b1MyHC-MerCreMer mice (The Jackson Laboratory, strain #005657, RRID:IMSR_JAX:005657), wild-type (WT) mice (The Jackson Laboratory, strain #000664, RRID:IMSR_JAX: 000664), and \u03b1MyHC-MerCreMer; YAP5SA mice (a mixed genetic background of C57BL/6 and 129SV) in this study. The YAP5SA transgenic mice were constructed by Martin lab (Monroe et al., 2019). Animals were assigned to experimental groups using simple randomization. The AAV9 virus (a total of 5\u2009\u00d7\u20091011 viral genomes, 120\u2009\u03bcl total volume) was delivered by retro-orbital injection 2 weeks before tamoxifen injection. For the survival experiment in Figure 2, two low doses of tamoxifen (10 \u03bcg/g) were administered to 6-week-old mice by intraperitoneal injection. The mouse cardiac function was evaluated by echocardiography at days 4 and 8 post-tamoxifen injection, and all the surviving mice were sacrificed at day 21. For the experiments in Figure 4, two tamoxifen doses were injected (Figure 4A 10 \u03bcg/g; Figure 4D and E 50 \u03bcg/g), and mouse hearts were collected at day 3 post-tamoxifen injection. The influence of sex was analyzed as a source of variation. For all mouse studies, we examined equal numbers of male and female animals, and similar findings are reported for both sexes. All analyses in mice were performed blinded.\n\n### RNA-seq analysis\n\nTo analyze lung samples from COVID-19 patients, snRNA sequencing data of 7 control lungs and 35 COVID-19 lungs from GSE171668 (Delorey et al., 2021) and GSE171524 (Melms et al., 2021) were downloaded and analyzed using the Seurat v4 software suite (Hao et al., 2021). A total of 223,106 nuclei were used in the analysis. Each sample was normalized and batch corrected using SCTransformation. Mitochondrial percentage was used to regress out technical variability between batches, and we used harmony (Korsunsky et al., 2019) integration to remove technical variation among samples. The YAP score was evaluated using 38 canonical YAP target genes. For analyzing iPSC-CMs infected with SARS-CoV-2, bulk RNA-seq data were obtained from Perez-Bermejo et al., 2021. With this dataset, we reanalyzed and evaluated the average expression of 302 cardiomyocyte-specific YAP target genes (Monroe et al., 2019).\n\n### Expression plasmids\n\nExpression plasmids encoding HA-tagged WT, mutant, or truncated NSP13 were generated by polymerase chain reaction (PCR) and subcloned into pXF4H (N-terminal HA tag) derived from pRK5 (Genetech). Myc-tagged WT or truncated TEAD4, flag-tagged WT YAP, flag-tagged YAP5SA, and Myc-tagged NSP13 interacting proteins, including CCT3, SMARCD1, EIF4A1, LMNA, TTF2, and YY2, were generated by PCR and subcloned into a pcDNA3 backbone. HA-tagged WT LATS2, LATS2 KR, and pRL-TK_Luc were gifts from Dr. Pinglong Xu\u2019s lab. Reporters of HOP-flash (#83467) and 8xGTIIC-luciferase (#34615) were purchased from Addgene. The NSP plasmids used in YAP transactivation screening experiments were gifts from Dr. Nevan J. Krogan\u2019s lab. All plasmids were confirmed by performing DNA sequencing.\n\n### Cell culture and transfection\n\nHEK293T and HeLa cells were cultured in Dulbecco\u2019s Modified Eagle Medium with 10% fetal bovine serum. Lipofectamine 2000 (Thermo Fisher) or Lipofectamine 3000 (Thermo Fisher) reagents were used for plasmid transfection. LipofectAmine RNAiMAX (Thermo Fisher) was used for siRNA transfection. Both cell lines were obtained from the American Type Culture Collection (ATCC, HEK293T CRL-3216, HeLa CCL-2). The identity of the cell lines was authenticated by short tandem repeat (STR) profiling, and all cell lines tested negative for mycoplasma contamination using PCR-based assays. HeLa cells are included on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee (ICLAC). However, their use in this study was intentional and appropriate for the experimental design. The specific characteristics of HeLa cells were required for our assays, and their identity and relevance to the research objectives were confirmed through STR profiling and functional validation.\n\n### Immunoprecipitation-mass spectrometry, database search, and data analysis\n\nHEK293T cells were plated on a 150 mm tissue culture dish using 10% FBS DMEM 24 h post-plating. Cells were transfected with Flag-YAP1, HA-NSP13, or Flag-YAP1 + HA-NSP13 by Lipofectamine 3000 using standard manufacturer\u2019s protocols. Each experimental group was performed in duplicate to ensure reproducibility and reliability. 24 h post-transfection, cells were collected in a hypotonic lysis buffer (5 mM NaCl, 20 mM HEPES, pH 7.5, 0.4% NP-40) supplemented with protease inhibitor (Roche) and phosphatase inhibitor (Roche). Cell suspensions were drawn into a 3 ml syringe using a 25 G needle and expelled in one rapid stroke into a new tube. After three rounds of lysis, the suspension was centrifuged at 600 \u00d7 g 4\u00b0C for 10 min to pellet nuclei. The supernatant was collected in a different tube, and the nuclear fraction was washed in the buffer twice. After the final wash, nuclei were resuspended in 20 mM HEPES, 150 mM NaCl, 2.5 mM MgCl2, 0.1% NP 40, and nuclear fractions were sonicated using Bioruptor Pico for 10 cycles of 30 s on and 30 s off. Subsequently, lysate was centrifuged for 20 min at 2 \u00d7 1000 g at 4\u00b0C. The supernatant was incubated with HA magnetic beads (Thermo Fisher) for 2 h at 4\u00b0C with continuous rotation. Antibody and protein-bound beads were washed thrice for 15 min in lysis buffer at 4\u00b0C with constant rotation. Washed beads were boiled in 40 \u03bcl of 1X NUPAGE LDS sample buffer (Invitrogen) and subjected to SDS-PAGE (NuPAGE 10% Bis-Tris Gel, Invitrogen). Eluted proteins were visualized with Coomassie Brilliant blue stain and excised into gel pieces according to molecular size. Individual gel pieces were destained and subjected to in-gel digestion using trypsin (GenDepot T9600). Tryptic peptides were resuspended in 10 \u03bcl of loading solution (5% methanol containing 0.1% formic acid) and subjected to nanoflow LC-MS/MS analysis with a nano-LC 1000 system (Thermo Scientific) coupled to Orbitrap Elite (Thermo Scientific) mass spectrometer. Peptides were loaded onto a Reprosil-Pur Basic C18 (1.9 \u00b5m, Dr. Maisch GmbH, Germany) precolumn of 2 cm \u00d7 100 \u00b5m size. The precolumn was switched in-line with an in-house 50 mm \u00d7 150 \u00b5m analytical column packed with Reprosil-Pur Basic C18 equilibrated in 0.1% formic acid/water. Peptides were eluted using a 75 min discontinuous gradient of 4\u201326% acetonitrile/0.1% formic acid at a 700 nl/min flow rate. Eluted peptides were directly electro-sprayed into Orbitrap Elite mass spectrometer operated in the data-dependent acquisition mode acquiring fragmentation spectra of the top 25 strongest ions and under the direct control of Xcalibur software (Thermo Scientific).\n\nMS/MS spectra were analyzed using the target-decoy mouse RefSeq database in the Proteome Discoverer 1.4 interface (Thermo Fisher), employing the Mascot algorithm (Mascot 2.4, Matrix Science). The precursor mass tolerance was set to 20 ppm, with a fragment mass tolerance of 0.5 daltons and a maximum of two allowed missed cleavages. Dynamic modifications included oxidation, protein N-terminal acetylation, and destreaking. Peptides identified from the Mascot results were validated at a 5% false discovery rate, and the iBAQ algorithm was applied to assess protein abundance, enabling comparisons of relative quantities among different proteins in the sample. The iBAQ value was determined by normalizing the summed peptide intensity by the number of theoretically observable tryptic peptides for each protein. PSM values from Proteome Discover were uploaded to the SAINT user interface on the CRAPOME website for SAINT analysis. SAINT probability and fold change were calculated using YAP IP as a user-defined control.\n\n### Luciferase reporter assay\n\nHEK293T or HeLa cells were transfected with WT YAP- or YAP5SA-responsive HOP-flash plasmid or 8xGTIIC-luciferase reporter, which has an open-reading frame encoding firefly luciferase, along with the pRL-Luc with Renilla luciferase coding as the internal control for transfection and other expression vectors (NSPs), as specified. After 24 h of transfection with the indicated treatments, cells were lysed with passive lysis buffer (Promega). Luciferase assays were performed by using a dual-luciferase assay kit (Promega), and data were quantified with POLARstar Omega (BMG Labtech) and normalized to the internal Renilla luciferase control.\n\n### AAV9 viral packaging\n\nViral vectors were used as previously described (Leach et al., 2017). The construct containing HA-tagged NSP13 was cloned into the pENN.AAV.cTNT, p1967-Q vector (AAV9-HA-NSP13). Empty vector-encoding green fluorescent protein was used as the control (AAV9-GFP). Both vectors were packaged into the muscle-trophic serotype AAV9 by the Intellectual and Developmental Disabilities Research Center Neuroconnectivity Core at Baylor College of Medicine. After being titered, viruses were aliquoted (1 \u00d7 1013 viral genome particles per tube), immediately frozen, and stored long-term at \u221280\u00b0C. Each aliquot was diluted in saline to make a 120 ul injection solution.\n\n### Echocardiography\n\nFor cardiac function analysis, echocardiography was performed on a VisualSonics Vevo 2100 system with a 550 s probe. B-mode images and M-mode images were captured on a short-axis projection. Ejection fraction, fractional shortening, diameter of diastolic left ventricle, diameter of systolic left ventricle, and end-diastolic volume were calculated by using a cardiac measurement package installed in the Vevo2100 system.\n\n### Histology and immunofluorescence staining\n\nHearts were fixed in 4% paraformaldehyde overnight at 4\u00b0C, dehydrated in serial ethanol and xylene solutions, and embedded in paraffin. For immunofluorescence staining, slides were sectioned at 7 \u03bcm intervals. For paraffin sections, samples were deparaffinized and rehydrated, treated with 3% H2O2 in EtOH and then with antigen retrieval solution (Vector Laboratories Inc, Burlingame, CA, USA), blocked with 10% donkey serum in phosphate-buffered saline, and incubated with primary antibodies. Antibodies used were rabbit anti-HA (#3724, Cell Signaling, RRID:AB_1549585) and rat anti-flag (NBP1-06712, Novus Biologicals, RRID:AB_1625981). Immunofluorescence-stained images were captured on a Zeiss LSM 780 NLO Confocal/2-photon microscope.\n\n### Statistical analysis\n\nSample sizes for mice experiments were determined based on power calculations using preliminary data, with the goal of achieving at least 80% statistical power at a significance level of 0.05. Mice were randomly assigned to experimental groups. For in vitro studies, samples were randomly distributed across treatment groups based on initial cell density or viability. Investigators were blinded to group assignments during data collection and analysis to reduce potential bias. Inclusion and exclusion criteria were pre-established before the experiments. Animals or samples were excluded from analysis if they exhibited procedural complications (e.g., unexpected mortality unrelated to the intervention, or technical failure such as injection leakage). The number of biological replicates (n), statistical tests used, and significance thresholds are indicated in the figure legends and throughout the manuscript.\n\nFor the data in this article, the specific statistical test used is presented in the figure legend. In snRNA-seq analyses, Yap score differences between AT1 from Control and COVID-19 patients were identified via the Wilcoxon test. For analyzing iPSC-CMs infected with SARS-CoV-2, the expression score of cardiomyocyte YAP targets was evaluated by Student\u2019s t-test. Mouse survival rates in Figure 2D were analyzed by the log-rank (Mantel\u2013Cox) test. Statistical significances were evaluated using three-way ANOVA and \u0160\u00edd\u00e1k\u2019s multiple comparisons test for other cardiac data, including EF, FS, and systolic LV diameter. For reporter assays in cells and heart/body ratio in Figure 2\u2014figure supplement 6, the statistical significance of the observed differences in mean was evaluated using a one-way or two-way ANOVA and the post hoc Tukey\u2019s multiple comparisons test. p-Values <0.05 were considered statistically significant (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).\n",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dae-Sik Lim, Korea Advanced Institute of Science and Technology Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.100248.3.sa0](https://doi.org/10.7554/eLife.100248.3.sa0)\n\nThis important study elucidates the molecular function of the SARS-CoV-2 helicase NSP13, which inhibits the transcriptional activity of the YAP/TEAD complex in vitro and in vivo. The evidence supporting the authors' claims is compelling, based on cell biological assays and multi-omics studies. This work contributes to the understanding of the new regulatory mechanism of YAP/TEAD after SARS-CoV-2 infection and will be of interest to researchers investigating COVID-19 infection and the Hippo-YAP signaling pathway.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100248.3.sa1](https://doi.org/10.7554/eLife.100248.3.sa1)\n\nIn the revised manuscript, Meng et al. report that SARS-CoV-2 infection suppresses YAP target gene transcription in both patient lung samples and iPSC-derived cardiomyocytes. Among the tested viral proteins, the helicase nonstructural protein 13 (NSP13) was identified as a key factor that impairs YAP/TEAD transcriptional activity. Through mutagenesis and protein-protein interaction studies, the authors propose a mechanism where NSP13 binds YAP/TEAD complex, remodels chromatin structure, and recruits transcriptional repressors to inhibit YAP/TEAD's transcriptional activity.\n\nOverall, this study uncovers a novel regulation of Hippo signaling by SARS-CoV-2 through NSP13, suggesting a potential role of this growth-related pathway in host innate immune response to viral infection. While these findings are intriguing, future studies are needed to validate the involvement of YAP/TEAD in patient tissues and to assess their potential as therapeutic targets against SARS-CoV-2.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100248.3.sa2](https://doi.org/10.7554/eLife.100248.3.sa2)\n\nSummary:\n\nThe manuscript by Meng et al. describes a role for the coronavirus helicase NSP13 in the regulation of YAP-TEAD-mediated transcription. The authors present data that NSP13 expression in cells reduces YAP-induced TEAD luciferase reporter activity and that NSP13 transduction in cardiomyocytes blocks hyperactive YAP-mutant phenotypes in vivo. Mechanisms by which viral proteins (particularly those from coronaviruses) intersect with cellular signaling events is an important research topic, and the intersection of NSP13 with YAP-TEAD transcriptional activity (independent of upstream Hippo pathway mediated signals) offers new knowledge that is of interest to a broad range of researchers.\n\nStrengths:\n\nThe manuscript presents convincing data mapping the effects of NSP13 on YAP-TEAD reporter activity to the helicase domain. Moreover, the in vivo data demonstrating that NSP13 expression in YAP5SA mouse cardiomyocytes increased survival animal rates, and restored cardiac function is striking and is supportive of the model presented.\n\nWeaknesses:\n\nWhile there are some hints at the mechanisms by which NSP13 regulates YAP-TEAD activity through the identification of NSP13-associated proteins by mass spec, the relationships and functions of these factors in the context of YAP-TEAD regulation requires further study in the future.\n",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ac480cf-de3f-4e92-a7b5-41122f7f4d96",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 infection reduces YAP target gene expression in human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs).",
+      "claim_type": "EXPLICIT",
+      "source": "we analyzed RNA sequencing data from human-induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) and SARS-CoV-2-infected human lung samples, and observed a decrease in YAP target gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of bulk RNA-sequencing data from hiPSC-CMs exposed to SARS-CoV-2, showing dose-dependent decrease in YAP target gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4801085f-d757-425a-8ccb-308fac5ce98e",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C2",
+      "claim": "SARS-CoV-2 infection reduces YAP target gene expression in human lung samples from COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "we analyzed RNA sequencing data from human-induced pluripotent stem cell-derived cardiomyocytes (iPSC-CMs) and SARS-CoV-2-infected human lung samples, and observed a decrease in YAP target gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by integrated single-nucleus RNA sequencing data from lung samples of COVID-19 patients showing decreased YAP scores in AT1 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "e2f324bb-bc18-4df5-ba21-8029e30e4cd1",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C3",
+      "claim": "NSP13 is a conserved coronavirus helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "nonstructural protein 13 (NSP13), a conserved coronavirus helicase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NSP13 function and conservation across coronaviruses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "f754757d-6783-49ab-a4d3-0b706c0ebb79",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C4",
+      "claim": "NSP13 inhibits YAP transcriptional activity independent of the upstream Hippo kinases LATS1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that nonstructural protein 13 (NSP13), a conserved coronavirus helicase, inhibits YAP transcriptional activity independent of the upstream Hippo kinases LATS1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reporter assays showing NSP13 suppresses YAP5SA (a constitutively active form resistant to LATS phosphorylation) transactivation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "f81d311b-56df-4bdd-99b6-94f06116616f",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C5",
+      "claim": "Introducing NSP13 into mouse cardiomyocytes suppresses an active form of YAP (YAP5SA) in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, introducing NSP13 into mouse cardiomyocytes suppresses an active form of YAP (YAP5SA) in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vivo experiments using YAP5SA transgenic mice infected with AAV9-NSP13, showing increased survival rates and restored cardiac function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "53d8c9d1-2869-406c-9b07-bede71d70353",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C6",
+      "claim": "NSP13 helicase activity, including DNA binding and unwinding, is crucial for suppressing YAP transactivation in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent investigations on NSP13 mutants revealed that NSP13 helicase activity, including DNA binding and unwinding, is crucial for suppressing YAP transactivation in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reporter assays with NSP13 mutants showing that mutations affecting DNA binding (K345A/K347A) or ATP hydrolysis (R567A) abolish YAP suppression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "ee92c660-ca50-4410-aa79-edd15dc575ea",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C7",
+      "claim": "TEAD4 serves as a platform to recruit NSP13 and YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, TEAD4 serves as a platform to recruit NSP13 and YAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation assays showing NSP13 interacts with TEAD4, and that TEAD4 promotes the interaction between YAP and NSP13.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "e9a5dc9e-0a68-4258-9b12-4a9e9fb9d33d",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C8",
+      "claim": "NSP13 inactivates the YAP/TEAD4 transcription complex by remodeling chromatin to recruit proteins such as transcription termination factor 2 (TTF2).",
+      "claim_type": "EXPLICIT",
+      "source": "NSP13 likely inactivates the YAP/TEAD4 transcription complex by remodeling chromatin to recruit proteins, such as transcription termination factor 2 (TTF2), to bind the YAP/TEAD/NSP13 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by IP-MS data identifying NSP13-interacting proteins including TTF2, and reporter assays showing TTF2 knockdown increases YAP transactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "23dcfa21-d2a8-4864-b2f8-4fd4dc92d024",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C9",
+      "claim": "The Hippo pathway controls organ development, homeostasis, and regeneration primarily by modulating YAP/TEAD-mediated gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hippo pathway controls organ development, homeostasis, and regeneration primarily by modulating YAP/TEAD-mediated gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Hippo-YAP pathway supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "0b1b9044-5daa-4e96-bd9a-6bbf905695a0",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C10",
+      "claim": "YAP is the primary substrate of LATS kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "YAP is the primary substrate of LATS kinases, and following phosphorylation, is inactivated via cytoplasmic retention or degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Hippo pathway regulation supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "56a34638-a12d-4be0-8c03-c4f1fbc39161",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C11",
+      "claim": "Following phosphorylation by LATS kinases, YAP is inactivated via cytoplasmic retention or degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "YAP is the primary substrate of LATS kinases, and following phosphorylation, is inactivated via cytoplasmic retention or degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about YAP regulation supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "a0c6b62b-841f-45d3-b26e-f4ea5e101f23",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C12",
+      "claim": "Unphosphorylated YAP translocates to the nucleus and complexes with transcription factor partners, notably TEAD, to activate target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unphosphorylated YAP translocates to the nucleus and complexes with transcription factor partners, notably TEAD, to activate target genes (Ma et al., 2019; Wang et al., 2018) involved in tissue development, homeostasis, and regeneration across multiple organs (Wang et al., 2018; Meng et al., 2022; Russell and Camargo, 2022; Hong et al., 2016; Moya and Halder, 2019; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about YAP function supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "b96e4864-3d51-4329-999f-8fe41beeae4f",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C13",
+      "claim": "YAP/TEAD target genes are involved in tissue development, homeostasis, and regeneration across multiple organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unphosphorylated YAP translocates to the nucleus and complexes with transcription factor partners, notably TEAD, to activate target genes (Ma et al., 2019; Wang et al., 2018) involved in tissue development, homeostasis, and regeneration across multiple organs (Wang et al., 2018; Meng et al., 2022; Russell and Camargo, 2022; Hong et al., 2016; Moya and Halder, 2019; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "d6f46ba0-3527-450d-bdbb-ac478a611ef7",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C14",
+      "claim": "Dysregulation of YAP/TEAD processes has been implicated in various diseases, including cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of these processes has been implicated in various diseases, including cancer (Paul et al., 2022; Pocaterra et al., 2020; Lin et al., 2017; Huh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "99555cdf-38f0-4419-a94b-6d6481200ed3",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C15",
+      "claim": "YAP is an endogenous brake of innate antiviral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies reveal that YAP is an endogenous brake of innate antiviral immunity (Wang et al., 2017; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "244fa6e5-16e1-493b-a0f8-40021eb79464",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C16",
+      "claim": "Genetic loss of YAP enhances antiviral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic loss of YAP enhances antiviral responses, whereas expression of a transactivation-deficient mutant (YAP-6SA) suppresses these responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by inference from cited studies on YAP and antiviral immunity.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "d3813648-5e13-40a4-9ff0-2b9928b839e8",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C17",
+      "claim": "Expression of a transactivation-deficient YAP mutant (YAP-6SA) suppresses antiviral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic loss of YAP enhances antiviral responses, whereas expression of a transactivation-deficient mutant (YAP-6SA) suppresses these responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by inference from cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "097f48fd-2ea9-426a-aa36-e1c4e2e4021f",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C18",
+      "claim": "Canonical YAP target genes such as Il-6, Ccl2, and Csf1 modulate innate-immune signaling and cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, multiple canonical YAP target genes, such as Il-6, Ccl2, and Csf1, modulate innate-immune signaling and cytokine production (Meli et al., 2023; Wang et al., 2020; Xiao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "6617ac29-e514-4c69-a1e1-f0385f8cb8e9",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C19",
+      "claim": "Different types of viral infection distinctly influence YAP expression, degradation, and nuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, different types of viral infection distinctly influence YAP expression, degradation, and nuclear localization (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "fcedf703-e7e5-4184-bad6-a47358ad0a79",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C20",
+      "claim": "The mechanisms underlying YAP/TEAD regulation after SARS-CoV-2 infection are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these observations shed light on the complex dynamics of YAP during viral responses, the mechanisms underlying YAP/TEAD regulation after SARS-CoV-2 infection are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "7f5ed3bc-5376-4a3a-90b6-36a54fe3876c",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C21",
+      "claim": "SARS-CoV-2 has well-documented effects on the respiratory, digestive, central nervous, and cardiovascular systems.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2, the center of the COVID-19 pandemic, has well-documented effects on the respiratory, digestive, central nervous, and cardiovascular systems (Ma et al., 2020; De Felice et al., 2020; Nishiga et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "6216149f-e4fc-435f-bf2b-3e508ab8c175",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C22",
+      "claim": "Two groups recently reported opposite effects on YAP activity after SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Two groups recently reported opposite effects on YAP activity after SARS-CoV-2 infection (Garcia et al., 2022; Pinto et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "07a23f41-9439-42b9-9bf0-01a7a1fe7ffa",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C23",
+      "claim": "The lack of YAP/TEAD target gene expression data in previous studies prevents a full understanding of disparate results on YAP activity after SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lack of YAP/TEAD target gene expression data in these studies prevents a full understanding of these disparate results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment based on review of cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "583b24d6-61a3-4095-9c52-54b5a10ecf65",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C24",
+      "claim": "YAP target genes were decreased in a dose-dependent manner after SARS-CoV-2 infection in hiPSC-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocyte-specific YAP target gene (Monroe et al., 2019) expression revealed that YAP targets were decreased in a dose-dependent manner after SARS-CoV-2 infection (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bulk RNA-sequencing data analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4730e5b3-2d0f-4209-acb7-ab24cc5e6852",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C25",
+      "claim": "Ccl2, Thbs1, and Csf1 are downregulated in SARS-CoV-2-infected hiPSC-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that these genes are downregulated in SARS-CoV-2-infected cells, mirroring the decrease in canonical YAP targets such as VGLL3, AMOTL2, and CCN1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by heatmap data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "9d4d003e-e767-4e9f-812e-599707538110",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C26",
+      "claim": "VGLL3, AMOTL2, and CCN1 are decreased in SARS-CoV-2-infected hiPSC-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that these genes are downregulated in SARS-CoV-2-infected cells, mirroring the decrease in canonical YAP targets such as VGLL3, AMOTL2, and CCN1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by heatmap data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "616c76a5-c0b3-41e6-8988-dce8740e5880",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C27",
+      "claim": "TMPRSS2 and ACE2 are two key entry factors for SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "TMPRSS2 and ACE2, two key entry factors for SARS-CoV-2 infection (Hoffmann et al., 2020), were more highly expressed in lung epithelial cells compared to other cell types (Figure 1E, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "c1a8def7-549b-4cb6-b80a-ae96f723bd34",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C28",
+      "claim": "TMPRSS2 and ACE2 were more highly expressed in lung epithelial cells compared to other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "TMPRSS2 and ACE2, two key entry factors for SARS-CoV-2 infection (Hoffmann et al., 2020), were more highly expressed in lung epithelial cells compared to other cell types (Figure 1E, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by UMAP visualization and expression data shown in Figure 1E and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "40b5d844-7be2-4017-a671-833ab7888ab8",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C29",
+      "claim": "SARS-CoV-2 is more likely to infect AT1 cells as they cover >95% of the alveolar surface.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 is more likely to infect AT1 cells as they cover >95% of the alveolar surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about lung anatomy and inference about infection susceptibility.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "400cd0fe-2080-4068-95f5-bca6fff8d23e",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C30",
+      "claim": "Genes associated with or regulating the Hippo pathway were downregulated in AT1 cells from COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed an unbiased GO analysis of the differentially expressed genes (DEGs) and observed that genes associated with or regulating the Hippo pathway were downregulated in AT1 cells from COVID-19 patients (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GO analysis results shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "7d55570c-93a5-493d-b740-91a724dc33f7",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C31",
+      "claim": "The YAP score was lower in AT1 cells from COVID-19 patients than in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous data in vitro, the YAP score, evaluated via YAP target gene expression, was lower in AT1 cells from COVID-19 patients than in controls (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by YAP score analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "dae5166b-2023-4f50-aec1-135cc929ae60",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C32",
+      "claim": "AGER and CLIC5 are reported YAP target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Signature genes associated with AT1 cells, including the reported YAP target genes AGER and CLIC5 (Penkala et al., 2021; Gokey et al., 2021), were downregulated in COVID-19 patient lung samples (Figure 1H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4830d4bb-d4e5-4f8a-99e8-6ace08cf6005",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C33",
+      "claim": "AGER and CLIC5 were downregulated in COVID-19 patient lung samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Signature genes associated with AT1 cells, including the reported YAP target genes AGER and CLIC5 (Penkala et al., 2021; Gokey et al., 2021), were downregulated in COVID-19 patient lung samples (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "f569f9fb-a429-4510-b2a8-eadbea9025f1",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C34",
+      "claim": "Multiple YAP target genes involved in innate immunity and cytokine signaling were paradoxically elevated in COVID-19 patient lung samples.",
+      "claim_type": "EXPLICIT",
+      "source": "However, further analysis revealed that multiple YAP target genes involved in innate immunity and cytokine signaling were paradoxically elevated (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "5a12f641-ccac-4d94-a49a-178a577bc522",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C35",
+      "claim": "The paradoxical elevation of some YAP target genes likely reflects a combination of factors, including cell-type specificity, activation of parallel signaling pathways, and alterations in mechanical cues or tissue architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy likely reflects a combination of factors, including cell-type specificity, activation of parallel signaling pathways, and alterations in mechanical cues or tissue architecture that can independently drive expression of these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning to explain observed data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "a86329a6-031f-4ed7-a3f8-70afaa4a368d",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C36",
+      "claim": "NSP13 strongly inhibited YAP transcription activity compared with other NSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with other NSPs, NSP13 strongly inhibited YAP transcription activity (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by dual-luciferase reporter assay data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "8b696800-3613-4359-8370-6d0478c0e117",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C37",
+      "claim": "YAP5SA is a constitutively active form of YAP that is resistant to phosphorylation and inactivation by LATS1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a constitutively active form of YAP (YAP5SA) that is resistant to phosphorylation and inactivation by LATS1/2 (Zhao et al., 2007), we observed that NSP13 suppresses YAP transactivation independent of its upstream kinase LATS2 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about YAP5SA supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "a176a886-345c-4942-ba31-9ba4cf53ef92",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C38",
+      "claim": "NSP13 suppresses YAP transactivation independent of its upstream kinase LATS2.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a constitutively active form of YAP (YAP5SA) that is resistant to phosphorylation and inactivation by LATS1/2 (Zhao et al., 2007), we observed that NSP13 suppresses YAP transactivation independent of its upstream kinase LATS2 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "ac3a6f38-72a3-42b3-b628-f261cc5e7049",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C39",
+      "claim": "NSP13 attenuated YAP5SA activity dose-dependently.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NSP13 attenuated YAP5SA activity dose-dependently (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "e0d57a97-51be-4804-a929-0dfda80f8a96",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C40",
+      "claim": "NSP13 suppresses episomal DNA transcription, as evidenced by reduced Renilla luciferase activity and decreased GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study reported that NSP13 suppresses episomal DNA transcription, as evidenced by reduced Renilla luciferase activity and decreased GFP expression upon co-expression with NSP13 (Li et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "5d58b175-3a46-4a25-b44c-662c58348c6e",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C41",
+      "claim": "100 ng of NSP13 had no effect on Renilla luciferase levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate this in our system, we examined our raw Renilla luciferase data and found that while 100  ng of NSP13 had no effect, 400  ng of NSP13 reduced Renilla luciferase levels by approximately 50% compared to the YAP5SA-only group (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by raw Renilla luciferase data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "5a41619c-42e7-464e-aefa-51e3b2d98ca1",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C42",
+      "claim": "400 ng of NSP13 reduced Renilla luciferase levels by approximately 50% compared to the YAP5SA-only group.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate this in our system, we examined our raw Renilla luciferase data and found that while 100  ng of NSP13 had no effect, 400  ng of NSP13 reduced Renilla luciferase levels by approximately 50% compared to the YAP5SA-only group (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by raw Renilla luciferase data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "d20ad72e-14a2-485e-a620-b8cfef33e2b3",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C43",
+      "claim": "The firefly luciferase signal, driven by YAP/TEAD interaction (HOP-Flash), exhibited an even greater reduction than Renilla luciferase upon NSP13 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the firefly luciferase signal, driven by YAP/TEAD interaction (HOP-Flash), exhibited an even greater reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of firefly and Renilla luciferase data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "97a476cc-5926-4dc9-92a7-524c97411cd1",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C44",
+      "claim": "Co-expression of NSP13 with NICD (Notch intracellular domain) did not inhibit Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the specificity of this suppression, we also conducted a Notch reporter assay and observed that co-expression of NSP13 with NICD (Notch intracellular domain) did not inhibit Notch signaling (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Notch reporter assay data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "acbcff0b-6655-423e-9651-9e0c1b554a28",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C45",
+      "claim": "NSP13 expression in YAP5SA mouse cardiomyocytes increased survival rates.",
+      "claim_type": "EXPLICIT",
+      "source": "NSP13-induced expression in YAP5SA mouse cardiomyocytes increased survival rates (Figure 2D) and restored cardiac function (Figure 2E, Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by survival curve data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "ac5833d1-82b1-40c9-843e-4aefba007174",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C46",
+      "claim": "NSP13 expression in YAP5SA mouse cardiomyocytes restored cardiac function.",
+      "claim_type": "EXPLICIT",
+      "source": "NSP13-induced expression in YAP5SA mouse cardiomyocytes increased survival rates (Figure 2D) and restored cardiac function (Figure 2E, Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by echocardiography data shown in Figure 2E and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "96a47fb6-ee57-4c0a-a319-dfe312d84ca8",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C48",
+      "claim": "YAP5SA induction produces cardiomyocyte hyperplasia and increased ejection fraction (EF) and fractional shortening (FS), ultimately leading to mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "YAP5SA induction produces cardiomyocyte hyperplasia and increased ejection fraction (EF) and fractional shortening (FS), ultimately leading to mortality (Monroe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "6a3d3b58-238a-4b78-8359-f7bd41ff4d92",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C49",
+      "claim": "NSP13 expression in YAP5SA mice reversed heart overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, NSP13 expression in YAP5SA mice reversed heart overgrowth (Figure 2H and I, Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by whole mount and H&E images shown in Figure 2H and I, and heart/body ratio data in supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "c2f4b462-90ec-44ae-9e6a-c656399fdc18",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C50",
+      "claim": "NSP13 has 99.8% sequence identity between SARS-CoV-2 and SARS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the 99.8% sequence identity of NSP13 between SARS-CoV-2 and SARS-CoV, we speculated that these sites were similarly crucial for SARS-CoV-2 NSP13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1e86b3ba-520d-4556-a9ba-29fef49e4ce2",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C51",
+      "claim": "K131, K345/K347, and R567 were identified as important amino acid sites for NSP13 helicase activity in SARS-CoV.",
+      "claim_type": "EXPLICIT",
+      "source": "K131, K345/K347, and R567 were identified as important amino acid sites for NSP13 helicase activity in SARS-CoV (Jia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "365ba44c-fdb5-4d65-949f-729689c43584",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C52",
+      "claim": "NSP13-K131A, which retains partial helicase activity, can suppress YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter assays revealed that NSP13-K131A, which retains partial helicase activity, can suppress YAP, whereas NSP13-R567A (no ATP consumption) and NSP13-K345A/K347A (obstructed nucleic acid binding channel) failed to inhibit YAP transcriptional activity (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "8d16dc1b-7477-4c56-8f6d-239e2d71ce7d",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C53",
+      "claim": "NSP13-R567A (no ATP consumption) failed to inhibit YAP transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter assays revealed that NSP13-K131A, which retains partial helicase activity, can suppress YAP, whereas NSP13-R567A (no ATP consumption) and NSP13-K345A/K347A (obstructed nucleic acid binding channel) failed to inhibit YAP transcriptional activity (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4975a6b2-fa1b-435d-a012-5a6b2cb340e1",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C54",
+      "claim": "NSP13-K345A/K347A (obstructed nucleic acid binding channel) failed to inhibit YAP transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter assays revealed that NSP13-K131A, which retains partial helicase activity, can suppress YAP, whereas NSP13-R567A (no ATP consumption) and NSP13-K345A/K347A (obstructed nucleic acid binding channel) failed to inhibit YAP transcriptional activity (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "938aece2-7062-4250-b1c7-21bfe7149bf7",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C55",
+      "claim": "None of the NSP13 truncations reduced YAP transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the contribution of each domain to YAP regulation, we constructed six NSP13 truncations (Figure 3C), yet none of these truncations reduced YAP transactivation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "d30d3441-72c9-4141-a13e-5dec3b63b78b",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C56",
+      "claim": "Full-length NSP13 with helicase activity (DNA binding and ATP\u2010dependent unwinding) is required to suppress YAP transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that full-length NSP13 with helicase activity (DNA binding and ATP\u2010dependent unwinding) is required to suppress YAP transactivation, and that partial helicase function is sufficient to fully inhibit YAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutant and truncation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "8b8876d9-5024-4cd0-af31-27bb274c4773",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C57",
+      "claim": "Partial helicase function is sufficient to fully inhibit YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that full-length NSP13 with helicase activity (DNA binding and ATP\u2010dependent unwinding) is required to suppress YAP transactivation, and that partial helicase function is sufficient to fully inhibit YAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the K131A mutant data showing suppression despite partial helicase activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "713368f0-36f2-4be9-bfe6-0d9b20cdeed7",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C58",
+      "claim": "All NSP13 mutants from SARS-CoV-2 variants can suppress YAP transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated NSP13 mutations (Newman et al., 2021) and observed that all mutants can suppress YAP transactivation (Figure 3E and F, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 3E, F and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "87c92110-c810-4e83-8acc-b1596c3d88bb",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C59",
+      "claim": "NSP13 localizes to the cytoplasm and nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed that NSP13 localizes to the cytoplasm and nucleus, whereas most YAP5SA colocalizes with NSP13 in the nucleus three days after tamoxifen injection (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1f41ae6c-418c-499b-8cae-b1762b978a5a",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C60",
+      "claim": "Most YAP5SA colocalizes with NSP13 in the nucleus three days after tamoxifen injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed that NSP13 localizes to the cytoplasm and nucleus, whereas most YAP5SA colocalizes with NSP13 in the nucleus three days after tamoxifen injection (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "27659d06-b97e-4229-9166-385fc70023cd",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C61",
+      "claim": "NSP13 does not directly interact with YAP5SA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-immunoprecipitation (co-IP) assays revealed no direct interaction between NSP13 and YAP5SA (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "acd765a9-45da-4ba9-b7f8-37493f3a4736",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C62",
+      "claim": "NSP13 is associated with the transcription factor TEAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional assays indicated that NSP13 is associated with the transcription factor TEAD4 (Figure 4B), and both the N- and C-terminal ends of TEAD4 interact with NSP13 (Figure 4\u2014figure supplement 2), suggesting that NSP13 prevents YAP transactivation by competitively interacting with TEAD4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "9613af16-bd3d-4dde-b836-d8c223671028",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C63",
+      "claim": "Both the N- and C-terminal ends of TEAD4 interact with NSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional assays indicated that NSP13 is associated with the transcription factor TEAD4 (Figure 4B), and both the N- and C-terminal ends of TEAD4 interact with NSP13 (Figure 4\u2014figure supplement 2), suggesting that NSP13 prevents YAP transactivation by competitively interacting with TEAD4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "6e0fdaa2-1645-4c43-a772-8f4fc4b5be3b",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C64",
+      "claim": "Introduction of NSP13 had no effect on the YAP/TEAD4 association.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, introduction of NSP13 had no effect on the YAP/TEAD4 association (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4eda588e-6faa-4ec0-9459-ca9894830381",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C65",
+      "claim": "The YAP/NSP13 interaction was much stronger in the presence of TEAD4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the YAP/NSP13 interaction was much stronger in the presence of TEAD4, indicating that TEAD4 is a platform to recruit YAP and NSP13 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "5f987a0d-65b0-4353-b78e-e7300390d995",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C66",
+      "claim": "YAP5SA is restricted to the nucleus when co-expressed with either NSP13 WT or R567A, in contrast to the vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, IF analysis of HeLa cells and heart sections revealed that YAP5SA is restricted to the nucleus when co-expressed with either NSP13 WT or R567A, in contrast to the vector control (Figure 4D, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4D and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "0cb1e723-cb76-4f99-b0c0-1c5d8e74e567",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C67",
+      "claim": "NSP13 protein levels in cardiomyocytes accumulated following YAP5SA induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NSP13 protein levels in cardiomyocytes accumulated following YAP5SA induction (Figure 4D and E), suggesting that nuclear NSP13/YAP/TEAD4 prevents NSP13 degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence and western blot data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "88282c4b-bdfe-42d5-8222-aba587833b28",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C68",
+      "claim": "Nuclear NSP13/YAP/TEAD4 prevents NSP13 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NSP13 protein levels in cardiomyocytes accumulated following YAP5SA induction (Figure 4D and E), suggesting that nuclear NSP13/YAP/TEAD4 prevents NSP13 degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that NSP13 protein levels increase with YAP5SA induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "f3aee651-7d6c-41d7-b5c1-497a8072721e",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C69",
+      "claim": "The NSP13/TEAD4 interaction is not dependent on nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "These treatments did not disrupt the NSP13/TEAD4 interaction (Figure 4\u2014figure supplement 5), revealing that their binding is not dependent on nucleic acids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data with nuclease treatments shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1eff9690-5c85-45c1-8f48-8c453e6aff35",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C70",
+      "claim": "IP-MS identified hundreds of candidate proteins that interact with NSP13 in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses identified hundreds of candidate proteins that interact with NSP13 in the nucleus (Figure 4G and Source data 2), which were further analyzed by STRING-based network analysis (Figure 4\u2014figure supplement 6 and Source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by IP-MS data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "a645f63a-52fb-4584-acb3-64a112aec88a",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C71",
+      "claim": "The largest clusters of NSP13-interacting proteins are involved in RNA polymerase II transcription termination, chromatin remodeling, and protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analysis indicated that the largest clusters are involved in RNA polymerase II transcription termination, chromatin remodeling, and protein folding (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GO analysis shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "85cc8fa6-00ef-45a6-978d-98c9db7bf41c",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C72",
+      "claim": "TEAD4 strongly interacts with NSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas TEAD4 strongly interacts with NSP13 (Figure 4\u2014figure supplement 7), the candidate repressors exhibited relatively weak binding to NSP13, suggesting that NSP13 associates with these proteins indirectly, potentially through a larger multiprotein complex or via chromatin-dependent interactions (Figure 4J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-IP data shown in Figure 4\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "9974e52e-f1a4-4767-b126-b311263b4c57",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C73",
+      "claim": "The candidate repressors exhibited relatively weak binding to NSP13.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas TEAD4 strongly interacts with NSP13 (Figure 4\u2014figure supplement 7), the candidate repressors exhibited relatively weak binding to NSP13, suggesting that NSP13 associates with these proteins indirectly, potentially through a larger multiprotein complex or via chromatin-dependent interactions (Figure 4J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from co-IP data comparing TEAD4 and other candidate proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "22408237-b15d-4471-aac5-7a9fc3ede561",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C74",
+      "claim": "NSP13 associates with candidate repressor proteins indirectly, potentially through a larger multiprotein complex or via chromatin-dependent interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas TEAD4 strongly interacts with NSP13 (Figure 4\u2014figure supplement 7), the candidate repressors exhibited relatively weak binding to NSP13, suggesting that NSP13 associates with these proteins indirectly, potentially through a larger multiprotein complex or via chromatin-dependent interactions (Figure 4J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the weak binding observed in co-IP assays.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "53f09860-9184-44ef-bb28-1f83fdddeddb",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C75",
+      "claim": "Knockdown of CCT3 increased endogenous YAP transactivation in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter assays revealed that knockdown of CCT3 and TTF2 increased endogenous YAP transactivation in HeLa cells (Figure 4I, Figure 4\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "59a78cc7-f85d-4988-af3f-aa111f18bca2",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C76",
+      "claim": "Knockdown of TTF2 increased endogenous YAP transactivation in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter assays revealed that knockdown of CCT3 and TTF2 increased endogenous YAP transactivation in HeLa cells (Figure 4I, Figure 4\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reporter assay data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "8c456210-0838-489d-b7b0-954d9ac6e19b",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C77",
+      "claim": "CCT3 knockdown increased expression of CTGF and CYR61.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the function of CCT3, we performed quantitative PCR analysis of classical YAP target genes and observed increased expression of CTGF and CYR61 following CCT3 knockdown (Figure 4\u2014figure supplement 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 4\u2014figure supplement 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "fdb93cb4-e737-4565-b518-1f96ca8c3400",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C78",
+      "claim": "TTF2 is an SWI2/SNF2 family member that facilitates the removal of RNA polymerase II from the DNA template via ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "TTF2, an SWI2/SNF2 family member, facilitates the removal of RNA polymerase II from the DNA template via ATP hydrolysis (Liu et al., 1998; Jiang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1585e87f-3146-4318-aea1-c6d5326dde0a",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C79",
+      "claim": "Termination of transcription complex elongation by TTF2 appears minimally affected by template position.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, termination of transcription complex elongation by TTF2 appears minimally affected by template position (Jiang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "06b69bff-26da-40e7-9f8a-8adae26a5d79",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C80",
+      "claim": "CCT3 is a component of the chaperonin-containing T-complex, a molecular chaperone complex that promotes protein folding following ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "CCT3 is a component of the chaperonin-containing T-complex, a molecular chaperone complex that promotes protein folding following ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CCT3 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "f1d82645-ab2e-497f-b6f3-885e76c45015",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C81",
+      "claim": "CCT3 is a liver cancer biomarker.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports revealed that the liver cancer biomarker CCT3 (Liu et al., 2019) positively regulates YAP protein stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4bb24edf-bf8b-47bc-9450-8fdfd291ca0c",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C82",
+      "claim": "CCT3 positively regulates YAP protein stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports revealed that the liver cancer biomarker CCT3 (Liu et al., 2019) positively regulates YAP protein stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "64cf8394-e01c-4b2e-acbd-9aae2dcd9b68",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C83",
+      "claim": "CCT3 has a context-dependent role in YAP regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CCT3 interacts with NSP13 and inhibits YAP transactivation. Moreover, CCT3 knockdown increases YAP target gene expression, suggesting a context-dependent role of CCT3 in YAP regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that CCT3 has different effects on YAP in different contexts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "718eda4f-1527-4e13-ba2e-8c910578721c",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C84",
+      "claim": "NSP13 plays a critical role in viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "NSP13, a helicase with conserved sequence across all coronaviruses (Figure 3A), plays a critical role in viral replication and is a promising target for antiviral treatment (Yan et al., 2021; Chen et al., 2020; Yan et al., 2020; Newman et al., 2021; Chen et al., 2022; Malone et al., 2021; Nandi et al., 2022; Zeng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "fdf28cd4-f876-4398-9d3d-258b83e1151a",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C85",
+      "claim": "NSP13 is a promising target for antiviral treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "NSP13, a helicase with conserved sequence across all coronaviruses (Figure 3A), plays a critical role in viral replication and is a promising target for antiviral treatment (Yan et al., 2021; Chen et al., 2020; Yan et al., 2020; Newman et al., 2021; Chen et al., 2022; Malone et al., 2021; Nandi et al., 2022; Zeng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "08daea92-40b8-4b5e-ab68-96ff462755bd",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C86",
+      "claim": "Both DNA binding and ATP\u2010dependent unwinding are essential for NSP13 to suppress YAP transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model demonstrates that both DNA binding and ATP\u2010dependent unwinding are essential for NSP13 to suppress YAP transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutant data showing that mutations affecting either DNA binding or ATP hydrolysis abolish YAP suppression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "291a3fdc-74fd-4654-841f-f69e5054d893",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C87",
+      "claim": "TEAD transcription factors are the major partners of YAP.",
+      "claim_type": "EXPLICIT",
+      "source": "TEAD transcription factors, the major partners of YAP, are the primary nuclear effectors of Hippo-YAP signaling and play critical roles in cancer development (Huh et al., 2019; Pobbati et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "c8b69152-4e52-455d-add5-04017fb15f05",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C88",
+      "claim": "TEAD transcription factors are the primary nuclear effectors of Hippo-YAP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "TEAD transcription factors, the major partners of YAP, are the primary nuclear effectors of Hippo-YAP signaling and play critical roles in cancer development (Huh et al., 2019; Pobbati et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "9c865485-e1b0-48e0-9899-e8638cb6b0e2",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C89",
+      "claim": "TEAD transcription factors play critical roles in cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "TEAD transcription factors, the major partners of YAP, are the primary nuclear effectors of Hippo-YAP signaling and play critical roles in cancer development (Huh et al., 2019; Pobbati et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "5364ab8a-deb9-44f3-adeb-d5d882080ac2",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C90",
+      "claim": "NSP13 directly interacts with TEAD4 and strongly suppresses YAP transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that NSP13 directly interacts with TEAD4 and strongly suppresses YAP transactivation, this work provides a new avenue for modulating YAP activity as a potential treatment for YAP-driven diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-IP and reporter assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "fedeb949-ce7a-480c-b723-3be8920e777a",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C91",
+      "claim": "This work provides a new avenue for modulating YAP activity as a potential treatment for YAP-driven diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that NSP13 directly interacts with TEAD4 and strongly suppresses YAP transactivation, this work provides a new avenue for modulating YAP activity as a potential treatment for YAP-driven diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential therapeutic applications based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "0da35052-7f41-429b-8bec-5c3af829997f",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C92",
+      "claim": "AAV9 virus specifically infects cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the adenovirus expressing NSP13 (AAV9-NSP13), which specifically infects cardiomyocytes (Figure 2\u2014figure supplement 4, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data showing NSP13 expression in heart tissue shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "92b3f9a8-d1bf-4e37-9b64-50c371a09e80",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C93",
+      "claim": "The YAP5SA transgenic mice were constructed by Martin lab.",
+      "claim_type": "EXPLICIT",
+      "source": "The YAP5SA transgenic mice were constructed by Martin lab (Monroe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "d741c893-4dd8-467e-9c79-e056ecb74f50",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C94",
+      "claim": "NSP13 must bind DNA and hydrolyze ATP to unwind nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 4J, NSP13 must bind DNA and hydrolyze ATP to unwind nucleic acids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutant data and illustrated in the working model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1415f367-63b5-4ab9-bc2e-e01fd382379e",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C95",
+      "claim": "NSP13 remodels chromatin by binding TEAD and organizing YAP repressors at the YAP/TEAD complex to prevent YAP/TEAD transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This helicase\u2010dependent process likely enables NSP13 to remodel chromatin by binding TEAD and organizing YAP repressors at the YAP/TEAD complex to prevent YAP/TEAD transactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "ba94c873-890f-4a93-9d91-9fa4b033bc7a",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C96",
+      "claim": "The K345A/K347A mutant, unable to anchor to DNA, fails to repress YAP as YAP\u2010driven transcription is slightly increased in this mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this mechanism, the K345A/K347A mutant, unable to anchor to DNA, fails to repress YAP as YAP\u2010driven transcription is slightly increased in this mutant (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "ec7240eb-24e1-4987-91d7-ff3841924113",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "claim_id": "C97",
+      "claim": "The ATPase\u2010dead R567A can bind DNA but does not unwind and remodel chromatin to recruit YAP repressors, resulting in a loss of YAP suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the ATPase\u2010dead R567A can bind DNA but does not unwind and remodel chromatin to recruit YAP repressors, resulting in a loss of YAP suppression (Figure 3B and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutant data shown in Figure 3B and F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "079b077c-c0be-4673-b240-05d086d04a14",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 infection reduces YAP target gene expression in hiPSC-CMs and lung epithelial cells from COVID-19 patients. Analysis of RNA-seq data shows dose-dependent decrease in cardiomyocyte YAP targets and lower YAP scores in AT1 cells from COVID-19 patients, though some immunity-related YAP targets are paradoxically elevated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C24-26, C30-31, C33 are supported by RNA-seq analysis from hiPSC-CMs and patient lung samples showing decreased YAP target expression (Figures 1B-C, 1F-H). The paradoxical elevation of some targets (C34) is acknowledged with speculative explanation (C35), which appropriately recognizes complexity without undermining the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1378febc-b1b3-4870-8003-44278d6d2fd9",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NSP13 inhibits YAP transcriptional activity independent of LATS1/2 kinases. Screening of SARS-CoV-2 nonstructural proteins identified NSP13 as strongly inhibiting YAP activity, with dose-dependent suppression of constitutively active YAP5SA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C4, C38-39 are supported by dual-luciferase reporter assays (Figures 2A-B, Figure 2\u2014supplement 1) showing NSP13 suppresses YAP5SA, which is resistant to LATS phosphorylation. This demonstrates LATS-independent inhibition. However, concerns about episomal DNA suppression (C40-43) are addressed but not fully resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NSP13 expression in mouse cardiomyocytes suppresses YAP5SA activity in vivo, improving survival and reversing cardiac dysfunction. AAV9-mediated NSP13 delivery to YAP5SA transgenic mice increased survival rates, restored cardiac function, and reversed heart overgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C45-46, C49 are supported by in vivo experiments (Figures 2D-I) showing NSP13 expression improves survival, cardiac function, and reverses heart overgrowth in YAP5SA mice. AAV9 cardiomyocyte specificity (C92) is supported by western blot. Statistical analysis is appropriate with adequate sample sizes and blinding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "30d56c58-604a-4595-8df0-1bd188fc7e22",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NSP13 helicase activity, specifically DNA binding and ATP-dependent unwinding, is required for YAP suppression. Mutants affecting DNA binding (K345A/K347A) or ATP hydrolysis (R567A) abolish YAP suppression, while K131A with partial helicase activity retains suppressive function. Full-length NSP13 is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C52-57, C86, C94, C96-97 are supported by reporter assays with NSP13 mutants (Figure 3B) and truncations (Figure 3D). The data clearly show that mutations disrupting DNA binding or ATP hydrolysis eliminate YAP suppression, while partial helicase activity (K131A) is sufficient. The mechanistic interpretation is well-supported by the mutational analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "2ab6e30e-843d-4479-8a5e-51e07d5a354f",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NSP13 mutations from SARS-CoV-2 variants retain the ability to suppress YAP transactivation. All tested variant mutations maintained YAP suppression activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by reporter assays (Figures 3E-F, supplement 1) showing variant NSP13 mutants suppress YAP. The high sequence identity between SARS-CoV-2 and SARS-CoV NSP13 (C50) supports the rationale for testing these sites. This demonstrates conservation of function across variants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TEAD4 serves as a platform to recruit both NSP13 and YAP, forming a tripartite complex. NSP13 directly interacts with TEAD4 (both N- and C-termini) but does not disrupt YAP/TEAD4 binding; instead, TEAD4 enhances YAP/NSP13 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C62-65, C72 are supported by co-IP assays (Figures 4B-C, supplements 2-3, 7) showing NSP13-TEAD4 interaction, TEAD4-mediated enhancement of YAP-NSP13 interaction, and lack of disruption of YAP-TEAD4 binding. The platform model is well-supported by the interaction data. Nuclease treatment (C69) confirms protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NSP13 colocalizes with YAP5SA in the nucleus and restricts YAP to nuclear localization, but does not directly interact with YAP. NSP13 protein levels accumulate with YAP5SA induction, suggesting the complex prevents NSP13 degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-61, C66-67 are supported by immunofluorescence (Figures 4A, 4D, supplement 4) and co-IP data (supplement 1). The lack of direct YAP-NSP13 interaction (C61) combined with TEAD4-mediated interaction (C65) supports the platform model. The inference about NSP13 stabilization (C68) is reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4f45e721-e2b7-492b-9b89-87d24f41edf9",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NSP13 recruits transcriptional repressors including TTF2 and CCT3 to inactivate the YAP/TEAD4 complex, likely through chromatin remodeling. IP-MS identified hundreds of NSP13-interacting proteins enriched for transcription termination and chromatin remodeling functions. Knockdown of TTF2 or CCT3 increases YAP activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C70-71, C75-77 are supported by IP-MS data (Figures 4G-H) and functional validation (Figures 4I, supplement 10). However, the weak binding of candidate repressors to NSP13 (C73) and the speculative nature of the chromatin remodeling mechanism (C74, C95) indicate the mechanism is not fully established. The model is plausible but requires additional validation, particularly direct demonstration of chromatin remodeling and recruitment to YAP/TEAD target genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "8bd099ad-f93d-4d4b-a991-99fcfa55a0ab",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NSP13 shows dose-dependent suppression of episomal DNA transcription at high concentrations (400 ng) but not at lower concentrations (100 ng). The YAP/TEAD-driven firefly luciferase signal shows greater reduction than the Renilla control, and NSP13 does not inhibit Notch signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-44 are supported by analysis of Renilla luciferase data (Figure 2\u2014supplement 2) and Notch reporter assay (supplement 3). The dose-dependent effect and specificity for YAP/TEAD over Notch signaling support that the observed YAP suppression is not solely due to general transcriptional inhibition, though this remains a concern at higher NSP13 concentrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "82e7fdc5-5e59-443a-936d-da029588c1a0",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The NSP13/TEAD4 interaction is not dependent on nucleic acids, as demonstrated by resistance to nuclease treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by co-IP experiments with multiple nuclease treatments (Figure 4\u2014supplement 5) showing maintained NSP13-TEAD4 interaction. This confirms direct protein-protein interaction rather than DNA/RNA-mediated bridging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TTF2 and CCT3 are characterized proteins with established functions in transcription termination and protein folding, respectively. CCT3 shows context-dependent effects on YAP regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-82 represent established knowledge supported by citations. Claim C83 about CCT3's context-dependent role is inferred from the current findings showing CCT3 inhibits YAP (C75, C77) versus prior reports of positive regulation (C82). This is appropriately presented as requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge claims about Hippo-YAP signaling, viral infection effects, SARS-CoV-2 biology, and prior studies are appropriately cited and contextualize the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-23, C27-29, C32, C37, C48, C84-85, C87-89, C93 represent established knowledge or prior work appropriately cited to provide context. These claims are not novel findings but necessary background. The assessment of gaps in knowledge (C20, C23) appropriately motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "195ea6cd-02a2-458c-b4b3-e0d9eaf8160f",
+      "content_id": "4a31d3cd-8c12-43cb-97cb-275cfeb66aa3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This work provides a new avenue for modulating YAP activity as potential treatment for YAP-driven diseases, based on NSP13's direct interaction with TEAD4 and strong YAP suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is supported by the experimental data showing NSP13-TEAD4 interaction and YAP suppression. However, claim C91 about therapeutic potential is highly speculative (acknowledged in evidence as speculation). No therapeutic validation, toxicity assessment, or delivery strategy is presented. This represents a discussion point rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "d1af1282-d868-4f83-8160-1697958070b5",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "SARS-CoV-2 infection reduces YAP target gene expression in both hiPSC-CMs and COVID-19 patient lung samples. RNA-seq analysis showed dose-dependent decreases in cardiomyocyte YAP targets and canonical YAP genes (VGLL3, AMOTL2, CCN1, Ccl2, Thbs1, Csf1) in infected hiPSC-CMs. In COVID-19 patient lung AT1 cells, Hippo pathway genes were downregulated, YAP scores decreased, and AT1-specific YAP targets (AGER, CLIC5) were reduced.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers describe the evidence as 'compelling' (Reviewer 1), with no concerns raised about the RNA-seq data or YAP target gene analysis. Reviewer 2 explicitly states the study 'report[s] that SARS-CoV-2 infection suppresses YAP target gene transcription in both patient lung samples and iPSC-derived cardiomyocytes,' affirming these findings without critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "abd654eb-ff7e-4f9f-bf36-c1103152c854",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Some YAP target genes involved in innate immunity and cytokine signaling were paradoxically elevated in COVID-19 patient lung samples, likely reflecting cell-type specificity, parallel signaling pathways, and alterations in mechanical cues or tissue architecture.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this observation or the authors' interpretation. The finding is presented as part of the overall characterization of YAP activity changes, and no reviewer questions the paradoxical elevation or the proposed explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "b9719e26-f09f-481e-b605-03b1fa9e63d1",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "NSP13 inhibits YAP transcriptional activity independent of upstream Hippo kinases LATS1/2. Reporter assays showed NSP13 strongly suppressed YAP activity compared to other NSPs, suppressed YAP5SA (LATS-resistant mutant) independent of LATS2, and attenuated YAP5SA dose-dependently.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states the evidence is 'compelling' and Reviewer 3 describes 'convincing data mapping the effects of NSP13 on YAP-TEAD reporter activity.' Reviewer 2 confirms NSP13 was 'identified as a key factor that impairs YAP/TEAD transcriptional activity.' No concerns are raised about the reporter assay data or the independence from LATS kinases.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "44e26cc8-712b-4daf-9171-936bab0f16d7",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "NSP13 expression in YAP5SA mouse cardiomyocytes suppresses YAP activity in vivo, increasing survival rates, restoring cardiac function, and reversing heart overgrowth.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly states 'the in vivo data demonstrating that NSP13 expression in YAP5SA mouse cardiomyocytes increased survival animal rates, and restored cardiac function is striking and is supportive of the model presented.' No reviewer questions these in vivo findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "NSP13 helicase activity, including DNA binding and ATP-dependent unwinding, is crucial for suppressing YAP transactivation. Mutants K345A/K347A (DNA binding deficient) and R567A (ATP hydrolysis deficient) failed to inhibit YAP, while K131A (partial helicase activity) retained suppression. None of six NSP13 truncations reduced YAP transactivation, indicating full-length protein is required.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 describes 'convincing data mapping the effects of NSP13 on YAP-TEAD reporter activity to the helicase domain.' Reviewer 1 notes the evidence is 'compelling, based on cell biological assays.' No reviewer challenges the mutagenesis or truncation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "ddfc2713-1528-4f4b-bf31-ffb9870bdbc8",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "All NSP13 mutants from SARS-CoV-2 variants can suppress YAP transactivation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is not specifically discussed by reviewers but is presented as part of the characterization of NSP13 function. No concerns are raised about variant analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "0b90c141-062f-4d9f-a952-2b52feebc973",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "TEAD4 serves as a platform to recruit NSP13 and YAP. NSP13 interacts with TEAD4 (both N- and C-termini), but NSP13 introduction does not disrupt YAP/TEAD4 association. Instead, TEAD4 presence strengthens YAP/NSP13 interaction, indicating TEAD4 acts as a scaffold.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 states the authors 'propose a mechanism where NSP13 binds YAP/TEAD complex' through 'protein-protein interaction studies.' No reviewer questions the co-IP data or the scaffold model for TEAD4.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "15cab0a1-bf33-415b-8552-e39305f7ed42",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "NSP13 inactivates the YAP/TEAD4 complex by remodeling chromatin to recruit transcriptional repressors. IP-MS identified hundreds of NSP13-interacting proteins involved in RNA Pol II termination, chromatin remodeling, and protein folding. Candidate repressors (TTF2, CCT3) showed weak NSP13 binding, suggesting indirect association via multiprotein complexes. Knockdown of TTF2 and CCT3 increased YAP transactivation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 explicitly states 'While there are some hints at the mechanisms by which NSP13 regulates YAP-TEAD activity through the identification of NSP13-associated proteins by mass spec, the relationships and functions of these factors in the context of YAP-TEAD regulation requires further study in the future.' This indicates the mechanistic model is incomplete and requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "fa456d0e-bf78-4ba7-98e5-11833229eeae",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "NSP13 localizes to cytoplasm and nucleus, with YAP5SA colocalizing with NSP13 in the nucleus. NSP13 does not directly interact with YAP5SA but restricts YAP5SA to the nucleus when co-expressed. NSP13 protein levels accumulate with YAP5SA induction, suggesting the nuclear complex prevents NSP13 degradation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These localization and interaction findings are part of the mechanistic characterization that reviewers describe as based on 'protein-protein interaction studies' (Reviewer 2). No specific concerns are raised about the immunofluorescence or co-IP data.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1f7f670d-d5cb-43f9-9bda-1c955ffbda30",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The NSP13/TEAD4 interaction is not dependent on nucleic acids.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is presented as part of the characterization of NSP13-TEAD4 binding and is not questioned by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "beba1370-272f-4c6a-821c-74c091b43587",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "NSP13 suppresses episomal DNA transcription at high doses (400 ng reduced Renilla luciferase by ~50%), but the firefly luciferase signal driven by YAP/TEAD showed even greater reduction, indicating specificity for YAP/TEAD-driven transcription.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This control experiment addresses potential non-specific effects of NSP13. Reviewers do not challenge this interpretation or the dose-dependent effects on reporter constructs.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "a0f949dd-222e-4929-997c-96669fa026e4",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "NSP13 does not inhibit Notch signaling, demonstrating specificity for YAP/TEAD pathway.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This specificity control is not questioned by reviewers and supports the selective effect of NSP13 on YAP/TEAD.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "4b159b62-897e-4018-a933-db78d31f049f",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "CCT3 knockdown increased expression of classical YAP target genes CTGF and CYR61.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding supports the role of CCT3 as a YAP repressor and is consistent with the reporter assay data. No reviewer challenges this result.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "9d536a3d-eef0-4c26-b850-7d88a4e8fbc2",
+      "content_id": "3e79bf43-427e-4064-9a66-4f05d95ef391",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "NSP13 directly interacts with TEAD4 and strongly suppresses YAP transactivation, providing a new avenue for modulating YAP activity as potential treatment for YAP-driven diseases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states this work 'contributes to the understanding of the new regulatory mechanism of YAP/TEAD after SARS-CoV-2 infection.' Reviewer 2 notes the findings suggest 'a potential role of this growth-related pathway in host innate immune response' and that 'future studies are needed...to assess their potential as therapeutic targets,' indicating acceptance of the therapeutic potential while noting it requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0ac480cf-de3f-4e92-a7b5-41122f7f4d96",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "4801085f-d757-425a-8ccb-308fac5ce98e",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "583b24d6-61a3-4095-9c52-54b5a10ecf65",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "4730e5b3-2d0f-4209-acb7-ab24cc5e6852",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "9d4d003e-e767-4e9f-812e-599707538110",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "400cd0fe-2080-4068-95f5-bca6fff8d23e",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "7d55570c-93a5-493d-b740-91a724dc33f7",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "4830d4bb-d4e5-4f8a-99e8-6ace08cf6005",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "f569f9fb-a429-4510-b2a8-eadbea9025f1",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "5a12f641-ccac-4d94-a49a-178a577bc522",
+      "result_id": "079b077c-c0be-4673-b240-05d086d04a14"
+    },
+    {
+      "claim_id": "a86329a6-031f-4ed7-a3f8-70afaa4a368d",
+      "result_id": "1378febc-b1b3-4870-8003-44278d6d2fd9"
+    },
+    {
+      "claim_id": "f754757d-6783-49ab-a4d3-0b706c0ebb79",
+      "result_id": "1378febc-b1b3-4870-8003-44278d6d2fd9"
+    },
+    {
+      "claim_id": "a176a886-345c-4942-ba31-9ba4cf53ef92",
+      "result_id": "1378febc-b1b3-4870-8003-44278d6d2fd9"
+    },
+    {
+      "claim_id": "ac3a6f38-72a3-42b3-b628-f261cc5e7049",
+      "result_id": "1378febc-b1b3-4870-8003-44278d6d2fd9"
+    },
+    {
+      "claim_id": "f81d311b-56df-4bdd-99b6-94f06116616f",
+      "result_id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b"
+    },
+    {
+      "claim_id": "acbcff0b-6655-423e-9651-9e0c1b554a28",
+      "result_id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b"
+    },
+    {
+      "claim_id": "ac5833d1-82b1-40c9-843e-4aefba007174",
+      "result_id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b"
+    },
+    {
+      "claim_id": "96a47fb6-ee57-4c0a-a319-dfe312d84ca8",
+      "result_id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b"
+    },
+    {
+      "claim_id": "6a3d3b58-238a-4b78-8359-f7bd41ff4d92",
+      "result_id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b"
+    },
+    {
+      "claim_id": "0da35052-7f41-429b-8bec-5c3af829997f",
+      "result_id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b"
+    },
+    {
+      "claim_id": "53d8c9d1-2869-406c-9b07-bede71d70353",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "365ba44c-fdb5-4d65-949f-729689c43584",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "8d16dc1b-7477-4c56-8f6d-239e2d71ce7d",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "4975a6b2-fa1b-435d-a012-5a6b2cb340e1",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "938aece2-7062-4250-b1c7-21bfe7149bf7",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "d30d3441-72c9-4141-a13e-5dec3b63b78b",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "8b8876d9-5024-4cd0-af31-27bb274c4773",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "08daea92-40b8-4b5e-ab68-96ff462755bd",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "d741c893-4dd8-467e-9c79-e056ecb74f50",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "ba94c873-890f-4a93-9d91-9fa4b033bc7a",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "ec7240eb-24e1-4987-91d7-ff3841924113",
+      "result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22"
+    },
+    {
+      "claim_id": "713368f0-36f2-4be9-bfe6-0d9b20cdeed7",
+      "result_id": "2ab6e30e-843d-4479-8a5e-51e07d5a354f"
+    },
+    {
+      "claim_id": "c2f4b462-90ec-44ae-9e6a-c656399fdc18",
+      "result_id": "2ab6e30e-843d-4479-8a5e-51e07d5a354f"
+    },
+    {
+      "claim_id": "1e86b3ba-520d-4556-a9ba-29fef49e4ce2",
+      "result_id": "2ab6e30e-843d-4479-8a5e-51e07d5a354f"
+    },
+    {
+      "claim_id": "ee92c660-ca50-4410-aa79-edd15dc575ea",
+      "result_id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f"
+    },
+    {
+      "claim_id": "acd765a9-45da-4ba9-b7f8-37493f3a4736",
+      "result_id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f"
+    },
+    {
+      "claim_id": "9613af16-bd3d-4dde-b836-d8c223671028",
+      "result_id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f"
+    },
+    {
+      "claim_id": "6e0fdaa2-1645-4c43-a772-8f4fc4b5be3b",
+      "result_id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f"
+    },
+    {
+      "claim_id": "4eda588e-6faa-4ec0-9459-ca9894830381",
+      "result_id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f"
+    },
+    {
+      "claim_id": "85cc8fa6-00ef-45a6-978d-98c9db7bf41c",
+      "result_id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f"
+    },
+    {
+      "claim_id": "87c92110-c810-4e83-8acc-b1596c3d88bb",
+      "result_id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d"
+    },
+    {
+      "claim_id": "1f41ae6c-418c-499b-8cae-b1762b978a5a",
+      "result_id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d"
+    },
+    {
+      "claim_id": "27659d06-b97e-4229-9166-385fc70023cd",
+      "result_id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d"
+    },
+    {
+      "claim_id": "5f987a0d-65b0-4353-b78e-e7300390d995",
+      "result_id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d"
+    },
+    {
+      "claim_id": "0cb1e723-cb76-4f99-b0c0-1c5d8e74e567",
+      "result_id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d"
+    },
+    {
+      "claim_id": "88282c4b-bdfe-42d5-8222-aba587833b28",
+      "result_id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d"
+    },
+    {
+      "claim_id": "e9a5dc9e-0a68-4258-9b12-4a9e9fb9d33d",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "1eff9690-5c85-45c1-8f48-8c453e6aff35",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "a645f63a-52fb-4584-acb3-64a112aec88a",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "9974e52e-f1a4-4767-b126-b311263b4c57",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "22408237-b15d-4471-aac5-7a9fc3ede561",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "53f09860-9184-44ef-bb28-1f83fdddeddb",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "59a78cc7-f85d-4988-af3f-aa111f18bca2",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "8c456210-0838-489d-b7b0-954d9ac6e19b",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "1415f367-63b5-4ab9-bc2e-e01fd382379e",
+      "result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9"
+    },
+    {
+      "claim_id": "e0d57a97-51be-4804-a929-0dfda80f8a96",
+      "result_id": "8bd099ad-f93d-4d4b-a991-99fcfa55a0ab"
+    },
+    {
+      "claim_id": "5d58b175-3a46-4a25-b44c-662c58348c6e",
+      "result_id": "8bd099ad-f93d-4d4b-a991-99fcfa55a0ab"
+    },
+    {
+      "claim_id": "5a41619c-42e7-464e-aefa-51e3b2d98ca1",
+      "result_id": "8bd099ad-f93d-4d4b-a991-99fcfa55a0ab"
+    },
+    {
+      "claim_id": "d20ad72e-14a2-485e-a620-b8cfef33e2b3",
+      "result_id": "8bd099ad-f93d-4d4b-a991-99fcfa55a0ab"
+    },
+    {
+      "claim_id": "97a476cc-5926-4dc9-92a7-524c97411cd1",
+      "result_id": "8bd099ad-f93d-4d4b-a991-99fcfa55a0ab"
+    },
+    {
+      "claim_id": "f3aee651-7d6c-41d7-b5c1-497a8072721e",
+      "result_id": "82e7fdc5-5e59-443a-936d-da029588c1a0"
+    },
+    {
+      "claim_id": "fdb93cb4-e737-4565-b518-1f96ca8c3400",
+      "result_id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e"
+    },
+    {
+      "claim_id": "1585e87f-3146-4318-aea1-c6d5326dde0a",
+      "result_id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e"
+    },
+    {
+      "claim_id": "06b69bff-26da-40e7-9f8a-8adae26a5d79",
+      "result_id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e"
+    },
+    {
+      "claim_id": "f1d82645-ab2e-497f-b6f3-885e76c45015",
+      "result_id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e"
+    },
+    {
+      "claim_id": "4bb24edf-bf8b-47bc-9450-8fdfd291ca0c",
+      "result_id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e"
+    },
+    {
+      "claim_id": "64cf8394-e01c-4b2e-acbd-9aae2dcd9b68",
+      "result_id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e"
+    },
+    {
+      "claim_id": "23dcfa21-d2a8-4864-b2f8-4fd4dc92d024",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "0b1b9044-5daa-4e96-bd9a-6bbf905695a0",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "56a34638-a12d-4be0-8c03-c4f1fbc39161",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "a0c6b62b-841f-45d3-b26e-f4ea5e101f23",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "b96e4864-3d51-4329-999f-8fe41beeae4f",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "d6f46ba0-3527-450d-bdbb-ac478a611ef7",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "99555cdf-38f0-4419-a94b-6d6481200ed3",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "244fa6e5-16e1-493b-a0f8-40021eb79464",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "d3813648-5e13-40a4-9ff0-2b9928b839e8",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "097f48fd-2ea9-426a-aa36-e1c4e2e4021f",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "6617ac29-e514-4c69-a1e1-f0385f8cb8e9",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "fcedf703-e7e5-4184-bad6-a47358ad0a79",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "7f5ed3bc-5376-4a3a-90b6-36a54fe3876c",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "6216149f-e4fc-435f-bf2b-3e508ab8c175",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "07a23f41-9439-42b9-9bf0-01a7a1fe7ffa",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "616c76a5-c0b3-41e6-8988-dce8740e5880",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "c1a8def7-549b-4cb6-b80a-ae96f723bd34",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "40b5d844-7be2-4017-a671-833ab7888ab8",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "dae5166b-2023-4f50-aec1-135cc929ae60",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "8b696800-3613-4359-8370-6d0478c0e117",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "96a47fb6-ee57-4c0a-a319-dfe312d84ca8",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "718eda4f-1527-4e13-ba2e-8c910578721c",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "fdf28cd4-f876-4398-9d3d-258b83e1151a",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "291a3fdc-74fd-4654-841f-f69e5054d893",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "c8b69152-4e52-455d-add5-04017fb15f05",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "9c865485-e1b0-48e0-9899-e8638cb6b0e2",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "92b3f9a8-d1bf-4e37-9b64-50c371a09e80",
+      "result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0"
+    },
+    {
+      "claim_id": "5364ab8a-deb9-44f3-adeb-d5d882080ac2",
+      "result_id": "195ea6cd-02a2-458c-b4b3-e0d9eaf8160f"
+    },
+    {
+      "claim_id": "fedeb949-ce7a-480c-b723-3be8920e777a",
+      "result_id": "195ea6cd-02a2-458c-b4b3-e0d9eaf8160f"
+    },
+    {
+      "claim_id": "0ac480cf-de3f-4e92-a7b5-41122f7f4d96",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "4801085f-d757-425a-8ccb-308fac5ce98e",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "583b24d6-61a3-4095-9c52-54b5a10ecf65",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "4730e5b3-2d0f-4209-acb7-ab24cc5e6852",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "9d4d003e-e767-4e9f-812e-599707538110",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "400cd0fe-2080-4068-95f5-bca6fff8d23e",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "7d55570c-93a5-493d-b740-91a724dc33f7",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "4830d4bb-d4e5-4f8a-99e8-6ace08cf6005",
+      "result_id": "d1af1282-d868-4f83-8160-1697958070b5"
+    },
+    {
+      "claim_id": "f569f9fb-a429-4510-b2a8-eadbea9025f1",
+      "result_id": "abd654eb-ff7e-4f9f-bf36-c1103152c854"
+    },
+    {
+      "claim_id": "5a12f641-ccac-4d94-a49a-178a577bc522",
+      "result_id": "abd654eb-ff7e-4f9f-bf36-c1103152c854"
+    },
+    {
+      "claim_id": "f754757d-6783-49ab-a4d3-0b706c0ebb79",
+      "result_id": "b9719e26-f09f-481e-b605-03b1fa9e63d1"
+    },
+    {
+      "claim_id": "a86329a6-031f-4ed7-a3f8-70afaa4a368d",
+      "result_id": "b9719e26-f09f-481e-b605-03b1fa9e63d1"
+    },
+    {
+      "claim_id": "a176a886-345c-4942-ba31-9ba4cf53ef92",
+      "result_id": "b9719e26-f09f-481e-b605-03b1fa9e63d1"
+    },
+    {
+      "claim_id": "ac3a6f38-72a3-42b3-b628-f261cc5e7049",
+      "result_id": "b9719e26-f09f-481e-b605-03b1fa9e63d1"
+    },
+    {
+      "claim_id": "f81d311b-56df-4bdd-99b6-94f06116616f",
+      "result_id": "44e26cc8-712b-4daf-9171-936bab0f16d7"
+    },
+    {
+      "claim_id": "acbcff0b-6655-423e-9651-9e0c1b554a28",
+      "result_id": "44e26cc8-712b-4daf-9171-936bab0f16d7"
+    },
+    {
+      "claim_id": "ac5833d1-82b1-40c9-843e-4aefba007174",
+      "result_id": "44e26cc8-712b-4daf-9171-936bab0f16d7"
+    },
+    {
+      "claim_id": "6a3d3b58-238a-4b78-8359-f7bd41ff4d92",
+      "result_id": "44e26cc8-712b-4daf-9171-936bab0f16d7"
+    },
+    {
+      "claim_id": "53d8c9d1-2869-406c-9b07-bede71d70353",
+      "result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a"
+    },
+    {
+      "claim_id": "365ba44c-fdb5-4d65-949f-729689c43584",
+      "result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a"
+    },
+    {
+      "claim_id": "8d16dc1b-7477-4c56-8f6d-239e2d71ce7d",
+      "result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a"
+    },
+    {
+      "claim_id": "4975a6b2-fa1b-435d-a012-5a6b2cb340e1",
+      "result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a"
+    },
+    {
+      "claim_id": "938aece2-7062-4250-b1c7-21bfe7149bf7",
+      "result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a"
+    },
+    {
+      "claim_id": "d30d3441-72c9-4141-a13e-5dec3b63b78b",
+      "result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a"
+    },
+    {
+      "claim_id": "8b8876d9-5024-4cd0-af31-27bb274c4773",
+      "result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a"
+    },
+    {
+      "claim_id": "713368f0-36f2-4be9-bfe6-0d9b20cdeed7",
+      "result_id": "ddfc2713-1528-4f4b-bf31-ffb9870bdbc8"
+    },
+    {
+      "claim_id": "ee92c660-ca50-4410-aa79-edd15dc575ea",
+      "result_id": "0b90c141-062f-4d9f-a952-2b52feebc973"
+    },
+    {
+      "claim_id": "acd765a9-45da-4ba9-b7f8-37493f3a4736",
+      "result_id": "0b90c141-062f-4d9f-a952-2b52feebc973"
+    },
+    {
+      "claim_id": "9613af16-bd3d-4dde-b836-d8c223671028",
+      "result_id": "0b90c141-062f-4d9f-a952-2b52feebc973"
+    },
+    {
+      "claim_id": "6e0fdaa2-1645-4c43-a772-8f4fc4b5be3b",
+      "result_id": "0b90c141-062f-4d9f-a952-2b52feebc973"
+    },
+    {
+      "claim_id": "4eda588e-6faa-4ec0-9459-ca9894830381",
+      "result_id": "0b90c141-062f-4d9f-a952-2b52feebc973"
+    },
+    {
+      "claim_id": "e9a5dc9e-0a68-4258-9b12-4a9e9fb9d33d",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "1eff9690-5c85-45c1-8f48-8c453e6aff35",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "a645f63a-52fb-4584-acb3-64a112aec88a",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "9974e52e-f1a4-4767-b126-b311263b4c57",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "22408237-b15d-4471-aac5-7a9fc3ede561",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "53f09860-9184-44ef-bb28-1f83fdddeddb",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "59a78cc7-f85d-4988-af3f-aa111f18bca2",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "1415f367-63b5-4ab9-bc2e-e01fd382379e",
+      "result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42"
+    },
+    {
+      "claim_id": "87c92110-c810-4e83-8acc-b1596c3d88bb",
+      "result_id": "fa456d0e-bf78-4ba7-98e5-11833229eeae"
+    },
+    {
+      "claim_id": "1f41ae6c-418c-499b-8cae-b1762b978a5a",
+      "result_id": "fa456d0e-bf78-4ba7-98e5-11833229eeae"
+    },
+    {
+      "claim_id": "27659d06-b97e-4229-9166-385fc70023cd",
+      "result_id": "fa456d0e-bf78-4ba7-98e5-11833229eeae"
+    },
+    {
+      "claim_id": "5f987a0d-65b0-4353-b78e-e7300390d995",
+      "result_id": "fa456d0e-bf78-4ba7-98e5-11833229eeae"
+    },
+    {
+      "claim_id": "0cb1e723-cb76-4f99-b0c0-1c5d8e74e567",
+      "result_id": "fa456d0e-bf78-4ba7-98e5-11833229eeae"
+    },
+    {
+      "claim_id": "88282c4b-bdfe-42d5-8222-aba587833b28",
+      "result_id": "fa456d0e-bf78-4ba7-98e5-11833229eeae"
+    },
+    {
+      "claim_id": "f3aee651-7d6c-41d7-b5c1-497a8072721e",
+      "result_id": "1f7f670d-d5cb-43f9-9bda-1c955ffbda30"
+    },
+    {
+      "claim_id": "e0d57a97-51be-4804-a929-0dfda80f8a96",
+      "result_id": "beba1370-272f-4c6a-821c-74c091b43587"
+    },
+    {
+      "claim_id": "5d58b175-3a46-4a25-b44c-662c58348c6e",
+      "result_id": "beba1370-272f-4c6a-821c-74c091b43587"
+    },
+    {
+      "claim_id": "5a41619c-42e7-464e-aefa-51e3b2d98ca1",
+      "result_id": "beba1370-272f-4c6a-821c-74c091b43587"
+    },
+    {
+      "claim_id": "d20ad72e-14a2-485e-a620-b8cfef33e2b3",
+      "result_id": "beba1370-272f-4c6a-821c-74c091b43587"
+    },
+    {
+      "claim_id": "97a476cc-5926-4dc9-92a7-524c97411cd1",
+      "result_id": "a0f949dd-222e-4929-997c-96669fa026e4"
+    },
+    {
+      "claim_id": "8c456210-0838-489d-b7b0-954d9ac6e19b",
+      "result_id": "4b159b62-897e-4018-a933-db78d31f049f"
+    },
+    {
+      "claim_id": "5364ab8a-deb9-44f3-adeb-d5d882080ac2",
+      "result_id": "9d536a3d-eef0-4c26-b850-7d88a4e8fbc2"
+    },
+    {
+      "claim_id": "fedeb949-ce7a-480c-b723-3be8920e777a",
+      "result_id": "9d536a3d-eef0-4c26-b850-7d88a4e8fbc2"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "26710830-145b-4fd5-852a-1514c0488d39",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "079b077c-c0be-4673-b240-05d086d04a14",
+      "peer_result_id": "d1af1282-d868-4f83-8160-1697958070b5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations find strong support for claims C1, C2, C24-26, C30-31, C33 regarding YAP target gene suppression in RNA-seq data. OpenEval additionally addresses the paradoxical elevation (C34-35) which peer reviewers also accept without challenge (R2).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "137dfe06-2925-41d5-aab7-1fdacf9a4806",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "1378febc-b1b3-4870-8003-44278d6d2fd9",
+      "peer_result_id": "b9719e26-f09f-481e-b605-03b1fa9e63d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C4, C36, C38-39. Both find the dual-luciferase reporter assays compelling evidence for LATS-independent YAP inhibition by NSP13. OpenEval notes unresolved concerns about episomal DNA suppression (C40-43), which peer reviewers address separately in R11.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "47fef8b9-ecd6-4e84-bfa7-42d8f2d9ed0b",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e87798d8-52f8-460f-8c00-d4ef5e6bc43b",
+      "peer_result_id": "44e26cc8-712b-4daf-9171-936bab0f16d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the in vivo findings (C5, C45-46, C49) showing NSP13 improves survival and cardiac function in YAP5SA mice. Peer Reviewer 3 describes the data as 'striking,' matching OpenEval's assessment of appropriate statistical analysis and experimental design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "88a8c7a4-585a-4ffc-b25e-780d1e797b65",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "30d56c58-604a-4595-8df0-1bd188fc7e22",
+      "peer_result_id": "14f7b5f7-8b01-4440-857c-ebb2e264fe9a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C6, C52-57 regarding NSP13 mutant and truncation analysis. Both find the reporter assay data convincingly demonstrate that helicase domain activity is required for YAP suppression. OpenEval includes additional claims (C86, C94, C96-97) not explicitly addressed by peer reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "72271f42-e471-4b2a-adc5-346c3748a314",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "2ab6e30e-843d-4479-8a5e-51e07d5a354f",
+      "peer_result_id": "ddfc2713-1528-4f4b-bf31-ffb9870bdbc8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support claim C58 regarding variant NSP13 mutants suppressing YAP. OpenEval provides more detailed rationale citing sequence conservation (C50-51), while peer reviewers accept this finding without specific commentary.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "aca67413-37fe-49d0-8b3b-86163f343cfe",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "43cfc23c-acad-4822-a107-4ed1e3d1ab9f",
+      "peer_result_id": "0b90c141-062f-4d9f-a952-2b52feebc973",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C7, C62-65 regarding NSP13-TEAD4 interaction and the platform/scaffold model. Both evaluations find the co-IP data compelling. OpenEval additionally addresses nuclease treatment (C69) and TEAD4-mediated enhancement (C72).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "b4ed3270-09f0-4bca-af31-e5b82b3c33fa",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "93180525-3afa-4c2d-99e9-6f94ddc9bc3d",
+      "peer_result_id": "fa456d0e-bf78-4ba7-98e5-11833229eeae",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C59-61, C66-68. Both support the immunofluorescence and co-IP data showing nuclear localization and TEAD4-mediated interaction. Both note that NSP13 stabilization inference (C68) is somewhat speculative but reasonable.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "11fa986b-435c-4104-bbab-7e734b6e6dbb",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "4f45e721-e2b7-492b-9b89-87d24f41edf9",
+      "peer_result_id": "15cab0a1-bf33-415b-8552-e39305f7ed42",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong concordance with both evaluations rating these claims as UNCERTAIN. Both acknowledge IP-MS data (C70-71, C75-76) but agree the chromatin remodeling mechanism (C74, C95) is incomplete. Peer Reviewer 3 explicitly states 'requires further study,' matching OpenEval's assessment that additional validation is needed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "3246d5da-7397-4e0f-8c03-536b90361f67",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "8bd099ad-f93d-4d4b-a991-99fcfa55a0ab",
+      "peer_result_id": "beba1370-272f-4c6a-821c-74c091b43587",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support claims C40-43 regarding dose-dependent effects and specificity controls. OpenEval additionally addresses C44 (Notch reporter specificity), which peer reviewers evaluate separately in R12, also finding it supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "093457ef-d913-4986-a709-36765f028517",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "82e7fdc5-5e59-443a-936d-da029588c1a0",
+      "peer_result_id": "1f7f670d-d5cb-43f9-9bda-1c955ffbda30",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C69. Both find the nuclease treatment experiments convincingly demonstrate direct protein-protein interaction rather than nucleic acid-mediated bridging.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "0428d23c-b1af-448f-8c11-d71a555bff83",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "195ea6cd-02a2-458c-b4b3-e0d9eaf8160f",
+      "peer_result_id": "9d536a3d-eef0-4c26-b850-7d88a4e8fbc2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of claims C90-91. OpenEval rates as UNCERTAIN, emphasizing the highly speculative nature of therapeutic potential (C91) with no validation data. Peer reviewers rate as SUPPORTED, accepting the mechanistic contribution while acknowledging future studies are needed for therapeutic validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "6cb999e2-9b40-4442-a874-39d041293f39",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "5ac78788-e1f8-417a-8f0a-2f0a7221336e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C78-83 as established background knowledge and context-dependent CCT3 function. Peer reviewers do not provide a separate evaluation of these contextual/background claims, though they accept CCT3 findings in R13.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "7445264c-2997-481a-a0e0-2e99f31c6dff",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "6fcbb1fd-8fa8-4359-94aa-2623985e6ad0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates extensive background claims (C9-23, C27-29, C32, C37, C48, C84-85, C87-89, C93) as appropriately cited established knowledge. Peer reviewers do not separately evaluate background/contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "46b6de53-073c-4d7c-96a6-f2bad0272a64",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP14",
+      "openeval_result_id": null,
+      "peer_result_id": "abd654eb-ff7e-4f9f-bf36-c1103152c854",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers separately evaluate the paradoxical elevation of some YAP targets (C34-35) as supported. OpenEval addresses these claims within R1 as part of the overall RNA-seq analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "c9470c0c-2706-4288-921a-a81852f82f51",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP15",
+      "openeval_result_id": null,
+      "peer_result_id": "ddfc2713-1528-4f4b-bf31-ffb9870bdbc8",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers provide a focused evaluation on variant analysis (C58) alone. OpenEval addresses this in R5 along with sequence conservation rationale (C50-51).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "3298ea38-42aa-4287-a21c-9d1e625f59d2",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP16",
+      "openeval_result_id": null,
+      "peer_result_id": "a0f949dd-222e-4929-997c-96669fa026e4",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers separately evaluate Notch reporter specificity control (C44) as supported. OpenEval addresses this claim within R9 alongside other specificity controls (C40-43).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    },
+    {
+      "id": "1a8455c8-094c-4c67-9532-54509bea7fa8",
+      "submission_id": "8cd9549a-8ee8-4168-ae76-85adb4978ba9",
+      "comparison_id": "CMP17",
+      "openeval_result_id": null,
+      "peer_result_id": "4b159b62-897e-4018-a933-db78d31f049f",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers separately evaluate CCT3 as YAP repressor (C77) as supported. OpenEval addresses this claim within R8 as part of the broader mechanistic evaluation including IP-MS findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:20:08.086421Z"
+    }
+  ]
+}

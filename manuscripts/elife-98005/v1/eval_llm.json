@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study recruited 15 experts in EVD epidemiology through convenience and snowball sampling, conducting 40 interviews over 5 months (November 2019 - March 2020). Experts were provided with interactive maps and used the MATCH Uncertainty Elicitation Tool with a 'roulette' method to estimate case probabilities across health zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 and C33-C40 provide comprehensive methodological details about expert recruitment, interview procedures, and participant characteristics. The sampling approach, elicitation methods, and expert demographics are clearly documented with specific numbers and institutional affiliations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A spatiotemporal modeling framework was developed with autoregressive and spatial components, using two spatial kernels (gravity and adjacency models). The model was fitted to 60 days of historical data using Hamiltonian Monte Carlo (NUTS) with Stan, performing 1000 iterations per forecast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe the modeling methodology in detail. The mathematical framework, spatial kernels, fitting procedure, and computational implementation are explicitly stated with appropriate technical specifications and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Forecasts were evaluated using the Brier score as the primary performance metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 clearly states the evaluation methodology. The Brier score is an appropriate proper scoring rule for probabilistic forecasts, though additional metrics could strengthen the evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Expert forecasts showed variable accuracy across months. In December, experts correctly identified Mabalako as highest risk (82% probability, 38 actual cases) but overestimated Mandima (72% probability, 0 cases). In January, experts underestimated Beni (0% probability of exceeding 20 cases, but 22 cases occurred). February and March showed declining case numbers with experts generally anticipating the trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 present specific forecast results with quantitative probabilities and actual case counts. The data demonstrate both successes and failures in expert predictions, providing concrete examples of forecast performance across different months and health zones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Expert Brier scores varied between 0 and 0.6 across thresholds, performing best at the highest threshold (\u226520 cases) and worst at the lowest (\u22652 cases). The gravity model ranked best overall at the two-case threshold, and both models outperformed experts at this threshold except in March. No individual expert performed consistently well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 provide quantitative performance comparisons between experts and models. The Brier score results are specific and show clear patterns, though the evaluation is limited to one metric. The finding that no expert consistently outperformed others is important for ensemble justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Experts systematically over-predicted low thresholds (\u22652 cases) and under-predicted high thresholds (\u226520 cases), with this bias present in 12 of 15 experts. Models showed no clear consistent bias in either direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe systematic biases in expert forecasts using the hazard gap metric. The finding that 12/15 experts showed the same bias pattern is compelling evidence of systematic over-cautiousness. The contrast with model behavior is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "When experts nominated additional health zones at risk (7 in December, 4 in January, 4 in February, 1 in March), only Butembo and Katwa exceeded two cases but were nominated by only 2/10 experts. For flare-up prediction, the gravity model performed comparably to some experts in December and February, while the adjacency model performed worse than all experts except in February. Expert ensembles outperformed models in every month, and including models reduced ensemble performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 evaluate the ability to predict flare-ups in new locations. The data show experts had limited success identifying new outbreak locations, and models performed poorly at this task. The finding that including models worsened ensemble performance is notable but may reflect the specific challenge of predicting rare events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Overall, expert ensembles performed similarly to the two models. Experts showed stronger bias than models at the two-case threshold. Both experts and models performed better at higher thresholds, and models were better at risk-ranking areas than experts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 summarize key comparative findings. The similar overall performance between expert ensembles and models is the central result, supported by the Brier score data. The superior risk-ranking by models is supported by Figure 5\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Both forecasting methods performed better at higher case thresholds, likely due to bias toward under-prediction and few instances of high thresholds being reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 explain the threshold-dependent performance pattern. The interpretation in C70 is reasonable given the bias analysis and the declining epidemic phase, though alternative explanations could be considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "No individual expert outperformed ensembles overall, though individuals occasionally performed better in specific instances. Models performed similarly to ensembles, representing more consistent performance across forecasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 support the value of ensemble approaches. The finding that no individual expert consistently outperformed the ensemble justifies the ensemble methodology and suggests models provide comparable aggregate performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The expert bias toward over-predicting low thresholds may reflect over-cautiousness about geographic spread combined with confidence in rapid containment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 offers an interpretation of the bias pattern, but this is speculative. While the interpretation is plausible given the outbreak context, no direct evidence (e.g., expert interviews about reasoning) supports this specific explanation over alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "This study is the first to record experts' geographical risk assessment at local level during an epidemic and the first real-time comparison of outbreak response experts' predictions to models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 assert novelty but provide limited evidence. While the authors cite previous studies on different diseases/contexts, comprehensive verification that no prior work has done local-level geographic expert elicitation during an outbreak would require systematic review. The claim is plausible but not definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study has several limitations: it began during the epidemic's closing phase when performance may differ from other phases; the declining phase created a trend toward negative results favoring some methods; experts were interviewed on different days with varying information availability compared to models; and experts may have been influenced by existing model outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 acknowledge important methodological limitations. These are clearly stated and appropriately qualified (e.g., C77 and C81 use conditional language). The limitations regarding timing, information asymmetry, and potential contamination are valid concerns that affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "Models remain useful in outbreak response because no individual expert consistently outperformed them, models are easily scaled and generalized, and expert interviews are time-consuming. Models offer a convenient route to quantified insights performing comparably to expert groups, supporting their use in outbreak response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 and C87 present arguments for model utility based on the study results. The reasoning is logical: comparable performance (C65, C71-C72) combined with practical advantages (C83-C84) supports continued model use. However, the conclusion depends on the specific models tested and outbreak phase studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C94"
+    ],
+    "result": "There could be value in combining expert opinion and modeled forecasts to support future outbreak responses, and the study provides insight into how this combination might work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88 and C94 suggest combining approaches but provide limited concrete guidance. While C64 shows that including models reduced flare-up prediction performance, the overall similar performance (C65) suggests potential complementarity. However, the study doesn't test optimal combination strategies or provide clear recommendations for when/how to combine approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The forecasts were motivated by informing site selection for a planned vaccine trial, aiming to identify high-risk areas without existing cases or interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe the practical motivation for the forecasting work. This context is clearly stated with appropriate citation (Watson-Jones et al., 2022) and explains the focus on predicting new outbreak locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Models performed better than experts at the lowest threshold in 4 of 5 months and marginally better at risk-ranking health zones, suggesting models may improve resource prioritization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 highlight specific model advantages. The 4/5 months result is supported by the Brier score data (Figure 5), and the risk-ranking advantage is shown in Figure 5\u2014figure supplement 1. The inference about resource prioritization is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The results may suggest experts are better at predicting simple time series than geographic distribution of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is speculative, comparing this study's results to previous studies on different diseases and forecast types. The study doesn't directly test time series vs. spatial forecasting by the same experts, making this inference weak. Alternative explanations for differences between studies exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on Ebola virus disease: EVD first emerged in 1976 in Zaire, with epidemics occurring every 12-24 months. The 2018-2020 DRC outbreak resulted in over 3300 cases and 2100 deaths. Transmission occurs through direct contact during symptomatic infection. Control measures include isolation, contact tracing, safe burials, and vaccination, though contextual factors like conflict and healthcare changes can affect containment. Mathematical models have been used to forecast EVD spread, but contextual factors are difficult to predict.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide standard background information on EVD, supported by appropriate citations. These establish the context for the study but don't represent novel findings. The claims about the 2018-2020 outbreak are supported by WHO data and Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Previous studies comparing human and model forecasts for influenza and COVID-19 found that humans generally performed better than models for case predictions, but worse for death predictions in COVID-19 studies. Expert ensembles typically outperformed individual experts, and experts were more accurate than laypeople.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 accurately summarize prior literature with appropriate citations. These establish the context for comparing expert and model forecasts but represent review of existing work rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

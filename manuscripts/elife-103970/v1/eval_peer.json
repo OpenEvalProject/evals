@@ -1,0 +1,139 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors developed a stochastic branching process model that explicitly incorporates cancer-effector cell interactions and stochastic effects. The model demonstrates that interaction parameters govern different tumor outcomes (suppression, evasion) and produce signatures of selection detectable in sequencing-derived summary statistics like the single-cell mutational burden distribution, suggesting that bulk and single-cell sequencing may provide information about coevolutionary dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers affirm the model's importance and contribution. The editor states 'This important work presents a stochastic branching process model of tumour-immune coevolution' and notes 'The evidence is compelling.' The anonymous reviewer confirms 'The authors have made important progress on the topic by introduced a stochastic branching process model' and states 'The model is extensively explored and authors provide some nice theoretical results.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C112",
+      "C113"
+    ],
+    "result": "The model reveals complex effector population dynamics characterized by irregular spikes following in-phase cycles with cancer populations, consistent with antagonistic predator-prey systems. These effector spikes occur in response to highly immunogenic mutations and serve to eliminate specific mutations from the cancer population. The number of cycles increases with mutation rate, with predominantly counter-clockwise cycles but also some clockwise cycles at higher mutation rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers implicitly accept these findings as part of the model's extensive exploration. The anonymous reviewer notes 'an analysis of increasing cancer/immune versus cyclical cancer/immune dynamics' as part of the model's contributions, indicating acceptance of the cyclical dynamics findings without raising concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C87",
+      "C88",
+      "C93"
+    ],
+    "result": "The outcome of tumor-immune coevolution depends strongly on interaction parameters between effector and cancer cells. At lower mutation rates, only a fraction of the population undergoes immunoselection and most suppressed tumors go extinct early due to stochasticity. At high mutation rates, an intermediate range of interaction parameters allows tumors to neither go extinct nor grow to capacity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the work as investigating 'how tumour-immune interactions influence tumour outcome' and calls the evidence 'compelling.' The anonymous reviewer notes the model measures 'the proportion of simulated tumors which go extinct,' indicating acceptance of the outcome-dependent findings without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C115",
+      "C116"
+    ],
+    "result": "When immune impact is low, the average number of mutations per cancer cell increases consistently with population growth, following neutral expectations. However, when effector populations selectively kill cancer cells, the average number of antigenic mutations per cell does not continuously increase, and cells with more antigenic mutations face stronger negative selection, as demonstrated by decreased average antigenic mutations and truncation of the high-burden tail of the mutational burden distribution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly acknowledges 'The analysis appropriately builds upon the foundation of other work in the field of predicting site frequency spectrum, but extends the results into cancer-immune co-evolution,' indicating acceptance of the findings about mutational patterns and selection signatures without raising concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "The model demonstrates that divergence from neutral expectations in the site frequency spectrum (SFS) and mutational burden distribution (MBD) can reveal the presence and strength of cancer-immune interactions. When immune effectiveness is low, there is little deviation from neutral expectations. When the immune system plays a larger role, significant deviations occur, particularly in the MBD where the tail is truncated and mean shifted down due to selective killing of cells with more antigenic mutations. The SFS shows limited difference from neutral expectations, highlighting the importance of integrating single-cell with bulk sequencing data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states the work investigates 'the summary statistics of sequencing data of bulk and single-cell sequencing of a tumour' and finds 'The evidence is compelling.' The anonymous reviewer confirms 'The analysis appropriately builds upon the foundation of other work in the field of predicting site frequency spectrum, but extends the results into cancer-immune co-evolution in an intuitive computational framework,' indicating acceptance of these sequencing-based findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The model was implemented using a standard Gillespie algorithm with individual cancer cells and effector cell types represented as distinct entities. To address computational challenges arising from quadratic scaling of reactions with cell numbers, the authors developed a dynamic dependency graph optimization that reduces computational cost per step to a constant independent of cancer cell number.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer describes the model as 'an intuitive computational framework' without raising any concerns about the implementation methodology, suggesting implicit acceptance of the computational approach and optimizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C54",
+      "C57",
+      "C64"
+    ],
+    "result": "The model assumes births and deaths occur randomly with exponentially distributed wait times (Gillespie algorithm), uses the infinite sites approximation where all mutations are unique, and specifies that immune escape is not permanent as escaped cells may acquire new antigenic mutations. Effector cells interact specifically only with cancer cells presenting the corresponding neoantigen.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are not questioned by reviewers. The anonymous reviewer's statement that the model is 'an intuitive computational framework' and the editor's assessment that 'The evidence is compelling' suggest acceptance of the model's fundamental assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "When the antigenic mutation rate is low, the fraction of the tumor visible to the immune system is low, resulting in largely neutral cancer population dynamics. However, the model reveals complex effector dynamics even under these conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer notes the model provides 'some nice theoretical results in addition to simulated results' without raising concerns about the mutation rate-dependent findings, indicating acceptance of these observations.",
+    "result_type": "MINOR"
+  }
+]

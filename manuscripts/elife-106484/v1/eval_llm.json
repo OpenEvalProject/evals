@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Orf9b peptide (residues 44-70) binds to Tom70 with a KD of approximately 650-880 nM as measured by SPR and fluorescence polarization, with association and dissociation rate constants determined by SPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal methods (SPR and fluorescence polarization) provide consistent measurements of the Orf9b peptide:Tom70 interaction (C7-C11). The KD values from different methods are in reasonable agreement (653\u00b12 nM by SPR, 240\u00b17 nM by FP, 880\u00b15 nM by competition FP), and kinetic rate constants are reported with appropriate fitting procedures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C58"
+    ],
+    "result": "The S53E phosphomimetic mutation in Orf9b abolishes binding to Tom70, confirming that phosphorylation at S53 prevents the Orf9b:Tom70 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative control experiment with S53E shows no binding to Tom70 by fluorescence polarization (C12), which is consistent with structural data showing S53 is positioned deep within the Tom70 binding site (C58). This provides strong evidence for the regulatory role of S53 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C35",
+      "C36",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Refolded apo-Orf9b homodimer adopts the same overall structure as lipid-bound homodimer but lacks significant electron density for lipid in the central channel, demonstrating that lipid binding is not required for homodimer formation but stabilizes the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Crystallographic data shows the refolded structure aligns closely with the lipid-bound reference (RMSD 1.1 \u00c5, Z-score 2.2) (C13, C60), but electron density analysis and Polder maps clearly distinguish the absence of lipid in the refolded structure (C14, C61, C62). The increased disorder (high B-factors, lower resolution) in the apo structure (C64) supports the conclusion that lipid stabilizes but is not required for dimerization (C35, C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C39"
+    ],
+    "result": "Mass spectrometry identifies the lipids bound to Orf9b homodimer as 1-palmitoyl-sn-glycerol (MG 16:0) or 1-stearoyl-sn-glycerol (MG 18:0), which co-purify with Orf9b from both E. coli and mammalian expression systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MS and MS/MS data provide direct identification of the bound lipid species (C16), and native mass spectrometry shows consistent mass shifts corresponding to these lipids in both bacterial and mammalian expression systems (C39). The convergence of evidence from multiple expression systems strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Apo-Orf9b homodimer has a dissociation constant of 1.2-4.4 \u00b5M as measured by size exclusion chromatography and SPR, while lipid-bound homodimer remains stable at multiple concentrations without detectable dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The KD measurements by SEC (1.2\u00b10.1 \u00b5M, C17) and SPR (4.4\u00b10.7 \u00b5M, C19) are within the same order of magnitude, providing consistent evidence for the apo-homodimer stability. The stark contrast with lipid-bound homodimer behavior (C18) demonstrates the stabilizing effect of lipid binding. Kinetic rate constants from SPR (C20) further support these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Full-length apo-Orf9b binds to Tom70 with a KD of 190\u00b11 nM as measured by SPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This measurement is obtained using standard SPR methodology with appropriate fitting procedures (C21). The value is consistent with the peptide measurements (within 3-fold), and the difference can be attributed to the truncation of residues in the peptide construct as discussed by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Lipid binding to the Orf9b homodimer reduces the homodimer dissociation rate by approximately 100-fold (from 3.5\u00d710\u207b\u00b9 s\u207b\u00b9 to 1.0\u00d710\u207b\u00b3 s\u207b\u00b9), resulting in a modeled KD of ~13 nM for the lipid-bound homodimer, without affecting the microscopic rate constant of Orf9b:Tom70 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic modeling is well-constrained by experimental data showing rapid equilibration of apo-homodimer (500-1000 s, C42) versus slow equilibration of lipid-bound homodimer (several hours, C43). The 100-fold reduction in dissociation rate (C22, C23) is derived from fitting the model to experimental data, and the conclusion that lipid binding does not affect the microscopic Orf9b:Tom70 rate constant (C44) is supported by the modeling framework. However, the modeled KD of ~13 nM (C24) is an inference from the model rather than a direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C65",
+      "C66"
+    ],
+    "result": "Truncated Orf9b (\u039491-97) behaves as an obligate monomer in vitro but retains the ability to bind Tom70 and suppress IFN induction comparably to WT in cellular assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural rationale for the truncation is sound, as residues 91-97 form 2/3 of the homodimer interface (C65, C66). The in vitro kinetic data shows monomeric behavior (C25), and cellular assays confirm Tom70 binding (C26) and IFN suppression (C27). The convergence of structural, biophysical, and cellular data supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The Orf9b fusion construct (4xSGG) shows altered kinetics in vitro with reduced association rates and stabilized homodimer, but surprisingly retains Tom70 binding and IFN suppression activity in cells comparable to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The in vitro kinetic modeling shows substantial alterations in multiple rate constants (C69, C70, C71), and the fusion construct shows minimal Tom70 saturation in vitro. However, cellular assays show retained Tom70 binding (C72) and IFN suppression (C29). The authors acknowledge this discrepancy and offer speculative explanations, but the mechanism underlying the difference between in vitro and cellular behavior remains unclear. Additional experiments would be needed to resolve this inconsistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mutations in variants of concern (Lambda P10S, Delta T60A, Omicron P10S/\u039427-29) alter Orf9b homodimer stability as measured by kinetic modeling, but do not significantly affect Tom70 binding affinity or IFN suppression in cellular assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic modeling shows distinct effects on homodimer dissociation rates for each variant (C30, C31, C76), with structural hypotheses for the observed differences (C77, C78, C79). Importantly, SPR data confirms that T60A does not reduce Tom70 affinity (C32), and cellular assays show all variants retain Tom70 binding (C33) and IFN suppression (C34). The modeling conclusion that mutations alter homodimer stability without affecting Tom70 association rate (C80, C81) is well-supported by the combined in vitro and cellular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Apo-Orf9b homodimer can form a complex with Tom70 when incubated together, as demonstrated by size exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SEC data showing complex formation between separately purified apo-Orf9b and Tom70 (C41) directly contradicts previous reports that separately purified proteins do not form complexes. This is a key finding that resolves an apparent discrepancy in the literature and supports the authors' model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The kinetic model requires a second-order rate constant for \u03b2-sheet to \u03b1-helix conversion (ka) and a first-order rate constant for the reverse (kB), with sensitivity analysis showing that at low Orf9b concentrations, binding is limited by homodimer dissociation and conformational conversion, while at high concentrations, the limiting step is Orf9b-FITC dissociation from Tom70.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling choices (C85, C86) are justified by the need to fit concentration-dependent kinetic behavior, and the sensitivity analysis (C87, C88) provides insight into the rate-limiting steps at different concentrations. The model adequately describes the experimental data across multiple concentrations, supporting these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Orf9b is an 11 kDa accessory protein encoded in an alternative reading frame of the N gene that localizes to mitochondria, binds Tom70, and suppresses IFN response, with structural studies showing it adopts both a \u03b2-sheet homodimer and a monomeric \u03b1-helical form when bound to Tom70.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from prior literature (C1-C6), appropriately cited and providing essential background context for the current study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background information on Orf9b regulation, Tom70 structure and function, IFN signaling, and mutations in variants of concern, as established by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C37-C54, C89-C96) provide essential background from prior literature with appropriate citations. They establish the context for the current study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Orf9b peptide (residues 44-70) represents approximately 1/3 of the full-length sequence and serves as a proxy for the monomeric intermediate, with the FITC moiety slightly favoring binding to Tom70 relative to unlabeled peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design rationale (C55) is sound, and the comparison between labeled and unlabeled peptide (C57) is supported by the consistent KD measurements. The interpretation of the slow association rate (C56) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The fusion construct design was based on the 28 \u00c5 distance between N- and C-termini in the homodimer structure, but the fusion construct could not be successfully refolded to eliminate co-purifying lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural measurement (C67) provides the rationale for the fusion design, and the experimental observation that refolding was unsuccessful (C68) is clearly stated. This negative result is important for interpreting the fusion construct experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "AlphaFold predicts a second helix (residues 11-28) in monomeric Orf9b, but experimental testing shows this peptide does not bind Tom70, suggesting the difference between peptide and full-length kinetics is due to truncation of Tom70-binding residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold prediction (C82) motivated the experimental test, and the negative result (C83) is clearly demonstrated. However, the interpretation (C84) is speculative and acknowledged as such by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Speculative discussion of potential explanations for discrepancies between in vitro and cellular results, including the timing of lipid binding during infection, kinetic trapping of Orf9b on Tom70, subsaturation of homodimers by lipids in cells, and potential roles for the homodimer in antagonizing other IFN signaling factors like MAVS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (C97-C102) offered as potential explanations for observed discrepancies and directions for future research. They are not directly tested in this study and represent hypotheses rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

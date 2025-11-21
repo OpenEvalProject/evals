@@ -1,0 +1,129 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "LIP neurons showed nonlinear modulation by saccade direction: activity was significantly elevated for preferred motion direction and reduced for nonpreferred direction in the contralateral (CT) versus ipsilateral (IT) saccade condition, resulting in greater motion direction selectivity (DS) in CT trials. This modulation was observed even before stimulus onset and was not explained by saccade direction selectivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the finding but express concern about interpretational issues. The editor notes 'neurophysiological evidence remains incomplete' and requests 'explicit mapping of saccade-related activity in the same neurons and a better understanding of the influence of the spatial configuration of stimulus and targets.' The anonymous reviewer raises 'potential interpretational issues due to a lack of explicit evidence on the sizes and locations of the response fields,' questioning whether 'the contra/ipsi effect explained by the fact that in the contra condition, the response target and the saccade might have infringed on the outer edges of the response fields.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The feedback modulation predominantly affected decision-correlated activity in LIP: LIP direction selectivity was more strongly correlated with the monkey's abstract decisions (rather than physical motion direction) in CT versus IT conditions, particularly on low-coherence and zero-coherence trials. The decision-related component of LIP DS was significantly greater in CT than IT, while the stimulus-related component was similar between conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not explicitly challenge these specific analyses, the overall concern about 'incomplete neurophysiological evidence' and the need for 'explicit mapping of saccade-related activity' (editor) and clarification of 'the influence of the spatial configuration of stimulus and targets' (editor and reviewer) suggests uncertainty about whether the observed effects truly reflect decision-related feedback modulation versus confounding spatial factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RNN modeling replicated the key neurophysiological findings: units in motion modules showed coherence-correlated motion DS and reflected trial-by-trial decisions, while target module units showed saccade DS. Critically, motion DS was significantly greater in CT versus IT conditions in the RNNs, mirroring the monkey data, with decision-correlated DS dramatically reduced in IT versus CT.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the computational modeling as a strength. The editor states the study 'combines neurophysiological recordings and computational modelling' and the anonymous reviewer explicitly lists 'Linking the results to RNN simulations and simulated lesions' as a strength. No concerns are raised about the RNN replication of neural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "RNN analysis revealed selectivity-specific feedback connectivity: feedback and feedforward connection weights were significantly greater between selectivity-matched unit pairs (e.g., motion units preferring 315\u00b0 connected to target units preferring the associated color) than nonmatched pairs. Feedback connectivity was excitatory for matched pairs but inhibitory for nonmatched pairs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This computational finding is not questioned by reviewers. The anonymous reviewer's positive comment about 'RNN simulations and simulated lesions' as a strength implicitly supports the connectivity analysis findings. No concerns are raised about these specific RNN connectivity results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In silico inactivation experiments demonstrated the causal importance of selectivity-specific feedback: ablating all feedback connections or disrupting selectivity-specific feedback (by scrambling connections) dramatically reduced RNN performance accuracy and prolonged reaction times, and eliminated the CT versus IT difference in motion DS. Pattern-specific ablation showed that selectivity-matched feedback connections were more critical than nonmatched connections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly identifies 'simulated lesions' as a strength of the study. The editor does not raise concerns about the computational lesion experiments. These in silico causal manipulations are accepted as supporting the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Energy landscape analysis revealed the computational mechanism: ablating feedback connections reduced the depth and separation of attractor basins in the network dynamics, with more severe effects for selectivity-matched versus nonmatched feedback ablation. This resulted in less consistent decisions because shallower basins made it easier for neural variability to shift activity between decision states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the energy landscape analysis or its interpretation. The anonymous reviewer's endorsement of the 'RNN simulations and simulated lesions' as a strength encompasses these mechanistic analyses. The computational mechanism is accepted without explicit criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The authors argue that saccade direction selectivity cannot simply explain the observed modulation of LIP responses to motion stimuli.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretive claim is directly challenged by the reviewer's concern about 'potential interpretational issues due to a lack of explicit evidence on the sizes and locations of the response fields' and the question of whether 'the contra/ipsi effect explained by the fact that in the contra condition, the response target and the saccade might have infringed on the outer edges of the response fields.' The editor similarly notes that 'explicit mapping of saccade-related activity in the same neurons' is needed.",
+    "result_type": "MAJOR"
+  }
+]

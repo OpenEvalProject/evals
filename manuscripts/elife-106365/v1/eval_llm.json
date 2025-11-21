@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors developed and implemented a novel method for forecasting protein evolution that integrates birth-death population models with structurally constrained substitution (SCS) models. The method simultaneously simulates forward-in-time evolutionary history and protein evolution, where fitness (derived from protein folding stability) influences birth and death rates at each node. The method was implemented in ProteinEvolver2, a freely available software framework written in C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C42, and C62-C64 collectively describe the methodological innovation and implementation. The method addresses a key limitation of traditional approaches (C4, C21-C22) by coupling evolutionary history with molecular evolution. The mathematical framework (C25-C36), SCS model details (C37-C39), and software implementation (C62-C64) are clearly described with appropriate citations and technical detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "For HIV-1 MA protein evolution, predictions showed low sequence dissimilarity (Grantham distance ~5%, KL divergence ~6%) between real and predicted variants, with no difference between models considering selection versus neutral evolution. However, models incorporating selection on folding stability predicted protein stability closer to real variants than neutral models, with neutral predictions yielding less stable proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are directly supported by data in Table 1. The result demonstrates that while sequence-level predictions were similar across models, structural predictions (folding stability) differed significantly, with SCS models outperforming neutral models. This is a key finding showing the value of incorporating structural constraints for predicting protein stability even when sequence predictions are similar.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "For SARS-CoV-2 Mpro and PLpro proteins, Grantham distances between real and predicted sequences were ~25% and ~36% respectively, with similar performance between selection-based and neutral models. However, models considering selection from folding stability produced variants with stability closer to real variants than neutral models, and no significant differences were found between constant and variable birth-death rate models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by data in Figure 3A and 3B. The pattern mirrors HIV-1 MA results: sequence-level predictions show minimal model differences, but stability predictions favor SCS models. The lack of difference between constant and variable birth-death rate models (C73) is an important negative result that is statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "For influenza NS1 protein at two time points, models with structural constraints showed Grantham distances of ~23.5% versus ~25.5% for neutral models. Models including selection consistently generated variants with stability more similar to observed variants than neutral models, with selected variants being more stable. No significant differences were found between constant and variable birth-death rate models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by data in Figure 4A and 4B. Notably, this dataset showed the highest sequence diversity (C109, C111) and demonstrated clearer differences between SCS and neutral models at the sequence level compared to other datasets, supporting the interpretation that model choice matters more for higher-diversity data (C108, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "For HIV-1 PR evolution across multiple viral populations (patients), Grantham distances varied among populations but remained below 30% for most, with one population showing distances increasing from 10% to 60% over time. The number of substitutions did not correlate with prediction accuracy (R\u00b2=0.0001). Predicted folding stability was similar or slightly less stable than real variants (difference 0-9 kcal/mol, mean 3.1\u00b10.9 kcal/mol), with small fluctuations over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by data in Figure 5A-C. This represents the most complex evolutionary scenario tested, with patients undergoing antiretroviral treatments (C103). The high variability among populations and the outlier population (C80) suggest treatment-induced adaptations (C105), though this remains speculative. The lack of correlation between substitution number and accuracy (C81) is an important finding with clear statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Neutral evolution models produced sequence dissimilarities similar to SCS models across most datasets. This unexpected result is explained by the low sequence diversity of the studied data (sequence identity 0.802-0.973), which limits the influence of substitution models on predictions. The influenza NS1 dataset, having the highest diversity, showed clearer advantages for SCS models over neutral models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 provide a critical interpretation of the results, supported by data in Table 1 and Figures 3-4, and by citations to prior work (C107-C108). The explanation that low diversity limits model influence is logical and consistent with phylogenetic reconstruction studies (C108, C110). The influenza NS1 result (C111) provides supporting evidence for this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "SCS models predicted folding stability close to real variants (differences <1-7 kcal/mol for most datasets, ~9 kcal/mol for HIV-1 PR). In contrast to sequence predictions, stability predictions consistently differed between SCS and neutral models, with neutral models producing less stable variants farther from real stability. This reflects that protein stability is more conserved than sequence and can be modeled more accurately under structural constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 synthesize the stability prediction results across all datasets. The interpretation is well-supported by the data and by citations to prior work showing that SCS models better maintain realistic stability (C118-C119). The recommendation (C120) follows logically from the results. This represents a key finding: stability is more predictable than exact sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The method achieved good accuracy in predicting folding stability of future protein variants, while predicting exact sequences was more challenging. This is expected because sequence diversity is much greater than structural diversity, and substitutions between physicochemically similar amino acids can maintain stability despite sequence differences. Higher sequence diversity in datasets improves prediction accuracy by providing more evolutionary information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 provide an integrated interpretation of the prediction results, supported by the empirical data and citations to prior work (C122-C123). The reasoning about why stability is easier to predict than sequence (C124) is biologically sound. The conclusion about the importance of forecasting stability (C126) is justified given the role of stability in protein function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Variation in global birth-death rates among lineages showed minor effects on prediction accuracy, suggesting a limited role in protein evolution modeling. Molecular evolution parameters, particularly the substitution model, appear more critical. The presented combination with a birth-death model constitutes a first approximation for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 are supported by the lack of significant differences between constant and variable birth-death rate models across datasets (C73, C77). The conclusion that substitution models are more critical (C128-C129) is supported by the data and extensive citations. The acknowledgment that this is a first approximation (C130) appropriately frames the contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C92"
+    ],
+    "result": "Traditional population genetics methods unrealistically simulate evolutionary history and molecular evolution as separate, independent processes, typically simulating history under neutral evolution while simulating molecular evolution under selection. This can produce biological incoherences because fitness affects evolutionary history (variants with high fitness produce more descendants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C22, and C92 describe a limitation of traditional methods, supported by citations (C21) and logical reasoning (C22, C92). This critique motivates the integrated approach developed in this study (C23). The characterization is accurate based on knowledge of traditional simulation methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The method was evaluated using viral proteins sampled over time from previous experiments, including HIV-1 MA, SARS-CoV-2 Mpro and PLpro, influenza NS1, and HIV-1 PR. Protein structures were obtained from PDB or by homology modeling. Predictions were made from initial time points to later time points, with 100 simulated alignments per dataset. Accuracy was assessed using Grantham distance, KL divergence, and folding stability comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C61 describe the evaluation methodology in detail. The approach is clearly documented with appropriate citations for tools (C46-C47, C59-C61) and metrics. The use of consensus sequences to avoid rare variants (C52) and the comparison of selection-based versus neutral models (C53-C57) are methodologically sound. The evaluation design is appropriate for assessing forecasting accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The method has limitations: it ignores unpredictable environmental shifts and assumes protein structure is maintained over the studied evolutionary time (reasonable for short timescales). Over longer timescales, structural changes may occur and would require modeling protein structure evolution, which remains challenging. AI approaches for structure prediction may help but would be difficult to evaluate given limited data on structural evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C131-C135 acknowledge important limitations and future directions. The assumption of constant structure (C131) is reasonable for the short timescales studied and is supported by citations (C131). The discussion of challenges in modeling structural evolution (C132-C133) and potential AI approaches (C134-C135) is appropriately cautious and realistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C39",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Structurally constrained substitution (SCS) models outperform traditional empirical substitution models in terms of phylogenetic likelihood and other properties. SCS models incorporate site-dependent evolution based on protein structure, accounting for spatial interactions between amino acids and selection on folding stability, which is relevant for many proteins including viral proteins. However, SCS models require more computational resources than sequence-only models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C16, C18-C20, C39, and C88-C91 describe established knowledge about SCS models, extensively supported by citations to prior work. The superiority of SCS models (C5, C39, C91) and their computational cost (C18) are well-documented. This provides important context for the methodological choices in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Evolutionary studies traditionally focused on past events, but forecasting future evolution has gained attention due to applications and improved models. Forecasting requires systems with measurable selection pressures where adapted variants are positively selected. Under neutral evolution, prediction is not feasible. Forecasting is more feasible for structural proteins with simpler evolutionary processes involving selection on folding stability, compared to genome evolution which faces complexity from epistasis, rearrangements, and heterogeneous patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C15, and C84-C87 provide background and rationale for the study, supported by extensive citations. The distinction between predictable (selection-driven) and unpredictable (neutral) evolution (C12-C14) is well-established. The reasoning about why protein evolution is more tractable than genome evolution (C86-C87) is logical and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C112",
+      "C113"
+    ],
+    "result": "Sequence and evolutionary trajectory dissimilarities between real and predicted variants were relatively small but varied among proteins (5-36%). Low errors for HIV-1 MA were expected due to in vitro conditions. HIV-1 PR showed higher variability due to antiretroviral treatments. Prediction accuracy varied among evolutionary scenarios, being lower in more complex scenarios. Higher sequence diversity improves prediction quality by providing more evolutionary signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 and C112-C113 summarize and interpret the prediction accuracy results across datasets. The interpretations about experimental conditions (C100) and treatment effects (C103, C105) are reasonable, though C105 is appropriately marked as speculative. The relationship between diversity and accuracy (C113) is logical and consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The method provides acceptable approximations to real evolution, especially for protein folding stability, suggesting that combining structural constraints with birth-death processes is beneficial. To advance forecasting methods, further efforts should improve modeling of protein evolution, such as incorporating site-dependent constraints from protein activity. Implementing methods in freely available frameworks facilitates applications and future improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 provide concluding statements and recommendations. The conclusion that the method provides acceptable approximations (C136-C137) is supported by the empirical results. The recommendations for future work (C138) and software availability (C139) are appropriate and well-justified.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2302 @@
+{
+  "submission": {
+    "id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:02:18.849007Z",
+    "updated_at": "2025-11-21T04:02:18.849007Z"
+  },
+  "content": [
+    {
+      "id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "content_type": "manuscript",
+      "content_text": "# Balancing stability and flexibility when reshaping archaeal membranes\n\n## Authors\n\n- Miguel Amaral<sup>1</sup> ([ORCID: 0000-0001-5755-0001](https://orcid.org/0000-0001-5755-0001))\n- Felix Frey<sup>1</sup> ([ORCID: 0000-0001-8501-6017](https://orcid.org/0000-0001-8501-6017))\n- Xiuyun Jiang<sup>2</sup>\n- Buzz Baum<sup>3</sup> ([ORCID: 0000-0002-9201-6186](https://orcid.org/0000-0002-9201-6186))\n- An\u0111ela \u0160ari\u0107<sup>1</sup> ([ORCID: 0000-0002-7854-2139](https://orcid.org/0000-0002-7854-2139)) \u2020\n\n### Affiliations\n\n1. Institute of Science and Technology Austria Klosterneuburg Austria ([ROR:03gnh5541](https://ror.org/03gnh5541))\n2. Department of Physics and Astronomy, University College London London United States ([ROR:02jx3x895](https://ror.org/02jx3x895))\n3. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCellular membranes differ across the tree of life. In most bacteria and eukaryotes, single-headed lipids self-assemble into flexible bilayer membranes. By contrast, thermophilic archaea tend to possess bilayer lipids together with double-headed, monolayer spanning bolalipids, which are thought to enable cells to survive in harsh environments. Here, using a minimal computational model for bolalipid membranes, we explore the trade-offs at play when forming membranes. We find that flexible bolalipids form membranes that resemble bilayer membranes because they are able to assume a U-shaped conformation. Conversely, rigid bolalipids, which resemble the bolalipids with cyclic groups found in thermophilic archaea, take on a straight conformation and form membranes that are stiff and prone to pore formation when they undergo changes in shape. Strikingly, however, the inclusion of small amounts of bilayer lipids in a bolalipid membrane is enough to achieve fluid bolalipid membranes that are both stable and flexible, resolving this trade-off. Our study suggests a mechanism by which archaea can tune the material properties of their membranes as and when required to enable them to survive in harsh environments and to undergo essential membrane remodelling events like cell division.\n\n## Introduction\n\nA bounding membrane separates the interior of every biological cell from its extracellular environment and gives the cell its shape. To perform its function, this bounding membrane must be sturdy and impermeable to the leakage of small charged molecules like ions, to allow the generation of an electrochemical gradient (Phillips et al., 2012), but also flexible enough to be remodelled during essential cellular processes like cell division and vesicle formation (McMahon and Gallop, 2005). These requirements are partially conflicting and difficult to combine.\n\nInterestingly, two different generic membrane designs have evolved across the tree of life to solve this problem (Gould, 2018). Bacterial and eukaryotic membranes possess fatty acid lipids that have a hydrophilic head group linked to hydrophobic tails via ester-linkages, which self-assemble into bilayer membranes (Albers and Meyer, 2011). By contrast, archaeal membranes are constructed from branched isoprenoid lipids. These can include cyclopentane rings and are attached via an ether linkage to one (e.g. archaeol, Figure 1A left) or two hydrophilic heads, leading them to be called bipolar lipids or simply bolalipids (e.g. caldarchaeol, Figure 1A right) (Albers and Meyer, 2011). The hydrophilic heads can be composed of different functional groups with phosphatidyl and sugar being the most relevant moieties. For bolalipids, the two head groups at either end of the molecule are typically distinct (Figure 1A right) (Oger and Cario, 2013). As an ensemble, bilayer and bolalipids can self-assemble into fluid lipid membranes of different architectures \u2013 as bilayer lipid membranes, bolalipid membranes, or mixture membranes (Figure 1B right).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/105432/elife-105432-fig1-v1.jpg)\n\n**Figure 1.:** (A) Structure of the diether bilayer lipid archaeol (left) and the tetraether bolalipid caldarchaeol, including four cyclopentane rings (right), both present in the membrane of Sulfolobus acidocaldarius, a common archaeal model system that lives at high temperatures and low pH (Rast\u00e4dter et al., 2020). The hydrophilic head of a bolalipid can be composed of different functional groups represented by R1 and R2 (right). (B) Schematics for a bilayer lipid, a bolalipid and its two in-membrane conformations, membranes made of bilayer molecules only, bolalipid molecules only, and a mixture of the two (left to right). (C) Bilayer lipid (left) is described with one head bead and two tail beads straightened by an angular potential of strength $k_{0}$. Tail beads of different lipids attract with the strength $\u03f5_{p}$ and the range $\\omega$. Bolalipids (right) consist of two bilayer lipids connected by a bond and straightened by an angular potential of strength $k_{bola}$. (D) Snapshots of bolalipids self-assembling into a flat membrane ($k_{bola}=0.3k_{B}T$). (E) Cross-section of self-assembled membrane (right), with bolalipids coloured according to their conformation: straight lipids in crimson and U-shaped lipids in orange. (F) Membrane phase behaviour: liquid, gel and gas regions as a function of the effective temperature $T_{eff}$ and tail interaction range $\\omega$ for bilayer (top left) and membranes made of flexible $k_{bola}=0$ (top right) and stiff $k_{bola}=5k_{B}T$ (bottom left) bolalipid molecules. Overlays of all liquid regions (bottom right) show that stiffer lipids exhibit fluid membrane region at higher temperatures. The dashed line marks $\\omega=1.5\\sigma$, the value we used in the rest of the work.\n\nLike for bacteria and eukaryotes, archaea must keep their lipid membranes in a fluid state (homeoviscous adaptation). This is important even under extreme environmental conditions, such as hot and cold temperatures, or high and low pH values (Chong, 2010). Because of this, many archaea adapt to changes in their environment by tuning the lipid composition of their membranes: altering the ratio between bola- and bilayer lipids in their membranes (Tourte et al., 2020; Kim et al., 2019) and/or by changing the number of cyclopentane rings in their lipid tails, which are believed to make lipid molecules more rigid (Oger and Cario, 2013). For example, Thermococcus kodakarensis increases its tetraether bolalipid ratio from around 50% to over 80% when the temperature of the environment increases from 60 to 85 \u00b0C (Siliakus et al., 2017). Along the same lines, the cell membrane of Sulfolobus acidocaldarius can contain over 90% of bolalipids with up to eight cyclopentane rings at 70 \u00b0C and pH 2.5 (Oger and Cario, 2013; Grogan, 1989). It is worth mentioning that in exceptional cases bacteria also synthesise bolalipids in response to high temperatures (Sahonero-Canavesi et al., 2022), highlighting that the study of bolalipid membranes is relevant not only for archaeal biology but also from a general membrane biophysics perspective. Besides temperature adaptation, archaeal lipids also exhibit dense packing, high viscosity, and low porosity to small molecules like protons (Siliakus et al., 2017).\n\nAll this makes the study of reshaping archaeal membranes extremely interesting. Unfortunately, it is fairly challenging to investigate archaeal cells experimentally due to their unusual chemistry and extreme living conditions (van Wolferen et al., 2022). Therefore, most of what we know about archaeal tetraether lipid membranes thus far has been collected from studying in vitro reconstituted membranes. For instance, the conformation of individual lipids in bolalipid membranes was studied at the water-air interface (Bakowsky et al., 2000; Jeworrek et al., 2011) or using NMR experiments on lipid vesicles (Brownholland et al., 2009). This suggested the existence of U-shaped lipid conformations in archaeal type membranes (Figure 1B). Moreover, in vitro reconstituted vesicles primarily composed of bolalipids can fuse with influenza virus particles at similar kinetic rates compared to bilayer vesicles, further suggesting that bolalipids exist in U-shape allowing for membrane remodelling and fusion (Bhattacharya et al., 2024). Membrane properties like bending stiffness (Vitkova et al., 2020) or lipid phase (Chang, 1994) have also been measured in vesicles prepared from archaeal tetraether lipids to demonstrate that archaeal lipids derived membranes are exceptional in being stable up to temperatures of 80 \u00b0C (Chang, 1994). Moreover, experiments with lipid vesicles made from synthetic bilayer lipids that include cyclopentane rings, which naturally appear in lipids of extremophilic archaea, showed that increasing the number of these rings increases membrane rigidity (Batishchev et al., 2020).\n\nFrom the viewpoint of membrane physics, the remodelling of bilayer membranes has been studied for decades using continuum models and computer simulations (Seifert, 1997; Noguchi, 2009; Frey and Idema, 2021). By contrast, only a few studies have investigated bolalipid membranes applying computational or theoretical tools (Huguet et al., 2017; Galimzyanov et al., 2016). Specifically, the pore closure time in bolalipid membranes, and the role of cyclopentane rings for membrane properties have been investigated using all-atom simulations, showing decreased lateral mobility, reduced permeability to water, and increased lipid packing (Galimzyanov et al., 2025; Chugunov et al., 2025; Pineda De Castro et al., 2016). Moreover, using coarse-grained simulations, it was suggested that bolalipid membranes are thicker (Bulacu et al., 2012), exhibit a gel-to-liquid phase transition at higher temperature (Davis et al., 2007), and exhibit a reduced diffusivity (Dey and Saha, 2020). However, little research has been devoted to investigating mechanics and the reshaping of bolalipid membranes at the mesoscale despite the obvious importance of this question from evolutionary, biophysics, and biotechnological perspectives and although different membrane physics is expected to manifest.\n\nHere, we have designed a minimal model of archaeal membranes that can be used to explore the impact of both bolalipids and bilayer lipids on membrane biophysics and membrane reshaping. Our coarse-grained molecular dynamics simulations show that the geometry of bolalipids is, through the effects of entropy alone, sufficient to shift the fluid phase of archaeal-type membranes so that they are stable at high temperatures. We show that membranes assembled from bolalipids can have a much higher bending rigidity than bilayer-derived membranes, and are more likely to resist membrane shape changes as in fission. During membrane deformation, stress in these bolalipid membranes is relieved by a small fraction of bolalipids taking up a U-shaped conformation, which renders them a mechanically switchable material. Without these U-shaped bolalipids, stress leads to the formation of large pores. However, when combined, a mixture of bilayer and bolalipids generates membranes that are stable at high temperature, which become softer as the fraction of bilayer lipids increases. Taken together, our results demonstrate how doping a bolalipid membrane with a small fraction of bilayer lipids can relieve the trade-off, enabling membranes to be both stable under extreme conditions and to be remodelled without leaking.\n\n## Results\n\n### Computational model\n\nTo study bolalipid membranes and compare them to bilayers, we extended the Cooke and Deserno model for bilayer membranes (Cooke and Deserno, 2005). In the original model for the bilayer a single bilayer lipid is represented by a chain of three nearly equally sized beads of diameter of $\u223c1\\sigma$, where $\\sigma$ is our distance unit and roughly maps to $1nm$ (Figure 1C left); one bead stands for the head group (cyan), while the others represent the hydrophobic tail (blue). Each adjacent pair of beads in a lipid is linked by a finite extensible nonlinear elastic (FENE) bond. The angle formed by the chain of three beads is kept near 180\u00b0 via an angular potential with strength $k_{0}$, instead of the approximation by a bond between end beads of the original model (Cooke and Deserno, 2005).\n\nWhile lipid heads interact exclusively through volume exclusion, the beads of lipid tails interact via a soft attractive potential of the strength $\u03f5_{p}$ and range $\\omega$ (Figure 1C left), effectively modelling hydrophobic interaction in an implicit solvent. This interaction strength governs the membrane phase behaviour and can be interpreted as the effective temperature or reduced temperature $T_{eff}=k_{B}T/\u03f5_{p}$. As the distinction between scaling interactions ($T_{eff}$) or temperature ($T$) is not important for our analysis (see Appendix 1\u2013Section 14), for simplicity, we refer to $T_{eff}$ as temperature in the following.\n\nTo model a bolalipid molecule, we joined two bilayer lipids so that a lipid molecule is formed with a head bead (cyan) that is linked to four tail beads (crimson) which are again linked to another head bead (Figure 1C right). In this way, both bilayer lipids and bolalipids share the same molecular structure and the same interactions between lipid beads. To decouple the effect of the connected geometry of the bolalipids from that of lipid asymmetry, we assume both head beads of a bolalipid to share the same properties. Bolalipids in archaeal membranes can differ in the number of cyclopentane rings or the branching of the tail and thus in the molecular stiffness (Chong, 2010; Chong et al., 2012). To represent this effect, we added two angular potentials between the second and the fourth and the third and the fifth tail bead with variable strength $k_{bola}$. By varying $k_{bola}$, we can control the molecular stiffness of the bolalipid molecules and thus model different types of bolalipids. The model is simulated within molecular dynamics implemented in the LAMMPS open-source package (Thompson et al., 2022), and simulations are visualized with OVITO Stukowski, 2010. To include the implicit effect of the surrounding water and to simulate membranes at vanishing tension, we used a Langevin thermostat combined with a barostat that kept the membrane at zero pressure in the $x\u2212y$ plane. Details on the computational model are given in Appendix 1\u2013Section 1.\n\n### Self-assembly and phase behaviour\n\nWe first tested the ability of both the bilayer and bolalipid molecules to self-assemble into membranes. To do so, we placed dispersed lipids in a periodic 3D box. For both bilayer and bolalipids, we found that membranes self-assembled over a wide range of lipid interaction parameters (Figure 1D, Figure 1\u2014video 1, Appendix 1\u2013Section 2). We then explored the influence of flexibility in the bolalipid molecule. At small values of the molecular rigidity $k_{bola}$, single lipids are flexible and can thus adopt a range of possible conformations. The different conformations can be classified by the angle $\\theta$ between the two lipid heads (Figure 1E). Two lipid conformations dominated the conformation distribution in the context of a membrane: the U-shaped conformation with both head beads on the same membrane leaflet ($\\theta\u22480$) and the straight conformation with one head bead in each opposing membrane leaflet ($\\theta\u2248\\pi$) (Figure 1\u2014video 2, Figure 1, Appendix 1\u2013Section 3; for comparison, bilayer membranes in Figure 1\u2014video 3 and rigid bolalipid membranes in Figure 1\u2014video 4). In the self-assembled bolalipid membrane, we marked bolalipids as being in the U-shape conformation if $\\theta<\\pi/2$ and in the straight conformation otherwise.\n\nTo study the phase behaviour of bilayer and bolalipid membranes, we analysed the diffusion of single lipids as a function of the lipid interaction parameters $\u03f5_{p}$ and $\\omega$ (see Appendix 1\u2013Section 4 and Appendix 1\u2013Section 5). The diffusion constant $D$ exhibited a discontinuity as a function of the temperature, which marks the transition as the membrane moves from the gel phase to the liquid phase. The discontinuity occurred at different values of interaction strength $\u03f5_{p}$ and interaction range $\\omega$ for bilayer and bolalipid lipids, and it also depended on the values of the molecular stiffness $k_{bola}$ (Appendix 1\u2014figure 4). In these simulations, the disintegration of the membrane defined an upper limit to the liquid phase and the transition to the gas phase. Based on this classification, we plotted the phase diagram for bilayer membranes (Figure 1F top left), fully flexible bolalipid membranes ($k_{bola}=0$, Figure 1F top right), and rigid bolalipid membranes ($k_{bola}=5k_{B}T$, Figure 1F bottom left) as a function of the range of the hydrophobic interaction $\\omega$ and the temperature $T_{eff}$. Membranes made of bilayers (blue) and flexible bolalipid molecules ($k_{bola}=0$, orange) behaved similarly under these conditions (Figure 1F bottom right). Strikingly, just as observed in extremophile archaea, as the molecular stiffness of bolalipids increased ($k_{bola}=5k_{B}T$, magenta), the liquid region was shifted toward higher temperatures and larger values of the interaction range. This is due to the fact that bolalipid molecules are able to engage in more extensive interactions with partners when in the extended conformation, which helps to stabilize the membrane at higher temperatures.\n\n### Bolalipid conformations and mechanical properties\n\nTo explore mechanical properties of bolalipid membranes, we chose $\\omega=1.5\\sigma$ for the remainder of the work (dashed line in Figure 1F bottom right). Figure 2A shows the phase diagram for bolalipid membranes replotted as a function of temperature and bolalipid rigidity for the chosen interaction range. To be able to compare membranes made of bolalipids of different molecular rigidities, we needed to adjust temperature for each to reach similar fluidities, shown by dashed lines in Figure 2A. We then characterised the conformations of individual bolalipids in flat membranes, measured by the fraction of bolalipids in U-shape conformation $u_{f}$. We find that for flexible bolalipids ($k_{bola}=0$), more than 50% of all lipids are in the U-shape conformation (Figure 2B). This fraction decreases with increasing rigidity of bolalipid molecules and vanishes around $k_{bola}\\geq2k_{B}T$, for which almost all bolalipids take up linear conformations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/105432/elife-105432-fig2-v1.jpg)\n\n**Figure 2.:** (A) Liquid region as a function of temperature and bolalipid rigidity for pure bolalipid membranes (grey). The dashed line shows the bolalipid membranes of approximately same fluidities. (B) Fraction of bolalipids in the U-shape conformation (\u03b8=0), fitted to $u_{f}(k_{bola})=1/(1+exp\u2061(\\beta(\u22120.16+3k_{bola})))$ (grey dashed line) according to a two-state model. Insets: simulation snapshots with bolalipids coloured according to their conformations. (C) Bending modulus as a function of bolalipid molecule rigidity $k_{bola}$. Inset: Tilt persistence length $l_{\\theta}$ as a function of bolalipid rigidity $k_{bola}$. (D) Snapshots of bolalipid membranes at the range of explored curvatures for $k_{bola}=1k_{B}T$. (E) Fraction of bolalipid molecules in the U-shaped conformation as a function of the mean membrane curvature $H=1/(2R)$ for membranes made of flexible ($k_{bola}=0$) and semi-flexible ($k_{bola}=1k_{B}T$) bolalipid molecules. (F) Bending modulus as a function of curvature. For the flat membrane (\ud835\udc3b \u2248 0), the corresponding bending rigidity from (C) is marked by the vertical line and empty circles.\n\nThis behaviour can be easily captured by considering bolalipids as a two-state system, with straight and U-shaped conformations, as argued before (Appendix 1\u2014figure 1). We assumed that the energy of the straight conformation vanishes $E_{s}=0$ and the energy of the U-shaped conformation reads $E_{u}=c_{0}+c_{1}k_{bola}$, where, for simplicity, we assumed that the energy linearly depends on $k_{bola}$ which is the only relevant energy scale in the system and the two constants $c_{0}$ and $c_{1}$, which determine the conformation energy of U-shaped bolalipids. The fraction of bolalipids in U-shape conformation then follows $u_{f}(k_{bola})=1/(1+exp(\\beta(c_{0}+c_{1}k_{bola}))),$ with $\\beta=1/(k_{B}T)$, as shown by the fit in Figure 2B (dashed grey line, $R^{2}=0.99$, Appendix 1\u2013Section 6). For the fit, it appears that $c_{0}<0$, which implies that bolalipids in U-shape conformation are slightly favoured over straight bolalipids at $k_{bola}=0$ (explored in Appendix 1\u2013Section 6).\n\n### Bolalipid conformations and membrane rigidity\n\nIt was previously hypothesized that an increasing fraction of bolalipids in straight configuration would increase the membrane rigidity (Vitkova et al., 2020). To determine the membrane rigidity using our model, we assessed the height fluctuation spectrum ($h^{2}$) of flat membranes in a periodic box (Cooke and Deserno, 2005; May et al., 2007). Interestingly, we found that the original theory of Helfrich, 1973 failed to describe the resulting height fluctuation spectrum. However, the extended theory by Hamm and Kozlov, 2000, which also includes the energetic cost of lipid tilt, successfully captured bolalipid fluctuations (Appendix 1\u2013Section 16). In this case, the resulting height spectrum of the membrane at vanishing membrane tension is given by May et al., 2007\n\n$$\n\u27e8|h_{n}|^{2}\u27e9=\\frac{k_{B}T}{L^{2}}(\\frac{1}{\u03baq^{4}}+\\frac{1}{k_{\\theta}q^{2}})=\\frac{k_{B}T}{L^{2}}\\frac{1}{\u03baq^{4}}(1+q^{2}l_{\\theta}^{2}),\n$$\n\nwhere $q=2\\pin/L$ is the wave number ($n\\inZ$), $L$ is the box size, $\u03ba$ is the bending rigidity of the membrane, $\u03ba_{\\theta}$ is the tilt modulus and $l_{\\theta}=\\sqrt{\u03ba/\u03ba_{\\theta}}$ is a characteristic length scale related to tilt, which we call the tilt persistence length. Considering Equation 1, the tilt term is expected to matter if the analysed inverse wave numbers become of the same order as the tilt persistence length $l_{\\theta}$. The wave numbers that we analysed correspond to wavelengths that are at least twice the thickness of the membrane ($q<2\\pi/(12\\sigma)\u22480.5\\sigma$). Thus, the tilt term is expected to noticeably contribute if $l_{\\theta}>2\\sigma$. For typical bilayer membranes, one finds $\u03ba_{\\theta}=12k_{B}Tnm^{\u22122}$ (May et al., 2007) and $\u03ba=20k_{B}T$ (Deserno, 2015), so $l_{\\theta}\u223c1nm\u22481\\sigma$ and, therefore, the tilt term can be neglected as practised before (Cooke and Deserno, 2005). However, when the membrane rigidity increases as we expect for bolalipid membranes, the tilt persistence length $l_{\\theta}$ increases and the tilt term in Equation 1 becomes relevant.\n\nBy fitting the height spectrum for bolalipid membranes (and bilayer membranes for comparison) (Appendix 1\u2014figure 6), we measured the bending rigidity (Figure 2C) and the tilt persistence length $l_{\\theta}$ (Figure 2C inset) as a function of $k_{bola}$ (see Appendix 1\u2013Section 7, Figure 2\u2014video 1). With increasing bolalipid molecular rigidity $k_{bola}$, the bending rigidity $\u03ba$ rose from $8k_{B}T$ and plateaued at $60k_{B}T$, showing bolalipid membranes can be very rigid while liquid. Strikingly, the increase in membrane rigidity coincided with U-shaped bolalipids vanishing from the membrane (Figure 2B), which confirmed the hypothesis that straight bolalipids render lipid membranes rigid. At the same time, the tilt persistence length $l_{\\theta}$ increases with bolalipid rigidity, starting near zero, crossing the $2\\sigma$ threshold at $k_{bola}=1k_{B}T$ and plateauing at $5\\sigma$. Since membrane bending and lipid tilting are two modes of membrane deformations that compete, we conclude that bilayer and flexible bolalipids molecules form flexible membranes that prefer to bend rather than to tilt, while bolalipids in straight configuration form rigid membranes that prefer to tilt rather than to bend. Taken together, bolalipid membranes made of flexible lipid molecules are as flexible as lipid bilayers, adopting U-shaped conformations, where those made of bolalipids in straight configurations are rigid.\n\n### Interplay between membrane curvature and rigidity\n\nChanging membrane curvature alters the area differently in the two membrane leaflets. To adapt to the area difference, we thus expect the fraction of U-shaped bolalipids to change as the membrane curvature changes. Moreover, the results of Figure 2B and C showed that the U-shaped bolalipid fraction and the membrane bending rigidity are correlated. As a result, we predict that the fraction of straight versus U-shaped bolalipids in a membrane will change in response to membrane bending, in a way that makes the bending rigidity of a bolalipid membrane curvature dependent.\n\nTo investigate the effect, we measured the bending rigidity of bolalipid membranes in cylindrical shapes as a function of their radii (Harmandaris and Deserno, 2006) (see Figure 2D, Figure 2\u2014video 2, Appendix 1\u2013Section 8). We first noticed that while membrane tubes made of bilayer and flexible bolalipids were stable up to small cylinder radii $R$, almost as small as the membrane thickness itself, we found that membrane made from stiffer bolalipids ($k_{bola}=1k_{B}T$) ruptured well before. Strikingly, while for stiffer bolalipids ($k_{bola}=1k_{B}T$) the U-shaped bolalipid fraction increased strongly over a short range of the mean membrane curvature ($H=1/(2R)$), we only found a small change in the U-shaped bolalipid fraction of flexible bolalipid membranes ($k_{bola}=0$) (Figure 2E). Consequently, since the fraction of U-shaped bolalipid molecules controls the bending rigidity of bolalipid membranes (Figure 2B and C), we found that there is a strong dependency of the bending rigidity $\u03ba$ on the membrane mean curvature of stiffer bolalipids ($k_{bola}=1k_{B}T$) (Figure 2F).\n\nIn an elastic material, the strain modulus holds constant and deformation is reversible. For bolalipid membranes at $k_{bola}=1k_{B}T$, however, the bending modulus decreases when deformation increases, rendering bolalipid membranes hypoelastic. Fortunately, this dependency on curvature does not invalidate our fluctuation results, where the curvature is small enough that its effect on the bending modulus is negligible (Section 15). In contrast, we did not find that $\u03ba$ was curvature-dependent for bilayer or flexible bolalipid membranes ($k_{bola}=0$). Taken together, the rigidity of bolalipid membranes is not only controlled by the molecular stiffness of their lipid constituents but also by the emerging geometry of the ensemble of lipids. Since membrane geometry and thus membrane rigidity will change upon membrane deformations, this gives rise to hypoelastic material properties.\n\n### Gaussian rigidity of bolalipid membranes\n\nAnother important material parameter is the Gaussian bending modulus $\u03ba\u00af$, which characterizes the reshaping behaviour of fluid lipid membranes under topological changes (Deserno, 2015). $\u03ba\u00af$ is notoriously difficult to measure since it only becomes detectable when the membrane changes its topological state. Continuum membrane theory, combining shape stability arguments and elasticity, predicts $\u2212\u03ba\u00af/\u03ba\\in[\u22120.5,\u22121]$ (Deserno, 2015), where the former value is expected for incompressible membranes. Indeed, most of the numbers we know for the ratio of the two bending rigidities, many of which were deduced from simulations, lie within this range (Hu et al., 2012). Using the same method as developed by Hu et al., 2012, we determined $\u03ba\u00af$ by measuring the closing efficiency of membrane patches into a sphere (Appendix 1\u2013Section 9). At $T_{eff}=1.2$, we obtained $\u03ba\u00af=\u22124.30(22)k_{B}T$ and thus a ratio of $\u2212\u03ba\u00af/\u03ba=0.89\\pm0.04$ for bilayer membranes, similar to what has been reported previously (Hu et al., 2012). For flexible bolalipid membranes, we got a slightly smaller value for $\u03ba\u00af=\u22125.04(37)k_{B}T$. Due to the larger bending modulus, however, flexible bolalipid membranes show a significantly smaller ratio $\u2212\u03ba\u00af/\u03ba=0.64\\pm0.04$ ($k_{bola}=0$). At larger temperature ($T_{eff}=1.3$), the ratio can be even smaller $\u2212\u03ba\u00af/\u03ba=0.45\\pm0.07$ (Appendix 1\u2212Section 9). The result shows that in addition to the differences in bending rigidities, the ratio of the two bending moduli differs strongly in bilayer and bolalipid membranes.\n\n### Archaeal membranes made of mixtures of bolalipids and bilayer-forming lipids\n\nArchaeal membranes contain varying amounts of bilayer lipids (Oger and Cario, 2013; Tourte et al., 2020). The exact bolalipid/bilayer fraction depends on the growth temperature, with higher levels of bolalipids with increasing temperature (Kim et al., 2019), and higher fraction of cyclopentane rings in the tails (Chong et al., 2012). In order to investigate the effect of different lipid contents on membrane mechanical properties, we wanted to model the archaeal membrane by mixing bilayer lipids into bolalipid membranes. Since in our model, the liquid regions of rigid bolalipid membranes and bilayer membranes do not overlap (Figure 1F bottom right), we picked the temperature $T_{eff}=1.3$ to minimize fluidity mismatch and we set the molecular rigidity $k_{bola}=2k_{B}T$ to limit U-shaped bolalipids (Figure 2B). We then measured the diffusion constant $D$ as a function of the fraction of bilayer lipids $f^{bi}$ (Appendix 1\u2013Section 5). Interestingly, we found that mixing only 10% bilayer lipids into the bolalipid membrane in gel state is enough to fluidize the membrane (Figure 3A). We then measured the bending rigidity and the tilt persistence length $l_{\\theta}$ of flat mixture membranes by analysing the fluctuation spectrum. Both the bending rigidity $\u03ba$ (Figure 3B) and the tilt persistence length $l_{\\theta}$ decreased non-linearly with the bilayer lipid fraction $f^{bi}$ (Figure 3B inset). Taken together, the bolalipid membrane can be substantially softened either through bolalipids acquiring the U-shaped conformation or through addition of bilayer-forming lipids.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/105432/elife-105432-fig3-v1.jpg)\n\n**Figure 3.:** (A) Single lipid diffusion constant for each species as a function of bilayer fraction $f^{bi}$ ($k_{bola}=2k_{B}T$, $T_{eff}=1.3$). For $f^{bi}\\geq0.1$, the resulting mixture becomes liquid. Top: Diffusion trajectories of a bolalipid (crimson) and a bilayer lipid (blue) in a mixture membrane at $f^{bi}=0.5$. (B) Bending rigidity $\u03ba$ and (Inset) tilt persistence length $l_{\\theta}$ as a function of the fraction of bilayer molecules $f^{bi}$. Top: Snapshots show bilayer lipids (blue) in mixed membranes at two different values of $f^{bi}$.\n\n### Curving bolalipid membranes\n\nTo investigate the response of bolalipid membranes to large membrane curvature and topology changes like those induced upon vesicle budding, which regularly occurs in archaea, we simulated membrane wrapping of an adhesive cargo bead (Figure 4A, Figure 4\u2014videos 1\u20133, Appendix 1\u2013Section 10). Importantly, this provided us with a method to study how lipid organisation is affected by externally imposed membrane curvature and mechanics. We first simulated membrane wrapping at different adhesion energies $\u03f5_{mc}$ between lipid head beads and the cargo until we observed that the membrane wrapped the cargo completely (including membrane fission). Then the minimum adhesion energy, for which a membrane bud completely enveloped the cargo bead, is the onset adhesion energy $\u03f5_{mc}^{\u2217}$ (Figure 4A), which we measure as a function of the bolalipid stiffness $k_{bola}$ (Figure 4B). For small molecular stiffness $k_{bola}$, $\u03f5_{mc}^{\u2217}$ first increases linearly with $k_{bola}$ before it saturates around $k_{bola}=3k_{B}T$. We expect that the onset energy is proportional to the membrane bending rigidity $\u03f5_{mc}^{\u2217}\u221d\u03ba$, because the bending energy to wrap a spherical particle is size-invariant (Deserno, 2004; Deserno, 2015). When we increased the bending rigidity, through increasing stiffness of bolalipid molecule $k_{bola}$, $\u03f5_{mc}^{\u2217}$ increased by a factor of 3 (Figure 4B), suggesting that also $\u03ba$ increased by a factor of 3. However, from directly measuring the membrane rigidity from the fluctuation spectrum (Figure 2C), we saw that $\u03ba$ increased by a factor of 10. To reconcile these seemingly conflicting observations, we reason that the bending rigidity $\u03ba$, similar to Figure 2F, is not constant but softens in the range $k_{bola}\\in[0,2]k_{B}T$, upon increasing membrane curvature. This is due to the dynamic change in the ratio between bolalipids in straight and U-shaped conformation. Hence, bolalipid membranes show marked hypoelastic behaviour as they soften during reshaping.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/105432/elife-105432-fig4-v1.jpg)\n\n**Figure 4.:** (A) Simulation snapshots of the membrane wrapping a cargo bead adhering to it. Above the onset adhesion energy $\u03f5_{mc}^{\u2217}$, the cargo is fully wrapped by the membrane and buds off the mother membrane. (B) Onset energy $\u03f5_{mc}^{\u2217}$ as function of the bolalipid molecule rigidity $k_{bola}$ (for the parameters defined by the line in Figure 2A). (C) Bottom: Fraction of bolalipids in the U-shape conformation $u_{f}$ in the outer and inner layers of the membrane bud, and in the flat mother membrane, as a function of the bolalipid molecule rigidity $k_{bola}$. Top: Snapshots and cross-sections of the membrane around the cargo bud. At high bolalipid rigidity, the pores form around the cargo, and are lined with bolalipid molecules lying flat around the pore in a straight conformation, with both heads in the outer layer (coloured in white). The rest of bolalipids was coloured according to their head-to-head angle as before. (D) Bottom: Average diameter of transient pores in the membrane bud and the mother membrane as a function of the bolalipid molecule rigidity $k_{bola}$. Pores are defined as membrane openings through which a sphere of diameter $1\\sigma$ can cross. Top: Snapshots of the membrane surface with outer and inner leaflet surface coloured in purple and orange, respectively, intersecting at the rim of the pore (grey).\n\nThrough analysing the bolalipid conformations, we found that the membrane was able to curve by increasing the fraction of U-shaped bolalipids in the outer layer of the deformation (Figure 4C, Appendix 1\u2013Section 12). To a lesser degree, we also observed this effect on the inner membrane neck (Appendix 1\u2014figure 14). Remarkably, though, even when lipids are so stiff that there are no more U-shaped bolalipids in the flat mother membrane ($k_{bola}=2k_{B}T$), the outer layer of the curved membrane retained a non-negligible fraction of $\u224810%$ U-shaped bolalipids, which in turn decreases $\u03ba$ and softens the membrane. However, the softening effect on the membrane, indicated through a constant onset energy for $k_{bola}\\geq3k_{B}T$ (Figure 4B), persists even for those very stiff bolalipids. Since for stiff membranes, practically all U-shaped bolalipids are gone (Figure 4C), this suggested that an additional membrane-curving mechanism must be involved.\n\nLooking more closely, at high molecular rigidity ($k_{bola}\\geq2k_{B}T$), we observed the formation of multiple pores on the membrane bud, which we quantified by measuring the time-averaged maximum pore diameter (Figure 4D, Figure 4\u2014video 4, Appendix 1\u2013Section 12). While large pores were not observed in the flat membrane, the diameter of membrane pores around the cargo was found to grow with the increase in bolalipid stiffness. We reasoned that pores form when the energetic cost required to change the bolalipid conformation to release bending stress is larger than the energetic cost of opening a lipid edge surrounding the pore. Hence, for relatively flexible bolalipids, U-shaped bolalipids provide the necessary area difference between the outer and inner layer of the membrane bud and thereby soften the membrane. For stiff bolalipid molecules, however, membrane pores start to form to enable membrane curvature as U-shaped bolalipids become prohibited. Both mechanisms help to explain the discrepancy between $\u03f5_{mc}^{\u2217}$ and the bending modulus $\u03ba$ obtained by studying membrane fluctuations (Figure 2C).\n\n### Curving archaeal membranes\n\nHaving shown that bolalipid membranes can effectively soften also by including some amount of bilayer-forming lipid molecules, we next measured the onset energy $\u03f5_{mc}^{\u2217}$ for cargo budding in the membranes formed by mixtures of bolalipids and bilayer-forming lipids, as a function of bilayer lipid head fraction $f_{h}^{bi}$ (Figure 5A, Figure 5\u2014video 1). We found that the onset energy sharply decreases with increasing amount of bilayer forming lipids, and plateaus for 50% bilayer head fraction, where it acquires similar values as in the case of fully-flexible bolalipids (Figure 4B). For small bilayer fractions, U-shaped bolalipids localize almost exclusively on the outer layer of the bud (Figure 5B). As the bilayer fraction increases, there is a steady reduction in the percentage of U-shaped bolalipids in the outer layer in favour of bilayer lipids that take their role in supporting membrane curvature, with U-shaped bolalipids completely vanishing at high fractions of bilayer-forming lipids. The fraction of bilayer lipid head beads initially shows an asymmetry between the preferred outer layer and the penalized inner layer around the cargo (Figure 5C), but eventually approaches $f_{h}^{bi}$ in both layers. Taken together, as the bilayer lipid fraction increases, the role of U-shaped bolalipids in making up the asymmetry between the outer and inner layer is taken over by bilayer lipids. Curiously, the addition of bilayer lipids promotes the formation of U-shaped lipids, both in the flat membrane and even in the inner layer around the bud. This is likely to be explained by the fact that when more bilayer lipids are incorporated, the membrane is less densely packed (Appendix 1\u2014figure 12) and thus U-shaped bolalipids are promoted.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/105432/elife-105432-fig5-v1.jpg)\n\n**Figure 5.:** (A) Onset energy required to form the membrane bud, $\u03f5_{mc}^{\u2217}$, as a function of bilayer head fraction $f_{h}^{bi}$ (for the parameters defined in Figure 3) (B and C) Fraction of U-shaped bolalipid molecules $u_{f}$ (B) and bilayer molecules (C) in the outer and inner layers of the membrane bud and in the flat mother membrane as a function of the bilayer head fraction $f_{h}^{bi}$. Top panels show the respective snapshots of membrane surface around cargo, where bilayer lipids are shown in light blue as in Figure 4. (D) Average diameter of transient pores in the membrane bud and the mother membrane as a function of bilayer head fraction $f_{h}^{bi}$ and respective snapshots of membrane leaflet surfaces surrounding the bud (top panel).\n\nImportantly, we observed nearly no pores in the membrane bud in mixed membranes, even when we only had a very small fraction of bilayer-forming lipids (Figure 5D). Only as the bilayer fraction increased, did we observe the formation of very small pores in the bud. For the flat mother membrane, however, membrane pores started to form with increasing values of $f^{bi}$. They acquired sizes similar to those obtained around the bud in pure bolalipid membranes (Figure 4D). The pore formation in the flat mother membrane is likely promoted because the membrane becomes destabilized by the increasing proportion of bilayer lipids which are close to the gas phase. Taken together, bolalipids can bud porelessly when bilayer-forming lipids, which cause membrane softening, are included.\n\n## Discussion\n\nAll biological cells are enclosed in fluid lipid membranes. These must be both sturdy and flexible to contain the cellular interior and allow membrane reshaping during division and vesicle formation. Across nature, mono- and bilayer membranes, composed of bolalipids and bilayer lipids, have evolved to fulfil these partially conflicting requirements. In this work, we have developed the first minimal model that allows us to transparently compare the distinct behaviour of bilayer and bolalipid membranes. In our model, bolalipids are formed by joining together two bilayer lipids, with an adjustable molecular stiffness at the hinge point. Using our model, we find striking differences between bilayer and bolalipid membranes in terms of thermal and mechanical stability, bending rigidity and presence of hypoelasticity. Our results highlight how bolalipid membrane behave effectively as two-component systems, exchanging bolalipids between different conformations and thereby allowing the material properties to be adapted to support membrane reshaping.\n\nWhile flexible bolalipid membranes are liquid under the same conditions as bilayer membranes, we found that stiff bolalipids form membranes that operate in the liquid regime at higher temperatures. These results agree well with previous molecular dynamics simulations that suggested that bolalipid membranes are more ordered and have a reduced diffusivity compared to bilayer membranes (Bulacu et al., 2012; Huguet et al., 2017). In our simulations, this is due to the fact that completely flexible bolalipids molecules adopt both straight (transmembrane) as well as the U-shaped (loop) conformation with approximately the same frequency. In contrast, stiff bolalipids typically only take on the straight conformation when assembled in a membrane. These results agree with the previous coarse-grained molecular dynamics simulations using the MARTINI force field which showed that the ratio of straight to U-shaped bolalipids increased upon stiffening the linker between the lipid tails (Bulacu et al., 2012).\n\nWhile previous coarse-grained simulations predicted that bolalipids spontaneously transition between the straight and U-shaped conformations (Bulacu et al., 2012), how this happens in archaeal membranes and whether membrane proteins are involved in this conformational transition needs to be clarified in the future. Experimental studies suggest that archaeal membranes contain flippases and scramblases for the transitioning of bilayer lipids between membrane leaflets (Makarova et al., 2015; Verch\u00e8re et al., 2017), raising the possibility that similar proteins could also facilitate conformational transitions in bolalipids. In addition, it has been suggested that the viral fusion protein hemagglutinin could cause a transition from straight to U-shaped bolalipid conformation during the fusion of bolalipid vesicles with influenza viruses (Bhattacharya et al., 2024). However, future investigation is required.\n\nWhen we determined the bending rigidity of bolalipid membranes by measuring their response to thermal fluctuations, we found that membranes made from flexible bolalipids are only slightly more rigid than bilayer membranes. This result is consistent with previous atomistic simulations, which showed that the membrane rigidity was similar for membranes composed of bilayer lipids and flexible synthetic bolalipids (Schroeder et al., 2016). Moreover, the result is consistent with a continuum theory which predicted that the rigidity of membranes formed of triblock copolymers is 20% larger than that of diblock copolymers (Xu et al., 2019). However, bolalipids in extremophilic archaea are not predicted to be fully flexible as they are expected to pack tighter due to a large number of cyclopentane rings in the lipid tails (Chong, 2010; Chong et al., 2012). Indeed, we found that membranes made of stiff bolalipid molecules can exhibit stiffness that is more than an order of magnitude larger than that of bilayer lipids at the same membrane fluidity.\n\nIt is striking that membranes made from stiffer bolalipids showed a curvature-dependent bending modulus, which is a clear signature that bolalipid membranes exhibit hypoelastic behaviour during membrane reshaping. Another marked difference between bilayer and flexible bolalipid membranes is the ratio of the Gaussian rigidity to the bending modulus. Instead of being around \u22121 as for bilayer membranes (Hu et al., 2012), it is around \u22121/2 and, therefore, only half of that of bilayer lipids. It is not obvious how the Gaussian bending modulus would behave upon increasing bolalipid stiffness ($k_{bola}>0$), or how to measure it due to the coupling between curvature and rigidity in bolalipid membranes. Membrane remodelling, such as the fission of one spherical vesicle into two, increases the bending energy by $8\\pi\u03ba$ but decreases the energy related to the Gaussian modulus by $\u22124\\pi|\u03ba\u00af|$ (Deserno, 2015), giving rise to a fission energy barrier of $\u0394E_{fission}=4\\pi\u03ba(2\u2212|\u03ba\u00af|/\u03ba)$. Our results indicated that while in bolalipid membranes $\u03ba$ is larger, $|\u03ba\u00af|/\u03ba$ is smaller compared to bilayer membranes. Our results thus predict a larger energy barrier for membrane fission $\u0394E_{fission}$ in bolalipid membranes compared to bilayer membranes. It is tempting to speculate that this is one of the reasons why eukaryotes use bilayer membranes, enabling dynamic membrane remodelling and trafficking.\n\nIt is interesting to draw a parallel between monolayer membranes made of stiff bolalipid molecules and macroscopic membranes composed of rigid straight colloidal particles, which are geometrically similar, but living at different scales (Dogic and Fraden, 2006). It has been found that colloidal membranes at these macroscopic scales follow the standard Helfrich theory for bilayer membranes (Barry and Dogic, 2010), with rigidity that is three orders of magnitude higher than those of lipid bilayers (Balchunas et al., 2019). In this case, the tilt modulus was not pertinent, likely due to macroscopic system sizes. Similarly, we expect that the bending rigidity can be determined from membrane fluctuations independently of the tilt modulus for bolalipid membranes if they are prepared at similar relative sizes. Beyond quantitative differences, the comparison shows that monolayer membranes follow the same physics across many orders of magnitudes. However, when considering subcellular scales and the formation of high curvature, as in vesicle budding, the tilt modulus, and thus the substructure of the membrane is expected to matter.\n\nOur model makes a number of predictions that could be tested by experiment either in cells or in vitro. First, it predicts that a small increase in the fraction of archaeal bilayer lipids should be sufficient to soften a bolalipid-rich membrane. While this could be tested in the future, so far only very few studies have yet reported experimental analysis of archaeal membrane mixtures (Vitkova et al., 2020; Saracco et al., 2025). Second, we observed that membranes with moderate bolalipid molecular rigidity $k_{bola}$ exhibit curvature-dependent bending rigidity. To experimentally verify this, one could extrude membrane tethers from cells while controlling for membrane tension. Finally, to get to the core mechanism underlying our findings, it will be important to develop experimental methods that will allow the fraction of U-shaped bolalipid conformers per leaflet to be imaged and measured.\n\nWe found that membranes formed of a mixture of bilayer and bolalipids, similar to archaeal membranes, function as a composite liquid membrane that softens when adding bilayer lipids. However, while in our simulations the bending rigidity monotonically decreases with bilayer fraction, previous experiments of mixture membranes of bilayer and bolalipids with cyclopentane rings suggested that the bending rigidity non-monotonically depends on the fraction of the membrane made up of bilayer lipids (Vitkova et al., 2020). It remains to be determined whether the result is due to the specific lipids used, the resulting mismatch in lengths between two stacked bilayer lipids and a straight bolalipid, the experimental conditions or to non-linear effects such as the formation of lipid domains that soften the membrane with increasing bolalipid content. The same experiments reported that membranes consisting solely of bolalipids are more rigid than bilayer membranes and non-fluctuating, which is in agreement with our high bending modulus simulation results for near-pure bolalipid mixture membranes.\n\nTo investigate how bolalipid membranes respond to changing membrane curvature, we performed simulations in which small cargo particles budded from flat membranes. We found that by enforcing curvature on bolalipid membranes, the fraction of U-shaped bolalipids increased around the cargo bud, especially in the outer membrane layer and hence softened the membrane. As another mechanism to release curvature stress, we observed the formation of membrane pores, which could be mended by adding small amounts of bilayer lipids, similar to the mixture membranes that are found in archaea (Tourte et al., 2020). Our results suggest that enforcing membrane bending can soften bolalipid membranes locally by increasing the number of U-shapes, rendering the membrane a mechanically switchable material where large curvature decreases stiffness.\n\nTaken together, our results show how membranes which are mixtures of bilayer and bolalipids maintain cell integrity at high temperatures, while also undergoing leak-free membrane bending. This suggests that archaeal membranes can balance opposing needs when adapting to extreme environmental conditions. Beyond understanding membrane properties and reshaping across the tree of life, these results pave the way for synthetic bolalipid membranes and bolalipid membrane containers with new and exciting material properties.\n",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lipi Thukral, CSIR-Institute of Genomics and Integrative Biology India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.105432.3.sa0](https://doi.org/10.7554/eLife.105432.3.sa0)\n\nThis fundamental study characterizes the mechanics and stability of bolalipids from archaeal membranes using a minimalist, physics-based computational model. The authors present a robust mesoscale model of bolalipids-containing membranes, systematically evaluating it across diverse membrane configurations. The results are compelling, demonstrating that the incorporation of bolalipids and regular bilayer lipids in archaeal membranes significantly enhances membrane fluidity and structural stability.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105432.3.sa1](https://doi.org/10.7554/eLife.105432.3.sa1)\n\nSummary:\n\nThe authors aimed to understand the biophysical properties of archeal membranes made of bolalipids. Bacterial and eukaryotic membranes are made of lipids that self-assemble into bilayers. Archea, instead, use bolalipids, lipids that have two headgroups and can span the entire bilayer. The authors wanted to determine if the unique characteristics of archaea, which are often extremophiles, are in part due to the fact that their membranes contain bolalipids.\n\nThe authors develop a minimal computational model to compare the biophysics of bilayers made of lipids, bolalipids, and mixtures of the two. Their model enables them to determine essential parameters such as bilayer phase diagrams, mechanical moduli, and the bilayer behavior upon cargo inclusion and remodeling.\n\nThe author demonstrates that bolalipid bilayers behave as binary mixtures, containing bolalipids organized either in a straight conformation, spanning the entire bilayer, or in a u-shaped one, confined to a single leaflet. This dynamic mixture allows bolalipid bilayers to be very sturdy but also provides remodeling. However, remodeling is energetically more expensive than with standard lipids. The authors speculate that this might be why lipids were more abundant in the evolutionary process.\n\nStrengths:\n\nThis is a wonderful paper, a very fine piece of scholarship. It is interesting from the point of view of biology, biophysics, and material science. The authors mastered the modeling and analysis of these complex systems. The evidence for their findings is really strong and complete. The paper is written superbly, the language is precise and the reading experience very pleasant. The plots are very well-thought.\n\nWeaknesses:\n\nNone. The authors have addressed all the potential weaknesses that were raised by the reviewers.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105432.3.sa2](https://doi.org/10.7554/eLife.105432.3.sa2)\n\nSummary:\n\nThe authors have studied the mechanics of bolalipid and archaeal mixed-lipid membranes via comprehensive molecular dynamics simulations. The Cooke-Deserno 3-bead-per-lipid model is extended to bolalipids with 6 bead. Phase diagrams, bending rigidity, mechanical stability of curved membranes, and cargo uptake are studied. Effects such as formation of U-shaped bolalipids, pore formation in highly curved regions, and changes in membrane rigidity are studied and discussed. The main aim has been to show how the mixture of bolalipids and regular bilayer lipids in archaeal membrane models enhances the fluidity and stability of these membranes.\n\nThe authors have presented a wide range of simulation results for different membrane conditions and conformations. Analyses and findings are presented clearly and concisely. Figures, supplementary information and movies are of very high quality and very well present what has been studied. The manuscript is well written and is easy to follow.\n\nThe authors have provided detailed response to the points I raised on the first version and have revised their manuscript accordingly. Hence, I only mention what, in my opinion, still deserves to be noted.\n\nComments:\n\nI previously raised an issue with respect to the resort to the Hamm-Kozlov model for fitting the power spectrum of membrane undulations. The authors provided very nice arguments against my concerns. For the sake of completeness, I include a simple scenario, which will better highlight the issue:\n\nThe tilt contribution to the Helfrich Hamiltonian can be written as a quadratic term 1/2 k_t |T|^2, where T is a tilt vector field. This field is written as the difference between the surface normal and the director field aligned with the lipid orientations. In the small deviation Monge description with z=h(x, y) as the height function, the surface normal has the form N=(-dh/dx, -dh/dy, 1). Now assume the director field, n = (b_x, b_y, 1) with small b_x and b_y components. The tilt contribution to the energy thus reads as 1/2 k_t (N - n)^2 ~ = 1/2 k_t [|grad h|^2 + 2 b . grad h]. The first term, 1/2 k_t |grad h|^2, is indeed similar to a surface tension term, \\sigma |grad h|^2 that you get from the (1 + 1/2 |grad h|^2) approximation to the area element. Therefore, if you only look at height fluctuations, while your membrane actually has some surface tension, it will make distinguishing the tilt contributions to the fluctuations in the linear Monge gauge impossible.\n\nHowever, considering that the authors have made sure that the membrane is indeed tensionless, this argument is settled.\n\nI had also raised an issue about the correct NpT sampling in the simulations, and I'm glad that the authors also set up more rigorously thermostatted/barostatted simulations to check the validity of their findings.\n\nAlso, from the SI, I previously noted that the authors had neglected the longest wavelength mode because it was not equilibrated. This was an important problem and the authors looked into it and ran more simulations that were better equilibrated.\n\nThe analysis of energy of U-shaped lipids with the linear model E=c_0 + c_1 * k_bola is indeed very interesting. I am glad that the authors have expanded this analysis and included mean energy measurements.\n",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "089d2a01-ff80-4cd9-98f5-62530d735f5e",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C1",
+      "claim": "In most bacteria and eukaryotes, single-headed lipids self-assemble into flexible bilayer membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In most bacteria and eukaryotes, single-headed lipids self-assemble into flexible bilayer membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about bacterial and eukaryotic membrane composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "abb62393-68ff-4f70-9b50-daa67fcfc109",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C2",
+      "claim": "Thermophilic archaea tend to possess bilayer lipids together with double-headed, monolayer spanning bolalipids.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, thermophilic archaea tend to possess bilayer lipids together with double-headed, monolayer spanning bolalipids, which are thought to enable cells to survive in harsh environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about archaeal membrane composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "9560347e-1480-4084-9aff-4915d069f44c",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C3",
+      "claim": "Bolalipids are thought to enable cells to survive in harsh environments.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, thermophilic archaea tend to possess bilayer lipids together with double-headed, monolayer spanning bolalipids, which are thought to enable cells to survive in harsh environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis or speculation in the literature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "cbe1facb-b7c9-4c37-8af0-7f209e00cbea",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C4",
+      "claim": "Flexible bolalipids form membranes that resemble bilayer membranes because they are able to assume a U-shaped conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that flexible bolalipids form membranes that resemble bilayer membranes because they are able to assume a U-shaped conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "d146000e-91b7-46f9-9df8-bd3d6a62238f",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C5",
+      "claim": "Rigid bolalipids, which resemble the bolalipids with cyclic groups found in thermophilic archaea, take on a straight conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, rigid bolalipids, which resemble the bolalipids with cyclic groups found in thermophilic archaea, take on a straight conformation and form membranes that are stiff and prone to pore formation when they undergo changes in shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations, with comparison to known archaeal lipid structures.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c97b49cf-2b37-4112-87d6-1703537466f3",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C6",
+      "claim": "Rigid bolalipids form membranes that are stiff and prone to pore formation when they undergo changes in shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, rigid bolalipids, which resemble the bolalipids with cyclic groups found in thermophilic archaea, take on a straight conformation and form membranes that are stiff and prone to pore formation when they undergo changes in shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "ba4e46dc-0e21-4b17-9675-40dcc3ffc190",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C7",
+      "claim": "The inclusion of small amounts of bilayer lipids in a bolalipid membrane is enough to achieve fluid bolalipid membranes that are both stable and flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, the inclusion of small amounts of bilayer lipids in a bolalipid membrane is enough to achieve fluid bolalipid membranes that are both stable and flexible, resolving this trade-off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "36afe4e7-bec3-41ad-b6b0-232712385c80",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C8",
+      "claim": "The bounding membrane must be sturdy and impermeable to the leakage of small charged molecules like ions, to allow the generation of an electrochemical gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "To perform its function, this bounding membrane must be sturdy and impermeable to the leakage of small charged molecules like ions, to allow the generation of an electrochemical gradient (Phillips et al., 2012), but also flexible enough to be remodelled during essential cellular processes like cell division and vesicle formation (McMahon and Gallop, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Phillips et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b44f8e96-4e52-4e30-b563-899f7ae4d1e1",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C9",
+      "claim": "The bounding membrane must be flexible enough to be remodelled during essential cellular processes like cell division and vesicle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "To perform its function, this bounding membrane must be sturdy and impermeable to the leakage of small charged molecules like ions, to allow the generation of an electrochemical gradient (Phillips et al., 2012), but also flexible enough to be remodelled during essential cellular processes like cell division and vesicle formation (McMahon and Gallop, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McMahon and Gallop, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "2b296560-4b5c-4330-be7f-9a20fb778e09",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C10",
+      "claim": "Two different generic membrane designs have evolved across the tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two different generic membrane designs have evolved across the tree of life to solve this problem (Gould, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gould, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "25425a57-32db-481c-b34f-8ced60a1bb8f",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C11",
+      "claim": "Bacterial and eukaryotic membranes possess fatty acid lipids that have a hydrophilic head group linked to hydrophobic tails via ester-linkages, which self-assemble into bilayer membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial and eukaryotic membranes possess fatty acid lipids that have a hydrophilic head group linked to hydrophobic tails via ester-linkages, which self-assemble into bilayer membranes (Albers and Meyer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Albers and Meyer, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b1ce3841-4675-4af0-964d-e5a9738ae313",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C12",
+      "claim": "Archaeal membranes are constructed from branched isoprenoid lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, archaeal membranes are constructed from branched isoprenoid lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about archaeal membrane composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c0d6fde6-6b37-4d64-90be-6638b9b1eab3",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C13",
+      "claim": "Archaeal lipids can include cyclopentane rings and are attached via an ether linkage to one or two hydrophilic heads.",
+      "claim_type": "EXPLICIT",
+      "source": "These can include cyclopentane rings and are attached via an ether linkage to one (e.g. archaeol, Figure 1A left) or two hydrophilic heads, leading them to be called bipolar lipids or simply bolalipids (e.g. caldarchaeol, Figure 1A right) (Albers and Meyer, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Albers and Meyer, 2011 and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "05210a12-7096-4386-b567-a7393ac78f40",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C14",
+      "claim": "For bolalipids, the two head groups at either end of the molecule are typically distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "For bolalipids, the two head groups at either end of the molecule are typically distinct (Figure 1A right) (Oger and Cario, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Oger and Cario, 2013 and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b54ee1cf-fe50-408a-8f1f-78c18c34d00f",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C15",
+      "claim": "Archaea must keep their lipid membranes in a fluid state (homeoviscous adaptation).",
+      "claim_type": "EXPLICIT",
+      "source": "Like for bacteria and eukaryotes, archaea must keep their lipid membranes in a fluid state (homeoviscous adaptation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about membrane biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "41c8b3bf-df6b-45c0-9ba5-d97abee34251",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C16",
+      "claim": "Many archaea adapt to changes in their environment by tuning the lipid composition of their membranes: altering the ratio between bola- and bilayer lipids in their membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this, many archaea adapt to changes in their environment by tuning the lipid composition of their membranes: altering the ratio between bola- and bilayer lipids in their membranes (Tourte et al., 2020; Kim et al., 2019) and/or by changing the number of cyclopentane rings in their lipid tails, which are believed to make lipid molecules more rigid (Oger and Cario, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tourte et al., 2020 and Kim et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "247ed7b8-30dc-4e56-b1e5-2cef3bd7c15b",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C17",
+      "claim": "Cyclopentane rings in lipid tails are believed to make lipid molecules more rigid.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this, many archaea adapt to changes in their environment by tuning the lipid composition of their membranes: altering the ratio between bola- and bilayer lipids in their membranes (Tourte et al., 2020; Kim et al., 2019) and/or by changing the number of cyclopentane rings in their lipid tails, which are believed to make lipid molecules more rigid (Oger and Cario, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Oger and Cario, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "5fed1503-5450-422b-9c74-0d0251bf69b1",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C18",
+      "claim": "Thermococcus kodakarensis increases its tetraether bolalipid ratio from around 50% to over 80% when the temperature of the environment increases from 60 to 85 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Thermococcus kodakarensis increases its tetraether bolalipid ratio from around 50% to over 80% when the temperature of the environment increases from 60 to 85 \u00b0C (Siliakus et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Siliakus et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "4a61f728-180f-4b20-8cce-614414c353df",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C19",
+      "claim": "The cell membrane of Sulfolobus acidocaldarius can contain over 90% of bolalipids with up to eight cyclopentane rings at 70 \u00b0C and pH 2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the same lines, the cell membrane of Sulfolobus acidocaldarius can contain over 90% of bolalipids with up to eight cyclopentane rings at 70 \u00b0C and pH 2.5 (Oger and Cario, 2013; Grogan, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Oger and Cario, 2013 and Grogan, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "6391a428-0028-49ee-bd61-035954072194",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C20",
+      "claim": "In exceptional cases bacteria also synthesise bolalipids in response to high temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth mentioning that in exceptional cases bacteria also synthesise bolalipids in response to high temperatures (Sahonero-Canavesi et al., 2022), highlighting that the study of bolalipid membranes is relevant not only for archaeal biology but also from a general membrane biophysics perspective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sahonero-Canavesi et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "8b079b2c-f27d-4625-9d02-07204c879d90",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C21",
+      "claim": "Archaeal lipids exhibit dense packing, high viscosity, and low porosity to small molecules like protons.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides temperature adaptation, archaeal lipids also exhibit dense packing, high viscosity, and low porosity to small molecules like protons (Siliakus et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Siliakus et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "f20806b0-47c3-4682-8c8a-cdd6011bb485",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C22",
+      "claim": "The conformation of individual lipids in bolalipid membranes was studied at the water-air interface.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the conformation of individual lipids in bolalipid membranes was studied at the water-air interface (Bakowsky et al., 2000; Jeworrek et al., 2011) or using NMR experiments on lipid vesicles (Brownholland et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bakowsky et al., 2000 and Jeworrek et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "5ff019a5-3bbb-4990-bf11-5aec064ab6f3",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C23",
+      "claim": "The conformation of individual lipids in bolalipid membranes was studied using NMR experiments on lipid vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the conformation of individual lipids in bolalipid membranes was studied at the water-air interface (Bakowsky et al., 2000; Jeworrek et al., 2011) or using NMR experiments on lipid vesicles (Brownholland et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Brownholland et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "baff9e8a-9a93-4cea-8963-cefc36a14ef5",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C24",
+      "claim": "Studies suggested the existence of U-shaped lipid conformations in archaeal type membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested the existence of U-shaped lipid conformations in archaeal type membranes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the cited studies and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "abf20e93-0393-4ab3-9f0c-7e79f7f0986f",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C25",
+      "claim": "In vitro reconstituted vesicles primarily composed of bolalipids can fuse with influenza virus particles at similar kinetic rates compared to bilayer vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in vitro reconstituted vesicles primarily composed of bolalipids can fuse with influenza virus particles at similar kinetic rates compared to bilayer vesicles, further suggesting that bolalipids exist in U-shape allowing for membrane remodelling and fusion (Bhattacharya et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bhattacharya et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "ce74cf75-4753-4564-befe-a235dd5fbc18",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C26",
+      "claim": "Archaeal lipids derived membranes are exceptional in being stable up to temperatures of 80 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane properties like bending stiffness (Vitkova et al., 2020) or lipid phase (Chang, 1994) have also been measured in vesicles prepared from archaeal tetraether lipids to demonstrate that archaeal lipids derived membranes are exceptional in being stable up to temperatures of 80 \u00b0C (Chang, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chang, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "206467cd-0939-40d9-9367-36095b1eba2b",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C27",
+      "claim": "Experiments with lipid vesicles made from synthetic bilayer lipids that include cyclopentane rings showed that increasing the number of these rings increases membrane rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, experiments with lipid vesicles made from synthetic bilayer lipids that include cyclopentane rings, which naturally appear in lipids of extremophilic archaea, showed that increasing the number of these rings increases membrane rigidity (Batishchev et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Batishchev et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "0345eaec-ac6e-4cc0-afa8-1f8ad66234ed",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C28",
+      "claim": "The pore closure time in bolalipid membranes has been investigated using all-atom simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the pore closure time in bolalipid membranes, and the role of cyclopentane rings for membrane properties have been investigated using all-atom simulations, showing decreased lateral mobility, reduced permeability to water, and increased lipid packing (Galimzyanov et al., 2025; Chugunov et al., 2025; Pineda De Castro et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Galimzyanov et al., 2025, Chugunov et al., 2025, and Pineda De Castro et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "ec3863de-c8e2-46cd-b33b-a02ae6db11ef",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C29",
+      "claim": "All-atom simulations showed decreased lateral mobility, reduced permeability to water, and increased lipid packing in bolalipid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the pore closure time in bolalipid membranes, and the role of cyclopentane rings for membrane properties have been investigated using all-atom simulations, showing decreased lateral mobility, reduced permeability to water, and increased lipid packing (Galimzyanov et al., 2025; Chugunov et al., 2025; Pineda De Castro et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Galimzyanov et al., 2025, Chugunov et al., 2025, and Pineda De Castro et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "67e08a2a-1fd4-4447-8067-16070cfb84ea",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C30",
+      "claim": "Using coarse-grained simulations, it was suggested that bolalipid membranes are thicker.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using coarse-grained simulations, it was suggested that bolalipid membranes are thicker (Bulacu et al., 2012), exhibit a gel-to-liquid phase transition at higher temperature (Davis et al., 2007), and exhibit a reduced diffusivity (Dey and Saha, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bulacu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "1745bd0b-bc38-457c-94cf-63db238a8875",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C31",
+      "claim": "Bolalipid membranes exhibit a gel-to-liquid phase transition at higher temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using coarse-grained simulations, it was suggested that bolalipid membranes are thicker (Bulacu et al., 2012), exhibit a gel-to-liquid phase transition at higher temperature (Davis et al., 2007), and exhibit a reduced diffusivity (Dey and Saha, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Davis et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "8cf855e7-bc56-48db-bdb8-87c5eb415ab1",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C32",
+      "claim": "Bolalipid membranes exhibit a reduced diffusivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using coarse-grained simulations, it was suggested that bolalipid membranes are thicker (Bulacu et al., 2012), exhibit a gel-to-liquid phase transition at higher temperature (Davis et al., 2007), and exhibit a reduced diffusivity (Dey and Saha, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Dey and Saha, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "7bcd3e2e-d9bb-4f09-8236-382feff6b7bc",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C33",
+      "claim": "The geometry of bolalipids is, through the effects of entropy alone, sufficient to shift the fluid phase of archaeal-type membranes so that they are stable at high temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our coarse-grained molecular dynamics simulations show that the geometry of bolalipids is, through the effects of entropy alone, sufficient to shift the fluid phase of archaeal-type membranes so that they are stable at high temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "faf2e7c4-215c-4c88-a233-dcd2d9f0c2f5",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C34",
+      "claim": "Membranes assembled from bolalipids can have a much higher bending rigidity than bilayer-derived membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that membranes assembled from bolalipids can have a much higher bending rigidity than bilayer-derived membranes, and are more likely to resist membrane shape changes as in fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "86eb609e-8265-46de-ab7d-0e03464f8c98",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C35",
+      "claim": "During membrane deformation, stress in bolalipid membranes is relieved by a small fraction of bolalipids taking up a U-shaped conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "During membrane deformation, stress in these bolalipid membranes is relieved by a small fraction of bolalipids taking up a U-shaped conformation, which renders them a mechanically switchable material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b55c2374-08dc-4757-be2f-3eb57fdd0882",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C36",
+      "claim": "Without U-shaped bolalipids, stress leads to the formation of large pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Without these U-shaped bolalipids, stress leads to the formation of large pores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "6c0b7dde-8af6-438c-b48e-64906d92eab6",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C37",
+      "claim": "A mixture of bilayer and bolalipids generates membranes that are stable at high temperature, which become softer as the fraction of bilayer lipids increases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when combined, a mixture of bilayer and bolalipids generates membranes that are stable at high temperature, which become softer as the fraction of bilayer lipids increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "3893e42f-56e4-4416-990a-6ab3020dd050",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C38",
+      "claim": "The computational model extends the Cooke and Deserno model for bilayer membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "To study bolalipid membranes and compare them to bilayers, we extended the Cooke and Deserno model for bilayer membranes (Cooke and Deserno, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by a citation to Cooke and Deserno, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "02ccdb41-f776-44a0-99cc-634197057171",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C39",
+      "claim": "A bolalipid molecule is modeled by joining two bilayer lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "To model a bolalipid molecule, we joined two bilayer lipids so that a lipid molecule is formed with a head bead (cyan) that is linked to four tail beads (crimson) which are again linked to another head bead (Figure 1C right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological description with reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "5ae7c3d3-ffd8-4fcf-af2f-5fc62ca88d11",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C40",
+      "claim": "Both bilayer and bolalipid molecules self-assembled into membranes over a wide range of lipid interaction parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "For both bilayer and bolalipids, we found that membranes self-assembled over a wide range of lipid interaction parameters (Figure 1D, Figure 1\u2014video 1, Appendix 1\u2013Section 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with reference to Figure 1D and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "3d5999b6-5432-4195-aeb2-b9298605cecc",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C45",
+      "claim": "Membranes made from flexible bolalipids are only slightly more rigid than bilayer membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "When we determined the bending rigidity of bolalipid membranes by measuring their response to thermal fluctuations, we found that membranes made from flexible bolalipids are only slightly more rigid than bilayer membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "12984b13-ee7f-40f4-91a6-219a4fadb2a9",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C46",
+      "claim": "Membranes made of stiff bolalipid molecules can exhibit stiffness that is more than an order of magnitude larger than that of bilayer lipids at the same membrane fluidity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, bolalipids in extremophilic archaea are not predicted to be fully flexible as they are expected to pack tighter due to a large number of cyclopentane rings in the lipid tails (Chong, 2010; Chong et al., 2012). Indeed, we found that membranes made of stiff bolalipid molecules can exhibit stiffness that is more than an order of magnitude larger than that of bilayer lipids at the same membrane fluidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations with supporting citations to Chong, 2010 and Chong et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "6a904c90-f0cd-459e-b734-112e30d6749d",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C47",
+      "claim": "Membranes made from stiffer bolalipids showed a curvature-dependent bending modulus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is striking that membranes made from stiffer bolalipids showed a curvature-dependent bending modulus, which is a clear signature that bolalipid membranes exhibit hypoelastic behaviour during membrane reshaping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "a21866d5-318c-47c7-85c0-1f8b90cc5ba9",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C48",
+      "claim": "The ratio of the Gaussian rigidity to the bending modulus for flexible bolalipid membranes is around \u22121/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another marked difference between bilayer and flexible bolalipid membranes is the ratio of the Gaussian rigidity to the bending modulus. Instead of being around \u22121 as for bilayer membranes (Hu et al., 2012), it is around \u22121/2 and, therefore, only half of that of bilayer lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations with a citation to Hu et al., 2012 for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "8218aa33-c416-44a9-9462-84146fa24cd7",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C49",
+      "claim": "A small increase in the fraction of archaeal bilayer lipids should be sufficient to soften a bolalipid-rich membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it predicts that a small increase in the fraction of archaeal bilayer lipids should be sufficient to soften a bolalipid-rich membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "1a3c2b22-1994-4848-8dca-44ade7fb3394",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C51",
+      "claim": "Membranes formed of a mixture of bilayer and bolalipids function as a composite liquid membrane that softens when adding bilayer lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that membranes formed of a mixture of bilayer and bolalipids, similar to archaeal membranes, function as a composite liquid membrane that softens when adding bilayer lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "7340e8cd-162b-4c16-9e5f-339c75f6c685",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C52",
+      "claim": "By enforcing curvature on bolalipid membranes, the fraction of U-shaped bolalipids increased around the cargo bud, especially in the outer membrane layer and hence softened the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that by enforcing curvature on bolalipid membranes, the fraction of U-shaped bolalipids increased around the cargo bud, especially in the outer membrane layer and hence softened the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c633355e-d223-40cf-a2a6-6afa5111e769",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C53",
+      "claim": "Membrane pores form when the energetic cost required to change the bolalipid conformation to release bending stress is larger than the energetic cost of opening a lipid edge surrounding the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that pores form when the energetic cost required to change the bolalipid conformation to release bending stress is larger than the energetic cost of opening a lipid edge surrounding the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "7dd6847f-8979-40d7-aedd-6b9f3e8da4fe",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C54",
+      "claim": "The inclusion of small amounts of bilayer lipids in a bolalipid membrane can mend membrane pores.",
+      "claim_type": "EXPLICIT",
+      "source": "As another mechanism to release curvature stress, we observed the formation of membrane pores, which could be mended by adding small amounts of bilayer lipids, similar to the mixture membranes that are found in archaea (Tourte et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations with a citation to Tourte et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "220bf0b0-cbdb-4001-9459-525324fdaf84",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C55",
+      "claim": "Enforcing membrane bending can soften bolalipid membranes locally by increasing the number of U-shapes, rendering the membrane a mechanically switchable material where large curvature decreases stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that enforcing membrane bending can soften bolalipid membranes locally by increasing the number of U-shapes, rendering the membrane a mechanically switchable material where large curvature decreases stiffness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "ef378da6-894a-4346-bb88-7355361796c7",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C56",
+      "claim": "Archaeal membranes can balance opposing needs when adapting to extreme environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results show how membranes which are mixtures of bilayer and bolalipids maintain cell integrity at high temperatures, while also undergoing leak-free membrane bending. This suggests that archaeal membranes can balance opposing needs when adapting to extreme environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c4023a1d-656a-4cc4-b59d-5fa22b69950b",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C58",
+      "claim": "The increase in membrane rigidity coincided with U-shaped bolalipids vanishing from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the increase in membrane rigidity coincided with U-shaped bolalipids vanishing from the membrane (Figure 2B), which confirmed the hypothesis that straight bolalipids render lipid membranes rigid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b4b4d9aa-6dfb-4a46-b34b-bb1f58b54985",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C59",
+      "claim": "Bilayer and flexible bolalipids molecules form flexible membranes that prefer to bend rather than to tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Since membrane bending and lipid tilting are two modes of membrane deformations that compete, we conclude that bilayer and flexible bolalipids molecules form flexible membranes that prefer to bend rather than to tilt, while bolalipids in straight configuration form rigid membranes that prefer to tilt rather than to bend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b1edb78c-5e4c-4a3e-801e-d0592b6cd008",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C60",
+      "claim": "Bolalipids in straight configuration form rigid membranes that prefer to tilt rather than to bend.",
+      "claim_type": "EXPLICIT",
+      "source": "Since membrane bending and lipid tilting are two modes of membrane deformations that compete, we conclude that bilayer and flexible bolalipids molecules form flexible membranes that prefer to bend rather than to tilt, while bolalipids in straight configuration form rigid membranes that prefer to tilt rather than to bend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "35c081bc-5b76-4638-9d6f-ca0238790800",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C69",
+      "claim": "Mixing only 10% bilayer lipids into the bolalipid membrane in gel state is enough to fluidize the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that mixing only 10% bilayer lipids into the bolalipid membrane in gel state is enough to fluidize the membrane (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "08031604-d20b-46f7-9be7-e262c309b977",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C71",
+      "claim": "The bolalipid membrane can be substantially softened either through bolalipids acquiring the U-shaped conformation or through addition of bilayer-forming lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the bolalipid membrane can be substantially softened either through bolalipids acquiring the U-shaped conformation or through addition of bilayer-forming lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "da975316-31da-44d8-8021-5f81b079e614",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C76",
+      "claim": "Bolalipid membranes show marked hypoelastic behaviour as they soften during reshaping.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, bolalipid membranes show marked hypoelastic behaviour as they soften during reshaping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "1fdc6a07-44d1-48ec-8679-51173a06608a",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C77",
+      "claim": "The membrane was able to curve by increasing the fraction of U-shaped bolalipids in the outer layer of the deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Through analysing the bolalipid conformations, we found that the membrane was able to curve by increasing the fraction of U-shaped bolalipids in the outer layer of the deformation (Figure 4C, Appendix 1\u2013Section 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with reference to Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "1d7062fc-aaa4-4bd2-a0a4-7a1cce2eea99",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C79",
+      "claim": "While large pores were not observed in the flat membrane, the diameter of membrane pores around the cargo was found to grow with the increase in bolalipid stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "While large pores were not observed in the flat membrane, the diameter of membrane pores around the cargo was found to grow with the increase in bolalipid stiffness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "4e35bdc2-cd92-4ac5-b1eb-bbac0053be59",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C80",
+      "claim": "For relatively flexible bolalipids, U-shaped bolalipids provide the necessary area difference between the outer and inner layer of the membrane bud and thereby soften the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, for relatively flexible bolalipids, U-shaped bolalipids provide the necessary area difference between the outer and inner layer of the membrane bud and thereby soften the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "89797ebd-3042-4446-8a41-622ba608cdf0",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C81",
+      "claim": "For stiff bolalipid molecules, membrane pores start to form to enable membrane curvature as U-shaped bolalipids become prohibited.",
+      "claim_type": "EXPLICIT",
+      "source": "For stiff bolalipid molecules, however, membrane pores start to form to enable membrane curvature as U-shaped bolalipids become prohibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "9059cf3a-8dec-434e-895e-5f02a8715d22",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C82",
+      "claim": "The onset energy sharply decreases with increasing amount of bilayer forming lipids, and plateaus for 50% bilayer head fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the onset energy sharply decreases with increasing amount of bilayer forming lipids, and plateaus for 50% bilayer head fraction, where it acquires similar values as in the case of fully-flexible bolalipids (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with reference to Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "f4f734da-c5d3-473d-85a4-d541a0d3234d",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C83",
+      "claim": "For small bilayer fractions, U-shaped bolalipids localize almost exclusively on the outer layer of the bud.",
+      "claim_type": "EXPLICIT",
+      "source": "For small bilayer fractions, U-shaped bolalipids localize almost exclusively on the outer layer of the bud (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "4ce057eb-fd61-480d-830c-b70b18e55c8f",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C84",
+      "claim": "As the bilayer fraction increases, there is a steady reduction in the percentage of U-shaped bolalipids in the outer layer in favour of bilayer lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "As the bilayer fraction increases, there is a steady reduction in the percentage of U-shaped bolalipids in the outer layer in favour of bilayer lipids that take their role in supporting membrane curvature, with U-shaped bolalipids completely vanishing at high fractions of bilayer-forming lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "637b68cb-69a9-4bf3-b9b0-06f25ab69fcf",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C85",
+      "claim": "As the bilayer lipid fraction increases, the role of U-shaped bolalipids in making up the asymmetry between the outer and inner layer is taken over by bilayer lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, as the bilayer lipid fraction increases, the role of U-shaped bolalipids in making up the asymmetry between the outer and inner layer is taken over by bilayer lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "ce5bf7d1-816e-48ad-87a7-766f5fa3eefd",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C86",
+      "claim": "The addition of bilayer lipids promotes the formation of U-shaped lipids, both in the flat membrane and even in the inner layer around the bud.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, the addition of bilayer lipids promotes the formation of U-shaped lipids, both in the flat membrane and even in the inner layer around the bud.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "8c231520-a326-4852-881c-e76d406af1d6",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C87",
+      "claim": "When more bilayer lipids are incorporated, the membrane is less densely packed and thus U-shaped bolalipids are promoted.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely to be explained by the fact that when more bilayer lipids are incorporated, the membrane is less densely packed (Appendix 1\u2014figure 12) and thus U-shaped bolalipids are promoted.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the simulation observations with reference to Appendix figure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "64636564-314e-489b-baf4-9ffa61807f7a",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C88",
+      "claim": "Nearly no pores were observed in the membrane bud in mixed membranes, even when there was only a very small fraction of bilayer-forming lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed nearly no pores in the membrane bud in mixed membranes, even when we only had a very small fraction of bilayer-forming lipids (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulations with reference to Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "73ba7d60-dfec-469a-8486-24b3246f76c0",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C89",
+      "claim": "As the bilayer fraction increased, very small pores were observed in the bud.",
+      "claim_type": "EXPLICIT",
+      "source": "Only as the bilayer fraction increased, did we observe the formation of very small pores in the bud.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "f161f972-674c-4a7a-9cd8-ec7205d39a5e",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C91",
+      "claim": "The pore formation in the flat mother membrane is likely promoted because the membrane becomes destabilized by the increasing proportion of bilayer lipids which are close to the gas phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The pore formation in the flat mother membrane is likely promoted because the membrane becomes destabilized by the increasing proportion of bilayer lipids which are close to the gas phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "055ea344-7058-41bf-97f7-0aa9aa042443",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C92",
+      "claim": "Bolalipids can bud porelessly when bilayer-forming lipids, which cause membrane softening, are included.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, bolalipids can bud porelessly when bilayer-forming lipids, which cause membrane softening, are included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "acde5e18-11eb-466f-b8d8-84a2629a8e97",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C93",
+      "claim": "Doping a bolalipid membrane with a small fraction of bilayer lipids can relieve the trade-off, enabling membranes to be both stable under extreme conditions and to be remodelled without leaking.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results demonstrate how doping a bolalipid membrane with a small fraction of bilayer lipids can relieve the trade-off, enabling membranes to be both stable under extreme conditions and to be remodelled without leaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "eaea40f7-2a09-4660-bfe9-e0463ffcde49",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C94",
+      "claim": "The original theory of Helfrich, 1973 failed to describe the resulting height fluctuation spectrum of bolalipid membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that the original theory of Helfrich, 1973 failed to describe the resulting height fluctuation spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations with a citation to Helfrich, 1973.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "50ecf764-cdc1-4c7f-a585-7485dcac3016",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C95",
+      "claim": "The extended theory by Hamm and Kozlov, 2000, which also includes the energetic cost of lipid tilt, successfully captured bolalipid fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extended theory by Hamm and Kozlov, 2000, which also includes the energetic cost of lipid tilt, successfully captured bolalipid fluctuations (Appendix 1\u2013Section 16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations with a citation to Hamm and Kozlov, 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b0ed2e3d-ead0-4d87-b5c7-7f7d06664992",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C99",
+      "claim": "Previous coarse-grained simulations using the MARTINI force field showed that the ratio of straight to U-shaped bolalipids increased upon stiffening the linker between the lipid tails.",
+      "claim_type": "EXPLICIT",
+      "source": "These results agree with the previous coarse-grained molecular dynamics simulations using the MARTINI force field which showed that the ratio of straight to U-shaped bolalipids increased upon stiffening the linker between the lipid tails (Bulacu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bulacu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "d5d893db-5d79-4964-90f6-5b423ef6f530",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C100",
+      "claim": "Previous coarse-grained simulations predicted that bolalipids spontaneously transition between the straight and U-shaped conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous coarse-grained simulations predicted that bolalipids spontaneously transition between the straight and U-shaped conformations (Bulacu et al., 2012), how this happens in archaeal membranes and whether membrane proteins are involved in this conformational transition needs to be clarified in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bulacu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "9291752b-f44e-45d7-8ffb-4e657584b4a0",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C101",
+      "claim": "Experimental studies suggest that archaeal membranes contain flippases and scramblases for the transitioning of bilayer lipids between membrane leaflets.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental studies suggest that archaeal membranes contain flippases and scramblases for the transitioning of bilayer lipids between membrane leaflets (Makarova et al., 2015; Verch\u00e8re et al., 2017), raising the possibility that similar proteins could also facilitate conformational transitions in bolalipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Makarova et al., 2015 and Verch\u00e8re et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "89ff6586-5b13-4353-b041-5546281ab6cd",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C102",
+      "claim": "It has been suggested that the viral fusion protein hemagglutinin could cause a transition from straight to U-shaped bolalipid conformation during the fusion of bolalipid vesicles with influenza viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been suggested that the viral fusion protein hemagglutinin could cause a transition from straight to U-shaped bolalipid conformation during the fusion of bolalipid vesicles with influenza viruses (Bhattacharya et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bhattacharya et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "f0689663-3c41-468f-8c5e-b7530083da92",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C103",
+      "claim": "Previous atomistic simulations showed that the membrane rigidity was similar for membranes composed of bilayer lipids and flexible synthetic bolalipids.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with previous atomistic simulations, which showed that the membrane rigidity was similar for membranes composed of bilayer lipids and flexible synthetic bolalipids (Schroeder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Schroeder et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "40713fea-13cf-49cd-b3d6-935bea8f0207",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C104",
+      "claim": "A continuum theory predicted that the rigidity of membranes formed of triblock copolymers is 20% larger than that of diblock copolymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the result is consistent with a continuum theory which predicted that the rigidity of membranes formed of triblock copolymers is 20% larger than that of diblock copolymers (Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "3a419d59-b412-4510-af1b-c98b7343d419",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C105",
+      "claim": "Colloidal membranes at macroscopic scales follow the standard Helfrich theory for bilayer membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been found that colloidal membranes at these macroscopic scales follow the standard Helfrich theory for bilayer membranes (Barry and Dogic, 2010), with rigidity that is three orders of magnitude higher than those of lipid bilayers (Balchunas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Barry and Dogic, 2010 and Balchunas et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "4a2a7731-c75a-4ee1-9308-031ec0136627",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C106",
+      "claim": "Previous experiments of mixture membranes of bilayer and bolalipids with cyclopentane rings suggested that the bending rigidity non-monotonically depends on the fraction of the membrane made up of bilayer lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while in our simulations the bending rigidity monotonically decreases with bilayer fraction, previous experiments of mixture membranes of bilayer and bolalipids with cyclopentane rings suggested that the bending rigidity non-monotonically depends on the fraction of the membrane made up of bilayer lipids (Vitkova et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Vitkova et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "0a5b93f1-3497-4402-b6d2-16dd9495056a",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "claim_id": "C107",
+      "claim": "Experiments reported that membranes consisting solely of bolalipids are more rigid than bilayer membranes and non-fluctuating.",
+      "claim_type": "EXPLICIT",
+      "source": "The same experiments reported that membranes consisting solely of bolalipids are more rigid than bilayer membranes and non-fluctuating, which is in agreement with our high bending modulus simulation results for near-pure bolalipid mixture membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to the same experiments (Vitkova et al., 2020) and comparison to simulation results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e979f591-0cfd-4189-ae43-adb36b684f31",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a coarse-grained computational model for bolalipid membranes by extending the Cooke and Deserno bilayer model, where bolalipids are modeled by joining two bilayer lipids with adjustable molecular stiffness. Both bilayer and bolalipid molecules successfully self-assembled into membranes over a wide range of interaction parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 describe the computational model development and validation. The model is clearly described with appropriate references to established methods (C38), the bolalipid construction is straightforward (C39), and self-assembly is demonstrated with supporting figures (C40). This provides a solid methodological foundation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b8e52801-8d53-479a-9bc4-144dad929384",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Flexible bolalipids adopt U-shaped conformations and form membranes resembling bilayers, while rigid bolalipids (mimicking archaeal lipids with cyclopentane rings) adopt straight conformations. The geometry of bolalipids alone is sufficient to shift the fluid phase to higher temperatures through entropic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C33 are directly supported by simulation data showing conformational preferences and phase behavior (Figure 1, Figure 2). The connection between molecular rigidity and conformation is clearly demonstrated, and the entropic mechanism for temperature stability is a reasonable interpretation of the coarse-grained model results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "04935689-25b2-42ee-b819-41f513dd9e72",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Flexible bolalipid membranes exhibit bending rigidity only slightly higher than bilayer membranes, while stiff bolalipid membranes can be more than an order of magnitude more rigid. The increase in rigidity coincides with the disappearance of U-shaped conformations. The extended Hamm-Kozlov theory (including lipid tilt) successfully describes bolalipid membrane fluctuations, while the original Helfrich theory fails.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 and C58 are supported by quantitative measurements from fluctuation analysis (Figure 2C). The theoretical analysis (C94-C95) appropriately identifies that tilt contributions become important for rigid bolalipid membranes, which is physically reasonable given the increased tilt persistence length. The correlation between U-shaped fraction and rigidity is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "ed8f745b-759c-4c55-af78-205aaa3d0d15",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bilayer and flexible bolalipid molecules form flexible membranes that prefer to bend rather than tilt, while bolalipids in straight configuration form rigid membranes that prefer to tilt rather than bend.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are logical conclusions from the measured tilt persistence lengths and bending rigidities. The competing deformation modes (bending vs. tilting) are well-established in membrane physics, and the simulation data on tilt persistence length (Figure 2C inset) supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "0e59bda5-c974-4ba5-9c0c-b619ed48b182",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bolalipid membranes exhibit hypoelastic behavior: their bending modulus decreases with increasing curvature. During membrane deformation, the fraction of U-shaped bolalipids increases in the outer layer, softening the membrane locally and rendering it a mechanically switchable material.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C52, C76-C77 describe a novel mechanical property supported by simulations of cylindrical membranes (Figure 2D-F) and cargo budding (Figure 4C). The curvature-dependent rigidity is clearly demonstrated, and the mechanism (increased U-shaped fraction) is directly observed. This represents a significant finding about bolalipid membrane mechanics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "7bbad036-8512-4935-b8e6-bea3906e78dc",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ratio of Gaussian rigidity to bending modulus for flexible bolalipid membranes is around \u22121/2, approximately half that of bilayer membranes (\u22121).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by measurements using the membrane patch closure method (Appendix 1-Section 9). The measured values with error estimates are provided, and the comparison to bilayer membranes (citing Hu et al., 2012) is appropriate. This represents a quantitative prediction about topological membrane remodeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "2e3e23b7-41bd-49b1-859d-da364e77391c",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bolalipid membranes have much higher bending rigidity than bilayer membranes and resist shape changes. During deformation, stress is relieved by U-shaped conformations in flexible bolalipids, but in rigid bolalipids, stress leads to pore formation. Pores form when the energetic cost of conformational change exceeds the cost of opening a lipid edge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C79-C81 describe the mechanical response to deformation supported by cargo budding simulations (Figure 4). The pore formation mechanism (C53) is a reasonable inference from the observed behavior. The trade-off between conformational change and pore formation is clearly demonstrated across different rigidity values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "4ace1092-2fa1-44cf-87fa-90bd6969d6f7",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mixing only 10% bilayer lipids into gel-state bolalipid membranes is sufficient to fluidize them. Bolalipid membranes can be substantially softened either through U-shaped conformations or through addition of bilayer lipids. Mixed membranes are stable at high temperature and become softer as bilayer fraction increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C71, C51, and C37 describe the behavior of mixed membranes supported by simulations (Figure 3). The 10% threshold for fluidization is clearly shown, and the softening mechanism is demonstrated through bending rigidity measurements. This represents an important finding about archaeal membrane adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Small amounts of bilayer lipids in bolalipid membranes achieve fluid membranes that are both stable and flexible. In mixed membranes during budding, the onset energy decreases sharply with bilayer fraction, U-shaped bolalipids localize to the outer layer at low bilayer fractions but are replaced by bilayer lipids at higher fractions, and pore formation is largely prevented. This resolves the trade-off between stability and flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C82-C93 describe the key finding about mixed membranes supported by extensive cargo budding simulations (Figure 5). The data clearly show reduced onset energy, lipid redistribution, and pore suppression. The conclusion that this resolves the stability-flexibility trade-off is well-supported by the combined evidence. This is the central result of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "1b7759a7-df62-4881-9cd4-42a3d6b04103",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Enforcing membrane bending softens bolalipid membranes locally by increasing U-shaped conformations, rendering them mechanically switchable materials. This suggests archaeal membranes can balance opposing needs when adapting to extreme environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 synthesize the findings about curvature-dependent softening and mixed membrane behavior. The mechanically switchable material characterization is supported by the demonstrated curvature-dependent rigidity. The broader conclusion about archaeal adaptation (C56) is a reasonable extrapolation from the simulation results, though it remains a computational prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "97103388-4320-4caf-9df3-92224621d1b0",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model predicts that a small increase in the fraction of archaeal bilayer lipids should be sufficient to soften a bolalipid-rich membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is a testable prediction directly supported by the simulation results showing that 10% bilayer lipids can fluidize membranes (C69) and that onset energy decreases sharply with small bilayer additions (C82). This represents an important experimental prediction from the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two different membrane designs have evolved: bacteria and eukaryotes use single-headed fatty acid lipids forming bilayers, while archaea use branched isoprenoid lipids that can include cyclopentane rings and have one or two heads (bolalipids).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C10-C14 describe established knowledge about membrane diversity across life, supported by appropriate citations. This background information is accurately presented and provides context for the study. The structural details about archaeal lipids are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "3e2933a3-bfe9-453d-84f8-ccc2dd07622c",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Bolalipids are thought to enable cells to survive in harsh environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C3 is presented as speculation from the literature. While the current study provides mechanistic insights supporting this hypothesis (high-temperature stability, controlled flexibility), the claim itself is acknowledged as a hypothesis rather than established fact. The simulation results provide support but do not constitute direct experimental validation in living cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "30e3db3c-18a1-477c-8c92-9e5498f743a9",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cellular membranes must be both sturdy and flexible. Archaea maintain membrane fluidity (homeoviscous adaptation) by tuning lipid composition (bolalipid/bilayer ratio and cyclopentane ring number) in response to environmental conditions. Archaeal lipids exhibit dense packing, high viscosity, and low porosity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 and C15-C21 describe established membrane biology and archaeal adaptation strategies, all supported by appropriate citations. This background accurately represents current understanding and provides biological context for the computational study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "247a6351-8b24-4d73-afee-571d0fe17797",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior experimental and computational studies have characterized bolalipid membrane properties including U-shaped conformations, high-temperature stability, increased rigidity with cyclopentane rings, and various biophysical properties (thickness, phase transitions, diffusivity, permeability).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C32 accurately summarize prior work with appropriate citations. This literature review provides important context and shows how the current work builds on and extends previous studies. The authors correctly represent the state of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46",
+      "content_id": "d28f9d69-a5ea-47fe-9180-15e43826c13b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The simulation results are consistent with previous computational and experimental studies showing conformational transitions, similar rigidity for flexible bolalipids and bilayers, increased rigidity with stiffening, and various membrane properties. Some discrepancies exist with experimental mixture studies, possibly due to specific lipid properties or domain formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C107 appropriately compare the current results to prior work, noting both agreements and discrepancies. The authors correctly identify where their results align with previous studies and honestly discuss where differences exist (C106), suggesting possible explanations. This demonstrates appropriate scientific contextualization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "76232f13-2426-434a-aa22-83e65cc7be4d",
+      "content_id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that flexible bolalipids adopt U-shaped conformations forming bilayer-like membranes, while rigid bolalipids (resembling archaeal lipids with cyclopentane rings) adopt straight conformations forming stiff membranes prone to pore formation. During membrane deformation, stress is relieved by bolalipids transitioning to U-shaped conformations, rendering the membrane mechanically switchable.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm these findings. Reviewer 1 states 'the author demonstrates that bolalipid bilayers behave as binary mixtures, containing bolalipids organized either in a straight conformation...or in a u-shaped one' and notes 'the evidence for their findings is really strong and complete.' The editor describes the results as 'compelling' and reviewers raised no concerns about these core conformational findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "62b473f7-3e54-4e24-a7e9-239c96cab45c",
+      "content_id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors show that incorporating small amounts (as little as 10%) of bilayer lipids into bolalipid membranes creates fluid composite membranes that are both stable at high temperatures and flexible enough for membrane remodeling without pore formation. As bilayer lipid fraction increases, membrane softening occurs and U-shaped bolalipids are replaced by bilayer lipids in supporting curvature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this central finding. The editor states the results 'demonstrating that the incorporation of bolalipids and regular bilayer lipids in archaeal membranes significantly enhances membrane fluidity and structural stability' are 'compelling.' Reviewer 1 notes this allows membranes to be 'very sturdy but also provides remodeling' with 'really strong and complete' evidence. No concerns were raised about these mixture membrane findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "915853bc-cda2-403c-8a9a-158adba47d83",
+      "content_id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The simulations demonstrate that bolalipid geometry alone (through entropic effects) shifts membrane phase stability to high temperatures. Flexible bolalipids produce membranes only slightly more rigid than bilayers, while stiff bolalipids (with cyclopentane rings) produce membranes over an order of magnitude stiffer. Stiff bolalipid membranes exhibit curvature-dependent bending modulus (hypoelastic behavior) and altered Gaussian rigidity ratios.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm these mechanical property findings without critique. Reviewer 2 notes the authors 'studied the mechanics of bolalipid and archaeal mixed-lipid membranes via comprehensive molecular dynamics simulations' with 'analyses and findings presented clearly and concisely.' The editor describes the model as 'robust' and results as 'compelling.' The detailed mechanical characterization is accepted as part of the systematic evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "4a748f2f-3cdc-4e10-a955-cdf23e7810ad",
+      "content_id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors extended the Cooke-Deserno coarse-grained model to bolalipids by joining two bilayer lipids, creating a 6-bead bolalipid model. Both bilayer and bolalipid molecules successfully self-assembled into membranes over a wide range of interaction parameters.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support the modeling approach. Reviewer 1 states 'the authors mastered the modeling and analysis of these complex systems.' Reviewer 2 describes it as extending 'the Cooke-Deserno 3-bead-per-lipid model to bolalipids with 6 bead' and notes 'figures, supplementary information and movies are of very high quality.' The methodological foundation is accepted without challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b297e812-89c3-4247-9143-01a182cde25d",
+      "content_id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors found that the original Helfrich theory failed to describe bolalipid membrane height fluctuation spectra, but the extended Hamm-Kozlov theory (including lipid tilt energy) successfully captured the fluctuations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raised substantive concerns about distinguishing tilt contributions from surface tension effects in the linear Monge gauge, providing detailed theoretical arguments. However, the reviewer ultimately states 'considering that the authors have made sure that the membrane is indeed tensionless, this argument is settled,' indicating conditional acceptance pending verification of tensionless conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "d086a50d-710b-4f46-ab00-6b6a9cda353e",
+      "content_id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors conclude that membrane pores form when the energetic cost of bolalipid conformational change exceeds pore edge formation cost, that enforcing bending creates mechanically switchable materials, and that archaeal membranes can balance opposing needs (stability vs. flexibility) when adapting to extreme conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive conclusions are implicitly accepted by reviewers. Reviewer 1 states the paper demonstrates 'how the mixture of bolalipids and regular bilayer lipids in archaeal membrane models enhances the fluidity and stability of these membranes' and notes 'weaknesses: None.' The editor affirms the results are 'compelling' without challenging these mechanistic interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814",
+      "content_id": "b45cb7b7-889a-4afe-b5ef-132343876bb5",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors compare their findings to previous computational and experimental studies, noting agreement with prior simulations on bolalipid conformational transitions and membrane properties, while acknowledging some discrepancies with experimental bending rigidity measurements in mixed membranes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these contextual comparisons without challenge. Reviewer 2 notes 'the authors have provided detailed response to the points I raised on the first version and have revised their manuscript accordingly,' indicating satisfaction with how prior work is discussed. The acknowledgment of experimental discrepancies demonstrates appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3893e42f-56e4-4416-990a-6ab3020dd050",
+      "result_id": "e979f591-0cfd-4189-ae43-adb36b684f31"
+    },
+    {
+      "claim_id": "02ccdb41-f776-44a0-99cc-634197057171",
+      "result_id": "e979f591-0cfd-4189-ae43-adb36b684f31"
+    },
+    {
+      "claim_id": "5ae7c3d3-ffd8-4fcf-af2f-5fc62ca88d11",
+      "result_id": "e979f591-0cfd-4189-ae43-adb36b684f31"
+    },
+    {
+      "claim_id": "cbe1facb-b7c9-4c37-8af0-7f209e00cbea",
+      "result_id": "b8e52801-8d53-479a-9bc4-144dad929384"
+    },
+    {
+      "claim_id": "d146000e-91b7-46f9-9df8-bd3d6a62238f",
+      "result_id": "b8e52801-8d53-479a-9bc4-144dad929384"
+    },
+    {
+      "claim_id": "7bcd3e2e-d9bb-4f09-8236-382feff6b7bc",
+      "result_id": "b8e52801-8d53-479a-9bc4-144dad929384"
+    },
+    {
+      "claim_id": "5ae7c3d3-ffd8-4fcf-af2f-5fc62ca88d11",
+      "result_id": "b8e52801-8d53-479a-9bc4-144dad929384"
+    },
+    {
+      "claim_id": "3d5999b6-5432-4195-aeb2-b9298605cecc",
+      "result_id": "04935689-25b2-42ee-b819-41f513dd9e72"
+    },
+    {
+      "claim_id": "12984b13-ee7f-40f4-91a6-219a4fadb2a9",
+      "result_id": "04935689-25b2-42ee-b819-41f513dd9e72"
+    },
+    {
+      "claim_id": "c4023a1d-656a-4cc4-b59d-5fa22b69950b",
+      "result_id": "04935689-25b2-42ee-b819-41f513dd9e72"
+    },
+    {
+      "claim_id": "eaea40f7-2a09-4660-bfe9-e0463ffcde49",
+      "result_id": "04935689-25b2-42ee-b819-41f513dd9e72"
+    },
+    {
+      "claim_id": "50ecf764-cdc1-4c7f-a585-7485dcac3016",
+      "result_id": "04935689-25b2-42ee-b819-41f513dd9e72"
+    },
+    {
+      "claim_id": "b4b4d9aa-6dfb-4a46-b34b-bb1f58b54985",
+      "result_id": "ed8f745b-759c-4c55-af78-205aaa3d0d15"
+    },
+    {
+      "claim_id": "b1edb78c-5e4c-4a3e-801e-d0592b6cd008",
+      "result_id": "ed8f745b-759c-4c55-af78-205aaa3d0d15"
+    },
+    {
+      "claim_id": "6a904c90-f0cd-459e-b734-112e30d6749d",
+      "result_id": "0e59bda5-c974-4ba5-9c0c-b619ed48b182"
+    },
+    {
+      "claim_id": "7340e8cd-162b-4c16-9e5f-339c75f6c685",
+      "result_id": "0e59bda5-c974-4ba5-9c0c-b619ed48b182"
+    },
+    {
+      "claim_id": "da975316-31da-44d8-8021-5f81b079e614",
+      "result_id": "0e59bda5-c974-4ba5-9c0c-b619ed48b182"
+    },
+    {
+      "claim_id": "1fdc6a07-44d1-48ec-8679-51173a06608a",
+      "result_id": "0e59bda5-c974-4ba5-9c0c-b619ed48b182"
+    },
+    {
+      "claim_id": "a21866d5-318c-47c7-85c0-1f8b90cc5ba9",
+      "result_id": "7bbad036-8512-4935-b8e6-bea3906e78dc"
+    },
+    {
+      "claim_id": "faf2e7c4-215c-4c88-a233-dcd2d9f0c2f5",
+      "result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c"
+    },
+    {
+      "claim_id": "86eb609e-8265-46de-ab7d-0e03464f8c98",
+      "result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c"
+    },
+    {
+      "claim_id": "b55c2374-08dc-4757-be2f-3eb57fdd0882",
+      "result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c"
+    },
+    {
+      "claim_id": "c633355e-d223-40cf-a2a6-6afa5111e769",
+      "result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c"
+    },
+    {
+      "claim_id": "1d7062fc-aaa4-4bd2-a0a4-7a1cce2eea99",
+      "result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c"
+    },
+    {
+      "claim_id": "4e35bdc2-cd92-4ac5-b1eb-bbac0053be59",
+      "result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c"
+    },
+    {
+      "claim_id": "89797ebd-3042-4446-8a41-622ba608cdf0",
+      "result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c"
+    },
+    {
+      "claim_id": "35c081bc-5b76-4638-9d6f-ca0238790800",
+      "result_id": "4ace1092-2fa1-44cf-87fa-90bd6969d6f7"
+    },
+    {
+      "claim_id": "08031604-d20b-46f7-9be7-e262c309b977",
+      "result_id": "4ace1092-2fa1-44cf-87fa-90bd6969d6f7"
+    },
+    {
+      "claim_id": "1a3c2b22-1994-4848-8dca-44ade7fb3394",
+      "result_id": "4ace1092-2fa1-44cf-87fa-90bd6969d6f7"
+    },
+    {
+      "claim_id": "6c0b7dde-8af6-438c-b48e-64906d92eab6",
+      "result_id": "4ace1092-2fa1-44cf-87fa-90bd6969d6f7"
+    },
+    {
+      "claim_id": "ba4e46dc-0e21-4b17-9675-40dcc3ffc190",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "9059cf3a-8dec-434e-895e-5f02a8715d22",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "f4f734da-c5d3-473d-85a4-d541a0d3234d",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "4ce057eb-fd61-480d-830c-b70b18e55c8f",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "637b68cb-69a9-4bf3-b9b0-06f25ab69fcf",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "ce5bf7d1-816e-48ad-87a7-766f5fa3eefd",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "8c231520-a326-4852-881c-e76d406af1d6",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "64636564-314e-489b-baf4-9ffa61807f7a",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "73ba7d60-dfec-469a-8486-24b3246f76c0",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "055ea344-7058-41bf-97f7-0aa9aa042443",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "acde5e18-11eb-466f-b8d8-84a2629a8e97",
+      "result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0"
+    },
+    {
+      "claim_id": "220bf0b0-cbdb-4001-9459-525324fdaf84",
+      "result_id": "1b7759a7-df62-4881-9cd4-42a3d6b04103"
+    },
+    {
+      "claim_id": "ef378da6-894a-4346-bb88-7355361796c7",
+      "result_id": "1b7759a7-df62-4881-9cd4-42a3d6b04103"
+    },
+    {
+      "claim_id": "8218aa33-c416-44a9-9462-84146fa24cd7",
+      "result_id": "97103388-4320-4caf-9df3-92224621d1b0"
+    },
+    {
+      "claim_id": "089d2a01-ff80-4cd9-98f5-62530d735f5e",
+      "result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c"
+    },
+    {
+      "claim_id": "abb62393-68ff-4f70-9b50-daa67fcfc109",
+      "result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c"
+    },
+    {
+      "claim_id": "2b296560-4b5c-4330-be7f-9a20fb778e09",
+      "result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c"
+    },
+    {
+      "claim_id": "25425a57-32db-481c-b34f-8ced60a1bb8f",
+      "result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c"
+    },
+    {
+      "claim_id": "b1ce3841-4675-4af0-964d-e5a9738ae313",
+      "result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c"
+    },
+    {
+      "claim_id": "c0d6fde6-6b37-4d64-90be-6638b9b1eab3",
+      "result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c"
+    },
+    {
+      "claim_id": "05210a12-7096-4386-b567-a7393ac78f40",
+      "result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c"
+    },
+    {
+      "claim_id": "9560347e-1480-4084-9aff-4915d069f44c",
+      "result_id": "3e2933a3-bfe9-453d-84f8-ccc2dd07622c"
+    },
+    {
+      "claim_id": "36afe4e7-bec3-41ad-b6b0-232712385c80",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "b44f8e96-4e52-4e30-b563-899f7ae4d1e1",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "b54ee1cf-fe50-408a-8f1f-78c18c34d00f",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "41c8b3bf-df6b-45c0-9ba5-d97abee34251",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "247ed7b8-30dc-4e56-b1e5-2cef3bd7c15b",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "5fed1503-5450-422b-9c74-0d0251bf69b1",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "4a61f728-180f-4b20-8cce-614414c353df",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "6391a428-0028-49ee-bd61-035954072194",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "8b079b2c-f27d-4625-9d02-07204c879d90",
+      "result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9"
+    },
+    {
+      "claim_id": "f20806b0-47c3-4682-8c8a-cdd6011bb485",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "5ff019a5-3bbb-4990-bf11-5aec064ab6f3",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "baff9e8a-9a93-4cea-8963-cefc36a14ef5",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "abf20e93-0393-4ab3-9f0c-7e79f7f0986f",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "ce74cf75-4753-4564-befe-a235dd5fbc18",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "206467cd-0939-40d9-9367-36095b1eba2b",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "0345eaec-ac6e-4cc0-afa8-1f8ad66234ed",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "ec3863de-c8e2-46cd-b33b-a02ae6db11ef",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "67e08a2a-1fd4-4447-8067-16070cfb84ea",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "1745bd0b-bc38-457c-94cf-63db238a8875",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "8cf855e7-bc56-48db-bdb8-87c5eb415ab1",
+      "result_id": "247a6351-8b24-4d73-afee-571d0fe17797"
+    },
+    {
+      "claim_id": "b0ed2e3d-ead0-4d87-b5c7-7f7d06664992",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "d5d893db-5d79-4964-90f6-5b423ef6f530",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "9291752b-f44e-45d7-8ffb-4e657584b4a0",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "89ff6586-5b13-4353-b041-5546281ab6cd",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "f0689663-3c41-468f-8c5e-b7530083da92",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "40713fea-13cf-49cd-b3d6-935bea8f0207",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "3a419d59-b412-4510-af1b-c98b7343d419",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "4a2a7731-c75a-4ee1-9308-031ec0136627",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "0a5b93f1-3497-4402-b6d2-16dd9495056a",
+      "result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46"
+    },
+    {
+      "claim_id": "cbe1facb-b7c9-4c37-8af0-7f209e00cbea",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "d146000e-91b7-46f9-9df8-bd3d6a62238f",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "c97b49cf-2b37-4112-87d6-1703537466f3",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "baff9e8a-9a93-4cea-8963-cefc36a14ef5",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "86eb609e-8265-46de-ab7d-0e03464f8c98",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "b55c2374-08dc-4757-be2f-3eb57fdd0882",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "7340e8cd-162b-4c16-9e5f-339c75f6c685",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "c4023a1d-656a-4cc4-b59d-5fa22b69950b",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "b4b4d9aa-6dfb-4a46-b34b-bb1f58b54985",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "b1edb78c-5e4c-4a3e-801e-d0592b6cd008",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "da975316-31da-44d8-8021-5f81b079e614",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "1fdc6a07-44d1-48ec-8679-51173a06608a",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "4e35bdc2-cd92-4ac5-b1eb-bbac0053be59",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "89797ebd-3042-4446-8a41-622ba608cdf0",
+      "result_id": "76232f13-2426-434a-aa22-83e65cc7be4d"
+    },
+    {
+      "claim_id": "ba4e46dc-0e21-4b17-9675-40dcc3ffc190",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "6c0b7dde-8af6-438c-b48e-64906d92eab6",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "1a3c2b22-1994-4848-8dca-44ade7fb3394",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "7dd6847f-8979-40d7-aedd-6b9f3e8da4fe",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "35c081bc-5b76-4638-9d6f-ca0238790800",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "08031604-d20b-46f7-9be7-e262c309b977",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "9059cf3a-8dec-434e-895e-5f02a8715d22",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "f4f734da-c5d3-473d-85a4-d541a0d3234d",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "4ce057eb-fd61-480d-830c-b70b18e55c8f",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "637b68cb-69a9-4bf3-b9b0-06f25ab69fcf",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "ce5bf7d1-816e-48ad-87a7-766f5fa3eefd",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "8c231520-a326-4852-881c-e76d406af1d6",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "64636564-314e-489b-baf4-9ffa61807f7a",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "73ba7d60-dfec-469a-8486-24b3246f76c0",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "055ea344-7058-41bf-97f7-0aa9aa042443",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "acde5e18-11eb-466f-b8d8-84a2629a8e97",
+      "result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c"
+    },
+    {
+      "claim_id": "7bcd3e2e-d9bb-4f09-8236-382feff6b7bc",
+      "result_id": "915853bc-cda2-403c-8a9a-158adba47d83"
+    },
+    {
+      "claim_id": "faf2e7c4-215c-4c88-a233-dcd2d9f0c2f5",
+      "result_id": "915853bc-cda2-403c-8a9a-158adba47d83"
+    },
+    {
+      "claim_id": "3d5999b6-5432-4195-aeb2-b9298605cecc",
+      "result_id": "915853bc-cda2-403c-8a9a-158adba47d83"
+    },
+    {
+      "claim_id": "12984b13-ee7f-40f4-91a6-219a4fadb2a9",
+      "result_id": "915853bc-cda2-403c-8a9a-158adba47d83"
+    },
+    {
+      "claim_id": "6a904c90-f0cd-459e-b734-112e30d6749d",
+      "result_id": "915853bc-cda2-403c-8a9a-158adba47d83"
+    },
+    {
+      "claim_id": "a21866d5-318c-47c7-85c0-1f8b90cc5ba9",
+      "result_id": "915853bc-cda2-403c-8a9a-158adba47d83"
+    },
+    {
+      "claim_id": "3893e42f-56e4-4416-990a-6ab3020dd050",
+      "result_id": "4a748f2f-3cdc-4e10-a955-cdf23e7810ad"
+    },
+    {
+      "claim_id": "02ccdb41-f776-44a0-99cc-634197057171",
+      "result_id": "4a748f2f-3cdc-4e10-a955-cdf23e7810ad"
+    },
+    {
+      "claim_id": "5ae7c3d3-ffd8-4fcf-af2f-5fc62ca88d11",
+      "result_id": "4a748f2f-3cdc-4e10-a955-cdf23e7810ad"
+    },
+    {
+      "claim_id": "eaea40f7-2a09-4660-bfe9-e0463ffcde49",
+      "result_id": "b297e812-89c3-4247-9143-01a182cde25d"
+    },
+    {
+      "claim_id": "50ecf764-cdc1-4c7f-a585-7485dcac3016",
+      "result_id": "b297e812-89c3-4247-9143-01a182cde25d"
+    },
+    {
+      "claim_id": "c633355e-d223-40cf-a2a6-6afa5111e769",
+      "result_id": "d086a50d-710b-4f46-ab00-6b6a9cda353e"
+    },
+    {
+      "claim_id": "220bf0b0-cbdb-4001-9459-525324fdaf84",
+      "result_id": "d086a50d-710b-4f46-ab00-6b6a9cda353e"
+    },
+    {
+      "claim_id": "ef378da6-894a-4346-bb88-7355361796c7",
+      "result_id": "d086a50d-710b-4f46-ab00-6b6a9cda353e"
+    },
+    {
+      "claim_id": "b0ed2e3d-ead0-4d87-b5c7-7f7d06664992",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "d5d893db-5d79-4964-90f6-5b423ef6f530",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "9291752b-f44e-45d7-8ffb-4e657584b4a0",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "89ff6586-5b13-4353-b041-5546281ab6cd",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "f0689663-3c41-468f-8c5e-b7530083da92",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "40713fea-13cf-49cd-b3d6-935bea8f0207",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "3a419d59-b412-4510-af1b-c98b7343d419",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "4a2a7731-c75a-4ee1-9308-031ec0136627",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    },
+    {
+      "claim_id": "0a5b93f1-3497-4402-b6d2-16dd9495056a",
+      "result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b93aceb4-3c3f-41bc-a31b-403f74303b00",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "e979f591-0cfd-4189-ae43-adb36b684f31",
+      "peer_result_id": "4a748f2f-3cdc-4e10-a955-cdf23e7810ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on computational model development and validation (C38-C40). Both evaluations find the methodology well-supported. OpenEval emphasizes the methodological foundation while peer reviewers explicitly praise the authors' mastery of modeling complex systems and high-quality presentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "990111f2-41fb-4d97-8f81-27ef47852ff8",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f7ffb8ee-1a1f-444a-8d0e-c36f6a68db46",
+      "peer_result_id": "9c5c6bb5-84b9-4a05-a64d-6a82abcb4814",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on contextualization with prior work (C99-C107). Both evaluations support how the authors compare results to previous studies and acknowledge discrepancies. OpenEval notes appropriate scientific contextualization while peer reviewers confirm satisfaction with how prior work is discussed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "aa40bbc8-a7ba-4fb5-8f01-909619fab695",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "c476a020-c58e-494d-955f-c5d4d5ad5bf0",
+      "peer_result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on the central finding about mixed membranes (C7, C82-C93). Both evaluations strongly support these claims as the key result. OpenEval describes it as 'well-supported by combined evidence' while peer reviewers call it 'compelling' with 'really strong and complete' evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "e53b708b-8318-4f5a-b668-14d69eaa48f2",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "4ace1092-2fa1-44cf-87fa-90bd6969d6f7",
+      "peer_result_id": "62b473f7-3e54-4e24-a7e9-239c96cab45c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support mixed membrane behavior (C37, C51, C69, C71) showing fluidization and softening mechanisms. OpenEval focuses on the 10% threshold and adaptation implications, while peer reviewers emphasize enhanced fluidity and structural stability as compelling findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c7587e30-42c4-4dab-8c02-bbbfe3fae7c3",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "b8e52801-8d53-479a-9bc4-144dad929384",
+      "peer_result_id": "76232f13-2426-434a-aa22-83e65cc7be4d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support conformational preferences and phase behavior (C4, C5). OpenEval emphasizes simulation data and entropic mechanisms, while peer reviewers affirm the binary mixture behavior with straight and U-shaped conformations as strongly evidenced.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "8f265dd1-50ec-42f7-abdc-b0e006bbef3f",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "04935689-25b2-42ee-b819-41f513dd9e72",
+      "peer_result_id": "b297e812-89c3-4247-9143-01a182cde25d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on theoretical analysis (C94-C95). OpenEval finds the tilt contribution analysis 'physically reasonable' and supported. Peer Reviewer 2 raised substantive theoretical concerns about distinguishing tilt from surface tension effects, resulting in UNCERTAIN evaluation with conditional acceptance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "bc77b519-4031-4f4f-915d-b3a286c66aba",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "04935689-25b2-42ee-b819-41f513dd9e72",
+      "peer_result_id": "76232f13-2426-434a-aa22-83e65cc7be4d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on mechanical properties. OpenEval addresses fluctuation analysis and rigidity-conformation correlation (C45-C46, C58, C94-C95). Peer reviewers support related conformational findings (C58-C60) as part of broader affirmation without specific critique of these measurements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "a63df38c-7945-4e20-b1c4-26d4fc0ca2d7",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "04935689-25b2-42ee-b819-41f513dd9e72",
+      "peer_result_id": "915853bc-cda2-403c-8a9a-158adba47d83",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address mechanical characterization. OpenEval focuses on fluctuation analysis and tilt contributions (C45-C46). Peer reviewers accept the comprehensive mechanical property findings (C45-C48) as part of systematic evaluation described as clear and concise.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "1aab91a1-d4df-40c5-a23c-2b69c1003d39",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0e59bda5-c974-4ba5-9c0c-b619ed48b182",
+      "peer_result_id": "76232f13-2426-434a-aa22-83e65cc7be4d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support curvature-dependent rigidity findings (C52, C76-C77). OpenEval describes this as a 'novel mechanical property' with clear demonstration. Peer reviewers implicitly accept these claims within broader affirmation of conformational and mechanical findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b684ccad-b83c-40bb-a209-a20ca102dedd",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "0e59bda5-c974-4ba5-9c0c-b619ed48b182",
+      "peer_result_id": "915853bc-cda2-403c-8a9a-158adba47d83",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address curvature-dependent mechanical properties (C47). OpenEval emphasizes the novel finding of curvature-dependent rigidity from cylindrical membrane simulations. Peer reviewers accept mechanical characterization (C47-C48) as part of comprehensive analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "2a6fab73-dab5-4420-9dec-6398161cc318",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ed8f745b-759c-4c55-af78-205aaa3d0d15",
+      "peer_result_id": "76232f13-2426-434a-aa22-83e65cc7be4d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support competing deformation modes (C59-C60). OpenEval describes these as logical conclusions from measured properties. Peer reviewers implicitly accept these claims as part of broader support for mechanical and conformational findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "3e8a3e06-2592-4a99-855d-9370f63b3b63",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "7bbad036-8512-4935-b8e6-bea3906e78dc",
+      "peer_result_id": "915853bc-cda2-403c-8a9a-158adba47d83",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address topological remodeling predictions (C48). OpenEval emphasizes quantitative predictions with error estimates. Peer reviewers accept this as part of comprehensive mechanical characterization without specific commentary.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "f1d67a03-2080-49f2-82a6-864dd843cf01",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c",
+      "peer_result_id": "76232f13-2426-434a-aa22-83e65cc7be4d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on deformation response. OpenEval addresses cargo budding and pore formation (C34-C36, C79-C81). Peer reviewers support related conformational changes under deformation (C35-C36, C80-C81) as part of broader mechanical findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "32be2eb3-1400-43e4-a51f-27413a369036",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "2e3e23b7-41bd-49b1-859d-da364e77391c",
+      "peer_result_id": "d086a50d-710b-4f46-ab00-6b6a9cda353e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address pore formation mechanism (C53). OpenEval describes it as 'reasonable inference' from cargo budding simulations. Peer reviewers implicitly accept this interpretive conclusion as part of compelling mechanistic understanding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "72330628-dbd5-40f8-a7f1-e3663e8870fd",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "1b7759a7-df62-4881-9cd4-42a3d6b04103",
+      "peer_result_id": "d086a50d-710b-4f46-ab00-6b6a9cda353e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on mechanically switchable material characterization (C55-C56). OpenEval notes this synthesizes findings with reasonable extrapolation. Peer reviewers implicitly accept these interpretive conclusions about enhanced fluidity and stability as compelling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "12eccc67-d9ad-4789-b3c1-84dd9f7ef99d",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "97103388-4320-4caf-9df3-92224621d1b0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies testable prediction (C49) about 10% bilayer lipids fluidizing membranes, directly supported by simulation results. No corresponding peer review evaluation found addressing this specific experimental prediction.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "683578f8-829e-4a4d-8f6e-c3ed8971eb08",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "04a9bf64-c049-4bcd-bbbb-a508732dbf3c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports background claims about membrane diversity (C1-C2, C10-C14) as accurately presented with appropriate citations. No corresponding peer review evaluation found specifically addressing these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c518096f-438e-462a-9082-2b95fb73bc80",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "3e2933a3-bfe9-453d-84f8-ccc2dd07622c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates speculation about archaeal adaptation (C3) as UNCERTAIN, noting it remains hypothesis rather than established fact despite mechanistic support from simulations. No corresponding peer review evaluation found addressing this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "b9142a4d-91ee-40d9-942e-d683faa38b41",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "30e3db3c-18a1-477c-8c92-9e5498f743a9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports background on membrane biology and archaeal adaptation (C8-C9, C15-C21) as accurately representing current understanding. No corresponding peer review evaluation found specifically addressing these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    },
+    {
+      "id": "c13fce53-e8df-4c2b-a231-7fb6a886a33c",
+      "submission_id": "0dad2b2d-ec37-43c4-8346-e6143744a4b8",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "247a6351-8b24-4d73-afee-571d0fe17797",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports literature review claims (C22-C32) as accurately summarizing prior work with appropriate citations. No corresponding peer review evaluation found specifically addressing this literature context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:18.849007Z"
+    }
+  ]
+}

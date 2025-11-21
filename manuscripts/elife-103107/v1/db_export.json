@@ -1,0 +1,2430 @@
+{
+  "submission": {
+    "id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:26:41.074496Z",
+    "updated_at": "2025-11-21T04:26:41.074496Z"
+  },
+  "content": [
+    {
+      "id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "content_type": "manuscript",
+      "content_text": "# Prophage regulation of Shewanella fidelis 3313 motility and biofilm formation with implications for gut colonization dynamics in Ciona robusta\n\n## Authors\n\n- Ojas Natarajan<sup>1</sup> ([ORCID: 0000-0001-7887-2640](https://orcid.org/0000-0001-7887-2640))\n- Susanne L Gibboney<sup>1</sup>\n- Morgan N Young<sup>1</sup>\n- Shen Jean Lim<sup>2</sup>\n- Felicia Nguyen<sup>3</sup>\n- Natalia Pluta<sup>3</sup>\n- Celine GF Atkinson<sup>4</sup>\n- Assunta Liberti<sup>1</sup>\n- Eric D Kees<sup>6</sup>\n- Brittany A Leigh<sup>1</sup>\n- Mya Breitbart<sup>2</sup>\n- Jeffrey A Gralnick<sup>6</sup> ([ORCID: 0000-0001-9250-7770](https://orcid.org/0000-0001-9250-7770))\n- Larry J Dishaw<sup>1</sup> ([ORCID: 0000-0002-2705-4573](https://orcid.org/0000-0002-2705-4573)) \u2020\n\n### Affiliations\n\n1. Department of Pediatrics, Morsani College of Medicine, University of South Florida Tampa United States ([ROR:032db5x82](https://ror.org/032db5x82))\n2. College of Marine Science, University of South Florida Tampa United States ([ROR:032db5x82](https://ror.org/032db5x82))\n3. Biomedical Sciences Program, University of South Florida Tampa United States ([ROR:032db5x82](https://ror.org/032db5x82))\n4. Department of Cell Biology, Microbiology, and Molecular Biology, University of South Florida Tampa United States ([ROR:032db5x82](https://ror.org/032db5x82))\n5. Stazione Zoologica Anton Dohrn Naples Italy ([ROR:03v5jj203](https://ror.org/03v5jj203))\n6. BioTechnology Institute, University of Minnesota St. Paul United States ([ROR:017zqws13](https://ror.org/017zqws13))\n7. Plant and Microbial Biology, University of Minnesota St. Paul United States ([ROR:017zqws13](https://ror.org/017zqws13))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLysogens, bacteria with one or more viruses (prophages) integrated into their genomes, are abundant in the gut of animals. Prophages often influence bacterial traits; however, the influence of prophages on the gut microbiota\u2013host immune axis in animals remains poorly understood. Here, we investigate the influence of the prophage SfPat on Shewanella fidelis 3313, a persistent member of the gut microbiome of the model marine tunicate, Ciona robusta. Establishment of a SfPat deletion mutant (\u0394SfPat) reveals the influence of this prophage on bacterial physiology in vitro and during colonization of the Ciona gut. In vitro, deletion of SfPat reduces S. fidelis 3313 motility and swimming while increasing biofilm formation. To understand the in vivo impact of these prophage-induced changes in bacterial traits, we exposed metamorphic stage 4 Ciona juveniles to wildtype (WT) and \u0394SfPat strains. During colonization, \u0394SfPat localizes to overlapping and distinct areas of the gut compared to the WT strain. We examined the differential expression of various regulators of cyclic-di-GMP, a secondary signaling molecule that mediates biofilm formation and motility. The pdeB gene, which encodes a bacterial phosphodiesterase known to influence biofilm formation and motility by degrading cyclic-di-GMP, is upregulated in the WT strain but not in \u0394SfPat when examined in vivo. Expression of the Ciona gut immune effector, VCBP-C, is enhanced during colonization by \u0394SfPat compared to the WT strain; however, VCBP-C binding to the WT strain does not promote the excision of SfPat in an SOS-dependent pathway. Instead, VCBP-C binding significantly reduces the expression of a phage major capsid protein. Our findings suggest that SfPat influences host perception of this important colonizing commensal and highlights the significance of investigating tripartite dynamics between prophages, bacteria, and their animal hosts to better understand the gut microbiota-host immune axis.\n\n## Introduction\n\nAn epithelial layer with a mucus-rich surface lines the gastrointestinal tract (or gut) of animals. This dynamic environment is a primary interface between host immunity, symbiotic microbes, and dietary antigens (Li et al., 2015; Johansson et al., 2011). During colonization of the gut, bacteria encounter physical, chemical, and biological forces. They must compete for nutrients and niche space while managing the stress of digestive enzymes and host immune factors (Duncan et al., 2021; Harrington et al., 2021; Hornung et al., 2018; Moran et al., 2019). Gut-colonizing bacteria also encounter bacteriophages (phages), or viruses that infect bacteria (Mirzaei and Maurice, 2017); for example, over 1012 viruses have been estimated in the human gut (Shkoporov and Hill, 2019).\n\nPhages display both lytic and temperate lifestyles. While the former impacts bacterial community dynamics through lysis, the effect of temperate phages on bacterial communities, especially those associated with animals, remains poorly understood. Conventionally, temperate phages integrate into bacterial genomes as prophages and remain \u2018dormant\u2019 until an external trigger activates them to enter the lytic cycle (Lwoff, 1953; Boling et al., 2020; Howard-Varona et al., 2017); these bacteria are considered \u2018lysogenized\u2019 and referred to as lysogens (Lwoff, 1953; Howard-Varona et al., 2017). Prophages often encode accessory genes that can influence bacterial traits and behaviors (Mills et al., 2013). These genes can encode virulence factors, antibiotic resistance determinants, and those that provide superinfection exclusion, thereby protecting their bacterial hosts from infections by related phages (Bondy-Denomy and Davidson, 2014). Based on the site of integration, prophages can also impact the expression of bacterial genes (Aziz et al., 2005). Bacterial lysogens exist in every environment (Jiang and Paul, 1998; Silveira et al., 2021; Leigh et al., 2018) and are particularly prevalent in the microbiomes of diverse animals (Kim and Bae, 2018; Shkoporov and Hill, 2019).\n\nProphage induction results in bacterial lysis and can be mediated by various stressors, including antibiotics and inflammatory processes (Allen et al., 2011; Banks et al., 2003; Diard et al., 2017; Fang et al., 2017; Garcia-Russell et al., 2009; Maiques et al., 2006; Nanda et al., 2015; Wang et al., 2010; Zhang et al., 2000). Because prophages can influence the phenotypes of their bacterial hosts, such as biofilm formation (Nanda et al., 2015), understanding the impact of lysogens in animal microbiomes is becoming a research priority (Fortier and Sekulovic, 2013; Hu et al., 2021; Lin et al., 1999). In the gut, biofilms that associate with host mucus may benefit the host by enhancing epithelial barriers against pathogenic invasion (Swidsinski et al., 2007). Integration of prophages into bacterial genomes may impart functional changes that could be important in surface colonization. For example, in Escherichia coli K-12, integrating the Rac prophage into a tRNA thioltransferase region disrupts biofilm functions (Liu et al., 2015); deleting this prophage decreases resistance to antibiotics, acids, and oxidative stress. Some of these traits may be affected by prophage-specific genes (Wang et al., 2010). Prophages have also been shown to influence biofilm life cycles in Pseudomonas aeruginosa (Rice et al., 2009).\n\nLysogenized Shewanella species colonize the gut of Ciona robusta, an ascidian collected in Southern California waters (Leigh et al., 2017) and referred to here as Ciona. Tunicates like Ciona are a subphylum (Tunicata) of chordates that are well-established invertebrate model systems for studies of animal development (Chiba et al., 2004; Davidson, 2007; Liu et al., 2006) and are now increasingly leveraged for gut immune and microbiome studies (Liberti et al., 2021). Armed with only innate immunity, Ciona maintains stable gut bacterial and viral communities (Dishaw et al., 2014b; Leigh et al., 2018) despite continuously filtering microbe-rich seawater. Previous efforts to define gut immunity in Ciona revealed the presence of a secreted immune effector, the variable immunoglobulin (V-Ig) domain-containing chitin-binding protein, or VCBP, that likely plays important roles in shaping the ecology of the gut microbiome by binding bacteria and fungi (as well as chitin-rich mucus) on opposing functional domains (Dishaw et al., 2011; Liberti et al., 2019). VCBP-C is one of the best-studied VCBPs expressed in the stomach and intestines of Ciona, shown to bind bacteria in vitro and in the gut lumen (Dishaw et al., 2016; Dishaw et al., 2011). Based on various in vitro and in vivo observations, it was proposed previously that VCBPs likely modulate bacterial settlement and/or biofilm formation (Dishaw et al., 2016; Liberti et al., 2019; Liberti et al., 2021). The potential influence of soluble immune effectors on host\u2013bacterial\u2013viral interactions is particularly interesting. However, the possibility that prophages may influence interactions between bacteria and secreted immune effectors like VCBPs remains to be explored.\n\nShewanella fidelis strain 3313 was isolated previously from the gut of Ciona and found to possess two inducible prophages, SfPat and SfMu Leigh et al., 2017. Furthermore, in vitro experiments demonstrated enhanced biofilm formation in S. fidelis 3313 in the presence of extracellular DNA (eDNA) that may originate from lytic phage activity (Leigh et al., 2017). Other Shewanella species have previously demonstrated a link between phage-mediated lysis and biofilm formation (G\u00f6deke et al., 2011). For example, in S. oneidensis strain MR-1, Mu and Lambda prophages enhance biofilm formation via eDNA released during prophage-induced lysis, with genomic DNA likely serving as a scaffold for biofilms (G\u00f6deke et al., 2011). Similarly, the P2 prophage of S. putrefaciens strain W3-18-1 influences biofilm formation via spontaneous induction at low frequencies, resulting in cell lysis and contributing eDNA that can mediate biofilm formation (Liu, 2019).\n\nHere, we set out to isolate and characterize the influence of the prophage, SfPat, on its host, S. fidelis 3313. Since the last description (Leigh et al., 2017), the genome of S. fidelis 3313 was improved by combining long-read and short-read sequencing, which resulted in improved resolution of the genomic landscape within and around the prophage. A homologous recombination-based deletion strategy was designed to generate a deletion mutant (i.e., knockout) of SfPat. We report that deletion of SfPat results in reduced bacterial motility and increased biofilm formation in vitro. These changes in bacterial traits and behaviors are associated with the expression of genes regulating important signaling molecules and a corresponding impact on host immune gene expression during gut colonization in Ciona juveniles. Gut colonization experiments in laboratory-reared Ciona juveniles comparing wild-type (WT) and SfPat prophage knockout (\u0394SfPat) mutant strains demonstrate that SfPat influences gut colonization outcomes, for example, niche preference and retention. These effects are influenced by host gene expression. The results reported herein reflect complex tripartite interactions among prophages, bacterial hosts, and animal immune systems.\n\n## Results\n\n### Sequence verification of prophage deletion mutant strains\n\nColony PCR and single primer extension sequencing were both used to validate the prophage deletion, using primers EDK81/82 for SfPat (Figure 1a). All recovered amplicon sizes were consistent with the predictions for SfPat deletion (Figure 1b). The SfPat deletion (\u0394SfPat) strain was named JG3862 (Table 1). Genome sequencing of the deletion mutant strain did not reveal the significant introduction of additional mutations or DNA modifications (Table 2; Figure 1b). The WT and \u0394SfPat strains were then used for in vitro and in vivo experiments to understand the potential role of prophages in shaping S. fidelis 3313 colonization dynamics in the gut of Ciona.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig1-v1.jpg)\n\n**Figure 1.:** (a) Location of upstream, downstream, and flanking primers used in the deletion of SfPat, primer orientation shown with respect to the prophage. (b) Deletion of SfPat from S. fidelis 3313 identified after assembling Illumina (short-read) sequenced genomes and mapping onto the improved (short and long-read, PacBio, sequencing) WT genome. The figure illustrates SfPat deletion as revealed by subsequent Illumina sequencing. The solid gray areas on the SfPat genome indicate regions that share identity with the WT.\n\n**Table 1.**\n All S. fidelis 3313 strains are submitted under the BioProject PRJNA 90327 on NCBI, accession: SAMN31793880 ID:31793880.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Organisms</th>\n      <th>Phenotype</th>\n      <th>NCBI RefSeq assembly</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>JG4066</td>\n      <td>WT</td>\n      <td>GCF_033441085.1</td>\n    </tr>\n    <tr>\n      <td>JG3862</td>\n      <td>\u0394SfPat</td>\n      <td>GCF_033441065.1</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Primer sequences on S. flidelis 3313 used for generating \u0394SfPat deletion suicide vector and for deletion verification.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer ID</th>\n      <th>Sequence (5\u2019\u20133\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EDK77</td>\n      <td>AAATGGATCCCGATCAGCCTGCTAGTTTATT</td>\n    </tr>\n    <tr>\n      <td>EDK78</td>\n      <td>ACGGAATAGGTTGAATGCGACTCAGGC</td>\n    </tr>\n    <tr>\n      <td>EDK79</td>\n      <td>TCGCATTCAACCTATTCCGTCATGTTTAGCC</td>\n    </tr>\n    <tr>\n      <td>EDK80</td>\n      <td>ACATGAGCTCGATGCAGATAAAGAGCCGTAAA</td>\n    </tr>\n    <tr>\n      <td>EDK81</td>\n      <td>GTTTATTTTGTGGCAATCGCA</td>\n    </tr>\n    <tr>\n      <td>EDK82</td>\n      <td>GGTAGCAGTGCTTAAACGAT</td>\n    </tr>\n  </tbody>\n</table>\n\n### Prophage deletion modulates biofilm formation and motility in S. fidelis 3313 in vitro\n\nDeletion of SfPat from S. fidelis 3313 contributed to an overall increase in biofilm formation as quantified by crystal violet staining by over 14% compared to WT strains (Figure 2a). Conventionally, to form a biofilm, bacteria will settle and initiate stationary growth dynamics (Watnick and Kolter, 2000). We studied bacterial swimming on simple semi-solid media to determine if the prophage influenced swimming motility in S. fidelis 3313. Bacterial motility was measured by the spread diameter from a primary inoculation point after overnight incubation (Figure 2b). The WT strain demonstrated a mean diameter of 8.21 mm, while \u0394SfPat resulted in a decrease in the mean diameter to be 4.04 mm, demonstrating reduced motility.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig2-v1.jpg)\n\n**Figure 2.:** (a) Influence of prophages on in vitro biofilm formation over 24 hours quantified with crystal violet assay (n=3), (b) role of prophages in swimming quantified as the diameter of spread on soft agar after 24 hours (n=6), and (c) fold-change of pdeB (with Rho as internal control) from 24 hour biofilm (in vitro) (n=4) and 24 hour in vivo (n=4). *p-value<0.05, **p-value<0.01; ns = not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Cyclic-di-GMP regulators expression in WT and \u0394SfPat in vitro after 24 hours of exposure (n=4), (b) Cyclic-di-GMP regulators expression in WT and \u0394SfPat in vivo of Ciona MS4 after 24 hours of exposure (n=4). ns = not significant.\n\n### The influence of a prophage on colonization of the Ciona gut by S. fidelis 3313\n\nSwimming and biofilm formation behaviors also depend on the modulation of cyclic-di-GMP in the bacteria. Thus, changes in the transcript levels of four genes regulating cyclic-di-GMP (pleD, pilZ, chitinase, and pdeB) were measured by qPCR between WT and \u0394SfPat. We aimed to identify regulators of the transition from sessile to motile behavior impacted by the deletion of SfPat. No significant change in the transcript levels of the genes in bacteria recovered from 24-hour biofilms (in vitro) (Figure 2c, Figure 2\u2014figure supplement 1s1a) was identified. However, when these strain variants were introduced to metamorphic stage 4 (MS4) Ciona for 24 hours, the RT-qPCR revealed significant changes in the transcript levels of pdeB (Figure 2c, Figure 2\u2014figure supplement 1s1a). The bacterial gene pdeB encodes a phosphodiesterase enzyme that degrades cyclic-di-GMP. By reducing cyclic-di-GMP, pdeB serves as a positive regulator of motility and a negative regulator of biofilm formation (Chao et al., 2013). The pdeB transcript levels were higher in the colonizing WT S. fidelis 3313 than the \u0394SfPat mutant strain (Figure 2c).\n\nSwimming and biofilm formation often facilitate bacterial colonization of a host. We investigated whether prophages could impact the ability of S. fidelis 3313 to colonize the Ciona gut. Colonization assays were performed on MS4 Ciona juveniles by exposing animals to WT or \u0394SfPat strains, repeating the experiments six times to account for diverse genetic backgrounds (Figure 3a), that is, using gametes from distinct outbred adults.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig3-v1.jpg)\n\n**Figure 3.:** (a) Results of six biological replicates (n=6, each replicate being a pool of ten juvenile tunicates) of the experimental exposure of Ciona MS4 juveniles to either WT or \u0394SfPat strains for 1 hour and 24 hours; retention quantification displayed as a Beeswarm plot of colony-forming units (CFUs). There is significant retention observed in WT after 24 hours. The MS4 juveniles reveal differential colonization of WT and \u0394SfPat after 1 hour of exposure (b\u2013e), where WT strain is stained with BacLight Red and \u0394Sfpat is stained with BacLight Green reveal (b) WT is seen localized in the lower esophagus to anterior stomach, while the \u0394SfPat deletion strain localized to the hindgut, while (c) the WT is seen localized mostly as a fecal pellet in the center of the stomach, while \u0394SfPat prefers to localize to the stomach wall. (d) The WT strain is retained in the pyloric cecum. (e) Summary schematic of asymmetric bilateral views of MS4 animals; top of image is anterior and stomach is posterior. The ventral side is the \u2018En\u2019 side, and the dorsal side is the opposite side. The findings can be summarized as such: WT is retained in E and S, in PC, and also in the HG, while the \u0394SfPat is retained in the stomach folds, MG, and portions of the HG. Some overlap in signal is noted with yellow coloring. En = endostyle, E = esophagus, S = stomach, MG = mid gut, HG = hind gut, PC = pyloric cecum.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** WT stained with BacLight Red exposed to Ciona MS4 for 1 hour. (a) WT found in esophagus (E), stomach (S), and fecal pellet (FP). (b) WT also found to occupy the hind gut (HG). (c) WT is retained in the center of the stomach but not the stomach walls.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** \u0394SfPat localization in Ciona MS4 after 1-hour exposure. (a) Stained with BacLight Red, \u0394SfPat is found adhered to the stomach (S) and mid gut (MG). (b) Stained with BacLight Green, \u0394SfPat is found in the mid gut and hind gut (HG). (c) \u0394SfPat is more localized in the stomach fold than the center of the stomach, with presence in the mid gut.\n\nAfter exposure to the bacterial strains, retention was estimated by recovering bacteria from animals and quantifying colony-forming units (cfus) at different time points. The \u0394SfPat strain revealed a statistically insignificant 1.3-to-1.5-fold change in retention compared to the WT strain after 1 hour of bacterial exposure, a time point that mimics initial colonization (Figure 3a). However, 24 hours after exposure, WT was over twofold retained in the gut than the \u0394SfPat strain (p<0.05) (Figure 3a).\n\nTo visualize the localization of WT and \u0394SfPat mutant strains in the gut, juveniles of MS4 Ciona were exposed for 1 hour to BacLight Green-stained WT and BacLight Red-stained \u0394SfPat strain variants and vice versa (Figure 3b\u2013d). The 1-hour time point reflects changes in the initial colonization of juveniles. These experiments revealed a differential localization to the stomach epithelial folds by the WT and \u0394SfPat mutant strains. The WT strain typically prefers to occupy the pyloric cecum and the posterior portion of the esophagus and entrance into the stomach (Figure 3d and e, Figure 3\u2014figure supplement 1s3a and s3b). Retention of the \u0394SfPat mutant was noted at the walls of the stomach during co-exposure (Figure 3c). Retention of the \u0394SfPat mutant was observed in the stomach and intestines, and less in the esophagus (Figure 3\u2014figure supplement 2s4a and s4b). These studies suggest spatial and temporal differences in retention by differentially lysogenized strains of S. fidelis 3313.\n\n### Host immune discrimination and impact on lysogenized bacteria\n\nHost immunity also plays an important role in shaping gut homeostasis. Distinct microbes and their antigens and/or metabolites can elicit host immune responses (Rooks and Garrett, 2016). To determine if the Ciona immune system discriminates among S. fidelis 3313 strains differing only in the presence or absence of the SfPat prophage, we examined the transcript levels of a secreted immune effector, VCBP-C, among juvenile MS4 during intestinal colonization. Under normal healthy conditions, VCBP-C is expressed and secreted by the gut epithelium and can bind (and opsonize) bacteria within the gut lumen (Dishaw et al., 2011) and influence biofilms in vitro (Dishaw et al., 2016). After 1 hour of exposure to the S. fidelis 3313 WT and mutant strains, changes were detected in the transcript levels of VCBP-C. Upregulation of VCBP-C was observed when juveniles were exposed to \u0394SfPat mutant strains of S. fidelis 3313 compared to the WT strain (Figure 4a) by qPCR (p<0.05). As VCBP-C is a major secreted effector of the gut regulating microbial settlement dynamics, the transcript levels of other innate immune genes were evaluated after 24 hours of exposure to the strains and did not reveal statistically significant responses. However, the lack of statistically significant responses may also be attributed to host genetic diversity, that is, differing responses to the same strains can obscure signal in transcript pools (Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig4-v1.jpg)\n\n**Figure 4.:** (a) VCBP-C gene expression in MS4 juveniles after 1 hour of exposure to S. fidelis 3313 strains (n=4). (b) Survey of additional innate immune gene expression in MS4 juveniles after 24-hour exposure to WT or \u0394SfPat mutant strains (n=3). Actin is the internal control. *p-value<0.05, **p-value<0.01, ns = not significant.\n\nSince the presence of SfPat influences host VCBP-C responses, we investigated whether the binding of VCBP-C to bacterial cell surfaces could influence prophage gene expression. S. fidelis 3313 was grown in MB in vitro for 24 hours in the presence or absence of 50 \u03bcg/ml of recombinant VCBP-C (Dishaw et al., 2016). The supernatant was discarded. RNA was extracted from the biofilms, and transcript levels among SfPat open reading frames were monitored, as well as the SOS response regulators, lexA and recA, in S. fidelis 3313. Adherent cultures, or biofilms, were analyzed rather than the supernatant since preliminary experiments revealed that the growth of WT S. fidelis in stationary cultures is influenced by VCBP-C. Interaction of VCBP-C with the WT strain was found to suppress the expression of the structural phage protein P5 of SfPat (Figure 5). It was noted that VCBP-C did not significantly alter the expression of lexA and recA, indicators of the SOS pathway (Figure 5). This suggests that VCBP-C binding to the surface of the S. fidelis 3313 strain may not influence prophage structural genes via conventional SOS responses.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig5-v1.jpg)\n\n**Figure 5.:** Gene expression of SfPat structural protein P5, recA and lexA of WT strain grown as a 24-hour biofilm while exposed to 50 \u03bcg/ml VCBP-C. Rho is the internal control (n=4). *p-value<0.05, ns = not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/103107/elife-103107-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Rho is the most stable gene across strains when tested in vitro (n=3).\n\n## Discussion\n\nIn this report, we utilized a phage-deletion strategy to study the influence of a prophage (SfPat) on a gut symbiont (S. fidelis 3313) of the model invertebrate, C. robusta. Using RAST annotations and deduced amino acid BLAST (BLASTx), we propose that SfPat is a distant relative of the PM2 prophage (Supplementary file 1, Kivela\u0308 et al., 2002). Deletion of the PM2-like SfPat prophage from S. fidelis 3313 revealed phage-mediated influence on colonization dynamics. We find that deletion of the PM2-like prophage decreases swimming behaviors while increasing biofilm formation. These bacterial phenotypes influence host immune responses in ways that may influence differential retention in the gut of Ciona. Our identification of a prophage that interferes with biofilm formation in a Shewanella strain contrasts with reports demonstrating an increase in biofilms resulting from the incorporation of exogenous DNA following cell lysis (G\u00f6deke et al., 2011; Liu, 2019). Our findings implicate prophage-induced motility changes in Shewanella spp. and add to the growing awareness that prophages can impact their hosts by modulating traits via diverse mechanisms. An influence on motility has also been linked to a prophage in P. aeruginosa (Tsao et al., 2018).\n\nSfPat in S. fidelis 3313 appears to have a variable influence on bacterial retention in the gut of Ciona. As feeding is initiated in MS4 Ciona juveniles, food (or bacteria in the environment, natural or artificially introduced) accumulates in the gastrointestinal tract and on average takes about 45 minutes to begin exiting the anus and atrial siphon as fecal pellets. Thus, we monitored and compared transit and retention of introduced bacteria in the gut of MS4 juveniles at 1 and 24 hours after introduction. SfPat deletion reveals a prophage-mediated influence on gut retention and localization. For example, within 1 hour of exposure, fecal pellets begin to form in the stomach that are enriched for the WT S. fidelis 3313; however, the WT strain then appears to be retained in the posterior portion of the esophagus (just before the entrance into the stomach) as well as in the pyloric cecum (which is a small outpouching just ventral and posterior to the stomach). Instead, the \u0394SfPat mutant strain appears to be retained in the stomach folds and the intestines, and not the esophagus. It should be noted that the base of the stomach folds is where secretion of VCBP-C occurs (Dishaw et al., 2016; Dishaw et al., 2011; Liberti et al., 2015). The overall retention of the two strains did not vary significantly within the first hour of colonization. However, after 24 hours, the retention of the WT strain was significantly greater than that of \u0394SfPat despite the continued feeding behavior of the MS4 juveniles. The reduced transcript levels of pdeB in the SfPat deletion strain recovered from colonized animals might suggest that the secondary messenger, cyclic-di-GMP, is being differentially regulated in the two strains in longer-term retention and colonization assays. SfPat also appears to influence niche preference and retention patterns (Figure 3).\n\nIn addition to host genetics obscuring the influence of prophages on colonization of the gut, other biophysical factors that include host immune effectors play crucial and often silent roles in influencing bacterial settlement dynamics. For example, human secretory immunoglobulin A (SIgA) has been shown to enhance and often favor settlement of bacteria both in vitro and in vivo (Bollinger et al., 2006; Thomas and Parker, 2010; Pratt and Kolter, 1998; Donaldson et al., 2018), raising a basic question as to whether this phenomenon is more widespread among other secretory immune effectors present in mucosal environments of animals (Dishaw et al., 2014a). We speculate that while prophages likely impact the behavior of lysogenized bacteria in ways that can influence colonization dynamics, interaction with VCBP-C on the mucosal surface of the Ciona gut likely further influences settlement behaviors (Dishaw et al., 2016). Importantly, we show here that the influence of the SfPat prophage on bacterial physiology (i.e., the WT strains) leads to a reduced expression of Ciona VCBP-C in the first hours of bacterial retention in the gut (an indicator that the host has detected the exposure). It remains to be shown if prophages stimulate the production of a bacterial metabolite with immunomodulatory properties or if the host immune system responds to differences in bacterial behaviors or traits, as suggested in the \u0394SfPat deletion mutant.\n\nMetagenomic sequencing of gut microbes from healthy humans has revealed that temperate lifestyles are prevalent among phages from these ecosystems (Minot et al., 2013; Minot et al., 2011; Reyes et al., 2010), an observation also made in the Ciona gut (Leigh et al., 2018). Various environmental triggers, such as UV light and mutagenic agents like mitomycin C, have been shown to induce a switch from the temperate to lytic cycle via the SOS response, a cell-wide response to DNA damage that can promote survival (Weinbauer and Suttle, 1999). Since VCBP-C is an immune molecule in the gut that can interact with bacteria, it could influence prophage induction. However, we find that VCBP-C binding on the surface of WT S. fidelis 3313 leads to a reduction in the expression of an important SfPat structural protein P5, suggesting a limitation in SfPat induction in the presence of VCBP-C. No significant changes in lexA/recA expression were observed upon VCBP-C exposure/binding, suggesting a lack of SOS response when exposed to this immune effector. The various mechanisms by which prophages shape colonization behaviors among gut bacteria of animals remain unclear. While the data reported here are only based on one bacterial strain that colonizes the Ciona gut, we find that WT S. fidelis colonizes the gut with reduced activation of VCBP-C gene expression compared to \u0394SfPat, a trait that may be important in shaping colonization outcomes. We speculate that these observations are more widely applicable since lysogens are so abundant in animal microbiomes. Under normal conditions, VCBP-C protein is present in copious amounts and tethered to chitin-rich mucus lining the gut, as revealed by immunohistochemical staining (Dishaw et al., 2016). Therefore, overexpression of VCBP-C is not necessarily helpful and can correspond to the induction of additional inflammatory responses, including an overproduction of mucus. Thus, regulation of the production of additional VCBP-C likely serves important roles in influencing colonization dynamics.\n\nSince colonization of animal mucosal surfaces is an ancient process (Dishaw et al., 2014a; Dishaw et al., 2014b), prophages and their integration into bacterial genomes have likely evolved to provide fitness benefits in often challenging environments like the gut lumen. Determining the role of animal immunity and prophages in these exchanges is of broad interest. Immune effectors like VCBPs, which undoubtedly possess broad specificities, can bind a range of bacterial hosts; however, it remains to be shown if they bind lysogenized bacteria with different affinities than their prophage-free counterparts. Prophages can also be induced to generate lytic particles that can influence gut microbiome structure, serving as an indirect form of protection for the host (Wang et al., 2010; Barr et al., 2013). Prophages can also contribute to the transfer of virulence factors (Nanda et al., 2015; Wagner and Waldor, 2002). Retention of lysogens may be preferred if the prophages provide competitive fitness and retention in the gut. Since lysogens are integral in animal development, immunity, and metabolism (Fraune and Bosch, 2010), there is a tripartite interplay required for survival, a snapshot of which is shown here.\n\n## Materials and methods\n\n### Culture and growth conditions\n\nS. fidelis 3313 used in this study was originally isolated from the gut of C. robusta obtained from Mission Bay, CA, USA, as previously described (Leigh et al., 2017). The bacterium was cultured using Difco marine agar 2216 (MA) (Fisher Scientific, Hampton, NH) and marine broth (MB) at room temperature (RT) (22\u201324\u00b0C). Subsequent genetic manipulations were performed on strains grown in LB/MB, which consists of a mixture of 75% LB (Lysogeny Broth [Luria], Fisher Scientific, Hampton, NH) and 25% MB. Strains are listed in Table 1.\n\n### Prophage deletion\n\nSfPat was targeted for deletion from S. fidelis 3313 using homologous recombination methods adapted from Saltikov and Newman, 2003 to produce knockout mutant strains. First, a pSMV3 suicide vector (Saltikov and Newman, 2003) was designed with \u2248700 bp regions corresponding to the upstream and downstream sequence of the prophage (Table 2). These flanking regions were amplified and ligated using overlap extension PCR, then directionally inserted into the vector with the restriction enzymes BamHI and SacI (Table 3; Bryksin and Matsumura, 2010). Plasmid conjugation was then performed by inoculating a colony of S. fidelis 3313 into a culture of E. coli containing the desired suicide vector on an LB/MB agar plate for 2 hours followed by primary selection after 24 hours at RT on LB/MB +100 \u03bcg/ml kanamycin plates and a counter selection on LM/MB +10% Sucrose at RT. Merodiploids and deletion mutants were verified by PCR. Illumina sequencing (MiGS, University of Pittsburgh) confirmed the deletion of SfPat and the evaluation of any additional genetic changes or mutations (Figure 1b).\n\n**Table 3.**\n Plasmids and strains used in the study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Plasmids/ strains</th>\n      <th>Genotype</th>\n      <th>Source/reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E. coli UQ950</td>\n      <td>E. coli DH5\u03b1\u03bb(pir) host for cloning; F\u0394(argFac)169\u03a680dlacZ58(\u0394M15) glnV44(AS)rfbD1 gyrA96(NalR) recA1endA1spoT1 thi1 hsdR17 deoR \u039b pir+</td>\n      <td>Saltikov and Newman, 2003</td>\n    </tr>\n    <tr>\n      <td>pSMV3\u2212\u0394 SfPat</td>\n      <td>pSMV3 with 778 bp upstream and 779 bp downstream of flanking regions of SfPat</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### S. fidelis crystal violet biofilm assay\n\nWT and \u0394SfPat strains were cultured in MB overnight at RT and then diluted to 107 cfu/ml in MB. Cultures were brought to a final volume of 2 ml of MB in 12-well dishes and incubated at RT for 24 hours to examine biofilm development. Each variable was tested in technical duplicate. The biofilms were quantified by crystal violet staining as previously described (Liberti et al., 2022). Briefly, the supernatants were aspirated after 24 hours of incubation, and the biofilms were dried and stained with 0.1% crystal violet for 10 minutes. The stained biofilms were then gently washed with deionized water, and the amount of biofilm produced was quantified as the intensity of the stain $(OD_{570})$ after the biofilm-bound crystal violet was extracted from the biofilm with 30% acetic acid. All biofilm assays were performed at least in triplicates.\n\n### Motility assay\n\nSoft-agar overlay motility assays were carried out in 12-well dishes to compare swimming behaviors (Wolfe and Berg, 1989; Kearns, 2010). Briefly, a single colony from an overnight streaked LB/MB plate was picked using a sterile toothpick and then stabbed onto the center of soft agar (containing LB/MB and 0.5% low-melt agarose) and incubated at RT overnight. The results were recorded as the distance traveled (in millimeters) by the bacteria from the inoculation zone. Each variable was tested in duplicate. Two perpendicular distances from the inoculation zone were recorded for each technical replicate and averaged for each well.\n\n### Ciona mariculture\n\nThe in vivo colonization experiments were performed on animals reared under conditions termed \u2018semi-germ-free\u2019 (SGF), which include minimal exposure to marine microbes. SGF conditions include animals harvested under conventional approaches (Cirino et al., 2002) but permanently maintained in 0.22 \u03bcm-filtered, conditioned artificial seawater (cASW), handled with gloves, and lids only carefully removed for water/media changes. cASW is prepared by conditioning ASW made with Instant Ocean in an in-house sump-aquarium system containing live rock, growth lights, and sediment from San Diego, California; salinity is maintained at 32\u201334 parts per thousand (or grams per liter). Compared to germ-free (Leigh et al., 2016) or SGF, conventionally-reared (CR) includes a step-up exposure to 0.7 \u03bcm-filtered cASW that increases exposure to marine bacteria during development. The SGF approach is considered an intermediate method of rearing that includes minimal exposures to microbial signals during development (unpublished observations). The animals were reared at 20\u00b0C from larval to juvenile stages. The Ciona were collected from Mission Bay, CA, in order to produce juvenile organisms for each biological replicate. These wild-harvested animals provide a wider genetic diversity compared to traditional model systems, where genetic diversity has been reduced or eliminated through controlled breeding practices.\n\n### Gut colonization assays\n\nBoth bacterial strains were grown overnight at RT in MB and diluted to 107 cfu/ml in cASW after repeated washes. Metamorphic stage 4 (MS4) animals reared in six-well dishes in cASW were exposed to 5 ml of 107 cfu/ml bacteria in each well for 1 hour or 24 hours. Co-exposure studies were also performed, where 2.5 ml (or 1:1) of each culture prepared above was mixed to form a total volume of 5 ml. MS4 animals are considered part of the first ascidian stages (post-settlement stages 1\u20136, whereas stages 7\u20138 and onward are second ascidian stages and reflect young adult animals). MS4 juveniles can be identified as having a pair of protostigmata, or gill slits, on each side of the animal (Chiba et al., 2004). These juveniles first initiate feeding via newly developed and opened siphons; before this, the gut remains closed, and the interior lumen is unexposed to the outside world. Following this initial exposure or colonization, for various time intervals, the plates were rinsed multiple times with cASW and replaced with fresh cASW. Ten juveniles were chosen randomly for each treatment, pooled, and homogenized with a plastic pestle; live bacteria were counted by performing serial dilutions and enumerating cfus via spot-plating assays (Gaudy et al., 1963; Miles et al., 1938). Each graphed data point represents a biological replicate dataset from genetically distinct/diverse backgrounds of Ciona (represented by separate live animal collection and spawning events). Statistical significance was calculated using the Wilcoxon t-test by pooling data across six genetically diverse biological replicates.\n\nLive bacteria in the gut were visualized using BacLight stains and previously described fluorescently labeled bacteria (Moran et al., 2019). For BacLight staining, 1 ml of bacterial cultures was grown overnight at RT, pelleted, washed twice with cASW, and stained with 4 \u03bcl of BacLight Red (Invitrogen, Cat# B35001) or BacLight Green (Invitrogen, Cat# B35000) for 15 minutes in the dark. The cultures were stained with alternate dyes in different replicates to get unbiased data from changes in fluorescence. The stained cultures were washed twice with cASW, and then diluted to 107 cfu/ml with cASW. MS4 animals grown in six-well dishes were then exposed to 5 ml of this culture. Bacteria in the gut of animals were visualized after 1 hour on a Leica DMI 6000B stereoscope with a CY5 fluorescent filter for BacLight Red and GFP filter for BacLight Green; and imaged and captured with a Hamamatsu ORCAII camera (model C10600-10B-H) and processed with the MetaMorph 7.10.4 imaging suite (Molecular Devices, Downingtown, PA).\n\n### Differential transcript-level studies\n\nTo determine if the Ciona innate immune system can recognize and respond to unique mutant strains, which differ only in the presence or absence of prophages, candidate immune response markers were examined using reverse transcription quantitative PCR (RT-qPCR). RNA was extracted using the RNA XS kit (Macherey-Nagel, Cat# 740902) from MS4 Ciona juveniles exposed to either the WT or \u0394SfPat strain. Complementary DNA (cDNA) synthesis was performed with oligo-dT primers and random hexamers using the First Strand cDNA Synthesis Kit (Promega, Cat# A5000) following the manufacturer\u2019s instructions. The amplification was performed with the qPCR kit (Promega, Cat# A6000) and carried out on an ABI7500 with an initial melting temperature of 95\u00b0C for 2 minutes and 40 cycles of 95\u00b0C for 15 seconds and 60\u00b0C for 1 minute. The innate immune genes examined and their primers are reported in Table 4. Results from four distinct biological replicates are presented. Each replicate includes pooled Ciona juveniles from at least two wells of a six-well dish. Ciona actin was referenced as an endogenous control. Data was analyzed using the \u0394\u0394Ct method (Pfaffl, 2001) and the ABI7500 software suite. For the \u0394\u0394Ct method, the Ct values were first normalized to an endogenous control gene and further normalized to the reference samples, here the WT strain.\n\n**Table 4.**\n Ciona genes targeted and the necessary reverse transcription-qPCR primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Function</th>\n      <th>GenBank accession no.</th>\n      <th>Primer (5\u2019\u20133\u2019)</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>VCBP-C-Fwd</td>\n      <td>Secreted immune effector in the gut</td>\n      <td>HQ324151</td>\n      <td>AGACCAACGCCAACACAGTA</td>\n      <td>Liberti et al., 2018</td>\n    </tr>\n    <tr>\n      <td>VCBP-C-Rev</td>\n      <td></td>\n      <td></td>\n      <td>CCCCATACATTGCAGCATTTC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Actin\u2013Fwd</td>\n      <td>Cytoskeletal actin</td>\n      <td>AJ297725</td>\n      <td>CCCAAATCATGTTCGAAACC</td>\n      <td>Liberti et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Actin-Rev</td>\n      <td>Reference gene</td>\n      <td></td>\n      <td>ACACCATCACCACTGTCGAA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>IL17-1-Fwd</td>\n      <td>Interleukin 17</td>\n      <td>NM_001129875.1</td>\n      <td>AGGTTAAGAATCCCTATGGTGC</td>\n      <td>Liberti et al., 2023</td>\n    </tr>\n    <tr>\n      <td>IL17-1-Rev</td>\n      <td>Effector cytokine</td>\n      <td></td>\n      <td>CAAAGGCACAGACGCAAAGG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>IL17-1R-Fwd</td>\n      <td>Interleukin 17 receptor</td>\n      <td>NM_001245045</td>\n      <td>TGTTGGCATGAGTGTTCGGT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>IL17-1R-Rev</td>\n      <td></td>\n      <td></td>\n      <td>AGTTGGTTCTGCCCCAAAGT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NF\u03ba-B-Fwd</td>\n      <td>Immune regulatory</td>\n      <td>NM_001078304</td>\n      <td>TGTCGCTTGTCGTCATGGAA</td>\n      <td>Liberti et al., 2023</td>\n    </tr>\n    <tr>\n      <td>NF\u03ba-B-Rev</td>\n      <td>Transcription factor</td>\n      <td></td>\n      <td>AACACCCAAGACCGTCGAAA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TNF\u03b1-Fwd</td>\n      <td>Tumor necrosis factor</td>\n      <td>NM_001128107</td>\n      <td>TTCAGAAAGATTGGACGACGA</td>\n      <td>Liberti et al., 2023</td>\n    </tr>\n    <tr>\n      <td>TNF\u03b1-Rev</td>\n      <td>Inflammatory effector</td>\n      <td></td>\n      <td>TCGTTTAGAAATGCTGCTGTGG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C3A-R-Fwd</td>\n      <td>Complement C3</td>\n      <td>NM_001078552</td>\n      <td>TTGTAAGCTGGCACAAGGTGT</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>C3A-R-Rev</td>\n      <td>Inflammatory mediator</td>\n      <td></td>\n      <td>GACCGTAGTCTGGTAGAGGTC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MBL-Fwd</td>\n      <td>Mannose binding lectin</td>\n      <td>NM_001167707.2</td>\n      <td>TTATTGATGGGAAAGTTTGGT</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>MBL-Rev</td>\n      <td></td>\n      <td></td>\n      <td>TAACATCTCTGTTCTTGGGTC</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nTo understand bacterial genes that are differentially regulated due to the presence or absence of prophages, transcript levels were studied in vitro and in vivo. The bacterial strains were grown in six-well dishes using the same methodology described for biofilm assays. To understand if the host immune molecule VCBP-C induced prophages, WT was cultured in six-well dishes as described in the biofilm section in the presence or absence of 50 \u03bcg/ml VCBP-C in Marine Broth (Dishaw et al., 2016). After 24 hours, the supernatant was discarded for both experiments, and RNA from the biofilm was extracted using the Zymo Research Direct-zol RNA mini prep kit (Cat# R2050). cDNA synthesis was performed using random hexamers as primers, and qPCR was conducted as described above. The targeted bacterial genes are described in Table 5. Different housekeeping genes were examined for the different treatments, and the Ct values were used to identify the most stable reference gene to be used as an endogenous control. Rho was identified as the most stable reference gene using RefFinder, which utilizes Bestkeeper, GeNorm, Normfinder, and comparative \u0394\u0394Ct methods (Figure 5\u2014figure supplement 1; Andersen et al., 2004; Pfaffl, 2001; Vandesompele et al., 2002; Watnick and Kolter, 2000).\n\n**Table 5.**\n S. fidelis 3313 genes targeted and the necessary reverse transcription-qPCR primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Function</th>\n      <th>Genbank accession no.</th>\n      <th>Primer (5\u2019\u20133\u2019)</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pleD-Fwd</td>\n      <td>Regulates production of cyclic di-GMP</td>\n      <td>NZ_KI912459.1</td>\n      <td>CTCTTCACCGCCACTTCTT</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>pleD-Rev</td>\n      <td></td>\n      <td></td>\n      <td>GGTGTGGTCTCTTATGCCTATC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chitinase-Fwd</td>\n      <td>Chitin utilization gene</td>\n      <td>NF027718.3</td>\n      <td>CAGTGTAGCTAAGTCGTCATC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Chitinase-Rev</td>\n      <td></td>\n      <td></td>\n      <td>CGCCAACCAGTGCTTTATTG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pilZ-Fwd</td>\n      <td>Type IV Pilus control protein</td>\n      <td>NZ_JADX01000014.1</td>\n      <td>TGGCAAGGTCGTTTGGATTA</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>pilZ-Rev</td>\n      <td></td>\n      <td></td>\n      <td>AGGCAAGCTCACTGGAAAG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pdeB-Fwd</td>\n      <td>Phosphodiesterase</td>\n      <td>NF012772.3</td>\n      <td>GCATCAGGGCTCTTACCAATAG</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>pdeB-Rev</td>\n      <td></td>\n      <td></td>\n      <td>GAGGCGGTGATCCTTACAGATA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RecA-Fwd</td>\n      <td>Bacterial recombinase/bacterial reference gene</td>\n      <td>NZ_KI912459.1</td>\n      <td>CGTAGTGGTGCGGTAGATGT</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>RecA-Rev</td>\n      <td></td>\n      <td></td>\n      <td>CGCATTGCTTGGCTCATCAT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LexA-fwd</td>\n      <td>Regulator of recombinase</td>\n      <td>NZ_JADX01000011.1</td>\n      <td>TGACCCAGCTATGTTCCGCC</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>LexA-Rev</td>\n      <td></td>\n      <td></td>\n      <td>GCTCAACCTTGTGTACGGCG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rho-Fwd</td>\n      <td>Bacterial reference gene</td>\n      <td>NZ_JADX01000026.1</td>\n      <td>CACGTACAAGTTGCCGAAATG</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Rho-Rev</td>\n      <td></td>\n      <td></td>\n      <td>CAAGACGGGTGATAGAGTCAAG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>gyrB-Fwd</td>\n      <td>Bacterial reference gene</td>\n      <td>AM229309.2</td>\n      <td>TCACGAGCATCATCACCCGT</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>gyrB-Rev</td>\n      <td></td>\n      <td></td>\n      <td>GGCTTCCGTGGTGCGTTAAC</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Statistical analysis and data visualization\n\nStatistical analysis and data visualization were carried out in R, version 4.2 (R Development Core Team, 2021). Data were plotted with ggplot 3.3.5 Kassambara, 2020; the Beeswarm plot was constructed using ggbeeswarm 0.6 (Aron and Trimble, 2021). Beeswarm plots and statistics for motility assays were calculated using replicate averages (Lord et al., 2020). Statistical significance was calculated using ggsignif package 0.6.3 or ggpubr0.4.0 (Kassambara, 2020; Constantin I Ahlmann-Eltze and Patil, 2021). If the data were found to be normally distributed by Shapiro\u2019s test, then significance was calculated using an unpaired t-test. The Wilcoxon signed-rank test was used to calculate the significance of non-parametric data.\n",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103107.3.sa0](https://doi.org/10.7554/eLife.103107.3.sa0)\n\nThis valuable study presents findings linking prophage carriage to lifestyle regulation in the marine bacterium Shewanella fidelis, with potential implications for niche occupation within a host (Ciona robusta) and mediation of host immune responses. The study leverages a unique animal model system that offers distinct advantages in identifying select phenotypes to present overall solid evidence that supports findings relating to the impact of a prophage on host-microbe interaction. Understanding the role of integrated lysogenic phages in bacterial fitness, both within a host and in the environment, is a significant concept in bacterial eco-physiology, potentially contributing to the success of certain strains.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103107.3.sa1](https://doi.org/10.7554/eLife.103107.3.sa1)\n\nSummary:\n\nThe manuscript aims to elucidate the impact of a prophage within the genome of Shewanella fidelis on its interaction with the marine tunicate Ciona robusta. The authors made a deletion mutant of S. fidelis that lacks one of its two prophages. This mutant exhibited an enhanced biofilm phenotype, as assessed through crystal violet staining, and showed reduced motility. The authors examined the effect of prophage deletion on several genes that could modulate cyclic-diGMP levels. While no significant changes were observed under in vitro conditions, the gene for one protein potentially involved in cyclic-diGMP hydrolysis was overexpressed during microbe-host interactions. The mutant was retained more effectively within a one-hour timeframe, whereas the wild-type (WT) strain became more abundant after 24 hours. Fluorescence microscopy was used to visualize the localization patterns of the two strains, which appeared to differ. Additionally, a significant difference in the expression of one immune protein was noted after one hour, but this difference was not evident after 23 hours. An effect of VCBC-C addition on the expression of one prophage gene was also observed.\n\nStrengths:\n\nI appreciate how the authors integrate diverse expertise and methods to address questions regarding the impact of prophages on gut microbiome-host interactions. The chosen model system is appropriate, as it allows for high-throughput experimentation and the application of simple imaging techniques.\n\nWeaknesses:\n\nMy primary concern is that the manuscript primarily describes observations without providing insight into the molecular mechanisms underlying the observed differences. It is particularly unclear how the presence of the prophage leads to the phenotypic changes related to bacterial physiology and host-microbe interactions. Which specific prophage genes are critical, or is the insertion at a specific site in the bacterial genome the key factor? While significant effects on bacterial physiology are reported under in vitro conditions, there is no clear attribution to particular enzymes or proteins. In contrast, when the system is expanded to include the tunicate, differences in the expression of a cyclic-diGMP hydrolase become apparent. Why do we not observe such differences under in vitro conditions, despite noting variations in biofilm formation and motility? Furthermore, given that the bacterial strain possesses two prophages, I am curious as to why the authors chose to target only one and not both.\n\nRegarding the microbe-host interaction, it is not clear why the increased retention ability of the prophage deletion strain did not lead to greater cell retention after 24 hours, especially since no differences in the immune response were observed at that time point.\n\nConcerning the methodological approach, I am puzzled as to why the authors opted for qPCR instead of transcriptomics or proteomics. The latter approaches could have provided a broader understanding of the prophage's impact on both the microbe and the host.\n\nComments on revisions:\n\nWhile the authors were able to solve some of my issues, I see that other questions were not tackled.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103107.3.sa2](https://doi.org/10.7554/eLife.103107.3.sa2)\n\nSummary:\n\nIn the manuscript, \"Prophage regulation of Shewanella fidelis 3313 motility and biofilm formation: implications for gut colonization dynamics in Ciona robusta\", the authors are experimentally investigating the idea that integrated viruses (prophages) within a bacterial colonizer of the host Ciona robusta affect both the colonizer and the host. They found a prophage within the Ciona robusta colonizing bacterium Shewanella fidelis 3313, which affected both the bacteria and host. This prophage does so by regulating the phosphodiesterase gene pdeB in the bacterium when the bacterium has colonized the host. The prophage also regulates the activity of the host immune gene VCBP-C during early bacterial colonization. Prophage effects on both these genes affect the precise localization of the colonizing bacterium, motility of the bacterium, and bacterial biofilm formation on the host. Interestingly, VCBP-C expression also suppressed a prophage structural protein, creating a tripartite feedback loop in this symbiosis. This is exciting research that adds to the emerging body of evidence that prophages can have beneficial effects not only on their host bacteria but also on how that bacteria interacts in its environment. This study establishes the evolutionary conservation of this concept with intriguing implications of prophage effects on tripartite interactions.\n\nStrengths:\n\nThis research effectively shows that a prophage within a bacterium colonizing a model ascidian affects both the bacterium and the host in vivo. These data establish the prophage effects on bacterial activity and expand these effects to the natural interactions within the host animal. The effects of the prophage through deletion on a suite of host genes are a strength, as shown by striking microscopy.\n\nWeaknesses:\n\nUnfortunately, global transcriptomics of the bacteria and the host during colonization by the prophage-containing and prophage-deleted bacteria (1 hour and 24 hours) would be suggested to better understand the tripartite interactions.\n\nImpact:\n\nThe authors are correct to speculate that this research can have a significant impact on many animal microbiome studies, since bacterial lysogens are prevalent in most microbiomes. Screening for prophages, determining whether they are active, and \"curing\" the host bacteria of active prophages are effective tools for understanding the effects these mobile elements have on microbiomes. There are many potential effects of these elements in vivo, both positive and negative, this research is a good example of why this research should be explored.\n\nContext:\n\nThe research area of prophage effects on host bacteria in vitro has been studied for decades, while these interactions in combination with animal hosts in vivo have been recent. The significance of this research shows that there could be divergent effects based on whether the study is conducted in vitro or in vivo. The in vivo results were striking. This is particularly so with the microscopy images. The benefit of using Ciona is that it has a translucent body which allows for following microbial localization. This is in contrast to mammalian studies where following microbial localization would either be difficult or near impossible.\n\nComments on revisions:\n\nI am satisfied with the great amount of work that went into the comments provided by the reviewers. The figure presentations are more compelling for the story, and this latest revision is a very interesting read that should be considered for future microbiome studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103107.3.sa3](https://doi.org/10.7554/eLife.103107.3.sa3)\n\nIn this manuscript, Natarajan and colleagues report on the role of a prophage, termed SfPat, in the regulation of motility and biofilm formation by the marine bacterium Shewanella fidelis. The authors investigate the in vivo relevance of prophage carriage by studying the gut occupation patterns of Shewanella fidelis wild-type and an isogenic SfPat- mutant derivative in a model organism, juveniles of the marine tunicate Ciona robusta. The role of bacterial prophages in regulating bacterial lifestyle adaptation and niche occupation is a relatively underexplored field, and efforts in this direction are appreciated.\n\nComments on revisions:\n\nThe authors have addressed my main concerns. While some responses remain somewhat ambiguous or defer key clarifications to future studies, I appreciate that not everything can be resolved within a single manuscript.\n",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0cfd76cd-241f-49c5-b310-9b63f5048592",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C1",
+      "claim": "Shewanella fidelis 3313 is a persistent member of the gut microbiome of the model marine tunicate, Ciona robusta.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we investigate the influence of the prophage SfPat on Shewanella fidelis 3313, a persistent member of the gut microbiome of the model marine tunicate, Ciona robusta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characterization of the bacterial strain being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1b49d693-7f1f-41d0-8477-38c845822fc7",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C2",
+      "claim": "Deletion of SfPat reduces S. fidelis 3313 motility and swimming in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, deletion of SfPat reduces S. fidelis 3313 motility and swimming while increasing biofilm formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from motility assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "bb068702-1224-4ccd-9e0e-06cb168dcac6",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C3",
+      "claim": "Deletion of SfPat increases biofilm formation in S. fidelis 3313 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, deletion of SfPat reduces S. fidelis 3313 motility and swimming while increasing biofilm formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from crystal violet biofilm assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "39ff20d5-96cc-4c18-8a8c-243c34d3a380",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C4",
+      "claim": "During colonization, \u0394SfPat localizes to overlapping and distinct areas of the gut compared to the WT strain.",
+      "claim_type": "EXPLICIT",
+      "source": "During colonization, \u0394SfPat localizes to overlapping and distinct areas of the gut compared to the WT strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence microscopy data showing differential localization patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "89db888a-aafe-46b2-8cc4-904cb424b798",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C5",
+      "claim": "The pdeB gene is upregulated in the WT strain but not in \u0394SfPat when examined in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The pdeB gene, which encodes a bacterial phosphodiesterase known to influence biofilm formation and motility by degrading cyclic-di-GMP, is upregulated in the WT strain but not in \u0394SfPat when examined in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data comparing gene expression between strains in vivo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "c08c4bdb-6044-4768-8a26-9ebd2ac040a8",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C6",
+      "claim": "pdeB encodes a bacterial phosphodiesterase known to influence biofilm formation and motility by degrading cyclic-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The pdeB gene, which encodes a bacterial phosphodiesterase known to influence biofilm formation and motility by degrading cyclic-di-GMP, is upregulated in the WT strain but not in \u0394SfPat when examined in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the function of pdeB.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "67d00941-fced-444e-b055-84f78cf64365",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C7",
+      "claim": "Expression of the Ciona gut immune effector, VCBP-C, is enhanced during colonization by \u0394SfPat compared to the WT strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the Ciona gut immune effector, VCBP-C, is enhanced during colonization by \u0394SfPat compared to the WT strain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data measuring VCBP-C transcript levels in colonized animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "82a3983e-9244-4b6d-bb0b-abad075d6e79",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C8",
+      "claim": "VCBP-C binding to the WT strain does not promote the excision of SfPat in an SOS-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "however, VCBP-C binding to the WT strain does not promote the excision of SfPat in an SOS-dependent pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression data showing no significant changes in lexA/recA expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "f4a57040-3715-4337-a559-aa769a61be91",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C9",
+      "claim": "VCBP-C binding significantly reduces the expression of a phage major capsid protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, VCBP-C binding significantly reduces the expression of a phage major capsid protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data showing reduced expression of SfPat P5 structural protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "637159bc-a965-49c0-8d4a-791f239d2312",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C10",
+      "claim": "SfPat influences host perception of this important colonizing commensal.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that SfPat influences host perception of this important colonizing commensal and highlights the significance of investigating tripartite dynamics between prophages, bacteria, and their animal hosts to better understand the gut microbiota-host immune axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential VCBP-C expression and colonization patterns observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "71001e32-37cc-494f-a87c-e764dacf8d46",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C11",
+      "claim": "Over 10^12 viruses have been estimated in the human gut.",
+      "claim_type": "EXPLICIT",
+      "source": "for example, over 1012 viruses have been estimated in the human gut (Shkoporov and Hill, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4ce48ede-0fe0-4dad-99a3-1872d18a1d34",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C12",
+      "claim": "Temperate phages integrate into bacterial genomes as prophages and remain 'dormant' until an external trigger activates them to enter the lytic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventionally, temperate phages integrate into bacterial genomes as prophages and remain 'dormant' until an external trigger activates them to enter the lytic cycle (Lwoff, 1953; Boling et al., 2020; Howard-Varona et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from multiple sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "b3beb899-a02e-4565-89f9-55686abef7f1",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C13",
+      "claim": "Prophages often encode accessory genes that can influence bacterial traits and behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Prophages often encode accessory genes that can influence bacterial traits and behaviors (Mills et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "75cfab73-e10f-4cbf-8f0d-c328abb3906b",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C14",
+      "claim": "Prophage genes can encode virulence factors, antibiotic resistance determinants, and those that provide superinfection exclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes can encode virulence factors, antibiotic resistance determinants, and those that provide superinfection exclusion, thereby protecting their bacterial hosts from infections by related phages (Bondy-Denomy and Davidson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "c34a2197-4f1f-4992-83c6-5a8b83a3b8f8",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C15",
+      "claim": "Based on the site of integration, prophages can impact the expression of bacterial genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the site of integration, prophages can also impact the expression of bacterial genes (Aziz et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "fb2d616a-220d-420d-958c-2270810439e3",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C16",
+      "claim": "Bacterial lysogens exist in every environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial lysogens exist in every environment (Jiang and Paul, 1998; Silveira et al., 2021; Leigh et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "f26b5cdb-29ea-42f9-b20d-01feaeb32bf7",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C17",
+      "claim": "Bacterial lysogens are particularly prevalent in the microbiomes of diverse animals.",
+      "claim_type": "EXPLICIT",
+      "source": "and are particularly prevalent in the microbiomes of diverse animals (Kim and Bae, 2018; Shkoporov and Hill, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4a7e374f-96dd-4972-9004-00c3ee6ca46f",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C18",
+      "claim": "Prophage induction results in bacterial lysis and can be mediated by various stressors, including antibiotics and inflammatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Prophage induction results in bacterial lysis and can be mediated by various stressors, including antibiotics and inflammatory processes (Allen et al., 2011; Banks et al., 2003; Diard et al., 2017; Fang et al., 2017; Garcia-Russell et al., 2009; Maiques et al., 2006; Nanda et al., 2015; Wang et al., 2010; Zhang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "6ca2f932-4468-4629-9788-81b90ab5fa63",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C19",
+      "claim": "Prophages can influence the phenotypes of their bacterial hosts, such as biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because prophages can influence the phenotypes of their bacterial hosts, such as biofilm formation (Nanda et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1afc9e88-5574-4bfb-8e84-3abbb54d404b",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C20",
+      "claim": "In the gut, biofilms that associate with host mucus may benefit the host by enhancing epithelial barriers against pathogenic invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the gut, biofilms that associate with host mucus may benefit the host by enhancing epithelial barriers against pathogenic invasion (Swidsinski et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature and represents a speculative benefit.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "3f903c6b-9ad1-4a43-9a88-18fd8b7f228f",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C21",
+      "claim": "In Escherichia coli K-12, integrating the Rac prophage into a tRNA thioltransferase region disrupts biofilm functions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in Escherichia coli K-12, integrating the Rac prophage into a tRNA thioltransferase region disrupts biofilm functions (Liu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "ff5fce5f-c380-4d00-a7b6-776918493403",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C22",
+      "claim": "Deleting the Rac prophage from E. coli K-12 decreases resistance to antibiotics, acids, and oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "deleting this prophage decreases resistance to antibiotics, acids, and oxidative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature (Liu et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "645ec666-795e-490c-af12-8b9aebe4f33f",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C23",
+      "claim": "Prophages have been shown to influence biofilm life cycles in Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Prophages have also been shown to influence biofilm life cycles in Pseudomonas aeruginosa (Rice et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "91cb7aeb-6629-4da7-8294-8a293ed1f826",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C24",
+      "claim": "Lysogenized Shewanella species colonize the gut of Ciona robusta.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysogenized Shewanella species colonize the gut of Ciona robusta, an ascidian collected in Southern California waters (Leigh et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "c1246727-e2be-4512-8b5a-866a2eaece31",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C25",
+      "claim": "Tunicates like Ciona are well-established invertebrate model systems for studies of animal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tunicates like Ciona are a subphylum (Tunicata) of chordates that are well-established invertebrate model systems for studies of animal development (Chiba et al., 2004; Davidson, 2007; Liu et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4ed20b04-087a-4ad7-b64f-389b04046734",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C26",
+      "claim": "Tunicates like Ciona are increasingly leveraged for gut immune and microbiome studies.",
+      "claim_type": "EXPLICIT",
+      "source": "and are now increasingly leveraged for gut immune and microbiome studies (Liberti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "f8470820-5121-473c-9e90-b8af44b2fcc6",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C27",
+      "claim": "Ciona maintains stable gut bacterial and viral communities despite continuously filtering microbe-rich seawater.",
+      "claim_type": "EXPLICIT",
+      "source": "Armed with only innate immunity, Ciona maintains stable gut bacterial and viral communities (Dishaw et al., 2014b; Leigh et al., 2018) despite continuously filtering microbe-rich seawater.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "258be78a-4aa7-4966-8325-026ec3d5e0d6",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C28",
+      "claim": "VCBP-C is a secreted immune effector expressed in the stomach and intestines of Ciona.",
+      "claim_type": "EXPLICIT",
+      "source": "VCBP-C is one of the best-studied VCBPs expressed in the stomach and intestines of Ciona, shown to bind bacteria in vitro and in the gut lumen (Dishaw et al., 2016; Dishaw et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4fb39d1b-21eb-4dc9-9f5e-e93b09e13f3e",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C29",
+      "claim": "VCBP-C binds bacteria in vitro and in the gut lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "VCBP-C is one of the best-studied VCBPs expressed in the stomach and intestines of Ciona, shown to bind bacteria in vitro and in the gut lumen (Dishaw et al., 2016; Dishaw et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "a8dbd501-a220-41d3-abdc-de1f516ee20e",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C30",
+      "claim": "VCBPs likely modulate bacterial settlement and/or biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on various in vitro and in vivo observations, it was proposed previously that VCBPs likely modulate bacterial settlement and/or biofilm formation (Dishaw et al., 2016; Liberti et al., 2019; Liberti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature and represents a hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "dc770df0-3153-4c56-a342-26013f3cd177",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C31",
+      "claim": "Shewanella fidelis strain 3313 was isolated from the gut of Ciona and found to possess two inducible prophages, SfPat and SfMu.",
+      "claim_type": "EXPLICIT",
+      "source": "Shewanella fidelis strain 3313 was isolated previously from the gut of Ciona and found to possess two inducible prophages, SfPat and SfMu Leigh et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "0eba4aea-cfd9-4341-8bde-0907c9b6af5e",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C32",
+      "claim": "In vitro experiments demonstrated enhanced biofilm formation in S. fidelis 3313 in the presence of extracellular DNA (eDNA) that may originate from lytic phage activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in vitro experiments demonstrated enhanced biofilm formation in S. fidelis 3313 in the presence of extracellular DNA (eDNA) that may originate from lytic phage activity (Leigh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "3e7a59b1-6f5f-4b25-bd84-e7c3cc36984b",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C33",
+      "claim": "In S. oneidensis strain MR-1, Mu and Lambda prophages enhance biofilm formation via eDNA released during prophage-induced lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in S. oneidensis strain MR-1, Mu and Lambda prophages enhance biofilm formation via eDNA released during prophage-induced lysis, with genomic DNA likely serving as a scaffold for biofilms (G\u00f6deke et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "61f9b4f8-85cd-4707-95a6-17c443a0d965",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C34",
+      "claim": "The P2 prophage of S. putrefaciens strain W3-18-1 influences biofilm formation via spontaneous induction at low frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the P2 prophage of S. putrefaciens strain W3-18-1 influences biofilm formation via spontaneous induction at low frequencies, resulting in cell lysis and contributing eDNA that can mediate biofilm formation (Liu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "f115f394-4823-457b-b267-181454b0215a",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C35",
+      "claim": "The genome of S. fidelis 3313 was improved by combining long-read and short-read sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the last description (Leigh et al., 2017), the genome of S. fidelis 3313 was improved by combining long-read and short-read sequencing, which resulted in improved resolution of the genomic landscape within and around the prophage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used to improve the genome assembly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "612a028a-2a54-4351-b26f-8c78e7a74d8b",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C36",
+      "claim": "All recovered amplicon sizes were consistent with the predictions for SfPat deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "All recovered amplicon sizes were consistent with the predictions for SfPat deletion (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCR data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "8f58dcee-27d2-4cde-8e93-443eb036b41e",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C37",
+      "claim": "Genome sequencing of the deletion mutant strain did not reveal the significant introduction of additional mutations or DNA modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome sequencing of the deletion mutant strain did not reveal the significant introduction of additional mutations or DNA modifications (Table 2; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genome sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "65676cf6-6c42-4f28-8ea1-7a043ab3b4db",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C38",
+      "claim": "Deletion of SfPat from S. fidelis 3313 contributed to an overall increase in biofilm formation by over 14% compared to WT strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of SfPat from S. fidelis 3313 contributed to an overall increase in biofilm formation as quantified by crystal violet staining by over 14% compared to WT strains (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal violet assay data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "64471248-0cb8-4638-9b84-e31295590f87",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C39",
+      "claim": "The WT strain demonstrated a mean diameter of 8.21 mm in swimming motility assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT strain demonstrated a mean diameter of 8.21 mm, while \u0394SfPat resulted in a decrease in the mean diameter to be 4.04 mm, demonstrating reduced motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motility assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "a6d90e44-27fe-4c46-9fb7-0de00fd9456d",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C40",
+      "claim": "\u0394SfPat resulted in a decrease in the mean diameter to 4.04 mm in swimming motility assays, demonstrating reduced motility.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT strain demonstrated a mean diameter of 8.21 mm, while \u0394SfPat resulted in a decrease in the mean diameter to be 4.04 mm, demonstrating reduced motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motility assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "592cb369-8318-4797-bb76-6072cf9c61a3",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C41",
+      "claim": "No significant change in the transcript levels of cyclic-di-GMP regulating genes was identified in bacteria recovered from 24-hour biofilms (in vitro).",
+      "claim_type": "EXPLICIT",
+      "source": "No significant change in the transcript levels of the genes in bacteria recovered from 24-hour biofilms (in vitro) (Figure 2c, Figure 2\u2014figure supplement 1s1a) was identified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "6f1b15cb-b489-455f-9370-135648e4567f",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C42",
+      "claim": "When S. fidelis 3313 strain variants were introduced to metamorphic stage 4 (MS4) Ciona for 24 hours, RT-qPCR revealed significant changes in the transcript levels of pdeB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when these strain variants were introduced to metamorphic stage 4 (MS4) Ciona for 24 hours, the RT-qPCR revealed significant changes in the transcript levels of pdeB (Figure 2c, Figure 2\u2014figure supplement 1s1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1c1be622-6cee-453b-ab52-bf3cab5262f7",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C43",
+      "claim": "pdeB serves as a positive regulator of motility and a negative regulator of biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "By reducing cyclic-di-GMP, pdeB serves as a positive regulator of motility and a negative regulator of biofilm formation (Chao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1cb14c9a-fb11-4146-9e2f-7dfa51f44f1d",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C44",
+      "claim": "The pdeB transcript levels were higher in the colonizing WT S. fidelis 3313 than the \u0394SfPat mutant strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The pdeB transcript levels were higher in the colonizing WT S. fidelis 3313 than the \u0394SfPat mutant strain (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "688656ca-05f1-4c47-a1c8-f3cca1580504",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C45",
+      "claim": "The \u0394SfPat strain revealed a statistically insignificant 1.3-to-1.5-fold change in retention compared to the WT strain after 1 hour of bacterial exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394SfPat strain revealed a statistically insignificant 1.3-to-1.5-fold change in retention compared to the WT strain after 1 hour of bacterial exposure, a time point that mimics initial colonization (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colonization assay data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "72b94a81-3e42-4cbc-90a2-0384c7c48110",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C46",
+      "claim": "24 hours after exposure, WT was over twofold retained in the gut than the \u0394SfPat strain (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, 24 hours after exposure, WT was over twofold retained in the gut than the \u0394SfPat strain (p<0.05) (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colonization assay data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "d2f06b55-ee16-4b08-aa4e-878b5a9d08f7",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C47",
+      "claim": "The WT strain typically prefers to occupy the pyloric cecum and the posterior portion of the esophagus and entrance into the stomach.",
+      "claim_type": "EXPLICIT",
+      "source": "The WT strain typically prefers to occupy the pyloric cecum and the posterior portion of the esophagus and entrance into the stomach (Figure 3d and e, Figure 3\u2014figure supplement 1s3a and s3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "3bb47634-629d-4d20-8e30-f6dbeb5882a3",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C48",
+      "claim": "Retention of the \u0394SfPat mutant was noted at the walls of the stomach during co-exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Retention of the \u0394SfPat mutant was noted at the walls of the stomach during co-exposure (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "86cde3a7-23b2-4dc6-8d4f-9964d375f12f",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C49",
+      "claim": "Retention of the \u0394SfPat mutant was observed in the stomach and intestines, and less in the esophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "Retention of the \u0394SfPat mutant was observed in the stomach and intestines, and less in the esophagus (Figure 3\u2014figure supplement 2s4a and s4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "9e7d26a8-4326-43b2-9c59-b227de458f8f",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C50",
+      "claim": "Upregulation of VCBP-C was observed when juveniles were exposed to \u0394SfPat mutant strains of S. fidelis 3313 compared to the WT strain (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of VCBP-C was observed when juveniles were exposed to \u0394SfPat mutant strains of S. fidelis 3313 compared to the WT strain (Figure 4a) by qPCR (p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "a62b53a6-e51b-4182-8b1a-e0926c9afdd2",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C51",
+      "claim": "VCBP-C is a major secreted effector of the gut regulating microbial settlement dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "As VCBP-C is a major secreted effector of the gut regulating microbial settlement dynamics, the transcript levels of other innate immune genes were evaluated after 24 hours of exposure to the strains and did not reveal statistically significant responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies cited in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "11e20161-c077-426a-b9d9-61dd661e18ce",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C52",
+      "claim": "The transcript levels of other innate immune genes evaluated after 24 hours of exposure to the strains did not reveal statistically significant responses.",
+      "claim_type": "EXPLICIT",
+      "source": "the transcript levels of other innate immune genes were evaluated after 24 hours of exposure to the strains and did not reveal statistically significant responses. However, the lack of statistically significant responses may also be attributed to host genetic diversity, that is, differing responses to the same strains can obscure signal in transcript pools (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "0710ee24-8b3f-41c1-a3a2-b1b3b120ef94",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C53",
+      "claim": "Interaction of VCBP-C with the WT strain was found to suppress the expression of the structural phage protein P5 of SfPat.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction of VCBP-C with the WT strain was found to suppress the expression of the structural phage protein P5 of SfPat (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "af03e86d-1e55-419e-a996-99b13e1f9490",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C54",
+      "claim": "VCBP-C did not significantly alter the expression of lexA and recA, indicators of the SOS pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It was noted that VCBP-C did not significantly alter the expression of lexA and recA, indicators of the SOS pathway (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "e1a5e995-cd85-4aa7-b0c7-57382db252b8",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C55",
+      "claim": "VCBP-C binding to the surface of the S. fidelis 3313 strain may not influence prophage structural genes via conventional SOS responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that VCBP-C binding to the surface of the S. fidelis 3313 strain may not influence prophage structural genes via conventional SOS responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of changes in lexA/recA expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "ced33033-86a1-4b9d-aee6-cb4e44a32156",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C56",
+      "claim": "SfPat is a distant relative of the PM2 prophage.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RAST annotations and deduced amino acid BLAST (BLASTx), we propose that SfPat is a distant relative of the PM2 prophage (Supplementary file 1, Kivel\u00e4 et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatic analysis and comparison to published sequences.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "07ed16a7-a45d-4894-b0f8-f81ecbb7039b",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C57",
+      "claim": "Deletion of the PM2-like SfPat prophage from S. fidelis 3313 revealed phage-mediated influence on colonization dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the PM2-like SfPat prophage from S. fidelis 3313 revealed phage-mediated influence on colonization dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the colonization assay data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "2ecff641-3d42-4993-a602-7fbea3ef26db",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C58",
+      "claim": "Deletion of the PM2-like prophage decreases swimming behaviors while increasing biofilm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that deletion of the PM2-like prophage decreases swimming behaviors while increasing biofilm formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motility and biofilm assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "c8525bad-2084-4e20-a966-e86ee974a955",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C59",
+      "claim": "These bacterial phenotypes influence host immune responses in ways that may influence differential retention in the gut of Ciona.",
+      "claim_type": "EXPLICIT",
+      "source": "These bacterial phenotypes influence host immune responses in ways that may influence differential retention in the gut of Ciona.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on bacterial phenotypes, immune responses, and colonization patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "ccd1ad8b-2793-4b5b-b8d2-f3e99f456bdb",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C60",
+      "claim": "The identification of a prophage that interferes with biofilm formation in a Shewanella strain contrasts with reports demonstrating an increase in biofilms resulting from the incorporation of exogenous DNA following cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification of a prophage that interferes with biofilm formation in a Shewanella strain contrasts with reports demonstrating an increase in biofilms resulting from the incorporation of exogenous DNA following cell lysis (G\u00f6deke et al., 2011; Liu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to published literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "55927819-610c-49ac-b9ee-55b5b90827b0",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C61",
+      "claim": "An influence on motility has been linked to a prophage in P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "An influence on motility has also been linked to a prophage in P. aeruginosa (Tsao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "06203c08-483f-45b4-9760-3dcda4f855c8",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C62",
+      "claim": "As feeding is initiated in MS4 Ciona juveniles, food accumulates in the gastrointestinal tract and on average takes about 45 minutes to begin exiting the anus and atrial siphon as fecal pellets.",
+      "claim_type": "EXPLICIT",
+      "source": "As feeding is initiated in MS4 Ciona juveniles, food (or bacteria in the environment, natural or artificially introduced) accumulates in the gastrointestinal tract and on average takes about 45 minutes to begin exiting the anus and atrial siphon as fecal pellets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations of Ciona feeding behavior.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1f3fa3f7-00b0-4aa0-b3e9-1ae5f19c40ff",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C63",
+      "claim": "Within 1 hour of exposure, fecal pellets begin to form in the stomach that are enriched for the WT S. fidelis 3313.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within 1 hour of exposure, fecal pellets begin to form in the stomach that are enriched for the WT S. fidelis 3313",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "22e1f03e-a751-4159-9709-7eeed0e8fbd3",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C64",
+      "claim": "The WT strain appears to be retained in the posterior portion of the esophagus (just before the entrance into the stomach) as well as in the pyloric cecum.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the WT strain then appears to be retained in the posterior portion of the esophagus (just before the entrance into the stomach) as well as in the pyloric cecum (which is a small outpouching just ventral and posterior to the stomach).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "9a0e4734-0aed-4ac8-a6b2-8d3b055093a1",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C65",
+      "claim": "The \u0394SfPat mutant strain appears to be retained in the stomach folds and the intestines, and not the esophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the \u0394SfPat mutant strain appears to be retained in the stomach folds and the intestines, and not the esophagus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "f7588137-cab0-4e0d-9bb9-98cfbdbe3094",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C66",
+      "claim": "The base of the stomach folds is where secretion of VCBP-C occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the base of the stomach folds is where secretion of VCBP-C occurs (Dishaw et al., 2016; Dishaw et al., 2011; Liberti et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "a675fa46-2234-420b-bedb-0f64069679aa",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C67",
+      "claim": "The overall retention of the two strains did not vary significantly within the first hour of colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall retention of the two strains did not vary significantly within the first hour of colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by colonization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "7a1e0865-4751-4144-b8c6-44ffc33404e9",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C68",
+      "claim": "After 24 hours, the retention of the WT strain was significantly greater than that of \u0394SfPat despite the continued feeding behavior of the MS4 juveniles.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after 24 hours, the retention of the WT strain was significantly greater than that of \u0394SfPat despite the continued feeding behavior of the MS4 juveniles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by colonization assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "82c2ebd1-f717-4e3f-995f-21f1ad8c74c2",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C69",
+      "claim": "The reduced transcript levels of pdeB in the SfPat deletion strain recovered from colonized animals might suggest that the secondary messenger, cyclic-di-GMP, is being differentially regulated in the two strains in longer-term retention and colonization assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced transcript levels of pdeB in the SfPat deletion strain recovered from colonized animals might suggest that the secondary messenger, cyclic-di-GMP, is being differentially regulated in the two strains in longer-term retention and colonization assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pdeB expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "354752c3-8a04-4c6c-8dae-a3af8049be43",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C70",
+      "claim": "Human secretory immunoglobulin A (SIgA) has been shown to enhance and often favor settlement of bacteria both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, human secretory immunoglobulin A (SIgA) has been shown to enhance and often favor settlement of bacteria both in vitro and in vivo (Bollinger et al., 2006; Thomas and Parker, 2010; Pratt and Kolter, 1998; Donaldson et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "d0c6e61e-b390-46ef-93b7-25b253afd10c",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C71",
+      "claim": "While prophages likely impact the behavior of lysogenized bacteria in ways that can influence colonization dynamics, interaction with VCBP-C on the mucosal surface of the Ciona gut likely further influences settlement behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that while prophages likely impact the behavior of lysogenized bacteria in ways that can influence colonization dynamics, interaction with VCBP-C on the mucosal surface of the Ciona gut likely further influences settlement behaviors (Dishaw et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the data and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "ba09f0e5-66b3-4f3f-88b7-2f71f3a49f30",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C72",
+      "claim": "The influence of the SfPat prophage on bacterial physiology leads to a reduced expression of Ciona VCBP-C in the first hours of bacterial retention in the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show here that the influence of the SfPat prophage on bacterial physiology (i.e., the WT strains) leads to a reduced expression of Ciona VCBP-C in the first hours of bacterial retention in the gut (an indicator that the host has detected the exposure).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data on VCBP-C expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4868d7b3-f1b1-443f-801e-53508d93683d",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C73",
+      "claim": "Metagenomic sequencing of gut microbes from healthy humans has revealed that temperate lifestyles are prevalent among phages from these ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagenomic sequencing of gut microbes from healthy humans has revealed that temperate lifestyles are prevalent among phages from these ecosystems (Minot et al., 2013; Minot et al., 2011; Reyes et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "cb980f35-c238-41e7-9a5a-a7ae20b971d0",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C74",
+      "claim": "Temperate lifestyles are prevalent among phages in the Ciona gut.",
+      "claim_type": "EXPLICIT",
+      "source": "an observation also made in the Ciona gut (Leigh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "252d5fb9-d9b2-44c9-b02d-033847c53cf7",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C75",
+      "claim": "Various environmental triggers, such as UV light and mutagenic agents like mitomycin C, have been shown to induce a switch from the temperate to lytic cycle via the SOS response.",
+      "claim_type": "EXPLICIT",
+      "source": "Various environmental triggers, such as UV light and mutagenic agents like mitomycin C, have been shown to induce a switch from the temperate to lytic cycle via the SOS response, a cell-wide response to DNA damage that can promote survival (Weinbauer and Suttle, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "e99b3a8f-bbf7-4f73-ac77-70e7212ea61c",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C76",
+      "claim": "VCBP-C binding on the surface of WT S. fidelis 3313 leads to a reduction in the expression of an important SfPat structural protein P5, suggesting a limitation in SfPat induction in the presence of VCBP-C.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that VCBP-C binding on the surface of WT S. fidelis 3313 leads to a reduction in the expression of an important SfPat structural protein P5, suggesting a limitation in SfPat induction in the presence of VCBP-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data and represents an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "9eab8878-b93b-4578-8132-434bb1106dbe",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C77",
+      "claim": "No significant changes in lexA/recA expression were observed upon VCBP-C exposure/binding, suggesting a lack of SOS response when exposed to this immune effector.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant changes in lexA/recA expression were observed upon VCBP-C exposure/binding, suggesting a lack of SOS response when exposed to this immune effector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data and represents an inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "3910f3ee-1079-4e66-aed8-98a5772c3171",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C78",
+      "claim": "WT S. fidelis colonizes the gut with reduced activation of VCBP-C gene expression compared to \u0394SfPat.",
+      "claim_type": "EXPLICIT",
+      "source": "While the data reported here are only based on one bacterial strain that colonizes the Ciona gut, we find that WT S. fidelis colonizes the gut with reduced activation of VCBP-C gene expression compared to \u0394SfPat, a trait that may be important in shaping colonization outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data on VCBP-C expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "ad68a8c4-8b7c-4ef9-b57a-e0a04fec3edc",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C79",
+      "claim": "Under normal conditions, VCBP-C protein is present in copious amounts and tethered to chitin-rich mucus lining the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Under normal conditions, VCBP-C protein is present in copious amounts and tethered to chitin-rich mucus lining the gut, as revealed by immunohistochemical staining (Dishaw et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "3ddb4701-f5dd-45e2-ab19-9d44ffeaa874",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C80",
+      "claim": "Overexpression of VCBP-C can correspond to the induction of additional inflammatory responses, including an overproduction of mucus.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, overexpression of VCBP-C is not necessarily helpful and can correspond to the induction of additional inflammatory responses, including an overproduction of mucus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the understanding of immune responses.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4d116006-cf27-40a2-9eca-ebf6b107b082",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C81",
+      "claim": "Regulation of the production of additional VCBP-C likely serves important roles in influencing colonization dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, regulation of the production of additional VCBP-C likely serves important roles in influencing colonization dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data on VCBP-C expression and colonization patterns.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "660c1e8b-d9c4-4eef-bd9d-0b1734c687fc",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C82",
+      "claim": "Colonization of animal mucosal surfaces is an ancient process.",
+      "claim_type": "EXPLICIT",
+      "source": "Since colonization of animal mucosal surfaces is an ancient process (Dishaw et al., 2014a; Dishaw et al., 2014b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "49051038-b37c-4974-ae1b-99debd5c15c5",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C83",
+      "claim": "Prophages and their integration into bacterial genomes have likely evolved to provide fitness benefits in often challenging environments like the gut lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "prophages and their integration into bacterial genomes have likely evolved to provide fitness benefits in often challenging environments like the gut lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on evolutionary reasoning.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "cd34c973-6f4b-4aec-9464-a9d04ab29b78",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C84",
+      "claim": "Prophages can be induced to generate lytic particles that can influence gut microbiome structure, serving as an indirect form of protection for the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Prophages can also be induced to generate lytic particles that can influence gut microbiome structure, serving as an indirect form of protection for the host (Wang et al., 2010; Barr et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "c1b95cc8-f1cb-4082-9464-8e9693932802",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C85",
+      "claim": "Prophages can contribute to the transfer of virulence factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Prophages can also contribute to the transfer of virulence factors (Nanda et al., 2015; Wagner and Waldor, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "aa13ffdd-89bd-4324-a9c8-d57c680142b4",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C86",
+      "claim": "Retention of lysogens may be preferred if the prophages provide competitive fitness and retention in the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Retention of lysogens may be preferred if the prophages provide competitive fitness and retention in the gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the data presented.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "56e07ea6-e264-4f76-a282-cad4134a8075",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C87",
+      "claim": "Lysogens are integral in animal development, immunity, and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Since lysogens are integral in animal development, immunity, and metabolism (Fraune and Bosch, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "7aa85717-d1fb-4b30-bdd1-f652279385fe",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C88",
+      "claim": "There is a tripartite interplay required for survival among prophages, bacteria, and animal hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "there is a tripartite interplay required for survival, a snapshot of which is shown here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "b15088ec-d899-41a2-9e38-20afc95aef84",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C89",
+      "claim": "S. fidelis 3313 was cultured using Difco marine agar 2216 (MA) and marine broth (MB) at room temperature (22\u201324\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterium was cultured using Difco marine agar 2216 (MA) (Fisher Scientific, Hampton, NH) and marine broth (MB) at room temperature (RT) (22\u201324\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used for bacterial culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "e1be394e-eaad-4301-abbf-d40b69e2adbd",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C90",
+      "claim": "Subsequent genetic manipulations were performed on strains grown in LB/MB, which consists of a mixture of 75% LB and 25% MB.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent genetic manipulations were performed on strains grown in LB/MB, which consists of a mixture of 75% LB (Lysogeny Broth [Luria], Fisher Scientific, Hampton, NH) and 25% MB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used for genetic manipulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "e35efb32-f005-4b80-8ab5-c0a90bf3b006",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C91",
+      "claim": "A pSMV3 suicide vector was designed with \u2248700 bp regions corresponding to the upstream and downstream sequence of the prophage.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a pSMV3 suicide vector (Saltikov and Newman, 2003) was designed with \u2248700 bp regions corresponding to the upstream and downstream sequence of the prophage (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used for prophage deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4c12bb96-739b-45db-9bbc-69c32564fd0c",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C92",
+      "claim": "Rho was identified as the most stable reference gene using RefFinder.",
+      "claim_type": "EXPLICIT",
+      "source": "Rho was identified as the most stable reference gene using RefFinder, which utilizes Bestkeeper, GeNorm, Normfinder, and comparative \u0394\u0394Ct methods (Figure 5\u2014figure supplement 1; Andersen et al., 2004; Pfaffl, 2001; Vandesompele et al., 2002; Watnick and Kolter, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference gene stability analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "6bb46f79-b5a2-421f-8855-c4c583ea735a",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C93",
+      "claim": "MS4 animals are considered part of the first ascidian stages (post-settlement stages 1\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "MS4 animals are considered part of the first ascidian stages (post-settlement stages 1\u20136, whereas stages 7\u20138 and onward are second ascidian stages and reflect young adult animals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Ciona development stages.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "face5836-63b1-4038-97c1-49f59912ffe6",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C94",
+      "claim": "MS4 juveniles can be identified as having a pair of protostigmata, or gill slits, on each side of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "MS4 juveniles can be identified as having a pair of protostigmata, or gill slits, on each side of the animal (Chiba et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "2bb22f93-f455-4578-9b49-1ee89f61f546",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C95",
+      "claim": "MS4 juveniles first initiate feeding via newly developed and opened siphons.",
+      "claim_type": "EXPLICIT",
+      "source": "These juveniles first initiate feeding via newly developed and opened siphons; before this, the gut remains closed, and the interior lumen is unexposed to the outside world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Ciona development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "e3768b8c-7666-45af-9023-b8f166856feb",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "claim_id": "C96",
+      "claim": "Before MS4, the gut remains closed, and the interior lumen is unexposed to the outside world.",
+      "claim_type": "EXPLICIT",
+      "source": "These juveniles first initiate feeding via newly developed and opened siphons; before this, the gut remains closed, and the interior lumen is unexposed to the outside world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Ciona development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "78b213a8-8a24-4c2b-93d3-f4734639bd05",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully generated a clean deletion mutant of the SfPat prophage (\u0394SfPat) from S. fidelis 3313 using homologous recombination. PCR verification and whole-genome sequencing confirmed the deletion without introducing significant off-target mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C91 collectively demonstrate successful prophage deletion with appropriate molecular verification. The PCR amplicon sizes match predictions (C36), genome sequencing confirms no additional mutations (C37), and the methodology is clearly described (C35, C91). This provides a solid foundation for subsequent phenotypic analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Deletion of SfPat from S. fidelis 3313 results in reduced bacterial motility (approximately 50% reduction in swimming diameter) and increased biofilm formation (14% increase) in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C38-C40, and C58 are supported by quantitative data from crystal violet biofilm assays (Figure 2a) and motility assays (Figure 2b). The measurements show statistically significant differences (p<0.001 for both assays) with clear effect sizes. Sample sizes appear adequate (n=3 for biofilm, n=6 for motility), though biological replicates are not explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "22a096ce-5f61-42a3-ac69-84b0c0c65d8a",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The pdeB gene, encoding a cyclic-di-GMP phosphodiesterase, shows differential expression between WT and \u0394SfPat strains in vivo but not in vitro. Higher pdeB expression in WT during colonization suggests prophage-mediated regulation of motility and biofilm formation in the host environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41-C42, C44, and C69 are supported by RT-qPCR data (Figure 2c). The in vivo differential expression is statistically significant (p<0.01), while in vitro shows no significant difference. The interpretation linking pdeB to cyclic-di-GMP regulation is well-established (C6, C43). However, the mechanistic connection between prophage presence and pdeB regulation remains correlative rather than causative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "b2c640a1-f907-46c0-a732-82e10456dc61",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SfPat influences gut colonization dynamics in Ciona, with WT showing significantly greater retention than \u0394SfPat at 24 hours (>2-fold, p<0.05) and differential spatial localization patterns. WT preferentially colonizes the esophagus and pyloric cecum, while \u0394SfPat localizes more to stomach folds and intestines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C45-C49, C57, C63-C65, C67-C68 are supported by colonization assays (Figure 3a) and fluorescence microscopy (Figures 3b-e). The quantitative retention data show statistical significance at 24 hours with six biological replicates accounting for genetic diversity. Spatial localization is documented with microscopy. However, the mechanisms underlying differential retention remain unclear, and the 1-hour timepoint shows no significant difference (C45, C67), suggesting time-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "f4ccddea-34ce-4c58-bc85-2ae04042d862",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Ciona immune effector VCBP-C is upregulated during colonization by \u0394SfPat compared to WT (p<0.05), indicating that the prophage influences host immune perception of the bacterial symbiont.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C50, C72, and C78 are supported by RT-qPCR data (Figure 4a) showing statistically significant differential VCBP-C expression. The data suggest prophage-mediated immune modulation. However, the study is limited to one immune gene showing significant response (C52), and the authors acknowledge that host genetic diversity may obscure other immune responses. The mechanism by which SfPat reduces VCBP-C expression remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "aa4b52da-8f34-4d3b-a941-09560532c5c1",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VCBP-C binding to WT S. fidelis 3313 suppresses expression of the SfPat structural protein P5 without inducing the SOS response (no changes in lexA/recA expression), suggesting a non-canonical mechanism of prophage regulation by host immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C53-C55, C76-C77 are supported by RT-qPCR data (Figure 5) showing significant reduction in P5 expression (p<0.05) without changes in SOS pathway genes. This is an interesting finding suggesting novel host-prophage interactions. However, the mechanism remains unclear, and the study only examines one structural gene and two SOS markers. The concentration of VCBP-C used (50 \u03bcg/ml) and its physiological relevance are not discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "68b10b79-7de8-4cca-ad44-cde4c82257ff",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors conclude that SfPat influences host perception of S. fidelis 3313 and demonstrate tripartite interactions among prophages, bacteria, and the animal host that shape gut colonization dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C59, and C88 represent the overarching conclusions supported by the collective data on bacterial phenotypes (C2-C3), differential gene expression (C5, C7), colonization patterns (C4, C46), and immune-prophage interactions (C9). The tripartite model is a reasonable synthesis of the findings, though the mechanistic details remain incomplete. The study is limited to one bacterial strain and one host immune effector.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "dc2da491-2f24-4fa1-8653-dca43a2113e9",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Other innate immune genes (IL17-1, IL17-R, NF\u03ba-B, TNF\u03b1, C3A-R, MBL) did not show statistically significant responses to WT vs \u0394SfPat colonization at 24 hours, though host genetic diversity may obscure signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by RT-qPCR data (Figure 4b) showing no significant differences for multiple immune genes. The authors appropriately acknowledge that host genetic diversity could mask responses. This negative result is important for understanding the specificity of the VCBP-C response, though it limits the broader immune characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "75d35818-8dd4-42e4-a5b1-9b6a53bdbe91",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bioinformatic analysis suggests SfPat is a distant relative of the PM2 prophage based on RAST annotations and BLASTx comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is based on bioinformatic analysis (Supplementary file 1) but the evidence is not presented in the main text or figures. The term 'distant relative' is vague, and no sequence identity, coverage, or phylogenetic analysis is provided to assess the strength of this relationship. This classification may be important for contextualizing the findings but requires more rigorous support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "bd5cfb7d-080f-48ee-9110-9cbd1ae7200b",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Rho was identified as the most stable reference gene for bacterial RT-qPCR normalization using RefFinder analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is supported by reference gene stability analysis (Figure 5\u2014figure supplement 1) using multiple algorithms. This is appropriate methodology for qPCR studies and strengthens confidence in the gene expression results. The validation of reference genes is a critical but often overlooked aspect of qPCR studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "52e13551-9035-4f46-9c06-da143369055f",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The finding that SfPat deletion increases biofilm formation contrasts with previous reports in other Shewanella species where prophages enhance biofilms through eDNA release from lysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 appropriately contextualizes the findings relative to prior work (C33-C34). The contrast is valid and suggests diverse mechanisms by which prophages influence biofilm formation. However, the authors do not investigate whether the mechanism in S. fidelis 3313 differs fundamentally from eDNA-mediated biofilm enhancement or whether SfPat simply has opposite effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1d37f1f8-531f-41ac-a947-949c013cea27",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on the study system: S. fidelis 3313 is a gut symbiont of Ciona robusta, a tunicate model system with well-characterized innate immunity including the secreted effector VCBP-C. MS4 juveniles represent an early colonization stage when feeding initiates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C24-C29, C31, C89-C90, C93-C96 provide essential background information that is either directly stated or cited from established literature. This contextual information is well-supported and necessary for understanding the experimental system. The characterization of MS4 juveniles as an appropriate developmental stage for colonization studies is justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Literature review establishing the biological context: prophages are abundant in animal guts, can influence bacterial phenotypes including biofilm formation and motility, and may interact with host immunity. Previous work has shown prophage effects in various bacterial species and host systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C23, C30, C32-C34, C43, C51, C61-C62, C66, C70, C73-C75, C79, C82, C84-C85, C87 represent cited background knowledge from the literature. These claims appropriately contextualize the current work within the broader field. The citations appear appropriate, though the accuracy of specific cited claims was not independently verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "a6be401a-8788-4d94-ac23-c65c28c7340a",
+      "content_id": "89652810-c4c1-4d20-875e-0816078b1bd8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Speculative interpretations: The authors speculate that prophages and VCBP-C jointly influence bacterial settlement, that VCBP-C overexpression may be detrimental, that prophages evolved to provide fitness benefits in the gut, and that lysogen retention may be preferred if prophages enhance fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71, C80-C81, C83, C86 represent speculations that extend beyond the data. While these are reasonable hypotheses consistent with the findings, they lack direct experimental support. The authors appropriately frame these as speculations (using terms like 'likely,' 'may,' 'speculate'), but they should be clearly distinguished from supported conclusions. These ideas could guide future research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "22d10ff3-b524-4fbb-b6a2-70b5cbd95ecc",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Deletion of the SfPat prophage from S. fidelis 3313 results in reduced motility (mean diameter decreased from 8.21 mm to 4.04 mm) and increased biofilm formation (over 14% increase) in vitro, as measured by swimming motility assays and crystal violet staining.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm these findings. The editor states the study presents 'overall solid evidence' for prophage impact on bacterial phenotypes. Reviewer 2 notes 'significant effects on bacterial physiology are reported under in vitro conditions' and describes the data as 'effectively show[ing] that a prophage within a bacterium...affects both the bacterium and the host.' Reviewer 3 acknowledges the authors 'report on the role of a prophage...in the regulation of motility and biofilm formation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "eaed6659-c350-43ec-95e6-8d3a172d84fb",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The pdeB gene (encoding a cyclic-di-GMP phosphodiesterase) shows differential expression between WT and \u0394SfPat strains: no significant difference in vitro, but significantly higher expression in WT during in vivo colonization of Ciona, suggesting context-dependent regulation of this motility/biofilm regulator.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raise significant concerns about the mechanistic interpretation. Reviewer 1 questions 'Why do we not observe such differences under in vitro conditions, despite noting variations in biofilm formation and motility?' and states the manuscript 'primarily describes observations without providing insight into the molecular mechanisms.' While the data showing differential pdeB expression in vivo is accepted, reviewers indicate uncertainty about how this connects to the observed phenotypes and what it reveals about prophage function.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "da8d44dd-a9cb-4c48-8c99-c32bdef73391",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Colonization assays show no significant difference in bacterial retention between WT and \u0394SfPat at 1 hour, but after 24 hours, WT is retained over twofold more than \u0394SfPat (p<0.05) in the Ciona gut.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers accept the data but express confusion about the interpretation. Reviewer 1 states 'it is not clear why the increased retention ability of the prophage deletion strain did not lead to greater cell retention after 24 hours, especially since no differences in the immune response were observed at that time point.' This indicates the result itself is observed but its biological meaning and connection to other findings remains unclear to reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Fluorescence microscopy reveals differential spatial localization patterns: WT S. fidelis preferentially occupies the pyloric cecum and posterior esophagus, while \u0394SfPat localizes more to stomach folds and intestines, with some overlap between strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise this finding. Reviewer 2 states 'The effects of the prophage through deletion on a suite of host genes are a strength, as shown by striking microscopy' and notes 'The in vivo results were striking. This is particularly so with the microscopy images.' The editor describes the evidence as 'solid' for prophage impact on 'niche occupation within a host.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "64fa45a9-9264-4a2d-b35d-db7314ebf7c4",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Expression of the Ciona gut immune effector VCBP-C is significantly upregulated (p<0.05) during colonization by \u0394SfPat compared to WT, indicating that the prophage influences host immune perception, with WT colonization resulting in reduced VCBP-C activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this as a key finding. Reviewer 2 describes the study as showing 'This prophage does so by regulating...the activity of the host immune gene VCBP-C during early bacterial colonization.' The editor notes the study demonstrates 'mediation of host immune responses.' Reviewer 1's concerns focus on mechanistic details rather than disputing the observation itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "6feaa4a4-0e40-46cf-982f-0f75ec8a3b8f",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Other innate immune genes (C3\u03b1-R, IL17-1, IL17-R, MBL, NF\u03ba-B, TNF\u03b1) evaluated after 24 hours of bacterial exposure did not show statistically significant responses, though this may be attributed to host genetic diversity obscuring signals.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this negative result. It is presented as supporting data showing specificity of the VCBP-C response. The authors' caveat about host genetic diversity is included in the manuscript and not disputed by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "d2afae66-a76a-4086-8aab-f8236c9f68e9",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "VCBP-C binding to WT S. fidelis significantly reduces expression of the SfPat structural protein P5 without activating the SOS pathway (no changes in lexA/recA expression), suggesting a non-canonical mechanism of prophage regulation by host immune factors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as novel and important. Reviewer 2 states 'Interestingly, VCBP-C expression also suppressed a prophage structural protein, creating a tripartite feedback loop in this symbiosis.' The editor describes this as part of the 'solid evidence' for prophage-host interaction. While Reviewer 1 seeks more mechanistic detail, they do not dispute the observation itself.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "21eb4e32-b723-415c-9510-9fe461dfd435",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study demonstrates tripartite interactions among prophage, bacteria, and host: SfPat influences bacterial phenotypes that affect host immune responses (VCBP-C), which in turn regulate prophage gene expression, collectively influencing colonization dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly support this integrative conclusion. Reviewer 2 states 'This is exciting research that adds to the emerging body of evidence that prophages can have beneficial effects not only on their host bacteria but also on how that bacteria interacts in its environment' and notes the study 'establishes the evolutionary conservation of this concept with intriguing implications of prophage effects on tripartite interactions.' The editor describes the study as 'valuable' for 'linking prophage carriage to lifestyle regulation...with potential implications for niche occupation within a host.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The SfPat prophage was successfully deleted from S. fidelis 3313 using a suicide vector approach, with PCR and genome sequencing confirming clean deletion without additional mutations. Bioinformatic analysis suggests SfPat is a distant relative of the PM2 prophage.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question the validity of the deletion mutant or its characterization. Reviewer 3 notes the study examines 'wild-type and an isogenic SfPat- mutant derivative,' accepting the mutant as properly constructed. This methodological result is treated as foundational and uncontroversial.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "9aa0c5e9-93ae-4e33-96f4-b0b4e6e604d0",
+      "content_id": "afb8c4e1-76d8-4443-9cb0-6a7c2ec35b8e",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Rho was identified as the most stable reference gene for RT-qPCR normalization using RefFinder analysis incorporating multiple stability algorithms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this methodological detail. While Reviewer 1 questions why qPCR was chosen over transcriptomics, they do not dispute the validity of the reference gene selection for the qPCR experiments performed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f115f394-4823-457b-b267-181454b0215a",
+      "result_id": "78b213a8-8a24-4c2b-93d3-f4734639bd05"
+    },
+    {
+      "claim_id": "612a028a-2a54-4351-b26f-8c78e7a74d8b",
+      "result_id": "78b213a8-8a24-4c2b-93d3-f4734639bd05"
+    },
+    {
+      "claim_id": "8f58dcee-27d2-4cde-8e93-443eb036b41e",
+      "result_id": "78b213a8-8a24-4c2b-93d3-f4734639bd05"
+    },
+    {
+      "claim_id": "e35efb32-f005-4b80-8ab5-c0a90bf3b006",
+      "result_id": "78b213a8-8a24-4c2b-93d3-f4734639bd05"
+    },
+    {
+      "claim_id": "1b49d693-7f1f-41d0-8477-38c845822fc7",
+      "result_id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5"
+    },
+    {
+      "claim_id": "bb068702-1224-4ccd-9e0e-06cb168dcac6",
+      "result_id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5"
+    },
+    {
+      "claim_id": "65676cf6-6c42-4f28-8ea1-7a043ab3b4db",
+      "result_id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5"
+    },
+    {
+      "claim_id": "64471248-0cb8-4638-9b84-e31295590f87",
+      "result_id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5"
+    },
+    {
+      "claim_id": "a6d90e44-27fe-4c46-9fb7-0de00fd9456d",
+      "result_id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5"
+    },
+    {
+      "claim_id": "2ecff641-3d42-4993-a602-7fbea3ef26db",
+      "result_id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5"
+    },
+    {
+      "claim_id": "89db888a-aafe-46b2-8cc4-904cb424b798",
+      "result_id": "22a096ce-5f61-42a3-ac69-84b0c0c65d8a"
+    },
+    {
+      "claim_id": "592cb369-8318-4797-bb76-6072cf9c61a3",
+      "result_id": "22a096ce-5f61-42a3-ac69-84b0c0c65d8a"
+    },
+    {
+      "claim_id": "6f1b15cb-b489-455f-9370-135648e4567f",
+      "result_id": "22a096ce-5f61-42a3-ac69-84b0c0c65d8a"
+    },
+    {
+      "claim_id": "1cb14c9a-fb11-4146-9e2f-7dfa51f44f1d",
+      "result_id": "22a096ce-5f61-42a3-ac69-84b0c0c65d8a"
+    },
+    {
+      "claim_id": "82c2ebd1-f717-4e3f-995f-21f1ad8c74c2",
+      "result_id": "22a096ce-5f61-42a3-ac69-84b0c0c65d8a"
+    },
+    {
+      "claim_id": "39ff20d5-96cc-4c18-8a8c-243c34d3a380",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "688656ca-05f1-4c47-a1c8-f3cca1580504",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "72b94a81-3e42-4cbc-90a2-0384c7c48110",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "d2f06b55-ee16-4b08-aa4e-878b5a9d08f7",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "3bb47634-629d-4d20-8e30-f6dbeb5882a3",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "86cde3a7-23b2-4dc6-8d4f-9964d375f12f",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "07ed16a7-a45d-4894-b0f8-f81ecbb7039b",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "1f3fa3f7-00b0-4aa0-b3e9-1ae5f19c40ff",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "22e1f03e-a751-4159-9709-7eeed0e8fbd3",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "9a0e4734-0aed-4ac8-a6b2-8d3b055093a1",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "a675fa46-2234-420b-bedb-0f64069679aa",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "7a1e0865-4751-4144-b8c6-44ffc33404e9",
+      "result_id": "b2c640a1-f907-46c0-a732-82e10456dc61"
+    },
+    {
+      "claim_id": "67d00941-fced-444e-b055-84f78cf64365",
+      "result_id": "f4ccddea-34ce-4c58-bc85-2ae04042d862"
+    },
+    {
+      "claim_id": "9e7d26a8-4326-43b2-9c59-b227de458f8f",
+      "result_id": "f4ccddea-34ce-4c58-bc85-2ae04042d862"
+    },
+    {
+      "claim_id": "ba09f0e5-66b3-4f3f-88b7-2f71f3a49f30",
+      "result_id": "f4ccddea-34ce-4c58-bc85-2ae04042d862"
+    },
+    {
+      "claim_id": "3910f3ee-1079-4e66-aed8-98a5772c3171",
+      "result_id": "f4ccddea-34ce-4c58-bc85-2ae04042d862"
+    },
+    {
+      "claim_id": "82a3983e-9244-4b6d-bb0b-abad075d6e79",
+      "result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1"
+    },
+    {
+      "claim_id": "f4a57040-3715-4337-a559-aa769a61be91",
+      "result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1"
+    },
+    {
+      "claim_id": "0710ee24-8b3f-41c1-a3a2-b1b3b120ef94",
+      "result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1"
+    },
+    {
+      "claim_id": "af03e86d-1e55-419e-a996-99b13e1f9490",
+      "result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1"
+    },
+    {
+      "claim_id": "e1a5e995-cd85-4aa7-b0c7-57382db252b8",
+      "result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1"
+    },
+    {
+      "claim_id": "e99b3a8f-bbf7-4f73-ac77-70e7212ea61c",
+      "result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1"
+    },
+    {
+      "claim_id": "9eab8878-b93b-4578-8132-434bb1106dbe",
+      "result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1"
+    },
+    {
+      "claim_id": "637159bc-a965-49c0-8d4a-791f239d2312",
+      "result_id": "68b10b79-7de8-4cca-ad44-cde4c82257ff"
+    },
+    {
+      "claim_id": "c8525bad-2084-4e20-a966-e86ee974a955",
+      "result_id": "68b10b79-7de8-4cca-ad44-cde4c82257ff"
+    },
+    {
+      "claim_id": "7aa85717-d1fb-4b30-bdd1-f652279385fe",
+      "result_id": "68b10b79-7de8-4cca-ad44-cde4c82257ff"
+    },
+    {
+      "claim_id": "11e20161-c077-426a-b9d9-61dd661e18ce",
+      "result_id": "dc2da491-2f24-4fa1-8653-dca43a2113e9"
+    },
+    {
+      "claim_id": "ced33033-86a1-4b9d-aee6-cb4e44a32156",
+      "result_id": "75d35818-8dd4-42e4-a5b1-9b6a53bdbe91"
+    },
+    {
+      "claim_id": "4c12bb96-739b-45db-9bbc-69c32564fd0c",
+      "result_id": "bd5cfb7d-080f-48ee-9110-9cbd1ae7200b"
+    },
+    {
+      "claim_id": "ccd1ad8b-2793-4b5b-b8d2-f3e99f456bdb",
+      "result_id": "52e13551-9035-4f46-9c06-da143369055f"
+    },
+    {
+      "claim_id": "0cfd76cd-241f-49c5-b310-9b63f5048592",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "91cb7aeb-6629-4da7-8294-8a293ed1f826",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "c1246727-e2be-4512-8b5a-866a2eaece31",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "4ed20b04-087a-4ad7-b64f-389b04046734",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "f8470820-5121-473c-9e90-b8af44b2fcc6",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "258be78a-4aa7-4966-8325-026ec3d5e0d6",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "4fb39d1b-21eb-4dc9-9f5e-e93b09e13f3e",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "dc770df0-3153-4c56-a342-26013f3cd177",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "b15088ec-d899-41a2-9e38-20afc95aef84",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "e1be394e-eaad-4301-abbf-d40b69e2adbd",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "6bb46f79-b5a2-421f-8855-c4c583ea735a",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "face5836-63b1-4038-97c1-49f59912ffe6",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "2bb22f93-f455-4578-9b49-1ee89f61f546",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "e3768b8c-7666-45af-9023-b8f166856feb",
+      "result_id": "1d37f1f8-531f-41ac-a947-949c013cea27"
+    },
+    {
+      "claim_id": "71001e32-37cc-494f-a87c-e764dacf8d46",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "4ce48ede-0fe0-4dad-99a3-1872d18a1d34",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "b3beb899-a02e-4565-89f9-55686abef7f1",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "75cfab73-e10f-4cbf-8f0d-c328abb3906b",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "c34a2197-4f1f-4992-83c6-5a8b83a3b8f8",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "fb2d616a-220d-420d-958c-2270810439e3",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "f26b5cdb-29ea-42f9-b20d-01feaeb32bf7",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "4a7e374f-96dd-4972-9004-00c3ee6ca46f",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "6ca2f932-4468-4629-9788-81b90ab5fa63",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "1afc9e88-5574-4bfb-8e84-3abbb54d404b",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "3f903c6b-9ad1-4a43-9a88-18fd8b7f228f",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "ff5fce5f-c380-4d00-a7b6-776918493403",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "645ec666-795e-490c-af12-8b9aebe4f33f",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "a8dbd501-a220-41d3-abdc-de1f516ee20e",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "0eba4aea-cfd9-4341-8bde-0907c9b6af5e",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "3e7a59b1-6f5f-4b25-bd84-e7c3cc36984b",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "61f9b4f8-85cd-4707-95a6-17c443a0d965",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "1c1be622-6cee-453b-ab52-bf3cab5262f7",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "a62b53a6-e51b-4182-8b1a-e0926c9afdd2",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "55927819-610c-49ac-b9ee-55b5b90827b0",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "06203c08-483f-45b4-9760-3dcda4f855c8",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "f7588137-cab0-4e0d-9bb9-98cfbdbe3094",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "354752c3-8a04-4c6c-8dae-a3af8049be43",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "4868d7b3-f1b1-443f-801e-53508d93683d",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "cb980f35-c238-41e7-9a5a-a7ae20b971d0",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "252d5fb9-d9b2-44c9-b02d-033847c53cf7",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "ad68a8c4-8b7c-4ef9-b57a-e0a04fec3edc",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "660c1e8b-d9c4-4eef-bd9d-0b1734c687fc",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "cd34c973-6f4b-4aec-9464-a9d04ab29b78",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "c1b95cc8-f1cb-4082-9464-8e9693932802",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "56e07ea6-e264-4f76-a282-cad4134a8075",
+      "result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1"
+    },
+    {
+      "claim_id": "d0c6e61e-b390-46ef-93b7-25b253afd10c",
+      "result_id": "a6be401a-8788-4d94-ac23-c65c28c7340a"
+    },
+    {
+      "claim_id": "3ddb4701-f5dd-45e2-ab19-9d44ffeaa874",
+      "result_id": "a6be401a-8788-4d94-ac23-c65c28c7340a"
+    },
+    {
+      "claim_id": "4d116006-cf27-40a2-9eca-ebf6b107b082",
+      "result_id": "a6be401a-8788-4d94-ac23-c65c28c7340a"
+    },
+    {
+      "claim_id": "49051038-b37c-4974-ae1b-99debd5c15c5",
+      "result_id": "a6be401a-8788-4d94-ac23-c65c28c7340a"
+    },
+    {
+      "claim_id": "aa13ffdd-89bd-4324-a9c8-d57c680142b4",
+      "result_id": "a6be401a-8788-4d94-ac23-c65c28c7340a"
+    },
+    {
+      "claim_id": "1b49d693-7f1f-41d0-8477-38c845822fc7",
+      "result_id": "22d10ff3-b524-4fbb-b6a2-70b5cbd95ecc"
+    },
+    {
+      "claim_id": "bb068702-1224-4ccd-9e0e-06cb168dcac6",
+      "result_id": "22d10ff3-b524-4fbb-b6a2-70b5cbd95ecc"
+    },
+    {
+      "claim_id": "65676cf6-6c42-4f28-8ea1-7a043ab3b4db",
+      "result_id": "22d10ff3-b524-4fbb-b6a2-70b5cbd95ecc"
+    },
+    {
+      "claim_id": "64471248-0cb8-4638-9b84-e31295590f87",
+      "result_id": "22d10ff3-b524-4fbb-b6a2-70b5cbd95ecc"
+    },
+    {
+      "claim_id": "a6d90e44-27fe-4c46-9fb7-0de00fd9456d",
+      "result_id": "22d10ff3-b524-4fbb-b6a2-70b5cbd95ecc"
+    },
+    {
+      "claim_id": "89db888a-aafe-46b2-8cc4-904cb424b798",
+      "result_id": "eaed6659-c350-43ec-95e6-8d3a172d84fb"
+    },
+    {
+      "claim_id": "592cb369-8318-4797-bb76-6072cf9c61a3",
+      "result_id": "eaed6659-c350-43ec-95e6-8d3a172d84fb"
+    },
+    {
+      "claim_id": "6f1b15cb-b489-455f-9370-135648e4567f",
+      "result_id": "eaed6659-c350-43ec-95e6-8d3a172d84fb"
+    },
+    {
+      "claim_id": "1cb14c9a-fb11-4146-9e2f-7dfa51f44f1d",
+      "result_id": "eaed6659-c350-43ec-95e6-8d3a172d84fb"
+    },
+    {
+      "claim_id": "82c2ebd1-f717-4e3f-995f-21f1ad8c74c2",
+      "result_id": "eaed6659-c350-43ec-95e6-8d3a172d84fb"
+    },
+    {
+      "claim_id": "688656ca-05f1-4c47-a1c8-f3cca1580504",
+      "result_id": "da8d44dd-a9cb-4c48-8c99-c32bdef73391"
+    },
+    {
+      "claim_id": "72b94a81-3e42-4cbc-90a2-0384c7c48110",
+      "result_id": "da8d44dd-a9cb-4c48-8c99-c32bdef73391"
+    },
+    {
+      "claim_id": "a675fa46-2234-420b-bedb-0f64069679aa",
+      "result_id": "da8d44dd-a9cb-4c48-8c99-c32bdef73391"
+    },
+    {
+      "claim_id": "7a1e0865-4751-4144-b8c6-44ffc33404e9",
+      "result_id": "da8d44dd-a9cb-4c48-8c99-c32bdef73391"
+    },
+    {
+      "claim_id": "39ff20d5-96cc-4c18-8a8c-243c34d3a380",
+      "result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701"
+    },
+    {
+      "claim_id": "d2f06b55-ee16-4b08-aa4e-878b5a9d08f7",
+      "result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701"
+    },
+    {
+      "claim_id": "3bb47634-629d-4d20-8e30-f6dbeb5882a3",
+      "result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701"
+    },
+    {
+      "claim_id": "86cde3a7-23b2-4dc6-8d4f-9964d375f12f",
+      "result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701"
+    },
+    {
+      "claim_id": "1f3fa3f7-00b0-4aa0-b3e9-1ae5f19c40ff",
+      "result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701"
+    },
+    {
+      "claim_id": "22e1f03e-a751-4159-9709-7eeed0e8fbd3",
+      "result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701"
+    },
+    {
+      "claim_id": "9a0e4734-0aed-4ac8-a6b2-8d3b055093a1",
+      "result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701"
+    },
+    {
+      "claim_id": "67d00941-fced-444e-b055-84f78cf64365",
+      "result_id": "64fa45a9-9264-4a2d-b35d-db7314ebf7c4"
+    },
+    {
+      "claim_id": "9e7d26a8-4326-43b2-9c59-b227de458f8f",
+      "result_id": "64fa45a9-9264-4a2d-b35d-db7314ebf7c4"
+    },
+    {
+      "claim_id": "ba09f0e5-66b3-4f3f-88b7-2f71f3a49f30",
+      "result_id": "64fa45a9-9264-4a2d-b35d-db7314ebf7c4"
+    },
+    {
+      "claim_id": "3910f3ee-1079-4e66-aed8-98a5772c3171",
+      "result_id": "64fa45a9-9264-4a2d-b35d-db7314ebf7c4"
+    },
+    {
+      "claim_id": "11e20161-c077-426a-b9d9-61dd661e18ce",
+      "result_id": "6feaa4a4-0e40-46cf-982f-0f75ec8a3b8f"
+    },
+    {
+      "claim_id": "82a3983e-9244-4b6d-bb0b-abad075d6e79",
+      "result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9"
+    },
+    {
+      "claim_id": "f4a57040-3715-4337-a559-aa769a61be91",
+      "result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9"
+    },
+    {
+      "claim_id": "0710ee24-8b3f-41c1-a3a2-b1b3b120ef94",
+      "result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9"
+    },
+    {
+      "claim_id": "af03e86d-1e55-419e-a996-99b13e1f9490",
+      "result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9"
+    },
+    {
+      "claim_id": "e1a5e995-cd85-4aa7-b0c7-57382db252b8",
+      "result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9"
+    },
+    {
+      "claim_id": "e99b3a8f-bbf7-4f73-ac77-70e7212ea61c",
+      "result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9"
+    },
+    {
+      "claim_id": "9eab8878-b93b-4578-8132-434bb1106dbe",
+      "result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9"
+    },
+    {
+      "claim_id": "637159bc-a965-49c0-8d4a-791f239d2312",
+      "result_id": "21eb4e32-b723-415c-9510-9fe461dfd435"
+    },
+    {
+      "claim_id": "c8525bad-2084-4e20-a966-e86ee974a955",
+      "result_id": "21eb4e32-b723-415c-9510-9fe461dfd435"
+    },
+    {
+      "claim_id": "d0c6e61e-b390-46ef-93b7-25b253afd10c",
+      "result_id": "21eb4e32-b723-415c-9510-9fe461dfd435"
+    },
+    {
+      "claim_id": "4d116006-cf27-40a2-9eca-ebf6b107b082",
+      "result_id": "21eb4e32-b723-415c-9510-9fe461dfd435"
+    },
+    {
+      "claim_id": "7aa85717-d1fb-4b30-bdd1-f652279385fe",
+      "result_id": "21eb4e32-b723-415c-9510-9fe461dfd435"
+    },
+    {
+      "claim_id": "f115f394-4823-457b-b267-181454b0215a",
+      "result_id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2"
+    },
+    {
+      "claim_id": "612a028a-2a54-4351-b26f-8c78e7a74d8b",
+      "result_id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2"
+    },
+    {
+      "claim_id": "8f58dcee-27d2-4cde-8e93-443eb036b41e",
+      "result_id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2"
+    },
+    {
+      "claim_id": "ced33033-86a1-4b9d-aee6-cb4e44a32156",
+      "result_id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2"
+    },
+    {
+      "claim_id": "e35efb32-f005-4b80-8ab5-c0a90bf3b006",
+      "result_id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2"
+    },
+    {
+      "claim_id": "4c12bb96-739b-45db-9bbc-69c32564fd0c",
+      "result_id": "9aa0c5e9-93ae-4e33-96f4-b0b4e6e604d0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "5878eea2-d735-440a-a011-cda34e066176",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3320c6e8-9421-434c-8a86-c1aaac50e0d5",
+      "peer_result_id": "22d10ff3-b524-4fbb-b6a2-70b5cbd95ecc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the findings on biofilm formation and motility (C2, C3, C38-C40). OpenEval notes statistical significance and adequate sample sizes, while peer reviewers describe the evidence as 'overall solid' and 'effectively show[ing]' prophage effects on bacterial physiology. Both agree these phenotypic findings are well-supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "d7d58d68-0868-4d67-902e-800aba55868a",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "22a096ce-5f61-42a3-ac69-84b0c0c65d8a",
+      "peer_result_id": "eaed6659-c350-43ec-95e6-8d3a172d84fb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address pdeB expression findings (C5, C41-C42, C44, C69), but with different evaluations. OpenEval rates as SUPPORTED while noting the mechanistic connection remains correlative. Peer reviewers rate as UNCERTAIN, questioning why in vitro differences aren't observed and stating the manuscript 'primarily describes observations without providing insight into the molecular mechanisms.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "b0292dcb-e1a2-4710-b1ce-38fadce96344",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "b2c640a1-f907-46c0-a732-82e10456dc61",
+      "peer_result_id": "6bb143fb-575c-4d1c-9b6a-cf61a4d37701",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the colonization and spatial localization findings (C4, C47-C49, C63-C65). OpenEval notes statistical significance and appropriate replicates. Peer reviewers praise the 'striking microscopy' and describe this as a strength of the study, with the editor noting 'solid' evidence for niche occupation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "415eed2c-3aa5-45a2-8790-81978a16d2b1",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b2c640a1-f907-46c0-a732-82e10456dc61",
+      "peer_result_id": "da8d44dd-a9cb-4c48-8c99-c32bdef73391",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address differential retention findings (C45-C46, C67-C68), but with different emphasis. OpenEval supports the data while noting time-dependent effects and unclear mechanisms. Peer reviewers express UNCERTAINTY about the biological interpretation, specifically questioning why increased retention ability didn't lead to greater cell retention at 24 hours.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "6ee3453a-9013-42ea-9f1e-35095483a587",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "f4ccddea-34ce-4c58-bc85-2ae04042d862",
+      "peer_result_id": "64fa45a9-9264-4a2d-b35d-db7314ebf7c4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on VCBP-C expression findings (C7, C50, C72, C78). Both evaluations support the data showing prophage-mediated immune modulation. OpenEval notes limitations to one immune gene, while peer reviewers describe this as a key finding demonstrating 'mediation of host immune responses.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "723908b8-b68c-49f7-b79f-7b04feeaccb4",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "aa4b52da-8f34-4d3b-a941-09560532c5c1",
+      "peer_result_id": "d2afae66-a76a-4086-8aab-f8236c9f68e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the findings on P5 expression reduction and VCBP-C effects (C8-C9, C53-C55, C76-C77). OpenEval notes the mechanism remains unclear. Peer reviewers accept this as novel and important, with Reviewer 2 highlighting the 'tripartite feedback loop' as interesting, though Reviewer 1 seeks more mechanistic detail.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "686917ce-a381-42e8-ae4d-864d6f5c7d30",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "dc2da491-2f24-4fa1-8653-dca43a2113e9",
+      "peer_result_id": "6feaa4a4-0e40-46cf-982f-0f75ec8a3b8f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the negative result for multiple immune genes (C52). OpenEval notes this is important for understanding VCBP-C response specificity. Peer reviewers do not challenge this finding and accept the authors' caveat about host genetic diversity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "3a3bfae3-7319-4d51-982c-1026fd7c44bb",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "68b10b79-7de8-4cca-ad44-cde4c82257ff",
+      "peer_result_id": "21eb4e32-b723-415c-9510-9fe461dfd435",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the overarching tripartite model conclusions (C10, C59, C88). OpenEval notes the synthesis is reasonable though mechanistic details are incomplete. Peer reviewers strongly support this integrative conclusion, describing it as 'exciting research' with 'intriguing implications' and 'valuable' for linking prophage carriage to lifestyle regulation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "1fd89c21-e2ab-4829-917b-704f9d53a2a2",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "78b213a8-8a24-4c2b-93d3-f4734639bd05",
+      "peer_result_id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the prophage deletion methodology and verification (C35-C37, C91). OpenEval details the molecular verification steps. Peer reviewers treat this as foundational and uncontroversial, accepting the mutant as properly constructed without questioning its validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4c5325a2-412e-4a59-9350-3575b4251864",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "bd5cfb7d-080f-48ee-9110-9cbd1ae7200b",
+      "peer_result_id": "9aa0c5e9-93ae-4e33-96f4-b0b4e6e604d0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the reference gene validation methodology (C92). OpenEval notes this strengthens confidence in gene expression results and is often overlooked. Peer reviewers do not challenge this methodological detail, though Reviewer 1 questions the choice of qPCR over transcriptomics more broadly.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "4e9b63f7-2b90-4d15-a436-a35aebb53dd2",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "75d35818-8dd4-42e4-a5b1-9b6a53bdbe91",
+      "peer_result_id": "d6d0e14a-a0b5-4658-8a94-4b40b2adf1b2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address C56 regarding SfPat classification. OpenEval rates as UNCERTAIN, noting the term 'distant relative' is vague and requires more rigorous support with no sequence identity or phylogenetic analysis provided. Peer reviewers do not specifically comment on this bioinformatic classification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "f3e5b50a-1faa-486a-b601-ea81b96d10ae",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "52e13551-9035-4f46-9c06-da143369055f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the contextualization claim (C60) comparing findings to prior work on prophages and biofilm formation. No corresponding peer review evaluation specifically addresses this comparative claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "fae74923-ba35-428c-aae7-15f93353b027",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1d37f1f8-531f-41ac-a947-949c013cea27",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports extensive background and methodological claims (C1, C24-C29, C31, C89-C90, C93-C96) as well-supported and necessary context. Peer reviewers do not specifically evaluate these background claims separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "e2062074-addd-4f8c-8fbd-381e6b0b9b77",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "03c8e37c-fd7d-4862-b8d8-406aff372bb1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports numerous literature-cited background claims (C11-C23, C30, C32-C34, C43, C51, C61-C62, C66, C70, C73-C75, C79, C82, C84-C85, C87) as appropriately contextualizing the work. Peer reviewers do not separately evaluate these cited claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    },
+    {
+      "id": "d9948aca-31b3-4510-8924-e4c65b0e6759",
+      "submission_id": "ea4d856f-9228-4f47-bfa9-4047772d276e",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "a6be401a-8788-4d94-ac23-c65c28c7340a",
+      "peer_result_id": "21eb4e32-b723-415c-9510-9fe461dfd435",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates speculative claims (C71, C80-C81, C83, C86) as UNCERTAIN, noting they extend beyond the data but are appropriately framed as hypotheses. Peer reviewers' R8 evaluation focuses on the supported tripartite model (C10, C59, C88) and includes some overlapping speculative claims (C71, C81) within their strong support for the overall conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:26:41.074496Z"
+    }
+  ]
+}

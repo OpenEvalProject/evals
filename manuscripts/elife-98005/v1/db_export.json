@@ -1,0 +1,2661 @@
+{
+  "submission": {
+    "id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:02:01.630719Z",
+    "updated_at": "2025-11-21T04:02:01.630719Z"
+  },
+  "content": [
+    {
+      "id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "content_type": "manuscript",
+      "content_text": "# Forecasting the spatial spread of an Ebola epidemic in real time: Comparing predictions of mathematical models and experts\n\n## Authors\n\n- James D Munday<sup>1</sup> ([ORCID: 0000-0002-6206-7134](https://orcid.org/0000-0002-6206-7134)) \u2020\n- Alicia Rosello<sup>1</sup> ([ORCID: 0000-0002-0737-5679](https://orcid.org/0000-0002-0737-5679))\n- John Edmunds<sup>1</sup>\n- Sebastian Funk<sup>1</sup> ([ORCID: 0000-0002-2842-3406](https://orcid.org/0000-0002-2842-3406))\n\n### Affiliations\n\n1. Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))\n2. Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))\n3. Department of Biosystems Science and Engineering, ETH Z\u00fcrich Z\u00fcrich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Ebola virus disease outbreaks can often be controlled, but require rapid response efforts frequently with profound operational complexities. Mathematical models can be used to support response planning, but it is unclear if models improve the prior understanding of experts.Methods:We performed repeated surveys of Ebola response experts during an outbreak. From each expert, we elicited the probability of cases exceeding four thresholds between 2 and 20 cases in a set of small geographical areas in the following calendar month. We compared the predictive performance of these forecasts to those of two mathematical models with different spatial interaction components.Results:An ensemble combining the forecasts of all experts performed similarly to the two models. Experts showed stronger bias than models forecasting two-case threshold exceedance. Experts and models both performed better when predicting exceedance of higher thresholds. The models also tended to be better at risk-ranking areas than experts.Conclusions:Our results support the use of models in outbreak contexts, offering a convenient and scalable route to a quantified situational awareness, which can provide confidence in or to call into question existing advice of experts. There could be value in combining expert opinion and modelled forecasts to support the response to future outbreaks.Funding:This study was partly funded by the Department of Health and Social Care using UK Aid funding 47 and is managed by the National Institute for Health and Care Research (VEEPED: PR-OD-1017- 48 20002; AR and WJE). This study was partly funded by the Wellcome Trust (210758/Z/18/Z : JDM 49 and SF). The views expressed in this publication are those of the authors and not necessarily 50 those of the funders.\n\n## Introduction\n\nFollowing the initial emergence in 1976 in Zaire (now the Democratic Republic of the Congo [DRC]) (Report of an International Commission, 1978), epidemics of Ebola virus disease (EVD) have occurred, on average, every 12\u201324 months (Rosello et al., 2015). EVD is a viral haemorrhagic fever first caused by the Ebola Zaire virus (EZV), with a case fatality rate of 25\u201390% (In press, 2023b). A major outbreak in the northeastern provinces of DRC between 2018 and 2020 resulted in over 3300 reported cases and over 2100 deaths (WHO Regional Office for Africa, 2020; Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig1-v1.jpg)\n\n**Figure 1.:** (A) Daily incidence in the northeastern DRC between August 2018 and March 2020. Grey points show days prior to the study period, coloured points show days within the study period (November 2019\u2013March 2020), and hue indicates month. (B) shows the total number of cases of Ebola recorded in each health zone. (C) Number of cases in each month and health zone during the period covered by this study; health zones outlined in red show all health zones affected by the entire epidemic.\n\nTransmission of EZV occurs mainly through direct contact during the symptomatic phase of infection; therefore, isolation of infected individuals with strict infection control, contact tracing, and safe burials has been key to controlling past EVD outbreaks (Kucharski et al., 2015), although setting specific challenges can hamper containment efforts (Adongo et al., 2016). More recently, vaccination has also become a tool for outbreak control, with two vaccines now licensed for use (In press, 2023a; Woolsey and Geisbert, 2021).\n\nEVD outbreaks typically occur in resource-poor settings where limited communication and poor accessibility make logistics of surveillance and vaccination campaigns challenging. Understanding the spatial risk of future spread is therefore useful to allow response teams to focus efforts on high-risk areas. Mathematical and statistical models have been used extensively to forecast the spread of infectious diseases, including EVD (Chowell et al., 2017). Such models rely on a combination of statistical inference based on epidemiological data and information about the mechanisms underlying the dynamics of infection. However, the dynamics of EVD are frequently governed by changing contextual factors which are challenging to forecast quantitatively. For example, violent conflicts or flooding can seriously hinder, interrupt, or even reverse the impact of containment efforts (Adongo et al., 2016; Wannier et al., 2019). Moreover, changes in healthcare capacity and health-seeking behaviour of patients can strengthen or weaken efforts to reduce transmission (Funk et al., 2017). The timing and impact of these factors are notoriously difficult to predict using mathematical models.\n\nModels are used by epidemic response experts to support decision-making in the field. In addition to models, experts also make judgements as to the future spread of the virus based on their interpretation of the current status of the outbreak combined with their knowledge of other less tangible factors such as the geography, climate (e.g. seasonal variation in accessibility of particular areas), and soft intelligence about the escalation of conflict in areas which may, as a result, be harder to access by response teams. There are clear costs and benefits to human-made and model-based forecasts. Whereas models are objectively based on observations of the past outbreak dynamics and current case data, experts have additional knowledge of the complex factors surrounding the outbreak response. It is therefore difficult to assess the impact mathematical models have on decision-making, how much modelled forecasts differ from those made by experts in the field, and whether either modelled or human forecasts are systematically more accurate or useful. Moreover, the knowledge of experts in the field of EVD epidemiology, with a good understanding of the geographical area of study, may provide an invaluable resource that is currently underused in forecasting.\n\nPrevious studies have aimed to establish the relative performance of humans and models in predicting infectious disease spread in human populations, particularly in the context of acute respiratory infections such as influenza and SARS-CoV-2. Three studies have evaluated the predictions of humans against models explicitly. The first of these evaluated short-term forecasts and season-wide predictions of reports of influenza-like illness in the United States (Farrow et al., 2017) and two studies (Bosse et al., 2022; Bosse et al., 2023) compared short-term forecasts of cases of and deaths from COVID-19, firstly in Germany and Poland and secondly in the United Kingdom. All three studies found that humans tended to perform better than the mathematical and statistical models selected for comparison when predicting cases. However, the COVID-focused studies found that the human ensembles performed worse than the ensemble prediction of the models when predicting deaths. These results were maintained when only self-declared \u2018experts\u2019 were included in the forecasts. A number of other studies recorded expert predictions without comparison to mathematical models. A study conducted early in the COVID-19 pandemic (Recchia et al., 2021) evaluated the relative ability of laypeople and experts to predict the course of the UK epidemic over the first calendar year. The study found that both experts and laypeople typically underpredicted the impact overall; however, experts\u2019 forecasts were more accurate and better calibrated than laypeople. A study of expert predictions in the United States (McAndrew and Reich, 2022) evaluated their weekly forecasts of case incidence and total deaths in the first year against a pooled ensemble of all predictions. The study found that the ensemble outperformed every expert individually over the period of the study. A similar study surveyed experts regarding the total number of cases and deaths from MPox in the United States during 2022 (McAndrew et al., 2022); however, these predictions are yet to be evaluated. Overall, these studies provide evidence that human predictions can play a valuable role in epidemiological prediction, providing a comparator and complementary method to mathematical and statistical modelling.\n\nIn this article, we extend the use of expert forecasters to predict spatial risk of transmission in the context of a local outbreak. We made monthly forecasts of the geographic spread of EVD from November 2019 to March 2020 during the declining phase of the 2018\u20132020 outbreak in the DRC using both expert predictions collected through regular interviews and with two spatially explicit computational transmission models with different spatial interaction assumptions: a gravity model and an adjacency model (where transmission can only occur between contiguous regions; see the \u2018Methods\u2019 section for details). Alongside supporting situational awareness, these forecasts were motivated by an aim to inform site selection for a planned vaccine trial. The objective was to identify areas that had seen no cases yet and thus were not already being supported by vaccination and other interventions, but were at high risk of still becoming affected by the EVD outbreak, thus allowing estimation of efficacy (Watson-Jones et al., 2022). Here we evaluate the performance of the forecasts and select ensembles of the methods in predicting continued transmission and flare-ups of EVD in health zones (HZs) close to the affected area. We further study variation in forecast quality against a selection of factors related to local demography, case history, and forecast implementation.\n\n## Methods\n\n### Expert elicitation\n\nExperts in EVD epidemiology with knowledge of the local geography speaking English or French were identified originally by convenience sampling. The pool of experts was then expanded through recommendation from the identified experts (snowball sampling). This approach was best suited to capture the expertise of individuals who were most often temporarily based in the field.\n\nA pilot study was carried out in November 2019. Subsequently, monthly interviews were held over WhatsApp in December 2019, January 2020, February 2020, and March 2020. All interviews were scripted. The main biases of this type of study (availability bias, representativeness bias, overconfidence, motivational bias, anchoring on past estimates) were briefly discussed during the first interview.\n\nExperts were also provided with an interactive map of the outbreak area and surrounding HZs showing the number of total cases during the outbreak and during the two preceding weeks for reference (Figure 3\u2014figure supplement 1). HZs were numbered to facilitate communication with the experts.\n\nExperts were asked to estimate the number of reported probable and confirmed cases they would expect per HZ during the following month using the online MATCH Uncertainty Elicitation Tool (Morris et al., 2014; Figure 3\u2014figure supplement 1). Through this platform, the experts and the researcher (AR) interacted in real time. The \u2018roulette\u2019 (chips and bins) method was used. Experts were instructed to place a total of 20 chips over the available bins (0\u20131 cases, 2\u20134 cases, \u2026, 48\u201350 cases). Therefore, each chip represented for the expert a 5% probability that the number of cases was in the bin where the chip was placed. This process aimed to capture the uncertainty surrounding the expert\u2019s estimates.\n\nThe experts were asked to estimate the number of reported cases they would expect in the HZ where there had been one or more cases in the two preceding weeks, as well as Goma (Figure 2). The experts were then asked to identify any additional HZ where they would predict one or more cases during the following month with >5% probability, and to also estimate the number of reported cases they would expect in these HZ. In the pilot study, carried out in October 2019, experts were asked to forecast the number of cases they expected during November 2019 in 10 HZs: Beni, Goma, Kalunguta, Katwa, Lolwa, Mabalako, Mambasa, Mandima, Nyankunde, and Oicha.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig2-v1.jpg)\n\n**Figure 2.:** (A) shows the provinces around the affected area, and included in the transmission model, and the red box shows the area detailed in panel (B). (B) shows the health zones included at least once in the expert elicitation survey we conducted.\n\n### Modelling framework\n\nIn parallel with the expert elicitation programme, we developed a modelling framework to forecast spatial risk of infection. In the framework, the incidence of cases is forecast in each HZ based on historical case reports. The model was formed of two components, the autoregressive component and the spatial component.\n\n$$\n\\lambda=\\sums=t\u2212(D+L)t\u2212D(\\gammaN_{i,s}+\\alpha\\sumjw_{ij}N_{j,s})\n$$\n\nThe auto-regressive component modelled the rate of infections in a particular HZ i, on day t, to be proportional to the number of cases in the same HZ (i) between dates t-(D+L) and t-D, where L is the estimated latent period and D is the estimated infectious period. The spatial component accounts for transmission between HZs, where rate of infection was proportional to the cases in each other HZ (i.e. \u2200j j\u2260i) and moderated by a pairwise specific factor defined by a spatial kernel $w_{ij}$$w_{ij}$$w_{ij}$. We used two spatial kernels, both of which use proximity of HZs to each other and their respective population size, $w_{ij}$$P_{i}$$P_{i}$$P_{i}$ and $P_{i}$$P_{j}$$P_{j}$$P_{j}$. Firstly, the gravity model which treats interaction in an analogous way to Newtonian gravity with population size in place of mass, such that interaction reduces distance, $P_{j}$d, raised to a power, k.\n\n$$\nw_{ij}=\\frac{P_{i}P_{j}}{d_{ij}^{k}}\n$$\n\nSecondly, we applied a model with adjacency-based interaction. In this model, only adjacent HZs can interact. The strength of interaction between HZs is proportional to the product of their population sizes.\n\n$$\nw_{ij}=\\delta_{ij}P_{i}P_{j}\n$$\n\n\n\n$$\n\\delta_{ij}={1,ifadjacent0,otherwise\n$$\n\nCases were modelled as Poisson distributed such that\n\n$$\nN_{i,t}=Poisson(\\lambda_{i,t})\n$$\n\nTo forecast cases, we fitted the spatiotemporal model to historical data from the 60 days prior to the date the forecast was made, accounting for cases in HZs in seven regions (169 HZs) centred on the location of the epidemic; Nord-Kivu, Ituri, Tshopo, Maniema, Sud-Kivu, Haut-Uele, and Bas-Uele. We fit the model using the No U-Turn Sampling (NUTS) method for Hamiltonian Monte Carlo with Stan (Stan Team, 2012), a probabilistic programming framework. We estimated $\\alpha$ and $\\gamma$, which vary the contribution of within-health-zone and between-health-zone transmission. We also estimated k, which determines how rapidly transmission rate decays with distance in the spatial component of the model. We sampled parameters from the resultant joint posterior distribution to simulate daily incidence in all HZs in the seven regions, up to and including the last day of the following month. We performed 1000 iterations for each forecast date. We then extracted the full distribution of the number of cases incident within the calendar month of interest. Forecasts were made using data up to the last day of the month prior to the forecast period.\n\n### Ensemble forecasts\n\nEnsemble forecasts were calculated as an average of the probabilities attributed by the members of the ensemble. For the expert ensemble, the arithmetic mean was calculated across all experts with equal weighting. Similarly, the model ensemble used the unweighted mean of the model forecasts. For the mixed (model and expert) ensemble, the mean was weighted such that the combined weight of the experts' forecasts and the combined weight of the models' forecasts were equal.\n\n### Quantification of risk and forecast evaluation\n\nTo compare the model and the expert forecasts and score them according to the eventual true number of cases, we calculated the probability attributed to cases over four thresholds, \u22652, \u22656, \u226510, and \u226520 cases.\n\nWe evaluated the forecasts using the Brier score, a proper scoring rule which quantifies how accurate a forecast or a group of forecasts is when compared to true data after the event. The Brier score, BS, is defined as the square of the difference between the probability of observing an event and the observation $o_{i}$ status, which takes a value 1 or 0 for cases observed and none observed, respectively. We calculated this for multiple (N) forecasts by taking the mean of the individual forecast scores.\n\n$$\nBS=\\frac{1}{N}\\sumi=1N(p_{i}\u2212o_{i})^{2}\n$$\n\nWe also quantified the general bias and calibration of the forecasts by considering the hazard rate predicted by each forecast, which we calculated as the sum of probabilities attributed to exceeding each threshold. This gives the number of HZs the forecast \u2018expected\u2019 to cross the threshold in each month. To quantify the bias of each set of predictions, we took the difference between the hazard rate and the actual number of HZs that exceeded each threshold in each month. We refer to this as the hazard gap (HG).\n\n$$\nHG=\\sum\u2200HZp(c>c_{thresh})\u2212\\sum\u2200HZo(c>c_{thresh})\n$$\n\nwhere p(c>cthresh) is the probability of threshold exceedance and o(c>cthresh) is the observation status of the threshold exceedance 1 if true 0 if false.\n\n## Results\n\n### Expert panel and HZs included in survey\n\nOver the study period, we conducted a total of 40 interviews with 15 experts, 3 of which took place during the pilot phase (November 2019). Figure 3 shows the timeline of the expert elicitations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig3-v1.jpg)\n\n**Figure 3.:** Each point shows the date of the interview of the expert labelled to obtain forecasts for the following month. Colour indicates the month for which the forecast was made, and the forecast windows are highlighted with a shaded band of the same colour.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** On the left, a screenshot of the interactive map provided to experts. On the right, a screenshot of the MATCH expert elicitation tool.\n\nEight experts worked at the World Health Organization, four at the London School of Hygiene & Tropical Medicine, two for M\u00e9decins Sans Fronti\u00e8res, and one at the DRC Ministry of Health. Most experts (10/15) had more than 5 years of experience working in infectious disease epidemiology. About half of the interviews (21 of 40) were conducted with experts who were in the outbreak area (defined HZs affected by EVD or Goma, the site of the international response base) or had been there within 2 weeks of the interview. Four experts had never been in the outbreak area.\n\nBetween December 2024 and March 2025, 8\u201310 experts provided monthly forecasts for 4\u201311 HZ, estimating the probability that reported cases would exceed various thresholds (2, 6, and 20 cases) (Figure 4\u2014figure supplements 1\u20134). Expert predictions showed variable accuracy across months and zones.\n\nExperts correctly identified Mabalako as the highest-risk HZ in December. They attributed an average 82% probability of exceeding 2 cases; Mabalako reported 38 cases that month, exceeding all thresholds, although the probability assigned to exceeding the higher thresholds was similar to that of Beni (3 cases). Other zones with moderate cases\u2014Kalanguta (5) and Mambasa (4)\u2014were assigned lower probabilities and generally did not exceed higher case thresholds. Interestingly, Mandima, which had no reported cases, was assigned a relatively high probability (72%) of exceeding two cases, indicating some overestimation in this zone.\n\nIn January, Beni and Mabalako again accounted for most cases (22 and 11, respectively) and were recognized as high risk by the experts. However, experts underestimated the scale of the outbreak in Beni, assigning 0% probability to exceeding 20 cases there, despite this threshold being surpassed. Mandima continued to be forecasted as high risk, though no cases were reported. Predictions for other zones such as Oicha and Biena suggested moderate risk, but no cases were confirmed.\n\nOf the 11 nominated HZs, only Beni reported confirmed cases in February (9), exceeding the six-case threshold. Experts collectively assigned a 70% probability to this event. Similar probabilities were assigned to Mabalako (60%), where no cases were reported, following cases in the prior 2 months. Several other zones were predicted to exceed two cases, yet reported none.\n\nNo cases were reported in any HZ during March. Experts broadly anticipated this, with only one expert assigning over 50% probability of exceeding two cases in any HZ. Beni had the highest average assigned risk at 33% (Figures 4 and 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-v1.jpg)\n\n**Figure 4.:** Only the health zones (HZs) that were rated by all experts are included here. Results are shown as probabilities (vertical axes) that a given HZ (horizontal panels) exceeds a given threshold (horizontal axes) according to the experts (box plots) or models (square/diamond for gravity and adjacency models, respectively) across different months (vertical panels). HZ/month combinations where the given thresholds were exceeded are marked in cyan, and ones where they were not are marked in red.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp2-v1.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp3-v1.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp4-v1.jpg)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig5-v1.jpg)\n\n**Figure 5.:** (A) shows the overall Brier score for each expert, model, and ensemble (calculated over all forecasts included in the study). In (B), each panel shows the Brier score across all health zones for each month (vertical) at each case threshold (horizontal). Coloured points show each expert score, and the violin plot shows their distribution. The grey hollow points show the model scores, the yellow points show the ensemble scores (circles show experts alone, squares show models alone, and triangles show experts and models with 50% weight given to each). (C) shows the ranking of each expert and model in terms of forecast performance.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Each panel shows the rank of the health zones based on expert ensemble, expert, and model ensemble and model forecast probabilities of exceeding each case threshold (horizontal panels) in each month (vertical panels). Coloured lines and points indicate the health zone rank. Solid lines show health zones where the case threshold was met, and faded lines show those where the case threshold was not met.\n\n### Performance evaluation\n\nWe evaluated the forecasts using the Brier score. The overall scores of individual experts varied between 0 and 0.6 across the four thresholds. Collectively, the experts scored best at the highest threshold (20 cases) and worst for forecasts of the lowest threshold (2 cases). The models also performed better at higher thresholds than low thresholds, but the difference was less pronounced. Overall, the gravity model ranked best among all forecasts at the two-case threshold. It also ranked best for this threshold in the month of February and consistently in the top half of forecasts in December and January; however, it performed comparatively poorly in March, ranking higher than only one of the experts. The adjacency model also performed better than the experts overall for the two-case threshold. Related to this, including the models improved the ensemble forecast. Although the gravity model performed better than the adjacency model for higher thresholds, together the models performed similarly to the expert ensemble forecast overall. In January and February, the gravity model performed well compared to the adjacency model and the expert ensemble; however in March, both models performed particularly badly compared to the experts for all thresholds. None of the experts performed consistently well relative to the others; experts 3 and 10 performed best for the two-case threshold, whereas experts 13 and 14 did best for higher thresholds.\n\nTo evaluate how the different forecasts may impact decision-making, we ranked the HZs for each month, based on the probability of exceeding each threshold of cases forecast by each ensemble and by the model alone (Figure 5\u2014figure supplement 1). In general, the model and the ensembles all ranked HZs that did reach the threshold highly. In some cases, the model performed better, ranking HZs that did meet the threshold higher than the experts, specifically ranking Beni higher than Mandima in higher thresholds (\u2265 6 and 10 cases) for the forecast of January, where Beni ultimately had cases and Mandima did not, in that month. Considering the models separately, the gravity model performed better than the adjacency model in general, with the adjacency model occasionally performing worse than the experts when ranking the HZs. This was clearest in the forecasts of November and January.\n\n### Bias and calibration in forecasts\n\nWe evaluated the bias in each forecast type by considering the hazard gap between forecasts and actual cases. We found that experts systematically forecasted higher risk of the lowest threshold (\u22652 cases) than was warranted, but tended to forecast lower risk of exceeding the highest threshold (\u226520 cases) than was borne out across all HZs (Figure 6). When calculated across all months, this bias was present in 12 of the 15 experts. The models did not show clear, consistent bias in either direction.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig6-v1.jpg)\n\n**Figure 6.:** Panels show the hazards gap difference between the hazard rate (expected number of exceedances across all health zones) for each threshold attributed by the forecast and the actual number of health zones that exceeded the associated threshold. Each panel shows one forecast (expert or model) in each month. The bottom row shows the same for each forecast calculated over the entire study period.\n\n### Forecasting flare-ups\n\nIn addition to the HZs presented to all experts, each expert was able to nominate HZs, which they deemed at risk. Experts nominated seven further HZs to forecast in December, four in January, four in February, and one in March (Table 1).\n\n**Table 1.**\n Experts and health zones included in each round of the survey.The left part of the table details the experts interviewed (highlighted in green) the health zones included in the main survey in each month. In addition, the right part of the table details the health zones nominated by experts and the number of experts that nominated each one.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Month forecasted</th>\n      <th colspan=\"4\">Experts interviewed (highlighted)</th>\n      <th colspan=\"2\">Health zones in interview (HZs)</th>\n      <th>No. of experts</th>\n      <th>HZ nominated</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>December</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td></td>\n      <td>Beni</td>\n      <td></td>\n      <td>7</td>\n      <td>Oicha</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>4</td>\n      <td>5</td>\n      <td>6</td>\n      <td></td>\n      <td>Goma</td>\n      <td></td>\n      <td>5</td>\n      <td>Komanda</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>7</td>\n      <td>8</td>\n      <td>9</td>\n      <td></td>\n      <td>Kalunguta</td>\n      <td></td>\n      <td>2</td>\n      <td>Butembo</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>11</td>\n      <td>12</td>\n      <td></td>\n      <td>Mabalako</td>\n      <td></td>\n      <td>2</td>\n      <td>Katwa</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>13</td>\n      <td>14</td>\n      <td></td>\n      <td></td>\n      <td>Mambasa</td>\n      <td></td>\n      <td>1</td>\n      <td>Lolwa</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Mandima</td>\n      <td></td>\n      <td>1</td>\n      <td>Makiso-Kisangani</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>1</td>\n      <td>Nyankunde</td>\n    </tr>\n    <tr>\n      <td>January</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td></td>\n      <td>Beni</td>\n      <td></td>\n      <td>6</td>\n      <td>Butembo</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>4</td>\n      <td>5</td>\n      <td>6</td>\n      <td></td>\n      <td>Biena</td>\n      <td></td>\n      <td>3</td>\n      <td>Katwa</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>7</td>\n      <td>8</td>\n      <td>9</td>\n      <td></td>\n      <td>Goma</td>\n      <td></td>\n      <td>1</td>\n      <td>Kalunguta</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>11</td>\n      <td>12</td>\n      <td></td>\n      <td>Mabalako</td>\n      <td></td>\n      <td>1</td>\n      <td>Mangurerdjipa</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>13</td>\n      <td>14</td>\n      <td></td>\n      <td></td>\n      <td>Mandima</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Oicha</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>February</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td></td>\n      <td>Beni</td>\n      <td></td>\n      <td>6</td>\n      <td>Oicha</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>4</td>\n      <td>5</td>\n      <td>6</td>\n      <td></td>\n      <td>Bunia</td>\n      <td></td>\n      <td>4</td>\n      <td>Biena</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>7</td>\n      <td>8</td>\n      <td>9</td>\n      <td></td>\n      <td>Butembo</td>\n      <td></td>\n      <td>2</td>\n      <td>Vuhovi</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>11</td>\n      <td>12</td>\n      <td></td>\n      <td>Goma</td>\n      <td></td>\n      <td>1</td>\n      <td>Lolwa</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>13</td>\n      <td>14</td>\n      <td></td>\n      <td></td>\n      <td>Kalunguta</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Katwa</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Kayna</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Mabalako</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Mambasa</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Mandima</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Musienene</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>March</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td></td>\n      <td>Beni</td>\n      <td></td>\n      <td>3</td>\n      <td>Mabalako</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>4</td>\n      <td>5</td>\n      <td>6</td>\n      <td></td>\n      <td>Butembo</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>7</td>\n      <td>8</td>\n      <td>9</td>\n      <td></td>\n      <td>Goma</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>10</td>\n      <td>11</td>\n      <td>12</td>\n      <td></td>\n      <td>Mandima</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>13</td>\n      <td>14</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nThe only two HZs not included in the default list but exceeding two cases were Butembo and Katwa. These were nominated by 2 of the 10 experts (4 and 10), both attributing 50% chance of exceeding two cases. In contrast, Oicha and Komanda had the most nominations with 7 and 5 each, and 6 and 4 of the 10 experts interviewed allotted greater than 5% chance of two or more cases in December, with attributed probabilities ranging between 5% and 95% chance of crossing the two-case threshold.\n\nIn January, six of the eight experts interviewed nominated Butembo (1, 2, 4, 5, 9, and 11 with probabilities of 5\u201385% of crossing the two-case threshold) while three of them also nominated Katwa (2 and 9 giving 85% and 5 giving 5%). Kalunguta and Manguredjipa were also nominated by one expert each, 5 with 10% and 11 with 50%, respectively. None of the nominated HZs crossed the threshold in January.\n\nIn February, 6 of the 10 experts interviewed (2, 4, 5, 11, 12, and 14) nominated Oicha with probabilities between 10% and 95% of crossing the two-case threshold. Four (2, 4, 5, and 11) nominated Biena with probabilities between 10% and 95% of exceedance. Experts 4 and 8 also nominated Vuhovi, attributing 55% and 20% probability of threshold exceedance, respectively. Expert 3 nominated Lolwa alone but gave no probability of exceeding one case. No HZs not included in the interview as default crossed the two-case threshold in February.\n\nIn March, three (4, 8, and 11) of the eight experts interviewed gave probabilities of 35%, 50%, and 15% of exceeding the two-case threshold, respectively. No HZs not included in the interview as default crossed the two-case threshold in March.\n\nTo compare the model with the experts, we included all HZs modelled and attributed all HZs not nominated by experts an exceedance probability of 0%. To allow comparison, we also set all HZs given a probability of lower than 5% to 0% for both the gravity and adjacency models. When considering the Brier score (Figure 7), we found that the gravity model performed comparably to some experts when forecasting for December and February. The adjacency model performed worse than all the experts in every month except February. In every month, the ensemble of experts did better than the models and including the models in the ensembles reduced performance.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig7-v1.jpg)\n\n**Figure 7.:** Each panel (right to left) shows the Brier score across all health zones for each month. Coloured points show each expert score, and the density plot shows their overall distribution. The red points show the model scores, and the yellow points show the ensemble scores (squares show experts alone, and crosses show experts and models with 50% weight given to each).\n\n## Discussion\n\nWe compared forecasts of the geographic spread of Ebola made by experts with those made using a modelling framework. Since the outbreak dynamics of Ebola are highly sensitive to the changeable context in which they take place, mathematical models and expert opinions are expected to have different strengths and weaknesses, with models benefiting from objective inference from previous observations and experts able to utilize detailed knowledge about the outbreak and the changing surrounding context to make informed projections of risk. By interviewing experts and asking them to forecast risk in a structured way, we were able to compare the performance of their forecasts against those made with well-established modelling approaches in a quantifiable and robust way.\n\nOverall, the forecasts made by the group of experts as a whole performed similarly to those of the model, with a few consistent exceptions. The model performed better than the experts when considering the lowest threshold in 4 of the 5 months covered by the survey, but performance was more comparable for the higher thresholds. The model also performed marginally better when ranking HZs by risk of ongoing transmission, indicating that use of a model may improve prioritization of HZs when attributing resources.\n\nWe found that both methods performed better when considering higher case thresholds. This is likely to be due to a combination of bias in both forecast types towards under-prediction of cases and the fact that there were few instances where the higher thresholds were reached.\n\nAlthough individual experts frequently outperformed ensembles in individual instances, no individual expert outperformed the ensembles overall. This supports the practice of considering predictions from a range of experts over a smaller number of more specialist or experienced experts. The models tended to perform similarly to the ensemble representing more consistent performance across all forecasts.\n\nExperts tended to be more biased than models, especially at low case thresholds with a tendency to over-predict cases to a greater degree than models. This bias reduced rapidly as the case threshold increased. This may be interpreted as over-cautiousness from the experts regarding the potential for geographic spread of the virus but confidence that transmission could be contained quickly. This trend reflects a pattern among previous introductions into new HZs earlier in the pandemic, where a small number of cases were reported, but the local outbreak was quickly stopped (Figure 1).\n\nTo our knowledge, our study is the first to record experts\u2019 assessment of geographical risk at a local level during an epidemic and the first comparison of outbreak response experts' predictions to those of models in real time. Although direct comparison is not possible, our results lead to conclusions that are broadly similar to those from previous studies (Farrow et al., 2017; Bosse et al., 2022; Bosse et al., 2023); however, each of these studies found that ensemble expert forecasts performed better than the comparison models, whereas our study found no clear performance difference. This may suggest that experts are better at predicting simple time series than geographic distribution of cases. However, we cannot view these findings independently from the different survey designs or study contexts.\n\nThere are a number of important limitations to consider when interpreting our results. The context within which we conducted the study has important implications for interpretation. Due to the timing and logistics of setting up the questionnaire, the study only began in the closing phase of the epidemic, whereas the relative performance of experts and models may differ during different phases of the epidemic. For example, in the early phase where dynamics are driven more by infectious transmission than established response practices, or during the peak where changes in intervention strategy may be more influential. The stage of the epidemic also meant that there was a substantial trend towards \u2018negative\u2019 results (i.e. no threshold exceedance), which is likely to favour some forecasting methods over others.\n\nAdditionally, experts were not all interviewed on the same day, and interviews occurred several days before the beginning of the month they were forecasting. In some cases, experts were interviewed up to 2 weeks prior to the beginning of the month. This means that the information available differed both between experts and with the model, which was run considering data up to the first day of each month. This reduces our ability to compare models to experts directly; however, it could also be argued that this is a \u2018built-in\u2019 factor which represents the inherent challenge of eliciting predictions from experts. In addition, the interview process for experts was quite taxing and required a phone call, which can cause scheduling challenges during an epidemic response. It may be that other methods with less arduous and more flexible data entry would improve responses.\n\nOur analysis represents the comparison of expert forecasts to only two specific forecasting models. There is a great range of models that could have been applied in this context which may have differed in performance to those we used. We chose these models for convenience since we were applying them to the outbreak at the time of the interviews. It is also possible that some of the experts involved in the study had ingested results from our model, which were available through our online dashboard, or other models being used at the time.\n\nSince our findings, like those of similar studies, suggest that models and experts perform comparably in this context, there is an argument that models have no value in informing expert decision-making. It can be argued, however, that models remain useful in outbreak response. Firstly, while the models performed similarly to the ensemble forecasts of the experts, there was no individual expert that performed consistently better than the models. Secondly, models are much more easily scaled and generalized, making them simple to deploy in new contexts and to adapt as epidemics grow. Expert interviews are time-consuming and often inconvenient, especially in the context of outbreak response activities, which are characteristically fast paced. Models therefore offer a more convenient route to a quantified insight, which from our results performs comparably to the way groups of experts may think. Finally, there are ways to combine both methods. For example, in the event that expert forecasts can be garnered, joint ensembles can capture information from both the expert and modelled forecasts. Further, we suggest that models can offer a role in aiding decision-making by providing confidence in or calling into question expert advice that is being considered.\n\n### Conclusions\n\nOur analysis evaluated performance of experts and models when forecasting the spatial spread of Ebola, representing the first such study incorporating local geographic distribution and the first to focus on an epidemic in a resource-poor setting. We found that forecasts made by experts and models performed comparably overall, but experts tended to be slightly more biased towards predicting that a small number of cases would persist. The results support the use of models in outbreak response and provide insight into how models and expert opinion could be combined when tackling future epidemics.\n",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98005.3.sa0](https://doi.org/10.7554/eLife.98005.3.sa0)\n\nThis article provides valuable evidence comparing the performance of mathematical models and opinions from experts engaged in outbreak response in forecasting the spatial spread of an Ebola epidemic. The evidence supporting the conclusions is convincing. It will be of interest to disease modellers, infectious disease epidemiologists, policymakers, and those who need to inform policymakers during an outbreak.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98005.3.sa1](https://doi.org/10.7554/eLife.98005.3.sa1)\n\nMunday, Rosello, and colleagues compared predictions from a group of experts in epidemiology with predictions from two mathematical models on the question of how many Ebola cases would be reported in different geographical zones over the next month. Their study ran from November 2019 to March 2020 during the Ebola virus outbreak in Democratic Republic of the Congo. Their key result concerned predicted numbers of cases in a defined set of zones. They found that neither the ensemble of models nor the group of experts produced consistently better predictions. Similarly, neither model performed consistently better than the other, and no expert's predictions were consistently better than the others'. Experts were also able to specify other zones in which they expected to see cases in the next month. For this part of the analysis, experts consistently outperformed the models. In March, the final month of the analysis, the models' accuracy was lower than in other months, and consistently poorer than the experts' predictions.\n\nA strength of the analysis is use of consistent methodology to elicit predictions from experts during an outbreak that can be compared to observations, and that are comparable to predictions from the models. Results were elicited for a specified group of zones, and experts were also able to suggest other zones that were expected to have diagnosed cases. This likely replicates the type of advice being sought by policymakers during an outbreak.\n\nA potential weakness is that the authors included only two models in their ensemble. Ensembles of greater numbers of models might tend to produce better predictions. The authors do not address whether a greater number of models could outperform the experts.\n\nThe elicitation was performed in four months near the end of the outbreak. The authors address some of the implications of this. A potential challenge for the transferability of this result is that the experts' understanding of local idiosyncrasies in transmission may have improved over the course of the outbreak. The model did not have this improvement over time. The comparison of models to experts may therefore not be applicable to early stages of an outbreak when expert opinions may be less well-tuned.\n\nThis research has important implications for both researchers and policy-makers. Mathematical models produce clearly-described predictions that will later be compared to observed outcomes. When model predictions differ greatly from observations, this harms trust in the models, but alternative forms of prediction are seldom so clearly articulated or accurately assessed. If models are discredited without proper assessment of alternatives then we risk losing a valuable source of information that can help guide public health responses. From an academic perspective, this research can help to guide methods for combining expert opinion with model outputs, such as considering how experts can inform models' prior distributions and how model outputs can inform experts' opinions.\n\nComments on revisions:\n\nI am grateful to the authors for their responses to my previous comments. I think their updates have made the paper much clearer. I do not think the updates change the opinions already given in the public review so I have not modified it.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98005.3.sa2](https://doi.org/10.7554/eLife.98005.3.sa2)\n\nThe manuscript by Munday et al. presents real-time predictions of geographic spread during an Ebola epidemic in north-eastern DRC. Predictions were elicited from individual experts engaged in outbreak response and from two mathematical models. The authors found comparable performance between experts and models overall, although the models outperformed experts in a few dimensions.\n\nBoth individual experts and mathematical models are commonly used to support outbreak response, but the relative strengths of each information source are rarely quantified. The manuscript presents an in-depth analysis of the accuracy and decision-relevance of the information provided by each source individually and in combination for a real-time outbreak response effort.\n\nWhile this paper presents an important and unique comparison, forecast performance is known to be inconsistent and unpredictable across many dimensions such as pathogen, location, forecasting target, and phase of the outbreak. Thus, as the authors note, continuing to replicate such studies will be important for verifying the robustness of their conclusions in other contexts.\n\nComments on revisions:\n\nI have no further comments. I commend the authors for an interesting and important contribution.\n",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de78398c-5cad-4ac2-be87-c2021fb4f016",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C1",
+      "claim": "Ebola virus disease first emerged in 1976 in Zaire (now the Democratic Republic of the Congo).",
+      "claim_type": "EXPLICIT",
+      "source": "Following the initial emergence in 1976 in Zaire (now the Democratic Republic of the Congo [DRC]) (Report of an International Commission, 1978)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Report of an International Commission, 1978",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "576f75a1-49da-47b0-b333-4c2fc178e626",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C2",
+      "claim": "Epidemics of Ebola virus disease have occurred, on average, every 12\u201324 months.",
+      "claim_type": "EXPLICIT",
+      "source": "epidemics of Ebola virus disease (EVD) have occurred, on average, every 12\u201324 months (Rosello et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rosello et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "6edea5af-0d24-4cd9-9c37-ae791b4f6ca9",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C3",
+      "claim": "Ebola virus disease is caused by the Ebola Zaire virus.",
+      "claim_type": "EXPLICIT",
+      "source": "EVD is a viral haemorrhagic fever first caused by the Ebola Zaire virus (EZV)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about EVD etiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "6c2cfd9d-1cf0-44ca-a850-6e0df7ef3116",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C4",
+      "claim": "The case fatality rate of Ebola virus disease is 25\u201390%.",
+      "claim_type": "EXPLICIT",
+      "source": "with a case fatality rate of 25\u201390% (In press, 2023b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to In press, 2023b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f0070ba8-21a7-42fa-8290-430c65aca6fe",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C5",
+      "claim": "A major Ebola outbreak in the northeastern provinces of DRC between 2018 and 2020 resulted in over 3300 reported cases.",
+      "claim_type": "EXPLICIT",
+      "source": "A major outbreak in the northeastern provinces of DRC between 2018 and 2020 resulted in over 3300 reported cases and over 2100 deaths (WHO Regional Office for Africa, 2020; Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to WHO Regional Office for Africa, 2020 and reference to Figure 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "157dd47e-4b7d-42ed-b3c5-bc3b7865990e",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C6",
+      "claim": "The 2018-2020 DRC Ebola outbreak resulted in over 2100 deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "A major outbreak in the northeastern provinces of DRC between 2018 and 2020 resulted in over 3300 reported cases and over 2100 deaths (WHO Regional Office for Africa, 2020; Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to WHO Regional Office for Africa, 2020 and reference to Figure 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "58fac9cc-e2e5-4123-af4b-7f5df19347f0",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C7",
+      "claim": "Transmission of Ebola Zaire virus occurs mainly through direct contact during the symptomatic phase of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission of EZV occurs mainly through direct contact during the symptomatic phase of infection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about Ebola transmission",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "722f4618-0b7b-4e5e-9c3a-387fa9c72ac5",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C8",
+      "claim": "Isolation of infected individuals with strict infection control, contact tracing, and safe burials has been key to controlling past EVD outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "isolation of infected individuals with strict infection control, contact tracing, and safe burials has been key to controlling past EVD outbreaks (Kucharski et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kucharski et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f751e9bb-8348-4b23-8a6b-7324443a5b4f",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C9",
+      "claim": "Setting specific challenges can hamper Ebola containment efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "although setting specific challenges can hamper containment efforts (Adongo et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Adongo et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "090f7116-7b70-4001-9783-dd0c326d238f",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C10",
+      "claim": "Two Ebola vaccines are now licensed for use.",
+      "claim_type": "EXPLICIT",
+      "source": "with two vaccines now licensed for use (In press, 2023a; Woolsey and Geisbert, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to In press, 2023a and Woolsey and Geisbert, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f242e6c7-c307-42ab-a41c-b1a3e719b811",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C11",
+      "claim": "EVD outbreaks typically occur in resource-poor settings where limited communication and poor accessibility make logistics of surveillance and vaccination campaigns challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "EVD outbreaks typically occur in resource-poor settings where limited communication and poor accessibility make logistics of surveillance and vaccination campaigns challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about EVD outbreak contexts",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "662efe68-78df-4a73-8091-7f0bf1cf860b",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C12",
+      "claim": "Mathematical and statistical models have been used extensively to forecast the spread of infectious diseases, including EVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical and statistical models have been used extensively to forecast the spread of infectious diseases, including EVD (Chowell et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chowell et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "a4a01c32-c8cc-477e-bccf-289f7d83be4d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C13",
+      "claim": "Violent conflicts or flooding can seriously hinder, interrupt, or even reverse the impact of Ebola containment efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, violent conflicts or flooding can seriously hinder, interrupt, or even reverse the impact of containment efforts (Adongo et al., 2016; Wannier et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Adongo et al., 2016 and Wannier et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "689bd034-dc87-48b5-90d7-867be4070604",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C14",
+      "claim": "Changes in healthcare capacity and health-seeking behaviour of patients can strengthen or weaken efforts to reduce Ebola transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, changes in healthcare capacity and health-seeking behaviour of patients can strengthen or weaken efforts to reduce transmission (Funk et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Funk et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "146ce1a6-fba3-4ccf-b519-39d022f1d352",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C15",
+      "claim": "The timing and impact of contextual factors affecting Ebola outbreaks are notoriously difficult to predict using mathematical models.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing and impact of these factors are notoriously difficult to predict using mathematical models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the discussion of challenges in modeling contextual factors",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "a101261d-1490-4c78-83e3-1ec509c85c6d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C16",
+      "claim": "A study evaluated short-term forecasts and season-wide predictions of reports of influenza-like illness in the United States and found that humans tended to perform better than mathematical and statistical models.",
+      "claim_type": "EXPLICIT",
+      "source": "The first of these evaluated short-term forecasts and season-wide predictions of reports of influenza-like illness in the United States (Farrow et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Farrow et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "213777b5-fcf3-42c7-834b-9cad6eed40d1",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C17",
+      "claim": "Two studies compared short-term forecasts of COVID-19 cases and deaths in Germany, Poland, and the United Kingdom, finding that humans tended to perform better than models when predicting cases.",
+      "claim_type": "EXPLICIT",
+      "source": "two studies (Bosse et al., 2022; Bosse et al., 2023) compared short-term forecasts of cases of and deaths from COVID-19, firstly in Germany and Poland and secondly in the United Kingdom. All three studies found that humans tended to perform better than the mathematical and statistical models selected for comparison when predicting cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bosse et al., 2022 and Bosse et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f028336d-b6fd-4e51-9578-d08020f81d13",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C18",
+      "claim": "COVID-focused studies found that human ensembles performed worse than the ensemble prediction of models when predicting deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the COVID-focused studies found that the human ensembles performed worse than the ensemble prediction of the models when predicting deaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to COVID-focused studies (Bosse et al., 2022; Bosse et al., 2023)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "23f05ff8-f1a8-43d1-86db-d582d289357f",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C19",
+      "claim": "A study conducted early in the COVID-19 pandemic found that both experts and laypeople typically underpredicted the impact overall, but experts' forecasts were more accurate and better calibrated than laypeople.",
+      "claim_type": "EXPLICIT",
+      "source": "A study conducted early in the COVID-19 pandemic (Recchia et al., 2021) evaluated the relative ability of laypeople and experts to predict the course of the UK epidemic over the first calendar year. The study found that both experts and laypeople typically underpredicted the impact overall; however, experts' forecasts were more accurate and better calibrated than laypeople.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Recchia et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f2c369ee-004d-4af8-8757-0b2e5cf74f50",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C20",
+      "claim": "A study of expert predictions in the United States found that the ensemble outperformed every expert individually over the first year of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "A study of expert predictions in the United States (McAndrew and Reich, 2022) evaluated their weekly forecasts of case incidence and total deaths in the first year against a pooled ensemble of all predictions. The study found that the ensemble outperformed every expert individually over the period of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McAndrew and Reich, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f35d2c62-d2dc-480f-82d3-f926fa91e7b3",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C21",
+      "claim": "Experts in EVD epidemiology with knowledge of the local geography speaking English or French were identified by convenience sampling and snowball sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts in EVD epidemiology with knowledge of the local geography speaking English or French were identified originally by convenience sampling. The pool of experts was then expanded through recommendation from the identified experts (snowball sampling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "805ccea0-1051-4878-8b8a-252ca3f58320",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C22",
+      "claim": "A pilot study was carried out in November 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "A pilot study was carried out in November 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study timeline",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "521e4a31-7899-472e-816e-71024c6422fc",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C23",
+      "claim": "Monthly interviews were held over WhatsApp in December 2019, January 2020, February 2020, and March 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, monthly interviews were held over WhatsApp in December 2019, January 2020, February 2020, and March 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "1ab6dc25-7067-4ef5-8959-0c19994f4cb4",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C24",
+      "claim": "Experts were provided with an interactive map of the outbreak area showing the number of total cases during the outbreak and during the two preceding weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts were also provided with an interactive map of the outbreak area and surrounding HZs showing the number of total cases during the outbreak and during the two preceding weeks for reference (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the study methodology with reference to Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "50e01fa2-9b72-4653-b604-9749eae5a25d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C25",
+      "claim": "Experts were asked to estimate the number of reported probable and confirmed cases per health zone during the following month using the online MATCH Uncertainty Elicitation Tool.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts were asked to estimate the number of reported probable and confirmed cases they would expect per HZ during the following month using the online MATCH Uncertainty Elicitation Tool (Morris et al., 2014; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the study methodology with citation to Morris et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "81d7acc0-aa65-455d-9d02-64c5feee462c",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C26",
+      "claim": "The 'roulette' (chips and bins) method was used for expert elicitation, where experts placed 20 chips over available bins representing 5% probability each.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'roulette' (chips and bins) method was used. Experts were instructed to place a total of 20 chips over the available bins (0\u20131 cases, 2\u20134 cases, \u2026, 48\u201350 cases). Therefore, each chip represented for the expert a 5% probability that the number of cases was in the bin where the chip was placed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "7fdc0c6e-369e-4328-9b27-786510226e04",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C27",
+      "claim": "The modelling framework included an autoregressive component and a spatial component.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was formed of two components, the autoregressive component and the spatial component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the modeling methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "6e28b66a-7646-45d9-a009-5673d2cb5c4e",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C28",
+      "claim": "Two spatial kernels were used: a gravity model and an adjacency-based model.",
+      "claim_type": "EXPLICIT",
+      "source": "We used two spatial kernels, both of which use proximity of HZs to each other and their respective population size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the modeling methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d9c2a65b-2a08-4ef1-87bd-b5671a0b53e8",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C29",
+      "claim": "The model was fitted to historical data from the 60 days prior to the date the forecast was made.",
+      "claim_type": "EXPLICIT",
+      "source": "To forecast cases, we fitted the spatiotemporal model to historical data from the 60 days prior to the date the forecast was made",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the modeling methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "e5f46b37-c0f3-4cd5-8a3a-c3467cc616b5",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C30",
+      "claim": "The model was fitted using the No U-Turn Sampling (NUTS) method for Hamiltonian Monte Carlo with Stan.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit the model using the No U-Turn Sampling (NUTS) method for Hamiltonian Monte Carlo with Stan (Stan Team, 2012), a probabilistic programming framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the modeling methodology with citation to Stan Team, 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "41b376e5-ed2d-4d05-a716-77872337a273",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C31",
+      "claim": "1000 iterations were performed for each forecast date.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed 1000 iterations for each forecast date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the modeling methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "bc0b9ba8-0882-4447-80e4-fda5d8dbbfd7",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C32",
+      "claim": "Forecasts were evaluated using the Brier score.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the forecasts using the Brier score, a proper scoring rule which quantifies how accurate a forecast or a group of forecasts is when compared to true data after the event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the evaluation methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "535c0ede-384f-4ff2-bca4-fdf4d9b35828",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C33",
+      "claim": "Over the study period, 40 interviews were conducted with 15 experts.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the study period, we conducted a total of 40 interviews with 15 experts, 3 of which took place during the pilot phase (November 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "8f2b4ea4-ba8c-4f7a-851a-d3d6d8992348",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C34",
+      "claim": "Eight experts worked at the World Health Organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight experts worked at the World Health Organization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "c054f77e-d8a1-44dd-89d1-d826f4a9a7a7",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C35",
+      "claim": "Four experts worked at the London School of Hygiene & Tropical Medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "four at the London School of Hygiene & Tropical Medicine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "83e8fa47-b8d2-4784-8026-a448336d6935",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C36",
+      "claim": "Two experts worked for M\u00e9decins Sans Fronti\u00e8res.",
+      "claim_type": "EXPLICIT",
+      "source": "two for M\u00e9decins Sans Fronti\u00e8res",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "bf5830da-36f8-4810-ae88-36945c114e20",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C37",
+      "claim": "One expert worked at the DRC Ministry of Health.",
+      "claim_type": "EXPLICIT",
+      "source": "and one at the DRC Ministry of Health",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "b5624925-df34-4150-816e-4bbbe8aa171d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C38",
+      "claim": "Most experts (10/15) had more than 5 years of experience working in infectious disease epidemiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Most experts (10/15) had more than 5 years of experience working in infectious disease epidemiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d48ed875-f57b-4b9a-959a-3826225afb03",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C39",
+      "claim": "About half of the interviews (21 of 40) were conducted with experts who were in the outbreak area or had been there within 2 weeks of the interview.",
+      "claim_type": "EXPLICIT",
+      "source": "About half of the interviews (21 of 40) were conducted with experts who were in the outbreak area (defined HZs affected by EVD or Goma, the site of the international response base) or had been there within 2 weeks of the interview.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "15300e2c-00ea-4e45-9fda-2eae96172c29",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C40",
+      "claim": "Four experts had never been in the outbreak area.",
+      "claim_type": "EXPLICIT",
+      "source": "Four experts had never been in the outbreak area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "070bbac3-be5c-43cf-aadf-456ff51314eb",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C41",
+      "claim": "Experts correctly identified Mabalako as the highest-risk health zone in December, attributing an average 82% probability of exceeding 2 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts correctly identified Mabalako as the highest-risk HZ in December. They attributed an average 82% probability of exceeding 2 cases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "a135d903-3853-4df6-a244-6aa9e912443d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C42",
+      "claim": "Mabalako reported 38 cases in December, exceeding all thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Mabalako reported 38 cases that month, exceeding all thresholds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f2367cf8-8383-4366-9c02-8242ec32c559",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C43",
+      "claim": "Mandima had no reported cases in December but was assigned a relatively high probability (72%) of exceeding two cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Mandima, which had no reported cases, was assigned a relatively high probability (72%) of exceeding two cases, indicating some overestimation in this zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "73ae8072-2f76-4a91-86df-688f93ef050a",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C44",
+      "claim": "In January, Beni and Mabalako accounted for most cases (22 and 11, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In January, Beni and Mabalako again accounted for most cases (22 and 11, respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "1a56c389-7e0d-4fa2-a6a5-8ce1b638a8c6",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C45",
+      "claim": "Experts underestimated the scale of the outbreak in Beni in January, assigning 0% probability to exceeding 20 cases despite this threshold being surpassed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experts underestimated the scale of the outbreak in Beni, assigning 0% probability to exceeding 20 cases there, despite this threshold being surpassed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f9d61a33-fb2c-44b3-ae23-c28e0889a15a",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C46",
+      "claim": "Only Beni reported confirmed cases in February (9 cases), exceeding the six-case threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 11 nominated HZs, only Beni reported confirmed cases in February (9), exceeding the six-case threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f0a2b3bd-0759-486e-8b5e-49459e1354d5",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C47",
+      "claim": "Experts collectively assigned a 70% probability to Beni exceeding the six-case threshold in February.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts collectively assigned a 70% probability to this event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "aa8103d9-c05b-4769-892c-5f0cdd490cbe",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C48",
+      "claim": "No cases were reported in any health zone during March.",
+      "claim_type": "EXPLICIT",
+      "source": "No cases were reported in any HZ during March.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "44d9cbd6-19d6-4d4f-b7fd-66ac4d0fd520",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C49",
+      "claim": "The overall scores of individual experts varied between 0 and 0.6 across the four thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall scores of individual experts varied between 0 and 0.6 across the four thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "55827ce3-e51d-4893-bd40-c20ff8a70671",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C50",
+      "claim": "Experts scored best at the highest threshold (20 cases) and worst for forecasts of the lowest threshold (2 cases).",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the experts scored best at the highest threshold (20 cases) and worst for forecasts of the lowest threshold (2 cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "8899c5cd-134c-49f8-b7a5-2f6d38191861",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C51",
+      "claim": "The gravity model ranked best among all forecasts at the two-case threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the gravity model ranked best among all forecasts at the two-case threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "db60f289-0f20-400e-a041-45629633fcad",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C52",
+      "claim": "The adjacency model performed better than the experts overall for the two-case threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "The adjacency model also performed better than the experts overall for the two-case threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d94f45b4-d53e-40f3-a332-43e6a4e23a09",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C53",
+      "claim": "In March, both models performed particularly badly compared to the experts for all thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "however in March, both models performed particularly badly compared to the experts for all thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "2a327529-0f0c-4c1d-a077-493634975cd1",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C54",
+      "claim": "None of the experts performed consistently well relative to the others.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the experts performed consistently well relative to the others",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "70903e76-6628-4f35-abf8-a77fa1afc744",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C55",
+      "claim": "Experts systematically forecasted higher risk of the lowest threshold (\u22652 cases) than was warranted.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that experts systematically forecasted higher risk of the lowest threshold (\u22652 cases) than was warranted",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d4975a68-5c39-4d74-9c47-16f77e82f2a8",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C56",
+      "claim": "Experts tended to forecast lower risk of exceeding the highest threshold (\u226520 cases) than was borne out across all health zones.",
+      "claim_type": "EXPLICIT",
+      "source": "but tended to forecast lower risk of exceeding the highest threshold (\u226520 cases) than was borne out across all HZs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "6fbefa41-b69f-46a9-987b-4725763a2e2c",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C57",
+      "claim": "When calculated across all months, the bias towards over-predicting low thresholds was present in 12 of the 15 experts.",
+      "claim_type": "EXPLICIT",
+      "source": "When calculated across all months, this bias was present in 12 of the 15 experts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "7930b52b-0de9-46a9-ba58-43c90cf3560d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C58",
+      "claim": "The models did not show clear, consistent bias in either direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The models did not show clear, consistent bias in either direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "72f0a969-1e90-49af-8958-edcf9ea4d181",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C59",
+      "claim": "Experts nominated seven further health zones to forecast in December.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts nominated seven further HZs to forecast in December",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "8b63cc0c-bf0b-4883-85dc-9051cd1349f8",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C60",
+      "claim": "The only two health zones not included in the default list but exceeding two cases were Butembo and Katwa.",
+      "claim_type": "EXPLICIT",
+      "source": "The only two HZs not included in the default list but exceeding two cases were Butembo and Katwa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "3afe9aba-2308-49f4-8bc5-a40295534430",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C61",
+      "claim": "The gravity model performed comparably to some experts when forecasting for December and February in predicting flare-ups.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the Brier score (Figure 7), we found that the gravity model performed comparably to some experts when forecasting for December and February.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data from the study results with reference to Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "6ad4b103-1149-4531-9e21-336023a92ed6",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C62",
+      "claim": "The adjacency model performed worse than all the experts in every month except February when forecasting flare-ups.",
+      "claim_type": "EXPLICIT",
+      "source": "The adjacency model performed worse than all the experts in every month except February.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "4a55869d-56c1-46ca-9c83-6b9c709ada8f",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C63",
+      "claim": "In every month, the ensemble of experts did better than the models when forecasting flare-ups.",
+      "claim_type": "EXPLICIT",
+      "source": "In every month, the ensemble of experts did better than the models",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "3b12c533-8917-4f04-9401-f6d41b9fb4dd",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C64",
+      "claim": "Including the models in the ensembles reduced performance when forecasting flare-ups.",
+      "claim_type": "EXPLICIT",
+      "source": "and including the models in the ensembles reduced performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "e99d8a98-8317-4ce7-b7ec-d6761e57fe53",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C65",
+      "claim": "An ensemble combining the forecasts of all experts performed similarly to the two models.",
+      "claim_type": "EXPLICIT",
+      "source": "An ensemble combining the forecasts of all experts performed similarly to the two models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "c922da27-c2e7-4f59-8d5e-e69b205989e6",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C66",
+      "claim": "Experts showed stronger bias than models forecasting two-case threshold exceedance.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts showed stronger bias than models forecasting two-case threshold exceedance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "7e15877f-6973-431d-958d-bd9f21334ce5",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C67",
+      "claim": "Experts and models both performed better when predicting exceedance of higher thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Experts and models both performed better when predicting exceedance of higher thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d6052b39-8d1b-4f17-a4a2-7772ff2a6f65",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C68",
+      "claim": "The models tended to be better at risk-ranking areas than experts.",
+      "claim_type": "EXPLICIT",
+      "source": "The models also tended to be better at risk-ranking areas than experts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "3a8e2a76-8366-48bc-8451-6f7c0677a6ef",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C69",
+      "claim": "Both forecasting methods performed better when considering higher case thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both methods performed better when considering higher case thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "0f8c0620-debb-4c97-aec7-697361fa44a9",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C70",
+      "claim": "The better performance at higher thresholds is likely due to a combination of bias in both forecast types towards under-prediction of cases and the fact that there were few instances where the higher thresholds were reached.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely to be due to a combination of bias in both forecast types towards under-prediction of cases and the fact that there were few instances where the higher thresholds were reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "fc9a86b1-89cb-48d4-b07f-89ff6123a57f",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C71",
+      "claim": "No individual expert outperformed the ensembles overall.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual experts frequently outperformed ensembles in individual instances, no individual expert outperformed the ensembles overall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "91a6d89d-d14e-470a-b4f3-b203210f23be",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C72",
+      "claim": "The models tended to perform similarly to the ensemble representing more consistent performance across all forecasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The models tended to perform similarly to the ensemble representing more consistent performance across all forecasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d96efe26-c322-4b0a-a339-835a8f7db711",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C73",
+      "claim": "Experts' bias towards over-predicting low thresholds may be interpreted as over-cautiousness regarding the potential for geographic spread of the virus but confidence that transmission could be contained quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be interpreted as over-cautiousness from the experts regarding the potential for geographic spread of the virus but confidence that transmission could be contained quickly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "199bab97-6a49-4449-b1d2-385c9e205fe2",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C74",
+      "claim": "This study is the first to record experts' assessment of geographical risk at a local level during an epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, our study is the first to record experts' assessment of geographical risk at a local level during an epidemic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' claim about the novelty of their study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d26c8b77-c967-4ad4-9615-d6e49d4baa90",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C75",
+      "claim": "This study is the first comparison of outbreak response experts' predictions to those of models in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "and the first comparison of outbreak response experts' predictions to those of models in real time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' claim about the novelty of their study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "739a95c1-916a-43ed-9858-8c1ba8ae4647",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C76",
+      "claim": "The study only began in the closing phase of the epidemic due to the timing and logistics of setting up the questionnaire.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the timing and logistics of setting up the questionnaire, the study only began in the closing phase of the epidemic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study limitations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "7dea2e08-6ede-4ab0-9ecf-5c93eb204a22",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C77",
+      "claim": "The relative performance of experts and models may differ during different phases of the epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the relative performance of experts and models may differ during different phases of the epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about study limitations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "d9d416b8-8f44-465f-add3-7d8119ab8729",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C78",
+      "claim": "The stage of the epidemic meant that there was a substantial trend towards 'negative' results (i.e. no threshold exceedance), which is likely to favour some forecasting methods over others.",
+      "claim_type": "EXPLICIT",
+      "source": "The stage of the epidemic also meant that there was a substantial trend towards 'negative' results (i.e. no threshold exceedance), which is likely to favour some forecasting methods over others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about study limitations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "ba427b5f-ec5e-49c3-895d-a31e61195a26",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C79",
+      "claim": "Experts were not all interviewed on the same day, and interviews occurred several days before the beginning of the month they were forecasting.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, experts were not all interviewed on the same day, and interviews occurred several days before the beginning of the month they were forecasting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study limitations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "3049edc6-982e-476d-8ac5-ff2518d86feb",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C80",
+      "claim": "The information available differed both between experts and with the model, which was run considering data up to the first day of each month.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the information available differed both between experts and with the model, which was run considering data up to the first day of each month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study limitations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "80e9e782-951a-4053-a0f8-e7454d0bae70",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C81",
+      "claim": "It is possible that some of the experts involved in the study had ingested results from the authors' model or other models being used at the time.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that some of the experts involved in the study had ingested results from our model, which were available through our online dashboard, or other models being used at the time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about study limitations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "8af2fc5a-fa81-492a-8ade-f180fe9e6784",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C82",
+      "claim": "Models remain useful in outbreak response because there was no individual expert that performed consistently better than the models.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, while the models performed similarly to the ensemble forecasts of the experts, there was no individual expert that performed consistently better than the models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f048dc54-a94b-4b64-94d7-300eeb6941f9",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C83",
+      "claim": "Models are much more easily scaled and generalized, making them simple to deploy in new contexts and to adapt as epidemics grow.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, models are much more easily scaled and generalized, making them simple to deploy in new contexts and to adapt as epidemics grow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge about the properties of models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "2db168eb-119e-41f6-acca-e1c5c4359a9f",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C84",
+      "claim": "Expert interviews are time-consuming and often inconvenient, especially in the context of outbreak response activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Expert interviews are time-consuming and often inconvenient, especially in the context of outbreak response activities, which are characteristically fast paced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge about the practical challenges of expert elicitation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f79c0553-9d7a-419d-b55e-96dbc28c59bb",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C85",
+      "claim": "Models offer a more convenient route to a quantified insight, which performs comparably to the way groups of experts may think.",
+      "claim_type": "EXPLICIT",
+      "source": "Models therefore offer a more convenient route to a quantified insight, which from our results performs comparably to the way groups of experts may think.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "71fc4988-94a5-4f0e-9748-e9db7afdb673",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C87",
+      "claim": "The results support the use of models in outbreak response.",
+      "claim_type": "EXPLICIT",
+      "source": "The results support the use of models in outbreak response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "9e489ebc-7ee1-4c24-92cd-94ad7f6a2673",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C88",
+      "claim": "There could be value in combining expert opinion and modelled forecasts to support the response to future outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "There could be value in combining expert opinion and modelled forecasts to support the response to future outbreaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "30fa14e3-ef85-4071-9c62-89e58ef9cb11",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C89",
+      "claim": "The forecasts were motivated by an aim to inform site selection for a planned vaccine trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside supporting situational awareness, these forecasts were motivated by an aim to inform site selection for a planned vaccine trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study motivation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "96df6381-3288-4cca-a331-829bbf0cdfca",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C90",
+      "claim": "The objective was to identify areas that had seen no cases yet and thus were not already being supported by vaccination and other interventions, but were at high risk of still becoming affected by the EVD outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "The objective was to identify areas that had seen no cases yet and thus were not already being supported by vaccination and other interventions, but were at high risk of still becoming affected by the EVD outbreak, thus allowing estimation of efficacy (Watson-Jones et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the study objective with citation to Watson-Jones et al., 2022",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "74f33fce-407b-474e-bbc4-02998f5bda87",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C91",
+      "claim": "The model performed better than the experts when considering the lowest threshold in 4 of the 5 months covered by the survey.",
+      "claim_type": "EXPLICIT",
+      "source": "The model performed better than the experts when considering the lowest threshold in 4 of the 5 months covered by the survey",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "96c6881d-13fe-46ff-be35-29d0446ca4ef",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C92",
+      "claim": "The model performed marginally better when ranking health zones by risk of ongoing transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The model also performed marginally better when ranking HZs by risk of ongoing transmission, indicating that use of a model may improve prioritization of HZs when attributing resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the study results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "67f9a2b7-35f2-4023-856e-cef7bf3e2f74",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C93",
+      "claim": "The study results suggest that experts are better at predicting simple time series than geographic distribution of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "This may suggest that experts are better at predicting simple time series than geographic distribution of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on comparison with previous studies",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "a48bd41a-e56b-46a8-9b28-1a59da356eac",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "claim_id": "C94",
+      "claim": "The study results provide insight into how models and expert opinion could be combined when tackling future epidemics.",
+      "claim_type": "EXPLICIT",
+      "source": "and provide insight into how models and expert opinion could be combined when tackling future epidemics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "286e950c-50b9-4726-83c4-a5e68c178470",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 15 experts in EVD epidemiology through convenience and snowball sampling, conducting 40 interviews over 5 months (November 2019 - March 2020). Experts were provided with interactive maps and used the MATCH Uncertainty Elicitation Tool with a 'roulette' method to estimate case probabilities across health zones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 and C33-C40 provide comprehensive methodological details about expert recruitment, interview procedures, and participant characteristics. The sampling approach, elicitation methods, and expert demographics are clearly documented with specific numbers and institutional affiliations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "ee16e251-bc33-4362-be2d-a8e5cf526343",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A spatiotemporal modeling framework was developed with autoregressive and spatial components, using two spatial kernels (gravity and adjacency models). The model was fitted to 60 days of historical data using Hamiltonian Monte Carlo (NUTS) with Stan, performing 1000 iterations per forecast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 describe the modeling methodology in detail. The mathematical framework, spatial kernels, fitting procedure, and computational implementation are explicitly stated with appropriate technical specifications and citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "a4da39f5-cc53-45d9-91a6-2101d108fd2c",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Forecasts were evaluated using the Brier score as the primary performance metric.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 clearly states the evaluation methodology. The Brier score is an appropriate proper scoring rule for probabilistic forecasts, though additional metrics could strengthen the evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "2164a4cd-6781-41ca-bdcc-ae1355e06291",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Expert forecasts showed variable accuracy across months. In December, experts correctly identified Mabalako as highest risk (82% probability, 38 actual cases) but overestimated Mandima (72% probability, 0 cases). In January, experts underestimated Beni (0% probability of exceeding 20 cases, but 22 cases occurred). February and March showed declining case numbers with experts generally anticipating the trend.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 present specific forecast results with quantitative probabilities and actual case counts. The data demonstrate both successes and failures in expert predictions, providing concrete examples of forecast performance across different months and health zones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Expert Brier scores varied between 0 and 0.6 across thresholds, performing best at the highest threshold (\u226520 cases) and worst at the lowest (\u22652 cases). The gravity model ranked best overall at the two-case threshold, and both models outperformed experts at this threshold except in March. No individual expert performed consistently well.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 provide quantitative performance comparisons between experts and models. The Brier score results are specific and show clear patterns, though the evaluation is limited to one metric. The finding that no expert consistently outperformed others is important for ensemble justification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "387061b9-ff7b-426d-b5ae-082961e40fec",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experts systematically over-predicted low thresholds (\u22652 cases) and under-predicted high thresholds (\u226520 cases), with this bias present in 12 of 15 experts. Models showed no clear consistent bias in either direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 describe systematic biases in expert forecasts using the hazard gap metric. The finding that 12/15 experts showed the same bias pattern is compelling evidence of systematic over-cautiousness. The contrast with model behavior is clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f99f0ff0-159b-412e-ab85-512d6b227d28",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "When experts nominated additional health zones at risk (7 in December, 4 in January, 4 in February, 1 in March), only Butembo and Katwa exceeded two cases but were nominated by only 2/10 experts. For flare-up prediction, the gravity model performed comparably to some experts in December and February, while the adjacency model performed worse than all experts except in February. Expert ensembles outperformed models in every month, and including models reduced ensemble performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 evaluate the ability to predict flare-ups in new locations. The data show experts had limited success identifying new outbreak locations, and models performed poorly at this task. The finding that including models worsened ensemble performance is notable but may reflect the specific challenge of predicting rare events.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "57f745bc-9bc8-486d-8669-9c2dee348ff1",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Overall, expert ensembles performed similarly to the two models. Experts showed stronger bias than models at the two-case threshold. Both experts and models performed better at higher thresholds, and models were better at risk-ranking areas than experts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 summarize key comparative findings. The similar overall performance between expert ensembles and models is the central result, supported by the Brier score data. The superior risk-ranking by models is supported by Figure 5\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "df7172ed-3bc1-4c5d-9fd9-eee069835d9f",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both forecasting methods performed better at higher case thresholds, likely due to bias toward under-prediction and few instances of high thresholds being reached.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 explain the threshold-dependent performance pattern. The interpretation in C70 is reasonable given the bias analysis and the declining epidemic phase, though alternative explanations could be considered.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "000f27dc-2eda-4446-bd80-82cba2d9777c",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "No individual expert outperformed ensembles overall, though individuals occasionally performed better in specific instances. Models performed similarly to ensembles, representing more consistent performance across forecasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 support the value of ensemble approaches. The finding that no individual expert consistently outperformed the ensemble justifies the ensemble methodology and suggests models provide comparable aggregate performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f1c6bc68-fc77-4d5e-b0de-941222effb87",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The expert bias toward over-predicting low thresholds may reflect over-cautiousness about geographic spread combined with confidence in rapid containment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 offers an interpretation of the bias pattern, but this is speculative. While the interpretation is plausible given the outbreak context, no direct evidence (e.g., expert interviews about reasoning) supports this specific explanation over alternatives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "2550b62c-d07e-4066-850a-d678fde12262",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This study is the first to record experts' geographical risk assessment at local level during an epidemic and the first real-time comparison of outbreak response experts' predictions to models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 assert novelty but provide limited evidence. While the authors cite previous studies on different diseases/contexts, comprehensive verification that no prior work has done local-level geographic expert elicitation during an outbreak would require systematic review. The claim is plausible but not definitively supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study has several limitations: it began during the epidemic's closing phase when performance may differ from other phases; the declining phase created a trend toward negative results favoring some methods; experts were interviewed on different days with varying information availability compared to models; and experts may have been influenced by existing model outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C81 acknowledge important methodological limitations. These are clearly stated and appropriately qualified (e.g., C77 and C81 use conditional language). The limitations regarding timing, information asymmetry, and potential contamination are valid concerns that affect interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "548cb57b-5249-41f8-9304-7c755ea5de40",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Models remain useful in outbreak response because no individual expert consistently outperformed them, models are easily scaled and generalized, and expert interviews are time-consuming. Models offer a convenient route to quantified insights performing comparably to expert groups, supporting their use in outbreak response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 and C87 present arguments for model utility based on the study results. The reasoning is logical: comparable performance (C65, C71-C72) combined with practical advantages (C83-C84) supports continued model use. However, the conclusion depends on the specific models tested and outbreak phase studied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "835ae5b9-035f-42b3-8e55-3fa870b7743a",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "There could be value in combining expert opinion and modeled forecasts to support future outbreak responses, and the study provides insight into how this combination might work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88 and C94 suggest combining approaches but provide limited concrete guidance. While C64 shows that including models reduced flare-up prediction performance, the overall similar performance (C65) suggests potential complementarity. However, the study doesn't test optimal combination strategies or provide clear recommendations for when/how to combine approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "5364462a-49eb-4b1d-b5d1-3418be982838",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The forecasts were motivated by informing site selection for a planned vaccine trial, aiming to identify high-risk areas without existing cases or interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 describe the practical motivation for the forecasting work. This context is clearly stated with appropriate citation (Watson-Jones et al., 2022) and explains the focus on predicting new outbreak locations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "3bf3409b-170a-454b-a960-c277302e6ea7",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Models performed better than experts at the lowest threshold in 4 of 5 months and marginally better at risk-ranking health zones, suggesting models may improve resource prioritization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 highlight specific model advantages. The 4/5 months result is supported by the Brier score data (Figure 5), and the risk-ranking advantage is shown in Figure 5\u2014figure supplement 1. The inference about resource prioritization is reasonable but not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "61de8fac-ed63-47f2-bf3b-b55787f7867d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The results may suggest experts are better at predicting simple time series than geographic distribution of cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 is speculative, comparing this study's results to previous studies on different diseases and forecast types. The study doesn't directly test time series vs. spatial forecasting by the same experts, making this inference weak. Alternative explanations for differences between studies exist.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background on Ebola virus disease: EVD first emerged in 1976 in Zaire, with epidemics occurring every 12-24 months. The 2018-2020 DRC outbreak resulted in over 3300 cases and 2100 deaths. Transmission occurs through direct contact during symptomatic infection. Control measures include isolation, contact tracing, safe burials, and vaccination, though contextual factors like conflict and healthcare changes can affect containment. Mathematical models have been used to forecast EVD spread, but contextual factors are difficult to predict.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide standard background information on EVD, supported by appropriate citations. These establish the context for the study but don't represent novel findings. The claims about the 2018-2020 outbreak are supported by WHO data and Figure 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "db4137d8-056c-4b74-92d1-0132ded3317d",
+      "content_id": "3bde1e24-0808-4130-9547-952c40b71f5d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Previous studies comparing human and model forecasts for influenza and COVID-19 found that humans generally performed better than models for case predictions, but worse for death predictions in COVID-19 studies. Expert ensembles typically outperformed individual experts, and experts were more accurate than laypeople.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 accurately summarize prior literature with appropriate citations. These establish the context for comparing expert and model forecasts but represent review of existing work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "c9f685a6-baee-45d3-8b3b-28e395bced6f",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study recruited 15 experts in EVD epidemiology through convenience and snowball sampling, conducted 40 interviews from November 2019 to March 2020, and used a structured elicitation methodology (roulette method) to collect expert forecasts. Two mathematical models (gravity and adjacency) were developed using spatiotemporal modeling approaches and fitted to 60 days of historical data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praised the methodology, with one stating 'A strength of the analysis is use of consistent methodology to elicit predictions from experts during an outbreak that can be compared to observations, and that are comparable to predictions from the models.' No concerns were raised about the study design or data collection procedures.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Expert forecasts showed mixed accuracy across months: correctly identifying Mabalako as highest-risk in December (82% probability, 38 actual cases), but underestimating Beni in January (0% probability of exceeding 20 cases despite this occurring), and accurately predicting Beni in February (70% probability of exceeding 6 cases, 9 actual cases). No cases were reported in March.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these descriptive findings without challenge. One reviewer summarized: 'Their key result concerned predicted numbers of cases in a defined set of zones. They found that neither the ensemble of models nor the group of experts produced consistently better predictions.' The specific monthly results are treated as factual observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "469047d5-49e1-410c-94d6-f13c5f50ff7e",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Individual expert performance varied (Brier scores 0-0.6), with experts performing best at the highest threshold (20 cases) and worst at the lowest (2 cases). The gravity model ranked best at the two-case threshold, outperforming experts overall at this threshold. Both models performed particularly poorly in March compared to experts. No expert performed consistently well across all forecasts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirmed these comparative findings, stating 'neither model performed consistently better than the other, and no expert's predictions were consistently better than the others.' The editor noted 'The evidence supporting the conclusions is convincing.' No methodological concerns were raised about the Brier score analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "0b9f86f2-f408-4e04-85b2-6dd6a9196268",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Experts systematically over-predicted risk at the lowest threshold (\u22652 cases) and under-predicted risk at the highest threshold (\u226520 cases), with this bias present in 12 of 15 experts. Models showed no clear, consistent directional bias.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these bias findings without challenge. The systematic nature of expert bias is implicitly acknowledged in reviewer discussions of forecast performance patterns. No concerns were raised about the bias analysis methodology or interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "When experts nominated additional health zones beyond the default list (7 zones in December), they consistently outperformed models in identifying flare-ups. The gravity model performed comparably to some experts in December and February, but the adjacency model performed worse than all experts except in February. Expert ensembles outperformed models in every month, and including models in ensembles reduced performance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed this finding, stating 'Experts were also able to specify other zones in which they expected to see cases in the next month. For this part of the analysis, experts consistently outperformed the models.' This is treated as a key result distinguishing expert capabilities from model performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Expert ensembles performed similarly to the two models overall. Experts showed stronger bias than models at the two-case threshold, but both performed better at higher thresholds. Models were better at risk-ranking areas than experts. No individual expert outperformed ensembles overall, while models showed more consistent performance across forecasts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these comparative performance findings, with one stating 'They found that neither the ensemble of models nor the group of experts produced consistently better predictions.' The editor affirmed 'The evidence supporting the conclusions is convincing.' No concerns were raised about these comparative analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "c721a366-ca21-45c6-a295-529a2cc1f836",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors claim this is the first study to record experts' assessment of geographical risk at a local level during an epidemic and the first real-time comparison of outbreak response experts' predictions to models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accepted the novelty claim, with one stating 'Both individual experts and mathematical models are commonly used to support outbreak response, but the relative strengths of each information source are rarely quantified.' Another noted this provides 'an in-depth analysis' that is 'important and unique.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "f0ff3d25-b925-4d53-b243-f886bf8db637",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study has several limitations: it began only in the closing phase of the epidemic, which may have affected relative performance of experts versus models; the trend toward negative results may have favored certain forecasting methods; experts were interviewed on different days with varying information availability; and experts may have been influenced by existing model outputs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raised concerns about these limitations. One noted 'The elicitation was performed in four months near the end of the outbreak' and that 'The comparison of models to experts may therefore not be applicable to early stages of an outbreak when expert opinions may be less well-tuned.' Another stated 'forecast performance is known to be inconsistent and unpredictable across many dimensions' and emphasized the need to 'replicate such studies.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors conclude that models remain useful in outbreak response because no individual expert consistently outperformed them, models are easily scaled and generalized, and expert interviews are time-consuming. Models offer a convenient route to quantified insights performing comparably to expert groups. The results support using models in outbreak response and suggest value in combining expert opinion with modeled forecasts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirmed these conclusions, with one stating 'This research has important implications for both researchers and policy-makers' and noting the value of 'combining expert opinion with model outputs.' Another commended it as 'an interesting and important contribution.' The editor stated the evidence is 'convincing' and the work 'will be of interest' to relevant stakeholders.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6",
+      "content_id": "33d29b3b-af82-4d58-8af2-e3f63698a9d1",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Models performed better than experts at the lowest threshold in 4 of 5 months and marginally better at risk-ranking health zones. This may suggest experts are better at predicting simple time series than geographic distribution, and provides insight into combining models and expert opinion for future epidemics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these interpretive findings without challenge. One reviewer noted the study 'can help to guide methods for combining expert opinion with model outputs' and another stated it provides 'insight into how models and expert opinion could be combined.' The comparative performance findings are treated as established results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f35d2c62-d2dc-480f-82d3-f926fa91e7b3",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "805ccea0-1051-4878-8b8a-252ca3f58320",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "521e4a31-7899-472e-816e-71024c6422fc",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "1ab6dc25-7067-4ef5-8959-0c19994f4cb4",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "50e01fa2-9b72-4653-b604-9749eae5a25d",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "81d7acc0-aa65-455d-9d02-64c5feee462c",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "535c0ede-384f-4ff2-bca4-fdf4d9b35828",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "8f2b4ea4-ba8c-4f7a-851a-d3d6d8992348",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "c054f77e-d8a1-44dd-89d1-d826f4a9a7a7",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "83e8fa47-b8d2-4784-8026-a448336d6935",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "bf5830da-36f8-4810-ae88-36945c114e20",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "b5624925-df34-4150-816e-4bbbe8aa171d",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "d48ed875-f57b-4b9a-959a-3826225afb03",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "15300e2c-00ea-4e45-9fda-2eae96172c29",
+      "result_id": "286e950c-50b9-4726-83c4-a5e68c178470"
+    },
+    {
+      "claim_id": "7fdc0c6e-369e-4328-9b27-786510226e04",
+      "result_id": "ee16e251-bc33-4362-be2d-a8e5cf526343"
+    },
+    {
+      "claim_id": "6e28b66a-7646-45d9-a009-5673d2cb5c4e",
+      "result_id": "ee16e251-bc33-4362-be2d-a8e5cf526343"
+    },
+    {
+      "claim_id": "d9c2a65b-2a08-4ef1-87bd-b5671a0b53e8",
+      "result_id": "ee16e251-bc33-4362-be2d-a8e5cf526343"
+    },
+    {
+      "claim_id": "e5f46b37-c0f3-4cd5-8a3a-c3467cc616b5",
+      "result_id": "ee16e251-bc33-4362-be2d-a8e5cf526343"
+    },
+    {
+      "claim_id": "41b376e5-ed2d-4d05-a716-77872337a273",
+      "result_id": "ee16e251-bc33-4362-be2d-a8e5cf526343"
+    },
+    {
+      "claim_id": "bc0b9ba8-0882-4447-80e4-fda5d8dbbfd7",
+      "result_id": "a4da39f5-cc53-45d9-91a6-2101d108fd2c"
+    },
+    {
+      "claim_id": "070bbac3-be5c-43cf-aadf-456ff51314eb",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "a135d903-3853-4df6-a244-6aa9e912443d",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "f2367cf8-8383-4366-9c02-8242ec32c559",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "73ae8072-2f76-4a91-86df-688f93ef050a",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "1a56c389-7e0d-4fa2-a6a5-8ce1b638a8c6",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "f9d61a33-fb2c-44b3-ae23-c28e0889a15a",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "f0a2b3bd-0759-486e-8b5e-49459e1354d5",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "aa8103d9-c05b-4769-892c-5f0cdd490cbe",
+      "result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291"
+    },
+    {
+      "claim_id": "44d9cbd6-19d6-4d4f-b7fd-66ac4d0fd520",
+      "result_id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040"
+    },
+    {
+      "claim_id": "55827ce3-e51d-4893-bd40-c20ff8a70671",
+      "result_id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040"
+    },
+    {
+      "claim_id": "8899c5cd-134c-49f8-b7a5-2f6d38191861",
+      "result_id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040"
+    },
+    {
+      "claim_id": "db60f289-0f20-400e-a041-45629633fcad",
+      "result_id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040"
+    },
+    {
+      "claim_id": "d94f45b4-d53e-40f3-a332-43e6a4e23a09",
+      "result_id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040"
+    },
+    {
+      "claim_id": "2a327529-0f0c-4c1d-a077-493634975cd1",
+      "result_id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040"
+    },
+    {
+      "claim_id": "70903e76-6628-4f35-abf8-a77fa1afc744",
+      "result_id": "387061b9-ff7b-426d-b5ae-082961e40fec"
+    },
+    {
+      "claim_id": "d4975a68-5c39-4d74-9c47-16f77e82f2a8",
+      "result_id": "387061b9-ff7b-426d-b5ae-082961e40fec"
+    },
+    {
+      "claim_id": "6fbefa41-b69f-46a9-987b-4725763a2e2c",
+      "result_id": "387061b9-ff7b-426d-b5ae-082961e40fec"
+    },
+    {
+      "claim_id": "7930b52b-0de9-46a9-ba58-43c90cf3560d",
+      "result_id": "387061b9-ff7b-426d-b5ae-082961e40fec"
+    },
+    {
+      "claim_id": "72f0a969-1e90-49af-8958-edcf9ea4d181",
+      "result_id": "f99f0ff0-159b-412e-ab85-512d6b227d28"
+    },
+    {
+      "claim_id": "8b63cc0c-bf0b-4883-85dc-9051cd1349f8",
+      "result_id": "f99f0ff0-159b-412e-ab85-512d6b227d28"
+    },
+    {
+      "claim_id": "3afe9aba-2308-49f4-8bc5-a40295534430",
+      "result_id": "f99f0ff0-159b-412e-ab85-512d6b227d28"
+    },
+    {
+      "claim_id": "6ad4b103-1149-4531-9e21-336023a92ed6",
+      "result_id": "f99f0ff0-159b-412e-ab85-512d6b227d28"
+    },
+    {
+      "claim_id": "4a55869d-56c1-46ca-9c83-6b9c709ada8f",
+      "result_id": "f99f0ff0-159b-412e-ab85-512d6b227d28"
+    },
+    {
+      "claim_id": "3b12c533-8917-4f04-9401-f6d41b9fb4dd",
+      "result_id": "f99f0ff0-159b-412e-ab85-512d6b227d28"
+    },
+    {
+      "claim_id": "e99d8a98-8317-4ce7-b7ec-d6761e57fe53",
+      "result_id": "57f745bc-9bc8-486d-8669-9c2dee348ff1"
+    },
+    {
+      "claim_id": "c922da27-c2e7-4f59-8d5e-e69b205989e6",
+      "result_id": "57f745bc-9bc8-486d-8669-9c2dee348ff1"
+    },
+    {
+      "claim_id": "7e15877f-6973-431d-958d-bd9f21334ce5",
+      "result_id": "57f745bc-9bc8-486d-8669-9c2dee348ff1"
+    },
+    {
+      "claim_id": "d6052b39-8d1b-4f17-a4a2-7772ff2a6f65",
+      "result_id": "57f745bc-9bc8-486d-8669-9c2dee348ff1"
+    },
+    {
+      "claim_id": "3a8e2a76-8366-48bc-8451-6f7c0677a6ef",
+      "result_id": "df7172ed-3bc1-4c5d-9fd9-eee069835d9f"
+    },
+    {
+      "claim_id": "0f8c0620-debb-4c97-aec7-697361fa44a9",
+      "result_id": "df7172ed-3bc1-4c5d-9fd9-eee069835d9f"
+    },
+    {
+      "claim_id": "fc9a86b1-89cb-48d4-b07f-89ff6123a57f",
+      "result_id": "000f27dc-2eda-4446-bd80-82cba2d9777c"
+    },
+    {
+      "claim_id": "91a6d89d-d14e-470a-b4f3-b203210f23be",
+      "result_id": "000f27dc-2eda-4446-bd80-82cba2d9777c"
+    },
+    {
+      "claim_id": "d96efe26-c322-4b0a-a339-835a8f7db711",
+      "result_id": "f1c6bc68-fc77-4d5e-b0de-941222effb87"
+    },
+    {
+      "claim_id": "199bab97-6a49-4449-b1d2-385c9e205fe2",
+      "result_id": "2550b62c-d07e-4066-850a-d678fde12262"
+    },
+    {
+      "claim_id": "d26c8b77-c967-4ad4-9615-d6e49d4baa90",
+      "result_id": "2550b62c-d07e-4066-850a-d678fde12262"
+    },
+    {
+      "claim_id": "739a95c1-916a-43ed-9858-8c1ba8ae4647",
+      "result_id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c"
+    },
+    {
+      "claim_id": "7dea2e08-6ede-4ab0-9ecf-5c93eb204a22",
+      "result_id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c"
+    },
+    {
+      "claim_id": "d9d416b8-8f44-465f-add3-7d8119ab8729",
+      "result_id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c"
+    },
+    {
+      "claim_id": "ba427b5f-ec5e-49c3-895d-a31e61195a26",
+      "result_id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c"
+    },
+    {
+      "claim_id": "3049edc6-982e-476d-8ac5-ff2518d86feb",
+      "result_id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c"
+    },
+    {
+      "claim_id": "80e9e782-951a-4053-a0f8-e7454d0bae70",
+      "result_id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c"
+    },
+    {
+      "claim_id": "8af2fc5a-fa81-492a-8ade-f180fe9e6784",
+      "result_id": "548cb57b-5249-41f8-9304-7c755ea5de40"
+    },
+    {
+      "claim_id": "f048dc54-a94b-4b64-94d7-300eeb6941f9",
+      "result_id": "548cb57b-5249-41f8-9304-7c755ea5de40"
+    },
+    {
+      "claim_id": "2db168eb-119e-41f6-acca-e1c5c4359a9f",
+      "result_id": "548cb57b-5249-41f8-9304-7c755ea5de40"
+    },
+    {
+      "claim_id": "f79c0553-9d7a-419d-b55e-96dbc28c59bb",
+      "result_id": "548cb57b-5249-41f8-9304-7c755ea5de40"
+    },
+    {
+      "claim_id": "71fc4988-94a5-4f0e-9748-e9db7afdb673",
+      "result_id": "548cb57b-5249-41f8-9304-7c755ea5de40"
+    },
+    {
+      "claim_id": "9e489ebc-7ee1-4c24-92cd-94ad7f6a2673",
+      "result_id": "835ae5b9-035f-42b3-8e55-3fa870b7743a"
+    },
+    {
+      "claim_id": "a48bd41a-e56b-46a8-9b28-1a59da356eac",
+      "result_id": "835ae5b9-035f-42b3-8e55-3fa870b7743a"
+    },
+    {
+      "claim_id": "30fa14e3-ef85-4071-9c62-89e58ef9cb11",
+      "result_id": "5364462a-49eb-4b1d-b5d1-3418be982838"
+    },
+    {
+      "claim_id": "96df6381-3288-4cca-a331-829bbf0cdfca",
+      "result_id": "5364462a-49eb-4b1d-b5d1-3418be982838"
+    },
+    {
+      "claim_id": "74f33fce-407b-474e-bbc4-02998f5bda87",
+      "result_id": "3bf3409b-170a-454b-a960-c277302e6ea7"
+    },
+    {
+      "claim_id": "96c6881d-13fe-46ff-be35-29d0446ca4ef",
+      "result_id": "3bf3409b-170a-454b-a960-c277302e6ea7"
+    },
+    {
+      "claim_id": "67f9a2b7-35f2-4023-856e-cef7bf3e2f74",
+      "result_id": "61de8fac-ed63-47f2-bf3b-b55787f7867d"
+    },
+    {
+      "claim_id": "de78398c-5cad-4ac2-be87-c2021fb4f016",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "576f75a1-49da-47b0-b333-4c2fc178e626",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "6edea5af-0d24-4cd9-9c37-ae791b4f6ca9",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "6c2cfd9d-1cf0-44ca-a850-6e0df7ef3116",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "f0070ba8-21a7-42fa-8290-430c65aca6fe",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "157dd47e-4b7d-42ed-b3c5-bc3b7865990e",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "58fac9cc-e2e5-4123-af4b-7f5df19347f0",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "722f4618-0b7b-4e5e-9c3a-387fa9c72ac5",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "f751e9bb-8348-4b23-8a6b-7324443a5b4f",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "090f7116-7b70-4001-9783-dd0c326d238f",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "f242e6c7-c307-42ab-a41c-b1a3e719b811",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "662efe68-78df-4a73-8091-7f0bf1cf860b",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "a4a01c32-c8cc-477e-bccf-289f7d83be4d",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "689bd034-dc87-48b5-90d7-867be4070604",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "146ce1a6-fba3-4ccf-b519-39d022f1d352",
+      "result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7"
+    },
+    {
+      "claim_id": "a101261d-1490-4c78-83e3-1ec509c85c6d",
+      "result_id": "db4137d8-056c-4b74-92d1-0132ded3317d"
+    },
+    {
+      "claim_id": "213777b5-fcf3-42c7-834b-9cad6eed40d1",
+      "result_id": "db4137d8-056c-4b74-92d1-0132ded3317d"
+    },
+    {
+      "claim_id": "f028336d-b6fd-4e51-9578-d08020f81d13",
+      "result_id": "db4137d8-056c-4b74-92d1-0132ded3317d"
+    },
+    {
+      "claim_id": "23f05ff8-f1a8-43d1-86db-d582d289357f",
+      "result_id": "db4137d8-056c-4b74-92d1-0132ded3317d"
+    },
+    {
+      "claim_id": "f2c369ee-004d-4af8-8757-0b2e5cf74f50",
+      "result_id": "db4137d8-056c-4b74-92d1-0132ded3317d"
+    },
+    {
+      "claim_id": "f35d2c62-d2dc-480f-82d3-f926fa91e7b3",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "805ccea0-1051-4878-8b8a-252ca3f58320",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "521e4a31-7899-472e-816e-71024c6422fc",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "1ab6dc25-7067-4ef5-8959-0c19994f4cb4",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "50e01fa2-9b72-4653-b604-9749eae5a25d",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "81d7acc0-aa65-455d-9d02-64c5feee462c",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "7fdc0c6e-369e-4328-9b27-786510226e04",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "6e28b66a-7646-45d9-a009-5673d2cb5c4e",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "d9c2a65b-2a08-4ef1-87bd-b5671a0b53e8",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "e5f46b37-c0f3-4cd5-8a3a-c3467cc616b5",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "41b376e5-ed2d-4d05-a716-77872337a273",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "bc0b9ba8-0882-4447-80e4-fda5d8dbbfd7",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "535c0ede-384f-4ff2-bca4-fdf4d9b35828",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "8f2b4ea4-ba8c-4f7a-851a-d3d6d8992348",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "c054f77e-d8a1-44dd-89d1-d826f4a9a7a7",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "83e8fa47-b8d2-4784-8026-a448336d6935",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "bf5830da-36f8-4810-ae88-36945c114e20",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "b5624925-df34-4150-816e-4bbbe8aa171d",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "d48ed875-f57b-4b9a-959a-3826225afb03",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "15300e2c-00ea-4e45-9fda-2eae96172c29",
+      "result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f"
+    },
+    {
+      "claim_id": "070bbac3-be5c-43cf-aadf-456ff51314eb",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "a135d903-3853-4df6-a244-6aa9e912443d",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "f2367cf8-8383-4366-9c02-8242ec32c559",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "73ae8072-2f76-4a91-86df-688f93ef050a",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "1a56c389-7e0d-4fa2-a6a5-8ce1b638a8c6",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "f9d61a33-fb2c-44b3-ae23-c28e0889a15a",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "f0a2b3bd-0759-486e-8b5e-49459e1354d5",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "aa8103d9-c05b-4769-892c-5f0cdd490cbe",
+      "result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2"
+    },
+    {
+      "claim_id": "44d9cbd6-19d6-4d4f-b7fd-66ac4d0fd520",
+      "result_id": "469047d5-49e1-410c-94d6-f13c5f50ff7e"
+    },
+    {
+      "claim_id": "55827ce3-e51d-4893-bd40-c20ff8a70671",
+      "result_id": "469047d5-49e1-410c-94d6-f13c5f50ff7e"
+    },
+    {
+      "claim_id": "8899c5cd-134c-49f8-b7a5-2f6d38191861",
+      "result_id": "469047d5-49e1-410c-94d6-f13c5f50ff7e"
+    },
+    {
+      "claim_id": "db60f289-0f20-400e-a041-45629633fcad",
+      "result_id": "469047d5-49e1-410c-94d6-f13c5f50ff7e"
+    },
+    {
+      "claim_id": "d94f45b4-d53e-40f3-a332-43e6a4e23a09",
+      "result_id": "469047d5-49e1-410c-94d6-f13c5f50ff7e"
+    },
+    {
+      "claim_id": "2a327529-0f0c-4c1d-a077-493634975cd1",
+      "result_id": "469047d5-49e1-410c-94d6-f13c5f50ff7e"
+    },
+    {
+      "claim_id": "70903e76-6628-4f35-abf8-a77fa1afc744",
+      "result_id": "0b9f86f2-f408-4e04-85b2-6dd6a9196268"
+    },
+    {
+      "claim_id": "d4975a68-5c39-4d74-9c47-16f77e82f2a8",
+      "result_id": "0b9f86f2-f408-4e04-85b2-6dd6a9196268"
+    },
+    {
+      "claim_id": "6fbefa41-b69f-46a9-987b-4725763a2e2c",
+      "result_id": "0b9f86f2-f408-4e04-85b2-6dd6a9196268"
+    },
+    {
+      "claim_id": "7930b52b-0de9-46a9-ba58-43c90cf3560d",
+      "result_id": "0b9f86f2-f408-4e04-85b2-6dd6a9196268"
+    },
+    {
+      "claim_id": "72f0a969-1e90-49af-8958-edcf9ea4d181",
+      "result_id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0"
+    },
+    {
+      "claim_id": "8b63cc0c-bf0b-4883-85dc-9051cd1349f8",
+      "result_id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0"
+    },
+    {
+      "claim_id": "3afe9aba-2308-49f4-8bc5-a40295534430",
+      "result_id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0"
+    },
+    {
+      "claim_id": "6ad4b103-1149-4531-9e21-336023a92ed6",
+      "result_id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0"
+    },
+    {
+      "claim_id": "4a55869d-56c1-46ca-9c83-6b9c709ada8f",
+      "result_id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0"
+    },
+    {
+      "claim_id": "3b12c533-8917-4f04-9401-f6d41b9fb4dd",
+      "result_id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0"
+    },
+    {
+      "claim_id": "e99d8a98-8317-4ce7-b7ec-d6761e57fe53",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "c922da27-c2e7-4f59-8d5e-e69b205989e6",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "7e15877f-6973-431d-958d-bd9f21334ce5",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "d6052b39-8d1b-4f17-a4a2-7772ff2a6f65",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "3a8e2a76-8366-48bc-8451-6f7c0677a6ef",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "0f8c0620-debb-4c97-aec7-697361fa44a9",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "fc9a86b1-89cb-48d4-b07f-89ff6123a57f",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "91a6d89d-d14e-470a-b4f3-b203210f23be",
+      "result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579"
+    },
+    {
+      "claim_id": "199bab97-6a49-4449-b1d2-385c9e205fe2",
+      "result_id": "c721a366-ca21-45c6-a295-529a2cc1f836"
+    },
+    {
+      "claim_id": "d26c8b77-c967-4ad4-9615-d6e49d4baa90",
+      "result_id": "c721a366-ca21-45c6-a295-529a2cc1f836"
+    },
+    {
+      "claim_id": "739a95c1-916a-43ed-9858-8c1ba8ae4647",
+      "result_id": "f0ff3d25-b925-4d53-b243-f886bf8db637"
+    },
+    {
+      "claim_id": "7dea2e08-6ede-4ab0-9ecf-5c93eb204a22",
+      "result_id": "f0ff3d25-b925-4d53-b243-f886bf8db637"
+    },
+    {
+      "claim_id": "d9d416b8-8f44-465f-add3-7d8119ab8729",
+      "result_id": "f0ff3d25-b925-4d53-b243-f886bf8db637"
+    },
+    {
+      "claim_id": "ba427b5f-ec5e-49c3-895d-a31e61195a26",
+      "result_id": "f0ff3d25-b925-4d53-b243-f886bf8db637"
+    },
+    {
+      "claim_id": "3049edc6-982e-476d-8ac5-ff2518d86feb",
+      "result_id": "f0ff3d25-b925-4d53-b243-f886bf8db637"
+    },
+    {
+      "claim_id": "80e9e782-951a-4053-a0f8-e7454d0bae70",
+      "result_id": "f0ff3d25-b925-4d53-b243-f886bf8db637"
+    },
+    {
+      "claim_id": "8af2fc5a-fa81-492a-8ade-f180fe9e6784",
+      "result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559"
+    },
+    {
+      "claim_id": "f048dc54-a94b-4b64-94d7-300eeb6941f9",
+      "result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559"
+    },
+    {
+      "claim_id": "2db168eb-119e-41f6-acca-e1c5c4359a9f",
+      "result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559"
+    },
+    {
+      "claim_id": "f79c0553-9d7a-419d-b55e-96dbc28c59bb",
+      "result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559"
+    },
+    {
+      "claim_id": "71fc4988-94a5-4f0e-9748-e9db7afdb673",
+      "result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559"
+    },
+    {
+      "claim_id": "9e489ebc-7ee1-4c24-92cd-94ad7f6a2673",
+      "result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559"
+    },
+    {
+      "claim_id": "74f33fce-407b-474e-bbc4-02998f5bda87",
+      "result_id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6"
+    },
+    {
+      "claim_id": "96c6881d-13fe-46ff-be35-29d0446ca4ef",
+      "result_id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6"
+    },
+    {
+      "claim_id": "67f9a2b7-35f2-4023-856e-cef7bf3e2f74",
+      "result_id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6"
+    },
+    {
+      "claim_id": "a48bd41a-e56b-46a8-9b28-1a59da356eac",
+      "result_id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "40c3de55-e90e-48df-93ea-a0ecb24558d9",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "286e950c-50b9-4726-83c4-a5e68c178470",
+      "peer_result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate methodology claims (C21-C26, C33-C40) as SUPPORTED. OpenEval focuses on comprehensive documentation of expert recruitment and interview procedures. Peer review praises the consistent methodology for eliciting predictions. OpenEval also covers modeling methodology (C27-C31) and evaluation (C32) which peer review includes in the same result, showing broader grouping by peer reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "9c0b8879-7adc-4eca-81d1-cbb166dc5a66",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "ee16e251-bc33-4362-be2d-a8e5cf526343",
+      "peer_result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates modeling methodology claims (C27-C31) as SUPPORTED with focus on mathematical framework and technical specifications. Peer review includes these same claims in their broader methodology evaluation (R1), treating them as part of the overall study design without separate technical assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "32451a36-b933-455c-9fc0-f843479f0ebb",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "a4da39f5-cc53-45d9-91a6-2101d108fd2c",
+      "peer_result_id": "c9f685a6-baee-45d3-8b3b-28e395bced6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates evaluation methodology (C32, Brier score) as SUPPORTED but notes additional metrics could strengthen analysis. Peer review includes C32 in their overall methodology assessment without specific comment on the scoring approach or suggesting additional metrics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "56c95a81-6cb5-439a-ae6c-1b64d520bd5d",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "2164a4cd-6781-41ca-bdcc-ae1355e06291",
+      "peer_result_id": "b97d9a92-dade-4927-80aa-f9a6d16a1df2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on forecast results (C41-C48). Both evaluate as SUPPORTED. OpenEval emphasizes specific quantitative probabilities and concrete examples of successes/failures. Peer review treats these as factual observations accepted without challenge, summarizing the key finding about comparable performance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "2166c0d2-d802-4c2b-9c0d-2d8ca033ffa9",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "5dd4282c-576a-4e01-82b6-ad5f0c2cb040",
+      "peer_result_id": "469047d5-49e1-410c-94d6-f13c5f50ff7e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on performance comparisons (C49-C54). Both evaluate as SUPPORTED. OpenEval notes the evaluation is limited to one metric (Brier score) and emphasizes the finding about no consistent expert outperformance. Peer review affirms these findings without methodological concerns, with editor stating evidence is convincing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "9ed62aee-dad3-4f95-a792-ae36d28e4f1a",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "387061b9-ff7b-426d-b5ae-082961e40fec",
+      "peer_result_id": "0b9f86f2-f408-4e04-85b2-6dd6a9196268",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on systematic bias findings (C55-C58). Both evaluate as SUPPORTED. OpenEval emphasizes the compelling evidence of 12/15 experts showing the same over-cautious bias pattern. Peer review accepts these findings without challenge, implicitly acknowledging the systematic nature in their discussion of forecast patterns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "aa4b0618-cf63-42ca-8c39-9ae9883dd5ed",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "f99f0ff0-159b-412e-ab85-512d6b227d28",
+      "peer_result_id": "4807065a-ead0-4e53-bbd7-f42dc548d2a0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on flare-up prediction findings (C59-C64). Both evaluate as SUPPORTED. OpenEval notes experts had limited success and that including models worsened ensemble performance. Peer review explicitly affirms this as a key result, stating 'experts consistently outperformed the models' in predicting new outbreak locations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "0d931604-4d80-4f39-99f2-e9bf09106f6f",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "57f745bc-9bc8-486d-8669-9c2dee348ff1",
+      "peer_result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address comparative findings (C65-C68) as SUPPORTED. OpenEval also includes interpretation claims (C69-C70) in separate result R9. Peer review groups C65-C72 together, encompassing both the comparative results and their interpretation, treating the threshold-dependent performance pattern as part of the overall comparative analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "5f2a9951-2a8e-4ee6-bd18-35d4c94e78dd",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "df7172ed-3bc1-4c5d-9fd9-eee069835d9f",
+      "peer_result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates interpretation of threshold-dependent performance (C69-C70) as SUPPORTED but notes alternative explanations could be considered. Peer review includes these claims in their broader comparative analysis (R6) as SUPPORTED without raising concerns about the interpretation or suggesting alternatives.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "5ad9cf6e-e073-4828-bbb0-a8919a21c0c3",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "000f27dc-2eda-4446-bd80-82cba2d9777c",
+      "peer_result_id": "ac0e21e4-b1a2-4e2a-bec9-97e72aa14579",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates ensemble justification (C71-C72) as SUPPORTED, emphasizing that no individual expert consistently outperformed the ensemble. Peer review includes these claims in their broader comparative performance evaluation (R6) as SUPPORTED, affirming that 'no expert's predictions were consistently better than the others.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "af0774aa-6c28-4f7a-95ee-e636c88a8ba2",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "2550b62c-d07e-4066-850a-d678fde12262",
+      "peer_result_id": "c721a366-ca21-45c6-a295-529a2cc1f836",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on novelty claims (C74-C75). OpenEval rates as UNCERTAIN, noting the claim is plausible but lacks comprehensive verification through systematic review. Peer review rates as SUPPORTED, implicitly accepting novelty with statements about the analysis being 'important and unique' and providing quantification 'rarely' done before.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "6f0898ba-7069-4462-8f47-f118b0ec10ff",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f8cde5a1-15bc-4e95-8d5e-ed6bc7d4c59c",
+      "peer_result_id": "f0ff3d25-b925-4d53-b243-f886bf8db637",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on methodological limitations (C76-C81). OpenEval evaluates as SUPPORTED, treating these as appropriately stated valid concerns. Peer review rates as UNCERTAIN, raising additional concerns about applicability to early outbreak stages and emphasizing the need to replicate such studies, suggesting the limitations may be more significant than acknowledged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "e5d393e8-c213-4e57-8eb9-34a150e3f306",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "548cb57b-5249-41f8-9304-7c755ea5de40",
+      "peer_result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate model utility arguments (C82-C85, C87) as SUPPORTED. OpenEval notes the conclusion depends on specific models and outbreak phase studied. Peer review affirms these conclusions more strongly, stating the research has 'important implications' and evidence is 'convincing,' with one reviewer commending it as 'an interesting and important contribution.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "95c7213c-1ddd-40c7-a7ff-4df0b1cf1d20",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "835ae5b9-035f-42b3-8e55-3fa870b7743a",
+      "peer_result_id": "aeb8e8f6-dc8c-461d-a870-c83c14cf5559",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates combination approach suggestions (C88, C94) as UNCERTAIN, noting limited concrete guidance and that C64 shows including models reduced flare-up prediction performance. Peer review includes C88 in their SUPPORTED evaluation (R9), affirming the value of 'combining expert opinion with model outputs' without expressing the same concerns about lack of specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "af4ea20b-b565-43c0-80c7-ce1dd5d3c004",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "835ae5b9-035f-42b3-8e55-3fa870b7743a",
+      "peer_result_id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates combination approach (C88, C94) as UNCERTAIN due to limited concrete guidance. Peer review R10 addresses C94 as SUPPORTED, treating it as an established interpretive finding about how models and expert opinion could be combined, without raising concerns about lack of specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "adfc7f65-00e5-4772-96e9-97abe572ab8c",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "3bf3409b-170a-454b-a960-c277302e6ea7",
+      "peer_result_id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate model advantages (C91-C92) as SUPPORTED. OpenEval notes the 4/5 months result and risk-ranking advantage are supported by data, though resource prioritization inference is not directly tested. Peer review accepts these findings without challenge as part of their broader interpretive conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "0e8e1575-0d9c-4ba8-9328-d38de9dfdb04",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "61de8fac-ed63-47f2-bf3b-b55787f7867d",
+      "peer_result_id": "4b9b4d74-eda5-41f7-b7da-a7309585bda6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates comparison to previous studies (C93) as UNCERTAIN, noting it's speculative since the study doesn't directly test time series vs. spatial forecasting by the same experts. Peer review includes C93 in their SUPPORTED evaluation (R10), treating it as an accepted interpretive finding without expressing concerns about the indirect nature of the comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "1a2c1dad-4c2d-4b54-9c5b-a8680d79f061",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "f1c6bc68-fc77-4d5e-b0de-941222effb87",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates interpretation of bias pattern (C73) as UNCERTAIN, noting it's speculative without direct evidence like expert interviews. No corresponding peer review evaluation found - peer reviewers did not separately assess this specific interpretation claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "67025eb3-3da2-4ff6-971b-af2c4bbe16b5",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "5364462a-49eb-4b1d-b5d1-3418be982838",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates practical motivation claims (C89-C90) as SUPPORTED, noting clear context with appropriate citation. No corresponding peer review evaluation found - peer reviewers did not separately assess these background/motivation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "dd694c78-01e9-4e81-8731-0e87e4c4dddc",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "23d1d3e5-551d-4de7-9261-106ebd04cdd7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background information on EVD (C1-C15) as SUPPORTED, noting these are standard background claims with appropriate citations establishing context. No corresponding peer review evaluation found - peer reviewers did not assess these introductory background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    },
+    {
+      "id": "7684bdb6-e320-4c43-a337-f80868178f37",
+      "submission_id": "2cfef761-92d7-41e8-9dc4-4f76d8cf03a8",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "db4137d8-056c-4b74-92d1-0132ded3317d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature review claims (C16-C20) as SUPPORTED, noting they accurately summarize prior work with appropriate citations. No corresponding peer review evaluation found - peer reviewers did not separately assess these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:02:01.630719Z"
+    }
+  ]
+}

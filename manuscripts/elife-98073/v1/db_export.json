@@ -1,0 +1,2128 @@
+{
+  "submission": {
+    "id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:01:15.500435Z",
+    "updated_at": "2025-11-21T04:01:15.500435Z"
+  },
+  "content": [
+    {
+      "id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "content_type": "manuscript",
+      "content_text": "# Partitioning changes in ecosystem productivity by effects of species interactions in biodiversity experiments\n\n## Authors\n\n- Jing Tao<sup>1</sup>\n- Charles A Nock<sup>2</sup>\n- Eric B Searle<sup>3</sup>\n- Shongming Huang<sup>4</sup>\n- Rongzhou Man<sup>3</sup> ([ORCID: 0000-0003-4560-5620](https://orcid.org/0000-0003-4560-5620)) \u2020\n- Hua Yang<sup>5</sup> \u2020\n- Gr\u00e9goire T Freschet<sup>6</sup>\n- Cyrille Violle<sup>7</sup>\n- Ji Zheng<sup>8</sup> ([ORCID: 0000-0003-4936-1168](https://orcid.org/0000-0003-4936-1168))\n\n### Affiliations\n\n1. Jilin Provincial Academy of Forestry Sciences Changchun China ([ROR:05jfw1444](https://ror.org/05jfw1444))\n2. Department of Renewable Resources, Faculty of Agriculture, Life, and Environmental Sciences, University of Alberta Edmonton Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))\n3. Ontario Ministry of Natural Resources and Forestry, Ontario Forest Research Institute Sault Ste. Marie Canada ([ROR:05mpm3k87](https://ror.org/05mpm3k87))\n4. Forestry Division, Department of Agriculture and Forestry, Government of Alberta Edmonton Canada ([ROR:006b2g567](https://ror.org/006b2g567))\n5. College of Forestry, Beijing Forestry University Beijing China ([ROR:04xv2pc41](https://ror.org/04xv2pc41))\n6. Station d\u2019Ecologie Th\u00e9orique et Exp\u00e9rimentale, CNRS Foix France ([ROR:05d6wfd23](https://ror.org/05d6wfd23))\n7. CEFE, CNRS, EPHE, IRD Montpellier France ([ROR:008rywf59](https://ror.org/008rywf59))\n8. School of Agriculture and Biology, and Shanghai Urban Forest Ecosystem Research Station of National Forestry and Grassland Administration, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpecies interactions affect ecosystem productivity. Positive interactions (resource partitioning and facilitation) increase productivity while negative interactions (species interference) decrease productivity relative to the null expectations defined by monoculture yields. Effects of competitive interactions (resource competition) can be either positive or negative. Distinguishing effects of species interactions is therefore difficult, if not impossible, with current biodiversity experiments involving mixtures and full density monocultures. To partition changes in ecosystem productivity by effects of species interactions, we modify null expectations with competitive growth responses, i.e., proportional changes in individual size (biomass or volume) expected in mixture based on species differences in growth and competitive ability. We use partial density (species density in mixture) monocultures and the competitive exclusion principle to determine maximum competitive growth responses and full density monoculture yields to measure species ability to achieve maximum competitive growth responses in mixture. Deviations of observed yields from competitive expectations represent the effects of positive/negative species interactions, while the differences between competitive and null expectations reflect the effects of competitive interactions. We demonstrate the effectiveness of our competitive partitioning model in distinguishing effects of species interactions using both simulated and experimental species mixtures. Our competitive partitioning model enables meaningful assessments of species interactions at both species and community levels and helps disentangle underlying mechanisms of species interactions responsible for changes in ecosystem productivity and identify species mixtures that maximize positive effects.\n\n## Introduction\n\nDetecting changes in ecosystem productivity with biodiversity and understanding how these changes are affected by mechanisms of species interactions has been a central focus in ecology for decades (Loreau, 2000; Loreau and Hector, 2019; Mahaut et al., 2020). However, effective methods are lacking (Barry et al., 2019; Bourrat et al., 2023; Drake, 2003; Forrester and Pretzsch, 2015; Jaillard et al., 2018; Loreau and Hector, 2019). The method of additive partitioning was developed from the covariance equation to quantify changes in ecosystem productivity by comparing species performance in mixture with those expected from their monocultures using a replacement design (Barry et al., 2019; Loreau and Hector, 2001). The resultant changes in ecosystem productivity (commonly referred to as net biodiversity effects) are mathematically decomposed into additive components, namely the complementarity effect (CE) measuring community average response and the selection effect (SE) measuring interspecies differences (Forrester and Pretzsch, 2015; Loreau and Hector, 2001; Loreau and Hector, 2019). CE and SE are widely used to examine mechanisms of species interactions responsible for biodiversity effects, i.e., positive CE for effects of positive interactions and positive SE for effects of competitive interactions (Barry et al., 2019; Feng et al., 2022; Hagan et al., 2021; Loreau and Hector, 2001; Mont\u00e8s et al., 2008; Petchey, 2003; Polley et al., 2003), despite that neither of the additive components represents specific effects of species interactions (Bourrat et al., 2023; Forrester and Pretzsch, 2015; Hagan et al., 2021; Hooper et al., 2005; Loreau et al., 2012; Loreau and Hector, 2019; Mont\u00e8s et al., 2008; Petchey, 2003).\n\nAmong the interspecific interactions in plants, positive interactions (resource partitioning and facilitation or collectively referred to as complementarity) increase productivity and negative interactions (species interference or interference competition) decrease productivity relative to the null expectations, i.e., species yields expected in mixture based on composition (relative yield) and full density monoculture yields (Barry et al., 2019; Hooper et al., 2005; Loreau, 2000; Loreau and Hector, 2001). Uncertainty comes with effects of competitive interactions (i.e. resource competition) that are positive for more competitive species and negative for less competitive species (Aschehoug et al., 2016; Barry et al., 2019). For example, when a highly competitive and less competitive species are mixed, more resources flow to the more competitive species. The yield gain of more competitive species from increases in resource availability (resources per capita) often exceeds the yield loss of less competitive species from decreases in resource availability (Huston, 1997; Montazeaud et al., 2018; Pillai and Gouhier, 2019; Tilman et al., 1997; Wardle, 1999), resulting in positive deviation from the total expected yield of both species (i.e. positive biodiversity effect). Competitive interactions can also result in negative biodiversity effects if the less competitive species suffers more than the more competitive species benefits.\n\nThe positive contribution of competitive dominance to ecosystem productivity based on the null expectation can be illustrated with species mixture data. In the situations of both simulated and experimental mixtures with two species (Huang et al., 2009; Mahaut et al., 2020), the partial density monoculture yield of the more competitive species exceeded the total expected yield of both species in 32 of the 35 mixtures (Table 1), meaning that a higher productivity expected for a given species mixture under the null hypothesis can be generally achieved by removing less competitive species from the mixture. In other words, the positive biodiversity effects of mixtures detected through the null expectation can be obtained from the monocultures of more competitive species at partial (lower) densities. These positive biodiversity effects, however, result from competition-induced changes in resource availability, i.e., the yield gain of more competitive species from all resources in the mixture exceeds the total yield loss expected for the less competitive species and is not related to effects of positive species interactions. Competitive interactions are the predominant type of interspecific relationships in plants and occur in all mixtures where constituent species are competitively different (Goldberg and Barton, 1992; Pillai and Gouhier, 2019). Reporting positive biodiversity effects, without indication of possible contributions from competitive interactions, can lead to unrealistic expectations for effects of positive interactions.\n\n**Table 1.**\n Simulated and experimental species mixtures.Biodiversity effects with partial density monocultures (BPM) are calculated from the differences between the partial density monoculture yield of more competitive species and total mixture yield expected from species relative yields and full density monoculture yields (see competitive exclusion in Supplementary file 1A and B for detailed calculations).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Species mixture (species1:species2)</th>\n      <th rowspan=\"2\">Age</th>\n      <th rowspan=\"2\">Total density</th>\n      <th colspan=\"2\">Mixture composition</th>\n      <th colspan=\"2\">Full density monoculture yields</th>\n      <th colspan=\"2\">Observed yields in mixtures</th>\n      <th colspan=\"3\">Partial density monoculture yields</th>\n    </tr>\n    <tr>\n      <th>Species1</th>\n      <th>Species2</th>\n      <th>Species1</th>\n      <th>Species2</th>\n      <th>Species1</th>\n      <th>Species2</th>\n      <th>Species1</th>\n      <th>Species2</th>\n      <th>BPM</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"12\">Simulated mixed trembling aspen and white spruce in western Canada generated with GYPSY model (Huang et al., 2009) (density and stand volume yield, stems and m3 per hectare)</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>20 years</td>\n      <td>11,000</td>\n      <td>0.9</td>\n      <td>0.1</td>\n      <td>23.7</td>\n      <td>0.7</td>\n      <td>22.3</td>\n      <td>0.1</td>\n      <td>23.3</td>\n      <td>0.5</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>20 years</td>\n      <td>11,000</td>\n      <td>0.7</td>\n      <td>0.3</td>\n      <td>23.7</td>\n      <td>0.7</td>\n      <td>19.0</td>\n      <td>0.2</td>\n      <td>22.5</td>\n      <td>0.6</td>\n      <td>5.7</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>20 years</td>\n      <td>11,000</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>23.7</td>\n      <td>0.7</td>\n      <td>15.1</td>\n      <td>0.3</td>\n      <td>21.4</td>\n      <td>0.6</td>\n      <td>9.2</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>20 years</td>\n      <td>11,000</td>\n      <td>0.3</td>\n      <td>0.7</td>\n      <td>23.7</td>\n      <td>0.7</td>\n      <td>10.6</td>\n      <td>0.4</td>\n      <td>19.8</td>\n      <td>0.7</td>\n      <td>12.2</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>20 years</td>\n      <td>11,000</td>\n      <td>0.1</td>\n      <td>0.9</td>\n      <td>23.7</td>\n      <td>0.7</td>\n      <td>5.0</td>\n      <td>0.5</td>\n      <td>16.9</td>\n      <td>0.7</td>\n      <td>13.9</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>40 years</td>\n      <td>3,600</td>\n      <td>0.9</td>\n      <td>0.1</td>\n      <td>110.4</td>\n      <td>27.2</td>\n      <td>104.5</td>\n      <td>3.4</td>\n      <td>108.3</td>\n      <td>15.5</td>\n      <td>6.3</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>40 years</td>\n      <td>3,600</td>\n      <td>0.7</td>\n      <td>0.3</td>\n      <td>110.4</td>\n      <td>27.2</td>\n      <td>90.3</td>\n      <td>7.6</td>\n      <td>103.5</td>\n      <td>20.7</td>\n      <td>18.1</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>40 years</td>\n      <td>3,600</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>110.4</td>\n      <td>27.2</td>\n      <td>72.4</td>\n      <td>12.1</td>\n      <td>97.0</td>\n      <td>23.4</td>\n      <td>28.2</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>40 years</td>\n      <td>3,600</td>\n      <td>0.3</td>\n      <td>0.7</td>\n      <td>110.4</td>\n      <td>27.2</td>\n      <td>49.6</td>\n      <td>17.5</td>\n      <td>87.4</td>\n      <td>25.3</td>\n      <td>35.2</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>40 years</td>\n      <td>3,600</td>\n      <td>0.1</td>\n      <td>0.9</td>\n      <td>110.4</td>\n      <td>27.2</td>\n      <td>20.6</td>\n      <td>23.9</td>\n      <td>70.6</td>\n      <td>26.7</td>\n      <td>35.1</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>60 years</td>\n      <td>1,800</td>\n      <td>0.9</td>\n      <td>0.1</td>\n      <td>189.7</td>\n      <td>88.3</td>\n      <td>180.5</td>\n      <td>9.6</td>\n      <td>186.1</td>\n      <td>47.0</td>\n      <td>6.6</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>60 years</td>\n      <td>1,800</td>\n      <td>0.7</td>\n      <td>0.3</td>\n      <td>189.7</td>\n      <td>88.3</td>\n      <td>158.1</td>\n      <td>22.4</td>\n      <td>177.3</td>\n      <td>64.3</td>\n      <td>18.0</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>60 years</td>\n      <td>1,800</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>189.7</td>\n      <td>88.3</td>\n      <td>128.1</td>\n      <td>38.1</td>\n      <td>164.8</td>\n      <td>73.7</td>\n      <td>25.8</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>60 years</td>\n      <td>1,800</td>\n      <td>0.3</td>\n      <td>0.7</td>\n      <td>189.7</td>\n      <td>88.3</td>\n      <td>85.4</td>\n      <td>58.5</td>\n      <td>144.8</td>\n      <td>80.5</td>\n      <td>26.1</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>60 years</td>\n      <td>1,800</td>\n      <td>0.1</td>\n      <td>0.9</td>\n      <td>189.7</td>\n      <td>88.3</td>\n      <td>28.6</td>\n      <td>83.0</td>\n      <td>109.2</td>\n      <td>85.9</td>\n      <td>10.8</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>80 years</td>\n      <td>1,100</td>\n      <td>0.9</td>\n      <td>0.1</td>\n      <td>240.2</td>\n      <td>143.1</td>\n      <td>229.6</td>\n      <td>13.7</td>\n      <td>235.6</td>\n      <td>73.3</td>\n      <td>5.1</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>80 years</td>\n      <td>1,100</td>\n      <td>0.7</td>\n      <td>0.3</td>\n      <td>240.2</td>\n      <td>143.1</td>\n      <td>203.7</td>\n      <td>33.0</td>\n      <td>224.1</td>\n      <td>102.0</td>\n      <td>13.1</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>80 years</td>\n      <td>1,100</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>240.2</td>\n      <td>143.1</td>\n      <td>167.3</td>\n      <td>58.2</td>\n      <td>207.6</td>\n      <td>117.8</td>\n      <td>15.9</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>80 years</td>\n      <td>1,100</td>\n      <td>0.3</td>\n      <td>0.7</td>\n      <td>240.2</td>\n      <td>143.1</td>\n      <td>110.3</td>\n      <td>94.0</td>\n      <td>179.1</td>\n      <td>129.4</td>\n      <td>6.8</td>\n    </tr>\n    <tr>\n      <td>Populus:Picea</td>\n      <td>80 years</td>\n      <td>1,100</td>\n      <td>0.1</td>\n      <td>0.9</td>\n      <td>240.2</td>\n      <td>143.1</td>\n      <td>26.2</td>\n      <td>139.6</td>\n      <td>124.5</td>\n      <td>138.9</td>\n      <td>\u201328.4</td>\n    </tr>\n    <tr>\n      <td colspan=\"12\">Experimental grassland mixtures (density and aboveground biomass yield, stems, and grams per pot) (Mahaut et al., 2020)</td>\n    </tr>\n    <tr>\n      <td>Bromus:Dactylis</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>5.5</td>\n      <td>9.8</td>\n      <td>2.6</td>\n      <td>8.6</td>\n      <td>5.3</td>\n      <td>11.5</td>\n      <td>3.8</td>\n    </tr>\n    <tr>\n      <td>Bromus:Lotus</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>5.5</td>\n      <td>6.3</td>\n      <td>3.8</td>\n      <td>3.2</td>\n      <td>5.3</td>\n      <td>4.7</td>\n      <td>\u20131.2</td>\n    </tr>\n    <tr>\n      <td>Bromus:Plantago</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>5.5</td>\n      <td>8.6</td>\n      <td>1.9</td>\n      <td>10.9</td>\n      <td>5.3</td>\n      <td>16.1</td>\n      <td>9.0</td>\n    </tr>\n    <tr>\n      <td>Bromus:Sanguisorba</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>5.5</td>\n      <td>4.4</td>\n      <td>2.9</td>\n      <td>2.2</td>\n      <td>5.3</td>\n      <td>3.6</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>Bromus:Trifolium</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>5.5</td>\n      <td>13.3</td>\n      <td>3.8</td>\n      <td>9.3</td>\n      <td>5.3</td>\n      <td>14.2</td>\n      <td>4.8</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Lotus</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>9.8</td>\n      <td>6.3</td>\n      <td>11.8</td>\n      <td>2.0</td>\n      <td>11.5</td>\n      <td>4.7</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Plantago</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>9.8</td>\n      <td>8.6</td>\n      <td>4.4</td>\n      <td>9.5</td>\n      <td>11.5</td>\n      <td>16.1</td>\n      <td>2.3</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Sanguisorba</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>9.8</td>\n      <td>4.4</td>\n      <td>6.0</td>\n      <td>1.9</td>\n      <td>11.5</td>\n      <td>3.6</td>\n      <td>4.4</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Trifolium</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>9.8</td>\n      <td>13.3</td>\n      <td>7.5</td>\n      <td>7.7</td>\n      <td>11.5</td>\n      <td>14.2</td>\n      <td>2.6</td>\n    </tr>\n    <tr>\n      <td>Lotus:Plantago</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>6.3</td>\n      <td>8.6</td>\n      <td>1.0</td>\n      <td>16.2</td>\n      <td>4.7</td>\n      <td>16.1</td>\n      <td>8.6</td>\n    </tr>\n    <tr>\n      <td>Lotus:Sanguisorba</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>6.3</td>\n      <td>4.4</td>\n      <td>1.9</td>\n      <td>2.6</td>\n      <td>4.7</td>\n      <td>3.6</td>\n      <td>\u20130.6</td>\n    </tr>\n    <tr>\n      <td>Lotus:Trifolium</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>6.3</td>\n      <td>13.3</td>\n      <td>2.4</td>\n      <td>9.2</td>\n      <td>4.7</td>\n      <td>14.2</td>\n      <td>4.4</td>\n    </tr>\n    <tr>\n      <td>Plantago:Sanguisorba</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>8.6</td>\n      <td>4.4</td>\n      <td>11.6</td>\n      <td>1.1</td>\n      <td>16.1</td>\n      <td>3.6</td>\n      <td>9.6</td>\n    </tr>\n    <tr>\n      <td>Plantago:Trifolium</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>8.6</td>\n      <td>13.3</td>\n      <td>10.2</td>\n      <td>6.9</td>\n      <td>16.1</td>\n      <td>14.2</td>\n      <td>3.3</td>\n    </tr>\n    <tr>\n      <td>Sanguisorba:Trifolium</td>\n      <td>13 weeks</td>\n      <td>6</td>\n      <td>0.5</td>\n      <td>0.5</td>\n      <td>4.4</td>\n      <td>13.3</td>\n      <td>1.9</td>\n      <td>13.4</td>\n      <td>3.6</td>\n      <td>14.2</td>\n      <td>5.3</td>\n    </tr>\n  </tbody>\n</table>\n\n_Species codes: Populus - Populus tremuloides, Picea - Picea glauca, Bromus - Bromus erectus, Dactylis - Dactylis glomerata, Lotus - Lotus corniculatus, Plantago - Plantago lanceolata, Sanguisorba - Sanguisorba minor, and Trifolium - Trifolium repens._\n\nGiven the limits of the additive partitioning in deciphering mechanisms of changes in ecosystem productivity (Forrester and Pretzsch, 2015; Loreau and Hector, 2001; Petchey, 2003), some alternative methods have been explored to identify underlying mechanisms. This includes the use of metrics such as relative yield totals (Hector, 1998; Roscher and Schumacher, 2016) and transgressive overyielding or superyielding (Drake, 2003; Forrester and Pretzsch, 2015; \u0160pa\u00e8kov\u00e1 and Lep\u0161, 2001), the multiplicative partitioning or statistical analyses to separate effects of species interactions and species composition (Chen et al., 2020; Jaillard et al., 2018; Kirwan et al., 2009), the identification of relative species influences via measurement of competitive interactions (Brun et al., 2022; Mahaut et al., 2020; Mont\u00e8s et al., 2008), or influences of species diversity, composition, and density on net biodiversity effects (Jaillard et al., 2018; Mahaut et al., 2020; Polley et al., 2003; Roscher and Schumacher, 2016; Tatsumi and Loreau, 2023). However, although these methods may indicate the presence of strong positive or competitive interactions or connections of the additive components with niche and fitness differences (Carroll et al., 2011; Godoy et al., 2020; Turnbull et al., 2013), they are not capable of quantifying changes in ecosystem productivity by species interactions at species or community level (Loreau et al., 2012).\n\nHere, we present the competitive partitioning model, a new framework for assessing effects of species interactions on ecosystem productivity based on null expectations and competitive growth responses, the proportional changes of individual size (biomass or volume) from full density monocultures to mixtures expected from species differences in growth and competitive ability (Figure 1). Current biodiversity experiments are generally established based on a replacement design with equal density across mixtures and monocultures (Sackville Hamilton, 1994) and do not provide data for estimating competitive growth responses. Thus, we applied this new methodological approach to simulated data generated with the GYPSY model (Huang et al., 2009) for trembling aspen (Populus tremuloides Michx.) and white spruce (Picea glauca [Moench] Voss) tree mixtures and greenhouse experimental data from grassland mixtures (Mahaut et al., 2020; Table 1). We used partial density (species density in mixture) monocultures and the competitive exclusion principle to determine maximum competitive growth responses and full density monoculture yields to measure species ability to compete for resources and achieve maximum competitive growth responses in mixture. Our objectives are to (1) demonstrate the power of this new framework in distinguishing effects of species interactions responsible for changes in ecosystem productivity, (2) illustrate how the mechanisms of changes in ecosystem productivity differ between the assessments with competitive and additive partitioning models, and (3) assess the effects of competitive interactions on ecosystem productivity relative to those of other species interactions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98073/elife-98073-fig1-v1.jpg)\n\n**Figure 1.:** The magnitude of competitive growth responses (i.e. proportional changes in individual size) increases with relative competitive ability (proportional deviations of species competitive ability from community average) from a minimum of 0 (at community average or null expectation) to a maximum of Wip/Wif \u2013 1 for more competitive species and \u20131 for less competitive species at competitive exclusion. The changes may not be linear, greater near community average and smaller with deviations of competitive ability (Gaudet and Keddy, 1988) or resource availability (e.g. light, see Br\u00fcllhardt et al., 2020) away from community averages. Wif represents individual size in full density monocultures, and Wip represents individual size in partial density monocultures.\n\n## Results\n\n### Simulated aspen and spruce mixtures\n\nMixed forests composed of trembling aspen (Populus tremuloides Michx.) and white spruce (Picea glauca [Moench] Voss) are widely distributed in North America (Man and Lieffers, 1999). The two species, occurring in pure and mixed stands of varying compositions in natural conditions, generally have different canopy structure, rooting depth, leaf phenology, and requirements for light, moisture, and nutrients and are considered different in niche (Man and Lieffers, 1999).\n\nWe used a growth and yield simulation system GYPSY, developed for mixed species forests in western Canada (Huang et al., 2009), to generate data required for determining competitive expectation, i.e., mixtures and monocultures at partial and full densities. We were interested in knowing how effects of species interactions may vary with stand age and composition. We chose four ages: 20, 40, 60, and 80 years, to represent young, middle-aged, pre-mature, and mature stands, and five relative yields from nearly pure aspen (90% aspen), aspen-dominated (70% aspen), equal mixed (50% aspen), spruce-dominated (30% aspen), to nearly pure spruce (10% aspen) mixtures at average densities on fully stocked medium productivity sites (Peterson and Peterson, 1992; Table 1). As GYPSY is developed from extensive field observations (Huang et al., 2009), the simulated data represent average yields in natural monocultures and mixtures of various composition and ages that may result from direct or indirect interactions between the two species (Barry et al., 2019; Man and Lieffers, 1999). Species competitive ability was approximated with stand volume in full density monocultures at site index 17 m and 14 m (height), respectively, for dominant and codominant aspen and spruce at 50 years of total age on medium productivity sites (Alberta Forest Service, 1985; Huang et al., 1994).\n\nThe partitioning of net biodiversity effects with competitive partitioning model indicated that the relative contribution of competitive interactions to net biodiversity effects decreased with age (Figure 2a), whereas community positive effects occurred generally in pre-mature and mature stands and more so in equal aspen and spruce mixtures (Figure 2b). Evidence for a facilitative effect (i.e. species observed yield in mixture >partial density monoculture yield) was only found on spruce in nearly pure mature spruce mixture (Table 1). Community negative effects occurred in young and middle-aged mixtures, whereas aspen did poorer than expected under the competitive expectation (Supplementary file 1A). Averaged across all ages and compositions, the net biodiversity effect was 14.3 m3 ha\u20131 or 14% of the average full density monoculture yield. On a relative basis, 57% of the value (8.2 m3 ha\u20131) was attributable to positive effects, 65% (9.3 m3 ha\u20131) to competitive effects, and \u201323% (\u20133.2 m3 ha\u20131) to negative effects, compared to 63% and 37% for CE and SE with additive partitioning (Figure 2c and d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98073/elife-98073-fig2-v1.jpg)\n\n**Figure 2.:** Partitioning net biodiversity effects (changes in stand volume in mixtures relative to full density monocultures) with competitive (a and b) and additive (c and d) partitioning models for 20- to 80-year-old mixed trembling aspen and white spruce with varying species compositions from nearly pure aspen (90% aspen) to nearly pure spruce (90% spruce) on average medium productivity sites in western Canada. The growth and yield data (Table 1) are generated with GYPSY (Huang et al., 2009), and calculations of biodiversity components with this figure are detailed in Supplementary file 1A.\n\n### Experimental grassland mixtures\n\nMahaut et al., 2020, conducted an experimental study in pots with six grassland species in full and half-density monocultures, as well as in every combination of two, three, and six species in mixture. The studied species vary in productivity and functional traits. We used aboveground biomass data from full and half\u2010density monocultures, as well as all combinations of two species in full density mixtures (Table 1). Species competitive ability was approximated with species biomass in full density monocultures.\n\nThe competitive partitioning model suggested a weak facilitative effect in two mixtures that were associated with Lotus corniculatus, one of the two legume species studied (Supplementary file 1B). Community negative effects occurred in two mixtures with S. minor and between the two legumes, due to negative effects of S. minor on other species and L. corniculatus on T. repens. Across all 15 two-species mixtures, the average of net biodiversity effects on aboveground biomass was 3.9 g per pot or 49% of the full density monoculture yield averaged across all species. On a relative basis, 60% (2.3 g) of the value was attributable to positive effects, 45% (1.7 g) to competitive effects, and \u20135% (\u20130.2 g) to negative effects, compared to 84% and 16% for CE and SE with the additive partitioning model (Table 2).\n\n**Table 2.**\n Partitioning net biodiversity effects (changes in aboveground biomass, g) with competitive and additive partitioning models using experimental data (Table 1) from a grassland diversity-productivity study (Mahaut et al., 2020).Calculations are detailed in Supplementary file 1B.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species mixture</th>\n      <th colspan=\"2\">Competitive partitioning</th>\n      <th colspan=\"2\">Additive partitioning</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0.50Species1: 0.50Species2</td>\n      <td>Positive effect</td>\n      <td>Competitive/ negative effect</td>\n      <td>Complementarity effect (CE)</td>\n      <td>Selection effect (SE)</td>\n    </tr>\n    <tr>\n      <td>Bromus:Dactylis</td>\n      <td>1.8</td>\n      <td>1.7</td>\n      <td>2.7</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>Bromus:Lotus</td>\n      <td>1.2</td>\n      <td>\u20130.1</td>\n      <td>1.1</td>\n      <td>\u20130.1</td>\n    </tr>\n    <tr>\n      <td>Bromus:Plantago</td>\n      <td>2.5</td>\n      <td>3.2</td>\n      <td>4.3</td>\n      <td>1.4</td>\n    </tr>\n    <tr>\n      <td>Bromus:Sanguisorba</td>\n      <td>0.1</td>\n      <td>0.1</td>\n      <td>0.1</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>Bromus:Trifolium</td>\n      <td>0.9</td>\n      <td>2.8</td>\n      <td>3.6</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Lotus</td>\n      <td>4.5</td>\n      <td>1.2</td>\n      <td>4.2</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Plantago</td>\n      <td>4.3</td>\n      <td>0.3</td>\n      <td>5.1</td>\n      <td>\u20130.4</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Sanguisorba</td>\n      <td>0.0</td>\n      <td>0.8</td>\n      <td>0.3</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>Dactylis:Trifolium</td>\n      <td>3.0</td>\n      <td>0.7</td>\n      <td>4.0</td>\n      <td>\u20130.3</td>\n    </tr>\n    <tr>\n      <td>Lotus:Plantago</td>\n      <td>7.6</td>\n      <td>2.3</td>\n      <td>7.9</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>Lotus:Sanguisorba</td>\n      <td>0.0</td>\n      <td>\u20130.9</td>\n      <td>\u20130.6</td>\n      <td>\u20130.3</td>\n    </tr>\n    <tr>\n      <td>Lotus:Trifolium</td>\n      <td>0.0</td>\n      <td>1.8</td>\n      <td>0.8</td>\n      <td>1.1</td>\n    </tr>\n    <tr>\n      <td>Plantago:Sanguisorba</td>\n      <td>1.5</td>\n      <td>4.7</td>\n      <td>3.9</td>\n      <td>2.3</td>\n    </tr>\n    <tr>\n      <td>Plantago:Trifolium</td>\n      <td>5.0</td>\n      <td>1.2</td>\n      <td>7.8</td>\n      <td>\u20131.6</td>\n    </tr>\n    <tr>\n      <td>Sanguisorba:Trifolium</td>\n      <td>2.9</td>\n      <td>3.6</td>\n      <td>3.9</td>\n      <td>2.6</td>\n    </tr>\n    <tr>\n      <td>Average</td>\n      <td>2.3</td>\n      <td>Competitive: 1.7Negative: \u20130.2</td>\n      <td>3.3</td>\n      <td>0.6</td>\n    </tr>\n  </tbody>\n</table>\n\n_Species codes: see Table 1._\n\n## Discussion\n\nThe competitive partitioning model provides a conceptual framework that helps establish the linkage between changes in ecosystem productivity and effects of species interactions. Under this framework, in both simulated tree and experimental grassland mixtures, net biodiversity effects were generally positive, resulting from both positive and competitive interactions. The positive competitive effects result from greater competitive yield responses of more competitive species (Huston, 1997; Montazeaud et al., 2018; Tilman et al., 1997; Wardle, 1999), i.e., the yield gain of more competitive species from increases in resource availability exceeds the yield loss of less competitive species from decrease in resource availability, due to different competitive growth responses and full density monoculture yields (Supplementary file 1A and B). The greater competitive yield response of more competitive trembling aspen in young and middle-aged mixtures resulted in net biodiversity effects that were predominantly from competitive interactions (Figure 2a and b, Supplementary file 1A). A facilitative effect was rarely detected, only on spruce in nearly pure spruce mature mixture, possibly due to improved nutrient availability by aspen (Man and Lieffers, 1999; Peterson and Peterson, 1992) and in mixtures with legume L. corniculatus in grassland mixtures, likely due to improved nitrogen availability (Mahaut et al., 2020). The strong negative effect of mixing on aspen (i.e. observed yields<competitive expectations, see Supplementary file 1A) in young and middle-aged mixtures suggests that trembling aspen originating naturally in high density does not benefit from mixing with white spruce. This is in contrast with white spruce where the deviations of observed yields from competitive expectations were generally positive, likely due to its shade tolerance and positive effects of aspen on nutrient availability (Man and Lieffers, 1999; Peterson and Peterson, 1992).\n\nThe net biodiversity effects reveal overall community yield changes from what would be expected from full density monoculture yields (Loreau and Hector, 2001; Loreau and Hector, 2019). However, the underlying mechanisms of species interactions for detected changes are uncertain, due to effects of competitive interactions that can be positive or negative. In both simulated mixed forests and experimental grassland mixtures, the partial density monoculture yield of the more competitive species exceeded the total expected yield of both species in nearly all mixtures, resulting in positive biodiversity effects when positive species interactions are not involved. Such positive biodiversity effects may help understand changes in ecosystem productivity detected through the null expectation (Carroll et al., 2011; Godoy et al., 2020) but do not support the general expectation that positive changes in ecosystem productivity are associated with positive species interactions (Barry et al., 2019; Drake, 2003; Hooper et al., 2005; Loreau, 2000) or crop mixing in agriculture and forestry where interests are positive effects (Forrester and Pretzsch, 2015; Man and Lieffers, 1999; Montazeaud et al., 2018). Thus, partitioning net biodiversity effects by effects of species interactions (i.e. positive, competitive, negative effects) allows for estimating relative importance of mechanisms of species interactions responsible for changes in ecosystem productivity. This enables ecologists to determine which communities are truly benefitting from diversity in the form of positive interactions and which result from interspecies differences in growth and competitive ability. In the aspen and spruce mixtures examined, community positive effects occurred largely in pre-mature and mature mixtures (\u226560 years), even though net biodiversity effects and CE were positive at nearly all stages of stand development (Figure 2). In grassland mixtures, two mixtures (i.e. D. glomerata - S. minor and L. corniculatus - T. repens) had positive net biodiversity effects that resulted entirely from competitive interactions (Supplementary file 1B). These positive net biodiversity effects may indicate evidence for positive changes in ecosystem productivity when these changes were actually driven by differential outcomes of interspecific competition.\n\nWe demonstrate with simulated and experimental species mixtures that competitive interaction is a major source of the net biodiversity effects and affects the additive components of both CE and SE. In the scenario of partial density monocultures emulating a simplified scenario of competitive exclusion where positive net biodiversity effects resulted entirely from competitive interactions, CE was generally negative in tree mixtures where relative yield changes were smaller with more competitive species (negative mean relative yield change) but positive in grassland mixtures where relative yield changes were greater with more competitive species (positive mean relative yield change; Supplementary file 1A and B). In aspen-spruce mixtures, SE was either larger (age 80) or smaller (age 20, 40, and 60) than competitive effect. In the grassland communities, SE was similar to competitive effect in 3 of the 15 mixtures (B. erectus - L. corniculatus, D. glomerata - L. corniculatus, and L. corniculatus - S. minor) but substantially smaller in the remaining mixtures (Table 2). Even in the extreme cases where SE was nearly zero (B. erectus - S. minor and B. erectus - T. repens), competitive effect was still relatively strong, suggesting that a common assumption to attribute positive net biodiversity effects to positive species interactions when SE is close to zero (Feng et al., 2022; Loreau and Hector, 2001) is not justified. Competitive interactions amplify interspecies differences and therefore SE, while species interference on more competitive species (B. erectus - S. minor) and greater positive species interactions on less competitive species (B. erectus - T. repens) (Supplementary file 1B) reduce SE. Our findings, along with some recent suggestions (Bourrat et al., 2023; Carroll et al., 2011; Godoy et al., 2020; Turnbull et al., 2013), do not support some common exercises that attribute positive/negative CEs to positive/negative interactions (Barry et al., 2019; Fargione et al., 2007; Feng et al., 2022; Hagan et al., 2021; Loreau and Hector, 2001; Petchey, 2003) and positive SEs to competitive interactions (Loreau, 2000; Loreau and Hector, 2001; Montazeaud et al., 2018).\n\nSeveral assumptions are adopted with the development of the competitive partitioning model. First, we assumed that more productive species are more competitive, which was mostly true with the species mixtures examined in terms of species yields in mixture relative to their full density monoculture yields (Table 1). There were exceptions with Dactylis:Plantago and Plantago:Trifolium in grassland mixtures where less productive species Plantago based on full density monoculture yields performed better in mixtures, which may suggest positive effects on Plantago and negative effects on the other species. However, species yields in partial versus full density monocultures indicate that these exceptions resulted from the stagnation of more productive Plantago in full (high) density monocultures, due to restricted rooting volumes and supplies of water and nutrients in pots (Chung et al., 2021). The release of growth stagnation in partial density monocultures and mixtures affects not only the mechanisms of changes in ecosystem productivity assessed with competitive and additive partitioning models but also the magnitudes of the changes in ecosystem productivity detected through the null expectation (Loreau and Hector, 2001). In this case, the use of partial density monoculture yields in assessment of species competitive ability is probably more appropriate, which would increase the values of competitive effects and reduce those of positive effects based on the competitive expectations. Partial density monocultures help detect competition-related yield changes, which would be otherwise unknown. Second, we used partial density monocultures to determine maximum competitive growth responses in a simplified competitive exclusion where more competitive species are not affected and grow like partial density monocultures, while less competitive species are competitively eliminated. We assumed a linear relationship between competitive growth responses and species relative competitive ability (Figure 1), which should be a good approximation (Gaudet and Keddy, 1988), but may not be the most appropriate, e.g., light availability and plant height (Br\u00fcllhardt et al., 2020). Linear models can overestimate or underestimate competitive expectations of all species and affect individual species assessments but would have limited impacts on community level assessments, due to different directions of competitive growth responses among species.\n\nThe estimation of maximum competitive growth responses in mixtures of more than two species or in low densities may require additional efforts. In mixtures where more than one species are above average competitive ability, maximum increase in resource availability would be smaller, $\\frac{1\u2212\\sumRY_{Ej}}{RY_{Ei}}\u22121$ (j=species more competitive than species i), instead of $\\frac{1}{RY_{Ei}}\u22121.$ The maximum competitive growth increases determined in partial density monocultures may need to be adjusted accordingly. For less competitive species, complete elimination would not occur in mixtures of extremely low densities or small individual size where growth is largely independent of resource availability. Proportional growth reduction ($\\frac{w_{if}}{w_{ip}}\u22121,$ opposite of proportional growth increase in partial density monocultures $\\frac{w_{ip}}{w_{if}}\u22121$) or partial elimination (by more competitive species) may be more appropriate for estimating maximum competitive growth reductions.\n\nThe competitive partitioning model incorporates effects of competitive interactions into the conventional null expectation and assists: (1) understanding the mechanisms of species interactions driving positive biodiversity-productivity relationships (Cardinale et al., 2012; Isbell et al., 2017) by relative contributions of positive interactions from more species of diverse niche (Hooper et al., 2005; Tilman et al., 1997) and competitive interactions from greater yield responses of more competitive and more productive species to changes in resource availability in mixture (Aarssen, 1997; Huston, 1997; Pillai and Gouhier, 2019; Tilman et al., 1997), (2) examining the mechanisms of key species in influencing ecosystem productivity by roles of competitive interactions due to their higher productivity and competitive advantages (Loreau and Hector, 2001; Mahaut et al., 2020), (3) meaningful comparisons of changes in ecosystem productivity (i.e. relative yield totals) across different ecosystems based on competitive expectations, and (4) redefining changes in ecosystem productivity such that positive changes result from positive interactions and negative changes from negative interactions (Drake, 2003; Hooper et al., 2005; Loreau, 2000). Under this competitive partitioning framework, null expectations are either raised for more competitive species with increased resource availability or lowered for less competitive species with decreased resource availability in mixture relative to full density monocultures. The magnitudes of competitive growth responses are derived from species relative competitive ability in mixture and their maximum competitive growth responses determined from full and partial density monocultures under a simplified scenario of competitive exclusion. Current biodiversity experiments do not have partial density monocultures and therefore do not provide estimates of competitive growth responses that would occur in mixture due to interspecies differences in growth and competitive ability. However, density-size/yield relationship is one of the most extensively studied areas in ecology (Watkinson, 1980; Weiner and Freckleton, 2010). Previous research can help determine maximum competitive growth responses through density-size/yield relationships (Huang et al., 2009). This means that the competitive partitioning model can be used to investigate changes in ecosystem productivity by effects of species interactions in current biodiversity experiments established with replacement design (Fargione et al., 2007; Loreau and Hector, 2001).\n\n### Conclusions\n\nCompetitive interactions are the major source of biodiversity effects and affect the additive components of both CE and SE. The interpretations of CEs and SEs with specific mechanisms of species interactions lack mathematical or ecological justifications. For example, attributing positive biodiversity effects solely to effects of positive interactions, as commonly seen in the literature (Barry et al., 2019; Fargione et al., 2007; Feng et al., 2022; Hooper et al., 2005; Loreau and Hector, 2001), assumes that competitive interactions are productivity-neutral (SE close to zero) (Feng et al., 2022; Loreau and Hector, 2001). This assumption is true if ecosystem productivity is defined by total resources pool (Tilman et al., 2014) but generally not true if mixture productivity is defined by species monoculture yields as with the additive partitioning model (Loreau and Hector, 2001), due to the predominance of competitive interactions in interspecific relationships (Goldberg and Barton, 1992) and positive effects of competitive interactions on ecosystem productivity based on the null expectation.\n\nThe competitive partitioning model is based on ecological theories of interspecific relationships, competitive ability, and competitive exclusion principle and experimental designs of both replacement and additive series. This new partitioning approach enables meaningful assessments of species interactions at both species and community levels and provides detailed insights into the mechanisms of species interactions that drive changes in ecosystem productivity. We believe that our framework, which is admittedly perfectible, is one promising avenue to determine effects of species interactions responsible for changes in ecosystem productivity, an approach that is long sought after in biodiversity-ecosystem productivity research (Loreau et al., 2012; Loreau and Hector, 2019; Mahaut et al., 2020).\n\n## Materials and methods\n\nUnder the null hypothesis, species in mixture are assumed to be competitively equivalent (i.e. equal interspecific and intraspecific interactions) and species growth (or any other function) stays the same in mixture as in monocultures (Loreau and Hector, 2001). Deviations of observed yields (biomass or volume) from total null expectation therefore produce net biodiversity effects or changes in ecosystem productivity (Barry et al., 2019; Loreau and Hector, 2001).\n\n$$\n\\sumY_{Oi}\u2212\\sumY_{NEi}=\\sumRY_{Oi}M_{if}\u2212\\sumRY_{Ei}M_{if}=\\sum\u0394RY_{i}M_{if}\n$$\n\nThus, the net biodiversity effect is the difference between total observed yields $\\sumY_{Oi}$ and total null expectation $\\sumY_{NEi},$ calculated from species composition (or relative yield) in mixture $RY_{Ei}$ and full density monoculture yield $M_{if}$.\n\nTo separate effects of competitive interactions from those of other species interactions, we would need the hypothesis that constituent species share an identical niche but differ in growth and competitive ability (i.e. absence of positive/negative interactions). Competitive growth responses, i.e., proportional changes in individual size (biomass or volume) expected from full density monocultures to mixtures under this competitive hypothesis, can be determined from species differences in growth and competitive ability (Figure 1). The magnitudes of competitive growth responses depend on: (1) species resource needs in full density monocultures and (2) changes in resource availability (resources per capita) from full density monocultures to full density mixtures that are related to species composition and relative ability to compete for resources in mixture.\n\nTo estimate competitive growth response, we first determine the maximum competitive growth response $MG_{i}$ that species can reach in a scenario of competitive exclusion (Murray, 1986) where a more competitive species completely dominates and grows like a partial density monoculture, while a less competitive species is competitively eliminated.\n\n$$\nMG_{i}=\\frac{w_{ip}}{w_{if}}\u22121,formorecompetitivespecies=\u22121,forlesscompetitivespecies\n$$\n\nHere, $w_{ip}$ stands for individual size (biomass or volume) in partial density (species density in mixture) monoculture and $w_{if}$ is for individual size in full density monoculture; both parameters are calculated from species monoculture yields and initial densities in partial/full density monocultures. A more competitive species gains $\\frac{1}{RY_{Ei}}\u22121$ in resource availability and $\\frac{w_{ip}}{w_{if}}\u22121$ in individual size, while a less competitive species loses 100% resource availability and size in mixture relative to full density monoculture (Figure 1). This simplified competitive dominance applies to mixtures where constituent species differ considerably in competitive ability, especially when competition for light is intense (Grime, 1973; Lieffers et al., 1993). In most cases, however, competitive exclusion would not occur in biodiversity experiments that are controlled in density, composition, duration, and scale. More competitive species are negatively affected by interspecific competition relative to their partial density monocultures (Holland and DeAngelis, 2009), while less competitive species are competitively suppressed relative to their null expectations, but not eliminated (Aarssen, 1989; Connolly et al., 2001; Mahaut et al., 2020; Montazeaud et al., 2018). Other than changes in resource availability, the estimated maximum competitive growth response would include the effects of density-dependent pests, pathogens, or microclimates.\n\nNext, we use relative competitive ability $RC_{i}$ to represent species ability to compete for resources and achieve their maximum competitive growth response in mixture (Aarssen, 1989). $RC_{i}$ is defined by the deviation of species competitive ability $H_{i}$ from community average $H\u00af_{i\u2209}$ (excluding species i) relative to community maximum Hm. Competitive ability is species ability to exploit resources and can be assessed by growth attributes such as full density monoculture yields in biomass or volume (Aarssen, 1989; Aschehoug et al., 2016; Gaudet and Keddy, 1988; Grace, 1990; Montazeaud et al., 2018).\n\n$$\nRC_{i}=\\frac{|H_{i}\u2212H_{i\u2209}|}{H_{m}}\n$$\n\nGreater competitive advantages would lead to increasingly positive competitive growth responses, and larger competitive disadvantages would lead to increasingly negative competitive growth responses in mixture relative to full density monocultures.\n\n$$\nY_{CEi}=Y_{NEi}[1+\u00a0MG_{i}RC_{i}]\n$$\n\nSpecies competitive expectation $Y_{CEi}$ is the yield based on null expectation $Y_{NEi}$ and competitive growth response $MG_{i}RC_{i}$ derived from species differences in growth and competitive ability. The term $MG_{i}RC_{i}$ would be positive for more competitive species $MG_{i}>0$, negative for less competitive species $MG_{i}<0$, and zero when species are at community average or competitively equivalent $RC_{i}=0$ (Figure 1). At the individual species level, the deviation of observed yield $Y_{Oi}$ from the competitive expectation $Y_{CEi}$ can be positive (representing relaxation of interspecific competition from competitive expectation and therefore dominance of positive interactions), neutral (representing similar intra- and interspecific interactions or offset of positive and negative interactions), or negative (representing dominance of negative interactions). The difference between competitive and null expectations is competitive yield change resulting from competitive interactions. Isolating the facilitative effect from those of other positive interactions (i.e. resource partitioning) is also possible for individual species by comparing species\u2019 observed yield in mixture to their partial density monoculture yield, adapting the principle of additive design for biodiversity-ecosystem productivity experiments (Sackville Hamilton, 1994). At the community level, the difference in total yield between competitive expectations $\\sumY_{CEi}$ and null expectations $\\sumY_{NEi}$ of all species can be attributed to the competitive effect, whereas the difference between observed yields $\\sumY_{Oi}$ and competitive expectations $\\sumY_{CEi}$ can be attributed to the dominance of positive effects when the difference >0 or to the dominance of negative effects when the difference <0. The community positive effect can be further partitioned by mechanisms of positive interactions (resource partitioning and facilitation), and facilitative effect can be classified as mutualism (+/+), commensalism (+/0), or parasitic (+/\u2013) based on species-specific assessments.\n",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bernhard Schmid, University of Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98073.4.sa0](https://doi.org/10.7554/eLife.98073.4.sa0)\n\nThe authors propose that positive biodiversity-ecosystem functioning relationships found in experiments have been exaggerated because commonly used statistical analyses are flawed. To remedy this, a new type of analysis based on a concept of \"partial density monoculture yield\" is proposed. However, the presented concept and analysis methods are not reproducibly described (how can partial density monoculture yield experimentally be assessed?), do not appear to be complete, and are inadequate for hypothesis testing. The reviewers found that the authors misinterpret current research in the field and made limited efforts to understand or address the reviewer comments about this study.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98073.4.sa1](https://doi.org/10.7554/eLife.98073.4.sa1)\n\nThis manuscript by Tao et al. reports on an effort to better specify the underlying interactions driving the effects of biodiversity on productivity in biodiversity experiments. The authors are especially concerned with the potential for competitive interactions to drive positive biodiversity-ecosystem functioning relationships by driving down the biomass of subdominant species. The authors suggest a new partitioning schema that utilizes a suite of partial density treatments to capture so-called competitive ability.\n\nReaders are encouraged to consider the original reviews in full, which outline the strengths and weaknesses of the work:\n\nFirst version: https://elifesciences.org/reviewed-preprints/98073v1/reviews\n\nSecond version: https://elifesciences.org/reviewed-preprints/98073v2/reviews\n\nThere are no further reviews for this version because the authors declined to make further improvements to their manuscript.\n",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "424cdab0-8998-42a2-b44c-de3c1c1d4baf",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C1",
+      "claim": "Positive interactions (resource partitioning and facilitation) increase productivity relative to null expectations defined by monoculture yields.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive interactions (resource partitioning and facilitation) increase productivity while negative interactions (species interference) decrease productivity relative to the null expectations defined by monoculture yields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational definition stated in the abstract that establishes the framework for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "95b866d2-a91c-43c4-ab1f-79065189e263",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C2",
+      "claim": "Negative interactions (species interference) decrease productivity relative to null expectations defined by monoculture yields.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive interactions (resource partitioning and facilitation) increase productivity while negative interactions (species interference) decrease productivity relative to the null expectations defined by monoculture yields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational definition stated in the abstract that establishes the framework for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "19497838-36a4-458c-b1fd-58b71f669ecd",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C3",
+      "claim": "Effects of competitive interactions (resource competition) can be either positive or negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Effects of competitive interactions (resource competition) can be either positive or negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key challenge in the abstract that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "bbf617aa-65b6-4b73-a03c-8e9f236cad89",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C4",
+      "claim": "Distinguishing effects of species interactions is difficult, if not impossible, with current biodiversity experiments involving mixtures and full density monocultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinguishing effects of species interactions is therefore difficult, if not impossible, with current biodiversity experiments involving mixtures and full density monocultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of current methods stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "f2dfb67b-de76-4abc-8ca5-940c4f2983e4",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C5",
+      "claim": "The method of additive partitioning was developed from the covariance equation to quantify changes in ecosystem productivity by comparing species performance in mixture with those expected from their monocultures using a replacement design.",
+      "claim_type": "EXPLICIT",
+      "source": "The method of additive partitioning was developed from the covariance equation to quantify changes in ecosystem productivity by comparing species performance in mixture with those expected from their monocultures using a replacement design (Barry et al., 2019; Loreau and Hector, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Barry et al., 2019 and Loreau and Hector, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "9ec772d0-efc8-47cf-8837-0dbd474a7111",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C6",
+      "claim": "Changes in ecosystem productivity are mathematically decomposed into complementarity effect (CE) measuring community average response and selection effect (SE) measuring interspecies differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The resultant changes in ecosystem productivity (commonly referred to as net biodiversity effects) are mathematically decomposed into additive components, namely the complementarity effect (CE) measuring community average response and the selection effect (SE) measuring interspecies differences (Forrester and Pretzsch, 2015; Loreau and Hector, 2001; Loreau and Hector, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Forrester and Pretzsch, 2015; Loreau and Hector, 2001; and Loreau and Hector, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "ea64b172-0385-432d-b607-9147f99c03c5",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C7",
+      "claim": "CE and SE are widely used to examine mechanisms of species interactions responsible for biodiversity effects, with positive CE attributed to effects of positive interactions and positive SE attributed to effects of competitive interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "CE and SE are widely used to examine mechanisms of species interactions responsible for biodiversity effects, i.e., positive CE for effects of positive interactions and positive SE for effects of competitive interactions (Barry et al., 2019; Feng et al., 2022; Hagan et al., 2021; Loreau and Hector, 2001; Mont\u00e8s et al., 2008; Petchey, 2003; Polley et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations describing current practice in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "b9e5e8b9-fea9-416f-8ec2-b81f90f2714f",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C8",
+      "claim": "Neither CE nor SE represents specific effects of species interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "CE and SE are widely used to examine mechanisms of species interactions responsible for biodiversity effects, i.e., positive CE for effects of positive interactions and positive SE for effects of competitive interactions (Barry et al., 2019; Feng et al., 2022; Hagan et al., 2021; Loreau and Hector, 2001; Mont\u00e8s et al., 2008; Petchey, 2003; Polley et al., 2003), despite that neither of the additive components represents specific effects of species interactions (Bourrat et al., 2023; Forrester and Pretzsch, 2015; Hagan et al., 2021; Hooper et al., 2005; Loreau et al., 2012; Loreau and Hector, 2019; Mont\u00e8s et al., 2008; Petchey, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple sources that critique the additive partitioning approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "abc9952e-81a4-44dd-977e-370537eeba96",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C9",
+      "claim": "The yield gain of more competitive species from increases in resource availability often exceeds the yield loss of less competitive species from decreases in resource availability.",
+      "claim_type": "EXPLICIT",
+      "source": "The yield gain of more competitive species from increases in resource availability (resources per capita) often exceeds the yield loss of less competitive species from decreases in resource availability (Huston, 1997; Montazeaud et al., 2018; Pillai and Gouhier, 2019; Tilman et al., 1997; Wardle, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "f94d29de-eaee-49ef-be7b-53fd421660b9",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C10",
+      "claim": "When a highly competitive and less competitive species are mixed, the yield gain of more competitive species from increases in resource availability often exceeds the yield loss of less competitive species, resulting in positive deviation from the total expected yield.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when a highly competitive and less competitive species are mixed, more resources flow to the more competitive species. The yield gain of more competitive species from increases in resource availability (resources per capita) often exceeds the yield loss of less competitive species from decreases in resource availability (Huston, 1997; Montazeaud et al., 2018; Pillai and Gouhier, 2019; Tilman et al., 1997; Wardle, 1999), resulting in positive deviation from the total expected yield of both species (i.e. positive biodiversity effect).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and provides a mechanistic explanation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "adc4ab81-d186-4a77-8950-a112a7710828",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C11",
+      "claim": "In 32 of 35 simulated and experimental mixtures with two species, the partial density monoculture yield of the more competitive species exceeded the total expected yield of both species.",
+      "claim_type": "EXPLICIT",
+      "source": "In the situations of both simulated and experimental mixtures with two species (Huang et al., 2009; Mahaut et al., 2020), the partial density monoculture yield of the more competitive species exceeded the total expected yield of both species in 32 of the 35 mixtures (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Table 1 and citations to the data sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "ac34bb87-a09a-4707-810e-43b52459a6fe",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C12",
+      "claim": "A higher productivity expected for a given species mixture under the null hypothesis can be generally achieved by removing less competitive species from the mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "In the situations of both simulated and experimental mixtures with two species (Huang et al., 2009; Mahaut et al., 2020), the partial density monoculture yield of the more competitive species exceeded the total expected yield of both species in 32 of the 35 mixtures (Table 1), meaning that a higher productivity expected for a given species mixture under the null hypothesis can be generally achieved by removing less competitive species from the mixture.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the data presented in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "84a0a0e8-4371-4cce-bdea-774caa2d7833",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C13",
+      "claim": "Competitive interactions are the predominant type of interspecific relationships in plants and occur in all mixtures where constituent species are competitively different.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive interactions are the predominant type of interspecific relationships in plants and occur in all mixtures where constituent species are competitively different (Goldberg and Barton, 1992; Pillai and Gouhier, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Goldberg and Barton, 1992 and Pillai and Gouhier, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "dcfd2d37-d03a-4c27-8a6d-a6cafde22515",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C14",
+      "claim": "Reporting positive biodiversity effects without indication of possible contributions from competitive interactions can lead to unrealistic expectations for effects of positive interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporting positive biodiversity effects, without indication of possible contributions from competitive interactions, can lead to unrealistic expectations for effects of positive interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment based on the authors' analysis and reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "d6fb78f9-59ce-4cc9-a894-5e7ebac45d64",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C15",
+      "claim": "Mixed forests composed of trembling aspen (Populus tremuloides Michx.) and white spruce (Picea glauca [Moench] Voss) are widely distributed in North America.",
+      "claim_type": "EXPLICIT",
+      "source": "Mixed forests composed of trembling aspen (Populus tremuloides Michx.) and white spruce (Picea glauca [Moench] Voss) are widely distributed in North America (Man and Lieffers, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Man and Lieffers, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "b155da90-7570-4ba7-943e-dfd58f2c6674",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C16",
+      "claim": "Trembling aspen and white spruce generally have different canopy structure, rooting depth, leaf phenology, and requirements for light, moisture, and nutrients and are considered different in niche.",
+      "claim_type": "EXPLICIT",
+      "source": "The two species, occurring in pure and mixed stands of varying compositions in natural conditions, generally have different canopy structure, rooting depth, leaf phenology, and requirements for light, moisture, and nutrients and are considered different in niche (Man and Lieffers, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Man and Lieffers, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "1044a0d7-09e8-4ace-b4d8-a8e48e254cf2",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C17",
+      "claim": "The relative contribution of competitive interactions to net biodiversity effects decreased with age in simulated aspen-spruce mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "The partitioning of net biodiversity effects with competitive partitioning model indicated that the relative contribution of competitive interactions to net biodiversity effects decreased with age (Figure 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "cd0e9480-e838-4338-906d-879c5abc0f68",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C18",
+      "claim": "Community positive effects occurred generally in pre-mature and mature stands and more so in equal aspen and spruce mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "The partitioning of net biodiversity effects with competitive partitioning model indicated that the relative contribution of competitive interactions to net biodiversity effects decreased with age (Figure 2a), whereas community positive effects occurred generally in pre-mature and mature stands and more so in equal aspen and spruce mixtures (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "12a93991-7eec-446a-8a1c-c79e421bc86b",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C19",
+      "claim": "Evidence for a facilitative effect was only found on spruce in nearly pure mature spruce mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for a facilitative effect (i.e. species observed yield in mixture >partial density monoculture yield) was only found on spruce in nearly pure mature spruce mixture (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "8de30f98-eb3f-4b6c-a036-1cb0c1054190",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C20",
+      "claim": "Community negative effects occurred in young and middle-aged mixtures, whereas aspen did poorer than expected under the competitive expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "Community negative effects occurred in young and middle-aged mixtures, whereas aspen did poorer than expected under the competitive expectation (Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "dfd1a3a8-bee2-4daa-8262-90ba027bafcd",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C21",
+      "claim": "Averaged across all ages and compositions in aspen-spruce mixtures, the net biodiversity effect was 14.3 m3 ha\u20131 or 14% of the average full density monoculture yield.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged across all ages and compositions, the net biodiversity effect was 14.3 m3 ha\u20131 or 14% of the average full density monoculture yield.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis of simulated data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "6ba7d970-b5bf-4b8e-9256-9661fdd1811c",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C22",
+      "claim": "In aspen-spruce mixtures, 57% of the net biodiversity effect was attributable to positive effects, 65% to competitive effects, and \u201323% to negative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "On a relative basis, 57% of the value (8.2 m3 ha\u20131) was attributable to positive effects, 65% (9.3 m3 ha\u20131) to competitive effects, and \u201323% (\u20133.2 m3 ha\u20131) to negative effects, compared to 63% and 37% for CE and SE with additive partitioning (Figure 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis of simulated data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "285f60a1-ed20-4d8b-b769-b9316bf9a220",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C23",
+      "claim": "With additive partitioning in aspen-spruce mixtures, 63% of net biodiversity effect was attributable to CE and 37% to SE.",
+      "claim_type": "EXPLICIT",
+      "source": "On a relative basis, 57% of the value (8.2 m3 ha\u20131) was attributable to positive effects, 65% (9.3 m3 ha\u20131) to competitive effects, and \u201323% (\u20133.2 m3 ha\u20131) to negative effects, compared to 63% and 37% for CE and SE with additive partitioning (Figure 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis of simulated data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "9fc461a3-df20-4559-987d-417592a94011",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C24",
+      "claim": "Mahaut et al., 2020, conducted an experimental study in pots with six grassland species in full and half-density monocultures, as well as in every combination of two, three, and six species in mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "Mahaut et al., 2020, conducted an experimental study in pots with six grassland species in full and half-density monocultures, as well as in every combination of two, three, and six species in mixture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the experimental design from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "cebb223f-a192-44c5-a24a-56d8c4021dfc",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C25",
+      "claim": "The competitive partitioning model suggested a weak facilitative effect in two mixtures that were associated with Lotus corniculatus, one of the two legume species studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive partitioning model suggested a weak facilitative effect in two mixtures that were associated with Lotus corniculatus, one of the two legume species studied (Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "1d916611-7fe4-4253-8fcd-83e88adb4f23",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C26",
+      "claim": "Community negative effects occurred in two mixtures with S. minor and between the two legumes, due to negative effects of S. minor on other species and L. corniculatus on T. repens.",
+      "claim_type": "EXPLICIT",
+      "source": "Community negative effects occurred in two mixtures with S. minor and between the two legumes, due to negative effects of S. minor on other species and L. corniculatus on T. repens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "437a17bd-f050-4c5c-907d-aaaa9a6797c2",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C27",
+      "claim": "Across all 15 two-species grassland mixtures, the average of net biodiversity effects on aboveground biomass was 3.9 g per pot or 49% of the full density monoculture yield averaged across all species.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all 15 two-species mixtures, the average of net biodiversity effects on aboveground biomass was 3.9 g per pot or 49% of the full density monoculture yield averaged across all species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "f59fad7e-c640-44b5-aa89-749c398472ef",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C28",
+      "claim": "In grassland mixtures, 60% of the net biodiversity effect was attributable to positive effects, 45% to competitive effects, and \u20135% to negative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "On a relative basis, 60% (2.3 g) of the value was attributable to positive effects, 45% (1.7 g) to competitive effects, and \u20135% (\u20130.2 g) to negative effects, compared to 84% and 16% for CE and SE with the additive partitioning model (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis of experimental data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "013ee81c-6032-414f-900e-3ca6a8140b8b",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C29",
+      "claim": "With additive partitioning in grassland mixtures, 84% of net biodiversity effect was attributable to CE and 16% to SE.",
+      "claim_type": "EXPLICIT",
+      "source": "On a relative basis, 60% (2.3 g) of the value was attributable to positive effects, 45% (1.7 g) to competitive effects, and \u20135% (\u20130.2 g) to negative effects, compared to 84% and 16% for CE and SE with the additive partitioning model (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis of experimental data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "72b09e05-507d-4863-99fe-52805d543bb7",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C30",
+      "claim": "The strong negative effect of mixing on aspen in young and middle-aged mixtures suggests that trembling aspen originating naturally in high density does not benefit from mixing with white spruce.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong negative effect of mixing on aspen (i.e. observed yields<competitive expectations, see Supplementary file 1A) in young and middle-aged mixtures suggests that trembling aspen originating naturally in high density does not benefit from mixing with white spruce.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation based on the data analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "a123769f-6cc4-41f8-afe6-60b2239f8b8e",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C31",
+      "claim": "White spruce deviations of observed yields from competitive expectations were generally positive, likely due to its shade tolerance and positive effects of aspen on nutrient availability.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast with white spruce where the deviations of observed yields from competitive expectations were generally positive, likely due to its shade tolerance and positive effects of aspen on nutrient availability (Man and Lieffers, 1999; Peterson and Peterson, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on data analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "36a44d1e-3952-4766-8ecc-501cc36717df",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C32",
+      "claim": "The partial density monoculture yield of the more competitive species exceeded the total expected yield of both species in nearly all mixtures, resulting in positive biodiversity effects when positive species interactions are not involved.",
+      "claim_type": "EXPLICIT",
+      "source": "In both simulated mixed forests and experimental grassland mixtures, the partial density monoculture yield of the more competitive species exceeded the total expected yield of both species in nearly all mixtures, resulting in positive biodiversity effects when positive species interactions are not involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "df97d57e-fc71-4610-87b5-042bcc662d30",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C33",
+      "claim": "Partitioning net biodiversity effects by effects of species interactions allows for estimating relative importance of mechanisms of species interactions responsible for changes in ecosystem productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, partitioning net biodiversity effects by effects of species interactions (i.e. positive, competitive, negative effects) allows for estimating relative importance of mechanisms of species interactions responsible for changes in ecosystem productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion about the utility of the proposed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "9ca93886-6033-46c0-8ae5-ee4ba12bc6c5",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C34",
+      "claim": "In aspen and spruce mixtures, community positive effects occurred largely in pre-mature and mature mixtures (\u226560 years), even though net biodiversity effects and CE were positive at nearly all stages of stand development.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aspen and spruce mixtures examined, community positive effects occurred largely in pre-mature and mature mixtures (\u226560 years), even though net biodiversity effects and CE were positive at nearly all stages of stand development (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "40dca629-e444-4d83-aa5d-680e2914f46d",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C35",
+      "claim": "In grassland mixtures, two mixtures (D. glomerata - S. minor and L. corniculatus - T. repens) had positive net biodiversity effects that resulted entirely from competitive interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In grassland mixtures, two mixtures (i.e. D. glomerata - S. minor and L. corniculatus - T. repens) had positive net biodiversity effects that resulted entirely from competitive interactions (Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "e8a5fa80-d45f-4ebb-b52e-5580fb967c9a",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C36",
+      "claim": "Competitive interaction is a major source of the net biodiversity effects and affects the additive components of both CE and SE.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate with simulated and experimental species mixtures that competitive interaction is a major source of the net biodiversity effects and affects the additive components of both CE and SE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the analysis of both simulated and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "6510694e-0948-4ce4-9f64-14b6e5541072",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C37",
+      "claim": "In the scenario of partial density monocultures emulating competitive exclusion, CE was generally negative in tree mixtures where relative yield changes were smaller with more competitive species but positive in grassland mixtures where relative yield changes were greater with more competitive species.",
+      "claim_type": "EXPLICIT",
+      "source": "In the scenario of partial density monocultures emulating a simplified scenario of competitive exclusion where positive net biodiversity effects resulted entirely from competitive interactions, CE was generally negative in tree mixtures where relative yield changes were smaller with more competitive species (negative mean relative yield change) but positive in grassland mixtures where relative yield changes were greater with more competitive species (positive mean relative yield change; Supplementary file 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Supplementary files 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "f8fc2c10-9e40-43d8-bc0e-65db262de00a",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C38",
+      "claim": "In aspen-spruce mixtures, SE was either larger (age 80) or smaller (age 20, 40, and 60) than competitive effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In aspen-spruce mixtures, SE was either larger (age 80) or smaller (age 20, 40, and 60) than competitive effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "45a338da-ae1c-4792-bc14-f4c08ad8a8c2",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C39",
+      "claim": "In grassland communities, SE was similar to competitive effect in 3 of the 15 mixtures but substantially smaller in the remaining mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the grassland communities, SE was similar to competitive effect in 3 of the 15 mixtures (B. erectus - L. corniculatus, D. glomerata - L. corniculatus, and L. corniculatus - S. minor) but substantially smaller in the remaining mixtures (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "8236fc4d-7dfb-4e9c-bbb1-b4c1c294293b",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C40",
+      "claim": "A common assumption to attribute positive net biodiversity effects to positive species interactions when SE is close to zero is not justified.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the extreme cases where SE was nearly zero (B. erectus - S. minor and B. erectus - T. repens), competitive effect was still relatively strong, suggesting that a common assumption to attribute positive net biodiversity effects to positive species interactions when SE is close to zero (Feng et al., 2022; Loreau and Hector, 2001) is not justified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical conclusion based on data analysis and supported by citations to the challenged assumption.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "5f68f5d4-c51a-40ec-9330-a77f85bd36c8",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C41",
+      "claim": "Competitive interactions amplify interspecies differences and therefore SE.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive interactions amplify interspecies differences and therefore SE, while species interference on more competitive species (B. erectus - S. minor) and greater positive species interactions on less competitive species (B. erectus - T. repens) (Supplementary file 1B) reduce SE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the mechanisms affecting SE based on data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "dfa48d0d-a229-4f07-976a-b05b4759a64b",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C42",
+      "claim": "Species interference on more competitive species and greater positive species interactions on less competitive species reduce SE.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive interactions amplify interspecies differences and therefore SE, while species interference on more competitive species (B. erectus - S. minor) and greater positive species interactions on less competitive species (B. erectus - T. repens) (Supplementary file 1B) reduce SE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the mechanisms affecting SE based on data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "0dedd001-b55d-4f6f-be28-3ed80f823f10",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C43",
+      "claim": "The findings do not support common exercises that attribute positive/negative CEs to positive/negative interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings, along with some recent suggestions (Bourrat et al., 2023; Carroll et al., 2011; Godoy et al., 2020; Turnbull et al., 2013), do not support some common exercises that attribute positive/negative CEs to positive/negative interactions (Barry et al., 2019; Fargione et al., 2007; Feng et al., 2022; Hagan et al., 2021; Loreau and Hector, 2001; Petchey, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical conclusion based on the study's findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "fbcef8d7-6030-4917-a522-4962c3209fec",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C44",
+      "claim": "The findings do not support attributing positive SEs to competitive interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings, along with some recent suggestions (Bourrat et al., 2023; Carroll et al., 2011; Godoy et al., 2020; Turnbull et al., 2013), do not support some common exercises that attribute positive/negative CEs to positive/negative interactions (Barry et al., 2019; Fargione et al., 2007; Feng et al., 2022; Hagan et al., 2021; Loreau and Hector, 2001; Petchey, 2003) and positive SEs to competitive interactions (Loreau, 2000; Loreau and Hector, 2001; Montazeaud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical conclusion based on the study's findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "3516a9a6-7977-4b96-a378-bdb5fdf81d98",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C45",
+      "claim": "More productive species are more competitive in most of the species mixtures examined in terms of species yields in mixture relative to their full density monoculture yields.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we assumed that more productive species are more competitive, which was mostly true with the species mixtures examined in terms of species yields in mixture relative to their full density monoculture yields (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "bb7dd2b8-5133-4e8e-bbf2-81aad31ff033",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C46",
+      "claim": "There were exceptions with Dactylis:Plantago and Plantago:Trifolium in grassland mixtures where less productive species Plantago based on full density monoculture yields performed better in mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "There were exceptions with Dactylis:Plantago and Plantago:Trifolium in grassland mixtures where less productive species Plantago based on full density monoculture yields performed better in mixtures, which may suggest positive effects on Plantago and negative effects on the other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "fa076316-a99d-47ef-a646-943be400d26e",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C47",
+      "claim": "The exceptions with Plantago resulted from the stagnation of more productive Plantago in full (high) density monocultures, due to restricted rooting volumes and supplies of water and nutrients in pots.",
+      "claim_type": "EXPLICIT",
+      "source": "However, species yields in partial versus full density monocultures indicate that these exceptions resulted from the stagnation of more productive Plantago in full (high) density monocultures, due to restricted rooting volumes and supplies of water and nutrients in pots (Chung et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on data analysis and supported by a citation to Chung et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "e68d3cf9-29d7-4695-9979-27bf5b20265e",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C48",
+      "claim": "The release of growth stagnation in partial density monocultures and mixtures affects the mechanisms of changes in ecosystem productivity assessed with competitive and additive partitioning models.",
+      "claim_type": "EXPLICIT",
+      "source": "The release of growth stagnation in partial density monocultures and mixtures affects not only the mechanisms of changes in ecosystem productivity assessed with competitive and additive partitioning models but also the magnitudes of the changes in ecosystem productivity detected through the null expectation (Loreau and Hector, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the implications of growth stagnation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "e713b8f1-46b9-4f39-9953-3e7d8b673ca7",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C49",
+      "claim": "The release of growth stagnation in partial density monocultures and mixtures affects the magnitudes of the changes in ecosystem productivity detected through the null expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "The release of growth stagnation in partial density monocultures and mixtures affects not only the mechanisms of changes in ecosystem productivity assessed with competitive and additive partitioning models but also the magnitudes of the changes in ecosystem productivity detected through the null expectation (Loreau and Hector, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the implications of growth stagnation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "b21a011a-fd83-458e-ba5b-94f3b1681f6a",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C50",
+      "claim": "Partial density monocultures help detect competition-related yield changes, which would be otherwise unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Partial density monocultures help detect competition-related yield changes, which would be otherwise unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of partial density monocultures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "98a1434e-97ff-4799-a3d1-63ef0d8df943",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C51",
+      "claim": "A linear relationship between competitive growth responses and species relative competitive ability is assumed and should be a good approximation.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed a linear relationship between competitive growth responses and species relative competitive ability (Figure 1), which should be a good approximation (Gaudet and Keddy, 1988), but may not be the most appropriate, e.g., light availability and plant height (Br\u00fcllhardt et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an assumption stated by the authors and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "b48e2b44-280b-471c-9019-729233d843f1",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C52",
+      "claim": "Linear models can overestimate or underestimate competitive expectations of all species and affect individual species assessments but would have limited impacts on community level assessments.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear models can overestimate or underestimate competitive expectations of all species and affect individual species assessments but would have limited impacts on community level assessments, due to different directions of competitive growth responses among species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the limitations of the linear model assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "add8b956-eaa8-4f67-b63f-86ca63858741",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C53",
+      "claim": "The competitive partitioning model incorporates effects of competitive interactions into the conventional null expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive partitioning model incorporates effects of competitive interactions into the conventional null expectation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of what the proposed model does.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "241df7ab-a5ae-46c4-825c-73218f1a6edb",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C54",
+      "claim": "The competitive partitioning model assists understanding the mechanisms of species interactions driving positive biodiversity-productivity relationships by relative contributions of positive interactions from more species of diverse niche and competitive interactions from greater yield responses of more competitive and more productive species to changes in resource availability in mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive partitioning model incorporates effects of competitive interactions into the conventional null expectation and assists: (1) understanding the mechanisms of species interactions driving positive biodiversity-productivity relationships (Cardinale et al., 2012; Isbell et al., 2017) by relative contributions of positive interactions from more species of diverse niche (Hooper et al., 2005; Tilman et al., 1997) and competitive interactions from greater yield responses of more competitive and more productive species to changes in resource availability in mixture (Aarssen, 1997; Huston, 1997; Pillai and Gouhier, 2019; Tilman et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the utility of the model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "8e531672-60b1-44c3-8a17-c294147ea498",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C55",
+      "claim": "The competitive partitioning model assists examining the mechanisms of key species in influencing ecosystem productivity by roles of competitive interactions due to their higher productivity and competitive advantages.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive partitioning model incorporates effects of competitive interactions into the conventional null expectation and assists: ... (2) examining the mechanisms of key species in influencing ecosystem productivity by roles of competitive interactions due to their higher productivity and competitive advantages (Loreau and Hector, 2001; Mahaut et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the utility of the model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "333203f5-8518-4ccb-9cf5-197740fee364",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C56",
+      "claim": "The competitive partitioning model enables meaningful comparisons of changes in ecosystem productivity across different ecosystems based on competitive expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive partitioning model incorporates effects of competitive interactions into the conventional null expectation and assists: ... (3) meaningful comparisons of changes in ecosystem productivity (i.e. relative yield totals) across different ecosystems based on competitive expectations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the utility of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "e21cd849-8203-4dc3-a4c5-f33ac602c7b8",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C57",
+      "claim": "The competitive partitioning model helps redefine changes in ecosystem productivity such that positive changes result from positive interactions and negative changes from negative interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive partitioning model incorporates effects of competitive interactions into the conventional null expectation and assists: ... (4) redefining changes in ecosystem productivity such that positive changes result from positive interactions and negative changes from negative interactions (Drake, 2003; Hooper et al., 2005; Loreau, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the utility of the model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "cc3b3069-de57-40c9-8ae6-8e0254dc8863",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C58",
+      "claim": "Current biodiversity experiments do not have partial density monocultures and therefore do not provide estimates of competitive growth responses that would occur in mixture due to interspecies differences in growth and competitive ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Current biodiversity experiments do not have partial density monocultures and therefore do not provide estimates of competitive growth responses that would occur in mixture due to interspecies differences in growth and competitive ability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the limitations of current experimental designs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "d2dd749b-e85e-44ed-a646-9bef77a348a4",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C59",
+      "claim": "Previous research on density-size/yield relationships can help determine maximum competitive growth responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, density-size/yield relationship is one of the most extensively studied areas in ecology (Watkinson, 1980; Weiner and Freckleton, 2010). Previous research can help determine maximum competitive growth responses through density-size/yield relationships (Huang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "596dc3f9-2c4e-4395-8431-47505a1f6f83",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C60",
+      "claim": "The competitive partitioning model can be used to investigate changes in ecosystem productivity by effects of species interactions in current biodiversity experiments established with replacement design.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the competitive partitioning model can be used to investigate changes in ecosystem productivity by effects of species interactions in current biodiversity experiments established with replacement design (Fargione et al., 2007; Loreau and Hector, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the applicability of the model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "6f058efd-526c-42cf-8401-70a445ef1c68",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C61",
+      "claim": "Attributing positive biodiversity effects solely to effects of positive interactions assumes that competitive interactions are productivity-neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, attributing positive biodiversity effects solely to effects of positive interactions, as commonly seen in the literature (Barry et al., 2019; Fargione et al., 2007; Feng et al., 2022; Hooper et al., 2005; Loreau and Hector, 2001), assumes that competitive interactions are productivity-neutral (SE close to zero) (Feng et al., 2022; Loreau and Hector, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical analysis of common practice in the literature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "ca0327b4-9de3-4cf7-ab0a-de2482cbece7",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C62",
+      "claim": "The assumption that competitive interactions are productivity-neutral is true if ecosystem productivity is defined by total resources pool but generally not true if mixture productivity is defined by species monoculture yields.",
+      "claim_type": "EXPLICIT",
+      "source": "This assumption is true if ecosystem productivity is defined by total resources pool (Tilman et al., 2014) but generally not true if mixture productivity is defined by species monoculture yields as with the additive partitioning model (Loreau and Hector, 2001), due to the predominance of competitive interactions in interspecific relationships (Goldberg and Barton, 1992) and positive effects of competitive interactions on ecosystem productivity based on the null expectation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical analysis supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "5d105b5b-7053-4f5f-94f8-2a49ea7045fc",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C63",
+      "claim": "The competitive partitioning model is based on ecological theories of interspecific relationships, competitive ability, and competitive exclusion principle and experimental designs of both replacement and additive series.",
+      "claim_type": "EXPLICIT",
+      "source": "The competitive partitioning model is based on ecological theories of interspecific relationships, competitive ability, and competitive exclusion principle and experimental designs of both replacement and additive series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the theoretical foundation of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "0cd46ffa-850e-4cf5-8fbe-bd69f49c3d85",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C64",
+      "claim": "The competitive partitioning model enables meaningful assessments of species interactions at both species and community levels and provides detailed insights into the mechanisms of species interactions that drive changes in ecosystem productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This new partitioning approach enables meaningful assessments of species interactions at both species and community levels and provides detailed insights into the mechanisms of species interactions that drive changes in ecosystem productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "a908da5e-aeef-4271-8de4-17ce5f9f8ae5",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C65",
+      "claim": "Under the null hypothesis, species in mixture are assumed to be competitively equivalent and species growth stays the same in mixture as in monocultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the null hypothesis, species in mixture are assumed to be competitively equivalent (i.e. equal interspecific and intraspecific interactions) and species growth (or any other function) stays the same in mixture as in monocultures (Loreau and Hector, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the null hypothesis supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "e3942723-e47a-4068-93c3-aa7abd3dfa76",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C66",
+      "claim": "Deviations of observed yields from total null expectation produce net biodiversity effects or changes in ecosystem productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviations of observed yields (biomass or volume) from total null expectation therefore produce net biodiversity effects or changes in ecosystem productivity (Barry et al., 2019; Loreau and Hector, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how net biodiversity effects are calculated, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "9c9a1828-2f08-41e2-9707-44c37d8b3caf",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C67",
+      "claim": "The magnitudes of competitive growth responses depend on species resource needs in full density monocultures and changes in resource availability from full density monocultures to full density mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitudes of competitive growth responses depend on: (1) species resource needs in full density monocultures and (2) changes in resource availability (resources per capita) from full density monocultures to full density mixtures that are related to species composition and relative ability to compete for resources in mixture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the factors determining competitive growth responses.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "1c253a58-1fef-4fc5-aa17-f4a080d7f72c",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C71",
+      "claim": "Simplified competitive dominance applies to mixtures where constituent species differ considerably in competitive ability, especially when competition for light is intense.",
+      "claim_type": "EXPLICIT",
+      "source": "This simplified competitive dominance applies to mixtures where constituent species differ considerably in competitive ability, especially when competition for light is intense (Grime, 1973; Lieffers et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Grime, 1973 and Lieffers et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "29a4170e-ca62-4693-95c9-4740bf07c92b",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C72",
+      "claim": "In most cases, competitive exclusion would not occur in biodiversity experiments that are controlled in density, composition, duration, and scale.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, however, competitive exclusion would not occur in biodiversity experiments that are controlled in density, composition, duration, and scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of typical biodiversity experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "27510efe-65cd-4854-8254-d850f31b0a25",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C73",
+      "claim": "More competitive species are negatively affected by interspecific competition relative to their partial density monocultures.",
+      "claim_type": "EXPLICIT",
+      "source": "More competitive species are negatively affected by interspecific competition relative to their partial density monocultures (Holland and DeAngelis, 2009), while less competitive species are competitively suppressed relative to their null expectations, but not eliminated (Aarssen, 1989; Connolly et al., 2001; Mahaut et al., 2020; Montazeaud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Holland and DeAngelis, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "21afd36c-3f39-4f00-a95e-e480eea50506",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C74",
+      "claim": "Less competitive species are competitively suppressed relative to their null expectations, but not eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "More competitive species are negatively affected by interspecific competition relative to their partial density monocultures (Holland and DeAngelis, 2009), while less competitive species are competitively suppressed relative to their null expectations, but not eliminated (Aarssen, 1989; Connolly et al., 2001; Mahaut et al., 2020; Montazeaud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "e269b5be-faf9-400f-944b-f69a34065d0d",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C75",
+      "claim": "The estimated maximum competitive growth response includes the effects of density-dependent pests, pathogens, or microclimates in addition to changes in resource availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than changes in resource availability, the estimated maximum competitive growth response would include the effects of density-dependent pests, pathogens, or microclimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about what the maximum competitive growth response includes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "060fe215-d8f2-441e-a9a5-83eeb0ee5323",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C76",
+      "claim": "Competitive ability is species ability to exploit resources and can be assessed by growth attributes such as full density monoculture yields in biomass or volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive ability is species ability to exploit resources and can be assessed by growth attributes such as full density monoculture yields in biomass or volume (Aarssen, 1989; Aschehoug et al., 2016; Gaudet and Keddy, 1988; Grace, 1990; Montazeaud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "ca20835b-43bf-42b6-aa95-fb23cef68a23",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C77",
+      "claim": "Greater competitive advantages lead to increasingly positive competitive growth responses in mixture relative to full density monocultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater competitive advantages would lead to increasingly positive competitive growth responses, and larger competitive disadvantages would lead to increasingly negative competitive growth responses in mixture relative to full density monocultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "81ba1e95-5494-439a-9f15-75658c014b92",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C78",
+      "claim": "Larger competitive disadvantages lead to increasingly negative competitive growth responses in mixture relative to full density monocultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater competitive advantages would lead to increasingly positive competitive growth responses, and larger competitive disadvantages would lead to increasingly negative competitive growth responses in mixture relative to full density monocultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "2c5627e8-f1e6-40fe-9358-23dda817e79d",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C80",
+      "claim": "The difference between competitive and null expectations is competitive yield change resulting from competitive interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between competitive and null expectations is competitive yield change resulting from competitive interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of competitive yield change.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "af6ccd65-6124-46e0-91a5-4318bd5d165d",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C81",
+      "claim": "Isolating the facilitative effect from those of other positive interactions is possible for individual species by comparing species' observed yield in mixture to their partial density monoculture yield.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolating the facilitative effect from those of other positive interactions (i.e. resource partitioning) is also possible for individual species by comparing species' observed yield in mixture to their partial density monoculture yield, adapting the principle of additive design for biodiversity-ecosystem productivity experiments (Sackville Hamilton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sackville Hamilton, 1994.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "e649ae37-a4d5-4723-a00a-453e0bdd9eb1",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C84",
+      "claim": "The community positive effect can be further partitioned by mechanisms of positive interactions (resource partitioning and facilitation).",
+      "claim_type": "EXPLICIT",
+      "source": "The community positive effect can be further partitioned by mechanisms of positive interactions (resource partitioning and facilitation), and facilitative effect can be classified as mutualism (+/+), commensalism (+/0), or parasitic (+/\u2013) based on species-specific assessments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how positive effects can be further analyzed.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "0bd1bd68-3e93-443d-8cc0-393d028cc26d",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "claim_id": "C85",
+      "claim": "Facilitative effect can be classified as mutualism (+/+), commensalism (+/0), or parasitic (+/\u2013) based on species-specific assessments.",
+      "claim_type": "EXPLICIT",
+      "source": "The community positive effect can be further partitioned by mechanisms of positive interactions (resource partitioning and facilitation), and facilitative effect can be classified as mutualism (+/+), commensalism (+/0), or parasitic (+/\u2013) based on species-specific assessments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how facilitative effects can be classified.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "af57a230-8c2b-4dc4-9d8d-347ceae00883",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish a conceptual framework distinguishing three types of species interactions: positive interactions (resource partitioning and facilitation) increase productivity, negative interactions (species interference) decrease productivity, and competitive interactions (resource competition) can have either positive or negative effects relative to null expectations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish foundational definitions that are well-supported by ecological theory and cited literature. These definitions are internally consistent and form the conceptual basis for the study, though they represent established knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "3b122512-d6b0-482c-91d3-8e66ca4ca395",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Current biodiversity experiments using additive partitioning methods (CE and SE) are inadequate for distinguishing effects of species interactions, despite widespread use of CE for positive interactions and SE for competitive interactions, because neither component represents specific effects of species interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 present a well-supported critique of existing methods, backed by multiple citations (C5-C8) and logical reasoning (C4). The limitation that CE and SE do not represent specific interaction effects is acknowledged in the cited literature, providing strong support for this assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "426884ee-a07e-427b-b871-483b52b1de2d",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Competitive interactions can produce positive biodiversity effects because yield gains of more competitive species from increased resource availability often exceed yield losses of less competitive species. In 32 of 35 examined mixtures, partial density monoculture yield of the more competitive species exceeded total expected yield, demonstrating that positive biodiversity effects can arise from competition alone without positive species interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 are well-supported by both cited literature (C9, C13) and empirical data from Table 1 (C11). The quantitative finding (32/35 mixtures, C11) provides strong evidence for the mechanistic explanation (C10, C12), though the interpretation relies on the authors' competitive partitioning framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "67c6088e-5f8c-4118-9171-c82657165dd7",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In simulated aspen-spruce mixtures across four age classes and five compositions, the competitive partitioning model revealed that competitive interactions contributed 65% of net biodiversity effects (14.3 m\u00b3 ha\u207b\u00b9), with positive effects contributing 57% and negative effects -23%, contrasting with additive partitioning results (63% CE, 37% SE). The relative contribution of competitive interactions decreased with stand age, and facilitative effects were rare.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C23 are supported by simulated data from the GYPSY model and presented in Figure 2 and Table 1. However, the results depend entirely on simulated rather than empirical data, and the validity of conclusions rests on the accuracy of the GYPSY model and the assumptions of the competitive partitioning framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "bb0d5070-244b-4ccc-a271-e153b472d0a6",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In experimental grassland mixtures of six species, the competitive partitioning model attributed 60% of net biodiversity effects (3.9 g per pot) to positive effects, 45% to competitive effects, and -5% to negative effects, contrasting with additive partitioning (84% CE, 16% SE). Facilitative effects were weak and limited to mixtures with the legume Lotus corniculatus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 are supported by experimental data from Mahaut et al. 2020 presented in Table 2. The experimental data provides stronger evidence than simulations, though the results still depend on the validity of the competitive partitioning framework and its underlying assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "50df7832-88d4-487f-add6-5a6a1997f67d",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In aspen-spruce mixtures, aspen showed strong negative effects in young and middle-aged stands (observed yields < competitive expectations), suggesting no benefit from mixing, while white spruce showed generally positive deviations from competitive expectations, likely due to shade tolerance and nutrient benefits from aspen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by data in Supplementary file 1A and cited literature. The interpretation is reasonable given the known ecological characteristics of these species, though the mechanistic explanations (C31) remain somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "07a0fdd5-8f91-4973-8864-699a2d9776d4",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Partitioning net biodiversity effects by species interaction types enables estimation of relative importance of interaction mechanisms and identification of communities truly benefitting from positive interactions versus those driven by competitive dominance. Some mixtures showed positive net biodiversity effects resulting entirely from competitive interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by data from both simulated and experimental systems. The finding that some positive biodiversity effects result entirely from competition (C35) is particularly important, though the interpretation depends on accepting the competitive partitioning framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Competitive interactions are a major source of net biodiversity effects and affect both CE and SE components. The relationship between SE and competitive effects varies: SE can be larger, smaller, or similar to competitive effects depending on the system. Even when SE is near zero, competitive effects can be strong, challenging the common assumption that SE near zero indicates positive interactions dominate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C44 present a critical reinterpretation of additive partitioning results supported by data from both study systems (C37-C39, Table 2) and cited literature (C40, C43-C44). The challenge to conventional interpretations (C40, C43-C44) is well-supported by the empirical patterns, though it fundamentally depends on accepting the competitive partitioning framework as valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The assumption that more productive species are more competitive was mostly validated (C45), with exceptions in grassland mixtures involving Plantago explained by growth stagnation in high-density monocultures due to pot constraints. Partial density monocultures help detect competition-related yield changes and affect both mechanisms and magnitudes of detected productivity changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 address important assumptions and limitations. The validation of the productivity-competitiveness assumption (C45) is supported by Table 1 data, and the explanation for exceptions (C47) is reasonable and supported by citation. However, the pot artifact (C47) raises concerns about generalizability of the grassland results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "6f2b7b04-855d-497f-baf2-f584951873e4",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The competitive partitioning model assumes a linear relationship between competitive growth responses and relative competitive ability, which should be a good approximation but may not always be appropriate. Linear models can affect individual species assessments but have limited impacts on community-level assessments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C52 acknowledge a key assumption with limited validation. While C51 cites support for linearity as a good approximation, the authors also acknowledge it may not be most appropriate in all cases. The assertion that deviations have limited community-level impact (C52) is logical but not empirically tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "5b115274-e0e9-4541-9f95-25b0521c2945",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The competitive partitioning model incorporates competitive interactions into null expectations and enables: (1) understanding mechanisms driving biodiversity-productivity relationships, (2) examining roles of key species, (3) meaningful cross-ecosystem comparisons, and (4) redefining productivity changes such that positive changes result from positive interactions. The model is based on ecological theories of interspecific relationships, competitive ability, and competitive exclusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57, C63-C64 describe the conceptual framework and its purported utilities. The theoretical foundation is sound and well-cited, and the demonstrated applications in two systems (aspen-spruce and grassland) support the claimed utilities, though broader validation across diverse systems would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "405cc941-e1d5-40b7-9b86-2d7b5a619eac",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Current biodiversity experiments lack partial density monocultures needed to estimate competitive growth responses, but previous research on density-size/yield relationships can help determine maximum competitive growth responses, enabling application of the competitive partitioning model to existing replacement design experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 address practical applicability. The limitation of current experiments (C58) is accurate, and the proposed solution using density-yield relationships (C59) is reasonable and supported by citations. However, the feasibility and accuracy of this approach (C60) remains to be empirically validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "6020f843-b299-417d-9912-b39c6036db09",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Attributing positive biodiversity effects solely to positive interactions assumes competitive interactions are productivity-neutral (SE \u2248 0). This assumption is true if productivity is defined by total resource pool but generally not true if defined by monoculture yields, due to the predominance of competitive interactions and their positive effects on productivity under null expectations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 present a critical analysis of a common assumption in the literature, well-supported by citations and logical reasoning. The distinction between resource pool-based and monoculture yield-based definitions (C62) is important and well-articulated, though the practical implications depend on which definition is more ecologically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "cea9a6b8-42d9-473a-8c91-36a836c783e3",
+      "content_id": "df7e73a3-5220-4e71-ba47-5b0add68d0d5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Materials and Methods section establishes the mathematical and conceptual framework for competitive partitioning, including definitions of null expectations, competitive growth responses, maximum competitive growth responses under competitive exclusion, relative competitive ability, competitive expectations, and methods for partitioning positive effects into resource partitioning and facilitation components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C85 describe the methodological framework with appropriate citations and logical development. The mathematical formulations appear internally consistent, though the validity of the approach depends on several assumptions (linearity, competitive exclusion as upper bound, productivity as proxy for competitive ability) that may not hold universally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors claim that current biodiversity experiments and additive partitioning methods (CE and SE) are inadequate for distinguishing effects of species interactions, particularly that CE and SE do not represent specific effects of species interactions and that common interpretations attributing positive CE to positive interactions and positive SE to competitive interactions are not justified.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly state that 'the authors misinterpret current research in the field' and found the critique of existing methods to be flawed. The editorial summary indicates reviewers rejected the premise that commonly used statistical analyses are fundamentally flawed, suggesting the authors' critical assessment of current methods is not supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "c71a6f3b-2827-4445-9a71-c471a069cc81",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors propose a new 'competitive partitioning model' that incorporates effects of competitive interactions into null expectations and claim it enables better assessment of species interactions and mechanisms driving biodiversity-productivity relationships.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers found that 'the presented concept and analysis methods are not reproducibly described' and 'do not appear to be complete, and are inadequate for hypothesis testing.' The editorial summary explicitly states the proposed method based on 'partial density monoculture yield' is not reproducibly described, indicating the model itself is not adequately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "220b85b7-8d1c-47a9-a671-8426057f4357",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors report that in 32 of 35 simulated and experimental two-species mixtures, the partial density monoculture yield of the more competitive species exceeded the total expected yield of both species, suggesting positive biodiversity effects can result from competitive interactions alone.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While this is a data-based finding from the authors' analysis, reviewers questioned the fundamental concept of 'partial density monoculture yield' asking 'how can partial density monoculture yield experimentally be assessed?' This uncertainty about the core measurement undermines confidence in results derived from it.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "97951c24-6189-4399-996f-d17d3f48b42d",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors present specific findings from simulated aspen-spruce mixtures showing that competitive interactions contributed 65% to net biodiversity effects, that community positive effects occurred mainly in pre-mature and mature stands, and that facilitative effects were rare.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These results depend entirely on the competitive partitioning model that reviewers found 'not reproducibly described' and 'inadequate for hypothesis testing.' The reviewers' fundamental concerns about methodology make these specific quantitative findings uncertain regardless of the data presentation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "ae53ce11-18a9-47de-8d51-e7834538455b",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors report findings from experimental grassland mixtures showing that 60% of net biodiversity effects were attributable to positive effects and 45% to competitive effects, with weak facilitative effects in only two mixtures associated with legumes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Like the aspen-spruce results, these findings rely on the competitive partitioning model that reviewers found methodologically inadequate. The lack of reproducible methods undermines the credibility of these specific quantitative partitioning results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors claim to demonstrate that competitive interaction is a major source of net biodiversity effects, affects both CE and SE components, and that the common assumption attributing positive biodiversity effects to positive interactions when SE is near zero is not justified.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers found the authors 'misinterpret current research in the field' and made 'limited efforts to understand or address the reviewer comments.' The editorial summary's statement that the analysis methods are 'inadequate for hypothesis testing' directly challenges the authors' ability to demonstrate these claims about competitive interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "ec905eb6-199b-4c1d-92a4-63de63261082",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors claim that current biodiversity experiments lack partial density monocultures but that the competitive partitioning model can still be applied using existing density-yield relationships from previous research.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly questioned 'how can partial density monoculture yield experimentally be assessed?' indicating the proposed workaround is not adequately explained or validated. The lack of reproducible description undermines this claim about applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "2b867338-3756-42c1-a1ac-264e7a21bad3",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors acknowledge limitations in their assumption that more productive species are more competitive, noting exceptions with Plantago in grassland mixtures due to growth stagnation in pots, and discuss how this affects their partitioning assessments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the authors acknowledge these limitations, reviewers found the overall methods 'not reproducibly described' and 'incomplete.' The acknowledgment of limitations does not address reviewers' fundamental concerns about whether the approach is valid even when assumptions hold.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "3cc2aa71-c739-48fb-9d0f-f3d441fb4060",
+      "content_id": "05f09feb-9f67-46b2-b1ea-834afff03100",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors assume a linear relationship between competitive growth responses and species relative competitive ability, acknowledging it may not always be appropriate but claiming limited impacts on community-level assessments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This assumption is part of the broader methodological framework that reviewers found inadequate. While the authors discuss this limitation, reviewers' overall assessment that methods are 'not reproducibly described' and 'inadequate for hypothesis testing' casts doubt on whether this assumption is justified.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "424cdab0-8998-42a2-b44c-de3c1c1d4baf",
+      "result_id": "af57a230-8c2b-4dc4-9d8d-347ceae00883"
+    },
+    {
+      "claim_id": "95b866d2-a91c-43c4-ab1f-79065189e263",
+      "result_id": "af57a230-8c2b-4dc4-9d8d-347ceae00883"
+    },
+    {
+      "claim_id": "19497838-36a4-458c-b1fd-58b71f669ecd",
+      "result_id": "af57a230-8c2b-4dc4-9d8d-347ceae00883"
+    },
+    {
+      "claim_id": "bbf617aa-65b6-4b73-a03c-8e9f236cad89",
+      "result_id": "3b122512-d6b0-482c-91d3-8e66ca4ca395"
+    },
+    {
+      "claim_id": "f2dfb67b-de76-4abc-8ca5-940c4f2983e4",
+      "result_id": "3b122512-d6b0-482c-91d3-8e66ca4ca395"
+    },
+    {
+      "claim_id": "9ec772d0-efc8-47cf-8837-0dbd474a7111",
+      "result_id": "3b122512-d6b0-482c-91d3-8e66ca4ca395"
+    },
+    {
+      "claim_id": "ea64b172-0385-432d-b607-9147f99c03c5",
+      "result_id": "3b122512-d6b0-482c-91d3-8e66ca4ca395"
+    },
+    {
+      "claim_id": "b9e5e8b9-fea9-416f-8ec2-b81f90f2714f",
+      "result_id": "3b122512-d6b0-482c-91d3-8e66ca4ca395"
+    },
+    {
+      "claim_id": "abc9952e-81a4-44dd-977e-370537eeba96",
+      "result_id": "426884ee-a07e-427b-b871-483b52b1de2d"
+    },
+    {
+      "claim_id": "f94d29de-eaee-49ef-be7b-53fd421660b9",
+      "result_id": "426884ee-a07e-427b-b871-483b52b1de2d"
+    },
+    {
+      "claim_id": "adc4ab81-d186-4a77-8950-a112a7710828",
+      "result_id": "426884ee-a07e-427b-b871-483b52b1de2d"
+    },
+    {
+      "claim_id": "ac34bb87-a09a-4707-810e-43b52459a6fe",
+      "result_id": "426884ee-a07e-427b-b871-483b52b1de2d"
+    },
+    {
+      "claim_id": "84a0a0e8-4371-4cce-bdea-774caa2d7833",
+      "result_id": "426884ee-a07e-427b-b871-483b52b1de2d"
+    },
+    {
+      "claim_id": "dcfd2d37-d03a-4c27-8a6d-a6cafde22515",
+      "result_id": "426884ee-a07e-427b-b871-483b52b1de2d"
+    },
+    {
+      "claim_id": "d6fb78f9-59ce-4cc9-a894-5e7ebac45d64",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "b155da90-7570-4ba7-943e-dfd58f2c6674",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "1044a0d7-09e8-4ace-b4d8-a8e48e254cf2",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "cd0e9480-e838-4338-906d-879c5abc0f68",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "12a93991-7eec-446a-8a1c-c79e421bc86b",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "8de30f98-eb3f-4b6c-a036-1cb0c1054190",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "dfd1a3a8-bee2-4daa-8262-90ba027bafcd",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "6ba7d970-b5bf-4b8e-9256-9661fdd1811c",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "285f60a1-ed20-4d8b-b769-b9316bf9a220",
+      "result_id": "67c6088e-5f8c-4118-9171-c82657165dd7"
+    },
+    {
+      "claim_id": "9fc461a3-df20-4559-987d-417592a94011",
+      "result_id": "bb0d5070-244b-4ccc-a271-e153b472d0a6"
+    },
+    {
+      "claim_id": "cebb223f-a192-44c5-a24a-56d8c4021dfc",
+      "result_id": "bb0d5070-244b-4ccc-a271-e153b472d0a6"
+    },
+    {
+      "claim_id": "1d916611-7fe4-4253-8fcd-83e88adb4f23",
+      "result_id": "bb0d5070-244b-4ccc-a271-e153b472d0a6"
+    },
+    {
+      "claim_id": "437a17bd-f050-4c5c-907d-aaaa9a6797c2",
+      "result_id": "bb0d5070-244b-4ccc-a271-e153b472d0a6"
+    },
+    {
+      "claim_id": "f59fad7e-c640-44b5-aa89-749c398472ef",
+      "result_id": "bb0d5070-244b-4ccc-a271-e153b472d0a6"
+    },
+    {
+      "claim_id": "013ee81c-6032-414f-900e-3ca6a8140b8b",
+      "result_id": "bb0d5070-244b-4ccc-a271-e153b472d0a6"
+    },
+    {
+      "claim_id": "72b09e05-507d-4863-99fe-52805d543bb7",
+      "result_id": "50df7832-88d4-487f-add6-5a6a1997f67d"
+    },
+    {
+      "claim_id": "a123769f-6cc4-41f8-afe6-60b2239f8b8e",
+      "result_id": "50df7832-88d4-487f-add6-5a6a1997f67d"
+    },
+    {
+      "claim_id": "36a44d1e-3952-4766-8ecc-501cc36717df",
+      "result_id": "07a0fdd5-8f91-4973-8864-699a2d9776d4"
+    },
+    {
+      "claim_id": "df97d57e-fc71-4610-87b5-042bcc662d30",
+      "result_id": "07a0fdd5-8f91-4973-8864-699a2d9776d4"
+    },
+    {
+      "claim_id": "9ca93886-6033-46c0-8ae5-ee4ba12bc6c5",
+      "result_id": "07a0fdd5-8f91-4973-8864-699a2d9776d4"
+    },
+    {
+      "claim_id": "40dca629-e444-4d83-aa5d-680e2914f46d",
+      "result_id": "07a0fdd5-8f91-4973-8864-699a2d9776d4"
+    },
+    {
+      "claim_id": "e8a5fa80-d45f-4ebb-b52e-5580fb967c9a",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "6510694e-0948-4ce4-9f64-14b6e5541072",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "f8fc2c10-9e40-43d8-bc0e-65db262de00a",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "45a338da-ae1c-4792-bc14-f4c08ad8a8c2",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "8236fc4d-7dfb-4e9c-bbb1-b4c1c294293b",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "5f68f5d4-c51a-40ec-9330-a77f85bd36c8",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "dfa48d0d-a229-4f07-976a-b05b4759a64b",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "0dedd001-b55d-4f6f-be28-3ed80f823f10",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "fbcef8d7-6030-4917-a522-4962c3209fec",
+      "result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1"
+    },
+    {
+      "claim_id": "3516a9a6-7977-4b96-a378-bdb5fdf81d98",
+      "result_id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0"
+    },
+    {
+      "claim_id": "bb7dd2b8-5133-4e8e-bbf2-81aad31ff033",
+      "result_id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0"
+    },
+    {
+      "claim_id": "fa076316-a99d-47ef-a646-943be400d26e",
+      "result_id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0"
+    },
+    {
+      "claim_id": "e68d3cf9-29d7-4695-9979-27bf5b20265e",
+      "result_id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0"
+    },
+    {
+      "claim_id": "e713b8f1-46b9-4f39-9953-3e7d8b673ca7",
+      "result_id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0"
+    },
+    {
+      "claim_id": "b21a011a-fd83-458e-ba5b-94f3b1681f6a",
+      "result_id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0"
+    },
+    {
+      "claim_id": "98a1434e-97ff-4799-a3d1-63ef0d8df943",
+      "result_id": "6f2b7b04-855d-497f-baf2-f584951873e4"
+    },
+    {
+      "claim_id": "b48e2b44-280b-471c-9019-729233d843f1",
+      "result_id": "6f2b7b04-855d-497f-baf2-f584951873e4"
+    },
+    {
+      "claim_id": "add8b956-eaa8-4f67-b63f-86ca63858741",
+      "result_id": "5b115274-e0e9-4541-9f95-25b0521c2945"
+    },
+    {
+      "claim_id": "241df7ab-a5ae-46c4-825c-73218f1a6edb",
+      "result_id": "5b115274-e0e9-4541-9f95-25b0521c2945"
+    },
+    {
+      "claim_id": "8e531672-60b1-44c3-8a17-c294147ea498",
+      "result_id": "5b115274-e0e9-4541-9f95-25b0521c2945"
+    },
+    {
+      "claim_id": "333203f5-8518-4ccb-9cf5-197740fee364",
+      "result_id": "5b115274-e0e9-4541-9f95-25b0521c2945"
+    },
+    {
+      "claim_id": "e21cd849-8203-4dc3-a4c5-f33ac602c7b8",
+      "result_id": "5b115274-e0e9-4541-9f95-25b0521c2945"
+    },
+    {
+      "claim_id": "5d105b5b-7053-4f5f-94f8-2a49ea7045fc",
+      "result_id": "5b115274-e0e9-4541-9f95-25b0521c2945"
+    },
+    {
+      "claim_id": "0cd46ffa-850e-4cf5-8fbe-bd69f49c3d85",
+      "result_id": "5b115274-e0e9-4541-9f95-25b0521c2945"
+    },
+    {
+      "claim_id": "cc3b3069-de57-40c9-8ae6-8e0254dc8863",
+      "result_id": "405cc941-e1d5-40b7-9b86-2d7b5a619eac"
+    },
+    {
+      "claim_id": "d2dd749b-e85e-44ed-a646-9bef77a348a4",
+      "result_id": "405cc941-e1d5-40b7-9b86-2d7b5a619eac"
+    },
+    {
+      "claim_id": "596dc3f9-2c4e-4395-8431-47505a1f6f83",
+      "result_id": "405cc941-e1d5-40b7-9b86-2d7b5a619eac"
+    },
+    {
+      "claim_id": "6f058efd-526c-42cf-8401-70a445ef1c68",
+      "result_id": "6020f843-b299-417d-9912-b39c6036db09"
+    },
+    {
+      "claim_id": "ca0327b4-9de3-4cf7-ab0a-de2482cbece7",
+      "result_id": "6020f843-b299-417d-9912-b39c6036db09"
+    },
+    {
+      "claim_id": "a908da5e-aeef-4271-8de4-17ce5f9f8ae5",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "e3942723-e47a-4068-93c3-aa7abd3dfa76",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "9c9a1828-2f08-41e2-9707-44c37d8b3caf",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "1c253a58-1fef-4fc5-aa17-f4a080d7f72c",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "29a4170e-ca62-4693-95c9-4740bf07c92b",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "27510efe-65cd-4854-8254-d850f31b0a25",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "21afd36c-3f39-4f00-a95e-e480eea50506",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "e269b5be-faf9-400f-944b-f69a34065d0d",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "060fe215-d8f2-441e-a9a5-83eeb0ee5323",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "ca20835b-43bf-42b6-aa95-fb23cef68a23",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "81ba1e95-5494-439a-9f15-75658c014b92",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "2c5627e8-f1e6-40fe-9358-23dda817e79d",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "af6ccd65-6124-46e0-91a5-4318bd5d165d",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "e649ae37-a4d5-4723-a00a-453e0bdd9eb1",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "0bd1bd68-3e93-443d-8cc0-393d028cc26d",
+      "result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3"
+    },
+    {
+      "claim_id": "bbf617aa-65b6-4b73-a03c-8e9f236cad89",
+      "result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf"
+    },
+    {
+      "claim_id": "b9e5e8b9-fea9-416f-8ec2-b81f90f2714f",
+      "result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf"
+    },
+    {
+      "claim_id": "0dedd001-b55d-4f6f-be28-3ed80f823f10",
+      "result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf"
+    },
+    {
+      "claim_id": "fbcef8d7-6030-4917-a522-4962c3209fec",
+      "result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf"
+    },
+    {
+      "claim_id": "6f058efd-526c-42cf-8401-70a445ef1c68",
+      "result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf"
+    },
+    {
+      "claim_id": "ca0327b4-9de3-4cf7-ab0a-de2482cbece7",
+      "result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf"
+    },
+    {
+      "claim_id": "add8b956-eaa8-4f67-b63f-86ca63858741",
+      "result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81"
+    },
+    {
+      "claim_id": "241df7ab-a5ae-46c4-825c-73218f1a6edb",
+      "result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81"
+    },
+    {
+      "claim_id": "8e531672-60b1-44c3-8a17-c294147ea498",
+      "result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81"
+    },
+    {
+      "claim_id": "333203f5-8518-4ccb-9cf5-197740fee364",
+      "result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81"
+    },
+    {
+      "claim_id": "e21cd849-8203-4dc3-a4c5-f33ac602c7b8",
+      "result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81"
+    },
+    {
+      "claim_id": "5d105b5b-7053-4f5f-94f8-2a49ea7045fc",
+      "result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81"
+    },
+    {
+      "claim_id": "0cd46ffa-850e-4cf5-8fbe-bd69f49c3d85",
+      "result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81"
+    },
+    {
+      "claim_id": "adc4ab81-d186-4a77-8950-a112a7710828",
+      "result_id": "220b85b7-8d1c-47a9-a671-8426057f4357"
+    },
+    {
+      "claim_id": "ac34bb87-a09a-4707-810e-43b52459a6fe",
+      "result_id": "220b85b7-8d1c-47a9-a671-8426057f4357"
+    },
+    {
+      "claim_id": "36a44d1e-3952-4766-8ecc-501cc36717df",
+      "result_id": "220b85b7-8d1c-47a9-a671-8426057f4357"
+    },
+    {
+      "claim_id": "1044a0d7-09e8-4ace-b4d8-a8e48e254cf2",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "cd0e9480-e838-4338-906d-879c5abc0f68",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "12a93991-7eec-446a-8a1c-c79e421bc86b",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "8de30f98-eb3f-4b6c-a036-1cb0c1054190",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "dfd1a3a8-bee2-4daa-8262-90ba027bafcd",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "6ba7d970-b5bf-4b8e-9256-9661fdd1811c",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "285f60a1-ed20-4d8b-b769-b9316bf9a220",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "9ca93886-6033-46c0-8ae5-ee4ba12bc6c5",
+      "result_id": "97951c24-6189-4399-996f-d17d3f48b42d"
+    },
+    {
+      "claim_id": "cebb223f-a192-44c5-a24a-56d8c4021dfc",
+      "result_id": "ae53ce11-18a9-47de-8d51-e7834538455b"
+    },
+    {
+      "claim_id": "1d916611-7fe4-4253-8fcd-83e88adb4f23",
+      "result_id": "ae53ce11-18a9-47de-8d51-e7834538455b"
+    },
+    {
+      "claim_id": "437a17bd-f050-4c5c-907d-aaaa9a6797c2",
+      "result_id": "ae53ce11-18a9-47de-8d51-e7834538455b"
+    },
+    {
+      "claim_id": "f59fad7e-c640-44b5-aa89-749c398472ef",
+      "result_id": "ae53ce11-18a9-47de-8d51-e7834538455b"
+    },
+    {
+      "claim_id": "013ee81c-6032-414f-900e-3ca6a8140b8b",
+      "result_id": "ae53ce11-18a9-47de-8d51-e7834538455b"
+    },
+    {
+      "claim_id": "40dca629-e444-4d83-aa5d-680e2914f46d",
+      "result_id": "ae53ce11-18a9-47de-8d51-e7834538455b"
+    },
+    {
+      "claim_id": "e8a5fa80-d45f-4ebb-b52e-5580fb967c9a",
+      "result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3"
+    },
+    {
+      "claim_id": "6510694e-0948-4ce4-9f64-14b6e5541072",
+      "result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3"
+    },
+    {
+      "claim_id": "f8fc2c10-9e40-43d8-bc0e-65db262de00a",
+      "result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3"
+    },
+    {
+      "claim_id": "45a338da-ae1c-4792-bc14-f4c08ad8a8c2",
+      "result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3"
+    },
+    {
+      "claim_id": "8236fc4d-7dfb-4e9c-bbb1-b4c1c294293b",
+      "result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3"
+    },
+    {
+      "claim_id": "5f68f5d4-c51a-40ec-9330-a77f85bd36c8",
+      "result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3"
+    },
+    {
+      "claim_id": "dfa48d0d-a229-4f07-976a-b05b4759a64b",
+      "result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3"
+    },
+    {
+      "claim_id": "cc3b3069-de57-40c9-8ae6-8e0254dc8863",
+      "result_id": "ec905eb6-199b-4c1d-92a4-63de63261082"
+    },
+    {
+      "claim_id": "d2dd749b-e85e-44ed-a646-9bef77a348a4",
+      "result_id": "ec905eb6-199b-4c1d-92a4-63de63261082"
+    },
+    {
+      "claim_id": "596dc3f9-2c4e-4395-8431-47505a1f6f83",
+      "result_id": "ec905eb6-199b-4c1d-92a4-63de63261082"
+    },
+    {
+      "claim_id": "3516a9a6-7977-4b96-a378-bdb5fdf81d98",
+      "result_id": "2b867338-3756-42c1-a1ac-264e7a21bad3"
+    },
+    {
+      "claim_id": "bb7dd2b8-5133-4e8e-bbf2-81aad31ff033",
+      "result_id": "2b867338-3756-42c1-a1ac-264e7a21bad3"
+    },
+    {
+      "claim_id": "fa076316-a99d-47ef-a646-943be400d26e",
+      "result_id": "2b867338-3756-42c1-a1ac-264e7a21bad3"
+    },
+    {
+      "claim_id": "e68d3cf9-29d7-4695-9979-27bf5b20265e",
+      "result_id": "2b867338-3756-42c1-a1ac-264e7a21bad3"
+    },
+    {
+      "claim_id": "e713b8f1-46b9-4f39-9953-3e7d8b673ca7",
+      "result_id": "2b867338-3756-42c1-a1ac-264e7a21bad3"
+    },
+    {
+      "claim_id": "98a1434e-97ff-4799-a3d1-63ef0d8df943",
+      "result_id": "3cc2aa71-c739-48fb-9d0f-f3d441fb4060"
+    },
+    {
+      "claim_id": "b48e2b44-280b-471c-9019-729233d843f1",
+      "result_id": "3cc2aa71-c739-48fb-9d0f-f3d441fb4060"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "8f86e300-9042-42d5-b29a-d62c91b3720d",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "5b115274-e0e9-4541-9f95-25b0521c2945",
+      "peer_result_id": "c71a6f3b-2827-4445-9a71-c471a069cc81",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate the conceptual framework and utilities (C53-C57, C63-C64). OpenEval finds it SUPPORTED with sound theoretical foundation, while peer reviewers find it UNSUPPORTED, stating the concept is 'not reproducibly described' and 'inadequate for hypothesis testing.' This represents a fundamental disagreement on the validity of the proposed framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "ee5f9b3a-4b2a-4ad4-a2ca-f82faed833aa",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "6f2b7b04-855d-497f-baf2-f584951873e4",
+      "peer_result_id": "3cc2aa71-c739-48fb-9d0f-f3d441fb4060",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the linearity assumption (C51-C52). OpenEval rates it UNCERTAIN, acknowledging limited validation and that deviations may occur. Peer reviewers also rate it UNCERTAIN but with broader concerns that the overall methods are 'not reproducibly described' and 'inadequate for hypothesis testing,' casting doubt on whether the assumption is justified.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "c9d12bc2-a14e-4ca3-bef5-b2035b4b3284",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "405cc941-e1d5-40b7-9b86-2d7b5a619eac",
+      "peer_result_id": "ec905eb6-199b-4c1d-92a4-63de63261082",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate practical applicability claims (C58-C60). OpenEval finds them SUPPORTED with reasonable proposed solutions, though noting empirical validation is needed. Peer reviewers find them UNSUPPORTED, explicitly questioning 'how can partial density monoculture yield experimentally be assessed?' indicating the workaround is inadequately explained.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "f965dd9b-e5f4-4d22-9ac4-e33b43950093",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b8c38be0-9afb-4271-a2fa-86a5d2a00cc0",
+      "peer_result_id": "2b867338-3756-42c1-a1ac-264e7a21bad3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address assumptions and limitations (C45-C49). OpenEval finds them SUPPORTED with reasonable explanations, though noting pot artifact concerns. Peer reviewers rate UNCERTAIN, finding that acknowledgment of limitations does not address fundamental concerns about whether the approach is valid even when assumptions hold.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "a1948813-36bf-4261-925b-840443db05e8",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "c85fb6e8-15d8-47e7-bed8-732ba3b7d6b1",
+      "peer_result_id": "7959099d-f8bf-4886-97e3-d073d0bbb5b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate the reinterpretation of additive partitioning and competitive interactions (C36-C42). OpenEval finds claims SUPPORTED by empirical patterns from both systems. Peer reviewers find them UNSUPPORTED, stating authors 'misinterpret current research' and that analysis methods are 'inadequate for hypothesis testing.' Major disagreement on validity of reinterpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "27c5edec-83b8-4565-8999-5fee78d8ad8b",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "bb0d5070-244b-4ccc-a271-e153b472d0a6",
+      "peer_result_id": "ae53ce11-18a9-47de-8d51-e7834538455b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate grassland experimental results (C25-C29, C35). OpenEval finds them SUPPORTED by experimental data from Mahaut et al. 2020. Peer reviewers rate UNCERTAIN because findings rely on the competitive partitioning model that reviewers found methodologically inadequate and not reproducibly described.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "d6b388bb-a940-42d0-b11a-18c276be7e93",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "67c6088e-5f8c-4118-9171-c82657165dd7",
+      "peer_result_id": "97951c24-6189-4399-996f-d17d3f48b42d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate aspen-spruce simulation results (C17-C23, C34). OpenEval finds them SUPPORTED by GYPSY model simulations, though noting dependence on model accuracy. Peer reviewers rate UNCERTAIN due to fundamental concerns that the competitive partitioning model is 'not reproducibly described' and 'inadequate for hypothesis testing.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "42c2f03c-b0e6-43d8-ae18-8d1a9d524782",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "3b122512-d6b0-482c-91d3-8e66ca4ca395",
+      "peer_result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both address critique of existing methods (C4, C8 overlap, plus C43-C44, C61-C62 in peer review). OpenEval finds the critique SUPPORTED by citations and logical reasoning (C4-C8). Peer reviewers find it UNSUPPORTED, explicitly stating 'the authors misinterpret current research in the field' and rejecting the premise that commonly used analyses are fundamentally flawed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "4859133c-71ec-4ffd-96ea-54acfac695fe",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "6020f843-b299-417d-9912-b39c6036db09",
+      "peer_result_id": "9b2fa161-5be2-4a52-881b-7b5d4e1928bf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "OpenEval R13 addresses critical analysis of common assumptions (C61-C62), finding it SUPPORTED. Peer R1 includes these claims in broader critique evaluation, finding them UNSUPPORTED as part of the authors' misinterpretation of current research. Disagreement on validity of the distinction between resource pool-based and monoculture yield-based definitions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "a93738b9-a456-4fb2-8171-15866346aaad",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "426884ee-a07e-427b-b871-483b52b1de2d",
+      "peer_result_id": "220b85b7-8d1c-47a9-a671-8426057f4357",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the quantitative finding about positive biodiversity effects (C11-C12, C32). OpenEval finds it SUPPORTED by Table 1 data (32/35 mixtures). Peer reviewers rate UNCERTAIN, questioning the fundamental concept of 'partial density monoculture yield' and asking 'how can partial density monoculture yield experimentally be assessed?'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "51c53a8e-dd99-4593-9df2-a228c5db9025",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "07a0fdd5-8f91-4973-8864-699a2d9776d4",
+      "peer_result_id": "220b85b7-8d1c-47a9-a671-8426057f4357",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R7 addresses findings from both systems (C32-C35), finding them SUPPORTED. Peer R3 evaluates overlapping claim C32 as UNCERTAIN due to concerns about the core measurement concept. Partial overlap with different emphasis - OpenEval focuses on broader pattern, peer review on measurement validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "057de030-88e2-4011-9459-6ac9c54da835",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "af57a230-8c2b-4dc4-9d8d-347ceae00883",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates foundational definitions (C1-C3) as SUPPORTED, representing established ecological theory. No corresponding peer review evaluation found - these definitional claims were not specifically addressed in peer review comments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "1de8d496-8383-425f-b42b-5ceaa3ee5502",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "50df7832-88d4-487f-add6-5a6a1997f67d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates species-specific interpretations (C30-C31) as SUPPORTED by Supplementary file 1A and cited literature, though noting mechanistic explanations remain somewhat speculative. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    },
+    {
+      "id": "be4b0ae6-b921-4a58-ace3-eaa3a8e5721d",
+      "submission_id": "f80ae1e6-a9b1-45ea-80bd-a527ed9f3ec6",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "cea9a6b8-42d9-473a-8c91-36a836c783e3",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates the methodological framework and mathematical formulations (C65-C85) as SUPPORTED with appropriate citations and internal consistency, though noting dependence on several assumptions. No specific corresponding peer review evaluation, though peer concerns about reproducibility and completeness of methods likely apply to these claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:01:15.500435Z"
+    }
+  ]
+}

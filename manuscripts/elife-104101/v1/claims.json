@@ -1,0 +1,1696 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Recent studies suggest that state representation and state value can be simultaneously learned through Temporal-Difference-Reinforcement-Learning (TDRL) and Backpropagation-Through-Time (BPTT) in recurrent neural networks (RNNs) and their readout.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent studies suggest that state representation and state value can be simultaneously learned through Temporal-Difference-Reinforcement-Learning (TDRL) and Backpropagation-Through-Time (BPTT) in recurrent neural networks (RNNs) and their readout.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work, as indicated by the context of recent studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Neural implementation of learning state representation and value through TDRL and BPTT remains unclear as BPTT requires offline update using transported downstream weights, which is suggested to be biologically implausible.",
+    "claim_type": "EXPLICIT",
+    "source": "However, neural implementation of such learning remains unclear as BPTT requires offline update using transported downstream weights, which is suggested to be biologically implausible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on established knowledge about the biological implausibility of BPTT.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Simple online training of RNNs using TD reward prediction error and random feedback, without additional memory or eligibility trace, can learn the structure of tasks with cue\u2013reward delay and timing variability.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate that simple online training of RNNs using TD reward prediction error and random feedback, without additional memory or eligibility trace, can still learn the structure of tasks with cue\u2013reward delay and timing variability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the experimental data and simulations presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "TD learning itself is a solution for temporal credit assignment.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because TD learning itself is a solution for temporal credit assignment, and feedback alignment, a mechanism originally proposed for supervised learning, enables gradient approximation without weight transport.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about TD learning and inference from the model's behavior.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Feedback alignment enables gradient approximation without weight transport.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because TD learning itself is a solution for temporal credit assignment, and feedback alignment, a mechanism originally proposed for supervised learning, enables gradient approximation without weight transport.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work on feedback alignment.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Biologically constraining downstream weights and random feedback to be non-negative not only preserves learning but may even enhance it.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we show that biologically constraining downstream weights and random feedback to be non-negative not only preserves learning but may even enhance it because the non-negative constraint ensures loose alignment\u2014allowing the downstream and feedback weights to roughly align from the beginning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data showing improved performance with non-negative constraints.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The non-negative constraint ensures loose alignment, allowing the downstream and feedback weights to roughly align from the beginning.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we show that biologically constraining downstream weights and random feedback to be non-negative not only preserves learning but may even enhance it because the non-negative constraint ensures loose alignment\u2014allowing the downstream and feedback weights to roughly align from the beginning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the observed behavior of the model with non-negative constraints.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Multiple lines of studies have suggested that Temporal-Difference-Reinforcement-Learning (TDRL) is implemented in the cortico-basal ganglia-dopamine (DA) circuits where DA encodes TD reward-prediction-error (RPE).",
+    "claim_type": "EXPLICIT",
+    "source": "Multiple lines of studies have suggested that Temporal-Difference-Reinforcement-Learning (TDRL) is implemented in the cortico-basal ganglia-dopamine (DA) circuits where DA encodes TD reward-prediction-error (RPE) (Montague et al., 1996; Schultz et al., 1997; Niv and Schoenbaum, 2008; Cohen et al., 2012; Steinberg et al., 2013; Kim et al., 2020)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to prior experimental and theoretical work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "DA-dependent plasticity of cortico-striatal synapses corresponds to TD-RPE-dependent update of state/action values.",
+    "claim_type": "EXPLICIT",
+    "source": "and DA-dependent plasticity of cortico-striatal synapses corresponds to TD-RPE-dependent update of state/action values (Reynolds et al., 2001; Shen et al., 2008; Yagishita et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "More sophisticated, apparently goal-directed/model-based behavior can be achieved by TDRL if states are appropriately represented.",
+    "claim_type": "EXPLICIT",
+    "source": "However, subsequent studies suggested that more sophisticated, apparently goal-directed/model-based behavior can also be achieved by TDRL if states are appropriately represented (Russek et al., 2017; Stachenfeld et al., 2017; Qian et al., 2025)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "DA signals reflect model-based predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "and that DA signals indeed reflect model-based predictions (Langdon et al., 2018; Keiflin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Impairments in state representation may relate to behavioral or mental health problems.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, impairments in state representation may relate to behavioral or mental health problems (Redish et al., 2007; Gershman et al., 2013; Shimomura et al., 2021; Feng et al., 2021; Sato et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Representation itself should be learned in the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Early modeling studies treated state representations appropriate to the situation/task as given ('handcrafted' by the authors), but representation itself should be learned in the brain (Gershman and Niv, 2010; Niv, 2019; George et al., 2023; Bono et al., 2023; Fang et al., 2023; Cone and Clopath, 2024).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work and general knowledge about brain function.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Appropriate state representation can be learned through TDRL in a recurrent neural network (RNN) by minimizing squared TD value-error without explicit target.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, it was shown that appropriate state representation can be learned through TDRL in a recurrent neural network (RNN) by minimizing squared TD value-error without explicit target (Qian et al., 2025; Hennig et al., 2023)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "State value can be simultaneously learned in connections downstream of the RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "while state value can be simultaneously learned in connections downstream of the RNN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the cited prior work on value-RNN.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The value-RNN used the Backpropagation-Through-Time (BPTT).",
+    "claim_type": "EXPLICIT",
+    "source": "This is because the value-RNN (Hennig et al., 2023) used the Backpropagation-Through-Time (BPTT) (Rumelhart et al., 1986b)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the prior work, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "BPTT has been argued to be biologically implausible mainly due to problems with feedback and causality.",
+    "claim_type": "EXPLICIT",
+    "source": "BPTT has been argued to be biologically implausible mainly due to problems with feedback and causality.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge and arguments in the literature.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Updating upstream connections in backprop requires feedback whose weights are transported from downstream forward connections, but such weight transportation is difficult to implement biologically.",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding feedback, updating upstream connections requires feedback whose weights are transported from downstream forward connections, but such weight transportation is difficult to implement biologically (Grossberg, 1987; Crick, 1989).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work discussing biological implausibility.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "In the value-RNN, weight transportation means that the update (plasticity) rule for intra-cortical connections involves the downstream cortico-striatal synaptic strengths, which are not accessible from the cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of the value-RNN, if the state-representing RNN and the value-encoding readout are implemented by the intra-cortical circuit and the striatal neurons, respectively, as generally assumed (Montague et al., 1996; Doya, 2000; O'Doherty et al., 2004), this weight transportation means that the update (plasticity) rule for intra-cortical connections involves the downstream cortico-striatal synaptic strengths, which are not accessible from the cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the biological mapping of the model and cited assumptions.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "In BPTT, the error needs to be incrementally accumulated in the temporally backward order, but such an acausal offline update is biologically implausible.",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding the problem of causality in BPTT, the error needs to be incrementally accumulated in the temporally backward order, but such an acausal offline update is biologically implausible (Murray, 2019; Bellec et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "In supervised learning of feed-forward networks, when the transported downstream weights used for updating upstream connections were replaced with fixed random strengths, comparable learning performance was still achieved.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, in supervised learning of feed-forward networks, it was shown that when the transported downstream weights used for updating upstream connections were replaced with fixed random strengths, comparable learning performance was still achieved (Lillicrap et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The information of the random strengths transferred to the upstream connections and then to the downstream feed-forward connections so that these feed-forward connections became aligned to the random feedback.",
+    "claim_type": "EXPLICIT",
+    "source": "This was suggested to be because the information of the random strengths transferred to the upstream connections and then to the downstream feed-forward connections so that these feed-forward connections became aligned to the random feedback and thereby the random feedback could work similarly to the feedback with transported downstream weights in backprop.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation from prior work, supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "This mechanism was named the 'feedback alignment' (FA).",
+    "claim_type": "EXPLICIT",
+    "source": "This mechanism was named the 'feedback alignment' (FA) (Lillicrap et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about terminology from prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Feedback alignment was shown to work also in online supervised learning of RNN (algorithm named RFLO (random feedback local online)).",
+    "claim_type": "EXPLICIT",
+    "source": "and was subsequently shown to work also in online supervised learning of RNN (algorithm named RFLO (random feedback local online)) (Murray, 2019)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The value-RNN differs from supervised learning in that it is TD learning, approximating the true error by the TD-RPE because the true error, or true state value, is unknown.",
+    "claim_type": "EXPLICIT",
+    "source": "The value-RNN (Qian et al., 2025; Hennig et al., 2023) differs from supervised learning considered in these previous FA studies in two ways: (1) it is TD learning, that is, it approximates the true error by the TD-RPE because the true error, or true state value, is unknown",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference comparing the value-RNN to supervised learning.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The value-RNN uses a scalar error (TD-RPE) rather than a vector error.",
+    "claim_type": "EXPLICIT",
+    "source": "and (2) it uses a scalar error (TD-RPE) rather than a vector error.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the value-RNN model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Scalar reward-based online learning of RNN with random feedback was shown to work in a different study.",
+    "claim_type": "EXPLICIT",
+    "source": "Scalar reward-based online learning of RNN with random feedback was actually shown to work in a different study (Bellec et al., 2020) (their Supplementary Figure 5)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "TD-RPE was not introduced in the setup where scalar reward-based online learning of RNN with random feedback was shown to work.",
+    "claim_type": "EXPLICIT",
+    "source": "but TD-RPE was not introduced in that setup, while the same study also examined another setup with TD-RPE, but the result with random feedback was not shown for this latter setup (their Figures 4 and 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about what was shown in prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "It was non-trivial whether the value-RNN could be modified to incorporate online update using random feedback.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, it was non-trivial whether the value-RNN could be modified to incorporate online update using random feedback.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the gaps in prior work.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "A modified value-RNN with online update using random feedback could still work.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we demonstrate that such a modified value-RNN could still work and provide a mechanistic insight into how it works.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The non-negative constraint appeared to aid the learning by ensuring that the downstream weights and the fixed random feedback were loosely aligned from the beginning.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the non-negative constraint appeared to aid, rather than degrade, the learning by ensuring that the downstream weights and the fixed random feedback were loosely aligned from the beginning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data and analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "A cortical region/population represents information of sensory observation (o) and sends it to another cortical region/population which estimates a state (x) given the sensory inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "In this model, a cortical region/population represents information of sensory observation (o) and sends it to another cortical region/population which estimates a state (x) given the sensory inputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the model architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The cortical population is approximated as an RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "We approximate this cortical population as an RNN (number of RNN units was varied between 5 and 40).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Neurons in the RNN learn to represent states by updating the strengths of recurrent connections A and feed-forward connections B.",
+    "claim_type": "EXPLICIT",
+    "source": "Neurons in the RNN learn to represent states by updating the strengths of recurrent connections A and feed-forward connections B.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the learning mechanism in the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The activity of a population of striatal neurons that receive inputs from the RNN is supposed to learn to represent the state values (v), by learning the weights (w) of cortico-striatal connections.",
+    "claim_type": "EXPLICIT",
+    "source": "The activity of a population of striatal neurons that receive inputs from the RNN is supposed to learn to represent the state values (v), by learning the weights (w) of cortico-striatal connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "DA neurons in the ventral tegmental area (VTA) receive information about the value and reward (r) from the striatum (both direct and indirect pathways) and other structures.",
+    "claim_type": "EXPLICIT",
+    "source": "DA neurons in the ventral tegmental area (VTA) receive information about the value and reward (r) from the striatum (both direct and indirect pathways) and other structures",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about brain anatomy and function.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The activity of the DA neurons, as well as released DA, represents TD-RPE (\u03b4).",
+    "claim_type": "EXPLICIT",
+    "source": "and the activity of the DA neurons, as well as released DA, represents TD-RPE (\u03b4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge and prior work.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The TD-RPE-representing DA is released in the striatum and also in the cortical RNN through mesocorticolimbic projections and used for modifying A, B, and w.",
+    "claim_type": "EXPLICIT",
+    "source": "The TD-RPE-representing DA is released in the striatum and also in the cortical RNN through mesocorticolimbic projections and used for modifying A, B, and w (Figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the model based on known anatomy, and is illustrated in Figure 1.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "A single RNN unit corresponds to a small population of neurons that intrinsically share inputs and outputs, for genetic or developmental reasons.",
+    "claim_type": "EXPLICIT",
+    "source": "We assumed that a single RNN unit corresponds to a small population of neurons that intrinsically share inputs and outputs, for genetic or developmental reasons",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assumption made in the model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The activity of each unit represents the (relative) firing rate of the population.",
+    "claim_type": "EXPLICIT",
+    "source": "and the activity of each unit represents the (relative) firing rate of the population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assumption made in the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Cortical population activity is suggested to be sustained not only by fast synaptic transmission and spiking but also, even predominantly, by slower synaptic neurochemical dynamics such as short-term facilitation, whose time constant can be around 500 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Cortical population activity is suggested to be sustained not only by fast synaptic transmission and spiking but also, even predominantly, by slower synaptic neurochemical dynamics (Mongillo et al., 2008) such as short-term facilitation, whose time constant can be around 500 ms (Morishima et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "A single time step of the rate-based model corresponds to 500 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we assumed that a single time step of our rate-based (rather than spike-based) model corresponds to 500 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assumption made in the model based on prior work.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "In each simulation, the recurrent (A) and feed-forward connection (B) weights onto the RNN units were initialized to pseudo standard normal random numbers.",
+    "claim_type": "EXPLICIT",
+    "source": "In each simulation, the recurrent (A) and feed-forward connection (B) weights onto the RNN units were initialized to pseudo standard normal random numbers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the simulation methodology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The value weights w (i.e., connection weights from the RNN to the striatal value unit) were still trained in the models with untrained RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the value weights w (i.e., connection weights from the RNN to the striatal value unit) were still trained in the models with untrained RNN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the control condition in the simulations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The oVRNN models, and the model with untrained RNN, were continuously trained across trials in each task.",
+    "claim_type": "EXPLICIT",
+    "source": "The oVRNN models, and the model with untrained RNN, were continuously trained across trials in each task, because we considered that it was ecologically more plausible than episodic training of separate trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the training methodology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Three time steps from cue to reward correspond to 1.5 s, which matches the delay in the conditioning task used by Schultz et al., 1997.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that a single time step corresponds to 500 ms as mentioned above, three time steps from cue to reward correspond to 1.5 s, which matches the delay in the conditioning task used by Schultz et al., 1997.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the time step assumption and comparison to prior work.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "oVRNNbp successfully learned the values of states between cue and reward.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in the figures, oVRNNbp successfully learned the values of states between cue and reward",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "oVRNNrf also learned state values between cue and reward, although to a somewhat smaller degree on average.",
+    "claim_type": "EXPLICIT",
+    "source": "and oVRNNrf also learned these values, although to a somewhat smaller degree on average.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The agent with untrained RNN developed the smallest state values on average among the three agents.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, the agent with untrained RNN developed the smallest state values on average among the three agents.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "There was a difficulty stemming from the continuous training across trials: the activity of untrained RNN upon cue presentation generally differed from trial to trial.",
+    "claim_type": "EXPLICIT",
+    "source": "However, there was a difficulty stemming from the continuous training across trials (rather than episodic training of separate trials): the activity of untrained RNN upon cue presentation generally differed from trial to trial",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about why untrained RNN performed poorly.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Value-RNN could be trained online by fixed random feedback at least to a certain extent, although somewhat less effectively than by backprop-type feedback.",
+    "claim_type": "EXPLICIT",
+    "source": "The results above indicate that value-RNN could be trained online by fixed random feedback at least to a certain extent, although somewhat less effectively than by backprop-type feedback.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary inference from the data presented.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "State values developed in oVRNNrf were largely comparable to those developed in oVRNNbp once they were successfully learned, but the success rate was smaller than oVRNNbp while still larger than the untrained RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "Results of individual simulations shown in Figure 2H, I indicate that state values developed in oVRNNrf were largely comparable to those developed in oVRNNbp once they were successfully learned, but the success rate was smaller than oVRNNbp while still larger than the untrained RNN.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2H and I.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "On average across simulations, oVRNNbp and oVRNNrf exhibited largely comparable performance and always outperformed the untrained RNN (p < 0.00022 in Wilcoxon rank sum test for oVRNNbp or oVRNNrf vs untrained for each number of RNN units).",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in the left panel of Figure 2J, on average across simulations, oVRNNbp and oVRNNrf exhibited largely comparable performance and always outperformed the untrained RNN (p < 0.00022 in Wilcoxon rank sum test for oVRNNbp or oVRNNrf vs untrained for each number of RNN units)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 2J.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "oVRNNbp somewhat outperformed or underperformed oVRNNrf when the number of RNN units was small (\u226410 (p < 0.049)) or large (\u226525 (p < 0.045)), respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "although oVRNNbp somewhat outperformed or underperformed oVRNNrf when the number of RNN units was small (\u226410 (p < 0.049)) or large (\u226525 (p < 0.045)), respectively.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 2J.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "As the number of RNN units increased from 5 to 15 or 20, all three agents improved their performance.",
+    "claim_type": "EXPLICIT",
+    "source": "As the number of RNN units increased from 5 to 15 or 20, all three agents improved their performance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2J.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Additional increase of RNN units did not largely change the mean performance in oVRNNrf, while moderately decreasing it in oVRNNbp and untrained RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "Additional increase of RNN units did not largely change the mean performance in oVRNNrf, while moderately decreasing it in oVRNNbp and untrained RNN.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2J.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Compared with the case of untrained RNN, in oVRNNbp and oVRNNrf, initial component(s) had smaller contributions (PC1 (t-test p = 0.00018 in oVRNNbp; p = 0.0058 in oVRNNrf) and PC2 (p = 0.080 in oVRNNbp; p = 0.0026 in oVRNNrf)) while later components had larger contributions (PC3\u201310, 15\u201320, p < 0.041 in oVRNNbp; PC5\u201320, p < 0.0017 in oVRNNrf) on average.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared with the case of untrained RNN, in oVRNNbp and oVRNNrf, initial component(s) had smaller contributions (PC1 (t-test p = 0.00018 in oVRNNbp; p = 0.0058 in oVRNNrf) and PC2 (p = 0.080 in oVRNNbp; p = 0.0026 in oVRNNrf)) while later components had larger contributions (PC3\u201310, 15\u201320, p < 0.041 in oVRNNbp; PC5\u201320, p < 0.0017 in oVRNNrf) on average",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of PCA data shown in Figure 2K.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The difference in PC contributions is considered to underlie the superior learning performance of oVRNNbp and oVRNNrf.",
+    "claim_type": "EXPLICIT",
+    "source": "and this is considered to underlie their superior learning performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the PCA analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Learning became largely converged by the 1000th trial, although slight improvement continued afterward.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 2L, learning became largely converged by the 1000th trial, although slight improvement continued afterward.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2L.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "As the delay increased, the mean squared error of state values (at 3000-th trial) increased, but the relative superiority of oVRNNbp and oVRNNrf over the model with untrained RNN remained to hold, except for cases with small number of RNN units (5) and long delay (5 or 6).",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 2M, as the delay increased, the mean squared error of state values (at 3000-th trial) increased, but the relative superiority of oVRNNbp and oVRNNrf over the model with untrained RNN remained to hold, except for cases with small number of RNN units (5) and long delay (5 or 6) (p < 0.0025 in Wilcoxon rank sum test for oVRNNbp or oVRNNrf vs untrained for each number of RNN units for each delay).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 2M.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The angle between the value weight vector w and the random feedback vector c, averaged across simulations, decreased over trials.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 3A, this angle, averaged across simulations, decreased over trials, indicating that the value weight w indeed tended to become aligned to the random feedback c.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 3A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "There was a negative correlation such that the smaller the angle (i.e., more aligned), the larger the state value (r = \u22120.288, p = 0.00362).",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 3B, there was a negative correlation such that the smaller the angle (i.e., more aligned), the larger the state value (r = \u22120.288, p = 0.00362)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "These results indicate that the mechanism of FA, previously shown to work for supervised learning, also worked for TD learning of value weights and recurrent/feed-forward connections.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that the mechanism of FA, previously shown to work for supervised learning, also worked for TD learning of value weights and recurrent/feed-forward connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the data on alignment.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "TD-RPEs at S in successive trials would generally differ from each other, but they would still tend to have the same sign.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, although TD-RPEs at S in successive trials would generally differ from each other, they would still tend to have the same sign, as was indeed the case in our simulations (Figure 3D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 3D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Although the trajectories of RNN activity (x) in successive trials would differ, we could expect a certain level of similarity because the RNN is entrained by observation-representing inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, although the trajectories of RNN activity (x) in successive trials would differ, we could expect a certain level of similarity because the RNN is entrained by observation-representing inputs, again as was indeed the case in our example simulation (Figure 3E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 3E.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Starkweather et al., 2017 found that the DA response to later reward was smaller than the response to earlier reward in the task where reward was given in all trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Starkweather et al., 2017 found that the DA response to later reward was smaller than the response to earlier reward in the former task, presumably reflecting the animal's belief that delayed reward will surely come",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "In the task where reward was omitted in some trials, the DA response to later reward was larger than the response to earlier reward.",
+    "claim_type": "EXPLICIT",
+    "source": "but the opposite was the case in the latter task, presumably because the animal suspected that reward was omitted in that trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Starkweather et al., 2017 showed that such response patterns could be explained if DA encoded TD-RPE under particular state representations that incorporated the probabilistic structures of the task (called the 'belief state').",
+    "claim_type": "EXPLICIT",
+    "source": "Starkweather et al., 2017 then showed that such response patterns could be explained if DA encoded TD-RPE under particular state representations that incorporated the probabilistic structures of the task (called the 'belief state').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Hennig et al., 2023 showed that the original value-RNN with backprop (BPTT) could develop similar representations and reproduce the experimentally observed DA patterns.",
+    "claim_type": "EXPLICIT",
+    "source": "but the subsequent work (Hennig et al., 2023) showed that the original value-RNN with backprop (BPTT) could develop similar representations and reproduce the experimentally observed DA patterns.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "oVRNNbp developed the expected TD-RPE patterns (smaller TD-RPE upon late than early timing in task 1 but opposite pattern in task 2).",
+    "claim_type": "EXPLICIT",
+    "source": "oVRNNbp developed the expected TD-RPE patterns, that is, smaller TD-RPE upon late than early timing in task 1 but opposite pattern in task 2 (Figure 4F)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 4F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "oVRNNrf also developed the expected TD-RPE patterns, although the effect size for task 1 was small.",
+    "claim_type": "EXPLICIT",
+    "source": "and oVRNNrf also developed such patterns, although the effect size for task 1 was small (Figure 4G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 4G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "These results indicate that online value-RNN could learn the probabilistic structures of the tasks even with fixed random feedback.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that online value-RNN could learn the probabilistic structures of the tasks even with fixed random feedback.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the data on the probabilistic tasks.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Agents with punctate state representation without or with continuous value update across trials, as well as agents with untrained fixed RNN, could not develop the expected TD-RPE patterns well.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, agents with punctate state representation without or with continuous value update across trials (Figure 4D, E), as well as agents with untrained fixed RNN (Figure 4H), could not develop such patterns well.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 4D, E, and H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Neuronal firing rate is non-negative.",
+    "claim_type": "EXPLICIT",
+    "source": "However, because neuronal firing rate is non-negative and cortico-striatal projections are excitatory, it would be biologically more plausible to assume that the activities of neurons in the RNN and the value weights are non-negative.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established biological knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Cortico-striatal projections are excitatory.",
+    "claim_type": "EXPLICIT",
+    "source": "However, because neuronal firing rate is non-negative and cortico-striatal projections are excitatory, it would be biologically more plausible to assume that the activities of neurons in the RNN and the value weights are non-negative.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established biological knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "If the fixed random feedback is negative, the update rule becomes anti-Hebbian under positive TD-RPE.",
+    "claim_type": "EXPLICIT",
+    "source": "As for the fixed random feedback, if it is negative, the update rule becomes anti-Hebbian under positive TD-RPE",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the update rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Hebbian property has been suggested for rapid plasticity of cortical synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "and so assuming non-negativity would be plausible since Hebbian property has been suggested for rapid plasticity of cortical synapses (Feldman, 2009)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The dependence on the post-synaptic activity in the update rule for recurrent and feed-forward connections was non-monotonic, maximized at the middle of the range of activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, the dependence on the post-synaptic activity was non-monotonic, maximized at the middle of the range of activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the original update rule.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "It would be more biologically plausible to assume a monotonic increase in the dependence on post-synaptic activity.",
+    "claim_type": "EXPLICIT",
+    "source": "It would be more biologically plausible to assume a monotonic increase (while an opposite shape of non-monotonicity, once decrease and thereafter increase, called the BCM (Bienenstock\u2013Cooper\u2013Munro) rule has actually been suggested; Bienenstock et al., 1982; Gjorgjieva et al., 2011; Shouval, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on biological plausibility considerations and knowledge of plasticity rules.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "oVRNNbp-rev well developed state values toward reward.",
+    "claim_type": "EXPLICIT",
+    "source": "oVRNNbp-rev well developed state values toward reward (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "oVRNNrf-bio also developed state values to a largely comparable extent.",
+    "claim_type": "EXPLICIT",
+    "source": "oVRNNrf-bio also developed state values to a largely comparable extent (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The agent with an untrained RNN could not develop the pattern of state values.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, the agent with an untrained RNN could not develop such a pattern of state values (Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The model with shuffled untrained RNN developed state values somewhat better than the naive untrained RNN case but still worse than oVRNNbp-rev and oVRNNrf-bio.",
+    "claim_type": "EXPLICIT",
+    "source": "The model with shuffled untrained RNN developed state values somewhat better than the naive untrained RNN case (Figure 6D), but still worse than oVRNNbp-rev and oVRNNrf-bio.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "oVRNNbp-rev and oVRNNrf-bio exhibited largely comparable performance and always outperformed the models with untrained RNN (p < 2.5 \u00d7 10\u221212 in Wilcoxon rank sum test for oVRNNbp-rev or oVRNNrf-bio vs naive or shuffled untrained for each number of RNN units).",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in the left panel of Figure 6E, oVRNNbp-rev and oVRNNrf-bio exhibited largely comparable performance and always outperformed the models with untrained RNN (p < 2.5 \u00d7 10\u221212 in Wilcoxon rank sum test for oVRNNbp-rev or oVRNNrf-bio vs naive or shuffled untrained for each number of RNN units)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 6E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "oVRNNbp-rev somewhat outperformed or underperformed oVRNNrf-bio when the number of RNN units was small (\u226410 (p < 0.00029)) or large (\u226525 (p < 3.7 \u00d7 10\u22126)), respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "although oVRNNbp-rev somewhat outperformed or underperformed oVRNNrf-bio when the number of RNN units was small (\u226410 (p < 0.00029)) or large (\u226525 (p < 3.7 \u00d7 10\u22126)), respectively",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 6E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "oVRNNrf-bio generally achieved better performance than both oVRNNbp and oVRNNrf, which did not have the non-negative constraint.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, oVRNNrf-bio generally achieved better performance than both oVRNNbp and oVRNNrf, which did not have the non-negative constraint (Wilcoxon rank sum test, vs oVRNNbp: p < 7.8 \u00d7 10\u22126 for 5 or \u226525 RNN units; vs oVRNNrf: p < 0.021 for \u226410 or\u226520 RNN units).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by statistical analysis comparing different models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The recurrent and feed-forward connections (initialized to pseudo standard normal random numbers) were learned to become negative on average, in oVRNNbp-rev and oVRNNrf-bio.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in this figure, these connections (initialized to pseudo standard normal random numbers) were learned to become negative on average, in oVRNNbp-rev and oVRNNrf-bio.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 6F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "This learned negative-dominance (inhibition-dominance) could possibly be related, for example, through prevention of excessive activity, to the good performance of oVRNNrf-bio and also the better performance of the shuffled untrained RNN than the naive untrained RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "This learned negative-dominance (inhibition-dominance) could possibly be related, for example, through prevention of excessive activity, to the good performance of oVRNNrf-bio and also the better performance of the shuffled untrained RNN than the naive untrained RNN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative inference about the mechanism.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Compared with the cases with naive/shuffled untrained RNN, in oVRNNbp-rev and oVRNNrf-bio, later components had relatively high contributions.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared with the cases with naive/shuffled untrained RNN, in oVRNNbp-rev and oVRNNrf-bio, later components had relatively high contributions (PC5\u201320, p < 1.4 \u00d7 10\u22126 (t-test vs naive) or <0.014 (vs shuffled) in oVRNNbp-rev; PC6\u201320, p < 2.0 \u00d7 10\u22127 (vs naive) or PC7\u201320, p < 5.9 \u00d7 10\u221214 (vs shuffled) in oVRNNrf-bio), explaining their superior value-learning performance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of PCA data shown in Figure 6H.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "While oVRNNbp-rev and oVRNNrf-bio eventually reached a comparable level of errors, oVRNNrf-bio outperformed oVRNNbp-rev in early trials (at 200, 300, 400, or 500 trials; p < 0.049 in Wilcoxon rank sum test for each).",
+    "claim_type": "EXPLICIT",
+    "source": "While oVRNNbp-rev and oVRNNrf-bio eventually reached a comparable level of errors, oVRNNrf-bio outperformed oVRNNbp-rev in early trials (at 200, 300, 400, or 500 trials; p < 0.049 in Wilcoxon rank sum test for each).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 6I.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The value weights did not develop well in early trials, and so the backprop-type feedback, which was the same as the value weights, did not work well, while the non-negative fixed random feedback worked finely from the beginning.",
+    "claim_type": "EXPLICIT",
+    "source": "This is presumably because the value weights did not develop well in early trials, and so the backprop-type feedback, which was the same as the value weights, did not work well, while the non-negative fixed random feedback worked finely from the beginning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference explaining the early trial performance difference.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "As the delay increased, the mean squared error of state values (at 3000th trial) increased, but the relative superiority of oVRNNbp-rev and oVRNNrf-bio over the models with untrained RNN remained to hold, except for a few cases with 5 RNN units.",
+    "claim_type": "EXPLICIT",
+    "source": "As the delay increased, the mean squared error of state values (at 3000th trial) increased, but the relative superiority of oVRNNbp-rev and oVRNNrf-bio over the models with untrained RNN remained to hold, except for a few cases with 5 RNN units (5 delay oVRNNrf-bio vs shuffled with default learning rate, 6 delay oVRNNrf-bio vs naive or shuffled with halved learning rate) (p < 0.047 in Wilcoxon rank sum test for oVRNNbp-rev or oVRNNrf-bio vs naive or shuffled untrained for each number of RNN units for each delay).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 6J.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Both oVRNNbp-rev and oVRNNrf-bio produced the expected different patterns of TD-RPEs in the two tasks (TD-RPE at early reward > TD RPE at late reward in task 1 and opposite pattern in task 2).",
+    "claim_type": "EXPLICIT",
+    "source": "Then, both oVRNNbp-rev and oVRNNrf-bio produced such TD-RPE patterns (Figure 7A, B)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 7A and B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The models with untrained RNN could not produce the expected TD-RPE patterns.",
+    "claim_type": "EXPLICIT",
+    "source": "whereas the models with untrained RNN could not (Figure 7C, D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 7C and D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The online value-RNN with random feedback and further biological constraints could learn the differential characteristics of the tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "This indicates that the online value-RNN with random feedback and further biological constraints could learn the differential characteristics of the tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the data on the probabilistic tasks.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The angle between the value weights (w) and the random feedback (c) was on average smaller than 90\u00b0, which was the chance-level angle in the case without non-negative constraint, from the beginning.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 8A, the angle was on average smaller than 90\u00b0, which was the chance-level angle in the case without non-negative constraint, from the beginning",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 8A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "There was no further alignment over trials in oVRNNrf-bio.",
+    "claim_type": "EXPLICIT",
+    "source": "while there was no further alignment over trials.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 8A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Because both the value weights (w) and the random feedback (c) were constrained to be non-negative, these two vectors were ensured to be in a relatively close angle (i.e., in the same quadrant) from the beginning.",
+    "claim_type": "EXPLICIT",
+    "source": "This could be understood as follows. Because both the value weights (w) and the random feedback (c) were now constrained to be non-negative, these two vectors were ensured to be in a relatively close angle (i.e., in the same quadrant) from the beginning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference explaining the loose alignment.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "By virtue of this loose alignment, the random feedback could act similarly to backprop-type transported-weight feedback, even without further alignment.",
+    "claim_type": "EXPLICIT",
+    "source": "By virtue of this loose alignment, the random feedback could act similarly to backprop-type transported-weight feedback, even without further alignment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference explaining the mechanism.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "There was no correlation between the w\u2013c angle at 1500th trial and the value of the pre-reward state (r = 0.0117, p = 0.908).",
+    "claim_type": "EXPLICIT",
+    "source": "We examined if the angle between the value weights (w) and the random feedback (c) at the 1500th trial was associated with the developed value of pre-reward state across simulations, but found no association (r = 0.0117, p = 0.908) (Figure 8B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 8B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The w\u2013c angle at initial trials (2nd to around 10th trials) was negatively correlated with the developed values of the reward state and preceding states at 500th trial.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the w\u2013c angle at initial trials (2nd to around 10th trials) was negatively correlated with the developed values of the reward state and preceding states at 500th trial (Figure 8C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 8C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Better alignment of w and c at initial and early timings was associated with better development of state values.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that better alignment of w and c at initial and early timings was associated with better development of state values, in line with the conjecture that loose alignment of w and c coming from the non-negative constraint supported learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the correlation analysis.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "One or a few element(s) of w grew prominently during learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 8Ea shows the mean \u00b1 SEM of the elements of w ordered from the largest to smallest ones after 1500 trials. As conjectured above, a few elements indeed grew prominently.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 8Ea.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "If a slight decay (forgetting) of value weights was assumed, such a prominent growth of a few elements of w may be mitigated and alignment of w to c, beyond the initial loose alignment because of the non-negative constraint, may occur.",
+    "claim_type": "EXPLICIT",
+    "source": "We considered that if a slight decay (forgetting) of value weights (cf., Morita and Kato, 2014; Kato and Morita, 2016; Kato and Morita, 2025) was assumed, such a prominent growth of a few elements of w may be mitigated and alignment of w to c, beyond the initial loose alignment because of the non-negative constraint, may occur. These conjectures were indeed confirmed by simulations (Figure 8Eb, c, F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 8Eb, c, and F.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "The mean squared value-error slightly increased when the value-weight decay was assumed.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean squared value-error slightly increased when the value-weight decay was assumed (Figure 8G); however, presumably reflecting a decrease in developed values and a deterioration of learning because of the decay.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 8G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "oVRNNbp-rev-ei and oVRNNrf-bio-ei learned the state values in the Pavlovian task much more accurately than the models with naive untrained RNN or untrained RNN whose connections were shuffled.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 9B, oVRNNbp-rev-ei and oVRNNrf-bio-ei learned the state values in the Pavlovian task much more accurately than the models with naive untrained RNN or untrained RNN whose connections from the observation and E-units to E- and I-units were shuffled from oVRNNrf-bio-ei (p < 5.2 \u00d7 10\u221212 in Wilcoxon rank sum test for oVRNNbp-rev-ei or oVRNNrf-bio-ei vs naive or shuffled untrained for each number of RNN units).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figure 9B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "oVRNNbp-rev-ei and oVRNNrf-bio-ei generated the expected different patterns of TD-RPEs in the two tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, as shown in Figure 9C, oVRNNbp-rev-ei and oVRNNrf-bio-ei with 20 E-units and 20 I-units generated the expected different patterns of TD-RPEs in the two tasks (TD-RPE at early reward > TD-RPE at late reward in task 1 and opposite pattern in task 2), although the effect size for task 2 in oVRNNrf-bio-ei was small",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 9C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The extended models with E- and I-units showed largely similar behaviors to those of the original oVRNNbp-rev and oVRNNrf-bio with mixed positive and negative RNN weights.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, the extended models with E- and I-units showed largely similar behaviors to those of the original oVRNNbp-rev and oVRNNrf-bio with mixed positive and negative RNN weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the comparison of results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The original models with mixed positive and negative RNN weights could be regarded as a simplified description of the models with E- and I-units under the abovementioned assumptions.",
+    "claim_type": "EXPLICIT",
+    "source": "This is actually reasonable, because combining the update equations for I- and E-units in the extended models (top two equations in Figure 9A) results in an equation largely similar to the update equation for RNN units in the original models (top equation in Figure 1). In other words, the original models with mixed positive and negative RNN weights could be regarded as a simplified description of the models with E- and I-units under the abovementioned assumptions.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on mathematical analysis of the equations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Even when there was a distractor cue, oVRNNbp-rev and oVRNNrf-bio could still learn the state values better than the models with naive or shuffled untrained RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, even when there was such a distractor cue, oVRNNbp-rev and oVRNNrf-bio could still learn the state values better than the models with naive or shuffled untrained RNN (p < 1.7 \u00d7 10\u221210 in Wilcoxon rank sum test for oVRNNbp-rev or VRNNrf-bio vs naive or shuffled untrained for each number of RNN units for each level of distractor probability) (Figure 10C\u2013E, middle panels)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figures 10C-E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The accuracy moderately decreased compared with the case without distractor cue.",
+    "claim_type": "EXPLICIT",
+    "source": "although the accuracy moderately decreased compared with the case without distractor cue (Figure 10B, middle panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 10B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "These results suggest robustness of the learning ability of oVRNNrf-bio against distractor in realistic situations.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest robustness of the learning ability of oVRNNrf-bio against distractor in realistic situations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the distractor task results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Even in the presence of a distractor cue, oVRNNbp-rev-ei and oVRNNrf-bio-ei could learn the state values better than the models with naive or shuffled untrained RNN.",
+    "claim_type": "EXPLICIT",
+    "source": "We further examined how the models with E- and I-units behaved in the task with a distractor cue and confirmed that even in the presence of a distractor cue, oVRNNbp-rev-ei and oVRNNrf-bio-ei could learn the state values better than the models with naive or shuffled untrained RNN (p < 3.2 \u00d7 10\u22128 in Wilcoxon rank sum test for oVRNNbp-rev-ei or oVRNNrf-bio-ei vs naive or shuffled untrained for each number of RNN units for each level of distractor probability) (Figure 10B\u2013E, right panels).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by statistical analysis of data shown in Figures 10B-E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "oVRNNbp-rev-ac and oVRNNrf-bio-ac, after training, successfully selected the better action, action 1, in most cases in the first choice task.",
+    "claim_type": "EXPLICIT",
+    "source": "oVRNNbp-rev-ac and oVRNNrf-bio-ac, after training, successfully selected the better action, action 1, in most cases, whereas the models with untrained RNN did not develop strong tendency to select action 1 (Figure 11Bb, c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 11Bb and c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "oVRNNbp-rev-ac, after training, tended to select action 1, which was better than action 2 even when presumed temporal discounting (0.8 per time step) was taken into account in the inter-temporal choice task.",
+    "claim_type": "EXPLICIT",
+    "source": "oVRNNbp-rev-ac, after training, tended to select action 1, which was better than action 2 even when presumed temporal discounting (0.8 per time step) was taken into account (Figure 11Cb, c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 11Cb and c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "oVRNNrf-bio-ac also tended to select action 1 when the number of RNN units was not small in the inter-temporal choice task.",
+    "claim_type": "EXPLICIT",
+    "source": "oVRNNrf-bio-ac also tended to select action 1 when the number of RNN units was not small.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 11Cb and c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The models with untrained RNNs tended to select small rewards sooner in the inter-temporal choice task.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, the models with untrained RNNs tended to select small rewards sooner.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figures 11Cb and c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "These results suggest that oVRNNrf-bio-ac, as well as oVRNNbp-rev-ac, could learn to select advantageous action to a certain extent, even in the case of inter-temporal choice.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that oVRNNrf-bio-ac, as well as oVRNNbp-rev-ac, could learn to select advantageous action to a certain extent, even in the case of inter-temporal choice.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the action selection task results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Learnability of our biologically constrained online value-RNN suggests that TD-RPE-encoding cortical DA modulates plasticity of RNN so that appropriate state representation can be learned.",
+    "claim_type": "EXPLICIT",
+    "source": "Learnability of our biologically constrained online value-RNN suggests that TD-RPE-encoding cortical DA modulates plasticity of RNN so that appropriate state representation can be learned.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the model's success.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "oVRNNrf predicts that the feedback vector c and the value-weight vector w become gradually aligned.",
+    "claim_type": "EXPLICIT",
+    "source": "oVRNNrf predicts that the feedback vector c and the value-weight vector w become gradually aligned",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction derived from the model behavior.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "oVRNNrf-bio predicts that c and w are loosely aligned from the beginning.",
+    "claim_type": "EXPLICIT",
+    "source": "while oVRNNrf-bio predicts that c and w are loosely aligned from the beginning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction derived from the model behavior.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Our model predicts that if DA projection to a particular cortical locus is silenced, the effect of the activity of that locus on the value-encoding striatal activity will become diminished.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, our model predicts that if DA projection to a particular cortical locus is silenced, the effect of the activity of that locus on the value-encoding striatal activity will become diminished.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction derived from the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "If oVRNNrf/oVRNNrf-bio-like mechanism indeed operates in the brain and the feedback is near uniform, alignment of the value weights w to near (1, 1,..., 1) is expected to occur.",
+    "claim_type": "EXPLICIT",
+    "source": "If oVRNNrf/oVRNNrf-bio-like mechanism indeed operates in the brain and the feedback is near uniform, alignment of the value weights w to near (1, 1,..., 1) is expected to occur.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction derived from the model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Simple summation of cortical neuronal activity approximates value if states are represented such that value weights align to near (1, 1,..., 1), thereby potentially explaining why value is often correlated with regional activation (fMRI BOLD signal) of cortical regions.",
+    "claim_type": "EXPLICIT",
+    "source": "This means that states are (learned to be) represented in such a way that simple summation of cortical neuronal activity approximates value, thereby potentially explaining why value is often correlated with regional activation (fMRI BOLD signal) of cortical regions (Levy and Glimcher, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference and speculation about implications of the model.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION",
+      "CITATION"
+    ]
+  }
+]

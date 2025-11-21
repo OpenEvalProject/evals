@@ -1,0 +1,2448 @@
+{
+  "submission": {
+    "id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:08:25.664303Z",
+    "updated_at": "2025-11-21T04:08:25.664303Z"
+  },
+  "content": [
+    {
+      "id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "content_type": "manuscript",
+      "content_text": "# Optogenetic stimulation of single ganglion cells in the living primate fovea\n\n## Authors\n\n- Peter J Murphy<sup>1</sup> ([ORCID: 0000-0002-9885-7779](https://orcid.org/0000-0002-9885-7779)) \u2020\n- Juliette E McGregor<sup>2</sup> ([ORCID: 0000-0002-8046-028X](https://orcid.org/0000-0002-8046-028X))\n- Zhengyang Xu<sup>1</sup> ([ORCID: 0009-0004-9355-8405](https://orcid.org/0009-0004-9355-8405))\n- Qiang Yang<sup>2</sup>\n- William Merigan<sup>1</sup> ([ORCID: 0009-0005-9411-6120](https://orcid.org/0009-0005-9411-6120))\n- David R Williams<sup>1</sup>\n\n### Affiliations\n\n1. The Institute of Optics, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n2. Center for Visual Science, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n3. Flaum Eye Institute, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThough the responses of the rich variety of retinal ganglion cells (RGCs) reflect the totality of visual processing in the retina and provide the sole conduit for those processed responses to the brain, we have much to learn about how the brain uses these signals to guide behavior. An impediment to developing a comprehensive understanding of the role of retinal circuits in behavior is the paucity of causal studies in the intact primate visual system. Here, we demonstrate the ability to optogenetically activate individual RGCs with flashes of light focused on single RGC somas in vivo, with no evidence for activation of neighboring cells. The ability to selectively activate specific cells is the first step toward causal experiments that directly link retinal circuits to visual experience and behavior.\n\n## Introduction\n\nThough only a few classes of light-sensitive cells capture the retinal image in the primate eye, evolution has produced many more classes of retinal ganglion cell (RGC), on the order of 20, each morphologically and physiologically distinct and independently tiling the retina, to convey visual information to the brain. This dramatic expansion of cell classes in the retinal output, combined with microelectrode recordings in excised tissue, has made it increasingly clear that the diversity of RGCs reflects instead a surprising amount of complex early processing in the mammalian retina, processing that had previously been thought to reside deeper in the brain (Gollisch and Meister, 2010). There is evidence, for example, for specialized circuits that convey directional selectivity (DS) (Barlow et al., 1964), segregate object from background motion (Lettvin et al., 1959), and anticipate moving stimuli (Berry et al., 1999). However, we remain uncertain about the direct functional role of these RGC classes because, while ex vivo recordings can characterize the specific stimulus requirements of RGC classes, they are often made in the excised retina that is detached from the downstream visual pathways they serve. Such studies preclude direct manipulations of RGC activity to observe the impact on visual experience or behavior in the awake primate. For example, we cannot say with certainty whether the DS cells recently observed in the non-human primate (NHP) are involved in eye movements, the perceptual experience of motion, or both. Indeed, there is even lingering controversy about the perceptual roles of the most common primate RGCs, the midget and parasol ganglion cells (Freedland and Rieke, 2022; Patterson et al., 2019).\n\nTo address these controversies, one exciting possibility for the future is the development of studies in which the effect of manipulating RGC responses in the awake behaving animal can be measured with psychophysical or behavioral measures. There have been formidable challenges to deploying this causal paradigm to study retinal circuits because of their inaccessibility inside the moving eye of the awake behaving primate. Advances in high-resolution retinal imaging with adaptive optics (AO) now make it possible to observe single RGCs in the living eye (Gray et al., 2008). AO has also enabled very accurate eye tracking, making it possible to not only image but also stimulate single photoreceptors repeatedly with focused flashes of light (Schmidt et al., 2018a; Schmidt et al., 2018b; Tuten et al., 2017) in the moving human eye. In addition, viral vectors now allow expression of calcium indicators such as GCaMP6s (Yin et al., 2013; Godat et al., 2022), enabling recording from single RGCs in vivo. Finally, optogenetic activation of RGCs has been demonstrated in both macaque (McGregor et al., 2020) and human (Sahel et al., 2021) retina in vivo. These recent technical advances taken together now offer the possibility of causal experiments in which single RGCs are optogenetically stimulated in the living primate eye while the behavioral consequences are measured. Here, we demonstrate the first step toward establishing this capability: showing successful stimulation of single RGCs in the living primate eye.\n\n## Results\n\nRGC activity was modulated via the optogenetic ChrimsonR and monitored via fluorescence imaging of the calcium indicator GCaMP6s. Isolated foveal RGCs were chosen for individual stimulation, being targeted with short pulses of light intended to elicit activity in that cell only. The response of both the selected cell and all nearby cells was monitored to determine activation status. Chosen cells and their fluorescence traces can be seen in Figure 1. Targeted cells showed large responses to the optogenetic probe. The GCaMP responses rise to peak quickly and then decay over several seconds. This time course is consistent with GCaMP responses to cone excitation of RGCs measured via in vivo AOSLO imaging (). Figure 2 shows all cells\u2019 $\u0394$ F/F values plotted against their distance from the targeted cell. Non-targeted cells showed no significant response above the background noise in contrast to the targeted cells, the responses of which were between three and four times the background noise floor. While we cannot exclude the possibility that surrounding cells responded to the flash below the noise threshold of our measurements, clearly these conditions strongly favor the excitation of the target cell over that of the neighbors we were able to record from. We cannot rule out the possibility that, due to the random nature of the vector expression process, some of these non-targeted cells were inactive because they failed to express ChrimsonR. The degree of GCaMP6s and ChrimsonR expression varies from one RGC to another, introducing the possibility that some cells may only have significant expression of one or neither agent. This means that some optogenetically active cells may have had no or weak GCaMP6s expression, diminishing our ability to observe their responses in our recordings. Despite this uncertainty, we can be reasonably sure that most cells are strongly co-expressing both agents. This is achieved via fluorescence imaging of the tdTomato marking ChrimsonR expression, which shows substantial overlap with the observed GCaMP6s fluorescence.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90050/elife-90050-fig1-v1.jpg)\n\n**Figure 1.:** The cell circled in red marks the targeted cell. The averaged fluorescence traces for each cell show the integrated intensity over the cell\u2019s soma. The red marks on the time axis represent the onset of the 800 ms optogenetic stimulus. The histograms show each cell\u2019s response in terms of z score. (a) Results from male macaque. (b) Results from female macaque. All targeted cells are at similar eccentricities (1.5\u00b0).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90050/elife-90050-fig2-v1.jpg)\n\n**Figure 2.:** Note that even the nearby (<50 \u00b5m) cell somas do not show a significantly elevated response (p>>0.05, unpaired t-test) than other cells at more distant locations. The leftmost point on each plot, colored in red, corresponds to the targeted cell itself. The traces for the four closest neighbors are shown below each scatter plot.\n\n## Discussion\n\nThough this method has limitations, these may be overcome via further refinements of the technique. For this initial demonstration, we deliberately selected the most favorable conditions, especially by selecting cells to target that were spatially isolated from neighboring cells. Here, we show results for cells at the inner edge of the ring of RGCs serving the primate fovea. The ability to extrapolate the method to cells closely packed on all sides by neighboring cells, as occurs at slightly larger eccentricities, between 0.5 and 2.5\u00b0, deeper in the foveal ring of labeled cells, has yet to be explored. In this region, RGCs have little to no separation between cell somas. The transverse spatial resolution of an AOSLO is roughly 1.6 \u00b5m, which is more than adequate for targeting the much larger soma diameter. However, the axial resolution of an AOSLO is roughly 25 \u00b5m, roughly twice the soma diameter. This means that there would be some optogenetic excitation of the cells immediately above and below the cell of interest. But even in this less favorable case, the balance of excitation could be shifted strongly to a subset of RGCs, even if perfect isolation were not possible. The ability to isolate single cells becomes far more favorable again in the periphery, where the RGC somas are in a monolayer. However, in this retinal region, the RGC somas and their cone receptive fields lie on top of each other, precluding the use of the spatial offset between cone receptive fields and their somas to separate cone and RGC optogenetic excitation. The use of two-photon excitation coupled with the use of a more sensitive optogenetic, such as ChRmine, may mitigate this concern by increasing the optogenetic excitation while reducing the efficacy of light falling on photoreceptors (Marshel et al., 2019). Other approaches to increasing the selective activation of targeted cells may include cortically-targeted retrograde injections or class-specific viral vectors.\n\nThe demonstration of in vivo selective activation of individual RGCs lays the foundation for future causal studies of RGC function. The causal experimental approach has been successful in understanding the roles of neuronal classes in the cortex of NHPs for many years, such as the work of Newsome and colleagues who showed that electrical activation of DS cells in MT modifies the animal\u2019s choices in motion discrimination tasks (Salzman et al., 1992; Cicmil and Krug, 2015; Parker and Newsome, 1998). More recently, this paradigm has incorporated optogenetic activation to investigate the function role of localized neural circuitry in cortex (Jazayeri et al., 2012; Soma et al., 2019). Applied to RGCs, this approach would involve first, in vivo calcium imaging to classify each RGC, followed by psychophysical experiments combined with optogenetic stimulation designed to explore each cell\u2019s role in visual behavior. Such experiments would establish a direct link between activation of an individual RGC and visual behavior and could help determine whether a given cell class contributes to perceptual experience, subconscious visual behavior, or both. These experiments will face additional challenges such as deploying the technology demonstrated here in the awake behaving animal where eye motion will be larger than in the anesthetized animal. Nonetheless, the single cone tracking and stimulation experiments in the awake human inspire confidence that this will be possible (Schmidt et al., 2018a; Schmidt et al., 2018b; Tuten et al., 2017). These experiments in which single cones are targeted with light have shown that visibility can be measured from photon absorption with flashes of light delivered through AO to single cones from each of the three foveal cone classes (Williams et al., 1981 Schmidt et al., 2018b; Hofer et al., 2005), encouraging the possibility that optogenetic stimulation of a single RGC might be sufficient to elicit a sensation in an awake behaving monkey, a hypothesis that future experiments could test. Monkeys are remarkably good at psychophysical experiments, with performance rivalling that of human observers (Matsuno and Fujita, 2009).\n\nInterpretation of causal experiments through optogenetic stimulation of a single RGC is inevitably complicated by the fact that perceptual experience depends on cell populations and such experiments would necessarily produce unnatural population activity. How the brain would interpret such an unusual pattern of excitation is not entirely clear, and it may be necessary to control the stimulation of multiple nearby RGCs to develop a clear understanding of their function. Additionally, should it prove possible to realize this paradigm, it could provide valuable data to guide optogenetics-based vision restoration therapies. This could eventually offer the opportunity to simultaneously activate multiple classes of RGCs according to their individual response characteristics, leading to a perceptual experience that more closely resembles that generated by the natural environment in the sighted eye.\n\n## Materials and methods\n\n### Animals and animal care\n\nThese experiments were performed in two anesthetized Macaca fascicularis, one male (M1) and one female (M2). Macaques were housed in an AAALAC-accredited facility and were provided with care by four full-time veterinarians, five veterinary technicians, and an animal behaviorist from the Department of Comparative Medicine. The animal care staff monitored each animal for signs of discomfort at least twice daily. They were caged in pairs and had free access to lab chow and water. Their diet was additionally supplemented with daily treats including dried fruits, fresh fruits, vegetables, and nuts. All animals have daily access to enrichment items such as puzzle feeders and mirrors and are provided with movies and/or music. More novel enrichment items such as treat-filled bags, snow, or forage boxes were provided weekly. The macaques had access to a large play space with swings and perches on a rotating basis. This study was carried out in strict accordance with the Association for Research in Vision and Ophthalmology (ARVO) Statement for the Use of Animals and the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. The protocol was approved by the University Committee on Animal Resources for the University of Rochester (Ref 100567). One animal had two lesions of the central fovea, which had removed cone input to many of the labeled RGCs. The RGCs deafferented in this manner are easily distinguishable from those with normal input and were avoided for study in this experiment.\n\n### Injections for expression of optogenetic and calcium indicator\n\nPrior to injection, both animals received daily subcutaneous injections of cyclosporine to reduce the possibility of immune reaction to the injection. Blood trough levels were monitored to titrate the dose into the range of 150\u2013200 ng/ml, and these levels were maintained throughout the testing period. The ocular surface was disinfected before injection with 50% diluted Betadine. Coexpression of both an optogenetic actuator (ChrimsonR) and a calcium indicator (GCaMP6s) enabled both stimulation of RGCs and recording of their responses. This was achieved with a single intravitreal injection containing a mixture of two adeno-associated virus (AAV2) based vectors with a ubiquitous CAG promoter, AAV2-CAG-tdTomato-ChrimsonR and AAV2-CAG-GCaMP6s. These vectors were synthesized by the University of Pennsylvania Vector core. The injection was delivered via a 30-gauge needle with a tuberculin syringe into the middle of the vitreous roughly 2 mm behind the limbus. The injection was made in the right eye of M1 and the left eye of M2 and had a total volume of 75 \u00b5l. Post-injection, the eyes were monitored with conventional SLO imaging (Heidelberg Spectralis) for adverse events such as inflammation, which was not present in either animal throughout data collection. As previously demonstrated (Dalkara et al., 2013), expression was largely confined to an annulus spanning from 0.5\u00b0 to 2\u00b0. The inner edge of this annular region corresponds to the most centrally located RGCs that receive input from the most central fovea, while the outer edge corresponds to the most eccentric location where we presume the inner limiting membrane remained thin enough for penetration of the viral vector. All RGCs that obtained expression are close enough to the foveal center to be displaced from their receptive fields, allowing for direct optogenetic activation of cell somas without stimulation of the cones that drive them.\n\n### AO imaging\n\n#### Anesthesia and animal preparation\n\nAnesthesia and animal preparation were performed by licensed veterinary technicians. Macaques were fasted overnight prior to anesthesia in preparation for ventilation. The morning of an imaging session, macaques were moved to the laboratory and anesthetized with isoflurane. They were placed prone upon a stereotaxic cart, supported by cushions and covered with a warming blanket. The animals were paralyzed for the duration of imaging via an injection of vecuronium bromide. For the duration of paralysis, the animal\u2019s heart and respiratory rates, blood oxygenation levels, and electrocardiogram were monitored by a veterinary technician. The animal\u2019s pupils were dilated with drops of phenylephrine chloride (2.5%) and tropicamide (1%), and the eye fitted with a rigid gas permeable contact lens to maintain corneal hydration. The animal\u2019s head was stabilized with ear bars and a chin rest, and the animal\u2019s whole body could be rotated via the stereotaxic cart to position the animal for imaging. The macaque was monitored for several hours by a veterinary technician after each session to ensure full and safe recovery from the anesthetic drugs. This procedure was repeated no more than once per week on an individual macaque.\n\n#### Imaging procedure\n\nHigh-resolution imaging was performed with an adaptive optics scanning light ophthalmoscope (AOSLO), a complete description of which can be found in Godat et al., 2022. A Shack\u2013Hartmann wavefront sensor in conjunction with an 847 nm laser diode source (QPhotonics) was used for wavefront sensing. The wavefront sensor data controlled a deformable mirror (ALPAO) in a closed-loop configuration operating at 10 Hz to provide correction of ocular aberrations. Reflectance and fluorescence signals were collected with photomultiplier tubes. The RGC layer was imaged using the fluorescent light emitted by the calcium indicator excited with light from a 488 nm laser (Qioptiq), and the optogenetic was excited using the 640 nm line of a multi-line laser (Toptica). The cone mosaic was simultaneously imaged with light from a 796 nm superluminescent diode (Superlum) to provide a higher SNR (signal-to-noise ratio) helpful for both real-time stimulus stabilization and post-recording image registration. Both uses are based upon cross-correlation of small strips of the image (Yang et al., 2014). For stimulus stabilization, only strips located near the stimulus\u2019 intended location were used in the cross-correlation, allowing the stimulus to be repeatedly presented to the same retinal location. This stabilization is necessary because the heartbeat and respiration of the animal cause lateral shifts in the retinal imaging throughout recording of approximately 50 \u00b5m. The image registration application is similar in execution and is applied in turn to all sections of the image to obtain a single stabilized video. The motion data from the strip registration of the cone reflectance video was used to stabilize the calcium recording. These methods allowed us to obtain cellular-scale recordings from the primate retina in vivo while correcting for the motion inherent to the living eye.\n\n#### Cell selection\n\nFor this first study, we selected RGCs lying on the innermost edge of the annulus of expression often had large distances between their somas, making them easier to target with optogenetic stimulation without exciting neighboring cells. This crosstalk could potentially enter our measurements both when stimulating and recording. First, scatter from the 640 nm stimulus may illuminate nearby cell somas or underlying fibers of passage. Additionally, these nearby cell somas, their dendritic arbors, and fibers may contaminate the GCaMP recording if they overlap with the cell of interest\u2019s soma. We chose two cells in each of the two animals that were > 20 \u00b5m from their nearest neighbor to mitigate the possibility of optical crosstalk. We have considered two possibilities by which light sources in the experiment other than the optogenetic probe might have interfered with the RGC response, but calculations confirm that neither would be expected to appreciably influence the probe response (Figure 3). First, the 488 nm imaging light is expected to produce an optogenetic activation that is only about 2% of that of the optogenetic probe . Moreover, it illuminates all cells equally throughout the experiment and would be expected to produce a constant activation, unlike the probe which is confined in space and time. Second, the emission from GCaMP and tdTomato is at least 4 orders of magnitude lower than this 488 nm stimulus, making it unlikely that these fluorophores could have caused a measurable cell response.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90050/elife-90050-fig3-v1.jpg)\n\n**Figure 3.:** The emission wavelengths of tdTomato and GCaMP6 are well suited to activating ChrimsonR, and the wavelength used to image GCaMP fluorescence stimulates both fluorophores well.\n\nCells within a 1\u00b0 \u00d7 1\u00b0 field of view were imaged at 488 nm (25 \u00b5W) for 30 s to allow for adaptation to the maintained calcium imaging light. The RGCs showed some level of baseline activation in response to this. ChrimsonR was then activated by a circular stimulus (640 nm, 750 \u00b5W) with a diameter of 12.5 \u00b5m, approximately the size of a cell soma. This stimulus was formed by modulating the 640 nm laser source\u2019s output to only be on while scanning over the soma of interest at a rate of 25 Hz. The duration of excitation was 800 ms, throughout which the stimulus was stabilized on the cell\u2019s soma using the method described in the imaging procedure section. This stimulus was repeated four times for each trial with a waiting period of 15 s between stimuli. We have seen no evidence that this modulated cell activity via the normal cone pathways.\n\n### Analysis\n\nThe GCaMP6s recordings were registered using strip registration and the frames averaged to obtain a high SNR image of the RGC mosaic. This registration is necessary because the heartbeat and respiration of the animal cause lateral shifts in the retinal imaging throughout recording of approximately 50 \u00b5m. The resulting RGC image was manually segmented to create a binary mask that can be applied to each frame of the video. The mask is used to extract the mean brightness of each cell soma for each frame. These brightness values are then used to calculate $\u0394$ F/F values for each cell soma in response to each stimulus. This calculation was performed for all cells that remain within the field of view for the entirety of the recording. Cells near the edge of the field of view often move in and out of visibility, obscuring any signals that may be present. The mean and standard deviation of $\u0394$ F/F values are calculated for periods during which no stimulus was present using data taken from all labeled RGCs in the subject\u2019s retina. These are used to transform the cell responses to stimuli into z-scores.\n",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fred Rieke, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90050.3.sa0](https://doi.org/10.7554/eLife.90050.3.sa0)\n\nThis article shows that it is possible to optogenetically activate single retinal ganglion cells in vivo in monkeys. This is an important step toward causal tests of the role of specific ganglion cell types in visual perception. The article presents convincing evidence for the promise of the approach, but further work will be needed to fully explore its limitations and specificity.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90050.3.sa1](https://doi.org/10.7554/eLife.90050.3.sa1)\n\nSummary\n\nThis manuscript reports preliminary evidence of successful optogenetic activation of single retinal ganglion cells (RGCs) through the eye of a living monkey using adaptive optics (AO).\n\nStrengths\n\nThe eventual goals of this line of research have an enormous potential impact in that they will probe the perceptual impact of activating single RGCs. While I think more data should be included, the four examples shown look quite convincing.\n\nWeaknesses\n\nWhile this is undoubtedly a technical achievement and an important step along this group's stated goal to measure the perceptual consequences of single-RGC activations, the presentation lacks the rigor that I would expect from what is really a methods paper. In my view, it is perfectly reasonable to publish the details of a method before it has yielded any new biological insights, but in those publications, there is a higher burden to report the methodological details, full data sets, calibrations, and limitations of the method. There is considerable room for improvement in reporting those aspects. Specifically, more raw data should be shown for activations of neighboring RGCs to pinpoint the actual resolution of the technique, and more than two cells (one from each field of view) should be tested. Some information about the density of labeled RGCs in these animals would also be helpful to provide context for how many well-isolated target cells exist per animal.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90050.3.sa2](https://doi.org/10.7554/eLife.90050.3.sa2)\n\nMurphy et al. expressed ChrimsonR and GCaMP6s in retinal ganglion cells of a living macaque. They recorded calcium responses and stimulated individual cells, optically. Neurons targeted for stimulation were activated strongly whereas neighboring neurons were not.\n\nThe ability to record from neuronal populations while simultaneously stimulating a subset in controlled way is a high priority for systems neuroscience, and this has been particularly challenging in primates. This study marks an important milestone in the journey towards this goal.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90050.3.sa3](https://doi.org/10.7554/eLife.90050.3.sa3)\n\nThis paper reports a considerable technical achievement: the optogenetic activation of single retinal ganglion cells in vivo in monkeys. As clearly specified in the paper, this is an important step towards causal tests of the role of specific ganglion cell types in visual perception. The paper is brief, and it will be important to follow this work with a more detailed methodological description to guide related work, to explore limitations, and to build confidence in the specificity of the approach.\n",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5bb3a3e3-452f-4c50-9e7f-518de929eeae",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C1",
+      "claim": "The primate retina contains on the order of 20 morphologically and physiologically distinct classes of retinal ganglion cells (RGCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Though only a few classes of light-sensitive cells capture the retinal image in the primate eye, evolution has produced many more classes of retinal ganglion cell (RGC), on the order of 20, each morphologically and physiologically distinct and independently tiling the retina, to convey visual information to the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about primate retinal anatomy and physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "17841bb4-3acb-41de-bc55-45357eea1ba1",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C2",
+      "claim": "Each class of RGC independently tiles the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Though only a few classes of light-sensitive cells capture the retinal image in the primate eye, evolution has produced many more classes of retinal ganglion cell (RGC), on the order of 20, each morphologically and physiologically distinct and independently tiling the retina, to convey visual information to the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about RGC organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "6f773602-a458-4df4-8c5c-6abb3572cbf5",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C3",
+      "claim": "The diversity of RGCs reflects complex early processing in the mammalian retina that was previously thought to reside deeper in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This dramatic expansion of cell classes in the retinal output, combined with microelectrode recordings in excised tissue, has made it increasingly clear that the diversity of RGCs reflects instead a surprising amount of complex early processing in the mammalian retina, processing that had previously been thought to reside deeper in the brain (Gollisch and Meister, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gollisch and Meister, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "dbcedcda-9d62-4eec-bdd7-0e61a3b1120b",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C4",
+      "claim": "There are specialized retinal circuits that convey directional selectivity (DS).",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence, for example, for specialized circuits that convey directional selectivity (DS) (Barlow et al., 1964), segregate object from background motion (Lettvin et al., 1959), and anticipate moving stimuli (Berry et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Barlow et al., 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "1b9b915e-9a88-4dc6-92cd-17410f6d967c",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C5",
+      "claim": "There are specialized retinal circuits that segregate object from background motion.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence, for example, for specialized circuits that convey directional selectivity (DS) (Barlow et al., 1964), segregate object from background motion (Lettvin et al., 1959), and anticipate moving stimuli (Berry et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lettvin et al., 1959.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "f6baf213-8204-43bc-8494-c14f15a7134c",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C6",
+      "claim": "There are specialized retinal circuits that anticipate moving stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence, for example, for specialized circuits that convey directional selectivity (DS) (Barlow et al., 1964), segregate object from background motion (Lettvin et al., 1959), and anticipate moving stimuli (Berry et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Berry et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "3af0f419-3bda-47d9-b85d-a2d63ee8bd13",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C7",
+      "claim": "Ex vivo recordings of RGCs are often made in excised retina detached from downstream visual pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we remain uncertain about the direct functional role of these RGC classes because, while ex vivo recordings can characterize the specific stimulus requirements of RGC classes, they are often made in the excised retina that is detached from the downstream visual pathways they serve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of ex vivo recording methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "27f3e7f8-a66f-4e69-a5a6-1baf3625009d",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C8",
+      "claim": "Ex vivo recordings preclude direct manipulations of RGC activity to observe the impact on visual experience or behavior in the awake primate.",
+      "claim_type": "EXPLICIT",
+      "source": "Such studies preclude direct manipulations of RGC activity to observe the impact on visual experience or behavior in the awake primate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of the ex vivo recording approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "5c7f537a-e756-40ab-a7b1-63ae6e6ca6e4",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C9",
+      "claim": "Direction-selective (DS) cells have been recently observed in the non-human primate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we cannot say with certainty whether the DS cells recently observed in the non-human primate (NHP) are involved in eye movements, the perceptual experience of motion, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recent observation in NHP research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "7dcf3e26-70b9-420c-9fa1-93a870b513e9",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C10",
+      "claim": "There is lingering controversy about the perceptual roles of midget and parasol ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is even lingering controversy about the perceptual roles of the most common primate RGCs, the midget and parasol ganglion cells (Freedland and Rieke, 2022; Patterson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Freedland and Rieke, 2022 and Patterson et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "0ea42841-ed1d-44d8-9532-f5e6de47215f",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C11",
+      "claim": "Midget and parasol ganglion cells are the most common primate RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is even lingering controversy about the perceptual roles of the most common primate RGCs, the midget and parasol ganglion cells (Freedland and Rieke, 2022; Patterson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about primate RGC populations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "c66e96b0-f85f-487b-899f-5728f52bae70",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C12",
+      "claim": "Adaptive optics (AO) now makes it possible to observe single RGCs in the living eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in high-resolution retinal imaging with adaptive optics (AO) now make it possible to observe single RGCs in the living eye (Gray et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gray et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "2f52e402-d30c-4a62-9c70-3f3e5b712497",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C13",
+      "claim": "AO has enabled very accurate eye tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "AO has also enabled very accurate eye tracking, making it possible to not only image but also stimulate single photoreceptors repeatedly with focused flashes of light (Schmidt et al., 2018a; Schmidt et al., 2018b; Tuten et al., 2017) in the moving human eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability enabled by AO technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "859812f1-cf17-4db2-9c07-6f4a253bbc62",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C14",
+      "claim": "AO makes it possible to stimulate single photoreceptors repeatedly with focused flashes of light in the moving human eye.",
+      "claim_type": "EXPLICIT",
+      "source": "AO has also enabled very accurate eye tracking, making it possible to not only image but also stimulate single photoreceptors repeatedly with focused flashes of light (Schmidt et al., 2018a; Schmidt et al., 2018b; Tuten et al., 2017) in the moving human eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Schmidt et al., 2018a; Schmidt et al., 2018b; Tuten et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "fe32a02b-4281-420a-af04-fe5e300e1148",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C15",
+      "claim": "Viral vectors allow expression of calcium indicators such as GCaMP6s, enabling recording from single RGCs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, viral vectors now allow expression of calcium indicators such as GCaMP6s (Yin et al., 2013; Godat et al., 2022), enabling recording from single RGCs in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yin et al., 2013 and Godat et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "e964aaba-b235-471a-bd51-afa5d719ae27",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C16",
+      "claim": "Optogenetic activation of RGCs has been demonstrated in macaque retina in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, optogenetic activation of RGCs has been demonstrated in both macaque (McGregor et al., 2020) and human (Sahel et al., 2021) retina in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to McGregor et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "c4194c2d-b4c3-4fcb-babf-44d4a0f0695c",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C17",
+      "claim": "Optogenetic activation of RGCs has been demonstrated in human retina in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, optogenetic activation of RGCs has been demonstrated in both macaque (McGregor et al., 2020) and human (Sahel et al., 2021) retina in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sahel et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "59a74157-f8b5-46ff-98cf-ec711df20973",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C18",
+      "claim": "This study demonstrates successful stimulation of single RGCs in the living primate eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate the first step toward establishing this capability: showing successful stimulation of single RGCs in the living primate eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "5f3d7cc1-d652-4861-b586-b51b880dc1d2",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C19",
+      "claim": "RGC activity was modulated via the optogenetic ChrimsonR.",
+      "claim_type": "EXPLICIT",
+      "source": "RGC activity was modulated via the optogenetic ChrimsonR and monitored via fluorescence imaging of the calcium indicator GCaMP6s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "2345439a-a0d5-4dd7-9492-dabc11550267",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C20",
+      "claim": "RGC activity was monitored via fluorescence imaging of the calcium indicator GCaMP6s.",
+      "claim_type": "EXPLICIT",
+      "source": "RGC activity was modulated via the optogenetic ChrimsonR and monitored via fluorescence imaging of the calcium indicator GCaMP6s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "85286c62-1556-4f95-9053-a026fea2b3cb",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C21",
+      "claim": "Isolated foveal RGCs were chosen for individual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolated foveal RGCs were chosen for individual stimulation, being targeted with short pulses of light intended to elicit activity in that cell only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "138cd69a-0dd9-4e97-a9b6-fd1ee014e0cc",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C22",
+      "claim": "Targeted cells were stimulated with short pulses of light intended to elicit activity in that cell only.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolated foveal RGCs were chosen for individual stimulation, being targeted with short pulses of light intended to elicit activity in that cell only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "d31408dd-66cc-47e8-acd4-fa08ab14544a",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C23",
+      "claim": "Targeted cells showed large responses to the optogenetic probe.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted cells showed large responses to the optogenetic probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "a8ee8667-176c-4f08-a967-9e9d179c52db",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C24",
+      "claim": "The GCaMP responses rise to peak quickly and then decay over several seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The GCaMP responses rise to peak quickly and then decay over several seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal characteristics observed in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "32940ec4-f01a-49d0-a055-3e0dc2132923",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C25",
+      "claim": "The time course of GCaMP responses is consistent with GCaMP responses to cone excitation of RGCs measured via in vivo AOSLO imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This time course is consistent with GCaMP responses to cone excitation of RGCs measured via in vivo AOSLO imaging ().",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the observed data to previously reported measurements, though the citation appears incomplete in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "301a4bc6-ab62-4409-b514-a1417f0cd8a2",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C26",
+      "claim": "Non-targeted cells showed no significant response above the background noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-targeted cells showed no significant response above the background noise in contrast to the targeted cells, the responses of which were between three and four times the background noise floor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "6aaaf4b3-fb6e-4012-be08-117f9e8b892e",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C27",
+      "claim": "The responses of targeted cells were between three and four times the background noise floor.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-targeted cells showed no significant response above the background noise in contrast to the targeted cells, the responses of which were between three and four times the background noise floor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "7244c55b-c46a-4aac-b3c4-96a2f93674f8",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C28",
+      "claim": "These conditions strongly favor the excitation of the target cell over that of the neighbors that were recorded from.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot exclude the possibility that surrounding cells responded to the flash below the noise threshold of our measurements, clearly these conditions strongly favor the excitation of the target cell over that of the neighbors we were able to record from.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing selective responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "d5edc615-7625-4fa9-bfbd-8e56450cad24",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C29",
+      "claim": "Some non-targeted cells may have been inactive because they failed to express ChrimsonR.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot rule out the possibility that, due to the random nature of the vector expression process, some of these non-targeted cells were inactive because they failed to express ChrimsonR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential confound in the experimental design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "32df8e2d-b29f-4aa3-9763-f7583b2fdd83",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C30",
+      "claim": "The degree of GCaMP6s and ChrimsonR expression varies from one RGC to another.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of GCaMP6s and ChrimsonR expression varies from one RGC to another, introducing the possibility that some cells may only have significant expression of one or neither agent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the variability in viral vector expression.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "555bb19f-8cce-4859-b358-622d4ec3cd3d",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C31",
+      "claim": "Some cells may only have significant expression of one or neither agent (GCaMP6s or ChrimsonR).",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of GCaMP6s and ChrimsonR expression varies from one RGC to another, introducing the possibility that some cells may only have significant expression of one or neither agent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of variable expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "00f0476e-3088-4f52-b399-4be564087ab1",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C32",
+      "claim": "Some optogenetically active cells may have had no or weak GCaMP6s expression, diminishing the ability to observe their responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that some optogenetically active cells may have had no or weak GCaMP6s expression, diminishing our ability to observe their responses in our recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a potential limitation of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "4e7650b9-7ae7-483a-99fd-cdab87b52441",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C33",
+      "claim": "Most cells are strongly co-expressing both GCaMP6s and ChrimsonR.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this uncertainty, we can be reasonably sure that most cells are strongly co-expressing both agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on fluorescence imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "261ff490-3474-4af9-acb1-050ca121009f",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C34",
+      "claim": "Fluorescence imaging of tdTomato marking ChrimsonR expression shows substantial overlap with observed GCaMP6s fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved via fluorescence imaging of the tdTomato marking ChrimsonR expression, which shows substantial overlap with the observed GCaMP6s fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from fluorescence imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "3e889938-54c9-4084-93fb-debcec8f6c01",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C35",
+      "claim": "All targeted cells are at similar eccentricities (1.5\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "All targeted cells are at similar eccentricities (1.5\u00b0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption for Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "e06713c0-da70-4092-9ad6-c2d2cb17c64d",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C36",
+      "claim": "Nearby (<50 \u00b5m) cell somas do not show a significantly elevated response (p>>0.05, unpaired t-test) compared to cells at more distant locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that even the nearby (<50 \u00b5m) cell somas do not show a significantly elevated response (p>>0.05, unpaired t-test) than other cells at more distant locations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "45f98bee-4c02-4b6e-a6a0-3eb90741b9f6",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C37",
+      "claim": "The ability to extrapolate the method to cells closely packed on all sides by neighboring cells has yet to be explored.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to extrapolate the method to cells closely packed on all sides by neighboring cells, as occurs at slightly larger eccentricities, between 0.5 and 2.5\u00b0, deeper in the foveal ring of labeled cells, has yet to be explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations and future directions of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "0322fd30-cafa-428e-a02e-35c0c76ec915",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C38",
+      "claim": "Between 0.5 and 2.5\u00b0 eccentricity, RGCs have little to no separation between cell somas.",
+      "claim_type": "EXPLICIT",
+      "source": "In this region, RGCs have little to no separation between cell somas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as anatomical knowledge about RGC distribution in the primate retina.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "5c163f4d-54c9-4198-a199-3dd2766b2604",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C39",
+      "claim": "The transverse spatial resolution of an AOSLO is roughly 1.6 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The transverse spatial resolution of an AOSLO is roughly 1.6 \u00b5m, which is more than adequate for targeting the much larger soma diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical specification of the AOSLO system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "1a2a21c2-fafd-4bcb-a787-5985a781a369",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C40",
+      "claim": "The axial resolution of an AOSLO is roughly 25 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the axial resolution of an AOSLO is roughly 25 \u00b5m, roughly twice the soma diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical specification of the AOSLO system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "acabf49b-9ef8-4b69-af0e-fa08163922e5",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C41",
+      "claim": "The axial resolution of an AOSLO is roughly twice the soma diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the axial resolution of an AOSLO is roughly 25 \u00b5m, roughly twice the soma diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the technical specification and the biological structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "293bce7e-c422-4a2a-87d8-39f7396195a5",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C42",
+      "claim": "There would be some optogenetic excitation of cells immediately above and below the cell of interest in densely packed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that there would be some optogenetic excitation of the cells immediately above and below the cell of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the axial resolution limitation of the AOSLO.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "0bbb782a-ea0c-4733-b487-713258d7cd9f",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C43",
+      "claim": "Even in densely packed regions, the balance of excitation could be shifted strongly to a subset of RGCs, even if perfect isolation were not possible.",
+      "claim_type": "EXPLICIT",
+      "source": "But even in this less favorable case, the balance of excitation could be shifted strongly to a subset of RGCs, even if perfect isolation were not possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential effectiveness of the method in less favorable conditions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "4c4fdba0-698b-40df-97ee-06f97f970d78",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C44",
+      "claim": "In the periphery, RGC somas are in a monolayer.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to isolate single cells becomes far more favorable again in the periphery, where the RGC somas are in a monolayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as anatomical knowledge about peripheral RGC organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "fe01da96-6b83-4b33-9692-1f2943a236c4",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C45",
+      "claim": "In the peripheral retina, RGC somas and their cone receptive fields lie on top of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this retinal region, the RGC somas and their cone receptive fields lie on top of each other, precluding the use of the spatial offset between cone receptive fields and their somas to separate cone and RGC optogenetic excitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as anatomical knowledge about peripheral retinal organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "257149f6-87d5-4b59-b6ab-2a25b03ef42d",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C46",
+      "claim": "The use of two-photon excitation coupled with ChRmine may mitigate concerns about cone excitation by increasing optogenetic excitation while reducing the efficacy of light falling on photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of two-photon excitation coupled with the use of a more sensitive optogenetic, such as ChRmine, may mitigate this concern by increasing the optogenetic excitation while reducing the efficacy of light falling on photoreceptors (Marshel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential technical solution, supported by a citation to Marshel et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "e3ea6ffd-60a8-48db-bc89-7ce994bd3f7a",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C47",
+      "claim": "Other approaches to increasing selective activation of targeted cells may include cortically-targeted retrograde injections or class-specific viral vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Other approaches to increasing the selective activation of targeted cells may include cortically-targeted retrograde injections or class-specific viral vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential alternative technical approaches.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "f4a35f8d-7165-4e29-baef-03267c387904",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C48",
+      "claim": "The causal experimental approach has been successful in understanding the roles of neuronal classes in the cortex of NHPs for many years.",
+      "claim_type": "EXPLICIT",
+      "source": "The causal experimental approach has been successful in understanding the roles of neuronal classes in the cortex of NHPs for many years, such as the work of Newsome and colleagues who showed that electrical activation of DS cells in MT modifies the animal's choices in motion discrimination tasks (Salzman et al., 1992; Cicmil and Krug, 2015; Parker and Newsome, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Salzman et al., 1992; Cicmil and Krug, 2015; Parker and Newsome, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "b3c00d9c-9724-4438-86aa-853f646fc82e",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C49",
+      "claim": "Electrical activation of DS cells in MT modifies the animal's choices in motion discrimination tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The causal experimental approach has been successful in understanding the roles of neuronal classes in the cortex of NHPs for many years, such as the work of Newsome and colleagues who showed that electrical activation of DS cells in MT modifies the animal's choices in motion discrimination tasks (Salzman et al., 1992; Cicmil and Krug, 2015; Parker and Newsome, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Salzman et al., 1992; Cicmil and Krug, 2015; Parker and Newsome, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "c76d1805-e8c2-4b03-b67c-48acfda7d14f",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C50",
+      "claim": "The causal paradigm has recently incorporated optogenetic activation to investigate the functional role of localized neural circuitry in cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, this paradigm has incorporated optogenetic activation to investigate the function role of localized neural circuitry in cortex (Jazayeri et al., 2012; Soma et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jazayeri et al., 2012 and Soma et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "49061d3e-79e2-4891-a47e-9723a7d7dffa",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C51",
+      "claim": "Single cone tracking and stimulation experiments in the awake human inspire confidence that optogenetic stimulation in awake behaving animals will be possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the single cone tracking and stimulation experiments in the awake human inspire confidence that this will be possible (Schmidt et al., 2018a; Schmidt et al., 2018b; Tuten et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior work cited (Schmidt et al., 2018a; Schmidt et al., 2018b; Tuten et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "f4ec981a-0c61-449e-bd15-2cab0f09da2b",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C52",
+      "claim": "Visibility can be measured from photon absorption with flashes of light delivered through AO to single cones from each of the three foveal cone classes.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments in which single cones are targeted with light have shown that visibility can be measured from photon absorption with flashes of light delivered through AO to single cones from each of the three foveal cone classes (Williams et al., 1981 Schmidt et al., 2018b; Hofer et al., 2005), encouraging the possibility that optogenetic stimulation of a single RGC might be sufficient to elicit a sensation in an awake behaving monkey, a hypothesis that future experiments could test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Williams et al., 1981; Schmidt et al., 2018b; Hofer et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "e5113582-317d-4368-9574-d6d653a96b7c",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C53",
+      "claim": "Optogenetic stimulation of a single RGC might be sufficient to elicit a sensation in an awake behaving monkey.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments in which single cones are targeted with light have shown that visibility can be measured from photon absorption with flashes of light delivered through AO to single cones from each of the three foveal cone classes (Williams et al., 1981 Schmidt et al., 2018b; Hofer et al., 2005), encouraging the possibility that optogenetic stimulation of a single RGC might be sufficient to elicit a sensation in an awake behaving monkey, a hypothesis that future experiments could test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential future experimental outcome.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "032061f1-a93a-4948-a23a-9ad13c2fbb83",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C54",
+      "claim": "Monkeys are remarkably good at psychophysical experiments, with performance rivalling that of human observers.",
+      "claim_type": "EXPLICIT",
+      "source": "Monkeys are remarkably good at psychophysical experiments, with performance rivalling that of human observers (Matsuno and Fujita, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Matsuno and Fujita, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "c464320d-db6c-4e03-a993-eaa1d5f3f19c",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C55",
+      "claim": "Perceptual experience depends on cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpretation of causal experiments through optogenetic stimulation of a single RGC is inevitably complicated by the fact that perceptual experience depends on cell populations and such experiments would necessarily produce unnatural population activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about neural coding of perception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "411db500-9f5b-41b5-a5af-969104d01be2",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C56",
+      "claim": "Optogenetic stimulation of a single RGC would necessarily produce unnatural population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpretation of causal experiments through optogenetic stimulation of a single RGC is inevitably complicated by the fact that perceptual experience depends on cell populations and such experiments would necessarily produce unnatural population activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of single-cell stimulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "5b7a629b-3bd5-4ca4-bd0a-8f3fd15b05e7",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C57",
+      "claim": "It may be necessary to control the stimulation of multiple nearby RGCs to develop a clear understanding of their function.",
+      "claim_type": "EXPLICIT",
+      "source": "How the brain would interpret such an unusual pattern of excitation is not entirely clear, and it may be necessary to control the stimulation of multiple nearby RGCs to develop a clear understanding of their function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future experimental requirements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "bf218d28-7f78-436b-8f68-52fd4d21a3be",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C58",
+      "claim": "This paradigm could provide valuable data to guide optogenetics-based vision restoration therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, should it prove possible to realize this paradigm, it could provide valuable data to guide optogenetics-based vision restoration therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential clinical applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "f46319d3-d6ec-49fb-972e-8bdfc3a7a844",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C59",
+      "claim": "Simultaneous activation of multiple classes of RGCs according to their individual response characteristics could lead to a perceptual experience that more closely resembles that generated by the natural environment in the sighted eye.",
+      "claim_type": "EXPLICIT",
+      "source": "This could eventually offer the opportunity to simultaneously activate multiple classes of RGCs according to their individual response characteristics, leading to a perceptual experience that more closely resembles that generated by the natural environment in the sighted eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "2a0d5dfe-74d3-45e3-ac96-713fb830632b",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C60",
+      "claim": "These experiments were performed in two anesthetized Macaca fascicularis, one male (M1) and one female (M2).",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments were performed in two anesthetized Macaca fascicularis, one male (M1) and one female (M2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "177b4a34-df1e-44c1-bf2e-4fed4da5eec5",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C61",
+      "claim": "Macaques were housed in an AAALAC-accredited facility.",
+      "claim_type": "EXPLICIT",
+      "source": "Macaques were housed in an AAALAC-accredited facility and were provided with care by four full-time veterinarians, five veterinary technicians, and an animal behaviorist from the Department of Comparative Medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the animal care conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "924fd40c-e143-4d72-aba8-f3cd4aca1dd4",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C62",
+      "claim": "Prior to injection, both animals received daily subcutaneous injections of cyclosporine to reduce the possibility of immune reaction to the injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to injection, both animals received daily subcutaneous injections of cyclosporine to reduce the possibility of immune reaction to the injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "11fbf89c-b835-4d1e-8035-05a4fc8608e0",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C63",
+      "claim": "Blood trough levels were monitored to titrate the cyclosporine dose into the range of 150\u2013200 ng/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood trough levels were monitored to titrate the dose into the range of 150\u2013200 ng/ml, and these levels were maintained throughout the testing period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for immunosuppression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "24aa3f92-5688-41ea-99d1-36f3656062a9",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C64",
+      "claim": "Coexpression of ChrimsonR and GCaMP6s was achieved with a single intravitreal injection containing a mixture of two AAV2-based vectors with a ubiquitous CAG promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression of both an optogenetic actuator (ChrimsonR) and a calcium indicator (GCaMP6s) enabled both stimulation of RGCs and recording of their responses. This was achieved with a single intravitreal injection containing a mixture of two adeno-associated virus (AAV2) based vectors with a ubiquitous CAG promoter, AAV2-CAG-tdTomato-ChrimsonR and AAV2-CAG-GCaMP6s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method for gene delivery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "ac6c6213-168a-42e9-986e-11122f4a4c53",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C65",
+      "claim": "The vectors were synthesized by the University of Pennsylvania Vector core.",
+      "claim_type": "EXPLICIT",
+      "source": "These vectors were synthesized by the University of Pennsylvania Vector core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the viral vectors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "80a55716-2f0e-48f0-b7ef-903fc46d830f",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C66",
+      "claim": "The injection was delivered via a 30-gauge needle with a tuberculin syringe into the middle of the vitreous roughly 2 mm behind the limbus.",
+      "claim_type": "EXPLICIT",
+      "source": "The injection was delivered via a 30-gauge needle with a tuberculin syringe into the middle of the vitreous roughly 2 mm behind the limbus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the injection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "859dc66b-d7d3-4f44-94de-ac53dd4dae33",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C67",
+      "claim": "The injection had a total volume of 75 \u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "The injection was made in the right eye of M1 and the left eye of M2 and had a total volume of 75 \u00b5l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the injection volume.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "c15360f8-9a7b-441a-a714-f1ed074ec8c3",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C68",
+      "claim": "Expression was largely confined to an annulus spanning from 0.5\u00b0 to 2\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously demonstrated (Dalkara et al., 2013), expression was largely confined to an annulus spanning from 0.5\u00b0 to 2\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spatial pattern of viral expression, supported by a citation to Dalkara et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "dc389a9a-bbe8-4c93-ae50-8d2bc5ceef49",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C69",
+      "claim": "The inner edge of the annular expression region corresponds to the most centrally located RGCs that receive input from the most central fovea.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner edge of this annular region corresponds to the most centrally located RGCs that receive input from the most central fovea, while the outer edge corresponds to the most eccentric location where we presume the inner limiting membrane remained thin enough for penetration of the viral vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the expression pattern based on retinal anatomy.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "28aac193-22b5-42dd-bcff-c6e6f887c08c",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C70",
+      "claim": "All RGCs that obtained expression are close enough to the foveal center to be displaced from their receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "All RGCs that obtained expression are close enough to the foveal center to be displaced from their receptive fields, allowing for direct optogenetic activation of cell somas without stimulation of the cones that drive them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known anatomy of foveal RGC displacement.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "e57f49e5-8b78-4c40-bb9b-8f2d112c1ca4",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C71",
+      "claim": "A Shack\u2013Hartmann wavefront sensor in conjunction with an 847 nm laser diode source was used for wavefront sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "A Shack\u2013Hartmann wavefront sensor in conjunction with an 847 nm laser diode source (QPhotonics) was used for wavefront sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical specifications of the imaging system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "cf3c3fff-cc54-4598-bb9f-905ff8dc2ea6",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C72",
+      "claim": "The wavefront sensor data controlled a deformable mirror in a closed-loop configuration operating at 10 Hz to provide correction of ocular aberrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The wavefront sensor data controlled a deformable mirror (ALPAO) in a closed-loop configuration operating at 10 Hz to provide correction of ocular aberrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the adaptive optics correction system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "91123a7f-963b-45ef-89f3-0e50f3a65352",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C73",
+      "claim": "The RGC layer was imaged using fluorescent light emitted by the calcium indicator excited with light from a 488 nm laser.",
+      "claim_type": "EXPLICIT",
+      "source": "The RGC layer was imaged using the fluorescent light emitted by the calcium indicator excited with light from a 488 nm laser (Qioptiq), and the optogenetic was excited using the 640 nm line of a multi-line laser (Toptica).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging wavelengths used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "dd928533-fcf2-45c1-b845-333645bb0189",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C74",
+      "claim": "The optogenetic was excited using the 640 nm line of a multi-line laser.",
+      "claim_type": "EXPLICIT",
+      "source": "The RGC layer was imaged using the fluorescent light emitted by the calcium indicator excited with light from a 488 nm laser (Qioptiq), and the optogenetic was excited using the 640 nm line of a multi-line laser (Toptica).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optogenetic stimulation wavelength.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "c3ecef74-c603-41d7-98f7-2f5ab9eef0b2",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C75",
+      "claim": "The cone mosaic was simultaneously imaged with light from a 796 nm superluminescent diode.",
+      "claim_type": "EXPLICIT",
+      "source": "The cone mosaic was simultaneously imaged with light from a 796 nm superluminescent diode (Superlum) to provide a higher SNR (signal-to-noise ratio) helpful for both real-time stimulus stabilization and post-recording image registration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging method for the cone mosaic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "cbff9f0c-27e3-4544-8fe5-e96d20e23329",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C76",
+      "claim": "The heartbeat and respiration of the animal cause lateral shifts in the retinal imaging throughout recording of approximately 50 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "This stabilization is necessary because the heartbeat and respiration of the animal cause lateral shifts in the retinal imaging throughout recording of approximately 50 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the magnitude of eye motion during imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "56fb3ec8-fb74-4749-a1e5-2063a547bdb9",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C77",
+      "claim": "RGCs lying on the innermost edge of the annulus of expression often had large distances between their somas.",
+      "claim_type": "EXPLICIT",
+      "source": "For this first study, we selected RGCs lying on the innermost edge of the annulus of expression often had large distances between their somas, making them easier to target with optogenetic stimulation without exciting neighboring cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "aa316390-82fb-43c7-8f5f-7d3b65549da2",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C78",
+      "claim": "Two cells in each of the two animals were chosen that were > 20 \u00b5m from their nearest neighbor.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose two cells in each of the two animals that were > 20 \u00b5m from their nearest neighbor to mitigate the possibility of optical crosstalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific cell selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "684af539-a8fd-4bf8-8937-7c5c463e2f36",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C79",
+      "claim": "The 488 nm imaging light is expected to produce an optogenetic activation that is only about 2% of that of the optogenetic probe.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the 488 nm imaging light is expected to produce an optogenetic activation that is only about 2% of that of the optogenetic probe .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation about potential interference from the imaging light.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "46c377f7-e1e2-467a-819f-c701f05e7d38",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C80",
+      "claim": "The 488 nm imaging light illuminates all cells equally throughout the experiment and would be expected to produce a constant activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it illuminates all cells equally throughout the experiment and would be expected to produce a constant activation, unlike the probe which is confined in space and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the spatial and temporal characteristics of the imaging light.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "fd863e8c-67d1-4313-b48d-65a4823fff8d",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C81",
+      "claim": "The emission from GCaMP and tdTomato is at least 4 orders of magnitude lower than the 488 nm stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the emission from GCaMP and tdTomato is at least 4 orders of magnitude lower than this 488 nm stimulus, making it unlikely that these fluorophores could have caused a measurable cell response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation comparing fluorescence emission to the imaging stimulus.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "066763bd-b094-4a43-95d1-403123caccf1",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C82",
+      "claim": "Cells within a 1\u00b0 \u00d7 1\u00b0 field of view were imaged at 488 nm (25 \u00b5W) for 30 s to allow for adaptation to the maintained calcium imaging light.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells within a 1\u00b0 \u00d7 1\u00b0 field of view were imaged at 488 nm (25 \u00b5W) for 30 s to allow for adaptation to the maintained calcium imaging light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "a8784407-71ad-493b-b864-e725a7b464d6",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C83",
+      "claim": "ChrimsonR was activated by a circular stimulus (640 nm, 750 \u00b5W) with a diameter of 12.5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "ChrimsonR was then activated by a circular stimulus (640 nm, 750 \u00b5W) with a diameter of 12.5 \u00b5m, approximately the size of a cell soma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optogenetic stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "2a786a0a-285f-4ddc-bdaf-810c11fb7255",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C84",
+      "claim": "The optogenetic stimulus diameter is approximately the size of a cell soma.",
+      "claim_type": "EXPLICIT",
+      "source": "ChrimsonR was then activated by a circular stimulus (640 nm, 750 \u00b5W) with a diameter of 12.5 \u00b5m, approximately the size of a cell soma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relates the stimulus size to the biological structure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "dd9ad204-f1a2-4ba1-b034-87a0bfd454ec",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C85",
+      "claim": "The stimulus was formed by modulating the 640 nm laser source's output to only be on while scanning over the soma of interest at a rate of 25 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus was formed by modulating the 640 nm laser source's output to only be on while scanning over the soma of interest at a rate of 25 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the stimulus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "61e3aa3e-0d9d-49e1-a4de-e88728050d8e",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C86",
+      "claim": "The duration of excitation was 800 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The duration of excitation was 800 ms, throughout which the stimulus was stabilized on the cell's soma using the method described in the imaging procedure section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal parameters of the stimulus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "bded74c6-4740-47e5-9e73-6d98744ecc40",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C87",
+      "claim": "The stimulus was repeated four times for each trial with a waiting period of 15 s between stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus was repeated four times for each trial with a waiting period of 15 s between stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "71f2cc42-4c2e-4d77-8015-c3ae69803252",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C88",
+      "claim": "There is no evidence that the stimulus modulated cell activity via the normal cone pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We have seen no evidence that this modulated cell activity via the normal cone pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative finding from the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "8d955347-0eb0-403b-9401-be0e0a18d64b",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C89",
+      "claim": "One animal had two lesions of the central fovea, which had removed cone input to many of the labeled RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "One animal had two lesions of the central fovea, which had removed cone input to many of the labeled RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a pre-existing condition in one of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "76d16733-c619-4fbb-8a75-eb724f6a0fdd",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C90",
+      "claim": "The RGCs deafferented by the foveal lesions are easily distinguishable from those with normal input and were avoided for study in this experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The RGCs deafferented in this manner are easily distinguishable from those with normal input and were avoided for study in this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell selection criteria to avoid confounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "23f96dc3-51e6-4262-9b4b-88aab4a316dd",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C91",
+      "claim": "The emission wavelengths of tdTomato and GCaMP6 are well suited to activating ChrimsonR.",
+      "claim_type": "EXPLICIT",
+      "source": "The emission wavelengths of tdTomato and GCaMP6 are well suited to activating ChrimsonR, and the wavelength used to image GCaMP fluorescence stimulates both fluorophores well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption for Figure 3 and relates to the spectral properties shown in the figure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "4dc2f3b5-40f7-47e3-9ac6-44175a451dd2",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "claim_id": "C92",
+      "claim": "The wavelength used to image GCaMP fluorescence stimulates both fluorophores well.",
+      "claim_type": "EXPLICIT",
+      "source": "The emission wavelengths of tdTomato and GCaMP6 are well suited to activating ChrimsonR, and the wavelength used to image GCaMP fluorescence stimulates both fluorophores well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption for Figure 3 and relates to the spectral properties shown in the figure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully demonstrated optogenetic stimulation of single, spatially isolated RGCs in the living primate fovea using ChrimsonR activation and GCaMP6s calcium imaging. Targeted cells (n=4 total, 2 per animal) showed robust responses 3-4\u00d7 above noise floor when stimulated with 640 nm light (750 \u00b5W, 12.5 \u00b5m diameter, 800 ms duration), while the experimental conditions strongly favored selective excitation of target cells over neighbors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C28 collectively demonstrate the core finding with converging evidence from calcium imaging (C20, C23, C24), quantitative measurements (C27), and appropriate experimental design (C21-C22, C78, C83-C87). The methodological claims (C19-C20, C64) are well-documented. However, the extremely small sample size (n=4 cells) and deliberate selection of spatially isolated cells (C78: >20 \u00b5m separation) limit generalizability. The conclusion that conditions 'strongly favor' selective excitation (C28) is reasonable but qualified by acknowledged uncertainties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "bbfba00a-be1a-4d94-acdd-069b0f04b95d",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Non-targeted cells, including those within 50 \u00b5m of the stimulated cell, showed no significant calcium responses above background noise (p>>0.05, unpaired t-test), demonstrating spatial selectivity of the optogenetic stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C26 and C36 report lack of responses in neighboring cells, several factors create uncertainty: (1) the notation 'p>>0.05' is unconventional and imprecise for reporting statistical significance; (2) variable viral expression (C29-C32) means some non-responding cells may lack ChrimsonR rather than proving spatial selectivity; (3) the detection threshold may miss subthreshold activation; (4) only 4 target cells were tested. The negative result supports selectivity but cannot definitively exclude off-target activation below the noise floor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "b57b7869-54a7-4797-942f-e4740a2f207a",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Despite variable expression of GCaMP6s and ChrimsonR across RGCs, fluorescence imaging of tdTomato and GCaMP6s showed substantial overlap, indicating that most cells strongly co-express both agents, though some cells may express only one or neither agent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C34 acknowledge important variability in viral expression that complicates interpretation. While C33-C34 assert that 'most cells' co-express both agents based on fluorescence overlap, this is qualitative rather than quantitative. The authors appropriately recognize (C29, C32) that variable expression could explain lack of responses in neighboring cells, but provide no systematic quantification of co-expression rates or thresholds. This uncertainty undermines confidence in the spatial selectivity claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "8dcb617c-6172-454e-b835-da5af5b988bb",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The temporal dynamics of GCaMP6s responses (rapid rise to peak, decay over several seconds) are consistent with previous measurements of RGC responses to cone excitation via in vivo AOSLO imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C25 references prior work to validate the observed response kinetics, but the citation is incomplete in the manuscript ('()'), preventing verification of this comparison. While the described time course (C24) is plausible for GCaMP6s dynamics, the missing citation means the claimed consistency cannot be evaluated. This appears to be a formatting error rather than a substantive issue.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "475f2953-f8ec-4a9a-813c-539fd4708414",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Potential optical interference from the 488 nm imaging light and fluorophore emissions was minimal: the imaging light would produce only ~2% of the optogenetic probe's activation and illuminates all cells constantly, while GCaMP and tdTomato emissions are 4+ orders of magnitude weaker than the imaging stimulus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 provide quantitative estimates of potential confounds and appropriately conclude they are negligible. The reasoning is sound: (1) 488 nm produces minimal ChrimsonR activation relative to 640 nm probe (C79); (2) constant, uniform illumination wouldn't explain spatially and temporally specific responses (C80); (3) fluorescence emission is far too weak to cause activation (C81). Claims C91-C92 correctly note spectral compatibility. These control considerations strengthen confidence in the primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The method's applicability to densely packed RGC regions (0.5-2.5\u00b0 eccentricity) remains unexplored. While the transverse resolution (1.6 \u00b5m) is adequate, the axial resolution (~25 \u00b5m, approximately twice soma diameter) would cause some excitation of cells immediately above and below the target, though excitation could still be biased toward a subset of RGCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 provide an honest assessment of technical limitations. The authors correctly identify that axial resolution (C40-C41) is the limiting factor in densely packed regions where cells have minimal lateral separation (C38). The acknowledgment that perfect isolation may not be possible but bias could still be achieved (C43) is appropriately cautious. This represents good scientific practice in clearly delineating the scope and limitations of the demonstrated capability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "67160e1e-b63b-4164-ba62-51869e4873f5",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In peripheral retina, RGC somas form a monolayer (favorable for isolation), but somas and receptive fields overlap spatially, potentially requiring two-photon excitation with more sensitive optogenetics (e.g., ChRmine) or alternative approaches like retrograde injections or class-specific vectors to avoid cone excitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 appropriately discuss regional anatomical differences and propose potential solutions. The identification of the peripheral challenge (C45) is accurate, and the proposed solutions (C46-C47) are reasonable based on cited prior work (Marshel et al., 2019 for C46). These are speculative future directions (C46-C47 marked as SPECULATION) but are grounded in established techniques. This discussion appropriately frames future work needed to extend the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "3b8482e5-5ca9-4ff2-81eb-a2597b18be24",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Viral expression was confined to an annular region (0.5-2\u00b0 eccentricity), where RGCs are displaced from their receptive fields, enabling direct optogenetic activation of cell somas without stimulating the cones that drive them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe the spatial pattern of expression and its functional significance. C68 is supported by citation to Dalkara et al., 2013, and the interpretation regarding RGC displacement (C69-C70) is consistent with established foveal anatomy. This anatomical feature is crucial for the experimental design, as it allows separation of direct RGC stimulation from cone-mediated activation. The claim that this enables stimulation 'without stimulation of the cones' (C70) is supported by the negative finding in C88.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "0aaacd0f-9d95-4ec8-8a2a-263ec049aca7",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There was no evidence that the optogenetic stimulus modulated RGC activity via normal cone pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 reports a negative finding that is important for validating direct RGC stimulation. This is consistent with the experimental design leveraging foveal RGC displacement (C70) and the wavelength selectivity of ChrimsonR. While the evidence is stated as observational ('no evidence') rather than from a specific control experiment, it is consistent with the overall experimental logic and the lack of responses in non-targeted cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The AOSLO imaging system used adaptive optics correction (10 Hz closed-loop with Shack-Hartmann wavefront sensor at 847 nm), multi-wavelength imaging (488 nm for GCaMP6s, 640 nm for ChrimsonR activation, 796 nm for cone mosaic), and real-time stabilization to compensate for ~50 \u00b5m retinal motion from heartbeat and respiration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 and C82 provide comprehensive technical specifications of the imaging system. These are standard AOSLO methods well-documented in the cited literature (particularly Godat et al., 2022 referenced in C71). The multi-wavelength approach is appropriate for the experimental requirements, and the motion compensation (C76) is essential for single-cell targeting. These methodological details are sufficiently detailed for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "39f65e2b-cfe9-497c-bfc4-f2742968d250",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both animals received daily cyclosporine immunosuppression with blood trough levels maintained at 150-200 ng/ml throughout the testing period to reduce immune reaction to viral vector injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe appropriate immunosuppression protocols for viral vector studies in NHPs. The dosing regimen and monitoring approach are standard practice for AAV studies. This is important methodological detail that supports the validity of the chronic expression studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The primate retina contains ~20 morphologically and physiologically distinct RGC classes that independently tile the retina, reflecting complex early visual processing previously thought to occur deeper in the brain. Despite this diversity, uncertainty remains about the functional roles of RGC classes, including common types like midget and parasol cells, because ex vivo recordings are detached from downstream pathways and preclude causal manipulations in awake primates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide background context supported by appropriate citations (Gollisch and Meister 2010; Barlow et al. 1964; Lettvin et al. 1959; Berry et al. 1999; Freedland and Rieke 2022; Patterson et al. 2019). These are accurate representations of the field's current understanding and the motivation for developing causal approaches. The characterization of ex vivo limitations (C7-C8) appropriately frames the need for the demonstrated technology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Recent technical advances enable the current study: adaptive optics allows single-RGC imaging and accurate eye tracking for single-photoreceptor stimulation in moving eyes; viral vectors enable GCaMP6s expression for in vivo RGC recording; and optogenetic activation of RGCs has been demonstrated in both macaque and human retina in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 accurately summarize enabling technologies with appropriate citations (Gray et al. 2008; Schmidt et al. 2018a/b; Tuten et al. 2017; Yin et al. 2013; Godat et al. 2022; McGregor et al. 2020; Sahel et al. 2021). These prior advances are correctly identified as foundational for the current work, and the citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Causal experimental approaches using electrical or optogenetic activation have successfully elucidated neuronal function in NHP cortex. Single-cone stimulation experiments in awake humans and monkeys' strong psychophysical performance suggest that optogenetic stimulation of single RGCs might elicit detectable sensations in awake behaving monkeys, though this remains to be tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 appropriately contextualize the potential for future causal studies with proper citations (Salzman et al. 1992; Cicmil and Krug 2015; Parker and Newsome 1998; Jazayeri et al. 2012; Soma et al. 2019; Williams et al. 1981; Schmidt et al. 2018b; Hofer et al. 2005; Matsuno and Fujita 2009). The inference from single-cone to single-RGC stimulation (C51-C53) is reasonable but appropriately marked as speculative (C53). This provides appropriate context for the significance of the demonstrated capability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "dbce5eaa-8c47-4c77-bc66-0f423fbd38ca",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Single-RGC optogenetic stimulation would produce unnatural population activity, complicating interpretation since perceptual experience depends on cell populations. Controlling stimulation of multiple nearby RGCs may be necessary for understanding function, and this paradigm could eventually guide optogenetics-based vision restoration therapies by enabling simultaneous activation of multiple RGC classes according to their natural response characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 provide thoughtful discussion of interpretational challenges and future applications. The recognition that single-cell stimulation creates unnatural activity patterns (C55-C56) is an important caveat. The speculation about future directions (C57-C59, marked as SPECULATION) is reasonable and appropriately qualified. This demonstrates good scientific practice in acknowledging limitations while identifying potential applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "1998f9fb-0644-4257-9552-67a2f06b11c6",
+      "content_id": "a99bbded-8a3e-40e4-a988-30768a3c6ddf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "One animal had foveal lesions that deafferented some labeled RGCs, but these cells were easily distinguishable and avoided in the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 transparently report a pre-existing condition in one subject and the steps taken to avoid confounds. This is appropriate disclosure and the exclusion of affected cells is a reasonable control measure. This does not appear to compromise the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "22c0c7df-63b6-4d45-94ff-f89005fcb233",
+      "content_id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study demonstrates successful optogenetic stimulation of single RGCs in living primate eyes using ChrimsonR and GCaMP6s. Targeted cells showed large responses (3-4 times background noise) while non-targeted cells showed no significant response above background noise, with response time courses consistent with prior in vivo AOSLO imaging.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this core finding. The editor states the article 'shows that it is possible to optogenetically activate single retinal ganglion cells in vivo in monkeys' and presents 'convincing evidence for the promise of the approach.' One reviewer notes 'the four examples shown look quite convincing,' and another confirms 'neurons targeted for stimulation were activated strongly whereas neighboring neurons were not.' The reviewers accept the selectivity and effectiveness of single-cell stimulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "cae53661-cb58-4fd5-9e15-e06f4142f084",
+      "content_id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Most cells strongly co-express both GCaMP6s and ChrimsonR as evidenced by substantial overlap of tdTomato and GCaMP6s fluorescence, though expression levels vary between cells and some cells may express only one or neither agent.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not explicitly discuss the co-expression claims, but one reviewer raises concerns about methodological rigor and requests 'more raw data' and better characterization of 'the density of labeled RGCs in these animals.' This suggests uncertainty about the completeness of the expression characterization, though the basic observation is not directly challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "de21854d-9d87-4839-a497-c38090fc68fd",
+      "content_id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The study targeted isolated foveal RGCs at 1.5\u00b0 eccentricity with >20 \u03bcm separation from nearest neighbors. Statistical analysis showed nearby cells (<50 \u03bcm) did not show significantly elevated responses compared to more distant cells (p>>0.05).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the technical achievement, one reviewer specifically critiques the limited scope: 'more raw data should be shown for activations of neighboring RGCs to pinpoint the actual resolution of the technique, and more than two cells (one from each field of view) should be tested.' This indicates the reviewers find the spatial selectivity data insufficient despite the statistical claim, requesting more comprehensive testing of resolution limits.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "b83fd192-e71f-459f-aee5-f1e83b506ed3",
+      "content_id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors discuss technical limitations related to AOSLO resolution (1.6 \u03bcm transverse, 25 \u03bcm axial) and acknowledge that the method's applicability to densely packed RGC regions (0.5-2.5\u00b0 eccentricity) remains unexplored, though peripheral regions with monolayer RGC organization may be more favorable.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states 'further work will be needed to fully explore its limitations and specificity,' and another reviewer emphasizes 'it will be important to follow this work with a more detailed methodological description to guide related work, to explore limitations, and to build confidence in the specificity of the approach.' The reviewers accept the authors' acknowledgment of limitations but require more thorough exploration.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d",
+      "content_id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The experimental methods involved AAV2-mediated co-expression of ChrimsonR and GCaMP6s via intravitreal injection, adaptive optics imaging with multiple wavelengths (488 nm for GCaMP, 640 nm for optogenetic stimulation, 796 nm for cone imaging), and stabilized stimulation protocols with specific parameters (12.5 \u03bcm diameter, 800 ms duration, 750 \u03bcW power).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer explicitly states the 'presentation lacks the rigor that I would expect from what is really a methods paper' and notes 'there is a higher burden to report the methodological details, full data sets, calibrations, and limitations of the method. There is considerable room for improvement in reporting those aspects.' While the methods are described, reviewers find the level of detail and validation insufficient for a methods-focused paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "b342c314-3dc0-465f-94e3-43f1c0a2d800",
+      "content_id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors argue that the 488 nm imaging light produces minimal optogenetic activation (~2% of probe) and constant background activation, and that fluorophore emission is 4 orders of magnitude lower than the imaging stimulus. They report no evidence of cone pathway activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not explicitly discuss these control claims, but the general call for 'more raw data,' 'calibrations,' and exploration of 'limitations' suggests these control experiments and calculations may need more thorough validation. The lack of specific reviewer commentary on these important controls indicates they were not sufficiently convinced by the evidence presented.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4",
+      "content_id": "deab83b8-c9d6-4ab4-8d0f-97d42527a2b6",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors speculate about future technical improvements (two-photon excitation with ChRmine, retrograde injections, class-specific vectors) and potential applications including perceptual testing in awake monkeys and vision restoration therapies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these as appropriate future directions. The editor notes this is 'an important step toward causal tests of the role of specific ganglion cell types in visual perception,' and reviewers recognize 'the eventual goals of this line of research have an enormous potential impact.' The speculative nature is accepted as part of establishing a new methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "59a74157-f8b5-46ff-98cf-ec711df20973",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "5f3d7cc1-d652-4861-b586-b51b880dc1d2",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "2345439a-a0d5-4dd7-9492-dabc11550267",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "85286c62-1556-4f95-9053-a026fea2b3cb",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "138cd69a-0dd9-4e97-a9b6-fd1ee014e0cc",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "d31408dd-66cc-47e8-acd4-fa08ab14544a",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "a8ee8667-176c-4f08-a967-9e9d179c52db",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "6aaaf4b3-fb6e-4012-be08-117f9e8b892e",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "7244c55b-c46a-4aac-b3c4-96a2f93674f8",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "3e889938-54c9-4084-93fb-debcec8f6c01",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "2a0d5dfe-74d3-45e3-ac96-713fb830632b",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "24aa3f92-5688-41ea-99d1-36f3656062a9",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "aa316390-82fb-43c7-8f5f-7d3b65549da2",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "a8784407-71ad-493b-b864-e725a7b464d6",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "2a786a0a-285f-4ddc-bdaf-810c11fb7255",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "dd9ad204-f1a2-4ba1-b034-87a0bfd454ec",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "61e3aa3e-0d9d-49e1-a4de-e88728050d8e",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "bded74c6-4740-47e5-9e73-6d98744ecc40",
+      "result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5"
+    },
+    {
+      "claim_id": "301a4bc6-ab62-4409-b514-a1417f0cd8a2",
+      "result_id": "bbfba00a-be1a-4d94-acdd-069b0f04b95d"
+    },
+    {
+      "claim_id": "e06713c0-da70-4092-9ad6-c2d2cb17c64d",
+      "result_id": "bbfba00a-be1a-4d94-acdd-069b0f04b95d"
+    },
+    {
+      "claim_id": "d5edc615-7625-4fa9-bfbd-8e56450cad24",
+      "result_id": "b57b7869-54a7-4797-942f-e4740a2f207a"
+    },
+    {
+      "claim_id": "32df8e2d-b29f-4aa3-9763-f7583b2fdd83",
+      "result_id": "b57b7869-54a7-4797-942f-e4740a2f207a"
+    },
+    {
+      "claim_id": "555bb19f-8cce-4859-b358-622d4ec3cd3d",
+      "result_id": "b57b7869-54a7-4797-942f-e4740a2f207a"
+    },
+    {
+      "claim_id": "00f0476e-3088-4f52-b399-4be564087ab1",
+      "result_id": "b57b7869-54a7-4797-942f-e4740a2f207a"
+    },
+    {
+      "claim_id": "4e7650b9-7ae7-483a-99fd-cdab87b52441",
+      "result_id": "b57b7869-54a7-4797-942f-e4740a2f207a"
+    },
+    {
+      "claim_id": "261ff490-3474-4af9-acb1-050ca121009f",
+      "result_id": "b57b7869-54a7-4797-942f-e4740a2f207a"
+    },
+    {
+      "claim_id": "32940ec4-f01a-49d0-a055-3e0dc2132923",
+      "result_id": "8dcb617c-6172-454e-b835-da5af5b988bb"
+    },
+    {
+      "claim_id": "684af539-a8fd-4bf8-8937-7c5c463e2f36",
+      "result_id": "475f2953-f8ec-4a9a-813c-539fd4708414"
+    },
+    {
+      "claim_id": "46c377f7-e1e2-467a-819f-c701f05e7d38",
+      "result_id": "475f2953-f8ec-4a9a-813c-539fd4708414"
+    },
+    {
+      "claim_id": "fd863e8c-67d1-4313-b48d-65a4823fff8d",
+      "result_id": "475f2953-f8ec-4a9a-813c-539fd4708414"
+    },
+    {
+      "claim_id": "23f96dc3-51e6-4262-9b4b-88aab4a316dd",
+      "result_id": "475f2953-f8ec-4a9a-813c-539fd4708414"
+    },
+    {
+      "claim_id": "4dc2f3b5-40f7-47e3-9ac6-44175a451dd2",
+      "result_id": "475f2953-f8ec-4a9a-813c-539fd4708414"
+    },
+    {
+      "claim_id": "45f98bee-4c02-4b6e-a6a0-3eb90741b9f6",
+      "result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8"
+    },
+    {
+      "claim_id": "0322fd30-cafa-428e-a02e-35c0c76ec915",
+      "result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8"
+    },
+    {
+      "claim_id": "5c163f4d-54c9-4198-a199-3dd2766b2604",
+      "result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8"
+    },
+    {
+      "claim_id": "1a2a21c2-fafd-4bcb-a787-5985a781a369",
+      "result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8"
+    },
+    {
+      "claim_id": "acabf49b-9ef8-4b69-af0e-fa08163922e5",
+      "result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8"
+    },
+    {
+      "claim_id": "293bce7e-c422-4a2a-87d8-39f7396195a5",
+      "result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8"
+    },
+    {
+      "claim_id": "0bbb782a-ea0c-4733-b487-713258d7cd9f",
+      "result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8"
+    },
+    {
+      "claim_id": "4c4fdba0-698b-40df-97ee-06f97f970d78",
+      "result_id": "67160e1e-b63b-4164-ba62-51869e4873f5"
+    },
+    {
+      "claim_id": "fe01da96-6b83-4b33-9692-1f2943a236c4",
+      "result_id": "67160e1e-b63b-4164-ba62-51869e4873f5"
+    },
+    {
+      "claim_id": "257149f6-87d5-4b59-b6ab-2a25b03ef42d",
+      "result_id": "67160e1e-b63b-4164-ba62-51869e4873f5"
+    },
+    {
+      "claim_id": "e3ea6ffd-60a8-48db-bc89-7ce994bd3f7a",
+      "result_id": "67160e1e-b63b-4164-ba62-51869e4873f5"
+    },
+    {
+      "claim_id": "c15360f8-9a7b-441a-a714-f1ed074ec8c3",
+      "result_id": "3b8482e5-5ca9-4ff2-81eb-a2597b18be24"
+    },
+    {
+      "claim_id": "dc389a9a-bbe8-4c93-ae50-8d2bc5ceef49",
+      "result_id": "3b8482e5-5ca9-4ff2-81eb-a2597b18be24"
+    },
+    {
+      "claim_id": "28aac193-22b5-42dd-bcff-c6e6f887c08c",
+      "result_id": "3b8482e5-5ca9-4ff2-81eb-a2597b18be24"
+    },
+    {
+      "claim_id": "71f2cc42-4c2e-4d77-8015-c3ae69803252",
+      "result_id": "0aaacd0f-9d95-4ec8-8a2a-263ec049aca7"
+    },
+    {
+      "claim_id": "e57f49e5-8b78-4c40-bb9b-8f2d112c1ca4",
+      "result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b"
+    },
+    {
+      "claim_id": "cf3c3fff-cc54-4598-bb9f-905ff8dc2ea6",
+      "result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b"
+    },
+    {
+      "claim_id": "91123a7f-963b-45ef-89f3-0e50f3a65352",
+      "result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b"
+    },
+    {
+      "claim_id": "dd928533-fcf2-45c1-b845-333645bb0189",
+      "result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b"
+    },
+    {
+      "claim_id": "c3ecef74-c603-41d7-98f7-2f5ab9eef0b2",
+      "result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b"
+    },
+    {
+      "claim_id": "cbff9f0c-27e3-4544-8fe5-e96d20e23329",
+      "result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b"
+    },
+    {
+      "claim_id": "066763bd-b094-4a43-95d1-403123caccf1",
+      "result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b"
+    },
+    {
+      "claim_id": "924fd40c-e143-4d72-aba8-f3cd4aca1dd4",
+      "result_id": "39f65e2b-cfe9-497c-bfc4-f2742968d250"
+    },
+    {
+      "claim_id": "11fbf89c-b835-4d1e-8035-05a4fc8608e0",
+      "result_id": "39f65e2b-cfe9-497c-bfc4-f2742968d250"
+    },
+    {
+      "claim_id": "5bb3a3e3-452f-4c50-9e7f-518de929eeae",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "17841bb4-3acb-41de-bc55-45357eea1ba1",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "6f773602-a458-4df4-8c5c-6abb3572cbf5",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "dbcedcda-9d62-4eec-bdd7-0e61a3b1120b",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "1b9b915e-9a88-4dc6-92cd-17410f6d967c",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "f6baf213-8204-43bc-8494-c14f15a7134c",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "3af0f419-3bda-47d9-b85d-a2d63ee8bd13",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "27f3e7f8-a66f-4e69-a5a6-1baf3625009d",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "5c7f537a-e756-40ab-a7b1-63ae6e6ca6e4",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "7dcf3e26-70b9-420c-9fa1-93a870b513e9",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "0ea42841-ed1d-44d8-9532-f5e6de47215f",
+      "result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1"
+    },
+    {
+      "claim_id": "c66e96b0-f85f-487b-899f-5728f52bae70",
+      "result_id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c"
+    },
+    {
+      "claim_id": "2f52e402-d30c-4a62-9c70-3f3e5b712497",
+      "result_id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c"
+    },
+    {
+      "claim_id": "859812f1-cf17-4db2-9c07-6f4a253bbc62",
+      "result_id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c"
+    },
+    {
+      "claim_id": "fe32a02b-4281-420a-af04-fe5e300e1148",
+      "result_id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c"
+    },
+    {
+      "claim_id": "e964aaba-b235-471a-bd51-afa5d719ae27",
+      "result_id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c"
+    },
+    {
+      "claim_id": "c4194c2d-b4c3-4fcb-babf-44d4a0f0695c",
+      "result_id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c"
+    },
+    {
+      "claim_id": "f4a35f8d-7165-4e29-baef-03267c387904",
+      "result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99"
+    },
+    {
+      "claim_id": "b3c00d9c-9724-4438-86aa-853f646fc82e",
+      "result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99"
+    },
+    {
+      "claim_id": "c76d1805-e8c2-4b03-b67c-48acfda7d14f",
+      "result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99"
+    },
+    {
+      "claim_id": "49061d3e-79e2-4891-a47e-9723a7d7dffa",
+      "result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99"
+    },
+    {
+      "claim_id": "f4ec981a-0c61-449e-bd15-2cab0f09da2b",
+      "result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99"
+    },
+    {
+      "claim_id": "e5113582-317d-4368-9574-d6d653a96b7c",
+      "result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99"
+    },
+    {
+      "claim_id": "032061f1-a93a-4948-a23a-9ad13c2fbb83",
+      "result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99"
+    },
+    {
+      "claim_id": "c464320d-db6c-4e03-a993-eaa1d5f3f19c",
+      "result_id": "dbce5eaa-8c47-4c77-bc66-0f423fbd38ca"
+    },
+    {
+      "claim_id": "411db500-9f5b-41b5-a5af-969104d01be2",
+      "result_id": "dbce5eaa-8c47-4c77-bc66-0f423fbd38ca"
+    },
+    {
+      "claim_id": "5b7a629b-3bd5-4ca4-bd0a-8f3fd15b05e7",
+      "result_id": "dbce5eaa-8c47-4c77-bc66-0f423fbd38ca"
+    },
+    {
+      "claim_id": "bf218d28-7f78-436b-8f68-52fd4d21a3be",
+      "result_id": "dbce5eaa-8c47-4c77-bc66-0f423fbd38ca"
+    },
+    {
+      "claim_id": "f46319d3-d6ec-49fb-972e-8bdfc3a7a844",
+      "result_id": "dbce5eaa-8c47-4c77-bc66-0f423fbd38ca"
+    },
+    {
+      "claim_id": "8d955347-0eb0-403b-9401-be0e0a18d64b",
+      "result_id": "1998f9fb-0644-4257-9552-67a2f06b11c6"
+    },
+    {
+      "claim_id": "76d16733-c619-4fbb-8a75-eb724f6a0fdd",
+      "result_id": "1998f9fb-0644-4257-9552-67a2f06b11c6"
+    },
+    {
+      "claim_id": "59a74157-f8b5-46ff-98cf-ec711df20973",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "5f3d7cc1-d652-4861-b586-b51b880dc1d2",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "2345439a-a0d5-4dd7-9492-dabc11550267",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "85286c62-1556-4f95-9053-a026fea2b3cb",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "138cd69a-0dd9-4e97-a9b6-fd1ee014e0cc",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "d31408dd-66cc-47e8-acd4-fa08ab14544a",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "a8ee8667-176c-4f08-a967-9e9d179c52db",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "32940ec4-f01a-49d0-a055-3e0dc2132923",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "301a4bc6-ab62-4409-b514-a1417f0cd8a2",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "6aaaf4b3-fb6e-4012-be08-117f9e8b892e",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "7244c55b-c46a-4aac-b3c4-96a2f93674f8",
+      "result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233"
+    },
+    {
+      "claim_id": "4e7650b9-7ae7-483a-99fd-cdab87b52441",
+      "result_id": "cae53661-cb58-4fd5-9e15-e06f4142f084"
+    },
+    {
+      "claim_id": "261ff490-3474-4af9-acb1-050ca121009f",
+      "result_id": "cae53661-cb58-4fd5-9e15-e06f4142f084"
+    },
+    {
+      "claim_id": "32df8e2d-b29f-4aa3-9763-f7583b2fdd83",
+      "result_id": "cae53661-cb58-4fd5-9e15-e06f4142f084"
+    },
+    {
+      "claim_id": "555bb19f-8cce-4859-b358-622d4ec3cd3d",
+      "result_id": "cae53661-cb58-4fd5-9e15-e06f4142f084"
+    },
+    {
+      "claim_id": "00f0476e-3088-4f52-b399-4be564087ab1",
+      "result_id": "cae53661-cb58-4fd5-9e15-e06f4142f084"
+    },
+    {
+      "claim_id": "3e889938-54c9-4084-93fb-debcec8f6c01",
+      "result_id": "de21854d-9d87-4839-a497-c38090fc68fd"
+    },
+    {
+      "claim_id": "e06713c0-da70-4092-9ad6-c2d2cb17c64d",
+      "result_id": "de21854d-9d87-4839-a497-c38090fc68fd"
+    },
+    {
+      "claim_id": "56fb3ec8-fb74-4749-a1e5-2063a547bdb9",
+      "result_id": "de21854d-9d87-4839-a497-c38090fc68fd"
+    },
+    {
+      "claim_id": "aa316390-82fb-43c7-8f5f-7d3b65549da2",
+      "result_id": "de21854d-9d87-4839-a497-c38090fc68fd"
+    },
+    {
+      "claim_id": "45f98bee-4c02-4b6e-a6a0-3eb90741b9f6",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "0322fd30-cafa-428e-a02e-35c0c76ec915",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "5c163f4d-54c9-4198-a199-3dd2766b2604",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "1a2a21c2-fafd-4bcb-a787-5985a781a369",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "acabf49b-9ef8-4b69-af0e-fa08163922e5",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "293bce7e-c422-4a2a-87d8-39f7396195a5",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "0bbb782a-ea0c-4733-b487-713258d7cd9f",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "4c4fdba0-698b-40df-97ee-06f97f970d78",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "fe01da96-6b83-4b33-9692-1f2943a236c4",
+      "result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3"
+    },
+    {
+      "claim_id": "24aa3f92-5688-41ea-99d1-36f3656062a9",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "ac6c6213-168a-42e9-986e-11122f4a4c53",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "80a55716-2f0e-48f0-b7ef-903fc46d830f",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "859dc66b-d7d3-4f44-94de-ac53dd4dae33",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "c15360f8-9a7b-441a-a714-f1ed074ec8c3",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "dc389a9a-bbe8-4c93-ae50-8d2bc5ceef49",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "28aac193-22b5-42dd-bcff-c6e6f887c08c",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "e57f49e5-8b78-4c40-bb9b-8f2d112c1ca4",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "cf3c3fff-cc54-4598-bb9f-905ff8dc2ea6",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "91123a7f-963b-45ef-89f3-0e50f3a65352",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "dd928533-fcf2-45c1-b845-333645bb0189",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "c3ecef74-c603-41d7-98f7-2f5ab9eef0b2",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "cbff9f0c-27e3-4544-8fe5-e96d20e23329",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "066763bd-b094-4a43-95d1-403123caccf1",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "a8784407-71ad-493b-b864-e725a7b464d6",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "2a786a0a-285f-4ddc-bdaf-810c11fb7255",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "dd9ad204-f1a2-4ba1-b034-87a0bfd454ec",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "61e3aa3e-0d9d-49e1-a4de-e88728050d8e",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "bded74c6-4740-47e5-9e73-6d98744ecc40",
+      "result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d"
+    },
+    {
+      "claim_id": "684af539-a8fd-4bf8-8937-7c5c463e2f36",
+      "result_id": "b342c314-3dc0-465f-94e3-43f1c0a2d800"
+    },
+    {
+      "claim_id": "46c377f7-e1e2-467a-819f-c701f05e7d38",
+      "result_id": "b342c314-3dc0-465f-94e3-43f1c0a2d800"
+    },
+    {
+      "claim_id": "fd863e8c-67d1-4313-b48d-65a4823fff8d",
+      "result_id": "b342c314-3dc0-465f-94e3-43f1c0a2d800"
+    },
+    {
+      "claim_id": "71f2cc42-4c2e-4d77-8015-c3ae69803252",
+      "result_id": "b342c314-3dc0-465f-94e3-43f1c0a2d800"
+    },
+    {
+      "claim_id": "257149f6-87d5-4b59-b6ab-2a25b03ef42d",
+      "result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4"
+    },
+    {
+      "claim_id": "e3ea6ffd-60a8-48db-bc89-7ce994bd3f7a",
+      "result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4"
+    },
+    {
+      "claim_id": "e5113582-317d-4368-9574-d6d653a96b7c",
+      "result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4"
+    },
+    {
+      "claim_id": "5b7a629b-3bd5-4ca4-bd0a-8f3fd15b05e7",
+      "result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4"
+    },
+    {
+      "claim_id": "bf218d28-7f78-436b-8f68-52fd4d21a3be",
+      "result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4"
+    },
+    {
+      "claim_id": "f46319d3-d6ec-49fb-972e-8bdfc3a7a844",
+      "result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "6b1cece8-6a93-4d5f-87d1-fa82c1ee1089",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5",
+      "peer_result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the core finding of single-cell optogenetic activation (C18-C24, C27-C28). OpenEval provides detailed technical assessment noting converging evidence from calcium imaging and quantitative measurements, while acknowledging small sample size (n=4) and spatial selection criteria. Peer reviewers explicitly affirm the finding as 'convincing' and note targeted neurons were activated strongly while neighbors were not. Both evaluations reach SUPPORTED conclusions despite OpenEval's more detailed caveats about generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "4467653e-4bc4-4a69-8869-7957bd108e3e",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b57b7869-54a7-4797-942f-e4740a2f207a",
+      "peer_result_id": "cae53661-cb58-4fd5-9e15-e06f4142f084",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both express UNCERTAIN evaluations regarding viral expression variability (C29-C34). OpenEval notes the lack of quantitative co-expression data and that qualitative fluorescence overlap claims undermine confidence in spatial selectivity. Peer reviewers don't explicitly discuss co-expression but request 'more raw data' and better characterization of 'density of labeled RGCs,' suggesting similar concerns about completeness of expression characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "2cd14e1c-16f7-4bd5-8d84-7486ebf05836",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e70de4f0-4276-437d-88f6-74c4ab9e41c8",
+      "peer_result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the authors' acknowledgment of technical limitations (C37-C43). OpenEval rates this SUPPORTED, praising the honest assessment of axial resolution limitations and appropriately cautious conclusions. Peer reviewers also support this (SUPPORTED) but emphasize that 'further work will be needed' and request 'more detailed methodological description to explore limitations.' Both agree limitations are appropriately acknowledged but peer reviewers want more thorough exploration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "a17b09f3-4894-4d58-8885-1189ea37dc71",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "bbfba00a-be1a-4d94-acdd-069b0f04b95d",
+      "peer_result_id": "de21854d-9d87-4839-a497-c38090fc68fd",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both express uncertainty about spatial selectivity evidence. OpenEval (UNCERTAIN) questions the lack of responses in neighboring cells (C26, C36), citing unconventional statistics ('p>>0.05'), variable viral expression confounds, and limited testing (n=4). Peer reviewers (UNCERTAIN) specifically critique the limited scope, requesting 'more raw data' for neighboring RGC activations and testing 'more than two cells' to establish actual resolution limits. Both find the spatial selectivity data insufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "3857d27c-bbf5-4d5f-b06f-a6b89a370a96",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "93edf64a-4bba-4a19-b1a7-2e0762fdef8b",
+      "peer_result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of methodological detail. OpenEval rates technical specifications (C71-C76, C82) as SUPPORTED, noting they are 'standard AOSLO methods well-documented' and 'sufficiently detailed for reproducibility.' Peer reviewers rate UNCERTAIN, explicitly stating the 'presentation lacks the rigor' expected for a methods paper and there is 'considerable room for improvement' in reporting methodological details, calibrations, and limitations. Peer reviewers find the level of detail insufficient despite the methods being described.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "1e314511-cbe7-40ef-a7c6-54bf46754338",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "475f2953-f8ec-4a9a-813c-539fd4708414",
+      "peer_result_id": "b342c314-3dc0-465f-94e3-43f1c0a2d800",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of control experiments. OpenEval rates potential confound analyses (C79-C81, C91-C92) as SUPPORTED, finding the quantitative estimates and reasoning sound for ruling out 488nm activation, uniform illumination artifacts, and fluorescence emission effects. Peer reviewers rate UNCERTAIN, not explicitly discussing these controls but calling for 'more raw data,' 'calibrations,' and exploration of 'limitations,' suggesting these controls need more thorough validation. The lack of specific reviewer commentary indicates insufficient evidence presented.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "fe04455b-0ba3-458c-8115-dbd755780671",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "dbce5eaa-8c47-4c77-bc66-0f423fbd38ca",
+      "peer_result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support speculative future directions (C55-C59, C57-C59). OpenEval rates SUPPORTED, noting thoughtful discussion of interpretational challenges and appropriately qualified speculation about future applications. Peer reviewers also rate SUPPORTED, acknowledging these as appropriate future directions with 'enormous potential impact' and accepting the speculative nature as part of establishing new methodology. Both evaluations align in accepting forward-looking discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "d77e3de4-b902-4ebe-ba40-6569b82dbdbc",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "67160e1e-b63b-4164-ba62-51869e4873f5",
+      "peer_result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support discussion of regional anatomical differences and proposed solutions (C44-C47, C46-C47). OpenEval rates SUPPORTED, noting accurate identification of peripheral challenges and reasonable proposed solutions based on prior work. Peer reviewers also rate SUPPORTED as part of accepting future directions. Both agree these speculative proposals are appropriately grounded in established techniques.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "d0407993-27a2-4843-b83f-08c42be3d806",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "67160e1e-b63b-4164-ba62-51869e4873f5",
+      "peer_result_id": "b83fd192-e71f-459f-aee5-f1e83b506ed3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on limitations discussion. OpenEval R7 addresses regional anatomical differences and future solutions (C44-C47) rated SUPPORTED. Peer R4 addresses broader limitations (C37-C45) also rated SUPPORTED. Both agree on the importance of acknowledging limitations, with peer reviewers emphasizing need for more detailed exploration in future work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "f3250b54-8621-4457-9da7-ce5efa93aeb0",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "3b8482e5-5ca9-4ff2-81eb-a2597b18be24",
+      "peer_result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates foveal anatomy claims (C68-C70) as SUPPORTED, noting appropriate citation and consistency with established anatomy. These claims appear within peer R5's broader methodological evaluation rated UNCERTAIN, where reviewers request more comprehensive methodological reporting. The specific anatomical claims are not directly challenged by peer reviewers but fall within their general call for more rigorous documentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "76358eb5-d166-4e5d-be85-6e46abba348f",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "0aaacd0f-9d95-4ec8-8a2a-263ec049aca7",
+      "peer_result_id": "b342c314-3dc0-465f-94e3-43f1c0a2d800",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates the negative finding of no cone stimulation (C88) as SUPPORTED, finding it consistent with experimental design and wavelength selectivity. Peer reviewers rate controls UNCERTAIN, not explicitly discussing C88 but calling for better validation of control experiments. The specific claim is not challenged but falls within peer reviewers' general concern about insufficient control characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "936bf99d-85e6-4030-8add-eedfbdaedffa",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "8dcb617c-6172-454e-b835-da5af5b988bb",
+      "peer_result_id": "22c0c7df-63b6-4d45-94ff-f89005fcb233",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval identifies UNCERTAIN evaluation for missing citation validating response kinetics (C25), noting this appears to be a formatting error. Peer reviewers don't specifically mention this issue in their SUPPORTED evaluation of the core finding (C18-C28 including C25), suggesting they either overlooked the missing citation or considered it minor relative to the overall evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "77e2caaf-d259-4c75-b190-6ac439a9fe3d",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5",
+      "peer_result_id": "8447182c-ad30-4e36-86b7-3aed49ca0c6d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap. OpenEval R1 evaluates core findings (C18-C28, C35, C60, C64, C78, C83-C87) as SUPPORTED with detailed technical assessment. Peer R5 addresses methodological reporting (including some overlapping claims C64, C83-C87) rated UNCERTAIN due to insufficient rigor for a methods paper. The shared claims represent different aspects: OpenEval focuses on experimental results while peer reviewers focus on methodological documentation quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "224b47fe-4f06-49f3-a709-3eca038db4b1",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "e9d05c11-a591-431f-8aa6-6d8ef591a1e5",
+      "peer_result_id": "de21854d-9d87-4839-a497-c38090fc68fd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on spatial selectivity aspects. OpenEval R1 includes C35, C78 as part of SUPPORTED core finding evaluation, noting deliberate spatial selection (>20\u00b5m separation). Peer R3 addresses spatial selectivity (C35, C36, C77, C78) rated UNCERTAIN, requesting more comprehensive testing of resolution limits. Peer reviewers are less convinced by the spatial selectivity evidence than OpenEval's overall positive assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "ca91421b-df3d-4088-9101-7813c29db1ba",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "5b5a346e-e7ad-4c67-93e4-c4c054062f99",
+      "peer_result_id": "65ea4e77-1c71-410c-a7fd-9cd442c2dbe4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address future applications with minimal overlap. OpenEval R14 covers broader context of causal studies (C48-C54 including C53) rated SUPPORTED. Peer R7 addresses speculative future directions (C46, C47, C53, C57-C59) also rated SUPPORTED. Both accept appropriately qualified speculation about future research directions, with C53 (single-RGC stimulation inference) appearing in both evaluations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "8af83bb3-70bd-4657-8fd8-3b6ac0cbaece",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "39f65e2b-cfe9-497c-bfc4-f2742968d250",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates immunosuppression protocols (C62-C63) as SUPPORTED, noting standard practice for AAV studies in NHPs. No corresponding peer review evaluation found; peer reviewers did not specifically comment on these methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "3382c878-dc40-465a-852b-8d62e694ee72",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "fae9c144-d4a3-46bb-bf0a-842ac2a4d4b1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background context and motivation (C1-C11) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found; peer reviewers did not comment on the introductory framing and literature context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "6855a92a-88e1-4da0-931c-c98c42b6454f",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "af16cab0-2ee9-4353-8e0a-cec66c964a9c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates summary of enabling technologies (C12-C17) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found; peer reviewers did not specifically assess the characterization of prior foundational work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    },
+    {
+      "id": "4c1c3e42-6dcb-458b-bc47-aff75c831b3e",
+      "submission_id": "56997cd5-e0ee-42f6-a5a1-6e6eb349146d",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "1998f9fb-0644-4257-9552-67a2f06b11c6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates disclosure of pre-existing condition in one subject (C89-C90) as SUPPORTED, noting appropriate transparency and reasonable control measures. No corresponding peer review evaluation found; peer reviewers did not comment on this disclosure.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:08:25.664303Z"
+    }
+  ]
+}

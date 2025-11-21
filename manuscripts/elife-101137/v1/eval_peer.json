@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors developed a virtual thymus computational model that simulates individual thymocytes and TECs in a spatially resolved environment, calibrated to reproduce medaka embryonic thymus dynamics over approximately 8.3 days, reaching a homeostatic population of ~100 cells that matches experimental observations when scaled appropriately.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge and accept the computational model as a key strength of the study. Reviewer 1 states 'the modelling yields some interesting and solid findings,' Reviewer 2 notes 'the strength of the paper is the use of computational modelling to obtain unique insights,' and Reviewer 3 highlights 'attractive features of the computational model are stochasticity, cell-to-cell variability, and spatial heterogeneity.' No concerns are raised about the model's basic implementation or calibration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Computational simulations across 26 scenarios predict that TEC network architecture (size, protrusion number, and density) synergistically modulates thymocyte population size, with denser/larger TECs increasing populations nearly twofold (scenario 26: 200\u00b113 cells) and sparse/smaller TECs reducing populations by half (scenarios 1 and 6: 45\u00b11 and 51\u00b12 cells respectively) compared to reference conditions (98\u00b17 cells).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly recognize this as a key finding. Reviewer 1 states the modeling 'demonstrated that increasing TEC size, density, or protrusions increased the number of thymocytes,' and Reviewer 2 notes the model provides 'unique insights into the niche parameters that control T cell development, such as the role of TEC architecture.' No concerns are raised about these computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Simulations reveal that spatially restricted IL-7 at the thymic periphery (scenario 26) is more effective at driving population growth than ubiquitous IL-7 expression (scenario 27), despite lower average extracellular IL-7 levels, due to the spatial organization of thymocyte entry and migration patterns within the thymic niche.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This spatial finding is implicitly accepted by reviewers as part of the overall computational results. Reviewer 2 specifically notes 'the role of TEC architecture' as a strength, and no reviewer questions the spatial dynamics predictions. The finding is treated as a natural extension of the model's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C84"
+    ],
+    "result": "In vivo validation in medaka shows that il7 crispant embryos have fewer thymocytes and smaller thymus size with reduced proliferation, while TEC:IL-7HI embryos show larger thymus and increased pH3-positive cells, confirming IL-7's critical role in thymocyte proliferation and suggesting crosstalk between thymocyte proliferation and TEC architecture.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge these experimental validations. Reviewer 3 states 'there are some experimental results in Figures 4,5 and 6. For example, il7 crispant embryos have fewer thymocytes and smaller thymii; but increasing IL-7 availability produces large thymii.' Reviewer 2 notes the study 'anchor[s] those findings with in vivo experiments.' The experimental support for IL-7's role is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Systematic variation of IL-7 signaling parameters (activation and deactivation rates) shows these are statistically significant predictors of thymocyte population size, though IL-7 depletion by thymocytes has minimal effect except at very high cell numbers, suggesting self-inhibition via IL-7 depletion is limited under normal conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These computational parameter explorations are implicitly accepted as part of the systematic modeling approach. Reviewer 3 notes the model 'tested the effects of varying a few key parameters of cell proliferation,' and no concerns are raised about the IL-7 signaling dynamics predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Simulations with lesioned clones (IL7RDA or IL7RHI) show these clones undergo ~4 rounds of division versus ~1 for normal clones, resulting in nearly eightfold larger clone sizes, though the model predicts a single IL7R lesion will not be clinically impactful as it provides only one additional division round compared to the upper range of normal clones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly describes this finding: 'ordinary clones have IL7R levels chosen from a distribution, while lesioned clones have an IL7R value set to the maximum. The observation is that the lesioned clones are larger families, but the difference is not dramatic.' This characterization aligns with the authors' interpretation that single lesions have limited impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Systematic exploration of 1580 scenarios reveals that lesioned clones consistently show higher proliferation than non-lesioned clones across parameter variations, gaining up to 6 rounds of division (versus 2 for normal clones) when proliferative parameters are modulated, with cell crowding creating disproportionate disadvantages for non-lesioned clones by blocking TEC access.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly recognizes this mechanism: 'One promising cell-extrinsic mechanism is mentioned: if a lesioned clone happens to be near a source of IL-7 and begins to proliferate, the progeny can crowd out cells of other clones and monopolise the IL-7 source.' This crowding effect is accepted as a key finding from the systematic simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Among secondary lesions tested, delayed differentiation is the most critical for conferring proliferative advantage, essentially doubling the proliferative phase duration and enabling up to 8 rounds of cell division (double that of single IL7R lesions), consistent with in vivo data implicating differentiation perturbations in cancer initiation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly accepted as part of the systematic parameter exploration. Reviewers acknowledge the comprehensive testing of parameters (Reviewer 3: 'tested the effects of varying a few key parameters'), and no concerns are raised about the differentiation delay predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Unexpectedly, sparse TEC networks amplify lesioned clone expansion (while disadvantaging normal clones), with parameter combinations of reduced TEC density and size overrepresented in scenarios showing maximal proliferation (up to 18 rounds of division), suggesting a defective niche synergistically amplifies pro-proliferative modulations and could lead to thymus hyperplasia in vivo.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly highlights this finding: 'The effect will be more noticeable if sources are rare, so is seen when the TEC network is sparse.' Reviewer 4 identifies this as 'One key finding is that a dense TEC network inhibits the proliferation of malignant cells and favors the proliferation of normal cells, whereas a sparse TEC network leads to rapid expansion of malignant thymocytes.' This is recognized as a novel and important discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The model predicts that reduced TEC density decreases NOTCH1-DLL4 engagement, prolonging the undifferentiated proliferative phase (turnover time ~80 hr with sparse TECs versus <60 hr with dense TECs), which benefits lesioned clones with intrinsically high IL7R signaling that can proliferate without Notch signaling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic explanation for the sparse TEC effect is implicitly accepted as part of the model's logic. Reviewers do not challenge the NOTCH1-differentiation dynamics, and Reviewer 3's acknowledgment of the sparse TEC effect implies acceptance of the underlying mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Simulations predict that NOTCH1DA modification alone provides minimal proliferative advantage (only marginally higher than high endogenous IL7R), while delayed differentiation leads to higher proliferation; combining NOTCH1DA with IL7R lesions shows no added effect, but combining delayed differentiation with IL7R lesions doubles proliferation, indicating global NOTCH1 modulation is ineffective due to feedback inhibition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes 'Critical outcomes from the computational model were tested in vivo using medaka fish, such as the role of IL-7 signalling and minimal effect of Notch signalling.' This characterization aligns with the model's prediction that NOTCH1 activation alone has minimal impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "In vivo experiments show that NICD\u0394PEST alone does not cause thymus hyperplasia (0/32 embryos), but combining NICD\u0394PEST with mycn results in 25% hyperplasia (9/36 embryos) with 8% showing T-ALL phenotype and massive organ infiltration; analysis reveals ectopic il7 expression in transformed thymocytes, suggesting MYCN shifts the NOTCH1 feed-forward loop balance toward proliferation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly acknowledges 'Critical outcomes from the computational model were tested in vivo using medaka fish, such as... minimal effect of Notch signalling.' The experimental validation that NOTCH1 alone is insufficient is accepted, as is the synergistic effect with MYCN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "IL7R overexpression alone induces thymus hyperplasia in 26% (il7r) or 59% (il7rNPC) of embryos, with il7rNPC showing significant lck upregulation; combining il7rNPC with NICD\u0394PEST and mycn yields 73% hyperplasia frequency with 33% showing T-ALL phenotype, increased mitotic cells, and pH3-positive cells in normally quiescent thymic zones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These experimental results are implicitly accepted by reviewers as part of the in vivo validation. Reviewer 2 notes the study 'anchor[s] those findings with in vivo experiments,' and no concerns are raised about the IL7R overexpression experiments or their outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C130",
+      "C131"
+    ],
+    "result": "In vivo results support simulations showing IL7R overexpression alone (but not NOTCH1 alone) induces thymus hyperplasia rapidly, while dual activation of IL7R and NOTCH1-MYCN axis promotes rapid T-ALL development within 8 days in medaka; the lack of hyperplasia with NOTCH1 alone may reflect the shorter 8-day timeframe versus weeks/months required in other systems, or model limitations in representing NOTCH1's proliferative effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states this as a key validated outcome: 'Critical outcomes from the computational model were tested in vivo using medaka fish, such as the role of IL-7 signalling and minimal effect of Notch signalling.' The agreement between model predictions and experimental results is recognized as a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "In IL-7-enriched thymic environments (all TECs expressing IL-7), lesioned clones show significant clonal expansion advantage; in vivo, TEC:IL-7HI embryos show 12% hyperplasia, increasing to 41% when combined with il7r overexpression in thymocytes, and 25% T-ALL frequency when combined with NICD and mycn, revealing that excess thymic IL-7 combined with differentiation alterations triggers rapid T-ALL development.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These experimental results are implicitly accepted as part of the comprehensive in vivo validation. Reviewer 3 notes 'increasing IL-7 availability produces large thymii,' and the synergistic effects with other manipulations are not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Experimental observations suggest additional negative feedback from pro-proliferative signaling to differentiation beyond what the model includes; manipulations in IL7R or thymic IL-7 levels induce more severe hyperplasia/T-ALL than model predictions, and NOTCH1-MYCN upregulation suggests proliferation can proceed unbridled by differentiation when sufficiently stimulated, leading to the proposal that continued proliferation can downregulate differentiation pathways.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accept the experimental findings, they do not explicitly evaluate the proposed negative feedback mechanism or the discrepancy between model predictions and experimental severity. The authors acknowledge this as a model limitation and propose a hypothesis, but reviewers do not comment on whether this explanation is convincing or requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The study demonstrates synergy between computational modeling and experimental validation in dissecting thymic niche contributions to T-ALL, highlighting the previously underexplored role of TECs and identifying TEC network architecture alterations as drivers of disease; results challenge the gene-centric T-ALL paradigm by emphasizing the thymic microenvironment's spatial structure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly recognize this as the study's major contribution. Reviewer 1 calls it 'important,' Reviewer 2 states 'the strength of the paper is the use of computational modelling to obtain unique insights,' Reviewer 3 notes the ability to 'follow cell lineages,' and Reviewer 4 highlights 'A key strength of this study is that it combines computational modeling using an agent-based model with experimental work.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors acknowledge model limitations including calibration to medaka (not human), inability to represent TEC shape changes or proliferation, lack of cross-regulatory feedback loops between IL-7 and Notch pathways, and absence of thymic growth over time; they propose adapting the framework to murine/human contexts and suggest the approach offers insights for developing therapeutic strategies targeting the leukemic-supportive niche.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these limitations as reasonable for the current study. Reviewer 2 states 'I can't comment on the model itself, as I am not an expert in modelling, however, the conclusions of the paper seem to be well-supported by the model,' suggesting the limitations do not undermine the main findings. No reviewer challenges the proposed future directions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C45",
+      "C46",
+      "C58"
+    ],
+    "result": "A comprehensive multi-species DVC cell atlas was constructed by integrating mouse and rat snRNA-seq data using treeArches, yielding >180,000 cells with 123 cell identities across 5 layers of cellular resolution. The atlas was validated by successfully labeling 95% of an independent dataset at high resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16, C17, C45, C46, and C58 collectively demonstrate successful atlas construction with appropriate computational methods (treeArches), quality control (99,740/110,167 cells retained), manual curation (473 markers), and validation (95% successful label transfer to Dowsett dataset). The hierarchical structure and cell counts are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Two major neuronal groups (magnaclasses 1 and 2) were identified in the DVC, with magnaclass 1 predominantly expressing inhibitory neurotransmission genes (Gad1, Gad2) and magnaclass 2 expressing excitatory transcripts (VGLUT2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by gene expression data shown in figures. However, the manuscript notes that ~55% of neurons show evidence of co-transmission, indicating these classifications are not absolute but represent predominant patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28"
+    ],
+    "result": "A DVC-specific population of Ca+-permeable astrocytes was identified expressing Kcnj3 (GIRK1 channel) and lacking Gria2 (AMPAr subunit GluA2), which were not found in hypothalamus, forebrain, cortex, or hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, and C28 are supported by gene expression data (Figure 2B) and comparative analysis across multiple brain regions. The functional inference about K+/Na+/Ca+ permeability is based on established literature about these channels. The DVC specificity claim is well-supported by systematic comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A novel population of neurons co-expressing Th and Cck was identified in the DVC, with >10% of Th-expressing neurons also expressing Cck, confirmed by both snRNA-seq and in situ hybridization. The majority of overlap occurs in COE-Atp10a and monoamine class (M0, M3) neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42, C43, and C44 provide converging evidence from snRNA-seq quantification and orthogonal validation by in situ hybridization (Figure 4B). This contradicts prior literature (C14) that considered these non-overlapping populations, but the authors appropriately acknowledge and discuss this discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "A rat-specific population of Pdgfra-expressing neurons (ortus-akin class) was identified in the area postrema that express leptin receptor and progenitor markers (Pdgfra, Arhgap31, Itga9). These cells were confirmed as neurons by PDGFRA/HuC/D co-immunostaining and were not found in mouse DVC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47-C50, C52-C54, C56-C57 provide strong converging evidence from rat snRNA-seq (12,167 cells, 52 identities), gene expression analysis, and immunofluorescence validation. The species difference is well-documented with appropriate controls showing PDGFRA in only OPCs and fibroblasts in mouse but also in neuron-like cells in rat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Despite detecting Hcrt and Agrp mRNA in snRNA-seq data, in situ hybridization failed to detect these transcripts in the DVC, and read mapping revealed most sequences mapped to intronic/non-coding regions, suggesting DVC cells do not produce HCRT or AGRP neuropeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 demonstrate appropriate critical evaluation of sequencing artifacts. The authors used orthogonal validation (in situ hybridization), read mapping analysis, and comparison with intron-excluded rat data to conclude these are likely non-functional transcripts. This represents rigorous quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Differential gene expression analysis revealed widespread but modest transcriptional changes across nearly all neural cell identities in response to refeeding, with magnaclasses 1 and 2 showing the greatest number of differentially expressed genes. Despite being transcriptionally distinct, these classes altered many of the same genes, suggesting similar postprandial signal reception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by differential expression analysis with appropriate statistical methods (MAST algorithm, adj. p<0.05). The modest effect sizes (~90% of changes between 0.5-1.0 log2FC) are honestly reported. However, the inference about similar signal reception (C68) is speculative, though supported by receptor expression profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Two unusual neuronal classes were identified: Golli-class neurons expressing myelin-associated genes (Mag, Mog) normally found in oligodendrocytes, and pH-related class neurons expressing astrocyte-associated genes (Slc6a11) related to glutamate/GABA/Ca+/bicarbonate clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are supported by gene expression data and citations to prior literature on gene function. These represent rare populations (<1% of neurons each). While unusual, the data support their existence, though functional validation would strengthen these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Corelautus-class and Lhx2-class neurons likely represent cells from anatomically adjacent regions (hypoglossal nucleus and cuneate nucleus, respectively) captured during dissection, based on spatial expression patterns of marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 are based on inference from spatial expression patterns (Figure 1\u2014figure supplement 2). The reasoning is sound and the authors appropriately use cautious language ('suggesting', 'we posit'). This represents good quality control in identifying potential contaminating cell populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "DVC-specific neuronal programs exist that are not found in the hypothalamus, based on comparative analysis showing no hypothalamic clusters sharing all markers with DVC neuronal classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by systematic comparison with hypothalamic snRNA-seq data (Steuernagel et al., 2022). However, the analysis could be strengthened by more quantitative metrics of similarity and consideration that absence of evidence is not evidence of absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "A spectrum of DVC mature oligodendrocytes was identified including intermediate oligodendrocytes similar to those in other brain sites. The gradient of marker expression (Fyn, Opalin, Anln) does not follow a developmental trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 are supported by gene expression data and trajectory analysis (Figure 2\u2014figure supplement 2). The SCORPIUS analysis appropriately tests whether the expression gradient represents a temporal progression, finding it does not.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Two fibroblast subtypes were distinguished in the DVC, including stress-associated fibroblasts (s-fibroblasts) expressing high Stk39, which were not detected in the hypothalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 are supported by subclustering analysis and gene expression data (Figure 2\u2014figure supplement 3), with citation to prior literature on Stk39 function. The DVC specificity is based on comparison with hypothalamic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DVC microglia are in a basal state with minimal activation gene expression. Two microglial subpopulations were identified: one expressing oligodendrocyte markers resembling disease-protective microglia, and another expressing Ndrg2 and neurotransmitter receptors potentially associated with neuronal damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C35 are based on gene expression analysis and comparison to prior literature. However, the authors acknowledge that nuclear RNA sequencing may not fully capture microglial activation states (noted in Discussion). The functional inferences are speculative and based on similarity to microglia in disease models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The monoamine class was subdivided into four identities (M0-M3) with distinct molecular profiles. M0 and M1 express norepinephrine/serotonin synthesis enzymes but M0 has minimal VMAT2. M2 and M3 are considered monoamine modulators synthesizing trace amines. M0 neurons heavily express GFRAL and some co-express Casr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by gene expression data (Figure 3B-C). The classification of M2/M3 as 'monoamine modulators' (C38) involves some interpretation but is reasonably based on low Th/Tph2 expression. The GFRAL/Casr co-expression in M0 is clearly shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "GLP1 neurons express high levels of prolactin and leptin receptors and show the highest proportion of DVC neuronal co-expression of glutamate- and GABA-related genes, mainly Gad2 with lower Slc32a1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 are supported by gene expression data (Figure 3E-F) and citation to prior literature. The co-expression pattern is clearly documented, though the functional implications are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Immunity-related neurons in rat express high Csf1r, cystatin C, and Inpp5d, genes commonly associated with immunity-related processes in microglia and immunomodulation in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by gene expression data (Figure 7) and citations to prior literature on gene function. However, the functional implications are speculative and would benefit from validation that these are indeed neurons and not misclassified microglia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "In mouse DVC, PDGFRA immunoreactivity was found in two morphologically distinct cell types matching OPC and blood vessel-associated fibroblast morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by immunofluorescence data (Figure 7C) showing expected PDGFRA expression patterns in mouse, serving as an appropriate control for the rat findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "DVC-specific astrocytes may have specialized functions in regulating blood-brain barrier permeability based on their spatial restriction to the AP/NTS boundary and known astrocyte functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is speculative, based on spatial expression patterns and general knowledge about astrocyte function. While plausible, this hypothesis requires experimental validation. The authors appropriately use cautious language ('it is possible').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The discrepancy between snRNA-seq detection and previous immunofluorescent studies of Cck/Th co-expression may be due to differences in detection methods (mRNA vs. protein/genetic reporter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is speculative but reasonable. The authors acknowledge the discrepancy with prior literature and propose a methodological explanation. However, protein-level validation would strengthen this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Dual Cck/Th positive neurons likely mediate aversive anorexia based on co-expression of Gfral and Casr, which have potently aversive ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is speculative, based on gene expression patterns and known ligand properties. The authors appropriately note that 'no functional characterization has been performed' and use cautious language ('we posit', 'likely'). Functional validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "PDGFRA+/HuCD+ cells in the rat AP may represent a transient stage of PDGFRA+ OPCs differentiating into neurons, based on prior evidence of OPC-to-neuron differentiation and AP neurogenesis following amylin administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is highly speculative ('it is possible'), based on citations to prior literature on OPC differentiation and AP neurogenesis. While an interesting hypothesis, this requires lineage tracing or other direct evidence of differentiation. The alternative explanation that these are mature neurons expressing progenitor markers is equally plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The species discrepancy in Lepr expression between mice and rats may be explained by the absence of ortus class neurons in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is speculative ('we believe one explanation'), though it provides a plausible hypothesis for the observed species difference. This could be tested by examining whether eliminating ortus-akin neurons from the rat analysis eliminates the Lepr expression difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The experimental design involved isolating DVC from 30 adult C57BL/6J mice subjected to different metabolic conditions (fasted, refed, ad libitum, LiCl-injected, vehicle-injected) for 10X Genomics snRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C78 describe the experimental design and methods, which are clearly documented. The sample sizes per condition are appropriate for snRNA-seq studies, though pooling prevents individual-level analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establish the DVC as a brainstem region important for appetite regulation, serving as a nexus for metabolic signals and vagal afferents, with clinical relevance for obesity and cachexia treatments targeting GLP1R and GFRAL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C15 provide background context supported by appropriate citations to prior literature. These establish the scientific rationale for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1798 @@
+{
+  "submission": {
+    "id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T04:00:46.998491Z",
+    "updated_at": "2025-11-21T04:00:46.998491Z"
+  },
+  "content": [
+    {
+      "id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "content_type": "manuscript",
+      "content_text": "# High-content high-resolution microscopy and deep learning-assisted analysis reveals host and bacterial heterogeneity during Shigella infection\n\n## Authors\n\n- Ana Teresa L\u00f3pez-Jim\u00e9nez<sup>1</sup> ([ORCID: 0000-0002-0289-738X](https://orcid.org/0000-0002-0289-738X)) \u2020\n- Dominik Brokatzky<sup>1</sup> ([ORCID: 0000-0001-6304-3292](https://orcid.org/0000-0001-6304-3292))\n- Kamla Pillay<sup>1</sup> ([ORCID: 0009-0003-7519-1841](https://orcid.org/0009-0003-7519-1841))\n- Tyrese Williams<sup>1</sup>\n- Gizem \u00d6zbaykal G\u00fcler<sup>1</sup> ([ORCID: 0000-0002-9115-7120](https://orcid.org/0000-0002-9115-7120))\n- Serge Mostowy<sup>1</sup> ([ORCID: 0000-0002-7286-6503](https://orcid.org/0000-0002-7286-6503)) \u2020\n\n### Affiliations\n\n1. Department of Infection Biology, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))\n\n\u2020 Corresponding author\n\n## Abstract\n\nShigella flexneri is a Gram-negative bacterial pathogen and causative agent of bacillary dysentery. S. flexneri is closely related to Escherichia coli but harbours a virulence plasmid that encodes a type III secretion system (T3SS) required for host cell invasion. Widely recognised as a paradigm for research in cellular microbiology, S. flexneri has emerged as important to study mechanisms of cell-autonomous immunity, including septin cage entrapment. Here, we use high-content high-resolution microscopy to monitor the dynamic and heterogeneous S. flexneri infection process by assessing multiple host and bacterial parameters (DNA replication, protein translation, T3SS activity). In the case of infected host cells, we report a reduction in DNA and protein synthesis together with morphological changes that suggest S. flexneri can induce cell-cycle arrest. We developed an artificial intelligence image analysis approach using convolutional neural networks to reliably quantify, in an automated and unbiased manner, the recruitment of SEPT7 to intracellular bacteria. We discover that heterogeneous SEPT7 assemblies are recruited to bacteria with increased T3SS activation. Our automated microscopy workflow is useful to illuminate diverse host and bacterial interactions at the single-cell and population level, and to fully characterise the intracellular microenvironment controlling the S. flexneri infection process.\n\n## Introduction\n\nShigella flexneri is a Gram-negative bacterium and the aetiologic agent of bacillary dysentery, an intestinal infectious disease that kills more than 150,000 people worldwide per year, disproportionally affecting children under 5 years of age from low- and middle-income countries (Global Burden of Disease Collaborative Network, 2020). After the ingestion of a small number of bacteria (10\u2013100), S. flexneri rapidly colonises the human intestinal epithelium. For this, S. flexneri uses a type III secretion system (T3SS) that injects bacterial effectors into the host cell to modulate key aspects of the infection process and to evade innate immune defences by the host (Schnupf and Sansonetti, 2019). Following uptake by host cells, S. flexneri breaks its vacuolar compartment to access the cytosol (Ray et al., 2010). Here, the virulence factor IcsA enables S. flexneri to hijack host actin and polymerise comet tails that render bacteria motile to disseminate to neighbouring cells and spread in the tissue (Bernardini et al., 1989; Egile et al., 1999).\n\nSeptins are highly conserved GTP-binding proteins that form heteromeric complexes (hexamers, octamers) that assemble into non-polar filaments, bundles, and rings (Martins et al., 2023; Soroor et al., 2021; Szuba et al., 2021; Woods and Gladfelter, 2021). Septins are involved in many physiological cellular processes (e.g. cytokinesis, cilia formation) and play key roles during infection (Mostowy and Cossart, 2012; Robertin and Mostowy, 2020; Spiliotis and Nakos, 2021). Septins form collar-like structures at the plasma membrane during bacterial invasion (Boddy et al., 2018; Mostowy et al., 2009; Robertin et al., 2023) and ring-like structures surrounding membrane protrusions in cell-to-cell bacterial spread (Mostowy et al., 2010). In the cytosol, septins are recruited to actin-polymerising bacteria, including S. flexneri and Mycobacterium marinum, as cage-like structures (Mostowy et al., 2010). In the case of S. flexneri, septins are recruited to \u03bcm-scale curvature at bacterial poles and the division site, which are enriched in the negatively charged phospholipid cardiolipin (Krokowski et al., 2018). Recent work has shown that IcsA promotes the recruitment of septins to S. flexneri, and that lipopolysaccharide inhibits S. flexneri-septin cage entrapment (Lobato-M\u00e1rquez et al., 2021; Mostowy et al., 2010). Septin cages prevent bacterial actin tail motility and therefore are considered as an antibacterial mechanism of host defence (Krokowski et al., 2018; Mostowy et al., 2010).\n\nIntracellular infection is usually portrayed as a uniform, synchronised, and highly orchestrated process. However, infection assays performed in controlled laboratory environments with isogenic populations display a high level of complexity (Avraham et al., 2015; Toniolo et al., 2021). It is particularly unknown how different subsets of bacteria (e.g. motile vs non-motile bacteria) can colonise distinct intracellular microenvironments and become targeted by multiple cell-autonomous immunity mechanisms (e.g. septin cages, autophagy). It has been proposed that this diversity of intracellular niches impacts bacterial physiology (Day et al., 2024; Gutierrez and Enninga, 2022; Santucci et al., 2021). For example, it may affect individual bacterial ability to acquire nutrients, to be exposed to varying antibiotic concentrations, or to elicit different responses and signalling pathways within the host cell. While the concept of phenotypic heterogeneity in prokaryotic clonal populations is well established (Ackermann, 2015), the concept is also emerging in eukaryotic cells where non-genetic differences may, for instance, explain individual cell sensitivity and responses by cell-autonomous immunity (McDonald and Dedhar, 2024). In addition, previous high-content studies coupled with mathematical modelling have shown that host cell context (including local cell density, lipid composition at the plasma membrane, or previous infection status) affects their susceptibility to viral and bacterial infection (Snijder et al., 2009; Voznica et al., 2018). It is therefore paramount to study host and bacterial cells at the single-cell level, to assess the individual responses that collectively contribute to the infection process.\n\nHere, to dissect the complexity of S. flexneri infection in epithelial cells, we use high-content high-resolution microscopy coupled to automated image analysis. High-content microscopy enables the automated acquisition of thousands of microscopy images and therefore is useful to capture the heterogeneity of individual host and bacterial cells during the infection process for quantitative analysis (Aylan et al., 2023; Brodin and Christophe, 2011; Deboosere et al., 2021; Dram\u00e9 et al., 2023; Fisch et al., 2019; Lensen et al., 2023; Pylkk\u00f6 et al., 2021). We analyse multiple parameters, such as morphological host cell features, the de novo synthesis of DNA, and proteins in both host and bacterial cells, as well as activation of the bacterial T3SS. To investigate the antimicrobial potential of septin-mediated immunity, we develop a deep learning-based approach to automatically identify septin-S. flexneri interactions. Together, we highlight the power of high-content microscopy and artificial intelligence to reveal insights on both host and bacterial cells and illuminate fundamental biology underlying the S. flexneri infection process.\n\n## Results\n\n### Capturing the heterogeneity of S. flexneri infection using high-content microscopy\n\nTo understand the complexity and reveal the heterogeneity of S. flexneri infection in human epithelial cells, we dissected the infection process using high-content high-resolution microscopy and HeLa cell infection model (Figure 1A and B, Figure 1\u2014figure supplement 1A). We observed a mean of 11.5% of infected cells measured by fluorescence at 3 hr 40 min post infection (hpi) at multiplicity of infection (MOI) 100:1 (Figure 1C). These infected cells presented different burdens of bacteria following an exponential decay distribution (Figure 1D), reflective of the formation of infection foci (Ortega et al., 2019). With growing evidence of the cytosol being a non-homogeneous compartment containing concentration gradients, biomolecular condensates, protein complexes, and concentrates (van Tartwijk and Kaminski, 2022), we tested whether S. flexneri may be exposed to different intracellular microenvironments. For this, we measured the distance of bacteria to the centroid of cells (Figure 1E) and observed a median distance of 8.74 \u00b5m. The median distance to the centroid of the cell significantly decreased with increasing bacterial burden (Figure 1E), suggesting that the microenvironment of bacteria is diverse and changes as bacteria replicate intracellularly and populate the central parts of host cytosol after uptake at the host cell periphery. To dissect the heterogeneity in host cells, we quantified an increase of 36.9% and 22.3% in the cellular and nuclear area of infected cells, respectively (Figure 1G and I), which was dependent on the infection burden (Figure 1H and J). In addition, the total amount of Hoechst fluorescence in the cell nucleus increased 29.4% in infected cells (Figure 1\u2014figure supplement 1B), indicating either an increase in nuclear volume or altered chromatin condensation. To test if this effect was due to morphological rearrangements during infection, we treated cells with latrunculin B to inhibit actin polymerisation. While cells treated with latrunculin B decreased their cellular area (but not their nuclear area) (Figure 1\u2014figure supplement 1C and D), the drug did not abrogate the difference in size between infected and uninfected cells. Taken together, these results highlight profound morphological rearrangements during infection that are dependent on the infection burden.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative high-resolution microscopy image of HeLa cells infected with S. flexneri expressing mCherry acquired with the high-content microscope ZEISS CellDiscoverer 7. Scale bar, 10 \u00b5m. (B) Enlarged view of insets in A, highlighting a S. flexneri bacteria polymerising an actin tail (1) and entrapped in a septin cage (2), scale bar, 1 \u00b5m. (C) Percentage of infected cells at 3 hpi of 7 independent experiments. Graph represents mean = 11.49% \u00b1 SD=4.36%. (D) Percentage of infected cells harbouring different bacterial doses, graph represents mean \u00b1 SD. (E) Distance of the bacteria to the centroid of the host cell. Graph represents the median (8.74 \u00b5m) and interquartile range (6.51\u201311.05 \u00b5m). Values from n=4990 cells from 7 independent experiments. (F) Distance of individual bacteria to the centroid of the host cell depending on its bacterial load. Graph represents the median and interquartile range. Kruskal-Wallis test and Dunn\u2019s multiple comparisons test. (G) Area of cells depending on infection. Graph represents the median area (uninfected: 3031 \u00b5m2, infected: 4148 \u00b5m2) and interquartile range (uninfected: 2308\u20134169 \u00b5m2, infected: 3062\u20135752 \u00b5m2). Values from n=9469 uninfected cells and n=1031 infected cells from 7 independent experiments. (H) Area of infected cells depending on their bacterial load. Graph represents the median and interquartile range. Kruskal-Wallis test and Dunn\u2019s multiple comparisons test. (I) Nuclear area of cells depending on infection. Graph represents the median area (uninfected: 1551 \u00b5m2, infected: 1897 \u00b5m2) and interquartile range (uninfected: 1209\u20131950 \u00b5m2, infected: 1486\u20132333 \u00b5m2). Values from n=9469 uninfected cells and n=1031 infected cells from 7 independent experiments. (J) Nuclear area of infected cells depending on its bacterial load. Graph represents the median and interquartile range. Kruskal-Wallis test and Dunn\u2019s multiple comparisons test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative images used as input for CellProfiler analysis (top) and their corresponding segmentations (bottom). Host cell boundaries were identified using a propagation method from the identified nucleus based on Otsu thresholding. (B) Hoescht fluorescence intensity of sum-projected nuclei as proxy of nuclear volume. Graph represents normalised median (uninfected: 1, infected: 1.294) and interquartile range (uninfected: 0.7588\u20131.287, infected: 0.9534\u20131.878) of n=2071 uninfected cells and n=195 infected cells from 3 independent experiments. Mann-Whitney U test. (C\u2013D) Cell and nuclear area in presence and absence of infection and latrunculin B. Graph represents the median and interquartile range. Kruskal-Wallis test and Dunn\u2019s multiple comparisons test.\n\n### Epithelial cells reduce de novo DNA and protein synthesis upon infection\n\nIn order to understand the physiological state of enlarged epithelial cells infected with S. flexneri, we monitored host DNA replication and protein translation using Click chemistry. Using a 1 hr pulse of the clickable thymidine analogue EdU, we specifically visualised and quantified de novo DNA synthesis in the population of epithelial cells with high-content microscopy (Figure 2A; Figure 2\u2014figure supplement 1). We identified the subpopulation of cells in S-phase by their high level of EdU incorporation. Consistent with this, this subpopulation of cells was fully abrogated in the presence of the S-phase blocker aphidicolin (Pedrali-Noy et al., 1980; Figure 2\u2014figure supplement 1A and B). Approximately one third of uninfected cells (34.45%) were found in S-phase (Figure 2B and C), in agreement with S-phase lasting around one third of the cell cycle (~8 hr out of ~22 hr). Infected cells presented a similar proportion of cells in S-phase (35.89%), indicating that S. flexneri infection did not block transition of cells from G1 to S at the timepoint tested. We then assessed the amount of de novo DNA synthesis incorporated in cells in S-phase during infection. Surprisingly, we observed a reduction of EdU incorporation in infected cells (Figure 2D), which was dependent on the bacterial burden (Figure 2E). These results indicate that S. flexneri infection slows down DNA synthesis of epithelial cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative microscopy image of HeLa cells infected with S. flexneri expressing mCherry at 3 hpi after 1 hr incubation with Click-iT EdU. Asterisks label the nucleus of infected cells with reduced EdU incorporation. Contour of selected cells is delimited with a dashed line. Scale bar, 10 \u00b5m. (B) EdU acquisition in uninfected cells is bimodal. Graph represents the normalised median of the ratio between the fluorescence intensity of EdU and Hoechst (1), and interquartile range (0.5924\u201331.22). Values from n=8941 cells from 3 independent experiments. An arbitrary threshold of 5 is selected to define cells in S-phase. (C) Frequency of cells in S-phase (as defined in B) depending on infection. Graph represents mean \u00b1 SD (uninfected: 34.45% \u00b1 9.78%, infected: 35.89% \u00b1 4.69%). Student\u2019s t-test. (D) EdU acquisition in cells in S-phase depending on infection. Graph represents the normalised median of the ratio between the fluorescence intensity of EdU and Hoechst (uninfected: 75.14, infected: 44.73), and interquartile range (uninfected: 27.89\u2013131.0, infected: 22.05\u201393.36), from 3065 uninfected and 552 infected cells. Mann-Whitney U test. (E) EdU acquisition in cells in S-phase depending on bacterial load. Graph represents the median and interquartile range. Kruskal-Wallis test and Dunn\u2019s multiple comparisons test. (F) Representative microscopy image of HeLa cells infected with S. flexneri expressing mCherry at 3 hpi after 1 hr incubation with Click-iT AHA. Asterisks label the infected cells with reduced AHA incorporation. Scale bar, 10 \u00b5m. (G). AHA acquisition in host cells depending on infection. Graph represents the normalised median of AHA fluorescence intensity (uninfected: 1, infected: 0.86), and interquartile range (uninfected: 0.7850\u20132.694, infected: 0.6207\u20131.241), from 36 uninfected and 233 infected cells. Mann-Whitney U test. (H) AHA acquisition in infected cells depending on bacterial load. Graph represents the median and interquartile range. Kruskal-Wallis test and Dunn\u2019s multiple comparisons test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative widefield image of HeLa cells after Click-iT EdU reaction in the presence or absence of aphidicolin to inhibit eukaryotic DNA replication. Scale bar, 10 \u00b5m. (B) Quantification of de novo DNA synthesis in single HeLa cells in A as the ratio of nuclear Click-iT EdU signal to Hoechst. Graph represents the normalised median (untreated: 1, aphidicolin: 0.7667) and interquartile range (untreated: 0.8474\u20136.571, aphidicolin: 0.6816\u20130.8543) from 15,828 untreated and 14,943 treated cells from 3 independent experiments. Mann-Whitney U test. (C) Representative Airyscan confocal images of HeLa cells after Click-iT AHA reaction in the presence or absence of cycloheximide to block eukaryotic translational elongation. Scale bar, 10 \u00b5m. (D) Quantification of cytoplasmic Click-iT AHA signal of the HeLa cells in A. Graph represents normalised median (untreated: 1, cycloheximide: 0.3531) and interquartile range (untreated:0.6794\u20131.401, cycloheximide: 0.2504\u20130.6637) of n=268 untreated and n=258 cycloheximide treated cells from 3 independent experiments. Mann-Whitney U test.\n\nTo assess protein translation, we used a 1 hr pulse of the clickable methionine analogue AHA, which specifically labels de novo synthesized proteins as AHA incorporation is reduced after treatment with the inhibitor of translational elongation cycloheximide (Ennis and Lubin, 1964; Figure 2\u2014figure supplement 1C and D). During infection, we observed a reduction of protein translation in infected cells compared to non-infected cells (Figure 2F and G), which was also dependent on the bacterial burden (Figure 2H).\n\nCollectively, the cell morphological rearrangements, together with the reduction of de novo DNA and protein synthesis in infected epithelial cells, suggest that S. flexneri induces an arrest in the host cell cycle.\n\n### Design of a deep learning pipeline to automatically identify bacteria interacting with SEPT7\n\nS. flexneri has been shown to interact with septins during infection. These interactions include septin ring-like structures surrounding phagocytic cups, autophagosomes, actin tails, and protrusions, all being morphologically diverse structures that are normally scored by hand (Krokowski et al., 2018; Lobato-M\u00e1rquez et al., 2023; Mostowy et al., 2010). To study septin-associated bacteria using high-content microscopy, we designed a tailored analysis pipeline for the automatic and unbiased identification of SEPT7-bacteria interactions (Figure 3). SEPT7 is a core component of septin hexamers and octamers and is historically used to identify septin structures (Mostowy et al., 2010). The analysis pipeline includes two deep learning models based on convolutional neural networks (CNNs), which are effective in solving classification tasks in computer vision (Krizhevsky et al., 2012; LeCun et al., 2015; Nielsen, 2015). As septins can surround individual and also multiple bacteria simultaneously (Figure 4\u2014figure supplement 1A), we focused on individual bacteria. For this, we trained the first classification model to discriminate between \u2018single\u2019 bacteria and \u2018clumps\u2019. The second classification model was designed to assign those single bacteria into \u2018SEPT7-positive structures\u2019 or alternatively \u2018negatives\u2019, according to the morphology of SEPT7 recruitment around them.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig3-v1.jpg)\n\n**Figure 3.:** (A) Diagram representing the steps involved in the imaging and analysis pipeline. After infection, fixation, and staining, a high number of images are automatically acquired using the high-content microscope. Scale bar, 10 \u00b5m. These are then processed to segment bacteria based on their fluorescence, so that a square field containing the bacteria in the centre is cropped and saved for subsequent analysis. A deep learning model based on convolutional neural network (CNN) is applied using Jupyter notebooks and the Python Keras library hosted on Colab to sort individual, isolated bacteria. Several processing steps are applied using Python to remove noise (band-pass filtering by difference of Gaussian and mean filters), normalise the data across datasets for comparison, and remove signal away from the bacteria which is irrelevant for the identification of SEPT7 assemblies. Scale bar, 1 \u00b5m. Finally, a similar second deep learning model based on CNN is applied to identify SEPT7 interacting with bacteria.\n\nThe first classification model (discerning \u2018single\u2019 vs \u2018clumped\u2019 bacteria) together with its training and performance metrics is summarised in Figure 4. A large dataset of annotated bacteria (Figure 4A and B, Figure 4\u2014figure supplement 1B) was used to train a sequential model with a typical CNN architecture that was experimentally tested and optimised accordingly for best results (Figure 4C). This model provided a good fit of the training data (high accuracy, low loss), with similar predictive power for the validation dataset (Figure 4D and E). Performance of the model was further assessed with a confusion matrix where a separate annotated test dataset was challenged and correct number of predictions scored, showing that 96% of SEPT7 structures and 83% of clumps were correctly identified (Figure 4F). Finally, effective performance of the model was ensured with high values achieved in additional metrics testing for type I and II errors (precision, recall, F1 score) (Figure 4G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig4-v1.jpg)\n\n**Figure 4.:** (A) Table summarising the annotated dataset used for the training process. The labels of the two classification classes used were \u2018Single bacteria\u2019 and \u2018Clump\u2019. The annotated images were randomly split into two groups, one used as training dataset (comprising 80% of the images) and another used as validation dataset (with the remaining 20%). A separate annotated dataset was used for testing. (B) Representative Airyscan images of bacteria used for each class. 2D max projections of z-stacks were used for training. Scale bar, 1 \u00b5m. (C) Architecture of the deep learning algorithm used for training. Each row describes the characteristics of the sequential transformation steps applied. Conv2D stands for 2D Convolution. (D, E) Accuracy and Loss as metrics to represent the training process over subsequent epochs (entire passing of the training data through the algorithm). Accuracy increases and loss decreases for both training and validation datasets, indicating a good fit of the model to the data. Vertical dashed grey line indicates Early Stopping, or epoch value for the minimum validation Loss. (F) Confusion matrix performed on an annotated test dataset not used previously for the training or validation process, indicating the percentage of predictions that were correct or wrong for each class. (G) Precision, recall, and F1 score as metrics that summarise the performance of the model or classifier. (H) Table summarising the annotated dataset used for the training process. The labels of the two classification classes used were \u2018Septin\u2019 and \u2018Negative\u2019. The annotated images were randomly split into three groups, one used as training dataset (comprising 75% of the images), another used as validation dataset (with 15%), and a last one used as test dataset (with 10%). Due to the data being very imbalanced (15% natural frequency of SEPT7-associated bacteria), the images comprised in the Negative class were under-sampled as indicated in the table. (I) Representative Airyscan images of bacteria used for each class. 2D max projections of z-stacks were used for training. Scale bar, 1 \u00b5m. (J) Architecture of the deep learning algorithm used for training. Each row describes the characteristics of the sequential transformation steps applied. Conv2D stands for 2D Convolution, Batch_norm stands for Batch normalisation. (K, L) Accuracy and Loss as metrics to represent the training process over subsequent epochs. Accuracy increases and loss decreases for both training and validation datasets, indicating a good fit of the model to the data. Vertical dashed grey line indicates Early Stopping or epoch value for the minimum validation Loss. (M) Confusion matrix performed on the test dataset not used previously for the training or validation process, indicating the percentage of predictions that were correct or wrong for each class. (N) Precision, recall, and F1 score as metrics that summarise the performance of the model or classifier.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative images of multiple bacteria associated with SEPT7. Scale bar, 1 \u00b5m. (B) Representative images of the training and validation dataset to identify single bacteria vs clumps. Scale bar, 5 \u00b5m. (C) Representative images of the training and validation dataset to identify SEPT7-positive vs SEPT7-negative bacteria, after processing. Scale bar, 5 \u00b5m.\n\nThe second classification task (identification of SEPT7 \u2018positive\u2019 vs \u2018negative\u2019 bacteria) was more challenging due to their intrinsic heterogeneity plus the presence of ubiquitous SEPT7 filaments that populate the vicinity of bacteria (but do not associate with bacteria per se). To address these challenges, we increased the amount of data and complexity of the second classification model (Figure 4H\u2013J, Figure 4\u2014figure supplement 1C) compared to the first (Figure 4A\u2013C). This included more than 1200 images of S. flexneri associated with SEPT7, both from infections with wild-type bacteria or expressing AfaI to increase bacterial invasion. The training process achieved a high accuracy and low loss for the training and validation dataset (Figure 4K and L). Correct prediction of manually annotated SEPT7 positive structures was 80% as shown in the confusion matrix (Figure 4M), with performance metrics precision, recall, and F1 score also around 0.8 (Figure 4N).\n\n### Characterisation of the morphological heterogeneity of SEPT7 recruitment to S. flexneri\n\nThe training of the classification model to identify bacteria associated with SEPT7 required a large dataset of images. We observed diverse morphological patterns of SEPT7 signal around bacteria (Figure 5A\u2013C). We differentiated five frequent subcategories from a total of 855 cases. The first corresponds to most cases (66.7%), where SEPT7 forms rings that entrap bacteria transversally (Figure 5A and B, a). We also observed two categories where SEPT7 surrounds bacteria more homogeneously either in a tight (18.2%) or loose association (6.1%) (Figure 5A and B, b\u2013c). Finally, we observed partial SEPT7 recruitment, with only one (5.0%) or two (4.0%) bacterial poles being targeted (Figure 5A and B, d\u2013e). Given this diversity, we combined the entire dataset to summarise the probability of SEPT7 interactions with bacteria (Figure 5\u2014figure supplement 1). As bacteria are found in any orientation inside epithelial cells, we included only those instances where the z-projection of the bacterial axis measured more than 2.5 \u03bcm, ensuring they were positioned horizontally when imaged. Representations shown in Figure 5\u2014figure supplement 1A and C and graphs in Figure 5\u2014figure supplement 1B and D can be understood as a probability map of the area of influence of SEPT7 when associating with intracellular S. flexneri.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig5-v1.jpg)\n\n**Figure 5.:** (A) Selected examples of the training dataset to showcase the diverse morphology of septin assemblies associated with bacteria. Frequent morphologies include (a) ring-like structures around the bacteria, (b) smooth tight recruitment around the entire bacterial surface, (c) loose structures more distant from the bacterial surface, (d) septin recruitment to both bacterial poles, (e) septin recruitment to a single bacterial pole. Scale bar, 1 \u00b5m. (B) Intensity profiles of the cytosolic bacterial mCherry and the SEPT7 recruitment, as indicated in the white and orange dashed lines, respectively. (C) Pie chart representing the relative frequency of 855 S. flexneri-SEPT7 associations depicted in A.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A, C) Median of the signal for mCherry and SEPT7 in both datasets (SEPT7-positive and SEPT7-negative), centred at the bacterial midbody or bacterial pole, respectively. Only bacteria with width \u22652.5 \u00b5m were selected to ensure bacteria were mostly transversal to the acquisition axis. Scale bar, 1 \u00b5m. (B, C) Quantification of SEPT7 signal and S. flexneri mCherry signal in the midbody projection depicted in A and transversal dashed line indicated in B.\n\n### SEPT7 is recruited to S. flexneri with increased T3SS activity\n\nSeptins have previously been shown to recognise growing bacterial cells in vitro and during infection of HeLa cells, using pharmacologic and genetic manipulation (Krokowski et al., 2018; Lobato-M\u00e1rquez et al., 2021). To test the metabolic state of SEPT7-associated S. flexneri at 3 hr 40 min post infection (hpi), we used our high-content imaging and analysis pipeline (Figure 6). We measured S. flexneri de novo synthesis of DNA and proteins using a 1 hr pulse Click-iT EdU and Click-iT AHA. Only active bacteria incorporated these analogues, as the antibiotic nalidixic acid (inhibitor of the bacterial DNA gyrase; Sugino et al., 1977) and rifampicin (inhibitor of the bacterial RNA polymerase; Ezekiel and Hutchins, 1968) significantly reduced their incorporation, respectively (Figure 6\u2014figure supplement 1A\u2013D, Figure 6\u2014figure supplement 1E and F). During infection, bacteria associated with SEPT7 showed heterogeneous levels of DNA synthesis and protein translation similar to SEPT7-negative bacteria (Figure 6A\u2013H).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig6-v1.jpg)\n\n**Figure 6.:** (A) Representative microscopy image of HeLa cells infected with S. flexneri expressing mCherry at 3 hpi after 1 hr incubation with Click-iT EdU. Scale bar, 10 \u00b5m. (B) Enlarged view of insets in A, highlighting a S. flexneri associated or not to SEPT7 structures. Scale bar, 1 \u00b5m. (C) Frequency of the number of SEPT7-associated bacteria identified using deep learning from experiments in A, from n=1024 from 3 independent replicates. Graph represents mean \u00b1 SD (9.23% \u00b1 2.62%). (D) Normalised ratio between EdU signal and mCherry in individual bacteria. Graph represents the median (negatives: 1, septin associated: 1.059), and interquartile range (negatives: 0.8185\u20131.207, septin associated: 0.8573\u20131.487). Mann-Whitney U test. (E) Representative microscopy image of HeLa cells infected with S. flexneri expressing mCherry at 3 hpi after 1 hr incubation with Click-iT AHA. Scale bar, 10 \u00b5m. (F) Enlarged view of insets in E, highlighting a S. flexneri associated or not to SEPT7 assemblies. Scale bar, 1 \u00b5m. (G) Frequency of the number of SEPT7-associated bacteria identified using deep learning from experiments in E, from n=1872 bacteria from 3 independent replicates. Graph represents mean \u00b1 SD (7.01% \u00b1 2.41%). (D) Normalised AHA signal in individual bacteria in A, B. Graph represents the median (negatives: 1, SEPT7 associated: 1.055) and interquartile range (negatives: 0.6986\u20131.345, SEPT7 associated: 0.7837\u20131.497). Mann-Whitney U test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Representative Airyscan image of mCherry S. flexneri after Click-iT EdU reaction in the presence or absence of nalidixic acid to block bacterial DNA replication. Scale bar, 1 \u00b5m. (B) Quantification of Click-iT EdU signal of bacteria in C measured by FACS. Graph represents normalised mean \u00b1 SD. One-way ANOVA and Tukey\u2019s multiple comparisons test. (C) Representative Airyscan confocal images of HeLa cells infected with mCherry expressing S. flexneri after Click-iT EdU reaction in the presence or absence of nalidixic acid to inhibit bacterial DNA nuclear replication. Scale bar, 10 \u00b5m. (D) Quantification of de novo DNA synthesis in single bacteria in E as the ratio of nuclear Click-iT signal to Hoechst. Graph represents normalised median (untreated: 1, nalidixic acid: 0.0646) and interquartile range (untreated: 0.3589\u20131.924, nalidixic acid: 0.0350\u20130.3080) of 9310 untreated and 4368 nalidixic acid treated bacteria from 3 independent experiments. Mann-Whitney U test. (E) Representative Airyscan confocal images of HeLa cells infected with mCherry expressing S. flexneri after Click-IT AHA reaction in the presence or absence of rifampicin to block prokaryotic translation. Scale bar, 10 \u00b5m; insets, 1 \u00b5m. (F) Quantification of cytoplasmic Click-iT AHA signal of individual S. flexneri cells in C. Graph represents normalised median (untreated: 1, rifampicin: 0.8263) and interquartile range (untreated: 0.7520\u20131.350, rifampicin: 0.6143\u20131.100) of n=2309 untreated and n=345 rifampicin treated bacteria from 3 independent experiments.\n\nS. flexneri pathogenicity relies on its T3SS. To understand effector secretion at the individual bacterial level, we used S. flexneri expressing the transcription-based secretion activity reporter (TSAR) (Campbell-Valois et al., 2014). This reporter comprises a short-lived fast-maturing superfolder GFP (GFPmsf2) that is expressed in conditions where the T3SS is active, such as in broth upon addition of congo red (Figure 7\u2014figure supplement 1A and B; Parsot et al., 1995) and during infection (Figure 7). We observed heterogeneity in TSAR signal (Figure 7A and B). T3SS activation was higher in bacteria found in cells with a low bacterial burden (less than 10 intracellular bacteria) (Figure 7A and C). This suggests the highest level of activation occurs in bacterial pioneers that colonise neighbouring cells, in agreement with previous reports (Campbell-Valois et al., 2014). We then assessed T3SS activation in S. flexneri associated with SEPT7 using our deep learning analysis pipeline (Figure 7D\u2013H). We detected a significant increase in TSAR-positive bacteria in SEPT7-associated S. flexneri compared to SEPT7-negative bacteria (Figure 7G and H). These include SEPT7-associated protrusions and cage-like structures (Figure 7E, Figure 7\u2014figure supplement 1). These data underscore the antimicrobial role of septins in associating with actively secreting bacteria.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig7-v1.jpg)\n\n**Figure 7.:** (A) Representative microscopy image of HeLa cells infected with S. flexneri expressing the transcription-based secretion activity reporter (TSAR) reporter at 3 hpi. Scale bar, 10 \u00b5m. Arroheads highlight TSAR+ bacteria. Selected infected cells\u2019 contours are delimited with dashed lines. (B) Distribution of TSAR signal intensity in individual bacteria. Graph represents the normalised median of the ratio between TSAR and mCherry (1), and interquartile range (0.7827\u20131.369). Values from n=3654 bacterial cells from 3 independent experiments. An arbitrary threshold of 1.5 is selected to define TSAR+ S. flexneri. (C) Intensity of TSAR signal in individual bacteria depending on infection load of host cells. Graph represents the normalised median and interquartile range. Kruskal-Wallis test and Dunn\u2019s multiple comparisons test. (D) Representative microscopy image of HeLa cells infected with S. flexneri expressing the TSAR reporter at 3 hpi. Scale bar, 10 \u00b5m. (E) Enlarged view of insets in D, highlighting a S. flexneri associated or not to SEPT7 assemblies. Scale bar, 1 \u00b5m. (F) Frequency of the number of SEPT7-associated bacteria identified using deep learning from experiments in F, from n=5030 bacteria from 4 independent replicates. Graph represents mean \u00b1 SD (9.044% \u00b1 5.582%). (G) Percentage of TSAR+ S. flexneri depending on their association to SEPT7. Graph represents mean \u00b1 SD (negatives: 2.214\u00b11.603, septin associated: 17.74\u00b15.138). Student\u2019s t-test. (H) Normalised ratio between TSAR signal and mCherry in individual bacteria. Graph represents the median (negatives: 1, SEPT7 associated: 1.122) and interquartile range (negatives: 0.7674\u20131.286, SEPT7 associated: 0.9047\u20131.511). Mann-Whitney U test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97495/elife-97495-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Representative Airyscan confocal images of S. flexneri harbouring the TSAR plasmid grown in broth in the presence or absence of congo red to induce the expression of the T3SS. Scale bar, 1 \u00b5m. (B) Quantification of the TSAR-dependent GFP signal of bacteria in A measured by FACS. Graph represents the normalised mean \u00b1 SD (untreated: 1\u00b10, congo red: 155.4\u00b1125.2) from 4 independent experiments. (C) Representative examples of TSAR-positive S. flexneri associated with SEPT7. C stands for \u2018cage\u2019, P stands for \u2018protrusion\u2019. Scale bar, 5 \u00b5m.\n\n## Discussion\n\nUnravelling the intrinsic heterogeneity of host and bacterial cells underlying the infection process is paramount to designing effective therapeutic strategies. High-content and high-throughput image analysis are ideal tools to capture this heterogeneity when coupled to automatic phenotypic image analysis (Eliceiri et al., 2012; Mattiazzi Usaj et al., 2016; Pegoraro and Misteli, 2017). Here, we use high-content high-resolution microscopy and automated image analysis to quantitatively dissect the heterogeneity of S. flexneri in epithelial cells at the single-cell and population level at unprecedented subcellular detail.\n\nWe discover that S. flexneri induces important morphological and physiological changes in epithelial cells after 3 hr 40 min post infection. These include a marked decrease of DNA synthesis in cells in S-phase. Consistent with the ability of bacteria to manipulate the host cell cycle, S. flexneri has been shown to induce genotoxic stress (Bergounioux et al., 2012) and block the G2/M phase transition (Iwai et al., 2007; Wang et al., 2019). We also observed a collective shutdown of protein expression, which happened in a bacterial burden-dependent manner. A recent report has shown that the OspC family of S. flexneri effectors ADP-riboxanates the host translation initiation factor 3, leading to translational arrest and the formation of stress granules (Zhang et al., 2024). Collectively, these observations suggest that S. flexneri infection induces host cell stress and arrests the progression of the cell cycle. In the natural S. flexneri niche of the human gut, such an arrest would prevent maturation and shedding of infected epithelial cells, thereby promoting efficient gut colonisation (Iwai et al., 2007).\n\nTo understand how bacteria are targeted by cell-autonomous immune defences, such as septin cage entrapment, it is necessary to investigate phenotypic characteristics of targeted bacteria and the heterogeneous recruitment of cell-autonomous immune factors. While traditional image segmentation tools fail to enable this task, rapidly evolving developments in the field of computer vision are democratising the use of deep learning and CNNs for multiple applications (Berg et al., 2019; Hung et al., 2020; Stringer et al., 2021; von Chamier et al., 2021; Weigert et al., 2020), including infection biology (Davidson et al., 2021; Fisch et al., 2021; Touquet et al., 2018). However, the analysis of complex datasets still requires a tailored approach, as shown here for bacterial interactions with the septin cytoskeleton (which is ubiquitous in the cell and forms diverse assemblies whose precise identification requires high resolution). We successfully implement a CNN-based approach for the automated classification of bacteria associated with SEPT7 assemblies using z-stacks projections, enabling the analysis of thousands of bacterial cells while saving time and preventing human bias. Building upon this work, future studies will improve use of 3D data for CNN re-training instead of z-stack projections, to allow more precise identification of S. flexneri-septin interactions, particularly when bacteria are placed perpendicular to the imaging plane.\n\nA large dataset of images depicting S. flexneri-SEPT7 interactions was acquired to train the deep learning algorithm and to characterise the diversity of these structures. We observe that the most frequent septin assembly is in the form of rings transversally surrounding the bacterial surface. We also detected alternative morphologies, including homogeneous SEPT7 labelling surrounding the bacterial surface (tight vs loose), as well as the discrete recruitment of SEPT7 to one or two bacterial poles. While previous work has shown that septin cage assembly around S. flexneri can start with the discrete recruitment of septins to one or two bacterial poles (Krokowski et al., 2018), it is not yet known if the different septin assemblies we describe here correspond to different stages or fates of the same structure or whether it marks separate biological events. To fully address this question, follow-up studies should include time-lapse analysis of septin cage formation. We use deep learning analysis to interrogate intracellular bacteria and show that S. flexneri associated with SEPT7 presents heterogeneous DNA and protein synthesis. In addition, we show that bacteria associated with SEPT7 have increased T3SS activity (as compared to bacteria not associated with SEPT7). T3SS activity has been shown to be higher in motile bacteria (Campbell-Valois et al., 2014), which reinforces the antimicrobial role of septins in counteracting actin tail motility. Altogether, our deep learning tool to analyse septin-bacteria interactions opens the door to future studies on interactions between bacteria and components of cell-autonomous immunity.\n\n### Concluding remarks\n\nHeterogeneity in a controlled lab environment is only a small representation of the broader heterogeneity underlying the clinical infection process, considering the genetic background of the patient, interactions with microbiota, etc. In the future, our pipeline can be applied to investigate septin-bacteria interactions among different Shigella spp. or clinically relevant strains, as well as other intracellular bacteria (e.g. M. marinum, Staphylococcus aureus, Pseudomonas aeruginosa). In addition, our pipeline can be adapted to identify and score other cytoskeletal structures (such as actin tails) or membrane organelles (such as autophagosomes) associated with intracellular bacteria. Ultimately, we envision that our automated microscopy workflows will help to screen pharmacologic or genetic libraries in a multiparametric manner and understand their impact on host and bacterial cells at the single-cell and population level. In this way, novel host and bacterial factors underlying heterogeneity and bacterial pathogenesis could be identified, leading to transformative therapeutic strategies to combat bacterial infection in humans.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Shigella flexneri)</td>\n      <td>Shigella flexneri srv. 5 a str. M90T</td>\n      <td>Mostowy et al., 2010</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>strain, strain background (Shigella flexneri)</td>\n      <td>Shigella flexneri srv. 5 a str. M90T mCherry</td>\n      <td>Mostowy et al., 2013</td>\n      <td></td>\n      <td>Constitutively producing mCherry</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Shigella flexneri)</td>\n      <td>Shigella flexneri srv. 5 a str. M90T afaI</td>\n      <td>Mostowy et al., 2010</td>\n      <td></td>\n      <td>Constitutively producing the adhesin AfaE</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Shigella flexneri=)</td>\n      <td>Shigella flexneri srv. 5 a str. M90T GFP</td>\n      <td>Mostowy et al., 2010</td>\n      <td></td>\n      <td>Constitutively producing GFP</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Shigella flexneri)</td>\n      <td>Shigella flexneri srv. 5 a str. M90T GFP afaI</td>\n      <td>This study</td>\n      <td></td>\n      <td>Constitutively producing the adhesin AfaE and GFP</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>CCL2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human SEPT7 (rabbit polyclonal)</td>\n      <td>IBL</td>\n      <td>Cat#: 18991 RRID:AB_10705434</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTSAR1ud2.4s (plasmid)</td>\n      <td>Campbell-Valois et al., 2014</td>\n      <td></td>\n      <td>T3SS reporter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAC-Plac (plasmid)</td>\n      <td>Lobato-M\u00e1rquez et al., 2015</td>\n      <td></td>\n      <td>pACYC184 derived plasmid.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAC-AfaI-AmpR (plasmid)</td>\n      <td>This study</td>\n      <td></td>\n      <td>For constitutive expression of the adhesin AfaE, ori p15A, AmpR</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAC-AfaI-CmR (plasmid)</td>\n      <td>This study</td>\n      <td></td>\n      <td>For constitutive expression of the adhesin AfaE, ori p15A, CmR</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>afaI-operon-fw</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>tgcgttgcgcgaagatcctttgatcttttctacgggg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>afaI-operon-rv</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>ggaagctaaacgagcccgatcttcccca</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>p15A-ori-fw</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>atcgggctcgtttagcttccttagctcc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>p15A-ori-rv</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>aaggatcttcgcgcaacgcaattaatgtaag</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>afaI-p15A-fw</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>cggggcgtaactgtcagaccaagtttac</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>afaI-p15A-rv</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>ttttctccatactcttcctttttcaatattattg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CmR-fw</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>aaggaagagtatggagaaaaaaatcactggatataccaccgttgatatatccc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CmR-rv</td>\n      <td>This study</td>\n      <td>PCR-primer</td>\n      <td>ggtctgacagttacgccccgccctgcca</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT EdU Cell Proliferation Kit for Imaging</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#: C10337</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT AHA Protein Synthesis HCS Assay</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#: C10289</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Congo red</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#:C6767</td>\n      <td>0.01% (w/v)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Aphidicolin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: A0781</td>\n      <td>50 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Cell Signalling</td>\n      <td>Cat#: 2112</td>\n      <td>50 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nalidixic acid</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: N8878</td>\n      <td>2 \u03bcg/mL</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rifampicin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: R3501</td>\n      <td>100 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CellProfiler</td>\n      <td>CellProfiler</td>\n      <td></td>\n      <td>v.4.0.7</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Alexa-488-conjugated phalloidin</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#: 10729174</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hoescht</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#: H3570</td>\n      <td>IF (1:500)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents\n\nThe following antibodies were used: rabbit anti-SEPT7 (1:100 dilution, #18991, IBL), Alexa-488-conjugated anti-rabbit antibody (1:500, #10729174, Thermo Fisher Scientific), Alexa-647-conjugated anti-rabbit antibody (1:500, #A27040, Thermo Fisher Scientific). The following dyes were used: Alexa-647-conjugated phalloidin (1:500, #10656353, Thermo Fisher Scientific), Hoechst (1:500, #H3570, Thermo Fisher Scientific), 0.01% (wt/vol) congo red (#C6767, Sigma-Aldrich). The following drugs were used: 50 \u03bcg/mL aphidicolin (#A0781 Sigma-Aldrich), 50 \u03bcg/mL cycloheximide (#2112 Cell Signaling), 2 \u03bcg/mL nalidixic acid (#N8878 Sigma-Aldrich), and 100 \u03bcg/mL rifampicin (#R3501 Sigma-Aldrich).\n\n### Bacterial strains and culture conditions\n\nThe bacterial strains and plasmids described in this study are listed in Table 1. S. flexneri 5a str. M90T mCherry was used throughout the manuscript unless indicated otherwise. S. flexneri strains were grown in trypticase soy broth (TCS) agar containing congo red to select for red colonies, indicative of a functional T3SS. Conical polypropylene tubes (#CLS430828, Corning) containing 5 mL of TCS were inoculated with individual red colonies of S. flexneri and were grown ~16 hr at 37\u00b0C with shaking at 200 rpm. The following day, bacterial cultures were diluted in fresh prewarmed TCS (1:50 or 1:100 vol/vol) and cultured until an optical density (OD, measured at 600 nm) of 0.6.\n\n**Table 1.**\n Bacterial strains and plasmids used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Bacterial strain</th>\n      <th>Genotype</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Shigella flexneri srv. 5a str. M90T</td>\n      <td>SmR</td>\n      <td>Mostowy et al., 2010</td>\n    </tr>\n    <tr>\n      <td>S. flexneri mCherry</td>\n      <td>Constitutively producing mCherry, CarbR, SmR</td>\n      <td>Mostowy et al., 2013</td>\n    </tr>\n    <tr>\n      <td>S. flexneri afaI</td>\n      <td>Constitutively producing the adhesin AfaE, AmpR, SmR</td>\n      <td>Mostowy et al., 2010</td>\n    </tr>\n    <tr>\n      <td>S. flexneri GFP</td>\n      <td>Constitutively producing GFP, CarbR</td>\n      <td>Mostowy et al., 2010</td>\n    </tr>\n    <tr>\n      <td>S. flexneri GFP afaI</td>\n      <td>Constitutively producing the adhesin AfaE and GFP, AmpR CmR, SmR</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Plasmid</td>\n      <td>Characteristics</td>\n      <td>Reference</td>\n    </tr>\n    <tr>\n      <td>pTSAR1ud2.4s</td>\n      <td>T3SS reporter</td>\n      <td>Campbell-Valois et al., 2014</td>\n    </tr>\n    <tr>\n      <td>pAC-Plac</td>\n      <td>pACYC184-derived plasmid</td>\n      <td>Lobato-M\u00e1rquez et al., 2015</td>\n    </tr>\n    <tr>\n      <td>pAC-AfaI-AmpR</td>\n      <td>For constitutive expression of the adhesin AfaE, ori p15A, AmpR</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>pAC-AfaI-CmR</td>\n      <td>For constitutive expression of the adhesin AfaE, ori p15A, CmR</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Primer</td>\n      <td>Sequence (5\u2019\u20133\u2019)</td>\n      <td>Reference</td>\n    </tr>\n    <tr>\n      <td>afaI-operon-fw</td>\n      <td>tgcgttgcgcgaagatcctttgatcttttctacgggg</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>afaI-operon-rv</td>\n      <td>ggaagctaaacgagcccgatcttcccca</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>p15A-ori-fw</td>\n      <td>atcgggctcgtttagcttccttagctcc</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>p15A-ori-rv</td>\n      <td>aaggatcttcgcgcaacgcaattaatgtaag</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>afaI-p15A-fw</td>\n      <td>cggggcgtaactgtcagaccaagtttac</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>afaI-p15A-rv</td>\n      <td>ttttctccatactcttcctttttcaatattattg</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CmR-fw</td>\n      <td>aaggaagagtatggagaaaaaaatcactggatataccaccgttgatatatccc</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CmR-rv</td>\n      <td>ggtctgacagttacgccccgccctgcca</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning\n\nPrimers used in this study were designed using NEBuilder Assembly Tool (https://nebuilder.neb.com/#!/). To produce S. flexneri expressing AfaI and GFP, the pACAfaI plasmid was constructed (plasmid characteristics and primer sequences are located in Table 1). Briefly, the afaI operon together with the ampR gene was amplified from S. flexneri afaI strain using the primers afaI-operon-fw and afaI-operon-rv. The ori p15A was amplified from pAC-Plac using the primers p15A-ori-fw and p15A-ori-fw. Both DNA fragments were assembled using the Gibson assembly to generate the plasmid pAC-AfaI-AmpR. In a second step, the AmpR gene from pAC-AfaI-Amp was substituted by the CmR gene and generated pAC-AfaI-Cm. This was achieved by amplification of the CmR gene from pNeae2 using the primers CmR-fw CmR-rv and amplification of the backbone of pAC-AfaI-Amp with primers afaI-p15A-fw, afaI-p15A-rv, followed by Gibson assembly. Gibson assembly was performed at 50\u00b0C for 30 min using the HiFi DNA Assembly Master Mix (#E2621L, New England Biolabs). Resulting plasmid pAC-AfaI-Cm was transformed into S. flexneri GFP by electroporation.\n\n### Cell lines\n\nHeLa (ATCC CCL-2) cells were grown at 37\u00b0C and 5% CO2 in Dulbecco\u2019s modified Eagle medium (DMEM, Gibco) supplemented with 10% fetal bovine serum (FBS, Sigma-Aldrich). Cell lines were tested for mycoplasma infection and tested negative.\n\n### Infection of human cells\n\nHeLa cells were seeded in 96-well microplates (PhenoPlates, Perkin Elmer) at a confluency of 104 cells/well 2 days prior to infection. Alternatively, 9\u00d7104 HeLa cells were seeded in six-well plates (Thermo Scientific) containing 22\u00d722 mm2 glass coverslips 2 days before the infection. Bacterial cultures were grown as described, and cell cultures were infected with S. flexneri strains as described previously (Mostowy et al., 2010). Briefly, Hela cells were infected with S. flexneri by spin inoculation at 110\u00d7g for 10 min at an MOI (bacteria:cell) of 100:1. Then, microplates were placed at 37\u00b0C and 5% CO2 for 30 min. Infected cultures were washed 3\u00d7 with phosphate-buffered saline (PBS) pH 7.4 and incubated with fresh DMEM containing 10% FBS and 50 mg/mL gentamicin at 37\u00b0C and 5% CO2 for 3 or 4 hr. In order to obtain more instances of S. flexneri associated with SEPT7 in Figure 4H, one of the datasets was obtained after infection with S. flexneri expressing the adhesin AfaI (Labigne-Roussel and Falkow, 1988) and GFP to increase host cell invasion at an MOI of 10 in the absence of spin inoculation.\n\n### Click chemistry\n\nTo label de novo DNA and protein synthesis, Click-iT EdU Cell Proliferation Kit for Imaging (#C10337 Thermo Fisher Scientific) and Click-iT AHA Protein Synthesis HCS Assay (#C10289 Thermo Fisher Scientific) were used, respectively, according to the manufacturer\u2019s instructions. In the case of AHA, cells were cultured in glutamine, cystine, and methionine-free DMEM (#21013024 Thermo Fisher Scientific) for 1 hr prior to the treatment. 10 \u03bcM EdU and 25 \u03bcM AHA were supplemented to live bacterial or mammalian cell cultures for 1 hr. Cells were fixed for immunofluorescence as indicated below. Click azide/alkyne reactions were performed after permeabilisation and prior to antibody staining as indicated below, according to the manufacturer\u2019s instructions.\n\n### Immunofluorescence and fluorescence microscopy\n\nBacteria, coverslips, or 96-well microplates containing adherent infected or uninfected cells were washed three times with PBS pH 7.4 and fixed for 15 min in 4% paraformaldehyde (in PBS) at RT. Fixed cells were washed three times with PBS pH 7.4 and subsequently permeabilised for 5 min with 0.1% Triton X-100 (in PBS). Cells were then washed three times in PBS and incubated 1 hr with primary antibodies diluted in PBS supplemented with 0.1% Triton X-100 and 1% bovine serum albumin. Cells were then washed three times in PBS and incubated for 45 min with anti-rabbit secondary antibodies diluted 0.1% Triton X-100 (in PBS), and Hoescht and Alexa-conjugated phalloidin where indicated. 96-Well microplates were washed three times in PBS and preserved in 0.01% sodium azide (#10338380 Thermo Scientific) in PBS pH 7.4. Stained bacteria cultures and coverslips were washed three times with PBS pH 7.4 mounted on glass slides with ProLong Diamond Antifade Mountant (#P36970I Invitrogen). Fluorescence microscopy on stained bacteria was performed using a 63\u00d7/1.4 C-Plan Apo oil immersion lens on a Zeiss LSM 880 confocal microscope driven by ZEN Black software (v2.3). Microscopy images were obtained using z-stack image series taking 8\u201316 slices. Fluorescence microscopy on infected or uninfected cells was performed using a ZEISS Plan-APOCHROMAT 20\u00d7/0.95 Autocorr Objective or a ZEISS Plan-APOCHROMAT 50\u00d7/1.2 water immersion lens coupled to a 0.5x tubelens on a Zeiss CellDiscoverer 7 with Airyscan detectors driven by ZEN Blue software (v3.5). Microscopy images were obtained using z-stack image series taking 32 slices. Confocal images were processed using Airyscan processing (Wiener filter) using \u2018Auto Filter\u2019 and \u20183D Processing\u2019 options.\n\n### Flow cytometry\n\n5\u00d7104 individual bacterial cells were analysed using flow cytometry with an LSRII flow cytometer (BD Biosciences). The data was analysed using FlowJo software, version 10.7.1. The median fluorescence of the bacterial population was determined and plotted for each staining.\n\n### Analysis pipelines\n\nNumber of bacteria per cell, as well as fluorescence of bacteria, nuclei, and mammalian cells, was analysed using CellProfiler (v4.0.7) (Carpenter et al., 2006). Custom-made segmentation and deep learning pipelines for the classification of septin cages were written in ImageJ and Python using Keras.\n\n### Statistics\n\nAll graphs were plotted, and statistical analysis was performed using Prism. n.s.: non-significant, *: p-value<0.05, **: p-value<0.01, ***: p-value<0.001.\n\n### Code availability\n\nCustom ImageJ macros, phyton scripts and Jupyter notebooks were annotated and deposited in Github (https://github.com/ATLopezJimenez/Toolset-high-content-analysis-of-Shigella-infection; copy archived at Jim\u00e9nez, 2024).\n",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ethel Bayer-Santos, The University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97495.3.sa0](https://doi.org/10.7554/eLife.97495.3.sa0)\n\nThis manuscript describes an AI-automated microscopy-based approach to characterize both bacterial and host cell responses associated with Shigella infection of epithelial cells. The methodology is compelling and should be helpful for investigators studying a variety of intracellular pathogens. The authors have acquired important findings regarding host and bacterial responses in the context of infection, which should be followed up with further mechanistic-based studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97495.3.sa1](https://doi.org/10.7554/eLife.97495.3.sa1)\n\nSummary:\n\nSeptin caging has emerged as one of the innate immune response of eukaryotic cells to infections by intracellular bacteria. This fascinating assembly of eukaryotic proteins into complex structures restricts bacteria motility within the cytoplasm of host cells, thereby facilitating recognition by cytosolic sensors and components of the autophagy machinery. Given the different types of septin caging that have been described thus far, a single cell, unbiased approach to quantify and characterise septin recruitment at bacteria is important to fully grasp the role and function of caging. Thus, the authors have developed an automated image analysis pipeline allowing bacterial segmentation and classification of septin cages that will be very useful in the future, applied to study the role of host and bacterial factors, compare different bacterial strains or even compare infections by clinical isolates.\n\nStrengths:\n\nThe authors developed a solid pipeline that has been thoroughly validated. When tested on infected cells, automated analysis corroborated previous observations and allowed the unbiased quantification of the different types of septin cages as well as the correlation between caging and bacterial metabolic activity. This approach will prove an essential asset in the further characterisation of septin cages for future studies.\n\nWeaknesses:\n\nAs the main aim of the manuscript is to described the newly developed analysis pipeline, the results illustrated in the manuscript are essentially descriptive. The developed pipeline seems exceptionally efficient in recognising septin cages in infected cells but its application for a broader purpose or field of study remains limited.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97495.3.sa2](https://doi.org/10.7554/eLife.97495.3.sa2)\n\nSummary\n\nIn this study, L\u00f3pez-Jim\u00e9nez and colleagues demonstrate the utility of using high-content microscopy in dissecting host and bacterial determinants that play a role in the establishment of infection using Shigella flexneri as a model. The manuscript nicely identifies that infection with Shigella results in a block to DNA replication and protein synthesis. At the same time, the host responds, in part, via the entrapment of Shigella in septin cages.\n\nStrengths:\n\nThe main strength of this manuscript is its technical aspects. They nicely demonstrate how an automated microscopy pipeline coupled with artificial intelligence can be used to gain new insights regarding elements of bacterial pathogenesis, using Shigella flexneri as a model system. Using this pipeline enabled the investigators to enhance the field's general understanding regarding the role of septin cages in responding to invading Shigella. This platform should be of interest to those who study a variety of intracellular microbial pathogens.\n\nAnother strength of the manuscript is the demonstration - using cell biology-based approaches- that infection with Shigella blocks DNA replication and protein synthesis. These observations nicely dovetail with the prior findings of other groups. Nevertheless, their clever click-chemistry-based approaches provide visual evidence of these phenomena and should interest many.\n\nWeaknesses:\n\nThere are two main weaknesses of this work. First, the studies are limited to findings obtained using a single immortalized cell line. It is appreciated that HeLa cells serve as an excellent model for studying aspects of Shigella pathogenesis and host responses. However, it would be nice to see that similar observations are observed with an epithelial cell line of intestinal, preferably colonic origin, and eventually, with a non-immortalized cell line, although it is appreciated that the latter studies are beyond the scope of this work.\n\nThe other weakness is that the studies are minimally mechanistic. For example, the investigators have data to suggest that infection with Shigella leads to an arrest in DNA replication and protein synthesis; however, no follow-up studies have been conducted to determine how these host cell processes are disabled. Interestingly, Zhang and colleagues recently identified that the Shigella OspC effectors target eukaryotic translation initiation factor 3 to block host cell translation (PMID: 38368608).\n",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "11578ec7-6a5b-4fd8-affd-ea9def1480d7",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C1",
+      "claim": "Shigella flexneri is a Gram-negative bacterial pathogen and causative agent of bacillary dysentery.",
+      "claim_type": "EXPLICIT",
+      "source": "Shigella flexneri is a Gram-negative bacterial pathogen and causative agent of bacillary dysentery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about S. flexneri classification and disease causation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "3c040a63-a9f8-416c-8138-999c4cb78106",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C2",
+      "claim": "S. flexneri is closely related to Escherichia coli but harbours a virulence plasmid that encodes a type III secretion system (T3SS) required for host cell invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "S. flexneri is closely related to Escherichia coli but harbours a virulence plasmid that encodes a type III secretion system (T3SS) required for host cell invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic relationship between S. flexneri and E. coli and the role of the virulence plasmid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "490e8d5b-5bf1-4d3b-941a-797bd34f0ffe",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C3",
+      "claim": "Bacillary dysentery kills more than 150,000 people worldwide per year, disproportionally affecting children under 5 years of age from low- and middle-income countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Shigella flexneri is a Gram-negative bacterium and the aetiologic agent of bacillary dysentery, an intestinal infectious disease that kills more than 150,000 people worldwide per year, disproportionally affecting children under 5 years of age from low- and middle-income countries (Global Burden of Disease Collaborative Network, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the Global Burden of Disease Collaborative Network, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "7bda6933-e1b6-4f99-a814-c45bc329de4f",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C4",
+      "claim": "After the ingestion of a small number of bacteria (10\u2013100), S. flexneri rapidly colonises the human intestinal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "After the ingestion of a small number of bacteria (10\u2013100), S. flexneri rapidly colonises the human intestinal epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the infectious dose and colonization behavior of S. flexneri.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "10e50aa5-ad10-4faa-8e1a-31e2192e19cb",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C5",
+      "claim": "S. flexneri uses a type III secretion system (T3SS) that injects bacterial effectors into the host cell to modulate key aspects of the infection process and to evade innate immune defences by the host.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, S. flexneri uses a type III secretion system (T3SS) that injects bacterial effectors into the host cell to modulate key aspects of the infection process and to evade innate immune defences by the host (Schnupf and Sansonetti, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Schnupf and Sansonetti, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "755acde3-65ec-42df-81a7-8e95411f6aed",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C6",
+      "claim": "Following uptake by host cells, S. flexneri breaks its vacuolar compartment to access the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Following uptake by host cells, S. flexneri breaks its vacuolar compartment to access the cytosol (Ray et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ray et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "c3e15f2b-970d-4cd7-a4dc-2e9bb595bdb4",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C7",
+      "claim": "The virulence factor IcsA enables S. flexneri to hijack host actin and polymerise comet tails that render bacteria motile to disseminate to neighbouring cells and spread in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the virulence factor IcsA enables S. flexneri to hijack host actin and polymerise comet tails that render bacteria motile to disseminate to neighbouring cells and spread in the tissue (Bernardini et al., 1989; Egile et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bernardini et al., 1989 and Egile et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "fad10ecb-bb53-4b08-8c6d-6b227e6958b2",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C8",
+      "claim": "Septins are highly conserved GTP-binding proteins that form heteromeric complexes (hexamers, octamers) that assemble into non-polar filaments, bundles, and rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Septins are highly conserved GTP-binding proteins that form heteromeric complexes (hexamers, octamers) that assemble into non-polar filaments, bundles, and rings (Martins et al., 2023; Soroor et al., 2021; Szuba et al., 2021; Woods and Gladfelter, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to recent literature on septin structure and assembly.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "30e0c6bd-f814-4093-908b-659716edadad",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C9",
+      "claim": "Septins are involved in many physiological cellular processes (e.g. cytokinesis, cilia formation) and play key roles during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Septins are involved in many physiological cellular processes (e.g. cytokinesis, cilia formation) and play key roles during infection (Mostowy and Cossart, 2012; Robertin and Mostowy, 2020; Spiliotis and Nakos, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple reviews on septin function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "32fc0475-3fa8-47cc-a202-bba457151876",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C10",
+      "claim": "Septins form collar-like structures at the plasma membrane during bacterial invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Septins form collar-like structures at the plasma membrane during bacterial invasion (Boddy et al., 2018; Mostowy et al., 2009; Robertin et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies showing septin structures during bacterial invasion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "7e752587-6ea4-4039-ad18-327caa00dfc2",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C11",
+      "claim": "Septins form ring-like structures surrounding membrane protrusions in cell-to-cell bacterial spread.",
+      "claim_type": "EXPLICIT",
+      "source": "and ring-like structures surrounding membrane protrusions in cell-to-cell bacterial spread (Mostowy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mostowy et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "b66602ff-a192-4109-b9f9-85a44c4dd455",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C12",
+      "claim": "In the cytosol, septins are recruited to actin-polymerising bacteria, including S. flexneri and Mycobacterium marinum, as cage-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cytosol, septins are recruited to actin-polymerising bacteria, including S. flexneri and Mycobacterium marinum, as cage-like structures (Mostowy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mostowy et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "e22cf310-6d9c-4e86-9166-069a634df188",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C13",
+      "claim": "In the case of S. flexneri, septins are recruited to \u03bcm-scale curvature at bacterial poles and the division site, which are enriched in the negatively charged phospholipid cardiolipin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of S. flexneri, septins are recruited to \u03bcm-scale curvature at bacterial poles and the division site, which are enriched in the negatively charged phospholipid cardiolipin (Krokowski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Krokowski et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "854ed231-965f-44e3-ba22-6fdbef4035f6",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C14",
+      "claim": "IcsA promotes the recruitment of septins to S. flexneri.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that IcsA promotes the recruitment of septins to S. flexneri, and that lipopolysaccharide inhibits S. flexneri-septin cage entrapment (Lobato-M\u00e1rquez et al., 2021; Mostowy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lobato-M\u00e1rquez et al., 2021 and Mostowy et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "348e5888-215b-4490-9445-9287c9c7427c",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C15",
+      "claim": "Lipopolysaccharide inhibits S. flexneri-septin cage entrapment.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that IcsA promotes the recruitment of septins to S. flexneri, and that lipopolysaccharide inhibits S. flexneri-septin cage entrapment (Lobato-M\u00e1rquez et al., 2021; Mostowy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lobato-M\u00e1rquez et al., 2021 and Mostowy et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "da24d36a-f605-46bb-8ffa-092a033bbc4e",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C16",
+      "claim": "Septin cages prevent bacterial actin tail motility and therefore are considered as an antibacterial mechanism of host defence.",
+      "claim_type": "EXPLICIT",
+      "source": "Septin cages prevent bacterial actin tail motility and therefore are considered as an antibacterial mechanism of host defence (Krokowski et al., 2018; Mostowy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Krokowski et al., 2018 and Mostowy et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "02eb6e5e-6a54-49f4-9fcc-db27eec680e9",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C17",
+      "claim": "A mean of 11.5% of infected cells was observed at 3 hr 40 min post infection (hpi) at multiplicity of infection (MOI) 100:1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a mean of 11.5% of infected cells measured by fluorescence at 3 hr 40 min post infection (hpi) at multiplicity of infection (MOI) 100:1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "e4fa34c2-c315-4ad5-b802-1b0d8a7c0a6a",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C18",
+      "claim": "Infected cells presented different burdens of bacteria following an exponential decay distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "These infected cells presented different burdens of bacteria following an exponential decay distribution (Figure 1D), reflective of the formation of infection foci (Ortega et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and a citation to Ortega et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "0cb463e7-0c92-4d64-8bb2-4b243f77ff93",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C19",
+      "claim": "The median distance of bacteria to the centroid of cells was 8.74 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we measured the distance of bacteria to the centroid of cells (Figure 1E) and observed a median distance of 8.74 \u00b5m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "9bea9fee-59d3-4f15-91fc-204721970bbc",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C20",
+      "claim": "The median distance to the centroid of the cell significantly decreased with increasing bacterial burden.",
+      "claim_type": "EXPLICIT",
+      "source": "The median distance to the centroid of the cell significantly decreased with increasing bacterial burden (Figure 1E), suggesting that the microenvironment of bacteria is diverse and changes as bacteria replicate intracellularly and populate the central parts of host cytosol after uptake at the host cell periphery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "57809674-544a-4d12-aa82-c44060c4ba85",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C21",
+      "claim": "An increase of 36.9% in the cellular area of infected cells was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "To dissect the heterogeneity in host cells, we quantified an increase of 36.9% and 22.3% in the cellular and nuclear area of infected cells, respectively (Figure 1G and I), which was dependent on the infection burden (Figure 1H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "c74baff0-6bd0-456c-af51-a590a8294d9e",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C22",
+      "claim": "An increase of 22.3% in the nuclear area of infected cells was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "To dissect the heterogeneity in host cells, we quantified an increase of 36.9% and 22.3% in the cellular and nuclear area of infected cells, respectively (Figure 1G and I), which was dependent on the infection burden (Figure 1H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "2d0397b2-d606-4d56-8a00-3b70f7d1135f",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C23",
+      "claim": "The total amount of Hoechst fluorescence in the cell nucleus increased 29.4% in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the total amount of Hoechst fluorescence in the cell nucleus increased 29.4% in infected cells (Figure 1\u2014figure supplement 1B), indicating either an increase in nuclear volume or altered chromatin condensation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "6a0cccb5-d4ba-4ed5-bf37-4ef77d568795",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C24",
+      "claim": "Cells treated with latrunculin B decreased their cellular area (but not their nuclear area).",
+      "claim_type": "EXPLICIT",
+      "source": "To test if this effect was due to morphological rearrangements during infection, we treated cells with latrunculin B to inhibit actin polymerisation. While cells treated with latrunculin B decreased their cellular area (but not their nuclear area) (Figure 1\u2014figure supplement 1C and D), the drug did not abrogate the difference in size between infected and uninfected cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "54e2c434-3369-4d42-a947-5669b37687ee",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C25",
+      "claim": "Latrunculin B did not abrogate the difference in size between infected and uninfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While cells treated with latrunculin B decreased their cellular area (but not their nuclear area) (Figure 1\u2014figure supplement 1C and D), the drug did not abrogate the difference in size between infected and uninfected cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "de162ad4-7fa4-4e0b-9412-0ec49ab9b378",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C26",
+      "claim": "Approximately one third of uninfected cells (34.45%) were found in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately one third of uninfected cells (34.45%) were found in S-phase (Figure 2B and C), in agreement with S-phase lasting around one third of the cell cycle (~8 hr out of ~22 hr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "7fface5d-efac-451f-9059-08310979fb02",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C27",
+      "claim": "Infected cells presented a similar proportion of cells in S-phase (35.89%).",
+      "claim_type": "EXPLICIT",
+      "source": "Infected cells presented a similar proportion of cells in S-phase (35.89%), indicating that S. flexneri infection did not block transition of cells from G1 to S at the timepoint tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "ce2df6f9-6a00-43b9-a619-2d6616e9f387",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C28",
+      "claim": "S. flexneri infection did not block transition of cells from G1 to S at the timepoint tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected cells presented a similar proportion of cells in S-phase (35.89%), indicating that S. flexneri infection did not block transition of cells from G1 to S at the timepoint tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that infected and uninfected cells have similar proportions in S-phase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "50cdd831-10f6-410e-ac65-127a4f66b2b6",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C29",
+      "claim": "A reduction of EdU incorporation in infected cells was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We then assessed the amount of de novo DNA synthesis incorporated in cells in S-phase during infection. Surprisingly, we observed a reduction of EdU incorporation in infected cells (Figure 2D), which was dependent on the bacterial burden (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "0d9f49c6-4e49-4bb6-8451-de60a5698f6d",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C30",
+      "claim": "The reduction of EdU incorporation in infected cells was dependent on the bacterial burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed a reduction of EdU incorporation in infected cells (Figure 2D), which was dependent on the bacterial burden (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "2405c1f7-7549-4ec6-99c4-c85f7b1159b5",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C31",
+      "claim": "S. flexneri infection slows down DNA synthesis of epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that S. flexneri infection slows down DNA synthesis of epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed reduction in EdU incorporation in infected cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "2a24fe97-33a3-42b6-aa1b-4230440e5f52",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C32",
+      "claim": "A reduction of protein translation in infected cells compared to non-infected cells was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "During infection, we observed a reduction of protein translation in infected cells compared to non-infected cells (Figure 2F and G), which was also dependent on the bacterial burden (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "b80fd4da-fddb-4860-93fd-bdbb1aa896cf",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C33",
+      "claim": "The reduction of protein translation in infected cells was dependent on the bacterial burden.",
+      "claim_type": "EXPLICIT",
+      "source": "During infection, we observed a reduction of protein translation in infected cells compared to non-infected cells (Figure 2F and G), which was also dependent on the bacterial burden (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "20b104b7-8237-4462-b8c2-50dbbe684b87",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C34",
+      "claim": "S. flexneri induces an arrest in the host cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the cell morphological rearrangements, together with the reduction of de novo DNA and protein synthesis in infected epithelial cells, suggest that S. flexneri induces an arrest in the host cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on multiple observations including morphological changes and reduced DNA and protein synthesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "cd3d933c-b167-46eb-80e8-6555c4382411",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C35",
+      "claim": "The first classification model achieved 96% correct identification of SEPT7 structures and 83% correct identification of clumps.",
+      "claim_type": "EXPLICIT",
+      "source": "Performance of the model was further assessed with a confusion matrix where a separate annotated test dataset was challenged and correct number of predictions scored, showing that 96% of SEPT7 structures and 83% of clumps were correctly identified (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "26d0f2ad-5deb-4d8c-b95e-71b41fd8b067",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C36",
+      "claim": "The second classification model achieved 80% correct prediction of manually annotated SEPT7 positive structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Correct prediction of manually annotated SEPT7 positive structures was 80% as shown in the confusion matrix (Figure 4M), with performance metrics precision, recall, and F1 score also around 0.8 (Figure 4N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "e0f099df-3f2e-491e-aa20-904f67f30620",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C37",
+      "claim": "The most frequent SEPT7 assembly is in the form of rings transversally surrounding the bacterial surface (66.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "We differentiated five frequent subcategories from a total of 855 cases. The first corresponds to most cases (66.7%), where SEPT7 forms rings that entrap bacteria transversally (Figure 5A and B, a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A, B, and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "d0c7bfc0-e702-4525-9b9b-993ac23f6695",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C38",
+      "claim": "SEPT7 surrounds bacteria in a tight association in 18.2% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed two categories where SEPT7 surrounds bacteria more homogeneously either in a tight (18.2%) or loose association (6.1%) (Figure 5A and B, b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A, B, and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "370afa91-4046-47a0-bf23-97a8ad57e72f",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C39",
+      "claim": "SEPT7 surrounds bacteria in a loose association in 6.1% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed two categories where SEPT7 surrounds bacteria more homogeneously either in a tight (18.2%) or loose association (6.1%) (Figure 5A and B, b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A, B, and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "542c1ec7-d6f3-4b84-b203-3e9b02466dae",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C40",
+      "claim": "Partial SEPT7 recruitment with only one bacterial pole being targeted occurs in 5.0% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed partial SEPT7 recruitment, with only one (5.0%) or two (4.0%) bacterial poles being targeted (Figure 5A and B, d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A, B, and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "4145b4a2-4891-4a81-84b2-6bb475750ce4",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C41",
+      "claim": "Partial SEPT7 recruitment with two bacterial poles being targeted occurs in 4.0% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed partial SEPT7 recruitment, with only one (5.0%) or two (4.0%) bacterial poles being targeted (Figure 5A and B, d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A, B, and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "6edd2bc1-bbb6-4039-b444-6f43eebc0620",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C42",
+      "claim": "Bacteria associated with SEPT7 showed heterogeneous levels of DNA synthesis similar to SEPT7-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "During infection, bacteria associated with SEPT7 showed heterogeneous levels of DNA synthesis and protein translation similar to SEPT7-negative bacteria (Figure 6A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "6b52623f-9416-451e-a8e2-61f1bee93e6f",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C43",
+      "claim": "Bacteria associated with SEPT7 showed heterogeneous levels of protein translation similar to SEPT7-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "During infection, bacteria associated with SEPT7 showed heterogeneous levels of DNA synthesis and protein translation similar to SEPT7-negative bacteria (Figure 6A\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "f46124b0-6c45-4f3f-8836-e3ad9d3c9ef6",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C44",
+      "claim": "T3SS activation was higher in bacteria found in cells with a low bacterial burden (less than 10 intracellular bacteria).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed heterogeneity in TSAR signal (Figure 7A and B). T3SS activation was higher in bacteria found in cells with a low bacterial burden (less than 10 intracellular bacteria) (Figure 7A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "b7b75493-aff8-4c6d-98a6-bf9e6fc5cbff",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C45",
+      "claim": "The highest level of T3SS activation occurs in bacterial pioneers that colonise neighbouring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the highest level of activation occurs in bacterial pioneers that colonise neighbouring cells, in agreement with previous reports (Campbell-Valois et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that T3SS activation is higher in cells with low bacterial burden, supported by a citation to Campbell-Valois et al., 2014.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "1b419276-c94b-478f-b48e-10321b3ac76e",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C46",
+      "claim": "A significant increase in TSAR-positive bacteria in SEPT7-associated S. flexneri compared to SEPT7-negative bacteria was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a significant increase in TSAR-positive bacteria in SEPT7-associated S. flexneri compared to SEPT7-negative bacteria (Figure 7G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "3998f463-871b-4993-8b5e-a48ba4125968",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C47",
+      "claim": "S. flexneri has been shown to induce genotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the ability of bacteria to manipulate the host cell cycle, S. flexneri has been shown to induce genotoxic stress (Bergounioux et al., 2012) and block the G2/M phase transition (Iwai et al., 2007; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bergounioux et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "d9bafb0b-3b43-4185-b2b0-fdd239294c53",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C48",
+      "claim": "S. flexneri has been shown to block the G2/M phase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the ability of bacteria to manipulate the host cell cycle, S. flexneri has been shown to induce genotoxic stress (Bergounioux et al., 2012) and block the G2/M phase transition (Iwai et al., 2007; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iwai et al., 2007 and Wang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "a61e20dd-f050-4b48-9888-32351c64d0b6",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C49",
+      "claim": "The OspC family of S. flexneri effectors ADP-riboxanates the host translation initiation factor 3, leading to translational arrest and the formation of stress granules.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent report has shown that the OspC family of S. flexneri effectors ADP-riboxanates the host translation initiation factor 3, leading to translational arrest and the formation of stress granules (Zhang et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhang et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "8a63a39a-cee4-4d22-b148-bd72f18c23ec",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C50",
+      "claim": "Cell cycle arrest would prevent maturation and shedding of infected epithelial cells, thereby promoting efficient gut colonisation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the natural S. flexneri niche of the human gut, such an arrest would prevent maturation and shedding of infected epithelial cells, thereby promoting efficient gut colonisation (Iwai et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the biological significance of cell cycle arrest, supported by a citation to Iwai et al., 2007.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "3ecfa5ff-205c-4b14-bd7f-b27949d63f70",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C51",
+      "claim": "Septin cage assembly around S. flexneri can start with the discrete recruitment of septins to one or two bacterial poles.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous work has shown that septin cage assembly around S. flexneri can start with the discrete recruitment of septins to one or two bacterial poles (Krokowski et al., 2018), it is not yet known if the different septin assemblies we describe here correspond to different stages or fates of the same structure or whether it marks separate biological events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Krokowski et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "6a4fd6ad-427b-4ac4-9054-cba59f7152b2",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C52",
+      "claim": "T3SS activity has been shown to be higher in motile bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "T3SS activity has been shown to be higher in motile bacteria (Campbell-Valois et al., 2014), which reinforces the antimicrobial role of septins in counteracting actin tail motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Campbell-Valois et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "863678c9-9837-4826-b221-652f18e59fd6",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C53",
+      "claim": "High-content microscopy enables the automated acquisition of thousands of microscopy images and therefore is useful to capture the heterogeneity of individual host and bacterial cells during the infection process for quantitative analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "High-content microscopy enables the automated acquisition of thousands of microscopy images and therefore is useful to capture the heterogeneity of individual host and bacterial cells during the infection process for quantitative analysis (Aylan et al., 2023; Brodin and Christophe, 2011; Deboosere et al., 2021; Dram\u00e9 et al., 2023; Fisch et al., 2019; Lensen et al., 2023; Pylkk\u00f6 et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to literature on high-content microscopy applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "480e376d-7c71-4bcf-a1a4-77f1df005ea1",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C54",
+      "claim": "SEPT7 is a core component of septin hexamers and octamers and is historically used to identify septin structures.",
+      "claim_type": "EXPLICIT",
+      "source": "SEPT7 is a core component of septin hexamers and octamers and is historically used to identify septin structures (Mostowy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SEPT7, supported by a citation to Mostowy et al., 2010.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "7459d7e5-c491-4caa-9059-d4703f45def9",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C55",
+      "claim": "Convolutional neural networks are effective in solving classification tasks in computer vision.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis pipeline includes two deep learning models based on convolutional neural networks (CNNs), which are effective in solving classification tasks in computer vision (Krizhevsky et al., 2012; LeCun et al., 2015; Nielsen, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CNNs, supported by citations to foundational literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "c8e278e2-28b8-4fca-83fd-93ce6ed9b197",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C56",
+      "claim": "Septins can surround individual and also multiple bacteria simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "As septins can surround individual and also multiple bacteria simultaneously (Figure 4\u2014figure supplement 1A), we focused on individual bacteria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "258532d7-8c6a-4aa9-917f-ac179af54a56",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C57",
+      "claim": "The infection burden is dependent on the formation of infection foci.",
+      "claim_type": "EXPLICIT",
+      "source": "These infected cells presented different burdens of bacteria following an exponential decay distribution (Figure 1D), reflective of the formation of infection foci (Ortega et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed distribution pattern, supported by a citation to Ortega et al., 2019.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "ece3bd04-994f-48aa-82ad-1e5731691d7a",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C58",
+      "claim": "The microenvironment of bacteria is diverse and changes as bacteria replicate intracellularly and populate the central parts of host cytosol after uptake at the host cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "The median distance to the centroid of the cell significantly decreased with increasing bacterial burden (Figure 1E), suggesting that the microenvironment of bacteria is diverse and changes as bacteria replicate intracellularly and populate the central parts of host cytosol after uptake at the host cell periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that bacterial distance to cell centroid decreases with increasing burden.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "23e3a392-f768-41b0-b7b3-25c0a1278b44",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C59",
+      "claim": "The increase in Hoechst fluorescence in infected cell nuclei indicates either an increase in nuclear volume or altered chromatin condensation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the total amount of Hoechst fluorescence in the cell nucleus increased 29.4% in infected cells (Figure 1\u2014figure supplement 1B), indicating either an increase in nuclear volume or altered chromatin condensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed increase in Hoechst fluorescence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "532e9022-e9ec-4363-a996-0baf1c78c4f2",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C60",
+      "claim": "S-phase lasts around one third of the cell cycle (~8 hr out of ~22 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately one third of uninfected cells (34.45%) were found in S-phase (Figure 2B and C), in agreement with S-phase lasting around one third of the cell cycle (~8 hr out of ~22 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the cell cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "080ef76f-7c48-4eab-850c-cce701493cba",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C61",
+      "claim": "Aphidicolin is an S-phase blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, this subpopulation of cells was fully abrogated in the presence of the S-phase blocker aphidicolin (Pedrali-Noy et al., 1980; Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about aphidicolin, supported by a citation to Pedrali-Noy et al., 1980.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "17b7a955-68f1-40fe-a035-b0a5b112693e",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C62",
+      "claim": "Cycloheximide is an inhibitor of translational elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess protein translation, we used a 1 hr pulse of the clickable methionine analogue AHA, which specifically labels de novo synthesized proteins as AHA incorporation is reduced after treatment with the inhibitor of translational elongation cycloheximide (Ennis and Lubin, 1964; Figure 2\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cycloheximide, supported by a citation to Ennis and Lubin, 1964.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "f467e353-c614-498c-8be0-218323209f8f",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C63",
+      "claim": "Nalidixic acid is an inhibitor of the bacterial DNA gyrase.",
+      "claim_type": "EXPLICIT",
+      "source": "Only active bacteria incorporated these analogues, as the antibiotic nalidixic acid (inhibitor of the bacterial DNA gyrase; Sugino et al., 1977) and rifampicin (inhibitor of the bacterial RNA polymerase; Ezekiel and Hutchins, 1968) significantly reduced their incorporation, respectively (Figure 6\u2014figure supplement 1A\u2013D, Figure 6\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nalidixic acid, supported by a citation to Sugino et al., 1977.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "4f7c880b-1d29-478b-b5f4-7b54f64a7cb8",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C64",
+      "claim": "Rifampicin is an inhibitor of the bacterial RNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Only active bacteria incorporated these analogues, as the antibiotic nalidixic acid (inhibitor of the bacterial DNA gyrase; Sugino et al., 1977) and rifampicin (inhibitor of the bacterial RNA polymerase; Ezekiel and Hutchins, 1968) significantly reduced their incorporation, respectively (Figure 6\u2014figure supplement 1A\u2013D, Figure 6\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about rifampicin, supported by a citation to Ezekiel and Hutchins, 1968.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "3a963136-cfa2-459d-acfd-e4070763b8fb",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C65",
+      "claim": "The TSAR reporter comprises a short-lived fast-maturing superfolder GFP (GFPmsf2) that is expressed in conditions where the T3SS is active.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand effector secretion at the individual bacterial level, we used S. flexneri expressing the transcription-based secretion activity reporter (TSAR) (Campbell-Valois et al., 2014). This reporter comprises a short-lived fast-maturing superfolder GFP (GFPmsf2) that is expressed in conditions where the T3SS is active, such as in broth upon addition of congo red (Figure 7\u2014figure supplement 1A and B; Parsot et al., 1995) and during infection (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the TSAR reporter system, supported by citations to Campbell-Valois et al., 2014 and Parsot et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "29673f2d-1882-4eb7-be4d-007eeddb206c",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C66",
+      "claim": "Congo red induces the expression of the T3SS in S. flexneri.",
+      "claim_type": "EXPLICIT",
+      "source": "This reporter comprises a short-lived fast-maturing superfolder GFP (GFPmsf2) that is expressed in conditions where the T3SS is active, such as in broth upon addition of congo red (Figure 7\u2014figure supplement 1A and B; Parsot et al., 1995) and during infection (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about congo red's effect on T3SS, supported by a citation to Parsot et al., 1995 and experimental data in Figure 7\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "ff96f336-25df-4965-925b-77dd599d7fa7",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "claim_id": "C67",
+      "claim": "The data underscore the antimicrobial role of septins in associating with actively secreting bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These data underscore the antimicrobial role of septins in associating with actively secreting bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that SEPT7-associated bacteria have increased T3SS activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "65948047-6abd-467c-b063-82c9c82d62cd",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "S. flexneri infection of HeLa cells at 3 hr 40 min post-infection shows heterogeneity in bacterial burden following an exponential decay distribution, with bacteria progressively moving toward the cell center as burden increases. Infected cells exhibit significant increases in cellular area (36.9%) and nuclear area (22.3%) that are dependent on bacterial burden, along with increased nuclear Hoechst fluorescence (29.4%), suggesting morphological rearrangements during infection that are not solely due to actin polymerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C25, C57-C59 provide converging evidence from high-content microscopy showing infection heterogeneity, spatial distribution changes, and morphological alterations. The data include appropriate statistical tests (Kruskal-Wallis with Dunn's corrections), multiple replicates (n=7 experiments), and control experiments with latrunculin B to test the role of actin polymerization. The observations are internally consistent and well-documented in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "70887e99-f4b7-48c5-8e86-8a00b158f525",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "S. flexneri infection does not block G1 to S phase transition at the tested timepoint (similar proportions of infected and uninfected cells in S-phase: 35.89% vs 34.45%), but significantly reduces DNA synthesis in infected cells in S-phase in a bacterial burden-dependent manner, as measured by EdU incorporation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 are well-supported by Click-iT EdU incorporation data with appropriate controls (aphidicolin treatment, C61) and statistical analysis. The distinction between cell cycle phase distribution and DNA synthesis rate within S-phase is clearly demonstrated. However, the timepoint limitation (3 hr 40 min) is acknowledged, and effects on other cell cycle phases are not fully characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "40f9f5d4-3938-42d3-abb0-7f7bf1d134cb",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "S. flexneri infection causes a bacterial burden-dependent reduction in protein translation in infected cells, measured by AHA incorporation. Combined with reduced DNA synthesis and morphological changes, this suggests S. flexneri induces cell cycle arrest in host epithelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by Click-iT AHA data with appropriate controls (cycloheximide treatment, C62). The inference of cell cycle arrest (C34) is reasonable given the combined evidence of reduced DNA synthesis, reduced protein translation, and morphological changes. However, this remains an inference rather than direct demonstration of cell cycle arrest, and additional markers (e.g., cyclin levels, CDK activity) would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "4dc91e67-0827-4448-ba09-955d2077db48",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two sequential CNN-based deep learning models were developed and validated for automated identification of S. flexneri-SEPT7 interactions. The first model distinguishes single bacteria from clumps (96% accuracy for singles, 83% for clumps), and the second identifies SEPT7-positive bacteria (80% accuracy, precision/recall/F1 ~0.8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are well-supported by detailed performance metrics including confusion matrices, precision, recall, and F1 scores shown in Figure 4. The models were trained on substantial datasets (>1200 images for the second model) with appropriate train/validation/test splits. Performance metrics are reasonable for this challenging classification task. The approach is technically sound and represents a significant methodological advance (C53-C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "3d1b2b71-e785-401b-97e2-86ae8cae541b",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SEPT7 assemblies around S. flexneri display morphological heterogeneity with five distinct categories: transversal rings (66.7%), tight homogeneous association (18.2%), loose association (6.1%), single pole recruitment (5.0%), and two-pole recruitment (4.0%). These observations are based on analysis of 855 SEPT7-bacteria associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 provide a comprehensive quantitative characterization of SEPT7 assembly morphologies based on a large dataset (n=855). The categorization is clearly illustrated in Figure 5 with representative images and intensity profiles. However, the relationship between these morphologies (whether they represent different stages, fates, or separate biological events) remains uncertain, as acknowledged by the authors (C51).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "fb2df67d-6072-4dd9-beb9-e486f67149a7",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SEPT7-associated S. flexneri bacteria show heterogeneous levels of DNA synthesis and protein translation that are similar to SEPT7-negative bacteria, as measured by EdU and AHA incorporation respectively. Controls with nalidixic acid and rifampicin confirm these measurements reflect active bacterial metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by quantitative data in Figure 6 showing no significant differences in EdU or AHA incorporation between SEPT7-positive and SEPT7-negative bacteria. Appropriate antibiotic controls (C63-C64) validate the specificity of the measurements. This finding challenges the notion that septin caging uniformly arrests bacterial metabolism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "dbabb62c-5daf-41cb-ae5c-05279065b030",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "T3SS activity (measured by TSAR reporter) is higher in bacteria from cells with low bacterial burden (<10 bacteria) and is significantly increased in SEPT7-associated bacteria compared to SEPT7-negative bacteria. This suggests septins preferentially associate with actively secreting bacteria, supporting their antimicrobial role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are well-supported by TSAR reporter data with appropriate controls (congo red induction, C66). The finding that SEPT7-associated bacteria have higher T3SS activity (C46) is statistically significant and consistent with prior work showing T3SS activity is higher in motile bacteria (C52). The TSAR reporter system is properly validated (C65). The inference about antimicrobial role (C67) is reasonable but remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "e83fc664-de98-4c71-a3ca-46fa06db2138",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background information on S. flexneri: it is a Gram-negative pathogen causing bacillary dysentery (killing >150,000/year), uses a T3SS for host cell invasion and immune evasion, escapes to the cytosol, and employs IcsA-mediated actin polymerization for intracellular motility and cell-to-cell spread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 represent well-established background knowledge about S. flexneri pathogenesis, supported by appropriate citations to the literature. These are not novel findings but provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background information on septins: they are conserved GTP-binding proteins forming heteromeric complexes and diverse structures (filaments, rings, cages) involved in cellular processes and infection. During S. flexneri infection, septins form cages around bacteria at sites of membrane curvature enriched in cardiolipin, with IcsA promoting and LPS inhibiting recruitment. Septin cages restrict bacterial actin tail motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 represent established knowledge about septin biology and their role in S. flexneri infection, supported by appropriate citations including recent reviews and primary literature. These provide essential background but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "b6486079-1ca1-441f-9381-6fab1749455a",
+      "content_id": "d768422b-bdd2-4b59-9962-10e638a93003",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion of prior work showing S. flexneri can induce genotoxic stress, block G2/M transition, and cause translational arrest through OspC effectors. The authors speculate that cell cycle arrest may prevent epithelial cell shedding to promote gut colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 accurately cite prior work on S. flexneri manipulation of host cell cycle and translation. Claim C50 is explicitly speculative about the biological significance in the gut context. These claims appropriately contextualize the current findings within existing literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors characterize infection heterogeneity in HeLa cells infected with S. flexneri, showing that 11.5% of cells were infected at 3 hr 40 min post-infection, with bacterial burden following an exponential decay distribution and bacterial distance to cell centroid decreasing with increasing burden.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these findings as descriptive characterization of infection heterogeneity. The editor notes the authors 'acquired important findings regarding host and bacterial responses,' and Reviewer 2 states the manuscript 'nicely identifies' infection characteristics, indicating acceptance of these baseline observations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "b09acfc7-fd68-40b6-801f-f992ab3b7a42",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors report that S. flexneri infection causes increases in cellular area (36.9%) and nuclear area (22.3%) that are dependent on bacterial burden, with increased Hoechst fluorescence (29.4%) in infected cell nuclei, and that latrunculin B treatment did not abrogate size differences between infected and uninfected cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these morphological observations without critique. Reviewer 2 notes the 'cell biology-based approaches' as a strength, and the editor acknowledges 'important findings regarding host and bacterial responses,' indicating these morphological changes are accepted as valid observations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that S. flexneri infection does not block G1 to S phase transition (similar proportions of infected and uninfected cells in S-phase: 35.89% vs 34.45%), but reduces EdU incorporation in infected cells in a bacterial burden-dependent manner, indicating slowed DNA synthesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support these findings. Reviewer 2 states the manuscript 'nicely identifies that infection with Shigella results in a block to DNA replication' and notes these observations 'nicely dovetail with the prior findings of other groups.' The editor confirms the authors 'acquired important findings regarding host and bacterial responses.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "4a19918d-a81a-47c3-bab2-4279a16a46a7",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors show that S. flexneri infection reduces protein translation in infected cells in a bacterial burden-dependent manner, and together with morphological changes and reduced DNA synthesis, this suggests S. flexneri induces host cell cycle arrest.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers accept the observational data on reduced protein synthesis, Reviewer 2 identifies a key weakness: 'the studies are minimally mechanistic' and 'no follow-up studies have been conducted to determine how these host cell processes are disabled.' The reviewer notes recent work by Zhang et al. on OspC effectors, suggesting the mechanistic basis for the cell cycle arrest conclusion requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "61330945-f943-4324-a961-dbb2c4ad255a",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors developed an automated image analysis pipeline using convolutional neural networks that achieved 96% correct identification of SEPT7 structures and 80% correct prediction of SEPT7-positive bacteria, enabling high-throughput quantification of septin cage formation during S. flexneri infection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly support the methodological development. Reviewer 1 states 'the authors developed a solid pipeline that has been thoroughly validated' and it will be 'very useful in the future.' Reviewer 2 notes 'the main strength of this manuscript is its technical aspects' and the platform 'should be of interest to those who study a variety of intracellular microbial pathogens.' The editor calls the methodology 'compelling.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "d948e674-38e2-4297-b92b-8b9945e0513b",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Using the automated pipeline, the authors quantified five subcategories of SEPT7 assemblies around S. flexneri: transversal rings (66.7%), tight homogeneous association (18.2%), loose association (6.1%), and partial recruitment to one pole (5.0%) or two poles (4.0%).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these quantitative findings as valid outputs of the validated pipeline. Reviewer 1 notes the automated analysis 'allowed the unbiased quantification of the different types of septin cages,' and Reviewer 2 acknowledges the pipeline 'enabled the investigators to enhance the field's general understanding regarding the role of septin cages.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "e4ec535a-11d1-439a-b01b-f4e8c3c2ea39",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors show that bacteria associated with SEPT7 display heterogeneous levels of DNA synthesis and protein translation similar to SEPT7-negative bacteria.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings without critique. Reviewer 1 notes the automated analysis 'allowed...the correlation between caging and bacterial metabolic activity,' indicating acceptance of these observations about bacterial metabolic heterogeneity in relation to septin caging.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "7f2d53c8-b520-4910-8282-3d8b8cdfc4a4",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors demonstrate that T3SS activation is higher in bacteria found in cells with low bacterial burden and significantly increased in SEPT7-associated S. flexneri compared to SEPT7-negative bacteria, underscoring the antimicrobial role of septins in associating with actively secreting bacteria.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings as important contributions. Reviewer 2 notes the pipeline 'enabled the investigators to enhance the field's general understanding regarding the role of septin cages in responding to invading Shigella,' and Reviewer 1 acknowledges the 'correlation between caging and bacterial metabolic activity' as a valid outcome of the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "7ec29c82-b754-4025-9a22-d70e27e9a0f7",
+      "content_id": "af5b8b07-8f1e-4095-8a9a-e8a54a9af478",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors observe that septins can surround individual bacteria and also multiple bacteria simultaneously.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This observational claim is accepted without reviewer critique as part of the descriptive characterization of septin cage heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "02eb6e5e-6a54-49f4-9fcc-db27eec680e9",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "e4fa34c2-c315-4ad5-b802-1b0d8a7c0a6a",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "0cb463e7-0c92-4d64-8bb2-4b243f77ff93",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "9bea9fee-59d3-4f15-91fc-204721970bbc",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "57809674-544a-4d12-aa82-c44060c4ba85",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "c74baff0-6bd0-456c-af51-a590a8294d9e",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "2d0397b2-d606-4d56-8a00-3b70f7d1135f",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "6a0cccb5-d4ba-4ed5-bf37-4ef77d568795",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "54e2c434-3369-4d42-a947-5669b37687ee",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "258532d7-8c6a-4aa9-917f-ac179af54a56",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "ece3bd04-994f-48aa-82ad-1e5731691d7a",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "23e3a392-f768-41b0-b7b3-25c0a1278b44",
+      "result_id": "65948047-6abd-467c-b063-82c9c82d62cd"
+    },
+    {
+      "claim_id": "de162ad4-7fa4-4e0b-9412-0ec49ab9b378",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "7fface5d-efac-451f-9059-08310979fb02",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "ce2df6f9-6a00-43b9-a619-2d6616e9f387",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "50cdd831-10f6-410e-ac65-127a4f66b2b6",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "0d9f49c6-4e49-4bb6-8451-de60a5698f6d",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "2405c1f7-7549-4ec6-99c4-c85f7b1159b5",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "532e9022-e9ec-4363-a996-0baf1c78c4f2",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "080ef76f-7c48-4eab-850c-cce701493cba",
+      "result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525"
+    },
+    {
+      "claim_id": "2a24fe97-33a3-42b6-aa1b-4230440e5f52",
+      "result_id": "40f9f5d4-3938-42d3-abb0-7f7bf1d134cb"
+    },
+    {
+      "claim_id": "b80fd4da-fddb-4860-93fd-bdbb1aa896cf",
+      "result_id": "40f9f5d4-3938-42d3-abb0-7f7bf1d134cb"
+    },
+    {
+      "claim_id": "20b104b7-8237-4462-b8c2-50dbbe684b87",
+      "result_id": "40f9f5d4-3938-42d3-abb0-7f7bf1d134cb"
+    },
+    {
+      "claim_id": "17b7a955-68f1-40fe-a035-b0a5b112693e",
+      "result_id": "40f9f5d4-3938-42d3-abb0-7f7bf1d134cb"
+    },
+    {
+      "claim_id": "cd3d933c-b167-46eb-80e8-6555c4382411",
+      "result_id": "4dc91e67-0827-4448-ba09-955d2077db48"
+    },
+    {
+      "claim_id": "26d0f2ad-5deb-4d8c-b95e-71b41fd8b067",
+      "result_id": "4dc91e67-0827-4448-ba09-955d2077db48"
+    },
+    {
+      "claim_id": "863678c9-9837-4826-b221-652f18e59fd6",
+      "result_id": "4dc91e67-0827-4448-ba09-955d2077db48"
+    },
+    {
+      "claim_id": "480e376d-7c71-4bcf-a1a4-77f1df005ea1",
+      "result_id": "4dc91e67-0827-4448-ba09-955d2077db48"
+    },
+    {
+      "claim_id": "7459d7e5-c491-4caa-9059-d4703f45def9",
+      "result_id": "4dc91e67-0827-4448-ba09-955d2077db48"
+    },
+    {
+      "claim_id": "c8e278e2-28b8-4fca-83fd-93ce6ed9b197",
+      "result_id": "4dc91e67-0827-4448-ba09-955d2077db48"
+    },
+    {
+      "claim_id": "e0f099df-3f2e-491e-aa20-904f67f30620",
+      "result_id": "3d1b2b71-e785-401b-97e2-86ae8cae541b"
+    },
+    {
+      "claim_id": "d0c7bfc0-e702-4525-9b9b-993ac23f6695",
+      "result_id": "3d1b2b71-e785-401b-97e2-86ae8cae541b"
+    },
+    {
+      "claim_id": "370afa91-4046-47a0-bf23-97a8ad57e72f",
+      "result_id": "3d1b2b71-e785-401b-97e2-86ae8cae541b"
+    },
+    {
+      "claim_id": "542c1ec7-d6f3-4b84-b203-3e9b02466dae",
+      "result_id": "3d1b2b71-e785-401b-97e2-86ae8cae541b"
+    },
+    {
+      "claim_id": "4145b4a2-4891-4a81-84b2-6bb475750ce4",
+      "result_id": "3d1b2b71-e785-401b-97e2-86ae8cae541b"
+    },
+    {
+      "claim_id": "3ecfa5ff-205c-4b14-bd7f-b27949d63f70",
+      "result_id": "3d1b2b71-e785-401b-97e2-86ae8cae541b"
+    },
+    {
+      "claim_id": "6edd2bc1-bbb6-4039-b444-6f43eebc0620",
+      "result_id": "fb2df67d-6072-4dd9-beb9-e486f67149a7"
+    },
+    {
+      "claim_id": "6b52623f-9416-451e-a8e2-61f1bee93e6f",
+      "result_id": "fb2df67d-6072-4dd9-beb9-e486f67149a7"
+    },
+    {
+      "claim_id": "f467e353-c614-498c-8be0-218323209f8f",
+      "result_id": "fb2df67d-6072-4dd9-beb9-e486f67149a7"
+    },
+    {
+      "claim_id": "4f7c880b-1d29-478b-b5f4-7b54f64a7cb8",
+      "result_id": "fb2df67d-6072-4dd9-beb9-e486f67149a7"
+    },
+    {
+      "claim_id": "f46124b0-6c45-4f3f-8836-e3ad9d3c9ef6",
+      "result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030"
+    },
+    {
+      "claim_id": "b7b75493-aff8-4c6d-98a6-bf9e6fc5cbff",
+      "result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030"
+    },
+    {
+      "claim_id": "1b419276-c94b-478f-b48e-10321b3ac76e",
+      "result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030"
+    },
+    {
+      "claim_id": "6a4fd6ad-427b-4ac4-9054-cba59f7152b2",
+      "result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030"
+    },
+    {
+      "claim_id": "3a963136-cfa2-459d-acfd-e4070763b8fb",
+      "result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030"
+    },
+    {
+      "claim_id": "29673f2d-1882-4eb7-be4d-007eeddb206c",
+      "result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030"
+    },
+    {
+      "claim_id": "ff96f336-25df-4965-925b-77dd599d7fa7",
+      "result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030"
+    },
+    {
+      "claim_id": "11578ec7-6a5b-4fd8-affd-ea9def1480d7",
+      "result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138"
+    },
+    {
+      "claim_id": "3c040a63-a9f8-416c-8138-999c4cb78106",
+      "result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138"
+    },
+    {
+      "claim_id": "490e8d5b-5bf1-4d3b-941a-797bd34f0ffe",
+      "result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138"
+    },
+    {
+      "claim_id": "7bda6933-e1b6-4f99-a814-c45bc329de4f",
+      "result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138"
+    },
+    {
+      "claim_id": "10e50aa5-ad10-4faa-8e1a-31e2192e19cb",
+      "result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138"
+    },
+    {
+      "claim_id": "755acde3-65ec-42df-81a7-8e95411f6aed",
+      "result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138"
+    },
+    {
+      "claim_id": "c3e15f2b-970d-4cd7-a4dc-2e9bb595bdb4",
+      "result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138"
+    },
+    {
+      "claim_id": "fad10ecb-bb53-4b08-8c6d-6b227e6958b2",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "30e0c6bd-f814-4093-908b-659716edadad",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "32fc0475-3fa8-47cc-a202-bba457151876",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "7e752587-6ea4-4039-ad18-327caa00dfc2",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "b66602ff-a192-4109-b9f9-85a44c4dd455",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "e22cf310-6d9c-4e86-9166-069a634df188",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "854ed231-965f-44e3-ba22-6fdbef4035f6",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "348e5888-215b-4490-9445-9287c9c7427c",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "da24d36a-f605-46bb-8ffa-092a033bbc4e",
+      "result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87"
+    },
+    {
+      "claim_id": "3998f463-871b-4993-8b5e-a48ba4125968",
+      "result_id": "b6486079-1ca1-441f-9381-6fab1749455a"
+    },
+    {
+      "claim_id": "d9bafb0b-3b43-4185-b2b0-fdd239294c53",
+      "result_id": "b6486079-1ca1-441f-9381-6fab1749455a"
+    },
+    {
+      "claim_id": "a61e20dd-f050-4b48-9888-32351c64d0b6",
+      "result_id": "b6486079-1ca1-441f-9381-6fab1749455a"
+    },
+    {
+      "claim_id": "8a63a39a-cee4-4d22-b148-bd72f18c23ec",
+      "result_id": "b6486079-1ca1-441f-9381-6fab1749455a"
+    },
+    {
+      "claim_id": "02eb6e5e-6a54-49f4-9fcc-db27eec680e9",
+      "result_id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e"
+    },
+    {
+      "claim_id": "e4fa34c2-c315-4ad5-b802-1b0d8a7c0a6a",
+      "result_id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e"
+    },
+    {
+      "claim_id": "0cb463e7-0c92-4d64-8bb2-4b243f77ff93",
+      "result_id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e"
+    },
+    {
+      "claim_id": "9bea9fee-59d3-4f15-91fc-204721970bbc",
+      "result_id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e"
+    },
+    {
+      "claim_id": "258532d7-8c6a-4aa9-917f-ac179af54a56",
+      "result_id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e"
+    },
+    {
+      "claim_id": "ece3bd04-994f-48aa-82ad-1e5731691d7a",
+      "result_id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e"
+    },
+    {
+      "claim_id": "57809674-544a-4d12-aa82-c44060c4ba85",
+      "result_id": "b09acfc7-fd68-40b6-801f-f992ab3b7a42"
+    },
+    {
+      "claim_id": "c74baff0-6bd0-456c-af51-a590a8294d9e",
+      "result_id": "b09acfc7-fd68-40b6-801f-f992ab3b7a42"
+    },
+    {
+      "claim_id": "2d0397b2-d606-4d56-8a00-3b70f7d1135f",
+      "result_id": "b09acfc7-fd68-40b6-801f-f992ab3b7a42"
+    },
+    {
+      "claim_id": "6a0cccb5-d4ba-4ed5-bf37-4ef77d568795",
+      "result_id": "b09acfc7-fd68-40b6-801f-f992ab3b7a42"
+    },
+    {
+      "claim_id": "54e2c434-3369-4d42-a947-5669b37687ee",
+      "result_id": "b09acfc7-fd68-40b6-801f-f992ab3b7a42"
+    },
+    {
+      "claim_id": "de162ad4-7fa4-4e0b-9412-0ec49ab9b378",
+      "result_id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3"
+    },
+    {
+      "claim_id": "7fface5d-efac-451f-9059-08310979fb02",
+      "result_id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3"
+    },
+    {
+      "claim_id": "ce2df6f9-6a00-43b9-a619-2d6616e9f387",
+      "result_id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3"
+    },
+    {
+      "claim_id": "50cdd831-10f6-410e-ac65-127a4f66b2b6",
+      "result_id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3"
+    },
+    {
+      "claim_id": "0d9f49c6-4e49-4bb6-8451-de60a5698f6d",
+      "result_id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3"
+    },
+    {
+      "claim_id": "2405c1f7-7549-4ec6-99c4-c85f7b1159b5",
+      "result_id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3"
+    },
+    {
+      "claim_id": "2a24fe97-33a3-42b6-aa1b-4230440e5f52",
+      "result_id": "4a19918d-a81a-47c3-bab2-4279a16a46a7"
+    },
+    {
+      "claim_id": "b80fd4da-fddb-4860-93fd-bdbb1aa896cf",
+      "result_id": "4a19918d-a81a-47c3-bab2-4279a16a46a7"
+    },
+    {
+      "claim_id": "20b104b7-8237-4462-b8c2-50dbbe684b87",
+      "result_id": "4a19918d-a81a-47c3-bab2-4279a16a46a7"
+    },
+    {
+      "claim_id": "cd3d933c-b167-46eb-80e8-6555c4382411",
+      "result_id": "61330945-f943-4324-a961-dbb2c4ad255a"
+    },
+    {
+      "claim_id": "26d0f2ad-5deb-4d8c-b95e-71b41fd8b067",
+      "result_id": "61330945-f943-4324-a961-dbb2c4ad255a"
+    },
+    {
+      "claim_id": "863678c9-9837-4826-b221-652f18e59fd6",
+      "result_id": "61330945-f943-4324-a961-dbb2c4ad255a"
+    },
+    {
+      "claim_id": "480e376d-7c71-4bcf-a1a4-77f1df005ea1",
+      "result_id": "61330945-f943-4324-a961-dbb2c4ad255a"
+    },
+    {
+      "claim_id": "7459d7e5-c491-4caa-9059-d4703f45def9",
+      "result_id": "61330945-f943-4324-a961-dbb2c4ad255a"
+    },
+    {
+      "claim_id": "e0f099df-3f2e-491e-aa20-904f67f30620",
+      "result_id": "d948e674-38e2-4297-b92b-8b9945e0513b"
+    },
+    {
+      "claim_id": "d0c7bfc0-e702-4525-9b9b-993ac23f6695",
+      "result_id": "d948e674-38e2-4297-b92b-8b9945e0513b"
+    },
+    {
+      "claim_id": "370afa91-4046-47a0-bf23-97a8ad57e72f",
+      "result_id": "d948e674-38e2-4297-b92b-8b9945e0513b"
+    },
+    {
+      "claim_id": "542c1ec7-d6f3-4b84-b203-3e9b02466dae",
+      "result_id": "d948e674-38e2-4297-b92b-8b9945e0513b"
+    },
+    {
+      "claim_id": "4145b4a2-4891-4a81-84b2-6bb475750ce4",
+      "result_id": "d948e674-38e2-4297-b92b-8b9945e0513b"
+    },
+    {
+      "claim_id": "6edd2bc1-bbb6-4039-b444-6f43eebc0620",
+      "result_id": "e4ec535a-11d1-439a-b01b-f4e8c3c2ea39"
+    },
+    {
+      "claim_id": "6b52623f-9416-451e-a8e2-61f1bee93e6f",
+      "result_id": "e4ec535a-11d1-439a-b01b-f4e8c3c2ea39"
+    },
+    {
+      "claim_id": "f46124b0-6c45-4f3f-8836-e3ad9d3c9ef6",
+      "result_id": "7f2d53c8-b520-4910-8282-3d8b8cdfc4a4"
+    },
+    {
+      "claim_id": "b7b75493-aff8-4c6d-98a6-bf9e6fc5cbff",
+      "result_id": "7f2d53c8-b520-4910-8282-3d8b8cdfc4a4"
+    },
+    {
+      "claim_id": "1b419276-c94b-478f-b48e-10321b3ac76e",
+      "result_id": "7f2d53c8-b520-4910-8282-3d8b8cdfc4a4"
+    },
+    {
+      "claim_id": "ff96f336-25df-4965-925b-77dd599d7fa7",
+      "result_id": "7f2d53c8-b520-4910-8282-3d8b8cdfc4a4"
+    },
+    {
+      "claim_id": "c8e278e2-28b8-4fca-83fd-93ce6ed9b197",
+      "result_id": "7ec29c82-b754-4025-9a22-d70e27e9a0f7"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "286272f6-cfd5-4ca3-9575-405e3441cec0",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4dc91e67-0827-4448-ba09-955d2077db48",
+      "peer_result_id": "61330945-f943-4324-a961-dbb2c4ad255a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the machine learning methodology (C35-C36, C53-C55). OpenEval emphasizes technical validation with performance metrics, while peer reviewers highlight the platform's utility and compelling nature as a technical contribution to the field.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "f1bf6336-91ef-4bab-8350-3c4ad649866e",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3d1b2b71-e785-401b-97e2-86ae8cae541b",
+      "peer_result_id": "d948e674-38e2-4297-b92b-8b9945e0513b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the quantitative characterization of SEPT7 morphologies (C37-C41). OpenEval notes the comprehensive dataset and acknowledges uncertainty about morphology relationships (C51), while peer reviewers accept these as valid outputs of the validated pipeline for understanding septin cage heterogeneity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "fb83093d-0576-449a-a50b-107b53bb4382",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "70887e99-f4b7-48c5-8e86-8a00b158f525",
+      "peer_result_id": "c87caab0-d22a-4f13-89fe-c84a44a4c2b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the DNA synthesis findings (C26-C31). OpenEval notes appropriate controls and statistical analysis while acknowledging timepoint limitations. Peer reviewers explicitly praise these findings as 'nicely identifying' the DNA replication block and note they 'dovetail with prior findings.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "5a7bbf74-e78f-4985-a0a8-893411b733ff",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "40f9f5d4-3938-42d3-abb0-7f7bf1d134cb",
+      "peer_result_id": "4a19918d-a81a-47c3-bab2-4279a16a46a7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on cell cycle arrest claims (C32-C34). OpenEval rates as SUPPORTED, noting the inference is reasonable given combined evidence but acknowledges it remains indirect. Peer reviewers rate as UNCERTAIN, criticizing the lack of mechanistic follow-up and noting recent work on OspC effectors suggests more investigation needed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "4be02844-d709-442c-9614-b877cfc4c1b5",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "dbabb62c-5daf-41cb-ae5c-05279065b030",
+      "peer_result_id": "7f2d53c8-b520-4910-8282-3d8b8cdfc4a4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the T3SS activity findings (C44-C46, C67). OpenEval provides detailed validation of the TSAR reporter system and notes statistical significance while acknowledging the antimicrobial role inference remains correlative. Peer reviewers accept these as important contributions to understanding septin cage roles.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "0e82a9ec-7706-4e5b-8358-806c97e204fc",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "65948047-6abd-467c-b063-82c9c82d62cd",
+      "peer_result_id": "dfa21999-c75e-4fcb-a39e-03c357fe6a7e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support infection heterogeneity findings (C17-C20, C57-C58). OpenEval emphasizes converging evidence from high-content microscopy with appropriate statistical tests and multiple replicates. Peer reviewers accept these as valid descriptive characterization, with the editor noting 'important findings' acquired.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "5fdb46af-d6bd-449e-b6c8-a05ed5675377",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "fb2df67d-6072-4dd9-beb9-e486f67149a7",
+      "peer_result_id": "e4ec535a-11d1-439a-b01b-f4e8c3c2ea39",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support findings on bacterial metabolism heterogeneity (C42-C43). OpenEval notes the data challenges uniform metabolic arrest notions and validates antibiotic controls. Peer reviewers accept the correlation between caging and bacterial metabolic activity as a valid outcome.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "fd3f5cab-8e40-478d-bad4-336f77491f02",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "65948047-6abd-467c-b063-82c9c82d62cd",
+      "peer_result_id": "b09acfc7-fd68-40b6-801f-f992ab3b7a42",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support morphological observations (C21-C25). OpenEval notes these are part of converging evidence with appropriate controls including latrunculin B experiments. Peer reviewers accept these without critique, noting 'cell biology-based approaches' as a strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "3efc0023-f1dc-4fc7-a5f7-66ee76bbb16d",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "4dc91e67-0827-4448-ba09-955d2077db48",
+      "peer_result_id": "7ec29c82-b754-4025-9a22-d70e27e9a0f7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address septin cage heterogeneity (C56). OpenEval includes this as part of broader methodological validation showing the approach as a significant advance. Peer reviewers accept this observational claim as part of descriptive characterization without specific critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "fa624695-b859-40ae-8f68-9148f4529773",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "e83fc664-de98-4c71-a3ca-46fa06db2138",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims on S. flexneri pathogenesis (C1-C7) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as reviewers typically do not explicitly evaluate well-established background knowledge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "4419dab5-c1c9-4969-9cad-e2dc2dceb974",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "dbfe26eb-ede7-408b-a9d1-0ec058cc9b87",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims on septin biology (C8-C16) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as reviewers typically do not explicitly evaluate established background literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    },
+    {
+      "id": "0a03fb67-afeb-4c15-81e6-822b608b7718",
+      "submission_id": "8f56f0ca-8dba-4e50-92b6-9171ab4ff5d5",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "b6486079-1ca1-441f-9381-6fab1749455a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates contextualization claims (C47-C50) as SUPPORTED, noting appropriate citation of prior work and explicit speculation about biological significance. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T04:00:46.998491Z"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "S. flexneri infection of HeLa cells at 3 hr 40 min post-infection shows heterogeneity in bacterial burden following an exponential decay distribution, with bacteria progressively moving toward the cell center as burden increases. Infected cells exhibit significant increases in cellular area (36.9%) and nuclear area (22.3%) that are dependent on bacterial burden, along with increased nuclear Hoechst fluorescence (29.4%), suggesting morphological rearrangements during infection that are not solely due to actin polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25, C57-C59 provide converging evidence from high-content microscopy showing infection heterogeneity, spatial distribution changes, and morphological alterations. The data include appropriate statistical tests (Kruskal-Wallis with Dunn's corrections), multiple replicates (n=7 experiments), and control experiments with latrunculin B to test the role of actin polymerization. The observations are internally consistent and well-documented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C60",
+      "C61"
+    ],
+    "result": "S. flexneri infection does not block G1 to S phase transition at the tested timepoint (similar proportions of infected and uninfected cells in S-phase: 35.89% vs 34.45%), but significantly reduces DNA synthesis in infected cells in S-phase in a bacterial burden-dependent manner, as measured by EdU incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are well-supported by Click-iT EdU incorporation data with appropriate controls (aphidicolin treatment, C61) and statistical analysis. The distinction between cell cycle phase distribution and DNA synthesis rate within S-phase is clearly demonstrated. However, the timepoint limitation (3 hr 40 min) is acknowledged, and effects on other cell cycle phases are not fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C62"
+    ],
+    "result": "S. flexneri infection causes a bacterial burden-dependent reduction in protein translation in infected cells, measured by AHA incorporation. Combined with reduced DNA synthesis and morphological changes, this suggests S. flexneri induces cell cycle arrest in host epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by Click-iT AHA data with appropriate controls (cycloheximide treatment, C62). The inference of cell cycle arrest (C34) is reasonable given the combined evidence of reduced DNA synthesis, reduced protein translation, and morphological changes. However, this remains an inference rather than direct demonstration of cell cycle arrest, and additional markers (e.g., cyclin levels, CDK activity) would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Two sequential CNN-based deep learning models were developed and validated for automated identification of S. flexneri-SEPT7 interactions. The first model distinguishes single bacteria from clumps (96% accuracy for singles, 83% for clumps), and the second identifies SEPT7-positive bacteria (80% accuracy, precision/recall/F1 ~0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are well-supported by detailed performance metrics including confusion matrices, precision, recall, and F1 scores shown in Figure 4. The models were trained on substantial datasets (>1200 images for the second model) with appropriate train/validation/test splits. Performance metrics are reasonable for this challenging classification task. The approach is technically sound and represents a significant methodological advance (C53-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C51"
+    ],
+    "result": "SEPT7 assemblies around S. flexneri display morphological heterogeneity with five distinct categories: transversal rings (66.7%), tight homogeneous association (18.2%), loose association (6.1%), single pole recruitment (5.0%), and two-pole recruitment (4.0%). These observations are based on analysis of 855 SEPT7-bacteria associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 provide a comprehensive quantitative characterization of SEPT7 assembly morphologies based on a large dataset (n=855). The categorization is clearly illustrated in Figure 5 with representative images and intensity profiles. However, the relationship between these morphologies (whether they represent different stages, fates, or separate biological events) remains uncertain, as acknowledged by the authors (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C63",
+      "C64"
+    ],
+    "result": "SEPT7-associated S. flexneri bacteria show heterogeneous levels of DNA synthesis and protein translation that are similar to SEPT7-negative bacteria, as measured by EdU and AHA incorporation respectively. Controls with nalidixic acid and rifampicin confirm these measurements reflect active bacterial metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by quantitative data in Figure 6 showing no significant differences in EdU or AHA incorporation between SEPT7-positive and SEPT7-negative bacteria. Appropriate antibiotic controls (C63-C64) validate the specificity of the measurements. This finding challenges the notion that septin caging uniformly arrests bacterial metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "T3SS activity (measured by TSAR reporter) is higher in bacteria from cells with low bacterial burden (<10 bacteria) and is significantly increased in SEPT7-associated bacteria compared to SEPT7-negative bacteria. This suggests septins preferentially associate with actively secreting bacteria, supporting their antimicrobial role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are well-supported by TSAR reporter data with appropriate controls (congo red induction, C66). The finding that SEPT7-associated bacteria have higher T3SS activity (C46) is statistically significant and consistent with prior work showing T3SS activity is higher in motile bacteria (C52). The TSAR reporter system is properly validated (C65). The inference about antimicrobial role (C67) is reasonable but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background information on S. flexneri: it is a Gram-negative pathogen causing bacillary dysentery (killing >150,000/year), uses a T3SS for host cell invasion and immune evasion, escapes to the cytosol, and employs IcsA-mediated actin polymerization for intracellular motility and cell-to-cell spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 represent well-established background knowledge about S. flexneri pathogenesis, supported by appropriate citations to the literature. These are not novel findings but provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background information on septins: they are conserved GTP-binding proteins forming heteromeric complexes and diverse structures (filaments, rings, cages) involved in cellular processes and infection. During S. flexneri infection, septins form cages around bacteria at sites of membrane curvature enriched in cardiolipin, with IcsA promoting and LPS inhibiting recruitment. Septin cages restrict bacterial actin tail motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 represent established knowledge about septin biology and their role in S. flexneri infection, supported by appropriate citations including recent reviews and primary literature. These provide essential background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Discussion of prior work showing S. flexneri can induce genotoxic stress, block G2/M transition, and cause translational arrest through OspC effectors. The authors speculate that cell cycle arrest may prevent epithelial cell shedding to promote gut colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 accurately cite prior work on S. flexneri manipulation of host cell cycle and translation. Claim C50 is explicitly speculative about the biological significance in the gut context. These claims appropriately contextualize the current findings within existing literature.",
+    "result_type": "MINOR"
+  }
+]

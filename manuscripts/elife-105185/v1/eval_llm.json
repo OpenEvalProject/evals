@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors predicted secretomes for seven gall-forming or related pathogens using AlphaFold2, identifying 4197 proteins with signal peptides and no transmembrane domains, of which 3575 structures were modeled and 2349 structures with pLDDT >65 were selected for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C33 describe a clear computational pipeline with specific filtering criteria and quantitative outputs. The methodology is standard for secretome prediction, and the pLDDT threshold choice (C33) is justified by including a known effector. The results are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Structure-based clustering using TMAlign and Markov clustering identified 254 structural clusters with at least two members, incorporating 19 known effector family structures and 62 Ascomycota orphan effector families for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe a systematic structural comparison approach with clearly defined thresholds (TMScore >0.5) and clustering parameters. The inclusion of reference structures (C38, C39) strengthens the comparative analysis. The quantitative result (254 clusters) is specific and verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Structural clustering revealed species-specific expansions including ankyrin repeats in P. brassicae (n=42) and S. subterranea (n=39), CCG effectors in A. candida (n=48), Tin2-like proteins in U. maydis (n=31), and AvrSen1-containing cluster in S. endobioticum (n=64), with low abundance of known fungal effector families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C43-C55 provide specific quantitative data for each pathogen's dominant clusters with consistent methodology. The comparative analysis across species is well-supported by the clustering data, and the observation of species-specific expansions is directly derived from the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Six protein folds (hydrolases, carboxypeptidases, aspartyl proteases, lectins, SCP domain, and an orphan group) were conserved across all pathogens studied, with 20 of 62 Ascomycete orphan effector groups having structural homologs in plasmodiophorids and oomycetes, but no gall-forming-specific folds were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe cross-kingdom conservation patterns with specific quantitative data. The negative result (C58) is appropriately stated and supports the interpretation that gall formation can be achieved through diverse mechanisms. The evolutionary inference is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A nucleoside hydrolase-like fold was identified in cluster 21, including highly expressed P. brassicae effectors (PBTT_09143 and PBTT_07479) and members from various gall-forming biotrophs, with structural similarity to bacterial effector HopQ1 despite limited sequence similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 combine expression data, structural similarity searches, and comparative analysis. The FoldSeek results (C61) provide strong computational support, and the connection to HopQ1 (C64-C66) is well-documented. The speculation about neo-functionalization (C67) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The Mig1 effector cluster in U. maydis exhibits structural homology (TMScore >0.5) despite extreme sequence divergence (0.6-30% identity), with four conserved cysteine residues forming disulfide bridges that maintain the fold, and all 13 members expressed during infection with variable patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 demonstrate divergent evolution with specific quantitative data on sequence identity and structural similarity. The identification of conserved cysteines (C72) and their structural role (C73-C74) is supported by both sequence alignment and structural analysis. Expression data (C75-C76) adds functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "AvrSen1 and CCG represent novel SUSS effector families that require integration of sequence and structure data for complete identification, with 12 sequence-related clusters associated with AvrSen1 and 11 with CCG, increasing total member counts to 124 and 50 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 demonstrate that structural analysis reveals relationships not detectable by sequence alone. The integration of sequence and structure clustering (C79-C80) is methodologically sound, and the increased member counts (C83) validate the approach. Prior work (C78, C81) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "RAYH and CCG motifs are enriched in S. endobioticum and A. candida SUSS effector families respectively, with conserved cysteine and hydrophobic residues forming structural elements (disulfide bridges, alpha-helices) that maintain fold integrity while peripheral regions diversify.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C85-C94 combine motif discovery (MEME), selection pressure analysis, and structural visualization to demonstrate the structural role of conserved motifs. The evidence for disulfide bridges (C90) and core structural elements (C91-C92) is strong, and the evolutionary model (C94) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C43",
+      "C44",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Ankyrin repeat-containing proteins are significantly expanded in gall-forming plasmodiophorids P. brassicae (74 total) and S. subterranea (41 total) compared to non-gall-forming P. betae (5 members), with 40 of 74 P. brassicae ankyrins highly expressed during clubroot disease and conserved hydrophobic residues stabilizing the repeat structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C43-C44, C95-C103 provide strong comparative evidence linking ankyrin expansion to gall-forming lifestyle. Expression data (C98) supports pathogenicity role, and structural analysis (C100-C103) identifies conserved stabilizing residues. The contrast with P. betae (C95) strengthens the association with gall formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "AlphaFold-Multimer screening of 70 P. brassicae ankyrin proteins against 20 Arabidopsis immune-related genes identified ten ankyrin proteins targeting MPK3, MAPK4, MAPK6, SnRK1, NPR1, XCP1, CNGC4, and BAK1 using stringent criteria (PAE <10, iPTM+pTM \u226570).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 describe a systematic computational screen with clearly defined criteria. The approach is appropriate for generating interaction hypotheses, though experimental validation is needed (addressed in subsequent claims). The targeting of multiple immune hubs is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "PbANK1 (PBTT_00818) interacts with both MPK3 and GroES-like zinc-binding dehydrogenase (AT3G56460) as confirmed by BiFC assays in planta, with both interactions occurring in the nucleus, though the MPK3 interaction was not detected by one-on-one Y2H but was identified through large-scale Y2H screening and BiFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C107-C112 provide experimental validation using multiple complementary methods. The BiFC confirmation (C112) is the strongest evidence for both interactions. The discrepancy between AlphaFold-Multimer/BiFC and one-on-one Y2H for MPK3 (C107) is acknowledged but resolved by BiFC, suggesting context-dependent interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "AlphaFold2 shows limitations in modeling disordered effectors, with 97% of proteins with pLDDT >70 being non-disordered while 26% of proteins with pLDDT <70 were disordered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide quantitative evidence for AlphaFold2's known limitation with disordered proteins. The correlation between low pLDDT scores and disorder is well-established, and the data support this relationship. This is an important methodological consideration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study supports the model that pathogen secretomes are dominated by expansion of specific folds, with ankyrin proteins potentially key to gall-forming plasmodiophorid virulence through their ability to mediate diverse protein-protein interactions via polymorphic surface residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 synthesize the study's findings into a coherent model. The interpretation is supported by the expansion data, expression patterns, and validated interactions. The hypothesis about polymorphic surface residues (C118) is reasonable given the structural data, though it requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C56"
+    ],
+    "result": "Conservation of hydrolase, carboxypeptidase, and aspartyl protease folds across diverse species suggests evolutionary significance and potential retention of host manipulation mechanisms through speciation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122, C56 make reasonable evolutionary inferences from the conservation data. The speculation about host manipulation (C122) is appropriately cautious and consistent with the known functions of these enzyme classes in pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study provides evidence for divergent evolution of effectors in fungi and oomycetes, involving conservation of cysteine or hydrophobic residues to maintain fold integrity, supporting the need to incorporate structural knowledge into sequence-based effector family identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 synthesize findings from multiple effector families (Mig1, CCG, AvrSen1) to support the divergent evolution model. The recommendation to integrate structural and sequence data (C126) is well-justified by the demonstrated limitations of sequence-only approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background context on effector biology, SUSS effector families, and AlphaFold applications in plant-microbe interactions, establishing the foundation for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C21 provide well-cited background information that accurately represents the field. These claims establish the scientific context and justify the study's approach. All statements are supported by appropriate citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Plasmodiophorid pathogens like P. brassicae cause significant agricultural losses, are difficult to study due to obligate biotrophy, and have largely uncharacterized secretomes due to lack of known protein domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide well-cited justification for studying plasmodiophorid effectors. These statements accurately represent the challenges in the field and motivate the structural genomics approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Mig1 is a maize-induced effector in U. maydis that plays a crucial role in biotrophic interaction and is specifically induced during the biotrophic phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 provide background on Mig1 supported by citation. This contextualizes the subsequent structural analysis of the Mig1 family and its importance as a known virulence factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "MPK3 is involved in immunity and GroES-like protein is implicated in peroxisomal functions, providing functional context for the identified PbANK1 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 provide well-cited functional context for the host targets identified. This information is important for interpreting the significance of the PbANK1 interactions but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "HopQ1 homologs are found in some Pseudomonas savastanoi isolates that form galls on woody plants, suggesting potential convergent evolution of gall-forming mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 provides an interesting connection between the nucleoside hydrolase-like fold and bacterial gall-forming pathogens. The FoldSeek search result is supported by citations, though the functional significance requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

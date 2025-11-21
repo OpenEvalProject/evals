@@ -1,0 +1,150 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C56"
+    ],
+    "result": "The authors demonstrate that intermediate target frequencies of slow-growing (S) types are the most challenging to achieve because intra-collective selection is strongest at intermediate frequencies, potentially overpowering inter-collective selection. This creates a 'waterfall' phenomenon where certain frequency ranges are inaccessible.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this core finding. The editor states the evidence is 'compelling' and highlights 'the tension between selection at the strain and the community level.' Reviewer 3 notes 'a major strength of this work is that the qualitative behaviour of the system is captured by an analytically solvable approximation' and that intermediate frequencies form a 'forbidden region.' No reviewer challenges this central result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The authors show an asymmetry in achievability: low target S-frequencies are consistently feasible from various initial conditions, while high target S-frequencies require initially high S-frequencies. This is analogous to a raft that can descend but not ascend a waterfall.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding without challenge. The editor describes the study as showing 'the possibility of selecting a desired fraction of slow and fast-growing types is impacted by their initial fractions.' Reviewer 3 explicitly states 'not only high frequencies of fast growers can be reproducibly achieved...Small target frequencies can also be maintained, provided that the initial proportion of fast growers is sufficiently small.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C65"
+    ],
+    "result": "The authors demonstrate that Newborn size (bottleneck size) is the most critical parameter affecting achievable target frequencies\u2014as it increases, the region of achievable targets shrinks until none are achievable. In contrast, the number of collectives under selection plays a less critical role, though larger numbers broaden the success region.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not challenge the technical findings, Reviewer 2 raises a significant concern about practical interpretation: 'It would be great for the authors to provide what the N0 parameter actually means during the artificial selection experiments...without this, the main result of this paper (initial frequency matters) cannot be taken advantage of by the experimentalists.' This suggests the result's practical applicability remains unclear despite technical correctness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors extend their analysis to three-population systems (S, F, FF), showing that evolutionary trajectories must navigate away from the 'waterfall drop' entirely. They demonstrate path-dependence where success depends on initial conditions, with some targets in accessible regions still unachievable if trajectories escape those regions during evolution. This path-dependence is distinct from hysteresis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly affirms this extension: 'A similar conclusion, that stochastic fluctuations can maintain the system over evolutionary time far from the prevalence of the faster-growing type, is then confirmed by analyzing a three-species community, suggesting that the qualitative conclusions of this study are generalizable to more complex communities.' Reviewer 2 notes interest in the connection to path-dependence and hysteresis, which the authors address.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The model makes several simplifying assumptions: exponential growth without resource limitation or ecological interactions, only two populations (to enable analytical solutions), selection of the single top-functioning community (to use extreme value theory), and unidirectional mutations from S to F. These choices are justified by analytical tractability and relevance to biotechnology scenarios.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 explicitly notes a key limitation: 'Although different types compete for being represented in the next generation's propagules, within-generation ecology is here representative of exponential growth. As species interactions are commonly manifest in lab serial dilution experiments, it would be interesting if future work explores the extent of the robustness of these results to density-dependent demography.' Reviewer 2 questions the mutation assumption, asking about its purpose and realism. While reviewers accept these as modeling choices, they identify them as limitations affecting generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The model incorporates mutational and demographic stochasticity (stochastic birth and sampling), but excludes environmental stochasticity and measurement noise, which are noted as requiring future research.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a substantive concern: 'The success (gold area of Figure 2d) in this framework mainly depends on the size of the demographic stochasticity...However, during experiments, a lot of environmental stochasticity appears to be occurring during artificial selection.' The reviewer requests justification for why the paper focuses on demographic rather than environmental stochasticity and suggests citing papers showing the model captures relevant experimental stochasticity. This indicates the scope limitation is significant for practical application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "The authors employ both individual-based stochastic simulations using the tau-leaping algorithm and an analytical approach where distributions of S and F follow Gaussian distributions with means and variances obtained from ODEs derived from the master equation. The analytical approach is used due to computational efficiency.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly praises this methodological contribution: 'A major strength of this work is that the qualitative behaviour of the system is captured by an analytically solvable approximation so that the extent of the 'forbidden region' can be directly and generically related to the parameters of the selection protocol.' The editor notes the evidence 'relies on mathematical analysis and simulations of a stochastic model' and is 'compelling.' No reviewer challenges the methodological approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C78"
+    ],
+    "result": "The authors conclude that the strength of intra-collective evolution is frequency-dependent, with implications for experimental planning, and that strategically choosing appropriate starting points is essential for successful collective selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 affirms this practical implication: 'The realization that not all target collective functions can be as easily achieved and that they should be adapted to the initial conditions and the selection protocol is also a sobering message for designing concrete applications.' The editor describes the study as 'important' and of interest to 'researchers interested in ecology, both theoretical and experimental,' implying acceptance of the practical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors provide background context on microbial collectives, their functions, challenges in artificial selection, inheritance issues, and limitations of earlier studies. They note that collective functions are often maximized at intermediate frequencies and reference prior work on achieving target compositions in two-species systems.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers treat these as accepted background context. Reviewer 2 requests better explanation of structure-function relationships (C22) to strengthen impact, but does not challenge the claims themselves. Reviewer 1 notes 'the intra-collective selection during artificial selection has not been seriously theoretically considered,' affirming the novelty relative to this background. These claims frame the study but are not the focus of reviewer evaluation.",
+    "result_type": "MINOR"
+  }
+]
