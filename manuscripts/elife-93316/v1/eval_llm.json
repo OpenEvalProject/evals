@@ -11,11 +11,11 @@
       "C32",
       "C33"
     ],
-    "result": "Ancestral CD4 receptors at the hominin and hominid nodes (differing from human CD4 by 2 and 5 nonsynonymous substitutions respectively) fully supported entry of diverse SIV isolates, while modern chimpanzee and gorilla CD4 orthologs showed increased resistance to these viruses. This demonstrates that CD4 was originally permissive to primate lentiviruses but evolved resistance in lineages experiencing endemic SIV infection.",
+    "result": "Ancestral CD4 receptors at the hominin and hominid nodes (differing from human CD4 by 2 and 5 nonsynonymous substitutions respectively) fully supported entry of diverse SIV isolates, while modern chimpanzee and gorilla CD4 orthologs are more resistant to these viruses. This suggests that selective pressures from SIV led to retention of resistance mutations in chimpanzee and gorilla lineages.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4, C5, C31, and C32 are directly supported by experimental data in Figure 2D-E showing viral entry assays with ancestral and modern CD4 variants. Claims C28-C30 describe the ancestral reconstruction methodology and sequence differences. Claim C33 is a reasonable inference from the experimental data. The experimental design is appropriate with proper controls (empty vector, human CD4), multiple viral strains tested, and technical replicates performed.",
+    "evaluation": "Claims C4, C5, C31, and C32 are directly supported by experimental data in Figure 2D and E showing differential viral entry across CD4 variants. The ancestral reconstruction (C28-C30) is methodologically sound using PAML. The inference (C33) logically follows from the data showing ancestral permissiveness and modern resistance. The experimental design includes appropriate controls and multiple viral strains.",
     "result_type": "MAJOR"
   },
   {
@@ -27,11 +27,11 @@
       "C37",
       "C38"
     ],
-    "result": "Analysis of CD4 sequences from 32 gorilla individuals identified 6 nonsynonymous and 5 synonymous SNPs encoding 8 unique CD4 protein variants, with 5 of 6 nonsynonymous polymorphisms located in the D1 domain. Allele 5 was the most common variant, and these findings were corroborated by an independent study of over 100 gorilla fecal samples.",
+    "result": "Analysis of CD4 sequences from 32 gorilla individuals identified 8 unique CD4 protein variants encoded by alleles with 6 nonsynonymous and 5 synonymous SNPs. Five of six nonsynonymous polymorphisms are located in the D1 domain, with allele 5 being most common. These findings were corroborated by an independent study of over 100 gorilla fecal samples.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6, C35, C36, and C38 are supported by genomic data analysis from the Great Ape Genome Project shown in Figure 3. Claim C37 provides independent validation from Russell et al., 2021. The sample size (n=32) is reasonable for population genetic analysis, and the identification of SNPs follows standard bioinformatic approaches with appropriate quality filtering (GQ \u226515).",
+    "evaluation": "Claims C6, C35, C36, and C38 are supported by genomic data analysis from the Great Ape Genome Project with clear methodology described. The sample size (n=32) is reasonable for population genetics. Independent validation (C37) strengthens confidence. The concentration of polymorphisms in D1 domain is consistent with functional expectations.",
     "result_type": "MAJOR"
   },
   {
@@ -41,13 +41,14 @@
       "C41",
       "C42",
       "C43",
-      "C44"
+      "C74",
+      "C75"
     ],
-    "result": "Functional testing of the 8 gorilla CD4 variants revealed variant-specific differences in susceptibility to SIVcpz entry, with all variants showing equal or greater resistance compared to human CD4. Individual CD4 variants showed strain-specific restriction patterns, with some variants highly restrictive to certain strains while permissive to others.",
+    "result": "Functional testing of 8 gorilla CD4 variants revealed variant-specific differences in susceptibility to SIVcpz entry, with all variants being equal to or more resistant than human CD4. Considerable strain-specific differences were observed, with gorilla CD4 variant 1 being highly resistant to most SIVs tested except SIVcpz TAN2.69.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7, C41, C42, C43, and C44 are supported by experimental data in Figure 4 showing viral entry assays across multiple SIVcpz strains and gorilla CD4 variants. The experiments used appropriate methodology (pseudovirus infections, flow cytometry, technical and biological replicates). The observation of strain-specific effects (C42, C43) is well-documented in the data, though the mechanistic basis is not fully explored.",
+    "evaluation": "Claims C7, C41, C42, and C43 are supported by experimental data in Figure 4 using pseudovirus entry assays. The experimental design is appropriate with multiple viral strains and biological replicates. The observation of strain-specific effects (C42) is important and well-documented. Claims C74 and C75 provide specific examples consistent with the broader pattern.",
     "result_type": "MAJOR"
   },
   {
@@ -55,102 +56,167 @@
     "claim_ids": [
       "C39",
       "C40",
+      "C44",
       "C45",
       "C46",
       "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C52"
+      "C48"
     ],
-    "result": "A gorilla-specific N-glycosylation site at position 15 (fixed in most gorillas but absent in other African apes) confers resistance to SIV entry in a strain-dependent manner. Gorilla allele 2 encodes a proline at position 18 that prevents this glycosylation, rendering it more susceptible to infection and correspondingly less frequent in the population.",
+    "result": "A predicted N-glycosylation site at position 15 is fixed in gorillas but absent in other African apes. Gorilla allele 2 has a proline at position 18 that reduces glycosylation likelihood. Functional testing showed that this glycan at position 15 reduces SIV entry, confirmed by western blot analysis showing differential migration patterns that were eliminated by PNGase F treatment.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C39, C40, C45, C46 are supported by experimental data in Figure 5A-C, including viral entry assays and western blot analysis with PNGase F treatment confirming glycosylation status (C47, C48). Claims C49-C50 are reasonable inferences from the data. Claim C51 is speculative but supported by the low frequency of allele 2 in the population (C52, Figure 3B). The glycosylation analysis is rigorous with appropriate biochemical validation.",
+    "evaluation": "Claims C39-C40 are supported by sequence analysis (Figure 3A) and established glycosylation motif knowledge. Claims C44-C47 are supported by experimental data (Figure 5A-C) including viral entry assays and western blots with appropriate controls (PNGase F treatment). The inference (C48) is well-supported by converging evidence from sequence analysis, functional assays, and biochemical validation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
       "C8",
+      "C51",
+      "C52",
       "C53",
-      "C54",
-      "C55",
-      "C56"
+      "C54"
     ],
-    "result": "Single-point mutations from resistant gorilla CD4 variants (at positions 27, 31, and 34) engineered into permissive human CD4 significantly reduced viral entry in a strain-specific manner, with some mutations (e.g., H27R) drastically reducing infection. These results demonstrate that single amino acid changes in domain 1 can substantially modify CD4-envelope interactions and influence virus entry.",
+    "result": "Single-point mutations from resistant gorilla CD4 variants (at positions 27, 31, and 34) engineered into human CD4 significantly reduced susceptibility to SIVcpz entry in a strain-specific manner. The H27R mutation drastically reduced infection by SIVcpz MB897, demonstrating that single amino acid changes in domain 1 can drastically modify CD4-envelope interactions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8, C53, C54 are supported by experimental data in Figure 5D showing viral entry assays with mutant human CD4 receptors. Statistical significance was assessed by one-way ANOVA (p<0.05) across independent experiments. Claim C55 is a well-supported inference about strain-specificity. Claim C56 is a reasonable mechanistic interpretation. The experimental design appropriately tests the functional impact of individual substitutions.",
+    "evaluation": "Claims C8, C51, and C52 are supported by experimental data in Figure 5D showing significant reductions in viral entry with statistical validation (p<0.05 in independent experiments). The strain-specificity (C53) is well-documented across multiple viral strains. The inference (C54) is appropriately cautious and supported by the data. The experimental design with site-directed mutagenesis is rigorous.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C57",
-      "C58",
-      "C59"
+      "C55",
+      "C56",
+      "C57"
     ],
-    "result": "Reverse mutations in gorilla CD4 to recapitulate human amino acids showed only minimal increases in SIVcpz entry rather than full restoration, suggesting that resistance in gorilla CD4 depends on cumulative effects of multiple amino acid changes rather than single substitutions. Overall, population-level CD4 diversity in gorillas confers protection against multiple SIVcpz strains.",
+    "result": "Reverse mutations in gorilla CD4 to recapitulate human amino acids did not fully restore entry phenotype, showing only minimal increases in SIVcpz entry. This suggests that resistance in gorilla CD4 depends on cumulative effects of multiple amino acid changes rather than single residues, and that population-level CD4 diversity confers protection against multiple SIVcpz strains.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C57 and C58 are supported by experimental data in Figure 5E showing reverse mutagenesis experiments. The interpretation that resistance requires multiple changes (C58) is a reasonable inference from the lack of full phenotypic restoration. Claim C59 is a well-supported synthesis of the collective experimental data. However, the study does not systematically test all possible combinations of mutations to definitively establish epistatic interactions.",
+    "evaluation": "Claims C55 and C56 are supported by experimental data in Figure 5E. The incomplete restoration of phenotype with reverse mutations provides strong evidence for epistatic or cumulative effects. The inference (C57) appropriately synthesizes the data. However, the claim would be strengthened by testing combinations of mutations to definitively demonstrate cumulative effects.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
       "C9",
+      "C58",
+      "C59",
       "C60",
       "C61",
       "C62",
       "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C67"
+      "C64"
     ],
-    "result": "Population genetic analysis revealed that nonsynonymous SNPs in CD4 are at significantly higher frequency (\u0398\u03c0) compared to neighboring loci in endemically SIV-infected species (gorillas and chimpanzees) but not in uninfected/recently infected species (bonobos, orangutans, humans). This pattern is specific to nonsynonymous variation (not synonymous), concentrated in domain 1, and consistent with positive selection maintaining resistant CD4 alleles in endemic species.",
+    "result": "Population genetic analysis shows that nonsynonymous SNPs in CD4 are at significantly higher frequency (\u0398\u03c0) compared to neighboring loci in endemically infected species (gorillas and chimpanzees) but not in uninfected species (bonobos and orangutans). This pattern is not observed for synonymous variation and is concentrated in domain 1, consistent with positive selection driving nonsynonymous SNPs to higher frequency in SIV-endemic species.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9, C60, C61, C63 are supported by population genetic data in Figure 6A comparing CD4 to 11 neighboring loci. Claims C62, C64, C67 are reasonable inferences from the observed patterns. Claims C65-C66 are supported by statistical analysis (Figure 6B-C, Fisher's exact test p=0.007). The comparative approach is appropriate given small sample sizes. However, the analysis relies on Mann-Whitney tests without correction for multiple comparisons, and demographic factors could potentially confound interpretation despite the synonymous/nonsynonymous comparison.",
+    "evaluation": "Claims C58-C64 are supported by population genetic analysis in Figure 6 using appropriate metrics (\u0398\u03c0, Mann-Whitney tests, Fisher's exact test). The comparison between endemic and non-endemic species is well-designed. The discordance between nonsynonymous and synonymous variation (C59-C60) effectively rules out neutral demographic explanations. The concentration in D1 domain (C63) is statistically significant (p=0.007). The inferences (C60, C62, C64) are appropriately cautious and well-supported.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C70"
+      "C10",
+      "C33",
+      "C62",
+      "C64"
     ],
-    "result": "Removing the D1 domain sequence from CD4 analysis renders the gene no longer under positive selection, demonstrating that selective pressure is concentrated in the virus-binding domain.",
+    "result": "SIV has placed intense selective pressure on ape CD4, acting to propagate SIV-resistant alleles in chimpanzee and gorilla populations. This conclusion integrates evidence from ancestral reconstruction, functional assays, and population genetics showing that selective pressures led to retention of resistance mutations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C70 is supported by PAML analysis shown in Figure 6\u2014figure supplement 2, where likelihood ratio tests comparing models M7 vs M8 and M8a vs M8 show significant positive selection for full-length CD4 but not when D1 is removed. This analysis appropriately uses established methods for detecting positive selection and provides clear statistical support (p<0.0001 for full gene, p=0.08-0.09 when D1 removed).",
-    "result_type": "MINOR"
+    "evaluation": "This overarching conclusion (C10) is well-supported by converging evidence from multiple independent lines of investigation: ancestral reconstruction showing original permissiveness (C33), functional data showing modern resistance, and population genetic signatures of selection (C62, C64). The integration of evolutionary, functional, and population genetic data provides strong support for this major conclusion.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C10",
-      "C33",
-      "C59",
-      "C64",
-      "C67"
+      "C49",
+      "C50"
     ],
-    "result": "SIV has placed intense selective pressure on ape CD4, acting to propagate SIV-resistant alleles in chimpanzee and gorilla populations, as evidenced by the evolution from permissive ancestral CD4 to resistant modern variants and population genetic signatures of positive selection.",
+    "result": "Gorilla CD4 allele 2, which lacks the protective glycan at position 15, would be at a fitness disadvantage, consistent with it being one of the least frequent alleles in the surveyed population.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "This overarching conclusion (C10) integrates multiple lines of evidence: ancestral reconstruction showing evolution of resistance (C33), functional diversity conferring protection (C59), and population genetic signatures of selection (C64, C67). The convergent evidence from experimental virology and population genetics provides strong support. However, the study cannot definitively rule out alternative selective pressures or establish causality between SIV infection and CD4 evolution.",
-    "result_type": "MAJOR"
+    "evaluation": "Claim C49 is speculation but reasonable given the functional data showing reduced protection without the glycan. Claim C50 is directly supported by frequency data in Figure 3B. The correlation between functional disadvantage and low frequency is consistent with selection, though causation cannot be definitively established without longitudinal data or direct fitness measurements.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CD4 has evolved under strong positive selection throughout primate evolution, driven by direct interaction with HIV/SIV envelope glycoprotein. Removing the D1 domain sequence from analysis renders CD4 no longer under positive selection, confirming that selection is concentrated in the virus-binding region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 are established knowledge supported by prior literature. Claim C67 is supported by updated PAML analysis in Figure 6\u2014figure supplement 2. The analysis appropriately uses likelihood ratio tests comparing models M7, M8a, and M8. The finding that selection signal disappears without D1 domain provides strong evidence that virus interaction drives CD4 evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C68"
+    ],
+    "result": "CD4 is evolving to convey natural tolerance in primates, as evidenced by the fact that most African primate species harbor lentiviruses endemically despite CD4 evolution, meaning CD4 remains functional for viral entry of at least some viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is established knowledge about endemic SIV infections. Claim C69 is a reasonable inference from the observation that CD4 evolves resistance but viruses persist. The concept of 'natural tolerance' (reducing but not eliminating infection) is well-supported by the data showing partial resistance across variants and strain-specific effects. However, this is an interpretation rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Protective glycosylation of CD4 has been observed in chimpanzees and gorillas, suggesting that evolutionary acquisition of a glycan shield on CD4 may be a recurring theme in primate species plagued with SIVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by citations to prior work on chimpanzees and gorillas. Claim C71 is speculation but reasonable given observations across multiple species. The pattern of convergent evolution of glycan shields is plausible but would require more systematic analysis across primate species to be definitively established. The claim is appropriately presented as a hypothesis ('may be').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C76",
+      "C77"
+    ],
+    "result": "When host genes like CD4 become highly diverse within species, a given virus strain may only infect a small number of individuals. Gorillas homozygous for allele 1 would largely be protected from most circulating SIV strains, and if allele 1 became fixed, many SIV strains could go extinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is a reasonable inference from the functional data. Claims C76 and C77 are speculation based on functional data for allele 1 (C74-C75). While the logic is sound, these predictions about population-level effects and virus extinction are not directly tested. The claims do not account for viral evolution in response to host changes, frequency-dependent selection, or heterozygote advantage. These are interesting hypotheses but require additional data for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Virus-driven evolution of genes like CD4 means that virus spillover between species, including zoonotic spillovers, are less likely to happen. Receptor sequence divergence serves as a potent barrier to cross-species transmission. Spillover will only occur when virus is transmitted between key individuals where the donor has permissive CD4 alleles yielding high titers and the recipient has susceptible CD4 alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by extensive prior literature on receptor barriers to cross-species transmission. Claim C80 is established knowledge from prior work. Claim C81 is speculation but represents a logical synthesis of the findings. The model of spillover requiring specific donor-recipient pairings is reasonable given the data on CD4 variant-specific susceptibility, though it is simplified and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
     "claim_ids": [
       "C1",
       "C2",
@@ -168,15 +234,15 @@
       "C21",
       "C22"
     ],
-    "result": "Background knowledge claims about SIV biology, taxonomy, prevalence in African primates, and the evolutionary history of HIV-1 emergence from SIV through great apes.",
+    "result": "Background knowledge claims about SIV biology, taxonomy, distribution, and evolutionary history, including the spillover events from monkeys to apes to humans that led to HIV-1 emergence.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C3, C11-C22 represent established knowledge in the field, appropriately cited to prior literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the statements align with current understanding of SIV/HIV evolution.",
+    "evaluation": "These claims (C1-C3, C11-C22) represent established knowledge from prior literature, appropriately cited. They provide necessary context for the study but are not novel findings. The claims are consistent with current understanding of SIV/HIV evolution and are well-supported by the cited references.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R11",
+    "result_id": "R16",
     "claim_ids": [
       "C23",
       "C24",
@@ -184,42 +250,13 @@
       "C26",
       "C27",
       "C34",
-      "C68",
-      "C69",
-      "C71",
-      "C73",
-      "C74",
-      "C75",
-      "C77",
-      "C84",
-      "C85"
+      "C72"
     ],
-    "result": "Background knowledge about CD4 function, evolution under positive selection, variation in lentivirus engagement across primate orthologs, and the role of pathogen-driven evolution in shaping host genes.",
+    "result": "Background knowledge about CD4 function, evolution, and prior findings on CD4 diversity in primate populations, including that CD4 is the primary lentivirus entry receptor, has evolved under positive selection concentrated in the D1 domain, and that multiple resistant CD4 alleles circulate in chimpanzee populations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C23-C27, C34, C68-C69, C71, C73-C75, C77, C84-C85 represent established knowledge appropriately cited to prior literature, including the authors' previous work. These provide essential background for interpreting the current findings but are not novel results from this study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C72",
-      "C76",
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C86",
-      "C87"
-    ],
-    "result": "Interpretive and speculative claims about CD4 evolution conveying natural tolerance, implications for virus extinction and spillover, and conditions necessary for cross-species transmission.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C72, C76, C78-C79, C81-C83, C86-C87 represent interpretations and speculation extending beyond the direct experimental data. While these are reasonable hypotheses informed by the results (e.g., C80 is data-supported), they involve predictions about evolutionary outcomes, population-level effects, and spillover dynamics that are not directly tested. Claim C80 is supported by Figure 4 data, but claims about fixation leading to virus extinction (C82) or spillover requirements (C87) are speculative.",
+    "evaluation": "These claims (C23-C27, C34, C72) represent established knowledge from prior literature, appropriately cited. They provide necessary background for interpreting the current findings. The claims about prior work on chimpanzee CD4 diversity (C34) set up the parallel investigation in gorillas. All claims are well-supported by cited references.",
     "result_type": "MINOR"
   }
 ]

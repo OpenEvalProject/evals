@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Traditional FFT-based methods fail to distinguish fundamental frequencies from harmonics in non-sinusoidal neural oscillations, which is identified as a major challenge in the field. FFT produces harmonic components at multiples of the fundamental frequency when applied to non-sinusoidal signals, and these harmonics are considered artifacts that confound detection and interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C8 establish the problem that CHO addresses through citations to established literature (C5, C6, C8) and known signal processing properties (C7). The claims are well-supported by prior work and provide clear motivation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Phase-phase coupling analysis can confirm harmonic relationships in non-sinusoidal oscillations but has limitations: it cannot fully ascertain phase-locking in sinusoidal oscillations and has prohibitive computational complexity for real-time applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by data shown in Figure 1E-F and Figure 1G-L. The demonstration of phase-phase coupling's limitations provides clear justification for developing an alternative method (CHO).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "CHO combines autocorrelation with an improved OEvent method to detect neural oscillations based on three criteria: (1) peaks over 1/f noise in time-frequency domains, (2) at least 2 full cycles, and (3) autocorrelation periodicity matching the fundamental frequency. The method replaces empirical thresholds with parametric 1/f-based thresholds and rejects short-cycled oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 describe the methodological foundation of CHO with appropriate citations (C15, C16, C19, C21) and clear rationale based on signal processing theory (C12, C13) and neuroscience literature (C18, C19, C21). The three criteria are explicitly stated and justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C27",
+      "C92"
+    ],
+    "result": "In simulation studies, CHO outperformed FOOOF, OEvent, and SPRiNT in specificity and accuracy for detecting the peak frequency of non-sinusoidal oscillations. SPRiNT showed average specificity below 0.3, significantly lower than CHO across all SNR ranges. At physiologically motivated SNR levels, CHO outperformed all methods in combined accuracy, specificity, and sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C27, C92 are supported by simulation results shown in Figure 4B-D with quantitative metrics. The comparison includes appropriate baseline methods and provides specific performance values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C99"
+    ],
+    "result": "The average SNR of oscillations in EEG and ECoG was measured at -7 and -6 dB respectively. At these physiologically motivated SNR levels, CHO's sensitivity is comparable to SPRiNT, detecting 50-60% of all true oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C99 provide empirical SNR measurements from physiological data (Figure 4\u2014figure supplement 1) and quantitative sensitivity results from simulations. These establish the practical performance of CHO at realistic noise levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C88"
+    ],
+    "result": "CHO outperformed OEvent in specificity but not sensitivity for detecting the onset and offset of oscillations in simulation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C88 are supported by simulation results shown in Figure 4E-G. The trade-off between specificity and sensitivity is clearly demonstrated with appropriate metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In ECoG recordings during an auditory reaction-time task, FOOOF detected alpha and beta oscillations in both temporal and motor cortex, while CHO detected alpha in both regions but beta only in motor cortex. This pattern was consistent across subjects. CHO's beta detection rate was significantly lower than FOOOF in temporal areas (p<0.05, Bonferroni corrected), suggesting FOOOF may detect harmonics of alpha as beta oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are supported by ECoG data shown in Figure 5A-B with statistical testing (C34). The interpretation that FOOOF detects harmonics (C35) is reasonable given the simulation results and the spatial pattern of detections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In EEG recordings, FOOOF found widespread alpha and beta oscillations while CHO found more focal visual alpha and pre-motor beta. CHO showed lower entropy values than FOOOF for both alpha (3.82 vs 4.15) and beta (4.05 vs 4.15) oscillations, suggesting more region-specific detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by EEG data shown in Figure 6 with quantitative entropy measurements (C39, C40). The entropy metric provides objective support for the claim of more focal/region-specific detection (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C89"
+    ],
+    "result": "CHO successfully detected the temporal dynamics of 7 Hz oscillations in auditory cortex during an auditory reaction-time task. Pre-stimulus onset times were uniformly distributed, while post-stimulus onset times became Gaussian peaking at 950 ms. Offset times peaked at 300 ms post-stimulus. This indicates oscillations de-synchronized at 250 ms and re-synchronized at 900 ms post-stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49, C89 are supported by data shown in Figure 7 with clear temporal patterns. The interpretation of de-synchronization and re-synchronization (C48, C49) is reasonable given the offset/onset timing relative to stimulus and behavioral response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "CHO found primarily alpha-band oscillations in hippocampus with more specific results than FOOOF, showing less overlap between alpha and beta locations and almost no detection in low gamma (30-40 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by SEEG data shown in Figure 8\u2014figure supplement 1. The comparison demonstrates CHO's higher specificity in hippocampal recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C91"
+    ],
+    "result": "CHO revealed region-specific fundamental frequencies and durations of oscillations: primary auditory cortex showed 7 and 11 Hz (450 ms duration), motor cortex showed 7 Hz (450 ms) with more beta (500 ms), Broca's area showed 17 Hz beta, and hippocampus showed 8 Hz (450 ms). Hippocampal oscillations were significantly shorter than motor cortex oscillations (p<0.05, Wilcoxon rank-sum test, N=6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59, C91 are supported by data shown in Figure 9A-D with quantitative frequency and duration measurements. Statistical testing is provided for the hippocampus-motor cortex comparison (C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CHO's high specificity in simulation studies results from three principle criteria: (1) oscillations must be peaks over 1/f noise in time-frequency domains, (2) oscillations must exhibit at least 2 complete cycles to distinguish from EPs/ERPs, and (3) oscillations must share periodicity with their autocorrelation to identify fundamental frequency. These criteria work together to reject aperiodic and harmonic oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 provide a clear mechanistic explanation for CHO's performance, linking the three criteria to specific aspects of specificity. The rationale is well-supported by signal processing theory (C62, C66) and the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Even for sinusoidal oscillations without asymmetry, CHO outperforms existing methods in specificity, with sensitivity increasing with SNR. Existing methods are susceptible to noise resulting in detection of spurious oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by analysis of sinusoidal oscillations shown in Figure 4\u2014figure supplement 2. This demonstrates CHO's advantages extend beyond non-sinusoidal signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C79"
+    ],
+    "result": "Beta oscillations detected by conventional methods in auditory cortex may be harmonics of alpha oscillations, and low gamma in pre-motor areas may be harmonics of beta. Harmonics can occur in any brain area and frequency band because neural oscillations are inherently non-sinusoidal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, C77, C79 provide interpretations of the empirical results that are consistent with the simulation findings and the known properties of non-sinusoidal oscillations. The generalization (C79) is supported by results across multiple recording modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CHO favors specificity over sensitivity at low SNR, exhibiting high false-negative rates. At physiologically motivated SNR levels (-7 dB for EEG, -6 dB for ECoG), CHO detects 50-60% of true oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 acknowledge a key limitation of CHO with quantitative performance data from simulations. This is an honest assessment of the method's trade-offs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CHO's sensitivity could potentially be improved through several approaches: averaging across spatially correlated locations, replacing Hilbert transform with wavelet transform for better short-cycle capture, using state-space models or empirical mode decomposition for autocorrelation estimation, applying Gabor transform or matching pursuit for onset/offset detection, or developing better frameworks to reject harmonic peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C108 propose potential improvements but provide no empirical validation. These are reasonable suggestions based on signal processing theory, but remain speculative without testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CHO uses Hilbert transform rather than wavelet or short-time FFT because it is easier to implement in MATLAB and provides better control over spectral shape. No significant differences were found when different time-frequency estimation methods were used during CHO development, supported by a comparative study (Bruns, 2004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 justify the methodological choice with empirical testing during development (C103) and citation support (C104). However, the claim of 'no significant differences' (C103) lacks quantitative details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CHO does not assess the harmonic structure of neural oscillations and cannot distinguish between oscillations with the same fundamental frequency but different non-sinusoidal properties. This limitation stems from the study's objective to identify fundamental frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 clearly acknowledge a limitation of the method with appropriate justification (C111). This is an honest assessment of the method's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study included 27 human subjects across multiple recording modalities: 8 ECoG subjects with epilepsy performing an auditory reaction-time task, 7 healthy EEG subjects performing the same task, 6 ECoG subjects in resting state, and 6 SEEG subjects with epilepsy in resting state. All studies received appropriate ethical approval and informed consent. Data were collected using BCI2000 software with appropriate amplifiers and preprocessing included high-pass filtering, common median referencing, and downsampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C128 provide comprehensive methodological details about subjects, data collection, and preprocessing. The methods are clearly described with appropriate citations (C121, C127) and ethical approvals (C118-C120).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "CHO's performance is governed by four hyper-parameters: number of time windows for 1/f estimation (4 windows, 250 ms each), minimum cycles (2), significance threshold for autocorrelation peaks (NumSTD=1), and bounding box overlap threshold for merging (75%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 clearly specify the parameter settings used in the study. However, no systematic parameter optimization or sensitivity analysis is presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "CHO was validated on synthetic non-sinusoidal oscillations (2.5 cycles, 1-3 s duration) with 1/f noise. Oscillations were generated with 9:1 trough-to-peak amplitude ratio, amplitudes varying 5-20 \u00b5V against 10 \u00b5V noise, 10 iterations per amplitude, and four different durations. Accurate detection was defined as <1.5 Hz frequency difference and positive correlation with p<0.05 for onset/offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C147 provide detailed simulation methodology with clear parameters and evaluation criteria. The rationale for using synthetic signals (C136) is appropriate given the lack of ground truth in physiological recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22"
+    ],
+    "result": "CHO outperforms conventional techniques in accurately detecting oscillations and demonstrates high precision and specificity in detecting neural oscillations in time and frequency domains, validated on ECoG, EEG, and SEEG signals from 27 human subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C22 provide high-level summary statements that are supported by the detailed results in simulation (Figure 4) and empirical studies (Figures 5-9). These represent the main conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C50",
+      "C78",
+      "C80",
+      "C94"
+    ],
+    "result": "Background claims about neural oscillations: they coordinate activity across brain regions, beta oscillations (13-30 Hz) occur in motor cortex and are involved in motor planning/execution with power changes during movement, hippocampal oscillations are non-sinusoidal hallmarks of memory processing with wider frequency ranges than previously assumed, and Parkinson's patients show more asymmetry in beta oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C71-C73, C50, C78, C80, C94 provide background context supported by appropriate citations. These establish the scientific context and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "CHO has potential applications in closed-loop neuromodulation and neurofeedback. Knowing onset/offset is essential for phase-locked stimulation, which can reduce required stimulation intensity and improve battery life. CHO's temporal precision could improve neurofeedback effectiveness and benefit investigation of neural pathologies through high-specificity asymmetry measurements. CHO can be applied in real time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C87, C93, C95-C96 describe potential applications supported by citations (C84-C86) but provide no empirical validation of CHO in these applications. The claim of real-time capability (C93) is stated but not demonstrated with timing benchmarks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Auditory alpha rhythms may be difficult to observe in EEG, as neither CHO nor FOOOF detected them despite FOOOF having better sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 provides an interpretation of negative results in EEG. While the observation is valid, alternative explanations (e.g., insufficient SNR, electrode placement) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "CHO can determine fundamental frequency in wideband analysis and provides onset/offset and frequency range information allowing investigation of non-sinusoidal features like asymmetry and peak/trough amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe capabilities of CHO demonstrated in Figure 8E (C81) and supported by the method's design (C82). These represent important features of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C29",
+      "C42",
+      "C43"
+    ],
+    "result": "Alpha and beta oscillations were expected in auditory and motor cortex during pre-stimulus periods. In EEG, CHO found fewer alpha oscillations in pre-motor cortex than occipital cortex, while FOOOF found more alpha and beta in visual cortex than pre-motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C42-C43 describe expectations and specific EEG findings shown in Figure 6C. The expectation (C29) is reasonable based on the task design, and the findings are clearly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "CHO revealed the spatial distribution of neural oscillations in EEG, SEEG, and ECoG recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a summary statement supported by results shown in Figures 5-9 across multiple recording modalities and brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Phase-phase coupling analysis used the n:m method from Belluscio et al. 2012, and CHO code is available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 provide methodological details (C129) and ensure reproducibility through code sharing (C130). These support transparency and reproducibility.",
+    "result_type": "MINOR"
+  }
+]

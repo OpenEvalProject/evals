@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "An improved annotation pipeline was applied to 9,599 Pseudomonas genomes (94% draft), identifying pyoverdine biosynthesis machinery in 97% of genomes. After quality control and data cleaning, 1,928 strains were retained (1,664 producers, 264 non-producers), with pyoverdine synthetase clusters ranging from 7,690-21,333 amino acids and 6-17 A domains per synthetase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide consistent quantitative data on genome analysis, annotation results, and quality control outcomes. The numbers are internally consistent (e.g., 3,219 producers + 293 non-producers + 6,087 truncated = 9,599 total), and the methodology for handling draft genomes is clearly described. The data support the successful application of the improved pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A phylogeny-focused substrate prediction method was developed using 101 reference A domains from 13 known pyoverdines. The method identified the Amotif4-5 region (between motifs A4 and A5) as most informative for substrate prediction, outperforming full-sequence approaches and correcting errors in the MIBiG database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 describe a coherent methodological development with clear rationale. The identification of the Amotif4-5 region is supported by systematic testing (C14) and validated by error correction in existing databases (C15). The approach is grounded in known biology of A domain substrate selectivity (C13 cites supporting literature).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Experimental validation using 20 sequenced Pseudomonas strains demonstrated 94.4% accuracy (151/160 amino acids correctly assigned), substantially outperforming antiSMASH 7.0 (58.8% accuracy). The method identified novel substrates including citrulline and had only 2 true mismatches (0.8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 provide comprehensive experimental validation with detailed error analysis. The accuracy metrics are well-quantified, error types are categorized (indistinguishable substrates, unknown substrates, true mismatches), and the comparison to antiSMASH provides appropriate benchmarking. The discovery of citrulline as a novel substrate (C23) demonstrates the method's capability to identify new biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The pipeline was extended to Burkholderiales NRPS metabolites using a manually curated dataset (203 A domains, 34 metabolites, 7 genera), achieving 83% prediction accuracy compared to antiSMASH 7.0's 67% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C91-C93 demonstrate successful extension of the method to a different bacterial order. The dataset composition is clearly described, proper train/test split was performed (124 training, 178 test), and the accuracy improvement over antiSMASH is consistent with pyoverdine results, supporting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C37",
+      "C60",
+      "C62"
+    ],
+    "result": "Application of the pipeline to 1,664 producer strains predicted substrates for 97.75% of 18,292 A domains, yielding 188 different pyoverdine structures. Of these, only 37 were previously reported, revealing 151 novel pyoverdine variants. The structures are composed of 13 main amino acid substrates with variation in combinations, lengths, and chirality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30, C32, C37, C60, C62 provide consistent quantitative results from the full dataset analysis. The numbers are internally consistent (17,880 + 133 + 279 = 18,292 A domains), and the discovery of 151 novel structures (188 total - 37 known) represents a major expansion of known pyoverdine diversity. The characterization of structural variation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Pyoverdine structural diversity was not strongly linked to phylogeny, with identical structures found in unrelated species and different structures in closely related species, suggesting frequent recombination and horizontal gene transfer of pyoverdine synthetase clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe phylogenetic patterns supported by Figure 4. The observations of phylogenetic incongruence are clearly stated, and the inference of horizontal gene transfer and recombination (C36) is a reasonable interpretation of the observed patterns, though direct evidence of transfer events is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "FpvA receptors are TonB-dependent receptors with three conserved domains (STN, Plug, TonB) and consistent length (~800 amino acids). However, full-sequence approaches cannot reliably identify FpvA receptors due to substantial sequence divergence between FpvA variants comparable to distances between FpvA and other siderophore receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 establish the challenge of FpvA identification. The structural information (C38-C39) is supported by citations, the length analysis (C40-C41) is based on reference sequences, and the limitation of full-sequence approaches (C42) is demonstrated by distance matrix analysis (Figure 5a). This provides clear motivation for the region-based approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Four sequence regions with highest FpvA identification scores were identified near the Plug domain surrounding the pyoverdine transmission channel. These regions, when concatenated into a 'feature sequence', characterized 98% of the distance matrix (r=0.98) compared to whole sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe the identification of informative sequence regions with strong quantitative support. The location near the Plug domain (C43) is functionally relevant given the domain's role in pyoverdine selectivity (C44, supported by citations). The high correlation (r=0.98) between feature and full sequences (C45) validates the feature extraction approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C61",
+      "C63"
+    ],
+    "result": "The region-based receptor annotation pipeline identified 4,547 FpvAs, 615 FpvBs, and 9,139 other receptors across 1,928 Pseudomonas genomes. The FpvAs clustered into 94 groups (70% identity threshold), with 92% located within 20 kb of pyoverdine synthetase genes. This reveals 91 new FpvA groups beyond the 3 previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52, C61, C63 provide comprehensive receptor annotation results with clear quantitative data. The genomic proximity analysis (C50) validates the FpvA assignments, and the discovery of 91 new groups (94 total - 3 known) represents a dramatic expansion of known receptor diversity. The clustering at different thresholds (60% and 70%) is appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "FpvA diversity varies substantially across phylogenetic clades, with P. aeruginosa and P. syringae showing lower diversity (1.55 and 1.60) compared to P. putida and P. fluorescens (4.82 and 3.77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 reports quantitative diversity metrics across clades using Shannon entropy. The differences are substantial and clearly quantified, though the manuscript does not provide statistical tests or confidence intervals for these diversity estimates. The biological interpretation of these differences is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Extended search across >30,000 complete bacterial genomes identified 31,936 putative FpvA receptors distributed across 12,944 strains spanning 13 phyla, 22 classes, 54 orders, 139 families, 468 genera, and 2,598 species, suggesting FpvA receptors may be widely distributed throughout the bacterial kingdom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C58 report extensive distribution of FpvA-like sequences across bacteria. However, C58 explicitly acknowledges that 'confirmatory experimental work is still pending.' The identification is based solely on sequence similarity thresholds (R1 and R2 scores) without functional validation. The broad taxonomic distribution is surprising and requires experimental confirmation to distinguish true FpvA receptors from convergently evolved or misidentified sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C107",
+      "C110",
+      "C114"
+    ],
+    "result": "Knowledge-guided learning using limited reference data (101 A domains from 13 pyoverdines, 21 FpvA sequences) is a powerful approach for predicting enzyme and receptor properties. The key insight is that full-sequence comparisons are non-informative; instead, feature sequences whose diversity is linked to function must be extracted. Supervised learning on genus-specific data outperforms generalized algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100, C107, C110, C114 articulate the conceptual framework and key insights of the study. The principle that functional diversity differs from overall sequence diversity (C97) is well-demonstrated by the results. The success with limited reference data (C95) and the superiority of genus-specific supervised learning (C114) are supported by the validation experiments. These represent important methodological insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The pipeline can be applied to draft genomes, a major improvement over antiSMASH. However, 63.4% of genomes (6,087/9,599) were lost due to truncated biosynthesis machinery at contig edges, attributed to sequence quality limitations rather than pipeline limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 accurately describe both an advantage and limitation of the approach. The ability to work with draft genomes (C101) is validated by the results, and the high loss rate (C103) is honestly reported. The attribution to sequence quality rather than method limitations (C105) is reasonable given that the machinery is large (C104) and positioned at contig edges. The speculation about future improvements with long-read sequencing (C106) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C20"
+    ],
+    "result": "The phylogeny-focused method outperforms existing bioinformatics tools including antiSMASH, which performs poorly on pyoverdines, particularly with non-proteinogenic amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C20 are supported by direct comparisons showing 94.4% vs 58.8% accuracy for pyoverdines and 83% vs 67% for Burkholderiales. The limitation of existing tools with non-proteinogenic amino acids (C109) is stated as general knowledge with citations. The performance advantage is substantial and consistently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "While 73 pyoverdine structures were previously known, the study predicted 151 new variants. Receptor diversity was underestimated because research focused on P. aeruginosa, which has only 3 receptor types (confirmed in 554 strains), while 91 new FpvA groups were discovered in environmental Pseudomonas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 contextualize the findings relative to prior knowledge. The previous focus on P. aeruginosa (C116-C117) is supported by citations, and the confirmation of 3 types in P. aeruginosa (C118) validates the method while highlighting the bias in prior sampling. The discovery of 91 new groups represents a major expansion of known diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The enormous functional diversity of pyoverdines and receptors may be context-dependent and locally adapted to different environmental conditions. Pyoverdines can function cooperatively (shared among strains with matching receptors) or competitively (locking away iron from non-matching strains). This diversity is likely an evolutionary consequence of microbial competition for limited iron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 provide ecological and evolutionary interpretation of the observed diversity. The cooperative and competitive functions (C120-C121) are supported by experimental citations. Iron limitation in natural habitats (C122) is well-established. The evolutionary inference (C123) is reasonable given the functional importance of iron acquisition, though direct evidence of selection is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The approach combining feature sequences with phylogenetic methods is extendable to other metabolites and microbial genera, and can be used to predict pyoverdine-mediated interaction networks and study iron competition in multi-species communities and plant-microbe ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C124-C126 describe the generalizability and future applications of the approach. The extendability to other systems (C64) is supported by the Burkholderiales validation (C25). The proposed applications (C124-C125) are reasonable extensions, though they remain to be demonstrated. The ubiquity of siderophores (C126) is supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The current algorithm does not predict tailoring reactions, which are crucial for final NRPS product structure prediction and remain unaddressed by existing pipelines. However, for pyoverdines, specificity is mainly determined by backbone composition, with tailoring reactions playing a relatively minor role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 acknowledge a limitation of the method while explaining why it is less critical for pyoverdines. The inability to predict tailoring reactions (C127) is honestly stated, and the general importance of tailoring reactions (C128) is acknowledged. The justification that tailoring is less important for pyoverdine specificity (C129) is supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The fluorophore component is highly conserved among the 188 predicted pyoverdine structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 reports conservation of the fluorophore, consistent with previous studies (cited). This is a confirmatory finding that validates the predictions against known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The number of A domains in Pseudomonas aeruginosa ranges between 7 and 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 provides a specific example of intraspecies variation in A domain number. This is a straightforward descriptive result from the dataset that illustrates the diversity within a single species.",
+    "result_type": "MINOR"
+  }
+]

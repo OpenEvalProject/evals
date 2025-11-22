@@ -9,13 +9,14 @@
       "C22",
       "C23",
       "C24",
-      "C25"
+      "C25",
+      "C64"
     ],
-    "result": "The authors developed a massively parallel reporter assay (MPRA) to assess the impact of 6555 disease-relevant UTR variants on RNA stability in HEK293T and SH-SY5Y cells. The assay showed that variants in both 5' and 3' UTRs significantly altered RNA half-life, with 1.1% of variants showing altered stability in HEK293T cells and 22.8% in SH-SY5Y cells, demonstrating high reproducibility (Spearman's \u03c1 > 0.93) and striking cell-type-specific differences in regulatory impact.",
+    "result": "The authors established a massively parallel reporter assay (MPRA) to assess RNA stability of 6555 UTR variant pairs from disease databases. UTR fragments were fused to EGFP, transcribed in vitro, transfected into HEK293T and SH-SY5Y cells, and monitored over time by amplicon sequencing. The assay showed high reproducibility (Spearman's \u03c1>0.93) and identified that variants in both 5' and 3' UTRs significantly altered RNA half-life, with 1.1% (40/3700) variants showing altered stability in HEK293T cells and 22.8% (839/3700) in SH-SY5Y cells, demonstrating striking cell-type-specific regulatory effects.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C18-C25 collectively describe the MPRA experimental design, execution, and key findings. The methodology is clearly described with appropriate controls, the results show high reproducibility across replicates, and the cell-type-specific differences are well-documented with statistical support. The experimental approach directly measures RNA decay rather than steady-state levels, addressing a key limitation of prior work.",
+    "evaluation": "Claims C18-C25 and C64 collectively describe a well-designed MPRA experiment with appropriate controls, replication, and statistical analysis. The high correlation between replicates (C22) and clear quantification of significant variants (C23-C24) support the robustness of the approach. The divergent effects between cell lines (C25) are acknowledged and discussed, adding to the validity of the findings.",
     "result_type": "MAJOR"
   },
   {
@@ -25,12 +26,12 @@
       "C27",
       "C28"
     ],
-    "result": "AU-rich elements (AREs) in both 5' and 3' UTRs generally destabilized RNA, with AUUUA/AUUA-containing AREs showing destabilizing effects in both UTR types. However, extremely U-dominant AREs (U8-10A1-2) stabilized RNA in SH-SY5Y cells, demonstrating context-dependent dual roles of AREs in RNA stability regulation.",
+    "result": "AREs in either 5' or 3' UTRs generally destabilized RNA in the MPRA assay. More specifically, AUUUA/AUUA-containing AREs were associated with RNA destabilization in both UTR types, while extremely U-dominant AREs (U8-10A1-2) stabilized RNA in SH-SY5Y cells, similar to effects observed in zebrafish.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C26-C28 are supported by data in Figures 2A-B and Figure 2\u2014figure supplement 1, with additional citation support from zebrafish studies. The findings are consistent with known ARE biology while revealing cell-type-specific nuances. The dual stabilizing/destabilizing effects are appropriately documented and align with prior literature on ARE-binding protein diversity.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C26-C28 are directly supported by experimental data shown in Figure 2A-B and Figure 2\u2014figure supplement 1. The findings are consistent with prior literature on AREs (citations provided) and demonstrate both expected destabilizing effects and novel stabilizing effects of U-rich sequences. The cell-type specificity adds nuance to the understanding of ARE function.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
@@ -39,13 +40,14 @@
       "C30",
       "C31",
       "C32",
-      "C33"
+      "C33",
+      "C65"
     ],
-    "result": "LASSO regression modeling identified UA dinucleotides and UA-rich sequences as the most prominent destabilizing elements for RNA stability in both UTR types. UA dinucleotides showed strong negative correlation with RNA half-life (Pearson's r = -0.287 for 5' UTRs, -0.377 for 3' UTRs) and overwhelmed other factors in SH-SY5Y cells. Cell-type-specific factors were also identified, including GU-rich sequences stabilizing 5' UTRs and CA-/UG-repeats destabilizing 3' UTRs in HEK293T cells.",
+    "result": "LASSO regression modeling identified UA dinucleotides and UA-rich motifs as the most prominent destabilizing elements for RNA stability in both UTR types. UA dinucleotides showed negative correlation with RNA stability (Pearson's r=-0.287 for 5' UTRs, -0.377 for 3' UTRs) and overwhelmed other factors in SH-SY5Y cells. Additional destabilizing factors included CA- and UG-repeat sequences in 3' UTRs of HEK293T cells, while GU-rich sequences in 5' UTRs stabilized RNAs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C33 describe the LASSO regression analysis and its key findings. The statistical approach is appropriate for handling multicollinearity among features, and the results are well-supported by Figures 3 and 4. The correlation coefficients are statistically significant and the cell-type-specific differences are clearly documented. The modeling approach addresses the complexity of multiple regulatory factors acting simultaneously.",
+    "evaluation": "Claims C29-C33 and C65 are well-supported by comprehensive LASSO regression analysis (Figure 3) and correlation analyses (Figure 4A,C). The modeling approach appropriately addresses multicollinearity and uses bootstrap resampling for robustness. The identification of UA dinucleotides as a universal destabilizing motif is supported by consistent effects across cell lines and UTR types, with appropriate statistical quantification.",
     "result_type": "MAJOR"
   },
   {
@@ -54,60 +56,65 @@
       "C34",
       "C35",
       "C36",
-      "C37"
+      "C37",
+      "C62",
+      "C66",
+      "C67"
     ],
-    "result": "Mutational gain of UA dinucleotides is associated with reduced RNA stability. This was demonstrated through analysis of 3' UTR mutations showing propensity for UA dinucleotide gain in destabilizing variants, validation in a 5' UTR random library showing destabilization upon UA dinucleotide addition, and analysis of endogenous mRNA showing elevated UA-dinucleotide ratios in UTRs promote RNA decay while coding region UA-dinucleotide ratios are inconsequential.",
+    "result": "Mutational gain of UA dinucleotides is linked to reduced RNA stability. 3' UTRs with stability loss showed propensity to accumulate UA dinucleotide gain mutations. Validation using a 5' UTR random library confirmed that acquisition of additional UA dinucleotides destabilized RNAs. Analysis of endogenous transcripts (HEK293 and K562 cells) demonstrated that elevated UA-dinucleotide ratios in both UTRs significantly promote RNA decay, with this effect being specific to UTRs and not observed in coding regions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C34-C37 are supported by multiple lines of evidence including MPRA data (Figure 4E), independent validation in a random library (Figure 4F), and analysis of endogenous transcripts (Figure 4G). The specificity to UTRs versus coding regions strengthens the conclusion. The convergence of evidence from different experimental approaches provides strong support for the causal relationship between UA dinucleotide gain and reduced stability.",
+    "evaluation": "Claims C34-C37, C62, C66-C67 are supported by multiple lines of evidence: MPRA data (Figure 4E), independent validation with random library (Figure 4F), and analysis of endogenous transcripts using SLAM-seq data (Figure 4G). The specificity to UTRs (C37) strengthens the mechanistic interpretation. The convergence of evidence from synthetic and endogenous systems provides strong support for the causal role of UA dinucleotides in RNA destabilization.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C38",
-      "C39",
-      "C40"
-    ],
-    "result": "Intrinsic properties of UTRs influence their susceptibility to mutational effects on RNA stability. Library RNAs degraded much faster in SH-SY5Y cells than HEK293T cells. Reference UTRs whose mutant counterparts significantly altered stability had significantly different baseline half-lives and tended to harbor more NOVA1 and PPIE binding sites but fewer FMR1 binding sites.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C40 describe cell-type and sequence-context effects on RNA stability. The observations are supported by Figure 1\u2014figure supplement 1D and Figure 5\u2014figure supplement 1A,D. The findings appropriately acknowledge that the cellular environment and intrinsic UTR properties modulate the effects of mutations, though the mechanistic basis for these differences requires further investigation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
+      "C40",
       "C41",
       "C42",
       "C43",
       "C44",
-      "C45",
-      "C46"
+      "C56",
+      "C68"
     ],
-    "result": "GC content and UA dinucleotides interact to regulate RNA stability. UA dinucleotides showed stronger association with RNA half-life than GC content, and the GC-stability relationship became non-significant when accounting for UA dinucleotides. The interaction term (UA-diNT% \u00d7 GC%) was significant in 3 of 4 experimental groups. UA dinucleotides strongly destabilized RNA in low GC content contexts, but high GC content neutralized this effect, with the protective effect of GC content being strongest for high UA-dinucleotide ratios.",
+    "result": "UA dinucleotides exhibited stronger association with RNA half-life than GC content, with GC content becoming non-significant when accounting for UA dinucleotides in multivariate regression. However, high GC content (top 50%) neutralized the destabilizing effect of UA dinucleotides, while UA dinucleotides strongly destabilized RNA in low GC content contexts. The stabilizing/destabilizing effects of UA deletion/addition were only observed under low GC content conditions, indicating that elevated GC content protects high-UA RNA from degradation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C46 describe a complex statistical interaction supported by multivariate regression analysis and stratified analyses shown in Figure 5A and Figure 5\u2014figure supplement 2. The statistical approach is appropriate, with specific p-values provided for interaction terms. The reciprocal nature of the interaction is well-documented through multiple complementary analyses. The mechanistic interpretation (structural protection) is reasonable but remains somewhat speculative.",
+    "evaluation": "Claims C40-C44, C56, and C68 are supported by comprehensive statistical analyses including univariate and multivariate regression with interaction terms (Figure 5\u2014figure supplement 2A), stratified analyses (Figure 5A-B), and validation with independent datasets (Figure 5C-E). The interaction between UA dinucleotides and GC content is well-characterized with appropriate statistical tests. The mechanistic interpretation is reasonable given the data, though the exact molecular mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C69"
+    ],
+    "result": "UA dinucleotides are enriched in P-body-resident mRNAs, particularly in 3' UTRs. RNAs with multiple RBP binding partners per UA dinucleotide displayed longer half-life compared to those with few binding partners, based on both eCLIP experimental data and predicted binding sites. Validation by actinomycin D treatment showed high correlation (\u03c1=0.8) with MPRA results according to RBP binding site density. Further analysis revealed polarized roles of UA-dinucleotide-binding proteins in RNA protection versus degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C69 are supported by multiple complementary analyses: P-body transcriptome data (Figure 5D-E), eCLIP and predicted RBP binding analysis (Figure 5F-G), and orthogonal validation with actinomycin D (Figure 5H-I). The correlation between MPRA and actinomycin D results (C47) provides important validation. The identification of polarized RBP roles (Figure 5J) is well-supported, though the specific mechanisms require further investigation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C47",
       "C48",
       "C49",
       "C50",
-      "C51"
+      "C51",
+      "C70"
     ],
-    "result": "RBP binding protects RNA from UA dinucleotide-mediated degradation. UA dinucleotides are enriched in P-body-resident mRNAs, with greater enrichment when GC content is low. RNAs with multiple RBP binding partners per UA dinucleotide displayed longer half-life. Validation by actinomycin D treatment showed high correlation (\u03c1=0.8) with MPRA results according to RBP binding site density. UA-binding RBPs were identified that either safeguard or promote RNA degradation.",
+    "result": "Genome-wide analysis revealed that UA-dinucleotide ratios in UTRs reflect functional gene groupings. 5' UTRs of genes regulating appetite, apoptosis, and synaptic signaling showed highest UA-dinucleotide ratios, while glutathione metabolism genes showed lowest. For 3' UTRs, genes linked to integrin activation, interleukin-mediated pathway, and B-cell differentiation had highest ratios. Notably, genes with high UA-dinucleotide ratios in both UTRs were all related to immune response, suggesting coordinated stability regulation at the transcriptomic level.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C47-C51 are supported by multiple lines of evidence including P-body transcriptome analysis (Figure 5D), eCLIP and predicted RBP binding data (Figures 5F-G), and independent validation with actinomycin D (Figures 5H-I). The correlation between MPRA and actinomycin D results strengthens confidence in the findings. The dual roles of RBPs are appropriately documented in Figure 5J, though the mechanistic details remain to be fully elucidated.",
+    "evaluation": "Claims C48-C51 and C70 are supported by comprehensive genome-wide analysis with appropriate statistical testing (Figure 6A-F). The functional enrichment analysis uses established GO terms and shows clear patterns. The finding that immune response genes have elevated UA-dinucleotide ratios in both UTRs (C51, C70) is particularly compelling and biologically plausible given the need for rapid turnover of immune response transcripts. The sliding window analysis (Figure 6C-D) adds spatial resolution to the findings.",
     "result_type": "MAJOR"
   },
   {
@@ -115,70 +122,32 @@
     "claim_ids": [
       "C52",
       "C53",
-      "C54"
+      "C61",
+      "C71"
     ],
-    "result": "UA-dinucleotide ratios in UTRs reflect functional gene groupings. Genes regulating appetite, apoptosis, and synaptic signaling have the highest 5' UTR UA-dinucleotide ratios, while genes involved in integrin activation, interleukin-mediated pathways, and B-cell differentiation have the highest 3' UTR UA-dinucleotide ratios. Gene groups with high UA-dinucleotide ratios in both UTRs are all related to immune response.",
+    "result": "Analysis of cancer patient samples and Taiwan Biobank data demonstrated that stability-altering UTR variants are associated with disease phenotypes. Two 3' UTR mutations (DDP4 and CASP7) involving A/T deletions in TA-rich sequences showed increased RNA and protein expression in cancer samples. Q-Q plot analysis of Taiwan Biobank data showed that subjects harboring stability-altering UTR variants were more likely to display abnormal biochemical phenotypes, with the most significant association found for APOC3 3' UTR variant (c.*40G>C) and blood triglyceride levels (p=3.5\u00d710\u207b\u2077\u2074).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C54 are supported by genome-wide analysis shown in Figures 6A-B and 6E-F. The statistical approach using Fisher-Pitman permutation tests is appropriate for comparing GO term enrichment. The finding that immune response genes show coordinated high UA-dinucleotide ratios in both UTRs is particularly compelling and suggests functional significance. However, the analysis is correlative and does not establish causality.",
+    "evaluation": "Claims C52-C53, C61, and C71 are supported by analysis of TCGA cancer data (Figure 7A-B) and Taiwan Biobank data (Figure 7C-D). The findings are consistent with the MPRA results showing UA-rich sequences as destabilizing. The APOC3 association is particularly strong with genome-wide significant p-value and is consistent with known biology (C55). However, the cancer data analysis would benefit from larger sample sizes and the biobank associations require replication in independent cohorts.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C64"
+      "C38",
+      "C39",
+      "C63"
     ],
-    "result": "Stability-altering UTR variants are associated with disease phenotypes. Two 3' UTR mutations (DDP4 and CASP7) involving A/T deletions in TA-rich sequences showed increased RNA and protein expression in cancer samples. Analysis of Taiwan Biobank data showed that p-values were skewed toward stability-altering variants, indicating subjects harboring these variants are more likely to display abnormal biochemical phenotypes or disease.",
+    "result": "Reference UTRs whose mutant counterparts significantly altered RNA stability showed intrinsic differences in half-life and motif composition. Ref UTRs with destabilizing or stabilizing mutations had significantly longer or shorter RNA half-life, respectively. These UTRs tended to harbor more NOVA1 and PPIE binding sites but fewer FMR1 binding sites. Additionally, library RNAs in SH-SY5Y cells degraded much faster than in HEK293T cells despite identical experimental procedures.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C56, C64 are supported by analysis of cancer datasets (Figure 7A-B) and Taiwan Biobank data (Figure 7C). The Q-Q plot analysis appropriately demonstrates enrichment of associations. However, the cancer analysis is limited to two examples, and the TWB analysis, while showing statistical enrichment, does not establish causality. The findings are consistent with the hypothesis but would benefit from additional validation.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C38-C39 and C63 are supported by data in Figure 5\u2014figure supplement 1 and Figure 1\u2014figure supplement 1D. The findings reveal important context-dependency of mutational effects and cell-type-specific RNA stability control. The motif analysis (C39) provides mechanistic insights, though the specific roles of these RBPs require further validation. The cell-type differences (C63) are well-documented and appropriately discussed as reflecting differences in RBP composition and RNA degradation machinery.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
-    "claim_ids": [
-      "C58"
-    ],
-    "result": "The APOC3 3' UTR variant rs5128 (c.*40G>C) showed the strongest association with plasma triglyceride levels (p = 3.5\u00d710\u207b\u2077\u2074) in the Taiwan Biobank cohort, as well as associations with total cholesterol and self-reported hyperlipidemia.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C58 is supported by Figure 7C-D and is consistent with prior literature on APOC3 function. The statistical significance is extremely strong, and the association with a metabolically relevant gene strengthens confidence. However, the claim relies on prior knowledge about APOC3 function rather than direct experimental validation in this study.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C59",
-      "C60",
-      "C61"
-    ],
-    "result": "The UA-dinucleotide ratio better explains RNA stability than GC content or folding energy, suggesting sequence-specific recognition by trans factors rather than structure-based regulation. This is consistent with RNase A family specificity, which shows >100-fold preference for UpA over UpG substrates.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C59-C61 integrate the study's findings with mechanistic context from the literature. The comparison of explanatory power is supported by the regression analyses. The connection to RNase A specificity (C60-C61, supported by citations) provides a plausible mechanistic explanation, though direct evidence for RNase A involvement in the observed effects is not provided in this study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C63",
-      "C65"
-    ],
-    "result": "More 5' UTR variants than 3' UTR variants caused stability changes in the MPRA, and mutational gain of UA dinucleotides is linked to diminished RNA half-life.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63 and C65 are directly supported by Figure 1B and Figure 4E respectively. These observations are straightforward and well-documented. The finding that 5' UTRs show more variant effects challenges the traditional focus on 3' UTRs in stability regulation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R13",
     "claim_ids": [
       "C1",
       "C2",
@@ -197,16 +166,28 @@
       "C15",
       "C16",
       "C17",
+      "C55",
+      "C57",
       "C58",
-      "C60",
-      "C61",
-      "C62"
+      "C59"
     ],
-    "result": "Background claims establishing the biological context for UTR function, disease relevance, and prior knowledge about RNA stability regulation mechanisms.",
+    "result": "The manuscript provides extensive background on UTR biology, RNA stability mechanisms, and disease associations. This includes: ~3.7% of disease variants occur in UTRs; average UTR lengths in humans (~210 nt for 5' UTR, ~1030 nt for 3' UTR); UTR regulatory mechanisms involving AREs, miRNAs, RBPs, and structural elements; examples of disease-causing UTR mutations; and biochemical properties of RNases including >100-fold preference for UpA over UpG substrates.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims (C1-C17, C58, C60-C62) are all supported by appropriate citations to the literature and provide necessary context for the study. They represent established knowledge rather than novel findings from this work. The citations appear appropriate and the claims accurately represent prior work.",
+    "evaluation": "Claims C1-C17 and C55-C59 are all supported by appropriate citations to published literature. These claims establish the scientific context and rationale for the study. While these are not novel findings from this work, they are accurately represented and properly attributed. The background information is relevant and supports the motivation for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "More 5' UTR variants than 3' UTR variants caused stability changes in the MPRA data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is stated in the text and references Figure 1B, but the volcano plots in Figure 1B do not clearly show a quantitative comparison between 5' and 3' UTR variant effects. The claim appears to contradict the data in C23-C24 which show more significant variants in 3' UTRs (11 in 3' vs 29 in 5' for HEK293T; 288 in 3' vs 551 in 5' for SH-SY5Y). The claim requires clarification or correction, as the supporting evidence is ambiguous or potentially contradictory.",
     "result_type": "MINOR"
   }
 ]

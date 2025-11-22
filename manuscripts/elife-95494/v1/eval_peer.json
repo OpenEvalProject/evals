@@ -1,0 +1,112 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C44",
+      "C45",
+      "C50",
+      "C55"
+    ],
+    "result": "ImmCellTyper is a novel, comprehensive toolkit for CyTOF data analysis that incorporates BinaryClust for semi-supervised clustering, includes batch effect correction functionality, and provides a five-step workflow for immune profiling. The authors claim it is the first integrated pipeline with a batch correction module and combines expert biological knowledge with automated cell type identification.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm that 'ImmCellTyper presents a useful toolkit for CyTOF data analysis, integrating BinaryClust for semi-supervised clustering and cell type annotation' and note it 'integrates a variety of tools to perform data quality analysis, batch effect correction, dimension reduction, unsupervised clustering, and differential analysis.' The methodology is described as 'appropriate and validated.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "BinaryClust demonstrates superior or equivalent performance compared to existing clustering tools in benchmarking studies. It matches manual gating precision with strong correlations (R\u00b2 = 0.96-1.0, all p < 0.0001), shows no consistent bias in Bland-Altman analysis, and achieves high F-measure (0.94) and ARI (0.91) scores. BinaryClust and LDA both outperform flowSOM, with BinaryClust remaining consistent with manual gating while flowSOM shows significant discrepancies for certain cell types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers state that 'the results on different benchmark indicates competitive or better performance (in terms of accuracy and speed) depending on the method' and describe 'the evidence supporting the findings is convincing, with appropriate and validated methodology.' The benchmarking results are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "BinaryClust exhibits the highest computational speed in the MPN and Influenza datasets but is slightly slower than flowSOM in the COVID-19 dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge that the results indicate 'competitive or better performance (in terms of accuracy and speed) depending on the method,' implicitly accepting the speed comparison findings without raising concerns about the variable performance across datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C34",
+      "C48",
+      "C49"
+    ],
+    "result": "BinaryClust uses k-means clustering (k=2) to divide positive and negative cell populations for each marker, leveraging the binary or bi-modal distribution characteristic of CyTOF markers after arcsinh transformation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note that 'the proposed algorithm takes into account the prior knowledge' and accept the methodology without critique. The technical approach is implicitly validated through the reviewers' acceptance of the overall findings and their statement that the methodology is 'appropriate and validated.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C27",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors validated BinaryClust using multiple datasets including a newly generated MPN dataset (7 patients, 2 healthy donors with 37-marker panel), an influenza dataset, and a published COVID-19 dataset (82 FCS files with 40-plex panel). Manual gating by two independent experts served as the reference standard, and visual comparisons showed high similarity between BinaryClust and manual gating.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm that the 'evidence supporting the findings is convincing, with appropriate and validated methodology,' accepting the validation approach and datasets without raising concerns about the experimental design or reference standards used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of the COVID-19 dataset revealed significant immune alterations in multiple cell types (B cells, basophils, cDCs, monocytes, NK cells, CD8 T cells, neutrophils, pDCs; all p < 0.05). Novel findings include significantly elevated Granzyme B across all immune cell types, substantial TMEM173 up-regulation in monocytes, neutrophils, and CD4 T cells, and low PD-L1 expression, suggesting immune activation without exhaustion regardless of disease severity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe the toolkit as offering 'a robust solution for cell type identification and differential analysis' and state that 'the evidence supporting the findings is convincing.' The COVID-19 analysis results are presented as a demonstration of the pipeline's capabilities and are accepted without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The authors acknowledge that ImmCellTyper's semi-supervised cluster identification may not be well suited for direct identification of specific subpopulations defined by continuum markers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This limitation is explicitly stated by the authors and not contested by reviewers. The reviewers' overall positive assessment suggests they accept this acknowledged limitation as reasonable given the tool's design and intended use cases.",
+    "result_type": "MINOR"
+  }
+]

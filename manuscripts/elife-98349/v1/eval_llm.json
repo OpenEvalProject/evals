@@ -2,223 +2,305 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C4",
-      "C5",
-      "C35",
-      "C36",
-      "C37",
       "C38",
       "C39",
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49"
+      "C40"
     ],
-    "result": "Mice were trained in a tactile discrimination task where they learned to discriminate two orthogonal directions of whisker stimulation (rostrocaudal and ventrodorsal), with one direction (CS+) paired with water reward and the other (CS-) unrewarded. Within a week, all mice learned to reliably lick to the CS+ while withholding licks to the CS-, performing substantially above chance. Apical tufts in layer 5 pyramidal neurons of barrel cortex were longitudinally imaged using two-photon and SCAPE microscopy across conditioning days, as well as on unrewarded pre- and post-conditioning days.",
+    "result": "Mice rapidly learned to discriminate the direction of whisker stimuli in the behavioral task. Within a week (by sessions 7\u20139), every mouse tested learned to reliably lick to the CS+ while withholding licks to the CS-, performing substantially above chance after a single week of training.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4-C49 describe the experimental design, behavioral paradigm, and imaging methods. The behavioral data (C39-C43) demonstrate successful learning with statistical support (performance above chance). The imaging approach (C44-C49) is well-documented with appropriate controls (pre- and post-conditioning sessions). The methods are standard and appropriately applied.",
+    "evaluation": "Claims C38-C40 are supported by behavioral data shown in Figure 1. The learning curves demonstrate rapid acquisition of the discrimination task with performance above chance levels within one week, providing clear evidence for successful behavioral learning.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C6",
-      "C7",
+      "C52",
+      "C53",
       "C54",
       "C55",
-      "C56",
-      "C57",
-      "C58",
       "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C73"
+      "C63"
     ],
-    "result": "Reinforcement learning, but not repeated stimulus exposure, enhanced tuft selectivity for both CS+ and CS- directions equally. In naive animals, average responses to CS+ and CS- were similar with no inherent bias. After learning, responses remained similar in magnitude at the population level, but individual tufts developed selective responses to one stimulus or the other. The repeated exposure control group showed stable selectivity distributions over time, demonstrating that reinforcement, not mere stimulus exposure, drives enhanced selectivity.",
+    "result": "Average responses of tufts to the CS+ and CS- were similar during pre-conditioning and remained similar after learning, indicating no inherent bias in naive animals and no bias development for the CS+ among dendritic tufts after learning. Reinforcement learning does not robustly bias the magnitudes of tuft calcium responses to either stimulus at the population level.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6-C73 present the core finding with appropriate statistical tests (signed rank tests, p-values reported) and proper controls (repeated exposure group). The comparison between conditioned and repeated exposure groups (C72-C73) is critical and well-executed. Sample sizes are adequate (440 pre tufts, 418 post tufts for conditioned; 317-321 tufts for repeated exposure). The finding that both CS+ and CS- selectivity increase equally is surprising but well-supported by multiple analyses.",
+    "evaluation": "Claims C52-C55, C59, C63 are supported by statistical analyses of imaging data shown in Figure 2d-e. Multiple statistical tests (signed rank tests, p-values reported) demonstrate no significant differences in average response amplitudes between CS+ and CS- across sessions, providing strong evidence that learning does not create a population-level bias toward the rewarded stimulus.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
+      "C67",
+      "C68",
+      "C70",
+      "C71",
       "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85"
+      "C82"
     ],
-    "result": "The selectivity index (SI) distribution shifted from centered around zero (naive) to a broader distribution with more highly selective tufts after conditioning, while the mean SI remained near zero across all sessions. This shift occurred in conditioned but not repeated exposure mice. The degree of enhancement in tuft selectivity correlated with behavioral discrimination performance (r=0.60, p<10\u207b\u2075). Neural discriminability (d-prime) increased significantly in conditioned animals but decreased in repeated exposure mice. Decoder performance improved significantly in conditioned but not repeated exposure mice.",
+    "result": "Under naive conditions, most tufts did not strongly prefer CS+ or CS-. After learning, many tufts exhibited more selective responses to one stimulus or the other. Reinforcement learning, and not simply repeated stimulus exposure, drives apical tufts to become more selective for either the CS+ or CS-.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C74-C85 provide quantitative support for the main finding using multiple complementary metrics (SI, d-prime, decoder performance). Statistical tests are appropriate (Wilcoxon rank sum, ANOVA, sign-rank tests) with significant p-values. The correlation between neural selectivity and behavioral performance (C79) strengthens the functional relevance. The decoder analysis (C83-C84) provides independent validation. Sample sizes are adequate and consistent across analyses.",
+    "evaluation": "Claims C67-C68, C70-C71, C74, C82 are supported by imaging data and statistical analyses shown in Figure 3. The comparison between conditioned and repeated exposure groups, with significant p-values (p<10\u207b\u2076 for SI distribution changes), demonstrates that reinforcement learning specifically enhances selectivity. The control group (repeated exposure) shows stable distributions, strengthening the conclusion.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C226",
-      "C227",
-      "C228",
-      "C229"
+      "C76",
+      "C77",
+      "C78"
     ],
-    "result": "To address potential segmentation artifacts from two-photon planar imaging, the authors used SCAPE volumetric microscopy to image entire apical tufts unambiguously. SCAPE imaging confirmed that task learning induced significant increases in tuft selectivity (pre vs last-rewarded: p<10\u207b\u2075, pre vs post: p<10\u207b\u2074), with SI magnitudes similar between two-photon and SCAPE methods. This validates that the observed effects reflect changes at the level of individual dendritic tufts, not segmentation errors.",
+    "result": "The degree of enhancement in tuft selectivity was closely correlated with conditioned animals' ability to discriminate stimuli across sessions (Pearson's r=0.60, p<10\u207b\u2075). Neural discriminability was correlated with behavioral performance and increased significantly across learning in conditioned animals.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C86-C95 and C226-C229 address a critical technical concern about segmentation accuracy. The use of SCAPE microscopy as an independent validation method is appropriate and rigorous. The quantitative similarity of SI magnitudes between methods (C93) and the statistical significance of the SCAPE results (C92) strongly support that the findings are not artifacts. This is an important control that strengthens confidence in the main results.",
+    "evaluation": "Claims C76-C78 are supported by correlation analyses shown in Figure 3e-g. The reported correlation coefficients and p-values provide quantitative evidence linking neural selectivity changes to behavioral performance. The statistical significance is strong (p<10\u207b\u2075 for correlation, p<10\u207b\u00b3 for discriminability increase).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C8",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C100",
-      "C101",
-      "C102",
-      "C103",
-      "C104",
-      "C105",
-      "C106"
+      "C80",
+      "C81"
     ],
-    "result": "Longitudinal tracking revealed that selective tufts emerged primarily from initially unresponsive populations. Approximately 40% of initially unresponsive tufts developed responses in both groups, but conditioned animals had significantly more selective tufts (p=0.04). Among initially unresponsive tufts that became responsive, the SI distribution was shifted toward higher selectivity in conditioned vs repeated exposure mice (p<10\u207b\u2075). Initially responsive tufts also showed greater increases in selectivity magnitude after conditioning (p=0.01). A small subset of initially highly selective tufts became unresponsive after learning.",
+    "result": "Decoder performance increased significantly when comparing Pre and First sessions to Post and Last sessions in conditioned animals (p=0.002), whereas decoder performance did not improve over time in the repeated exposure mice (p=0.22).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8 and C96-C106 describe the longitudinal dynamics of tuft responses. The analysis appropriately tracks individual tufts across sessions, which is a strength. Statistical comparisons between conditioned and repeated exposure groups are appropriate (t-tests, Wilcoxon rank sum tests) with significant p-values. The finding that both initially unresponsive and responsive tufts contribute to enhanced selectivity is well-supported. The observation about loss of responsivity in some highly selective tufts (C104-C105) is interesting but represents a small effect.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C80-C81 are supported by SVM decoder analysis shown in Figure 3\u2014figure supplement 2. The statistical tests with reported p-values demonstrate that stimulus identity can be decoded more accurately after learning in conditioned but not repeated exposure animals, providing independent validation of enhanced selectivity.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C9",
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111",
-      "C112",
-      "C113",
-      "C114",
-      "C115",
-      "C116",
-      "C117",
-      "C118",
-      "C119",
-      "C120",
-      "C121",
-      "C122"
+      "C89",
+      "C90",
+      "C91",
+      "C92"
     ],
-    "result": "Animal movement (whisking and licking) did not account for changes in stimulus selectivity. Whisking amplitude and reliability were similar for CS+ and CS- throughout learning. Air puff stimuli predicted calcium influx much more reliably than whisking amplitude (p<10\u207b\u00b9\u00b2). Behaviorally modulated tufts (where responses differed between correct rejection and false alarm trials) accounted for only ~10% of the population. After excluding behaviorally modulated tufts, selectivity still increased significantly from early to late learning (p=0.02). Multivariate regression showed that stimulus coefficients were 3.3 times larger than movement coefficients.",
+    "result": "Task learning induced significant increases in tuft selectivity as measured by SCAPE microscopy. The SI magnitudes were similar between tufts imaged using two-photon microscopy and SCAPE. The effects observed in the two-photon dataset are not caused by errors in segmentation, but rather reflect changes at the level of individual dendritic tufts.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9 and C107-C122 address the critical control that enhanced selectivity reflects sensory coding rather than motor or choice signals. Multiple complementary analyses (whisking amplitude, regression, behavioral modulation) converge on the same conclusion. Statistical tests are appropriate with significant p-values. The multivariate regression (C120-C121) is particularly important for disentangling correlated variables. This is a thorough set of control analyses that strengthen the main conclusion.",
+    "evaluation": "Claims C89-C92 are supported by SCAPE imaging data shown in Figure 4. The volumetric imaging approach addresses potential segmentation artifacts from planar two-photon imaging. Quantitative comparison shows similar SI magnitudes between methods (mean \u00b1 s.e.m. reported), and statistical tests confirm significant selectivity increases (p<10\u207b\u2075), validating the two-photon findings.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C10",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C131",
-      "C132",
-      "C230",
-      "C231",
-      "C232"
+      "C95",
+      "C96",
+      "C97",
+      "C98"
     ],
-    "result": "Enhanced selectivity persisted after rewards were removed and animals ceased performing the task. Whisker trimming revealed that three mice performed the task exclusively with whiskers ('whiskers only') while two used multiple sensory modalities ('whiskers + other senses'). Both groups showed enhanced selectivity during the last-rewarded session, but only the 'whiskers only' group maintained enhanced selectivity during post-conditioning (p<10\u207b\u00b3). Selectivity remained stable throughout the post-conditioning session even as licking extinguished (p=0.94).",
+    "result": "In both conditioned and repeated exposure mice, approximately 40% of initially unresponsive tufts developed a response by the last session. However, in conditioned animals, the proportion that became selective was significantly larger than in repeated exposure mice (p=0.04). While both stimulus exposure and reinforcement can alter tuft tuning, the presence of reward increases the likelihood that initially unresponsive tufts develop selectivity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10 and C123-C132, C230-C232 demonstrate the persistence of learning-induced changes. The whisker trimming experiment (C123-C125) is a clever manipulation to assess sensory strategy. The differential persistence between groups (C128-C129) is interesting and suggests that the stability of enhanced representations depends on the relevance of the sensory modality. Statistical tests are appropriate. The finding that selectivity persists even as behavior extinguishes (C130-C131) is important for understanding the nature of the plasticity.",
+    "evaluation": "Claims C95-C98 are supported by longitudinal tracking data shown in Figure 5b. The statistical comparison between groups (p=0.04, 2-sample t-test; p=0.03, paired t-test) demonstrates that reinforcement specifically promotes selective responses. However, the p-value of 0.04 is close to the conventional threshold, suggesting the effect, while significant, is modest.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C50",
-      "C51",
-      "C52",
-      "C53"
+      "C99",
+      "C100",
+      "C101"
     ],
-    "result": "Individual segmented tufts were substantial in spatial extent (>100 \u00b5m), reflecting tuft-wide voltage-gated calcium spikes rather than branch-specific NMDA spikes. Successful calcium events averaged 28% \u0394F/F, consistent with previous studies. During intermediate learning, the average CS+ response exhibited a two-peak structure similar to reward-related signals observed previously, which disappeared by the final session.",
+    "result": "Among initially unresponsive tufts, the SI distribution was shifted toward the tails in conditioned but not repeated exposure mice (p<10\u207b\u2075). Among selective tufts, the |SI| distribution in conditioned mice was significantly greater than in repeated exposure mice (p=0.006). Tufts in conditioned mice exhibited a greater increase in |SI| across sessions compared to repeated exposure mice (p=0.01).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C53 provide technical validation of the imaging approach. The spatial extent criterion (C50) is reasonable for distinguishing global from local events. The amplitude measurement (C51) is consistent with prior literature, providing external validation. The transient two-peak structure (C52-C53) is an interesting observation but is somewhat speculative in interpretation. Overall, these claims support the technical quality of the data.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C99-C101 are supported by longitudinal analyses shown in Figure 5f-h. Multiple statistical tests with significant p-values demonstrate that conditioning not only increases the proportion of selective tufts but also enhances the magnitude of selectivity. The consistency across different analyses strengthens the conclusion.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C11",
-      "C134",
-      "C135",
-      "C136",
-      "C137",
-      "C138",
-      "C139",
-      "C140",
-      "C234",
-      "C235"
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C116"
     ],
-    "result": "The authors conclude that learning produces long-lasting realignment of apical dendrite tuft responses to behaviorally relevant dimensions of a task. L5 apical tufts acquire enhanced representations of multiple stimuli during learning, with selectivity enhanced for both CS+ and CS- equally. This is particularly striking given that the stimuli are in orthogonal directions. Enhanced representations persist after mice cease performing the task, while repeated exposure degrades representations. Increased selectivity reflects alterations in sensory coding rather than movement.",
+    "result": "The magnitudes of whisker movements following both stimuli were stable across sessions (CS+: p=0.44; CS-: p=0.45). While whisking amplitude became slightly more reliable across sessions (p<10\u207b\u2074), the change in reliability was similar for CS+ and CS- (p=0.53). Changes in whisker movement cannot account for the changes in selectivity during learning.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11, C134-C140, C234-C235 represent the main conclusions of the study. These conclusions are well-supported by the data presented in the previous result groups. The finding that both stimuli are enhanced equally (C135) is surprising but robustly demonstrated. The persistence of enhanced representations (C137) is well-documented. The conclusion that changes reflect sensory coding (C140) is supported by extensive control analyses. The overall conclusion (C11, C234) is justified by the evidence.",
+    "evaluation": "Claims C107-C110, C116 are supported by whisking analysis shown in Figure 6b-c. Linear regression analyses show no significant relationship between whisking and session number for either stimulus. The statistical tests demonstrate that whisking behavior does not explain the observed changes in neural selectivity, ruling out this potential confound.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Whisking amplitude was similar between spontaneous ITI whisking bouts and evoked whisking responses to stimuli (p=0.53). ITI whisking bouts were not associated with a robust calcium response. Air puff stimuli more reliably predicted calcium influx than whisking amplitude for virtually all tufts (p<10\u207b\u00b9\u00b2). These results are consistent with other studies that found weak or no correlation between whisking and L5 tuft calcium spikes in S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by regression analyses shown in Figure 6d-e. The statistical tests (p<10\u207b\u00b9\u00b2) provide strong evidence that stimuli, not whisking, drive tuft calcium responses. Consistency with previous literature (citations provided) strengthens the conclusion. The analysis effectively rules out whisking as a confounding variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C122"
+    ],
+    "result": "Behaviorally modulated tufts accounted for only ~10% of the total tuft population in both early and late learning. Selectivity increased significantly from early to late learning even when behaviorally modulated tufts were excluded (median |SI|: 0.38 vs 0.47, p=0.02). Enhanced selectivity during learning cannot be explained by non-sensory signals related to the animals' behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118, C122 are supported by behavioral modulation analysis shown in Figure 7b-c. The exclusion of behaviorally modulated tufts and subsequent demonstration of increased selectivity (p=0.02) provides evidence that choice-related signals do not account for the observed effects. However, the relatively small effect size and p-value close to 0.05 suggest this is a modest effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Median coefficients for licking and whisking were on average 3.3 times smaller than median stimulus coefficients for the first rewarded, last rewarded, and post sessions (all p<10\u207b\u2076). Even after factoring out possible effects of movements, CS+ and CS- coefficients were enhanced by learning but not repeated exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by multivariate regression analysis shown in Figure 7\u2014figure supplement 1. The regression approach disentangles stimulus effects from movement-related signals. The highly significant p-values (p<10\u207b\u2076) and large effect size (3.3-fold difference) provide strong evidence that stimulus selectivity is not confounded by motor variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Both 'whiskers only' and 'whiskers + other senses' groups exhibited enhanced tuft selectivity in the last-rewarded session relative to pre-conditioning, with the effect more pronounced in 'whiskers only' mice. Enhanced selectivity persisted during the post-conditioning session for the 'whiskers only' group (p<10\u207b\u00b3) but not the 'whiskers + other senses' group (p=0.45). Tuft selectivity in barrel cortex is enhanced regardless of behavioral strategy, but outlasts conditioning only when mice rely solely on their whiskers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 are supported by whisker trimming experiment data shown in Figure 8a-b. The comparison between groups demonstrates that the persistence of enhanced selectivity depends on the sensory modality used for task performance. Statistical tests show significant persistence only in the 'whiskers only' group, suggesting modality-specific consolidation of learning-related changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "By the second half of the post-conditioning session, the probability of a lick occurring during the CS+ extinguished, approaching zero. Selectivity of tufts during the first and second halves of the post-conditioning sessions of mice that exclusively used their whiskers did not differ (p=0.94). Enhanced stimulus selectivity of apical tuft dendrites after reinforcement learning is long lasting, persisting even after mice cease performing the task and expecting reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 are supported by post-conditioning analysis shown in Figure 8c-d. The behavioral extinction (licking probability approaching zero) combined with stable neural selectivity (p=0.94) demonstrates that enhanced selectivity persists independently of task performance and reward expectation. This is a key finding showing long-lasting plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C134",
+      "C135",
+      "C233"
+    ],
+    "result": "Reinforcement learning, but not repeated stimulus exposure, enhanced tuft selectivity for both directions equally, even though only one was associated with reward. Enhanced selectivity persisted even after rewards were removed and animals ceased performing the task. Learning produces long-lasting realignment of apical dendrite tuft responses to behaviorally relevant dimensions of a task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C10-C11, C134-C135, C233 represent the main conclusions of the study, supported by multiple converging lines of evidence from Figures 2-8. The combination of conditioned vs. repeated exposure comparisons, longitudinal tracking, control for behavioral confounds, validation with SCAPE imaging, and demonstration of persistence provides strong support for the conclusion that reinforcement learning produces long-lasting, dimension-specific enhancement of tuft selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Individual segmented tufts were substantial in their spatial extent (>100 \u00b5m), reflecting tuft-wide voltage-gated calcium spikes rather than branch-specific NMDA receptor-mediated spikes. Successful calcium events across tufts averaged 28% \u0394F/F, consistent with previous studies of layer 5 apical dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by imaging data and comparison to literature. The spatial extent criterion (>100 \u00b5m) and amplitude measurements (28% \u0394F/F) are consistent with voltage-gated calcium spikes rather than local NMDA spikes. Consistency with previous studies (Manita et al., 2015; Xu et al., 2012) validates the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "During intermediate but not early learning, the average population response to the CS+ exhibited a two-peak structure similar to tuft reward-related signals observed previously in barrel cortex. By the last-rewarded and post sessions, the second CS+ peak was no longer visible, which could be an endpoint of mice learning that the conditioned stimulus predicts the upcoming reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 are supported by imaging data shown in Figure 2\u2014figure supplement 1, demonstrating a transient two-peak structure during intermediate learning. However, claim C51 is speculative about the functional interpretation. The disappearance of the second peak could have multiple explanations, and no direct test of the proposed mechanism is provided. The observation is interesting but the interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Conditioning session number was a poor predictor of both CS+ and CS- amplitudes (R\u00b2 values: 0.0064 and 0.0035). There was a small but significant decrease in amplitude from pre to last for CS+ (p<0.01) and CS- (p<10\u207b\u2077), but this was not permanent: amplitudes did not significantly differ between the pre and post sessions (p=0.53, 0.33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by regression and statistical analyses shown in Figure 2d-e. The low R\u00b2 values indicate session number is a poor predictor of amplitude. The transient decrease followed by recovery to baseline demonstrates that overall response magnitudes do not show permanent learning-related changes, distinguishing this from the selectivity changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Tufts that became unresponsive were more likely to be initially highly selective in the conditioned group than in the repeated exposure group (19/97 vs 3/81 with initial |SI|>0.75; p=0.0013). Learning can involve a loss of responsivity in a small subset of well-tuned tufts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by longitudinal analysis with significant statistical test (p=0.0013, Z approximation to binomial). This finding reveals that learning involves not only enhancement of selectivity but also silencing of some initially selective neurons. However, this affects only a small subset (~20% of tufts that became unresponsive), limiting the generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Two-photon and SCAPE microscopy were used to longitudinally track tuft-wide calcium spikes in apical dendrites of layer 5 pyramidal neurons in barrel cortex as mice learned a tactile behavior. Mice were trained to discriminate two orthogonal directions of whisker stimulation (rostrocaudal and ventrodorsal), with one direction paired with water reward (CS+) and the other unrewarded (CS-).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C35-C37, C41-C44 describe the experimental methods and are supported by the Methods section and figures. The use of Rbp4-Cre mice with GCaMP6f, targeting of layer 5B injections, and longitudinal imaging approach are well-documented. The behavioral paradigm with orthogonal stimulus directions is clearly described and implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
     "claim_ids": [
       "C1",
       "C2",
@@ -226,6 +308,18 @@
       "C12",
       "C13",
       "C14",
+      "C32"
+    ],
+    "result": "Learning alters cortical representations and improves perception. Apical tuft dendrites in cortical layer 1 are unique in their connectivity and biophysical properties and may be a key site of learning-induced plasticity. However, sensory representations of apical tufts and possible changes across learning have received little attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C14, C32 provide background and motivation for the study. These are supported by citations to previous literature and represent established knowledge (C1, C2, C12-C13) or identified gaps in knowledge (C3, C14, C32). The motivation for studying apical tufts in learning is well-justified based on prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
       "C15",
       "C16",
       "C17",
@@ -242,66 +336,88 @@
       "C28",
       "C29",
       "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34"
+      "C31"
     ],
-    "result": "The introduction establishes the background that learning alters cortical representations, that apical tuft dendrites are uniquely positioned for learning-induced plasticity due to their connectivity and biophysical properties, and that they receive top-down signals and can trigger calcium spikes that modulate plasticity and somatic firing. Previous work showed that apical tufts acquire cross-modal associations during training, and that manipulating apical dendrites impacts sensory task performance. However, sensory representations of apical tufts and changes across learning have received little attention. Rodents can discriminate whisker deflection directions.",
+    "result": "Apical tufts receive top-down signals from numerous cortical and thalamic areas. L5 distal tufts form a separate biophysical compartment from proximal dendrites and are in close proximity to the calcium spike initiation zone. Top-down signals can trigger tuft-wide calcium spikes that modulate synaptic plasticity and drive somatic burst firing. Neuromodulators can augment tuft excitability. L5 apical dendritic calcium spikes could be a crucial cellular mechanism in learning-related plasticity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C34 provide the scientific background and rationale for the study. These claims are well-supported by appropriate citations to the literature (C12-C34). The gap in knowledge (C32) is clearly identified. The background on apical dendrite properties (C15-C25) is accurate based on the cited literature. The rationale for using directional whisker stimulation (C33-C34) is appropriate. This provides solid motivation for the study.",
+    "evaluation": "Claims C15-C31 provide background on apical dendrite anatomy, physiology, and potential role in learning. These are supported by extensive citations to previous literature. The claims establish the biological plausibility and importance of studying apical tufts in learning, providing strong motivation for the current study.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R11",
+    "result_id": "R23",
     "claim_ids": [
-      "C66",
-      "C67",
-      "C68",
-      "C141",
-      "C142",
-      "C143",
-      "C144",
-      "C145",
-      "C146",
-      "C147",
-      "C148",
-      "C149",
-      "C150",
-      "C151",
-      "C152",
-      "C153"
+      "C33",
+      "C34"
     ],
-    "result": "The discussion interprets the findings in the context of known properties of barrel cortex neurons (angular tuning) and apical dendrites (modulation of plasticity and somatic firing). The authors propose that enhanced tuft selectivity could enable L5 cells to directly drive behavioral responses via subcortical projections, and that tuft spikes have the potential to modify somatic output both presently and in the future. Enhancing representations of relevant stimulus dimensions (both CS+ and CS-) rather than just the rewarded stimulus has multiple benefits for behavior, including enabling direct sensory-motor transformations.",
+    "result": "Rodents are known to sense wind direction using their whiskers and can be trained to discriminate different directions of whisker deflections.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C66-C68, C141-C153 present interpretations and speculations about the functional significance of the findings. While these interpretations are plausible and grounded in cited literature (C66, C142, C144), they are largely speculative (C146, C150-C153). The proposed mechanisms (C145, C147) are logical inferences but not directly tested. The functional benefits (C148, C153) are reasonable hypotheses but lack direct experimental support. These claims represent interesting ideas for future work but are not directly supported by the current data.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by citations to previous behavioral studies (Yu et al., 2016a,b; Nakamura et al., 2009; Bernhard et al., 2020). This establishes the feasibility and precedent for the behavioral paradigm used in the study.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R12",
+    "result_id": "R24",
     "claim_ids": [
-      "C154",
-      "C155",
-      "C156",
-      "C157",
-      "C158",
-      "C159",
-      "C160",
-      "C161"
+      "C64",
+      "C65",
+      "C66"
     ],
-    "result": "Learning produced a continuous and uniformly distributed representation of selectivity for the two stimuli, with no dominance of exclusively CS+ or CS- selective tufts. The authors speculate that continuous degrees of selectivity may provide robustness to variability from active movements and facilitate future adjustments. The uniform distribution may reflect high-dimensional neural representations and corresponds to a range of reward probability predictions. Recent work suggests that distributional reinforcement learning benefits behavior, and L5 corticostriatal synapses could provide a substrate for this.",
+    "result": "Barrel cortex neurons are tuned to the angle of whisker deflection, indicating that the sets of synaptic connections activated by the CS+ and CS- may be overlapping but should not be identical. Therefore, the possibility exists that responses to the CS+ and CS- can change independently of each other.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C154-C155 describe an observed property of the data (continuous, uniform distribution) that is supported. However, the interpretations of why this is beneficial (C156-C157) are speculative. The connection to high-dimensional representations (C158) is plausible but not directly tested. The link to distributional reinforcement learning (C160-C161) is an interesting hypothesis supported by one citation (C160) but is speculative in the context of this study. These are reasonable interpretations but lack direct experimental support.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by citations to previous studies (Bruno et al., 2003; Bruno and Sakmann, 2006; Ramirez et al., 2014) and logical inference. The angular tuning of barrel cortex neurons provides a mechanistic basis for why orthogonal stimulus directions could engage partially distinct circuits, supporting the experimental design rationale.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R13",
+    "result_id": "R25",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Two-photon microscopy acquires images with high resolution and speed, but the imaging field is restricted to a single focal plane. This method can only measure calcium signals from a thin cross-section of the three-dimensionally complex apical structures. Many spatial components extracted from two-photon data were comprised of dendritic branches that cross the imaging plane at different locations. A single apical tuft can exhibit non-homogenous branch-specific events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 identify a potential limitation of two-photon imaging and motivate the use of SCAPE microscopy. The observation in C85 is supported by Figure 4\u2014figure supplement 1a. The concern about segmentation errors is valid and appropriately addressed by the SCAPE validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "SCAPE microscopy allowed monitoring of calcium across entire apical tufts. Three-dimensional SCAPE datasets encompassed large portions of the apical tree including branches converging on bifurcation points in layer 2, enabling unambiguous identification of whole apical trees. Volumetric imaging allowed visualization of apicals in three dimensions and unambiguous screening for segmentation artifacts. The results from SCAPE are quantitatively similar to those from two-photon microscopy, confirming that the observation of enhanced selectivity with learning is not an artifact of planar imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88, C225-C227 describe the SCAPE validation approach and its results. The quantitative similarity between SCAPE and two-photon results (Figure 4) provides strong evidence that the main findings are not artifacts of the imaging method. This is a critical validation that strengthens confidence in the two-photon results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Movement in and of itself has little direct impact on tuft spikes, indicating that increased selectivity of apicals reflects alterations in sensory coding as animals learn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 are supported by multiple control analyses (Figures 6-7) and consistency with previous literature (Lacefield et al., 2019; Xu et al., 2012). The comprehensive analysis of whisking, licking, and behavioral choice demonstrates that the observed selectivity changes reflect sensory coding rather than motor or choice-related signals. This is a critical control for interpreting the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
     "claim_ids": [
       "C162",
       "C163",
@@ -323,29 +439,51 @@
       "C179",
       "C180",
       "C181",
-      "C182"
+      "C182",
+      "C183"
     ],
-    "result": "The discussion addresses why the current findings differ from previous studies showing enhanced representations of rewarded stimuli. The authors propose several explanations: (1) enhanced selectivity for both stimuli may be unique to apical tufts due to their distinct anatomical inputs and asymmetric coupling with somata; (2) learning-related changes may differ between layer 2/3 and layer 5 due to their different projection targets; (3) differences may exist between somatosensory and visual modalities, with whisker-mediated touch being particularly salient for mice.",
+    "result": "Past studies typically show that cortical representations are stronger for the rewarded stimulus. In contrast, the overall tuft calcium response to CS+ and CS- at the population level did not change significantly after learning. Instead, representations for both stimuli were enhanced by individual tufts developing selectivity. This divergence may result from differences between apical tufts and somata, between layer 2/3 and layer 5, or between somatosensory and visual modalities.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C162-C182 attempt to reconcile the current findings with previous literature. The proposed explanations are plausible and grounded in anatomical knowledge (C166, C168, C172-C173) and cited studies (C162, C167, C176, C180-C181). However, these are speculative explanations (C165, C170, C171, C175, C178, C182) that are not directly tested in the current study. The claim of novelty (C179) may be accurate but is difficult to verify. These represent reasonable hypotheses but lack direct experimental support.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C183 discuss how the current findings differ from previous studies and propose potential explanations. The contrast with previous literature is well-documented (citations provided). The proposed explanations based on anatomical and functional differences are plausible and supported by citations. However, these remain speculative hypotheses that would require additional experiments to test directly.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R14",
+    "result_id": "R29",
     "claim_ids": [
-      "C183",
       "C184",
       "C185",
       "C186",
       "C187",
-      "C188",
+      "C188"
+    ],
+    "result": "Enhanced selectivity could be due to changes in local synaptic connectivity, long-range inputs, or both. Enhanced representations persist after mice are no longer engaged in the task and receiving rewards, suggesting that enhanced representations may be a product of local plasticity in sensory cortex that alters receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C184-C186 are speculative about mechanisms. Claim C187 is supported by data (Figure 8), but claim C188 is an inference that is not directly tested. While the persistence of enhanced selectivity after task disengagement is consistent with local plasticity, it does not rule out persistent changes in long-range inputs or neuromodulatory tone. Additional experiments (e.g., optogenetic silencing of specific inputs) would be needed to distinguish these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
       "C189",
       "C190",
       "C191",
       "C192",
-      "C193",
+      "C193"
+    ],
+    "result": "Repeated exposure to stimuli can drive plasticity in sensory cortex and alter response tuning even in the absence of reward. At the population level, enhanced representations developed only when stimuli were behaviorally relevant. While the response dynamics of some tufts changed after repeated stimuli presentations, overall selectivity of the population did not increase when rewards were omitted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C193 are supported by the repeated exposure control group data (Figures 3, 5). The comparison demonstrates that while some plasticity occurs with repeated exposure (C189-C191, supported by citations), the enhancement of selectivity at the population level requires reinforcement (C192-C193). This is a critical control that distinguishes learning-related plasticity from stimulus-driven plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
       "C194",
       "C195",
       "C196",
@@ -356,69 +494,139 @@
       "C201",
       "C202",
       "C203",
-      "C204",
-      "C205",
-      "C206",
-      "C207",
-      "C208"
+      "C204"
     ],
-    "result": "The discussion proposes potential mechanisms for enhanced selectivity, including changes in local synaptic connectivity, long-range inputs, or both. The persistence of enhanced representations after task disengagement suggests local plasticity. The authors propose that reward-driven neuromodulator release (acetylcholine, norepinephrine) could increase apical dendrite excitability and promote plasticity. The CS- may acquire negative value (punishment), leading to acetylcholine release and enhanced representation. Task engagement may lead to sustained neuromodulator release. Specific mechanisms for how individual tufts become selective are proposed, including potentiation of weak inputs and disynaptic inhibition.",
+    "result": "Reward delivery may cause release of neuromodulators that augment apical tuft activity. Cortical layer 1 is innervated by cholinergic and adrenergic afferents. Salient events lead to release of these neuromodulators, which could increase apical dendrite excitability. The release of reward-driven neuromodulators may promote plasticity and enhanced representation of temporally aligned sensory inputs. Both CS+ and CS- representations may be enhanced by neuromodulatory mechanisms tied to reward and punishment, respectively. Task engagement may lead to sustained neuromodulator release, priming apical dendrites for plasticity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C183-C208 propose various mechanistic explanations for the observed plasticity. While these mechanisms are plausible and grounded in cited literature (C188-C189, C193-C194, C197, C199, C204, C207), they are largely speculative (C183-C185, C192, C195-C196, C198, C200-C203, C205-C208). The inference about local plasticity from persistence (C186) is reasonable but not definitive. The proposed neuromodulatory mechanisms are plausible but not directly tested. These represent testable hypotheses for future work but are not supported by the current data.",
+    "evaluation": "Claims C194-C204 propose neuromodulatory mechanisms for the observed plasticity. While these are plausible hypotheses supported by citations to relevant literature (C195-C197, C199, C201, C203), they remain speculative in the context of this study. No direct measurements of neuromodulator release or manipulations of neuromodulatory systems are performed. The proposed mechanisms are consistent with the data but not directly tested.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R15",
+    "result_id": "R32",
     "claim_ids": [
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Stimulus preference after learning in initially unresponsive tufts might be seeded by initially weak, directionally selective inputs that are potentiated by learning. The reduction of an apical response to a particular stimulus could be driven by local disynaptic inhibition between L5 pyramidal cells mediated by apical-targeting Martinotti cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C205-C207 propose specific cellular mechanisms for the observed changes in tuft selectivity. While these are plausible hypotheses supported by citations to relevant studies (C206), they are speculative in the context of this study. No direct tests of these mechanisms (e.g., recordings of synaptic inputs, manipulations of Martinotti cells) are performed. These remain interesting hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C208",
       "C209",
       "C210",
       "C211",
       "C212",
       "C213",
-      "C214",
-      "C215"
+      "C214"
     ],
-    "result": "The study replicated a previous finding of reward-related activity in apical tufts during intermediate learning, which disappeared by the final session. This transient effect was observed in four of seven animals only during CS+ trials. The authors speculate this might be due to the reward becoming predictable, drawing parallels to dopaminergic and noradrenergic responses in classical conditioning.",
+    "result": "A population of apical tufts exhibit activity around the time of reward in instrumental behavior. This reward-related activity was observed in four out of seven conditioned animals only during CS+ trials and was most prominent during intermediate conditioning sessions, disappearing by the final session. The disappearance might be attributable to the reward becoming predictable. Dopaminergic and noradrenergic neurons exhibit similar phenomena where responses shift from reward to predictive stimuli after learning.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C209-C211 describe a replicated observation from previous work (C209) with appropriate data (C210-C211). The interpretation (C212) is speculative but reasonable. The comparison to dopaminergic and noradrenergic systems (C213-C215) is supported by citations and provides a plausible framework. However, this is a secondary finding and the mechanistic explanation is speculative. The observation itself is supported but the interpretation is uncertain.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C208-C210 are supported by imaging data (Figure 2\u2014figure supplement 1) and consistency with previous work (C208, C210). However, claims C211-C214 are speculative interpretations. While the comparison to dopaminergic and noradrenergic neurons (C212-C213, supported by citations) provides a plausible framework, no direct test of the proposed mechanism is performed. The transient nature of reward-related activity is interesting but the interpretation remains uncertain.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R16",
+    "result_id": "R34",
     "claim_ids": [
+      "C215",
       "C216",
       "C217",
       "C218",
       "C219",
       "C220",
       "C221",
-      "C222",
-      "C223",
-      "C224",
-      "C225"
+      "C222"
     ],
-    "result": "The discussion addresses the distinction between global tuft-wide calcium spikes (analyzed in this study) and local NMDA spikes. Local NMDA spikes can promote branch-specific plasticity and may be important for learning, but are difficult to identify in planar imaging and their existence in vivo in barrel cortex L5 apicals is still an open question. The authors focused on global events and suggest that volumetric microscopy studies are needed to investigate local events and their relationship to global events during learning.",
+    "result": "Apical dendrites exhibit not only global spikes but also local NMDA spikes. Local NMDA spikes can promote prolonged plasticity within individual branches and are crucial for learning in motor cortex. This study focused on global tuft-wide calcium events. Local events are more difficult to identify in planar imaging, and their existence in vivo is still an open question for L5 apicals in barrel cortex. Local events may play important roles in plasticity processes that lead to emergence of global tuft spike selectivity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C216-C225 provide appropriate context about the scope and limitations of the study. The distinction between global and local events is well-established in the cited literature (C216-C219, C221-C222). The decision to focus on global events (C220) is justified by technical considerations (C221). The acknowledgment of limitations and suggestions for future work (C223-C225) are appropriate. This represents a fair assessment of what the study does and does not address.",
+    "evaluation": "Claims C215-C222 discuss the scope and limitations of the study regarding local vs. global dendritic events. The focus on global events (C219) is clearly stated and justified by technical limitations (C220-C221, supported by citations). The acknowledgment that local events may play important roles (C222) is appropriately speculative. The discussion accurately represents the scope of the study and identifies an important area for future investigation.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R17",
+    "result_id": "R35",
     "claim_ids": [
-      "C233",
-      "C236"
+      "C223",
+      "C224"
     ],
-    "result": "The authors speculate that in animals using multiple sensory modalities, selectivity may have been more widely distributed across sensory areas, diminishing the effect in barrel cortex. They conclude that the apical dendritic compartment may be key to understanding pathology in cognitive, memory, and learning disorders.",
+    "result": "Tufts were segmented based on spatiotemporal covariance using CaImAn. The segmentation method does not discount the possibility of errors where one tuft is split erroneously into two trees, or where two highly correlated tufts are merged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C223-C224 describe the analysis method and acknowledge its limitations. The use of CaImAn for segmentation is standard and appropriate. The acknowledgment of potential segmentation errors (C224) is honest and motivates the SCAPE validation experiments. This demonstrates appropriate scientific rigor in recognizing and addressing methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232"
+    ],
+    "result": "In contrast to previous studies, this study included an unrewarded post-conditioning session to examine whether learning-related effects persisted through extinction. Post-conditioning selectivity remains significantly higher than pre-conditioning, even after animals stop licking. The effects are much more pronounced in animals that relied exclusively on their whiskers. In animals using other sensory modalities, selectivity may have been more widely distributed and thus diluted in barrel cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C228-C231 are supported by experimental data (Figure 8). The inclusion of a post-conditioning session is a strength of the study design. The differential persistence based on sensory strategy (C230-C231) is an interesting finding. However, claim C232 is speculative about the mechanism. The proposed explanation is plausible but not directly tested. Additional experiments examining other sensory areas would be needed to test this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C133",
+      "C234",
+      "C235"
+    ],
+    "result": "This study is the first to investigate how learning a discrimination task alters apical tuft activity. Dendritic calcium spikes are an important cellular mechanism underlying changes in sensory encoding that occur with learning. The apical dendritic compartment may be key to understanding pathology in some cognitive, memory, and learning disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 about novelty appears justified based on the literature review. Claim C234 is supported by the experimental findings showing learning-related changes in tuft selectivity. However, claim C235 is speculative about clinical implications. While the connection to disease models is mentioned in the introduction (C27), no direct evidence linking the current findings to disease pathology is provided. This remains an interesting but speculative hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Sensitization of tufts to behaviorally relevant sensory dimensions may be a general feature of all sensory cortical areas. Tuft spikes enhance plasticity and modulate somatic burst firing. As learning increases apical selectivity, tuft events will amplify somatic burst output along the same axis, potentially enabling direct sensory-motor transformations. Learning produced a continuous and uniformly distributed representation. This may allow the system to be more robust to variability and facilitate future adjustments. The uniform distribution corresponds to a full range of reward probability predictions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C233 is a speculative explanation for the differential persistence between behavioral strategy groups. While plausible, it is not directly tested. Claim C236 is a broad speculative statement about clinical relevance that is not supported by the current data. These represent interesting ideas but lack experimental support.",
+    "evaluation": "Claims C141-C161 present theoretical interpretations and speculations about the functional significance of the findings. While these are interesting and plausible hypotheses, many are not directly tested in this study. Claims about generalization to other sensory areas (C141), direct sensory-motor transformations (C146, C152-C153), and functional benefits of continuous distributions (C156-C157, C159-C161) are speculative. Some claims are supported by citations (C142, C144, C160), but the specific functional interpretations in the context of this study remain uncertain.",
     "result_type": "MINOR"
   }
 ]

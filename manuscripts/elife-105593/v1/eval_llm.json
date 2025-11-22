@@ -2,6 +2,9 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
       "C50",
       "C51",
       "C52",
@@ -11,45 +14,44 @@
       "C56",
       "C57",
       "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62"
+      "C59"
     ],
-    "result": "After stroke, pericytes undergo significant cell death while endothelial cells (ECs) survive better. The pericyte pool initially decreases to ~50% at RP2D but then increases by 68.1% from RP2D to RP34D. Cell proliferation occurs mainly within the first 3 days, with EdU+ pericytes accounting for ~12.9% of all pericytes, leaving 27.6% of new pericytes of unknown origin.",
+    "result": "After stroke, pericytes undergo rapid death with ~50% survival at RP2D while >80% of ECs survive. The pericyte pool then increases by 68.1% from RP2D to RP34D, with 12.9% originating from self-proliferation (occurring mainly within the first 3 days) and 27.6% from an unknown source.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C62 provide converging evidence from TUNEL staining, immunofluorescence, flow cytometry, and EdU labeling showing differential survival of pericytes vs. ECs and quantifying pericyte pool dynamics. The data consistently demonstrate pericyte loss followed by recovery, with proliferation accounting for only part of the increase, establishing a knowledge gap that motivates the study.",
+    "evaluation": "Claims C47-C59 provide converging evidence from TUNEL staining, immunofluorescence, flow cytometry, and EdU labeling showing differential survival of pericytes vs. ECs and quantifying pericyte pool recovery. The data consistently demonstrate pericyte death, subsequent recovery, and identify a gap in understanding the origin of ~27.6% of new pericytes, which sets up the study's main investigation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
       "C63",
       "C64",
       "C65",
       "C66",
       "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75"
+      "C68"
     ],
-    "result": "Single-cell RNA sequencing of EGFP+ cells from iECs;Ai47 mice identified 10 major cell types including ECs and pericytes. Pseudotime trajectory analysis revealed a developmental trajectory from ECs to pericytes, with downregulation of EC-specific transcription factors and upregulation of pericyte-specific transcription factors during differentiation.",
+    "result": "Single-cell RNA-seq of EGFP+ cells from iECs;Ai47 mice identified 10 major cell types, with ECs comprising >90% of cells. Pseudotime trajectory analysis suggested a developmental trajectory from ECs to pericytes and arterial ECs, indicating ECs might transdifferentiate into pericyte-like cells after stroke.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C75 describe scRNA-seq analysis with appropriate quality control, cell type identification based on established markers (with citations), and pseudotime trajectory analysis. The findings are internally consistent and supported by multiple analytical approaches (UMAP clustering, differential gene expression, trajectory analysis), providing computational evidence for EC-to-pericyte transition.",
+    "evaluation": "Claims C60-C68 describe validation of the lineage tracing system and scRNA-seq analysis. The lineage tracing validation (C60-C62) is well-supported by immunofluorescence. The scRNA-seq analysis (C63-C67) provides computational evidence for EC-to-pericyte trajectory, though pseudotime analysis is inferential and requires experimental validation, which is provided in subsequent claims.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
       "C76",
       "C77",
       "C78",
@@ -62,115 +64,88 @@
       "C85",
       "C86",
       "C87",
-      "C88",
-      "C89",
       "C90",
       "C91",
       "C92",
       "C93",
-      "C94"
-    ],
-    "result": "Lineage tracing in iECs;Ai47 mice revealed EGFP+ cells that lost EC markers (CD31, ERG, GLUT1, VE-Cadherin) and expressed pericyte markers (CD13, PDGFR\u03b2, NG2) at RP34D. These EGFP+ non-ECs represented 22.45% of total pericytes, appeared at RP7D, peaked at RP14D, and were not proliferating (EdU-negative), indicating transdifferentiation from ECs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C76-C94 provide direct lineage tracing evidence using multiple complementary approaches (immunofluorescence, flow cytometry, EdU labeling). The specificity of EC labeling is well-controlled (C63-C65), and alternative explanations (proliferation, macrophage origin) are systematically excluded through additional experiments (C92-C99). The temporal dynamics and quantification are consistent across methods.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
+      "C94",
       "C95",
       "C96",
       "C97",
       "C98",
       "C99"
     ],
-    "result": "Alternative lineage tracing approaches confirmed EC-to-pericyte conversion. Intracerebroventricular AAV injection in newborn mice, Tie2Dre;Mfsd2aCrexER;Ai47 mice, and AAV2/9-BI30-CAG-EGFP infection all showed ~100% of EGFP+ non-ECs expressing pericyte marker CD13 at RP34D, ruling out bone marrow-derived macrophage contribution.",
+    "result": "Lineage tracing reveals that ECs give rise to pericyte-like cells (E-pericytes) after stroke. EGFP+ non-ECs detach from vessels, express pericyte markers (CD13, PDGFR\u03b2, NG2) but not EC markers, comprise ~22-28% of pericytes at RP34D, appear at RP7D peaking at RP14D, and survive >514 days. These cells exhibit fibroblast-like characteristics at RP8D and pericyte-like characteristics at RP34D, are non-proliferative, and acquire a pericyte-like transcriptome.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C95-C99 address a critical alternative explanation (macrophage-derived pericytes) using three independent labeling strategies. Each approach specifically labels brain ECs while avoiding bone marrow cells, and all converge on the same conclusion. This strengthens the main finding by eliminating confounding interpretations.",
+    "evaluation": "Claims C70-C99 provide extensive evidence from multiple lineage tracing systems (iECs;Ai47, Tie2Dre;Mfsd2aCrexER;Ai47, viral labeling), immunofluorescence, flow cytometry, and RNA-seq. The convergence of evidence from different labeling approaches (C90-C92) strengthens the conclusion. The temporal characterization (C80-C84) and lack of EdU labeling (C86) support transdifferentiation rather than proliferation. RNA-seq data (C93-C99) confirm transcriptomic changes consistent with EC-to-pericyte transition.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R5",
+    "result_id": "R4",
     "claim_ids": [
-      "C100",
       "C101",
       "C102",
       "C103",
       "C104",
       "C105",
       "C106",
-      "C107"
+      "C107",
+      "C108"
     ],
-    "result": "Bulk RNA-seq of sorted EGFP+ non-ECs showed they acquired a pericyte-like transcriptome, with downregulation of EC-specific genes and upregulation of pericyte-specific genes. EGFP+ non-ECs showed enhanced aerobic capacity compared to ECs and enrichment in cell migration pathways, consistent with their detachment from blood vessels.",
+    "result": "Depletion of E-pericytes using AAV2/9-BI30-NG2-promoter-DIO-DTA significantly increases BBB leakage (Evans blue and trypan blue) and brain atrophy at RP34D after stroke, demonstrating that E-pericytes prevent vessel leakage and preserve BBB function.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C100-C107 provide transcriptomic validation of the cell identity change using bulk RNA-seq. The analysis includes appropriate controls (contralateral ECs), uses established gene signatures from literature (with citations), and shows functional pathway enrichment consistent with observed morphological changes. The metabolic shift from anaerobic to aerobic is supported by citations.",
+    "evaluation": "Claims C101-C108 describe a well-designed loss-of-function experiment using DTA to specifically deplete E-pericytes. The use of NG2 promoter for specificity (C101-C102) and the demonstration of increased BBB leakage with multiple tracers (C105-C106) and brain atrophy (C107) provide strong evidence for E-pericyte function in BBB maintenance. The conclusion (C108) is well-supported by the experimental data.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R6",
+    "result_id": "R5",
     "claim_ids": [
-      "C108",
-      "C109",
       "C110",
       "C111",
       "C112",
       "C113",
       "C114",
-      "C115"
+      "C115",
+      "C116",
+      "C117"
     ],
-    "result": "Specific depletion of E-pericytes using AAV2/9-BI30-NG2 promoter-DIO-DTA virus significantly increased Evans blue and trypan blue leakage at RP34D and exacerbated brain atrophy, demonstrating that E-pericytes prevent vessel leakage and preserve BBB function after stroke.",
+    "result": "Depletion of E-pericytes by DTA results in decreased survival, impaired motor function (rotarod, beam walking, corner test, adhesive removal), reduced NeuN+ neurons, demonstrating that E-pericytes promote neuronal survival and spontaneous behavioral recovery after stroke. E-pericytes express higher levels of genes related to neuronal survival and growth compared to ECs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C108-C115 describe a loss-of-function experiment with appropriate controls (DeRed virus). The specificity of E-pericyte targeting is validated (C108), and multiple BBB integrity measures (Evans blue, trypan blue, brain atrophy) consistently show worsened outcomes upon E-pericyte depletion. This establishes functional importance of E-pericytes.",
+    "evaluation": "Claims C110-C117 provide comprehensive behavioral and histological evidence for E-pericyte function in neuroprotection. Multiple behavioral tests (C110-C114) consistently show impairment upon E-pericyte depletion. Neuronal quantification (C115) and gene expression analysis (C116) support the mechanism. The conclusion (C117) is well-supported by converging evidence.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R7",
+    "result_id": "R6",
     "claim_ids": [
-      "C116",
-      "C117",
       "C118",
       "C119",
       "C120",
       "C121",
       "C122",
-      "C123"
+      "C123",
+      "C124"
     ],
-    "result": "E-pericyte depletion by DTA decreased survival rate and impaired performance in multiple behavioral tests (rotarod, beam walking, corner test, adhesive removal). This was accompanied by reduced NeuN+ neurons and higher expression of neuronal survival genes in E-pericytes compared to ECs, indicating E-pericytes promote neuronal survival and behavioral recovery.",
+    "result": "Depletion of E-pericytes decreases CBF, reduces CD31+ ECs and PDGFR\u03b2+ pericytes, and increases the EC/pericyte ratio, indicating disrupted vascular integrity. E-pericytes maintain the EC/pericyte ratio and preserve normal vascular functions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C116-C123 demonstrate functional consequences of E-pericyte depletion using multiple validated behavioral assays and histological quantification. The behavioral deficits are consistent across tests, and the mechanistic link to neuronal survival is supported by both cell counts and gene expression data. However, the causal chain from E-pericytes to neuronal survival could involve indirect effects through BBB integrity.",
+    "evaluation": "Claims C118-C124 demonstrate E-pericyte function in vascular maintenance through CBF measurement, immunofluorescence, and flow cytometry. The increased EC/pericyte ratio (C122) and its interpretation as disrupted vascular integrity (C123) are logical given the known importance of this ratio. The conclusion (C124) is supported by the data.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R7",
     "claim_ids": [
-      "C124",
-      "C125",
       "C126",
       "C127",
       "C128",
       "C129",
-      "C130"
-    ],
-    "result": "E-pericyte depletion decreased cerebral blood flow (CBF), reduced numbers of CD31+ ECs and PDGFR\u03b2+ pericytes, and increased the EC/pericyte ratio, indicating disrupted vascular integrity and decreased microvasculature. E-pericytes maintain the EC/pericyte ratio and preserve normal vascular functions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C124-C130 show vascular consequences of E-pericyte depletion using CBF measurement, immunofluorescence, and flow cytometry. The increased EC/pericyte ratio and decreased microvasculature are consistent findings. However, the interpretation that E-pericytes 'support both ECs and pericytes' (C181) requires additional mechanistic evidence beyond correlation.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
+      "C130",
       "C131",
       "C132",
       "C133",
@@ -179,37 +154,24 @@
       "C136",
       "C137",
       "C138",
-      "C139"
+      "C139",
+      "C140",
+      "C141"
     ],
-    "result": "EndoMT markers (p-SMAD3, KLF4, \u03b1-SMA) increased in ECs until RP8D and decreased at RP34D after stroke. Flow cytometry showed 1.6% of CD31+ ECs expressed \u03b1-SMA at RP2D, comparable to the ratio of E-pericytes to CD31+ ECs, indicating ECs undergo EndoMT during the transition to pericytes.",
+    "result": "EndoMT markers (p-SMAD3, KLF4, \u03b1-SMA) are expressed in ECs after stroke, peaking at RP8D. TGF\u03b2R2 inhibitors and EC-specific Tgfbr2 knockout reduce EndoMT marker expression and E-pericyte numbers, while EC-specific Tgfbr2 overexpression increases both. This demonstrates that the TGF\u03b2-TGF\u03b2R2-EndoMT pathway mediates endothelial-to-pericytic transition.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C131-C139 provide temporal and quantitative evidence for EndoMT using established markers (with citations). The observation of adjacent CD31+p-SMAD3- and CD31-p-SMAD3+ cells on the same vessel (C134) is particularly compelling. The quantitative match between \u03b1-SMA+ ECs and E-pericyte proportions (C138-C139) supports the mechanistic link, though this is correlative.",
+    "evaluation": "Claims C126-C141 provide strong mechanistic evidence through temporal expression analysis (C127-C132), pharmacological inhibition (C134, C136), genetic loss-of-function (C135, C137), and gain-of-function (C138-C140) experiments. The convergence of evidence from multiple approaches (inhibitors, knockout, overexpression) strongly supports the TGF\u03b2-TGF\u03b2R2-EndoMT pathway as the mechanism for E-pericyte generation.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R10",
+    "result_id": "R8",
     "claim_ids": [
-      "C140",
-      "C141",
-      "C142",
-      "C143",
       "C144",
       "C145",
       "C146",
-      "C147"
-    ],
-    "result": "TGF\u03b2R2 inhibitors and EC-specific Tgfbr2 knockout reduced EndoMT marker expression and E-pericyte numbers, while EC-specific Tgfbr2 overexpression increased both. This demonstrates that stroke activates TGF\u03b2-TGF\u03b2R2 signaling to drive endothelial-to-pericytic transition via EndoMT.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C140-C147 provide gain- and loss-of-function evidence for TGF\u03b2R2's role using pharmacological inhibition, genetic knockout, and viral overexpression. The bidirectional effects on both EndoMT markers and E-pericyte numbers are consistent and establish TGF\u03b2R2 as a key regulator. The pathway is well-established in the literature (C46, C131).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
+      "C147",
       "C148",
       "C149",
       "C150",
@@ -218,25 +180,25 @@
       "C153",
       "C154",
       "C155",
-      "C156",
+      "C156"
+    ],
+    "result": "Tgfb1 mRNA is predominantly expressed (>85%) in CD45+ immune cells, specifically monocyte-derived macrophages (96.3% of Tgfb1 transcripts), not in microglia (~15%) or pericytes. TGF\u03b21 protein is present at RP2D but absent by RP8D. Elimination of myeloid cells reduces Tgfb1 mRNA and protein expression, demonstrating that infiltrating myeloid cells release TGF\u03b21 after stroke.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C156 use multiple complementary approaches (RNAscope, scRNA-seq, immunofluorescence, antibody depletion) to identify the cellular source of TGF\u03b21. The specificity of expression in monocyte-derived macrophages (C149-C150) and the reduction upon myeloid cell depletion (C154-C155) provide strong evidence. The temporal expression pattern (C151-C153) is consistent with the timing of E-pericyte generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
       "C157",
       "C158",
       "C159",
       "C160",
       "C161",
       "C162",
-      "C163"
-    ],
-    "result": "TGF\u03b21 mRNA was predominantly expressed (>85%) in CD45+ immune cells, specifically monocyte-derived macrophages (96.3% of Tgfb1 transcripts), at RP1-2D after stroke. TGF\u03b21 protein was present at RP2D but absent at RP8D. Myeloid cell depletion reduced Tgfb1 expression, demonstrating myeloid cells infiltrate the brain and release TGF\u03b21 after stroke.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C148-C163 identify the cellular source of TGF\u03b21 using RNAscope, immunofluorescence, single-cell sequencing, and depletion experiments. The convergence of multiple methods and the high specificity (96.3% in MDMs) provide strong evidence. The temporal dynamics (present at RP2D, absent at RP8D) align with the EndoMT timeline. The depletion experiment establishes causality.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
+      "C163",
       "C164",
       "C165",
       "C166",
@@ -248,24 +210,24 @@
       "C172",
       "C173",
       "C174",
-      "C175",
+      "C175"
+    ],
+    "result": "Elimination of infiltrating myeloid cells using anti-Ly6C/Ly6G antibodies reduces E-pericyte generation, increases BBB leakage and brain atrophy, decreases CBF and CD31+ ECs, increases EC/pericyte ratio, reduces NeuN+ neurons, decreases survival, and impairs motor function. This demonstrates that myeloid cells drive E-pericyte formation via TGF\u03b21 release, and E-pericytes sustain vascular integrity and promote neuronal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C175 provide comprehensive evidence linking myeloid cells to E-pericyte generation and function through antibody-mediated depletion. The effects on E-pericyte numbers (C158), BBB integrity (C159-C160), vascular parameters (C161-C166), neuronal survival (C167-C168), and behavior (C169-C173) are consistent and support the proposed mechanism. The conclusions (C174-C175) are well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
       "C176",
       "C177",
       "C178",
       "C179",
       "C180",
-      "C181"
-    ],
-    "result": "Elimination of infiltrating myeloid cells using anti-Ly6C/Ly6G antibodies decreased E-pericyte generation, increased BBB leakage and brain atrophy, reduced CBF and microvasculature, increased EC/pericyte ratio, decreased neuronal survival, and impaired behavioral recovery. This demonstrates myeloid cells drive E-pericyte formation to support vascular integrity and neuronal survival.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C164-C181 provide comprehensive loss-of-function evidence for myeloid cells' role using antibody-mediated depletion. The effects span E-pericyte numbers, BBB integrity, vascular parameters, neuronal survival, and behavior, all consistently showing detrimental outcomes. This establishes myeloid cells as upstream regulators. However, the interpretation that E-pericytes 'support both ECs and pericytes' (C181) is inferential and could benefit from more direct mechanistic evidence.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
+      "C181",
       "C182",
       "C183",
       "C184",
@@ -275,95 +237,88 @@
       "C188",
       "C189",
       "C190",
-      "C191"
+      "C191",
+      "C192"
     ],
-    "result": "EC-specific Tgfbr2 knockout increased BBB leakage (Evans blue and trypan blue) at multiple time points up to RP118D, but not larger molecules (dextran-rhodamine B, Texas Red ~70 kDa). Simultaneous Tgfbr2 overexpression and E-pericyte depletion showed no net change in E-pericytes or BBB leakage, demonstrating E-pericytes maintain BBB integrity through Tgfbr2-dependent mechanisms.",
+    "result": "EC-specific knockout of Tgfbr2 increases BBB leakage (Evans blue and trypan blue but not larger molecules), reduces NeuN+ neurons, and impairs motor function, while simultaneous Tgfbr2 overexpression and DTA-mediated E-pericyte depletion shows no net change in E-pericytes or BBB leakage. This demonstrates that the TGF\u03b21-TGF\u03b2R2 pathway induces EC-to-pericyte transdifferentiation, contributing to BBB restoration and neuroprotection.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C182-C191 provide genetic loss-of-function evidence and a rescue experiment. The long-term BBB leakage (up to RP118D) and selective permeability to smaller molecules are well-documented. The rescue experiment (C182-C183) elegantly demonstrates that Tgfbr2's effects on BBB are mediated through E-pericytes. The temporal analysis (C186-C188) links E-pericyte increase to BBB repair.",
+    "evaluation": "Claims C176-C192 provide genetic evidence for the TGF\u03b21-TGF\u03b2R2 pathway through loss-of-function experiments. The rescue experiment (C176-C177) demonstrates specificity. The long-term BBB leakage (C178) and selective permeability to smaller molecules (C183-C185) suggest E-pericytes maintain BBB integrity rather than complete barrier function. Behavioral and histological data (C186-C191) support functional importance. The conclusion (C192) is well-supported.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R14",
+    "result_id": "R11",
     "claim_ids": [
-      "C192",
       "C193",
       "C194",
       "C195",
       "C196",
       "C197",
-      "C198"
-    ],
-    "result": "EC-specific Tgfbr2 knockout reduced NeuN+ neurons and impaired performance in multiple behavioral tests (rotarod, beam walking, corner test, adhesive removal), demonstrating the TGF\u03b21-TGF\u03b2R2 pathway induces EC-to-pericyte transdifferentiation that contributes to BBB restoration and neuron protection after stroke.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C192-C198 show neurological consequences of Tgfbr2 knockout using histology and behavioral assays. The effects are consistent with E-pericyte depletion results (C116-C123), supporting the pathway's functional importance. However, the causal chain from Tgfbr2 to neuronal protection likely involves multiple intermediate steps (BBB integrity, CBF, etc.) that are not fully dissected.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
+      "C198",
       "C199",
       "C200",
       "C201",
       "C202",
       "C203",
       "C204",
-      "C205",
-      "C206",
-      "C207",
-      "C208",
-      "C209",
-      "C210",
-      "C211",
-      "C212"
+      "C205"
     ],
-    "result": "EC-specific Tgfbr2 overexpression promoted E-pericyte generation, increased CBF recovery and perfusion, increased EC and pericyte numbers, normalized EC/pericyte ratio, decreased BBB leakage and brain atrophy, increased neuronal survival, and improved behavioral performance across multiple tests, demonstrating therapeutic potential.",
+    "result": "EC-specific overexpression of Tgfbr2 increases CBF recovery, effective perfusion, EC and pericyte numbers, normalizes EC/pericyte ratio, decreases BBB leakage and brain atrophy, increases NeuN+ neurons, and improves motor function. This demonstrates that increasing E-pericytes through Tgfbr2 overexpression enhances BBB restoration, angiogenesis, neuroprotection, and brain self-recovery after stroke.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C199-C212 provide comprehensive gain-of-function evidence using viral overexpression. The effects span all key outcome measures (E-pericytes, BBB, CBF, vasculature, neurons, behavior) and are consistently beneficial. This establishes proof-of-concept for therapeutic intervention. However, the study uses a preventive approach (virus injection before MCAO) rather than a therapeutic approach (intervention after stroke onset), which limits translational relevance.",
+    "evaluation": "Claims C193-C205 provide comprehensive gain-of-function evidence through EC-specific Tgfbr2 overexpression. The effects on vascular parameters (C193-C197), BBB integrity (C198-C199), neuronal survival (C200), and behavior (C201-C204) are consistent and opposite to the loss-of-function phenotype, supporting causality. The conclusion (C205) is well-supported by the experimental data.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R16",
+    "result_id": "R12",
     "claim_ids": [
       "C1",
       "C2",
       "C3",
       "C4",
-      "C14",
-      "C15",
       "C16",
       "C17",
       "C18",
       "C19",
-      "C20",
-      "C21",
-      "C22",
       "C23",
-      "C24",
-      "C25",
-      "C26"
+      "C24"
     ],
-    "result": "The introduction establishes that stroke is a major cause of death and disability, BBB dysfunction aggravates neuronal damage, and mechanisms of BBB restoration in chronic stroke are unclear. Current therapies focus on acute reperfusion, with no proven treatments for chronic CBF restoration. Knowledge of vascular repair's contribution to brain self-repair is inadequate.",
+    "result": "Ischemic stroke is a leading cause of death and disability, accompanied by BBB dysfunction that aggravates neuronal damage. The mechanisms underlying BBB restoration in the chronic stage after stroke remain unclear, and no proven therapies exist for restoring CBF in the chronic phase.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C26 provide background context supported by citations to established literature. These claims set up the rationale for the study by identifying knowledge gaps in chronic stroke recovery, particularly regarding vascular repair mechanisms. The statements are well-supported by the cited literature and represent accurate summaries of the field.",
+    "evaluation": "Claims C1-C4, C16-C19, C23-C24 establish the clinical significance of stroke and identify knowledge gaps. These are well-established facts supported by general medical knowledge and set up the rationale for the study. The claims accurately represent the current state of the field.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R17",
+    "result_id": "R13",
     "claim_ids": [
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
       "C27",
       "C28",
       "C29",
       "C30",
       "C31",
-      "C32",
+      "C32"
+    ],
+    "result": "Vascular repair is crucial for tissue regeneration in organs like liver and skin. In the brain, capillaries composed of ECs and pericytes are essential for BBB function and CBF. After stroke, pericytes rapidly undergo apoptosis while ECs tolerate ischemia, and pericyte loss destroys BBB and CBF functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C20-C22, C25-C32 provide background on vascular repair and the differential response of ECs and pericytes to ischemia. These are supported by citations to published literature and represent established knowledge in the field. The claims accurately contextualize the study within existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
       "C33",
       "C34",
       "C35",
@@ -371,33 +326,103 @@
       "C37",
       "C38",
       "C39",
-      "C40"
+      "C40",
+      "C41",
+      "C42",
+      "C43"
     ],
-    "result": "Background on capillary structure and function: capillaries comprise 90% of blood vessel length, are composed of ECs and pericytes, and mediate nutrient/gas exchange. After stroke, pericytes undergo apoptosis while ECs tolerate ischemia. Pericyte loss disrupts BBB and CBF. ECs demonstrate plasticity and can undergo EndoMT, with examples of EC-to-pericyte transition in development.",
+    "result": "ECs exhibit plasticity, undergoing hematopoietic transition in embryos and EndoMT in pathological conditions. Endocardial ECs and Procr+ ECs give rise to pericytes during development. After stroke, myeloid cells infiltrate the brain and release factors including TGF\u03b21, which drives EndoMT and is involved in endothelial-to-pericytic transition in development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27-C40 provide relevant background on vascular biology, cell plasticity, and developmental precedents for EC-to-pericyte transition. All statements are supported by citations to published literature. This background establishes biological plausibility for the study's main findings and contextualizes them within known developmental processes.",
+    "evaluation": "Claims C33-C43 provide background on EC plasticity and the role of myeloid cells and TGF\u03b2 in tissue repair and development. These are supported by citations to published literature and establish the biological plausibility of EC-to-pericyte transdifferentiation in the adult brain after injury.",
     "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "In iECs;Ai47 mice, fewer than 1% of bone marrow nucleated cells are labeled with EGFP, mainly myeloid cells. Macrophages can invade the brain and develop into pericytes during early CNS vascular development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 address a potential confound in the lineage tracing system (EGFP+ macrophages) and provide context from developmental studies. C88 is an observation from the study with citation support, while C89 is from published literature. These claims are important for interpreting the lineage tracing results but are addressed experimentally in C90-C92.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C109",
+      "C125",
+      "C142",
+      "C143",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C213",
+      "C221",
+      "C222"
+    ],
+    "result": "Pericytes maintain BBB function during development and adulthood, and their depletion causes BBB dysfunction, neuronal damage, and cognitive impairment. Myeloid cells play beneficial roles in tissue repair in various contexts. TGF\u03b2 family members are essential for angiogenesis, and mutations in TGF\u03b2 pathway components cause vascular dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C109, C125, C142-C143, C206-C210, C213, C221-C222 provide additional background from published literature on pericyte function, myeloid cell roles in repair, and TGF\u03b2 signaling in vascular biology. These are supported by citations and provide context for interpreting the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229"
+    ],
+    "result": "The study demonstrates that during chronic stroke recovery, the pericyte pool increases through self-proliferation and EC-to-pericyte conversion. E-pericytes are crucial for vascular function and brain self-repair. Increasing TGF\u03b2R2 expression enhances E-pericyte generation and recovery. The TGF\u03b21-TGF\u03b2R2 pathway represents a potential therapeutic target for stroke, and this mechanism may apply to other ischemic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C229 provide summary statements and conclusions from the study. Most are well-supported by the experimental data (C211-C220, C223, C227-C229). Claims C224-C226 are more speculative about therapeutic potential and generalization to other tissues, which is appropriate for a discussion section but requires future validation.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C41",
-      "C42",
-      "C43",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
       "C44",
       "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49"
+      "C46"
     ],
-    "result": "Background on myeloid cells and TGF\u03b2 signaling: myeloid cells are dominant immune cells entering the brain after stroke, release various factors, and blocking their recruitment impairs recovery. TGF\u03b21 co-localizes with macrophages after stroke and contributes to angiogenesis. TGF\u03b2 is the main driver of EndoMT and is involved in endothelial-to-pericytic transition in development. The study's main conclusions are summarized.",
+    "result": "The study demonstrates that lineage tracing, RNA-seq, and immunofluorescence reveal EC transdifferentiation into E-pericytes after stroke. E-pericyte depletion aggravates BBB leakage and neurological deficits, while myeloid cell-driven transdifferentiation via TGF\u03b21-TGF\u03b2R2-EndoMT accelerates BBB restoration and brain self-repair. Dynamic changes in E-pericyte numbers directly influence BBB integrity and functional recovery.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C49 provide background on immune responses and TGF\u03b2 signaling in stroke, supported by citations. The summary claims (C47-C49) accurately reflect the study's main findings. This background establishes the biological context for the proposed mechanism and connects prior knowledge to the current study.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C5-C13, C44-C46 are summary statements from the abstract that accurately reflect the major findings of the study. These are well-supported by the detailed experimental evidence presented in the other claim groups. The claims appropriately summarize the key discoveries and their functional significance.",
+    "result_type": "MAJOR"
   }
 ]

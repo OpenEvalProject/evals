@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study enrolled 43 female participants (8 ME/CFS, 10 FM, 16 co-diagnosed, 9 controls) with appropriate age matching and clinical characterization. Participants were diagnosed by a single expert clinician using established criteria, with 88% classified as severe cases by FIQ scores. Ethical approval was obtained and appropriate quality control measures were implemented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C97-C100 provide comprehensive demographic and methodological details that are internally consistent and appropriately documented. The study design includes proper ethical oversight, informed consent, medication washout periods, and RNA quality control (RIN >7), all of which support rigorous experimental conduct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C80",
+      "C113"
+    ],
+    "result": "HERV expression profiling using microarrays identified 489 differentially expressed HERV elements that perfectly discriminated between ME/CFS, FM, co-diagnosed, and healthy control groups through hierarchical clustering. Four main HERV clusters were identified with disease-specific expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C80 describe consistent findings from microarray analysis with appropriate statistical thresholds (FDR <0.1, |log2FC| >1). The perfect sample clustering by HERV profiles (C80, C113) is a strong result supported by Figure 1B, though the small sample size (n=43 total) requires validation in larger cohorts as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ME/CFS patients could be subdivided into two subgroups based on quantitative differences in HERV expression, with subgroup 2 showing more pronounced dysregulation and significantly higher levels of fatigue and reduced motivation compared to subgroup 1 and co-diagnosed patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe ME/CFS subgroup identification with statistical support (p <0.0001 for HERV differences, p <0.05 for symptom differences). The correlation between HERV expression levels and symptom severity provides biological plausibility, though the small subgroup sizes (likely 3-5 patients per subgroup based on n=8 total) limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Principal component analysis revealed that PC1 (29.1% variance) primarily segregated ME/CFS from other groups, while PC2 (9.3% variance) separated FM, co-diagnosed, and controls. ME/CFS showed the greatest HERV dysregulation correlating with symptomatology, while co-diagnosed patients showed minimal HERV changes similar to healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 present PCA results that are consistent with the hierarchical clustering findings. The variance explained by PC1 and PC2 is modest but reasonable for biological data. The finding that co-diagnosed patients resemble controls more than ME/CFS or FM patients is unexpected but well-supported by the data presented in Figure 1D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ME/CFS showed dysregulation of 66 HERV families (the largest heterogeneity), compared to 22 families in FM and 16 families common to all patient groups. MLT1 was the only family significantly downregulated across all patient groups, accounting for over one-third of differentially expressed HERVs in each cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 describe family-level HERV analysis with appropriate statistical support (p <0.01 for MLT1). The observation that MLT1 predominance may partially reflect its genomic abundance (C46) shows appropriate critical interpretation. The family-specific patterns provide mechanistic insights into disease differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Disease-specific HERV family dysregulation was identified: 21 families upregulated specifically in ME/CFS Cluster 1, 12 families downregulated in ME/CFS Cluster 2, 3 families upregulated in FM, and 5 families commonly downregulated across all patient groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 detail specific HERV families with disease-specific patterns, supported by Figure 2 and supplementary data. The identification of unique family signatures for each disease group strengthens the biomarker potential, though functional validation of these families is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Contrary to previous literature reporting HERV-W upregulation in FM, this study found HERV-W downregulation in all patient groups, most pronounced in FM and co-diagnosed groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 explicitly contradicts prior findings (Ovejero et al., 2020) with data shown in Figure 2E. The authors appropriately acknowledge this discrepancy and suggest methodological differences (degenerate primers vs. microarray probes) as a potential explanation. This highlights the importance of locus-specific HERV measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The majority of dysregulated HERV loci were solitary LTR elements. Genomic context analysis revealed that repressed ME/CFS loci and overexpressed FM loci associated with gene 3' endings, while commonly silenced loci associated with intronic regions. Intergenic solo LTRs were underexpressed in ME/CFS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe genomic features of dysregulated HERVs with appropriate statistical analysis. The predominance of solitary LTRs is consistent with genomic data (C52, C101). The genomic context associations (C53-C54) suggest regulatory mechanisms, though the lack of promoter associations is noted. The underexpression of intergenic LTRs (C55) supports epigenetic involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Differential gene expression analysis identified 368 genes differentially expressed between study groups. ME/CFS showed more pronounced gene dysregulation than FM or co-diagnosed groups, with ME/CFS subgroup 2 exhibiting a markedly different gene expression profile that distinguished it from all other groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe gene expression findings parallel to HERV results. The observation that gene expression profiles did not cluster samples as well as HERV profiles (C58) is an important finding supporting the superior discriminatory power of HERV signatures. Statistical thresholds are appropriate (FDR <0.1, |log2FC| >1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Hierarchical clustering identified eight HERV-gene modules with distinct expression patterns. Module analysis revealed that downregulated HERVs across all diseases correlated with immune cell differentiation genes, ME/CFS-upregulated HERVs correlated with T cell activation genes, ME/CFS-downregulated HERVs correlated with pathogen detection genes, and FM-specific patterns involved telomere maintenance and NF-\u03baB signaling genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe integrated HERV-gene module analysis with GO enrichment supporting functional interpretations. The correlation patterns are biologically plausible and supported by Figure 3. However, correlation does not establish causation, and the mechanisms linking HERV expression to gene expression remain unclear (addressed in subsequent claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Genomic localization analysis showed that differentially expressed HERVs and genes were generally separated by at least 100 kbp, suggesting independent expression. Exceptions included MLT1 family elements co-localizing with genes like CD74 and NF\u03baB1, with both HERV loci and genes showing coordinated downregulation across patient groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 address the mechanism of HERV-gene correlation, finding predominantly independent genomic locations (>100 kbp separation). The identification of specific co-localized examples (C66-C68) with coordinated expression provides evidence for cis-regulatory mechanisms in select cases. The analysis appropriately distinguishes between co-transcription and trans-regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Transcription factor binding site enrichment analysis revealed immune response-related TFBS in Modules 1-7, with disease-specific patterns: angiogenesis-related TFBS in commonly downregulated HERVs, miRNA/glucocorticoid signaling TFBS in FM-specific HERVs, and chromatin remodeling factor binding sites (SETDB1, TRIM28, CTCF) enriched in ME/CFS-upregulated HERVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 provide mechanistic insights through TFBS enrichment analysis using ReMap2022 data. The enrichment of SETDB1/TRIM28 binding sites in upregulated ME/CFS HERVs (C73) is particularly important as these are known HERV repressors, suggesting their impairment as a mechanism. The analysis is appropriate though relies on ChIP-seq data from other studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C112"
+    ],
+    "result": "CIBERSORTx analysis revealed decreased \u03b3\u03b4 T cells and increased resting CD4 memory T cells and plasma cells in ME/CFS subgroup 2. Dysregulated HERV loci showed moderate to strong correlations with these immune cell changes, with Module 3 HERVs negatively correlating with \u03b3\u03b4 T cells and positively correlating with CD4 memory and plasma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C77 and C112 describe immune cell deconvolution results with statistical support (p <0.05, |R| >0.4). However, CIBERSORTx provides computational estimates from bulk RNA-seq/microarray data rather than direct cell counts, introducing uncertainty. The correlations are strong but the small sample size (n=5 in ME/CFS subgroup 2) and lack of validation by flow cytometry or other direct methods limit confidence. The biological interpretation is plausible but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Module 3 HERV and gene activation strongly associated with ME/CFS subgroup 2 diagnosis (|R| >0.89, p <0.001) and correlated with disease symptoms, particularly physical and mental fatigue as measured by MFI and SF-36 questionnaires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 show strong correlations between Module 3 expression and both diagnosis and symptoms. The correlation coefficients are very high (|R| >0.89) with appropriate statistical significance. However, the small sample size increases risk of overfitting, and the correlations do not establish causation. The findings require validation in independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C111"
+    ],
+    "result": "The mechanistic explanation for HERV activation in ME/CFS involves enrichment of binding sites for SETDB1 and TRIM28 (known epigenetic silencers of HERVs) in upregulated HERV sequences, suggesting impairment of the TRIM28/SETDB1 repressor axis as an underlying epigenetic disturbance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C111 propose a mechanistic model based on TFBS enrichment data (C73). The logic is sound: if HERVs normally repressed by SETDB1/TRIM28 are upregulated and enriched for these binding sites, it suggests impairment of this repressor system. This is supported by literature (C83) showing influenza A virus activates HERVs by impairing TRIM28/SETDB1. However, direct evidence of SETDB1/TRIM28 dysfunction in these patients is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C40"
+    ],
+    "result": "Co-diagnosed patients showed minimal HERV expression changes compared to healthy controls, defining a novel nosological entity with low epigenetic impact that is distinct from ME/CFS or FM alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C40 describe an unexpected finding that co-diagnosed patients (meeting criteria for both ME/CFS and FM) have HERV profiles resembling healthy controls rather than showing combined or intermediate features. This is well-supported by clustering analysis (Figure 1B) and PCA (Figure 1D). The interpretation as a distinct nosological entity is reasonable but requires validation and clinical follow-up to determine if these patients have different outcomes or treatment responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C110"
+    ],
+    "result": "The study design included only female patients to minimize sex-associated bias, used rigorous diagnostic criteria applied by a single expert clinician, but is limited by small sample size requiring validation in extended cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93, and C110 acknowledge important study design features and limitations. The female-only design (C91) reduces variability but limits generalizability. The use of multiple diagnostic criteria by a single clinician (C93) enhances phenotyping consistency. The authors appropriately acknowledge that the small sample size (n=43 total) requires validation (C110), which is critical given the strong claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The HERV-V3 microarray platform can discriminate 174,852 HERV elements, 179,142 MaLR elements, and 1,072 LINE-1 elements at the locus level, plus 1,559 genes in eight cellular pathways, with 1,397,352 total probes detected in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 describe the technical capabilities of the microarray platform with appropriate citation (Becker et al., 2017). The platform specifications are clearly stated and the number of detected probes is reported. This represents a comprehensive approach to HERV profiling, though the gene coverage (1,559 genes) is limited compared to whole transcriptome approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "ME/CFS and FM are WHO-classified chronic diseases with complex multi-organ symptomatology, diagnosed by clinical assessment of non-specific symptoms. Despite molecular evidence supporting them as distinct entities, they frequently co-occur (>50% in females).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background information supported by appropriate citations. The ICD-11 classifications (C1-C2), disease characteristics (C3-C5), and co-occurrence rates (C6) are well-documented in the literature. The tension between molecular distinctness (C7) and frequent co-diagnosis (C6) motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Viral infections, particularly SARS-CoV-2, are gaining recognition as triggers for ME/CFS and FM. Viral infections cause epigenetic changes including HERV de-repression, with 58% of post-COVID-19 cases meeting ME/CFS criteria. SARS-CoV-2 alters HERV expression in immune cells and HERV proteins are found in COVID-19 patient tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 establish the viral-HERV connection with appropriate citations. The 58% prevalence estimate (C9) is from a specific study (Jason and Dorri, 2022) and may not be generalizable. The SARS-CoV-2 effects on HERVs (C13-C14) are well-documented and provide strong rationale for studying HERVs in post-viral syndromes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "HERVs participate in diverse physiological processes including immune response coordination, microbiota interaction, and neurological functions. HERV dysregulation associates with multiple diseases including multiple sclerosis, systemic lupus erythematosus, and post-COVID-19 condition, with HERV-encoded proteins stimulating autoimmune responses and HERV LTRs influencing host gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 provide comprehensive background on HERV biology and disease associations, all supported by appropriate citations. This establishes the biological plausibility of HERVs as disease biomarkers and potential pathogenic factors. The functional roles are still \"poorly understood\" as acknowledged, but the associations are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Previous studies detected HERV overexpression in immune cells of ME/CFS and FM patients at the transcript level, but used approaches with limited ability to identify specific genomic loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 cite prior work (Rodrigues et al., 2019; Ovejero et al., 2020) while noting methodological limitations of degenerate primer approaches. This appropriately positions the current study as advancing the field through locus-specific HERV profiling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Literature supports that influenza A virus activates HERVs by impairing TRIM28/SETDB1, immune cell subset changes occur in ME/CFS, \u03b3\u03b4 T cells are reduced in autoimmune diseases and mediate antiviral responses, NK cell dysfunction occurs in autoimmune diseases and ME/CFS, and HERV expression correlates with fatigue in post-COVID-19 condition. Specific viral infections trigger specific HERV family disruptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 cite relevant literature supporting the study's interpretations. These provide context for the mechanistic model (C83), immune findings (C84-C88), symptom correlations (C89), and virus-specific HERV responses (C90). All are appropriately cited and strengthen the biological plausibility of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C108",
+      "C109"
+    ],
+    "result": "The study pioneers comparison of HERV expression profiles across ME/CFS, FM, and co-diagnosed patients, demonstrating superior diagnostic potential of HERV fingerprints over immune transcriptomes. HERV profiling may serve as a surrogate marker for epigenetic derangements, though the role of MLT1-derived lncRNAs remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C108, and C109 summarize the study's contributions and acknowledge speculative aspects. The claim of \"pioneering\" comparison (C109) is supported by limited prior work in this area (C93 cites only Nepotchatykh et al., 2023). The superior discriminatory power of HERV vs. gene profiles is demonstrated (C58). The speculation about MLT1-lncRNAs (C108) is appropriately labeled as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Solitary LTRs are the most abundant HERV elements in the genome and can influence gene expression through multiple mechanisms: serving as polyadenylation signals (e.g., HERV-H at HHLA2), creating inter-individual variation through recombination, enabling long-range gene regulation, creating topologically associated domains (HERV-H family), and overlapping with lncRNAs (MLT1 family).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 provide mechanistic context for interpreting HERV dysregulation, all supported by appropriate citations. These establish multiple pathways by which HERVs could influence gene expression and disease, supporting the biological plausibility of the findings. The specific examples (HHLA2, MLT1) connect to the study's results.",
+    "result_type": "MINOR"
+  }
+]

@@ -13,19 +13,21 @@
       "C43",
       "C44",
       "C45",
-      "C49",
-      "C104"
+      "C48",
+      "C105",
+      "C106"
     ],
-    "result": "DRNDA neurons have distinct electrophysiological properties that distinguish them from DRN5-HT neurons, including delayed spiking, postinhibitory hypoexcitability, rebound oscillations, sag currents, longer AP delay, AP amplitude drop, and smaller capacitance. These properties are sufficient for classification and are consistent across wild-type and DAT-tdTomato mice.",
+    "result": "DRNDA neurons have a distinct electrophysiological profile that distinguishes them from DRN5-HT neurons, characterized by delayed spiking, postinhibitory hypoexcitability, rebound oscillations, sag currents, longer AP delay, AP amplitude accommodation, and smaller capacitance. DAT-tdTomato mice faithfully label DRNDA neurons with a false-positive rate of 0.8%, and the transgene does not interfere with membrane properties.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C45, C49, and C104 collectively demonstrate that DRNDA neurons have a distinct electrophysiological profile through multiple converging lines of evidence: immunohistochemistry (C35), comparison across mouse lines (C36-C37, C104), detailed characterization of membrane properties (C38-C44), and PCA/clustering analysis (C45). The low false-positive rate (0.8%, C37) and consistency across genotypes support the robustness of these findings.",
+    "evaluation": "Claims C35-C45 provide converging electrophysiological evidence from whole-cell patch-clamp recordings, immunohistochemistry, and PCA/clustering analysis demonstrating distinct properties of DRNDA neurons. The validation of DAT-tdTomato mice (C36, C37, C105, C106) strengthens the reliability of cell identification. Statistical comparisons and multiple parameters support the classification scheme.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
+      "C49",
       "C50",
       "C51",
       "C52",
@@ -33,53 +35,41 @@
       "C54",
       "C55",
       "C56",
-      "C57",
-      "C58"
+      "C57"
     ],
-    "result": "DRN5-HT and DRNDA neurons have distinct morphological properties. DRN5-HT neurons are larger multipolar neurons with 4-5 primary dendrites, while DRNDA neurons are smaller with more circular somata and 2-3 bipolar dendrites.",
+    "result": "DRN5-HT and DRNDA neurons have distinct morphological properties. DRN5-HT neurons are larger multipolar neurons with 4-5 primary dendrites and more terminations, while DRNDA neurons are smaller with more circular somata, 2-3 bipolar dendrites, and similar overall dendritic length.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C58 provide comprehensive morphological characterization of both cell types using multiple quantitative measures (area, perimeter, circularity, dendrite number, etc.). The data are internally consistent and supported by representative reconstructions shown in figures. Statistical comparisons demonstrate significant differences between the two populations.",
+    "evaluation": "Claims C49-C57 present comprehensive morphological analysis from neurobiotin-filled neurons with quantitative measurements of soma size, shape, and dendritic architecture. Multiple parameters (area, perimeter, circularity, dendrite number) consistently differentiate the two populations. Statistical significance is reported for key differences.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
+      "C59",
       "C60",
       "C61",
       "C62",
       "C63",
-      "C64",
-      "C65"
+      "C64"
     ],
-    "result": "The 6-OHDA lesion model produces 60-70% reduction in striatal TH and NA levels without affecting 5-HT levels or causing degeneration of DRN neurons. DMI pre-treatment partially protects against NA loss.",
+    "result": "Bilateral striatal 6-OHDA injection produces a partial lesion model with 60-70% reduction in striatal TH levels and ~60% loss of striatal NA, without causing degeneration of DRN neurons or altering striatal 5-HT levels. Pre-treatment with desipramine (DMI) partially prevents striatal NA loss.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C60-C65 establish the validity of the lesion model through multiple complementary measures: western blot for TH (C60), ELISA for 5-HT and NA (C61, C64), immunostaining for cell counts (C62), and demonstration of DMI's protective effect (C65). The consistency across methods and agreement with prior literature (C59, C63) support these findings.",
+    "evaluation": "Claims C59-C64 are supported by multiple methods (western blot, ELISA, immunostaining) demonstrating the lesion characteristics. The validation that DRN neurons are not directly lost (C60, C61) is critical for interpreting subsequent functional changes. DMI protection of NA system (C64) is experimentally demonstrated.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
+      "C65",
       "C66",
       "C67",
       "C68",
       "C69",
       "C70",
-      "C78"
-    ],
-    "result": "Selective DA lesion (DMI + 6-OHDA) increases excitability of DRN5-HT neurons, with 72% showing spontaneous activity and lower rheobase currents compared to controls, suggesting DA loss induces homeostatic changes in DRN5-HT neurons.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C66-C70 and C78 demonstrate that DA-only lesion increases DRN5-HT excitability through multiple measures: proportion of spontaneously active neurons (C66-C68), rheobase (C69), and mechanistic interpretation (C70, C78). The comparison across three conditions (Sham, 6-OHDA, DMI+6-OHDA) provides strong evidence for the specific role of DA depletion.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
       "C71",
       "C72",
       "C73",
@@ -87,162 +77,208 @@
       "C75",
       "C76",
       "C77",
-      "C79",
-      "C110"
+      "C78"
     ],
-    "result": "Combined DA and NA lesion (6-OHDA alone) profoundly alters firing properties of DRN5-HT neurons, including smaller APs, shorter AHPs, higher firing frequencies, and shorter membrane time constants. These changes are prevented by DMI pre-treatment, indicating NA depletion is critical.",
+    "result": "DRN5-HT neurons are differentially affected by DA versus combined DA/NA depletion in the 6-OHDA model. Selective DA loss (DMI+6-OHDA) increases excitability and spontaneous activity, while combined DA/NA loss (6-OHDA alone) additionally alters firing properties including smaller APs, shorter AHPs, higher firing frequencies, and shorter membrane time constants. The noradrenergic lesion critically contributes to these changes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71-C77, C79, and C110 demonstrate that combined DA/NA lesion affects DRN5-HT neurons more severely than DA lesion alone through systematic comparison of firing properties across conditions. The reversal by DMI (C75-C76) provides strong evidence for NA's critical role. Multiple electrophysiological parameters converge on this conclusion.",
+    "evaluation": "Claims C65-C78 present a systematic comparison across three conditions (Sham, 6-OHDA, DMI+6-OHDA) with multiple electrophysiological parameters. The differential effects based on NA protection provide strong evidence for NA-dependent mechanisms. Sample sizes are adequate (n=17-30 neurons per group) and statistical comparisons support the conclusions.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R6",
+    "result_id": "R5",
     "claim_ids": [
+      "C79",
       "C80",
       "C81",
       "C82",
       "C83",
       "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C102"
+      "C85"
     ],
-    "result": "6-OHDA lesion induces hypotrophy of DRN5-HT neurons characterized by reduced soma size and increased circularity. This morphological change is NA-dependent as it is prevented by DMI pre-treatment.",
+    "result": "6-OHDA lesioning induces a hypotrophic phenotype in DRN5-HT neurons characterized by reduced soma size (decreased area, perimeter, major axes) and increased circularity, with trends toward reduced dendrites. These morphological changes are NA-dependent, as they are prevented by DMI pre-treatment.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C87 and C102 demonstrate morphological changes in DRN5-HT neurons through multiple quantitative measures (area, perimeter, major axes, circularity). The NA-dependence is established by the protective effect of DMI (C82-C83, C87). The trend toward reduced dendrites (C84) is noted but not statistically significant (C85), appropriately qualifying the conclusions.",
+    "evaluation": "Claims C79-C85 demonstrate morphological changes in DRN5-HT neurons with quantitative measurements across three conditions. The NA-dependence is clearly shown by the protective effect of DMI (C81, C82). Statistical significance is reported for soma changes, though dendritic changes show only trends (C83), which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "DRNDA neurons show increased spontaneous activity (from 58% to 77-78%) following 6-OHDA lesioning, but most electrophysiological properties (rheobase, APs, AHPs, current-frequency slope, time constant) and morphology remain unaffected. Changes are primarily due to DA pathway lesion rather than NA loss, with only spike latency reduced in DMI+6-OHDA mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 demonstrate that DRNDA neurons respond differently than DRN5-HT neurons to the lesion. The lack of changes in most parameters (C88, C91) is as important as the observed changes (C87, C89) for understanding cell-type-specific responses. Sample sizes are adequate (n=29-43 neurons) and the contrast with DRN5-HT neurons strengthens the findings.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
       "C93",
-      "C113"
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C125",
+      "C126"
     ],
-    "result": "DRNDA neurons show increased spontaneous activity (77-78%) following 6-OHDA lesion, but other firing properties remain unchanged. These changes are primarily due to DA loss rather than NA loss, as DMI pre-treatment does not prevent them.",
+    "result": "Selective unilateral LC lesioning (50% TH+ neuron loss) produces minor changes in DRN neurons compared to bilateral striatal lesions. DRN5-HT neurons show lower input resistance, shorter AHP, and larger capacitance; DRNDA neurons show reduced sag amplitude. Both populations show altered dendritic branching but no somatic changes. The limited effects may be due to unilateral versus bilateral lesioning and smaller lesion extent.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C93 and C113 demonstrate that DRNDA neurons respond differently to lesions than DRN5-HT neurons. The increase in spontaneous activity (C88-C89) is consistent across both lesion conditions, while other properties are unaffected (C90-C91), suggesting DA-specific effects (C93, C113). The minor change in spike latency with DMI (C92) is appropriately noted.",
+    "evaluation": "Claims C93-C98 and C125-C126 present a control experiment testing selective NA depletion. The modest effects compared to striatal lesions are appropriately interpreted with caveats about lesion extent and laterality (C126). This experiment strengthens the main findings by demonstrating that combined DA/NA loss has greater impact than NA alone.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C94"
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C127",
+      "C128"
     ],
-    "result": "Striatal 6-OHDA injection did not significantly affect somatic and dendritic morphology of DRNDA neurons.",
+    "result": "The study demonstrates that DRNDA neurons have distinct electrophysiological profiles distinguishable from DRN5-HT neurons, and that in the 6-OHDA PD model, both populations show cell-type-specific pathophysiological changes dependent on DA and NA depletion. DRN5-HT neurons are particularly sensitive to NA loss (showing both electrical and morphological changes), while DRNDA neurons are primarily affected by DA loss. These findings suggest non-motor PD symptoms may result from complex DA/NA neuromodulation and DRN population interactions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C94 is supported by morphological analysis shown in Figure 6, which demonstrates no significant changes in soma or dendrite parameters across conditions. This contrasts with the morphological changes observed in DRN5-HT neurons, highlighting cell-type-specific responses.",
+    "evaluation": "Claims C99-C102 and C127-C128 represent the main conclusions synthesizing the experimental findings. These are well-supported by the comprehensive electrophysiological and morphological data from multiple experimental conditions. The speculation about non-motor symptoms (C128) is appropriately framed as a possibility rather than a proven mechanism.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C114"
+      "C46",
+      "C47",
+      "C110"
     ],
-    "result": "Unilateral LC lesion produces minor changes in DRN neurons compared to bilateral striatal lesions, including altered input resistance and AHP in DRN5-HT neurons, reduced sag amplitude in DRNDA neurons, and increased dendritic branching in both populations.",
+    "result": "The DRN contains additional neuronal populations beyond DRN5-HT and DRNDA neurons. Analysis of 47 neurons that were neither TH+, TPH+, nor tdTomato+ suggests four major electrophysiological cell types in the DRN, including previously reported GABAergic, glutamatergic, and peptidergic neurons.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C95-C99 and C114 demonstrate that selective LC lesion has more limited effects than striatal lesions. The findings are internally consistent and appropriately qualified (C114). However, the unilateral nature of the lesion and smaller extent compared to striatal lesions limit direct comparisons, which the authors acknowledge.",
+    "evaluation": "Claims C46-C47 and C110 identify additional DRN cell types through electrophysiological clustering. The analysis is based on PCA of 120 neurons with 20 parameters. While molecular identity is not confirmed for these additional populations, the electrophysiological distinctness and consistency with prior literature support the conclusion.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C46",
-      "C47",
-      "C48"
+      "C103",
+      "C104",
+      "C107",
+      "C108",
+      "C111"
     ],
-    "result": "The DRN contains additional neuronal populations beyond DRN5-HT and DRNDA neurons, with analysis suggesting four major electrophysiological cell types, including neurons with rebound spiking and biphasic AHPs resembling interneurons.",
+    "result": "The electrophysiological and morphological properties of DRN neurons observed in this study agree with previous literature, including spontaneous firing in DRNDA neurons, slow AHP in DRN5-HT neurons, shared properties with midbrain DA neurons, and multipolar morphology of DRN5-HT neurons.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C48 identify additional DRN cell types through PCA and clustering analysis. The observation of 47/120 unidentified neurons (C46) and their distinct properties (C48) support the existence of other cell types. However, the suggestion of four major types (C47) is tentative and based on unsupervised clustering without molecular confirmation.",
+    "evaluation": "Claims C103-C104, C107-C108, and C111 validate the current findings against established literature. The consistency with prior work (Dougalis et al., 2012; Prinz et al., 2013; Rivera and Bethea, 2013) strengthens confidence in the methods and cell identification.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C100",
-      "C101",
-      "C103"
+      "C113",
+      "C114"
     ],
-    "result": "The study demonstrates that DRNDA neurons have distinct electrophysiological profiles sufficient for classification, and that DRN5-HT neurons display pathophysiological changes dependent on DA and NA loss in the 6-OHDA model, while DRNDA neurons are primarily affected by DA loss.",
+    "result": "Only 1 of 25 reconstructed DRN5-HT neurons displayed dendritic spines, contrasting with previous rat studies showing spines in most DRN5-HT neurons. This difference may be due to thicker slices and distal dendrite preservation in prior studies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C100-C103 represent the main conclusions of the study, synthesizing findings from multiple experimental approaches. These conclusions are well-supported by the comprehensive electrophysiological, morphological, and lesion data presented throughout the manuscript.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C113-C114 report an observation that differs from prior literature with a plausible methodological explanation. The authors appropriately note the discrepancy and provide a reasonable interpretation based on slice thickness and dendrite preservation. This is a minor technical observation that doesn't affect the main conclusions.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C105",
-      "C106",
-      "C107"
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
     ],
-    "result": "DRNDA neurons share electrophysiological properties with other midbrain DA populations and DRN5-HT neurons have morphological features consistent with previous studies, with rare dendritic spines.",
+    "result": "Loss of SNc DA neurons alone (DMI+6-OHDA) increases excitability in DRN5-HT neurons, consistent with some prior studies but contrasting with others. This may reflect homeostatic compensation, with the pronounced AHP and long tau acting as a 'brake' on firing that is reduced when NA is also lesioned. Combined DA/NA lesioning affects DRN5-HT neurons more profoundly than DA loss alone.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C105-C107 place the current findings in context of prior literature. The comparison to other DA populations (C105) and confirmation of DRN5-HT morphology (C106) are supported by citations and current data. The observation about dendritic spines (C107) is appropriately qualified and discussed in relation to methodological considerations.",
+    "evaluation": "Claims C116-C122 integrate current findings with prior literature, noting both consistencies (C118) and discrepancies (C120). The mechanistic interpretation about the AHP/tau 'brake' (C122) is speculative but grounded in the data. The comparison across lesion conditions (C121) is well-supported experimentally.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C108",
-      "C109",
-      "C111"
+      "C123",
+      "C124"
     ],
-    "result": "Loss of SNc DA neurons increases excitability and spontaneous activity in DRN5-HT neurons, potentially through homeostatic mechanisms. The pronounced AHP and long tau may act as a 'brake' on firing frequency that is reduced by NA lesion.",
+    "result": "DRNDA neurons show less pronounced and different changes than DRN5-HT neurons in response to 6-OHDA lesioning, with changes primarily due to DA loss rather than NA loss.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C108-C109 are supported by experimental data and prior literature, but C111 is explicitly speculative ('may act as'). While the hypothesis is reasonable given the observed changes in AHP and tau, it requires direct mechanistic testing (e.g., pharmacological manipulation, computational modeling) to be fully supported. The speculation is appropriately qualified in the text.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 summarize the differential responses of DRNDA versus DRN5-HT neurons. This conclusion is supported by the experimental data showing minimal effects in DRNDA neurons with DMI protection (claims C88-C90). The cell-type-specific responses are a key finding of the study.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C112",
-      "C115",
-      "C116",
-      "C117"
+      "C58",
+      "C115"
     ],
-    "result": "The study suggests that non-motor symptoms in PD may result from complex DA and NA neuromodulation and interactions between DRN neuronal populations, though precise pathophysiological processes remain to be elucidated.",
+    "result": "Bilateral striatal 6-OHDA injection reproduces an early stage of parkinsonism with non-motor symptoms, and DMI pre-treatment protects LC NA neurons from 6-OHDA-induced degeneration.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C112, C115-C117 represent broader interpretations and future directions. While C112 is supported by the differential responses of DRNDA and DRN5-HT neurons, C115 is explicitly speculative ('raising the possibility'). C116 acknowledges that mechanisms remain unclear, and C117 appropriately frames the study's contribution. These claims are reasonable but require additional behavioral and circuit-level studies for full support.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C115 describe the established characteristics of the 6-OHDA model based on prior literature (Bonito-Oliva et al., 2014a,b; Ztaou et al., 2018; Kami\u0144ska et al., 2017; Fulceri et al., 2006). These are methodological validations supporting the experimental design.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
+      "C109"
+    ],
+    "result": "Some electrophysiological properties such as spontaneous firing and AP kinetics could be useful for in vivo characterization of DRN neurons, even in extracellular recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is speculative about future applications. While the cited literature (Strickland and McDannald, 2022; Haj\u00f3s et al., 2007; Schweimer et al., 2011) supports the general feasibility, the current study does not test in vivo recordings. This is a reasonable suggestion for future work but not demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study provides a quantitative classification scheme for DRN5-HT and DRNDA neurons and identifies novel changes in response to DA/NA depletion. The precise pathophysiological processes from NA loss remain to be elucidated. The findings provide insights into how DRN and LC are affected in PD and suggest future experiments on receptor expression and synaptic connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 appropriately summarize the study's contributions and limitations. The acknowledgment that mechanisms remain to be elucidated (C129) is honest. The statements about providing insights (C132) and suggesting future directions (C133) are reasonable given the comprehensive characterization performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
       "C1",
       "C2",
       "C3",
       "C4",
-      "C7",
       "C9",
       "C10",
       "C11",
@@ -270,37 +306,38 @@
       "C33",
       "C34"
     ],
-    "result": "Background claims establishing the context of PD pathology, non-motor symptoms, DRN anatomy and function, DRNDA neuron properties, and technical considerations for genetic labeling strategies.",
+    "result": "The introduction establishes the context of PD pathology, non-motor symptoms, DRN anatomy and function, and technical challenges in studying DRNDA neurons. This includes established knowledge about PD, DRN5-HT and DRNDA neurons, their connections, alterations in PD models, and limitations of previous genetic labeling approaches.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C4, C7, C9-C34 provide established background knowledge supported by appropriate citations to prior literature. These claims establish the rationale for the study and are not primary findings. They are appropriately referenced and consistent with current understanding of PD, DRN anatomy, and genetic labeling approaches.",
+    "evaluation": "Claims C1-C34 constitute background knowledge and literature review establishing the rationale for the study. These are appropriately cited and represent established facts in the field. They provide necessary context but are not novel findings of this study.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R16",
+    "result_id": "R18",
     "claim_ids": [
       "C5",
       "C6",
+      "C7",
       "C8"
     ],
-    "result": "Both serotonergic and dopaminergic neuronal populations in the DRN are altered by 6-OHDA, with most changes in serotonergic neurons reversed by desipramine co-treatment, indicating that depletion of both NA and dopamine causes changes in DRN neural circuitry.",
+    "result": "The abstract claims that electrical and morphological properties of DRN5-HT and DRNDA neurons were altered by 6-OHDA, with most changes in serotonergic neurons reversed by desipramine co-treatment, and that depletion of both NA and dopamine causes changes in DRN circuitry.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C6 and C8 represent the core findings summarized in the abstract. These are well-supported by the detailed experimental results presented in the manuscript (C60-C94). The claims accurately reflect the main conclusions drawn from comprehensive electrophysiological and morphological analyses across multiple experimental conditions.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C5-C8 are high-level summary statements from the abstract that are supported by the detailed experimental results presented in the manuscript. These accurately reflect the main findings demonstrated through comprehensive electrophysiological and morphological analyses across multiple experimental conditions.",
+    "result_type": "MINOR"
   },
   {
-    "result_id": "R17",
+    "result_id": "R19",
     "claim_ids": [
-      "C59"
+      "C92"
     ],
-    "result": "Bilateral injection of 6-OHDA in the dorsal striatum reproduces an early stage of parkinsonism with non-motor symptoms.",
+    "result": "Concomitant DA and NA lesioning (6-OHDA model) has severe impact on DRN5-HT neurons that cannot be evoked when NA is partially protected (DMI+6-OHDA model).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C59 is supported by citations to previous literature and confirmed by the lesion characterization in the current study (C60-C65). The model is well-established and appropriately characterized for the study's purposes.",
+    "evaluation": "Claim C92 summarizes the differential effects of combined versus selective lesioning on DRN5-HT neurons. This is well-supported by the experimental data showing that DMI protection prevents most morphological and some electrophysiological changes. The conclusion logically follows from the comparative analysis.",
     "result_type": "MINOR"
   }
 ]

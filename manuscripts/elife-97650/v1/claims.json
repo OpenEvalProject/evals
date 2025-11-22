@@ -122,7 +122,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Control experiments are described with references to figures showing normal development.",
+    "evidence": "Control experiments are described with references to figures.",
     "evidence_type": [
       "DATA"
     ]
@@ -143,7 +143,7 @@
   },
   {
     "claim_id": "C11",
-    "claim": "KRASG12V and Ventx have been reported to play a role in brain cancer.",
+    "claim": "Both kRasG12V and Ventx have been reported to play a role in brain cancer.",
     "claim_type": "EXPLICIT",
     "source": "Since both kRasG12V and Ventx have been reported to play a role in brain cancer (Lam et al., 2022), we decided to activate the oncogene kRasG12V at 1 dpf in a single normal cell of the brain of a transgenic zebrafish (injected with the mRNA of Ventx-GR at one-cell stage).",
     "source_type": [
@@ -191,7 +191,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The observation is described with reference to Figure 2A showing spatial specificity.",
+    "evidence": "The observation is described with reference to Figure 2A.",
     "evidence_type": [
       "DATA"
     ]
@@ -205,7 +205,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The observation is described with reference to supplementary figure showing cell disappearance.",
+    "evidence": "The observation is described with reference to supplementary figure.",
     "evidence_type": [
       "DATA"
     ]
@@ -219,7 +219,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The conditional relationship is described with references to multiple figures showing the data.",
+    "evidence": "The experimental result is described with references to multiple figures.",
     "evidence_type": [
       "DATA"
     ]
@@ -261,7 +261,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The observation is described with sample size and references to figures showing the data.",
+    "evidence": "The observation is described with sample size and references to figures.",
     "evidence_type": [
       "DATA"
     ]
@@ -275,7 +275,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Histological analysis is described with references to figures showing the staining.",
+    "evidence": "Histological analysis is described with references to figures.",
     "evidence_type": [
       "DATA"
     ]
@@ -289,7 +289,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The observation of metastatic behavior is described with references to multiple figures.",
+    "evidence": "The observation is described with references to multiple figures.",
     "evidence_type": [
       "DATA"
     ]
@@ -302,7 +302,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the observations of tumor formation and metastasis.",
+    "evidence": "This is a conclusion drawn from the experimental observations.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -316,21 +316,21 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the experimental conditions (no cCYC after initial activation).",
+    "evidence": "This is an inference based on the experimental conditions.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
     "claim_id": "C24",
-    "claim": "Absent VentX activation, the initially induced cell does not proliferate or show metastatic behavior; rather it disappears.",
+    "claim": "Absent VentX activation, proliferation and metastatic behavior are not observed; rather the initially induced cell disappears.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, absent VentX activation we do not observe proliferation and metastatic behavior, rather the initially induced cell disappears, see Figure 2\u2014figure supplement 2A.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The control observation is described with reference to supplementary figure.",
+    "evidence": "The control observation is described with reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
@@ -356,28 +356,39 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is calculated from the observation that all 30 larvae developed tumors.",
+    "evidence": "This is a calculation based on the experimental data.",
     "evidence_type": [
-      "DATA",
-      "INFERENCE"
+      "DATA"
     ]
   },
   {
     "claim_id": "C27",
+    "claim": "The probability for a KR+VX cell to not develop a tumor is F0=0.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, the probability for such a cell to not develop a tumor is F0=0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculation based on the experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
     "claim": "The probability of tumor development from a single KR+VX cell is estimated to be P1>80% (\u03c72=3.75; df = 1).",
     "claim_type": "EXPLICIT",
     "source": "Due to the finite size of the sample, we estimate the probability of tumor development from a single cell to be: P1>80% (\u03c72=3.75; df = 1).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Statistical analysis is provided to estimate the probability.",
+    "evidence": "This is a statistical estimate based on the experimental data.",
     "evidence_type": [
-      "DATA",
-      "INFERENCE"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C28",
+    "claim_id": "C29",
     "claim": "A single cell isolated from hyperplasic tissue and injected into a na\u00efve host zebrafish larva led to integration, migration, and colonization of the host tissues by the progeny of the transplanted cell.",
     "claim_type": "EXPLICIT",
     "source": "To definitely confirm the carcinogenic nature of the KR+VX-induced cells, we isolated and injected a single cell from a hyperplasic tissue (identified by the blue fluorescence of its nucleus) into a na\u00efve host zebrafish larva. This led to integration, migration, and colonization of the host tissues by the progeny of the transplanted cell (Figure 4A and B), with strong pERK activity detected in tumor masses of the host (Figure 4B).",
@@ -385,89 +396,75 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The transplantation experiment is described with references to figures showing the results.",
+    "evidence": "The transplantation experiment is described with references to figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C29",
+    "claim_id": "C30",
     "claim": "Out of 52 transplanted host zebrafish, 31 developed tumors, a probability of 60%.",
     "claim_type": "EXPLICIT",
     "source": "Out of 52 transplanted host zebrafish, 31 developed tumors, a probability of tumor development (60%) consistent with previously reported efficiency of tumor cells transplantation in zebrafish (Campbell et al., 2021).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The quantitative result is stated with sample size and compared to literature.",
+    "evidence": "The quantitative result is stated with citation to prior work for comparison.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C30",
+    "claim_id": "C31",
     "claim": "The capacity of the progeny of the induced cells to metastasize and develop a tumor mass when transplanted in a na\u00efve zebrafish is the operational definition of a malignant tumor.",
     "claim_type": "EXPLICIT",
     "source": "The capacity of the progeny of the induced cells to metastasize and develop a tumor mass when transplanted in a na\u00efve zebrafish is - to the best of our knowledge - the operational definition of a malignant tumor.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated as a definition based on established knowledge.",
+    "evidence": "This is a statement about the definition used in the field.",
     "evidence_type": [
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C31",
-    "claim": "Injection into a na\u00efve larva of an oncogene expressing cell which did not experience transient activation of a reprogramming factor does not yield a tumor and disappears within a few days.",
+    "claim_id": "C32",
+    "claim": "Injection into a na\u00efve larva of an oncogene expressing cell which did not experience the transient activation of a reprogramming factor does not yield a tumor and disappears within a few days.",
     "claim_type": "EXPLICIT",
     "source": "Notice that injection into a na\u00efve larva of an oncogene expressing cell (identified by its nuclear blue fluorescence) which did not experience the transient activation of a reprogramming factor does not yield a tumor and disappears within a few days (Figure 2\u2014figure supplement 2B).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The control experiment is described with reference to supplementary figure.",
+    "evidence": "The control experiment is described with reference to a figure.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C32",
-    "claim": "The surprising frequency of somatic mutations occurring in physiologically normal tissues raises the question of what combinations of events are sufficient for malignant transformation of a single cell.",
+    "claim_id": "C33",
+    "claim": "Many cells may harbor oncogenic mutations, but only a few unpredictably end up developing a full-blown tumor.",
     "claim_type": "EXPLICIT",
-    "source": "The surprising frequency of somatic mutations occurring in physiologically normal tissues (Martincorena and Campbell, 2015; Brash, 2015) raises the question of what combinations of events are sufficient for the malignant transformation of a single cell and the rise of the cell of origin of cancer.",
+    "source": "While many cells may harbor oncogenic mutations, only a few unpredictably end up developing a full-blown tumor (Cairns, 1975; Riva et al., 2020; Adashek et al., 2020; Hanahan and Weinberg, 2011).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a question motivated by cited literature on somatic mutations.",
+    "evidence": "This is a statement about the field supported by multiple citations.",
     "evidence_type": [
       "CITATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C33",
-    "claim": "The robust deterministic process of single-cell cancer induction suggests that aberrant reactivation of Epi-Driver genes involved in reprogramming/pluripotency might be relevant to irreversible malignant transformation of a cell.",
-    "claim_type": "EXPLICIT",
-    "source": "The robust deterministic process of single-cell cancer induction that we uncovered suggests that the aberrant reactivation of Epi-Driver genes involved in reprogramming/pluripotency (such as VENTX/NANOG, POU5/OCT4) might be relevant to the irreversible malignant transformation of a cell.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a hypothesis suggested by the experimental results.",
-    "evidence_type": [
-      "DATA",
-      "SPECULATION"
+      "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C34",
-    "claim": "Reprogramming Epi-Drivers are important regulators of cell viability, survival, and proliferation in several cellular contexts, from embryonic stem cells to cancer cells.",
+    "claim": "Various theories have been proposed to explain the transition from normal cell to tumor, but none has been tested in vivo at the single-cell level.",
     "claim_type": "EXPLICIT",
-    "source": "Reprogramming Epi-Drivers are important regulators of cell viability, survival, and proliferation in several cellular contexts, from embryonic stem cells to cancer cells (Hepburn et al., 2019; Villodre et al., 2016; Ducos et al., 2022; Rawat et al., 2010; Laise, 2022; Park et al., 2021).",
+    "source": "Various theories have been proposed to explain that transition (Soto and Sonnenschein, 2011; Tomasetti and Vogelstein, 2015; Jassim et al., 2023; Waclaw et al., 2015), but none has been tested in vivo at the single-cell level.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by multiple citations to prior literature.",
+    "evidence": "This is a statement about the state of the field supported by citations.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
@@ -475,132 +472,278 @@
   },
   {
     "claim_id": "C35",
-    "claim": "Due to their capacity to modulate epigenetic memory and cell plasticity, reprogramming factors may drive the early stages of malignant transformation in vivo once aberrantly reactivated.",
+    "claim": "Cancer initiation is believed to be a rare event taking place at the level of individual cells.",
     "claim_type": "EXPLICIT",
-    "source": "Due to their capacity to modulate epigenetic memory and cell plasticity, these reprogramming factors may drive the early stages of malignant transformation in vivo once (re)activated aberrantly.",
+    "source": "Cancer initiation is thus believed to be a rare event taking place at the level of individual cells (Visvader, 2011; Nowell, 1976; Hanahan, 2022; P\u00e9nisson et al., 2022; Frumkin et al., 2008) arising as a result of the accumulation of genetic mutations in so-called Mut-driver genes (oncogenes such as KRAS [Malumbres and Barbacid, 2003; Pylayeva-Gupta et al., 2011], tumor suppressor genes [Strachan and Read, 1999] such as TP53 or lifespan [Blasco, 2005] genes such as TERT).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a hypothesis based on known properties of reprogramming factors.",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C36",
-    "claim": "Reprogramming factors likely share some mechanism(s) with processes such as induced nuclear reprogramming, pluripotency maintenance, and/or endogenous cell reprogramming during development.",
-    "claim_type": "EXPLICIT",
-    "source": "They likely share some mechanism(s) with processes such as induced nuclear reprogramming (Hepburn et al., 2019; Villodre et al., 2016; Ducos et al., 2022), pluripotency maintenance, and/or endogenous cell reprogramming during development (Scerbo and Monsoro-Burq, 2020).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a hypothesis supported by citations to related processes.",
-    "evidence_type": [
-      "CITATION",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C37",
-    "claim": "The reactivation of the Neural Crest Progenitor program (possibly via stochastic expression of VENTX/NANOG and/or POU5/OCT4) has been shown in BRAF/p53 double mutant cells to yield NC-related tumors in vivo.",
-    "claim_type": "EXPLICIT",
-    "source": "Thus, consistent with our results, the reactivation (Scerbo and Monsoro-Burq, 2020) of the Neural Crest (NC) Progenitor program (possibly via the stochastic expression of VENTX/NANOG and/or POU5/OCT4) has been shown in BRAF/p53 double mutant cells to yield NC-related tumors in vivo (Baggiolini et al., 2021; Ablain et al., 2018; Kaufman et al., 2016).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by multiple citations to prior studies.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C38",
-    "claim": "Activation of Epi-Driver genes in NC-related tumors might confer predictable tumorigenesis.",
-    "claim_type": "EXPLICIT",
-    "source": "We surmise that activation of Epi-Driver genes in NC-related tumors might confer predictable tumorigenesis.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a hypothesis based on the results and prior literature.",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C39",
-    "claim": "Cells carrying cancer-causing mutations do not deterministically develop cancers in vivo.",
-    "claim_type": "EXPLICIT",
-    "source": "Since cells carrying cancer-causing mutations do not deterministically developed cancers in vivo (Kaufman et al., 2016; Campbell et al., 2021), we suggest that the probability of a mutated cell to enter into malignant transformation, or to maintain its physiological functions despite mutations, correlates with the probability of the reactivation of reprogramming factors.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to support the premise.",
-    "evidence_type": [
-      "CITATION",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C40",
-    "claim": "The probability of a mutated cell to enter into malignant transformation correlates with the probability of the reactivation of reprogramming factors.",
-    "claim_type": "EXPLICIT",
-    "source": "Since cells carrying cancer-causing mutations do not deterministically developed cancers in vivo (Kaufman et al., 2016; Campbell et al., 2021), we suggest that the probability of a mutated cell to enter into malignant transformation, or to maintain its physiological functions despite mutations, correlates with the probability of the reactivation of reprogramming factors.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a hypothesis suggested by the authors based on their results.",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C41",
-    "claim": "The results support a 'Vogelgram' two-step model for irreversible single-cell malignant transformation in vivo.",
-    "claim_type": "EXPLICIT",
-    "source": "Our results support a 'Vogelgram' (Fearon and Vogelstein, 1990) two-step model (Figure 5) for irreversible single-cell malignant transformation in vivo, mirroring the two hits hypothesis proposed by Berenblum and Shubik, 1949.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "The model is proposed based on the results and illustrated in Figure 5, with citations to prior models.",
-    "evidence_type": [
-      "DATA",
-      "CITATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C42",
-    "claim": "The appearance of Mut-Drivers in a normal (preprocancer) cell within healthy tissue would act as a permissive but insufficient initiator for malignant cell transformation.",
-    "claim_type": "EXPLICIT",
-    "source": "Thus, the appearance of Mut-Drivers in a normal (preprocancer; Brash, 2015) cell (Martincorena and Campbell, 2015) within healthy tissue would act as a permissive but insufficient initiator for malignant cell transformation.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a conclusion drawn from the results and supported by citations.",
-    "evidence_type": [
-      "DATA",
-      "CITATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C43",
-    "claim": "Surveillance mechanisms like cell competition between wild-type and mutated cells safeguard tissue homeostasis and result in active elimination of mutant cells from the tissue.",
-    "claim_type": "EXPLICIT",
-    "source": "Despite the frequency of mutational insults, which are often caused by external cues (chemical carcinogens, UV, etc.) or senescence/aging, it is known that surveillance mechanisms like cell competition between wild-type and mutated cells safeguard tissue homeostasis and results in active elimination of mutant cells from the tissue (Brown et al., 2017; Porazinski et al., 2016; van Neerven and Vermeulen, 2023).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated as known with citations to supporting literature.",
+    "evidence": "This is a statement about the field supported by multiple citations.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
     ]
   },
   {
+    "claim_id": "C36",
+    "claim": "Mutant KRAS is the most frequent driver of several cancers: about 27% of all human cancers, 45% of colorectal, and 90% of pancreatic cancers.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, mutant KRAS is the most frequent driver of several cancers (COSMIC, 2024; Punekar et al., 2022): about 27% of all human cancers, 45% of colorectal, and 90% of pancreatic cancers (Merz et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about cancer statistics supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Genes involved in embryonic development, pluri/multipotency, and cell reprogramming such as VENTX/NANOG and POU5/OCT4 are abnormally reactivated in late cancer stages.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, it has been shown that genes involved in embryonic development, pluri/multipotency, and cell reprogramming such as VENTX/NANOG and POU5/OCT4 are abnormally reactivated in late cancer stages, where acting as Epigenetic Drivers (Epi-Drivers) they empower cancer cells with cancer stem cell (CSCs) features, resistance to anticancer therapies, and potential for cancer recurrence/relapse (Vogelstein et al., 2013; Hepburn et al., 2019; Villodre et al., 2016; Ducos et al., 2022; Rawat et al., 2010; Laise, 2022; Park et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior findings supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Whether Epi-Drivers play a role during the early phases of malignant transformation is still unknown.",
+    "claim_type": "EXPLICIT",
+    "source": "Although it is evident that such Epi-Drivers confer a selective advantage to CSCs in a full-blown cancer, whether they play a role during the early phases of malignant transformation is still unknown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a gap in knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Current approaches to the study of cancer use constitutive or conditional expression of Mut-driver or Epi-driver genes in specific tissues, even though only a small subset of these cells eventually leads to the growth of tumors.",
+    "claim_type": "EXPLICIT",
+    "source": "Current approaches to the study of cancer use constitutive or conditional expression of Mut-driver (or Epi-driver genes; Shibata et al., 2018) in specific tissues, i.e., in many cells, even though only a small subset of these cells eventually leads to the growth of tumors (Adashek et al., 2020), often observed when the tumor already consists of many thousands of heterogeneous abnormal cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about current methods supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Carcinogenetic processes observed among sibling organisms occur with variable latency period from the onset of induction, at different locations and develop asynchronously.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, carcinogenetic processes observed among sibling organisms (Baggiolini et al., 2021; Ablain et al., 2018; Kaufman et al., 2016) occur with variable latency period from the onset of induction, at different locations and develop asynchronously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about observed phenomena supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The initial stages of tumorigenesis are difficult to study due to the rarity of the event in vivo.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, the initial stages of tumorigenesis are difficult to study, the state of the cell(s) of origin difficult to assess and control while its cellular environment is perturbed by the induced expression of the Mut- or Epi-driver genes. Due to the rarity of the event in vivo (Kaufman et al., 2016), a statistically relevant single-cell tracking and characterization of the early stages of tumorigenesis has therefore never been done.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about challenges in the field supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The synergy between KRASG12V and a reprogramming factor (Ventx, Nanog, or Oct4) increases the probability of carcinogenesis from a single cell by many orders of magnitude compared to the expression of either of these genes alone.",
+    "claim_type": "EXPLICIT",
+    "source": "In the following we show the synergy between only two factors: the oncogene kRasG12V and a reprogramming factor (Ventx, Nanog, or Oct4) increases the probability of carcinogenesis from a single cell by many orders of magnitude when compared to the expression of either of these genes (or none).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the main finding of the study.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The robust deterministic process of single-cell cancer induction suggests that the aberrant reactivation of Epi-Driver genes involved in reprogramming/pluripotency might be relevant to the irreversible malignant transformation of a cell.",
+    "claim_type": "EXPLICIT",
+    "source": "The robust deterministic process of single-cell cancer induction that we uncovered suggests that the aberrant reactivation of Epi-Driver genes involved in reprogramming/pluripotency (such as VENTX/NANOG, POU5/OCT4) might be relevant to the irreversible malignant transformation of a cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the experimental findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
     "claim_id": "C44",
+    "claim": "Reprogramming Epi-Drivers are important regulators of cell viability, survival, and proliferation in several cellular contexts, from embryonic stem cells to cancer cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Reprogramming Epi-Drivers are important regulators of cell viability, survival, and proliferation in several cellular contexts, from embryonic stem cells to cancer cells (Hepburn et al., 2019; Villodre et al., 2016; Ducos et al., 2022; Rawat et al., 2010; Laise, 2022; Park et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the role of these factors supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Due to their capacity to modulate epigenetic memory and cell plasticity, reprogramming factors may drive the early stages of malignant transformation in vivo once reactivated aberrantly.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to their capacity to modulate epigenetic memory and cell plasticity, these reprogramming factors may drive the early stages of malignant transformation in vivo once (re)activated aberrantly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on the experimental findings and known properties of these factors.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Reprogramming factors likely share some mechanism(s) with processes such as induced nuclear reprogramming, pluripotency maintenance, and/or endogenous cell reprogramming during development.",
+    "claim_type": "EXPLICIT",
+    "source": "They likely share some mechanism(s) with processes such as induced nuclear reprogramming (Hepburn et al., 2019; Villodre et al., 2016; Ducos et al., 2022), pluripotency maintenance, and/or endogenous cell reprogramming during development (Scerbo and Monsoro-Burq, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis supported by citations to related work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The reactivation of the Neural Crest Progenitor program (possibly via the stochastic expression of VENTX/NANOG and/or POU5/OCT4) has been shown in BRAF/p53 double mutant cells to yield NC-related tumors in vivo.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, consistent with our results, the reactivation (Scerbo and Monsoro-Burq, 2020) of the Neural Crest (NC) Progenitor program (possibly via the stochastic expression of VENTX/NANOG and/or POU5/OCT4) has been shown in BRAF/p53 double mutant cells to yield NC-related tumors in vivo (Baggiolini et al., 2021; Ablain et al., 2018; Kaufman et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about prior findings supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Activation of Epi-Driver genes in NC-related tumors might confer predictable tumorigenesis.",
+    "claim_type": "EXPLICIT",
+    "source": "We surmise that activation of Epi-Driver genes in NC-related tumors might confer predictable tumorigenesis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on the experimental findings.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Cells carrying cancer-causing mutations do not deterministically develop cancers in vivo.",
+    "claim_type": "EXPLICIT",
+    "source": "Since cells carrying cancer-causing mutations do not deterministically developed cancers in vivo (Kaufman et al., 2016; Campbell et al., 2021), we suggest that the probability of a mutated cell to enter into malignant transformation, or to maintain its physiological functions despite mutations, correlates with the probability of the reactivation of reprogramming factors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The probability of a mutated cell to enter into malignant transformation correlates with the probability of the reactivation of reprogramming factors.",
+    "claim_type": "EXPLICIT",
+    "source": "Since cells carrying cancer-causing mutations do not deterministically developed cancers in vivo (Kaufman et al., 2016; Campbell et al., 2021), we suggest that the probability of a mutated cell to enter into malignant transformation, or to maintain its physiological functions despite mutations, correlates with the probability of the reactivation of reprogramming factors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on the experimental findings and prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The results support a 'Vogelgram' two-step model for irreversible single-cell malignant transformation in vivo, mirroring the two hits hypothesis proposed by Berenblum and Shubik, 1949.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results support a 'Vogelgram' (Fearon and Vogelstein, 1990) two-step model (Figure 5) for irreversible single-cell malignant transformation in vivo, mirroring the two hits hypothesis proposed by Berenblum and Shubik, 1949.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the findings with citations to prior models.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The appearance of Mut-Drivers in a normal (preprocancer) cell within healthy tissue would act as a permissive but insufficient initiator for malignant cell transformation.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the appearance of Mut-Drivers in a normal (preprocancer; Brash, 2015) cell (Martincorena and Campbell, 2015) within healthy tissue would act as a permissive but insufficient initiator for malignant cell transformation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the findings supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Surveillance mechanisms like cell competition between wild-type and mutated cells safeguard tissue homeostasis and result in active elimination of mutant cells from the tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the frequency of mutational insults, which are often caused by external cues (chemical carcinogens, UV, etc.) or senescence/aging, it is known that surveillance mechanisms like cell competition between wild-type and mutated cells safeguard tissue homeostasis and results in active elimination of mutant cells from the tissue (Brown et al., 2017; Porazinski et al., 2016; van Neerven and Vermeulen, 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about known mechanisms supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
     "claim": "The aberrant reactivation of Epi-Driver genes involved in reprogramming/pluripotency may promote the irreversible and deterministic malignant transformation in the cell of origin of cancer leading to carcinogenesis.",
     "claim_type": "EXPLICIT",
     "source": "Our data imply that the aberrant reactivation of Epi-Driver genes involved in reprogramming/pluripotency may promote the irreversible and deterministic malignant transformation in the cell of origin of cancer leading to carcinogenesis.",
@@ -614,190 +757,58 @@
     ]
   },
   {
-    "claim_id": "C45",
+    "claim_id": "C55",
     "claim": "The variation in cancer risk among tissues can be related to the number of stem cell divisions and tissue renewal.",
     "claim_type": "EXPLICIT",
     "source": "Our hypothesis is further strengthened by the observation that the variation in cancer risk among tissues can be related to the number of stem cell divisions and tissue renewal (Tomasetti and Vogelstein, 2015).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated with citation to support the observation.",
+    "evidence": "This is a statement about prior findings supported by citation.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C46",
-    "claim": "The aberrant reactivation (or maintenance) of Epi-Driver genes in regenerative events, in cooperation with incident mutations, might be the key deterministic factor in switching a normal/healthy cell into the first cell of origin of cancer.",
+    "claim_id": "C56",
+    "claim": "The aberrant reactivation (or maintenance) of Epi-Driver genes in regenerative events, in cooperation with incident mutations, might be the key deterministic factor in the switching of a normal/healthy cell into the first cell of origin of cancer.",
     "claim_type": "EXPLICIT",
     "source": "The aberrant reactivation (or maintenance) of Epi-Driver genes in these regenerative events, in cooperation with incident mutations, might be the key deterministic factor in the switching of a normal/healthy cell into the first cell of origin of cancer.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a hypothesis proposed by the authors.",
+    "evidence": "This is a hypothesis based on the experimental findings and prior observations.",
     "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE",
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C47",
+    "claim_id": "C57",
     "claim": "The results are compatible with the recently proposed 'ground state theory of cancer initiation'.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, the results reported here are compatible with the recently proposed 'ground state theory of cancer initiation' (Jassim et al., 2023).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The compatibility is stated with citation to the theory.",
+    "evidence": "This is a statement about compatibility with a prior theory supported by citation.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C48",
+    "claim_id": "C58",
     "claim": "According to the ground state theory, a malignant transformation may occur in a cell harboring an oncogenic mutation upon a change of its functional state (its 'ground state').",
     "claim_type": "EXPLICIT",
     "source": "According to that theory a malignant transformation may occur in a cell harboring an oncogenic mutation upon a change of its functional state (its 'ground state').",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a description of the cited theory.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C49",
-    "claim": "The transient activation of a reprogramming factor possibly synergizes with the oncogene to alter the epigenetic and functional state of the cell allowing its transformation into a tumorigenic cell.",
-    "claim_type": "EXPLICIT",
-    "source": "Here, the transient activation of a reprogramming factor (i.e. Ventx, Nanog, or Oct4) possibly synergizes with the oncogene to alter the epigenetic and functional state of the cell allowing its transformation into a tumorigenic cell.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a mechanistic interpretation of the experimental results.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C50",
-    "claim": "Activation of kRasG12V in a whole tissue (brain, pancreas, or intestine) results in stochastic and random tumor development over weeks.",
-    "claim_type": "EXPLICIT",
-    "source": "This may also explain the apparent discrepancy between the present deterministic and rapid tumor development upon activation in a single cell of both kRasG12V and a reprogramming factor and the reports of stochastic and random tumor development over weeks following activation of kRasG12V in a whole tissue (brain [Ju et al., 2015], pancreas [Oh and Park, 2019], or intestine [Lu et al., 2018]).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to prior studies showing stochastic tumor development.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C51",
-    "claim": "In tissue-wide kRasG12V activation, transformed cells may have been triggered to undergo malignant transformation by the stochastic activation of a reprogramming factor/Epi-Driver.",
-    "claim_type": "EXPLICIT",
-    "source": "In the latter case, transformed cells may have been triggered to undergo a malignant transformation by the stochastic activation of a reprogramming factor/Epi-Driver, which is consistent with the recent finding that cancer initiation might occur by transient perturbations of epigenetic regulators (Parreno et al., 2024).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a hypothesis to explain the discrepancy, supported by citation to recent findings.",
-    "evidence_type": [
-      "CITATION",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C52",
-    "claim": "The progeny of the cell(s) of origin of cancer display a short-range dispersal within the tissue during the earliest phases of tumorigenesis and prior to the effective appearance of tumor mass.",
-    "claim_type": "EXPLICIT",
-    "source": "Importantly, our observation that the progeny of the cell(s) of origin of cancer display a short-range dispersal within the tissue during the earliest phases of tumorigenesis and prior to the effective appearance of tumor mass corroborates a recent theoretical model predicting such an early dispersal during carcinogenesis to explain heterogeneity, therapeutic resistance, and tumor relapse (Waclaw et al., 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The observation is stated and linked to a theoretical model with citation.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C53",
-    "claim": "The optogenetic approach allows for predictable and noninvasive control of malignant transformation of a single cell in an unaltered microenvironment.",
-    "claim_type": "EXPLICIT",
-    "source": "Being the first experiments to predictably and noninvasively control the malignant transformation of a single cell in an unaltered microenvironment, our approach opens a new vista on the study of 'the cell of origin of cancer' (Blanpain, 2013), an acknowledged enigma of cancer research.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a claim about the novelty and significance of the approach.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C54",
-    "claim": "Mutant KRAS is the most frequent driver of several cancers.",
-    "claim_type": "EXPLICIT",
-    "source": "Notably, mutant KRAS is the most frequent driver of several cancers (COSMIC, 2024; Punekar et al., 2022): about 27% of all human cancers, 45% of colorectal, and 90% of pancreatic cancers (Merz et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to cancer databases and literature.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C55",
-    "claim": "About 27% of all human cancers have mutant KRAS.",
-    "claim_type": "EXPLICIT",
-    "source": "Notably, mutant KRAS is the most frequent driver of several cancers (COSMIC, 2024; Punekar et al., 2022): about 27% of all human cancers, 45% of colorectal, and 90% of pancreatic cancers (Merz et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a specific statistic cited from literature.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C56",
-    "claim": "About 45% of colorectal cancers have mutant KRAS.",
-    "claim_type": "EXPLICIT",
-    "source": "Notably, mutant KRAS is the most frequent driver of several cancers (COSMIC, 2024; Punekar et al., 2022): about 27% of all human cancers, 45% of colorectal, and 90% of pancreatic cancers (Merz et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a specific statistic cited from literature.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C57",
-    "claim": "About 90% of pancreatic cancers have mutant KRAS.",
-    "claim_type": "EXPLICIT",
-    "source": "Notably, mutant KRAS is the most frequent driver of several cancers (COSMIC, 2024; Punekar et al., 2022): about 27% of all human cancers, 45% of colorectal, and 90% of pancreatic cancers (Merz et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a specific statistic cited from literature.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "Genes involved in embryonic development, pluri/multipotency, and cell reprogramming such as VENTX/NANOG and POU5/OCT4 are abnormally reactivated in late cancer stages.",
-    "claim_type": "EXPLICIT",
-    "source": "Recently, it has been shown that genes involved in embryonic development, pluri/multipotency, and cell reprogramming such as VENTX/NANOG and POU5/OCT4 are abnormally reactivated in late cancer stages, where acting as Epigenetic Drivers (Epi-Drivers) they empower cancer cells with cancer stem cell (CSCs) features, resistance to anticancer therapies, and potential for cancer recurrence/relapse (Vogelstein et al., 2013; Hepburn et al., 2019; Villodre et al., 2016; Ducos et al., 2022; Rawat et al., 2010; Laise, 2022; Park et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with multiple citations to supporting literature.",
+    "evidence": "This is a description of a prior theory.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
@@ -805,368 +816,287 @@
   },
   {
     "claim_id": "C59",
-    "claim": "Epi-Drivers empower cancer cells with cancer stem cell features, resistance to anticancer therapies, and potential for cancer recurrence/relapse in late cancer stages.",
+    "claim": "The transient activation of a reprogramming factor (i.e. Ventx, Nanog, or Oct4) possibly synergizes with the oncogene to alter the epigenetic and functional state of the cell allowing its transformation into a tumorigenic cell.",
     "claim_type": "EXPLICIT",
-    "source": "Recently, it has been shown that genes involved in embryonic development, pluri/multipotency, and cell reprogramming such as VENTX/NANOG and POU5/OCT4 are abnormally reactivated in late cancer stages, where acting as Epigenetic Drivers (Epi-Drivers) they empower cancer cells with cancer stem cell (CSCs) features, resistance to anticancer therapies, and potential for cancer recurrence/relapse (Vogelstein et al., 2013; Hepburn et al., 2019; Villodre et al., 2016; Ducos et al., 2022; Rawat et al., 2010; Laise, 2022; Park et al., 2021).",
+    "source": "Here, the transient activation of a reprogramming factor (i.e. Ventx, Nanog, or Oct4) possibly synergizes with the oncogene to alter the epigenetic and functional state of the cell allowing its transformation into a tumorigenic cell.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated with multiple citations to supporting literature.",
+    "evidence": "This is an interpretation of the experimental findings.",
     "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C60",
-    "claim": "Whether Epi-Drivers play a role during the early phases of malignant transformation is still unknown.",
+    "claim": "Stochastic and random tumor development over weeks following activation of kRasG12V in a whole tissue has been reported in brain, pancreas, and intestine.",
     "claim_type": "EXPLICIT",
-    "source": "Although it is evident that such Epi-Drivers confer a selective advantage to CSCs in a full-blown cancer, whether they play a role during the early phases of malignant transformation is still unknown.",
+    "source": "This may also explain the apparent discrepancy between the present deterministic and rapid tumor development upon activation in a single cell of both kRasG12V and a reprogramming factor and the reports of stochastic and random tumor development over weeks following activation of kRasG12V in a whole tissue (brain [Ju et al., 2015], pancreas [Oh and Park, 2019], or intestine [Lu et al., 2018]).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This identifies a gap in knowledge that the study addresses.",
+    "evidence": "This is a statement about prior findings supported by citations.",
     "evidence_type": [
+      "CITATION",
       "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C61",
-    "claim": "Current approaches to cancer study use constitutive or conditional expression of Mut-driver or Epi-driver genes in specific tissues, i.e., in many cells.",
+    "claim": "In cases of whole tissue kRasG12V activation, transformed cells may have been triggered to undergo a malignant transformation by the stochastic activation of a reprogramming factor/Epi-Driver.",
     "claim_type": "EXPLICIT",
-    "source": "Current approaches to the study of cancer use constitutive or conditional expression of Mut-driver (or Epi-driver genes; Shibata et al., 2018) in specific tissues, i.e., in many cells, even though only a small subset of these cells eventually leads to the growth of tumors (Adashek et al., 2020), often observed when the tumor already consists of many thousands of heterogeneous abnormal cells.",
+    "source": "In the latter case, transformed cells may have been triggered to undergo a malignant transformation by the stochastic activation of a reprogramming factor/Epi-Driver, which is consistent with the recent finding that cancer initiation might occur by transient perturbations of epigenetic regulators (Parreno et al., 2024).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes current methods with citations.",
+    "evidence": "This is a hypothesis to explain prior findings, supported by citation.",
     "evidence_type": [
       "CITATION",
-      "KNOWLEDGE"
+      "INFERENCE",
+      "SPECULATION"
     ]
   },
   {
     "claim_id": "C62",
-    "claim": "Only a small subset of cells with induced Mut-driver or Epi-driver expression eventually leads to the growth of tumors.",
+    "claim": "The progeny of the cell(s) of origin of cancer display a short-range dispersal within the tissue during the earliest phases of tumorigenesis and prior to the effective appearance of tumor mass.",
     "claim_type": "EXPLICIT",
-    "source": "Current approaches to the study of cancer use constitutive or conditional expression of Mut-driver (or Epi-driver genes; Shibata et al., 2018) in specific tissues, i.e., in many cells, even though only a small subset of these cells eventually leads to the growth of tumors (Adashek et al., 2020), often observed when the tumor already consists of many thousands of heterogeneous abnormal cells.",
+    "source": "Importantly, our observation that the progeny of the cell(s) of origin of cancer display a short-range dispersal within the tissue during the earliest phases of tumorigenesis and prior to the effective appearance of tumor mass corroborates a recent theoretical model predicting such an early dispersal during carcinogenesis to explain heterogeneity, therapeutic resistance, and tumor relapse (Waclaw et al., 2015).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated with citation to support the observation.",
+    "evidence": "This is an observation that corroborates a prior theoretical model, supported by citation.",
     "evidence_type": [
+      "DATA",
       "CITATION"
     ]
   },
   {
     "claim_id": "C63",
-    "claim": "Carcinogenetic processes observed among sibling organisms occur with variable latency period from the onset of induction, at different locations and develop asynchronously.",
+    "claim": "The optogenetic approach allows for the first experiments to predictably and noninvasively control the malignant transformation of a single cell in an unaltered microenvironment.",
     "claim_type": "EXPLICIT",
-    "source": "Hence, carcinogenetic processes observed among sibling organisms (Baggiolini et al., 2021; Ablain et al., 2018; Kaufman et al., 2016) occur with variable latency period from the onset of induction, at different locations and develop asynchronously.",
+    "source": "Being the first experiments to predictably and noninvasively control the malignant transformation of a single cell in an unaltered microenvironment, our approach opens a new vista on the study of 'the cell of origin of cancer' (Blanpain, 2013), an acknowledged enigma of cancer research.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated with citations to prior studies.",
+    "evidence": "This is a statement about the novelty and significance of the approach.",
     "evidence_type": [
-      "CITATION"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C64",
-    "claim": "The initial stages of tumorigenesis are difficult to study due to the variability and asynchrony of tumor development.",
+    "claim": "The optogenetic approach opens the way for a quantitative study of the initial stages of cancer at the single-cell level.",
     "claim_type": "EXPLICIT",
-    "source": "As a result, the initial stages of tumorigenesis are difficult to study, the state of the cell(s) of origin difficult to assess and control while its cellular environment is perturbed by the induced expression of the Mut- or Epi-driver genes.",
+    "source": "By allowing for specific and reproducible single-cell malignant transformation in vivo, our optogenetic approach opens the way for a quantitative study of the initial stages of cancer at the single-cell level (e.g. tracking and characterization), that will allow one to address many of these questions.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the described limitations of current approaches.",
+    "evidence": "This is a statement about the potential applications of the approach.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
     "claim_id": "C65",
-    "claim": "Due to the rarity of the event in vivo, a statistically relevant single-cell tracking and characterization of the early stages of tumorigenesis has never been done.",
+    "claim": "The Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP) transgenic line was generated by injecting the plasmid pT24-actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP with tol2 mRNA transposase.",
     "claim_type": "EXPLICIT",
-    "source": "Due to the rarity of the event in vivo (Kaufman et al., 2016), a statistically relevant single-cell tracking and characterization of the early stages of tumorigenesis has therefore never been done.",
+    "source": "The Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP) was generated by injecting the plasmid pT24-actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP, which contains the homologous cDNA sequence of KRASG12V from human, with tol2 mRNA transposase.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This identifies a gap in the field with citation.",
+    "evidence": "This is a description of the methods used to generate the transgenic line.",
     "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
+      "DATA"
     ]
   },
   {
     "claim_id": "C66",
-    "claim": "There is a need to predict or control the cell undergoing malignant transformation in vivo to study the cellular and molecular events involved in the initial stages of tumorigenesis.",
-    "claim_type": "EXPLICIT",
-    "source": "This emphasizes the need to predict or control the cell undergoing malignant transformation in vivo in order to pave the way for a study of the cellular and molecular events involved in the initial stages of tumorigenesis.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a conclusion about the need that motivates the study.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C67",
-    "claim": "The synergy between KRASG12V and a reprogramming factor (Ventx, Nanog, or Oct4) increases the probability of carcinogenesis from a single cell by many orders of magnitude compared to expression of either gene alone.",
-    "claim_type": "EXPLICIT",
-    "source": "In the following we show the synergy between only two factors: the oncogene kRasG12V and a reprogramming factor (Ventx, Nanog, or Oct4) increases the probability of carcinogenesis from a single cell by many orders of magnitude when compared to the expression of either of these genes (or none).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a summary of the main finding of the study.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C68",
-    "claim": "Cancer initiation is believed to be a rare event taking place at the level of individual cells.",
-    "claim_type": "EXPLICIT",
-    "source": "Cancer initiation is thus believed to be a rare event taking place at the level of individual cells (Visvader, 2011; Nowell, 1976; Hanahan, 2022; P\u00e9nisson et al., 2022; Frumkin et al., 2008) arising as a result of the accumulation of genetic mutations in so-called Mut-driver genes (oncogenes such as KRAS [Malumbres and Barbacid, 2003; Pylayeva-Gupta et al., 2011], tumor suppressor genes [Strachan and Read, 1999] such as TP53 or lifespan [Blasco, 2005] genes such as TERT).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated as a belief in the field with multiple citations.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C69",
-    "claim": "Cancer arises as a result of the accumulation of genetic mutations in Mut-driver genes such as oncogenes, tumor suppressor genes, or lifespan genes.",
-    "claim_type": "EXPLICIT",
-    "source": "Cancer initiation is thus believed to be a rare event taking place at the level of individual cells (Visvader, 2011; Nowell, 1976; Hanahan, 2022; P\u00e9nisson et al., 2022; Frumkin et al., 2008) arising as a result of the accumulation of genetic mutations in so-called Mut-driver genes (oncogenes such as KRAS [Malumbres and Barbacid, 2003; Pylayeva-Gupta et al., 2011], tumor suppressor genes [Strachan and Read, 1999] such as TP53 or lifespan [Blasco, 2005] genes such as TERT).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to support the concept.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C70",
-    "claim": "The co-activation of KRASG12V and VENTX displayed significant changes in gene expression compared to controls and single activations.",
-    "claim_type": "EXPLICIT",
-    "source": "Compared to the controls (Ctrl; Ctrl+ cCYC; Ctrl+cCYC+DEX) and larvae in which only KRASG12V (+cCYC+UV; +cCYC+UV +DEX) or Ventx (Ventx+DEX) were activated, the co-activation of KRASG12V+Ventx (+cCYC+UV+VentX+DEX) displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert) and underexpression of oncosuppressor genes (foxo3, lats1,spop) and genes involved in epigenetic memory (tet3, dnmt).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "RT-qPCR data is described with reference to supplementary figures.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C71",
-    "claim": "Co-activation of KRASG12V and VENTX results in overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28).",
-    "claim_type": "EXPLICIT",
-    "source": "Compared to the controls (Ctrl; Ctrl+ cCYC; Ctrl+cCYC+DEX) and larvae in which only KRASG12V (+cCYC+UV; +cCYC+UV +DEX) or Ventx (Ventx+DEX) were activated, the co-activation of KRASG12V+Ventx (+cCYC+UV+VentX+DEX) displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert) and underexpression of oncosuppressor genes (foxo3, lats1,spop) and genes involved in epigenetic memory (tet3, dnmt).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "RT-qPCR data showing gene expression changes.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "Co-activation of KRASG12V and VENTX results in overexpression of stemness genes (aldh1a, tert).",
-    "claim_type": "EXPLICIT",
-    "source": "Compared to the controls (Ctrl; Ctrl+ cCYC; Ctrl+cCYC+DEX) and larvae in which only KRASG12V (+cCYC+UV; +cCYC+UV +DEX) or Ventx (Ventx+DEX) were activated, the co-activation of KRASG12V+Ventx (+cCYC+UV+VentX+DEX) displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert) and underexpression of oncosuppressor genes (foxo3, lats1,spop) and genes involved in epigenetic memory (tet3, dnmt).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "RT-qPCR data showing gene expression changes.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C73",
-    "claim": "Co-activation of KRASG12V and VENTX results in underexpression of oncosuppressor genes (foxo3, lats1, spop).",
-    "claim_type": "EXPLICIT",
-    "source": "Compared to the controls (Ctrl; Ctrl+ cCYC; Ctrl+cCYC+DEX) and larvae in which only KRASG12V (+cCYC+UV; +cCYC+UV +DEX) or Ventx (Ventx+DEX) were activated, the co-activation of KRASG12V+Ventx (+cCYC+UV+VentX+DEX) displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert) and underexpression of oncosuppressor genes (foxo3, lats1,spop) and genes involved in epigenetic memory (tet3, dnmt).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "RT-qPCR data showing gene expression changes.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "Co-activation of KRASG12V and VENTX results in underexpression of genes involved in epigenetic memory (tet3, dnmt).",
-    "claim_type": "EXPLICIT",
-    "source": "Compared to the controls (Ctrl; Ctrl+ cCYC; Ctrl+cCYC+DEX) and larvae in which only KRASG12V (+cCYC+UV; +cCYC+UV +DEX) or Ventx (Ventx+DEX) were activated, the co-activation of KRASG12V+Ventx (+cCYC+UV+VentX+DEX) displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert) and underexpression of oncosuppressor genes (foxo3, lats1,spop) and genes involved in epigenetic memory (tet3, dnmt).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "RT-qPCR data showing gene expression changes.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C75",
-    "claim": "Larvae overexpressing KRASG12V plus VENTX develop hyperplasic and dysplastic cancer-like features and tissue outgrowth in the gut/intestine, pancreas, and liver.",
-    "claim_type": "EXPLICIT",
-    "source": "Larvae overexpressing KR+VX develop hyperplasic and dysplastic cancer-like features and tissue outgrowth in the gut/intestine (red arrow), pancreas (blue arrow), and liver.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "Histopathological analysis is described with reference to Figure 1\u2014figure supplement 4C.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C76",
-    "claim": "Cancer-like features induced by KRASG12V plus VENTX specifically and exclusively reduce the survival rate to 20% 2 weeks after induction.",
-    "claim_type": "EXPLICIT",
-    "source": "Such cancer-like features specifically and exclusively reduce the survival rate to 20% 2 weeks after induction.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "Survival data is described with reference to Figure 1\u2014figure supplement 4D.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C77",
-    "claim": "Only the synergy between reprogramming factors (VENTX, NANOG, or POU5/OCT4) and the KRASG12V oncogene reproducibly and efficiently induces tumors in zebrafish larvae.",
-    "claim_type": "EXPLICIT",
-    "source": "Note that only the synergy between reprogramming factors (i.e. VENTX, NANOG, or POU5/OCT4) and the KRASG12V oncogene reproducibly and efficiently induce tumors in zebrafish larvae.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated with reference to Figure 1\u2014figure supplement 3C showing quantification.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C78",
-    "claim": "mTFP fluorescence can be observed about 30 min post-illumination following cCYC uncaging and CRE-ERT activation.",
-    "claim_type": "EXPLICIT",
-    "source": "In such a transgenic zebrafish line hereafter referred to as KRASG12V line (Figure 1B, Figure 1\u2014figure supplement 1B), the expression of EOS can be switched to KRASG12V and H2B-mTFP (nuclear blue fluorescence) upon 1 hr incubation in cCYC, followed by washing and UV (365 nm) cCYC uncaging which triggers CRE-ERT activation (Figure 1C); mTFP fluorescence can be observed about 30 min post-illumination (Figure 1\u2014figure supplement 1B) and is stably maintained in zebrafish (Figure 1G, Figure 1\u2014figure supplement 1C).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "The timing is described with reference to supplementary figures.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C79",
-    "claim": "mTFP fluorescence is stably maintained in zebrafish following activation.",
-    "claim_type": "EXPLICIT",
-    "source": "In such a transgenic zebrafish line hereafter referred to as KRASG12V line (Figure 1B, Figure 1\u2014figure supplement 1B), the expression of EOS can be switched to KRASG12V and H2B-mTFP (nuclear blue fluorescence) upon 1 hr incubation in cCYC, followed by washing and UV (365 nm) cCYC uncaging which triggers CRE-ERT activation (Figure 1C); mTFP fluorescence can be observed about 30 min post-illumination (Figure 1\u2014figure supplement 1B) and is stably maintained in zebrafish (Figure 1G, Figure 1\u2014figure supplement 1C).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "Stable expression is described with reference to figures.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C80",
-    "claim": "Once cCYC is uncaged, embryos are maintained in E3 medium with no CYC and thus no activation of the oncogene.",
-    "claim_type": "EXPLICIT",
-    "source": "Notice also that once cCYC is uncaged embryos are maintained in E3 medium with no CYC and thus no activation of the oncogene.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the experimental conditions after uncaging.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C81",
-    "claim": "The Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP) transgenic line was generated by injecting a plasmid with tol2 mRNA transposase.",
-    "claim_type": "EXPLICIT",
-    "source": "The Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP) was generated by injecting the plasmid pT24-actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP, which contains the homologous cDNA sequence of KRASG12V from human, with tol2 mRNA transposase.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The method of generating the transgenic line is described.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C82",
-    "claim": "The KRASG12V transgenic line contains the homologous cDNA sequence of KRASG12V from human.",
-    "claim_type": "EXPLICIT",
-    "source": "The Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP) was generated by injecting the plasmid pT24-actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP, which contains the homologous cDNA sequence of KRASG12V from human, with tol2 mRNA transposase.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The source of the KRASG12V sequence is specified.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C83",
     "claim": "Founder transgenic fish were identified by global expression of Eos.",
     "claim_type": "EXPLICIT",
     "source": "Founder transgenic fish were identified by global expression of Eos.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The method of identifying transgenic founders is described.",
+    "evidence": "This is a description of the methods used to identify transgenic fish.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C84",
+    "claim_id": "C67",
+    "claim": "The Tg(ubi:Cre-ERT; myl7:EGFP) line was previously described by Mosimann et al., 2011.",
+    "claim_type": "EXPLICIT",
+    "source": "The Tg(ubi:Cre-ERT; myl7:EGFP) was previously described (Mosimann et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a citation to prior work describing the transgenic line.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
     "claim": "The double transgenic line was created by crossing Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP) and Tg(ubi:Cre-ERT; myl7:EGFP).",
     "claim_type": "EXPLICIT",
     "source": "The double transgenic line Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP; ubi:Cre-ERT; myl7:EGFP) was created by crossing Tg(actin:loxP-EOS-stop-loxP-KRASG12V-T2A-H2B-mTFP) and Tg(ubi:Cre-ERT; myl7:EGFP).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The method of creating the double transgenic line is described.",
+    "evidence": "This is a description of the methods used to create the double transgenic line.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C85",
+    "claim_id": "C69",
     "claim": "Founder double transgenic fish were selected by global expression of Eos and expression of EGFP in the developing heart.",
     "claim_type": "EXPLICIT",
     "source": "Founder double transgenic fish were selected by global expression of Eos and expression of EGFP in the developing heart.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The selection criteria for double transgenic founders is described.",
+    "evidence": "This is a description of the methods used to select double transgenic fish.",
     "evidence_type": [
       "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "To induce KRASG12V expression, 24 hpf embryos were incubated in 6 \u03bcM cCYC for 1 hr in the dark, rinsed in E3 medium followed by 5 min photoactivation with an ~365 nm UV lamp.",
+    "claim_type": "EXPLICIT",
+    "source": "To induce kRASG12V expression, 24 hpf embryos were incubated in 6 \u03bcM cCYC for 1 hr (in the dark), rinsed in E3 medium followed by 5 min photoactivation with an ~365 nm UV lamp (measured intensity: 4 mW/cm2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Localized uncaging was performed by illumination for 7 min on a Nikon Ti microscope equipped with a light source peaking at 405 nm.",
+    "claim_type": "EXPLICIT",
+    "source": "Localized uncaging was performed by illumination for 7 min on a Nikon Ti microscope equipped with a light source peaking at 405 nm, Figure 1.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the experimental protocol with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The size of the uncaging region was controlled by an iris that defines a circular illumination of diameter ~80 \u03bcm.",
+    "claim_type": "EXPLICIT",
+    "source": "The size of the uncaging region was controlled by an iris that defines a circular illumination of diameter ~80 \u03bcm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "In about 50% of cases one cell was photoactivated, the other ~50% corresponded to more than one activated cell.",
+    "claim_type": "EXPLICIT",
+    "source": "In about 50% of cases one cell was thus photoactivated, the other ~50% corresponded to more than one activated cell, see Figure 2A.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Transgenic zebrafish were injected at the one-cell stage with the mRNA of Ventx-GR (450 pg), Nanog-GR (100 pg), or Pou5/Oct4 (100 pg) together with mRFP (50 pg).",
+    "claim_type": "EXPLICIT",
+    "source": "Transgenic zebrafish were injected at the one-cell stage with the mRNA of a gene-construct Ventx-GR (Xenopus ventx2, 450 pg), Nanog-GR (mouse Nanog, 100 pg), or Pou5/Oct4 (Xenopus pou5f3.1/oct91, 100 pg) together with a red fluorescent expression marker mRFP (50 pg).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The protein products of Ventx-GR, Nanog-GR, and Pou5/Oct4 constructs are sequestered by cytoplasmic chaperones and released upon incubation of the embryos in a medium containing 10 \u00b5M DEX.",
+    "claim_type": "EXPLICIT",
+    "source": "The protein products of these constructs are sequestered by cytoplasmic chaperones and released upon incubation of the embryos in a medium containing 10 \u00b5M DEX.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the mechanism of action.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Co-activation of KRASG12V and VENTX displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert).",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the controls (Ctrl; Ctrl+ cCYC; Ctrl+cCYC+DEX) and larvae in which only KRASG12V (+cCYC+UV; +cCYC+UV +DEX) or Ventx (Ventx+DEX) were activated, the co-activation of KRASG12V+Ventx (+cCYC+UV+VentX+DEX) displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert) and underexpression of oncosuppressor genes (foxo3, lats1,spop) and genes involved in epigenetic memory (tet3, dnmt).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of RT-qPCR results with reference to supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Co-activation of KRASG12V and VENTX displayed underexpression of oncosuppressor genes (foxo3, lats1, spop) and genes involved in epigenetic memory (tet3, dnmt).",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the controls (Ctrl; Ctrl+ cCYC; Ctrl+cCYC+DEX) and larvae in which only KRASG12V (+cCYC+UV; +cCYC+UV +DEX) or Ventx (Ventx+DEX) were activated, the co-activation of KRASG12V+Ventx (+cCYC+UV+VentX+DEX) displayed significant changes in gene expression, with overexpression of genes involved in pluripotency/reprogramming (nanog, pou5f3/oct4, lin28) and stemness (aldh1a, tert) and underexpression of oncosuppressor genes (foxo3, lats1,spop) and genes involved in epigenetic memory (tet3, dnmt).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of RT-qPCR results with reference to supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Transplantation experiments followed published protocols by Nicoli and Presta, 2007.",
+    "claim_type": "EXPLICIT",
+    "source": "Transplantation experiments followed published protocols (Nicoli and Presta, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a citation to the methods used.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Zebrafish larvae were dissociated in dissociation medium (0.25% trypsin-EDTA plus 1/10 Collagenase 100 mg/mL) for 10 min at 30\u00b0C.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, zebrafish larvae were grown until 6 dpi, dissociated in dissociation medium (Bresciani et al., 2018) (025% trypsin-EDTA plus 1/10 Collagenase 100 mg/mL) 10 min at 30\u00b0C, mechanically homogenized, resuspended in DMEM-10% Fetal Bovine Serum (FBS), filtered through 70 \u00b5m nylon mesh (Corning Cell Strainer Ref 431751), and resuspended in DMEM-10% FBS at 1 cell/1 nL concentration by using LUNA-II cell counter (Logos Biosystems), and injected (~1 nL) at the level of the yolk sac circulation valley (close to the site of the ducts of Cuvier) of host nacre zebrafish at 2 dpf as shown in Figure 4.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a detailed description of the experimental protocol with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
     ]
   }
 ]

@@ -5,20 +5,51 @@
       "C17",
       "C18",
       "C19",
-      "C20",
-      "C21",
-      "C22",
+      "C20"
+    ],
+    "result": "The eveMS2-BAC reporter system successfully recapitulates wild-type eve expression patterns. The system carries ~20 kb of DNA including five eve enhancers and uses MS2 fluorescent labeling to visualize transcriptional bursting in real-time at single locus resolution in living embryos, producing seven stripes matching wild-type eve expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 describe the established reporter system with appropriate citations and visual evidence (Figure 2B). The MS2 system's technical capabilities are well-documented in the field (C18-C19), and the wild-type expression pattern is confirmed by multiple imaging modalities (C20). This is a methodological foundation rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
       "C23",
       "C24",
       "C25",
       "C26",
-      "C27",
+      "C27"
+    ],
+    "result": "Disrupting three Giant binding sites in the eve stripe 2 enhancer (eveS1wt-eveS2Gt-) produces only transient ectopic expression between stripes 1 and 2, lasting until 30-35 min into nc14, which is longer than wild-type (~20 min) but less severe than expected from minimal enhancer studies. This muted expansion is attributed to buffering by additional regulatory sequences present in the full BAC construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 present clear observational data from live imaging (C23-C25) with appropriate comparison to prior work (C26). The interpretation regarding buffering effects (C27) is reasonable and supported by citation. The temporal measurements and phenotypic descriptions are specific and supported by Figure 2C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
       "C28",
       "C29",
       "C30",
       "C31",
       "C32",
-      "C33",
+      "C33"
+    ],
+    "result": "Deletion of the eve stripe 1 enhancer (eveS1\u2206-eveS2wt) unexpectedly produces a dim eve stripe 1 (possibly from late element activity) and a novel anterior stripe termed eve stripe 0 at ~20% embryo length. This suggests the eve stripe 1 enhancer normally represses expression beyond its anterior boundary, and that the eve stripe 2 minimal regulatory element can drive expression in this anterior region when stripe 1 enhancer is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C33 describe novel observations (C28, C30) but rely heavily on speculation (C29, C33 marked as SPECULATION). While the appearance of stripe 0 is documented (C30), the mechanistic interpretations (C32) are inferences without direct validation. The connection to the 'head patch' from Small et al. 1992 (C31) is suggestive but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
       "C34",
       "C35",
       "C36",
@@ -26,87 +57,113 @@
       "C38",
       "C39",
       "C40",
-      "C41"
+      "C41",
+      "C42",
+      "C43",
+      "C44"
     ],
-    "result": "The authors generated ectopic eve expression patterns by mutating eve enhancers. They created three mutant BAC constructs: eveS1wt-eveS2Gt- (disrupting Giant binding sites in eve stripe 2 enhancer), eveS1\u0394-eveS2wt (deleting eve stripe 1 enhancer), and eveS1\u0394-eveS2Gt- (combining both mutations). The double mutant eveS1\u0394-eveS2Gt- produced extensive ectopic expression including a novel eve stripe 0, stronger-than-wild-type eve stripe 2, and ectopic inter-stripe expression, demonstrating synergistic repressive interactions between eve stripe 1 enhancer and Giant repression of eve stripe 2.",
+    "result": "The double mutant eveS1\u2206-eveS2Gt- exhibits complex ectopic expression patterns that exceed the sum of individual mutants, including stronger inter-stripe expression, enhanced stripe 2, presence of stripes 0 and 1, and many active nuclei in normally silent regions. This synergistic effect suggests the eve stripe 1 enhancer's repressive activity cooperates with Giant repression (and possibly other factors) on the eve stripe 2 enhancer, indicating cross-regulatory interactions between these enhancers.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The experimental design is clearly described with appropriate controls (C17-C24). The observations of ectopic expression patterns are directly supported by live imaging data and kymographs shown in Figure 2 (C25-C36, C42). The interpretation of synergistic repression (C37-C41) is well-supported by comparing phenotypes of single versus double mutants, though some mechanistic details remain speculative.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R2",
-    "claim_ids": [
-      "C4",
-      "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C62",
-      "C64",
-      "C81",
-      "C82"
-    ],
-    "result": "The authors demonstrate that bursting strategies remain consistent between endogenous and ectopic eve expression. Using cpHMM analysis of MS2 live imaging data, they show that all eve enhancers\u2014whether in endogenous or ectopic contexts\u2014modulate transcriptional output by increasing burst frequency (kon) and amplitude (r) while burst duration (koff\u207b\u00b9) remains largely constant. This unified strategy persists despite mutations in enhancers and exposure to non-native transcription factor environments.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "The core finding is well-supported by systematic cpHMM analysis across multiple genotypes (C51-C58, Figure 3). The consistency of bursting parameters between endogenous and ectopic regions in eveS1\u0394-eveS2Gt- embryos (C55-C56) directly addresses the central hypothesis. The sample sizes appear adequate (~40 nuclei per bin, ~2500 data points), and the analysis pipeline is clearly described. The conclusion that this represents a fundamental property of eve enhancers (C81-C82) is justified by the data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C93"
-    ],
-    "result": "The authors used a compound-state Hidden Markov Model (cpHMM) to infer bursting parameters from MS2 fluorescence data. They selected a three-state model (OFF, ON1, ON2) to account for paired sister chromatids in Drosophila embryos, which are typically unresolved by diffraction-limited microscopy. The model estimates transition rates kon and koff, and the loading rate r, while accounting for the ~140s elongation time that convolves promoter dynamics with transcriptional elongation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "The methodological approach is well-justified based on the biological context of sister chromatid pairing (C86-C88) and technical limitations of microscopy (C87). The cpHMM method is appropriately cited (C49, Lammers et al., 2020) and the model assumptions are clearly stated (C89-C90). The authors acknowledge model limitations (C91-C93) and justify their choice despite uncertainty in model selection. The elongation time measurement (C48) is from prior work by the same authors.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C5",
-      "C61",
-      "C80",
-      "C83"
-    ],
-    "result": "The authors interpret their findings as evidence for a unified molecular mechanism that constrains eve bursting strategies, independent of trans-regulatory environments. They propose that this mechanism restricts the landscape of available bursting strategies and that mutations on eve enhancers can generate novel expression patterns (like eve stripe 0) through the same bursting strategies.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "The interpretation (C5, C61, C80) logically follows from the experimental observation that bursting strategies remain consistent across diverse regulatory contexts. The appearance of eve stripe 0 with conserved bursting parameters (C83) provides additional support. However, the authors appropriately acknowledge (C63) that they cannot definitively rule out evolutionary selection as an alternative explanation, making this interpretation well-balanced.",
+    "evaluation": "Claims C34-C44 present systematic observational data (C34-C37) comparing single and double mutants (C38, C44) with logical inferences about synergistic repression (C39, C41, C42). The interpretation is supported by prior work (C40) and consistent with the observed non-additive phenotypes. While some claims are speculative (C43), the overall pattern strongly supports enhancer cross-talk.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Ectopic regions show lower mean MS2 fluorescence than endogenous regions, potentially due to suboptimal transcription factor concentrations (e.g., insufficient activators or excess repressors) compared to endogenous regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 presents a clear observational finding supported by Figure 2E data. However, C46 is speculative about the mechanism. While the observation is solid, the mechanistic interpretation lacks direct evidence. The result is supported as an observation but the explanation remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "All eve enhancers, whether in endogenous or ectopic contexts and whether wild-type or mutant, modulate transcriptional output through the same bursting strategy: increasing burst frequency (kon) and amplitude (r) while burst duration (koff\u207b\u00b9) remains largely constant with only minor decreases at high transcription levels. This unified strategy is observed across all genotypes tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 present the central finding supported by cpHMM analysis of extensive live-imaging data (Figures 3C-F). The consistency across wild-type (C47), mutant endogenous (C48), and ectopic regions (C49-C50) is well-documented. The statistical modeling approach is appropriate and the conclusions (C51-C52) are directly supported by the quantitative data. This represents the paper's primary experimental contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54"
+    ],
+    "result": "Bursting strategies remain consistent between endogenous and ectopic eve expression patterns and are robust to enhancer mutations, persisting across diverse regulatory inputs including those not encountered during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C54 represent the main conclusion synthesizing the experimental observations. The consistency of bursting parameters across endogenous/ectopic regions and wild-type/mutant enhancers (documented in C47-C52) directly supports this conclusion. This addresses the paper's central hypothesis about whether bursting strategies are evolutionarily adapted or mechanistically constrained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The unified bursting strategies provide evidence for a molecular mechanism coupled to eve transcription that constrains available bursting strategies. Eve bursting strategies are proposed to be fundamental properties of enhancers and promoters rather than results of trans-regulatory adaptation, with enhancers acting as robust 'knobs' that tune output by modulating kon and r while koff remains fixed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C65-C67 present the paper's mechanistic interpretation. While these are inferences (marked as INFERENCE), they are well-supported by the experimental data showing consistent bursting strategies across diverse contexts. The authors appropriately acknowledge they cannot definitively rule out evolutionary adaptation (discussed in text), but the evidence strongly favors mechanistic constraint. The 'knob' model (C67) is a reasonable conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The novel eve stripe 0 demonstrates that enhancer mutations can generate new expression patterns using the same bursting strategies as existing stripes. Since expression patterns shape animal body plans, such novel patterns may drive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is an inference supported by the observation of stripe 0 using the same bursting strategy. Claims C69-C70 about evolutionary implications are supported by appropriate citations to established literature. While the evolutionary speculation extends beyond the data, the observation that new patterns can arise with conserved bursting mechanisms is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The analysis uses a three-state cpHMM model accounting for paired sister chromatids in Drosophila embryos, where each fluorescent spot represents combined activity of two promoters that can each be ON or OFF. This three-state model (OFF, ON1, ON2) is the simplest compatible with current understanding of eve transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe the analytical framework. The biological context (C71) is established knowledge, the technical limitation (C72) is appropriately cited, and the modeling approach (C73-C75) is justified. The authors acknowledge this is the simplest model and discuss limitations in the text. The approach is standard for this type of analysis and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
       "C1",
       "C2",
+      "C3",
       "C6",
       "C7",
       "C8",
@@ -114,71 +171,51 @@
       "C10",
       "C11",
       "C12",
+      "C13",
+      "C14",
       "C15",
       "C16"
     ],
-    "result": "The manuscript establishes foundational knowledge about transcriptional bursting, enhancer function, and eve stripe regulation. This includes the two-state model of promoter activity, the role of enhancers in modulating bursting dynamics, and the specific transcription factors regulating eve stripe 2.",
+    "result": "Background context on transcriptional bursting, enhancer function, and eve stripe regulation, including the two-state model of promoter activity and prior findings that eve enhancers modulate burst frequency and amplitude while gap genes modulate frequency and duration.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims represent well-established background knowledge appropriately cited from the literature (C1-C12). The specific regulatory architecture of eve stripe 2 (C15-C16) is standard textbook knowledge in Drosophila developmental biology. These claims provide necessary context but are not novel findings of this study.",
+    "evaluation": "Claims C1-C16 provide established background knowledge appropriately cited from the literature. These are not novel findings but necessary context. C3 and C13 reference the authors' prior work (Berrocal et al., 2020), while C14 cites Zoller et al., 2018 on gap genes. All claims are well-supported by appropriate citations.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R6",
+    "result_id": "R12",
     "claim_ids": [
-      "C3",
-      "C13",
-      "C14",
-      "C66",
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79"
+      "C21",
+      "C22",
+      "C40"
     ],
-    "result": "The authors contextualize their findings within prior work on transcriptional bursting strategies. They cite previous observations that eve enhancers modulate burst frequency and amplitude (C3, C13), that gap genes use different strategies (C14, C66-C67), and that various molecular mechanisms including chromatin modifications, promoter elements, and transcription factor dynamics can influence bursting (C68-C79).",
+    "result": "Prior work established that Giant repression defines the anterior boundary of eve stripe 2, and that deleting three Giant binding sites in the minimal eve stripe 2 enhancer causes anterior expansion. These binding sites may also recognize other transcription factors besides Giant.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims accurately represent prior literature and are appropriately cited. The comparison with gap genes (C66-C67) and snail (C68-C69) highlights that different genes employ different bursting strategies, supporting the authors' emphasis on gene-specific mechanisms. The discussion of potential molecular mechanisms (C71-C79) is speculative but well-grounded in cited literature.",
+    "evaluation": "Claims C21-C22 and C40 summarize prior work from Small et al., 1992 that provides the rationale for the current study's experimental design. These are appropriately cited and accurately represent the prior findings. This background is essential for understanding the mutant design strategy.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R7",
+    "result_id": "R13",
     "claim_ids": [
-      "C42",
-      "C43"
-    ],
-    "result": "Ectopic regions show lower mean MS2 fluorescence than endogenous regions, possibly due to suboptimal transcription factor concentrations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "The observation of lower fluorescence in ectopic regions (C42) is directly supported by Figure 2E data. The interpretation regarding transcription factor availability (C43) is speculative but reasonable given the experimental design that places enhancers in non-native regulatory environments. This is appropriately presented as speculation ('perhaps due to').",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
       "C63",
-      "C65",
-      "C84",
-      "C85",
-      "C91"
+      "C64"
     ],
-    "result": "The authors acknowledge limitations and alternative interpretations of their findings, including the possibility that bursting strategies were evolutionarily selected, that their findings may not generalize to other genes, and that more complex processes may define eve transcription.",
+    "result": "Discussion of diverse bursting strategies and mechanisms across different genes and organisms, including gap genes (frequency/duration modulation), snail enhancers (amplitude/duration reduction), bacterial chromosomes (topological dynamics), mammalian cells (histone acetylation), BMP targets (concentration gradients), and the role of core promoter elements and transcription factor dynamics.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These acknowledgments demonstrate appropriate scientific caution. The authors explicitly state they cannot rule out evolutionary selection (C63), note that their findings are gene-specific (C65), and recognize model limitations (C91). This balanced discussion strengthens rather than weakens the manuscript by clearly delineating what can and cannot be concluded from the data.",
+    "evaluation": "Claims C55-C64 provide comparative context from the literature, all appropriately cited. These demonstrate that different genes use different bursting strategies and that various molecular mechanisms can influence bursting. This contextualizes the eve findings within the broader field and supports the discussion of potential mechanisms.",
     "result_type": "MINOR"
   }
 ]

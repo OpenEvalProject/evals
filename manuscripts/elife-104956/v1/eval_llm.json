@@ -5,6 +5,8 @@
       "C1",
       "C2",
       "C3",
+      "C4",
+      "C5",
       "C10",
       "C11",
       "C12",
@@ -12,210 +14,362 @@
       "C14",
       "C15"
     ],
-    "result": "The manuscript establishes the fundamental biological context of transcription factors (TFs) as proteins that regulate gene expression by binding to specific DNA sequences, responding to cellular signals, and guiding developmental processes. These claims describe established knowledge about TF function and the historical development of gene regulation principles.",
+    "result": "The manuscript establishes the fundamental biological context of transcription factors (TFs), describing their role in gene regulation, their response to cellular signals, their involvement in cell differentiation and development, and the historical foundation of gene regulation principles from the 1960s Lac operon studies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C3 and C10-C15 present well-established background knowledge about TF function, supported by appropriate citations to foundational and recent literature (Latchman 1997, Jacob and Monod 1961, Lambert et al. 2018, etc.). These claims accurately represent the current understanding of TF biology and provide necessary context for the study.",
+    "evaluation": "Claims C1-C15 present well-established background knowledge about TF biology, properly cited from foundational literature (Jacob and Monod 1961, Lambert et al. 2018, Stadhouders et al. 2019, etc.). These claims provide necessary context and are supported by appropriate citations to established work.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C4",
-      "C5",
+      "C16",
       "C17",
       "C18",
       "C19",
       "C20",
       "C21"
     ],
-    "result": "The manuscript establishes that approximately 80% of eukaryotic TFs contain intrinsically disordered regions (IDRs) that lack stable 3D structure and behave as flexible polymers. Eukaryotic DBDs exhibit weaker affinity than bacterial counterparts, suggesting IDRs are necessary for stable binding, though IDRs are challenging to study due to sequence divergence.",
+    "result": "The manuscript establishes that approximately 80% of eukaryotic TFs contain intrinsically disordered regions (IDRs) that lack stable 3D structure, that eukaryotic DBDs exhibit weaker affinity than bacterial counterparts (indicating IDRs are necessary for stable binding), and that IDRs are challenging to study due to sequence divergence.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4-C5 and C17-C21 are well-supported by multiple citations to established literature (Liu et al. 2006, Fuxreiter et al. 2011, Garcia et al. 2021, Brown et al. 2010, Zarin et al. 2019). The 80% prevalence figure and structural characteristics of IDRs represent accepted knowledge in the field.",
+    "evaluation": "Claims C16-C21 are well-supported by appropriate citations to established literature (Liu et al. 2006, Fuxreiter et al. 2011, Garcia et al. 2021, Brown et al. 2010, Zarin et al. 2019). These claims accurately represent prior knowledge about IDR prevalence and properties in eukaryotic TFs.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C6",
-      "C7",
-      "C16",
       "C22",
       "C23",
       "C24",
       "C25",
       "C26",
-      "C27",
-      "C28",
-      "C29"
+      "C27"
     ],
-    "result": "The manuscript establishes that while recent experimental and computational evidence suggests IDRs play important roles in TF target search and binding, the underlying principles remain incompletely understood. Multiple competing mechanisms have been proposed including non-specific electrostatic interactions, phase separation, and specific IDR-DNA interactions.",
+    "result": "Prior computational and experimental work suggests that IDRs play a significant role in promoting target recognition by increasing the effective interaction area between TF and DNA, that the search becomes effectively one-dimensional upon binding, and that truncation studies demonstrate IDRs contribute to stabilizing TF-DNA interactions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6-C7 and C16-C29 accurately characterize the current state of knowledge with appropriate citations (Ferrie et al. 2022, Jonas et al. 2025, Vuzman and Levy 2010, Brodsky et al. 2020, Kumar et al. 2023). The acknowledgment of incomplete understanding and competing mechanisms provides appropriate motivation for the current study.",
+    "evaluation": "Claims C22-C27 appropriately cite prior work (Vuzman and Levy 2010, 2012; Brodsky et al. 2020; Kumar et al. 2023) establishing the role of IDRs in TF search and binding. These claims accurately represent findings from cited literature and provide important context for the current work.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C30",
-      "C31",
-      "C32",
-      "C33"
+      "C28",
+      "C29",
+      "C30"
     ],
-    "result": "The manuscript describes facilitated diffusion as a well-characterized mechanism in bacteria involving alternating 1D and 3D diffusion, but argues this mechanism cannot explain fast search times in eukaryotes due to structural differences including larger genome size and chromatin structure.",
+    "result": "Different mechanisms have been proposed to explain IDR contributions to TF function, including non-specific electrostatic interactions, phase separation that concentrates TFs near targets, and specific IDR-DNA interactions analogous to structured domains.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C30-C33 are supported by extensive citations to theoretical work (Berg et al. 1981, Slutsky and Mirny 2004, etc.) and experimental validation in E. coli (Hammar et al. 2012). The limitation of this mechanism for eukaryotes is supported by recent citations (Dror et al. 2016, Kumar et al. 2023, etc.).",
+    "evaluation": "Claims C28-C30 appropriately cite competing mechanistic hypotheses from the literature (Iwahara et al. 2006, Boija et al. 2018, Chappleboim et al. 2024). This establishes the context that multiple mechanisms have been proposed, motivating the need for the current study.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
       "C34",
-      "C42",
-      "C53",
-      "C59"
+      "C35"
     ],
-    "result": "The theoretical model demonstrates that binding probability increases dramatically for TFs with IDRs across a broad parameter regime. The design principle l\u2080=d (IDR segment distance equals target distance) holds for multiple IDR sites and targets, arising from energy-entropy trade-off. These principles are robust to different statistical distributions of binding sites.",
+    "result": "The facilitated diffusion mechanism, well-characterized theoretically and experimentally in bacteria, cannot explain fast search times in eukaryotes due to structural differences including larger genome size and chromatin structure, requiring a qualitatively different mechanism.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C34, C42, C53, and C59 are supported by theoretical derivations and numerical simulations presented in the manuscript. The l\u2080=d principle is shown in Figure 2a for multiple parameter combinations, and robustness is validated in Appendix 6. The energy-entropy interpretation of Equation 4 is physically sound.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C31-C35 accurately describe the facilitated diffusion mechanism and its limitations in eukaryotes, with appropriate citations (Berg et al. 1981, Hammar et al. 2012, Dror et al. 2016, Kumar et al. 2023, etc.). This establishes the gap in understanding that motivates the current work.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C35",
       "C36",
       "C37",
-      "C67",
-      "C68",
-      "C71"
+      "C38",
+      "C62"
     ],
-    "result": "The optimal TF search process consists of a single round of 3D diffusion followed by 1D diffusion along the antenna, with the TF rarely unbinding for additional 3D excursions. This differs fundamentally from bacterial facilitated diffusion which requires multiple binding-unbinding rounds. An analytical expression for search time shows good agreement with numerical simulations.",
+    "result": "The binding affinity problem exhibits a classical energy-entropy trade-off: IDR binding to DNA is energetically favorable but constrains IDR positions, reducing conformational entropy and increasing free energy. This leads to non-trivial effects reminiscent of DNA unzipping problems.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C37, C67-C68, and C71 are supported by molecular dynamics simulations (Figure 3) and analytical calculations (Appendix 8). The single-round search mechanism is demonstrated through simulation data showing TFs rarely detach once bound. The comparison with bacterial FD is conceptually sound given the different binding specificities.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C36-C38, C62 correctly describe fundamental thermodynamic principles governing polymer binding. The energy-entropy trade-off is a well-established concept, and the analogy to DNA unzipping (Danilowicz et al. 2004) is appropriate. The reasoning is sound and grounded in established physical principles.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C72",
-      "C73",
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C116"
+      "C39",
+      "C8"
     ],
-    "result": "The manuscript proposes an 'octopusing' mechanism where IDR sites act as tentacles that constantly bind and unbind during 1D diffusion along DNA. This mechanism bypasses the speed-stability paradox through compensatory feedback: when few sites are bound, on-rate increases; when too many are bound, off-rate increases. The mechanism remains effective with as few as two binding sites.",
+    "result": "The binding probability increases dramatically for TFs having IDRs across a broad parameter regime, and IDRs significantly enhance both binding affinity and search time.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C77 and C116 describe a novel mechanistic insight supported by simulation observations (Figure 1c, Video 1) and analysis in Appendix 11. The compensatory feedback mechanism is physically plausible and explains how high diffusion coefficient and low detachment rate can coexist. Connection to prior MD simulations (Vuzman and Levy 2010, 2012) provides additional support.",
+    "evaluation": "Claims C39 and C8 represent major findings supported by the equilibrium analysis (Figure 2) and dynamical simulations (Figure 3). The data show substantial enhancement in binding probability (Q values reaching 10^4) and reduced search times compared to simple TFs. The results are consistent across multiple parameter combinations.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C78",
-      "C79",
-      "C81",
-      "C9"
+      "C40",
+      "C41",
+      "C72",
+      "C73",
+      "C77"
     ],
-    "result": "The model achieves quantitative agreement with experimental data from Brodsky et al. 2020 showing decreased binding probability with IDR truncation (using E_DBD as the only fitting parameter). Estimated search times (1-10 seconds) are comparable to empirical results from Kumar et al. 2023 and Larson et al. 2011.",
+    "result": "The optimal search process consists of a single round of 3D diffusion followed by 1D diffusion along the antenna, where the TF rarely unbinds for another 3D excursion. This differs fundamentally from bacterial facilitated diffusion which requires numerous binding-unbinding rounds.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C78-C79, C81, and C9 demonstrate model validation against experimental data shown in Figure 4a-b. The quantitative agreement with truncation experiments using a single fitting parameter is strong evidence. Search time estimates fall within the experimentally observed range, though the comparison relies on parameter assumptions (D, copy number) that could affect absolute values.",
+    "evaluation": "Claims C40-C41, C72-C73, C77 describe a key mechanistic finding supported by simulation data (Figure 3) and analytical calculations (Appendix 8). The single-round 3D-1D search is demonstrated through analysis of search trajectories and is a central result distinguishing this mechanism from bacterial facilitated diffusion.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C62",
-      "C105",
-      "C109",
-      "C110",
-      "C113",
-      "C115"
+      "C42"
     ],
-    "result": "The molecular dynamics simulations required 10\u2075 CPU hours due to slow dynamics from IDR trapping at binding targets. The search time is insensitive to the threshold for treating TF as rigid body and robust to DNA coiling (< 30% increase even under extreme conditions). The 3D diffusion coefficient changes only slightly under complex DNA configurations.",
+    "result": "An analytical expression for search time (Equation 5) shows good agreement with numerical simulation results.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C62, C105, C109-C110, C113, and C115 describe computational methodology and robustness checks. The computational cost is justified by citations to similar slow dynamics in prior work (Vuzman and Levy 2010, Marcovitz and Levy 2013). Robustness validations in Appendices 9-10 strengthen confidence in the results, though the extreme computational cost limits extensive parameter exploration.",
-    "result_type": "MINOR"
+    "evaluation": "Claim C42 is supported by Figure 3, which shows the analytical formula (solid lines) closely matching simulation data (points) across varying antenna lengths. The agreement validates both the analytical approximations and the simulation approach, with fitting parameters \u03b1=0.5 and \u03b2=14.5.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C99",
-      "C100",
-      "C101"
+      "C52",
+      "C66"
     ],
-    "result": "The model coarse-grains the TF with a few IDR binding sites plus one DBD site, and assumes equally spaced targets on DNA. Relaxing the equal spacing assumption to use randomly positioned targets does not affect results.",
+    "result": "The design principle l\u2080=d (IDR segment distance equals target distance) holds when multiple IDR sites and targets are involved, and has been validated under Poisson statistics of binding site and target distances.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C99-C101 describe the modeling approach illustrated in Figure 1b-c. The coarse-graining is appropriate for capturing essential physics while maintaining computational tractability. Robustness to random target positioning (Appendix 6) validates that equal spacing is not a critical assumption.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C52 and C66 are supported by Figure 2a showing Q is maximal at l\u2080~d for various combinations of n_b and n_t, and by Appendix 6 showing robustness under Poisson-distributed spacing. This demonstrates the principle is general and not dependent on specific geometric assumptions.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C8"
+      "C74",
+      "C76"
     ],
-    "result": "The IDR significantly enhances both binding affinity and search time for transcription factors.",
+    "result": "The model differs profoundly from conventional bacterial facilitated diffusion (FD), which assumes non-specific DNA binding and requires numerous binding-unbinding rounds to achieve minimal search time.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C8 is the central finding supported by the theoretical analysis (binding probability enhancement in Figure 2) and dynamics simulations (search time reduction in Figure 3). The enhancement is demonstrated across broad parameter regimes and validated against experimental data in Figure 4.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C74 and C76 accurately contrast the proposed mechanism with established bacterial FD models. The distinction is well-founded: bacterial FD involves non-specific binding across the entire genome, while the current model involves specific binding to a localized antenna region. This is a valid comparison grounded in established knowledge.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90"
+      "C78",
+      "C79",
+      "C103"
     ],
-    "result": "The manuscript proposes future experimental validations including DNA scrambling experiments to test the antenna assumption, time-resolved binding measurements at various waiting times to probe search dynamics, and direct measurements of k_on and k_off rates. Predictions include minimal effect from shuffling regions shorter than IDR length but noticeable effects for longer regions.",
+    "result": "During 1D motion along the antenna, IDR sites behave like 'tentacles' constantly binding and unbinding from DNA, a process termed 'octopusing' (inspired by reptation in entangled polymers), leading to effective 1D diffusion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C83-C90 describe proposed future experiments and predictions. While the experimental designs are reasonable and predictions are logical extensions of the model, these remain untested hypotheses. The proposals are valuable for future work but do not constitute current results. Classification as UNCERTAIN reflects that these are predictions rather than validated findings.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C103 describe the octopusing mechanism, supported by simulation observations (Figure 1c, Video 1) and characterized in Appendix 11. The naming is inspired by de Gennes' reptation concept (appropriately cited). The mechanism is directly observed in simulations and represents a novel mechanistic insight.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97"
+      "C80"
     ],
-    "result": "The manuscript discusses broader implications including potential applicability to other biophysical contexts (RNA polymerase binding, antibody binding), complementary mechanisms (complex formation, phase separation, nuclear compartmentalization), and positions findings within a broader regulatory framework. Higher-resolution MD simulations could provide additional validation.",
+    "result": "Previous numerical studies using coarse-grained MD simulations demonstrated that heterogeneously distributed IDR binding sites could facilitate intersegmental transfer between DNA regions, reminiscent of the octopusing scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 appropriately cites prior work (Vuzman and Levy 2010, 2012) showing related phenomena. The authors correctly note the similarity to their octopusing mechanism while distinguishing their specific contribution. This properly contextualizes the current work within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Making targets denser would hardly accelerate search time, analogous to the chemoreception problem where high efficiency is achieved with low receptor coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 makes a reasonable analogy to the Berg-Purcell chemoreception problem (appropriately cited). The reasoning is that once the TF gyration radius is comparable to target spacing, further densification provides diminishing returns. This is consistent with the model's assumptions and supported by the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "For 1D search, since the TF is unlikely to detach once attached, it performs a 1D random walk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by simulation data showing low detachment rates once the TF binds the antenna (Appendix 7). This is a key feature enabling the single-round 3D-1D search mechanism and is directly demonstrated in the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Reducing DNA persistence length (promoting coiling) results in only modest increases in mean search time, with increases below 30% even under extreme coiling conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by robustness analysis in Appendix 9. This demonstrates that the mechanism is not critically dependent on the straight-antenna approximation and would function even with realistic DNA flexibility. This strengthens the biological relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The 3D diffusion coefficient changes only slightly under complex DNA configurations where a point-searcher TF non-specifically interacts with entire DNA, indicating robustness of the optimal search process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by analysis in Appendix 10 examining mean squared displacement in complex DNA configurations. This robustness check strengthens confidence that the mechanism would function in realistic cellular environments with complex chromatin structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The octopusing mechanism elegantly bypasses the speed-stability paradox through compensatory dynamics: a feedback mechanism where few bound sites increase on-rate and many bound sites increase off-rate, remaining effective even with as few as two binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 describe resolution of the speed-stability paradox (Slutsky and Mirny 2004) through the octopusing mechanism. The compensatory dynamics are characterized in Appendix 11, showing the mechanism achieves both high diffusion and low detachment rates. The effectiveness with only two sites is particularly notable and well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C108",
+      "C109",
+      "C9"
+    ],
+    "result": "Experimental data from Brodsky et al. 2020 showing that shortening IDR length reduces binding affinity is quantitatively reproduced by the model, demonstrating good agreement with experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C108-C109, C9 describe model validation against experimental data. Figure 4a shows quantitative agreement between model predictions and experimental measurements of binding probability versus IDR truncation length, using only E_DBD as a fitting parameter. This provides strong experimental support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The model assumes IDRs recognize relatively short flanking DNA sequences near the DBD target (the 'antenna' region), with negligible TF-DNA interaction outside this region, and that IDR-DNA interactions are specific, mediated by multivalent hydrophobic residue interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 describe key modeling assumptions. C45 is supported by citation to Brodsky et al. 2020. C46 is explicitly stated as an assumption. C47 is supported by citations to Jonas et al. 2023 and Mindel et al. 2024. These assumptions are reasonable given current understanding and are appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The TF is coarse-grained with a few IDR binding sites plus one DBD site, with targets at equal spacing (one DBD target, multiple IDR targets). Relaxing the equal-spacing assumption to random positioning does not affect results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 describe the modeling approach (illustrated in Figures 1b-c) and robustness to geometric assumptions. The verification that random target positioning gives similar results (Appendix 6) demonstrates the findings are not artifacts of the equal-spacing assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "The resulting search time is insensitive to the threshold value for treating the TF as a rigid body in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 describes a computational validation showing results are not sensitive to a specific simulation parameter. This demonstrates the robustness of the computational approach and that the threshold choice does not introduce artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "IDR trapping in binding targets causes slow dynamics, significantly lengthening simulation time, similar to behavior in glass-forming liquids and consistent with previous simulation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 describe computational challenges encountered, citing similar observations in prior work (Vuzman and Levy 2010, Marcovitz and Levy 2013) and drawing analogy to glass-forming liquids (Berthier and Biroli 2011). This appropriately contextualizes the computational difficulty and explains why simulations required 10^5 CPU hours.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C121"
+    ],
+    "result": "The model provides testable predictions including: DNA scrambling experiments should show effects only when shuffling regions longer than the IDR; binding probability should increase with waiting time at short timescales; and IDR presence should increase binding probabilities and reduce time to saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 propose specific experimental tests of the model. These predictions logically follow from the model's assumptions and mechanisms. The DNA scrambling experiment (C115-C117) directly tests the antenna assumption. The waiting time experiments (C119, C121) test the search dynamics. These are well-reasoned, testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The design principles, grounded in fundamental physical concepts like energy-entropy trade-off, are likely robust across diverse molecular systems and applicable to other biophysical contexts such as RNA polymerase binding and multivalent antibody binding. Higher-resolution MD simulations could provide additional validation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C92-C97 discuss speculative extensions and alternative mechanisms with appropriate citations. While the discussion of complementary mechanisms is well-grounded in literature (Morgunova and Taipale 2017, Boija et al. 2018, etc.), the applicability to other systems and the relative importance of different mechanisms remain to be established experimentally.",
+    "evaluation": "Claims C124-C126 discuss broader applicability and future directions. While the fundamental physics (energy-entropy trade-off) is indeed general, the specific applicability to other systems (RNA polymerase, antibodies) remains speculative without additional evidence. The suggestion for higher-resolution MD is reasonable but the claim of broad applicability requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Beyond octopusing, other mechanisms may contribute including IDR-facilitated TF complex formation and cooperativity, and IDR-mediated targeting to nuclear compartments or condensates. These complementary mechanisms suggest the findings represent one component of a broader regulatory framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 appropriately acknowledge alternative and complementary mechanisms from the literature (Morgunova and Taipale 2017, Sabari et al. 2018, Boija et al. 2018, Kent et al. 2020). This demonstrates appropriate scientific humility and contextualizes the work within the broader field, acknowledging that multiple mechanisms likely operate in vivo.",
     "result_type": "MINOR"
   }
 ]

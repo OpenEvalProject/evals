@@ -4,19 +4,24 @@
     "claim_ids": [
       "C1",
       "C2",
+      "C13",
       "C14",
       "C15",
       "C16",
+      "C17",
+      "C18",
       "C19",
       "C20",
       "C21",
+      "C22",
+      "C23",
       "C30"
     ],
-    "result": "V1 chandelier cells (ChCs) receive monosynaptic input predominantly from local layer 5 pyramidal cells and from higher-order cortical and thalamic regions including retrosplenial cortex (RSC), S1, dorsal lateral geniculate nucleus, and lateral posterior nucleus.",
+    "result": "V1 ChCs receive monosynaptic input predominantly from local L5 pyramidal cells and from higher-order cortical regions including RSC, with L5 inputs being excitatory. This connectivity pattern differs from prefrontal cortex ChCs but resembles S1 ChCs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C2, C14, C15 are supported by retrograde rabies tracing showing labeled neurons in L5 of V1 and in long-range regions (Figure 1B-C). Claims C19-C21 provide optogenetic validation of monosynaptic RSC inputs using TTX/4-AP experiments (Figure 1H). The connectivity pattern is well-characterized through multiple complementary approaches.",
+    "evaluation": "The rabies tracing experiments (C1, C15, Figure 1C) clearly demonstrate L5 as the primary local input source. Optogenetic validation with TTX/4-AP confirms monosynaptic RSC inputs (C19-C21, Figure 1H). Morphological analysis confirms excitatory nature of L5 inputs (C16). The comparison with other brain regions is appropriately cited (C17-C18). Sample sizes are modest (n=4 mice, 30 starter cells) but adequate for tracing studies.",
     "result_type": "MAJOR"
   },
   {
@@ -27,178 +32,214 @@
       "C26",
       "C27",
       "C28",
-      "C98"
+      "C29",
+      "C83"
     ],
-    "result": "ChCs exhibit non-reciprocal connectivity with L2/3 pyramidal cells: ChCs innervate PyCs (~45% connection rate) but PyCs do not innervate ChCs (0/11 connections), suggesting ChCs receive input primarily from inhibitory neurons in L1-4 rather than local L2/3 PyCs.",
+    "result": "ChCs exhibit non-reciprocal connectivity with L2/3 PyCs: ChCs innervate ~45% of nearby PyCs, but receive no detectable input from L2/3 PyCs. Local L1-4 inputs to ChCs likely originate from inhibitory interneurons.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C24-C27 are supported by paired whole-cell recordings (Figure 1K) showing unidirectional connectivity. However, the sample size is small (n=11 pairs). Claim C28 is an inference consistent with morphological observations and prior literature (C29), but direct identification of inhibitory inputs was not performed in this study.",
+    "evaluation": "Paired recordings (n=11 pairs) demonstrate clear asymmetry: 5/11 ChC\u2192PyC connections but 0/11 PyC\u2192ChC connections (C24-C25, Figure 1K). The inference about inhibitory inputs (C28) is reasonable given the lack of PyC inputs and consistency with prior literature (C29). However, the sample size is relatively small and the use of high chloride internal solution prevents determining whether ChC inputs are hyperpolarizing or depolarizing.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
       "C3",
+      "C31",
+      "C32",
+      "C33",
       "C34",
       "C35",
-      "C37",
-      "C39",
-      "C40",
-      "C42",
-      "C43",
-      "C45",
-      "C46",
-      "C47",
-      "C49",
-      "C52"
+      "C76"
     ],
-    "result": "ChCs are visually responsive but weakly selective for stimulus content, showing lower orientation selectivity, lower sparsity, larger receptive fields, and reduced decoding accuracy compared to pyramidal cells, while responding strongly to visual stimuli.",
+    "result": "ChCs are visually responsive but show weak orientation selectivity compared to PyCs. They are highly active during arousal states and show synchronized activity with high within-cell-type correlations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C34-C35, C37, C39-C40, C42-C43, C45-C47, C49 are well-supported by calcium imaging data (Figures 2-3) and CNN modeling showing consistent patterns of weak selectivity across multiple metrics. The convergence of evidence from both empirical measurements and computational modeling strengthens these findings.",
+    "evaluation": "Calcium imaging data demonstrate visual responses (Figure 2D-E) with significantly lower OSI than PyCs (C34, Figure 2G, LMEM statistics provided). High correlations with running speed and pupil size (C31, Figure 2B-C) and between ChCs (C32) are well-documented. Sample sizes are adequate (n=1883 PyCs, 95 ChCs from 8 mice). Statistical analyses using LMEM appropriately account for hierarchical data structure.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C4",
-      "C31",
-      "C32",
-      "C33",
-      "C64"
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
     ],
-    "result": "ChCs are highly active during states of high arousal, showing strong correlations with running speed and pupil size, and are more strongly modulated by arousal than L2/3 PyCs. ChCs within the same field of view are highly synchronized.",
+    "result": "ChCs show weak selectivity for natural images with low sparsity, high between-cell correlations, and poor decoding accuracy. CNN modeling reveals they have lower OSI, contrast sensitivity, prefer lower spatial frequencies, and have larger receptive fields than PyCs. These properties are consistent with convergent input from many L5 PyCs with diverse tuning.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4, C31-C32, C64 are supported by calcium imaging showing high correlations with arousal markers (Figure 2B-C, 4F). The synchronization of ChCs (C32-C33) is demonstrated by within-cell-type correlation analysis. Statistical analyses using LMEM appropriately account for dependencies in the data.",
+    "evaluation": "Natural image responses (n=34 ChCs, 1015 L2/3 PyCs, 1601 L5 PyCs) show significantly lower sparsity (C38, Figure 3C) and decoding accuracy (C40, Figure 3E, permutation test p<0.001). CNN modeling provides converging evidence for weak selectivity (C41-C44, Figure 3G-J). The mechanistic interpretation linking properties to L5 PyC convergence (C45, C87, C90) is reasonable but speculative. The composite L5 PyC MEI analysis (Figure 3\u2014supplement 1F) provides supporting evidence but doesn't exclude alternatives.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
+      "C4",
       "C5",
-      "C60",
-      "C61",
-      "C65",
-      "C68",
-      "C70"
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C77"
     ],
-    "result": "ChCs respond strongly to visuomotor mismatch when visual flow stops during running, with responses being much stronger in closed-loop conditions than open-loop conditions, and are suppressed by visual stimuli or visual flow onset during stationary periods.",
+    "result": "In a virtual tunnel paradigm, ChCs respond strongly to locomotion and visuomotor mismatch but are suppressed by visual stimuli. They correlate more strongly with non-visual PyCs (NV-PyCs) than visual PyCs (V-PyCs), supporting the existence of functionally distinct PyC populations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5, C60-C61, C65, C68, C70 are supported by calcium imaging in the virtual tunnel paradigm (Figure 4E, I, Figure 4\u2014supplement 1Q). The comparison between closed-loop and open-loop conditions (C68) provides important controls demonstrating that responses depend on the coupling between locomotion and visual flow.",
+    "evaluation": "Virtual tunnel experiments (n=1256 PyCs, 38 ChCs from 6 mice) demonstrate strong ChC responses to locomotion onset (C4, Figure 4F,J) and visuomotor mismatch (C5, Figure 4E,I) with visual suppression (C46, Figure 4C-D). Hierarchical clustering identifies two PyC populations (C48, Figure 4C-D), validated by permutation testing showing separability exceeds chance (C49, Figure 4\u2014supplement 1F, p<0.001). Higher ChC-NV-PyC correlations are statistically significant (C53, Figure 4K). PV+ ChC validation (C54) strengthens conclusions. Open vs. closed loop comparisons (C55-C56) appropriately control for sensory vs. sensorimotor effects.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C54",
-      "C55",
-      "C56",
-      "C57",
+      "C6",
       "C58",
       "C59",
-      "C62"
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C78",
+      "C92"
     ],
-    "result": "L2/3 pyramidal cells comprise two functionally distinct populations: V-PyCs that are activated by visual stimuli but suppressed in non-visual sections, and NV-PyCs that are suppressed by visual stimuli but activated in non-visual sections and respond more strongly to visuomotor mismatch and locomotion.",
+    "result": "Repeated exposure to the virtual tunnel induces experience-dependent plasticity in ChCs, with significantly reduced visual responses after training. NV-PyCs also show reduced responses, while V-PyCs are unchanged. ChC pairwise correlations decrease after training.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54-C59, C62 are supported by hierarchical clustering analysis (Figure 4C-D) and validated by permutation testing showing cluster separability exceeds chance (Figure 4\u2014supplement 1F). The differential responses to visuomotor mismatch and locomotion (C60-C61) further validate the functional distinction between these populations.",
+    "evaluation": "Chronic imaging of matched neurons (n=411 PyCs, 51 ChCs from 5 mice) shows significant reduction in ChC visual responses after training (C6, C58, Figure 5B-D, LMEM p<0.05) while PyC responses are unchanged (C59, Figure 5D). Orientation and direction selectivity remain stable (C60). Separate analysis of matched V-PyCs and NV-PyCs (n=68 V-PyCs, 71 NV-PyCs from 3 mice) confirms NV-PyC plasticity (C61, Figure 5E-G). Reduced ChC correlations after training (C62, p<0.01) align with PFC findings. The interpretation that plasticity generalizes across visual stimuli (C63) is reasonable given different stimuli in training vs. testing.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C6",
-      "C72",
-      "C73",
-      "C74",
-      "C76",
-      "C78",
-      "C79"
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C79",
+      "C114",
+      "C115"
     ],
-    "result": "Repeated exposure to the virtual tunnel induces experience-dependent plasticity in ChCs, with significantly reduced visual responses after training, while PyC responses remain largely unchanged. This plasticity generalizes across different visual stimuli, consistent with ChCs' weak selectivity.",
+    "result": "Visuomotor training induces structural plasticity at ChC-AIS synapses: increased fraction of AISs contacted by ChCs, decreased AIS length, increased ChC bouton density, and boutons positioned closer to AIS base. The number of boutons per contacted AIS remains constant.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6, C72-C74, C76, C78 are supported by chronic calcium imaging showing reduced ChC responses after training (Figure 5A-D). The specificity to ChCs and NV-PyCs (C76) and generalization across stimuli (C78) are well-documented. Statistical analyses appropriately use matched neurons across sessions.",
+    "evaluation": "Immunohistochemistry (n=5 naive, 3-5 trained mice, 1802-1802 AISs analyzed) demonstrates increased fraction of contacted AISs (C65, Figure 6D, \u03c7\u00b2-test p<0.001), decreased AIS length (C66, Figure 6E-F, LMEM p<0.05), increased bouton density (C67, Figure 6G, p<0.05), and proximal bouton shift (C68, Figure 6H-I, p<0.05), while boutons per AIS remain constant (C64, Figure 6B-C). These findings align with prior work in premotor cortex and S1 (C115). The structural changes are well-quantified with appropriate statistics, though the functional consequences remain speculative.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C7",
-      "C8",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89"
+      "C9",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C80",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C128"
     ],
-    "result": "Visuomotor experience induces structural plasticity at ChC-PyC synapses, including increased fraction of AISs contacted by ChCs, decreased AIS length, increased ChC bouton density, and more proximal localization of boutons on the AIS.",
+    "result": "Chemogenetic silencing of ChCs produces only weak effects on PyC activity: mild overall activity increase, increased intercept but unchanged slope of locomotion modulation, and only 21% of PyCs showing significant activity increases. ChCs do not differentially target PyCs based on locomotion modulation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C8, C82-C86 are supported by immunohistochemistry quantification (Figure 6B-I) comparing naive and trained mice. The structural changes are consistent across multiple metrics. However, the sample size is relatively small (5 naive, 3-5 trained mice) and the causal relationship between these structural changes and functional outcomes is not directly tested.",
+    "evaluation": "KORD-mediated ChC silencing (n=84 ChCs, 1669 PyCs from 12 mice) shows strong ChC suppression but only mild PyC activation (C70, Figure 7B, LMEM p<0.01 for PyCs). Linear modeling reveals increased intercept but unchanged slope (C71, Figure 7D-E), suggesting tonic rather than gain modulation. Only 21% vs. 13% control show increased activity (C72, \u03c7\u00b2-test p<0.001). No correlation between locomotion modulation and silencing effect (C73, r=0.0068, p=0.78). Control experiments (n=37 ChCs, 968 PyCs from 7 mice) show no effects. These findings challenge the notion of powerful ChC control but are consistent with computational predictions (C118).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C9",
-      "C91",
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97",
+      "C10",
+      "C11",
+      "C12",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
       "C116",
-      "C117",
-      "C121"
+      "C125",
+      "C126"
     ],
-    "result": "ChCs exert only weak inhibitory control over L2/3 PyC activity in vivo, with chemogenetic silencing producing mild increases in PyC activity affecting only 21% of PyCs, and changes primarily in baseline activity (intercept) rather than locomotion modulation (slope).",
+    "result": "ChCs may provide an arousal-related signal that modulates PyC activity and/or gates AIS plasticity during behaviorally relevant events, though they appear unsuited for computing high-dimensional prediction errors.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9, C91-C97, C116-C117, C121 are supported by chemogenetic silencing experiments (Figure 7). The use of KORD-based silencing with appropriate controls strengthens the findings. However, the interpretation that ChCs 'only weakly inhibit' PyCs should be tempered by the fact that chemogenetic approaches may not fully recapitulate physiological activity patterns, and the effect on 21% of cells could still be functionally significant.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretive result synthesizes multiple observations: arousal-related activity (C10, supported by Figures 2-4), weak inhibitory effects (C11, Figure 7), and structural plasticity (C12, Figure 6). However, the mechanistic proposals are largely speculative (C108, C112, C113, C125). The argument against prediction error coding (C109-C110) is logical given weak inhibition and high correlations, but the alternative gating hypothesis lacks direct experimental support. The claims appropriately use tentative language ('may', 'could') but require additional experiments to test causality.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C10",
-      "C11",
-      "C12",
-      "C113",
-      "C127",
-      "C128"
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
     ],
-    "result": "ChCs provide an arousal-related signal to L2/3 pyramidal cells that may modulate their activity and/or gate plasticity of axon initial segments during behaviorally relevant events.",
+    "result": "The mechanisms underlying ChC response plasticity remain unclear but could involve changes in excitatory/inhibitory balance, L5 PyC response properties, or arousal-related neuromodulation. Noradrenergic inputs may be involved but were not detected in rabies tracing.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C10-C12, C113, C127-C128 are largely speculative (marked as INFERENCE or SPECULATION in evidence). While the arousal-related activity is well-documented (C128), the proposed functions of modulating PyC activity (C11) and gating AIS plasticity (C12, C127) are not directly tested. The weak inhibitory effects observed (Figure 7) and structural plasticity (Figure 6) are consistent with these hypotheses but do not provide direct evidence for these specific functional roles.",
-    "result_type": "MAJOR"
+    "evaluation": "Multiple mechanistic hypotheses are proposed (C93-C96, C98) but all are explicitly speculative without direct experimental tests. The arousal hypothesis (C96, C98) is plausible given prior literature (C97, C99-C100) and the observation that trained mice habituate to visual stimuli. The absence of neuromodulatory inputs in rabies tracing (C101) is noted, with a reasonable explanation offered (C102), but this negative result is difficult to interpret definitively. These remain open questions requiring future investigation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C13"
+      "C81",
+      "C82",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
     ],
-    "result": "87% of neurons labeled in Vipr2-Cre mice are ChCs based on morphological criteria.",
+    "result": "Prior literature establishes that most L2/3 PyCs receive variable ChC input, L2/3 PyCs respond to visuomotor mismatch, AIS shortening reduces excitability, and ChC boutons align with cisternal organelles implicated in AIS plasticity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C13 is supported by morphological quantification (Figure 1\u2014supplement 1A-B) showing 287/329 labeled neurons had characteristic ChC features. This specificity is comparable to other Cre driver lines and validates the use of Vipr2-Cre mice for targeting ChCs.",
+    "evaluation": "These claims accurately summarize relevant prior work (C81-C82: Schneider-Mizell et al., 2021; C104-C107: predictive coding literature; C111: Jordan and Keller, 2023; C121-C122: Jamann et al., 2021; C123-C124: EM studies). The citations are appropriate and the knowledge claims are accurately represented. This contextual information appropriately frames the current findings.",
     "result_type": "MINOR"
   },
   {
@@ -207,176 +248,24 @@
       "C22",
       "C23"
     ],
-    "result": "RSC inputs to ChCs show synaptic depression with repeated stimulation at 20 Hz, suggesting high release probability.",
+    "result": "Repeated optogenetic stimulation of RSC inputs to ChCs at 20 Hz produces synaptic depression, suggesting high release probability.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C22-C23 are supported by optogenetic stimulation experiments (Figure 1I). The inference about high release probability (C23) is reasonable based on established relationships between short-term plasticity and release probability, though direct measurements of release probability were not performed.",
+    "evaluation": "The observation of synaptic depression is clearly demonstrated (C22, Figure 1I, n=8 cells). The inference about high release probability (C23) follows established principles (Zucker and Regehr, 2002) where short-term depression typically indicates high initial release probability. However, other factors (e.g., postsynaptic receptor desensitization, presynaptic calcium dynamics) could also contribute to depression, so the interpretation, while reasonable, is not definitive.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C36",
-      "C75"
+      "C84",
+      "C85"
     ],
-    "result": "Direction selectivity index (DSI) is similar between ChCs and PyCs and remains unchanged after training.",
+    "result": "V1 ChC connectivity is non-reciprocal like prelimbic cortex, but differs in receiving input from L5 rather than deep L3 PyCs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36 and C75 are supported by quantification of direction tuning (Figure 2G) and statistical analysis showing no significant changes after training. This contrasts with the changes in orientation selectivity and suggests differential plasticity mechanisms.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C41"
-    ],
-    "result": "ChCs maintain high between-cell correlations even during exposure to variable visual input.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C41 is supported by correlation analysis during natural image presentation (Figure 3D). This finding is consistent with the weak selectivity of ChCs and their synchronized arousal-related activity.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C50",
-      "C51"
-    ],
-    "result": "ChC MEIs resemble MEIs optimized for combinations of L5 PyCs, consistent with ChCs receiving convergent input from many L5 PyCs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C51 are supported by computational analysis (Figure 3\u2014supplement 1F) showing similarity between ChC MEIs and composite L5 PyC MEIs. This provides indirect support for the convergent input hypothesis, though alternative explanations are acknowledged.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C53",
-      "C63"
-    ],
-    "result": "ChCs are highly active at the onset of the visual section of the tunnel but become suppressed when visual stimuli become visible.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53 and C63 are supported by calcium imaging in the virtual tunnel (Figure 4C-D, G-H). This pattern differs from naive responses and reflects experience-dependent plasticity.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C66"
-    ],
-    "result": "ChCs are more strongly correlated with NV-PyCs than with V-PyCs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C66 is supported by correlation analysis (Figure 4K) showing higher correlations between ChCs and NV-PyCs. This is consistent with their similar response profiles to locomotion and visuomotor mismatch.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C67"
-    ],
-    "result": "PV+ ChCs show identical activity patterns as Vipr2-ChCs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C67 is supported by calcium imaging from Vipr2-Cre \u00d7 PV-FlpO mice (Figure 4\u2014supplement 1H-P). This validates that PV+ and PV- ChCs have similar functional properties, though the sample size is small (2 mice).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
-      "C69"
-    ],
-    "result": "Open loop onset of visual flow when the mouse is stationary results in suppression of ChC activity.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C69 is supported by calcium imaging in open loop conditions (Figure 4\u2014supplement 1Q). This demonstrates that ChC responses depend on the behavioral context and coupling between locomotion and visual flow.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C77"
-    ],
-    "result": "Pairwise correlations of ChC activity are lower in trained mice compared to naive mice.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C77 is supported by correlation analysis showing reduced correlations after training (R=0.54\u00b10.01 naive vs R=0.46\u00b10.03 trained, p<0.01). This is consistent with findings in motor cortex and suggests experience-dependent decorrelation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
-      "C17",
-      "C18",
-      "C29",
-      "C80",
-      "C81",
-      "C90",
-      "C103",
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C109",
-      "C112",
-      "C114",
-      "C118",
-      "C119",
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126"
-    ],
-    "result": "Various claims about prior work on ChC connectivity, function, and plasticity in different brain regions and species.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims (C17-C18, C29, C80-C81, C90, C103-C109, C112, C114, C118-C119, C122-C126) are based on citations to published literature. The authors appropriately reference prior work to contextualize their findings. The accuracy of these citations would need to be verified against the original sources.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C48",
-      "C71",
-      "C100",
-      "C101",
-      "C102",
-      "C110",
-      "C111",
-      "C115",
-      "C120"
-    ],
-    "result": "Various speculative claims about mechanisms underlying ChC properties and functions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "These claims (C48, C71, C100-C102, C110-C111, C115, C120) are explicitly speculative or inferential. They propose plausible mechanisms but lack direct experimental support. For example, C71 hypothesizes that experience-dependent plasticity causes ChC suppression by visual stimuli, but the underlying mechanisms are not tested. These represent reasonable hypotheses for future investigation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C38",
-      "C44"
-    ],
-    "result": "L2/3 and L5 PyCs show high selectivity for natural images, with L5 PyCs displaying mixed selectivity including edge-like patterns and complex textures.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38 and C44 are supported by analysis of responses to natural images (Figure 3C) and CNN-generated MEIs (Figure 3F). These findings provide important context for understanding ChC properties by comparison.",
+    "evaluation": "The comparison with prelimbic cortex (Lu et al., 2017) is appropriate and accurately represents both similarities (non-reciprocal connectivity, C84) and differences (layer of PyC input, C85). The current data (Figure 1) clearly support the V1 connectivity pattern. This comparative analysis provides valuable context for understanding regional specialization of ChC circuits.",
     "result_type": "MINOR"
   }
 ]

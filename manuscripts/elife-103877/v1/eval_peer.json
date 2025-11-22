@@ -1,0 +1,169 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C18",
+      "C19"
+    ],
+    "result": "The DGA modifies the traditional Gillespie algorithm by approximating discontinuous operations with smooth, differentiable functions (using sigmoid and Gaussian functions), enabling gradient calculation via backpropagation while preserving core characteristics of the original algorithm and integrating with modern deep learning libraries.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this core methodological innovation. Reviewer 2 states 'This work makes an important conceptual leap by introducing a version of the Gillespie Algorithm that is end-to-end differentiable' and Reviewer 3 notes 'This is achieved by replacing discontinuous operations in the traditional Gillespie algorithm with smooth, differentiable approximations using sigmoid and Gaussian functions.' The editor calls the 'concept and algorithm design convincing and innovative.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46",
+      "C85",
+      "C86"
+    ],
+    "result": "Benchmarking shows the DGA accurately replicates steady-state mRNA distributions and major qualitative features from exact Gillespie simulations, with only 0.3% deviation in entropy terms, though it fails to accurately capture distribution tails and shows errors in ON/OFF state probabilities due to sigmoid approximations affecting low-probability reaction events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge both strengths and limitations. Reviewer 1 states 'the DGA is benchmarked by accurately reproducing the results of the exact Gillespie algorithm' while Reviewer 3 notes 'the DGA accurately captured the moments of the steady-state distribution and other major qualitative features. However, it was less accurate at capturing information about the distribution's tails.' Reviewer 2 raises concerns about deviations in Figure 2 but these are acknowledged limitations rather than refutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37"
+    ],
+    "result": "The DGA is no longer exact unlike the Gillespie algorithm, replacing the exact discrete stochastic system with an approximate differentiable system, with approximation effects potentially pronounced in complex settings like rare events, tail-driven processes, or non-stationary time series.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge these limitations. Reviewer 2 states 'It is to the authors' credit that they are open and explicit about the potential limitations of DGA due to breakdowns in its continuous approximations.' Reviewer 1 notes 'A more comprehensive and quantitative analysis of the limitations of the DGA, e.g. for rare events...would have also been helpful' but accepts this is beyond scope. The limitations are treated as acknowledged trade-offs rather than fatal flaws.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C47",
+      "C87",
+      "C88"
+    ],
+    "result": "The DGA can accurately learn kinetic parameters from both simulated and experimental data (including E. coli promoter measurements) using gradient descent, accurately capturing gradient information despite approximation errors, demonstrating robustness for parameter estimation from noisy experimental data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this capability with some caveats. Reviewer 3 states 'The DGA efficacy in estimating kinetic parameters from both synthetic and experimental data...highlights the DGA's potential to extract meaningful biophysical parameters from noisy biological data.' Reviewer 2 notes the demonstration in Figure 7 provides 'a nice roadmap' but raises concerns about inference reliability in Figure 5A, suggesting the need for multiple random initializations rather than rejecting the capability outright.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "For E. coli promoters (lacUD5 and 5DL1), the DGA predictions show mean percentage errors of 25% and 28% for Fano factor predictions, while predictions for the r/\u03b3 ratio agree remarkably well with ground truth measurements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these quantitative results without challenge. Reviewer 1 states the authors 'argue convincingly that the DGA can become a powerful computation tool for applications in quantitative and synthetic biology' based on these experimental validations. Reviewer 2 acknowledges the demonstration with real experimental data (Figure 7) as a strength, though notes analytic solutions exist for these systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C75",
+      "C89"
+    ],
+    "result": "The DGA can design biochemical networks with desired properties, including nonequilibrium promoter architectures with specified input-output relationships, as demonstrated by good agreement between desired and learned responses in a four-state promoter model, enabling rapid design of complex biological systems with specific behaviors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this design capability. Reviewer 3 states 'The DGA's ability to design a four-state promoter architecture exhibits a desired input-output relationship. This success indicates the potential of the DGA as a valuable tool for synthetic biology.' Reviewer 2 notes Figure 8 provides 'a nice roadmap for researchers' though raises concerns about whether analytic solutions make DGA unnecessary in these specific examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The sharper response curve in the four-state promoter model is achieved by consuming more energy, consistent with recent literature on nonequilibrium design principles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a specific concern in revision comments: 'From my reading of the paper they cite (Lammers & Flamholz 2023), the equilibrium sharpness limit...should be 0.25. But both solutions shown in Figure 8D fall below this limit, which means that they have sharpness levels that could have been achieved with no energy expenditure.' This suggests potential misinterpretation or measurement issues, though the reviewer acknowledges it could be due to differences in sharpness measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Parameter estimation reveals flat loss function landscapes around true parameters, reflecting weak dependence of mRNA distribution moments on kinetic parameters, with multiple parameter sets minimizing the loss function in degenerate cases, though differences occur along 'sloppy' directions where the loss function is flat.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these findings through their discussion of parameter inference challenges. Reviewer 2's concern that 'the inference algorithm does not reliably find the global minimum of the loss function (Figure 2B)' acknowledges the flat landscape issue. The 'exploration of pairwise parameter dependencies' is noted by Reviewer 2 as providing 'an interesting window into the design constraints.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Learned parameter values from experimental data indicate that mRNA transcription occurs much faster than repressor unbinding, with relatively high mRNA degradation rates providing a mechanism for fine-tuning gene expression, and repressor binding rates decreasing with mean mRNA level as expected.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These biological interpretations are not challenged by reviewers. They are presented as inferences from the parameter estimation results that reviewers have accepted, and no reviewer questions these specific biological conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The DGA facilitates gradient-based optimization techniques for parameter estimation and network design by enabling computation of gradients via forward- and reverse-mode automatic differentiation, which has potential to significantly expand the utility of stochastic simulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is affirmed as a core strength. The editor states the work 'has the potential to be of significant interest to a broad audience' and Reviewer 2 notes 'This idea alone has the potential to drive a number of exciting innovations in the analysis, inference, and design of biochemical reaction networks.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Future directions include extending DGA to utilize dynamical data, adapting it for rare events, comparing with tensor network methods, handling larger datasets across multiple fields, and extending to spatial systems, though spatial extensions may face computational scalability challenges.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge these as appropriate future directions. Reviewer 1 notes 'some questions are left open about implications for more complex systems' and suggests 'it would have been useful to have a brief discussion...of what can be achieved with the DGA and is totally beyond the reach of the Gillespie algorithm' but accepts this is 'arguably beyond the scope of this study.' Reviewer 3 notes 'The study primarily focuses on analysing the steady-state properties' as a weakness, implicitly supporting the need for dynamical extensions.",
+    "result_type": "MINOR"
+  }
+]

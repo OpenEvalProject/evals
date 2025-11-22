@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C56",
+      "C57",
+      "C69",
+      "C113",
+      "C119",
+      "C130"
+    ],
+    "result": "The authors developed a new metric called CAIS (Codon Adaptation Index of Species) based on Kullback-Leibler divergence that corrects for both GC content and amino acid composition confounders when measuring codon adaptation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C56, C69, C113, and C119 collectively describe the development and key properties of CAIS. The methodological description is clear and the mathematical formulation is provided in the Methods section. The correction for both GC content and amino acid composition is a documented feature distinguishing CAIS from existing metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C118"
+    ],
+    "result": "CAIS and ENC successfully control for GC content confounding, while CAI does not. CAI shows strong correlation with GC content (Figure 3A), ENC shows no correlation (Figure 3B), and CAIS shows only weak non-significant correlation after multiple testing correction (Figure 3C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 and C118 are directly supported by empirical data shown in Figure 3. The phylogenetically corrected correlations demonstrate that CAIS and ENC address the GC confounding problem that affects CAI. Statistical significance is appropriately assessed with multiple testing correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C72",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C110",
+      "C136"
+    ],
+    "result": "More highly adapted vertebrate species (measured by higher CAIS or ENC) have protein domains with higher intrinsic structural disorder (ISD). The correlation coefficient is 0.36 for CAIS (p=6e-5) and 0.50 for ENC (p=1e-8), with the same Pfam domain tending to be more disordered in well-adapted species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C89-C91, and C110 present the core finding with specific statistical support. The linear mixed model controlling for Pfam identity (C83, C85-C86) is appropriate for isolating species effects. The result is unexpected given prior knowledge (C137) but statistically robust across both metrics, though CAIS is argued to be more reliable due to amino acid frequency control (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C143"
+    ],
+    "result": "CAIS provides a more reliable measure of the ISD-codon adaptation relationship than ENC because CAIS controls for amino acid frequency differences among species, while amino acid frequencies strongly influence ISD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 establishes that amino acid frequencies influence ISD (supported by citation). Claims C93 and C143 logically follow that CAIS's control for amino acid composition (established in Result 1) makes it more reliable for this analysis. This is a valid methodological advantage, though ENC shows stronger statistical power in the actual analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C129"
+    ],
+    "result": "Using local GC content instead of genome-wide GC content for CAIS calculation eliminates the correlation with ISD. The authors hypothesize this may be because genome-wide GC serves as a time-averaged proxy when local GC evolves more rapidly than codon usage, or because local sequences were too short.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C97 report the empirical finding shown in Figure 4C. Claims C98-C100 and C129 provide plausible theoretical explanations supported by citation (C98). However, these remain speculative hypotheses rather than tested mechanisms. The negative result itself is well-documented but the interpretation is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Gene conversion strength is not a confounding factor affecting CAIS, as high |localGC - globalGC| does not predict high CAIS (Figure 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 report a negative result that rules out a potential confounding factor. The analysis shown in Figure 5 appropriately tests whether GC-biased gene conversion could spuriously drive CAIS values. The lack of correlation supports the validity of CAIS as a measure of selection rather than gene conversion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C111"
+    ],
+    "result": "Both young (animal-specific) and old (pre-LECA) protein domains show equally strong trends of increasing disorder with species adaptedness, contrary to the hypothesis that selection for high ISD might be strongest in young domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 presents the empirical finding shown in Figure 6, with appropriate age classifications from prior work (C105, C146-C147). This result tests and rejects the hypothesis in C106. The equal strength across domain ages strengthens the main finding by showing it's not driven by recently emerged domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "The linear mixed model with species as fixed effects and Pfam domain identity as random effects is statistically justified, with standard deviation in ISD of 0.178 among Pfams versus 0.058 residual, and p=3\u00d710^-13 for the Pfam random effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85-C86 describe the statistical approach and provide evidence for its appropriateness. The large variance among Pfams relative to residual variance and highly significant p-value justify controlling for Pfam identity. This methodological choice is critical for isolating species-level effects from domain-level properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C141",
+      "C142",
+      "C144"
+    ],
+    "result": "Codon adaptation metrics (CAIS and ENC) more directly quantify species' exquisiteness of adaptation than effective population size estimates, can be calculated for more species (requiring only a complete genome), and CAIS is particularly useful for applying nearly neutral theory to protein evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38, and C141 make comparative arguments about the directness of codon-based metrics versus Ne. Claim C142 correctly notes the practical advantage of not requiring polymorphism or mutation rate data. Claim C144 summarizes the utility demonstrated by the ISD analysis. These are well-supported conceptual and practical advantages, though the claim of being 'more direct' is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "CAI, while effective for comparing genes within species, has a paradoxical property where more exquisitely adapted species can have lower species-averaged CAI scores because the species-wide strength of codon bias appears in the normalizing denominator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe a known limitation of CAI for cross-species comparisons. The mathematical explanation (C43) is shown in Equation 4 and Figure 3\u2014figure supplement 1A. The paradoxical inverse relationship (C44) is demonstrated in Figure 3\u2014figure supplement 1B and supported by citations. This motivates the development of CAIS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Neither ENC nor CAI adequately control for differences in amino acid composition when applied across species, and this confounding problem is not easy to fix for ENC despite early claims to the contrary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 identify a limitation of existing metrics that CAIS addresses. The claims are supported by multiple citations (C65-C68) documenting this problem in the literature. Claim C66 specifically notes this has been shown at the protein level. This establishes the need for CAIS's amino acid composition correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The analysis was restricted to 118 vertebrate species (from 170 meeting quality criteria) that had annotated intergenic sequences for GC content calculation, with additional limitations from computational feasibility of linear mixed models with 6 million datapoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 and C133-C134 clearly document the dataset restrictions and their rationales. The reduction from 170 to 118 species is justified by data availability requirements. Claim C135 notes the phylogenetic structure. These are straightforward methodological descriptions that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C153",
+      "C151",
+      "C152"
+    ],
+    "result": "The study avoids phylogenetic pseudoreplication by using Phylogenetic Independent Contrasts (PIC) to assess correlations, which addresses the problem of spurious correlations from closely related species sharing similar values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 describe the statistical approach to handle phylogenetic non-independence. PIC is an established method (C153 cites Felsenstein 1985) for this purpose. The rationale for needing this correction (C151-C152) is sound. This is appropriate statistical methodology for comparative analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The nearly neutral theory framework posits that census population size determines both the effectiveness of selection and neutral diversity in idealized models, and that effective population size (Ne) is typically estimated from neutral polymorphism but the property most relevant to nearly neutral theory is the inflection point where non-preferred alleles become common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C21-C25 establish the theoretical background from population genetics. These are well-established concepts supported by appropriate citations (Ohta 1973, Kimura 1962, etc.). The distinction between what Ne typically measures versus what's most relevant to nearly neutral theory (C25) motivates the study's approach. This is accurate representation of prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Ne calculated from neutral polymorphism has several limitations: it requires both polymorphism data and mutation rate estimates, is not robust to sampling issues and species definition problems, is affected by transient hypermutation, and can be deflated by recent bottlenecks even when too brief to erode adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 systematically document limitations of Ne-based approaches, each supported by citations or logical inference. These limitations are well-established in the literature and provide strong motivation for developing alternative metrics like CAIS. The arguments are sound and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The finding that more effective selection prefers higher ISD was unexpected given that lower-Ne eukaryotes have more disordered proteins than higher-Ne prokaryotes, but can be reconciled if highly disordered sequences are less likely in high-Ne species while present sequences have slightly higher disorder. High ISD might help mitigate affinity-specificity trade-offs in protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C137 correctly notes the finding contradicts prior cross-domain comparisons (supported by citations). Claims C138-C140 offer speculative reconciliation and mechanistic hypotheses. While these are plausible explanations supported by citations (C139), they remain untested hypotheses. The reconciliation model (C138) is speculative and would require additional data to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "The direct effect of ISD on fitness agrees with E. coli studies where fitness was driven more by amino acid composition than GC content, though the study has not ruled out selection for higher GC in ways general to both coding and non-coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 draws support from external work (Kosinski et al. 2022) that aligns with the findings. However, C121 acknowledges a significant limitation\u2014the study cannot distinguish between selection on codon bias versus general selection on GC content. This is an important caveat that limits the strength of mechanistic conclusions about what drives the observed patterns.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C51",
+      "C52"
+    ],
+    "result": "Less than 10% of DNA from dying cells reaches plasma as cfDNA, with ratios of measured to expected cfDNA varying 1000-fold among cell types (from 1:30 for megakaryocytes/endothelial cells to 1:30,000 for erythrocyte progenitors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C51, and C52 are supported by the quantitative comparison between calculated potential DNA flux from cellular turnover and measured cfDNA levels shown in Figure 1. The methodology integrates published cellular turnover rates with measured cfDNA concentrations, and the 1000-fold variation is clearly demonstrated across multiple cell types with appropriate uncertainty estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Blood cells (granulocytes, megakaryocytes, monocytes, lymphocytes, erythrocyte progenitors) plus endothelial cells and hepatocytes are the primary sources of plasma cfDNA, while epithelial cells from GI tract, lung, kidney, bladder, and skin with high turnover are shed from the body and not detected in plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C74-C76 are supported by citations to Moss et al. and Loyfer et al. for cfDNA sources, and Sender and Milo for cellular turnover. The explanation that cells with high turnover but external shedding routes do not contribute to plasma cfDNA is logically consistent with the observed pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C60"
+    ],
+    "result": "Local clearance, presumably via tissue-resident phagocytes and macrophages, removes most DNA from dying cells before it reaches the bloodstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53, C45, C46, and C60 propose phagocytic clearance as the mechanism for the missing cfDNA, supported by citations to studies in mice (C47, C48). However, this remains speculative as the authors explicitly state this is a hypothesis and the mechanism has not been directly demonstrated in humans. The inference is reasonable but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Erythroid progenitors show extreme DNA clearance efficiency (only 1 in 30,000 DNA molecules reach plasma), attributed to the specialized erythroblastic island structure where macrophages efficiently collect extruded nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by the quantitative analysis showing the extremely low ratio for erythrocyte progenitors (C54), combined with established knowledge about erythroblastic island organization (C55, cited to Chasis and Mohandas 2008) and the massive scale of erythrocyte production (C56, cited to Sender and Milo 2021). The inference about efficiency (C57) is well-justified by these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C62",
+      "C63"
+    ],
+    "result": "Cell types with low turnover (skeletal myocytes, adipocytes, pancreatic beta cells, cardiomyocytes) are not detected in plasma cfDNA of healthy individuals because their cfDNA levels fall below current assay detection limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C62, and C63 are supported by the quantitative comparison in Figure 1 showing that potential cfDNA levels from these low-turnover cell types fall below the detection gradient (1-10 genome equivalents). The inference is logically sound given the established assay sensitivities (C34, C35) and calculated potential DNA flux.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Breast epithelial cells and myocytes show unexpectedly low or absent cfDNA despite having potential levels above detection limits, suggesting highly efficient local DNA clearance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37 and C66 indicate breast epithelial cells are outliers based on Figure 1 analysis, and C64 cites studies finding no contribution despite sensitive assays. However, C38 and C65 acknowledge this is speculative ('might suggest', 'might indicate'). The discrepancy is documented but the proposed mechanism of exceptionally efficient local clearance requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "While ultrashort cfDNA fragments (25-60 bp) exist, their total DNA content is comparable to or less than regular nucleosome-protected fragments (165 bp), making them unlikely to explain the missing cfDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by citations to Cheng et al. 2022 and Hisano et al. 2021. The authors appropriately account for ultrashort fragments by applying a 1.5x correction factor (C87) and conclude this does not resolve the order-of-magnitude discrepancy. The reasoning is sound given the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Systemic clearance cannot explain the missing cfDNA because measured cfDNA half-life (15-120 min) is orders of magnitude longer than would be required, and cannot account for cell-type-specific differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 are supported by multiple citations for cfDNA half-life and logical reasoning. If systemic clearance were responsible, the calculated half-life would need to be seconds to minutes (stated in Discussion), contradicting published measurements. The cell-type-specific variation further argues against a uniform systemic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Higher cellular turnover correlates with lower cfDNA-to-DNA-flux ratios, suggesting tissues with higher turnover have more efficient DNA utilization mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58 and C59 identify a trend in the data, but the authors acknowledge this is limited to a few cell types and extrapolation is problematic. The correlation is observed but the mechanistic interpretation (C59) is explicitly speculative ('may indicate'). More cell types would need to be analyzed to establish this as a general principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Elevated cfDNA from a specific cell type may indicate disruption of local macrophage clearance rather than increased cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 is an explicitly speculative implication ('may represent') of the macrophage clearance hypothesis (C60). While this is a logical consequence if the hypothesis is correct, it remains untested and would require experimental validation showing that macrophage dysfunction increases cfDNA without changing cell death rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The analysis used cfDNA data from healthy individuals under 47 years and cellular turnover estimates from males aged 20-30, with age and sex potentially causing up to 30% variation in cfDNA concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 accurately describe the study population and acknowledge limitations. The citations to Meddeb et al. 2019 and Sender and Milo 2021 support the data sources. The authors appropriately note that 30% variation does not affect their main conclusions given the much larger discrepancies observed (orders of magnitude).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Cellular turnover for megakaryocytes was estimated using two independent methods (bone marrow counts with maturation time, and platelet production rates), while hepatocyte turnover was calculated from ploidy-specific cell numbers and death rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe methodological approaches with appropriate citations. Using two independent methods for megakaryocytes (C84, C85) provides internal validation. The hepatocyte calculation (C86) is supported by citation to Heinke et al. 2022. These are standard approaches for estimating cellular turnover.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Total plasma cfDNA concentration was adjusted by a factor of 1.5 to account for ultrashort fragments (~50 bp) that contribute comparable molar concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by citation to Hisano et al. 2021 and the Methods section describes this as a midpoint estimate (range 1-2) with appropriate uncertainty propagation. This adjustment is conservative and the authors demonstrate it does not change their main conclusions about the order-of-magnitude discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on cellular turnover and apoptosis: ~0.3\u00d710\u00b9\u00b2 cells replaced daily (two-thirds erythrocytes), apoptosis involves two-stage DNA fragmentation (intracellular endonucleases and phagocytic degradation), and cfDNA fragments (~165 bp) have been known since the 1940s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide established background information supported by appropriate citations (Sender and Milo 2021, Nagata 2005, Mandel and Metais 1948, Bendich et al. 1965). These are well-established facts in the field. C9 is appropriately marked as speculative regarding the origin of cfDNA fragments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on cfDNA applications and tissue-of-origin determination: cfDNA is used clinically for prenatal testing, cancer monitoring, and transplant monitoring; tissue origins can be determined through epigenetic markers including methylation patterns; blood cells contribute >90% of baseline cfDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C20 provide established background on cfDNA applications and deconvolution methods, supported by multiple appropriate citations (Heitzer et al. 2019, Moss et al. 2018, Loyfer et al. 2023, and others). These represent well-established knowledge in the cfDNA field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on cfDNA release mechanisms and clinical challenges: the exact release mechanism is unclear but involves cell death; cfDNA concentration (~1000 genome equivalents/ml) limits diagnostic sensitivity; local release efficiency has not been examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 accurately describe current knowledge gaps and challenges in the field, with appropriate citations (Stroun et al. 2001, Moss et al. 2022, Tabrizi et al. 2023). C27 explicitly identifies the knowledge gap that motivates this study. These claims provide appropriate context and justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Typical cfDNA levels and assay sensitivities: ~1000 genome equivalents/ml in healthy plasma; deconvolution assays detect ~1% (~10 genome equivalents); targeted assays can detect ~0.1% (~1 genome equivalent).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe established technical parameters for cfDNA analysis, with C34 supported by citation to Loyfer et al. 2023. These values are used appropriately to define the detection limit gradient in Figure 1 and interpret which cell types can be detected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "DNA fragmentation within apoptotic cells produces ~180 bp nucleosomal multiples, suggesting that cfDNA fragments up to 200 bp in plasma have not been further degraded by phagocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by citation to Matassov et al. 2004 regarding intracellular fragmentation. Claim C50 is a reasonable inference that fragments of this size indicate incomplete phagocytic degradation, consistent with the two-stage degradation model (C4-C6) and supporting the local clearance hypothesis.",
+    "result_type": "MINOR"
+  }
+]

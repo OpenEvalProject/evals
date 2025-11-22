@@ -183,7 +183,7 @@
   },
   {
     "claim_id": "C15",
-    "claim": "AOB-MCs can sample multiple glomeruli through their dendritic fields.",
+    "claim": "AOB-MC dendritic fields can sample multiple glomeruli.",
     "claim_type": "EXPLICIT",
     "source": "Revealing the response properties of AOB-MCs is particularly interesting given their dendritic fields, which can sample multiple glomeruli (Takami and Graziadei, 1991; Larriva-Sahd, 2008).",
     "source_type": [
@@ -209,7 +209,7 @@
   },
   {
     "claim_id": "C17",
-    "claim": "Response properties of VSNs are altered during the estrus cycle.",
+    "claim": "Response properties of vomeronasal sensory neurons (VSNs) are altered during the estrus cycle.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, response properties of VSNs are also altered during the estrus cycle (Dey et al., 2015; Cherian et al., 2014; Eckstein et al., 2020; Stowers and Liberles, 2016).",
     "source_type": [
@@ -228,7 +228,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is directly stated in the manuscript describing the experimental dataset.",
+    "evidence": "The claim is a direct statement about the dataset composition in the manuscript.",
     "evidence_type": [
       "DATA"
     ]
@@ -241,14 +241,14 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is directly stated in the manuscript describing the experimental dataset.",
+    "evidence": "The claim is a direct statement about the dataset composition in the manuscript.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C20",
-    "claim": "As a population, AOB neurons respond to each of the stimuli in the set.",
+    "claim": "AOB neurons as a population respond to each of the stimuli in the set.",
     "claim_type": "EXPLICIT",
     "source": "As a population, AOB neurons respond to each of the stimuli in the set.",
     "source_type": [
@@ -281,9 +281,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is based on analysis of the multidimensional scaling representation shown in Figure 2B.",
+    "evidence": "The claim is based on analysis of the multidimensional scaling representation in Figure 2B.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
@@ -307,7 +308,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by data shown in Figure 2D and citations to previous studies (Yoles-Frenkel et al., 2022; Bansal et al., 2021).",
+    "evidence": "The claim is supported by data in Figure 2D and citations to previous studies (Yoles-Frenkel et al., 2022; Bansal et al., 2021).",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -315,13 +316,13 @@
   },
   {
     "claim_id": "C25",
-    "claim": "Female stimuli activate more neurons than male stimuli in the AOB.",
+    "claim": "Female stimuli activate more neurons than male stimuli.",
     "claim_type": "EXPLICIT",
     "source": "Also consistent with other studies, female stimuli activate more neurons than male stimuli (Hendrickson et al., 2008; Bansal et al., 2021; Nodari et al., 2008).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by data shown in Figure 2D and citations to previous studies (Hendrickson et al., 2008; Bansal et al., 2021; Nodari et al., 2008).",
+    "evidence": "The claim is supported by data in Figure 2D and citations to previous studies (Hendrickson et al., 2008; Bansal et al., 2021; Nodari et al., 2008).",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -335,7 +336,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by data shown in Figure 2D and a citation to previous work (Yoles-Frenkel et al., 2022).",
+    "evidence": "The claim is supported by data in Figure 2D and a citation to previous work (Yoles-Frenkel et al., 2022).",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -356,13 +357,14 @@
   },
   {
     "claim_id": "C28",
-    "claim": "Most neurons do not conform to any of the defined response patterns (78%, 433 of 557 total patterns).",
+    "claim": "Most ethological categories contained in the dataset are not overrepresented by AOB neurons.",
     "claim_type": "EXPLICIT",
-    "source": "The image shows that most neurons do not conform to any of the response patterns (78%, 433 of 557 total patterns; note that the number of patterns exceeds the number of neurons since a given neuron may conform to more than one pattern).",
+    "source": "We find that female, ~female, C57 male, and castrated are overrepresented (p<0.05, Figure 3C).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "The claim is supported by analysis of response patterns shown in Figure 3B.",
+    "evidence": "The claim is supported by statistical analysis shown in Figure 3C, where most patterns are not significantly overrepresented.",
     "evidence_type": [
       "DATA"
     ]
@@ -371,59 +373,71 @@
     "claim_id": "C29",
     "claim": "Female, ~female, C57 male, and castrated response patterns are overrepresented in AOB neurons.",
     "claim_type": "EXPLICIT",
-    "source": "Considering basic and reverse patterns, we find that female, ~female, C57 male, and castrated are overrepresented (p<0.05, Figure 3C).",
+    "source": "We find that female, ~female, C57 male, and castrated are overrepresented (p<0.05, Figure 3C).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The claim is supported by statistical analysis comparing observed pattern frequencies to shuffled distributions shown in Figure 3C.",
+    "evidence": "The claim is supported by statistical analysis shown in Figure 3C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C30",
-    "claim": "C57/state, cast/strain, and ~cast/strain adjusted patterns are overrepresented in AOB neurons.",
-    "claim_type": "EXPLICIT",
-    "source": "For strain-adjusted or state-adjusted patterns (Figure 3D), we find overrepresentation of C57/state, cast/strain, and ~cast/strain.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "The claim is supported by statistical analysis shown in Figure 3D.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C31",
     "claim": "Most of the male strain-specific patterns and the male-virility-state patterns are not more frequent than expected by chance.",
     "claim_type": "EXPLICIT",
     "source": "Presently, we note that most of the male strain-specific patterns and the male-virility-state patterns are not more frequent than expected by chance.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is based on statistical analysis of pattern frequencies shown in Figures 3C and 3D.",
+    "evidence": "The claim is supported by statistical analysis shown in Figures 3C and 3D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C32",
+    "claim_id": "C31",
     "claim": "At the population level, representational space remains roughly stable across the estrus cycle.",
     "claim_type": "EXPLICIT",
     "source": "We find a positive and highly significant correlation between representations under the two states. Thus, at the population level, representational space remains roughly stable across the estrus cycle.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by correlation analysis of pairwise distances shown in Figures 4D and 4E.",
+    "evidence": "The claim is supported by correlation analysis shown in Figures 4D and 4E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "There is a positive and highly significant correlation between pairwise population response distances under estrus and non-estrus states using correlation distance.",
+    "claim_type": "EXPLICIT",
+    "source": "We find a positive and highly significant correlation between representations under the two states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by the correlation coefficient (CC = 0.67, p = 2.2e-08) shown in Figure 4D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C33",
-    "claim": "After Bonferroni correction for multiple comparisons, the only significant difference in response intensity across the estrus cycle is that during estrus, the fraction of responsive neurons to castrated BC male urine increases.",
+    "claim": "There is a positive and highly significant correlation between pairwise population response distances under estrus and non-estrus states using Euclidean distance.",
+    "claim_type": "EXPLICIT",
+    "source": "We find a positive and highly significant correlation between representations under the two states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by the correlation coefficient (CC = 0.52, p = 4.7e-05) shown in Figure 4E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "During estrus, the fraction of responsive neurons to castrated BC male urine increases significantly.",
     "claim_type": "EXPLICIT",
     "source": "After (Bonferroni) correction for multiple comparisons, the only significant difference is that during estrus, the fraction of responsive neurons to castrated BC male urine increases.",
     "source_type": [
@@ -435,7 +449,7 @@
     ]
   },
   {
-    "claim_id": "C34",
+    "claim_id": "C35",
     "claim": "There are no significant differences in response magnitude to any of the stimuli across the estrus cycle.",
     "claim_type": "EXPLICIT",
     "source": "There are no significant differences in response magnitude to any of the stimuli.",
@@ -448,19 +462,6 @@
     ]
   },
   {
-    "claim_id": "C35",
-    "claim": "A two-way ANOVA with stimulus and state as factors indicates that the only significant factor is stimulus (p-values were 1.5\u00d710\u20135, 0.7688, and 0.8193 for stimulus, state, and stimulus \u00d7 state interaction, respectively).",
-    "claim_type": "EXPLICIT",
-    "source": "Consistent with this, a two-way ANOVA with stimulus and state as factors indicates that the only significant factor is stimulus (p-values were 1.5\u00d710\u20135, 0.7688, and 0.8193 for stimulus, state, and stimulus \u00d7 state interaction, respectively).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is supported by statistical analysis of response magnitudes.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
     "claim_id": "C36",
     "claim": "There is no consistent change in response strength across the estrus cycle.",
     "claim_type": "EXPLICIT",
@@ -468,40 +469,66 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is based on statistical analyses shown in Figure 5A and 5B.",
+    "evidence": "The claim is supported by two-way ANOVA results and data shown in Figure 5A and 5B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C37",
-    "claim": "There is a positive (0.41) and significant (p=0.002) correlation between mean pairwise preference indices under both estrus states.",
+    "claim": "There is no increase in response efficacy of stimuli associated with higher virility across the estrus cycle.",
     "claim_type": "EXPLICIT",
-    "source": "The comparison (Figure 5C) reveals a positive (0.41) and significant (p=0.002) correlation between the two states.",
+    "source": "Thus, we conclude that there is no consistent change in response strength across the estrus cycle, and, in particular, no increase in response efficacy of stimuli associated with higher virility.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "The claim is supported by correlation analysis shown in Figure 5C.",
+    "evidence": "The claim is supported by analysis of response magnitudes shown in Figures 5A and 5B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C38",
-    "claim": "There are no consistent trends in preference indices across the three strains, and specifically, no evidence for enhanced responses to virile stimuli during estrus.",
+    "claim": "There is a positive and significant correlation (0.41, p=0.002) between mean pairwise preference indices under estrus and non-estrus states.",
     "claim_type": "EXPLICIT",
-    "source": "Summarizing, we find no consistent trends across the three strains, and specifically, no evidence for enhanced responses to virile stimuli during estrus.",
+    "source": "The comparison (Figure 5C) reveals a positive (0.41) and significant (p=0.002) correlation between the two states.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "The claim is based on analysis of pairwise preference indices shown in Figure 5D.",
+    "evidence": "The claim is supported by statistical analysis shown in Figure 5C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C39",
+    "claim": "There are no consistent trends in preference indices across the three strains related to virility state.",
+    "claim_type": "EXPLICIT",
+    "source": "Summarizing, we find no consistent trends across the three strains, and specifically, no evidence for enhanced responses to virile stimuli during estrus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by analysis of pairwise preference indices shown in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "There is no evidence for enhanced responses to virile stimuli during estrus.",
+    "claim_type": "EXPLICIT",
+    "source": "Summarizing, we find no consistent trends across the three strains, and specifically, no evidence for enhanced responses to virile stimuli during estrus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by analysis shown in Figures 5D and 5E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
     "claim": "In all cases, female urine elicits stronger responses than male urine.",
     "claim_type": "EXPLICIT",
     "source": "In all cases (Figure 5E), female urine elicits stronger responses than male urine.",
@@ -509,14 +536,14 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The claim is supported by preference index analysis shown in Figure 5E.",
+    "evidence": "The claim is supported by data shown in Figure 5E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C40",
-    "claim": "The only significant difference in male vs. female preference is that during estrus, responses to non-estrus female urine increase relative to naive male stimuli (p=0.0024).",
+    "claim_id": "C42",
+    "claim": "During estrus, responses to non-estrus female urine increase relative to naive male stimuli.",
     "claim_type": "EXPLICIT",
     "source": "The only significant difference (p=0.0024, Bonferroni-corrected p-value: 0.01) is that during estrus, responses to non-estrus female urine increase relative to naive male stimuli.",
     "source_type": [
@@ -528,7 +555,7 @@
     ]
   },
   {
-    "claim_id": "C41",
+    "claim_id": "C43",
     "claim": "Relative response strengths to estrus and non-estrus female urine did not change during the estrus cycle.",
     "claim_type": "EXPLICIT",
     "source": "Relative response strengths to estrus and non-estrus female urine also did not change during the estrus cycle (Figure 5E).",
@@ -536,166 +563,153 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The claim is supported by analysis shown in Figure 5E.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C42",
-    "claim": "Relative response magnitudes are broadly conserved across estrus states.",
-    "claim_type": "EXPLICIT",
-    "source": "In conclusion, relative response magnitudes are broadly conserved across estrus states.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is based on analyses shown in Figure 5C-E.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C43",
-    "claim": "The sparseness of the AOB neuron population is higher for estrus neurons (p=0.0079).",
-    "claim_type": "EXPLICIT",
-    "source": "As shown in Figure 6A, the sparseness of the population is higher for estrus neurons (p=0.0079, Kruskal-Wallis nonparametric ANOVA).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "The claim is supported by statistical analysis of lifetime sparseness shown in Figure 6A.",
+    "evidence": "The claim is supported by data shown in Figure 5E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C44",
-    "claim": "Higher selectivity during estrus is observed for stimuli from ICR male mice (p=0.0017).",
+    "claim": "Relative response magnitudes are broadly conserved across estrus states.",
     "claim_type": "EXPLICIT",
-    "source": "This hypothesis appears true for ICR male stimuli, with a small yet significant increase in selectivity during estrus (p=0.0017, Kruskal-Wallis test).",
+    "source": "In conclusion, relative response magnitudes are broadly conserved across estrus states.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by selectivity index analysis shown in Figure 6C.",
+    "evidence": "The claim is supported by analysis of preference indices shown in Figures 5C, 5D, and 5E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C45",
-    "claim": "Selectivity to BC and C57-derived stimuli does not change during the estrus cycle.",
+    "claim": "The sparseness of the AOB neuron population is higher for estrus neurons compared to non-estrus neurons.",
     "claim_type": "EXPLICIT",
-    "source": "However, this is not the case for BC and C57-derived stimuli (Figure 6C) and is thus not a general feature of the estrus state.",
+    "source": "As shown in Figure 6A, the sparseness of the population is higher for estrus neurons (p=0.0079, Kruskal-Wallis nonparametric ANOVA).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The claim is supported by selectivity index analysis shown in Figure 6C.",
+    "evidence": "The claim is supported by statistical analysis shown in Figure 6A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C46",
-    "claim": "Of all pairwise comparisons involving a dominant and nondominant stimulus donor from the same strain, the only significant change involves a decrease in selectivity among dominant and naive C57 male urine during estrus.",
+    "claim": "Higher selectivity to male state during estrus is observed for stimuli from ICR male mice.",
     "claim_type": "EXPLICIT",
-    "source": "For example, of all pairwise comparisons involving a dominant and nondominant stimulus donor from the same strain, the only significant change involves a decrease in selectivity among dominant and naive C57 male urine during estrus.",
+    "source": "This hypothesis appears true for ICR male stimuli, with a small yet significant increase in selectivity during estrus (p=0.0017, Kruskal-Wallis test).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by pairwise selectivity analysis shown in Table 2.",
+    "evidence": "The claim is supported by statistical analysis shown in Figure 6C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C47",
-    "claim": "While as a population, AOB-MCs from estrus females show somewhat sparser responses, there are no consistent shifts in selectivity for male virility state.",
+    "claim": "Increased selectivity to male state during estrus is not observed for BC and C57-derived stimuli.",
     "claim_type": "EXPLICIT",
-    "source": "In summary, while as a population, AOB-MCs from estrus females show somewhat sparser responses, there are no consistent shifts in selectivity for male virility state.",
+    "source": "However, this is not the case for BC and C57-derived stimuli (Figure 6C) and is thus not a general feature of the estrus state.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "The claim is based on analyses shown in Figure 6 and Table 2.",
+    "evidence": "The claim is supported by statistical analysis shown in Figure 6C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C48",
-    "claim": "Response pattern distributions remain stable during the cycle.",
+    "claim": "While AOB-MCs from estrus females show somewhat sparser responses as a population, there are no consistent shifts in selectivity for male virility state.",
     "claim_type": "EXPLICIT",
-    "source": "In summary, response pattern distributions remain stable during the cycle, and the few changes that do occur are not compatible with enhanced selectivity to reproductively relevant stimuli.",
+    "source": "In summary, while as a population, AOB-MCs from estrus females show somewhat sparser responses, there are no consistent shifts in selectivity for male virility state.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is based on analysis of response pattern frequencies shown in Figure 7.",
+    "evidence": "The claim is supported by analysis shown in Figure 6 and Table 2.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C49",
-    "claim": "After applying a binomial exact test and correcting for multiple comparisons, none of the response patterns show a significant state-dependent difference in frequency.",
+    "claim": "Response pattern distributions remain stable during the estrus cycle.",
     "claim_type": "EXPLICIT",
-    "source": "Applying a binomial exact test (see Materials and methods), and correcting for multiple comparisons, none of the patterns show a significant state-dependent difference in frequency.",
+    "source": "In summary, response pattern distributions remain stable during the cycle, and the few changes that do occur are not compatible with enhanced selectivity to reproductively relevant stimuli.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by statistical analysis shown in Figure 7.",
+    "evidence": "The claim is supported by analysis shown in Figure 7.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C50",
-    "claim": "Overall, response characteristics at the single neuron and population levels remain stable during the reproductive cycle.",
+    "claim": "The few changes in response patterns that occur during the estrus cycle are not compatible with enhanced selectivity to reproductively relevant stimuli.",
     "claim_type": "EXPLICIT",
-    "source": "Then, comparing neuronal activity in estrus and non-estrus females, we found that overall, response characteristics at the single neuron and population levels remain stable during the reproductive cycle.",
+    "source": "In summary, response pattern distributions remain stable during the cycle, and the few changes that do occur are not compatible with enhanced selectivity to reproductively relevant stimuli.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is based on multiple analyses presented in Figures 4-7.",
+    "evidence": "The claim is supported by analysis shown in Figure 7.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C51",
-    "claim": "The few changes that occur during the reproductive cycle are not consistent with a systematic modulation of responses to male features.",
+    "claim": "Overall, response characteristics at the single neuron and population levels remain stable during the reproductive cycle.",
     "claim_type": "EXPLICIT",
-    "source": "The few changes that do occur are not consistent with a systematic modulation of responses to male features.",
+    "source": "Then, comparing neuronal activity in estrus and non-estrus females, we found that overall, response characteristics at the single neuron and population levels remain stable during the reproductive cycle.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is based on analyses shown in Figures 5-7.",
+    "evidence": "The claim is supported by multiple analyses shown in Figures 4-7.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C52",
+    "claim": "The few changes in AOB neuronal responses that occur during the estrus cycle are not consistent with a systematic modulation of responses to male features.",
+    "claim_type": "EXPLICIT",
+    "source": "The few changes that do occur are not consistent with a systematic modulation of responses to male features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by analyses shown in Figures 5-7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
     "claim": "The AOB presents a stable account of conspecific features to more advanced processing stages.",
     "claim_type": "EXPLICIT",
     "source": "Our findings imply that the AOB presents a stable account of conspecific features to more advanced processing stages.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is an inference based on the overall findings of the study showing stability of AOB representations across the estrus cycle.",
+    "evidence": "The claim is an inference based on the stability of AOB representations across the estrus cycle demonstrated in the results.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C53",
+    "claim_id": "C54",
     "claim": "The AOB conveys detailed information but does not 'interpret' it as a function of an organism's current state.",
     "claim_type": "EXPLICIT",
     "source": "Combined with analysis of responses in male and female subjects (Ben-Shaul et al., 2010; Bergan et al., 2014) and in males from different strains (Bansal et al., 2021), we propose that the AOB conveys detailed information but does not 'interpret' it as a function of an organism's current state.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is based on the current study's findings combined with citations to previous research (Ben-Shaul et al., 2010; Bergan et al., 2014; Bansal et al., 2021).",
+    "evidence": "The claim is supported by the current study's data and citations to previous studies (Ben-Shaul et al., 2010; Bergan et al., 2014; Bansal et al., 2021).",
     "evidence_type": [
       "DATA",
       "CITATION",
@@ -703,22 +717,22 @@
     ]
   },
   {
-    "claim_id": "C54",
+    "claim_id": "C55",
     "claim": "The AOB provides an unbiased account of a potential partner's features, leaving evaluation of the appropriate response to downstream processing stages.",
     "claim_type": "EXPLICIT",
     "source": "Thus, the AOB provides an unbiased account of a potential partner's features, leaving evaluation of the appropriate response to downstream processing stages.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is an inference based on the study's findings of stable AOB representations across estrus states.",
+    "evidence": "The claim is an inference based on the stability of AOB representations across different physiological states.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "Selectivity to castrated vs. intact males has been shown before in AOB neurons.",
+    "claim_id": "C56",
+    "claim": "Selectivity to castrated vs. intact males has been shown in previous AOB studies.",
     "claim_type": "EXPLICIT",
     "source": "Selectivity to castrated vs. intact males has also been shown before (Yoles-Frenkel et al., 2022), while selectivity to male dominance is consistent with chemical analyses (Tho\u00df et al., 2019) and immediate-early-gene expression profiles in the AOB (Veyrac et al., 2011).",
     "source_type": [
@@ -730,7 +744,7 @@
     ]
   },
   {
-    "claim_id": "C56",
+    "claim_id": "C57",
     "claim": "Selectivity to male dominance is consistent with chemical analyses and immediate-early-gene expression profiles in the AOB.",
     "claim_type": "EXPLICIT",
     "source": "Selectivity to castrated vs. intact males has also been shown before (Yoles-Frenkel et al., 2022), while selectivity to male dominance is consistent with chemical analyses (Tho\u00df et al., 2019) and immediate-early-gene expression profiles in the AOB (Veyrac et al., 2011).",
@@ -743,27 +757,14 @@
     ]
   },
   {
-    "claim_id": "C57",
-    "claim": "Optimal sampling by the VNS may involve selective sampling of rarely represented trait-related molecules and selective avoidance of common redundant molecules.",
-    "claim_type": "EXPLICIT",
-    "source": "Taking these considerations into account, we speculate that optimal sampling by the VNS (reflecting both VNS tuning properties and AOB-MCs connectivity) involves selective sampling of rarely represented trait-related molecules and selective avoidance of common redundant molecules.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is explicitly stated as speculation based on theoretical considerations.",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
     "claim_id": "C58",
-    "claim": "Such an organization may optimize information retrieval with limited resources and can account for the observation that most patterns are not overrepresented.",
+    "claim": "The overrepresentation of castrated stimuli may be because castration gives rise to sweeping changes in molecular composition.",
     "claim_type": "EXPLICIT",
-    "source": "Such an organization may optimize information retrieval with limited resources and can account for our observation that most patterns, which we assume correspond to meaningful traits, are not overrepresented.",
+    "source": "Namely, if castration gives rise to sweeping changes in molecular composition, then the (hypothetical) evolutionary process of under-sampling could not happen.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is a speculative explanation for the observed data.",
+    "evidence": "The claim is speculative reasoning to explain the observed overrepresentation of castrated response patterns.",
     "evidence_type": [
       "SPECULATION",
       "INFERENCE"
@@ -771,6 +772,237 @@
   },
   {
     "claim_id": "C59",
+    "claim": "The scarcity of dominant patterns may represent an optimal allocation of resources to separate dominant from naive males.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, we proposed that this scarcity may represent an optimal allocation of resources to separate dominant from naive males.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is speculative reasoning to explain the observed pattern frequencies.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Dominance is not associated with extensive chemical changes, unlike castration.",
+    "claim_type": "EXPLICIT",
+    "source": "Note also that population activity levels elicited by dominant and naive stimuli are similar (see Figure 2B), suggesting that unlike castration, dominance is not associated with extensive chemical changes.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is an inference based on the similarity of population activity levels shown in Figure 2B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Evaluation of male state might be done in the context of that male's strain.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of strain-adjusted dominant patterns is not negligible (Figure 3D), implying that evaluation of male state might be done in the context of that male's strain.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is an inference based on the frequency of strain-adjusted patterns shown in Figure 3D.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The anesthetized preparation ensures that stimulus uptake is consistent under both estrus states.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, in awake mice, there is no simple way to monitor the dynamics of stimulus uptake, which may vary with state, and thus confound state-dependent neuronal responses with state-dependent sampling. The anesthetized preparation ensures that stimulus uptake is consistent under both states and allows repeated delivery of multiple stimuli, regardless of the subject's engagement or motivation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on the methodological approach used in the study.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "MOS activation using the anesthetized preparation is likely minimal.",
+    "claim_type": "EXPLICIT",
+    "source": "In this context, we note that MOS activation using our preparation is likely minimal, thereby reducing its influence on sampling behavior, or via more direct forms of cross talk between the two systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is an inference based on the experimental preparation used.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Estrus stage was determined using vaginal lavage and cytological composition of the smear.",
+    "claim_type": "EXPLICIT",
+    "source": "Female estrus stage was determined using a vaginal lavage of 15 \u00b5l of saline. The saline sample was then deposited on a Superfrost Plus slide (Thermo Scientific) and dried. Slides were treated with Wright Stain Solution (Sigma) and photographed under a light microscope. The estrus stage was determined using the cytological composition of the smear, as described in Byers et al., 2012; Caligioni, 2009.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim describes the experimental method used, supported by citations to established protocols (Byers et al., 2012; Caligioni, 2009).",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Dominant male mice consistently showed aggressive behaviors in their home cages.",
+    "claim_type": "EXPLICIT",
+    "source": "We also confirmed that the established hierarchy was maintained throughout the entire period of urine collection, over the course of ~4 weeks, by monitoring the behavior of these mice in their home cages. Dominant male mice consistently showed aggressive behaviors, whereas non-dominant mice engaged in self-grooming behaviors more frequently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on behavioral observations during the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Non-dominant mice engaged in self-grooming behaviors more frequently than dominant mice.",
+    "claim_type": "EXPLICIT",
+    "source": "Dominant male mice consistently showed aggressive behaviors, whereas non-dominant mice engaged in self-grooming behaviors more frequently.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on behavioral observations during the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Each stimulus sample comprised urine from three different individuals, diluted 1:10 in Ringer's solution.",
+    "claim_type": "EXPLICIT",
+    "source": "Each of the samples presented here comprised urine from three different individuals, diluted 1:10 in Ringer's solution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim describes the stimulus preparation method used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Typically, each stimulus was presented at least four times, and typically five times within each session.",
+    "claim_type": "EXPLICIT",
+    "source": "Typically, each stimulus was presented repeatedly in a pseudorandom order, at least four times, and typically five times within each session across all sessions (number of repeated presentations per stimulus: 5.1\u00b10.9, mean \u00b1 sd. In 72% of the cases, stimuli were given five or more times. Otherwise, they were presented four times).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim describes the experimental protocol used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "A cluster was defined as a single unit if it displayed a distinct spike shape, was fully separable from both the origin (noise) and other clusters, and if its autocorrelation function demonstrated a clear trough around time 0 of at least 10 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "A cluster was defined as a single unit if it displayed a distinct spike shape, was fully separable from both the origin (noise) and other clusters, and if its autocorrelation function demonstrated a clear trough around time 0 of at least 10 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim describes the criteria used for single-unit classification in the study.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Response significance was determined by comparing spiking rate distribution following all repeats to the baseline firing frequency distribution using a nonparametric analysis of variance (Kruskal-Wallis test) with a threshold of 0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "Response significance (of a particular unit to a given stimulus) was determined by a nonparametric analysis of variance (Kruskal-Wallis test) comparing the set of poststimulation rates to the set of preceding baseline rates (preceding rates were pooled across all stimuli), using a threshold of 0.05.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim describes the statistical method used for determining response significance.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "78% of neurons (433 of 557 total patterns) do not conform to any of the defined response patterns.",
+    "claim_type": "EXPLICIT",
+    "source": "The image shows that most neurons do not conform to any of the response patterns (78%, 433 of 557 total patterns; note that the number of patterns exceeds the number of neurons since a given neuron may conform to more than one pattern).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is based on analysis of response patterns shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The number of patterns exceeds the number of neurons since a given neuron may conform to more than one pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "The image shows that most neurons do not conform to any of the response patterns (78%, 433 of 557 total patterns; note that the number of patterns exceeds the number of neurons since a given neuron may conform to more than one pattern).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim explains the relationship between neurons and patterns in the analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Pattern frequency is determined by the fraction of molecules (or their combinations) that are common to stimuli that share some feature and the degree to which AOB-MCs sample these shared molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "Generally, pattern frequency is determined by the fraction of molecules (or their combinations) that are common to stimuli that share some feature and the degree to which AOB-MCs sample these shared molecules (or their combinations).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is a theoretical explanation for observed pattern frequencies.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Optimal sampling by the VNS may involve selective sampling of rarely represented trait-related molecules and selective avoidance of common redundant molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "Taking these considerations into account, we speculate that optimal sampling by the VNS (reflecting both VNS tuning properties and AOB-MCs connectivity) involves selective sampling of rarely represented trait-related molecules and selective avoidance of common redundant molecules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is speculative reasoning about VNS sampling properties.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Such an organization may optimize information retrieval with limited resources.",
+    "claim_type": "EXPLICIT",
+    "source": "Such an organization may optimize information retrieval with limited resources and can account for our observation that most patterns, which we assume correspond to meaningful traits, are not overrepresented.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is speculative reasoning about the functional significance of the observed pattern frequencies.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
     "claim": "Only a small number of urinary molecules are unique to all males or females from different strains.",
     "claim_type": "EXPLICIT",
     "source": "While recent analyses indicate that only a small number of urinary molecules are unique to all males or females from different strains (Nagel et al., 2024), our pattern types do not depend on unique, but rather on increased or decreased concentrations associated with specific traits.",
@@ -783,270 +1015,30 @@
     ]
   },
   {
-    "claim_id": "C60",
+    "claim_id": "C77",
     "claim": "VSN selectivity for both sex and strain is less prominent than expected based on urinary contents.",
     "claim_type": "EXPLICIT",
     "source": "Notably, analysis of chemical levels indicates that VSN selectivity for both sex and strain is less prominent than expected based on urinary contents (Nagel et al., 2024).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is supported by a citation to published research (Nagel et al., 2024).",
+    "evidence": "The claim is supported by a citation to recent research (Nagel et al., 2024).",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C61",
+    "claim_id": "C78",
     "claim": "VNS encoding acts to reduce the redundancy present in molecular levels.",
     "claim_type": "EXPLICIT",
     "source": "This supports our ideas that VNS encoding acts to reduce the redundancy present in molecular levels.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The claim is an inference based on cited research (Nagel et al., 2024) and the authors' theoretical framework.",
+    "evidence": "The claim is an inference based on the cited research and the current study's findings.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C62",
-    "claim": "Castration gives rise to sweeping changes in molecular composition.",
-    "claim_type": "IMPLICIT",
-    "source": "Namely, if castration gives rise to sweeping changes in molecular composition, then the (hypothetical) evolutionary process of under-sampling could not happen.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is presented as a speculative explanation for the overrepresentation of castrated stimuli patterns.",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C63",
-    "claim": "Dominant stimuli are generally stronger than naive stimuli in eliciting AOB responses.",
-    "claim_type": "EXPLICIT",
-    "source": "We note that this is not because dominant stimuli are less potent than naive stimuli; they are generally stronger (see Figure 2D and E).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "The claim is supported by data shown in Figures 2D and 2E.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C64",
-    "claim": "Population activity levels elicited by dominant and naive stimuli are similar.",
-    "claim_type": "EXPLICIT",
-    "source": "Note also that population activity levels elicited by dominant and naive stimuli are similar (see Figure 2B), suggesting that unlike castration, dominance is not associated with extensive chemical changes.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "The claim is supported by data shown in Figure 2B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C65",
-    "claim": "Unlike castration, dominance is not associated with extensive chemical changes.",
-    "claim_type": "EXPLICIT",
-    "source": "Note also that population activity levels elicited by dominant and naive stimuli are similar (see Figure 2B), suggesting that unlike castration, dominance is not associated with extensive chemical changes.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is an inference based on the similarity of population activity levels shown in Figure 2B.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C66",
-    "claim": "Evaluation of male state might be done in the context of that male's strain.",
-    "claim_type": "EXPLICIT",
-    "source": "The number of strain-adjusted dominant patterns is not negligible (Figure 3D), implying that evaluation of male state might be done in the context of that male's strain.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "The claim is an inference based on the frequency of strain-adjusted dominant patterns shown in Figure 3D.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C67",
-    "claim": "The anesthetized preparation ensures that stimulus uptake is consistent under both states and allows repeated delivery of multiple stimuli.",
-    "claim_type": "EXPLICIT",
-    "source": "On the other hand, in awake mice, there is no simple way to monitor the dynamics of stimulus uptake, which may vary with state, and thus confound state-dependent neuronal responses with state-dependent sampling. The anesthetized preparation ensures that stimulus uptake is consistent under both states and allows repeated delivery of multiple stimuli, regardless of the subject's engagement or motivation.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is based on methodological considerations and knowledge of experimental approaches.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C68",
-    "claim": "MOS activation using the anesthetized preparation is likely minimal.",
-    "claim_type": "EXPLICIT",
-    "source": "In this context, we note that MOS activation using our preparation is likely minimal, thereby reducing its influence on sampling behavior, or via more direct forms of cross talk between the two systems.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is an inference based on the experimental preparation.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C69",
-    "claim": "Each of the urine samples presented comprised urine from three different individuals, diluted 1:10 in Ringer's solution.",
-    "claim_type": "EXPLICIT",
-    "source": "Each of the samples presented here comprised urine from three different individuals, diluted 1:10 in Ringer's solution.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes the experimental methods used in the study.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C70",
-    "claim": "During each session, each stimulus was presented at least four times.",
-    "claim_type": "EXPLICIT",
-    "source": "During each session, we repeatedly present one of several stimuli in a pseudorandom order, with each stimulus presented at least four times (see Materials and methods for details).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes the experimental protocol.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C71",
-    "claim": "Response magnitudes were quantified as the baseline-subtracted average firing rate, within a temporal window starting at stimulus application and ending 40 s after electrical stimulation of the sympathetic nerve trunk.",
-    "claim_type": "EXPLICIT",
-    "source": "Response magnitudes were quantified as the baseline-subtracted average firing rate, within a temporal window starting at stimulus application and ending 40 s after electrical stimulation of the sympathetic nerve trunk.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes the data analysis method.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "The multidimensional scaling representation in Figure 2B represents about 60% of the actual distances.",
-    "claim_type": "EXPLICIT",
-    "source": "Note that like all dimensionally reduced representations, this is an approximation. Here, it represents about 60% of the actual distances (the mean absolute error between the actual distances and the approximated distances is 0.29, whereas the mean of the original distances is 0.73).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim provides a quantitative assessment of the dimensionality reduction shown in Figure 2B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C73",
-    "claim": "Responses to castrated urine are distinct from male- or female-induced responses.",
-    "claim_type": "EXPLICIT",
-    "source": "Responses to castrated urine are distinct from male- or female-induced responses.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is based on the multidimensional scaling analysis shown in Figure 2B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "ICR and BC castrated urine are closer to each other than to C57 urine in terms of response patterns.",
-    "claim_type": "EXPLICIT",
-    "source": "Yet, here too, ICR and BC castrated urine are closer to each other than to C57 urine.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim is based on the multidimensional scaling analysis shown in Figure 2B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C75",
-    "claim": "Castrated male mice had their testes removed under isoflurane anesthesia at the age of 4 weeks (before puberty).",
-    "claim_type": "EXPLICIT",
-    "source": "Castrated male urine was collected from 8-week-old males that had their testes removed under isoflurane anesthesia at the age of 4 weeks (before puberty).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes the experimental methods for preparing castrated male donors.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C76",
-    "claim": "Proven breeder mice consistently showed aggressive behaviors, whereas non-dominant mice engaged in self-grooming behaviors more frequently.",
-    "claim_type": "EXPLICIT",
-    "source": "Dominant male mice consistently showed aggressive behaviors, whereas non-dominant mice engaged in self-grooming behaviors more frequently.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes behavioral observations used to confirm dominance status.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C77",
-    "claim": "The estrus stage was determined using the cytological composition of vaginal smears.",
-    "claim_type": "EXPLICIT",
-    "source": "The estrus stage was determined using the cytological composition of the smear, as described in Byers et al., 2012; Caligioni, 2009.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes the method used to determine estrus stage, supported by citations (Byers et al., 2012; Caligioni, 2009).",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C78",
-    "claim": "A cluster was defined as a single unit if it displayed a distinct spike shape, was fully separable from both the origin (noise) and other clusters, and if its autocorrelation function demonstrated a clear trough around time 0 of at least 10 ms.",
-    "claim_type": "EXPLICIT",
-    "source": "A cluster was defined as a single unit if it displayed a distinct spike shape, was fully separable from both the origin (noise) and other clusters, and if its autocorrelation function demonstrated a clear trough around time 0 of at least 10 ms.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes the criteria used for single-unit classification.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C79",
-    "claim": "Response significance of a given unit to a given stimulus was determined by comparing its spiking rate distribution following all repeats to the baseline firing frequency distribution using a nonparametric analysis of variance (Kruskal-Wallis test) with a threshold of 0.05.",
-    "claim_type": "EXPLICIT",
-    "source": "Response significance (of a particular unit to a given stimulus) was determined by a nonparametric analysis of variance (Kruskal-Wallis test) comparing the set of poststimulation rates to the set of preceding baseline rates (preceding rates were pooled across all stimuli), using a threshold of 0.05.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The claim describes the statistical method used to determine response significance.",
-    "evidence_type": [
-      "DATA"
     ]
   }
 ]

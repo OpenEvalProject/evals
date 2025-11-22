@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C16"
+    ],
+    "result": "The authors demonstrate that low-dimensionality positional embeddings (as small as 1 byte) derived from protein language models can be used directly in speed-optimized local search algorithms, providing dramatically improved sensitivity over amino acid sequence searches without sacrificing speed. They show that ESM-2 3B can convert sequences into 3Di alphabet or amino acid profiles, and that profile HMMs and 3Di sequences represent low-dimensional embeddings suitable for remote homology detection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly affirm this core finding. The first reviewer states the approach is 'convincing' and shows the tool is 'fast and accurate for remote homology detection.' The second reviewer confirms 'the benchmarking of the new approach is convincing' and notes it 'is also fast because it does not require the computation of multiple sequence alignments for profile calculation or structure prediction,' directly supporting the speed and sensitivity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors show that ESM-2 was pretrained on masked language modeling and therefore requires no additional fine-tuning to produce probabilities compatible with profile HMM tools. They demonstrate that positional amino acid frequencies predicted by ESM-2 3B resemble those found in MSAs built from sequence searches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this methodological approach without critique. The second reviewer explicitly notes 'high-dimensional, information-rich representations extracted from the ESM2 model can be efficiently combined with the aforementioned tools,' implicitly accepting the compatibility claim. No concerns are raised about the ESM-2 pretraining or its direct use for generating profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors trained a two-layer CNN to convert ESM-2 3B embeddings into 3Di sequences, achieving 64% accuracy on test data. The model (ESM-2 3B 3Di) was trained on the Foldseek AlphaFold2 UniProt50 dataset with specific architectural and training parameters detailed in the methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this methodological development without objection. The second reviewer explicitly states 'the main strength and novelty of the proposed approach lies in the idea of combining state-of-the-art sequence-based (HHpred and HMMER) and structure-based (Foldseek) homology detection methods with protein language models (the ESM2 model was used),' affirming the technical approach including the CNN training.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C50"
+    ],
+    "result": "On the Pfam benchmark, methods using predicted profiles and predicted 3Di sequences showed greater accuracy than phmmer across all identity bins and hmmscan below 20% identity. Foldseek searches with ESM-2 3B 3Di-generated sequences performed best overall, and even 1-byte 3Di-only embeddings outperformed traditional sequence methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers explicitly affirm these benchmark results. The first reviewer states 'the benchmarks provided show that the proposed tool is fast and accurate for remote homology detection.' The second reviewer confirms 'the benchmarking of the new approach is convincing and shows that it is suitable for homology detection at very low sequence similarity,' directly supporting the accuracy claims across different identity ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "On the SCOPe40 benchmark, Foldseek-based methods performed similarly at all three homology levels (family, superfamily, fold), all outperforming pLM-BLAST and far outperforming pHMMER. AlphaFold2-predicted structures provided the best average sensitivity at the superfamily level. 3Di sequences from different methods showed cross-compatibility with some sensitivity degradation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these comparative benchmark results without challenge. The first reviewer describes the study as 'important' and the approach as 'convincing,' while the second reviewer states the benchmarking is 'convincing' and demonstrates suitability 'for homology detection at very low sequence similarity,' implicitly accepting the comparative performance claims on SCOPe40.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48"
+    ],
+    "result": "Timing comparisons show AlphaFold2 structure prediction was the slowest data preparation method (nearly 2 weeks), while ProstT5 was fastest (6 minutes). Foldseek-based methods were fastest for search time. ESM-2 3B 3Di coupled to Foldseek enabled faster and more sensitive search than pLM-BLAST, and was slower but had similar sensitivity to ProstT5.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers explicitly affirm the speed advantages. The first reviewer states the tool is 'fast and accurate,' while the second reviewer emphasizes 'the method is also fast because it does not require the computation of multiple sequence alignments for profile calculation or structure prediction,' directly supporting the timing claims and comparative speed assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Various profile-based approaches showed mixed results: HMMER3 profiles from predicted 3Di sequences performed worse than Foldseek searches; hmmsearch using profiles built directly from pLM probabilities had the lowest accuracy; but profiles processed with hmmbuild applying Dirichlet priors showed improved accuracy over phmmer except at the highest identity bin.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge these detailed methodological comparisons. The second reviewer's statement that 'the benchmarking of the new approach is convincing' encompasses acceptance of these comparative results showing which profile-based approaches worked better or worse, as these are part of the overall benchmarking strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The authors demonstrate that 3Di sequences predicted by ESM-2 3B 3Di or ProstT5 are compatible with Foldseek searches against experimental or AlphaFold2-generated structures, enabling a practical workflow for rapid annotation of newly sequenced genomes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept this practical application without objection. The first reviewer notes the paper is 'of general interest to all researchers working in the fields of protein evolution and genome annotation,' implicitly accepting the practical utility claims. The second reviewer describes the method as 'useful,' supporting the workflow compatibility claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors provide background context on limitations of existing methods: sequence-based methods struggle below 20% identity, profile and structure-based methods have high computational overhead, and large positional embeddings from protein language models are space inefficient and slow.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers implicitly accept this background framing by not challenging it and by affirming the novelty of the solution. The first reviewer describes the study as addressing 'the problem of detecting weak similarity between protein sequences,' accepting the problem statement. The second reviewer notes these methods 'are essential for the annotation of uncharacterized proteins,' accepting the motivation without questioning the characterization of existing limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The authors note that the 3Di alphabet was originally developed to model tertiary interactions rather than maximize remote homology search sensitivity, and suggest future work could learn small positional embeddings directly from differentiable alignment algorithms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge these discussion points. The second reviewer describes the paper as proposing 'an alternative direction for the problem of distant homology detection,' which aligns with accepting both the current limitations of 3Di and the potential for future improvements through alternative approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors provide detailed methodological descriptions of benchmark datasets (Pfam, SCOPe40), data splitting procedures, hyperparameter choices, and technical details about how different tools work (Foldseek, pHMMER, etc.).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these methodological details without critique. The second reviewer explicitly states 'the benchmarking of the new approach is convincing,' which requires acceptance of the benchmark design, dataset choices, and methodological procedures described. No concerns are raised about the experimental setup or technical implementation details.",
+    "result_type": "MINOR"
+  }
+]

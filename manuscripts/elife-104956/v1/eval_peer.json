@@ -1,0 +1,149 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C62"
+    ],
+    "result": "The authors claim that IDRs significantly enhance binding affinity of transcription factors to DNA through an energy-entropy trade-off mechanism. The binding probability increases dramatically for TFs with IDRs across a broad parameter regime, with this enhancement being a direct consequence of the energy-entropy balance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this finding. The editor states the paper 'presents compelling evidence' for IDR enhancement of binding. Reviewer 1 acknowledges the theoretical derivations are 'rigorous' and highlights the energy-entropy trade-off principles. Reviewer 3 describes the mechanism as 'elegant' and notes the paper is 'well-executed,' with no concerns raised about the binding affinity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C72",
+      "C73",
+      "C77",
+      "C78",
+      "C79",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose an 'octopusing' mechanism where TFs perform optimal search via a single round of 3D diffusion followed by 1D diffusion along the DNA antenna. During 1D diffusion, IDR binding sites behave like tentacles, constantly binding and unbinding, which bypasses the speed-stability paradox by achieving high diffusion with low detachment rates through compensatory feedback dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly support the octopusing mechanism. The editor calls it 'important theoretical exploration' and states the authors 'propose a mechanism' that is compelling. Reviewer 1 describes it as an 'original search process' that is a 'fundamental contribution.' Reviewer 3 specifically praises the octopusing mechanism as 'an elegant resolution of the puzzle' of how stability and 1D diffusion can be accommodated simultaneously, calling it 'interesting' with 'interesting biological implications.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C42",
+      "C43",
+      "C44",
+      "C108",
+      "C109"
+    ],
+    "result": "The model shows good agreement with experimental data from Brodsky et al. 2020, which demonstrated that shortening IDR length results in weaker binding affinity. The authors' analytical expressions for search time and binding probability match these experimental observations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm the experimental validation. The editor states the paper 'concludes with a comparison of model predictions with experimental data which gives further support to the proposed model.' Reviewer 1 notes 'the authors provide a comparison to experiments' as a strength. Reviewer 3 similarly states 'the paper concludes with a comparison of model predictions with experimental data which gives further support to the proposed mechanism,' with no concerns raised about the quality of this comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C115",
+      "C131",
+      "C132"
+    ],
+    "result": "The model assumes IDRs recognize a relatively short flanking DNA sequence (the 'antenna' region) near the DBD target, with specific multivalent interactions mediated by hydrophobic residues. The antenna is modeled as a straight line with equally spaced targets, and interactions outside this region are assumed negligible.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 explicitly raises concern about this assumption, stating 'It is not clear how ubiquitous among eukaryotic transcription factors are the DNA binding sites for multiple subdomains along the IDR, which are assumed by the model.' This indicates uncertainty about whether the model's key structural assumptions reflect biological reality. While the authors verify robustness to some variations (C133), the fundamental assumption about IDR-DNA binding site architecture remains questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C66",
+      "C99",
+      "C100",
+      "C102",
+      "C133",
+      "C136"
+    ],
+    "result": "The authors demonstrate that their design principles and search time predictions are robust across various parameter variations, including Poisson-distributed binding sites, different DNA coiling conditions, complex DNA configurations, and different threshold values for rigid body treatment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly praises the 'rigorous' theoretical derivations and notes the work provides 'simple, interpretable and testable theoretical conclusions.' The robustness analyses are presented as supporting evidence throughout the appendices, and no reviewer challenges these robustness claims. The validation across multiple scenarios strengthens confidence in the model's general applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors claim their model differs profoundly from conventional facilitated diffusion in bacteria, as the eukaryotic mechanism requires only a single round of 3D-1D search rather than numerous binding-unbinding rounds, and that facilitated diffusion cannot explain fast search times in eukaryotes due to structural differences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers implicitly accept this distinction. The editor and Reviewer 3 both emphasize that the work addresses 'intrinsically disordered domains in transcription factor (TF) proteins' specifically in the eukaryotic context. Reviewer 1 describes the mechanism as 'original' without questioning the distinction from bacterial systems. The reviewers' focus on the novelty of the octopusing mechanism for eukaryotes indicates acceptance of the claim that a qualitatively different mechanism is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C116",
+      "C117",
+      "C119",
+      "C121",
+      "C113"
+    ],
+    "result": "The authors claim their simplified model provides general design principles and testable predictions for future experiments, including DNA scrambling experiments, time-dependent binding probability measurements, and direct measurement of on/off rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly praises this aspect as a major strength: 'The authors provide a comparison to experiments, and also propose new experiments to be performed in the future. This is a great value in the paper since it will set the stage and inspire new experimental techniques.' The reviewer emphasizes this is 'required to benchmark the transcription factors designed with the methods presented in this paper.' Reviewer 3 also notes the assumptions 'provide interesting points of departure for further experiments.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors acknowledge that beyond octopusing, other mechanisms may contribute to TF search and binding, including complex formation/cooperativity between TFs, phase separation directing TFs to specific compartments, and that their findings represent one component of a broader regulatory framework.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly identifies this as a weakness: 'The model presents many first principles to drive the design of transcription factors, but arguably, other principles and mechanisms might also play a role... an important task left to do, is to critically consider these principles altogether, and analyse the available data to quantify which role is predominant among transcription factors IDRs functions. Further, since one function doesn't exclude another, a theoretical investigation of possible crosstalk, interaction, and cooperativity of those different hypothetical functions is still missing.' This indicates the relative contribution of octopusing versus other mechanisms remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors suggest their design principles, grounded in fundamental physical concepts like energy-entropy trade-off, are likely robust across diverse molecular systems and applicable to other biophysical contexts such as RNA polymerase binding and multivalent antibody binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 affirms the fundamental nature of the work, stating 'this paper is a fundamental contribution to the field' and praising the 'simple, interpretable and testable theoretical conclusions.' The grounding in first principles (energy-entropy trade-off) is not questioned by any reviewer. While these are forward-looking claims, the reviewers' emphasis on the work's fundamental theoretical contributions and general applicability supports these broader implications.",
+    "result_type": "MINOR"
+  }
+]

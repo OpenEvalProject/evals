@@ -2,10 +2,8 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C8",
-      "C41",
-      "C42",
-      "C43",
+      "C9",
+      "C12",
       "C44",
       "C45",
       "C46",
@@ -14,212 +12,352 @@
       "C49",
       "C50",
       "C51",
-      "C52"
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
     ],
-    "result": "Rapamycin activates TRPM8 in HEK293 cells expressing human TRPM8, with EC50 values of 3.8\u00b12.0 \u00b5M (calcium imaging) and 4.5\u00b11.8 \u00b5M (patch-clamp), and responses are fully inhibited by the TRPM8 antagonist AMTB.",
+    "result": "Rapamycin activates TRPM8 in both heterologous expression systems and native sensory neurons. In HEK293 cells stably expressing human TRPM8, rapamycin (10 \u00b5M) evoked robust calcium responses comparable to menthol (50 \u00b5M), with EC50 values of 3.8-10.1 \u00b5M depending on temperature and assay method. In sensory neurons from wild-type mice, ~10% of DRG/TG neurons responded to rapamycin, with 95% of these also responding to menthol, while responses were largely eliminated in Trpm8-/- neurons.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Multiple independent experimental approaches (calcium imaging, plate-based assays, and patch-clamp electrophysiology) consistently demonstrate rapamycin activation of TRPM8 with similar EC50 values (C41-C51). The specificity is confirmed by AMTB inhibition (C43, C50) and absence of response in non-transfected cells (C52). The data are internally consistent and provide strong convergent evidence.",
+    "evaluation": "Claims C44-C59 provide convergent evidence from multiple experimental approaches (calcium imaging, patch-clamp electrophysiology, genetic knockout) demonstrating that rapamycin activates TRPM8. The dose-response relationships are well-characterized with consistent EC50 values across methods, and the genetic knockout controls (C58-C59) definitively establish TRPM8 as the mediator of rapamycin responses in sensory neurons.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C53",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C67"
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C115",
+      "C116"
     ],
-    "result": "Rapamycin selectively activates TRPM8-positive sensory neurons (~10% of DRG/TG neurons), with responses eliminated in Trpm8-/- mice, demonstrating greater selectivity than menthol which also activates TRPA1-positive neurons.",
+    "result": "Rapamycin acts directly on TRPM8 through a membrane-delimited mechanism independent of mTOR signaling. The rapid onset/reversibility of effects, activation in inside-out patches, and requirement for low micromolar (vs. nanomolar for mTOR inhibition) concentrations indicate direct channel binding rather than mTOR-mediated signaling.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The genetic knockout experiment (C58) provides definitive evidence that TRPM8 mediates rapamycin responses in sensory neurons. The pharmacological characterization with AMTB (C63-C64) and comparison with TRPA1 agonists (C62) supports the selectivity claims. The percentage of responsive neurons (~10%, C56) aligns with known TRPM8 expression patterns (C54).",
+    "evaluation": "Claims C68-C71 and C115-C116 provide strong evidence for direct action through inside-out patch experiments (C70) showing membrane-delimited activation, combined with kinetic arguments (C68) and concentration comparisons with known mTOR inhibition (C69). The convergence of these independent lines of evidence strongly supports direct binding over indirect signaling mechanisms.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C68",
-      "C69",
-      "C70",
-      "C71"
+      "C72",
+      "C73",
+      "C117"
     ],
-    "result": "Rapamycin acts on TRPM8 in a membrane-delimited manner independent of mTOR signaling, as evidenced by rapid onset/reversibility, micromolar (vs nanomolar) concentrations required, and activation in excised inside-out patches.",
+    "result": "STTD-NMR spectroscopy demonstrates direct molecular interaction between rapamycin and TRPM8 and identifies specific hydrogen atoms on rapamycin involved in binding. The novel STTD methodology eliminates non-specific binding signals by subtracting contributions from control cells lacking TRPM8.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The inside-out patch experiment (C70) provides strong evidence for membrane-delimited action, excluding indirect signaling mechanisms. The concentration difference between TRPM8 activation (\u00b5M) and mTOR inhibition (nM) (C69) and rapid kinetics (C68) further support direct action. These multiple lines of evidence converge on the same conclusion.",
+    "evaluation": "Claims C72-C73 describe a methodologically sound NMR approach with appropriate controls (samples with/without TRPM8, with/without rapamycin) to isolate specific binding interactions. The identification of binding epitopes (C73) is supported by the triple-difference spectroscopy data shown in Figure 2, though only 2 of 3 replicates showed clear signals, indicating some technical variability.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C11",
-      "C72",
-      "C73"
+      "C13",
+      "C14",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C119",
+      "C131"
     ],
-    "result": "STTD-NMR spectroscopy demonstrates direct molecular interaction between rapamycin and TRPM8, identifying specific hydrogen atoms on rapamycin involved in the binding interaction.",
+    "result": "Rapamycin binds to a novel site in the groove between the voltage sensor-like domain and pore domain of TRPM8, distinct from menthol and icilin binding sites. Site-directed mutagenesis identified four key residues (D796A, D802A, G805A, Q861A) that significantly reduce rapamycin sensitivity while preserving menthol responses, and molecular docking models align with NMR binding epitope data.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The novel STTD-NMR methodology (C72) provides direct biophysical evidence of rapamycin-TRPM8 interaction by eliminating non-specific binding signals. The identification of specific interacting moieties (C73) adds molecular detail. However, the method is new and only two of three replicates showed clear signals, introducing some uncertainty about robustness.",
+    "evaluation": "Claims C84-C86 provide strong mutagenesis evidence showing selective disruption of rapamycin (but not menthol) responses, supporting a distinct binding site. The molecular docking (C87-C89) is consistent with both mutagenesis and NMR data (C89), providing convergent structural evidence. However, the authors acknowledge (C119) that allosteric effects cannot be fully excluded for some mutations.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C12",
-      "C13",
+      "C79",
       "C80",
       "C81",
       "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C117"
+      "C83"
     ],
-    "result": "Rapamycin binds in a groove between the voltage sensor-like domain and pore domain of TRPM8, distinct from menthol/icilin binding sites, as demonstrated by mutagenesis showing mutations (D796A, D802A, G805A, Q861A) that reduce rapamycin but not menthol sensitivity.",
+    "result": "Rapamycin acts as a Type I agonist of TRPM8, causing concentration-dependent slowing of voltage-dependent activation and deactivation kinetics more pronounced than menthol. Rapamycin and menthol show synergistic effects on channel gating when applied together.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The mutagenesis data (C80-C82) provide strong functional evidence for a distinct binding site, with mutations selectively affecting rapamycin responses while preserving menthol responses. The molecular docking (C83-C85) is consistent with mutagenesis and NMR data. However, the docking relies on homology models and lacks direct structural validation (e.g., co-crystal structure).",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C79-C80 are supported by detailed kinetic analysis in Figure 2\u2014figure supplement 3, showing quantitative effects on activation/deactivation time constants. The classification as Type I agonist (C81) follows logically from the kinetic data and established classification schemes (C75-C78). The synergy observation (C82-C83) is supported by Figure 2\u2014figure supplement 4, consistent with distinct binding sites.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79"
-    ],
-    "result": "Rapamycin acts as a Type I agonist of TRPM8, causing concentration-dependent slowing of voltage-dependent activation and deactivation kinetics, with effects more pronounced than menthol and synergistic when combined with menthol.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "The electrophysiological characterization (C74-C76) clearly demonstrates Type I agonist behavior with slowed kinetics and long-lasting tail currents. The synergy with menthol (C78-C79) is consistent with distinct binding sites. The classification as Type I is based on established criteria from prior work (C77), making the interpretation sound.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C86",
-      "C87",
-      "C88",
-      "C89"
-    ],
-    "result": "Rapamycin activation of TRPM8 is not calcium-dependent, as demonstrated by UV flash photolysis experiments showing no potentiation by intracellular calcium, unlike icilin which is strongly potentiated by calcium.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "The UV flash photolysis experiments provide direct evidence that calcium does not potentiate rapamycin responses (C88), distinguishing it from icilin. This clarifies that the D802A mutation's effect on rapamycin sensitivity is unrelated to calcium binding (C89), which is important for understanding the binding mechanism.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C14",
-      "C15",
       "C90",
       "C91",
       "C92",
       "C93",
       "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C99"
+      "C95"
     ],
-    "result": "Related macrolide immunosuppressants show reduced TRPM8 activation compared to rapamycin (efficacy order: rapamycin >> zotarolimus > ridaforolimus > everolimus > temsirolimus), with the hydroxyl group at position 40 on the cyclohexane ring being critical for activity.",
+    "result": "Rapamycin activation of TRPM8 is not calcium-dependent, unlike icilin which is potentiated by cytosolic calcium. Flash photolysis experiments show that calcium uncaging potentiates icilin but not rapamycin responses, indicating the reduced sensitivity of D802A mutant is unrelated to calcium binding.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The systematic structure-activity relationship study (C90-C95) clearly demonstrates the importance of the hydroxyl group at position 40. The synthesized 2-methoxy-CHol fragment alone is inactive (C98-C99), confirming it is necessary but insufficient. The data are internally consistent and support the structural conclusions (C96-C97).",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C92-C93 present clear experimental evidence from calcium uncaging experiments (Figure 5) showing differential calcium dependence of icilin vs. rapamycin. The inference that D802A's reduced rapamycin sensitivity is unrelated to calcium binding (C94-C95) is well-supported, helping distinguish direct binding effects from calcium-mediated mechanisms.",
+    "result_type": "MINOR"
   },
   {
-    "result_id": "R9",
+    "result_id": "R7",
     "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
       "C100",
       "C101",
       "C102",
       "C103",
       "C104",
-      "C105"
+      "C105",
+      "C106",
+      "C107"
     ],
-    "result": "Everolimus acts as a competitive antagonist of rapamycin at TRPM8, inhibiting rapamycin responses but not menthol responses, consistent with molecular docking showing everolimus binds the same site but cannot form a critical hydrogen bond with Q861.",
+    "result": "The trans-2-methoxycyclohexan-1-ol moiety of rapamycin, particularly the hydroxyl group at position 40, is critical for TRPM8 activation. Rapalogs with substitutions at this position (everolimus, zotarolimus, ridaforolimus, temsirolimus) show <10% efficacy compared to rapamycin, while the isolated 2-methoxy-CHol moiety is insufficient for activation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The competition experiment (C102-C103) provides functional evidence that everolimus competes with rapamycin but not menthol, supporting distinct binding sites. The molecular docking (C100-C101) offers a structural explanation for reduced efficacy. However, the docking predictions lack experimental validation beyond the competition assay.",
+    "evaluation": "Claims C98-C107 provide systematic structure-activity relationship data (Figure 6) showing that modifications to the cyclohexanol moiety dramatically reduce activity, while the isolated moiety lacks activity. The molecular docking (C97) predicts a hydrogen bond with Q861 that would be disrupted by substitutions, consistent with experimental observations. The convergence of SAR data, mutagenesis, and modeling strongly supports this conclusion.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R10",
+    "result_id": "R8",
     "claim_ids": [
-      "C106",
-      "C107",
       "C108",
       "C109",
       "C110",
       "C111",
       "C112",
       "C113",
-      "C114",
-      "C115"
+      "C130"
     ],
-    "result": "Rapamycin's TRPM8 activation occurs at micromolar concentrations unlikely to be reached with systemic administration but potentially relevant for topical applications (0.2-1% formulations), which could contribute to therapeutic effects through TRPM8-mediated anti-inflammatory and analgesic actions.",
+    "result": "Everolimus acts as a competitive antagonist of rapamycin at TRPM8, inhibiting rapamycin responses but not menthol responses. Molecular docking suggests everolimus binds the same site as rapamycin but with reduced binding energy and cannot form the critical hydrogen bond with Q861.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "The pharmacokinetic reasoning (C108-C110) is sound for systemic administration, but the speculation about topical applications (C114) lacks direct experimental evidence. While the concentrations in topical formulations (C111-C113) could theoretically activate TRPM8, actual local tissue concentrations and clinical relevance are not demonstrated. This remains a plausible hypothesis requiring validation.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 provide clear competition data showing selective inhibition of rapamycin (but not menthol) by everolimus, supporting competitive binding at the rapamycin site. The molecular docking (C108-C109) provides a structural rationale for reduced efficacy. The inference of competitive binding (C112-C113) is well-supported by the pharmacological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Rapamycin is more selective than menthol for identifying TRPM8-positive sensory neurons. While rapamycin selectively activates TRPM8-positive neurons, menthol also activates TRPA1-positive neurons, with ~7% of neurons responding to menthol but not rapamycin, and 92\u00b17% of these rapamycin-insensitive menthol-responsive neurons also responding to the TRPA1 agonist cinnamaldehyde.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 provide clear experimental evidence distinguishing TRPM8-mediated (rapamycin-sensitive, AMTB-inhibited) from TRPA1-mediated (rapamycin-insensitive, AMTB-resistant) menthol responses. The high overlap (92\u00b17%) between rapamycin-insensitive menthol responders and cinnamaldehyde responders (C62) strongly supports TRPA1 involvement. The conclusion about rapamycin's superior selectivity (C65-C67) is well-justified.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R11",
+    "result_id": "R10",
     "claim_ids": [
-      "C116",
-      "C118",
-      "C119",
       "C120",
       "C121",
       "C122",
       "C123",
       "C124",
-      "C125",
-      "C126"
+      "C125"
     ],
-    "result": "The structural determinants for TRPM8 activation differ from immunosuppressant activity, with key residues (Q861) unique to TRPM8 and the binding site location similar to the vanilloid site in TRPV1, though rapamycin also activates the distantly related TRPML1 through a different mechanism.",
+    "result": "Rapamycin activates TRPM8 at low micromolar concentrations (EC50 ~4-10 \u00b5M), which are unlikely to be achieved with systemic rapamycin therapy (plasma levels <100 nM) but may be relevant for topical applications using millimolar formulations (0.2-1% gels).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "The sequence alignment analysis (C118-C120) and comparison with TRPV1 (C121-C122) provide useful context for understanding TRPM8 specificity. The comparison with TRPML1 (C123-C126) highlights that rapamycin can activate multiple TRP channels through distinct mechanisms, supporting the conclusion about different structural determinants (C116).",
+    "evaluation": "Claims C120-C122 correctly compare experimental EC50 values with known plasma concentrations from clinical studies, making a sound inference about limited systemic relevance. Claims C123-C125 note that topical formulations contain millimolar concentrations that could achieve local TRPM8 activation, though C125 is appropriately cautious (\"likely to rise\") as actual local tissue concentrations are not measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C127"
+    ],
+    "result": "The trans-2-methoxycyclohexan-1-ol moiety is crucial for TRPM8 activity, and structural determinants for macrolide activation of TRPM8 differ from those for immunosuppressant activity. FK506 robustly activates TRPM8 albeit with lower potency than rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 synthesize the structure-activity data showing that the cyclohexanol moiety (important for TRPM8) differs from the macrolactam ring (important for immunosuppression). The FK506 data (C127) confirms earlier work and supports the importance of the shared cyclohexanol moiety. The inference about different structural determinants (C129) is well-supported by the comparative data.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C127"
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
     ],
-    "result": "Rapalogs such as everolimus represent safer alternatives to rapamycin for chemical dimerization studies to avoid unintended TRPM8 activation.",
+    "result": "Sequence alignment reveals that some key residues for rapamycin activation (D796, D802) are conserved among TRPM channels, while Q861 is unique to TRPM8 and G805 is found only in TRPM8 and TRPM2. Structural alignment shows the rapamycin binding site in TRPM8 is in a similar location to the vanilloid binding site in TRPV1, though key binding residues are not conserved.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "This practical recommendation (C127) follows logically from the demonstration that everolimus does not activate TRPM8 while maintaining the ability to induce FKBP12-FRB dimerization. This is a useful methodological insight for the research community.",
+    "evaluation": "Claims C133-C137 present straightforward bioinformatics analysis with appropriate citations. The conservation patterns (C133-C135) are clearly stated and the structural comparison with TRPV1 (C136-C137) appropriately notes both similarities in location and differences in specific residues. This provides useful evolutionary/structural context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Rapamycin also activates the distally related channel TRPML1, but none of the key TRPM8 binding residues are conserved in TRPML1, and the potency order of rapamycin analogs differs substantially between the two channels (e.g., temsirolimus potently activates TRPML1 but not TRPM8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 appropriately cite prior work on TRPML1 and note important differences in binding site residues and analog potency that indicate distinct binding mechanisms. This comparative analysis strengthens the specificity of the TRPM8 binding site characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "For chemical dimerization studies, rapalogs such as everolimus represent a safer alternative to rapamycin to avoid unintended TRPM8 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is a logical recommendation based on the demonstrated TRPM8 activation by rapamycin and the finding that everolimus has minimal agonist activity while retaining the ability to bind FKBP12 and FRB domains. This is a practical application of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background information on rapamycin: it is a macrolide from Streptomyces hygroscopicus discovered on Easter Island, initially described as antifungal but later found to have immunosuppressive properties through FKBP12-mediated mTOR inhibition, with diverse therapeutic applications and use in chemical dimerization strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 and C35-C43 present well-established background information about rapamycin with appropriate citations. These are accurate summaries of prior knowledge that provide necessary context for the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background information on TRPM8: it is a cation channel in sensory neurons serving as the primary mammalian cold sensor, with knockout mice showing deficits in temperature sensing and cold-induced analgesia. TRPM8 is activated by cooling and cooling agents (menthol, icilin) that bind in the voltage sensor-like domain cavity, and is regulated by PIP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C17-C34 present well-established background on TRPM8 with extensive appropriate citations. These accurately summarize prior knowledge about TRPM8 structure, function, and known ligand binding sites that provide essential context for understanding the novelty of the rapamycin binding site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Background on TRPM8 agonist classification: Type I agonists (e.g., menthol) slow gating kinetics and stabilize the open state, while Type II agonists (e.g., AITC) accelerate activation kinetics and destabilize the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 present the authors' previously published classification scheme for TRPM8 agonists with appropriate self-citation. This provides the framework for classifying rapamycin as a Type I agonist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Activation of TRPM8 in sensory neurons has anti-inflammatory effects and causes relief of pain and itch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is supported by appropriate citations to prior literature and provides relevant context for potential therapeutic implications of rapamycin's TRPM8 activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study reveals rapamycin as a direct TRPM8 agonist, providing new insights into TRPM8 ligand activation with potential therapeutic implications for topical rapamycin treatment of skin diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C146 appropriately summarize the major findings and their significance. The therapeutic implications (C146) are appropriately presented as speculative (\"may have potential\") given that actual clinical relevance remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "The rapamycin binding site may provide a clue for developing drugs that selectively target TRPM8 for therapeutic purposes without side effects of other TRPM8 agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 is speculative about future drug development. While the identification of a novel binding site is valuable, the claim about avoiding side effects is unsupported\u2014no evidence is provided that rapamycin-site ligands would have fewer side effects than menthol-site ligands. This is forward-looking speculation rather than a supported conclusion.",
     "result_type": "MINOR"
   }
 ]

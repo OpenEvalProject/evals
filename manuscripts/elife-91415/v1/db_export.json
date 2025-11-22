@@ -1,0 +1,2315 @@
+{
+  "submission": {
+    "id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-22T00:35:26.307459Z",
+    "updated_at": "2025-11-22T00:35:26.307459Z"
+  },
+  "content": [
+    {
+      "id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "content_type": "manuscript",
+      "content_text": "# Sensitive remote homology search by local alignment of small positional embeddings from protein language models\n\n## Authors\n\n- Sean R Johnson<sup>1</sup> ([ORCID: 0000-0001-8261-9015](https://orcid.org/0000-0001-8261-9015)) \u2020\n- Meghana Peshwa<sup>1</sup>\n- Zhiyi Sun<sup>1</sup> \u2020\n\n### Affiliations\n\n1. New England Biolabs Inc Ipswich United States ([ROR:04ywg3445](https://ror.org/04ywg3445))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAccurately detecting distant evolutionary relationships between proteins remains an ongoing challenge in bioinformatics. Search methods based on primary sequence struggle to accurately detect homology between sequences with less than 20% amino acid identity. Profile- and structure-based strategies extend sensitive search capabilities into this twilight zone of sequence similarity but require slow pre-processing steps. Recently, whole-protein and positional embeddings from deep neural networks have shown promise for providing sensitive sequence comparison and annotation at long evolutionary distances. Embeddings are generally faster to compute than profiles and predicted structures but still suffer several drawbacks related to the ability of whole-protein embeddings to discriminate domain-level homology, and the database size and search speed of methods using positional embeddings. In this work, we show that low-dimensionality positional embeddings can be used directly in speed-optimized local search algorithms. As a proof of concept, we use the ESM2 3B model to convert primary sequences directly into the 3D interaction (3Di) alphabet or amino acid profiles and use these embeddings as input to the highly optimized Foldseek, HMMER3, and HH-suite search algorithms. Our results suggest that positional embeddings as small as a single byte can provide sufficient information for dramatically improved sensitivity over amino acid sequence searches without sacrificing search speed.\n\n## Introduction\n\nA common method for assigning a putative function to a protein sequence is to find sequences with experimentally determined functions that have similarities in sequence, structure, or evolutionary origin to the unannotated sequence (Loewenstein et al., 2009). Direct comparisons of primary sequence, for example using BLASTP (Camacho et al., 2009), are fast and reliable but show poor ability to detect homologs with less than about 20% identity to the query (Rost, 1999). Popular approaches for higher sensitivity sequence searches involve using sequence profiles, for example with PSI-BLAST (Altschul et al., 1997), HMMER3 (Eddy, 2011), HH-suite3 (Steinegger et al., 2019), or MMseqs2 (Steinegger and S\u00f6ding, 2017). Sequence profiles are derived from multiple sequence alignments (MSAs) and are often modeled as profile hidden Markov models (HMMs), for example in HMMER and HH-suite. Profile HMMs model each position as the probability of each amino acid at the position together with insertion and deletion probabilities. Because of their reliance on the construction of MSAs, profile-based methods can have high computational overhead for database construction, query preparation, or both.\n\nProtein structure searches also show higher sensitivity than sequence searches (Jambrich et al., 2023). Until recently, the utility of structure searches for protein annotation was limited by the lack of extensive reference databases and the inability to predict structures quickly and reliably for sequences lacking experimentally determined structures. In the past several years, accurate protein structure prediction programs such as AlphaFold2 (Jumper et al., 2021) and ESMFold (Lin et al., 2023) have led to a massive increase in the size of databases of predicted protein structures. Coupled with fast structure search algorithms such as Foldseek (van Kempen et al., 2024), RUPEE (Ayoub and Lee, 2019), and Dali (Holm, 2022), structure prediction programs provide another powerful tool for remote homology detection. Foldseek achieves fast structure search by encoding the tertiary interactions of each amino acid in the 20-letter 3D interaction (3Di) alphabet. By using a structure alphabet of the same size as the amino acid alphabet, Foldseek can leverage optimized sequence search algorithms originally developed for amino acid sequences (Steinegger and S\u00f6ding, 2017; van Kempen et al., 2024). Structure search methods suffer from some of the same drawbacks as profile-based methods, including the computational cost of converting primary sequences to predicted structures.\n\nEmerging methods for protein annotation and remote homology detection rely on deep neural networks taking protein sequences as inputs and producing either a classification from a controlled vocabulary (Bileschi et al., 2022; Sanderson et al., 2023), a natural language description (Gane et al., 2022), positional embeddings, or a sequence embedding. Positional embeddings are fixed length vectors for each amino acid position of the protein. Positional embeddings produced by popular protein language models (pLMs) usually have large dimensions such as 1024 for ProtT5-XL-U50 (Elnaggar et al., 2021) and 2560 for ESM-2 3B (Lin et al., 2023). Sequence embeddings represent an entire sequence and are often calculated by element-wise averaging of the positional embeddings. Positional and sequence embeddings can be used for remote homology detection by using them to calculate substitution matrices in pairwise local alignments (Kaminski et al., 2023; Pantolini et al., 2024; Ye and Iovino, 2023), or by k-nearest neighbors searches (Hamamsy et al., 2022; Sch\u00fctze et al., 2022), respectively.\n\nWhile each of these emerging methods shows promise for improving sensitivity of protein search and annotation, they suffer various limitations. Classification models and methods relying on sequence embeddings struggle at discriminating individual domains of multi-domain proteins (Bileschi et al., 2022). Methods relying on large positional embeddings are space inefficient, and current search implementations are slow compared to other methods. Smaller positional embeddings would be more amenable to algorithmic optimizations using single instruction multiple data (SIMD) capabilities of central processing units (CPUs) that contribute to the speed of optimized sequence search algorithms (Buchfink et al., 2021; Eddy, 2011; Kilinc et al., 2023; Steinegger et al., 2019).\n\nAn embedding is an alternative vector representation of the input data which, preferably, makes the input data more suitable for some downstream task. We recognized that profile HMMs and 3Di sequences are types of protein positional embeddings with dimensionality as low as 1 (3Di sequences) to about 25 (profile HMMs, including amino acid frequencies and state transition probabilities), that are more suitable than amino acid sequences for the task of remote homology detection. We tested the hypothesis that the ESM-2 3B pLM (Lin et al., 2023) could be used to directly convert primary amino acid sequences into profile HMMs compatible with HMMER3 or HH-suite, and 3Di sequences compatible with Foldseek, providing a sequence search workflow leveraging the speed and sensitivity advantages of profile and structure search algorithms with an accelerated query preparation step enabled by the pLM.\n\n## Results\n\n### Using ESM-2 3B to generate small positional embeddings\n\nESM-2 was already pretrained on the masked language modeling task (Devlin et al., 2019; Lin et al., 2023) of predicting amino acid distributions at masked positions of input sequences, therefore no additional fine-tuning was necessary to induce it to produce probabilities compatible with profile HMM tools (Figure 1A). Positional amino acid frequencies predicted by ESM-2 3B resembled those found in MSAs built from sequence searches; Figure 2 shows an example comparison of logos of HMM profiles (Wheeler et al., 2014) derived from the 4HBT Pfam profile and the YBGC_HELPY___14\u201390 sequence from the seed alignment. The example is cherry picked in terms of the profile length, to be short enough to look nice as a figure, but it is not cherry picked for agreement between the profiles; it was the first short one we looked at.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91415/elife-91415-fig1-v1.jpg)\n\n**Figure 1.:** (A) ESM-2 3B can be directly used to predict amino acid probability distributions at masked positions. Our implementation uses seven passes. The second pass is shown in the figure. (B) ESM-2 3B 3Di, a fine-tuned ESM-2 3B with a small convolutional neural network (CNN) top model can be used to predict 3D interaction (3Di) sequences from amino acid sequences. (C) Data flow from amino acid sequences through embedding models and other programs to produce files used in homology searches. Bold words correspond to line labels in Figure 3.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91415/elife-91415-fig2-v1.jpg)\n\n**Figure 2.:** (A) 4HBT family hmm from Pfam 32. (B) hmmbuild with default settings on a multiple sequence alignment (MSA) of the top 100 hits supplied by an online blast search (https://blast.ncbi.nlm.nih.gov/Blast.cgi) of YBGC_HELPY___14\u201390 against the NCBI clustered nr database. (C) hmmbuild with default settings on the MSA sampled from the ESM-2 3B positional probabilities for YBGC_HELPY___14\u201390. (D, E) hmmbuild with Dirichlet priors disabled on the same MSAs as for (B, C), respectively. All logos were generated by uploading the corresponding.hmm file to https://skylign.org/ (Wheeler et al., 2014).\n\nTo produce Foldseek-compatible 3Di sequences, we trained a two-layer 1D convolutional neural network (CNN) to convert positional embeddings from the last transformer layer of ESM-2 3B into 3Di sequences, we then unfroze the last transformer layer and fine-tuned it together with the CNN. The fine-tuned model, which we call ESM-2 3B 3Di (Figure 1B), converted amino acids to 3Di with an accuracy of 64% compared to a test set of 3Di sequences derived from AlphaFold2-predicted structures. Training and test sets were derived from a random split of the Foldseek AlphaFold2 UniProt50 dataset (Jumper et al., 2021; van Kempen et al., 2024; Varadi et al., 2022), a reduced-redundancy subset of the UniProt AlphaFold2 structures (see Methods for details).\n\n### Comparison of newly developed embedding methods\n\nTo evaluate the capacity of small embeddings to improve search sensitivity, we generated predicted profiles and 3Di sequences from clustered Pfam 32 splits (Bileschi et al., 2022) and converted them into formats compatible with various search tools (Figure 1C). Pfam (Mistry et al., 2021) is a set of manually curated MSAs of families of homologous protein domains. Some families presumed to have a common evolutionary origin are further grouped into clans. In the clustered splits, each family is divided into train and test groups such that each sequence in the test group has less than 25% identity to the most similar protein in the train group (Bileschi et al., 2022). The sensitivity of a search algorithm is evaluated by the ability to match sequences from the test groups to their corresponding train group at the family or clan level.\n\nMethods using predicted profiles (Figure 3A, B) and those using predicted 3Di sequences (Figure 3C, D) both showed greater accuracy than phmmer (amino acid to amino acid) searches across all identity bins, and hmmscan (amino acid to profile HMM) searches on test sequences below 20% identity to the closest train sequence. Converting query sequences to hhsuite compatible profiles using ESM-2 3B and searching against databases built from ESM-2 predicted profiles of training sequences (Figure 3A, B, line 6) or profiles built from family-wise MSAs of the training sequences themselves (Figure 3A, B, line 5) gave improved accuracy at low identity bins compared to phmmer and hmmscan.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91415/elife-91415-fig3-v1.jpg)\n\n**Figure 3.:** Test sequences were binned based on percent identity to the closest training sequence in the same family and annotated based on the top scoring hit from a search against the entire set of training sequences or training sequence family profiles, depending on the algorithm. (A, C) Family recovery accuracy by bin. (B, D) Clan recovery accuracy. (A, B) Compare amino acid profile-based methods. (C, D) Compare Foldseek-based methods. Dashed lines are controls. There are a total of 21,293 test sequences. 12,246 test sequences have clan assignments.\n\nFoldseek searches where both the queries and database consisted of 3Di sequences produced by ESM-2 3B 3Di (Figure 3C, D, line 7) performed the best overall of all new methods tested. Foldseek considers both 3Di and amino acid sequences in its alignments and can therefore be conceptualized as using a 2-byte embedding. Running Foldseek in 3Di-only mode (line 8), a 1-byte embedding, led to a decrease in accuracy but still outperformed phmmer across all identity bins, and hmmscan on bins below 20% identity. We also tried creating HMMER3 profiles from predicted 3Di sequences (line 9). These performed worse than single-sequence Foldseek searches. Patching HMMER3 to use 3Di-derived background frequencies and Dirichlet priors (line 10) did not improve performance. Furthermore, we noticed that HMMER3 runs very slowly on 3Di sequences and profiles, presumably because the prefiltering steps were not optimized with 3Di sequences in mind.\n\nWhile faster than MSA construction or full structure prediction, pLM embedding still has non-trivial computational overhead. This limits the possibility of using methods based on pLM embeddings to perform sensitive homology searches against large metagenomic databases such as the 2.4 billion sequence Mgnify database (Richardson et al., 2023). It would be desirable to have search methods where the database can remain as amino acid sequences or other cheaply calculated representations and the queries can be processed with more expensive methods. To this end, we tested hmmsearch using ESM-2 3B generated profiles as queries against amino acid databases (Figure 3A and B, lines 3 and 4). This is similar to a two-iteration PSI-BLAST (Altschul et al., 1997) or JackHMMER (Johnson et al., 2010) search where the first search and MSA-building step is replaced by a pLM embedding step. Curiously, hmmsearch using profiles built directly from the pLM probabilities (line 3) had the lowest accuracy of any algorithm. Nevertheless, profiles processed with hmmbuild from HMMER3, applying HMMER3 Dirichlet priors on top of the pLM probabilities (line 4), had better family prediction accuracy than phmmer at all but the highest identity bin, and accuracy on par with hmmscan at 18% identity and lower.\n\n### Benchmarking of ESM-2 3B 3Di against emerging and established search methods\n\nESM-2 3B 3Di coupled to Foldseek search performed the best out of all the new methods we proposed on the clustered Pfam benchmark. To examine the performance of ESM-2 3B 3Di-based search against other emerging methods, we used the SCOPe40 benchmark (Figure 4; Chandonia et al., 2019; van Kempen et al., 2024), which has previously been used to evaluate Foldseek-based search methods (Heinzinger et al., 2023; van Kempen et al., 2024). The SCOPe40 benchmark is convenient because the dataset is much smaller than the clustered Pfam dataset, 11,211 vs 1,339,083 sequences. The small size of the dataset allowed us to compare compute-intensive methods, such as predicting AlphaFold2 structures for the entire dataset and then running Foldseek. In the SCOPe40 benchmark, the criteria for true positives (TPs) vary depending on the level of classification: for family, TPs are matches within the same family; for superfamily, TPs are matches sharing the same superfamily but not the same family; and for fold, TPs are matches sharing the same fold but are not the same superfamily. Any hits from different folds (but not from different families or superfamilies) are considered false positives (FPs). Calculating the metric in this way has the effect that \u2018Family\u2019 is a metric of homolog detection at the closest evolutionary distance (Figure 4A), \u2018Superfamily\u2019 is a metric of detection of more distant homologs (Figure 4B), and \u2018Fold\u2019 is a metric of very distant homolog detection or detection of evolutionarily unrelated proteins with similar folded structures (Figure 4C). All 11,211 proteins were used as queries for timing, but for sensitivity calculations, only the 3566 proteins with at least one other family member, at least one other superfamily member, and at least one other fold member were considered.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91415/elife-91415-fig4-v1.jpg)\n\n**Figure 4.:** Cumulative distribution plots of the number of queries attaining each level of sensitivity to the first false positive fold at the (A) family, (B) superfamily, and (C) fold level. (D) Data preparation, search times, and average sensitivity at the superfamily level. (E) Comparison of average sensitivity at the superfamily level of Foldseek run with queries and databases prepared by different methods.\n\nWe benchmarked against Foldseek using experimentally determined structures, 3Di sequences predicted by ProstT5 (Heinzinger et al., 2023), and 3Di sequences derived from structures predicted by AlphaFold2 (Jumper et al., 2021; Mirdita et al., 2022). We also benchmarked a method based on local alignment of large positional embeddings, pLM-BLAST (Kaminski et al., 2023). Protein sequence search with pHMMER search was included as a control.\n\nThe Foldseek-based methods all performed similarly on the SCOPe40 benchmark at all three homology levels, all outperforming pLM-BLAST and far outperforming pHMMER (Figure 4). At the superfamily level, AlphaFold2-predicted structures provided the best average sensitivity. 3Di sequences generated by different methods could be used as queries against databases built from 3Di sequences generated by other methods, but with some degradation of sensitivity compared to searches where both query and database 3Di sequences were generated by the same method (Figure 4E).\n\nFor each method, we also timed the data preparation time and search time (Figure 4D). pHMMER uses protein sequences directly and does not require a database building step, so database and query preparation are not needed. For data preparation time, AlphaFold2 structure prediction was by far the slowest, taking nearly 2 weeks on our hardware (Methods), and ProstT5 was the fastest, converting all protein sequences to 3Di sequences in just 6 min. For search time, the Foldseek-based methods were the fastest. pLM-BLAST was much slower than Foldseek-based methods, which makes sense because it is doing the same types of Smith-Waterman alignments as Foldseek, but with positional encodings more than 500 times as large. Pre-filtering is used in both methods, but evidently the pre-filtering in pLM-BLAST is not enough to compensate for the slowness of the alignment step.\n\n## Discussion\n\nWe tested several schemes for using the ESM-2 3B pLM to recode protein sequences into formats compatible with profile HMM or structure search tools with the hope of enhancing search sensitivity compared to primary sequence searches, but with less computational overhead than MSA construction or full structure prediction. The most successful of our efforts came from fine-tuning ESM-2 3B to convert protein sequence into 3Di sequences and running Foldseek structure search.\n\nCompared to other emerging methods for neural-network-driven remote homology detection, ESM-2 3B 3Di coupled to Foldseek enabled faster and more sensitive search than pLM-BLAST (Kaminski et al., 2023), and was slower but had similar sensitivity to ProstT5 (Heinzinger et al., 2023) coupled to Foldseek. Furthermore, 3Di sequences predicted by ESM-2 3B 3Di or by ProstT5 seem to be compatible with Foldseek searches against experimental or AlphaFold2-generated structures (Figure 4E), enabling a sequence annotation workflow where large numbers of proteins, for example from a newly sequenced genome, can be quickly annotated with high sensitivity by pLM-based conversion to 3Di sequences followed by Foldseek search against existing databases of experimental or predicted structures, for example the protein data bank (Berman et al., 2000) or the AlphaFold Protein Structure Database (Varadi et al., 2022).\n\nThere are many possible directions for future development of improved embeddings, faster conversion and search programs, and comprehensive reference databases. It is significant that a 1-byte embedding, the predicted 3Di sequences run in 3Di-only Foldseek searches, was among the top performing models. This result suggests that positional embeddings as small as a single byte can provide sufficient information for dramatically improved sensitivity over amino acid sequence searches. The 3Di alphabet was not developed to maximize remote homology search sensitivity, but to model tertiary interactions in protein structures. In future work, small positional embeddings optimal for local alignment could be learned directly from a differentiable alignment algorithm (Petti et al., 2023) instead of relying on proxy tasks of amino acid or 3Di prediction.\n\nFinally, asymmetric architectures where embedding a database sequence is cheaper than embedding a query, analogous to searches with profile HMM queries against primary sequence databases, could be a powerful method for improving search sensitivity against large and growing reference databases. Some first steps in that direction could be conversion to profile HMM-style embeddings in a single pass, rather than the seven we required, and predicting state transition probabilities, which may lead to improved search performance. We hazzve made our model training, search, and data analysis code publicly available. We hope our results and code will serve as a springboard for further exploration of the utility of low-dimensionality positional embeddings of protein sequences.\n\n## Methods\n\n### Alignments\n\nUnless otherwise noted, MSAs were made using MAFFT (v7.505) (Katoh and Standley, 2013) with options --anysymbol --maxiterate 1000 --globalpair. Protein alignments used the BLOSUM62 substitution matrix (Henikoff and Henikoff, 1992). 3Di alignments used the 3Di substitution matrix from Foldseek (van Kempen et al., 2024; Steinegger Lab, 2022; https://github.com/steineggerlab/foldseek/blob/master/data/mat3di.out).\n\n### Patching HMMER3 with background frequencies and Dirichlet priors for 3Di\n\nWe created a fork of the HMMER3 program (Eddy, 2011), replacing amino acid background frequencies and Dirichlet priors with values calculated from the 3Di alphabet instead of the amino acid alphabet (GitHub, copy archived at Johnson, 2024b; https://github.com/seanrjohnson/hmmer3di/commit/347ee45cd1fb5fc5984b2a3e3e188afbde4b8d2f). To generate a set of 3Di MSAs, we converted the AlphaFold UniProt Foldseek database (Jumper et al., 2021; van Kempen et al., 2024; Varadi et al., 2022) to a 3Di fasta file. We then looked up every sequence name from the Pfam 35 seed file in the UniProt 3Di fasta file and, for cases where the corresponding sequence was identifiable, extracted the sub-sequence corresponding to the Pfam 35 seed. 3Di seeds from each profile were aligned using MAFFT. MSA columns with more than 10 rows were used to calculate background frequencies and Dirichlet priors using the HMMER3 program esl-mixdchlet fit with options -s 17 9 20. Amino acid background frequencies and Dirichlet priors in the HMMER3 source code were then replaced with the newly calculated 3Di background frequencies and Dirichlet priors. We call the patched HMMER3 as HMMER3Di.\n\n### Fine-tuning ESM-2 3B to convert amino acid sequences into 3Di sequences\n\nA 1D CNN was added on top of ESM-2 3B. The CNN takes as input position-wise embeddings from the last transformer layer of ESM-2 3B. The CNN consists of two layers, the first layer has 2560 input channels (the size of the embeddings from ESM-2 3B), and 300 output channels, kernel size 5, stride 1, padding 3. The second layer has 300 input channels and 21 output channels (one for each 3Di symbol plus a padding symbol), kernel size 5, stride 1, padding 1. The model was trained with a weighted cross-entropy loss function using weights of 0.1 * the diagonal from 3Di substitution matrix. The neural network was implemented in PyTorch (Paszke et al., 2019).\n\nTraining data were derived from the Foldseek AlphaFold2 UniProt50 dataset (Jumper et al., 2021; van Kempen et al., 2024; Varadi et al., 2022), a reduced-redundancy subset of the UniProt AlphaFold2 structures. The Foldseek database was downloaded using the Foldseek \u2018databases\u2019 command line program, converted into protein and 3Di fasta files, filtered to remove sequences smaller than 120 amino acids and larger than 1000 amino acids, and split into train, validation, and test subsets, 90%:5%:5% (33,924,764:1,884,709:1,884,710 sequences).\n\nWith ESM-2 layers frozen, the CNN was trained on the task of converting amino acids to 3Di sequences using the AdamW optimizer with learning rate 0.001, weight decay 0.001, and exponential learning rate decrease (gamma 0.98, applied every 100 batches). Training sequences were randomly selected in batches of 15 sequences. Training proceeded for 1301 batches, leading to a training accuracy of about 58%.\n\nThe last transformer layer of ESM-2 was then unfrozen and training restarted from the saved weights, with the same training parameters. Training continued for another 24,001 batches of 10 random training sequences. Accuracy on the final training batch was 65%. Using the final trained weights, test sequences were converted to 3Di at an accuracy of 64.4%. We call the fine-tuned model ESM-2 3B 3Di.\n\nThe trained weights are available on Zenodo. The training code is available on GitHub (copy archived at Johnson, 2024a). The model training code should be useful for fine-tuning ESM-2 to convert amino acid sequences to various other kinds of sequences, such as secondary structure codes.\n\n### Pfam 32 clustered splits\n\nPfam 32 clustered splits (Bileschi et al., 2022) were downloaded from: https://console.cloud.google.com/storage/browser/brain-genomics-public/research/proteins/pfam/clustered_split. Data for mapping of individual Pfam 32 families to clans were downloaded from: https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/. The sequences from the train, dev, and test splits were sorted into unaligned fasta files according to their split and family (aa seq).\n\n### Predicting 3Di sequences\n\nEach training and test sequence was converted into a predicted 3Di sequence (predicted 3Di) using the ESM-2 3B 3Di model described above. MAFFT alignments were made of both the amino acid and predicted 3Di training and test sequences for each family. HMMER3 profiles were built from the alignments using either unaltered HMMER3 (predicted 3Di hmmer profile), or HMMER3Di (predicted 3Di hmmer3Di profile).\n\n### Predicting profiles to generate HH-suite hhm files and HMMER3 hmm files from single sequences\n\nPositional amino acid probabilities were calculated for unaligned train and test sequence using pretrained ESM-2 3B in the following algorithm.\n\nNote that in our actual implementation, a single forward pass was run on a batch of seven copies of the input sequence, each with different masking.\n\nThe hyperparameter of seven passes over the input sequence was chosen semi-empirically. Ideally, masking would be done one position at a time, such that each position benefits from the context of the rest of the sequence. In practice, masking individual positions is prohibitively slow. We experimented with different masking distances in a non-systematic way and found that probabilities derived from seven passes gave similar probabilities as masking each position individually. In addition, in the original ESM-2 pretraining, 15%, approximately 1/7, of positions were masked at each training step, so our masking of every 7th position resembles the training conditions.\n\nThe positional probabilities were written directly as an HH-suite compatible.hhm file (predicted hhsuite profile). A 40 sequence fasta MSA file was written where each sequence was randomly sampled from the probability distribution. Hmmbuild was run with default settings on the sampled MSA (predicted hmmer profile, with Dirichlet priors applied) and with the -pn;on; setting, which disables adjustments to the probability distribution based on Dirichlet priors (predicted hmmer profile, without Dirichlet priors applied).\n\n### Building HH-suite hhm and HMMER3 hmm profiles from train amino acid MSAs\n\nThe amino acid MSA for each training family were converted into an HH-suite database (aa hhsuite profile) with the following bash script:\n\necho '#'$profile_name >msa/${profile_name}.a3m\nhhfilter -i $MSA_FASTA -a msa/${profile_name}.a3m -M 50 -id 90;\nhhconsensus -i msa/${profile_name}.a3m -o consensus/${profile_name}.a3m\nhhmake -name $base -i consensus/${profile_name}.a3m -o hhm/${base}.hhm\nffindex_build -s db_hhm.ffdata db_hhm.ffindex hhm\nffindex_build -s db_a3m.ffdata db_a3m.ffindex consensus\ncstranslate -f -x 0.3 c 4 -I a3m -i db_a3m -o db_cs219\n\nHMMER3 profiles were built by calling hmmbuild with default settings on the training family amino acid MSAs (aa hmmer profile).\n\n### Building HH-suite databases from predicted profiles\n\nHH-suite databases were built from predicted profiles.hhm files and the corresponding sampled 40 sequence MSA fasta files using the following bash script:\n\nffindex_build -s db_hhm.ffdata db_hhm.ffindex esm2_3B_profiles\nffindex_build -s db_a3m.ffdata db_a3m.ffindex esm2_3B_sampled_msascstranslate -f -x 0.3 c 4 -I a3m -i db_a3m -o db_cs219\n\n### Building Foldseek databases from predicted 3Di sequences\n\nAmino acid and predicted 3Di fasta files were converted into Foldseek-compatible databases using a new script, fasta2foldseek.py, available from the esmologs python package (see below).\n\n### Hmmscan, phmmer, and hmmsearch HMMER3 searches\n\nIn an attempt to mimic the Top pick HMM strategy reported by Bileschi et al., 2022, we ran all HMMER3 searches in up to two iterations. The first iteration was run with default settings. For test sequences where no hits were detected among the training sequences or profiles, depending on the program, a second iteration was run with the addition of parameters intended to maximize sensitivity at the expense of search speed:\n\n--max -Z 1 --domZ 1 -E 1000000 --domE 1000000\n\nIt should be noted that while our phmmer results are directly comparable to the phmmer results reported by Bileschi et al., our hmmscan results are not directly comparable to the reported \u2018Top Pick HMM\u2019 results because we re-aligned the training sequences for each family instead of using the Pfam seed alignments. Still our results were very similar. We observed a 17.6% error rate (3744 test sequences with mispredicted family assignments) by hmmscan, compared to the reported 18.1% error rate (3844 mispredictions).\n\n### 3Di_hmmscan HMMER3Di searches\n\n3Di_hmmscan searches were performed using the same two-iteration method described above for searches using standard HMMER3 programs.\n\n### Hhblits HH-suite searches\n\nHhbilts was run with the options:\n\n-tags -n 1 v 0\n\n### Foldseek searches\n\nAfter converting both query and target amino acid and predicted 3Di fasta files into Foldseek-compatible databases (see above), Foldseek searches were run with the following commands:\n\nfoldseek search test_db train_db foldseek_results tmpFolder\nfoldseek convertalis test_db train_db foldseek_results hits.tsv --format-output query,target,bits\n\nFor 3Di-only searches, the option --alignment-type 0 was added to the search call.\n\n### SCOPe40 benchmark\n\nThe SCOPe40 benchmark was conducted as previously described (Heinzinger et al., 2023; van Kempen et al., 2024). For timings, GPU operations were run on an Nvidia A100 GPU with 40 Gb of VRAM. CPU operations were run on 16 cores on an Intel Xeon Gold 6258 R.\n\nAlphaFold2 structures were computed using local ColabFold (Jumper et al., 2021; Mirdita et al., 2022), with the command:\n\ncolabfold_batch \u2013num-recycle 3 \u2013num-models 5 peptides.fasta colabfold\n\nProstT5 embedding was run with default settings of the script: https://github.com/mheinzinger/ProstT5/blob/f93a7a1b696a74acee9ce85226ba9047d74f96fe/scripts/predict_3Di_encoderOnly.py (Heinzinger et al., 2023; Heinzinger, 2023).\n\nFoldseek was always run with the command:\n\nFoldseek search queryDB targetDB aln3 tmpFolder -s 9.5 -e 10 --max-seqs 2000 --threads 16\n\n### pLM-BLAST for SCOPe40\n\nFor pLM-BLAST (Kaminski et al., 2023), the version from October 30, 2023 was used (Dunin-Horkawicz et al., 2023) . We had to make a few trivial changes to the code to make it not crash when running the following operations.\n\nThe pLM-BLAST database was built with the entire SCOPe40 protein set (11,211 sequences), using the commands:\n\npython pLM-BLAST/embeddings.py start pLM-blastDB.fasta pLM-blastDB -embedder pt --gpu -bs 0 --asdir -t 1500\npython pLM-BLAST/scripts/dbtofile.py pLM-blastDB\n\nFor the sake of speed, for embedding and searching queries, the SCOPe40 was divided into 10 equal partitions. Each partition was converted to embeddings with the command:\n\npython pLM-BLAST/embeddings.py start peptides_partition_[num].fasta peptides_partition_[num].pt --gpu -bs 0 t 1500\n\nTimings for database prep were the sum of timings for all the embedding calls.\n\nEach query partition was searched against the database with the command:\n\npython pLM-BLAST/scripts/plmblast.py pLM-blastDB peptides_partition_[num] [num]_hits.csv --use_chunks -workers 16\n\nTimings for the search were the sum of the timings of all of the plmblast.py calls.\n",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alan M Moses, University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91415.3.sa0](https://doi.org/10.7554/eLife.91415.3.sa0)\n\nThis important study addresses the problem of detecting weak similarity between protein sequences, a procedure commonly used to infer homology or assign putative functions to uncharacterized proteins. The authors present a convincing approach that combines recently developed protein language models with well-established methods. The benchmarks provided show that the proposed tool is fast and accurate for remote homology detection, making this paper of general interest to all researchers working in the fields of protein evolution and genome annotation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91415.3.sa1](https://doi.org/10.7554/eLife.91415.3.sa1)\n\nThis paper describes a new method for sequence-based remote homology detection. Such methods are essential for the annotation of uncharacterized proteins and for studies of protein evolution.\n\nThe main strength and novelty of the proposed approach lies in the idea of combining state-of-the-art sequence-based (HHpred and HMMER) and structure-based (Foldseek) homology detection methods with protein language models (the ESM2 model was used). The authors show that high-dimensional, information-rich representations extracted from the ESM2 model can be efficiently combined with the aforementioned tools.\n\nThe benchmarking of the new approach is convincing and shows that it is suitable for homology detection at very low sequence similarity. The method is also fast because it does not require the computation of multiple sequence alignments for profile calculation or structure prediction.\n\nOverall, this is an interesting and useful paper that proposes an alternative direction for the problem of distant homology detection.\n",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cf46f54b-a3f6-4303-907b-e44561d834f4",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C1",
+      "claim": "Search methods based on primary sequence struggle to accurately detect homology between sequences with less than 20% amino acid identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Search methods based on primary sequence struggle to accurately detect homology between sequences with less than 20% amino acid identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established scientific literature (Rost, 1999) as indicated in the full text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "032125a2-0891-4299-bb7d-c6c0893f5999",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C2",
+      "claim": "Profile- and structure-based strategies extend sensitive search capabilities into the twilight zone of sequence similarity but require slow pre-processing steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Profile- and structure-based strategies extend sensitive search capabilities into this twilight zone of sequence similarity but require slow pre-processing steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement drawing from established knowledge about profile and structure-based methods, with implicit reference to the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "f4e5bf2b-e26e-4e16-8cb2-9114a40d3e7c",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C3",
+      "claim": "Low-dimensionality positional embeddings can be used directly in speed-optimized local search algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we show that low-dimensionality positional embeddings can be used directly in speed-optimized local search algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript supported by the experimental data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "59e32b96-cb0e-4e35-9867-d1b30e58a909",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C4",
+      "claim": "The ESM2 3B model can convert primary sequences directly into the 3D interaction (3Di) alphabet.",
+      "claim_type": "EXPLICIT",
+      "source": "As a proof of concept, we use the ESM2 3B model to convert primary sequences directly into the 3D interaction (3Di) alphabet or amino acid profiles and use these embeddings as input to the highly optimized Foldseek, HMMER3, and HH-suite search algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim supported by the experimental work described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "ba8e9569-3b34-458c-8499-f27fdea72eff",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C5",
+      "claim": "Positional embeddings as small as a single byte can provide sufficient information for dramatically improved sensitivity over amino acid sequence searches without sacrificing search speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that positional embeddings as small as a single byte can provide sufficient information for dramatically improved sensitivity over amino acid sequence searches without sacrificing search speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by the experimental results shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "70d80209-6604-449c-92a8-52dcb69fa660",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C6",
+      "claim": "Direct comparisons of primary sequence using BLASTP are fast and reliable but show poor ability to detect homologs with less than about 20% identity to the query.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct comparisons of primary sequence, for example using BLASTP (Camacho et al., 2009), are fast and reliable but show poor ability to detect homologs with less than about 20% identity to the query (Rost, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature (Camacho et al., 2009; Rost, 1999).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "e242ced8-54dd-4929-91f1-a547a83dbb83",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C7",
+      "claim": "Profile-based methods can have high computational overhead for database construction, query preparation, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of their reliance on the construction of MSAs, profile-based methods can have high computational overhead for database construction, query preparation, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known requirement of MSA construction for profile-based methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "37fbf5fe-92e2-4c05-b46a-431e7ab90995",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C8",
+      "claim": "Protein structure searches show higher sensitivity than sequence searches.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein structure searches also show higher sensitivity than sequence searches (Jambrich et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature (Jambrich et al., 2023).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "b8a4b64b-cb21-4919-9672-2b0efd8dbe1c",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C9",
+      "claim": "AlphaFold2 and ESMFold are accurate protein structure prediction programs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past several years, accurate protein structure prediction programs such as AlphaFold2 (Jumper et al., 2021) and ESMFold (Lin et al., 2023) have led to a massive increase in the size of databases of predicted protein structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the original publications describing these methods (Jumper et al., 2021; Lin et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "94fe4329-c887-40fe-b32e-9fd678499186",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C10",
+      "claim": "Foldseek achieves fast structure search by encoding the tertiary interactions of each amino acid in the 20-letter 3D interaction (3Di) alphabet.",
+      "claim_type": "EXPLICIT",
+      "source": "Foldseek achieves fast structure search by encoding the tertiary interactions of each amino acid in the 20-letter 3D interaction (3Di) alphabet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Foldseek method supported by citation (van Kempen et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d5b39a01-68a3-4246-bf34-2b872f64f9cd",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C11",
+      "claim": "Foldseek can leverage optimized sequence search algorithms originally developed for amino acid sequences by using a structure alphabet of the same size as the amino acid alphabet.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a structure alphabet of the same size as the amino acid alphabet, Foldseek can leverage optimized sequence search algorithms originally developed for amino acid sequences (Steinegger and S\u00f6ding, 2017; van Kempen et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the relevant literature (Steinegger and S\u00f6ding, 2017; van Kempen et al., 2024).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "40456773-550e-4a8e-8602-2d0bd2d732f7",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C12",
+      "claim": "Structure search methods suffer from the computational cost of converting primary sequences to predicted structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure search methods suffer from some of the same drawbacks as profile-based methods, including the computational cost of converting primary sequences to predicted structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known computational requirements of structure prediction methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "dcd4f480-fc15-4b31-a5a1-7d765be43e99",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C13",
+      "claim": "Positional embeddings produced by popular protein language models usually have large dimensions such as 1024 for ProtT5-XL-U50 and 2560 for ESM-2 3B.",
+      "claim_type": "EXPLICIT",
+      "source": "Positional embeddings produced by popular protein language models (pLMs) usually have large dimensions such as 1024 for ProtT5-XL-U50 (Elnaggar et al., 2021) and 2560 for ESM-2 3B (Lin et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the original publications describing these models (Elnaggar et al., 2021; Lin et al., 2023).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "7f22f259-bb4b-473f-8316-bce3af590e5c",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C14",
+      "claim": "Classification models and methods relying on sequence embeddings struggle at discriminating individual domains of multi-domain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Classification models and methods relying on sequence embeddings struggle at discriminating individual domains of multi-domain proteins (Bileschi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature (Bileschi et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "0b05a200-bb80-4132-a2b1-63cce6c8a70c",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C15",
+      "claim": "Methods relying on large positional embeddings are space inefficient, and current search implementations are slow compared to other methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods relying on large positional embeddings are space inefficient, and current search implementations are slow compared to other methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the computational properties of large embeddings and is supported by the timing data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d13f9687-20a4-482c-abbe-526f5d803046",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C16",
+      "claim": "Profile HMMs and 3Di sequences are types of protein positional embeddings with dimensionality as low as 1 (3Di sequences) to about 25 (profile HMMs).",
+      "claim_type": "EXPLICIT",
+      "source": "We recognized that profile HMMs and 3Di sequences are types of protein positional embeddings with dimensionality as low as 1 (3Di sequences) to about 25 (profile HMMs, including amino acid frequencies and state transition probabilities), that are more suitable than amino acid sequences for the task of remote homology detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim based on the authors' interpretation of these representations as embeddings.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "992892d2-fe33-416b-856d-e9f2f39a3eaa",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C17",
+      "claim": "ESM-2 was already pretrained on the masked language modeling task of predicting amino acid distributions at masked positions of input sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "ESM-2 was already pretrained on the masked language modeling task (Devlin et al., 2019; Lin et al., 2023) of predicting amino acid distributions at masked positions of input sequences, therefore no additional fine-tuning was necessary to induce it to produce probabilities compatible with profile HMM tools (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to the original publications (Devlin et al., 2019; Lin et al., 2023) and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "99c6f232-164e-4c79-a603-015df304e346",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C18",
+      "claim": "No additional fine-tuning was necessary to induce ESM-2 to produce probabilities compatible with profile HMM tools.",
+      "claim_type": "EXPLICIT",
+      "source": "ESM-2 was already pretrained on the masked language modeling task (Devlin et al., 2019; Lin et al., 2023) of predicting amino acid distributions at masked positions of input sequences, therefore no additional fine-tuning was necessary to induce it to produce probabilities compatible with profile HMM tools (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological claim based on the pretraining of ESM-2 and illustrated in Figure 1A.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "bfb66a38-648f-40ab-a6d3-8a44267b84c2",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C19",
+      "claim": "Positional amino acid frequencies predicted by ESM-2 3B resembled those found in MSAs built from sequence searches.",
+      "claim_type": "EXPLICIT",
+      "source": "Positional amino acid frequencies predicted by ESM-2 3B resembled those found in MSAs built from sequence searches; Figure 2 shows an example comparison of logos of HMM profiles (Wheeler et al., 2014) derived from the 4HBT Pfam profile and the YBGC_HELPY___14\u201390 sequence from the seed alignment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the visual comparison shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "5a5ef140-16d6-4261-b15c-c1dd34fda7fa",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C20",
+      "claim": "A two-layer 1D convolutional neural network (CNN) was trained to convert positional embeddings from the last transformer layer of ESM-2 3B into 3Di sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "To produce Foldseek-compatible 3Di sequences, we trained a two-layer 1D convolutional neural network (CNN) to convert positional embeddings from the last transformer layer of ESM-2 3B into 3Di sequences, we then unfroze the last transformer layer and fine-tuned it together with the CNN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim describing the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "21d96abd-01c8-41cd-8cc2-ab7425f81944",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C21",
+      "claim": "The fine-tuned model ESM-2 3B 3Di converted amino acids to 3Di with an accuracy of 64% compared to a test set of 3Di sequences derived from AlphaFold2-predicted structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The fine-tuned model, which we call ESM-2 3B 3Di (Figure 1B), converted amino acids to 3Di with an accuracy of 64% compared to a test set of 3Di sequences derived from AlphaFold2-predicted structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the model evaluation on test data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "bda796c2-349a-413c-9f99-08bbf2d055c9",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C22",
+      "claim": "Training and test sets were derived from a random split of the Foldseek AlphaFold2 UniProt50 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Training and test sets were derived from a random split of the Foldseek AlphaFold2 UniProt50 dataset (Jumper et al., 2021; van Kempen et al., 2024; Varadi et al., 2022), a reduced-redundancy subset of the UniProt AlphaFold2 structures (see Methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim describing the data preparation procedure, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "a6052ee7-684c-4ce2-b685-eb14d5102416",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C23",
+      "claim": "Methods using predicted profiles showed greater accuracy than phmmer searches across all identity bins.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods using predicted profiles (Figure 3A, B) and those using predicted 3Di sequences (Figure 3C, D) both showed greater accuracy than phmmer (amino acid to amino acid) searches across all identity bins, and hmmscan (amino acid to profile HMM) searches on test sequences below 20% identity to the closest train sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "6eb9e8a2-c68e-4006-90ca-6edacb85c2ff",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C24",
+      "claim": "Methods using predicted 3Di sequences showed greater accuracy than phmmer searches across all identity bins.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods using predicted profiles (Figure 3A, B) and those using predicted 3Di sequences (Figure 3C, D) both showed greater accuracy than phmmer (amino acid to amino acid) searches across all identity bins, and hmmscan (amino acid to profile HMM) searches on test sequences below 20% identity to the closest train sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "91676799-0573-42d4-8cdb-55e07f04aadf",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C25",
+      "claim": "Methods using predicted profiles showed greater accuracy than hmmscan searches on test sequences below 20% identity to the closest train sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods using predicted profiles (Figure 3A, B) and those using predicted 3Di sequences (Figure 3C, D) both showed greater accuracy than phmmer (amino acid to amino acid) searches across all identity bins, and hmmscan (amino acid to profile HMM) searches on test sequences below 20% identity to the closest train sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "395db07b-2b9c-4023-acd2-48245d5f6a94",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C26",
+      "claim": "Methods using predicted 3Di sequences showed greater accuracy than hmmscan searches on test sequences below 20% identity to the closest train sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods using predicted profiles (Figure 3A, B) and those using predicted 3Di sequences (Figure 3C, D) both showed greater accuracy than phmmer (amino acid to amino acid) searches across all identity bins, and hmmscan (amino acid to profile HMM) searches on test sequences below 20% identity to the closest train sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "a43a9aea-3a93-42ab-9458-b1333dbe53ba",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C27",
+      "claim": "Foldseek searches where both the queries and database consisted of 3Di sequences produced by ESM-2 3B 3Di performed the best overall of all new methods tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Foldseek searches where both the queries and database consisted of 3Di sequences produced by ESM-2 3B 3Di (Figure 3C, D, line 7) performed the best overall of all new methods tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3C and 3D, line 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "22ffbc93-a5a1-4d97-9c0f-22b9c2dfca7e",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C28",
+      "claim": "Running Foldseek in 3Di-only mode led to a decrease in accuracy but still outperformed phmmer across all identity bins.",
+      "claim_type": "EXPLICIT",
+      "source": "Running Foldseek in 3Di-only mode (line 8), a 1-byte embedding, led to a decrease in accuracy but still outperformed phmmer across all identity bins, and hmmscan on bins below 20% identity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3, line 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "eb23a7d3-dbb2-4e0f-984b-ec73a6d0fad5",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C29",
+      "claim": "Running Foldseek in 3Di-only mode still outperformed hmmscan on bins below 20% identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Running Foldseek in 3Di-only mode (line 8), a 1-byte embedding, led to a decrease in accuracy but still outperformed phmmer across all identity bins, and hmmscan on bins below 20% identity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3, line 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "47727a4f-2aa8-4bd0-a6f2-892fed2ee6c3",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C30",
+      "claim": "HMMER3 profiles created from predicted 3Di sequences performed worse than single-sequence Foldseek searches.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tried creating HMMER3 profiles from predicted 3Di sequences (line 9). These performed worse than single-sequence Foldseek searches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3, line 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "b979edba-6059-4ecd-9beb-6118837de9e4",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C31",
+      "claim": "Patching HMMER3 to use 3Di-derived background frequencies and Dirichlet priors did not improve performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Patching HMMER3 to use 3Di-derived background frequencies and Dirichlet priors (line 10) did not improve performance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3, line 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "abdcad97-d264-4e05-a81d-2ab914ddba29",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C32",
+      "claim": "HMMER3 runs very slowly on 3Di sequences and profiles, presumably because the prefiltering steps were not optimized with 3Di sequences in mind.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we noticed that HMMER3 runs very slowly on 3Di sequences and profiles, presumably because the prefiltering steps were not optimized with 3Di sequences in mind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "961bc77f-a44b-45b3-80be-21667b85becf",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C33",
+      "claim": "hmmsearch using profiles built directly from the pLM probabilities had the lowest accuracy of any algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, hmmsearch using profiles built directly from the pLM probabilities (line 3) had the lowest accuracy of any algorithm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3, line 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "7de8b646-33f3-4a48-bf67-4e79b937f6b7",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C34",
+      "claim": "Profiles processed with hmmbuild from HMMER3, applying HMMER3 Dirichlet priors on top of the pLM probabilities, had better family prediction accuracy than phmmer at all but the highest identity bin.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, profiles processed with hmmbuild from HMMER3, applying HMMER3 Dirichlet priors on top of the pLM probabilities (line 4), had better family prediction accuracy than phmmer at all but the highest identity bin, and accuracy on par with hmmscan at 18% identity and lower.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3, line 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "acbb654b-1b59-433d-be3d-9314ce311de4",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C35",
+      "claim": "Profiles processed with hmmbuild from HMMER3, applying HMMER3 Dirichlet priors on top of the pLM probabilities, had accuracy on par with hmmscan at 18% identity and lower.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, profiles processed with hmmbuild from HMMER3, applying HMMER3 Dirichlet priors on top of the pLM probabilities (line 4), had better family prediction accuracy than phmmer at all but the highest identity bin, and accuracy on par with hmmscan at 18% identity and lower.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3, line 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "8a807a46-4781-4a38-9010-100e4bac8e4b",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C36",
+      "claim": "The Foldseek-based methods all performed similarly on the SCOPe40 benchmark at all three homology levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The Foldseek-based methods all performed similarly on the SCOPe40 benchmark at all three homology levels, all outperforming pLM-BLAST and far outperforming pHMMER (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "4baa0dff-f53e-4c22-9872-e41418466349",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C37",
+      "claim": "The Foldseek-based methods all outperformed pLM-BLAST on the SCOPe40 benchmark.",
+      "claim_type": "EXPLICIT",
+      "source": "The Foldseek-based methods all performed similarly on the SCOPe40 benchmark at all three homology levels, all outperforming pLM-BLAST and far outperforming pHMMER (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "ec246898-82c9-48e7-bdc6-8cfb6d74bb69",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C38",
+      "claim": "The Foldseek-based methods far outperformed pHMMER on the SCOPe40 benchmark.",
+      "claim_type": "EXPLICIT",
+      "source": "The Foldseek-based methods all performed similarly on the SCOPe40 benchmark at all three homology levels, all outperforming pLM-BLAST and far outperforming pHMMER (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "91dce42d-71f3-4889-a49c-e29b618021f4",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C39",
+      "claim": "At the superfamily level, AlphaFold2-predicted structures provided the best average sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "At the superfamily level, AlphaFold2-predicted structures provided the best average sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "867c23ab-d2a5-4d50-ad2b-9bd6eb67ea0f",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C40",
+      "claim": "3Di sequences generated by different methods could be used as queries against databases built from 3Di sequences generated by other methods, but with some degradation of sensitivity compared to searches where both query and database 3Di sequences were generated by the same method.",
+      "claim_type": "EXPLICIT",
+      "source": "3Di sequences generated by different methods could be used as queries against databases built from 3Di sequences generated by other methods, but with some degradation of sensitivity compared to searches where both query and database 3Di sequences were generated by the same method (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "79e183d6-8ddb-4bec-8852-5ffe8dc759c9",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C41",
+      "claim": "AlphaFold2 structure prediction was by far the slowest data preparation method, taking nearly 2 weeks on the authors' hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "For data preparation time, AlphaFold2 structure prediction was by far the slowest, taking nearly 2 weeks on our hardware (Methods), and ProstT5 was the fastest, converting all protein sequences to 3Di sequences in just 6 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a timing measurement from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "4222d92e-67e8-4736-8bed-de065eb7c600",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C42",
+      "claim": "ProstT5 was the fastest data preparation method, converting all protein sequences to 3Di sequences in just 6 min.",
+      "claim_type": "EXPLICIT",
+      "source": "For data preparation time, AlphaFold2 structure prediction was by far the slowest, taking nearly 2 weeks on our hardware (Methods), and ProstT5 was the fastest, converting all protein sequences to 3Di sequences in just 6 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a timing measurement from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "865e71aa-ae36-4b21-85ed-187626544d55",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C43",
+      "claim": "The Foldseek-based methods were the fastest for search time.",
+      "claim_type": "EXPLICIT",
+      "source": "For search time, the Foldseek-based methods were the fastest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the timing data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "a50a330c-7039-4157-927e-fbbe8ec4137f",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C44",
+      "claim": "pLM-BLAST was much slower than Foldseek-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "pLM-BLAST was much slower than Foldseek-based methods, which makes sense because it is doing the same types of Smith-Waterman alignments as Foldseek, but with positional encodings more than 500 times as large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the timing data shown in Figure 4D and explained by inference about the computational requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "6aa33f1a-fd2b-4f85-81ef-34b7c012931e",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C45",
+      "claim": "pLM-BLAST is doing the same types of Smith-Waterman alignments as Foldseek, but with positional encodings more than 500 times as large.",
+      "claim_type": "EXPLICIT",
+      "source": "pLM-BLAST was much slower than Foldseek-based methods, which makes sense because it is doing the same types of Smith-Waterman alignments as Foldseek, but with positional encodings more than 500 times as large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known properties of the two methods.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "e8c2ebec-ad84-46c2-ab1a-c5619272e6db",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C46",
+      "claim": "The pre-filtering in pLM-BLAST is not enough to compensate for the slowness of the alignment step.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-filtering is used in both methods, but evidently the pre-filtering in pLM-BLAST is not enough to compensate for the slowness of the alignment step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed timing differences.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "9bed150b-7d6d-4611-82ff-0f7174f9e554",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C47",
+      "claim": "ESM-2 3B 3Di coupled to Foldseek enabled faster and more sensitive search than pLM-BLAST.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other emerging methods for neural-network-driven remote homology detection, ESM-2 3B 3Di coupled to Foldseek enabled faster and more sensitive search than pLM-BLAST (Kaminski et al., 2023), and was slower but had similar sensitivity to ProstT5 (Heinzinger et al., 2023) coupled to Foldseek.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d8eb1923-b833-4c41-9381-862b387f23d4",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C48",
+      "claim": "ESM-2 3B 3Di coupled to Foldseek was slower but had similar sensitivity to ProstT5 coupled to Foldseek.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other emerging methods for neural-network-driven remote homology detection, ESM-2 3B 3Di coupled to Foldseek enabled faster and more sensitive search than pLM-BLAST (Kaminski et al., 2023), and was slower but had similar sensitivity to ProstT5 (Heinzinger et al., 2023) coupled to Foldseek.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "81d9196c-23a4-4c80-b72f-3d27b3c488d0",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C49",
+      "claim": "3Di sequences predicted by ESM-2 3B 3Di or by ProstT5 are compatible with Foldseek searches against experimental or AlphaFold2-generated structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 3Di sequences predicted by ESM-2 3B 3Di or by ProstT5 seem to be compatible with Foldseek searches against experimental or AlphaFold2-generated structures (Figure 4E), enabling a sequence annotation workflow where large numbers of proteins, for example from a newly sequenced genome, can be quickly annotated with high sensitivity by pLM-based conversion to 3Di sequences followed by Foldseek search against existing databases of experimental or predicted structures, for example the protein data bank (Berman et al., 2000) or the AlphaFold Protein Structure Database (Varadi et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "1074d9fe-fd8d-4c98-8165-90290e77087f",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C50",
+      "claim": "A 1-byte embedding (predicted 3Di sequences run in 3Di-only Foldseek searches) was among the top performing models.",
+      "claim_type": "EXPLICIT",
+      "source": "It is significant that a 1-byte embedding, the predicted 3Di sequences run in 3Di-only Foldseek searches, was among the top performing models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "b897c347-73ee-4532-896c-07def7b567c8",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C51",
+      "claim": "The 3Di alphabet was not developed to maximize remote homology search sensitivity, but to model tertiary interactions in protein structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3Di alphabet was not developed to maximize remote homology search sensitivity, but to model tertiary interactions in protein structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the original purpose of the 3Di alphabet, based on knowledge of its development.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "c78b929f-4b69-4a94-94d2-3e6d44aa292a",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C52",
+      "claim": "Small positional embeddings optimal for local alignment could be learned directly from a differentiable alignment algorithm instead of relying on proxy tasks of amino acid or 3Di prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "In future work, small positional embeddings optimal for local alignment could be learned directly from a differentiable alignment algorithm (Petti et al., 2023) instead of relying on proxy tasks of amino acid or 3Di prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions, supported by citation to relevant work (Petti et al., 2023).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "88b84103-7f2e-4359-afec-c9f858687c0d",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C53",
+      "claim": "Pfam is a set of manually curated MSAs of families of homologous protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Pfam (Mistry et al., 2021) is a set of manually curated MSAs of families of homologous protein domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Pfam database supported by citation (Mistry et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "0a0e971e-20b7-43bf-a26c-d60652f37f75",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C54",
+      "claim": "Some Pfam families presumed to have a common evolutionary origin are further grouped into clans.",
+      "claim_type": "EXPLICIT",
+      "source": "Some families presumed to have a common evolutionary origin are further grouped into clans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Pfam database structure based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "faf5d433-7315-460d-b603-7f23f48d9ec5",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C55",
+      "claim": "In the clustered splits, each family is divided into train and test groups such that each sequence in the test group has less than 25% identity to the most similar protein in the train group.",
+      "claim_type": "EXPLICIT",
+      "source": "In the clustered splits, each family is divided into train and test groups such that each sequence in the test group has less than 25% identity to the most similar protein in the train group (Bileschi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmark dataset supported by citation (Bileschi et al., 2022).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "4d5e6968-65c0-4d53-8ac7-17646476917f",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C56",
+      "claim": "The CNN for ESM-2 3B 3Di consists of two layers, the first layer has 2560 input channels and 300 output channels, kernel size 5, stride 1, padding 3.",
+      "claim_type": "EXPLICIT",
+      "source": "The CNN consists of two layers, the first layer has 2560 input channels (the size of the embeddings from ESM-2 3B), and 300 output channels, kernel size 5, stride 1, padding 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "c7b6c057-9e25-42f0-ac2d-f90e024675d2",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C57",
+      "claim": "The second layer of the CNN has 300 input channels and 21 output channels (one for each 3Di symbol plus a padding symbol), kernel size 5, stride 1, padding 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The second layer has 300 input channels and 21 output channels (one for each 3Di symbol plus a padding symbol), kernel size 5, stride 1, padding 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the model architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "020ddb21-a4bc-43b7-a6b1-31bce156574a",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C58",
+      "claim": "The model was trained with a weighted cross-entropy loss function using weights of 0.1 * the diagonal from 3Di substitution matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was trained with a weighted cross-entropy loss function using weights of 0.1 * the diagonal from 3Di substitution matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "74c66c13-435e-4f8b-ba63-93445c0b1669",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C59",
+      "claim": "Training data were derived from the Foldseek AlphaFold2 UniProt50 dataset, filtered to remove sequences smaller than 120 amino acids and larger than 1000 amino acids, and split into train, validation, and test subsets, 90%:5%:5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The Foldseek database was downloaded using the Foldseek 'databases' command line program, converted into protein and 3Di fasta files, filtered to remove sequences smaller than 120 amino acids and larger than 1000 amino acids, and split into train, validation, and test subsets, 90%:5%:5% (33,924,764:1,884,709:1,884,710 sequences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the data preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "be0acadb-9355-4f89-823d-ad333a3808bf",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C60",
+      "claim": "With ESM-2 layers frozen, the CNN was trained using the AdamW optimizer with learning rate 0.001, weight decay 0.001, and exponential learning rate decrease (gamma 0.98, applied every 100 batches).",
+      "claim_type": "EXPLICIT",
+      "source": "With ESM-2 layers frozen, the CNN was trained on the task of converting amino acids to 3Di sequences using the AdamW optimizer with learning rate 0.001, weight decay 0.001, and exponential learning rate decrease (gamma 0.98, applied every 100 batches).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "09ab33d4-f42b-4c91-9873-b180971726ef",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C61",
+      "claim": "Training proceeded for 1301 batches, leading to a training accuracy of about 58%.",
+      "claim_type": "EXPLICIT",
+      "source": "Training proceeded for 1301 batches, leading to a training accuracy of about 58%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the model training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "da388335-6f80-4470-84b3-91fbe38b6eb8",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C62",
+      "claim": "After unfreezing the last transformer layer, training continued for another 24,001 batches of 10 random training sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The last transformer layer of ESM-2 was then unfrozen and training restarted from the saved weights, with the same training parameters. Training continued for another 24,001 batches of 10 random training sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "6f674f31-1293-456c-a1a4-b31a9bbfe84f",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C63",
+      "claim": "Accuracy on the final training batch was 65%.",
+      "claim_type": "EXPLICIT",
+      "source": "Accuracy on the final training batch was 65%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the model training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "0375b547-02ac-417f-bd80-efdd0006196d",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C64",
+      "claim": "Using the final trained weights, test sequences were converted to 3Di at an accuracy of 64.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the final trained weights, test sequences were converted to 3Di at an accuracy of 64.4%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the model evaluation on test data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d95e1f3e-6b18-450d-a495-4643c1a94307",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C65",
+      "claim": "The hyperparameter of seven passes over the input sequence was chosen semi-empirically.",
+      "claim_type": "EXPLICIT",
+      "source": "The hyperparameter of seven passes over the input sequence was chosen semi-empirically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about how a parameter was selected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "0b3dc99e-7206-452c-aec2-a8fa1912b333",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C67",
+      "claim": "In the original ESM-2 pretraining, 15%, approximately 1/7, of positions were masked at each training step.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in the original ESM-2 pretraining, 15%, approximately 1/7, of positions were masked at each training step, so our masking of every 7th position resembles the training conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the ESM-2 pretraining procedure, based on knowledge of the original work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "00fe1cb5-09ee-4fbd-9268-cb94e27305f7",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C68",
+      "claim": "The SCOPe40 benchmark dataset is much smaller than the clustered Pfam dataset, 11,211 vs 1,339,083 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The SCOPe40 benchmark is convenient because the dataset is much smaller than the clustered Pfam dataset, 11,211 vs 1,339,083 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the sizes of the two datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "18054fe6-1034-4bc9-a5df-355ee7381d22",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C69",
+      "claim": "In the SCOPe40 benchmark, for family, true positives are matches within the same family.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCOPe40 benchmark, the criteria for true positives (TPs) vary depending on the level of classification: for family, TPs are matches within the same family; for superfamily, TPs are matches sharing the same superfamily but not the same family; and for fold, TPs are matches sharing the same fold but are not the same superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmark evaluation criteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "2a6704e8-dd03-460c-a2d5-5d968e706118",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C70",
+      "claim": "In the SCOPe40 benchmark, for superfamily, true positives are matches sharing the same superfamily but not the same family.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCOPe40 benchmark, the criteria for true positives (TPs) vary depending on the level of classification: for family, TPs are matches within the same family; for superfamily, TPs are matches sharing the same superfamily but not the same family; and for fold, TPs are matches sharing the same fold but are not the same superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmark evaluation criteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "0576271a-f32d-4236-8e37-c2afe89ed262",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C71",
+      "claim": "In the SCOPe40 benchmark, for fold, true positives are matches sharing the same fold but are not the same superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCOPe40 benchmark, the criteria for true positives (TPs) vary depending on the level of classification: for family, TPs are matches within the same family; for superfamily, TPs are matches sharing the same superfamily but not the same family; and for fold, TPs are matches sharing the same fold but are not the same superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmark evaluation criteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "a10a4ca3-2a4c-4348-be64-a48c91663b46",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C72",
+      "claim": "In the SCOPe40 benchmark, any hits from different folds (but not from different families or superfamilies) are considered false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Any hits from different folds (but not from different families or superfamilies) are considered false positives (FPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the benchmark evaluation criteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "bce1e3d0-f1c4-47da-bef1-2324d992b77f",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C73",
+      "claim": "All 11,211 proteins were used as queries for timing in the SCOPe40 benchmark.",
+      "claim_type": "EXPLICIT",
+      "source": "All 11,211 proteins were used as queries for timing, but for sensitivity calculations, only the 3566 proteins with at least one other family member, at least one other superfamily member, and at least one other fold member were considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the benchmark evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "52de514b-8419-4dec-9d36-03b8d6b12b5a",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C74",
+      "claim": "For sensitivity calculations in the SCOPe40 benchmark, only the 3566 proteins with at least one other family member, at least one other superfamily member, and at least one other fold member were considered.",
+      "claim_type": "EXPLICIT",
+      "source": "All 11,211 proteins were used as queries for timing, but for sensitivity calculations, only the 3566 proteins with at least one other family member, at least one other superfamily member, and at least one other fold member were considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the benchmark evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "264edb60-b265-4463-8ec6-3dbd78711c4d",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C75",
+      "claim": "Foldseek considers both 3Di and amino acid sequences in its alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Foldseek considers both 3Di and amino acid sequences in its alignments and can therefore be conceptualized as using a 2-byte embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how Foldseek works, based on knowledge of the method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "64a9391b-88d4-46ff-83a9-032c8b4ca6b3",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C76",
+      "claim": "Foldseek can be conceptualized as using a 2-byte embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "Foldseek considers both 3Di and amino acid sequences in its alignments and can therefore be conceptualized as using a 2-byte embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Foldseek method in terms of embeddings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "cdbf3908-cf72-476c-a3ce-6e7c7a66cd86",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "claim_id": "C77",
+      "claim": "pHMMER uses protein sequences directly and does not require a database building step.",
+      "claim_type": "EXPLICIT",
+      "source": "pHMMER uses protein sequences directly and does not require a database building step, so database and query preparation are not needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the pHMMER method based on knowledge of how it works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c706bec3-a377-4633-bf05-e026a55e39b6",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Primary sequence-based search methods struggle to detect homology below ~20% amino acid identity, representing a well-established limitation in the field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C6 are supported by established literature citations (Rost, 1999; Camacho et al., 2009) and represent widely accepted knowledge about the 'twilight zone' of sequence similarity. This is background knowledge rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Profile-based and structure-based methods extend search sensitivity beyond the twilight zone but require computationally expensive pre-processing steps including MSA construction or structure prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C7, C8, C9, C10, C11, and C12 are well-supported by multiple citations to established literature and represent accepted knowledge about the trade-offs between sensitivity and computational cost in homology detection methods. This provides important context for the manuscript's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "8a761e8a-b1b2-44d4-9837-867cc44f1a10",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Existing protein language model embeddings have limitations: large positional embeddings (1024-2560 dimensions) are space-inefficient and slow, while sequence embeddings struggle with multi-domain proteins. Profile HMMs and 3Di sequences represent much smaller positional embeddings (1-25 dimensions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by citations and the authors' conceptual framework. The characterization of profile HMMs and 3Di as low-dimensional embeddings (C16) is a reasonable conceptual interpretation that motivates the study, though it represents a reframing rather than established terminology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "31878de5-f1ce-43e7-b73c-ccb26a0104ab",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ESM-2 3B, pretrained on masked language modeling, can directly produce amino acid probability distributions compatible with profile HMM tools without additional fine-tuning, and these predictions resemble MSA-derived profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are supported by the model's pretraining task (cited), Figure 1A showing the methodology, and Figure 2 showing visual comparison of profile logos. The claim that no fine-tuning is needed (C18) is reasonable given the masked language modeling pretraining, though the seven-pass implementation adds complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A two-layer CNN was trained on top of ESM-2 3B to convert amino acid sequences to 3Di sequences, achieving 64% accuracy on a test set derived from AlphaFold2-predicted structures after fine-tuning the last transformer layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 and C56-C64 provide comprehensive methodological details and quantitative results. The 64% accuracy is clearly reported with proper train/validation/test splits (90%:5%:5%) from a large dataset (>37M sequences). The methodology is well-documented with architecture details, training parameters, and progressive training strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "11d82aef-2795-4486-855d-3fd8ebefcbfc",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "On the clustered Pfam benchmark, methods using predicted profiles or predicted 3Di sequences outperformed phmmer across all identity bins and hmmscan below 20% identity. Foldseek with ESM-2 3B 3Di-predicted sequences performed best overall, with even 3Di-only mode (1-byte embedding) outperforming baseline methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 are directly supported by data in Figure 3. The benchmark uses appropriate train/test splits with <25% identity between groups. The results show clear performance improvements across identity bins, with quantitative comparisons across multiple methods. The 1-byte embedding result (C28-C29) is particularly significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d49a0466-d4e9-4979-b0e6-fe7fea72c184",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HMMER3 profiles created from predicted 3Di sequences performed poorly compared to Foldseek searches, and patching HMMER3 with 3Di-specific parameters did not improve performance. HMMER3 runs slowly on 3Di sequences, likely due to non-optimized prefiltering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by data in Figure 3 (lines 9-10). The poor performance and slow speed are documented observations. The explanation for slowness (C32) is appropriately marked as speculative ('presumably') and represents a reasonable hypothesis about prefiltering optimization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "66906297-29df-46d7-aac3-d09e2f6f8afb",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Profiles built directly from pLM probabilities had the lowest accuracy, but processing with hmmbuild and applying Dirichlet priors improved performance to better than phmmer at most identity bins and on par with hmmscan at \u226418% identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by Figure 3 data (lines 3-4). The curious finding that raw pLM probabilities perform poorly (C33) but improve with Dirichlet priors (C34-C35) is well-documented and represents an important methodological insight about the need for proper statistical processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "0779927b-dde0-4d73-a57b-35f2d7fa1a41",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "On the SCOPe40 benchmark, Foldseek-based methods performed similarly at all homology levels, outperforming pLM-BLAST and far outperforming pHMMER. AlphaFold2 structures provided best average sensitivity at the superfamily level. Cross-method 3Di sequences showed some compatibility but with sensitivity degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by comprehensive data in Figure 4A-C and 4E. The benchmark uses appropriate evaluation criteria for family/superfamily/fold levels with proper true positive definitions. The cross-compatibility analysis (C40, Figure 4E) provides valuable practical information about mixing methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "552c0204-43ef-43f9-baf5-030e9d78c298",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Timing benchmarks show AlphaFold2 structure prediction was slowest (~2 weeks), ProstT5 was fastest for data preparation (6 min), Foldseek-based methods were fastest for search, and pLM-BLAST was much slower than Foldseek due to large embedding sizes despite prefiltering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 are supported by timing data in Figure 4D and text. The dramatic differences in computational cost are well-documented. The explanation for pLM-BLAST slowness (C45-C46) is reasonable inference based on the >500\u00d7 larger embeddings, though the claim about 'same types of Smith-Waterman alignments' could benefit from more detailed algorithmic comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "b70f7c88-8c83-4c3f-a1ea-37511e8e2b71",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ESM-2 3B 3Di coupled to Foldseek enabled faster and more sensitive search than pLM-BLAST, and was slower but had similar sensitivity to ProstT5 coupled to Foldseek.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by comparative data in Figure 4. The head-to-head comparisons with other neural network-based methods are appropriate and show clear performance trade-offs. This positions the method well within the landscape of emerging approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d4d365a8-d229-4937-b25a-d86cccdbf6ce",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "3Di sequences predicted by ESM-2 3B 3Di or ProstT5 are compatible with Foldseek searches against experimental or AlphaFold2-generated structure databases, enabling rapid high-sensitivity annotation workflows.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by Figure 4E showing cross-method compatibility. This represents an important practical application, allowing predicted 3Di sequences to search existing structure databases. The proposed workflow is reasonable given the demonstrated compatibility, though some sensitivity loss occurs with mixed methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d20e75d5-3723-4944-98e1-23253618fd13",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Low-dimensionality positional embeddings can be used directly in speed-optimized local search algorithms, with embeddings as small as 1 byte (3Di-only) providing dramatically improved sensitivity over amino acid searches without sacrificing speed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C50 represent the central thesis supported by the entire body of experimental work. The 1-byte embedding result is particularly striking and well-supported by Figures 3-4. The claim about not sacrificing speed is supported by timing data showing Foldseek-based methods remain fast.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "39582553-6569-43b7-8f32-e39b279d0f3d",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 3Di alphabet was originally designed to model tertiary interactions rather than maximize search sensitivity, suggesting future work could learn embeddings optimized directly for alignment tasks using differentiable alignment algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by knowledge of 3Di development (cited). Claim C52 is appropriately speculative about future directions and supported by citation to relevant work (Petti et al., 2023). This represents reasonable scientific discussion of limitations and opportunities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d8a8bd09-4b25-4be1-a397-320e6653571c",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used two benchmark datasets: clustered Pfam 32 splits (1.3M sequences with <25% identity between train/test) and SCOPe40 (11,211 sequences), with appropriate evaluation criteria defined for family, superfamily, and fold levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 and C68-C74 describe the benchmark datasets and evaluation methodology. These are well-established benchmarks with proper citations (Bileschi et al., 2022; Chandonia et al., 2019). The evaluation criteria are clearly defined and appropriate for assessing remote homology detection at different evolutionary distances.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "6e29cf38-210c-4a24-a548-f3b7be5df2a7",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The seven-pass masking strategy for generating profiles was chosen semi-empirically to balance computational cost with accuracy, and resembles ESM-2's original pretraining conditions where ~15% (1/7) of positions were masked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C67 provide methodological justification for the seven-pass approach. The connection to original pretraining conditions (C67) is reasonable and supported by knowledge of ESM-2 pretraining. The semi-empirical selection (C65) is honestly reported, though more systematic hyperparameter exploration could strengthen this choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "ff0caf1f-6de8-4e6a-99b4-fe3f800477ff",
+      "content_id": "0df7ece1-c716-4b95-aa45-661d918ab969",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Foldseek uses both 3Di and amino acid sequences in alignments (conceptualized as 2-byte embedding), while pHMMER uses protein sequences directly without database building steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 describe properties of existing methods based on established knowledge and citations. The conceptualization of Foldseek as using a '2-byte embedding' (C76) is a reasonable interpretation consistent with the manuscript's framework, though not standard terminology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "52c2be73-810c-45af-8abc-c0c122039366",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that low-dimensionality positional embeddings (as small as 1 byte) derived from protein language models can be used directly in speed-optimized local search algorithms, providing dramatically improved sensitivity over amino acid sequence searches without sacrificing speed. They show that ESM-2 3B can convert sequences into 3Di alphabet or amino acid profiles, and that profile HMMs and 3Di sequences represent low-dimensional embeddings suitable for remote homology detection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm this core finding. The first reviewer states the approach is 'convincing' and shows the tool is 'fast and accurate for remote homology detection.' The second reviewer confirms 'the benchmarking of the new approach is convincing' and notes it 'is also fast because it does not require the computation of multiple sequence alignments for profile calculation or structure prediction,' directly supporting the speed and sensitivity claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "0d7f6994-86e8-4640-af37-343bb249ea9f",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors show that ESM-2 was pretrained on masked language modeling and therefore requires no additional fine-tuning to produce probabilities compatible with profile HMM tools. They demonstrate that positional amino acid frequencies predicted by ESM-2 3B resemble those found in MSAs built from sequence searches.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept this methodological approach without critique. The second reviewer explicitly notes 'high-dimensional, information-rich representations extracted from the ESM2 model can be efficiently combined with the aforementioned tools,' implicitly accepting the compatibility claim. No concerns are raised about the ESM-2 pretraining or its direct use for generating profiles.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "ab5e5a8b-fef0-48d3-98cd-119090a31460",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors trained a two-layer CNN to convert ESM-2 3B embeddings into 3Di sequences, achieving 64% accuracy on test data. The model (ESM-2 3B 3Di) was trained on the Foldseek AlphaFold2 UniProt50 dataset with specific architectural and training parameters detailed in the methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept this methodological development without objection. The second reviewer explicitly states 'the main strength and novelty of the proposed approach lies in the idea of combining state-of-the-art sequence-based (HHpred and HMMER) and structure-based (Foldseek) homology detection methods with protein language models (the ESM2 model was used),' affirming the technical approach including the CNN training.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "On the Pfam benchmark, methods using predicted profiles and predicted 3Di sequences showed greater accuracy than phmmer across all identity bins and hmmscan below 20% identity. Foldseek searches with ESM-2 3B 3Di-generated sequences performed best overall, and even 1-byte 3Di-only embeddings outperformed traditional sequence methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers explicitly affirm these benchmark results. The first reviewer states 'the benchmarks provided show that the proposed tool is fast and accurate for remote homology detection.' The second reviewer confirms 'the benchmarking of the new approach is convincing and shows that it is suitable for homology detection at very low sequence similarity,' directly supporting the accuracy claims across different identity ranges.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "17f33c00-d09b-4fe5-83a6-1307d22acf81",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "On the SCOPe40 benchmark, Foldseek-based methods performed similarly at all three homology levels (family, superfamily, fold), all outperforming pLM-BLAST and far outperforming pHMMER. AlphaFold2-predicted structures provided the best average sensitivity at the superfamily level. 3Di sequences from different methods showed cross-compatibility with some sensitivity degradation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept these comparative benchmark results without challenge. The first reviewer describes the study as 'important' and the approach as 'convincing,' while the second reviewer states the benchmarking is 'convincing' and demonstrates suitability 'for homology detection at very low sequence similarity,' implicitly accepting the comparative performance claims on SCOPe40.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Timing comparisons show AlphaFold2 structure prediction was the slowest data preparation method (nearly 2 weeks), while ProstT5 was fastest (6 minutes). Foldseek-based methods were fastest for search time. ESM-2 3B 3Di coupled to Foldseek enabled faster and more sensitive search than pLM-BLAST, and was slower but had similar sensitivity to ProstT5.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers explicitly affirm the speed advantages. The first reviewer states the tool is 'fast and accurate,' while the second reviewer emphasizes 'the method is also fast because it does not require the computation of multiple sequence alignments for profile calculation or structure prediction,' directly supporting the timing claims and comparative speed assessments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Various profile-based approaches showed mixed results: HMMER3 profiles from predicted 3Di sequences performed worse than Foldseek searches; hmmsearch using profiles built directly from pLM probabilities had the lowest accuracy; but profiles processed with hmmbuild applying Dirichlet priors showed improved accuracy over phmmer except at the highest identity bin.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not challenge these detailed methodological comparisons. The second reviewer's statement that 'the benchmarking of the new approach is convincing' encompasses acceptance of these comparative results showing which profile-based approaches worked better or worse, as these are part of the overall benchmarking strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "524e0523-490d-4002-818f-1945e954dc9a",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors demonstrate that 3Di sequences predicted by ESM-2 3B 3Di or ProstT5 are compatible with Foldseek searches against experimental or AlphaFold2-generated structures, enabling a practical workflow for rapid annotation of newly sequenced genomes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept this practical application without objection. The first reviewer notes the paper is 'of general interest to all researchers working in the fields of protein evolution and genome annotation,' implicitly accepting the practical utility claims. The second reviewer describes the method as 'useful,' supporting the workflow compatibility claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "d063a05d-fce4-4c09-82d0-37167b61fbf5",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors provide background context on limitations of existing methods: sequence-based methods struggle below 20% identity, profile and structure-based methods have high computational overhead, and large positional embeddings from protein language models are space inefficient and slow.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers implicitly accept this background framing by not challenging it and by affirming the novelty of the solution. The first reviewer describes the study as addressing 'the problem of detecting weak similarity between protein sequences,' accepting the problem statement. The second reviewer notes these methods 'are essential for the annotation of uncharacterized proteins,' accepting the motivation without questioning the characterization of existing limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "fff41dc1-0b64-4585-856f-35371dfda3ab",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors note that the 3Di alphabet was originally developed to model tertiary interactions rather than maximize remote homology search sensitivity, and suggest future work could learn small positional embeddings directly from differentiable alignment algorithms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not challenge these discussion points. The second reviewer describes the paper as proposing 'an alternative direction for the problem of distant homology detection,' which aligns with accepting both the current limitations of 3Di and the potential for future improvements through alternative approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "c15d120d-4c42-42ff-b6e8-7efda8abb285",
+      "content_id": "ef1460b8-4388-4ebd-b0ba-829fbeb4036c",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors provide detailed methodological descriptions of benchmark datasets (Pfam, SCOPe40), data splitting procedures, hyperparameter choices, and technical details about how different tools work (Foldseek, pHMMER, etc.).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers accept these methodological details without critique. The second reviewer explicitly states 'the benchmarking of the new approach is convincing,' which requires acceptance of the benchmark design, dataset choices, and methodological procedures described. No concerns are raised about the experimental setup or technical implementation details.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cf46f54b-a3f6-4303-907b-e44561d834f4",
+      "result_id": "c706bec3-a377-4633-bf05-e026a55e39b6"
+    },
+    {
+      "claim_id": "70d80209-6604-449c-92a8-52dcb69fa660",
+      "result_id": "c706bec3-a377-4633-bf05-e026a55e39b6"
+    },
+    {
+      "claim_id": "032125a2-0891-4299-bb7d-c6c0893f5999",
+      "result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76"
+    },
+    {
+      "claim_id": "e242ced8-54dd-4929-91f1-a547a83dbb83",
+      "result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76"
+    },
+    {
+      "claim_id": "37fbf5fe-92e2-4c05-b46a-431e7ab90995",
+      "result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76"
+    },
+    {
+      "claim_id": "b8a4b64b-cb21-4919-9672-2b0efd8dbe1c",
+      "result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76"
+    },
+    {
+      "claim_id": "94fe4329-c887-40fe-b32e-9fd678499186",
+      "result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76"
+    },
+    {
+      "claim_id": "d5b39a01-68a3-4246-bf34-2b872f64f9cd",
+      "result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76"
+    },
+    {
+      "claim_id": "40456773-550e-4a8e-8602-2d0bd2d732f7",
+      "result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76"
+    },
+    {
+      "claim_id": "dcd4f480-fc15-4b31-a5a1-7d765be43e99",
+      "result_id": "8a761e8a-b1b2-44d4-9837-867cc44f1a10"
+    },
+    {
+      "claim_id": "7f22f259-bb4b-473f-8316-bce3af590e5c",
+      "result_id": "8a761e8a-b1b2-44d4-9837-867cc44f1a10"
+    },
+    {
+      "claim_id": "0b05a200-bb80-4132-a2b1-63cce6c8a70c",
+      "result_id": "8a761e8a-b1b2-44d4-9837-867cc44f1a10"
+    },
+    {
+      "claim_id": "d13f9687-20a4-482c-abbe-526f5d803046",
+      "result_id": "8a761e8a-b1b2-44d4-9837-867cc44f1a10"
+    },
+    {
+      "claim_id": "992892d2-fe33-416b-856d-e9f2f39a3eaa",
+      "result_id": "31878de5-f1ce-43e7-b73c-ccb26a0104ab"
+    },
+    {
+      "claim_id": "99c6f232-164e-4c79-a603-015df304e346",
+      "result_id": "31878de5-f1ce-43e7-b73c-ccb26a0104ab"
+    },
+    {
+      "claim_id": "bfb66a38-648f-40ab-a6d3-8a44267b84c2",
+      "result_id": "31878de5-f1ce-43e7-b73c-ccb26a0104ab"
+    },
+    {
+      "claim_id": "5a5ef140-16d6-4261-b15c-c1dd34fda7fa",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "21d96abd-01c8-41cd-8cc2-ab7425f81944",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "bda796c2-349a-413c-9f99-08bbf2d055c9",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "4d5e6968-65c0-4d53-8ac7-17646476917f",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "c7b6c057-9e25-42f0-ac2d-f90e024675d2",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "020ddb21-a4bc-43b7-a6b1-31bce156574a",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "74c66c13-435e-4f8b-ba63-93445c0b1669",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "be0acadb-9355-4f89-823d-ad333a3808bf",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "09ab33d4-f42b-4c91-9873-b180971726ef",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "da388335-6f80-4470-84b3-91fbe38b6eb8",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "6f674f31-1293-456c-a1a4-b31a9bbfe84f",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "0375b547-02ac-417f-bd80-efdd0006196d",
+      "result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e"
+    },
+    {
+      "claim_id": "a6052ee7-684c-4ce2-b685-eb14d5102416",
+      "result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc"
+    },
+    {
+      "claim_id": "6eb9e8a2-c68e-4006-90ca-6edacb85c2ff",
+      "result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc"
+    },
+    {
+      "claim_id": "91676799-0573-42d4-8cdb-55e07f04aadf",
+      "result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc"
+    },
+    {
+      "claim_id": "395db07b-2b9c-4023-acd2-48245d5f6a94",
+      "result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc"
+    },
+    {
+      "claim_id": "a43a9aea-3a93-42ab-9458-b1333dbe53ba",
+      "result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc"
+    },
+    {
+      "claim_id": "22ffbc93-a5a1-4d97-9c0f-22b9c2dfca7e",
+      "result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc"
+    },
+    {
+      "claim_id": "eb23a7d3-dbb2-4e0f-984b-ec73a6d0fad5",
+      "result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc"
+    },
+    {
+      "claim_id": "47727a4f-2aa8-4bd0-a6f2-892fed2ee6c3",
+      "result_id": "d49a0466-d4e9-4979-b0e6-fe7fea72c184"
+    },
+    {
+      "claim_id": "b979edba-6059-4ecd-9beb-6118837de9e4",
+      "result_id": "d49a0466-d4e9-4979-b0e6-fe7fea72c184"
+    },
+    {
+      "claim_id": "abdcad97-d264-4e05-a81d-2ab914ddba29",
+      "result_id": "d49a0466-d4e9-4979-b0e6-fe7fea72c184"
+    },
+    {
+      "claim_id": "961bc77f-a44b-45b3-80be-21667b85becf",
+      "result_id": "66906297-29df-46d7-aac3-d09e2f6f8afb"
+    },
+    {
+      "claim_id": "7de8b646-33f3-4a48-bf67-4e79b937f6b7",
+      "result_id": "66906297-29df-46d7-aac3-d09e2f6f8afb"
+    },
+    {
+      "claim_id": "acbb654b-1b59-433d-be3d-9314ce311de4",
+      "result_id": "66906297-29df-46d7-aac3-d09e2f6f8afb"
+    },
+    {
+      "claim_id": "8a807a46-4781-4a38-9010-100e4bac8e4b",
+      "result_id": "0779927b-dde0-4d73-a57b-35f2d7fa1a41"
+    },
+    {
+      "claim_id": "4baa0dff-f53e-4c22-9872-e41418466349",
+      "result_id": "0779927b-dde0-4d73-a57b-35f2d7fa1a41"
+    },
+    {
+      "claim_id": "ec246898-82c9-48e7-bdc6-8cfb6d74bb69",
+      "result_id": "0779927b-dde0-4d73-a57b-35f2d7fa1a41"
+    },
+    {
+      "claim_id": "91dce42d-71f3-4889-a49c-e29b618021f4",
+      "result_id": "0779927b-dde0-4d73-a57b-35f2d7fa1a41"
+    },
+    {
+      "claim_id": "867c23ab-d2a5-4d50-ad2b-9bd6eb67ea0f",
+      "result_id": "0779927b-dde0-4d73-a57b-35f2d7fa1a41"
+    },
+    {
+      "claim_id": "79e183d6-8ddb-4bec-8852-5ffe8dc759c9",
+      "result_id": "552c0204-43ef-43f9-baf5-030e9d78c298"
+    },
+    {
+      "claim_id": "4222d92e-67e8-4736-8bed-de065eb7c600",
+      "result_id": "552c0204-43ef-43f9-baf5-030e9d78c298"
+    },
+    {
+      "claim_id": "865e71aa-ae36-4b21-85ed-187626544d55",
+      "result_id": "552c0204-43ef-43f9-baf5-030e9d78c298"
+    },
+    {
+      "claim_id": "a50a330c-7039-4157-927e-fbbe8ec4137f",
+      "result_id": "552c0204-43ef-43f9-baf5-030e9d78c298"
+    },
+    {
+      "claim_id": "6aa33f1a-fd2b-4f85-81ef-34b7c012931e",
+      "result_id": "552c0204-43ef-43f9-baf5-030e9d78c298"
+    },
+    {
+      "claim_id": "e8c2ebec-ad84-46c2-ab1a-c5619272e6db",
+      "result_id": "552c0204-43ef-43f9-baf5-030e9d78c298"
+    },
+    {
+      "claim_id": "9bed150b-7d6d-4611-82ff-0f7174f9e554",
+      "result_id": "b70f7c88-8c83-4c3f-a1ea-37511e8e2b71"
+    },
+    {
+      "claim_id": "d8eb1923-b833-4c41-9381-862b387f23d4",
+      "result_id": "b70f7c88-8c83-4c3f-a1ea-37511e8e2b71"
+    },
+    {
+      "claim_id": "81d9196c-23a4-4c80-b72f-3d27b3c488d0",
+      "result_id": "d4d365a8-d229-4937-b25a-d86cccdbf6ce"
+    },
+    {
+      "claim_id": "f4e5bf2b-e26e-4e16-8cb2-9114a40d3e7c",
+      "result_id": "d20e75d5-3723-4944-98e1-23253618fd13"
+    },
+    {
+      "claim_id": "59e32b96-cb0e-4e35-9867-d1b30e58a909",
+      "result_id": "d20e75d5-3723-4944-98e1-23253618fd13"
+    },
+    {
+      "claim_id": "ba8e9569-3b34-458c-8499-f27fdea72eff",
+      "result_id": "d20e75d5-3723-4944-98e1-23253618fd13"
+    },
+    {
+      "claim_id": "1074d9fe-fd8d-4c98-8165-90290e77087f",
+      "result_id": "d20e75d5-3723-4944-98e1-23253618fd13"
+    },
+    {
+      "claim_id": "b897c347-73ee-4532-896c-07def7b567c8",
+      "result_id": "39582553-6569-43b7-8f32-e39b279d0f3d"
+    },
+    {
+      "claim_id": "c78b929f-4b69-4a94-94d2-3e6d44aa292a",
+      "result_id": "39582553-6569-43b7-8f32-e39b279d0f3d"
+    },
+    {
+      "claim_id": "88b84103-7f2e-4359-afec-c9f858687c0d",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "0a0e971e-20b7-43bf-a26c-d60652f37f75",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "faf5d433-7315-460d-b603-7f23f48d9ec5",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "00fe1cb5-09ee-4fbd-9268-cb94e27305f7",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "18054fe6-1034-4bc9-a5df-355ee7381d22",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "2a6704e8-dd03-460c-a2d5-5d968e706118",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "0576271a-f32d-4236-8e37-c2afe89ed262",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "a10a4ca3-2a4c-4348-be64-a48c91663b46",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "bce1e3d0-f1c4-47da-bef1-2324d992b77f",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "52de514b-8419-4dec-9d36-03b8d6b12b5a",
+      "result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c"
+    },
+    {
+      "claim_id": "d95e1f3e-6b18-450d-a495-4643c1a94307",
+      "result_id": "6e29cf38-210c-4a24-a548-f3b7be5df2a7"
+    },
+    {
+      "claim_id": "0b3dc99e-7206-452c-aec2-a8fa1912b333",
+      "result_id": "6e29cf38-210c-4a24-a548-f3b7be5df2a7"
+    },
+    {
+      "claim_id": "264edb60-b265-4463-8ec6-3dbd78711c4d",
+      "result_id": "ff0caf1f-6de8-4e6a-99b4-fe3f800477ff"
+    },
+    {
+      "claim_id": "64a9391b-88d4-46ff-83a9-032c8b4ca6b3",
+      "result_id": "ff0caf1f-6de8-4e6a-99b4-fe3f800477ff"
+    },
+    {
+      "claim_id": "cdbf3908-cf72-476c-a3ce-6e7c7a66cd86",
+      "result_id": "ff0caf1f-6de8-4e6a-99b4-fe3f800477ff"
+    },
+    {
+      "claim_id": "f4e5bf2b-e26e-4e16-8cb2-9114a40d3e7c",
+      "result_id": "52c2be73-810c-45af-8abc-c0c122039366"
+    },
+    {
+      "claim_id": "59e32b96-cb0e-4e35-9867-d1b30e58a909",
+      "result_id": "52c2be73-810c-45af-8abc-c0c122039366"
+    },
+    {
+      "claim_id": "ba8e9569-3b34-458c-8499-f27fdea72eff",
+      "result_id": "52c2be73-810c-45af-8abc-c0c122039366"
+    },
+    {
+      "claim_id": "d13f9687-20a4-482c-abbe-526f5d803046",
+      "result_id": "52c2be73-810c-45af-8abc-c0c122039366"
+    },
+    {
+      "claim_id": "992892d2-fe33-416b-856d-e9f2f39a3eaa",
+      "result_id": "0d7f6994-86e8-4640-af37-343bb249ea9f"
+    },
+    {
+      "claim_id": "99c6f232-164e-4c79-a603-015df304e346",
+      "result_id": "0d7f6994-86e8-4640-af37-343bb249ea9f"
+    },
+    {
+      "claim_id": "bfb66a38-648f-40ab-a6d3-8a44267b84c2",
+      "result_id": "0d7f6994-86e8-4640-af37-343bb249ea9f"
+    },
+    {
+      "claim_id": "5a5ef140-16d6-4261-b15c-c1dd34fda7fa",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "21d96abd-01c8-41cd-8cc2-ab7425f81944",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "bda796c2-349a-413c-9f99-08bbf2d055c9",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "4d5e6968-65c0-4d53-8ac7-17646476917f",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "c7b6c057-9e25-42f0-ac2d-f90e024675d2",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "020ddb21-a4bc-43b7-a6b1-31bce156574a",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "74c66c13-435e-4f8b-ba63-93445c0b1669",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "be0acadb-9355-4f89-823d-ad333a3808bf",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "09ab33d4-f42b-4c91-9873-b180971726ef",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "da388335-6f80-4470-84b3-91fbe38b6eb8",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "6f674f31-1293-456c-a1a4-b31a9bbfe84f",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "0375b547-02ac-417f-bd80-efdd0006196d",
+      "result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460"
+    },
+    {
+      "claim_id": "a6052ee7-684c-4ce2-b685-eb14d5102416",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "6eb9e8a2-c68e-4006-90ca-6edacb85c2ff",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "91676799-0573-42d4-8cdb-55e07f04aadf",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "395db07b-2b9c-4023-acd2-48245d5f6a94",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "a43a9aea-3a93-42ab-9458-b1333dbe53ba",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "22ffbc93-a5a1-4d97-9c0f-22b9c2dfca7e",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "eb23a7d3-dbb2-4e0f-984b-ec73a6d0fad5",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "1074d9fe-fd8d-4c98-8165-90290e77087f",
+      "result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2"
+    },
+    {
+      "claim_id": "8a807a46-4781-4a38-9010-100e4bac8e4b",
+      "result_id": "17f33c00-d09b-4fe5-83a6-1307d22acf81"
+    },
+    {
+      "claim_id": "4baa0dff-f53e-4c22-9872-e41418466349",
+      "result_id": "17f33c00-d09b-4fe5-83a6-1307d22acf81"
+    },
+    {
+      "claim_id": "ec246898-82c9-48e7-bdc6-8cfb6d74bb69",
+      "result_id": "17f33c00-d09b-4fe5-83a6-1307d22acf81"
+    },
+    {
+      "claim_id": "91dce42d-71f3-4889-a49c-e29b618021f4",
+      "result_id": "17f33c00-d09b-4fe5-83a6-1307d22acf81"
+    },
+    {
+      "claim_id": "867c23ab-d2a5-4d50-ad2b-9bd6eb67ea0f",
+      "result_id": "17f33c00-d09b-4fe5-83a6-1307d22acf81"
+    },
+    {
+      "claim_id": "79e183d6-8ddb-4bec-8852-5ffe8dc759c9",
+      "result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0"
+    },
+    {
+      "claim_id": "4222d92e-67e8-4736-8bed-de065eb7c600",
+      "result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0"
+    },
+    {
+      "claim_id": "865e71aa-ae36-4b21-85ed-187626544d55",
+      "result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0"
+    },
+    {
+      "claim_id": "a50a330c-7039-4157-927e-fbbe8ec4137f",
+      "result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0"
+    },
+    {
+      "claim_id": "9bed150b-7d6d-4611-82ff-0f7174f9e554",
+      "result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0"
+    },
+    {
+      "claim_id": "d8eb1923-b833-4c41-9381-862b387f23d4",
+      "result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0"
+    },
+    {
+      "claim_id": "47727a4f-2aa8-4bd0-a6f2-892fed2ee6c3",
+      "result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7"
+    },
+    {
+      "claim_id": "b979edba-6059-4ecd-9beb-6118837de9e4",
+      "result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7"
+    },
+    {
+      "claim_id": "abdcad97-d264-4e05-a81d-2ab914ddba29",
+      "result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7"
+    },
+    {
+      "claim_id": "961bc77f-a44b-45b3-80be-21667b85becf",
+      "result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7"
+    },
+    {
+      "claim_id": "7de8b646-33f3-4a48-bf67-4e79b937f6b7",
+      "result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7"
+    },
+    {
+      "claim_id": "acbb654b-1b59-433d-be3d-9314ce311de4",
+      "result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7"
+    },
+    {
+      "claim_id": "81d9196c-23a4-4c80-b72f-3d27b3c488d0",
+      "result_id": "524e0523-490d-4002-818f-1945e954dc9a"
+    },
+    {
+      "claim_id": "cf46f54b-a3f6-4303-907b-e44561d834f4",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "032125a2-0891-4299-bb7d-c6c0893f5999",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "70d80209-6604-449c-92a8-52dcb69fa660",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "e242ced8-54dd-4929-91f1-a547a83dbb83",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "37fbf5fe-92e2-4c05-b46a-431e7ab90995",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "b8a4b64b-cb21-4919-9672-2b0efd8dbe1c",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "94fe4329-c887-40fe-b32e-9fd678499186",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "d5b39a01-68a3-4246-bf34-2b872f64f9cd",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "40456773-550e-4a8e-8602-2d0bd2d732f7",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "dcd4f480-fc15-4b31-a5a1-7d765be43e99",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "7f22f259-bb4b-473f-8316-bce3af590e5c",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "0b05a200-bb80-4132-a2b1-63cce6c8a70c",
+      "result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5"
+    },
+    {
+      "claim_id": "b897c347-73ee-4532-896c-07def7b567c8",
+      "result_id": "fff41dc1-0b64-4585-856f-35371dfda3ab"
+    },
+    {
+      "claim_id": "c78b929f-4b69-4a94-94d2-3e6d44aa292a",
+      "result_id": "fff41dc1-0b64-4585-856f-35371dfda3ab"
+    },
+    {
+      "claim_id": "88b84103-7f2e-4359-afec-c9f858687c0d",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "0a0e971e-20b7-43bf-a26c-d60652f37f75",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "faf5d433-7315-460d-b603-7f23f48d9ec5",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "d95e1f3e-6b18-450d-a495-4643c1a94307",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "0b3dc99e-7206-452c-aec2-a8fa1912b333",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "00fe1cb5-09ee-4fbd-9268-cb94e27305f7",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "18054fe6-1034-4bc9-a5df-355ee7381d22",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "2a6704e8-dd03-460c-a2d5-5d968e706118",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "0576271a-f32d-4236-8e37-c2afe89ed262",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "a10a4ca3-2a4c-4348-be64-a48c91663b46",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "bce1e3d0-f1c4-47da-bef1-2324d992b77f",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "52de514b-8419-4dec-9d36-03b8d6b12b5a",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "264edb60-b265-4463-8ec6-3dbd78711c4d",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "64a9391b-88d4-46ff-83a9-032c8b4ca6b3",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    },
+    {
+      "claim_id": "cdbf3908-cf72-476c-a3ce-6e7c7a66cd86",
+      "result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c585bf9e-5e4a-4ecf-be8c-cceb14e7c7b9",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "31878de5-f1ce-43e7-b73c-ccb26a0104ab",
+      "peer_result_id": "0d7f6994-86e8-4640-af37-343bb249ea9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C17-C19 regarding ESM-2 pretraining methodology and compatibility with existing tools. Both evaluations find the approach supported, with peer reviewers explicitly noting the high-dimensional representations can be efficiently combined with existing tools.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "168c7502-3021-4981-98ce-5087db2c7eea",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "bb0d225b-da3d-47e7-b1ef-75f6561b897e",
+      "peer_result_id": "ab5e5a8b-fef0-48d3-98cd-119090a31460",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C20-C22 and C56-C64 regarding CNN training methodology and 64% accuracy results. Both evaluations accept the technical approach and training details. Peer reviewers explicitly affirm the novelty of combining ESM2 with homology detection methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "c9b997da-818b-4efd-826e-44537029cb94",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0779927b-dde0-4d73-a57b-35f2d7fa1a41",
+      "peer_result_id": "17f33c00-d09b-4fe5-83a6-1307d22acf81",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C36-C40 regarding SCOPe40 benchmark results and cross-compatibility analysis. Both evaluations find the comparative performance data convincing, with peer reviewers explicitly stating the benchmarking demonstrates suitability for very low sequence similarity detection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "1b2407b5-24ad-4031-9a12-12b1c98f712b",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d4d365a8-d229-4937-b25a-d86cccdbf6ce",
+      "peer_result_id": "524e0523-490d-4002-818f-1945e954dc9a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claim C49 regarding practical workflow compatibility. Both evaluations accept the utility of using predicted 3Di sequences to search existing databases. Peer reviewers implicitly support this through statements about general interest and practical usefulness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "97caaad0-ade5-4ceb-9a6e-37eed04c9a2f",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "39582553-6569-43b7-8f32-e39b279d0f3d",
+      "peer_result_id": "fff41dc1-0b64-4585-856f-35371dfda3ab",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on claims C51-C52 regarding 3Di limitations and future directions. Both evaluations accept these discussion points without challenge, with peer reviewers describing the paper as proposing an alternative direction for distant homology detection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "8c8a70c1-8760-419e-98e6-55a86ec65838",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "11d82aef-2795-4486-855d-3fd8ebefcbfc",
+      "peer_result_id": "a4fa6695-c8b1-41dd-95fb-5397a21871e2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on claims C23-C29 (benchmark results with identity bins and 1-byte embedding). OpenEval also addresses C50 (central thesis). Both evaluations strongly support the benchmark results, with peer reviewers explicitly affirming the tool is fast and accurate for remote homology detection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "e14afdd7-b0e7-415b-82d7-d202af286ae9",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "d20e75d5-3723-4944-98e1-23253618fd13",
+      "peer_result_id": "52c2be73-810c-45af-8abc-c0c122039366",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on core claims C3-C5 regarding speed and sensitivity. OpenEval also addresses C50 while peer review addresses C16. Both evaluations strongly affirm this central finding, with peer reviewers calling the approach 'convincing' and explicitly supporting both speed and accuracy claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "29ef8b01-9af6-4a69-b2be-d8656a1a181b",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "d8a8bd09-4b25-4be1-a397-320e6653571c",
+      "peer_result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on claims C53-C55 and C68-C74 regarding benchmark datasets and evaluation methodology. Peer review R11 also covers C65, C67, C75-C77 (additional methodological details). Both evaluations accept the benchmark design and methodology as appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "db497187-3c29-4ed8-a001-3f6c0d7bc77a",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "cfd9f7ee-5d2e-46a7-8149-d97a2c757d76",
+      "peer_result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Moderate alignment on claims C2, C7-C12 regarding background on homology detection trade-offs. Peer review R9 covers broader background including C1, C6, C13-C15. Both evaluations accept this background framing, with peer reviewers implicitly supporting by affirming the novelty of the solution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "2abeebec-d273-4349-9a55-67852e215a7e",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d49a0466-d4e9-4979-b0e6-fe7fea72c184",
+      "peer_result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on claims C30-C32 regarding pLM-BLAST poor performance and slowness. Peer review R7 also covers C33-C35 (raw pLM probabilities vs Dirichlet priors). Both evaluations accept these comparative results as part of convincing benchmarking.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "a19b88e1-f1d4-4184-9873-094542ba9a4c",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "66906297-29df-46d7-aac3-d09e2f6f8afb",
+      "peer_result_id": "8bfaae04-ffd1-4183-a512-eaa10fc3b7e7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on claims C33-C35 regarding raw pLM probabilities performing poorly but improving with Dirichlet priors. Peer review R7 also covers C30-C32 (pLM-BLAST issues). Both evaluations accept these methodological findings as part of the overall benchmarking.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "9d46e0b1-dcad-4d4d-ad51-9cc5b1aea32f",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "552c0204-43ef-43f9-baf5-030e9d78c298",
+      "peer_result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on claims C41-C44 regarding computational timing comparisons. OpenEval also addresses C45-C46 (explanation for pLM-BLAST slowness) while peer review R6 also covers C47-C48 (neural network method comparisons). Both evaluations affirm the speed advantages with peer reviewers explicitly noting the method is fast.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "c14b1cc2-cae1-456a-b465-9b1daa5e4f62",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "b70f7c88-8c83-4c3f-a1ea-37511e8e2b71",
+      "peer_result_id": "d94c8eae-8a05-43d2-8e14-f1e90e7d41a0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on claims C47-C48 regarding comparisons with other neural network methods. Peer review R6 primarily focuses on timing claims C41-C44 and also covers these comparative assessments. Both evaluations accept the comparative performance and speed data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "68858da7-5e32-4fc5-b296-a625bd7beb8d",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "c706bec3-a377-4633-bf05-e026a55e39b6",
+      "peer_result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on claims C1 and C6 regarding the 'twilight zone' of sequence similarity. Peer review R9 covers extensive background (C1-C2, C6-C15). Both evaluations accept this established background knowledge without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "6579eca3-0a2c-4dc4-98e5-47ea80dcaec0",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "8a761e8a-b1b2-44d4-9837-867cc44f1a10",
+      "peer_result_id": "d063a05d-fce4-4c09-82d0-37167b61fbf5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on claims C13-C15 regarding profile HMMs and existing methods. OpenEval also addresses C16 (low-dimensional embeddings conceptualization). Peer review R9 covers broader background context. Both evaluations accept the conceptual framework and motivation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "2c44cb24-26ca-4606-94b6-7a8aeb89db63",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "8a761e8a-b1b2-44d4-9837-867cc44f1a10",
+      "peer_result_id": "52c2be73-810c-45af-8abc-c0c122039366",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal alignment on claim C16 regarding characterization as low-dimensional embeddings. OpenEval focuses on conceptual framework (C13-C16) while peer review R1 focuses on core findings (C3-C5, C16). Both accept this conceptual interpretation that motivates the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "ba69c246-8fd3-48b3-947e-1fea01dd7665",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "6e29cf38-210c-4a24-a548-f3b7be5df2a7",
+      "peer_result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal alignment on claims C65 and C67 regarding seven-pass approach justification. Peer review R11 covers extensive methodological details (C53-C55, C65, C67-C77). Both evaluations accept the methodological choices, though OpenEval notes more systematic exploration could strengthen the semi-empirical selection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    },
+    {
+      "id": "ae973142-92f7-42d4-bbdc-dc48df33d1af",
+      "submission_id": "8af97bc1-6d39-4970-95fe-43ef236373e9",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "ff0caf1f-6de8-4e6a-99b4-fe3f800477ff",
+      "peer_result_id": "c15d120d-4c42-42ff-b6e8-7efda8abb285",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal alignment on claims C75-C77 regarding properties of existing methods. Peer review R11 covers extensive methodological details including these claims. Both evaluations accept these characterizations as part of the overall methodological framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:35:26.307459Z"
+    }
+  ]
+}

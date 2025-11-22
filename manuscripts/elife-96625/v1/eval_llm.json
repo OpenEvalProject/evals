@@ -5,363 +5,314 @@
       "C1",
       "C2",
       "C3",
-      "C4",
-      "C5",
-      "C6",
-      "C7",
-      "C8"
+      "C12",
+      "C165",
+      "C169"
     ],
-    "result": "The cerebellum is a well-conserved mammalian brain structure with distinct anatomical organization (three cortical layers, Purkinje and granule cells) that undergoes protracted postnatal development and is implicated in neurodevelopmental disorders.",
+    "result": "The study proposes diffusion-weighted MRS (dMRS) combined with microstructural modeling as a novel, non-invasive method to longitudinally track cell-specific cerebellar and thalamic development in rat neonates from P5 to P30. This addresses a current gap in the field where non-invasive assessment of cerebellar cell structure during early development is not possible.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C8 establish foundational knowledge about cerebellar anatomy, cellular composition, developmental timeline, and clinical relevance. These claims are well-supported by established literature citations and represent accepted knowledge in the field, providing appropriate context for the study.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C1-C3, C12, C165, and C169 collectively establish the methodological innovation and its application. The experimental data across multiple time points (Figures 2-4), combined with biophysical modeling results (Table 1, Figure 4), demonstrate that dMRS can indeed probe early cerebellar neuronal development non-invasively. The method successfully tracks developmental trajectories in both regions with significant regional differences detected.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C9",
-      "C10",
-      "C11",
-      "C12",
-      "C13",
-      "C14"
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C96",
+      "C97"
     ],
-    "result": "Purkinje cells undergo dramatic morphological development from birth to P30 in rodents, evolving from simple soma to highly branched dendritic trees, and this morphology is altered in multiple mouse models of autism spectrum disorders.",
+    "result": "MEMRI imaging validates protracted cerebellar development, showing the cerebellum triples in volume between P5 and P30, reaching 90% of P30 volume at P20, while the thalamus reaches 90% of P30 volume earlier at P15. However, segmentation quality at P5 is poor, requiring cautious interpretation of early time point data.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9-C14 describe Purkinje cell development and pathological alterations, supported by appropriate citations (Beekhof et al., 2021; Fatemi et al., 2002; Tsai et al., 2012; Cupolillo et al., 2016; Yamashiro et al., 2020). This establishes the biological rationale for studying cerebellar microstructural development.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C76-C81, C96-C97 are supported by volumetric data in Figure 2B-C. The authors appropriately acknowledge segmentation limitations at P5 (C77, Figure 2\u2014figure supplement 1) and note that medial structures like cerebellum and thalamus are less affected (C78). The differential developmental timelines between regions are clearly demonstrated and align with cited literature.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C15",
-      "C16",
-      "C17",
-      "C18",
-      "C19",
-      "C20"
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
     ],
-    "result": "The thalamus serves as a relay station with ~60 nuclei, is involved in psychiatric and neurodevelopmental disorders, and develops more rapidly than the cerebellum, making it a suitable control region for developmental comparisons.",
+    "result": "Metabolic profiles change substantially between P5 and P30, with tNAA, Glu, Gln, and Ins increasing, while PE and Tau (thalamus only) decrease. The tNAA increase is protracted in cerebellum compared to thalamus, not reaching plateau by P30. These findings match previous literature measurements.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C15-C20 establish thalamic anatomy, function, clinical relevance, and developmental timeline with appropriate citations (Hwang et al., 2022; Krol et al., 2018; Ant\u00f3n-Bola\u00f1os et al., 2018; Sato et al., 2022; Fatemi and Folsom, 2009). This justifies the choice of thalamus as a control region.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C82-C86 are well-supported by spectroscopic data in Figure 3A-B. The metabolite concentration changes are clearly visualized and quantified. The comparison with Tk\u00e1\u010d et al., 2003 (C86) provides external validation. The protracted tNAA increase in cerebellum (C85) is a key observation distinguishing regional developmental trajectories.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C21",
-      "C22",
-      "C23",
-      "C38",
-      "C39",
-      "C40",
-      "C41"
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C87",
+      "C98"
     ],
-    "result": "MEMRI confirms protracted cerebellar development in rat neonates, with the cerebellum tripling in volume from P5 to P30 and reaching 90% of P30 volume at P20, while the thalamus reaches 90% of P30 volume earlier at P15.",
+    "result": "Metabolites exhibit significantly different diffusion properties between cerebellum and thalamus at each age. Signal attenuation is generally stronger in thalamus (suggesting less restricted diffusion), and there is a trend for lower signal attenuation and ADCs with increasing age (suggesting increasing restriction), particularly striking for taurine in thalamus.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C21-C23, C38-C41 describe MEMRI methodology and volumetric results shown in Figure 2B. The data demonstrate differential developmental trajectories between cerebellum and thalamus, validating the study design. However, the authors acknowledge poor segmentation quality at P5 (Figure 2\u2014figure supplement 1), which should be considered when interpreting early timepoint data.",
+    "evaluation": "Claims C5-C8, C87, C98 are supported by diffusion data in Figure 4 and statistical analyses in Table 1. Regional differences are statistically significant and consistent across metabolites. The age-related trends are clearly visible in the data, with taurine showing the most dramatic changes in thalamus. This demonstrates dMRS sensitivity to developmental microstructural changes.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C24",
-      "C25",
-      "C26",
-      "C27"
+      "C9",
+      "C89",
+      "C93",
+      "C94",
+      "C95",
+      "C104",
+      "C105"
     ],
-    "result": "Diffusion-weighted MRI (dMRI) measures water diffusion properties that provide indirect measures of tissue microstructure, with high cortical FA at birth correlating with radial glia presence that decreases during the first postnatal week.",
+    "result": "Sphere fraction decreases with age for taurine and total creatine in cerebellum, indicating dendritic growth and cellular complexification. Statistical analyses show significant regional differences in sphere fraction for neuronal metabolites (tNAA, Glu, tCr, Tau), with Tau showing significant age-related changes that differ between regions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C24-C27 establish the biological basis for diffusion MRI with appropriate citations (Alexander et al., 2019; H\u00fcppi, 2010; Chokshi et al., 2011). This provides methodological context, though the authors' own dMRI data quality was poor (Figure 4\u2014figure supplement 7), limiting direct validation in this study.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C9, C89, C93-C95, C104-C105 are supported by biophysical modeling results in Figure 4A and Table 1. The sphere fraction parameter is appropriately interpreted as reflecting relative contributions of cell bodies versus processes. Statistical significance is properly assessed with multiple comparison correction. The biological interpretation aligns with known cerebellar development patterns.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34"
+      "C10",
+      "C11",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
     ],
-    "result": "Diffusion-weighted MRS (dMRS) can probe cell-specific microstructure by measuring diffusion of intracellular metabolites that are compartmentalized in neurons (NAA, Glu) or glia (tCho, Ins), with cellular morphological parameters correlating with histological measures in adult mice.",
+    "result": "A surprising U-shaped trend in segment length (Lsegment) is observed in cerebellum, decreasing until P15 then increasing. This trend is validated by morphometric analysis of openly available 3D Purkinje cell reconstructions, which show similar Lsegment decrease up to P13, potentially reflecting dendritic tree complexification following expansion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28-C34 establish the methodological foundation for dMRS with appropriate citations (Ronen and Valette, 2015; Ligneul et al., 2024; Palombo et al., 2016, 2017; Ligneul et al., 2019; Ercan et al., 2016). This validates the approach, though prior validation was in adult animals, not neonates, which represents a key extension of the method.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C10-C11, C161-C164 are supported by morphometric modeling (Figure 4A) and validation with 3D reconstructions (Figure 6). The U-shape is unexpected but independently confirmed by morphometric analysis of NeuroMorph data. The biological interpretation (C164) is reasonable though speculative. This represents a novel finding about cerebellar development that would benefit from further investigation.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C42",
-      "C43",
-      "C44",
-      "C45"
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C115",
+      "C120",
+      "C131",
+      "C166"
     ],
-    "result": "The metabolic profile changes substantially between P5 and P30, with apparent concentrations of tNAA, Glu, Gln, and Ins increasing, PE and Tau decreasing in thalamus, and tNAA showing protracted increase in cerebellum compared to thalamus.",
+    "result": "Multiple lines of evidence suggest taurine diffusion properties reflect Purkinje cell development in cerebellum: (1) Tau is crucial for cerebellar maturation, (2) immunohistochemistry locates Tau in adult Purkinje cells, (3) high Tau levels persist at P30, (4) fsphere(Tau) is lower than fsphere,LT suggesting preferential neuronal localization, and (5) Tau and tNAA show similar parameter evolution when Dintra=0.7 \u03bcm\u00b2/ms.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C42-C45 describe metabolite concentration changes shown in Figure 3. The data are consistent with prior literature (Tk\u00e1c et al., 2003). However, concentrations are 'apparent' (not corrected for T1 or diffusion weighting) and normalized by water content, which itself changes with age. Alternative normalization by macromolecules (Figure 3\u2014figure supplement 1) confirms trends, strengthening conclusions.",
+    "evaluation": "Claims C107-C110, C115, C120, C131, C166 build a convergent case for Tau as a cerebellar neuronal marker. The evidence combines literature citations (C108-C109), current data (C110, Figure 3B), modeling comparisons (C115, C120, Figure 5\u2014figure supplement 1), and biological reasoning. While individual pieces are circumstantial, the convergence is compelling. The recommendation for further validation (C131) is appropriate.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C46",
-      "C47",
-      "C48"
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C129",
+      "C130",
+      "C137",
+      "C138"
     ],
-    "result": "Metabolite diffusion properties differ between cerebellum and thalamus, with stronger signal attenuation in thalamus suggesting less restricted diffusion, and a trend toward lower signal attenuation and ADCs with age suggesting increasing diffusion restriction, particularly striking for taurine in thalamus.",
+    "result": "In thalamus, Tau appears to switch compartments during development: fsphere(Tau) increases with age (opposite to cerebellum), suggesting Tau moves from neuronal compartments at P10 (where fsphere[Tau] nears fsphere[tNAA,Glu]) to glial compartments by P30 (where fsphere[Tau] nears fsphere[tCho,Ins]). This is supported by immunohistochemistry showing Tau in adult thalamic glia.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C48 describe key diffusion findings shown in Figure 4. The regional differences and age-related trends are clearly demonstrated in the data. However, P5 cerebellar data show motion artifacts (Figure 4\u2014figure supplement 9) and should be interpreted cautiously. The interpretation of 'less restricted diffusion' from stronger attenuation is appropriate.",
+    "evaluation": "Claims C121-C123, C126, C129-C130, C137-C138 present a coherent interpretation of thalamic Tau behavior. The increasing sphere fraction (C122, Figure 4\u2014figure supplement 8) is incompatible with stable neuronal localization given that all cell types develop increasing ramification (C124). The compartment switching hypothesis is supported by immunohistochemistry (C130) and explains the concentration decrease (Figure 3B). The conclusion that Tau is unreliable for thalamic neuronal development (C138) is justified.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C49",
-      "C50",
-      "C51",
-      "C52",
-      "C53"
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C167",
+      "C168"
     ],
-    "result": "Biophysical modeling reveals that sphere fraction differs significantly between regions for neuronal markers (tNAA, Glu), with glial markers (Ins, tCho) showing high sphere fractions (~0.7-0.9 for Ins, ~0.5-0.6 for tCho) and a trend of decreasing sphere fraction with age in cerebellum.",
+    "result": "tCr and Tau are identified as more reliable markers than tNAA and Glu for tracking early neuronal development. Both have high spectroscopic signals in neonates and are reliably quantified up to P15 (Tau continues to P30 in cerebellum), with confident diffusion property estimates. However, tCr shows no preferential neuronal compartmentation, making it less specific than Tau.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C49-C53 describe modeling results from the spheres + 'astrosticks' model shown in Figure 4 and Table 1. Statistical analyses with linear mixed effects models and multiple comparison corrections support regional and age-related differences. Model selection was justified by comparing RMSEs (Figure 4\u2014figure supplement 2).",
+    "evaluation": "Claims C132-C136, C167-C168 are supported by CRLB data (Supplementary file 1) and fit quality assessments. The comparison with 'usual' neuronal markers tNAA and Glu is justified by the data quality issues at early time points. The distinction between tCr and Tau regarding neuronal specificity (C136) is supported by the fsphere,LT comparison (Figure 5\u2014figure supplement 1). This represents an important methodological finding for future developmental studies.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C54",
-      "C55",
-      "C56"
+      "C88",
+      "C77"
     ],
-    "result": "For non-specific markers tCr and Tau, sphere fraction differs significantly between regions, but only Tau shows significant age-related changes that differ between regions, with both sphere fraction and radius changing significantly with age in a region-specific manner.",
+    "result": "Data quality issues are identified at P5 in cerebellum, where macromolecular signal attenuation is abnormally strong, indicating residual motion artifacts that could not be corrected during processing. This affects the reliability of P5 cerebellar data.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54-C56 describe statistical results for tCr and Tau from Table 1, including significant interaction terms. The findings are supported by appropriate statistical testing with multiple comparison corrections. These results are central to the authors' interpretation of Tau as a cerebellar developmental marker.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C88 and C77 appropriately identify and acknowledge data quality limitations. The macromolecule signal attenuation (Figure 4\u2014figure supplement 9) provides internal evidence of motion artifacts. The authors correctly shade P5 data in figures and recommend caution. This transparent reporting of limitations strengthens confidence in the overall findings.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C57",
-      "C58"
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
     ],
-    "result": "Prior dMRI studies in humans and mice reported increased FA and decreased MD with age in early life in white matter and gray matter.",
+    "result": "The analytical spheres + 'astrosticks' model was chosen over 'astrocylinders' because the mixing time (TM=100 ms) is too long for fiber radius sensitivity. The sphere compartment accounts for high sphere fraction in cerebellum and neonatal brain characteristics. Model comparison shows RMSEs are more similar at P30, suggesting sphere compartment is less important for adult brain.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C57-C58 cite prior literature (H\u00fcppi, 2010; Chahboune et al., 2009) to contextualize the study's findings. The authors report similar trends in their own dMRI data (Figure 4\u2014figure supplement 7), though they acknowledge poor image quality and refrain from strong conclusions.",
+    "evaluation": "Claims C148-C153 provide appropriate justification for modeling choices. The citation to Ligneul et al., 2024 (C151) supports the mixing time limitation. RMSE comparisons (Figure 4\u2014figure supplement 2, C153) validate model selection. The reasoning is sound and acknowledges both technical constraints and biological considerations. This represents good methodological practice.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C59",
-      "C60",
-      "C61",
-      "C62"
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
     ],
-    "result": "The decrease in sphere fraction for tCr and Tau with age in cerebellum reflects cerebellar cell growth and complexification, consistent with soma maturation in the first week and Purkinje cell dendritic expansion continuing through the fourth postnatal week.",
+    "result": "The morphometric model has significant limitations: only Lsegment and Dintra could be reliably extracted due to suboptimal study design and data quality. Dintra is mostly stable with age. The shorter diffusion path (~30 \u03bcm vs ~45 \u03bcm in previous studies) limits sensitivity, though Tau's higher Dintra is advantageous. Nbranch estimation is very poor, and even with better data, it's unlikely to reflect Purkinje cell morphometry due to their size and complexity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C59-C62 interpret the biophysical modeling results (Figures 4A, 5A) in the context of known Purkinje cell development (McKay and Turner, 2005). The interpretation is reasonable and supported by the data trends, though it remains an inference linking MRS measurements to specific cellular processes.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C154-C159 honestly assess morphometric modeling limitations. The acknowledgment of poor Nbranch estimation (C158) and fundamental limitations for Purkinje cells (C159) demonstrates appropriate scientific caution. The comparison with previous studies (C156) contextualizes the constraints. The identification of Tau's higher Dintra as advantageous (C157) shows thoughtful analysis. This transparent limitation reporting is essential for proper interpretation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C63",
-      "C64",
-      "C65"
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
     ],
-    "result": "Taurine diffusion properties may reflect Purkinje cell development, as Tau dietary deficiency delays cerebellar maturation in cats, immunohistochemistry localizes Tau to adult Purkinje cells, and high Tau levels persist in cerebellum at P30.",
+    "result": "Cross-species conservation of Tau properties supports translational potential: Tau content increases at birth then decreases with age in both human and rhesus monkey brains, marking the immature brain. Tau is more concentrated in cerebellum in adulthood across species. Despite substantial challenges, dMRS in human infants is worth pursuing for studying cerebellar neuronal development and neurodevelopmental disorders.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C65 integrate literature evidence (Aerts and Van Assche, 2002; Madsen et al., 1985; Magnusson et al., 1988; Hussy et al., 2000) with the study's metabolite quantification (Figure 3B) to support Tau as a Purkinje cell marker. The convergent evidence from multiple sources strengthens this interpretation.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C139-C143 appropriately contextualize findings within comparative biology. The citations to human and primate studies (C139-C141) establish cross-species patterns. The inference about translational potential (C142) is reasonable given the conservation. The acknowledgment of challenges while advocating for translation (C143) is balanced. This represents appropriate forward-looking discussion.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C66",
-      "C67"
+      "C99",
+      "C100",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
     ],
-    "result": "Glial metabolite diffusion properties (fsphere for Ins and tCho) tend to decrease with age in cerebellum, potentially explained by Bergmann glia developing long processes along Purkinje cells.",
+    "result": "Sphere fraction (fsphere) is interpreted as reflecting relative volumes of sphere-like structures (cell bodies) versus fibrous structures (cell processes). fsphere is higher in cerebellum for neuronal metabolites, suggesting influence of the cell-body dense granular layer. Glial metabolites also show decreasing fsphere with age, potentially explained by Bergmann glia developing long processes. Comparison with fsphere,LT derived from literature supports interpretations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C66-C67 describe a trend in the data and propose a speculative interpretation. While the trend is observed, the explanation involving Bergmann glia is not directly tested. The authors acknowledge this is one possible explanation for the observed decrease in sphere fraction.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100, C111-C116 provide biological interpretation of modeling parameters. The fsphere interpretation (C100) is reasonable given the model structure. The granular layer explanation (C99) is plausible. The Bergmann glia hypothesis (C112) is speculative but biologically informed. The fsphere,LT comparison (C113-C116, Figure 5\u2014figure supplement 1, Supplementary file 2) provides external validation. The interpretations are appropriately cautious.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C68",
-      "C69",
-      "C70"
+      "C144",
+      "C145",
+      "C146",
+      "C147"
     ],
-    "result": "The evolution of literature-derived fsphere,LT (based on cerebellar layer thicknesses) is comparable to fsphere(tCr), while fsphere(Tau) values are lower and below fsphere,LT, suggesting Tau is preferentially located in cerebellar neurons during development.",
+    "result": "While tNAA shows protracted increase in cerebellum and is typically considered a neuronal marker, its concentration reflects neuronal volumetric contribution (affected by neuronal density), whereas dMRS is a normalized measure representing average morphological properties independent of cell density. This distinction is important for interpreting developmental changes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C68-C70 compare modeling results to literature-derived estimates (Supplementary file 2, Figure 5\u2014figure supplement 1). While the comparison is interesting, fsphere,LT is a rough approximation that doesn't account for all cellular compartments. The inference about Tau localization is reasonable but indirect.",
-    "result_type": "MAJOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 make an important methodological point about the advantages of dMRS over concentration measurements. The observation of protracted tNAA increase (C144, Figure 3B) is data-supported. The distinction between concentration (density-dependent) and diffusion properties (density-independent) (C146-C147) is conceptually sound and important for proper interpretation of developmental data.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C71",
-      "C72",
-      "C73"
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
     ],
-    "result": "Tau has higher intracellular diffusivity (Dintra) than other metabolites, and model fits substantially improve for Dintra >0.6 \u03bcm\u00b2/ms, with the evolution of (R, fsphere) for Tau becoming very similar to tNAA at Dintra = 0.7 \u03bcm\u00b2/ms, reinforcing the idea that Tau is neuronal in cerebellum.",
+    "result": "The experimental design used 18 Sprague-Dawley rats (9 females) from 3 litters, scanned at P5, P10, P15, P20, and P30. Animals from one litter received MEMRI with MnCl2 transferred via maternal milk for pups under P10. Data were acquired on a 7T scanner with mouse cryoprobe using STELASER sequence, with voxel size increased with age to follow brain growth.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71-C73 address an important methodological consideration. The higher Dintra for Tau is supported by prior work (Ligneul and Valette, 2017), and the improved fits at higher Dintra values are shown in Figure 4\u2014figure supplement 2. The similarity to tNAA at appropriate Dintra strengthens the neuronal interpretation.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C170-C176 describe the experimental design and methods. The sample size (18 rats, 3 litters) is reasonable for a developmental study. The MEMRI protocol (C172-C173) follows established methods (Szulc et al., 2015). The equipment and sequence descriptions (C174-C175) are appropriate. Adapting voxel size with age (C176) is a sensible approach to maintain signal quality while following brain growth.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C74",
-      "C75",
-      "C76",
-      "C77"
+      "C117",
+      "C118",
+      "C119",
+      "C120"
     ],
-    "result": "In thalamus, decreasing Tau content and changing diffusion properties point toward compartment switching with age, with fsphere(Tau) increasing (opposite to cerebellum) and nearing fsphere(tNAA, Glu) at P10, suggesting Tau may be in neuronal compartments in neonatal thalamus.",
+    "result": "Tau has higher intrinsic diffusivity (Dintra) than other metabolites. Model fits for Tau were substantially improved for Dintra >0.6 \u03bcm\u00b2/ms, with Dintra=0.7 \u03bcm\u00b2/ms producing similar results for all metabolites and improved sphere radius standard deviations. At this Dintra, tNAA and Tau show very similar (R,fsphere) evolution with age, reinforcing Tau's neuronal localization in cerebellum.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C74-C77 describe thalamic Tau behavior (Figures 3B, 4B, 4\u2014figure supplement 8) and interpret it as compartment switching. The data clearly show opposite trends compared to cerebellum. The interpretation is supported by comparison with neuronal markers and literature on thalamic neuron development (Takeuchi et al., 2014).",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C117-C120 address an important technical consideration. The citation for Tau's higher Dintra (C117, Ligneul and Valette, 2017) provides support. The model fitting improvements (C118-C119, Figure 4\u2014figure supplement 2, 8) are data-supported. The convergence of tNAA and Tau parameters at Dintra=0.7 (C120) strengthens the neuronal localization hypothesis. This represents careful sensitivity analysis.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C78",
-      "C79",
-      "C80",
-      "C81"
+      "C103",
+      "C101",
+      "C102"
     ],
-    "result": "In vitro studies show Tau contributes to neuronal proliferation and growth, and at P30, thalamic fsphere(Tau) is closer to glial markers, with immunohistochemistry localizing Tau to adult thalamic glia, suggesting Tau switches from neuronal to glial compartments during thalamic development.",
+    "result": "The observed trends of lower signal attenuation and ADC decrease with age align with dMRI literature showing increased FA and decreased MD with age in early life (human WM and mouse WM/GM), potentially reflecting overall microstructural complexification. However, the different nature of signals (metabolites vs water) prevents close co-interpretation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C78-C81 integrate in vitro evidence (Hern\u00e1ndez-Ben\u00edtez et al., 2010; Mersman et al., 2020), the study's diffusion data, and immunohistochemistry (Hussy et al., 2000) to support the compartment-switching hypothesis. The convergent evidence from multiple sources strengthens this interpretation, though direct validation in developing thalamus would be ideal.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C101-C103 appropriately contextualize dMRS findings within dMRI literature. The citations to H\u00fcppi, 2010 and Chahboune et al., 2009 support the comparison. The caveat about signal differences (C103) is important and shows appropriate scientific caution. The alignment suggests dMRS captures similar developmental processes as dMRI but with cell-type specificity.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C82",
-      "C83",
-      "C84",
-      "C85"
+      "C160"
     ],
-    "result": "tCr and Tau have high spectroscopic signals in neonates and are the most reliably quantified metabolites up to P15, but tCr shows no preferential neuronal compartmentation during early development, and Tau appears to switch compartments in thalamus, making it less reliable for thalamic neuronal development but potentially useful for cerebellar development.",
+    "result": "Since sufficient directions were acquired for powder-averaging, white matter contribution in cerebellum is expected to be reflected by a slight fsphere drop, as exemplified by fsphere,LT drop when including WM.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C82-C85 assess the reliability and specificity of different metabolites as developmental markers. The assessment is based on the study's data quality (Supplementary file 1) and diffusion measurements. The conclusions are appropriately cautious about tCr and Tau as markers, with important distinctions between regions.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91"
-    ],
-    "result": "In human and rhesus monkey brains, Tau content increases at birth then decreases with age, serving as a marker of brain immaturity, though it remains more concentrated in cerebellum in adulthood, indicating a conserved cross-species pattern.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C86-C91 cite prior literature (H\u00fcppi et al., 1991; Pouwels et al., 1999; Sturman et al., 1980; Emir et al., 2012) to establish Tau as a developmental marker across species. This provides important translational context for the study's findings in rats and suggests potential clinical relevance.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
-      "C92",
-      "C93"
-    ],
-    "result": "There is a protracted increase in tNAA signal in cerebellum compared to thalamus, but dMRS is a normalized measure unaffected by neuronal density, representing average morphological properties of cell types rather than volumetric contributions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C92-C93 make an important methodological point distinguishing dMRS from concentration measurements. The observation of protracted tNAA increase is supported by Figure 3B. The clarification about normalization is important for interpreting the results correctly.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C94",
-      "C95",
-      "C96",
-      "C97"
-    ],
-    "result": "The mixing time used (TM = 100 ms) is too long for fiber radius sensitivity, justifying the 'astrosticks' model choice, and RMSEs from different models are more similar at P30, suggesting sphere compartments are less important for modeling adult brain, though the longest mixing time (1000 ms) is shorter than previous studies, and Nbranch was poorly evaluated due to data noise.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C94-C97 provide important methodological justifications and limitations. The choice of 'astrosticks' model is supported by citation (Ligneul et al., 2024) and RMSE comparisons (Figure 4\u2014figure supplement 2). The authors appropriately acknowledge limitations in parameter estimation, particularly for Nbranch.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C98",
-      "C99",
-      "C100",
-      "C101"
-    ],
-    "result": "For neuronal or partly neuronal metabolites, Lsegment shows a U-shaped curve with age (decreasing until P15, then increasing), matching the trend observed in 3D reconstructed Purkinje cells from NeuroMorph.org, which show decreasing Lsegment up to P13 while remaining stable in thalamus, potentially reflecting dendritic tree complexification following expansion.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C98-C101 describe an unexpected U-shaped trend in Lsegment (Figure 4) that is validated by independent 3D cell reconstructions (Figure 6). This convergent evidence from two independent sources (in vivo dMRS and ex vivo morphometry) strongly supports the finding. The interpretation as reflecting complexification is reasonable though speculative (C101 is labeled as speculation).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C102",
-      "C103",
-      "C104"
-    ],
-    "result": "The study used 18 Sprague-Dawley rats (9 females) scanned at P5, P10, P15, P20, and P30, with MEMRI performed by intraperitoneal injection of 50 mg/kg MnCl2 24 hours prior to scanning, with manganese transferred via maternal milk for pups under P10.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C102-C104 describe the experimental design and MEMRI protocol. The methods are clearly stated and appropriate for the study. The use of maternal milk transfer for young pups is supported by citation (Szulc et al., 2015). Sample size (n=18, 9 per region) is reasonable for longitudinal MRS studies.",
+    "evaluation": "Claim C160 addresses how WM is handled in the analysis. The powder-averaging approach is appropriate for dealing with oriented structures. The expectation of slight fsphere drop is supported by fsphere,LT calculations (Supplementary file 2). This represents reasonable handling of a potential confound, though direct validation would strengthen the conclusion.",
     "result_type": "MINOR"
   }
 ]

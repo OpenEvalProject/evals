@@ -1,0 +1,1600 @@
+{
+  "submission": {
+    "id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:45:56.909073Z",
+    "updated_at": "2025-11-21T23:45:56.909073Z"
+  },
+  "content": [
+    {
+      "id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "content_type": "manuscript",
+      "content_text": "# Simultaneous polyclonal antibody sequencing and epitope mapping by cryo electron microscopy and mass spectrometry\n\n## Authors\n\n- Douwe Schulte<sup>1</sup>\n- Marta \u0160iborov\u00e1<sup>1</sup>\n- Lukas K\u00e4ll<sup>2</sup>\n- Joost Snijder<sup>1</sup> ([ORCID: 0000-0002-9310-8226](https://orcid.org/0000-0002-9310-8226)) \u2020\n\n### Affiliations\n\n1. Biomolecular Mass Spectrometry and Proteomics, Bijvoet Center for Biomolecular Research and Utrecht Institute of Pharmaceutical Sciences, Utrecht University, Padualaan Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))\n2. Science for Life Laboratory, School of Engineering Sciences in Chemistry, Biotechnology and Health, Royal Institute of Technology \u2013 KTH Solna Sweden ([ROR:026vcq606](https://ror.org/026vcq606))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAntibodies are a major component of adaptive immunity against invading pathogens. Here, we explore possibilities for an analytical approach to characterize the antigen-specific antibody repertoire directly from the secreted proteins in convalescent serum. This approach aims to perform simultaneous antibody sequencing and epitope mapping using a combination of single particle cryo-electron microscopy (cryoEM) and bottom-up proteomics techniques based on mass spectrometry (LC-MS/MS). We evaluate the performance of the deep-learning tool ModelAngelo in determining de novo antibody sequences directly from reconstructed 3D volumes of antibody-antigen complexes. We demonstrate that while map quality is a critical bottleneck, it is possible to sequence antibody variable domains from cryoEM reconstructions with accuracies of up to 80\u201390%. While the rate of errors exceeds the typical levels of somatic hypermutation, we show that the ModelAngelo-derived sequences can be used to assign the used V-genes. This provides a functional guide to assemble de novo peptides from LC-MS/MS data more accurately and improves the tolerance to a background of polyclonal antibody sequences. Following this proof-of-principle, we discuss the feasibility and future directions of this approach to characterize antigen-specific antibody repertoires.\n\n## Introduction\n\nAdaptive immunity to invading pathogens is mediated to an important degree by antibodies (Bonilla and Oettgen, 2010; Rees, 2020; Burton, 2023; Lam et al., 2020). The available repertoire of antibodies is unique in individuals and constantly shifting in response to immunological pressure under which activation, selection, proliferation, maturation, and differentiation of the antibody-producing B-cells takes place (Lam et al., 2020; Tellier and Nutt, 2019; Pieper et al., 2013). Therefore, understanding the molecular mechanisms of antibody-mediated immunity requires knowledge of how a complex repertoire of polyclonal antibodies targets a diverse landscape of epitopes on their respective antigens.\n\nThe analytical challenge at hand is to resolve antigen-antibody interactions down to the pairwise contacts between specific amino acid residues in the epitope and paratope regions, respectively. This would enable reconstruction of the evolutionary pathways of somatic recombination and hypermutation that lead to high-affinity antigen binding. Conversely, this would also reveal how this selective immune pressure drives the evolutionary pathways of antigenic drift in targeted pathogens (Marks and Deane, 2020; Han et al., 2023; Vajda et al., 2021; White, 2021). Knowledge of the precise antibody sequences, as well as near-atomic details of the epitope-paratope interaction, are thus prerequisites to understand the coevolution between replicating pathogens and antibody-mediated adaptive immunity in the host.\n\nCurrent methods to determine the antigen-specific antibody repertoire rely on single (memory) B-cell sorting, followed by targeted sequencing of the coding mRNAs for the heavy and light chains (Georgiou et al., 2014; Lavinder et al., 2015). This enables the production of recombinant monoclonal antibodies, whose epitopes may be mapped to near-atomic structural detail by X-ray crystallography and cryo electron microscopy (cryoEM). This approach has generated a wealth of information about antibody-antigen interactions, though it is biased by the limited pool of memory B-cells that it probes. Antibodies function as circulating glycoproteins in bodily fluid, secreted from plasma cells which are in turn derived from diverse pools of memory B cells located in various tissues, including bone marrow, spleen, lymph nodes, and only to a minor degree in blood (Inoue and Kurosaki, 2024; Meng et al., 2017; Akkaya et al., 2020). Serological assays aimed to determine binding and neutralization titers specifically look at the secreted antibody in bodily fluid, and it remains an outstanding question how this \u2018serum compartment\u2019 of the antibody repertoire relates both qualitatively and quantitatively to the minor population of memory B-cells found in peripheral blood. This calls for new analytical approaches that can derive both antibody sequence and epitope information straight from the secreted antibody product.\n\nSuch approaches have been developed in recent years, based on mass spectrometry and electron microscopy. First, using a bottom-up proteomics approach, antibody-derived peptides can be sequenced de novo from fragmentation spectra and assembled into full heavy/light chain sequences (Lavinder et al., 2015; de Graaf et al., 2022). Sequence accuracy is such that functional monoclonal antibodies can be reconstructed from the input data, and several reports have described successful sequencing efforts of human serum, milk, and urine-derived antibodies (Fridy et al., 2014; Peng et al., 2023b; Bondt et al., 2024; Peng et al., 2023a; Tran et al., 2016; Bondt et al., 2021; Sousa et al., 2012; Sen et al., 2017; Rickert et al., 2016; Savidor et al., 2017; Peng et al., 2021; Guthals et al., 2017; Cheung et al., 2012; Castellana et al., 2011; Bandeira et al., 2008; Dupr\u00e9 et al., 2021; Peng et al., 2025). Second, both hydrogen-deuterium exchange mass spectrometry and electron microscopy have been used to resolve a complex landscape of epitopes targeted by polyclonal antibody mixtures (Antanasijevic et al., 2022a; Antanasijevic et al., 2022b; Bangaru et al., 2022; Boyoglu-Barnum et al., 2021; Dingens et al., 2021; Grauslund et al., 2024; Han et al., 2021; Nogal et al., 2020; St\u00e4nder et al., 2021; Zhang et al., 2013; Vorauer et al., 2024). Ward and colleagues have reported that with the latter approach, which they coined Electron Microscopy based Polyclonal Epitope Mapping (EMPEM), they obtained near-atomic resolution reconstructions by cryoEM to resolve side-chain densities in the epitope-paratope region (Antanasijevic et al., 2022a). This opens the possibility to derive antibody sequence information and integrate this into the structural modelling of the interaction. In essence, the reconstructions might reveal which antibodies from the complex polyclonal mixture bind which epitopes on the antigens. The improved resolutions of current cryoEM approaches thus allow for a type of visual proteomics in which protein identity (i.e. antibody sequence) may be directly inferred from the reconstructed 3D volumes (Robinson et al., 2007; Leung et al., 2023; Gui et al., 2022; Gui et al., 2021; Schmidt et al., 2024; Fianu et al., 2024; Cingolani et al., 2024; Jiang et al., 2022; Hugener et al., 2024). While the pure sequencing accuracies from these approaches is obviously limited by resolution/map quality, many tools have been recently developed to infer protein identity in an automated fashion, including cryoID, DeepTracer-ID, findmysequence, and most recently ModelAngelo (Ho et al., 2020; Chang et al., 2022; Chojnowski et al., 2022; Jamali et al., 2024).\n\nHere, we explore the use of ModelAngelo to derive de novo antibody sequences from experimental cryoEM density maps of antibody-antigen complexes. We have previously developed the software tool Stitch, which sorts and assembles MS-derived peptide sequences into full heavy/light chain sequences across complex repertoires (Schulte et al., 2022; Schulte and Snijder, 2024). We adapted Stitch to perform the same task on ModelAngelo-derived de novo models and test the accuracy of the approach on a benchmark of 164 publicly available cryoEM maps of monoclonal antibody-antigen pairs. We demonstrate that map quality is a critical bottleneck, but that antibody sequences can be derived with up to 80\u201390% accuracy. We test the utility of these sequences for assigning the used V-genes, which together with reconstruction of CDRH3 may offer a useful guide to assemble more accurate MS-derived peptide sequences (see Figure 1). We show that such EM-derived templates indeed improve MS-based sequencing accuracy in the context of complex antibody mixtures and that publicly available EMPEM reconstructions are of sufficient quality to leverage this approach. This proof-of-principle offers a promising perspective to integrate cryoEM and MS methods for a comprehensive characterization of the antibody repertoire on both sequence and epitope levels.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig1-v1.jpg)\n\n## Results\n\nTo assess the feasibility of deriving de novo antibody sequences from experimental cryoEM density maps, we assembled a benchmark dataset from the Electron Microscopy Data Bank (see Supplementary file 1). To infer the antibody sequences, we chose the recently published deep-learning tool ModelAngelo, developed by Jamali, Scheres, and colleagues, as it is capable of inferring complete de novo models in cryoEM density maps without the need for user input sequences or main chain models (Ho et al., 2020; Chang et al., 2022; Chojnowski et al., 2022; Jamali et al., 2024). We searched the EMDB for published maps containing antigen-binding fragments (Fabs) of any species, at nominal resolutions of \u22644 \u00c5, released after the training data for ModelAngelo was obtained. These results were filtered for maps that included a deposited atomic model and which contained only a single unique monoclonal Fab (of which multiple copies may be bound in the reconstructed antigen complex). The final benchmark includes 164 maps, including Fabs from human, rabbit, mouse, and macaque species. The maps were used as input data for ModelAngelo without user-provided sequences, yielding completely de novo atomic models of both antigen and Fabs.\n\nThe output models from ModelAngelo are typically fragmented to varying degrees depending on the local quality of the map. In addition, maps may contain multiple copies of the same unique Fab molecule. We therefore aimed to consolidate all fragments for the built Fabs into a single consensus sequence for the antibody variable domains of the heavy and light chains. We have previously developed the software Stitch, which performs assembly of LC-MS/MS derived de novo peptide reads into the correct framework of the heavy and light chains by alignment to germline-template sequences from the ImMunoGeneTics (IMGT) database (Manso et al., 2022; Lefranc, 2014; Lefranc et al., 2015). We adapted Stitch to use models from ModelAngelo (or any mmCIF file) as input data, extract the amino acid sequences, and perform the same template-based assembly with the resulting reads. Of the 164 input maps, 141 and 144 yielded a non-zero alignment score for the heavy and light chains in the Stitch result, respectively. These add up to a total of 152 maps which were analyzed further to evaluate the sequence accuracy of this approach (including 134 maps with a non-zero alignment score for both heavy and light chain).\n\nResults for one of the top-scoring entries in the benchmark, an Influenza B virus neuraminidase tetramer in complex with four identical copies of a neutralizing Fab (Momont et al., 2023), is shown in Figure 2. The consensus sequences generated in Stitch have complete coverage of both heavy and light chain variable domains, including both CDRL3 and CDRH3. The de novo determined sequence is 84% and 86% identical to the true heavy and light chain sequences, respectively. The 15% rate of sequencing errors exceeds the typical levels of somatic hypermutation observed in mature antibody sequences, which are on the order of 1\u201310%. While the derived sequence should therefore not be taken at face value to reconstruct recombinant monoclonal antibodies, we reasoned that the accuracy is nevertheless likely sufficient to correctly infer the corresponding germline V-genes of the mature antibodies.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig2-v1.jpg)\n\n**Figure 2.:** (A) Exemplary map (with top10% alignment scores of 1076/1174 for HC/LC) from the benchmark dataset, representing an Influenza B virus neuraminidase (NA) in complex with four copies of a neutralizing Fab, at global FSC resolution of 2.3 \u00c5. Shown are the deposited map, model, and the de novo model generated by ModelAngelo, along with a detailed view of CDRH3. (B) Consensus sequences for heavy and light chains as generated by Stitch compared to the true sequences. Sequencing errors are indicated by an asterisk (*).\n\nFor each of the 152 maps, we compared the pairwise sequence identity between the top scoring V-genes from the ModelAngelo input in Stitch with the top scoring V-genes from the true sequences (as deposited in the corresponding PDB entry). For reference, we also calculated the pairwise sequence identities of all available V-gene templates per species, reflecting what a completely random draw from the available V-gene repertoire would look like. As shown in Figure 3, the top scoring V-genes from the ModelAngelo sequences have significantly higher pairwise identities than a random draw from the V-gene repertoire in IMGT for both the heavy and light chains (p<0.0001 in unpaired, two-tailed Kolmogorov Smirnov tests). Furthermore, the identity of the inferred V-gene with the true sequence scales with the alignment scores in Stitch, making it a valuable metric for the quality of the V-gene inference. The mean/median V-gene identity in a random draw from the IMGT repertoire is 0.59/0.52 and 0.56/0.53 for the heavy and light chains, respectively. With the ModelAngelo-derived sequences this improves to 0.78/0.87 and 0.75/0.85 for the heavy and light chains in the full dataset. This gradually improves with higher alignment scores to 0.89/1.00 and 0.88/1.00 for heavy and light chains, starting at a cutoff of 80 (representing 92/141 and 80/134 maps for heavy and light chain, respectively). The complete complementarity determining regions CDRH3 and CDRL3 were covered in 66 and 68 maps for the heavy and light chain, respectively, see Figure 4. The length of the complete antigen binding loops was estimated with an average error of 0.5\u00b13.3 or 1.7\u00b16.0 residues for heavy and light chain, with average sequence identities of 0.63 and 0.41. While CDRH3 is the more challenging region in MS-based approaches to antibody sequencing, we believe that the moderately better length and sequence accuracy of CDRH3 compared to CDRL3 in ModelAngelo output reflects the CDRH3\u2019s notoriously tight involvement in antigen binding, hence a greater relative stability in the antibody-antigen complex, resulting in better order in the reconstructed EM density maps. We found the global FSC resolution of the input map to be a poor predictor of both the Stitch alignment score and the inferred V-gene identity, likely because it is dominated by the bulk of the antigen and not representative of the local resolution in the epitope-paratope region as shown in Figure 5. These results demonstrate that candidate V-genes for the antibodies resolved in cryoEM densities can be accurately narrowed down using ModelAngelo and Stitch and that a limited subset of maps contains accurate information on CDR3 sequence and length.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig3-v1.jpg)\n\n**Figure 3.:** (A) Correlation between Stitch alignment score and sequence identity between the top-scoring V-gene of the ModelAngelo vs PDB sequence of the heavy and light chain variable domains, as indicated with the non-parametric Spearman correlation coefficient. (B) Distribution of V-gene sequence identity for progressive alignment score cutoffs, compared to the pairwise V-gene sequence identity in the IMGT repertoire.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig4-v1.jpg)\n\n**Figure 4.:** (A) Coverage of CDR3 for the heavy and light chain. CDR3 was counted for coverage if the de novo sequence spanned the flanking cysteine on the V gene and the tryptophan or phenylalanine on the J gene. Proportion of maps with CDR3 coverage in red/blue, maps with missing CDR3 in grey. (B) Difference in length between de novo modelled CDR3 vs. true sequence. (C) Sequence identity of de novo modelled CDR3 vs. true sequence.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig5-v1.jpg)\n\n**Figure 5.:** The non-parametric Spearman correlation coefficient is indicated for heavy and light chain.\n\nIn the context of polyclonal antibody mixtures, this analysis suggests that cryoEM densities of antigen-antibody complexes from EMPEM experiments can be leveraged to guide sequence assembly from complementary proteomics-based profiling of the same sample (see Figure 1). In such an experiment, reconstructed cryoEM densities would be used as input data for ModelAngelo, from which the sequences are extracted and run through Stitch to select the top-scoring V-gene and construct a placeholder sequence for CDR3 of both the heavy and light chain. These reconstructed variable domains may then act as templates to guide the assembly of de novo peptides from LC-MS/MS data to improve the accuracy of the candidate sequence.\n\nAs a proof-of-principle, we tested this on the monoclonal antibody CR3022, for which both a cryoEM reconstruction and LC-MS/MS data are publicly available (Figure 6). This antibody was isolated from a convalescent survivor of a SARS-CoV infection and targets a cryptic, but conserved epitope at the base of the Spike receptor-binding domain, with cross-neutralization to SARS-CoV-2 (ter Meulen et al., 2006; Yuan et al., 2020). The antibody consists of an IGHV5-51 heavy chain, paired with an IGKV4-1 light chain. When complexed with full-length SARS-CoV-2 Spike, its Fab induces an odd rearrangement of the Spike protomers to yield an antiparallel dimer of S1 subunits in the cryoEM reconstructions (Wrobel et al., 2020; Huo et al., 2020). When using this map as input for ModelAngelo and subsequently Stitch, the IGHV5-51 and IGKV4-1 germline sequences are correctly identified based on their alignment scores. Moreover, complete sequences for CDR3 of the heavy and light chains are built. When using these reconstructed variable domains as templates to guide assembly of the de novo peptide reads from the LC-MS/MS data published by Person and colleagues (Gadush et al., 2022), the final consensus sequences are 96% and 99% identical to the true heavy and light chain respectively. Of note, the only three remaining errors in the six CDR sequences are I/L assignments, which have identical masses and are notoriously challenging for MS-based sequencing.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig6-v1.jpg)\n\n**Figure 6.:** (A) Shown are the deposited cryoEM map (global FSC resolution 4.1 \u00c5), model, and de novo ModelAngelo output for the CR3022 Fab in complex with the SARS-CoV-2 Spike S1 subunit. The sequences were extracted from the de novo model and used as input for Stitch, resulting in the identification of the indicated V-genes and CDR3 sequences. These variable domains were used as templates in Stitch to assemble the LC-MS/MS derived de novo peptides. (B) Consensus sequences for CR3022 from the integrated cryoEM-MS data in Stitch compared to the true heavy and light chain sequences. Sequencing errors are indicated with an asterisk (*) .\n\nFor this CR3022 dataset, derived from the monoclonal antibody, the LC-MS/MS data alone assembled with Stitch against the full range of V-genes already yields a similar accuracy of 97% and 98% for the heavy and light chain, respectively. For the case of an EMPEM experiment, the challenge would rather be to correctly assemble the CR3022 sequence against a background of unrelated antibody sequences in a complex mixture. We therefore tested the utility of the ModelAngelo-derived templates for sequence assembly by also mixing input reads from LC-MS/MS data of unrelated antibodies (Figure 7). First, we mixed in a background of whole IgG from a hospitalized COVID-19 patient (Schulte et al., 2022), representing a diffuse polyclonal background in approximately a 1:1 ratio to the target input reads. Second, we mixed in a background of five additional unrelated anti-Influenza-HA monoclonal antibodies from the same study of Person and colleagues (Gadush et al., 2022), amounting to a 5:1 ratio of background to target input reads. In our previous work on sequencing serum-derived antibodies by bottom-up proteomics with Stitch, we found that assembly of the consensus sequences becomes much more tolerant to background data if, beyond the top scoring V-gene, the remaining unrelated V-genes are also included as decoys for the final template matching step (Schulte et al., 2022). The use of these decoy sequences is also included in the comparison here. Furthermore, we also included the use of the true CR3022 sequences as templates, serving as a best-case scenario, positive control. The analysis confirmed that even without ModelAngelo-derived templates, the sequence assembly with Stitch is already tolerant to the diffuse polyclonal background from the whole IgG fraction, yielding a similar accuracy as in the absence of these background peptides. By contrast, the sequence accuracy plummets to below 0.6 when the background consists of the five additional monoclonal antibodies in a 5:1 ratio to the target input reads. The accuracy is recovered to >0.95 when using either the true CR3022 sequences or the ModelAngelo-derived templates. There is also a gain in accuracy by using decoy templates with the LC-MS/MS data alone, although smaller compared to the use of ModelAngelo-derived templates. These results demonstrate that ModelAngelo-derived templates are useful for sequence assembly against complex polyclonal backgrounds.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig7-v1.jpg)\n\n**Figure 7.:** Plotted are the de novo consensus sequence identities derived from the LC-MS/MS data using either the true sequences, the full IMGT repertoire, or the ModelAngelo-derived variable domains as templates. We compare the output from the CR3022 dataset alone (\u2018No backgr.\u2019) with the output after adding either a diffuse polyclonal IgG background from a COVID-19 patient (\u2018+whole IgG\u2019) or full datasets from five additional anti-Influenza-HA monoclonals (\u2018+5 mAbs\u2019). Use of decoy sequences as indicated by dark/light colors.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig8-v1.jpg)\n\n**Figure 8.:** (A) Plotted are all non-zero alignment scores in Stitch from published EMPEM maps. (B) Views of the variable domains of EMPEM maps with alignment scores >50 for both heavy and light chains. The EMDB identifiers are indicated at each panel.\n\nWe have demonstrated that cryoEM reconstructions of monoclonal antigen-antibody complexes may contain sufficient information to accurately narrow down candidate V-genes and that this can be integrated with proteomics data to improve the accuracy of candidate sequences. We also evaluated whether EMPEM data is indeed of sufficient quality to infer V-genes from automated de novo modeling in the maps (Figure 8). We downloaded all 46 published EMPEM maps from EMDB, of which 23 were of sufficient quality to give a non-zero alignment score when using the ModelAngelo results in Stitch (see Supplementary file 2). Analysis of the benchmark of monoclonal antigen-antibody complexes showed that the quality of the V-gene inference scales with the alignment scores. In this set of EMPEM reconstructions, the alignment scores range from ca. 20\u2013300. Of the 23 maps, 8 have alignment scores above 50 for both heavy and light chain, at which point we estimate the mean/median V-gene identity to be approximately 0.85/0.90. This analysis shows that experimental EMPEM studies may yield sufficiently detailed reconstructions of the antigen-antibody complexes to narrow down the candidate V-genes of the resolved Fabs accurately.\n\n## Discussion\n\nThe development of EMPEM and MS-based polyclonal antibody sequencing now make it possible to profile the antigen-specific antibody repertoire straight from the secreted pool of antibodies in bodily fluids. This approach bridges the gap between established single B-cell sequencing approaches and serological assays to probe binding and neutralization titers. While sample complexity remains an important bottleneck, and questions remain about the dynamic range of the true serum antibody repertoire and the depth of coverage from these novel experimental approaches, several studies have recently reached the important milestone of reconstructing functional antibodies from direct measurements of the secreted serum components (Fridy et al., 2014; Bondt et al., 2024; Peng et al., 2023a; Bondt et al., 2021; Sousa et al., 2012; Rickert et al., 2016; Guthals et al., 2017; Castellana et al., 2011; Antanasijevic et al., 2022a; Ferguson et al., 2024). The present work demonstrates that epitope and sequence information can be integrated using ModelAngelo and Stitch. This approach holds promise to better understand the serum compartment of the antibody repertoire. Use of the cryoEM data in these workflows complements the MS data beyond epitope mapping in several significant ways. First, we demonstrated that narrowing down the candidate V-genes improves the tolerance of LC-MS/MS-derived peptide sequence assembly to background in a complex antibody mixture. Second, heavy-light chain pairing is a problematic blind spot to proteomics sequencing, as the antibodies are denatured and digested as part of the sample workup. In contrast, this pairing is trivial in cryoEM data as the chains are in direct contact in the resolved Fabs in the map. Finally, reconstruction of CDRH3 is especially challenging with proteomics data alone, as it spans the junction between the recombined V-, D-, and J-segments, of which the D-segment is short and hypervariable to a point that germline sequences do not provide a functional template for sequence assembly. While CDRH3 coverage is also limited in ModelAngelo data, it can be built in many cases and a correct estimate of CDRH3 length is already useful to guide assembly of the de novo peptide reads.\n\nHere, we have extracted the flat sequences from ModelAngelo output to use as input for the template matching step in Stitch, using a modified Smith-Waterman Alignment. We believe the template matching step in Stitch could be further improved in several ways. First, ModelAngelo has a built-in database search based on HMMer using profile Hidden Markov Models (HMM) encoding the amino acid probabilities across the alphabet at each position (Mistry et al., 2013). While the ModelAngelo search currently does not consolidate the fragmented output models into a single search to build consensus sequences, we anticipate that implementing a similar HMM profile search in Stitch may further improve the V-gene inference. Indeed, a recent report by Ward and colleagues demonstrates that ModelAngelo and its HMMer search could be implemented to correlate high-resolution EMPEM data with B-cell receptor mRNA sequencing data to speed up and improve success rates of antibody discovery compared to previously reported data analysis pipelines (Ferguson et al., 2024). In addition, from the benchmark dataset analyzed here we might learn what sequencing mistakes are common in ModelAngelo data. This could be used to adjust the conventional Smith-Waterman Alignment in Stitch accordingly, analogous to recent improvements in the alignment algorithm we implemented for MS data (Schulte and Snijder, 2024). Finally, the template matching step in Stitch is now solely based on the sequence of the ModelAngelo models, but we may expand this to a structure-based alignment to better place the error-prone sequence reads in the correct framework of the Ig-domains.\n\nNext steps in our efforts are to bring together the EMPEM work and MS-based polyclonal antibody sequencing on antigen-Fab complexes purified from patient serum. The goal is to reconstruct functional monoclonal antibodies from these analyses as ultimate proof for the accuracy of the derived antibody sequences and then start working on the throughput and depth of coverage in the repertoire. We believe that both EMPEM and MS-based polyclonal antibody sequencing are still limited to the top 1\u201310 antibodies in the polyclonal mixture. The EMPEM approach is biased towards bigger and well-ordered target antigens, which calls for additional complementary approaches like HDX-MS for a comprehensive polyclonal epitope mapping exercise. Bringing together these perspectives in an integrated structural biology approach promises new insights into the serum compartment of the antibody repertoire to better understand the coevolutionary processes of antibody maturation and antigenic drift.\n\n## Materials and methods\n\n### Benchmark of monoclonal antibody-antigen pairs and EMPEM maps from EMDB\n\nWe searched the EMDB for published maps containing antigen-binding fragments (Fabs) of any species, at nominal resolutions of \u22644 \u00c5ngstr\u00f6m, released after the training data for ModelAngelo was obtained (April 1st 2022). The search was performed on February 11th 2023 at https://www.ebi.ac.uk/emdb/ using the search term \u2018antibody fab resolution:[* TO 4] AND release_date:[2022-03-31T00:00:00Z TO 2023-11-02T00:00:00Z] sample_name:*fab* fitted_pdbs:[* TO *]\u2019. These results were filtered for maps that included a deposited atomic model and which contained only a single unique monoclonal Fab (of which multiple copies may be bound in the reconstructed antigen complex). When multiple redundant maps from the same study were included, we selected the single representative map of the highest quality, based on manual inspection. Global FSC resolution was not a good indicator as the maps were often dominated by the bound antigen, which may be better resolved than the bound antibody. Typically, the selected map was the focused/local refinement around the epitope-paratope region, despite its lower nominal resolution. A full overview of the selected maps is provided in Supplementary file 1. The EMPEM maps were compiled based on a literature survey, complemented with a search of the EMDB using the term \u2018polyclonal\u2019. A full overview of the selected EMPEM maps is provided in Supplementary file 2.\n\n### Changes made to Stitch to take CIF input\n\nStitch was extended to allow mmCIF files as input. From these files all chains were extracted as separate amino acid sequences to align in Stitch. ModelAngelo outputs a confidence score per residue in the B-factor column of the mmCIF input, which was used as a local confidence for the sequence. First, each polypeptide gets assigned an Average Local Confidence (ALC) score based on the average across all residues, which can be used as an input filter on the data (along with polypeptide length). Second, the local confidence is used as weight in determining the consensus sequence of overlapping polypeptides, following assembly in Stitch.\n\n### Analysis of monoclonal antigen-antibody and EMPEM benchmarks\n\nSoftware used in this project was curated by SBGrid (Morin et al., 2013). The deposited model mmCIF and EM maps for the full benchmark were downloaded and ran with ModelAngelo (version 1.01) in \u2018build_no_seq\u2019 mode. For each entry in the benchmark the deposited mmCIF was run with Stitch (version 1.5.0-rc.1+6d3b540) using CutoffALC 80, minimum length 5 and TemplateMatching CutoffScore 8. The same was done for each mmCIF file produced by ModelAngelo but with an additional segment containing the antigen and Ig constant domain template sequences. From these runs, the consensus sequence and highest scoring germline for IGHV and IGLV (lambda +kappa) were retrieved. For each consensus sequence, the CDR3 was determined if the flanking cysteine on the V gene and the tryptophan or phenylalanine on the J gene were present. As these conserved residues were not all positioned correctly in the IMGT database, the data was manually fixed based on the same rules. The data from the deposited and produced Stitch runs was compared to produce the identity between the consensus sequences, distance between the inferred germlines, and identity between the CDR3s. The script used for this analysis is deposited as Supplementary Data. The results generated by this analysis is included in Supplementary file 1. The EMPEM benchmark was downloaded, ran through ModelAngelo and subsequently Stitch with identical parameters as above. In contrast to the benchmark detailed before, the ground-truth sequences of these antibodies is not known.\n\n### Analysis of CR3022 data\n\nThe EM data for CR3022 was downloaded from EMDB (EMD-11648) and run with ModelAngelo (version 1.01) in \u2018build_no_seq\u2019 mode. The raw data for monoclonal antibodies CR3022, 107, 1028, 2771, 3576, and 3634 from PRIDE PXD030094 was downloaded and analyzed with PEAKS 10+. These listed monoclonal antibodies were chosen because these are the five most distant sequences from CR3022 and therefore present the biggest challenge to sequence assembly in Stitch (version 1.5.0-rc.1+6d3b540). The PEAKS analysis for the COVID-19 data from PRIDE PXD031941 was downloaded. Three sets of input were prepared: \u2018no background\u2019 consisting of only the CR3022 data, \u2018+whole IgG\u2019 consisting of the CR3022 and the COVID-19 data, and \u2018+5 mAbs\u2019 which consists of all mAbs from the CR3022 study. Three Stitch configurations where prepared: \u2018True\u2019 using the known CR3022 sequence as template as retrieved from PDB 7A5R, \u2018IMGT\u2019 using the conventional configuration of Stitch with all IMGT germlines as templates, and \u2018MA\u2019 using the closest V gene germline to the ModelAngelo consensus sequence of CR3022 together with the CDR3 sequence present. Each of these configurations were run with Stitch Recombine Decoy off and on, with this on for \u2018True\u2019 and \u2018MA\u2019 the full IMGT germline database was added and for \u2018IMGT\u2019 the Stitch parameter Decoy in Recombine was set allowing any unused germline from the Template Matching step to matched in the Recombine step. For all Stitch runs, the CutoffALC was 90 and the TemplateMatching CutoffScore 10. The resulting consensus sequences from these 18 Stitch runs were then compared with the known CR3022 sequence to determine the identity. The full script used for this analysis is included in the deposited Supplementary Data.\n",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mia Smith, University of Colorado Anschutz Medical Campus United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.101322.3.sa0](https://doi.org/10.7554/eLife.101322.3.sa0)\n\nThe paper addresses the problem of optimising the mapping of serum antibody responses against a known antigen. The manuscript describes a method using EM polyclonal epitope mapping to help elucidate endogenous antibodies. The work is interesting and valuable to the fields of immunology and serology, and the strength of evidence to support its findings is considered solid.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101322.3.sa1](https://doi.org/10.7554/eLife.101322.3.sa1)\n\nSummary:\n\nThe paper addresses the problem of optimising the mapping of serum antibody responses against a known antigen. It uses the croEM analysis of polyclonal Fabs to antibody genes, with the ultimate aim of getting complete and accurate antibody sequences. The method, commonly termed EMPEM, is becoming increasingly used to understand responses in convalescent sera and optimisation of the workflows and provision of openly available tools is of genuine value to a growing number of people.\n\nThe authors do not address the experimental aspects of the methods and do not present novel computational tools, rather they use a series of established computational methods to provide workflows that simplify the interpretation of the EM map in terms of the sequences of dominant antibodies.\n\nStrengths:\n\nThe paper is well-written and clearly argued. The tests constructed seem appropriate and fair and demonstrate that the workflow works pretty well. For a small subset (~17%) of the EMPEM maps analysed the workflow was able to get convincing assignments of the V-genes.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101322.3.sa2](https://doi.org/10.7554/eLife.101322.3.sa2)\n\nIn this manuscript, the authors seek to demonstrate that it is possible to sequence antibody variable domains from cryoEM reconstructions in combination with bottom-up LC-MSMS. In particular, they extract de novo sequences from single particle-cryo-EM-derived maps of antibodies using the \"deep-learning tool ModelAngelo\", which are run through the program Stitch to try to select the top scoring V-gene and construct a placeholder sequence for the CDR3 of both the heavy and light chain of the antibody under investigation. These reconstructed variable domains are then used as templates to guide the assembly of de novo peptides from LC-MS/MS data to improve the accuracy of the candidate sequence.\n\nUsing this approach the authors claim to have demonstrated that \"cryoEM reconstructions of monoclonal antigen-antibody complexes may contain sufficient information to accurately narrow down candidate V-genes and that this can be integrated with proteomics data to improve the accuracy of candidate sequences\".\n",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5870532f-eac4-4621-9860-bc8f9414d615",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C1",
+      "claim": "Antibodies are a major component of adaptive immunity against invading pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies are a major component of adaptive immunity against invading pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in immunology, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "1acb0f80-cc17-4ba8-b635-b04da1b44208",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C2",
+      "claim": "The available repertoire of antibodies is unique in individuals and constantly shifting in response to immunological pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The available repertoire of antibodies is unique in individuals and constantly shifting in response to immunological pressure under which activation, selection, proliferation, maturation, and differentiation of the antibody-producing B-cells takes place (Lam et al., 2020; Tellier and Nutt, 2019; Pieper et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "eef396da-cf5a-465d-af64-170085add58a",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C3",
+      "claim": "Current methods to determine the antigen-specific antibody repertoire rely on single (memory) B-cell sorting, followed by targeted sequencing of the coding mRNAs for the heavy and light chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methods to determine the antigen-specific antibody repertoire rely on single (memory) B-cell sorting, followed by targeted sequencing of the coding mRNAs for the heavy and light chains (Georgiou et al., 2014; Lavinder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research describing these methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "b06b884d-459d-4094-a0f9-d98c040bbf82",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C4",
+      "claim": "Antibodies function as circulating glycoproteins in bodily fluid, secreted from plasma cells which are in turn derived from diverse pools of memory B cells located in various tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies function as circulating glycoproteins in bodily fluid, secreted from plasma cells which are in turn derived from diverse pools of memory B cells located in various tissues, including bone marrow, spleen, lymph nodes, and only to a minor degree in blood (Inoue and Kurosaki, 2024; Meng et al., 2017; Akkaya et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research on antibody biology and B cell distribution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "d7ceae81-8f11-47ce-92f4-4994e43240a7",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C5",
+      "claim": "Using a bottom-up proteomics approach, antibody-derived peptides can be sequenced de novo from fragmentation spectra and assembled into full heavy/light chain sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "First, using a bottom-up proteomics approach, antibody-derived peptides can be sequenced de novo from fragmentation spectra and assembled into full heavy/light chain sequences (Lavinder et al., 2015; de Graaf et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research demonstrating this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "afb26b88-ad8f-4ff7-b874-cf7bf1c32441",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C6",
+      "claim": "Sequence accuracy from bottom-up proteomics is such that functional monoclonal antibodies can be reconstructed from the input data.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence accuracy is such that functional monoclonal antibodies can be reconstructed from the input data, and several reports have described successful sequencing efforts of human serum, milk, and urine-derived antibodies (Fridy et al., 2014; Peng et al., 2023b; Bondt et al., 2024; Peng et al., 2023a; Tran et al., 2016; Bondt et al., 2021; Sousa et al., 2012; Sen et al., 2017; Rickert et al., 2016; Savidor et al., 2017; Peng et al., 2021; Guthals et al., 2017; Cheung et al., 2012; Castellana et al., 2011; Bandeira et al., 2008; Dupr\u00e9 et al., 2021; Peng et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by extensive citations to prior research demonstrating successful antibody reconstruction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "dc139a4f-7323-4737-8530-b8f48b31fa2f",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C7",
+      "claim": "Ward and colleagues reported that with EMPEM they obtained near-atomic resolution reconstructions by cryoEM to resolve side-chain densities in the epitope-paratope region.",
+      "claim_type": "EXPLICIT",
+      "source": "Ward and colleagues have reported that with the latter approach, which they coined Electron Microscopy based Polyclonal Epitope Mapping (EMPEM), they obtained near-atomic resolution reconstructions by cryoEM to resolve side-chain densities in the epitope-paratope region (Antanasijevic et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research by Ward and colleagues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "47d27830-2a55-422f-8274-dda6367763d5",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C8",
+      "claim": "The benchmark dataset includes 164 maps, including Fabs from human, rabbit, mouse, and macaque species.",
+      "claim_type": "EXPLICIT",
+      "source": "The final benchmark includes 164 maps, including Fabs from human, rabbit, mouse, and macaque species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the composition of the benchmark dataset assembled for this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "0222a3ca-d67b-44e4-a299-898cf09551d3",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C9",
+      "claim": "Of the 164 input maps, 141 and 144 yielded a non-zero alignment score for the heavy and light chains in the Stitch result, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 164 input maps, 141 and 144 yielded a non-zero alignment score for the heavy and light chains in the Stitch result, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results from the benchmark analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "6adbcf87-6d4a-49f1-9ec1-e681e9fc6c00",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C10",
+      "claim": "152 maps were analyzed further to evaluate the sequence accuracy of this approach.",
+      "claim_type": "EXPLICIT",
+      "source": "These add up to a total of 152 maps which were analyzed further to evaluate the sequence accuracy of this approach (including 134 maps with a non-zero alignment score for both heavy and light chain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of maps included in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "4aefeb52-e419-42f4-aa7a-3665307c04fd",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C12",
+      "claim": "The 15% rate of sequencing errors exceeds the typical levels of somatic hypermutation observed in mature antibody sequences, which are on the order of 1\u201310%.",
+      "claim_type": "EXPLICIT",
+      "source": "The 15% rate of sequencing errors exceeds the typical levels of somatic hypermutation observed in mature antibody sequences, which are on the order of 1\u201310%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Combines experimental data (15% error rate) with established knowledge about somatic hypermutation rates.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "2b81ed79-73cb-4033-bb19-c37a2f8387bd",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C13",
+      "claim": "The top scoring V-genes from the ModelAngelo sequences have significantly higher pairwise identities than a random draw from the V-gene repertoire in IMGT for both the heavy and light chains (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, the top scoring V-genes from the ModelAngelo sequences have significantly higher pairwise identities than a random draw from the V-gene repertoire in IMGT for both the heavy and light chains (p<0.0001 in unpaired, two-tailed Kolmogorov Smirnov tests).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "92cb698b-94ac-4cd7-87d8-26b7a04ba6a8",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C14",
+      "claim": "The mean/median V-gene identity in a random draw from the IMGT repertoire is 0.59/0.52 and 0.56/0.53 for the heavy and light chains, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean/median V-gene identity in a random draw from the IMGT repertoire is 0.59/0.52 and 0.56/0.53 for the heavy and light chains, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical analysis results from the benchmark.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "0b1d7b7d-3663-49e3-bb13-4780dd2143b1",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C15",
+      "claim": "With the ModelAngelo-derived sequences, V-gene identity improves to 0.78/0.87 and 0.75/0.85 for the heavy and light chains in the full dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "With the ModelAngelo-derived sequences this improves to 0.78/0.87 and 0.75/0.85 for the heavy and light chains in the full dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results comparing ModelAngelo performance to random baseline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "ca4323d7-c3dc-4f63-8a48-b266f2350e0f",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C16",
+      "claim": "V-gene identity gradually improves with higher alignment scores to 0.89/1.00 and 0.88/1.00 for heavy and light chains, starting at a cutoff of 80.",
+      "claim_type": "EXPLICIT",
+      "source": "This gradually improves with higher alignment scores to 0.89/1.00 and 0.88/1.00 for heavy and light chains, starting at a cutoff of 80 (representing 92/141 and 80/134 maps for heavy and light chain, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results showing correlation between alignment score and accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "3e97d4e4-6da3-4311-b753-e7a3012ef3c0",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C17",
+      "claim": "The complete complementarity determining regions CDRH3 and CDRL3 were covered in 66 and 68 maps for the heavy and light chain, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete complementarity determining regions CDRH3 and CDRL3 were covered in 66 and 68 maps for the heavy and light chain, respectively, see Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of experimental results with reference to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "55c2d5fe-d7d2-42ee-8551-ce81ac70bb67",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C18",
+      "claim": "The length of the complete antigen binding loops was estimated with an average error of 0.5\u00b13.3 or 1.7\u00b16.0 residues for heavy and light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the complete antigen binding loops was estimated with an average error of 0.5\u00b13.3 or 1.7\u00b16.0 residues for heavy and light chain, with average sequence identities of 0.63 and 0.41.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results quantifying CDR3 length estimation accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "a4f35009-9c3c-4e2e-b89e-d8e9e961d5df",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C19",
+      "claim": "The global FSC resolution of the input map is a poor predictor of both the Stitch alignment score and the inferred V-gene identity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the global FSC resolution of the input map to be a poor predictor of both the Stitch alignment score and the inferred V-gene identity, likely because it is dominated by the bulk of the antigen and not representative of the local resolution in the epitope-paratope region as shown in Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with mechanistic inference about why global resolution is not predictive.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "bb4692ec-6f5c-4bdc-a0c2-71a1b2d0c5f3",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C20",
+      "claim": "CR3022 antibody was isolated from a convalescent survivor of a SARS-CoV infection and targets a cryptic, but conserved epitope at the base of the Spike receptor-binding domain, with cross-neutralization to SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This antibody was isolated from a convalescent survivor of a SARS-CoV infection and targets a cryptic, but conserved epitope at the base of the Spike receptor-binding domain, with cross-neutralization to SARS-CoV-2 (ter Meulen et al., 2006; Yuan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research characterizing the CR3022 antibody.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "81e65db7-dfb0-4efa-baf6-ab3368baf4e9",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C21",
+      "claim": "The CR3022 antibody consists of an IGHV5-51 heavy chain, paired with an IGKV4-1 light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "The antibody consists of an IGHV5-51 heavy chain, paired with an IGKV4-1 light chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the known V-gene composition of CR3022.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "7c37a2aa-c421-48eb-9b99-50a2aefd7349",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C22",
+      "claim": "When using the CR3022 map as input for ModelAngelo and subsequently Stitch, the IGHV5-51 and IGKV4-1 germline sequences are correctly identified based on their alignment scores.",
+      "claim_type": "EXPLICIT",
+      "source": "When using this map as input for ModelAngelo and subsequently Stitch, the IGHV5-51 and IGKV4-1 germline sequences are correctly identified based on their alignment scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results for the CR3022 test case.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "0faa25d4-99cb-4b47-b96c-6180efad2270",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C23",
+      "claim": "When using the reconstructed variable domains as templates to guide assembly of the de novo peptide reads from LC-MS/MS data, the final consensus sequences are 96% and 99% identical to the true heavy and light chain respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When using these reconstructed variable domains as templates to guide assembly of the de novo peptide reads from the LC-MS/MS data published by Person and colleagues (Gadush et al., 2022), the final consensus sequences are 96% and 99% identical to the true heavy and light chain respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results demonstrating improved accuracy with ModelAngelo-derived templates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "9a5a2c89-ac31-4ecc-bc9e-7453c585c121",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C24",
+      "claim": "The only three remaining errors in the six CDR sequences are I/L assignments, which have identical masses and are notoriously challenging for MS-based sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the only three remaining errors in the six CDR sequences are I/L assignments, which have identical masses and are notoriously challenging for MS-based sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Combines experimental observation with established knowledge about I/L ambiguity in mass spectrometry.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "5f052607-d2f6-4eff-a20b-8b658849cafa",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C25",
+      "claim": "For the CR3022 dataset from the monoclonal antibody, the LC-MS/MS data alone assembled with Stitch against the full range of V-genes yields an accuracy of 97% and 98% for the heavy and light chain, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For this CR3022 dataset, derived from the monoclonal antibody, the LC-MS/MS data alone assembled with Stitch against the full range of V-genes already yields a similar accuracy of 97% and 98% for the heavy and light chain, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results for LC-MS/MS-only analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "a80f3483-63f1-4e26-a84e-14d6e050d887",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C26",
+      "claim": "The sequence accuracy plummets to below 0.6 when the background consists of five additional monoclonal antibodies in a 5:1 ratio to the target input reads.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the sequence accuracy plummets to below 0.6 when the background consists of the five additional monoclonal antibodies in a 5:1 ratio to the target input reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results showing impact of monoclonal background on accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "920432c0-75ab-4188-b7f8-206383b49801",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C27",
+      "claim": "The accuracy is recovered to >0.95 when using either the true CR3022 sequences or the ModelAngelo-derived templates.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy is recovered to >0.95 when using either the true CR3022 sequences or the ModelAngelo-derived templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results demonstrating template-guided assembly improves accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "96640a7a-5af0-436c-92e0-e69799f19ccf",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C28",
+      "claim": "46 published EMPEM maps were downloaded from EMDB.",
+      "claim_type": "EXPLICIT",
+      "source": "We downloaded all 46 published EMPEM maps from EMDB, of which 23 were of sufficient quality to give a non-zero alignment score when using the ModelAngelo results in Stitch (see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of EMPEM maps analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "3039539f-867c-4ba1-89fb-87d252dd1339",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C29",
+      "claim": "23 of the 46 EMPEM maps were of sufficient quality to give a non-zero alignment score when using the ModelAngelo results in Stitch.",
+      "claim_type": "EXPLICIT",
+      "source": "We downloaded all 46 published EMPEM maps from EMDB, of which 23 were of sufficient quality to give a non-zero alignment score when using the ModelAngelo results in Stitch (see Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results from EMPEM map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "a57f3bfc-2740-4c2d-8f13-5272a50b49c6",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C30",
+      "claim": "Of the 23 EMPEM maps with non-zero scores, 8 have alignment scores above 50 for both heavy and light chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 23 maps, 8 have alignment scores above 50 for both heavy and light chain, at which point we estimate the mean/median V-gene identity to be approximately 0.85/0.90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results from EMPEM map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "5d1b01fe-d12e-47da-bc7e-6a8719527440",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C31",
+      "claim": "At alignment scores above 50, the mean/median V-gene identity is estimated to be approximately 0.85/0.90.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 23 maps, 8 have alignment scores above 50 for both heavy and light chain, at which point we estimate the mean/median V-gene identity to be approximately 0.85/0.90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the benchmark analysis applied to the EMPEM dataset.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "c881521d-167b-48c9-8fc1-0e8221a52de7",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C32",
+      "claim": "ModelAngelo-derived templates are useful for sequence assembly against complex polyclonal backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that ModelAngelo-derived templates are useful for sequence assembly against complex polyclonal backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the experimental results with CR3022 and background mixtures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "7dcffebf-dbaa-4fc5-b54a-cf8b93e2ea1a",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C33",
+      "claim": "Experimental EMPEM studies may yield sufficiently detailed reconstructions of the antigen-antibody complexes to narrow down the candidate V-genes of the resolved Fabs accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that experimental EMPEM studies may yield sufficiently detailed reconstructions of the antigen-antibody complexes to narrow down the candidate V-genes of the resolved Fabs accurately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the analysis of published EMPEM maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "ee64fa5d-bc58-4919-9c52-655d28708124",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C34",
+      "claim": "Heavy-light chain pairing is a problematic blind spot to proteomics sequencing, as the antibodies are denatured and digested as part of the sample workup.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, heavy-light chain pairing is a problematic blind spot to proteomics sequencing, as the antibodies are denatured and digested as part of the sample workup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about proteomics sample preparation methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "418c40cd-84b2-46d0-93e0-9d82084f1b31",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C35",
+      "claim": "Heavy-light chain pairing is trivial in cryoEM data as the chains are in direct contact in the resolved Fabs in the map.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, this pairing is trivial in cryoEM data as the chains are in direct contact in the resolved Fabs in the map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about cryoEM structure determination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "9cbc4314-0a66-4b6e-bf18-f013be11ceee",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C36",
+      "claim": "Reconstruction of CDRH3 is especially challenging with proteomics data alone, as it spans the junction between the recombined V-, D-, and J-segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, reconstruction of CDRH3 is especially challenging with proteomics data alone, as it spans the junction between the recombined V-, D-, and J-segments, of which the D-segment is short and hypervariable to a point that germline sequences do not provide a functional template for sequence assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about antibody gene recombination and proteomics limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "765596eb-16f1-4ce4-9e2c-882b1f93a734",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C37",
+      "claim": "Both EMPEM and MS-based polyclonal antibody sequencing are still limited to the top 1\u201310 antibodies in the polyclonal mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that both EMPEM and MS-based polyclonal antibody sequencing are still limited to the top 1\u201310 antibodies in the polyclonal mixture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about current limitations of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "7163928e-f42e-4b55-b432-a0c4f83410f8",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C38",
+      "claim": "The EMPEM approach is biased towards bigger and well-ordered target antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "The EMPEM approach is biased towards bigger and well-ordered target antigens, which calls for additional complementary approaches like HDX-MS for a comprehensive polyclonal epitope mapping exercise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about methodological limitations based on the nature of cryoEM structure determination.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "fb22bc3c-a083-4166-a4c0-f535d782714e",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C39",
+      "claim": "The benchmark dataset was searched for published maps containing antigen-binding fragments (Fabs) of any species, at nominal resolutions of \u22644 \u00c5ngstr\u00f6m, released after April 1st 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched the EMDB for published maps containing antigen-binding fragments (Fabs) of any species, at nominal resolutions of \u22644 \u00c5ngstr\u00f6m, released after the training data for ModelAngelo was obtained (April 1st 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the methodology used to assemble the benchmark dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "13141e62-391c-45d6-aab8-ce2376f799d1",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C40",
+      "claim": "The search for benchmark maps was performed on February 11th 2023 at the EMDB website.",
+      "claim_type": "EXPLICIT",
+      "source": "The search was performed on February 11th 2023 at https://www.ebi.ac.uk/emdb/ using the search term 'antibody fab resolution:[* TO 4] AND release_date:[2022-03-31T00:00:00Z TO 2023-11-02T00:00:00Z] sample_name:*fab* fitted_pdbs:[* TO *]'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the methodology including specific search parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "39d81afb-f242-4119-b67a-ddcfeba47083",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C41",
+      "claim": "Stitch was extended to allow mmCIF files as input.",
+      "claim_type": "EXPLICIT",
+      "source": "Stitch was extended to allow mmCIF files as input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about software modifications made for this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "5f2dad96-5664-48bb-8257-cb52930a5051",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C42",
+      "claim": "ModelAngelo outputs a confidence score per residue in the B-factor column of the mmCIF input.",
+      "claim_type": "EXPLICIT",
+      "source": "ModelAngelo outputs a confidence score per residue in the B-factor column of the mmCIF input, which was used as a local confidence for the sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about how ModelAngelo output was processed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "09b2a775-1c19-4723-bb15-3efaac0cefed",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C43",
+      "claim": "The local confidence from ModelAngelo is used as weight in determining the consensus sequence of overlapping polypeptides, following assembly in Stitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the local confidence is used as weight in determining the consensus sequence of overlapping polypeptides, following assembly in Stitch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the methodology for consensus sequence determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "2ef77c18-42f6-41ec-b795-3c7e6df41d27",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C44",
+      "claim": "The deposited model mmCIF and EM maps for the full benchmark were downloaded and ran with ModelAngelo (version 1.01) in 'build_no_seq' mode.",
+      "claim_type": "EXPLICIT",
+      "source": "The deposited model mmCIF and EM maps for the full benchmark were downloaded and ran with ModelAngelo (version 1.01) in 'build_no_seq' mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the computational analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "bdf09590-bae0-4a36-8a65-ec83bc9d5bb4",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C45",
+      "claim": "The identity of the inferred V-gene with the true sequence scales with the alignment scores in Stitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the identity of the inferred V-gene with the true sequence scales with the alignment scores in Stitch, making it a valuable metric for the quality of the V-gene inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the correlation analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "7f9b66ba-f532-4c9e-8338-6d22093d15d4",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C46",
+      "claim": "The moderately better length and sequence accuracy of CDRH3 compared to CDRL3 in ModelAngelo output reflects the CDRH3's notoriously tight involvement in antigen binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While CDRH3 is the more challenging region in MS-based approaches to antibody sequencing, we believe that the moderately better length and sequence accuracy of CDRH3 compared to CDRL3 in ModelAngelo output reflects the CDRH3's notoriously tight involvement in antigen binding, hence a greater relative stability in the antibody-antigen complex, resulting in better order in the reconstructed EM density maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic inference to explain observed differences in CDRH3 vs CDRL3 accuracy.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "a41259cf-56e3-4db5-bb49-ffa3bd708a00",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C47",
+      "claim": "The global FSC resolution is likely dominated by the bulk of the antigen and not representative of the local resolution in the epitope-paratope region.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the global FSC resolution of the input map to be a poor predictor of both the Stitch alignment score and the inferred V-gene identity, likely because it is dominated by the bulk of the antigen and not representative of the local resolution in the epitope-paratope region as shown in Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference to explain why global resolution is not predictive of sequencing accuracy.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "6839effa-0462-4fc9-b61f-27f0f0a6dc49",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C48",
+      "claim": "The sequence assembly with Stitch is already tolerant to the diffuse polyclonal background from the whole IgG fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis confirmed that even without ModelAngelo-derived templates, the sequence assembly with Stitch is already tolerant to the diffuse polyclonal background from the whole IgG fraction, yielding a similar accuracy as in the absence of these background peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results from the background mixing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "43068665-139c-4d32-a807-4c8250df5df1",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C49",
+      "claim": "There is a gain in accuracy by using decoy templates with the LC-MS/MS data alone, although smaller compared to the use of ModelAngelo-derived templates.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also a gain in accuracy by using decoy templates with the LC-MS/MS data alone, although smaller compared to the use of ModelAngelo-derived templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of experimental results comparing different template strategies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "6b4b2564-b622-482a-a1a0-90388e613526",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C50",
+      "claim": "Map quality is a critical bottleneck for deriving antibody sequences from cryoEM reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that while map quality is a critical bottleneck, it is possible to sequence antibody variable domains from cryoEM reconstructions with accuracies of up to 80\u201390%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the benchmark analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "ed35792a-8f40-46b0-b5ce-f7fb1a6d5c34",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C51",
+      "claim": "It is possible to sequence antibody variable domains from cryoEM reconstructions with accuracies of up to 80\u201390%.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that while map quality is a critical bottleneck, it is possible to sequence antibody variable domains from cryoEM reconstructions with accuracies of up to 80\u201390%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the main finding from the benchmark analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "332fa7df-4f5a-44b5-a776-74b8d90740f6",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C52",
+      "claim": "The rate of errors from ModelAngelo sequencing exceeds the typical levels of somatic hypermutation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the rate of errors exceeds the typical levels of somatic hypermutation, we show that the ModelAngelo-derived sequences can be used to assign the used V-genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of observed error rates with known biological variation rates.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "734b1c85-7e8b-4b14-9815-153e1a1a6592",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C53",
+      "claim": "ModelAngelo-derived sequences can be used to assign the used V-genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the rate of errors exceeds the typical levels of somatic hypermutation, we show that the ModelAngelo-derived sequences can be used to assign the used V-genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of a key finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "963bb925-edf4-4f98-b059-40cc1f8a77ea",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C54",
+      "claim": "ModelAngelo-derived sequences provide a functional guide to assemble de novo peptides from LC-MS/MS data more accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a functional guide to assemble de novo peptides from LC-MS/MS data more accurately and improves the tolerance to a background of polyclonal antibody sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the CR3022 proof-of-principle experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "4e092f7d-065d-4cd8-a986-ab20995143d7",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "claim_id": "C55",
+      "claim": "ModelAngelo-derived sequences improve the tolerance to a background of polyclonal antibody sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a functional guide to assemble de novo peptides from LC-MS/MS data more accurately and improves the tolerance to a background of polyclonal antibody sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of a key finding from the background mixing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fd7a1810-2e6d-4484-818c-776c5e4e573c",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A benchmark dataset of 164 cryoEM maps of monoclonal antibody-antigen complexes was assembled from EMDB, filtered for maps with \u22644\u00c5 resolution released after April 1st 2022, and processed with ModelAngelo. Of these, 141 and 144 maps yielded non-zero alignment scores for heavy and light chains respectively, with 152 maps analyzed for sequence accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C39-C40, and C44 provide clear methodology and results for benchmark assembly. The dataset composition, filtering criteria, search parameters, and processing pipeline are explicitly described with specific numbers that are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "ffabe12c-3427-49dd-8a37-6a4f42595468",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ModelAngelo can sequence antibody variable domains from cryoEM reconstructions with accuracies of 80-90% for high-quality maps, though the 15% error rate exceeds typical somatic hypermutation levels. Despite this, ModelAngelo-derived sequences successfully identify V-genes with mean/median identities improving from 0.59/0.52 (random) to 0.78/0.87 for heavy chains and 0.56/0.53 to 0.75/0.85 for light chains, reaching 0.89/1.00 at alignment score cutoffs \u226580.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16, C45, and C50-C53 are well-supported by quantitative data from the benchmark analysis with appropriate statistical testing (Kolmogorov-Smirnov, p<0.0001). The correlation between alignment scores and V-gene identity is demonstrated in Figure 3, and the comparison to random baseline provides proper context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "cf8edbb2-eb94-412e-948a-42b06478fb15",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Complete CDR3 regions (CDRH3 and CDRL3) were covered in 66 and 68 maps respectively. CDR3 length was estimated with average errors of 0.5\u00b13.3 residues (heavy) and 1.7\u00b16.0 residues (light), with sequence identities of 0.63 and 0.41. CDRH3 showed moderately better accuracy than CDRL3, potentially due to tighter antigen binding leading to better order in density maps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 provide quantitative data on CDR3 coverage and accuracy from the benchmark. Claim C46 offers a mechanistic inference that is reasonable given established knowledge about CDRH3's role in antigen binding, though this remains speculative. The data itself is clearly presented in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "aee39599-0b6c-40cb-abda-b8a1091f6e24",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Global FSC resolution is a poor predictor of both Stitch alignment score and inferred V-gene identity, likely because it is dominated by the bulk antigen rather than representing local resolution in the epitope-paratope region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C47 report an important negative finding with mechanistic explanation. The poor correlation is demonstrated in Figure 5, and the inference about antigen-dominated global resolution is reasonable based on structural biology principles, though local resolution analysis would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For the CR3022 antibody (IGHV5-51/IGKV4-1), ModelAngelo correctly identified the V-genes and when used as templates for LC-MS/MS peptide assembly, achieved 96% and 99% identity to true sequences. The three remaining errors were I/L assignments. LC-MS/MS alone achieved 97-98% accuracy for this monoclonal sample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 describe a well-controlled proof-of-principle experiment with CR3022. The results are clearly quantified and the I/L ambiguity is a known limitation of mass spectrometry. The comparison between integrated and MS-only approaches provides appropriate context for evaluating the method's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "e80f7367-5eaa-4621-9d0d-80357acbcf34",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ModelAngelo-derived templates improve tolerance to polyclonal antibody backgrounds. While Stitch tolerates diffuse polyclonal IgG backgrounds, accuracy drops below 0.6 with five monoclonal antibodies at 5:1 background ratio but recovers to >0.95 using ModelAngelo-derived or true templates. This demonstrates that ModelAngelo templates enable more accurate peptide assembly against complex backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C32, C48-C49, and C54-C55 describe systematic background mixing experiments with clear quantitative results shown in Figure 7. The experimental design appropriately tests different background complexities (diffuse polyclonal vs. specific monoclonals) and template strategies (true, IMGT, ModelAngelo, with/without decoys).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "0e34c4df-3fc6-4d7f-98f2-688cc82d20f5",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of 46 published EMPEM maps found 23 with non-zero alignment scores, of which 8 had scores >50 for both chains. At this threshold, mean/median V-gene identity is estimated at ~0.85/0.90, suggesting experimental EMPEM studies can yield sufficiently detailed reconstructions to accurately narrow down candidate V-genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C31 and C33 apply the benchmark-derived metrics to EMPEM data, but without ground truth sequences for validation. The inference that alignment scores >50 correspond to ~0.85/0.90 V-gene identity relies on extrapolation from the monoclonal benchmark. Independent validation of EMPEM-derived sequences would be needed to confirm this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "0a8bdf0b-85a1-43cf-8231-07170bd09eab",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CryoEM data addresses key limitations of proteomics-based antibody sequencing: heavy-light chain pairing is preserved in cryoEM structures but lost during proteomics sample preparation, and CDRH3 reconstruction is challenging with proteomics alone due to the hypervariable D-segment junction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 accurately describe established limitations of proteomics methods and advantages of cryoEM based on well-known principles of sample preparation and antibody gene recombination. These are supported by general knowledge in the field rather than new experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "18a0b58f-5404-49c6-8bee-109197cbc6c2",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both EMPEM and MS-based polyclonal antibody sequencing are estimated to be limited to the top 1-10 antibodies in polyclonal mixtures. EMPEM is biased toward larger, well-ordered antigens, requiring complementary approaches like HDX-MS for comprehensive epitope mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C37-C38 are speculative statements about current limitations without supporting quantitative data. The 1-10 antibody limit is stated as belief rather than demonstrated, and the bias toward well-ordered antigens is inferred from cryoEM principles but not systematically tested. These represent reasonable hypotheses requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "516c3c45-38cb-4e87-ac13-e709bde3b44b",
+      "content_id": "7c6d32ea-f91a-40cc-9729-5ba079985db6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Stitch was extended to accept mmCIF files as input, extracting sequences and using ModelAngelo's per-residue confidence scores (from B-factor column) as weights for consensus sequence determination from overlapping polypeptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 clearly describe methodological modifications to Stitch software. The implementation details are straightforward and the use of confidence scores as weights is a reasonable approach, though validation of this weighting scheme's effectiveness is not explicitly provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "93f24a4d-1096-47cb-8eed-12145c611a45",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors assembled a benchmark dataset of 164 cryoEM maps containing Fabs and demonstrated that ModelAngelo-derived sequences can accurately identify V-genes, with V-gene identity improving from random baseline (0.59/0.52 and 0.56/0.53 for heavy/light chains) to 0.78/0.87 and 0.75/0.85 in the full dataset, and up to 0.89/1.00 and 0.88/1.00 at alignment score cutoffs above 80. The alignment scores in Stitch correlate with V-gene identity accuracy, enabling sequencing of antibody variable domains from cryoEM reconstructions with accuracies of up to 80-90%.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this core finding, with one stating 'the tests constructed seem appropriate and fair and demonstrate that the workflow works pretty well' and another noting the work demonstrates 'it is possible to sequence antibody variable domains from cryoEM reconstructions.' The editor describes the 'strength of evidence to support its findings is considered solid.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "9ca7c87d-5740-41dd-8a93-a2a4c654bc61",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The 15% rate of sequencing errors from ModelAngelo exceeds the typical levels of somatic hypermutation observed in mature antibody sequences (1-10%), but the ModelAngelo-derived sequences can still be used to assign V-genes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this finding or the interpretation that despite higher error rates than biological variation, V-gene assignment remains possible. The acknowledgment of this limitation alongside demonstrated utility is implicitly accepted through the overall positive assessment of the workflow.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "ef2406f9-7b0a-4752-bb8b-480e32f41942",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Complete CDR3 regions (CDRH3 and CDRL3) were covered in 66 and 68 maps respectively, with length estimation errors of 0.5\u00b13.3 residues (heavy) and 1.7\u00b16.0 residues (light), and sequence identities of 0.63 and 0.41. The moderately better accuracy for CDRH3 compared to CDRL3 is attributed to CDRH3's tighter involvement in antigen binding, resulting in better order in reconstructed EM density maps.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these CDR3 reconstruction results or the mechanistic interpretation. The overall positive assessment of the workflow and the statement that 'the strength of evidence to support its findings is considered solid' implicitly supports these findings about CDR3 coverage and accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "605921cb-722a-477b-bf17-5ea7ad4866da",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The global FSC resolution of input maps is a poor predictor of both Stitch alignment score and inferred V-gene identity, likely because it is dominated by the bulk of the antigen and not representative of local resolution in the epitope-paratope region.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this observation or the mechanistic explanation. The finding is presented with supporting data (Figure 5) and the inference about why global resolution is not predictive is consistent with established cryoEM principles, which reviewers implicitly accept.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Using the CR3022 antibody as a proof-of-principle case, the authors demonstrate that ModelAngelo correctly identifies the IGHV5-51 and IGKV4-1 germline sequences, and when used as templates for LC-MS/MS peptide assembly, achieves 96% and 99% identity to true sequences. In complex polyclonal backgrounds (5:1 ratio of additional monoclonal antibodies), accuracy drops below 0.6 without templates but recovers to >0.95 with ModelAngelo-derived templates, demonstrating improved tolerance to polyclonal backgrounds and more accurate de novo peptide assembly.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this integration approach, with one stating the work 'uses the cryoEM analysis of polyclonal Fabs to antibody genes, with the ultimate aim of getting complete and accurate antibody sequences.' The demonstration of improved accuracy with templates in complex backgrounds is not challenged and supports the overall positive assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "d2d2ea93-1aa1-4984-86d0-0a5a8ffe8cf7",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Analysis of 46 published EMPEM maps showed that 23 yielded non-zero alignment scores, with 8 having scores above 50 for both chains (estimated mean/median V-gene identity ~0.85/0.90), demonstrating that experimental EMPEM studies may yield sufficiently detailed reconstructions to accurately narrow down candidate V-genes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this analysis, with one noting 'For a small subset (~17%) of the EMPEM maps analysed the workflow was able to get convincing assignments of the V-genes.' This explicit recognition of the success rate for EMPEM maps, while noting it is a small subset, indicates acceptance of the finding with appropriate qualification.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "d330cd7e-9afb-4fe8-82a4-21bcbbe30f29",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors identify three key advantages of cryoEM over proteomics for antibody sequencing: heavy-light chain pairing is trivial in cryoEM (chains in direct contact) versus problematic in proteomics (denaturation/digestion), and CDRH3 reconstruction is especially challenging with proteomics alone due to the hypervariable D-segment junction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these comparative advantages, which are based on established knowledge about the respective methodologies. The overall positive assessment of the integrated workflow implicitly supports these stated advantages of combining the approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "8880edde-b5d0-4695-8dbb-0e4296203a5b",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors acknowledge that both EMPEM and MS-based polyclonal antibody sequencing are limited to the top 1-10 antibodies in polyclonal mixtures, that EMPEM is biased towards bigger and well-ordered target antigens, and that map quality is a critical bottleneck for deriving antibody sequences from cryoEM reconstructions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept these limitations through their overall assessment. One reviewer notes the workflow 'works pretty well' for a subset of maps, acknowledging the quality-dependent nature of the approach. The transparent discussion of limitations is consistent with the reviewers' positive but measured evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "b256ed43-0770-4d39-a01d-79db49cbb42d",
+      "content_id": "ac21fd00-8c18-47e8-b4c3-a61c0b7722c7",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors describe their methodology for assembling the benchmark dataset (164 maps from EMDB, \u22644\u00c5 resolution, released after April 1st 2022) and extending Stitch to accept mmCIF files as input, using ModelAngelo's per-residue confidence scores as weights for consensus sequence determination.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the methodological approach, with one stating 'The tests constructed seem appropriate and fair.' The use of established computational tools (ModelAngelo, Stitch) in a novel workflow is not challenged, and the benchmark construction is implicitly accepted through the positive assessment of results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "47d27830-2a55-422f-8274-dda6367763d5",
+      "result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c"
+    },
+    {
+      "claim_id": "0222a3ca-d67b-44e4-a299-898cf09551d3",
+      "result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c"
+    },
+    {
+      "claim_id": "6adbcf87-6d4a-49f1-9ec1-e681e9fc6c00",
+      "result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c"
+    },
+    {
+      "claim_id": "fb22bc3c-a083-4166-a4c0-f535d782714e",
+      "result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c"
+    },
+    {
+      "claim_id": "13141e62-391c-45d6-aab8-ce2376f799d1",
+      "result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c"
+    },
+    {
+      "claim_id": "2ef77c18-42f6-41ec-b795-3c7e6df41d27",
+      "result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c"
+    },
+    {
+      "claim_id": "4aefeb52-e419-42f4-aa7a-3665307c04fd",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "2b81ed79-73cb-4033-bb19-c37a2f8387bd",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "92cb698b-94ac-4cd7-87d8-26b7a04ba6a8",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "0b1d7b7d-3663-49e3-bb13-4780dd2143b1",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "ca4323d7-c3dc-4f63-8a48-b266f2350e0f",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "bdf09590-bae0-4a36-8a65-ec83bc9d5bb4",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "6b4b2564-b622-482a-a1a0-90388e613526",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "ed35792a-8f40-46b0-b5ce-f7fb1a6d5c34",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "332fa7df-4f5a-44b5-a776-74b8d90740f6",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "734b1c85-7e8b-4b14-9815-153e1a1a6592",
+      "result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468"
+    },
+    {
+      "claim_id": "3e97d4e4-6da3-4311-b753-e7a3012ef3c0",
+      "result_id": "cf8edbb2-eb94-412e-948a-42b06478fb15"
+    },
+    {
+      "claim_id": "55c2d5fe-d7d2-42ee-8551-ce81ac70bb67",
+      "result_id": "cf8edbb2-eb94-412e-948a-42b06478fb15"
+    },
+    {
+      "claim_id": "7f9b66ba-f532-4c9e-8338-6d22093d15d4",
+      "result_id": "cf8edbb2-eb94-412e-948a-42b06478fb15"
+    },
+    {
+      "claim_id": "a4f35009-9c3c-4e2e-b89e-d8e9e961d5df",
+      "result_id": "aee39599-0b6c-40cb-abda-b8a1091f6e24"
+    },
+    {
+      "claim_id": "a41259cf-56e3-4db5-bb49-ffa3bd708a00",
+      "result_id": "aee39599-0b6c-40cb-abda-b8a1091f6e24"
+    },
+    {
+      "claim_id": "bb4692ec-6f5c-4bdc-a0c2-71a1b2d0c5f3",
+      "result_id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b"
+    },
+    {
+      "claim_id": "81e65db7-dfb0-4efa-baf6-ab3368baf4e9",
+      "result_id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b"
+    },
+    {
+      "claim_id": "7c37a2aa-c421-48eb-9b99-50a2aefd7349",
+      "result_id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b"
+    },
+    {
+      "claim_id": "0faa25d4-99cb-4b47-b96c-6180efad2270",
+      "result_id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b"
+    },
+    {
+      "claim_id": "9a5a2c89-ac31-4ecc-bc9e-7453c585c121",
+      "result_id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b"
+    },
+    {
+      "claim_id": "5f052607-d2f6-4eff-a20b-8b658849cafa",
+      "result_id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b"
+    },
+    {
+      "claim_id": "a80f3483-63f1-4e26-a84e-14d6e050d887",
+      "result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34"
+    },
+    {
+      "claim_id": "920432c0-75ab-4188-b7f8-206383b49801",
+      "result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34"
+    },
+    {
+      "claim_id": "c881521d-167b-48c9-8fc1-0e8221a52de7",
+      "result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34"
+    },
+    {
+      "claim_id": "6839effa-0462-4fc9-b61f-27f0f0a6dc49",
+      "result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34"
+    },
+    {
+      "claim_id": "43068665-139c-4d32-a807-4c8250df5df1",
+      "result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34"
+    },
+    {
+      "claim_id": "963bb925-edf4-4f98-b059-40cc1f8a77ea",
+      "result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34"
+    },
+    {
+      "claim_id": "4e092f7d-065d-4cd8-a986-ab20995143d7",
+      "result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34"
+    },
+    {
+      "claim_id": "96640a7a-5af0-436c-92e0-e69799f19ccf",
+      "result_id": "0e34c4df-3fc6-4d7f-98f2-688cc82d20f5"
+    },
+    {
+      "claim_id": "3039539f-867c-4ba1-89fb-87d252dd1339",
+      "result_id": "0e34c4df-3fc6-4d7f-98f2-688cc82d20f5"
+    },
+    {
+      "claim_id": "a57f3bfc-2740-4c2d-8f13-5272a50b49c6",
+      "result_id": "0e34c4df-3fc6-4d7f-98f2-688cc82d20f5"
+    },
+    {
+      "claim_id": "5d1b01fe-d12e-47da-bc7e-6a8719527440",
+      "result_id": "0e34c4df-3fc6-4d7f-98f2-688cc82d20f5"
+    },
+    {
+      "claim_id": "7dcffebf-dbaa-4fc5-b54a-cf8b93e2ea1a",
+      "result_id": "0e34c4df-3fc6-4d7f-98f2-688cc82d20f5"
+    },
+    {
+      "claim_id": "ee64fa5d-bc58-4919-9c52-655d28708124",
+      "result_id": "0a8bdf0b-85a1-43cf-8231-07170bd09eab"
+    },
+    {
+      "claim_id": "418c40cd-84b2-46d0-93e0-9d82084f1b31",
+      "result_id": "0a8bdf0b-85a1-43cf-8231-07170bd09eab"
+    },
+    {
+      "claim_id": "9cbc4314-0a66-4b6e-bf18-f013be11ceee",
+      "result_id": "0a8bdf0b-85a1-43cf-8231-07170bd09eab"
+    },
+    {
+      "claim_id": "765596eb-16f1-4ce4-9e2c-882b1f93a734",
+      "result_id": "18a0b58f-5404-49c6-8bee-109197cbc6c2"
+    },
+    {
+      "claim_id": "7163928e-f42e-4b55-b432-a0c4f83410f8",
+      "result_id": "18a0b58f-5404-49c6-8bee-109197cbc6c2"
+    },
+    {
+      "claim_id": "39d81afb-f242-4119-b67a-ddcfeba47083",
+      "result_id": "516c3c45-38cb-4e87-ac13-e709bde3b44b"
+    },
+    {
+      "claim_id": "5f2dad96-5664-48bb-8257-cb52930a5051",
+      "result_id": "516c3c45-38cb-4e87-ac13-e709bde3b44b"
+    },
+    {
+      "claim_id": "09b2a775-1c19-4723-bb15-3efaac0cefed",
+      "result_id": "516c3c45-38cb-4e87-ac13-e709bde3b44b"
+    },
+    {
+      "claim_id": "47d27830-2a55-422f-8274-dda6367763d5",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "0222a3ca-d67b-44e4-a299-898cf09551d3",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "6adbcf87-6d4a-49f1-9ec1-e681e9fc6c00",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "2b81ed79-73cb-4033-bb19-c37a2f8387bd",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "92cb698b-94ac-4cd7-87d8-26b7a04ba6a8",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "0b1d7b7d-3663-49e3-bb13-4780dd2143b1",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "ca4323d7-c3dc-4f63-8a48-b266f2350e0f",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "bdf09590-bae0-4a36-8a65-ec83bc9d5bb4",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "ed35792a-8f40-46b0-b5ce-f7fb1a6d5c34",
+      "result_id": "93f24a4d-1096-47cb-8eed-12145c611a45"
+    },
+    {
+      "claim_id": "4aefeb52-e419-42f4-aa7a-3665307c04fd",
+      "result_id": "9ca7c87d-5740-41dd-8a93-a2a4c654bc61"
+    },
+    {
+      "claim_id": "332fa7df-4f5a-44b5-a776-74b8d90740f6",
+      "result_id": "9ca7c87d-5740-41dd-8a93-a2a4c654bc61"
+    },
+    {
+      "claim_id": "3e97d4e4-6da3-4311-b753-e7a3012ef3c0",
+      "result_id": "ef2406f9-7b0a-4752-bb8b-480e32f41942"
+    },
+    {
+      "claim_id": "55c2d5fe-d7d2-42ee-8551-ce81ac70bb67",
+      "result_id": "ef2406f9-7b0a-4752-bb8b-480e32f41942"
+    },
+    {
+      "claim_id": "7f9b66ba-f532-4c9e-8338-6d22093d15d4",
+      "result_id": "ef2406f9-7b0a-4752-bb8b-480e32f41942"
+    },
+    {
+      "claim_id": "a4f35009-9c3c-4e2e-b89e-d8e9e961d5df",
+      "result_id": "605921cb-722a-477b-bf17-5ea7ad4866da"
+    },
+    {
+      "claim_id": "a41259cf-56e3-4db5-bb49-ffa3bd708a00",
+      "result_id": "605921cb-722a-477b-bf17-5ea7ad4866da"
+    },
+    {
+      "claim_id": "bb4692ec-6f5c-4bdc-a0c2-71a1b2d0c5f3",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "81e65db7-dfb0-4efa-baf6-ab3368baf4e9",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "7c37a2aa-c421-48eb-9b99-50a2aefd7349",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "0faa25d4-99cb-4b47-b96c-6180efad2270",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "9a5a2c89-ac31-4ecc-bc9e-7453c585c121",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "5f052607-d2f6-4eff-a20b-8b658849cafa",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "a80f3483-63f1-4e26-a84e-14d6e050d887",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "920432c0-75ab-4188-b7f8-206383b49801",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "c881521d-167b-48c9-8fc1-0e8221a52de7",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "6839effa-0462-4fc9-b61f-27f0f0a6dc49",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "43068665-139c-4d32-a807-4c8250df5df1",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "963bb925-edf4-4f98-b059-40cc1f8a77ea",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "4e092f7d-065d-4cd8-a986-ab20995143d7",
+      "result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6"
+    },
+    {
+      "claim_id": "96640a7a-5af0-436c-92e0-e69799f19ccf",
+      "result_id": "d2d2ea93-1aa1-4984-86d0-0a5a8ffe8cf7"
+    },
+    {
+      "claim_id": "3039539f-867c-4ba1-89fb-87d252dd1339",
+      "result_id": "d2d2ea93-1aa1-4984-86d0-0a5a8ffe8cf7"
+    },
+    {
+      "claim_id": "a57f3bfc-2740-4c2d-8f13-5272a50b49c6",
+      "result_id": "d2d2ea93-1aa1-4984-86d0-0a5a8ffe8cf7"
+    },
+    {
+      "claim_id": "5d1b01fe-d12e-47da-bc7e-6a8719527440",
+      "result_id": "d2d2ea93-1aa1-4984-86d0-0a5a8ffe8cf7"
+    },
+    {
+      "claim_id": "7dcffebf-dbaa-4fc5-b54a-cf8b93e2ea1a",
+      "result_id": "d2d2ea93-1aa1-4984-86d0-0a5a8ffe8cf7"
+    },
+    {
+      "claim_id": "ee64fa5d-bc58-4919-9c52-655d28708124",
+      "result_id": "d330cd7e-9afb-4fe8-82a4-21bcbbe30f29"
+    },
+    {
+      "claim_id": "418c40cd-84b2-46d0-93e0-9d82084f1b31",
+      "result_id": "d330cd7e-9afb-4fe8-82a4-21bcbbe30f29"
+    },
+    {
+      "claim_id": "9cbc4314-0a66-4b6e-bf18-f013be11ceee",
+      "result_id": "d330cd7e-9afb-4fe8-82a4-21bcbbe30f29"
+    },
+    {
+      "claim_id": "765596eb-16f1-4ce4-9e2c-882b1f93a734",
+      "result_id": "8880edde-b5d0-4695-8dbb-0e4296203a5b"
+    },
+    {
+      "claim_id": "7163928e-f42e-4b55-b432-a0c4f83410f8",
+      "result_id": "8880edde-b5d0-4695-8dbb-0e4296203a5b"
+    },
+    {
+      "claim_id": "6b4b2564-b622-482a-a1a0-90388e613526",
+      "result_id": "8880edde-b5d0-4695-8dbb-0e4296203a5b"
+    },
+    {
+      "claim_id": "fb22bc3c-a083-4166-a4c0-f535d782714e",
+      "result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d"
+    },
+    {
+      "claim_id": "13141e62-391c-45d6-aab8-ce2376f799d1",
+      "result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d"
+    },
+    {
+      "claim_id": "39d81afb-f242-4119-b67a-ddcfeba47083",
+      "result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d"
+    },
+    {
+      "claim_id": "5f2dad96-5664-48bb-8257-cb52930a5051",
+      "result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d"
+    },
+    {
+      "claim_id": "09b2a775-1c19-4723-bb15-3efaac0cefed",
+      "result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d"
+    },
+    {
+      "claim_id": "2ef77c18-42f6-41ec-b795-3c7e6df41d27",
+      "result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f6ad8588-5d41-4451-ba89-c0dfc31422c0",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "cf8edbb2-eb94-412e-948a-42b06478fb15",
+      "peer_result_id": "ef2406f9-7b0a-4752-bb8b-480e32f41942",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on CDR3 coverage and accuracy claims (C17, C18, C46). Both evaluations find the data well-supported, with OpenEval noting the mechanistic inference is reasonable but speculative, while peer reviewers implicitly accept these findings through their overall positive assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "2ddb7735-a476-4cc1-a7a8-df16aea96847",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "aee39599-0b6c-40cb-abda-b8a1091f6e24",
+      "peer_result_id": "605921cb-722a-477b-bf17-5ea7ad4866da",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on the negative finding regarding global resolution correlation (C19, C47). Both evaluations accept the observation and mechanistic explanation, with OpenEval suggesting local resolution analysis would strengthen conclusions, while peer reviewers do not challenge the interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "3fad4d5d-5e69-41f1-81ac-bda34d809316",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0e34c4df-3fc6-4d7f-98f2-688cc82d20f5",
+      "peer_result_id": "d2d2ea93-1aa1-4984-86d0-0a5a8ffe8cf7",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on confidence level for EMPEM application (C28-C31, C33). OpenEval rates as UNCERTAIN due to lack of ground truth validation and reliance on extrapolation from benchmark, while peer reviewers rate as SUPPORTED, explicitly acknowledging the ~17% success rate with appropriate qualification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "1f9a97ff-4599-483f-8879-612bf52e2544",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0a8bdf0b-85a1-43cf-8231-07170bd09eab",
+      "peer_result_id": "d330cd7e-9afb-4fe8-82a4-21bcbbe30f29",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on comparative advantages of cryoEM over proteomics (C34-C36). Both evaluations find these claims supported, with OpenEval noting they are based on established field knowledge rather than new data, and peer reviewers implicitly accepting through positive assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "9c90ec1b-43fb-4aa3-8e5d-dfa955eaff20",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "18a0b58f-5404-49c6-8bee-109197cbc6c2",
+      "peer_result_id": "8880edde-b5d0-4695-8dbb-0e4296203a5b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on current limitations (C37, C38). OpenEval rates as UNCERTAIN, noting these are speculative statements without quantitative support, while peer reviewers rate as SUPPORTED, accepting the transparent discussion of limitations as consistent with measured evaluation. Peer R8 also includes C50 which OpenEval addresses in R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "3fe2dfd7-3710-4e67-baf4-3ab7015d0a87",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "e80f7367-5eaa-4621-9d0d-80357acbcf34",
+      "peer_result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background mixing experiments and integration approach (C26-C27, C32, C48-C49, C54-C55). Both find these well-supported. OpenEval emphasizes systematic experimental design, while peer reviewers explicitly affirm the integration approach and improved accuracy with templates. Peer R5 also covers CR3022 proof-of-principle (C20-C25) which OpenEval addresses separately in R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "f13699aa-cf88-430c-bdb4-5f45796b88b2",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "516c3c45-38cb-4e87-ac13-e709bde3b44b",
+      "peer_result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on methodological modifications (C41-C43). Both evaluations find these supported, with OpenEval noting implementation is straightforward but validation of weighting scheme not explicit, while peer reviewers affirm the methodological approach as 'appropriate and fair.' Peer R9 also includes benchmark construction claims (C39-C40, C44) which OpenEval addresses in R1.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "64ff63fa-f8c7-447d-af7c-f1255d069956",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c",
+      "peer_result_id": "93f24a4d-1096-47cb-8eed-12145c611a45",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on benchmark assembly and methodology (C8-C10). Both rate as SUPPORTED. OpenEval R1 focuses on benchmark assembly methodology (C8-C10, C39-C40, C44), while peer R1 emphasizes core workflow validation findings (C8-C10, C13-C16, C45, C51), with explicit reviewer affirmation that 'tests constructed seem appropriate and fair.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "d17822f9-7748-4719-93b0-92eba989e945",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468",
+      "peer_result_id": "93f24a4d-1096-47cb-8eed-12145c611a45",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial overlap on benchmark analysis results (C13-C16, C45, C51). Both rate as SUPPORTED. OpenEval R2 provides detailed statistical validation (Kolmogorov-Smirnov, p<0.0001) for correlation findings (C12-C16, C45, C50-C53), while peer R1 affirms the workflow works 'pretty well' and evidence is 'solid,' covering subset of these claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "afc4f6c1-21ee-4457-8d82-0de4c26b1c10",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468",
+      "peer_result_id": "9ca7c87d-5740-41dd-8a93-a2a4c654bc61",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on error rates and V-gene assignment (C12, C52). Both rate as SUPPORTED. OpenEval emphasizes quantitative validation with appropriate statistical testing, while peer reviewers implicitly accept that despite higher error rates, V-gene assignment remains possible, not challenging the finding or interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "73583008-7f8e-48cb-a01b-af0102fd2e1f",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "30c9f9eb-4e47-40b1-9537-97bb38beeb2b",
+      "peer_result_id": "ab0e10c9-22fe-400d-8535-b88ea8cf48f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on CR3022 proof-of-principle experiment (C20-C25). Both rate as SUPPORTED. OpenEval describes well-controlled experiment with clear quantification and known MS limitations, while peer R5 also encompasses broader integration approach validation (C26-C27, C32, C48-C49, C54-C55) which OpenEval addresses separately in R6.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "47718792-a7d1-40cc-950e-c546db5762c4",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "fd7a1810-2e6d-4484-818c-776c5e4e573c",
+      "peer_result_id": "b256ed43-0770-4d39-a01d-79db49cbb42d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on benchmark construction methodology (C39-C40, C44). Both rate as SUPPORTED. OpenEval R1 emphasizes explicit methodology description with internal consistency, while peer R9 affirms methodological approach and benchmark construction through positive assessment of results, also covering software modifications (C41-C43).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    },
+    {
+      "id": "6455e0a1-26ea-4ca9-a69c-64e55550d756",
+      "submission_id": "048241ac-322e-4d53-9978-9fe9c69a640e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "ffabe12c-3427-49dd-8a37-6a4f42595468",
+      "peer_result_id": "8880edde-b5d0-4695-8dbb-0e4296203a5b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on alignment score interpretation (C50). OpenEval R2 rates benchmark analysis as SUPPORTED with detailed statistical validation, while peer R8 addresses current limitations and quality-dependent nature, rating as SUPPORTED the transparent discussion of constraints including alignment score thresholds.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:45:56.909073Z"
+    }
+  ]
+}

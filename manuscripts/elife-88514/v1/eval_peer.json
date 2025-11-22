@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C25",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Humans and monkeys performed a matched virtual balancing task (CST) under comparable experimental conditions, showing similar behavioral patterns across species. Both species exhibited comparable success rates, hand-cursor correlations, response lags, and RMS ratios that changed systematically with task difficulty, suggesting similar control strategies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the cross-species comparison as a strength. Reviewer 1 states 'the comparison between human and NHP performance is important' and 'highlights that there are clear similarities in motor strategies of humans and NHPs.' Reviewer 2 notes the study 'could offer valuable insights into how humans and non-human primates manage visuomotor tasks.' The matched experimental design and behavioral similarities are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Two qualitatively different behavioral patterns were observed in the data: one with oscillatory cursor movements around center (Position Control) and another with slow drift or stillness anywhere within boundaries (Velocity Control). These patterns were hypothesized to arise from different control objectives focused on different state variables.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly confirms this observation: 'Behavior in monkeys and in human subjects suggests that behavior seems to include two qualitatively different kinds of behavior - in some cases, the cursor oscillates about the center of the screen, and in other cases, it drifts more slowly in one direction.' The qualitative behavioral patterns themselves are not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C113",
+      "C116",
+      "C122"
+    ],
+    "result": "An optimal feedback control (OFC) model was developed that could simulate the CST under different control objectives (Position and Velocity Control). The model captured overall behavioral characteristics observed in humans and monkeys at an aggregate level, including success rates, correlations, lag, and RMS ratios across difficulty levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states the study 'leverages experiments in humans and computational modeling' and that 'A computational model based on optimal feedback control can reproduce the different behaviors under these two instructions.' Reviewer 1 notes 'the strength of the present manuscript is that it includes modelling, explicit strategy instructions in humans.' The model's ability to capture aggregate behavior is affirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The model predicted that Position and Velocity Control would differ significantly in response lag and hand/cursor RMS ratio. Experiment 2 validated these predictions: human subjects explicitly instructed to use Position Control showed significantly larger lag and RMS ratio compared to those instructed to use Velocity Control, matching model predictions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 confirms 'The authors convincingly demonstrate that they can infer the control objectives from participants who were instructed how to perform the task to emphasize either position or velocity control.' Reviewer 1 acknowledges the validation approach as a strength. The instructed human experiments successfully validated the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "State-space metrics were developed showing that Position Control resulted in distributions with little correlation between cursor position and velocity scattered around center, while Velocity Control showed elongated distributions with strong position-velocity correlation. These distinctions were validated in instructed human subjects and could not be explained by variations in noise, delay, or effort cost.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'The authors show that, while other behavioral metrics do contain similar information about the control objective, RMS position and velocity are sufficient.' The sensitivity analyses ruling out alternative explanations are acknowledged: 'The authors also convincingly show that the range of behaviors observed in the CST task cannot be explained as emerging from variations in effort cost, motor execution noise, or sensorimotor delays.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A classifier was developed using RMS cursor position and velocity metrics, trained on model simulations. The classifier achieved ~95% accuracy on simulated data and successfully classified instructed human subjects according to their given instructions, demonstrating the approach could infer control objectives without being trained on experimental data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'their approach classifies control objectives for simulated data with high accuracy (~95%)' and 'The authors convincingly demonstrate that they can infer the control objectives from participants who were instructed how to perform the task.' Reviewer 1 notes 'The revised manuscript has improved the technique for identifying which strategy appears to be performed by the individual' and 'now uses a more strict criteria which is good improvement.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C124",
+      "C125"
+    ],
+    "result": "The classifier was applied to uninstructed humans and monkeys to infer their control objectives on a trial-by-trial basis. Results showed individual preferences (e.g., Monkey I preferred Velocity Control, Monkey J preferred Position Control), though a large number of trials fell between the Position and Velocity Control boundaries, possibly reflecting mixed strategies or trial-to-trial switching.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the core concern across all reviewers. The editor states 'some results, particularly from the binary classification of control strategies for non instructed behaviour, require further validation.' Reviewer 1 notes 'there is still substantial overlap in behavoural performance predicted between strategies, as some human participants given an explicit strategy were almost equally categorized as reflecting the other strategy.' Reviewer 2 raises the critical issue: 'there are a lot of trials that fall in-between the patterns of behavior expected under the position and velocity control objectives' and questions whether 'the monkeys are switching between control objectives on a trial-by-trial basis, but there is no real evidence in the data for this.' The existence of many intermediate trials undermines confidence in the binary classification for uninstructed behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C103",
+      "C104"
+    ],
+    "result": "The CST is a challenging task that continuously engages feedback-driven control mechanisms, exhibits trial-to-trial and subject-to-subject variability, and is learnable by both monkeys and humans who can achieve similar proficiency levels. The task difficulty can be titrated to enable systematic behavioral study.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'I think the CST task provides a very useful behavioural task to explore the neural basis of voluntary control.' Reviewer 2 notes 'This task is of considerable interest since it is rich enough to potentially yield important novel insights into the neural basis of behavior in more complex tasks that point-to-point reaching. Yet it is also simple enough to allow parallel investigation in humans and monkeys.' The task design is consistently praised.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Future experimental manipulations such as introducing perturbations during task performance could potentially enhance distinction between control objectives. Simulations showed that introducing random offsets in initial cursor position more clearly distinguished between control objectives.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly welcomes this direction: 'I'm glad to see the addition of the model performance on perturbation trials as this additional figure clearly highlights much greater separation in performance than when observing natural behavior' and states 'I think it is essential for this group to develop the perturbation paradigm (and potentially other approaches) that can better isolate behavioral signatures of different control strategies.' This is seen as an important future direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study focused on identifying behavioral signatures of extreme cases (predominantly position or velocity control) rather than claiming to provide 'ground truth.' This approach may help detect differences in neural activity in future studies, and sufficient trials can be accumulated with monkeys over many days.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors' acknowledgment of limitations is implicitly accepted by reviewers. Reviewer 1 notes 'Given the novelty of this question and approach, there likely are many ways that the techniques and approaches could be improved, but I think they've done a great start.' The framing as a starting point for future neural studies is viewed positively.",
+    "result_type": "MINOR"
+  }
+]

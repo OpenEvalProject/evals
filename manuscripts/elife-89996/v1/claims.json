@@ -300,19 +300,6 @@
   },
   {
     "claim_id": "C23",
-    "claim": "The neuronal representation of color in mouse visual cortex is strongest for photopic light levels that predominantly drive cone photoreceptors.",
-    "claim_type": "EXPLICIT",
-    "source": "our results demonstrate that the neuronal representation of color in mouse visual cortex greatly depends on ambient light levels, and is strongest for photopic light levels that predominantly drive cone photoreceptors",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by experimental data at different light levels",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C24",
     "claim": "The color axis explained 39% of the variance in the upper visual field.",
     "claim_type": "EXPLICIT",
     "source": "It captured 39% of the variance in the upper visual field and only 19% of the variance in the lower visual field.",
@@ -325,8 +312,8 @@
     ]
   },
   {
-    "claim_id": "C25",
-    "claim": "The color axis explained 19% of the variance in the lower visual field.",
+    "claim_id": "C24",
+    "claim": "The color axis explained only 19% of the variance in the lower visual field.",
     "claim_type": "EXPLICIT",
     "source": "It captured 39% of the variance in the upper visual field and only 19% of the variance in the lower visual field.",
     "source_type": [
@@ -338,7 +325,7 @@
     ]
   },
   {
-    "claim_id": "C26",
+    "claim_id": "C25",
     "claim": "The discriminability of stimulus color was significantly higher when using the responses of posterior V1 neurons for decoding.",
     "claim_type": "EXPLICIT",
     "source": "In line with this, the discriminability of stimulus color was significantly higher when using the responses of posterior V1 neurons for decoding (Figure 4c).",
@@ -352,7 +339,7 @@
     ]
   },
   {
-    "claim_id": "C27",
+    "claim_id": "C26",
     "claim": "Color contrast in scenes from the mouse's natural environment is enriched in the upper visual field.",
     "claim_type": "EXPLICIT",
     "source": "Recently, it has been demonstrated that color contrast in scenes from the mouse's natural environment is enriched in the upper visual field (Figure 4a; Qiu et al., 2021; Abballe and Asari, 2022).",
@@ -366,7 +353,7 @@
     ]
   },
   {
-    "claim_id": "C29",
+    "claim_id": "C28",
     "claim": "The mean assignment accuracy of generated ground-truth labels was 89.2% (\u00b16%).",
     "claim_type": "EXPLICIT",
     "source": "The mean assignment accuracy of generated ground-truth labels was 89.2% (\u00b16%)",
@@ -379,7 +366,7 @@
     ]
   },
   {
-    "claim_id": "C30",
+    "claim_id": "C29",
     "claim": "All response types were present in all mice.",
     "claim_type": "EXPLICIT",
     "source": "all response types were present in all mice (Figure 5\u2014figure supplement 1b, c)",
@@ -393,7 +380,7 @@
     ]
   },
   {
-    "claim_id": "C31",
+    "claim_id": "C30",
     "claim": "Approximately half of the response types were sensitive to luminance contrast.",
     "claim_type": "EXPLICIT",
     "source": "Approximately half of the response types were sensitive to luminance contrast (types 1\u20138)",
@@ -406,7 +393,7 @@
     ]
   },
   {
-    "claim_id": "C32",
+    "claim_id": "C31",
     "claim": "Response types with green-Off/UV-On color-opponency were uniformly spread across the anterior-posterior axis of mouse V1.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, response types with green-Off/UV-On color-opponency were also uniformly spread across the anterior-posterior axis of mouse V1",
@@ -419,7 +406,7 @@
     ]
   },
   {
-    "claim_id": "C33",
+    "claim_id": "C32",
     "claim": "Response types with a green-On/UV-Off color-opponency were almost exclusively confined to posterior V1.",
     "claim_type": "EXPLICIT",
     "source": "To our surprise, response types with a green-On/UV-Off color-opponency were almost exclusively confined to posterior V1.",
@@ -432,7 +419,7 @@
     ]
   },
   {
-    "claim_id": "C34",
+    "claim_id": "C33",
     "claim": "The color axis explained 73% of ETA variance for the response types enriched in posterior cortex.",
     "claim_type": "EXPLICIT",
     "source": "As a result of this, the color axis explained 73% of ETA variance for the response types enriched in posterior cortex",
@@ -445,8 +432,8 @@
     ]
   },
   {
-    "claim_id": "C35",
-    "claim": "The color axis explained 17% of ETA variance for the anterior-enriched response types.",
+    "claim_id": "C34",
+    "claim": "The color axis explained only 17% for the anterior-enriched response types.",
     "claim_type": "EXPLICIT",
     "source": "while it explained only 17% for the anterior-enriched response types",
     "source_type": [
@@ -458,15 +445,28 @@
     ]
   },
   {
-    "claim_id": "C36",
-    "claim": "Green-On/UV-Off response types were the two best performing types for decoding dark objects in noisy scenes.",
+    "claim_id": "C35",
+    "claim": "All UV-Off types responded to the predator-like object.",
     "claim_type": "EXPLICIT",
-    "source": "While all Off-center response types sensitive to luminance contrast could decode the dark object, the two best performing types corresponded to the green-On/UV-Off response types enriched in posterior V1 (Figure 5f).",
+    "source": "We found that all UV-Off types responded to the predator-like object",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "Supported by computational modeling and decoding analysis",
+    "evidence": "Supported by computational modeling",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The green-On/UV-Off response types responded more selectively to the predator-like object without also responding to the noise scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "but the green-On/UV-Off response types did so more selectively, without also responding to the noise scenes",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by computational modeling",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -474,14 +474,14 @@
   },
   {
     "claim_id": "C37",
-    "claim": "The good performance of green-On/UV-Off types was due to the absence of responses to the noise scenes, rather than strong responses to the object scenes per se.",
+    "claim": "The two best performing types for decoding dark objects corresponded to the green-On/UV-Off response types enriched in posterior V1.",
     "claim_type": "EXPLICIT",
-    "source": "Interestingly, the reason for their good performance was the absence of responses to the noise scenes, rather than strong responses to the object scenes per se (Figure 5e).",
+    "source": "While all Off-center response types sensitive to luminance contrast could decode the dark object, the two best performing types corresponded to the green-On/UV-Off response types enriched in posterior V1 (Figure 5f).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Supported by computational modeling analysis",
+    "evidence": "Supported by decoding analysis of simulated responses",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -489,9 +489,77 @@
   },
   {
     "claim_id": "C38",
-    "claim": "Color-opponency in mouse V1 is at least partially mediated by the comparison of cone photoreceptor signals.",
+    "claim": "The reason for the good performance of green-On/UV-Off types was the absence of responses to the noise scenes, rather than strong responses to the object scenes per se.",
     "claim_type": "EXPLICIT",
-    "source": "Color-opponency in the RF center was strongest for photopic light levels largely activating cone photoreceptors and greatly decreased for mesopic light levels, suggesting that the observed color-opponency in V1 is at least partially mediated by the comparison of cone photoreceptor signals.",
+    "source": "Interestingly, the reason for their good performance was the absence of responses to the noise scenes, rather than strong responses to the object scenes per se (Figure 5e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by analysis of simulated responses",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Color vision in most species is mediated by comparing signals from different cone photoreceptor types sensitive to different wavelengths.",
+    "claim_type": "EXPLICIT",
+    "source": "In most species, color vision is mediated by comparing signals from different cone photoreceptor types sensitive to different wavelengths (reviewed in Baden and Osorio, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to review article",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "There is extensive rod-cone opponency in mice.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, it has been demonstrated that there is extensive rod-cone opponency in mice, comparing signals from UV-sensitive cones in the ventral retina to rod signals (Szatko et al., 2020; Joesch and Meister, 2016; Rhim and Nauhaus, 2023; Khani and Gollisch, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to recent studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Rod-cone opponency in the retina relies on integrating information from cone signals in the RF center with rod signals in the RF surround.",
+    "claim_type": "EXPLICIT",
+    "source": "In the retina, this mechanism relies on integrating information from cone signals in the RF center with rod signals in the RF surround (Szatko et al., 2020; Khani and Gollisch, 2021; Joesch and Meister, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to previous studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "There is evidence for rod-cone opponency in monochromatic humans.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, there is also evidence for rod-cone opponency in monochromatic humans (Reitner et al., 1991)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to previous study",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Color-opponency in mouse V1 is at least partially mediated by the comparison of cone signals and not purely by cone-rod comparisons.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we found that the neuronal representation of color in mouse visual cortex is most prominent for photopic light levels and decreases for mesopic conditions, indicating that color-opponency in mouse V1 is at least partially mediated by the comparison of cone signals and not purely by cone-rod comparisons.",
     "source_type": [
       "TEXT"
     ],
@@ -502,7 +570,143 @@
     ]
   },
   {
-    "claim_id": "C39",
+    "claim_id": "C44",
+    "claim": "It is very likely that rods contribute to the prominent color-opponent neuronal responses observed in mouse V1.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is very likely that rods contribute to the prominent color-opponent neuronal responses we observed in mouse V1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from experimental conditions and previous literature",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The involvement of rods in generating color-opponent responses is supported by retinal data and a recent study performed in mouse visual cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "The involvement of rods in generating color-opponent responses is supported by retinal data (Szatko et al., 2020; Khani and Gollisch, 2021; Joesch and Meister, 2016) and a recent study performed in mouse visual cortex showing that color-opponency in posterior V1 is best explained by a model that compares S-opsin with Rhodopsin (Rhim and Nauhaus, 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to previous studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The mouse visual system extracts color information for relatively low light levels present during early dusk and dawn.",
+    "claim_type": "EXPLICIT",
+    "source": "Surprisingly, we found that the mouse visual system still extracts color information for relatively low light levels present during early dusk and dawn",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by experimental data at low mesopic light levels",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Green-Off/UV-On color-opponency was equally distributed across cortex, suggesting that there is a neuronal substrate for color vision in mice across the entire visual field.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we found that green-Off/UV-On color-opponency was equally distributed across cortex, suggesting that there is a neuronal substrate for color vision in mice across the entire visual field.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from experimental data on response type distribution",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Green-On/UV-Off color-opponency was confined to posterior V1, where it might aid the detection of aerial predators present in cluttered and noisy daylight scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, green-On/UV-Off color-opponency was confined to posterior V1, where it might aid the detection of aerial predators present in cluttered and noisy daylight scenes, such as in the forest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from experimental data and computational modeling",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "A limitation of the linear ETA approach is its potential inadequacy in capturing the stimulus selectivity of nonlinear neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a limitation of the linear ETA approach employed here is its potential inadequacy in capturing the stimulus selectivity of nonlinear neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Acknowledged limitation based on methodological considerations",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Over 62% of neurons exhibited a significant ETA for their RF center.",
+    "claim_type": "EXPLICIT",
+    "source": "Although we cannot rule out that our analysis may have been biased against On-Off neurons, the observation that over 62% of neurons exhibited a significant ETA for their RF center suggests that we captured a substantial proportion of V1 neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by experimental data analysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The asymmetry in color processing across visual space was reported at the level of the mouse retina.",
+    "claim_type": "EXPLICIT",
+    "source": "A similar asymmetry in color processing was reported at the level of the mouse retina (Szatko et al., 2020; Khani and Gollisch, 2021) and dLGN (Mouland et al., 2021)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to previous studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The asymmetry in color processing has been linked to an inhomogeneous distribution of color contrast across natural scenes from the mouse's environment.",
+    "claim_type": "EXPLICIT",
+    "source": "and has been linked to an inhomogeneous distribution of color contrast across natural scenes from the mouse's environment (Qiu et al., 2021; Abballe and Asari, 2022)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to previous studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The higher color contrast present in the upper visual field of natural scenes might have driven superior color-opponency in the ventral retina.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, it has been speculated that the higher color contrast present in the upper visual field of natural scenes captured in the natural habitat of mice might have driven superior color-opponency in the ventral retina (Qiu et al., 2021)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to previous speculation",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
     "claim": "At the level of the mouse retina, color-opponency is largely mediated by center-surround interactions.",
     "claim_type": "EXPLICIT",
     "source": "At the level of the mouse retina, color-opponency is largely mediated by center-surround interactions (Szatko et al., 2020; Khani and Gollisch, 2021; Joesch and Meister, 2016)",
@@ -515,7 +719,7 @@
     ]
   },
   {
-    "claim_id": "C40",
+    "claim_id": "C55",
     "claim": "Only a few retinal neurons exhibit color-opponency in their centers.",
     "claim_type": "EXPLICIT",
     "source": "with only a few neurons exhibiting color-opponency in their centers (Hoefling et al., 2022)",
@@ -528,8 +732,8 @@
     ]
   },
   {
-    "claim_id": "C41",
-    "claim": "The extensive and sophisticated color processing in the mouse LGN cannot be fully explained by the proposed retinal opponency mechanisms.",
+    "claim_id": "C56",
+    "claim": "A recent study concluded that the extensive and sophisticated color processing in the mouse LGN cannot be fully explained by the proposed retinal opponency mechanisms.",
     "claim_type": "EXPLICIT",
     "source": "Similarly, a recent study concluded that the extensive and sophisticated color processing in the mouse LGN cannot be fully explained by the proposed retinal opponency mechanisms (Mouland et al., 2021).",
     "source_type": [
@@ -541,8 +745,22 @@
     ]
   },
   {
-    "claim_id": "C42",
-    "claim": "In primate species, a small number of distinct retinal cell types transmit color information to downstream visual areas.",
+    "claim_id": "C57",
+    "claim": "The integration of center and surround retinal signals might contribute to the color-opponency observed in downstream visual areas.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the integration of center and surround retinal signals might still contribute to the color-opponency observed in downstream visual areas, such as the mouse V1, as observed in this study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from comparison of retinal and V1 data",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "In primates, a small number of distinct retinal cell types transmit color information to downstream visual areas.",
     "claim_type": "EXPLICIT",
     "source": "In primates, physiological and anatomical evidence suggest that a small number of distinct retinal cell types transmit color information to downstream visual areas (reviewed in Thoreson and Dacey, 2019)",
     "source_type": [
@@ -555,7 +773,7 @@
     ]
   },
   {
-    "claim_id": "C43",
+    "claim_id": "C59",
     "claim": "In primates, the neuronal representation of color remains partially segregated from the representation of other visual features like form.",
     "claim_type": "EXPLICIT",
     "source": "where the neuronal representation of color remains partially segregated from the representation of other visual features like form (Livingstone and Hubel, 1988; Zeki, 1978, but see Garg et al., 2019)",
@@ -568,7 +786,7 @@
     ]
   },
   {
-    "claim_id": "C44",
+    "claim_id": "C60",
     "claim": "Color-sensitive neurons in primate primary and secondary visual cortex are enriched in the 'blob' and 'inter-stripe' regions, respectively.",
     "claim_type": "EXPLICIT",
     "source": "For example, color-sensitive neurons in primary and secondary visual cortex are enriched in the so-called 'blob' (Hubel and Livingstone, 1987) and 'inter-stripe' regions (DeYoe and Van Essen, 1985), respectively.",
@@ -581,8 +799,22 @@
     ]
   },
   {
-    "claim_id": "C45",
-    "claim": "In zebrafish, birds, Drosophila, and mice, a large number of retinal output types encode information about stimulus color.",
+    "claim_id": "C61",
+    "claim": "In zebrafish, birds, Drosophila, and mice, color processing is distributed across many neuron types and cannot easily be separated from the processing of other visual features.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, in other vertebrate species, color processing is distributed across many neuron types and cannot easily be separated from the processing of other visual features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by general knowledge and citations in following sentence",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "A large number of retinal output types encode information about stimulus color in zebrafish, birds, Drosophila, and mice.",
     "claim_type": "EXPLICIT",
     "source": "In zebrafish, birds, Drosophila, and mice, a large number of retinal output types encode information about stimulus color (Seifert et al., 2023; Zhou et al., 2020; Szatko et al., 2020; Khani and Gollisch, 2021)",
     "source_type": [
@@ -594,7 +826,7 @@
     ]
   },
   {
-    "claim_id": "C46",
+    "claim_id": "C63",
     "claim": "There is evidence for distributed processing of color in visual areas downstream to the retina in zebrafish, mice, Drosophila, and tree shrew.",
     "claim_type": "EXPLICIT",
     "source": "In addition, there is evidence for distributed processing of color in visual areas downstream to the retina in zebrafish (Guggiana Nilo et al., 2021), mice (Rhim and Nauhaus, 2023; Mouland et al., 2021), Drosophila (Longden et al., 2023), and tree shrew (Johnson et al., 2010).",
@@ -607,7 +839,21 @@
     ]
   },
   {
-    "claim_id": "C47",
+    "claim_id": "C64",
+    "claim": "Chromatic signals may facilitate the extraction of specific features from the environment rather than only being used for color discrimination per se.",
+    "claim_type": "EXPLICIT",
+    "source": "It is important to note that chromatic signals may not only be used for color discrimination per se, but instead different spectral channels might facilitate the extraction of specific features from the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative reasoning based on functional considerations",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
     "claim": "The UV wavelength range aids the detection of objects like prey, predators, and food by increasing their contrast.",
     "claim_type": "EXPLICIT",
     "source": "For example, it has been shown that the UV wavelength range aids the detection of objects like prey, predators, and food (reviewed in Cronin and Bok, 2016) by increasing their contrast, as recently shown for leaf surface contrasts in forest environments (Tedore and Nilsson, 2019).",
@@ -620,7 +866,7 @@
     ]
   },
   {
-    "claim_id": "C48",
+    "claim_id": "C66",
     "claim": "Different photoreceptor types sensitive to distinct wavelength bands did not evolve to support color discrimination, but instead to reduce lighting noise in the natural environment of early vertebrates.",
     "claim_type": "EXPLICIT",
     "source": "Indeed, it is hypothesized that different photoreceptor types sensitive to distinct wavelength bands did not evolve to support color discrimination, but instead to reduce lighting noise in the natural environment of early vertebrates (discussed in Maximov, 2000; Kelber et al., 2003).",
@@ -634,47 +880,134 @@
     ]
   },
   {
-    "claim_id": "C49",
-    "claim": "For 83% of cells, the spatial ETA exhibited an overlap with the center spot area of the color noise stimulus of more than 0.65.",
+    "claim_id": "C67",
+    "claim": "Green-On/UV-Off color-opponency might facilitate the detection of predatory-like dark objects in the UV channel by reducing the neurons' activation to noise.",
     "claim_type": "EXPLICIT",
-    "source": "For most cells (83%), the spatial ETA exhibited an overlap with the center spot area of the color noise stimulus of more than 0.65.",
+    "source": "In line with this idea, our analysis suggests that green-On/UV-Off color-opponency might facilitate the detection of predatory-like dark objects in the UV channel by reducing the neurons' activation to noise, rather than increasing the neurons' activation to the object.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Supported by spatial RF mapping analysis",
+    "evidence": "Inferred from computational modeling results",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "If chromatic signals are predominantly used to boost contrast of specific aspects of the environment, it might make sense to widely distribute chromatic tuning and color-opponency across visual neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "If chromatic signals are predominantly used to boost contrast of specific aspects of the environment, it might make sense to widely distribute chromatic tuning and color-opponency across visual neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative reasoning based on functional considerations",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Mice expressing GCaMP6s in excitatory neurons were used for experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Mice of either sex (Mus musculus, n=9; 2\u20135 months of age) expressing GCaMP6s in excitatory neurons via Slc17a7-Cre and Ai162 transgenic lines (stock number 023527 and 031562, respectively; The Jackson Laboratory)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of experimental methods",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C50",
-    "claim": "The center size of 37.5 degrees visual angle in diameter is larger than the mean center RF size of mouse V1 neurons (26.2\u00b14.6 degrees visual angle in diameter).",
+    "claim_id": "C70",
+    "claim": "Functional recordings were obtained from posterior and anterior V1, encoding the upper and lower visual field, respectively.",
     "claim_type": "EXPLICIT",
-    "source": "The center size of 37.5 degrees visual angle in diameter is larger than the mean center RF size of mouse V1 neurons (26.2\u00b14.6 degrees visual angle in diameter).",
+    "source": "Functional recordings were obtained from posterior and anterior V1 (Figure 1c), encoding the upper and lower visual field (Schuett et al., 2002), respectively.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Description of experimental methods with citation",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The center stimulus size of 37.5 degrees visual angle in diameter is slightly larger than the center RFs estimated for single V1 neurons (26.2\u00b14.6 degrees visual angle in diameter).",
+    "claim_type": "EXPLICIT",
+    "source": "To record from many V1 neurons simultaneously, we used a center stimulus size of 37.5 degrees visual angle in diameter, which is slightly larger than the center RFs we estimated for single V1 neurons (26.2\u00b14.6 degrees visual angle in diameter) using a sparse noise paradigm (Jones and Palmer, 1987).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Supported by RF size measurements",
+    "evidence": "Description of experimental methods with data",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "For the majority of tested neurons (83%), more than two-thirds of their center RF overlapped with the center spot of the color noise stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we found that for the majority of tested neurons (83%), more than two-thirds of their center RF overlapped with the center spot of the color noise stimulus (Figure 1\u2014figure supplement 1b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental validation data",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C51",
-    "claim": "At the level of the retinal output, the color axis explained only 12% of the variance in the tested sensitivity space for the RF center.",
+    "claim_id": "C73",
+    "claim": "n=1937 neurons were excluded from n=5248 neurons because they did not show significant center responses.",
     "claim_type": "EXPLICIT",
-    "source": "We found that at the level of the retinal output, the color axis explained only 12% of the variance in the tested sensitivity space for the RF center (10 degrees visual angle)",
+    "source": "Finally, we excluded neurons from analysis, which did not show significant center responses (n=1937 neurons excluded from n=5248; Figure 1\u2014figure supplement 2d, e)",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "Supported by analysis of retinal ganglion cell data",
+    "evidence": "Description of data analysis methods",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C52",
-    "claim": "The low fraction of center color-opponent retinal ganglion cells is in line with a recent study that characterized RF properties of these neurons using natural movies.",
+    "claim_id": "C74",
+    "claim": "The center spot and the surround annulus of the noise stimulus predominantly drive center (i.e. classical RF) and surround (i.e. extra-classical RF), respectively, of the recorded V1 neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, this suggests that the center spot and the surround annulus of the noise stimulus predominantly drive center (i.e. classical RF) and surround (i.e. extra-classical RF), respectively, of the recorded V1 neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from experimental validation steps",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "At the level of the retinal output, the color axis explained only 12% of the variance in the tested sensitivity space for the RF center (10 degrees visual angle).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that at the level of the retinal output, the color axis explained only 12% of the variance in the tested sensitivity space for the RF center (10 degrees visual angle), which is much lower than what we observed for V1 center RFs (37.5 degrees visual angle).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of publicly available retinal data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The low fraction of center color-opponent retinal ganglion cells is in line with a recent study that characterized RF properties using natural movies.",
     "claim_type": "EXPLICIT",
     "source": "The low fraction of center color-opponent retinal ganglion cells is in line with a recent study that characterized RF properties of these neurons using natural movies recorded in the mouse's natural environment (Hoefling et al., 2022).",
     "source_type": [
@@ -686,354 +1019,216 @@
     ]
   },
   {
-    "claim_id": "C53",
+    "claim_id": "C77",
+    "claim": "Decoding performance was lower for stimulus color compared to stimulus luminance.",
+    "claim_type": "EXPLICIT",
+    "source": "The decoding performance was lower for stimulus color compared to stimulus luminance (Figure 2c)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by decoding analysis of experimental data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Discriminability of stimulus color was significantly better for stimuli presented in the RF center compared to stimuli shown in the RF surround.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, discriminability of stimulus color was significantly better for stimuli presented in the RF center compared to stimuli shown in the RF surround",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by decoding analysis of experimental data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "For photopic light levels, neurons in mouse visual cortex strongly encode color features of the visual input in their RF center.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, our results demonstrate that for photopic light levels, neurons in mouse visual cortex strongly encode color features of the visual input in their RF center, while the RF surround predominantly captures luminance contrast.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by experimental data and decoding analysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Both the fraction of ETA variance explained by the color axis and the decoding discriminability of stimulus color dropped significantly when reducing ambient light levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Both the fraction of ETA variance explained by the color axis (Figure 3b) and the decoding discriminability of stimulus color dropped significantly (Figure 3d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data at different light levels",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The drop in decoding discriminability was not due to lower signal-to-noise levels for the mesopic light levels.",
+    "claim_type": "EXPLICIT",
+    "source": "The drop in decoding discriminability was not due to lower signal-to-noise levels for the mesopic light levels, as the decoding of stimulus luminance was not significantly higher for the photopic condition compared to the mesopic conditions (Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by comparison of decoding performance across conditions",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Across all light levels tested, the RF surround of V1 neurons was less informative about stimulus color, resulting in 40\u201360% lower discriminability in the surround compared to the center.",
+    "claim_type": "EXPLICIT",
+    "source": "Across all light levels tested, the RF surround of V1 neurons was less informative about stimulus color, resulting in 40\u201360% lower discriminability in the surround compared to the center (Figure 3d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by decoding analysis across light levels",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Even for the lowest light level, V1 neurons reliably encoded color information.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, even for the lowest light level, where only a small fraction of ETA variance was explained by stimulus color (Figure 3b), V1 neurons reliably encoded color information (Figure 3d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by decoding analysis at low light levels",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
     "claim": "Weak cone activation in low mesopic light levels is sufficient to extract color features from the visual input.",
     "claim_type": "EXPLICIT",
     "source": "This suggests that weak cone activation in low mesopic light levels is sufficient to extract color features from the visual input.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Inferred from experimental data at low mesopic light levels",
+    "evidence": "Inferred from experimental data at low light levels",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C54",
-    "claim": "Spectral contrast significantly differed between posterior and anterior neurons for both center and surround.",
+    "claim_id": "C85",
+    "claim": "The neuronal representation of color in mouse visual cortex greatly depends on ambient light levels, and is strongest for photopic light levels that predominantly drive cone photoreceptors.",
     "claim_type": "EXPLICIT",
-    "source": "Spectral contrast significantly differed between posterior and anterior neurons, for both center (p<0.001, two-sided two-sample t-test) and surround (p<0.001, two-sided two-sample t-test).",
+    "source": "In summary, our results demonstrate that the neuronal representation of color in mouse visual cortex greatly depends on ambient light levels, and is strongest for photopic light levels that predominantly drive cone photoreceptors.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Supported by statistical analysis of experimental data",
+    "evidence": "Supported by experimental data across light levels",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "Spectral contrast significantly differed between center and surround for both posterior and anterior neurons.",
+    "claim_id": "C86",
+    "claim": "The color axis explained twice as much ETA variance in posterior compared to anterior V1.",
     "claim_type": "EXPLICIT",
-    "source": "Spectral contrast significantly differed between center and surround, for both posterior (p<0.001, two-sided two-sample t-test) and anterior neurons (p<0.001, two-sided two-sample t-test).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of experimental data",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C56",
-    "claim": "For luminance contrast, decoding discriminability was significantly different between center and surround for n=50 and n=100 neurons.",
-    "claim_type": "EXPLICIT",
-    "source": "For luminance contrast, decoding discriminability was significantly different between center and surround for n=50 and n=100 neurons (t-test for unpaired data, p-value was adjusted for multiple comparisons using Bonferroni correction).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C57",
-    "claim": "For color contrast, decoding discriminability was significantly different between center and surround for all numbers of neurons tested, except n=1 neuron.",
-    "claim_type": "EXPLICIT",
-    "source": "For color contrast, decoding discriminability was significantly different between center and surround for all numbers of neurons tested, except n=1 neuron.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "Decoding discriminability of the center was not significantly different across light levels for n=500 neurons.",
-    "claim_type": "EXPLICIT",
-    "source": "For n=500 neurons, decoding discriminability of the center was not significantly different across light levels (t-test for unpaired data, p-value was adjusted for multiple comparisons using Bonferroni correction).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "The surround discriminability was significantly lower than the center for the photopic condition.",
-    "claim_type": "EXPLICIT",
-    "source": "The surround discriminability was significantly lower than the center for the photopic condition.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C60",
-    "claim": "Decoding discriminability was significantly different between center and surround for all three light levels.",
-    "claim_type": "EXPLICIT",
-    "source": "Decoding discriminability was significantly different between center and surround for all three light levels.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C61",
-    "claim": "Discriminability for the center was significantly different between photopic and mesopic conditions, but not between the two mesopic conditions.",
-    "claim_type": "EXPLICIT",
-    "source": "In addition, discriminability for the center was significantly different between photopic and mesopic conditions, but not between the two mesopic conditions (t-test for unpaired data, p-value was adjusted for multiple comparisons using Bonferroni correction).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C62",
-    "claim": "The decoding discriminability was significantly different between anterior and posterior neurons.",
-    "claim_type": "EXPLICIT",
-    "source": "The decoding discriminability was significantly different between anterior and posterior neurons (t-test for unpaired data, p-value was adjusted for multiple comparisons using Bonferroni correction).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C63",
-    "claim": "Decoding discriminability was significantly different between anterior- and posterior-enriched types for all numbers of neurons tested.",
-    "claim_type": "EXPLICIT",
-    "source": "Decoding discriminability was significantly different between anterior- and posterior-enriched types for all numbers of neurons tested (t-test for unpaired data, p-value was adjusted for multiple comparisons using Bonferroni correction).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by statistical analysis of decoding results",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C64",
-    "claim": "Functional recordings were obtained from posterior and anterior V1, encoding the upper and lower visual field, respectively.",
-    "claim_type": "EXPLICIT",
-    "source": "Functional recordings were obtained from posterior and anterior V1 (Figure 1c), encoding the upper and lower visual field (Schuett et al., 2002), respectively.",
+    "source": "We found that the color axis explained twice as much ETA variance in posterior compared to anterior V1 (Figure 4b)",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Supported by experimental design and citation to previous work",
+    "evidence": "Supported by PCA analysis of experimental data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "A stronger cortical representation of color in posterior than anterior mouse visual cortex might be an adaptation to efficiently encode the enriched color contrast in the upper visual field of mouse natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, this revealed a stronger cortical representation of color in posterior than anterior mouse visual cortex, which might be an adaptation to efficiently encode the enriched color contrast in the upper visual field of mouse natural scenes (Qiu et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from experimental data and cited natural scene statistics",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Approximately half of the response types were equally distributed in mouse V1 (distribution index from \u20130.3 to 0.3), including mostly response types sensitive to luminance contrast.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that approximately half of the response types were equally distributed in mouse V1 (distribution index from \u20130.3 to 0.3), including mostly response types sensitive to luminance contrast.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of response type distribution",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Response types enriched in anterior V1 (distribution index >0.3) fell along the luminance contrast axis but showed a preference for green center stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Response types enriched in anterior V1 (distribution index >0.3) fell along the luminance contrast axis but showed a preference for green center stimuli, consistent with the higher green sensitivity of cone photoreceptors sampling the ground (Baden et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of response types with citation",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C65",
-    "claim": "Visual stimulation was performed in the photopic light regime that predominantly activates cone photoreceptors.",
+    "claim_id": "C90",
+    "claim": "One response type strongly enriched in the posterior cortex (distribution index <0.3) preferred UV in the RF center.",
     "claim_type": "EXPLICIT",
-    "source": "Visual stimulation was performed in the photopic light regime that predominantly activates cone photoreceptors.",
+    "source": "Similarly, as expected from the high density of UV-sensitive cone photoreceptors in the ventral retina (Baden et al., 2013), one response type strongly enriched in the posterior cortex (distribution index <0.3) preferred UV in the RF center.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Supported by experimental design",
+    "evidence": "Supported by analysis of response types with citation",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C66",
-    "claim": "The noise stimulus consisted of a center spot (37.5 degrees visual angle in diameter) and a surround annulus (approx. 120\u00d790 degrees visual angle without the center spot).",
+    "claim_id": "C91",
+    "claim": "The decoding discriminability of color was significantly better for posterior response types than anterior response types.",
     "claim_type": "EXPLICIT",
-    "source": "The noise stimulus consisted of a center spot (37.5 degrees visual angle in diameter) and a surround annulus (approx. 120\u00d790 degrees visual angle without the center spot) that simultaneously flickered in UV and green based on 5 Hz binary random sequences (Figure 1b)",
+    "source": "We confirmed the higher sensitivity for color versus luminance contrast of posterior response types by showing that their decoding discriminability of color was significantly better than that for anterior response types (Figure 5d).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Supported by experimental design",
+    "evidence": "Supported by decoding analysis of response types",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C67",
-    "claim": "Neuronal responses to parametric stimuli are easy to interpret and allow to systematically quantify chromatic RF properties of visual neurons.",
-    "claim_type": "EXPLICIT",
-    "source": "Neuronal responses to such relatively simple, parametric stimuli are easy to interpret and allow to systematically quantify chromatic RF properties of visual neurons in the mouse (Szatko et al., 2020) and zebrafish retina (Zimmermann et al., 2018), as well as in primate V1 (Chatterjee and Callaway, 2003).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by citations to previous studies",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C68",
-    "claim": "There is extensive rod-cone opponency in mice, comparing signals from UV-sensitive cones in the ventral retina to rod signals.",
-    "claim_type": "EXPLICIT",
-    "source": "Recently, it has been demonstrated that there is extensive rod-cone opponency in mice, comparing signals from UV-sensitive cones in the ventral retina to rod signals (Szatko et al., 2020; Joesch and Meister, 2016; Rhim and Nauhaus, 2023; Khani and Gollisch, 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by citations to previous studies",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C69",
-    "claim": "Rod-cone opponency in the retina requires the integration across center and surround components of receptive fields.",
-    "claim_type": "EXPLICIT",
-    "source": "In the retina, this mechanism relies on integrating information from cone signals in the RF center with rod signals in the RF surround (Szatko et al., 2020; Khani and Gollisch, 2021; Joesch and Meister, 2016).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by citations to previous studies",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C70",
-    "claim": "There is evidence for rod-cone opponency in monochromatic humans.",
-    "claim_type": "EXPLICIT",
-    "source": "Interestingly, there is also evidence for rod-cone opponency in monochromatic humans (Reitner et al., 1991)",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by citation to previous study",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C71",
-    "claim": "A neuronal circuit to compare rod and cone signals exists in other mammals as well.",
-    "claim_type": "IMPLICIT",
-    "source": "suggesting that a neuronal circuit to compare rod and cone signals exists in other mammals as well",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Inferred from evidence of rod-cone opponency in humans",
-    "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "It is unclear to what extent behavioral color discrimination in mice is driven by rod-cone versus cone-cone comparisons.",
-    "claim_type": "EXPLICIT",
-    "source": "At this point, it is still unclear to what extent behavioral color discrimination in mice (Denman et al., 2018; Jacobs et al., 2004) is driven by rod-cone versus cone-cone comparisons.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Acknowledged gap in current knowledge",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C73",
-    "claim": "Rods likely contribute to the prominent color-opponent neuronal responses observed in mouse V1.",
-    "claim_type": "EXPLICIT",
-    "source": "However, it is very likely that rods contribute to the prominent color-opponent neuronal responses we observed in mouse V1.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Inferred from experimental context and previous studies",
-    "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "Cone-cone comparisons are challenging in posterior V1 due to the co-expression of S-opsin in M-cones.",
-    "claim_type": "EXPLICIT",
-    "source": "This is especially true for posterior V1 receiving input from the ventral retina where cone-cone comparisons are challenging due to the co-expression of S-opsin in M-cones (Sz\u00e9l et al., 1992; Baden et al., 2013).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by citations to previous studies",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C75",
-    "claim": "Color-opponency in posterior V1 is best explained by a model that compares S-opsin with Rhodopsin.",
-    "claim_type": "EXPLICIT",
-    "source": "The involvement of rods in generating color-opponent responses is supported by retinal data (Szatko et al., 2020; Khani and Gollisch, 2021; Joesch and Meister, 2016) and a recent study performed in mouse visual cortex showing that color-opponency in posterior V1 is best explained by a model that compares S-opsin with Rhodopsin (Rhim and Nauhaus, 2023).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by citations to previous studies",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C76",
-    "claim": "A neuronal substrate supporting color vision exists in both the upper and lower visual field.",
-    "claim_type": "EXPLICIT",
-    "source": "suggesting that a neuronal substrate supporting color vision exists in both the upper and lower visual field",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Inferred from distribution of color-opponent response types",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C77",
-    "claim": "Color-opponency in the upper visual field could support threat detection.",
-    "claim_type": "EXPLICIT",
-    "source": "As most predators are expected to approach the mouse from above, color-opponency in the upper visual field could well support threat detection.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Speculative reasoning based on ecological considerations",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C78",
-    "claim": "Color-opponent RF structures may result in a more reliable signal in visual scenes with inhomogeneous illumination.",
-    "claim_type": "EXPLICIT",
-    "source": "Especially for visual scenes with inhomogeneous illumination (e.g. in the forest), which result in large intensity fluctuations at the photoreceptor array, color-opponent RF structures may result in a more reliable signal (discussed in Maximov, 2000; Kelber et al., 2003).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by citations to previous discussions",
-    "evidence_type": [
-      "CITATION",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C79",
+    "claim_id": "C92",
     "claim": "Objects in the sky, underwater, or in the snow are often more visible in the UV than the green wavelength range.",
     "claim_type": "EXPLICIT",
     "source": "The dark object had a higher contrast in the UV than green channel, as it has been shown that objects in the sky (Qiu et al., 2021), underwater (Cronin and Bok, 2016; Losey et al., 1999), or in the snow (Tyler et al., 2014) are often more visible in the UV than the green wavelength range.",
@@ -1046,14 +1241,27 @@
     ]
   },
   {
-    "claim_id": "C80",
+    "claim_id": "C93",
+    "claim": "Driving color-opponent neurons requires the mean intensity of the UV and green channels within the RF to have opposite polarity.",
+    "claim_type": "EXPLICIT",
+    "source": "This selectivity arises because driving color-opponent neurons requires the mean intensity of the UV and green channels within the RF to have opposite polarity, a condition less likely to occur in noisy scenes compared to when the mean intensity is lower than the background.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from computational modeling results",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
     "claim": "Functional neuron types in mouse V1 with distinct color properties unevenly sample different parts of the visual scene.",
     "claim_type": "EXPLICIT",
     "source": "Our results suggest that functional neuron types in mouse V1 with distinct color properties unevenly sample different parts of the visual scene, and might thereby serve a distinct role in driving visually guided behavior like predator detection.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Inferred from experimental data and modeling results",
+    "evidence": "Inferred from experimental data and computational modeling",
     "evidence_type": [
       "DATA",
       "INFERENCE",
@@ -1061,31 +1269,18 @@
     ]
   },
   {
-    "claim_id": "C81",
-    "claim": "The asymmetry in color processing across visual space matches the statistics of natural scenes experienced by mice.",
+    "claim_id": "C95",
+    "claim": "Functional neuron types in mouse V1 might serve a distinct role in driving visually guided behavior like predator detection.",
     "claim_type": "EXPLICIT",
-    "source": "Furthermore, we found that color-opponency is especially pronounced in posterior V1 that encodes the sky, matching the statistics of natural scenes experienced by mice.",
+    "source": "Our results suggest that functional neuron types in mouse V1 with distinct color properties unevenly sample different parts of the visual scene, and might thereby serve a distinct role in driving visually guided behavior like predator detection.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Supported by comparison with natural scene statistics from previous studies",
+    "evidence": "Speculative inference from experimental data and modeling",
     "evidence_type": [
       "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C82",
-    "claim": "The results support the hypothesis that neurons in the visual cortex asymmetrically represent information across the visual field, facilitating specific visual tasks such as the robust detection of aerial predators in noisy natural scenes.",
-    "claim_type": "EXPLICIT",
-    "source": "The results of our study support the hypothesis that neurons in the visual cortex asymmetrically represent information across the visual field, facilitating specific visual tasks such as the robust detection of aerial predators in noisy natural scenes.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Supported by experimental data and modeling results",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
+      "INFERENCE",
+      "SPECULATION"
     ]
   }
 ]

@@ -3,17 +3,17 @@
     "result_id": "R1",
     "claim_ids": [
       "C2",
-      "C28",
-      "C29",
-      "C30",
       "C31",
-      "C32"
+      "C32",
+      "C33",
+      "C34",
+      "C35"
     ],
-    "result": "HE staining revealed structural abnormalities in seminiferous tubules across NOA patient samples, with progressively severe disruption from NOA1 (some spermatocytes present) to NOA3 (only Sertoli cells present).",
+    "result": "HE staining revealed structural abnormalities in seminiferous tubules across NOA patients, with progressively severe impairment from NOA1 (some spermatocytes present) to NOA3 (only Sertoli cells remaining).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2 and C28-C32 provide consistent histological evidence from HE staining showing a gradient of spermatogenic impairment across NOA samples. The observations are directly supported by microscopy data (Figure 1A) and align with the clinical characterization of patients (C129).",
+    "evaluation": "Claims C2 and C31-C35 provide consistent histological evidence from HE staining showing a gradient of spermatogenic impairment across patient groups. The observations are descriptive and directly supported by the imaging data in Figure 1A, establishing the phenotypic basis for the study.",
     "result_type": "MAJOR"
   },
   {
@@ -21,354 +21,273 @@
     "claim_ids": [
       "C3",
       "C4",
-      "C33",
-      "C34",
-      "C35",
       "C36",
-      "C37"
+      "C37",
+      "C38",
+      "C39",
+      "C40"
     ],
-    "result": "Single-cell RNA-seq and ATAC-seq identified 12 germ cell subtypes and 8 Sertoli cell subtypes from 23,889 high-quality cells, with germ cell numbers progressively decreasing to zero in NOA1-3 patients.",
+    "result": "Single-cell RNA-seq and ATAC-seq identified 12 germ cell subtypes and 8 Sertoli cell subtypes, with 23,889 high-quality cells from scRNA-seq and 41,708 cells from scATAC-seq showing concordant cell type annotations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C4 and C33-C37 describe the primary scRNA-seq and scATAC-seq results with specific cell counts and subtype classifications. The data are supported by UMAP visualizations (Figures 1C-D) and the progressive loss of germ cells correlates with clinical phenotypes, providing internal validation.",
+    "evaluation": "Claims C3-C4 and C36-C40 describe the primary cell type identification results with specific quantitative data. The concordance between scRNA-seq and scATAC-seq (C40) provides orthogonal validation. However, the manuscript lacks details on clustering parameters, resolution settings, and validation metrics that would strengthen confidence in subtype assignments.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
       "C5",
-      "C88",
-      "C89",
-      "C90",
-      "C91"
+      "C79",
+      "C80",
+      "C81",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
     ],
-    "result": "Three novel Sertoli cell subtypes were identified and characterized: SC4 (PRAP1) as immature, SC7 (BST2) as mature, and SC8 (CCDC62) as further mature, validated by immunofluorescence co-localization with SOX9.",
+    "result": "Three novel Sertoli cell maturation states were identified through pseudotime analysis: SC4 (immature, marked by PRAP1), SC7 (mature, marked by BST2), and SC8 (further mature, marked by CCDC62), representing a developmental trajectory from state 3 to states 1 and 2.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5 and C88-C91 present novel Sertoli cell classifications based on pseudotime trajectory analysis (C79-C87) and marker expression patterns. The immunofluorescence validation (C91, Figure 5E) provides orthogonal experimental support for the computational classifications.",
+    "evaluation": "Claims C5 and C73-C81 describe novel Sertoli cell subtypes with supporting pseudotime and RNA velocity analyses. The classification is supported by marker gene expression (C75-C76) and literature citations (Zhao et al., 2020; Guo et al., 2021). However, the functional validation is limited to immunofluorescence co-localization (C7), and the biological significance of the 'further mature' state requires additional functional characterization.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
       "C6",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C52"
+      "C7",
+      "C42",
+      "C44",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
     ],
-    "result": "Novel germ cell markers ST3GAL4, A2M, ASB9, TEX19, and TSSK6 were validated by immunofluorescence co-localization with DDX4, and their chromatin accessibility patterns matched their expression profiles in specific germ cell subtypes.",
+    "result": "Novel cell subtype-specific markers were identified for germ cells (ST3GAL4, A2M, ASB9, TEX19) and Sertoli cells (PRAP1, BST2, CCDC62), validated by immunofluorescence co-localization with classical markers DDX4 and SOX9.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6 and C48-C52 demonstrate marker validation through both immunofluorescence (Figure 2E) and scATAC-seq chromatin accessibility analysis (Figure 2F). The concordance between expression patterns and chromatin accessibility provides strong multi-modal evidence for these novel markers.",
+    "evaluation": "Claims C6-C7 and C42-C69 identify novel markers with immunofluorescence validation. The co-localization experiments (Figure 2E, Figure 5E) provide spatial validation. However, the specificity and sensitivity of these markers compared to classical markers are not quantified, and functional validation is absent. The chromatin accessibility data (C44) provides additional support for marker specificity.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
-    "claim_ids": [
-      "C7",
-      "C91"
-    ],
-    "result": "Novel Sertoli cell markers PRAP1, BST2, and CCDC62 were validated by immunofluorescence co-expression with SOX9 in testicular tissues.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7 and C91 provide immunofluorescence validation (Figure 5E) of novel Sertoli cell markers identified through scRNA-seq analysis. The co-localization with the classical Sertoli cell marker SOX9 provides strong experimental support.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
     "claim_ids": [
       "C8",
       "C9",
       "C10",
       "C11",
       "C12",
-      "C106",
-      "C107"
+      "C94",
+      "C95",
+      "C96",
+      "C124"
     ],
-    "result": "Stage-specific interactions between germ and Sertoli cell subtypes were identified, with SC3 showing significant positive correlation (R>0.5) with all germ cell subpopulations and participating throughout spermiogenesis.",
+    "result": "Stage-specific interactions between germ cell and Sertoli cell subtypes were identified, with SC3 showing significant positive correlation (R>0.5) with all germ cell subpopulations and participating throughout spermiogenesis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8-C12 and C106-C107 describe stage-specific cell-cell interactions supported by Spearman correlation analysis (Figure 6G) and validated with external dataset GSE149512 (C108). The correlation coefficients provide quantitative support for the interaction patterns.",
+    "evaluation": "Claims C8-C12 and C94-C96 describe stage-specific cell-cell interactions supported by correlation analysis and CellPhoneDB results. The correlation data (C95-C96) and external validation using GSE149512 (C97) strengthen the findings. However, the mechanistic basis for these interactions and whether correlations reflect direct cell-cell contact or paracrine signaling remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C93",
+      "C85"
+    ],
+    "result": "The absence of SC3 Sertoli cells in NOA3 patients with complete absence of sperm suggests that SC3 presence is more critical for spermatogenesis than overall Sertoli cell number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 and C93 present a key finding linking SC3 absence to spermatogenic failure. The observation is supported by cell distribution analysis (Figure 6C-F) and differential expression analysis (C89-C92). However, the causal relationship is inferred from correlation in a limited sample size (n=3 NOA patients), and alternative explanations (e.g., SC3 loss as consequence rather than cause) are not excluded.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C96",
-      "C97",
+      "C13",
       "C98",
-      "C104"
+      "C99",
+      "C100",
+      "C101"
     ],
-    "result": "SC3 absence in NOA3 patients with complete sperm loss suggests that SC3 presence is more critical for spermatogenesis than overall Sertoli cell number.",
+    "result": "Notch1/2/3 signaling mediates germ cell-Sertoli cell interactions, with Notch1 promoter accessibility restricted to SC1-SC3 Sertoli cells and Notch2 accessible in both Sertoli cells and specific germ cell subtypes (SSC2, Pachytene).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C96-C98 and C104 present a correlation between SC3 absence and complete spermatogenic failure. However, this is observational data from limited samples (n=3 NOA patients) without mechanistic validation. The causal inference (C104) requires functional experiments to establish that SC3 is necessary and sufficient for spermatogenesis.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C98-C101 identify Notch signaling as a key mediator supported by CellPhoneDB analysis and chromatin accessibility data. The differential accessibility patterns (C99-C100) suggest cell-type-specific regulation. However, the analysis is descriptive and lacks functional validation (e.g., perturbation experiments) to establish causality. The conclusion is also heavily reliant on computational predictions from ligand-receptor databases.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C13",
-      "C109",
-      "C110",
-      "C111",
-      "C112",
-      "C113"
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
     ],
-    "result": "Notch1/2/3 signaling mediates germ cell-Sertoli cell interactions, with differential chromatin accessibility patterns: Notch1 accessible only in SC1-SC3, Notch2 in Sertoli cells and select germ cells, and Notch3 only within gene bodies.",
+    "result": "Cell cycle and transcriptional dynamics analysis revealed that SSC0/1 are quiescent stem cells while SSC2 are rapidly cycling, with ID4 downregulation governing SSC pluripotency and DMRT1/PABPC4 upregulation driving differentiation to Diffing-SPG.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C13 and C109-C113 integrate CellPhoneDB ligand-receptor analysis with scATAC-seq chromatin accessibility data (Figure 6\u2014supplement 5). The multi-modal evidence supports Notch signaling involvement, though functional validation would strengthen the mechanistic claims.",
+    "evaluation": "Claims C46-C50 describe transcriptional dynamics during germ cell differentiation supported by cell cycle analysis (Figure 3A-B) and gene expression patterns (Figure 3C). The identification of key regulatory genes is data-driven. However, the causal roles of these genes are inferred from expression patterns without functional validation, and the analysis does not account for potential confounding from cell cycle effects on gene expression.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47"
+      "C51",
+      "C52",
+      "C53",
+      "C54"
     ],
-    "result": "Pseudotime analysis revealed three developmental states in germ cells, with SSC0-SSC2 positioned at incompletely separated branches suggesting cyclical self-renewal, and cells from Pre-L to SPT3 following chronological developmental order.",
+    "result": "Differential expression analysis between OA and NOA groups identified 665 DEGs in germ cells enriched for meiotic cell cycle processes, with CDC6 showing increased chromatin accessibility in OA and potentially playing an important role in spermatogenesis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C47 describe pseudotime trajectory analysis results (Figure 2B) that align with known spermatogenesis biology. The interpretation of incomplete separation as cyclical self-renewal (C45, C47) is reasonable but somewhat speculative without lineage tracing validation.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C51-C54 present differential expression results with pathway enrichment analysis. The identification of CDC6 is supported by both expression and chromatin accessibility data (Figure 2\u2014figure supplement 5A). However, the conclusion about CDC6's 'important role' (C54) is speculative without functional validation, and the small sample size (2 OA vs 3 NOA) limits statistical power.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C58",
-      "C59",
-      "C60",
-      "C61"
+      "C70",
+      "C71",
+      "C72"
     ],
-    "result": "Cell cycle analysis identified SSC0/1 as quiescent and SSC2 as rapidly cycling stem cells, with transcriptional dynamics showing ID4 downregulation maintaining pluripotency and DMRT1/PABPC4 upregulation driving differentiation into Diffing SPG.",
+    "result": "Differential expression analysis identified 414 DEGs in Sertoli cells between NOA and OA groups, enriched for meiotic cell cycle, germ cell development, and TNF signaling pathways.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C61 integrate cell cycle analysis (Figures 3A-B) with transcriptional dynamics (Figure 3C). The findings align with known roles of ID4 and DMRT1 in spermatogenesis (C114, C117-C118), providing biological plausibility.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C70-C72 describe differential expression in Sertoli cells with pathway enrichment. The results are consistent with Sertoli cells' known role in supporting germ cell development. However, the interpretation is limited by small sample size and lack of validation for key DEGs beyond the pathway-level analysis.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57"
+      "C89",
+      "C90",
+      "C91",
+      "C92"
     ],
-    "result": "Differential expression analysis between OA and NOA groups identified 665 DEGs in germ cells enriched for meiotic cell cycle and DNA replication pathways, with CDC6 showing increased chromatin accessibility in OA samples.",
+    "result": "SC3 Sertoli cells showed 8 DEGs between OA and NOA groups, with HIST1H4C upregulated and TMEM158, TUBA3E, VTN downregulated in OA, enriched for phagosome and ECM-receptor interaction pathways.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53-C57 present differential expression and pathway enrichment analyses with specific quantitative results. The scATAC-seq validation of CDC6 (C56) provides chromatin-level support, though the functional importance inference (C57) requires experimental validation.",
+    "evaluation": "Claims C89-C92 identify specific DEGs in SC3 with pathway enrichment. The small number of DEGs (n=8) may reflect the specificity of SC3's role or limited statistical power. The VTN chromatin accessibility change (Figure 6\u2014figure supplement 1F) provides orthogonal support. However, the functional significance of these changes requires validation.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C75",
-      "C76",
-      "C77",
-      "C78"
+      "C82",
+      "C83",
+      "C84"
     ],
-    "result": "Differential expression analysis identified 414 DEGs in Sertoli cells between OA and NOA groups, enriched for meiotic cell cycle and germ cell development pathways, with increased chromatin accessibility of BUB18 and SMC1B in OA samples.",
+    "result": "Functional characterization revealed that Sertoli cells in different maturation states perform distinct functions: state 1 (immature) involved in cell cycle and spermatogenesis, state 2 (further mature) in lipid metabolism and steroid biosynthesis, and state 3 (mature) in extracellular matrix organization.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C75-C78 present parallel differential expression analysis for Sertoli cells with pathway enrichment and scATAC-seq validation. The methodology mirrors the germ cell analysis and provides consistent multi-modal evidence.",
+    "evaluation": "Claims C82-C84 describe functional differences across Sertoli cell states based on GO enrichment analysis. The functional assignments are consistent with known Sertoli cell biology. However, the analysis is purely computational without experimental validation of these functional predictions.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87"
+      "C45"
     ],
-    "result": "Pseudotime trajectory analysis revealed three Sertoli cell developmental states (immature, further maturation, mature) with differentiation progression SC3\u2192SC4\u2192SC5\u2192SC2\u2192SC6\u2192SC8\u2192SC1\u2192SC7, supported by marker expression patterns from literature.",
+    "result": "Integration of scATAC-seq and scRNA-seq revealed that shifts in chromatin accessibility were aligned with coordinated alterations in gene expression levels for most cell populations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C79-C87 describe Sertoli cell developmental trajectories using pseudotime and RNA velocity analyses (Figures 5A-D). The classification is supported by literature-validated markers (C83-C84, citing Zhao et al., 2020) and represents a refinement of the traditional two-state model.",
-    "result_type": "MAJOR"
+    "evaluation": "Claim C45 describes the concordance between chromatin accessibility and gene expression supported by Figure 1\u2014figure supplement 2. This validates the multi-omics approach. However, quantitative metrics of correlation and cell-type-specific variations in this relationship are not provided.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C99",
-      "C100",
-      "C101",
-      "C102",
-      "C103"
+      "C60",
+      "C61"
     ],
-    "result": "SC3-specific differential expression analysis identified 8 DEGs between OA and NOA groups, with enrichment in monocyte differentiation and ECM-receptor interaction pathways, and decreased VTN chromatin accessibility in OA samples.",
+    "result": "Transcription factor analysis revealed that SSC1 and SSC2 showed very active transcription during reproductive development, while SPT2/3 were almost transcriptionally silent.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C99-C103 present focused analysis of the critical SC3 subtype with differential expression, pathway enrichment, and chromatin accessibility data. The small number of DEGs (8) may reflect limited statistical power from small SC3 cell numbers.",
+    "evaluation": "Claims C60-C61 describe transcriptional activity patterns supported by heatmap analysis (Figure 3\u2014figure supplement 1D). The observation of transcriptional silencing in late spermatids is consistent with known biology. However, the analysis is descriptive and does not identify specific regulatory mechanisms.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C38",
-      "C39",
-      "C40",
-      "C41"
+      "C62"
     ],
-    "result": "Sertoli cells express classical markers AMH and SOX9 plus novel marker APOA1, while PMCs express MYH11 with DPEP1 showing higher specificity than the classical marker.",
+    "result": "SC1 Sertoli cells lacked cluster-specific distinctive features as marker genes (TF, SLC16A1, CCNL1) were also highly expressed in other Sertoli cell subclusters.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C41 identify novel cell-type markers through scRNA-seq with literature support for classical markers. The specificity comparison for DPEP1 vs MYH11 (C41) is supported by expression data (Figure 1F) showing MYH11's cross-reactivity with smooth muscle.",
+    "evaluation": "Claim C62 identifies a limitation in SC1 characterization supported by Figure 4C. This observation suggests SC1 may represent a transitional state or technical artifact rather than a distinct biological subtype. The authors appropriately acknowledge this limitation.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C42"
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
     ],
-    "result": "Integration of scATAC-seq and scRNA-seq revealed alignment between chromatin accessibility shifts and gene expression changes for most cell populations.",
+    "result": "Testicular tissues were obtained from 3 OA and 5 NOA patients with appropriate ethical approval, with NOA patients showing a gradient of sperm concentration (NOA1>NOA2>NOA3, with NOA3 having complete absence).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C42 describes the concordance between two orthogonal single-cell modalities (Figure 1\u2014supplement 2). This technical validation supports the reliability of both datasets and their integration, though the claim acknowledges this applies to 'most' but not all cell populations.",
+    "evaluation": "Claims C119-C123 describe the sample collection and ethical compliance. The gradient of phenotypic severity provides a valuable experimental design. However, the small sample size (n=2-3 per group for sequencing) limits statistical power and generalizability.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66"
+      "C41",
+      "C43"
     ],
-    "result": "Transcriptional dynamics analysis identified 50 transcription factors related to sperm differentiation, with SSC1/SSC2 showing high transcriptional activity while SPT2/3 were transcriptionally silent.",
+    "result": "Classical cell type markers were confirmed: Sertoli cells express AMH and SOX9, and PMCs express MYH11, validating the cell type annotations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C62-C66 present results from BEAM analysis and transcription factor profiling (Figure 3, Figure 3\u2014supplement 1D). The transcriptional silencing in late spermatids (C66) aligns with known chromatin condensation during spermiogenesis.",
+    "evaluation": "Claims C41 and C43 confirm expression of established markers, providing validation for cell type assignments. These are expected results that support the reliability of the clustering but do not represent novel findings.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74"
+      "C97"
     ],
-    "result": "Marker gene analysis identified specific markers for Sertoli cell subtypes SC2-SC8, though SC1 lacked cluster-specific features as its markers were broadly expressed across subtypes.",
+    "result": "External validation using dataset GSE149512 confirmed the positive correlation between SC3 and germ cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C67-C74 present marker gene identification results (Figure 4C) with the important caveat that SC1 lacks specificity (C67). This honest reporting of a negative result strengthens confidence in the positive marker identifications for other subtypes.",
+    "evaluation": "Claim C97 provides independent validation of the SC3-germ cell correlation using an external dataset (Figure 6H). This strengthens confidence in the finding, though details about the GSE149512 dataset and analysis parameters are not provided.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R19",
-    "claim_ids": [
-      "C92",
-      "C93",
-      "C94"
-    ],
-    "result": "GO analysis revealed distinct functional profiles for Sertoli cell states: state 1 involved in cell cycle and spermatogenesis, state 2 in lipid metabolism and steroid biosynthesis, and state 3 in extracellular matrix organization.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C92-C94 present GO enrichment analysis results (Figure 5\u2014supplement 1A) showing functional differentiation across Sertoli cell developmental states. The functional profiles align with expected roles of immature vs mature Sertoli cells.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C95"
-    ],
-    "result": "Sertoli cell numbers were lower in NOA samples compared to OA samples, indicating correlation between Sertoli cell number and spermatogenesis.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C95 presents a straightforward quantitative observation from cell proportion analysis (Figure 6B). However, this correlation does not establish causation and is qualified by the subsequent finding that SC3 presence may be more important than total number (C104).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
-      "C105"
-    ],
-    "result": "CellPhoneDB analysis revealed that germ cells primarily interact with Sertoli cells compared to other testicular cell types.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C105 presents results from ligand-receptor interaction analysis (Figure 6\u2014supplement 2). This finding aligns with known biology where Sertoli cells provide structural and nutritional support throughout spermatogenesis (C24).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C108"
-    ],
-    "result": "External validation using dataset GSE149512 confirmed positive correlation between SC3 and germ cells.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C108 provides independent validation of the SC3-germ cell correlation using an external dataset (Figure 6H). This strengthens confidence in the finding, though the validation is limited to correlation rather than mechanistic validation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C120"
-    ],
-    "result": "UTF1, DMRT1, and NANOS3 are proposed to promote SSC proliferation and be necessary for SSC differentiation based on their specific expression patterns in SSC1 and SSC2.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C120 is an inference based on expression patterns and literature about these genes' functions (C114-C119). While the expression data are solid and the genes have established roles in spermatogenesis, the specific functional claims require experimental validation (knockdown/knockout studies).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C128",
-      "C129",
-      "C130",
-      "C131"
-    ],
-    "result": "Testicular tissues were obtained from 3 OA and 5 NOA patients with varying sperm concentrations (NOA1>NOA2>NOA3=0), with appropriate ethical approval and informed consent.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C128-C131 describe sample collection methodology and ethical compliance. The clinical characterization (C129) provides important context for interpreting the biological findings and validates the experimental design.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R25",
     "claim_ids": [
       "C1",
       "C14",
@@ -377,66 +296,96 @@
       "C17",
       "C18"
     ],
-    "result": "Background information establishes that NOA is a form of male infertility affecting 1% of adult males and 10-15% of infertile males, with varied etiology including cryptorchidism and testicular torsion.",
+    "result": "Background epidemiology establishes that NOA affects 1% of adult males and 10-15% of infertile males, representing a significant clinical problem.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1 and C14-C18 present background information supported by appropriate citations. These establish the clinical significance and context for the study but do not represent novel findings from this work.",
+    "evaluation": "Claims C1 and C14-C18 provide epidemiological context from cited literature. These are established facts that motivate the study but do not represent novel findings from this work.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R26",
+    "result_id": "R20",
     "claim_ids": [
       "C19",
       "C20",
       "C21",
       "C22",
       "C23",
-      "C24",
-      "C25"
+      "C24"
     ],
-    "result": "Background on spermatogenesis describes the three-stage process, seminiferous tubule structure, and the unique continuous contact between Sertoli cells and germ cells, leading to the hypothesis of intense information exchange.",
+    "result": "The biological context of spermatogenesis involves three stages (proliferation, meiosis, maturation) occurring in seminiferous tubules where Sertoli cells maintain continuous physical contact with developing germ cells, suggesting intense information exchange.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C19-C24 present established knowledge about spermatogenesis supported by citations. Claim C25 is a reasonable hypothesis based on this background that motivates the study's focus on Sertoli-germ cell interactions.",
+    "evaluation": "Claims C19-C24 provide established biological background with C24 representing the authors' hypothesis. The background is accurate and well-cited, providing rationale for investigating Sertoli-germ cell interactions. Claim C24 is speculative but reasonable.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R27",
+    "result_id": "R21",
     "claim_ids": [
+      "C25",
       "C26",
-      "C27"
+      "C27",
+      "C28",
+      "C29",
+      "C30"
     ],
-    "result": "Prior scRNA-seq studies by Liao et al. (2019) and Guo et al. (2018) revealed heterogeneity in mouse and human spermatogonial cells.",
+    "result": "Single-cell sequencing technologies (scRNA-seq and scATAC-seq) enable characterization of cellular heterogeneity and have been previously applied to study spermatogenesis in mouse and human.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C26-C27 accurately summarize prior work that provides context for the current study. These establish the precedent for using scRNA-seq to study spermatogenesis but do not represent findings from this manuscript.",
+    "evaluation": "Claims C25-C30 describe the technological and literature context for the study. These are accurate descriptions of established methods and prior work that justify the experimental approach.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R28",
+    "result_id": "R22",
     "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Literature-based interpretation suggests that UTF1, DMRT1, and NANOS3 identified in this study likely promote SSC proliferation and are necessary for differentiation based on prior functional studies in mice and other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C109 interpret the study's marker gene findings in light of published literature. While the cited literature supports roles for these genes (C102-C108), the conclusion that they 'might promote' and 'were necessary' (C109) in the human context studied here is speculative without functional validation in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
       "C114",
       "C115",
       "C116",
       "C117",
-      "C118",
-      "C119",
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127"
+      "C118"
     ],
-    "result": "Literature review establishes roles of ID4, UTF1, DMRT1, and NANOS3 in spermatogonial stem cells, and Notch signaling in stem cell maintenance and Sertoli-germ cell interactions.",
+    "result": "Literature review establishes that Sertoli cells support spermatogenesis through physical and secretory functions, and that Notch signaling plays important roles in stem cell maintenance, Sertoli cell physiology, and germ cell development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C114-C127 present literature context supported by appropriate citations. These provide biological plausibility for the study's findings but represent prior knowledge rather than novel results from this work.",
+    "evaluation": "Claims C110-C118 provide literature context for interpreting the Notch signaling findings. The citations are appropriate and support the biological plausibility of the study's findings, though they do not represent novel results from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The authors speculate that each stage of sperm development requires assistance from corresponding stage-specific Sertoli cells based on observed co-localization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C125 is explicitly labeled as speculation by the authors. While the co-localization data (C124) and correlation analyses (C95-C96) support stage-specific associations, the causal requirement for stage-matched Sertoli cells is not experimentally demonstrated. This represents a reasonable hypothesis for future testing rather than a supported conclusion.",
     "result_type": "MINOR"
   }
 ]

@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C40",
+      "C41",
+      "C120",
+      "C121"
+    ],
+    "result": "High temporal resolution calcium imaging (~127 Hz, <10 ms resolution) was used to record projection neuron activity in the honey bee antennal lobe during olfactory stimulation with three odorants (1-hexanol, 1-heptanol, peppermint oil) over 20 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, C40, C41, C120, and C121 collectively describe the experimental methodology. The technical specifications are clearly stated, the sample size (n=8 bees) is adequate, and the imaging parameters are well-documented. The method represents a significant improvement over previous temporal resolutions (~100-200ms).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C42",
+      "C45",
+      "C46",
+      "C92",
+      "C112"
+    ],
+    "result": "Projection neurons exhibit heterogeneous response profiles with an abundance of inhibitory activity: 48% excitatory, 37% inhibitory, 15% unresponsive, with 46-50% of responses containing an inhibitory component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C33, C42, C45, C46, C92, and C112 are supported by quantitative data from 546 glomerular traces across 8 bees and 3 odorants (Figure 2). The distribution of response types was evenly distributed across individuals (C47), indicating absence of bias. Statistical characterization is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C89"
+    ],
+    "result": "Excitatory responses have shorter onset latencies (313\u00b122ms) than inhibitory responses (351\u00b147ms), with odor representation initially shaped by OSN excitatory input and reshaped ~40ms later by local inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48, C49, C50, C51, and C89 are supported by latency measurements with appropriate statistical testing (Kruskal-Wallis test, p<0.05, n=263 excitatory, n=201 inhibitory responses). The temporal sequence and statistical significance support the conclusion about sequential excitation followed by inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C52",
+      "C90",
+      "C91",
+      "C93",
+      "C113"
+    ],
+    "result": "Glomerular activity in honey bees is shaped primarily by local inhibition with minimal contribution from excitatory local interneurons, differing from Drosophila where both excitatory and inhibitory local neurons contribute to olfactory tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C52, C90, C91, C93, and C113 are supported by the latency data showing inhibitory responses occur ~40ms after excitatory onset, consistent with lateral inhibition. The comparative conclusion is appropriately cited and acknowledges species differences. However, the inference about minimal excitatory interneuron contribution is based on timing data rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C43",
+      "C44",
+      "C94",
+      "C114"
+    ],
+    "result": "Olfactory stimulation produces stimulus-specific post-odor neural signatures, with ~50% of projection neuron responses showing prolonged activity or changed response direction after stimulus termination, generating stable, odorant-specific after-smell lasting ~10-15 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C32, C43, C44, C94, and C114 are supported by correlation analysis showing elevated across-trial correlation during and ~0.5s after stimulation (Figure 1E), and response profile analysis (Figure 2). The stability across 20 trials and consistency across individuals supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A mushroom body model was constructed with ~25 PNs diverging onto 1000 KCs (each KC receiving input from ~8 PNs), implementing winner-takes-all feedback inhibition (10% most active KCs fire), and fed with experimental calcium signals resampled at 20 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C53, C54, and C55 describe the model architecture based on established neuroanatomical principles (C36, C37, C38, C39). The model parameters are biologically realistic and well-justified by citations. The implementation is clearly described in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C115"
+    ],
+    "result": "The mushroom body model accounts for increased odorant discrimination in the MB compared to the AL, with across-odorant correlation decreasing from r=0.71\u00b10.08 in PN space to r=0.52\u00b10.10 in KC space (p<0.001), and odorants remaining better separated for longer in KC space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C61-C67, C69, and C115 are supported by correlation analysis (Figure 4D-E), PCA analysis (Figure 4F), and statistical testing (Student's t-test, p<0.001, n=4774 pairs). The model successfully reproduces known MB properties of sparse coding and enhanced discrimination. Results are consistent across 8 individuals and multiple odorants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C95",
+      "C96"
+    ],
+    "result": "The model reveals recruitment of two distinct Kenyon cell populations: one at stimulus onset and one at odor termination, both stable with turnover rates below pre-stimulus baseline for up to 15s after offset, representing odorants and their aftersmell as separate but temporally coherent neural objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C56-C60, C95, and C96 are supported by KC turnover analysis (Figure 4B-C) showing stabilization during stimulation (~10% turnover) and recruitment dynamics. Quantitative turnover rates are provided for different time windows. The interpretation is consistent with the data and supported by literature citations (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C116"
+    ],
+    "result": "Learning-induced modulation of KC-to-MBON synapses in the model explains variations in associative learning scores across conditioning protocols: weak learning for backward pairing, strong learning for early (ISI=+1s) and delay (ISI=+4s) protocols, with earlier response latency and lower variability for early vs. delay conditioning (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C73-C75, C78, C99-C102, and C116 are supported by modeling results (Figure 5B-D) with appropriate statistical testing (Wilcoxon test, p<0.001; Bartlett's test, p<0.011; n=16). The model predictions are based on simple, biologically plausible rules (synaptic depression threshold). However, the model is tested on the same odorants used to generate it, which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C103"
+    ],
+    "result": "Behavioral experiments confirmed model predictions: backward conditioning produced scarce/unspecific responses; early and delay protocols (ISI=+1s, +4s) induced specific memory formation (McNemar test, p=0.003, p=0.004); bees trained with early protocol extended proboscis earlier and with less variability than delay protocol (Kruskal-Wallis, p=0.036; Bartlett's test, p=5\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 and C103 are supported by behavioral data (Figure 5E-F) with appropriate statistical testing and adequate sample sizes (n=26 early, n=20 delay). The agreement between model predictions and behavioral measurements strengthens both results. Video tracking provides objective measurement of response latency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C83",
+      "C84",
+      "C107"
+    ],
+    "result": "For trace conditioning (ISI=+7s), the model predicted response after CS offset, but behavioral data showed weak/aspecific learning with PER latency comparable to delay group but broader distribution (p=0.007), suggesting trace conditioning cannot be explained by simple temporal coincidence of reward and offset-recruited KCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C79, C83, C84, and C107 identify a discrepancy between model predictions and behavioral data. The model predicted post-offset response, but bees responded during stimulation. This is appropriately acknowledged as a limitation, suggesting higher-order processes are required. The statistical analysis is sound (n=31 trace, n=20 delay).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The model provides a mechanism for encoding CS/US time contingency without explicit time tracking: the MBON learns which KC subpopulation is active during reward arrival rather than the expected reward time, because olfactory representation in KCs evolves deterministically through time, explaining why bees respond earlier than expected reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C104-C106, C108-C111 present a mechanistic explanation supported by the model's ability to reproduce behavioral response latencies (Figure 5D, F). The reasoning is logical and parsimonious. However, this is primarily a theoretical contribution based on model behavior rather than direct experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Removing stable excitatory, inhibitory, or short excitatory responses alone did not affect differential response timing between protocols, but combined removal of inhibitory and short excitatory responses prevented the difference in MBON response latency, demonstrating that response dynamics richness is necessary for differential timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by systematic manipulation experiments (Figure 6) testing the contribution of different response types. The logic is sound: only combined removal of early excitatory and delayed inhibitory components eliminated the timing difference, identifying the critical features. Sample size (n=100 simulations) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C88",
+      "C117"
+    ],
+    "result": "A model based on simple MB connectivity rules (random connectivity, feedback inhibition, MBON plasticity) fed with real physiological data can explain fundamental aspects of odor processing and associative learning, with predictions robust to noise and biological variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C88, and C117 represent the overarching conclusion. The model successfully reproduces multiple phenomena: enhanced discrimination, dual KC populations, learning scores, and response latencies. Testing across 8 individuals and 3 odorants demonstrates robustness. However, the model was validated primarily on the same odorants used for input, limiting assessment of true generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The duration of post-odor neural signature (~10-15s) is compatible with the CS/US gap duration in trace learning experiments, suggesting possible implication in trace learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97 and C98 note temporal compatibility between post-odor signature duration and trace learning gaps, with appropriate citations. However, C107 and C84 show the model based on this mechanism fails to predict actual trace learning behavior. The suggestion is speculative and requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Similar principles may guide odor signal transformation in MB across insects, though convergence and differences can characterize olfactory system architectures in different species, as honey bee AL processing differs from Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C119 appropriately acknowledge both generality (model incorporates principles from bees, flies, locusts) and species-specific differences (AL processing differs between bees and flies). The conclusion is appropriately cautious and acknowledges limitations in generalization.",
+    "result_type": "MINOR"
+  }
+]

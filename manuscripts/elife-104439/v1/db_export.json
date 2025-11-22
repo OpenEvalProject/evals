@@ -1,0 +1,2310 @@
+{
+  "submission": {
+    "id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:47:28.668048Z",
+    "updated_at": "2025-11-21T23:47:28.668048Z"
+  },
+  "content": [
+    {
+      "id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "content_type": "manuscript",
+      "content_text": "# SFSWAP is a negative regulator of OGT intron detention and global pre-mRNA splicing\n\n## Authors\n\n- Ashwin Govindan<sup>1</sup> ([ORCID: 0000-0003-1759-707X](https://orcid.org/0000-0003-1759-707X))\n- Nicholas K Conrad<sup>1</sup> ([ORCID: 0000-0002-8562-0895](https://orcid.org/0000-0002-8562-0895)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n\n\u2020 Corresponding author\n\n## Abstract\n\nO-GlcNAcylation is the reversible post-translational addition of \u03b2-N-acetylglucosamine to serine and threonine residues of nuclear and cytoplasmic proteins. It plays an important role in several cellular processes through the modification of thousands of protein substrates. O-GlcNAcylation in humans is mediated by a single essential enzyme, O-GlcNAc transferase (OGT). OGT, together with the sole O-GlcNAcase OGA, form an intricate feedback loop to maintain O-GlcNAc homeostasis in response to changes in cellular O-GlcNAc using a dynamic mechanism involving nuclear retention of its fourth intron. However, the molecular mechanism of this dynamic regulation remains unclear. Using an O-GlcNAc responsive GFP reporter cell line, we identify SFSWAP, a poorly characterized splicing factor, as a trans-acting factor regulating OGT intron detention. We show that SFSWAP is a global regulator of retained intron splicing and exon skipping that primarily acts as a negative regulator of splicing. In contrast, knockdown of SFSWAP leads to reduced inclusion of a \u2018decoy exon\u2019 present in the OGT retained intron which may mediate its role in OGT intron detention. Global analysis of decoy exon inclusion in SFSWAP and UPF1 double knockdown cells indicate altered patterns of decoy exon usage. Together, these data indicate a role for SFSWAP as a global negative regulator of pre-mRNA splicing and positive regulator of intron retention.\n\n## Introduction\n\nIntron retention (IR) refers to the lack of removal of specific introns in a transcript, resulting in full-length introns in an RNA (Monteuuis et al., 2019; Rekosh and Hammarskjold, 2018). IR that leads to impaired cytoplasmic export and nuclear retention of the transcript is referred to as intron detention (Boutz et al., 2015). Detained introns are a common feature of mammalian transcriptomes, but, unlike other forms of alternate splicing, intron detention controls the levels and timing of production of mature mRNA (Boutz et al., 2015; Braunschweig et al., 2014; Yap et al., 2012). Cells regulate the efficiency of splicing of DIs, and therefore mRNA production, in response to specific environmental cues. DI-containing transcripts may serve as nuclear reservoirs that are spliced in response to cellular environment, or they may be transcriptional dead-ends that are subjected to nuclear degradation pathways (Boutz et al., 2015; Yap et al., 2012; Pendleton et al., 2018; Mauger et al., 2016; Ninomiya et al., 2011). Intron detention regulates a wide variety of transcripts in mammals, but the environmental cues and mechanisms that regulate intron detention have been defined for only a few of these RNAs.\n\nThe environmental cues that regulate intron detention of the human O-linked \u03b2-N-acetylglucosamine (O-GlcNAc) transferase (OGT) protein have been defined, but the mechanisms of this regulation are not fully understood (Park et al., 2017). OGT encodes the sole enzyme responsible for the post-translational modification O-GlcNAc, where UDP-GlcNAc serves as the cofactor for addition of GlcNAc residues to the hydroxyl groups of serine and threonine residues of thousands of nuclear and cytoplasmic proteins (Kreppel et al., 1997; Lubas et al., 1997; Bond and Hanover, 2015; Mannino and Hart, 2022). Conversely, OGA (O-GlcNAcase) is the sole enzyme responsible for removal of O-GlcNAc (Gao et al., 2001). Cells maintain O-GlcNAc homeostasis by an intricate feedback mechanism involving intron detention of the OGT transcript (Park et al., 2017). Under conditions of high cellular O-GlcNAc (such as treatment with the OGA inhibitor thiamet G [TG]), intron 4 of OGT is detained, resulting in reduction in cytoplasmic OGT mRNA. However, under conditions of low cellular O-GlcNAc (such as glucose deprivation or treatment with the OGT inhibitor OSMI-1), the intron is rapidly excised, resulting in increased levels of cytoplasmic OGT mRNA. Interestingly, the OGA transcript is also regulated by intron detention, but with the inverse relationship to O-GlcNAc levels outcomes as OGT (Tan et al., 2020).\n\nWe previously identified a cis-acting intronic splicing silencer (ISS) situated within OGT intron 4 that is necessary for IR (Park et al., 2017). Subsequent work by other groups showed that the ISS overlaps with an ~150 bp unannotated \u2018decoy exon\u2019 possessing multiple weak 5\u2032 and 3\u2032 splice sites (Parra et al., 2018). Deletion of the OGT decoy exon/ISS or even blocking of the decoy 5\u2032 splice sites using morpholino oligonucleotides renders splicing of intron 4 constitutive (Park et al., 2017; Parra et al., 2020). This suggests the somewhat counterintuitive idea that at least partial assembly of the spliceosome around the decoy is necessary for OGT intron detention even though splicing of the decoy exon does not occur. Decoy exons are not unique to OGT and are present in many other retained intron containing genes, specifically those with longer retained introns (Parra et al., 2018; Pirnie et al., 2017). The decoy exons mediate IR in these genes as well, but the precise mechanism by which decoy exons regulate IR remains unclear.\n\nIn addition to the role of OGT intron detention in buffering changes in cellular O-GlcNAc levels, OGT (and consequently O-GlcNAc) has been proposed to be a \u2018master regulator\u2019 of detained intron splicing (Tan et al., 2020). Treatment of cells with the OGT inhibitor OSMI-2 for short time periods (~30 min) induces changes in OGT detention to buffer O-GlcNAc levels. However, longer treatment durations (~2 hr) lead to global changes in detained intron splicing. Differential phosphoproteomics after a short OSMI-2 treatment identified a set of proteins enriched in splicing factors. These \u2018early responders\u2019 could potentially mediate downstream effects of OSMI-2 on splicing and included the putative splicing factor SFSWAP.\n\nSFSWAP (splicing factor, suppressor of white-apricot homolog; SFRS8) encodes the essential human homolog of the Drosophila splicing factor SWAP (Denhez and Lafyatis, 1994). It is an alternate splicing factor containing an RS domain, but it does not possess a canonical RNA-binding domain (Denhez and Lafyatis, 1994). It contains two suppressor of white apricot/Prp21 (SURP) domains which mediate its binding to other proteins containing an SURP interaction domain. The second SURP domain of SFSWAP has been shown to interact with the mammalian branchpoint binding protein SF1 in vitro (Crisci et al., 2015). However, the identity of its regulatory targets remains unknown. Its sequence contains a number of known phosphorylation sites (Tan et al., 2020) indicating that its function might be regulated by phosphorylation. In addition, it regulates alternate splicing of Tau (Wang et al., 2004), CD45 and fibronectin (Sarkissian et al., 1996) by inhibiting the inclusion of specific exons.\n\nHere, we identify SFSWAP as a regulator of OGT intron detention using a CRISPR knockout screen with an O-GlcNAc responsive GFP reporter cell line. We show that knockout of SFSWAP leads to enhanced splicing of the OGT detained intron, particularly under high-O-GlcNAc conditions, indicating its role as a negative regulator of OGT splicing. We also show that SFSWAP is a global regulator of detained intron splicing and exon skipping, with enhanced splicing of retained introns and increased inclusion of cassette exons upon SFSWAP knockdown. Our results suggest that SFSWAP regulates OGT intron detention by modulating the inclusion or recognition of the decoy exon present within the detained intron. Finally, global analysis of decoy exon splicing upon SFSWAP knockdown indicates that SFSWAP may regulate decoy exon splicing globally to mediate its effect on intron detention.\n\n## Results\n\n### A GFP splicing reporter that monitors cellular O-GlcNAc levels\n\nTo enable genetic screens for identification of trans-acting factors that regulate OGT intron detention, we constructed a GFP-based splicing reporter that responds to cellular O-GlcNAc levels. The reporter consists of the entire intron 4 of OGT (the detained intron) and corresponding exons (exons 4 and 5) flanked upstream and downstream by the efficiently spliced \u03b2-globin intron 2 (and corresponding exons 2 and 3) (Figure 1a; Scarborough et al., 2022). An eGFP reporter upstream of this assembly is driven by a constitutive CMV promoter and translationally separated from the remaining exons by a T2A element (Donnelly et al., 2001a). The T2A element induces ribosomal skipping (Donnelly et al., 2001b) producing a GFP polypeptide separate from the protein product of the \u03b2-globin-OGT exons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic of the GFP reporter (left, drawn to scale) and predicted changes in reporter splicing and expression upon varying cellular O-GlcNAc conditions (right). ISS \u2013 intronic splicing silencer; LHA \u2013 left homology arm; RHA \u2013 right homology arm; HBB \u2013 hemoglobin subunit \u03b2; PGK \u2013 phosphoglycerokinase; CMV \u2013 cytomegalovirus; bGH \u2013 bovine growth hormone; SV40 \u2013 Simian virus 40. (b) Semi-quantitative RT-PCR of RNA isolated from the reporter line under different treatment conditions using DNA primers (NC3378 and NC2094) that hybridize within the GFP ORF and just upstream of the polyadenylation signal sequence as shown below. The PCR conditions make it unlikely to detect the full-length detained intron isoform, so only the mRNA is observed. (c) Northern blot analysis of total RNA isolated from the reporter line after treatment with either DMSO, 1 \u03bcM TG or 10 \u03bcM OSMI-1 for 6 hr. The blot was probed for GFP. The retained intron band is heterogeneous and difficult to discern clearly due to its co-migration with the large ribosomal RNA. Methylene blue stain of the blot (right) is shown as a loading control. (d) GFP fluorescence levels of the reporter line as measured by flow cytometry after treatment with DMSO, TG, or OSMI-1 for 24 hr. (e) Validation of GFP reporter protein levels by western blot analysis after treatment of the reporter line with various modulators of cellular O-GlcNAc levels (left). Steps in the hexosamine biosynthesis pathway targeted by the modulators are shown on the right. Treatment with modulators indicated in red are expected to lead to reduced cellular O-GlcNAc levels, while treatment with those indicated in green are expected to lead to increased cellular O-GlcNAc levels. A broad specificity O-GlcNAc antibody (RL2) and \u03b2-actin are used as controls. (f) Northern blot analysis of RNA isolated from either 30 nM non-target (siNT) or OGT-specific (siOGT) siRNA-treated reporter line. Cells were treated for 6 hr with DMSO, TG, or OSMI-1 3 days after siRNA treatment. The blot was probed for GFP as above.\n\nWe integrated this reporter into the AAVS1 safe harbor locus of HCT116 cells by TALEN-mediated recombination and isolated clonal cell lines harboring the reporter (Sanjana et al., 2012). Treatment of cells with the OGA inhibitor TG induces high O-GlcNAc levels. This should promote detention of OGT intron 4, nuclear retention of the transcript, and reduced expression of the GFP reporter. On the other hand, treatment with OGT inhibitor OSMI-1 induces a low O-GlcNAc condition, which should promote intron 4 splicing, cytoplasmic export of the mRNA, and increased GFP expression (Figure 1a, right). RT-PCR analysis of reporter RNA from clonal cell lines yielded a predominant single band corresponding to the mature reporter mRNA indicating the absence of unexpected splicing events (Figure 1b). Moreover, this band increased and decreased upon OSMI-1 and TG treatment, as expected. Further screening of reporter lines by northern blot analysis also confirmed that the GFP reporter is responsive to cellular O-GlcNAc levels. Treatment of the reporter line with 1 \u03bcM TG for 6 hr led to reduced levels of the spliced product, while treatment with 10 \u03bcM OSMI-1 for the same time led to enhanced splicing increased levels of the reporter mRNA (Figure 1c). FACS analysis of the reporter lines treated with the inhibitors verified GFP protein expression, with lower and higher GFP fluorescence after TG and OSMI-1 treatment, respectively (Figure 1d). To further characterize reporter activity at various O-GlcNAc levels, we treated reporter clones with conditions known to perturb cellular O-GlcNAc levels. Treatment of the reporter cells with glucosamine or the OGA inhibitor PUGNAc (O-(2-Acetamido-2-deoxy-D-glucopyranosylidene)amino N-phenyl carbamate) resulted in reduced GFP protein levels similar to TG, while treatment with the GFAT inhibitor DON (6-diazo-5-oxo-L-norleucine) or glucose deprivation led to increased GFP levels (Figure 1e). Finally, we validated the reporter line by knockdown of OGT itself, which will reduce cellular O-GlcNAc levels. As expected, we observed increased levels of reporter mRNA upon OGT knockdown (Figure 1f), and this effect masked the effect of subsequent inhibitor treatments. Together, these results demonstrate that our GFP reporter construct reflects the response of endogenous OGT to intracellular O-GlcNAc levels.\n\n### SFSWAP is a negative regulator of OGT intron 4 splicing\n\nTo screen for trans-acting factors that regulate OGT IR, we performed whole genome CRISPR knockout screens using the Brunello knockout library (Doench et al., 2016) under three treatment conditions \u2013 TG, OSMI-1, or untreated. Treatment of reporter lines with TG brings the cells to a \u2018low GFP\u2019 state under which knockout of negative splicing regulatory factors (i.e., those promoting IR) are expected to result in a \u2018high GFP\u2019 state. Treatment with OSMI-1 results in cells that are \u2018high GFP\u2019 and knockout of factors that promote splicing of the retained intron will result in a \u2018low GFP\u2019 state. Finally, untreated cells can be selected for either \u2018low GFP\u2019 or \u2018high GFP\u2019 events. We performed pilot screens at 100\u00d7 library coverage with a 10-day knockout time period and 24-hr treatment with inhibitors just before selection for either \u2018high\u2019 or \u2018low GFP\u2019 cells by FACS sorting. Subsequent sequencing of the guide RNA locus from the sorted cells and statistical analysis using MAGeCK (Li et al., 2014) identified candidates to regulate OGT IR. While we did not obtain any hits with the OSMI-1 and untreated \u2018low GFP\u2019 screens, we successfully obtained hits with both the TG (Supplementary file 1) and untreated \u2018high GFP\u2019 screens (Supplementary file 2). Since the list of putative targets from both screens were comparable (Figure 2\u2014figure supplements 1 and 2), we performed two additional replicates of the screen at 300\u00d7 coverage under TG treatment conditions only and obtained similar results.\n\nAs expected, the top hit from the screens was OGT itself (Figure 2a). In addition, we obtained many hits corresponding to genes involved in glucose metabolism including GFAT (Figure 1e) and SLC2A1 (a glucose transporter), further boosting our confidence that the genes identified in the screen are relevant to O-GlcNAc homeostasis. We also obtained a few hits corresponding to RNA-binding proteins (e.g., HNRNPU, HuR) and proteins involved in m6A modification (ZC3H13, KIAA1429). Interestingly, the large majority of the hits were splicing associated factors and/or components of the spliceosome. The latter was surprising because loss of core spliceosome factors would be expected to result in reduced splicing of the reporter (and thus low GFP levels), but we selected for \u2018high GFP\u2019 cells. Nevertheless, these results indicated that the hits from the screen may be associated with a specific spliceosome-mediated mechanism.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig2-v1.jpg)\n\n**Figure 2.:** (a) Top, timeline of CRISPR screen. Bottom, MAGeCK analysis of CRISPR screen results from TG-treated gain of GFP screen in three biological replicates. Top hits are color coded based on predicted function of the protein. Target genes are arranged alphabetically on the x-axis. (b) GFP fluorescence of TG-treated reporter cells 4 days post-treatment with siRNA corresponding to non-target (siNT), OGT (siOGT), or SFSWAP (siSFSWAP). Bottom panels show corresponding brightfield images. (c) Northern blot analysis of RNA isolated from either the TG-treated reporter line (left, probed for GFP) or TG-treated 293A-TOA cells (right, probed for OGT) 4 days after treatment with siRNA corresponding to either non-target (siNT) or SFSWAP (siSFSWAP). Cells were treated with TG for 6 hr just before RNA isolation. (d) RT-qPCR analysis of the splice junctions of interest after treatment of cells with either DMSO, TG, or OSMI-1 in the presence or absence of SFSWAP knockdown (n = 3). Primers used correspond to either the OGT intron 4 spliced junction (e4\u2013e5) or retained intron junction (RI\u2013e5). p-values are derived from unpaired t-tests against the corresponding non-target control. Single asterisk (*) denotes p-value <= 0.05.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Results of MAGeCK analysis are plotted with target genes arranged alphabetically on the x-axis.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Percent spliced OGT RNA was calculated as the ratio of spliced OGT mRNA (exon 4\u20135 junction) to the sum of spliced and retained (RI\u2013exon 5 junction) forms of the transcript. RNA knockdowns were not verified by western blot or RT-qPCR, so negative results are interpreted to be inconclusive. Significance values derived from an unpaired t-test are shown with respect to non-target (NT) control. Significant p-values are represented as ** (p<0.01) or **** (p<0.0001).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** SFSWAP transcript levels measured using e1\u2013e2 junction primers (right) are shown for comparison.\n\nWe next validated some of the top hits by siRNA mediated knockdown and northern blot analysis or RT-qPCR for the spliced and retained intron junctions of the endogenous OGT transcript (Figure 2\u2014figure supplement 3). Consistently, knockdown of SFSWAP increased GFP expression (Figure 2b) and enhanced splicing of the reporter RNA (Figure 2c, left). To check whether SFSWAP knockdown also results in splicing changes in endogenous OGT, we performed northern blot analysis with a probe corresponding to the 3\u2032 UTR of OGT mRNA. Knockdown of SFSWAP in these cells under TG treatment conditions resulted in enhanced splicing of the retained intron compared to the non-target control (Figure 2c, right) indicating that the action of SFSWAP was not limited to the reporter. To accurately quantify the changes in splicing in OGT upon SFSWAP knockdown, we performed RT-qPCR on OGT RNA isolated from either non-target or SFSWAP knockdown cells under various conditions (Figure 2d). Knockdown of SFSWAP resulted in a significant increase in the spliced form of OGT RNA compared to non-target both under DMSO (~1.8-fold) and TG-treated conditions (~3-fold). In addition, the timing of enhanced intron 4 removal coincided with the timing of decrease in SFSWAP mRNA levels upon knockdown, indicating a direct effect of SFSWAP knockdown on OGT intron 4 splicing (Figure 2\u2014figure supplement 4). Knockdown in OSMI-1 treatment conditions did not result in a further increase in spliced RNA levels. Together, these data suggest that SFSWAP is a negative regulator of OGT intron 4 splicing.\n\n### SFSWAP is a global regulator of detained intron and skipped exon splicing\n\nDespite its similarity to splicing factors, the importance of SFSWAP in human gene expression and splicing remains unclear. To characterize the functional role of SFSWAP, we performed RNA-seq in either non-target (siNT) or SFSWAP knockdown (siSFSWAP) cells in the absence of TG or OSMI-1 (Figure 3\u2014figure supplements 1 and 2). Differential expression analysis using edgeR (Supplementary file 3) revealed 252 downregulated and 633 upregulated genes on SFSWAP knockdown, but did not reveal any functional class of RNAs that was regulated by SFSWAP. Since SFSWAP is a predicted splicing factor, we performed alternate splicing analysis using the rMATS package (Shen et al., 2014). We analyzed five alternate splicing event types \u2013 retained introns (RI), skipped exons (SE), alternate 5\u2032 splice sites (A5SS), alternate 3\u2032 splice sites (A3SS), and mutually exclusive exons (MXE). Interestingly, we found global changes in splicing patterns between siNT and siSFSWAP, with the majority of changes occurring across two of the five event types analyzed \u2013 retained introns and skipped exons (Figure 3a, Supplementary file 4). To visualize this more clearly, we plotted the inclusion level differences between the two conditions (IncLevelDifference, calculated as IncLevelsiNT \u2212 IncLevelsiSFSWAP) against FDR values obtained from rMATS. A positive value for IncLevelDifference indicates more removal of retained introns in SFSWAP knockdown compared to siNT, while a negative value indicates more retention. Knockdown of SFSWAP resulted in increased excision of retained introns globally, indicated by more events with a positive value for IncLevelDiffference (Figure 3b) and as exemplified by genome browser shots of IFRD2 and GFUS/TSTA3 (Figure 3c). This is consistent with the original screen phenotype, where SFSWAP was isolated as negative regulator of OGT retained intron splicing (Figure 2). Previous observations that SFSWAP autoregulates its own expression by control of splicing of its first two retained introns is also consistent with this observation (Zachar et al., 1987; Zachar et al., 1994). Taken together, these data support the conclusion that SFSWAP promotes IR of a wide variety of transcripts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-v1.jpg)\n\n**Figure 3.:** (a) Alternate splicing analysis in untreated SFSWAP knockdown (siSFSWAP) cells compared to non-target (siNT)-treated cells using rMATS (n = 3). The number of events of each type are plotted as proportion of total events detected. A3SS \u2013 alternate 3\u2032 splice site; A5SS \u2013 alternate 5\u2032 splice site; MXE \u2013 mutually exclusive exon; RI \u2013 retained intron; SE \u2013 skipped exon. Assignment of sample labels for events was done based on the value of IncLevelDifference (events with positive IncLevelDifference were designated as siNT and negative IncLevelDifference were designated as siSFSWAP). (b) Scatter plots of retained intron (RI) and skipped exon (SE) events plotted using the JC model of rMATS (top). The difference in inclusion values between siNT and siSFSWAP-treated cells is plotted on the x-axis. Only statistically significant events (FDR \u22640.05) are shown. Violin plots of inclusion levels corresponding to the individual samples are shown below. Median inclusion value for the sample is indicated by the black dot. Only significant events with 20% or greater change in inclusion levels are plotted for the violin plots. (c) IGV screenshot of read coverages of a few significant retained intron events. Three biological replicates are shown and the intron of interest is marked by the red rectangle. (d) GC content of relevant regions of significant RI and SE events (FDR \u22640.05, \u226510% change in inclusion levels). Red bars indicate the mode of GC content in each region.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** siRNA #1 is not an effective siRNA.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp2-v1.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Scatter plots of RI and SE events are shown with significant events colored (probability \u22650.9 and greater than or equal to 20% change in \u0394PSI). Violin plots of PSI distribution of significant events from individual samples is shown below. The black dot corresponds to the median PSI value of each sample.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Scatter plots of RI and SE events are shown with significant events colored (probability \u22650.9 and greater than or equal to 10% change in \u0394PSI). Violin plots of PSI distribution of significant events from individual samples is shown below. The black dot corresponds to the median PSI value of each sample.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp5-v1.jpg)\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp6-v1.jpg)\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Splicing to generate the mature mRNA (e4\u2013e5) is shown in green. Approximate PSI is shown in parentheses. This was calculated as the number of reads supporting removal of the decoy intron over the mean of reads from adjacent exon-exon junctions is shown in bold green.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig3-figsupp8-v1.jpg)\n\nIn the case of skipped exon events, a positive value for IncLevelDifference indicates increased skipping (reduced inclusion) of the exon upon SFSWAP knockdown, while a negative value indicates increased inclusion. We observed a general enhancement of skipped exon inclusion upon SFSWAP knockdown (Figure 3b). This is in agreement with previous studies where SFSWAP was shown to promote exclusion of CD45 exon 4 and the IICS region of fibronectin (Sarkissian et al., 1996). Our results are also consistent with the observation that SFSWAP inhibits inclusion of Tau exon 10 (Wang et al., 2004). For increased rigor, we also performed alternate splicing analysis using two other pipelines, MAJIQ (Vaquero-Garcia et al., 2023) and Whippet (Sterne-Weiler et al., 2018; Figure 3\u2014figure supplements 3 and 4, Supplementary file 5, Supplementary file 6). Although the number of differential splicing events identified by these pipelines were lower than with rMATS and largely non-overlapping (Figure 3\u2014figure supplement 5), the trends remained similar. These results are consistent with a role for SFSWAP in splicing regulation and further suggest a more prominent role as a negative regulator of splicing.\n\nTo obtain further insights into the targets of SFSWAP, we looked at the sequence features of these SFSWAP-dependent differentially regulated splice events including length, GC content, and splice site strength. While we did not find any significant differences among the events with respect to length or splice site strength, we observed some interesting trends with respect to GC content. In RIs that are more efficiently spliced upon SFSWAP knockdown (positive IncLevelDifference), we found that the average GC content in the RI and flanking exons was higher compared to those that less efficiently spliced (Figure 3d). We observed similar trends toward higher GC content when we examined skipped exon events that result in enhanced inclusion upon SFSWAP knockdown (negative IncLevelDifference). In this case, the skipped exon, upstream and downstream exons all had higher GC content. Together these results suggest that SFSWAP is a global regulator of pre-mRNA splicing that primarily regulates IR and exon skipping events.\n\n### SFSWAP regulates OGT decoy exon inclusion\n\nTo delineate the mechanism of SFSWAP regulation of OGT IR, we further looked into our RNA-seq dataset. Interestingly, genome browser visualization revealed no obvious changes in sequence coverage at the OGT retained intron locus after SFSWAP knockdown (Figure 3\u2014figure supplement 6). Although surprising, this agrees with the RT-qPCR results on the retained intron junction upon SFSWAP knockdown (Figure 2d), where we saw no statistically significant changes in RI junction usage. We reasoned that the lack of junction usage changes could be because the RNA-seq was performed under untreated conditions, while both the CRISPR screen and confirmatory RT-qPCRs were performed under TG-treated conditions (Figure 2, Figure 2\u2014figure supplement 3). To test whether the effect of SFSWAP knockdown on the OGT retained intron is more appreciable under TG-treated conditions, we repeated the RNA-seq analysis after 6 hr of TG treatment. Visualization of OGT detained intron splicing under these conditions using a sashimi plot provided support for enhanced removal of the detained intron upon SFSWAP knockdown (Figure 3\u2014figure supplement 7). Alternate splicing analysis using this dataset reproduced previous results that SFSWAP is a global regulator of pre-mRNA splicing. The effect of SFSWAP on global IR was, if anything, stronger under TG treatment conditions (Figure 3\u2014figure supplement 8).\n\nRecognition of the decoy exon within the OGT retained intron plays an important part in regulation of IR in OGT (Park et al., 2017; Parra et al., 2018). Since one of the phenotypes of SFSWAP knockdown is a change in skipped exon splicing, and the decoy mimics a skipped exon internal to the RI, we wanted to test if decoy exon inclusion levels were altered upon SFSWAP knockdown. To do this, we performed RT-qPCR analysis under UPF1 knockdown conditions in the presence of TG (Figure 4\u2014figure supplements 1 and 2) to stabilize the decoy exon form, which otherwise would be subject to nonsense-mediated decay (NMD). Under these conditions, we saw reduced inclusion of the decoy exon upon SFSWAP knockdown (Figure 4a). We also performed semi-quantitative RT-PCR followed by nanopore sequencing of the region between exons 3 and 8 of OGT mRNA to obtain a comprehensive picture of splicing in the region. Consistent with the RT-qPCR analysis, there was a ~5-fold reduction in sequencing reads containing the decoy exon upon SFSWAP knockdown (Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig4-v1.jpg)\n\n**Figure 4.:** (a) RT-qPCR analysis of OGT intron 4 splicing in UPF1 knockdown background. SFSWAP knockdown was performed for 5 days and cells were then treated with TG for 6 hr before RNA isolation and reverse transcription using a mixture of dT20 and a DNA oligomer complementary to exon 5 of OGT. qPCR was performed for either the spliced junction (e4\u2013e5), retained intron junction (RI\u2013e5), or decoy\u2013e5 junction as shown. DE \u2013 decoy exon. p-values are derived from unpaired t-tests against the corresponding non-target controls and are represented as *** (p<0.001) or **** (p<0.0001). (b) IGV screenshot of aligned reads after nanopore sequencing of semi-quantitative RT-PCR amplicons generated from the above samples using DNA oligomers complementary to exons 3 and 8 of OGT. A zoomed version is shown below to better show changes in the decoy exon region. (c) Quantification of OGT decoy exon inclusion from RNA-seq data in the presence or absence of UPF1 knockdown and/or TG treatment. Inclusion levels and p-values are calculated from the JCEC model of rMATS performed after alignment against a custom reference annotation of the human genome containing decoy exon annotations.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Significance values shown are derived from unpaired t-tests with respect to the corresponding untreated samples. p-values are represented as * (p<=0.05), ** (p<=0.01), *** (p<0.001) or **** (p<0.0001).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig4-figsupp2-v1.jpg)\n\nTo further test the role SFSWAP on OGT decoy exon splicing, we analyzed changes in decoy exon inclusion in the TG-treated RNA-seq dataset. The decoy exon in OGT has two predicted 5\u2032 splice sites and two predicted 3\u2032 splice sites. To quantify changes in decoy exon inclusion, we mapped the RNA-seq reads to a version of the human genome where decoy exons resulting from all four possible combinations of splice sites were manually added to the reference annotation. Differential splicing analysis using the JCEC model of rMATS indicated lower inclusion of the decoy exon upon SFSWAP knockdown, as expected, but the differences were not statistically significant (Figure 4c, left). As a control, decoy inclusion levels were significantly higher in either in UPF1 knockdown alone (since the decoy exon form is stabilized) or TG treatment alone (Figure 4c, middle panels). We reasoned that detection of changes in decoy exon inclusion would be more sensitive in a siSFSWAP/siUPF1 background owing to the presence of the premature stop codon in the decoy exon. Therefore, we performed RNA-seq analysis of SFSWAP knockdown cells (treated with TG) in a UPF1 knockdown background. Alternate splicing analysis using rMATS detected a significant reduction in decoy usage in SFSWAP knockdown cells in this background, consistent with the qPCR results (Figure 4c, right). Thus, we conclude that SFSWAP promotes inclusion of the OGT decoy exon. Because decoy exon recognition is a critical component of regulation of OGT intron detention, these data further suggest that SFSWAP regulates OGT intron detention by controlling decoy exon inclusion and/or recognition.\n\n### SFSWAP may be a global regulator of decoy exon usage\n\nDecoy exons have been proposed to regulate IR in a large number of genes in addition to OGT, especially those with longer retained introns (Parra et al., 2018). To examine whether SFSWAP regulates decoy exon-mediated IR in genes other than OGT, we re-analyzed our UPF1 knockdown RNA-seq dataset to account for these decoys. Most decoy exons remain uncharacterized to date with the exception of a few like those in OGT (Park et al., 2017; Parra et al., 2018), ARGLU1 (Pirnie et al., 2017), and SF3B1 (Parra et al., 2018). To obtain annotations corresponding to putative decoy exons, we used coordinates of novel unannotated cassette exons identified in human erythroblasts by Parra et al., 2018. We also obtained a matching list of known retained introns in the same cells identified based on RNA-seq data. We then filtered the list of novel cassette exons to include only those exons whose positions fall entirely within the corresponding retained introns. This list of 2398 novel cassette exons within known retained introns was used as the list of prospective decoy exons (Supplementary file 7). In principle, all of these may not be splicing decoys, but we think these are reasonable criteria to assay putative decoys.\n\nWe examined the role of SFSWAP in regulating the inclusion of these decoys either in a TG-treated or a TG-treated UPF1 knockdown background by performing alternate splicing analysis using a human reference annotation supplemented with this list of predicted decoy exons. We observed altered patterns of decoy exon inclusion in SFSWAP knockdown conditions compared to non-target. While the changes in retained intron splicing were primarily in the direction of increased splicing (i.e., less RI inclusion) and that of skipped exon splicing were predominantly in the direction of more inclusion upon SFSWAP knockdown, decoy exons were either more or less included (Figure 5a). This may reflect the varying mechanisms of action of individual decoys, their splice site strengths, and/or the efficiency of splicing of the intron in which they are found (see Discussion). We further classified these decoy exons based on the predicted translational outcome if the decoys are included in the transcripts (poison cassette, non-poison or untranslated), but we did not see any additional trends for any of these outcome types (Figure 5b). We obtained similar trends for decoy exon usage regulation by SFSWAP with our TG-treated dataset in the absence of UPF1 knockdown (Figure 5\u2014figure supplement 1), with the only major change being the loss of some of the poison exon events (blue dots) with highest fold changes as expected in the absence of a stabilizing UPF1 knockdown. To further investigate the role of SFSWAP in modulating decoy exon usage, we analyzed the effect of SFSWAP knockdown on splicing of decoy exon-containing retained introns. In contrast to the enhanced removal of retained introns for most non-decoy exon-containing events upon SFSWAP knockdown (Figure 3b, Figure 3\u2014figure supplement 8), decoy-containing retained intron events did not show a trend toward any direction (Figure 5c), suggesting a different mechanism of regulation for decoy-containing retained introns. Consistent with this observation and as observed by other groups (Boutz et al., 2015; Parra et al., 2018), we observed a trend toward increased intron length for decoy-containing retained introns compared to non-decoy-containing retained introns (Figure 5d). Thus, while the mechanism of SFSWAP on individual decoy exons may differ, the data support a role of SFSWAP as a general regulator of decoy exon splicing.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig5-v1.jpg)\n\n**Figure 5.:** (a) Scatter plot of global decoy exon inclusion level changes upon SFSWAP knockdown in a TG-treated UPF1 knockdown background. Statistically significant events are colored. Not all analyzed cassettes may function as splicing decoys. (b) Exon types of the events shown in (a) classified based on the predicted translation outcome. Events shown in blue introduce an in-frame stop codon in the CDS, thus functioning as poison cassettes. (c) Inclusion level changes in decoy-containing retained introns upon SFSWAP knockdown in a TG-treated UPF1 knockdown background. Significant events are colored. (d) Length distribution of the decoy-containing retained introns compared to non-decoy-containing retained introns.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Scatter plot of global decoy exon inclusion level changes upon SFSWAP knockdown in a TG-treated background. Statistically significant events are colored. (b) Exon types of the events shown in (a) classified based on the predicted translation outcome. Events shown in blue introduce an in-frame stop codon in the CDS, thus functioning as poison cassettes. (c) Inclusion level changes in decoy-containing retained introns upon SFSWAP knockdown in TG-treated cells. Significant events are colored. (d) Length distribution of the decoy-containing retained introns compared to non-decoy-containing retained introns.\n\n## Discussion\n\nUsing a genome-wide CRISPR screen, we identified the putative splicing factor SFSWAP to be necessary for efficient OGT IR. The effect is particularly evident in conditions of high O-GlcNAc that strongly favor retention of intron 4. Additionally, we show that depletion of SFSWAP using siRNAs decreases IR in many transcripts and that skipped exons tend to be more included in these conditions. These observations are wholly consistent with previously published single gene focused studies examining splicing of Tau, fibronectin, CD45, and SFSWAP splicing (Wang et al., 2004; Sarkissian et al., 1996; Zachar et al., 1987). Together, these results strongly support the conclusion that SFSWAP is a splicing factor that primarily functions as a negative regulator of splicing.\n\nIn addition, our work suggests that SFSWAP may control OGT splicing by regulating function of its decoy exon and that this may extend to other transcripts with decoy exons. OGT intron 4 and other retained introns require decoy exons for their regulation. Exactly how decoy exons function remains unclear, but several observations suggest that they promote assembly of splicing factors, but not splicing, in order to promote IR (Park et al., 2017; Parra et al., 2018; Parra et al., 2020; Pirnie et al., 2017). First, mutation of the weak 5\u2032 splice sites of the OGT decoy exon leads to constitutive splicing of exons 4 and 5 in reporters. Second, eCLIP data demonstrate that U2AF1 and U2AF2 bind to the decoy 3\u2032 splice sites. Third, addition of a morpholino antisense oligonucleotide targeting the OGT decoy\u2019s 5\u2032 splice site also promotes constitutive splicing of exons 4\u20135. Fourth, placing decoy exons and their flanking sequences into other heterologous introns leads to IR, indicating that there is not a gene or intron-specific suppression of splicing. Fifth, CRISPR deletion of the endogenous locus containing the OGT decoy leads to constitutive splicing of exons 4 and 5. Sixth, only a small percentage of mature transcript spliced isoforms splice in the decoy, even when assayed in NMD-inhibiting condition (Figure 4b). Together, these data support the recent proposed models that decoy exons require recognition by the spliceosome but are rarely spliced into the final product.\n\nWhile the mechanism of SFSWAP regulation remains unclear, these characteristics of decoy exons suggest that it functions downstream of exon definition. If SFSWAP suppresses assembly of splicing factors on exons, knockdown of SFSWAP would increase decoy exon definition and thereby increase IR of OGT. In addition, increased recognition of the decoy exon may also increase decoy exon inclusion due to better recruitment of splicing factors assembly on the decoy. Our data show the exact opposite of these predictions as splicing of exons 4\u20135 increase upon SFSWAP depletion and decoy inclusion decreases (Figures 2, 4).\n\nFor these reasons, we favor a model in which SFSWAP functions subsequent to exon definition to repress a downstream event in the splicing cycle (Figure 6). For skipped exons and retained introns without decoys, SFSWAP represses splicing at canonical sites which can then be used upon SFSWAP depletion. Perhaps its RS domain acts as a negative regulator by competing with RS domains from canonical SR proteins that promote splicing. For OGT, we speculate that SFSWAP represses inclusion of the decoy similar to how it functions for cassette exons (Figure 6, middle and bottom, left). However, in this case, spliceosome assembly at the decoy then indirectly inhibits splicing of exons 4 and 5 by promoting stable unproductive assembly of the spliceosome (Figure 6, bottom left). One piece of data that seems to contradict this model is that there is less splicing of the decoy upon SFSWAP depletion (Figure 4). We speculate that loss of decoy splicing inhibition by SFSWAP allows competition between the OGT decoy and the exon 4\u20135 splice sites. Because the latter are stronger sites, decoy inclusion may be lost due to the increase in mRNA production (Figure 2). Interestingly, for skipped exons and retained introns more generally, SFSWAP knockdown had a clear tendency to increase splicing efficiency (Figure 3). In contrast, SFSWAP knockdown led to a more equal distribution of inclusion and exclusion events on those retained introns containing potential decoy exons (Figure 5). Since the putative decoys are generally weaker exons, releasing the negative regulation by SFSWAP may still not be sufficient to promote inclusion of the decoys whereas derepression of canonical skipped exons leads to their inclusion.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig6-v1.jpg)\n\n**Figure 6.:** See text for details. In the case of retained introns without decoy exons or cassette exons (top and middle), we suggest that SFSWAP (green oval) restricts splicing subsequent to definition of the exons by U1 and U2. For retained introns with decoys, this inhibition of decoy exon inclusion supports the decoy exon\u2019s function to promote intron retention (see Discussion).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Enrichment on RI and SE events is shown as a motif score across the regions of interest. Colored solid lines (red or blue) correspond to motif scores for upregulated and downregulated events, respectively, and dotted lines indicate corresponding \u2212log(p-values). The solid black line indicates the background motif score for the region.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/104439/elife-104439-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** SF1 was immunoprecipitated with mouse anti-SF1 antibodies from 293A-TOA cells treated with either DMSO, TG, or OSMI-1 and the blot was probed with rabbit anti-SFSWAP antibodies. The ~150 kDa band corresponding to SFSWAP is marked. Notably, IP efficiency does not change upon treatment with TG or OSMI-1.\n\nGiven the absence of canonical RNA-binding domains on SFSWAP, it seems plausible that a second protein with direct RNA-binding activity mediates its activity. Interestingly, we observed enrichment of known SRSF1-binding motifs at the 5\u2032 end of SFSWAP-dependent differentially regulated retained intron events and around differentially regulated exon skipping events (Figure 6\u2014figure supplement 1), supporting the idea that SRSF1 acts in concert with SFSWAP to mediate its effect. Alternately, SFSWAP could function in conjunction with the branchpoint binding protein SF1 which has been shown to bind SURP domain containing proteins (like SFSWAP) in vitro (Crisci et al., 2015). Notably, we also identified SF1 as a potential target regulating OGT IR in our TG-treated CRISPR screen (Figure 2) and could also validate SFSWAP-SF1 interactions in cell lines by co-immunoprecipitation (Figure 6\u2014figure supplement 2), further supporting this idea.\n\nWith respect to the role of SFSWAP in mediating changes in OGT intron detention in response to varying O-GlcNAc levels in the cell, we speculate that SFSWAP binding to the U2 snRNP is regulated by cellular O-GlcNAc levels through an unidentified sensor. Multiple phosphorylation events on SFSWAP downstream of this sensor may modulate its binding to U2 snRNP. This is supported by the observation that SFSWAP is one of the most highly differentially phosphorylated proteins in the cell after a short treatment (30 min) with an OGT inhibitor, OSMI-2 (Tan et al., 2020). Treatment of cells with conditions leading to low O-GlcNAc levels lead to phosphorylation of SFSWAP at multiple residues (primarily S604). We propose that this change in phosphorylation status may regulate its disassociation from U2 snRNP. This then leads to altered recognition of the decoy leading to enhanced removal of the retained intron. On the other hand, high O-GlcNAcylation levels lead to accumulation of an unphosphorylated form of SFSWAP capable of binding to U2 snRNP and mediating decoy exon recognition, leading to IR. While we show that SFSWAP plays a major role in regulating OGT IR, we also realize that there are likely other factors at play in regulating OGT intron detention, especially given the fact that SFSWAP knockdown does not lead to complete excision of the OGT retained intron as is observed upon deletion of the decoy (Park et al., 2017). These factors and their mechanism of action remain a subject for future studies.\n\n## Materials and methods\n\n### Cell culture and growth conditions\n\nHCT116 and HEK293T cells were maintained in DMEM (Sigma, D5796) with penicillin-streptomycin, 2 mM L-glutamine, and 10% fetal bovine serum (FBS, Sigma, F0926) and grown at 37\u00b0C in 5% CO2. Media was supplemented with Plasmocin (InvivoGen, ant-mpt, 1:10,000) and 50 \u03bcg/ml hygromycin (Sigma H3274) as required. 250 \u03bcg/ml hygromycin or 1 \u03bcg/ml of puromycin (Sigma P8833) was used for selection of cells. 293A-TOA cells (Sahin et al., 2010) were grown similarly, but with Tet-free FBS (Atlanta Biologicals, S10350). Plasmid transfections were performed using TransIT-293 (Mirus bio, MIR 2704) for HEK293 cells or Fugene HD (Promega, E2311) for HCT116 cells according to manufacturer\u2019s protocols. For modulation of O-GlcNAc levels, cells were treated with 10 \u03bcM OSMI-1 (Sigma SML1621), 1 \u03bcM TG (Sigma SML0244), 100 \u03bcM DON, 10 mM glucosamine, or 50 \u03bcM PUGNAc for 6 hr. Glucose deprivation was performed by growing cells in glucose-free media (Thermo Fisher Scientific, 11966025) for 24 hr. A list of key resources and primer sequences is provided in Appendix 1\u2014key resources table and Supplementary file 8 respectively.\n\n### O-GlcNAc responsive GFP reporter construction\n\nAn 864-bp PCR product encoding the eGFP, the T2A element and a part of \u03b2-globin exon 2 was PCR amplified from pNC1330 using the oligomers NC3739 and NC3482 (Acc65I and BamHI ends). A second PCR product (1056 bp) encoding the remaining part of \u03b2-globin exon 2, intron 2, and exon 3 was PCR amplified from pNC980 using NC2085 and NC3851 (BamHI and XbaI ends). The two fragments were ligated into an Acc65I XbaI digested pcDNA3 vector to obtain a BamHI site at the junction of the two fragments. A 4008-bp BamHI fragment encoding OGT exon 4, intron 4, and exon 5 from pNC980 was then ligated into the newly generated BamHI site to obtain a pcDNA version of the GFP reporter. The entire reporter region consisting of eGFP, T2A, OGT exon 4, intron 4, exon 5, and flanking \u03b2-globin introns and exons was then moved to pNC1049 using the Acc65I XbaI sites to obtain the final reporter construct (pNC1771).\n\n### AAVS1 integration and clonal cell line generation\n\nThe reporter construct generated above was integrated into the AAVS1 safe harbor locus of HCT116 cells by TALEN-mediated recombination as described before (Scarborough et al., 2021). hAAVS1 1L TALEN and hAAVS1 1R TALEN were gifts from Feng Zhang (Addgene plasmid #35431 and #35432, respectively) (Sanjana et al., 2012). Reporter integrated cells were selected by growth in 250 \u03bcg/ml hygromycin for 2 weeks. Fluorescence activated cell sorting was performed to select cells expressing varying GFP levels, which were expanded and screened for reporter activity in the presence of either OSMI-1 or TG by northern blot analysis. Cell lines showing enhanced intron 4 splicing in response to OSMI-1 and increased retention of the reporter RNA in response to TG were selected for further screening by RT-qPCR.\n\n### Reporter validation\n\nFor RT-qPCR validation, total RNA isolated from inhibitor treated cells was subjected to reverse transcription using 2.5 \u03bcM dT20 oligomers and 200 U of SuperScript II reverse transcriptase (Thermo Fisher Scientific, 18064014). The resulting cDNA was used as a template for PCR amplification using NC3378 (binding within the GFP ORF) and NC2094 (binding downstream of the last of \u03b2-globin exon 3). An amplicon size of 1251 bp is expected in the absence of any unexpected alternate splicing events. For validation of O-GlcNAc responsiveness, the reporter line was treated with modulators of O-GlcNAc levels as above. Cells were subjected to either FACS analysis or western blot analysis using either anti-GFP antibodies or O-GlcNAc RL2 antibodies. \u03b2-Actin antibodies were used for loading controls.\n\n### Northern blot analysis\n\nNorthern blot analysis was performed using standard techniques. Briefly, about 3\u20135 \u03bcg of total RNA was resolved on a 0.8\u20131.4% formaldehyde agarose gel, transferred to a positively changed nylon membrane by capillary transfer, UV-crosslinked and probed with radiolabeled RNA probes generated by in vitro transcription with T7 RNA polymerase. Sequences of DNA oligomers used to generate transcript specific probes are listed in Supplementary file 8.\n\n### siRNA knockdown\n\nFor SFSWAP knockdowns, 293A-TOA were transfected with 40 nM siRNA using RNAiMAX (Thermo Fisher Scientific, 13778150) following the manufacturer\u2019s protocol. Cells were split 24 hr post-transfection and allowed to grow for an additional 4 days. All other gene knockdowns were performed similarly with 30 nM siRNA and 3 additional days of growth after splitting.\n\n### CRISPR screens\n\nUnbiased pooled CRISPR screens using the Human Brunello CRISPR knockout pooled library (a gift from David Root and John Doench, Addgene #73179) (Doench et al., 2016) were performed as before (Scarborough et al., 2021). Briefly, amplified library DNA isolated from ElectroMAX Stbl4 Competent Cells (Thermo Fisher Scientific, 11635018) was used to generate a high-titer lentiviral library using HEK293T cells. Following viral titer estimation by CellTiter-Glo Luminescent Cell Viability Assay (Promega, G7570) and Benzonase (Sigma, E1014) treatment, the lentiviral supernatant was used to infect reporter cells at a 30% infection ratio. Pilot screens were performed at 100\u00d7 library coverage and replicate screens were performed at 300\u00d7 coverage. Infected cells were selected in puromycin for a total of 8 days. On the last day of selection, cells were either left untreated or treated with either TG (replenished every 12 hr for a total of 24 hr) or OSMI-1 for 24 hr. In the case of TG-treated screens, the high GFP-expressing population of cells were collected, while in case of the OSMI-1-treated screens, low GFP-expressing cells were collected. In the case of untreated screens, both populations of cells were collected. Sorting was performed at the Flow Cytometry Core at UT Southwestern Medical Center. Following DNA isolation and PCR amplification of the guide RNA-encoding locus, next-generation sequencing was performed on an Illumina NextSeq550 instrument using an indexed single-end sequencing protocol with a read length of 75 bp. The original DNA preparation used to generate the lentiviral library was sequenced simultaneously to ensure complete library representation. Reads were mapped to the Brunello library guide RNA sequences and statistical analysis to calculate enrichment over unselected cells was performed using the MAGeCK-VISPR (Li et al., 2015) pipeline.\n\n### Validation of CRISPR screen hits\n\nGenes corresponding to the top enriched guide RNAs from the TG-treated CRIPSR screen were validated as regulators of OGT intron detention by siRNA-mediated knockdown of the gene in the presence of TG followed by RT-qPCR of relevant junctions of endogenous OGT. Target genes were further validated by northern blot analysis of either the reporter RNA or endogenous OGT RNA following knockdown.\n\n### RT-qPCR analysis\n\nFor RT-qPCR analysis of endogenous OGT splicing, 1 \u03bcg of total RNA was used for reverse transcription using 2.5 \u03bcM dT20 and 200 U of M-MuLV Reverse Transcriptase (NEB, M0253S) for 50 min at 42\u00b0C. Following heat denaturation at 80\u00b0C for 10 min, excess RNA and RNA:DNA hybrids were removed by digestion with RNase A and RNase H. The resulting cDNA was used as a template for qPCR using the iTaq Universal SYBR Green Supermix (Bio-Rad, 1725121). PCR was performed for 40 cycles with an annealing temperature of 60\u00b0C. Analysis was performed using the \u0394\u0394Ct method using actin for normalization. OGT decoy exon qPCRs were performed similarly in a UPF1 knockdown background, but with 5 \u03bcg of total RNA, 200 U of SuperScript IV (Thermo Fisher Scientific, 18090050) and a mixture of 2.5 \u03bcM dT20 and 2 pmol of an OGT exon 5 specific reverse primer (NC985).\n\n### RNA-seq analysis\n\nRNA-seq analysis was performed in 293A-TOA cells in either wild-type or UPF1 knockdown background with or without 1 \u03bcM TG treatment for 6 hr. All RNA-seq experiments were performed in biological triplicates. Cells were harvested from 6-well plates at 70\u201380% confluency. Knockdown efficiency of proteins of interest were validated by either western blot analysis or RT-qPCR with appropriate primers. RNA isolation was performed using Zymo Direct-zol RNA miniprep kit (Zymo R2050). One \u03bcg of total RNA was used for polyA-RNA isolation and library preparation using the KAPA mRNA Hyperprep kit (Roche, KK8580) following the manufacturer\u2019s protocol. RNA was fragmented to an average fragment size of 100 bp. The kit-supplied adaptor was replaced with NEB adaptors and index primers (NEB, E7335S) to enable pooling of multiple samples per flow cell. Single-end sequencing with a read length of 100 bp was performed using an Illumina NextSeq 2000 instrument at the McDermott Center Next Generation Sequencing (NGS) Core at UT Southwestern Medical Center to obtain 60\u201365 million reads per sample on average.\n\nReads were trimmed with cutadapt and aligned to GENCODE release 40 of the human reference genome with STAR (version 2.7) (Dobin et al., 2013) using the \u2018--twopassMode Basic\u2019 option. Batch correction was performed, if necessary, using the EDASeq (Risso et al., 2011) and RUVSeq (Risso et al., 2014) R packages. Differential expression analysis was performed using edgeR (Robinson et al., 2010) using factors of unwanted variation obtained from RUVSeq as an additional covariate in the design matrix.\n\n### Alternate splicing analysis\n\nAlternate splicing analysis was performed using rMATS (Shen et al., 2014), MAJIQ (Vaquero-Garcia et al., 2023), and Whippet (Sterne-Weiler et al., 2018). rMATS analysis was performed with either untreated or TG-treated samples using all three biological replicates of siNT and siSFSWAP samples. For rMATS, events with FDR \u22640.05 and IncLevelDifference \u22650.2 were considered significant. Whippet analysis was performed with default parameters using all three biological replicates of untreated siNT or siSFSWAP samples. Events with probability \u22650.9 and \u0394PSI of 20% or greater were considered significant. MAJIQ analysis was performed using the GFF3 version of the genome obtained from GENCODE (instead of GTF). The \u2018build\u2019 step was performed with the options --min-experiments 2 and --simplify 0.10. Following the \u2018deltapsi\u2019 step, Local Splicing Variations (LSVs) were converted into rMATS-style binary events using the \u2018modulize\u2019 function. Events with probability \u22650.9 and \u0394PSI of \u226510% were considered significant. The proportion of event types as a fraction of all event types was plotted from rMATS output (JC model) using MASER (https://github.com/DiogoVeiga/maser; DiogoVeiga, 2022). GC content calculations were performed based on rMATS JC model outputs taking only significant events (as defined above) into consideration. Enrichment of RBP-binding sites around alternately spliced events was visualized using the rMAPS2 web server (Hwang et al., 2020) with rMATS JCEC model output files provided as inputs. Sashimi plots for regions of interest were generated using rmats2sashimiplot (https://github.com/Xinglab/rmats2sashimiplot; Xinglab, 2025).\n\n### Amplicon sequencing\n\ncDNA preparations from TG-treated SFSWAP knockdown (or non-target) cells in a UPF1 knockdown background were used as templates for PCR amplification of the region between OGT exons 3 and 8 using the primers NC1769 and NC988. PCR was performed for 30 cycles using Q5 DNA polymerase (NEB, M0491S). The amplicons were sequenced at Plasmidsaurus. Sequencing reads were aligned to a version of OGT cDNA sequence containing the longest form of the OGT decoy exon (153 bp) but excluding the rest of the retained intron using minimap2 (Li, 2018) and the number of reads overlapping the decoy exon were computed using bedtools (Quinlan and Hall, 2010). Coordinates for the four possible OGT decoy exon forms are as follows: decoy 143 (chrX:71,546,347\u201371,546,489), decoy 146 (chrX:71,546,344\u201371,546,489), decoy 150 (chrX:71,546,347\u201371,546,496), and decoy 153 (chrX:71,546,344\u201371,546,496).\n\n### Global alternate decoy exon usage analysis\n\nDecoy exon usage analysis was performed using RNA-seq reads obtained with or without UPF1 knockdown in the presence of TG, and either non-target (siNT) or SFSWAP (siSFSWAP) knockdown. To obtain decoy exon annotations, we used coordinates of novel unannotated cassette exons identified in human erythroblasts by Parra et al., 2018 based on a set of stringent criteria. This list of novel cassette exons was further filtered to only keep cassettes located within known retained introns in the same cell line. The coordinates of these novel cassette exons located within known retained introns were used to supplement RefSeq (based on genome assembly GCF_000001405.34/GRCh38.p8) to obtain a version of the human reference annotation containing potential decoy exons. RNA-seq reads were trimmed and mapped to this modified reference using STAR in \u2018two-pass Basic\u2019 mode. rMATS analysis was performed as above.\n\n### Co-immunoprecipitation analysis\n\nCo-immunoprecipitation of SFSWAP with SF1 was performed from 293A-TOA cells grown in a 60-mm plate treated with either DMSO, TG, or OSMI-1. Briefly, cells were lysed in a buffer containing 100 mM NaCl, 2.5 mM MgCl2, 10 mM Tris-HCl pH 7.5 and 0.5% IGEPAL CA-630, 1 mM PMSF and 1\u00d7 Protease Inhibitor Cocktail Set V (Millipore, 539137). Samples were nutated at room temperature with 20 U RQ1 DNase (Promega, M6101) and RNase A (10 \u03bcg/ml) for 15 min, clarified by centrifugation, and incubated with 2 \u03bcg of mouse anti-SF1 antibodies for 2 hr at 4\u00b0C. The antibody complexes were pulled down with 20 \u03bcl protein A magnetic beads, washed five times with the same buffer lacking protease inhibitors and eluted with 1\u00d7 SDS\u2013PAGE loading buffer. The eluate was resolved on a 7.5% SDS\u2013PAGE gel, transferred to a nylon membrane, probed with rabbit anti-SFSWAP antibodies (1:1000) and detected using IRDye-conjugated secondary antibodies on a Licor instrument.\n\n### Material availability\n\nAll unique plasmids and cell lines generated for this study are available upon request to corresponding author.\n",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pedro Batista, National Institutes of Health, National Cancer Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104439.3.sa0](https://doi.org/10.7554/eLife.104439.3.sa0)\n\nThis study provides fundamental insights into the regulation of a retained intron in the mRNA coding for OGT, a process known to be regulated by the O-GlcNAc cycling system, and highlights the functional role of the splicing regulator SFSWAP. The evidence supporting the claims of the authors is convincing; the authors performed an elegant state-of-the-art CRISPR knockout strategy and sophisticated bioinformatic analysis to identify SFSWAP as a negative regulator of alternative splicing. The work will be of interest to researchers in the fields of splicing and glycobiology.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104439.3.sa1](https://doi.org/10.7554/eLife.104439.3.sa1)\n\nSummary:\n\nGovindan and Conrad use a genome-wide CRISPR screen to identify genes regulating retention of intron 4 in OGT, leveraging an intron retention reporter system previously described (PMID: 35895270). Their OGT intron 4 reporter reliably responds to O-GlcNAc levels, mirroring the endogenous splicing event. Through a genome-wide CRISPR knockout library, they uncover a range of splicing-related genes, including multiple core spliceosome components, acting as negative regulators of OGT intron 4 retention. They choose to follow up on SFSWAP, a largely understudied splicing regulator shown to undergo rapid phosphorylation in response to O-GlcNAc level changes (PMID: 32329777). RNA-sequencing reveals that SFSWAP depletion not only promotes OGT intron 4 splicing but also broadly induces exon inclusion and intron splicing, affecting decoy exon usage. While this study offers interesting insights into intron retention regulation and O-GlcNAc signaling, the RNA-Sequencing experiments lack essential controls needed to provide full confidence to the authors' conclusions.\n\nStrengths:\n\n(1) This study presents an elegant genetic screening approach to identify regulators of intron retention, uncovering core spliceosome genes as unexpected positive regulators of intron retention.\n\n(2) The work proposes a novel functional role for SFSWAP in splicing regulation, suggesting that it acts as a negative regulator of splicing and cassette exon inclusion, which contrasts with expected SR-related protein functions.\n\n(3) The authors suggest an intriguing model where SFSWAP, along with other spliceosome proteins, promotes intron retention by associating with decoy exons.\n\nWeaknesses:\n\n(1) The conclusions regarding SFSWAP's impact on alternative splicing rely on cells treated with a single pool of two siRNAs for five days. The absence of independent siRNA treatments raises concerns about potential off-target effects, which may reduce confidence in the observed SFSWAP-dependent splicing changes. Rescue experiments or using additional independent siRNA treatments would strengthen the conclusions.\n\n(2) The mechanistic role of SFSWAP in splicing would benefit from further exploration, though this may be more appropriate for future studies.\n\nComments on revisions:\n\nThe authors have addressed all my previous recommendations.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104439.3.sa2](https://doi.org/10.7554/eLife.104439.3.sa2)\n\nSummary:\n\nThe paper describes an effort to identify the factors responsible for intron retention and alternate exon splicing in a complex system known to be regulated by the O-GlcNAc cycling system. The CRISPR/Cas9 system was used to identify potential factors. The bioinformatic analysis is sophisticated and compelling. The conclusions are of general interest and advance the field significantly.\n\nStrengths:\n\n- Exhaustive analysis of potential splicing factors in an unbiased screen.\n\n- Extensive genome wide bioinformatic analysis.\n\n- Thoughtful discussion and literature survey\n\nWeaknesses:\n\n- No firm evidence linking SFSWA to an O-GlcNAc specific mechanism.\n\n- Resulting model leaves many unanswered questions.\n\nComments on revisions:\n\nI think the authors have adequately dealt with the overall reviewer's comments.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104439.3.sa3](https://doi.org/10.7554/eLife.104439.3.sa3)\n\nSummary:\n\nThe major novel finding in this study is that SFSWAP, a splicing factor containing an RS domain but no canonical RNA binding domain, functions as a negative regulator of splicing. More specifically, it promotes retention of specific introns in a wide variety of transcripts including transcripts from the OGT gene previously studied by the Conrad lab. The balance between OGT intron retention and OGT complete splicing is an important regulator of O-GlcNAc expression levels in cells.\n\nStrengths:\n\nAn elegant CRISPR knockout screen employed a GFP reporter, in which GFP is efficiently expressed only when the OGT retained intron is removed (so that the transcript will be exported from the nucleus to allow for translation of GFP). Factors whose CRISPR knockdown cause decreased intron retention therefore increase GFP, and these can be identified by sequencing RNA of GFP-sorted cells. SFSWAP was thus convincingly identified as a negative regulator of OGT retained intron splicing. More focused studies of OGT intron retention indicate that it may function by regulating a decoy exon previously identified in the intron, and that this may extend to other transcripts with decoy exons.\n\nWeaknesses:\n\nThe mechanism by which SFSWAP represses retained introns is unclear, although some data suggests it can operate (in OGT) at the level of a recently reported decoy exon within that intron. Interesting / appropriate speculation about possible mechanism are provided and will likely be the subject of future studies.\n\nOverall the study is well done and carefully described.\n",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c2016fce-7550-4329-b9c7-17d3dbdddb0e",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C1",
+      "claim": "O-GlcNAcylation is the reversible post-translational addition of \u03b2-N-acetylglucosamine to serine and threonine residues of nuclear and cytoplasmic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "O-GlcNAcylation is the reversible post-translational addition of \u03b2-N-acetylglucosamine to serine and threonine residues of nuclear and cytoplasmic proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established definition in the field, representing established scientific knowledge about O-GlcNAcylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "bd9ef931-8dae-4093-9eed-3bfd15b71014",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C2",
+      "claim": "O-GlcNAcylation plays an important role in several cellular processes through the modification of thousands of protein substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It plays an important role in several cellular processes through the modification of thousands of protein substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established scientific consensus about the broad functional importance of O-GlcNAcylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "1f05c062-ff21-42f6-b815-4617ac480512",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C3",
+      "claim": "O-GlcNAcylation in humans is mediated by a single essential enzyme, O-GlcNAc transferase (OGT).",
+      "claim_type": "EXPLICIT",
+      "source": "O-GlcNAcylation in humans is mediated by a single essential enzyme, O-GlcNAc transferase (OGT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field about the enzymatic basis of O-GlcNAcylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "e0ad487a-db73-4c86-ab7e-e0480945dd6b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C4",
+      "claim": "OGT, together with the sole O-GlcNAcase OGA, form an intricate feedback loop to maintain O-GlcNAc homeostasis in response to changes in cellular O-GlcNAc using a dynamic mechanism involving nuclear retention of its fourth intron.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT, together with the sole O-GlcNAcase OGA, form an intricate feedback loop to maintain O-GlcNAc homeostasis in response to changes in cellular O-GlcNAc using a dynamic mechanism involving nuclear retention of its fourth intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and likely references prior work on OGT regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "09c67956-7cef-4161-a8e0-232e975a15ab",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C5",
+      "claim": "SFSWAP is a trans-acting factor regulating OGT intron detention.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an O-GlcNAc responsive GFP reporter cell line, we identify SFSWAP, a poorly characterized splicing factor, as a trans-acting factor regulating OGT intron detention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data from the CRISPR screen and validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "7a09f1b1-e55c-467e-8dd5-b93ceadbce6d",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C6",
+      "claim": "SFSWAP is a global regulator of retained intron splicing and exon skipping that primarily acts as a negative regulator of splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that SFSWAP is a global regulator of retained intron splicing and exon skipping that primarily acts as a negative regulator of splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by RNA-seq data and alternate splicing analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "d8d563fe-1cfe-4353-88c2-b223dc09978a",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C7",
+      "claim": "Knockdown of SFSWAP leads to reduced inclusion of a 'decoy exon' present in the OGT retained intron.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, knockdown of SFSWAP leads to reduced inclusion of a 'decoy exon' present in the OGT retained intron which may mediate its role in OGT intron detention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR and RNA-seq data showing changes in decoy exon inclusion upon SFSWAP knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "b6c5ea1f-603b-4a7c-bbe1-c84e2885d7ca",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C8",
+      "claim": "Global analysis of decoy exon inclusion in SFSWAP and UPF1 double knockdown cells indicate altered patterns of decoy exon usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Global analysis of decoy exon inclusion in SFSWAP and UPF1 double knockdown cells indicate altered patterns of decoy exon usage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data and alternate splicing analysis in double knockdown conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "ddea65a8-b6a2-4a87-96a2-04686ca8ca6f",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C9",
+      "claim": "Intron retention refers to the lack of removal of specific introns in a transcript, resulting in full-length introns in an RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Intron retention (IR) refers to the lack of removal of specific introns in a transcript, resulting in full-length introns in an RNA (Monteuuis et al., 2019; Rekosh and Hammarskjold, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "b96bbe52-9352-44d3-889a-2e6fc3094073",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C10",
+      "claim": "IR that leads to impaired cytoplasmic export and nuclear retention of the transcript is referred to as intron detention.",
+      "claim_type": "EXPLICIT",
+      "source": "IR that leads to impaired cytoplasmic export and nuclear retention of the transcript is referred to as intron detention (Boutz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "ba508ff0-e2cb-4d47-b67e-54f45021550e",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C11",
+      "claim": "Detained introns are a common feature of mammalian transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Detained introns are a common feature of mammalian transcriptomes, but, unlike other forms of alternate splicing, intron detention controls the levels and timing of production of mature mRNA (Boutz et al., 2015; Braunschweig et al., 2014; Yap et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "dc08e3d0-46c7-47ef-bd35-e8a5699560e5",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C12",
+      "claim": "Intron detention controls the levels and timing of production of mature mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Detained introns are a common feature of mammalian transcriptomes, but, unlike other forms of alternate splicing, intron detention controls the levels and timing of production of mature mRNA (Boutz et al., 2015; Braunschweig et al., 2014; Yap et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "063bcc70-26e9-4b01-a57a-4ad7a20c4e31",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C13",
+      "claim": "DI-containing transcripts may serve as nuclear reservoirs that are spliced in response to cellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "DI-containing transcripts may serve as nuclear reservoirs that are spliced in response to cellular environment, or they may be transcriptional dead-ends that are subjected to nuclear degradation pathways (Boutz et al., 2015; Yap et al., 2012; Pendleton et al., 2018; Mauger et al., 2016; Ninomiya et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "37b655bf-3bbb-4bea-8620-936d30e4d697",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C14",
+      "claim": "DI-containing transcripts may be transcriptional dead-ends that are subjected to nuclear degradation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "DI-containing transcripts may serve as nuclear reservoirs that are spliced in response to cellular environment, or they may be transcriptional dead-ends that are subjected to nuclear degradation pathways (Boutz et al., 2015; Yap et al., 2012; Pendleton et al., 2018; Mauger et al., 2016; Ninomiya et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "310d5c0f-068f-42cd-9e74-49bb65352288",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C15",
+      "claim": "The environmental cues that regulate intron detention of the human O-linked \u03b2-N-acetylglucosamine (O-GlcNAc) transferase (OGT) protein have been defined.",
+      "claim_type": "EXPLICIT",
+      "source": "The environmental cues that regulate intron detention of the human O-linked \u03b2-N-acetylglucosamine (O-GlcNAc) transferase (OGT) protein have been defined, but the mechanisms of this regulation are not fully understood (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "084dcc20-d0ec-4928-b59c-04ebf3df5119",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C16",
+      "claim": "The mechanisms of OGT intron detention regulation are not fully understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The environmental cues that regulate intron detention of the human O-linked \u03b2-N-acetylglucosamine (O-GlcNAc) transferase (OGT) protein have been defined, but the mechanisms of this regulation are not fully understood (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work and represents a knowledge gap.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "2102738d-09bf-41e2-a872-8c82390a2b40",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C17",
+      "claim": "OGT encodes the sole enzyme responsible for the post-translational modification O-GlcNAc, where UDP-GlcNAc serves as the cofactor for addition of GlcNAc residues to the hydroxyl groups of serine and threonine residues of thousands of nuclear and cytoplasmic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT encodes the sole enzyme responsible for the post-translational modification O-GlcNAc, where UDP-GlcNAc serves as the cofactor for addition of GlcNAc residues to the hydroxyl groups of serine and threonine residues of thousands of nuclear and cytoplasmic proteins (Kreppel et al., 1997; Lubas et al., 1997; Bond and Hanover, 2015; Mannino and Hart, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "6f9309b2-1a66-472f-8745-b0ab757fde1a",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C18",
+      "claim": "OGA (O-GlcNAcase) is the sole enzyme responsible for removal of O-GlcNAc.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, OGA (O-GlcNAcase) is the sole enzyme responsible for removal of O-GlcNAc (Gao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "9a46f837-fbb6-4f06-998b-f8813335f4c0",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C19",
+      "claim": "Cells maintain O-GlcNAc homeostasis by an intricate feedback mechanism involving intron detention of the OGT transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells maintain O-GlcNAc homeostasis by an intricate feedback mechanism involving intron detention of the OGT transcript (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "27ae4da4-39e4-497b-9ad9-de76a006c546",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C20",
+      "claim": "Under conditions of high cellular O-GlcNAc (such as treatment with the OGA inhibitor thiamet G [TG]), intron 4 of OGT is detained, resulting in reduction in cytoplasmic OGT mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of high cellular O-GlcNAc (such as treatment with the OGA inhibitor thiamet G [TG]), intron 4 of OGT is detained, resulting in reduction in cytoplasmic OGT mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and prior work on OGT regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "7079c6e1-84b9-45cc-80fb-8d20f40c6ad3",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C21",
+      "claim": "Under conditions of low cellular O-GlcNAc (such as glucose deprivation or treatment with the OGT inhibitor OSMI-1), the intron is rapidly excised, resulting in increased levels of cytoplasmic OGT mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under conditions of low cellular O-GlcNAc (such as glucose deprivation or treatment with the OGT inhibitor OSMI-1), the intron is rapidly excised, resulting in increased levels of cytoplasmic OGT mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and prior work on OGT regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "d4de52cc-a72d-43ca-ad91-c3b233742733",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C22",
+      "claim": "The OGA transcript is also regulated by intron detention, but with the inverse relationship to O-GlcNAc levels outcomes as OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the OGA transcript is also regulated by intron detention, but with the inverse relationship to O-GlcNAc levels outcomes as OGT (Tan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "804a3491-c418-417e-b989-02a9aaf04f58",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C23",
+      "claim": "A cis-acting intronic splicing silencer (ISS) situated within OGT intron 4 is necessary for IR.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously identified a cis-acting intronic splicing silencer (ISS) situated within OGT intron 4 that is necessary for IR (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "dcdc89f1-362b-48f9-abbb-bd7bb47df508",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C24",
+      "claim": "The ISS overlaps with an ~150 bp unannotated 'decoy exon' possessing multiple weak 5\u2032 and 3\u2032 splice sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent work by other groups showed that the ISS overlaps with an ~150 bp unannotated 'decoy exon' possessing multiple weak 5\u2032 and 3\u2032 splice sites (Parra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work by other groups.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "092c4406-b882-4aca-b0d4-62df09cd17f2",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C25",
+      "claim": "Deletion of the OGT decoy exon/ISS or even blocking of the decoy 5\u2032 splice sites using morpholino oligonucleotides renders splicing of intron 4 constitutive.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the OGT decoy exon/ISS or even blocking of the decoy 5\u2032 splice sites using morpholino oligonucleotides renders splicing of intron 4 constitutive (Park et al., 2017; Parra et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "d40436de-5a8a-4784-bd92-7305dfccc891",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C26",
+      "claim": "At least partial assembly of the spliceosome around the decoy is necessary for OGT intron detention even though splicing of the decoy exon does not occur.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the somewhat counterintuitive idea that at least partial assembly of the spliceosome around the decoy is necessary for OGT intron detention even though splicing of the decoy exon does not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations cited.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "02847df5-c543-41f1-98c6-9ce955dd488b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C27",
+      "claim": "Decoy exons are present in many other retained intron containing genes, specifically those with longer retained introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoy exons are not unique to OGT and are present in many other retained intron containing genes, specifically those with longer retained introns (Parra et al., 2018; Pirnie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "0ee53ed7-faa0-41ea-87fb-6ee059646f49",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C28",
+      "claim": "The decoy exons mediate IR in these genes as well.",
+      "claim_type": "EXPLICIT",
+      "source": "The decoy exons mediate IR in these genes as well, but the precise mechanism by which decoy exons regulate IR remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "640038fa-c242-4b7c-ade0-ee12f6b3cdf9",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C29",
+      "claim": "OGT has been proposed to be a 'master regulator' of detained intron splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the role of OGT intron detention in buffering changes in cellular O-GlcNAc levels, OGT (and consequently O-GlcNAc) has been proposed to be a 'master regulator' of detained intron splicing (Tan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "828b15aa-acd6-4887-a3c9-51bcd04b6635",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C30",
+      "claim": "Treatment of cells with the OGT inhibitor OSMI-2 for short time periods (~30 min) induces changes in OGT detention to buffer O-GlcNAc levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of cells with the OGT inhibitor OSMI-2 for short time periods (~30 min) induces changes in OGT detention to buffer O-GlcNAc levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "190f2f43-44bc-4f3f-b278-f249b40fecb6",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C31",
+      "claim": "Longer treatment durations (~2 hr) with OSMI-2 lead to global changes in detained intron splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, longer treatment durations (~2 hr) lead to global changes in detained intron splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "b6d4cc3e-0464-443c-bec2-eec08a124f81",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C32",
+      "claim": "Differential phosphoproteomics after a short OSMI-2 treatment identified a set of proteins enriched in splicing factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential phosphoproteomics after a short OSMI-2 treatment identified a set of proteins enriched in splicing factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work, likely from Tan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "2fdc38ed-16b6-40db-ae69-33e28ba0fdde",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C33",
+      "claim": "SFSWAP was identified as an 'early responder' in differential phosphoproteomics after OSMI-2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'early responders' could potentially mediate downstream effects of OSMI-2 on splicing and included the putative splicing factor SFSWAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work, likely from Tan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "1ac11995-6e07-41a9-87ea-d170aeac014c",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C34",
+      "claim": "SFSWAP encodes the essential human homolog of the Drosophila splicing factor SWAP.",
+      "claim_type": "EXPLICIT",
+      "source": "SFSWAP (splicing factor, suppressor of white-apricot homolog; SFRS8) encodes the essential human homolog of the Drosophila splicing factor SWAP (Denhez and Lafyatis, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "af22b525-ba51-4919-8085-f5ae67587a15",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C35",
+      "claim": "SFSWAP is an alternate splicing factor containing an RS domain, but it does not possess a canonical RNA-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is an alternate splicing factor containing an RS domain, but it does not possess a canonical RNA-binding domain (Denhez and Lafyatis, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "691c1777-e331-41c6-b9b1-ba7ce3c95fb2",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C36",
+      "claim": "SFSWAP contains two suppressor of white apricot/Prp21 (SURP) domains which mediate its binding to other proteins containing an SURP interaction domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains two suppressor of white apricot/Prp21 (SURP) domains which mediate its binding to other proteins containing an SURP interaction domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about SFSWAP structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "615022f3-b91f-4ce6-a39e-3759688e9fd7",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C37",
+      "claim": "The second SURP domain of SFSWAP has been shown to interact with the mammalian branchpoint binding protein SF1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The second SURP domain of SFSWAP has been shown to interact with the mammalian branchpoint binding protein SF1 in vitro (Crisci et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "64a67e2e-d9db-4cb1-ad62-3990d0cb149b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C38",
+      "claim": "SFSWAP regulates alternate splicing of Tau.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it regulates alternate splicing of Tau (Wang et al., 2004), CD45 and fibronectin (Sarkissian et al., 1996) by inhibiting the inclusion of specific exons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "b2f63c89-a0b0-47dc-955e-99bbeb5c2b13",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C39",
+      "claim": "SFSWAP regulates alternate splicing of CD45 and fibronectin by inhibiting the inclusion of specific exons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it regulates alternate splicing of Tau (Wang et al., 2004), CD45 and fibronectin (Sarkissian et al., 1996) by inhibiting the inclusion of specific exons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "fe1c5b21-273c-4736-b48b-427fa28be6cd",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C40",
+      "claim": "Knockout of SFSWAP leads to enhanced splicing of the OGT detained intron, particularly under high-O-GlcNAc conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that knockout of SFSWAP leads to enhanced splicing of the OGT detained intron, particularly under high-O-GlcNAc conditions, indicating its role as a negative regulator of OGT splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "f34a84a2-7db8-47a1-aeaa-6f269ca9d743",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C41",
+      "claim": "SFSWAP regulates OGT intron detention by modulating the inclusion or recognition of the decoy exon present within the detained intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that SFSWAP regulates OGT intron detention by modulating the inclusion or recognition of the decoy exon present within the detained intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data and inference from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "3163993e-a67b-4fcb-91e5-7ff7bb78fe02",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C42",
+      "claim": "SFSWAP may regulate decoy exon splicing globally to mediate its effect on intron detention.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, global analysis of decoy exon splicing upon SFSWAP knockdown indicates that SFSWAP may regulate decoy exon splicing globally to mediate its effect on intron detention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data from global analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "c502b034-db9c-4663-893d-51a0788fa79c",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C43",
+      "claim": "The GFP reporter construct reflects the response of endogenous OGT to intracellular O-GlcNAc levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that our GFP reporter construct reflects the response of endogenous OGT to intracellular O-GlcNAc levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by experimental validation data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "c5c60ce4-75df-4e60-8868-fb17293c8c86",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C44",
+      "claim": "Treatment of reporter lines with 1 \u03bcM TG for 6 hr led to reduced levels of the spliced product.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the reporter line with 1 \u03bcM TG for 6 hr led to reduced levels of the spliced product, while treatment with 10 \u03bcM OSMI-1 for the same time led to enhanced splicing increased levels of the reporter mRNA (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "6a66627d-1c20-49a3-a44d-3ebaa39f27e5",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C45",
+      "claim": "Treatment with 10 \u03bcM OSMI-1 for 6 hr led to enhanced splicing and increased levels of the reporter mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the reporter line with 1 \u03bcM TG for 6 hr led to reduced levels of the spliced product, while treatment with 10 \u03bcM OSMI-1 for the same time led to enhanced splicing increased levels of the reporter mRNA (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "3f1ec83f-b464-471a-a11e-86de4aaf04e5",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C46",
+      "claim": "OGT was the top hit from the CRISPR screens.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the top hit from the screens was OGT itself (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the MAGeCK analysis results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "88a8edd3-b4d3-4589-b090-b2b82cf3c7ef",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C47",
+      "claim": "The CRISPR screen identified many hits corresponding to genes involved in glucose metabolism including GFAT and SLC2A1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we obtained many hits corresponding to genes involved in glucose metabolism including GFAT (Figure 1e) and SLC2A1 (a glucose transporter), further boosting our confidence that the genes identified in the screen are relevant to O-GlcNAc homeostasis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the screen results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "70b36872-ae1c-469f-9adb-78bb91e28433",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C48",
+      "claim": "The CRISPR screen obtained a few hits corresponding to RNA-binding proteins (e.g., HNRNPU, HuR) and proteins involved in m6A modification (ZC3H13, KIAA1429).",
+      "claim_type": "EXPLICIT",
+      "source": "We also obtained a few hits corresponding to RNA-binding proteins (e.g., HNRNPU, HuR) and proteins involved in m6A modification (ZC3H13, KIAA1429).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "9ca0887e-5a1f-4073-b495-4f8400696886",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C49",
+      "claim": "The large majority of the hits from the CRISPR screen were splicing associated factors and/or components of the spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the large majority of the hits were splicing associated factors and/or components of the spliceosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the screen results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "4fd3e72c-6f12-4b5e-a3f7-3801d635cede",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C50",
+      "claim": "Knockdown of SFSWAP increased GFP expression in the reporter line.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, knockdown of SFSWAP increased GFP expression (Figure 2b) and enhanced splicing of the reporter RNA (Figure 2c, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "63c53ac1-7fcd-403c-9c8e-cd6c458782ed",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C51",
+      "claim": "Knockdown of SFSWAP enhanced splicing of the reporter RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, knockdown of SFSWAP increased GFP expression (Figure 2b) and enhanced splicing of the reporter RNA (Figure 2c, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "3cd30dc2-a4a9-42b3-9b78-ebdec0d873f6",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C52",
+      "claim": "Knockdown of SFSWAP in 293A-TOA cells under TG treatment conditions resulted in enhanced splicing of the retained intron compared to the non-target control.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of SFSWAP in these cells under TG treatment conditions resulted in enhanced splicing of the retained intron compared to the non-target control (Figure 2c, right) indicating that the action of SFSWAP was not limited to the reporter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "caab4b7e-d86f-463d-a991-01b29725deb5",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C53",
+      "claim": "Knockdown of SFSWAP resulted in a significant increase in the spliced form of OGT RNA compared to non-target both under DMSO (~1.8-fold) and TG-treated conditions (~3-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of SFSWAP resulted in a significant increase in the spliced form of OGT RNA compared to non-target both under DMSO (~1.8-fold) and TG-treated conditions (~3-fold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "d3b95981-5498-46b4-bc92-c0d3ded2e2b8",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C54",
+      "claim": "The timing of enhanced intron 4 removal coincided with the timing of decrease in SFSWAP mRNA levels upon knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the timing of enhanced intron 4 removal coincided with the timing of decrease in SFSWAP mRNA levels upon knockdown, indicating a direct effect of SFSWAP knockdown on OGT intron 4 splicing (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time-course data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "dd2a0168-c483-4b36-9edb-006a44f3ce2c",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C55",
+      "claim": "Differential expression analysis revealed 252 downregulated and 633 upregulated genes on SFSWAP knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis using edgeR (Supplementary file 3) revealed 252 downregulated and 633 upregulated genes on SFSWAP knockdown, but did not reveal any functional class of RNAs that was regulated by SFSWAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data and differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "82f176fa-a185-4bcc-8df6-349c97bee83f",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C56",
+      "claim": "The majority of alternate splicing changes between siNT and siSFSWAP occurred across retained introns and skipped exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found global changes in splicing patterns between siNT and siSFSWAP, with the majority of changes occurring across two of the five event types analyzed \u2013 retained introns and skipped exons (Figure 3a, Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by alternate splicing analysis using rMATS shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "89f615a1-ef65-4205-a46f-7d9735335070",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C57",
+      "claim": "Knockdown of SFSWAP resulted in increased excision of retained introns globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of SFSWAP resulted in increased excision of retained introns globally, indicated by more events with a positive value for IncLevelDiffference (Figure 3b) and as exemplified by genome browser shots of IFRD2 and GFUS/TSTA3 (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by alternate splicing analysis shown in Figure 3b and genome browser views in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "a0332741-8205-432c-bdaf-af9e7679ea43",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C58",
+      "claim": "SFSWAP autoregulates its own expression by control of splicing of its first two retained introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous observations that SFSWAP autoregulates its own expression by control of splicing of its first two retained introns is also consistent with this observation (Zachar et al., 1987; Zachar et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "af8e9cfe-424f-4680-91e5-2c22b410b17b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C59",
+      "claim": "In RIs that are more efficiently spliced upon SFSWAP knockdown, the average GC content in the RI and flanking exons was higher compared to those that less efficiently spliced.",
+      "claim_type": "EXPLICIT",
+      "source": "In RIs that are more efficiently spliced upon SFSWAP knockdown (positive IncLevelDifference), we found that the average GC content in the RI and flanking exons was higher compared to those that less efficiently spliced (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "365eeae7-a659-4c7a-bb42-9a724e1edb55",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C60",
+      "claim": "In skipped exon events that result in enhanced inclusion upon SFSWAP knockdown, the skipped exon, upstream and downstream exons all had higher GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar trends toward higher GC content when we examined skipped exon events that result in enhanced inclusion upon SFSWAP knockdown (negative IncLevelDifference). In this case, the skipped exon, upstream and downstream exons all had higher GC content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "ece46f50-3549-4b35-adaa-7bfaa6b198a3",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C61",
+      "claim": "There was reduced inclusion of the decoy exon upon SFSWAP knockdown under UPF1 knockdown conditions in the presence of TG.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we saw reduced inclusion of the decoy exon upon SFSWAP knockdown (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "0abefd82-ca00-4bdd-9d92-ac2c7c880adc",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C62",
+      "claim": "There was a ~5-fold reduction in sequencing reads containing the decoy exon upon SFSWAP knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the RT-qPCR analysis, there was a ~5-fold reduction in sequencing reads containing the decoy exon upon SFSWAP knockdown (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nanopore sequencing data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "39d2c429-0296-4fbd-91a8-c8efd002a56f",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C63",
+      "claim": "Decoy inclusion levels were significantly higher in either in UPF1 knockdown alone or TG treatment alone.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, decoy inclusion levels were significantly higher in either in UPF1 knockdown alone (since the decoy exon form is stabilized) or TG treatment alone (Figure 4c, middle panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "50f0c6c6-cfbd-468b-96bc-1b80dc441e7b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C64",
+      "claim": "RNA-seq analysis of SFSWAP knockdown cells in a UPF1 knockdown background detected a significant reduction in decoy usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed RNA-seq analysis of SFSWAP knockdown cells (treated with TG) in a UPF1 knockdown background. Alternate splicing analysis using rMATS detected a significant reduction in decoy usage in SFSWAP knockdown cells in this background, consistent with the qPCR results (Figure 4c, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "fca01004-e348-466f-9fb8-af956664d314",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C65",
+      "claim": "SFSWAP promotes inclusion of the OGT decoy exon.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that SFSWAP promotes inclusion of the OGT decoy exon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on experimental data from RT-qPCR and RNA-seq.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "69b9aea0-906a-4075-b958-62f72851e6c0",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C66",
+      "claim": "Decoy exon recognition is a critical component of regulation of OGT intron detention.",
+      "claim_type": "EXPLICIT",
+      "source": "Because decoy exon recognition is a critical component of regulation of OGT intron detention, these data further suggest that SFSWAP regulates OGT intron detention by controlling decoy exon inclusion and/or recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "fc92a9e7-6137-4cdd-b15e-eb9ae79ec5a5",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C67",
+      "claim": "Decoy exons have been proposed to regulate IR in a large number of genes in addition to OGT, especially those with longer retained introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Decoy exons have been proposed to regulate IR in a large number of genes in addition to OGT, especially those with longer retained introns (Parra et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "6cb11ae5-6abe-4b9f-ad94-77019728f213",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C68",
+      "claim": "Decoy exons were either more or less included upon SFSWAP knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "While the changes in retained intron splicing were primarily in the direction of increased splicing (i.e., less RI inclusion) and that of skipped exon splicing were predominantly in the direction of more inclusion upon SFSWAP knockdown, decoy exons were either more or less included (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by alternate splicing analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "17dcbced-6807-4e5e-8b88-6d1ebbde59d7",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C69",
+      "claim": "Decoy-containing retained intron events did not show a trend toward any direction upon SFSWAP knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the enhanced removal of retained introns for most non-decoy exon-containing events upon SFSWAP knockdown (Figure 3b, Figure 3\u2014figure supplement 8), decoy-containing retained intron events did not show a trend toward any direction (Figure 5c), suggesting a different mechanism of regulation for decoy-containing retained introns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by alternate splicing analysis shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "33835959-f101-4269-9542-128323a04086",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C70",
+      "claim": "There is a trend toward increased intron length for decoy-containing retained introns compared to non-decoy-containing retained introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation and as observed by other groups (Boutz et al., 2015; Parra et al., 2018), we observed a trend toward increased intron length for decoy-containing retained introns compared to non-decoy-containing retained introns (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by length distribution analysis shown in Figure 5d and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "12e0e898-0c9d-47b7-8064-680f28c6c3c0",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C71",
+      "claim": "Mutation of the weak 5\u2032 splice sites of the OGT decoy exon leads to constitutive splicing of exons 4 and 5 in reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "First, mutation of the weak 5\u2032 splice sites of the OGT decoy exon leads to constitutive splicing of exons 4 and 5 in reporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work on decoy exon function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "7d1a36de-8d74-468a-848b-db2a10e7c8e2",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C72",
+      "claim": "eCLIP data demonstrate that U2AF1 and U2AF2 bind to the decoy 3\u2032 splice sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, eCLIP data demonstrate that U2AF1 and U2AF2 bind to the decoy 3\u2032 splice sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work on decoy exon function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "d9534bb7-b055-48e6-9069-bcaf6f9479f3",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C73",
+      "claim": "Addition of a morpholino antisense oligonucleotide targeting the OGT decoy's 5\u2032 splice site promotes constitutive splicing of exons 4\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, addition of a morpholino antisense oligonucleotide targeting the OGT decoy's 5\u2032 splice site also promotes constitutive splicing of exons 4\u20135.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work on decoy exon function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "be011ec4-b886-43cd-8bde-59e533b1fee6",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C74",
+      "claim": "Placing decoy exons and their flanking sequences into other heterologous introns leads to IR.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, placing decoy exons and their flanking sequences into other heterologous introns leads to IR, indicating that there is not a gene or intron-specific suppression of splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work on decoy exon function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "0513afb5-c17e-44e1-b6ac-a47a59b970b3",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C75",
+      "claim": "CRISPR deletion of the endogenous locus containing the OGT decoy leads to constitutive splicing of exons 4 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifth, CRISPR deletion of the endogenous locus containing the OGT decoy leads to constitutive splicing of exons 4 and 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work on decoy exon function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "b459124f-594e-47b0-bc36-30e549074ade",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C76",
+      "claim": "Only a small percentage of mature transcript spliced isoforms splice in the decoy, even when assayed in NMD-inhibiting condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixth, only a small percentage of mature transcript spliced isoforms splice in the decoy, even when assayed in NMD-inhibiting condition (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nanopore sequencing data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "464c0992-2662-4de4-9fc6-aa9fc49b0f6b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C77",
+      "claim": "Enrichment of known SRSF1-binding motifs was observed at the 5\u2032 end of SFSWAP-dependent differentially regulated retained intron events and around differentially regulated exon skipping events.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed enrichment of known SRSF1-binding motifs at the 5\u2032 end of SFSWAP-dependent differentially regulated retained intron events and around differentially regulated exon skipping events (Figure 6\u2014figure supplement 1), supporting the idea that SRSF1 acts in concert with SFSWAP to mediate its effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motif enrichment analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "38a609db-80ee-4bf4-923d-394f7a59f26a",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C78",
+      "claim": "SF1 was identified as a potential target regulating OGT IR in the TG-treated CRISPR screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we also identified SF1 as a potential target regulating OGT IR in our TG-treated CRISPR screen (Figure 2) and could also validate SFSWAP-SF1 interactions in cell lines by co-immunoprecipitation (Figure 6\u2014figure supplement 2), further supporting this idea.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by CRISPR screen data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "2d732ab5-ab4d-4a53-bafc-983d42fa2995",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C79",
+      "claim": "SFSWAP-SF1 interactions were validated in cell lines by co-immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we also identified SF1 as a potential target regulating OGT IR in our TG-treated CRISPR screen (Figure 2) and could also validate SFSWAP-SF1 interactions in cell lines by co-immunoprecipitation (Figure 6\u2014figure supplement 2), further supporting this idea.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "4571fc3f-f20a-489b-a84d-19e73a3d1971",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C80",
+      "claim": "SFSWAP is one of the most highly differentially phosphorylated proteins in the cell after a short treatment (30 min) with an OGT inhibitor, OSMI-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the observation that SFSWAP is one of the most highly differentially phosphorylated proteins in the cell after a short treatment (30 min) with an OGT inhibitor, OSMI-2 (Tan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "ac9be79b-db2e-47a6-9938-0d75fb5c5892",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C81",
+      "claim": "Treatment of cells with conditions leading to low O-GlcNAc levels lead to phosphorylation of SFSWAP at multiple residues (primarily S604).",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of cells with conditions leading to low O-GlcNAc levels lead to phosphorylation of SFSWAP at multiple residues (primarily S604).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work, likely from Tan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "8451b622-ca75-408b-9cec-8a9c8f123146",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C82",
+      "claim": "SFSWAP knockdown does not lead to complete excision of the OGT retained intron as is observed upon deletion of the decoy.",
+      "claim_type": "EXPLICIT",
+      "source": "While we show that SFSWAP plays a major role in regulating OGT IR, we also realize that there are likely other factors at play in regulating OGT intron detention, especially given the fact that SFSWAP knockdown does not lead to complete excision of the OGT retained intron as is observed upon deletion of the decoy (Park et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on comparison of experimental data with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "18f1cb34-111d-45e5-96ea-665185cc2da3",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C83",
+      "claim": "The reporter consists of the entire intron 4 of OGT (the detained intron) and corresponding exons (exons 4 and 5) flanked upstream and downstream by the efficiently spliced \u03b2-globin intron 2 (and corresponding exons 2 and 3).",
+      "claim_type": "EXPLICIT",
+      "source": "The reporter consists of the entire intron 4 of OGT (the detained intron) and corresponding exons (exons 4 and 5) flanked upstream and downstream by the efficiently spliced \u03b2-globin intron 2 (and corresponding exons 2 and 3) (Figure 1a; Scarborough et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the reporter construct design shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "f2e8a4e9-3ef4-45ef-8ee1-038d466b904c",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C84",
+      "claim": "An eGFP reporter upstream of this assembly is driven by a constitutive CMV promoter and translationally separated from the remaining exons by a T2A element.",
+      "claim_type": "EXPLICIT",
+      "source": "An eGFP reporter upstream of this assembly is driven by a constitutive CMV promoter and translationally separated from the remaining exons by a T2A element (Donnelly et al., 2001a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reporter construct design with citation to prior work on T2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "df99d1cf-8c78-4397-9a1e-3d3e6d3e08cc",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C85",
+      "claim": "The T2A element induces ribosomal skipping producing a GFP polypeptide separate from the protein product of the \u03b2-globin-OGT exons.",
+      "claim_type": "EXPLICIT",
+      "source": "The T2A element induces ribosomal skipping (Donnelly et al., 2001b) producing a GFP polypeptide separate from the protein product of the \u03b2-globin-OGT exons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the function of T2A with citation to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "535962ed-2109-4091-a318-5627f482e729",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C86",
+      "claim": "Treatment of cells with the OGA inhibitor TG induces high O-GlcNAc levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of cells with the OGA inhibitor TG induces high O-GlcNAc levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effect of TG treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "a42bf6d4-3dc4-4d83-b40a-5d4a6d718103",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C87",
+      "claim": "Treatment with OGT inhibitor OSMI-1 induces a low O-GlcNAc condition.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, treatment with OGT inhibitor OSMI-1 induces a low O-GlcNAc condition, which should promote intron 4 splicing, cytoplasmic export of the mRNA, and increased GFP expression (Figure 1a, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the effect of OSMI-1 treatment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "9a12d82f-d9bb-4ad4-b77b-89c88678440e",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C88",
+      "claim": "RT-PCR analysis of reporter RNA from clonal cell lines yielded a predominant single band corresponding to the mature reporter mRNA indicating the absence of unexpected splicing events.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-PCR analysis of reporter RNA from clonal cell lines yielded a predominant single band corresponding to the mature reporter mRNA indicating the absence of unexpected splicing events (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "c4edd88c-fdfc-4bfe-acd4-2a10906b6f02",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C89",
+      "claim": "The reporter mRNA band increased upon OSMI-1 treatment and decreased upon TG treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this band increased and decreased upon OSMI-1 and TG treatment, as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "a0cf69c1-5131-4518-ac56-3405de16dd6f",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C90",
+      "claim": "Treatment of the reporter cells with glucosamine or the OGA inhibitor PUGNAc resulted in reduced GFP protein levels similar to TG.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the reporter cells with glucosamine or the OGA inhibitor PUGNAc (O-(2-Acetamido-2-deoxy-D-glucopyranosylidene)amino N-phenyl carbamate) resulted in reduced GFP protein levels similar to TG, while treatment with the GFAT inhibitor DON (6-diazo-5-oxo-L-norleucine) or glucose deprivation led to increased GFP levels (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "085caded-b4a4-47ea-aa71-65430261ce87",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C91",
+      "claim": "Treatment with the GFAT inhibitor DON or glucose deprivation led to increased GFP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of the reporter cells with glucosamine or the OGA inhibitor PUGNAc (O-(2-Acetamido-2-deoxy-D-glucopyranosylidene)amino N-phenyl carbamate) resulted in reduced GFP protein levels similar to TG, while treatment with the GFAT inhibitor DON (6-diazo-5-oxo-L-norleucine) or glucose deprivation led to increased GFP levels (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "e01c4dcf-df00-46b9-a451-b4b9f2c2668d",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C92",
+      "claim": "Knockdown of OGT resulted in increased levels of reporter mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed increased levels of reporter mRNA upon OGT knockdown (Figure 1f), and this effect masked the effect of subsequent inhibitor treatments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "05234cf3-e26f-4ca1-9764-b536ed6da39b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C93",
+      "claim": "Pilot screens were performed at 100\u00d7 library coverage with a 10-day knockout time period and 24-hr treatment with inhibitors just before selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed pilot screens at 100\u00d7 library coverage with a 10-day knockout time period and 24-hr treatment with inhibitors just before selection for either 'high' or 'low GFP' cells by FACS sorting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the CRISPR screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "4d03df27-9b61-4da6-be92-d1ec2e8df0db",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "claim_id": "C94",
+      "claim": "Two additional replicates of the screen were performed at 300\u00d7 coverage under TG treatment conditions only.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the list of putative targets from both screens were comparable (Figure 2\u2014figure supplements 1 and 2), we performed two additional replicates of the screen at 300\u00d7 coverage under TG treatment conditions only and obtained similar results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the replicate CRISPR screens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fc547401-3984-4068-9de1-c1c3b8bb2548",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a GFP-based splicing reporter that responds to cellular O-GlcNAc levels. The reporter construct contains OGT intron 4 flanked by \u03b2-globin introns and is driven by a constitutive CMV promoter with GFP separated by a T2A element. Treatment with TG (high O-GlcNAc) reduced spliced product levels, while OSMI-1 (low O-GlcNAc) increased splicing. The reporter responded appropriately to various O-GlcNAc modulators and OGT knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C92 collectively demonstrate successful construction and validation of the reporter system through multiple complementary approaches (RT-PCR, northern blot, FACS, western blot). The reporter shows expected responses to multiple O-GlcNAc modulators and genetic perturbations, providing strong evidence for its validity as a tool to monitor OGT intron detention.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "efec84f6-3085-45c2-a001-95f02e0d1e5a",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SFSWAP was identified as a regulator of OGT intron detention through a genome-wide CRISPR knockout screen using the GFP reporter system. The screen was performed under TG treatment conditions at 100\u00d7 and 300\u00d7 library coverage. OGT was the top hit, and the screen also identified genes involved in glucose metabolism and splicing factors. Knockdown of SFSWAP increased GFP expression and enhanced splicing of both the reporter RNA and endogenous OGT, particularly under TG treatment conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C46-C54, C93-C94 provide strong evidence through CRISPR screening, validation by siRNA knockdown, and multiple orthogonal assays (fluorescence microscopy, northern blot, RT-qPCR). The timing of enhanced intron removal coinciding with SFSWAP depletion (C54) supports a direct effect. The identification of expected positive controls (OGT, glucose metabolism genes) validates the screen quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "837e8af8-7a19-4d8c-b741-b3f717f10256",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Knockout/knockdown of SFSWAP leads to enhanced splicing of the OGT detained intron, particularly under high O-GlcNAc conditions, with ~1.8-fold increase under DMSO and ~3-fold increase under TG treatment. The timing of enhanced intron 4 removal coincided with SFSWAP mRNA depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C53, C54 are supported by RT-qPCR data showing quantitative changes in OGT splicing upon SFSWAP knockdown, with temporal correlation between SFSWAP depletion and splicing changes. The stronger effect under TG conditions is consistent with SFSWAP acting as a negative regulator of OGT splicing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "0cd2168d-8189-458a-883d-9e91b733ace5",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SFSWAP is a global regulator of pre-mRNA splicing that primarily acts as a negative regulator. RNA-seq analysis revealed 252 downregulated and 633 upregulated genes upon SFSWAP knockdown. Alternate splicing analysis showed that the majority of changes occurred in retained introns and skipped exons. SFSWAP knockdown resulted in increased excision of retained introns globally and enhanced inclusion of skipped exons. RIs and SEs that are more efficiently spliced/included upon SFSWAP knockdown showed higher GC content in relevant regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C55-C60 are supported by comprehensive RNA-seq data analyzed with multiple pipelines (rMATS, MAJIQ, Whippet). The global trends are consistent across methods, and the GC content analysis provides mechanistic insight. The consistency with prior single-gene studies (C58) strengthens the conclusions. However, the differential expression analysis did not reveal functional enrichment, which somewhat limits mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "7311e5f0-cd28-4018-b89d-1b50e71a372a",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SFSWAP regulates OGT intron detention by modulating decoy exon inclusion. Knockdown of SFSWAP in a UPF1 knockdown background (with TG treatment) led to reduced inclusion of the OGT decoy exon, as shown by RT-qPCR (~5-fold reduction in sequencing reads) and RNA-seq analysis. SFSWAP promotes inclusion of the OGT decoy exon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C41, C61-C65 are supported by multiple complementary approaches (RT-qPCR, nanopore sequencing, RNA-seq with rMATS analysis). The use of UPF1 knockdown to stabilize decoy-containing transcripts is appropriate for detecting these normally unstable isoforms. The controls showing expected decoy inclusion changes with UPF1 knockdown and TG treatment (C63) validate the experimental approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "29298178-09f1-4f55-b8fc-1be53a138f6c",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SFSWAP may regulate decoy exon splicing globally to mediate its effect on intron detention. Global analysis of putative decoy exons (2398 novel cassette exons within retained introns) showed altered patterns of decoy exon usage upon SFSWAP knockdown, with decoy exons being either more or less included. Decoy-containing retained intron events did not show a directional trend upon SFSWAP knockdown, unlike non-decoy-containing RIs. Decoy-containing retained introns showed increased length compared to non-decoy-containing retained introns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C42, C67-C70 present global decoy exon analysis, but the results are complex and bidirectional, making interpretation difficult. The list of putative decoy exons is based on computational predictions that may include false positives (as acknowledged by authors). The lack of directional trend for decoy-containing RIs (C69) contrasts with non-decoy RIs, suggesting different mechanisms, but the mechanistic basis remains unclear. Additional validation of individual decoy exons would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "a0dc1a32-6fc4-43d0-967e-5b2e16678dd9",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SRSF1-binding motifs were enriched at the 5\u2032 end of SFSWAP-dependent differentially regulated retained intron events and around differentially regulated exon skipping events. SF1 was identified in the CRISPR screen and SFSWAP-SF1 interactions were validated by co-immunoprecipitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 are supported by motif enrichment analysis and co-IP experiments. The identification of SF1 in the CRISPR screen and validation of SFSWAP-SF1 interaction is consistent with prior in vitro binding studies (C37). The SRSF1 motif enrichment provides additional mechanistic insight, though direct SFSWAP-SRSF1 interaction was not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "0d52d415-a006-4437-bdbe-c73933a626c6",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SFSWAP is highly differentially phosphorylated after short treatment with OGT inhibitor OSMI-2, with phosphorylation occurring at multiple residues (primarily S604) under low O-GlcNAc conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are supported by citation to prior phosphoproteomics work (Tan et al., 2020). While this is not original data from the current study, it provides important context for the proposed regulatory mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "e1a9253e-14fd-4468-934a-df77bb2e03ff",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SFSWAP knockdown does not lead to complete excision of the OGT retained intron as observed upon deletion of the decoy exon, suggesting other factors are involved in regulating OGT intron detention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by comparison of experimental data with prior work showing complete splicing upon decoy deletion. This observation is important for understanding the limitations of SFSWAP's role and suggests additional regulatory factors remain to be identified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multiple lines of evidence from prior work support the model that decoy exons require spliceosome recognition but are rarely spliced. These include: mutation of decoy splice sites leading to constitutive splicing, U2AF binding to decoy splice sites, morpholino blocking of decoy splice sites promoting constitutive splicing, heterologous decoy insertion causing IR, CRISPR deletion of decoy causing constitutive splicing, and low frequency of decoy inclusion in mature transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C76 summarize prior work on decoy exon function. C76 is supported by data from the current study (nanopore sequencing), while C71-C75 are supported by citations to prior literature. These claims provide important mechanistic context for interpreting the SFSWAP results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1",
+      "content_id": "005aea01-58a9-40bd-850f-55d0dae00cf6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on O-GlcNAcylation, OGT/OGA regulation, intron detention, decoy exons, and SFSWAP is provided, drawing from established knowledge and prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C9-C39, C58, C66 provide background context supported by citations to prior literature and established knowledge in the field. These claims are appropriately referenced and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "893c5a3e-b66b-446f-83db-dc25fd398b10",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed and validated a GFP reporter system that reflects endogenous OGT intron 4 retention in response to O-GlcNAc levels. The reporter responds appropriately to treatments that modulate O-GlcNAc levels (TG, OSMI-1, glucosamine, PUGNAc, DON, glucose deprivation), showing reduced GFP with high O-GlcNAc and increased GFP with low O-GlcNAc conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly praised the reporter system as 'elegant' and 'reliable,' with one reviewer stating the 'OGT intron 4 reporter reliably responds to O-GlcNAc levels, mirroring the endogenous splicing event.' No concerns were raised about the validation or functionality of this system.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "355f558e-3013-4b10-8aa0-feab15604262",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "A genome-wide CRISPR knockout screen using the GFP reporter identified SFSWAP as a regulator of OGT intron detention. The screen identified OGT itself as the top hit, along with genes involved in glucose metabolism (GFAT, SLC2A1) and splicing factors. SFSWAP knockdown increased GFP expression and enhanced splicing of both the reporter and endogenous OGT intron 4, particularly under high O-GlcNAc conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently praised the CRISPR screen as 'elegant,' 'state-of-the-art,' and providing 'convincing' evidence. One reviewer noted 'SFSWAP was thus convincingly identified as a negative regulator of OGT retained intron splicing.' The identification and validation of SFSWAP received no criticism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "7e922724-cfc4-4015-b875-86b18710d0df",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "RNA-seq analysis revealed that SFSWAP is a global regulator of alternative splicing, primarily acting as a negative regulator. SFSWAP knockdown led to increased excision of retained introns globally and enhanced inclusion of skipped exons. Regions with higher GC content showed greater sensitivity to SFSWAP knockdown in both retained intron and skipped exon events.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledged the 'sophisticated bioinformatic analysis' and found the global splicing role 'interesting,' one reviewer explicitly stated 'the RNA-Sequencing experiments lack essential controls needed to provide full confidence to the authors' conclusions' and noted concerns about 'potential off-target effects' from using 'a single pool of two siRNAs for five days.' However, in revision comments, this reviewer stated 'The authors have addressed all my previous recommendations,' suggesting these concerns were resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "SFSWAP regulates OGT intron detention by modulating inclusion of the decoy exon within the retained intron. SFSWAP knockdown led to reduced decoy exon inclusion as measured by RT-qPCR and nanopore sequencing in UPF1 knockdown background, with approximately 5-fold reduction in reads containing the decoy exon.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers found the decoy exon mechanism data compelling, with one stating 'More focused studies of OGT intron retention indicate that it may function by regulating a decoy exon previously identified in the intron.' No specific criticisms were raised about the decoy exon experiments or conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "e2b93dae-8463-4bd8-87b9-d253f55c5032",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Global analysis of decoy exon splicing in SFSWAP and UPF1 double knockdown cells showed altered patterns of decoy exon usage. Unlike non-decoy-containing retained introns which showed directional changes, decoy-containing retained introns showed bidirectional changes upon SFSWAP knockdown. Decoy-containing retained introns were longer than non-decoy-containing ones.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers noted the authors 'suggest an intriguing model where SFSWAP, along with other spliceosome proteins, promotes intron retention by associating with decoy exons' and found this aspect of the work interesting. The global decoy analysis received no specific criticism and was part of the 'sophisticated bioinformatic analysis' praised by reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "1f0f34fa-7a3d-48d2-abe0-a4cf05af4535",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "SRSF1-binding motifs were enriched at SFSWAP-dependent differentially regulated splicing events. SF1 was identified in the CRISPR screen and SFSWAP-SF1 interactions were validated by co-immunoprecipitation, suggesting SFSWAP may act through interactions with other splicing factors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These mechanistic insights were not specifically critiqued by reviewers. One reviewer noted 'The mechanistic role of SFSWAP in splicing would benefit from further exploration, though this may be more appropriate for future studies,' indicating acceptance of the current level of mechanistic detail while acknowledging room for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "d5b429b6-32ea-49bf-986d-dbf618c2a8c1",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "SFSWAP is highly differentially phosphorylated after short treatment with OGT inhibitor OSMI-2, with phosphorylation occurring at multiple residues (primarily S604) under low O-GlcNAc conditions, suggesting a potential link between O-GlcNAc signaling and SFSWAP function.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer explicitly noted as a weakness 'No firm evidence linking SFSWA to an O-GlcNAc specific mechanism,' indicating that while the phosphorylation data from prior work is cited, the direct mechanistic connection between O-GlcNAc and SFSWAP function remains unclear. However, this was not considered a major limitation by other reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "bdea2e7e-d285-436c-9254-379c996010fc",
+      "content_id": "9c822edc-b460-4eff-9515-df2023db04b2",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "SFSWAP knockdown does not lead to complete excision of the OGT retained intron as observed upon deletion of the decoy exon, suggesting other factors are involved in regulating OGT intron detention.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This limitation is acknowledged by the authors and implicitly accepted by reviewers. One reviewer noted 'The mechanism by which SFSWAP represses retained introns is unclear' but also stated 'Interesting / appropriate speculation about possible mechanism are provided,' indicating acceptance of the incomplete mechanistic understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c502b034-db9c-4663-893d-51a0788fa79c",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "18f1cb34-111d-45e5-96ea-665185cc2da3",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "f2e8a4e9-3ef4-45ef-8ee1-038d466b904c",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "df99d1cf-8c78-4397-9a1e-3d3e6d3e08cc",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "535962ed-2109-4091-a318-5627f482e729",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "a42bf6d4-3dc4-4d83-b40a-5d4a6d718103",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "9a12d82f-d9bb-4ad4-b77b-89c88678440e",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "c4edd88c-fdfc-4bfe-acd4-2a10906b6f02",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "c5c60ce4-75df-4e60-8868-fb17293c8c86",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "6a66627d-1c20-49a3-a44d-3ebaa39f27e5",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "a0cf69c1-5131-4518-ac56-3405de16dd6f",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "085caded-b4a4-47ea-aa71-65430261ce87",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "e01c4dcf-df00-46b9-a451-b4b9f2c2668d",
+      "result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548"
+    },
+    {
+      "claim_id": "09c67956-7cef-4161-a8e0-232e975a15ab",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "3f1ec83f-b464-471a-a11e-86de4aaf04e5",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "88a8edd3-b4d3-4589-b090-b2b82cf3c7ef",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "70b36872-ae1c-469f-9adb-78bb91e28433",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "9ca0887e-5a1f-4073-b495-4f8400696886",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "4fd3e72c-6f12-4b5e-a3f7-3801d635cede",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "63c53ac1-7fcd-403c-9c8e-cd6c458782ed",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "3cd30dc2-a4a9-42b3-9b78-ebdec0d873f6",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "caab4b7e-d86f-463d-a991-01b29725deb5",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "d3b95981-5498-46b4-bc92-c0d3ded2e2b8",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "05234cf3-e26f-4ca1-9764-b536ed6da39b",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "4d03df27-9b61-4da6-be92-d1ec2e8df0db",
+      "result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a"
+    },
+    {
+      "claim_id": "fe1c5b21-273c-4736-b48b-427fa28be6cd",
+      "result_id": "837e8af8-7a19-4d8c-b741-b3f717f10256"
+    },
+    {
+      "claim_id": "caab4b7e-d86f-463d-a991-01b29725deb5",
+      "result_id": "837e8af8-7a19-4d8c-b741-b3f717f10256"
+    },
+    {
+      "claim_id": "d3b95981-5498-46b4-bc92-c0d3ded2e2b8",
+      "result_id": "837e8af8-7a19-4d8c-b741-b3f717f10256"
+    },
+    {
+      "claim_id": "7a09f1b1-e55c-467e-8dd5-b93ceadbce6d",
+      "result_id": "0cd2168d-8189-458a-883d-9e91b733ace5"
+    },
+    {
+      "claim_id": "dd2a0168-c483-4b36-9edb-006a44f3ce2c",
+      "result_id": "0cd2168d-8189-458a-883d-9e91b733ace5"
+    },
+    {
+      "claim_id": "82f176fa-a185-4bcc-8df6-349c97bee83f",
+      "result_id": "0cd2168d-8189-458a-883d-9e91b733ace5"
+    },
+    {
+      "claim_id": "89f615a1-ef65-4205-a46f-7d9735335070",
+      "result_id": "0cd2168d-8189-458a-883d-9e91b733ace5"
+    },
+    {
+      "claim_id": "a0332741-8205-432c-bdaf-af9e7679ea43",
+      "result_id": "0cd2168d-8189-458a-883d-9e91b733ace5"
+    },
+    {
+      "claim_id": "af8e9cfe-424f-4680-91e5-2c22b410b17b",
+      "result_id": "0cd2168d-8189-458a-883d-9e91b733ace5"
+    },
+    {
+      "claim_id": "365eeae7-a659-4c7a-bb42-9a724e1edb55",
+      "result_id": "0cd2168d-8189-458a-883d-9e91b733ace5"
+    },
+    {
+      "claim_id": "d8d563fe-1cfe-4353-88c2-b223dc09978a",
+      "result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a"
+    },
+    {
+      "claim_id": "f34a84a2-7db8-47a1-aeaa-6f269ca9d743",
+      "result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a"
+    },
+    {
+      "claim_id": "ece46f50-3549-4b35-adaa-7bfaa6b198a3",
+      "result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a"
+    },
+    {
+      "claim_id": "0abefd82-ca00-4bdd-9d92-ac2c7c880adc",
+      "result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a"
+    },
+    {
+      "claim_id": "39d2c429-0296-4fbd-91a8-c8efd002a56f",
+      "result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a"
+    },
+    {
+      "claim_id": "50f0c6c6-cfbd-468b-96bc-1b80dc441e7b",
+      "result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a"
+    },
+    {
+      "claim_id": "fca01004-e348-466f-9fb8-af956664d314",
+      "result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a"
+    },
+    {
+      "claim_id": "b6c5ea1f-603b-4a7c-bbe1-c84e2885d7ca",
+      "result_id": "29298178-09f1-4f55-b8fc-1be53a138f6c"
+    },
+    {
+      "claim_id": "3163993e-a67b-4fcb-91e5-7ff7bb78fe02",
+      "result_id": "29298178-09f1-4f55-b8fc-1be53a138f6c"
+    },
+    {
+      "claim_id": "fc92a9e7-6137-4cdd-b15e-eb9ae79ec5a5",
+      "result_id": "29298178-09f1-4f55-b8fc-1be53a138f6c"
+    },
+    {
+      "claim_id": "6cb11ae5-6abe-4b9f-ad94-77019728f213",
+      "result_id": "29298178-09f1-4f55-b8fc-1be53a138f6c"
+    },
+    {
+      "claim_id": "17dcbced-6807-4e5e-8b88-6d1ebbde59d7",
+      "result_id": "29298178-09f1-4f55-b8fc-1be53a138f6c"
+    },
+    {
+      "claim_id": "33835959-f101-4269-9542-128323a04086",
+      "result_id": "29298178-09f1-4f55-b8fc-1be53a138f6c"
+    },
+    {
+      "claim_id": "464c0992-2662-4de4-9fc6-aa9fc49b0f6b",
+      "result_id": "a0dc1a32-6fc4-43d0-967e-5b2e16678dd9"
+    },
+    {
+      "claim_id": "38a609db-80ee-4bf4-923d-394f7a59f26a",
+      "result_id": "a0dc1a32-6fc4-43d0-967e-5b2e16678dd9"
+    },
+    {
+      "claim_id": "2d732ab5-ab4d-4a53-bafc-983d42fa2995",
+      "result_id": "a0dc1a32-6fc4-43d0-967e-5b2e16678dd9"
+    },
+    {
+      "claim_id": "4571fc3f-f20a-489b-a84d-19e73a3d1971",
+      "result_id": "0d52d415-a006-4437-bdbe-c73933a626c6"
+    },
+    {
+      "claim_id": "ac9be79b-db2e-47a6-9938-0d75fb5c5892",
+      "result_id": "0d52d415-a006-4437-bdbe-c73933a626c6"
+    },
+    {
+      "claim_id": "8451b622-ca75-408b-9cec-8a9c8f123146",
+      "result_id": "e1a9253e-14fd-4468-934a-df77bb2e03ff"
+    },
+    {
+      "claim_id": "12e0e898-0c9d-47b7-8064-680f28c6c3c0",
+      "result_id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b"
+    },
+    {
+      "claim_id": "7d1a36de-8d74-468a-848b-db2a10e7c8e2",
+      "result_id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b"
+    },
+    {
+      "claim_id": "d9534bb7-b055-48e6-9069-bcaf6f9479f3",
+      "result_id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b"
+    },
+    {
+      "claim_id": "be011ec4-b886-43cd-8bde-59e533b1fee6",
+      "result_id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b"
+    },
+    {
+      "claim_id": "0513afb5-c17e-44e1-b6ac-a47a59b970b3",
+      "result_id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b"
+    },
+    {
+      "claim_id": "b459124f-594e-47b0-bc36-30e549074ade",
+      "result_id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b"
+    },
+    {
+      "claim_id": "c2016fce-7550-4329-b9c7-17d3dbdddb0e",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "bd9ef931-8dae-4093-9eed-3bfd15b71014",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "1f05c062-ff21-42f6-b815-4617ac480512",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "e0ad487a-db73-4c86-ab7e-e0480945dd6b",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "ddea65a8-b6a2-4a87-96a2-04686ca8ca6f",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "b96bbe52-9352-44d3-889a-2e6fc3094073",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "ba508ff0-e2cb-4d47-b67e-54f45021550e",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "dc08e3d0-46c7-47ef-bd35-e8a5699560e5",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "063bcc70-26e9-4b01-a57a-4ad7a20c4e31",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "37b655bf-3bbb-4bea-8620-936d30e4d697",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "310d5c0f-068f-42cd-9e74-49bb65352288",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "084dcc20-d0ec-4928-b59c-04ebf3df5119",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "2102738d-09bf-41e2-a872-8c82390a2b40",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "6f9309b2-1a66-472f-8745-b0ab757fde1a",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "9a46f837-fbb6-4f06-998b-f8813335f4c0",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "27ae4da4-39e4-497b-9ad9-de76a006c546",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "7079c6e1-84b9-45cc-80fb-8d20f40c6ad3",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "d4de52cc-a72d-43ca-ad91-c3b233742733",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "804a3491-c418-417e-b989-02a9aaf04f58",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "dcdc89f1-362b-48f9-abbb-bd7bb47df508",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "092c4406-b882-4aca-b0d4-62df09cd17f2",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "d40436de-5a8a-4784-bd92-7305dfccc891",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "02847df5-c543-41f1-98c6-9ce955dd488b",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "0ee53ed7-faa0-41ea-87fb-6ee059646f49",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "640038fa-c242-4b7c-ade0-ee12f6b3cdf9",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "828b15aa-acd6-4887-a3c9-51bcd04b6635",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "190f2f43-44bc-4f3f-b278-f249b40fecb6",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "b6d4cc3e-0464-443c-bec2-eec08a124f81",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "2fdc38ed-16b6-40db-ae69-33e28ba0fdde",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "1ac11995-6e07-41a9-87ea-d170aeac014c",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "af22b525-ba51-4919-8085-f5ae67587a15",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "691c1777-e331-41c6-b9b1-ba7ce3c95fb2",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "615022f3-b91f-4ce6-a39e-3759688e9fd7",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "64a67e2e-d9db-4cb1-ad62-3990d0cb149b",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "b2f63c89-a0b0-47dc-955e-99bbeb5c2b13",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "a0332741-8205-432c-bdaf-af9e7679ea43",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "69b9aea0-906a-4075-b958-62f72851e6c0",
+      "result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1"
+    },
+    {
+      "claim_id": "c502b034-db9c-4663-893d-51a0788fa79c",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "c5c60ce4-75df-4e60-8868-fb17293c8c86",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "6a66627d-1c20-49a3-a44d-3ebaa39f27e5",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "18f1cb34-111d-45e5-96ea-665185cc2da3",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "f2e8a4e9-3ef4-45ef-8ee1-038d466b904c",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "df99d1cf-8c78-4397-9a1e-3d3e6d3e08cc",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "535962ed-2109-4091-a318-5627f482e729",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "a42bf6d4-3dc4-4d83-b40a-5d4a6d718103",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "9a12d82f-d9bb-4ad4-b77b-89c88678440e",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "c4edd88c-fdfc-4bfe-acd4-2a10906b6f02",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "a0cf69c1-5131-4518-ac56-3405de16dd6f",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "085caded-b4a4-47ea-aa71-65430261ce87",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "e01c4dcf-df00-46b9-a451-b4b9f2c2668d",
+      "result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10"
+    },
+    {
+      "claim_id": "09c67956-7cef-4161-a8e0-232e975a15ab",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "fe1c5b21-273c-4736-b48b-427fa28be6cd",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "3f1ec83f-b464-471a-a11e-86de4aaf04e5",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "88a8edd3-b4d3-4589-b090-b2b82cf3c7ef",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "70b36872-ae1c-469f-9adb-78bb91e28433",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "9ca0887e-5a1f-4073-b495-4f8400696886",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "4fd3e72c-6f12-4b5e-a3f7-3801d635cede",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "63c53ac1-7fcd-403c-9c8e-cd6c458782ed",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "3cd30dc2-a4a9-42b3-9b78-ebdec0d873f6",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "caab4b7e-d86f-463d-a991-01b29725deb5",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "d3b95981-5498-46b4-bc92-c0d3ded2e2b8",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "05234cf3-e26f-4ca1-9764-b536ed6da39b",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "4d03df27-9b61-4da6-be92-d1ec2e8df0db",
+      "result_id": "355f558e-3013-4b10-8aa0-feab15604262"
+    },
+    {
+      "claim_id": "7a09f1b1-e55c-467e-8dd5-b93ceadbce6d",
+      "result_id": "7e922724-cfc4-4015-b875-86b18710d0df"
+    },
+    {
+      "claim_id": "dd2a0168-c483-4b36-9edb-006a44f3ce2c",
+      "result_id": "7e922724-cfc4-4015-b875-86b18710d0df"
+    },
+    {
+      "claim_id": "82f176fa-a185-4bcc-8df6-349c97bee83f",
+      "result_id": "7e922724-cfc4-4015-b875-86b18710d0df"
+    },
+    {
+      "claim_id": "89f615a1-ef65-4205-a46f-7d9735335070",
+      "result_id": "7e922724-cfc4-4015-b875-86b18710d0df"
+    },
+    {
+      "claim_id": "af8e9cfe-424f-4680-91e5-2c22b410b17b",
+      "result_id": "7e922724-cfc4-4015-b875-86b18710d0df"
+    },
+    {
+      "claim_id": "365eeae7-a659-4c7a-bb42-9a724e1edb55",
+      "result_id": "7e922724-cfc4-4015-b875-86b18710d0df"
+    },
+    {
+      "claim_id": "d8d563fe-1cfe-4353-88c2-b223dc09978a",
+      "result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1"
+    },
+    {
+      "claim_id": "f34a84a2-7db8-47a1-aeaa-6f269ca9d743",
+      "result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1"
+    },
+    {
+      "claim_id": "ece46f50-3549-4b35-adaa-7bfaa6b198a3",
+      "result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1"
+    },
+    {
+      "claim_id": "0abefd82-ca00-4bdd-9d92-ac2c7c880adc",
+      "result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1"
+    },
+    {
+      "claim_id": "39d2c429-0296-4fbd-91a8-c8efd002a56f",
+      "result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1"
+    },
+    {
+      "claim_id": "50f0c6c6-cfbd-468b-96bc-1b80dc441e7b",
+      "result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1"
+    },
+    {
+      "claim_id": "fca01004-e348-466f-9fb8-af956664d314",
+      "result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1"
+    },
+    {
+      "claim_id": "b6c5ea1f-603b-4a7c-bbe1-c84e2885d7ca",
+      "result_id": "e2b93dae-8463-4bd8-87b9-d253f55c5032"
+    },
+    {
+      "claim_id": "3163993e-a67b-4fcb-91e5-7ff7bb78fe02",
+      "result_id": "e2b93dae-8463-4bd8-87b9-d253f55c5032"
+    },
+    {
+      "claim_id": "fc92a9e7-6137-4cdd-b15e-eb9ae79ec5a5",
+      "result_id": "e2b93dae-8463-4bd8-87b9-d253f55c5032"
+    },
+    {
+      "claim_id": "6cb11ae5-6abe-4b9f-ad94-77019728f213",
+      "result_id": "e2b93dae-8463-4bd8-87b9-d253f55c5032"
+    },
+    {
+      "claim_id": "17dcbced-6807-4e5e-8b88-6d1ebbde59d7",
+      "result_id": "e2b93dae-8463-4bd8-87b9-d253f55c5032"
+    },
+    {
+      "claim_id": "33835959-f101-4269-9542-128323a04086",
+      "result_id": "e2b93dae-8463-4bd8-87b9-d253f55c5032"
+    },
+    {
+      "claim_id": "464c0992-2662-4de4-9fc6-aa9fc49b0f6b",
+      "result_id": "1f0f34fa-7a3d-48d2-abe0-a4cf05af4535"
+    },
+    {
+      "claim_id": "38a609db-80ee-4bf4-923d-394f7a59f26a",
+      "result_id": "1f0f34fa-7a3d-48d2-abe0-a4cf05af4535"
+    },
+    {
+      "claim_id": "2d732ab5-ab4d-4a53-bafc-983d42fa2995",
+      "result_id": "1f0f34fa-7a3d-48d2-abe0-a4cf05af4535"
+    },
+    {
+      "claim_id": "4571fc3f-f20a-489b-a84d-19e73a3d1971",
+      "result_id": "d5b429b6-32ea-49bf-986d-dbf618c2a8c1"
+    },
+    {
+      "claim_id": "ac9be79b-db2e-47a6-9938-0d75fb5c5892",
+      "result_id": "d5b429b6-32ea-49bf-986d-dbf618c2a8c1"
+    },
+    {
+      "claim_id": "8451b622-ca75-408b-9cec-8a9c8f123146",
+      "result_id": "bdea2e7e-d285-436c-9254-379c996010fc"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b9b6a7d9-7215-466b-8184-fe41aa3f2805",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "fc547401-3984-4068-9de1-c1c3b8bb2548",
+      "peer_result_id": "893c5a3e-b66b-446f-83db-dc25fd398b10",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on reporter system validation (C43-C92). Both evaluations find the evidence SUPPORTED with strong praise. OpenEval emphasizes multiple complementary approaches and expected responses to modulators, while peer reviewers describe the system as 'elegant' and 'reliable.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "1e1cef87-3ce4-427e-a995-5765eecc4a28",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "efec84f6-3085-45c2-a001-95f02e0d1e5a",
+      "peer_result_id": "355f558e-3013-4b10-8aa0-feab15604262",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on CRISPR screen and SFSWAP identification (C5, C46-C54, C93-C94). Both find evidence SUPPORTED. OpenEval highlights orthogonal validation methods and timing data, while peer reviewers praise the screen as 'elegant,' 'state-of-the-art,' and 'convincing.' Peer review also includes C40 which OpenEval addresses separately in R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "ed7a54a5-8723-4736-9b57-dcb41313accd",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "837e8af8-7a19-4d8c-b741-b3f717f10256",
+      "peer_result_id": "355f558e-3013-4b10-8aa0-feab15604262",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R3 addresses RT-qPCR validation of OGT splicing changes (C40, C53, C54) as SUPPORTED. These claims overlap with peer R2's broader evaluation of the CRISPR screen and validation experiments, which also finds the evidence SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "00c1d668-e849-4995-94c7-1eb1b159b380",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0cd2168d-8189-458a-883d-9e91b733ace5",
+      "peer_result_id": "7e922724-cfc4-4015-b875-86b18710d0df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of global RNA-seq analysis (C6, C55-C60). OpenEval finds evidence SUPPORTED despite noting limited functional enrichment. Peer review rates UNCERTAIN due to concerns about controls and off-target effects from siRNA treatment, though revision comments suggest concerns were addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "4babc171-3b6d-40be-8269-162286c49192",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "7311e5f0-cd28-4018-b89d-1b50e71a372a",
+      "peer_result_id": "05b20c82-3146-44cf-8b4f-5091f6fc78d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on decoy exon mechanism for OGT (C7, C41, C61-C65). Both evaluations find evidence SUPPORTED. OpenEval emphasizes complementary approaches and appropriate use of UPF1 knockdown, while peer reviewers find the decoy mechanism data 'compelling' with no specific criticisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "0fa86dfb-edb0-4caf-ae24-cbddf5a0dc7b",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "29298178-09f1-4f55-b8fc-1be53a138f6c",
+      "peer_result_id": "e2b93dae-8463-4bd8-87b9-d253f55c5032",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of global decoy exon analysis (C8, C42, C67-C70). OpenEval rates UNCERTAIN due to complex bidirectional results and potential false positives in computational predictions. Peer review rates SUPPORTED, finding the model 'intriguing' and praising the 'sophisticated bioinformatic analysis' without specific criticism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "9a7ad2a7-53a9-4f5f-8de8-029aa1eb533b",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a0dc1a32-6fc4-43d0-967e-5b2e16678dd9",
+      "peer_result_id": "1f0f34fa-7a3d-48d2-abe0-a4cf05af4535",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mechanistic insights regarding SF1 and SRSF1 (C77-C79). Both find evidence SUPPORTED. OpenEval notes consistency with prior in vitro studies, while peer reviewers accept the current mechanistic detail and acknowledge room for future exploration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "2c5e43bb-8bdc-454f-9aec-31178490b912",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0d52d415-a006-4437-bdbe-c73933a626c6",
+      "peer_result_id": "d5b429b6-32ea-49bf-986d-dbf618c2a8c1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of O-GlcNAc-SFSWAP mechanistic link (C80-C81). OpenEval rates SUPPORTED based on cited phosphoproteomics data. Peer review rates UNCERTAIN, explicitly noting 'No firm evidence linking SFSWA to an O-GlcNAc specific mechanism,' though not considered a major limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "3e0bab8d-b234-40ee-8da5-a12bbce4a972",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "e1a9253e-14fd-4468-934a-df77bb2e03ff",
+      "peer_result_id": "bdea2e7e-d285-436c-9254-379c996010fc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on limitations of SFSWAP's role (C82). Both find this SUPPORTED as an acknowledged limitation. OpenEval notes importance for understanding additional regulatory factors, while peer reviewers accept the incomplete mechanistic understanding with appropriate speculation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "4927b291-72e0-4287-bd75-8db21d046463",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "4927e174-4f51-4769-9c09-6cf51ab6fb7b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R10 evaluates background claims on decoy exon function from prior literature (C71-C76) as SUPPORTED. No corresponding peer review evaluation found, as peer reviewers did not separately assess background/contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    },
+    {
+      "id": "67f9f47a-250d-4b1a-bceb-afb967e29663",
+      "submission_id": "3f0d3c75-330c-44e5-be7d-bea68daddb56",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "e9b83b61-6b55-4c09-a06b-cf0f124d07b1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R11 evaluates extensive background and contextual claims (C1-C4, C9-C39, C58, C66) as SUPPORTED based on prior literature. No corresponding peer review evaluation found, as peer reviewers focused on novel experimental findings rather than background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:47:28.668048Z"
+    }
+  ]
+}

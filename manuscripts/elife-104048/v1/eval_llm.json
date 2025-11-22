@@ -4,372 +4,298 @@
     "claim_ids": [
       "C6",
       "C7",
-      "C49",
-      "C50",
-      "C52",
-      "C53",
-      "C54"
+      "C54",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65"
     ],
-    "result": "Human FHOD3L nucleates actin filaments in vitro. FHOD3L-CT enhances actin assembly in bulk pyrene assays and generates more filaments compared to actin alone. The I1163A mutant lacks nucleation activity, while the K1309A mutant reduces nucleation by ~85%.",
+    "result": "Human FHOD3L nucleates actin filaments in vitro. FHOD3L-CT enhances actin assembly in bulk pyrene assays and generates more filaments than actin alone. The I1163A mutation abolishes nucleation activity, while K1309A reduces it by ~85%, confirming that FHOD3L possesses nucleation activity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6, C7, C49, C50, C52, C53, and C54 provide converging evidence from multiple assays (pyrene-based and TIRF microscopy) demonstrating nucleation activity. The use of well-characterized mutations (I1163A and K1309A) that abolish or reduce nucleation provides strong validation. The data are internally consistent and supported by appropriate controls.",
+    "evaluation": "Claims C6, C54, C60, C61, C63, C64, and C65 provide converging biochemical evidence from multiple assays (pyrene-based assembly, TIRF microscopy) demonstrating that FHOD3L nucleates actin. The use of well-characterized mutations (I1163A, K1309A) that abolish or reduce nucleation provides strong validation. The data are internally consistent and supported by appropriate controls.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C70"
+      "C7",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C82"
     ],
-    "result": "FHOD3L exhibits unusual elongation properties characterized by brief bursts of rapid elongation (~3-fold faster, 39\u00b113 subunits/s) following pauses, with short run lengths (~1.10\u00b10.49 \u03bcm). FHOD3L-CT potently caps barbed ends (Kapp = 0.023\u00b10.005 nM) in the absence of profilin, but this affinity decreases 500-1000 fold in the presence of profilin.",
+    "result": "FHOD3L rapidly but briefly elongates actin filaments after pausing. In TIRF assays with profilin, FHOD3L produces 'bursts' of fast elongation (~3-fold faster, 39\u00b113 subunits/s) with an average run length of 1.10\u00b10.49 \u03bcm, often preceded by pauses lasting ~12 s.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C70 describe a comprehensive characterization of FHOD3L elongation properties using multiple complementary assays (seeded elongation, TIRF microscopy). The unusual burst-pause-burst pattern is well-documented with appropriate controls (actin alone shows no such pattern). The quantitative measurements are internally consistent, though the authors acknowledge resolution limits and note that some metrics represent best estimates.",
+    "evaluation": "Claims C7, C70, C73, C74, C75, C76, and C82 describe a distinctive elongation pattern observed via TIRF microscopy. The data show quantitative measurements of elongation rates, run lengths, and pause durations. Controls without formin demonstrate that these features are formin-specific. However, the authors acknowledge resolution limits and note that capping events may reflect nonspecific surface interactions, leading to conservative interpretation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75"
+      "C55",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
     ],
-    "result": "FHOD3L bundles actin filaments, with FHOD3L-CT bundling more potently than FHOD3S-CT, particularly at concentrations above 15 nM. FHOD3S-CT is a more potent nucleator and weaker barbed-end capper compared to FHOD3L-CT.",
+    "result": "FHOD3L potently caps actin filament barbed ends in the absence of profilin. FHOD3L-CT has a barbed-end binding affinity (Kapp) of 0.023\u00b10.005 nM, while FHOD3S-CT is >30-fold weaker (0.750\u00b10.090 nM). The I1163A mutant binds with 4.9\u00b11.4 nM affinity, >200-fold weaker than wild-type but still tight.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71-C75 are supported by low-speed bundling assays and visual examination of phalloidin-stabilized filaments. The comparison between FHOD3L-CT and FHOD3S-CT isoforms is systematic and quantitative, with data summarized in Table 1. The differences are statistically significant and biologically meaningful.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C55, C66, C67, C68, and C69 present quantitative barbed-end binding data from seeded elongation assays. The measurements are internally consistent and show clear differences between constructs. The authors note potential confounding from bundling/nucleation at high concentrations, which may affect affinity estimates, but the overall conclusion of potent capping is well-supported.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82"
+      "C56",
+      "C83",
+      "C84"
     ],
-    "result": "The K1193L mutation in FHOD3L-CT reduces nucleation by >67% and weakens barbed-end affinity ~12-fold, while maintaining wild-type elongation activity and reducing bundling ~2-fold. This mutation successfully separates nucleation from elongation functions.",
+    "result": "FHOD3L bundles actin filaments. Bundles are readily apparent when actin is incubated with FHOD3L-CT, and FHOD3L-CT bundles filaments somewhat more potently than FHOD3S-CT, particularly at concentrations above 15 nM.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C78-C82 demonstrate successful generation of a function-separating mutant. The biochemical characterization is thorough, using multiple assays to confirm that elongation is preserved while nucleation and bundling are reduced. This is a critical tool for subsequent cellular experiments and the data are convincing.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C56, C83, and C84 are supported by visual observation and low-speed co-sedimentation assays. The data show dose-dependent bundling and quantitative differences between isoforms. The evidence is straightforward and well-documented.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88"
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
     ],
-    "result": "The GS-FH1 mutant (with FH1 domain replaced by glycine-serine linkers) maintains nucleation activity but loses elongation acceleration. It shows weakened barbed-end affinity (Kapp = 0.218\u00b10.016 nM) that is not further decreased by profilin, and only deceleration is observed in profilin-containing assays.",
+    "result": "The K1193L mutation reduces FHOD3L nucleation to <33% of wild-type and weakens barbed-end affinity ~12-fold (0.470\u00b10.090 nM), while maintaining wild-type elongation properties and reducing bundling ~2-fold. This mutation separates nucleation from elongation function.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C83-C88 describe another function-separating mutant that successfully abolishes elongation while preserving nucleation. The characterization is comprehensive, though the authors note complications from bundling/aggregation in some assays. The use of TIRF microscopy to assess nucleation and the demonstration that profilin does not enhance elongation provide strong evidence for loss of elongation function.",
+    "evaluation": "Claims C90-C94 describe the biochemical characterization of the K1193L mutant. The data demonstrate successful separation of nucleation from elongation, with quantitative measurements from multiple assays (pyrene, TIRF, bundling). The mutant design is based on prior work (Baker et al., 2015), and the results are internally consistent.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C93",
-      "C94",
       "C95",
       "C96",
-      "C97"
+      "C98",
+      "C99",
+      "C100"
     ],
-    "result": "FHOD3 knockdown in NRVMs reduces FHOD3 mRNA to ~35% and protein to ~20% of control levels, resulting in loss of sarcomeres (3\u00b17 vs 12\u00b113 in mock knockdown). Wild-type FHOD3L expression rescues sarcomere formation, with rescued cells showing 19\u00b114 sarcomeres per cell and sarcomere dimensions comparable to controls, though thin filaments are shorter (739\u00b181 nm vs 925\u00b194 nm).",
+    "result": "The GS-FH1 mutant (polyproline tracts replaced with glycine-serine linkers) maintains nucleation but eliminates elongation acceleration. GS-FH1 generates similar numbers of filaments as wild-type but shows only deceleration in profilin-containing assays, with no elongation enhancement at any concentration tested.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C89-C97 establish a robust knockdown-rescue system in NRVMs. The knockdown efficiency is well-documented at both mRNA and protein levels. The rescue with wild-type FHOD3L is convincing, with comprehensive quantification of sarcomere number, length, and width. The shorter thin filaments in rescued cells may reflect incomplete maturation, as the authors suggest, but this does not undermine the overall rescue.",
+    "evaluation": "Claims C95, C96, C98, C99, and C100 describe the GS-FH1 mutant's biochemical properties. The data show successful separation of elongation from nucleation. The approach is based on prior work (Zweifel and Courtemanche, 2020). However, the authors note complications from bundling/aggregation in some assays, requiring alternative approaches (TIRF-based nucleation counting). The overall conclusion is well-supported despite these technical challenges.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C98",
-      "C99",
-      "C100",
-      "C101",
-      "C102",
-      "C103",
-      "C104"
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C57",
+      "C58",
+      "C59",
+      "C138"
     ],
-    "result": "FHOD3 knockdown significantly decreases maximal contraction and relaxation velocities and causes primarily arrhythmic contractions (~15% rhythmic vs ~75% in controls). Wild-type FHOD3L expression rescues both contractile velocities and rhythmic beating. Overexpression of FHOD3L reduces contractile velocities, suggesting optimal FHOD3L levels are critical.",
+    "result": "FHOD3L's elongation activity is necessary for proper sarcomere formation and contractile function in NRVMs, while nucleation, capping, and bundling activities are not essential. This conclusion is based on rescue experiments with function-separating mutants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C98-C104 demonstrate functional consequences of FHOD3 loss and rescue using quantitative video-based contractility analysis. The data are internally consistent and show clear phenotypic rescue. The overexpression control (C100) strengthens the conclusion that FHOD3L levels must be tightly regulated. The use of digital image correlation provides objective, quantitative measurements.",
+    "evaluation": "Claims C8-C12, C57-C59, and C138 represent the central cellular finding. The K1193L mutant (reduced nucleation, capping, bundling; normal elongation) rescues sarcomere formation and function, while GS-FH1 (normal nucleation; no elongation) fails to rescue. The logic is sound and the data are compelling. However, the authors acknowledge that complete domain removal (GS-FH1) may be too blunt, and the low expression levels of GS-FH1 complicate interpretation, though controls address this concern.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
       "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111"
+      "C106"
     ],
-    "result": "The K1193L mutant (with ~70% reduced nucleation, ~20-fold weaker capping, and >50% reduced bundling) fully rescues sarcomere formation and contractile function in NRVMs. Cells expressing K1193L are nearly indistinguishable from wild-type FHOD3L rescue, with the only significant difference being ~7% longer thin filaments (792\u00b179 nm vs 739\u00b181 nm).",
+    "result": "siRNA knockdown reduces FHOD3 mRNA to ~35% and protein to ~20% of original levels. Mock knockdown cells maintain organized sarcomeres (12\u00b113 per cell), while FHOD3-depleted cells largely lack sarcomeres (3\u00b17 per cell). Wild-type FHOD3L expression rescues sarcomere formation, with rescued cells forming significantly more sarcomeres (19\u00b114) than mock knockdown.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C105-C111 provide strong evidence that nucleation, capping, and bundling activities are not essential for FHOD3L function in NRVMs. The comprehensive characterization includes sarcomere number, dimensions, thin filament length, and contractile function. The small difference in thin filament length may reflect the state of maturity rather than a functional defect. This is a key result supporting the main conclusion.",
+    "evaluation": "Claims C101-C106 establish the knockdown-rescue system. The data show effective knockdown at mRNA and protein levels, clear phenotypic effects, and successful rescue. The observation that rescued cells have more sarcomeres than mock knockdown is interesting but may reflect the developmental stage or expression timing. The system is well-validated with appropriate controls.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C112",
-      "C113",
-      "C114",
-      "C115",
-      "C116",
-      "C117",
-      "C118",
-      "C135",
-      "C136",
-      "C137",
-      "C138"
+      "C107",
+      "C108",
+      "C109"
     ],
-    "result": "The GS-FH1 mutant (lacking elongation activity) fails to rescue FHOD3 knockdown, with sarcomere numbers (2\u00b14) similar to mock rescue and severely impaired contractility. Despite expression levels within the acceptable range for wild-type rescue, GS-FH1 does not restore sarcomere structure or function, demonstrating that elongation activity is essential.",
+    "result": "FHOD3 depletion results in shorter and narrower sarcomeres in the few that remain. FHOD3L rescue restores sarcomere lengths (1.72\u00b10.18 \u03bcm) and widths (1.70\u00b10.46 \u03bcm) to mock knockdown levels. However, thin filament lengths are shorter in rescued cells (739\u00b181 nm) compared to mock knockdown (925\u00b194 nm).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C112-C118, C135-C138 provide compelling evidence that elongation is the critical FHOD3L activity in NRVMs. The authors carefully address potential concerns about low expression levels by showing that similar wild-type FHOD3L levels are sufficient for rescue (C137) and that rhythmicity is more impaired than in mock rescue (C138). The failure to rescue despite maintained nucleation activity strongly supports the conclusion that elongation is essential.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C107-C109 describe sarcomere structural metrics. The measurements are quantitative and statistically analyzed. The difference in thin filament length is acknowledged by the authors as potentially reflecting sarcomere maturity or number. The data are well-documented with appropriate statistical tests.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C8",
-      "C9",
-      "C10",
-      "C11",
-      "C12"
+      "C111",
+      "C112",
+      "C115",
+      "C116"
     ],
-    "result": "FHOD3L's elongation activity, but not its nucleation, capping, or bundling activity, is necessary for proper sarcomere formation and contractile function in neonatal rat ventricular myocytes.",
+    "result": "FHOD3 knockdown significantly decreases maximal contraction and relaxation velocities and causes primarily arrhythmic contractions (~15% rhythmic). FHOD3L rescue restores both velocities to mock knockdown levels and rhythmic contractions (~75% rhythmic).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8-C12 represent the main conclusion of the paper, which is strongly supported by the combined biochemical characterization of function-separating mutants and their functional testing in NRVMs. The K1193L mutant (reduced nucleation/capping/bundling, normal elongation) rescues fully, while GS-FH1 (normal nucleation, no elongation) fails to rescue. This provides clear evidence for the necessity of elongation and dispensability of the other activities.",
+    "evaluation": "Claims C111, C112, C115, and C116 describe functional contractility measurements using digital image correlation. The data show clear phenotypic effects of FHOD3 depletion and successful functional rescue. The measurements are quantitative and include appropriate controls. The use of an established analysis method (MotionGUI) strengthens the findings.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
+      "C120",
+      "C121",
       "C122",
-      "C123"
+      "C123",
+      "C124",
+      "C125",
+      "C126"
     ],
-    "result": "FHOD3L can nucleate actin in vitro, albeit weakly compared to many formins, but this nucleation activity is not necessary for FHOD3L function in NRVMs.",
+    "result": "K1193L rescue is nearly indistinguishable from wild-type FHOD3L rescue in NRVMs. K1193L shows striated localization, rescues sarcomere number (15\u00b116), and maintains normal sarcomere lengths, widths, and contractile function. The only significant difference is ~7% longer thin filaments (792\u00b179 nm vs 739\u00b181 nm). This demonstrates that ~70% loss of nucleation, ~20-fold weaker capping, and ~50% loss of bundling have no deleterious impact.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C122 and C123 summarize key findings from the biochemical and cellular experiments. The nucleation activity is well-documented in vitro, and the K1193L rescue experiments clearly demonstrate that reduced nucleation does not impair FHOD3L function in cells. This conclusion is well-supported by the data.",
+    "evaluation": "Claims C120-C126 present the K1193L cellular rescue data. The comprehensive analysis includes structural metrics (sarcomere number, length, width, thin filament length) and functional measurements (contraction, relaxation, rhythmicity). The data strongly support the conclusion that nucleation, capping, and bundling are dispensable. The slight difference in thin filament length is discussed as potentially reflecting sarcomere number or maturity.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C126",
       "C127",
       "C128",
       "C129",
-      "C130"
+      "C133",
+      "C134",
+      "C135",
+      "C136"
     ],
-    "result": "FHOD3L exhibits unusual elongation properties with very high elongation rates (among the highest known, including mDia1 and Cappuccino) but very brief processivity (~1 \u03bcm run length), which is sufficient in principle to build sarcomeric thin filaments (~1 \u03bcm long in NRVMs).",
+    "result": "The GS-FH1 mutant fails to rescue FHOD3 depletion in NRVMs. GS-FH1 shows diffuse localization, rescues very few sarcomeres (2\u00b14, similar to mock rescue), and those present are shorter and narrower. Contractility is nearly abolished with decreased velocities and largely arrhythmic contractions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C126-C130 characterize the distinctive elongation properties of FHOD3L and relate them to the biological function. The comparison to other formins and to Drosophila FhodA provides context. The inference that this run length is sufficient for thin filament assembly (C130) is reasonable given the measured thin filament lengths, though the authors appropriately note this is 'in principle' and additional regulation may occur in vivo.",
+    "evaluation": "Claims C127-C136 present the GS-FH1 cellular rescue data. The failure to rescue is clear and comprehensive across all metrics. The authors address the concern about low GS-FH1 expression levels with multiple lines of evidence: (1) similar expression levels of wild-type rescue fully, (2) rhythmicity is more impaired than in mock rescue despite similar structural metrics, and (3) GS-FH1 can localize correctly when sarcomeres are present. The conclusion that elongation is essential is well-supported.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C134",
-      "C135",
-      "C136"
+      "C62",
+      "C85",
+      "C86",
+      "C87"
     ],
-    "result": "The FH1 domain strongly influences elongation rate in vitro, and replacement of the FH1 domain with a flexible linker (FHOD3L GS-FH1) results in a severe phenotype in NRVMs with very few sarcomeres and impaired contractility.",
+    "result": "FHOD3S-CT (lacking eight acidic residues) is a more potent nucleator (~30% stronger), a weaker barbed-end capper (>30-fold weaker affinity), and a slightly weaker bundler compared to FHOD3L-CT. This demonstrates that the eight-residue acidic insert modulates multiple FHOD3 activities.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C134-C136 are supported by both biochemical data (showing loss of elongation acceleration) and cellular data (showing failure to rescue). The conclusion that the FH1 domain is critical for elongation is well-supported, though the authors acknowledge some uncertainty about whether low protein levels contribute to the phenotype.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C62, C85, C86, and C87 compare the two isoforms biochemically. The data are quantitative and show clear differences across multiple activities. The comparison is well-controlled (same experimental conditions) and the differences are statistically significant. This provides insight into how the acidic insert regulates FHOD3 function.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C76",
-      "C77"
+      "C88",
+      "C89"
     ],
-    "result": "The marked increase in capping by FHOD3L-CT may be mediated by binding to a basic region exposed at the barbed end of filaments, while decreased nucleation and bundling activities may be due to the acidic nature of most of the actin surface.",
+    "result": "The marked increase in capping by FHOD3L-CT may be mediated by binding to a basic region at the barbed end, while decreased nucleation and bundling may result from the acidic actin surface.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C76 and C77 are speculative interpretations of the biochemical differences between FHOD3L-CT and FHOD3S-CT. While the speculation is reasonable given the acidic insert in FHOD3L, no direct evidence is provided for these specific molecular mechanisms. These remain hypotheses requiring further testing.",
+    "evaluation": "Claims C88 and C89 are speculative interpretations without direct experimental support. While the electrostatic hypothesis is plausible given the acidic insert in FHOD3L, no binding studies or mutagenesis of the acidic residues are presented to test this model. These remain reasonable hypotheses for future investigation.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C139",
-      "C140"
+      "C72"
     ],
-    "result": "FHOD3L GS-FH1 can fold and localize correctly when sarcomeres are present, but low expression levels likely reflect increased protein turnover due to the absence of sarcomeres rather than protein instability.",
+    "result": "Profilin causes a marked apparent decrease (500- to 1000-fold) in FHOD3L-CT's affinity for barbed ends.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C139 and C140 address an important concern about the GS-FH1 rescue experiments. The observation that GS-FH1 can localize to residual sarcomeres (C139) supports proper folding, but the interpretation of low protein levels as reflecting turnover rather than instability (C140) is speculative. The authors acknowledge this uncertainty and provide arguments for their preferred model, but definitive evidence is lacking.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 describes the effect of profilin on barbed-end binding. The data comparing concentrations required for effects with and without profilin support this conclusion. However, the authors note that the complex dose-response curves reflect contributions from both elongation and capping, which may affect the affinity estimate. The overall conclusion of substantially weakened binding in the presence of profilin is supported.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C149",
-      "C150",
-      "C153",
-      "C154"
+      "C147"
     ],
-    "result": "FHOD3L could function by elongating filaments nucleated by other proteins (such as DAAM), or by reinforcing Z-line structure to facilitate sarcomere thickening, though the specific mechanism remains unclear.",
+    "result": "Sarcomere number and thin filament length are highly inversely correlated (R\u00b2=0.90) in the experiments, though this is based on only three data points.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C149, C150, C153, and C154 present speculative models for FHOD3L function in vivo. While these are reasonable hypotheses supported by literature on DAAM and observations in other species, the current data do not distinguish between these possibilities. These represent important questions for future investigation rather than supported conclusions.",
+    "evaluation": "Claim C147 reports a high correlation but acknowledges the limitation of only three data points (mock knockdown, wild-type rescue, K1193L rescue). While the correlation is strong, the small sample size limits confidence in this relationship. Additional data points would be needed to establish this correlation robustly. The authors appropriately note this limitation.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C132"
+      "C113",
+      "C114",
+      "C119"
     ],
-    "result": "The processivity of Fhod-family formins may be regulated in vivo to build short filaments when needed and longer filaments in other contexts.",
+    "result": "FHOD3L overexpression (without knockdown) results in lower expression levels than wild-type rescue despite the same viral titer, suggesting cells maintain FHOD3L below a maximum. Overexpression reduces contraction and relaxation velocities but does not clearly impact rhythmicity or contraction area, though variance increases.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C132 is a speculative hypothesis based on the observation that different Drosophila Fhod splice variants have different run lengths. While this is an interesting possibility, no direct evidence for such regulation is provided in the current study. This remains a hypothesis for future testing.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C114, and C119 describe overexpression experiments that serve as important controls. The data suggest that excessive FHOD3L is detrimental and that cells regulate FHOD3L levels. This supports the validity of the rescue experiments by showing that the expression levels used are within a tolerable range. The increased variance in overexpression is consistent with approaching detrimental levels.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C1",
-      "C2",
-      "C3",
-      "C4",
-      "C5",
-      "C13",
-      "C14",
-      "C15",
-      "C16",
-      "C17",
-      "C18",
-      "C19",
-      "C20",
-      "C21",
-      "C22",
-      "C23",
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C36",
-      "C37",
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48"
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
     ],
-    "result": "Background and context claims establishing the importance of formins, FHOD family proteins, and FHOD3L in sarcomere formation and cardiac function, including prior conflicting biochemical data and clinical relevance of FHOD3 mutations.",
+    "result": "Low GS-FH1 expression levels do not reflect protein instability but rather increased turnover due to absence of sarcomeres. Evidence includes: (1) similar wild-type expression levels fully rescue, (2) rhythmicity is more impaired in GS-FH1 than mock rescue despite similar structural metrics, and (3) GS-FH1 can bind residual sarcomeres when present.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C48 provide essential background and context from the literature. These are well-supported by appropriate citations and establish the rationale for the current study. The authors accurately represent prior work, including the conflicting biochemical data that motivated their investigation.",
+    "evaluation": "Claims C160-C164 address a critical concern about the GS-FH1 rescue interpretation. The authors provide multiple lines of evidence to argue that low expression is not the cause of rescue failure. The logic is sound and the controls are appropriate. However, C164 remains somewhat speculative as the exact mechanism of increased turnover is not directly demonstrated. The overall argument is convincing but could be strengthened with additional data (e.g., protein stability measurements).",
     "result_type": "MINOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C119",
-      "C120",
-      "C121",
-      "C124",
-      "C125",
-      "C141",
-      "C142",
-      "C143",
-      "C144",
-      "C145",
-      "C146",
-      "C147",
-      "C151",
-      "C152",
-      "C155",
-      "C156",
-      "C157"
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
     ],
-    "result": "Discussion of how formin activities are tuned for specific functions, comparison to other systems (yeast cytokinesis, C. elegans muscle), and consideration of FHOD3L's role in sarcomere maturation rather than initial assembly.",
+    "result": "In C. elegans, deletion of the FH1 domain severely impacts body wall muscle, and profilin is required for Fhod-1 function, strongly arguing that elongation is important. A more severe phenotype in fhod-1(tm2363) (predicted to delete part of FH2 and downstream sequence) suggests nucleation may also be necessary in worms.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C119-C157 provide important context from other systems and thoughtful discussion of the results. The comparisons to other formins and organisms are appropriate and well-supported by citations. The inference that FHOD3 is not required for initial thin filament assembly (C147) is reasonable given the literature showing premyofibril formation in FHOD-depleted cells.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C158"
-    ],
-    "result": "Transient actin assembly may be sufficient for FHOD3L function, consistent with findings that capping and bundling are not essential in NRVMs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C158 is a reasonable inference from the combined data showing that elongation is essential while capping and bundling are dispensable. This interpretation is consistent with the experimental results, though the exact mechanism of how transient assembly contributes to sarcomere formation remains to be determined.",
+    "evaluation": "Claims C165-C169 discuss supporting evidence from C. elegans (Kimmich et al., 2024). The authors appropriately cite this work and note both consistencies (importance of FH1/elongation) and differences (possible importance of nucleation in worms) with their findings. The interpretation is balanced and acknowledges species-specific differences. However, C169 is somewhat speculative as the tm2363 allele's exact molecular consequences are uncertain.",
     "result_type": "MINOR"
   }
 ]

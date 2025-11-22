@@ -7,7 +7,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is established scientific knowledge about MHC function.",
+    "evidence": "This is a statement of established scientific knowledge about MHC function.",
     "evidence_type": [
       "KNOWLEDGE"
     ]
@@ -33,10 +33,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations in the introduction and by the evolutionary analysis presented in the paper.",
+    "evidence": "This is supported by citations throughout the paper and established knowledge in the field.",
     "evidence_type": [
-      "CITATION",
-      "DATA"
+      "KNOWLEDGE",
+      "CITATION"
     ]
   },
   {
@@ -47,7 +47,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by references to the IPD-MHC/HLA database data (Maccari et al., 2017; Maccari et al., 2020; Robinson et al., 2019).",
+    "evidence": "This is supported by references to databases and literature (Maccari et al., 2017; Maccari et al., 2020; Robinson et al., 2019).",
     "evidence_type": [
       "CITATION",
       "DATA"
@@ -55,16 +55,16 @@
   },
   {
     "claim_id": "C5",
-    "claim": "Some MHC allelic lineages appear to be shared between primate species, a phenomenon known as trans-species polymorphism (TSP) or incomplete lineage sorting.",
+    "claim": "Some MHC allelic lineages appear to be shared between primate species through trans-species polymorphism (TSP).",
     "claim_type": "EXPLICIT",
     "source": "Moreover, some allelic lineages appear to be shared between primate species, a phenomenon known as trans-species polymorphism (TSP) or incomplete lineage sorting, which is rare in the genome overall.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the phylogenetic analysis presented in the paper and by citations to previous literature.",
+    "evidence": "This is a central claim of the paper supported by phylogenetic analysis.",
     "evidence_type": [
       "DATA",
-      "CITATION"
+      "INFERENCE"
     ]
   },
   {
@@ -75,9 +75,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citation to Leffler et al., 2013 which found only ~100 loci genome-wide showing TSP between humans and chimpanzees.",
+    "evidence": "This is supported by citation to Leffler et al., 2013 in the paper.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
@@ -88,201 +89,154 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the Bayes factor analysis presented in Figures 3 and 4.",
+    "evidence": "This is a primary finding supported by Bayes factor analysis shown in Figures 3 and 4.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C8",
-    "claim": "There is ancient TSP between humans and old-world monkeys in MHC-DQB1.",
+    "claim": "There is trans-species polymorphism between humans and old-world monkeys in MHC-DQB1.",
     "claim_type": "EXPLICIT",
     "source": "We find strong support for ancient TSP in 7 of 10 classical genes, including\u2014remarkably\u2014between humans and old-world monkeys in MHC-DQB1.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the phylogenetic tree in Figure 2B and Bayes factor analysis in Figure 4.",
+    "evidence": "This is supported by phylogenetic trees and Bayes factors shown in Figure 2B and Figure 4.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C9",
-    "claim": "Rapid evolution is observed at nucleotides encoding the proteins' peptide-binding domains.",
+    "claim": "Ancient MHC lineages have been maintained by balancing selection for at least 31 million years.",
     "claim_type": "EXPLICIT",
-    "source": "In addition to the long-term persistence of ancient lineages, we additionally observe rapid evolution at nucleotides encoding the proteins' peptide-binding domains.",
+    "source": "Together, these results suggest complex selective forces\u2014arising from differential peptide binding\u2014that drive short-term allelic turnover within lineages while also maintaining deeply divergent lineages for at least 31 million years in some cases.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the substitution rate analysis shown in Figures 5 and 6.",
+    "evidence": "This is inferred from the TSP between humans and OWM, whose divergence is dated to 31 MYA.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C10",
-    "claim": "The most rapidly-evolving amino acid positions are extremely enriched for autoimmune and infectious disease associations.",
+    "claim": "The most rapidly-evolving amino acid positions in MHC genes are extremely enriched for autoimmune and infectious disease associations.",
     "claim_type": "EXPLICIT",
     "source": "The most rapidly-evolving amino acid positions are extremely enriched for autoimmune and infectious disease associations.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the disease association analysis shown in Table 1 and Figure 6\u2014figure supplement 7.",
+    "evidence": "This is supported by the literature search and analysis shown in Table 1 and Figure 6\u2014figure supplement 7.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C11",
-    "claim": "Complex selective forces arising from differential peptide binding drive short-term allelic turnover within lineages while maintaining deeply divergent lineages for at least 31 million years in some cases.",
+    "claim": "The MHC is a large locus containing many immune genes shared among jawed vertebrates.",
     "claim_type": "EXPLICIT",
-    "source": "Together, these results suggest complex selective forces\u2014arising from differential peptide binding\u2014that drive short-term allelic turnover within lineages while also maintaining deeply divergent lineages for at least 31 million years in some cases.",
+    "source": "The Major Histocompatibility Complex (MHC) is a large locus containing many immune genes that is shared among the jawed vertebrates (Radwan et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the combined evidence of TSP, rapid evolution at peptide-binding sites, and disease associations.",
+    "evidence": "This is established knowledge supported by citation.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "KNOWLEDGE",
+      "CITATION"
     ]
   },
   {
     "claim_id": "C12",
-    "claim": "The MHC in humans is also known as the HLA (Human Leukocyte Antigen) region.",
+    "claim": "In humans, the MHC is also known as the HLA (Human Leukocyte Antigen) region.",
     "claim_type": "EXPLICIT",
     "source": "In humans, the MHC is also known as the HLA (Human Leukocyte Antigen) region; it spans about 5 megabases (Mb) on chromosome 6 and contains 412 genes (Figure 1A; Genome Reference Consortium, 2022; O'Leary et al., 2016).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is established nomenclature in the field.",
+    "evidence": "This is established nomenclature supported by citations.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "KNOWLEDGE",
+      "CITATION"
     ]
   },
   {
     "claim_id": "C13",
-    "claim": "The human MHC/HLA region spans about 5 megabases on chromosome 6.",
+    "claim": "The human MHC/HLA region spans about 5 megabases on chromosome 6 and contains 412 genes.",
     "claim_type": "EXPLICIT",
     "source": "In humans, the MHC is also known as the HLA (Human Leukocyte Antigen) region; it spans about 5 megabases (Mb) on chromosome 6 and contains 412 genes (Figure 1A; Genome Reference Consortium, 2022; O'Leary et al., 2016).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is supported by citations to the Genome Reference Consortium, 2022 and O'Leary et al., 2016.",
+    "evidence": "This is supported by database references and shown in Figure 1A.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "DATA"
     ]
   },
   {
     "claim_id": "C14",
-    "claim": "The human MHC/HLA region contains 412 genes.",
-    "claim_type": "EXPLICIT",
-    "source": "In humans, the MHC is also known as the HLA (Human Leukocyte Antigen) region; it spans about 5 megabases (Mb) on chromosome 6 and contains 412 genes (Figure 1A; Genome Reference Consortium, 2022; O'Leary et al., 2016).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to the Genome Reference Consortium, 2022 and O'Leary et al., 2016.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C15",
-    "claim": "Classical MHC genes are responsible for presenting protein fragments for inspection by T cells.",
-    "claim_type": "EXPLICIT",
-    "source": "The 'classical' MHC genes are responsible for presenting protein fragments for inspection by T cells.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is established knowledge about MHC function.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C16",
-    "claim": "MHC peptide presentation allows T cells to monitor the body for the presence of foreign peptides, which might indicate infection or cancer.",
+    "claim": "MHC peptide presentation allows T cells to monitor the body for the presence of foreign peptides.",
     "claim_type": "EXPLICIT",
     "source": "MHC peptide presentation allows T cells to monitor the body for the presence of foreign peptides, which might indicate infection or cancer; this is crucial for vertebrate immune surveillance (Neefjes et al., 2011).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citation to Neefjes et al., 2011 and represents established knowledge.",
+    "evidence": "This is established knowledge about MHC function supported by citation.",
     "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "MHC peptide presentation is crucial for vertebrate immune surveillance.",
+    "claim_type": "EXPLICIT",
+    "source": "MHC peptide presentation allows T cells to monitor the body for the presence of foreign peptides, which might indicate infection or cancer; this is crucial for vertebrate immune surveillance (Neefjes et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge supported by citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Nucleotide diversity in the human MHC exceeds 70 times the genome-wide average near the classical genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, modern data show that nucleotide diversity in the human MHC (HLA region) exceeds 70 times the genome-wide average near the classical genes, suggesting ancient balancing selection (Figure 1A\u2013C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is calculated from 1000 Genomes data and shown in Figure 1.",
+    "evidence_type": [
+      "DATA"
     ]
   },
   {
     "claim_id": "C17",
-    "claim": "Non-classical MHC genes are essential to the innate immune system, where they perform a variety of niche roles.",
+    "claim": "High nucleotide diversity in the MHC suggests ancient balancing selection.",
     "claim_type": "EXPLICIT",
-    "source": "'Non-classical' MHC genes are essential to the innate immune system, where they perform a variety of niche roles.",
+    "source": "Indeed, modern data show that nucleotide diversity in the human MHC (HLA region) exceeds 70 times the genome-wide average near the classical genes, suggesting ancient balancing selection (Figure 1A\u2013C).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is established knowledge about non-classical MHC function.",
+    "evidence": "This is inferred from the observed high diversity shown in Figure 1.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C18",
-    "claim": "Nucleotide diversity in the human MHC (HLA region) exceeds 70 times the genome-wide average near the classical genes.",
-    "claim_type": "EXPLICIT",
-    "source": "Indeed, modern data show that nucleotide diversity in the human MHC (HLA region) exceeds 70 times the genome-wide average near the classical genes, suggesting ancient balancing selection (Figure 1A\u2013C).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is supported by the nucleotide diversity analysis shown in Figure 1A-C using 1000 Genomes Project data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C19",
-    "claim": "High nucleotide diversity in the MHC region suggests ancient balancing selection.",
-    "claim_type": "EXPLICIT",
-    "source": "Indeed, modern data show that nucleotide diversity in the human MHC (HLA region) exceeds 70 times the genome-wide average near the classical genes, suggesting ancient balancing selection (Figure 1A\u2013C).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is an inference based on the observed high nucleotide diversity and evolutionary theory.",
-    "evidence_type": [
-      "INFERENCE",
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C20",
-    "claim": "The MHC features prominently in genome-wide scans for short-term directional selection.",
-    "claim_type": "EXPLICIT",
-    "source": "Meanwhile, the MHC also features prominently in genome-wide scans for short-term directional selection (Mathieson et al., 2015; Field et al., 2016; Allentoft et al., 2022; Cong et al., 2022; Okada et al., 2018; Yasumizu et al., 2020).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by multiple citations to genome-wide selection scan studies.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C21",
-    "claim": "TSP is rare overall in humans, with human alleles typically coalescing around 2 million years ago across most of the genome.",
-    "claim_type": "EXPLICIT",
-    "source": "TSP is rare overall in humans. Across most of the genome, human alleles coalesce to a common ancestor well within the human lineage, typically around 2 million years (MY) ago (Mallick et al., 2016).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Mallick et al., 2016.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C22",
-    "claim": "Only ~100 loci genome-wide show compelling evidence for sharing of ancestral alleles between humans and chimpanzees.",
+    "claim": "Only approximately 100 loci genome-wide show compelling evidence for sharing of ancestral alleles between humans and chimpanzees.",
     "claim_type": "EXPLICIT",
     "source": "Indeed, only \u223c100 loci genome-wide show compelling evidence for sharing of ancestral alleles between humans and our closest relatives, chimpanzees (Leffler et al., 2013).",
     "source_type": [
@@ -294,7 +248,7 @@
     ]
   },
   {
-    "claim_id": "C23",
+    "claim_id": "C19",
     "claim": "Besides the MHC, the only other clear example of deep TSP in primates is at the ABO locus.",
     "claim_type": "EXPLICIT",
     "source": "TSP among humans and more distantly related species is even rarer; besides the MHC, the only other clear example of deep TSP is at the ABO locus (which influences blood type; Azevedo et al., 2015).",
@@ -307,8 +261,8 @@
     ]
   },
   {
-    "claim_id": "C24",
-    "claim": "At the ABO locus, both the A and B alleles are shared by descent throughout the apes, dating back to at least 23 million years ago.",
+    "claim_id": "C20",
+    "claim": "At the ABO locus, both the A and B alleles are shared by descent throughout the apes.",
     "claim_type": "EXPLICIT",
     "source": "At this locus, both the A and B alleles are shared by descent throughout the apes, implying that the A and B lineages date back to at least the divergence point of humans and gibbons 23 MY ago (S\u00e9gurel et al., 2012; Kuderna et al., 2023).",
     "source_type": [
@@ -320,598 +274,633 @@
     ]
   },
   {
-    "claim_id": "C25",
-    "claim": "Deep coalescence at the ABO locus is extraordinarily unlikely under a neutral model and points to some form of balancing selection.",
+    "claim_id": "C21",
+    "claim": "The A and B lineages at the ABO locus date back to at least 23 million years ago.",
     "claim_type": "EXPLICIT",
-    "source": "Such deep coalescence is extraordinarily unlikely under a neutral model, and instead points to some form of balancing selection.",
+    "source": "At this locus, both the A and B alleles are shared by descent throughout the apes, implying that the A and B lineages date back to at least the divergence point of humans and gibbons 23 MY ago (S\u00e9gurel et al., 2012; Kuderna et al., 2023).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on population genetics theory.",
+    "evidence": "This is inferred from the phylogenetic distribution and supported by citations.",
     "evidence_type": [
-      "INFERENCE",
-      "KNOWLEDGE"
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "MHC-C shows strong support for TSP within the African apes: human, chimpanzee, and gorilla.",
+    "claim_type": "EXPLICIT",
+    "source": "At the Class I genes (Figure 3), MHC-C shows strong support for TSP within the African apes: human, chimpanzee, and gorilla.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by Bayes factors shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "MHC-C has maintained some allelic lineages for most of its history.",
+    "claim_type": "EXPLICIT",
+    "source": "Having arisen fairly recently in the ancestor of human and orangutan, MHC-C has thus maintained some allelic lineages for most of its history.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the TSP analysis and the known age of the gene.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "TSP has not previously been reported for MHC-C.",
+    "claim_type": "EXPLICIT",
+    "source": "TSP has not previously been reported for this gene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a novel finding of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "MHC-A has had a long history of gene conversion affecting different exons.",
+    "claim_type": "EXPLICIT",
+    "source": "Past work suggests that this gene has had a long history of gene conversion affecting different exons, resulting in different evolutionary histories for different parts of the gene (Hans et al., 2017; Gleimer et al., 2011; Adams and Parham, 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
     ]
   },
   {
     "claim_id": "C26",
-    "claim": "TSP at the MHC locus was first proposed in the 1980s based on unusual sequence similarity between mice and rats.",
+    "claim": "The lack of concordance in Bayes factors across different exons for MHC-A is evidence for gene conversion rather than balancing selection.",
     "claim_type": "EXPLICIT",
-    "source": "TSP at this locus was first proposed in the 1980s on the basis of unusual sequence similarity between mice and rats (Klein, 1980; Arden and Klein, 1982; Klein, 1987; Figueroa et al., 1988; McConnell et al., 1988; Wakeland et al., 1987), and between humans and chimpanzees (Lawlor et al., 1988; Mayer et al., 1988).",
+    "source": "As shown in Figure 3, the lack of concordance in Bayes factors across the different exons for MHC-A is evidence for gene conversion, rather than balancing selection, being the most important factor in this gene's evolution.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is supported by multiple citations to historical studies from the 1980s.",
+    "evidence": "This is inferred from the Bayes factor analysis shown in Figure 3.",
     "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C27",
-    "claim": "TSP at the MHC locus was first proposed in the 1980s based on unusual sequence similarity between humans and chimpanzees.",
-    "claim_type": "EXPLICIT",
-    "source": "TSP at this locus was first proposed in the 1980s on the basis of unusual sequence similarity between mice and rats (Klein, 1980; Arden and Klein, 1982; Klein, 1987; Figueroa et al., 1988; McConnell et al., 1988; Wakeland et al., 1987), and between humans and chimpanzees (Lawlor et al., 1988; Mayer et al., 1988).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Lawlor et al., 1988 and Mayer et al., 1988.",
-    "evidence_type": [
-      "CITATION"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C28",
-    "claim": "Later work has reported likely TSP between humans and apes at MHC genes.",
+    "claim": "The Bayes factors for MHC-E, -F, and -G show strong evidence against TSP.",
     "claim_type": "EXPLICIT",
-    "source": "Later work has reported likely TSP between humans and apes (Slierendregt et al., 1995; Boyson et al., 1996; McKenzie et al., 1999; Wroblewski et al., 2017) and humans and old world monkeys (Mayer et al., 1992; Br\u00e4ndle et al., 1992; Kupfermann et al., 1992; Slierendregt et al., 1992; Geluk et al., 1993; Satta et al., 1996; Otting et al., 2000; Kriener et al., 2000; Gyllensten et al., 1990; Kriener et al., 2001; Otting et al., 1992; Otting and Bontrop, 1995; Otting et al., 1992; Otting et al., 2002); deep TSP is also consistent with the high levels of genetic diversity within the MHC.",
+    "source": "The Bayes factors for all three of these genes show strong evidence against TSP, as expected.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by multiple citations to previous studies.",
+    "evidence": "This is supported by the Bayes factor analysis shown in Figure 3.",
     "evidence_type": [
-      "CITATION"
+      "DATA"
     ]
   },
   {
     "claim_id": "C29",
-    "claim": "Later work has reported likely TSP between humans and old world monkeys at MHC genes.",
+    "claim": "MHC-E has a known balanced polymorphism in humans with two main alleles at similar frequencies worldwide.",
     "claim_type": "EXPLICIT",
-    "source": "Later work has reported likely TSP between humans and apes (Slierendregt et al., 1995; Boyson et al., 1996; McKenzie et al., 1999; Wroblewski et al., 2017) and humans and old world monkeys (Mayer et al., 1992; Br\u00e4ndle et al., 1992; Kupfermann et al., 1992; Slierendregt et al., 1992; Geluk et al., 1993; Satta et al., 1996; Otting et al., 2000; Kriener et al., 2000; Gyllensten et al., 1990; Kriener et al., 2001; Otting et al., 1992; Otting and Bontrop, 1995; Otting et al., 1992; Otting et al., 2002); deep TSP is also consistent with the high levels of genetic diversity within the MHC.",
+    "source": "Interestingly, despite its non-classical role, MHC-E has a known balanced polymorphism in humans; the two main alleles are at similar frequencies worldwide but may have different expression levels and peptide preferences (Paganini et al., 2019; Grant et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by multiple citations to previous studies.",
+    "evidence": "This is supported by citations to Paganini et al., 2019 and Grant et al., 2020.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
     "claim_id": "C30",
-    "claim": "Ancient TSP at the MHC would make it unique compared to any other locus in the genome.",
+    "claim": "The balanced polymorphism in MHC-E is young.",
     "claim_type": "EXPLICIT",
-    "source": "Such ancient TSP would make the MHC unique compared to any other locus in the genome.",
+    "source": "Our approach\u2014meant to detect ancient TSP\u2014does not reveal balancing selection in MHC-E, showing that this balanced polymorphism is young.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the rarity of TSP elsewhere in the genome.",
+    "evidence": "This is inferred from the lack of TSP signal in the analysis.",
     "evidence_type": [
+      "DATA",
       "INFERENCE"
     ]
   },
   {
     "claim_id": "C31",
-    "claim": "Most previous work on MHC TSP has not fully accounted for the inherent uncertainty in phylogenetic inference.",
+    "claim": "MHC-DPA1 shows TSP between human, chimpanzee, and gorilla in exon 2, but not in exon 3.",
     "claim_type": "EXPLICIT",
-    "source": "However, most previous work has not fully accounted for the inherent uncertainty in phylogenetic inference, especially given the potential for convergent evolution at functional sites.",
+    "source": "MHC-DPA1 shows TSP between human, chimpanzee, and gorilla in exon 2, but not in exon 3.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a critical assessment of previous literature and justification for the current study's methodology.",
+    "evidence": "This is supported by Bayes factors shown in Figure 4.",
     "evidence_type": [
-      "INFERENCE"
+      "DATA"
     ]
   },
   {
     "claim_id": "C32",
-    "claim": "The exact age of TSP at each MHC gene is still uncertain.",
+    "claim": "TSP in MHC-DPA1 is less deep than has been previously suggested with non-Bayesian methods.",
     "claim_type": "EXPLICIT",
-    "source": "Although there is clear evidence for TSP, its exact age at each gene is still uncertain.",
+    "source": "We find that this TSP in MHC-DPA1 is less deep than has been previously suggested with non-Bayesian methods (Otting and Bontrop, 1995), underscoring the importance of this methodology for handling the MHC.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement acknowledges the limitations of previous work and motivates the current study.",
+    "evidence": "This is inferred from comparison with previous work cited (Otting and Bontrop, 1995).",
     "evidence_type": [
+      "DATA",
+      "CITATION",
       "INFERENCE"
     ]
   },
   {
     "claim_id": "C33",
-    "claim": "The study used Bayesian phylogenetic methods to determine the extent of TSP at 17 MHC genes.",
+    "claim": "MHC-DPB1 shows strong evidence for TSP between human and orangutan in exon 3.",
     "claim_type": "EXPLICIT",
-    "source": "We used Bayesian phylogenetic methods to determine the extent of TSP at 17 MHC genes, including classical and non-classical Class I and Class II genes.",
+    "source": "Meanwhile, its partner MHC-DPB1 shows strong evidence for TSP between human and orangutan in exon 3 and suggestive evidence in exon 2; our work provides the first evidence of TSP between humans and other apes for this gene (Slierendregt et al., 1995).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the methodology used in the study.",
+    "evidence": "This is supported by Bayes factors shown in Figure 4.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C34",
-    "claim": "The study examined 17 MHC genes, including classical and non-classical Class I and Class II genes.",
+    "claim": "This work provides the first evidence of TSP between humans and other apes for MHC-DPB1.",
     "claim_type": "EXPLICIT",
-    "source": "We used Bayesian phylogenetic methods to determine the extent of TSP at 17 MHC genes, including classical and non-classical Class I and Class II genes.",
+    "source": "Meanwhile, its partner MHC-DPB1 shows strong evidence for TSP between human and orangutan in exon 3 and suggestive evidence in exon 2; our work provides the first evidence of TSP between humans and other apes for this gene (Slierendregt et al., 1995).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the scope of the study.",
+    "evidence": "This is stated as a novel finding with reference to previous work.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "CITATION"
     ]
   },
   {
     "claim_id": "C35",
-    "claim": "There is strong support for TSP among the African apes for genes MHC-C, -DPA1, and -DRB3.",
+    "claim": "The MHC-DRA gene is conserved across species with little polymorphism.",
     "claim_type": "EXPLICIT",
-    "source": "We find support for TSP among the African apes for genes MHC-C, -DPA1, and -DRB3, among the great apes for MHC-DPB1, and among all apes for MHC-B.",
+    "source": "The MHC-DRA gene is conserved across species with little polymorphism, while the MHC-DRB region is highly variable both in gene content and allelic diversity.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the Bayes factor analysis in Figures 3 and 4.",
+    "evidence": "This is established knowledge about MHC-DR genes.",
     "evidence_type": [
-      "DATA"
+      "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C36",
-    "claim": "There is strong support for TSP among the great apes for MHC-DPB1.",
+    "claim": "The MHC-DRB region is highly variable both in gene content and allelic diversity.",
     "claim_type": "EXPLICIT",
-    "source": "We find support for TSP among the African apes for genes MHC-C, -DPA1, and -DRB3, among the great apes for MHC-DPB1, and among all apes for MHC-B.",
+    "source": "The MHC-DRA gene is conserved across species with little polymorphism, while the MHC-DRB region is highly variable both in gene content and allelic diversity.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the Bayes factor analysis in Figure 4.",
+    "evidence": "This is established knowledge about MHC-DR genes.",
     "evidence_type": [
-      "DATA"
+      "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C37",
-    "claim": "There is strong support for TSP among all apes for MHC-B.",
+    "claim": "Bayes factors for the MHC-DRA gene reveal strong evidence against TSP for all species pairs.",
     "claim_type": "EXPLICIT",
-    "source": "We find support for TSP among the African apes for genes MHC-C, -DPA1, and -DRB3, among the great apes for MHC-DPB1, and among all apes for MHC-B.",
+    "source": "Consistent with this, Bayes factors for the MHC-DRA gene reveal strong evidence against TSP for all species pairs, while MHC-DRB1 shows strong evidence in favor of TSP between human, chimpanzee, gorilla, OWM, and even NWM in exon 2.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the Bayes factor analysis in Figure 3.",
+    "evidence": "This is supported by Bayes factors shown in Figure 4.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C38",
-    "claim": "There is conclusive evidence for TSP at least back to the ancestor of humans and OWM in MHC-DQB1, implying allelic lineages have been maintained by balancing selection for at least 31 million years.",
+    "claim": "MHC-DRB1 shows strong evidence in favor of TSP between human, chimpanzee, gorilla, OWM, and NWM in exon 2.",
     "claim_type": "EXPLICIT",
-    "source": "We also find conclusive evidence for TSP at least back to the ancestor of humans and OWM in MHC-DQB1, implying\u2014remarkably\u2014that allelic lineages have been maintained by balancing selection for at least 31 MY.",
+    "source": "Consistent with this, Bayes factors for the MHC-DRA gene reveal strong evidence against TSP for all species pairs, while MHC-DRB1 shows strong evidence in favor of TSP between human, chimpanzee, gorilla, OWM, and even NWM in exon 2.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the phylogenetic tree in Figure 2B and Bayes factor analysis in Figure 4.",
+    "evidence": "This is supported by Bayes factors shown in Figure 4.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C39",
-    "claim": "Rapidly-evolving sites are mainly located in the critical peptide-binding regions of the classical genes.",
+    "claim": "Only three MHC-DRB genes are truly orthologous between apes and OWM.",
     "claim_type": "EXPLICIT",
-    "source": "Rapidly-evolving sites are mainly located in the critical peptide-binding regions of the classical genes, but are spread throughout the coding region of the non-classical genes.",
+    "source": "We show in our companion paper that individual MHC-DRB genes are short-lived, and only three are truly orthologous between apes and OWM (Fortier and Pritchard, 2025).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the substitution rate analysis in Figures 5 and 6.",
+    "evidence": "This is supported by analysis in the companion paper.",
     "evidence_type": [
+      "CITATION",
       "DATA"
     ]
   },
   {
     "claim_id": "C40",
-    "claim": "Rapidly-evolving sites are spread throughout the coding region of the non-classical genes.",
+    "claim": "The MHC-DQB1 gene shows definitive evidence for TSP back to at least the ancestor of humans and OWM.",
     "claim_type": "EXPLICIT",
-    "source": "Rapidly-evolving sites are mainly located in the critical peptide-binding regions of the classical genes, but are spread throughout the coding region of the non-classical genes.",
+    "source": "Remarkably, the MHC-DQB1 gene shows definitive evidence for TSP back to at least the ancestor of humans and OWM.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the substitution rate analysis in Figures 5 and 6.",
+    "evidence": "This is supported by Bayes factors shown in Figure 4 and phylogenetic trees in Figure 2B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C41",
-    "claim": "The most rapidly-evolving sites are frequently associated with immune phenotypes and diseases in the literature.",
+    "claim": "Allelic lineages at MHC-DQB1 have been maintained for over 31 million years.",
     "claim_type": "EXPLICIT",
-    "source": "Moreover, the most rapidly-evolving sites are also frequently associated with immune phenotypes and diseases in the literature, connecting our evolutionary findings with their functional consequences.",
+    "source": "While this result has been presented previously, we confirm it with decisive evidence (Bayes factor >100) for allelic lineages being maintained for over 31 MY (Otting et al., 1992; Otting et al., 2002; Loisel et al., 2006; Simons et al., 2017).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the disease association analysis in Table 1 and Figure 6\u2014figure supplement 7.",
+    "evidence": "This is supported by Bayes factors and confirmed with citations to previous work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "There is very strong evidence for TSP between all groups of OWM for MHC-DPA1, -DPB1, -DQA1, and -DQB1.",
+    "claim_type": "EXPLICIT",
+    "source": "We see very strong evidence for TSP between all groups of OWM for MHC-DPA1, -DPB1, -DQA1, and -DQB1, indicating that allelic lineages at these genes have been maintained within the OWM for at least 19 MY.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by Bayes factors shown in supplementary figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C42",
-    "claim": "MHC-C is a classical Class I gene that duplicated from MHC-B in the ancestor of the great apes.",
-    "claim_type": "EXPLICIT",
-    "source": "MHC-C is a classical Class I gene that duplicated from MHC-B in the ancestor of the great apes (Piontkivska, 2003; Fukami-Kobayashi et al., 2005; Abi-Rached et al., 2010; Adams and Parham, 2001; Lugo and Cadavid, 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by multiple citations to previous studies.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
     "claim_id": "C43",
-    "claim": "MHC-C protein product participates in classical antigen presentation.",
+    "claim": "Allelic lineages at MHC-DPA1, -DPB1, -DQA1, and -DQB1 have been maintained within the OWM for at least 19 million years.",
     "claim_type": "EXPLICIT",
-    "source": "Its protein product participates in classical antigen presentation and also serves as the dominant Class I molecule for interacting with killer cell immunoglobulin-like receptors (KIRs) in innate immunity (Adams and Parham, 2001; Guethlein et al., 2015; Vollmers et al., 2021).",
+    "source": "We see very strong evidence for TSP between all groups of OWM for MHC-DPA1, -DPB1, -DQA1, and -DQB1, indicating that allelic lineages at these genes have been maintained within the OWM for at least 19 MY.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations to Adams and Parham, 2001; Guethlein et al., 2015; Vollmers et al., 2021.",
+    "evidence": "This is inferred from the TSP analysis and known divergence times.",
     "evidence_type": [
-      "CITATION"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C44",
-    "claim": "MHC-C serves as the dominant Class I molecule for interacting with killer cell immunoglobulin-like receptors (KIRs) in innate immunity.",
+    "claim": "MHC-E shows evidence for 15-million-year-old TSP within the OWM.",
     "claim_type": "EXPLICIT",
-    "source": "Its protein product participates in classical antigen presentation and also serves as the dominant Class I molecule for interacting with killer cell immunoglobulin-like receptors (KIRs) in innate immunity (Adams and Parham, 2001; Guethlein et al., 2015; Vollmers et al., 2021).",
+    "source": "MHC-E, a gene that is non-classical in humans and is presumed non-classical in OWM (yet is duplicated in some species), shows evidence for 15-MY-old TSP within the OWM.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations to Adams and Parham, 2001; Guethlein et al., 2015; Vollmers et al., 2021.",
+    "evidence": "This is supported by Bayes factors shown in supplementary figures.",
     "evidence_type": [
-      "CITATION"
+      "DATA"
     ]
   },
   {
     "claim_id": "C45",
-    "claim": "MHC-DQB is a classical Class II gene which pairs with MHC-DQA.",
+    "claim": "In non-classical MHC-DMB, TSP within the OWM is as old as 11 million years.",
     "claim_type": "EXPLICIT",
-    "source": "MHC-DQB is a classical Class II gene which pairs with MHC-DQA.",
+    "source": "In non-classical MHC-DMB, we also observe TSP within the OWM as old as 11 MY.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is established knowledge about MHC-DQ structure.",
+    "evidence": "This is supported by Bayes factors shown in supplementary figures.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "DATA"
     ]
   },
   {
     "claim_id": "C46",
-    "claim": "Apes have two MHC-DQ copies, MHC-DQA1/MHC-DQB1 and MHC-DQA2/MHC-DQB2.",
+    "claim": "TSP is more ancient among the Class II genes than the Class I genes.",
     "claim_type": "EXPLICIT",
-    "source": "Apes have two MHC-DQ copies, MHC-DQA1/MHC-DQB1 and MHC-DQA2/MHC-DQB2, while the second copy was deleted in OWM.",
+    "source": "Overall, TSP is more ancient among the Class II genes than the Class I genes, consistent with the genes' older age.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the phylogenetic analysis in the companion paper (Fortier and Pritchard, 2025).",
+    "evidence": "This is inferred from the Bayes factor results across gene classes.",
     "evidence_type": [
-      "CITATION"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C47",
-    "claim": "The second MHC-DQ copy was deleted in old-world monkeys.",
-    "claim_type": "EXPLICIT",
-    "source": "Apes have two MHC-DQ copies, MHC-DQA1/MHC-DQB1 and MHC-DQA2/MHC-DQB2, while the second copy was deleted in OWM.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by the phylogenetic analysis in the companion paper (Fortier and Pritchard, 2025).",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C48",
-    "claim": "New-world monkeys can have two or three sets of MHC-DQ genes, depending on species.",
-    "claim_type": "EXPLICIT",
-    "source": "NWM can have two or three sets of MHC-DQ genes, depending on species, but it has been unclear whether any of them are 1:1 orthologous with the ape or OWM genes.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is based on the phylogenetic analysis in the companion paper (Fortier and Pritchard, 2025).",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C49",
-    "claim": "MHC-DOA is a non-classical Class II gene whose protein product modulates MHC-DM activity.",
-    "claim_type": "EXPLICIT",
-    "source": "Lastly, MHC-DOA is a non-classical Class II gene whose protein product modulates MHC-DM activity, indirectly affecting Class II peptide presentation (Heijmans et al., 2020; Neefjes et al., 2011).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Heijmans et al., 2020 and Neefjes et al., 2011.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C50",
-    "claim": "MHC-DOA indirectly affects Class II peptide presentation.",
-    "claim_type": "EXPLICIT",
-    "source": "Lastly, MHC-DOA is a non-classical Class II gene whose protein product modulates MHC-DM activity, indirectly affecting Class II peptide presentation (Heijmans et al., 2020; Neefjes et al., 2011).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Heijmans et al., 2020 and Neefjes et al., 2011.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C51",
-    "claim": "At classical genes MHC-B and MHC-C, nearly all the rapidly-evolving sites lie within exons 2 and 3, which encode the protein's peptide-binding domain.",
+    "claim": "In classical genes MHC-B and -C, nearly all the rapidly-evolving sites lie within exons 2 and 3.",
     "claim_type": "EXPLICIT",
     "source": "In classical genes MHC-B and -C, nearly all the rapidly-evolving sites lie within exons 2 and 3, which encode the protein's peptide-binding domain.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by the substitution rate analysis shown in Figure 5A.",
+    "evidence": "This is shown in Figure 5A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C48",
+    "claim": "Exons 2 and 3 encode the peptide-binding domain in Class I MHC proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "In classical genes MHC-B and -C, nearly all the rapidly-evolving sites lie within exons 2 and 3, which encode the protein's peptide-binding domain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about MHC protein structure.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
     "claim": "In MHC-B, exons 2 and 3 contain 94% of the sites evolving at more than four times the baseline evolutionary rate.",
     "claim_type": "EXPLICIT",
     "source": "While exons 2 and 3 make up only \u223c50% of the gene's length, they contain 94% and 90% of the sites evolving at more than four times the baseline evolutionary rate for the classical genes MHC-B and MHC-C, respectively.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
+    "evidence": "This is calculated from the BEAST2 evolutionary rate analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C53",
+    "claim_id": "C50",
     "claim": "In MHC-C, exons 2 and 3 contain 90% of the sites evolving at more than four times the baseline evolutionary rate.",
     "claim_type": "EXPLICIT",
     "source": "While exons 2 and 3 make up only \u223c50% of the gene's length, they contain 94% and 90% of the sites evolving at more than four times the baseline evolutionary rate for the classical genes MHC-B and MHC-C, respectively.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
+    "evidence": "This is calculated from the BEAST2 evolutionary rate analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C54",
-    "claim": "Non-classical MHC-E primarily presents self-peptides for recognition by NK cell receptors.",
+    "claim_id": "C51",
+    "claim": "In MHC-B, exons 2 and 3 each show significantly higher proportions of rapidly-evolving sites compared to the 'other' exons.",
     "claim_type": "EXPLICIT",
-    "source": "In contrast to these classical genes, non-classical MHC-E primarily presents self-peptides for recognition by NK cell receptors, and its peptide-binding groove is tailored to accommodate a very specific set of self-peptides\u2014leader peptides cleaved from other Class I MHC proteins during processing (Miller et al., 2003).",
+    "source": "In MHC-B, exons 2 and 3 each show significantly higher proportions of rapidly-evolving sites compared to the 'other' exons (exons in the gene excluding 2, 3, or 4), while the difference is not significant for MHC-C (Figure 5\u2014figure supplement 2).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is supported by citation to Miller et al., 2003.",
+    "evidence": "This is shown by statistical testing in Figure 5\u2014figure supplement 2.",
     "evidence_type": [
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "MHC-E's peptide-binding groove is tailored to accommodate leader peptides cleaved from other Class I MHC proteins during processing.",
-    "claim_type": "EXPLICIT",
-    "source": "In contrast to these classical genes, non-classical MHC-E primarily presents self-peptides for recognition by NK cell receptors, and its peptide-binding groove is tailored to accommodate a very specific set of self-peptides\u2014leader peptides cleaved from other Class I MHC proteins during processing (Miller et al., 2003).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Miller et al., 2003.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C56",
-    "claim": "MHC-E has fewer rapidly-evolving sites than the classical genes.",
+    "claim_id": "C52",
+    "claim": "Non-classical MHC-E has fewer rapidly-evolving sites than the classical genes.",
     "claim_type": "EXPLICIT",
     "source": "As shown in Figure 5A, this gene has fewer rapidly-evolving sites than the classical genes.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by the substitution rate analysis shown in Figure 5A.",
+    "evidence": "This is shown in Figure 5A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C57",
+    "claim_id": "C53",
     "claim": "In MHC-E, rapidly-evolving sites are relatively evenly distributed across the gene.",
     "claim_type": "EXPLICIT",
     "source": "These sites are also relatively evenly distributed across the gene, with exons 2 and 3 (which cover \u223c50% of the gene's length) containing 45% of the sites evolving at over four times the baseline evolutionary rate.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
+    "evidence": "This is calculated from the BEAST2 evolutionary rate analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C58",
-    "claim": "For all three Class I proteins (MHC-B, -C, and -E), amino acids closer to the peptide have significantly higher evolutionary rates than amino acids further from the peptide.",
+    "claim_id": "C54",
+    "claim": "MHC-E has been remarkably conserved across the primates.",
+    "claim_type": "EXPLICIT",
+    "source": "These results support that MHC-E has been remarkably conserved across the primates and that its evolution may not be driven by differential peptide binding (Heijmans et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the evolutionary rate analysis and supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "In MHC-B and -C, rapidly-evolving amino acids tend to be located within the peptide-binding groove.",
+    "claim_type": "EXPLICIT",
+    "source": "In MHC-B and -C, rapidly-evolving amino acids (orange) tend to be located within the peptide-binding groove.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "For MHC-B, -C, and -E, amino acids closer to the peptide have significantly higher evolutionary rates than amino acids further from the peptide.",
     "claim_type": "EXPLICIT",
     "source": "For all three proteins, amino acids closer to the peptide have significantly higher evolutionary rates than amino acids further from the peptide, as shown in Figure 5C (see also Figure 5\u2014figure supplements 4 and 5).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by the distance-to-peptide analysis shown in Figure 5C.",
+    "evidence": "This is shown by regression analysis in Figure 5C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C59",
-    "claim": "The effect of distance to peptide on evolutionary rate is much less pronounced in non-classical MHC-E compared to classical genes.",
-    "claim_type": "EXPLICIT",
-    "source": "The effect is much less pronounced in non-classical MHC-E, where even the amino acids closest to the peptide do not exhibit high evolutionary rates.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by the distance-to-peptide analysis shown in Figure 5C.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C60",
+    "claim_id": "C57",
     "claim": "Rapid evolution and diversity at the classical MHC genes is mediated by selective pressures for changes in peptide binding.",
     "claim_type": "EXPLICIT",
     "source": "These results are consistent with the expectation that rapid evolution and diversity at the classical MHC genes would be mediated by selective pressures for changes in peptide binding.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the observed correlation between evolutionary rate and proximity to the peptide-binding site.",
+    "evidence": "This is inferred from the correlation between evolutionary rate and distance to peptide.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C61",
-    "claim": "Exon 2 makes up ~30% of the coding region in Class II genes.",
+    "claim_id": "C58",
+    "claim": "Exon 2 makes up approximately 30% of the coding region in Class II MHC genes.",
     "claim_type": "EXPLICIT",
     "source": "Exon 2, which makes up \u223c30% of the coding region, contains 32% of sites evolving at more than twice the baseline rate in MHC-DRA, but 57% of such sites in MHC-DQA, 61% in MHC-DQB, and 73% in MHC-DRB.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
+    "evidence": "This is calculated from the gene structure and evolutionary rate analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C62",
-    "claim": "In MHC-DRA, exon 2 contains 32% of sites evolving at more than twice the baseline rate.",
-    "claim_type": "EXPLICIT",
-    "source": "Exon 2, which makes up \u223c30% of the coding region, contains 32% of sites evolving at more than twice the baseline rate in MHC-DRA, but 57% of such sites in MHC-DQA, 61% in MHC-DQB, and 73% in MHC-DRB.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C63",
-    "claim": "In MHC-DQA, exon 2 contains 57% of sites evolving at more than twice the baseline rate.",
-    "claim_type": "EXPLICIT",
-    "source": "Exon 2, which makes up \u223c30% of the coding region, contains 32% of sites evolving at more than twice the baseline rate in MHC-DRA, but 57% of such sites in MHC-DQA, 61% in MHC-DQB, and 73% in MHC-DRB.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C64",
-    "claim": "In MHC-DQB, exon 2 contains 61% of sites evolving at more than twice the baseline rate.",
-    "claim_type": "EXPLICIT",
-    "source": "Exon 2, which makes up \u223c30% of the coding region, contains 32% of sites evolving at more than twice the baseline rate in MHC-DRA, but 57% of such sites in MHC-DQA, 61% in MHC-DQB, and 73% in MHC-DRB.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C65",
+    "claim_id": "C59",
     "claim": "In MHC-DRB, exon 2 contains 73% of sites evolving at more than twice the baseline rate.",
     "claim_type": "EXPLICIT",
     "source": "Exon 2, which makes up \u223c30% of the coding region, contains 32% of sites evolving at more than twice the baseline rate in MHC-DRA, but 57% of such sites in MHC-DQA, 61% in MHC-DQB, and 73% in MHC-DRB.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
+    "evidence": "This is calculated from the BEAST2 evolutionary rate analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C66",
-    "claim": "MHC-DM is responsible for assisting with peptide loading onto the classical genes.",
+    "claim_id": "C60",
+    "claim": "Exon 2 contains a significantly higher proportion of rapidly-evolving sites compared to the 'other' exons in classical MHC-DQA, -DQB, -DRB, and -DPB.",
     "claim_type": "EXPLICIT",
-    "source": "Instead, it is responsible for assisting with peptide loading onto the classical genes.",
+    "source": "Comparing across exons, exon 2 contains a significantly higher proportion of rapidly-evolving sites compared to the \"other\" exons in classical MHC-DQA, -DQB, -DRB, and -DPB, but also\u2014curiously\u2014in non-classical MHC-DMA and -DMB (Figure 6\u2014figure supplements 2 and 4).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is established knowledge about MHC-DM function.",
+    "evidence": "This is shown by statistical testing in Figure 6\u2014figure supplements 2 and 4.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C67",
-    "claim": "The interaction between the MHC-DM and -DR molecules depends on the affinity of the peptide trying to bind with MHC-DR.",
+    "claim_id": "C61",
+    "claim": "Non-classical MHC-DMA and -DMB show significantly higher proportions of rapidly-evolving sites in exon 2.",
     "claim_type": "EXPLICIT",
-    "source": "Co-evolution with MHC-DR in particular seems possible; the interaction between the MHC-DM and -DR molecules depends on the affinity of the peptide trying to bind with MHC-DR.",
+    "source": "Comparing across exons, exon 2 contains a significantly higher proportion of rapidly-evolving sites compared to the \"other\" exons in classical MHC-DQA, -DQB, -DRB, and -DPB, but also\u2014curiously\u2014in non-classical MHC-DMA and -DMB (Figure 6\u2014figure supplements 2 and 4).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is supported by citations to Dijkstra and Yamaguchi, 2019 and Schulze and Wucherpfennig, 2012.",
+    "evidence": "This is shown by statistical testing in Figure 6\u2014figure supplements 2 and 4.",
     "evidence_type": [
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C68",
+    "claim_id": "C62",
     "claim": "MHC-DM shapes the repertoire of peptides presented by MHC-DR, favoring high-affinity peptides.",
     "claim_type": "EXPLICIT",
     "source": "MHC-DM thus shapes the repertoire of peptides presented by MHC-DR, favoring high-affinity peptides (Dijkstra and Yamaguchi, 2019; Schulze and Wucherpfennig, 2012).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations to Dijkstra and Yamaguchi, 2019 and Schulze and Wucherpfennig, 2012.",
+    "evidence": "This is established knowledge supported by citations.",
     "evidence_type": [
+      "KNOWLEDGE",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C69",
-    "claim": "Host-pathogen evolution shaping the MHC-DRB genes may have resulted in co-evolution of MHC-DMA and -DMB to maintain the regulatory interaction with MHC-DR.",
+    "claim_id": "C63",
+    "claim": "Host-pathogen evolution shaping the MHC-DRB genes may have resulted in co-evolution of MHC-DMA and -DMB.",
     "claim_type": "EXPLICIT",
     "source": "It is plausible that the host-pathogen evolution shaping the MHC-DRB genes has resulted in co-evolution of MHC-DMA and -DMB to maintain this regulatory interaction.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is speculation based on the observed rapid evolution in MHC-DM binding-site-encoding exons.",
+    "evidence": "This is speculated based on the observed rapid evolution in MHC-DMA and -DMB.",
     "evidence_type": [
       "SPECULATION",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C70",
+    "claim_id": "C64",
+    "claim": "For MHC-DQA, -DQB, and -DRB, amino acids closer to the peptide had significantly higher evolutionary rates.",
+    "claim_type": "EXPLICIT",
+    "source": "For the other three proteins, amino acids closer to the peptide had significantly higher evolutionary rates.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by regression analysis in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "MHC-DRA did not show a significant relationship between evolutionary rate and distance to peptide.",
+    "claim_type": "EXPLICIT",
+    "source": "MHC-DRA did not show a significant relationship between evolutionary rate and distance, as expected by its relatively uniform distribution of evolutionary rates across the sequence (Figure 6A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown by regression analysis in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Differential peptide binding and TCR responsiveness drive the diversity and long-term balancing selection at the classical genes.",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with differential peptide binding and TCR responsiveness driving the diversity and long-term balancing selection at the classical genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the correlation between evolutionary rate and distance to peptide.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The majority of rapidly-evolving positions in MHC-B have at least one disease or trait association.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of rapidly-evolving positions in MHC-B have at least one association.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
     "claim": "All three classical Class I genes (MHC-A, -B, and -C) show a significant positive relationship between per-amino-acid evolutionary rate and the number of amino acid associations.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, all three classical Class I genes (MHC-A, -B, and -C) show a significant positive relationship between per-amino-acid evolutionary rate and the number of amino acid associations (Figure 6\u2014figure supplement 7).",
@@ -919,56 +908,42 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is supported by the analysis shown in Figure 6\u2014figure supplement 7.",
+    "evidence": "This is shown by regression analysis in Figure 6\u2014figure supplement 7.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C71",
+    "claim_id": "C69",
     "claim": "The relationship between evolutionary rate and number of associations is not significant for the Class II genes.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, this relationship is not significant for the Class II genes, possibly because they evolve more slowly overall.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the analysis shown in Figure 6\u2014figure supplement 7.",
+    "evidence": "This is shown in Figure 6\u2014figure supplement 7 and inferred from the analysis.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C72",
-    "claim": "Evidence for TSP at MHC-DQB1 spanning at least 31 million years places it among the most ancient examples of balancing selection known in any species.",
+    "claim_id": "C70",
+    "claim": "MHC-DQB1 exhibits trans-species polymorphism spanning at least 31 million years, placing it among the most ancient examples of balancing selection known in any species.",
     "claim_type": "EXPLICIT",
     "source": "Our evidence for TSP at MHC-DQB1 spanning at least 31 MY places it among the most ancient examples of balancing selection known in any species, and almost certainly the oldest in primates.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on comparison with other known examples of ancient balancing selection.",
+    "evidence": "This is inferred from the TSP analysis and comparison with other known examples.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C73",
-    "claim": "TSP at MHC-DQB1 is almost certainly the oldest example of balancing selection in primates.",
-    "claim_type": "EXPLICIT",
-    "source": "Our evidence for TSP at MHC-DQB1 spanning at least 31 MY places it among the most ancient examples of balancing selection known in any species, and almost certainly the oldest in primates.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference based on comparison with other known examples of ancient balancing selection in primates.",
-    "evidence_type": [
-      "INFERENCE",
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "The deepest example of balancing selection within primates aside from MHC is at the ABO locus, with an age of 23 million years.",
+    "claim_id": "C71",
+    "claim": "The deepest example of TSP within primates aside from MHC is at the ABO locus with an age of 23 million years.",
     "claim_type": "EXPLICIT",
     "source": "Aside from MHC, the deepest example within primates is at the ABO locus controlling blood type; it exhibits trans-species polymorphism between humans and gibbons, an age of 23 MY (S\u00e9gurel et al., 2012).",
     "source_type": [
@@ -980,7 +955,7 @@
     ]
   },
   {
-    "claim_id": "C75",
+    "claim_id": "C72",
     "claim": "In various chimpanzee species, OAS1 contains alleles up to 13 million years old.",
     "claim_type": "EXPLICIT",
     "source": "In various chimpanzee species, OAS1, which helps inhibit viral replication, contains alleles up to 13 MY old (Ferguson et al., 2012).",
@@ -993,7 +968,7 @@
     ]
   },
   {
-    "claim_id": "C76",
+    "claim_id": "C73",
     "claim": "TSP between chimpanzee and human includes LAD1, a protein that maintains cell cohesion, with an age of 6 million years.",
     "claim_type": "EXPLICIT",
     "source": "TSP between chimpanzee and human includes LAD1, a protein that maintains cell cohesion (6 MY; Teixeira et al., 2015), retroviral transcription factor TRIM5\u03b1 (4-7 MY in apes and >8 MY in OWM; Cagliani et al., 2010; Newman et al., 2006), and ZC3HAV1, an antiviral protein leading to viral RNA degradation (6 MY; Cagliani et al., 2012), among others (Leffler et al., 2013).",
@@ -1006,33 +981,7 @@
     ]
   },
   {
-    "claim_id": "C77",
-    "claim": "TSP at retroviral transcription factor TRIM5\u03b1 is 4-7 million years old in apes and >8 million years old in old-world monkeys.",
-    "claim_type": "EXPLICIT",
-    "source": "TSP between chimpanzee and human includes LAD1, a protein that maintains cell cohesion (6 MY; Teixeira et al., 2015), retroviral transcription factor TRIM5\u03b1 (4-7 MY in apes and >8 MY in OWM; Cagliani et al., 2010; Newman et al., 2006), and ZC3HAV1, an antiviral protein leading to viral RNA degradation (6 MY; Cagliani et al., 2012), among others (Leffler et al., 2013).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Cagliani et al., 2010 and Newman et al., 2006.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C78",
-    "claim": "TSP at ZC3HAV1, an antiviral protein leading to viral RNA degradation, is 6 million years old.",
-    "claim_type": "EXPLICIT",
-    "source": "TSP between chimpanzee and human includes LAD1, a protein that maintains cell cohesion (6 MY; Teixeira et al., 2015), retroviral transcription factor TRIM5\u03b1 (4-7 MY in apes and >8 MY in OWM; Cagliani et al., 2010; Newman et al., 2006), and ZC3HAV1, an antiviral protein leading to viral RNA degradation (6 MY; Cagliani et al., 2012), among others (Leffler et al., 2013).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Cagliani et al., 2012.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C79",
+    "claim_id": "C74",
     "claim": "MHC polymorphisms have been maintained for 35 million years in cetaceans.",
     "claim_type": "EXPLICIT",
     "source": "Several of the oldest examples are found in the MHC locus: MHC polymorphisms have been maintained for 35 MY in cetaceans (Xu et al., 2009), 40 MY in herons (Li et al., 2011), 48 MY in mole rats (Kundu and Faulkes, 2007), 70 MY in tree frogs (Zhao et al., 2013), and over 105 MY in salmonid fishes (Kiryu et al., 2005; Grimholt et al., 2015).",
@@ -1045,334 +994,194 @@
     ]
   },
   {
-    "claim_id": "C80",
-    "claim": "MHC polymorphisms have been maintained for 40 million years in herons.",
-    "claim_type": "EXPLICIT",
-    "source": "Several of the oldest examples are found in the MHC locus: MHC polymorphisms have been maintained for 35 MY in cetaceans (Xu et al., 2009), 40 MY in herons (Li et al., 2011), 48 MY in mole rats (Kundu and Faulkes, 2007), 70 MY in tree frogs (Zhao et al., 2013), and over 105 MY in salmonid fishes (Kiryu et al., 2005; Grimholt et al., 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Li et al., 2011.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C81",
-    "claim": "MHC polymorphisms have been maintained for 48 million years in mole rats.",
-    "claim_type": "EXPLICIT",
-    "source": "Several of the oldest examples are found in the MHC locus: MHC polymorphisms have been maintained for 35 MY in cetaceans (Xu et al., 2009), 40 MY in herons (Li et al., 2011), 48 MY in mole rats (Kundu and Faulkes, 2007), 70 MY in tree frogs (Zhao et al., 2013), and over 105 MY in salmonid fishes (Kiryu et al., 2005; Grimholt et al., 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Kundu and Faulkes, 2007.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C82",
-    "claim": "MHC polymorphisms have been maintained for 70 million years in tree frogs.",
-    "claim_type": "EXPLICIT",
-    "source": "Several of the oldest examples are found in the MHC locus: MHC polymorphisms have been maintained for 35 MY in cetaceans (Xu et al., 2009), 40 MY in herons (Li et al., 2011), 48 MY in mole rats (Kundu and Faulkes, 2007), 70 MY in tree frogs (Zhao et al., 2013), and over 105 MY in salmonid fishes (Kiryu et al., 2005; Grimholt et al., 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Zhao et al., 2013.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C83",
-    "claim": "MHC polymorphisms have been maintained for over 105 million years in salmonid fishes.",
-    "claim_type": "EXPLICIT",
-    "source": "Several of the oldest examples are found in the MHC locus: MHC polymorphisms have been maintained for 35 MY in cetaceans (Xu et al., 2009), 40 MY in herons (Li et al., 2011), 48 MY in mole rats (Kundu and Faulkes, 2007), 70 MY in tree frogs (Zhao et al., 2013), and over 105 MY in salmonid fishes (Kiryu et al., 2005; Grimholt et al., 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Kiryu et al., 2005 and Grimholt et al., 2015.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C84",
-    "claim": "In cyanobacteria, polymorphism at the HEP island controlling heterocyst function has been maintained for 74 million years.",
-    "claim_type": "EXPLICIT",
-    "source": "There are examples in non-MHC loci as well; in cyanobacteria, polymorphism at the HEP island controlling heterocyst function has been maintained for 74 MY (Sano et al., 2018), in plants, S-genes determining self-incompatibility exhibit TSP spanning 36 MY (Ioerger et al., 1990; Igic et al., 2006; Fujii et al., 2016), and in Formica ants, alleles at a supergene underlying colony queen number have been maintained for over 30 MY (Purcell et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Sano et al., 2018.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C85",
-    "claim": "In plants, S-genes determining self-incompatibility exhibit TSP spanning 36 million years.",
-    "claim_type": "EXPLICIT",
-    "source": "There are examples in non-MHC loci as well; in cyanobacteria, polymorphism at the HEP island controlling heterocyst function has been maintained for 74 MY (Sano et al., 2018), in plants, S-genes determining self-incompatibility exhibit TSP spanning 36 MY (Ioerger et al., 1990; Igic et al., 2006; Fujii et al., 2016), and in Formica ants, alleles at a supergene underlying colony queen number have been maintained for over 30 MY (Purcell et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Ioerger et al., 1990; Igic et al., 2006; Fujii et al., 2016.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C86",
-    "claim": "In Formica ants, alleles at a supergene underlying colony queen number have been maintained for over 30 million years.",
-    "claim_type": "EXPLICIT",
-    "source": "There are examples in non-MHC loci as well; in cyanobacteria, polymorphism at the HEP island controlling heterocyst function has been maintained for 74 MY (Sano et al., 2018), in plants, S-genes determining self-incompatibility exhibit TSP spanning 36 MY (Ioerger et al., 1990; Igic et al., 2006; Fujii et al., 2016), and in Formica ants, alleles at a supergene underlying colony queen number have been maintained for over 30 MY (Purcell et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citation to Purcell et al., 2021.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C87",
-    "claim": "Many authors have reported strong directional selection at the MHC.",
-    "claim_type": "EXPLICIT",
-    "source": "Paradoxically, given the extremely long-lived balancing selection acting in these lineages, many authors have also reported strong directional selection at the MHC (Brandt et al., 2018; Nunes et al., 2021; Bhatia et al., 2011).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Brandt et al., 2018; Nunes et al., 2021; Bhatia et al., 2011.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C88",
-    "claim": "The most rapidly-evolving codons in MHC genes are substituted at around two- to fourfold the baseline rate.",
+    "claim_id": "C75",
+    "claim": "The most rapidly-evolving codons at MHC are substituted at around two- to fourfold the baseline rate.",
     "claim_type": "EXPLICIT",
     "source": "Indeed, within the phylogeny, we find that the most rapidly-evolving codons are substituted at around two- to fourfold the baseline rate, generating ample mutations upon which selection may act.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is based on the substitution rate analysis presented in the paper.",
+    "evidence": "This is calculated from the BEAST2 evolutionary rate analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C89",
-    "claim": "For the classical genes (except MHC-DRA), rapidly-evolving sites lie within the peptide binding regions of the corresponding proteins, usually very close to the peptide-contact surfaces.",
+    "claim_id": "C76",
+    "claim": "For classical genes except MHC-DRA, rapidly-evolving sites lie within the peptide binding regions of the corresponding proteins.",
     "claim_type": "EXPLICIT",
     "source": "For the classical genes (except MHC-DRA), these rapidly-evolving sites lie within the peptide binding regions of the corresponding proteins, usually very close to the peptide-contact surfaces.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the distance-to-peptide analysis in Figures 5 and 6.",
+    "evidence": "This is shown in Figures 5 and 6.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C90",
-    "claim": "The pattern of rapidly-evolving sites in peptide-binding regions does not hold true for the non-classical genes.",
-    "claim_type": "EXPLICIT",
-    "source": "This does not hold true for the non-classical genes, supporting the fact that selection at the MHC is mainly driven by the peptide presentation pathway.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by the substitution rate analysis in Figures 5 and 6.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C91",
+    "claim_id": "C77",
     "claim": "Selection at the MHC is mainly driven by the peptide presentation pathway.",
     "claim_type": "EXPLICIT",
     "source": "This does not hold true for the non-classical genes, supporting the fact that selection at the MHC is mainly driven by the peptide presentation pathway.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the observation that rapidly-evolving sites are concentrated in peptide-binding regions of classical but not non-classical genes.",
+    "evidence": "This is inferred from the contrast between classical and non-classical genes.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C92",
-    "claim": "Non-classical MHC-DMA and -DMB show significantly elevated proportions of rapidly-evolving sites in exon 2 similarly to the classical genes.",
-    "claim_type": "EXPLICIT",
-    "source": "Non-classical MHC-DMA and -DMB are a surprising exception, showing significantly elevated proportions of rapidly-evolving sites in exon 2 similarly to the classical genes (even though the MHC-DM molecule does not bind peptides).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by the substitution rate analysis in Figure 6\u2014figure supplement 4.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C93",
-    "claim": "The pattern of rapid evolution in MHC-DM may be caused by its co-evolution with the classical Class II genes.",
-    "claim_type": "EXPLICIT",
-    "source": "This pattern may be caused by its co-evolution with the classical Class II genes, and more research is needed to address this.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is speculation based on the observed pattern of rapid evolution.",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C94",
-    "claim": "The same rapidly-evolving amino acids in classical MHC proteins are associated with shaping T cell receptor (TCR) repertoires.",
+    "claim_id": "C78",
+    "claim": "Rapidly-evolving amino acids in MHC are associated with shaping T cell receptor (TCR) repertoires.",
     "claim_type": "EXPLICIT",
     "source": "The primary role of classical MHC proteins is to present peptides for T cell recognition; we found that the same rapidly-evolving amino acids are associated with shaping T cell receptor (TCR) repertoires.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the disease and trait association analysis in Table 1.",
+    "evidence": "This is shown in Table 1 and supported by literature associations.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C95",
-    "claim": "Rapidly-evolving amino acids in classical MHC proteins are frequently associated with autoimmune and infectious diseases in HLA fine-mapping studies, particularly for Class I.",
+    "claim_id": "C79",
+    "claim": "Rapidly-evolving amino acids in MHC are frequently associated with autoimmune and infectious diseases in HLA fine-mapping studies.",
     "claim_type": "EXPLICIT",
     "source": "Moreover, these amino acids are frequently associated with autoimmune and infectious diseases in HLA fine-mapping studies, particularly for Class I.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the disease association analysis in Table 1 and Figure 6\u2014figure supplement 7.",
+    "evidence": "This is shown in Table 1 and Figure 6\u2014figure supplement 7.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C96",
-    "claim": "In response to rapidly-changing pathogen pressures, the peptide-binding regions of classical MHC proteins evolve to bind changing pathogen antigens and present them to TCRs.",
+    "claim_id": "C80",
+    "claim": "In response to rapidly-changing pathogen pressures, the peptide-binding regions of classical MHC proteins evolve to bind changing pathogen antigens.",
     "claim_type": "EXPLICIT",
     "source": "In response to rapidly-changing pathogen pressures, the PBRs of classical MHC proteins evolve to bind changing pathogen antigens and present them to TCRs.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the observed rapid evolution in peptide-binding regions and the known function of MHC proteins.",
+    "evidence": "This is inferred from the evolutionary analysis and known MHC function.",
     "evidence_type": [
-      "INFERENCE",
       "DATA",
+      "INFERENCE",
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C97",
-    "claim": "Broad lineages of MHC alleles are maintained over tens of millions of years by strong balancing selection, providing defense against a wide variety of different pathogens.",
+    "claim_id": "C81",
+    "claim": "Broad lineages of MHC alleles are maintained over tens of millions of years by strong balancing selection.",
     "claim_type": "EXPLICIT",
     "source": "Broad lineages of MHC alleles are maintained over tens of millions of years by strong balancing selection, providing defense against a wide variety of different pathogens.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the observed TSP and the known function of MHC proteins.",
+    "evidence": "This is inferred from the TSP analysis.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C98",
-    "claim": "Within MHC allelic lineages, alleles turn over quickly in response to new specific threats.",
+    "claim_id": "C82",
+    "claim": "Within MHC lineages, alleles turn over quickly in response to new specific threats.",
     "claim_type": "EXPLICIT",
     "source": "Yet within these lineages, alleles turn over quickly in response to new specific threats.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the observed rapid evolution at specific sites.",
+    "evidence": "This is inferred from the evidence of both ancient TSP and rapid evolution.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C99",
-    "claim": "The findings reconcile evidence for TSP, the presence of thousands of alleles, and the existence of rapidly-evolving sites at the MHC.",
-    "claim_type": "EXPLICIT",
-    "source": "This reconciles evidence for TSP, the presence of thousands of alleles, and the existence of rapidly-evolving sites.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference that synthesizes the various findings of the study.",
-    "evidence_type": [
+      "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C100",
-    "claim": "MHC molecules must evolve to detect pathogens with both specificity and sensitivity.",
-    "claim_type": "EXPLICIT",
-    "source": "MHC molecules must evolve to detect pathogens with both specificity and sensitivity, and distinguishing self from non-self peptides is a challenging task.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is based on established knowledge about MHC function and the challenges of immune recognition.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C101",
-    "claim": "Distinguishing self from non-self peptides is a challenging task for MHC molecules.",
-    "claim_type": "EXPLICIT",
-    "source": "MHC molecules must evolve to detect pathogens with both specificity and sensitivity, and distinguishing self from non-self peptides is a challenging task.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is based on established knowledge about MHC function and the challenges of immune recognition.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C102",
+    "claim_id": "C83",
     "claim": "As MHC proteins evolve, there is an unavoidable flux between infection defense and autoimmune susceptibility.",
     "claim_type": "EXPLICIT",
     "source": "As MHC proteins evolve, there is an unavoidable flux between infection defense and autoimmune susceptibility.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference based on the observed associations with both infectious and autoimmune diseases.",
+    "evidence": "This is inferred from the disease associations with rapidly-evolving sites.",
     "evidence_type": [
+      "DATA",
       "INFERENCE",
-      "DATA"
+      "SPECULATION"
     ]
   },
   {
-    "claim_id": "C103",
-    "claim": "Many MHC proteins have roles in both innate and adaptive immunity.",
-    "claim_type": "EXPLICIT",
-    "source": "Additionally, many MHC proteins have roles in both innate and adaptive immunity.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is established knowledge about MHC function.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C104",
+    "claim_id": "C84",
     "claim": "Rapidly-evolving amino acids in MHC are associated with both infections and autoimmune conditions.",
     "claim_type": "EXPLICIT",
     "source": "As a result, rapidly-evolving amino acids are associated with both infections and autoimmune conditions.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by the disease association analysis in Table 1.",
+    "evidence": "This is shown in Table 1.",
     "evidence_type": [
       "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The vast majority of nonhuman MHC sequences were obtained via Sanger sequencing or next-generation sequencing methods.",
+    "claim_type": "EXPLICIT",
+    "source": "One limitation of the data we used is that the vast majority of nonhuman MHC sequences were obtained via Sanger sequencing or next-generation sequencing methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of the data sources.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "PCR-related technical artifacts such as heteroduplexes and chimeras can affect MHC sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "While highly accurate sequence-wise, these methods are limited by PCR-related technical artifacts such as heteroduplexes and chimeras.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about sequencing limitations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Long-read sequencing of the MHC region has the potential to solve many sequencing and assembly issues.",
+    "claim_type": "EXPLICIT",
+    "source": "Luckily, long-read sequencing of the MHC region has the potential to solve many of these issues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to recent work using long-read sequencing.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Oxford Nanopore and PacBio HiFi sequencing have been used to obtain high-quality MHC sequences in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "Oxford Nanopore and PacBio HiFi sequencing have already been used to obtain high-quality MHC sequences in humans (Wenger et al., 2019; Jain et al., 2018; Liu, 2021; Bruijnesteijn, 2023), and researchers are beginning to explore their potential in non-model organisms (Cheng et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
     ]
   }
 ]

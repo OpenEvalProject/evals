@@ -1,0 +1,147 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C37",
+      "C38",
+      "C57"
+    ],
+    "result": "The authors claim that RNNs can achieve nearly optimal fit and approximate various behavioral models without prior theoretical specification. In simulations, RNNs achieved the second-best predictive score across all theoretical models, second only to the true generative model, suggesting RNNs are flexible enough to approximate a wide range of different behavioral models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the simulation evidence is 'clear and compelling' but express significant concerns about generalizability. One reviewer notes 'it is much less obvious that the RNNs will provide optimal fits in other types of tasks, particularly those with more complex rules and long-term sequential dependencies.' Another reviewer emphasizes that 'the paper itself illustrates (in Figure 3) several cases where the fitted RNNs fall short of the ground-truth model,' indicating the assumption that RNNs explain maximum variance is 'likely incorrect.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C40",
+      "C41",
+      "C108"
+    ],
+    "result": "The authors demonstrate that RNN predictive performance can classify whether an agent was misspecified by a theoretical model, achieving 86% classification accuracy compared to 70% for logistic regression. This supports the claim that RNNs can signify if a subject might be better explained by another unknown model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers note the simulation results are convincing but question practical applicability. One reviewer states 'the toy problem examined in the manuscript is pretty extreme' and 'the issue posed in the toy data would easily be identified by following good modeling practices, which include using posterior predictive checking.' The reviewer questions whether the method 'could reveal misspecification in situations where standard posterior predictive checking techniques would fall short.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C32",
+      "C43",
+      "C44",
+      "C58"
+    ],
+    "result": "The authors propose that the point of early stopping in RNN training reflects the amount of noise in the data, with earlier stopping indicating noisier data. They demonstrate this can serve as an estimate for comparing the amount of noise in agent data and can be used as an index for the amount of true noise each participant holds.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge this as a 'novel application' but express concerns about its validity. One reviewer notes 'the relationship between the number of optimal epochs and behavioral stochasticity may not hold for every task and every subject' and that 'the optimal epoch is influenced by model parameters other than inverse temperature.' The reviewer states these concerns are 'partially addressed' but remain 'a significant caveat that readers should be aware of when using the technique proposed.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C62"
+    ],
+    "result": "In the empirical study, the authors found that low IQ participants showed lower predictability by the hybrid model compared to high IQ participants. However, both the predictive gap and early stopping analysis suggested that model misspecification is similar across IQ levels, leading to the conclusion that low IQ subjects are mostly noisier rather than more misspecified by the theoretical model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concerns about this result. One reviewer notes 'the actual behavioral data analyzed were interpreted as a null result (failure to reject that the behavioral stochasticity hypothesis), rather than actual identification of model misspecification.' Another reviewer states 'it remains unclear whether the method could identify model misspecification in real world data' and that 'the rebuttal highlighted the better fit of the RNN on the empirical data as providing positive evidence for the ability of the method to identify model insufficiency, but I see this result as having limited epistemological value, given that there is no follow up to explore what the insufficiency actually was.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C107"
+    ],
+    "result": "In the empirical study, the RNN enhanced predictive accuracy for all participants uniformly and obtained on average a higher predictive score than the hybrid model. However, there was no consistent difference in RNN improvement over the theoretical model based on IQ.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this finding but question its interpretation. One reviewer notes 'the RNN enhanced the predictive accuracy for all participants uniformly' and 'we also provide evidence supporting a null effect among individuals, with no consistent difference in RNN improvement over the theoretical model based on IQ.' The editor states the technique 'broadly support the claims of the article' though with caveats about applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors acknowledge several limitations: fitting a data-driven neural network is not enough to produce comprehensive theoretical descriptions; simulations were confined to known models; whether RNNs will provide optimal fits for tasks with more complex rules remains uncertain; and caution is warranted in directly equating RNN performance with that of the generative model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm these limitations are important. One reviewer states 'the authors acknowledge this limitation in their discussion, but it remains a significant caveat that readers should be aware of when using the technique proposed.' Another reviewer notes 'the authors list many of the points above as limitations in their discussion section, but in my opinion, they are relatively major ones.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C59"
+    ],
+    "result": "The authors claim that estimating the point of early stopping requires only two datasets (training and validation) compared to three datasets (training, validation, test) needed for predictive accuracy estimation, and can be employed without empirical RNN pre-training.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this methodological claim. One reviewer notes the method's 'flexibility' as a strength, though they raise concerns about the practical requirement for 'extensive pretraining (on >500 participants)' which 'limiting its applicability for most use cases.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C45"
+    ],
+    "result": "The authors acknowledge that additional factors such as network architecture and other model parameters (e.g., learning rate) might influence the estimation of optimal epochs, and that the number of optimal epochs is not an absolute estimate since it can be influenced by the number of observations and network size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note these concerns and acknowledge the authors addressed them. One reviewer states 'these concerns are partially addressed by the authors in the revised manuscript, where they show that the number of optimal epochs is primarily sensitive to the amount of true underlying noise, assuming the number of trials and network size are constant.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C54"
+    ],
+    "result": "The authors cite previous research demonstrating that neural networks have been shown to surpass typical theoretical models in pure action prediction and are capable of capturing behavioral features that traditional theoretical models struggle to replicate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these literature citations. The editor notes 'simulations provide solid evidence for the validity of this technique' in the context of the current work building on this prior research.",
+    "result_type": "MINOR"
+  }
+]

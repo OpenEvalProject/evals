@@ -10,11 +10,11 @@
       "C21",
       "C22"
     ],
-    "result": "Background claims establish that preeclampsia (PE) is a major cause of maternal and perinatal mortality with heterogeneous causes, often complicated by gestational diabetes mellitus (GDM), with a global prevalence of 7-10%, and unclear pathogenesis despite delivery being the only specific treatment.",
+    "result": "The manuscript provides background information on preeclampsia (PE) and gestational diabetes mellitus (GDM), stating that PE is a major cause of maternal mortality with heterogeneous causes, is usually complicated by GDM, has a global prevalence of 7-10%, and that delivery is the only specific treatment. GDM is characterized by insulin resistance and is an independent risk factor for PE.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims (C1, C2, C18-C22) provide well-established background information about PE and GDM that is supported by general medical knowledge and appropriate citations. The claims accurately represent the current understanding of PE epidemiology and clinical management.",
+    "evaluation": "Claims C1, C2, C18-C22 present established medical knowledge about PE and GDM that is well-supported by the cited literature (Chappell et al., 2021; Burton et al., 2019; Grotegut, 2016; Corr\u00eaa-Silva et al., 2018; McElwain et al., 2021; McIntyre et al., 2019; Nerenberg et al., 2013; Ostlund et al., 2004; Schneider et al., 2012). However, claim C2 stating PE is \"usually\" complicated by GDM is potentially misleading as it overstates the frequency of this complication without providing specific prevalence data.",
     "result_type": "MINOR"
   },
   {
@@ -36,11 +36,11 @@
       "C36",
       "C37"
     ],
-    "result": "Prior literature establishes that PE pathogenesis involves increased pro-inflammatory M1-like macrophages, granulocytes, NK cells, B1 lymphocytes, and \u03b3\u03b4 T cells, with decreased M2-like macrophages and NKp46+ NK cells, and that CD4+ T cells preferentially differentiate into Th1/Th17 rather than Th2/Treg in PE.",
+    "result": "The manuscript reviews prior literature on immune alterations in PE, including increased pro-inflammatory M1-like macrophages, granulocytes, NK cells, B1 lymphocytes, and \u03b3\u03b4 T cells, along with decreased anti-inflammatory M2-like macrophages and NKp46+ NK cells. It also discusses the role of adaptive immunity, with CD4+ T cells preferentially differentiating into Th1/Th17 rather than Th2/Treg in PE.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C23-C37 summarize prior work on PE immunology with appropriate citations. These background claims establish the foundation for the current study and are well-supported by the cited literature, though they represent prior knowledge rather than new findings.",
+    "evaluation": "Claims C23-C37 summarize established findings from the literature with appropriate citations (Faas et al., 2014; Yao et al., 2019; Lamp\u00e9 et al., 2011; Liu et al., 2021; Bachmayer et al., 2006; Travis et al., 2020; Jensen et al., 2012; LaMarca et al., 2011; Zhong et al., 2007; Chatterjee et al., 2017; Fukui et al., 2011; Deer et al., 2023; Eghbal-Fard et al., 2019; Fu et al., 2014; Lang et al., 2021; Lu et al., 2020; Saito et al., 2007; Care et al., 2018; Cornelius et al., 2015a; Santner-Nanan et al., 2009; Sasaki et al., 2007; Aneman et al., 2020; Cornelius et al., 2015b; Fu et al., 2013). These claims accurately represent prior work and provide appropriate context for the current study.",
     "result_type": "MINOR"
   },
   {
@@ -52,20 +52,20 @@
       "C6",
       "C7",
       "C8",
-      "C38",
-      "C39",
-      "C40"
+      "C38"
     ],
-    "result": "CyTOF analysis reveals PE-specific immune alterations: increased frequencies of memory-like Th17 cells, memory-like CD8+ T cells, and pro-inflammatory macrophages, with decreased anti-inflammatory macrophages and gMDSCs in PE placentas compared to normal pregnancy, but not in GDM or GDM&PE placentas.",
+    "result": "CyTOF analysis revealed PE-specific immune alterations in placental tissue: increased frequencies of memory-like Th17 cells (CD45RA\u2212CCR7+IL-17A+CD4+), memory-like CD8+ T cells (CD38+CXCR3\u2212CCR7+Helios\u2212CD127\u2212CD8+), and pro-inflammatory macrophages (CD206\u2212CD163\u2212CD38midCD107alowCD86midHLA-DRmidCD14+), along with decreased frequencies of anti-inflammatory macrophages (CD206+CD163\u2212CD86midCD33+HLA-DR+CD14+) and gMDSCs (CD11b+CD15hiHLA-DRlow) in PE compared to normal pregnancy (NP). These changes were not observed in GDM or GDM&PE groups, and there were no significant differences in large immune cell subpopulations between groups.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C8, C38-C40 are supported by CyTOF data from human placental samples (n=9 NP, n=8 PE, n=8 GDM, n=7 GDM&PE). The data show statistically significant PE-specific changes with appropriate controls. However, the GDM&PE group has limited sample size (n=7), which the authors acknowledge as a limitation.",
+    "evaluation": "Claims C3-C8 and C38 are supported by CyTOF data presented in Figures 1-3 and Tables 1-4. The study used appropriate sample sizes (n=9 NP, n=8 PE, n=8 GDM, n=7 GDM&PE) and statistical methods (Kruskal-Wallis test). The PE-specific immune signature is a major finding, though the manuscript acknowledges limitations including differences in BMI and gestational age between groups, and limited GDM&PE samples. The claim that changes were \"not found\" in GDM/GDM&PE should be interpreted as \"not statistically significant\" rather than complete absence.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
+      "C39",
+      "C40",
       "C41",
       "C42",
       "C43",
@@ -73,408 +73,314 @@
       "C45",
       "C46",
       "C47",
-      "C48"
+      "C48",
+      "C49"
     ],
-    "result": "Memory-like CD4+ T cells in PE placentas show higher IL-17A and lower Foxp3 expression, are located in placental sinusoids suggesting recent recruitment, and express lower levels of immune checkpoint molecules (Tim-3, PD-1) indicating reduced immunosuppressive capacity.",
+    "result": "Memory-like CD4+ T cells in PE placentas showed higher IL-17A and lower Foxp3 expression, were located in placental sinusoids suggesting recent recruitment, and expressed lower levels of immune checkpoint molecules (Tim-3, PD-1) indicating reduced immunosuppressive capacity. Memory-like CD8+ T cells in PE expressed lower PD-1 and TIGIT, suggesting activated cytotoxicity. A specific \u03b3\u03b4T cell cluster (cluster 15) with lower Tim3 expression was decreased in PE.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C48 are supported by flow cytometry (Figure 2C) and immunofluorescence data (Figure 2D). The inference about recent recruitment (C45) based on sinusoidal localization is reasonable but indirect. The interpretation of lower checkpoint molecule expression as reduced immunosuppressive capacity (C48) is supported by cited literature.",
+    "evaluation": "Claims C39-C49 are supported by flow cytometry (Figure 2C), immunofluorescence (Figure 2D), and CyTOF data (Figures 2E, 2H, Figure 2\u2014figure supplement 1E-F). The inference about recent recruitment (C43) based on sinusoidal location is reasonable but speculative. The interpretation of lower checkpoint molecule expression as indicating lower immunosuppressive capacity (C46) and activated cytotoxicity (C48) is supported by cited literature (Chen et al., 2022b; Fanelli et al., 2021; Rasmussen et al., 2022; Wang et al., 2016; Morita et al., 2020), though functional assays would strengthen these claims.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C49",
       "C50",
       "C51",
-      "C52"
+      "C52",
+      "C53"
     ],
-    "result": "Memory-like CD8+ T cells are increased in PE and express lower levels of PD-1 and TIGIT, suggesting activated cytotoxicity, while a specific \u03b3\u03b4T cell subset (cluster 15) is decreased in PE.",
+    "result": "CyTOF analysis of CD11b+ cells revealed decreased frequencies of gMDSCs (CD68midCD39midHLA-DRlowCD11b+CD15+, cluster 12) and anti-inflammatory macrophages (CD206+CD163\u2212CD86midCD33+HLA-DR+, cluster 25), and increased frequencies of pro-inflammatory macrophages (CD206\u2212CD163\u2212CD38midCD107alowCD86midHLA-DRmidCD14+, cluster 23) in PE placentas. These changes were not significant in GDM or GDM&PE groups.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C49-C52 are supported by CyTOF data (Figures 2G-H, Figure 2\u2014figure supplement 1E-F). The interpretation of lower PD-1/TIGIT as indicating cytotoxic activation (C51) is an inference supported by citation to Morita et al., 2020.",
+    "evaluation": "Claims C50-C53 are supported by CyTOF data shown in Figure 3C and Table 4. The identification of specific macrophage and gMDSC populations using multi-parameter phenotyping is rigorous. The PE-specific nature of these changes (not observed in GDM/GDM&PE) strengthens the finding. Statistical analysis using Kruskal-Wallis test is appropriate for the non-normal distribution confirmed by Shapiro-Wilk test.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C53",
+      "C9",
+      "C10",
+      "C11",
       "C54",
       "C55",
-      "C56"
+      "C56",
+      "C57",
+      "C58"
     ],
-    "result": "PE placentas show decreased gMDSCs, decreased anti-inflammatory macrophages, and increased pro-inflammatory macrophages compared to normal pregnancy, with no significant changes in GDM or GDM&PE groups.",
+    "result": "Pearson correlation analysis revealed that pro-inflammatory macrophages were positively correlated with memory-like Th17 cells and memory-like CD8+ T cells, and showed a negative (but not statistically significant) correlation with gMDSCs. Conversely, anti-inflammatory macrophages were positively correlated with gMDSCs and negatively correlated with CD8+ memory-like T cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53-C56 are supported by CyTOF data (Figure 3C, Table 4). The phenotypic characterization of macrophage subsets is detailed with multiple markers. The lack of changes in GDM/GDM&PE groups strengthens the PE-specificity of these findings.",
+    "evaluation": "Claims C9-C11 and C54-C58 are supported by Pearson correlation analysis of CyTOF data shown in Figures 3D-E. The correlations suggest coordinated immune network changes in PE. However, correlation does not establish causation, and the negative correlation between pro-inflammatory macrophages and gMDSCs was not statistically significant (C56), which appropriately tempers the interpretation. The correlation analysis provides important context for subsequent mechanistic experiments.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C9",
-      "C10",
-      "C11",
-      "C57",
-      "C58",
       "C59",
       "C60",
-      "C61"
+      "C61",
+      "C62",
+      "C63"
     ],
-    "result": "Pro-inflammatory macrophages positively correlate with memory-like Th17 and CD8+ T cells, while anti-inflammatory macrophages positively correlate with gMDSCs and negatively correlate with memory-like CD8+ T cells.",
+    "result": "The RUPP mouse model of PE showed increased embryo absorption rate, decreased fetal weight and pup crown-rump length, and increased systolic blood pressure (SBP) and urine albumin creatine ratio (UACR) compared to sham-operated controls, indicating successful establishment of a PE mouse model.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9-C11, C57-C61 are supported by Pearson correlation analysis of CyTOF data (Figure 3D-E). The correlation between pro-inflammatory macrophages and gMDSCs (C59) is noted as not statistically significant, which is appropriately reported. These correlations suggest functional relationships but do not establish causation.",
+    "evaluation": "Claims C59-C63 are supported by experimental data shown in Figure 4\u2014figure supplement 1B-C. The RUPP model is an established approach for studying PE in mice. The phenotypic changes (hypertension, proteinuria, fetal growth restriction) recapitulate key features of human PE. Sample sizes appear adequate (n=9 per group based on Figure 4\u2014figure supplement 1B), and statistical analysis using Student's t-test is appropriate. This validates the model for subsequent mechanistic studies.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C62",
-      "C63",
       "C64",
       "C65",
-      "C66"
+      "C66",
+      "C67",
+      "C68"
     ],
-    "result": "The RUPP mouse model successfully recapitulates PE-like symptoms, showing increased embryo resorption, decreased fetal weight and crown-rump length, and elevated systolic blood pressure and urine albumin-creatine ratio.",
+    "result": "Adoptive transfer of PE-derived macrophages into normal pregnant mice induced PE-like symptoms including increased embryo resorption rate, decreased fetal top-rump length and weight, and increased SBP and UACR.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C62-C66 are supported by experimental data from the RUPP model (Figure 4\u2014figure supplement 1B-C). The model shows expected PE-like phenotypes. Sample sizes appear adequate (n=9 per group based on Figure 4\u2014figure supplement 1B), and appropriate controls (sham operation) are included.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C64-C68 are supported by experimental data shown in Figure 4\u2014figure supplement 1D-E. This adoptive transfer experiment provides causal evidence that PE-derived macrophages are sufficient to induce PE-like symptoms. However, the manuscript does not specify whether macrophages were depleted in recipient mice before transfer, which could affect interpretation. The experiment demonstrates the pathogenic potential of PE macrophages but does not distinguish between pro-inflammatory and anti-inflammatory subsets.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C67",
-      "C68",
       "C69",
-      "C70",
-      "C71"
+      "C70"
     ],
-    "result": "Adoptive transfer of PE-derived macrophages into normal pregnant mice induces PE-like symptoms including increased embryo resorption, decreased fetal parameters, and elevated blood pressure and proteinuria.",
+    "result": "Using GFP transgenic mice, the study demonstrated that the majority of macrophages in the uterus and placenta are of maternal origin (CD11b+GFP\u2212), while fetal-derived macrophages (CD11b+GFP+) represent only a small fraction of the total macrophage population.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C67-C71 are supported by adoptive transfer experiments (Figure 4\u2014figure supplement 1D-E). This demonstrates that macrophages from PE mice are sufficient to induce PE-like phenotypes. However, the specific macrophage subset transferred is not clearly defined in these initial experiments.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C69-C70 are supported by flow cytometry data from GFP pregnant mice shown in Figure 4\u2014figure supplement 1G. This experiment is important for validating that macrophages isolated from uterine tissue are predominantly maternal in origin, justifying the use of uterine tissue for macrophage isolation in subsequent experiments. The experimental design (WT female \u00d7 GFP male) is appropriate for distinguishing maternal from fetal cells.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
+      "C71",
       "C72",
-      "C73"
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
     ],
-    "result": "The majority of macrophages in the uterus and placenta are of maternal origin (CD11b+GFP\u2212), with fetal-derived macrophages representing only a small fraction.",
+    "result": "RNA-seq comparison of pro-inflammatory and anti-inflammatory macrophages from RUPP mice revealed 2123 upregulated and 2699 downregulated genes in pro-inflammatory macrophages. Pro-inflammatory macrophages showed increased expression of genes associated with inflammatory response (Ccl7, Ccl8, Ccl2, IL6), complement activation (C1qa, C1qb), and lipid metabolism (Pltp, Apoe), while showing decreased expression of genes associated with angiogenesis (VEGF\u03b1, Macro) and tissue development (TGF-\u03b21, Thbs1, Fn1, Slpi).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C73 are supported by flow cytometry data from GFP transgenic mouse experiments (Figure 4\u2014figure supplement 1G). This validates the use of maternal uterine tissue for macrophage isolation in subsequent experiments.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C71-C77 are supported by RNA-seq data shown in Figure 4C-D with n=3 per group. The differential gene expression analysis is appropriately conducted with p<0.05 threshold. The functional interpretation of gene expression changes is supported by cited literature (He et al., 2019; Wu et al., 2023; Chen et al., 2021; Desrumaux et al., 2016; Jin et al., 2023; Nugteren and Samsom, 2021; Li et al., 2022a). However, the small sample size (n=3) limits statistical power, and validation of key genes by qPCR or protein analysis would strengthen the findings.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C74",
-      "C75",
-      "C76",
-      "C77",
       "C78",
       "C79",
-      "C80"
+      "C80",
+      "C81"
     ],
-    "result": "RNA sequencing reveals that pro-inflammatory macrophages show increased expression of genes associated with inflammatory response, complement activation, and lipid metabolism, while showing decreased expression of genes associated with angiogenesis and tissue development compared to anti-inflammatory macrophages.",
+    "result": "Gene set enrichment analysis (GSEA) revealed that NF-\u03baB signaling and interspecies interaction between organisms were enriched in pro-inflammatory macrophages, while tissue development and epithelial cell morphogenesis were enriched in anti-inflammatory macrophages.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C74-C80 are supported by RNA-seq data (Figure 4C-D) with n=3 per group. The differential gene expression is substantial (2123 increased, 2699 decreased genes) and functionally annotated with appropriate citations. However, the sample size is minimal for RNA-seq, and validation of key genes by qPCR would strengthen these findings.",
+    "evaluation": "Claims C78-C81 are supported by GSEA shown in Figure 4E. The enrichment of NF-\u03baB signaling in pro-inflammatory macrophages is consistent with their inflammatory phenotype. However, the biological significance of \"interspecies interaction between organisms\" enrichment is unclear and not discussed. The enrichment of tissue development and epithelial cell morphogenesis in anti-inflammatory macrophages aligns with their proposed role in tissue homeostasis and repair.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C81",
       "C82",
       "C83",
-      "C84"
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
     ],
-    "result": "Gene set enrichment analysis shows that NF-\u03baB signaling and interspecies interactions are enriched in pro-inflammatory macrophages, while tissue development and epithelial cell morphogenesis are enriched in anti-inflammatory macrophages.",
+    "result": "Adoptive transfer of sorted pro-inflammatory macrophages (CD45+F4/80+CD206\u2212) into PLX3397-treated pregnant mice induced PE-like symptoms (increased embryo resorption, decreased fetal parameters, increased SBP and UACR) and altered immune cell frequencies (increased memory-like Th17 and CD8+ T cells, decreased gMDSCs), validating CyTOF findings.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C81-C84 are supported by GSEA of RNA-seq data (Figure 4E). The pathway enrichment is consistent with the expected functions of pro- vs anti-inflammatory macrophages. However, the biological significance of 'interspecies interaction between organisms' enrichment is unclear.",
+    "evaluation": "Claims C82-C89 are supported by experimental data shown in Figures 4F-H. This is a critical experiment demonstrating that pro-inflammatory macrophages are sufficient to induce PE-like symptoms and the associated immune changes. The use of PLX3397 to deplete endogenous macrophages is appropriate, though the manuscript notes this drug can cross the placental barrier and potentially affect fetal macrophages. The experiment was replicated using clodronate liposomes (Figure 4\u2014figure supplement 2B-E) with similar results, strengthening the conclusions. Sample sizes appear adequate (n=8 per group).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
       "C90",
       "C91",
-      "C92"
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
     ],
-    "result": "Adoptive transfer of sorted pro-inflammatory macrophages (F4/80+CD206\u2212) into macrophage-depleted pregnant mice induces PE-like symptoms and increases memory-like Th17 and CD8+ T cells while decreasing gMDSCs.",
+    "result": "Single-cell RNA-seq of macrophages from mice injected with pro-inflammatory or anti-inflammatory macrophages revealed that cluster 0 (increased in pro-inflammatory macrophage group) was enriched for inflammatory response and antigen presentation genes (CCL5, CCL8, CALR, IRF7, IL10, IFI44, IFI30, OAS3), while cluster 1 (decreased in pro-inflammatory macrophage group) showed elevated expression of genes associated with VEGF production and tissue development (MMP14, Chil3, EGR1, ATF3, VASP).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C85-C92 are supported by adoptive transfer experiments with sorted macrophages (Figure 4F-H). The use of PLX3397 for macrophage depletion is validated (Figure 4\u2014figure supplement 2A), and similar results with clodronate liposomes (Figure 4\u2014figure supplement 2B-E) strengthen the findings. Sample sizes appear adequate (n=6-8 per group).",
+    "evaluation": "Claims C90-C91 and C98-C102 are supported by scRNA-seq data shown in Figures 5D-G. The single-cell analysis provides detailed characterization of macrophage heterogeneity and confirms the distinct phenotypes of pro-inflammatory and anti-inflammatory macrophages. The GO enrichment analysis appropriately identifies functional differences between clusters. However, the manuscript does not clearly specify the number of cells analyzed or provide quality control metrics for the scRNA-seq data, which are important for assessing data quality.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C100"
+      "C12",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
     ],
-    "result": "Single-cell RNA sequencing identifies two main macrophage clusters: cluster 0 (increased in pro-inflammatory macrophage-injected mice) expressing genes for tissue residence, complement activation, and inflammation; and cluster 1 (decreased) expressing genes for tissue repair, angiogenesis, and oxidative stress protection.",
+    "result": "Single-cell RNA-seq of T/NK cells revealed that cluster 0, identified as memory-like Th17 cells based on expression of both Th17-associated genes (IL-17a, IL17f, Rora, Il1r1, TNF) and memory markers (Cxcr6, S100a4, CD44), was increased in mice injected with pro-inflammatory macrophages, while clusters 1 and 2 (immunoregulatory T cells) were decreased.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C93-C100 are supported by scRNA-seq data (Figure 5D-E). The phenotypic characterization is detailed with appropriate gene markers and citations. However, the number of biological replicates for scRNA-seq is not clearly stated, which is important for assessing reproducibility.",
+    "evaluation": "Claims C12 and C103-C107 are supported by scRNA-seq data shown in Figures 6A-C. The identification of memory-like Th17 cells based on co-expression of Th17 and memory markers is well-supported by the data and cited literature (Hang et al., 2019; Leite et al., 2023; Evrard et al., 2023; Bieberich et al., 2021). This finding provides molecular characterization of the memory-like Th17 cells identified by CyTOF in human samples. The inference that cluster 0 represents memory-like Th17 cells (C107) is reasonable based on the gene expression profile.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C101",
-      "C102",
-      "C103",
-      "C104",
-      "C105",
-      "C106"
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
     ],
-    "result": "GO enrichment analysis of macrophage clusters shows that pro-inflammatory macrophage-injected mice have enrichment for antigen processing and inflammatory response with high expression of inflammatory genes, while controls show enrichment for VEGF production and tissue development.",
+    "result": "ScRNA-seq revealed that clusters 1 and 2 were T cells with immunomodulatory function based on expression of immunoregulation genes (Lef1, Tcf7, Ccr7) and immunomodulation genes (Gata3, GITR, CD28). Cluster 0 (memory-like Th17 cells) in the pro-inflammatory macrophage group showed enrichment for 'positive regulation of response to external stimulus' and 'tumor necrosis factor production' with high expression of TNFSF11, TNF, IL27RA, IGF1R, CD226, and LAMP1, while the control group showed elevated expression of ASS1, EIF5, S100A9, CTLA4, S100A8, and CXCR4 enriched in 'regulation of programmed cell death' and 'cellular biosynthetic process'.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C101-C106 are supported by GO enrichment analysis and gene expression data from scRNA-seq (Figure 5F-G). The functional annotations are consistent with the expected phenotypes of the two macrophage populations.",
+    "evaluation": "Claims C108-C114 are supported by scRNA-seq data shown in Figures 6D-E and Figure 6\u2014figure supplement 1B with appropriate citations (Qiu and Du, 2022; Sekine et al., 2020; Esensten et al., 2016; Pai et al., 2023). The GO enrichment analysis provides functional context for the gene expression differences. The identification of IGF1R as highly expressed in memory-like Th17 cells from the pro-inflammatory macrophage group is important for the subsequent mechanistic studies on IGF1-IGF1R signaling.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111",
-      "C112"
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
     ],
-    "result": "Single-cell RNA sequencing of T/NK cells reveals that cluster 0, characterized by expression of both Th17-associated genes (IL-17a, IL17f, Rora, Il1r1, TNF) and memory markers (Cxcr6, S100a4, CD44), is increased in pro-inflammatory macrophage-injected mice.",
+    "result": "CD4+CD44+ T cells from RUPP mice, characterized by increased Th17 and decreased Treg frequencies, induced PE-like symptoms (increased embryo absorption, decreased fetal parameters, increased SBP and UACR) when adoptively transferred into normal pregnant mice.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C107-C112 are supported by scRNA-seq data (Figure 6A-C). The identification of memory-like Th17 cells (C112) is an inference based on co-expression of Th17 and memory markers, which is reasonable and supported by appropriate citations.",
+    "evaluation": "Claims C115-C120 are supported by flow cytometry data (Figure 6F) and experimental outcomes (Figures 6G-H). This adoptive transfer experiment provides causal evidence that memory-like T cells from PE mice are sufficient to induce PE-like symptoms. The characterization of transferred cells showing increased Th17/decreased Treg ratio is important for understanding the pathogenic mechanism. Sample sizes appear adequate (n=6 per group). This experiment complements the macrophage transfer studies and supports the proposed immune network model.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C113",
-      "C114",
-      "C115"
-    ],
-    "result": "Clusters 1 and 2 of T/NK cells, which are decreased in pro-inflammatory macrophage-injected mice, express genes associated with immunoregulation and immunomodulation, suggesting they are T cells with immunomodulatory function.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C113-C115 are supported by scRNA-seq data (Figure 6\u2014figure supplement 1B) with appropriate citations. The inference about immunomodulatory function (C115) is reasonable based on the gene expression patterns.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C116",
-      "C117",
-      "C118",
-      "C119",
-      "C120",
-      "C121"
-    ],
-    "result": "GO enrichment analysis shows that memory-like Th17 cells in pro-inflammatory macrophage-injected mice are enriched for response to external stimuli and TNF production with high expression of inflammatory genes, while controls show enrichment for programmed cell death regulation and biosynthetic processes.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C116-C121 are supported by GO enrichment analysis and gene expression data from scRNA-seq (Figure 6D-E). The functional annotations are consistent with an activated inflammatory phenotype in the pro-inflammatory macrophage group.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
+      "C14",
+      "C121",
       "C122",
       "C123",
       "C124",
       "C125",
       "C126",
-      "C127",
-      "C128"
+      "C127"
     ],
-    "result": "CD4+CD44+ T cells from RUPP mice, characterized by increased Th17 and decreased Treg frequencies, induce PE-like symptoms when adoptively transferred to normal pregnant mice.",
+    "result": "Mice with a history of PE in their first pregnancy showed increased embryo resorption, decreased fetal parameters, increased SBP and UACR, and higher IL-17A levels in memory-like CD4+ T cells during their second pregnancy compared to mice with a history of normal pregnancy, suggesting that memory-like Th17 cells contribute to PE recurrence.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C122-C128 are supported by flow cytometry characterization (Figure 6F) and adoptive transfer experiments (Figure 6G-H). This demonstrates that memory-like T cells enriched in Th17 are sufficient to induce PE-like phenotypes. Sample sizes appear adequate (n=6-7 per group).",
+    "evaluation": "Claims C14 and C121-C127 are supported by experimental data shown in Figure 6\u2014figure supplement 1C-E. This experiment provides evidence for the role of memory-like Th17 cells in PE recurrence, which is clinically relevant given the increased risk of PE in subsequent pregnancies. The citation to Rowe et al., 2012 (C121) appropriately contextualizes the finding within the literature on memory T cells in pregnancy. However, the mechanism by which memory-like Th17 cells persist between pregnancies and contribute to recurrence requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "ScRNA-seq analysis of granulocytes revealed that cluster 3, expressing gMDSC-associated genes (Ly6g, S100a8, Retnlg, Wfdc21), was decreased in the pro-inflammatory macrophage group and showed enrichment for 'tumor necrosis factor production' and 'leukocyte mediated immunity' with high expression of IRF7, EGR1, C1QA, C1QB, CCL2, CSF3R, and TNFRSF1B. Additionally, immunofluorescence revealed increased CD15+CD66b+ neutrophils in PE patient placentas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C128-C131 are supported by scRNA-seq data (Figure 6\u2014figure supplement 2A-E) and immunofluorescence (Figure 6\u2014figure supplement 2F). The identification of gMDSCs based on expression of characteristic genes is supported by cited literature (von Wulffen et al., 2023; Kao et al., 2023). The finding of increased neutrophils in PE placentas (C131) is supported by immunofluorescence data and citation to Akkari et al., 2024. However, the functional relationship between gMDSCs and neutrophils is not clearly established, and the GO enrichment results for cluster 3 seem contradictory (decreased frequency but enriched for inflammatory pathways).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "CellPhoneDB analysis revealed increased communication between macrophages and T/NK cells in mice injected with pro-inflammatory macrophages, with significant enhancement of the IGF1-IGF1R ligand-receptor pair. Flow cytometry confirmed increased frequencies of IGF1+CD14+ macrophages and IGF1R+CD4+ T cells in PE placentas. Literature supports that IGF1R signaling promotes Th17 differentiation over Treg differentiation through increased aerobic glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C132-C138 are supported by CellPhoneDB analysis (Figure 7A, Figure 7\u2014figure supplement 1A-B), flow cytometry data (Figure 7B), and cited literature (Bekkering et al., 2018; DiToro et al., 2020). The identification of IGF1-IGF1R as a key signaling axis is a major mechanistic finding. However, the sample size for human placenta analysis is small (n=12 NP, n=4 PE), which limits statistical power. The CellPhoneDB analysis provides computational prediction of cell-cell interactions, but experimental validation is needed.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C129",
-      "C130",
-      "C131",
-      "C132",
-      "C133",
-      "C134",
-      "C135"
+      "C139",
+      "C140",
+      "C141"
     ],
-    "result": "Mice with a history of PE in their first pregnancy show increased PE-like symptoms and elevated IL-17A in memory-like CD4+ T cells during their second pregnancy, suggesting memory-like Th17 cells contribute to PE recurrence.",
+    "result": "In vitro co-culture experiments showed that PE-EV-treated macrophages induced higher frequencies of memory-like CD45RO+CCR7+IL-17A+CD4+ cells compared to NP-EV-treated macrophages, and this induction was significantly reduced by treatment with the IGF1R inhibitor BMS-754807.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C129-C135 are supported by second pregnancy experiments (Figure 6\u2014figure supplement 1C-E). The citation to Rowe et al., 2012 (C129) provides context about memory Tregs in normal pregnancy. The data suggest a role for memory Th17 cells in PE recurrence, though the mechanism requires further investigation. Sample size (n=9 per group) is adequate.",
+    "evaluation": "Claims C139-C141 are supported by in vitro co-culture experiments shown in Figure 7C-D. The use of trophoblast-derived extracellular vesicles (EVs) to induce macrophage polarization is based on prior work (Liu et al., 2022, C139). The experiment demonstrates that IGF1R signaling is necessary for pro-inflammatory macrophage-induced memory-like Th17 cell differentiation. Sample size is adequate (n=10 per group). However, the manuscript does not provide details on EV characterization or the concentration of BMS-754807 used, which are important for reproducibility.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R21",
     "claim_ids": [
-      "C136",
-      "C137",
-      "C138",
-      "C139",
-      "C140"
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
     ],
-    "result": "Single-cell RNA sequencing identifies cluster 3 granulocytes expressing gMDSC-associated genes (Ly6g, S100a8, Retnlg, Wfdc21) that are decreased in pro-inflammatory macrophage-injected mice and show enrichment for TNF production and leukocyte-mediated immunity.",
+    "result": "In an LPS-induced PE mouse model with CD4+ T cell depletion and reconstitution, mice injected with CD4+ T cells pre-treated with IGF1R inhibitor BMS-754807 showed decreased embryo resorption, increased fetal parameters, decreased SBP and UACR, and decreased frequency of memory-like Th17 cells at the maternal-fetal interface compared to mice receiving untreated CD4+ T cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C136-C140 are supported by scRNA-seq data (Figure 6\u2014figure supplement 2A-E) with appropriate citations for gMDSC markers. The GO enrichment findings are somewhat paradoxical (decreased gMDSCs showing enrichment for immune functions), which may reflect altered activation states.",
+    "evaluation": "Claims C142-C147 are supported by experimental data shown in Figures 7E-H. This in vivo experiment provides causal evidence that IGF1R signaling in CD4+ T cells is necessary for memory-like Th17 cell induction and PE development. The experimental design using anti-CD4 antibody depletion followed by reconstitution with treated or untreated T cells is appropriate. Sample sizes appear adequate (n=6-7 per group). However, the use of LPS to induce PE is a different model than RUPP, which may limit direct comparison. The manuscript does not specify the dose or duration of BMS-754807 treatment.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R22",
     "claim_ids": [
-      "C141",
-      "C142"
+      "C17",
+      "C148"
     ],
-    "result": "Immunofluorescence analysis reveals increased CD15+CD66b+ neutrophils in PE patient placentas, suggesting neutrophils play an important role in PE development.",
+    "result": "The study concludes that pro-inflammatory macrophages orchestrate a PE-specific immune cell network at the maternal-fetal interface, inducing memory-like Th17 cells via IGF1-IGF1R signaling and suppressing gMDSCs, leading to PE-like symptoms and contributing to disease recurrence.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C141-C142 are supported by immunofluorescence data (Figure 6\u2014figure supplement 2F). The inference about neutrophil importance (C142) is reasonable and supported by citation to Akkari et al., 2024. However, this is a relatively limited analysis and would benefit from quantification across more samples.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C143",
-      "C144",
-      "C145"
-    ],
-    "result": "CellPhoneDB analysis of single-cell RNA sequencing data reveals increased communication between macrophages and T/NK cells in pro-inflammatory macrophage-injected mice, with significant enhancement of the IGF1-IGF1R ligand-receptor pair.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C143-C145 are supported by CellPhoneDB analysis of scRNA-seq data (Figure 7\u2014figure supplement 1A-B, Figure 7A). This computational prediction identifies IGF1-IGF1R as a candidate mechanism for macrophage-T cell communication, which is then validated experimentally in subsequent claims.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C146",
-      "C147"
-    ],
-    "result": "IGF1 signaling through IGF1R affects immune function maintenance and can increase aerobic glycolysis, favoring Th17 differentiation over Treg differentiation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C146-C147 represent prior knowledge supported by citations to Bekkering et al., 2018 and DiToro et al., 2020. This provides mechanistic context for the IGF1-IGF1R findings.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R25",
-    "claim_ids": [
-      "C148",
-      "C149"
-    ],
-    "result": "Flow cytometry analysis shows significantly increased frequencies of IGF1+CD14+ macrophages and IGF1R+CD4+ T cells in PE placentas compared to normal pregnancy.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C148-C149 are supported by flow cytometry data (Figure 7B). However, the sample size for PE is small (n=4) compared to NP (n=12), which limits statistical power. Additional samples would strengthen this finding.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R26",
-    "claim_ids": [
-      "C150",
-      "C151",
-      "C152"
-    ],
-    "result": "In vitro co-culture experiments show that PE-EV-treated macrophages induce increased frequencies of memory-like Th17 cells, which is blocked by IGF1R inhibitor BMS-754807.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C150-C152 are supported by in vitro co-culture experiments (Figure 7C-D). The citation to Liu et al., 2022 (C150) provides context about PE-EVs. The IGF1R inhibitor experiment (C152) provides mechanistic evidence for IGF1-IGF1R involvement. Sample size (n=10 per group) is adequate for in vitro experiments.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R27",
-    "claim_ids": [
-      "C153",
-      "C154",
-      "C155",
-      "C156",
-      "C157",
-      "C158"
-    ],
-    "result": "In vivo experiments using an LPS-induced PE model show that IGF1R inhibition on CD4+ T cells reduces PE-like symptoms, including decreased embryo resorption, improved fetal parameters, reduced blood pressure and proteinuria, and decreased memory-like Th17 cells at the maternal-fetal interface.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C153-C158 are supported by in vivo experiments using LPS-induced PE model with IGF1R inhibitor (Figure 7E-H). The experimental design includes appropriate controls (anti-CD4 antibody depletion followed by T cell transfer). Sample sizes (n=6-7 per group) are adequate. This provides strong evidence for IGF1-IGF1R involvement in memory Th17 induction and PE pathogenesis.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R28",
-    "claim_ids": [
-      "C12",
-      "C13",
-      "C14",
-      "C15",
-      "C16",
-      "C17"
-    ],
-    "result": "Transferring F4/80+CD206\u2212 pro-inflammatory macrophages with a Folr2+Ccl7+Ccl8+C1qa+C1qb+C1qc+ phenotype from PE mice to normal pregnant mice induces memory-like IL-17a+Rora+Il1r1+TNF+Cxcr6+S100a4+CD44+ Th17 cells via IGF1-IGF1R signaling, increases memory-like CD8+ T cells, inhibits gMDSC production, and leads to PE-like symptoms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12-C17 represent the central mechanistic finding of the study, integrating results from scRNA-seq, adoptive transfer experiments, and IGF1R inhibition studies. The evidence chain is strong: (1) scRNA-seq identifies pro-inflammatory macrophage phenotype and memory Th17 cells, (2) adoptive transfer demonstrates sufficiency, (3) IGF1R inhibition demonstrates mechanism. However, direct demonstration that the specific Folr2+Ccl7+Ccl8+C1qa+C1qb+C1qc+ phenotype is necessary would further strengthen causality.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R29",
-    "claim_ids": [
-      "C159"
-    ],
-    "result": "This study reveals a PE-specific immune cell network regulated by pro-inflammatory macrophages.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C159 is a summary statement supported by the collective evidence from CyTOF, scRNA-seq, and functional experiments. The study demonstrates PE-specific immune alterations (not seen in GDM/GDM&PE) and establishes a regulatory role for pro-inflammatory macrophages through multiple lines of evidence.",
+    "evaluation": "Claims C17 and C148 represent the overall conclusions of the study, which are supported by the collective evidence from CyTOF, scRNA-seq, and multiple in vivo experiments. The study provides a comprehensive characterization of the PE-specific immune microenvironment and establishes a mechanistic link between pro-inflammatory macrophages, memory-like Th17 cells, and PE pathogenesis through IGF1-IGF1R signaling. However, several limitations should be noted: (1) differences in BMI and gestational age between groups in human samples, (2) limited GDM&PE samples, (3) use of different PE mouse models (RUPP and LPS), (4) potential effects of PLX3397 on fetal macrophages, and (5) lack of functional validation of memory-like Th17 cells in human samples.",
     "result_type": "MAJOR"
   }
 ]

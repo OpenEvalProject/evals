@@ -15,125 +15,128 @@
       "C41",
       "C42",
       "C43",
-      "C44",
-      "C45"
+      "C44"
     ],
-    "result": "The study used a sample of 144 participants (ages 20-50) from the MPI-Leipzig Mind-Brain-Body database who underwent 1-hour resting-state fMRI scans with multidimensional experience sampling (MDES) at four time points, and completed 21 personality questionnaires in a separate session. Data were collected over 5 days with MRI on day 3.",
+    "result": "The study collected data from 144 participants (74 men, 70 women, mean age ~27 years) who underwent 1-hour resting-state fMRI scans divided into four 15-minute sessions, each followed by multidimensional experience sampling (MDES) with 12 questions. Participants also completed 21 personality questionnaires in a separate session. The data comes from the MPI-Leipzig Mind-Brain-Body database.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28-C45 provide comprehensive methodological details about the sample, data collection protocol, and measures used. These are straightforward descriptive claims about the study design that are internally consistent and appropriately detailed for reproducibility.",
+    "evaluation": "Claims C28-C44 provide comprehensive methodological details about sample characteristics, data collection procedures, and measurement instruments. The sample size (n=144), demographic information, scanning protocol, and questionnaire batteries are clearly documented. These are standard descriptive claims about study design that are internally consistent.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
+      "C45",
       "C46",
       "C47",
-      "C48",
-      "C49",
-      "C75"
+      "C48"
     ],
-    "result": "Principal component analysis of 71 personality trait variables from 144 participants (with 3.15% missing data imputed by mean) yielded five trait components explaining 48.4% of variance, selected using the Kaiser-Guttman criterion (eigenvalues >1). These components largely mapped onto the Big Five personality factors: neuroticism, conscientiousness, extraversion, agreeableness, and openness to experience.",
+    "result": "Principal component analysis (PCA) of 71 personality variables yielded five trait components (eigenvalues >1, explaining 48.4% variance) that map onto the Big Five personality factors. PCA of 12 MDES questions yielded five thought patterns (eigenvalues >1, explaining 65.4% variance) labeled as 'modality', 'positive episodic social', 'specific internal', 'self-relevant', and 'prospective'.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C49 and C75 describe a standard PCA procedure with appropriate component selection criteria. The mapping to Big Five is supported by Figure 1A showing the loadings. The variance explained (48.4%) is reasonable for personality data, though modest. The methodology is sound and results are clearly presented.",
+    "evaluation": "Claims C45-C48 describe the PCA results with specific variance explained and eigenvalue criteria. The Kaiser-Guttman criterion (eigenvalues >1) is a standard approach. The mapping to Big Five is reasonable given the questionnaire battery. However, the interpretation of thought patterns is somewhat subjective based on loading patterns, though this is typical for exploratory factor analysis.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54"
+      "C49",
+      "C50"
     ],
-    "result": "Principal component analysis of MDES data (576 observations of 12 variables) revealed five thought patterns with eigenvalues >1, explaining 65.4% of variance. After varimax rotation, these were named 'modality' (images vs words), 'positive episodic social', 'specific internal', 'self-relevant', and 'prospective'. Scores were averaged across four scans for each participant.",
+    "result": "Thought patterns showed low-to-moderate single-session reliability (ICC range: 0.31-0.59) but high reliability when averaged across four sessions (ICC range: 0.64-0.85 for first four components, 0.64 for prospective component).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C54 describe a methodologically sound PCA of experience sampling data. The variance explained (65.4%) is good for this type of data. The naming of components based on loadings (Figure 1B) is appropriate. Averaging across sessions is justified given the stability analysis (C76-C77).",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C49-C50 report ICC values for thought pattern reliability. The progression from low-to-moderate single-session to high averaged reliability is statistically expected and supports the decision to average across sessions. The ICC values are clearly reported with appropriate interpretation of variability between sessions.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C76",
-      "C77"
+      "C51",
+      "C52",
+      "C53",
+      "C93",
+      "C94",
+      "C95"
     ],
-    "result": "The five thought patterns showed low-to-moderate single-session ICCs (0.31-0.59) but high ICCs when averaged across sessions (0.64-0.85 for first four components), indicating variability between sessions but good overall reliability.",
+    "result": "Multivariate regression showed that trait 'negative affect' (neuroticism) significantly predicted thought patterns (F(5,134)=3.88, p=0.003, partial \u03b7\u00b2=0.127). Specifically, higher neuroticism was associated with less 'positive episodic social' thought (\u03b2=-0.229, p=0.005) and greater 'self-relevant' thought (\u03b2=0.229, p=0.006). Neuroticism accounted for 29% of total trait variance. No other significant trait-thought relationships were found.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C76-C77 report appropriate reliability statistics. The pattern of low single-session but high averaged ICCs is expected for state measures and justifies the averaging approach. However, the prospective component shows lower reliability (0.64), which should be noted as a limitation.",
+    "evaluation": "Claims C51-C53, C93-C95 report regression results with appropriate statistics (F-values, p-values, effect sizes, confidence intervals). The findings are internally consistent and the effect sizes are modest but significant. The authors appropriately note the limited findings beyond neuroticism and discuss sample size limitations (C92-C96).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C79",
-      "C80"
+      "C32",
+      "C33",
+      "C34",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
     ],
-    "result": "Trait neuroticism was significantly associated with less 'positive episodic social' thought (\u03b2 = -0.229, p=0.005, partial \u03b7\u00b2 = 0.055) and greater 'self-relevant' thought (\u03b2 = 0.229, p=0.006, partial \u03b7\u00b2 = 0.053).",
+    "result": "Connectivity gradients were calculated using BrainSpace toolbox with PCA decomposition. The first three gradients showed: G1 differentiating visual-to-DMN, G2 showing somatomotor-visual dissociation, and G3 capturing DMN-frontoparietal segregation. These patterns were similar to prior literature (Margulies et al., 2016) and showed high stability across sessions (discriminability indices: 0.96, 0.92, 0.98).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C79-C80 report statistically significant associations with appropriate effect sizes and confidence intervals. The effect sizes are small-to-moderate (partial \u03b7\u00b2 ~0.05), which is typical for personality-cognition relationships. The bidirectional pattern (negative with positive social, positive with self-relevant) is theoretically coherent.",
+    "evaluation": "Claims C32-C34, C54-C59 describe gradient methodology and results. The use of PCA for gradient decomposition is justified by citing Hong et al., 2020 for better reliability. The discriminability indices indicate high stability. Comparison to prior work (Margulies et al., 2016) provides validation, though the authors note differences due to PCA vs. diffusion map approaches.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
       "C60",
       "C61",
       "C62",
       "C63",
-      "C64"
+      "C64",
+      "C6"
     ],
-    "result": "Functional connectivity was analyzed using the Schaefer 400 parcellation. Individual 400\u00d7400 connectivity matrices were calculated using Pearson correlation, averaged to create a group matrix, and decomposed into 10 gradients using PCA in BrainSpace. Individual gradients were aligned to group gradients and to an HCP reference. Analyses focused on the first three gradients, which were characterized using Neurosynth decoding and Yeo network profiles.",
+    "result": "Trait introversion showed significant multivariate effects on brain gradients. For more introverted individuals, ventral attention network (VAN) regions (anterior insula, operculum, cingulate) were more aligned with somatomotor systems (G2) and default mode network (G3), while orbitofrontal cortex showed greater transmodal similarity (G1). Posterior cingulate showed greater segregation from visual cortex (G2).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C64 describe a rigorous gradient analysis pipeline using established methods. The choice of PCA over nonlinear methods is justified by citation to Hong et al. 2020 (C59). Alignment to HCP provides comparability. Focusing on first three gradients is appropriate given prior characterization. The methodology is state-of-the-art and well-justified.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C60-C64, C6 report the primary finding linking introversion to VAN-somatomotor-DMN connectivity patterns. The results are supported by multiple parcels showing consistent effects across gradients with appropriate statistical corrections (FDR q<0.05, Bonferroni p<0.025). Table 3 provides detailed statistics. The interpretation aligns with the tri-partite network hypothesis, though causality cannot be established from correlational data.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C86"
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C7"
     ],
-    "result": "The first three gradients captured visual-to-DMN (G1), somatomotor-visual dissociation (G2), and DMN-frontoparietal segregation (G3) axes, similar to prior literature. Gradients showed high stability across sessions (discriminability indices: 0.964, 0.918, 0.983), comparable to Hong et al. 2020.",
+    "result": "The 'specific internal' thought pattern was associated with decoupling between dorsal attention network (DAN) and visual regions. Specifically, superior parietal lobule (DAN) showed lower G1 scores (more transmodal), higher G2 scores (less visual), and greater G3 separation from DMN. Parahippocampal gyrus showed a gradient from visual to transmodal/DMN with increasing 'specific internal' thought.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C81-C86 describe gradient characteristics with appropriate validation. The similarity to Margulies et al. 2016 (C84) provides convergent validity, though differences due to PCA vs. diffusion embedding are noted. High discriminability indices (C85-C86) support reliability. Figure 2 provides clear visualization.",
+    "evaluation": "Claims C65-C68, C7 describe the second major finding linking thought patterns to DAN-visual-DMN connectivity. The results show consistent patterns across multiple gradients with appropriate statistical corrections. The findings converge with prior work (Turnbull et al., 2019a) showing DAN reduction during self-generated thought. However, the interpretation of 'decoupling' is based on gradient scores rather than direct connectivity measures.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C65",
-      "C66",
-      "C67",
-      "C68"
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C27"
     ],
-    "result": "Stability was assessed using intra-class correlation coefficients (ICC type 3, two-way mixed-effects) for thought patterns and discriminability indices for gradients, treating the four scans as separate instances. Analysis included 135 participants with complete data.",
+    "result": "The study is framed around a 'tri-partite' network model of conscious thought involving ventral attention network (VAN), dorsal attention network (DAN), and default mode network (DMN). This model proposes that VAN gates conscious access by influencing DAN-DMN interactions, with DAN supporting external content and DMN supporting internal representations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C65-C68 describe appropriate reliability methods. ICC type 3 is correct for non-independent samples (C67). Discriminability indices are appropriate for gradient data following Hong et al. 2020. The exclusion of 9 participants with incomplete data (C68) is transparent and appropriate.",
+    "evaluation": "Claims C5, C16-C19, C27 describe the theoretical framework. This is well-supported by citations to recent work (Huang et al., 2021; Smallwood et al., 2021b; Corbetta and Shulman, 2002). The framework provides a coherent organizing principle for interpreting the results, though it remains a theoretical model rather than an established fact.",
     "result_type": "MINOR"
   },
   {
@@ -142,207 +145,132 @@
       "C69",
       "C70",
       "C71",
-      "C72",
-      "C73",
-      "C74"
+      "C72"
     ],
-    "result": "Multiple multivariate regression was performed using SurfStat, with 400 models (one per parcel) testing associations between the first three gradients (dependent variables) and five trait scores, five thought scores, plus covariates (age, motion, gender). Results were FDR-corrected (q<0.05) at the multivariate level, with Bonferroni-corrected (p<0.025) univariate follow-ups. A separate analysis examined trait-thought relationships.",
+    "result": "The study's findings on introversion and VAN-somatomotor connectivity align with prior work showing sensorimotor cortex links to deliberate mind-wandering (Golchert et al., 2017) and episodic social cognition (Turnbull et al., 2019b). Introversion reflects predisposition toward internal subjective states (Jung, 1995), suggesting an important relationship between sensorimotor cortex and VAN in internal self-generated thought.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C74 describe a rigorous statistical approach with appropriate multiple comparison corrections. The two-stage approach (multivariate FDR, then univariate Bonferroni) is conservative and appropriate. Including covariates (age, motion, gender) controls for confounds. The methodology is sound, though the sample size (n=144) may limit power for detecting small effects.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C69-C72 integrate current findings with prior literature. The citations support the individual statements, and the synthesis is reasonable. However, C72 is somewhat speculative ('may be an important relationship') and represents an inference rather than a direct finding. The convergence with prior work strengthens the interpretation but doesn't establish causality.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91"
+      "C73",
+      "C74",
+      "C75",
+      "C90"
     ],
-    "result": "Trait introversion showed significant multivariate effects. Specifically, introverted individuals showed: (1) greater similarity of right orbitofrontal cortex with transmodal regions (G1); (2) VAN regions (anterior insula, operculum, cingulate) closer to somatomotor end (G2) and more integrated with DMN (G3); and (3) posterior cingulate more segregated from visual cortex (G2).",
+    "result": "The study's DAN findings overlap with prior work by Turnbull et al., 2019a showing reduced DAN activity during self-generated thought and greater DAN-DMN separation in individuals prone to self-generated thought. This convergence between gradient-based and experience-sampling approaches highlights consistency across methodologies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C87-C91 report the primary introversion findings with appropriate statistical corrections (Table 3). The pattern across gradients is internally consistent and theoretically coherent with the tri-partite network model. Figure 4 provides clear visualization. Effect sizes (partial \u03b7\u00b2 0.06-0.13) are small-to-moderate but reasonable for individual differences in brain organization.",
+    "evaluation": "Claims C73-C75, C90 compare current findings to prior work. The citations support the specific claims about Turnbull et al., 2019a findings. The convergence is notable given different analytical approaches (gradients vs. echoes analysis vs. experience sampling), strengthening confidence in the results. However, the overlap is qualitative rather than quantitative.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C92",
-      "C93",
-      "C94",
-      "C95"
+      "C76",
+      "C8"
     ],
-    "result": "Specific internal thought showed significant effects confined to dorsal attention and visual networks. Superior parietal lobule (DAN) showed lower G1 scores (more transmodal), higher G2 scores (less visual), and greater G3 separation from DMN with more specific internal thought. Parahippocampal gyrus/extrastriate showed a spread along G1 related to specific internal vs. surroundings focus.",
+    "result": "The study establishes that neural accounts of conscious experience provide a valuable framework for understanding brain-cognition links at rest, and that interactions between attention systems and DMN are important influences on ongoing thought at rest.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C92-C95 report the primary thought pattern findings with appropriate corrections (Table 3). The DAN findings are particularly robust across all three gradients, supporting the decoupling hypothesis. Figure 5 provides clear visualization. The network specificity (DAN and visual only) is theoretically meaningful.",
+    "evaluation": "Claims C76, C8 represent the study's main conclusions. These are supported by the convergence of findings with the tri-partite network model and prior literature. However, the strength of the conclusion depends on accepting the theoretical framework and the interpretation of gradient patterns as reflecting functional interactions. The correlational nature of the data limits causal inference.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C6",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C100",
-      "C101",
-      "C102"
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
     ],
-    "result": "For introverted individuals, VAN regions showed greater alignment with somatomotor regions and DMN, consistent with prior findings linking sensorimotor cortex to deliberate mind-wandering and episodic social cognition. This pattern aligns with introversion reflecting a predisposition toward internal subjective states, suggesting an important relationship between sensorimotor cortex and VAN in internal self-generated thought.",
+    "result": "The data provides evidence for the 'decoupling' hypothesis, showing that both introversion and 'specific internal' thought are linked to reduced similarity between attention/cognition regions and visual cortex. This occurred without an external task, ruling out task-related 'lapse' explanations and providing novel insight into how macro-scale patterns support detailed internal experience.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6 and C96-C102 integrate the introversion findings with prior literature. The convergence with Golchert et al. 2017 and Turnbull et al. 2019b (C99-C100) provides strong support. The theoretical interpretation linking introversion to internal focus (C101) is well-established. However, C102 is somewhat speculative as it extends beyond the current data.",
+    "evaluation": "Claims C77-C82 interpret findings in relation to the decoupling hypothesis. The evidence is consistent with the hypothesis (C78-C80 supported by citations), and the absence of an external task (C82) is an important design feature. However, C79 is somewhat speculative about mechanism ('allows...to persist'), and the interpretation of gradient patterns as 'decoupling' involves theoretical assumptions about what gradient distances represent functionally.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C7",
-      "C103",
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108"
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91"
     ],
-    "result": "Detailed self-generated thought was associated with decoupling of dorsal parietal cortex from visual network (G1, G2) and greater separation from DMN (G3). This region overlaps with DAN regions showing reduced activity during self-generated thought in prior work, suggesting DAN's role in external attention. Greater DAN-DMN segregation is associated with capacity for thoughts less linked to external environment.",
+    "result": "The study acknowledges limitations including focus on resting state (findings may differ under task conditions), use of static rather than dynamic measures (though static patterns showed reasonable 1-hour stability), and inability to capture all dynamic features of ongoing experience.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7 and C103-C108 integrate the thought pattern findings with prior literature. The overlap with Turnbull et al. 2019a (C105) provides strong convergent validity. The interpretation of DAN's role in external attention (C106) is well-supported. The conclusion about DAN-DMN segregation (C108) is consistent with the data and prior work, though somewhat inferential.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C83-C91 discuss study limitations appropriately. The citations support the concerns about context-dependence (C83, C85-C86) and dynamic features (C91). The justification for static measures (C88-C89) is reasonable given prior work and observed stability. The acknowledgment of limitations is balanced and scientifically appropriate, though some statements (C84, C91) are speculative about what might be found with different approaches.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C8",
-      "C109",
-      "C110"
+      "C92",
+      "C96",
+      "C97",
+      "C98"
     ],
-    "result": "The study establishes that interactions between attention systems (VAN, DAN) and DMN are important influences on ongoing thought at rest, with high convergence between current findings and prior conscious experience research in both regions and hypothesized functions. This demonstrates that neural accounts of conscious experience provide a valuable framework for understanding brain-cognition links at rest.",
+    "result": "The study acknowledges that larger sample sizes would likely reveal more extensive trait-thought-brain correlations, and suggests future work should consider additional trait measures (e.g., self-consciousness, autistic tendencies) and more frequent experience sampling with methodological advances for mapping momentary changes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8-C110 present the main conclusions. The convergence with prior work (C109) is well-demonstrated through multiple citations and overlapping findings. The value of the conscious experience framework (C110) is supported by the coherent pattern of results. However, these are somewhat broad interpretive claims that extend beyond the specific findings.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C92, C96-C98 discuss sample size limitations and future directions. C92 is supported by citations to recent discussions about reproducibility. C96-C98 are speculative but reasonable suggestions for future work. The acknowledgment that only neuroticism showed robust trait-thought relationships (C93-C95) is honest and appropriate given the sample size concerns raised in the field.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C111",
-      "C112",
-      "C113",
-      "C114",
-      "C115",
-      "C116"
-    ],
-    "result": "The data provides evidence for the 'decoupling' hypothesis, which posits that reduced processing of external input allows internal thought to persist. Both introversion and specific internal thought were linked to reduced similarity between attention/cognition regions and visual cortex. Critically, this occurred without an external task, ruling out accounts of decoupling as task-related lapses.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C111-C116 present a key theoretical contribution. The decoupling hypothesis (C112-C113) is well-established in prior work. The current data (C114) supports this through convergent findings for both trait and state measures. The absence of an external task (C116) is an important design feature that strengthens the interpretation. However, the causal claim about reduced processing 'allowing' internal thought (C112) goes beyond correlational data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C117",
-      "C118",
-      "C119",
-      "C120",
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125"
-    ],
-    "result": "The study focused on static indices of neural activity at rest, which showed reasonable stability across the 1-hour session and mapped closely onto prior experience sampling studies. However, neural correlates may differ under task conditions, as DMN can integrate with task-positive systems and support task-focused cognition. Dynamic features of ongoing experience may not be captured by static brain organization.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C117-C125 appropriately acknowledge limitations. The focus on static measures (C121) is justified by stability findings (C123) and convergence with prior work (C124). The caveats about task context (C118-C120) and dynamic features (C125) are important and well-supported by citations. This demonstrates appropriate scientific caution about generalizability.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130"
-    ],
-    "result": "The study acknowledges sample size limitations (n=144), noting that neuroticism accounted for 29% of trait variance and was the only trait showing significant thought associations. Larger samples would likely reveal more extensive trait-thought and brain-cognition correlations. Future work should consider additional trait measures and more frequent experience sampling with methodological advances for mapping momentary changes.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C126-C130 provide appropriate discussion of limitations and future directions. The sample size concern (C126-C128) is valid given recent discussions about reproducibility, though n=144 is reasonable for this type of study. The suggestions for future work (C129-C130) are constructive and well-justified. This demonstrates good scientific practice in acknowledging limitations.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
       "C1",
       "C2",
       "C3",
+      "C4",
       "C9",
       "C10",
       "C11",
-      "C12"
-    ],
-    "result": "Resting-state brain activity provides insight into neural function organization, individual trait differences, self-generated thoughts, psychiatric conditions, developmental changes, neurological disorders, and self-generated experiences.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C3 and C9-C12 present established background knowledge about resting-state fMRI, supported by multiple citations. These are appropriate framing statements for the introduction, though they are general rather than specific contributions of this study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
-      "C4",
+      "C12",
       "C13",
       "C14",
       "C15"
     ],
-    "result": "Interpreting resting-state fMRI is challenging because both trait-level aspects and dynamic ongoing experience contribute to observed activity. This challenge can be addressed by pairing imaging data with additional measures such as thought patterns, task-related thinking traits, or personality features.",
+    "result": "The introduction establishes that resting-state brain activity provides insight into neural organization, individual differences, and self-generated thoughts, but is challenging to interpret due to contributions from both traits and ongoing experience. Pairing imaging with additional measures can help constrain interpretation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4 and C13-C15 present the study's motivation and methodological approach. The challenge is well-established (C13-C14), and the proposed solution (C15) is supported by multiple citations. This provides clear rationale for the study design.",
+    "evaluation": "Claims C1-C4, C9-C15 provide background context supported by multiple citations. These represent established knowledge in the field (C1-C3, C9-C12) and logical inferences about methodological challenges (C4, C13). C15 is supported by recent methodological perspectives (Finn, 2021). These claims appropriately frame the study's rationale.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R20",
+    "result_id": "R16",
     "claim_ids": [
-      "C5",
-      "C16",
-      "C17",
-      "C18",
-      "C19",
       "C20",
       "C21",
       "C22",
       "C23",
       "C24",
       "C25",
-      "C26",
-      "C27"
+      "C26"
     ],
-    "result": "The tri-partite network account proposes that VAN (including anterior insula and dorsolateral prefrontal cortex) gates conscious access by influencing interactions between DAN (important for external content) and DMN (important for internal representations). This is supported by studies showing: (1) anterior insula activity determines conscious perception and gates external input through DAN-DMN interactions; (2) anesthesia-induced insula disruption reduces self-generated imagery; (3) dorsolateral prefrontal cortex correlates with both self-generated episodic thoughts and task focus; (4) dorsal parietal cortex activity reduces during self-generated thinking; and (5) trait self-generated thinking ability associates with DAN-DMN decoupling at rest.",
+    "result": "Prior work by Huang et al., 2021 and Turnbull et al., 2019a/b established that anterior insula activity determines conscious perception through DAN-DMN interactions, that dorsolateral prefrontal cortex correlates with both self-generated and task-focused thought, that DAN activity is reduced during self-generated thinking, and that trait variance in self-generated thought ability associates with DAN-DMN decoupling at rest.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5 and C16-C27 present the theoretical framework based on prior work. Each component is supported by specific citations (Huang et al. 2021, Turnbull et al. 2019a/b). This provides a clear, well-supported theoretical foundation for the current study. However, these are primarily literature review claims rather than new findings.",
+    "evaluation": "Claims C20-C26 summarize prior research findings that motivate the current study. Each claim is supported by specific citations. The summary is accurate to the cited work and provides appropriate context for the tri-partite network hypothesis. These are literature review claims rather than new findings.",
     "result_type": "MINOR"
   }
 ]

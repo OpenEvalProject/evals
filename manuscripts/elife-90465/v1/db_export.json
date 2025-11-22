@@ -1,0 +1,1734 @@
+{
+  "submission": {
+    "id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-22T00:12:32.343977Z",
+    "updated_at": "2025-11-22T00:12:32.343977Z"
+  },
+  "content": [
+    {
+      "id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "content_type": "manuscript",
+      "content_text": "# Robust, fast and accurate mapping of diffusional mean kurtosis\n\n## Authors\n\n- Megan E Farquhar<sup>1</sup> ([ORCID: 0000-0003-0647-3637](https://orcid.org/0000-0003-0647-3637))\n- Qianqian Yang<sup>1</sup> ([ORCID: 0000-0002-4331-5059](https://orcid.org/0000-0002-4331-5059)) \u2020\n- Viktor Vegh<sup>4</sup>\n\n### Affiliations\n\n1. School of Mathematical Sciences, Faculty of Science, Queensland University of Technology Brisbane Australia ([ROR:03pnv4752](https://ror.org/03pnv4752))\n2. Centre for Data Science, Queensland University of Technology Brisbane Australia ([ROR:03pnv4752](https://ror.org/03pnv4752))\n3. Centre for Biomedical Technologies, Queensland University of Technology Brisbane Australia ([ROR:03pnv4752](https://ror.org/03pnv4752))\n4. Centre for Advanced Imaging, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))\n5. ARC Training Centre for Innovation in Biomedical Imaging Technology Brisbane Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nDiffusional kurtosis imaging (DKI) is a methodology for measuring the extent of non-Gaussian diffusion in biological tissue, which has shown great promise in clinical diagnosis, treatment planning, and monitoring of many neurological diseases and disorders. However, robust, fast, and accurate estimation of kurtosis from clinically feasible data acquisitions remains a challenge. In this study, we first outline a new accurate approach of estimating mean kurtosis via the sub-diffusion mathematical framework. Crucially, this extension of the conventional DKI overcomes the limitation on the maximum b-value of the latter. Kurtosis and diffusivity can now be simply computed as functions of the sub-diffusion model parameters. Second, we propose a new fast and robust fitting procedure to estimate the sub-diffusion model parameters using two diffusion times without increasing acquisition time as for the conventional DKI. Third, our sub-diffusion-based kurtosis mapping method is evaluated using both simulations and the Connectome 1.0 human brain data. Exquisite tissue contrast is achieved even when the diffusion encoded data is collected in only minutes. In summary, our findings suggest robust, fast, and accurate estimation of mean kurtosis can be realised within a clinically feasible diffusion-weighted magnetic resonance imaging data acquisition time.\n\n## Introduction\n\nDiffusion-weighted magnetic resonance imaging (DW-MRI) over a period of more than 30 years has become synonymous with tissue microstructure imaging. Measures of how water diffuses in heterogeneous tissues allow indirect interpretation of changes in tissue microstructure (Le Bihan and Johansen-Berg, 2012). DW-MRI has predominantly been applied in the brain, where properties of white matter connections between brain regions are often studied (Lebel et al., 2019), in addition to mapping tissue microstructural properties (Tournier, 2019). Applications outside of the brain have clinical importance as well, and interest is growing rapidly.\n\nGenerally, DW-MRI involves the setting of diffusion weightings and direction over which diffusion is measured. Whilst diffusion tensor imaging (DTI) can be performed using a single diffusion weighting, a so-called b-shell, and at least six diffusion encoding directions (Le Bihan et al., 2001), other models tend to require multiple b-shells each having multiple diffusion encoding directions. Diffusional kurtosis imaging (DKI) is a primary example of a multiple b-shell, multiple diffusion encoding direction method (Jensen et al., 2005). DKI is considered as an extension of DTI (Jensen and Helpern, 2010; Hansen et al., 2013; Veraart et al., 2011b), where the diffusion process is assumed to deviate away from standard Brownian motion, and the extent of such deviation is measured via the kurtosis metric. Essentially, the increased sampling achieved via DKI data acquisitions allows more complex models to be applied to data (Van Essen et al., 2013; Shafto et al., 2014), in turn resulting in metrics of increased utility for clinical decision making.\n\nRecent clinical benefits of using kurtosis metrics over other DW-MRI-derived measures have been demonstrated for grading hepatocellular carcinoma (Li et al., 2022b), prognosing chronic kidney disease (Liu et al., 2022), differentiating parotid gland tumours (Huang et al., 2022), measuring response to radiotherapy treatment in bone tumour (Guo et al., 2022b) and glioblastoma (Goryawala et al., 2023), identifying tissue abnormalities in temporal lobe epilepsy patients with sleep disorders (Guo et al., 2022a) and brain microstructural changes in mild traumatic brain injury (Wang et al., 2022), monitoring of renal function and interstitial fibrosis (Li et al., 2022a), detecting the invasiveness of bladder cancer into muscle (Li et al., 2022d), aiding management of patients with depression (Maralakunte et al., 2023), delineating acute infarcts with prognostic value (Hu et al., 2022), predicting breast cancer metastasis (Zhou et al., 2023), diagnosing Parkinson\u2019s disease (Li et al., 2022c), amongst others reported prior and not listed here.\n\nThe routine use of DKI in the clinic has nonetheless lagged due the inability to robustly estimate the kurtosis metric (Veraart et al., 2011a; Tabesh et al., 2011; Kuder et al., 2012; Henriques et al., 2021). A known requirement for estimating kurtosis in DKI is to restrict the maximum b-value to $2000\u22123000\u00a0s/mm^{2}$ for brain studies (Jensen et al., 2005; Jensen and Helpern, 2010; Poot et al., 2010), with the optimal maximum b-value found to be dependent on tissue type (Poot et al., 2010). This suggests that the traditional kurtosis model is less accurate at representing the diffusion signal at large b-values. Moreover, multiple b-shell, multiple direction high-quality DW-MRI data can take many minutes to acquire, which poses challenges for clinical imaging protocols involving a multitude of MRI contrasts already taking tens of minutes to execute. Reduction of DKI data acquisition times through parallel imaging, optimisation of b-shells and directions have been investigated (Zong et al., 2021; Heidemann et al., 2010; Zelinski et al., 2008), and DW-MRI data necessary for DKI analysis has been shown to supersede the data required for DTI (Veraart et al., 2011b). Therefore, an optimised DKI protocol can potentially replace clinical DTI data acquisitions without adversely affecting the estimation of DTI metrics.\n\nFor DKI to become a routine clinical tool, DW-MRI data acquisition needs to be fast and provides a robust estimation of kurtosis. The ideal protocol should have a minimum number of b-shells and diffusion encoding directions in each b-shell. The powder averaging over diffusion directions improves the signal-to-noise ratio (SNR) of the DW-MRI data used for parameter estimation. Whilst this approach loses out on directionality of the kurtosis, it nonetheless provides a robust method of estimating mean kurtosis (Henriques et al., 2021), a metric of significant clinical value.\n\nInstead of attempting to improve an existing model-based approach for kurtosis estimation, as has been considered by many others, we considered the problem from a different perspective. In view of the recent generalisation of the various models applicable to DW-MRI data (Yang et al., 2022), the sub-diffusion framework provides new, unexplored opportunities, for fast and robust kurtosis mapping. We report on our investigation into the utility of the sub-diffusion model for practically useful mapping of mean kurtosis.\n\n## Results\n\nSimulation studies were conducted to establish the requirements on the number of diffusion times and the separation between them for accurate estimation of mean kurtosis based on the sub-diffusion model augmented with random Gaussian noise, following (Equation 10). Testing and validation were performed using the human Connectome 1.0 brain dataset (Tian et al., 2022). The 2 \u00d7 2 \u00d7 2 mm3 resolution data were obtained using two diffusion times $(\u0394=19,49ms)$ with a pulse duration of $\\delta=8ms$ and G = 31, 68, 105, 142, 179, 216, 253, and 290 mT/m, respectively, generating b-values = 50, 350, 800, 1500, 2400, 3450, 4750, and 6000 s/mm2, and b-values = 200, 950, 2300, 4250, 6750, 9850, 13500, and 17800 s/mm2, according to $b-value=(\\gamma\\deltaG)^{2}(\u0394\u2212\\delta/3)$. Up to 64 diffusion encoding directions per b-shell were set. The traditional method for mean kurtosis estimation was implemented (producing $K_{DKI}$), which is limited to the use of DW-MRI generated using a single diffusion time (Jensen et al., 2005; Jensen and Helpern, 2010; Veraart et al., 2011a; Poot et al., 2010), alongside our implementation based on the sub-diffusion model (Equation 3), wherein mean kurtosis $K^{\u2217}$ is computed as a function of the sub-diffusion model parameter \u03b2 (refer to (Equation 9)) using either a single or multiple diffusion times.\n\n### Multiple diffusion times for robust and accurate mean kurtosis estimation\n\nIn our simulations, we tested up to five distinct diffusion times to generate b-values. Figure 1 illustrates the effects of the number of diffusion times on the parameter estimation at various SNR levels. We draw attention to a number of features in the plots. First, as SNR is increased from 5 to 20 (rows 1\u20133), the variability in the estimated parameters ($D_{\\beta}$, $\\beta$, $K^{\u2217}$) decreases. Second, increasing the number of distinct diffusion times used for parameter estimation decreases estimation variability, with the most significant improvement when increasing from one to two diffusion times (rows 1\u20133). Third, sampling with two distinct diffusion times provides more robust parameter estimates than sampling twice as many b-values using one diffusion time (compare 2 and 2\u2032 violin plots, rows 1\u20133). Fourth, the last row (row 4) highlights the improvement in the coefficient of variation (CV) for each parameter estimate with increasing SNR. This result again confirms that the most pronounced decline of CV occurs when increasing from one to two diffusion times, and parameter estimations can be performed more robustly using DW-MRI data with a relatively high SNR.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig1-v1.jpg)\n\n**Figure 1.:** Simulation results on the effect of the number of diffusion times involved in the fitting of the sub-diffusion model (Equation 3) parameters $(D_{\\beta},\\beta)$ and computing $K^{\u2217}$ following (Equation 9) at various SNR levels.The true values for ($D_{\\beta}$, $\\beta$, $K^{\u2217}$) are set to (3 \u00d7 10\u20134, 0.75, 0.8125) to represent white matter (blue) and (5 \u00d7 10\u20134, 0.85, 0.4733) to represent grey matter (orange). Rows 1\u20133: Distributions of fitted parameter values using different number of diffusion times. 2\u2032 represents an additional simulation using two diffusion times but set to be the same, so it has the same number of data points in the fitting as for using two different diffusion times. Row 4: Coefficient of variation (CV) of the parameter values fitted using different number of diffusion times.\n\nIn Figure 2, we provide simulation results evaluating the choice of the two distinct diffusion times (assuming $\u0394_{1}<\u0394_{2}$) by measuring the goodness-of-fit of the model. The smaller of the two diffusion times is stated along the abscissa, and the difference, i.e., $\u0394_{2}\u2212\u0394_{1}$, is plotted along the ordinate. The quality of fitting was measured using the coefficient of determination (the larger the $R^{2}$ value, the better the goodness-of-fit of the model) for each combination of abscissa and ordinate values. The conclusion from this figure is that $\u0394_{1}$ should be small, whilst $\u0394_{2}$ should be as large as practically plausible. Note, DW-MRI echo time was not considered in this simulation, but as $\u0394_{2}$ increases, the echo time has to proportionally increase. Because of the inherent consequence of decreasing SNR with echo time, special attention should be paid to the level of SNR achievable with the use of a specific $\u0394_{2}$. Nonetheless, our findings suggest that when $\u0394_{1}=8\u00a0ms$, $\u0394_{2}$ can be set as small as $21 ms$ to achieve an $R^{2}>0.90$ with an SNR as low as 5. If $\u0394_{1}$ is increased past $15 ms$, then the separation between $\u0394_{1}$ and $\u0394_{2}$ has to increase as well, and such choices benefit from an increased SNR in the DW-MRI data. The Connectome 1.0 DW-MRI data was obtained using $\u0394_{1}=19\u00a0ms$ and $\u0394_{2}=49\u00a0ms$, leading to a separation of $30 ms$. For this data, it is expected that with SNR = 5 an $R^{2}$ around 0.9 is feasible, and by increasing SNR to 20, the $R^{2}$ can increase to a value above 0.99.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig2-v1.jpg)\n\n**Figure 2.:** Surface plots of $R^{2}$ values achieved with fitting simulated data with two diffusion times, $\u0394_{1}$ and $\u0394_{2}$, to the sub-diffusion model (Equation 3) at various SNR levels.$R^{2}$ values were computed by comparing the estimated mean kurtosis with the true kurtosis. $R^{2}$ contours at the 0.85, 0.90, 0.95, and 0.99 levels have been provided for visualisation purposes.\n\nIn Figure 3, we present the scatter plots of simulated $K$ values versus fitted $K$ values using simulated data with different number of diffusion times at various SNR levels. Four cases are provided, including fitting simulated data generated with $\u0394_{1}=19\u00a0ms$ (row 1) or $\u0394_{2}=49\u00a0ms$ (row 2), fitting data with both diffusion times (row 3), and fitting data with three diffusion times (row 4). $R^{2}$ values for each case at each SNR level are provided. This result verifies that sub-diffusion based kurtosis estimation (blue dots) improves using multiple diffusion times. The improvement in $R^{2}$ is prominent when moving from fitting single diffusion time data to two diffusion times data, especially when the data is noisy (e.g., SNR = 5 and 10). The improvement gained by moving from two to three distinct diffusion times is marginal (less than 0.01 improvement in $R^{2}$ value at SNR = 5 and 10, and no improvements for SNR = 20 data). Moreover, our simulation findings highlight the deviation away from the true kurtosis $K$ by using the traditional DKI method (orange dots), especially with kurtosis values larger than 1. Overall, fitting sub-diffusion model (Equation 3) to data with two adequately separated diffusion times can lead to robust estimation of mean kurtosis, via (Equation 9).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig3-v1.jpg)\n\n**Figure 3.:** Scatter plots of simulated $K$ values versus fitted $K$ values for simulated data with different number of diffusion times at various SNR levels.The simulated data is created using the sub-diffusion model with random normal noise (Equation 10). Blue dots represent kurtosis based on fitting the sub-diffusion model (Equation 3). Orange dots represent kurtosis based on fitting the traditional diffusional kurtosis imaging (DKI) model (Equation 6). Black line is a reference line for $R^{2}=1.00$, indicating fitted kurtosis values are 100% matching the simulated ones.\n\n### Time-dependence in DKI metrics\n\nIn Figure 4, we show the time-dependence effect of the DKI metrics ($D_{DKI}$ and $K_{DKI}$) after fitting the standard DKI model to our simulated data. In this fitting, we consider b-values of 0, 1000, 1400, and 2500 s/mm2, and vary the diffusion time, as in Jelescu et al., 2022. We depict the parameter estimates, $D_{DKI}$ and $K_{DKI}$, from simulated data with added noise (SNR = 20) in (A) and (B) for the diffusion time between 10 and 110 ms. In (C) and (D), using data with no added noise, we illustrate the long-term fitting results and trends in the parameter estimates. In both (A) and (C), as diffusion time increases, $D_{DKI}$ decreases as expected for an effective diffusion coefficient. The mean $D_{DKI}$ (averaged over 1000 simulations) agrees with the true diffusivity $D^{\u2217}$. When it comes to the kurtosis $K_{DKI}$, in the noiseless data setting (D), we see $K_{DKI}$ is converging to the true kurtosis value $K^{\u2217}$ at large diffusion time, whilst in the noisy data setting (B), this trend is not obvious within the experimental diffusion time window. More explanations of the observed time-dependence of diffusivity and kurtosis are provided in the Discussion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig4-v1.jpg)\n\n**Figure 4.:** Time-dependence in diffusional kurtosis imaging (DKI) metrics using simulated data at different diffusion times ($\u0394\u00af$).The true values for ($D_{\\beta}$, $\\beta$, $K^{\u2217}$) used in the simulations are set to (3 \u00d7 10\u20134, 0.75, 0.8125) to represent white matter (blue dotted lines) and (5 \u00d7 10\u20134, 0.85, 0.4733) to represent grey matter (orange dotted lines). (A) and (B) use data with added random Gaussian noise (SNR = 20) to estimate the parameters $D_{DKI}$ and $K_{DKI}$. (C) and (D) use noiseless data to obtain estimates for large $\u0394\u00af$ values. Shaded regions in (A) and (B) represent the 95% confidence intervals of the estimates.\n\n### Towards fast DKI data acquisitions\n\nNext, we sought to identify the minimum number and combination of b-values to use for mean kurtosis estimation based on the sub-diffusion model (Equation 3). The simulation results were generated using the Connectome 1.0 DW-MRI data b-value setting, which has 16 b-values, 8 from $\u0394=19ms$ and 8 from $\u0394=49ms$.\n\nIn Figure 5, we computed $R^{2}$ values for all combinations of choices when the number of non-zero b-values is 2, 3, and 4. We then plotted the $R^{2}$ values sorted in ascending order for each considered SNR level. Notably, as the number of non-zero b-values increase, the achievable combinations increase as well (i.e., 120, 560, and 1820 for the three different non-zero b-value cases). The colours illustrate the proportion of b-values used in the fitting based on $\u0394_{1}$ and $\u0394_{2}$. For example, 1:0 means only $\u0394_{1}$ b-values were used, and 2:1 means two $\u0394_{1}$ and one $\u0394_{2}$ b-values were used to generate the result. The b-value combinations achieving highest $R^{2}$ values are displayed in the inset pictures and the b-values are provided in Table 1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig5-v1.jpg)\n\n**Figure 5.:** $R^{2}$ values for the b-value sampling optimisation based on DW-MRI data with SNR = 5, 10, and 20.The specifically investigated b-value combinations using two, three, and four non-zero b-values have been ordered by the size of the $R^{2}$ value. The colour bar depicts the proportion of $\u0394=19\u00a0ms$ and $\u0394=49\u00a0ms$ b-values needed to produce the corresponding $R^{2}$ value. Note, the different b-value combinations were assigned a unique identifier, and these appear along the abscissa for each of the three non-zero b-value cases. The b-value combinations achieving the highest $R^{2}$ values are displayed in the inset pictures and the b-values are provided in Table 1.\n\n**Table 1.**\n A selection of the best b-value sampling regimes to achieve the highest $R^{2}$ value in the three cases considered.The various categories correspond with two, three and four non-zero b-value sampling schemes, with $\u0394_{1}$ and $\u0394_{2}$ denoting the diffusion time setting used to generate the b-values. Note, entries are b-values in unit of s/mm2, and $\u0394_{1}=19\u00a0ms$ and $\u0394_{2}=49\u00a0ms$ were used to match the Connectome 1.0 DW-MRI data collection protocol. The entries listed at the bottom row are suggested optimal non-zero b-values for clinical practice.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Two b-values</th>\n      <th colspan=\"3\">Three b-values</th>\n      <th colspan=\"3\">Four b-values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>\u03941</td>\n      <td>\u03942</td>\n      <td>R2</td>\n      <td>\u03941</td>\n      <td>\u03942</td>\n      <td>R2</td>\n      <td>\u03941</td>\n      <td>\u03942</td>\n      <td>R2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>350</td>\n      <td>6750</td>\n      <td>0.01</td>\n      <td>350, 800</td>\n      <td>2300</td>\n      <td>0.46</td>\n      <td>350, 4750</td>\n      <td>950, 4250</td>\n      <td>0.61</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>800</td>\n      <td>2300</td>\n      <td>0.11</td>\n      <td>350</td>\n      <td>950, 4250</td>\n      <td>0.47</td>\n      <td>350, 6000</td>\n      <td>950, 6750</td>\n      <td>0.62</td>\n    </tr>\n    <tr>\n      <td>SNR = 5</td>\n      <td>350</td>\n      <td>4250</td>\n      <td>0.18</td>\n      <td>350</td>\n      <td>2300, 4250</td>\n      <td>0.47</td>\n      <td>350, 4750</td>\n      <td>950, 6750</td>\n      <td>0.62</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>350</td>\n      <td>950</td>\n      <td>0.26</td>\n      <td>50, 800</td>\n      <td>2300</td>\n      <td>0.48</td>\n      <td>350, 2400</td>\n      <td>950, 6750</td>\n      <td>0.63</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>350</td>\n      <td>2300</td>\n      <td>0.30</td>\n      <td>350</td>\n      <td>950, 6750</td>\n      <td>0.49</td>\n      <td>350, 2400</td>\n      <td>950, 4250</td>\n      <td>0.63</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>350</td>\n      <td>4250</td>\n      <td>0.63</td>\n      <td>350, 4750</td>\n      <td>2300</td>\n      <td>0.83</td>\n      <td>350, 2400</td>\n      <td>950, 9850</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>800</td>\n      <td>4250</td>\n      <td>0.64</td>\n      <td>50, 800</td>\n      <td>2300</td>\n      <td>0.84</td>\n      <td>350, 3450</td>\n      <td>950, 6750</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td>SNR = 10</td>\n      <td>350</td>\n      <td>950</td>\n      <td>0.67</td>\n      <td>350, 800</td>\n      <td>2300</td>\n      <td>0.84</td>\n      <td>350, 6000</td>\n      <td>950, 9850</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>350</td>\n      <td>2300</td>\n      <td>0.72</td>\n      <td>350, 1500</td>\n      <td>2300</td>\n      <td>0.84</td>\n      <td>350, 4750</td>\n      <td>950, 9850</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>800</td>\n      <td>2300</td>\n      <td>0.73</td>\n      <td>350, 2400</td>\n      <td>2300</td>\n      <td>0.85</td>\n      <td>350, 3450</td>\n      <td>950, 9850</td>\n      <td>0.91</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>1500</td>\n      <td>2300</td>\n      <td>0.77</td>\n      <td>350, 6000</td>\n      <td>2300</td>\n      <td>0.89</td>\n      <td>350, 4750</td>\n      <td>2300, 13,500</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>350</td>\n      <td>950</td>\n      <td>0.78</td>\n      <td>50, 1500</td>\n      <td>4250</td>\n      <td>0.90</td>\n      <td>350, 4750</td>\n      <td>2300, 6750</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td>SNR = 20</td>\n      <td>350</td>\n      <td>2300</td>\n      <td>0.80</td>\n      <td>350, 1500</td>\n      <td>2300</td>\n      <td>0.90</td>\n      <td>350, 6000</td>\n      <td>2300, 9850</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>800</td>\n      <td>4250</td>\n      <td>0.82</td>\n      <td>350, 4750</td>\n      <td>2300</td>\n      <td>0.90</td>\n      <td>350, 4750</td>\n      <td>2300, 9850</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>800</td>\n      <td>2300</td>\n      <td>0.85</td>\n      <td>50, 2400</td>\n      <td>4250</td>\n      <td>0.90</td>\n      <td>350, 4750</td>\n      <td>950, 6750</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>800</td>\n      <td>2300</td>\n      <td>0.85</td>\n      <td>350, 1500</td>\n      <td>2300</td>\n      <td>0.90</td>\n      <td>350, 1500</td>\n      <td>950, 4250</td>\n      <td>0.92</td>\n    </tr>\n  </tbody>\n</table>\n\nOur simulation results in Table 1 suggest that increasing the number of non-zero b-values from two to four improves the quality of the parameter estimation, also achievable by fitting the sub-diffusion model (Equation 3) to higher SNR data. The gain is larger by using higher SNR data than by using more b-values. For example, going from two to four non-zero b-values with SNR = 5 data approximately doubles the $R^{2}$, whereas the $R^{2}$ almost triples when SNR = 5 data is substituted by SNR = 20 data. Additionally, the use of $\u0394_{1}$ or $\u0394_{2}$ alone is not preferred (also see Figure 5), and preference is towards first using $\u0394_{1}$ and then supplementing with b-values generated using $\u0394_{2}$. At all SNR levels when only two non-zero b-values are used, one b-value should be chosen based on the $\u0394_{1}$ set, and the other based on $\u0394_{2}$. Moving to three non-zero b-values requires the addition of another $\u0394_{1}$ b-value, and when four non-zero b-values are used then two from each diffusion time are required. If we consider an $R^{2}=0.90$ to be a reasonable goodness-of-fit for the sub-diffusion model, then at least three or four non-zero b-values are needed with an SNR = 20. If SNR = 10, then three non-zero b-values will not suffice. Interestingly, an $R^{2}$ of 0.85 can still be achieved when SNR = 20 and two optimally chosen non-zero b-values are used.\n\nTable 1 summarises findings based on having different number of non-zero b-values with $R^{2}$ values deduced from the SNR = 5, 10, and 20 simulations. We have chosen to depict five b-value combinations producing the largest $R^{2}$ values for the two, three, and four non-zero b-value sampling cases. We found consistency in b-value combinations across SNR levels. Thus, we can conclude that a range of b-values can be used to achieve a large $R^{2}$ value, which is a positive finding, since parameter estimation does not stringently rely on b-value sampling. For example, using three non-zero b-values an $R^{2}\\geq0.90$ is achievable based on different b-value sampling. Importantly, two distinct diffusion times are required, and preference is towards including a smaller diffusion time b-value first. Hence, for three non-zero b-values we find two b-values based on $\u0394_{1}$ and one based on $\u0394_{2}$. This finding suggests one of the $\u0394_{1}$ b-values can be chosen in the range 50 to 350 s/mm2, and the other in the range 1500 to 4750 s/mm2. Additionally, the $\u0394_{2}$ b-value can also be chosen in a range, considering between 2300 to 4250 s/mm2 based on the Connectome 1.0 b-value settings. The b-value sampling choices made should nonetheless be in view of the required $R^{2}$ value. Overall, sampling using two distinct diffusion times appears to provide quite a range of options for the DW-MRI data to be used to fit the sub-diffusion model parameters. The suggested optimal b-value sampling in the last row of Table 1, primarily chosen to minimise b-value size whilst maintaining a large $R^{2}$ value, may be of use for specific neuroimaging studies, which will be used to inform our discussion on feasibility for clinical practice.\n\n### Benchmark mean kurtosis in the brain\n\nThe benchmark mean kurtosis estimation in the brain is established using the entire b-value range with all diffusion encoding directions available in the Connectome 1.0 DW-MRI data. For two subjects in different slices, Figure 6 provides the spatially resolved maps of mean kurtosis computed using the sub-diffusion method (i.e., $K^{\u2217}$) with one or two diffusion times, and using the standard method (i.e., $K_{DKI}$) considering the two distinct diffusion times. First, we notice a degradation in the $K_{DKI}$ image with an increase in diffusion time. Second, the use of a single diffusion time with the sub-diffusion model leads to $K^{\u2217}$ values which are larger than either the $K_{DKI}$ values or $K^{\u2217}$ values generated using two diffusion times. Third, the quality of the mean kurtosis map appears to visually be best when two diffusion times are used to estimate $K^{\u2217}$. Superior grey-white matter tissue contrast (TC) was found for the $K^{\u2217}$ map ($TC=1.73$), compared to the $K_{DKI}$ maps ($TC=0.80$ for the $\u0394=19\u00a0ms$ dataset and $TC=1.01$ for the $\u0394=49\u00a0ms$ dataset).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig6-v1.jpg)\n\n**Figure 6.:** Individual maps were generated using the sub-diffusion model framework ($K^{\u2217}$), as well as using the traditional approach ($K_{DKI}$). The diffusion times, $\u0394$, used to generate each plot are provided for each case. We consider the mean kurtosis maps using two diffusion times $(\u0394=19,49\u00a0ms)$ as the benchmarks.\n\nIn Figure 7, an error map (measured by root-mean-square-error, RMSE) from Subject 5 slice 74 was presented for fitting the sub-diffusion model to the DW-MRI data with two diffusion times. Sample parameter fittings in both b-space (Equation 3) and q-space (Equation 4) were provided for four representative white and grey matter voxels.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig7-v1.jpg)\n\n**Figure 7.:** The DW-MRI data with two diffusion times was fitted to the sub-diffusion model in both q-space (A\u2013D) and b-space (E\u2013H), following (Equation 3) and (Equation 4), respectively. The first and second columns are voxels in white matter (30,20,74) and (45,56,74), respectively. The third and fourth columns are voxels in grey matter (58,35,74) and (34,78,74), respectively.\n\nQuantitative findings for kurtosis are provided in Table 2. The analysis was performed for sub-cortical grey matter (scGM), cortical grey mater (cGM) and white matter (WM) brain regions. For specifics we refer the reader to the appropriate methods section. The table entries highlight the differences in mean kurtosis when computed using the two different approaches. The trend for the traditional single diffusion time approach is that an increase in $\u0394$ results in a slight decrease in the mean $K_{DKI}$, and an increase in the coefficient of variation (CV) for any region. For example, the mean $K_{DKI}$ in the thalamus reduces from 0.65 to 0.58, whilst the CV increases from 30% to 39%. As much as 30% increase in CV is common for scGM and cGM regions, and around 10% for WM regions. The CV based on the $K^{\u2217}$ value for each region is less than the CV for $K_{DKI}$ with either $\u0394=19\u00a0ms$ or $\u0394=49\u00a0ms$.\n\n**Table 2.**\n Benchmark kurtosis values estimated using the Connectome 1.0 DW-MRI data for different regions of the human brain.Results are provided for the traditional mean kurtosis ($K_{DKI}$) at two distinct diffusion times, and values ($K^{\u2217}$) obtained based on fitting the sub-diffusion model across both diffusion times. Results are for grey matter (GM) and white matter (WM) brain regions, in categories of sub-cortical (sc) and cortical (c), and CC stands for corpus callosum. The pooled means and standard deviations across participants have been tabulated, along with the coefficient of variation in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">KDKI</th>\n      <th>K\u2217</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>\u0394=19\u00a0ms</td>\n      <td>\u0394=49\u00a0ms</td>\n      <td>\u0394=19,49\u00a0ms</td>\n    </tr>\n    <tr>\n      <td>scGM</td>\n      <td>0.57 \u00b1 0.23(40%)</td>\n      <td>0.50 \u00b1 0.24(48%)</td>\n      <td>0.60 \u00b1 0.21(35%)</td>\n    </tr>\n    <tr>\n      <td>Thalamus</td>\n      <td>0.65 \u00b1 0.19(30%)</td>\n      <td>0.58 \u00b1 0.22(39%)</td>\n      <td>0.70 \u00b1 0.17(25%)</td>\n    </tr>\n    <tr>\n      <td>Caudate</td>\n      <td>0.41 \u00b1 0.24(58%)</td>\n      <td>0.37 \u00b1 0.23(64%)</td>\n      <td>0.39 \u00b1 0.14(35%)</td>\n    </tr>\n    <tr>\n      <td>Putamen</td>\n      <td>0.54 \u00b1 0.21(40%)</td>\n      <td>0.45 \u00b1 0.22(49%)</td>\n      <td>0.49 \u00b1 0.13(27%)</td>\n    </tr>\n    <tr>\n      <td>Pallidum</td>\n      <td>0.68 \u00b1 0.25(37%)</td>\n      <td>0.64 \u00b1 0.26(41%)</td>\n      <td>0.93 \u00b1 0.18(19%)</td>\n    </tr>\n    <tr>\n      <td>cGM</td>\n      <td>0.53 \u00b1 0.24(46%)</td>\n      <td>0.46 \u00b1 0.23(51%)</td>\n      <td>0.40 \u00b1 0.16(39%)</td>\n    </tr>\n    <tr>\n      <td>Fusiform</td>\n      <td>0.55 \u00b1 0.22(40%)</td>\n      <td>0.44 \u00b1 0.22(49%)</td>\n      <td>0.40 \u00b1 0.15(37%)</td>\n    </tr>\n    <tr>\n      <td>Lingual</td>\n      <td>0.59 \u00b1 0.21(35%)</td>\n      <td>0.53 \u00b1 0.22(42%)</td>\n      <td>0.47 \u00b1 0.16(34%)</td>\n    </tr>\n    <tr>\n      <td>WM</td>\n      <td>0.78 \u00b1 0.20(25%)</td>\n      <td>0.76 \u00b1 0.19(26%)</td>\n      <td>0.87 \u00b1 0.22(25%)</td>\n    </tr>\n    <tr>\n      <td>Cerebral WM</td>\n      <td>0.77 \u00b1 0.19(25%)</td>\n      <td>0.75 \u00b1 0.19(26%)</td>\n      <td>0.85 \u00b1 0.22(26%)</td>\n    </tr>\n    <tr>\n      <td>Cerebellum WM</td>\n      <td>0.99 \u00b1 0.18(18%)</td>\n      <td>0.95 \u00b1 0.19(20%)</td>\n      <td>1.07 \u00b1 0.22(21%)</td>\n    </tr>\n    <tr>\n      <td>CC</td>\n      <td>0.65 \u00b1 0.22(35%)</td>\n      <td>0.65 \u00b1 0.22(34%)</td>\n      <td>0.95 \u00b1 0.25(26%)</td>\n    </tr>\n  </tbody>\n</table>\n\nFigure 8 presents the distributions of the fitted parameters ($D$ and $K$) in specific brain regions, based on the sub-diffusion model (Panel A) and the standard DKI model with $\u0394=19\u00a0ms$ (Panel B). The distributions are coloured by the probability density. Yellow indicates high probability density, light blue indicates low probability density. In each subplot, the diffusivity is plotted along the abscissa axis and the kurtosis is along the ordinate axis. Results for the standard DKI model with $\u0394=49\u00a0ms$ are qualitatively similar, so are not shown here. From Panel (B), we see an unknown nonlinear relationship between the DKI pair, $D_{DKI}$ and $K_{DKI}$, in all regions considered. By comparison, the sub-diffusion based $K^{\u2217}$ and $D^{\u2217}$ (Panel A) are less correlated with each other, indicating $D^{\u2217}$ and $K^{\u2217}$ carry distinct information, which will be very valuable for characterising tissue microstructure. Tables 3 and Table 4 present the $D_{\\beta}$ and \u03b2 values used to compute $D^{\u2217}$ and $K^{\u2217}$ in Table 2 and Figure 8.\n\n**Table 3.**\n Benchmark $D_{\\beta}$ values estimated using the Connectome 1.0 DW-MRI data for different regions of the human brain.Results are provided for fitting the data at two distinct diffusion times, and fitting the sub-diffusion model across both diffusion times. Results are for grey matter (GM) and white matter (WM) brain regions, in categories of sub-cortical (sc) and cortical (c), and CC stands for corpus callosum. The pooled means and standard deviations across participants have been tabulated, along with the coefficient of variation in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">D\u03b2(\u00d710\u22124mm2/s\u03b2)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>\u0394=19\u00a0ms</td>\n      <td>\u0394=49\u00a0ms</td>\n      <td>\u0394=19,49\u00a0ms</td>\n    </tr>\n    <tr>\n      <td>scGM</td>\n      <td>3.12 \u00b1 0.96(31%)</td>\n      <td>3.56 \u00b1 1.03(29%)</td>\n      <td>4.13 \u00b1 0.86(21%)</td>\n    </tr>\n    <tr>\n      <td>Thalamus</td>\n      <td>2.73 \u00b1 0.83(30%)</td>\n      <td>3.14 \u00b1 0.89(28%)</td>\n      <td>3.89 \u00b1 0.81(21%)</td>\n    </tr>\n    <tr>\n      <td>Caudate</td>\n      <td>4.32 \u00b1 0.94(22%)</td>\n      <td>4.80 \u00b1 0.89(19%)</td>\n      <td>5.21 \u00b1 1.03(20%)</td>\n    </tr>\n    <tr>\n      <td>Putamen</td>\n      <td>3.36 \u00b1 0.58(17%)</td>\n      <td>3.96 \u00b1 0.54(14%)</td>\n      <td>4.31 \u00b1 0.44(10%)</td>\n    </tr>\n    <tr>\n      <td>Pallidum</td>\n      <td>1.84 \u00b1 0.63(34%)</td>\n      <td>1.88 \u00b1 0.67(36%)</td>\n      <td>2.79 \u00b1 0.52(19%)</td>\n    </tr>\n    <tr>\n      <td>cGM</td>\n      <td>4.17 \u00b1 0.97(23%)</td>\n      <td>5.19 \u00b1 0.96(19%)</td>\n      <td>5.32 \u00b1 0.90(17%)</td>\n    </tr>\n    <tr>\n      <td>Fusiform</td>\n      <td>3.94 \u00b1 0.83(21%)</td>\n      <td>4.93 \u00b1 0.74(15%)</td>\n      <td>5.05 \u00b1 0.69(14%)</td>\n    </tr>\n    <tr>\n      <td>Lingual</td>\n      <td>3.78 \u00b1 1.00(27%)</td>\n      <td>4.62 \u00b1 0.99(21%)</td>\n      <td>5.01 \u00b1 1.02(20%)</td>\n    </tr>\n    <tr>\n      <td>WM</td>\n      <td>1.84 \u00b1 0.79(43%)</td>\n      <td>2.14 \u00b1 0.93(43%)</td>\n      <td>2.94 \u00b1 0.72(24%)</td>\n    </tr>\n    <tr>\n      <td>Cerebral WM</td>\n      <td>1.90 \u00b1 0.77(41%)</td>\n      <td>2.20 \u00b1 0.92(42%)</td>\n      <td>2.98 \u00b1 0.71(24%)</td>\n    </tr>\n    <tr>\n      <td>Cerebellum WM</td>\n      <td>0.81 \u00b1 0.44(55%)</td>\n      <td>1.17 \u00b1 0.61(52%)</td>\n      <td>2.03 \u00b1 0.49(24%)</td>\n    </tr>\n    <tr>\n      <td>CC</td>\n      <td>2.58 \u00b1 1.84(71%)</td>\n      <td>2.49 \u00b1 1.91(76%)</td>\n      <td>3.78 \u00b1 2.12(56%)</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Benchmark \u03b2 values estimated using the Connectome 1.0 DW-MRI data for different regions of the human brain.Results are provided for fitting the data at two distinct diffusion times, and fitting the sub-diffusion model across both diffusion times. Results are for grey matter (GM) and white matter (WM) brain regions, in categories of sub-cortical (sc) and cortical (c), and CC stands for corpus callosum. The pooled means and standard deviations across participants have been tabulated, along with the coefficient of variation in parentheses.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td></td>\n      <td colspan=\"3\">\u03b2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u0394=19\u00a0ms</td>\n      <td>\u0394=49\u00a0ms</td>\n      <td>\u0394=19,49\u00a0ms</td>\n    </tr>\n    <tr>\n      <td>scGM</td>\n      <td>0.74 \u00b1 0.10(13%)</td>\n      <td>0.69 \u00b1 0.14(19%)</td>\n      <td>0.81 \u00b1 0.06(8%)</td>\n    </tr>\n    <tr>\n      <td>Thalamus</td>\n      <td>0.70 \u00b1 0.09(13%)</td>\n      <td>0.63 \u00b1 0.12(20%)</td>\n      <td>0.78 \u00b1 0.05(6%)</td>\n    </tr>\n    <tr>\n      <td>Caudate</td>\n      <td>0.83 \u00b1 0.07(8%)</td>\n      <td>0.81 \u00b1 0.07(9%)</td>\n      <td>0.88 \u00b1 0.04(5%)</td>\n    </tr>\n    <tr>\n      <td>Putamen</td>\n      <td>0.79 \u00b1 0.07(8%)</td>\n      <td>0.77 \u00b1 0.06(8%)</td>\n      <td>0.85 \u00b1 0.04(5%)</td>\n    </tr>\n    <tr>\n      <td>Pallidum</td>\n      <td>0.61 \u00b1 0.11(19%)</td>\n      <td>0.47 \u00b1 0.14(30%)</td>\n      <td>0.72 \u00b1 0.05(7%)</td>\n    </tr>\n    <tr>\n      <td>cGM</td>\n      <td>0.81 \u00b1 0.08(10%)</td>\n      <td>0.83 \u00b1 0.07(9%)</td>\n      <td>0.87 \u00b1 0.05(5%)</td>\n    </tr>\n    <tr>\n      <td>Fusiform</td>\n      <td>0.81 \u00b1 0.08(9%)</td>\n      <td>0.83 \u00b1 0.07(8%)</td>\n      <td>0.87 \u00b1 0.04(5%)</td>\n    </tr>\n    <tr>\n      <td>Lingual</td>\n      <td>0.78 \u00b1 0.09(11%)</td>\n      <td>0.78 \u00b1 0.09(12%)</td>\n      <td>0.85 \u00b1 0.05(6%)</td>\n    </tr>\n    <tr>\n      <td>WM</td>\n      <td>0.61 \u00b1 0.12(20%)</td>\n      <td>0.52 \u00b1 0.16(32%)</td>\n      <td>0.74 \u00b1 0.06(9%)</td>\n    </tr>\n    <tr>\n      <td>Cerebral WM</td>\n      <td>0.62 \u00b1 0.12(19%)</td>\n      <td>0.53 \u00b1 0.16(30%)</td>\n      <td>0.74 \u00b1 0.06(8%)</td>\n    </tr>\n    <tr>\n      <td>Cerebellum WM</td>\n      <td>0.41 \u00b1 0.16(39%)</td>\n      <td>0.32 \u00b1 0.19(60%)</td>\n      <td>0.68 \u00b1 0.06(9%)</td>\n    </tr>\n    <tr>\n      <td>CC</td>\n      <td>0.61 \u00b1 0.14(23%)</td>\n      <td>0.43 \u00b1 0.18(43%)</td>\n      <td>0.71 \u00b1 0.07(10%)</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 8.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig8-v1.jpg)\n\n**Figure 8.:** Distributions of the estimated parameter pair $(D,K)$ in different regions of the brain of all subjects, coloured by the probability density.Yellow indicates high probability density, light blue indicates low probability density. Panel (A): distributions of $(D^{\u2217},K^{\u2217})$, generated using the sub-diffusion model (Equation 3) with both $\u0394=19,49ms$. Panel (B): distributions of $(D_{DKI},K_{DKI})$, generated using the standard diffusional kurtosis imaging (DKI) model (Equation 6) with $\u0394=19ms$. Kurtosis is dimensionless and diffusivity is in units of \u00d7 10\u20133 mm2/s.\n\n### Reduction in DKI data acquisition\n\nResults for reductions in diffusion encoding directions to achieve different levels of SNR with the purpose of shortening acquisition times will be benchmarked against the $K^{\u2217}$ maps in Figure 6 and the $K^{\u2217}$ values reported in Table 2.\n\nFigure 9 presents the qualitative findings for two subjects generated using all, optimal and sub-optimal b-value samplings with SNR = 6 (3 non-collinear directions, 6 measurements), 10 (8 non-collinear directions, 16 measurements), and 20 (32 non-collinear directions, 64 measurements) DW-MRI data. The quality of the mean kurtosis map improves with increasing SNR, and also by optimising b-value sampling. Optimal sampling at SNR = 10 is qualitatively comparable to the SNR = 20 optimal sampling result, and to the benchmark sub-diffusion results in Figure 6.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig9-v1.jpg)\n\n**Figure 9.:** Individual maps were generated using the sub-diffusion model framework ($K^{\u2217}$), considering optimal and sub-optimal four non-zero b-value sampling schemes. Here, two b-values with $\u0394=19\u00a0ms$ and two b-values with $\u0394=49\u00a0ms$ were selected for each case. The optimal b-values were chosen as the best for each SNR shown in Table 1. The sub-optimal b-values were chosen to have an $R^{2}$ = 0.3, 0.45, 0.5 to be about half of the maximum $R^{2}$, for SNR = 6 ($b=800,1500,200,2300\u00a0s/mm^{2}$), SNR=10 ($b=1500,3450,6750,13500\u00a0s/mm^{2}$), and SNR = 20 ($b=3450,4750,2300,4250\u00a0s/mm^{2}$), respectively. The benchmark kurtosis map is provided in Figure 6.\n\nQuantitative verification of the qualitative observations are provided in Table 5. Significant differences in brain region-specific mean kurtosis values occur at the SNR = 6 level, which are not apparent when SNR = 10 or 20 data with optimal b-value sampling were used. The average errors are relative errors compared to the benchmark kurtosis values reported in Table 2. When using optimal b-values, average errors range from 22% to 43% at SNR = 6, from 13% to 43% at SNR = 10, and from 8% to 20% at SNR = 20, across brain regions. When using sub-optimal b-values, average errors range from 47% to 57% at SNR = 6, from 24% to 102% at SNR = 10, and from 27% to 72% at SNR = 20. Also, the brain region-specific CV for mean kurtosis was not found to change markedly when SNR = 10 or 20 data were used to compute $K^{\u2217}$. The result of reducing the SNR to 6 leads to an approximate doubling of the CV for each brain region. These findings confirm that with optimal b-value sampling, the data quality can be reduced to around the SNR = 10 level, without a significant impact on the region-specific mean kurtosis estimates derived using the sub-diffusion model.\n\n**Table 5.**\n Kurtosis values ($K^{\u2217}$) under the optimal and sub-optimal b-value sampling regimes for specific brain regions.$K^{\u2217}$ was estimated based on fitting the sub-diffusion model to the Connectome 1.0 DW-MRI data with two diffusion times and selected four b-shells. Optimal b-value sampling is considered to have $R^{2}$ = 0.63, 0.91 and 0.96 for the SNR = 6, 10, and 20 columns, according to Table 1. Sub-optimal b-values are chosen to have $R^{2}$ = 0.3, 0.45, and 0.5, respectively, as reported in Figure 9. Individual entries are for grey matter (GM) and white matter (WM) brain regions, in categories of sub-cortical (sc) and cortical (c), and CC stands for corpus callosum. A reduction in SNR level was achieved by reducing the number of diffusion encoding directions in each b-shell of the DW-MRI data. The pooled means and standard deviations across participants have been tabulated, along with the coefficient of variation in parentheses. The entries identified in italic under the optimal b-value heading were found to be significantly different from the benchmark mean $K^{\u2217}$ reported in Table 2. Sub-optimal result population means were mostly significantly different from the benchmark mean $K^{\u2217}$, and they are not italicised. The average errors (last column) are relative errors compared to the benchmark kurtosis values reported in Table 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>SNR = 6</th>\n      <th>SNR = 10</th>\n      <th>SNR = 20</th>\n      <th>Average error for SNR = 6/10/20</th>\n    </tr>\n    <tr>\n      <th colspan=\"5\">Optimal b-values</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>scGM</td>\n      <td>0.47 \u00b1 0.27(57%)</td>\n      <td>0.65 \u00b1 0.22(33%)</td>\n      <td>0.61 \u00b1 0.21(34%)</td>\n      <td>37/23/12%</td>\n    </tr>\n    <tr>\n      <td>Thalamus</td>\n      <td>0.57 \u00b1 0.26(46%)</td>\n      <td>0.75 \u00b1 0.20(26%)</td>\n      <td>0.71 \u00b1 0.17(24%)</td>\n      <td>33/20/11%</td>\n    </tr>\n    <tr>\n      <td>Caudate</td>\n      <td>0.30 \u00b1 0.20(68%)</td>\n      <td>0.46 \u00b1 0.17(38%)</td>\n      <td>0.40 \u00b1 0.15(38%)</td>\n      <td>43/30/15%</td>\n    </tr>\n    <tr>\n      <td>Putamen</td>\n      <td>0.38 \u00b1 0.21(56%)</td>\n      <td>0.58 \u00b1 0.16(28%)</td>\n      <td>0.52 \u00b1 0.14(28%)</td>\n      <td>40/28/13%</td>\n    </tr>\n    <tr>\n      <td>Pallidum</td>\n      <td>0.66 \u00b1 0.33(49%)</td>\n      <td>0.90 \u00b1 0.24(26%)</td>\n      <td>0.89 \u00b1 0.20(22%)</td>\n      <td>39/19/12%</td>\n    </tr>\n    <tr>\n      <td>cGM</td>\n      <td>0.40 \u00b1 0.22(54%)</td>\n      <td>0.51 \u00b1 0.20(39%)</td>\n      <td>0.45 \u00b1 0.18(40%)</td>\n      <td>30/36/19%</td>\n    </tr>\n    <tr>\n      <td>Fusiform</td>\n      <td>0.37 \u00b1 0.21(57%)</td>\n      <td>0.54 \u00b1 0.20(37%)</td>\n      <td>0.45 \u00b1 0.17(38%)</td>\n      <td>35/43/20%</td>\n    </tr>\n    <tr>\n      <td>Lingual</td>\n      <td>0.45 \u00b1 0.22(50%)</td>\n      <td>0.59 \u00b1 0.19(33%)</td>\n      <td>0.52 \u00b1 0.18(34%)</td>\n      <td>28/34/18%</td>\n    </tr>\n    <tr>\n      <td>WM</td>\n      <td>0.72 \u00b1 0.26(36%)</td>\n      <td>0.91 \u00b1 0.23(26%)</td>\n      <td>0.89 \u00b1 0.22(25%)</td>\n      <td>23/13/8%</td>\n    </tr>\n    <tr>\n      <td>Cerebral WM</td>\n      <td>0.71 \u00b1 0.25(35%)</td>\n      <td>0.89 \u00b1 0.23(25%)</td>\n      <td>0.88 \u00b1 0.22(25%)</td>\n      <td>22/13/8%</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Sub-optimal b-values</td>\n    </tr>\n    <tr>\n      <td>scGM</td>\n      <td>0.31 \u00b1 0.22(71%)</td>\n      <td>0.82 \u00b1 0.29(36)</td>\n      <td>0.58 \u00b1 0.25(43%)</td>\n      <td>55/45/34%</td>\n    </tr>\n    <tr>\n      <td>Thalamus</td>\n      <td>0.36 \u00b1 0.23(65%)</td>\n      <td>0.95 \u00b1 0.25(27%)</td>\n      <td>0.72 \u00b1 0.19(26%)</td>\n      <td>54/43/31%</td>\n    </tr>\n    <tr>\n      <td>Caudate</td>\n      <td>0.23 \u00b1 0.19(81%)</td>\n      <td>0.57 \u00b1 0.17(31%)</td>\n      <td>0.40 \u00b1 0.20(52%)</td>\n      <td>56/57/40%</td>\n    </tr>\n    <tr>\n      <td>Putamen</td>\n      <td>0.25 \u00b1 0.16(67%)</td>\n      <td>0.65 \u00b1 0.17(26%)</td>\n      <td>0.44 \u00b1 0.20(46%)</td>\n      <td>54/42/36%</td>\n    </tr>\n    <tr>\n      <td>Pallidum</td>\n      <td>0.44 \u00b1 0.29(66%)</td>\n      <td>1.27 \u00b1 0.32(25%)</td>\n      <td>0.76 \u00b1 0.25(33%)</td>\n      <td>56/42/32%</td>\n    </tr>\n    <tr>\n      <td>cGM</td>\n      <td>0.25 \u00b1 0.17(67%)</td>\n      <td>0.44 \u00b1 0.14(33%)</td>\n      <td>0.37 \u00b1 0.17(47%)</td>\n      <td>47/30/36%</td>\n    </tr>\n    <tr>\n      <td>Fusiform</td>\n      <td>0.22 \u00b1 0.15(68%)</td>\n      <td>0.47 \u00b1 0.16(35%)</td>\n      <td>0.33 \u00b1 0.17(52%)</td>\n      <td>51/32/38%</td>\n    </tr>\n    <tr>\n      <td>Lingual</td>\n      <td>0.29 \u00b1 0.19(66%)</td>\n      <td>0.53 \u00b1 0.16(30%)</td>\n      <td>0.39 \u00b1 0.20(51%)</td>\n      <td>48/29/40%</td>\n    </tr>\n    <tr>\n      <td>WM</td>\n      <td>0.42 \u00b1 0.18(44%)</td>\n      <td>1.16 \u00b1 0.36(31%)</td>\n      <td>0.72 \u00b1 0.22(31%)</td>\n      <td>53/38/28%</td>\n    </tr>\n    <tr>\n      <td>Cerebral WM</td>\n      <td>0.41 \u00b1 0.18(43%)</td>\n      <td>1.15 \u00b1 0.35(31%)</td>\n      <td>0.74 \u00b1 0.20(28%)</td>\n      <td>53/38/27%</td>\n    </tr>\n    <tr>\n      <td>Cerebellum WM</td>\n      <td>0.47 \u00b1 0.21(45%)</td>\n      <td>1.27 \u00b1 0.33(26%)</td>\n      <td>0.35 \u00b1 0.26(74%)</td>\n      <td>57/24/72%</td>\n    </tr>\n    <tr>\n      <td>CC</td>\n      <td>0.69 \u00b1 0.42(61%)</td>\n      <td>1.94 \u00b1 0.44(23%)</td>\n      <td>0.92 \u00b1 0.19(20%)</td>\n      <td>47/102/28%</td>\n    </tr>\n    <tr>\n      <td>Cerebellum WM</td>\n      <td>0.83 \u00b1 0.29(35%)</td>\n      <td>1.17 \u00b1 0.25(21%)</td>\n      <td>1.15 \u00b1 0.23(20%)</td>\n      <td>27/15/11%</td>\n    </tr>\n    <tr>\n      <td>CC</td>\n      <td>0.88 \u00b1 0.36(41%)</td>\n      <td>0.98 \u00b1 0.31(31%)</td>\n      <td>0.86 \u00b1 0.25(29%)</td>\n      <td>26/17/13%</td>\n    </tr>\n  </tbody>\n</table>\n\n### Scan\u2013rescan reproducibility of mean kurtosis\n\nFigure 10 summarises the intraclass correlation coefficient (ICC) distribution results (\u03bc for mean; \u03c3 for standard deviation) for the specific brain regions analysed. The two sets of ICC values were computed based on all DW-MRI (i.e., SNR = 20; subscript A) and the SNR = 10 optimal b-value sampling scheme (subscript O). As the value of \u03bc approaches 1, the inter-subject variation in mean kurtosis is expected to greatly outweigh the intra-subject scan\u2013rescan error. The value of \u03bc should always be above 0.5, otherwise parameter estimation cannot be performed robustly and accurately, and values above 0.75 are generally accepted as good. The $\\mu_{A}$ values for all regions were in the range 0.76 (thalamus) to 0.87 (caudate), and reduced to the range 0.57 (thalamus) to 0.80 (CC) when optimal sampling with SNR = 10 was used to estimate the $K^{\u2217}$ value. Irrespective of which of the two DW-MRI data were used for $K^{\u2217}$ estimation, the value of \u03bc was greater than or equal to 0.70 in 20 out of 24 cases. The $\\mu_{O}$ was less than 0.70 for only the thalamus, putamen, and pallidum. The loss in ICC by going to SNR = 10 data with optimal b-value sampling went hand-in-hand with an increase in $\\sigma$, which is not unexpected, since the uncertainty associated with using less data should be measurable. Overall, $\\mu_{A}$, $\\mu_{O}$, and $\\sigma_{A}$, $\\sigma_{O}$, were fairly consistent across the brain regions, suggesting the DW-MRI data with SNR = 10 is sufficient for mean kurtosis estimation based on the sub-diffusion framework.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/90465/elife-90465-fig10-v1.jpg)\n\n**Figure 10.:** The mean (\u03bc) and standard deviation (\u03c3) computed based on all the Connectome 1.0 DW-MRI data (subscript A), and the reduced data achieving an SNR = 10 with optimal four non-zero b-value sampling (subscript O), are provided for each brain region. Histograms were generated using all data. Mean kurtosis based on the optimised protocol was computed using the sub-diffusion framework using DW-MRI data with the four non-zero b-values suggested in Table 1 and diffusion encoding directions down sampled to achieve an SNR = 10.\n\n## Discussion\n\nDW-MRI allows the measurement of mean kurtosis, a metric for the deviation away from standard Brownian motion of water in tissue, which has been used to infer variations in tissue microstructure. Research on mean kurtosis has shown benefits in specific applications over other diffusion related measures derived from DW-MRI data (Li et al., 2022b; Liu et al., 2022; Huang et al., 2022; Guo et al., 2022b; Goryawala et al., 2023; Guo et al., 2022a; Wang et al., 2022; Li et al., 2022a; Maralakunte et al., 2023; Hu et al., 2022; Zhou et al., 2023; Li et al., 2022c). Whilst many efforts have been made to optimise mean kurtosis imaging for clinical use, the limitations have been associated with lack of robustness and the time needed to acquire the DW-MRI data for mean kurtosis estimation. The choice of the biophysical model and how diffusion encoding is applied are critical to how well kurtosis in the brain is mapped. Here, we evaluated the mapping of mean kurtosis based on the sub-diffusion model, which allows different diffusion times to be incorporated into the data acquisition. Using simulations and the Connectome 1.0 public DW-MRI dataset, involving a range of diffusion encodings, we showed that mean kurtosis can be mapped robustly and rapidly provided at least two different diffusion times are used and care is taken towards how b-values are chosen given differences in the SNR level of different DW-MRI acquisitions.\n\n### Reduction in scan time\n\nPrevious attempts have been made in optimising the DW-MRI acquisition protocol for mean kurtosis estimation based on the traditional, single diffusion time kurtosis model (Hansen et al., 2013; Hu et al., 2022; Poot et al., 2010; Hansen et al., 2016). Considerations have been made towards reducing the number of b-shells, directions per shell, and sub-sampling of DW-MRI for each direction in each shell. Our findings suggest that robust estimation of kurtosis cannot be achieved using the classical model for mean kurtosis, as highlighted previously (Yang et al., 2022; Ingo et al., 2014; Ingo et al., 2015; Barrick et al., 2020). A primary limitation of the traditional method is the use of the cumulant expansion resulting in sampling below a b-value of around $2500 s/mm^{2}$ (Jensen et al., 2005; Jensen and Helpern, 2010), and using the sub-diffusion model this limitation is removed (Yang et al., 2022). Our simulation findings and experiments using the Connectome 1.0 data confirm that mean kurtosis can be mapped robustly and rapidly using the sub-diffusion model applied to an optimised DW-MRI protocol. Optimisation of the data acquisition with the use of the sub-diffusion model has not been considered previously.\n\nMean kurtosis values can be generated based on having limited number of diffusion encoding directions (refer to Figure 9 and Table 5). Given that each direction for each b-shell takes a fixed amount of time, then a four b-shell acquisition with six directions per shell will take 25 times longer than a single diffusion encoding data acquisition (assuming a single b-value=0 data is collected). The total acquisition time for the diffusion MRI protocol for the Connectome 1.0 data was 55 min, including 50 b = 0 s/mm2 scans plus seven b-values with 32 and nine with 64 diffusion encoding directions (Tian et al., 2022). This gives a total of 850 scans per dataset. As such, a single 3D image volume took $3.88 s$ to acquire. Conservatively allowing $4 s$ per scan, and considering SNR = 20 data (i.e., 64 directions) over four b-values and a single b-value = 0 scan, DW-MRI data for mean kurtosis estimation can be completed in $17 min8 s$ ($R^{2}=0.96$). At SNR = 10 (i.e., 32 directions), DW-MRI data with the same number of b-values can be acquired in $4 min20 s$ ($R^{2}=0.91$). If an $R^{2}=0.85$ (SNR = 10) is deemed adequate, then one less b-shell is required, saving an additional $64 s$. We should point out that even though 2-shell optimised protocols can achieve $R^{2}=0.85$ with SNR = 20, this is not equivalent in time to using 3-shells with SNR = 10 (also $R^{2}=0.85$). This is because 4\u00d7$4\\times$ additional data are required to double the SNR (equivalent to acquiring an additional 4-shells). However, only one extra b-shell is required to convert 2-shell data to 3-shells with SNR = 10. Our expected DW-MRI data acquisition times are highly feasible clinically, where generally neuroimaging scans take around $15 min$ involving numerous different MRI contrasts and often a DTI acquisition.\n\nAn early study on estimating mean kurtosis demonstrated the mapping of a related metric in less than $1 min$ over the brain (Hansen et al., 2013). Clinical adoption of the protocol lacked, possibly since b-values are a function $\\delta$, $G$, and $\u0394$. Hence, different b-values can be obtained using different DW-MRI protocol settings, leading to differences in the mapping of mean kurtosis based on the data (we showed the $\u0394$ effect in Figure 6 and Table 2). Our findings suggest this impediment is removed by sampling and fitting data with b-values across two distinct diffusion times. Nonetheless, we should consider what might be an acceptable DW-MRI data acquisition time.\n\nA recent study on nasopharyngeal carcinoma investigated reducing the number of b-shell signals based on fixing diffusion encoding directions to the three Cartesian orientations (He et al., 2022). The 3-shell acquisitions took $3 min 2 s$ to acquire, whilst the 5-shell data required 5 min 13 s. They investigated as well the impact of using partial Fourier sampling, i.e., reducing the amount of data needed for image reconstruction by reducing k-space line acquisitions for each diffusion encoded image. Their benchmark used 5-shells (200, 400, 800, 1500, 2000 s/mm2), and found partial Fourier sampling with omission of the 1500 s/mm2 b-shell produced acceptable results. With this acquisition the scan could be completed in 3 min 46 s, more than 2 times faster than the benchmark 8 min 31 s. Our proposed 3-shells acquisition with an $R^{2}=0.85$ (see SNR = 10 results in Table 1) executable under $4 min\\,$ is therefore inline with current expectations. Note, at the $R^{2}=0.85$ level the ICC for the different brain regions were in the range 0.60\u20130.69, and these were not formally reported in Figure 10. This level of reproducibility is still acceptable for routine use. We should additionally point out that we used the Subject 1 segmentation labels, after having registered each DW-MRI data to the Subject 1 first scan. This approach results in slight mismatch of the region-specific segmentations when carried across subjects, inherently resulting in an underestimation of ICC values.\n\nLess than $4 min\\,$ DW-MRI data acquisitions can potentially replace existing data acquisitions used to obtained DTI metrics, since even the estimation of the apparent diffusion coefficient improves by using DW-MRI data relevant to DKI (Veraart et al., 2011b; Wu and Cheung, 2010). Additionally, it is increasingly clear that in certain applications the DKI analysis offers a more comprehensive approach for tissue microstructure analysis (Li et al., 2022b; Liu et al., 2022; Huang et al., 2022; Guo et al., 2022b; Goryawala et al., 2023; Guo et al., 2022a; Wang et al., 2022; Li et al., 2022a; Maralakunte et al., 2023; Hu et al., 2022; Zhou et al., 2023; Li et al., 2022c). As such, multiple b-shell, multiple diffusion encoding direction DW-MRI acquisitions should be used for the calculation of both DTI and DKI metrics.\n\n### DW-MRI data acquisition considerations\n\nTo achieve $R^{2}>0.92$ for estimating kurtosis $K^{\u2217}$, it is necessary to have four b-values, e.g., two relatively small b-values (350 s/mm2 using $\u0394=19\u00a0ms$, and 950 s/mm2 using $\u0394=49\u00a0ms$, both with $G=68 mT/m$) and two larger b-values of around 1500 s/mm2 and 4250 s/mm2 (using $\u0394=19\u00a0ms$ and $\u0394=49\u00a0ms$, respectively, both with $G=142 mT/m$) (see bottom row in Table 1). If two or three non-zero b-values are considered sufficient (with $R^{2}=0.85$ or $0.90$), then the larger $\u0394$ needs to be used to set the largest b-value to be 2300 s/mm2, and the other(s) should be set using the smaller $\u0394$. For the two non-zero b-values case, the b-value from the smaller $\u0394$ should be around 800 s/mm2. For the three non-zero b-values case, the b-values from the smaller $\u0394$ would then need to be 350 s/mm2 and 1500 s/mm2. Interestingly, b-value = 800 s/mm2 lies around the middle of the 350 s/mm2 to 1500 s/mm2 range. The additional gain to $R^{2}=0.92$ can be achieved by splitting the b-value with the larger $\u0394$ into two, again with $2300 s/mm^{2}$ near the middle of the two new b-values set. In addition, the separation between $\u0394_{1}$ and $\u0394_{2}$ needs to be as large as plausible, as can be deduced from the simulation result in Figure 2, but attention should be paid to signal-to-noise ratio decreases with increased echo times (He et al., 2022).\n\nA recent study on optimising quasi-diffusion imaging (QDI) considered b-values up to 5000 s/mm2 (Spilling et al., 2022). Whilst QDI is a non-Gaussian approach, it is different to the sub-diffusion model, but still uses the Mittag-Leffler function and involves the same number of model parameters. The DW-MRI data used in their study was acquired with a single diffusion time. Nevertheless, particular points are worth noting. Their primary finding was parameter dependence on the maximum b-value used to create the DW-MRI data. They also showed the accuracy, precision, and reliability of parameter estimation are improved with increased number of b-shells. They suggested a maximum b-value of 3960 s/mm2 for the 4-shell parameter estimation. Our results do not suggest a dependence of the parameter estimates on maximum b-value (note, if a maximum b-value dependence is present, benchmark versus optimal region specific results in Tables 2 and 5 should show some systematic difference; and we used the real part of the DW-MRI data and not the magnitude as commonly used). These findings potentially confirm that $\u0394$ separation is an important component of obtaining a quality parameter fit from which mean kurtosis is deduced (Figure 2).\n\n### Diffusion gradient pulse amplitudes\n\nCommonly available human clinical MRI scanners are capable of $40 mT/m$ gradient amplitudes. Recently, the increased need to deduce tissue microstructure metrics from DW-MRI measurements has led to hardware developments resulting in 80 mT/m gradient strength MRI scanners. These were initially sought by research centres. The Connectome 1.0 scanners achieve 300 mT/m gradient amplitudes (Tian et al., 2022), which in turn allow large b-values within reasonable echo times. The Connectome 2.0 scanner is planned to achieve 500 mT/m gradient amplitudes (Huang et al., 2021), providing data for further exploration of the $(q,\u0394)$ space by providing a mechanism for increasing our knowledge of the relationships between the micro-, meso-, and macro-scales. Whilst there are three Connectome 1.0 scanners available, only one Connectome 2.0 scanner is planned for production. Hence, robust and fast methods utilising existing 80 mT/m gradient systems are needed, and the Connectome scanners provide opportunities for testing and validating methods.\n\nThe b-value is an intricate combination of $\\delta$, $G$, and $\u0394$. An increase in any of these three parameters increases the b-value (note, $\\delta$ and $G$ increase b-value quadratically, and $\u0394$ linearly). An increase in $\\delta$ can likely require an increase in $\u0394$, the consequence of which is a reduction in signal-to-noise ratio as the echo time has to be adjusted proportionally. Partial Fourier sampling methods aim to counteract the need to increase the echo time by sub-sampling the DW-MRI data used to generate an image for each diffusion encoding direction (Zong et al., 2021; Heidemann et al., 2010). The ideal scenario, therefore, is to increase $G$, as for the Connectome 1.0 and 2.0 scanners.\n\nBased on our suggested b-value settings in Table 1, a maximum b-value of around 4250 s/mm2 is required for robust mean kurtosis estimation (assume $R^{2}>0.90$ is adequate and achieved via four non-zero b-values and two distinct \u0394s, and we should highlight that b-value = 1500 s/mm2 ($\u0394=19\u00a0ms$) and b-value = 4250 s/mm2 ($\u0394=49\u00a0ms$) were achieved using $G=142 mT/m$). Considering 80 m/Tm gradient sets are the new standard for MRI scanners, an adjustment to $\\delta$ to compensate for $G$ is needed (recall, $q=\\gamma\\deltaG$). Hence, for a constant $q$, $G$ can be reduced at the consequence of proportionally increasing $\\delta$. This then allows MRI systems with lower gradient amplitudes to generate the relevant b-values. For example, changing the $\\delta$ from 8 ms to 16 ms would result in halving of $G$ (using a maximum $G$ of 142 m/TM from the Connectome 1.0 can achieve the optimal b-values; hence halving would require around 71 m/TM gradient pulse amplitudes). Increasing $\u0394$ above 49 ms to create larger b-value data is unlikely to be a viable solution due to longer echo times leading to a loss in SNR. SNR increases afforded by moving from 3 T to 7 T MRI are most likely counteracted by an almost proportional decrease in $T_{2}$ times (Pohmann et al., 2016), in addition to 7 T MRI bringing new challenges in terms of increased transmit and static field inhomogeneities leading to signal inconsistencies across an image (Kraff and Quick, 2017).\n\n### Relationship between sub-diffusion based mean kurtosis K\u2217 and histology\n\nFollowing Table 2 (last column), white matter regions showed high kurtosis (0.87 \u00b1 0.22), consistent with a structured heterogeneous environment comprising parallel neuronal fibres, as shown in Maiter et al., 2021. Cortical grey matter showed low kurtosis (0.40 \u00b1 0.16). Subcortical grey matter regions showed intermediate kurtosis (0.60 \u00b1 0.21). In particular, caudate and putamen showed similar kurtosis to grey matter, whilst thalamus and pallidum showed similar kurtosis properties to white matter. Histological staining results of the sub-cortical nuclei (Maiter et al., 2021) showed the subcortical grey matter was permeated by small white matter bundles, which could account for the similar kurtosis in thalamus and pallidum to white matter. These results confirmed that our proposed sub-diffusion based mean kurtosis $K^{\u2217}$ is consistent with published histology of normal human brain.\n\n### Time-dependence of diffusivity and kurtosis\n\nThe time-dependence of diffusivity and kurtosis has attracted much interest in the field of tissue microstructure imaging. Although our motivation here is not to map time-dependent diffusion, we can nonetheless point out that the assumption of a sub-diffusion model provides an explanation of the observed time-dependence of diffusivity and kurtosis. From (Equation 4), the diffusivity that arises from the sub-diffusion model is of the form $D_{SUB}=D_{\\beta}\u0394\u00af^{\\beta\u22121}$, where $\u0394\u00af$ is the effective diffusion time, $D_{SUB}$ has the standard units for a diffusion coefficient $mm^{2}/s$, and $D_{\\beta}$ is the anomalous diffusion coefficient (with units $mm^{2}/s^{\\beta}$) associated with sub-diffusion. In the sub-diffusion framework (Equation 1), $D_{\\beta}$ and $\\beta$ are assumed to be constant, and hence $D_{SUB}$ exhibits a fractional power-law dependence on diffusion time. Then, following (Equation 8), $D^{\u2217}$ is obtained simply by scaling $D_{SUB}$ by a constant $1/\u0393(1+\\beta)$, and hence also follows a fractional power-law dependence on diffusion time. This time-dependence effect of diffusivity was illustrated in our simulation results, Figure 4(A) and (C).\n\nWhen it comes to kurtosis, the literature on the time-dependence is mixed. Some work showed kurtosis to be increasing with diffusion time in both white and grey matter (Aggarwal et al., 2020), and in grey matter (Ianus et al., 2021), whilst others showed kurtosis to be decreasing with diffusion time in grey matter (Lee et al., 2020; Olesen et al., 2022; Jelescu et al., 2022). In this study, we provide an explanation of these mixed results. We construct a simulation of diffusion MRI signal data based on the sub-diffusion model (Equation 3) augmented with random Gaussian noise. Then we fit the conventional DKI model to the synthetic data. As shown in Figure 4(D), when there is no noise, $K_{DKI}$ increases with diffusion time in white matter, whilst decreasing with diffusion time in grey matter. When there is added noise, as shown in Figure 4(B), the time-dependency of kurtosis within the timescale of a usual MR experiment is not clear. This goes some way to explaining why the results in the literature on the time-dependence of kurtosis are quite mixed.\n\nFurthermore, we summarise the benefits of using the sub-diffusion based mean kurtosis measurement $K^{\u2217}$. First, as shown in (Equation 9), sub-diffusion based mean kurtosis $K^{\u2217}$ is not time dependent, and hence has the potential to become a tissue-specific imaging biomarker. Second, the fitting of the sub-diffusion model is straightforward, fast and robust, from which the kurtosis $K^{\u2217}$ is simply computed as a function of the sub-diffusion model parameter \u03b2. Third, the kurtosis $K^{\u2217}$ is not subject to any restriction on the maximum b-value, as in standard DKI. Hence, its value truly reflects the information contained in the full range of b-values.\n\n### Extension to directional kurtosis\n\nThe direct link between the sub-diffusion model parameter \u03b2 and mean kurtosis is well established (Yang et al., 2022; Ingo et al., 2014; Ingo et al., 2015). An important aspect to consider is whether mean \u03b2 used to compute the mean kurtosis is alone sufficient for clinical decision making. Whilst benefits of using kurtosis metrics over other DW-MRI data-derived metrics in certain applications are clear, the adequacy of mean kurtosis over axial and radial kurtosis is less apparent. Most studies perform the mapping of mean kurtosis, probably because the DW-MRI data can be acquired in practically feasible times. Nonetheless, we can point to a few recent examples where the measurement of directional kurtosis has clear advantages. A study on mapping tumour response to radiotherapy treatment found axial kurtosis to provide the best sensitivity to treatment response (Goryawala et al., 2023). In a different study, a correlation was found between glomerular filtration rate and axial kurtosis is assessing renal function and interstitial fibrosis (Li et al., 2022a). Uniplor depression subjects have been shown to have brain region specific increases in mean and radial kurtosis, whilst for bipolar depression subjects axial kurtosis decreased in specific brain regions and decreases in radial kurtosis were found in other regions (Maralakunte et al., 2023). This selection of studies highlights future opportunities for extending the methods to additionally map axial and radial kurtosis.\n\nNotably, estimates for axial and radial kurtosis require directionality of kurtosis to be resolved, resulting in DW-MRI sampling over a large number of diffusion encoding directions within each b-shell (Jensen and Helpern, 2010; Poot et al., 2010). As such, extension to directional kurtosis requires a larger DW-MRI dataset acquired using an increased number of diffusion encoding directions. The number of b-shells and directions therein necessary for robust and accurate mapping of directional kurtosis based on the sub-diffusion model is an open question.\n\nThere are three primary ways of determining mean kurtosis. These include the powder averaging over diffusion encoding directions in each shell, and then fitting the model, as in our approach. A different approach is to ensure each b-shell in the DW-MRI data contains the same diffusion encoding directions, and then kurtosis can be estimated for each diffusion encoding direction, after which the average over directions is used to state mean kurtosis. Lastly, the rank-4 kurtosis tensor is estimated from the DW-MRI data, from which mean kurtosis is computed directly. The latter two approaches are potential candidates for extending to axial and radial kurtosis mapping. Note, in DTI a rank-2 diffusion tensor with six unique tensor entries is needed to be estimated, whilst in DKI in addition to the rank-2 diffusion tensor, the kurtosis tensor is rank-4 with 15 unknowns, resulting in 21 unknowns altogether (Hansen et al., 2016). As such, DKI analysis for directional kurtosis requires much greater number of diffusion encoding directions to be sampled than DTI. This automatically means that at least 22 DW-MRI data (including b-value = 0) with different diffusion encoding properties have to be acquired (Jensen and Helpern, 2010). The traditional approach has been to set five distinct b-values with 30 diffusion encoding directions within each b-shell (Poot et al., 2010). Hence, to obtain the entries of the rank-4 kurtosis tensor, much more DW-MRI data is needed in comparison to what is proposed for mean kurtosis estimation in this study. Estimation of the tensor entries from this much data is prone to noise, motion and image artifacts in general (Tabesh et al., 2011), posing challenges on top of long DW-MRI data acquisition times.\n\nA kurtosis tensor framework based on the sub-diffusion model where separate diffusion encoding directions are used to fit a direction specific \u03b2 is potentially an interesting line of investigation for the future, since it can be used to establish a rank-2 \u03b2 tensor with only six unknowns, requiring at least six distinct diffusion encoding directions. This type of approach can reduce the amount of DW-MRI data to be acquired, and potentially serve as a viable way forward for the combined estimation of mean, axial, and radial kurtosis.\n\n### Kurtosis estimation outside of the brain\n\nAlthough our study has been focusing on mean kurtosis imaging in the human brain, it is clear that DKI has wide application outside of the brain (Li et al., 2022b; Liu et al., 2022; Huang et al., 2022; Guo et al., 2022b; Li et al., 2022a; Zhou et al., 2023). Without having conducted experiments elsewhere, we cannot provide specific guidelines for mean kurtosis imaging in the breast, kidney, liver, and other human body regions. We can, however, point the reader in a specific direction.\n\nThe classical mono-exponential model can be recovered from the sub-diffusion equation by setting $\\beta=1$. For this case, the product between the b-value and fitted diffusivity has been reported to be insightful for b-value sampling (Yablonskiy and Sukstanskii, 2010), in accordance with a theoretical perspective (Istratov and Vyvenko, 1999). It was suggested the product should approximately span the (0, 1) range. Considering our case based on the sub-diffusion equation, we can investigate the size of $bD_{SUB}$ by analysing the four non-zero b-value optimal sampling regime ($\u0394_{1}$: 350 s/mm2 and 1500 s/mm2; $\u0394_{2}$: 950 s/mm2 and 4250 s/mm2 from Table 1). Considering scGM, cGM, and WM brain regions alone, the rounded and dimensionless $bD_{SUB}$ values are (0.09, 0.38, 0.20, 0.88), (0.13, 0.55, 0.30, 1.34), and (0.05, 0.23, 0.11, 0.48), respectively, and note that in each case the first two effective sampling values are based on $\u0394_{1}$, and the other two are derived using $\u0394_{2}$. Interestingly, the log-linear sampling proposed in Istratov and Vyvenko, 1999 is closely mimicked by the effective sampling regime (scGM: \u22122.42, \u22121.62, \u22120.97, \u22120.13; cGM: \u22122.06, \u22121.20, \u22120.60, 0.29; WM: \u22122.94, \u22122.23, \u22121.48, \u22120.73; by sorting and taking the natural logarithm). This analysis also informs on why it may be difficult to obtain a generally large $R^{2}$ across the entire brain, since \u03b2 and $D_{SUB}$ are brain region specific and the most optimal sampling strategy should be \u03b2 and $D_{SUB}$ specific. Whilst region specific sampling may provide further gains in the $R^{2}$ value, and improve ICC values for specific brain regions, such data would take a long time to acquire and require extensive post-processing and in-depth analyses.\n\n## Methods\n\n### Theory\n\n#### Sub-diffusion modelling framework\n\nIn biological tissue, the motion of water molecules is hindered by various microstructures, and hence the diffusion can be considerably slower than unhindered, unrestricted, free diffusion of water. The continuous time random walk formalism provides a convenient mathematical framework to model this sub-diffusive behaviour using fractional calculus (Metzler and Klafter, 2000). The resulting probability density function $P(x,t)$ of water molecules at location $x$ (in units of mm) at time $t$ (in units of s) satisfies the time fractional diffusion equation:\n\n$$\n\\frac{\u2202^{\\beta}P(x,t)}{\u2202t^{\\beta}}=D_{\\beta}\u2207^{2}P(x,t),0<\\beta\\leq1,\n$$\n\nwhere $\\frac{\u2202^{\\beta}}{\u2202t^{\\beta}}$ is the time fractional derivative of order $\\beta$ ($0<\\beta\\leq1$) in the Caputo sense, $D_{\\beta}$ is the generalised anomalous diffusion coefficient with unit of $ mm^{2}/s^{\\beta}$, and the parameter \u03b2 characterises the distribution of waiting times between two consecutive steps in the continuous time random walk interpretation. When $\\beta=1$, the waiting times have finite mean; when $0<\\beta<1$, the waiting times have infinite mean, leading to sub-diffusion behaviour. The solution to the time fractional diffusion Equation 1 in Fourier space is:\n\n$$\np(k,t)=E_{\\beta}(D_{\\beta}|k|^{2}t^{\\beta}),\n$$\n\nwhere $E_{\\beta}(z)=\\sumn=0\u221e\\frac{z^{n}}{\u0393(1+\\betan)}$ is the single-parameter Mittag-Leffler function, $\u0393$ is the standard Gamma function and by definition $E_{1}(z)=exp\u2061(z)$. In the context of diffusion DW-MRI, $k$ in Equation 2 represents the q-space parameter $q=\\gammaG\\delta$, $t$ represents the effective diffusion time $\u0394\u00af=\u0394\u2212\\delta/3$ and $p(k,t)$ represents the signal intensity $S(q,\u0394\u00af)$, leading to the diffusion signal equation (Magin et al., 2020):\n\n$$\nS(q,\u0394\u00af)=S_{0}E_{\\beta}(\u2212D_{\\beta}q^{2}\u0394\u00af^{\\beta}).\n$$\n\nDefining $b=q^{2}\u0394\u00af$, the DW-MRI signal then can be expressed in terms of b-values:\n\n$$\nS(b)=S_{0}E_{\\beta}(\u2212bD_{SUB}),\n$$\n\nwhere\n\n$$\nD_{SUB}=D_{\\beta}\u0394\u00af^{\\beta\u22121}\n$$\n\nhas the standard unit for a diffusion coefficient, s/mm2.\n\n#### Diffusional kurtosis imaging\n\nThe traditional DKI approach was proposed by Jensen and colleagues (Jensen et al., 2005; Jensen and Helpern, 2010) to measure the extent of non-Gaussian diffusion in biological tissues using DW-MRI data:\n\n$$\nS(b)\u2248S_{0}exp\u2061(\u2212bD_{DKI}+\\frac{1}{6}b^{2}D_{DKI}^{2}K_{DKI}),\n$$\n\nwhere $S$ is the signal for a given diffusion weighting $b$ (i.e., b-value), $S_{0}$ is the signal when $b=0$, $D_{DKI}$ and $K_{DKI}$ are the apparent diffusivity and kurtosis. A major limitation of (Equation 6) is that it was developed based on the Taylor expansion of the logarithm of the signal at $b=0$, as such b-values should be chosen in the neighbourhood of b-value = 0 (Yang et al., 2022; Kiselev, 2010). Hence, to estimate diffusivity and kurtosis, Jensen and Helpern, 2010 suggested the use of three different b-values (such as 0, 1000, 2000 s/mm2) and the maximum b-value should be in the range 2000 s/mm2 to 3000 s/mm2 for brain studies. Subsequently, the optimal maximum b-value was found to be dependent on the tissue types and specific pathologies, which makes the experimental design optimal for a whole brain challenging (Chuhutin et al., 2017). The procedure for fitting kurtosis and diffusivity tensors is also not trivial, and a variety of fitting procedures are currently in use. We refer readers to the descriptive and comparative studies for detail on the implementation and comparison of methods (Veraart et al., 2011b; Chuhutin et al., 2017).\n\n#### Mean kurtosis from the sub-diffusion model\n\nYang et al., 2022 established that the traditional DKI model corresponds to the first two terms in the expansion of the sub-diffusion model:\n\n$$\nS(b)=S_{0}E_{\\beta}(\u2212bD_{SUB})=S_{0}exp\u2061(\u2212bD^{\u2217}+\\frac{1}{6}b^{2}D^{\u22172}K^{\u2217}+O(b^{3})),\n$$\n\nwhere diffusivity, $D^{\u2217}$, and kurtosis, $K^{\u2217}$, are computed directly via sub-diffusion parameters $D_{SUB}$ and $\\beta$:\n\n$$\nD^{\u2217}=\\frac{D_{SUB}}{\u0393(1+\\beta)},\n$$\n\n\n\n$$\nK^{\u2217}=6\\frac{\u0393^{2}(1+\\beta)}{\u0393(1+2\\beta)}\u22123,\n$$\n\nwhere $D_{SUB}$ is defined in (Equation 5). Note the mean kurtosis expression in (Equation 9) was also derived by Ingo et al., 2015 using a different method. Their derivation follows the definition of kurtosis, $K=\u27e8x^{4}\u27e9/\u27e8x^{2}\u27e9^{2}\u22123$, i.e., by computing the fourth moment $\u27e8x^{4}\u27e9$ and the second moment $\u27e8x^{2}\u27e9$ based on the sub-diffusion Equation 1.\n\n### Connectome 1.0 human brain DW-MRI data\n\nThe DW-MRI dataset provided by Tian et al., 2022 was used in this study. The publicly available data were collected using the Connectome 1.0 scanner for 26 healthy participants. The first seven subjects had a scan\u2013rescan available. We evaluated qualitatively the seven datasets, and chose the six which had consistent diffusion encoding directions. Subject 2 had 60 instead of 64 diffusion encoding directions, and hence, was omitted from this study. The $2\\times2\\times2 mm^{3}$ resolution data were obtained using two diffusion times $(\u0394=19,49\u00a0ms)$ with a pulse duration of $\\delta=8 ms$ and $G=31,68,105,142,179,216,253,290 mT/m$, respectively, generating b-values = 50, 350, 800, 1500, 2400, 3450, 4750, 6000 s/mm2 for $\u0394=19\u00a0ms$, and b-values = 200, 950, 2300, 4250, 6750, 9850, 13500, 17800 s/mm2 for $\u0394=49\u00a0ms$, according to b-value $=(\\gamma\\deltaG)^{2}(\u0394\u2212\\delta/3)$. 32 diffusion encoding directions were uniformly distributed on a sphere for $b<2400 s/mm^{2}$ and 64 uniform directions for $b\\geq2400 s/mm^{2}$.\n\nThe FreeSurfer\u2019s segmentation labels as part of the dataset were used for brain-region-specific analyses. Tian et al., 2022 provided the white matter averaged group SNR (23.10 \u00b1 2.46), computed from 50 interspersed b-value $=0 s/mm^{2}$ images for each subject. Both magnitude and the real part of the DW-MRI were provided. Based on an in-depth analysis, the use of the real part of the DW-MRI data was recommended, wherein physiological noise, by nature, follows a Gaussian distribution (Gudbjartsson and Patz, 1995).\n\n#### Simulated DW-MRI data at specific b-values\n\nDW-MRI data were simulated to establish (i) the correspondence between actual versus fitted mean kurtosis using the traditional DKI and sub-diffusion models based on various choices for $\u0394$, and (ii) to investigate the impact of SNR levels and sub-sampling of b-values on the mean kurtosis estimate. The DW-MRI signal was simulated using the sub-diffusion model (Equation 3) with random Gaussian noise added to every normalised DW-MRI signal instance:\n\n$$\nS(D_{\\beta},\\beta,q,\u0394\u00af)=E_{\\beta}(\u2212D_{\\beta}q^{2}\u0394\u00af^{\\beta})+N(0,\\sigma^{2}),\n$$\n\nwhere $N(0,\\sigma^{2})$ is white noise with mean of zero and standard deviation of $\\sigma$ according to the normal distribution.\n\nTwo aspects influence $\\sigma$ in the case of real-valued DW-MRI data. These include the SNR achieved with a single diffusion encoding direction (i.e., Connectome 1.0 DW-MRI data SNR was derived using only b-value $=0 s/mm^{2}$ data), and the number of diffusion encoding directions in each b-shell across which the powder average is computed:\n\n$$\n\\sigma=\\frac{1}{SNR\\sqrt{N_{DIR}}},\n$$\n\nwhere $N_{DIR}$ is the number of diffusion encoding directions for each b-shell and assuming it is consistent across b-shells. The $\\sigma$ for the Connectome 1.0 data is approximately $1/(23.10\\times8)=0.0054$ based on 64 diffusion encoding directions. Achieving of SNR = 5, 10, and 20 for the simulation study can therefore be accomplished by changing only the $\\sigma$ and keeping $N_{DIR}=64$. As such, $\\sigma_{SNR=5}=0.0250$, $\\sigma_{SNR=10}=0.0125$, and $\\sigma_{SNR=20}=0.0063$.\n\nThree simulation experiments were carried out at various SNR levels. The first simulation experiment was to examine the effect of the number of diffusion times on the accuracy of the parameter fitting for idealised grey matter and white matter cases. In (Equation 10) the choices of $D_{\\beta}=3\\times10^{\u22124}mm^{2}/s^{\\beta}$, $\\beta=0.75$, and $D_{\\beta}=5\\times10^{\u22124}mm^{2}/s^{\\beta}$, $\\beta=0.85$, were made for white matter and grey matter, respectively. These two distinct \u03b2s led to $K^{\u2217}$ of 0.8125 and 0.4733 using (Equation 9). Diffusion times were chosen from the range $\u0394_{i}\\in[\\delta,\\delta+50]$, where diffusion pulse length was set to $\\delta=8 ms$ to match the Connectome 1.0 data. A minimum required separation between any two $\u0394$s was enforced, i.e., $30/(n\u22121)$, where 30 corresponds with the $30 ms$ difference between the $\u0394$s for the Connectome 1.0 DW-MRI data, and $n$ is the number of distinct diffusion times simulated. We considered as many as five distinct diffusion times. Simulations were conducted by randomly selecting sets of $\u0394$s for 1000 instances, and then generating individual DW-MRI simulated signals using (Equation 10), before fitting for $D_{\\beta}$ and \u03b2, from which $K^{\u2217}$ was computed using (Equation 9). For the case of two diffusion times, suggestions on the separation between them was given based on the goodness-of-fit of the model.\n\nThe second simulation experiment was to investigate the effect of the number of diffusion times on the accuracy of parameter fitting. To generate simulated data reflecting observations in human data, $D_{\\beta}$ and $\\beta$ were restricted to $D_{\\beta}\\in[10^{\u22124},10^{\u22123}]$ in the unit of $ mm^{2}/s^{\\beta}$ and $\\beta\\in[0.5,1]$, corresponding to $K^{\u2217}\\in[0,1.7124]$. For the case of two diffusion times, suggestions on the separation between them were given based on the goodness-of-fit of the model.\n\nThe third simulation experiment is to study b-value sub-sampling under various SNR levels (SNR = 5, 10, and 20). We set the b-values in the simulated data the same as those used to acquire the Connectome 1.0 dataset. At each SNR level, we selected combinations of two, three, and four b-values, irrespective of the difference between them and the diffusion time set to generate the b-value. Essentially, we explored the entire possible sets of b-values for the three regimes, resulting in 120, 560, and 1820 combinations, respectively. A goodness-of-fit measure for model fitting was used to make comparisons between the different b-value combinations.\n\n### SNR reduction by downsampling diffusion encoding directions\n\nWe performed SNR reduction of the Connectome 1.0 DW-MRI data by downsampling of diffusion directions in each b-shell. The method of multiple subsets from multiple sets (P-D-MM) subsampling algorithm provided in DMRITool (Cheng et al., 2018) was applied to the b-vectors provided with the Connectome 1.0 DW-MRI data. Note, the b-shells contained 32 directions if $b<2400 s/mm^{2}$, and 64 directions if $b\\geq2400 s/mm^{2}$. We consider SNR = 20 to be the full dataset. The SNR = 10 data was constructed by downsampling to eight non-collinear diffusion encoding directions in each b-shell, and three were required for the SNR = 6 data. In the downsampled data, each diffusion encoding direction was coupled with the direction of opposite polarity (i.e., SNR = 10 had sixteen measurements for each b-value, and SNR = 6 had six).\n\n### Parameter estimation\n\n#### Standard DKI model\n\nThe maximum b-value used to acquire the DW-MRI for standard DKI model fitting is limited to the range 2000 s/mm2 to 3000 s/mm2 due to the quadratic form of (Equation 6). We opted to use DW-MRI data generated with b-values $=50,350,800,1500,2400 s/mm^{2}$ using $\u0394=19\u00a0ms$, and b-values = 200, 950, 2300 s/mm2 using $\u0394=49\u00a0ms$. Note, the apparent diffusion coefficient, $D_{DKI}$ in (Equation 6) is time dependent, as can be deduced from (Equation 5) and (Equation 8). Thereby, standard DKI fitting can only be applied to DW-MRI data generated using a single diffusion time. The model in (Equation 6) was fitted in a voxelwise manner to the powder averaged (i.e., geometric mean over diffusion encoding directions, often referred to as trace-weighted) DW-MRI data using the lsqcurvefit function in MATLAB (Mathworks, Version 2022a) using the trust-region reflective algorithm. Optimisation function specific parameters were set to TolFun = 10\u20134 and TolX = 10\u20136. Parameters were bounded to the ranges of $D_{DKI}>0$ and $0<K_{DKI}\\leq3$.\n\n#### Sub-diffusion model\n\nFor the single diffusion time case, the sub-diffusion model in (Equation 3) was fitted to the powder averaged DW-MRI data in a voxelwise manner using the same MATLAB functions as in the previous section. For each subject, spatially resolved maps of $D_{\\beta}$ and $\\beta$ were generated. The fitting strategy for multiple diffusion time data is to solve:\n\n$$\n(D_{\\beta},\\beta)=argmin\\sumi=1,2,\u2026,n,j=1,2,\u2026,J_{i}[S_{ij}\u2212SUB(\u0394\u00af_{i},q_{j};D_{\\beta},\\beta)]^{2}\n$$\n\nwhere $S_{ij}$ is the signal at the ith effective diffusion time $\u0394\u00af_{i}$ and the jth q-space parameter $q_{j}$, $SUB$ is the sub-diffusion model (Equation 3) at $\u0394\u00af_{i}$ and $q_{j}$ for a given set of ($D_{\\beta},\\beta$), $n$ is the number of diffusion times, and $J_{i}$ is the number of $q$-values corresponding to $\u0394\u00af_{i}$ in data acquisition. This objective function allows incorporation of an arbitrary number of diffusion times, each having arbitrary number of $q$-values. Parameters were bounded to the ranges of $0<\\beta\\leq1$ and $D_{\\beta}>0$ for all the parameter fittings. Model parameters were found to be insensitive to the choice of initial values. Parameters $D^{\u2217}$ and $K^{\u2217}$ were computed analytically using the estimated $D_{\\beta}$ and $\\beta$ according to (Equation 8) and (Equation 9).\n\n### Goodness-of-fit and region-based statistical analysis\n\nFor all of the simulation results, the coefficient of determination, referred to as $R^{2}$, was used to assess how well the mean kurtosis values were able to be fitted. This value was calculated using a standard $R^{2}$ formula\n\n$$\nR^{2}=1\u2212\\frac{\\sumi(K_{Simulated,i}\u2212K_{Fitted,i})^{2}}{\\sumi(K_{Simulated,i}\u2212K\u00af_{Simulated})^{2}}\n$$\n\nwhere $K\u00af_{Simulated}$ is the mean simulated $K$ value.\n\nFor human data, we computed the region specific mean and standard deviation for each subject, and reported the weighted mean and pooled standard deviation along with the coefficient of variation (CV), defined as the ratio of the standard deviation to the mean. The weights were the number of voxels in the associated regions in each subject. Following Barrick et al., 2020, the tissue contrast (TC) is computed as $TC=|\\mu_{WM}\u2212\\mu_{GM}|/\\sqrt{\\sigma_{WM}^{2}+\\sigma_{GM}^{2}}$, where $\\mu_{WM}$ and $\\mu_{GM}$ are the mean parameter values in white and grey matters; and $\\sigma_{WM}$ and $\\sigma_{GM}$ are the standard deviations of parameter values. Higher TC values indicate greater tissue contrast.\n\nHuman data were analysed voxelwise, and also based on regions-of-interest. We considered three categories of brain regions, namely sub-cortical grey matter (scGM), cortical grey matter (cGM), and white matter (WM). The scGM region constituted the thalamus (FreeSurfer labels 10 and 49 for left and right hemisphere), caudate (11, 50), putamen (12, 51), and pallidum (13, 52). The cGM region was all regions (1000\u20132999) and separately analysed the fusiform (1007, 2007) and lingual (1013, 2013) brain regions, whilst the WM had white matter fibre regions from the cerebral (2, 41), cerebellum (7, 46), and corpus callosum (CC; 251\u2013255) areas. The average number of voxels in each region were 3986 (scGM), 53326 (cGM), 52121 (WM), 1634 (thalamus), 831 (caudate), 1079 (putamen), 443 (pallidum), 2089 (fusiform), 1422 (lingual), 48770 (cerebral WM), 2904 (cerebellum WM), and 447 (CC). For each brain region, a t-test was performed to test for significant differences in mean kurtosis population means under the optimal and sub-optimal b-value sampling regimes presented in Table 5 compared to the benchmark parameter values presented in Table 2.\n\n#### Scan\u2013rescan analysis using intraclass correlation coefficient (ICC)\n\nFor each of the six subjects, both the first (scan) and second (rescan) scan images were registered to the first scan images of Subject 1 using inbuilt MATLAB (Mathworks, Version 2022a) functions (imregtform and imwarp). We used 3D affine registration to account for distortions and warps common in DW-MRI data. Cubic spline interpolation was applied to resample both the scan and rescan DW-MRI data for each subject onto Subject 1\u2019s first scan data grid. The FreeSurfer labels for Subject 1\u2019s first scan were used for brain region analysis. For each voxel, the ICC measure was applied to assess scan\u2013rescan reproducibility of mean kurtosis, as described by Duval et al., 2018 and Fan et al., 2021,\n\n$$\nICC=\\frac{s_{inter}^{2}}{s_{intra}^{2}+s_{inter}^{2}}\n$$\n\nwith $s_{intra}^{2}=mean_{i}(1/2\u22c5((m_{i,scan}\u2212m\u00af_{i})^{2}+(m_{i,rescan}\u2212m\u00af_{i})^{2}))$ and $s_{inter}^{2}=var_{i}(m\u00af_{i})$. Here, $m_{i,scan}$ is the kurtosis value measured in the voxel for subject i, and $m\u00af_{i}$ is the average value between scan and rescan. An ICC histogram and the mean and standard deviation descriptive statistics were generated for all brain regions analysed.\n\n### Conclusion\n\nThe utility of DKI for inferring information on tissue microstructure was described decades ago. Continued investigations in the DW-MRI field have led to studies clearly describing the importance of mean kurtosis mapping to clinical diagnosis, treatment planning and monitoring across a vast range of diseases and disorders. Our research on robust, fast, and accurate mapping of mean kurtosis using the sub-diffusion mathematical framework promises new opportunities for this field by providing a clinically useful, and routinely applicable mechanism for mapping mean kurtosis in the brain. Future studies may derive value from our suggestions and apply methods outside the brain for broader clinical utilisation.\n",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90465.3.sa0](https://doi.org/10.7554/eLife.90465.3.sa0)\n\nThis paper proposes a valuable new method for the assessment of the mean kurtosis for diffusional kurtosis imaging by utilizing a recently introduced sub-diffusion model. The evidence supporting the claims that this technique is robust and accurate in brain imaging is solid; however, there is a need to include a summary of the clear limitations.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90465.3.sa1](https://doi.org/10.7554/eLife.90465.3.sa1)\n\nThis study introduces an innovative method for assessing the mean kurtosis, utilizing the mathematical foundation of the sub-diffusion framework. In particular, a new fitting technique that incorporates two different diffusion times is proposed to estimate the parameters of the sub-diffusion model. The evaluation of this technique, which generates kurtosis maps based on the sub-diffusion framework, is conducted through simulations and the examination of data obtained from human subjects.\n\nThe authors have revised the manuscript to address the initial critiques. However, there appears to be some confusion regarding the following responses.\n\n\"The comment \"... using the new sub-diffusion model -an approximation of the DKI-based signal expression...\" is a bit misleading. In fact we propose that the reverse interpretation is the more suitable way to view the relationship: the DKI model is a degree-2 approximation of the sub-diffusion model, as in eq. (7).\n\nWe appreciate the suggestion. However, unfortunately, it is not appropriate to generate data with the DKI model, as the maximum b-value is limited to 2000~3000s/mm^2 and hence the DKI model cannot represent diffusion MRI signals from a full spectrum of b-values. A key strength of our proposed model is that it removes this limitation. \"\n\nThe main motivation of this study is to investigate the feasibility of the sub-diffusion model, which was proposed in Yang et al., NeuroImage 2022, to provide fast and robust estimation of kurtosis model parameters. I understand that mathematically, the DKI model can be written as a degree two approximation of the sub-diffusion model. However, the hypothesis is that the proposed sub-diffusion model can be used to obtain practically useful mapping of mean kurtosis. Therefore, unless the authors use a different parameter or phenomenon as the \"true\" or \"ground-truth kurtosis,\" this study examines whether the sub-diffusion model parameters can serve as an approximation to the conventional DKI parameters.\n\nWith the current simulation study design, (1) the data is generated by the proposed sub-diffusion model, (2) the \"ground-truth\" or \"true\" D* and K* are computed based on the proposed equality (Eq.7); (3) and then the data is fit with the conventional DKI model and also with the proposed sub-diffusion model. Since the data is generated by the proposed model, and the ground truth (or true) values calculated by the proposed equality, as expected, the fitted kurtosis values by the sub-diffusion model match better with the simulated ones compared to the conventional DKI model.\n\nFurthermore, as the authors noted, the sub-diffusion model eliminates the restriction on b-value selection, allowing for DWI data acquisition with higher b-values. However, it is unclear how the new K* and D* values, calculated directly from the sub-diffusion model using a higher b-value DWI protocol, are superior to the K and D values from the conventional DKI model, which uses a DWI protocol limited to b-values of 2000-3000 s/mm\u00b2. In clinical practice, b-values of 2000-3000 s/mm\u00b2 are generally considered \"high b-value.\"\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90465.3.sa2](https://doi.org/10.7554/eLife.90465.3.sa2)\n\nSummary:\n\nThe authors present an interesting technique for analysis of diffusion magnetic resonance images (dMRI) using a sub-diffusion model of the diffusion process. They show that the results of their technique when fitted to dMRI with two diffusion times provide robust diffusion coefficient and kurtosis measures.\n\nStrengths:\n\nThe measures provided by the sub-diffusion technique are robust and can be reliably estimated from short dMRI data acquisitions. This is potentially useful in application to clinical studies.\n\nWeaknesses:\n\nThe authors do not fully demonstrate that their D* and K* measures are not affected by diffusion time. Potential limitations of the technique are not considered.\n\nThis reviewer suggests that the paper would benefit from considerations of the limitations of the applied techniques. This would include consideration of:\n\n(i) The use of the sub-diffusion model in the simulation studies - there are circular arguments that should be considered.\n\n(ii) The time dependence of D* and K*. This is because the human data provided in Tables 3 and 4 (for \u0394=19ms and \u0394=49ms) seem to show that\n\nD* and K* are time dependent.\n\nWith respect to the second point this reviewer acknowledges the authors' argument that when the fitting is performed over the higher dimensional space that includes multiple diffusion times then this leads to a more robust estimation of sub-diffusion measures. However, the authors only include two diffusion times in their in-vivo human analysis (\u0394=19ms and \u0394=49ms) so it is not possible for them to show here that different pairs of diffusion times lead to invariant D* and K* values. This is a limitation of the study as the authors show there is time dependence of D* and K* in tables 3 and 4 (when the model is fitted to single diffusion times). Potentially the larger apparent time dependence of K* in white matter compared to grey matter (tables 3 and 4) could lead to the tissue specific differences in root mean squared error shown in Figure 7.\n\nThis reviewer requests that the authors discuss their results more clearly with respect to these potential limitations and include some discussion of their single (and multiple) diffusion time results (for D_SUB and K*) in comparison with the time dependent DKI literature.\n",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6859fb8d-aae5-4c46-bee2-c7d89cbb267a",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C1",
+      "claim": "Diffusional kurtosis imaging (DKI) is a methodology for measuring the extent of non-Gaussian diffusion in biological tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusional kurtosis imaging (DKI) is a methodology for measuring the extent of non-Gaussian diffusion in biological tissue, which has shown great promise in clinical diagnosis, treatment planning, and monitoring of many neurological diseases and disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about DKI that is directly stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "21ceb55a-1d02-40c5-bfb3-1fc9dfa43091",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C2",
+      "claim": "DKI has shown great promise in clinical diagnosis, treatment planning, and monitoring of many neurological diseases and disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusional kurtosis imaging (DKI) is a methodology for measuring the extent of non-Gaussian diffusion in biological tissue, which has shown great promise in clinical diagnosis, treatment planning, and monitoring of many neurological diseases and disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the manuscript's citation of multiple clinical applications throughout the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "06e5da26-c592-4568-8f25-ad994fcd0965",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C3",
+      "claim": "Robust, fast, and accurate estimation of kurtosis from clinically feasible data acquisitions remains a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, robust, fast, and accurate estimation of kurtosis from clinically feasible data acquisitions remains a challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a motivation for the study in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "aa5b3edf-4233-417c-84e1-c889f1c98f81",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C4",
+      "claim": "The sub-diffusion mathematical framework provides a new accurate approach for estimating mean kurtosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we first outline a new accurate approach of estimating mean kurtosis via the sub-diffusion mathematical framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is one of the main contributions stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "a9fb351f-832c-489d-992d-f9cd84c4bc7f",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C5",
+      "claim": "The sub-diffusion extension of conventional DKI overcomes the limitation on the maximum b-value of the latter.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, this extension of the conventional DKI overcomes the limitation on the maximum b-value of the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key advantage of the proposed method in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "2de5111a-939e-4a71-ac29-aa3e9a7c815f",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C6",
+      "claim": "Kurtosis and diffusivity can be computed as functions of the sub-diffusion model parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Kurtosis and diffusivity can now be simply computed as functions of the sub-diffusion model parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated mathematically in Equations 8 and 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "8003a36f-f6f6-4dc0-ab4e-afe2eb957897",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C7",
+      "claim": "A new fast and robust fitting procedure is proposed to estimate the sub-diffusion model parameters using two diffusion times without increasing acquisition time.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we propose a new fast and robust fitting procedure to estimate the sub-diffusion model parameters using two diffusion times without increasing acquisition time as for the conventional DKI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a contribution in the abstract and demonstrated through simulations and real data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e49339be-606e-4cda-bcd5-e74358db6cc6",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C8",
+      "claim": "The sub-diffusion-based kurtosis mapping method was evaluated using both simulations and the Connectome 1.0 human brain data.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, our sub-diffusion-based kurtosis mapping method is evaluated using both simulations and the Connectome 1.0 human brain data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "8e960d83-3e4b-42e6-b757-4121f4365ff2",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C9",
+      "claim": "Exquisite tissue contrast is achieved even when the diffusion encoded data is collected in only minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Exquisite tissue contrast is achieved even when the diffusion encoded data is collected in only minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract and supported by the results in Figures 6 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "b2bfe630-8038-45d0-b84d-ffe797275380",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C10",
+      "claim": "Robust, fast, and accurate estimation of mean kurtosis can be realised within a clinically feasible diffusion-weighted magnetic resonance imaging data acquisition time.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings suggest robust, fast, and accurate estimation of mean kurtosis can be realised within a clinically feasible diffusion-weighted magnetic resonance imaging data acquisition time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by the results throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "a15f5cde-5f8b-469f-85f2-5a2989a38a88",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C11",
+      "claim": "DW-MRI over a period of more than 30 years has become synonymous with tissue microstructure imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion-weighted magnetic resonance imaging (DW-MRI) over a period of more than 30 years has become synonymous with tissue microstructure imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "3b072c25-7358-4518-aab9-505bac46e4f6",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C12",
+      "claim": "Measures of how water diffuses in heterogeneous tissues allow indirect interpretation of changes in tissue microstructure.",
+      "claim_type": "EXPLICIT",
+      "source": "Measures of how water diffuses in heterogeneous tissues allow indirect interpretation of changes in tissue microstructure (Le Bihan and Johansen-Berg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Le Bihan and Johansen-Berg, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "3b1b4fef-b5ff-4979-8c6a-eef01a886c34",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C13",
+      "claim": "DW-MRI has predominantly been applied in the brain, where properties of white matter connections between brain regions are often studied.",
+      "claim_type": "EXPLICIT",
+      "source": "DW-MRI has predominantly been applied in the brain, where properties of white matter connections between brain regions are often studied (Lebel et al., 2019), in addition to mapping tissue microstructural properties (Tournier, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lebel et al., 2019 and Tournier, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e4e37350-0330-476a-b15c-fd015e72ba87",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C14",
+      "claim": "Applications of DW-MRI outside of the brain have clinical importance and interest is growing rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Applications outside of the brain have clinical importance as well, and interest is growing rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to various clinical applications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "2212bb1a-93d1-4af0-a797-d83dc2ca2757",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C15",
+      "claim": "Diffusion tensor imaging (DTI) can be performed using a single diffusion weighting (b-shell) and at least six diffusion encoding directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst diffusion tensor imaging (DTI) can be performed using a single diffusion weighting, a so-called b-shell, and at least six diffusion encoding directions (Le Bihan et al., 2001), other models tend to require multiple b-shells each having multiple diffusion encoding directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Le Bihan et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "c6349035-b706-40cc-b1d1-f1aa9d2dc324",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C16",
+      "claim": "DKI is a primary example of a multiple b-shell, multiple diffusion encoding direction method.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusional kurtosis imaging (DKI) is a primary example of a multiple b-shell, multiple diffusion encoding direction method (Jensen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jensen et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "5f068b3b-188e-4df6-a834-268ac85346ae",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C17",
+      "claim": "DKI is considered as an extension of DTI.",
+      "claim_type": "EXPLICIT",
+      "source": "DKI is considered as an extension of DTI (Jensen and Helpern, 2010; Hansen et al., 2013; Veraart et al., 2011b), where the diffusion process is assumed to deviate away from standard Brownian motion, and the extent of such deviation is measured via the kurtosis metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jensen and Helpern, 2010; Hansen et al., 2013; Veraart et al., 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "72cc5eae-dd80-41e8-ac8f-1feb2c66f846",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C18",
+      "claim": "In DKI, the diffusion process is assumed to deviate away from standard Brownian motion, and the extent of such deviation is measured via the kurtosis metric.",
+      "claim_type": "EXPLICIT",
+      "source": "DKI is considered as an extension of DTI (Jensen and Helpern, 2010; Hansen et al., 2013; Veraart et al., 2011b), where the diffusion process is assumed to deviate away from standard Brownian motion, and the extent of such deviation is measured via the kurtosis metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about DKI supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d736de43-f021-46af-891c-47c332f434ec",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C19",
+      "claim": "Recent clinical benefits of using kurtosis metrics over other DW-MRI-derived measures have been demonstrated for grading hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent clinical benefits of using kurtosis metrics over other DW-MRI-derived measures have been demonstrated for grading hepatocellular carcinoma (Li et al., 2022b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2022b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "5a0fd3c3-549b-4c9d-b89b-45d95f1d22d2",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C20",
+      "claim": "Kurtosis metrics have been demonstrated for prognosing chronic kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "prognosing chronic kidney disease (Liu et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "de69b98b-84dc-4358-a22f-a5a9f4f0b887",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C21",
+      "claim": "Kurtosis metrics have been demonstrated for differentiating parotid gland tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "differentiating parotid gland tumours (Huang et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Huang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "959958fd-da99-45d6-8a94-2d131e71c85c",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C22",
+      "claim": "Kurtosis metrics have been demonstrated for measuring response to radiotherapy treatment in bone tumour and glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "measuring response to radiotherapy treatment in bone tumour (Guo et al., 2022b) and glioblastoma (Goryawala et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Guo et al., 2022b and Goryawala et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "c1169f35-a23a-4ed7-a83c-f8f48c89bf3b",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C23",
+      "claim": "Kurtosis metrics have been demonstrated for identifying tissue abnormalities in temporal lobe epilepsy patients with sleep disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "identifying tissue abnormalities in temporal lobe epilepsy patients with sleep disorders (Guo et al., 2022a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Guo et al., 2022a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "51ca85e5-5ef8-4a88-b340-278f861883cc",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C24",
+      "claim": "Kurtosis metrics have been demonstrated for identifying brain microstructural changes in mild traumatic brain injury.",
+      "claim_type": "EXPLICIT",
+      "source": "brain microstructural changes in mild traumatic brain injury (Wang et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "6812aab3-34d0-4a90-a0d5-333e3ce2ec9a",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C25",
+      "claim": "Kurtosis metrics have been demonstrated for monitoring of renal function and interstitial fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "monitoring of renal function and interstitial fibrosis (Li et al., 2022a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2022a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "38fce4fe-7930-452f-981e-e4fe715a8121",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C26",
+      "claim": "Kurtosis metrics have been demonstrated for detecting the invasiveness of bladder cancer into muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "detecting the invasiveness of bladder cancer into muscle (Li et al., 2022d)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2022d.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "f763b671-da80-4ea3-861c-4d6b46e3618a",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C27",
+      "claim": "Kurtosis metrics have been demonstrated for aiding management of patients with depression.",
+      "claim_type": "EXPLICIT",
+      "source": "aiding management of patients with depression (Maralakunte et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maralakunte et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "ea0f29ac-15ac-4c70-9e0a-b79a21dcf7b4",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C28",
+      "claim": "Kurtosis metrics have been demonstrated for delineating acute infarcts with prognostic value.",
+      "claim_type": "EXPLICIT",
+      "source": "delineating acute infarcts with prognostic value (Hu et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "2bd5ba23-1714-4ef1-8a5f-d2eb3ae9b3f4",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C29",
+      "claim": "Kurtosis metrics have been demonstrated for predicting breast cancer metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "predicting breast cancer metastasis (Zhou et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhou et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "0ca2671b-79c1-440f-8360-bd39687e4423",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C30",
+      "claim": "Kurtosis metrics have been demonstrated for diagnosing Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "diagnosing Parkinson's disease (Li et al., 2022c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2022c.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e4509f30-c5e6-4d2d-991a-57b087361de0",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C31",
+      "claim": "The routine use of DKI in the clinic has lagged due to the inability to robustly estimate the kurtosis metric.",
+      "claim_type": "EXPLICIT",
+      "source": "The routine use of DKI in the clinic has nonetheless lagged due the inability to robustly estimate the kurtosis metric (Veraart et al., 2011a; Tabesh et al., 2011; Kuder et al., 2012; Henriques et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Veraart et al., 2011a; Tabesh et al., 2011; Kuder et al., 2012; Henriques et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e8f36ffa-5a6f-47cf-b209-1a740540b9fe",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C33",
+      "claim": "The optimal maximum b-value for DKI is dependent on tissue type.",
+      "claim_type": "EXPLICIT",
+      "source": "with the optimal maximum b-value found to be dependent on tissue type (Poot et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Poot et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d62e4a9a-74fb-40ae-a313-e06ecca96511",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C34",
+      "claim": "The traditional kurtosis model is less accurate at representing the diffusion signal at large b-values.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the traditional kurtosis model is less accurate at representing the diffusion signal at large b-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the b-value limitation mentioned in the previous sentence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "572515dd-5576-498c-adef-658147113fca",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C35",
+      "claim": "Multiple b-shell, multiple direction high-quality DW-MRI data can take many minutes to acquire.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, multiple b-shell, multiple direction high-quality DW-MRI data can take many minutes to acquire, which poses challenges for clinical imaging protocols involving a multitude of MRI contrasts already taking tens of minutes to execute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical challenge for clinical implementation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "be396afa-2464-4d6a-8662-9cd4dce1e4b7",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C36",
+      "claim": "Reduction of DKI data acquisition times through parallel imaging, optimisation of b-shells and directions have been investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction of DKI data acquisition times through parallel imaging, optimisation of b-shells and directions have been investigated (Zong et al., 2021; Heidemann et al., 2010; Zelinski et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zong et al., 2021; Heidemann et al., 2010; Zelinski et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "aafd7cd1-3f20-4f62-8dc9-2d112b3f4143",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C37",
+      "claim": "DW-MRI data necessary for DKI analysis has been shown to supersede the data required for DTI.",
+      "claim_type": "EXPLICIT",
+      "source": "and DW-MRI data necessary for DKI analysis has been shown to supersede the data required for DTI (Veraart et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Veraart et al., 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d8383af6-95df-4443-8bec-edd2b1449725",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C38",
+      "claim": "An optimised DKI protocol can potentially replace clinical DTI data acquisitions without adversely affecting the estimation of DTI metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an optimised DKI protocol can potentially replace clinical DTI data acquisitions without adversely affecting the estimation of DTI metrics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the previous statement about DKI data superseding DTI requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "a74ea695-27e3-4b03-9d15-f3703a274bc7",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C39",
+      "claim": "For DKI to become a routine clinical tool, DW-MRI data acquisition needs to be fast and provides a robust estimation of kurtosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For DKI to become a routine clinical tool, DW-MRI data acquisition needs to be fast and provides a robust estimation of kurtosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for clinical adoption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "60b6fe08-ef97-440c-9dcc-ed9001b708e3",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C40",
+      "claim": "The ideal protocol should have a minimum number of b-shells and diffusion encoding directions in each b-shell.",
+      "claim_type": "EXPLICIT",
+      "source": "The ideal protocol should have a minimum number of b-shells and diffusion encoding directions in each b-shell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design goal for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "4c2e27d3-7b78-4db3-9006-d836a1014ee3",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C41",
+      "claim": "Powder averaging over diffusion directions improves the signal-to-noise ratio (SNR) of the DW-MRI data used for parameter estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "The powder averaging over diffusion directions improves the signal-to-noise ratio (SNR) of the DW-MRI data used for parameter estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known benefit of powder averaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d8880440-8436-4254-b1c9-880daf1377a8",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C42",
+      "claim": "Powder averaging loses out on directionality of the kurtosis but provides a robust method of estimating mean kurtosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst this approach loses out on directionality of the kurtosis, it nonetheless provides a robust method of estimating mean kurtosis (Henriques et al., 2021), a metric of significant clinical value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Henriques et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e95c95f0-9694-4b98-bb05-e71149ed7d6e",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C43",
+      "claim": "Mean kurtosis is a metric of significant clinical value.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst this approach loses out on directionality of the kurtosis, it nonetheless provides a robust method of estimating mean kurtosis (Henriques et al., 2021), a metric of significant clinical value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by the numerous clinical applications cited.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "6204cd63-e570-46f8-9714-6b6f6500846a",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C44",
+      "claim": "The sub-diffusion framework provides new, unexplored opportunities for fast and robust kurtosis mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "In view of the recent generalisation of the various models applicable to DW-MRI data (Yang et al., 2022), the sub-diffusion framework provides new, unexplored opportunities, for fast and robust kurtosis mapping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the motivation for the study, with a citation to Yang et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "9c448220-7808-4550-9f2a-2b6f35ac1d6c",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C46",
+      "claim": "Increasing the number of distinct diffusion times used for parameter estimation decreases estimation variability, with the most significant improvement when increasing from one to two diffusion times.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, increasing the number of distinct diffusion times used for parameter estimation decreases estimation variability, with the most significant improvement when increasing from one to two diffusion times (rows 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in Figure 1 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "ae1be49c-877e-4e73-9cf5-f2d53d3702bd",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C47",
+      "claim": "Sampling with two distinct diffusion times provides more robust parameter estimates than sampling twice as many b-values using one diffusion time.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, sampling with two distinct diffusion times provides more robust parameter estimates than sampling twice as many b-values using one diffusion time (compare 2 and 2\u2032 violin plots, rows 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in Figure 1 by comparing the 2 and 2' columns and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "742d7d43-58f1-4f64-823e-fa27d3ba226e",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C48",
+      "claim": "The most pronounced decline of CV occurs when increasing from one to two diffusion times.",
+      "claim_type": "EXPLICIT",
+      "source": "This result again confirms that the most pronounced decline of CV occurs when increasing from one to two diffusion times, and parameter estimations can be performed more robustly using DW-MRI data with a relatively high SNR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in row 4 of Figure 1 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "194518f6-7ef0-4369-84b8-45ab0a935bb3",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C49",
+      "claim": "Parameter estimations can be performed more robustly using DW-MRI data with a relatively high SNR.",
+      "claim_type": "EXPLICIT",
+      "source": "This result again confirms that the most pronounced decline of CV occurs when increasing from one to two diffusion times, and parameter estimations can be performed more robustly using DW-MRI data with a relatively high SNR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 1 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "5d384796-e5f4-4a44-8088-e13036dbc502",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C53",
+      "claim": "Sub-diffusion based kurtosis estimation improves using multiple diffusion times.",
+      "claim_type": "EXPLICIT",
+      "source": "This result verifies that sub-diffusion based kurtosis estimation (blue dots) improves using multiple diffusion times.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 3 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "04a63885-0119-45a5-9c66-446ba09c6eda",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C57",
+      "claim": "Fitting sub-diffusion model to data with two adequately separated diffusion times can lead to robust estimation of mean kurtosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, fitting sub-diffusion model (Equation 3) to data with two adequately separated diffusion times can lead to robust estimation of mean kurtosis, via (Equation 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results in Figures 1-3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "859e6c1e-3a45-45d2-967a-c0d5fa0d6f0c",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C61",
+      "claim": "In noisy data, the trend of K_DKI converging to K* is not obvious within the experimental diffusion time window.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst in the noisy data setting (B), this trend is not obvious within the experimental diffusion time window.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 4 panel B and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "b0153b40-f09d-483c-bbf4-a3a5159fbda8",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C62",
+      "claim": "As the number of non-zero b-values increase, the achievable combinations increase as well.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, as the number of non-zero b-values increase, the achievable combinations increase as well (i.e., 120, 560, and 1820 for the three different non-zero b-value cases).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text describing Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "10ec7c0e-281b-406f-9a31-6d32241caee6",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C63",
+      "claim": "Increasing the number of non-zero b-values from two to four improves the quality of the parameter estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulation results in Table 1 suggest that increasing the number of non-zero b-values from two to four improves the quality of the parameter estimation, also achievable by fitting the sub-diffusion model (Equation 3) to higher SNR data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 1 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "890ab9a9-03c1-42aa-a4ff-df633e217eba",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C64",
+      "claim": "The gain is larger by using higher SNR data than by using more b-values.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain is larger by using higher SNR data than by using more b-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the analysis of Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "a56206be-b914-43fc-aa9e-76339c9fe81d",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C70",
+      "claim": "When four non-zero b-values are used then two from each diffusion time are required.",
+      "claim_type": "EXPLICIT",
+      "source": "and when four non-zero b-values are used then two from each diffusion time are required.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "c823eeed-f145-486a-9739-ec7e0d0b9090",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C77",
+      "claim": "White matter regions showed high kurtosis (0.87 \u00b1 0.22).",
+      "claim_type": "EXPLICIT",
+      "source": "Following Table 2 (last column), white matter regions showed high kurtosis (0.87 \u00b1 0.22), consistent with a structured heterogeneous environment comprising parallel neuronal fibres, as shown in Maiter et al., 2021.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 2 and supported by a citation to Maiter et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "822ee53f-76f4-4eee-9463-ad3eb2b65659",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C78",
+      "claim": "Cortical grey matter showed low kurtosis (0.40 \u00b1 0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical grey matter showed low kurtosis (0.40 \u00b1 0.16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "ebe42883-e098-4c50-9dca-e22ab3d63a14",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C79",
+      "claim": "Subcortical grey matter regions showed intermediate kurtosis (0.60 \u00b1 0.21).",
+      "claim_type": "EXPLICIT",
+      "source": "Subcortical grey matter regions showed intermediate kurtosis (0.60 \u00b1 0.21).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "a3f85c4c-0129-4b16-9e1e-94772f954d4f",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C80",
+      "claim": "Caudate and putamen showed similar kurtosis to grey matter.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, caudate and putamen showed similar kurtosis to grey matter, whilst thalamus and pallidum showed similar kurtosis properties to white matter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "5c9b1adc-6f71-47d5-970c-8b5cde2d7206",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C81",
+      "claim": "Thalamus and pallidum showed similar kurtosis properties to white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, caudate and putamen showed similar kurtosis to grey matter, whilst thalamus and pallidum showed similar kurtosis properties to white matter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "1241994c-65f1-4d82-a53b-ea7d487cff83",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C82",
+      "claim": "Histological staining results of the sub-cortical nuclei showed the subcortical grey matter was permeated by small white matter bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological staining results of the sub-cortical nuclei (Maiter et al., 2021) showed the subcortical grey matter was permeated by small white matter bundles, which could account for the similar kurtosis in thalamus and pallidum to white matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maiter et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "59580684-14fb-440c-af88-87f57cdecc3e",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C86",
+      "claim": "The quality of the mean kurtosis map improves with increasing SNR.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the mean kurtosis map improves with increasing SNR, and also by optimising b-value sampling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 9 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d04208f4-57ea-4fe4-954c-6a48c6a41f8b",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C87",
+      "claim": "The quality of the mean kurtosis map improves by optimising b-value sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the mean kurtosis map improves with increasing SNR, and also by optimising b-value sampling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 9 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "87b1fbdc-02a9-4ade-a29b-47a2aeebab15",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C88",
+      "claim": "Optimal sampling at SNR = 10 is qualitatively comparable to the SNR = 20 optimal sampling result.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal sampling at SNR = 10 is qualitatively comparable to the SNR = 20 optimal sampling result, and to the benchmark sub-diffusion results in Figure 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing Figure 9 with Figure 6 and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "513a4a32-20c8-40cb-8f3d-a2f3881efd4c",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C89",
+      "claim": "When using optimal b-values, average errors range from 22% to 43% at SNR = 6, from 13% to 43% at SNR = 10, and from 8% to 20% at SNR = 20, across brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "When using optimal b-values, average errors range from 22% to 43% at SNR = 6, from 13% to 43% at SNR = 10, and from 8% to 20% at SNR = 20, across brain regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on the analysis of Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "eef95835-c81f-4d35-8c64-17dca9c60672",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C90",
+      "claim": "With optimal b-value sampling, the data quality can be reduced to around the SNR = 10 level, without a significant impact on the region-specific mean kurtosis estimates derived using the sub-diffusion model.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings confirm that with optimal b-value sampling, the data quality can be reduced to around the SNR = 10 level, without a significant impact on the region-specific mean kurtosis estimates derived using the sub-diffusion model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion based on the analysis of Table 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "39ada9e1-1554-4c42-830c-b630ccf63e35",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C102",
+      "claim": "Sampling and fitting data with b-values across two distinct diffusion times removes the impediment of protocol-dependent kurtosis values.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest this impediment is removed by sampling and fitting data with b-values across two distinct diffusion times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "155accaf-fc51-4668-8bfa-8de058461464",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C108",
+      "claim": "The value of K* truly reflects the information contained in the full range of b-values.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, its value truly reflects the information contained in the full range of b-values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of the proposed method in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "dcd89963-c44b-47f5-b5eb-5921299211fd",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "claim_id": "C116",
+      "claim": "The use of the real part of the DW-MRI data was recommended for the Connectome 1.0 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an in-depth analysis, the use of the real part of the DW-MRI data was recommended, wherein physiological noise, by nature, follows a Gaussian distribution (Gudbjartsson and Patz, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Methods section and supported by a citation to Gudbjartsson and Patz, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9a2a2fb-56c3-40ce-97e6-c33a9e042e4e",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The sub-diffusion mathematical framework provides a new approach for estimating mean kurtosis that overcomes the maximum b-value limitation of conventional DKI. Kurtosis and diffusivity can be computed as functions of sub-diffusion model parameters (D\u03b2, \u03b2) using a fast and robust fitting procedure with two diffusion times without increasing acquisition time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 are well-supported by mathematical derivations (Equations 8-9), simulation results (Figures 1-3), and real data validation (Connectome 1.0 dataset). The theoretical framework is sound, and empirical evidence demonstrates improved parameter estimation with two diffusion times compared to single diffusion time approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d658cb85-78ed-428a-8c26-4687101785e3",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Increasing the number of distinct diffusion times from one to two provides the most significant improvement in parameter estimation variability. Two distinct diffusion times provide more robust estimates than twice as many b-values using one diffusion time, with optimal performance at higher SNR levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 are directly supported by simulation results in Figure 1, showing clear trends in coefficient of variation (CV) reduction. The comparison between 2 and 2' conditions (same number of data points, different diffusion times) provides strong evidence for the benefit of multiple diffusion times over increased b-value sampling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "1306379f-1c3f-43c0-99a6-4e439addb4f3",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sub-diffusion based kurtosis estimation improves with multiple diffusion times, and fitting the sub-diffusion model to data with two adequately separated diffusion times leads to robust estimation of mean kurtosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C57 are supported by Figure 3 showing improved R\u00b2 values with multiple diffusion times, and Figure 2 demonstrating optimal separation requirements. The simulation results consistently show that two diffusion times are sufficient for robust kurtosis estimation across different SNR levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e35da52f-b639-4ac0-89ea-bd085e19e7a8",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In noisy data (SNR=20), the trend of K_DKI converging to K* is not obvious within the experimental diffusion time window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is directly supported by Figure 4 panel B, which shows that noise obscures the convergence trend that is visible in noiseless data (panel D). This observation is important for understanding the limitations of traditional DKI methods in realistic experimental conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "694447ce-bfa6-4afd-9543-83ff333b98b7",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Increasing the number of non-zero b-values from two to four improves parameter estimation quality, but the gain is larger from using higher SNR data than from using more b-values. Optimal sampling requires balanced selection from both diffusion times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64, C70 are supported by Table 1 and Figure 5, which systematically evaluate different b-value combinations. The quantitative R\u00b2 values demonstrate that SNR improvement provides greater benefit than additional b-values, and the optimal sampling strategy requires contributions from both diffusion times.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mean kurtosis values from the sub-diffusion model show expected tissue-specific patterns: white matter exhibits high kurtosis (0.87\u00b10.22), cortical grey matter shows low kurtosis (0.40\u00b10.16), and subcortical grey matter shows intermediate values (0.60\u00b10.21). These patterns are consistent with known histological structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 are supported by Table 2 data and citations to histological studies (Maiter et al., 2021). The kurtosis values align with expected tissue microstructure, with white matter showing highest values due to organized fiber structure, and the subcortical nuclei showing intermediate values consistent with mixed grey/white matter composition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "9474d990-83c8-41ac-9fea-3f6cacfef1db",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mean kurtosis map quality improves with increasing SNR and optimal b-value sampling. With optimal sampling, data quality can be reduced to SNR=10 without significant impact on region-specific mean kurtosis estimates, with average errors ranging from 13-43% at SNR=10 and 8-20% at SNR=20.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 are supported by Figure 9 and Table 5, which demonstrate that optimal b-value selection allows substantial reduction in acquisition time while maintaining acceptable accuracy. The quantitative error analysis and qualitative image comparisons provide strong evidence for clinical feasibility at SNR=10.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "04584e2b-4918-4008-af35-817eab55d540",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The sub-diffusion-based kurtosis mapping method achieves exquisite tissue contrast in clinically feasible acquisition times (minutes) when evaluated on both simulations and Connectome 1.0 human brain data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are supported by comprehensive validation using simulations (Figures 1-5) and real data (Figures 6-10, Tables 2-5). The tissue contrast values (TC=1.73 for K*) and acquisition time estimates (~4 minutes for SNR=10) demonstrate clinical feasibility. However, the 'exquisite' characterization is somewhat subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "bfa94397-a065-45b8-8644-a210e7ff377b",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sampling and fitting data with b-values across two distinct diffusion times removes the impediment of protocol-dependent kurtosis values, and K* truly reflects information from the full range of b-values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102 and C108 are supported by the demonstration that K* is time-independent (Equation 9) and by Figure 4 showing time-dependence of traditional K_DKI. The mathematical framework and empirical results support that the sub-diffusion approach overcomes limitations of conventional DKI.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d35ea365-a990-470a-8e76-905cc2b0f187",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DKI is a methodology for measuring non-Gaussian diffusion that has shown clinical promise, but robust, fast, and accurate estimation from clinically feasible acquisitions remains challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the context and motivation for the study. These are well-supported by extensive citations to clinical applications (C19-C30) and prior work on DKI limitations (C31). This represents established knowledge in the field rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "42b81e6c-f0cb-4d1e-aed5-cf1f7d56b5d4",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Traditional DKI has limitations including inability to robustly estimate kurtosis, tissue-dependent optimal b-values, reduced accuracy at large b-values, and long acquisition times that challenge clinical implementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 are supported by multiple citations to prior work and represent well-established limitations of conventional DKI. These claims provide important context for the proposed method but do not constitute novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "12dfeeb3-b317-4fdd-a41e-c2d21924a34f",
+      "content_id": "47a94954-8c71-4a7d-8ea1-31932502e234",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The use of the real part of DW-MRI data was recommended for the Connectome 1.0 dataset because physiological noise follows a Gaussian distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C116 is supported by citation to Gudbjartsson and Patz, 1995 and represents a methodological choice. The rationale is sound (Gaussian noise assumption), though the manuscript does not provide the 'in-depth analysis' mentioned, only citing prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "bf22ff61-3991-4bd5-b737-850973400cad",
+      "content_id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors propose that the sub-diffusion mathematical framework provides a new, accurate approach for estimating mean kurtosis that overcomes the b-value limitation of conventional DKI. They claim this method allows robust, fast, and accurate estimation within clinically feasible acquisition times using two diffusion times.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 (sa1) raises fundamental concerns about circular reasoning in the simulation design, noting that data is generated by the sub-diffusion model and ground truth is computed using the proposed equality, making it expected that the sub-diffusion model fits better. The reviewer questions 'how the new K* and D* values...are superior to the K and D values from the conventional DKI model' and states 'it is unclear' what advantage the higher b-value capability provides in clinical practice. Reviewer 2 (sa2) notes the authors 'do not fully demonstrate that their D* and K* measures are not affected by diffusion time' and requests consideration of 'circular arguments' in the simulation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e23613ab-6c9b-4323-ba73-fe1edf056645",
+      "content_id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Simulation results demonstrate that increasing from one to two diffusion times provides the most significant improvement in parameter estimation robustness, and that sampling with two distinct diffusion times provides more robust estimates than sampling twice as many b-values at one diffusion time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the robustness findings (Reviewer 2 sa2: 'The measures provided by the sub-diffusion technique are robust'), Reviewer 1 (sa1) challenges the validity of these simulation results due to circular reasoning: 'the data is generated by the proposed sub-diffusion model...as expected, the fitted kurtosis values by the sub-diffusion model match better.' Reviewer 2 (sa2) notes 'there are circular arguments that should be considered' and questions whether different pairs of diffusion times would lead to invariant values.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "b50a94df-efcc-4425-a5d5-93759b4f6876",
+      "content_id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors claim that sampling across two distinct diffusion times removes the impediment of protocol-dependent kurtosis values, and that K* truly reflects information from the full range of b-values.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 2 (sa2) directly challenges this claim, stating 'The authors do not fully demonstrate that their D* and K* measures are not affected by diffusion time.' The reviewer notes that 'the human data provided in Tables 3 and 4 (for \u0394=19ms and \u0394=49ms) seem to show that D* and K* are time dependent' and that 'the authors show there is time dependence of D* and K* in tables 3 and 4 (when the model is fitted to single diffusion times).' The reviewer identifies this as 'a limitation of the study.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c",
+      "content_id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors demonstrate through simulations that increasing non-zero b-values from two to four improves parameter estimation quality, with optimal b-value sampling allowing data quality reduction to SNR=10 without significant impact on mean kurtosis estimates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 (sa2) acknowledges these findings as a strength, stating 'The measures provided by the sub-diffusion technique are robust and can be reliably estimated from short dMRI data acquisitions. This is potentially useful in application to clinical studies.' The editor (sa0) notes 'the evidence supporting the claims that this technique is robust and accurate in brain imaging is solid.' No specific critiques of the b-value optimization results are raised.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be",
+      "content_id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Analysis of human brain data shows tissue-specific kurtosis values: white matter showed high kurtosis (0.87\u00b10.22), cortical grey matter showed low kurtosis (0.40\u00b10.16), and subcortical grey matter showed intermediate kurtosis (0.60\u00b10.21), with thalamus and pallidum showing similar properties to white matter.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While no reviewer directly challenges these specific tissue measurements, Reviewer 2 (sa2) raises concerns about time dependence that could affect these results: 'Potentially the larger apparent time dependence of K* in white matter compared to grey matter (tables 3 and 4) could lead to the tissue specific differences in root mean squared error shown in Figure 7.' This suggests the tissue-specific findings may be confounded by unresolved time-dependence issues.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "d5335d7b-1e69-42ef-9457-527759a1a52e",
+      "content_id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The sub-diffusion-based kurtosis mapping method was evaluated using simulations and Connectome 1.0 human brain data, achieving exquisite tissue contrast even with data collected in only minutes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor (sa0) states 'the evidence supporting the claims that this technique is robust and accurate in brain imaging is solid; however, there is a need to include a summary of the clear limitations.' Reviewer 2 (sa2) notes as a weakness that 'Potential limitations of the technique are not considered' and requests 'the authors discuss their results more clearly with respect to these potential limitations.' This indicates acceptance of the validation approach but concern about incomplete discussion of limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7",
+      "content_id": "18099322-9621-453b-bf06-cda294bc84b5",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Background claims establishing DKI as a methodology for measuring non-Gaussian diffusion with clinical promise, but facing challenges in robust estimation, b-value limitations, and long acquisition times.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background and motivational claims are not challenged by any reviewer. The editor (sa0) affirms the value of the work by stating 'This paper proposes a valuable new method for the assessment of the mean kurtosis.' Reviewers accept the problem statement and motivation without critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa5b3edf-4233-417c-84e1-c889f1c98f81",
+      "result_id": "a9a2a2fb-56c3-40ce-97e6-c33a9e042e4e"
+    },
+    {
+      "claim_id": "a9fb351f-832c-489d-992d-f9cd84c4bc7f",
+      "result_id": "a9a2a2fb-56c3-40ce-97e6-c33a9e042e4e"
+    },
+    {
+      "claim_id": "2de5111a-939e-4a71-ac29-aa3e9a7c815f",
+      "result_id": "a9a2a2fb-56c3-40ce-97e6-c33a9e042e4e"
+    },
+    {
+      "claim_id": "8003a36f-f6f6-4dc0-ab4e-afe2eb957897",
+      "result_id": "a9a2a2fb-56c3-40ce-97e6-c33a9e042e4e"
+    },
+    {
+      "claim_id": "9c448220-7808-4550-9f2a-2b6f35ac1d6c",
+      "result_id": "d658cb85-78ed-428a-8c26-4687101785e3"
+    },
+    {
+      "claim_id": "ae1be49c-877e-4e73-9cf5-f2d53d3702bd",
+      "result_id": "d658cb85-78ed-428a-8c26-4687101785e3"
+    },
+    {
+      "claim_id": "742d7d43-58f1-4f64-823e-fa27d3ba226e",
+      "result_id": "d658cb85-78ed-428a-8c26-4687101785e3"
+    },
+    {
+      "claim_id": "194518f6-7ef0-4369-84b8-45ab0a935bb3",
+      "result_id": "d658cb85-78ed-428a-8c26-4687101785e3"
+    },
+    {
+      "claim_id": "5d384796-e5f4-4a44-8088-e13036dbc502",
+      "result_id": "1306379f-1c3f-43c0-99a6-4e439addb4f3"
+    },
+    {
+      "claim_id": "04a63885-0119-45a5-9c66-446ba09c6eda",
+      "result_id": "1306379f-1c3f-43c0-99a6-4e439addb4f3"
+    },
+    {
+      "claim_id": "859e6c1e-3a45-45d2-967a-c0d5fa0d6f0c",
+      "result_id": "e35da52f-b639-4ac0-89ea-bd085e19e7a8"
+    },
+    {
+      "claim_id": "b0153b40-f09d-483c-bbf4-a3a5159fbda8",
+      "result_id": "694447ce-bfa6-4afd-9543-83ff333b98b7"
+    },
+    {
+      "claim_id": "10ec7c0e-281b-406f-9a31-6d32241caee6",
+      "result_id": "694447ce-bfa6-4afd-9543-83ff333b98b7"
+    },
+    {
+      "claim_id": "890ab9a9-03c1-42aa-a4ff-df633e217eba",
+      "result_id": "694447ce-bfa6-4afd-9543-83ff333b98b7"
+    },
+    {
+      "claim_id": "a56206be-b914-43fc-aa9e-76339c9fe81d",
+      "result_id": "694447ce-bfa6-4afd-9543-83ff333b98b7"
+    },
+    {
+      "claim_id": "c823eeed-f145-486a-9739-ec7e0d0b9090",
+      "result_id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1"
+    },
+    {
+      "claim_id": "822ee53f-76f4-4eee-9463-ad3eb2b65659",
+      "result_id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1"
+    },
+    {
+      "claim_id": "ebe42883-e098-4c50-9dca-e22ab3d63a14",
+      "result_id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1"
+    },
+    {
+      "claim_id": "a3f85c4c-0129-4b16-9e1e-94772f954d4f",
+      "result_id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1"
+    },
+    {
+      "claim_id": "5c9b1adc-6f71-47d5-970c-8b5cde2d7206",
+      "result_id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1"
+    },
+    {
+      "claim_id": "1241994c-65f1-4d82-a53b-ea7d487cff83",
+      "result_id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1"
+    },
+    {
+      "claim_id": "59580684-14fb-440c-af88-87f57cdecc3e",
+      "result_id": "9474d990-83c8-41ac-9fea-3f6cacfef1db"
+    },
+    {
+      "claim_id": "d04208f4-57ea-4fe4-954c-6a48c6a41f8b",
+      "result_id": "9474d990-83c8-41ac-9fea-3f6cacfef1db"
+    },
+    {
+      "claim_id": "87b1fbdc-02a9-4ade-a29b-47a2aeebab15",
+      "result_id": "9474d990-83c8-41ac-9fea-3f6cacfef1db"
+    },
+    {
+      "claim_id": "513a4a32-20c8-40cb-8f3d-a2f3881efd4c",
+      "result_id": "9474d990-83c8-41ac-9fea-3f6cacfef1db"
+    },
+    {
+      "claim_id": "eef95835-c81f-4d35-8c64-17dca9c60672",
+      "result_id": "9474d990-83c8-41ac-9fea-3f6cacfef1db"
+    },
+    {
+      "claim_id": "e49339be-606e-4cda-bcd5-e74358db6cc6",
+      "result_id": "04584e2b-4918-4008-af35-817eab55d540"
+    },
+    {
+      "claim_id": "8e960d83-3e4b-42e6-b757-4121f4365ff2",
+      "result_id": "04584e2b-4918-4008-af35-817eab55d540"
+    },
+    {
+      "claim_id": "b2bfe630-8038-45d0-b84d-ffe797275380",
+      "result_id": "04584e2b-4918-4008-af35-817eab55d540"
+    },
+    {
+      "claim_id": "39ada9e1-1554-4c42-830c-b630ccf63e35",
+      "result_id": "bfa94397-a065-45b8-8644-a210e7ff377b"
+    },
+    {
+      "claim_id": "155accaf-fc51-4668-8bfa-8de058461464",
+      "result_id": "bfa94397-a065-45b8-8644-a210e7ff377b"
+    },
+    {
+      "claim_id": "6859fb8d-aae5-4c46-bee2-c7d89cbb267a",
+      "result_id": "d35ea365-a990-470a-8e76-905cc2b0f187"
+    },
+    {
+      "claim_id": "21ceb55a-1d02-40c5-bfb3-1fc9dfa43091",
+      "result_id": "d35ea365-a990-470a-8e76-905cc2b0f187"
+    },
+    {
+      "claim_id": "06e5da26-c592-4568-8f25-ad994fcd0965",
+      "result_id": "d35ea365-a990-470a-8e76-905cc2b0f187"
+    },
+    {
+      "claim_id": "e4509f30-c5e6-4d2d-991a-57b087361de0",
+      "result_id": "42b81e6c-f0cb-4d1e-aed5-cf1f7d56b5d4"
+    },
+    {
+      "claim_id": "e8f36ffa-5a6f-47cf-b209-1a740540b9fe",
+      "result_id": "42b81e6c-f0cb-4d1e-aed5-cf1f7d56b5d4"
+    },
+    {
+      "claim_id": "d62e4a9a-74fb-40ae-a313-e06ecca96511",
+      "result_id": "42b81e6c-f0cb-4d1e-aed5-cf1f7d56b5d4"
+    },
+    {
+      "claim_id": "572515dd-5576-498c-adef-658147113fca",
+      "result_id": "42b81e6c-f0cb-4d1e-aed5-cf1f7d56b5d4"
+    },
+    {
+      "claim_id": "dcd89963-c44b-47f5-b5eb-5921299211fd",
+      "result_id": "12dfeeb3-b317-4fdd-a41e-c2d21924a34f"
+    },
+    {
+      "claim_id": "aa5b3edf-4233-417c-84e1-c889f1c98f81",
+      "result_id": "bf22ff61-3991-4bd5-b737-850973400cad"
+    },
+    {
+      "claim_id": "a9fb351f-832c-489d-992d-f9cd84c4bc7f",
+      "result_id": "bf22ff61-3991-4bd5-b737-850973400cad"
+    },
+    {
+      "claim_id": "2de5111a-939e-4a71-ac29-aa3e9a7c815f",
+      "result_id": "bf22ff61-3991-4bd5-b737-850973400cad"
+    },
+    {
+      "claim_id": "8003a36f-f6f6-4dc0-ab4e-afe2eb957897",
+      "result_id": "bf22ff61-3991-4bd5-b737-850973400cad"
+    },
+    {
+      "claim_id": "b2bfe630-8038-45d0-b84d-ffe797275380",
+      "result_id": "bf22ff61-3991-4bd5-b737-850973400cad"
+    },
+    {
+      "claim_id": "6204cd63-e570-46f8-9714-6b6f6500846a",
+      "result_id": "bf22ff61-3991-4bd5-b737-850973400cad"
+    },
+    {
+      "claim_id": "9c448220-7808-4550-9f2a-2b6f35ac1d6c",
+      "result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645"
+    },
+    {
+      "claim_id": "ae1be49c-877e-4e73-9cf5-f2d53d3702bd",
+      "result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645"
+    },
+    {
+      "claim_id": "742d7d43-58f1-4f64-823e-fa27d3ba226e",
+      "result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645"
+    },
+    {
+      "claim_id": "194518f6-7ef0-4369-84b8-45ab0a935bb3",
+      "result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645"
+    },
+    {
+      "claim_id": "5d384796-e5f4-4a44-8088-e13036dbc502",
+      "result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645"
+    },
+    {
+      "claim_id": "04a63885-0119-45a5-9c66-446ba09c6eda",
+      "result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645"
+    },
+    {
+      "claim_id": "859e6c1e-3a45-45d2-967a-c0d5fa0d6f0c",
+      "result_id": "b50a94df-efcc-4425-a5d5-93759b4f6876"
+    },
+    {
+      "claim_id": "39ada9e1-1554-4c42-830c-b630ccf63e35",
+      "result_id": "b50a94df-efcc-4425-a5d5-93759b4f6876"
+    },
+    {
+      "claim_id": "155accaf-fc51-4668-8bfa-8de058461464",
+      "result_id": "b50a94df-efcc-4425-a5d5-93759b4f6876"
+    },
+    {
+      "claim_id": "10ec7c0e-281b-406f-9a31-6d32241caee6",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "890ab9a9-03c1-42aa-a4ff-df633e217eba",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "a56206be-b914-43fc-aa9e-76339c9fe81d",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "59580684-14fb-440c-af88-87f57cdecc3e",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "d04208f4-57ea-4fe4-954c-6a48c6a41f8b",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "87b1fbdc-02a9-4ade-a29b-47a2aeebab15",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "513a4a32-20c8-40cb-8f3d-a2f3881efd4c",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "eef95835-c81f-4d35-8c64-17dca9c60672",
+      "result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c"
+    },
+    {
+      "claim_id": "c823eeed-f145-486a-9739-ec7e0d0b9090",
+      "result_id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be"
+    },
+    {
+      "claim_id": "822ee53f-76f4-4eee-9463-ad3eb2b65659",
+      "result_id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be"
+    },
+    {
+      "claim_id": "ebe42883-e098-4c50-9dca-e22ab3d63a14",
+      "result_id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be"
+    },
+    {
+      "claim_id": "a3f85c4c-0129-4b16-9e1e-94772f954d4f",
+      "result_id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be"
+    },
+    {
+      "claim_id": "5c9b1adc-6f71-47d5-970c-8b5cde2d7206",
+      "result_id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be"
+    },
+    {
+      "claim_id": "1241994c-65f1-4d82-a53b-ea7d487cff83",
+      "result_id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be"
+    },
+    {
+      "claim_id": "e49339be-606e-4cda-bcd5-e74358db6cc6",
+      "result_id": "d5335d7b-1e69-42ef-9457-527759a1a52e"
+    },
+    {
+      "claim_id": "8e960d83-3e4b-42e6-b757-4121f4365ff2",
+      "result_id": "d5335d7b-1e69-42ef-9457-527759a1a52e"
+    },
+    {
+      "claim_id": "6859fb8d-aae5-4c46-bee2-c7d89cbb267a",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "21ceb55a-1d02-40c5-bfb3-1fc9dfa43091",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "06e5da26-c592-4568-8f25-ad994fcd0965",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "e4509f30-c5e6-4d2d-991a-57b087361de0",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "d62e4a9a-74fb-40ae-a313-e06ecca96511",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "572515dd-5576-498c-adef-658147113fca",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "a74ea695-27e3-4b03-9d15-f3703a274bc7",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "60b6fe08-ef97-440c-9dcc-ed9001b708e3",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "4c2e27d3-7b78-4db3-9006-d836a1014ee3",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "d8880440-8436-4254-b1c9-880daf1377a8",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    },
+    {
+      "claim_id": "e95c95f0-9694-4b98-bb05-e71149ed7d6e",
+      "result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "73e28657-8950-4431-a6a7-66bcd20ef155",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a9a2a2fb-56c3-40ce-97e6-c33a9e042e4e",
+      "peer_result_id": "bf22ff61-3991-4bd5-b737-850973400cad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C4-C7 regarding the theoretical framework and validation. OpenEval finds these claims well-supported by mathematical derivations and empirical evidence. Peer reviewers express uncertainty, raising fundamental concerns about circular reasoning in simulation design where data is generated by the sub-diffusion model and fitted with the same model, questioning whether superiority over conventional DKI is truly demonstrated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "fb82ffe3-2150-4f4d-b44f-5221688fa0e7",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "d658cb85-78ed-428a-8c26-4687101785e3",
+      "peer_result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C46-C49 about coefficient of variation reduction and benefits of multiple diffusion times. OpenEval finds strong support from Figure 1 simulation results. Peer reviewers acknowledge robustness findings but express uncertainty due to circular reasoning concerns - that simulations use the proposed model to generate data and then fit with the same model, making good fit expected rather than validating.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "10e1562f-61b0-4ea6-ae4f-711546cd36c8",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1306379f-1c3f-43c0-99a6-4e439addb4f3",
+      "peer_result_id": "e23613ab-6c9b-4323-ba73-fe1edf056645",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R3 addresses claims C53, C57 about improved R\u00b2 values and optimal separation with two diffusion times, finding them supported. Peer R2 covers overlapping claims C53, C57 (along with C46-C49) but expresses uncertainty about the validity due to circular arguments in simulation studies and questions about whether different diffusion time pairs would yield invariant values.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "b578ee75-210d-433e-b8cf-ba675abfb088",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "bfa94397-a065-45b8-8644-a210e7ff377b",
+      "peer_result_id": "b50a94df-efcc-4425-a5d5-93759b4f6876",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both address claims C102, C108 regarding time-independence of K*. OpenEval finds these claims supported by mathematical framework (Equation 9) and Figure 4 showing time-dependence of traditional K_DKI. Peer reviewers find these claims unsupported, stating authors 'do not fully demonstrate' time-independence and noting that Tables 3-4 human data 'seem to show that D* and K* are time dependent,' identifying this as a study limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "c4665766-cce7-412f-b65e-69dbcf702488",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e35da52f-b639-4ac0-89ea-bd085e19e7a8",
+      "peer_result_id": "b50a94df-efcc-4425-a5d5-93759b4f6876",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "OpenEval R4 addresses claim C61 about noise obscuring convergence trends, finding it supported by Figure 4. Peer R3 addresses C61 along with C102, C108, but focuses critique on time-independence claims rather than the noise observation specifically, finding the time-independence claims unsupported based on Tables 3-4 data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "2f548c1c-ef08-4a02-9e2c-f20581dde22a",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "694447ce-bfa6-4afd-9543-83ff333b98b7",
+      "peer_result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C63, C64, C70 about b-value optimization and SNR benefits. OpenEval finds these supported by Table 1 and Figure 5 quantitative analysis. Peer reviewers also support these findings, with Reviewer 2 acknowledging the technique is 'robust and can be reliably estimated from short dMRI data acquisitions' and noting this is 'potentially useful in application to clinical studies.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "0c4c6855-7978-48e2-9d41-016f0e06331f",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "9474d990-83c8-41ac-9fea-3f6cacfef1db",
+      "peer_result_id": "a0ec4cb2-3bde-4fcd-866d-3e45a9e05a3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C86-C90 regarding acquisition time reduction and clinical feasibility. OpenEval finds strong support from Figure 9 and Table 5 showing substantial time reduction with acceptable accuracy. Peer reviewers support these claims, with the editor noting 'evidence supporting the claims that this technique is robust and accurate in brain imaging is solid' and no specific critiques of the b-value optimization results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "1e168e99-861c-47c9-be9e-1efea66a2801",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "2adbe4bf-71a1-4a38-8113-9d8dd247e6c1",
+      "peer_result_id": "3e8581d0-5fdd-4a0a-801c-f80b7748f3be",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C77-C82 about tissue-specific kurtosis values and their alignment with microstructure. OpenEval finds these supported by Table 2 and histological citations. Peer reviewers express uncertainty, with Reviewer 2 suggesting that 'larger apparent time dependence of K* in white matter compared to grey matter (tables 3 and 4) could lead to the tissue specific differences,' indicating potential confounding by unresolved time-dependence issues.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "17ec5f5f-3e69-46c4-ac5a-2c87613f3480",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "04584e2b-4918-4008-af35-817eab55d540",
+      "peer_result_id": "d5335d7b-1e69-42ef-9457-527759a1a52e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C8, C9 about comprehensive validation and clinical feasibility. OpenEval finds these supported by simulations and real data, though notes 'exquisite' characterization is subjective. Peer reviewers express uncertainty, with the editor stating evidence is 'solid' but 'there is a need to include a summary of the clear limitations,' and Reviewer 2 noting 'potential limitations of the technique are not considered.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "ff5fb81c-69cf-4be7-8853-4fbe3144715a",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d35ea365-a990-470a-8e76-905cc2b0f187",
+      "peer_result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C1-C3 establishing context and motivation. OpenEval finds these well-supported by citations, representing established knowledge. Peer reviewers support these background claims without challenge, with the editor affirming 'This paper proposes a valuable new method for the assessment of the mean kurtosis.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "34defec8-c014-4093-b87b-f562790454af",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "42b81e6c-f0cb-4d1e-aed5-cf1f7d56b5d4",
+      "peer_result_id": "e1bf0fa8-6ee4-4ba1-8238-fdfeb3d4acd7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R11 addresses claims C31-C35 about DKI limitations, finding them supported by citations to prior work. Peer R7 includes these claims (C31, C34, C35) along with broader background claims C1-C3, C39-C43, supporting them without challenge as accepted motivation for the work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "e29fd701-f41d-4446-8b2d-e7c1039d360d",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "12dfeeb3-b317-4fdd-a41e-c2d21924a34f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R12 addresses claim C116 about Gaussian noise assumption methodology, finding it supported by citation to Gudbjartsson and Patz 1995. No corresponding peer review evaluation found for this methodological detail.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    },
+    {
+      "id": "63f1d7b2-95c0-4ae5-a940-ca77b175710f",
+      "submission_id": "82278fc0-c63b-4ca9-a4bb-6bd9b3ea8d0c",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "04584e2b-4918-4008-af35-817eab55d540",
+      "peer_result_id": "bf22ff61-3991-4bd5-b737-850973400cad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Minor overlap on claim C10 (part of comprehensive validation). OpenEval R8 finds validation claims supported. Peer R1 expresses uncertainty about the overall validation due to circular reasoning concerns, questioning what advantage the method provides in clinical practice.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:32.343977Z"
+    }
+  ]
+}

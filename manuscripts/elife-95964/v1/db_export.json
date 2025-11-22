@@ -1,0 +1,1941 @@
+{
+  "submission": {
+    "id": "4c3cf465-be20-416a-901e-5c88d486a154",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:46:00.577937Z",
+    "updated_at": "2025-11-21T23:46:00.577937Z"
+  },
+  "content": [
+    {
+      "id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "content_type": "manuscript",
+      "content_text": "# Purging viral latency by a bifunctional HSV-vectored therapeutic vaccine in chronically SIV-infected macaques\n\n## Authors\n\n- Ziyu Wen<sup>1</sup> ([ORCID: 0009-0004-2552-4377](https://orcid.org/0009-0004-2552-4377))\n- Pingchao Li<sup>2</sup>\n- Yue Yuan<sup>1</sup>\n- Congcong Wang<sup>1</sup>\n- Minchao Li<sup>1</sup>\n- Haohang Wang<sup>1</sup>\n- Minjuan Shi<sup>1</sup>\n- Yizi He<sup>2</sup>\n- Mingting Cui<sup>1</sup>\n- Ling Chen<sup>2</sup> \u2020\n- Caijun Sun<sup>1</sup> ([ORCID: 0000-0002-2000-7053](https://orcid.org/0000-0002-2000-7053)) \u2020\n\n### Affiliations\n\n1. School of Public Health (Shenzhen), Sun Yat-sen University Shenzhen China ([ROR:0064kty71](https://ror.org/0064kty71))\n2. State Key Laboratory of Respiratory Disease, Guangzhou Institutes of Biomedicine and Health (GIBH), Chinese Academy of Sciences Guangzhou China ([ROR:02c31t502](https://ror.org/02c31t502))\n3. Key Laboratory of Tropical Disease Control (Sun Yat-sen University), Ministry of Education Guangzhou China\n4. Shenzhen Key Laboratory of Pathogenic Microbes and Biosafety, Shenzhen Campus of Sun Yat-sen University Shenzhen China ([ROR:02kdgk225](https://ror.org/02kdgk225))\n5. State Key Laboratory of Anti-Infective Drug Discovery and Development, School of Pharmaceutical Sciences, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe persistence of latent viral reservoirs remains the major obstacle to eradicating human immunodeficiency virus (HIV). We herein found that ICP34.5 can act as an antagonistic factor for the reactivation of HIV latency by herpes simplex virus type I (HSV-1), and thus recombinant HSV-1 with ICP34.5 deletion could more effectively reactivate HIV latency than its wild-type counterpart. Mechanistically, HSV-\u0394ICP34.5 promoted the phosphorylation of HSF1 by decreasing the recruitment of protein phosphatase 1 (PP1\u03b1), thus effectively binding to the HIV LTR to reactivate the latent reservoirs. In addition, HSV-\u0394ICP34.5 enhanced the phosphorylation of IKK\u03b1/\u03b2 through the degradation of I\u03baB\u03b1, leading to p65 accumulation in the nucleus to elicit NF-\u03baB pathway-dependent reactivation of HIV latency. Then, we constructed the recombinant HSV-\u0394ICP34.5 expressing simian immunodeficiency virus (SIV) env, gag, or the fusion antigen sPD1-SIVgag as a therapeutic vaccine, aiming to achieve a functional cure by simultaneously reactivating viral latency and eliciting antigen-specific immune responses. Results showed that these constructs effectively elicited SIV-specific immune responses, reactivated SIV latency, and delayed viral rebound after the interruption of antiretroviral therapy (ART) in chronically SIV-infected rhesus macaques. Collectively, these findings provide insights into the rational design of HSV-vectored therapeutic strategies for pursuing an HIV functional cure.\n\n## Introduction\n\nThe epidemic of acquired immunodeficiency syndrome (AIDS), caused by human immunodeficiency virus type I (HIV-1), is still a huge challenge for global public health, with approximately 39.9 million people living with HIV-1 as of 2023. To date, there is neither a curable drug nor a prophylactic vaccine for clinical use against HIV-1 infections (Sun et al., 2023b; Sun et al., 2023a). Antiretroviral therapy (ART) can effectively control HIV-1 replication to an undetectable level, but the termination of ART usually results in prompt viral rebound from latent viral reservoirs (Archin et al., 2014; Looker et al., 2017; Calistri et al., 2003; Heng et al., 1994). Thus, it is of great priority to explore novel strategies for curing HIV latency. The \u2018shock and kill\u2019 strategy is considered a promising approach for purging HIV-1 reservoirs, involving the activation of latently infected cells to express viral products (shock), followed by viral cytopathic effects or specific cytolytic T lymphocytes (CTLs) to eliminate the activated cells (kill) (Wu et al., 2022; Yang et al., 2019; Kim et al., 2018). Numerous latency-reversing agents (LRAs) (Yang et al., 2019; Wu et al., 2022), including methylation inhibitors, histone deacetylase inhibitors (Archin et al., 2017; Lehrman et al., 2005), and bromodomain and extra terminal domain protein inhibitors (Li et al., 2013; Bisgrove et al., 2007), have been identified to reactivate latent HIV-1 in preclinical studies, but there is no ideal LRA available for clinical patients yet.\n\nHerpes simplex virus (HSV), a human herpesvirus, features a 152 kb double-stranded DNA genome encoding over 80 proteins (Poh, 2016). Owing to its distinctive genetic background, high capacity, broad tropism, thermostability, and excellent safety profile, the modified HSV constructs have extensive applications in gene therapy and oncolytic virotherapy. For example, talimogene laherparepvec (T-VEC), an HSV-1 variant with ICP34.5 deletion and GM-CSF insertion, received FDA approval in 2015 for treating malignant melanoma, showcasing notable safety and efficacy in clinical practice. Recombinant HSV-based constructs have also emerged as efficacious gene delivery vectors against infectious diseases. Early studies indicated that prophylactic vaccines based on HSV, expressing simian immunodeficiency virus (SIV) antigens, could elicit robust antigen-specific CTL responses in mice and monkeys, providing enduring and partial protection against pathogenic SIVmac239 challenges (Kaur et al., 2007; Murphy et al., 2000). Moreover, increasing data suggest the crucial role of HIV-specific CTL in controlling viral replication and eliminating potential HIV reservoirs (Collins et al., 2020; Leitman et al., 2017). Significantly, epidemiological research suggests a synergistic effect between HSV and HIV infections, with HSV infection in HIV patients being associated with increased HIV-1 viral load and disease progression (Looker et al., 2017; Calistri et al., 2003; Heng et al., 1994). Some studies have further unveiled the ability of HSV to activate HIV latent reservoirs (Amici et al., 2004; Amici et al., 2001; Pierce et al., 2023). Given the potential of HSV to simultaneously induce antigen-specific immune responses and reactivate latent viral reservoirs, we propose a proof-of-concept strategy to achieve an HIV functional cure using a modified bifunctional HSV-vectored therapeutic vaccine.\n\n## Results\n\n### The modified HSV-\u0394ICP34.5-based constructs reactivated HIV latency more efficiently than wild-type HSV counterparts\n\nThe J-Lat 10.6 cells, derived from Jurkat T cells containing latent HIV-1 provirus, were infected with wild-type HSV-1 Mckrae strain at different multiplicities of infection (MOIs) to assess its capability to reactivate HIV latency. Flow cytometry analysis showed a dose-dependent increase in green fluorescent protein (GFP) expression (Figure 1A), indicating that HSV-1 can reactivate latent HIV. Subsequently, we infected J-Lat 10.6 cells with an HSV-1 17 strain containing GFP (HSV-GFP) and observed a significant upregulation in the mRNA levels of HIV-1-driven transcripts, including Tat, Gag, Vif, and Vpr, along with 5\u2019-LTR-containing RNA. This demonstrates that the attenuated HSV-1 strain can reactivate latent HIV at different MOIs (Figure 1B). Using the bacterial artificial chromosome (BAC)/galactokinase (galK) system, we then constructed the recombinant HSV deleted with ICP34.5 (HSV-\u0394ICP34.5) based on HSV-GFP. Notably, we discovered for the first time that the HSV-\u0394ICP34.5 reactivated HIV latency more efficiently than its parental strain (HSV-GFP). Specifically, the mRNA levels of HIV-1 transcripts, including those driven by the 5\u2019 LTR, as well as Tat, Gag, Vpr, Vif were significantly higher in J-Lat 10.6 cells infected with HSV-\u0394ICP34.5 compared to those treated with HSV-GFP (Figure 1C), despite the weaker replication ability of HSV-\u0394ICP34.5 in these cells, as indicated by the mRNA level of HSV UL27 (Figure 1D, Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig1-v1.jpg)\n\n**Figure 1.:** (A) J-Lat 10.6 cells (1\u00d7106) were infected with varying multiplicities of infection (MOIs) of wild-type HSV type I (HSV-1) Mckrae strain for 30 hr. The proportion of green fluorescent protein (GFP+) cells, indicating activated latent cells, is shown in the pseudocolor plot (left) and the corresponding bar chart (right). (B) J-Lat 10.6 cells (1\u00d7106) were infected with varying MOIs of HSV-1 17 strain containing GFP (HSV-GFP) for 30 hr, and the mRNA levels of HIV-1 transcripts driven by the 5\u2019 LTR, as well as Tat, Gag, Vpr, and Vif, are presented in the histogram. (C) J-Lat 10.6 cells (1\u00d7106) were infected with HSV-GFP or HSV-\u0394ICP34.5 at an MOI of 0.1 for 30 hr. The mRNA levels of HIV-1 transcripts driven by the 5\u2019 LTR, as well as Tat, Gag, Vpr, Vif, and (D) HSV-1 UL27 are presented in the histogram. (E) ACH-2 cells (1\u00d7106) were infected with HSV-GFP or HSV-\u0394ICP34.5 at an MOI of 0.1 for 30 hr. The p24 protein level was detected using an HIV-1 p24 ELISA kit, and the mRNA levels of HIV-1 transcripts driven by the 5\u2019 LTR, as well as Tat, Gag, Vpr, and Vif, are shown in the histogram (F). (G) J-Lat 10.6 and J-Lat 10.6-ICP34.5 cells were infected with HSV-GFP or HSV-\u0394ICP34.5, and the mRNA levels of HIV-1 Tat were shown with the histogram (left). Blotting showed that J-Lat 10.6 cells stably expressing HSV ICP34.5 (J-Lat 10.6-ICP34.5) can appropriately express ICP34.5 protein using Flag-tag antibodies (right). (H) J-Lat 10.6 and J-Lat 10.6-ICP34.5 cells were respectively stimulated with phorbol 12-myristate 13-acetate (PMA) (10 ng/mL) and TNF-\u03b1 (10 ng/mL), and the expression level of GFP+ cells is displayed with the corresponding bar chart. (I\u2013K) Primary CD4+ T cells from people living with HIV (PLWH) were infected with HSV-GFP or HSV-\u2206ICP34.5. The inflammatory response was assessed by evaluating mRNA levels of IL-6, IL-1\u03b2, and TNF-\u03b1 using qPCR. Data shown are mean \u00b1 SD. Three independent experiments were repeated. **p<0.01, ***p<0.001, ****p<0.0001. ns: no significance.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Vero cells were infected with herpes simplex virus (HSV)-green fluorescent protein (GFP) and HSV-\u2206ICP34.5 at a multiplicity of infection (MOI) of 0.01. Cells and supernatants were collected at various time points, and viral titers were determined by plaque assay.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** CD4+ T cells from four PLWH donors (A\u2013D) were infected with HSV-green fluorescent protein (GFP) and HSV-\u2206ICP34.5. LTR\u2011initiation transcripts and HIV-1 Gag mRNA levels were detected by quantitative PCR. Experiments were performed in three independent biological replicates. *p<0.05, **p<0.01. ns: no significance.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** J-Lat 10.6 cells were infected with adenovirus and vaccinia virus for 30 hr. The proportion of green fluorescent protein (GFP+) cells, indicating activated latent cells, is shown in the pseudocolor plot (A) and the corresponding bar chart (B). The bar charts represent the mRNA levels of adenovirus L1 gene (C) and vaccinia virus tk gene (D). ns: no significance.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The J-Lat 10.6 cells were infected with HSV-green fluorescent protein (GFP), HSV-\u2206ICP34.5 and HSV-\u2206ICP0. LTR\u2011initiation transcripts were detected by quantitative PCR. Three independent experiments were repeated. ****p<0.0001.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** J-Lat10.6 cells (2\u00d710\u2076) were electroporated with 2 \u00b5g of either pVAX-empty or pVAX-ICP0 plasmid. Green fluorescent protein (GFP) expression was analyzed by flow cytometry 24 hr post-transfection to assess HIV reactivation in the latent J-Lat10.6 cell line.\n\nFurthermore, this finding was validated in ACH-2 cells, which are derived from T cells latently infected with replication-competent HIV-1. A significantly higher level of p24 protein, a key indicator of HIV replication, was found in the HSV-\u2206ICP34.5-infected ACH-2 cells compared to HSV-GFP-treated cells (Figure 1E). Additionally, the mRNA levels of HIV-related transcripts, including those driven by the 5\u2019 LTR, as well as Tat, Gag, Vpr, Vif, were also significantly increased (Figure 1F). Subsequently, we generated J-Lat 10.6 cells stably expressing ICP34.5-Flag-Tag (J-Lat 10.6-ICP34.5) using a recombinant lentivirus system and confirmed the expression of the ICP34.5 protein. Our research revealed that HSV-\u0394ICP34.5 displayed a reduced capacity to reverse HIV latency in J-Lat 10.6-ICP34.5 cells compared to J-Lat 10.6 cells (Figure 1G). Moreover, in J-Lat 10.6-ICP34.5 cells, the potency of latent reversal agents such as phorbol 12-myristate 13-acetate (PMA) and TNF-\u03b1 was notably reduced when contrasted with J-Lat 10.6 cells (Figure 1H). We also confirmed the enhanced reactivation of HIV latency by HSV-\u2206ICP34.5 in primary CD4+ T cells from people living with HIV (PLWH) (Figure 1\u2014figure supplement 2). In addition, HSV-\u0394ICP34.5 induced a lower level of inflammatory cytokines (including IL-6, IL-1\u03b2, and TNF-\u03b1) in primary CD4+ T cells from PLWH compared to HSV-GFP stimulation, likely due to its lower virulence and replication ability (Figure 1I\u2013K). Thus, these data suggested that the safety of HSV-\u0394ICP34.5 in PLWH might be tolerable, at least in vitro. In addition, neither adenovirus nor vaccinia virus was able to reactivate HIV latency in this study (Figure 1\u2014figure supplement 3), and the deletion of ICP0 gene from HSV-1 diminished its reactivation effect on HIV latency (Figure 1\u2014figure supplement 4). Importantly, overexpressing ICP0 greatly reactivates latent HIV (Figure 1\u2014figure supplement 5), implying that this reactivation is virus-specific and that ICP0 plays an important role in reversing HIV latency. Overall, these findings indicated that the recombinant HSV-\u0394ICP34.5 construct specifically reactivated HIV latency with high efficiency in the presence of ICP0.\n\n### The modified HSV-based constructs effectively reactivated HIV latency by modulating the IKK\u03b1/\u03b2-NF-\u03baB pathway and PP1-HSF1 pathway\n\nNext, based on RNA-seq analysis for HSV-\u0394ICP34.5-induced signaling pathways (Figure 2\u2014figure supplement 1) and previous literature, we explored the mechanism of reactivating viral latency by HSV-\u0394ICP34.5-based constructs. J-Lat 10.6 cells were infected with HSV-GFP or HSV-\u0394ICP34.5, and results showed that HSV-\u0394ICP34.5 significantly enhanced the phosphorylation of IKK\u03b1/\u03b2, promoted the degradation of IKB\u03b1, and thus led to the accumulation of p65 in the nucleus (Figure 2A). NF-\u03baB is a well-known host transcription factor that exists in the form of the NF-\u03baB-I\u03baB complex in resting cells, but I\u03baB can degrade and release the NF-\u03baB dimer to enter the nucleus and promote gene transcription in response to external stimulation. Using the co-immunoprecipitation (Co-IP) assay, we verified that the ICP34.5 protein had a specific interaction with IKK\u03b1/\u03b2, and then ICP34.5 could dephosphorylate IKK\u03b1/\u03b2. Moreover, the overexpression of ICP34.5 effectively inhibited lipopolysaccharide-induced NF-\u03baB pathway activation by inhibiting p65 entry into the nucleus (Figure 2B and C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig2-v1.jpg)\n\n**Figure 2.:** (A) J-Lat 10.6 cells were infected with HSV-green fluorescent protein (GFP) and HSV-\u0394ICP34.5 at a multiplicity of infection (MOI) of 0.1. Cytoplasmic and nuclear protein fractions were analyzed for NF\u2011\u03baB p65, phosphorylated IKK\u03b1/\u03b2 (p-IKK\u03b1/\u03b2), and IkB\u03b1. GAPDH and Lamin B1 served as loading controls for cytoplasmic and nuclear fractions, respectively. (B) 293T cells were co-transfected with Flag-ICP34.5 and either IKK\u03b1 (left) or IKK\u03b2 (right), and the interactions were examined by co-immunoprecipitation (Co-IP) assays. (C) 293T cells were transfected with Flag-ICP34.5 or an empty vector (Vec) for 24 hr and then treated with lipopolysaccharide (LPS; 1 \u03bcg/mL) for 8 hr. Cytoplasmic and nuclear protein fractions were subsequently analyzed by Western blot (WB). (D\u2013E) J-Lat 10.6 cells were infected with HSV-\u0394ICP34.5 and treated with increasing concentrations of KRIBB11 concentrations. The mRNA levels of Tat and of HIV\u20111 transcripts driven by the 5\u2032 LTR were quantified by qPCR. (F) J-Lat 10.6 cells were infected with HSV-wt or HSV-\u0394ICP34.5 at an MOI of 0.1 for 36 hr. Chromatin immunoprecipitation followed by qPCR (ChIP\u2013qPCR) was performed to assess HSF1 binding to LTR. Normal IgG and an anti\u2011histone H3 antibody served as negative and positive controls, respectively. (G) 293T cells were co-transfected with Flag-ICP34.5 and Myc-HSF1, and the interactions were examined by Co-IP assays. (H) The immunoblot depicts the alterations in protein levels in 293T cells transfected with either empty vector or ICP34.5 for 6 hr, followed by treatment with 10 \u03bcM MG132 for 24 h. (I) 293T cells transfected with Flag-ICP34.5 and HA-PP1\u03b1, analyzed by Co-IP assays. (J) The immunoblot depicts the alterations in protein levels in 293T cells transfected with either empty vector or HA-PP1\u03b1 for 6 hr, followed by 24 hr of treatment with 10 \u03bcM MG132. (K) 293T cells transfected with Myc-HSF1 with or without Flag-ICP34.5, analyzed by Co-IP assays. (L) 293T cells transfected with Myc-HSF1 and HA-PP1\u03b1, analyzed through Co-IP assays. Data shown are mean \u00b1 SD. **p<0.01, ****p<0.0001. ns: no significance.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** J-Lat 10.6 cells were either infected or not infected with HSV-green fluorescent protein (GFP) and HSV-\u0394ICP34.5, followed by extraction of total cellular RNA for sequencing and analysis. (A) Volcano plot showing differentially expressed genes between the two groups, with blue indicating downregulation and red indicating upregulation. (B) Bubble plot illustrating biological function enrichment analysis. (C) Bubble plot demonstrating enrichment of differential genes in signaling pathways. Circle size represents the number of genes enriched in that pathway, with colors ranging from blue to red indicating increasing -log10 (p-value) values.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig2-figsupp2-v1.jpg)\n\nTo further clarify the underlying mechanism, we performed the immunoprecipitation-mass spectrometry analysis in ICP34.5 overexpressing cells to identify other potential molecules contributing to this reactivation, and we found that ICP34.5 can also interact with heat shock 1 protein (HSF1) (Supplementary file 1a). HSF1 has been reported as a transcription factor correlated with the reactivation of HIV latency (Xu et al., 2022; Lin et al., 2018; Zeng et al., 2017). To test whether HSF1 contributes to the reactivation of HIV latency by HSV-\u0394ICP34.5-based constructs, KRIBB11, an inhibitor of HSF1, was administered to HSV-\u0394ICP34.5-infected J-Lat 10.6 cells. The results indicated that the reactivation ability of HSV-\u0394ICP34.5 was significantly inhibited by KRIBB11 treatment in a dose-dependent manner (Figure 2D and E). Furthermore, a significant enhancement of the binding of HSF1 to the HIV LTR was observed upon HSV-\u2206ICP34.5 infection, leading to an increase in the reactivation of HIV latency (Figure 2F). The direct interaction between ICP34.5 and HSF1 was also identified by Co-IP assay. Importantly, HSF1 was effectively dephosphorylated at Ser320 as a result of the overexpression of ICP34.5, while no influence on the level of HSF1 expression was observed (Figure 2G and H, Figure 2\u2014figure supplement 2). Considering that protein phosphatase 1 (PP1) can interact with ICP34.5 and dephosphorylate eIF2\u03b1 (Li et al., 2011), we then investigated the interaction between PP1\u03b1 and ICP34.5 (Figure 2I). Additionally, a direct interaction between PP1\u03b1 and HSF1 was found, allowing for the dephosphorylation of HSF1 and then affecting its ability to reactivate HIV latency (Figure 2J\u2013L). Collectively, these findings demonstrated that our modified HSV-\u0394ICP34.5-based constructs effectively reactivated HIV latency by modulating the IKK\u03b1/\u03b2-NF-\u03baB pathway and PP1-HSF1 pathway.\n\n### Recombinant HSV-\u0394ICP34.5 constructs expressing SIV antigens elicited robust immune responses in mice\n\nSubsequently, we explored the potential of HSV-\u0394ICP34.5 as a bifunctional therapeutic vector to not only reactivate latent viral reservoirs but also induce antigen-specific immune responses against viral replication. To achieve this, SIV antigen genes were introduced into HSV-\u0394ICP34.5 vector based on BAC/galK system. Additionally, the ICP47 gene was deleted to augment the immunogenicity of the HSV vector (Figure 3A, Figure 3\u2014figure supplement 1). A series of recombinant HSV-\u0394ICP34.5\u0394ICP47-based vectors expressing SIV gag and env antigen were constructed, and the antigen expression of these constructs was confirmed by western blotting assay (Figure 3B and C). Furthermore, to improve the immunogenicity of the targeted antigen, we fused the SIV gag with soluble PD1 (sPD1), enabling it to competitively bind with PD-L1 and thereby block the PD1/PD-L1 immune inhibitory pathway (Figure 3D). Consistent with the above findings, these HSV-\u0394ICP34.5\u0394ICP47-based SIV vaccines also efficiently reactivated HIV latency (Figure 3\u2014figure supplement 2). Then, the immunogenicity of the above modified HSV-\u0394ICP34.5\u0394ICP47-based SIV vaccine was assessed in mice (Figure 3E). Our results showed that these constructs effectively elicited SIV antigen-specific T cell immune responses using the interferon \u03b3 (IFN-\u03b3) ELISpot assay and the intracellular cytokine staining (ICS) assay. Of note, the frequency of SIV Gag-specific IFN-\u03b3 -secreting spot-forming cells (SFCs) in the HSV-sPD1-SIVgag group (1350 SFCs per 106 splenocytes) was significantly higher than that in the HSV-SIVgag group (498 SFCs per 106 splenocytes) (Figure 3F). The frequency of SIV Env2-specific IFN-\u03b3 -secreting SFCs in the HSV- SIVenv group was significantly higher than the HSV-empty group (Figure 3G). Furthermore, the polyfunctionality of antigen-specific T cell subsets in response to SIV antigen stimulation was confirmed using the ICS assay (Figure 3H\u2013M). Consistently, the HSV-sPD1-SIVgag group showed a significantly higher frequency of SIV-specific CD3+ T, CD4+ T, and CD8+ T cell subsets secreting IFN-\u03b3, IL-2, and TNF-\u03b1 cytokines compared to the HSV-SIVgag group (Figure 3I\u2013K). Notably, a heightened proportion of Gag-specific effector memory T cells (Tem) of CD8+ T cell subset in HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag group was observed in comparison to the HSV-Gag group (Figure 3L). In addition, a higher frequency of SIV- Env2-specific CD4+ T cells secreting IFN-\u03b3 was observed in the HSV-\u0394ICP34.5\u0394ICP47-SIVenv group than in the HSV-\u0394ICP34.5\u0394ICP47-empty group (Figure 3M). These data indicated that the vaccines constructed in this study elicited a robust T cell immune response in mice. Moreover, the blockade of PD1/PDL1 signaling pathway effectively enhanced vaccine-induced T cell immune responses, which was consistent with our and other previous studies (Zhou et al., 2013; Wu et al., 2022; Pan et al., 2018; Xiao et al., 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic diagram illustrating the construction of recombinant HSV through the bacterial artificial chromosome (BAC)/galactokinase (galK) selection system. The ICP34.5 gene was replaced with the galK gene via homologous recombination, followed by substituting galK with a target gene expression cassette containing the hCMV promoter and BGH terminator. Finally, the ICP47 gene was deleted. (B) Brightfield (top) and fluorescence (bottom) images of a clone of the rescued recombinant HSV. (C) Vero cells infected with recombinant HSV constructs, with protein expression of targeted genes detected using SIV-infected monkey serum. (D) HeLa cells transfected with Myc-PDL1 and then infected with HSV-\u0394ICP34.5\u0394ICP47-empty, HSV-\u0394ICP34.5\u0394ICP47-SIVgag, or HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag at a multiplicity of infection (MOI) of 0.1 for 24 hr. Cell lysates were subjected to co-immunoprecipitation (Co-IP) analysis. (E) Schematic schedule of mouse vaccination. Twenty-five mice were randomly allocated to five groups: HSV-\u0394ICP34.5\u0394ICP47-empty, HSV-\u0394ICP34.5\u0394ICP47-sPD1, HSV-\u0394ICP34.5\u0394ICP47-SIVgag, HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag, and HSV-\u0394ICP34.5\u0394ICP47-SIVenv. Mice were injected with the corresponding vaccines at weeks 0 and 2. At week 4, mice were sacrificed, and spleen lymphocytes were collected to evaluate immune response.(F\u2013G) Column graphs showing the number of Gag or Env1, Env2-specific spot-forming cells (SFCs) per 106 spleen lymphocytes, as measured by interferon \u03b3 (IFN-\u03b3) ELISpot assay. (H) Pseudocolor plot of flow cytometry illustrating the gating strategy. Column graphs showing the frequencies of IFN-\u03b3, IL-2, and TNF-\u03b1 production from gag-specific CD3+ T (I), CD4+ T (J), and CD8+ T cells (K). (L) Bar chart showing the proportion of Tem (effector memory T cells) among CD4+ T and CD8+ T cells upon stimulation with the SIV Gag peptide pools.(M) Bar chart showing the frequencies of Env2-specific IFN-\u03b3+ CD4+ T cells. Data were expressed as mean \u00b1 SD from five mice samples. Three independent experiments for the animal immunization were repeated. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. ns: no significance.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Identification was performed by amplifying the pBAC plasmid using the tHSV-F and tHSV-R primers designed in the homologous arm of ICP34.5. lane1: DNA marker; lane2: pBAC-HSV (negative control); lane3: pBAC-HSV-\u0394ICP34.5\u0394ICP47; lane4: pBAC-HSV-sPD1; lane5: pBAC-HSV-SIVgag; lane6: pBAC-HSV-sPD1-SIVgag; pBAC-HSV-SIVenv.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** J-Lat 10.6 cells (1\u00d7106) were infected with HSV-\u2206ICP34.5\u0394ICP47-based recombinant viruses. Relative fold-changes in LTR-initiation transcripts (A) and Tat mRNA (B) were detected by qPCR. Data were shown as mean \u00b1 SD. Three independent experiments were repeated. *p<0.05, ***p<0.001, ****p<0.0001.\n\n### The modified HSV-based constructs efficiently elicited SIV-specific immune responses in chronically SIV-infected macaques\n\nNext, the immunogenicity of these HSV-\u0394ICP34.5\u0394ICP47-vectored SIV vaccines was further investigated in chronically SIVmac239-infected rhesus macaques (RMs). To mimic chronically infected HIV patients in clinic practice, all RMs used in this study were chronically infected with SIV and received ART treatment for several years, as reported in our previous studies (Pan et al., 2018; Yang et al., 2019; Wu et al., 2021; Wu et al., 2022; He et al., 2023). Based on sex, age, viral load, and CD4 count, nine RMs were assigned into three groups: ART+saline group (n=3), ART+HSV-\u0394ICP34.5\u0394ICP47-empty group (n=3), and ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group (n=3) (Supplementary file 1b). All RMs received ART (FTC/6.7 mg/kg/once daily, PMPA/10 mg/kg/once daily) treatment to avoid the interference of free SIV particles. On day 33 and day 52, these RMs were immunized with saline, HSV-\u0394ICP34.5\u0394ICP47-empty, or HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv respectively. On day 70, ART treatment in all RMs was discontinued to evaluate the time interval of viral rebound. Samples were collected at different time points to monitor virological and immunological parameters (Figure 4A). To reduce the impact of individual RM variations, the difference in SIV-specific IFN-\u03b3-secreting SFCs between post-immunization and pre-immunization (\u0394SFCs) was used to evaluate the immune response induced by HSV-\u0394ICP34.5\u0394ICP47-vectored SIV vaccines. The results showed that SIV Gag-specific \u0394SFCs in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group were greatly increased when compared with those in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and ART+saline group (Figure 4B\u2013D). A similar enhancement of SIV Gag-specific TNF-\u03b1 -secreting CD4+ T and CD8+ T subsets was also verified by ICS assay (Figure 4E). Collectively, these data demonstrated that the HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv construct elicited robust SIV-specific T cell immune responses in ART-treated, SIV-infected RMs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic schedule of the macaque experiment. Nine chronically SIV-infected macaques were assigned into three groups: antiretroviral therapy (ART)+saline group (n=3), ART+HSV-\u0394ICP34.5\u0394ICP47-empty group (n=3), and ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group (n=3). All SIV-infected macaques received ART treatment (FTC/6.7 mg/kg/once daily, PMPA/10 mg/kg/once daily) for 33 days. On days 33 and 52, macaques were immunized with saline, HSV-\u0394ICP34.5\u0394ICP47-empty, and HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv respectively. ART treatment,was interrupted in all macaques on day 70 after the second vaccination. Samples were collected at various time points to monitor virological and immunological parameters. (B) Representative images of Gag or Env-specific spots (2.5\u00d7105 cells per well) from each macaque pre-vaccination (before, day 33) and post-vaccination (after, day 70) by ELISpot assay. (C\u2013D) Difference in SIV-specific interferon \u03b3 (IFN-\u03b3)-secreting cells (\u0394SFCs) between pre- and post-immunization, assessing the immune response induced by HSV-\u0394ICP34.5\u0394ICP47-vectored SIV vaccines. (E) Difference in SIV-specific TNF-\u03b1/IFN-\u03b3/IL-2-secreting CD4+ T and CD8+ T subsets between pre- and post-immunization, detected by intracellular cytokine staining (ICS) assay.\n\n### The modified HSV-based constructs partly reactivated SIV latency in vivo and delayed viral rebound in chronically SIV-infected, ART-treated macaques\n\nFinally, we investigated the therapeutic efficacy of HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv in chronically SIV-infected, ART-treated RMs. Consistent with our previous studies, the plasma viral load (VL) in these RMs was effectively suppressed during ART treatment, but rebounded after ART discontinuation. The VL in the ART+saline group promptly rebounded after ART discontinuation, and one of three RMs showed a significantly increased peak VL compared with the pre-ART VL (Figure 5A and D). However, plasma VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group exhibited a delayed rebound interval (Figure 5B and C). Remarkably, there was a lower rebounded peak VL (two of three RMs) than pre-ART VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group, while two of three RMs had a higher rebounded peak VL than pre-ART VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group (Figure 5D). Then, we assessed the potential effect on the latent SIV reservoirs in vivo by administering our modified HSV-based SIV therapeutic constructs in these RMs. Although there were no obvious viral blips observed in these RMs, we found significant suppression of total SIV DNA and integrated SIV DNA provirus in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group. However, the copies of the SIV DNA provirus were significantly improved in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and ART+saline group (Figure 5E and F). More interestingly, we assessed the magnitude of SIV Pol antigen-specific immune responses, which could represent to some extent the level of newly generated virions from the reactivated SIV reservoirs, because SIV Pol antigen was not included in our designed vaccine constructs. Specifically, the Pol-specific SFCs amount on day 70 (511 SFCs/106 peripheral blood mononuclear cells [PBMCs], post-vaccination) was higher than that on day 33 (315 SFCs/106 PBMCs, pre-vaccination) in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group. In addition, there was a similar observation in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group. In contrast, the Pol-specific SFCs gradually decreased with the duration of ART treatment in the ART+saline group (Figure 5G). In addition, the CD4+/CD8+ T cell ratio (Figure 5H) and body weight (Figure 5\u2014figure supplement 1) after treatment were effectively ameliorated in the RMs of the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group, but not in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and ART+saline group. Our data also demonstrated that there was no significant effect on the cell composition of peripheral blood in the macaques of ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group (Figure 5\u2014figure supplement 2). Taken together, these findings suggested that the latent SIV reservoirs might be effectively purged because of the effect of simultaneously reactivating viral latency and eliciting SIV-specific immune responses by our modified HSV-based SIV therapeutic constructs, thus resulting in a delayed viral rebound in chronically SIV-infected, ART-treated macaques.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013C) Viral load (VL) changes in plasma for each animal were monitored throughout the experiment using real-time PCR. The detection limit is 100 copies/mL plasma. The shaded area represented the duration of ART administration. (D) The VL change in plasma between pre-ART and the peak value in the rebound stage after ART discontinuation. (E) Change in total SIV DNA copies between pre-ART and viral rebound after ART discontinuation. (F) SIV integrated DNA (iDNA) copy numbers detected by Alu-PCR at different time points. (G) Change in the number of SIV Pol-specific IFN-\u03b3-secreting cells between pre-immunization (day 33) and post-immunization (day 70), as detected by ELISpot assay. (H) Change in the CD4+ T/ CD8+ T ratio. Data shown are mean \u00b1 SD. **p<0.01, ***p<0.0001, ****p<0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Body weight was recorded for each macaque (A-C) at four key time points: pre\u2011ART, post\u2011vaccination, pre\u2011rebound, and rebound.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The levels of white blood cells (WBCs) (A), lymphocyte (LYM) (B), neutrophils (NEU) (C), and monocyte (MONO) (D) were monitored by the complete blood count tests.\n\n## Discussion\n\nTo conquer the continuous epidemic of AIDS, exploring novel strategies to render and eliminate HIV latency should stand as a pivotal pursuit. Currently, numerous strategies, including shock and kill, block and lock, chimeric antigen receptor T cell therapy, therapeutic vaccination, and gene editing, have been extensively investigated to target the latent HIV reservoirs for an HIV functional cure (Deeks, 2012; Yeh and Ho, 2021; Maldini et al., 2020; Herzig et al., 2019; Dash et al., 2023; Dashti et al., 2023; Walker-Sperling et al., 2022). However, there is no safe and effective approach for clinical use in HIV patients yet. In the present study, we occasionally found that the modified HSV-\u0394ICP34.5-based constructs could reactivate HIV latency more efficiently than wild-type HSV counterpart, which inspired us to develop a proof-of-concept strategy based on a bifunctional HSV-vectored therapeutic vaccine, aiming to simultaneously reactivate viral latency and elicit HIV/SIV-specific immune responses for HIV functional cure. Our results indicated that these modified HSV-based constructs efficiently elicited antigen-specific immune responses in mice and chronically SIV-infected macaques, and further therapeutic efficacy experiments showed that this strategy partly reactivated SIV latency in vivo and delayed viral rebound in chronically SIV-infected, ART-treated macaques (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/95964/elife-95964-fig6-v1.jpg)\n\n**Figure 6.:** In the present study, the modified HSV-\u0394ICP34.5-based constructs effectively reactivated HIV/simian immunodeficiency virus (SIV) latency by modulating the IKK\u03b1/\u03b2-NF-\u03baB pathway and PP1-HSF1 pathway (shock) and simultaneously elicited antigen-specific polyfunctional CD8+ T cells to eliminate cells infected with the reactivated virion (kill). BAC: bacterial artificial chromosome; rHSV: recombinant herpes simplex virus; TCR: T cell receptor; PD1: programmed cell death protein 1; CD40L: CD40 ligand.\n\nThe latent HIV proviruses can harbor it into the host genome with a quiescent transcription state, and thus cannot be recognized by immune surveillance or drug killing (Chapman et al., 1991; Pierson et al., 2000). Therefore, it is critical to disrupt viral latency for developing an HIV cure strategy. Based on our experimental data, the mechanism for efficiently reactivating viral latency by the modified HSV-\u0394ICP34.5-based constructs may involve regulating the IKK\u03b1/\u03b2-NF-\u03baB pathway and PP1-HSF1 pathway. Indeed, during its replication, HSV can activate the double-stranded RNA-dependent protein kinase (PKR) pathway, and thus phosphorylate the protein translation initiation regulator eIF2\u03b1, resulting in the initiation of protein translation (Farassati et al., 2001). Previous studies have shown that the reactivation potential of HSV might be intertwined with NF-\u03baB, Sp1, and other unknown transcription factors by ICP0, ICP4, and ICP27 (Chapman et al., 1991; Amici et al., 2004; Vlach and Pitha, 1992; Mosca et al., 1987b; Golden et al., 1992; Vlach and Pitha, 1993; Mosca et al., 1987a). However, the underlying mechanism by which the ICP34.5-deleted HSV construct can greatly improve the reactivation efficacy of HIV latency remains elusive.\n\nICP34.5 is a neurotoxicity factor that can antagonize innate immune responses, including PKR, TANK binding kinase (TBK1) signaling, and Beclin1-mediated apoptosis (He et al., 1997; Manivanh et al., 2017; Orvedahl et al., 2007). Thus, ICP34.5 deletion is beneficial to improve the safety of HSV-based constructs. As expected, our data have demonstrated experimentally that HSV-\u0394ICP34.5 exhibited lower virulence and replication ability than wild-type HSV-1 (Figure 1\u2014figure supplement 1). Importantly, we also observed a significant decrease in the expression of inflammatory factors in PWLH when compared to wild-type HSV-1 (Figure 1I\u2013K). These data suggested that the safety of HSV-\u0394ICP34.5 should be more tolerable than wild-type HSV-1. ICP34.5 binds to host PP1 and mediates the dephosphorylation of eIF2\u03b1, thus allowing protein synthesis and reversing the effects of PKR and host antiviral functions (He et al., 1997; He et al., 1998). In this study, our findings further unveiled an interaction between ICP34.5 and HSF1, resulting in reduced HSF1 phosphorylation via recruitment of PP1\u03b1. Interestingly, previous reports indicated that HSF1 could positively regulate HIV gene transcription (Rawat and Mitra, 2011), which is facilitated by its nuclear entry post-phosphorylation and subsequent recruitment of p300 for self-acetylation, along with binding to the HIV-1 LTR. Studies have also shown that HSF1 could further orchestrate p-TEFb recruitment to promote HIV-1 transcriptional elongation (Peng et al., 2020; Lin et al., 2018; Pan et al., 2016b; Pan et al., 2016a). Under stress-induced conditions, phosphorylation triggers the formation of the HSF1 trimer, thus facilitating its nuclear entry to bind to heat shock elements for gene transcription regulation (Bonner et al., 2000; Timmons et al., 2020). Additionally, we also demonstrated that ICP34.5 interacted with IKK\u03b1 and IKK\u03b2, thereby impeding NF-\u03baB nuclear entry and further curbing HIV latency. Consistently, previous studies have also suggested that ICP34.5 could disrupt the NF-\u03baB pathway and possibly affect the maturation of dendritic cells (Jin et al., 2011). Intriguingly, these findings collectively indicated that ICP34.5 might play an antagonistic role in the reactivation of HIV by HSV-1, and thus our modified HSV-\u0394ICP34.5 constructs can effectively reactivate HIV/SIV latency through the release of imprisonment from ICP34.5. However, ICP34.5 overexpression had only a partial effect on the reduction of the HIV latency reactivation, indicating that HSV-\u0394ICP34.5-based constructs can also reactivate HIV latency through other yet-to-be-determined mechanisms.\n\nAnother observation in this study is that the HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv construct elicited robust and persistent SIV-specific T cell immune responses in ART-treated, chronically SIV-infected macaques. Increasing evidence has indicated that HIV-specific CTLs can facilitate the suppression of latent viral reservoirs, and, thus, the induction of robust and persistent HIV-specific CTL responses is essential for achieving long-term disease-free and transmission-free HIV control (Collins et al., 2020). Featured polyfunctional CD8+ T cells may contribute to HIV elite controllers or long-term non-progressors, a rare proportion of HIV-infected individuals who can spontaneously control viral replication even without ART treatment (Owen et al., 2010; Ferre et al., 2009; O\u2019Connell et al., 2009). In addition, both our previous study and others have demonstrated that strong antigen-specific CD8+ T cell immune responses, especially effector memory CD8+ T cells, were associated with a lower VL, and in vivo CD8+ lymphocyte depletion with intravenous infusion of anti-CD8 monoclonal antibody could lead to dramatical viral rebound in these vaccinated elite macaques (Perdomo-Celis et al., 2022; Pandrea et al., 2011; Sun et al., 2013; Sun et al., 2010; Pan et al., 2018; Sun et al., 2012). Notably, previous studies have shown that HSV-based vaccines expressing HIV/SIV antigen did elicit specific CD8+ T cell immune responses in mice and macaques, but the magnitude was not as strong as other viral vectors (Parker et al., 2007; Murphy et al., 2000; Kaur et al., 2007). Therefore, to further improve its immunogenicity in vivo, some modifications were adopted to optimize the HSV-vectored vaccine. (1) The ICP47 protein, encoded by the US12 gene, can bind to the transporter associated with antigen presentation (TAP) 1/2, inhibiting the transport of viral peptides into the endoplasmic reticulum and the loading of peptides onto nascent major histocompatibility complex class I molecules to activate CD8+ T cells (Orr et al., 2005). Therefore, the ICP47 gene was deleted from our developed HSV vector. (2) Negatively immunoregulatory molecules, including PD1, TIM-3, and LAG-3, are usually involved in the pathogenesis of HIV infection, as well as in chronically SIV-infected macaques. Among them, PD1 upregulation can result in the exhaustion and dysfunction of CD8+ T cells (Trautmann et al., 2006). In addition, PD1 expression on memory CD4+ T cells might be linked with HIV latency. In this study, we modified the SIV antigen by fusing to sPD1, which can block the PD1/PDL1 pathway by competitively binding with PDL1 and thus improve HIV/SIV vaccine-induced CD8+ T cell immune responses (Zhou et al., 2013; Wu et al., 2022; Pan et al., 2018; Xiao et al., 2014).\n\nAlthough promising, there are still some limitations to our study. First, this is a pilot study with a relatively small numbers of RMs, and future studies with a larger number of animals can be conducted to better verify our strategy. Second, the HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine resulted in delayed viral rebound and a lower peak VL post-rebound than pre-ART treatment but did not completely suppress SIV virus rebound in this study, which may be attributed to suboptimal doses and treatment, implying that we should further optimize this regimen for eventually achieving an HIV functional cure in future studies. The current consensus on HIV/AIDS vaccines emphasizes the importance of simultaneously inducing broadly neutralizing antibodies and cellular immune responses. Therefore, we believe that incorporating the induction of broadly neutralizing antibodies into our future optimizing approaches may lead to better therapeutic outcomes. Taken together, these findings demonstrated that our modified HSV-\u0394ICP34.5-based constructs potentially reactivated HIV/SIV latency by modulating the IKK\u03b1/\u03b2-NF-\u03baB pathway and PP1-HSF1 pathway, and thereby we developed a proof-of-concept strategy based on a bifunctional HSV-vectored therapeutic vaccine, which can provide insights into the rational design of novel strategies for pursuing an HIV functional cure.\n\n## Methods\n\n### Mouse ethics statement and vaccination\n\nFemale BALB/c mice, aged 6\u20138 weeks, were procured from the Experimental Animal Center of Sun Yat-sen University. A total of 25 mice were randomly divided into five groups to evaluate the immunogenicity of the recombinant HSV-vector-based SIV vaccine. During the initial week, each mouse was subcutaneously administered a vaccination of 1\u00d7106 PFU of the respective recombinant HSV-vector vaccines (HSV-\u0394ICP34.5\u0394ICP47-empty, HSV-\u0394ICP34.5\u0394ICP47-sPD1, HSV-\u0394ICP34.5\u0394ICP47-SIVgag, HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag, HSV-\u0394ICP34.5\u0394ICP47-SIVenv). Following a 2-week interval, a booster vaccination was administered via the subcutaneous route using 2\u00d7106 PFU of recombinant HSV-vector vaccines. The subsequent assessment of the immune response involved ELISpot and ICS assays in accordance with the vaccination schedule.\n\n### Ethics statement and vaccination of macaques\n\nA total of nine chronically SIVmac239-infected RMs were included in this study. All RMs received ART treatment (FTC/6.7 mg/kg/once daily, PMPA/10 mg/kg/once daily) for a duration of 33 days. The RMs were allocated into three groups based on their baseline plasma SIV VL: ART+saline (n=3) as the control group, ART+HSV-\u0394ICP34.5\u0394ICP47-empty (n=3) as the sham group, and ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv (n=3) as the vaccinated group. On day 0, all RMs received ART treatment. Once the VL dropped below the limit of detection (1\u00d7102 copies/mL), the vaccinated group and sham group were primed with a subcutaneous vaccination of 1\u00d7107 PFU HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv or HSV-\u0394ICP34.5\u0394ICP47-empty, respectively, while the control group received an injection of 0.9% saline. After 3 weeks of the prime vaccination, the vaccinated group and sham group RMs received a subcutaneous booster vaccination of 5\u00d7107 PFU HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv or HSV-\u0394ICP34.5\u0394ICP47-empty, respectively. After 2 weeks of booster vaccination, the ART treatment for all RMs was interrupted. The immune response was evaluated by IFN-\u03b3 ELISpot and ICS assays. Plasma VL was regularly monitored throughout the studied period.\n\n### Peptide pools\n\nThe peptide pools, encompassing the complete sequences of SIV Gag, Env, and Pol proteins, comprising 15 amino acids with 11 overlaps, were generously provided by the HIV Reagent Program, National Institutes of Health (NIH), USA. Gag pools comprise 125 peptides, while Env and Pol pools are subdivided into Env1 (109 peptides) and Env2 (109 peptides) pools, as well as Pol1 (131 peptides) and Pol2 (132 peptides) pools. These peptide pools were dissolved in dimethyl sulfoxide (DMSO, Sigma) at a concentration of 0.4 mg/peptide/mL for subsequent immunological assays.\n\n### Construction of recombinant HSV\n\nFor the generation of recombinant HSV-vector-based vaccines, we implemented modifications at the ICP34.5 loci through homologous recombination within the BAC-HSV-1 system. Specifically, double copies of the ICP34.5 and ICP47 genes were either deleted or inserted into the respective counterparts: sPD1, SIVgag, sPD1-SIVgag, and SIVenv genes. The sPD1-SIVgag gene was created by fusing the N-terminal region of mouse sPD1 with the C-terminal segment of SIVgag, connected by a GGGSGGG linker, which was engineered through overlapping PCR.\n\n### Plaque assay\n\nVero cells were seeded at a density of 2\u00d7105 cells per well in a 12-well plate and cultured for 24 hr. Virus samples were serially diluted and then added to the wells. After 2 hr of incubation at 37\u00b0C with 5% CO2, the supernatant was aspirated, and the cells were washed with PBS. Then, a medium containing 1% fetal bovine serum (FBS), 1% low-melting-point agarose, and 1% penicillin-streptomycin was added to each well. After 3 days of incubation, cells were fixed with 4% paraformaldehyde at room temperature for 2 hr and stained with 1% crystal violet for 10 min. Plaques were visualized and counted, and virus titers were calculated as plaque-forming units per milliliter (PFU/mL).\n\n### IFN-\u03b3 ELISpot assay\n\nThe IFN-\u03b3 ELISpot assay was conducted in accordance with our previous study (Sun et al., 2010). In the mouse experiment, 2.5\u00d7105 freshly isolated mouse spleen lymphocytes were simulated with SIV Gag, Env1, and Env2 peptide pools. In the monkey experiment, 2\u00d7105 PBMCs were seeded and simulated with the SIV Gag, Env, and Pol peptide pools. DMSO (Sigma) was utilized as Mock stimulation, while concanavalin A (ConA, 10 \u03bcg/mL) was employed as a positive control. Spot quantification was performed using an ELISpot reader (Mabtech), and peptide-specific spot counts were determined by subtracting the spots from mock stimulation.\n\n### Intracellular cytokine staining\n\nThe ICS assay was performed as described previously (Wu et al., 2022). In the mouse experiment, 2\u00d7106 freshly isolated mouse spleen lymphocytes were stimulated with SIV Gag, Env1, and Env2 peptide pools. For the monkey experiment, 2\u00d7106 PBMCs were seeded and simulated with the SIV Gag, Env, and Pol peptide pools. DMSO and PMA (Thermo Scientific) plus ionomycin were used as the mock and positive controls, respectively. Data analysis was performed using FlowJo software (version 10.8.1), and the antibodies used are listed in Supplementary file 1c. The frequencies of cytokines produced from peptide-specific cells were analyzed by subtracting mock stimulation.\n\n### SIV viral RNA and DNA copy assays and absolute T cell count\n\nAbsolute T cell count and the levels of plasma mRNA and SIV total DNA were quantified as described previously (Wu et al., 2022). Plasma viral RNA copy numbers were determined via SYBR green-based real-time quantitative PCR (Takara), using SIV gag-specific primers (Supplementary file 1d). Viral RNA copy numbers were calculated based on the standard curve established using SIVmac239 gag standards. The lower limit of detection for this assay was 100 copies/mL of plasma. Total cellular DNA was extracted from approximately 0.5\u20135 million cells using a QIAamp DNA Blood Minikit (QIAGEN). PCR assays were performed with 200 ng samples of DNA, and SIV viral DNA was quantified using a pair of primers targeting a conserved region of the SIV gag gene, as previously described. Quantitation was performed by comparing the results to the standard curve of SIV gag copies. Integrated SIVmac239 DNA was measured using nested PCR with two sets of primers. The first round used SIVgag-reverse and Alu-forward primers, while the second round used primers specific to a conserved SIVgag region. Quantification was compared to a standard of CEMss/pWPXLD-rc cell genome as our previously described (Yang et al., 2019).\n\n### Plasmids, cells, and viruses\n\npVAX-Myc-PDL1, pVAX-Flag-ICP34.5, pVAX-Myc-HSF1, pVAX-HA-PP1\u03b1: full-length mouse PDL1, full-length HSV-1 ICP34.5, and full-length human HSF1 and human PP1\u03b1 with N- or C-terminal tag were cloned into the pVAX vector. pVAX-empty, pcDNA3.1-IKK\u03b1, and pcDNA3.1-IKK\u03b2 plasmids were stored in our laboratory. pVAX-empty was used as a mock transfection in our study.\n\n293T cells (from the embryonic kidney of a female human fetus), Vero cells (from the kidney of a female normal adult African green monkey), and Hela cells (from the cervical cancer cells of an African American woman) were cultured in complete Dulbecco\u2019s modified Eagle\u2019s medium (Gibco) containing 10% FBS (Gibco) and 1% penicillin/streptomycin (Gibco) at 37\u00b0C in an atmosphere of 5% CO2. The J-Lat 10.6 cells (Jurkat cells contain the HIV-1 full-length genome whose Env was frameshifted and inserted with GFP in place of Nef) and the HIV-1 latently infected CD4+ CEM cells ACH-2 (A3.01 cell integrated HIV-1 proviral DNA) were cultured in complete RPIM640 (Gibco) containing 10% FBS and 1% penicillin/streptomycin at 37\u00b0C in an atmosphere of 5% CO2. J-Lat 10.6- ICP34.5 cells were constructed in our laboratory. All cell lines used in this study were routinely tested for mycoplasma contamination using a PCR-based detection assay and confirmed to be mycoplasma-free.\n\nThe HSV-1 (McKrae) strains were stored in our laboratory. HSV-GFP (17 strain) was rescued from pBAC-GFP-HSV in Vero cells. HSV-\u0394ICP34.5 (17 strain) was rescued from pBAC-GFP-HSV-\u0394ICP34.5 (with deletion of double copies of ICP34.5 gene) in Vero cells.\n\n### RT-qPCR\n\nRT-qPCR was performed as described in our previous study (Zhao et al., 2022). Data were normalized to \u03b2-actin. The primer sequences are listed in Supplementary file 1. Fold changes in the threshold cycle (Ct) values were calculated using the 2-\u0394\u0394Ct method.\n\n### ChIP assay\n\nChIP analysis was conducted using the SimpleChIP Enzymatic Chromatin IP kit (Agarose Beads) (CST), following the manufacturer\u2019s instructions. Quantitative real-time PCR was employed for detecting the LTR sequence. The sequences of primers used in the LTR ChIP are listed in Supplementary file 1. % Input = 2% \u00d7 2[(ct)2% input sample (ct) IP sample].\n\n### Co-immunoprecipitation\n\nCells were harvested and subjected to Co-IP assay, following the protocol outlined in our previous study (Zhao et al., 2022).\n\n### Protein extraction and western blot\n\nNuclear and cytoplasmic proteins were extracted by kits following the manufacturer\u2019s instructions (Beyotime). The western blotting assay was performed as previously described (Zhao et al., 2022).\n\n### Statistical analysis\n\nGraphPad Prism 8.0 (GraphPad Software, San Diego, CA, USA) was used for statistical analysis. For intragroup direct comparisons, Student\u2019s unpaired two-tailed t test was performed to analyze significant differences. For comparisons of multiple groups, one-way ANOVAs were performed. Significance levels are indicated as *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n### Study approval\n\nMice experiment was approved by the Laboratory Animal Ethics Committee guidelines at Sun Yat-sen University (approval number: SYSU-IACUC-2021-000185). Chinese RMs (Macaca mulatta) were housed at the Landau Animal Experimental Center, Guangdong Landau Biotechnology Co., Ltd. (approval number: N2021101). The primary PBMC samples were isolated from the chronically HIV-1-infected participants who were recruited from Guangzhou Eighth People\u2019s Hospital (Guangzhou, Guangdong, China), which was approved by the Medical Ethics Review Board of the School of Public Health (Shenzhen), Sun Yat-sen University (2022-037). All participants provided written informed consent, agreeing to participate in this study. The enrollment criteria for HIV-1-infected individuals included sustained suppression of plasma HIV-1 viremia under ART, with undetectable plasma HIV-1 RNA levels (less than 50 copies/mL) for at least 12 months and a CD4+ T cell count more than 350 cells/\u03bcL.\n",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alex Sigal, Africa Health Research Institute South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95964.4.sa0](https://doi.org/10.7554/eLife.95964.4.sa0)\n\nIn this useful study, the authors tested a novel approach to eradicate the HIV reservoir by constructing a herpes simplex virus (HSV)-based therapeutic vaccine designed to reactivate HIV from latently infected cells and induce an immune response to kill such infected cells. Testing this approach with SIV in a primate model, the authors report that the SIV reservoir was reduced. However, the evidence presented appears to be incomplete because the animal group size was small and the SIV reservoir size highly variable.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95964.4.sa1](https://doi.org/10.7554/eLife.95964.4.sa1)\n\nSummary:\n\nAuthors constructed a novel HSV-based therapeutic vaccine to cure SIV in a primate model. The novel HSV vector is deleted for ICP34.5. Evidence is given that this protein blocks HIV reactivation by interference with the NFkappaB pathway. The deleted construct supposedly would reactivate SIV from latency. The SIV genes carried by the vector ought to elicit a strong immune response. Together the HSV vector would elicit a shock and kill effect. This is tested in a primate model.\n\nStrengths and weaknesses:\n\n(1) Deleting ICP34.5 from the HSV construct has a very strong effect on HIV reactivation. The mechanism underlying increased activation by deleting ICP34.5 is only partially explored. Overexpression of ICP34.5 has a much smaller effect (reduction in reactivation) than deletion of ICP34.5 (strong activation); this is acknowledged by the authors that no full mechanistic explanation can be given at this moment.\n\n(2) No toxicity data are given for deleting ICP34.5. How specific is the effect for HIV reactivation? A RNA seq analysis is required to show the effect on cellular genes.\n\nA RNA seq analysis was done in the revised manuscript comparing the effect of HSV-1 and deleted vector in J-LAT cells (Fig S5). More than 2000 genes are upregulated after transduction with the modified vector in comparison with the WT vector. Hence, the specificity of upregulation of SIV genes is questioned. Authors do NOT comment on these findings. In my view it questions the utility of this approach.\n\n(3) The primate groups are too small and the results to variable to make averages. In Fig 5, the group with ART and saline has two slow rebounders. It is not correct to average those with the single quick rebounder. Here the interpretation is NOT supported by the data.\n\nAlthough authors provided some promising SIV DNA data, no additional animals were added. Groups of 3 animals are too small to make any conclusion, especially since the huge variability in response. The average numbers out of 3 are still presented in the paper, which is not proper science.\n\nNo data are given of the effect of the deletion in primates. Now the deleted construct is compared with an empty vector containing no SIV genes. Authors provide new data in Fig S2 on the comparison of WT and modified vector in cells from PLWH, but data are not that convincing. A significant difference in reactivation is seen for LTR in only 2/4 donors and in Gag in 3/4 donors. (Additional question what is meaning of LTR mRNA, do authors relate to genomic RNA??)\n\nDiscussion\n\nHSV vectors are mainly used in cancer treatment partially due to induced inflammation. Whether these are suitable to cure PLWH without major symptoms is a bit questionable to me and should at least be argued for.\n\nThe RNA seq data add on to this worry and should at least be discussed.\n\nComments on revisions:\n\nThe authors accept the limitations of the primate study (too small for strong conclusions). The new way of presenting the data clearly shows these limitations.\n",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2b4cd0ef-8a57-4f59-824e-ea1e30436ce0",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C1",
+      "claim": "ICP34.5 can act as an antagonistic factor for the reactivation of HIV latency by herpes simplex virus type I (HSV-1).",
+      "claim_type": "EXPLICIT",
+      "source": "We herein found that ICP34.5 can act as an antagonistic factor for the reactivation of HIV latency by herpes simplex virus type I (HSV-1), and thus recombinant HSV-1 with ICP34.5 deletion could more effectively reactivate HIV latency than its wild-type counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing differential reactivation effects between HSV-1 with and without ICP34.5 deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "619e680a-025d-41f4-84e2-768c3ad1fecd",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C2",
+      "claim": "Recombinant HSV-1 with ICP34.5 deletion could more effectively reactivate HIV latency than its wild-type counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "We herein found that ICP34.5 can act as an antagonistic factor for the reactivation of HIV latency by herpes simplex virus type I (HSV-1), and thus recombinant HSV-1 with ICP34.5 deletion could more effectively reactivate HIV latency than its wild-type counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1C, 1E, and 1F comparing HSV-\u0394ICP34.5 to HSV-GFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "19699eb1-1ebb-406f-8f05-9f2f1c80a748",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C3",
+      "claim": "HSV-\u0394ICP34.5 promoted the phosphorylation of HSF1 by decreasing the recruitment of protein phosphatase 1 (PP1\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, HSV-\u0394ICP34.5 promoted the phosphorylation of HSF1 by decreasing the recruitment of protein phosphatase 1 (PP1\u03b1), thus effectively binding to the HIV LTR to reactivate the latent reservoirs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data including Co-IP assays and western blots shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "d5288f66-e5c6-46ca-a6b8-d702b108406c",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C4",
+      "claim": "HSF1 effectively binds to the HIV LTR to reactivate the latent reservoirs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, HSV-\u0394ICP34.5 promoted the phosphorylation of HSF1 by decreasing the recruitment of protein phosphatase 1 (PP1\u03b1), thus effectively binding to the HIV LTR to reactivate the latent reservoirs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-qPCR data shown in Figure 2F demonstrating HSF1 binding to LTR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "5fcd8034-30ee-49a2-90ea-60766146f9ed",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C5",
+      "claim": "HSV-\u0394ICP34.5 enhanced the phosphorylation of IKK\u03b1/\u03b2 through the degradation of I\u03baB\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HSV-\u0394ICP34.5 enhanced the phosphorylation of IKK\u03b1/\u03b2 through the degradation of I\u03baB\u03b1, leading to p65 accumulation in the nucleus to elicit NF-\u03baB pathway-dependent reactivation of HIV latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "dd0da84e-61ab-49da-9f96-f9c928e5171b",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C6",
+      "claim": "HSV-\u0394ICP34.5 leads to p65 accumulation in the nucleus to elicit NF-\u03baB pathway-dependent reactivation of HIV latency.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HSV-\u0394ICP34.5 enhanced the phosphorylation of IKK\u03b1/\u03b2 through the degradation of I\u03baB\u03b1, leading to p65 accumulation in the nucleus to elicit NF-\u03baB pathway-dependent reactivation of HIV latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data showing nuclear p65 accumulation in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "2c08f801-e0f1-43e8-b5ed-b385a87d7b8b",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C7",
+      "claim": "Recombinant HSV-\u0394ICP34.5 expressing SIV antigens effectively elicited SIV-specific immune responses in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that these constructs effectively elicited SIV-specific immune responses, reactivated SIV latency, and delayed viral rebound after the interruption of antiretroviral therapy (ART) in chronically SIV-infected rhesus macaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ELISpot and ICS assay data shown in Figure 3F-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "13e891b6-d9bf-47e3-810a-6070bfc15c13",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C8",
+      "claim": "Recombinant HSV-\u0394ICP34.5 expressing SIV antigens reactivated SIV latency in chronically SIV-infected rhesus macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that these constructs effectively elicited SIV-specific immune responses, reactivated SIV latency, and delayed viral rebound after the interruption of antiretroviral therapy (ART) in chronically SIV-infected rhesus macaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data on SIV Pol-specific immune responses and viral DNA measurements shown in Figure 5E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "8f1426b2-71e2-4887-8144-a895ec46d4a7",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C9",
+      "claim": "Recombinant HSV-\u0394ICP34.5 expressing SIV antigens delayed viral rebound after the interruption of antiretroviral therapy (ART) in chronically SIV-infected rhesus macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that these constructs effectively elicited SIV-specific immune responses, reactivated SIV latency, and delayed viral rebound after the interruption of antiretroviral therapy (ART) in chronically SIV-infected rhesus macaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by viral load monitoring data shown in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "8c8c2c22-6b93-4301-b859-285634d962d3",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C10",
+      "claim": "Approximately 39.9 million people were living with HIV-1 as of 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "The epidemic of acquired immunodeficiency syndrome (AIDS), caused by human immunodeficiency virus type I (HIV-1), is still a huge challenge for global public health, with approximately 39.9 million people living with HIV-1 as of 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established epidemiological data cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "246adbc2-d95c-47f9-81b8-b27dcba149d8",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C11",
+      "claim": "There is neither a curable drug nor a prophylactic vaccine for clinical use against HIV-1 infections.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there is neither a curable drug nor a prophylactic vaccine for clinical use against HIV-1 infections (Sun et al., 2023b; Sun et al., 2023a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "d816ab65-2d3b-43b4-9197-072fc6f40e9c",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C12",
+      "claim": "Antiretroviral therapy (ART) can effectively control HIV-1 replication to an undetectable level.",
+      "claim_type": "EXPLICIT",
+      "source": "Antiretroviral therapy (ART) can effectively control HIV-1 replication to an undetectable level, but the termination of ART usually results in prompt viral rebound from latent viral reservoirs (Archin et al., 2014; Looker et al., 2017; Calistri et al., 2003; Heng et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature and is established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "b8163631-7efa-454b-8c12-c23b5274681f",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C13",
+      "claim": "The termination of ART usually results in prompt viral rebound from latent viral reservoirs.",
+      "claim_type": "EXPLICIT",
+      "source": "Antiretroviral therapy (ART) can effectively control HIV-1 replication to an undetectable level, but the termination of ART usually results in prompt viral rebound from latent viral reservoirs (Archin et al., 2014; Looker et al., 2017; Calistri et al., 2003; Heng et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature and confirmed by data in this study shown in Figure 5.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "a57af4ee-d0e0-477d-a36d-fff7fd445b9a",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C14",
+      "claim": "The 'shock and kill' strategy is considered a promising approach for purging HIV-1 reservoirs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'shock and kill' strategy is considered a promising approach for purging HIV-1 reservoirs, involving the activation of latently infected cells to express viral products (shock), followed by viral cytopathic effects or specific cytolytic T lymphocytes (CTLs) to eliminate the activated cells (kill) (Wu et al., 2022; Yang et al., 2019; Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "8e4b5560-cd7c-4b80-85dd-74bb7cbe87f7",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C15",
+      "claim": "Herpes simplex virus (HSV) features a 152 kb double-stranded DNA genome encoding over 80 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Herpes simplex virus (HSV), a human herpesvirus, features a 152 kb double-stranded DNA genome encoding over 80 proteins (Poh, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "145b3382-4d01-478b-b5cd-9284636a7a50",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C16",
+      "claim": "Talimogene laherparepvec (T-VEC), an HSV-1 variant with ICP34.5 deletion and GM-CSF insertion, received FDA approval in 2015 for treating malignant melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, talimogene laherparepvec (T-VEC), an HSV-1 variant with ICP34.5 deletion and GM-CSF insertion, received FDA approval in 2015 for treating malignant melanoma, showcasing notable safety and efficacy in clinical practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about FDA-approved therapies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "f61c684c-89b5-440d-9007-780990b2c419",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C17",
+      "claim": "Prophylactic vaccines based on HSV, expressing simian immunodeficiency virus (SIV) antigens, could elicit robust antigen-specific CTL responses in mice and monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies indicated that prophylactic vaccines based on HSV, expressing simian immunodeficiency virus (SIV) antigens, could elicit robust antigen-specific CTL responses in mice and monkeys, providing enduring and partial protection against pathogenic SIVmac239 challenges (Kaur et al., 2007; Murphy et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "03f3693e-e9b9-47ed-8581-3a14d2670768",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C18",
+      "claim": "Prophylactic vaccines based on HSV expressing SIV antigens provided enduring and partial protection against pathogenic SIVmac239 challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies indicated that prophylactic vaccines based on HSV, expressing simian immunodeficiency virus (SIV) antigens, could elicit robust antigen-specific CTL responses in mice and monkeys, providing enduring and partial protection against pathogenic SIVmac239 challenges (Kaur et al., 2007; Murphy et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "f218fb3f-435d-4d3b-b6c3-b20fb2f7cde9",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C19",
+      "claim": "HIV-specific CTL plays a crucial role in controlling viral replication and eliminating potential HIV reservoirs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, increasing data suggest the crucial role of HIV-specific CTL in controlling viral replication and eliminating potential HIV reservoirs (Collins et al., 2020; Leitman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "7ed8893b-079a-4b1b-83d2-6b5d8ab2a50b",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C20",
+      "claim": "HSV infection in HIV patients is associated with increased HIV-1 viral load and disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, epidemiological research suggests a synergistic effect between HSV and HIV infections, with HSV infection in HIV patients being associated with increased HIV-1 viral load and disease progression (Looker et al., 2017; Calistri et al., 2003; Heng et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous epidemiological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "5f362c77-bd1e-444e-b0fb-aaf83eb294f6",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C21",
+      "claim": "HSV can activate HIV latent reservoirs.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have further unveiled the ability of HSV to activate HIV latent reservoirs (Amici et al., 2004; Amici et al., 2001; Pierce et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "8df62850-864f-484f-9eb2-cbab32ff22e7",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C22",
+      "claim": "Wild-type HSV-1 Mckrae strain can reactivate latent HIV in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis showed a dose-dependent increase in green fluorescent protein (GFP) expression (Figure 1A), indicating that HSV-1 can reactivate latent HIV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "e4464a83-9fc6-4d7e-b22e-249516f88012",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C23",
+      "claim": "The attenuated HSV-1 strain can reactivate latent HIV at different MOIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we infected J-Lat 10.6 cells with an HSV-1 17 strain containing GFP (HSV-GFP) and observed a significant upregulation in the mRNA levels of HIV-1-driven transcripts, including Tat, Gag, Vif, and Vpr, along with 5'-LTR-containing RNA. This demonstrates that the attenuated HSV-1 strain can reactivate latent HIV at different MOIs (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "a07df79d-d6e0-4788-8255-ff7db40c9ec7",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C24",
+      "claim": "The mRNA levels of HIV-1 transcripts were significantly higher in J-Lat 10.6 cells infected with HSV-\u0394ICP34.5 compared to those treated with HSV-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the mRNA levels of HIV-1 transcripts, including those driven by the 5' LTR, as well as Tat, Gag, Vpr, Vif were significantly higher in J-Lat 10.6 cells infected with HSV-\u0394ICP34.5 compared to those treated with HSV-GFP (Figure 1C), despite the weaker replication ability of HSV-\u0394ICP34.5 in these cells, as indicated by the mRNA level of HSV UL27 (Figure 1D, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "64ab2ab2-03e3-429e-9014-6a035f55e289",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C25",
+      "claim": "HSV-\u0394ICP34.5 has weaker replication ability in J-Lat 10.6 cells compared to HSV-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the mRNA levels of HIV-1 transcripts, including those driven by the 5' LTR, as well as Tat, Gag, Vpr, Vif were significantly higher in J-Lat 10.6 cells infected with HSV-\u0394ICP34.5 compared to those treated with HSV-GFP (Figure 1C), despite the weaker replication ability of HSV-\u0394ICP34.5 in these cells, as indicated by the mRNA level of HSV UL27 (Figure 1D, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 1D and viral titer data in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "8d3298fc-914f-4b31-9e23-2f6acc1397d0",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C26",
+      "claim": "A significantly higher level of p24 protein was found in the HSV-\u2206ICP34.5-infected ACH-2 cells compared to HSV-GFP-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A significantly higher level of p24 protein, a key indicator of HIV replication, was found in the HSV-\u2206ICP34.5-infected ACH-2 cells compared to HSV-GFP-treated cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISA data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "a792d393-4006-4756-8a88-5174dc6a8670",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C27",
+      "claim": "HSV-\u0394ICP34.5 displayed a reduced capacity to reverse HIV latency in J-Lat 10.6-ICP34.5 cells compared to J-Lat 10.6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our research revealed that HSV-\u0394ICP34.5 displayed a reduced capacity to reverse HIV latency in J-Lat 10.6-ICP34.5 cells compared to J-Lat 10.6 cells (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "371b910a-6d6f-4259-850c-9afe4000e958",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C28",
+      "claim": "In J-Lat 10.6-ICP34.5 cells, the potency of latent reversal agents such as PMA and TNF-\u03b1 was notably reduced when contrasted with J-Lat 10.6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in J-Lat 10.6-ICP34.5 cells, the potency of latent reversal agents such as phorbol 12-myristate 13-acetate (PMA) and TNF-\u03b1 was notably reduced when contrasted with J-Lat 10.6 cells (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "45ac7f67-0a6e-470f-aab0-ef130edd131b",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C29",
+      "claim": "HSV-\u0394ICP34.5 induced a lower level of inflammatory cytokines (including IL-6, IL-1\u03b2, and TNF-\u03b1) in primary CD4+ T cells from PLWH compared to HSV-GFP stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HSV-\u0394ICP34.5 induced a lower level of inflammatory cytokines (including IL-6, IL-1\u03b2, and TNF-\u03b1) in primary CD4+ T cells from PLWH compared to HSV-GFP stimulation, likely due to its lower virulence and replication ability (Figure 1I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 1I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "86960a65-fe87-4024-ad19-d24775c618f1",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C30",
+      "claim": "Neither adenovirus nor vaccinia virus was able to reactivate HIV latency.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, neither adenovirus nor vaccinia virus was able to reactivate HIV latency in this study (Figure 1\u2014figure supplement 3), and the deletion of ICP0 gene from HSV-1 diminished its reactivation effect on HIV latency (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry and qPCR data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "0b6d73d9-fd15-4c0a-ac5a-9ae04b258cee",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C31",
+      "claim": "The deletion of ICP0 gene from HSV-1 diminished its reactivation effect on HIV latency.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, neither adenovirus nor vaccinia virus was able to reactivate HIV latency in this study (Figure 1\u2014figure supplement 3), and the deletion of ICP0 gene from HSV-1 diminished its reactivation effect on HIV latency (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "3dc4bbc7-c620-446e-b7fe-dffbe98ae80e",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C32",
+      "claim": "Overexpressing ICP0 greatly reactivates latent HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, overexpressing ICP0 greatly reactivates latent HIV (Figure 1\u2014figure supplement 5), implying that this reactivation is virus-specific and that ICP0 plays an important role in reversing HIV latency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "72e40ac9-eb41-4b76-bcb6-a9f595022e43",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C33",
+      "claim": "ICP0 plays an important role in reversing HIV latency.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, overexpressing ICP0 greatly reactivates latent HIV (Figure 1\u2014figure supplement 5), implying that this reactivation is virus-specific and that ICP0 plays an important role in reversing HIV latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing ICP0 overexpression effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "85e96d9a-d37a-4318-8ad2-9a20157f8a3a",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C34",
+      "claim": "HSV-\u0394ICP34.5 significantly enhanced the phosphorylation of IKK\u03b1/\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "J-Lat 10.6 cells were infected with HSV-GFP or HSV-\u0394ICP34.5, and results showed that HSV-\u0394ICP34.5 significantly enhanced the phosphorylation of IKK\u03b1/\u03b2, promoted the degradation of IKB\u03b1, and thus led to the accumulation of p65 in the nucleus (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "f4746648-26d3-460b-a6ca-5018756f6a0f",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C35",
+      "claim": "HSV-\u0394ICP34.5 promoted the degradation of IKB\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "J-Lat 10.6 cells were infected with HSV-GFP or HSV-\u0394ICP34.5, and results showed that HSV-\u0394ICP34.5 significantly enhanced the phosphorylation of IKK\u03b1/\u03b2, promoted the degradation of IKB\u03b1, and thus led to the accumulation of p65 in the nucleus (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "142f8a38-8a74-4371-8e82-ee98227f56ff",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C36",
+      "claim": "The ICP34.5 protein had a specific interaction with IKK\u03b1/\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the co-immunoprecipitation (Co-IP) assay, we verified that the ICP34.5 protein had a specific interaction with IKK\u03b1/\u03b2, and then ICP34.5 could dephosphorylate IKK\u03b1/\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Co-IP data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "7ce1539b-b1c7-422d-a82a-79d0d277469b",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C37",
+      "claim": "ICP34.5 could dephosphorylate IKK\u03b1/\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the co-immunoprecipitation (Co-IP) assay, we verified that the ICP34.5 protein had a specific interaction with IKK\u03b1/\u03b2, and then ICP34.5 could dephosphorylate IKK\u03b1/\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the interaction data and the observed effects on phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "987e5d6b-7582-4143-890a-68e0ca8bd6da",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C38",
+      "claim": "The overexpression of ICP34.5 effectively inhibited lipopolysaccharide-induced NF-\u03baB pathway activation by inhibiting p65 entry into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the overexpression of ICP34.5 effectively inhibited lipopolysaccharide-induced NF-\u03baB pathway activation by inhibiting p65 entry into the nucleus (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "29d6e470-a217-4415-ab31-22c31d65e472",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C39",
+      "claim": "The reactivation ability of HSV-\u0394ICP34.5 was significantly inhibited by KRIBB11 treatment in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that the reactivation ability of HSV-\u0394ICP34.5 was significantly inhibited by KRIBB11 treatment in a dose-dependent manner (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "27246df4-1f3d-4ee6-9b67-9516675b616b",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C40",
+      "claim": "A significant enhancement of the binding of HSF1 to the HIV LTR was observed upon HSV-\u2206ICP34.5 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a significant enhancement of the binding of HSF1 to the HIV LTR was observed upon HSV-\u2206ICP34.5 infection, leading to an increase in the reactivation of HIV latency (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-qPCR data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "435bad26-7dbe-45ee-a4fe-cc2aaeca1785",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C41",
+      "claim": "HSF1 was effectively dephosphorylated at Ser320 as a result of the overexpression of ICP34.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, HSF1 was effectively dephosphorylated at Ser320 as a result of the overexpression of ICP34.5, while no influence on the level of HSF1 expression was observed (Figure 2G and H, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "7f65acd5-9aa8-4baa-9c05-c74e28940116",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C42",
+      "claim": "A direct interaction between PP1\u03b1 and HSF1 was found, allowing for the dephosphorylation of HSF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a direct interaction between PP1\u03b1 and HSF1 was found, allowing for the dephosphorylation of HSF1 and then affecting its ability to reactivate HIV latency (Figure 2J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Co-IP data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "1bb620bb-1379-45d8-86a5-bf34dfb9f654",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C43",
+      "claim": "The frequency of SIV Gag-specific IFN-\u03b3-secreting spot-forming cells (SFCs) in the HSV-sPD1-SIVgag group (1350 SFCs per 106 splenocytes) was significantly higher than that in the HSV-SIVgag group (498 SFCs per 106 splenocytes).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the frequency of SIV Gag-specific IFN-\u03b3 -secreting spot-forming cells (SFCs) in the HSV-sPD1-SIVgag group (1350 SFCs per 106 splenocytes) was significantly higher than that in the HSV-SIVgag group (498 SFCs per 106 splenocytes) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISpot data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "85b3e048-4b6e-425d-b2dd-35c90cdcdb63",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C44",
+      "claim": "The frequency of SIV Env2-specific IFN-\u03b3-secreting SFCs in the HSV-SIVenv group was significantly higher than the HSV-empty group.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of SIV Env2-specific IFN-\u03b3 -secreting SFCs in the HSV- SIVenv group was significantly higher than the HSV-empty group (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISpot data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "add08a1f-652b-4873-b3aa-a15ee42844ca",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C45",
+      "claim": "A heightened proportion of Gag-specific effector memory T cells (Tem) of CD8+ T cell subset in HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag group was observed in comparison to the HSV-Gag group.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a heightened proportion of Gag-specific effector memory T cells (Tem) of CD8+ T cell subset in HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag group was observed in comparison to the HSV-Gag group (Figure 3L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "81d84429-8a43-4a6c-bf41-a1b95897c9ec",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C46",
+      "claim": "The blockade of PD1/PDL1 signaling pathway effectively enhanced vaccine-induced T cell immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the blockade of PD1/PDL1 signaling pathway effectively enhanced vaccine-induced T cell immune responses, which was consistent with our and other previous studies (Zhou et al., 2013; Wu et al., 2022; Pan et al., 2018; Xiao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in this study and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "d2319709-a971-4caa-b48a-68c5590daf44",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C47",
+      "claim": "SIV Gag-specific \u0394SFCs in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group were greatly increased when compared with those in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and ART+saline group.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that SIV Gag-specific \u0394SFCs in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group were greatly increased when compared with those in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and ART+saline group (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISpot data shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "752f7c9f-c177-42ab-8e46-48c61577272e",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C48",
+      "claim": "Plasma VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group exhibited a delayed rebound interval.",
+      "claim_type": "EXPLICIT",
+      "source": "However, plasma VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group exhibited a delayed rebound interval (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by viral load monitoring data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "b1318131-587a-4ce3-9b52-53bfc6b42dd3",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C49",
+      "claim": "There was a lower rebounded peak VL (two of three RMs) than pre-ART VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, there was a lower rebounded peak VL (two of three RMs) than pre-ART VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group, while two of three RMs had a higher rebounded peak VL than pre-ART VL in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by viral load data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "facf314e-00bb-416c-9563-6139f4c2f838",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C50",
+      "claim": "There was significant suppression of total SIV DNA and integrated SIV DNA provirus in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there were no obvious viral blips observed in these RMs, we found significant suppression of total SIV DNA and integrated SIV DNA provirus in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group. However, the copies of the SIV DNA provirus were significantly improved in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and ART+saline group (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "e74bd5ae-449c-4289-b19f-bb6e38c71290",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C51",
+      "claim": "The Pol-specific SFCs amount on day 70 (511 SFCs/106 PBMCs, post-vaccination) was higher than that on day 33 (315 SFCs/106 PBMCs, pre-vaccination) in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the Pol-specific SFCs amount on day 70 (511 SFCs/106 peripheral blood mononuclear cells [PBMCs], post-vaccination) was higher than that on day 33 (315 SFCs/106 PBMCs, pre-vaccination) in the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ELISpot data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "78e47fa9-0789-4e40-8a0a-43a9a8cb495a",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C52",
+      "claim": "The CD4+/CD8+ T cell ratio after treatment was effectively ameliorated in the RMs of the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the CD4+/CD8+ T cell ratio (Figure 5H) and body weight (Figure 5\u2014figure supplement 1) after treatment were effectively ameliorated in the RMs of the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv group, but not in the ART+HSV-\u0394ICP34.5\u0394ICP47-empty group and ART+saline group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "da3cce93-b0f0-4fee-8acf-99eb090e71c6",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C53",
+      "claim": "ICP34.5 is a neurotoxicity factor that can antagonize innate immune responses, including PKR, TANK binding kinase (TBK1) signaling, and Beclin1-mediated apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "ICP34.5 is a neurotoxicity factor that can antagonize innate immune responses, including PKR, TANK binding kinase (TBK1) signaling, and Beclin1-mediated apoptosis (He et al., 1997; Manivanh et al., 2017; Orvedahl et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "4cb99c76-c4d7-4aa4-9b73-8f0dfef7c56c",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C54",
+      "claim": "ICP34.5 binds to host PP1 and mediates the dephosphorylation of eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "ICP34.5 binds to host PP1 and mediates the dephosphorylation of eIF2\u03b1, thus allowing protein synthesis and reversing the effects of PKR and host antiviral functions (He et al., 1997; He et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "89d1be68-a81d-496d-843e-ce48d5528675",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C55",
+      "claim": "HSF1 could positively regulate HIV gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, previous reports indicated that HSF1 could positively regulate HIV gene transcription (Rawat and Mitra, 2011), which is facilitated by its nuclear entry post-phosphorylation and subsequent recruitment of p300 for self-acetylation, along with binding to the HIV-1 LTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "9e800170-f347-4fb4-877b-305ed73951d9",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C56",
+      "claim": "HSF1 could further orchestrate p-TEFb recruitment to promote HIV-1 transcriptional elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have also shown that HSF1 could further orchestrate p-TEFb recruitment to promote HIV-1 transcriptional elongation (Peng et al., 2020; Lin et al., 2018; Pan et al., 2016b; Pan et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "c3609918-9f99-4f75-be77-7a1881431307",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C57",
+      "claim": "ICP34.5 could disrupt the NF-\u03baB pathway and possibly affect the maturation of dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, previous studies have also suggested that ICP34.5 could disrupt the NF-\u03baB pathway and possibly affect the maturation of dendritic cells (Jin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "9e3af324-30a4-4203-86d2-5f4adfebb65f",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C58",
+      "claim": "HIV-specific CTLs can facilitate the suppression of latent viral reservoirs.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing evidence has indicated that HIV-specific CTLs can facilitate the suppression of latent viral reservoirs, and, thus, the induction of robust and persistent HIV-specific CTL responses is essential for achieving long-term disease-free and transmission-free HIV control (Collins et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "109da85e-fabd-495e-b55a-2e525f842641",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C59",
+      "claim": "Featured polyfunctional CD8+ T cells may contribute to HIV elite controllers or long-term non-progressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Featured polyfunctional CD8+ T cells may contribute to HIV elite controllers or long-term non-progressors, a rare proportion of HIV-infected individuals who can spontaneously control viral replication even without ART treatment (Owen et al., 2010; Ferre et al., 2009; O'Connell et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "4a1e98f7-ee19-4553-9595-120e8d5c7244",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C60",
+      "claim": "Strong antigen-specific CD8+ T cell immune responses, especially effector memory CD8+ T cells, were associated with a lower VL.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both our previous study and others have demonstrated that strong antigen-specific CD8+ T cell immune responses, especially effector memory CD8+ T cells, were associated with a lower VL, and in vivo CD8+ lymphocyte depletion with intravenous infusion of anti-CD8 monoclonal antibody could lead to dramatical viral rebound in these vaccinated elite macaques (Perdomo-Celis et al., 2022; Pandrea et al., 2011; Sun et al., 2013; Sun et al., 2010; Pan et al., 2018; Sun et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature including the authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "abb30604-1e5f-41a8-95e6-369153607854",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C61",
+      "claim": "The ICP47 protein can bind to the transporter associated with antigen presentation (TAP) 1/2, inhibiting the transport of viral peptides into the endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "The ICP47 protein, encoded by the US12 gene, can bind to the transporter associated with antigen presentation (TAP) 1/2, inhibiting the transport of viral peptides into the endoplasmic reticulum and the loading of peptides onto nascent major histocompatibility complex class I molecules to activate CD8+ T cells (Orr et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "e30649ce-cf04-426b-a34e-1283a8342ace",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C62",
+      "claim": "PD1 upregulation can result in the exhaustion and dysfunction of CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, PD1 upregulation can result in the exhaustion and dysfunction of CD8+ T cells (Trautmann et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "be657d61-f1f9-4905-ae32-02d306ed324e",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C63",
+      "claim": "PD1 expression on memory CD4+ T cells might be linked with HIV latency.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PD1 expression on memory CD4+ T cells might be linked with HIV latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "9647a9a2-b818-435d-af86-5be568759f5f",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C64",
+      "claim": "The HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine resulted in delayed viral rebound and a lower peak VL post-rebound than pre-ART treatment but did not completely suppress SIV virus rebound.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine resulted in delayed viral rebound and a lower peak VL post-rebound than pre-ART treatment but did not completely suppress SIV virus rebound in this study, which may be attributed to suboptimal doses and treatment, implying that we should further optimize this regimen for eventually achieving an HIV functional cure in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the viral load data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "6cd3d194-985e-49e3-9fbc-e8a1297490c1",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C65",
+      "claim": "The latent HIV proviruses can harbor into the host genome with a quiescent transcription state.",
+      "claim_type": "EXPLICIT",
+      "source": "The latent HIV proviruses can harbor it into the host genome with a quiescent transcription state, and thus cannot be recognized by immune surveillance or drug killing (Chapman et al., 1991; Pierson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "58b254d6-2177-4e01-86c5-1d3e1846b8f7",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C66",
+      "claim": "During its replication, HSV can activate the double-stranded RNA-dependent protein kinase (PKR) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, during its replication, HSV can activate the double-stranded RNA-dependent protein kinase (PKR) pathway, and thus phosphorylate the protein translation initiation regulator eIF2\u03b1, resulting in the initiation of protein translation (Farassati et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "632711e7-278c-4ff0-bac0-9bf307184dd6",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C67",
+      "claim": "The reactivation potential of HSV might be intertwined with NF-\u03baB, Sp1, and other unknown transcription factors by ICP0, ICP4, and ICP27.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the reactivation potential of HSV might be intertwined with NF-\u03baB, Sp1, and other unknown transcription factors by ICP0, ICP4, and ICP27 (Chapman et al., 1991; Amici et al., 2004; Vlach and Pitha, 1992; Mosca et al., 1987b; Golden et al., 1992; Vlach and Pitha, 1993; Mosca et al., 1987a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "f5dabc0e-f340-46bd-9f40-56f10c892d88",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C68",
+      "claim": "HSV-\u0394ICP34.5 exhibited lower virulence and replication ability than wild-type HSV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ICP34.5 deletion is beneficial to improve the safety of HSV-based constructs. As expected, our data have demonstrated experimentally that HSV-\u0394ICP34.5 exhibited lower virulence and replication ability than wild-type HSV-1 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by viral titer data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "ec080031-8762-4fc9-9e97-1106fef3a773",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C69",
+      "claim": "Under stress-induced conditions, phosphorylation triggers the formation of the HSF1 trimer, thus facilitating its nuclear entry to bind to heat shock elements for gene transcription regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress-induced conditions, phosphorylation triggers the formation of the HSF1 trimer, thus facilitating its nuclear entry to bind to heat shock elements for gene transcription regulation (Bonner et al., 2000; Timmons et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "afecae82-9188-42ba-9a62-67eec6239c38",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "claim_id": "C70",
+      "claim": "HSV-based vaccines expressing HIV/SIV antigen elicited specific CD8+ T cell immune responses in mice and macaques, but the magnitude was not as strong as other viral vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, previous studies have shown that HSV-based vaccines expressing HIV/SIV antigen did elicit specific CD8+ T cell immune responses in mice and macaques, but the magnitude was not as strong as other viral vectors (Parker et al., 2007; Murphy et al., 2000; Kaur et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "80a142e4-2eaa-44a4-8164-e9656801dc80",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HSV-\u0394ICP34.5 reactivates HIV latency more effectively than wild-type HSV-1. The deletion of ICP34.5 enhances HIV reactivation despite reduced viral replication ability, and ICP34.5 acts as an antagonistic factor for HIV latency reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C22-C28, and C68 collectively demonstrate through multiple cell line models (J-Lat 10.6, ACH-2, J-Lat 10.6-ICP34.5) and primary CD4+ T cells that HSV-\u0394ICP34.5 reactivates HIV latency more efficiently than wild-type HSV. The data show increased HIV transcript levels, p24 protein, and reduced reactivation when ICP34.5 is re-expressed, providing converging evidence for the antagonistic role of ICP34.5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HSV-\u0394ICP34.5 reactivates HIV latency through the PP1\u03b1-HSF1 pathway. ICP34.5 deletion leads to decreased PP1\u03b1 recruitment, increased HSF1 phosphorylation, enhanced HSF1 binding to HIV LTR, and subsequent HIV transcription activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C39-C42 provide mechanistic evidence through Co-IP, ChIP-qPCR, western blots, and HSF1 inhibitor experiments showing that HSV-\u0394ICP34.5 promotes HSF1 phosphorylation by reducing PP1\u03b1 recruitment, leading to enhanced HSF1-LTR binding. Claims C55, C56, and C69 provide supporting literature context. The data form a coherent mechanistic pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HSV-\u0394ICP34.5 reactivates HIV latency through the IKK\u03b1/\u03b2-NF-\u03baB pathway. ICP34.5 deletion enhances IKK\u03b1/\u03b2 phosphorylation, promotes I\u03baB\u03b1 degradation, and leads to p65 nuclear accumulation. ICP34.5 protein directly interacts with and dephosphorylates IKK\u03b1/\u03b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C34-C38 demonstrate through western blots and Co-IP assays that HSV-\u0394ICP34.5 enhances NF-\u03baB pathway activation by removing ICP34.5's inhibitory effect on IKK\u03b1/\u03b2 phosphorylation. The direct interaction between ICP34.5 and IKK\u03b1/\u03b2 is shown, and overexpression experiments confirm ICP34.5's inhibitory role. Claim C57 provides literature support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "c96ec8c7-56a4-4eb5-9656-7c86410cd41f",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HIV latency reactivation by HSV is virus-specific and requires ICP0. Neither adenovirus nor vaccinia virus reactivated HIV latency, ICP0 deletion diminished reactivation, and ICP0 overexpression greatly reactivated latent HIV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 demonstrate through comparative viral infection experiments and ICP0 manipulation that HIV reactivation is specific to HSV and dependent on ICP0. The data show negative results for other viruses, reduced reactivation with ICP0 deletion, and enhanced reactivation with ICP0 overexpression, providing strong evidence for virus and gene specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "e1afe223-ab88-452d-a8d5-ceff92cbeb40",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Recombinant HSV-\u0394ICP34.5\u0394ICP47 expressing SIV antigens elicits robust SIV-specific immune responses in mice. The sPD1-SIVgag fusion construct enhanced immune responses compared to SIVgag alone, and PD1/PDL1 blockade enhanced vaccine-induced T cell responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C43-C46 demonstrate through ELISpot and ICS assays that the recombinant HSV vaccines elicit strong SIV-specific T cell responses in mice. The data show significantly higher frequencies of IFN-\u03b3-secreting cells, polyfunctional T cells, and effector memory T cells, particularly with the sPD1 fusion construct, supporting the immunogenicity of the vaccine platform.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "05c1ac35-ada3-40c2-b96f-cf0dece05a8a",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine reactivated SIV latency in chronically infected, ART-treated rhesus macaques. Evidence includes increased SIV Gag-specific immune responses, suppression of SIV DNA provirus, and increased Pol-specific responses (indicating new virion production from reactivated reservoirs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C47, C50-C51 provide indirect evidence for SIV latency reactivation through immunological and virological markers. While SIV DNA suppression and Pol-specific responses suggest reactivation occurred, the absence of observable viral blips and the indirect nature of the evidence make definitive confirmation of in vivo latency reactivation uncertain. The interpretation relies on inference rather than direct measurement of reactivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "35e03ad9-c060-473e-8335-a8e69e37fc13",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine delayed viral rebound after ART interruption in chronically SIV-infected rhesus macaques. Two of three animals showed lower peak viral loads post-rebound compared to pre-ART levels, and CD4+/CD8+ T cell ratios improved, though complete viral suppression was not achieved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C48, C49, C52, and C64 demonstrate therapeutic efficacy through viral load monitoring and immunological parameters. The data show delayed rebound, reduced peak viral loads in some animals, and improved CD4+/CD8+ ratios in the vaccine group. However, the small sample size (n=3 per group) and incomplete viral suppression limit the strength of conclusions. The authors acknowledge suboptimal dosing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "42c25f39-712c-43c5-b752-90fd31ee04c4",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HSV-\u0394ICP34.5 induced lower levels of inflammatory cytokines (IL-6, IL-1\u03b2, TNF-\u03b1) in primary CD4+ T cells from PLWH compared to HSV-GFP, suggesting improved safety profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by qPCR data from primary CD4+ T cells showing reduced inflammatory cytokine induction by HSV-\u0394ICP34.5 compared to wild-type HSV-GFP. This finding is consistent with the reduced virulence and replication ability of HSV-\u0394ICP34.5 and supports the safety rationale for the therapeutic approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "5d0df83d-a88c-4fea-9021-e8197671c917",
+      "content_id": "2afe70cb-b3bd-4841-ba6d-2231d58d91df",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background and literature context claims establishing the HIV/AIDS epidemic, current treatment limitations, the 'shock and kill' strategy, HSV biology, prior HSV vaccine studies, and mechanistic knowledge about ICP34.5, HSF1, NF-\u03baB, and immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C21, C53-C54, C58-C63, C65-C67, C69-C70 provide established background knowledge supported by appropriate citations to previous literature. These claims establish the scientific context and rationale for the study but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "20ee010d-c353-47bb-b49f-3be6301fe879",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "HSV-\u0394ICP34.5 more effectively reactivates HIV latency than wild-type HSV-1, despite having weaker replication ability. ICP34.5 acts as an antagonistic factor for HIV reactivation, and deletion of this gene enhances reactivation of latent HIV in multiple cell line models (J-Lat 10.6, ACH-2) as measured by increased HIV transcript levels and p24 protein production.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 acknowledges the 'very strong effect' of ICP34.5 deletion on HIV reactivation but notes that 'the mechanism underlying increased activation by deleting ICP34.5 is only partially explored' and that 'overexpression of ICP34.5 has a much smaller effect (reduction in reactivation) than deletion of ICP34.5 (strong activation),' indicating that 'no full mechanistic explanation can be given at this moment.' The asymmetry between deletion and overexpression effects raises questions about the completeness of the mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "04400a28-c267-47c8-9632-b4f89ed7ca3d",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "HSV-\u0394ICP34.5 reactivates HIV latency through two molecular pathways: (1) enhancing NF-\u03baB signaling by promoting IKK\u03b1/\u03b2 phosphorylation, I\u03baB\u03b1 degradation, and p65 nuclear accumulation; and (2) promoting HSF1 phosphorylation by decreasing PP1\u03b1 recruitment, leading to HSF1 binding to the HIV LTR. ICP34.5 protein directly interacts with IKK\u03b1/\u03b2 and can dephosphorylate it, thereby inhibiting NF-\u03baB activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states that 'the mechanism underlying increased activation by deleting ICP34.5 is only partially explored' and notes the asymmetry between deletion and overexpression effects. While the mechanistic data are presented, the reviewer's comment that 'no full mechanistic explanation can be given at this moment' suggests the proposed pathways do not fully account for the observed effects. The incomplete mechanistic understanding undermines confidence in these specific pathway claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "596ed123-3203-4f5c-9799-ec79b9c98777",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "HSV-\u0394ICP34.5 induced lower levels of inflammatory cytokines (IL-6, IL-1\u03b2, TNF-\u03b1) in primary CD4+ T cells from people living with HIV compared to HSV-GFP stimulation, attributed to its lower virulence and replication ability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises concerns about specificity, stating 'No toxicity data are given for deleting ICP34.5. How specific is the effect for HIV reactivation? A RNA seq analysis is required to show the effect on cellular genes.' The RNA-seq data revealed 'more than 2000 genes are upregulated after transduction with the modified vector in comparison with the WT vector,' leading the reviewer to question 'the specificity of upregulation of SIV genes' and note that 'Authors do NOT comment on these findings.' This broad cellular activation raises uncertainty about whether the reduced cytokine levels represent specific safety improvements or simply reflect overall reduced viral activity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "d721c4dc-f62f-401c-9394-f779e10011de",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The HIV reactivation effect is virus-specific to HSV: neither adenovirus nor vaccinia virus reactivated HIV latency, deletion of ICP0 from HSV-1 diminished reactivation, and overexpression of ICP0 greatly reactivates latent HIV, indicating ICP0 plays an important role in reversing HIV latency.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about virus specificity and the role of ICP0 are not directly challenged by reviewers. The data demonstrating specificity to HSV and the importance of ICP0 appear to be accepted as supporting evidence for the overall approach, though they are not explicitly discussed in the review comments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "ec4f99a8-a54c-4ed8-9a23-3e9c75d27093",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Recombinant HSV-\u0394ICP34.5 expressing SIV antigens effectively elicited SIV-specific immune responses in mice, including increased IFN-\u03b3-secreting spot-forming cells and heightened proportions of Gag-specific effector memory CD8+ T cells. The blockade of PD1/PDL1 signaling enhanced vaccine-induced T cell responses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mouse immunogenicity data are not specifically challenged by reviewers. The editor's summary acknowledges the study as 'useful' and the approach of constructing an HSV-based therapeutic vaccine 'designed to reactivate HIV from latently infected cells and induce an immune response to kill such infected cells.' The mouse data appear to be accepted as demonstrating proof-of-concept for immune response generation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "8861b142-7e76-43e0-869c-dcfb70711e9d",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "In chronically SIV-infected rhesus macaques on ART, the HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine reactivated SIV latency as evidenced by increased SIV Gag-specific immune responses and significant suppression of total and integrated SIV DNA provirus compared to control groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor notes 'the evidence presented appears to be incomplete because the animal group size was small and the SIV reservoir size highly variable.' Reviewer 1 emphasizes 'The primate groups are too small and the results to variable to make averages' and states 'Groups of 3 animals are too small to make any conclusion, especially since the huge variability in response.' While the authors provided 'some promising SIV DNA data,' the small sample size and high variability prevent strong conclusions about reactivation efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "efbb0f23-1182-4a9b-b579-ff848f9bdbf5",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine delayed viral rebound after ART interruption in chronically SIV-infected rhesus macaques, with some animals showing lower rebounded peak viral loads than pre-ART levels, though complete suppression of viral rebound was not achieved.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor states 'the evidence presented appears to be incomplete because the animal group size was small and the SIV reservoir size highly variable.' Reviewer 1 is particularly critical: 'The primate groups are too small and the results to variable to make averages. In Fig 5, the group with ART and saline has two slow rebounders. It is not correct to average those with the single quick rebounder. Here the interpretation is NOT supported by the data.' The reviewer notes that 'no additional animals were added' and 'Groups of 3 animals are too small to make any conclusion, especially since the huge variability in response.' The high variability and small sample size undermine confidence in the viral rebound delay claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "1ac7106f-99db-45b3-9596-32518dbdee40",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The CD4+/CD8+ T cell ratio after treatment was effectively ameliorated in rhesus macaques receiving the ART+HSV-\u0394ICP34.5\u0394ICP47-sPD1-SIVgag/SIVenv vaccine but not in control groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim is subject to the same limitations noted by reviewers regarding the primate study: small group sizes (n=3) and high variability. Reviewer 1's statement that 'Groups of 3 animals are too small to make any conclusion, especially since the huge variability in response' applies equally to this immunological outcome measure.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "6a887695-f0c2-471d-a632-cabae90e66b1",
+      "content_id": "f1cd0560-7f3a-4034-bf1f-014cdec0884a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about HIV epidemiology, ART limitations, the 'shock and kill' strategy, HSV biology, ICP34.5 and ICP47 functions, HSF1 regulation, immune checkpoint roles, and previous HSV-based vaccine studies establish the scientific context and rationale for the current work.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background and contextual claims are not challenged by reviewers and represent established knowledge in the field, supported by appropriate citations. They provide the scientific foundation for the study but are not primary experimental findings being evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b4cd0ef-8a57-4f59-824e-ea1e30436ce0",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "619e680a-025d-41f4-84e2-768c3ad1fecd",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "8df62850-864f-484f-9eb2-cbab32ff22e7",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "e4464a83-9fc6-4d7e-b22e-249516f88012",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "a07df79d-d6e0-4788-8255-ff7db40c9ec7",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "64ab2ab2-03e3-429e-9014-6a035f55e289",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "8d3298fc-914f-4b31-9e23-2f6acc1397d0",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "a792d393-4006-4756-8a88-5174dc6a8670",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "371b910a-6d6f-4259-850c-9afe4000e958",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "f5dabc0e-f340-46bd-9f40-56f10c892d88",
+      "result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80"
+    },
+    {
+      "claim_id": "19699eb1-1ebb-406f-8f05-9f2f1c80a748",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "d5288f66-e5c6-46ca-a6b8-d702b108406c",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "29d6e470-a217-4415-ab31-22c31d65e472",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "27246df4-1f3d-4ee6-9b67-9516675b616b",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "435bad26-7dbe-45ee-a4fe-cc2aaeca1785",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "7f65acd5-9aa8-4baa-9c05-c74e28940116",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "89d1be68-a81d-496d-843e-ce48d5528675",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "9e800170-f347-4fb4-877b-305ed73951d9",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "ec080031-8762-4fc9-9e97-1106fef3a773",
+      "result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e"
+    },
+    {
+      "claim_id": "5fcd8034-30ee-49a2-90ea-60766146f9ed",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "dd0da84e-61ab-49da-9f96-f9c928e5171b",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "85e96d9a-d37a-4318-8ad2-9a20157f8a3a",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "f4746648-26d3-460b-a6ca-5018756f6a0f",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "142f8a38-8a74-4371-8e82-ee98227f56ff",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "7ce1539b-b1c7-422d-a82a-79d0d277469b",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "987e5d6b-7582-4143-890a-68e0ca8bd6da",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "c3609918-9f99-4f75-be77-7a1881431307",
+      "result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae"
+    },
+    {
+      "claim_id": "86960a65-fe87-4024-ad19-d24775c618f1",
+      "result_id": "c96ec8c7-56a4-4eb5-9656-7c86410cd41f"
+    },
+    {
+      "claim_id": "0b6d73d9-fd15-4c0a-ac5a-9ae04b258cee",
+      "result_id": "c96ec8c7-56a4-4eb5-9656-7c86410cd41f"
+    },
+    {
+      "claim_id": "3dc4bbc7-c620-446e-b7fe-dffbe98ae80e",
+      "result_id": "c96ec8c7-56a4-4eb5-9656-7c86410cd41f"
+    },
+    {
+      "claim_id": "72e40ac9-eb41-4b76-bcb6-a9f595022e43",
+      "result_id": "c96ec8c7-56a4-4eb5-9656-7c86410cd41f"
+    },
+    {
+      "claim_id": "2c08f801-e0f1-43e8-b5ed-b385a87d7b8b",
+      "result_id": "e1afe223-ab88-452d-a8d5-ceff92cbeb40"
+    },
+    {
+      "claim_id": "1bb620bb-1379-45d8-86a5-bf34dfb9f654",
+      "result_id": "e1afe223-ab88-452d-a8d5-ceff92cbeb40"
+    },
+    {
+      "claim_id": "85b3e048-4b6e-425d-b2dd-35c90cdcdb63",
+      "result_id": "e1afe223-ab88-452d-a8d5-ceff92cbeb40"
+    },
+    {
+      "claim_id": "add08a1f-652b-4873-b3aa-a15ee42844ca",
+      "result_id": "e1afe223-ab88-452d-a8d5-ceff92cbeb40"
+    },
+    {
+      "claim_id": "81d84429-8a43-4a6c-bf41-a1b95897c9ec",
+      "result_id": "e1afe223-ab88-452d-a8d5-ceff92cbeb40"
+    },
+    {
+      "claim_id": "13e891b6-d9bf-47e3-810a-6070bfc15c13",
+      "result_id": "05c1ac35-ada3-40c2-b96f-cf0dece05a8a"
+    },
+    {
+      "claim_id": "d2319709-a971-4caa-b48a-68c5590daf44",
+      "result_id": "05c1ac35-ada3-40c2-b96f-cf0dece05a8a"
+    },
+    {
+      "claim_id": "facf314e-00bb-416c-9563-6139f4c2f838",
+      "result_id": "05c1ac35-ada3-40c2-b96f-cf0dece05a8a"
+    },
+    {
+      "claim_id": "e74bd5ae-449c-4289-b19f-bb6e38c71290",
+      "result_id": "05c1ac35-ada3-40c2-b96f-cf0dece05a8a"
+    },
+    {
+      "claim_id": "8f1426b2-71e2-4887-8144-a895ec46d4a7",
+      "result_id": "35e03ad9-c060-473e-8335-a8e69e37fc13"
+    },
+    {
+      "claim_id": "752f7c9f-c177-42ab-8e46-48c61577272e",
+      "result_id": "35e03ad9-c060-473e-8335-a8e69e37fc13"
+    },
+    {
+      "claim_id": "b1318131-587a-4ce3-9b52-53bfc6b42dd3",
+      "result_id": "35e03ad9-c060-473e-8335-a8e69e37fc13"
+    },
+    {
+      "claim_id": "78e47fa9-0789-4e40-8a0a-43a9a8cb495a",
+      "result_id": "35e03ad9-c060-473e-8335-a8e69e37fc13"
+    },
+    {
+      "claim_id": "9647a9a2-b818-435d-af86-5be568759f5f",
+      "result_id": "35e03ad9-c060-473e-8335-a8e69e37fc13"
+    },
+    {
+      "claim_id": "45ac7f67-0a6e-470f-aab0-ef130edd131b",
+      "result_id": "42c25f39-712c-43c5-b752-90fd31ee04c4"
+    },
+    {
+      "claim_id": "8c8c2c22-6b93-4301-b859-285634d962d3",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "246adbc2-d95c-47f9-81b8-b27dcba149d8",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "d816ab65-2d3b-43b4-9197-072fc6f40e9c",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "b8163631-7efa-454b-8c12-c23b5274681f",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "a57af4ee-d0e0-477d-a36d-fff7fd445b9a",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "8e4b5560-cd7c-4b80-85dd-74bb7cbe87f7",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "145b3382-4d01-478b-b5cd-9284636a7a50",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "f61c684c-89b5-440d-9007-780990b2c419",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "03f3693e-e9b9-47ed-8581-3a14d2670768",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "f218fb3f-435d-4d3b-b6c3-b20fb2f7cde9",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "7ed8893b-079a-4b1b-83d2-6b5d8ab2a50b",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "5f362c77-bd1e-444e-b0fb-aaf83eb294f6",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "da3cce93-b0f0-4fee-8acf-99eb090e71c6",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "4cb99c76-c4d7-4aa4-9b73-8f0dfef7c56c",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "9e3af324-30a4-4203-86d2-5f4adfebb65f",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "109da85e-fabd-495e-b55a-2e525f842641",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "4a1e98f7-ee19-4553-9595-120e8d5c7244",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "abb30604-1e5f-41a8-95e6-369153607854",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "e30649ce-cf04-426b-a34e-1283a8342ace",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "be657d61-f1f9-4905-ae32-02d306ed324e",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "6cd3d194-985e-49e3-9fbc-e8a1297490c1",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "58b254d6-2177-4e01-86c5-1d3e1846b8f7",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "632711e7-278c-4ff0-bac0-9bf307184dd6",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "ec080031-8762-4fc9-9e97-1106fef3a773",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "afecae82-9188-42ba-9a62-67eec6239c38",
+      "result_id": "5d0df83d-a88c-4fea-9021-e8197671c917"
+    },
+    {
+      "claim_id": "2b4cd0ef-8a57-4f59-824e-ea1e30436ce0",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "619e680a-025d-41f4-84e2-768c3ad1fecd",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "8df62850-864f-484f-9eb2-cbab32ff22e7",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "e4464a83-9fc6-4d7e-b22e-249516f88012",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "a07df79d-d6e0-4788-8255-ff7db40c9ec7",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "64ab2ab2-03e3-429e-9014-6a035f55e289",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "8d3298fc-914f-4b31-9e23-2f6acc1397d0",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "a792d393-4006-4756-8a88-5174dc6a8670",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "371b910a-6d6f-4259-850c-9afe4000e958",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "f5dabc0e-f340-46bd-9f40-56f10c892d88",
+      "result_id": "20ee010d-c353-47bb-b49f-3be6301fe879"
+    },
+    {
+      "claim_id": "19699eb1-1ebb-406f-8f05-9f2f1c80a748",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "d5288f66-e5c6-46ca-a6b8-d702b108406c",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "5fcd8034-30ee-49a2-90ea-60766146f9ed",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "dd0da84e-61ab-49da-9f96-f9c928e5171b",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "85e96d9a-d37a-4318-8ad2-9a20157f8a3a",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "f4746648-26d3-460b-a6ca-5018756f6a0f",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "142f8a38-8a74-4371-8e82-ee98227f56ff",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "7ce1539b-b1c7-422d-a82a-79d0d277469b",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "987e5d6b-7582-4143-890a-68e0ca8bd6da",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "29d6e470-a217-4415-ab31-22c31d65e472",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "27246df4-1f3d-4ee6-9b67-9516675b616b",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "435bad26-7dbe-45ee-a4fe-cc2aaeca1785",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "7f65acd5-9aa8-4baa-9c05-c74e28940116",
+      "result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d"
+    },
+    {
+      "claim_id": "45ac7f67-0a6e-470f-aab0-ef130edd131b",
+      "result_id": "596ed123-3203-4f5c-9799-ec79b9c98777"
+    },
+    {
+      "claim_id": "86960a65-fe87-4024-ad19-d24775c618f1",
+      "result_id": "d721c4dc-f62f-401c-9394-f779e10011de"
+    },
+    {
+      "claim_id": "0b6d73d9-fd15-4c0a-ac5a-9ae04b258cee",
+      "result_id": "d721c4dc-f62f-401c-9394-f779e10011de"
+    },
+    {
+      "claim_id": "3dc4bbc7-c620-446e-b7fe-dffbe98ae80e",
+      "result_id": "d721c4dc-f62f-401c-9394-f779e10011de"
+    },
+    {
+      "claim_id": "72e40ac9-eb41-4b76-bcb6-a9f595022e43",
+      "result_id": "d721c4dc-f62f-401c-9394-f779e10011de"
+    },
+    {
+      "claim_id": "2c08f801-e0f1-43e8-b5ed-b385a87d7b8b",
+      "result_id": "ec4f99a8-a54c-4ed8-9a23-3e9c75d27093"
+    },
+    {
+      "claim_id": "1bb620bb-1379-45d8-86a5-bf34dfb9f654",
+      "result_id": "ec4f99a8-a54c-4ed8-9a23-3e9c75d27093"
+    },
+    {
+      "claim_id": "85b3e048-4b6e-425d-b2dd-35c90cdcdb63",
+      "result_id": "ec4f99a8-a54c-4ed8-9a23-3e9c75d27093"
+    },
+    {
+      "claim_id": "add08a1f-652b-4873-b3aa-a15ee42844ca",
+      "result_id": "ec4f99a8-a54c-4ed8-9a23-3e9c75d27093"
+    },
+    {
+      "claim_id": "81d84429-8a43-4a6c-bf41-a1b95897c9ec",
+      "result_id": "ec4f99a8-a54c-4ed8-9a23-3e9c75d27093"
+    },
+    {
+      "claim_id": "13e891b6-d9bf-47e3-810a-6070bfc15c13",
+      "result_id": "8861b142-7e76-43e0-869c-dcfb70711e9d"
+    },
+    {
+      "claim_id": "d2319709-a971-4caa-b48a-68c5590daf44",
+      "result_id": "8861b142-7e76-43e0-869c-dcfb70711e9d"
+    },
+    {
+      "claim_id": "facf314e-00bb-416c-9563-6139f4c2f838",
+      "result_id": "8861b142-7e76-43e0-869c-dcfb70711e9d"
+    },
+    {
+      "claim_id": "e74bd5ae-449c-4289-b19f-bb6e38c71290",
+      "result_id": "8861b142-7e76-43e0-869c-dcfb70711e9d"
+    },
+    {
+      "claim_id": "8f1426b2-71e2-4887-8144-a895ec46d4a7",
+      "result_id": "efbb0f23-1182-4a9b-b579-ff848f9bdbf5"
+    },
+    {
+      "claim_id": "752f7c9f-c177-42ab-8e46-48c61577272e",
+      "result_id": "efbb0f23-1182-4a9b-b579-ff848f9bdbf5"
+    },
+    {
+      "claim_id": "b1318131-587a-4ce3-9b52-53bfc6b42dd3",
+      "result_id": "efbb0f23-1182-4a9b-b579-ff848f9bdbf5"
+    },
+    {
+      "claim_id": "9647a9a2-b818-435d-af86-5be568759f5f",
+      "result_id": "efbb0f23-1182-4a9b-b579-ff848f9bdbf5"
+    },
+    {
+      "claim_id": "78e47fa9-0789-4e40-8a0a-43a9a8cb495a",
+      "result_id": "1ac7106f-99db-45b3-9596-32518dbdee40"
+    },
+    {
+      "claim_id": "8c8c2c22-6b93-4301-b859-285634d962d3",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "246adbc2-d95c-47f9-81b8-b27dcba149d8",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "d816ab65-2d3b-43b4-9197-072fc6f40e9c",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "b8163631-7efa-454b-8c12-c23b5274681f",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "a57af4ee-d0e0-477d-a36d-fff7fd445b9a",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "8e4b5560-cd7c-4b80-85dd-74bb7cbe87f7",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "145b3382-4d01-478b-b5cd-9284636a7a50",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "f61c684c-89b5-440d-9007-780990b2c419",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "03f3693e-e9b9-47ed-8581-3a14d2670768",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "f218fb3f-435d-4d3b-b6c3-b20fb2f7cde9",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "7ed8893b-079a-4b1b-83d2-6b5d8ab2a50b",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "5f362c77-bd1e-444e-b0fb-aaf83eb294f6",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "da3cce93-b0f0-4fee-8acf-99eb090e71c6",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "4cb99c76-c4d7-4aa4-9b73-8f0dfef7c56c",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "89d1be68-a81d-496d-843e-ce48d5528675",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "9e800170-f347-4fb4-877b-305ed73951d9",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "c3609918-9f99-4f75-be77-7a1881431307",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "9e3af324-30a4-4203-86d2-5f4adfebb65f",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "109da85e-fabd-495e-b55a-2e525f842641",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "4a1e98f7-ee19-4553-9595-120e8d5c7244",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "abb30604-1e5f-41a8-95e6-369153607854",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "e30649ce-cf04-426b-a34e-1283a8342ace",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "be657d61-f1f9-4905-ae32-02d306ed324e",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "6cd3d194-985e-49e3-9fbc-e8a1297490c1",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "58b254d6-2177-4e01-86c5-1d3e1846b8f7",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "632711e7-278c-4ff0-bac0-9bf307184dd6",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "ec080031-8762-4fc9-9e97-1106fef3a773",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    },
+    {
+      "claim_id": "afecae82-9188-42ba-9a62-67eec6239c38",
+      "result_id": "6a887695-f0c2-471d-a632-cabae90e66b1"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "27f25909-5475-4a03-99b7-46be3bc8fd36",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "80a142e4-2eaa-44a4-8164-e9656801dc80",
+      "peer_result_id": "20ee010d-c353-47bb-b49f-3be6301fe879",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the same claims (C1, C2, C22-C28, C68) about ICP34.5 deletion enhancing HIV reactivation. OpenEval finds the evidence SUPPORTED with converging data across multiple models. Peer reviewer rates UNCERTAIN, acknowledging the 'very strong effect' but noting the mechanism is 'only partially explored' and the asymmetry between deletion and overexpression effects prevents 'full mechanistic explanation.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "3b582db7-e53d-4357-b48a-41cd4ac2209e",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "4f7a8a66-7a1d-458b-8fdc-bb065f57495e",
+      "peer_result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address mechanistic claims about HSF1 and NF-\u03baB pathways. OpenEval R2 covers HSF1 mechanism (C3, C4, C39-C42, C55-C56, C69) and finds SUPPORTED. Peer R2 covers both HSF1 and NF-\u03baB claims (C3-C6, C34-C42) but rates UNCERTAIN, stating mechanism is 'only partially explored' and 'no full mechanistic explanation can be given,' questioning whether proposed pathways fully account for observed effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "0cfa98d0-c11e-49d8-b388-0c24fe67f924",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "5cc4c0be-c4df-40b4-b24d-3f75e8b13eae",
+      "peer_result_id": "04400a28-c267-47c8-9632-b4f89ed7ca3d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R3 addresses NF-\u03baB pathway claims (C5, C6, C34-C38, C57) and finds SUPPORTED with evidence of ICP34.5's inhibitory effect on IKK\u03b1/\u03b2. Peer R2 includes these NF-\u03baB claims within broader mechanistic evaluation rated UNCERTAIN due to incomplete mechanistic understanding and asymmetry between deletion/overexpression effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "78628bf3-26f8-4dfe-b06b-362aaeb1bc81",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c96ec8c7-56a4-4eb5-9656-7c86410cd41f",
+      "peer_result_id": "d721c4dc-f62f-401c-9394-f779e10011de",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C30-C33 regarding HSV specificity and ICP0 dependence. Both rate SUPPORTED. OpenEval notes strong evidence for virus and gene specificity. Peer reviewer accepts these claims without direct challenge, noting they support the overall approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "f6ac9b27-9b2c-40bb-9e6e-0f9a22b15ea8",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e1afe223-ab88-452d-a8d5-ceff92cbeb40",
+      "peer_result_id": "ec4f99a8-a54c-4ed8-9a23-3e9c75d27093",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C7, C43-C46 regarding mouse immunogenicity data. Both rate SUPPORTED. OpenEval highlights strong SIV-specific T cell responses. Peer reviewer accepts the mouse data as demonstrating proof-of-concept for immune response generation without specific challenges.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "3f5cb4c5-23bd-4032-96cd-f1007eb4e9e8",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "05c1ac35-ada3-40c2-b96f-cf0dece05a8a",
+      "peer_result_id": "8861b142-7e76-43e0-869c-dcfb70711e9d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C8, C47, C50-C51 about SIV latency reactivation. Both rate UNCERTAIN. OpenEval cites indirect evidence and lack of direct reactivation measurement. Peer reviewer emphasizes small animal group size (n=3) and high variability in SIV reservoir, preventing strong conclusions about reactivation efficacy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "f9426724-364c-4877-a3ae-7570b870fb93",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "35e03ad9-c060-473e-8335-a8e69e37fc13",
+      "peer_result_id": "efbb0f23-1182-4a9b-b579-ff848f9bdbf5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address therapeutic efficacy claims with substantial overlap (C9, C48, C49, C64). OpenEval rates SUPPORTED but acknowledges small sample size and incomplete viral suppression. Peer reviewer rates UNCERTAIN, strongly criticizing small groups (n=3), high variability, and inappropriate averaging of heterogeneous responses, stating 'interpretation is NOT supported by the data.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "6606b016-5545-4432-84b6-579f352ea8db",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "35e03ad9-c060-473e-8335-a8e69e37fc13",
+      "peer_result_id": "1ac7106f-99db-45b3-9596-32518dbdee40",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R7 includes C52 (CD4+/CD8+ ratio improvement) among therapeutic efficacy claims rated SUPPORTED despite limitations. Peer R8 evaluates C52 separately as UNCERTAIN, applying the same criticisms of small sample size (n=3) and high variability that undermine all primate study conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "50686d96-aa2f-4019-a371-897a85454aca",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "42c25f39-712c-43c5-b752-90fd31ee04c4",
+      "peer_result_id": "596ed123-3203-4f5c-9799-ec79b9c98777",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claim C29 about reduced inflammatory cytokine induction. OpenEval rates SUPPORTED, viewing reduced cytokines as supporting safety rationale. Peer reviewer rates UNCERTAIN, questioning specificity given RNA-seq revealed >2000 upregulated genes, asking whether reduced cytokines represent specific safety improvements or simply reflect overall reduced viral activity. Reviewer notes authors 'do NOT comment on these findings.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    },
+    {
+      "id": "d1ce0c4a-6d4b-4b59-9f7a-c0bade8ff7d6",
+      "submission_id": "4c3cf465-be20-416a-901e-5c88d486a154",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "5d0df83d-a88c-4fea-9021-e8197671c917",
+      "peer_result_id": "6a887695-f0c2-471d-a632-cabae90e66b1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate extensive background/contextual claims (C10-C21, C53-C54, C58-C63, C65-C67, C69-C70) with high overlap. Both rate SUPPORTED. OpenEval notes these are established background knowledge with appropriate citations, not novel findings. Peer reviewer similarly accepts these as unchallenged established knowledge providing scientific foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:46:00.577937Z"
+    }
+  ]
+}

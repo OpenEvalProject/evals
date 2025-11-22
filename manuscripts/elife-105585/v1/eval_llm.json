@@ -7,11 +7,11 @@
       "C3",
       "C4"
     ],
-    "result": "CRISPR/Cas9-mediated knockout of Orco in P. brassicae was successfully achieved with an 11-bp insertion and 4-bp deletion causing a frameshift and early stop codon, with no detectable off-target effects.",
+    "result": "CRISPR/Cas9-mediated knockout of Orco in P. brassicae was successfully achieved with an 11-bp insertion and 4-bp deletion in the second exon, resulting in a frameshift and early stop codon. Off-target analysis confirmed no off-target sites with less than 4-5 nucleotide mismatches.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C4 provide converging evidence for successful Orco knockout: sequencing confirms the genetic mutation (C1), protein structure prediction shows the functional consequence (C2), and computational analysis with two independent tools confirms absence of off-target effects (C3, C4). The molecular characterization is thorough and well-supported.",
+    "evaluation": "Claims C1-C4 provide converging evidence for successful Orco knockout. The genetic mutation is confirmed by sequencing (C1, C2), and computational off-target analysis using two independent tools (C3, C4) supports specificity. However, the off-target analysis only searched computationally and did not experimentally validate potential off-target effects in the genome.",
     "result_type": "MAJOR"
   },
   {
@@ -21,11 +21,11 @@
       "C6",
       "C27"
     ],
-    "result": "Orco KO caterpillars show normal development and egg hatching rates when reared on leaf discs in controlled conditions.",
+    "result": "Orco KO caterpillars showed no developmental differences from WT when raised on leaf discs in Petri dishes, and fertilized eggs from both genotypes had comparable hatching rates.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5, C6, and C27 consistently demonstrate that under controlled laboratory conditions (Petri dishes with leaf discs), KO caterpillars develop normally and eggs hatch at similar rates to WT. Statistical tests support these findings (p=0.9698 for C27). This establishes that the knockout does not cause gross developmental defects in controlled settings.",
+    "evaluation": "Claims C5, C6, and C27 consistently show no developmental or hatching differences between genotypes in controlled conditions. Statistical tests support these findings (p=0.9698 for development, no significant difference in hatching). This suggests the knockout does not affect basic development in artificial settings.",
     "result_type": "MINOR"
   },
   {
@@ -36,11 +36,11 @@
       "C9",
       "C10"
     ],
-    "result": "Orco protein is completely absent in KO caterpillar antennae and maxillary palps, confirming loss of Orco-positive olfactory receptor neurons.",
+    "result": "Immunostaining confirmed complete loss of Orco-positive olfactory receptor neurons (ORNs) in KO caterpillar antennae and maxillary palps, while WT caterpillars showed 34 ORNs in antennae and low numbers in maxillary palps.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C10 provide immunostaining evidence showing 34 ORNs in WT antennae (C7) but complete absence in KO (C8), with similar patterns in maxillary palps (C9-C10). The use of a validated lepidopteran-specific antibody and visual confirmation in multiple tissues strongly supports complete loss of Orco protein expression.",
+    "evaluation": "Claims C7-C10 provide direct immunohistochemical evidence for successful protein-level knockout. The antibody specificity was validated in prior work (cited). The complete absence of Orco-positive neurons in KO tissues (C8, C10) confirms functional knockout at the protein level.",
     "result_type": "MAJOR"
   },
   {
@@ -50,11 +50,11 @@
       "C12",
       "C13"
     ],
-    "result": "Orco knockout causes significant reduction in glomerular number and organization in the larval antennal center, with KO caterpillars showing only 7-12 glomeruli compared to WT.",
+    "result": "Orco KO caterpillars showed altered brain structure with significantly fewer and less clearly defined glomeruli in the larval antennal center (7-12 glomeruli) compared to WT caterpillars (p=0.0066).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11-C13 demonstrate clear morphological differences in brain structure: WT shows well-defined glomeruli (C11), KO shows poorly separated glomeruli (C12), and quantification reveals significant reduction (p=0.0066, C13). The statistical support and visual evidence from confocal microscopy provide strong validation.",
+    "evaluation": "Claims C11-C13 demonstrate neuroanatomical consequences of Orco knockout using confocal microscopy. The significant reduction in glomeruli number (C13) with statistical support (p=0.0066, Wilcoxon test) and qualitative morphological changes (C11, C12) provide converging evidence. Sample sizes are modest (n=5-6) but adequate for this type of analysis.",
     "result_type": "MAJOR"
   },
   {
@@ -65,11 +65,11 @@
       "C16",
       "C17"
     ],
-    "result": "Orco KO butterflies exhibit near-complete loss of electroantennographic responses to most volatile compounds, with only a few exceptions showing residual or no response in WT.",
+    "result": "Electroantennography revealed that Orco KO butterflies lost responses to most tested volatile chemicals, with exceptions for isovaleric acid, n-caproic acid, hexanal, and 2,3-butanedione. WT males and females responded similarly to most compounds with few sex-specific differences.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C14-C17 provide comprehensive EAG data showing complete loss of responses to most chemicals (C14), reduced responses to some (C15), similar responses between WT sexes (C16), and no response to certain compounds in either genotype (C17). The extensive chemical panel and statistical testing support the conclusion of severe olfactory impairment.",
+    "evaluation": "Claims C14-C17 provide electrophysiological validation of olfactory impairment in adult butterflies. The near-complete loss of responses (C14) with some exceptions (likely detected by ionotropic receptors) is consistent with Orco function. Statistical comparisons are appropriate (t-tests, Kruskal-Wallis). Sample sizes are adequate (n=15-18).",
     "result_type": "MAJOR"
   },
   {
@@ -78,28 +78,28 @@
       "C18",
       "C19",
       "C20",
-      "C21"
+      "C21",
+      "C22"
     ],
-    "result": "Orco KO butterflies show significantly reduced mating frequency compared to WT, with most KO individuals failing to mate.",
+    "result": "Orco KO butterflies showed significantly reduced mating frequency (p=0.0199) with 9 of 14 KO butterflies not mating, and KO females deposited significantly fewer eggs than WT (p<0.0001). Among those that mated, most KO butterflies mated only once while WT butterflies often mated multiple times.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C18-C21 provide detailed mating data: KO butterflies mate significantly less (p=0.0199, C18), with 9/14 not mating (C19), and those that do mate mostly singly (C20), contrasting with WT where 8/11 mate, often multiple times (C21). The spermatophore counting provides objective quantification.",
+    "evaluation": "Claims C18-C22 demonstrate reproductive consequences of olfactory impairment. Statistical support is provided (Wilcoxon test for mating, GLM for egg-laying). The data clearly show reduced but not eliminated mating capability, suggesting other sensory modalities can partially compensate. Sample sizes are modest (n=11-14) but differences are substantial.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C22",
       "C23",
       "C24"
     ],
-    "result": "Female KO butterflies deposit fewer eggs overall, but mated KO butterflies show similar hatching rates to WT, indicating reduced fecundity is due to impaired mating rather than egg viability.",
+    "result": "Virgin butterflies of both genotypes produced no fertilized eggs, while mated butterflies of both genotypes showed similar fecundity and hatching rates without significant differences.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C22-C24 distinguish between mating effects and egg quality: total egg deposition is reduced (p<0.0001, C22), virgin butterflies of both genotypes produce no fertilized eggs (C23), but mated butterflies show comparable hatching rates (C24). This logical progression supports the interpretation that mating impairment, not egg quality, drives reduced fecundity.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C23-C24 demonstrate that once mating occurs, egg viability is unaffected by Orco knockout. This distinguishes mating behavior deficits from oviposition or egg quality deficits. The comparison between virgin and mated butterflies provides appropriate controls.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R8",
@@ -107,11 +107,11 @@
       "C25",
       "C26"
     ],
-    "result": "In the absence of parasitoids, WT caterpillars gain significantly more weight than KO caterpillars on plants, though survival rates are similar.",
+    "result": "On cabbage plants without parasitoids, WT caterpillars gained significantly more weight than KO caterpillars (p=0.0268), but no significant survival differences were observed between genotypes (p=0.0880).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C25-C26 show differential performance: WT caterpillars gain more weight (p=0.0268, C25) but mortality rates are not significantly different (p=0.0880, C26). The statistical support is adequate for the weight difference, though the survival difference approaches but does not reach significance. This suggests olfaction affects feeding efficiency but not immediate survival in parasitoid-free conditions.",
+    "evaluation": "Claims C25-C26 show performance differences on host plants. The weight difference is statistically significant with adequate sample size (n=17). The lack of survival difference (C26) suggests the weight deficit is not immediately lethal but could have longer-term fitness consequences. Statistical tests are appropriate (Student's t-test, Wilcoxon test).",
     "result_type": "MAJOR"
   },
   {
@@ -122,11 +122,11 @@
       "C30",
       "C31"
     ],
-    "result": "Both WT and KO caterpillars can distinguish plant material from paper and show similar preferences when choosing between a single plant type and paper.",
+    "result": "Both WT and KO caterpillars preferred plant leaf discs (cabbage or tomato) over paper discs with no differences between genotypes, indicating intact ability to distinguish plant material from non-plant material.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28-C31 demonstrate that basic plant recognition is intact in KO: both genotypes prefer cabbage over paper (C28-C29) and tomato over paper (C30-C31) with no significant differences between genotypes. This indicates that non-olfactory cues (likely gustatory or tactile) are sufficient for basic plant vs. non-plant discrimination.",
+    "evaluation": "Claims C28-C31 demonstrate that basic plant recognition is preserved in KO caterpillars. Chi-square tests with adequate sample sizes (n=54-73) support the findings. This suggests non-olfactory cues (gustatory, tactile) can mediate basic plant recognition.",
     "result_type": "MAJOR"
   },
   {
@@ -136,11 +136,11 @@
       "C33",
       "C34"
     ],
-    "result": "When choosing between two plant types, KO and WT caterpillars show opposite preferences: KO prefer tomato while WT prefer cabbage.",
+    "result": "When offered both cabbage and tomato leaf discs, KO caterpillars significantly preferred tomato (p=0.0466) while WT caterpillars preferred cabbage (p=0.0028), showing contrasting preferences between genotypes (p=0.0004).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C32-C34 reveal a striking behavioral difference: genotypes differ significantly in their choice (p=0.0004, C32), with KO preferring tomato (p=0.0466, C33) and WT preferring cabbage (p=0.0028, C34). This demonstrates that olfaction is critical for host plant discrimination and that loss of OR-mediated olfaction leads to aberrant host preference.",
+    "evaluation": "Claims C32-C34 reveal a critical host-plant discrimination deficit in KO caterpillars. The reversal of preference is striking and statistically well-supported. This suggests olfaction is essential for distinguishing optimal from suboptimal host plants, even when both are acceptable. Chi-square tests are appropriate for this categorical data.",
     "result_type": "MAJOR"
   },
   {
@@ -151,11 +151,11 @@
       "C37",
       "C38"
     ],
-    "result": "WT caterpillars are attracted to volatiles from both healthy and infested plants, while KO caterpillars show no significant preference for plant volatiles over clean air.",
+    "result": "In Y-tube olfactometer assays, WT caterpillars were significantly attracted to healthy plant volatiles (p=0.0164) and infested plant volatiles (p=0.0495), while KO caterpillars showed no significant preferences in either case.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C38 demonstrate olfactory-guided plant location: WT are attracted to healthy plants (p=0.0164, C35) and infested plants (p=0.0495, C37), while KO show no significant preferences (C36, C38). The Y-tube olfactometer provides appropriate methodology, and statistical testing supports the differential responses.",
+    "evaluation": "Claims C35-C38 demonstrate olfactory-mediated host-plant location behavior. The Y-tube olfactometer is an appropriate method for testing volatile-mediated behavior. Statistical support is adequate though p-values are marginal for some comparisons. The consistent lack of preference in KO caterpillars supports the role of Orco-mediated olfaction.",
     "result_type": "MAJOR"
   },
   {
@@ -164,11 +164,11 @@
       "C39",
       "C40"
     ],
-    "result": "WT caterpillars avoid infested plants with parasitoids, preferring infested plants without parasitoids, while KO caterpillars show no preference.",
+    "result": "WT caterpillars significantly preferred infested plants without parasitoids over those with parasitoids (p=0.0067), while KO caterpillars showed no preference, suggesting olfaction mediates enemy avoidance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C39-C40 demonstrate enemy avoidance behavior: WT significantly prefer infested plants without wasps (p=0.0067, C39), while KO show no preference (p=0.7055, C40). This indicates olfaction enables caterpillars to detect and avoid natural enemy presence, a critical ecological function.",
+    "evaluation": "Claims C39-C40 provide evidence for olfactory-mediated enemy detection and avoidance. The behavioral difference between genotypes is statistically significant. However, the mechanism (direct wasp detection vs. plant volatile changes) remains unclear and requires further investigation addressed in later claims.",
     "result_type": "MAJOR"
   },
   {
@@ -176,11 +176,11 @@
     "claim_ids": [
       "C41"
     ],
-    "result": "When exposed to disarmed parasitoids, WT caterpillars maintain significantly higher weight than KO caterpillars.",
+    "result": "When exposed to parasitoids with removed ovipositors, WT caterpillars had significantly higher weight than KO caterpillars (p=0.0088).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C41 shows that even harassment by disarmed parasitoids differentially affects the genotypes (p=0.0088, n=8). The experimental design (removing ovipositors) cleverly isolates harassment effects from parasitism. This supports the hypothesis that KO caterpillars are more vulnerable to disturbance due to reduced foraging efficiency.",
+    "evaluation": "Claim C41 shows that even non-injurious parasitoid harassment differentially affects KO caterpillars. The disarmed parasitoid design is clever, isolating behavioral effects from direct injury. Statistical support is adequate (n=8, Student's t-test). This suggests KO caterpillars are less able to avoid or cope with parasitoid presence.",
     "result_type": "MAJOR"
   },
   {
@@ -188,11 +188,11 @@
     "claim_ids": [
       "C42"
     ],
-    "result": "KO caterpillars have significantly lower survival rates than WT when exposed to unmanipulated parasitoids.",
+    "result": "KO caterpillars had significantly lower survival rates (p=0.0120) compared to WT when exposed to unmanipulated parasitoids.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C42 demonstrates the ultimate ecological consequence: KO caterpillars show significantly reduced survival (p=0.0120, n=7) when exposed to functional parasitoids. The use of GLM with beta-binomial distribution is appropriate for proportion data. This is a key finding linking olfactory loss to fitness consequences.",
+    "evaluation": "Claim C42 demonstrates the ultimate fitness consequence of olfactory impairment under natural enemy pressure. The GLM beta-binomial analysis is appropriate for proportion data. Sample size is modest (n=7) but the effect is clear. This is a key ecological finding showing olfaction's role in natural enemy avoidance.",
     "result_type": "MAJOR"
   },
   {
@@ -204,39 +204,37 @@
       "C46",
       "C47"
     ],
-    "result": "Volatile analysis identified 45 compounds across seven chemical classes, with significant separation among treatment groups and most compounds enriched in caterpillar spit and frass.",
+    "result": "Volatile analysis identified 45 compounds across seven chemical classes from caterpillars, wasps, caterpillar spit, and frass. PCA showed significant separation of treatment groups (p=0.001, PC1=65.4% variance), with most compounds enriched in caterpillar spit and frass.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C47 provide comprehensive volatile profiling: 45 compounds identified (C43), significant PCA separation with 65.4% variance in PC1 (p=0.001, C44), clear separation of most groups (C45), similarity between caterpillars alone and caterpillars with wasps (C46), and enrichment in spit/frass (C47). The multivariate statistics and GC-MS methodology are appropriate.",
+    "evaluation": "Claims C43-C47 provide comprehensive chemical ecology data. GC-MS analysis with appropriate statistical methods (PCA, PERMANOVA) supports the findings. Sample sizes are adequate (n=10-14). The chemical profiling establishes which volatiles are present in different contexts, though it doesn't directly test which compounds mediate behavior.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
       "C48",
-      "C49",
-      "C50",
-      "C51"
+      "C49"
     ],
-    "result": "WT caterpillars show behavioral preference for specific plant volatiles and higher activity levels, while KO caterpillars show no significant responses and reduced activity.",
+    "result": "WT caterpillars showed significant preference for (Z)-3-hexen-1-ol and (E)-2-hexenal over paraffin oil (p=0.0482, p=0.0321), while KO caterpillars showed no significant attraction or avoidance to any tested chemicals.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C48-C51 demonstrate behavioral consequences: WT prefer (Z)-3-hexen-1-ol and (E)-2-hexenal (C48) and are more active (C50), while KO show no preferences (C49) and reduced activity (C51). The custom multichannel arena provides appropriate methodology, though sample sizes (n=31-50) could be better specified per compound.",
+    "evaluation": "Claims C48-C49 identify specific behaviorally active compounds for WT caterpillars. The multichannel arena is an appropriate behavioral assay. Sample sizes are good (n=31-50). The complete lack of response in KO caterpillars confirms Orco-dependence. However, only 2 of 15 compounds tested showed significant effects, suggesting either low concentrations or that other compounds are not behaviorally relevant.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C75",
-      "C76"
+      "C50",
+      "C51"
     ],
-    "result": "The loss of glomeruli in KO caterpillars may result from either different developmental mechanisms in embryos versus pupae, or from reduced axonal innervation due to loss of neuronal activity.",
+    "result": "WT caterpillars were more active in behavioral arenas, while KO caterpillars were less active and often remained stationary.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C75-C76 present two alternative speculative explanations for glomerular loss. While both are plausible hypotheses supported by citation to relevant literature (C75), neither is directly tested. The authors appropriately frame these as possibilities rather than conclusions, but no experimental evidence distinguishes between these mechanisms.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe general activity differences between genotypes. Visual tracking data supports this observation. However, it's unclear whether reduced activity is a direct consequence of olfactory impairment or a secondary effect (e.g., reduced motivation, altered physiology). This could confound interpretation of behavioral choice experiments.",
     "result_type": "MINOR"
   },
   {
@@ -248,7 +246,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C77 is a reasonable inference from the observation that some KO butterflies still mate despite olfactory impairment. The inference is supported by citations to previous research on butterfly mating (Carpenter and Sparks, 1982; Obara et al., 2008). However, this remains inferential as visual or other sensory systems were not directly tested.",
+    "evaluation": "Claim C77 is a reasonable inference from the observation that some KO butterflies still mated despite olfactory impairment. The inference is supported by citations to prior work on butterfly mating. However, this remains speculative without direct experimental manipulation of visual cues.",
     "result_type": "MINOR"
   },
   {
@@ -256,11 +254,11 @@
     "claim_ids": [
       "C78"
     ],
-    "result": "Oviposition decisions are mostly guided by non-volatile compounds when host plants are provided without requiring location.",
+    "result": "Oviposition decisions are mostly guided by non-volatile compounds when no host-plant location is required.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C78 is a reasonable inference from the observation that mated KO butterflies lay similar numbers of eggs to WT when plants are provided. This is supported by citations to previous research and aligns with the observation in C24. The inference is logical though not directly tested through manipulation of non-volatile cues.",
+    "evaluation": "Claim C78 is a reasonable inference from the observation that mated KO butterflies laid comparable numbers of eggs to WT when plants were provided. This is supported by citations to prior work and is consistent with known roles of contact chemoreception in oviposition. However, this was not directly tested in the current study.",
     "result_type": "MINOR"
   },
   {
@@ -268,12 +266,12 @@
     "claim_ids": [
       "C79"
     ],
-    "result": "Reduced fecundity in KO butterflies is primarily due to impaired mating behavior and reduced mating frequency, likely from lack of pheromonal communication.",
+    "result": "Reduced fecundity in KO insects is primarily due to impaired mating behavior and reduced mating frequency, which may result from lack of pheromonal communication.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C79 is a logical inference from the combined observations that hatching rates are similar (C24) but mating frequency is reduced (C18-C21). The inference that pheromonal communication is responsible is reasonable given the role of Orco in pheromone detection, though pheromone responses were not directly tested.",
-    "result_type": "MAJOR"
+    "evaluation": "Claim C79 is a logical inference from the data showing similar egg viability but reduced mating in KO butterflies. The inference about pheromonal communication is reasonable given Orco's role in pheromone detection, though pheromone responses were not directly tested in this study.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R21",
@@ -282,11 +280,11 @@
       "C81",
       "C82"
     ],
-    "result": "Olfaction may enable caterpillars to evaluate plant tissues and select optimal feeding sites based on localized differences in secondary metabolites.",
+    "result": "Olfaction may be needed to evaluate plant tissues and select optimal feeding sites based on localized differences in secondary metabolites, even when caterpillars are already on the plant.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C80-C82 present a speculative mechanism for the observed weight differences. While C81 provides citation support for uneven metabolite distribution, and C82 suggests olfactory detection is conceivable, neither the spatial distribution of metabolites nor the olfactory detection of such gradients was directly tested in this study.",
+    "evaluation": "Claims C80-C82 present a speculative hypothesis to explain weight differences between genotypes on plants. While the hypothesis is plausible and supported by citations (C81, C82), it was not directly tested. Alternative explanations (e.g., differences in feeding rate, digestive efficiency, or stress responses) were not ruled out.",
     "result_type": "MINOR"
   },
   {
@@ -294,11 +292,11 @@
     "claim_ids": [
       "C83"
     ],
-    "result": "The weight reduction in KO caterpillars exposed to disarmed parasitoids results from less efficient foraging behavior leading to extended vulnerability to harassment.",
+    "result": "The weight reduction in KO caterpillars exposed to disarmed parasitoids was hypothesized to result from less efficient foraging behavior and extended vulnerability to harassment.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C83 is speculation based on the observation in C41. While the hypothesis is plausible and logically connects foraging efficiency to harassment vulnerability, the actual foraging behavior and time spent vulnerable were not directly measured. The mechanism remains inferential.",
+    "evaluation": "Claim C83 is speculative reasoning about mechanisms. While plausible, the hypothesis was not directly tested. The study did not measure foraging efficiency, time spent feeding, or behavioral responses to harassment. Alternative explanations (e.g., stress-induced metabolic changes) were not excluded.",
     "result_type": "MINOR"
   },
   {
@@ -307,174 +305,142 @@
       "C84",
       "C85"
     ],
-    "result": "KO caterpillars' reduced growth rate extends their time in vulnerable early instars, likely increasing susceptibility to parasitoid attack in natural settings.",
+    "result": "P. brassicae caterpillars are most vulnerable to C. glomerata during early instars, and KO caterpillars' reduced growth rate would likely result in longer vulnerability periods and greater parasitism risk in natural settings.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C84-C85 combine established knowledge about vulnerability windows (C84) with inference from observed growth differences to predict ecological consequences. The inference is logical and supported by citations (Brodeur et al., 1996; Haverkamp and Smid, 2020), though the extended vulnerability period was not directly measured.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C84-C85 make reasonable inferences about ecological consequences based on experimental data and cited prior work on parasitoid host-stage preferences. The logic is sound: slower growth \u2192 longer time in vulnerable stages \u2192 higher parasitism risk. However, this was not tested in a natural field setting.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R24",
     "claim_ids": [
       "C86",
-      "C87"
+      "C87",
+      "C88",
+      "C89",
+      "C90"
     ],
-    "result": "Caterpillars may use olfaction to avoid plant parts with natural enemies and find enemy-free spaces based on plant or conspecific volatiles.",
+    "result": "The study infers that caterpillars use olfaction to find enemy-free spaces and that differences in weight gain and survival between genotypes result from differential sensitivity to plant volatiles, affecting foraging efficiency and enemy avoidance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C86-C87 are speculative interpretations of the behavioral observations in C39-C40. While the avoidance behavior is documented, the specific mechanism (avoiding plant parts vs. whole plants) and the exact volatile cues used were not directly tested. The speculation is reasonable but requires further experimental validation.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 present interconnected inferences about mechanisms linking olfaction to fitness. These are reasonable interpretations of the experimental data, though some aspects remain speculative. The inferences are supported by behavioral data (Y-tube assays) and performance data (weight, survival), but direct measurements of foraging efficiency and enemy avoidance in natural contexts were not performed.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R25",
     "claim_ids": [
-      "C88",
-      "C89",
-      "C90",
-      "C91"
+      "C91",
+      "C92",
+      "C93"
     ],
-    "result": "Differences in weight gain and survival between WT and KO caterpillars result from differential sensitivity to plant volatiles, affecting both foraging efficiency and enemy avoidance.",
+    "result": "OR-mediated olfaction is required for caterpillars to locate and identify host plants, and losing this capability makes host-plant discrimination challenging. KO caterpillars retain ionotropic receptors that detect acids and amines, which may elicit aversion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C91 synthesize multiple observations into a coherent mechanistic framework. While individual components are inferential (C88, C90, C91) or supported by citation (C89), the overall interpretation is well-supported by the collective experimental evidence from behavioral assays, performance measurements, and survival data.",
+    "evaluation": "Claims C91-C93 provide a mechanistic framework for understanding host-plant discrimination deficits. The inference about retained IR function (C93) is reasonable given that only Orco was knocked out. This explains why KO caterpillars can still detect some stimuli but lose host-plant preference. Citations support the interpretation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R26",
     "claim_ids": [
-      "C92",
-      "C93"
+      "C94",
+      "C95",
+      "C96",
+      "C97"
     ],
-    "result": "OR-mediated olfaction is required for caterpillars to locate and distinguish host from non-host plants.",
+    "result": "Fatty acids present on damaged cabbage leaves may cause avoidance in KO caterpillars lacking attractive OR-mediated cues. These same fatty acids are used by parasitoid C. glomerata to locate caterpillars, and herbivores may avoid them to escape enemies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C92-C93 are speculative but well-supported by the observation that KO caterpillars prefer non-host tomato over host cabbage (C32-C34). The inference is logical and supported by citation (Liu et al., 2023). While the specific role of ORs versus other receptors wasn't isolated, the behavioral evidence strongly supports this interpretation.",
-    "result_type": "MAJOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C97 present an interesting hypothesis linking host-plant avoidance to enemy avoidance through fatty acid detection. While C94, C96, and C97 are supported by citations, C95 is speculative. The hypothesis was not directly tested by measuring caterpillar responses to fatty acids or by manipulating fatty acid levels on plants.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R27",
     "claim_ids": [
-      "C94",
-      "C95",
-      "C96"
+      "C98",
+      "C99"
     ],
-    "result": "KO caterpillars retain ionotropic receptors that detect aversive fatty acids, which may cause avoidance of host plants in the absence of attractive OR-mediated signals.",
+    "result": "Direct volatile 'danger signals' from wasps or caterpillars may not exist or were not detectable with the methods used. Alternatively, indirect cues like volatiles from caterpillar spit during defensive behavior might trigger avoidance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C94-C96 present a mechanistic hypothesis for aberrant host preference. While C94 is a reasonable inference about retained IRs (supported by citation), and C95 documents fatty acid presence (citation), C96's speculation about avoidance behavior lacks direct experimental support. The hypothesis is plausible but untested.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 acknowledge limitations in detecting wasp-specific volatiles and propose alternative mechanisms. This is appropriate scientific reasoning. The volatile analysis (C43-C47) supports that wasp-specific compounds were not abundant. The alternative hypothesis about spit volatiles is plausible given that spit was enriched in many compounds.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R28",
     "claim_ids": [
-      "C97",
-      "C98"
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
     ],
-    "result": "Parasitoid C. glomerata uses plant-produced fatty acids to locate caterpillars, and herbivores may avoid these compounds to escape natural enemies.",
+    "result": "Caterpillars can detect HIPVs, which serve as indicators of food plants and conspecifics but also attract enemies. The study speculates that caterpillars use concentration-dependent responses to HIPVs: low-intermediate concentrations for host-finding and high concentrations for enemy avoidance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C97-C98 are based on citations to previous research (Horikoshi et al., 1997; Zhang et al., 2019). While C97 states established knowledge, C98 presents a hypothesis from the literature. These claims provide context for interpreting the current results but are not directly tested in this study.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 are supported by citations to prior work. However, C103 is speculative and was not tested. The study did not measure caterpillar responses to different HIPV concentrations or demonstrate concentration-dependent behavioral switching. C104 is a reasonable inference but not directly demonstrated.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R29",
     "claim_ids": [
-      "C99",
-      "C100"
+      "C105",
+      "C106",
+      "C107"
     ],
-    "result": "Direct volatile 'danger signals' from wasps or caterpillars may not exist or be detectable, but indirect cues from caterpillar defensive spit may trigger avoidance behavior.",
+    "result": "All olfactory receptors expressed in caterpillars are also present in butterflies. ITCs are unlikely to be used by P. brassicae caterpillars as foraging cues, despite being recognized by ORs in other species.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C99-C100 present alternative interpretations of the volatile analysis results. C99 acknowledges methodological limitations, while C100 offers an alternative mechanism. Neither hypothesis is definitively supported or refuted by the data. The volatile analysis (C43-C47) shows enrichment in spit but doesn't establish behavioral causation.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is an inference based on cited prior work on receptor expression. C106 is a reasonable inference from the lack of EAG responses to ITCs in butterflies, though this assumes similar receptor expression between life stages. C107 is supported by citation. The logic is sound but relies on assumptions about receptor conservation across life stages.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R30",
     "claim_ids": [
-      "C101",
-      "C102",
-      "C103"
+      "C108",
+      "C109",
+      "C110"
     ],
-    "result": "Caterpillars can detect HIPVs, which serve as indicators for food plants and conspecifics but also attract natural enemies.",
+    "result": "Wasp-derived volatile cues were found in very low quantities and elicited minimal behavioral responses in caterpillars, though they might play a role at close range.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C101-C103 are supported by citations to previous research (Di et al., 2017; de Fouchier et al., 2018; Bernays, 1997; Ngumbi and Fadamiro, 2012; Yang et al., 2016). These establish the broader context for HIPV function in caterpillar ecology and are consistent with the current study's findings.",
+    "evaluation": "Claims C108-C109 are supported by the volatile analysis and behavioral data. C110 is speculative but reasonable, supported by citation. The findings suggest that long-range wasp detection via volatiles is unlikely, but short-range detection remains possible. This is an important negative result that constrains mechanistic interpretations.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R31",
     "claim_ids": [
-      "C104",
-      "C105"
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
     ],
-    "result": "HIPVs are abundant in caterpillar defensive spit, and caterpillars may use concentration-dependent responses to HIPVs for both host-finding and enemy avoidance.",
+    "result": "The study demonstrates that olfaction is highly significant for caterpillars in locating food sources and likely affects survival under natural enemy pressure. Olfactory information enables efficient food location and enemy-free space selection, revealing the crucial role of olfaction and chemoreceptor genes in ecological interactions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C104 is supported by the volatile analysis data (C43-C47), but C105 is speculation about concentration-dependent behavior that was not directly tested. While the hypothesis is plausible and integrates multiple observations, the concentration-response relationship and dual function were not experimentally validated.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 represent the main conclusions of the study. These are well-supported by the comprehensive experimental data including knockout validation (C1-C13), behavioral assays (C28-C40), performance measures (C25, C41-C42), and chemical ecology (C43-C49). The conclusions appropriately synthesize the findings, though some mechanistic details remain speculative.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R32",
     "claim_ids": [
-      "C106"
+      "C75",
+      "C76"
     ],
-    "result": "Perceiving plant volatiles and approaching food plants accordingly increases herbivore feeding efficiency and survival chances.",
+    "result": "The loss of glomeruli in KO caterpillars might indicate either different mechanisms of glomeruli formation in embryos versus pupation, or that reduced neuronal activity decreased glomeruli size below detection limits.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C106 is a logical inference from the collective experimental observations showing that WT caterpillars with intact olfaction gain more weight (C25), show better survival (C42), and exhibit appropriate behavioral responses (C35-C40). While stated generally, this inference is well-supported by the study's data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R33",
-    "claim_ids": [
-      "C107",
-      "C108",
-      "C109"
-    ],
-    "result": "Isothiocyanates are unlikely to be used by P. brassicae caterpillars as foraging cues, despite being recognized by ORs in other species.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C107-C109 combine citation-supported knowledge (C107, C109) with inference from EAG data (C17) showing no response to ITCs. The inference in C108 is reasonable given the limited OR expression in larvae and lack of antennal response, though larval behavioral responses to ITCs were not directly tested.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 present alternative speculative explanations for glomeruli loss. While both are plausible, neither was tested. The study did not examine glomeruli formation during development, measure neuronal activity, or use methods with different detection sensitivities. These remain open questions requiring further investigation.",
     "result_type": "MINOR"
-  },
-  {
-    "result_id": "R34",
-    "claim_ids": [
-      "C110",
-      "C111",
-      "C112"
-    ],
-    "result": "Wasp-derived volatiles are present in low quantities and elicit minimal behavioral responses, but may play a role in close-range interactions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C110-C111 are supported by the volatile analysis (C43-C47) and behavioral assays (C48-C49). C112's speculation about close-range effects is reasonable and supported by citation (Ebrahim et al., 2015), though close-range interactions were not directly tested. The claims appropriately acknowledge the limitations of the findings.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R35",
-    "claim_ids": [
-      "C113",
-      "C114",
-      "C115",
-      "C116"
-    ],
-    "result": "The study demonstrates that olfaction is highly significant for caterpillar food location and survival under natural enemy pressure, providing novel insights into tri-trophic interactions from the caterpillar perspective.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C113-C116 are summary statements supported by the comprehensive experimental evidence throughout the study. C113-C114 are directly supported by performance (C25), survival (C42), and behavioral data (C35-C40). C115-C116 appropriately characterize the study's contribution to understanding larval olfaction in ecological context.",
-    "result_type": "MAJOR"
   }
 ]

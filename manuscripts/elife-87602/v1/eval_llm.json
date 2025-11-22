@@ -2,42 +2,80 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C2",
-      "C3",
-      "C4",
-      "C26",
-      "C28",
-      "C29",
-      "C30",
-      "C72",
-      "C73",
-      "C75",
-      "C124",
-      "C127",
-      "C155",
-      "C158"
+      "C1",
+      "C8",
+      "C9",
+      "C10"
     ],
-    "result": "This work provides the first comprehensive synaptic resolution somatotopic map of head mechanosensory neurons in Drosophila. Nearly all bristle mechanosensory neurons (BMNs) on the head were identified and their projections reconstructed from bristles through nerves to distinct arborization zones in the brain using multiple tracing methods including transgenic driver lines, dye fills, and EM reconstruction. 705 BMNs were identified in the EM volume, and their somatotopic organization was characterized showing that BMNs innervating neighboring bristles project to overlapping zones while those innervating distant bristles project to distinct zones.",
+    "result": "Drosophila perform a body location-prioritized grooming sequence when mechanosensory neurons are simultaneously stimulated by dust, consistent with a parallel model where eye grooming occurs first because it suppresses grooming of other locations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2-C4, C26-C30, C72-C75, C124, C127, C155, and C158 collectively provide strong converging evidence from multiple experimental approaches (light microscopy, dye fills, MCFO labeling, and EM reconstruction) that comprehensively define the head BMN somatotopic map. The anatomical data is extensive and internally consistent across methods, and the claim of being 'first' is supported by assessment of prior work (C125-C126, C156-C157). The quantification of bristles and BMNs provides validation of completeness.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C1, C8, C9, and C10 are all supported by citations to previous work (Hampel et al., 2017; Seeds et al., 2014; Mueller et al., 2019; Phillis et al., 1993) establishing the dust-induced grooming sequence and its consistency with the parallel model. These claims provide the foundational behavioral context for the current study.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Nearly all mechanosensory neurons on the Drosophila head that elicit aimed grooming were identified and their projections reconstructed, providing the first synaptic resolution somatotopic map of a head with neighboring BMNs projecting to overlapping zones and showing higher connectivity similarity than distant BMNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C19-C21 are supported by comprehensive experimental data including optogenetic activation (C19), anatomical reconstructions using multiple methods (C3), and connectomic analysis (C21). The combination of light microscopy, dye fills, transgenic driver lines, and EM reconstructions provides converging evidence for the somatotopic organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
       "C31",
       "C32",
       "C33",
       "C34",
       "C35",
-      "C36",
+      "C36"
+    ],
+    "result": "Head bristles were classified and quantified, and BMNs innervating bristles at different head locations were found to project through specific nerves including the antennal, eye, occipital, and labial nerves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C36 are supported by imaging data (C22), transgenic expression patterns (C23), and anatomical reconstruction data (C24-C36). The identification of the previously undescribed occipital nerve (C27) and comprehensive mapping of BMN projections through different nerves provides essential anatomical foundation for the somatotopic map.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
       "C37",
       "C38",
       "C39",
       "C40",
-      "C41",
+      "C41"
+    ],
+    "result": "All head BMN nerves project into the subesophageal zone (SEZ) of the ventral brain, with BMNs from different nerves projecting into distinct zones, though some potential overlap exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by anatomical observations using transgenic driver lines and computational alignment of expression patterns (C40). The identification of all head BMN projections terminating in the SEZ (C38) is well-documented through multiple driver lines and imaging approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
       "C42",
       "C43",
       "C44",
@@ -45,92 +83,158 @@
       "C46",
       "C47",
       "C48",
-      "C49",
+      "C49"
+    ],
+    "result": "Optogenetic activation of different BMN types elicits aimed grooming of specific head locations and neighboring locations, with dorsal head BMNs eliciting dorsal head grooming, BM-Taste neurons eliciting labellar and neighboring grooming, and posterior head BMNs eliciting head nodding in two behavioral contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are supported by optogenetic behavioral experiments with multiple driver lines (dBMN-spGAL4, TasteBMN-spGAL4, InOmBMN-LexA, pBMN-spGAL4) and video documentation. The inference that BMNs elicit grooming of both corresponding and neighboring locations (C46) is well-supported by the experimental data, though the exact resolution of the parallel architecture remains to be fully determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
       "C50",
       "C51",
       "C52",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Somatotopically organized head BMNs elicit both aimed grooming and avoidance-like responses including backward motions and head nodding, with these movements being mutually exclusive and sequential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C126-C132 are supported by optogenetic behavioral observations showing backward motions with dorsal head and eye BMN activation (C50, C128, C129) and head nodding with posterior head BMN activation (C130). The citation to previous work on avoidance responses (C131) and synthesis of current experimental data (C132) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
       "C53",
       "C54",
       "C55",
       "C56",
       "C57"
     ],
-    "result": "Head BMNs innervating bristles at different locations project through specific nerves (antennal, eye, occipital, and labial nerves) into distinct zones of the ventral subesophageal zone (SEZ). The study identified and characterized the nerve projections for nearly all head bristle populations, including a previously undescribed occipital nerve. BMNs from different nerves have morphologically distinct projections into the SEZ, with some potential zones of overlap.",
+    "result": "This work provides the most comprehensive definition of BMNs for any body part of Drosophila, though some knowledge gaps remain regarding PoOc and Su bristles.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C31-C57 describe the comprehensive mapping of BMN nerve projections using light microscopy with transgenic driver lines and dye fills. The data is supported by multiple imaging approaches (white light, confocal microscopy) and is internally consistent. The identification of a new nerve (OcciNv) and the systematic characterization of all major nerve groups provides strong evidence for the distinct projection patterns.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C53-C54 are supported by the comprehensive reconstruction effort validated against bristle counts. The acknowledgment of knowledge gaps (C55) and speculative proposals about unidentified neurons (C56-C57) appropriately qualify the completeness of the work while maintaining that nearly all head BMNs were reconstructed.",
+    "result_type": "MINOR"
   },
   {
-    "result_id": "R3",
+    "result_id": "R8",
     "claim_ids": [
       "C58",
-      "C59",
+      "C59"
+    ],
+    "result": "The neurotransmitter identity of head BMNs remains unresolved, though machine learning predictions suggest they are overwhelmingly cholinergic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is based on unpublished machine learning predictions and a single citation to previous work on leg BMNs (Tuthill and Wilson, 2016a). Claim C59 acknowledges conflicting evidence from different studies. The lack of direct experimental validation of neurotransmitter identity in head BMNs makes this result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
       "C60",
       "C61",
       "C62",
       "C63",
       "C64",
-      "C65",
+      "C65"
+    ],
+    "result": "The reconstruction and annotation of head mechanosensory neurons (JONs, BMNs, TPMNs) in FAFB reveals modality-specific projections with BMNs showing somatotopic organization and JONs showing tonotopic organization, with potential overlap between JO-F neurons and some BMNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by anatomical reconstruction data (C61) and citations to previous work on JON organization (C62). The observation of potential overlap between JO-F neurons and BMNs (C63) and the inference that JO-F projections may be somatotopic (C64) are appropriately qualified as preliminary observations requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
       "C66",
       "C67",
       "C68",
       "C69",
       "C70",
-      "C71"
+      "C71",
+      "C72",
+      "C73"
     ],
-    "result": "Individual BMNs innervating the same bristle populations show stereotyped projection morphologies across individual flies, while BMNs innervating neighboring bristle populations show similar morphologies and project into overlapping zones in the SEZ. This was demonstrated using dye fills for large bristles and MCFO labeling for small bristles, revealing that BM-Ant, BM-Or, BM-Vib, and BM-Vt neurons each show consistent morphology within their type, and neighboring types (e.g., BM-InOc and BM-Oc) show morphological similarity.",
+    "result": "This work defines the somatotopic organization of head BMNs using EM reconstructions to produce a comprehensive synaptic resolution map, showing that all reconstructed head BMN types terminate in the SEZ where the first layers of BMN processing occur.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C71 are supported by extensive dye fill and MCFO data from multiple individual flies showing reproducible morphologies within BMN types and similarity among neighboring types. The data is presented in Figure 4 and supplements, showing consistent patterns across biological replicates. The inference that neighboring BMNs project to overlapping zones (C71) is a reasonable conclusion from the morphological similarity data.",
+    "evaluation": "Claims C66-C72 are supported by comprehensive EM reconstruction data and appropriate contextualization with previous work (C67-C69). The observation that all head BMN types terminate in the SEZ (C71) contrasts with other insects where head BMNs project to both SEZ and thoracic ganglia (C73), highlighting a potentially Drosophila-specific feature.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R4",
+    "result_id": "R11",
     "claim_ids": [
+      "C74",
+      "C75",
       "C76",
       "C77",
-      "C78",
+      "C78"
+    ],
+    "result": "Head BMNs of the same type show stereotyped morphology, project to the same SEZ zones, and show the highest postsynaptic connectivity similarity, though some BMN types show intratype diversity with subtypes having differing morphology and connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by anatomical reconstruction data from multiple individuals (C74), citations to previous work across multiple species (C75), and connectomic analysis (C76-C77). The identification of BMN subtypes (C77) and the example of BM-InOm neuron diversity (C78) are well-supported by NBLAST and cosine similarity clustering data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
       "C79",
       "C80",
       "C81",
       "C82",
       "C83",
-      "C84"
+      "C84",
+      "C85",
+      "C86"
     ],
-    "result": "The EM-based somatotopic map reveals three key organizational features: (1) each BMN type has unique branch morphology defining projections into distinct SEZ zones, (2) BMN types innervating neighboring bristle populations have branches projecting into partially overlapping zones while distant types show little overlap, and (3) BMN projections either remain ipsilateral or cross the midline depending on bristle location, with medially-located anterior head bristles showing midline-crossing projections and lateral/eye/posterior bristles showing ipsilateral-only projections.",
+    "result": "BMN types innervating neighboring bristle populations have overlapping projections into zones corresponding to dorsal, ventral, and posterior head regions, with neighboring BMNs showing common postsynaptic partners, though overlap is only partial.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C76-C84 describe the three main organizational features of the somatotopic map supported by comprehensive EM reconstruction data presented in Figures 6-7. The data shows clear patterns of distinct vs. overlapping projections based on bristle proximity, and systematic differences in ipsilateral vs. midline-crossing projections based on bristle location. The characterization is thorough and internally consistent.",
+    "evaluation": "Claims C79-C82 are supported by anatomical reconstruction data (C79), connectomic analysis (C80-C81), and appropriate inference about functional significance (C82). Citations to previous work showing similar overlap in other body parts (C83-C85) provide comparative context. The speculation about functional implications for grooming (C86) is appropriately qualified.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R5",
+    "result_id": "R13",
     "claim_ids": [
-      "C85",
-      "C86",
       "C87",
       "C88",
       "C89",
-      "C90"
-    ],
-    "result": "NBLAST morphological similarity analysis and BMN-to-BMN connectivity analysis reveal that neighboring BMNs show high similarity and connectivity, while distant BMNs show low similarity and are not connected. The BMN projection zones defined by NBLAST and connectivity correspond roughly to eye, ventral, dorsal, and posterior head regions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C85-C90 are supported by quantitative NBLAST and connectivity analyses of the EM reconstruction data. The analyses provide complementary evidence for somatotopic organization using both morphological and connectivity metrics. The correspondence between the two independent measures strengthens the conclusions about spatial organization.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
+      "C90",
       "C91",
       "C92",
       "C93",
-      "C94",
+      "C94"
+    ],
+    "result": "Some head BMNs have ipsilateral-only projections while others have midline-crossing projections, with BMNs innervating medially located bristles on the anterior head showing midline-crossing projections similar to patterns observed in other body parts and insect species, though the organizational logic may not be universal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by EM reconstruction data. Claims C89-C91 provide comparative context through citations to previous work in Drosophila and other insects. The speculation about functional implications (C92) and acknowledgment that the organizational logic may not be universal (C93-C94) are appropriately qualified based on observations of exceptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
       "C95",
       "C96",
       "C97",
@@ -140,15 +244,15 @@
       "C101",
       "C102"
     ],
-    "result": "Cosine similarity clustering of BMN postsynaptic connectivity reveals parallel pathways reflecting head somatotopy. BMNs of the same type show highest connectivity similarity, while neighboring BMN types show connectivity similarity forming clusters corresponding to dorsal, ventral, and posterior head regions. Some BMN types show intratype diversity with differential clustering, notably the BM-InOm neurons which may reflect the large surface area of the eyes.",
+    "result": "This work provides the first synaptic resolution somatotopic map of a head for any species, overcoming previous limitations of sparse labeling and extrapolation across animals, with important implications for understanding somatotopic neural circuit organization.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C102 describe cosine similarity clustering analysis of postsynaptic connectivity supported by data in Figure 8 and supplements. The analysis reveals hierarchical organization with same-type BMNs showing highest similarity and neighboring types showing intermediate similarity. The identification of five clusters at cut height 4.5 and their correspondence to head regions is well-supported. The observation of intratype diversity (C96-C97) is appropriately noted as requiring further investigation.",
+    "evaluation": "Claims C95 and C100 are supported by the comprehensive EM reconstruction methods and data presented. Claims C96-C99 appropriately contextualize the novelty by citing previous work and assessing limitations of previous studies. Claims C101-C102 about future implications are reasonable inferences from the comprehensive dataset provided.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R7",
+    "result_id": "R15",
     "claim_ids": [
       "C103",
       "C104",
@@ -156,127 +260,77 @@
       "C106",
       "C107",
       "C108",
-      "C109"
-    ],
-    "result": "Optogenetic activation of different subsets of head BMNs elicits aimed grooming of specific head locations and neighboring locations. Activation of dorsal head BMNs (dBMN-spGAL4) elicits dorsal head grooming, BM-Taste neurons elicit labellar and neighboring proboscis/ventral head grooming, and BM-InOm neurons elicit eye and neighboring dorsal head grooming. This pattern is consistent with the anatomical finding that neighboring BMNs show overlapping projections and postsynaptic connectivity similarity.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C103-C109 are supported by optogenetic behavioral experiments presented in Figure 9 and videos. The data shows that BMN activation elicits location-specific grooming with some spread to neighboring locations, which is consistent with the anatomical and connectomic data showing overlapping projections and connectivity among neighboring BMN types. The integration of behavioral and anatomical data strengthens both sets of findings.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
+      "C109",
       "C110",
       "C111",
       "C112",
       "C113",
-      "C114",
+      "C114"
+    ],
+    "result": "Activation of head BMNs elicits aimed grooming of specific head locations, with BM-InOm neurons eliciting eye grooming and other BMN types eliciting grooming of dorsal and ventral head, extending previous findings that BMNs are important for eliciting aimed grooming across the head and body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C108 are supported by optogenetic behavioral experiments. Claims C104-C107 and C109 provide appropriate context through citations to previous behavioral studies. Claim C110 represents a well-supported synthesis. Claims C111-C112 are supported by optogenetic data, while C113 is appropriately labeled as a hypothesis. Claim C114 cites previous validation of the optogenetic approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
       "C115",
       "C116",
       "C117",
-      "C118"
-    ],
-    "result": "Activation of posterior head BMNs (pBMN-spGAL4) elicits head nodding movements that occur in two behavioral contexts: as an avoidance response when elicited alone, and during dorsal head grooming to help legs reach particular locations. Evidence suggests nodding-only movements are elicited by BM-dOcci and -vOcci neurons while dorsal head grooming with nodding is elicited by BM-InOc, -Vt, -dPoOr, and -InOm neurons.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C110-C118 describe head nodding behavior and attempt to assign it to specific BMN types based on driver line expression patterns. While the behavioral observations are supported by data in Figure 9 and Video 4, the assignment of nodding to specific BMN types (C118) is based on inference from overlapping driver line expression rather than direct manipulation of individual BMN types. The hypothesis is reasonable but requires additional validation with more specific genetic tools.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
+      "C118",
       "C119",
       "C120",
       "C121",
-      "C122",
-      "C123"
+      "C122"
     ],
-    "result": "BMNs on the dorsal head and eyes elicit backward avoidance-like motions in addition to grooming. These backward motions occur transiently at stimulus onset and are followed by grooming, indicating they are mutually exclusive and sequential. BMN activation elicits backward motions in most trials (73-100%) compared to control flies (33%), demonstrating that somatotopically organized head BMNs elicit both aimed grooming and avoidance-like responses.",
+    "result": "Different evidence supports the hypothesis that BMNs connect with parallel circuits that each elicit a different aimed grooming movement, including cosine similarity analysis revealing parallel connectivity with partial convergence of neighboring BMN types, and identification of a connected antennal grooming circuit.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C119-C123 are supported by behavioral data in Figure 9 showing backward motions elicited by dBMN-spGAL4 and InOmBMN-LexA activation. The quantification shows significantly higher response rates in experimental vs. control flies, and the temporal pattern of backward motion followed by grooming is clearly documented. This demonstrates that BMNs can elicit multiple behavioral outputs.",
+    "evaluation": "Claims C115-C117 are supported by connectomic analysis data. Claims C118-C121 are supported by citations to previous work identifying circuits and their components. Claim C122 about preliminary connectomic analysis is appropriately qualified as unpublished data. The convergence of multiple lines of evidence supports the parallel circuit hypothesis, though the exact resolution remains to be fully determined.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R10",
+    "result_id": "R17",
     "claim_ids": [
-      "C1",
-      "C9",
-      "C10",
-      "C11",
-      "C12",
-      "C13",
-      "C17",
-      "C232",
-      "C233",
-      "C234",
-      "C235",
-      "C236",
-      "C237",
-      "C238"
+      "C123",
+      "C124",
+      "C125"
     ],
-    "result": "This work examines the mechanosensory layer of a parallel model of hierarchical suppression that produces the head-to-body grooming sequence. Previous work established that Drosophila perform a body location-prioritized grooming sequence when mechanosensory neurons are simultaneously stimulated, and that simultaneous optogenetic activation of mechanosensory neurons elicits a sequence resembling the dust-induced sequence. The current work defines the parallel architecture of BMN types that elicit the head grooming sequence starting with eyes and proceeding to other locations.",
+    "result": "Activation of specific BMN types elicits aimed grooming of both their corresponding bristle locations and neighboring locations, providing a means of cleaning the area surrounding the stimulus location, with the hypothesis that neighboring BMNs connect with common neural circuits.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C9-C13, C17, C232-C238 establish the context and framework for the study based on well-supported prior work (Seeds et al., 2014; Hampel et al., 2017; Zhang et al., 2020). The current work's contribution of defining the parallel BMN architecture is supported by the comprehensive anatomical and connectomic data. The integration with the parallel model framework is appropriate and well-justified.",
+    "evaluation": "Claim C123 is supported by optogenetic behavioral experiments. Claim C124 represents a reasonable inference from the behavioral observations. Claim C125 is appropriately labeled as a hypothesis integrating anatomical, connectomic, and behavioral data, though it requires further experimental validation.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R11",
+    "result_id": "R18",
     "claim_ids": [
-      "C5",
-      "C6",
-      "C7",
-      "C8",
-      "C21",
-      "C240",
-      "C241",
-      "C242",
-      "C243",
-      "C244",
-      "C245",
-      "C246"
-    ],
-    "result": "The anatomical and connectomic data provide evidence for a parallel circuit architecture underlying grooming, with distinct projections and connectivity among BMNs innervating distant bristles supporting parallel pathways. However, partially overlapping projections and connectivity among neighboring BMNs, combined with behavioral data showing grooming of both target and neighboring locations, raise questions about the resolution of the parallel architecture - whether circuits are organized by specific bristle populations or by broader head areas.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C8, C21, C240-C246 integrate the parallel model framework with the current anatomical, connectomic, and behavioral findings. The data clearly supports parallel organization at some level (distinct pathways for distant locations), but the overlap among neighboring BMNs and spread of grooming to neighboring locations appropriately raises questions about circuit resolution (C243-C246). The acknowledgment that future work is needed (C246) is appropriate given the current evidence.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C129",
-      "C130",
-      "C131",
-      "C132",
       "C133",
       "C134",
       "C135",
       "C136",
       "C137",
-      "C138"
-    ],
-    "result": "Two knowledge gaps remain: (1) it is unclear if PoOc and Su bristles are innervated by BMNs, with one BM-Vt/PoOc neuron proposed to innervate PoOc based on proximity and morphological similarity, and (2) the neurotransmitter(s) used by BMNs remain unresolved, with machine learning predictions suggesting cholinergic transmission but other studies suggesting histamine.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C129-C138 appropriately acknowledge limitations and uncertainties in the work. The inability to identify PoOc and Su bristle BMNs using available methods is clearly stated (C129), and the proposal about BM-Vt/PoOc (C130) is appropriately tentative. The neurotransmitter uncertainty (C132-C138) is well-documented with conflicting evidence from machine learning predictions and prior literature, and the conclusion that this remains unresolved (C138) is appropriate.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
+      "C138",
       "C139",
       "C140",
       "C141",
-      "C142",
+      "C142"
+    ],
+    "result": "This study defines the parallel architecture of BMN types that elicit the head grooming sequence, with distinct projections and connectivity among BMNs innervating distant bristles supporting the parallel architecture, though partially overlapping projections among neighboring BMNs raise questions about the resolution of the parallel architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 are supported by citations to previous work establishing the parallel model framework and optogenetic evidence. Claims C139 and C141 are supported by the comprehensive anatomical and connectomic data presented. Claim C142 appropriately identifies an important unresolved question about the resolution of the parallel architecture based on the observation of partial overlap among neighboring BMNs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
       "C143",
       "C144",
       "C145",
@@ -288,203 +342,35 @@
       "C151",
       "C152",
       "C153",
-      "C154"
+      "C154",
+      "C155",
+      "C156"
     ],
-    "result": "This work contributes to comprehensive FAFB reconstruction of head mechanosensory neurons including BMNs, JONs, and TPMNs. These neurons show modality-specific projections into distinct SEZ regions, with BMNs showing somatotopic organization and JONs showing tonotopic organization. Some potential overlap exists between ventral JONs (JO-F) and BMNs projecting through the antennal nerve, suggesting JO-F projections may also be somatotopic.",
+    "result": "The parallel-projecting head BMNs are hypothesized to connect with postsynaptic circuits that perform additional functions to produce the grooming sequence through hierarchical suppression and dust detection, though the presumed role of BMNs in detecting dust remains to be directly demonstrated.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C139-C154 describe the broader context of head mechanosensory neuron reconstruction and the relationship between different modalities. The modality-specific projection patterns (C147-C150) are supported by EM reconstruction data and prior work. The observation of potential overlap between JO-F and BM-Ant neurons (C151-C152) is appropriately presented as preliminary, and the speculation about JO-F somatotopy (C153) is clearly marked as such.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C162",
-      "C163",
-      "C164",
-      "C165",
-      "C166",
-      "C167",
-      "C168",
-      "C169"
-    ],
-    "result": "Head BMNs of the same type show highest morphological similarity, highest postsynaptic connectivity similarity, and stereotyped morphology across individuals. However, some BMN types show intratype diversity with subtypes having differing morphology and connectivity, notably the BM-InOm neurons which show differential clustering potentially reflecting the large eye surface area spanning dorsal to ventral head.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C162-C169 describe within-type consistency and between-type diversity supported by NBLAST, connectivity, and dye fill data across multiple individuals. The identification of subtypes (C167-C169) is supported by clustering analyses, though the functional significance and the specific hypothesis about BM-InOm subtypes (C169) is appropriately presented as speculation requiring future investigation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C170",
-      "C171",
-      "C172",
-      "C173",
-      "C174",
-      "C175",
-      "C176",
-      "C177"
-    ],
-    "result": "BMN types innervating neighboring bristle populations have overlapping projections into zones corresponding to dorsal, ventral, and posterior head regions, and show common postsynaptic partners. This overlap is only partial as neighboring types show differing projections and connectivity. The overlap likely reflects bristle proximity and enables postsynaptic partners to respond to correlated activity from neighboring bristles, with potential implications for aimed grooming of overlapping locations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C170-C177 describe the partial overlap among neighboring BMN types supported by anatomical and connectivity data in Figure 8. The functional interpretation about correlated activity (C173) is supported by citation to prior work on BMN activity patterns. The speculation about implications for grooming (C177) is appropriately tentative and consistent with the behavioral data showing grooming spread to neighboring locations.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C178",
-      "C179",
-      "C180",
-      "C181",
-      "C182",
-      "C183",
-      "C184",
-      "C185"
-    ],
-    "result": "Some head BMNs have ipsilateral-only projections while others have midline-crossing projections. BMNs innervating medially-located anterior head bristles show midline-crossing projections while those innervating lateral populations have ipsilateral-only projections, consistent with patterns observed in thorax and leg BMNs in Drosophila and other insects. However, proboscis and posterior head BMNs show mixed or ipsilateral-only patterns, suggesting the organizational logic may not be universal.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C178-C185 describe ipsilateral vs. midline-crossing projection patterns supported by EM reconstruction data in Figure 7. The comparison with prior work on thorax and leg BMNs (C180-C182) appropriately contextualizes the findings. The speculation about functional significance (C183) is reasonable but appropriately tentative. The acknowledgment that the pattern is not universal (C185) is supported by the data on proboscis and posterior BMNs.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C186",
-      "C187",
-      "C188",
-      "C189",
-      "C190",
-      "C191",
-      "C192",
-      "C193"
-    ],
-    "result": "This work provides the first synaptic resolution somatotopic map of a head (or body) for any species, overcoming previous limitations of sparse labeling and extrapolation across animals. While previous studies identified somatotopic maps across species and demonstrated their fundamental importance, comprehensive descriptions were not possible. The complete EM reconstruction in the same brain enables future definition of the postsynaptic connectome and has important implications for understanding somatotopic neural circuit organization and function.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C186-C193 make a strong claim about being 'first' which is supported by assessment of prior work limitations (C189-C190) and the comprehensive nature of the current EM reconstruction (C191). The claim is appropriately contextualized with prior work on somatotopy (C187-C188) and the potential for future studies (C192-C193). The assessment that this is the first complete synaptic resolution map appears justified based on the evidence presented.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C194",
-      "C195",
-      "C196",
-      "C197",
-      "C198",
-      "C199",
-      "C200",
-      "C201",
-      "C202",
-      "C203",
-      "C204",
-      "C205"
-    ],
-    "result": "Activation of head BMNs elicits aimed grooming of specific head locations including eyes, dorsal head, and ventral head. While BM-InOm neurons were previously known to elicit eye grooming, this work shows other BMN types also elicit aimed grooming. The full range of grooming movements was not explored due to limitations of available driver lines, and the hypothesis that BM-Ant neurons elicit antennal grooming could not be tested.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C194-C205 describe the behavioral effects of BMN activation supported by optogenetic experiments in Figure 9. The acknowledgment of prior work on BM-InOm neurons (C196-C198) appropriately credits previous studies. The limitations regarding untested BMN types (C202, C205) and the inability to test BM-Ant neurons (C204-C205) are appropriately acknowledged. The conclusion that BMNs are important for aimed grooming (C201) is well-supported.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
-      "C211",
-      "C212",
-      "C213",
-      "C214",
-      "C215",
-      "C216",
-      "C217",
-      "C218",
-      "C219",
-      "C220"
-    ],
-    "result": "Multiple lines of evidence support the hypothesis that BMNs connect with parallel circuits that each elicit different aimed grooming movements: (1) cosine similarity analysis reveals parallel connectivity at the first postsynaptic layer, though with partial convergence among neighboring types, (2) prior optogenetic studies showed different neuron types elicit location-specific grooming, and (3) an antennal grooming circuit was previously identified that is postsynaptic to JONs and preliminary analysis suggests is also postsynaptic to BMNs. However, the resolution and specificity of these parallel circuits remains to be determined.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C211-C220 integrate multiple lines of evidence for parallel circuits including the current connectivity analysis (C212-C213), prior behavioral work (C215), and prior circuit identification (C216-C220). The evidence supports parallel organization while appropriately acknowledging partial convergence (C213) and the need for future work to determine circuit resolution (C214). The preliminary connectomic evidence linking BMNs to the antennal grooming circuit (C220) appropriately notes the data is not shown.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C152 are based on the parallel model framework from previous work and represent hypotheses about circuit function that have not been directly tested in the current study. Claims C153-C156 appropriately acknowledge that the role of BMNs in dust detection has not been directly demonstrated, with C154 citing negative results and C155 offering speculation about compensation. This represents an important area for future work.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C221",
-      "C222",
-      "C223",
-      "C224"
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
     ],
-    "result": "Activation of specific BMN types elicits grooming of both their corresponding bristle locations and neighboring locations, providing a means to clean the area surrounding the stimulus. NBLAST and cosine similarity analyses indicate neighboring BMNs project into overlapping SEZ zones and show common postsynaptic connectivity, leading to the hypothesis that neighboring BMNs connect with common neural circuits to elicit overlapping aimed grooming of common head locations.",
+    "result": "705 BMNs were identified and reconstructed from EM data, revealing somatotopic organization with three key features: each BMN type has unique branch morphology defining distinct SEZ zones, neighboring BMN types have partially overlapping projections, and projections either remain ipsilateral or cross the midline depending on bristle location.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C221-C224 integrate behavioral observations (C221) with anatomical and connectomic data (C223) to generate a hypothesis about circuit organization (C224). The behavioral data showing grooming spread to neighboring locations is well-supported by Figure 9. The anatomical and connectomic evidence for overlap among neighboring BMNs is well-supported by prior results. The hypothesis (C224) is appropriately presented as such and is a reasonable inference from the data.",
+    "evaluation": "Claims C157-C165 are all supported by EM reconstruction data and the matching process between EM and light microscopy data. The three features of somatotopic organization (C160-C164) are well-documented through comprehensive anatomical analysis. Claim C165 represents an appropriate synthesis of the EM reconstruction data.",
     "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
-      "C225",
-      "C226",
-      "C227",
-      "C228",
-      "C229",
-      "C230",
-      "C231"
-    ],
-    "result": "In addition to grooming, head BMNs elicit other movements including avoidance-like responses. Activation of BM-InOm neurons elicits backward motions, which were previously implicated but not described in detail. Backward motions are also elicited by dorsal head BMNs, and head nodding is elicited by posterior head BMNs. Avoidance responses to bristle stimulation have been reported in Drosophila and other insects, indicating BMNs across the head and body elicit both grooming and avoidance responses.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C225-C231 describe non-grooming behaviors elicited by BMN activation supported by behavioral data in Figure 9 and videos. The identification of backward motions and nodding as avoidance-like responses is supported by the behavioral observations and contextualized with prior work (C226, C230). The conclusion that BMNs elicit multiple behavioral outputs (C231) is well-supported by the data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C247",
-      "C248",
-      "C249",
-      "C250",
-      "C251",
-      "C252",
-      "C253"
-    ],
-    "result": "The parallel-projecting head BMNs are hypothesized to connect with postsynaptic circuits that perform additional functions to produce the grooming sequence. According to the parallel model, simultaneous activation by dust causes competition among movements, resolved through hierarchical suppression where earlier movements suppress later ones. Performance order is established by an activity gradient, proposed to be produced by controlling sensory gain among BMNs or through lateral inhibitory connections, with a winner-take-all network selecting the highest activity movement. This work provides the foundation for examining how BMN postsynaptic circuitry drives these functions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C247-C253 describe hypothesized mechanisms for sequence generation based on the parallel model framework. While the parallel model is well-established from prior work and the current anatomical data supports parallel organization, the specific mechanisms proposed (activity gradient, sensory gain control, lateral inhibition, winner-take-all) are speculative and not directly tested in this work. The claim that this work provides a foundation for future studies (C253) is appropriate, but the mechanistic details remain hypothetical.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C254",
-      "C255",
-      "C256",
-      "C257",
-      "C258",
-      "C259",
-      "C260",
-      "C261"
-    ],
-    "result": "BMNs are hypothesized to have roles in both eliciting and terminating movements in the grooming sequence through dust detection, with reduced BMN activity as dust is removed terminating the selected movement and allowing selection of the next movement. However, this has not been directly demonstrated, as blocking BM-InOm neurons does not reduce dust-induced head grooming, possibly due to compensation from neighboring mechanosensory neurons.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C254-C261 describe a hypothesis about BMN roles in sequence termination that is based on the parallel model framework but lacks direct experimental support. The negative result from blocking BM-InOm neurons (C259) actually argues against the hypothesis, though the proposed explanation of compensation (C260) is plausible. The acknowledgment that the presumed role remains to be demonstrated (C261) is appropriate given the lack of supporting evidence.",
-    "result_type": "MINOR"
   }
 ]

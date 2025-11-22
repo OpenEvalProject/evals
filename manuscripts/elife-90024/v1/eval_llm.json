@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript establishes the biological importance of aspartate metabolism through literature review. Aspartate is among the most concentrated metabolites in cells and is one of only two amino acids not predominantly acquired from the environment. Changes in aspartate levels are associated with modifications to cell function across multiple biological processes including stem cells, immune cells, endothelial cells, and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C15-C28 are well-supported by citations to prior literature. These claims establish the biological context and importance of aspartate metabolism, providing rationale for developing a biosensor. All claims are appropriately attributed to cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript identifies limitations of mass spectrometry-based metabolite measurement and advantages of biosensors. MS requires specialized equipment, is expensive, and homogenizes metabolic differences across cells and subcellular compartments. Biosensors provide subsecond and subcellular resolution for visualizing metabolite dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 accurately describe known limitations of MS and advantages of biosensors, supported by appropriate citations. These claims establish the motivation for developing jAspSnFR3 as an alternative measurement approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript describes the engineering strategy for jAspSnFR3 based on the iGluSnFR glutamate sensor. The GltI domain binds both glutamate and aspartate with lower affinity for aspartate. Through mutagenesis screening, S72A, S72P, and S72T mutations were identified as switching specificity from glutamate to aspartate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe the rational design approach and initial screening results. The strategy is well-justified based on the crystal structure and prior work on iGluSnFR. Experimental data from bacterial lysate screening supports the identification of specificity-switching mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C33",
+      "C37"
+    ],
+    "result": "The purified jAspSnFR3 protein exhibits a 20-fold increase in fluorescence upon aspartate saturation with dose-dependent changes covering a physiologically relevant concentration range. The sensor is yellow-shifted compared to typical GFP-based sensors and shows no significant off-target binding to other amino acids or metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C33, and C37 are supported by in vitro characterization data shown in Figures 1 and supplementary figures. The dose-response curves, spectral properties, and specificity testing provide strong evidence for the sensor's biochemical properties. Technical replicates and appropriate controls are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The mRuby3 fluorescence of purified jAspSnFR3-mRuby3 responds to some amino acids at high millimolar concentrations due to an unexpected interaction with the C-terminal histidine tag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 identify an artifact in the purified protein that was traced to the histidine purification tag. The authors appropriately characterized this issue and demonstrated it could be reproduced with other mRuby3-containing proteins with the same tag, establishing the source of the artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "jAspSnFR3 is unaffected by temperature up to 37\u00b0C and is sensitive to pH, though fluorescence changes from aspartate far exceed those from physiologically attainable pH changes. A concurrently developed sensor is adversely affected by temperatures above 30\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by experimental data in supplementary figures showing temperature and pH sensitivity. The comparison to the Hellweg et al. sensor is appropriately cited. The pH sensitivity is acknowledged as a known property of cpGFP-based sensors with data showing aspartate-induced changes exceed pH effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "24 hours of glutamine withdrawal abolished GFP signal in H1299 jAspSnFR3 cells while leaving RFP unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by the experimental observation shown in Figure 1C. This demonstrates that the sensor responds to metabolic perturbations in cells and that the RFP normalization control is stable, validating the approach for cellular measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Rotenone treatment causes a dose-dependent decrease in jAspSnFR3 sensor fluorescence in H1299 cells, which is partially restored by pyruvate co-treatment. Pyruvate can rescue aspartate levels after initial depletion with rotenone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by temporal imaging data in Figure 2B and supplementary figures. The dose-response to rotenone and pyruvate rescue are consistent with known effects on aspartate metabolism. Multiple cell lines show similar responses, strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "H1299 GOT1/2 DKO cells are unable to synthesize aspartate and depend on media uptake. In these cells, sensor fluorescence decreased upon aspartate withdrawal with steady state after ~11 hours. High concentrations (10 mM) of media aspartate cannot significantly rescue sensor signal, confirming poor cell permeability of aspartate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by genetic knockout validation (Western blot in Figure 2D) and temporal sensor measurements (Figure 2C). The poor permeability observation is consistent with cited prior work. The genetic system provides a clean test of the sensor's ability to detect aspartate depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Glutamine withdrawal causes rapid sensor fluorescence depletion reaching steady state after 12-16 hours. Glutamine repletion causes rapid initial increase followed by slower adjustment to baseline. Cells remain viable 12 hours after withdrawal and proliferation rates fully recover when aspartate reaches baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by temporal imaging data in Figure 2E and cell count/confluency measurements in supplementary figures. The multi-phase recovery kinetics are clearly documented. The correlation between aspartate levels and proliferation recovery provides biological validation of the sensor measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Metformin acts as a mitochondrial complex I inhibitor and decreases aspartate levels in a dose-responsive manner. Due to poor cell permeability, metformin's aspartate-depleting effects act slower than rotenone, with 2 mM metformin reaching similar sensor response as 30 nM rotenone but taking ~40 hours versus ~20 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by temporal comparison data in Figure 2F and appropriate citations for metformin's mechanism. The differential kinetics observation is novel and demonstrates the sensor's utility for comparing drug effects over time. The explanation based on permeability differences is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Oligomycin inhibits ATP synthase leading to hyperpolarization of mitochondrial membrane potential. The oligomycin-induced decrease in aspartate can be partially restored by the mitochondrial uncoupler BAM15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by experimental data in Figure 2G and appropriate citations for the mechanism. The BAM15 rescue experiment confirms prior observations using the new sensor, demonstrating its utility for validating known metabolic relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "During glutamine limitation, asparagine supplementation delays the decrease in sensor signal. Higher glutamine concentrations delay the time until aspartate depletion rather than maintaining higher aspartate levels. This suggests asparagine salvage diverts glutamine consumption from asparagine synthesis via aspartate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by temporal measurements in Figure 2H and supplementary figures. The interpretation (C70) is reasonable given the data, though it remains somewhat speculative. The temporal resolution of the sensor enables these kinetic observations that would be difficult with MS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72"
+    ],
+    "result": "When expressed in mammalian cell lines, jAspSnFR3 sensor intensity correlates with aspartate levels measured by MS across three cell lines, showing a monotonically increasing relationship covering two orders of magnitude. There is no correlation with intracellular glutamate levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C71-C72 are strongly supported by the correlation data in Figure 3 comparing sensor fluorescence to LCMS measurements across multiple treatments and cell lines. The lack of glutamate correlation (Figure 3 supplement 1) confirms specificity. This is a critical validation of the sensor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The apparent cytosolic aspartate concentration measured by the sensor is likely lower than the total aspartate concentration summed across all compartments measured by MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is explicitly stated as speculation by the authors. While the 17-fold discrepancy between in vitro Kd and apparent cellular half-max is noted, the explanation remains speculative. Compartmentalization could explain this, but direct evidence is lacking. Alternative explanations (protein binding, crowding effects) are mentioned but not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The time to reach metabolic steady state after treatment can be much longer than the 6-16 hours typically assumed in metabolomics studies and depends on the treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by multiple temporal measurements throughout the manuscript showing that different treatments (metformin, rotenone, glutamine withdrawal) reach steady state at different times, often exceeding 16 hours. This is an important practical finding for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "jAspSnFR3 differs from the concurrently developed Hellweg et al. sensor by 25 mutations. jAspSnFR3 achieved selectivity with only two binding pocket mutations by building from the iGluSnFR3 precursor. jAspSnFR3 appears to have larger signal change and is not adversely affected by 37\u00b0C, though it has higher affinity for all three ligands. Treatment with 1 mM asparagine has no discernible effect on sensor signal in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 provide appropriate comparison to concurrent work with proper citations. The differences in engineering approach and performance characteristics are clearly stated. The caveat about lack of head-to-head comparison (C80) is appropriately noted. The asparagine and glutamate specificity in cells (C81-C82) is experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "jAspSnFR3 can resolve temporal changes in intracellular aspartate from genetic, pharmacological, and nutritional manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are comprehensively supported by the full set of cellular experiments: genetic (GOT1/2 knockout), pharmacological (rotenone, metformin, oligomycin, BAM15), and nutritional (glutamine, aspartate, asparagine, pyruvate) manipulations all show clear temporal responses. This demonstrates the broad utility of the sensor.",
+    "result_type": "MAJOR"
+  }
+]

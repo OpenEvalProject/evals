@@ -6,14 +6,13 @@
       "C2",
       "C3",
       "C4",
-      "C5",
-      "C107"
+      "C5"
     ],
-    "result": "SY1 aggregates mature over time in yeast cells, transitioning from scattered small aggregates (Class 3, 96% at 4 hr) to large single inclusion bodies (Class 1, ~50% at 24 hr) when cells enter stationary phase after the diauxic shift.",
+    "result": "SY1 aggregates mature over time in yeast cells, transitioning from scattered small aggregates (Class 3, 96% at 4 hr) to large single inclusion bodies (Class 1, ~50% at 24 hr) when cells reach stationary phase after the diauxic shift.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C5 and C107 provide consistent quantitative data showing the time-dependent maturation of SY1 IBs with specific percentages at defined timepoints. Figure 1A-C provides visual and quantitative evidence supporting this temporal progression. The experimental design includes appropriate time-course monitoring and classification system.",
+    "evaluation": "Claims C1-C5 provide converging evidence from time-course imaging (C1, C2), quantitative phenotyping (C3, C4), and metabolic context (C5) that collectively demonstrate a maturation process of SY1 IBs. The data are internally consistent and supported by appropriate imaging and quantification.",
     "result_type": "MAJOR"
   },
   {
@@ -23,11 +22,11 @@
       "C7",
       "C8"
     ],
-    "result": "Old yeast cells exhibit dysregulated SY1 IB maturation compared to young cells, with increased proportion of cells containing IBs (61% vs 27%) and more IBs per cell (4.91\u00b13.32 vs 2.64\u00b11.29).",
+    "result": "Old yeast cells show dysregulated SY1 IB maturation, with increased proportion of cells containing IBs (61% vs 27%) and more IBs per cell (4.91\u00b13.32 vs 2.64\u00b11.29) compared to young cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6-C7 provide quantitative data with statistical analysis (Figure 1E-F) showing significant differences between young and old cells. C8 appropriately interprets this as dysregulation. The magnetic sorting method for isolating old cells is described in methods, though the definition of 'old' (\u22655 generations) could benefit from additional validation.",
+    "evaluation": "Claims C6-C7 provide quantitative data with statistical analysis showing significant differences between young and old cells. C8 appropriately interprets these findings as dysregulation. The magnetic sorting method for isolating old cells is established and the measurements are direct.",
     "result_type": "MAJOR"
   },
   {
@@ -35,15 +34,13 @@
     "claim_ids": [
       "C9",
       "C10",
-      "C11",
-      "C108",
-      "C109"
+      "C11"
     ],
-    "result": "A genome-wide screen identified 84 mutants with increased Class 3 SY1 inclusions, with SPT complex and SPOTS complex showing highest enrichment. Gene complementation in lcb1-4, lcb2-1, and tsc3-2 mutants rescued the IB maturation defect.",
+    "result": "A genome-wide screen identified 84 mutants with increased Class 3 SY1 inclusions, with SPT complex and SPOTS complex showing highest enrichment. Gene complementation rescued the phenotype in lcb1-4, lcb2-1, and tsc3-2 mutants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9-C11 describe the screening results with appropriate GO enrichment analysis (Figure 2B-C) and complementation experiments (Figure 2D-E). C108 confirms three independent replicates. C109 provides time-course validation. The screening criteria are clearly defined with statistical thresholds (p\u22640.05, \u226520% difference), and manual confirmation was performed.",
+    "evaluation": "Claims C9-C11 describe a systematic screen with appropriate validation. The identification of 84 mutants (C9), GO enrichment analysis (C10), and complementation experiments (C11) provide strong evidence. The complementation experiments are critical controls that validate the genetic findings.",
     "result_type": "MAJOR"
   },
   {
@@ -53,30 +50,19 @@
       "C13",
       "C14",
       "C15",
-      "C16"
+      "C16",
+      "C17",
+      "C18"
     ],
-    "result": "Sphingolipid synthesis regulates SY1 IB maturation in yeast. Myriocin inhibition of the SPT complex increases Class 3 IBs, while exogenous dihydrosphingosine (DHS) rescues both SPT mutant and myriocin-induced maturation defects.",
+    "result": "Sphingolipid synthesis regulates SY1 IB maturation in yeast. Disruption by myriocin or SPT mutations increases Class 3 IBs and causes growth defects, which are rescued by exogenous dihydrosphingosine (DHS).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12-C16 establish the sphingolipid pathway's role with pharmacological (myriocin) and rescue (DHS) experiments. Figure 3A-E provides supporting data. C12-C13 establish the conserved pathway and myriocin mechanism. C14-C16 demonstrate bidirectional effects with appropriate controls. The experiments include quantification and statistical analysis.",
+    "evaluation": "Claims C12-C18 provide comprehensive evidence through genetic (SPT mutants), pharmacological (myriocin), and rescue (DHS) approaches. The bidirectional manipulation (inhibition and rescue) strengthens the causal interpretation. The conservation of the pathway (C12) provides important context.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
-    "claim_ids": [
-      "C17",
-      "C18"
-    ],
-    "result": "SY1 expression causes severe growth defects in SPT mutants but not wild-type cells, and DHS supplementation rescues this cytotoxicity.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C17-C18 are supported by spot assay data (Figure 3F) showing differential growth effects and DHS rescue. This provides functional validation that sphingolipid deficiency enhances SY1 toxicity. The experimental design appropriately compares wild-type and mutant backgrounds.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
     "claim_ids": [
       "C19",
       "C20",
@@ -84,141 +70,166 @@
       "C22",
       "C23"
     ],
-    "result": "SY1 IBs are specifically associated with mitochondria (~80% of cells) but not with plasma membrane, vacuole, or ER. All three IB classes show equivalent mitochondrial association, which persists in myriocin-treated cells.",
+    "result": "SY1 IBs are strongly associated with mitochondria (~80% of cells) but not with plasma membrane, vacuole, or ER. This association is maintained across all three IB classes and under myriocin treatment, confirmed by super-resolution microscopy.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C19-C23 provide comprehensive co-localization data using multiple organelle markers (Figure 4A-B). The quantification shows specific mitochondrial association across all IB classes. C23 adds super-resolution microscopy validation (Figure 4C). The consistency across conditions and IB classes strengthens the conclusion.",
+    "evaluation": "Claims C19-C23 provide systematic co-localization analysis with multiple organelle markers (C19, C20), quantification across IB classes (C21), treatment conditions (C22), and high-resolution validation (C23). The convergent evidence from multiple approaches strongly supports the mitochondrial association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "SY1 physically interacts with mitochondrial membrane proteins Tom70, Tom37, and Tim44, and deletion of these proteins reduces SY1 IB association with mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide biochemical (Co-IP) and genetic (deletion mutants) evidence for physical interaction. The Co-IP demonstrates direct binding (C24), while the functional consequence in deletion mutants (C25) supports the biological relevance of these interactions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C24",
-      "C25",
       "C26",
-      "C27"
+      "C88",
+      "C97"
     ],
-    "result": "SY1 physically interacts with mitochondrial membrane proteins Tom70, Tom37, and Tim44. Deletion of these proteins impairs mitochondrial association of SY1 IBs and increases Class 3 aggregates, but mitochondrial activity is not required for IB maturation or mitochondrial association.",
+    "result": "The association of IBs with mitochondria may be a common feature among disease proteins, as TDP43, FUS1, and Htt103Qp IBs also interact with mitochondria.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C24-C26 are supported by co-IP data (Figure 4D) and microscopy analysis in deletion mutants (Figure 4E-F). C27 uses rho0 strain to demonstrate activity-independence. The physical interaction data combined with genetic perturbation provides strong mechanistic evidence. However, the lack of interaction with Sam35 (C24) is noted but not explained.",
-    "result_type": "MAJOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26, C88, and C97 suggest generality based on limited data from three additional proteins. While the observation is interesting, the evidence is preliminary (single figure supplement) without quantification or mechanistic validation. The claim of 'common feature' requires more extensive characterization.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C28",
-      "C104"
+      "C27"
     ],
-    "result": "IBs formed by other disease-related proteins (TDP43, FUS1, Htt103Qp) also associate with mitochondria, suggesting this may be a common feature of pathogenic protein aggregates.",
+    "result": "Mitochondrial activity is not required for SY1 IB maturation or mitochondrial association, as demonstrated in rho0 cells lacking functional mitochondria.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28 and C104 are supported by microscopy data (Figure 4\u2014figure supplement 2) showing mitochondrial co-localization for multiple proteins. However, the analysis is limited to visualization without quantification. The generalization (C104) is reasonable but would benefit from more extensive characterization of these additional proteins.",
+    "evaluation": "Claim C27 provides an important control showing that the mitochondrial association is independent of mitochondrial respiratory function. This distinguishes structural from functional requirements and is supported by appropriate imaging and quantification in rho0 cells.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
+      "C28",
       "C29",
       "C30",
       "C31",
       "C32",
       "C33",
-      "C34",
-      "C35"
+      "C34"
     ],
-    "result": "SY1 expression decreases mitochondrial membrane potential and cell viability in yeast. Myriocin treatment exacerbates this cytotoxicity while DHS ameliorates it, without altering SY1 protein levels. Deletion of TOM70 or TOM37 reduces SY1-induced mitochondrial toxicity.",
+    "result": "SY1 expression causes mitochondrial toxicity in yeast (decreased membrane potential and ATP levels), which is exacerbated by myriocin and ameliorated by DHS. Deletion of TOM70 or TOM37 reduces this toxicity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C35 provide comprehensive functional data linking sphingolipids to SY1 cytotoxicity. Figure 5A-C shows mitochondrial membrane potential and ATP measurements with appropriate controls. C32 and C34 confirm effects are not due to altered SY1 expression. C35 provides genetic validation. The bidirectional effects of myriocin and DHS strengthen the conclusion.",
+    "evaluation": "Claims C28-C34 demonstrate SY1-induced mitochondrial dysfunction (C28-C29) and its modulation by sphingolipid pathway manipulation (C30-C33) and mitochondrial protein deletion (C34). The controls showing no change in SY1 expression (C31, C33) are critical for interpretation. The convergent evidence supports a mechanistic link.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
+      "C35",
       "C36",
-      "C37",
-      "C38"
+      "C37"
     ],
-    "result": "In mammalian HEK293t cells, SY1 IBs are in close contact with mitochondria and cause decreased mitochondrial membrane potential and increased mitochondrial superoxide levels.",
+    "result": "In HEK293t cells, SY1 IBs associate with mitochondria and cause mitochondrial dysfunction (decreased membrane potential and increased superoxide).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36-C38 demonstrate conservation of SY1-mitochondria interaction and toxicity in mammalian cells. Figure 6A shows 3D reconstruction confirming close contact. Figure 6B provides functional measurements (JC-1 and MitoSOX) with statistical analysis. This extends the yeast findings to a mammalian system.",
+    "evaluation": "Claims C35-C37 demonstrate conservation of findings in mammalian cells. The 3D reconstruction (C35) and functional assays (C36-C37) parallel the yeast findings. This cross-species validation strengthens the biological significance of the observations.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
+      "C38",
       "C39",
       "C40",
       "C41",
       "C42"
     ],
-    "result": "SPTLC2 knockout in HEK293t cells impairs SY1 IB management, increasing dispersed irregular IB structures and cytotoxicity without altering SY1 expression. Gene complementation rescues these defects.",
+    "result": "SPTLC2 knockout in HEK293t cells alters SY1 IB morphology from predominantly spherical to dispersed irregular structures and increases IB number per cell. Gene complementation rescues these phenotypes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C39-C42 demonstrate the role of sphingolipid synthesis in mammalian cells using CRISPR/Cas9 knockout. Figure 6D-E shows altered IB morphology and increased cytotoxicity. C41 confirms no change in SY1 levels. C42 provides complementation validation (Figure 6\u2014figure supplement 2). The CRISPR approach is well-documented with sequencing confirmation.",
+    "evaluation": "Claims C38-C42 characterize IB morphology in mammalian cells and the effect of sphingolipid pathway disruption. The morphological classification (C38-C39), quantification in knockout cells (C40-C41), and complementation (C42) provide strong evidence. The complementation is a critical control.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
       "C43",
-      "C44",
-      "C45",
-      "C50"
+      "C44"
     ],
-    "result": "Pharmacological inhibition of sphingolipid synthesis by myriocin in HEK293t cells increases SY1 IB number and cytotoxicity, while exogenous DHS rescues this cytotoxicity without affecting SY1 expression.",
+    "result": "SPTLC2 knockout decreases mitochondrial function and cell viability without altering SY1 protein expression levels.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C45 and C50 provide pharmacological validation in mammalian cells paralleling the yeast experiments. Figure 7A-B shows mitochondrial membrane potential and ATP measurements. C45 confirms no change in SY1 expression. C50 quantifies increased IB formation. This demonstrates conservation of the sphingolipid-dependent mechanism.",
+    "evaluation": "Claims C43-C44 demonstrate functional consequences of SPTLC2 knockout. The control showing no change in SY1 expression (C44) is essential for ruling out indirect effects through altered protein levels. The functional assays are appropriate.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
+      "C45",
       "C46",
       "C47",
       "C48",
-      "C49"
+      "C49",
+      "C50"
     ],
-    "result": "DHS treatment of SPTLC2 knockout cells restores spherical SY1 IB morphology, normalizes IB number, and ameliorates cytotoxicity without affecting SY1 expression.",
+    "result": "In HEK293t cells, myriocin treatment increases SY1 IB number and enhances cytotoxicity, while DHS supplementation rescues cytotoxicity, without affecting SY1 expression levels.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C49 demonstrate DHS rescue in the genetic knockout background. Figure 7C-D shows morphological restoration and functional rescue with quantification. C49 confirms no change in SY1 levels. This provides strong evidence that sphingolipid intermediates directly regulate IB maturation and toxicity.",
+    "evaluation": "Claims C45-C50 demonstrate pharmacological modulation of sphingolipid pathway in mammalian cells parallels yeast findings. The bidirectional manipulation (inhibition and rescue) with appropriate controls for protein expression (C48, C50) provides strong evidence for causality.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90"
+      "C51",
+      "C52",
+      "C53",
+      "C54"
     ],
-    "result": "The authors propose that sphingolipids help cells reduce cytotoxicity of protein aggregates by regulating IB maturation through membrane-modulating functions, with SY1 IBs maturing by association with mitochondrial membranes.",
+    "result": "DHS supplementation in SPTLC2 knockout cells restores spherical IB morphology, normalizes IB number, and ameliorates cytotoxicity without affecting SY1 expression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C86-C90 represent interpretations and postulates based on the experimental data. While C86 is a reasonable inference from the rescue experiments, C87-C88 are explicitly stated as postulates. The mechanism by which sphingolipids regulate IB maturation (membrane modulation) is proposed but not directly demonstrated. Additional experiments examining membrane properties would strengthen this mechanistic claim.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate rescue of multiple phenotypes (morphology, number, toxicity) by DHS in knockout cells. The comprehensive rescue across multiple parameters with appropriate expression controls (C54) strongly supports the mechanistic role of sphingolipids.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C51",
-      "C52",
-      "C53",
-      "C54",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors propose that sphingolipids regulate IB maturation and detoxification through membrane-modulating functions, with SY1 IBs maturing by association with mitochondrial membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 represent the main conclusions synthesizing the experimental findings. While C82-C83 are explicitly stated as postulates, the extensive data from both yeast and mammalian systems (C84-C87) provide strong support for the model. The mechanism remains partially speculative but is well-grounded in data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
       "C55",
       "C56",
       "C57",
@@ -245,54 +256,20 @@
       "C78",
       "C79",
       "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C99",
-      "C100",
-      "C101",
-      "C102",
-      "C103",
-      "C105",
-      "C106"
-    ],
-    "result": "Background knowledge claims establishing the biological context for sphingolipids, SY1, inclusion bodies, mitochondrial dysfunction, and neurodegenerative diseases based on cited literature.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims (C51-C85, C99-C106) represent established knowledge from the literature with appropriate citations. They provide necessary context but are not novel findings of this study. The citations appear appropriate for the claims made, though verification of each cited source is beyond the scope of this review.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
+      "C89",
+      "C90",
       "C91",
       "C92",
-      "C93"
-    ],
-    "result": "In sphingolipid-rich endomembrane systems, SY1 aggregates tightly interact with mitochondria. Disruption of sphingolipid synthesis prevents this association, resulting in small dispersed aggregates and enhanced cytotoxicity including mitochondrial toxicity.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C93 summarize key findings from multiple experiments. C91 is supported by co-localization data. C92-C93 integrate results from myriocin treatment and genetic perturbations showing both morphological and functional consequences. These represent well-supported summary statements of the main findings.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
+      "C93",
       "C94",
       "C95",
-      "C96",
-      "C97",
-      "C98"
+      "C96"
     ],
-    "result": "In mammalian cells, pharmacological inhibition or genetic knockdown of the sphingolipid pathway alters SY1 IB morphology and increases cytotoxicity, which can be reversed by dihydrosphingosine supplementation.",
+    "result": "Background claims establishing prior knowledge about IBs, SY1, sphingolipids, mitochondrial dysfunction, and their roles in neurodegenerative diseases.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C94-C98 summarize the mammalian cell experiments demonstrating conservation of the sphingolipid-dependent mechanism. These are well-supported by the data in Figures 6-7 and represent appropriate summary statements of the mammalian validation experiments.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C55-C96 represent background knowledge and literature citations that provide context for the study. These are appropriately cited and establish the rationale for the experimental work. As background claims, they are supported by the cited literature.",
+    "result_type": "MINOR"
   }
 ]

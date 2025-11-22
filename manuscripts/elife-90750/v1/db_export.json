@@ -1,0 +1,2272 @@
+{
+  "submission": {
+    "id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:51:35.246858Z",
+    "updated_at": "2025-11-21T23:51:35.246858Z"
+  },
+  "content": [
+    {
+      "id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "content_type": "manuscript",
+      "content_text": "# Microphase separation produces interfacial environment within diblock biomolecular condensates\n\n## Authors\n\n- Andrew P Latham<sup>1</sup>\n- Longchen Zhu<sup>2</sup>\n- Dina A Sharon<sup>1</sup>\n- Songtao Ye<sup>2</sup>\n- Adam P Willard<sup>1</sup>\n- Xin Zhang<sup>2</sup> \u2020\n- Bin Zhang<sup>1</sup> ([ORCID: 0000-0002-3685-7503](https://orcid.org/0000-0002-3685-7503)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n2. Department of Chemistry, School of Science and Research Center for Industries of the Future, Westlake University Hangzhou China ([ROR:05hfa4n20](https://ror.org/05hfa4n20))\n3. Westlake Laboratory of Life Sciences and Biomedicine Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe phase separation of intrinsically disordered proteins is emerging as an important mechanism for cellular organization. However, efforts to connect protein sequences to the physical properties of condensates, that is, the molecular grammar, are hampered by a lack of effective approaches for probing high-resolution structural details. Using a combination of multiscale simulations and fluorescence lifetime imaging microscopy experiments, we systematically explored a series of systems consisting of diblock elastin-like polypeptides (ELPs). The simulations succeeded in reproducing the variation of condensate stability upon amino acid substitution and revealed different microenvironments within a single condensate, which we verified with environmentally sensitive fluorophores. The interspersion of hydrophilic and hydrophobic residues and a lack of secondary structure formation result in an interfacial environment, which explains both the strong correlation between ELP condensate stability and interfacial hydrophobicity scales, as well as the prevalence of protein-water hydrogen bonds. Our study uncovers new mechanisms for condensate stability and organization that may be broadly applicable.\n\n## Introduction\n\nBiological condensates are found in both the cytosol (Brangwynne et al., 2009; Folkmann et al., 2021; Patel et al., 2015; Ma and Mayr, 2018) and nucleus, (Feric et al., 2016; Larson et al., 2017; Strom et al., 2017; Sabari et al., 2018; Leicher et al., 2022; Latham and Zhang, 2022b), playing essential roles in a variety of cellular processes (Banani et al., 2017; Uversky, 2017) from stress response (Riback et al., 2017) to genome organization (Lin et al., 2021; Sabari et al., 2020). Similar to membrane-bound organelles, they assemble a collection of molecules to raise the efficiency of sophisticated tasks. The lack of a membrane barrier allows fast material exchange between condensates and the cellular environment, rendering the molecular composition and stability of condensates more prone to regulations by external signals (Hnisz et al., 2017; Riback et al., 2020; Klein et al., 2020).\n\nIntrinsically disordered proteins (IDPs) that promote multivalent, promiscuous interactions are key drivers of condensate formation (Hyman et al., 2014; Boeynaems et al., 2018; Abyzov et al., 2022). Multiple mechanisms, including electrostatic, cation-$\\pi$, $\\pi$-$\\pi$, hydrogen bonding, and hydrophobic interactions, contribute to the affinity among various chemical groups (Dignon et al., 2020; Das et al., 2020; Murthy et al., 2021). Above a threshold concentration, as predicted by the Flory\u2013Huggins theory (Flory, 1942), interactions among IDPs can drive liquid-liquid phase separation to produce a highly concentrated phase that nevertheless remains dynamic. The simplicity of theory, while insightful, may prove insufficient for a comprehensive understanding of biological condensates.\n\nMuch remains to be learned regarding the connection between amino acid sequences and protein phase behaviors, or the so-called \u2018molecular grammar\u2019 of protein condensates (Schuster et al., 2021; Choi et al., 2020; Wang et al., 2018; Schneider et al., 2019; Elbaum-Garfinkle et al., 2015; Kilgore and Young, 2022). These systems often exhibit complex viscoelastic behaviors and substructures with a layered organization (Latham and Zhang, 2022a; Mittag and Pappu, 2022; Kar et al., 2022; Wu and King, 2023), defying the mean-field assumption in the Flory\u2013Huggins theory. Several more advanced theories have been introduced to better account for long-lived structural features that might persist in the polymer network. The sticker and spacer model (Tanaka, 1989; Semenov and Rubinstein, 1998) has been adopted by Pappu and coworkers to account for strong and specific interactions that might form physical cross-links among protein molecules (Harmon et al., 2017). In the meantime, the block copolymer theory may explain the microphase separation that can lead to layered structures (Leibler, 1980; Bates and Fredrickson, 1990; Matsen and Schick, 1994; Matsen and Bates, 1996; Grason, 2006; Swann and Topham, 2010; Shi, 2021). Because of their inherent assumptions, different theories are more appropriate for some systems but not others. High-resolution structural characterizations of condensates could offer further insight into their organizational principles and the applicable theories.\n\nFurther decoding the condensate grammar could also benefit from studies of simpler systems. Natural proteins often utilize highly complex amino acid sequences, rendering the attribution of an individual residue\u2019s contribution to collective phenomena challenging. On the other hand, elastin-like polypeptides (ELPs), which are composed of pentapeptide repeats of valine-proline-glycine-X-glycine, serve as excellent models for studying protein phase behaviors. ELPs undergo phase separation upon heating with a lower critical solution temperature (LCST) (Urry, 1997; Rauscher and Pom\u00e8s, 2017; Baul et al., 2020; Cinar et al., 2019; Dignon et al., 2019). Importantly, the guest residue X can be modified to any amino acid except proline with modern engineering approaches (McDaniel et al., 2010), enabling systematic characterization of the impact on condensate stability and organization upon introducing specific residues.\n\nWe combine multiscale simulations with fluorescence lifetime imaging microscopy (FLIM) to probe condensates formed by diblock ELPs and investigate the contribution of amino acid composition to condensate stability. The simulation approach allows the sampling of large-scale conformational rearrangements while providing atomistic resolution to quantify the solvation environment of individual residues. It succeeds in reproducing the stability of condensates and reveals the formation of tubular network phases similar to gyroids. Such structures deviate from weak micelles that have been proposed for diblock ELPs in solution and result in heterogeneous microenvironments within the condensate, which we verify in vitro with FLIM. In addition, we find that the condensate stability exhibits a striking correlation with a hydrophobicity scale derived from interfacial transfer free energy, supporting an interfacial microenvironment of the condensate interior. The chemical specificity of the microenvironment is dictated by the peptide sequence that prevents a complete microphase separation between hydrophobic and hydrophilic groups. As a result, all condensates remain highly solvated after phase separation, producing water molecules that maintain hydrogen bonding with the exposed peptide backbone that persists even in residues with hydrophobic side chains. Our study takes a significant stride at connecting amino acid sequences with the structural and physical properties of biological condensates.\n\n## Results\n\n### Multiscale simulations of diblock ELP condensates\n\nDecoding the condensate grammar necessitates connecting protein sequences with collective physical properties. ELPs stand out because of their sequence simplicity and amenability for biological engineering, allowing systematic exploration and precise attribution of amino acid contributions. We focus on diblock ELPs of sequence (V-P-G-V-G)n-(V-P-G-X-G)n, which we abbreviate as VnXn (Figure 1A). The guest residue in the first block is set as valine to promote phase separation, and we explore 20 systems in which every natural amino acid is substituted into the X position in the second block.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig1-v1.jpg)\n\n**Figure 1.:** (A) Illustration of the sequence for the simulated diblock ELPs that consist of five-amino acid repeats, where X is substituted with a guest amino acid. (B) Overview of the three-step multiscale simulation approach that gradually increases the model resolution. Simulations of V5L5 were used to produce the example configurations at each step. Peptides are shaded red-white, while water molecules, chlorine, and sodium are colored in blue, green, and orange, respectively. Inserts of a G-V-G repeat and surrounding water molecules are shown to indicate the resolution of each model. (C) Correlation between the simulated surface tension ($\\tau$) of 20 ELP condensates and the transition temperatures ($T_{t}$) of related systems (Urry, 1997) $\u03c1$ is the Pearson correlation coefficient between the two data sets, and the dashed line is the best fit between simulation and experimental data. Error bars represent the SD of estimates from five independent time windows.\n\nWe adopt a multiscale approach to balance accuracy and efficiency for simulating ELP condensates (Figure 1B). The first stage of this strategy is to simulate condensate formation using a coarse-grained force field, MOFF (Latham and Zhang, 2021; Latham and Zhang, 2019; Latham and Zhang, 2020; Latham and Zhang, 2022c), with one bead per amino acid and implicit solvation. These simulations are highly efficient for system relaxation and promoting large-scale conformational rearrangements that occur over slow timescales. We further converted these $\\alpha$-carbon-based models to approximately four heavy atoms per bead resolution and introduced explicit water and ions for simulations with the MARTINI force field (Marrink et al., 2007). The latest version of this force field (MARTINI3) provides a more balanced set of parameters for protein-protein interactions and has been applied to study biological condensates (Souza et al., 2021; Thomasen et al., 2022; Benayad et al., 2021; Tsanai et al., 2021). These simulations further relax the protein configurations and the partition of water and counterions in condensed and dilute phases. Finally, we carried out explicit solvent all-atom simulations for 250 ns to produce an accurate characterization of the chemical environment of the condensates.\n\nUtilizing the simulated condensate conformations, we computed various quantities to benchmark against experimental measurements. While the critical temperature has been widely used as a measure for condensate stability, determining it computationally is expensive. As an alternative, we computed the surface tension, $\\tau$, using 100-\u03bcs-long MARTINI simulations performed with the NPNAT ensemble (Zhang et al., 1995). As detailed in the \u2018Supplemental theory\u2019 in Appendix 1, an inverse relationship is expected between $\\tau$ and the critical temperature, $T_{c}$, for systems exhibiting LCSTs. We further approximate $T_{c}$ with the transition temperatures ($T_{t}$) of ELP sequences (Urry, 1997), which are the temperatures at which ELPs undergo an LCST transition at a specified solution condition. $T_{t}$ was shown to be linearly proportional to $T_{C}$ (McDaniel et al., 2013; Meyer and Chilkoti, 2004). As expected, a negative correlation can be readily seen between computed surface tension and experimental $T_{t}$ (Figure 1C). This observed negative correlation between $T_{t}$ and $\\tau$ supports the simulation approach\u2019s accuracy in reproducing the sequence-dependent changes in ELP phase behavior.\n\nWe note that the experimental values were determined using different ELP sequences from those simulated here, and the relation between the surface tension and $T_{c}$ is likely nonlinear (Roe, 1975), both contributing to the imperfect agreement. In another study (Ye et al., 2024), we adopted the same multiscale approach to determine the dielectric constant for several ELP condensates. The simulated values agree well with those determined using FLIM experiments.\n\n### Microphase separation of ELP condensates\n\nUpon validating the accuracy of the simulation protocol for reproducing collective properties of ELP condensates, we examined their structural organization. Hassouneh et al. argued that, in dilute solutions, ELP diblocks self-assemble into the so-called weak spherical micelles with dense cores and almost unstretched coronas (Hassouneh et al., 2015). At phase separation conditions, whether similar structural features are preserved in condensates remains unclear.\n\nWe found that most ELP condensates undergo a microphase separation. Representative configurations for four typical systems from MARTINI simulations are shown in the top panels of Figure 2, with the V blocks in blue and X in red. Overall, the microphase separation manages to orient the more hydrophobic blocks toward the condensate interior as opposed to the interface. The relative density of guest blocks near the center of the condensate positively correlates with their hydrophobicity, as can be seen in both MARTINI (Figure 2\u2014figure supplement 1) and all-atom (Figure 2\u2014figure supplement 2) simulations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-v1.jpg)\n\n**Figure 2.:** The uppermost panels present representative configurations from MARTINI simulations for each system. Periodic images along the x and y dimensions are shown for clarity, and the condensate-water interface is perpendicular to the z-axis. Only proteins are shown, with the X- and V-substituted halves of the peptides shown in red and blue, respectively. The central panels show contact maps between amino acids from different peptides. The blue and red bars indicate the V- and X-substituted half of the peptides. The lower panels plot the radial distribution functions, $g(r)$, for amino acids only from the V-substituted half of the peptides (V5-V5), only from the X-substituted half of the peptides (X5-X5), and between the two halves (V5-X5). We limited the calculations to amino acid pairs from different peptides.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013T) The relative mass density along the Z-distance from the condensate center is shown for the V-substituted and X-substituted halves of each condensate. The Z-axis is defined as the direction perpendicular to the condensate-water interface. The dashed line represents a Z-distance of 0.06 box lengths away from the condensate center. Average density values below this threshold are used for correlation analysis in (U). Proteins are arranged by increasing $T_{t}$ (decreasing hydrophobicity) from Urry, 1997 with (A, V5W5) being the most hydrophobic and (T, V5E5) being the least hydrophobic. (U) Correlation between the mass fraction of the X5 half of the condensate and transition temperature ($T_{t}$) from Urry, 1997. $\u03c1$ is the Pearson correlation coefficient between the two data sets, and the dashed diagonal line is the best-fit line. Error bars represent SDs of the mean taken over six equally spaced box length intervals.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013T) The relative mass density along the Z-distance from the condensate center is shown for the V-substituted and X-substituted halves of each condensate. The Z-axis is defined as the direction perpendicular to the condensate-water interface. The dashed line represents a Z-distance of 0.06 box lengths away from the condensate center. Average density values below this threshold are used for correlation analysis in (U). Proteins are arranged by increasing $T_{t}$ (decreasing hydrophobicity) from , Urry, 1997 with (A, V5W5) being the most hydrophobic and (T, V5E5) being the least hydrophobic. (U) Correlation between the mass fraction of the X5 half of the condensate and transition temperature ($T_{t}$) from Urry, 1997. $\u03c1$ is the Pearson correlation coefficient between the two data sets, and the dashed diagonal line is the best-fit line. Error bars represent SDs of the mean taken over six equally spaced box length intervals.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The phases are labeled as body centered cubic (BCC), hexagonal cylinders (HEX), gyroid (GYR), and lamellar (LAM). $f_{A}$ is the volume fraction of a single polymer block, denoted A, $\u03c7$ is the Flory\u2013Huggins interaction parameter, and $N$ is the total degree of polymerization. Reproduced from Figure 3 from Swann and Topham, 2010 (CC BY 4.0).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The valine substituted half of the chain is colored blue (V5) and the X-substituted half of the chain is colored red (X5). To highlight the interpenetrating networks formed by the two halves, only the X-substituted half of the chain is shown on the left. Simulation interfaces are once repeated periodically in the positive x and positive y dimensions for clarity. High-density regions formed by the multiple X-substituted half of the chains are highlighted in yellow circles, with one of the chain shown in green.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** In each case, the uppermost panel is a periodic image of the simulated condensate. Only the protein is shown, with red highlighting the X-substituted half of the condensate and blue highlighting the V-substituted half of the condensate. The second panel from the top is condensate viewed from the simulation interface. The middle panel is the mass density from the condensate center for the V-substituted and X-substituted halves of each condensate. The second panel from the bottom is the radial distribution function g(r) for inter-chain coarse-grained beads, divided between the V5 half of the chain and X5 half of the chain. The bottom panel is the overall radial distribution function from the guest amino acid (X5), to those amino acids native to the ELP sequence.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** The blue bar highlights the V5 half of the condensate, while red bar highlights the X5 half. Proteins (A-T) are arranged by increasing $T_{t}$ (decreasing hydrophobicity) from Urry, 1997 with (A, V5W5) being the most hydrophobic and (T, V5E5) being the least hydrophobic.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Radial distribution functions $g(r)$ from MARTINI simulations support the microphase separation of different elastin-like polypeptide (ELP) blocks.Amino acids from the V5 and X5 half of the ELP peptide are partitioned into two blocks, and we used distances within and across the blocks to compute $g(r)$. Distances between amino acids from the same peptide are excluded from computations. Proteins (A-T) are arranged by increasing $T_{t}$ (decreasing hydrophobicity) from Urry, 1997, with (A, V5W5) being the most hydrophobic and (T, V5E5) being the least hydrophobic.\n\nSurprisingly, microphase separation did not produce lamellar morphology as expected for block copolymers with equal volume fraction of the two blocks (Figure 2\u2014figure supplement 3; Bates and Fredrickson, 1999; Mai and Eisenberg, 2012; Zhulina et al., 2005; Leibler, 1980; Bates and Fredrickson, 1990; Matsen and Schick, 1994; Matsen and Bates, 1996; Grason, 2006; Swann and Topham, 2010; Shi, 2021). In particular, the condensates appear to form gyroid-like structures, in which the V and X blocks form two interpenetrating networks (Figure 2\u2014figure supplement 4). This morphology also differs from micelle-like structures seen in simplified hydrophobic-polar (HP) polymers (Statt et al., 2020; Wess\u00e9n et al., 2022). It promotes interfacial contacts while maintaining substantial self-interactions as well. Weak interfacial tension between different ELP blocks has also been noted by Hassouneh et al., 2015. These qualitative observations are insensitive to the polymer length and system size in our simulations (Figure 2\u2014figure supplement 5). While longer diblock copolymers drive more prominent microphase separation, similar gyroid structures can also be observed. Notably, for more hydrophilic X blocks, the condensates begin to dissolve into a collection of micelle-like structures, consistent with the predictions by Hassouneh et al. in dilute solutions (Hassouneh et al., 2015).\n\nQuantitative characterization of the condensate interior supports the presence of interpenetrating networks with substantial interfacial contacts as well. For example, significant contacts between V and X blocks can be readily seen in the inter-chain contact maps (Figure 2, Figure 2\u2014figure supplement 6). We further computed the radial distribution functions for amino acids in various blocks (Figure 2, Figure 2\u2014figure supplement 7). For all systems, we found that the probability of finding cross-block contacts V-X is often comparable to the intra-block contacts between X-X or V-V, depending on the relative hydrophobicity of V and X. For example, the more hydrophobic F blocks exhibit strong self-clustering, much more prominent than V-V blocks that are comparable to V-F blocks. On the other hand, clustering among V-V blocks and V-A blocks is more substantial than among A-A blocks. These results are again robust with respect to system setups (Figure 2\u2014figure supplement 5).\n\nTo experimentally test the microphase separation behavior uncovered in simulations, we studied the micro-physicochemical properties of the V-end and X-end of the peptides. We constructed diblock peptides with the combination of 30 pentameric repeats of V block and X (A or G) block, namely V30A30 and V30G30 (\u2018Experimental sequences\u2019 in Appendix 1). The amino-termini of V30A30 and V30G30 sequences were subsequently labeled with environmentally sensitive BODIPY or SBD fluorophores (Liu et al., 2017; Shen et al., 2023), whose lifetime could be measured to quantify the viscosity or polarity of the V-end (Figure 3A, left panel) (Chambers et al., 2018). These probes have been reported to be only sensitive to single physicochemical properties (Ye et al., 2024; Shen et al., 2023). To avoid artifacts induced by fluorophore labeling, we usually used ELPs labeled with a low fraction of dyes. We also constructed A30V30 and G30V30 diblock peptides, wherein the viscosity or polarity of the A-end or the G-end could be measured by fluorophores that are attached at the amino-terminus (Figure 3A, right panel).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig3-v1.jpg)\n\n**Figure 3.:** (A) Reversible ELP condensates formation via changing temperature. NHS ester fluorophores are attached at the amino-termini of V30X30 and X30V30 to detect the different micro-physicochemical properties between the V-end and the X-end. (B) Structures of NHS-BODIPY and NHS-SBD, and FLIM images of V30A30, A30V30, V30G30, and G30V30 labeled with respective fluorophores. The fluorescence lifetime of each image is the average acquired from three independent experiments. Scale bar: 5 \u03bcm. (C) Schematic diagram of optical tweezers stretching experiment. (D) Bright-field images of V30A30 and A30V30 in the stretching experiment using the optical tweezer. Scale bar: 2 \u03bcm. (E) Normalized droplets fluorescence intensity changes while stretching (red curve: V30A30; blue curve: A30V30). Fifteen droplets (at size \u223c4 \u03bcm) were imaged and used for statistical analysis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Experimental $T_{t}$ of elastin-like polypeptide (ELP) sequences.The $T_{t}$ diagram of (A) V30A30, (B) A30V30, (C) V30G30, and (D) G30V30. The turbidity was measured in the NaCl solution with different concentrations for V30A30 and A30V30 and in (NH4)2SO4 solution with different concentrations for V30G30 and G30V30. The heat-up rate is 0.5\u00b0C/min, and absorbance data were collected every 0.5\u00b0C.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Chemical structure of free fluorophore, which can measure the physicochemical properties of condensates without labeling. (B) Representative FLIM images of V30A30 and A30V30. The mix is the mixture of V30A30 (35 \u03bcM) and A30V30 (35 \u03bcM). Droplets were formed with a final concentration of 70 \u03bcM ELP in 2 M NaCl solution with 1 \u03bcM fluorophore. (C) Representative FLIM images of V30G30 and G30V30. Droplets were formed with a final concentration of 70 \u03bcM ELP in 1.5 M (NH4)2SO4 solution with 1 \u03bcM fluorophore. The mix is the mixture of V30G30 (35 \u03bcM) and G30V30 (35 \u03bcM). Scale bar, 5 \u03bcm. The fluorescence lifetime of each image is the average from three independent measurements.\n\nUsing FLIM, we found that the lifetime of BODIPY for the V-end (5.43 ns) was longer than that for the A-end (4.35 ns), suggesting that the V-end indeed has a higher microviscosity than the A-end (\u03b7V = 2233.54 cp vs \u03b7A = 969.57 cp). Accordingly, the lifetime of SBD was longer for the V-end (8.75 ns) than the A-end (7.00 ns), indicating that the micropolarity of the V-end was lower than the A-end (\u03f5V=13.25 vs \u03f5A = 18.97). These observations could be largely attributed to the greater extent of dehydration at the V-end due to its higher local peptide density. We further showed that the observed differences are not results of possible artifacts arising from any subtle distinctions between the two sequences V30A30 and A30V30 (\u2018Experimental characterization of ELP condensates\u2019 in Appendix 1, Figure 3\u2014figure supplements 1 and 2). Similar results were observed using the V-G sequences. FLIM experiments revealed that the V-end was more viscous than the G-end (\u03b7V=2972.72 cp vs \u03b7G = 1958.60 cp) and the V-end was less polar than the G-end (\u03f5V=9.14 vs \u03f5G = 27.50). These experimental observations provided the first line of evidence to support the microphase separation, as suggested by the simulation results. It is worth noting that the reported values, although related, may not quantitatively represent the steady-state viscosity. This discrepancy arises from the slow relaxation timescale inherent in ELP condensates with viscoelastic properties.\n\nTo further investigate these phenomena in real time in motion, optical tweezers were used to stretch the droplet to observe the viscosity changes of different blocks. A single diblock condensate was captured by two optical traps (traps 1 and 2) at the same position, and it was stretched as trap 1 moved away from the original position (Figure 3C and D). We used the peptides V30A30 and A30V30, with BODIPY labeled at their amino-terminus, to study the microviscosity changes where the fluorescence intensity decreases as the viscosity decrease. We found that the normalized fluorescence intensity of the V-end decreases greater than the A-end, indicating that the viscosity change of the V-end is larger (Figure 3E). We anticipate that during stretching condensates deform and molecules may deviate from the preferred chemical environment established with microphase separation. Such deviations impact the hydrophobic segments more, leading to more significant reduction in their interactions with surrounding molecules and correspondingly their viscosity.\n\n### Frustration produces condensate interior with interfacial properties\n\nThe strong dependence of molecular organization on amino acid hydrophobicity suggests that the solvation environment of individual residues might be a determining factor for condensate stability. Indeed, as shown in the \u2018Supplemental theory\u2019 of Appendix 1, the critical temperature is closely related to the free energy cost of transferring polymer beads from a solution state to a polymer-only environment. This transfer free energy is often used to quantify the hydrophobicity of amino acids (Regy et al., 2021; White, 1996; Wimley et al., 1996; Wilce et al., 1995; Zimmerman et al., 1968; Radzicka and Wolfenden, 1988; Lawson et al., 1984). To explore their relationship more quantitatively, we compared the transition temperature for ELP condensates measured by Urry, 1997 to several hydrophobicity scales. Figure 4A shows that water-octanol and water-POPC interface transfer free energies best correlate with the transition temperature. Meanwhile, other hydrophobicity measures, even including those derived specifically for disordered proteins, do not match as well. We note that our conclusion here is not dependent on the limited number of hydrophobicity measures examined in this study, and can be seen in a previous clustering of 98 different hydrophobicity scales (Simm et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig4-v1.jpg)\n\n**Figure 4.:** (A) Pearson correlation coefficient, $\u03c1$, between the stated measure of hydrophobicity and the condensate transition temperature, $T_{t}$, measured by Urry, 1997. To remove discrepancies in which end of the scale is hydrophobic and which end is hydrophilic, all hydrophobicity scales, including the Urry scale, are first normalized such that 1 corresponds to the most hydrophobic residue and 0 corresponds to the least hydrophobic residue. Hydrophobicity measures considered include experimental measures of water-solvent transfer free energies water-1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine [POPC]-interface (White, 1996), water-octanol1 (Wimley et al., 1996), water-octanol2 (Wilce et al., 1995), water-ethanol (Zimmerman et al., 1968; Wilce et al., 1995), water-cyclohexane (Radzicka and Wolfenden, 1988), and water-N-cyclohexyl-2-pyrrolidone [CHP] (Lawson et al., 1984), atomic level analysis of moieties within amino acids (Kapcha and Rossky, 2014), computational approaches to estimate hydrophobicity within disordered proteins (IDPs1 Tesei et al., 2021 and IDPs2 Dannenhoffer-Lafage and Best, 2021), bioinformatics techniques that approximate the burial propensity, or relative solvent accessibility (RSA) of amino acids (RSA1 Rose et al., 1985 and RSA2 Tien et al., 2013), and a method that mixed protein burial fraction with water-vapor transfer free energy (RSA/water-vapor Kyte and Doolittle, 1982). The red box highlights the high correlation between $T_{t}$ and water-octanol or water-POPC interface transfer free energies. (B, C) Condensate organization from MARTINI simulations for V5F5 (B) and V5A5 (C). The top panels provide protein-only views for simulated condensates, with the guest residue X, glycine adjacent to the guest residue, and the remaining residues colored red, green, and blue, respectively. Condensate images are repeated periodically in the x/y plane. The bottom panel shows the overall radial distribution function from the guest amino acid to those amino acids native to the ELP sequence.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Residue-specific radial distribution function $g(r)$ from MARTINI simulations.Distances from the guest amino acid (X) to those amino acids native to the elastin-like polypeptide (ELP) sequence were used to compute $g(r)$. Substituted amino acids that also appear in the native sequence are differentiated from their native counterparts using a star (*). Proteins (A-T) are arranged by increasing $T_{t}$ (decreasing hydrophobicity) from Urry, 1997, with (A, V5W5) being the most hydrophobic and (T, V5E5) being the least hydrophobic.\n\nThe correlation analysis of the Urry transition temperature with various hydrophobicity scales supports a unique chemical environment emerging from the collective behaviors of condensates. To better understand the microenvironment surrounding guest residues in X blocks, we computed the radial distribution functions using MARTINI simulations. As shown in Figure 4B and C, Figure 4\u2014figure supplement 1, the guest residues are immediately surrounded with hydrophilic glycine residues as the nearest neighbors. In the second shell, more hydrophobic valine and proline residues appear. These profiles reveal the interfacial nature of the chemical environment surrounding the guest residues consisting of both hydrophobic and hydrophilic amino acids. This interfacial solvation environment is consistent with the strong correlation of the Urry scale with water-POPC interface transfer free energy. Therefore, ELP condensates do not simply feature a hydrophobic interior that separates from hydrophilic residues as seen for folded proteins, and hence the poor correlation shown in Figure 4A with the burial propensity of amino acids (RSA1, RSA2).\n\nThe ELP peptide sequences partly dictate the interfacial environment. For example, the guest residues are juxtaposed between two glycine residues in the pentamer (Figure 1A), creating the immediate shell of hydrophilic residues. However, the presence of valine in the pentamer prevents the movement of GXG motifs to the interface due to the clustering of hydrophobic residues that prefer the condensate interior. Therefore, while microphase separation occurs in ELP condensates, frustration remains in the system. Hydrophilic residues cannot completely separate from hydrophobic ones due to constraints imposed by the amino acid sequence, creating unique microenvironments. Such a microenvironment arises from the collective behavior of many proteins and can deviate from individual chains (Wei et al., 2017), explaining the less-than-ideal correlation between the Urry scale and the hydrophobicity scales optimized to reproduce the conformational ensemble of IDP monomers.\n\n### Solvation environment from atomistic simulations support interfacial properties\n\nThe interfacial environment uncovered in the previous section suggests the presence of significant solvation in the condensate interior. For condensates with lower surface tension, such as V5G5, the protein density near the center of the condensate is only around \u223c30%. Even for the stable condensates with high surface tension, such as V5F5, the protein density near the center only reaches \u223c70%. The relative density of protein, water, and ions in different systems generally follows the trend observed for the transition temperature (Appendix 1\u2014figures 1 and 2).\n\nThe large water mass fractions in the condensates prompt the question of the extent to which water is engaged in meeting the protein\u2019s hydrogen bonding requirements.We determined the average number of hydrogen bonds per residue with ELP residues or water from extensive atomistic simulations. As shown in Figure 5A, over 75% of the hydrogen bonds are between protein and water in all of the condensates. Prior work on a different ELP condensate (Rauscher and Pom\u00e8s, 2017) similarly indicated that water-protein hydrogen bonds constitute most of the hydrogen bonds found in the system. This finding highlights that ELPs, lacking noticeable secondary structures (Figure 5\u2014figure supplement 1), are less capable of meeting its own hydrogen bonding needs, compared to folded proteins (Sticke et al., 1992). Therefore, high water concentration within the condensate is crucial to fulfilling the protein\u2019s hydrogen bonding requirements.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig5-v1.jpg)\n\n**Figure 5.:** (A) Bar chart depicting the average number of protein-water (PW, in green) and protein-protein (PP, in red) hydrogen bond (HB) per residue for each condensate system. The x-axis presents the guest residue of the system and is ordered by the Urry scale. Error bars represent SDs of four independent estimates. (B) Water HB density for each of the 20 condensates, for three different residue selections. The metric is shown for all residues in the system (blue), guest residues (purple), and glycine residues adjacent to the guest residue in the sequence (orange). The x-axis presents the guest residue of the system and is ordered by the Urry scale. Error bars represent SDs of four independent estimates. (C) Correlation coefficients of the water HB density shown in (B) with Urry $T_{t}$. (D) Schematics depicting two systems with low (i) and high (ii) water hydrogen bond density. The protein is depicted as blue and orange lines, and the water molecules are depicted as purple circles. Protein-protein and protein-water hydrogen bonds are drawn as red and green dashed lines respectively. (E) Visualizing hydrogen bond density with illustrative snapshots for V5F5 (i) and V5G5 (ii) condensate. Side chain carbon atoms are shown in purple. Water molecules near the protein are explicitly depicted, with oxygen and hydrogen atoms colored in red and white. Water molecules hydrogen bonded to the protein are depicted as spheres (with hydrogen bonds shown in green lines).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Secondary structure is defined according to the DSSP algorithm (Touw et al., 2015; Kabsch and Sander, 1983). We consider \u03b1-helices, \u03b2-sheets, \u03b2-bridges, and turns as ordered, and display the total fraction of all these secondary structure elements for each simulated condensate.\n\nStrikingly, given the importance of water molecules, the average number of hydrogen bonds per residue remained relatively constant across condensates, even when the amount of water inside the condensate varied by almost two folds. Therefore, we hypothesize that each water molecule in more hydrophobic condensates must engage more in hydrogen bonding than each water in hydrophilic condensates. To test this hypothesis, we determined the water hydrogen bond density, defined as the ratio of the number of protein-water hydrogen bonds divided by the total number of water molecules near the condensate (Figure 5D and E). As shown in Figure 5B and C, the water hydrogen bond density indeed negatively correlates with the condensate transition temperature, $T_{t}$, supporting our hypothesis that more hydrophobic condensates would have a higher hydrogen bond density.\n\nThe water hydrogen bond density also highlights an interfacial environment of blended hydrophobic and hydrophilic regions. For example, when we limit the analysis to water molecules near the guest residues, X, the hydrogen bond density now becomes positively correlated with $T_{t}$. Therefore, locally, protein-water interactions are strongly influenced by the chemistry of side chains, and water molecules have fewer hydrogen bonding opportunities with more hydrophobic residues. However, the opposite trend is observed for the hydrogen bond density near glycine residues that immediately surround the guest residues. Therefore, the exposed backbones retain water molecules even when hydrophobic side chains do not provide hydrogen bonding opportunities, and the inseparability between the two further contributes to the observed interfacial property of condensates.\n\nAs a complementary measure of the solvation environment of individual residues, we computed the relative solvent accessibility (RSA) for the guest amino acids using atomistic simulations (Figure 6A and B). The RSA measures the solvent-accessible surface area (SASA) normalized by the maximum possible solvent exposure. RSA values in ELP condensates are much lower than those computed from all-atom simulations of ELP monomers, consistent with the increase of polymer density upon phase separation. However, they are almost always higher than the values estimated for folded proteins due to many water molecules roaming inside the condensates (Tien et al., 2013). Therefore, while ELP condensates provide a mechanism to shield hydrophobic amino acids from solvent, they are less effective in doing so than folded proteins.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig6-v1.jpg)\n\n**Figure 6.:** (A) Zoom-in view of a single peptide chain (red) from atomistic simulations of V5A5 condensate (left) and monomer (right). Atoms within 1 nm of the peptide are shown, including water (cyan), chlorine (green), sodium (orange), and protein atoms from other chains (gray). (B) Relative solvent accessibility (RSA) of guest residues estimated from atomistic simulations of condensates (blue) and monomers (orange). For comparison, the corresponding values estimated using folded proteins are included as purple dots (Tien et al., 2013). Error bars represent the SD of four independent time estimates. (C) Comparison of the radius of gyration ($R_{g}$) for peptides estimated from atomistic simulations of condensates (blue) and monomers (orange). The dashed line represents the expected $R_{g}$ of an ideal chain, utilizing values that have been previously suggested for intrinsically disordered proteins (IDPs) (Hofmann et al., 2012; Dignon et al., 2018a). Error bars represent the SD of four independent time estimates.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90750/elife-90750-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** $R_{g}$ of individual peptide blocks from MARTINI (A) and atomistic (B) simulations.V5 represents the valine block, while X5 represents the guest block. Error bars represent SDs of the mean over four independent time windows. The dashed lines represent different values of polymer scaling exponents, with $\u03bd=0.5$ corresponding to an ideal chain and $\u03bd=0.6$ corresponding to a swollen polymer chain. Values previously suggested for intrinsically disordered proteins (IDPs) were used in calculation of the scaling exponent (Hofmann et al., 2012).\n\nWhile the amino acid RSA values increase upon phase separation, unlike protein folding, the increase does not result from polymer collapse. We observe a significant expansion for almost all the studied peptides upon condensation, supporting the notion that water is a poor solvent for ELP (Figure 6C). The expansion is most evident for more hydrophobic ELPs, the radii of gyration of which are now comparable to that of an ideal Gaussian chain. Notably, the sizes of the two separate peptide blocks are similar in most systems, supporting an interfacial environment that can accommodate both hydrophobic and hydrophilic residues (Figure 6\u2014figure supplement 1).\n\n## Discussion\n\nWe carried out multiscale simulations to elucidate the connection between protein sequences and emergent properties of ELP condensates. The multiscale approach overcomes challenges in sampling slow conformational rearrangements to produce equilibrium atomistic condensate configurations. The simulations successfully reproduced condensate stability variation upon amino acid substitution. While our study is performed at set salt concentration and temperature to isolate the contributions of amino acid hydrophobicity to condensate organization, future studies may consider implementing temperature (Dignon et al., 2019) or salt (Wohl et al., 2021)-dependent models to explore how solution conditions affect the organization of ELP condensates.\n\nWe found that diblock ELPs undergo microphase separation, with the more hydrophobic blocks localizing toward the condensate interior. The more hydrophobic blocks increase the local protein density, resulting in higher viscosity and lower dielectric constants, as determined in FLIM experiments. In contrast to the interior of folded proteins, these blocks are significantly solvated with water occupying over 30% of mass density. Unlike the weak micelles formed in solution (Hassouneh et al., 2015), ELP condensates exhibit gyroid-like morphologies that promotes contacts between blocks. Further studies on the thermodynamic stability of these morphologies and comparing with predictions from the self-consistent field theory shall provide more insights into the driving forces for their emergence.\n\nOur study uncovered a remarkably simple grammar for determining the stability of ELP condensates. A single quantity specific to the guest residue suffices to predict the emergent properties of the condensate, as evidenced by the strong correlation of the transition temperatures with the transfer free energies. The lack of higher-order effects is striking, supporting a mean field approximation to account for the contribution of individual residues in the system. However, the hydrophobicity scale is itself sensitive to the local microenvironment that is sequence specific. Such a microenvironment arises from the collective behavior of many proteins, can deviate from that of individual chains, and is likely sensitive to the solution conditions (Welsh et al., 2022), which are held constant in our study. Future work on systems with double amino acid substitutions or changes to salt concentration or temperature could elucidate the generality of the mean field interpretation and the additivity of individual contributions.\n\nWhile the transferability of the extracted rule for condensate stability to other systems remains to be shown, there are reasons to be hopeful. For instance, we anticipate that the microphase separation that produces the interfacial properties is a general principle for condensate organization. For most IDPs, the hydrophobic and hydrophilic residues are often interspersed throughout the chain to prevent the collapse of individual proteins (Martin et al., 2020; Zheng et al., 2020) and, correspondingly, the complete phase separation as in the lamellar phase. In addition, the hydrophilic backbones are expected to be exposed due to a lack of secondary structure formation, contributing to the interfacial property in the presence of hydrophobic side chains. As such, we anticipate that future research will discover the broad presence of interfacial environments within microphase separated motifs, as observed here.\n\n## Methods\n\n### Molecular dynamics simulation details\n\nTo better understand the properties of biological condensates, we performed simulations on 40 diblock ELPs with the sequence (V-P-G-V-G)n-(V-P-G-X-G)n. We set $n=5$ to balance computational efficiency and polymer topological effects. As shown in Figure 2\u2014figure supplement 5, the results presented in the main text are qualitatively robust with respect to the system size and peptide length.\n\nThe multiscale simulations of ELP condensates started with an implicit solvent model, MOFF (Latham and Zhang, 2021), and a similar homopolymer model, to generate initial configurations for each system. Next, we converted the \u03b1-carbon-only configurations into those consistent with the MARTINI force field (Souza et al., 2021) for coarse-grained, explicit solvent simulations. These simulations measured the coexistence between the condensate and solvent, lasted for 100 \u03bcs, and were conducted in the NPNAT ensemble. Finally, we converted the MARTINI configurations into atomistic structures for simulations with CHARMM36m (Huang et al., 2017) force field, with protein-water interactions shifted to better characterize IDPs. Atomistic simulations were conducted in the NPNAT ensemble and lasted 250 ns. All simulations were conducted using the software GROMACS (Berendsen et al., 1995) and are described in detail in \u2018Condensate simulation details\u2019 in Appendix 1.\n\nIn addition to the condensates, we performed atomistic simulations of ELP monomers. These simulations began from RoseTTAFold predictions of the peptide structure (Baek et al., 2021; Bonneau et al., 2001) and lasted for 1 \u03bcs in the NPT ensemble. Full details are available in \u2018Monomer simulation details\u2019 in Appendix 1.\n\n### Analysis of condensate simulations\n\n#### Surface tension\n\nIn explicit solvent simulations, two coexisting phases are present, in which proteins form a dense slab in the x-y plane, and the solvent creates a dilute phase in the z-dimension (Dignon et al., 2018b; Ladd and Woodcock, 1977). We controlled the pressure normal to the protein-solvent interface by performing simulations in the NPNAT ensemble (Zhang et al., 1995). The surface tension ($\\tau$) was calculated from these simulations as\n\n$$\n\\tau=\\frac{L_{z}}{2N}\u2217(P_{ZZ}\u2212\\frac{1}{2}(P_{XX}+P_{YY})),\n$$\n\nwhere $L_{z}$ is the length of the Z-dimension and $N$ is the number of protein droplets. $P_{XX}$, $P_{YY}$, and $P_{ZZ}$ are the components of the pressure tensor along the three axes.\n\n#### Clustering\n\nSince the condensate can diffuse along the z-axis, that is, the direction perpendicular to the interface, we aligned the simulated configurations using the position of the largest cluster of peptide molecules. To find the largest cluster, we first computed a center of mass contact matrix between peptide molecules with a distance cutoff of 4 nm. Then, using a depth first search algorithm (Tribello et al., 2017), we identified the size and location of the largest protein cluster. The system was then shifted such that the z coordinate of the center of mass of the largest cluster is at zero. We implemented the alignment using the software MDAnalysis (Gowers et al., 2016; Michaud-Agrawal et al., 2011).\n\n#### Contact map\n\nProtein contact maps were calculated using a cutoff distance of 0.6 nm. Specifically, two residues were defined as in contact if any pair of their coarse-grained beads were within 0.6 nm.\n\n#### Radial distribution function\n\nRadial distribution functions were calculated using the InterRDF function of MDAnalysis between 0.00001 nm and 2 nm. For analyzing the microphase separation of each condensate, we divided each protein into the V-substituted blocks and X-substituted blocks. This radial distribution function excluded intra-chain contacts to better capture how inter-chain contacts determine condensate organization. To analyze the origin of chain frustration within diblock phase separation, we computed the radial distribution function of each guest amino acid to the amino acids native to the sequence. Intra-chain contacts were included to fully capture the local environment experienced by the guest amino acid.\n\n#### Relative solvent accessibility\n\nThe relative solvent accessibility (RSA) was measured based on the SASA of guest amino acids determined from all-atom simulations. We first calculated the SASA for each residue using GROMACS tools sasa, with a probe radius of 0.14 nm (Eisenhaber et al., 1995). We then averaged across all repeats of guest amino acids and normalized the SASA by the maximum possible value for a given amino acid to compute RSA (Tien et al., 2013; see Appendix 1\u2014table 1).\n\n#### Radius of gyration\n\nThe estimated $R_{g}$ from atomistic simulations were compared to the following analytical expression (Hofmann et al., 2012):\n\n$$\nR_{g}=\\sqrt{\\frac{2l_{p}b}{(2\u03bd+1)(2\u03bd+2)}}N^{\u03bd},\n$$\n\nwhere $N$ is the length of the polymer, $b=0.38$ nm is the bond length, and $l_{p}=0.40$ nm is the persistence length.\n\n#### Secondary structure\n\nSecondary structure for protein condensates was calculated from atomistic simulations using the GROMACS do_dssp command (Touw et al., 2015; Kabsch and Sander, 1983). Figure 5\u2014figure supplement 1 displays the ordered fraction of secondary structures, which includes \u03b1-helices, \u03b2-sheets, \u03b2-bridges, and turns.\n\n#### Hydrogen bonding\n\nProtein-protein and protein-water hydrogen bonds were determined using the hydrogenbonds package within MDAnalysis (Gowers et al., 2016; Michaud-Agrawal et al., 2011; Smith et al., 2019). A hydrogen bond was defined as having a donor heavy atom within 3.30 \u00c5 of an acceptor heavy atom and a donor heavy atom-hydrogen atom-acceptor heavy atom angle of 135.0\u00b0 or larger. The nearby water count for each analysis selection was determined by counting the water molecules whose oxygen atoms were within 4.0 \u00c5 of the heavy atoms of this selection. Water hydrogen bond density for each residue selection for each frame was computed as the ratio of protein-water hydrogen bonds to the number of nearby water molecules (Appendix 1\u2014figure 3).\n\n### Experimental methods\n\n#### Fluorescence lifetime imaging microscopy (FLIM)\n\nThe proteins of interest were labeled with NHS ester fluorophore. We used ELPs with 1% BODIPY labels or 2.5% SBD labels to form condensates, which avoid the artifacts induced by fluorophores. Droplets were formed with the final concentration of 70 \u03bcM ELP in 2 M NaCl for V-A and 1.5 M NH4SO4 for V-G diblock, respectively. A drop of droplets containing solution was placed on a 0.17 mm coverslip with a 500 \u03bcm spacer. Images were acquired using Leica Falcon Fluorescence Microscope equipped with Wil pulse laser and \u00d763/0.12 oil-immersion objective. The BODIPY was excited at 488 nm and the SBD was excited at 448 nm. The fluorescence lifetime fitting and image analysis were performed in LAS X and ImageJ.\n\n### Optical tweezer experiments\n\nThe protocol describes the preparation and manipulation of a sample containing a BODIPY-labeled ELP protein using an optical tweezer, specifically the C-Trap from LULICKS. The goal is to form a single large condensate from small droplets and then stretch it using the optical tweezers while monitoring its fluorescence intensity. The first step is to mix the BODIPY-labeled ELP protein with NaCl solution to obtain a final concentration of 20 \u03bcM protein in 2 M NaCl. The sample is then loaded into the flow channel of the optical tweezer. The dual trap mode of the C-Trap is then used to move the two traps to the same position. The sample is flushed until a single large condensate of about 4 \u03bcm is caught by the dual trap via the fusion of small droplets. The traps are then moved along with the droplet to another flow channel containing 2 M NaCl buffer. The channel and pressure are turned off to avoid any additional force on the droplet. The next step is to stretch the droplet by moving trap 1 0.2 \u03bcm each time. Fluorescent images of each stretch are taken using a 488 nm excitation laser. The mean fluorescence intensity of the whole droplet is then quantified using ImageJ.\n",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rosana Collepardo, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90750.4.sa0](https://doi.org/10.7554/eLife.90750.4.sa0)\n\nThis important study investigates the structural organization of a series of diblock elastin-like polypeptide condensates. The methodology is highly compelling as it combines multiscale simulations and fluorescence lifetime imaging microscopy experiments. The results increase our understanding of model biomolecular condensates.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90750.4.sa1](https://doi.org/10.7554/eLife.90750.4.sa1)\n\nThis is an interesting, informative, and well-designed study that combines theoretical and experimental methodologies to tackle the phenomenon of higher-resolution structures/substructures in model biomolecular condensates.\n\nThe authors have adequately addressed my previous concerns.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90750.4.sa2](https://doi.org/10.7554/eLife.90750.4.sa2)\n\nSummary:\n\nLatham A.P. et al. apply simulations and FLIM to analyse several di-block elastin-like polypetides and connect their sequence to the micro-structure of coacervates resulting from their phase-separation.\n\nStrengths:\n\nUnderstanding the molecular grammar of phase separating proteins and the connection with mesoscale properties of the coacervates is highly relevant. This work provides insights into micro-structures of coacervates resulting from di-block polypetides.\n\nWeaknesses:\n\nThe results apply to a very specific architecture (di-block polypetides) with specific sequences.\n",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4b2e121c-c75c-40bc-aa7c-cd1d65c25350",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C1",
+      "claim": "Biological condensates are found in both the cytosol and nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological condensates are found in both the cytosol (Brangwynne et al., 2009; Folkmann et al., 2021; Patel et al., 2015; Ma and Mayr, 2018) and nucleus, (Feric et al., 2016; Larson et al., 2017; Strom et al., 2017; Sabari et al., 2018; Leicher et al., 2022; Latham and Zhang, 2022b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "617848c2-ad0a-4326-a4a9-6973d1005bda",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C2",
+      "claim": "Biological condensates play essential roles in a variety of cellular processes from stress response to genome organization.",
+      "claim_type": "EXPLICIT",
+      "source": "playing essential roles in a variety of cellular processes (Banani et al., 2017; Uversky, 2017) from stress response (Riback et al., 2017) to genome organization (Lin et al., 2021; Sabari et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "6b6dc5cc-b601-4003-813d-ee98d4f3ccd0",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C3",
+      "claim": "The lack of a membrane barrier allows fast material exchange between condensates and the cellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of a membrane barrier allows fast material exchange between condensates and the cellular environment, rendering the molecular composition and stability of condensates more prone to regulations by external signals (Hnisz et al., 2017; Riback et al., 2020; Klein et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and logical inference from the properties of membrane-less organelles",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "40bdd969-4244-44e1-9de5-c33d20c1d062",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C4",
+      "claim": "Intrinsically disordered proteins (IDPs) that promote multivalent, promiscuous interactions are key drivers of condensate formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered proteins (IDPs) that promote multivalent, promiscuous interactions are key drivers of condensate formation (Hyman et al., 2014; Boeynaems et al., 2018; Abyzov et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "e9ed859c-70e0-4ca8-a28c-a032a7f1a361",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C6",
+      "claim": "Above a threshold concentration, interactions among IDPs can drive liquid-liquid phase separation to produce a highly concentrated phase that nevertheless remains dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "Above a threshold concentration, as predicted by the Flory\u2013Huggins theory (Flory, 1942), interactions among IDPs can drive liquid-liquid phase separation to produce a highly concentrated phase that nevertheless remains dynamic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Flory-Huggins theory and established knowledge of phase separation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "4b80057b-8b7c-4218-a3d3-cc0e1b1aca82",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C7",
+      "claim": "Biological condensates often exhibit complex viscoelastic behaviors and substructures with a layered organization.",
+      "claim_type": "EXPLICIT",
+      "source": "These systems often exhibit complex viscoelastic behaviors and substructures with a layered organization (Latham and Zhang, 2022a; Mittag and Pappu, 2022; Kar et al., 2022; Wu and King, 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "5c1a9a9d-e2b4-4a97-9da1-97caa669f002",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C8",
+      "claim": "The sticker and spacer model has been adopted to account for strong and specific interactions that might form physical cross-links among protein molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The sticker and spacer model (Tanaka, 1989; Semenov and Rubinstein, 1998) has been adopted by Pappu and coworkers to account for strong and specific interactions that might form physical cross-links among protein molecules (Harmon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "a04b6d5b-e6d0-449f-9077-c957559c2b64",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C9",
+      "claim": "The block copolymer theory may explain the microphase separation that can lead to layered structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the meantime, the block copolymer theory may explain the microphase separation that can lead to layered structures (Leibler, 1980; Bates and Fredrickson, 1990; Matsen and Schick, 1994; Matsen and Bates, 1996; Grason, 2006; Swann and Topham, 2010; Shi, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "4f93dcde-b412-42a9-9441-e635409b8af6",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C10",
+      "claim": "Elastin-like polypeptides (ELPs) are composed of pentapeptide repeats of valine-proline-glycine-X-glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, elastin-like polypeptides (ELPs), which are composed of pentapeptide repeats of valine-proline-glycine-X-glycine, serve as excellent models for studying protein phase behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about ELP sequence composition",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "d620e3d9-6f1a-4849-afc4-795174be5359",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C11",
+      "claim": "ELPs undergo phase separation upon heating with a lower critical solution temperature (LCST).",
+      "claim_type": "EXPLICIT",
+      "source": "ELPs undergo phase separation upon heating with a lower critical solution temperature (LCST) (Urry, 1997; Rauscher and Pom\u00e8s, 2017; Baul et al., 2020; Cinar et al., 2019; Dignon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "2a4798f1-8af7-4bb9-a058-f8ed6dfa7736",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C12",
+      "claim": "The guest residue X in ELPs can be modified to any amino acid except proline with modern engineering approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the guest residue X can be modified to any amino acid except proline with modern engineering approaches (McDaniel et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "46776a57-e48d-45a7-99db-a9981bbcf359",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C13",
+      "claim": "The multiscale simulation approach succeeded in reproducing the variation of condensate stability upon amino acid substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations succeeded in reproducing the variation of condensate stability upon amino acid substitution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "f4f97d08-81a2-40b4-ae04-11029a9223b4",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C14",
+      "claim": "The simulations revealed different microenvironments within a single condensate.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations succeeded in reproducing the variation of condensate stability upon amino acid substitution and revealed different microenvironments within a single condensate, which we verified with environmentally sensitive fluorophores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data and experimental verification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "d983d5af-f3be-4fc8-91f3-242d3e808c47",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C15",
+      "claim": "Different microenvironments within ELP condensates were verified with environmentally sensitive fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "revealed different microenvironments within a single condensate, which we verified with environmentally sensitive fluorophores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data using FLIM",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "7f8a13b2-d1be-4a1e-a64d-ba1d23caf923",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C16",
+      "claim": "The interspersion of hydrophilic and hydrophobic residues and a lack of secondary structure formation result in an interfacial environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The interspersion of hydrophilic and hydrophobic residues and a lack of secondary structure formation result in an interfacial environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data and structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "2ca2cd9b-a8cc-4627-8db8-13c2bf0a0dfe",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C17",
+      "claim": "There is a strong correlation between ELP condensate stability and interfacial hydrophobicity scales.",
+      "claim_type": "EXPLICIT",
+      "source": "which explains both the strong correlation between ELP condensate stability and interfacial hydrophobicity scales",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b93c0e60-8c1c-425d-8a54-98619d7aad28",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C18",
+      "claim": "Protein-water hydrogen bonds are prevalent in ELP condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as the prevalence of protein-water hydrogen bonds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by hydrogen bond analysis from atomistic simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "bfd56d87-b9cb-4e22-9b36-88da05b0e466",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C21",
+      "claim": "Most ELP condensates undergo microphase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that most ELP condensates undergo a microphase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data and structural analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "30071220-b715-421e-ace1-c92da499fc25",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C22",
+      "claim": "Microphase separation orients the more hydrophobic blocks toward the condensate interior as opposed to the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the microphase separation manages to orient the more hydrophobic blocks toward the condensate interior as opposed to the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data showing density distributions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "aca5dd2c-6a67-49ea-8003-0184f9e97f8d",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C23",
+      "claim": "The relative density of guest blocks near the center of the condensate positively correlates with their hydrophobicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative density of guest blocks near the center of the condensate positively correlates with their hydrophobicity, as can be seen in both MARTINI (Figure 2\u2014figure supplement 1) and all-atom (Figure 2\u2014figure supplement 2) simulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "7c4429d8-8c84-45e5-9dae-253053d7882d",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C24",
+      "claim": "Microphase separation in ELP condensates did not produce lamellar morphology as expected for block copolymers with equal volume fraction of the two blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, microphase separation did not produce lamellar morphology as expected for block copolymers with equal volume fraction of the two blocks (Figure 2\u2014figure supplement 3; Bates and Fredrickson, 1999; Mai and Eisenberg, 2012; Zhulina et al., 2005; Leibler, 1980; Bates and Fredrickson, 1990; Matsen and Schick, 1994; Matsen and Bates, 1996; Grason, 2006; Swann and Topham, 2010; Shi, 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data and comparison with block copolymer theory",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "a377ba2b-0faf-40d8-ae9d-15e94df433de",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C25",
+      "claim": "ELP condensates appear to form gyroid-like structures in which the V and X blocks form two interpenetrating networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the condensates appear to form gyroid-like structures, in which the V and X blocks form two interpenetrating networks (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data and structural visualization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "0bb1a8a0-c3ba-4759-af55-e10a821fce53",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C26",
+      "claim": "The gyroid-like morphology in ELP condensates differs from micelle-like structures seen in simplified hydrophobic-polar (HP) polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "This morphology also differs from micelle-like structures seen in simplified hydrophobic-polar (HP) polymers (Statt et al., 2020; Wess\u00e9n et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with published research on HP polymers",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "0581d40a-3e32-4d26-a287-dd94c8a15d44",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C27",
+      "claim": "Weak interfacial tension between different ELP blocks has been noted by Hassouneh et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak interfacial tension between different ELP blocks has also been noted by Hassouneh et al., 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "fe1669a8-520b-4535-b2a0-f2e219b8031e",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C28",
+      "claim": "For more hydrophilic X blocks, the condensates begin to dissolve into a collection of micelle-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, for more hydrophilic X blocks, the condensates begin to dissolve into a collection of micelle-like structures, consistent with the predictions by Hassouneh et al. in dilute solutions (Hassouneh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data and comparison with published predictions",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "a4c9115c-43f1-43df-b967-4017b9dc4156",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C29",
+      "claim": "Significant contacts between V and X blocks can be readily seen in the inter-chain contact maps.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, significant contacts between V and X blocks can be readily seen in the inter-chain contact maps (Figure 2, Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by contact map analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "86579f1b-7ea3-4400-8e1b-073c04f8bd1b",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C30",
+      "claim": "The probability of finding cross-block contacts V-X is often comparable to the intra-block contacts between X-X or V-V.",
+      "claim_type": "EXPLICIT",
+      "source": "For all systems, we found that the probability of finding cross-block contacts V-X is often comparable to the intra-block contacts between X-X or V-V, depending on the relative hydrophobicity of V and X.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by radial distribution function analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "c4750254-36f0-4f3f-aa35-b1e1a341121e",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C31",
+      "claim": "The lifetime of BODIPY for the V-end (5.43 ns) was longer than that for the A-end (4.35 ns), suggesting that the V-end has a higher microviscosity than the A-end.",
+      "claim_type": "EXPLICIT",
+      "source": "Using FLIM, we found that the lifetime of BODIPY for the V-end (5.43 ns) was longer than that for the A-end (4.35 ns), suggesting that the V-end indeed has a higher microviscosity than the A-end (\u03b7V = 2233.54 cp vs \u03b7A = 969.57 cp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FLIM experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "16436d9a-1569-4cbc-8a12-e6dd792f2e78",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C32",
+      "claim": "The lifetime of SBD was longer for the V-end (8.75 ns) than the A-end (7.00 ns), indicating that the micropolarity of the V-end was lower than the A-end.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the lifetime of SBD was longer for the V-end (8.75 ns) than the A-end (7.00 ns), indicating that the micropolarity of the V-end was lower than the A-end (\u03f5V=13.25 vs \u03f5A = 18.97).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FLIM experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "eb5711bd-0987-4acf-bd1c-9eb6c03a0d99",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C33",
+      "claim": "The observed differences in microviscosity and micropolarity between V-end and A-end could be largely attributed to the greater extent of dehydration at the V-end due to its higher local peptide density.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations could be largely attributed to the greater extent of dehydration at the V-end due to its higher local peptide density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations and understanding of hydration effects",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "a62608f3-42a6-4a47-acb1-cccdd0548635",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C34",
+      "claim": "The V-end was more viscous than the G-end (\u03b7V=2972.72 cp vs \u03b7G = 1958.60 cp).",
+      "claim_type": "EXPLICIT",
+      "source": "FLIM experiments revealed that the V-end was more viscous than the G-end (\u03b7V=2972.72 cp vs \u03b7G = 1958.60 cp)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FLIM experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "58cfb689-694c-471c-9cbb-1ac392d006db",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C35",
+      "claim": "The V-end was less polar than the G-end (\u03f5V=9.14 vs \u03f5G = 27.50).",
+      "claim_type": "EXPLICIT",
+      "source": "and the V-end was less polar than the G-end (\u03f5V=9.14 vs \u03f5G = 27.50).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FLIM experimental measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b883f7f7-3f33-4e12-b3fc-834e797aff45",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C36",
+      "claim": "The normalized fluorescence intensity of the V-end decreases greater than the A-end during optical tweezer stretching, indicating that the viscosity change of the V-end is larger.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the normalized fluorescence intensity of the V-end decreases greater than the A-end, indicating that the viscosity change of the V-end is larger (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by optical tweezer experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "a22982cf-2caa-4fd5-9495-aa80194fbfab",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C37",
+      "claim": "Water-octanol and water-POPC interface transfer free energies best correlate with the transition temperature of ELP condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4A shows that water-octanol and water-POPC interface transfer free energies best correlate with the transition temperature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "885c4d64-5f86-4944-943c-f12002043966",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C38",
+      "claim": "Other hydrophobicity measures, including those derived specifically for disordered proteins, do not correlate as well with ELP transition temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, other hydrophobicity measures, even including those derived specifically for disordered proteins, do not match as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "8ab536ed-55c5-4ec4-b031-f3078c1c1360",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C39",
+      "claim": "The guest residues in ELP condensates are immediately surrounded with hydrophilic glycine residues as the nearest neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4B and C, Figure 4\u2014figure supplement 1, the guest residues are immediately surrounded with hydrophilic glycine residues as the nearest neighbors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by radial distribution function analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "669be723-d0dc-4cb2-bb9b-aff69ab54d19",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C40",
+      "claim": "In the second shell around guest residues, more hydrophobic valine and proline residues appear.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second shell, more hydrophobic valine and proline residues appear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by radial distribution function analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "1c0267e2-24d2-4dca-b7ea-ee813fa29b97",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C41",
+      "claim": "The radial distribution function profiles reveal the interfacial nature of the chemical environment surrounding the guest residues consisting of both hydrophobic and hydrophilic amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "These profiles reveal the interfacial nature of the chemical environment surrounding the guest residues consisting of both hydrophobic and hydrophilic amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from radial distribution function data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "a1c1f17d-ad33-4434-99ea-c8d6cbfe12f1",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C42",
+      "claim": "The interfacial solvation environment is consistent with the strong correlation of the Urry scale with water-POPC interface transfer free energy.",
+      "claim_type": "EXPLICIT",
+      "source": "This interfacial solvation environment is consistent with the strong correlation of the Urry scale with water-POPC interface transfer free energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation analysis and structural characterization",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "73fd2bda-fc05-470b-9b55-1f7019805e16",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C43",
+      "claim": "ELP condensates do not simply feature a hydrophobic interior that separates from hydrophilic residues as seen for folded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, ELP condensates do not simply feature a hydrophobic interior that separates from hydrophilic residues as seen for folded proteins, and hence the poor correlation shown in Figure 4A with the burial propensity of amino acids (RSA1, RSA2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis and structural characterization",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "73a53fef-171d-4792-8b97-1a9c0be0a3d5",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C44",
+      "claim": "The guest residues in ELPs are juxtaposed between two glycine residues in the pentamer, creating the immediate shell of hydrophilic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the guest residues are juxtaposed between two glycine residues in the pentamer (Figure 1A), creating the immediate shell of hydrophilic residues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on the known ELP sequence structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "ba738867-9b0b-4086-afae-493956815489",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C45",
+      "claim": "The presence of valine in the pentamer prevents the movement of GXG motifs to the interface due to the clustering of hydrophobic residues that prefer the condensate interior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the presence of valine in the pentamer prevents the movement of GXG motifs to the interface due to the clustering of hydrophobic residues that prefer the condensate interior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from simulation data and sequence constraints",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "2e0b8dd9-89ba-43f5-91dd-091ab1b07729",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C46",
+      "claim": "Frustration remains in ELP condensates where hydrophilic residues cannot completely separate from hydrophobic ones due to constraints imposed by the amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while microphase separation occurs in ELP condensates, frustration remains in the system. Hydrophilic residues cannot completely separate from hydrophobic ones due to constraints imposed by the amino acid sequence, creating unique microenvironments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural analysis and sequence constraints",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "012c078d-7113-4da3-b1fb-693089c64c2d",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C47",
+      "claim": "For condensates with lower surface tension, such as V5G5, the protein density near the center of the condensate is only around \u223c30%.",
+      "claim_type": "EXPLICIT",
+      "source": "For condensates with lower surface tension, such as V5G5, the protein density near the center of the condensate is only around \u223c30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by density analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "8724f8fc-2ea9-49bd-8762-b8e9e957a39b",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C48",
+      "claim": "For stable condensates with high surface tension, such as V5F5, the protein density near the center only reaches \u223c70%.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for the stable condensates with high surface tension, such as V5F5, the protein density near the center only reaches \u223c70%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by density analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "fbe6cde9-93f4-494e-acad-69010476f93d",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C49",
+      "claim": "Over 75% of the hydrogen bonds in all ELP condensates are between protein and water.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5A, over 75% of the hydrogen bonds are between protein and water in all of the condensates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by hydrogen bond analysis from atomistic simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "0bb209af-bf41-4a0a-8bc4-91297a73fb2a",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C50",
+      "claim": "Water-protein hydrogen bonds constitute most of the hydrogen bonds found in ELP condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work on a different ELP condensate (Rauscher and Pom\u00e8s, 2017) similarly indicated that water-protein hydrogen bonds constitute most of the hydrogen bonds found in the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research and current simulation data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "f7a63c71-02aa-454d-978c-bf1beac925ab",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C51",
+      "claim": "ELPs lack noticeable secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding highlights that ELPs, lacking noticeable secondary structures (Figure 5\u2014figure supplement 1), are less capable of meeting its own hydrogen bonding needs, compared to folded proteins (Sticke et al., 1992).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by secondary structure analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "93f8b646-359d-4c4c-92c7-9daee4e110e9",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C52",
+      "claim": "ELPs are less capable of meeting their own hydrogen bonding needs compared to folded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding highlights that ELPs, lacking noticeable secondary structures (Figure 5\u2014figure supplement 1), are less capable of meeting its own hydrogen bonding needs, compared to folded proteins (Sticke et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with folded proteins and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "911a9022-6527-42e5-8e0d-5933665feaf5",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C53",
+      "claim": "High water concentration within the condensate is crucial to fulfilling the protein's hydrogen bonding requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, high water concentration within the condensate is crucial to fulfilling the protein's hydrogen bonding requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from hydrogen bonding analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "af850514-0e10-42d3-8371-fb48edf3e3d2",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C54",
+      "claim": "The average number of hydrogen bonds per residue remained relatively constant across condensates, even when the amount of water inside the condensate varied by almost two folds.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, given the importance of water molecules, the average number of hydrogen bonds per residue remained relatively constant across condensates, even when the amount of water inside the condensate varied by almost two folds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by hydrogen bond analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "4a2a21b1-92d5-49cb-887b-ca1695361346",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C56",
+      "claim": "More hydrophobic condensates have a higher hydrogen bond density.",
+      "claim_type": "EXPLICIT",
+      "source": "supporting our hypothesis that more hydrophobic condensates would have a higher hydrogen bond density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by hydrogen bond density analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "9d083e8e-68e9-469e-ac29-be345e4db24d",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C58",
+      "claim": "Water molecules have fewer hydrogen bonding opportunities with more hydrophobic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, locally, protein-water interactions are strongly influenced by the chemistry of side chains, and water molecules have fewer hydrogen bonding opportunities with more hydrophobic residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from hydrogen bond density analysis",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b6070d0c-7c6d-4aca-91ea-40db4518c8b8",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C59",
+      "claim": "The exposed backbones retain water molecules even when hydrophobic side chains do not provide hydrogen bonding opportunities.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the exposed backbones retain water molecules even when hydrophobic side chains do not provide hydrogen bonding opportunities",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from hydrogen bond analysis near glycine residues",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "c1636372-19de-46bd-8a3a-4af45385094f",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C60",
+      "claim": "RSA values in ELP condensates are much lower than those computed from all-atom simulations of ELP monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "RSA values in ELP condensates are much lower than those computed from all-atom simulations of ELP monomers, consistent with the increase of polymer density upon phase separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RSA analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "fb0bbf43-e6c2-49ab-9766-0ac1679ace59",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C61",
+      "claim": "RSA values in ELP condensates are almost always higher than the values estimated for folded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they are almost always higher than the values estimated for folded proteins due to many water molecules roaming inside the condensates (Tien et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RSA analysis and comparison with folded proteins",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "2169172e-5f51-4888-b278-2d89fd9df15b",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C62",
+      "claim": "ELP condensates provide a mechanism to shield hydrophobic amino acids from solvent, but they are less effective in doing so than folded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while ELP condensates provide a mechanism to shield hydrophobic amino acids from solvent, they are less effective in doing so than folded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from RSA analysis comparing condensates, monomers, and folded proteins",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "6ef8a58a-fc31-4184-886c-5d0292e076ee",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C63",
+      "claim": "A significant expansion is observed for almost all the studied peptides upon condensation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a significant expansion for almost all the studied peptides upon condensation, supporting the notion that water is a poor solvent for ELP (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by radius of gyration analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "35adf322-a54d-4d6f-ad12-6eb6e676e482",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C64",
+      "claim": "Water is a poor solvent for ELP.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a significant expansion for almost all the studied peptides upon condensation, supporting the notion that water is a poor solvent for ELP (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from peptide expansion upon condensation",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "61a93ab5-d762-452a-9c0e-2ef583749640",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C65",
+      "claim": "The expansion is most evident for more hydrophobic ELPs, the radii of gyration of which are now comparable to that of an ideal Gaussian chain.",
+      "claim_type": "EXPLICIT",
+      "source": "The expansion is most evident for more hydrophobic ELPs, the radii of gyration of which are now comparable to that of an ideal Gaussian chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by radius of gyration analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "9b38cf70-96a6-4fe9-8355-fc7a32974e9b",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C66",
+      "claim": "The sizes of the two separate peptide blocks are similar in most systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the sizes of the two separate peptide blocks are similar in most systems, supporting an interfacial environment that can accommodate both hydrophobic and hydrophilic residues (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by block-specific radius of gyration analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "d1665554-be50-445d-ad43-e134b2aaef6f",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C67",
+      "claim": "Diblock ELPs undergo microphase separation, with the more hydrophobic blocks localizing toward the condensate interior.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that diblock ELPs undergo microphase separation, with the more hydrophobic blocks localizing toward the condensate interior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data and density analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "193984d6-d386-4b42-a9bd-0f0b0b2a4f99",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C68",
+      "claim": "The more hydrophobic blocks increase the local protein density, resulting in higher viscosity and lower dielectric constants.",
+      "claim_type": "EXPLICIT",
+      "source": "The more hydrophobic blocks increase the local protein density, resulting in higher viscosity and lower dielectric constants, as determined in FLIM experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FLIM experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "e6dde9a8-e915-4b0e-b204-4f89820d1340",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C69",
+      "claim": "Unlike the interior of folded proteins, ELP condensate blocks are significantly solvated with water occupying over 30% of mass density.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the interior of folded proteins, these blocks are significantly solvated with water occupying over 30% of mass density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by density analysis from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "f7b97d59-f3b3-4c35-9044-8821e26276e0",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C70",
+      "claim": "Unlike the weak micelles formed in solution, ELP condensates exhibit gyroid-like morphologies that promote contacts between blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the weak micelles formed in solution (Hassouneh et al., 2015), ELP condensates exhibit gyroid-like morphologies that promotes contacts between blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation data and comparison with published research",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "01a80e45-1346-4122-8136-a19c8fda05b8",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C71",
+      "claim": "A single quantity specific to the guest residue suffices to predict the emergent properties of ELP condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "A single quantity specific to the guest residue suffices to predict the emergent properties of the condensate, as evidenced by the strong correlation of the transition temperatures with the transfer free energies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "bf02d5ea-81a6-4575-b350-12731f8f6a92",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C72",
+      "claim": "The lack of higher-order effects in ELP condensate stability supports a mean field approximation to account for the contribution of individual residues in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of higher-order effects is striking, supporting a mean field approximation to account for the contribution of individual residues in the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the simplicity of the correlation with single-residue properties",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "43a80418-6793-4d80-818b-b9ecaf02a8e7",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C73",
+      "claim": "The hydrophobicity scale is sensitive to the local microenvironment that is sequence specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the hydrophobicity scale is itself sensitive to the local microenvironment that is sequence specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation with interfacial hydrophobicity scales",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "158ee5a4-64d8-4dd7-aeff-0255a381260a",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C74",
+      "claim": "The microenvironment in ELP condensates arises from the collective behavior of many proteins and can deviate from that of individual chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a microenvironment arises from the collective behavior of many proteins, can deviate from that of individual chains, and is likely sensitive to the solution conditions (Welsh et al., 2022), which are held constant in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of condensate and monomer properties",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b27060b2-386e-408c-82bf-d58e1432798a",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C75",
+      "claim": "Microphase separation that produces interfacial properties is anticipated to be a general principle for condensate organization.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we anticipate that the microphase separation that produces the interfacial properties is a general principle for condensate organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative generalization based on findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "35cc31d6-6573-4875-aa1a-d24d258211ec",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C76",
+      "claim": "For most IDPs, the hydrophobic and hydrophilic residues are often interspersed throughout the chain to prevent the collapse of individual proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For most IDPs, the hydrophobic and hydrophilic residues are often interspersed throughout the chain to prevent the collapse of individual proteins (Martin et al., 2020; Zheng et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "01ccaf81-2192-4e8a-bbfd-24123a3f8a6a",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C77",
+      "claim": "The hydrophilic backbones in IDPs are expected to be exposed due to a lack of secondary structure formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the hydrophilic backbones are expected to be exposed due to a lack of secondary structure formation, contributing to the interfacial property in the presence of hydrophobic side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural properties of IDPs",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "4e8e11ef-98d0-41ac-801b-a4b26cc812a5",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C78",
+      "claim": "The multiscale simulations started with an implicit solvent model, MOFF, to generate initial configurations for each system.",
+      "claim_type": "EXPLICIT",
+      "source": "The multiscale simulations of ELP condensates started with an implicit solvent model, MOFF (Latham and Zhang, 2021), and a similar homopolymer model, to generate initial configurations for each system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b4b4ad95-3f10-49d7-918d-404d2e3980ed",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C79",
+      "claim": "MARTINI simulations measured the coexistence between the condensate and solvent, lasted for 100 \u03bcs, and were conducted in the NPNAT ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations measured the coexistence between the condensate and solvent, lasted for 100 \u03bcs, and were conducted in the NPNAT ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "eaa2016b-7d34-433d-b356-882b9f05d605",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "claim_id": "C80",
+      "claim": "Atomistic simulations were conducted in the NPNAT ensemble and lasted 250 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomistic simulations were conducted in the NPNAT ensemble and lasted 250 ns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fb68bb5b-51d9-4eed-8063-28709078496c",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on biological condensates, their cellular roles, and the properties of elastin-like polypeptides (ELPs) as model systems. These claims establish the scientific context and rationale for studying ELP condensates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are well-supported by extensive citations to published literature. These background claims accurately represent established knowledge in the field and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "3819800e-6195-4f9b-91ce-eb402f521304",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors employed a multiscale simulation approach starting with implicit solvent MOFF simulations, followed by 100 \u03bcs MARTINI coarse-grained simulations in the NPNAT ensemble, and concluding with 250 ns atomistic simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 describe the computational methodology in detail. The multiscale approach is clearly documented with specific simulation times, ensembles, and force fields. This methodological description is internally consistent and appropriate for the system studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "6b818fe6-e97a-430d-bf26-a7db1fc3bdee",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The multiscale simulation approach successfully reproduced the variation of condensate stability upon amino acid substitution, as evidenced by correlation between simulated surface tension and experimental transition temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C17 are supported by Figure 1C showing a negative correlation (\u03c1=-0.72) between simulated surface tension and experimental transition temperatures. The authors acknowledge limitations (different sequences, nonlinear relationships) but the correlation validates the simulation approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "114d3712-af36-4f24-96ce-6065f01001f8",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Diblock ELP condensates undergo microphase separation, with more hydrophobic blocks (V-blocks) localizing toward the condensate interior, as demonstrated by density distributions from both MARTINI and all-atom simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C67 are supported by density distribution analyses shown in Figure 2 and supplementary figures. The positive correlation between guest block density at the condensate center and hydrophobicity is demonstrated in both coarse-grained and atomistic simulations, providing convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "0c44fa5b-417f-4c96-93b2-99503ac99903",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ELP condensates form gyroid-like structures with interpenetrating networks rather than the expected lamellar morphology predicted by block copolymer theory for equal volume fractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 and C70 are supported by structural analysis from simulations (Figure 2\u2014figure supplement 4) and comparison with block copolymer theory. The deviation from expected lamellar structures is clearly demonstrated, though the characterization as 'gyroid-like' is qualitative rather than quantitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "56dd297f-3ee1-4cbe-8366-8dad475f1962",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ELP condensates exhibit weak interfacial tension between blocks and substantial cross-block contacts, with the probability of V-X contacts comparable to intra-block contacts, as shown by contact maps and radial distribution functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by contact map analysis (Figure 2, Figure 2\u2014figure supplement 6) and radial distribution functions (Figure 2, Figure 2\u2014figure supplement 7). The quantitative analysis demonstrates interpenetrating networks with significant interfacial contacts, consistent with weak interfacial tension noted in prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FLIM experiments reveal distinct microenvironments within diblock ELP condensates, with V-ends exhibiting higher microviscosity and lower micropolarity than A-ends or G-ends, attributed to higher local peptide density and dehydration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35, C14-C15, and C68 are supported by FLIM measurements using BODIPY and SBD fluorophores (Figure 3B). The experimental data show clear differences in fluorescence lifetimes corresponding to distinct physicochemical properties. Controls for potential artifacts are mentioned in supplementary materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "7a58aa8f-3199-4c83-81f0-c61ec2b2d934",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Optical tweezer stretching experiments show that the normalized fluorescence intensity of the V-end decreases more than the A-end, indicating larger viscosity changes in the more hydrophobic V-end.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by optical tweezer data (Figure 3E) showing differential responses to mechanical perturbation. The interpretation that this reflects viscosity changes due to disruption of preferred chemical environments is reasonable, though the connection between fluorescence intensity and viscosity during dynamic stretching could be more rigorously established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "fac8415e-469f-4916-aa85-d64cba57eadb",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ELP condensate stability correlates strongly with water-octanol and water-POPC interface transfer free energies, while other hydrophobicity scales (including those for disordered proteins) show weaker correlations, suggesting a single residue-specific quantity suffices to predict condensate properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C71 are supported by correlation analysis in Figure 4A. The strong correlation with interfacial hydrophobicity scales is striking and well-demonstrated. However, the claim that 'a single quantity suffices' (C71) may overstate the generality, as the authors acknowledge the hydrophobicity scale itself is sequence-specific and solution-condition dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "678dafc4-b8c5-4cf7-896b-e80dbaad490d",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Radial distribution function analysis reveals that guest residues are immediately surrounded by hydrophilic glycine residues with hydrophobic valine and proline in the second shell, creating an interfacial chemical environment consistent with the correlation to interfacial hydrophobicity scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C16 are supported by radial distribution function analysis (Figure 4B-C, Figure 4\u2014figure supplement 1). The structural characterization clearly demonstrates the interfacial nature of the microenvironment, providing a molecular explanation for the correlation with interfacial transfer free energies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ELP condensates differ from folded proteins in that they do not achieve complete separation of hydrophobic and hydrophilic residues due to sequence constraints, resulting in 'frustration' and unique microenvironments that arise from collective behavior and are sensitive to sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C73-C74 are supported by correlation analysis (poor correlation with burial propensity scales) and structural characterization. The concept of 'frustration' due to sequence constraints is well-reasoned and supported by the data, though it remains somewhat qualitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "a93d0d7a-f19f-46d2-af8f-3678a4b17ac9",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ELP condensates remain highly solvated, with protein density reaching only ~30% for low surface tension condensates (V5G5) and ~70% for high surface tension condensates (V5F5), with water occupying over 30% of mass density even in hydrophobic blocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 and C69 are supported by density analysis from simulations (referenced in Appendix 1\u2014figures 1 and 2). The high water content distinguishes ELP condensates from folded protein interiors and is consistent with the interfacial environment characterized in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "9ced2664-8174-4c4c-b11d-488fb84108eb",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Over 75% of hydrogen bonds in ELP condensates are protein-water hydrogen bonds, reflecting the lack of secondary structure and the inability of ELPs to meet their own hydrogen bonding needs, making high water concentration crucial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 and C18 are supported by hydrogen bond analysis from atomistic simulations (Figure 5A) and secondary structure analysis (Figure 5\u2014figure supplement 1). The comparison with prior work (Rauscher and Pom\u00e8s, 2017) and folded proteins strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "e422d622-c4b7-4f73-a2e4-6dcabd40e5d7",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Despite varying water content, the average number of hydrogen bonds per residue remains constant across condensates, but water hydrogen bond density increases in more hydrophobic condensates. Water molecules have fewer hydrogen bonding opportunities with hydrophobic residues, but exposed backbones retain water even near hydrophobic side chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C56, C58-C59 are supported by hydrogen bond density analysis (Figure 5B-C). The concept of water hydrogen bond density effectively explains how constant per-residue hydrogen bonding is maintained despite varying water content. The analysis of residue-specific effects (guests vs. adjacent glycines) provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "1fcb4dd3-9877-4522-b146-975dc095b99a",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "RSA values in ELP condensates are lower than in monomers but higher than in folded proteins, indicating that while condensates provide a mechanism to shield hydrophobic residues from solvent, they are less effective than protein folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by RSA analysis from atomistic simulations (Figure 6A-B) comparing condensates, monomers, and folded proteins. The intermediate RSA values are consistent with the interfacial environment and high solvation characterized in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b720c462-95af-41b5-9134-8d77a6467ee3",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Peptides undergo significant expansion upon condensation, with radii of gyration approaching ideal Gaussian chain values for hydrophobic ELPs, supporting the notion that water is a poor solvent for ELP. The similar sizes of V and X blocks support an interfacial environment accommodating both hydrophobic and hydrophilic residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by radius of gyration analysis (Figure 6C, Figure 6\u2014figure supplement 1). The expansion upon condensation is counterintuitive but well-documented. The comparison to ideal chain behavior and the similarity of block sizes provide additional support for the interfacial environment model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "fb49755c-6a0a-4409-888b-4897aa8c6ca9",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The lack of higher-order effects in ELP condensate stability supports a mean field approximation for accounting for individual residue contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is inferred from the strong single-parameter correlation (C71), but the authors acknowledge that the hydrophobicity scale itself is sequence-specific and microenvironment-dependent (C73-C74). The claim of mean field behavior may be oversimplified given the demonstrated sequence constraints and frustration. Additional validation with double substitutions would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "94c90ac4-27dd-4caa-b389-d4c13f57d6ed",
+      "content_id": "28628fc2-48b8-4ea8-9617-683ee9818b9b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors anticipate that microphase separation producing interfacial properties is a general principle for condensate organization, as most IDPs have interspersed hydrophobic and hydrophilic residues and lack secondary structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 represent speculative generalization beyond the ELP system studied. While C76 is supported by citations about IDP sequences, and C77 is a reasonable inference, the generalization in C75 requires validation in other IDP systems. This is appropriately framed as anticipation/speculation in the Discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "1c548788-1ddf-4491-8014-01d4cb496416",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The multiscale simulation approach successfully reproduced condensate stability variations upon amino acid substitution and revealed distinct microenvironments within ELP condensates. These microenvironments were experimentally verified using FLIM with environmentally sensitive fluorophores (BODIPY and SBD), showing differences in microviscosity and micropolarity between hydrophobic (V-end) and hydrophilic (A-end or G-end) blocks.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers affirm the study's methodology and findings. The editor states the methodology is 'highly compelling' and the results 'increase our understanding of model biomolecular condensates.' Reviewers describe the study as 'interesting, informative, and well-designed' with no concerns raised about these core findings combining simulations and FLIM experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Most ELP condensates undergo microphase separation, with more hydrophobic blocks localizing toward the condensate interior. Surprisingly, this microphase separation produces gyroid-like structures rather than the expected lamellar morphology, differing from both block copolymer predictions and micelle-like structures seen in simplified HP polymers. Significant cross-block contacts (V-X) are observed, with probabilities comparable to intra-block contacts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly recognize this as a key contribution to understanding 'micro-structures of coacervates' and 'higher-resolution structures/substructures in model biomolecular condensates.' The editor emphasizes the study 'investigates the structural organization' of these condensates. No concerns are raised about the microphase separation findings or structural characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "64f95287-0bde-4622-9633-040074b4d39b",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Water-octanol and water-POPC interface transfer free energies best correlate with ELP condensate transition temperatures, while other hydrophobicity measures (including those for disordered proteins) correlate poorly. Structural analysis reveals guest residues are surrounded by hydrophilic glycine in the first shell and hydrophobic valine/proline in the second shell, creating an interfacial environment. Sequence constraints prevent complete separation of hydrophilic and hydrophobic residues, resulting in frustration within the system.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the study's success in connecting 'sequence to the micro-structure of coacervates' and understanding 'the molecular grammar of phase separating proteins.' The editor notes the results 'increase our understanding' of these systems. The interfacial hydrophobicity correlation and structural characterization are central findings that reviewers treat as valid contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "ELP condensates contain substantial water content (30-70% depending on stability), with over 75% of hydrogen bonds being protein-water rather than protein-protein. ELPs lack secondary structures and are less capable of meeting their own hydrogen bonding needs compared to folded proteins, making high water concentration crucial. The average number of hydrogen bonds per residue remains constant across condensates despite varying water content, while more hydrophobic condensates show higher hydrogen bond density.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers recognize the study provides 'insights into micro-structures of coacervates' and successfully combines 'theoretical and experimental methodologies.' The hydrogen bonding analysis and water content characterization are part of the structural organization findings that reviewers affirm without raising concerns. These findings support the interfacial environment characterization that reviewers accept.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "RSA values in ELP condensates are lower than in monomers but higher than in folded proteins, indicating condensates provide less effective shielding of hydrophobic residues than folded proteins. Peptides undergo significant expansion upon condensation (most evident for hydrophobic ELPs), supporting that water is a poor solvent for ELPs. The sizes of the two peptide blocks remain similar in most systems, consistent with an interfacial environment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the study as 'well-designed' and note it provides 'insights into micro-structures of coacervates.' The RSA analysis and peptide expansion findings are part of the structural characterization that reviewers accept without challenge. These results support the interfacial environment model that reviewers treat as a valid contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Diblock ELPs undergo microphase separation with hydrophobic blocks increasing local protein density, resulting in higher viscosity and lower dielectric constants. Unlike folded protein interiors, these blocks remain significantly solvated (>30% water). A single quantity (guest residue hydrophobicity) suffices to predict condensate properties, supporting a mean-field approximation, though the hydrophobicity scale itself is sensitive to the sequence-specific microenvironment arising from collective protein behavior.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the study successfully connects 'sequence to the micro-structure of coacervates' and provides understanding of 'the molecular grammar of phase separating proteins.' The predictive relationship between guest residue properties and condensate behavior is a key finding that reviewers treat as a valid contribution without raising concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "47b01567-1071-4a54-a987-acfd89bd356f",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors propose that microphase separation producing interfacial properties is anticipated to be a general principle for condensate organization, as most IDPs have interspersed hydrophobic and hydrophilic residues and exposed hydrophilic backbones due to lack of secondary structure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 explicitly notes a weakness: 'The results apply to a very specific architecture (di-block polypeptides) with specific sequences.' This directly challenges the generalizability of the findings to broader IDP systems. While reviewers accept the specific findings for ELPs, the extension to general principles for all condensates is treated with caution due to the limited scope of the model system.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "225d9d63-170a-404b-a91c-8eb2420206e7",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The multiscale simulation methodology employed MOFF implicit solvent model for initial configurations, followed by 100 \u03bcs MARTINI coarse-grained simulations in NPNAT ensemble, and 250 ns atomistic simulations in NPNAT ensemble.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states 'The methodology is highly compelling as it combines multiscale simulations and fluorescence lifetime imaging microscopy experiments.' Reviewers describe the methodology as 'well-designed' and note the authors 'adequately addressed my previous concerns,' indicating the simulation approach is accepted as valid.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09",
+      "content_id": "c8e18489-6384-43f7-917c-903bdeec7d85",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims establishing that biological condensates are membrane-less organelles found in cytosol and nucleus, driven by IDPs and phase separation, with ELPs serving as model systems that undergo LCST phase separation with tunable guest residues.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background claims supported by extensive citations. Reviewers do not question these foundational statements, treating them as accepted context for the study. The editor and reviewers focus their evaluation on the novel findings rather than challenging this background.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4b2e121c-c75c-40bc-aa7c-cd1d65c25350",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "617848c2-ad0a-4326-a4a9-6973d1005bda",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "6b6dc5cc-b601-4003-813d-ee98d4f3ccd0",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "40bdd969-4244-44e1-9de5-c33d20c1d062",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "e9ed859c-70e0-4ca8-a28c-a032a7f1a361",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "4b80057b-8b7c-4218-a3d3-cc0e1b1aca82",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "5c1a9a9d-e2b4-4a97-9da1-97caa669f002",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "a04b6d5b-e6d0-449f-9077-c957559c2b64",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "4f93dcde-b412-42a9-9441-e635409b8af6",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "d620e3d9-6f1a-4849-afc4-795174be5359",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "2a4798f1-8af7-4bb9-a058-f8ed6dfa7736",
+      "result_id": "fb68bb5b-51d9-4eed-8063-28709078496c"
+    },
+    {
+      "claim_id": "4e8e11ef-98d0-41ac-801b-a4b26cc812a5",
+      "result_id": "3819800e-6195-4f9b-91ce-eb402f521304"
+    },
+    {
+      "claim_id": "b4b4ad95-3f10-49d7-918d-404d2e3980ed",
+      "result_id": "3819800e-6195-4f9b-91ce-eb402f521304"
+    },
+    {
+      "claim_id": "eaa2016b-7d34-433d-b356-882b9f05d605",
+      "result_id": "3819800e-6195-4f9b-91ce-eb402f521304"
+    },
+    {
+      "claim_id": "46776a57-e48d-45a7-99db-a9981bbcf359",
+      "result_id": "6b818fe6-e97a-430d-bf26-a7db1fc3bdee"
+    },
+    {
+      "claim_id": "2ca2cd9b-a8cc-4627-8db8-13c2bf0a0dfe",
+      "result_id": "6b818fe6-e97a-430d-bf26-a7db1fc3bdee"
+    },
+    {
+      "claim_id": "bfd56d87-b9cb-4e22-9b36-88da05b0e466",
+      "result_id": "114d3712-af36-4f24-96ce-6065f01001f8"
+    },
+    {
+      "claim_id": "30071220-b715-421e-ace1-c92da499fc25",
+      "result_id": "114d3712-af36-4f24-96ce-6065f01001f8"
+    },
+    {
+      "claim_id": "aca5dd2c-6a67-49ea-8003-0184f9e97f8d",
+      "result_id": "114d3712-af36-4f24-96ce-6065f01001f8"
+    },
+    {
+      "claim_id": "d1665554-be50-445d-ad43-e134b2aaef6f",
+      "result_id": "114d3712-af36-4f24-96ce-6065f01001f8"
+    },
+    {
+      "claim_id": "7c4429d8-8c84-45e5-9dae-253053d7882d",
+      "result_id": "0c44fa5b-417f-4c96-93b2-99503ac99903"
+    },
+    {
+      "claim_id": "a377ba2b-0faf-40d8-ae9d-15e94df433de",
+      "result_id": "0c44fa5b-417f-4c96-93b2-99503ac99903"
+    },
+    {
+      "claim_id": "0bb1a8a0-c3ba-4759-af55-e10a821fce53",
+      "result_id": "0c44fa5b-417f-4c96-93b2-99503ac99903"
+    },
+    {
+      "claim_id": "f7b97d59-f3b3-4c35-9044-8821e26276e0",
+      "result_id": "0c44fa5b-417f-4c96-93b2-99503ac99903"
+    },
+    {
+      "claim_id": "0581d40a-3e32-4d26-a287-dd94c8a15d44",
+      "result_id": "56dd297f-3ee1-4cbe-8366-8dad475f1962"
+    },
+    {
+      "claim_id": "fe1669a8-520b-4535-b2a0-f2e219b8031e",
+      "result_id": "56dd297f-3ee1-4cbe-8366-8dad475f1962"
+    },
+    {
+      "claim_id": "a4c9115c-43f1-43df-b967-4017b9dc4156",
+      "result_id": "56dd297f-3ee1-4cbe-8366-8dad475f1962"
+    },
+    {
+      "claim_id": "86579f1b-7ea3-4400-8e1b-073c04f8bd1b",
+      "result_id": "56dd297f-3ee1-4cbe-8366-8dad475f1962"
+    },
+    {
+      "claim_id": "c4750254-36f0-4f3f-aa35-b1e1a341121e",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "16436d9a-1569-4cbc-8a12-e6dd792f2e78",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "eb5711bd-0987-4acf-bd1c-9eb6c03a0d99",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "a62608f3-42a6-4a47-acb1-cccdd0548635",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "58cfb689-694c-471c-9cbb-1ac392d006db",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "f4f97d08-81a2-40b4-ae04-11029a9223b4",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "d983d5af-f3be-4fc8-91f3-242d3e808c47",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "193984d6-d386-4b42-a9bd-0f0b0b2a4f99",
+      "result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb"
+    },
+    {
+      "claim_id": "b883f7f7-3f33-4e12-b3fc-834e797aff45",
+      "result_id": "7a58aa8f-3199-4c83-81f0-c61ec2b2d934"
+    },
+    {
+      "claim_id": "a22982cf-2caa-4fd5-9495-aa80194fbfab",
+      "result_id": "fac8415e-469f-4916-aa85-d64cba57eadb"
+    },
+    {
+      "claim_id": "885c4d64-5f86-4944-943c-f12002043966",
+      "result_id": "fac8415e-469f-4916-aa85-d64cba57eadb"
+    },
+    {
+      "claim_id": "01a80e45-1346-4122-8136-a19c8fda05b8",
+      "result_id": "fac8415e-469f-4916-aa85-d64cba57eadb"
+    },
+    {
+      "claim_id": "8ab536ed-55c5-4ec4-b031-f3078c1c1360",
+      "result_id": "678dafc4-b8c5-4cf7-896b-e80dbaad490d"
+    },
+    {
+      "claim_id": "669be723-d0dc-4cb2-bb9b-aff69ab54d19",
+      "result_id": "678dafc4-b8c5-4cf7-896b-e80dbaad490d"
+    },
+    {
+      "claim_id": "1c0267e2-24d2-4dca-b7ea-ee813fa29b97",
+      "result_id": "678dafc4-b8c5-4cf7-896b-e80dbaad490d"
+    },
+    {
+      "claim_id": "a1c1f17d-ad33-4434-99ea-c8d6cbfe12f1",
+      "result_id": "678dafc4-b8c5-4cf7-896b-e80dbaad490d"
+    },
+    {
+      "claim_id": "7f8a13b2-d1be-4a1e-a64d-ba1d23caf923",
+      "result_id": "678dafc4-b8c5-4cf7-896b-e80dbaad490d"
+    },
+    {
+      "claim_id": "73fd2bda-fc05-470b-9b55-1f7019805e16",
+      "result_id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7"
+    },
+    {
+      "claim_id": "73a53fef-171d-4792-8b97-1a9c0be0a3d5",
+      "result_id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7"
+    },
+    {
+      "claim_id": "ba738867-9b0b-4086-afae-493956815489",
+      "result_id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7"
+    },
+    {
+      "claim_id": "2e0b8dd9-89ba-43f5-91dd-091ab1b07729",
+      "result_id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7"
+    },
+    {
+      "claim_id": "43a80418-6793-4d80-818b-b9ecaf02a8e7",
+      "result_id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7"
+    },
+    {
+      "claim_id": "158ee5a4-64d8-4dd7-aeff-0255a381260a",
+      "result_id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7"
+    },
+    {
+      "claim_id": "012c078d-7113-4da3-b1fb-693089c64c2d",
+      "result_id": "a93d0d7a-f19f-46d2-af8f-3678a4b17ac9"
+    },
+    {
+      "claim_id": "8724f8fc-2ea9-49bd-8762-b8e9e957a39b",
+      "result_id": "a93d0d7a-f19f-46d2-af8f-3678a4b17ac9"
+    },
+    {
+      "claim_id": "e6dde9a8-e915-4b0e-b204-4f89820d1340",
+      "result_id": "a93d0d7a-f19f-46d2-af8f-3678a4b17ac9"
+    },
+    {
+      "claim_id": "fbe6cde9-93f4-494e-acad-69010476f93d",
+      "result_id": "9ced2664-8174-4c4c-b11d-488fb84108eb"
+    },
+    {
+      "claim_id": "0bb209af-bf41-4a0a-8bc4-91297a73fb2a",
+      "result_id": "9ced2664-8174-4c4c-b11d-488fb84108eb"
+    },
+    {
+      "claim_id": "f7a63c71-02aa-454d-978c-bf1beac925ab",
+      "result_id": "9ced2664-8174-4c4c-b11d-488fb84108eb"
+    },
+    {
+      "claim_id": "93f8b646-359d-4c4c-92c7-9daee4e110e9",
+      "result_id": "9ced2664-8174-4c4c-b11d-488fb84108eb"
+    },
+    {
+      "claim_id": "911a9022-6527-42e5-8e0d-5933665feaf5",
+      "result_id": "9ced2664-8174-4c4c-b11d-488fb84108eb"
+    },
+    {
+      "claim_id": "b93c0e60-8c1c-425d-8a54-98619d7aad28",
+      "result_id": "9ced2664-8174-4c4c-b11d-488fb84108eb"
+    },
+    {
+      "claim_id": "af850514-0e10-42d3-8371-fb48edf3e3d2",
+      "result_id": "e422d622-c4b7-4f73-a2e4-6dcabd40e5d7"
+    },
+    {
+      "claim_id": "4a2a21b1-92d5-49cb-887b-ca1695361346",
+      "result_id": "e422d622-c4b7-4f73-a2e4-6dcabd40e5d7"
+    },
+    {
+      "claim_id": "9d083e8e-68e9-469e-ac29-be345e4db24d",
+      "result_id": "e422d622-c4b7-4f73-a2e4-6dcabd40e5d7"
+    },
+    {
+      "claim_id": "b6070d0c-7c6d-4aca-91ea-40db4518c8b8",
+      "result_id": "e422d622-c4b7-4f73-a2e4-6dcabd40e5d7"
+    },
+    {
+      "claim_id": "c1636372-19de-46bd-8a3a-4af45385094f",
+      "result_id": "1fcb4dd3-9877-4522-b146-975dc095b99a"
+    },
+    {
+      "claim_id": "fb0bbf43-e6c2-49ab-9766-0ac1679ace59",
+      "result_id": "1fcb4dd3-9877-4522-b146-975dc095b99a"
+    },
+    {
+      "claim_id": "2169172e-5f51-4888-b278-2d89fd9df15b",
+      "result_id": "1fcb4dd3-9877-4522-b146-975dc095b99a"
+    },
+    {
+      "claim_id": "6ef8a58a-fc31-4184-886c-5d0292e076ee",
+      "result_id": "b720c462-95af-41b5-9134-8d77a6467ee3"
+    },
+    {
+      "claim_id": "35adf322-a54d-4d6f-ad12-6eb6e676e482",
+      "result_id": "b720c462-95af-41b5-9134-8d77a6467ee3"
+    },
+    {
+      "claim_id": "61a93ab5-d762-452a-9c0e-2ef583749640",
+      "result_id": "b720c462-95af-41b5-9134-8d77a6467ee3"
+    },
+    {
+      "claim_id": "9b38cf70-96a6-4fe9-8355-fc7a32974e9b",
+      "result_id": "b720c462-95af-41b5-9134-8d77a6467ee3"
+    },
+    {
+      "claim_id": "bf02d5ea-81a6-4575-b350-12731f8f6a92",
+      "result_id": "fb49755c-6a0a-4409-888b-4897aa8c6ca9"
+    },
+    {
+      "claim_id": "b27060b2-386e-408c-82bf-d58e1432798a",
+      "result_id": "94c90ac4-27dd-4caa-b389-d4c13f57d6ed"
+    },
+    {
+      "claim_id": "35cc31d6-6573-4875-aa1a-d24d258211ec",
+      "result_id": "94c90ac4-27dd-4caa-b389-d4c13f57d6ed"
+    },
+    {
+      "claim_id": "01ccaf81-2192-4e8a-bbfd-24123a3f8a6a",
+      "result_id": "94c90ac4-27dd-4caa-b389-d4c13f57d6ed"
+    },
+    {
+      "claim_id": "46776a57-e48d-45a7-99db-a9981bbcf359",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "f4f97d08-81a2-40b4-ae04-11029a9223b4",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "d983d5af-f3be-4fc8-91f3-242d3e808c47",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "c4750254-36f0-4f3f-aa35-b1e1a341121e",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "16436d9a-1569-4cbc-8a12-e6dd792f2e78",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "eb5711bd-0987-4acf-bd1c-9eb6c03a0d99",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "a62608f3-42a6-4a47-acb1-cccdd0548635",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "58cfb689-694c-471c-9cbb-1ac392d006db",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "b883f7f7-3f33-4e12-b3fc-834e797aff45",
+      "result_id": "1c548788-1ddf-4491-8014-01d4cb496416"
+    },
+    {
+      "claim_id": "bfd56d87-b9cb-4e22-9b36-88da05b0e466",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "30071220-b715-421e-ace1-c92da499fc25",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "aca5dd2c-6a67-49ea-8003-0184f9e97f8d",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "7c4429d8-8c84-45e5-9dae-253053d7882d",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "a377ba2b-0faf-40d8-ae9d-15e94df433de",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "0bb1a8a0-c3ba-4759-af55-e10a821fce53",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "fe1669a8-520b-4535-b2a0-f2e219b8031e",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "a4c9115c-43f1-43df-b967-4017b9dc4156",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "86579f1b-7ea3-4400-8e1b-073c04f8bd1b",
+      "result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727"
+    },
+    {
+      "claim_id": "a22982cf-2caa-4fd5-9495-aa80194fbfab",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "885c4d64-5f86-4944-943c-f12002043966",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "8ab536ed-55c5-4ec4-b031-f3078c1c1360",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "669be723-d0dc-4cb2-bb9b-aff69ab54d19",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "1c0267e2-24d2-4dca-b7ea-ee813fa29b97",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "a1c1f17d-ad33-4434-99ea-c8d6cbfe12f1",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "73fd2bda-fc05-470b-9b55-1f7019805e16",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "73a53fef-171d-4792-8b97-1a9c0be0a3d5",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "ba738867-9b0b-4086-afae-493956815489",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "2e0b8dd9-89ba-43f5-91dd-091ab1b07729",
+      "result_id": "64f95287-0bde-4622-9633-040074b4d39b"
+    },
+    {
+      "claim_id": "012c078d-7113-4da3-b1fb-693089c64c2d",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "8724f8fc-2ea9-49bd-8762-b8e9e957a39b",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "fbe6cde9-93f4-494e-acad-69010476f93d",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "0bb209af-bf41-4a0a-8bc4-91297a73fb2a",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "f7a63c71-02aa-454d-978c-bf1beac925ab",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "93f8b646-359d-4c4c-92c7-9daee4e110e9",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "911a9022-6527-42e5-8e0d-5933665feaf5",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "af850514-0e10-42d3-8371-fb48edf3e3d2",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "4a2a21b1-92d5-49cb-887b-ca1695361346",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "9d083e8e-68e9-469e-ac29-be345e4db24d",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "b6070d0c-7c6d-4aca-91ea-40db4518c8b8",
+      "result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c"
+    },
+    {
+      "claim_id": "c1636372-19de-46bd-8a3a-4af45385094f",
+      "result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e"
+    },
+    {
+      "claim_id": "fb0bbf43-e6c2-49ab-9766-0ac1679ace59",
+      "result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e"
+    },
+    {
+      "claim_id": "2169172e-5f51-4888-b278-2d89fd9df15b",
+      "result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e"
+    },
+    {
+      "claim_id": "6ef8a58a-fc31-4184-886c-5d0292e076ee",
+      "result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e"
+    },
+    {
+      "claim_id": "35adf322-a54d-4d6f-ad12-6eb6e676e482",
+      "result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e"
+    },
+    {
+      "claim_id": "61a93ab5-d762-452a-9c0e-2ef583749640",
+      "result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e"
+    },
+    {
+      "claim_id": "9b38cf70-96a6-4fe9-8355-fc7a32974e9b",
+      "result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e"
+    },
+    {
+      "claim_id": "d1665554-be50-445d-ad43-e134b2aaef6f",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "193984d6-d386-4b42-a9bd-0f0b0b2a4f99",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "e6dde9a8-e915-4b0e-b204-4f89820d1340",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "f7b97d59-f3b3-4c35-9044-8821e26276e0",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "01a80e45-1346-4122-8136-a19c8fda05b8",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "bf02d5ea-81a6-4575-b350-12731f8f6a92",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "43a80418-6793-4d80-818b-b9ecaf02a8e7",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "158ee5a4-64d8-4dd7-aeff-0255a381260a",
+      "result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1"
+    },
+    {
+      "claim_id": "b27060b2-386e-408c-82bf-d58e1432798a",
+      "result_id": "47b01567-1071-4a54-a987-acfd89bd356f"
+    },
+    {
+      "claim_id": "35cc31d6-6573-4875-aa1a-d24d258211ec",
+      "result_id": "47b01567-1071-4a54-a987-acfd89bd356f"
+    },
+    {
+      "claim_id": "01ccaf81-2192-4e8a-bbfd-24123a3f8a6a",
+      "result_id": "47b01567-1071-4a54-a987-acfd89bd356f"
+    },
+    {
+      "claim_id": "4e8e11ef-98d0-41ac-801b-a4b26cc812a5",
+      "result_id": "225d9d63-170a-404b-a91c-8eb2420206e7"
+    },
+    {
+      "claim_id": "b4b4ad95-3f10-49d7-918d-404d2e3980ed",
+      "result_id": "225d9d63-170a-404b-a91c-8eb2420206e7"
+    },
+    {
+      "claim_id": "eaa2016b-7d34-433d-b356-882b9f05d605",
+      "result_id": "225d9d63-170a-404b-a91c-8eb2420206e7"
+    },
+    {
+      "claim_id": "4b2e121c-c75c-40bc-aa7c-cd1d65c25350",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "617848c2-ad0a-4326-a4a9-6973d1005bda",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "6b6dc5cc-b601-4003-813d-ee98d4f3ccd0",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "40bdd969-4244-44e1-9de5-c33d20c1d062",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "e9ed859c-70e0-4ca8-a28c-a032a7f1a361",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "4b80057b-8b7c-4218-a3d3-cc0e1b1aca82",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "5c1a9a9d-e2b4-4a97-9da1-97caa669f002",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "a04b6d5b-e6d0-449f-9077-c957559c2b64",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "4f93dcde-b412-42a9-9441-e635409b8af6",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "d620e3d9-6f1a-4849-afc4-795174be5359",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    },
+    {
+      "claim_id": "2a4798f1-8af7-4bb9-a058-f8ed6dfa7736",
+      "result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "ffaa4060-7f66-4561-bce4-493f5b8fe355",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "fb68bb5b-51d9-4eed-8063-28709078496c",
+      "peer_result_id": "b4eaef8f-e368-456e-bf0c-c6cca3dace09",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on background claims (C1-C12). Both evaluations find these established literature-based claims well-supported and treat them as accepted context without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "4b650bdd-734c-49bc-8444-c9e16059103c",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3819800e-6195-4f9b-91ce-eb402f521304",
+      "peer_result_id": "225d9d63-170a-404b-a91c-8eb2420206e7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on computational methodology (C78-C80). Both evaluations affirm the multiscale simulation approach as valid and well-designed, with peer reviewers explicitly praising the methodology as 'highly compelling.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "92fcb09b-1522-4ef9-975e-91628317aa45",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "94c90ac4-27dd-4caa-b389-d4c13f57d6ed",
+      "peer_result_id": "47b01567-1071-4a54-a987-acfd89bd356f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty regarding generalizability (C75-C77). Both evaluations recognize these claims as speculative extensions beyond the ELP system. OpenEval notes they require validation in other IDP systems; peer reviewers explicitly cite the limitation to 'very specific architecture' as a weakness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "5d22c93f-438c-4085-84c8-a5f188f59b39",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b150dbbc-7136-49e5-b8db-c4eb69c3c0cb",
+      "peer_result_id": "1c548788-1ddf-4491-8014-01d4cb496416",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on FLIM experimental findings (C14-C15, C31-C35). Both evaluations support the fluorescence lifetime measurements demonstrating distinct physicochemical properties. Peer reviewers describe the combined methodology as 'well-designed' without raising concerns about these core experimental results. OpenEval R7 also addresses C36 and C68 not covered in peer R1.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "1e3df421-7fee-4953-8b5d-0844884f2c93",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "6b818fe6-e97a-430d-bf26-a7db1fc3bdee",
+      "peer_result_id": "1c548788-1ddf-4491-8014-01d4cb496416",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support simulation validation claims (C13, C17 in OpenEval R3). Peer R1 broadly affirms the methodology combining simulations and experiments as 'highly compelling.' OpenEval provides more specific detail about the correlation analysis validating the simulation approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "daba7385-dc82-42be-87cc-9b45077cd0a8",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "114d3712-af36-4f24-96ce-6065f01001f8",
+      "peer_result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on microphase separation findings (C21-C23, C67). Both evaluations support the density distribution analysis showing hydrophobicity-dependent guest block localization. Peer reviewers recognize this as a key contribution to understanding 'micro-structures of coacervates.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "83b9ee72-3d25-4635-a1f4-aa138b15b394",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0c44fa5b-417f-4c96-93b2-99503ac99903",
+      "peer_result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on structural organization (C24-C26, C70). Both evaluations support the characterization of non-lamellar structures. Peer reviewers affirm the study's success in investigating 'structural organization' and 'higher-resolution structures/substructures.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "85d6509d-1bf9-4727-9738-24b42c94c794",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "56dd297f-3ee1-4cbe-8366-8dad475f1962",
+      "peer_result_id": "ca3630d3-d027-4e22-ac30-f8ec9fb04727",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on interpenetrating network structure (C27-C30). Both evaluations support the contact map and radial distribution function analyses. Peer reviewers recognize these findings as valid contributions to understanding condensate micro-structures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "b3b98c73-f322-4e32-bd2f-8edd56aca461",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "fac8415e-469f-4916-aa85-d64cba57eadb",
+      "peer_result_id": "64f95287-0bde-4622-9633-040074b4d39b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on interfacial hydrophobicity correlation (C37-C38, C71). Both evaluations support the strong correlation findings. Peer reviewers affirm the study's success in connecting 'sequence to the micro-structure of coacervates.' OpenEval notes potential overstatement in C71's claim that 'a single quantity suffices.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "28f7b0a1-9727-40a5-a16f-245c053d020a",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "678dafc4-b8c5-4cf7-896b-e80dbaad490d",
+      "peer_result_id": "64f95287-0bde-4622-9633-040074b4d39b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on interfacial environment characterization (C39-C42, C16). Both evaluations support the radial distribution function analysis demonstrating interfacial microenvironment. Peer reviewers treat this as part of valid contributions to understanding molecular grammar of phase separation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "f4d5dd58-d1d8-445a-b41c-225779b6c6aa",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "9ff9da30-62aa-4efb-a725-bdc93e4a76b7",
+      "peer_result_id": "64f95287-0bde-4622-9633-040074b4d39b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sequence constraints and frustration (C43-C46, C73-C74). Both evaluations support these findings connecting sequence to structure. Peer reviewers affirm the study's contribution to understanding sequence-structure relationships, though OpenEval notes the concept remains somewhat qualitative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "7738c990-f128-437e-9f06-1908a4ce1ee0",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "a93d0d7a-f19f-46d2-af8f-3678a4b17ac9",
+      "peer_result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on high water content (C47-C48, C69). Both evaluations support the density analysis findings. Peer reviewers recognize this as part of the structural characterization contributing to understanding of condensate micro-structures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "cacc54ef-eb65-400c-b875-8cd1622616bd",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "9ced2664-8174-4c4c-b11d-488fb84108eb",
+      "peer_result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on hydrogen bonding analysis (C49-C53, C18). Both evaluations support the atomistic simulation findings on hydrogen bond patterns. Peer reviewers affirm the combined theoretical and experimental methodologies without raising concerns about these structural insights.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "cd4b489b-8b8a-4b50-bbbf-f9f28749571b",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "e422d622-c4b7-4f73-a2e4-6dcabd40e5d7",
+      "peer_result_id": "b5750c79-5301-41cf-87e3-5fc6fea63d9c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on water hydrogen bond density (C54, C56, C58-C59). Both evaluations support the analysis explaining constant per-residue hydrogen bonding. Peer reviewers treat this as part of valid structural characterization of condensate micro-structures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "1204a180-1381-42f1-8f15-2b5d1fed8b51",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "1fcb4dd3-9877-4522-b146-975dc095b99a",
+      "peer_result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on relative solvent accessibility (C60-C62). Both evaluations support the RSA analysis showing intermediate values consistent with interfacial environment. Peer reviewers describe the study as 'well-designed' and accept these structural findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "f10ae839-d5bd-4cff-a199-af3a96a757a3",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "b720c462-95af-41b5-9134-8d77a6467ee3",
+      "peer_result_id": "abba39f8-646b-4d27-b6fd-b8bcf04c215e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on peptide expansion upon condensation (C63-C66). Both evaluations support the radius of gyration analysis showing counterintuitive expansion. Peer reviewers accept this as part of the structural characterization without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "506afa50-a53c-4321-8cb0-345b567de0ea",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "fb49755c-6a0a-4409-888b-4897aa8c6ca9",
+      "peer_result_id": "3a8fbfca-a78c-47a6-959b-9ab3d68514c1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both express uncertainty about mean field behavior claims (C72). OpenEval notes potential oversimplification given demonstrated sequence constraints. Peer R6 supports the predictive relationship findings but peer R7 raises concerns about generalizability that relate to the broader applicability of simplified models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    },
+    {
+      "id": "2770a1a7-371f-4340-b620-163ab11067aa",
+      "submission_id": "4fd0af03-0fde-495d-ac87-9cd3a6145b3b",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "7a58aa8f-3199-4c83-81f0-c61ec2b2d934",
+      "peer_result_id": "1c548788-1ddf-4491-8014-01d4cb496416",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on optical tweezer mechanical perturbation findings (C36). Both evaluations support the differential response data. OpenEval notes the connection between fluorescence intensity and viscosity could be more rigorously established, while peer reviewers accept the findings without specific concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:51:35.246858Z"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C56",
+      "C69",
+      "C113",
+      "C130"
+    ],
+    "result": "The authors developed CAIS (Codon Adaptation Index of Species), a new metric based on Kullback-Leibler divergence that corrects for both GC content and amino acid composition confounders when comparing codon usage across species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly acknowledge and praise the development of CAIS. The first reviewer states 'This study develops a useful metric for quantifying codon usage adaptation - the Codon Adaptation Index of Species (CAIS)' and the second reviewer notes 'I appreciate that the authors recognize the potential issues of comparing CAI when amino acid usage varies and correct for this in CAIS.' The methodological innovation is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C118"
+    ],
+    "result": "The study demonstrates that CAI is seriously confounded with GC content, while ENC is not confounded with GC content, and CAIS has only a very weak, non-significant correlation with GC content after correction for multiple comparisons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge these findings about the relationships between different metrics and GC content. The second reviewer's theoretical concerns focus on interpretation of CAIS as a proxy for selection efficiency, not on the empirical demonstration that CAIS successfully controls for GC content confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C72",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C110",
+      "C136"
+    ],
+    "result": "The study identifies a novel positive correlation between codon adaptation (measured by both CAIS and ENC) and intrinsic structural disorder (ISD) in protein domains, showing that more highly adapted vertebrate species have more disordered protein domains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer explicitly states 'the authors identify relationships between CAIS and the presence of disordered protein domains' and notes the study 'was able to discover new results regarding selection on ISD.' The second reviewer does not challenge this finding, focusing instead on theoretical concerns about CAIS interpretation. The correlation is accepted as a valid empirical result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C93",
+      "C119",
+      "C143"
+    ],
+    "result": "CAIS provides a more reliable correlation with ISD than ENC because CAIS controls for differences in amino acid frequencies among species, while ENC does not.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer explicitly appreciates 'that the authors recognize the potential issues of comparing CAI when amino acid usage varies and correct for this in CAIS,' acknowledging this as a strength. The first reviewer accepts the findings without questioning the amino acid frequency correction. This advantage of CAIS over ENC is treated as valid by both reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C129"
+    ],
+    "result": "Correcting for local rather than genome-wide GC content removes the relationship between codon adaptation and ISD, possibly because genome-wide GC serves as an appropriately time-averaged proxy when local GC content evolves more rapidly than codon usage.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge this empirical finding or the authors' interpretation. The result is presented as part of the validation of the CAIS approach, and neither reviewer raises concerns about this aspect of the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "High differences between local and global GC content do not predict high CAIS values, suggesting that gene conversion strength is not a confounding factor impacting CAIS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer challenges this control analysis. The finding is presented as evidence that CAIS is not confounded by GC-biased gene conversion, and this interpretation is implicitly accepted by the reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C111"
+    ],
+    "result": "Both young and old protein domains show equally strong trends of increasing disorder with species' adaptedness, indicating the relationship holds across protein domain ages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not question this finding. It is presented as supporting evidence for the generality of the ISD-adaptation relationship, and neither reviewer raises concerns about this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C71",
+      "C141"
+    ],
+    "result": "Codon adaptation metrics (like CAIS) provide a more direct measure of selection effectiveness than effective population size (Ne) estimated from neutral diversity, and can better quantify the limits to weak selection important to nearly neutral theory.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The second reviewer expresses significant skepticism about this claim, stating 'I remain skeptical that shifts in CAIS across species indicates shifts in the strength of selection' and provides extensive mathematical analysis showing that 'even if sNe (i.e. the strength of natural selection) does not change between species, changes to the strength and direction of mutation bias across species could impact RSCUS.' The reviewer concludes 'one needs to be cautious when interpreting CAIS as representative of the differences in the efficiency of selection across species except under very particular circumstances.' This represents a fundamental theoretical concern about the interpretation of CAIS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C142"
+    ],
+    "result": "Both CAIS and ENC can be estimated for far more species than Ne because they require only a complete genome, without polymorphism data, mutation rate estimates, or concerns about demographic history.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer acknowledges this as a strength, noting 'The CAIS metric presented here is generally applicable to any species that has an annotated genome with protein-coding sequences.' Neither reviewer challenges the practical advantages of codon-based metrics over Ne estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C153"
+    ],
+    "result": "The study uses appropriate statistical methods including linear mixed models controlling for Pfam domain identity and Phylogenetic Independent Contrasts (PIC) to avoid phylogenetic pseudoreplication.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer challenges the statistical methodology. The use of these approaches is implicitly accepted as appropriate for the comparative analysis across species.",
+    "result_type": "MINOR"
+  }
+]

@@ -16,12 +16,12 @@
       "C91",
       "C92"
     ],
-    "result": "The authors developed and validated a GFP-based splicing reporter that responds to cellular O-GlcNAc levels. The reporter construct contains OGT intron 4 flanked by \u03b2-globin introns and exons, with GFP expression driven by a CMV promoter and separated by a T2A element. Treatment with TG (high O-GlcNAc) reduced spliced product levels, while OSMI-1 (low O-GlcNAc) increased splicing and GFP expression. The reporter responded appropriately to various O-GlcNAc modulators and OGT knockdown.",
+    "result": "The authors developed and validated a GFP-based splicing reporter that responds to cellular O-GlcNAc levels. The reporter construct contains OGT intron 4 flanked by \u03b2-globin introns and is driven by a constitutive CMV promoter with GFP separated by a T2A element. Treatment with TG (high O-GlcNAc) reduced spliced product levels, while OSMI-1 (low O-GlcNAc) increased splicing. The reporter responded appropriately to various O-GlcNAc modulators and OGT knockdown.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C92 collectively demonstrate successful construction and validation of the reporter system. Multiple orthogonal approaches (RT-PCR, northern blot, FACS, western blot) consistently show the reporter responds to O-GlcNAc levels as expected. The data in Figure 1 support all validation claims.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C43-C92 collectively demonstrate successful construction and validation of the reporter system through multiple complementary approaches (RT-PCR, northern blot, FACS, western blot). The reporter shows expected responses to multiple O-GlcNAc modulators and genetic perturbations, providing strong evidence for its validity as a tool to monitor OGT intron detention.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R2",
@@ -31,31 +31,33 @@
       "C47",
       "C48",
       "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
       "C93",
       "C94"
     ],
-    "result": "A genome-wide CRISPR screen using the GFP reporter identified SFSWAP as a regulator of OGT intron detention. The screen was performed under TG treatment conditions at 100\u00d7 and 300\u00d7 library coverage. OGT was the top hit, and the screen identified genes involved in glucose metabolism (GFAT, SLC2A1), RNA-binding proteins, m6A modification factors, and predominantly splicing factors/spliceosome components.",
+    "result": "SFSWAP was identified as a regulator of OGT intron detention through a genome-wide CRISPR knockout screen using the GFP reporter system. The screen was performed under TG treatment conditions at 100\u00d7 and 300\u00d7 library coverage. OGT was the top hit, and the screen also identified genes involved in glucose metabolism and splicing factors. Knockdown of SFSWAP increased GFP expression and enhanced splicing of both the reporter RNA and endogenous OGT, particularly under TG treatment conditions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5, C46-C49, C93-C94 describe the CRISPR screen design and results shown in Figure 2a. The identification of OGT as the top hit and glucose metabolism genes validates the screen. The enrichment of splicing factors, including SFSWAP, is well-documented in the data.",
+    "evaluation": "Claims C5, C46-C54, C93-C94 provide strong evidence through CRISPR screening, validation by siRNA knockdown, and multiple orthogonal assays (fluorescence microscopy, northern blot, RT-qPCR). The timing of enhanced intron removal coinciding with SFSWAP depletion (C54) supports a direct effect. The identification of expected positive controls (OGT, glucose metabolism genes) validates the screen quality.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
       "C40",
-      "C50",
-      "C51",
-      "C52",
       "C53",
       "C54"
     ],
-    "result": "Knockdown of SFSWAP leads to enhanced splicing of the OGT detained intron, particularly under high O-GlcNAc conditions. SFSWAP knockdown increased GFP expression in the reporter line, enhanced splicing of both reporter and endogenous OGT RNA, with ~1.8-fold increase under DMSO and ~3-fold increase under TG treatment. The timing of enhanced intron 4 removal coincided with SFSWAP mRNA decrease.",
+    "result": "Knockout/knockdown of SFSWAP leads to enhanced splicing of the OGT detained intron, particularly under high O-GlcNAc conditions, with ~1.8-fold increase under DMSO and ~3-fold increase under TG treatment. The timing of enhanced intron 4 removal coincided with SFSWAP mRNA depletion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40, C50-C54 are supported by multiple experimental approaches shown in Figure 2b-d. Fluorescence microscopy, northern blot, and RT-qPCR data consistently demonstrate that SFSWAP knockdown enhances OGT intron 4 splicing, with the effect being more pronounced under TG treatment.",
+    "evaluation": "Claims C40, C53, C54 are supported by RT-qPCR data showing quantitative changes in OGT splicing upon SFSWAP knockdown, with temporal correlation between SFSWAP depletion and splicing changes. The stronger effect under TG conditions is consistent with SFSWAP acting as a negative regulator of OGT splicing.",
     "result_type": "MAJOR"
   },
   {
@@ -69,11 +71,11 @@
       "C59",
       "C60"
     ],
-    "result": "SFSWAP is a global regulator of retained intron splicing and exon skipping that primarily acts as a negative regulator of splicing. RNA-seq analysis revealed 252 downregulated and 633 upregulated genes upon SFSWAP knockdown. Alternate splicing analysis showed the majority of changes occurred in retained introns and skipped exons. SFSWAP knockdown resulted in increased excision of retained introns globally and enhanced inclusion of skipped exons. RIs and SEs more efficiently spliced/included upon SFSWAP knockdown had higher GC content.",
+    "result": "SFSWAP is a global regulator of pre-mRNA splicing that primarily acts as a negative regulator. RNA-seq analysis revealed 252 downregulated and 633 upregulated genes upon SFSWAP knockdown. Alternate splicing analysis showed that the majority of changes occurred in retained introns and skipped exons. SFSWAP knockdown resulted in increased excision of retained introns globally and enhanced inclusion of skipped exons. RIs and SEs that are more efficiently spliced/included upon SFSWAP knockdown showed higher GC content in relevant regions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6, C55-C60 are supported by comprehensive RNA-seq and alternate splicing analysis shown in Figure 3. Multiple analysis pipelines (rMATS, MAJIQ, Whippet) show consistent trends. The GC content analysis provides additional mechanistic insight. The data strongly support SFSWAP as a global negative regulator of splicing.",
+    "evaluation": "Claims C6, C55-C60 are supported by comprehensive RNA-seq data analyzed with multiple pipelines (rMATS, MAJIQ, Whippet). The global trends are consistent across methods, and the GC content analysis provides mechanistic insight. The consistency with prior single-gene studies (C58) strengthens the conclusions. However, the differential expression analysis did not reveal functional enrichment, which somewhat limits mechanistic interpretation.",
     "result_type": "MAJOR"
   },
   {
@@ -87,11 +89,11 @@
       "C64",
       "C65"
     ],
-    "result": "SFSWAP regulates OGT intron detention by modulating decoy exon inclusion. Knockdown of SFSWAP in a UPF1 knockdown background with TG treatment led to reduced inclusion of the OGT decoy exon, as shown by RT-qPCR (~reduced inclusion) and nanopore sequencing (~5-fold reduction in reads containing decoy exon). RNA-seq analysis in the double knockdown background detected significant reduction in decoy usage.",
+    "result": "SFSWAP regulates OGT intron detention by modulating decoy exon inclusion. Knockdown of SFSWAP in a UPF1 knockdown background (with TG treatment) led to reduced inclusion of the OGT decoy exon, as shown by RT-qPCR (~5-fold reduction in sequencing reads) and RNA-seq analysis. SFSWAP promotes inclusion of the OGT decoy exon.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7, C41, C61-C65 are supported by multiple experimental approaches shown in Figure 4. The use of UPF1 knockdown to stabilize decoy-containing transcripts is appropriate. RT-qPCR, nanopore sequencing, and RNA-seq data consistently show SFSWAP promotes decoy exon inclusion, providing mechanistic insight into OGT regulation.",
+    "evaluation": "Claims C7, C41, C61-C65 are supported by multiple complementary approaches (RT-qPCR, nanopore sequencing, RNA-seq with rMATS analysis). The use of UPF1 knockdown to stabilize decoy-containing transcripts is appropriate for detecting these normally unstable isoforms. The controls showing expected decoy inclusion changes with UPF1 knockdown and TG treatment (C63) validate the experimental approach.",
     "result_type": "MAJOR"
   },
   {
@@ -104,11 +106,11 @@
       "C69",
       "C70"
     ],
-    "result": "SFSWAP may regulate decoy exon splicing globally to mediate its effect on intron detention. Global analysis of putative decoy exons (2398 novel cassette exons within known retained introns) showed altered patterns of decoy exon usage upon SFSWAP knockdown, with decoys being either more or less included. Decoy-containing retained intron events did not show a directional trend upon SFSWAP knockdown, unlike non-decoy RIs. Decoy-containing RIs showed increased intron length compared to non-decoy RIs.",
+    "result": "SFSWAP may regulate decoy exon splicing globally to mediate its effect on intron detention. Global analysis of putative decoy exons (2398 novel cassette exons within retained introns) showed altered patterns of decoy exon usage upon SFSWAP knockdown, with decoy exons being either more or less included. Decoy-containing retained intron events did not show a directional trend upon SFSWAP knockdown, unlike non-decoy-containing RIs. Decoy-containing retained introns showed increased length compared to non-decoy-containing retained introns.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8, C42, C67-C70 are supported by global decoy exon analysis shown in Figure 5. The bidirectional effects on decoy inclusion and the distinct behavior of decoy-containing RIs compared to non-decoy RIs suggest complex regulation. The length distribution analysis is consistent with prior literature (C67, C70).",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C42, C67-C70 present global decoy exon analysis, but the results are complex and bidirectional, making interpretation difficult. The list of putative decoy exons is based on computational predictions that may include false positives (as acknowledged by authors). The lack of directional trend for decoy-containing RIs (C69) contrasts with non-decoy RIs, suggesting different mechanisms, but the mechanistic basis remains unclear. Additional validation of individual decoy exons would strengthen these conclusions.",
     "result_type": "MAJOR"
   },
   {
@@ -118,11 +120,11 @@
       "C78",
       "C79"
     ],
-    "result": "SRSF1 and SF1 may act in concert with SFSWAP to mediate its splicing effects. Enrichment of SRSF1-binding motifs was observed at the 5\u2032 end of SFSWAP-dependent differentially regulated RI events and around SE events. SF1 was identified in the TG-treated CRISPR screen and SFSWAP-SF1 interactions were validated by co-immunoprecipitation.",
+    "result": "SRSF1-binding motifs were enriched at the 5\u2032 end of SFSWAP-dependent differentially regulated retained intron events and around differentially regulated exon skipping events. SF1 was identified in the CRISPR screen and SFSWAP-SF1 interactions were validated by co-immunoprecipitation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77-C79 are supported by motif enrichment analysis (Figure 6\u2014figure supplement 1), CRISPR screen data (Figure 2), and co-IP experiments (Figure 6\u2014figure supplement 2). These data suggest SFSWAP functions through interactions with other splicing factors, though the mechanistic details require further investigation.",
+    "evaluation": "Claims C77-C79 are supported by motif enrichment analysis and co-IP experiments. The identification of SF1 in the CRISPR screen and validation of SFSWAP-SF1 interaction is consistent with prior in vitro binding studies (C37). The SRSF1 motif enrichment provides additional mechanistic insight, though direct SFSWAP-SRSF1 interaction was not tested.",
     "result_type": "MINOR"
   },
   {
@@ -131,11 +133,11 @@
       "C80",
       "C81"
     ],
-    "result": "SFSWAP is highly differentially phosphorylated after short OGT inhibitor treatment. SFSWAP is one of the most highly differentially phosphorylated proteins after 30 min treatment with OSMI-2, with phosphorylation at multiple residues (primarily S604) under low O-GlcNAc conditions.",
+    "result": "SFSWAP is highly differentially phosphorylated after short treatment with OGT inhibitor OSMI-2, with phosphorylation occurring at multiple residues (primarily S604) under low O-GlcNAc conditions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C81 are supported by citation to prior work (Tan et al., 2020). While not directly demonstrated in this manuscript, the authors appropriately cite the source of this information and use it to support their mechanistic model.",
+    "evaluation": "Claims C80-C81 are supported by citation to prior phosphoproteomics work (Tan et al., 2020). While this is not original data from the current study, it provides important context for the proposed regulatory mechanism.",
     "result_type": "MINOR"
   },
   {
@@ -143,15 +145,32 @@
     "claim_ids": [
       "C82"
     ],
-    "result": "SFSWAP knockdown does not lead to complete excision of the OGT retained intron as observed upon deletion of the decoy, suggesting other factors are involved in OGT intron detention regulation.",
+    "result": "SFSWAP knockdown does not lead to complete excision of the OGT retained intron as observed upon deletion of the decoy exon, suggesting other factors are involved in regulating OGT intron detention.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C82 is supported by comparison of the current data with prior work (Park et al., 2017). This observation is important for understanding the limitations of the findings and suggests SFSWAP is a major but not sole regulator of OGT intron detention.",
+    "evaluation": "Claim C82 is supported by comparison of experimental data with prior work showing complete splicing upon decoy deletion. This observation is important for understanding the limitations of SFSWAP's role and suggests additional regulatory factors remain to be identified.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Multiple lines of evidence from prior work support the model that decoy exons require spliceosome recognition but are rarely spliced. These include: mutation of decoy splice sites leading to constitutive splicing, U2AF binding to decoy splice sites, morpholino blocking of decoy splice sites promoting constitutive splicing, heterologous decoy insertion causing IR, CRISPR deletion of decoy causing constitutive splicing, and low frequency of decoy inclusion in mature transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 summarize prior work on decoy exon function. C76 is supported by data from the current study (nanopore sequencing), while C71-C75 are supported by citations to prior literature. These claims provide important mechanistic context for interpreting the SFSWAP results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
     "claim_ids": [
       "C1",
       "C2",
@@ -189,19 +208,13 @@
       "C38",
       "C39",
       "C58",
-      "C66",
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75",
-      "C76"
+      "C66"
     ],
-    "result": "Background information on O-GlcNAcylation, intron detention, OGT regulation, decoy exons, and SFSWAP is provided based on established knowledge and prior literature.",
+    "result": "Background information on O-GlcNAcylation, OGT/OGA regulation, intron detention, decoy exons, and SFSWAP is provided, drawing from established knowledge and prior literature.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C4, C9-C39, C58, C66, C71-C76 provide essential background context supported by appropriate citations to prior literature. These claims establish the scientific foundation for the current work and are well-documented in the field.",
+    "evaluation": "Claims C1-C4, C9-C39, C58, C66 provide background context supported by citations to prior literature and established knowledge in the field. These claims are appropriately referenced and provide necessary context for the study.",
     "result_type": "MINOR"
   }
 ]

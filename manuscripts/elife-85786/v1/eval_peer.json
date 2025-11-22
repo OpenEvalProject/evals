@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C32",
+      "C95",
+      "C100",
+      "C102"
+    ],
+    "result": "Pynapple is a lightweight Python package designed around five versatile time series objects (Ts, Tsd, TsGroup, TsdFrame, IntervalSet) that support manipulation of time-resolved neuroscience data. The package was developed to be lightweight, stable, and simple, centered around manipulation of abstract objects common to most neurophysiological and behavioral datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the value of Pynapple's core design. The editor states it 'provides a set of data objects and methods that have the potential to simplify data analysis' and represents 'a valuable contribution to the field.' Reviewer 1 notes the authors 'recognized that there are some common elements of many analyses, particularly those involving timeseries, and their object-oriented architecture takes advantage of those commonalities.' Reviewer 2 states 'Pynapple and Pynacollada have the potential to become very valuable and foundational tools.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C75",
+      "C76"
+    ],
+    "result": "Object-oriented programming makes the programming environment efficient for data analysis in systems neuroscience, reduces coding errors, and is a powerful tool for managing complexity in scientific programming. Objects can enforce internal consistency, reducing data inconsistencies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly affirms this design choice, stating 'their object-oriented architecture takes advantage of those commonalities to simplify the overall analysis process.' No reviewer challenges the object-oriented approach or its claimed benefits, indicating implicit acceptance of these design principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C33",
+      "C41",
+      "C81",
+      "C103",
+      "C116"
+    ],
+    "result": "Pynapple is built with objects from the Pandas library (Tsd extends Series, TsdFrame extends DataFrame, TsGroup extends UserDict, IntervalSet extends DataFrame). The package relies on a minimum number of highly stable dependencies, and Pandas methods are already highly optimized.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer questions the technical implementation or dependency choices. Reviewer 1 notes the package has 'a core set of applications and another with more advanced applications, with the goal of both providing a streamlined base for analyses,' which implicitly accepts the technical foundation. The lack of criticism about dependencies or implementation suggests acceptance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C77",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C106"
+    ],
+    "result": "Pynapple includes an I/O layer that loads multiple dataset types and writes to NWB format. It can load data from popular preprocessing pipelines (CNMF-E, Phy, NeuroSuite, Suite2P). The inheritance approach ensures long-term stability, and users can develop custom I/O classes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly affirms this feature: 'well written analysis routines that carry out a core set of functions and can import data from multiple formats.' Reviewer 2 notes 'NWB still has a steep learning curve and Pynapple offers a user-friendly toolset that can also serve as a wrapper for NWB,' indicating the I/O layer successfully addresses a community need.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C80",
+      "C86",
+      "C87",
+      "C89",
+      "C96"
+    ],
+    "result": "Pynapple includes foundational analyses: computing neural tuning curves (1D and 2D, discrete and continuous features), auto/cross-correlograms, peri-event alignment, and Bayesian decoding. These analyses are easy to use, requiring few parameters while maximizing generalizability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'With more examples and as a live coding notebook, the evidence was judged to be compelling,' indicating the foundational analyses were demonstrated convincingly. Reviewer 1 notes the package provides 'well written analysis routines that carry out a core set of functions,' affirming the foundational analysis capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C67",
+      "C68",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C110"
+    ],
+    "result": "Pynacollada is a separate collaborative repository for high-level functions, structured as Jupyter notebooks or Python scripts. It currently includes libraries for spike waveform processing, EEG analysis, video tracking, neural manifold analysis, and sharp wave-ripple detection. This separation keeps the core Pynapple package stable while allowing integration of new advances.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes 'a separate package of more advanced routines (Pynacollada)' as part of the contribution. Reviewer 1 states 'The package is separated into a core set of applications and another with more advanced applications, with the goal of both providing a streamlined base for analyses and allowing for implementations/inclusion of more experimental approaches,' explicitly affirming the separation strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C88",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Pynapple can analyze diverse data types (intracellular recordings, extracellular recordings in freely moving mice, calcium imaging in head-fixed mice, recordings in non-human primates). Five openly available datasets were reanalyzed to demonstrate versatility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'With more examples and as a live coding notebook, the evidence was judged to be compelling,' indicating the demonstrations across diverse datasets were convincing. No reviewer questions the versatility claims or the reanalysis demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C42",
+      "C43",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Pynapple's main objects and properties will remain stable for the foreseeable future. Current development is underway to improve computation speed. Future plugin libraries will include an automated datalogger, online visualizer, and parallel computing package.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes 'It would be slightly more accurate in the Highlights section to say \"A lightweight and standalone package facilitating long-term backward compatibility\" but this is a very minor issue,' suggesting some uncertainty about the backward compatibility claim. The future development claims are speculative and not directly evaluated by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C38",
+      "C111",
+      "C112"
+    ],
+    "result": "Current neuroscience data analysis relies on custom lab-specific code susceptible to error. Most existing toolboxes focus on high-level analysis of specific data types and lack versatility. Other software have rigidly defined objects leading to lack of versatility. Pynapple offers a more flexible working environment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly affirms the problem statement: 'an investigator might want to generate plots that relating one time series...to another...In most cases, each individual scientist writes their own code to carry out these analyses, and thus the same basic analysis is coded repeatedly. This is problematic for several reasons, including the inefficiency.' The reviewer states 'The authors have identified a key need in the community.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Pynapple is currently only available through Python, requiring transition for MATLAB/Julia users. Python code may run slower than other languages. The object-oriented design could challenge users unfamiliar with this approach. Detailed documentation with examples addresses these concerns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The revised version of the paper does a very good job of addressing previous concerns,' indicating that limitations and mitigation strategies (like documentation) were adequately addressed. No reviewer disputes the stated limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C97",
+      "C99",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "Pynapple provides a common framework for neuroscience data analysis that supports open and reproducible code, enables interoperability across analysis pipelines (supporting FAIR principles), and provides a foundation for community-driven development. Accessibility is the guiding axiom.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states this 'represents a valuable contribution to the field.' Reviewer 2 states 'Pynapple and Pynacollada have the potential to become very valuable and foundational tools for the analysis of neurophysiological data,' affirming the framework's community value. Reviewer 1 notes the authors 'identified a key need in the community.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C78",
+      "C79"
+    ],
+    "result": "All Pynapple objects have a time_support property tracking valid data intervals. Timestamps default to seconds. Core methods include restrict, count, threshold, value_from, intersect, union, and set_diff. Users don't need to remember data properties like sampling frequency after object construction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer questions these technical features or methods. The lack of criticism about core functionality, combined with Reviewer 1's statement that the package provides 'well written analysis routines,' suggests implicit acceptance of these design features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C107",
+      "C108"
+    ],
+    "result": "Pynapple assumes raw data have been preprocessed. Once loaded, the same code can analyze different datasets. The package can be used without the I/O layer for on-the-fly analysis. The customizable data loader allows future file formats to be loaded without major package overhauls.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 affirms the interoperability: the package can 'import data from multiple formats.' Reviewer 2 notes Pynapple 'can also serve as a wrapper for NWB,' supporting the flexibility claims. No reviewer challenges the preprocessing assumption or flexibility features.",
+    "result_type": "MINOR"
+  }
+]

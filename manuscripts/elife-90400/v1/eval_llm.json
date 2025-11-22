@@ -2,83 +2,64 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C4",
+      "C5",
       "C22",
       "C23",
       "C24",
       "C25",
       "C26",
-      "C4"
-    ],
-    "result": "The crystal structure of the HipBSTD233Q complex reveals a heterohexameric architecture that differs markedly from E. coli HipBA but resembles S. oneidensis HipBA. The structure consists of two HipST toxin-antitoxin complexes separated by a HipB dimer.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C22-C26 and C4 are well-supported by crystallographic data at 2.9 \u00c5 resolution with good refinement statistics (R=19.5%, Rfree=22.8%). The structural comparisons are clearly documented in Figure 1, showing distinct architectural differences from E. coli HipBA and similarities to S. oneidensis HipBA.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R2",
-    "claim_ids": [
       "C27",
       "C28",
       "C29",
       "C30",
       "C31",
-      "C32",
-      "C33",
-      "C34"
-    ],
-    "result": "HipB functions as a transcriptional regulator rather than an antitoxin. It contains a DNA-binding HTH motif and forms a homodimer. HipB alone is necessary and sufficient for transcriptional repression of the hipBST promoter.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27-C34 are supported by structural data (Figure 1b) showing the HTH motif and homodimer formation, sequence analysis showing absence of key antitoxin features (Figure 1\u2014figure supplement 1a), and functional transcriptional reporter assays (Figure 1\u2014figure supplement 2) demonstrating that HipB alone represses transcription.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
       "C37",
       "C38",
       "C39",
       "C40",
       "C41",
       "C42",
-      "C43",
-      "C5"
+      "C43"
     ],
-    "result": "HipS is structurally homologous to the N-subdomain 1 of HipA and interacts tightly with HipT. The HipST heterodimer fold is structurally very similar to the longer HipA kinase, with HipS corresponding to HipA's N-subdomain 1.",
+    "result": "The crystal structure of HipBSTD233Q reveals a heterohexameric complex structurally distinct from E. coli HipBA but similar to S. oneidensis HipBA. HipS is structurally homologous to the N-subdomain 1 of HipA and interacts tightly with HipT, while HipB functions as a transcriptional regulator rather than an antitoxin.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C37-C43 and C5 are well-supported by crystallographic data showing the HipS structure (Figure 1b), structural alignments with HipA (Figure 1\u2014figure supplement 3b), and sequence analysis (Figure 1\u2014figure supplement 1b). The structural homology is clearly demonstrated through multiple lines of evidence.",
+    "evaluation": "Claims C4, C22-C43 collectively provide strong structural evidence from crystallography (2.9 \u00c5 resolution, R=19.5%, Rfree=22.8%) showing the HipBST complex architecture. The structural comparisons with HipBA from E. coli and S. oneidensis are well-documented with appropriate figures. The absence of key HipB C-terminal features found in HipA-inhibiting systems supports the functional interpretation.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R4",
+    "result_id": "R2",
     "claim_ids": [
+      "C6",
       "C44",
       "C45",
       "C46",
       "C47",
       "C48",
+      "C49",
       "C50",
       "C51",
       "C52",
       "C53",
-      "C6"
+      "C54",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
     ],
-    "result": "HipS inhibits HipT kinase activity through insertion of a conserved Trp65 residue into the active site, which maintains the Gly-rich loop in an inactive outward conformation. The W65A mutation abolishes HipS's ability to neutralize HipT toxicity in vivo.",
+    "result": "HipS inhibits HipT kinase activity through insertion of a conserved Trp65 residue into the active site, preventing the Gly-rich loop from transitioning to an active conformation. The W65A mutation abolishes HipS antitoxin function in vivo.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C44-C48, C50-C53, and C6 are strongly supported by structural data showing Trp65 insertion into the active site cavity (Figure 2a), sequence conservation analysis (Figure 2\u2014figure supplement 1a), structural/electrostatic differences from HipA (Figure 2b), and functional validation through spot assays and growth curves (Figure 2c, Figure 2\u2014figure supplement 1b) demonstrating loss of neutralization with W65A mutation.",
+    "evaluation": "Claims C6, C44-C54, C97-C100 provide converging structural (Figure 2a,b showing Trp65 insertion) and functional evidence (Figure 2c showing loss of neutralization with W65A mutant). The structural basis is clearly demonstrated, and the functional validation through mutagenesis strongly supports the proposed mechanism. The conservation analysis (C50, C99) adds evolutionary support.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R5",
+    "result_id": "R3",
     "claim_ids": [
-      "C54",
+      "C7",
       "C55",
       "C56",
       "C57",
@@ -86,97 +67,99 @@
       "C59",
       "C60",
       "C61",
-      "C7"
+      "C62",
+      "C63"
     ],
-    "result": "Both serine residues (Ser57 and Ser59) in the HipT Gly-rich loop are important for toxicity. Phosphomimetic mutations (DIS, SID) retain toxicity, but phosphorylation at Ser57 (DIS variant) prevents HipS neutralization. Alanine substitutions (AIS, SIA) abolish or greatly reduce toxicity.",
+    "result": "Both Ser57 and Ser59 in the HipT Gly-rich loop are essential for toxicity. Phosphomimetic mutations at Ser57 (DIS variant) prevent HipS neutralization, while Ser59 phosphomimetic (SID) does not, indicating differential roles for the two phosphorylation sites.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54-C61 and C7 are well-supported by growth assays in liquid culture (Figure 3a) showing differential effects of phosphomimetic and phosphoablative mutations on toxicity and HipS neutralization. The data clearly demonstrate that Ser57 phosphorylation negatively impacts HipS function while both serines are required for toxicity.",
+    "evaluation": "Claims C7, C55-C63 are supported by systematic mutagenesis experiments (Figure 3a) showing growth inhibition patterns with phosphomimetic (D) and phosphoablative (A) substitutions. The differential effect on HipS neutralization is clearly demonstrated. However, the mechanistic interpretation relies partly on inference from structural data rather than direct biochemical measurements of HipS binding affinity.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R6",
+    "result_id": "R4",
     "claim_ids": [
-      "C63",
       "C64",
       "C65",
       "C66",
       "C67",
       "C68",
-      "C72"
-    ],
-    "result": "Crystal structures of HipBST AIS and SIA variants reveal that phosphorylation at Ser57 or Ser59 does not affect the Gly-rich loop conformation in the HipBST complex context. The loop remains in an outward, inactive conformation regardless of phosphorylation state.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C68 and C72 are supported by crystallographic data at 2.4 \u00c5 (AIS) and 3.4 \u00c5 (SIA) resolution showing phosphorylation at the respective serine positions (Figure 3\u2014figure supplement 1) and structural analysis revealing the outward loop conformation in both cases (Figure 3b). This represents a clear departure from HipA behavior.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
+      "C69",
       "C70",
       "C71",
+      "C72",
       "C73",
       "C74",
-      "C93"
+      "C75",
+      "C76",
+      "C77",
+      "C78"
     ],
-    "result": "Auto-phosphorylation occurs in both AIS and SIA variants despite their lack of toxicity, demonstrating that the serine residues are important for toxicity but not for auto-phosphorylation activity. The lack of toxicity likely relates to target binding rather than kinase inactivation.",
+    "result": "Crystal structures of HipBST AIS and SIA variants reveal that phosphorylation at either Ser57 or Ser59 does not alter the outward conformation of the Gly-rich loop in the HipBST complex. Auto-phosphorylation occurs in both variants despite lack of toxicity, suggesting the serine residues affect target binding rather than kinase activity per se.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C70-C71, C73-C74, and C93 are supported by Phos-tag SDS-PAGE analysis (Figure 3c) confirming phosphorylation states, combined with structural data (Figure 3b) showing maintained kinase activity. The inference about target binding is reasonable given the maintained auto-phosphorylation activity but loss of toxicity.",
+    "evaluation": "Claims C64-C78 are supported by high-resolution crystal structures (2.4 \u00c5 and 3.4 \u00c5) with clear electron density for phosphorylated residues (Figure 3\u2014figure supplement 1), complemented by Phos-tag gel analysis (Figure 3c). The structural interpretation that the Gly-rich loop remains in an outward conformation is well-documented. The inference about target binding (C76) is logical but speculative and would benefit from direct target binding assays.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R5",
     "claim_ids": [
-      "C75",
-      "C76"
-    ],
-    "result": "The position of the Ser59 phosphate group in the AIS variant corresponds closely to the gamma-phosphate of ATP in HipA's active site, suggesting phosphorylation may stabilize the active site similarly to ATP.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C75-C76 are based on structural comparison (Figure 3d) showing positional correspondence, but the functional significance is speculative. While the structural observation is valid, the claim that phosphorylation stabilizes the active site 'in a similar way to ATP' requires additional biochemical validation to confirm this proposed mechanism.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C77",
-      "C78",
+      "C8",
       "C79",
       "C80",
       "C81",
-      "C8"
-    ],
-    "result": "SAXS analysis reveals that the HipBST complex is dynamic in solution in a phosphoserine-dependent manner. The complexes show similar overall sizes and shapes but differ in flexibility, with partial oligomerization observed. The phosphorylation state of HipT influences HipS binding and inhibitory function.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77-C81 and C8 are supported by SAXS data (Figure 4a) showing similar intensity curves, biochemical data showing HipS absence in SIS variant (Figure 4\u2014figure supplement 1a), and rigid-body modeling revealing phosphorylation-dependent conformational differences (Figure 4b). The maximum diameter analysis and oligomerization state determination provide additional support.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
       "C82",
       "C83",
       "C84",
       "C85",
-      "C86"
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
     ],
-    "result": "Phylogenetic analysis of 48 HipT orthologues reveals that the kinases largely separate by Gly-rich loop configuration. The largest branch (S\u03a8S group) contains kinases with two serine residues separated by a small aliphatic amino acid. Ser57 appears more conserved and functionally important than Ser59.",
+    "result": "SAXS analysis reveals that the HipBST complex is dynamic in solution in a phosphorylation-dependent manner. The SIS variant lacks HipS and shows conformational differences compared to SID and DIS variants, indicating that phosphorylation state influences HipS binding and complex flexibility.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C82-C86 are supported by phylogenetic tree analysis (Figure 5a) showing clear separation by loop configuration, sequence alignment data (Figure 5b-d) demonstrating conservation patterns, and functional data from earlier claims supporting Ser57's greater importance. The phylogenetic analysis is appropriately conducted with bootstrap values indicated.",
+    "evaluation": "Claims C8, C79-C90 are supported by comprehensive SAXS data (Figure 4) including Guinier analysis, pair distance distribution functions, and rigid-body modeling. The observation that HipS is missing in the SIS purification (C79) is biochemically validated. The SAXS modeling shows good fits (\u03c7\u00b2 values 2.2-4.2) and reveals phosphorylation-dependent structural differences. However, the interpretation of dynamic behavior (C88, C90) is somewhat speculative and the partial oligomerization complicates interpretation.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R11",
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Phylogenetic analysis of 48 HipT orthologues reveals that the Gly-rich loop configuration separates kinases into distinct groups, with the largest S\u03a8S group containing two serine residues. Ser57 appears more conserved and functionally important than Ser59 across HipT kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by phylogenetic analysis (Figure 5) with bootstrap confidence values indicated. The sequence conservation patterns are clearly documented through sequence logos and alignments. The inference about Ser57 being more important (C94, C96) is supported by both phylogenetic conservation and functional data from earlier claims. The analysis appropriately uses 48 known orthologues from prior work (Gerdes et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "HipB is necessary and sufficient for transcriptional repression of the hipBST promoter, while HipS and HipT alone do not affect transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by transcriptional reporter assays (Figure 1\u2014figure supplement 2) using a lacZ fusion system. The experimental design appropriately tests individual components and combinations. The results clearly demonstrate HipB's role in transcriptional regulation, supporting the structural interpretation that HipB functions as a transcriptional regulator rather than antitoxin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
     "claim_ids": [
       "C35",
       "C36"
@@ -185,44 +168,54 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C35-C36 are based on structural superposition (Figure 1\u2014figure supplement 3a) showing conserved positively charged residues, but this is inferential without direct DNA-binding data. While the structural comparison is reasonable and the inference is logical, experimental validation of DNA binding would be needed to fully support this claim.",
+    "evaluation": "Claims C35-C36 are based on structural superposition (Figure 1\u2014figure supplement 3a) showing conserved positively charged residues. However, this is purely inferential without direct DNA binding experiments. The claim would be strengthened by electrophoretic mobility shift assays (EMSAs) or other direct DNA binding measurements. The structural comparison is reasonable but insufficient to definitively establish DNA binding mode.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R12",
+    "result_id": "R9",
     "claim_ids": [
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92"
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
     ],
-    "result": "Comparison with L. pneumophila HipT reveals structural differences in target-binding loops and distinct phosphorylation-dependent behaviors. The interaction between phosphoserine and the RxDR motif appears to be a unique feature of HipT kinases not found in HipA.",
+    "result": "Comparison with HipT from Legionella pneumophila reveals structural differences in target-binding loops and N-terminal minidomains, suggesting different targets. HipTLp shows a unique phosphoserine stabilization mechanism involving an RxDR motif not observed in HipA.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C87 and C89-C92 are supported by structural comparisons with published HipTLp structures (Figure 6\u2014figure supplement 1) and citations to prior work. However, C88 (different targets) is speculative based on structural differences. The RxDR motif interaction is well-supported by structural data and comparison with HipA.",
+    "evaluation": "Claims C102-C113 appropriately cite recent structural work (Lin et al., 2023; Zhen et al., 2022; Koo et al., 2022) and make reasonable comparisons. The structural differences are documented (Figure 6\u2014figure supplement 1). However, the inference about different targets (C104) is speculative. The discussion of the RxDR motif and its unique role in HipT (C110) is well-supported by structural comparison with HipA. Some claims (C112, C113) are highly speculative about potential interactions.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R13",
+    "result_id": "R10",
     "claim_ids": [
-      "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98"
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
     ],
-    "result": "The authors propose a complex network model where auto-phosphorylation controls both target phosphorylation and HipS binding, with HipS functioning as an allosteric enzymatic modulator rather than a classical antitoxin that simply blocks the active site.",
+    "result": "The authors propose a complex network model where residues involved in ATP binding, catalysis, phosphoserine residues, and HipS form interconnected interactions. HipS functions as an allosteric enzymatic modulator rather than a simple active site blocker.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C94-C98 represent a mechanistic model based on inference from the structural and functional data. While the model is consistent with the observations, many aspects are speculative (C94, C97) or inferential (C95, C96, C98). The model provides a reasonable framework but requires additional experimental validation, particularly regarding the dynamics of auto-phosphorylation with HipS bound and the precise affinity modulation by phosphorylation.",
+    "evaluation": "Claims C115-C123 present an integrative model (Figure 6) synthesizing structural and functional data. While C115 is well-supported by experimental data, many subsequent claims (C116, C117, C122) are explicitly speculative or acknowledge gaps in knowledge. The network model (C118-C119) is a reasonable interpretation but lacks direct experimental validation of the proposed interconnections. The characterization of HipS as an allosteric modulator (C123) is an interesting conceptual framework but would benefit from quantitative binding and kinetic studies.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R14",
+    "result_id": "R11",
     "claim_ids": [
       "C1",
       "C2",
@@ -239,27 +232,13 @@
       "C18",
       "C19",
       "C20",
-      "C21",
-      "C62",
-      "C69"
+      "C21"
     ],
-    "result": "Background claims establishing prior knowledge about TA systems, HipBA systems, and the functional differences between HipA and HipT regulation mechanisms.",
+    "result": "Background claims establishing prior knowledge about HipBA and HipBST toxin-antitoxin systems, including HipA kinase activity, target specificity, regulation mechanisms, and the tripartite nature of HipBST.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C3, C9-C21, C62, and C69 represent established knowledge from prior work, appropriately cited throughout. These provide essential context for understanding the novel findings about HipBST. All claims are well-supported by appropriate citations to the literature.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C49"
-    ],
-    "result": "Glu63 is conserved in the N-subdomain 1 of longer HipA toxins and therefore less likely contributes to functional differences between HipBA and HipBST systems.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C49 is supported by sequence analysis (Figure 1\u2014figure supplement 1b) showing conservation of Glu63. The inference that it is less likely to contribute to functional differences is reasonable given the conservation, though this remains somewhat speculative without direct functional testing.",
+    "evaluation": "Claims C1-C21 represent established knowledge from prior literature, appropriately cited throughout. These provide necessary context for the current work and are not novel findings of this study. The citations appear accurate and appropriate for the claims made.",
     "result_type": "MINOR"
   }
 ]

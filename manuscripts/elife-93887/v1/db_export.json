@@ -1,0 +1,1953 @@
+{
+  "submission": {
+    "id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-22T00:12:46.419677Z",
+    "updated_at": "2025-11-22T00:12:46.419677Z"
+  },
+  "content": [
+    {
+      "id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "content_type": "manuscript",
+      "content_text": "# Individuals with anxiety and depression use atypical decision strategies in an uncertain world\n\n## Authors\n\n- Zeming Fang<sup>1</sup> ([ORCID: 0000-0002-8091-4413](https://orcid.org/0000-0002-8091-4413))\n- Meihua Zhao<sup>3</sup> ([ORCID: 0000-0002-2238-0513](https://orcid.org/0000-0002-2238-0513))\n- Ting Xu<sup>4</sup> ([ORCID: 0000-0003-1590-9025](https://orcid.org/0000-0003-1590-9025))\n- Yuhang Li<sup>5</sup> ([ORCID: 0009-0004-5934-2635](https://orcid.org/0009-0004-5934-2635))\n- Hanbo Xie<sup>6</sup> ([ORCID: 0000-0003-1133-8544](https://orcid.org/0000-0003-1133-8544))\n- Peng Quan<sup>7</sup> ([ORCID: 0000-0001-5416-536X](https://orcid.org/0000-0001-5416-536X))\n- Haiyang Geng<sup>8</sup> ([ORCID: 0000-0001-6115-807X](https://orcid.org/0000-0001-6115-807X))\n- Ru-Yuan Zhang<sup>1</sup> ([ORCID: 0000-0002-0654-715X](https://orcid.org/0000-0002-0654-715X)) \u2020\n\n### Affiliations\n\n1. Shanghai Mental Health Center, School of Medicine, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n2. School of Psychology, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n3. School of Psychology, South China Normal University Guangzhou China ([ROR:01kq0pv72](https://ror.org/01kq0pv72))\n4. The Center of Psychosomatic Medicine, Sichuan Provincial Center for Mental Health, Sichuan Provincial People's Hospital, University of Electronic Science and Technology of China Chengdu China ([ROR:04qr3zq92](https://ror.org/04qr3zq92))\n5. Centre of Centre for Cognitive and Brain Sciences, Institute of Collaborative Innovation, University of Macau Macau China ([ROR:01r4q9n85](https://ror.org/01r4q9n85))\n6. Department of Psychology, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))\n7. School of Humanities and Management, Guangdong Medical University Dongguan China ([ROR:04k5rxe29](https://ror.org/04k5rxe29))\n8. Tianqiao and Chrissy Chen Institute for Translational Research Shanghai China\n9. Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, School of Psychology and Cognitive Science, East China Normal University Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrevious studies on reinforcement learning have identified three prominent phenomena: (1) individuals with anxiety or depression exhibit a reduced learning rate compared to healthy subjects; (2) learning rates may increase or decrease in environments with rapidly changing (i.e. volatile) or stable feedback conditions, a phenomenon termed learning rate adaptation; and (3) reduced learning rate adaptation is associated with several psychiatric disorders. In other words, multiple learning rate parameters are needed to account for behavioral differences across participant populations and volatility contexts in this flexible learning rate (FLR) model. Here, we propose an alternative explanation, suggesting that behavioral variation across participant populations and volatile contexts arises from the use of mixed decision strategies. To test this hypothesis, we constructed a mixture-of-strategies (MOS) model and used it to analyze the behaviors of 54 healthy controls and 32 patients with anxiety and depression in volatile reversal learning tasks. Compared to the FLR model, the MOS model can reproduce the three classic phenomena by using a single set of strategy preference parameters without introducing any learning rate differences. In addition, the MOS model can successfully account for several novel behavioral patterns that cannot be explained by the FLR model. Preferences for different strategies also predict individual variations in symptom severity. These findings underscore the importance of considering mixed strategy use in human learning and decision-making and suggest atypical strategy preference as a potential mechanism for learning deficits in psychiatric disorders.\n\n## Introduction\n\nIntelligent behavior requires the ability to adapt to an ever-changing environment. For example, foraging animals must be able to track the changing abundance or scarcity of food resources in different locations and at different timescales. Motor control demands the ability to control limbs that constantly vary in their dynamics (due to fatigue, injury, growth, etc.). Human competitors in all kinds of games or sports must be able to learn and adapt to their opponents\u2019 changing strategies. To understand the mechanisms of these abilities, researchers have examined how (and how well) human agents can learn option values and track the dynamic changes in values in a volatile reversal learning task (Behrens et al., 2007). Unlike the traditional probabilistic reversal learning task where the reward probabilities of two options switch only once (Cools et al., 2002), this paradigm includes two volatility conditions (see Figure 1B): the reward probabilities of the two options remain constant in one condition (i.e. the stable condition) and switch periodically in the other (i.e. the volatile condition).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig1-v1.jpg)\n\n**Figure 1.:** (A) In each trial, participants were presented with two stimuli associated with their potential feedback magnitude. They were instructed to choose one of the two stimuli to receive feedback, but only one stimulus would result in feedback. Participants were required to complete tasks across four experimental contexts. (B) Each run consisted of 90 trials in the stable context and 90 trials in the volatile context. In the stable context, the true environmental probability remains unchanged, while in the volatile context, the probability flips every 20 trials.\n\nPrevious studies have often summarized human behaviors in this paradigm using the parameter of learning rate, which describes the efficiency with which current information is used to promote learning. These studies typically fit a specific learning rate to each context, resulting in different learning rate values for different contexts. Using this method, previous studies have reached two important conclusions. First, human participants are able to flexibly adapt to changes in environmental volatility, as evidenced by increasing and decreasing the learning rate in response to volatile and stable conditions. This observation is often referred to as the learning rate adaptation effect. Second, individuals with several psychiatric disorders, including anxiety and depression, have been found to have a reduced ability to adapt their learning rate in response to environmental volatility (Behrens et al., 2007; Browning et al., 2015; Gagne et al., 2020). This hallmark can also be indicative of atypical behaviors (Browning et al., 2015; Gagne et al., 2020), psychosis (Powers et al., 2017), and autism spectrum disorder (Lawson et al., 2017).\n\nHowever, the current approach to understanding human behaviors using learning rates has two main limitations. First, the traditional approach increases the number of learning rates as the number of contexts increases, thereby increasing the risk of overfitting. Second, this approach implicitly assumes that learning rate differences can account for all behavioral differences between stable/volatile rewarding contexts and group differences between healthy controls and patients with psychiatric disorders. However, the learning rate is not directly observable and is often estimated by model fitting, which limits its interpretability. The goal of this work is to offer an alternative explanation for human learning behaviors in volatile reversal learning tasks, moving beyond the traditional focus on learning rates. We hypothesize that the differences between stable/volatile contexts and between healthy/patient groups mainly arise from preferences for different decision strategies (Daw et al., 2011; Fan et al., 2023). We, therefore, constructed a novel MOS model, which postulates that an observer makes decisions by combining three strategies that balance reward and cognitive resources (Gershman et al., 2015; Griffiths et al., 2015). First, we consider the most rewarding strategy, Expected Utility (EU), which guides decision-making based on the expected utility of each option (calculated as probability multiplied by reward magnitude) (Von and Morgenstern, 1947). This EU strategy yields the maximum amount of reward, but the utility calculation itself consumes considerable cognitive resources. Alternatively, humans may choose simpler strategies, e.g., the magnitude-oriented (MO) strategy, in which only the reward magnitude was considered during the decision process, and the habitual (HA) strategy, in which people simply repeat decisions frequently made in the past regardless of reward magnitude (Wood and R\u00fcnger, 2016). We use the preference for these decision strategies to roughly estimate participants\u2019 decision styles in the volatile reversal task.\n\nIn this study, we apply and examine the MOS model on a dataset previously reported by Gagne et al., 2020 and demonstrate its ability to explain the impaired learning behaviors of individuals diagnosed with depression and anxiety. First, we show that depression and anxiety patients exhibit three signature behavioral patterns indicative of inferior task performance. The MOS model not only qualitatively captures all three behavioral patterns but also quantitatively provides a better fit to the behavioral data than previous models. We then revisit the classical learning rate adaptation theory and show that strategy preference readily accounts for two key learning rate adaptation effects observed in prior research. Our work presents an alternative explanation for the effects of environmental volatility on human learning and highlights the importance of understanding atypical patient behaviors through the lens of decision-making strategies rather than solely focusing on learning rate.\n\n## Results\n\nWe examined human volatile reversal learning behaviors in a public data set reported by Gagne et al., 2020. In a volatile reversal learning task, participants chose between two shaped stimuli to receive feedback. Participants received the presented feedback (e.g. \u201827\u2019 on the \u2018square\u2019) when choosing the feedback stimulus; otherwise, they received \u20180\u2019 (Figure 1A). The task was divided into four contexts: reward or aversive feedback types crossed with stable or volatile conditions. Participants earned points, which were convertible to monetary rewards, in the reward context or received electric shocks in the aversive context. In stable, one stimulus had a higher fixed feedback probability (always 75%), while in volatile, the dominant stimulus switched every 20 trials (either 20% or 80%), requiring active learning of stimulus-feedback contingencies (Figure 1B). Each participant was instructed to complete two runs of the volatile reversal learning task, one in the reward context and the other in the aversive context. Each run consisted of 180 trials, with 90 trials in the stable context and 90 in the volatile context (Figure 1B). No additional hints were provided about the transition from one context to another; therefore, participants needed to infer the current context on their own.\n\nEighty-six participants took part in this experiment, comprising 20patients with major depressive disorder (MDD), 12patients with generalized anxiety disorder (GAD), and 54 healthy control participants. In this article, we grouped the MDD and GAD individuals into a patient group and the remaining 54 participants into a healthy control group. Please refer to the Materials and methods section for a more detailed introduction to the methods and participant groups.\n\n### Atypical behavioral patterns in MDD and GAD patients\n\nPatients with MDD and GAD exhibit three key behavioral patterns as compared to healthy controls. First, patients achieved a significantly lower hit rate (averaged across stable and volatile contexts) as compared to the healthy controls (Figure 2A; t(70.541) = 3.326, p = 0.001, Cohen\u2019s d = 0.723). The hit rate refers to the accuracy of a participant in choosing the correct stimulus throughout the task. Specifically, the correct stimulus is the one that yields reward points in the reward context or avoids electric shocks in the aversive context.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig2-v1.jpg)\n\n**Figure 2.:** Significance symbols: *p<0.05; **p<0.01; ***p<0.001; n.s.: non-significant. Abbreviations: HC, healthy controls; PAT, patients. (A) Comparison of hit rates for healthy controls and patients in stable and volatile contexts. Error bars represent the standard deviation of the estimated mean across 86 participants. (B) Learning curves for healthy controls and patients throughout the learning process. The dashed line represents the exemplar feedback probability sequence. For runs that do not follow this exemplar sequence (e.g. starting with volatile and then moving to stable conditions), responses were converted to match the exemplar sequence. The learning curves for both groups were then generated by averaging these converted responses across participants within each group. For better visualization, these curves were then smoothed using a Gaussian kernel with a standard deviation of two trials. The blue arrows indicate the apparent deviation between the true feedback probability and the patients\u2019 asymptotic performance. (C) Hit rate differences for healthy controls and patients and their relationship with participants\u2019 symptom severities. Error bars represent the standard deviation of the estimated mean across 54 healthy controls and 32 patients, respectively.\n\nSecond, we observed two atypical features of learning curves in the patient group (Figure 2B). The patients\u2019 learning curves took more trials to converge to an asymptote (i.e. seemingly slower learning). Additionally, there was a larger apparent deviation (Figure 2B, blue arrows) from the true feedback probability. The apparent deviation indicates that the learning curve of the patient group could never converge to the true feedback probability, even given a sufficient number of trials in a stable context.\n\nThird, aside from the lower learning rate and atypical learning curves that indicate inferior performance in the patient group, we further discovered a reduced hit rate difference within the patient group (Figure 2 and t(55.648) = 2.038, p = 0.046, Cohen\u2019s d = 0.478). Interestingly, this hit rate difference is marginally associated with the severity of participants\u2019 symptoms (r(86) = \u20130.194, p = 0.074), as measured using the bifactor analysis reported in Gagne et al., 2020. This analysis decomposes symptoms into specific factors for anxiety and depression, with the g-score representing the common symptoms between them. The hit rate difference across volatile/stable contexts may be due to the setting of true probability (0.8 in the volatile context and 0.75 in the stable context).\n\n### The mixture-of-strategies model captures group differences in learning behaviors\n\nIn a volatile reversal learning task, each participant in the experiment faces two fundamental challenges. First, they must engage in decision-making, constructing a policy $\\pi$ to determine an action that maximizes benefit. Second, they must learn to figure out the feedback probability $\u03c8$ for each stimulus, which is not explicitly stated, through their interactions with the environment. To gain insights into how cognitive impairments lead to the above-mentioned atypical behaviors in the patient group, we developed four families of computational models. All models utilize the same reinforcement learning method for learning feedback probability $\u03c8$ but differ in how they construct their policies $\\pi$ for decision-making.\n\nOur target model family, known as MOS, posits that behavioral differences across the two participant groups and between stable/volatile contexts can be attributed to varying weightings of multiple decision strategies: EU, MO, and HA\n\n$$\n\\pi(s\u2223\u03c8,m,\\pi_{HA})=w_{EU}\\pi_{EU}(s\u2223\u03c8,m)+w_{MO}\\pi_{MO}(s\u2223m)+w_{HA}\\pi_{HA}(s)\n$$\n\nThis particular three-strategy configuration was chosen as the representative model because it best accounts for human behavioral data (Figure 3\u2014figure supplement 1). The EU strategy ($\\pi_{EU}$) postulates that human agents rationally calculate the value of each stimulus $s$ by multiplying its estimated feedback probability $\u03c8$ with reward magnitude $m$. The MO strategy ($\\pi_{MO}$) only focuses on feedback magnitude $m$, disregarding feedback probability $\u03c8$. This is certainly an irrational strategy but more economical in terms of cognitive efforts. The HA strategy ($\\pi_{HA}$) reflects the tendency to repeat previous frequent choices, depending on neither feedback magnitude $m$ nor feedback probability $\u03c8.$ Parameters $w_{EU}$, $w_{MO}$, and $w_{HA}$ are the weighting of each strategy representing a decision-maker\u2019s preference for each strategy. We fit two MOS variants, MOS6 and MOS22. Both models have identical update rules; however, MOS22, the context-dependent variant, fits a separate set of parameters to each experimental context, whereas MOS6, the context-free variant, uses one set of parameters for all contexts (Table 1). This approach applies to the other three model families, each offering two distinct variants.\n\n**Table 1.**\n Model\u2019s parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Context-free parameters</th>\n      <th>Context-dependent parameters</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MOS6</td>\n      <td>\u03b2,\u03b1HA,\u03b1\u03c8,wEU,wMO,wHA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MOS22</td>\n      <td>\u03b2,\u03b1HA</td>\n      <td>\u03b1\u03c8+,\u03b1\u03c8\u2212,wEU,wMO,wHA</td>\n    </tr>\n    <tr>\n      <td>FLR6</td>\n      <td>\u03b1HA,r,\u03b2HA,\u03b1\u03c8,\u03b2,\u03bb</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>FLR22</td>\n      <td>\u03b1HA,r</td>\n      <td>\u03b2HA,\u03b1\u03c8+,\u03b1\u03c8\u2212,\u03b2,\u03bb</td>\n    </tr>\n    <tr>\n      <td>RS3</td>\n      <td>\u03b2,\u03b1\u03c8,\u03b3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RS13</td>\n      <td>\u03b2</td>\n      <td>\u03b1\u03c8+,\u03b1\u03c8\u2212,\u03b3</td>\n    </tr>\n    <tr>\n      <td>PH4</td>\n      <td>\u03b1\u03c80,k,\u03b7,\u03b2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PH17</td>\n      <td>\u03b1\u03c80</td>\n      <td>k+,k\u2212,\u03b7,\u03b3</td>\n    </tr>\n  </tbody>\n</table>\n\nIn contrast to the mixture-of-strategies account, the Flexible-Learning-Rate (FLR) models\u2014the context-free FLR6 and the context-dependent FLR22\u2014hypothesize that behavioral differences between groups and contexts primarily arise from different learning rates, known as learning rate adaptation. These models, reported as the best models by Gagne et al., 2020, select stimuli with higher values, estimated by a linear combination of differences in feedback probability, (non-linear) feedback magnitude, and the stimuli\u2019s consistency with habitual behaviors. The Risk-Sensitive (RS) models (RS3 and RS13), adopted from Behrens et al., 2007 and Browning et al., 2015, share the same hypothesis about human behavioral differences. These models use the EU strategy for decision-making and consider a subjective distortion of the learned feedback probability when calculating the expected value. To further investigate the hypothesis regarding differences in learning rates, we tested a family of models with a built-in adaptive learning rate, known as the Pearce-Hall models (PH4, PH17). See the Materials and methods section for the detailed model implementations.\n\nThe model fitting reveals that the MOS models accurately account for human behaviors. MOS6 and MOS22 were the best-fitting models in terms of the Bayesian Information Criterion (BIC; Schwarz, 1978) and Akaike Information Criterion (AIC; Akaike, 1974), respectively (Figure 3A). The group-level Bayesian model comparison (Rigoux et al., 2014) further supports MOS6 as the best-fitting model (Figure 3B). These model comparisons highlight that the MOS models outperform the other three families of models supporting the learning adaptation account, suggesting that behavioral variations might not be fully captured by learning rate adaptations alone.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig3-v1.jpg)\n\n**Figure 3.:** Significance symbols: *p<0.05; **p<0.01; ***p<0.001; n.s.: non-significant. Abbreviations: HC, healthy controls; PAT, patients. (A) Relative performance of models compared to the MOS6 model, as measured by the Akaike Information Criterion (AIC), and Bayesian Information Criterion (BIC). Each dot represents a model\u2019s fit for an individual participant, with error bars showing the standard deviation of the estimated mean across 86 participants. (B) Group-level Bayesian model selection as indicated by Protected Exceedance Probability (PXP). (C\u2013E) Models' predicted hit rate (C) hit rate differences (D) and learning curves (E) for healthy controls and patients, respectively. Error bars denote the standard deviation of the estimated mean across 54 healthy controls and 32 patients, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We compared the target MOS6 model (red) with its 13 alternatives in three categories: lesion models generated by removing strategies from the MOS6 (orange), models with components replaced (green), and extensions generated by adding a new strategy (blue). Note that the PF here is the abbreviation of Probability of Feedback, which constructs a policy only depends on the estimated feedback probability, the RD here is the abbreviation of Random strategy, and the probability of choosing each stimulus is 1/2. The target EU, MO, and HA strategies construct a simple decision pool but not too simpler compared to the other alternatives. First, the three \u2018lesion\u2019 variants, EU + MO, EU + HA, and MO + HA, all exhibit a lower model fittings performance compared to the MOS6 model, with the EU + HA variant being marginally closer. However, the context-independent EU + HA and its context-dependent version (EU + HA18) provide conflicting interpretations of the behavioral differences between healthy controls and patients, suggesting a potential oversimplification of human behavior. Second, replacing the EU strategy with PF or the MO strategy with RD adversely affects fitting performance. The PF strategy\u2019s failure indicates that a mere linear combination of feedback probability and potential magnitude does not account for human decision-making behavior. The RD strategy\u2019s failure confirms that participants were actively using the MO strategy, rather than making random choices. Lastly, the two extension models do not significantly improve the fitting performance, suggesting that the current MOS6 model is good enough describing human behaviors. There is no need to involve additional components.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Significance symbols: *p<0.05; **p<0.01; ***p<0.001; n.s.: non-significant.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig3-figsupp3-v1.jpg)\n\nThe MOS models can not only better capture the data quantitatively, but they can also effectively reproduce the three key behavioral differences between the groups. The MOS models reproduce the lower hit rate (Figure 3C), reduced hit rate difference (Figure 3D), and slower learning curves with apparent deviations (Figure 3E) observed in the patient group, whereas the FLR models struggle to produce all these effects. See Figure 3\u2014figure supplements 2\u20133 for the behavioral patterns for all models.\n\nIn short, we conclude that the MOS models best account for human behavioral data both qualitatively and quantitatively. In the following sections, we will analyze the fitted parameters of the MOS models to interpret the atypical behavioral patterns of the patient group.\n\n### MDD and GAD patients favor simpler decision strategies\n\nWe first focused on the fitted parameters of the MOS6 model. We compared the weight parameters ($w_{EU}$, $w_{MO}$, $w_{HA}$) across groups and conducted statistical tests on their logits ($\\lambda_{EU}$, $\\lambda_{MO}$, $\\lambda_{HA}$). The patient group showed a ~37% preference towards the EU strategy, which is significantly weaker than the ~50% preference in healthy controls (healthy controls\u2019 $\\lambda$: M = 0.991, SD = 1.416; patients\u2019 $\\lambda$: M = 0.196, SD = 1.736; t(54.948) = 2.162, p = 0.035, Cohen\u2019s d = 0.509; Figure 4A). Meanwhile, the patients exhibited a weaker preference (~27%) for the HA strategy compared to healthy controls (~36%) (healthy controls\u2019 $\\lambda$: M = 0.657, SD = 1.313; patients\u2019 $\\lambda$: M = \u20130.162, SD = 1.561; t(56.311) = 2.455, p = 0.017, Cohen\u2019s d = 0.574), but a stronger preference for the MO strategy (14% vs 36%; healthy controls\u2019 $\\lambda$: M = \u20131.647, SD = 1.930; patients\u2019 $\\lambda$: M = \u20130.034, SD = 2.091; t(63.746) = \u20133.510, p = 0.001, Cohen\u2019s d = 0.801). Most importantly, we also examined the learning rate parameter in the MOS6 but found no group differences (t(68.692) = 0.690, p = 0.493, Cohen\u2019s d = 0.151). These results strongly suggest that the differences in decision strategy preferences can account for the learning behaviors in the two groups without necessitating any differences in learning rate per se.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig4-v1.jpg)\n\n**Figure 4.:** Significance symbol conventions are: *p<0.05; **p<0.01; ***p<0.001; n.s.: non-significant. Abbreviations: HC, healthy controls; PAT, patients. (A) The fitted weighting parameters and learning rate of the MOS6 model. The y-axis means averaged preference over different volatile contexts (volatile/stable) and feedback contexts (reward/aversive). $w\u00af$ indicates the averaged weighting parameters for each participant group. Error bars denote the standard deviation of the estimated mean across 54 healthy controls and 32 patients, respectively. (B) Simulated hit rates for the three decision strategies. Error bars represent the standard deviation across 200 simulations. The 200 simulations were evenly divided between groups using parameters similar to the healthy control group and the patient group. The groups differed only in their strategy preference (differences in $w_{EU},w_{MO},w_{HA}$) while all other parameters remained constant. For more simulation details, refer to Materials and methods, Simulation details. (C) The average simulated learning curve for each strategy across 200 simulations, was smoothed with a Gaussian kernel (standard deviation of two trials). (D) Simulated hit rate differences between volatile and stable for the three decision strategies. Error bars represent the standard deviation across 200 simulations. (E) Simulated learning curves for the healthy controls and patients, each averaged from 100 simulations within the group and smoothed with a Gaussian kernel (standard deviation of two trials).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Significance symbol conventions are: *p<0.05; **p<0.01; ***p<0.001; n.s.: non-significant. Abbreviations: HC, healthy controls; PAT, patients. Error bars denote the standard deviation of the estimated mean. (A) The fitted weighting parameters of the MOS22 across participant groups. (B\u2013D) The fitted log learning rate of the MOS22 model across participant groups (B) volatile contexts (C) and outcome valence (D).\n\nThe MOS6 assumes no parameter differences across the four contexts, which may dilute the group differences in learning rate. We further analyzed the MOS22, which explicitly estimates different sets of weighting and learning rate parameters in different contexts (i.e. context-dependent), and found a consistent conclusion about participants\u2019 strategy preferences. We first conducted three separate 2 \u00d7 2 \u00d7 2 ANOVAs, each setting the logit of a weighting parameter ($\\lambda_{EU},\\lambda_{MO},\\lambda_{HA}$) as the dependent variable, and participant groups (healthy control/patient) as the between-subject variable, and volatile contexts (stable/volatile), and feedback contexts (reward/aversive) as within-subject variables. We again found a weaker preference for EU (F(1, 80) = 13.537, p<0.001, \u019e2 = 0.084) and a stronger preference for MO (F(1, 80) = 7.791, p = 0.009, \u019e2 = 0.046) in the patient group (Figure 4\u2014figure supplement 1A). However, unlike the MOS6, the MOS22 revealed no significant group difference was observed in the HA strategy (F(1, 80) = 0.020, p = 0.887, \u019e2<0.001), and a significantly a stronger preference for EU under the reward context Bonferroni-t = 2.243, p = 0.028, Cohen\u2019s d = 0.209. This suggests a possible confounding between the EU and HA strategies. Next, we examined the learning rates of the MOS22. A 2 \u00d7 2 \u00d7 2 \u00d7 2 ANOVA was performed with the (log) learning rate parameter as the dependent variable, outcome valence (better/worse than expectation) as a within-subject variable in addition to the three independent variables (group/volatile context/feedback context) as introduced above. We again found no significant difference between patients and healthy controls (F(1, 77) = 0.393, p = 0.533, \u019e2 = 0.003; Figure 4\u2014figure supplement 1B). Most importantly, the MOS22 model revealed no learning rate adaptation effect, as indicated by the learning rate parameters in the volatile context not being significantly larger than that in the stable context (F(1, 77) = 0.126, p = 0.724, \u019e2<0.001; Figure 4\u2014figure supplement 1C). Based on these findings, we drew two conclusions. First, MOS6 and MOS22 made consistent descriptions of participants\u2019 strategy preferences during decisions: the behavioral differences between the two participant groups were mainly attributed to differences in their strategy preferences, rather than their learning rates. Second, the learning rate adaptation effect may be simply explained by context-free strategy preferences. We will further explain this second point in later sections.\n\n### Understanding patients\u2019 inferior task performances through strategy preferences\n\nIn this section, we illustrate how strategy preferences account for the three learning behavioral differences observed between the two participant groups, as shown in Figure 2. To better understand how each decision strategy influences the three behavioral patterns, we simulated the MOS6 model using the median fitted parameters and outputted the decisions for each strategy (see Simulation details in Materials and methods).\n\nFor hit rate, our simulations showed that the EU strategy achieved the highest hit rate, while the MO strategy basically performed at the chancel-level (Figure 4B). These results are intuitively understandable. Since the hit rate is defined based on feedback probability, the EU strategy, which actively tracks this probability, should be able to achieve a high hit rate. In contrast, the MO strategy, which completely ignores feedback probability, should achieve a chance-level hit rate. Interestingly, our simulations also showed that the HA strategy achieved an above-chance hit rate. This is because, although the HA strategy appears not to consider feedback probability directly, it still somewhat tracks feedback probability by simply repeating the past choices made by the EU. Accordingly, assigning lower weights to the two higher-hit-rate strategies, EU and HA (i.e. higher weighting on MO), naturally leads to inferior performance in the patients (Figure 2A).\n\nWe also visualized the simulated learning curves for each strategy (averaged across the two groups) throughout the task (Figure 4C). In both stable and volatile contexts, the EU strategy quickly approximates and converges to the true feedback probability. The HA strategy takes more trials to approach the true feedback probability, exhibiting slower learning. The MO strategy does not respond to environmental feedback, resulting in an almost flat learning curve. When the learning curves are combined separately for the two groups, we recover the seemingly slower learning curve in the patient group due to their stronger preference for the MO strategy (Figure 4E). We also noted the larger apparent deviation from the true feedback probability in the patient group. These two features in Figure 2B can thus be readily explained by the patients\u2019 stronger preference for the MO strategy, as the MO strategy does not learn feedback probability at all and exhibits a flat learning curve.\n\nFor the hit rate differences between the stable and volatile contexts, our simulations showed that the EU strategy achieves a higher hit rate in the volatile context than in the stable context (i.e. positive hit rate difference) (Figure 4D). This is attributed to the EU strategy\u2019s active tracking of feedback probability (i.e. the maximum possible hit rate), which increases from 75% in the stable context to 80% in the volatile context. Conversely, there were no changes in the MO strategy\u2019s hit rate from the stable to volatile contexts (i.e. 0 hit rate difference) because MO does not track feedback probability. Additionally, we found that the hit rate of the HA strategy was higher in the stable context than in the volatile (i.e. negative hit rate difference). This is possibly because the HA strategy requires more time to relearn true probability (Figure 4C), particularly in the volatile context where the true probability frequently flips. Based on this, we can roughly estimate the hit rate difference for the healthy control group as~0.042 ($w\u00af_{EU}^{HC}\\times0.3+w\u00af_{MO}^{HC}\\times0+w\u00af_{HA}^{HC}\\times\u22120.3=0.5\\times0.3+0+0.36\\times\u22120.3$) and for the patient group as~0.030 ($w\u00af_{EU}^{PAT}\\times0.3+w\u00af_{MO}^{PAT}\\times0+w\u00af_{HA}^{PAT}\\times\u22120.3=0.37\\times0.3+0+.27\\times\u22120.3$). This explains why healthy controls exhibited slightly a larger hit rate difference than the patient participants (Figure 2C).\n\n### Atypical strategy preferences are connected to the general severity of anxiety and depression\n\nWe investigated the relationship between strategy preferences in the MOS6 model and symptom severity in the patient group (Figure 5). Our findings indicate that patients with severe symptoms exhibit a weaker preference for the cognitively demanding EU strategy (Pearson\u2019s r = \u20130.221, p = 0.040) and a stronger preference for the simpler MO strategy (Pearson\u2019s r = 0.360, p = 0.001). Additionally, there was a significant correlation between symptom severity and the preference for the HA strategy (Pearson\u2019s r = \u20130.285, p = 0.007). These results highlight the strong clinical relevance of strategy preferences.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig5-v1.jpg)\n\n**Figure 5.:** Each dot represents one participant. The shaded areas reflect 95% confidence intervals of the regression prediction.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The y-axis indicates the averaged preference over different volatility levels (volatile and stable) and feedback types (reward and aversive). This average operation is permitted here because the logit of the weight is normally distributed. The shaded areas reflect 95% confidence intervals of the regression prediction.\n\nFor completeness, we examined the correlation between learning rate adaptation (log volatile learning rate \u2013 log stable learning rate) and symptom severity within the MOS22 model (Figure 5\u2014figure supplement 1). Not surprisingly, we found no significant correlation (r(86) = 0.130, p = 0.233), which is consistent with our finding of no difference in learning rates across the two volatile contexts.\n\n### Strategy preferences may explain the learning rate differences across groups and contexts\n\nPrevious studies using probabilistic reversal learning tasks have made three major conclusions about learning rate. First, it has been documented that individuals with anxiety and depression have a smaller learning rate parameter (Chen et al., 2015; Pike and Robinson, 2022), thereby exhibiting a slower learning curve (Figure 2C) and, possibly, a lower hit rate (Figure 2A). Second, human participants have been found to be able to flexibly increase their learning rate in response to high environmental volatility (Behrens et al., 2007). Third, patient participants may exhibit a deficit in such learning rate adaptation (Browning et al., 2015; Gagne et al., 2020), exhibiting a lesser extent of increase (Figure 2B).\n\nHowever, we recognize two limitations in this learning rate interpretation. First, a higher learning rate does not necessarily improve the hit rate; it may lead to overreacting to feedback from stimuli with low probabilities. Second, and more importantly, a reduced learning rate merely prolongs the time needed to approach the true probability (Boyd and Vandenberghe, 2004) but cannot explain the apparent deviation from the true probability observed in patient participants (Figure 2B). In contrast, a mixture of strategies can naturally account for these two phenomena. As mentioned in the previous section, the mixture of EU and MO results in both a seemingly lower learning curve and a larger apparent deviation.\n\nHere, we further demonstrate that the behavioral differences caused by a mixture of strategies could reflect the learning rate adaptation across the stable and volatile contexts. We used the MOS6 to synthesize behavioral data for agents resembling healthy controls and patients by controlling all parameters except for the decision weights. Specifically, we set the weights of $w_{EU}$ to 60%, $w_{MO}$ to 15% and $w_{HA}$ to 25% for the healthy control group, and the weights of $w_{EU}$ to 15%, $w_{MO}$ to 60% and $w_{HA}$ to 25% for the patient group, with all other parameters fixed to the median values across all participants (see more details in Materials and methods). We simulated each group 20 times, and the simulated data reproduced the slower learning curve and the apparent difference in the patient group (Figure 6A). We fit the simulated data generated by MOS6 with the FLR22 model and found significant differences in the (log) learning rate between stable and volatile contexts (paired t-test(39 ) = \u20133.217, p = 0.003, Cohen\u2019s d = 0.721; Figure 6B). Furthermore, the agent resembling the patient group demonstrated a trend toward reduced learning rate adaptation compared to the agent resembling the healthy control group (Figure 6C), consistent with the learning rate adaptation theory. These findings suggest that what might be perceived as learning rate adaptation could result from a mixture of strategy preferences. This observation also implies that strategy preferences may, at least partially, explain the maladaptive adaptations in learning rate observed in patients in response to environmental volatility.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig6-v1.jpg)\n\n**Figure 6.:** Significance symbol conventions are: *p<0.05; **p<0.01; ***p<0.001; n.s.: non-significant. HC represents the healthy-control-like agent; PAT represents the patient-like agent. (A) Simulated learning curves for the healthy controls and patients generated by the MOS6 model. Both curves are averaged over 80 runs of tasks (4 task sequences \u00d7 20 experiments) and are smoothed with a Gaussian kernel (standard deviation of two trials). (B) The fitted FLR22 learning rate parameters are for the stable context and the volatile context. Error bars denote the standard deviation across 40 synthesized datasets. (C) Learning rate adaptations, calculated by log volatile learning rate \u2013 log stable learning rate, for the healthy control-like agent and for the patient-like agent. Error bars stand for the standard deviation across 20 synthesized datasets.\n\n### Model and parameter recovery analyses support model and parameter identifiability in MOS\n\nAlthough we have previously demonstrated that the MOS models are quantitatively best-fitting, there are two potential confounding factors. First, it is possible that differences in learning rate, rather than differences in strategy preference, could produce the same behavioral outcomes that are indistinguishable by the model fitting. If this holds, the MOS model might be problematic, as all learning rate differences may be automatically attributed to strategy preferences because of some unknown idiosyncratic model fitting mechanisms. Second, the fact that the MOS models outperform the others may be partly due to an unknown bias in the model design. It is possible that the MOS models always win, irrespective of how the data is generated.\n\nTo circumvent these issues, we conducted parameter recovery analyses on MOS6 and model recovery analyses on all models to investigate the identifiability of true parameters and models. For parameter recovery, we generated 80 synthetic datasets using 80 different parameter sets, each varying the four parameters of interest ${\\alpha_{\u03c8},\\lambda_{EU},\\lambda_{MO},\\lambda_{HA}}$, with the remaining parameters fixed to the median of the fitted parameters ($\\beta$ = 10.803, $\\alpha_{HA}$ = 0.423). Each synthetic dataset consisted of 10 runs, resulting in a total of 800 synthetic runs (80 parameter sets \u00d7 10 runs). For each dataset, we fitted our MOS6 model and compared the fitted parameters to the ground-truth parameters. The parameter recovery results (Figure 7A) demonstrate that the true parameters can be accurately estimated and identified (all Pearson\u2019s rs >0.720), indicating that the effects of learning rate and weighting parameters are not interchangeable in the MOS6 model.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/93887/elife-93887-fig7-v1.jpg)\n\n**Figure 7.:** (A) Parameterrecovery for the MOS6 model. (B) Model recovery analysis, showing the performance of models as evaluated by averaged relative Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC), as well as Protected Exceedance Probability (PXP) scores for synthesized data generated from each of the eight models. Darker tiles indicate better fits to the synthesized data.\n\nFor model recovery, we sampled 40 participants (20 in each group) and used their fitted model parameters to generate synthetic datasets from each of the eight models. For each participant, we simulated 10 runs of behavioral data, resulting in a total of 3200 synthetic runs (8 generating models \u00d7 40 participants \u00d7 10 runs). We then fit all eight models to every dataset using the MAP method as the same before. The best-fitting model was always the one that generated the data, as indicated by all three quantitative metrics: AIC, BIC, and PXP (Figure 7B). We note that the RS3 and PH4 models tend to account well for each other. The MOS6 model achieves good fitting performances on synthetic datasets generated by the RS3 and PH4 models, but not vice versa. The slight confusion between RS3, PH4, and MOS6 is because they all include the EU strategy. Most importantly, the MOS and FLR models cannot adequately account for each other\u2019s synthetic datasets, strongly supporting the independent computational effects of strategy preference and learning rate.\n\n## Discussion\n\nIn this article, we propose to understand humans\u2019 learning behaviors, especially the differences between healthy controls and patients, in the volatile reversal learning task through the lens of a mixture-of-strategies. We develop the MOS model, which assumes that human participants make decisions by combining three distinct components: the EU, MO, and HA strategies. The EU strategy is rewarding but cognitively demanding, in contrast to the other two strategies, which are simpler and heuristic but less rewarding. We show that the MOS model can qualitatively capture several behavioral patterns that cannot be explained by previous models and quantitatively better capture human behaviors and healthy-patient differences when applied to a public dataset. The model reveals that individuals with MDD and GAD exhibit an atypical preference for simpler and less rewarding strategies (i.e. a stronger preference for the MO strategy), and this preference alone could explain their inferior task performance relative to healthy controls, as indicated by lower hit rates, reduced adaptation volatility, and slower learning curves. Furthermore, we demonstrate that the MOS model can reproduce the human behavioral learning rate adaptation effect without changing the learning rate itself. These findings suggest that a mixture of strategies provides an effective and parsimonious explanation for human learning behaviors in volatile reversal tasks.\n\n### The role of the HA strategy in volatile reversal learning\n\nAlthough many observed behavioral differences can be explained by a shift in preference from the EU to the MO strategy among patients, we also explore the potential effects of the HA strategy. Compared to the MO, the HA strategy also saves cognitive resources but yields a significantly higher hit rate (Figure 4A). Therefore, a preference for the HA over the MO strategy may reflect a more sophisticated balance between reward and complexity within an agent (Gershman, 2020): when healthier participants exhaust their cognitive resources for the EU strategy, they may cleverly resort to the HA strategy, adopting a simpler strategy but still achieving a certain level of hit rate. This explains the stronger preference for the HA strategy in the HC group (Figure 3A) and the negative correlation between HA preferences and symptom severity (Figure 5). Apart from shedding light on the cognitive impairments of patients, the inclusion of the HA strategy significantly enhances the model\u2019s fit to human behaviors (see examples in Daw et al., 2011; Gershman, 2020; and also Figure 3\u2014figure supplement 1).\n\n### Disassociate the learning rate adaptation and mixture of strategies\n\nIt is well-established that humans apply flexible learning rates in response to environmental volatility, exemplifying the successful application of ideal observer analysis. Behrens et al., 2007 constructed a hierarchical ideal Bayesian observer for the volatile reversal learning task that dynamically models how higher-order environmental volatility influences the updating speed of lower-order feedback probabilities. This model suggests that the human brain estimates environmental volatility, and humans are expected to exhibit a faster-updating speed for feedback probabilities in volatile contexts. Consistent with their results, the context-dependent RS13 model revealed higher learning rate parameters in volatile contexts. Browning et al., 2015 identified the increase in learning rate from stable to volatile contexts as a hallmark of human sensitivity to environmental volatility. They found that individuals with high trait anxiety showed reduced adaptations, thus indicating lower sensitivity to volatility. Gagne et al., 2020 extended this research to MDD and GAD patients receiving either reward or aversive feedback. Furthermore, the phenomenon of an increased learning rate from stable to volatile conditions has also been observed in other paradigms, such as the Predictive Inference task (Nassar et al., 2016; Nassar et al., 2010), where participants explicitly report their estimation of environmental statistics, allowing for a direct estimation of the learning rate.\n\nBased on our findings, we applied the MOS model\u2014an alternative but sufficiently accurate model\u2014to the data collected from the volatile reversal task and found that the expected learning rate adaptation was not observed. Instead, the MOS model points to an alternative explanation that accounts for multiple human behavioral patterns and their symptom severity in a more parsimonious manner, involving fewer parameters. More importantly, it is possible for the MOS model to capture the pattern of learning rate adaptation without necessitating actual changes in learning rates across different contexts. These findings indicate that future studies may systematically compare the accounts of learning rate adaptation and a mixture-of-strategies.\n\nIt is important to note that learning rate adaptations and strategy preferences could simultaneously influence behaviors. However, accurately describing both mechanisms, particularly in terms of differences between populations, requires more refined behavioral paradigms. For example, it would be helpful to use paradigms like the predictive inference task (Nassar et al., 2016; Nassar et al., 2010), which allows participants to directly report their learning rates, to minimize the confounding factors in the decision process.\n\n### Atypical learning speed in psychiatric diseases\n\nIn the present work, we found that individuals with depression and anxiety display apparent flatter learning curves in the probabilistic learning tasks (shown in Figure 4A). We attributed this observation to participants\u2019 strategy preferences. However, in conventional Rescorla-Wagner modeling, learning speed is primarily indicated by the learning rate parameter. For example, Chen et al., 2015 conducted a systematic review of reinforcement learning in patients with depression and identified 10 out of 11 behavioral datasets showing either comparable or slower learning rates in depressive patients. Nonetheless, depressive patients may not always exhibit slower learning rates. In a recent meta-analysis summarizing 27 articles with 3085 participants, including 1242 with depression and/or anxiety, Pike and Robinson, 2022 found a reduced reward but enhanced aversive learning rate. This finding yields two practical implications. First, the heterogeneous findings in the literature may arise from heterogeneous pathologies in depression and anxiety. Second, some behavioral variations introduced by strategy preferences might have been misidentified as learning rate effects. The MOS model may provide useful complementary explanations for the consequences of a spectrum of symptoms.\n\n### Limitations and future directions\n\nThe MOS model was developed to provide context-free interpretations of the learning rate differences observed between stable and volatile contexts, as well as between healthy individuals and patients. However, we also recognize that the MOS account may not justify other learning rate effects based solely on strategy preferences. One such example is valence-specific learning rate differences, where learning rates for better-than-expected outcomes are higher than those for worse-than-expected outcomes (Gagne et al., 2020). When fitted to the behavioral data, the context-dependent MOS22 model does not reveal valence-specific learning rates (Figure 4\u2014figure supplement 1D). Moreover, the valence-specific effect was not replicated in the FLR22 model when fitted to the synthesized data of MOS6.\n\nThe context-dependent MOS22 model revealed several weak interaction effects, suggesting an interaction between learning adaptation and strategy preferences. For example, patients with MDD and GAD may find it too taxing to increase their learning rates in the volatile context and instead resort to simpler strategies, such as MO, as a compromise. Investigating this hypothesis may require a paradigm incorporating a self-reporting learning rate module, like the predictive inference task (Nassar et al., 2010), in volatile reversal learning tasks.\n\nTheories suggest that humans increase learning rates in the volatile context due to increased perceived uncertainty about environmental statistics (Behrens et al., 2007; Nassar et al., 2010), while others propose that strategies enabling more exploration are preferred when managing uncertainty (Fan et al., 2023; Wilson et al., 2014). To explore these ideas, we may need to adjust the paradigm to offer a wider choice of stimuli, from two to three or four (i.e. set size effects). Another question is why individuals with depression and anxiety tend toward simpler decision-making strategies. Rumination, a maladaptive emotion regulation behavior characterized by persistent negative thoughts observed in individuals with depression (Song et al., 2022; Yan et al., 2022), may consume cognitive resources, hindering the use of the more complex but rewarding EU strategy.\n\n## Materials and methods\n\nIn this section, we provide the mathematical and implementational details of our model. Code is available at https://github.com/fangzefunny/policy-analysis, (copy archived at Fang, 2024).\n\n### Datasets\n\nWe focused on the data from Experiment 1 reported by Gagne et al., 2020. The data is publicly available via https://osf.io/8mzuj/. The original study included data from two experiments. The data from Experiment 2 was not used here because it was implemented on Amazon\u2019s Mechanical Turk with no information about the participants' clinical diagnoses. Here, we provide critical information about Experiment 1 (also see Gagne et al., 2020 for more technical details).\n\n#### Participants\n\nEighty-six participants took part in this experiment. The pool includes 20 patients with a major depressive disorder (MDD), 12 patients with a generalized anxiety disorder (GAD), and 54 healthy control participants. The diagnosis was made through a phone screen, an in-person screening session, and the structured clinical interview following DSM-IV-TR (SCID) in 20 MDD patients, 12 GAD patients, and 20 healthy control participants. The remaining 30 healthy control participants were recruited without SCID. In this article, we grouped the MDD and GAD individuals into a patient (PAT) group and the remaining 54 participants into a healthy control (HC) group. The detailed difference between MDD and GAD is not the focus of this paper. We will show later that the general factor behind MDD and GAD is the only factor that predicts learning behavior (see next section for details), a similar result reported in the original study (Gagne et al., 2020).\n\n#### Clinical measures\n\nThe severity of anxiety and depression in all participants was measured by several standard clinical questionnaires, including the Spielberger State-Trait Anxiety Inventory (STAI form Y; Spielberger et al., 1983), the Beck Depression Inventory (BDI; Beck et al., 1961), the Mood and Anxiety Symptoms Questionnaire (MASQ; Clark and Watson, 1991; Watson and Clark, 1991), the Penn State Worry Questionnaire (Meyer et al., 1990), the Center for Epidemiologic Studies Depression Scale (CESD; Radloff, 1977), and the Eysenck Personality Questionnaire (EPQ; Eysenck and Eysenck, 1975). An exploratory bifactor analysis was then applied to item-level responses in all questionnaires to disentangle the variance that is common to GAD and MDD or unique to each. The results of this analysis summarized participants' symptoms into three orthogonal factors: a general factor (g) explaining the common symptoms, a depression-specific factor (f1), and an anxiety-specific factor (f2), which are all included in the public dataset. Similar to the original study, here we focused on the general factor (g score) to indicate the participants' severity of their psychiatric symptoms.\n\n#### Stimuli and behavioral task\n\nIn a volatile reversal learning task, participants were instructed on each trial to choose between two stimuli, represented by different shapes, in order to receive feedback. The locations of the two shapes were counterbalanced across trials. The potential amount of feedback (referred to as feedback magnitude) was presented together with the stimuli. Only one of the two stimuli was associated with actual feedback (0 for the other one). The feedback magnitude, ranged between 1\u201399, was sampled uniformly and independently for each shape from trial to trial. Actual feedback was delivered only if the stimulus associated with feedback was chosen; otherwise, a number \u20180\u2019 was displayed on the screen, signifying that the chosen stimulus returned no reward.\n\nParticipants was supposed to complete this learning and decision-making task in four experimental contexts, two feedback contexts (reward or aversive) \u00d7 two volatility contexts (stable or volatile). Participants received points in the reward context and an electric shock in the aversive context. The reward points in the reward context were converted into a monetary bonus by the end of the task, ranging from \u00a30 to \u00a310. In the stable context, the dominant stimulus (i.e. a certain stimulus induces the feedback with a higher probability) provided a feedback with a fixed probability of 0.75, while the other one yielded a feedback with a probability of 0.25. In the volatile context, the dominant stimulus\u2019s feedback probability was 0.8, but the dominant stimulus switched between the two every 20 trials. Hence, this design required participants to actively learn and infer the changing stimulus-feedback contingency in the volatile context.\n\nEach participant was instructed to complete two runs of the volatile reversal learning task, one in the reward context and the other in the aversive context. Each run consisted of 180 trials, with 90 trials in the stable context and 90 in the volatile context. No additional hints were provided about the transition from one context to another; therefore, participants need to infer the current context on their own. A total of 79 participants completed tasks in both feedback contexts. Four participants only completed the task in the reward context, while three participants only completed the aversive task.\n\n### Computational modeling\n\nWe first introduce our notation system. We denote each stimulus $s$ as one of two possible states $s\\in{s_{1},s_{2}}$. The labeled feedback magnitude (i.e. reward points or shock intensity) of the stimulus is $m(s)$, and the feedback probability is $\u03c8(s)$. Following the convention in reinforcement learning (Sutton and Barto, 2018), we presume that the decision is made from a policy $\\pi$ that maps the observed magnitudes $m$ and currently maintained feedback probabilities $\u03c8$ to a distribution over stimuli, $\\pi(s\u2223m,\u03c8)$.\n\nIn a volatile reversal learning task, each participant in the experiment must resolve two fundamental challenges: (1) decision-making, determining an action to maximize benefit; and (2) learning, figuring out the untold feedback probability via their interaction with the environment. Here, we introduce four families of models that all utilize the same reinforcement learning method for learning feedback probability but differ in how they construct their policies for decision-making. First, the MOS model, the target model proposed in this paper, utilizes a decision-making policy consisting of a mixture of three strategies: EU, MO, and HA. Second, the FLR model, reported as the best model by Gagne et al., 2020, selects stimuli with higher values. The stimulus value was estimated by a linear combination of differences in feedback probability, (non-linear) feedback magnitude, and the stimuli\u2019s consistency with habitual behaviors. Third, the Risk-Sensitive (RS) model, adopted from Behrens et al., 2007 and Browning et al., 2015, utilizes the EU strategy in decision-making and considers a subjective distortion of the learned feedback probability when calculating the expected value. Finally, the Pearce-Hall (PH) model, equipped with a built-in learning rate adaptation mechanism, utilizes the EU strategy for decision-making.\n\nNotably, the MOS model, which is the core contribution of this study, posits that behavioral differences across the two participant groups and stable/volatile contexts are due to different weightings of multiple decision strategies. In contrast, the other three models posit that behavioral differences mainly arise via different learning rates between groups and contexts.\n\n#### The MOS model\n\nThe key signature of the MOS model is that its policy consists of a mixture of three strategies: EU, MO, and HA. Among many possible variants of the MOS models, this particular three-strategy configuration was chosen as the representative model because it best accounts for human behavioral data (Figure 3\u2014figure supplement 1).\n\nThe EU strategy postulates that human agents rationally calculate the value of each stimulus and use the softmax rule to select an action. In this case, the value of a stimulus should be its expected utility: $m(s)\u03c8(s)$. The probability of choosing a stimulus $s$ thus follows a softmax function.\n\n$$\n\\pi_{EU}(s\u2223\u03c8,m)=\\frac{exp\u2061(\\beta\u03c8(s)m(s))}{\\sums^{\u2032}exp\u2061(\\beta\u03c8(s^{\u2032})m(s^{\u2032}))}\n$$\n\nwhere $\\beta$ is the inverse temperature. For simplicity, we rewrite Equation 1 in the following form:\n\n$$\n\\pi_{EU}(s\u2223\u03c8,m)=softmax(\\beta\u03c8(s)m(s))\n$$\n\nDifferent from the EU strategy, the MO strategy postulates that observers only focus on feedback magnitude $m(s)$, disregarding feedback probability $\u03c8(s)$. This is certainly an irrational strategy but more economical in terms of cognitive efforts. Feedback magnitudes are explicitly shown with the stimuli in each trial and readily available for related cognitive computation. But feedback probability, as a latent variable, requires trial-by-trial learning and inference, which is more cognitively demanding. The MO strategy is defined as,\n\n$$\n\\pi_{MO}(s\u2223m)=softmax(\\betam(s))\n$$\n\nUnlike EU and MO, the HA strategy depends on neither feedback magnitude $m(s)$ nor feedback probability $\u03c8(s)$. The HA strategy reflects the tendency to repeat previous frequent choices. This tendency reflects the habit of choosing a stimulus, a phenomenon called perseveration in literature (Gershman, 2020; Wood and R\u00fcnger, 2016). For example, if an agent chooses stimulus 1 more often in past trials, she will form a preference for stimulus 1 in future trials. We constructed it as a Bernoulli distribution over the two stimuli $\\pi_{HA}(s)$. The trial-by-trial update rule of $\\pi_{HA}(s)$ will be detailed in Equation 5-6 below.\n\nWe implemented the hybrid policy of a linear mixture of the three strategies following the methods used in Daw et al., 2011,\n\n$$\n\\pi(s\u2223\u03c8,m,\\pi_{HA})=w_{EU}\\pi_{EU}(s\u2223\u03c8,m)+w_{MO}\\pi_{MO}(s\u2223m)+w_{HA}\\pi_{HA}(s)\n$$\n\nwhere $w_{EU}$, $w_{MO}$, and $w_{HA}$ are the weighting parameters of each strategy. The three weighting parameters should be summed to 1, i.e., $w_{EU}+w_{MO}+w_{HA}=1$. We can thus describe the policy an observer adopted just by examining the weighting parameters. Formulating the hybrid model in this way improves the interpretability of the weighting parameters because all three decision strategies are constructed in a Bernoulli format.\n\nNext, we solve the challenge of probabilistic learning. Two distributions \u2014 the feedback probability and the habit\u2014are learned and updated in a trial-by-trial fashion. We updated the feedback probability in a Rescorla-Wagner format (Rescorla, 1972):\n\n$$\n\u03c8(s_{1})=\u03c8(s_{1})+\\alpha_{\u03c8}(O(s_{1})\u2212\u03c8(s_{1}))\u03c8(s_{2})=1\u2212\u03c8(s_{1})\n$$\n\nwhere $\\alpha_{\u03c8}$ is the learning rate for feedback probability. $O(\u22c5)$ is an indicator function that returns 1 at the true feedback stimulus and 0 otherwise. To keep consistent with Gagne et al., 2020, we also explored the valence-specific learning rate,\n\n$$\n\\alpha_{\u03c8}={\\alpha_{\u03c8+},\u00a0for\u00a0(O(s_{1})\u2212\u03c8(s_{1}))>0\\alpha_{\u03c8\u2212},\u00a0for\u00a0(O(s_{1})\u2212\u03c8(s_{1}))<0\n$$\n\n$\\alpha_{\u03c8+}$ is the learning rate for better-than-expected outcomes, and $\\alpha_{\u03c8\u2212}$ for worse-than-expected outcomes. It is important to note that Equation 6 was only applied to the reward context, and the definitions of \u2018better-than-expected\u2019 and \u2018worse-than-expected\u2019 should change accordingly in the aversive context, where we defined $\\alpha_{\u03c8+}$ for $(O(s_{1})\u2212\u03c8(s_{1}))<0$ and $\\alpha_{\u03c8\u2212}$ for $(O(s_{1})\u2212\u03c8(s_{1}))>0$.\n\nIn a similar manner, the habit component is updated.\n\n$$\n\\pi_{HA}(s_{1})=\\pi_{HA}(s_{1})+\\alpha_{HA}(A(s_{1})\u2212\\pi_{HA}(s_{1}))\\pi_{HA}(s_{2})=1\u2212\\pi_{HA}(s_{1})\n$$\n\nwhere $\\alpha_{HA}$ is the learning rate for the habitual strategy. $A(\u22c5)$ is also an indicator function that returns 1 for the stimulus chosen at the current trial. Intuitively, the stimulus chosen more often will result in a higher $\\pi_{HA}$ for subsequent trials.\n\nWe developed two variants of the MOS model: a context-free and a context-dependent variant. The context-free MOS6 has a total of six free parameters $\u03be={\\beta,\\alpha_{HA},\\alpha_{\u03c8},w_{EU},w_{MO},w_{HA}}$. This variant does not include the design of a value-specific learning rate. The context-dependent variant MOS22 has a total of 22 free parameters. Among them $\\beta$ and $\\alpha_{HA}$ are context-free parameters that were held the same across all contexts. Parameters ${\\alpha_{\u03c8+},\\alpha_{\u03c8\u2212},w_{EU},w_{MO},w_{HA}}$ are context-dependent parameters that should be fitted independently to each context.\n\nWe fit the context-dependent parameters to each context following a 2 (reward/aversive) \u00d7 2 (stable/volatile) factorial structure (Figure 1A). Specifically, the five context-dependent parameters, the positive learning rate parameter $\\alpha_{\u03c8+}$, the negative learning rate parameter $\\alpha_{\u03c8\u2212}$, and three strategies weights $w_{EU},w_{MO},w_{HA}$ were fit separately to each context. The remaining two parameters ${\\beta,\\alpha_{HA}}$ were held constant across all four experimental contexts for each participant. Thus, there were 22 free parameters (5 context-dependent parameters \u00d7 4 conditions + 2 context-free parameters) of the MOS model in each participant.\n\n#### The FLR model\n\nThe FLR model refers to Model 11 (i.e. the best-fitting model) in Gagne et al., 2020. Here, we describe the FLR model using the same notation system as the published paper, which is slightly different from the notations in the MOS model. The FLR model models the probability of selecting stimulus 1 as follows:\n\n$$\n\\pi(s_{1}\u2223v,\\pi_{HA})=\\frac{1}{1+exp\u2061(\u2212\\betav\u2212\\beta_{HA}[\\pi_{HA}(s_{1})\u2212\\pi_{HA}(s_{2})])}\n$$\n\nwhere $\\beta$ and $\\beta_{HA}$ are the inverse temperature parameters of the value of the stimulus 1 and the HA strategy, respectively. The value of stimulus 1 represents the advantage of $s_{1}$ over $s_{2}$,\n\n$$\nv=\\lambda[\u03c8(s_{1})\u2212\u03c8(s_{2})]+(1\u2212\\lambda)sign(m(s_{1})\u2212m(s_{2}))|m(s_{1})\u2212m(s_{2})|^{r}\n$$\n\nwhere $\\lambda$ is the weighting parameter balancing the two terms. The first term $\u03c8s_{1}\u2212\u03c8s_{2}$ indicates the feedback probability difference between the two options. The second term, $sign(m(s_{1})\u2212m(s_{2}))|m(s_{1})\u2212m(s_{2})|^{r}$, indicates the feedback magnitude differences scaled by a non-linear factor $r$. Intuitively, the value $v$ of $s_{1}$ can be understood as the weighted sum of the feedback probability differences and the feedback magnitude difference.\n\nDuring the learning stage, the FLR model learns the feedback probability using the same equations in the MOS model (Equations 5; 6). The context-free variant FLR6 has six free parameters $\u03be=\\alpha_{HA},r,\\beta_{HA},\\alpha_{\u03c8},\\beta,\\lambda$. The context-dependent variant FLR22 considers ${\\alpha_{HA},r}$ as context-free parameters and ${\\beta_{HA},\\alpha_{\u03c8+},\\alpha_{\u03c8\u2212},\\beta,\\lambda}$ as context-dependent parameters, resulting in a total of 22 free parameters.\n\n#### The RS model\n\nWe adopted the RS model from Behrens et al., 2007. The RS model assumes that participants apply the EU strategy but with a subjectively distorted feedback probability $\u03c8~(s_{1})$,\n\n$$\n\\pi(s_{1}\u2223\u03c8\u223c,m)=\\frac{1}{1+exp\u2061(\u2212\\beta[\u03c8\u223c(s_{1})m(s_{1})\u2212\u03c8\u223c(s_{2})m(s_{2})])}\n$$\n\nwhere $\\beta$ is the inverse temperature. The distorted probability is calculated by,\n\n$$\n\u03c8\u223c(s_{1})=max[min[\\gamma(\u03c8(s_{1})\u22120.5)+0.5,1],0]\u03c8\u223c(s_{2})=1\u2212\u03c8\u223c(s_{1})\n$$\n\nwhere the $\\gamma$ indicates participants\u2019 risk sensitivity. When $\\gamma=1$, a participant has an unbiased risk balance. $\\gamma<1$ and $\\gamma>1$ indicate risk-seeking and risk-aversive tendencies, respectively.\n\nThe RS model learns the feedback probability in the same way as the MOS and FLR models (i.e. Equation 5). The model did not include the HA strategy. The context-free variant RS3 has a total of three free parameters $\u03be=\\beta,\\alpha_{\u03c8},\\gamma$. The context-dependent variant RS13 considers ${\\beta}$ as a context-free parameter and ${\\alpha_{\u03c8+},\\alpha_{\u03c8\u2212},\\gamma}$ as context-dependent parameters, resulting in a total of 13 free parameters.\n\n#### The PH model\n\nTo explicitly incorporate a learning rate adaptation mechanism, we adopt the PH model from Pearce and Hall, 1980. This model proposes an adaptive learning rate, as outlined in Equation 5.\n\n$$\n\u03c8(s_{1})=\u03c8(s_{1})+k\\alpha_{\u03c8}(O(s_{1})\u2212\u03c8(s_{1}))\u03c8(s_{2})=1\u2212\u03c8(s_{1})\n$$\n\nwhere $k$ is a scale factor of the learning rate. Each trial the learning rate is updated in accordance with the absolute prediction error,\n\n$$\n\\alpha_{\u03c8}=\\alpha_{\u03c8}+\u03b7(|O(s_{1})\u2212\u03c8(s_{1})|\u2212\\alpha_{\u03c8})\n$$\n\nwhere $\u03b7$ is the step size for the learning rate. We have no knowledge of participants\u2019 learning rate values before the experiment, so we need to also fit the initial learning rate value, $\\alpha_{\u03c8}^{0}$. The PH model generates a choice through the EU strategy:\n\n$$\n\\pi(s_{1}\u2223\u03c8,m)=\\frac{1}{1+exp\u2061(\u2212\\beta[\u03c8(s_{1})m(s_{1})\u2212\u03c8(s_{2})m(s_{2})])}\n$$\n\nThe context-free variant PH4 has a total of four free parameters $\u03be=\\alpha_{\u03c8}^{0},k,\u03b7,\\beta$. The context-dependent variant PH17 considers ${\\alpha_{\u03c8}^{0}}$ as a context-free parameter and as context-dependent parameters, resulting in a total of 17 free parameters.\n\n### Model fitting\n\nParameters were estimated for each participant via the maximum a posteriori (MAP) method. The objective function to maximize is:\n\n$$\nmax\u03be\\sumi=1Nlog\u2061L(s_{i}\u2223m_{i},O_{i},M,\u03be)+log\u2061p(\u03be)\n$$\n\nwhere $\u03be$ means the model-free parameters. $M$ is the model and $N$ refers to the number of trials of the participant\u2019s behavioral data. $m_{i}$, $O_{i}$, and $s_{i}$ are the presented magnitude, true feedback probability, and participants\u2019 responses recorded in each trial.\n\nParameter estimation was performed using the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm in the scipy.optimize module in Python. This algorithm provides an approximation of the inverse Hessian matrix for the parameter, a critical component that can be employed in Bayesian model selection (Rigoux et al., 2014). In order to use the BFGS algorithm, we reparametrized the model, thereby transforming the original fitting problem into an unconstrained optimization problem. We carefully tuned the parameter priors to ensure that they had little impact on the fitting results. For each participant, we ran the optimization with 40 randomly chosen initial parameters to avoid local minima.\n\nImportantly, to fit the weighting parameters ($w_{EU},w_{MO},w_{HA}$) and ensure they summed to 1, we parameterized the weighting parameters as outputs of a softmax function,\n\n$$\nw_{i}=softmax(\\lambda_{i})\u2200i\\in{EU,MO,HA}\n$$\n\nand fit the logits $\\lambda_{i}$ of the weights. All logits were assumed to be normally distributed with a prior $N(0,10)$. In the result section, we used both ($w_{EU},w_{MO},w_{HA}$) and ($\\lambda_{EU},\\lambda_{MO},\\lambda_{HA}$) to represent participants\u2019 strategy preferences. Some of the statistical analyses were performed only on ($\\lambda_{EU},\\lambda_{MO},\\lambda_{HA}$) because they are normally distributed.\n\n### Simulation details\n\n#### Simulate to understand the three strategies\n\nWe run simulations to understand the effects of the three strategies on hit rate, hit rate difference, and learning curve. We first used the MOS6 to simulate the learning behaviors of the healthy control group in 100 independent experiments. The parameters were set as  $\\beta$ = 10.803, $\\alpha_{HA}$ = 0.423, $\\alpha_{\u03c8}$ = 0.473, $\\lambda_{EU}$ = 1.138, $\\lambda_{MO}$ = \u20131.547, $\\lambda_{HA}$ = 0.686, where the first three parameters represent the median across both groups and the latter three weighting parameters are the median across healthy controls. Each simulated experiment consists of two runs, one showing a stable context first and then a volatile context, and vice versa in the other run. This approach results in a total of 200 runs for the healthy control group. The task sequences were randomly generated using the same design Gagne et al., 2020 used for data collection. Similarly, we repeated all the simulation procedures for the patient group, except that the parameters were set to  $\\beta$ = 10.803, $\\alpha_{HA}$ = 0.423, $\\alpha_{\u03c8}$ = 0.473, $\\lambda_{EU}$ = 0.515, $\\lambda_{MO}$ = \u20130.220, $\\lambda_{HA}$ = 0.094. Note that we used identical {$\\beta,\\alpha_{HA},\\alpha_{\u03c8}$} in both groups and only varied {$\\lambda_{EU},\\lambda_{MO},\\lambda_{HA}}$} as the median across the patient participants. We used $\\pi_{EU}(s\u2223\u03c8,m)$, $\\pi_{MO}(s\u2223m)$, and $\\pi_{HA}(s)$ to evaluate the task performance associated with each strategy (e.g. Figure 4B\u2013D). We did not run each strategy completely independently because the HA strategy alone cannot complete the task without learning from decisions previously made by the EU strategy.\n\n#### Simulate to explain learning rate adaptation using MOS6\n\nIn one simulated experiment, we sampled the four task sequences from the real data. We simulated 20 experiments with the parameters of  $\\beta$ = 10.803, $\\alpha_{HA}$ = 0.423, $\\alpha_{\u03c8}$ = 0.473, $w_{EU}$ = 0.60, $w_{MO}$ = 0.15, $w_{HA}$ = 0.25 to mimic the behavior of the healthy control participants. The first three are the median of the fitted parameters across all participants; the latter three were chosen to approximate the strategy preferences of real healthy control participants (Figure 4A). Similarly, we also simulated 20 experiments for the patient group with the identical values of $\\beta$, $\\alpha_{HA}$, and $\\alpha_{\u03c8}$, but different strategy preferences  $w_{EU}$ = 0.15, $w_{MO}$ = 0.60, $w_{HA}$ = 0.25. In other words, the only difference in the parameters of the two groups is the switched $w_{EU}$ and $w_{MO}$. We then fitted the FLR22 to the behavioral data generated by the MOS6 and examined the learning rate differences across groups and volatile contexts (Figure 6).\n",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mimi Liljeholm, University of California, Irvine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93887.3.sa0](https://doi.org/10.7554/eLife.93887.3.sa0)\n\nThis study provides a novel and valuable alternative explanation for volatility-induced changes in choice behavior, commonly attributed to learning-rate adaptations. Through rigorous and comprehensive computational modeling of previously published data, the authors provide convincing support for the claim that apparent learning-rate adaptations may instead reflect a mixture of decision strategies. Furthermore, they demonstrate that differential weighting of the optimal decision strategy is predicted by psychopathology common to depression and anxiety. This work should be of interest to a wide range of scientists, including psychologists, neuroscientists, computer scientists, and clinicians.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93887.3.sa1](https://doi.org/10.7554/eLife.93887.3.sa1)\n\nSummary:\n\nPrevious research shows that humans tend to adjust learning in environments where stimulus-outcome contingencies become more volatile. This learning rate adaptation is impaired in some psychiatric disorders, such as depression and anxiety. In this tudy the authors reanalyze previously published data on a reversal learning task with two volatility levels. Through a new model they provide some evidence for an alternative explanation whereby the learning rate adaptation is driven by different decision-making strategies and not learning deficits. In particular, they propose that adjusting of learning can be explained by deviations from the optimal decision-making strategy (based on maximizing expected utility) due to response stickiness or focus on reward magnitude. Furthermore, a factor related to general psychopathology of individuals with anxiety and depression negatively correlated with the weight on the optimal strategy and response stickiness, while it correlated positively with the magnitude strategy (a strategy that ignores the probability of outcome).\n\nThe main strength of the study is a novel and interesting explanation of an otherwise well-established finding in human reinforcement learning. This proposal is supported by rigorously conducted parameter retrieval and the comparison of the novel model to a wide range of previously published models. The authors explore from many angles, if and why the predictions from the new proposed model are superior to previously applied models.\n\nMy previous concerns were addressed in the revised version of the manuscript. I believe that the article now provides a new perspective on a well-established learning effect and offer a novel set of interesting response models that can be applied to a wide array of decision-making problems.\n\nI see two limitations of the study not mentioned in the discussion of the manuscript. First, the task features binary inputs and responses, therefore unexpected uncertainty (volatility) is impossible to differentiate from the uncertainty about outcomes, and exploration is inseparable from random choices. Future work could validate these findings in task designs that allow to distinguish these processes. Second, clinical results are based on a small sample of patients and should be interpreted with this in mind.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93887.3.sa2](https://doi.org/10.7554/eLife.93887.3.sa2)\n\nSummary:\n\nThis paper presents a new formulation of a computational model of adaptive learning amid environmental volatility. Using a behavioral paradigm and data set made available by the authors of an earlier publication (Gagne et al., 2020), the new model is found to fit the data well. The model's structure consists of three weighted controllers that influence decisions on the basis of (1) expected utility, (2) potential outcome magnitude, and (3) habit. The model offers an interpretation of psychopathology-related individual differences in decision-making behavior in terms of differences in the relative weighting of the three controllers.\n\nStrengths:\n\nThe newly proposed \"mixture of strategies\" (MOS) model is evaluated relative to the model presented in the original paper by Gagne et al., 2020 (here called the \"flexible learning rate\" or FLR model) and two other models. Appropriate and sophisticated methods are used for developing, parameterizing, fitting, and assessing the MOS model, and the MOS model performs well on multiple goodness-of-fit indices. Parameters of the model show decent recoverability and offer a novel interpretation for psychopathology-related individual differences. Most remarkably, the model seems to be able to account for apparent differences in behavioral learning rates between high-volatility and low-volatility conditions even with no true condition-dependent change in the parameters of its learning/decision processes. This finding calls into question a class of existing models that attribute behavioral adaptation to adaptive learning rates.\n\nWeaknesses:\n\nThe authors have responded to the weaknesses noted previously.\n",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1ead4c28-08a9-4a4d-b40b-60342b910983",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C1",
+      "claim": "Eighty-six participants took part in this experiment, comprising 20 patients with major depressive disorder (MDD), 12 patients with generalized anxiety disorder (GAD), and 54 healthy control participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty-six participants took part in this experiment, comprising 20patients with major depressive disorder (MDD), 12patients with generalized anxiety disorder (GAD), and 54 healthy control participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the participant composition in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "1d74a71a-ae28-4057-b192-e908f562cde4",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C2",
+      "claim": "Patients with MDD and GAD achieved a significantly lower hit rate compared to healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with MDD and GAD exhibit three key behavioral patterns as compared to healthy controls. First, patients achieved a significantly lower hit rate (averaged across stable and volatile contexts) as compared to the healthy controls (Figure 2A; t(70.541) = 3.326, p = 0.001, Cohen's d = 0.723).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results (t-test with p=0.001) support this claim, and Figure 2A provides visual evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "5c57641f-c969-4f5c-85a2-0728b755fa2a",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C3",
+      "claim": "Patients' learning curves took more trials to converge to an asymptote, indicating seemingly slower learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we observed two atypical features of learning curves in the patient group (Figure 2B). The patients' learning curves took more trials to converge to an asymptote (i.e. seemingly slower learning).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct observation from learning curve analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "4abbe980-5128-4f41-bb5a-c79639a1c5db",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C4",
+      "claim": "There was a larger apparent deviation from the true feedback probability in the patient group.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there was a larger apparent deviation (Figure 2B, blue arrows) from the true feedback probability. The apparent deviation indicates that the learning curve of the patient group could never converge to the true feedback probability, even given a sufficient number of trials in a stable context.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Visual evidence from Figure 2B showing deviation marked by blue arrows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "da13d03b-c2f7-4bdc-a641-c3b30fe2c4a4",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C5",
+      "claim": "The patient group showed a reduced hit rate difference between volatile and stable contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, aside from the lower learning rate and atypical learning curves that indicate inferior performance in the patient group, we further discovered a reduced hit rate difference within the patient group (Figure 2 and t(55.648) = 2.038, p = 0.046, Cohen's d = 0.478).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results (t-test with p=0.046) and Figure 2 support this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "721b7317-efee-4e49-8752-3083592f0379",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C6",
+      "claim": "Hit rate difference is marginally associated with the severity of participants' symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this hit rate difference is marginally associated with the severity of participants' symptoms (r(86) = \u20130.194, p = 0.074), as measured using the bifactor analysis reported in Gagne et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation analysis with p=0.074 (marginal significance) and citation to Gagne et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "c2779247-95bb-4ffa-ac7f-3e3bfbad22be",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C7",
+      "claim": "MOS6 and MOS22 were the best-fitting models in terms of BIC and AIC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "MOS6 and MOS22 were the best-fitting models in terms of the Bayesian Information Criterion (BIC; Schwarz, 1978) and Akaike Information Criterion (AIC; Akaike, 1974), respectively (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model comparison results shown in Figure 3A with citations to BIC and AIC criteria.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "7480099c-ff36-4cf8-940b-4c8eb5ad43f6",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C8",
+      "claim": "Group-level Bayesian model comparison supports MOS6 as the best-fitting model.",
+      "claim_type": "EXPLICIT",
+      "source": "The group-level Bayesian model comparison (Rigoux et al., 2014) further supports MOS6 as the best-fitting model (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bayesian model comparison results shown in Figure 3B with citation to Rigoux et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "42d31f78-9e28-4be1-88e4-4c6ddb31810c",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C12",
+      "claim": "No group differences in learning rate were found in the MOS6 model.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, we also examined the learning rate parameter in the MOS6 but found no group differences (t(68.692) = 0.690, p = 0.493, Cohen's d = 0.151).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test results (t-test with p=0.493, non-significant) showing no learning rate differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "fc92cf4c-8223-4d1e-94c8-ecc01ce59c72",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C13",
+      "claim": "The EU strategy achieved the highest hit rate among the three strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "For hit rate, our simulations showed that the EU strategy achieved the highest hit rate, while the MO strategy basically performed at the chancel-level (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 4B demonstrating EU strategy performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a93aafdf-23ce-4bf5-8f51-416c2c995582",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C14",
+      "claim": "The MO strategy performed at chance-level for hit rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For hit rate, our simulations showed that the EU strategy achieved the highest hit rate, while the MO strategy basically performed at the chancel-level (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 4B demonstrating MO strategy performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "65534744-7b7d-402c-8917-1e95addab068",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C15",
+      "claim": "The HA strategy achieved an above-chance hit rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our simulations also showed that the HA strategy achieved an above-chance hit rate. This is because, although the HA strategy appears not to consider feedback probability directly, it still somewhat tracks feedback probability by simply repeating the past choices made by the EU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results with explanation of mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "08faad37-53ab-48e3-a09a-4b5b95af2672",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C16",
+      "claim": "Patients with severe symptoms exhibit a weaker preference for the cognitively demanding EU strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that patients with severe symptoms exhibit a weaker preference for the cognitively demanding EU strategy (Pearson's r = \u20130.221, p = 0.040)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation analysis with p=0.040 showing relationship between symptom severity and EU preference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "da66c398-c2e7-4967-9b78-6d704ed69b3c",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C17",
+      "claim": "Patients with severe symptoms show a stronger preference for the simpler MO strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "and a stronger preference for the simpler MO strategy (Pearson's r = 0.360, p = 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation analysis with p=0.001 showing relationship between symptom severity and MO preference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f58f170d-ebe7-4093-ace0-87a513c702b2",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C18",
+      "claim": "There was a significant correlation between symptom severity and the preference for the HA strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there was a significant correlation between symptom severity and the preference for the HA strategy (Pearson's r = \u20130.285, p = 0.007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Correlation analysis with p=0.007 showing relationship between symptom severity and HA preference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a6468126-78a8-4a28-9716-46305a6244c6",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C19",
+      "claim": "No significant correlation was found between learning rate adaptation and symptom severity within the MOS22 model.",
+      "claim_type": "EXPLICIT",
+      "source": "For completeness, we examined the correlation between learning rate adaptation (log volatile learning rate \u2013 log stable learning rate) and symptom severity within the MOS22 model (Figure 5\u2014figure supplement 1). Not surprisingly, we found no significant correlation (r(86) = 0.130, p = 0.233)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation analysis with p=0.233 (non-significant) shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "7b2faa10-4e0e-4b00-9946-f6c5c2491f62",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C20",
+      "claim": "The MOS22 model revealed no learning rate adaptation effect, as indicated by learning rate parameters in the volatile context not being significantly larger than in the stable context.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the MOS22 model revealed no learning rate adaptation effect, as indicated by the learning rate parameters in the volatile context not being significantly larger than that in the stable context (F(1, 77) = 0.126, p = 0.724, \u019e2<0.001; Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ANOVA results with p=0.724 (non-significant) shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "15d912c8-4c34-442f-ac33-287ec6e61f95",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C21",
+      "claim": "Simulated data generated by MOS6 reproduced the slower learning curve and the apparent difference in the patient group.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated each group 20 times, and the simulated data reproduced the slower learning curve and the apparent difference in the patient group (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 6A demonstrating model's ability to reproduce behavioral patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "5d02ccf3-5e7c-45fa-bb98-db46392f6261",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C22",
+      "claim": "When FLR22 was fit to simulated data from MOS6, significant differences in learning rate between stable and volatile contexts were found.",
+      "claim_type": "EXPLICIT",
+      "source": "We fit the simulated data generated by MOS6 with the FLR22 model and found significant differences in the (log) learning rate between stable and volatile contexts (paired t-test(39 ) = \u20133.217, p = 0.003, Cohen's d = 0.721; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical test results (paired t-test with p=0.003) on simulated data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "e19f8e8c-bcd7-4084-a050-a5f512a5b604",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C23",
+      "claim": "The agent resembling the patient group demonstrated a trend toward reduced learning rate adaptation compared to the agent resembling the healthy control group.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the agent resembling the patient group demonstrated a trend toward reduced learning rate adaptation compared to the agent resembling the healthy control group (Figure 6C), consistent with the learning rate adaptation theory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 6C demonstrating trend in synthetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "ac7a939b-0882-47d8-95f3-72c3632c6f29",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C24",
+      "claim": "Parameter recovery results demonstrate that the true parameters can be accurately estimated and identified in the MOS6 model.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameter recovery results (Figure 7A) demonstrate that the true parameters can be accurately estimated and identified (all Pearson's rs >0.720)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Parameter recovery analysis results shown in Figure 7A with correlation values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "1d526619-9614-4480-9ef7-e5b41ef79ae8",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C25",
+      "claim": "In model recovery analysis, the best-fitting model was always the one that generated the data.",
+      "claim_type": "EXPLICIT",
+      "source": "We then fit all eight models to every dataset using the MAP method as the same before. The best-fitting model was always the one that generated the data, as indicated by all three quantitative metrics: AIC, BIC, and PXP (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model recovery analysis results shown in Figure 7B using multiple metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "fd9d3aaa-1646-41af-9ddf-2ded1ef0ce2b",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C26",
+      "claim": "The MOS and FLR models cannot adequately account for each other's synthetic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the MOS and FLR models cannot adequately account for each other's synthetic datasets, strongly supporting the independent computational effects of strategy preference and learning rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model recovery analysis demonstrating model distinguishability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "6e3d78ec-c1be-43bb-ac0c-77ef0bfd39ba",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C27",
+      "claim": "In the volatile reversal learning task, participants chose between two shaped stimuli to receive feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In a volatile reversal learning task, participants chose between two shaped stimuli to receive feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the experimental task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "7957634a-9e86-4252-a8ff-aa465f95e2f9",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C28",
+      "claim": "Participants received the presented feedback when choosing the feedback stimulus; otherwise, they received '0'.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants received the presented feedback (e.g. '27' on the 'square') when choosing the feedback stimulus; otherwise, they received '0' (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct description of task feedback structure shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a68ded1f-7db7-40d1-a3eb-d2b8db96b9c6",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C29",
+      "claim": "The task was divided into four contexts: reward or aversive feedback types crossed with stable or volatile conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The task was divided into four contexts: reward or aversive feedback types crossed with stable or volatile conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f4036c17-effd-4081-b37c-b94c5cf9ba62",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C30",
+      "claim": "In stable conditions, one stimulus had a higher fixed feedback probability of 75%.",
+      "claim_type": "EXPLICIT",
+      "source": "In stable, one stimulus had a higher fixed feedback probability (always 75%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of stable condition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "6c00c779-2731-4e1b-bc2d-dcd9a2ed7eb1",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C31",
+      "claim": "In volatile conditions, the dominant stimulus switched every 20 trials with probabilities of either 20% or 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "while in volatile, the dominant stimulus switched every 20 trials (either 20% or 80%), requiring active learning of stimulus-feedback contingencies (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct description of volatile condition parameters shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f3a2da13-84d6-4100-b686-0c6fc4e5210c",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C32",
+      "claim": "Each run consisted of 180 trials, with 90 trials in the stable context and 90 in the volatile context.",
+      "claim_type": "EXPLICIT",
+      "source": "Each run consisted of 180 trials, with 90 trials in the stable context and 90 in the volatile context (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct description of experimental structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "ef164ed5-212e-46cc-a847-821c4a8df2b9",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C33",
+      "claim": "No additional hints were provided about the transition from one context to another.",
+      "claim_type": "EXPLICIT",
+      "source": "No additional hints were provided about the transition from one context to another; therefore, participants needed to infer the current context on their own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "197eefeb-9a6f-47c2-a09c-8a62ae24910b",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C34",
+      "claim": "The MOS model postulates that behavioral differences across participant groups and stable/volatile contexts arise from different weightings of multiple decision strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our target model family, known as MOS, posits that behavioral differences across the two participant groups and between stable/volatile contexts can be attributed to varying weightings of multiple decision strategies: EU, MO, and HA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the model's core hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "dff47e6c-47e3-4585-93cf-8a5a6d645726",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C35",
+      "claim": "The EU strategy yields the maximum amount of reward but consumes considerable cognitive resources.",
+      "claim_type": "EXPLICIT",
+      "source": "This EU strategy yields the maximum amount of reward, but the utility calculation itself consumes considerable cognitive resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical statement about the EU strategy's properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a0a9e736-4afe-443b-b24f-a73b3461d6cd",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C36",
+      "claim": "The MO strategy only considers reward magnitude during the decision process.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, humans may choose simpler strategies, e.g., the magnitude-oriented (MO) strategy, in which only the reward magnitude was considered during the decision process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the MO strategy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "efee2f15-7512-40b8-b3f9-9e1ba8ba5d91",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C37",
+      "claim": "The HA strategy involves simply repeating decisions frequently made in the past regardless of reward magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "and the habitual (HA) strategy, in which people simply repeat decisions frequently made in the past regardless of reward magnitude (Wood and R\u00fcnger, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the HA strategy with citation to Wood and R\u00fcnger, 2016.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "965d0af5-9871-47a0-94d4-539f3b3a85ad",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C38",
+      "claim": "Previous studies have identified that individuals with anxiety or depression exhibit a reduced learning rate compared to healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on reinforcement learning have identified three prominent phenomena: (1) individuals with anxiety or depression exhibit a reduced learning rate compared to healthy subjects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a5daa920-d4cf-4f95-b4e6-93a5e3ee5111",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C39",
+      "claim": "Learning rates may increase or decrease in environments with rapidly changing or stable feedback conditions, a phenomenon termed learning rate adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) learning rates may increase or decrease in environments with rapidly changing (i.e. volatile) or stable feedback conditions, a phenomenon termed learning rate adaptation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior research findings defining learning rate adaptation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "41edefe3-bf88-4fad-ba2f-3eec44db2d59",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C40",
+      "claim": "Reduced learning rate adaptation is associated with several psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) reduced learning rate adaptation is associated with several psychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "2b7d2915-6254-4d74-95d7-a5537c56b1af",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C41",
+      "claim": "Human participants are able to flexibly adapt to changes in environmental volatility by increasing and decreasing the learning rate.",
+      "claim_type": "EXPLICIT",
+      "source": "First, human participants are able to flexibly adapt to changes in environmental volatility, as evidenced by increasing and decreasing the learning rate in response to volatile and stable conditions. This observation is often referred to as the learning rate adaptation effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior research findings on learning rate adaptation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "44daa46f-8c01-4ee9-8453-963fddb267e3",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C42",
+      "claim": "Individuals with several psychiatric disorders, including anxiety and depression, have been found to have a reduced ability to adapt their learning rate in response to environmental volatility.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, individuals with several psychiatric disorders, including anxiety and depression, have been found to have a reduced ability to adapt their learning rate in response to environmental volatility (Behrens et al., 2007; Browning et al., 2015; Gagne et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior research findings with citations to Behrens et al., 2007; Browning et al., 2015; Gagne et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "84b30b69-5ae0-4a11-a551-e91f13695fa5",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C43",
+      "claim": "Reduced learning rate adaptation can be indicative of atypical behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "This hallmark can also be indicative of atypical behaviors (Browning et al., 2015; Gagne et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of prior research with citations to Browning et al., 2015; Gagne et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "25426e8f-cbe0-46bf-bd4a-1e5f57741e3e",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C44",
+      "claim": "Reduced learning rate adaptation is associated with psychosis.",
+      "claim_type": "EXPLICIT",
+      "source": "psychosis (Powers et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to Powers et al., 2017 linking reduced learning rate adaptation to psychosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "94ba4f4f-028b-43d1-b5dd-b38b9d2a04da",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C45",
+      "claim": "Reduced learning rate adaptation is associated with autism spectrum disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "and autism spectrum disorder (Lawson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to Lawson et al., 2017 linking reduced learning rate adaptation to autism spectrum disorder.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "4f9ff087-020a-4ecb-8747-b26e5a3afe76",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C46",
+      "claim": "The traditional approach to understanding human behaviors using learning rates increases the number of learning rates as the number of contexts increases, thereby increasing the risk of overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the current approach to understanding human behaviors using learning rates has two main limitations. First, the traditional approach increases the number of learning rates as the number of contexts increases, thereby increasing the risk of overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critical analysis of prior methodological approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "adb97c25-8bb6-424a-8a35-e7e82cc0df66",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C47",
+      "claim": "The traditional learning rate approach implicitly assumes that learning rate differences can account for all behavioral differences between stable/volatile contexts and between healthy controls and patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, this approach implicitly assumes that learning rate differences can account for all behavioral differences between stable/volatile rewarding contexts and group differences between healthy controls and patients with psychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Critical analysis of assumptions in prior approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f7660cef-cd17-4edf-ba65-eab0b6275f38",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C48",
+      "claim": "The learning rate is not directly observable and is often estimated by model fitting, which limits its interpretability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the learning rate is not directly observable and is often estimated by model fitting, which limits its interpretability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological limitations of learning rate estimation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "9be4f7c0-99de-4496-8a8d-61661569eb24",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C49",
+      "claim": "The MOS model can reproduce three classic phenomena by using a single set of strategy preference parameters without introducing any learning rate differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the FLR model, the MOS model can reproduce the three classic phenomena by using a single set of strategy preference parameters without introducing any learning rate differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of model comparison results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a7cbbee6-7627-4dff-91b3-e944c740a0a2",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C50",
+      "claim": "The MOS model can successfully account for several novel behavioral patterns that cannot be explained by the FLR model.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the MOS model can successfully account for several novel behavioral patterns that cannot be explained by the FLR model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of model comparison results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "8090279f-91c4-496f-908b-3d90066cebaf",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C51",
+      "claim": "Preferences for different strategies predict individual variations in symptom severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Preferences for different strategies also predict individual variations in symptom severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of correlation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "db8a84b7-00cc-464f-a8aa-5ebd4e410b35",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C52",
+      "claim": "Atypical strategy preference is a potential mechanism for learning deficits in psychiatric disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings underscore the importance of considering mixed strategy use in human learning and decision-making and suggest atypical strategy preference as a potential mechanism for learning deficits in psychiatric disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretive conclusion based on study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "3e55ae83-142e-41ed-bd7d-49afe26c4745",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C53",
+      "claim": "The diagnosis was made through a phone screen, an in-person screening session, and the structured clinical interview following DSM-IV-TR (SCID) in 20 MDD patients, 12 GAD patients, and 20 healthy control participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The diagnosis was made through a phone screen, an in-person screening session, and the structured clinical interview following DSM-IV-TR (SCID) in 20 MDD patients, 12 GAD patients, and 20 healthy control participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of diagnostic procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "2d23bbf9-ade5-4401-b9b2-bd74f90a03ed",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C54",
+      "claim": "The remaining 30 healthy control participants were recruited without SCID.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 30 healthy control participants were recruited without SCID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of recruitment procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f5583363-50c3-4c69-ac54-4e75c8bdc55a",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C55",
+      "claim": "The severity of anxiety and depression in all participants was measured by several standard clinical questionnaires.",
+      "claim_type": "EXPLICIT",
+      "source": "The severity of anxiety and depression in all participants was measured by several standard clinical questionnaires, including the Spielberger State-Trait Anxiety Inventory (STAI form Y; Spielberger et al., 1983), the Beck Depression Inventory (BDI; Beck et al., 1961), the Mood and Anxiety Symptoms Questionnaire (MASQ; Clark and Watson, 1991; Watson and Clark, 1991), the Penn State Worry Questionnaire (Meyer et al., 1990), the Center for Epidemiologic Studies Depression Scale (CESD; Radloff, 1977), and the Eysenck Personality Questionnaire (EPQ; Eysenck and Eysenck, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of clinical assessment methods with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "85ff91f8-b3b6-461b-af44-d014464efc4d",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C56",
+      "claim": "An exploratory bifactor analysis was applied to item-level responses to disentangle variance common to GAD and MDD or unique to each.",
+      "claim_type": "EXPLICIT",
+      "source": "An exploratory bifactor analysis was then applied to item-level responses in all questionnaires to disentangle the variance that is common to GAD and MDD or unique to each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of statistical analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "493938c7-040a-4cef-8003-585fea256a60",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C57",
+      "claim": "The bifactor analysis summarized participants' symptoms into three orthogonal factors: a general factor (g), a depression-specific factor (f1), and an anxiety-specific factor (f2).",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this analysis summarized participants' symptoms into three orthogonal factors: a general factor (g) explaining the common symptoms, a depression-specific factor (f1), and an anxiety-specific factor (f2), which are all included in the public dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of bifactor analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "852cf50a-6325-4606-bf4c-efa2555df457",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C58",
+      "claim": "Participants earned points convertible to monetary rewards in the reward context.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants earned points, which were convertible to monetary rewards, in the reward context",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of reward context.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f6170ba2-d2a9-4c8d-a61c-c0d1cada9607",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C59",
+      "claim": "Participants received electric shocks in the aversive context.",
+      "claim_type": "EXPLICIT",
+      "source": "or received electric shocks in the aversive context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of aversive context.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "fdc391ff-873c-4249-8480-39a3aac90562",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C60",
+      "claim": "The reward points in the reward context were converted into a monetary bonus ranging from \u00a30 to \u00a310.",
+      "claim_type": "EXPLICIT",
+      "source": "The reward points in the reward context were converted into a monetary bonus by the end of the task, ranging from \u00a30 to \u00a310.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of reward conversion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "3cefcba2-ed7b-41c6-b95b-3acd458a861f",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C61",
+      "claim": "A total of 79 participants completed tasks in both feedback contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 79 participants completed tasks in both feedback contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about participant completion rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "8bd63050-6bbb-4aec-a99a-e436459dc90e",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C62",
+      "claim": "Four participants only completed the task in the reward context.",
+      "claim_type": "EXPLICIT",
+      "source": "Four participants only completed the task in the reward context",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about participant completion rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "29062167-64aa-49c9-906a-6b918a44936e",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C63",
+      "claim": "Three participants only completed the aversive task.",
+      "claim_type": "EXPLICIT",
+      "source": "while three participants only completed the aversive task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about participant completion rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "c7e4284a-c53a-454f-8879-a48214cf4bcd",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C65",
+      "claim": "The MOS22 has a total of 22 free parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The context-dependent variant MOS22 has a total of 22 free parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "97b4fea1-4ff0-4ac4-b6a2-875e84a7b984",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C72",
+      "claim": "Parameters were estimated for each participant via the maximum a posteriori (MAP) method.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameters were estimated for each participant via the maximum a posteriori (MAP) method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of parameter estimation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "5ad19a3f-c799-43b1-8be8-ed8574db8911",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C73",
+      "claim": "Parameter estimation was performed using the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm in the scipy.optimize module in Python.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameter estimation was performed using the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm in the scipy.optimize module in Python.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of computational implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "9be32892-586a-41a0-a94d-e8aaea85e05a",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C74",
+      "claim": "For each participant, the optimization was run with 40 randomly chosen initial parameters to avoid local minima.",
+      "claim_type": "EXPLICIT",
+      "source": "For each participant, we ran the optimization with 40 randomly chosen initial parameters to avoid local minima.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of optimization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "23f66484-5fc9-41a2-adbf-ac971f678210",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C75",
+      "claim": "The data is publicly available via https://osf.io/8mzuj/.",
+      "claim_type": "EXPLICIT",
+      "source": "The data is publicly available via https://osf.io/8mzuj/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "b7393432-8b4a-4d58-8e58-ad3db02b697e",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "claim_id": "C76",
+      "claim": "Code is available at https://github.com/fangzefunny/policy-analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Code is available at https://github.com/fangzefunny/policy-analysis, (copy archived at Fang, 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study recruited 86 participants (20 MDD, 12 GAD, 54 healthy controls) with diagnoses confirmed via SCID for a subset, and symptom severity measured using multiple clinical questionnaires analyzed via bifactor analysis yielding three orthogonal factors (general, depression-specific, anxiety-specific).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C53-C57 provide comprehensive documentation of participant recruitment, diagnostic procedures, and clinical assessment methods. The use of standardized diagnostic interviews (SCID) for a subset and validated clinical questionnaires with bifactor analysis provides adequate methodological rigor for characterizing the sample, though the inconsistent use of SCID across all participants (C54) introduces some heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The volatile reversal learning task involved choosing between two stimuli across four contexts (reward/aversive \u00d7 stable/volatile), with stable contexts maintaining 75% feedback probability and volatile contexts switching dominant stimulus every 20 trials between 20% and 80% probabilities, with no explicit cues for context transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 and C58-C63 provide clear and detailed description of the experimental paradigm. The task design is well-specified with appropriate parameters for studying learning under uncertainty. The completion rates (C61-C63) indicate good participant retention, though incomplete data from 7 participants may introduce minor selection effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "915b379b-9430-4834-8691-a55cd25f7b4b",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Patients with MDD and GAD exhibited three key behavioral deficits: significantly lower hit rates (p=0.001, d=0.723), slower learning curves with larger deviations from true feedback probability, and reduced hit rate differences between volatile and stable contexts (p=0.046, d=0.478), with the latter marginally associated with symptom severity (r=-0.194, p=0.074).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6 present converging behavioral evidence with appropriate statistical tests and effect sizes. The three behavioral patterns are well-documented in Figure 2 and supported by significant statistical tests. The marginal association with symptom severity (C6, p=0.074) is appropriately characterized as marginal rather than significant, showing appropriate statistical interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "10d25052-b50c-4837-a292-579a33b92e33",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The mixture-of-strategies (MOS) model, which posits that behavior arises from weighted combinations of three strategies (EU: cognitively demanding but optimal; MO: magnitude-only, simpler; HA: habitual repetition), provided the best fit to behavioral data as measured by BIC (MOS6) and group-level Bayesian model comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 demonstrate superior model fit using multiple metrics (BIC, AIC, PXP) with appropriate citations to model selection criteria. Claims C34-C37 provide clear theoretical justification for the model architecture. The model comparison is rigorous and the theoretical framework is well-motivated, though the choice of these specific three strategies could benefit from additional justification beyond fit metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "332a3fbe-b075-42ef-a8c3-588bd0cdb37d",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The MOS models revealed no significant group differences in learning rate parameters (MOS6: p=0.493, d=0.151) and no learning rate adaptation effect across volatile/stable contexts (MOS22: p=0.724, \u03b7\u00b2<0.001), with no correlation between learning rate adaptation and symptom severity (r=0.130, p=0.233).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C20, and C19 provide consistent null findings across multiple model variants with appropriate statistical tests. The absence of learning rate differences is a key finding that challenges traditional interpretations, and the statistical evidence is clear with non-significant p-values and small effect sizes. This represents a theoretically important negative result that is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f4eda062-ba89-4468-a969-ca1b91e28425",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simulations revealed that the EU strategy achieved the highest hit rate, the MO strategy performed at chance level, and the HA strategy achieved above-chance hit rate by indirectly tracking feedback probability through repetition of EU-guided choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are supported by simulation results shown in Figure 4B. The mechanistic explanation for HA strategy performance (C15) is plausible and provides insight into strategy interactions. The simulations appropriately isolate individual strategy contributions to understand the mixture model's behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "514c2107-51d0-4b4c-b3e7-dc915b535475",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Strategy preferences correlated with symptom severity: patients with more severe symptoms showed weaker preference for EU strategy (r=-0.221, p=0.040), stronger preference for MO strategy (r=0.360, p=0.001), and weaker preference for HA strategy (r=-0.285, p=0.007).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 demonstrate clinically relevant correlations between computational parameters and symptom severity with significant statistical tests. The pattern of correlations is theoretically coherent (more severe symptoms \u2192 simpler strategies) and provides important validation of the model's clinical relevance. Effect sizes are moderate and consistent with the theoretical framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "e5e27ecb-e45a-46fc-bf90-4c2a9b593341",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulated data from MOS6 reproduced patient behavioral patterns, and when fit with the FLR22 model, showed apparent learning rate adaptation effects (p=0.003, d=0.721) and reduced adaptation in patient-like agents, demonstrating that strategy mixture can mimic learning rate adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 provide compelling evidence that strategy preferences can produce patterns traditionally attributed to learning rate adaptation. The simulation approach is methodologically sound, showing that fitting FLR22 to MOS6-generated data recovers apparent learning rate effects. This is a critical result demonstrating potential confounding between model interpretations, though the 'trend' language in C23 suggests this effect may be weaker than the others.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "1cceaf0a-6edf-4793-b431-94d54fb8a1a8",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Parameter recovery analysis showed accurate estimation of MOS6 parameters (all r>0.720), and model recovery analysis demonstrated that the generating model was always best-fitting, with MOS and FLR models unable to adequately account for each other's synthetic data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide essential validation of model identifiability through rigorous parameter and model recovery analyses shown in Figure 7. The high correlations in parameter recovery and successful model recovery demonstrate that the models are distinguishable and parameters are estimable. This addresses critical concerns about model confounding and supports the validity of the model comparison results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "d57a87af-dd86-430f-aed2-b1380b577e38",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Model parameters were estimated using maximum a posteriori (MAP) method with the BFGS algorithm in Python, running 40 optimizations with random initial parameters per participant to avoid local minima, with the MOS22 model having 22 free parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C72-C74 provide adequate methodological detail for parameter estimation. The use of MAP with multiple random initializations is appropriate for avoiding local minima. However, the description lacks some details such as convergence criteria, prior specifications (mentioned elsewhere but not detailed here), and computational validation of convergence across the 40 runs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a353db4d-5e8a-4250-9be4-060142a5bc4b",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior research has established three phenomena: (1) individuals with anxiety/depression show reduced learning rates, (2) learning rates adapt to environmental volatility (learning rate adaptation), and (3) reduced learning rate adaptation is associated with multiple psychiatric disorders including anxiety, depression, psychosis, and autism spectrum disorder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 accurately summarize prior literature with appropriate citations. These claims establish the theoretical context and prior findings that the current study challenges. The characterization of prior work appears accurate based on the citations provided, though the authors' interpretation of these findings will be tested by their alternative model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "a2f67e36-d28b-4df1-808c-ecd757e4f41e",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The traditional learning rate approach has limitations: it increases overfitting risk by adding parameters for each context, implicitly assumes learning rate differences explain all behavioral variation, and learning rate is not directly observable, limiting interpretability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 present valid critiques of traditional approaches. The overfitting concern (C46) is legitimate when adding context-specific parameters. The assumption critique (C47) is reasonable as it identifies a potential limitation in prior interpretations. The observability limitation (C48) is accurate\u2014learning rates are latent parameters estimated through modeling. These critiques provide appropriate motivation for the alternative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "caf304e3-437f-4241-8f4e-0e16062f5ec5",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The MOS model reproduces three classic phenomena using strategy preferences without learning rate differences, accounts for novel behavioral patterns unexplained by FLR models, predicts individual symptom severity variations, and suggests atypical strategy preference as a mechanism for learning deficits in psychiatric disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 summarize the main conclusions of the study. These are supported by the convergent evidence from model fitting (C7-C8), behavioral reproduction (C21), lack of learning rate effects (C12, C20), and symptom correlations (C16-C18). The conclusion about atypical strategy preference as a mechanism (C52) is appropriately framed as a suggestion rather than definitive proof, acknowledging the correlational nature of the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "9c913bbc-b04e-4690-8ec6-854e25d9e5ff",
+      "content_id": "ff8e6bc1-317b-40dc-b0a4-beaec32fb15d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The data and code are publicly available via OSF (https://osf.io/8mzuj/) and GitHub (https://github.com/fangzefunny/policy-analysis), respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 provide explicit data and code availability statements with URLs. This supports reproducibility and transparency. The availability of both data and code is a strength, though actual verification of completeness and functionality would require accessing these resources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "9e801902-fc92-4757-8a9e-309be8693e9f",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Patients with MDD and GAD exhibited three key behavioral patterns compared to healthy controls: significantly lower hit rates, slower learning curves with larger deviations from true feedback probability, and reduced hit rate differences between volatile and stable contexts. The hit rate difference showed marginal association with symptom severity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly accept these behavioral findings without critique. Reviewer 2 states the study provides 'some evidence for an alternative explanation' of these patterns, and all reviewers praise the rigorous analysis. The behavioral patterns are treated as established observations that the new model explains.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "807545ed-b10c-49a2-b5da-694ede556808",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The MOS6 model demonstrated superior fit to behavioral data compared to flexible learning rate (FLR) and other alternative models, as evidenced by BIC, AIC, and Bayesian model comparison. Parameter and model recovery analyses confirmed the model's validity, showing accurate parameter estimation and that MOS and FLR models cannot adequately account for each other's synthetic datasets.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers unanimously praise the model validation work. Reviewer 2 notes 'rigorously conducted parameter retrieval and comparison of the novel model to a wide range of previously published models,' while Reviewer 3 states 'Appropriate and sophisticated methods are used for developing, parameterizing, fitting, and assessing the MOS model, and the MOS model performs well on multiple goodness-of-fit indices.' The model recovery findings are treated as convincing evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "0a66cda7-40c5-4a6e-b501-d2afe7b82619",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Strategy preference parameters from the MOS6 model correlated significantly with symptom severity: patients with severe symptoms showed weaker preference for the cognitively demanding EU strategy (r=-0.221, p=0.040), stronger preference for the simpler MO strategy (r=0.360, p=0.001), and significant correlation with HA strategy preference (r=-0.285, p=0.007).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorse these clinical correlations as a key contribution. The editor states the study demonstrates 'differential weighting of the optimal decision strategy is predicted by psychopathology common to depression and anxiety.' Reviewer 2 notes 'a factor related to general psychopathology...negatively correlated with the weight on the optimal strategy and response stickiness, while it correlated positively with the magnitude strategy.' However, Reviewer 2 cautions these 'clinical results are based on a small sample of patients and should be interpreted with this in mind.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f9c5fc6c-86de-4734-a8c3-865623503296",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The MOS models revealed no group differences in learning rate parameters and no learning rate adaptation effect between volatile and stable contexts, challenging traditional learning rate adaptation theories.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is central to the reviewers' enthusiasm. The editor describes it as a 'novel and valuable alternative explanation for volatility-induced changes in choice behavior, commonly attributed to learning-rate adaptations.' Reviewer 3 emphasizes 'Most remarkably, the model seems to be able to account for apparent differences in behavioral learning rates between high-volatility and low-volatility conditions even with no true condition-dependent change in the parameters of its learning/decision processes. This finding calls into question a class of existing models that attribute behavioral adaptation to adaptive learning rates.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "475f01d3-3581-4fa3-bf3b-b296111654ba",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Simulations demonstrated that the EU strategy achieved the highest hit rate, the MO strategy performed at chance level, and the HA strategy achieved above-chance performance by indirectly tracking feedback probability through repeating past EU-driven choices.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these simulation results as part of the comprehensive model validation. Reviewer 2 states 'The authors explore from many angles, if and why the predictions from the new proposed model are superior to previously applied models,' implicitly endorsing the simulation demonstrations. No concerns are raised about these specific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f81cd040-ec57-41a5-ae6d-5a73dbfc105e",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Simulated data generated by MOS6 reproduced key behavioral patterns in the patient group, and when FLR22 was fit to MOS6-generated data, it showed apparent learning rate adaptation effects, demonstrating that strategy mixture can masquerade as learning rate differences.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This simulation demonstration is central to the paper's argument and is strongly endorsed by reviewers. Reviewer 3 highlights this as remarkable evidence that 'calls into question a class of existing models.' The editor describes the overall modeling as providing 'convincing support' for the alternative explanation. These simulations are treated as critical validation of the theoretical claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study used a volatile reversal learning task with 86 participants (20 MDD, 12 GAD, 54 healthy controls) across four contexts combining reward/aversive feedback with stable/volatile conditions, where participants learned stimulus-feedback contingencies without explicit context cues.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the experimental design without critique, noting this is a reanalysis of previously published data (Gagne et al., 2020). Reviewer 2 mentions one limitation: 'the task features binary inputs and responses, therefore unexpected uncertainty (volatility) is impossible to differentiate from the uncertainty about outcomes,' but frames this as a consideration for future work rather than a fundamental flaw. The small patient sample is noted as a limitation for interpreting clinical results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "badad470-b282-4b86-b3b1-f7b45bc640fa",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The MOS model postulates that behavioral differences arise from varying weightings of three decision strategies: expected utility (EU), magnitude-oriented (MO), and habitual (HA), where EU maximizes reward but consumes cognitive resources, MO considers only magnitude, and HA repeats past choices.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly endorse this theoretical framework. The editor calls it a 'novel and valuable alternative explanation,' and Reviewer 2 states it provides 'a novel and interesting explanation of an otherwise well-established finding in human reinforcement learning.' Reviewer 3 notes the model 'offers a novel interpretation for psychopathology-related individual differences.' The theoretical framing is treated as a major contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "5d812264-febc-4696-8304-2ad38f5f02c6",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The MOS model can reproduce classic phenomena using strategy preference parameters without learning rate differences, account for novel behavioral patterns unexplained by FLR models, and predict individual symptom severity variations, suggesting atypical strategy preference as a mechanism for learning deficits in psychiatric disorders.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive conclusions are strongly endorsed by all reviewers. The editor states the work provides 'convincing support' for these claims. Reviewer 2 notes the article 'provides a new perspective on a well-established learning effect and offers a novel set of interesting response models that can be applied to a wide array of decision-making problems.' Reviewer 3 emphasizes the model 'offers a novel interpretation for psychopathology-related individual differences.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6",
+      "content_id": "4644acab-0fb4-4cc7-8521-e7887d9f289a",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The study employed standard clinical diagnostic procedures (SCID for subset of participants), multiple symptom questionnaires with bifactor analysis, reward and aversive feedback contexts, and rigorous computational methods including MAP parameter estimation with BFGS optimization and multiple random initializations. Data and code are publicly available.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the methodological rigor. Reviewer 3 states 'Appropriate and sophisticated methods are used for developing, parameterizing, fitting, and assessing the MOS model.' Reviewer 2 notes 'rigorously conducted parameter retrieval.' The public availability of data and code is implicitly endorsed through the overall positive assessment. The only concern raised is the small clinical sample size (Reviewer 2), which is a limitation of scope rather than methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1ead4c28-08a9-4a4d-b40b-60342b910983",
+      "result_id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb"
+    },
+    {
+      "claim_id": "3e55ae83-142e-41ed-bd7d-49afe26c4745",
+      "result_id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb"
+    },
+    {
+      "claim_id": "2d23bbf9-ade5-4401-b9b2-bd74f90a03ed",
+      "result_id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb"
+    },
+    {
+      "claim_id": "f5583363-50c3-4c69-ac54-4e75c8bdc55a",
+      "result_id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb"
+    },
+    {
+      "claim_id": "85ff91f8-b3b6-461b-af44-d014464efc4d",
+      "result_id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb"
+    },
+    {
+      "claim_id": "493938c7-040a-4cef-8003-585fea256a60",
+      "result_id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb"
+    },
+    {
+      "claim_id": "6e3d78ec-c1be-43bb-ac0c-77ef0bfd39ba",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "7957634a-9e86-4252-a8ff-aa465f95e2f9",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "a68ded1f-7db7-40d1-a3eb-d2b8db96b9c6",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "f4036c17-effd-4081-b37c-b94c5cf9ba62",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "6c00c779-2731-4e1b-bc2d-dcd9a2ed7eb1",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "f3a2da13-84d6-4100-b686-0c6fc4e5210c",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "ef164ed5-212e-46cc-a847-821c4a8df2b9",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "852cf50a-6325-4606-bf4c-efa2555df457",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "f6170ba2-d2a9-4c8d-a61c-c0d1cada9607",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "fdc391ff-873c-4249-8480-39a3aac90562",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "3cefcba2-ed7b-41c6-b95b-3acd458a861f",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "8bd63050-6bbb-4aec-a99a-e436459dc90e",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "29062167-64aa-49c9-906a-6b918a44936e",
+      "result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad"
+    },
+    {
+      "claim_id": "1d74a71a-ae28-4057-b192-e908f562cde4",
+      "result_id": "915b379b-9430-4834-8691-a55cd25f7b4b"
+    },
+    {
+      "claim_id": "5c57641f-c969-4f5c-85a2-0728b755fa2a",
+      "result_id": "915b379b-9430-4834-8691-a55cd25f7b4b"
+    },
+    {
+      "claim_id": "4abbe980-5128-4f41-bb5a-c79639a1c5db",
+      "result_id": "915b379b-9430-4834-8691-a55cd25f7b4b"
+    },
+    {
+      "claim_id": "da13d03b-c2f7-4bdc-a641-c3b30fe2c4a4",
+      "result_id": "915b379b-9430-4834-8691-a55cd25f7b4b"
+    },
+    {
+      "claim_id": "721b7317-efee-4e49-8752-3083592f0379",
+      "result_id": "915b379b-9430-4834-8691-a55cd25f7b4b"
+    },
+    {
+      "claim_id": "c2779247-95bb-4ffa-ac7f-3e3bfbad22be",
+      "result_id": "10d25052-b50c-4837-a292-579a33b92e33"
+    },
+    {
+      "claim_id": "7480099c-ff36-4cf8-940b-4c8eb5ad43f6",
+      "result_id": "10d25052-b50c-4837-a292-579a33b92e33"
+    },
+    {
+      "claim_id": "197eefeb-9a6f-47c2-a09c-8a62ae24910b",
+      "result_id": "10d25052-b50c-4837-a292-579a33b92e33"
+    },
+    {
+      "claim_id": "dff47e6c-47e3-4585-93cf-8a5a6d645726",
+      "result_id": "10d25052-b50c-4837-a292-579a33b92e33"
+    },
+    {
+      "claim_id": "a0a9e736-4afe-443b-b24f-a73b3461d6cd",
+      "result_id": "10d25052-b50c-4837-a292-579a33b92e33"
+    },
+    {
+      "claim_id": "efee2f15-7512-40b8-b3f9-9e1ba8ba5d91",
+      "result_id": "10d25052-b50c-4837-a292-579a33b92e33"
+    },
+    {
+      "claim_id": "42d31f78-9e28-4be1-88e4-4c6ddb31810c",
+      "result_id": "332a3fbe-b075-42ef-a8c3-588bd0cdb37d"
+    },
+    {
+      "claim_id": "7b2faa10-4e0e-4b00-9946-f6c5c2491f62",
+      "result_id": "332a3fbe-b075-42ef-a8c3-588bd0cdb37d"
+    },
+    {
+      "claim_id": "a6468126-78a8-4a28-9716-46305a6244c6",
+      "result_id": "332a3fbe-b075-42ef-a8c3-588bd0cdb37d"
+    },
+    {
+      "claim_id": "fc92cf4c-8223-4d1e-94c8-ecc01ce59c72",
+      "result_id": "f4eda062-ba89-4468-a969-ca1b91e28425"
+    },
+    {
+      "claim_id": "a93aafdf-23ce-4bf5-8f51-416c2c995582",
+      "result_id": "f4eda062-ba89-4468-a969-ca1b91e28425"
+    },
+    {
+      "claim_id": "65534744-7b7d-402c-8917-1e95addab068",
+      "result_id": "f4eda062-ba89-4468-a969-ca1b91e28425"
+    },
+    {
+      "claim_id": "08faad37-53ab-48e3-a09a-4b5b95af2672",
+      "result_id": "514c2107-51d0-4b4c-b3e7-dc915b535475"
+    },
+    {
+      "claim_id": "da66c398-c2e7-4967-9b78-6d704ed69b3c",
+      "result_id": "514c2107-51d0-4b4c-b3e7-dc915b535475"
+    },
+    {
+      "claim_id": "f58f170d-ebe7-4093-ace0-87a513c702b2",
+      "result_id": "514c2107-51d0-4b4c-b3e7-dc915b535475"
+    },
+    {
+      "claim_id": "15d912c8-4c34-442f-ac33-287ec6e61f95",
+      "result_id": "e5e27ecb-e45a-46fc-bf90-4c2a9b593341"
+    },
+    {
+      "claim_id": "5d02ccf3-5e7c-45fa-bb98-db46392f6261",
+      "result_id": "e5e27ecb-e45a-46fc-bf90-4c2a9b593341"
+    },
+    {
+      "claim_id": "e19f8e8c-bcd7-4084-a050-a5f512a5b604",
+      "result_id": "e5e27ecb-e45a-46fc-bf90-4c2a9b593341"
+    },
+    {
+      "claim_id": "ac7a939b-0882-47d8-95f3-72c3632c6f29",
+      "result_id": "1cceaf0a-6edf-4793-b431-94d54fb8a1a8"
+    },
+    {
+      "claim_id": "1d526619-9614-4480-9ef7-e5b41ef79ae8",
+      "result_id": "1cceaf0a-6edf-4793-b431-94d54fb8a1a8"
+    },
+    {
+      "claim_id": "fd9d3aaa-1646-41af-9ddf-2ded1ef0ce2b",
+      "result_id": "1cceaf0a-6edf-4793-b431-94d54fb8a1a8"
+    },
+    {
+      "claim_id": "c7e4284a-c53a-454f-8879-a48214cf4bcd",
+      "result_id": "d57a87af-dd86-430f-aed2-b1380b577e38"
+    },
+    {
+      "claim_id": "97b4fea1-4ff0-4ac4-b6a2-875e84a7b984",
+      "result_id": "d57a87af-dd86-430f-aed2-b1380b577e38"
+    },
+    {
+      "claim_id": "5ad19a3f-c799-43b1-8be8-ed8574db8911",
+      "result_id": "d57a87af-dd86-430f-aed2-b1380b577e38"
+    },
+    {
+      "claim_id": "9be32892-586a-41a0-a94d-e8aaea85e05a",
+      "result_id": "d57a87af-dd86-430f-aed2-b1380b577e38"
+    },
+    {
+      "claim_id": "965d0af5-9871-47a0-94d4-539f3b3a85ad",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "a5daa920-d4cf-4f95-b4e6-93a5e3ee5111",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "41edefe3-bf88-4fad-ba2f-3eec44db2d59",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "2b7d2915-6254-4d74-95d7-a5537c56b1af",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "44daa46f-8c01-4ee9-8453-963fddb267e3",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "84b30b69-5ae0-4a11-a551-e91f13695fa5",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "25426e8f-cbe0-46bf-bd4a-1e5f57741e3e",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "94ba4f4f-028b-43d1-b5dd-b38b9d2a04da",
+      "result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b"
+    },
+    {
+      "claim_id": "4f9ff087-020a-4ecb-8747-b26e5a3afe76",
+      "result_id": "a2f67e36-d28b-4df1-808c-ecd757e4f41e"
+    },
+    {
+      "claim_id": "adb97c25-8bb6-424a-8a35-e7e82cc0df66",
+      "result_id": "a2f67e36-d28b-4df1-808c-ecd757e4f41e"
+    },
+    {
+      "claim_id": "f7660cef-cd17-4edf-ba65-eab0b6275f38",
+      "result_id": "a2f67e36-d28b-4df1-808c-ecd757e4f41e"
+    },
+    {
+      "claim_id": "9be4f7c0-99de-4496-8a8d-61661569eb24",
+      "result_id": "caf304e3-437f-4241-8f4e-0e16062f5ec5"
+    },
+    {
+      "claim_id": "a7cbbee6-7627-4dff-91b3-e944c740a0a2",
+      "result_id": "caf304e3-437f-4241-8f4e-0e16062f5ec5"
+    },
+    {
+      "claim_id": "8090279f-91c4-496f-908b-3d90066cebaf",
+      "result_id": "caf304e3-437f-4241-8f4e-0e16062f5ec5"
+    },
+    {
+      "claim_id": "db8a84b7-00cc-464f-a8aa-5ebd4e410b35",
+      "result_id": "caf304e3-437f-4241-8f4e-0e16062f5ec5"
+    },
+    {
+      "claim_id": "23f66484-5fc9-41a2-adbf-ac971f678210",
+      "result_id": "9c913bbc-b04e-4690-8ec6-854e25d9e5ff"
+    },
+    {
+      "claim_id": "b7393432-8b4a-4d58-8e58-ad3db02b697e",
+      "result_id": "9c913bbc-b04e-4690-8ec6-854e25d9e5ff"
+    },
+    {
+      "claim_id": "1d74a71a-ae28-4057-b192-e908f562cde4",
+      "result_id": "9e801902-fc92-4757-8a9e-309be8693e9f"
+    },
+    {
+      "claim_id": "5c57641f-c969-4f5c-85a2-0728b755fa2a",
+      "result_id": "9e801902-fc92-4757-8a9e-309be8693e9f"
+    },
+    {
+      "claim_id": "4abbe980-5128-4f41-bb5a-c79639a1c5db",
+      "result_id": "9e801902-fc92-4757-8a9e-309be8693e9f"
+    },
+    {
+      "claim_id": "da13d03b-c2f7-4bdc-a641-c3b30fe2c4a4",
+      "result_id": "9e801902-fc92-4757-8a9e-309be8693e9f"
+    },
+    {
+      "claim_id": "721b7317-efee-4e49-8752-3083592f0379",
+      "result_id": "9e801902-fc92-4757-8a9e-309be8693e9f"
+    },
+    {
+      "claim_id": "c2779247-95bb-4ffa-ac7f-3e3bfbad22be",
+      "result_id": "807545ed-b10c-49a2-b5da-694ede556808"
+    },
+    {
+      "claim_id": "7480099c-ff36-4cf8-940b-4c8eb5ad43f6",
+      "result_id": "807545ed-b10c-49a2-b5da-694ede556808"
+    },
+    {
+      "claim_id": "ac7a939b-0882-47d8-95f3-72c3632c6f29",
+      "result_id": "807545ed-b10c-49a2-b5da-694ede556808"
+    },
+    {
+      "claim_id": "1d526619-9614-4480-9ef7-e5b41ef79ae8",
+      "result_id": "807545ed-b10c-49a2-b5da-694ede556808"
+    },
+    {
+      "claim_id": "fd9d3aaa-1646-41af-9ddf-2ded1ef0ce2b",
+      "result_id": "807545ed-b10c-49a2-b5da-694ede556808"
+    },
+    {
+      "claim_id": "08faad37-53ab-48e3-a09a-4b5b95af2672",
+      "result_id": "0a66cda7-40c5-4a6e-b501-d2afe7b82619"
+    },
+    {
+      "claim_id": "da66c398-c2e7-4967-9b78-6d704ed69b3c",
+      "result_id": "0a66cda7-40c5-4a6e-b501-d2afe7b82619"
+    },
+    {
+      "claim_id": "f58f170d-ebe7-4093-ace0-87a513c702b2",
+      "result_id": "0a66cda7-40c5-4a6e-b501-d2afe7b82619"
+    },
+    {
+      "claim_id": "42d31f78-9e28-4be1-88e4-4c6ddb31810c",
+      "result_id": "f9c5fc6c-86de-4734-a8c3-865623503296"
+    },
+    {
+      "claim_id": "a6468126-78a8-4a28-9716-46305a6244c6",
+      "result_id": "f9c5fc6c-86de-4734-a8c3-865623503296"
+    },
+    {
+      "claim_id": "7b2faa10-4e0e-4b00-9946-f6c5c2491f62",
+      "result_id": "f9c5fc6c-86de-4734-a8c3-865623503296"
+    },
+    {
+      "claim_id": "fc92cf4c-8223-4d1e-94c8-ecc01ce59c72",
+      "result_id": "475f01d3-3581-4fa3-bf3b-b296111654ba"
+    },
+    {
+      "claim_id": "a93aafdf-23ce-4bf5-8f51-416c2c995582",
+      "result_id": "475f01d3-3581-4fa3-bf3b-b296111654ba"
+    },
+    {
+      "claim_id": "65534744-7b7d-402c-8917-1e95addab068",
+      "result_id": "475f01d3-3581-4fa3-bf3b-b296111654ba"
+    },
+    {
+      "claim_id": "15d912c8-4c34-442f-ac33-287ec6e61f95",
+      "result_id": "f81cd040-ec57-41a5-ae6d-5a73dbfc105e"
+    },
+    {
+      "claim_id": "5d02ccf3-5e7c-45fa-bb98-db46392f6261",
+      "result_id": "f81cd040-ec57-41a5-ae6d-5a73dbfc105e"
+    },
+    {
+      "claim_id": "e19f8e8c-bcd7-4084-a050-a5f512a5b604",
+      "result_id": "f81cd040-ec57-41a5-ae6d-5a73dbfc105e"
+    },
+    {
+      "claim_id": "1ead4c28-08a9-4a4d-b40b-60342b910983",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "6e3d78ec-c1be-43bb-ac0c-77ef0bfd39ba",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "7957634a-9e86-4252-a8ff-aa465f95e2f9",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "a68ded1f-7db7-40d1-a3eb-d2b8db96b9c6",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "f4036c17-effd-4081-b37c-b94c5cf9ba62",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "6c00c779-2731-4e1b-bc2d-dcd9a2ed7eb1",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "f3a2da13-84d6-4100-b686-0c6fc4e5210c",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "ef164ed5-212e-46cc-a847-821c4a8df2b9",
+      "result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1"
+    },
+    {
+      "claim_id": "197eefeb-9a6f-47c2-a09c-8a62ae24910b",
+      "result_id": "badad470-b282-4b86-b3b1-f7b45bc640fa"
+    },
+    {
+      "claim_id": "dff47e6c-47e3-4585-93cf-8a5a6d645726",
+      "result_id": "badad470-b282-4b86-b3b1-f7b45bc640fa"
+    },
+    {
+      "claim_id": "a0a9e736-4afe-443b-b24f-a73b3461d6cd",
+      "result_id": "badad470-b282-4b86-b3b1-f7b45bc640fa"
+    },
+    {
+      "claim_id": "efee2f15-7512-40b8-b3f9-9e1ba8ba5d91",
+      "result_id": "badad470-b282-4b86-b3b1-f7b45bc640fa"
+    },
+    {
+      "claim_id": "9be4f7c0-99de-4496-8a8d-61661569eb24",
+      "result_id": "5d812264-febc-4696-8304-2ad38f5f02c6"
+    },
+    {
+      "claim_id": "a7cbbee6-7627-4dff-91b3-e944c740a0a2",
+      "result_id": "5d812264-febc-4696-8304-2ad38f5f02c6"
+    },
+    {
+      "claim_id": "8090279f-91c4-496f-908b-3d90066cebaf",
+      "result_id": "5d812264-febc-4696-8304-2ad38f5f02c6"
+    },
+    {
+      "claim_id": "db8a84b7-00cc-464f-a8aa-5ebd4e410b35",
+      "result_id": "5d812264-febc-4696-8304-2ad38f5f02c6"
+    },
+    {
+      "claim_id": "3e55ae83-142e-41ed-bd7d-49afe26c4745",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "2d23bbf9-ade5-4401-b9b2-bd74f90a03ed",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "f5583363-50c3-4c69-ac54-4e75c8bdc55a",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "85ff91f8-b3b6-461b-af44-d014464efc4d",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "493938c7-040a-4cef-8003-585fea256a60",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "852cf50a-6325-4606-bf4c-efa2555df457",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "f6170ba2-d2a9-4c8d-a61c-c0d1cada9607",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "fdc391ff-873c-4249-8480-39a3aac90562",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "3cefcba2-ed7b-41c6-b95b-3acd458a861f",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "8bd63050-6bbb-4aec-a99a-e436459dc90e",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "29062167-64aa-49c9-906a-6b918a44936e",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "c7e4284a-c53a-454f-8879-a48214cf4bcd",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "97b4fea1-4ff0-4ac4-b6a2-875e84a7b984",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "5ad19a3f-c799-43b1-8be8-ed8574db8911",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "9be32892-586a-41a0-a94d-e8aaea85e05a",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "23f66484-5fc9-41a2-adbf-ac971f678210",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    },
+    {
+      "claim_id": "b7393432-8b4a-4d58-8e58-ad3db02b697e",
+      "result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f8f0a215-cf6d-4cf9-9603-d370585b77c8",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "915b379b-9430-4834-8691-a55cd25f7b4b",
+      "peer_result_id": "9e801902-fc92-4757-8a9e-309be8693e9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on behavioral findings (C2-C6). Both evaluations support these claims without critique. OpenEval emphasizes statistical rigor and appropriate interpretation of marginal effects, while peer reviewers treat these as established observations that the new model explains.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "350a5123-1fa5-4797-8c4f-c9d200385084",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "332a3fbe-b075-42ef-a8c3-588bd0cdb37d",
+      "peer_result_id": "f9c5fc6c-86de-4734-a8c3-865623503296",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on null learning rate findings (C12, C19, C20). Both strongly support this as a central contribution. OpenEval frames it as a theoretically important negative result, while peer reviewers describe it as 'remarkable' evidence that 'calls into question a class of existing models.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "d40b6ea0-c39d-4fa1-b59a-eaad04e1b9ea",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "f4eda062-ba89-4468-a969-ca1b91e28425",
+      "peer_result_id": "475f01d3-3581-4fa3-bf3b-b296111654ba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on simulation results (C13-C15). Both support these findings as part of comprehensive model validation. OpenEval emphasizes the mechanistic explanation, while peer reviewers accept these as part of exploring why the new model is superior.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "e069b790-6c6d-48f0-923e-22ee11e03b25",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "514c2107-51d0-4b4c-b3e7-dc915b535475",
+      "peer_result_id": "0a66cda7-40c5-4a6e-b501-d2afe7b82619",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on clinical correlations (C16-C18). Both support these findings as clinically relevant. OpenEval notes moderate effect sizes and theoretical coherence, while peer reviewers endorse this as a key contribution but caution about small sample size limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f6a8610e-3883-49af-a57a-e466be5446f5",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e5e27ecb-e45a-46fc-bf90-4c2a9b593341",
+      "peer_result_id": "f81cd040-ec57-41a5-ae6d-5a73dbfc105e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on simulation demonstration (C21-C23). Both strongly support this as critical evidence. OpenEval notes methodological soundness and potential confounding between model interpretations, while peer reviewers treat this as 'remarkable' validation of theoretical claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f3632ffc-2b34-40bf-bd1b-dbda1652368e",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "caf304e3-437f-4241-8f4e-0e16062f5ec5",
+      "peer_result_id": "5d812264-febc-4696-8304-2ad38f5f02c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on main conclusions (C49-C52). Both strongly endorse these interpretive claims. OpenEval notes appropriate framing acknowledging correlational evidence, while peer reviewers provide 'convincing support' and emphasize the novel perspective on learning effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "d18f056a-2a2d-46ec-8c1d-e33a33646a63",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "10d25052-b50c-4837-a292-579a33b92e33",
+      "peer_result_id": "badad470-b282-4b86-b3b1-f7b45bc640fa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on theoretical framework (C34-C37) and model selection (C7-C8). OpenEval supports model fit metrics but suggests additional justification needed for strategy choices. Peer reviewers strongly endorse the theoretical framework as a 'novel and valuable alternative explanation' and major contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "60ea845c-d594-4935-b94e-af7dcbd80a77",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "1cceaf0a-6edf-4793-b431-94d54fb8a1a8",
+      "peer_result_id": "807545ed-b10c-49a2-b5da-694ede556808",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on model validation (C24-C26). Both praise the rigorous parameter and model recovery analyses. OpenEval emphasizes this addresses concerns about model confounding, while peer reviewers unanimously praise the 'rigorously conducted parameter retrieval' and sophisticated methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "0fd45b04-70a1-4185-a045-9dde2f49d802",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "73426ece-d2df-4ee4-94d2-cef1f647a7ad",
+      "peer_result_id": "e0550958-763a-4e23-93f6-c19cd8e5f4d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on experimental design (C27-C33 overlap with C1, C27-C33). Both support the task design and methods. OpenEval notes good retention with minor selection effects, while peer reviewers accept the design noting it's a reanalysis of published data with one limitation about uncertainty differentiation for future work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "9d4f8d50-7a6f-4165-bd25-dbdd4a02ede8",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "19c268b6-a9e3-40c7-a0c6-86c1de6d74cb",
+      "peer_result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on participant recruitment methods (C53-C57). OpenEval supports the diagnostic procedures but notes heterogeneity from inconsistent SCID use. Peer reviewers praise overall methodological rigor but note small clinical sample size as a limitation for interpreting clinical results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "f5e9737f-69df-4893-9237-4b9ab7f3680c",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "d57a87af-dd86-430f-aed2-b1380b577e38",
+      "peer_result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on parameter estimation methods (C65, C72-C74). OpenEval supports the MAP approach but notes missing details on convergence criteria and prior specifications. Peer reviewers explicitly praise 'appropriate and sophisticated methods' for parameterizing and fitting the model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "32f034a9-f4be-46b8-bb66-a46c502b81ea",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "9c913bbc-b04e-4690-8ec6-854e25d9e5ff",
+      "peer_result_id": "9cb4115c-954d-4446-bd1d-fd5b07814fe6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on data/code availability (C75-C76). OpenEval supports the transparency statements noting they enable reproducibility. Peer reviewers implicitly endorse this through overall positive assessment of methodological rigor, with explicit praise for 'rigorously conducted' work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "61971eac-7e09-473e-9303-49375c21298f",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "a353db4d-5e8a-4250-9be4-060142a5bc4b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated literature review claims (C38-C45) as accurately summarizing prior work with appropriate citations. No corresponding peer review evaluation found specifically addressing these literature summary claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    },
+    {
+      "id": "ea28bb8d-86df-4d72-b23e-9a0144746bca",
+      "submission_id": "b0ea2cf4-3d0c-451d-9c3a-46234da25406",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "a2f67e36-d28b-4df1-808c-ecd757e4f41e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated critiques of traditional approaches (C46-C48) as valid concerns about overfitting, assumptions, and observability. No corresponding peer review evaluation found specifically addressing these methodological critique claims, though peer reviewers endorsed the overall alternative approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:12:46.419677Z"
+    }
+  ]
+}

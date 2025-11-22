@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "The VAM integrates a CNN with an LBA evidence accumulation model, jointly fitting both CNN and EAM parameters to individual participants' visual stimuli, RTs, and choices in a unified Bayesian framework using an ADVI algorithm. The CNN processes pixel-space visual stimuli through seven layers (six convolutional, one fully-connected) to produce drift rates for the LBA, which then generates choices and RTs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the methodological innovation as 'original and promising' and 'technically sophisticated.' The editor states 'the methodological approach is technically sophisticated and the evidence is solid.' While one reviewer notes 'the main advance here thus appears to be methodological rather than conceptual,' this affirms rather than challenges the technical approach itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The fitted VAMs captured individual differences in mean RT (r>0.75), accuracy (r>0.75), RT congruency effects (r>0.75), and accuracy congruency effects (r>0.75) across 75 participants. Models also captured layout-dependent RT biases (median r=0.67), position-dependent RT biases (median r=0.78 horizontal, 0.55 vertical), and age-related increases in RT beginning around age 50. The RT congruency effect was attributed to reduced target drift rates on incongruent trials, while accuracy congruency effects were attributed to higher flanker drift rates on incongruent trials.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the model captures mean effects across individuals, there are significant concerns about fit quality. The editor notes 'there is still a gap between the model and the behavioral data.' One reviewer states 'the RT distributions, delta plots, and conditional accuracy function don't appear to be well-matched by the VAM' and that 'this account does not adequately explain the behavioral data.' Another reviewer notes the model assumes drift rate variability stems from post-sensory noise, creating 'still a gap between the current VAM implementation and sensory systems.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The VAMs captured the trend that RT congruency effects increase with longer RTs (delta plots), but showed a mismatch for conditional accuracy functions on incongruent trials: participants were less accurate on faster trials while models showed the opposite trend. This discrepancy may be explained by the lack of dynamic visual processing in the VAM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly identify this as a failure of the model. One reviewer states 'the RT distributions, delta plots, and conditional accuracy function don't appear to be well-matched by the VAM' and notes 'conflict effects on behavioral data are well-established and typically considered crucial to understanding the underlying cognitive process. Unfortunately, it seems that these parts of the data don't fit well with the proposed model.' The reviewer suggests this arises because 'the VAM imposes static drift rates in the LBA model' rather than dynamic drift rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Target direction decoding increased from near chance (27%) in layer 1 to nearly perfect (\u226597%) by layer 4. Single-unit information exhibited a 'hunchback' profile, decreasing in layers 5-6 while population decoding remained high, suggesting a transition from specialized 'target neurons' to distributed ensemble coding. Dimensionality (participation ratio) increased sharply in Conv5-Conv6, paralleling the reduction in single-unit selectivity. The proportion of directionally-selective units increased from Conv2-Conv4, then decreased in Conv5-Conv6 as complex modulation increased.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these representational analyses. The editor states 'the evidence is solid' and one reviewer notes 'the analyses are very technically sophisticated.' While reviewers question the behavioral fit and mechanistic interpretations, they do not dispute the descriptive findings about how representations change across layers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Generalization performance (tolerance) for distracting information increased steadily through network layers, though flanker direction showed lower generalization (~60%) in deep layers due to robust congruency effects. Decoding accuracy for flanker direction and stimulus layout exhibited a hunchback profile (increasing then decreasing), while horizontal/vertical position decoding increased until Conv6 then slightly decreased. Single-unit mutual information for irrelevant features showed a pronounced hunchback profile, with suppression more pronounced at the single-unit than population level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These descriptive findings about representation geometry are not challenged by reviewers. The technical sophistication of the analyses is acknowledged, and reviewers focus their critiques on the mechanistic interpretations and behavioral fit rather than these descriptive results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Target and flanker representations become increasingly orthogonal in later layers (Conv4-FC1), with subspace alignment showing significant positive correlation with accuracy congruency effects (p<0.05, layers 4-7) but not RT congruency effects. This orthogonalization mechanism is proposed to explain how task-relevant information is shielded from distractor interference, providing an alternative to the traditional view that congruency effects arise from incomplete suppression of irrelevant information.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers fundamentally challenge this mechanistic interpretation. One reviewer states 'the proposed representational geometry explanation is therefore limited' and argues 'it seems possible that an account that uses a time-varying EAM may not require any orthogonalization mechanism in the first place. The orthogonalization mechanism might have arisen because the model does not have the possibility to account for the conflict effect from temporal effects, instead of spatial effects.' The reviewer suggests 'I could envision a CNN-DMC in which conflict effects arise only at the level of the choice model...rather than due to changes in the representations in the visual system itself.' This directly contradicts the authors' claim that orthogonalization explains congruency effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "An age-dependent reduction in target drift rates was observed with no age-dependence of flanker drift rates, findings that have received mixed support in the literature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings. The authors themselves note these findings have 'received mixed support in the literature,' and reviewers do not dispute the observations from the fitted models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Task-optimized CNNs (trained only to perform the task) did not exhibit accuracy congruency effects, had lower target/flanker subspace alignment (higher orthogonalization) in Conv3-FC1, lower dimensionality expansion in Conv5-Conv6, higher single-unit information for target/flanker direction in Conv5-Conv6, and a higher proportion of simple directionally-tuned units compared to VAMs. This demonstrates that fitting CNNs to human behavioral data produces fundamentally different representations than task optimization alone.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these comparative findings. One reviewer notes 'what we learn about the mind or brain is perhaps more modest' but does not dispute the differences between task-optimized and behaviorally-fitted models. The technical analyses are acknowledged as sophisticated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C21",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The VAM addresses limitations of both traditional EAMs (which don't explain how visual representations are extracted) and task-optimized neural networks (which don't account for behavioral phenomena). The framework captures complex stimulus-behavior dependencies at the individual level and explains congruency effects in terms of visual representations, documenting key differences between models fitted to human data versus those trained only to perform the task.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers have mixed views on these broad claims. The editor states the study is 'important' and presents an 'original and promising approach,' but notes 'there is still a gap between the model and the behavioral data.' One reviewer states 'the main advance here thus appears to be methodological rather than conceptual' and 'what we learn about the mind or brain is perhaps more modest.' Another reviewer questions whether the representational geometry explanation is valid, suggesting temporal dynamics rather than spatial orthogonalization may explain congruency effects. While the methodological contribution is acknowledged, the conceptual advances are viewed as limited or uncertain.",
+    "result_type": "MAJOR"
+  }
+]

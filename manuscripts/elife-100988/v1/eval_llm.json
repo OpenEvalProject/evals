@@ -25,7 +25,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C33-C34 show no difference in acquisition (F(1,47)=0.01, p=0.94) but significant phenotype differences in performance (F(1,47)=5.03, p=0.003, \u03b7p\u00b2=0.097). The statistical approach is appropriate with adequate sample sizes (GTs n=29, STs n=22) and effect sizes reported.",
+    "evaluation": "Claims C33-C34 are supported by appropriate statistical analyses (ANOVA, F(1,47)=5.03, p=0.003) with adequate sample sizes (GTs n=29, STs n=22). The finding that acquisition rates were similar but performance differed is internally consistent and well-documented in Figure 4a-b.",
     "result_type": "MAJOR"
   },
   {
@@ -39,7 +39,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36-C37 demonstrate phenotype-specific timing differences with robust statistics (initiation: F(1,51)=8.84, p=0.005; completion: F(1,51)=9.40, p=0.004). The parallel effects on initiation and completion logically explain why turn duration itself doesn't differ. Effect sizes are moderate (\u03b7p\u00b2=0.16-0.17).",
+    "evaluation": "Claims C36-C37 are supported by statistical analyses showing phenotype effects on initiation (F(1,51)=8.84, p=0.005) and completion times (F(1,51)=9.40, p=0.004) relative to cue onset, with appropriate effect sizes reported. The parallel timing shifts explain why turn duration itself did not differ, demonstrating internal consistency.",
     "result_type": "MAJOR"
   },
   {
@@ -51,7 +51,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C35 reports null findings with appropriate statistics (all F<3.06, all p>0.052). This specificity of the phenotype effect to turns (not stops) strengthens the interpretation that GTs and STs differ in action initiation rather than general task performance.",
+    "evaluation": "Claim C35 is supported by appropriate statistical testing (all F<3.06, all p>0.052) with adequate sample sizes. This null result is important as a control condition showing phenotype-specific effects are selective to turns, not all cued behaviors.",
     "result_type": "MINOR"
   },
   {
@@ -66,195 +66,244 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C39 provide strong statistical support (maximum peaks: F(1,28.85)=8.85, p=0.006, \u03b7p\u00b2=0.23; peak number: \u03c7\u00b2(2,N=192)=16.36, p=0.0003). The use of LMMs appropriately accounts for variable trial numbers per animal. The phenotype-specific glutamate dynamics are well-characterized.",
+    "evaluation": "Claims C38-C39 are supported by appropriate LMM analyses (F(1,28.85)=8.85, p=0.006 for peak amplitude; chi-square p=0.0003 for peak number) with adequate sample sizes detailed in Table 2. The use of LMMs appropriately accounts for variable numbers of traces per animal. Peak detection criteria are clearly defined in Methods.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
       "C5",
-      "C40",
-      "C6",
-      "C41",
-      "C42"
+      "C40"
     ],
-    "result": "During missed turns, cued stops, and reward delivery, glutamate peak concentrations were higher in STs than GTs, contrasting with the pattern observed during successful turns.",
+    "result": "During missed turns, glutamate peak amplitudes were higher in STs than GTs, contrasting with the pattern during successful turns.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40-C42 show consistent reversal of the glutamate pattern across non-turn conditions with strong statistics (misses: F(1,193)=55.20, p<0.001, \u03b7p\u00b2=0.22; stops: F(1,27.67)=33.32, p<0.001, \u03b7p\u00b2=0.55; reward: F(1,19.28)=28.88, p<0.001, \u03b7p\u00b2=0.40). Large effect sizes support robust phenotype differences.",
+    "evaluation": "Claim C40 is supported by LMM analysis (F(1,193)=55.20, p<0.001, \u03b7p\u00b2=0.22) with large effect size. This finding provides important context showing that the GT>ST glutamate pattern is specific to successful turns, not all turn cue presentations.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C41"
+    ],
+    "result": "During cued stops, glutamate peak amplitudes were higher in STs than GTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by LMM analysis (F(1,27.67)=33.32, p<0.001, \u03b7p\u00b2=0.55) with very large effect size. This complements the turn data, showing STs have higher glutamate during action suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C56"
+    ],
+    "result": "Reward delivery-locked glutamate peak amplitudes were significantly higher in STs than GTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C56 are supported by consistent LMM analyses across experiments (F(1,19.28)=28.88, p<0.001 and F(1,10.45)=22.38, p<0.001) with large effect sizes. This finding is replicated across experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
     "claim_ids": [
       "C43",
       "C44",
       "C45",
       "C46"
     ],
-    "result": "Glutamate peak characteristics predict turn probability in a phenotype-specific manner: single peaks and higher concentrations (>2.8 \u00b5M) increase turn likelihood in GTs relative to STs, while multiple peaks reduce GT turn probability.",
+    "result": "Turn cue-evoked glutamate characteristics predict phenotype-specific turn probabilities: higher peak concentrations (>2.8 \u00b5M) and single peaks increase turn likelihood in GTs relative to STs, while multiple peaks reduce GT turn likelihood.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C46 use contingency table analyses appropriately to relate glutamate dynamics to behavior. The dose-response relationship (1.12-1.40\u00d7 likelihood with increasing concentration) and the differential effects of peak number (single peak: 1.43\u00d7 vs. multiple peaks: 0.74\u00d7) are statistically significant and internally consistent.",
+    "evaluation": "Claims C43-C46 are supported by contingency table analyses with appropriate statistical tests (Fisher's exact test) on 548 turn cue trials. The analyses appropriately compute relative probabilities and show clear concentration-dependent and peak-number-dependent effects. Representative traces in Figure 7b-e support the quantitative findings.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R10",
     "claim_ids": [
       "C9",
       "C47",
       "C48",
       "C49"
     ],
-    "result": "Chemogenetic inhibition of prelimbic-DMS projections reduced turn rates by ~50% in GTs but had no effect in STs. Control experiments with empty vector confirmed the specificity of CNO effects.",
+    "result": "CNO-mediated inhibition of prelimbic-DMS projections reduced turn rates by ~50% in GTs but had no effect in STs. Control experiments with empty vector showed no CNO effects, ruling out off-target effects.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C47-C49 demonstrate phenotype-specific DREADD effects with strong interaction (F(1,20)=35.99, p<0.0001, \u03b7p\u00b2=0.64). The control experiment (C49: t(3)=0.78, p=0.50) rules out off-target CNO effects. The selective effect in GTs supports the hypothesis that cortico-striatal control differs between phenotypes.",
+    "evaluation": "Claims C47-C49 are supported by appropriate statistical analyses (phenotype\u00d7treatment interaction F(1,20)=35.99, p<0.0001, \u03b7p\u00b2=0.64) and proper controls. The empty vector control (n=5 GTs, C49) showed no CNO effect (p=0.50), addressing potential off-target concerns. The phenotype-specific effect is robust.",
     "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C10",
-      "C50",
-      "C11",
-      "C51",
-      "C52"
-    ],
-    "result": "In GTs, CNO reduced turn cue-locked glutamate peak concentrations, decreased single-peak occurrences, and increased two-peak occurrences. In STs, CNO had no effect on glutamate peak characteristics.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C52 show phenotype\u00d7treatment interaction (F(1,200.79)=18.42, p<0.001) and chi-square analysis confirms peak number changes in GTs (\u03c7\u00b2(2,N=99)=17.87, p<0.001) but not STs (\u03c7\u00b2(2,N=107)=0.03, p=0.98). The glutamate data parallel the behavioral effects, strengthening causal interpretation.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C53"
-    ],
-    "result": "CNO administration increased turn initiation time in GTs compared to vehicle-treated GTs and CNO-treated STs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C53 reports significant phenotype\u00d7treatment interaction (F(1,173.72)=9.70, p=0.002, \u03b7p\u00b2=0.05). This finding is consistent with the reduced turn rates and altered glutamate dynamics in CNO-treated GTs, though the effect size is small.",
-    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C54",
-      "C55",
-      "C56",
-      "C57"
+      "C10",
+      "C50"
     ],
-    "result": "CNO effects on glutamate during misses, stops, and reward delivery showed complex phenotype-specific patterns: reduced peaks in STs during misses, no effect on stop-cued peaks, and reduced reward-locked peaks in both phenotypes.",
+    "result": "CNO administration significantly reduced turn cue-locked maximum glutamate concentrations in GTs but not STs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54-C57 report appropriate statistics with significant interactions (C54: F(1,133.99)=3.88, p=0.04) and main effects (C57: F(1,412.73)=4.83, p=0.03). However, the effect sizes are small (\u03b7p\u00b2=0.01-0.03) and the pattern is less clear than for turn-related measures, suggesting these may be secondary effects.",
-    "result_type": "MINOR"
+    "evaluation": "Claim C50 is supported by LMM analysis showing significant phenotype\u00d7treatment interaction (F(1,200.79)=18.42, p<0.001) with appropriate sample sizes detailed in Table 2. This finding directly links the behavioral effect (C47) to glutamate signaling.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C58",
-      "C59",
-      "C60"
+      "C11",
+      "C51"
     ],
-    "result": "In GTs, DREADD expression efficacy and the proportion of double-labeled neurons in prelimbic cortex significantly predicted CNO-induced reduction in turn rates, while no such correlations existed in STs.",
+    "result": "CNO administration in GTs reduced single-peak occurrences and increased two-peak occurrences during turn cues, while having no effect on peak patterns in STs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C59 show strong correlations in GTs (mCherry: R\u00b2=0.48, p=0.02; double-labeled: R\u00b2=0.77, p=0.0004) but not STs (both R\u00b2=0.06, p=0.51). These dose-response relationships support the causal role of prelimbic-DMS projections in GT turning behavior. Sample sizes appear adequate for correlation analyses.",
+    "evaluation": "Claim C51 is supported by chi-square tests (GTs: X\u00b2(2,N=99)=17.87, p<0.001; STs: X\u00b2(2,N=107)=0.03, p=0.98). This shows that inhibiting prelimbic-DMS projections disrupts the characteristic single-peak pattern in GTs, making it more ST-like.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C13",
-      "C14"
+      "C52"
     ],
-    "result": "Turn cue-evoked glutamate release in GTs is tightly controlled by cortico-striatal neuronal activity, while in STs, glutamate release may be regulated by other striatal circuitry mediating cued suppression and reward tracking.",
+    "result": "CNO administration significantly increased turn initiation time in GTs compared to vehicle-treated GTs and CNO-treated STs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C13-C14 represent interpretive conclusions well-supported by the convergent evidence from behavioral (C47-C48), glutamate (C50-C52), and anatomical (C58-C59) data. The phenotype-specific DREADD effects, glutamate dynamics, and correlation with expression efficacy collectively support these mechanistic interpretations.",
-    "result_type": "MAJOR"
+    "evaluation": "Claim C52 is supported by LMM analysis (phenotype\u00d7treatment: F(1,173.72)=9.70, p=0.002, \u03b7p\u00b2=0.05) with appropriate post-hoc comparisons shown in Figure 8i. This demonstrates that residual turns after CNO are behaviorally altered in GTs.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66"
+      "C53",
+      "C54"
     ],
-    "result": "The authors propose mechanistic models for phenotype-specific glutamate dynamics: in GTs, single high-amplitude transients may form fronto-striatal assemblies for action selection; in STs, multiple peaks may reflect striatal control of terminals and reward-related signaling.",
+    "result": "During missed turns, CNO had no effect on glutamate concentrations in GTs but significantly reduced them in STs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C61-C66 are explicitly speculative (marked as SPECULATION in evidence_type) and cite supporting literature but lack direct experimental validation in this study. While consistent with the data, these mechanistic proposals require additional experiments (e.g., recording from interneurons, manipulating dopamine signaling) to be definitively supported.",
-    "result_type": "MAJOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by LMM analysis showing no main effect of treatment (F(1,133.99)=1.62, p=0.21) but a significant phenotype\u00d7treatment interaction (F(1,133.99)=3.88, p=0.04). This suggests different mechanisms underlying misses in the two phenotypes.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C17",
-      "C67",
-      "C68"
+      "C55"
     ],
-    "result": "The phenotypic contrasts in cortico-striatal control imply individual vulnerabilities for neuropsychiatric disorders, with GTs predicted to be more vulnerable to cholinergic loss-associated movement deficits in Parkinson's disease, while STs may be less efficient in complex cued movement situations.",
+    "result": "CNO had no effects on stop cue-locked glutamate concentrations in either phenotype.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C17, C67-C68 extend the findings to clinical predictions but lack direct validation in disease models. While the logic is sound given the established links between cortico-striatal dysfunction and PD (C15, C19, C22), these remain predictions requiring testing in appropriate animal models or clinical populations.",
-    "result_type": "MAJOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by statistical testing (all p>0.23). This null result is important as it shows the CNO effect is specific to turn-related glutamate signaling, not all task-related glutamate release.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C69",
-      "C70",
-      "C71"
+      "C57"
     ],
-    "result": "All rats learn the predictive significance of the Pavlovian CS (orient to it), but only STs approach and contact the CS while GTs approach the food port instead.",
+    "result": "CNO administration reduced reward-locked glutamate concentrations in both GTs and STs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C71 describe established PCA phenotypes with appropriate citations and visual evidence (Figure 1a). This characterization is fundamental to the study design and consistent with extensive prior literature on goal- and sign-tracking behaviors.",
+    "evaluation": "Claim C57 is supported by LMM analysis showing main effect of treatment (F(1,412.73)=4.83, p=0.03) without phenotype\u00d7treatment interaction (F(1,412.729)=1.35, p=0.25). However, the effect size is very small (\u03b7p\u00b2=0.01), raising questions about biological significance despite statistical significance.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C72",
-      "C73",
-      "C74"
+      "C58",
+      "C59",
+      "C60"
     ],
-    "result": "Glutamate peaks measured by amperometry reflect orchestrated terminal depolarization over hundreds of milliseconds, and implanted MEAs maintain stable sensitivity for at least 7 days.",
+    "result": "In GTs but not STs, DREADD expression efficacy and the proportion of double-labeled prelimbic-DMS neurons were significantly correlated with CNO-induced reduction in turn rates.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C74 describe methodological principles well-established in prior literature (multiple citations provided). The interpretation of glutamate peaks as reflecting terminal depolarization is supported by previous validation studies. The 7-day recording window is appropriately justified.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C58-C59 are supported by correlation analyses (GTs: R\u00b2=0.48, p=0.02 for mCherry expression; R\u00b2=0.77, p=0.0004 for double-labeled neurons; STs: both R\u00b2=0.06, p=0.51). These dose-response relationships strengthen the causal interpretation that prelimbic-DMS projections control turning in GTs. However, sample sizes for these correlations are not explicitly stated.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C75",
-      "C76"
+      "C13",
+      "C61",
+      "C62"
     ],
-    "result": "CNO at 5.0 mg/kg does not produce off-target effects in rats not expressing DREADDs, and much higher clozapine doses would be required for behavioral effects.",
+    "result": "Turn cue-evoked glutamate release in GTs is tightly controlled by cortico-striatal neuronal activity, and GTs utilize turn cues more reliably than STs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C75-C76 are supported by prior literature citations and the control experiment in C49. The dose justification based on clozapine conversion rates and effective dose ranges is appropriate. This addresses a key concern about DREADD methodology.",
+    "evaluation": "Claims C13, C61-C62 represent the main conclusions synthesizing multiple experimental findings (C9-C11, C38-C39, C43-C46, C58-C59). The conclusion is well-supported by converging evidence from behavioral, neurochemical, and chemogenetic experiments showing phenotype-specific cortico-striatal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C70",
+      "C71"
+    ],
+    "result": "In STs, glutamate release may be regulated by other striatal circuitry, preferentially mediating action suppression and reward tracking, with glutamatergic transients potentially signaling reward expectation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C70-C71 are explicitly speculative (marked as SPECULATION in evidence_type). While consistent with the data showing higher ST glutamate during stops and reward delivery, and lack of CNO effects in STs, these claims about alternative circuitry are not directly tested. The speculation is reasonable but requires additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Cued stops and associated glutamate dynamics were unaffected by CNO, suggesting they may not depend on cortico-striatal processing of movement cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by the null effects of CNO on stop behavior and stop-related glutamate (C55). However, C66 involves an inference from null results, which is inherently weaker. Alternative explanations (e.g., incomplete inhibition, parallel pathways) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "In GTs, turn cue-evoked glutamate may depend on cholinergic transients in prelimbic cortex, and single high-amplitude glutamate transients may recruit striatal cell assemblies for action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are explicitly speculative (SPECULATION evidence type) and cite supporting literature but do not directly test these mechanisms. Cholinergic signaling was not measured in this study. These are reasonable hypotheses for future work but remain unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C17",
+      "C72"
+    ],
+    "result": "Phenotypic contrasts in cortico-striatal control imply individual vulnerabilities for neuropsychiatric disorders, with GTs predicted to be more vulnerable to cholinergic loss-associated movement impairments in Parkinson's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17 and C72 extend the findings to clinical implications. While the logic is reasonable given the demonstrated phenotype differences and prior literature on PD (C15, C21-C22), these predictions are not tested in the current study. The inference requires validation in clinical populations or disease models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "STs may be less efficient in executing cued movements, particularly with complex and competing movement cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is speculative and extends beyond the current data. While STs showed lower turn rates and different glutamate patterns, the task used here was relatively simple. The prediction about complex cue situations is not tested and requires additional experiments.",
     "result_type": "MINOR"
   }
 ]

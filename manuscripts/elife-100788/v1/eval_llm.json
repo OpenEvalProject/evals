@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Sorex araneus exhibits Dehnel's phenomenon, a seasonal size plasticity involving shrinkage of brain, skull, and organs in winter followed by regrowth in spring. This phenomenon is hypothesized to be an adaptive strategy to manage extreme metabolic demands during winter while maintaining activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the biological context through well-cited prior work. The measurements of size changes (C2), metabolic rates (C5), and lifespan (C7) are supported by multiple citations to published studies. The adaptive hypothesis (C3, C4) is appropriately framed as a hypothesis with supporting evidence from geographic variation and temperature modulation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The hypothalamus undergoes dramatic seasonal volume changes (31.6% reduction in autumn-winter, 47.8% increase in spring) and plays a central role in mammalian energy homeostasis, making it a key target for studying Dehnel's phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 provide specific measurements from cited work (L\u00e1zaro et al., 2018). C10 establishes the functional importance of the hypothalamus based on established knowledge. Together, these claims provide strong rationale for focusing on hypothalamic gene expression in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Temporal clustering analysis identified 786 genes with seasonal variation, of which 394 genes showed patterns consistent with seasonality or Dehnel's phenomenon (excluding developmental effects). These genes were enriched for 14 pathways including relaxin signaling, PI3K-Akt signaling, and HIF-1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The clustering methodology (C11-C12) and filtering criteria are clearly described. However, C15 notes that no pathways remained significant after Bonferroni correction, indicating the enrichment results may be false positives. The distinction between developmental and seasonal effects (C13-C14) is reasonable but relies on pattern interpretation. Without multiple testing correction, the pathway enrichments should be considered exploratory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Differential expression analysis between autumn and spring shrews identified 210 DEGs, with enrichment of pathways related to cancer, apoptosis, and cell signaling. All enriched pathways were downregulated in spring, including four apoptosis-related genes (BCL2L1, NFKBIA, FOS, GADD45B).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The DEG analysis (C16) is appropriately conducted with DESeq2 and multiple testing correction. However, C17 indicates pathway enrichments did not survive multiple comparison correction, similar to the temporal analysis. The biological interpretation of 'cancer pathways' (C18-C19) in the context of normal seasonal plasticity requires caution, as these pathways may reflect cell proliferation regulation rather than disease processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "BCL2L1 overexpression did not rescue heat-induced cell death in ferret neural cell lines, contrary to expectations based on its anti-apoptotic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 report clear experimental results with appropriate statistics (p<0.01 for heat effect, p=0.39 for BCL2L1 rescue). The negative result is honestly reported. However, the use of ferret cells as a proxy for shrew biology, the choice of heat stress as the apoptotic stimulus, and small sample sizes (n=3) limit the interpretability of this result for understanding BCL2L1 function in shrews.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Phylogenetic comparative analysis identified 222 genes with shrew-specific upregulation (mean 9.66-fold change), with significant enrichment in calcium signaling and autophagy pathways. A dropout test confirmed specificity to the shrew lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EVE model approach (C22-C24) is appropriate for detecting lineage-specific expression shifts with proper multiple testing correction (padj<0.05). The dropout test (C25-C26) provides validation that the signal is shrew-specific. The pathway enrichments (C27) are significant (p<0.05), though modest fold-enrichments (2.8-fold and 9.1-fold) suggest these should be interpreted cautiously. The methodology is sound and results are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Four genes (CCDC22, LMX1A, KCNS1, PAQR4) showed both evolutionary upregulation in shrews and seasonal differential expression, though this overlap was not statistically significant (Fisher's exact test, p=0.55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C28 identifies the overlapping genes with appropriate functional annotations from literature. C29 honestly reports that the overlap is not statistically significant, appropriately tempering interpretation. The authors correctly acknowledge this limitation, making the result supported but not indicative of adaptive plasticity beyond what would be expected by chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Relaxin signaling and PI3K pathway genes show seasonal variation in shrew hypothalamus. These pathways are known to regulate feeding behavior, glucose homeostasis, and angiogenesis in other mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 appropriately cite prior work demonstrating these pathway functions in model organisms. The connection to seasonal gene expression patterns in shrews is inferential but reasonable. The authors appropriately distinguish between what is known from other species and what is hypothesized for shrews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Shrews show evolutionary upregulation of VEGFA and WNT7A, genes involved in blood-brain barrier formation. This may represent an adaptation for enhanced metabolic sensing through increased BBB permeability in the hypothalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C38 appropriately cite developmental and physiological roles of these genes from prior work. However, C39 is speculative about the adaptive significance in shrews. The hypothesis that constitutively increased BBB permeability is adaptive contradicts the cited evidence (C36-C37) that increased permeability is associated with disease states. C40 provides comparative context from other species, but the functional interpretation requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Evolutionary upregulation of FOXO4 in shrews may promote continuous feeding through effects on leptin sensitivity and glucose clearance, though the specific mechanism remains hypothetical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C43 cite established functions of FOXO genes from prior work in other species. However, C44 is explicitly speculative ('We hypothesize') and proposes two alternative mechanisms without data to distinguish between them. The extrapolation from FOXO4 function in mouse adipocytes to hypothalamic function in shrews requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Despite brain shrinkage, shrews maintain cell numbers, potentially through regulation of BCL2L1 and apoptosis pathways. Similar mechanisms are observed in hibernating mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C45 cites prior work showing maintained cell numbers despite size changes. C46-C47 establish BCL2L1 function from literature. C48 provides comparative context from hibernators. The connection between these observations and the gene expression data is reasonable, though the functional mechanism in shrews remains to be experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Shrews show evolutionary upregulation of autophagy-related genes (MLST8) and pro-apoptotic genes (PPIF, SPHK2) that are associated with neurodegeneration in other mammals, suggesting unique regulation of cell survival pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 appropriately cite functions of these genes from prior work, including their roles in neurodegenerative diseases. The observation that shrews upregulate genes associated with neurodegeneration without apparent pathology is intriguing and well-supported by the comparative expression data. However, the functional consequences in shrews require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CCDC22, a gene involved in endosomal recycling and implicated in human neurological disorders, shows both evolutionary upregulation (~7-fold) in shrews and seasonal upregulation in spring, potentially providing neuroprotection during brain regrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 establish CCDC22 function and disease associations through appropriate citations. C61-C62 report the expression data showing both comparative and seasonal upregulation. The interpretation that this provides neuroprotection is reasonable given the gene's function, though experimental validation would strengthen this conclusion. The convergence of evolutionary and seasonal signals for this gene is noteworthy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study analyzed hypothalamus RNA-seq data from 25 S. araneus collected across five seasons, with libraries sequenced at 15-25 million reads per sample. Comparative analysis included 6,496 single-copy orthologs across 16 mammalian species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 clearly describe the sample collection, sequencing methodology, and orthology inference. The sample sizes (n=4-5 per season) are modest but reasonable for this type of study. The methods are standard and appropriately described. The use of single-copy orthologs is appropriate for comparative analysis.",
+    "result_type": "MINOR"
+  }
+]

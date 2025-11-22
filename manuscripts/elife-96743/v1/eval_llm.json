@@ -9,11 +9,11 @@
       "C56",
       "C57"
     ],
-    "result": "Tspan12 directly binds Norrin with high affinity (KD = 10.4\u00b11.2 nM) in a lipid environment, and this binding is mediated by the Tspan12 large extracellular loop (LEL). Full-length Tspan12 and the isolated LEL bind Norrin with similar affinity, while a Tspan12-Tspan11 LEL chimera does not bind Norrin.",
+    "result": "Tspan12 directly binds Norrin with high affinity (KD = 10.4\u00b11.2 nM) in a lipid environment, and this binding is mediated by the Tspan12 large extracellular loop (LEL).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9, C53-C57 are well-supported by biolayer interferometry (BLI) data presented in Figure 1. The affinity measurements are reported with error estimates, multiple experimental approaches confirm LEL-mediated binding, and appropriate negative controls (Tspan11 LEL chimera) are included. The finding that binding is stronger in lipids than detergent (C54) is a minor but well-documented observation.",
+    "evaluation": "Claims C9, C53-C57 provide converging evidence from biolayer interferometry (BLI) experiments showing direct, high-affinity binding between purified Tspan12 and Norrin. The binding is stronger in lipid nanodiscs than in detergent (C54), the LEL alone binds with similar affinity to full-length Tspan12 (C55), and a chimera with the LEL replaced by Tspan11 LEL does not bind (C56), collectively demonstrating that the LEL mediates this interaction.",
     "result_type": "MAJOR"
   },
   {
@@ -23,70 +23,74 @@
       "C59",
       "C60"
     ],
-    "result": "No direct binding was detected between Tspan12 and Fzd4 using purified extracellular domains, though this does not definitively rule out a weak or transmembrane domain-mediated interaction.",
+    "result": "No direct binding was detected between Tspan12 and Fzd4 in purified protein assays, though this does not definitively rule out a direct interaction.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C58-C59 report negative results from BLI experiments (Figure 1\u2014figure supplement 2C-D), but C60 appropriately acknowledges significant limitations: the interaction may require full-length proteins, a 2D membrane environment, or transmembrane domain contacts. The negative result is informative but insufficient to conclude absence of interaction.",
+    "evaluation": "Claims C58-C59 report negative results from BLI experiments testing Tspan12-Fzd4 binding. However, C60 appropriately acknowledges that the experimental system may not capture weak interactions or those requiring a 2D membrane environment or transmembrane domain involvement. The negative result is informative but does not definitively exclude a direct interaction.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C61",
-      "C62",
       "C63",
       "C64",
-      "C65"
-    ],
-    "result": "AlphaFold modeling predicts the Norrin-Tspan12 binding interface involves a highly acidic patch on Tspan12 LEL helices C and D interacting with a basic patch on Norrin \u03b2-strands 5 and 6, burying ~1200 \u00c5\u00b2 of surface area. The predicted Norrin structure matches experimental structures, and the Tspan12 LEL structure is consistent across models.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C61-C65 describe AlphaFold predictions that are internally consistent and validated by comparison to known crystal structures (C61). The structural predictions provide testable hypotheses that are subsequently validated experimentally through mutagenesis (see next result). The acknowledgment of uncertainty in transmembrane domain positioning (C63) demonstrates appropriate critical assessment.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
+      "C65",
       "C66",
       "C67",
       "C68",
       "C69",
       "C70",
       "C71",
-      "C72",
+      "C72"
+    ],
+    "result": "AlphaFold modeling predicts the Norrin-Tspan12 binding interface involves a highly acidic patch on the Tspan12 LEL (helices C and D) interacting with a highly basic patch on Norrin (\u03b2 strands 5 and 6), with four distinct interaction sites burying ~1200 \u00c5\u00b2 of surface area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 describe AlphaFold structural predictions that are internally consistent and validated by the Norrin structure matching known crystal structures (C64). The predicted interface is detailed with specific residue interactions at four sites. While computational predictions have inherent uncertainty, the model provides testable hypotheses that are subsequently validated experimentally (see mutagenesis results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
       "C73",
       "C74",
+      "C75",
+      "C76",
       "C77",
       "C78",
       "C79",
       "C80",
       "C81",
       "C82",
-      "C83"
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
     ],
-    "result": "Mutagenesis of predicted interface residues at Sites 1, 2, 3, and 4 confirms the AlphaFold-predicted Norrin-Tspan12 binding interface. Charge-reversal mutations at Sites 3 and 4 show compensatory rescue of binding when both partners are mutated, strongly supporting direct physical interaction at these sites. Mutations at Site 1 and Site 3 cause the most dramatic binding defects (84-fold and 100-fold weaker, respectively).",
+    "result": "Site-directed mutagenesis at the predicted Norrin-Tspan12 interface validates the AlphaFold model, with mutations at Sites 1, 2, and 3 weakening binding, and charge-reversal mutations at Sites 3 and 4 showing compensatory rescue of binding.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C66-C83 present systematic mutagenesis data (Figure 2) with appropriate quantification and replication. The compensatory rescue experiments at Sites 3 and 4 (C73, C79, C83) provide particularly strong evidence for direct interaction. The failure of Site 1 charge-swap mutants to rescue (C68) is acknowledged. Statistical rigor is demonstrated through error reporting and multiple replicates.",
+    "evaluation": "Claims C73-C89 present systematic mutagenesis data from BLI experiments. Mutations at predicted interface sites weaken binding (C74-C75, C78-C80, C84-C85), with the most dramatic effects at Site 3 (C79-C80). Critically, charge-reversal mutations at Sites 3 and 4 can compensate for each other (C81, C86-C87), providing strong evidence that these residues physically interact as predicted. The data are quantitative, replicated, and internally consistent.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88"
+      "C90",
+      "C91",
+      "C92",
+      "C93"
     ],
-    "result": "The Tspan12 and heparan sulfate proteoglycan (HSPG) binding sites on Norrin overlap, as demonstrated by competition experiments showing SOS (heparin mimic) inhibits Norrin-Tspan12 binding with Ki = 34\u00b14 \u03bcM. Disease-associated mutations at the HSPG binding site may also impair Tspan12 binding.",
+    "result": "The Tspan12 binding site on Norrin overlaps with the heparan sulfate proteoglycan (HSPG) binding site, as demonstrated by competition with sucrose octasulfate (SOS) with a Ki of 34\u00b14 \u03bcM.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C84-C86 are well-supported by structural comparison (Figure 3A) and competition binding data (Figure 3B). The Ki determination is appropriately quantified. Claims C87-C88 propose a reinterpretation of disease mutations, which is reasonable speculation based on the data but remains to be directly tested.",
+    "evaluation": "Claims C90-C93 show that the AlphaFold-predicted Tspan12 binding site overlaps with the known SOS/HSPG binding site (C90), which is validated by SOS competition experiments (C91). The observation that Site 1 residues are part of both binding sites (C92) provides additional support. The interpretation connecting disease mutations to both HSPG and Tspan12 binding (C93) is reasonable but speculative.",
     "result_type": "MAJOR"
   },
   {
@@ -94,293 +98,198 @@
     "claim_ids": [
       "C10",
       "C49",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C93"
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
     ],
-    "result": "Tspan12 and Fzd4 can simultaneously bind Norrin, forming a ternary complex, though with negative cooperativity. The Tspan12 binding site on Norrin is adjacent to but not overlapping with the Fzd4 binding site. Sequential binding experiments and competition assays demonstrate that both receptors can bind a single Norrin protomer simultaneously.",
+    "result": "Tspan12 and Fzd4 can simultaneously bind Norrin to form a 2:2:2 complex, but with negative cooperativity, as the Tspan12 and Fzd4 binding sites on Norrin are adjacent and may compete for shared residues.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10, C49, C89-C93 are supported by multiple complementary experiments (Figure 3C-F): structural predictions, competition binding showing incomplete displacement, and sequential binding experiments. The negative cooperativity is well-documented (2-fold weaker binding in presence of Fzd4). The interpretation that both can bind simultaneously is well-justified by the non-zero plateau in competition experiments.",
+    "evaluation": "Claims C10, C49, C94-C100 provide multiple lines of evidence: structural modeling shows adjacent but non-overlapping binding sites (C94-C95), competition binding shows partial displacement (C96-C97), and sequential binding experiments demonstrate that both can bind simultaneously but with reduced affinity (C98-C100). The negative cooperativity is quantified (2-fold weaker affinity) and consistent across experiments.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
       "C11",
-      "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C99"
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
     ],
-    "result": "A pre-formed Tspan12/Fzd4 heterodimer binds Norrin with slightly higher affinity (KD = 2.18\u00b10.10 nM) than Fzd4 alone (3.29\u00b10.17 nM) or Tspan12 alone (10.4\u00b11.2 nM). The heterodimer shows enhanced Norrin capture particularly at low Norrin concentrations (\u22641 nM), with distinct Hill slopes for different receptor assemblies.",
+    "result": "A pre-formed Tspan12/Fzd4 heterodimer binds dimeric Norrin with slightly higher affinity (KD = 2.18\u00b10.10 nM) than Fzd4 alone (KD = 3.29\u00b10.17 nM), with the greatest difference at low Norrin concentrations (\u22641 nM), but monomeric Norrin binds both with similar affinity, indicating Tspan12 and Fzd4 do not form a composite high-affinity binding site.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11, C94-C99 are supported by careful BLI measurements (Figure 4A) with appropriate error estimates and replication. The split-GFP approach to enforce 1:1 stoichiometry is well-validated (Figure 4\u2014figure supplement 1-2). The observation of different Hill slopes is reproducible and statistically significant, though the mechanistic interpretation requires caution.",
+    "evaluation": "Claims C11, C102-C108 present systematic binding studies with the heterodimer. The modest affinity enhancement for dimeric Norrin (C102-C103) and concentration-dependent effects (C104) are well-documented. The key control with monomeric Norrin (C105-C107) demonstrates that the heterodimer does not create a composite binding site, supporting the avidity model. The interpretation connecting weak monomeric Norrin binding to the dimer interface (C108) is consistent with structural predictions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C100",
-      "C101",
-      "C102",
-      "C103",
-      "C104",
-      "C105"
+      "C12",
+      "C109",
+      "C110"
     ],
-    "result": "Monomeric Norrin binds Fzd4 and the Tspan12/Fzd4 heterodimer with similar affinities (~11-13 nM), suggesting Tspan12 and Fzd4 do not form a composite high-affinity binding site for individual Norrin protomers. Monomeric Norrin binds Tspan12 alone very weakly, consistent with the binding site spanning the dimer interface.",
+    "result": "Cells co-expressing Tspan12 and Fzd4 capture more Norrin than cells expressing Fzd4 alone, with the greatest effect at low Norrin concentrations (\u22641 nM).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C100-C104 are supported by BLI data with monomeric Norrin (Figure 4B) and validated by negative stain EM showing the mutant is indeed monomeric (Figure 4\u2014figure supplement 4). The interpretation that Tspan12/Fzd4 do not form a composite site (C102) is well-justified. The weak binding to Tspan12 alone (C103) is consistent with structural predictions, though alternative explanations (C105) are appropriately acknowledged.",
+    "evaluation": "Claims C12, C109-C110 present flow cytometry data showing enhanced Norrin capture by cells co-expressing both receptors. The concentration-dependent effect mirrors the purified protein results, providing validation in a cellular context. The data are quantified and statistically significant (p-values reported in C109).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C12",
-      "C106",
-      "C107",
-      "C108"
+      "C111",
+      "C112"
     ],
-    "result": "Cells co-expressing Tspan12 and Fzd4 capture more Norrin than cells expressing Fzd4 alone, with the greatest effect at low Norrin concentrations (\u22641 nM). This occurs despite Tspan12 co-expression slightly decreasing Fzd4 surface expression.",
+    "result": "In cell-based signaling assays, Norrin exhibits maximal activity at \u22641 nM, and Tspan12 increases the amplitude of response to Norrin at all concentrations tested rather than affecting potency.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12, C106-C108 are supported by flow cytometry data (Figure 4C) with appropriate statistical testing (p-values reported) and replication. The observation that enhanced capture occurs despite reduced Fzd4 surface expression (C107, Figure 4\u2014figure supplement 3G) strengthens the conclusion that Tspan12 functionally enhances Norrin binding rather than simply increasing receptor levels.",
+    "evaluation": "Claims C111-C112 report TopFlash luciferase assays showing that Tspan12 enhances signaling amplitude rather than potency. This is an unexpected finding (C112 notes it is 'contrary to expectation') but is clearly documented. The observation that maximal activity occurs at \u22641 nM (C111) aligns with the concentration range where Tspan12 has the greatest effect on Norrin binding.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C109",
-      "C110"
+      "C14",
+      "C50",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
     ],
-    "result": "In TopFlash signaling assays, Norrin exhibits maximal activity at \u22641 nM in all conditions. Contrary to expectations, Tspan12 increases the amplitude of response to Norrin at all concentrations tested rather than affecting potency.",
+    "result": "Tspan12 competes with LRP6 for Norrin binding, with complete displacement observed in competition experiments (Ki = 1.06 \u03bcM for LRP6 E1E2), indicating that Tspan12 and LRP5/6 binding to Norrin are mutually exclusive.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C109-C110 are supported by TopFlash data (Figure 4D) with appropriate replication. The observation that Tspan12 affects amplitude rather than potency is unexpected but clearly documented. However, the interpretation is complicated by the bell-shaped dose-response curve and potential indirect effects on receptor expression.",
+    "evaluation": "Claims C14, C50, C117-C121 present competition binding experiments showing complete displacement of Norrin from Tspan12 by LRP6 (C117). The Ki value (C118) agrees with prior literature. Reciprocal experiments with the Tspan12 LEL inhibiting Norrin-LRP6 binding (C119) provide additional support. The interpretation that Tspan12 does not incorporate into the signaling complex via Norrin (C121) is a reasonable inference from these data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
       "C15",
-      "C111",
-      "C112",
-      "C113",
-      "C128",
-      "C129"
+      "C114",
+      "C115",
+      "C131"
     ],
-    "result": "Tspan12 does not affect Fzd4 affinity for the Dvl2 DEP domain in the presence or absence of Norrin, suggesting Tspan12 does not allosterically modulate Fzd4-Dvl interactions.",
+    "result": "Tspan12 does not affect Fzd4 affinity for the Dvl2 DEP domain in the presence or absence of Norrin.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C15, C111-C112, C128-C129 are supported by BLI data (Figure 5C-D) showing no significant difference in DEP binding affinity. The result is consistent with prior work (C113). However, the experiments only test the DEP domain, and C131 appropriately notes that Tspan12 might interact with other Dvl regions.",
+    "evaluation": "Claims C15, C114-C115, C131 report BLI experiments showing no effect of Tspan12 on Fzd4-DEP binding. The experiments include appropriate controls (with and without Norrin) and are consistent with prior findings that ligands do not allosterically modulate Fzd-DEP binding (C116). This negative result is important for ruling out a mechanism of action.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C14",
-      "C50",
-      "C114",
-      "C115",
-      "C116",
-      "C117"
+      "C122",
+      "C123",
+      "C124"
     ],
-    "result": "Tspan12 competes with LRP6 for Norrin binding. LRP6 E1E2 can completely displace Norrin from Tspan12 with Ki = 1.06 \u03bcM, and the Tspan12 LEL inhibits Norrin binding to larger LRP6 constructs. This suggests their binding sites overlap or are sterically incompatible.",
+    "result": "High levels of Tspan12 inhibit Norrin-stimulated signaling in a bell-shaped dose-response curve, with Norrin signaling inhibited to a greater extent than Wnt3a signaling, consistent with Tspan12 competing with LRP6 for Norrin binding.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C14, C50, C114-C117 are supported by competition binding experiments (Figure 5E, Figure 5\u2014figure supplement 1) with appropriate quantification. The Ki value agrees with prior literature (C115). The conclusion of competitive/incompatible binding (C117) is well-justified by the complete displacement observed.",
+    "evaluation": "Claims C122-C124 present TopFlash assays showing dose-dependent inhibition of signaling at high Tspan12 levels. The differential effect on Norrin vs. Wnt3a signaling (C124) supports the competition model. While some inhibition of Wnt3a may be due to reduced Fzd4 surface expression (C123), the greater inhibition of Norrin signaling is consistent with the competition data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C118",
-      "C119",
-      "C120"
+      "C16",
+      "C52",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C132",
+      "C133"
     ],
-    "result": "High levels of transfected Tspan12 completely inhibit Norrin-stimulated signaling in TopFlash assays, with inhibition occurring at lower Tspan12 levels and to a greater extent for Norrin than for Wnt3a signaling.",
+    "result": "Tspan12 does not allosterically enhance Fzd4 binding to Norrin or Dvl, but instead functions to directly capture Norrin upstream of signaling, increasing local Norrin concentration to enhance the efficiency of Fzd4-Norrin-LRP5/6 complex formation at low Norrin concentrations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C118-C120 are supported by TopFlash data showing bell-shaped dose-response curves (Figure 5F). The differential effect on Norrin vs. Wnt3a signaling (C120) is consistent with the competition model. However, the interpretation is complicated by effects on Fzd4 surface expression (C119), which may contribute to the observed inhibition.",
+    "evaluation": "Claims C16, C52, C125-C129, C132-C133 present the main mechanistic conclusion of the study. This model is supported by: (1) direct Tspan12-Norrin binding, (2) negative cooperativity with Fzd4, (3) enhanced Norrin capture at low concentrations, (4) no effect on Fzd4-DEP binding, (5) competition with LRP6, and (6) co-localization with Fzd4. The 'baton handoff' model (C129) integrates multiple experimental findings into a coherent mechanism.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C13",
-      "C51",
-      "C85"
-    ],
-    "result": "Tspan12 competes with heparan sulfate proteoglycans for Norrin binding, as demonstrated by SOS competition experiments.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C13, C51, C85 are supported by competition binding data (Figure 3B) showing concentration-dependent inhibition by SOS with quantified Ki. The result is consistent with structural predictions showing overlapping binding sites (C84).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C16",
-      "C52",
-      "C121",
-      "C122",
-      "C123",
-      "C130",
-      "C133",
-      "C134"
-    ],
-    "result": "Tspan12 functions to directly capture Norrin upstream of signaling rather than allosterically enhancing Fzd4 binding to Norrin or Dvl. The mechanism involves Tspan12 capturing Norrin and handing it off to Fzd4, with the Tspan12-dependent increase in local Norrin concentration providing avidity to enhance Fzd4-Norrin-LRP5/6 complex formation at low Norrin concentrations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C16, C52, C121-C123, C130, C133-C134 represent the main mechanistic conclusion, integrating multiple lines of evidence: direct Tspan12-Norrin binding, simultaneous binding with Fzd4, negative cooperativity, enhanced cellular Norrin capture, lack of allosteric effects on Fzd4-Dvl binding, and competition with LRP6. The 'hand-off' model is well-supported by the totality of data, though some mechanistic details remain speculative.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C75",
-      "C76",
-      "C88"
-    ],
-    "result": "Disease-associated Norrin mutations R121W and R115L may impair signaling due to deficient Tspan12 binding, in addition to or instead of previously proposed mechanisms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C75-C76, C88 propose reinterpretations of disease mutations based on the identified Tspan12 binding interface. While C75 cites prior evidence that R121W impairs signaling, the attribution to Tspan12 binding (C76, C88) is reasonable speculation but not directly tested. These hypotheses require validation through binding assays with the specific disease mutants.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C125",
-      "C126",
-      "C127"
-    ],
-    "result": "Tspan12 does not remain bound to Norrin in a quaternary complex with Fzd4 and LRP5/6, though it may incorporate into the signalosome through Fzd4 interactions or by bridging through Norrin dimerization.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C125 is supported by the LRP6 competition data, but C126-C127 are speculative hypotheses about how Tspan12 might still associate with the signaling complex. These possibilities are acknowledged as untested and would require additional experiments (e.g., co-IP, imaging) to evaluate.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C131",
-      "C132"
-    ],
-    "result": "Alternative mechanisms by which Tspan12 might enhance signaling include binding to other Dvl regions or recruiting phosphoinositide kinases like PI4KII\u03b1.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C131-C132 are explicitly presented as untested hypotheses based on known tetraspanin functions. These are reasonable speculations given prior literature on tetraspanins and Wnt signaling, but no experimental evidence is provided in the current study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
+      "C134",
       "C135",
       "C136",
       "C137",
       "C138",
       "C139",
-      "C140"
+      "C141",
+      "C142"
     ],
-    "result": "The mechanism by which Tspan12 enhances Norrin signaling may represent a general theme among Wnt/\u03b2-catenin pathway modulators, with similar mechanisms employed by Gpr124/RECK and Glypican-3.",
+    "result": "The mechanism by which Tspan12 enhances Norrin signaling\u2014capturing ligand and delivering it to the receptor\u2014may represent a general theme among Wnt/\u03b2-catenin pathway modulators and other growth factor systems involving cystine knot ligands.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C135-C140 draw parallels to other well-characterized systems (Gpr124/RECK, Glypican-3) based on prior literature (C136-C139). The comparison is well-justified and strengthens the proposed model. However, C141 appropriately notes that the mechanism of Tspan12-Fzd4 co-localization remains unclear.",
+    "evaluation": "Claims C134-C139, C141-C142 draw parallels between Tspan12 and other co-receptor systems (Gpr124/RECK, Glypican-3, Neuropilin-1, RGM, Betaglycan). The comparison is well-supported by citations to prior literature showing similar mechanisms in other systems. The observation that these systems require both ligand and receptor binding (C137-C138) strengthens the parallel. This is a reasonable synthesis of the findings in a broader context.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R20",
+    "result_id": "R15",
     "claim_ids": [
-      "C142",
-      "C143"
-    ],
-    "result": "Co-receptors for other cystine knot growth factors (VEGF-A, BMP, TGF-\u03b2) employ similar bridging mechanisms to enhance signaling, suggesting a conserved strategy across growth factor families.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C142-C143 are supported by citations to prior literature and highlight structural similarities between Norrin and other cystine knot ligands. This comparative analysis provides useful context for the Tspan12 mechanism.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
+      "C143",
       "C144",
       "C145",
       "C146",
       "C147",
       "C148"
     ],
-    "result": "Prior models proposing that Tspan12 directly enhances Fzd4-Fzd4 or Fzd4-LRP5 interactions are inconsistent with the observation that Tspan12 does not enhance Wnt signaling. Tspan12-mediated receptor clustering may be Norrin-dependent.",
+    "result": "The study addresses and refutes prior models proposing that Tspan12 directly enhances Fzd4-Fzd4 or Fzd4-LRP5 interactions, while acknowledging limitations of the reconstituted system that may not capture higher-order receptor stoichiometry or physiological post-translational modifications.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C144-C147 critically evaluate prior hypotheses from the literature and show they are inconsistent with the ligand-specificity of Tspan12 function. Claim C148 proposes a reconciling hypothesis (Norrin-dependent clustering) that is reasonable but speculative.",
+    "evaluation": "Claims C143-C148 provide critical evaluation of prior models and acknowledge experimental limitations. The argument against the clustering model (C144) is based on the observation that Tspan12 does not enhance Wnt signaling. The acknowledgment of limitations (C146-C148) regarding receptor stoichiometry, post-translational modifications, and lipid environment is appropriate and demonstrates scientific rigor.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R22",
+    "result_id": "R16",
     "claim_ids": [
       "C149",
       "C150",
-      "C151"
+      "C151",
+      "C152"
     ],
-    "result": "The reconstituted nanodisc system has limitations: it may not capture higher-order receptor oligomers, physiological post-translational modifications, or the full complexity of the cellular membrane environment.",
+    "result": "Tspan12 expression provides a mechanism to spatiotemporally regulate Norrin/\u03b2-catenin signaling during development, as demonstrated by its restricted expression in retinal vascular endothelial cells, which dictates which cells preferentially bind and respond to Norrin.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C149-C151 provide appropriate acknowledgment of experimental limitations. These caveats are important for interpreting the results and identifying areas for future investigation.",
+    "evaluation": "Claims C149-C152 connect the mechanistic findings to biological function. The sensitivity of signaling to Tspan12 levels (C149, supported by Figure 4D) and the tissue-specific expression pattern (C151, supported by citation) provide a logical basis for the proposed regulatory mechanism (C152). This is a reasonable inference from the data and prior knowledge.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R23",
+    "result_id": "R17",
     "claim_ids": [
-      "C152",
       "C153",
       "C154",
-      "C155"
+      "C155",
+      "C156"
     ],
-    "result": "Tspan12 expression levels tune cellular response to Norrin, providing a mechanism for spatiotemporal regulation of development. In the retina, differential Tspan12 expression in vascular endothelial cells dictates which cells preferentially respond to Norrin.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C152-C155 integrate the functional data (C152, from Figure 4D) with prior knowledge about expression patterns (C154) to propose a physiological role. The inference about developmental regulation (C153, C155) is well-justified by the data and prior literature.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C156",
-      "C157",
-      "C158",
-      "C159",
-      "C160"
-    ],
-    "result": "Tspan12 and other pathway modulators with restricted expression patterns could serve as targets for developing ligand- and tissue-specific Wnt/\u03b2-catenin pathway therapeutics, potentially overcoming on-target toxicity challenges.",
+    "result": "Tspan12 and other co-receptors with restricted expression patterns could serve as specific drug targets or mechanistic inspiration for developing ligand- and tissue-specific therapies targeting the Wnt/\u03b2-catenin pathway.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C156-C157 establish the therapeutic challenge based on prior literature. Claims C158-C160 propose therapeutic applications of the findings, which are reasonable extrapolations but remain speculative without experimental validation of therapeutic approaches.",
+    "evaluation": "Claims C153-C156 propose therapeutic implications. While the mechanistic understanding of Tspan12 (C156) is well-supported, the translation to therapeutic applications (C154-C155) is speculative. The challenge of on-target toxicity (C153) is well-documented, but whether targeting Tspan12 would overcome this challenge requires additional validation. This is a reasonable direction for future work but not directly supported by the current data.",
     "result_type": "MINOR"
   }
 ]

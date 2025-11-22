@@ -1,0 +1,172 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C43",
+      "C58",
+      "C60"
+    ],
+    "result": "The TRPV1/capsaicin system enables dose-dependent chemogenetic manipulation of Purkinje cells in larval zebrafish. Low doses (1 \u00b5M) of capsaicin reversibly activate TRPV1-expressing Purkinje cells, while high doses (10 \u00b5M) cause rapid excitotoxic cell death and ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C9 provide converging evidence from calcium imaging (C5, C7), timelapse microscopy (C8), and cell counts (C9) that validate both activation and ablation protocols. The reversibility of activation (C7) and rapidity of ablation (C8, C60) are well-documented. The approach builds on prior validation in other zebrafish cell types (C4, C58) and leverages the high conductance of TRP channels (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C44"
+    ],
+    "result": "Purkinje cell activation and ablation both modify pitch-axis postural control in 7 dpf larvae. Activation with 1 \u00b5M capsaicin shifts both climb and dive postures (C14), while ablation with 10 \u00b5M capsaicin affects climb postures but not dive postures (C15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 present quantitative behavioral data with appropriate statistical testing (p<0.001, effect sizes \u226515%) showing differential effects of activation versus ablation on postural control. The authors appropriately acknowledge limitations in directly comparing these experiments due to different genetic backgrounds and apparatus generations, but the individual findings within each paradigm are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C45"
+    ],
+    "result": "Purkinje cell ablation produces more widespread postural deficits at 14 dpf compared to 7 dpf, with effects on both climb and dive postures at the older age. This developmental difference correlates with a doubling of Purkinje cell numbers between these ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 provide cell counts and behavioral data showing age-dependent expansion of cerebellar function. At 14 dpf, ablation affects both climb (20% increase) and dive (26% more negative) postures, whereas at 7 dpf only climb postures are affected. The correlation with morphological growth (C17) supports the developmental interpretation (C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C46"
+    ],
+    "result": "Purkinje cell ablation at 14 dpf disrupts speed-dependent fin-body coordination during climbing. After ablation, fish show reduced lift at medium and fast swim speeds, with effect sizes of -34% and -62% respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 establishes the baseline speed-dependent relationship (Spearman's r=0.2193, p<0.001), while C23 demonstrates significant disruption after ablation with appropriate statistical testing and effect size calculations. The interpretation (C24) is supported by the data, though the authors acknowledge this effect is stronger in older larvae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C47"
+    ],
+    "result": "Purkinje cells encode pitch-tilt direction both at single-cell and population levels. Individual cells show directional tuning (58% of cells, n=18/31), while untuned cells collectively enable accurate decoding of tilt direction through population coding (accuracy >0.88 with \u22655 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide calcium imaging data, PCA analysis, and SVM decoding results demonstrating both single-cell tuning and population-level encoding. The decoding accuracy is validated against shuffled controls and shows clear above-chance performance. The conclusion (C32, C47) appropriately integrates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The proportion of directionally tuned Purkinje cells remains similar between 7 and 14 dpf (7% vs 8%, p=0.78), but the preferred tuning direction shifts from predominantly nose-down at 7 dpf to nose-up at 14 dpf (p<0.001). Population decoding accuracy does not differ between ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 present longitudinal imaging data with appropriate statistical comparisons. The shift in tuning direction (C30) is statistically significant (Fisher's exact test, p<0.001), while the proportion of tuned cells (C29) and decoding accuracy (C31) show no significant differences. These findings suggest developmental changes in cerebellar processing despite stable encoding capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors propose that Purkinje cell ablation causes disinhibition of vestibular target nuclei, while 1 \u00b5M capsaicin activation disrupts Purkinje cell synchrony through stochastic activation of cell subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C51 cite established properties of Purkinje cells, but C52 and C54 are mechanistic inferences not directly tested in this study. While the proposals are plausible given the imaging data (C6) and known circuit properties (C53), they remain speculative without direct measurements of downstream target activity or synchrony. The authors appropriately frame these as proposals requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Population coding by Purkinje cells is supported by established convergence patterns onto downstream targets in both mammals and larval zebrafish, with vestibular-sensitive cells located in the lateral cerebellum projecting to vestibular nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are well-supported by multiple citations to prior anatomical and electrophysiological work. These claims provide important context for interpreting the population decoding results but represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C61"
+    ],
+    "result": "The cerebellum plays a conserved role in postural control across vertebrates, integrating multimodal sensory information. In larval zebrafish, the cerebellum shares structural and functional features with mammals, making it a suitable model for studying cerebellar contributions to posture during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C33-C42, and C61 establish the broader context through citations to prior work. Claim C48 synthesizes the current findings to conclude that the cerebellum plays a clear role in larval zebrafish postural control even at early developmental stages. This conclusion is well-supported by the experimental results presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "TRPV1/capsaicin offers methodological advantages over optogenetic approaches for studying cerebellar function, including dose-dependent control, no light requirement, and compatibility with freely swimming behavior in darkness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 accurately describe the advantages of the TRPV1/capsaicin system, supported by citation to prior validation work (C58) and logical inference about experimental design (C59). These advantages are demonstrated throughout the manuscript's experimental design.",
+    "result_type": "MINOR"
+  }
+]

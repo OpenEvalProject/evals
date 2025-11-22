@@ -2,452 +2,278 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C35"
+      "C1",
+      "C2",
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C79",
+      "C84",
+      "C119"
     ],
-    "result": "TurboID labeling radius is below the size of the nuclear pore complex. Mass spectrometry analysis of five nuclear pore-localized TurboID-fusion proteins (NUP96, NUP76, NUP158, MEX67, NUP110) showed highly specific labeling patterns for each bait, with the labeling radius well below the nuclear pore size and thus below the resolution of light microscopy.",
+    "result": "Streptavidin imaging of TurboID-tagged proteins provides significantly stronger signals than antibody-based detection across all tested proteins, with particular benefits for low-antigen density applications like expansion microscopy and CLEM.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C30-C35 are supported by mass spectrometry data (Figure 1A, Figure 1\u2014figure supplement 1) showing specific biotinylation patterns for different bait proteins. The data demonstrate that different baits label distinct subsets of nuclear pore proteins rather than the entire complex, confirming a labeling radius below the nuclear pore size (~100 nm). This is consistent with published BioID labeling radii of ~10 nm.",
+    "evaluation": "Claims C1, C66-C68 demonstrate quantitatively that streptavidin signals are 2.9-fold stronger than anti-HA with statistical significance (p=9.6E-55, n=60). Claims C2-C3, C79, C84 show this advantage extends to expansion microscopy and CLEM with experimental validation. The mechanism (C32, C119) involving multiple biotinylation sites is well-supported by data across multiple protein targets and imaging modalities.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C36",
-      "C37",
-      "C38",
-      "C39",
-      "C40"
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C30",
+      "C31",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C110",
+      "C111",
+      "C146",
+      "C147"
     ],
-    "result": "Streptavidin imaging of TurboID fusion proteins provides resolution comparable to antibody-based immunofluorescence in standard light microscopy. For both T. brucei NUP132 and human NUP88, streptavidin and anti-HA signals appeared highly similar with no obvious differences in resolution. Wild-type cells showed negligible background streptavidin signal.",
+    "result": "Streptavidin successfully detects proteins in phase-separated regions (nuclear pore channel, nucleolus, stress granules) where antibodies consistently fail, establishing a correlation between antibody inaccessibility and phase separation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36-C40 are supported by microscopy images (Figure 1C-D, Figure 1\u2014figure supplement 2) showing comparable resolution between streptavidin and antibody detection for nuclear pore proteins in both trypanosomes and human cells. The low background in wild-type cells confirms specificity. This is consistent with published BioID labeling radii data.",
+    "evaluation": "Claims C4-C7, C30-C31, C49-C61 provide extensive experimental evidence across multiple phase-separated compartments in both trypanosome and human cells, testing multiple antibody types (anti-HA, anti-Ty1, polyclonal, nanobodies). Claims C110-C111, C146-C147 demonstrate systematic correlation with known phase-separated regions. The consistency across different proteins, antibodies, and species strongly supports the conclusion.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C41",
-      "C42",
-      "C43",
-      "C48",
-      "C49"
+      "C8",
+      "C9",
+      "C104",
+      "C105",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C116"
     ],
-    "result": "Streptavidin successfully detects proteins in phase-separated regions where antibodies fail. Anti-HA failed to detect MEX67 at nuclear pores and NOG1 in the nucleolus, while streptavidin faithfully decorated these structures. Anti-HA also failed to label the interior of stress granules, detecting only the periphery.",
+    "result": "A comprehensive antibody-accessibility map of the trypanosome nuclear pore was created using TurboID-HA tandem tagging, revealing that all FG-NUPs and some non-FG NUPs are inaccessible to anti-HA antibodies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C43, C48-C49 are strongly supported by microscopy data (Figure 2A-C) showing clear streptavidin signals at nuclear pores, nucleolus, and stress granules where anti-HA signals are absent or peripheral. The differential detection is consistent across three distinct phase-separated structures in trypanosomes, providing robust evidence for antibody inaccessibility in these regions.",
+    "evaluation": "Claims C8-C9, C104-C105, C108 describe the systematic experimental design (45 cell lines, N- and C-terminal tags for all known NUPs). Claims C110-C113, C115-C116 present the mapping results with appropriate controls ruling out abundance effects. The comprehensive nature of the dataset and consistency with known FG-NUP properties strongly support this result.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C44",
-      "C45",
-      "C46",
-      "C47"
+      "C10",
+      "C11",
+      "C33",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C156",
+      "C157",
+      "C158"
     ],
-    "result": "Anti-HA preferentially stains the periphery of stress granules while streptavidin penetrates into the interior. Quantitative analysis showed stress granules detected by anti-HA were 1.4\u00b10.2 fold wider than those detected by streptavidin, with anti-HA profiles frequently exhibiting double-peaks.",
+    "result": "Streptavidin imaging reveals dynamic protein interactions and temporal localization history through stable biotinylation of interacting partners, demonstrated with PABP2, MLP2, and nuclear pore proteins.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C44-C47 are supported by microscopy images and quantitative intensity profile analysis (Figure 2C-E) from biological triplicates. The consistent 1.4-fold difference in granule diameter and double-peak profiles provide strong quantitative evidence for peripheral antibody staining versus internal streptavidin penetration. Fluorophore switching controls (Figure 2\u2014figure supplement 1) rule out microscopy artifacts.",
+    "evaluation": "Claims C88-C93 demonstrate PABP2 posterior pole signal reflecting historic interactions with decapping complex, validated by mass spectrometry. Claims C96-C98 show MLP2 cell-cycle dependent localization history. Claims C10-C11, C33, C156-C158 establish the general principle. The experimental evidence is strong, though the authors appropriately note (C87) that orthogonal validation is essential for each new protein.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56"
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C130"
     ],
-    "result": "Antibody inaccessibility in phase-separated regions is conserved across species and applies to multiple antibody types. Human NUP54 was undetectable by anti-HA but visible with streptavidin. MEX67 was undetectable at nuclear pores by anti-HA, anti-Ty1, polyclonal antiserum, and even GFP nanobodies, while NOG1 was only weakly detected by GFP nanobodies.",
+    "result": "The labeling radius of TurboID under the experimental conditions used (no added biotin) is below the size of the nuclear pore complex and well below the resolution of light microscopy, providing resolution comparable to antibody-based immunofluorescence.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C56 are supported by microscopy data (Figure 2F-J) testing multiple antibody types (monoclonal anti-HA, anti-Ty1, polyclonal antisera, nanobodies) against multiple targets (NUP54, MEX67, NOG1) in both human and trypanosome cells. The failure of nanobodies (smaller than streptavidin) to detect MEX67 (C53-C54) is particularly important as it rules out size as the sole explanation for antibody failure.",
+    "evaluation": "Claims C42-C43, C130 are supported by mass spectrometry data showing specific labeling patterns within the nuclear pore. Claims C44-C45, C48 provide microscopy validation. Claims C123-C127 cite established literature on BirA and TurboID labeling radii. The consistency between mass spec data, microscopy observations, and published measurements strongly supports this conclusion.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C59",
-      "C60",
-      "C61"
+      "C53",
+      "C54",
+      "C55",
+      "C62",
+      "C63"
     ],
-    "result": "Streptavidin provides significantly stronger signal than antibodies with less background. For NUP158-TurboID-HA, streptavidin resulted in significantly less cytoplasmic background than anti-HA, and the maximum signal was 2.9-fold higher (n=60, p=9.6E-55).",
+    "result": "Anti-HA preferentially stains the periphery of stress granules while streptavidin penetrates into the dense phase-separated interior, as demonstrated by quantitative intensity profile analysis showing 1.4\u00b10.2-fold wider profiles for anti-HA.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C59-C61 are strongly supported by quantitative microscopy data (Figure 3A-C) with large sample size (n=60) and highly significant statistical test (p=9.6E-55). The 2.9-fold signal enhancement is substantial and reproducible across two different fluorophore combinations, demonstrating robust signal amplification by streptavidin.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C53-C55 present quantitative data with appropriate statistical analysis and fluorophore-switching controls. Claim C62 rules out size as the sole determinant by showing nanobodies also fail for MEX67. Claim C63 shows NOG1 is weakly detectable by nanobodies, indicating the effect is not absolute. The quantitative analysis and controls support the interpretation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72"
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
     ],
-    "result": "Streptavidin outperforms antibodies in expansion microscopy. For both NUP76 and MEX67, streptavidin provided strong uniform staining in both proExM and U-ExM, while anti-HA failed completely (MEX67) or partially (NUP76) in U-ExM and gave much lower signal in proExM.",
+    "result": "Streptavidin imaging outperforms antibody detection in both proExM and U-ExM expansion microscopy protocols, providing stronger signals with less background for NUP76 and MEX67.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C67-C72 are supported by expansion microscopy images (Figure 3D) showing clear superiority of streptavidin over antibodies in both expansion protocols. The complete failure of anti-HA for MEX67 in U-ExM and partial failure for NUP76 demonstrate the critical advantage of streptavidin under low-antigen density conditions. This is the first reported use of streptavidin with biotin ligase-fused proteins in expansion microscopy.",
+    "evaluation": "Claims C74-C77 provide experimental evidence for both proteins in both expansion protocols. Claim C78 asserts novelty, which is a claim about the literature rather than the experimental results. Claim C79 summarizes the comparative performance. The experimental data clearly support superior performance, though the novelty claim (C78) is less critical to the scientific finding.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C75",
-      "C76",
-      "C77"
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
     ],
-    "result": "Streptavidin is superior to antibodies for CLEM. For both NUP96 and NUP158, streptavidin detected numerous nuclear pores per nucleus while anti-HA detected 0-2 pores with higher background.",
+    "result": "In CLEM, streptavidin detection of NUP96 and NUP158 reveals numerous nuclear pores per nucleus while anti-HA detects 0-2 pores with higher background, demonstrating the method's utility for low-antigen density applications.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C75-C77 are supported by CLEM microscopy data (Figure 3E-F, Figure 3\u2014figure supplement 1) showing dramatic differences in detection efficiency. The near-complete failure of antibodies in CLEM (0-2 pores detected) versus robust streptavidin detection (numerous pores) demonstrates the critical advantage under extreme low-antigen density conditions imposed by resin embedding.",
+    "evaluation": "Claims C80-C81 establish the methodological challenge of CLEM. Claims C82-C83 present experimental results for two proteins with clear quantitative differences. Claim C84 appropriately generalizes to low-antigen density conditions. The experimental evidence is strong and the conclusion is well-supported.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87"
+      "C100",
+      "C101",
+      "C102",
+      "C103"
     ],
-    "result": "Streptavidin imaging reveals dynamic protein interactions through biotinylation history. PABP2 showed streptavidin signal at the posterior pole (where decapping complex localizes) in addition to cytoplasm, despite PABP2 being exclusively cytoplasmic by other methods. This reflects historic interaction between PABP2 and the dynamically localized decapping complex, supported by mass spectrometry identification of all five decapping complex members.",
+    "result": "Differential cytoplasmic and nucleoplasmic streptavidin labeling patterns between NUPs (e.g., NUP65 vs NUP75) suggest that some NUPs contact and proximity-label proteins in transit, providing functional information about protein import/export.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C81-C87 are supported by microscopy data (Figure 4A-B) showing differential localization patterns and mass spectrometry data confirming the interaction. The posterior pole signal visible only with streptavidin but not anti-HA or fluorescent protein fusions provides strong evidence for biotinylation history. The mass spectrometry confirmation of decapping complex biotinylation strengthens the interpretation of dynamic exchange.",
-    "result_type": "MAJOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 present observational data showing differential labeling patterns. Claims C102-C103 propose an interpretation about NUP function in transport. While the observations are clear, the functional interpretation is speculative and would require additional validation experiments (e.g., transport assays, identification of labeled cargo proteins) to be fully supported.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92"
+      "C26",
+      "C27",
+      "C28",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
     ],
-    "result": "Streptavidin imaging captures cell cycle-dependent protein localization history. For MLP2, streptavidin signal 'lagged behind' anti-HA at all cell cycle stages. In anaphase, anti-HA exclusively stained the spindle pole body while streptavidin decorated both nuclei and spindle pole body, revealing previous localization.",
+    "result": "Three properties of streptavidin explain its superior performance in phase-separated regions: smaller size (60 kDa vs 300 kDa for IgG tandem), ~100-fold stronger binding affinity (femtomolar vs nanomolar), and four fluorophores per molecule vs one per secondary IgG.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C92 are supported by microscopy data (Figure 4C, Figure 4\u2014figure supplement 1) showing clear differences between streptavidin and anti-HA signals across cell cycle stages. The anaphase example is particularly compelling, showing streptavidin retention at previous locations (nuclei) while anti-HA shows only current location (spindle pole body). This demonstrates the utility of biotinylation for tracking dynamic relocalization.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C26-C28, C152-C155 present established knowledge about the physical and biochemical properties of streptavidin and antibodies, supported by appropriate citations. While these are proposed explanations rather than directly tested mechanisms, they are well-grounded in established biophysical principles and consistent with the experimental observations.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98"
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C143",
+      "C144",
+      "C160",
+      "C161"
     ],
-    "result": "Differential streptavidin labeling patterns between nuclear pore proteins reveal functional differences. Some NUPs (e.g., NUP65) showed additional cytoplasmic streptavidin staining absent in others (e.g., NUP75), suggesting differential contact with proteins in transit and providing information about NUP functions in protein import/export.",
+    "result": "The TurboID-HA tandem tag offers an 'all in one' solution to antibody-accessibility problems while also enabling probing of protein interactions and phase separation without compromising resolution or signal strength.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C93-C98 are supported by microscopy data (Figure 4D-E) showing differential cytoplasmic and nucleoplasmic biotinylation patterns for different NUPs. The interpretation that this reflects differential contact with cargo proteins is reasonable given the proximity labeling mechanism, though the claim about functional information (C98) is somewhat speculative without additional validation.",
-    "result_type": "MINOR"
+    "evaluation": "This is a summary claim integrating multiple findings. Claims C117-C118 are supported by the resolution data (C42-C48) and signal enhancement data (C66-C68). Claims C120-C121 are supported by the dynamic interaction data (C88-C98) and phase-separation mapping (C110-C116). Claims C143-C144, C160-C161 appropriately synthesize the multiple applications demonstrated. The comprehensive experimental validation across multiple applications supports this integrative conclusion.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C100",
-      "C101",
-      "C102",
-      "C103",
-      "C104",
-      "C105"
+      "C122",
+      "C87"
     ],
-    "result": "Systematic mapping of all trypanosome nuclear pore proteins with TurboID-HA. All known nuclear pore proteins were expressed with both N- and C-terminal TurboID-HA tags (45 cell lines total, excluding MLP2 and 3 failed constructs). All cell lines showed streptavidin signals predominantly at nuclear pores, confirming correct localization.",
+    "result": "Validation of TurboID-HA tagged protein function and localization by orthogonal methods is essential, as streptavidin labeling may not reflect steady-state localization for proteins with dynamic localization or transient interactions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C100-C105 are supported by the comprehensive microscopy data (Figure 5A) and western blots (Figure 5\u2014figure supplement 1) for 45 cell lines. The systematic approach with both N- and C-terminal tags provides robust validation. The exclusion of MLP2 is justified by its non-pore localization in interphase. This represents a major technical achievement enabling the antibody accessibility mapping.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C122 and C87 present important methodological caveats based on the observations with PABP2 (C88-C93) and MLP2 (C96-C98). This is a well-supported methodological recommendation that appropriately acknowledges the limitations of the technique. The authors demonstrate awareness of when the method does and does not reflect steady-state localization.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C106",
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111",
-      "C112",
-      "C113"
+      "C46",
+      "C47"
     ],
-    "result": "Comprehensive antibody accessibility map of the trypanosome nuclear pore. All FG-NUPs of the inner channel were inaccessible to anti-HA, supporting phase separation as the main determinant of antibody inaccessibility. The NUP76 complex and some non-FG NUPs (inner and outer ring proteins) were also inaccessible. NUP158 showed terminus-dependent accessibility consistent with FG-repeats at the N-terminus.",
+    "result": "Wild-type cells of both trypanosomes and humans show negligible streptavidin signal, indicating minimal background from naturally biotinylated proteins.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C106-C113 are strongly supported by the systematic microscopy data (Figure 5A-B) for all 45 cell lines. The correlation between FG-NUPs and antibody inaccessibility is clear, though the lack of correlation with protein abundance (Figure 5\u2014figure supplement 2) strengthens the phase separation interpretation. The terminus-dependent accessibility of NUP158 provides additional mechanistic insight. This represents the first complete antibody accessibility map of a nuclear pore complex.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C46-C47 present control experiments essential for validating the specificity of the method. The low background in wild-type cells supports the conclusion that the observed signals in TurboID-expressing cells are specific. This is a critical technical validation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C1",
-      "C2",
-      "C3"
+      "C131",
+      "C132",
+      "C133",
+      "C134"
     ],
-    "result": "Streptavidin signal is significantly stronger than antibody signal for all tested proteins, improving sensitivity of expansion microscopy and CLEM.",
+    "result": "In expansion microscopy with 3.6-4.2-fold expansion, streptavidin imaging maintains resolution and can achieve sub-NUP resolution by dual labeling, with any theoretical resolution decrease from proximity labeling compensated by lower linkage error.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C3 are supported by quantitative data showing 2.9-fold signal enhancement (C61) and qualitative observations across multiple proteins in expansion microscopy (C67-C72) and CLEM (C75-C77). The claim 'for all proteins tested' is supported by testing ~30 proteins (C129) with consistent results, though the exact number tested in each application varies.",
-    "result_type": "MAJOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C132 reference unpublished data, which cannot be fully evaluated. Claims C133-C134 present theoretical considerations about resolution trade-offs. While the reasoning is sound, the key experimental evidence is not available for review. The claim requires publication of the referenced data for full evaluation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C4",
-      "C5",
-      "C6",
-      "C7"
-    ],
-    "result": "Proteins in phase-separated regions (nuclear pore channel, nucleolus, RNA granules) are readily detected with streptavidin while most antibodies fail.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4-C7 are supported by comprehensive data across three distinct phase-separated structures: nuclear pores (C41, C50-C54), nucleolus (C42-C43, C55), and stress granules (C44-C47). The testing of multiple antibody types (C51-C56) strengthens the generality of the finding. The qualifier 'most' antibodies is appropriate given that some weak detection was observed (e.g., NOG1 by nanobodies, C55).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C8",
-      "C9"
-    ],
-    "result": "TurboID-HA tandem tag enables mapping of antibody accessibility, demonstrated by creating a complete map for the trypanosome nuclear pore.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8-C9 are supported by the systematic mapping data (C100-C113) showing differential detection by streptavidin versus anti-HA for all nuclear pore proteins. The approach successfully identified antibody-accessible and inaccessible regions, creating the first complete antibody accessibility map of a nuclear pore complex (Figure 5).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C10",
-      "C11"
-    ],
-    "result": "Streptavidin imaging resolves dynamic sub-complexes and reveals protein interaction history in specific cases.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10-C11 are supported by three examples: PABP2 showing historic interaction with decapping complex (C81-C87), MLP2 showing cell cycle-dependent localization history (C88-C92), and differential NUP labeling patterns (C93-C98). However, the requirement for orthogonal validation (C80, C99) means this is not a standalone method for de novo discovery without additional controls.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C114",
-      "C115",
-      "C116",
-      "C117"
-    ],
-    "result": "TurboID-HA tandem tag offers an 'all in one' solution to antibody-accessibility problems with signal enhancement, and is suitable for probing protein interactions and phase-separation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C114-C117 are supported by the comprehensive data showing: (1) detection in antibody-inaccessible regions (C4-C7, C48-C56), (2) signal enhancement (C59-C61, C142), (3) protein interaction detection (C81-C87), and (4) phase-separation mapping (C106-C113, C146-C160). The 'all in one' claim is justified by the multiple applications demonstrated, though limitations are acknowledged (C118-C119).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
-      "C78",
-      "C79",
-      "C80"
-    ],
-    "result": "Streptavidin labeling usually reflects steady-state localization but requires validation for each new bait protein, especially for dynamic proteins.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C78-C80 are supported by the observation that most proteins show expected localization (C78) but some show additional signals reflecting interaction history (C79, examples in C81-C98). The requirement for orthogonal validation (C80) is appropriately stated as a methodological requirement and is consistent with good scientific practice for any fusion protein approach.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C120",
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127",
-      "C128",
-      "C129"
-    ],
-    "result": "Antibody inaccessibility in phase-separated regions is a widespread problem with existing workarounds being cumbersome and compromising signal or morphology. Streptavidin labeling works for all tested proteins (~30) without compromising morphology.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C120-C129 are supported by cited literature documenting antibody accessibility problems across species (C121-C123) and various workaround approaches (C124-C126) with their limitations (C127-C128). The claim that streptavidin works for ~30 proteins (C129) is supported by the systematic testing, though the exact number varies by application. The comparison to existing methods is fair and well-documented.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
-      "C130",
-      "C131",
-      "C132",
-      "C133",
-      "C134",
       "C135",
       "C136",
       "C137"
     ],
-    "result": "Streptavidin imaging resolution is comparable to antibodies in standard light microscopy, consistent with published BioID labeling radii of ~10 nm.",
+    "result": "This is the first report employing fluorescent streptavidin as a signal enhancer in expansion microscopy and CLEM by combining it with biotin ligase-generated multiple biotinylation sites, representing the only alternative to immunofluorescence for these denaturing methods.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C130-C137 are supported by experimental data (C36-C40) and extensive citation of published labeling radius measurements (C131-C136). The mass spectrometry data (C30-C35, C137) confirms labeling radius below nuclear pore size under the conditions used (no excess biotin). The theoretical consideration of linkage error compensation (C140-C141) provides additional mechanistic insight.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C138",
-      "C139",
-      "C140",
-      "C141",
-      "C142"
-    ],
-    "result": "Expansion microscopy with streptavidin shows no decrease in resolution and can achieve sub-NUP resolution. Multiple biotinylation sites provide signal enhancement.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C138-C142 are supported by expansion microscopy data (C67-C72) and unpublished data on sub-NUP resolution (C138-C139). The theoretical consideration that proximity labeling might decrease resolution but is compensated by lower linkage error (C140-C141) is reasonable. The signal enhancement mechanism (C142) is well-supported by the 2.9-fold increase data (C61).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C143",
-      "C144",
-      "C145"
-    ],
-    "result": "This is the first use of streptavidin with biotin ligase for signal enhancement in expansion microscopy and CLEM, and represents the only alternative to immunofluorescence for these denaturing methods.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C143-C145 are supported by literature citation showing prior use of streptavidin with click chemistry (C143) but not with biotin ligase (C144). The claim of being the only alternative (C145) is justified by the denaturing conditions that preclude fluorescent protein imaging. This represents a genuine methodological advance.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C146",
-      "C147",
-      "C148",
-      "C149",
-      "C150",
-      "C151",
-      "C152",
-      "C153",
-      "C154",
-      "C155",
-      "C156",
-      "C157",
-      "C158",
-      "C159",
-      "C160"
-    ],
-    "result": "TurboID-HA tandem tag enables de novo prediction of phase-separated regions through antibody inaccessibility mapping. The correlation between antibody inaccessibility and phase separation is strong in trypanosomes and applicable to human cells.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C146-C160 are supported by the systematic nuclear pore mapping (C106-C113) showing correlation between FG-NUPs and antibody inaccessibility, and demonstration in human NUP54 (C50, C160). The importance of phase separation (C147-C148) and limitations of current methods (C149-C151) are well-documented by citations. However, alternative explanations like steric hindrance cannot be completely ruled out (C157), though the size and affinity arguments (C161-C164) favor phase separation as the main determinant.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R25",
-    "claim_ids": [
-      "C161",
-      "C162",
-      "C163",
-      "C164"
-    ],
-    "result": "Streptavidin's superior performance in phase-separated regions is explained by smaller size, higher binding affinity (femtomolar vs nanomolar), and greater structural stability compared to antibodies.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C161-C164 are supported by established biochemical properties cited from literature. The size comparison (C26, C161), affinity difference (C27, C162-C163), and stability (C164) are well-documented. The failure of nanobodies (smaller than streptavidin) to detect MEX67 (C53-C54) supports that size alone is insufficient, implicating affinity and stability as additional factors.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R26",
-    "claim_ids": [
-      "C165",
-      "C166",
-      "C167",
-      "C168",
-      "C169",
-      "C170"
-    ],
-    "result": "Streptavidin imaging is a versatile tool for monitoring dynamic protein interactions, with potential for pulse-chase experiments using inducible systems.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C165-C170 are supported by the demonstrated applications (signal enhancement, phase-separation mapping, dynamic interaction monitoring). The proposal for pulse-chase experiments (C168) is appropriately framed as future work with relevant citations. The conclusion that this is an important addition to the imaging toolbox (C169-C170) is justified by the multiple demonstrated applications.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R27",
-    "claim_ids": [
-      "C118",
-      "C119"
-    ],
-    "result": "Streptavidin imaging requires validation of fusion protein function and localization by orthogonal methods, and is limited to genetically tractable organisms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C118-C119 appropriately acknowledge important limitations of the method. These are standard requirements for any fusion protein approach and are honestly stated. The limitation to genetically tractable organisms is inherent to the requirement for expressing TurboID fusion proteins.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R28",
-    "claim_ids": [
-      "C175"
-    ],
-    "result": "Protein abundance does not correlate with immunofluorescence signal for nucleoporins, ruling out low abundance as the reason for antibody detection failure.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C175 is supported by quantitative analysis (Figure 5\u2014figure supplement 2) comparing proteomics-derived abundance data with immunofluorescence signal categories. This analysis strengthens the interpretation that phase separation, not abundance, is the primary determinant of antibody accessibility.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 acknowledges prior use of streptavidin with click chemistry. Claims C136-C137 assert novelty and uniqueness. These are claims about the literature and priority rather than scientific findings. While the combination appears novel, comprehensive literature searches would be needed to definitively establish priority. The scientific merit is independent of novelty claims.",
     "result_type": "MINOR"
   }
 ]

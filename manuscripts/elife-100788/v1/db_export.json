@@ -1,0 +1,1976 @@
+{
+  "submission": {
+    "id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:43:04.379646Z",
+    "updated_at": "2025-11-21T23:43:04.379646Z"
+  },
+  "content": [
+    {
+      "id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "content_type": "manuscript",
+      "content_text": "# Seasonal and comparative evidence of adaptive gene expression in mammalian brain size plasticity\n\n## Authors\n\n- William R Thomas<sup>1</sup> ([ORCID: 0009-0002-3858-2440](https://orcid.org/0009-0002-3858-2440)) \u2020\n- Troy Richter<sup>2</sup> ([ORCID: 0000-0003-4142-7089](https://orcid.org/0000-0003-4142-7089))\n- Erin T O'Neil<sup>2</sup> ([ORCID: 0009-0008-9307-6915](https://orcid.org/0009-0008-9307-6915))\n- Cecilia Baldoni<sup>3</sup> ([ORCID: 0009-0008-1341-9456](https://orcid.org/0009-0008-1341-9456))\n- Angelique Corthals<sup>5</sup>\n- Dominik von Elverfeldt<sup>6</sup> ([ORCID: 0000-0002-6219-3528](https://orcid.org/0000-0002-6219-3528))\n- John D Nieland<sup>7</sup> ([ORCID: 0000-0001-7423-0122](https://orcid.org/0000-0001-7423-0122))\n- Dina Dechmann<sup>3</sup> ([ORCID: 0000-0003-0043-8267](https://orcid.org/0000-0003-0043-8267))\n- Richard Hunter<sup>2</sup>\n- Liliana M Davalos<sup>1</sup> ([ORCID: 0000-0002-4327-7697](https://orcid.org/0000-0002-4327-7697))\n\n### Affiliations\n\n1. Department of Ecology and Evolution, Stony Brook University New York United States ([ROR:05qghxh33](https://ror.org/05qghxh33))\n2. Department of Psychology, Developmental and Brain Sciences Program, University of Massachusetts Boston Boston United States ([ROR:04ydmy275](https://ror.org/04ydmy275))\n3. Max Planck Institute of Animal Behavior Radolfzell Germany ([ROR:026stee22](https://ror.org/026stee22))\n4. University of Konstanz Radolfzell Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))\n5. John Jay College of Criminal Justice New York United States ([ROR:01p9rc392](https://ror.org/01p9rc392))\n6. Division of Medical Physics, Department of Dignostic and Interventional Radiology, University Medical Center Freiburg, Faculty of Medicine, University Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))\n7. Health Science and Technology, Aalborg University Aalborg Denmark ([ROR:04m5j1k67](https://ror.org/04m5j1k67))\n8. Consortium for Inter-Disciplinary Environmental Research, Stony Brook University New York United States ([ROR:05qghxh33](https://ror.org/05qghxh33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nContrasting almost all other mammalian wintering strategies, Eurasian common shrews, Sorex araneus, endure winter by shrinking their brain, skull, and most organs, only to then regrow to breeding size the following spring. How such tiny mammals achieve this unique brain size plasticity while maintaining activity through the winter remains unknown. To discover potential adaptations underlying this trait, we analyzed seasonal differential gene expression in the shrew hypothalamus, a brain region that both regulates metabolic homeostasis and drastically changes size, and compared hypothalamus gene expression across species. We discovered seasonal variation in suites of genes involved in energy homeostasis and apoptosis, shrew-specific upregulation of genes involved in the development of the hypothalamic blood-brain barrier and calcium signaling, as well as overlapping seasonal and comparative gene expression divergence in genes implicated in the development and progression of human neurological and metabolic disorders, including CCDC22. With high metabolic rates and facing harsh winter conditions, S. araneus have evolved both adaptive and plastic mechanisms to sense and regulate their energy budget. Many of these changes mirrored those identified in human neurological and metabolic disease, highlighting the interactions between metabolic homeostasis, brain size plasticity, and longevity.\n\n## Introduction\n\nTypical mammalian brain development consists of unidirectional postnatal growth until reaching an adulthood maximum (Arain et al., 2013; Gould, 1966), but the Eurasian common shrew, Sorex araneus, seasonally changes the size of its body, most organs, skull, and\u2014especially\u2014its brain (L\u00e1zaro et al., 2019; Pucek, 1970; Pucek, 1965b; Pucek, 1965a). In the most acute case of Dehnel\u2019s phenomenon, or seasonal size plasticity, the common shrew first grows to an initial summer maximum as a juvenile, then shrinks in autumn losing up to 18% body mass, ~20% skull volume, and 26% brain mass, reaching its winter size minimum (L\u00e1zaro et al., 2019; Pucek, 1970; Pucek, 1965b; Pucek, 1965a). Then, in the spring prior to mating, these shrews partially or fully regrow these organs, reaching a second maximum. Dehnel\u2019s phenomenon is hypothesized to be an adaptation to decrease energy demand without slowing metabolism through plasticity, improving shrew fitness during the low temperatures and limited food supply of winter (L\u00e1zaro et al., 2019; Pucek, 1970; Pucek, 1965a; Keicher et al., 2017; Churchfield et al., 2012; Taylor et al., 2013; Hyv\u00e4rinen, 1984; Schaeffer et al., 2020; Thomas et al., 2023). Corroborating this adaptive plasticity hypothesis, Dehnel\u2019s phenomenon anticipates winter conditions and is both geographically variable (Pucek, 1970) and modulated by environmental temperature (L\u00e1zaro et al., 2019). Although we have begun to reveal the molecular mechanisms of Dehnel\u2019s phenomenon (Thomas et al., 2023), the comparative context of proposed adaptations and commonality of processes across brain regions remain unknown. Elucidating both the genetic basis and evolutionary mechanisms underlying Dehnel\u2019s phenomenon will illuminate the molecular adaptations involved in this unusual case of mammalian brain plasticity.\n\nAs a hypothesized wintering strategy, energy metabolism is key to the evolution of Dehnel\u2019s phenomenon in S. araneus (Schaeffer et al., 2020). Tiny mammals have limited options to survive winter conditions (Auteri and Knowles, 2020), and Dehnel\u2019s phenomenon is exceedingly rare as a wintering strategy. While many mammals seasonally migrate away from low-temperature, low-productivity environments, some endure these conditions by reducing their energy requirements through hibernation, a phenotype that has independently evolved many times (Geiser, 2008; Ferris and Gregg, 2019; Turbill et al., 2011). The evolution and regulation of hibernation relies upon a suite of metabolic genes (Faherty et al., 2016; Villanueva-Ca\u00f1as et al., 2014), including those associated with thermogenesis, circadian rhythms, and feeding behavior. Compared to most species, S. araneus has astronomically large energy demands, with one the highest basal metabolic rates per unit of body mass identified in any mammal (Genoud et al., 2018; Taylor, 1998). To meet these energy requirements, S. araneus forage and feed constantly. Together with brief lifespans (~1 year) that nonetheless require surviving a single winter (Searle et al., 2019; Healy et al., 2014), these extreme metabolic demands constrain survival options for S. araneus. Thus, by decreasing resources devoted to energetically expensive tissue such as the brain (Mergenthaler et al., 2013), Dehnel\u2019s phenomenon bypasses these constraints and expands the niche of a typical small mammal during winter while allowing this fast-living, predatory shrew to remain active year round.\n\nWe hypothesize Dehnel\u2019s phenomenon, which involves metabolic shifts and interorgan communication (Thomas et al., 2023), has evolved through the combination of both physiological plasticity and genetic adaptation. This idea is twofold: phenotypic plasticity is not only adaptive in itself as the evolved spectrum of a trait, but can also allow populations to persist in varying environments, leading to ancillary evolutionary adaptation when given enough time and strength of selection (Via and Lande, 1985). Thus, while temporal analysis of shrew gene expression can elucidate putatively adaptive plastic regulation, it will miss adaptive canalization of gene expression that has contributed to the evolution of Dehnel\u2019s phenomenon. Therefore, plastic regulatory mechanisms and proposed adaptations can be further tested via cross-species comparisons of gene divergence. These cross-species comparisons treat gene expression as a trait and have been used to characterize diverse vertebrate adaptations including thermal tolerance and vision loss in fish (Brauer et al., 2017; Bernal et al., 2020; Stern and Crandall, 2018), the effects of whole genome duplication on gene expression (Gillard et al., 2021; Conant, 2020; Braasch et al., 2016; Lien et al., 2016; Sandve et al., 2018), sex-specific alternative splicing in birds (Rogers et al., 2021), and patterns of gene expression evolution in mammalian organs (Rohlfs et al., 2015; Chen et al., 2019; Yapar et al., 2021; Sj\u00f6stedt et al., 2020). By incorporating these comparative approaches with seasonally varying gene expression, we can further elucidate the role of plasticity and adaption in both the regulation and evolution of Dehnel\u2019s phenomenon.\n\nThe hypothalamus is an intriguing candidate brain region for comparative analysis, as it is both the brain region with the greatest seasonal size change in shrews and the center of bodily homeostatic maintenance across mammals. In shrews, the hypothalamus undergoes a 31.6% volume reduction in autumn through winter, followed by a 47.8% increase in spring (L\u00e1zaro et al., 2018). Across all mammals, the hypothalamus plays a pivotal role in the maintenance of energy budgets, with functions influencing: (1) energy intake and feeding behavior, (2) energy expenditure and metabolic rate, and (3) energy deficits and storage. While such functions are important for all mammals, these are critical while wintering to maintain stable internal body temperatures as external temperatures decrease. For example, the hypothalamus can activate the sympathetic nervous system as temperatures decrease, stimulating winter thermogenesis. Thus, shrews may deploy typical mammalian hypothalamic plasticity concurrent with seasonal size plasticity. Alternatively, and considering how rare Dehnel\u2019s phenomenon is, shrews may have evolved divergent approaches, akin to naked mole rat traits, a species that lives under consistent hypoxic conditions resulting in adaptations associated with decreased oxygen and blood flow across the brain (Pamenter, 2022). Comparative approaches, then, may identify novel adaptations that contribute to the evolution of Dehnel\u2019s phenomenon in the shrew hypothalamus.\n\nAs the brain region able to quickly respond to change, the hypothalamus has remarkable plastic capabilities associated with metabolism (Dietrich and Horvath, 2013), especially as environmental conditions vary between seasons and can be unpredictable. While the central nervous system (CNS) acts somewhat independently of bodily metabolism through the protective effects of the blood-brain barrier (BBB), the CNS is still sensitive to bodily metabolic change. We hypothesize hypothalamic plasticity is central to the evolution and regulation of size plasticity through both environmental sensing mechanisms and signaling responses to these stimuli. Specifically, we hypothesize adaptations in the shrew: (1) hypothalamic BBB associated with dynamic metabolic fluctuations, (2) sensing of metabolic state and seasonal size through hormonal signals, mediated by BBB crossing of insulin, ghrelin, and leptin, and (3) responses to metabolic fluctuations involving ion-dependent signaling. With limited energy inertia, shrews must continuously sense their peripheral metabolism, and a combination of receptors and selective BBB permeability in the hypothalamus allows certain molecules to relay information from the peripherals to the brain. Among the best characterized of these are the peripheral hormones insulin, ghrelin, and leptin, the latter known to excite anorexigenic and inhibit orexigenic neurons in the arcuate nucleus of the hypothalamus. Finally, according to Ramon y Cajal\u2019s neuronal doctrine (Ram\u00f3n y Cajal, 1891), differences in brain functional responses may stem from altered synaptic firing. Thus, inter- and intracellular ion concentrations play a large role in the communication between neuronal networks by propagating signals in response to perceived environmental stimuli.\n\nTo test these hypotheses, we analyzed both the seasonal and phylogenetic variation in shrew hypothalamic gene expression to detect signals of adaptive plasticity. First, we aimed to identify differential gene expression of genes across five seasons of Dehnel\u2019s phenomenon that might promote regulatory responses to seasonal variation and can be functionally validated with cell line perturbations. Second, this analysis was paired with a comparative transcriptomics approach using hypothalamic gene expression data from 15 additional mammal species. These analyses infer putative adaptation by testing for branch-specific gene expression shifts using Ornstein-Uhlenbeck models. The objective of these evolutionary analyses was to quantify lineage-specific hypothalamic gene expression changes in S. araneus, with evolutionary gene expression divergence consistent with selection. Finally, by comparing individual genes and associated pathways from these two analyses, we can determine potential adaptive plasticity, indicating mechanisms that both potentially regulate size plasticity and were selected for higher gene expression in the evolution of Dehnel\u2019s phenomenon. Our results implicate several key processes in Dehnel\u2019s phenomenon, including seasonal plasticity in feeding behavior, enhanced modulation of both hypothalamic BBB and downstream signaling, and plastic apoptosis responses.\n\n## Results\n\n### Temporal gene expression\n\nWe identified several known neural signaling pathways correlated with patterns of seasonal hypothalamus gene expression that may be associated with changes during Dehnel\u2019s phenomenon. We began by hierarchically clustering gene expression to identify patterns through time. Most genes did not exhibit much variation through time, indicating constitutive gene expression in the hypothalamus, as only 786 of 19,296 genes passed our filters (>0.5-fold change between any two seasons and 2 samples>10 normalized reads). We identified 12 distinct clusters of gene expression patterns by bootstrapping (n=20) a gap statistic within cluster distances. Of these 12 clusters, five clusters consisting of 392 genes resembled a large divergence between summer juveniles and the remaining individuals without a second local maximum during size change (Figure 1\u2014figure supplement 1; Clusters 2, 3, 8, 11, 12). These genes likely represent a large developmental shift between recently postnatal shrews and the remainder of individuals compared to shifts associated with seasonality or Dehnel\u2019s phenomenon. We then functionally characterized the remaining 394 genes (Figure 1A), which exhibited seasonal shifts, with a Gene Ontology (GO) pathway enrichment using the Database for Annotation, Visualization, and Integrated Discovery (DAVID) Gene Functional Classification Tool. Although no enrichment pathway was significant after a Bonferroni correction, 14 pathways were enriched prior to correction (p<0.05; modified Fisher\u2019s exact test), with the five pathways with the lowest p-values including fluid shear stress and atherosclerosis, relaxin signaling, neuroactive ligand-receptor interaction, HIF-1 signaling, and phosphoinositide-3 kinase (PI3K)-Akt signaling (Figure 1B). Many of these pathways have been implicated in various physiological processes, which suggests that variation identified in the hypothalamus are likely the result of autonomic processes in homeostatic maintenance. Individual enrichments of each pathway can be found in Supplementary file 2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/100788/elife-100788-fig1-v1.jpg)\n\n**Figure 1.:** (A) Hierarchical clustering of gene expression identified 12 distinct clusters, of which 7 clusters (Arain et al., 2013; Pucek, 1970; Pucek, 1965b; Pucek, 1965a; Keicher et al., 2017; Taylor et al., 2013; Hyv\u00e4rinen, 1984) comprising of 394 genes, showed variation consistent with seasonality or Dehnel\u2019s phenomenon. (B) Functional characterization of these genes using Kyoto Encyclopedia of Genes and Genomes (KEGG) Gene Ontology (GO) pathways found an enrichment of 14 pathways (p<0.05), many of which have been implicated in hypothalamic control of homeostatic maintenance, including relaxin signaling, neuroactive ligand-receptor interaction, HIF-1 signaling, and phosphoinositide-3 kinase (PI3K)-Akt signaling.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100788/elife-100788-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Of these 12 clusters, 5 clusters (Clusters 2, 3, 8, 11, 12) consisted of 392 genes which resembled a large expression divergence between summer juveniles and the remaining individuals. These genes show expression divergence between recently postnatal shrews and the other stages, compared to the variation found across Dehnel\u2019s phenomenon (Clusters 1, 4, 5, 6, 7, 9, 10).\n\nWe also discovered hundreds of differentially expressed genes (DEGs) between autumn and spring shrews that may mediate phenotypic divergence in both size (shrinkage vs regrowth) and metabolic changes (liver gene expression shifts [Thomas et al., 2023]) associated with Dehnel\u2019s phenomenon. By comparing the RNA expression of autumn and spring shrews, we found 210 DEGs, with 129 upregulated and 81 downregulated in spring (Figure 2A). We ran a GO pathway enrichment to functionally characterize the 210 DEGs in the hypothalamus and found 15 pathways were enriched (p<0.05; modified Fisher\u2019s exact test) with significant genes prior to multiple comparison correction. These pathways were all downregulated in spring and included pathways in cancer (4.5-fold enrichment, p<0.001), transcriptional misregulation in cancer (8.3-fold enrichment, p<0.001), fluid shear stress and atherosclerosis (9.5-fold enrichment, p<0.01), small cell lung cancer (11.5-fold enrichment, p<0.01), IL-17 signaling (11.3-fold enrichment, p<0.01), cAMP signaling (5.9-fold enrichment, p<0.01), and apoptosis (7.8-fold enrichment, p<0.05) (Figure 2B). Pathways in cancer consisted of nine significantly downregulated genes (from DESeq2 Wald test), four of which overlapped with apoptotic pathways including BCL2L1 (\u20130.6 log-fold change [LFC] padj<0.01), NFKBIA (\u20131.3 LFC, padj<0.01), FOS (\u20131.5 LFC, padj<0.05), and GADD45B (\u20131.4 LFC, padj<0.05) (Figure 2C). Differential gene expression for all genes can be found in GitHub supplemental data. Overall, the processes identified suggest regulation of cell proliferation (cancer pathways) and death (apoptosis) in the hypothalamus may be associated with phenotypic changes during Dehnel\u2019s phenomenon.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/100788/elife-100788-fig2-v1.jpg)\n\n**Figure 2.:** (A) Volcano plot of significant (padj<0.05) differentially expressed genes (colored) between phenotypic extremes of hypothalami size change (spring vs autumn) plotted by log-fold change. (B) Pathway enrichment analysis identified 15 pathways to be enriched for differentially expressed genes, including pathways in cancer and apoptosis (downregulated). (C) Patterning of gene expression across seasons of Dehnel\u2019s phenomenon for genes found in the cancer (all) and apoptosis (red) pathways, including BCL2L1 (dashed). (D) Cell viability of Mustela putorius furo neural cell lines exposed to four treatments: scrambled BCL2L1 overexpression (n=3), BCL2L1 overexpression (n=3), heat with scrambled BCL2L1 overexpression (n=3), and heat with BCL2L1 overexpression (n=3). Error bars represent the mean \u00b1 standard deviation. Heat significantly reduced the cell viability compared to controls but was not rescued by BCL2L1 overexpression.\n\n### Cell viability analysis with BCL2L1 overexpression\n\nWe examined the potential functional effects of apoptosis regulating gene, BCL2L1 (Figure 2D), which was differentially expressed between seasons, by propagating an in vitro model of domesticated ferret brain cells (MPF-CRL-1656, ATCC). We chose this cell line because there is no established cell line of S. araneus. M. putorius furo (MPF) also undergoes a Dehnel\u2019s-like phenotype (Apfelbach and Kruska, 1979) and is more closely related to shrews than mice are. MPF cells were transfected with either the anti-apoptotic BCL2L1 RNA or a scrambled version of BCL2L1 (sBCL2L1) RNA. 24 hr after transfection, cells were exposed to heat stress followed by crystal violet staining. A significant difference in cell viability was observed between the heat scrambled compared to the control scrambled groups (df = 3.56, t3.56=8.78, p<0.01), however, there was no significant difference between cells transfected with BCL2L1 compared to those transfected with sBCL2L1 when exposed to heat (df = 3.37, t3.37=-0.99, p=0.39).\n\n### Evolutionary divergence in gene expression\n\nAnalyses quantifying branch-specific shifts in gene expression identified hundreds of genes that were upregulated in the shrew hypothalamus (post pubescent spring individuals) compared to other mammals, suggesting adaptation for increased expression in these genes (Figure 3). Expression variance and evolution (EVE) models found 222 genes significantly rejected (padj<0.05) a single expression optimum for all species in favor of a second expression optimum for the shrew lineage. Notably, all second optima (in the shrew lineage) were higher than the first optimum, consistent with results from the original methods manuscript (Rohlfs et al., 2015). While nonsignificant genes had a mean 0.93-fold change, genes experiencing an expression branch-shift in shrews had a mean 9.66 orthologous transcripts per million (oTPM)-fold change compared to other species. To validate genes with expression branch-shifts as shrew-specific, we ran a dropout test for the shrew lineage, testing for phylogeny-wide evidence of selection for each gene. Of the 6496 genes tested, 81 genes had significantly (padj<0.05) lower \u03b2 (within population variance to between-species variance), suggesting selection elsewhere in the phylogeny. None of these genes overlapped with those identified to be differentially expressed in the shrew, further validating the specificity of expression shifts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/100788/elife-100788-fig3-v1.jpg)\n\n**Figure 3.:** (A) Heatmap and boxplots of genes with shrew-specific upregulation compared to other mammals associated with processes including calcium signaling, autophagy, neurological functions, (B) metabolic homeostasis and environmental sensing.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100788/elife-100788-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Phylogeny used for comparative transcriptomics of the hypothalamus with (B) each species normalized count distribution of single-copy orthologs (6496 genes). Visualization shows the efficacy of normalization as each species has roughly similar distributions.\n\nWe identified several changes associated with processes that may underlie seasonal size plasticity. Pathway enrichment analysis identified two significantly enriched pathways: calcium signaling (2.8-fold enrichment, p<0.05) and autophagy (9.1-fold enrichment, p<0.05) (Figure 3). Upon manual inspection of the list, we also identified several other potential adaptive processes, including BBB formation and function, feeding behavior and leptin responses, metabolism, and neuroprotection (Figure 3, Table 1).\n\n**Table 1.**\n Significant shrew-specific upregulation of genes associated with calcium signaling pathways, blood-brain barrier (BBB) plasticity, food intake and leptin response, and other related functions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Function</th>\n      <th>FC</th>\n      <th>p-Value</th>\n      <th>KEGG (p&lt;0.05)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>WNT7A</td>\n      <td>BBB/neurogenesis/angiogenesis</td>\n      <td>8.60</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>MFSD2A</td>\n      <td>Transports DHA across blood-brain barrier/fasting induced</td>\n      <td>5.22</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>SLC22A23</td>\n      <td>BBB plasticity</td>\n      <td>4.69</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>VEGFA</td>\n      <td>BBB plasticity/calcium signaling</td>\n      <td>4.04</td>\n      <td>0.024</td>\n      <td>Calcium signaling</td>\n    </tr>\n    <tr>\n      <td>CASQ1</td>\n      <td>Calcium signaling/myopathy</td>\n      <td>7.22</td>\n      <td>0.000</td>\n      <td>Calcium signaling</td>\n    </tr>\n    <tr>\n      <td>HRH2</td>\n      <td>Calcium signaling/sleep related/histaminergic neurons</td>\n      <td>11.74</td>\n      <td>0.000</td>\n      <td>Calcium signaling</td>\n    </tr>\n    <tr>\n      <td>TACR2</td>\n      <td>Calcium signaling</td>\n      <td>14.21</td>\n      <td>0.000</td>\n      <td>Calcium signaling</td>\n    </tr>\n    <tr>\n      <td>PPIF</td>\n      <td>Calcium signaling</td>\n      <td>4.92</td>\n      <td>0.000</td>\n      <td>Calcium signaling</td>\n    </tr>\n    <tr>\n      <td>SPHK2</td>\n      <td>Calcium signaling/food intake</td>\n      <td>3.18</td>\n      <td>0.025</td>\n      <td>Calcium signaling</td>\n    </tr>\n    <tr>\n      <td>GRIN1</td>\n      <td>Calcium signaling/food intake</td>\n      <td>3.60</td>\n      <td>0.016</td>\n      <td>Calcium signaling</td>\n    </tr>\n    <tr>\n      <td>FOXA2</td>\n      <td>Food intake</td>\n      <td>19.37</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>SDC1</td>\n      <td>Food intake</td>\n      <td>10.74</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>AGT</td>\n      <td>Leptin response/food intake/FOXO1</td>\n      <td>4.23</td>\n      <td>0.029</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>IRX5</td>\n      <td>Leptin response/food intake/neurogenesis</td>\n      <td>3.83</td>\n      <td>0.006</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>GRB2</td>\n      <td>Leptin response</td>\n      <td>3.36</td>\n      <td>0.003</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>FOXO4</td>\n      <td>Leptin response</td>\n      <td>5.99</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>GPR3</td>\n      <td>Thermogenesis/obesity</td>\n      <td>3.77</td>\n      <td>0.002</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>KCNJ10</td>\n      <td>Metabolic homeostasis/tanycyte formation</td>\n      <td>4.87</td>\n      <td>0.002</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>ELOVL2</td>\n      <td>Lipid metabolism/elongation of VLFA</td>\n      <td>6.29</td>\n      <td>0.001</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>MRPS6</td>\n      <td>Mitochondria protein synthesis/Parkinson\u2019s</td>\n      <td>4.00</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>ATG101</td>\n      <td>Autophagy</td>\n      <td>3.95</td>\n      <td>0.000</td>\n      <td>Autophagy</td>\n    </tr>\n    <tr>\n      <td>ATG4D</td>\n      <td>Autophagy</td>\n      <td>3.84</td>\n      <td>0.000</td>\n      <td>Autophagy</td>\n    </tr>\n    <tr>\n      <td>MLST8</td>\n      <td>Autophagy/mTor pathway</td>\n      <td>8.03</td>\n      <td>0.000</td>\n      <td>Autophagy</td>\n    </tr>\n    <tr>\n      <td>LAMTOR3</td>\n      <td>Modulates mTor pathway</td>\n      <td>5.37</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>SIRT7</td>\n      <td>Neuroprotective during neurogenesis</td>\n      <td>4.64</td>\n      <td>0.004</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>HTRA2</td>\n      <td>Aging/cell and organ size/neuroprotection</td>\n      <td>3.86</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>CCDC22</td>\n      <td>NF-KB regulation/Ritscher-Schinzel</td>\n      <td>6.95</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>RGS14</td>\n      <td>Suppressed synaptic plasticity (LTP)</td>\n      <td>6.21</td>\n      <td>0.002</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>DLGAP3</td>\n      <td>OCD</td>\n      <td>5.72</td>\n      <td>0.001</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>EMC8</td>\n      <td>Protein homeostasis of GABAnergic neurons/ER membrane complex</td>\n      <td>3.42</td>\n      <td>0.021</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>RGS4</td>\n      <td>GABAnergic/photoperiod/environmental processing</td>\n      <td>6.81</td>\n      <td>0.002</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>RBFOX3</td>\n      <td>Promotes sleep/associated with epilepsy</td>\n      <td>7.10</td>\n      <td>0.000</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>B4GALNT1</td>\n      <td>Ganglioside synthesis/Promotes BACE1</td>\n      <td>4.30</td>\n      <td>0.008</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\nMany of these putative adaptations mediate responses to environmental cues centered around energy demands. Four of the genes experiencing branch-shift changes in expression were also differentially expressed between autumn and spring individuals, suggesting not only an adaptive shift in the shrew lineage associated with the evolution of Dehnel\u2019s phenomenon, but also a direct molecular mechanism for brain changes. The four genes that overlap between both analyses include Figure 4: CCDC22, which plays an important role in endosomal recycling of membrane proteins (Singla et al., 2019); LMX1A, a transcription factor essential for dopaminergic neuron development Hoekstra et al., 2013; KCNS1, which encodes a subunit of potassium channels associated with neuronal excitability and pain sensitivity Tsantoulas et al., 2018; and PAQR4, which appears to regulate growth and apoptosis through sphingolipid synthesis in human cancers (Pedersen et al., 2020). However, identifying four overlapping genes is not significantly greater than expected by chance (Fisher\u2019s exact test, p=0.55).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/100788/elife-100788-fig4-v1.jpg)\n\n**Figure 4.:** Error bars represent the mean \u00b1 standard deviation per season.\n\n## Discussion\n\nBy characterizing both seasonal and between-species differential gene expression of the hypothalamus, we generated and probed a unique dataset, discovering expression shifts associated with extreme brain and body size plasticity in S. araneus. While the focus on seasonal hypothalamus gene expression provided insights into both the regulation of seasonal homeostasis and processes underlying brain size change, evolutionary shifts in gene expression revealed putative adaptations associated with mammalian brain degeneration and regeneration in a natural system. Our analyses identified a suite of genes related to energy homeostasis and environmental sensing that were either seasonally plastic or upregulated in the shrew compared to other mammals, reinforcing the profound role of metabolism in the evolution and regulation of Dehnel\u2019s phenomenon. We also found seasonal changes in genes associated with cancer pathways and apoptosis, indicating that the regulation of cell proliferation and death is critical during brain size change. Notably, some of these results resemble gene expression changes found in human neurological and metabolic disease, which may prove important for future research on therapeutic treatments.\n\n### Seasonal plasticity associated with maintaining metabolic homeostasis\n\nDehnel\u2019s phenomenon has been proposed to permit winter activity by reducing shrew energy requirements by limiting energy devoted to the maintenance of larger tissues (Pucek, 1970; Keicher et al., 2017; Taylor, 1998). This suggests that the maintenance of homeostasis, especially processes related to energy balance, is critical during Dehnel\u2019s phenomenon. Seasonal hypothalamus gene expression data corroborate this hypothesis, as we found three pathways enriched with seasonally varying genes in the hypothalamus with metabolic associations: relaxin signaling, PI3K signaling, and neuron ligand-receptor interactions. Relaxin, a neuropeptide, plays a pivotal role in many physiological functions in model organisms, including food and water intake (McGowan et al., 2009; Smith et al., 2011; Otsubo et al., 2010; McGowan et al., 2005); food restriction upregulates relaxin-3 (RLN3) in vivo (Lenglos et al., 2013), while administering RLN3 protein into the rat hypothalamus vastly increases food intake (de \u00c1vila et al., 2018; Calvez et al., 2015; Lenglos et al., 2015; McGowan et al., 2007). Relaxin has also been found to activate the PI3K pathway (Ahmad et al., 2012; Dessauer and Nguyen, 2005), which mediates feeding behavior and glucose homeostasis (Shen et al., 2011; Shen et al., 2017; Niswender et al., 2001; K\u00f6nner et al., 2007; Hill et al., 2009), as well as angiogenesis via vascular endothelial growth factor (VEGF) production (Dessauer and Nguyen, 2005; Karar and Maity, 2011; Maity et al., 2000). PI3Ks activity influences feeding behavior and weight gain in response to key metabolic hormones, including leptin and insulin (Niswender et al., 2001; K\u00f6nner et al., 2007; Hill et al., 2009; Taniguchi et al., 2006). Lastly, the neuroactive ligand-receptor interaction pathway, a subclass of Kyoto Encyclopedia of Genes and Genomes (KEGG) Environmental Information Processing pathway, is associated with responses in model organisms to shifts in diet (Li et al., 2018), stress (Chen et al., 2021), and temperature (Kim et al., 2017; Chen et al., 2014), all of which the shrew experiences during seasonal changes. Although exploration of gene function in S. araneus has only begun, seasonal gene expression in the hypothalamus highlights that while remaining active in winter with high metabolic rates (Taylor, 1998), shrews actively regulate feeding behavior, food intake, and energy homeostasis.\n\n### Putative hypothalamus adaptations may enhance regulatory responses\n\nS. araneus have disproportionately high metabolic rates (Taylor, 1998), which they must maintain in winter. While seasonal transcriptomics indicate active regulation of processes related to energy homeostasis, we hypothesized that natural selection may select for effective strategies in comparison to other mammals. To test this, we used comparative analyses which indicated shrews may have evolved adaptive environmental sensing. We found upregulation of several proangiogenic genes associated with the formation and function of the BBB, including VEGFA and WNT7A. In normal neural development, neural progenitor cells and surrounding astro- and pericytes express these two genes defining an expression gradient that guides blood vessels to form the BBB (Raab et al., 2004; Carmeliet et al., 1996; Daneman et al., 2009).\n\nWhile this suggests VEGFA and WNT7A upregulation in the shrew may increase vascularization of the brain, continued expression of VEGFA beyond development increases BBB permeability, leading to a breakdown of its protective effects (Argaw et al., 2012; Kim et al., 2008). BBB permeability is a common symptom of many disease-like states including neuroinflammation (Argaw et al., 2009) and neurodegeneration (Argaw et al., 2009; Lan et al., 2022; Obermeier et al., 2013). The hypothalamus BBB consists of tanycytes and highly fenestrated capillaries with less tight junctions (Bennett et al., 2009), replacing the less permeable BBB of other brain regions with a specialized barrier that improves nutrient and energy sensing through dynamic passage of molecules from peripheral circulation (Langlet et al., 2013; Haddad-T\u00f3volli et al., 2017; Lam et al., 2005). Experiments on mice indicate reduced blood glucose levels from fasting promote capillary fenestration in the hypothalamic BBB via upregulation of VEGFA, eliciting feeding responses through increased hypothalamic exposure to glucose levels (Langlet et al., 2013). In shrews, upregulation of VEGFA and WNT7A may constitutively increase capillary fenestration, a potential adaptation of the BBB to improve hypothalamus metabolic sensing and signaling in response to high energy demands. Notably, adaptive expression of VEGFA has also been identified in the seasonal vascular plasticity of other mammal species, including reproductive sheep (Chevillard et al., 2022; Castle-Miller et al., 2017), bison (Tabecka-Lonczynska et al., 2018), and squirrels (Yao et al., 2021), thus shrew upregulation of VEGFA to meet unusually high metabolic demands may parallel mechanisms used seasonally in reproduction.\n\nWe also found evidence for adaptive gene expression relating to maintenance of energy balance, specifically in feeding behavior and leptin responses. Key genes associated with the hypothalamic leptin response, such as NPY, AgRP, or POMC, were not universally orthologous and so could not be analyzed, but there was evolutionary upregulation of many genes involved in downstream leptin responses (FOXO4, GRB2, IRX5, AGT) (Figure 3, Table 1). Unlike their upstream effectors, these genes may have subtle effects on continuous feeding behavior. For example, in the hypothalamus FOXO1 negatively regulates POMC and promotes AgRP expression (Ma et al., 2015), which can contribute to leptin resistance resulting in a long-term appetite suppression (Amitani et al., 2013; Sasaki et al., 2010; Nakae et al., 2006). However, much less is known about the hypothalamic functions of the FOXO1 paralog, FOXO4. In mouse adipocytes, leptin-dependent expression of FOXO4 can rapidly clear blood glucose levels (Wang et al., 2009), which can lead to energy storage and decreased satiety. We hypothesize that, in shrews, upregulation of FOXO4 could either increase blood glucose clearance or leptin resistance, reducing long-term satiation and promoting continuous feeding. Functionally, evolutionary upregulation of these genes in the shrew hypothalamus may result in evolved leptin insensitivity, instead of the development of leptin resistance. Reduced leptin sensitivity in shrews could reduce overall satiation, promoting foraging even when the short-term energy budget is balanced thereby improving anticipatory storage before winter.\n\nLastly, calcium signaling is a ubiquitous form of neural communication (Ahrens et al., 2013; Mann et al., 2017) that occurs through the regulation of intra- and extracellular calcium concentrations, transmitting signals that can release neurotransmitters (Kater et al., 1988; Mattson, 1988) and promote gene expression (Deisseroth et al., 1996; Bito et al., 1997; Berridge, 1998; Zhang et al., 2009). Thus, it has been implicated in numerous functions including dendrite growth (Redmond and Ghosh, 2005; Lohmann and Wong, 2005), synaptogenesis (Kazama et al., 2007; Verderio et al., 1994; Michaelsen and Lohmann, 2010), and initiation and maintenance of long-term potentiation (Malenka et al., 1988; Poser and Storm, 2001). In shrews, adaptive calcium signaling through the upregulation of several calcium-responsive genes (VEGFA, CASQ1, HRH2, TACR2, PPIF, SPHK2, GRIN1) may improve environmental information relay in the hypothalamus, both internally and throughout the CNS.\n\n### Evolution of brain size plasticity: roles of cellular proliferation, death, and links to neurological disease\n\nProgressive cell loss in neurons is a hallmark of neurodegeneration (Wilson et al., 2023), but despite seasonal decreases in brain mass and volume, shrews show no reduction in cell number (Smith, 2016). Uncorrelated changes in size and neuron count in shrews might suggest they evolved neuroprotective mechanisms to reduce cell loss associated with decreased brain size. We found an enrichment of genes upregulated in autumn shrews involved in cancer pathways and apoptosis regulation. The processes underlying cancer and neurodegeneration oppose one another, with increased resistance to cell death driving cancer and premature cell death driving neurodegeneration. Shrews appear to traverse this tightrope by regulating these pathways to avoid both the cell loss typical of neurodegeneration and unchecked proliferation of cancer. This may represent a unique neuroprotective mechanism.\n\nBCL2L1-mediated apoptosis seems to play a critical role in helping shrews maintain this balance during seasonal size change. As a known anti-apoptotic gene, BCL2L1 promotes cell survival by reducing apoptosis through an NFKB-dependent pathway, as demonstrated in rodents (Bui et al., 2001; Motoyama et al., 1995; Boise and Thompson, 1997). The BCL2 gene family is also recognized for its contrasting roles in disease, with upregulation in CNS disorders and downregulation in cancers. We found an enrichment of the apoptosis pathway with upregulated genes in autumn, including BCL2L1, which may explain why shrews do not exhibit the neuronal loss typically associated with human neurodegeneration. This suggests that the mechanism parallels aspects of neurodegenerative disease without the associated pathology, which we propose could be another neuroprotective mechanism to reduce cell death during brain shrinkage in shrews.\n\nThe regulation of apoptosis may represent a convergently evolved strategy across species managing environmental and metabolic stress. For example, natural experiments in hibernators found seasonal reduction of apoptosis, paired with upregulation of BCL2L1 (Fleck and Carey, 2005; Logan et al., 2016), including in the brain (Rouble et al., 2013). Specific to Dehnel\u2019s phenomenon, BCL2L1 upregulation in autumn indicates tight regulation of cell survival during brain size changes and periods of metabolic and environmental stress: a balance between brain shrinkage and maintenance of cell numbers.\n\nEvolutionary change in shrew gene expression likely benefits this cellular regulation. We found an evolutionary upregulation of genes associated with autophagy, which is the degradation of cellular parts to provide energy and materials to maintain cellular homeostasis under stressful conditions, in the shrew hypothalamus. This included MLST8, an integral component of the mTOR protein complex 1 (mTORC1) that regulates sugar and lipid metabolism (Guertin et al., 2006), but also has recently been found to modulate autophagy in response to nutrient deprivation (Saxton and Sabatini, 2017). Two evolutionarily upregulated genes PPIF and SPHK2 can also promote apoptosis associated with mitochondrial calcium influx. PPIF is an important component of the mitochondrial permeability transition, which responds to cellular calcium overload and oxidative stress by promoting cell death (Baines et al., 2005; Nakagawa et al., 2005; Li et al., 2009; Halestrap, 2004). Similar to PPIF, overexpression of SPHK2 in stressed cells induces cell cycle arrest and promotes apoptosis through a series of signaling cascades that increase cytosolic calcium and promote the release of pro-apoptotic cytochrome c from the mitochondria (Maceyka et al., 2005; Liu et al., 2003). While both SPHK2 and PPIF are overexpressed and likely contribute to neuronal death in both human patients with Huntington\u2019s disease or Alzheimer\u2019s disease and rodent models of these diseases, knockout or inhibition of these genes protects against neurodegeneration (Moruno-Manchon et al., 2017; Takasugi et al., 2011; Du et al., 2008; Du et al., 2011). In the shrew hypothalamus, canalized upregulation of these genes likely influences cell survival and death, but precisely how requires further investigation.\n\nLastly, CCDC22, KCNS1, LMX1A, and PAQR4 are both seasonally plastic and evolutionarily upregulated in the shrew hypothalamus (Figure 4). While the number of overlapping genes is not significantly greater than expected by chance, the combination of seasonal and evolutionary upregulation suggests these genes may play integral roles in Dehnel\u2019s phenomenon. Notably, some of these genes are directly related to the development and progression of neurological disorders in humans. For example, CCDC22 regulation in shrews may provide protection against harm incurred during seasonal size changes. The coiled-coil domain containing 22 protein (CCDC22) plays a key role in endosomal recycling of proteins and is a novel candidate gene for several neurological disorders (Voineagu et al., 2012; Kolanczyk et al., 2015; Neri et al., 2022; Gjerulfsen et al., 2021). CCDC22 is a subunit of the CCC (CCDC22, CCDC93, COMMD) complex that aids in trafficking and recycling of endosomal membrane proteins (Singla et al., 2019; Phillips-Krawczak et al., 2015; Bartuzi et al., 2016). Improper recycling and resulting protein aggregation readily occurs in neurons, as they do not proliferate (Rubinsztein, 2006; McDonald, 2021), and has also been implicated in neurodegenerative diseases, including cytotoxicity in amyotrophic lateral sclerosis (Muzio et al., 2020), amyloid-B aggregation in Alzheimer\u2019s disease (Small et al., 2005; Rogaeva et al., 2007; Lane et al., 2010), and MUL1 degradation in Parkinson\u2019s disease (Tang et al., 2015). Missense mutations and subsequent downregulation of CCDC22 are potential mechanisms underlying X-linked intellectual disability (Voineagu et al., 2012; Kolanczyk et al., 2015) and Ritscher-Schinzel syndrome (Kolanczyk et al., 2015; Neri et al., 2022; Gjerulfsen et al., 2021) in humans. Both disorders are characterized by macrocephaly, malformations of the brain, craniofacial abnormalities, and intellectual disabilities. In pubescent spring shrews, we found CCDC22 has an ~7-fold upregulation compared to other mammals and a significant upregulation during spring compared to autumn shrinkage. Neuroprotective functions may be especially important in spring, as brain mass returns increase the need for endosomal recycling of proteins and may explain seasonal plasticity in CCDC22 expression in tandem with adaptive upregulation.\n\n### Limitations\n\nDespite the proposed adaptive roles of the many genes discussed in our study, several limitations must be acknowledged. During shrew seasonal size plasticity, shrew environments may differ from those of the other species included in this experiment. These environmental differences could influence gene expression, leading to over- or underestimation of selection in the shrew lineage. Although we controlled for several sources of variation by using only pubescent and wild or non-domesticated individuals when feasible, other sources of variation remain unaccounted for because of practical constraints. The functions we propose for many genes remain speculative and require further validation. For example, we tested the hypothesis that autumn upregulation of BCL2L1 reduces apoptosis by overexpressing this gene in a related mammalian neural cell line. However, this experiment did not demonstrate a rescue effect against heat-induced apoptosis, contrary to our expectations. While this unexpected result could stem from several causes, such as the anti-apoptotic function of BCL2L1 being specific to the unique neural environment of shrews or arise through species-specific gene interactions, it may also reflect limitations in our study, highlighting the need for further investigation to validate and refine our conclusions.\n\n### Conclusion\n\nWe discovered evidence for adaptive evolution of gene expression involved in the regulation of metabolism, cell survival, and size plasticity associated with Dehnel\u2019s phenomenon. Not only does the hypothalamus shrink to reduce energetic load during winter, but it must also control metabolic homeostasis during these changes. Our results reveal both conserved and novel gene expression mechanisms that likely underlie the central functions of the hypothalamus during seasonal size plasticity. While previous work had hinted at the metabolic nature of Dehnel\u2019s phenomenon, by pairing seasonal differential gene expression with comparisons to other species, we identified adaptations likely involved in the evolution of this unique brain size plasticity. Metabolism, body size, and longevity are intrinsically linked life history factors. In the shrew, unusually high metabolic rates force winter activity, leading to intense metabolic sensing and regulation, changes in cell survival pathways, and\u2014through both the evolution of Dehnel\u2019s phenomenon and these sensing and regulatory adaptations\u2014shortened lifespans. Together, these gene expression adaptations likely underlie drastic seasonal size change and mitigate its detrimental effects.\n\n## Materials and methods\n\n### Shrew sample collection\n\nWe used tissues from shrews collected for experiments analyzing gene expression and metabolic shifts in brain regions through Dehnel\u2019s phenomenon (Thomas et al., 2023). Briefly, S. araneus were collected from a single German population (47.9684 N, 8.9761 E) across five different seasons of Dehnel\u2019s phenomenon from June 2020 to June 2021 (n=25, nper_season = 4\u20135, protocols authorized by Regierungspr\u00e4sidium Freiburg, Baden-W\u00fcrttemberg 35-9185.81/G-19/131). Shrews were trapped with insulated wooden traps that contained mealworms, which were checked every 2 hr. This protocol was used to minimize trap-related stress from heat/cold shock or lack of food and thus reduce stress-related variation on gene expression. Shrews were then euthanized via vascular perfusion of PAXgene Tissue Fixative. Brain regions were dissected into individual regions in cold fixative and then incubated in PAXgene Tissue Stabilizer for 2\u201324 hr before long-term storage. Samples were preserved in stabilizer at \u2013180\u00b0C in liquid nitrogen until RNA extraction.\n\n### RNA extraction, library preparation, and sequencing\n\nWe extracted the S. araneus hypothalamus RNA using a modified QIAGEN Micro RNeasy protocol used for small mammalian sensory tissues (Yohe et al., 2020). These extractions reduce degradation due to heat and improve RIN from standard QIAGEN Micro RNeasy protocols by disrupting tissue on dry ice using glass, instead of plastic, mortar, and pestles. RNA was sent to Azenta Life Sciences for quality control (nanodrop and RNA ScreenTape), library preparation, and sequencing. Hypothalamus libraries were prepared with poly-A selection and sequenced for approximately 15\u201325 million reads per sample in 150 bp PE reads.\n\nRNA sequences from other species were collected from the NIH National Center for Biotechnology Information\u2019s (NCBI) Sequence Read Archive datasets (Supplementary file 1). First, we searched the Sequencing Read Archives (SRA) for the keyword hypothalamus, filtered by both RNA and mammal species. As models described below rely on using the variance both between and within species, species required three or more biological samples to be included. This removed any species that had only one hypothalamus sample sequenced. Species were excluded from the study if a genome assembly was not readily available (e.g. Phodopus sungorus), as this information was needed for an unbiased alignment of reads. Our final criterion was to only include species for which post-pubescent individuals were available to reduce noise from age effects and the onset of puberty. If the onset of puberty was not specifically stated for the dataset, AnAge (Tacutu et al., 2018) was used to determine if samples were pubescent. Oryctolagus cuniculus and Pan paniscus were prepubescent and thus removed. For the remaining species, if multiple hypothalamus RNA-seq datasets were available, we used less stringent rules to determine which data to select. First, to reduce domestication or captivity effects, we chose wild or non-domesticated individuals over laboratory-raised animals. Second, to reduce the variance from different extraction protocols and sequencing methods, we used samples from the same experiments or larger datasets, available for multiple species or brain regions. Using samples from datasets with multiple regions or species also suggests intimate knowledge of neural anatomy, increasing confidence in dissections. Third, we used a maximum of eight samples per species and attempted to maintain a 1:1 sex ratio when possible. We did not filter by sequencing method (e.g. used 50 bp SE as well as 150 PE reads) or sequencing depth, as filtering poor reads and normalizing for library depth and content should account for both these factors.\n\n### RNA quantification, normalization, and orthology\n\nAdapter sequences were trimmed from the raw reads using the default parameters of fastp (Chen et al., 2018), which is able to autodetect adapters regardless of different library preparations across species. This program also corrected and pruned low-quality bases and reads using a sliding window approach. Processed reads were aligned and quantified with Kallisto 0.46.2 (Bray et al., 2016), which probabilistically estimates gene counts through pseudo-alignment to each species-specific genome assembly. Samples were removed from the dataset if mapping rate was below 30%, indicating either poor sequencing or low assembly quality. Additionally, novel shrew hypothalamus sequences were compared against previously published shrew region data to verify tissue type. Gene counts for all species were then normalized for total library size into TPM. Orthologous genes between species were inferred with OrthoFinder (Emms and Kelly, 2019) using default parameters, retaining only single-copy orthologs identified across all species (n=6496 single-copy orthologs). Visualizations of the frequency distribution of the oTPMs (Figure 3\u2014figure supplement 1) were used to identify outlier species. For example, Papio anubis was removed from this experiment because of its extremely low mapping percentage (mean 16.75%; range 9.5\u201323.7%), which had a large effect on the oTPM distribution.\n\n### Branch-shift changes in gene expression\n\nWe modeled gene expression as a trait using phylogenetic comparative methods, as these account for evolutionary divergence among species (Dunn et al., 2018). We ran EVE models to test for significant changes of gene expression in the shrew lineage, using post-pubescent spring individuals (Rohlfs et al., 2015). EVE models both parameterize and estimate the ratio (\u03b2) of population (within species) to evolutionary (between species) variance, such that high \u03b2 ratios indicate gene expression plasticity, and low \u03b2 ratios indicate differential expression between species, necessary for inferring selection. We ran two EVE models to test for divergence in gene expression in the shrew lineage. First, we tested for branch-specific gene expression level shifts by contrasting the likelihood of two Ornstein-Uhlenbeck models for the data, one with a single expression optimum (null; stabilizing selection) and another with a second optimum on the shrew branch (selection). A likelihood ratio test between the null and selective hypotheses for each gene ($\u03c7_{1}^{2}$) was conducted using these likelihoods. A Bonferroni correction was used to account for multiple hypothesis tests to identify candidate genes under selection (padj<0.05). For the second model, we ran a dropout test to further validate the specificity of the gene expression change in the shrew lineage. After removing the shrew gene expression data, we identified genes with high expression divergence across the phylogeny (significantly low \u03b2 ratios), which would indicate relaxed or diversifying selection. This gene list was compared to that from first model to prune genes not specifically associated with divergence in the shrew. Both models described above ran on the Bayesian molecular-clock mammalian phylogeny of \u00c1lvarez-Carretero et al., 2022, pruned to match our species sample. Finally, we used the DAVID functional annotation tool (Huang et al., 2009) to determine enriched KEGG GO pathways from the candidate gene set.\n\n### Temporal clustering\n\nTo analyze the temporal variation of shrew gene expression in the hypothalamus, we temporally clustered our data using the package TCseq (Mengjun, 2019). We began by further normalizing our data across Dehnel\u2019s phenomenon seasons using the median of ratios from DESeq2 (Love et al., 2014), which normalized for library size and content. Genes with consistent expression across time with little variation between seasons would not be associated with observed phenotypic changes. These genes were filtered from this dataset by only selecting genes with an absolute fold change of 0.5 between any two seasons. We also removed genes with low gene expression that would appear to have high fold changes despite lacking enough transcript expression to influence phenotype, retaining only reads with two samples >10 normalized reads. After filtering, counts for each season were converted to mean z-scores and then clustered into groups of similar gene expression profiles using fuzzy c means clustering. The number of resulting gene clusters was calculated a priori, by bootstrapping (n=20) a gap statistic that minimizes within-cluster distances. Genes with highest membership in clusters associated with variation across all seasons (seasonal effect; Clusters 1, 4, 5, 6, 7, 9, 10), as compared to those that just show extensive differences (>1.25 standard deviations) between the summer seasons (juvenile and adult) without a second local maximum (abs(autumn-winter)<0.5 and abs(winter-summer adult)<0.5) (developmental effect; Clusters 2, 3, 8, 11, 12), were analyzed for KEGG GO enrichment using DAVID functional annotation (Huang et al., 2009). Additionally, each cluster was analyzed individually and included in Supplementary file 2.\n\n### Differential gene expression\n\nWe tested for differential gene expression between autumn and spring individuals, as these seasons differ in hypothalamic size phenotype (shrinkage vs regrowth) (L\u00e1zaro et al., 2018) and were previously identified divergence in liver gene expression related to metabolism (Thomas et al., 2023). To test for significant differential gene expression, we fit a negative binomial generalized linear model to the normalized (median of ratios) gene counts using DESeq2 (Love et al., 2014). We then tested for significant differences in gene expression between autumn and spring using a Wald test, followed by multiple testing correction on resulting p-values with the Benjamini and Hochberg procedure (Benjamini and Hochberg, 1995). Sex was used as an additional covariate (~sex + condition), but our design is imbalanced as not every season samples both sexes. Significantly DEGs were binned by fold change (>1.58 LFC), to quantify DEGs of high effect. Significant DEGs were also used to identify KEGG GO enrichment (Huang et al., 2009), and compared against the candidate list of genes with branch-shift changes in expression to identify genes both plastic across seasons and consistent with gene expression adaptation in the shrew. To test if observed overlap was greater than expected by chance, we performed a Fisher\u2019s exact test.\n\n### Cell culture\n\nMPF brain cells were obtained and authenticated (CO1 assay) by ATCC (CRL-1656, LOT 70047219, ampule passage number 111). No mycoplasma contamination was detected, tested with Hoechst DNA stain, agar culture, and PCR-based assays. These cells were cultured in 10 mL of Basal Medium Eagle supplemented with 14% sheep serum. Cells were then cultured in 60.8 cm2 treated tissue culture dishes at 37\u00b0C in 5% CO2 atmosphere and 95% humidity. With induced cell death, cells were seeded into treated flat bottom six-well plates with 2 mL/well of complete culture media.\n\n### Cell death induction\n\nThree experiments were conducted to induce cell death in MPF cells (cold induced, peroxide induced, and heat induced), with only heat causing significant decrease in cell viability. Cold induced: Two 60.8 cm2 tissue culture dishes of MPF cells were seeded into two six-well plates for 24 hr before reaching 80% confluency. In one experiment, \u2018short cold\u2019 apoptosis was performed by immersing the six-well plate into a 0\u00b0C ice-water bath for 2 hr, followed by 3 hr of rewarming to 37\u00b0C in an incubator. Cells were then treated with crystal violet staining. In a similar experiment, \u2018long cold\u2019 apoptosis was performed by immersing the six-well plate into a 0\u00b0C water bath for 4 hr, followed by 24 hr of rewarming to 37\u00b0C before crystal violet staining. Heat-induced cell death: Two 60.8 cm2 tissue culture dishes of MPF cells were seeded into two six-well plates for 24 hr before reaching 80% confluency. Heat cell death was attempted by immersing the six-well plate into a 45\u00b0C water bath for 2 hr, followed by re-cooling to 37\u00b0C prior to crystal violet staining.\n\n### In vitro transcription and transfection of cells\n\nThe AmpliScribe T7 High Yield Transcription kit (Lucigen) was used for RNA in vitro transcription with a 2 hr incubation at 37\u00b0C using gblock sequences available in supplements. BCL2L1 sequences were designed with a T7 promoter inserted at the beginning to facilitate transcription (Integrated DNA Technologies). We selected BCL2L1 because it is the gene furthest downstream in the apoptotic pathway, thus making it the most directly involved gene in programmed cell death, whereas upstream genes could influence additional genes or alternative processes. RNA transcripts were purified using the QIAGEN miRNA kit and concentration determined using a NanoDrop 2000 (Thermo Fisher Scientific). Two 60.8 cm2 tissue culture dishes of MPF cells were seeded into two six-well plates for 24 hr before reaching 80% confluency. 300 ng of BCL2L1 RNA or a scrambled form of BCL2L1 RNA were transfected with Lipofectamine 3000 into each well for 24 hr according to the manufacturer\u2019s instructions (Thermo Fisher Scientific). In short, two tubes were used to make a master mix for each RNA sample. Tube 1 contained 125 \u00b5L/well of Opti-MEM (Thermo Fisher Scientific) with 7.5 \u00b5L/well of Lipofectamine 3000. Tube 2 contained 125 \u00b5L/well of Opti-MEM, 5 \u00b5L/well of P3000, and 300 ng/well of RNA. Tube 2 was added to tube 1 and incubated 15 min at room temperature. The solution was then gently mixed and dispersed evenly to cells.\n\n### Crystal violet cell viability assays\n\nCrystal violet solution was made using 500 mg crystal violet powder in 100 mL of 50% methanol. Cells were cultured to 80% confluency in two six-well plates. Complete media was aspirated in wells and washed three times in 1 mL of 1\u00d7 DPBS before 500 \u00b5L of crystal violet solution was added to each well. Plates were wrapped in foil and placed on a shaker for 30 min. After time elapsed, crystal violet was removed, and cells were washed with tap water until free color was no longer visible. Plates were left at room temperature for 10\u201315 min until dry. 500 \u00b5L of 100% methanol was added to each well and plates were put on a shaker for 1 hr at room temperature. 100 \u00b5L of solution was taken from each well in triplicate and added to a 96-well plate. 100 \u00b5L of 100% methanol was added in triplicate to a row for normalization of background absorbance. Wells were read at 570 nm using a spectrophotometer (BioTek). For viability, data are reported as a percentage of control or optical density for absorbance. For statistical analysis, differences were judged to be statistically significant when p<0.05 by a Welch\u2019s two-sample t-test.\n",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vincent J Lynch, University at Buffalo, State University of New York United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.100788.3.sa0](https://doi.org/10.7554/eLife.100788.3.sa0)\n\nThis study presents valuable findings related to seasonal brain size plasticity in the Eurasian common shrew (Sorex araneus), which is an excellent model system for these studies. The evidence supporting the authors' claims is convincing. The work will be of interest to biologists working on neuroscience, plasticity, and evolution.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100788.3.sa1](https://doi.org/10.7554/eLife.100788.3.sa1)\n\nSummary:\n\nIn this paper, Thomas et al. set out to study seasonal brain gene expression changes in the Eurasian common shrew. This mammalian species is unusual in that it does not hibernate or migrate but instead stays active all winter while shrinking and then regrowing its brain and other organs. The authors previously examined gene expression changes in two brain regions and the liver. Here, they added data from the hypothalamus, a brain region involved in the regulation of metabolism and homeostasis. The specific goals were to identify genes and gene groups that change expression with the seasons and to identify genes with unusual expression compared to other mammalian species. The reason for this second goal is that genes that change with the season could be due to plastic gene regulation, where the organism simply reacts to environmental change using processes available to all mammals. Such changes are not necessarily indicative of adaptation in the shrew. However, if the same genes are also expression outliers compared to other species that do not show this overwintering strategy, it is more likely that they reflect adaptive changes that contribute to the shrew's unique traits.\n\nThe authors succeeded in implementing their experimental design and identified significant genes in each of their specific goals. There was an overlap between these gene lists. The authors provide extensive discussion of the genes they found.\n\nThe scope of this paper is quite narrow, as it adds gene expression data for only one additional tissue compared to the authors' previous work in a 2023 preprint. The two papers even use the same animals, which had been collected for that earlier work. As a consequence, the current paper is limited in the results it can present. This is somewhat compensated by an expansive interpretation of the results in the discussion section, but I felt that much of this was too speculative. More importantly, there are several limitations to the design, making it hard to draw stronger conclusions from the data. The main contribution of this work lies in the generated data and the formulation of hypotheses to be tested by future work.\n\nStrengths:\n\nThe unique biological model system under study is fascinating. The data were collected in a technically sound manner, and the analyses were done well. The paper is overall very clear, well-written, and easy to follow. It does a thorough job of exploring patterns and enrichments in the various gene sets that are identified.\n\nI specifically applaud the authors for doing a functional follow-up experiment on one of the differentially expressed genes (BCL2L1), even if the results did not support the hypothesis. It is important to report experiments like this and it is terrific to see it done here.\n\nComments on revised version:\n\nThis updated version of the paper is improved compared to its initial version. As such, the strengths remain the same as before, with a fascinating model system and an interesting research question. The earlier weaknesses related to overinterpretation of the data have been largely fixed by shortening the paper and adding appropriate caveats throughout. The paper now also includes a significance test for its overlap between gene lists. While this turned out to be negative (i.e., there is not more overlap between lists than expected by chance), reporting this result transparently has strengthened the paper.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100788.3.sa2](https://doi.org/10.7554/eLife.100788.3.sa2)\n\nSummary:\n\nShrews go through winter by shrinking their brain and most organs, then regrow them in the spring. The gene expression changes underlying this unusual brain size plasticity were unknown. Here, the authors looked for potential adaptations underlying this trait by looking at differential expression in the hypothalamus. They found enrichments for DE in genes related to the blood brain barrier and calcium signaling, as well as used comparative data to look at gene expression differences that are unique in shrews. This study leverages a fascinating organismal trait to understand plasticity and what might be driving it at the level of gene expression. This manuscript also lays the groundwork for further developing this interesting system.\n\nStrengths:\n\nOne strength is that the authors used OU models to look for adaptation in gene expression. The authors also added cell culture work to bolster their findings.\n\nComments on revised version:\n\nI think that the authors have made a strong revision. No other comments.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100788.3.sa3](https://doi.org/10.7554/eLife.100788.3.sa3)\n\nSummary:\n\nIn their study, the authors combine seasonal and comparative transcriptomics to identify candidate genes with plastic, canalized, or lineage-specific (i.e., divergent) expression patterns associated with an unusual overwintering phenomenon (Dehnel's phenomenon - seasonal size plasticity) in the Eurasian shrew. Their focus is on the shrinkage and regrowth of the hypothalamus, a brain region that undergoes significant seasonal size changes in shrews and plays a key role in regulating metabolic homeostasis. Through comparative transcriptomic analysis, they identify genes showing derived (lineage-specific), plastic (seasonally regulated), and canalized (both lineage-specific and plastic) expression patterns. The authors hypothesize that genes involved in pathways such as the blood-brain barrier, metabolic state sensing, and ion-dependent signaling will be enriched among those with notable transcriptomic patterns. They complement their transcriptomic findings with a cell culture-based functional assessment of a candidate gene believed to reduce apoptosis.\n\nStrengths:\n\nThe study's rationale and its integration of seasonal and comparative transcriptomics are well-articulated and represent an advancement in the field. The transcriptome, known for its dynamic and plastic nature, is also influenced by evolutionary history. The authors effectively demonstrate how multiple signals-evolutionary, constitutive, and plastic-can be extracted, quantified, and interpreted. The chosen phenotype and study system are particularly compelling, as it not only exemplifies an extreme case of Dehnel's phenotype, but the metabolic requirements of the shrew suggest that genes regulating metabolic homeostasis are under strong selection.\n\nWeaknesses:\n\nThe results of the expression patterns are quite compelling and a number of interesting downstream hypotheses are outlined; however, the interpretation of the role of each gene and pathway identified is speculative which dampens the overall impact of the work. That said, I commend the authors on functionally testing one of the differentially expressed genes. I also commend the inclusion of that negative result.\n",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "03fa1d36-f76d-4e20-b565-776054700fc7",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C1",
+      "claim": "Eurasian common shrews (Sorex araneus) endure winter by shrinking their brain, skull, and most organs, only to then regrow to breeding size the following spring.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrasting almost all other mammalian wintering strategies, Eurasian common shrews, Sorex araneus, endure winter by shrinking their brain, skull, and most organs, only to then regrow to breeding size the following spring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research on Dehnel's phenomenon in shrews.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "2db0109c-bf2e-4d84-a14b-5f6cb3761172",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C2",
+      "claim": "The common shrew loses up to 18% body mass, ~20% skull volume, and 26% brain mass during winter shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the most acute case of Dehnel's phenomenon, or seasonal size plasticity, the common shrew first grows to an initial summer maximum as a juvenile, then shrinks in autumn losing up to 18% body mass, ~20% skull volume, and 26% brain mass, reaching its winter size minimum (L\u00e1zaro et al., 2019; Pucek, 1970; Pucek, 1965b; Pucek, 1965a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies documenting these measurements.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "bf557338-38cd-4150-9be7-498549d77972",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C3",
+      "claim": "Dehnel's phenomenon is hypothesized to be an adaptation to decrease energy demand without slowing metabolism through plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dehnel's phenomenon is hypothesized to be an adaptation to decrease energy demand without slowing metabolism through plasticity, improving shrew fitness during the low temperatures and limited food supply of winter (L\u00e1zaro et al., 2019; Pucek, 1970; Pucek, 1965a; Keicher et al., 2017; Churchfield et al., 2012; Taylor et al., 2013; Hyv\u00e4rinen, 1984; Schaeffer et al., 2020; Thomas et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies proposing this adaptive hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "536629d3-d4a8-4931-ad1a-e6dff97d9a30",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C4",
+      "claim": "Dehnel's phenomenon anticipates winter conditions and is both geographically variable and modulated by environmental temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating this adaptive plasticity hypothesis, Dehnel's phenomenon anticipates winter conditions and is both geographically variable (Pucek, 1970) and modulated by environmental temperature (L\u00e1zaro et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating geographic variation and temperature modulation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "ee746a3f-dbf6-4523-bfa1-b77398a31058",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C5",
+      "claim": "Sorex araneus has one of the highest basal metabolic rates per unit of body mass identified in any mammal.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to most species, S. araneus has astronomically large energy demands, with one the highest basal metabolic rates per unit of body mass identified in any mammal (Genoud et al., 2018; Taylor, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies measuring metabolic rates.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "f473b4dc-0f31-4db3-89b5-10475677ce54",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C6",
+      "claim": "Sorex araneus forage and feed constantly to meet their energy requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "To meet these energy requirements, S. araneus forage and feed constantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the high metabolic rate and established knowledge of shrew behavior.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "9d117b5c-29b6-4c91-90da-dbfa7e2606eb",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C7",
+      "claim": "Sorex araneus have brief lifespans of approximately 1 year that require surviving a single winter.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with brief lifespans (~1 year) that nonetheless require surviving a single winter (Searle et al., 2019; Healy et al., 2014), these extreme metabolic demands constrain survival options for S. araneus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies documenting shrew lifespans.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "ce17388b-7c63-42fa-9102-0029cfd3f7dd",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C8",
+      "claim": "The hypothalamus undergoes a 31.6% volume reduction in autumn through winter in shrews.",
+      "claim_type": "EXPLICIT",
+      "source": "In shrews, the hypothalamus undergoes a 31.6% volume reduction in autumn through winter, followed by a 47.8% increase in spring (L\u00e1zaro et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study measuring hypothalamus volume changes.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "e2862579-9041-46b6-8f66-274832a369c7",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C9",
+      "claim": "The hypothalamus undergoes a 47.8% volume increase in spring in shrews.",
+      "claim_type": "EXPLICIT",
+      "source": "In shrews, the hypothalamus undergoes a 31.6% volume reduction in autumn through winter, followed by a 47.8% increase in spring (L\u00e1zaro et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study measuring hypothalamus volume changes.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "b9d383b3-393b-4874-b50f-72d4d1f86f1b",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C10",
+      "claim": "The hypothalamus plays a pivotal role in the maintenance of energy budgets across all mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all mammals, the hypothalamus plays a pivotal role in the maintenance of energy budgets, with functions influencing: (1) energy intake and feeding behavior, (2) energy expenditure and metabolic rate, and (3) energy deficits and storage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about hypothalamic function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "e4146518-5b6f-47e6-899b-578b497d8e98",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C11",
+      "claim": "786 of 19,296 genes passed filters for temporal variation in hypothalamus gene expression (>0.5-fold change between any two seasons and 2 samples>10 normalized reads).",
+      "claim_type": "EXPLICIT",
+      "source": "Most genes did not exhibit much variation through time, indicating constitutive gene expression in the hypothalamus, as only 786 of 19,296 genes passed our filters (>0.5-fold change between any two seasons and 2 samples>10 normalized reads).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "15217c29-4a73-4716-8f8e-0c0e27d23fbd",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C12",
+      "claim": "12 distinct clusters of gene expression patterns were identified by bootstrapping a gap statistic within cluster distances.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 12 distinct clusters of gene expression patterns by bootstrapping (n=20) a gap statistic within cluster distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the clustering analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "ce58d026-2ed8-41f6-942b-e1f7de439565",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C13",
+      "claim": "Five clusters consisting of 392 genes resembled a large divergence between summer juveniles and the remaining individuals without a second local maximum during size change.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 12 clusters, five clusters consisting of 392 genes resembled a large divergence between summer juveniles and the remaining individuals without a second local maximum during size change (Figure 1\u2014figure supplement 1; Clusters 2, 3, 8, 11, 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and reference to a figure showing the clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "80833900-a4c4-4d4e-8c4f-3e5775167333",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C14",
+      "claim": "392 genes likely represent a large developmental shift between recently postnatal shrews and the remainder of individuals compared to shifts associated with seasonality or Dehnel's phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes likely represent a large developmental shift between recently postnatal shrews and the remainder of individuals compared to shifts associated with seasonality or Dehnel's phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the clustering pattern observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "017c92a8-0cd7-4c92-a394-c7c7ac7436f8",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C15",
+      "claim": "14 pathways were enriched prior to Bonferroni correction (p<0.05; modified Fisher's exact test) in the functional characterization of 394 seasonally varying genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no enrichment pathway was significant after a Bonferroni correction, 14 pathways were enriched prior to correction (p<0.05; modified Fisher's exact test), with the five pathways with the lowest p-values including fluid shear stress and atherosclerosis, relaxin signaling, neuroactive ligand-receptor interaction, HIF-1 signaling, and phosphoinositide-3 kinase (PI3K)-Akt signaling (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "04c9378c-f94e-47a7-851b-51e50b47a734",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C16",
+      "claim": "210 differentially expressed genes were found between autumn and spring shrews, with 129 upregulated and 81 downregulated in spring.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the RNA expression of autumn and spring shrews, we found 210 DEGs, with 129 upregulated and 81 downregulated in spring (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential gene expression analysis results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "3f70529d-d6b9-4366-abd5-93686b56e544",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C17",
+      "claim": "15 pathways were enriched (p<0.05; modified Fisher's exact test) with significant genes prior to multiple comparison correction in the functional characterization of 210 DEGs in the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "We ran a GO pathway enrichment to functionally characterize the 210 DEGs in the hypothalamus and found 15 pathways were enriched (p<0.05; modified Fisher's exact test) with significant genes prior to multiple comparison correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "e86a61d4-d7f3-4edb-a1e7-26082ce8c666",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C18",
+      "claim": "All enriched pathways in the hypothalamus DEG analysis were downregulated in spring.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways were all downregulated in spring and included pathways in cancer (4.5-fold enrichment, p<0.001), transcriptional misregulation in cancer (8.3-fold enrichment, p<0.001), fluid shear stress and atherosclerosis (9.5-fold enrichment, p<0.01), small cell lung cancer (11.5-fold enrichment, p<0.01), IL-17 signaling (11.3-fold enrichment, p<0.01), cAMP signaling (5.9-fold enrichment, p<0.01), and apoptosis (7.8-fold enrichment, p<0.05) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "c9985940-2035-44c5-aad7-37377db6ba33",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C19",
+      "claim": "Pathways in cancer consisted of nine significantly downregulated genes, four of which overlapped with apoptotic pathways including BCL2L1, NFKBIA, FOS, and GADD45B.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathways in cancer consisted of nine significantly downregulated genes (from DESeq2 Wald test), four of which overlapped with apoptotic pathways including BCL2L1 (\u20130.6 log-fold change [LFC] padj<0.01), NFKBIA (\u20131.3 LFC, padj<0.01), FOS (\u20131.5 LFC, padj<0.05), and GADD45B (\u20131.4 LFC, padj<0.05) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential gene expression analysis results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "9a245d70-147b-44ed-a51f-6361272e8504",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C20",
+      "claim": "Heat significantly reduced cell viability compared to controls in MPF neural cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant difference in cell viability was observed between the heat scrambled compared to the control scrambled groups (df = 3.56, t3.56=8.78, p<0.01), however, there was no significant difference between cells transfected with BCL2L1 compared to those transfected with sBCL2L1 when exposed to heat (df = 3.37, t3.37=-0.99, p=0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from cell viability assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "3cbeb393-d1c9-47d8-9c74-48c1369e6772",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C21",
+      "claim": "BCL2L1 overexpression did not rescue heat-induced reduction in cell viability in MPF neural cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant difference in cell viability was observed between the heat scrambled compared to the control scrambled groups (df = 3.56, t3.56=8.78, p<0.01), however, there was no significant difference between cells transfected with BCL2L1 compared to those transfected with sBCL2L1 when exposed to heat (df = 3.37, t3.37=-0.99, p=0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from cell viability assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "a9cb1fa0-6391-4041-8025-a222bd8aa977",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C22",
+      "claim": "222 genes significantly rejected a single expression optimum for all species in favor of a second expression optimum for the shrew lineage (padj<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Expression variance and evolution (EVE) models found 222 genes significantly rejected (padj<0.05) a single expression optimum for all species in favor of a second expression optimum for the shrew lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic comparative analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "1753a3a2-c01f-4777-ac89-53b305447ae0",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C23",
+      "claim": "All second optima in the shrew lineage were higher than the first optimum in the EVE model analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all second optima (in the shrew lineage) were higher than the first optimum, consistent with results from the original methods manuscript (Rohlfs et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic comparative analysis results and citation to the methods paper.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "8be182ec-966d-4c71-9130-3c2462a5b031",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C24",
+      "claim": "Genes experiencing an expression branch-shift in shrews had a mean 9.66 orthologous transcripts per million (oTPM)-fold change compared to other species.",
+      "claim_type": "EXPLICIT",
+      "source": "While nonsignificant genes had a mean 0.93-fold change, genes experiencing an expression branch-shift in shrews had a mean 9.66 orthologous transcripts per million (oTPM)-fold change compared to other species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative gene expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "77584180-1119-47b0-b2a3-19f046fa2b46",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C25",
+      "claim": "81 genes had significantly lower \u03b2 (within population variance to between-species variance) in the dropout test, suggesting selection elsewhere in the phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 6496 genes tested, 81 genes had significantly (padj<0.05) lower \u03b2 (within population variance to between-species variance), suggesting selection elsewhere in the phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phylogenetic comparative analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "4de8432c-dfb7-4c2b-97e2-a84d42fef842",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C26",
+      "claim": "None of the 81 genes with selection elsewhere in the phylogeny overlapped with those identified to be differentially expressed in the shrew.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these genes overlapped with those identified to be differentially expressed in the shrew, further validating the specificity of expression shifts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of results from different analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "c52de2b5-1995-4bf6-8aff-1264a73ecf86",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C27",
+      "claim": "Two significantly enriched pathways were identified in genes with shrew-specific upregulation: calcium signaling (2.8-fold enrichment, p<0.05) and autophagy (9.1-fold enrichment, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway enrichment analysis identified two significantly enriched pathways: calcium signaling (2.8-fold enrichment, p<0.05) and autophagy (9.1-fold enrichment, p<0.05) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis results shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "c9e696d1-6555-4534-8af5-3293a7c5ee27",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C28",
+      "claim": "Four genes overlap between those experiencing branch-shift changes in expression and those differentially expressed between autumn and spring individuals: CCDC22, LMX1A, KCNS1, and PAQR4.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the genes experiencing branch-shift changes in expression were also differentially expressed between autumn and spring individuals, suggesting not only an adaptive shift in the shrew lineage associated with the evolution of Dehnel's phenomenon, but also a direct molecular mechanism for brain changes. The four genes that overlap between both analyses include Figure 4: CCDC22, which plays an important role in endosomal recycling of membrane proteins (Singla et al., 2019); LMX1A, a transcription factor essential for dopaminergic neuron development Hoekstra et al., 2013; KCNS1, which encodes a subunit of potassium channels associated with neuronal excitability and pain sensitivity Tsantoulas et al., 2018; and PAQR4, which appears to regulate growth and apoptosis through sphingolipid synthesis in human cancers (Pedersen et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of results from different analyses and citations to studies describing gene functions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "5751745c-deed-449e-9264-1e336d8657a9",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C29",
+      "claim": "Identifying four overlapping genes is not significantly greater than expected by chance (Fisher's exact test, p=0.55).",
+      "claim_type": "EXPLICIT",
+      "source": "However, identifying four overlapping genes is not significantly greater than expected by chance (Fisher's exact test, p=0.55).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical testing of the overlap.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "c2820a0f-ad66-4f3e-ae4f-fa3ce37cb149",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C30",
+      "claim": "Relaxin-3 is upregulated by food restriction in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "food restriction upregulates relaxin-3 (RLN3) in vivo (Lenglos et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study demonstrating this effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "da7597f7-494f-48f0-9ee1-b24a85267520",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C31",
+      "claim": "Administering RLN3 protein into the rat hypothalamus vastly increases food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "while administering RLN3 protein into the rat hypothalamus vastly increases food intake (de \u00c1vila et al., 2018; Calvez et al., 2015; Lenglos et al., 2015; McGowan et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "01e9b219-127b-42b4-8561-4697116a33ed",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C32",
+      "claim": "Relaxin activates the PI3K pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Relaxin has also been found to activate the PI3K pathway (Ahmad et al., 2012; Dessauer and Nguyen, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "16512ae6-f1ab-413e-96c4-b5b66a6c4c10",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C33",
+      "claim": "PI3K pathway mediates feeding behavior and glucose homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "which mediates feeding behavior and glucose homeostasis (Shen et al., 2011; Shen et al., 2017; Niswender et al., 2001; K\u00f6nner et al., 2007; Hill et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating these functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "647df01b-0dc5-47e4-9516-6dfd63a40e5d",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C34",
+      "claim": "PI3K pathway mediates angiogenesis via vascular endothelial growth factor (VEGF) production.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as angiogenesis via vascular endothelial growth factor (VEGF) production (Dessauer and Nguyen, 2005; Karar and Maity, 2011; Maity et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "41d5261d-7ebf-4aea-a788-a86c98c20962",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C35",
+      "claim": "Neural progenitor cells and surrounding astro- and pericytes express VEGFA and WNT7A defining an expression gradient that guides blood vessels to form the BBB in normal neural development.",
+      "claim_type": "EXPLICIT",
+      "source": "In normal neural development, neural progenitor cells and surrounding astro- and pericytes express these two genes defining an expression gradient that guides blood vessels to form the BBB (Raab et al., 2004; Carmeliet et al., 1996; Daneman et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this developmental process.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "0c8d6267-023a-420a-b3e9-a9da667d17b6",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C36",
+      "claim": "Continued expression of VEGFA beyond development increases BBB permeability, leading to a breakdown of its protective effects.",
+      "claim_type": "EXPLICIT",
+      "source": "While this suggests VEGFA and WNT7A upregulation in the shrew may increase vascularization of the brain, continued expression of VEGFA beyond development increases BBB permeability, leading to a breakdown of its protective effects (Argaw et al., 2012; Kim et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "825f18e7-23a6-44d5-acc4-e38f4abfc984",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C37",
+      "claim": "BBB permeability is a common symptom of many disease-like states including neuroinflammation and neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "BBB permeability is a common symptom of many disease-like states including neuroinflammation (Argaw et al., 2009) and neurodegeneration (Argaw et al., 2009; Lan et al., 2022; Obermeier et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "b87e904f-e14e-4c7f-b350-1f06d0742b51",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C38",
+      "claim": "Reduced blood glucose levels from fasting promote capillary fenestration in the hypothalamic BBB via upregulation of VEGFA in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments on mice indicate reduced blood glucose levels from fasting promote capillary fenestration in the hypothalamic BBB via upregulation of VEGFA, eliciting feeding responses through increased hypothalamic exposure to glucose levels (Langlet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study demonstrating this mechanism in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "d1671013-f372-4ad7-ad55-e88abbac17e6",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C39",
+      "claim": "Upregulation of VEGFA and WNT7A in shrews may constitutively increase capillary fenestration, a potential adaptation of the BBB to improve hypothalamus metabolic sensing and signaling in response to high energy demands.",
+      "claim_type": "EXPLICIT",
+      "source": "In shrews, upregulation of VEGFA and WNT7A may constitutively increase capillary fenestration, a potential adaptation of the BBB to improve hypothalamus metabolic sensing and signaling in response to high energy demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed gene expression patterns and known functions of these genes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "bbec0a5f-6a61-4cd3-b739-2ddc25b65231",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C40",
+      "claim": "Adaptive expression of VEGFA has been identified in the seasonal vascular plasticity of reproductive sheep, bison, and squirrels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, adaptive expression of VEGFA has also been identified in the seasonal vascular plasticity of other mammal species, including reproductive sheep (Chevillard et al., 2022; Castle-Miller et al., 2017), bison (Tabecka-Lonczynska et al., 2018), and squirrels (Yao et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating VEGFA expression in other species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "3ab62959-1388-4d12-b22c-28085e5eec27",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C41",
+      "claim": "In the hypothalamus, FOXO1 negatively regulates POMC and promotes AgRP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the hypothalamus FOXO1 negatively regulates POMC and promotes AgRP expression (Ma et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study demonstrating this regulatory relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "e05a836e-2dfd-4156-9b88-796537e0614a",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C42",
+      "claim": "FOXO1 can contribute to leptin resistance resulting in long-term appetite suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "which can contribute to leptin resistance resulting in a long-term appetite suppression (Amitani et al., 2013; Sasaki et al., 2010; Nakae et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "a91751f6-c491-4345-b26c-baebfba80d0b",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C43",
+      "claim": "In mouse adipocytes, leptin-dependent expression of FOXO4 can rapidly clear blood glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse adipocytes, leptin-dependent expression of FOXO4 can rapidly clear blood glucose levels (Wang et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study demonstrating this effect in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "b7a3209b-715d-4509-aa26-b9b715f89fa6",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C44",
+      "claim": "Upregulation of FOXO4 in shrews could either increase blood glucose clearance or leptin resistance, reducing long-term satiation and promoting continuous feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that, in shrews, upregulation of FOXO4 could either increase blood glucose clearance or leptin resistance, reducing long-term satiation and promoting continuous feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about the potential effects of FOXO4 upregulation in shrews.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "6d90455e-bbb8-4a17-b0ad-aa1e85ed9938",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C45",
+      "claim": "Shrews show no reduction in cell number despite seasonal decreases in brain mass and volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Progressive cell loss in neurons is a hallmark of neurodegeneration (Wilson et al., 2023), but despite seasonal decreases in brain mass and volume, shrews show no reduction in cell number (Smith, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study demonstrating this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "b5b0dd7d-fd87-488e-877b-e996f6396d64",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C46",
+      "claim": "BCL2L1 promotes cell survival by reducing apoptosis through an NFKB-dependent pathway in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "As a known anti-apoptotic gene, BCL2L1 promotes cell survival by reducing apoptosis through an NFKB-dependent pathway, as demonstrated in rodents (Bui et al., 2001; Motoyama et al., 1995; Boise and Thompson, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this mechanism in rodents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "539836d8-49f7-4eb0-b087-3ab3f053ef05",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C47",
+      "claim": "The BCL2 gene family is recognized for its contrasting roles in disease, with upregulation in CNS disorders and downregulation in cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The BCL2 gene family is also recognized for its contrasting roles in disease, with upregulation in CNS disorders and downregulation in cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about BCL2 family genes in disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "6f1a47f1-3f86-41e8-8d4a-6ea83af2214a",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C48",
+      "claim": "Natural experiments in hibernators found seasonal reduction of apoptosis, paired with upregulation of BCL2L1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, natural experiments in hibernators found seasonal reduction of apoptosis, paired with upregulation of BCL2L1 (Fleck and Carey, 2005; Logan et al., 2016), including in the brain (Rouble et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this pattern in hibernators.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "19c9f88c-746e-4d14-aea4-134a87252fe8",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C49",
+      "claim": "MLST8 is an integral component of the mTOR protein complex 1 (mTORC1) that regulates sugar and lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "This included MLST8, an integral component of the mTOR protein complex 1 (mTORC1) that regulates sugar and lipid metabolism (Guertin et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study describing MLST8 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "47ad84c2-6f36-4555-9e51-583345d52340",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C50",
+      "claim": "MLST8 has been found to modulate autophagy in response to nutrient deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "but also has recently been found to modulate autophagy in response to nutrient deprivation (Saxton and Sabatini, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study demonstrating this function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "b3b65dbb-1bfe-4311-9de4-5e9846b42ff4",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C51",
+      "claim": "PPIF is an important component of the mitochondrial permeability transition, which responds to cellular calcium overload and oxidative stress by promoting cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "PPIF is an important component of the mitochondrial permeability transition, which responds to cellular calcium overload and oxidative stress by promoting cell death (Baines et al., 2005; Nakagawa et al., 2005; Li et al., 2009; Halestrap, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies describing PPIF function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "2f295cd4-550c-434e-88f4-35377b89ecdc",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C52",
+      "claim": "Overexpression of SPHK2 in stressed cells induces cell cycle arrest and promotes apoptosis through a series of signaling cascades that increase cytosolic calcium and promote the release of pro-apoptotic cytochrome c from the mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to PPIF, overexpression of SPHK2 in stressed cells induces cell cycle arrest and promotes apoptosis through a series of signaling cascades that increase cytosolic calcium and promote the release of pro-apoptotic cytochrome c from the mitochondria (Maceyka et al., 2005; Liu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "3da03057-b578-43a3-b2b1-b99a71d5a265",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C53",
+      "claim": "SPHK2 and PPIF are overexpressed and likely contribute to neuronal death in both human patients with Huntington's disease or Alzheimer's disease and rodent models of these diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "While both SPHK2 and PPIF are overexpressed and likely contribute to neuronal death in both human patients with Huntington's disease or Alzheimer's disease and rodent models of these diseases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the literature on these genes in neurodegenerative diseases.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "9178c8c7-e7d3-4f1e-b834-13a598bdefed",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C54",
+      "claim": "Knockout or inhibition of SPHK2 and PPIF protects against neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "knockout or inhibition of these genes protects against neurodegeneration (Moruno-Manchon et al., 2017; Takasugi et al., 2011; Du et al., 2008; Du et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating this protective effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "62255d09-2819-4bbb-96f1-f8cac7065e75",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C55",
+      "claim": "CCDC22 plays a key role in endosomal recycling of proteins and is a novel candidate gene for several neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The coiled-coil domain containing 22 protein (CCDC22) plays a key role in endosomal recycling of proteins and is a novel candidate gene for several neurological disorders (Voineagu et al., 2012; Kolanczyk et al., 2015; Neri et al., 2022; Gjerulfsen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies describing CCDC22 function and disease associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "84ea20ca-4fc4-47f9-8439-35049bb43488",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C56",
+      "claim": "CCDC22 is a subunit of the CCC (CCDC22, CCDC93, COMMD) complex that aids in trafficking and recycling of endosomal membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "CCDC22 is a subunit of the CCC (CCDC22, CCDC93, COMMD) complex that aids in trafficking and recycling of endosomal membrane proteins (Singla et al., 2019; Phillips-Krawczak et al., 2015; Bartuzi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies describing the CCC complex function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "121519d2-2521-4064-86ba-a27c4b7c80e1",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C57",
+      "claim": "Improper recycling and resulting protein aggregation readily occurs in neurons, as they do not proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "Improper recycling and resulting protein aggregation readily occurs in neurons, as they do not proliferate (Rubinsztein, 2006; McDonald, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies describing this phenomenon in neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "000f0175-8be6-4ca5-be73-0c0b14204a9a",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C58",
+      "claim": "Protein aggregation has been implicated in neurodegenerative diseases, including cytotoxicity in amyotrophic lateral sclerosis, amyloid-B aggregation in Alzheimer's disease, and MUL1 degradation in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "and has also been implicated in neurodegenerative diseases, including cytotoxicity in amyotrophic lateral sclerosis (Muzio et al., 2020), amyloid-B aggregation in Alzheimer's disease (Small et al., 2005; Rogaeva et al., 2007; Lane et al., 2010), and MUL1 degradation in Parkinson's disease (Tang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating these disease associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "933989f3-3ce3-4953-9194-2e6b25a6c2ca",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C59",
+      "claim": "Missense mutations and subsequent downregulation of CCDC22 are potential mechanisms underlying X-linked intellectual disability and Ritscher-Schinzel syndrome in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Missense mutations and subsequent downregulation of CCDC22 are potential mechanisms underlying X-linked intellectual disability (Voineagu et al., 2012; Kolanczyk et al., 2015) and Ritscher-Schinzel syndrome (Kolanczyk et al., 2015; Neri et al., 2022; Gjerulfsen et al., 2021) in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating these disease associations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "69cf3c71-4e03-4bed-9370-7e8f835e85e5",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C60",
+      "claim": "X-linked intellectual disability and Ritscher-Schinzel syndrome are characterized by macrocephaly, malformations of the brain, craniofacial abnormalities, and intellectual disabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Both disorders are characterized by macrocephaly, malformations of the brain, craniofacial abnormalities, and intellectual disabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about these disorders.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "fd1ae416-3394-46fe-942d-ccbf7189dfe8",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C61",
+      "claim": "CCDC22 has an ~7-fold upregulation in pubescent spring shrews compared to other mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In pubescent spring shrews, we found CCDC22 has an ~7-fold upregulation compared to other mammals and a significant upregulation during spring compared to autumn shrinkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative gene expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "f20f2a27-ef1b-48ae-a839-c4ff30f263fc",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C62",
+      "claim": "CCDC22 has a significant upregulation during spring compared to autumn shrinkage in shrews.",
+      "claim_type": "EXPLICIT",
+      "source": "In pubescent spring shrews, we found CCDC22 has an ~7-fold upregulation compared to other mammals and a significant upregulation during spring compared to autumn shrinkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by differential gene expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "e4cb6a2d-5261-41a2-a735-8e95ca5a9c68",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C63",
+      "claim": "Sorex araneus were collected from a single German population (47.9684 N, 8.9761 E) across five different seasons of Dehnel's phenomenon from June 2020 to June 2021 (n=25, nper_season = 4\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, S. araneus were collected from a single German population (47.9684 N, 8.9761 E) across five different seasons of Dehnel's phenomenon from June 2020 to June 2021 (n=25, nper_season = 4\u20135, protocols authorized by Regierungspr\u00e4sidium Freiburg, Baden-W\u00fcrttemberg 35-9185.81/G-19/131).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "318e5fd8-a7c3-4dc1-807f-80dd3484fcb7",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C64",
+      "claim": "Hypothalamus libraries were prepared with poly-A selection and sequenced for approximately 15\u201325 million reads per sample in 150 bp PE reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothalamus libraries were prepared with poly-A selection and sequenced for approximately 15\u201325 million reads per sample in 150 bp PE reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sequencing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "d2dc35a9-07e1-4dba-852b-0d00d2e45d43",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "claim_id": "C65",
+      "claim": "6496 single-copy orthologs were retained across all species for comparative analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Orthologous genes between species were inferred with OrthoFinder (Emms and Kelly, 2019) using default parameters, retaining only single-copy orthologs identified across all species (n=6496 single-copy orthologs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the orthology inference results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "528b2bda-6b4d-457a-a6b1-541795998b62",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sorex araneus exhibits Dehnel's phenomenon, a seasonal size plasticity involving shrinkage of brain, skull, and organs in winter followed by regrowth in spring. This phenomenon is hypothesized to be an adaptive strategy to manage extreme metabolic demands during winter while maintaining activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 establish the biological context through well-cited prior work. The measurements of size changes (C2), metabolic rates (C5), and lifespan (C7) are supported by multiple citations to published studies. The adaptive hypothesis (C3, C4) is appropriately framed as a hypothesis with supporting evidence from geographic variation and temperature modulation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "1682816c-2c14-4117-8cc1-aedcab302928",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The hypothalamus undergoes dramatic seasonal volume changes (31.6% reduction in autumn-winter, 47.8% increase in spring) and plays a central role in mammalian energy homeostasis, making it a key target for studying Dehnel's phenomenon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 provide specific measurements from cited work (L\u00e1zaro et al., 2018). C10 establishes the functional importance of the hypothalamus based on established knowledge. Together, these claims provide strong rationale for focusing on hypothalamic gene expression in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "298a4745-fb61-4e30-a8b1-09440155bf63",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Temporal clustering analysis identified 786 genes with seasonal variation, of which 394 genes showed patterns consistent with seasonality or Dehnel's phenomenon (excluding developmental effects). These genes were enriched for 14 pathways including relaxin signaling, PI3K-Akt signaling, and HIF-1 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The clustering methodology (C11-C12) and filtering criteria are clearly described. However, C15 notes that no pathways remained significant after Bonferroni correction, indicating the enrichment results may be false positives. The distinction between developmental and seasonal effects (C13-C14) is reasonable but relies on pattern interpretation. Without multiple testing correction, the pathway enrichments should be considered exploratory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "91643a02-b357-4fa0-85c2-bc9f45a6ad28",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Differential expression analysis between autumn and spring shrews identified 210 DEGs, with enrichment of pathways related to cancer, apoptosis, and cell signaling. All enriched pathways were downregulated in spring, including four apoptosis-related genes (BCL2L1, NFKBIA, FOS, GADD45B).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The DEG analysis (C16) is appropriately conducted with DESeq2 and multiple testing correction. However, C17 indicates pathway enrichments did not survive multiple comparison correction, similar to the temporal analysis. The biological interpretation of 'cancer pathways' (C18-C19) in the context of normal seasonal plasticity requires caution, as these pathways may reflect cell proliferation regulation rather than disease processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "71782e90-5950-429a-93e1-8976de848de0",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BCL2L1 overexpression did not rescue heat-induced cell death in ferret neural cell lines, contrary to expectations based on its anti-apoptotic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 report clear experimental results with appropriate statistics (p<0.01 for heat effect, p=0.39 for BCL2L1 rescue). The negative result is honestly reported. However, the use of ferret cells as a proxy for shrew biology, the choice of heat stress as the apoptotic stimulus, and small sample sizes (n=3) limit the interpretability of this result for understanding BCL2L1 function in shrews.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "cb99e08f-5320-4d21-996d-b36e626df401",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Phylogenetic comparative analysis identified 222 genes with shrew-specific upregulation (mean 9.66-fold change), with significant enrichment in calcium signaling and autophagy pathways. A dropout test confirmed specificity to the shrew lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The EVE model approach (C22-C24) is appropriate for detecting lineage-specific expression shifts with proper multiple testing correction (padj<0.05). The dropout test (C25-C26) provides validation that the signal is shrew-specific. The pathway enrichments (C27) are significant (p<0.05), though modest fold-enrichments (2.8-fold and 9.1-fold) suggest these should be interpreted cautiously. The methodology is sound and results are clearly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "da3a8899-a014-4c2f-a98a-5fe2a0c86952",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Four genes (CCDC22, LMX1A, KCNS1, PAQR4) showed both evolutionary upregulation in shrews and seasonal differential expression, though this overlap was not statistically significant (Fisher's exact test, p=0.55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C28 identifies the overlapping genes with appropriate functional annotations from literature. C29 honestly reports that the overlap is not statistically significant, appropriately tempering interpretation. The authors correctly acknowledge this limitation, making the result supported but not indicative of adaptive plasticity beyond what would be expected by chance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "bbc013c9-f76a-442f-ae5e-67b359072ba9",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Relaxin signaling and PI3K pathway genes show seasonal variation in shrew hypothalamus. These pathways are known to regulate feeding behavior, glucose homeostasis, and angiogenesis in other mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 appropriately cite prior work demonstrating these pathway functions in model organisms. The connection to seasonal gene expression patterns in shrews is inferential but reasonable. The authors appropriately distinguish between what is known from other species and what is hypothesized for shrews.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Shrews show evolutionary upregulation of VEGFA and WNT7A, genes involved in blood-brain barrier formation. This may represent an adaptation for enhanced metabolic sensing through increased BBB permeability in the hypothalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35-C38 appropriately cite developmental and physiological roles of these genes from prior work. However, C39 is speculative about the adaptive significance in shrews. The hypothesis that constitutively increased BBB permeability is adaptive contradicts the cited evidence (C36-C37) that increased permeability is associated with disease states. C40 provides comparative context from other species, but the functional interpretation requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "340e6a68-7c39-475f-a4eb-762275d9bc76",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Evolutionary upregulation of FOXO4 in shrews may promote continuous feeding through effects on leptin sensitivity and glucose clearance, though the specific mechanism remains hypothetical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C43 cite established functions of FOXO genes from prior work in other species. However, C44 is explicitly speculative ('We hypothesize') and proposes two alternative mechanisms without data to distinguish between them. The extrapolation from FOXO4 function in mouse adipocytes to hypothalamic function in shrews requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "5b2b703a-34d8-4b3c-a4c1-fb3ba2638924",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite brain shrinkage, shrews maintain cell numbers, potentially through regulation of BCL2L1 and apoptosis pathways. Similar mechanisms are observed in hibernating mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C45 cites prior work showing maintained cell numbers despite size changes. C46-C47 establish BCL2L1 function from literature. C48 provides comparative context from hibernators. The connection between these observations and the gene expression data is reasonable, though the functional mechanism in shrews remains to be experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Shrews show evolutionary upregulation of autophagy-related genes (MLST8) and pro-apoptotic genes (PPIF, SPHK2) that are associated with neurodegeneration in other mammals, suggesting unique regulation of cell survival pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 appropriately cite functions of these genes from prior work, including their roles in neurodegenerative diseases. The observation that shrews upregulate genes associated with neurodegeneration without apparent pathology is intriguing and well-supported by the comparative expression data. However, the functional consequences in shrews require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CCDC22, a gene involved in endosomal recycling and implicated in human neurological disorders, shows both evolutionary upregulation (~7-fold) in shrews and seasonal upregulation in spring, potentially providing neuroprotection during brain regrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 establish CCDC22 function and disease associations through appropriate citations. C61-C62 report the expression data showing both comparative and seasonal upregulation. The interpretation that this provides neuroprotection is reasonable given the gene's function, though experimental validation would strengthen this conclusion. The convergence of evolutionary and seasonal signals for this gene is noteworthy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "4b983104-9e81-4dfd-ab70-dcb1986568f0",
+      "content_id": "943b85df-bd90-4cef-9d9f-49a2e8830c29",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study analyzed hypothalamus RNA-seq data from 25 S. araneus collected across five seasons, with libraries sequenced at 15-25 million reads per sample. Comparative analysis included 6,496 single-copy orthologs across 16 mammalian species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 clearly describe the sample collection, sequencing methodology, and orthology inference. The sample sizes (n=4-5 per season) are modest but reasonable for this type of study. The methods are standard and appropriately described. The use of single-copy orthologs is appropriate for comparative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "b86f8283-c571-4054-bbd5-0e20862d7a05",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The manuscript describes Dehnel's phenomenon in Eurasian common shrews, including seasonal changes in body mass, brain mass, skull volume, and hypothalamus volume, as well as the biological context of high metabolic rates and brief lifespans. These claims establish the biological model system and rationale for studying hypothalamic gene expression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly praised the biological model system as 'fascinating' and 'excellent.' The editor stated the model system is 'excellent for these studies,' and reviewers consistently affirmed the study's rationale and biological context without questioning these foundational claims about Dehnel's phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "c2ca1141-2ad1-4e5e-b4bf-bc4b159480e5",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors identified 786 genes with temporal variation in hypothalamus expression, clustered them into 12 patterns, and found that 392 genes in five clusters represent developmental shifts rather than seasonal plasticity. Pathway enrichment analysis identified 14 pathways enriched prior to multiple testing correction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers stated that 'the data were collected in a technically sound manner, and the analyses were done well' and that the authors 'succeeded in implementing their experimental design and identified significant genes.' No concerns were raised about the clustering or pathway analysis methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "f6b954c3-81fc-4edd-a198-3ba987ef6569",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors found 210 differentially expressed genes between autumn and spring shrews, with enrichment in pathways related to cancer, apoptosis, and stress responses, all downregulated in spring. Four genes (BCL2L1, NFKBIA, FOS, GADD45B) overlapped between cancer and apoptotic pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirmed that 'the evidence supporting the authors' claims is convincing' and noted the analyses were 'done well.' The identification of differentially expressed genes and pathway enrichments was not questioned, though interpretation was noted as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "5e6e6d7b-d833-4bd2-aa7b-33f9621cfb6e",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors tested BCL2L1 function in cell culture, finding that heat stress reduced cell viability but BCL2L1 overexpression did not rescue this effect.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers specifically praised this experiment despite its negative result. One reviewer stated 'I specifically applaud the authors for doing a functional follow-up experiment on one of the differentially expressed genes (BCL2L1), even if the results did not support the hypothesis. It is important to report experiments like this.' Another reviewer 'commend[ed] the authors on functionally testing one of the differentially expressed genes' and 'commend[ed] the inclusion of that negative result.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "4a70c433-92b5-4233-bf07-bd97efb01170",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Using phylogenetic comparative methods (EVE models), the authors identified 222 genes with shrew-specific expression shifts showing ~9.66-fold higher expression compared to other mammals. Pathway enrichment identified calcium signaling and autophagy as significantly enriched. Control analyses found 81 genes with selection elsewhere in the phylogeny that did not overlap with shrew-specific genes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praised the comparative approach, with one stating 'One strength is that the authors used OU models to look for adaptation in gene expression.' Another noted 'the study's rationale and its integration of seasonal and comparative transcriptomics are well-articulated and represent an advancement in the field.' The methodology was not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "7f7224ae-e842-4df2-8d21-5e23322ea36b",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Four genes (CCDC22, LMX1A, KCNS1, PAQR4) overlapped between those with shrew-specific expression shifts and those differentially expressed between seasons. However, this overlap was not statistically significant (Fisher's exact test, p=0.55).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "One reviewer explicitly praised the inclusion of this statistical test: 'The paper now also includes a significance test for its overlap between gene lists. While this turned out to be negative (i.e., there is not more overlap between lists than expected by chance), reporting this result transparently has strengthened the paper.' The negative result was viewed positively as evidence of appropriate statistical rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "04489819-3d97-4276-af51-87c668cdd616",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors provide extensive interpretation of gene functions and pathways, including relaxin signaling, PI3K pathway, VEGFA/WNT7A in blood-brain barrier regulation, and FOXO genes in metabolic homeostasis, proposing these as potential mechanisms underlying Dehnel's phenomenon and shrew adaptations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers consistently noted that while the expression patterns are compelling, the interpretations are speculative. One reviewer stated 'the interpretation of the role of each gene and pathway identified is speculative which dampens the overall impact of the work.' Another noted 'much of this was too speculative' and that 'the main contribution of this work lies in the generated data and the formulation of hypotheses to be tested by future work.' The revised version addressed this by 'adding appropriate caveats throughout.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors discuss genes related to apoptosis and cell survival (BCL2L1, MLST8, PPIF, SPHK2) in the context of neurodegeneration, noting that shrews show no cell loss despite brain shrinkage and drawing parallels to hibernators and neurodegenerative diseases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers did not specifically critique these interpretations, they fall under the general concern about speculative interpretation. The discussion of these genes represents hypothesis generation rather than tested mechanisms, consistent with reviewer comments that 'a number of interesting downstream hypotheses are outlined' but remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "76316b51-d7ab-432a-977e-bb402fa9890b",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors identify CCDC22 as showing both shrew-specific upregulation (~7-fold compared to other mammals) and seasonal upregulation in spring, discussing its role in endosomal recycling and associations with neurological disorders in humans.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of CCDC22 as both seasonally and evolutionarily divergent was part of the overlap analysis that reviewers praised for its transparency. While the functional interpretation is speculative, the expression data itself was not questioned and represents one of the key candidate genes emerging from the integrated analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "5d5bdc57-175c-4c51-b5f2-6393d1bc61e9",
+      "content_id": "7ee58a51-5c0e-4c49-8667-525cfcc51d64",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors describe their methodology: collecting 25 shrews across five seasons from a German population, performing RNA-seq with 15-25 million reads per sample, and identifying 6496 single-copy orthologs for comparative analysis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers stated 'the data were collected in a technically sound manner' and praised the overall methodology. No concerns were raised about sample collection, sequencing depth, or orthology inference procedures.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03fa1d36-f76d-4e20-b565-776054700fc7",
+      "result_id": "528b2bda-6b4d-457a-a6b1-541795998b62"
+    },
+    {
+      "claim_id": "2db0109c-bf2e-4d84-a14b-5f6cb3761172",
+      "result_id": "528b2bda-6b4d-457a-a6b1-541795998b62"
+    },
+    {
+      "claim_id": "bf557338-38cd-4150-9be7-498549d77972",
+      "result_id": "528b2bda-6b4d-457a-a6b1-541795998b62"
+    },
+    {
+      "claim_id": "536629d3-d4a8-4931-ad1a-e6dff97d9a30",
+      "result_id": "528b2bda-6b4d-457a-a6b1-541795998b62"
+    },
+    {
+      "claim_id": "ee746a3f-dbf6-4523-bfa1-b77398a31058",
+      "result_id": "528b2bda-6b4d-457a-a6b1-541795998b62"
+    },
+    {
+      "claim_id": "f473b4dc-0f31-4db3-89b5-10475677ce54",
+      "result_id": "528b2bda-6b4d-457a-a6b1-541795998b62"
+    },
+    {
+      "claim_id": "9d117b5c-29b6-4c91-90da-dbfa7e2606eb",
+      "result_id": "528b2bda-6b4d-457a-a6b1-541795998b62"
+    },
+    {
+      "claim_id": "ce17388b-7c63-42fa-9102-0029cfd3f7dd",
+      "result_id": "1682816c-2c14-4117-8cc1-aedcab302928"
+    },
+    {
+      "claim_id": "e2862579-9041-46b6-8f66-274832a369c7",
+      "result_id": "1682816c-2c14-4117-8cc1-aedcab302928"
+    },
+    {
+      "claim_id": "b9d383b3-393b-4874-b50f-72d4d1f86f1b",
+      "result_id": "1682816c-2c14-4117-8cc1-aedcab302928"
+    },
+    {
+      "claim_id": "e4146518-5b6f-47e6-899b-578b497d8e98",
+      "result_id": "298a4745-fb61-4e30-a8b1-09440155bf63"
+    },
+    {
+      "claim_id": "15217c29-4a73-4716-8f8e-0c0e27d23fbd",
+      "result_id": "298a4745-fb61-4e30-a8b1-09440155bf63"
+    },
+    {
+      "claim_id": "ce58d026-2ed8-41f6-942b-e1f7de439565",
+      "result_id": "298a4745-fb61-4e30-a8b1-09440155bf63"
+    },
+    {
+      "claim_id": "80833900-a4c4-4d4e-8c4f-3e5775167333",
+      "result_id": "298a4745-fb61-4e30-a8b1-09440155bf63"
+    },
+    {
+      "claim_id": "017c92a8-0cd7-4c92-a394-c7c7ac7436f8",
+      "result_id": "298a4745-fb61-4e30-a8b1-09440155bf63"
+    },
+    {
+      "claim_id": "04c9378c-f94e-47a7-851b-51e50b47a734",
+      "result_id": "91643a02-b357-4fa0-85c2-bc9f45a6ad28"
+    },
+    {
+      "claim_id": "3f70529d-d6b9-4366-abd5-93686b56e544",
+      "result_id": "91643a02-b357-4fa0-85c2-bc9f45a6ad28"
+    },
+    {
+      "claim_id": "e86a61d4-d7f3-4edb-a1e7-26082ce8c666",
+      "result_id": "91643a02-b357-4fa0-85c2-bc9f45a6ad28"
+    },
+    {
+      "claim_id": "c9985940-2035-44c5-aad7-37377db6ba33",
+      "result_id": "91643a02-b357-4fa0-85c2-bc9f45a6ad28"
+    },
+    {
+      "claim_id": "9a245d70-147b-44ed-a51f-6361272e8504",
+      "result_id": "71782e90-5950-429a-93e1-8976de848de0"
+    },
+    {
+      "claim_id": "3cbeb393-d1c9-47d8-9c74-48c1369e6772",
+      "result_id": "71782e90-5950-429a-93e1-8976de848de0"
+    },
+    {
+      "claim_id": "a9cb1fa0-6391-4041-8025-a222bd8aa977",
+      "result_id": "cb99e08f-5320-4d21-996d-b36e626df401"
+    },
+    {
+      "claim_id": "1753a3a2-c01f-4777-ac89-53b305447ae0",
+      "result_id": "cb99e08f-5320-4d21-996d-b36e626df401"
+    },
+    {
+      "claim_id": "8be182ec-966d-4c71-9130-3c2462a5b031",
+      "result_id": "cb99e08f-5320-4d21-996d-b36e626df401"
+    },
+    {
+      "claim_id": "77584180-1119-47b0-b2a3-19f046fa2b46",
+      "result_id": "cb99e08f-5320-4d21-996d-b36e626df401"
+    },
+    {
+      "claim_id": "4de8432c-dfb7-4c2b-97e2-a84d42fef842",
+      "result_id": "cb99e08f-5320-4d21-996d-b36e626df401"
+    },
+    {
+      "claim_id": "c52de2b5-1995-4bf6-8aff-1264a73ecf86",
+      "result_id": "cb99e08f-5320-4d21-996d-b36e626df401"
+    },
+    {
+      "claim_id": "c9e696d1-6555-4534-8af5-3293a7c5ee27",
+      "result_id": "da3a8899-a014-4c2f-a98a-5fe2a0c86952"
+    },
+    {
+      "claim_id": "5751745c-deed-449e-9264-1e336d8657a9",
+      "result_id": "da3a8899-a014-4c2f-a98a-5fe2a0c86952"
+    },
+    {
+      "claim_id": "c2820a0f-ad66-4f3e-ae4f-fa3ce37cb149",
+      "result_id": "bbc013c9-f76a-442f-ae5e-67b359072ba9"
+    },
+    {
+      "claim_id": "da7597f7-494f-48f0-9ee1-b24a85267520",
+      "result_id": "bbc013c9-f76a-442f-ae5e-67b359072ba9"
+    },
+    {
+      "claim_id": "01e9b219-127b-42b4-8561-4697116a33ed",
+      "result_id": "bbc013c9-f76a-442f-ae5e-67b359072ba9"
+    },
+    {
+      "claim_id": "16512ae6-f1ab-413e-96c4-b5b66a6c4c10",
+      "result_id": "bbc013c9-f76a-442f-ae5e-67b359072ba9"
+    },
+    {
+      "claim_id": "647df01b-0dc5-47e4-9516-6dfd63a40e5d",
+      "result_id": "bbc013c9-f76a-442f-ae5e-67b359072ba9"
+    },
+    {
+      "claim_id": "41d5261d-7ebf-4aea-a788-a86c98c20962",
+      "result_id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48"
+    },
+    {
+      "claim_id": "0c8d6267-023a-420a-b3e9-a9da667d17b6",
+      "result_id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48"
+    },
+    {
+      "claim_id": "825f18e7-23a6-44d5-acc4-e38f4abfc984",
+      "result_id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48"
+    },
+    {
+      "claim_id": "b87e904f-e14e-4c7f-b350-1f06d0742b51",
+      "result_id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48"
+    },
+    {
+      "claim_id": "d1671013-f372-4ad7-ad55-e88abbac17e6",
+      "result_id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48"
+    },
+    {
+      "claim_id": "bbec0a5f-6a61-4cd3-b739-2ddc25b65231",
+      "result_id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48"
+    },
+    {
+      "claim_id": "3ab62959-1388-4d12-b22c-28085e5eec27",
+      "result_id": "340e6a68-7c39-475f-a4eb-762275d9bc76"
+    },
+    {
+      "claim_id": "e05a836e-2dfd-4156-9b88-796537e0614a",
+      "result_id": "340e6a68-7c39-475f-a4eb-762275d9bc76"
+    },
+    {
+      "claim_id": "a91751f6-c491-4345-b26c-baebfba80d0b",
+      "result_id": "340e6a68-7c39-475f-a4eb-762275d9bc76"
+    },
+    {
+      "claim_id": "b7a3209b-715d-4509-aa26-b9b715f89fa6",
+      "result_id": "340e6a68-7c39-475f-a4eb-762275d9bc76"
+    },
+    {
+      "claim_id": "6d90455e-bbb8-4a17-b0ad-aa1e85ed9938",
+      "result_id": "5b2b703a-34d8-4b3c-a4c1-fb3ba2638924"
+    },
+    {
+      "claim_id": "b5b0dd7d-fd87-488e-877b-e996f6396d64",
+      "result_id": "5b2b703a-34d8-4b3c-a4c1-fb3ba2638924"
+    },
+    {
+      "claim_id": "539836d8-49f7-4eb0-b087-3ab3f053ef05",
+      "result_id": "5b2b703a-34d8-4b3c-a4c1-fb3ba2638924"
+    },
+    {
+      "claim_id": "6f1a47f1-3f86-41e8-8d4a-6ea83af2214a",
+      "result_id": "5b2b703a-34d8-4b3c-a4c1-fb3ba2638924"
+    },
+    {
+      "claim_id": "19c9f88c-746e-4d14-aea4-134a87252fe8",
+      "result_id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d"
+    },
+    {
+      "claim_id": "47ad84c2-6f36-4555-9e51-583345d52340",
+      "result_id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d"
+    },
+    {
+      "claim_id": "b3b65dbb-1bfe-4311-9de4-5e9846b42ff4",
+      "result_id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d"
+    },
+    {
+      "claim_id": "2f295cd4-550c-434e-88f4-35377b89ecdc",
+      "result_id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d"
+    },
+    {
+      "claim_id": "3da03057-b578-43a3-b2b1-b99a71d5a265",
+      "result_id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d"
+    },
+    {
+      "claim_id": "9178c8c7-e7d3-4f1e-b834-13a598bdefed",
+      "result_id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d"
+    },
+    {
+      "claim_id": "62255d09-2819-4bbb-96f1-f8cac7065e75",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "84ea20ca-4fc4-47f9-8439-35049bb43488",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "121519d2-2521-4064-86ba-a27c4b7c80e1",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "000f0175-8be6-4ca5-be73-0c0b14204a9a",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "933989f3-3ce3-4953-9194-2e6b25a6c2ca",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "69cf3c71-4e03-4bed-9370-7e8f835e85e5",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "fd1ae416-3394-46fe-942d-ccbf7189dfe8",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "f20f2a27-ef1b-48ae-a839-c4ff30f263fc",
+      "result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be"
+    },
+    {
+      "claim_id": "e4cb6a2d-5261-41a2-a735-8e95ca5a9c68",
+      "result_id": "4b983104-9e81-4dfd-ab70-dcb1986568f0"
+    },
+    {
+      "claim_id": "318e5fd8-a7c3-4dc1-807f-80dd3484fcb7",
+      "result_id": "4b983104-9e81-4dfd-ab70-dcb1986568f0"
+    },
+    {
+      "claim_id": "d2dc35a9-07e1-4dba-852b-0d00d2e45d43",
+      "result_id": "4b983104-9e81-4dfd-ab70-dcb1986568f0"
+    },
+    {
+      "claim_id": "03fa1d36-f76d-4e20-b565-776054700fc7",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "2db0109c-bf2e-4d84-a14b-5f6cb3761172",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "bf557338-38cd-4150-9be7-498549d77972",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "536629d3-d4a8-4931-ad1a-e6dff97d9a30",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "ee746a3f-dbf6-4523-bfa1-b77398a31058",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "f473b4dc-0f31-4db3-89b5-10475677ce54",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "9d117b5c-29b6-4c91-90da-dbfa7e2606eb",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "ce17388b-7c63-42fa-9102-0029cfd3f7dd",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "e2862579-9041-46b6-8f66-274832a369c7",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "b9d383b3-393b-4874-b50f-72d4d1f86f1b",
+      "result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05"
+    },
+    {
+      "claim_id": "e4146518-5b6f-47e6-899b-578b497d8e98",
+      "result_id": "c2ca1141-2ad1-4e5e-b4bf-bc4b159480e5"
+    },
+    {
+      "claim_id": "15217c29-4a73-4716-8f8e-0c0e27d23fbd",
+      "result_id": "c2ca1141-2ad1-4e5e-b4bf-bc4b159480e5"
+    },
+    {
+      "claim_id": "ce58d026-2ed8-41f6-942b-e1f7de439565",
+      "result_id": "c2ca1141-2ad1-4e5e-b4bf-bc4b159480e5"
+    },
+    {
+      "claim_id": "80833900-a4c4-4d4e-8c4f-3e5775167333",
+      "result_id": "c2ca1141-2ad1-4e5e-b4bf-bc4b159480e5"
+    },
+    {
+      "claim_id": "017c92a8-0cd7-4c92-a394-c7c7ac7436f8",
+      "result_id": "c2ca1141-2ad1-4e5e-b4bf-bc4b159480e5"
+    },
+    {
+      "claim_id": "04c9378c-f94e-47a7-851b-51e50b47a734",
+      "result_id": "f6b954c3-81fc-4edd-a198-3ba987ef6569"
+    },
+    {
+      "claim_id": "3f70529d-d6b9-4366-abd5-93686b56e544",
+      "result_id": "f6b954c3-81fc-4edd-a198-3ba987ef6569"
+    },
+    {
+      "claim_id": "e86a61d4-d7f3-4edb-a1e7-26082ce8c666",
+      "result_id": "f6b954c3-81fc-4edd-a198-3ba987ef6569"
+    },
+    {
+      "claim_id": "c9985940-2035-44c5-aad7-37377db6ba33",
+      "result_id": "f6b954c3-81fc-4edd-a198-3ba987ef6569"
+    },
+    {
+      "claim_id": "9a245d70-147b-44ed-a51f-6361272e8504",
+      "result_id": "5e6e6d7b-d833-4bd2-aa7b-33f9621cfb6e"
+    },
+    {
+      "claim_id": "3cbeb393-d1c9-47d8-9c74-48c1369e6772",
+      "result_id": "5e6e6d7b-d833-4bd2-aa7b-33f9621cfb6e"
+    },
+    {
+      "claim_id": "a9cb1fa0-6391-4041-8025-a222bd8aa977",
+      "result_id": "4a70c433-92b5-4233-bf07-bd97efb01170"
+    },
+    {
+      "claim_id": "1753a3a2-c01f-4777-ac89-53b305447ae0",
+      "result_id": "4a70c433-92b5-4233-bf07-bd97efb01170"
+    },
+    {
+      "claim_id": "8be182ec-966d-4c71-9130-3c2462a5b031",
+      "result_id": "4a70c433-92b5-4233-bf07-bd97efb01170"
+    },
+    {
+      "claim_id": "77584180-1119-47b0-b2a3-19f046fa2b46",
+      "result_id": "4a70c433-92b5-4233-bf07-bd97efb01170"
+    },
+    {
+      "claim_id": "4de8432c-dfb7-4c2b-97e2-a84d42fef842",
+      "result_id": "4a70c433-92b5-4233-bf07-bd97efb01170"
+    },
+    {
+      "claim_id": "c52de2b5-1995-4bf6-8aff-1264a73ecf86",
+      "result_id": "4a70c433-92b5-4233-bf07-bd97efb01170"
+    },
+    {
+      "claim_id": "c9e696d1-6555-4534-8af5-3293a7c5ee27",
+      "result_id": "7f7224ae-e842-4df2-8d21-5e23322ea36b"
+    },
+    {
+      "claim_id": "5751745c-deed-449e-9264-1e336d8657a9",
+      "result_id": "7f7224ae-e842-4df2-8d21-5e23322ea36b"
+    },
+    {
+      "claim_id": "c2820a0f-ad66-4f3e-ae4f-fa3ce37cb149",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "da7597f7-494f-48f0-9ee1-b24a85267520",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "01e9b219-127b-42b4-8561-4697116a33ed",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "16512ae6-f1ab-413e-96c4-b5b66a6c4c10",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "647df01b-0dc5-47e4-9516-6dfd63a40e5d",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "41d5261d-7ebf-4aea-a788-a86c98c20962",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "0c8d6267-023a-420a-b3e9-a9da667d17b6",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "825f18e7-23a6-44d5-acc4-e38f4abfc984",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "b87e904f-e14e-4c7f-b350-1f06d0742b51",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "d1671013-f372-4ad7-ad55-e88abbac17e6",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "bbec0a5f-6a61-4cd3-b739-2ddc25b65231",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "3ab62959-1388-4d12-b22c-28085e5eec27",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "e05a836e-2dfd-4156-9b88-796537e0614a",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "a91751f6-c491-4345-b26c-baebfba80d0b",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "b7a3209b-715d-4509-aa26-b9b715f89fa6",
+      "result_id": "04489819-3d97-4276-af51-87c668cdd616"
+    },
+    {
+      "claim_id": "6d90455e-bbb8-4a17-b0ad-aa1e85ed9938",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "b5b0dd7d-fd87-488e-877b-e996f6396d64",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "539836d8-49f7-4eb0-b087-3ab3f053ef05",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "6f1a47f1-3f86-41e8-8d4a-6ea83af2214a",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "19c9f88c-746e-4d14-aea4-134a87252fe8",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "47ad84c2-6f36-4555-9e51-583345d52340",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "b3b65dbb-1bfe-4311-9de4-5e9846b42ff4",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "2f295cd4-550c-434e-88f4-35377b89ecdc",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "3da03057-b578-43a3-b2b1-b99a71d5a265",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "9178c8c7-e7d3-4f1e-b834-13a598bdefed",
+      "result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889"
+    },
+    {
+      "claim_id": "62255d09-2819-4bbb-96f1-f8cac7065e75",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "84ea20ca-4fc4-47f9-8439-35049bb43488",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "121519d2-2521-4064-86ba-a27c4b7c80e1",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "000f0175-8be6-4ca5-be73-0c0b14204a9a",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "933989f3-3ce3-4953-9194-2e6b25a6c2ca",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "69cf3c71-4e03-4bed-9370-7e8f835e85e5",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "fd1ae416-3394-46fe-942d-ccbf7189dfe8",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "f20f2a27-ef1b-48ae-a839-c4ff30f263fc",
+      "result_id": "76316b51-d7ab-432a-977e-bb402fa9890b"
+    },
+    {
+      "claim_id": "e4cb6a2d-5261-41a2-a735-8e95ca5a9c68",
+      "result_id": "5d5bdc57-175c-4c51-b5f2-6393d1bc61e9"
+    },
+    {
+      "claim_id": "318e5fd8-a7c3-4dc1-807f-80dd3484fcb7",
+      "result_id": "5d5bdc57-175c-4c51-b5f2-6393d1bc61e9"
+    },
+    {
+      "claim_id": "d2dc35a9-07e1-4dba-852b-0d00d2e45d43",
+      "result_id": "5d5bdc57-175c-4c51-b5f2-6393d1bc61e9"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "6ab48cbb-fd1d-4ea0-b067-0fcc99f04bad",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "528b2bda-6b4d-457a-a6b1-541795998b62",
+      "peer_result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the biological context and rationale (C1-C7). OpenEval rates as SUPPORTED with detailed citation analysis. Peer review also rates SUPPORTED, praising the model system as 'fascinating' and 'excellent.' Peer review additionally covers C8-C10 (hypothalamic focus), which OpenEval addresses separately in R2. Strong agreement on foundational claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "545866e1-b6e8-4fa0-91b7-177d4beb405e",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "1682816c-2c14-4117-8cc1-aedcab302928",
+      "peer_result_id": "b86f8283-c571-4054-bbd5-0e20862d7a05",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R2 addresses hypothalamic rationale (C8-C10) as SUPPORTED. Peer R1 includes these claims in their broader evaluation of the study rationale, also rating SUPPORTED. Complete agreement on the validity of focusing on hypothalamic gene expression.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "5f4ded1f-9912-4959-916d-01b392737b54",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "298a4745-fb61-4e30-a8b1-09440155bf63",
+      "peer_result_id": "c2ca1141-2ad1-4e5e-b4bf-bc4b159480e5",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate temporal clustering and pathway analysis (C11-C15). OpenEval rates UNCERTAIN due to lack of significance after multiple testing correction (C15), noting enrichments may be false positives. Peer review rates SUPPORTED, stating analyses were 'done well' without raising concerns about the statistical limitations. Significant disagreement on interpretation of non-significant pathway results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "e49e3ba9-7937-43ff-b04f-b915399219f3",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "91643a02-b357-4fa0-85c2-bc9f45a6ad28",
+      "peer_result_id": "f6b954c3-81fc-4edd-a198-3ba987ef6569",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate DEG analysis and pathway enrichments (C16-C19). OpenEval rates UNCERTAIN, noting pathway enrichments did not survive correction and cautioning about 'cancer pathway' interpretation in normal plasticity. Peer review rates SUPPORTED, affirming analyses were 'done well' and evidence is 'convincing,' though noting interpretation as speculative. Moderate disagreement on confidence level.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "c8dcddc6-009f-4fc1-b181-d90e65bed1f5",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "71782e90-5950-429a-93e1-8976de848de0",
+      "peer_result_id": "5e6e6d7b-d833-4bd2-aa7b-33f9621cfb6e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate BCL2L1 functional experiment (C20-C21). OpenEval rates SUPPORTED but notes limitations (ferret cells, heat stress model, small n=3). Peer review rates SUPPORTED with explicit praise for including negative results, with multiple reviewers 'applauding' and 'commending' the experiment. Agreement on validity, though OpenEval more critical of experimental design limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "6a373875-77eb-4904-9985-ac5d25a67a22",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "cb99e08f-5320-4d21-996d-b36e626df401",
+      "peer_result_id": "4a70c433-92b5-4233-bf07-bd97efb01170",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate EVE comparative analysis (C22-C27). OpenEval rates SUPPORTED with appropriate methodology and multiple testing correction, though noting modest fold-enrichments warrant caution. Peer review rates SUPPORTED, praising the OU model approach as a 'strength' and an 'advancement in the field.' Strong agreement on methodological soundness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "ad47fdef-a19c-4a34-970b-722909686e77",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "da3a8899-a014-4c2f-a98a-5fe2a0c86952",
+      "peer_result_id": "7f7224ae-e842-4df2-8d21-5e23322ea36b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate overlap analysis (C28-C29). OpenEval rates SUPPORTED, noting authors appropriately report non-significant overlap and acknowledge limitations. Peer review rates SUPPORTED, explicitly praising transparent reporting of the negative statistical result as strengthening the paper. Complete agreement on the value of honest negative result reporting.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "05db1bc9-d0c2-411c-aba8-3ef001cacf23",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "bbc013c9-f76a-442f-ae5e-67b359072ba9",
+      "peer_result_id": "04489819-3d97-4276-af51-87c668cdd616",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R8 addresses pathway function claims (C30-C34) as SUPPORTED, noting appropriate citations and reasonable but inferential connections to shrews. Peer R7 covers broader interpretive claims (C30-C44) as UNCERTAIN, noting speculation. Partial overlap with agreement that interpretations are hypothesis-generating.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "25c4002c-3f4e-46cc-9d8f-889a502d23cb",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "3b0916b5-d0e7-4097-990a-fca58eeb8d48",
+      "peer_result_id": "04489819-3d97-4276-af51-87c668cdd616",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate BBB and related gene interpretations (C35-C40). OpenEval rates UNCERTAIN, noting speculation about adaptive significance and contradiction with cited disease evidence. Peer review rates UNCERTAIN, stating interpretations are 'too speculative' and represent hypotheses for future work. Strong agreement on speculative nature requiring experimental validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "c41d0f7d-6935-4fee-836a-025b1d297508",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "340e6a68-7c39-475f-a4eb-762275d9bc76",
+      "peer_result_id": "04489819-3d97-4276-af51-87c668cdd616",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate FOXO gene interpretations (C41-C44). OpenEval rates UNCERTAIN, noting C44 is explicitly speculative with alternative mechanisms lacking data. Peer review rates UNCERTAIN as part of broader concern about speculative interpretations. Agreement that functional claims require validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "892a74d3-6293-4d27-b5b0-50f49e58a7c5",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "5b2b703a-34d8-4b3c-a4c1-fb3ba2638924",
+      "peer_result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate BCL2L1 and cell maintenance claims (C45-C48). OpenEval rates SUPPORTED with appropriate citations, though noting functional mechanism needs validation. Peer review rates UNCERTAIN as part of general speculation concern, noting these represent hypotheses for future work. Moderate disagreement on confidence level.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "fb84ade9-e729-4d14-be04-93d87eedd714",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ee39f5e0-6062-4ac7-855c-ba5155cbdf9d",
+      "peer_result_id": "4cf3ab66-ba25-465d-8642-8b67ce6ff889",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate neurodegeneration-associated genes (C49-C54). OpenEval rates SUPPORTED, noting intriguing comparative expression data with appropriate citations, though functional consequences need validation. Peer review rates UNCERTAIN, grouping with other speculative interpretations as hypothesis generation. Moderate disagreement on current evidence strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "7f7aeab6-f71f-4517-b10c-a47f7a676cb4",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "fdbde949-0ccf-4ded-ab9a-31033c03e1be",
+      "peer_result_id": "76316b51-d7ab-432a-977e-bb402fa9890b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate CCDC22 findings (C55-C62). OpenEval rates SUPPORTED, noting convergence of evolutionary and seasonal signals with appropriate citations, though experimental validation would strengthen conclusions. Peer review rates SUPPORTED, praising transparency of the overlap analysis that identified this gene. Strong agreement on the validity of CCDC22 as a key candidate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    },
+    {
+      "id": "2955642c-6258-4586-8e83-274ecc01030f",
+      "submission_id": "179ae7e9-b0d4-4a9e-87a7-6487fd6445d2",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "4b983104-9e81-4dfd-ab70-dcb1986568f0",
+      "peer_result_id": "5d5bdc57-175c-4c51-b5f2-6393d1bc61e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate methods (C63-C65). OpenEval rates SUPPORTED, noting standard appropriate methods with modest but reasonable sample sizes. Peer review rates SUPPORTED, stating data were 'collected in a technically sound manner' with no methodological concerns. Complete agreement on technical soundness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:43:04.379646Z"
+    }
+  ]
+}

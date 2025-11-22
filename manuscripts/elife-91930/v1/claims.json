@@ -33,7 +33,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by a citation to World Health Organization, 2022.",
+    "evidence": "This claim is supported by a citation to the World Health Organization, 2022.",
     "evidence_type": [
       "CITATION"
     ]
@@ -92,15 +92,15 @@
   },
   {
     "claim_id": "C8",
-    "claim": "The membranolytic activity of the ESX-1 seems to be highly context dependent.",
+    "claim": "The unique characteristics of Mm compared to Mtb can sometimes lead to differing results, and conclusions drawn from one species do not always apply to the other.",
     "claim_type": "EXPLICIT",
-    "source": "This is important because the membranolytic activity of the ESX-1 seems to be highly context dependent, and more biochemical work is needed to work out the specific contributions of ESAT-6 to the membrane disruption phenotype.",
+    "source": "However, the unique characteristics of Mm compared to Mtb can sometimes leads to differing results, and conclusions drawn from one species do not always apply to the other (Bosserman et al., 2019; Carlsson et al., 2009; Lienard et al., 2020; Osman et al., 2022; Smith et al., 2008).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the complexity of ESX-1 studies and the need for more biochemical work.",
+    "evidence": "This claim is supported by citations to Bosserman et al., 2019; Carlsson et al., 2009; Lienard et al., 2020; Osman et al., 2022; Smith et al., 2008.",
     "evidence_type": [
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
@@ -124,9 +124,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from plasmid sequencing.",
+    "evidence": "This claim is based on inference from sequencing data.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
@@ -135,24 +136,22 @@
     "claim_type": "EXPLICIT",
     "source": "Importantly, we were able to confirm that the full and complete sequences of ESAT-6 and CFP-10 are each contained in their respective plasmids, and the inconsistencies fall within the C-terminal tag regions of each protein (Figure 1A).",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from plasmid sequencing shown in Figure 1A.",
+    "evidence": "This claim is supported by experimental sequencing data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C12",
-    "claim": "CFP-10 undergoes N-terminal methionine excision in E. coli expression system.",
+    "claim": "CFP-10 undergoes N-terminal methionine excision in the E. coli expression system.",
     "claim_type": "EXPLICIT",
     "source": "Amino acid sequences of the recombinant proteins were also confirmed by mass spectrometry (MS), where it was observed that CFP-10 undergoes N-terminal methionine excision in our E. coli expression system (Figure 1\u2014figure supplement 2; Giglione et al., 2004; Hirel et al., 1989).",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This claim is supported by mass spectrometry data shown in Figure 1\u2014figure supplement 2 and citations to Giglione et al., 2004; Hirel et al., 1989.",
+    "evidence": "This claim is supported by mass spectrometry data and citations to Giglione et al., 2004; Hirel et al., 1989.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -167,7 +166,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from size exclusion chromatography shown in Figure 1C.",
+    "evidence": "This claim is supported by experimental SEC data shown in Figure 1C.",
     "evidence_type": [
       "DATA"
     ]
@@ -180,27 +179,39 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from native-PAGE analysis.",
+    "evidence": "This claim is supported by native-PAGE experimental data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C15",
-    "claim": "ESAT-6 and CFP-10 form a 1:1 complex at neutral pH, which aligns with historical research on the interaction between ESAT-6 and CFP-10.",
+    "claim": "The isoelectric point of ESAT-6 is 5.18 (net charge \u20138.22 at pH 7.4).",
     "claim_type": "EXPLICIT",
-    "source": "This aligns with our results from Figure 1C, and aligns with historical research on the interaction between ESAT-6 and CFP-10 (Poulsen et al., 2014; Renshaw et al., 2005; Renshaw et al., 2002).",
+    "source": "The isoelectric point of ESAT-6 and CFP-10 are both quite low, for our constructs they are 5.18 (net charge \u20138.22 at pH 7.4) and 5.72 (net charge \u20135.27 at pH 7.4), respectively.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data and citations to Poulsen et al., 2014; Renshaw et al., 2005; Renshaw et al., 2002.",
+    "evidence": "This is a calculated value based on the protein sequence.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
     "claim_id": "C16",
+    "claim": "The isoelectric point of CFP-10 is 5.72 (net charge \u20135.27 at pH 7.4).",
+    "claim_type": "EXPLICIT",
+    "source": "The isoelectric point of ESAT-6 and CFP-10 are both quite low, for our constructs they are 5.18 (net charge \u20138.22 at pH 7.4) and 5.72 (net charge \u20135.27 at pH 7.4), respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculated value based on the protein sequence.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
     "claim": "Recombinant ESAT-6 produced without detergent was not able to induce hemolysis at any pH between 4.5 and 7.5.",
     "claim_type": "EXPLICIT",
     "source": "Our recombinant ESAT-6 was produced without detergent, and we confirmed that it was not able to induce hemolysis at any pH between 4.5 and 7.5 (Figure 2\u2014figure supplement 1).",
@@ -208,13 +219,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from hemolysis assays shown in Figure 2\u2014figure supplement 1.",
+    "evidence": "This claim is supported by experimental hemolysis assay data shown in Figure 2\u2014figure supplement 1.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C17",
+    "claim_id": "C18",
     "claim": "Mycobacterium marinum (Mm) is capable of efficiently causing hemolysis within 2 hours.",
     "claim_type": "EXPLICIT",
     "source": "Similar to previous reports, we found that Mycobacterium marinum (Mm) is capable of efficiently causing hemolysis within 2 hours (Figure 2B).",
@@ -222,40 +233,52 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from hemolysis assays shown in Figure 2B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C18",
-    "claim": "Mtb was incapable of hemolysis over a 2 hour time frame.",
-    "claim_type": "EXPLICIT",
-    "source": "In contrast, we found that Mtb was incapable of hemolysis over a similar time frame.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by experimental data from hemolysis assays.",
+    "evidence": "This claim is supported by experimental hemolysis data shown in Figure 2B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C19",
-    "claim": "There are some differences in Mtb that affect the rate or extent of hemolysis compared to Mm.",
+    "claim": "Mtb was incapable of hemolysis over a 2 hour time frame.",
     "claim_type": "EXPLICIT",
-    "source": "It is well established that Mm-induced hemolysis is ESX-1 dependent, but our results suggest that there are some differences in Mtb that affect the rate or extent of hemolysis.",
+    "source": "In contrast, we found that Mtb was incapable of hemolysis over a similar time frame.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the experimental data showing differences in hemolysis between Mm and Mtb.",
+    "evidence": "This claim is supported by experimental hemolysis data.",
     "evidence_type": [
-      "INFERENCE",
       "DATA"
     ]
   },
   {
     "claim_id": "C20",
+    "claim": "Mm-induced hemolysis is ESX-1 dependent.",
+    "claim_type": "EXPLICIT",
+    "source": "It is well established that Mm-induced hemolysis is ESX-1 dependent, but our results suggest that there are some differences in Mtb that affect the rate or extent of hemolysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim draws from established scientific knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "One previous study was able to induce hemolysis using Mtb, but this required 48 hr instead of the typical 2.",
+    "claim_type": "EXPLICIT",
+    "source": "One previous study was able to induce hemolysis using Mtb, but this required 48 hr instead of the typical 2 (Augenstreich et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Augenstreich et al., 2020.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
     "claim": "ESAT-6 and CFP-10 preferentially form hetero-oligomers.",
     "claim_type": "EXPLICIT",
     "source": "We first measured the ability of ESAT-6 and CFP-10 to form homo-oligomers or hetero-oligomers (Figure 3B), and found that they preferentially formed hetero-oligomers.",
@@ -263,39 +286,39 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C21",
-    "claim": "ESAT-6 showed a small, but measurable amount of self-association.",
-    "claim_type": "EXPLICIT",
-    "source": "ESAT-6 showed a small, but measurable amount of self-association, while CFP-10 showed no self-association.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by experimental data from BLI experiments.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C22",
-    "claim": "CFP-10 showed no self-association.",
-    "claim_type": "EXPLICIT",
-    "source": "ESAT-6 showed a small, but measurable amount of self-association, while CFP-10 showed no self-association.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by experimental data from BLI experiments.",
+    "evidence": "This claim is supported by BLI experimental data shown in Figure 3B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C23",
+    "claim": "ESAT-6 showed a small, but measurable amount of self-association at neutral pH.",
+    "claim_type": "EXPLICIT",
+    "source": "ESAT-6 showed a small, but measurable amount of self-association, while CFP-10 showed no self-association.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by BLI experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "CFP-10 showed no self-association at neutral pH.",
+    "claim_type": "EXPLICIT",
+    "source": "ESAT-6 showed a small, but measurable amount of self-association, while CFP-10 showed no self-association.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by BLI experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
     "claim": "The dissociation constant (KD) of the ESAT-6/CFP-10 heterodimer is 220 pM.",
     "claim_type": "EXPLICIT",
     "source": "We performed a detailed measurement of the ESAT-6/CFP-10 association and measured a KD of 220 pM, indicating exceptionally tight binding (Figure 3C).",
@@ -303,26 +326,39 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3C.",
+    "evidence": "This claim is supported by BLI experimental data shown in Figure 3C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C24",
-    "claim": "The apparent KD of ESAT-6 self-association at neutral pH is approximately 1.5 \u00b5M.",
+    "claim_id": "C26",
+    "claim": "Renshaw et al., 2002 estimated an upper bound of 10 nM for the dissociation constant of the ESAT-6/CFP-10 heterodimer.",
+    "claim_type": "EXPLICIT",
+    "source": "The dissociation constant (KD) of the ESAT-6/CFP-10 heterodimer has not hitherto been directly measured, but Renshaw et al., 2002 estimated an upper bound of 10 nM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Renshaw et al., 2002.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "ESAT-6 self-association at neutral pH has an apparent KD of approximately 1.5 \u00b5M.",
     "claim_type": "EXPLICIT",
     "source": "The curve shape is suggestive of something other than traditional 1:1 binding, but for comparison purposes we calculated an apparent KD of approximately 1.5 \u00b5M, weaker than that of the ESAT-6/CFP-10 association.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments.",
+    "evidence": "This claim is supported by BLI experimental data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C25",
+    "claim_id": "C28",
     "claim": "The pH of the Mtb-containing compartment typically ranges from 4.5 in IFN-\u03b3 activated macrophages to 6.2 in non-activated macrophages.",
     "claim_type": "EXPLICIT",
     "source": "The pH of the Mtb-containing compartment typically ranges from 4.5 in IFN-\u03b3 activated macrophages to 6.2 in non-activated macrophages (MacMicking et al., 2003; Vandal et al., 2008).",
@@ -335,7 +371,7 @@
     ]
   },
   {
-    "claim_id": "C26",
+    "claim_id": "C29",
     "claim": "ESAT-6 displayed robust self-association at pH 4.5.",
     "claim_type": "EXPLICIT",
     "source": "Surprisingly, ESAT-6 displayed robust self-association at pH 4.5 (Figure 3E), resulting in several-fold more mass attaching to the sensor than even the ESAT-6/CFP-10 association at neutral pH.",
@@ -343,42 +379,41 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3E.",
+    "evidence": "This claim is supported by BLI experimental data shown in Figure 3E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C27",
+    "claim_id": "C30",
     "claim": "Low pH conditions trigger ESAT-6 to assemble into larger complexes.",
     "claim_type": "EXPLICIT",
     "source": "The apparent KD for this interaction was slightly weaker than ESAT-6 self-association at neutral pH, but the total amount of binding was 20\u201330-fold greater, suggesting that low pH conditions trigger ESAT-6 to assemble into larger complexes.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the experimental data showing increased binding at low pH.",
+    "evidence": "This claim is inferred from BLI experimental data showing increased binding at low pH.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C28",
+    "claim_id": "C31",
     "claim": "ESAT-6 and CFP-10 maintain a stable interaction at low-pH.",
     "claim_type": "EXPLICIT",
-    "source": "Further, there have been conflicting reports on whether ESAT-6 and CFP-10 dissociate from each other at low pH (de Jonge et al., 2007; De Leon et al., 2012; Lightbody et al., 2008). Our results support the stable interaction of ESAT-6 and CFP-10 at low-pH (Figure 3F), which exhibits an extremely tight apparent KD of 0.4 pM at pH 4.5: however, this is likely due to the multivalent ESAT-6 self-association occurring in this condition (Figure 3G).",
+    "source": "Our results support the stable interaction of ESAT-6 and CFP-10 at low-pH (Figure 3F), which exhibits an extremely tight apparent KD of 0.4 pM at pH 4.5: however, this is likely due to the multivalent ESAT-6 self-association occurring in this condition (Figure 3G).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3F and 3G, and contrasts with some previous citations.",
+    "evidence": "This claim is supported by BLI experimental data shown in Figure 3F.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C29",
+    "claim_id": "C32",
     "claim": "pH 5.0 was the most basic pH at which increased ESAT-6 self-association occurred.",
     "claim_type": "EXPLICIT",
     "source": "To determine the precise pH at which ESAT-6 self-association becomes dominant, we performed BLI experiments at half pH units from 4.5 to 6.5 (Figure 3H). We found that 5.0 was the most basic pH at which increased self-association occurred.",
@@ -386,27 +421,54 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3H.",
+    "evidence": "This claim is supported by BLI experimental data shown in Figure 3H.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C30",
-    "claim": "ESAT-6 shows an increase in turbidity at pH 4.5 but not 7.5.",
+    "claim_id": "C33",
+    "claim": "An increase in turbidity was observed at pH 4.5 but not 7.5 which was greater for ESAT-6 than CFP-10.",
     "claim_type": "EXPLICIT",
     "source": "We observed an increase in turbidity at pH 4.5 but not 7.5 which was greater for ESAT-6 than CFP-10, in line with previous findings (De Leon et al., 2012).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from turbidity assays and a citation to De Leon et al., 2012.",
+    "evidence": "This claim is supported by turbidity assay data and a citation to De Leon et al., 2012.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C31",
+    "claim_id": "C34",
+    "claim": "Fluorescence microscopy shows the development of individual strands with the appearance of a heavily kinked thread or beads on a string for ESAT-6 complexes at pH 4.5.",
+    "claim_type": "EXPLICIT",
+    "source": "Fluorescence microscopy shows the development of individual strands with the appearance of a heavily kinked thread or beads on a string (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "ESAT-6 strand structures were not present at neutral pH or when 6 M guanidine was added to acidified ESAT-6.",
+    "claim_type": "EXPLICIT",
+    "source": "These structures were not present at neutral pH or when 6 M guanidine was added to acidified ESAT-6.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by fluorescence microscopy data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
     "claim": "At pH 7.5, ESAT-6 exists as a single peak with an approximate molecular weight of 21 kDa, which most likely corresponds to an ESAT-6 homodimer.",
     "claim_type": "EXPLICIT",
     "source": "At pH 7.5, we observed a single peak with an approximate molecular weight of 21 kDa, which most likely corresponds to an ESAT-6 homodimer (Figure 5B).",
@@ -414,27 +476,27 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from SEC-MALS shown in Figure 5B.",
+    "evidence": "This claim is supported by SEC-MALS experimental data shown in Figure 5B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C32",
+    "claim_id": "C37",
     "claim": "No monomeric ESAT-6 was observed at pH 7.5, indicating that it likely self-pairs in the absence of CFP-10.",
     "claim_type": "EXPLICIT",
     "source": "We did not observe the presence of any monomeric ESAT-6, indicating that it likely self-pairs in the absence of CFP-10.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the experimental data showing no monomeric ESAT-6.",
+    "evidence": "This claim is inferred from SEC-MALS data showing no monomer peak.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C33",
+    "claim_id": "C38",
     "claim": "At pH 4.5, ESAT-6 forms a single, well-defined peak at 46 kDa, most likely corresponding to a tetramer.",
     "claim_type": "EXPLICIT",
     "source": "At pH 4.5, we were surprised to see a single, well-defined peak at 46 kDa, most likely corresponding to a tetramer (Figure 5C).",
@@ -442,39 +504,39 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from SEC-MALS shown in Figure 5C.",
+    "evidence": "This claim is supported by SEC-MALS experimental data shown in Figure 5C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C34",
-    "claim": "No measurable monomer, dimer, or higher molecular weight complexes were observed at pH 4.5.",
+    "claim_id": "C39",
+    "claim": "No measurable monomer, dimer, or higher molecular weight complexes were observed for ESAT-6 at pH 4.5 by SEC-MALS.",
     "claim_type": "EXPLICIT",
     "source": "No measurable monomer, dimer, or higher molecular weight complexes were observed.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from SEC-MALS.",
+    "evidence": "This claim is supported by SEC-MALS experimental data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C35",
+    "claim_id": "C40",
     "claim": "The energy-minimized structure of monomeric ESAT-6 strongly resembles its conformation in the heterodimer.",
     "claim_type": "EXPLICIT",
     "source": "We observed that the energy-minimized structure of monomeric ESAT-6 strongly resembles its conformation in the heterodimer.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by molecular dynamics simulations.",
+    "evidence": "This claim is based on molecular dynamics simulation data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C36",
+    "claim_id": "C41",
     "claim": "The helix-turn-helix structure of ESAT-6 exhibits strong amphipathic nature, with both helices aligning to form a hydrophobic face flanked by charged residues.",
     "claim_type": "EXPLICIT",
     "source": "The helix-turn-helix structure exhibits strong amphipathic nature, with both helices aligning to form a hydrophobic face flanked by charged residues (Figure 5D).",
@@ -482,13 +544,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by molecular modeling shown in Figure 5D.",
+    "evidence": "This claim is based on molecular modeling data shown in Figure 5D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C37",
+    "claim_id": "C42",
     "claim": "The ESAT-6 homodimer model showed head-to-tail alignment of the ESAT-6 monomers associating via their hydrophobic faces and stabilized on either side by salt bridges.",
     "claim_type": "EXPLICIT",
     "source": "The homodimer model showed head-to-tail alignment of the ESAT-6 monomers associating via their hydrophobic faces and stabilized on either side by salt bridges (Figure 5E).",
@@ -496,133 +558,106 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by molecular modeling shown in Figure 5E.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C38",
-    "claim": "In the ESAT-6 tetramer model, the dimers interact in a head-to-tail orientation via their hydrophilic faces, supported by salt bridges.",
-    "claim_type": "EXPLICIT",
-    "source": "We observed the dimers interacting in a head-to-tail orientation via their hydrophilic faces, supported by salt bridges (Figure 5F).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This claim is supported by molecular modeling shown in Figure 5F.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C39",
-    "claim": "At pH 7.5, dimerization and tetramerization of ESAT-6 result in greater overall stability compared to the monomer.",
-    "claim_type": "EXPLICIT",
-    "source": "At both pH values, dimerization (and tetramerization) result in greater overall stability. At pH 7.5, the average RMSF of the monomer is 2.51, which reduces to 2.33 for the dimer due to the reduced flexibility between residues 20 and 50. The tetramer is only marginally more stable, at 2.27.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by molecular dynamics simulations.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C40",
-    "claim": "At pH 4.5, the difference in stability between monomer, dimer, and tetramer is more pronounced, with RMSF values of 2.74, 2.04, and 1.94 respectively.",
-    "claim_type": "EXPLICIT",
-    "source": "At pH 4.5, the difference between each state is even more pronounced, with an RMSF of 2.74, 2.04, and 1.94 for the monomer, dimer, and tetramer, respectively.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by molecular dynamics simulations.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C41",
-    "claim": "E11rv was generated by immunization and panning against pMRLB.7 ESAT-6.",
-    "claim_type": "EXPLICIT",
-    "source": "E11rv was generated by immunization and panning against pMRLB.7 ESAT-6.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a description of the experimental method used to generate E11rv.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C42",
-    "claim": "The EC50 of E11rv is 1.26 \u00b5M.",
-    "claim_type": "EXPLICIT",
-    "source": "Following initial isolation, we performed biochemical characterization, starting with ELISA experiments to determine the EC50 of E11rv, which was found to be 1.26 \u00b5M (Figure 6A).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This claim is supported by experimental data from ELISA shown in Figure 6A.",
+    "evidence": "This claim is based on molecular modeling data shown in Figure 5E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C43",
-    "claim": "E11rv bound to pMRLB.7 ESAT-6 with a KD of 331 nM.",
+    "claim": "In the ESAT-6 tetramer model, dimers interact in a head-to-tail orientation via their hydrophilic faces, supported by salt bridges.",
     "claim_type": "EXPLICIT",
-    "source": "E11rv bound similarly to ESAT-6 and ESAT-6-LPETG with KDs of 331 nM and 376 nM, respectively.",
+    "source": "We observed the dimers interacting in a head-to-tail orientation via their hydrophilic faces, supported by salt bridges (Figure 5F).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments.",
+    "evidence": "This claim is based on molecular modeling data shown in Figure 5F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C44",
-    "claim": "E11rv bound to ESAT-6-LPETG with a KD of 376 nM.",
+    "claim": "At pH 7.5, the average RMSF of the ESAT-6 monomer is 2.51, which reduces to 2.33 for the dimer.",
     "claim_type": "EXPLICIT",
-    "source": "E11rv bound similarly to ESAT-6 and ESAT-6-LPETG with KDs of 331 nM and 376 nM, respectively.",
+    "source": "At pH 7.5, the average RMSF of the monomer is 2.51, which reduces to 2.33 for the dimer due to the reduced flexibility between residues 20 and 50.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments.",
+    "evidence": "This claim is supported by molecular dynamics simulation data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C45",
-    "claim": "E11rv binding to ESAT-6 results in decreased deuteration around positions 50\u201365 and increased solvent exposure between residues 66 to 94.",
+    "claim": "At pH 4.5, the RMSF is 2.74, 2.04, and 1.94 for the ESAT-6 monomer, dimer, and tetramer, respectively.",
     "claim_type": "EXPLICIT",
-    "source": "For E11rv, we observed decreased deuteration compared to apo around positions 50\u201365 (on the C-terminal helix, near the loop), and to a lesser extent positions 98\u2013110 (within the tag). The region between these segments, from residues 66 to 94, displayed an increase in solvent exposure, as did residues 14\u201328, on the opposing helix directly across from 66 to 94.",
+    "source": "At pH 4.5, the difference between each state is even more pronounced, with an RMSF of 2.74, 2.04, and 1.94 for the monomer, dimer, and tetramer, respectively.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by experimental data from hydrogen-deuterium exchange experiments.",
+    "evidence": "This claim is supported by molecular dynamics simulation data.",
     "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C46",
-    "claim": "E11rv likely binds around residues 50\u201365 of ESAT-6.",
-    "claim_type": "EXPLICIT",
-    "source": "A likely explanation for this pattern is that E11rv binds around residues 50\u201365, and that this somehow destabilizes the C-terminal portion of the helix or separates the helices enough to allow more solvent exposure between helices.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference drawn from the hydrogen-deuterium exchange data.",
-    "evidence_type": [
-      "INFERENCE",
       "DATA"
     ]
   },
   {
     "claim_id": "C47",
+    "claim": "E11rv bound to ESAT-6 with a KD of 331 nM.",
+    "claim_type": "EXPLICIT",
+    "source": "E11rv bound similarly to ESAT-6 and ESAT-6-LPETG with KDs of 331 nM and 376 nM, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by BLI experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "E11rv bound to ESAT-6-LPETG with a KD of 376 nM.",
+    "claim_type": "EXPLICIT",
+    "source": "E11rv bound similarly to ESAT-6 and ESAT-6-LPETG with KDs of 331 nM and 376 nM, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by BLI experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "E11rv binding to ESAT-6 results in decreased deuteration around positions 50\u201365 and increased deuteration in the region between residues 66 to 94.",
+    "claim_type": "EXPLICIT",
+    "source": "For E11rv, we observed decreased deuteration compared to apo around positions 50\u201365 (on the C-terminal helix, near the loop), and to a lesser extent positions 98\u2013110 (within the tag). The region between these segments, from residues 66 to 94, displayed an increase in solvent exposure, as did residues 14\u201328, on the opposing helix directly across from 66 to 94.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by hydrogen-deuterium exchange experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "E11rv binds around residues 50\u201365 of ESAT-6.",
+    "claim_type": "EXPLICIT",
+    "source": "A likely explanation for this pattern is that E11rv binds around residues 50\u201365, and that this somehow destabilizes the C-terminal portion of the helix or separates the helices enough to allow more solvent exposure between helices.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is inferred from HDX-MS data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
     "claim": "E11rv led to a statistically significant reduction in Mtb viability in THP-1 cells.",
     "claim_type": "EXPLICIT",
     "source": "In this experiment, we found that E11rv led to a statistically significant reduction in Mtb viability (Figure 7A and B).",
@@ -636,7 +671,7 @@
     ]
   },
   {
-    "claim_id": "C48",
+    "claim_id": "C52",
     "claim": "E11rv reduced the growth rate of luminescent Mtb in THP-1 cells substantially.",
     "claim_type": "EXPLICIT",
     "source": "We then infected the nanobody-expressing THP-1 cells with luminescent Mtb and monitored their growth continuously via plate reader for 5 days, and we found that E11rv reduced the growth rate substantially (Figure 7C).",
@@ -650,7 +685,7 @@
     ]
   },
   {
-    "claim_id": "C49",
+    "claim_id": "C53",
     "claim": "Over 5 days, isotype-expressing cells allowed Mtb to grow to sixfold over its starting value while E11rv-expressing cells reduced this to just under threefold.",
     "claim_type": "EXPLICIT",
     "source": "Over the full 5 days, the isotype-expressing cells allowed the Mtb to grow to sixfold over its starting value while the E11rv-expressing cells reduced this to just under threefold.",
@@ -663,136 +698,81 @@
     ]
   },
   {
-    "claim_id": "C50",
+    "claim_id": "C54",
     "claim": "ESAT-6 undergoes rapid self-association into large complexes at pH levels below 5.0.",
     "claim_type": "EXPLICIT",
     "source": "This study has several key findings. Firstly, ESAT-6 undergoes rapid self-association into large complexes at pH levels below 5.0, and this may be preceded by formation of stable tetramers.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary claim supported by multiple experimental data throughout the manuscript.",
+    "evidence": "This claim is supported by multiple experimental data including BLI, turbidity, microscopy, and SEC-MALS.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C51",
+    "claim_id": "C55",
     "claim": "ESAT-6 self-association at low pH may be preceded by formation of stable tetramers.",
     "claim_type": "EXPLICIT",
     "source": "This study has several key findings. Firstly, ESAT-6 undergoes rapid self-association into large complexes at pH levels below 5.0, and this may be preceded by formation of stable tetramers.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary claim supported by experimental data from SEC-MALS.",
+    "evidence": "This claim is inferred from SEC-MALS data showing tetramers at pH 4.5.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C56",
     "claim": "In the absence of CFP-10, ESAT-6 exists as a homodimer at neutral pH.",
     "claim_type": "EXPLICIT",
     "source": "Second, in the absence of CFP-10, ESAT-6 exists as a homodimer at neutral pH.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary claim supported by experimental data from SEC-MALS.",
+    "evidence": "This claim is supported by SEC-MALS data.",
     "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C53",
-    "claim": "E11rv binds to ESAT-6 and can inhibit the growth of Mtb inside cells when treated externally or via cytoplasmic expression.",
-    "claim_type": "EXPLICIT",
-    "source": "Third, our nanobody, E11rv, binds to ESAT-6 and can inhibit the growth of Mtb inside cells when treated externally or via cytoplasmic expression.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a summary claim supported by experimental data from BLI and cellular assays.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C54",
-    "claim": "ESAT-6 may still be able to self-associate within membranes via its hydrophilic face.",
-    "claim_type": "EXPLICIT",
-    "source": "Our modeling and SEC-MALS data suggest that ESAT-6 can interact with itself using both of its faces, one of which is hydrophobic, and one of which is hydrophilic; and both of which are supported by salt bridges formed by charged residues at either edge. This implies that ESAT-6 may still be able to self-associate within membranes via its hydrophilic face.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative inference drawn from modeling and SEC-MALS data.",
-    "evidence_type": [
-      "SPECULATION",
-      "INFERENCE",
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C55",
-    "claim": "Low pH is required for ESAT-6 self-association at the hydrophilic interface.",
-    "claim_type": "EXPLICIT",
-    "source": "This agrees with the putative requirement for compartment acidification in order to drive membrane damage, as our data suggests that low pH is required for self-association at this interface, but likely does not affect the hydrophobic interface, which must then require a different mechanism for dissociation and membrane insertion.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference drawn from the experimental data showing pH-dependent self-association.",
-    "evidence_type": [
-      "INFERENCE",
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C56",
-    "claim": "E11rv showed functional effects both when added in the media and when expressed inside the cell cytoplasm, suggesting a significant amount of communication between Mtb inside the phagosome and other compartments of the cell.",
-    "claim_type": "EXPLICIT",
-    "source": "Because E11rv showed functional effects both when added in the media and when expressed inside the cell cytoplasm, it suggests a significant amount of communication between Mtb inside the phagosome and other compartments of the cell.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference drawn from the experimental data showing E11rv effects in different conditions.",
-    "evidence_type": [
-      "INFERENCE",
       "DATA"
     ]
   },
   {
     "claim_id": "C57",
-    "claim": "ESAT-6 is approximately 38% demethionylated in the recombinant expression system.",
+    "claim": "E11rv can inhibit the growth of Mtb inside cells when treated externally or via cytoplasmic expression.",
     "claim_type": "EXPLICIT",
-    "source": "ESAT-6 is approximately 38% demethionylated while CFP-10 is fully demethionylated.",
+    "source": "Third, our nanobody, E11rv, binds to ESAT-6 and can inhibit the growth of Mtb inside cells when treated externally or via cytoplasmic expression.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by mass spectrometry data shown in Figure 1\u2014figure supplement 2.",
+    "evidence": "This claim is supported by experimental data from both the live/dead reporter assay and the luminescence growth assay.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C58",
-    "claim": "CFP-10 is fully demethionylated in the recombinant expression system.",
+    "claim": "ESAT-6 may still be able to self-associate within membranes via its hydrophilic face.",
     "claim_type": "EXPLICIT",
-    "source": "ESAT-6 is approximately 38% demethionylated while CFP-10 is fully demethionylated.",
+    "source": "This implies that ESAT-6 may still be able to self-associate within membranes via its hydrophilic face.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by mass spectrometry data shown in Figure 1\u2014figure supplement 2.",
+    "evidence": "This claim is speculative, based on modeling data showing two interaction interfaces.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "SPECULATION"
     ]
   },
   {
     "claim_id": "C59",
-    "claim": "Mm is capable of efficiently causing hemolysis within 2 hours in a contact-dependent manner.",
-    "claim_type": "IMPLICIT",
-    "source": "Similar to previous reports, we found that Mycobacterium marinum (Mm) is capable of efficiently causing hemolysis within 2 hours (Figure 2B).",
+    "claim": "Low pH is required for ESAT-6 self-association at the hydrophilic interface.",
+    "claim_type": "EXPLICIT",
+    "source": "This agrees with the putative requirement for compartment acidification in order to drive membrane damage, as our data suggests that low pH is required for self-association at this interface, but likely does not affect the hydrophobic interface, which must then require a different mechanism for dissociation and membrane insertion.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "The contact-dependent nature is implied by the experimental design described in the methods section.",
+    "evidence": "This claim is inferred from experimental data showing pH-dependent self-association.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -800,168 +780,7 @@
   },
   {
     "claim_id": "C60",
-    "claim": "Mtb\u0394RD1 is incapable of producing ESAT-6 or CFP-10.",
-    "claim_type": "EXPLICIT",
-    "source": "Bacterial cultures, Mm, Mtb, Mtb\u0394RD1 were grown in Middlebrook 7H9 with OADC to an OD600 between 0.3 and 1.0.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the figure legend for Figure 2B: 'Mtb with the region of difference 1 deletion, incapable of producing ESAT-6 or CFP-10 (Mtb\u0394RD1)'.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C61",
-    "claim": "Mtb\u0394RD1 does not cause significant hemolysis.",
-    "claim_type": "IMPLICIT",
-    "source": "Contact-dependent red blood cell (RBC) hemolysis by whole bacteria, either Mycobacterium marinum (Mm), Mycobacterium tuberculosis (Mtb), or Mtb with the region of difference 1 deletion, incapable of producing ESAT-6 or CFP-10 (Mtb\u0394RD1). Data in B represents 6 replicates. Error bars represent the 95% confidence interval. Statistical significance was determined using a one sample t test against a theoretical mean of 0. *=0.05, **=0.01, ***=0.001, ****=0.0001.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is inferred from Figure 2B which shows Mtb\u0394RD1 has no significant hemolysis (marked as 'ns').",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C62",
-    "claim": "The isoelectric point of ESAT-6 is 5.18 with a net charge of \u20138.22 at pH 7.4.",
-    "claim_type": "EXPLICIT",
-    "source": "The isoelectric point of ESAT-6 and CFP-10 are both quite low, for our constructs they are 5.18 (net charge \u20138.22 at pH 7.4) and 5.72 (net charge \u20135.27 at pH 7.4), respectively.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a calculated value based on the amino acid sequence.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C63",
-    "claim": "The isoelectric point of CFP-10 is 5.72 with a net charge of \u20135.27 at pH 7.4.",
-    "claim_type": "EXPLICIT",
-    "source": "The isoelectric point of ESAT-6 and CFP-10 are both quite low, for our constructs they are 5.18 (net charge \u20138.22 at pH 7.4) and 5.72 (net charge \u20135.27 at pH 7.4), respectively.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a calculated value based on the amino acid sequence.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C64",
-    "claim": "Fluorescence microscopy shows the development of individual strands of ESAT-6 complexes with the appearance of a heavily kinked thread or beads on a string at pH 4.5.",
-    "claim_type": "EXPLICIT",
-    "source": "Fluorescence microscopy shows the development of individual strands with the appearance of a heavily kinked thread or beads on a string (Figure 5A).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This claim is supported by fluorescence microscopy data shown in Figure 5A.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C65",
-    "claim": "ESAT-6 strand structures were not present at neutral pH.",
-    "claim_type": "EXPLICIT",
-    "source": "These structures were not present at neutral pH or when 6 M guanidine was added to acidified ESAT-6.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by fluorescence microscopy data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C66",
-    "claim": "ESAT-6 strand structures were not present when 6 M guanidine was added to acidified ESAT-6.",
-    "claim_type": "EXPLICIT",
-    "source": "These structures were not present at neutral pH or when 6 M guanidine was added to acidified ESAT-6.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by fluorescence microscopy data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C67",
-    "claim": "The \u03b1-helices of ESAT-6 are stable, while the C- and N-termini are highly flexible.",
-    "claim_type": "EXPLICIT",
-    "source": "In general, the \u03b1-helices of ESAT-6 are stable, while the C- and N-termini are highly flexible.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by molecular dynamics simulations.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C68",
-    "claim": "In the monomeric form of ESAT-6, the residues between 20 and 50 exhibit increased flexibility at pH 7.5.",
-    "claim_type": "EXPLICIT",
-    "source": "However, in the monomeric form, the residues between 20 and 50 exhibit increased flexibility at pH 7.5.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by molecular dynamics simulations.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C69",
-    "claim": "At pH 4.5, the monomeric form of ESAT-6 exhibits increased flexibility along a majority of the backbone.",
-    "claim_type": "EXPLICIT",
-    "source": "At pH 4.5, the monomeric form exhibits increased flexibility along a majority of the backbone.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by molecular dynamics simulations.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C70",
-    "claim": "Purified ESAT-6 has no trouble interacting with CFP-10 to form a 1:1 complex.",
-    "claim_type": "EXPLICIT",
-    "source": "Our results suggest that purified ESAT-6 exists in a dimerized state in the absence of CFP-10, but our Native-PAGE (Figure 2A) and SEC (Figure 1C) demonstrate that purified ESAT-6 has no trouble interacting with CFP-10 to form a 1:1 complex.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This claim is supported by experimental data from Native-PAGE and SEC.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C71",
-    "claim": "Self-associated ESAT-6 has no difficulty interacting with CFP-10 at low pH.",
-    "claim_type": "EXPLICIT",
-    "source": "Further, our low pH BLI results (Figure 3F) suggest that self-associated ESAT-6 has no difficulty interacting with CFP-10.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3F.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "Some have suggested that other mycobacterial factors may help facilitate the membrane insertion of ESAT-6, such as phthiocerol dimycocerosates.",
+    "claim": "Other mycobacterial factors may help facilitate the membrane insertion of ESAT-6, such as phthiocerol dimycocerosates.",
     "claim_type": "EXPLICIT",
     "source": "Some have suggested that other mycobacterial factors may help facilitate the membrane insertion of ESAT-6, such as phthiocerol dimycocerosates (Augenstreich et al., 2020; Augenstreich et al., 2017).",
     "source_type": [
@@ -973,7 +792,7 @@
     ]
   },
   {
-    "claim_id": "C73",
+    "claim_id": "C61",
     "claim": "A recent study demonstrated a pentameric EsxE/EsxF structure capable of membrane insertion and toxin trafficking.",
     "claim_type": "EXPLICIT",
     "source": "However, there is precedent for ESAT-6-like WXG proteins to form organized membrane channels, with a recent study demonstrating a pentameric EsxE/EsxF structure capable of membrane insertion and toxin trafficking (Tak et al., 2021).",
@@ -986,21 +805,35 @@
     ]
   },
   {
-    "claim_id": "C74",
+    "claim_id": "C62",
     "claim": "EsxE does not dissociate from EsxF in order to insert into the membrane.",
     "claim_type": "EXPLICIT",
     "source": "Critically, EsxE does not dissociate from EsxF in order to insert into the membrane.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated as a fact about EsxE/EsxF, drawing from established knowledge.",
+    "evidence": "This claim draws from established knowledge about EsxE/EsxF.",
     "evidence_type": [
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C75",
-    "claim": "ESAT-6 has been reported to induce apoptosis.",
+    "claim_id": "C63",
+    "claim": "E11rv showed functional effects both when added in the media and when expressed inside the cell cytoplasm, suggesting a significant amount of communication between Mtb inside the phagosome and other compartments of the cell.",
+    "claim_type": "EXPLICIT",
+    "source": "Because E11rv showed functional effects both when added in the media and when expressed inside the cell cytoplasm, it suggests a significant amount of communication between Mtb inside the phagosome and other compartments of the cell.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is inferred from experimental data showing E11rv effects in both conditions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "ESAT-6 has been shown to induce apoptosis.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with the findings of many other studies which show numerous putative activities for ESAT-6 such as induction of apoptosis (Behura et al., 2019; Choi et al., 2010; Lim et al., 2016; Yang et al., 2015), inhibition of interferon-\u03b3 production (Kumar et al., 2012; Peng et al., 2011), inhibition of autophagy (Dong et al., 2016; Romagnoli et al., 2012; Yabaji et al., 2020), inhibition of antigen presentation (Sreejit et al., 2014), induction of type I interferon (Jang et al., 2018; Lienard et al., 2020), and a more recent study showing an ESX-1-dependent mechanism for incorporation of Mtb antigens into MHC-I presentation via cytosolic antigen processing (Leddy et al., 2023).",
     "source_type": [
@@ -1012,8 +845,8 @@
     ]
   },
   {
-    "claim_id": "C76",
-    "claim": "ESAT-6 has been reported to inhibit interferon-\u03b3 production.",
+    "claim_id": "C65",
+    "claim": "ESAT-6 has been shown to inhibit interferon-\u03b3 production.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with the findings of many other studies which show numerous putative activities for ESAT-6 such as induction of apoptosis (Behura et al., 2019; Choi et al., 2010; Lim et al., 2016; Yang et al., 2015), inhibition of interferon-\u03b3 production (Kumar et al., 2012; Peng et al., 2011), inhibition of autophagy (Dong et al., 2016; Romagnoli et al., 2012; Yabaji et al., 2020), inhibition of antigen presentation (Sreejit et al., 2014), induction of type I interferon (Jang et al., 2018; Lienard et al., 2020), and a more recent study showing an ESX-1-dependent mechanism for incorporation of Mtb antigens into MHC-I presentation via cytosolic antigen processing (Leddy et al., 2023).",
     "source_type": [
@@ -1025,8 +858,8 @@
     ]
   },
   {
-    "claim_id": "C77",
-    "claim": "ESAT-6 has been reported to inhibit autophagy.",
+    "claim_id": "C66",
+    "claim": "ESAT-6 has been shown to inhibit autophagy.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with the findings of many other studies which show numerous putative activities for ESAT-6 such as induction of apoptosis (Behura et al., 2019; Choi et al., 2010; Lim et al., 2016; Yang et al., 2015), inhibition of interferon-\u03b3 production (Kumar et al., 2012; Peng et al., 2011), inhibition of autophagy (Dong et al., 2016; Romagnoli et al., 2012; Yabaji et al., 2020), inhibition of antigen presentation (Sreejit et al., 2014), induction of type I interferon (Jang et al., 2018; Lienard et al., 2020), and a more recent study showing an ESX-1-dependent mechanism for incorporation of Mtb antigens into MHC-I presentation via cytosolic antigen processing (Leddy et al., 2023).",
     "source_type": [
@@ -1038,8 +871,8 @@
     ]
   },
   {
-    "claim_id": "C78",
-    "claim": "ESAT-6 has been reported to inhibit antigen presentation.",
+    "claim_id": "C67",
+    "claim": "ESAT-6 has been shown to inhibit antigen presentation.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with the findings of many other studies which show numerous putative activities for ESAT-6 such as induction of apoptosis (Behura et al., 2019; Choi et al., 2010; Lim et al., 2016; Yang et al., 2015), inhibition of interferon-\u03b3 production (Kumar et al., 2012; Peng et al., 2011), inhibition of autophagy (Dong et al., 2016; Romagnoli et al., 2012; Yabaji et al., 2020), inhibition of antigen presentation (Sreejit et al., 2014), induction of type I interferon (Jang et al., 2018; Lienard et al., 2020), and a more recent study showing an ESX-1-dependent mechanism for incorporation of Mtb antigens into MHC-I presentation via cytosolic antigen processing (Leddy et al., 2023).",
     "source_type": [
@@ -1051,8 +884,8 @@
     ]
   },
   {
-    "claim_id": "C79",
-    "claim": "ESAT-6 has been reported to induce type I interferon.",
+    "claim_id": "C68",
+    "claim": "ESAT-6 has been shown to induce type I interferon.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with the findings of many other studies which show numerous putative activities for ESAT-6 such as induction of apoptosis (Behura et al., 2019; Choi et al., 2010; Lim et al., 2016; Yang et al., 2015), inhibition of interferon-\u03b3 production (Kumar et al., 2012; Peng et al., 2011), inhibition of autophagy (Dong et al., 2016; Romagnoli et al., 2012; Yabaji et al., 2020), inhibition of antigen presentation (Sreejit et al., 2014), induction of type I interferon (Jang et al., 2018; Lienard et al., 2020), and a more recent study showing an ESX-1-dependent mechanism for incorporation of Mtb antigens into MHC-I presentation via cytosolic antigen processing (Leddy et al., 2023).",
     "source_type": [
@@ -1064,7 +897,7 @@
     ]
   },
   {
-    "claim_id": "C80",
+    "claim_id": "C69",
     "claim": "A recent study showed an ESX-1-dependent mechanism for incorporation of Mtb antigens into MHC-I presentation via cytosolic antigen processing.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with the findings of many other studies which show numerous putative activities for ESAT-6 such as induction of apoptosis (Behura et al., 2019; Choi et al., 2010; Lim et al., 2016; Yang et al., 2015), inhibition of interferon-\u03b3 production (Kumar et al., 2012; Peng et al., 2011), inhibition of autophagy (Dong et al., 2016; Romagnoli et al., 2012; Yabaji et al., 2020), inhibition of antigen presentation (Sreejit et al., 2014), induction of type I interferon (Jang et al., 2018; Lienard et al., 2020), and a more recent study showing an ESX-1-dependent mechanism for incorporation of Mtb antigens into MHC-I presentation via cytosolic antigen processing (Leddy et al., 2023).",
@@ -1077,127 +910,182 @@
     ]
   },
   {
-    "claim_id": "C81",
-    "claim": "Most of the putative functions of ESAT-6 rely on ESAT-6 getting into the cytoplasm.",
+    "claim_id": "C70",
+    "claim": "ESAT-6 may get into the cytoplasm via disruptions in the phagosomal membrane to establish two-way communication between compartments, or by complete phagosomal escape of Mtb into the cytoplasm and subsequent secretion of ESAT-6 directly into the cytoplasm.",
     "claim_type": "EXPLICIT",
     "source": "Most of these functions rely on ESAT-6 getting into the cytoplasm, and this may occur via disruptions in the phagosomal membrane to establish two-way communication between compartments, or by complete phagosomal escape of Mtb into the cytoplasm and subsequent secretion of ESAT-6 directly into the cytoplasm.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the various reported functions of ESAT-6.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C82",
-    "claim": "ESAT-6 may get into the cytoplasm via disruptions in the phagosomal membrane to establish two-way communication between compartments.",
-    "claim_type": "EXPLICIT",
-    "source": "Most of these functions rely on ESAT-6 getting into the cytoplasm, and this may occur via disruptions in the phagosomal membrane to establish two-way communication between compartments, or by complete phagosomal escape of Mtb into the cytoplasm and subsequent secretion of ESAT-6 directly into the cytoplasm.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative mechanism proposed by the authors.",
+    "evidence": "This claim is speculative, proposing possible mechanisms for ESAT-6 cytoplasmic access.",
     "evidence_type": [
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C83",
-    "claim": "ESAT-6 may get into the cytoplasm by complete phagosomal escape of Mtb into the cytoplasm and subsequent secretion of ESAT-6 directly into the cytoplasm.",
+    "claim_id": "C71",
+    "claim": "Using three molar equivalents of labeling reagent, ESAT-6 was obtained with an average of 0.99 biotins/protein.",
     "claim_type": "EXPLICIT",
-    "source": "Most of these functions rely on ESAT-6 getting into the cytoplasm, and this may occur via disruptions in the phagosomal membrane to establish two-way communication between compartments, or by complete phagosomal escape of Mtb into the cytoplasm and subsequent secretion of ESAT-6 directly into the cytoplasm.",
+    "source": "Using three molar equivalents of labeling reagent, we obtained ESAT-6 with an average of 0.99 biotins/protein.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculative mechanism proposed by the authors.",
+    "evidence": "This claim is supported by experimental biotinylation data.",
     "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C84",
-    "claim": "ESAT-6 acts by a pH-dependent mechanism to establish two-way communication between the cytoplasm and the Mtb-containing phagosome.",
-    "claim_type": "EXPLICIT",
-    "source": "Together, these data suggest that ESAT-6 acts by a pH-dependent mechanism to establish two-way communication between the cytoplasm and the Mtb-containing phagosome.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a summary conclusion drawn from the experimental data presented in the study.",
-    "evidence_type": [
-      "INFERENCE",
       "DATA"
     ]
   },
   {
-    "claim_id": "C85",
+    "claim_id": "C72",
+    "claim": "ESAT-6 normally contains three lysines, and the pMRLB.7 construct contains one additional lysine for a total of four.",
+    "claim_type": "EXPLICIT",
+    "source": "ESAT-6 normally contains three lysines, and the pMRLB.7 construct contains one additional lysine for a total of four (Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is based on sequence analysis shown in Figure 4C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "ESAT-6 is approximately 38% demethionylated while CFP-10 is fully demethionylated.",
+    "claim_type": "EXPLICIT",
+    "source": "ESAT-6 is approximately 38% demethionylated while CFP-10 is fully demethionylated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by mass spectrometry data shown in Figure 1\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The pMRLB.7 and pMRLB.46 plasmids have been used extensively in literature, including many of the most influential biochemical characterization studies.",
+    "claim_type": "EXPLICIT",
+    "source": "Both of these plasmids have been used extensively in literature, including many of the most influential biochemical characterization studies (Augenstreich et al., 2020; Behura et al., 2019; Chen et al., 2019; Choi et al., 2010; Conrad et al., 2017; de Jonge et al., 2007; Eitson et al., 2012; Gallegos et al., 2008; Harrison et al., 2014; Koyuncu et al., 2021; Lim et al., 2016; Mukherjee et al., 2007; Niazi et al., 2015; Osman et al., 2022; Pathak et al., 2007; Peng et al., 2011; Refai et al., 2015; Smith et al., 2008; Stavri et al., 2012; Vesosky et al., 2010; Woolhiser et al., 2007; Xiao et al., 2016; Yang et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to studies using these plasmids.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The specification sheet for pMRLB.7 indicates that it includes a C-terminal FALE solubility tag and subsequent Histidine affinity tag.",
+    "claim_type": "EXPLICIT",
+    "source": "The specification sheet for pMRLB.7 indicates that it includes a C-terminal FALE solubility tag and subsequent Histidine affinity tag while pMRLB.46 indicates that it contains only a C-terminal Histidine tag.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on information from the plasmid specification sheet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The specification sheet for pMRLB.46 indicates that it contains only a C-terminal Histidine tag.",
+    "claim_type": "EXPLICIT",
+    "source": "The specification sheet for pMRLB.7 indicates that it includes a C-terminal FALE solubility tag and subsequent Histidine affinity tag while pMRLB.46 indicates that it contains only a C-terminal Histidine tag.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on information from the plasmid specification sheet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Mtb utilizes a plethora of virulence factors delivered via its several ESX-secretion systems to successfully establish an infection in the host.",
+    "claim_type": "EXPLICIT",
+    "source": "To successfully establish an infection in the host, Mtb utilizes a plethora of virulence factors delivered via its several ESX-secretion systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim draws from established scientific knowledge about Mtb pathogenesis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C78",
     "claim": "CFP-10 likely acts as a chaperone for ESAT-6.",
     "claim_type": "EXPLICIT",
     "source": "This activity primarily relies on the ESX-1 secretion system, predominantly involving the protein duo ESAT-6 and CFP-10. CFP-10 likely acts as a chaperone, while ESAT-6 likely disrupts phagosomal membrane stability via a largely unknown mechanism.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated as a likely function based on existing knowledge in the field.",
+    "evidence": "This claim is based on inference from established knowledge about ESAT-6/CFP-10 interactions.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "KNOWLEDGE",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C86",
+    "claim_id": "C79",
     "claim": "ESAT-6 likely disrupts phagosomal membrane stability via a largely unknown mechanism.",
     "claim_type": "EXPLICIT",
     "source": "This activity primarily relies on the ESX-1 secretion system, predominantly involving the protein duo ESAT-6 and CFP-10. CFP-10 likely acts as a chaperone, while ESAT-6 likely disrupts phagosomal membrane stability via a largely unknown mechanism.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated as a likely function based on existing knowledge in the field, with the mechanism being unknown.",
+    "evidence": "This claim is based on inference from established knowledge and acknowledges the unknown mechanism.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "KNOWLEDGE",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C87",
-    "claim": "The dissociation constant (KD) of the ESAT-6/CFP-10 heterodimer was estimated to have an upper bound of 10 nM by Renshaw et al., 2002.",
+    "claim_id": "C80",
+    "claim": "ESAT-6 acts by a pH-dependent mechanism to establish two-way communication between the cytoplasm and the Mtb-containing phagosome.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, these data suggest that ESAT-6 acts by a pH-dependent mechanism to establish two-way communication between the cytoplasm and the Mtb-containing phagosome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is inferred from the experimental data showing pH-dependent self-association and nanobody effects.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The dissociation constant (KD) of the ESAT-6/CFP-10 heterodimer has not hitherto been directly measured.",
     "claim_type": "EXPLICIT",
     "source": "The dissociation constant (KD) of the ESAT-6/CFP-10 heterodimer has not hitherto been directly measured, but Renshaw et al., 2002 estimated an upper bound of 10 nM.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by a citation to Renshaw et al., 2002.",
+    "evidence": "This claim is based on knowledge of the literature prior to this study.",
     "evidence_type": [
-      "CITATION"
+      "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C88",
-    "claim": "The ESAT-6/CFP-10 heterodimer exhibits exceptionally tight binding with a KD of 220 pM.",
-    "claim_type": "EXPLICIT",
-    "source": "We performed a detailed measurement of the ESAT-6/CFP-10 association and measured a KD of 220 pM, indicating exceptionally tight binding (Figure 3C).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3C.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C89",
-    "claim": "The ESAT-6/CFP-10 heterodimer at pH 4.5 exhibits an extremely tight apparent KD of 0.4 pM.",
+    "claim_id": "C82",
+    "claim": "The ESAT-6/CFP-10 heterodimer exhibits an extremely tight apparent KD of 0.4 pM at pH 4.5.",
     "claim_type": "EXPLICIT",
     "source": "Our results support the stable interaction of ESAT-6 and CFP-10 at low-pH (Figure 3F), which exhibits an extremely tight apparent KD of 0.4 pM at pH 4.5: however, this is likely due to the multivalent ESAT-6 self-association occurring in this condition (Figure 3G).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by experimental data from BLI experiments shown in Figure 3F and 3G.",
+    "evidence": "This claim is supported by BLI experimental data, but the authors note this may be due to multivalent interactions.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C90",
+    "claim_id": "C83",
     "claim": "The extremely tight apparent KD of 0.4 pM for ESAT-6/CFP-10 at pH 4.5 is likely due to the multivalent ESAT-6 self-association occurring in this condition.",
     "claim_type": "EXPLICIT",
     "source": "Our results support the stable interaction of ESAT-6 and CFP-10 at low-pH (Figure 3F), which exhibits an extremely tight apparent KD of 0.4 pM at pH 4.5: however, this is likely due to the multivalent ESAT-6 self-association occurring in this condition (Figure 3G).",
@@ -1205,23 +1093,101 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is an inference drawn from the experimental data.",
+    "evidence": "This claim is inferred from the experimental data showing multivalent binding.",
     "evidence_type": [
-      "INFERENCE",
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "There have been conflicting reports on whether ESAT-6 and CFP-10 dissociate from each other at low pH.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, there have been conflicting reports on whether ESAT-6 and CFP-10 dissociate from each other at low pH (de Jonge et al., 2007; De Leon et al., 2012; Lightbody et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to de Jonge et al., 2007; De Leon et al., 2012; Lightbody et al., 2008.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "In the tetramer model, some charged residues, such as Lys67, which had previously supported the dimer interface, switched orientations to support the tetramer interface.",
+    "claim_type": "EXPLICIT",
+    "source": "In the tetramer model, some of the charged residues, such as Lys67, which had previously supported the dimer interface, switched orientations to support the tetramer interface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on molecular modeling data.",
+    "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C91",
-    "claim": "One previous study was able to induce hemolysis using Mtb, but this required 48 hr instead of the typical 2.",
+    "claim_id": "C86",
+    "claim": "At pH 7.5, the tetramer RMSF is only marginally more stable than the dimer, at 2.27.",
     "claim_type": "EXPLICIT",
-    "source": "One previous study was able to induce hemolysis using Mtb, but this required 48 hr instead of the typical 2 (Augenstreich et al., 2020).",
+    "source": "The tetramer is only marginally more stable, at 2.27.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by a citation to Augenstreich et al., 2020.",
+    "evidence": "This claim is supported by molecular dynamics simulation data.",
     "evidence_type": [
-      "CITATION"
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "In general, the \u03b1-helices of ESAT-6 are stable, while the C- and N-termini are highly flexible.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, the \u03b1-helices of ESAT-6 are stable, while the C- and N-termini are highly flexible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on molecular dynamics simulation data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "In the monomeric form, the residues between 20 and 50 exhibit increased flexibility at pH 7.5.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in the monomeric form, the residues between 20 and 50 exhibit increased flexibility at pH 7.5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on molecular dynamics simulation data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "At pH 4.5, the monomeric form of ESAT-6 exhibits increased flexibility along a majority of the backbone.",
+    "claim_type": "EXPLICIT",
+    "source": "At pH 4.5, the monomeric form exhibits increased flexibility along a majority of the backbone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on molecular dynamics simulation data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "At both pH 7.5 and 4.5, dimerization (and tetramerization) of ESAT-6 result in greater overall stability.",
+    "claim_type": "EXPLICIT",
+    "source": "At both pH values, dimerization (and tetramerization) result in greater overall stability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on molecular dynamics simulation data.",
+    "evidence_type": [
+      "DATA"
     ]
   }
 ]

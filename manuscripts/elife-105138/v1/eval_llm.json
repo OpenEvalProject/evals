@@ -6,27 +6,27 @@
       "C7",
       "C8"
     ],
-    "result": "The excess area \u0394A of the Piezo protein-membrane nanodome is approximately 40 nm\u00b2 in tensionless membranes, with half-maximal reduction occurring at membrane tensions of 3\u20134 mN/m. This half-maximal tension value falls within the experimentally determined range for half-maximal activation of Piezo 1.",
+    "result": "The excess area \u0394A of the Piezo protein-membrane nanodome is approximately 40 nm\u00b2 in tensionless membranes, with half-maximal reduction occurring at 3\u20134 mN/m membrane tension. This half-maximal tension value falls within the experimentally determined range for half-maximal activation of Piezo 1.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6\u2013C8 are well-supported by both coarse-grained and atomistic simulation data with temporal extrapolation to account for finite simulation times (Figure 4). The agreement between simulation predictions and experimental activation data strengthens the validity of the computational approach and supports the mechanistic model of tension-induced activation.",
+    "evaluation": "Claims C6\u2013C8 are well-supported by both coarse-grained and atomistic simulation data with temporal extrapolation to account for finite simulation times (Figure 4). The agreement between simulation predictions and experimental activation data strengthens the validity of the computational approach and provides quantitative support for the tension-gating mechanism.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
+      "C21",
       "C22",
       "C23",
       "C24",
-      "C25",
       "C9"
     ],
-    "result": "Membrane-embedded Piezo proteins adopt significantly flattened conformations compared to cryo-EM structures in detergent micelles. The relaxed Piezo 2 nanodome has a height of ~4 nm versus ~10 nm for the constrained cryo-EM structure, with correspondingly reduced curvature.",
+    "result": "Membrane-embedded Piezo 2 in tensionless membranes adopts a significantly flattened conformation compared to the cryo-EM structure in detergent micelles. The relaxed nanodome height is ~4 nm versus 10 nm for the constrained cryo-EM structure, with correspondingly reduced curvature.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C22\u2013C25 and C9 are directly supported by simulation data (Figure 1) showing substantial flattening of relaxed versus constrained structures. This finding aligns with recent experimental observations in native membrane environments, providing computational validation of a key structural feature relevant to Piezo mechanosensing.",
+    "evaluation": "Claims C21\u2013C24 and C9 are directly supported by simulation data (Figure 1) comparing constrained and relaxed protein structures. The finding aligns with recent experimental observations (C9, C16, C17) from vesicle studies and fluorescence imaging, providing convergent evidence across multiple methodologies.",
     "result_type": "MAJOR"
   },
   {
@@ -37,176 +37,229 @@
       "C31",
       "C32"
     ],
-    "result": "The Piezo protein-membrane nanodome exhibits tension-dependent flattening, with nanodome height decreasing progressively from ~4.4 nm at zero tension to ~0.9 nm at 20.8 mN/m in coarse-grained simulations. Atomistic simulations corroborate this tension-induced flattening behavior.",
+    "result": "The Piezo protein-membrane nanodome exhibits tension-dependent flattening, with nanodome height decreasing from ~4 nm at zero tension to 1.6 nm at 10.8 mN/m and 0.9 nm at 20.8 mN/m. This behavior is consistently observed in both coarse-grained and atomistic simulations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C30\u2013C32 are well-supported by extensive simulation data across multiple tension values (Figures 2\u20133). The agreement between coarse-grained and atomistic approaches, despite differences in system size and timescales, strengthens confidence in the observed tension-dependent flattening mechanism.",
+    "evaluation": "Claims C3, C30\u2013C32 are well-supported by extensive simulation data across multiple tension values (Figures 2, 3). The agreement between coarse-grained and atomistic simulations strengthens confidence in the results despite differences in system size and timescale. The systematic tension-dependent response is clearly demonstrated.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
       "C10",
-      "C56",
-      "C57",
-      "C59"
+      "C68",
+      "C69",
+      "C71",
+      "C47",
+      "C50"
     ],
-    "result": "An elasticity model derived from simulation data indicates that Piezo proteins resist flattening with a force constant of ~60 pN/nm and can be approximated as a harmonic spring. The force-free conformation agrees with the curved cryo-EM structure within modeling accuracy.",
+    "result": "An elasticity model derived from simulation data indicates that Piezo protein elasticity can be approximated as a harmonic spring with a force constant of ~60 pN/nm. The force-free conformation corresponds to the curved cryo-EM structure within modeling accuracy.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10, C56\u2013C57, and C59 are supported by systematic elasticity analysis combining excess area, bending energy, and protein height measurements (Figure 5). The linear force-displacement relationship and consistency with cryo-EM structures provide a mechanistic framework, though the model relies on estimated membrane bending rigidity values and assumes negligible spontaneous curvature.",
+    "evaluation": "Claims C10, C47, C50, C68\u2013C69, C71 are supported by systematic elasticity analysis (Figure 5) showing linear force-displacement relationships. The extrapolation to zero force agrees with cryo-EM structure heights within error margins. However, the model relies on an estimated bending rigidity value (\u03ba = 25 kBT) that introduces some uncertainty into absolute force values, though the force constant is independent of this parameter.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C47",
-      "C46"
+      "C35",
+      "C38",
+      "C41"
     ],
-    "result": "Coarse-grained simulations show that the Piezo 1 ion channel widens in response to tension-induced flattening, with the distance between L2469 residues increasing by ~3\u00b11 \u00c5 at high tension (32 mN/m), comparable to the 5 \u00c5 increase observed in flattened cryo-EM structures.",
+    "result": "The nanodome shape results from a balance between opposing protein and membrane energies, with the total energy being the sum of protein elastic energy, membrane bending energy, and tension-associated energy. At equilibrium, vertical forces from protein and membrane elasticity are equal and opposite.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C47 and C46 are supported by simulation data (Figure 6) showing tension-dependent channel widening consistent with experimental cryo-EM observations. The quantitative agreement between simulation and experiment validates the computational model's ability to capture functionally relevant conformational changes, though the simulated change is somewhat smaller than the experimental value.",
+    "evaluation": "Claims C35, C38, C41 describe the theoretical framework underlying the elasticity model. These are supported by the systematic analysis of energy components (Figure 5, Figure 4\u2014supplement 1) and are consistent with established membrane mechanics principles. The force balance at equilibrium (C41) is a fundamental mechanical requirement that is demonstrated through the modeling.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C54",
-      "C55"
+      "C59",
+      "C57",
+      "C58"
     ],
-    "result": "The estimated change in excess area required for Piezo activation is ~20 nm\u00b2, which is significantly smaller than previous cryo-EM-based estimates but still large compared to the area difference between open and closed channel states, supporting the flattening-induced activation mechanism.",
+    "result": "In coarse-grained simulations, Piezo 1 exhibits widening of the ion channel in response to tension-induced flattening, with the distance between L2469 residues increasing by ~3\u00b11 \u00c5 at high tension (32 mN/m). This is comparable to the 5 \u00c5 increase observed in flattened cryo-EM structures.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54\u2013C55 are supported by the simulation-derived \u0394A values and comparison with literature. The revised estimate provides a more realistic assessment of the energetic requirements for activation while maintaining consistency with the proposed mechanistic model. However, the claim relies on inference about the relationship between excess area change and channel gating.",
+    "evaluation": "Claims C57\u2013C59 are supported by simulation data (Figure 6) showing tension-dependent channel widening for Piezo 1. The magnitude is somewhat smaller than the cryo-EM observation (3 \u00c5 vs 5 \u00c5), but this is reasonable given differences in experimental conditions. The qualitative agreement between simulations and structural data supports the mechanistic link between flattening and channel opening.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C26",
-      "C64",
-      "C65"
+      "C19",
+      "C20"
     ],
-    "result": "In tensionless membranes, the membrane surrounding the Piezo nanodome adopts a nearly catenoidal shape with zero mean curvature beyond ~17 nm from the channel center. At tensions \u22652.8 mN/m, the membrane becomes planar beyond this distance.",
+    "result": "Patch-clamp experiments show tension-induced channel opening for Piezo 1 but not Piezo 2, suggesting that Piezo 2 activation requires additional cellular factors beyond membrane tension alone.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C26, C64\u2013C65 are supported by simulation data (Figures 1c, 2d) and consistent with theoretical predictions for membrane shapes. The transition from catenoidal to planar profiles with increasing tension reflects the interplay between bending energy and tension, with the crossover length scale \u221a(\u03ba/\u03b3) providing physical justification for the observed behavior.",
+    "evaluation": "Claims C19\u2013C20 accurately cite experimental findings from Moroni et al., 2018. The interpretation (C20) is reasonable given the experimental observations, though it remains somewhat speculative. The simulation results showing no Piezo 2 channel response to tension (Figure 6g-h) are consistent with these experimental findings.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C74",
-      "C76"
+      "C66",
+      "C67"
     ],
-    "result": "The coarse-grained simulation box (50\u00d750 nm\u00b2, 4\u20138 \u03bcs) is larger and longer than atomistic simulations (33\u00d733 nm\u00b2, 300 ns) and previous studies. Analysis suggests the atomistic box size is sufficient to capture main nanodome deformations in tensionless membranes, with ~90% of excess area within 12 nm of the channel center.",
+    "result": "The estimated change in excess area required for Piezo activation (~20 nm\u00b2) is significantly smaller than previous cryo-EM-based estimates but still large compared to typical ion channel gating area changes, supporting the flattening-induced activation mechanism.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69\u2013C72, C74, and C76 are supported by systematic analysis of simulation parameters and excess area contributions. The authors appropriately acknowledge limitations of atomistic simulations while providing evidence that key features are captured. The finite-size analysis strengthens confidence in the results, though some uncertainty remains for atomistic simulations at intermediate tensions.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C66\u2013C67 provide important context by comparing simulation-derived estimates with prior work and typical channel gating. The comparison is valid and the conclusion that the area change supports the flattening mechanism is reasonable. However, the actual area change for activation remains somewhat uncertain as it depends on defining the activated state.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C77",
-      "C78",
-      "C79"
+      "C25",
+      "C26",
+      "C80"
     ],
-    "result": "Atomistic simulations were initialized from coarse-grained structures after 200 ns relaxation, during which the excess area decreased by approximately half from the initial cryo-EM-based structure. This pre-relaxation facilitates equilibration in atomistic simulations.",
+    "result": "In tensionless membranes, the membrane surrounding the Piezo nanodome adopts a nearly catenoidal shape with zero mean curvature beyond ~17 nm from the channel center, characterized by oppositely equal principal curvatures in radial and tangential directions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77\u2013C79 describe the simulation protocol and are supported by the reported excess area values during relaxation. The multi-scale approach is methodologically sound and addresses the computational challenge of equilibrating large conformational changes in atomistic simulations, though it introduces some dependence on the coarse-grained force field.",
+    "evaluation": "Claims C25\u2013C26, C80 are supported by curvature analysis of simulation data (Figure 1c) and are consistent with theoretical predictions for membrane shapes around curved inclusions. The catenoidal geometry is a well-established solution for minimal surfaces and the observation agrees with prior theoretical work (Haselwandter and MacKinnon, 2018).",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C42",
-      "C45"
+      "C81",
+      "C86"
     ],
-    "result": "The force modeling indicates that the cryo-EM structure in detergent micelles represents the force-free conformation of the protein. The force constants derived for Piezo 1 and Piezo 2 agree within error.",
+    "result": "At membrane tensions \u22652.8 mN/m, the membrane becomes planar beyond ~17 nm from the channel center, and simulation results are independent of finite membrane size due to the dominance of tension over bending energy at these length scales.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C42 and C45 are supported by the elasticity analysis (Figure 5, Figure 5\u2014figure supplement 1). The consistency between Piezo 1 and Piezo 2 force constants and the agreement with cryo-EM structures strengthen the model, though the extrapolation to zero force involves uncertainty and depends on the assumed bending rigidity value.",
+    "evaluation": "Claims C81, C86 are supported by membrane profile analysis (Figure 2d) and crossover length calculations. The physical reasoning based on the characteristic length scale \u221a(\u03ba/\u03b3) is sound. The conclusion that finite-size effects are negligible at higher tensions is well-justified, though some uncertainty remains for the tensionless case.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C60",
-      "C61"
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C93"
     ],
-    "result": "AFM measurements by Lin et al. (2019) showed a force response of ~7 pN/nm for substrate-adsorbed Piezo 1 nanodomes, which cannot be directly compared to the simulation-derived force constant due to differences in experimental conditions including substrate adhesion effects.",
+    "result": "The atomistic simulation box (33\u00d733 nm\u00b2) is larger than previous atomistic studies but smaller than coarse-grained simulations (50\u00d750 nm\u00b2). Despite shorter trajectories (300 ns vs 4-8 \u03bcs), the atomistic system size appears sufficient to capture main nanodome deformations in tensionless membranes, as excess area within 12 nm radius accounts for ~90% of total excess area.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C60\u2013C61 appropriately cite prior work and correctly identify why direct comparison is not valid. The authors recognize that substrate adhesion and the water pocket between nanodome and substrate introduce additional energy contributions not present in the membrane-tension simulations, demonstrating appropriate scientific caution.",
+    "evaluation": "Claims C87\u2013C89, C91, C93 provide important methodological validation. The size comparison (C87\u2013C89) is factual. The analysis showing that most excess area is captured within the atomistic simulation box (C91, C93) provides reasonable justification for the smaller system size, though some uncertainty remains for higher tension conditions where atomistic \u0394A values tend to be larger than coarse-grained values.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85"
+      "C97",
+      "C98",
+      "C99"
     ],
-    "result": "The simulation systems were constructed using cryo-EM structures (Piezo 2: PDB 6KG7; Piezo 1: PDB 6B3R with homology modeling), with missing loops added via MODELLER. Coarse-grained simulations used Martini 2.2 force field and atomistic simulations used CHARMM36, both with asymmetric membrane compositions mimicking cell membranes.",
+    "result": "Atomistic simulations were initialized from coarse-grained structures after 200 ns relaxation, during which excess area decreased by approximately half from the initial cryo-EM structure value of 165 nm\u00b2. This pre-relaxation facilitates equilibration in atomistic simulations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80\u2013C85 describe the computational methodology and are supported by detailed methods descriptions. The approaches are standard and appropriate for the system, with reasonable choices for force fields, membrane composition, and structure preparation. The homology modeling for Piezo 1 N-terminal helices is justified given structural similarity to Piezo 2.",
+    "evaluation": "Claims C97\u2013C99 describe the simulation protocol and are supported by the reported data. The approach of using coarse-grained pre-relaxation is methodologically sound given the computational expense of atomistic simulations. The claim that this facilitates equilibration (C99) is reasonable though somewhat inferential.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C79"
+    ],
+    "result": "Averaged membrane shapes from coarse-grained simulations are smooth without significant undulations. Bending energies calculated from 2D profiles are expected to be slightly lower than those from 3D shapes due to approximate rather than perfect rotational symmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C79 are supported by visual inspection of averaged shapes (Figures 1, 2) and by the close agreement between 2D and 3D bending energy calculations reported in the Discussion. The reasoning about symmetry effects (C79) is sound, and the small differences observed validate the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "AFM measurements by Lin et al. (2019) of substrate-adsorbed Piezo nanodomes show a smaller force response (~7 pN/nm) than the simulation-derived value (~60 pN/nm). This difference is attributed to additional factors in the AFM system including substrate adhesion energy, making direct comparison inappropriate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72\u2013C74 accurately cite prior work and provide reasonable explanation for the discrepancy between AFM and simulation results. The argument that substrate adhesion and different boundary conditions prevent direct comparison (C73\u2013C74) is sound. However, the large magnitude difference remains notable and could warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The force relation derived for Piezo 1 agrees with Piezo 2 results within error margins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by comparison of elasticity analysis for both proteins (Figure 5\u2014supplement 1). The agreement strengthens confidence that the mechanical properties are conserved between Piezo 1 and 2, though the larger errors for Piezo 1 (due to fewer tension values) introduce some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The simulation systems were constructed using full-length Piezo structures (PDB 6KG7 for Piezo 2, homology-modeled Piezo 1), with missing loops added via MODELLER. Coarse-grained simulations used Martini 2.2 force field and atomistic simulations used CHARMM36, both with asymmetric membrane compositions mimicking cell membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100\u2013C105 describe the simulation setup and are methodologically sound. The use of full-length structures, homology modeling for missing regions, established force fields, and physiologically relevant membrane compositions are all appropriate choices. These are standard methodological details that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
     "claim_ids": [
       "C1",
       "C11",
       "C12",
       "C13",
       "C14",
+      "C15",
       "C16",
       "C17",
-      "C18",
-      "C19",
-      "C20",
-      "C21"
+      "C18"
     ],
-    "result": "Background claims establish that Piezo 1 and 2 are mechanosensitive ion channels with curved structures in cryo-EM, that they induce membrane curvature in vesicles (though less than in detergent), and that Piezo 1 but not Piezo 2 responds to membrane tension alone in patch-clamp experiments.",
+    "result": "Background information on Piezo proteins: they are mechanosensitive ion channels with 38 TM helices per monomer that mediate physiological processes. Structural and experimental studies show membrane curvature induction and tension-dependent conformational changes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C11\u2013C14, C16\u2013C21 are background/context claims supported by appropriate citations to established literature. These provide the scientific foundation for the current work and are accurately represented, though C21 involves some inference about Piezo 2 requiring additional cellular factors.",
+    "evaluation": "Claims C1, C11\u2013C18 provide background context from literature and are appropriately cited. These establish the scientific foundation for the study but do not represent novel findings from the current work. The citations appear accurate based on the references provided.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R14",
+    "result_id": "R18",
     "claim_ids": [
       "C2",
       "C4",
       "C5"
     ],
-    "result": "The theoretical framework establishes that Piezo proteins induce a curved nanodome that flattens with tension, with flattening driven by the energy \u03b3\u0394A and associated with channel activation.",
+    "result": "Piezo proteins induce curved protein-membrane nanodomes that flatten with tension, with this flattening associated with activation and driven by the energy \u03b3\u0394A.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C4\u2013C5 describe the established theoretical model from prior work (Guo and MacKinnon, 2017) that motivates the current simulations. These are appropriately cited and form the conceptual basis for the computational investigation, representing accepted mechanistic understanding in the field.",
+    "evaluation": "Claims C2, C4\u2013C5 describe the established theoretical framework for Piezo mechanogating from prior work (Guo and MacKinnon, 2017). These are accurately stated and provide the conceptual basis for the current study, though they are not novel findings from this manuscript.",
     "result_type": "MINOR"
   }
 ]

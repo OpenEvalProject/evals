@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C36",
+      "C37",
+      "C40",
+      "C42",
+      "C43",
+      "C45",
+      "C54",
+      "C56"
+    ],
+    "result": "The canonical action selection model, when combined with known three-factor plasticity rules, fails to produce functional reinforcement learning because the iSPN plasticity rule incorrectly reinforces activity patterns associated with negative outcomes, strengthening inputs to iSPNs corresponding to unselected actions and making the action that led to negative outcomes more likely in the future.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge this as a key contribution. Reviewer 3 explicitly states 'The author pointed out that this is a fundamental problem for iSPNs' and describes how the authors 'demonstrated that the model based on the hypothesis can circumvent the problem of iSPNs learning to disinhibit the actions associated with negative reward errors.' The editor notes the work 'reconcile[s] realistic neural plasticity rules with the distinct functional roles' of SPNs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The efference model proposes that pathological iSPN learning is reversed when functionally opponent dSPNs and iSPNs are simultaneously activated by efferent input following action selection. This creates orthogonal 'sum' and 'difference' modes where the difference mode drives action selection and the sum mode enables learning without interfering with action selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers 1 and 2 explicitly praise this as the 'novel contribution' and 'interesting solution.' Reviewer 1 states 'the novel contribution in the proposed model is the idea that different patterns of activity drive current action selection and learning.' Reviewer 2 notes the model 'proposes a new model that is able to learn successfully in simple RL tasks.' The editor describes this as providing 'compelling evidence' for reconciling plasticity rules with SPN functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Simulations demonstrate that the efference model successfully solves go/no-go and action selection tasks regardless of reward protocol, works with nonlinear SPN responses and various plasticity rules, and multiplexes action selection and learning signals without interference.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'The author shows that their proposed model, unlike previous implementations, this model can perform well in RL tasks.' Reviewer 1 notes 'the model is able to implement reinforcement learning computations well.' No reviewer raises concerns about the simulation results, though Reviewer 2 mentions 'authors could characterize better the reliability of their experimental predictions and the description of the parameters of some of the simulations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The model predicts that opponent dSPNs and iSPNs responsible for regulating the same behavior are co-active following action selection, leading to asymmetric temporal cross-correlation between dSPN and iSPN activity. This prediction is supported by analysis of bulk photometry recordings showing skewed cross-correlation in experimental data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The model is able to recapitulate some interesting experimental findings about various activity characteristics of dSPN and iSPN pathway neuronal populations in spontaneously behaving mice.' Reviewer 3 notes the authors 'showed by analyzing the cell-type specific neural recording data by Markowitz et al. (2018) that iSPN activities tend to be anti-correlated before and after action selection.' No concerns are raised about this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The model predicts specific temporal dynamics of dSPN and iSPN activity around action selection: dSPNs and iSPNs exhibit similar selectivities, dSPNs are above baseline before action onset while iSPNs are below baseline, and both show increased activity after action selection. Analysis of calcium imaging data from spontaneous behavior shows 'remarkable agreement' with these predictions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'They test some of these predictions and show that the dynamics of dSPNs and iSPNs correspond to model predictions.' The manuscript text describes 'remarkable agreement with the model prediction' for the experimental data. Reviewer 2 notes the model 'can be used to understand striatal dynamics across direct and indirect SPNs in future experiments,' indicating acceptance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C123",
+      "C128",
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The nonuniformity of dSPN and iSPN plasticity rules enables the striatum to implement off-policy reinforcement learning algorithms, allowing learning from actions driven by other neural pathways. Efferent excitation of opponent dSPNs/iSPNs is necessary for this capability, and simulations show efferent activity is critical for successful learning when action selection is not fully determined by the striatum.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The authors also show that their proposed model can implement off-policy reinforcement learning algorithms with biologically realistic learning rules. This is interesting since off-policy learning provides some unique computational benefits.' Reviewer 2 acknowledges the model 'show[s] how their model is able to implement off-policy reinforcement learning.' However, Reviewer 3 raises a significant concern about terminology, stating 'It is not correct to call the action value learning using the externally-selected action as \"off-policy\"' and notes confusion about the distinction from TD learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C135",
+      "C143",
+      "C144",
+      "C147",
+      "C148"
+    ],
+    "result": "Off-policy learning requires a dopaminergic signal combining state-based reward prediction error with action prediction error (Q-learning). Analysis of dopamine data from dorsolateral striatum shows the Q-learning model matches experimental data significantly better than alternatives, supporting the model of dorsal striatum as an off-policy reinforcement learning system.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewers 1 and 2 do not explicitly challenge this result, Reviewer 3 raises fundamental concerns about the off-policy framework and terminology. Reviewer 3 states 'in the immediate reward setting tested in this paper, action values are independent of the policy, so there is no distinction between on-policy vs. off-policy' and 'To really compare the different forms of TD, multi-step RL tasks should be used.' This suggests the evidence for off-policy learning and the dopamine analysis may not be as definitive as claimed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C38",
+      "C71",
+      "C95"
+    ],
+    "result": "The model provides an explanation for the paradox that dSPN and iSPN activities are positively correlated despite their opponent causal functions, and demonstrates that the canonical action selection model's SPN representation is inconsistent with experimental recordings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states the paper 'proposes a new model that describes how distinct learning rules in direct and indirect pathway striatal neurons allows them to implement reinforcement learning models' and 'explains recent experimental results.' The editor notes the work provides 'compelling evidence' for 'explaining a key aspect of striatal function.' No reviewer challenges these interpretive claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims about SPNs, basal ganglia reinforcement learning, dopamine modulation of plasticity, and prior models are established through citations to existing literature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard background claims supported by citations. No reviewer questions these foundational statements. Reviewer 2 notes 'Despite the success of reward prediction errors at characterizing the responses of dopamine neurons as the temporal difference error within an RL framework, the implementation of RL algorithms in the rest of the basal ganglia has been unclear,' acknowledging the established context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Supporting theoretical analysis and simulation details about dSPN plasticity being consistent with learning, competing effects of dSPN and iSPN plasticity, alternative solutions involving differential learning rates, and simulation methodology.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are supporting analytical and methodological claims that underpin the main results. Reviewer 2 notes 'The authors could characterize better the reliability of their experimental predictions and the description of the parameters of some of the simulations,' suggesting minor concerns about methodological detail but not fundamental disagreement. Reviewer 3's comment about temporal credit assignment ('Having two action representations within each action step make temporal credit assignment more difficult') is noted but does not constitute rejection of these supporting claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C94",
+      "C96",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C138"
+    ],
+    "result": "Supporting claims about distributed representations, model capabilities with delayed rewards, the role of motor cortex and cerebellum, definitions of off-policy learning, and actor-critic architectures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are supporting conceptual and definitional claims. While Reviewer 3 challenges the specific use of 'off-policy' terminology, the basic conceptual framework is not rejected. Reviewer 1 notes these ideas 'may have interesting implications regarding why some processes selectively affect ongoing behavior and others affect learning.'",
+    "result_type": "MINOR"
+  }
+]

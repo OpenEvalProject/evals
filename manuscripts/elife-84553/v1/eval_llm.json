@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C85",
+      "C91",
+      "C92"
+    ],
+    "result": "Soil eDNA metabarcoding reliably identifies k\u0101k\u0101p\u014d and other vertebrate species with high spatial and temporal resolution. The authors detected 21 avian and mammalian species from soil samples, with k\u0101k\u0101p\u014d DNA signal highest at display sites, dropping rapidly with distance, and nearly absent in recently abandoned nests. The method distinguished k\u0101k\u0101p\u014d from closely related Nestor parrots and detected threatened and invasive species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C44-C52, C85, C91-C92 collectively demonstrate successful metabarcoding-based species detection with appropriate controls (C37-C39, C43), spatial sampling design (C115-C120), and validation through negative controls in Nestor aviaries. The data in Figure 1 and Supplementary files support the spatial and temporal resolution claims, though the temporal resolution inference (C50) is based on limited sampling at abandoned nests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C93",
+      "C94"
+    ],
+    "result": "Non-selective nanopore sequencing outperforms selective sequencing for low-abundance target DNA (<0.1%). The authors sequenced three soil samples and found that non-selective sequencing produced higher percentages of mapped reads and bases (0.069-0.139%) compared to selective sequencing (0.015-0.040%), identifying 21-30 haplotypes per sample that matched the k\u0101k\u0101p\u014d population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58, C93-C94 are supported by experimental data in Table 1 and Figure 2. The comparison between selective and non-selective approaches is direct for samples 3 and 35 (C54), providing clear evidence. The technical explanation (C94) is supported by communication with ONT. However, the sample size is limited (n=2 for direct comparison), and the conclusion may be specific to the low target DNA proportion observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C35",
+      "C36",
+      "C80"
+    ],
+    "result": "Individual k\u0101k\u0101p\u014d identification from soil eDNA is achieved through haplotype agreement scoring. Sample 3 correctly identified Moss (best hit), sample 11 identified Merv (second-best hit after Sinbad), and sample 35 identified Nora's daughter Zephyr (second-best hit after Sinbad). Sinbad's presence across all samples was confirmed by radio transmitter metadata showing he visited the sites three days before sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68, C70 are supported by haplotype agreement scores (Figure 3a-c), metadata validation (C62-C64), and independent confirmation via radio tracking (C70, Figure 3\u2014supplement 1). The approach successfully identified the correct individual for sample 3 (C65) and explained mixed signals in samples 11 and 35 (C66-C68). However, the method's limitation in distinguishing Nora from her offspring (C103) indicates challenges in highly inbred populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Maximum likelihood and Bayesian inference approaches estimate the number of contributing individuals and confirm mixed DNA samples. Sample 3 likely contains DNA from three individuals (MLE=1.4\u00d710\u207b\u2076), sample 11 from two individuals (MLE=7.2\u00d710\u207b\u2074), and sample 35 from more than five individuals. These methods confirmed Sinbad's unexpected presence across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74, C105-C107 are supported by maximum likelihood calculations and Bayesian inference results (Figure 3d-e). The approaches converge on similar conclusions and are validated by independent metadata (C70). The increasing MLE with more individuals for sample 35 (C74) appropriately indicates uncertainty in the exact number. The methods successfully handle mixed samples, which is important for conservation applications (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C98"
+    ],
+    "result": "Nanopore sequencing simultaneously characterizes the soil microbiome, with 97% of reads classified as bacterial (predominantly Bradyrhizobium and Streptomyces) and 3% as eukaryotic, providing a holistic ecosystem view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78, C98 are supported by background DNA analysis using EPI2ME WIMP (C143). The bacterial composition is consistent with typical soil environments. This demonstrates an additional benefit of the shotgun sequencing approach, though the microbiome analysis appears secondary to the main conservation application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A few reads of invasive Polynesian rat (Rattus exulans) were detected on Whenua Hou, a predator-free sanctuary. The authors hypothesize the DNA was either transported by avian predators or represents laboratory contamination from ancient samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 reports detection but C89-C90 present competing hypotheses without resolution. The evidence is described as \"very weak\" and limited to one sample, making it unclear whether this represents a true conservation concern or contamination. The negative controls (C37-C39) argue against systematic contamination, but the specific source of rat DNA remains unresolved. This finding requires follow-up investigation before conservation action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C108"
+    ],
+    "result": "The shotgun sequencing approach enables assessment of both species variety and within-species genomic variability, overcoming limitations of PCR-based methods including allelic dropout, amplification of related species, and need for expensive pre-processing while creating unbiased genomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84, C108 are supported by the experimental results demonstrating both species detection (metabarcoding) and individual identification (haplotype analysis). The advantages over PCR-based methods (C81-C82) are supported by citations and demonstrated by successful individual identification. However, the claim of \"unbiased genomic data\" (C84) is somewhat overstated given the low target DNA recovery (<0.1%) and the need for stringent haplotype filtering (C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The haplotype agreement approach requires exact overlap to account for nanopore sequencing errors, resulting in sparse haplotypes (21-30 per sample). While this limits resolution in highly inbred populations (unable to distinguish Nora from offspring), the accuracy is sufficient for delineating families and subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100, C103-C104 accurately describe the method's current capabilities and limitations. The stringent filtering (C99) is justified given nanopore error rates, and the limitation with Nora/offspring (C103) is honestly reported. Claims C101-C102 about future improvements are speculative but reasonable given technological trends. The assessment that current accuracy suffices for family/subpopulation delineation (C104) is supported by the successful identification results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors anticipate future improvements in selective sequencing efficiency, potential for targeting specific genomic regions, and applications including assessing genetic health and adaptive potential of wild populations, detecting remnant populations, and aiding global conservation management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97, C109-C112 are primarily speculative about future applications and improvements. While the speculation is reasonable based on the proof-of-concept results, these represent potential rather than demonstrated capabilities. The claims appropriately use language like \"anticipate,\" \"might,\" and \"potential,\" but lack experimental validation. These should be considered discussion points rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Quality control measures including negative controls (n=5), technical replicates, and assessment of PCR inhibition demonstrate no cross-contamination. Seven dropouts occurred at six sites, likely due to degraded DNA or absence of vertebrate DNA rather than PCR inhibition (Cq <35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C43 demonstrate appropriate experimental controls. The negative control results (C37) and replicate consistency (C43) support data quality. Claims C40-C42 appropriately characterize dropouts, with C41 providing evidence against PCR inhibition and C42 offering a reasonable hypothesis. The one negative control with human DNA (C37) is appropriately noted and does not indicate systematic contamination given the batch-specific controls (C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction contextualizes the study within conservation biology, describing population declines, the importance of genomic diversity, evolution of eDNA methods from species detection to individual identification, and recent advances in shotgun sequencing approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 provide literature context supported by appropriate citations. These are primarily review-style claims establishing the scientific background and motivation for the study. The citations appear appropriate for the claims made, though the accuracy of the cited work is not independently verified here. These claims establish the novelty of the current work relative to prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The k\u0101k\u0101p\u014d is a critically endangered New Zealand endemic reduced to 252 individuals (as of 15/08/2022) due to habitat fragmentation and invasive predators. The species is highly inbred with low reproductive success and requires intensive monitoring through regular handling, imposing financial, organizational, and welfare burdens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 provide factual background on the study species supported by citations (C26-C27) and stated knowledge (C23-C25, C28-C31). The specific population count (C25) and date provide verifiable information. These claims establish the conservation context and justify the need for non-invasive monitoring methods. The characterization of monitoring burdens (C29-C31) motivates the study's practical application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The methods describe soil sampling on Whenua Hou (n=37 samples at 6 sites) and Nestor aviaries (n=4), DNA extraction with negative controls, metabarcoding using 12S rRNA primers, nanopore sequencing with selective and non-selective approaches, bioinformatic processing including variant calling, haplotype phasing, and comparison to population genomic data (n=169 k\u0101k\u0101p\u014d), and statistical analyses including Bayesian inference and maximum likelihood estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C144 provide detailed methodological information with appropriate citations for software and protocols. The methods appear technically sound with appropriate controls (C124), replication (C117), and contamination prevention measures. The bioinformatic pipeline is clearly described with version numbers and parameters. The use of existing population genomic data (C139-C140) provides essential reference information for individual identification. However, some computational details like random seeds are not mentioned, which could affect reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The New Zealand lesser short-tailed bat (Mystacina tuberculata) is described as elusive and threatened.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a factual statement about the conservation status of a detected species. This is stated as general knowledge and is consistent with the species being noteworthy in the detection results. The claim supports the conservation relevance of the multi-species detection capability.",
+    "result_type": "MINOR"
+  }
+]

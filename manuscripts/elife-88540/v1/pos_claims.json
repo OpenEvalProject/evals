@@ -286,17 +286,17 @@
     "len": 94
   },
   {
-    "query": "We averaged the self-citation rates across each academic age, only including those ages with at least 50 papers in the dataset, and found marked increases in self-citation rate with greater academic age (Figure 2a).",
-    "matched_segment": "We averaged the self-citation rates across each academic age, only including those ages with at least 50 papers in the dataset, and found marked increases in self-citation rate with greater academic age (Figure 2a).",
+    "query": "Academic age appears to be a more robust indicator of self-citation than authorship position; for a given academic age, First Author and Last Author self-citation rates are comparable (Figure 2b).",
+    "matched_segment": "Academic age appears to be a more robust indicator of self-citation than authorship position; for a given academic age, First Author and Last Author self-citation rates are comparable (Figure 2b).",
     "start": {
       "xpath": "/article/body/sec[2]/sec[5]/p",
-      "char_offset": 358
+      "char_offset": 708
     },
     "stop": {
       "xpath": "/article/body/sec[2]/sec[5]/p",
-      "char_offset": 573
+      "char_offset": 904
     },
-    "len": 215
+    "len": 196
   },
   {
     "query": "For instance, at 10 years, the self-citation rate for First Authors is about 5%, while this number increases to over 10% at 30 years.",
@@ -310,19 +310,6 @@
       "char_offset": 707
     },
     "len": 133
-  },
-  {
-    "query": "Academic age appears to be a more robust indicator of self-citation than authorship position; for a given academic age, First Author and Last Author self-citation rates are comparable (Figure 2b).",
-    "matched_segment": "Academic age appears to be a more robust indicator of self-citation than authorship position; for a given academic age, First Author and Last Author self-citation rates are comparable (Figure 2b).",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[5]/p",
-      "char_offset": 708
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[5]/p",
-      "char_offset": 904
-    },
-    "len": 196
   },
   {
     "query": "Self-citation rates in the highest self-citing countries double that of the lowest for the First and Last Authors.",
@@ -362,6 +349,19 @@
       "char_offset": 1287
     },
     "len": 171
+  },
+  {
+    "query": "Based on Scopus abstract data for papers from 2016 to 2020, we developed a topic model using latent Dirichlet allocation (LDA).",
+    "matched_segment": "Based on Scopus abstract data for papers from 2016 to 2020, we developed a topic model using latent Dirichlet allocation (LDA).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 94
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
+      "char_offset": 221
+    },
+    "len": 127
   },
   {
     "query": "We generally found that clinical trial research had the highest self-citation rates for First Authors at 6.07% (95% CI: 5.90%, 6.22%)",
@@ -520,30 +520,17 @@
     "len": 127
   },
   {
-    "query": "For instance, in the previous five years (2016–2020), there were 10,155 papers by early-career women authors and 10,694 by early-career men authors.",
-    "matched_segment": "For instance, in the previous five years (2016–2020), there were 10,155 papers by early-career women authors and 10,694 by early-career men authors.",
+    "query": "For instance, in the previous five years (2016–2020), there were 10,155 papers by early-career women authors and 10,694 by early-career men authors. Women authors had 600,262 references and 13,426 self-citations (2.24% self-citation rate), while men authors had 617,881 references and 18,399 self-citations (2.98% self-citation rate).",
+    "matched_segment": "For instance, in the previous five years (2016–2020), there were 10,155 papers by early-career women authors and 10,694 by early-career men authors. Women authors had 600,262 references and 13,426 self-citations (2.24% self-citation rate), while men authors had 617,881 references and 18,399 self-citations (2.98% self-citation rate).",
     "start": {
       "xpath": "/article/body/sec[2]/sec[8]/p[6]",
       "char_offset": 487
     },
     "stop": {
       "xpath": "/article/body/sec[2]/sec[8]/p[6]",
-      "char_offset": 635
-    },
-    "len": 148
-  },
-  {
-    "query": "Women authors had 600,262 references and 13,426 self-citations (2.24% self-citation rate), while men authors had 617,881 references and 18,399 self-citations (2.98% self-citation rate).",
-    "matched_segment": "Women authors had 600,262 references and 13,426 self-citations (2.24% self-citation rate), while men authors had 617,881 references and 18,399 self-citations (2.98% self-citation rate).",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[8]/p[6]",
-      "char_offset": 636
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[8]/p[6]",
       "char_offset": 821
     },
-    "len": 185
+    "len": 334
   },
   {
     "query": "This equated to a 33.13% higher self-citation rate for men than women during the first ten years of their careers (p=2.9e-4).",
@@ -557,19 +544,6 @@
       "char_offset": 947
     },
     "len": 125
-  },
-  {
-    "query": "This trend started early in the career (academic age ≤ 10 years), where men had significantly more papers than women (p=2.9e-4).",
-    "matched_segment": "This trend started early in the career (academic age ≤ 10 years), where men had significantly more papers than women (p=2.9e-4).",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[8]/p[7]",
-      "char_offset": 513
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[8]/p[7]",
-      "char_offset": 641
-    },
-    "len": 128
   },
   {
     "query": "For example, at an academic age of 10 years, men were authors on an average of 42.32 (s.d.: 1.76) papers, and women authored 30.09 (s.d.: 0.96) papers on average.",
@@ -598,30 +572,43 @@
     "len": 133
   },
   {
-    "query": "We found that papers from LMIC institutions had significantly lower self-citation counts (–0.138 for First Authors, –0.184 for Last Authors) and rates (–12.7% for First Authors, –23.7% for Last Authors) compared to non-LMIC institutions.",
-    "matched_segment": "We found that papers from LMIC institutions had significantly lower self-citation counts (–0.138 for First Authors, –0.184 for Last Authors) and rates (–12.7% for First Authors, –23.7% for Last Authors) compared to non-LMIC institutions.",
+    "query": "We found that papers from LMIC institutions had significantly lower self-citation counts (–0.138 for First Authors, –0.184 for Last Authors)",
+    "matched_segment": "We found that papers from LMIC institutions had significantly lower self-citation counts (–0.138 for First Authors, –0.184 for Last Authors)",
     "start": {
       "xpath": "/article/body/sec[2]/sec[9]/p[4]",
       "char_offset": 308
     },
     "stop": {
       "xpath": "/article/body/sec[2]/sec[9]/p[4]",
-      "char_offset": 545
+      "char_offset": 448
     },
-    "len": 237
+    "len": 140
   },
   {
-    "query": "We found that papers from LMIC institutions had significantly lower self-citation counts (–0.138 for First Authors, –0.184 for Last Authors) and rates (–12.7% for First Authors, –23.7% for Last Authors) compared to non-LMIC institutions.",
-    "matched_segment": "We found that papers from LMIC institutions had significantly lower self-citation counts (–0.138 for First Authors, –0.184 for Last Authors) and rates (–12.7% for First Authors, –23.7% for Last Authors) compared to non-LMIC institutions.",
+    "query": "and rates (–12.7% for First Authors, –23.7% for Last Authors) compared to non-LMIC institutions.",
+    "matched_segment": "and rates (–12.7% for First Authors, –23.7% for Last Authors) compared to non-LMIC institutions.",
     "start": {
       "xpath": "/article/body/sec[2]/sec[9]/p[4]",
-      "char_offset": 308
+      "char_offset": 449
     },
     "stop": {
       "xpath": "/article/body/sec[2]/sec[9]/p[4]",
       "char_offset": 545
     },
-    "len": 237
+    "len": 96
+  },
+  {
+    "query": "Among paper characteristics, a greater number of references was associated with higher self-citation counts and lower self-citation rates (Figure 6).",
+    "matched_segment": "Among paper characteristics, a greater number of references was associated with higher self-citation counts and lower self-citation rates (Figure 6).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[9]/p[5]",
+      "char_offset": 149
+    },
+    "len": 149
   },
   {
     "query": "Review articles were associated with lower self-citation counts and rates.",
@@ -635,19 +622,6 @@
       "char_offset": 355
     },
     "len": 74
-  },
-  {
-    "query": "Interestingly, self-citations were greater for a small number of authors, although the effect diminished after about five authors.",
-    "matched_segment": "Interestingly, self-citations were greater for a small number of authors, although the effect diminished after about five authors.",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[9]/p[5]",
-      "char_offset": 150
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[9]/p[5]",
-      "char_offset": 280
-    },
-    "len": 130
   },
   {
     "query": "Notably, Neuroscience was associated with the fewest number of papers per author.",
@@ -780,19 +754,6 @@
     "len": 224
   },
   {
-    "query": "For example, clinical trials had the highest self-citation rate, which may relate to the relatively high number of authors per paper in clinical trial research or the fact that clinical trial research often builds upon previous interventions (e.g. Phase 1 or 2 trials).",
-    "matched_segment": "For example, clinical trials had the highest self-citation rate, which may relate to the relatively high number of authors per paper in clinical trial research or the fact that clinical trial research often builds upon previous interventions (e.g. Phase 1 or 2 trials).",
-    "start": {
-      "xpath": "/article/body/sec[3]/sec[3]/p[2]",
-      "char_offset": 227
-    },
-    "stop": {
-      "xpath": "/article/body/sec[3]/sec[3]/p[2]",
-      "char_offset": 496
-    },
-    "len": 269
-  },
-  {
     "query": "The higher self-citation rate of men compared to women, without considering other covariates, aligns with the previous self-citation literature (Dworkin et al., 2020; King et al., 2017; Mishra et al., 2018; Azoulay and Lynn, 2020).",
     "matched_segment": "The higher self-citation rate of men compared to women, without considering other covariates, aligns with the previous self-citation literature (Dworkin et al., 2020; King et al., 2017; Mishra et al., 2018; Azoulay and Lynn, 2020).",
     "start": {
@@ -832,69 +793,56 @@
     "len": 163
   },
   {
-    "query": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022)",
-    "matched_segment": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022)",
+    "query": "collaboration networks (Zeng et al., 2016; Li et al., 2022)",
+    "matched_segment": "collaboration networks (Zeng et al., 2016; Li et al., 2022)",
     "start": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
-      "char_offset": 513
+      "char_offset": 678
     },
     "stop": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
       "char_offset": 737
     },
-    "len": 224
+    "len": 59
   },
   {
-    "query": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022), awards (Melnikoff and Valian, 2019)",
-    "matched_segment": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022), awards (Melnikoff and Valian, 2019)",
+    "query": "awards (Melnikoff and Valian, 2019)",
+    "matched_segment": "awards (Melnikoff and Valian, 2019)",
     "start": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
-      "char_offset": 513
+      "char_offset": 739
     },
     "stop": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
       "char_offset": 774
     },
-    "len": 261
+    "len": 35
   },
   {
-    "query": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022), awards (Melnikoff and Valian, 2019), editorial boards (Palser et al., 2022)",
-    "matched_segment": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022), awards (Melnikoff and Valian, 2019), editorial boards (Palser et al., 2022)",
+    "query": "editorial boards (Palser et al., 2022)",
+    "matched_segment": "editorial boards (Palser et al., 2022)",
     "start": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
-      "char_offset": 513
+      "char_offset": 776
     },
     "stop": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
       "char_offset": 814
     },
-    "len": 301
+    "len": 38
   },
   {
-    "query": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022), awards (Melnikoff and Valian, 2019), editorial boards (Palser et al., 2022), and faculty positions (Smith, 1993; Nguyen et al., 2021; Wapman et al., 2022).",
-    "matched_segment": "This result overall points toward a more general underrepresentation of women in science, such as in publication counts (Larivière et al., 2013; West et al., 2013), collaboration networks (Zeng et al., 2016; Li et al., 2022), awards (Melnikoff and Valian, 2019), editorial boards (Palser et al., 2022), and faculty positions (Smith, 1993; Nguyen et al., 2021; Wapman et al., 2022).",
+    "query": "and faculty positions (Smith, 1993; Nguyen et al., 2021; Wapman et al., 2022).",
+    "matched_segment": "and faculty positions (Smith, 1993; Nguyen et al., 2021; Wapman et al., 2022).",
     "start": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
-      "char_offset": 513
+      "char_offset": 816
     },
     "stop": {
       "xpath": "/article/body/sec[3]/sec[4]/p",
       "char_offset": 894
     },
-    "len": 381
-  },
-  {
-    "query": "In other words, women have a lower self-citation rate than men in the Neuroscience literature because they are not given the same opportunity, such as through prior publications, to self-cite.",
-    "matched_segment": "In other words, women have a lower self-citation rate than men in the Neuroscience literature because they are not given the same opportunity, such as through prior publications, to self-cite.",
-    "start": {
-      "xpath": "/article/body/sec[3]/sec[4]/p",
-      "char_offset": 1084
-    },
-    "stop": {
-      "xpath": "/article/body/sec[3]/sec[4]/p",
-      "char_offset": 1276
-    },
-    "len": 192
+    "len": 78
   },
   {
     "query": "First, our analyses were restricted to the top-ranked Neurology, Neuroscience, and Psychiatry journals, and the generalizability of these findings to a wider variety of journals has yet to be determined.",
@@ -908,6 +856,58 @@
       "char_offset": 257
     },
     "len": 203
+  },
+  {
+    "query": "As such, it is possible that the selection of journals based on high impact factor skews the results toward higher self-citation rates compared to the entire field of Neuroscience.",
+    "matched_segment": "As such, it is possible that the selection of journals based on high impact factor skews the results toward higher self-citation rates compared to the entire field of Neuroscience.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 337
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 517
+    },
+    "len": 180
+  },
+  {
+    "query": "Fourth, as described above, we evaluated gender differences with gender assignment based on name, and this does not account for nonbinary, transgender, or intersex authors.",
+    "matched_segment": "Fourth, as described above, we evaluated gender differences with gender assignment based on name, and this does not account for nonbinary, transgender, or intersex authors.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 1091
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 1263
+    },
+    "len": 172
+  },
+  {
+    "query": "Sixth, our modeling techniques are not useful for prediction due to the inherently large variability in self-citation rates across authors and papers, but they instead provide insight into broader trends.",
+    "matched_segment": "Sixth, our modeling techniques are not useful for prediction due to the inherently large variability in self-citation rates across authors and papers, but they instead provide insight into broader trends.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 1387
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 1591
+    },
+    "len": 204
+  },
+  {
+    "query": "Seventh, the analysis presented in this work is not causal.",
+    "matched_segment": "Seventh, the analysis presented in this work is not causal.",
+    "start": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 1744
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/sec[5]/p",
+      "char_offset": 1803
+    },
+    "len": 59
   },
   {
     "query": "According to The Committee on Publication Ethics (COPE), 'citations where the motivations are merely self promotional…violates publication ethics and is unethical' (COPE Council, 2019).",
@@ -1027,30 +1027,30 @@
     "len": 84
   },
   {
-    "query": "We performed 1000 iterations of bootstrap resampling to obtain confidence intervals for all analyses.",
-    "matched_segment": "We performed 1000 iterations of bootstrap resampling to obtain confidence intervals for all analyses.",
+    "query": "Confidence intervals were computed with 1000 iterations of bootstrap resampling at the article level.",
+    "matched_segment": "Confidence intervals were computed with 1000 iterations of bootstrap resampling at the article level.",
     "start": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
+      "xpath": "/article/body/sec[4]/sec[8]/p[1]",
       "char_offset": 0
     },
     "stop": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
+      "xpath": "/article/body/sec[4]/sec[8]/p[1]",
       "char_offset": 101
     },
     "len": 101
   },
   {
-    "query": "We additionally performed 10,000 iterations of permutation testing to obtain two-sided p values for all significance tests.",
-    "matched_segment": "We additionally performed 10,000 iterations of permutation testing to obtain two-sided p values for all significance tests.",
+    "query": "P values were computed with permutation testing using 10,000 permutations, with the exception of regression p values and p values from model coefficients.",
+    "matched_segment": "P values were computed with permutation testing using 10,000 permutations, with the exception of regression p values and p values from model coefficients.",
     "start": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
-      "char_offset": 102
+      "xpath": "/article/body/sec[4]/sec[9]/p[1]",
+      "char_offset": 0
     },
     "stop": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
-      "char_offset": 225
+      "xpath": "/article/body/sec[4]/sec[9]/p[1]",
+      "char_offset": 154
     },
-    "len": 123
+    "len": 154
   },
   {
     "query": "All P values are reported after applying the Benjamini/Hochberg (Benjamini and Hochberg, 1995) false discovery rate (FDR) correction, unless otherwise specified.",
@@ -1066,82 +1066,56 @@
     "len": 161
   },
   {
-    "query": "Importantly, we accounted for the nested structure of the data in bootstrapping and permutation tests by forming co-authorship exchangeability blocks.",
-    "matched_segment": "Importantly, we accounted for the nested structure of the data in bootstrapping and permutation tests by forming co-authorship exchangeability blocks.",
+    "query": "Latent Dirichlet Allocation (LDA) (Blei et al., 2003; Hoffman et al., 2010) was implemented with the Gensim package Rehurek and Sojka, 2010 in Python.",
+    "matched_segment": "Latent Dirichlet Allocation (LDA) (Blei et al., 2003; Hoffman et al., 2010) was implemented with the Gensim package Rehurek and Sojka, 2010 in Python.",
     "start": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
-      "char_offset": 388
+      "xpath": "/article/body/sec[4]/sec[5]/p[1]",
+      "char_offset": 0
     },
     "stop": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
-      "char_offset": 538
+      "xpath": "/article/body/sec[4]/sec[5]/p[1]",
+      "char_offset": 150
     },
     "len": 150
   },
   {
-    "query": "Based on Scopus abstract data for papers from 2016 to 2020, we developed a topic model using latent Dirichlet allocation (LDA).",
-    "matched_segment": "Based on Scopus abstract data for papers from 2016 to 2020, we developed a topic model using latent Dirichlet allocation (LDA).",
+    "query": "To compute gender probabilities, we submitted given names of all First and Last Authors to the Genderize.io API.",
+    "matched_segment": "To compute gender probabilities, we submitted given names of all First and Last Authors to the Genderize.io API.",
     "start": {
-      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
-      "char_offset": 94
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[7]/p[1]",
-      "char_offset": 221
-    },
-    "len": 127
-  },
-  {
-    "query": "The topic number was chosen as 13 with a parameter search (Figure 4—figure supplement 1).",
-    "matched_segment": "The topic number was chosen as 13 with a parameter search (Figure 4—figure supplement 1).",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[7]/p[2]",
-      "char_offset": 106
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[7]/p[2]",
-      "char_offset": 196
-    },
-    "len": 90
-  },
-  {
-    "query": "There are clear limitations to these types of packages, as described by Dworkin et al., 2020, because they assume genders are binary, and they do not account for authors who identify as nonbinary, transgender, or intersex.",
-    "matched_segment": "There are clear limitations to these types of packages, as described by Dworkin et al., 2020, because they assume genders are binary, and they do not account for authors who identify as nonbinary, transgender, or intersex.",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[8]/p[2]",
-      "char_offset": 171
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[8]/p[2]",
-      "char_offset": 393
-    },
-    "len": 222
-  },
-  {
-    "query": "We used generalized additive models (GAMs) to model the number and rate of self-citations for First Authors and Last Authors separately.",
-    "matched_segment": "We used generalized additive models (GAMs) to model the number and rate of self-citations for First Authors and Last Authors separately.",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
+      "xpath": "/article/body/sec[4]/sec[6]/p[1]",
       "char_offset": 0
     },
     "stop": {
-      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
-      "char_offset": 136
+      "xpath": "/article/body/sec[4]/sec[6]/p[1]",
+      "char_offset": 112
     },
-    "len": 136
+    "len": 112
   },
   {
-    "query": "The data were randomly subsampled so that each author only appeared in one paper.",
-    "matched_segment": "The data were randomly subsampled so that each author only appeared in one paper.",
+    "query": "Each name was assigned a probability of a name belonging to a woman or man, and we only used names for which Genderize.io assigned at least an 80% probability.",
+    "matched_segment": "Each name was assigned a probability of a name belonging to a woman or man, and we only used names for which Genderize.io assigned at least an 80% probability.",
     "start": {
-      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
-      "char_offset": 137
+      "xpath": "/article/body/sec[4]/sec[6]/p[1]",
+      "char_offset": 113
     },
     "stop": {
-      "xpath": "/article/body/sec[2]/sec[9]/p[2]",
-      "char_offset": 218
+      "xpath": "/article/body/sec[4]/sec[6]/p[1]",
+      "char_offset": 272
     },
-    "len": 81
+    "len": 159
+  },
+  {
+    "query": "For our models, we used generalized additive models from mgcv's 'gam' function in R Wood, 2017.",
+    "matched_segment": "For our models, we used generalized additive models from mgcv's 'gam' function in R Wood, 2017.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[10]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[10]/p[3]",
+      "char_offset": 95
+    },
+    "len": 95
   },
   {
     "query": "We empirically selected a Tweedie distribution (Dunn and Smyth, 2005) with a log link function and P=1.2.",
@@ -1168,5 +1142,31 @@
       "char_offset": 734
     },
     "len": 154
+  },
+  {
+    "query": "By this measure (and excluding self-citations to the First and Last Authors of our current paper), our references contain 12.53% woman(first)/woman(last), 19.27% man/woman, 13.17% woman/man, and 55.03% man/man.",
+    "matched_segment": "By this measure (and excluding self-citations to the First and Last Authors of our current paper), our references contain 12.53% woman(first)/woman(last), 19.27% man/woman, 13.17% woman/man, and 55.03% man/man.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[12]/p",
+      "char_offset": 806
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[12]/p",
+      "char_offset": 1016
+    },
+    "len": 210
+  },
+  {
+    "query": "By this measure (and excluding self-citations), our references contain 7.46% author of color (first)/author of color(last), 17.45% white author/author of color, 14.81% author of color/white author, and 60.29% white author/white author.",
+    "matched_segment": "By this measure (and excluding self-citations), our references contain 7.46% author of color (first)/author of color(last), 17.45% white author/author of color, 14.81% author of color/white author, and 60.29% white author/white author.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[12]/p",
+      "char_offset": 1514
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[12]/p",
+      "char_offset": 1749
+    },
+    "len": 235
   }
 ]

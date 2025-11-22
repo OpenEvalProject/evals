@@ -546,45 +546,6 @@
     "len": 146
   },
   {
-    "query": "We compare Photo-SynthSeg against 'SAMSEG', which is (to the best of our knowledge) the only available competing method.",
-    "matched_segment": "We compare Photo-SynthSeg against 'SAMSEG', which is (to the best of our knowledge) the only available competing method.",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[2]",
-      "char_offset": 0
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[2]",
-      "char_offset": 120
-    },
-    "len": 120
-  },
-  {
-    "query": "SAMSEG is a segmentation algorithm which we originally conceived for brain MRI (Puonti et al., 2016), and which employs Bayesian techniques to segment MRI scans irrespective of their contrast and pulse sequence.",
-    "matched_segment": "SAMSEG is a segmentation algorithm which we originally conceived for brain MRI (Puonti et al., 2016), and which employs Bayesian techniques to segment MRI scans irrespective of their contrast and pulse sequence.",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[2]",
-      "char_offset": 121
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[2]",
-      "char_offset": 332
-    },
-    "len": 211
-  },
-  {
-    "query": "As we showed in Tregidgo et al., 2020, this technique can be adapted to 3D reconstructed photographs.",
-    "matched_segment": "As we showed in Tregidgo et al., 2020, this technique can be adapted to 3D reconstructed photographs.",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[2]",
-      "char_offset": 333
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[2]",
-      "char_offset": 434
-    },
-    "len": 101
-  },
-  {
     "query": "As opposed to SAMSEG, Photo-SynthSeg eﬀectively 'interpolates' the segmentation in between slices, independently of their thickness, and is more robust against uneven intensities than the Bayesian method.",
     "matched_segment": "As opposed to SAMSEG, Photo-SynthSeg eﬀectively 'interpolates' the segmentation in between slices, independently of their thickness, and is more robust against uneven intensities than the Bayesian method.",
     "start": {
@@ -622,19 +583,6 @@
       "char_offset": 910
     },
     "len": 199
-  },
-  {
-    "query": "To evaluate Photo-SynthSeg and SAMSEG quantitatively, we computed Dice scores against manual segmentations made on a single selected slice per subject.",
-    "matched_segment": "To evaluate Photo-SynthSeg and SAMSEG quantitatively, we computed Dice scores against manual segmentations made on a single selected slice per subject.",
-    "start": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
-      "char_offset": 0
-    },
-    "stop": {
-      "xpath": "/article/body/sec[2]/sec[2]/p[3]",
-      "char_offset": 151
-    },
-    "len": 151
   },
   {
     "query": "The results show that Photo-SynthSeg generally outperforms SAMSEG, producing Dice scores over 0.8 for all structures except the amygdala – even though SAMSEG is better at segmenting the ventricles, thanks to their large size and strong contrast.",
@@ -715,17 +663,30 @@
     "len": 371
   },
   {
-    "query": "We note that the correlations are above 0.8 for most brain structures, indicating that the 3D reconstructed photographs yield usable volumes in volumetric analysis.",
-    "matched_segment": "We note that the correlations are above 0.8 for most brain structures, indicating that the 3D reconstructed photographs yield usable volumes in volumetric analysis.",
+    "query": "The results show once more that Photo-SynthSeg outperforms SAMSEG for nearly every structure – and in the few cases in which it does not, the Steiger test does not yield statistically signiﬁcant diﬀerences.",
+    "matched_segment": "The results show once more that Photo-SynthSeg outperforms SAMSEG for nearly every structure – and in the few cases in which it does not, the Steiger test does not yield statistically signiﬁcant diﬀerences.",
     "start": {
       "xpath": "/article/body/sec[2]/sec[2]/p[4]",
-      "char_offset": 962
+      "char_offset": 755
     },
     "stop": {
       "xpath": "/article/body/sec[2]/sec[2]/p[4]",
-      "char_offset": 1126
+      "char_offset": 961
     },
-    "len": 164
+    "len": 206
+  },
+  {
+    "query": "The results show once more that Photo-SynthSeg outperforms SAMSEG for nearly every structure – and in the few cases in which it does not, the Steiger test does not yield statistically signiﬁcant diﬀerences.",
+    "matched_segment": "The results show once more that Photo-SynthSeg outperforms SAMSEG for nearly every structure – and in the few cases in which it does not, the Steiger test does not yield statistically signiﬁcant diﬀerences.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[4]",
+      "char_offset": 755
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec[2]/p[4]",
+      "char_offset": 961
+    },
+    "len": 206
   },
   {
     "query": "We also note that the correlations are slightly but consistently lower for the reconstructions with the probabilistic atlas, yielding correlations close to 0.8 for most brain regions.",
@@ -962,19 +923,6 @@
     "len": 263
   },
   {
-    "query": "Photo-SynthSeg circumvents this problem by building on our recent work on domain randomization (Billot et al., 2023a), and can segment 3D reconstructed stacks of photographs irrespective of the thickness of the slices and of the contrast properties of the tissue.",
-    "matched_segment": "Photo-SynthSeg circumvents this problem by building on our recent work on domain randomization (Billot et al., 2023a), and can segment 3D reconstructed stacks of photographs irrespective of the thickness of the slices and of the contrast properties of the tissue.",
-    "start": {
-      "xpath": "/article/body/sec[3]/p[4]",
-      "char_offset": 256
-    },
-    "stop": {
-      "xpath": "/article/body/sec[3]/p[4]",
-      "char_offset": 519
-    },
-    "len": 263
-  },
-  {
     "query": "Compared with SAMSEG, Photo-Synthseg also has the advantage of estimating the segmentation in between slices (Figure 2).",
     "matched_segment": "Compared with SAMSEG, Photo-Synthseg also has the advantage of estimating the segmentation in between slices (Figure 2).",
     "start": {
@@ -1001,17 +949,17 @@
     "len": 297
   },
   {
-    "query": "While registration and volumetric segmentation enable morphometry and neuropathology–neuroimaging correlation, precise white matter and pial surface placement on 3D reconstructed photographs are crucial for accurate cortical analyses – for example, producing topologically correct segmentations, as opposed to volumetric segmentations that can, for example, leak across gyri.",
-    "matched_segment": "While registration and volumetric segmentation enable morphometry and neuropathology–neuroimaging correlation, precise white matter and pial surface placement on 3D reconstructed photographs are crucial for accurate cortical analyses – for example, producing topologically correct segmentations, as opposed to volumetric segmentations that can, for example, leak across gyri.",
+    "query": "Moreover, Photo-Synthseg inherits the computational eﬃciency of neural networks, and can segment a whole case in a few seconds (or tens of seconds if no graphics processing unit [GPU] is available) without any special requirements on machine learning expertise – thus enabling broad applicability.",
+    "matched_segment": "Moreover, Photo-Synthseg inherits the computational eﬃciency of neural networks, and can segment a whole case in a few seconds (or tens of seconds if no graphics processing unit [GPU] is available) without any special requirements on machine learning expertise – thus enabling broad applicability.",
     "start": {
-      "xpath": "/article/body/sec[3]/p[5]",
-      "char_offset": 0
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 641
     },
     "stop": {
-      "xpath": "/article/body/sec[3]/p[5]",
-      "char_offset": 375
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 938
     },
-    "len": 375
+    "len": 297
   },
   {
     "query": "While registration and volumetric segmentation enable morphometry and neuropathology–neuroimaging correlation, precise white matter and pial surface placement on 3D reconstructed photographs are crucial for accurate cortical analyses – for example, producing topologically correct segmentations, as opposed to volumetric segmentations that can, for example, leak across gyri.",
@@ -1196,19 +1144,6 @@
     "len": 170
   },
   {
-    "query": "Dissection photography of ﬁxed tissue and companion surface scans for 76 cases from the Massachusetts Alzheimer's Research Center (18 whole cerebrums and 58 hemispheres).",
-    "matched_segment": "Dissection photography of ﬁxed tissue and companion surface scans for 76 cases from the Massachusetts Alzheimer's Research Center (18 whole cerebrums and 58 hemispheres).",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[1]/p",
-      "char_offset": 0
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[1]/p",
-      "char_offset": 170
-    },
-    "len": 170
-  },
-  {
     "query": "The surface scans were acquired using a turntable with an Einscan Pro HD scanner (Shining 3D, Hangzhou, China, 0.05 mm point accuracy).",
     "matched_segment": "The surface scans were acquired using a turntable with an Einscan Pro HD scanner (Shining 3D, Hangzhou, China, 0.05 mm point accuracy).",
     "start": {
@@ -1233,32 +1168,6 @@
       "char_offset": 712
     },
     "len": 161
-  },
-  {
-    "query": "Slices with variable thickness were cut with a dissecting knife on a predeﬁned set of landmarks and photographed with a 15.1 MP Canon EOS 50D Digital SLR camera.",
-    "matched_segment": "Slices with variable thickness were cut with a dissecting knife on a predeﬁned set of landmarks and photographed with a 15.1 MP Canon EOS 50D Digital SLR camera.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[1]/p",
-      "char_offset": 551
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[1]/p",
-      "char_offset": 712
-    },
-    "len": 161
-  },
-  {
-    "query": "Dissection photography of ﬁxed tissue and companion ex vivo MRI scans for 24 cases (all of them with both hemispheres) from the Alzheimer's Disease Research Center at the University of Washington.",
-    "matched_segment": "Dissection photography of ﬁxed tissue and companion ex vivo MRI scans for 24 cases (all of them with both hemispheres) from the Alzheimer's Disease Research Center at the University of Washington.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[2]/p",
-      "char_offset": 0
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[2]/p",
-      "char_offset": 196
-    },
-    "len": 196
   },
   {
     "query": "Dissection photography of ﬁxed tissue and companion ex vivo MRI scans for 24 cases (all of them with both hemispheres) from the Alzheimer's Disease Research Center at the University of Washington.",
@@ -1298,32 +1207,6 @@
       "char_offset": 401
     },
     "len": 121
-  },
-  {
-    "query": "Coronal slices were cut with 4 mm thickness using a modiﬁed deli slicer and photographed with a 35 Megapixel (MP) camera.",
-    "matched_segment": "Coronal slices were cut with 4 mm thickness using a modiﬁed deli slicer and photographed with a 35 Megapixel (MP) camera.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[2]/p",
-      "char_offset": 280
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[2]/p",
-      "char_offset": 401
-    },
-    "len": 121
-  },
-  {
-    "query": "While no 3D surface scanning was available for this dataset, we obtained surfaces by skull stripping the MRI scans and meshing the brain surface.",
-    "matched_segment": "While no 3D surface scanning was available for this dataset, we obtained surfaces by skull stripping the MRI scans and meshing the brain surface.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[2]/p",
-      "char_offset": 402
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[1]/sec[2]/p",
-      "char_offset": 547
-    },
-    "len": 145
   },
   {
     "query": "While no 3D surface scanning was available for this dataset, we obtained surfaces by skull stripping the MRI scans and meshing the brain surface.",
@@ -1456,17 +1339,17 @@
     "len": 202
   },
   {
-    "query": "As mentioned earlier, our pipeline does not strictly require the surface scan, as it can be replaced with a probabilistic atlas with a slight loss of accuracy (as shown in the Results section).",
-    "matched_segment": "As mentioned earlier, our pipeline does not strictly require the surface scan, as it can be replaced with a probabilistic atlas with a slight loss of accuracy (as shown in the Results section).",
+    "query": "The surface scan may be acquired with a handheld scanner with the specimen placed on a table, or with the scanner on a tripod and the sample on a turntable.",
+    "matched_segment": "The surface scan may be acquired with a handheld scanner with the specimen placed on a table, or with the scanner on a tripod and the sample on a turntable.",
     "start": {
       "xpath": "/article/body/sec[4]/sec[2]/p",
-      "char_offset": 830
+      "char_offset": 673
     },
     "stop": {
       "xpath": "/article/body/sec[4]/sec[2]/p",
-      "char_offset": 1023
+      "char_offset": 829
     },
-    "len": 193
+    "len": 156
   },
   {
     "query": "Speciﬁcally, our pipeline assumes that approximately parallel slices are cut in coronal direction – which is the standard practice in most brain banks.",
@@ -1586,6 +1469,32 @@
     "len": 276
   },
   {
+    "query": "Ideally, the slices should be photographed on a ﬂat board with a solid background color that stands out from the brain tissue, as stronger contrast between tissue and background greatly facilitates image segmentation when preprocessing the photographs (further details below).",
+    "matched_segment": "Ideally, the slices should be photographed on a ﬂat board with a solid background color that stands out from the brain tissue, as stronger contrast between tissue and background greatly facilitates image segmentation when preprocessing the photographs (further details below).",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[3]/p[3]",
+      "char_offset": 308
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[3]/p[3]",
+      "char_offset": 584
+    },
+    "len": 276
+  },
+  {
+    "query": "Image preprocessing starts with geometric correction, that is, pixel size calibration and perspective correction.",
+    "matched_segment": "Image preprocessing starts with geometric correction, that is, pixel size calibration and perspective correction.",
+    "start": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[4]/sec[4]/p[1]",
+      "char_offset": 113
+    },
+    "len": 113
+  },
+  {
     "query": "In the ideal scenario with four ﬁducials, the widespread widespread scale-invariant feature transform (SIFT, Lowe, 1999) is used to detect such ﬁducials (Figure 5b) and compute a spatial transform that corrects for perspective distortion and calibrates the pixel size – see Figure 5c, where the pixel size calibration enables superimposition of a digital ruler.",
     "matched_segment": "In the ideal scenario with four ﬁducials, the widespread widespread scale-invariant feature transform (SIFT, Lowe, 1999) is used to detect such ﬁducials (Figure 5b) and compute a spatial transform that corrects for perspective distortion and calibrates the pixel size – see Figure 5c, where the pixel size calibration enables superimposition of a digital ruler.",
     "start": {
@@ -1623,19 +1532,6 @@
       "char_offset": 125
     },
     "len": 125
-  },
-  {
-    "query": "While our tools do not have any speciﬁc requisites in terms of background, using a solid background with a distinct color (e.g., a 'green screen') can greatly facilitate segmentation; otherwise, more extensive manual intervention may be needed.",
-    "matched_segment": "While our tools do not have any speciﬁc requisites in terms of background, using a solid background with a distinct color (e.g., a 'green screen') can greatly facilitate segmentation; otherwise, more extensive manual intervention may be needed.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[4]/p[3]",
-      "char_offset": 126
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[4]/p[3]",
-      "char_offset": 370
-    },
-    "len": 244
   },
   {
     "query": "In our experiments, using a ﬂat black background enabled us to automatically segment the tissue with a combination of thresholding and morphological operations, keeping manual edits to a minimum (a couple of minutes per photograph, mostly to erase bits of cortical surface that are sometimes visible around the edge of the face of the slice).",
@@ -1755,19 +1651,6 @@
     "len": 322
   },
   {
-    "query": "This aﬃne model makes it particularly important to place connected components of the same slice in a correct relative position when there is more than one, for example, in the temporal pole.",
-    "matched_segment": "This aﬃne model makes it particularly important to place connected components of the same slice in a correct relative position when there is more than one, for example, in the temporal pole.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[5]/p[3]",
-      "char_offset": 557
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[5]/p[3]",
-      "char_offset": 747
-    },
-    "len": 190
-  },
-  {
     "query": "Either way, the 3D reconstruction is in practice not very sensitive to the exact value of these parameters.",
     "matched_segment": "Either way, the 3D reconstruction is in practice not very sensitive to the exact value of these parameters.",
     "start": {
@@ -1805,19 +1688,6 @@
       "char_offset": 477
     },
     "len": 305
-  },
-  {
-    "query": "The probabilistic atlas produces a plausible reconstruction, which is however far from the real shape of the specimen given by the surface (Figure 5g).",
-    "matched_segment": "The probabilistic atlas produces a plausible reconstruction, which is however far from the real shape of the specimen given by the surface (Figure 5g).",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[5]/p[8]",
-      "char_offset": 665
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[5]/p[8]",
-      "char_offset": 816
-    },
-    "len": 151
   },
   {
     "query": "We note that 3D reconstruction is implemented in PyTorch, and runs eﬃciently on a GPU – less than 5 min on a Nvidia Quadro RTX 6000.",
@@ -1859,30 +1729,17 @@
     "len": 137
   },
   {
-    "query": "Here, we extend a machine learning approach based on domain randomization (Tobin et al., 2017) that we have successfully applied to segment clinical brain MRI scans with large slice spacing (Billot et al., 2020; Billot et al., 2023a; Billot et al., 2023b).",
-    "matched_segment": "Here, we extend a machine learning approach based on domain randomization (Tobin et al., 2017) that we have successfully applied to segment clinical brain MRI scans with large slice spacing (Billot et al., 2020; Billot et al., 2023a; Billot et al., 2023b).",
+    "query": "Here, we extend a machine learning approach based on domain randomization (Tobin et al., 2017) that we have successfully applied to segment clinical brain MRI scans with large slice spacing (Billot et al., 2020; Billot et al., 2023a; Billot et al., 2023b). Speciﬁcally, our newly proposed approach 'Photo-SynthSeg' trains a convolutional neural network for image segmentation (a 3D U-Net, Ronneberger et al., 2015; Çiçek et al., 2019) with synthetic data as follows.",
+    "matched_segment": "Here, we extend a machine learning approach based on domain randomization (Tobin et al., 2017) that we have successfully applied to segment clinical brain MRI scans with large slice spacing (Billot et al., 2020; Billot et al., 2023a; Billot et al., 2023b). Speciﬁcally, our newly proposed approach 'Photo-SynthSeg' trains a convolutional neural network for image segmentation (a 3D U-Net, Ronneberger et al., 2015; Çiçek et al., 2019) with synthetic data as follows.",
     "start": {
       "xpath": "/article/body/sec[4]/sec[6]/p[2]",
       "char_offset": 138
     },
     "stop": {
       "xpath": "/article/body/sec[4]/sec[6]/p[2]",
-      "char_offset": 394
-    },
-    "len": 256
-  },
-  {
-    "query": "Speciﬁcally, our newly proposed approach 'Photo-SynthSeg' trains a convolutional neural network for image segmentation (a 3D U-Net, Ronneberger et al., 2015; Çiçek et al., 2019) with synthetic data as follows.",
-    "matched_segment": "Speciﬁcally, our newly proposed approach 'Photo-SynthSeg' trains a convolutional neural network for image segmentation (a 3D U-Net, Ronneberger et al., 2015; Çiçek et al., 2019) with synthetic data as follows.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[6]/p[2]",
-      "char_offset": 395
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[6]/p[2]",
       "char_offset": 604
     },
-    "len": 209
+    "len": 466
   },
   {
     "query": "'Photo-SynthSeg' starts from a training dataset (the T1-39 dataset) that comprises a pool of 3D segmentations of brain images at isotropic 3D resolution (Figure 6a).",
@@ -1911,30 +1768,30 @@
     "len": 341
   },
   {
-    "query": "This deformed isotropic segmentation is used to generate a synthetic 3D image (also at isotropic resolution) using a Gaussian mixture model conditioned on the segmentation (Figure 6c).",
-    "matched_segment": "This deformed isotropic segmentation is used to generate a synthetic 3D image (also at isotropic resolution) using a Gaussian mixture model conditioned on the segmentation (Figure 6c).",
+    "query": "This deformed isotropic segmentation is used to generate a synthetic 3D image (also at isotropic resolution) using a Gaussian mixture model conditioned on the segmentation (Figure 6c). Crucially, we randomize the Gaussian parameters (means and variances) to make the neural network robust against variations in image appearance.",
+    "matched_segment": "This deformed isotropic segmentation is used to generate a synthetic 3D image (also at isotropic resolution) using a Gaussian mixture model conditioned on the segmentation (Figure 6c). Crucially, we randomize the Gaussian parameters (means and variances) to make the neural network robust against variations in image appearance.",
     "start": {
       "xpath": "/article/body/sec[4]/sec[6]/p[3]",
       "char_offset": 508
     },
     "stop": {
       "xpath": "/article/body/sec[4]/sec[6]/p[3]",
-      "char_offset": 692
+      "char_offset": 836
     },
-    "len": 184
+    "len": 328
   },
   {
-    "query": "Crucially, we randomize the Gaussian parameters (means and variances) to make the neural network robust against variations in image appearance.",
-    "matched_segment": "Crucially, we randomize the Gaussian parameters (means and variances) to make the neural network robust against variations in image appearance.",
+    "query": "This deformed isotropic segmentation is used to generate a synthetic 3D image (also at isotropic resolution) using a Gaussian mixture model conditioned on the segmentation (Figure 6c). Crucially, we randomize the Gaussian parameters (means and variances) to make the neural network robust against variations in image appearance.",
+    "matched_segment": "This deformed isotropic segmentation is used to generate a synthetic 3D image (also at isotropic resolution) using a Gaussian mixture model conditioned on the segmentation (Figure 6c). Crucially, we randomize the Gaussian parameters (means and variances) to make the neural network robust against variations in image appearance.",
     "start": {
       "xpath": "/article/body/sec[4]/sec[6]/p[3]",
-      "char_offset": 693
+      "char_offset": 508
     },
     "stop": {
       "xpath": "/article/body/sec[4]/sec[6]/p[3]",
       "char_offset": 836
     },
-    "len": 143
+    "len": 328
   },
   {
     "query": "This synthetic isotropic image is then 'digitally sliced' into a 3D stack of synthetic coronal photographs, each of which is independently corrupted by a random 2D smooth illumination ﬁeld that simulates inhomogeneities in the illumination of the photographs (Figure 6d).",
@@ -1989,17 +1846,17 @@
     "len": 243
   },
   {
-    "query": "This generative process mimics the image formation process in the real world and has two crucial aspects. First, the super-resolution component: Photo-SynthSeg is a U-Net that will produce a high-resolution (1 mm) isotropic 3D segmentation for every input at test time, independently of the slice spacing of the 3D reconstructed stack of photographs (Figure 2).",
-    "matched_segment": "This generative process mimics the image formation process in the real world and has two crucial aspects. First, the super-resolution component: Photo-SynthSeg is a U-Net that will produce a high-resolution (1 mm) isotropic 3D segmentation for every input at test time, independently of the slice spacing of the 3D reconstructed stack of photographs (Figure 2).",
+    "query": "This generative process mimics the image formation process in the real world and has two crucial aspects. First, the super-resolution component: Photo-SynthSeg is a U-Net that will produce a high-resolution (1 mm) isotropic 3D segmentation for every input at test time, independently of the slice spacing of the 3D reconstructed stack of photographs (Figure 2). And second, domain randomization: sampling diﬀerent Gaussian parameters, illumination ﬁelds, and slice thicknesses at every iteration beyond realistic limits (as in Figure 6, where even contralateral regions have diﬀerent appearance) forces the U-Net to learn features that are independent of the intensity proﬁles of the photographs, as well as of the spacing between slices.",
+    "matched_segment": "This generative process mimics the image formation process in the real world and has two crucial aspects. First, the super-resolution component: Photo-SynthSeg is a U-Net that will produce a high-resolution (1 mm) isotropic 3D segmentation for every input at test time, independently of the slice spacing of the 3D reconstructed stack of photographs (Figure 2). And second, domain randomization: sampling diﬀerent Gaussian parameters, illumination ﬁelds, and slice thicknesses at every iteration beyond realistic limits (as in Figure 6, where even contralateral regions have diﬀerent appearance) forces the U-Net to learn features that are independent of the intensity proﬁles of the photographs, as well as of the spacing between slices.",
     "start": {
       "xpath": "/article/body/sec[4]/sec[6]/p[4]",
       "char_offset": 0
     },
     "stop": {
       "xpath": "/article/body/sec[4]/sec[6]/p[4]",
-      "char_offset": 361
+      "char_offset": 738
     },
-    "len": 361
+    "len": 738
   },
   {
     "query": "And second, domain randomization: sampling diﬀerent Gaussian parameters, illumination ﬁelds, and slice thicknesses at every iteration beyond realistic limits (as in Figure 6, where even contralateral regions have diﬀerent appearance) forces the U-Net to learn features that are independent of the intensity proﬁles of the photographs, as well as of the spacing between slices.",
@@ -2015,17 +1872,17 @@
     "len": 376
   },
   {
-    "query": "This process makes the U-Net robust against changes in the acquisition.",
-    "matched_segment": "This process makes the U-Net robust against changes in the acquisition.",
+    "query": "We note that the Gaussian distributions are univariate rather than trivariate, that is, they model grayscale rather than red–green–blue triplets; we tried training a U-Net with the latter, but the performance on color images was worse than when converting them to grayscale and using the U-Net trained with univariate Gaussians.",
+    "matched_segment": "We note that the Gaussian distributions are univariate rather than trivariate, that is, they model grayscale rather than red–green–blue triplets; we tried training a U-Net with the latter, but the performance on color images was worse than when converting them to grayscale and using the U-Net trained with univariate Gaussians.",
     "start": {
       "xpath": "/article/body/sec[4]/sec[6]/p[4]",
-      "char_offset": 739
+      "char_offset": 811
     },
     "stop": {
       "xpath": "/article/body/sec[4]/sec[6]/p[4]",
-      "char_offset": 810
+      "char_offset": 1139
     },
-    "len": 71
+    "len": 328
   },
   {
     "query": "We note that the Gaussian distributions are univariate rather than trivariate, that is, they model grayscale rather than red–green–blue triplets; we tried training a U-Net with the latter, but the performance on color images was worse than when converting them to grayscale and using the U-Net trained with univariate Gaussians.",
@@ -2132,19 +1989,6 @@
     "len": 168
   },
   {
-    "query": "The deep learning model is implemented in Keras (Chollet, 2015) with a Tensorﬂow backend (Abadi et al., 2016) and runs on a few seconds on a Nvidia Quadro RTX 6000 GPU.",
-    "matched_segment": "The deep learning model is implemented in Keras (Chollet, 2015) with a Tensorﬂow backend (Abadi et al., 2016) and runs on a few seconds on a Nvidia Quadro RTX 6000 GPU.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[6]/p[5]",
-      "char_offset": 992
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[6]/p[5]",
-      "char_offset": 1160
-    },
-    "len": 168
-  },
-  {
     "query": "Training takes around 7 days on the same GPU.",
     "matched_segment": "Training takes around 7 days on the same GPU.",
     "start": {
@@ -2195,19 +2039,6 @@
       "char_offset": 345
     },
     "len": 97
-  },
-  {
-    "query": "While the default Photo-SynthSeg pipeline segments the cerebral cortex as a whole (i.e., as in Figure 6a), our tool also oﬀers the option of subdividing it into parcels as deﬁned by the Desikan–Killiany atlas (Desikan et al., 2009), like in Figure 2.",
-    "matched_segment": "While the default Photo-SynthSeg pipeline segments the cerebral cortex as a whole (i.e., as in Figure 6a), our tool also oﬀers the option of subdividing it into parcels as deﬁned by the Desikan–Killiany atlas (Desikan et al., 2009), like in Figure 2.",
-    "start": {
-      "xpath": "/article/body/sec[4]/sec[6]/p[6]",
-      "char_offset": 346
-    },
-    "stop": {
-      "xpath": "/article/body/sec[4]/sec[6]/p[6]",
-      "char_offset": 596
-    },
-    "len": 250
   },
   {
     "query": "While the default Photo-SynthSeg pipeline segments the cerebral cortex as a whole (i.e., as in Figure 6a), our tool also oﬀers the option of subdividing it into parcels as deﬁned by the Desikan–Killiany atlas (Desikan et al., 2009), like in Figure 2.",

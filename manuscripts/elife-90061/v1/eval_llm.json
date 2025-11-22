@@ -1,0 +1,644 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C69"
+    ],
+    "result": "The authors indexed approximately 250,000 MD-related files from about 2,000 datasets across three generalist data repositories (Zenodo, Figshare, OSF), representing 14 TB of data deposited between August 2012 and March 2023.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 and C69 provide consistent, explicit numerical data about the scale of MD data indexed from the three repositories. The numbers are stated clearly in the text and supported by Table 1, which provides detailed breakdowns by repository. The data collection methodology is described in the Materials and Methods section (C186-C197), providing transparency about how these numbers were obtained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Files within zip archives are approximately seven times more numerous than files directly available in datasets, and the use of zip archives significantly hinders the analysis, searchability, and reusability of MD data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 provides the explicit 7:1 ratio, which is verifiable from Table 1 data (216,024 files in zip archives vs. 29,732 directly available files). Claims C83-C85 describe specific limitations of zip archives that are logical consequences of how data repositories handle these files, and these limitations are explicitly stated in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MD data deposition in generalist repositories began in 2012 with Fuller et al.'s work in Figshare, but substantial deposition started in 2016. Zenodo has become the preferred repository since 2019, with a steep increase from a few thousand files in 2018 to almost 50,000 files in 2022, possibly due to its public funding and operation by CERN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe temporal trends in MD data deposition that are explicitly stated in the text and supported by Figure 1B. The citation to Fuller et al., 2012 provides external validation for C20. The explanation for Zenodo's preference (C24) is presented as a hypothesis ('could be explained by') with appropriate citation, which is a reasonable inference given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Among MD software packages, Gromacs was most represented with 87,204 files, while more than 133,000 files could not be directly associated with any MD program. Of these unknown files, 10% lacked file extensions, and many were structure coordinate files (.pdb: ~12,000; .xyz: ~6,800).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide explicit numerical data about file distribution by MD software and file types, as stated in the text and illustrated in Figure 2A and 2B. The numbers are specific and the categorization methodology is described in the Materials and Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The most common Gromacs file type is .xtc (28,559 files representing 8.6 TB), with 1,406 .trr files also found. Together, Gromacs trajectory files represent about 30,000 files (34% of Gromacs files), which is substantially more than the number of trajectories in dedicated MD databases (MoDEL: 1,700; GPCRmd: 1,737; MemProtMD: 5,971; NMRLipids: 726).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 provide explicit numerical comparisons between trajectory files in generalist repositories and specialized databases. The numbers are clearly stated with appropriate dates for the specialized databases, allowing for temporal context. The comparison is meaningful and well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C95"
+    ],
+    "result": "Analysis of a subset of 779 .xtc files (one per dataset) revealed that half contain more than 10,000 frames, with one file containing over 5 million frames. System sizes reached up to more than one million atoms for a TonB protein simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C95 describe the analysis of .xtc files with explicit numbers and are supported by Figure 3B. The selection of one file per dataset (C38) is a reasonable sampling strategy given the large data volume. The extreme case of 5 million frames (C40) is cited to a specific study (K\u00fcmmerer et al., 2021), providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Analysis of 9,718 .gro files revealed system sizes ranging from very small (2 coarse-grain graphite particles) to very large (>3 million particles). A notable enrichment around 8,500 atoms/particles was observed, explained by ~340 .gro files from a single study on peptide translocation through membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe the range and distribution of system sizes with explicit numbers and citations. The explanation for the enrichment at 8,500 atoms (C45) is supported by a specific citation (Kabelka et al., 2021) and is illustrated in Figure 3C. The range from smallest to largest systems is well-documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The analyzed systems included 1,237 systems with nucleic acids (alone or with proteins), numerous solvated proteins, and a variety of membrane systems (especially membrane proteins). Lipid-containing systems were highly represented, possibly due to the NMRLipids initiative's strong data-sharing policy. Few carbohydrate-containing systems were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C99-C103 describe the molecular composition of deposited systems with explicit numbers where available. The connection to the NMRLipids initiative (C100-C101) is presented as a reasonable hypothesis with appropriate context about the consortium's data-sharing practices. The observation about carbohydrates (C47) is supported by a specific citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Among 1,029 uncategorized .gro files, systems included small molecules, organic chemistry compounds, material science applications (nanoparticles, polymers), and drug molecules. Multiple models of the PTEG-1 molecule (a fulleropyrrolidine derivative for semiconductors) were found in both atomistic and coarse-grained forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C107-C116 describe diverse molecular systems with appropriate citations for each category. The PTEG-1 example (C114-C116) is particularly well-documented with multiple citations showing different modeling approaches. This demonstrates the breadth of MD applications beyond traditional biomolecular systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C118",
+      "C119"
+    ],
+    "result": "Almost 20,000 topology files were indexed, including 13,058 .itp files (2 GB total) and 7,009 .top files (17 GB total). These files represent valuable parametrization efforts, though .itp files appear to contain less information than .top files based on size differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide explicit numbers for topology files with their sizes. The inference about information content (C119) is reasonable based on the size difference (2 GB vs 17 GB for fewer files). Claim C118 correctly contextualizes the value of these files by referencing the parametrization process with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The dataset includes 4,987 .tpr files (which could enable rerunning almost 5,000 simulations) and 3,730 .log files (which can be parsed to extract simulation details like Gromacs version and command lines).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide explicit file counts. Claims C120-C122 correctly describe the contents and potential uses of these file types. The statement about 'virtually' being able to rerun simulations (C121) is appropriately qualified, acknowledging that while the files contain the necessary information, practical reuse may face other challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C124",
+      "C125"
+    ],
+    "result": "Analysis of 10,055 .mdp files (restricted to 4,623 files with md/sd integrator and >1 ns simulation time) showed that most simulations were set up for \u226450 ns, with 697 files for 50 ns-1 \u00b5s and 585 files for >1 \u00b5s. For simulations >1 \u00b5s, coarse-grain simulations represented 86% of all setups. Overall, atomistic simulation setups were largely dominant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C124-C125 describe the analysis of simulation parameters with explicit numbers and clear selection criteria. The use of time step >10 fs as a criterion for coarse-grain models (C124) is supported by an appropriate citation (Ing\u00f3lfsson et al., 2014). The distribution of simulation times is illustrated in Figure 4A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Analysis of 9,199 .mdp files for thermostat/barostat combinations showed V-rescale as the dominant thermostat, often paired with Parrinello-Rahman barostat, and also used with Berendsen barostat. A few cases used the recently developed C-rescale barostat. 2,021 files had neither thermostat nor barostat, likely corresponding to energy minimization, ion addition, or MM/PBSA and MM/GBSA calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C126-C128 describe thermostat/barostat usage patterns with explicit numbers and appropriate citations for the methods mentioned. The explanation for files without thermostat/barostat (C128) is reasonable and supported by a citation (Genheden and Ryde, 2015). The data is illustrated in Figure 4B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C129",
+      "C130"
+    ],
+    "result": "Temperature analysis revealed a clear peak at 298-310 K (room to physiological temperature), with a wide range explored from mostly 100 K to 800 K. Peaks at 400 K, 600 K, and 800 K appeared at the end of 2022, corresponding to a study on hydrated crystal stability. Lower temperatures often related to organic systems or Lennard-Jones models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C129-C130 describe temperature distributions with explicit ranges and appropriate citations. The explanation for the high-temperature peaks (C65) is supported by a specific citation (Dybeck et al., 2023), and the explanation for lower temperatures (C130) is supported by another citation (Jeon et al., 2016). The data is illustrated in Figure 4C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors shared their data collection in Zenodo and created a prototype web application (MDverse data explorer, available at https://mdverse.streamlit.app/) that allows keyword and filter-based searching of datasets, .gro files, and .mdp files, with exportable results as .tsv files. The data scraping procedure and analysis code are available on GitHub with detailed documentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C131-C134 describe the data sharing and tool development with explicit URLs and functionality descriptions. The web application is illustrated in Figure 5A and 5B. These claims represent concrete deliverables that can be independently verified by accessing the provided URLs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C154",
+      "C155"
+    ],
+    "result": "Text-based search strategies resulted in many false positives due to strong discrepancies in metadata quality and quantity. Dataset descriptions ranged from a couple of words to more than 1,200 words. The three repositories studied perform no human curation beyond that of data providers, and metadata is provided as free text without controlled vocabulary. Basic information such as molecular system identity, temperature, or simulation length was sometimes impossible to find.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 and C154-C155 describe metadata quality issues that are explicitly stated in the manuscript. These observations motivated the development of the Ex\u00b2 strategy. The range of description lengths (C77) provides a concrete example of heterogeneity. The lack of curation and controlled vocabulary (C78-C79) is a factual statement about the repositories' policies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "The Ex\u00b2 (Explore and Expand) strategy was developed to index MD files. In the Explore phase, files were searched based on file types with MD-related keywords using a manually curated list. In the Expand phase, all files in identified datasets were indexed regardless of file type. Queries were automated using Python scripts with repository APIs, assuming files in a dataset were coherent and related to the same research project.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 and C186-C192 describe the Ex\u00b2 methodology with explicit details about each phase. The methodology is illustrated in Figure 1A. The assumption about dataset coherence (C190) is explicitly stated and is reasonable for most cases. The technical implementation details (C188-C189) are specific and include software versions, demonstrating methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "For zip files in Zenodo and Figshare, content was extracted from HTML previews parsed with Beautiful Soup. Zenodo's preview was limited to the first 1,000 files. A cleaning step removed datasets without at least one file type from the curated list. OSF provided no zip file preview, so zip contents were not retrieved from OSF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C197 describe specific technical details of handling zip archives with explicit limitations. The 1,000-file limit for Zenodo (C195) is a concrete constraint that affects data completeness. The cleaning step (C196) is a reasonable quality control measure. The OSF limitation (C197) is explicitly acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "Gromacs .mdp and .gro files were downloaded using the Pooch library, with selective extraction from zip archives when necessary. The same procedure was applied to a subset of .xtc files. .mdp files were parsed to extract integrator, time step, number of steps, temperature, thermostat, and barostat, with values normalized according to Gromacs documentation. Selection criteria were applied for different analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C204 provide detailed methodological information about file downloading and parsing. The use of specific libraries (Pooch) and normalization procedures demonstrates methodological rigor. The selection criteria (C203-C204) are clearly stated and justified (e.g., excluding minimization and equilibration runs).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": ".gro files were parsed with MDAnalysis to extract particle numbers and residue names, which were compared to a manually curated list of residues categorized as protein, lipid, nucleic acid, glucid, or water/ions. .xtc files were analyzed using gmxcheck to extract particle numbers and frame counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C207 describe specific analysis methods with appropriate tool citations (MDAnalysis, gmxcheck). The manual curation of residue categories (C206) is documented with a GitHub URL, providing transparency and reproducibility. These methods are standard approaches in the MD community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "The MDverse data explorer web application was built in Python with Streamlit, using data downloaded from Zenodo. Molecular graphics were performed with VMD and Chimera using .gro files, with manual assignment of .xtc files to corresponding structure files for specific visualizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C212 provide technical details about visualization and web application development. The tools mentioned (Streamlit, VMD, Chimera) are standard in their respective domains and are properly cited. The manual assignment procedure (C212) is explicitly described for specific cases in Figure 3B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The work successfully retrieved MD data from generalist repositories and shed light on the 'dark matter' of MD data, revealing current scientific practices and valuable topology information. The objective was to show what data was available, not to assess quality. The Ex\u00b2 strategy has limitations: it cannot be applied where data exhibits non-specific file types, and this limitation was experienced with zip archives. MD data represents only a fraction of all files stored in repositories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 and C138-C141 provide appropriate context and acknowledge limitations of the approach. The explicit statement that quality assessment was not the objective (C136) is important for interpreting the results. The limitation regarding non-specific file types (C138) is a reasonable acknowledgment of the method's scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "As of December 2022, Zenodo hosted ~9.9 million files (~1.3 PB), Figshare ~3.3 million files (~112 TB), and OSF ~2 million files. MD data represents only 1% of Zenodo's total volume. All files are stored on 24/7 servers, which costs human resources, IT infrastructure, and energy. The authors believe it is the community's responsibility to develop better sharing and reuse of MD simulation files.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide context about repository sizes with appropriate dates and citations. The 1% figure (C71) puts the MD data in perspective. Claims C142-C144 make reasonable statements about infrastructure costs and community responsibility. The call for community action (C144) is appropriately framed as a belief rather than a factual claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors propose two solutions: (1) improve practices for sharing and depositing MD data, and (2) improve FAIRness by enhancing metadata quality. They suggest adapting MIASE guidelines for MD simulations, which would be complementary to existing reproducibility checklists and could be implemented in machine-actionable Data Management Plans. They advocate for creating standardized, controlled vocabulary for MD simulations, which would enable scientific knowledge graphs. This requires consensus among stakeholders and could benefit from dedicated workshops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C153 present reasonable recommendations based on the study's findings. The suggestions are appropriately framed as proposals and advocacy rather than established facts. The references to MIASE guidelines (C146), reproducibility checklists (C147), and maDMPs (C148) are properly cited. The call for workshops (C153) is a reasonable suggestion for community engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Without appropriate metadata, data sharing is pointless and reuse will fail. The gap between data availability and discoverability must be closed. Two strategies are proposed: (1) extract parameters by parsing normalized MD engine output files (already explored for Gromacs .gro and .mdp files, could extend to .log files and other MD engines), and (2) use data mining and named entity recognition to identify information from textual metadata. Large language models with domain-specific tools might also help interpret heterogeneous metadata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C163 present a logical argument about metadata importance with appropriate citation (C156). The two strategies are clearly described, with C159 providing evidence that the first strategy has already been partially implemented. The NER approach (C162) is supported by a citation. The suggestion about large language models (C163) is appropriately framed as speculative ('might help') with a recent citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Future work should integrate other repositories (Dryad, Dataverse instances) and potentially GitHub, which handles small-to-medium text files and has been used for epidemic data. GitHub could host small MD files; 70,000 .mdp and 55,000 .gro files were already found there. Scripts accompanying these files could provide insights into MD analysis workflows. However, GitHub/GitLab make no promises about long-term availability, so archiving in Zenodo or Software Heritage would be needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C172 present reasonable future directions. The GitHub suggestion (C165-C167) is supported by precedent (C166 with citations) and preliminary data (C168). The concern about long-term availability (C171) is a valid consideration, and the archiving solution (C172) is appropriately cited. These are presented as possibilities rather than definitive plans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The next step is metadata enrichment to make MD data more findable, accessible, and reusable. MD data should be connected to associated research papers and simulated biomolecular systems, enabling cross-referencing with databases like UniProt, PDB, and Lipid Maps. For existing datasets, enrichment requires computational approaches; for future depositions, standardized ontology and metadata files (like PLUMED-NEST) would help. Front-end tools like MDverse data explorer could evolve to include interactive 3D molecular viewers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C178 present a logical roadmap for future development. The distinction between approaches for existing vs. future data (C176-C177) is important and well-articulated. The references to established databases (C175) and the PLUMED-NEST example (C177) provide concrete models. The visualization suggestion (C178) is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The work demonstrates that MD data sharing is now common practice and increasing. From the three repositories alone, ~250,000 files from 2,000 datasets were indexed. This brings opportunities: (1) simulations are available for researchers without HPC access or who want to save time/energy, useful for reanalysis, extension, or comparison; (2) building curated datasets will be invaluable for developing dynamic generative deep-learning models; (3) improving metadata will foster reuse and increase reproducibility; (4) this provides an opportunity to promote good practices in MD simulation setup and production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C185 present the main conclusions and implications of the work. The statement about common practice (C179) is supported by the data presented throughout the manuscript. The four opportunities (C181-C185) are logical consequences of the findings and are appropriately framed as potential benefits rather than guaranteed outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": ".xtc files are compressed binary trajectory files that require third-party programs (Gromacs, VMD, MDAnalysis) to read and must be combined with coordinate files. .trr files contain trajectories plus additional information (velocities, energy) but can be very large (up to several hundred GB), limiting deposition due to repository file size limits (Zenodo: 50 GB, Figshare: 20 GB for free accounts, OSF: 5 GB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 provide accurate technical descriptions of MD file formats with appropriate citations for the tools mentioned (C87). The file size limits (C91-C93) are factual statements about repository policies. These claims provide important context for understanding the challenges of MD data sharing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The ~30,000 MD trajectories in generalist repositories may represent a wider spectrum of simulated systems than curated databases but need filtering to separate usable data from minimization/equilibration runs. System sizes in .gro files exceeded those in analyzed .xtc files, possibly because researchers remove parts of systems (e.g., water molecules) to reduce .xtc file sizes, which could limit datasets available for analyses requiring complete systems (e.g., water diffusion studies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C96-C98 present reasonable inferences about data characteristics and potential limitations. The observation about size differences (C96) is supported by Figure 3B. The hypothesis about solvent removal (C97) is appropriately framed as a possibility, and the consequence for reusability (C98) is a logical implication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C117"
+    ],
+    "result": "Solvated protein data combined with trajectory files could be invaluable for describing protein dynamics and training AI models beyond static structures. The limited number of carbohydrate-containing systems may be because such systems are often modeled with AMBER/GLYCAM, though more are expected given current glycan modeling developments. With good indexing and metadata, simple searches could retrieve different models of the same molecule for comparison or multi-scale simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 and C117 present reasonable implications and explanations. The potential for AI applications (C104) is supported by a citation (Lane, 2023). The explanation for limited carbohydrate systems (C105) is supported by appropriate citations and is presented as a hypothesis ('maybe a reason'). The expectation of more carbohydrate systems (C106) is supported by a citation about glycan modeling developments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "The volume of biological data has increased tremendously through high-throughput technologies and computational techniques. The Open Access movement led to explosive growth of available research data. FAIR principles emerged to structure data sharing for reuse and reproducibility. This has enabled AI applications like AlphaFold, which was only possible due to well-annotated open databases of protein structures and sequences. Similar developments in NMR chemical shift prediction were enabled by community-driven data collection. Novel AI applications in other fields are imaginable if data is curated and made available at large scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213-C220 provide well-cited context for the study. The statements about data growth (C213-C214), FAIR principles (C215), and AI applications (C216-C220) are supported by appropriate citations. The AlphaFold example (C217-C218) is particularly relevant and well-documented. The forward-looking statement (C220) is appropriately framed as imaginable rather than certain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229"
+    ],
+    "result": "MD simulations provide valuable insights into dynamic processes across biological phenomena and material science, complementing experimental approaches. Large amounts of MD data can be generated from large systems or biased sampling. Most simulations are used for single publications. Many researchers previously believed collecting all simulations wasn't worth the storage, but this was wrong\u2014storage is cheap compared to generation costs, and the data represents a goldmine for reanalysis, especially as machine learning methods are limited by training data availability. It's critical to make MD data not just technically available but practically usable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C221-C229 provide important context and motivation for the study. The statements about MD's value (C221-C222) are well-cited. The reflection on past attitudes (C225) is honest and provides important context. The comparison of storage vs. generation costs (C226) is a reasonable assertion. The statement about machine learning limitations (C228) reflects current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243"
+    ],
+    "result": "Discussions about MD data sharing started a few years ago and accelerated with COVID-19 pandemic efforts. Specific databases exist for various MD simulation types (MoDEL, MemProtMD, GPCRmd, Lipidbook, NMRLipids Databank), but there is no central repository for all MD files due to data volume, heterogeneity, and file format complexity. Researchers share files in multiple generalist repositories, making it difficult to search for specific data. The authors term this scattered data the 'dark matter of MD' and believe it's essential to shed light on it. When unlocked, this data will gain visibility, help access and reuse, and improve MD simulation reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C243 provide comprehensive background on the MD data sharing landscape with appropriate citations throughout. The 'dark matter' metaphor (C240) is explicitly introduced and used consistently. The statements about existing databases (C232-C235) are factual and cited. The explanation for lack of a central repository (C237) is reasonable. The vision for impact (C241-C243) is appropriately framed as belief and potential rather than certainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248"
+    ],
+    "result": "The work employed a search strategy to index scattered MD files in generalist repositories, performed a proof-of-concept analysis focused on Gromacs files, revealed the high value of the data and highlighted different categories of simulated molecules and biophysical conditions, proposed a search engine prototype to explore the dark matter of MD, and provided guidelines for data sharing to improve FAIRness of MD data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C244-C248 accurately summarize the main contributions of the work. These are high-level statements that are supported by the detailed results presented throughout the manuscript. The focus on Gromacs (C245) is explicitly stated and justified. The search engine prototype (C247) is demonstrated with the MDverse data explorer. The guidelines (C248) are presented in the discussion section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": ".mdp files contain information about input parameters for running simulations, including integrator, number of steps, and algorithms for barostat and thermostat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 provides an accurate technical description of .mdp file contents with a reference to the Gromacs documentation. This is standard knowledge in the MD community and is correctly stated.",
+    "result_type": "MINOR"
+  }
+]

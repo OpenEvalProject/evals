@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C42",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C94"
+    ],
+    "result": "Pubget is a command-line tool written in Python that downloads full-text articles from PubMed Central (PMC) in a fast and reliable way, extracts brain coordinates using the NeuroQuery method, and enables running complete large-scale meta-analyses in a fully automated and reproducible manner for the first time. The tool uses the E-utilities API, respects rate limits, downloads XML documents in batches, and can optionally extract TF-IDF features, run chi-square tests like NeuroSynth, train neuroquery models, and format outputs for integration with labelbuddy and NiMARE.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge the value and functionality of pubget. Reviewer 1 states 'The tools developed here are really valuable for the future of large-scale analyses of the biomedical literature' and Reviewer 2 notes 'All the tools and repositories are public and can be accessed or installed without difficulty.' Reviewer 3 confirms 'solid and validated methodology' for data collection. No reviewer challenges the technical capabilities or implementation of pubget.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Labelbuddy is a desktop application for manually annotating documents that can be seamlessly installed on Linux, Windows, or MacOS without setup or configuration. It stores documents, labels, and annotations in a single SQLite file, can export to JSON, and can handle dozens of thousands of documents and hundreds of thousands of annotations even on a small machine. Pubget is well integrated with labelbuddy and can store extracted text in JSON files that can be directly imported for annotation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm labelbuddy's functionality. Reviewer 1 notes the tools 'enable...annotating the data' and are 'implemented in an open ecosystem.' Reviewer 2 confirms 'All the tools and repositories are public and can be accessed or installed without difficulty.' Reviewer 3 specifically praises labelbuddy as one of 'Two charms coming with the efforts made by the team' for 'annotating text.' No concerns are raised about labelbuddy's technical implementation or usability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Using pubget with a neuroimaging query resulted in over 10,000 articles with stereotactic coordinates. Pubget-NeuroSynth has higher statistical power and better face validity for rare terms than the original NeuroSynth, while the original NeuroQuery (trained on 13,000 full-text articles) performs better than pubget-NeuroQuery. For frequent, well-defined terms all methods produce adequate results; for formal meta-analysis of a single term, pubget-NeuroSynth produces the best results; and for multi-term queries, neuroquery.org or Text2Brain produce the best results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the tools' value, Reviewer 2 specifically states 'the results from the litmining ecosystem were not validated' and requests 'it would be better to directly compare the results of litmining with recognized ground truth in each of the examples.' The comparative performance claims about pubget-NeuroSynth versus original NeuroSynth and the recommendations for different use cases lack independent validation according to the reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Using pubget, 4230 fMRI articles were downloaded from PubMed Central. After annotating 100 articles with labelbuddy, a 10% mean absolute percentage error was obtained for automatic sample size extraction. GPT-3.5 performed better than the heuristic approach, finding the exact sample size in 50% of papers compared to 36% for the heuristic, with better recall (100% vs 54%), though both had similar error rates when making guesses (median absolute percent error of 0.9% for GPT-3.5 vs 0% for heuristic). For age extraction validation, no errors were found when manually checking automatically generated annotations in labelbuddy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly states 'the results from the litmining ecosystem were not validated' and requests 'it would be better to directly compare the results of litmining with recognized ground truth in each of the examples.' While the authors report validation metrics (10% error, comparison between GPT-3.5 and heuristic), the reviewer's concern about lack of validation against recognized ground truth suggests these internal validation efforts are insufficient. The manual checking of age extraction (C88) provides some validation, but the overall extraction methodology lacks independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C112"
+    ],
+    "result": "The distribution of healthy participants' ages has a large peak around the age of university students, who are often recruited in their own university's studies, possibly reflecting the practice of recruiting students from the researchers' own department. Patients tend to be older on average than healthy participants, with a long tail likely due to studies on aging or neurodegenerative diseases. The median sample size estimated from the new data seems slightly smaller in 2015 than what was extracted from NeuroSynth abstracts, possibly due to errors in automatic extraction or because papers with large sample sizes are more likely to mention it in the abstract.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these demographic observations or interpretations. Reviewer 3 notes 'The data were collected and analyzed using solid and validated methodology,' which implicitly supports these findings. The observations about age distributions and sample sizes are presented as descriptive findings from the data collected using the tools, and no reviewer questions their validity or interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "For the dynamic functional connectivity (dFC) study, 385 papers were downloaded from PubMed Central using pubget, and 70 papers were annotated. The analysis revealed that while numerous methods have been proposed for assessing dFC, the selection of a specific method is often arbitrary and lacks clear rationale. Some dFC methods are frequently cited but seldom applied in practice. Clustering was both highly cited and highly applied, while Time-Frequency was highly cited but not highly applied. Sliding Window was highly applied though not as frequently cited as Clustering, while Co-Activation Patterns and Window-less were not highly applied.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the dFC analysis findings. Reviewer 1 notes 'The presentation of the use of the tools through several examples corresponding to different scientific questions really helps the readers to foresee the potential application of these tools,' which implicitly supports this example. Reviewer 3 states 'The data were collected and analyzed using solid and validated methodology,' supporting the analytical approach. No reviewer questions the specific findings about dFC method usage patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Pubget is restricted to the Open-Access subset of PMC, which excludes a large portion of the biomedical literature. However, all articles in the PMC Open Access subset have Creative Commons or similar licenses and are available for text-mining purposes. There is a trend toward more open-access papers, suggesting PMC will cover an even larger portion of the literature in the future.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this limitation. Reviewer 1 states 'the outcomes of the tools are constrained by inherent limitations in the scientific literature, in particular, here the fact that only a small portion of the publications have full text openly available.' Reviewer 3 notes 'More developments are needed for different resources of literature.' The authors' acknowledgment of this limitation and the licensing benefits are accepted by reviewers without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The litmining ecosystem is aimed to make literature mining as scalable, reproducible, and accessible as possible. Pubget and labelbuddy are local applications that run on users' machines, store outputs in standard formats (CSV and JSON), with labelbuddy using SQLite internally. The litmining ecosystem approach has medium accessibility, high scalability, and high reproducibility compared to alternative approaches (re-using existing corpus, manually collecting papers, or automatically collecting papers).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the tools' value, Reviewer 2 specifically requests quantification: 'To prove the efficiency of the current ecosystem, it would be better to use quantitative indices for comparing the litmining and the other two approaches (in terms of time and/or other costs in a typical meta-research).' The comparative claims about accessibility, scalability, and reproducibility shown in Figure 1 are not independently validated or quantified, leaving these assessments as author assertions rather than demonstrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C110",
+      "C111"
+    ],
+    "result": "The tools are already being used by Neurosynth-compose, a large funded project and online platform for performing PRISMA-compliant meta-analyses in neuroimaging. Pubget is used for part of the data collection, and both pubget and labelbuddy are used for prototyping and validating upcoming features such as information extraction with neural networks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the claim about Neurosynth-compose usage. The editor notes 'the applicability of these methods and tools might extend further, offering an advance in the practices of meta-research and literature mining,' which supports the broader adoption claim. Reviewer 2 acknowledges 'the ecosystem is relatively mature,' consistent with its use in other projects. The specific citations to Kent et al., 2024 and Page et al., 2021 provide documented evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C96",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The labelbuddy-annotations repository stores documents, labels, and annotations from several projects and annotators, with a Jupyter book showcasing contents hosted on GitHub Pages. The repository contains a Python package to facilitate analysis of existing annotations. Across all projects, the repository contains 930 documents, 102 labels, 14 annotators, and 6180 annotations, distributed across eight different projects including participant_demographics (188 documents, 3006 annotations), cluster_inference (193 documents, 1610 annotations), and others.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the repository's existence and accessibility. Reviewer 2 states 'All the tools and repositories are public and can be accessed or installed without difficulty' and notes 'the results reported in the manuscript are also compelling that the ecosystem is relatively mature.' The specific statistics about documents and annotations are presented as factual data from Table 1 and are not challenged by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "NiMARE is the established Python library for neuroimaging meta-analysis and provides implementations of most of the widely used meta-analysis methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a background claim about an existing tool (NiMARE) supported by citation to Salo and Bottenhorn, 2018. No reviewer challenges this characterization of NiMARE. The claim serves to contextualize pubget's integration capabilities rather than being a primary finding of the manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -2,351 +2,225 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C23",
-      "C24",
-      "C25",
-      "C26",
-      "C27"
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
     ],
-    "result": "\u03a6Staph1N infects MRSA252, MW2, and LAC strains but cannot eradicate cultures. Infected cultures recover after passaging, and recovered cells are resistant to \u03a6Staph1N.",
+    "result": "\u03a6Staph1N, a Kayvirus phage, infects all three MRSA strains (MRSA252, MW2, LAC) but cannot eradicate cultures. Infected cultures recover after passaging, and recovered populations are resistant to \u03a6Staph1N.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C23-C27 provide converging evidence from plaquing assays (C23, C27), growth curves (C25), and passaging experiments (C26) that \u03a6Staph1N infects all three strains but selects for resistant mutants. The data in Figures 1B and 1\u2014figure supplement 2 support these observations.",
+    "evaluation": "Claims C30-C36 collectively demonstrate that \u03a6Staph1N has broad activity against the three MRSA strains tested but incomplete lytic activity. The plaquing data (C32, Figure 1B), incomplete lysis observations (C34, Figure 1\u2014figure supplement 2), recovery data (C35), and resistance evolution (C36) provide converging experimental evidence for this result.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C28",
-      "C29",
-      "C30",
-      "C31"
+      "C37",
+      "C38",
+      "C39",
+      "C40"
     ],
-    "result": "Phage-resistant MRSA that survived \u03a6Staph1N infection display 10- to 1000-fold reductions in MIC against oxacillin, cefazolin, and amoxicillin with clavulanic acid, but not against vancomycin or amoxicillin alone.",
+    "result": "Phage-resistant MRSA that survived \u03a6Staph1N infection display 10- to 1000-fold reductions in MIC against \u03b2-lactams (oxacillin, cefazolin, amoxicillin+clavulanic acid) but not against vancomycin or amoxicillin alone.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28-C31 are supported by MIC measurements shown in Figures 1C and 1D. The parental strains show high \u03b2-lactam resistance (C28), while phage-treated strains show dramatic MIC reductions for specific \u03b2-lactams (C30) but not others (C31). The data are internally consistent and replicated across three strains.",
+    "evaluation": "Claims C37-C40 establish the baseline \u03b2-lactam resistance of parental strains and demonstrate the specific loss of resistance following phage treatment. The MIC data shown in Figures 1C and 1D provide quantitative evidence for this trade-off, with appropriate controls (vancomycin, amoxicillin alone) showing no change.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C32",
-      "C33",
-      "C34"
+      "C41",
+      "C42",
+      "C43"
     ],
-    "result": "The MOI of \u03a6Staph1N required to drive loss of \u03b2-lactam resistance varies by strain, with MRSA252 showing sensitivity at MOI 10\u207b\u2075, MW2 requiring MOI >10\u207b\u00b3, and LAC showing variable responses.",
+    "result": "The MOI of \u03a6Staph1N required to drive \u03b2-lactam resistance loss varies by strain: MRSA252 shows resistance loss at MOIs as low as 10\u207b\u2075, while MW2 and LAC require higher MOIs (\u226510\u207b\u00b3 and \u226510\u207b\u2074, respectively).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C32-C34 are supported by MIC measurements at different MOIs shown in Table 1. The strain-specific differences in MOI requirements are clearly documented with replicate measurements, though the variability in LAC (C34) suggests some stochasticity in the evolutionary outcome.",
+    "evaluation": "Claims C41-C43 demonstrate strain-specific dose-response relationships between phage MOI and \u03b2-lactam resistance loss. The data in Table 1 show consistent patterns across replicates for MRSA252 and MW2, though LAC shows some variability (C43). The overall trend is well-supported despite this variability.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C35",
-      "C36",
-      "C37"
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
     ],
-    "result": "Evo2 is a mutant phage derived from \u03a6Staph1N with a nonsense mutation in ORF141 that exhibits enhanced infectivity against MW2 and LAC strains.",
+    "result": "Evo2, a mutant form of \u03a6Staph1N with a nonsense mutation in ORF141 (predicted DNA binding protein), exhibits enhanced lytic activity against MW2 and LAC at lower MOIs compared to the parental phage.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C37 are supported by sequencing data (Figure 2\u2014figure supplement 1), plaquing assays (Figure 2A), and growth curves (Figure 2\u2014figure supplement 2). The genetic basis of enhanced activity is identified, and the phenotypic improvement is demonstrated across multiple assays.",
+    "evaluation": "Claims C44-C48 describe the discovery and characterization of Evo2. The plaquing data (C45, Figure 2A), lytic activity at low MOI (C46, Figure 2\u2014figure supplement 2), and genomic characterization (C47-C48, Figure 2\u2014figure supplement 1) provide strong evidence for this evolved phage variant with improved activity.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C38",
-      "C39"
+      "C49",
+      "C50",
+      "C51"
     ],
-    "result": "Evo2 infection reduces MICs against oxacillin, cefazolin, and amoxicillin with clavulanic acid in MRSA252, MW2, and LAC, but not against amoxicillin alone or vancomycin.",
+    "result": "Evo2 infection reduces MICs against \u03b2-lactams (oxacillin, cefazolin, amoxicillin+clavulanic acid) in all three MRSA strains, with occasional sensitization to fosfomycin, daptomycin, and teicoplanin in some replicates.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C39 are supported by MIC data in Figure 2B and Table 2. The pattern of \u03b2-lactam sensitization mirrors that of \u03a6Staph1N (C30-C31), demonstrating consistency across phages. The specificity for certain \u03b2-lactams is well-documented.",
+    "evaluation": "Claims C49-C51 demonstrate that Evo2 produces similar \u03b2-lactam sensitization as \u03a6Staph1N (Figure 2B, Table 2). The occasional sensitization to other antibiotics (C50-C51) is documented but inconsistent across replicates, suggesting these may be secondary effects. The primary \u03b2-lactam sensitization is well-supported.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C40",
-      "C41"
+      "C52",
+      "C53",
+      "C54"
     ],
-    "result": "Some Evo2-resistant isolates showed sensitization to non-\u03b2-lactam antibiotics including fosfomycin, daptomycin, and teicoplanin.",
+    "result": "Evo2 shows broad activity against recent USA300 clinical isolates (2008-2011), with some strains unable to develop resistance after 15 challenges. Strains that develop resistance show 10- to 100-fold reductions in oxacillin MIC.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40-C41 are supported by MIC data in Table 2. However, these effects were inconsistent across replicates and strains, suggesting they may be secondary consequences rather than primary trade-offs. The magnitude of MIC reduction was also less dramatic than for \u03b2-lactams.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C52-C54 extend the findings to clinically relevant recent isolates. The plaquing efficiency data (C52, Table 3), inability to recover resistant populations from some strains (C53), and MIC reductions in others (C54, Figure 2C) demonstrate the broader applicability of the phage-antibiotic trade-off phenomenon.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C42",
-      "C43",
-      "C44"
+      "C55",
+      "C56",
+      "C57"
     ],
-    "result": "Evo2 shows broad activity against USA300 clinical isolates, with some strains unable to evolve resistance and others showing 10- to 100-fold oxacillin MIC reductions.",
+    "result": "Not all staphylococcal phages produce \u03b2-lactam sensitization: \u03a6NM1\u03b36 (Dubowvirus) generates phage resistance without reducing \u03b2-lactam MIC, while SATA8505 (Kayvirus) produces resistance loss similar to \u03a6Staph1N and Evo2.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C42-C44 are supported by plaquing efficiency data (Table 3) and MIC measurements (Figure 2C) across 30 clinical isolates. The inability to recover resistant populations from some strains (C43) is particularly striking and suggests Evo2 may be lethal to certain genetic backgrounds.",
+    "evaluation": "Claims C55-C57 provide important controls demonstrating that the phage-antibiotic trade-off is not universal. The data for \u03a6NM1\u03b36 (Figure 2\u2014figure supplement 3) and SATA8505 (Figure 2\u2014figure supplement 4) show phage-specific effects, suggesting the mechanism is related to phage genus or specific phage-host interactions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C45"
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
     ],
-    "result": "Infection with \u03a6NM1\u03b36 does not result in decreased \u03b2-lactam resistance in LAC.",
+    "result": "Each MRSA strain evolved distinct mutation profiles following phage infection, primarily in transcriptional regulators and cell wall-related genes, but not in SCCmec or blaZ. Single knockouts of identified genes are insufficient to confer phage resistance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C45 is supported by data in Figure 2\u2014figure supplement 3 showing that \u03a6NM1\u03b36-resistant LAC maintains \u03b2-lactam resistance. This negative result is important for demonstrating that the trade-off is not universal across all staphylococcal phages.",
+    "evaluation": "Claims C58-C71 describe comprehensive genomic analysis revealing strain-specific evolutionary trajectories. The mutation data (Figure 3A, Table 4) show distinct patterns: femA mutations in MRSA252 (C61-C62), mgrA/sarA in MW2 (C63-C64), and arlR/spoVG in LAC (C65-C69). The knockout experiments (C70, Figure 3\u2014figure supplement 2) demonstrate that individual mutations are insufficient, suggesting epistatic interactions. The absence of SCCmec/blaZ mutations (C60) is a critical negative result.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C46"
-    ],
-    "result": "SATA8505-resistant MRSA shows strong loss of oxacillin resistance.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C46 is supported by data in Figure 2\u2014figure supplement 4. This extends the finding to a third Kayvirus phage, suggesting the trade-off may be genus-specific, though more comprehensive testing is needed.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C47",
-      "C48",
-      "C49"
-    ],
-    "result": "Each MRSA strain evolved distinct mutation profiles following phage infection, with most mutations being substitutions or truncations, and no mutations in SCCmec or blaZ.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C47-C49 are supported by whole genome sequencing data shown in Figure 3A and Supplementary file 1. The absence of mutations in the primary resistance determinants (C49) is particularly important as it rules out the most obvious mechanism and points to more complex evolutionary pathways.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C50",
-      "C51"
-    ],
-    "result": "MRSA252 evolved frameshift or nonsense mutations in femA following phage infection, which is known to increase \u03b2-lactam susceptibility even when PBP2a is expressed.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C51 are supported by sequencing data and citations to prior work (Maidhof et al., 1991; Srisuknimit et al., 2017). This provides a clear genetic mechanism for \u03b2-lactam sensitization in MRSA252, though the presence of additional uncharacterized mutations complicates the picture.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C52",
-      "C53"
-    ],
-    "result": "MW2 evolved mutations in transcriptional regulators mgrA and sarA, which regulate drug resistance and virulence in S. aureus.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C53 are supported by sequencing data (Figure 3A, Table 4) and citations to prior work on these regulators. The involvement of global regulators suggests complex pleiotropic effects on multiple phenotypes.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C54",
-      "C55",
-      "C56",
-      "C57"
-    ],
-    "result": "LAC evolved nonsense mutations in arlR and substitution mutations in spoVG, both of which are implicated in virulence and \u03b2-lactam resistance.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54-C57 are supported by sequencing data (Figure 3A, Table 4) and citations to prior work. Like MW2, LAC evolved mutations in regulatory genes rather than structural genes, suggesting convergent evolution at the functional level despite genetic divergence.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C58"
-    ],
-    "result": "Single knockout mutants of mgrA, sarA, and arlR are not sufficient to confer resistance to \u03a6Staph1N and Evo2.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C58 is supported by plaquing assays on knockout strains (Figure 3\u2014figure supplement 2). This demonstrates that phage resistance requires multiple mutations working in concert, consistent with the observation that evolved clones carry multiple mutations.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C59"
-    ],
-    "result": "LAC evolved a missense mutation in fmhC (H21D) after \u03a6NM1\u03b36 infection.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C59 is supported by sequencing data (Table 4, Supplementary file 1). This mutation is distinct from those arising after \u03a6Staph1N/Evo2 infection, consistent with the observation that \u03a6NM1\u03b36 does not cause \u03b2-lactam sensitization (C45).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C60",
-      "C61"
-    ],
-    "result": "Phage-treated MRSA strains showed significant transcriptional changes, but no changes in SCCmec or blaZ expression.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C60-C61 are supported by RNA-seq data (Figure 4, Supplementary file 2). The absence of changes in primary resistance genes (C61) mirrors the mutational data (C49) and reinforces that \u03b2-lactam sensitization occurs through indirect mechanisms.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C62"
-    ],
-    "result": "MW2 and LAC evolved nonsense mutations in mgrA and arlR that resulted in elevated transcript levels of ebh and urease genes, consistent with prior deletion studies.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C62 is supported by RNA-seq data (Supplementary file 2) and comparison to prior work. The consistency with deletion phenotypes validates that the nonsense mutations are functionally equivalent to knockouts.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C63",
-      "C64"
-    ],
-    "result": "Both MW2 and LAC strongly upregulated lytN and fmhC genes, with fmhC overexpression linked to increased \u03b2-lactam sensitivity.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C64 are supported by RNA-seq data and inference from literature. The upregulation of fmhC provides a potential mechanistic link to \u03b2-lactam sensitization, though direct experimental validation of this connection is not provided.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
-      "C65"
-    ],
-    "result": "MW2 and LAC downregulated numerous virulence factor genes including those in the type VII secretion system, staphyloxanthin biosynthesis, and quorum sensing pathways.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C65 is supported by RNA-seq data (Figure 4, Supplementary file 2). The coordinated downregulation of multiple virulence pathways suggests global regulatory changes consistent with the mutations in transcriptional regulators.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C66",
-      "C67",
-      "C68"
-    ],
-    "result": "Phage-treated MRSA showed strain-specific upregulation of some virulence factors including spa and tarM in MW2, and lukD/E in LAC.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C66-C68 are supported by RNA-seq data. These represent potential 'trade-ups' that could have negative clinical implications. The upregulation of tarM (C67) is particularly interesting as it may contribute to phage resistance through WTA modification.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
-      "C69",
-      "C70"
-    ],
-    "result": "Evo2 infection reduced biofilm formation in MRSA252 but not in MW2 or LAC.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C70 are supported by Crystal Violet assays (Figure 5\u2014figure supplement 1). The strain-specific effect suggests biofilm reduction is not a universal consequence of phage treatment, though the mechanism for the MRSA252-specific effect is unclear.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C71",
       "C72",
       "C73",
-      "C74"
-    ],
-    "result": "Phage treatment reduced hemolytic activity in MW2 and LAC by 4- to 5-fold, with Evo2-treated LAC showing the most dramatic reduction.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71-C74 are supported by hemolysis assays on blood agar (Figure 5A). The quantitative measurements show consistent reductions across replicates, demonstrating attenuation of this important virulence phenotype.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
+      "C74",
       "C75",
       "C76",
-      "C77"
-    ],
-    "result": "Phage-treated MW2 and LAC displayed reduced clumping compared to untreated cells, with Evo2 showing stronger effects than \u03a6Staph1N in MW2.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C75-C77 are supported by clumping assays (Figure 5B). The reduction in clumping is consistent with upregulation of ebh (C62), which is known to reduce clumping. This provides a mechanistic link between genotype, transcriptome, and phenotype.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
+      "C77",
       "C78",
-      "C79"
-    ],
-    "result": "In checkerboard assays with Evo2 and oxacillin, recovered MRSA252 and MW2 cells showed both phage resistance and reduced oxacillin MIC.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C78-C79 are supported by checkerboard assay data (Figure 6A-B). This demonstrates that the trade-off persists even under dual selection pressure with phage and antibiotic, at least at the concentrations tested.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R25",
-    "claim_ids": [
+      "C79",
       "C80",
-      "C81"
-    ],
-    "result": "In MW2, high oxacillin concentrations (16 \u00b5g/mL) selected for cells maintaining \u03b2-lactam resistance with reduced phage sensitivity, while low oxacillin (<0.125 \u00b5g/mL) selected for phage resistance with \u03b2-lactam sensitization.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C81 are supported by checkerboard assay data (Figure 6C) and whole genome sequencing showing distinct mutations. This demonstrates dose-dependent evolutionary outcomes and suggests that antibiotic concentration can determine whether the trade-off occurs.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R26",
-    "claim_ids": [
+      "C81",
       "C82",
       "C83",
       "C84",
       "C85",
       "C86"
     ],
-    "result": "Infection by certain staphylococcal phages sensitizes MRSA to \u03b2-lactams and attenuates virulence through strain-specific mutations and transcriptional remodeling.",
+    "result": "Phage-treated MRSA strains display extensive transcriptional remodeling, including upregulation of cell wall maintenance genes (lytN, fmhC, ebh) and urease genes, and downregulation of virulence factors (ess locus, staphyloxanthin, quorum sensing), with some strain-specific changes (spa in MW2, lukD/E in LAC).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C82-C86 represent the main conclusions of the study, synthesizing findings from multiple experimental approaches. The claims are well-supported by converging evidence from MIC assays, sequencing, transcriptomics, and virulence phenotyping across multiple strains and phages.",
+    "evaluation": "Claims C72-C86 present RNA-seq data showing dramatic transcriptional changes consistent with the mutational data. The upregulation of ebh and urease genes (C74-C76) aligns with known effects of mgrA/arlRS mutations. The upregulation of cell wall genes (C77-C79) and downregulation of virulence factors (C80-C81) are well-documented in Figure 4 and Supplementary file 2. Strain-specific changes (C82-C86) suggest complex regulatory networks. The lack of SCCmec/blaZ expression changes (C73) is consistent with the mutation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Phage-treated MW2 and LAC show reduced hemolysis (4- to 5-fold reduction) on rabbit blood agar despite unchanged hla expression, suggesting impaired toxin secretion. MRSA252 shows no hemolysis in parental or evolved forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 demonstrate reduced hemolytic activity following phage treatment (Figure 5A-B). The quantitative measurements (C90, C92-C93) show significant reductions. The observation that hla expression is unchanged (C94) combined with reduced hemolysis supports the speculation about impaired secretion (C95), though this mechanism requires further validation. The biofilm data (C87-C88) shows strain-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Phage-treated MW2 and LAC display reduced clumping compared to parental strains, with Evo2 producing a ~3-fold reduction in MW2 and comparable reductions in LAC for both phages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 demonstrate reduced clumping following phage treatment (Figure 5C). The quantitative data show consistent reductions across replicates, supporting the conclusion that phage treatment attenuates this virulence-associated phenotype. This is consistent with the upregulation of ebh observed in the transcriptomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In checkerboard assays combining Evo2 or \u03a6Staph1N with oxacillin, MRSA strains show variable growth patterns. Cells that survive Evo2/oxacillin co-treatment maintain phage resistance and \u03b2-lactam sensitization. \u03a6Staph1N/oxacillin co-treatment in MW2 produces divergent outcomes depending on antibiotic concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 describe complex evolutionary dynamics under dual selection. The checkerboard data (Figure 6A) show strain-specific responses. For Evo2, survivors maintain the phage resistance/antibiotic sensitivity trade-off (C102-C103, Figure 6B). For \u03a6Staph1N in MW2, high oxacillin selects for antibiotic resistance without complete phage resistance (C105), while low oxacillin produces the typical trade-off (C106, Figure 6C). This demonstrates that selective pressure balance determines evolutionary outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Infection by certain staphylococcal phages (\u03a6Staph1N, Evo2, SATA8505) drives MRSA to evolve phage resistance coupled with 10- to 1000-fold reductions in \u03b2-lactam MIC and attenuated virulence phenotypes, despite distinct strain-specific mutational profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 represent the main conclusions of the study, synthesizing the phenotypic, genomic, and transcriptomic findings. The convergent phenotypes (\u03b2-lactam sensitization, reduced virulence) arising from divergent genetic changes across multiple strains and phages provide strong evidence for a robust evolutionary trade-off. The comprehensive experimental approach (MIC assays, genomics, transcriptomics, virulence assays) supports these conclusions.",
     "result_type": "MAJOR"
   }
 ]

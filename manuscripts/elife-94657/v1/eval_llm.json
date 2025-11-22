@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Hox genes are markedly up-regulated specifically in the pons of Rnf220-deficient mice during late embryonic development (post-E15.5), with similar upregulation observed in both Rnf220+/- and Rnf220-/- genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods (microarray, RNA-seq, qRT-PCR) consistently demonstrate Hox upregulation in the pons of Rnf220-deficient mice at late developmental stages (C2, C36, C37, C39, C40, C41). The temporal specificity (post-E15.5) and regional specificity (pons) are well-documented with appropriate controls and multiple genotypes examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C112"
+    ],
+    "result": "Single-nucleus RNA-seq reveals cell-type-specific Hox de-repression profiles in the pons, with distinct patterns in different neuronal clusters including pontine nuclei (cluster_7 showing Hox3-5 upregulation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The snRNA-seq analysis identifies 15 cell clusters with robust cell numbers (>120,000 cells per group) and demonstrates distinct Hox upregulation patterns across three specific clusters (C42, C43, C44-C46). Cell type assignments are supported by marker gene expression (C52), though the inference of rhombomeric origin (C50, C51) relies on known Hox expression patterns rather than direct lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C115"
+    ],
+    "result": "The spatial Hox expression pattern along the rostral-caudal axis is disrupted in the pontine nuclei of Rnf220+/- mice, with uniform upregulation of Hox3-5 paralogs across all PN regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR analysis of dissected PN regions demonstrates that the normally nested Hox3-5 expression pattern is disrupted, with uniform upregulation across rostral, middle, and caudal segments (C61). This represents a clear deviation from the established wild-type pattern where Hox4 and Hox5 are normally restricted to middle/posterior and posterior regions respectively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C65",
+      "C102",
+      "C116"
+    ],
+    "result": "Neural circuit connectivity between motor cortex and pontine nuclei is disrupted in Rnf220+/- mice, with reduced projection area and centralized projection pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Anterograde viral tracing demonstrates quantifiable defects in cortex-PN connectivity (C64, C65) with appropriate sample sizes (n=10 WT, n=9 HE). However, the manuscript lacks functional assessment of these circuit changes and does not establish whether the connectivity defects are directly caused by Hox dysregulation or represent independent effects of Rnf220 deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C103"
+    ],
+    "result": "RNF220 physically interacts with WDR5 and regulates its protein stability through E3 ubiquitin ligase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches demonstrate RNF220-WDR5 interaction (co-IP in both directions, C74-C76) and functional regulation (C77-C79). The requirement for RNF220's ligase activity is demonstrated using catalytically inactive mutants (W539A) and RING domain deletion mutants. MG132 blockade confirms proteasomal degradation mechanism (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "WDR5 protein levels are specifically elevated in the hindbrain/pons of Rnf220-deficient mice at late embryonic and adult stages, but not in other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot analysis demonstrates region-specific WDR5 accumulation in hindbrain (E16.5, E18.5) and pons (adult) but not cortex or cerebellum (C69-C71). This spatial specificity correlates with the region-specific Hox upregulation. The effect is also recapitulated in RA-treated P19 cells (C73), providing an in vitro model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RNF220 mediates K48-linked polyubiquitination of WDR5 at specific lysine residues (K109, K112, K120), targeting it for proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Comprehensive ubiquitination analysis demonstrates: (1) RNF220 enhances WDR5 polyubiquitination in a ligase-dependent manner (C81, C82); (2) reduced endogenous WDR5 ubiquitination in Rnf220+/- mice (C83); (3) K48-linkage specificity (C85, C86); and (4) identification of specific ubiquitination sites through systematic mutagenesis (C88-C90). The 3KR mutant data (C89) provides strong evidence for direct ubiquitination at these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C48",
+      "C92",
+      "C111"
+    ],
+    "result": "In P19 cells, Rnf220 knockdown enhances RA-induced Hox expression, and this effect is rescued by Wdr5 knockdown, establishing WDR5 as a functional mediator of RNF220's regulation of Hox genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The P19 cell system demonstrates: (1) Rnf220 knockdown enhances RA-induced Hox expression (C10, C48); (2) this effect requires RA treatment (C49); and (3) Wdr5 knockdown rescues the Rnf220 knockdown phenotype (C11, C92). This establishes epistasis and supports WDR5 as a downstream effector. However, the rescue is partial rather than complete, suggesting additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C94",
+      "C95"
+    ],
+    "result": "Pharmacological inhibition of WDR5 by intrauterine injection of WDR5-IN-4 largely reverses Hox upregulation in Rnf220+/- embryonic hindbrains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In utero injection of WDR5 inhibitor demonstrates rescue of Hox3-5 upregulation in Rnf220+/- embryos (C94) without affecting Rnf220 expression itself (C95). This provides pharmacological validation of WDR5's role. However, the manuscript lacks information on injection efficiency, drug distribution, potential off-target effects, and whether the rescue is maintained long-term.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Genetic ablation of Wdr5 in neural tissue (using Nestin-Cre) markedly recovers the Hox upregulation phenotype in Rnf220-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic rescue experiment using conditional Wdr5 deletion demonstrates recovery of Hox3-5 expression in Rnf220fl/wt;Wdr5fl/wt;Nestin-Cre mice (C98). This provides strong genetic evidence for WDR5 as the critical mediator. However, sample size appears limited (n=2 per group, C98), and the manuscript does not report whether circuit connectivity defects are also rescued.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C99",
+      "C100"
+    ],
+    "result": "Rnf220 deficiency alters histone modifications at Hox loci, with decreased H3K27me3 (repressive) and increased H3K4me3 (active) marks, and these changes are partially reversed by Wdr5 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR demonstrates expected epigenetic changes at Hox loci in Rnf220+/- hindbrains (C66, C67) and partial reversal in Rnf220/Wdr5 double knockdown P19 cells (C99, C100). However, the analysis is limited to selected Hox genes rather than genome-wide, and the manuscript does not demonstrate direct WDR5 binding to these loci or show that WDR5 is necessary for the histone modification changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The gross anatomical structure of the pontine nuclei and pons is preserved in Rnf220+/- mice despite Hox dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Histological analysis (Nissl staining, DAPI) and quantification of PN diameter and area show no significant structural differences between WT and Rnf220+/- mice (C62, C63). This indicates that the Hox dysregulation affects molecular patterning and connectivity rather than gross morphology, though more detailed cellular architecture analysis would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C57"
+    ],
+    "result": "Some pontine nuclei markers are upregulated in Rnf220+/- mice, including Hox4-5 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR demonstrates upregulation of PN markers (C53) and Hox4-5 specifically in PN tissue (C57). However, the manuscript does not clarify whether the marker upregulation reflects increased PN cell numbers, altered cell identity, or transcriptional changes within existing PN neurons. The biological significance of these changes remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Protein levels of core PcG complex components are comparable between WT and Rnf220+/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot analysis shows no changes in PcG components examined (C68), supporting the specificity of WDR5 regulation by RNF220. However, the manuscript does not specify which PcG components were examined or provide quantification, limiting the strength of this negative result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C93",
+      "C120"
+    ],
+    "result": "Rnf220 knockdown has no effect on Hox expression in the absence of retinoic acid treatment in P19 cells, and Wdr5 knockdown alone does not affect Hox expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Control experiments demonstrate context-dependency of the RNF220-WDR5-Hox regulatory axis (C49, C93, C120). This indicates that RA treatment establishes a permissive state for Hox regulation. However, the manuscript does not mechanistically explain why RNF220 effects are RA-dependent or what molecular changes RA induces to enable this regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C117",
+      "C118"
+    ],
+    "result": "The regulation of WDR5 and Hox expression by RNF220 is context-dependent and region-specific, as WDR5 levels are unaffected in most brain regions despite widespread RNF220 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that WDR5 is only affected in specific brain regions (C71, C118) despite widespread RNF220 expression indicates context-dependent regulation (C117). This is an important finding suggesting additional regulatory factors determine where RNF220 regulates WDR5. However, the manuscript does not identify what factors confer this specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The N-terminal region of WDR5 (amino acids 1-127) is sufficient for RNF220-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Truncation analysis demonstrates that WDR5(1-127aa) is degraded by RNF220 (C87), localizing the critical ubiquitination sites to this region. This guided subsequent identification of specific lysine residues. However, the manuscript does not test whether this region is also sufficient for RNF220 binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Cluster 2 in the snRNA-seq analysis represents glycinergic neurons based on Slc6a5 expression and shows upregulation of Hox7-10 genes not normally expressed in wild-type hindbrain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Slc6a5 expression supports glycinergic neuron identity (C113), the claim that Hox7-10 are not expressed in WT hindbrain requires more careful examination. The snRNA-seq data may have detected low-level expression not visible in bulk analysis. Additionally, the biological significance and developmental consequences of this ectopic Hox expression are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C114"
+    ],
+    "result": "The RNF220-WDR5 regulatory mechanism might have functional roles in neural circuit organization and broader effects on pons development including cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are speculative (C109, C114) and not directly tested. While circuit connectivity defects are demonstrated, causality between Hox dysregulation and circuit defects is not established. The manuscript does not perform rescue experiments to show that correcting Hox expression restores normal connectivity, nor does it assess whether WDR5 inhibition rescues the circuit phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Retinoic acid treatment establishes a molecular environment that facilitates both Hox expression and RNF220-WDR5 interaction in P19 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative interpretation (C122) of the observation that RNF220 effects on WDR5 and Hox are RA-dependent. The manuscript does not test whether RA affects RNF220-WDR5 interaction directly, nor does it identify what molecular changes RA induces. This represents a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

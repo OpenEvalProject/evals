@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A combinatorial CRISPR library targeting 76 tyrosine kinases was constructed and validated, encompassing 54,289 sgRNA pairs representing 3003 pairwise gene disruptions. The library showed high representation (99.5% of gene pairs with \u22656 sgRNA pairs), positive correlations between replicates (r=0.74) and sgRNA permutations (r=0.50), and strong correlation between expected and observed Z scores (r=0.97 at gene level), indicating most pairwise perturbations show additive effects. Using stringent cutoffs (GI score <-2, p<0.01, Z<-5), 30 synthetic lethal gene pairs were identified, including the known SRC-YES pair (GI=-3.95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C29 and C97-C100 collectively demonstrate successful library construction and validation. The high library coverage (C21), strong correlations between technical and biological replicates (C22-C24), and validation of known synthetic lethal pairs like SRC-YES (C28-C29) provide converging evidence for screen quality. The methodological improvements (C100) and statistical analyses (C25-C26) support the robustness of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Validation experiments confirmed that 6 out of 8 tested synergistic gene pairs showed cell viability reduction beyond Bliss independence predictions, with strong correlation (r=0.65) between screening data and validation results for both viability and synergistic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 demonstrate successful validation of screen hits using orthogonal methods. The 75% validation rate (6/8 pairs) and strong correlation (r=0.65) between screen and validation data provide solid evidence for screen reliability. The use of Bliss independence model as a benchmark is appropriate for assessing synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Network analysis identified FYN as a key hub in synthetic lethal interactions with multiple tyrosine kinases. FYN, but not SRC, showed significant upregulation in TNBC compared to other breast cancer subtypes in both primary tumors and cell lines, and has been previously implicated in cancer malignancy including drug resistance and EMT promotion in TNBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 establish FYN as a priority target through multiple lines of evidence: network centrality (C32), literature support for its role in drug resistance (C33-C34), and TNBC-specific upregulation (C35). The differential expression of FYN versus SRC in TNBC provides specificity to the finding and is supported by analysis of public datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "FYN inhibition synergizes with multiple TKIs (NVP-ADW742, gefitinib, imatinib) in killing TNBC cells. PP2 treatment reduced IC50 of TKIs by 34-61%, and genetic ablation of FYN (but not SRC) sensitized cells to TKIs. Similar synergy was observed across multiple TNBC cell lines (Hs578T, HCC1143, HCC1395, HCC1937), with combined treatment inducing both cell death and growth inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C101-C103 provide comprehensive validation of FYN as a synergistic target with multiple TKIs. The evidence includes: (1) synergy analysis using SynergyFinder (C36), (2) dose-response curves showing IC50 reduction (C37), (3) genetic validation showing FYN-specific effects (C38, C103), (4) reproducibility across multiple cell lines (C39), and (5) mechanistic validation using live-dead and BrdU assays (C40). The specificity for FYN over SRC strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C90",
+      "C104"
+    ],
+    "result": "FYN-mediated TKI resistance operates through p38 MAPK pathway activation in MDA-MB-231 cells. Both pharmacological (PP2, saracatinib) and genetic FYN inhibition attenuated p38 phosphorylation, and p38 inhibitor SB203580 sensitized cells to TKIs. However, FYN inhibition did not significantly affect ERK phosphorylation upon imatinib treatment, suggesting context-dependent downstream mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C90, and C104 establish p38 MAPK as a downstream mediator of FYN-driven TKI resistance, at least in MDA-MB-231 cells. The evidence includes western blot validation (C41, C43), genetic confirmation (C43), and functional rescue with p38 inhibitor (C44). The authors appropriately acknowledge context-dependency (C42, C90) and note that single-agent effects are minimal (C103-C104), supporting a synergistic rather than additive mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TKI treatment upregulates FYN at both mRNA and protein levels through a KDM4-dependent mechanism. TKI treatment increased expression of jumonji domain histone demethylases, particularly KDM4 family members. Among tested demethylases, only KDM4 (and to lesser extent KDM3) ablation inhibited FYN upregulation upon TKI treatment. Time-course experiments showed KDM4A protein accumulation preceded FYN accumulation. EGR1, previously implicated in FYN regulation, was not responsible for FYN upregulation in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C4, C52-C58 establish a mechanistic link between TKI treatment and FYN upregulation via KDM4. The evidence includes: (1) temporal relationship showing KDM4A precedes FYN (C58), (2) systematic testing ruling out other demethylases (C53-C55), (3) validation in organoids (C57), (4) exclusion of alternative mechanism via EGR1 (C47-C48), and (5) consistent effects across multiple TKIs (C56). The proportional increase in FYN phosphorylation (C46) indicates the upregulation is at the expression level rather than activation state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C105",
+      "C106"
+    ],
+    "result": "KDM4 directly regulates FYN transcription by demethylating H3K9me3 at the FYN promoter. KDM4A expression is enriched in TNBC and positively correlates with FYN expression. Genetic ablation or pharmacological inhibition (QC6352) of KDM4 decreased FYN expression, attenuated p38 activation, and sensitized cells to TKIs. ChIP-seq and ChIP-qPCR data showed KDM4A enrichment at FYN promoter, with TKI treatment reducing H3K9me3 marks and QC6352 restoring them. H3K27me3 marks were unchanged, ruling out KDM6 involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C59-C71, C105-C106 provide strong mechanistic evidence for KDM4-mediated epigenetic regulation of FYN. The evidence includes: (1) correlation analysis in public datasets (C59-C60), (2) genetic validation (C61-C62), (3) pharmacological validation with QC6352 (C63-C64, C71), (4) analysis of published ChIP-seq data (C65-C67), (5) direct ChIP-qPCR validation (C68-C69), and (6) specificity demonstrated by unchanged H3K27me3 (C70). The modest single-agent effects (C105) support a model where KDM4 is specifically important in the TKI-resistance context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Combination therapy targeting FYN and KDM4 with TKIs showed synergistic anti-tumor effects in vivo. Saracatinib plus NVP-ADW742 and QC6352 plus gefitinib both synergistically reduced MDA-MB-231 xenograft tumor growth compared to single agents, without causing significant body weight changes or adverse health effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 demonstrate in vivo validation of the combination therapy approach. The xenograft data show synergistic tumor reduction (C72, C74) with acceptable tolerability (C73), translating the in vitro findings to a preclinical model. The use of Bliss independence model to calculate expected additive effects provides appropriate statistical framework for assessing synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "High expression of FYN and KDM4A correlates with poor prognosis in breast cancer patients, supporting their potential as therapeutic targets for TNBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 provides clinical relevance by linking FYN and KDM4A expression to patient outcomes using survival analysis of the GSE25066 cohort. This correlation supports the therapeutic potential of targeting these genes, though causality cannot be established from correlation alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C7",
+      "C8",
+      "C87"
+    ],
+    "result": "FYN upregulation is a general feature of drug-tolerant persister cells across multiple cancer types and therapeutic interventions. FYN was upregulated in MDA-MB-231 cells after prolonged treatment with TKIs and chemotherapy drugs, in osimertinib-tolerant EGFR-mutant lung cancer cells, in gefitinib/osimertinib-resistant PC9 and HCC827 cells, and in residual disease following various therapies in patient samples. Inhibition of FYN or KDM4 re-sensitized resistant cells to TKIs. However, KDM4 upregulation was not consistently observed across all models, suggesting drug- and context-specific mechanisms of FYN regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84, C7-C8, and C87 establish FYN as a general mediator of drug tolerance through analysis of multiple independent datasets and experimental models. The evidence includes: (1) in-house drug-tolerant persister models (C76), (2) analysis of published RNA-seq data from multiple cancer types (C78, C82), (3) validation in resistant cell lines (C79-C81), and (4) patient residual disease samples (C83). The observation that KDM4 is not universally upregulated (C77, C84) appropriately acknowledges mechanistic heterogeneity while supporting FYN as a common downstream node.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background and rationale: Tyrosine kinases are crucial for cell proliferation and survival and are extensively investigated as cancer treatment targets. However, TKI efficacy is limited by resistance mechanisms. TNBC exhibits elevated tyrosine kinase activity but clinical trials with TKIs have shown disappointing results. Resistance is often driven by compensatory activation of alternative signaling pathways, and simultaneous inhibition of multiple compensatory pathways is proposed as an effective strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C17 establish the scientific rationale for the study through citations to established literature. These background claims are well-supported by appropriate references and represent accepted knowledge in the field. They provide context for why combinatorial CRISPR screening of tyrosine kinases in TNBC is scientifically justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The combiGEM platform was previously validated for identifying synthetic lethal combinations of epigenetic regulators in ovarian cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 describes prior work establishing the combiGEM methodology, supported by citation to Wong et al., 2016. This provides methodological precedent for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C85",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "Summary conclusions: FYN and KDM4 are critical targets whose inhibition enhances TKI effectiveness both in vitro and in vivo. Compensatory activation of FYN and KDM4 contributes to TKI resistance through a mechanism involving KDM4-mediated transcriptional upregulation of FYN. Concurrent targeting of FYN with other tyrosine kinases can synergistically eradicate TNBC, and drug combinations exhibit more potent cancer growth inhibition than individual drugs while enabling dose reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C6, C85-C86, and C88-C89 represent summary conclusions that are well-supported by the collective experimental evidence presented throughout the manuscript. These conclusions appropriately synthesize the major findings from the CRISPR screen, mechanistic studies, and in vivo validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Multiple epigenetic modifier inhibitors (pinometostat, tazemetostat, A366, GSK-J4) decreased cell viability upon TKI treatment, but only GSK-J4 (not pinometostat) decreased FYN mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe screening of epigenetic modifiers to identify regulators of FYN expression. The differential effects on FYN mRNA (C50-C51) guided subsequent focus on histone demethylases. This represents appropriate hypothesis-driven follow-up to narrow down the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion of prior work: SRC family kinase networks are upregulated in chemotherapy-resistant TNBC, FYN is specifically upregulated at the mRNA level through epigenetic regulation, KDM5 family has been associated with drug-tolerant persister phenotype, KDM4 is upregulated in various cancers and plays roles in pluripotency, and KDM4 inhibitors have been shown to inhibit breast cancer stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 provide literature context for interpreting the study's findings, supported by appropriate citations. These claims establish the broader significance of the FYN and KDM4 findings within existing knowledge about drug resistance mechanisms and epigenetic regulation.",
+    "result_type": "MINOR"
+  }
+]

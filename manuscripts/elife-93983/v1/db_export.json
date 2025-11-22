@@ -1,0 +1,1969 @@
+{
+  "submission": {
+    "id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-22T00:21:58.932592Z",
+    "updated_at": "2025-11-22T00:21:58.932592Z"
+  },
+  "content": [
+    {
+      "id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "content_type": "manuscript",
+      "content_text": "# Neural activity ramps in frontal cortex signal extended motivation during learning\n\n## Authors\n\n- Josue M Regalado<sup>1</sup> ([ORCID: 0000-0002-6798-3860](https://orcid.org/0000-0002-6798-3860))\n- Ariadna Corredera Asensio<sup>1</sup> ([ORCID: 0000-0003-4289-4500](https://orcid.org/0000-0003-4289-4500))\n- Theresa Haunold<sup>1</sup> ([ORCID: 0009-0007-8343-4945](https://orcid.org/0009-0007-8343-4945))\n- Andrew C Toader<sup>1</sup>\n- Yan Ran Li<sup>1</sup>\n- Lauren A Neal<sup>1</sup> ([ORCID: 0000-0002-0092-2852](https://orcid.org/0000-0002-0092-2852))\n- Priyamvada Rajasethupathy<sup>1</sup> ([ORCID: 0000-0001-8741-2347](https://orcid.org/0000-0001-8741-2347)) \u2020\n\n### Affiliations\n\n1. Laboratory of Neural Dynamics & Cognition, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLearning requires the ability to link actions to outcomes. How motivation facilitates learning is not well understood. We designed a behavioral task in which mice self-initiate trials to learn cue-reward contingencies and found that the anterior cingulate region of the prefrontal cortex (ACC) contains motivation-related signals to maximize rewards. In particular, we found that ACC neural activity was consistently tied to trial initiations where mice seek to leave unrewarded cues to reach reward-associated cues. Notably, this neural signal persisted over consecutive unrewarded cues until reward-associated cues were reached, and was required for learning. To determine how ACC inherits this motivational signal we performed projection-specific photometry recordings from several inputs to ACC during learning. In doing so, we identified a ramp in bulk neural activity in orbitofrontal cortex (OFC)-to-ACC projections as mice received unrewarded cues, which continued ramping across consecutive unrewarded cues, and finally peaked upon reaching a reward-associated cue, thus maintaining an extended motivational state. Cellular resolution imaging of OFC confirmed these neural correlates of motivation, and further delineated separate ensembles of neurons that sequentially tiled the ramp. Together, these results identify a mechanism by which OFC maps out task structure to convey an extended motivational state to ACC to facilitate goal-directed learning.\n\n## Introduction\n\nAnimals must sustain an extended motivational state to achieve goal-directed learning. Imagine being hungry in the middle of a busy metropolis with no cellphone battery and no way of searching for the nearest restaurant. The feeling of hunger provides motivation to search for restaurant signs, scan menus, and contemplate what type of food to eat. If it is dinnertime and many restaurants are full, this motivational state (hunger) may persist for hours until a restaurant is selected. Thus, an animal\u2019s ability to carry out novel actions based on its desired goals is commonly referred to as goal-directed learning. This learning is of a more deliberate, informed nature than habitual learning, as it is sensitive to the current value of outcomes and can lead to a novel sequence of actions for a desired outcome (Balleine and Dickinson, 1998; Tolman, 1948; Pezzulo et al., 2014).\n\nGoal-directed learning often requires the ability to maintain an extended motivational state even in the midst of distracting and competing external variables (Miller and Cohen, 2001; Shenhav et al., 2013). This function has been long proposed to be carried out by the prefrontal cortex (PFC), as patients with PFC lesions struggle to perform tasks that require maintaining a motivational and goal-directed state, in the midst of competing sensory information, such as the Stroop task or the Wisconsin Card Sorting Task (Stroop, 1935; Yuan and Raz, 2014; D\u2019Esposito and Postle, 2015; Milner, 1963; Pardo et al., 1990; Shallice and Burgess, 1991). In particular, the anterior cingulate cortex (ACC) has been implicated in action selection over long timescales that are influenced by a variety of motivational factors, such as the value and effort required for each outcome (Shenhav et al., 2013; Hauber and Sommer, 2009; Hillman and Bilkey, 2010; Wallis and Kennerley, 2011; Cowen et al., 2012; Shenhav et al., 2016). For instance, when animals are given two choice options: one in which high effort leads to high rewards, and one in which low effort leads to low rewards, animals learn to exploit the high-effort, high-reward option (Walton et al., 2003; Schweimer et al., 2005). Impairments to the ACC results in animals failing to accurately allocate motivation toward strategies that maximize reward (Amiez et al., 2006; Kennerley et al., 2006). Single-unit recordings from ACC have shown that neurons encode for choices that require effort with a higher payoff, giving support for the hypothesis that this region is important for action-outcome associations and allocating resources for learning and for the maximization of reward over long timescales (Hillman and Bilkey, 2010; Monosov et al., 2020; Holroyd and Yeung, 2012; Hillman and Bilkey, 2012). While the precise functions of ACC are still debated, its role in goal-directed learning is widely accepted (Shenhav et al., 2013; Holroyd and Yeung, 2012; Botvinick et al., 2001; Heilbronner and Hayden, 2016; Rushworth et al., 2012).\n\nTo provide deeper mechanistic insight into how ACC encodes an extended motivational state to facilitate goal-directed learning, we sought to track how animals learn to adjust their behavior over days-long timescales to maximize reward when cue-reward contingencies change. We designed a task in which mice self-initiate trials and learn to associate cues with reward. Through neural activity recordings during behavior, we found that ACC neural activity was consistently tied to trial initiations where mice seek to leave unrewarded cues to reach a rewarded cue. Subsequently, by recording neural activity from inputs to ACC we identified a ramp in bulk activity in orbitofrontal cortex (OFC)-to-ACC projections as mice continuously existed unrewarded cues, peaking when they finally reached a rewarded cue, thus tracking an extended motivational state. Finally, cellular resolution imaging of OFC-to-ACC neurons identified populations of neurons that sequentially tile the observed bulk neural activity ramp across unrewarded cue presentations. In particular, neurons that preferentially encoded reward cues, before learning, began to code for unrewarded, cues after learning, including the motivation to exit these rooms to reach more reward-associated cues. Taken together, we identified a mechanism by which OFC neural activity ramps map out task structure and conveys an extended motivational state to ACC to enable goal-directed learning.\n\n## Results\n\n### ACC contains neural correlates of motivation during learning\n\nWe began by designing a learning task in which mice self-initiate trials and, upon brief cue exposure (an olfactory and auditory cue), learn to stop to collect a water reward (Figure 1A and B, Figure 1\u2014figure supplement 1A, Materials and methods). We implemented this task in a head-fixed setting to enable hundreds of trials per session, and millisecond precision in tracking stimulus delivery and behavioral responses (Figure 1A). We used \u2018time to initiate trials\u2019 as the primary measure of motivation, and \u2018total reward obtained\u2019 as the primary measure of learning. Due to the self-paced nature of the task (Figure 1B and C), we found variation between our mice in how quickly they initiated trials and how many rewards they received per minute (Figure 1C). As expected, the faster mice can initiate trials, the more rewards they obtained per minute, providing a strong correlation between motivation and learning (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of virtual reality experimental setup and trial structure. A mouse initiates a trial by running to trigger the onset of cues (olfactory and auditory). After cue onset, a mouse stops to collect a water reward, which ends the trial (see Materials and methods). (B) Representative traces of speed and licks from one mouse during a session, with shaded portions corresponding to when cues are on. Red arrows correspond to periods when mice are running to trigger cue onset or stopping to trigger water delivery. Black arrows correspond to sections of a session where we can quantify time to initiate trials, initiation speed, cue stops, and rewards. (C) Quantification per mouse of time to initiate a trial (far left; seconds), initiation speed (left; cm/s), % trials in which a stop occurred during cue presentation (right), and rewards received per minute. Individual data points shown (N=12 mice). (D) Scatter plots of the mean time (s) to initiate a trial plotted alongside rewards received per minute per mouse (N=12 mice). Individual data points shown, with a best fit line, represented by the solid line in the figure. r2=0.8675 and p<0.0001 are determined by linear regression. (E) Left: Bulk neural activity recording experimental design. GCaMP6f was injected into the ACC and neural activity was recorded on a fiber photometry setup (see Materials and methods). Right: Brain histology from a representative mouse showing DAPI in blue, GCaMP6f in green, and photometry cannula implantation in ACC (dotted white lines). Scale bar: 1 mm. (F) Top: Trial averaged plots of ACC activity (z-scored dF/F) and speed (cm/s) aligned to reward onset. Data are mean (solid line) \u00b1 s.e.m. (shaded area). Bottom: Relative frequency plots of the time (s) for ACC dF/F or speed to rise above 1 std or 1 cm/s during rewards, respectively (N=105 trials across 12 mice). *p<0.05, paired t-test between time to rise (s) between ACC and speed. Data is the frequency of values across time. (G) Same as F, but for trial initiations (N=510 trials across 12 mice). (H) Injection strategy for DREADDS-based chemogenetic inhibition of ACC during self-paced task. Coronal section from an animal virally injected with AAV1-CamKii-hM4D(Gi) in ACC. DAPI is shown in blue and hM4D(Gi) in red. Scale bar: 1 mm. (I) Representative traces of speed and licks from one mouse during the task on a day with saline (top) or clozapine N-oxide (CNO) (bottom) administration 45 min prior to a session, with shaded portions corresponding to when cues are presented. (J) Left: Quantification of time (s) to initiate trial (left) across saline and CNO sessions in mCherry-control mice (N=188 trials across 6 mice) and hM4D(Gi)-DREADDs mice (N=215 trials across 4 mice). Right: Same as left but for rewards received per minute in mCherry-control mice (N=60 min across 6 mice) and hM4D(Gi)-DREADDs mice (N=40 min across 4 mice). p=0.8707 for mCherry and *p<0.05 for hM4Di (time to initiate), p=0.2073 for mCherry and *p<0.05 for hM4Di (rewards per min), unpaired t-test between saline and CNO sessions per group. Data are mean \u00b1 s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Left: Schematic of behavioral shaping. Mice were shaped to run (>1 cm/s) for increasing durations over the course of 4 days to obtain rewards. Trial averaged plots of speed along the days of shaping (N=3 mice). Red arrow denotes the increasing duration needed to run to trigger rewards. Right: Days where mice decrease their speed (<1 cm/s; stop) during cues for rewards. Red arrows denote the increasing duration to stop to trigger rewards. Data are mean (solid line) \u00b1 s.e.m. (shaded area). (B) Scatter plots of speed (cm/s) and ACC dF/F during reward (top) or trial initiations (bottom) for individual mice. Individual data points shown, with a best fit line, represented by the solid line in the figure. r2 and p values, as determined by linear regression, are shown for each mouse that had a p<0.5. (C) Left: Trial averaged plots of speed (cm/s) aligned to trial initiation for saline-administered day (black) or clozapine N-oxide (CNO) (red; N=4 mice). Data are mean (solid line) \u00b1 s.e.m. (shaded area). Quantification of speed during trial initiation for mCherry-control mice (N=187, 214 trials across 6 mice) and hM4D(Gi)-DREADDs mice (N=166, 120 trials across 4 mice). p=0.5692 for mCherry and *p=0.0217 for hM4Di, unpaired t-test between saline and CNO sessions per group. Data are individual points, with mean \u00b1 s.e.m.\n\nThe ACC has been prominently implicated in motivation and voluntary actions for maximizing reward, so we posited that ACC would contain motivation-related neural activity patterns in our task (Shenhav et al., 2013; Monosov, 2017; Kolling et al., 2016; Khalighinejad et al., 2020; Khalighinejad et al., 2022). To test this hypothesis, we injected AAV1-CaMKII-GCaMP6f into the ACC and implanted fiber-optic cannulas to record bulk neural activity in ACC during behavior (Figure 1E). We observed strong neural responses in ACC that were tuned to reward delivery and trial initiations (Figure 1F and G). Notably, the ACC neural signal precedes speed onset in both cases, suggesting that ACC is not tracking speed but rather the motivation to initiate trials (Figure 1F and G, Figure 1\u2014figure supplement 1B). We sought to determine how prolonged inhibition of ACC would impact motivation and whether this was required for learning and reward maximization. We injected AAV9-CaMKII-hM4D(Gi) into ACC and performed chemogenetic inhibition during a session of clozapine N-oxide (CNO) injection (ACC inhibition session) versus a session of saline injection (control session) (Figure 1H and I). We found that ACC inhibition caused mice to have a significant increase in time to initiate trials (Figure 1I), which also resulted in a decreased number of rewards received per minute (Figure 1J). Furthermore, we found a small, but significant, decrease in speed during trial initiation (but not overall session speed), suggesting that ACC inhibition might also impair vigor of movements during trial initiations (Figure 1\u2014figure supplement 1C). Thus, we developed a self-paced behavioral task where mice learned cue-reward contingencies, and identified motivation-related signals in ACC that were required for learning to maximize rewards.\n\n### ACC contains neural correlates of extended motivation during learning\n\nWe next sought to increase the motivational demand during learning. We thus extended our task by training mice to learn two sets of cue-outcome relationships, where one cue-set (olfactory+auditory) is associated with a sucrose water reward (hereafter referred to as \u2018R\u2019 cues), whereas the other cue-set is associated with no-reward (\u2018N\u2019 cues). Since mice have been shaped to stop during cue presentations (Figure 1), it is now effortful for them to learn to continue running through the N cues so that they can reach more R cues, and thus maximize their total rewards in a session. Thus, motivation is assessed not only by \u2018time to initiate trials after R cues\u2019, as before, but now also the more effortful measure of \u2018time to initiate trials after N cues\u2019 (Figure 2A; see Materials and methods). We measured overall learning through differences in their lick rates and speed during presentations, expecting progressive suppression of licking and increases in speed in the N cues compared to the R cues across days. Interestingly, we found that mice learned to suppress licking in the N cues (Figure 2A; red arrows on day 2) much earlier than learning to increase speed in N cues (Figure 2A; red arrows on day 4; Video 1). Across the cohort, on average, this increase in speed during N cues began as early as day 3, after they had learned to suppress their licking (day 2), as determined by speed and stop discrimination index (stop DI: % of stops in N \u2013 R/all trials) (Figure 2B and C, Figure 2\u2014figure supplement 1A; see Materials and methods). Finally, there was also a significant correlation between stop DI and rewards obtained per minute, confirming that the development of this behavioral strategy is tied to reward maximization within a given training session (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig2-v1.jpg)\n\n**Figure 2.:** (A) Top: Schematic of training where mice learn to associate stopping to one set of cues with no water reward (\u2018N\u2019) or with water reward (\u2018R\u2019). Bottom: Representative traces of speed and licks from one mouse during a session on training day 2 and day 4, with shaded portions corresponding to when a reward cues (R, blue) or no-reward cues (N, orange) is presented. Red arrow denotes the suppression of licks on day 2, and rise in speed during no-reward cues on day 4. (B) Trial averaged speed (cm/s; top), lick rate (Hz; middle), and ACC activity (dF/F z-scored; bottom) aligned to cue presentation across days 2 and 4 of training, separated by reward and no-reward cues (blue vs orange). Black arrow signifies rise in speed after no-reward cue presentation. N=12 mice. Data are mean (dark line) with s.e.m. (shaded area). (C) Quantification of average cue speed (cm/s; top), lick rate (Hz; middle), and ACC activity (dF/F z-scored; bottom) across training, separated by reward and no-reward cues (blue vs orange). N=12 mice in each group, data are mean \u00b1 s.e.m. *p<0.05, paired t-test between reward and no-reward. (D) Scatter plots of rewards per minute vs stop discrimination (top), lick discrimination (middle), or dF/F difference (bottom) for each mouse throughout training (N=120 data points, 12 mice per each of 10 days). Data are individual points with best fit line. r2 and p values are shown, as determined by linear regression. (E) Top: Trial averaged speed (cm/s) and ACC activity (dF/F z-scored) aligned to cue presentation across three trials consisting of a reward, no-reward, and reward cue (RNR). Bottom: Trial averaged ACC activity (dF/F z-scored) aligned to cue presentation across four trials consisting of a reward, no-reward, no-reward and reward cue (RNNR). N=12 mice. Data are mean (dark line) with s.e.m. (shaded area). (F) Quantification of average cue dF/F activity across RNR and RNNR trial sequences. N=12 mice. *p<0.05, one-way repeated measured ANOVA with post hoc Tukey\u2019s multiple comparison test. Data are mean \u00b1 s.e.m. (right). (G) Top: Injection strategy for AAV1-CaMKII-stGtACR2 into ACC for optogenetic inhibition during training. Middle: Brain histology from a representative mouse showing DAPI in blue, stGtACR2 in red, and photometry cannula implantation in ACC. Scale bar: 1 mm. Bottom: Optogenetic inhibition was targeted to days 1\u20136 of training and mice were allowed to continue training for days 7\u201310. (H) Left: Trial averaged plots of speed (cm/s) aligned to cue entry on T6 for mCherry controls and GTACR inhibition mice, separated by reward or no-reward cues. Right: Quantification of mean speed during cue presentations. N=8 mice for mCherry, 4 for GTACR early inhibition. *p<0.05, paired t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Left: Percentage of cue presentations with stops, separated by reward and no-reward cues (blue vs orange) and quantification of stop discrimination index (see Materials and methods) across training. Right: Quantification of lick discrimination index (see Materials and methods) across training. N=12 mice, data are mean \u00b1 s.e.m. *p<0.05, paired t-test between reward and no-reward each day, or one-way repeated measures ANOVA with post hoc Tukey\u2019s multiple comparison test between each training day and preexposure. (B) Top: Trial averaged plots of ACC activity (z-scored dF/F) and speed (cm/s) aligned to outcome onset, separated by reward or no-rewards. Data are mean (solid line) \u00b1 s.e.m. (shaded area). Bottom: Quantification of the mean dF/F and speed during outcome. N=12 mice in each group, data are mean \u00b1 s.e.m. *p<0.05, paired t-test between reward and no-reward each day. (C) Same as B, but for trial initiations after each outcome. (D) Quantification of ACC dF/F difference between reward and no-reward cues (see Materials and methods) across training. N=12 mice, data are mean \u00b1 s.e.m. *p<0.05, one-way repeated measures ANOVA with post hoc Tukey\u2019s multiple comparison test between each training day and preexposure. (E) Left: Mean dF/F in ACC (top) and speed (bottom) aligned to cue onset for cue presentations in which stops occurred (blue vs orange). N=12 mice. Data are mean (dark line) with s.e.m. (shaded area). Right: Quantification of mean change in dF/F and speed in cue zone, assessed separately for each cue presentation. N=12 mice in each group, data are mean \u00b1 s.e.m. *p<0.05, paired t-test between reward and no-reward each day. (F) Same as E, but for passive presentation of the reward and no-reward cues. (G) Top: Optogenetic inhibition was targeted to days 1\u20136 of training and mice were allowed to continue training for days 7\u201310. Bottom left: Trial averaged plots of lick rate (hz) aligned to cue onset on T6 for mCherry controls and GTACR inhibition mice, separated by reward or no-reward cues. Bottom right: Quantification of mean lick rate during cues. N=8 mice for mCherry, 4 for GTACR early inhibition. *p<0.05, paired t-test. (H) Top: Optogenetic inhibition was targeted to days 7\u201310 of training. Bottom: Trial averaged plots of speed (cm/s) aligned to cue entry on T10 for GTACR inhibition mice, separated by reward or no-reward cues. Quantification of mean speed during cues. N=8 mice for mCherry, 4 for GTACR late inhibition. *p<0.05, paired t-test. N=4 mice for GTACR late inhibition. *p<0.05, paired t-test.\n\n![Video 1.](https://cdn.elifesciences.org/articles/93983/elife-93983-video1.mp4.jpg)\n\n**Video 1.:** Playback speed: 2\u00d7. Shown here is a representative mouse learning to stop in cues that predict reward (blue walls) and run throughout consecutive cue presentations that predict no-reward (yellow walls). Displayed trial sequence order is reward, no-reward, no-reward, and reward (RNNR).\n\nWe next searched for neural correlates of motivation by recording bulk neural activity in ACC as mice performed this task, and aligning neural responses to behavioral frames, focusing on periods when mice learn to run during N cue presentations. As before (as in Figure 1), in this two cue-outcome relationship task, we again found that ACC continued to be active during reward delivery and during trial initiations (Figure 2\u2014figure supplement 1B\u2013C). Additionally, however, in this task we found that ACC began to significantly increase its activity, specifically during N cues, as early as T3, as mice exhibited a learned motivation to leave N cues to reach more R cues (Figure 2B\u2013D). As a further confirmation of this result, we investigated ACC\u2019s activity during extended motivation across two consecutive N cues and found that ACC activity continued to remain high from the initial N cue presentation until an R cue was reached (Figure 2E and F, Figure 2\u2014figure supplement 1D). These neural responses, and in particular the dF/F difference in N vs R cues, positively correlated with the amount of reward obtained per minute, linking motivation-related ACC activity to overall learning (Figure 2D). Importantly, in all cases, on a trial-by-trial basis, the neural signal preceded the behavioral ramp in speed (Figure 2E), and was present even if we restricted our analyses to cue presentations in which mice stopped (Figure 2\u2014figure supplement 1E), suggesting a motivational rather than motor response. To further confirm this dissociation, we passively presented both sets of cues to the mice at the end of each training session. As expected, mice did not develop the motivation to run out of N cues (Figure 2\u2014figure supplement 1F), and accordingly, the ACC neural activity was no longer different between N and R cues. These results together suggest that ACC encodes a motivation signal to initiate trials, and in particular corresponds to the behavioral measure of running during N cues to reach more R cues, thus facilitating goal-directed learning.\n\nWe proceeded to test whether these motivation-related signals in ACC are required for learning. To restrict our inhibition to cue presentation portions of our task, and combat any potential off-target effects of CNO (Manvich et al., 2018) from repeated administration across several days of training, we used optogenetic inhibition. We injected AAV1-CaMKII-stGtACR2 bilaterally in ACC to express the inhibitory opsin and delivered light selectively when the mouse received R or N cues, for the first 6 days (\u2018early\u2019) or last 4 days (\u2018late\u2019) of training (Figure 2G and H, Figure 2\u2014figure supplement 1H). We found that early ACC inhibition prevented mice from learning to run out of N cues, even though they still learned to suppress their lick rates (Figure 2H, Figure 2\u2014figure supplement 1G). Late ACC inhibition had no effect on speed or lick rate behavior, as mice continued to run out during N cues while inhibition occurred, suggesting ACC activity does not broadly suppress speed (Figure 2\u2014figure supplement 1H). All together, we identified an extended motivation signal in ACC that is required for learning and reward maximization.\n\n### Neural activity in orbitofrontal projections ramps until rewards are reached\n\nThe ACC receives projections from disparate regions across the brain that could facilitate the integration of value, internal state, and multisensory information, so we sought to identify how afferent projections may convey motivational signals to ACC during learning (Fillinger et al., 2017). We injected rgAAV-hSyn-Cre into ACC and injected AAV1-CAG-FLEX-GCaMP6f in the OFC, anteromedial thalamus (AM), basolateral amygdala (BLA), locus coeruleus (LC), and implanted optical fibers above each region to record neural activity during learning in this task (Kim et al., 2016; Figure 3A). We first characterized whether the previously observed ACC neural responses during reward delivery and trial initiations were present in any of the inputs to ACC (Figure 3\u2014figure supplement 1A). We found that even before learning all projections responded significantly to rewards, and most (OFCACC, AMACC, and LCACC) increased their activity in anticipation of trial initiations (Figure 3\u2014figure supplement 1A). Thus, motivation-related signals were broadly present in various projections to ACC.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig3-v1.jpg)\n\n**Figure 3.:** (A) Injection strategy and fiber-based photometry setup to record bulk GCaMP6f of projections to anterior cingulate cortex (ACC) from OFCACC (orbitofrontal cortex), AMACC (anteromedial thalamus), BLAACC (basolateral amygdala), or LCACC (locus coeruleus). Representative traces for a single mouse showing traces for each region dF/F, speed, and licks. Shaded portions are shown corresponding to when a reward cues (R, blue) or no-reward cues (N, orange) are presented. (B) Left: Trial averaged bulk GCaMP6f dF/F of ACC, OFCACC, AMACC, BLAACC, and LCACC during a sequence of trials on T6 including reward, no-reward, and reward cues (RNR). Black arrows denote the rise in pre-cue activity from N cue to the following R cue in the RNR sequence. Right: Quantification of pre-cue activity for the N cue and following R cue. Data are mean (solid line) \u00b1 s.e.m. (shaded area). N=19, 12, 5, 4 mice, data are mean (solid line) \u00b1 s.e.m. (shaded area), *p<0.05, paired t-test between N vs R cues. (C) Left: Trial averaged bulk GCaMP6f dF/F of OFCACC during a sequence of trials including reward, two no-reward, and reward cues (RNNR). Red arrows denote the rise in pre-cue activity from first N cue to the last R cue in the RNNR sequence. Right: Quantification of pre-cue activity for the first N cue, second N cue, and last R cue. Data are mean (solid line) \u00b1 s.e.m. (shaded area). N=19 mice, data are mean (solid line) \u00b1 s.e.m. (shaded area), *p<0.05, one-way repeated measures ANOVA with post hoc Tukey\u2019s multiple comparison test. (D) Left: Speed (cm/s) for \u2018Learner\u2019 (black; reached a DI>0.5 for 3 consecutive days) or \u2018Non-Learner\u2019 (red) mice on training day 6 aligned to no-reward cue onset. Middle: Discrimination index for each group of mice throughout training. Right: Speed during reward and no-reward cues for \u2018Learner\u2019 mice. N=7 (\u2018Learner\u2019) and 9 (\u2018Non-Learner\u2019) mice. Data are mean (solid line) \u00b1 s.e.m. (shaded area), *p<0.05, unpaired t-test between Learner and Non-Learner DI (middle), paired t-test between reward and no-reward cues (right). (E) Left: Trial averaged bulk GCaMP6f dF/F of OFCACC during a sequence of trials including reward, two no-reward, and reward cues (RNNR). Black arrows denote the rise in pre-cue activity from first N cue to the last R cue in the RNNR sequence. Red arrows denote the absence of this ramp in Non-Learner mice. Right: Quantification of pre-cue activity for the first N cue, second N cue, and last R cue. Data are mean (solid line) \u00b1 s.e.m. (shaded area). N=7 (\u2018Learners\u2019) and 9 (\u2018Non-Learner\u2019) mice, data are mean (solid line) \u00b1 s.e.m. (shaded area), *p<0.05, one-way repeated measures ANOVA with post hoc Tukey\u2019s multiple comparison test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Top: Trial averaged plots of each projection activity (z-scored dF/F) and speed (cm/s) aligned to reward onset (left) or trial initiations (right). Data are mean (solid line) \u00b1 s.e.m. (shaded area). Bottom: Quantification of the mean dF/F change during reward (left) or trial initiation (right; N=19, 12, 5, 4 mice). Data are mean \u00b1 s.e.m. (B) Left: Trial averaged plots of projection activity (z-scored dF/F) aligned to outcome onset, separated by reward or no-rewards. Data are mean (solid line) \u00b1 s.e.m. (shaded area). Right: Quantification of the mean dF/F during outcome. N=19, 12, 5, 4 mice, data are mean \u00b1 s.e.m. (C) Same as C, but for trial initiations after each outcome. *p<0.05, paired t-test between reward and no-reward each day. (D) Plots of stop discrimination across preexposure or training for each mouse in the \u2018Learner\u2019 group (top) or \u2018Non-Learner\u2019 group (bottom). Dashed line is shown for 0 and 0.5 stop discrimination. (E) Lick discrimination between the \u2018Learner\u2019 or \u2018Non-Learner\u2019 mice. *p<0.05, one-way ANOVA between training days and preexposure, with post doc Tukey\u2019s multiple comparison test.\n\nWe then searched for motivation-related neural responses that were specifically tied to learning. To do so, we aligned neural responses to trial initiations after N cues, as mice learned to leave N cues to reach more R cues. We found that both OFCACC and AMACC had higher baseline activity during trial initiations after no-rewards (Figure 3\u2014figure supplement 1B, C). To further understand this higher activity after no-rewards we analyzed sequences of \u2018RNR\u2019 trials which contained reward, no-reward, and reward cues (Figure 3B). We observed a rise in OFCACC activity prior to the N cue presentation that continued to rise until an R cue was reached (black dotted arrow; Figure 3B). We quantified this motivational signal as a difference in pre-cue activity between N and R cues in RNR trial sequences across days and found that this difference emerged at the time of learning (~T3) and closely tracked performance of the learned behavior (T3-T6) for OFCACC and AMACC, but not BLAACC or LCACC (Figure 3B). To further build confidence in these results, we asked whether this continuous rise in OFCACC activity in RNR sequences would be further extended in RNNR sequences. Indeed, OFCACC activity continued ramping across two consecutive N trials, exhibiting higher pre-cue activity upon entering an R cue after two versus one N (black dotted line, Figure 3C).\n\nTo more directly determine whether this motivational ramp signal in OFCACC is tied to learning, we separated our mice into two groups, one that learned the task (\u2018Learners\u2019, stop DI>0.5 for at least 3 consecutive days) and one that did not learn (\u2018Non-Learners\u2019) (Figure 3D, Figure 3\u2014figure supplement 1D). The Learners reached a high DI by T6, which persisted throughout the rest of training, whereas the \u2018Non-Learners\u2019 only reached a significantly higher DI by T10 (Figure 3D). Both subsets of mice still learned to discriminate with licking at comparable rates (Figure 3\u2014figure supplement 1E). When we compared OFCACC activity in an RNNR sequence of trials, we found that only Learners exhibited a significant ramp in neural activity from the first N cue to the final R cue presentation, which emerged coincidental with behavioral learning and persisted for the remaining days of training (Figure 3E). Together, we identify projection activity in OFC that ramps across N cues until an R cue is reached that is specifically tied to the development of a learned goal-directed behavior.\n\n### Orbitofrontal projection neurons tile unrewarded trials until rewards are reached\n\nGiven that we identified a ramp in OFCACC bulk neural activity during NNR sequences (Figure 3), we sought to determine whether a single persistently active population or a sequence of tiled neurons underlies this ramp. We thus performed real-time cellular resolution imaging of OFC projections to ACC by injecting rgAAV-hSyn-Cre into ACC and AAV1-CAG-FLEX-GCaMP6f in OFC (Figure 4A). We implanted a gradient-index (GRIN) lens above OFC and imaged the region under a two-photon microscope as mice performed the learning task (Figure 4A). We focused our analysis on days where behavioral learning emerged (Figure 4B), and on NNR trial sequences to find an underlying cellular mechanism to the previously observed photometry results (Figure 4C). We found individual neurons that were uniquely active across the first N, second N, or R cue, thereby tiling the sequence of NNR trials (Figure 4D and E). We further found that an increasing number of neurons were active along the sequence of NNR trials and most prominently before learning (Figure 4F, Figure 4\u2014figure supplement 1A\u2013C). Thus, collectively, as an ensemble, these neurons ramp consecutive N cues and peak upon reaching R cues.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig4-v1.jpg)\n\n**Figure 4.:** (A) Injection strategy (top left), histology (top right; scale bar, 1 mm) and z-projection images of two-photon recording (bottom left; mean over time; scale bars, 200 \u03bcm) of GCaMP expressing OFC projection neurons with gradient-index (GRIN) implants. Bottom right: Sequence of trials with z-scored dF/F for individual neurons, with shaded portions corresponding to when a reward cues (R, blue) or no-reward cues (N, orange) are presented. Red arrow denotes a dF/F transient occurring after two consecutive N cues. (B) Stop (black) or lick (gray; see Materials and methods) discrimination index on the first day stop DI reaches >0.4 (\u2018after\u2019) and the two previous days (\u2018before\u2019 and \u2018middle\u2019). N=5 mice. (C) Schematic of OFCACC bulk activity based on Figure 3 results and potential single neuron findings that tile a sequence of trials with two no-rewards followed by a reward cue presentation (NNR). (D) Representative neurons with tunings (std>0.75 for 3 s prior to or after cue presentation) to separate cues in an NNR trial sequence. Trial averaged activity of an N (top), NN (middle), and NNR (bottom) neuron with heat map showing individual trial responses. (E) Quantification of neurons tuned to separate cues within an NNR trial sequence and their activity to all other cues. N=17 (N), 18 (NN), 32 (NNR) cells out of 115 cells in total. *p<0.05, one-way repeated measures ANOVA with post hoc Tukey\u2019s multiple comparison test. (F) Percentage of neurons tuned to different cues in an NNR trial sequence before (top) or after (bottom) training. N=5 mice. *p<0.05, one-way repeated measures ANOVA with post hoc Tukey\u2019s multiple comparison test. (G) Ensemble average plots of neurons tuned to R cues after two consecutive N cue presentations (NNR cells) before learning (top) and their activity after learning (bottom). Black arrows denote the rise in activity prior to R cues after learning. N=18 NNR cells out of 81 cells tracked across days. (H) Quantification of transient time (s) since R cue onset for neurons tracked across days. N=132, 170 transient events before and after learning across 18 NNR cells and 105, 59 transient events before and after learning across 12 NR cells. *p<0.05, unpaired t-test. (I) Left: Injection strategy for AAV1-hSyn-SIO-stGtACR2 into OFCACC for optogenetic inhibition during training. Optogenetic inhibition was targeted to training for 6 days. Right: Brain histology from a representative mouse showing DAPI in blue, stGtACR2 in red, and photometry cannula implantation in ACC. Scale bar: 1 mm. (J) Left: Mean animal speed (cm/s) aligned to cue zone entry after no-reward on T6 for mCherry control or GtACR mice. Black arrow signifies lack of speed increase during N cues. Right: Quantification of mean change speed in cue zone after no-reward, assessed separately for each cue presentation. N=10 mice for mCherry and 13 mice for GtACR, *p<0.05, paired t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93983/elife-93983-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Mean z-scored dF/F for every recorded cell, aligned to cue onset separated by current cue and previous cue presentation (N=115 cells across 5 mice). Red arrow denotes the increased response after no-reward cues when the previous cue was no-reward. (B) Left: Mean population activity (top; z-scored dF/F) and individual neuron trial averaged activity (bottom) for NNR neurons during R cues preceded by 2 N, 1 N, or 1 R cue presentations. Right: Quantification of NNR tuned neurons\u2019 response to R cues preceded by 2 N, 1 N, or 1 R cue presentations (N=32 cells). *p<0.05, one-way repeated measures ANOVA with post hoc Tukey\u2019s multiple comparison test. (C) Percentage of neurons tuned (std>0.75 3 s before or after cue onset) to R or N cues in total (left) or based on what cues preceded it one trial before (middle) or across two trials before (right). N=115, 117, 114 cells for \u2018before\u2019, \u2018middle\u2019, and \u2018after\u2019 days. Black arrow denotes the higher percentage of neurons that are tuned to R cues after 2 N cues (NNR cells) before learning. (D) Neural sources for a single field of view. Sources captured throughout learning are highlighted in green. (E) Left: Mean animal speed (cm/s) aligned to cue zone entry after reward on T6 for mCherry control or GtACR mice. Black arrow signifies speed increase during N cues. Right: Quantification of mean change speed in cue zone after reward, assessed separately for each cue presentation. N=10 mice for mCherry and 13 mice for GtACR, *p<0.05, paired t-test. (F) Schematic of reward-responsive OFC projection neurons becoming increasingly active during no-reward cues that precede reward cues over days.\n\nTo determine how these NNR ensembles facilitate learning we tracked the same population of neurons \u2018before\u2019 and \u2018after\u2019 learning (Stop DI>0.4; Figure 4G, Figure 4\u2014figure supplement 1D). We identified an ensemble of neurons that were uniquely responsive to R cues preceded by 2 N cues, before learning, and characterized their responses after learning. Interestingly, these neurons were no longer responsive to R cue onset but rather to pre-R cue activity, which then became progressively more responsive to the preceding N cue onset, aligning with the learned behavioral transition of mice leaving N cues to reach R cues (Figure 4G and H). To determine whether OFCACC activity ramps were required for learning, we optogenetically inhibited these projections bilaterally by injecting rgAAV-hSyn-Cre into ACC and AAV1-hSyn-SIO-stGtACR2 into OFC and delivering light only on R or N cues. We then specifically assessed whether previous trial history affected behavioral responses on the current cue condition (Figure 4I and J). Interestingly, while both mCherry control and OFCACC inhibition cohorts could increase their speed during N cues following an R cue, OFCACC mice were impaired in doing so if the N cue was followed by an N cue (Figure 4I and J, Figure 4\u2014figure supplement 1E). Taken together, these data demonstrate that ensembles of neurons progressively tile the OFC motivational ramp, and that the initial reward responsive neurons become progressively linked to unrewarded cues after learning, thus effectively linking actions to outcomes to maximize rewards (Figure 4\u2014figure supplement 1F).\n\n## Discussion\n\nIn this study, we developed a self-paced cue-outcome learning task to determine how mice extend their motivational state to maximize reward over long timescales. We identify the ACC as broadly critical to maximizing reward in our task, especially as mice learn to run out of unrewarded cues. We found that upstream inputs to ACC from OFC sustain a ramp-like increase in activity through consecutive unrewarded cues until mice reach rewarded cues. Cellular resolution imaging of OFC projection neurons revealed ensembles of neurons that tile the motivational ramp, and a progressive shift in ensemble tuning during learning such that neurons initially encoding for reward become progressively linked to motivated actions, i.e., trial initiations to reach more rewards. We therefore present a model where OFC contains neurons that increasingly link reward to motivated behaviors, conveying a motivational ramp to ACC, to facilitate learning and reward maximization (Figure 4C, Figure 4\u2014figure supplement 1F).\n\nThe OFC has been implicated in guiding adaptive, flexible behavior by signaling information about future outcomes (Rudebeck et al., 2013; Montague and Berns, 2002; Mainen and Kepecs, 2009; Rich and Wallis, 2016; Padoa-Schioppa and Conen, 2017). One view sees OFC\u2019s function as encoding for the value of the outcomes of events, with various neural correlates having been found for value-guided behavior. Another view sees OFC\u2019s function more as building a model of the causal relationships between events, which may or may not entail value assessments, into a cognitive map (Behrens et al., 2018). Indeed, OFC neurons have been found to encode sensory-sensory associations even prior to any kind of learning (Sadacca et al., 2018). A way to link both perspectives into a single account has been to view value and a cognitive map as occurring along a spectrum, where inferring value onto outcomes hinges upon a map that is created. We have found that mice learn to run out during N cues to more quickly reach R cues, thereby acquiring more rewards over a training session. This behavior can be viewed as both value-guided, as the mouse suppresses their lick rate during N cues, and also requiring a mental model of the environment, as running occurs with the expectation of reaching R cues in the future. Indeed, the pseudorandom trial structure ensures that N cues will be presented no more than two times in a row, such that after two N cues an R cue is guaranteed (see Materials and methods). We thus parsimoniously position OFC as functioning in model-based behaviors, and in the accurate planning of actions based on the learned transition structure of a task (Drummond and Niv, 2020).\n\nWe linked the ramp-like increase in neural activity in OFC to motivation, but several questions still remain about how motivation is computed and why it would be represented as a ramp. Motivation could be computed as a combination of several variables such as time since last reward, value of reward, and effort to reach future rewards. Future theory-driven analyses could determine how motivation is computed, and whether individual variables of time, value, and effort are encoded as clusters of similar tuned neurons, or mixed and collectively represented at the population level. In either case, it is likely that a combined map of task space and value information carried by OFC are being used to inform downstream regions, such as ACC, for adjusting behavior.\n\nThe ACC has been shown to carry information necessary for switching or staying with current behaviors during decision-making and learning in order to maximize rewards and minimize threats or punishments (Shenhav et al., 2013; Monosov, 2017; Kolling et al., 2016). We posit that ACC reads information from OFC about task structure and value to perform computations relevant to allocating behavioral control. We have seen this through our findings that ACC is important for learned behaviors associated with maximizing rewards in our self-paced learning task. We compare the decision to run during N cues to a foraging decision to leave a patch to find alternative options, and ACC\u2019s importance in the development of this behavior is reminiscent to signals previously described at the time a foraging decision is reached (Blanchard and Hayden, 2014; Hayden et al., 2011). We found inhibition of ACC activity affected the development of running during N cues, effectively diminishing an animals\u2019 ability to strategy switch (Kennerley et al., 2006; Akam et al., 2021; Sarafyazd and Jazayeri, 2019; Tervo et al., 2014). While we did not perform single-cell imaging of ACC in our task, we hypothesize that individual ACC neurons could encode the distribution of actions/opportunities (Klein-Fl\u00fcgge et al., 2022) (i.e. stop, run, lick, suppress lick) taken during R or N cues. ACC neurons could compute the relative value of the action taken such that more ACC neurons become recruited once mice learn to run out of N cues. The sustained increase in bulk ACC activity across N cue trials (Figure 2) could come from a stable sequence of individual neurons that encode the timescale of the actions taken. In this way, OFC projections would encode current motivation across N cues before learning, which then triggers ACC to compute the value-based actions. Motivational signals in OFC would thus represent state since past rewards/goals, while in ACC these signals represent actions taken to pursue rewards/goals in the future.\n\nHere, we studied learning as a systems-level process guided by top-down signals that maintain a motivational state. Our work showed the recruitment of multiple frontal cortical areas in this process, which is to be expected as animals are required to build, maintain, and use representations of task structure and value to drive learned, motivated behaviors (Klein-Fl\u00fcgge et al., 2022). Future work can build upon the task we developed here to determine how the frontal cortex maintains motivational states across many more cue-outcome associations, and how these associations may dynamically change across time (Izquierdo et al., 2017). Lastly, a more synaptic-level approach into how ACC integrates information from upstream regions during learning could reveal important micro-circuit computations, molecular or structural changes during motivational states and learning (Thornquist et al., 2020; Peters et al., 2017), and potential mechanisms underlying seconds-long behavioral timescale learning rules (Bittner et al., 2017).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>AAV1-CaMKIIa-GCaMP6f</td>\n      <td>Upenn Vector Core</td>\n      <td>Addgene#100834</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>AAV1-CAG-FLEX-GCaMP6f</td>\n      <td>Douglas Kim</td>\n      <td>Addgene#100835</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>AAV1-CKIIa-stGtACR2-FusionRed</td>\n      <td>Ofer Yizhar</td>\n      <td>Addgene#105669</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>AAV9-CaMKIIa-hM4D(Gi)-mCherry</td>\n      <td>Bryan Roth</td>\n      <td>Addgene#50477</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>AAV9-CaMKIIa- mCherry</td>\n      <td>Bryan Roth</td>\n      <td>Addgene#114469</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>rgAAV-hSyn-Cre</td>\n      <td>James Wilson</td>\n      <td>Addgene#105553</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>AAV1-hSyn1-SIO-stGtACR2</td>\n      <td>Ofer Yizhar</td>\n      <td>Addgene#105677</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (AAV)</td>\n      <td>AAV9-hSyn-DIO-mCherry</td>\n      <td>Bryan Roth</td>\n      <td>Addgene#50459</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nAll procedures were done in accordance with guidelines derived from and approved by the Institutional Animal Care and Use Committees (protocol #22,087-H) at The Rockefeller University. Animals used were 8- to 10-week-old naive male C57BL/6J mice (Jackson Laboratory, Strain #000664) at the time of surgery. Mice were group housed (3\u20135 per cage) with ad libitum food and water, unless mice were water restricted for behavioral assays, in which case they were given 1 mL water per day. Body weight was monitored daily to ensure it was maintained above 80% of the pre-restriction measurement. Surgical procedures and viral injections were carried out in mice under protocols approved by Rockefeller University IACUC and were performed in mice anesthetized with 2% isoflurane using a stereotactic apparatus (Kopf).\n\n### Surgical procedures\n\nPuralube vet ointment was applied to the eyes and 0.2 mg/kg meloxicam was administered intraperitoneally using a 1 mL syringe. Hair from the scalp was trimmed, and the area was sterilized using povidone-iodine swabs and subsequently ethanol swabs. An incision covering the anteroposterior extent was made to allow access to the skull. Injection sites were accessed using a dental drill which made 0.5 mm holes through the skull. All virus was injected using a 35 G beveled needle in a 10 \u00b5L NanoFil Sub-Microliter Injection syringe (World Precision Instruments) controlled by an injection pump (Harvard Apparatus) at a rate of 100 nL/min. After all viral delivery, an additional 5\u201310 min delay was applied to avoid backflush before slowly removing the injection needle. Animals that required cannulas or GRIN lenses were implanted immediately following viral injection. Following surgery, mice were allowed to recover in a single housed cage for up to 12 hr, and were given meloxicam tablets. Mice were typically housed for 3 weeks to allow for adequate expression before behavioral testing or histology.\n\n#### Viral injections\n\n#### Cannula implants\n\nOne week after viral injections, mice undergoing photometry or optogenetic experiments were implanted with fiber-optic cannulas (Doric Lenses). For photometry, mice were unilaterally implanted with 1.25 mm ferrule-coupled optical fibers (0.48 NA, 400 \u03bcm diameter, Doric Lenses) cut to the desired length so that the implantation site is \u223c0.2 \u2009mm dorsal to the injection site. For optogenetics, mice were implanted bilaterally with 1.25 mm cannulas (0.22 NA, 200 \u00b5m diameter, Doric Lenses). In both cases, cannula implants were slowly lowered using a stereotaxic cannula holder (Doric) at a rate of 1 mm/min until it reached the implantation site, 0.2 mm dorsal to the injection site. In the case of bilateral AM optogenetic inhibition, one cannula was implanted at a 10\u00b0 angle laterally to the skull in order to prevent stereotactic hindrance. Optic glue (Edmund Optics) was then used to seal the skull/cannula interface and a custom titanium headplate was glued to the skull using adhesive cement (Metabond).\n\n#### GRIN lens implants\n\nImmediately following viral injections, mice undergoing calcium imaging were implanted with GRIN lens(es). An incision covering the anteroposterior extent was made, and the skin overlying the skull was cleared. The skull was then cleared and textured using a scalpel. Using a dental drill, 1 mm diameter holes were made at stereotactically determined sites of implantation. Site of drilling was immediately covered using chilled Ringers solution, and using a sterile 28 G \u00d7 1.2\u201d insulin syringe and low-pressure vacuum suction, the underlying dura was removed. GRIN lenses (1.0 mm diameter, 4.38 mm length, 0.5 NA from GRINTECH (NEM-1 00-25-1 0-860-5-0.5p)) were wrapped in a 1.25 mm wide custom length stainless steel sleeve (McMaster, catalog #5560K46) using optic glue, made to cover only the part of the lens held external to the brain. With a 0.5 mm burr (Fine Science Tools) attached to a stereotaxic cannula holder, the GRIN was slowly lowered into the brain at a rate of 1 mm/min, ending 0.2 mm dorsal to the injection site. The skull was constantly flushed with chilled 1\u00d7 PBS. Every time the lens moved 0.8 mm more ventral, it was temporarily retracted 0.4 mm dorsally at the same rate, before continuing down again. We found this especially helpful to maximize the number of observed cells when imaging in deep regions. The skull-sleeve connection was then sealed with glue, and further secured with adhesive cement. A custom titanium headplate was glued to the skull using adhesive cement. Immediately following surgery, mice were injected with 0.2 mg/kg dexamethasone subcutaneously to reduce inflammation.\n\n### Histology\n\nAnimals were deeply anesthetized with 5% isoflurane before transcardial perfusion with ice-cold PBS and 4% paraformaldehyde in 0.1 M PB. Brains were then post-fixed by immersion for ~24 hr in the perfusate solution followed by 30% sucrose in 0.1 M PB at 4\u00b0C. The fixed tissue was cut into 40 \u00b5m coronal sections using a freezing microtome (Leica SM2010R), free-floating sections were stained with DAPI (1:1000 in PBST), and mounted on slides with ProLong Diamond Antifade Mountant (Invitrogen). Images were taken on a Nikon Inverted Microscope Eclipse Ti-E with a 4\u00d7/0.2 NA objective lens. Whole-slide images were stitched with NIS-Elements imaging software and further analyzed in ImageJ and MATLAB.\n\n### Virtual reality system\n\nWe used a custom-built virtual reality environment, modified from a previously reported version (Rajasethupathy et al., 2015). In brief, a 200-mm-diameter styrofoam ball was axially fixed with a 6-mm-diameter assembly rod (Thorlabs) passing through the center of the ball and resting on 90\u00b0 post holders (Thorlabs) at each end, allowing free forward and backward rotation of the ball. Mice were head-fixed in place above the center of the ball using a headplate mount. Virtual environments were designed in the virtual reality MATLAB engine ViRMEn (Aronov and Tank, 2014). The virtual environment was displayed by back-projection onto white fabric stretched over a clear acrylic hemisphere with a 14-inch diameter placed \u223c20 cm in front of the center of the mouse. The screen encompasses \u223c220\u00b0 of the mouse\u2019s field of view and the virtual environment was back-projected onto this screen using a Vamvo Ultra Mini Portable projector. The rotation of the styrofoam ball was recorded by an optical computer mouse (Logitech) that interfaced with ViRMEn to transport the mouse through the virtual reality environment. A National Instruments Data Acquisition (NIDAQ) device was used to send out TTL pulses to trigger the CMOS camera, laser for optogenetics, and the various Arduinos controlling tones, odors, airpuff, lick ports. Additionally, the NIDAQ recorded the capacitance changes of the lick port when licking occurred and the CMOS camera exposures to align lick rate and neural recording/imaging to trial events.\n\n### Behavioral shaping\n\nStarting approximately 3 weeks after surgery, mice were put on a restricted water schedule, receiving 1 mL of water in total per day. Body weight was monitored daily to ensure it was maintained above 80% of the pre-restriction measurement.\n\nAfter a week of water deprivation, mice were habituated to the styrofoam ball for 2 days by receiving their 1 mL of water per day in head-fixed condition. Then mice were put onto a linear track (vertical gray bars) where water release was contingent on running a short time to trigger the onset of cues (an odor and tone) where they received 5 s of water delivery. Over the course of a session, and in subsequent days, the duration needed to run increased. Once mice could run on the ball for 2 s, we introduced a condition to stop during cue onset to trigger water delivery. Over the course of a session, and in subsequent days, the duration needed to stop increased. If a mouse took longer than 10 min to receive their 1 mL of water on a given day, the duration needed to run and/or stop to get water was repeated on the following day until they could reliably walk on the ball for water under 10 min. Once all mice from a cohort were able to run for 1 s, stop during cues for 3 s, and complete at least 80% of initiated trials, training began.\n\n### Behavioral task\n\nIn the final version of the task that was used during all experiments, mice ran down a virtual linear track to trigger contextual cues used to predict the outcome they will receive (~4 \u00b5L of sucrose water or no water) if they stop. At the beginning of the linear track, mice self-initiated trials by running (speed >10 cm/s) down a virtual linear track for 1 s. Olfactory and auditory cues would then be presented for 3 s. The auditory cues consisted of 5 kHz or 9 kHz tones outputted by a thin plastic speaker (Adafruit) and olfactory cues consisting of \u0251-pinene or octanol were diluted with mineral oil to 10% and released by a custom-built olfactometer. Both auditory and olfactory cues were outputted by Arduino code under the control of ViRMEN code. The cues for reward were a 5 kHz tone and \u0251-pinene while the cues for no-reward were 9 kHz tone and octanol. Outcome onset would happen under the condition that a mouse dropped their speed below 10 cm/s for at least 1 s before the end of the cues. If the mouse failed to stop for at least 1 s, they would be immediately placed at the start of the linear track and would need to run for 1 s to trigger the next trial start. The outcomes consisted of free access to 10% sucrose water presented by a lickometer (reward) or no water (no-reward), alongside another presentation of contextual cues, for 3 s. Sucrose water output were controlled by Arduino code under the control of ViRMEN code. After the outcome zone mice were transported to the beginning of the linear track to start the next trial. The order of reward and no-reward cue was pseudorandomly predetermined through code so as to not lead to more than 2 of the same cues presented in a row.\n\nPerformance in the task was assessed by average speed and average anticipatory lick rate (during the 3 s of cue presentation) for all reward and no-reward trials in a given session. Prior to training, mice were given a \u2018preexposure\u2019 session where they were exposed to each set of cues, with tap water given upon outcome trigger in both. They were then given 10 days of training (referred to as T1-T10). Each mouse was given 15 min on the ball for each training session, and supplemental water was given to each mouse if they failed to drink 1 mL during a session.\n\n### Behavioral analysis\n\nFor behavioral experiments, we quantified several variables within a given session per mouse. We determined how long it took for mice to initiate trials based on how long (s) it took for their speed to be above 1 cm/s for over 1 s after a reward, their speed (cm/s) during trial initiations, the percentage of times they stopped (i.e. their speed (cm/s) was below 1 for at least 1 s by the 3rd second after cue onset) after cue onset within a given session, and how many rewards they received per minute (total rewards per session/minute in a session). For analysis in Figure 1J we calculated time to initiate trial on a per trial basis, and rewards per minute on a per minute basis.\n\nWe also assessed learning by calculating a stop and normalized lick rate difference, which we refer to as the stop and lick discrimination index (DI). The DI was calculated as follows:\n\n$$\nStopDI=\\frac{stops in reward cues - stops in no-reward cues}{stops in reward cues + stops in no-reward cues}\n$$\n\n\n\n$$\nLickDI\\frac{mean lick rate in reward cues - mean lick rate in aversive cues}{mean lick rate in reward cues + mean lick rate in aversive cues}\n$$\n\nA DI of 1 therefore indicates perfect discrimination, while a DI of 0 indicates chance performance. For all sessions, stops were assessed by whether they triggered the reward or no-reward out-period of the trial (i.e. their speed (cm/s) was below 1 for at least 1 s by the 3rd second after cue onset) and lick rate was calculated in the window of time 3 s after the onset of the cues. Repeated measures ANOVA with Tukey\u2019s post hoc test was used to assess learning by comparing to discrimination during preexposure. We separated out cohorts of mice in Figure 3 based on how well they discriminated with stops. We determined \u2018Learner\u2019 mice by seeing if their stop DI reached above 0.5 for at least 3 consecutive days by Training Day 10, and \u2018Non-Learner\u2019 mice as those mice who did not.\n\n### Chemogenetic inhibition of ACC\n\nFor chemogenetic silencing experiments, we injected AAV9-CaMKIIa-hM4D(Gi) (or AAV9-CaMKII-mCherry for controls) bilaterally into ACC. For a week prior to behavioral shaping, mice were habituated to handling and intraperitoneal injections of saline. A solution of CNO was prepared at a concentration of 0.5 mg/mL, and mice were injected at a dosage of 5 mg/kg. Behavioral experiments were conducted 45 min after injection.\n\n### Optogenetic inhibition of ACC\n\nMice were injected with AAV1-CaMKII-stGtACR2 bilaterally in ACC, while control cohorts were injected with AAV1-CaMKII-mCherry. Cannulas were implanted directly above the injection sites. After 3 weeks, mice underwent shaping as described above, then moved onto training. For inhibition during training, light from a 473 nm laser (15 mW at fiber tip) was delivered through a mono fiber-optic patch cord for 3 s (cue zone followed by reinforcement zone) upon the animal entering the cue zone, throughout the duration of training (~15 min).\n\n### In vivo multi-site photometry recordings\n\n#### Photometry setup\n\nA custom multi-fiber photometry setup was built as previously (Kim et al., 2016) with some modifications that were incorporated to increase signal to noise, detailed below. Excitation of the 470 nm (imaging) and 405 nm (isosbestic control) wavelengths were provided by LEDs (Thorlabs M470F3, M405FP1) which are collimated into a dichroic mirror holder with a 425 nm long pass filter (Thorlabs DMLP425R). This is coupled to another dichroic mirror holder with a 495 nm long pass dichroic (Semrock FF495-Di02-25x36) which redirects the excitation light on to a custom branching fiber-optic patchcord of five bundled 400 mm diameter 0.22 NA fibers (BFP(5)_400/430/1100-0.48_3 m_SMA-5xMF1.25, Doric Lenses) using a 10\u00d7/0.5 NA Objective lens (Nikon CFI SFluor 10\u00d7, Product No. MRF00100). GCaMP6f fluorescence from neurons below the fiber tip in the brain was transmitted via this same cable back to the mini-cube, where it was passed through a GFP emission filter (Semrock FF01-520/35-25), amplified, and focused onto a high sensitivity sCMOS camera (Prime 95b, Photometrics). The multiple branch ends of a branching fiber-optic patch cord were used to collect emission fluorescence from 1.25 mm diameter light weight ferrules (MFC_400/430-0.48_ZF1.25, Doric Lenses) using a mating sleeve (Doric SLEEVE_ZR_1.25). The excitation was alternated between 405 nm and 470 nm by a custom-made JK flip flop which takes the trigger input from the sCMOS and triggers the two excitation LEDs alternatively. Bulk activity signals were collected using Photometrics data acquisition software, Programmable Virtual Camera Access Method (PVCAM).\n\n#### Photometry recordings\n\nWhile mice performed the self-paced contextual learning VR task we recorded bulk calcium signals from five regions: ACC, OFC, AM, BLA, and LC simultaneously. Mice shown in Figures 1 and 2 with ACC recordings also contained OFC, AM, BLA, and LC recordings, which we compile and show all together in Figure 3. We recorded at 18 Hz with excitation wavelengths alternating between 470 nm and 405 nm, capturing calcium dependent and independent signals respectively, resulting in an effective frame rate of 10 Hz.\n\n#### Data processing\n\nFor analysis, the images captured by the CMOS camera were post-processed using custom MATLAB scripts. Regions of interest were manually drawn for each fiber to extract fluorescence values throughout the experiment. The 405 nm reference trace was scaled to best fit the 470 nm signal using least-squares regression. The normalized change in fluorescence (dF/F) was calculated by subtracting the scaled 405 nm reference trace from the 470 nm signal and dividing that value by the scaled 405 nm reference trace. The true baseline of each dF/F trace was determined and corrected by using the MATLAB function msbackadj, estimating the baseline over a 200-frame sliding window, regressing varying baseline values to the window\u2019s data points using a spline approximation, then adjusting the baseline in the peak range of the dF/F signal.\n\n#### Bulk neural responses\n\nThe adjusted calcium signals from photometry were aligned to task events (e.g. cue onset, reward, trial initiation, etc.) in ViRMEn by time-stamping behavioral frames captured through the NIDAQ. Photometry signals from all animals from a given region were z-scored across the entire session. The mean regional responses to task variables (Figures 1\u20143) is the mean of these aligned z-scored signals across all animals, with s.e.m. calculated across all recorded trials. We then sought to quantify the difference in mean average activity patterns observed in response to each cue presentation. To calculate the differential response to reward and trial initiation portions of the task (Figure 1), we calculated the time it took for dF/F activity to rise above 1 std and speed to rise above 1 cm/s (Figure 1F) or dF/F activity to rise above 0.5 std and speed to rise above 2 cm/s (Figure 1G). We zeroed the dF/F activity to the start of reward or 2 s prior to trial initiation.\n\nWe then sought to quantify the difference in temporal divergence activity patterns observed in reward or no-reward cue presentation. To calculate the differential response to cue onset we calculated the mean z-scored signal from 0 s to 3 s after cue onset (Figure 2). We also quantified the difference in pre-cue activity along sequences of trials with one or two no-reward cues to identify ramps in neural activity between reward cues (Figure 3). We zeroed the pre-cue activity of all trials within a given sequence to the activity at the time of the first reward cue and calculated the mean z-scored signal between 2 s before to 0 s before cue onset.\n\n### In vivo cellular resolution calcium imaging\n\n#### Imaging setup\n\nFor imaging in Figure 4, mice were imaged throughout training in 15 min sessions per day. Volumetric imaging was performed using a resonant galvanometer two-photon imaging system (Bruker), with a laser (Insight DS+, Spectra Physics) tuned to 920 nm to excite the calcium indicator, GCaMP6f, through a 16\u00d7/0.8 water immersion objective (Nikon) interfacing with an GRIN lens through a few drops of distilled water. Prior to each session, mice were head-fixed and each GRIN lens was carefully cleaned with 70% ethanol. Fluorescence was detected through GaAs photomultiplier tubes using the Prairie View 5.4 acquisition software. Black dental cement was used to build a well around the implant to minimize light entry into the objective from the projector. High-speed z-stacks were collected in the green channel (using a 520/44 bandpass filter, Semrock) at 512\u2009\u00d7\u2009512 pixels covering each x\u2013y plane of 800\u2009\u00d7\u2009800 mm over a depth of ~150 \u03bcm (30 \u2009\u03bcm apart) by coupling the 30 Hz rapid resonant scanning (x\u2013y) to a z-piezo to achieve ~3.1 Hz per volume. Average beam power measured at the objective during imaging sessions was between 20 mW and 40 mW. An incoming TTL pulse from ViRMEn at the start of behavior enabled time-locking of behavioral epochs to imaging frames with millisecond precision.\n\n#### Source extraction\n\nCalcium imaging data for Figure 4 was acquired by Prairie View 5.4 acquisition software and subsequently processed using the Suite2p toolbox (Pachitariu et al., 2017). Motion correction, ROI detection, and neuropil correction were performed as described. Cell identification was verified by manually validating every extracted source. Cell registration across sessions for Figure 4 was performed with a combination of custom scripts and existing packages (Cell Reg, Sheintuch et al., 2017).\n\n#### Calculation of single-cell dF/F and transient identification\n\nFor each cell detected via automated source extraction, a normalized \u0394F/F was calculated and individual Ca2+ transients were identified as previously described (Rajasethupathy et al., 2015). Briefly, \u0394F/F was defined as: (F \u2013 Fbaseline)/Fbaseline, where F is the raw output (\u2018F\u2019) from the suite2p algorithm, and where Fbaseline is the baseline fluorescence, calculated as the mean of the fluorescence values for a given cell, continuously acquired over a 20 s sliding window to account for slow timescale changes observed in the fluorescence across the recording session. For all analysis, this dF/F was then normalized by z-scoring the entire time series across a session. To identify statistically significant transients, we first calculated an estimate of the noise for each cell using a custom MATLAB script, with a previously described method (Toader et al., 2023; Yadav et al., 2022). In essence, we identified the limiting noise cutoff level for a given cell using time periods that are unlikely to contain neural events, and then defined a transient as significant if it reached above at least 3\u03c3 of this estimated noise level. A custom MATLAB script using the function \u2018findpeaks\u2019 was used to identify any remaining obvious transients not identified by this method (typically when multiple transients occurred in rapid succession). Additional specifications required transients to persist above this noise level for at least 300 ms (roughly twice the duration of the half-life decay time of GCaMP6f). The transient duration was defined as the first and last frames where the dF/F reached 3\u03c3. The value of dF/F was set to zero outside the duration of every identified transient to minimize effects of residual background fluorescence.\n\n#### Single-cell cue tuning\n\nTo calculate the tuning of an individual cell in anticipation to or during reward or no-reward cues, we z-scored the trial averaged the activity on a given neuron across all the cue presentations for a given reward or no-reward trial. A cell was considered tuned if the magnitude of its trial averaged z-scored activity was at least 0.75 between 3 s before or after cue onset. To find tuning for cues based on previous trial history, we preselected cues that were preceded by specific combinations of trials.\n\n#### Transient time analysis\n\nTo calculate the transient times of an individual cell tracked before and after learning, we first preselected cells that are tuned to a particular trial sequence (such as NNR). We then identified the frame when the dF/F value first rises above the noise threshold (see Calculation of single-cell dF/F and transient identification) 7 s before or after cue onset (such as for the R cue in an NNR tuned cell). We took all the transients for any given cell across all the trials in a session, in case a single cell fired more than one transient.\n\n### Statistical analysis\n\nSample sizes were selected based on expected variance and effect sizes from the existing literature, and no statistical methods were used to determine sample size a priori. Prior to experiments being performed, mice were randomly assigned to experimental or control groups. The investigator was blinded to all behavioral studies. Data analyses for calcium imaging (in vitro and in vivo datasets) were automated using MATLAB scripts. Statistical tests were performed in MATLAB 2017a, 2021b, or GraphPad Prism.\n\n### Inclusion and diversity\n\nOne or more of the authors of this paper self-identifies as an underrepresented ethnic minority in science. One or more of the authors of this paper self-identifies as a member of the LGBTQ+ community. One or more of the authors of this paper received support from a program designed to increase minority representation in science.\n",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alicia Izquierdo, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93983.3.sa0](https://doi.org/10.7554/eLife.93983.3.sa0)\n\nThis important manuscript provides compelling experimental evidence of extended motivational signals encoded in the mouse anterior cingulate cortex (ACC) that are implemented by orbitofrontal cortex (OFC)-to-ACC signaling during learning. The experimental methods used were state-of-the-art. These results will be of interest to those interested in cortical function, learning, and/or motivation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93983.3.sa1](https://doi.org/10.7554/eLife.93983.3.sa1)\n\nThis is an interesting report examining activity patterns in mouse ACC and in the OFC neurons projecting to ACC. In addition, the effects of inactivation are examined. In aggregate, the results provide new and interesting information about these two brain areas and they translate motivation into action - a function that it seems intuitively plausible that ACC might perform but, despite this intuition, there have been comparatively few direct tests of the idea and little is known of the specific mechanisms. The study is performed carefully and is written up clearly.\n\nThe combination of recording and inactivation/inhibition experiments and the combination of investigation of ACC neurons and of OFC regions projecting to ACC are very impressive.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93983.3.sa2](https://doi.org/10.7554/eLife.93983.3.sa2)\n\nSummary:\n\nRegalado et al. studied how an extended motivational state, necessary for maintaining behavioural drive despite unrewarding experiences, could be encoded in the ACC and its potential causal implications for learning discriminatory behaviour and avoiding unrewarding stimuli. They designed a self-initiated learning task and identified bulk neural responses tuned specifically to reward delivery as well as trial initiation. Interestingly, in both cases, neural activity precedes behavioural onset, indicating the encoding of a motivational signal. To investigate the neural encoding of motivational signals during unrewarded, distracting stimuli presentation, they created a discrimination task by introducing 'no reward' cues, during which animals need to learn not to reduce running speed and not engage in licking. Interestingly, with mice learning to increase running speed and reduce licking rates after 'no reward' cues, the preceding ACC activity also gradually increased. Importantly, only the increase in running speed after 'no reward' cues was impaired upon optogenetic inhibition of ACC activity during early training, linking the extended motivational signal in ACC and learning to maximise rewards by actively avoiding distracting and unrewarded stimuli. Such motivational signals could also be observed in OFC-ACC projecting neurons. Especially the continuous ramping of activity upon repeated 'non-reward' cues, which could be exclusively observed in the 'fast learner' subgroup, provides an interesting concept of how an extended motivational signal necessary for learning avoidance of unrewarded stimuli could be implemented in ACC. The shift in the temporal activity of initially reward-responsive neurons towards the preceding 'no reward' cue, provides a potential mechanism linking extended motivation to reward maximisation. This mechanism seems to be particularly important in periods of persistent 'non-reward' cues, as demonstrated in the impairment of running speed increase after two consecutive 'non-reward' cues.\n\nAppraisal:\n\nThe authors provide convincing experimental evidence to support their claims of an extended motivational signal encoded in the ACC that is implemented by OFC-ACC signalling and critically involved in learning avoidance of unrewarded stimuli. The newly designed task seems appropriate to identify correlates of relevant cognitive and behavioural variables (e.g. sustained motivation). The combination of recording Ca2+ transients (bulk as well as longitudinal single neuron recordings) to identify potential neural responses and subsequent evaluation of their causal role in establishing and maintaining this persistent motivational state using opto- and pharmacogenetic manipulations is generally accepted.\n\nImpact:\n\nThe findings will be valuable for further research on the impact of motivational states on behaviour and cognition. The authors provided a promising concept of how persistent motivational states could be maintained, as well as established a novel, reproducible task assay. While experimental methods used are currently state-of-the-art, theoretical analysis seems to be incomplete/not extensive.\n",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f9a75ec-868f-493a-b4a2-7513eca7fe3e",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C1",
+      "claim": "The anterior cingulate region of the prefrontal cortex (ACC) contains motivation-related signals to maximize rewards during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed a behavioral task in which mice self-initiate trials to learn cue-reward contingencies and found that the anterior cingulate region of the prefrontal cortex (ACC) contains motivation-related signals to maximize rewards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bulk neural activity recordings from ACC during behavior showing neural activity tied to trial initiations and reward maximization (Figure 1E-G), and chemogenetic inhibition experiments showing ACC is required for learning (Figure 1H-J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "8a322564-0168-4799-8589-ae75c3ac1b2b",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C2",
+      "claim": "ACC neural activity is consistently tied to trial initiations where mice seek to leave unrewarded cues to reach reward-associated cues.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we found that ACC neural activity was consistently tied to trial initiations where mice seek to leave unrewarded cues to reach reward-associated cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through photometry recordings showing ACC activity during trial initiations after no-reward cues (Figure 2B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "02011aad-57c8-4a2a-a1e7-82a442586f84",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C3",
+      "claim": "ACC neural signal persists over consecutive unrewarded cues until reward-associated cues are reached.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this neural signal persisted over consecutive unrewarded cues until reward-associated cues were reached, and was required for learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by ACC activity remaining high across consecutive N cues in RNR and RNNR trial sequences (Figure 2E-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "f767964b-aca6-4b82-94b9-ef6615d86a80",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C4",
+      "claim": "ACC neural activity during unrewarded cues is required for learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this neural signal persisted over consecutive unrewarded cues until reward-associated cues were reached, and was required for learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by optogenetic inhibition experiments showing that early ACC inhibition prevented mice from learning to run out of N cues (Figure 2G-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "ced0af11-2a05-4a1e-b647-290b97a1fbc2",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C5",
+      "claim": "OFC-to-ACC projections exhibit a ramp in bulk neural activity as mice receive unrewarded cues.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, we identified a ramp in bulk neural activity in orbitofrontal cortex (OFC)-to-ACC projections as mice received unrewarded cues, which continued ramping across consecutive unrewarded cues, and finally peaked upon reaching a reward-associated cue, thus maintaining an extended motivational state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by projection-specific photometry recordings showing increasing pre-cue activity in OFCACC across consecutive N cues (Figure 3B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "aa5c7575-1eb8-47f6-9eef-12b129f77598",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C6",
+      "claim": "OFC-to-ACC neural activity ramp continues across consecutive unrewarded cues and peaks upon reaching a reward-associated cue.",
+      "claim_type": "EXPLICIT",
+      "source": "In doing so, we identified a ramp in bulk neural activity in orbitofrontal cortex (OFC)-to-ACC projections as mice received unrewarded cues, which continued ramping across consecutive unrewarded cues, and finally peaked upon reaching a reward-associated cue, thus maintaining an extended motivational state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by photometry data showing progressive increase in OFCACC activity from first N to second N to final R cue in RNNR sequences (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "15fcccb2-303c-429b-b712-a9d25b224c4f",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C7",
+      "claim": "Separate ensembles of OFC neurons sequentially tile the motivational ramp.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular resolution imaging of OFC confirmed these neural correlates of motivation, and further delineated separate ensembles of neurons that sequentially tiled the ramp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by two-photon calcium imaging identifying individual neurons uniquely active across first N, second N, or R cues in NNR sequences (Figure 4D-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "cb0a476f-5c22-405e-91c6-c2e6f52a4e84",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C8",
+      "claim": "OFC maps out task structure to convey an extended motivational state to ACC to facilitate goal-directed learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results identify a mechanism by which OFC maps out task structure to convey an extended motivational state to ACC to facilitate goal-directed learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by combined findings from projection-specific photometry (Figure 3), cellular imaging (Figure 4), and optogenetic inhibition experiments (Figure 4I-J).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "071d044c-9618-47e2-9970-400db224c94e",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C9",
+      "claim": "Faster trial initiation by mice correlates with more rewards obtained per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the faster mice can initiate trials, the more rewards they obtained per minute, providing a strong correlation between motivation and learning (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by scatter plot showing r2=0.8675 and p<0.0001 correlation between time to initiate trials and rewards per minute (Figure 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "35382e98-333d-4d8e-95c8-f2ece660fd24",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C10",
+      "claim": "ACC neural signal precedes speed onset during reward delivery and trial initiations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the ACC neural signal precedes speed onset in both cases, suggesting that ACC is not tracking speed but rather the motivation to initiate trials (Figure 1F and G, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by relative frequency plots demonstrating ACC dF/F rises before speed during rewards and trial initiations (Figure 1F-G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "a4685536-571e-4e13-b803-9599c599b62b",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C11",
+      "claim": "Chemogenetic inhibition of ACC increases time to initiate trials and decreases rewards received per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ACC inhibition caused mice to have a significant increase in time to initiate trials (Figure 1I), which also resulted in a decreased number of rewards received per minute (Figure 1J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing saline vs CNO sessions in hM4D(Gi)-DREADDs mice (Figure 1J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "bb2f50c0-62f0-437f-a980-adb43c3720b9",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C12",
+      "claim": "Mice learn to suppress licking in no-reward cues earlier than learning to increase speed in no-reward cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that mice learned to suppress licking in the N cues (Figure 2A; red arrows on day 2) much earlier than learning to increase speed in N cues (Figure 2A; red arrows on day 4; Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by representative traces and trial-averaged data across training days (Figure 2A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "1bb07461-73d7-439f-b96e-96b75dda3f04",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C13",
+      "claim": "Stop discrimination index correlates with rewards obtained per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, there was also a significant correlation between stop DI and rewards obtained per minute, confirming that the development of this behavioral strategy is tied to reward maximization within a given training session (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by scatter plot showing r2=0.5042 and p<0.0001 correlation (Figure 2D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "cd8b3012-353c-42ec-91d7-6b895644af1c",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C14",
+      "claim": "ACC activity significantly increases during no-reward cues as early as training day 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, however, in this task we found that ACC began to significantly increase its activity, specifically during N cues, as early as T3, as mice exhibited a learned motivation to leave N cues to reach more R cues (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by quantification of average ACC activity across training days separated by reward and no-reward cues (Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "9c9cb24e-599e-461d-ab35-ce8e9567a7fe",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C15",
+      "claim": "ACC dF/F difference between no-reward and reward cues positively correlates with reward obtained per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "These neural responses, and in particular the dF/F difference in N vs R cues, positively correlated with the amount of reward obtained per minute, linking motivation-related ACC activity to overall learning (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by scatter plot showing r2=0.2149 and p<0.0001 correlation (Figure 2D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "14da1145-80cb-471b-863c-d1d9644efb7f",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C16",
+      "claim": "ACC neural signal precedes behavioral ramp in speed on a trial-by-trial basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in all cases, on a trial-by-trial basis, the neural signal preceded the behavioral ramp in speed (Figure 2E), and was present even if we restricted our analyses to cue presentations in which mice stopped (Figure 2\u2014figure supplement 1E), suggesting a motivational rather than motor response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by trial-averaged plots of speed and ACC activity aligned to cue presentation (Figure 2E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "f4544d9d-f25e-4506-a614-2ef7c413cc4f",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C17",
+      "claim": "During passive cue presentation, ACC neural activity is no longer different between no-reward and reward cues.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mice did not develop the motivation to run out of N cues (Figure 2\u2014figure supplement 1F), and accordingly, the ACC neural activity was no longer different between N and R cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by passive cue presentation experiments showing no differential ACC activity (Figure 2\u2014figure supplement 1F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "b4363122-3ede-477b-b4e3-1f55ccc4a464",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C18",
+      "claim": "Early optogenetic inhibition of ACC prevents mice from learning to run out of no-reward cues.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that early ACC inhibition prevented mice from learning to run out of N cues, even though they still learned to suppress their lick rates (Figure 2H, Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by comparing speed during cues in mCherry controls vs GTACR inhibition mice on training day 6 (Figure 2H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "dcb3eec8-2a6f-4896-b651-66ea24ade568",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C19",
+      "claim": "Late optogenetic inhibition of ACC has no effect on speed or lick rate behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Late ACC inhibition had no effect on speed or lick rate behavior, as mice continued to run out during N cues while inhibition occurred, suggesting ACC activity does not broadly suppress speed (Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by optogenetic inhibition during days 7-10 showing no behavioral impairment (Figure 2\u2014figure supplement 1H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "f2a8735d-8eaa-4e9d-8675-91cf77e85059",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C20",
+      "claim": "All tested projections to ACC respond significantly to rewards before learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that even before learning all projections responded significantly to rewards, and most (OFCACC, AMACC, and LCACC) increased their activity in anticipation of trial initiations (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by trial-averaged plots of projection activity aligned to reward onset and trial initiations (Figure 3\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "c59feae2-f86a-4b0e-ab69-a21d9820a4ef",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C21",
+      "claim": "OFCACC and AMACC exhibit higher baseline activity during trial initiations after no-rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both OFCACC and AMACC had higher baseline activity during trial initiations after no-rewards (Figure 3\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by trial-averaged plots aligned to trial initiations after each outcome (Figure 3\u2014figure supplement 1B-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "35ba8fb0-fb0f-41d3-bc77-ceec757a85ae",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C22",
+      "claim": "OFCACC activity rises prior to no-reward cue presentation and continues to rise until a reward cue is reached in RNR sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a rise in OFCACC activity prior to the N cue presentation that continued to rise until an R cue was reached (black dotted arrow; Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by trial-averaged bulk GCaMP6f dF/F during RNR sequences (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "ddcf18fd-d81d-4281-859c-f99bc247af61",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C23",
+      "claim": "The difference in pre-cue activity between no-reward and reward cues in RNR sequences emerges at the time of learning for OFCACC and AMACC.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified this motivational signal as a difference in pre-cue activity between N and R cues in RNR trial sequences across days and found that this difference emerged at the time of learning (~T3) and closely tracked performance of the learned behavior (T3-T6) for OFCACC and AMACC, but not BLAACC or LCACC (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by quantification of pre-cue activity showing significant differences for OFCACC and AMACC but not BLAACC or LCACC (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "1bbc2542-6592-4df7-8daa-f329bf2cf1b1",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C24",
+      "claim": "OFCACC activity continues ramping across two consecutive no-reward trials in RNNR sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, OFCACC activity continued ramping across two consecutive N trials, exhibiting higher pre-cue activity upon entering an R cue after two versus one N (black dotted line, Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by trial-averaged bulk GCaMP6f dF/F during RNNR sequences with quantification (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "dc669c52-6b85-4cb1-9bef-eee8ca01b027",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C25",
+      "claim": "Only 'Learner' mice exhibit a significant ramp in OFCACC neural activity from the first no-reward cue to the final reward cue in RNNR sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared OFCACC activity in an RNNR sequence of trials, we found that only Learners exhibited a significant ramp in neural activity from the first N cue to the final R cue presentation, which emerged coincidental with behavioral learning and persisted for the remaining days of training (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing OFCACC activity in RNNR sequences between Learner and Non-Learner mice (Figure 3E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "35637718-70ae-4478-8b7f-ba5b518076a0",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C26",
+      "claim": "Individual OFC projection neurons are uniquely active across the first no-reward, second no-reward, or reward cue in NNR trial sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We found individual neurons that were uniquely active across the first N, second N, or R cue, thereby tiling the sequence of NNR trials (Figure 4D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by representative neurons with tunings to separate cues in NNR sequences and quantification (Figure 4D-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "3f5e3b81-ae69-4b75-a4c6-dad3854ba8b6",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C27",
+      "claim": "An increasing number of OFC neurons are active along the sequence of NNR trials, most prominently before learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that an increasing number of neurons were active along the sequence of NNR trials and most prominently before learning (Figure 4F, Figure 4\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by quantification showing percentage of neurons tuned to different cues before vs after training (Figure 4F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "e89b15c1-0fa1-4706-9a94-e2ebf08e713f",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C28",
+      "claim": "OFC neurons initially responsive to reward cues become progressively responsive to preceding no-reward cues after learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these neurons were no longer responsive to R cue onset but rather to pre-R cue activity, which then became progressively more responsive to the preceding N cue onset, aligning with the learned behavioral transition of mice leaving N cues to reach R cues (Figure 4G and H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by tracking NNR neurons before and after learning, demonstrating shift in transient timing (Figure 4G-H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "7d62a65e-3e49-4b8b-90cc-deb05ad18d21",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C29",
+      "claim": "Optogenetic inhibition of OFCACC impairs mice's ability to increase speed during no-reward cues when preceded by another no-reward cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while both mCherry control and OFCACC inhibition cohorts could increase their speed during N cues following an R cue, OFCACC mice were impaired in doing so if the N cue was followed by an N cue (Figure 4I and J, Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by optogenetic inhibition experiments comparing speed after no-reward cues in different trial contexts (Figure 4J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "49a2dc17-e860-4bfe-beff-9d37104905a7",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C30",
+      "claim": "Patients with prefrontal cortex lesions struggle to perform tasks requiring maintaining a motivational and goal-directed state amid competing sensory information.",
+      "claim_type": "EXPLICIT",
+      "source": "This function has been long proposed to be carried out by the prefrontal cortex (PFC), as patients with PFC lesions struggle to perform tasks that require maintaining a motivational and goal-directed state, in the midst of competing sensory information, such as the Stroop task or the Wisconsin Card Sorting Task (Stroop, 1935; Yuan and Raz, 2014; D'Esposito and Postle, 2015; Milner, 1963; Pardo et al., 1990; Shallice and Burgess, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on PFC lesion studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "7bba7f09-1737-4fa1-b606-edfc96fbf0c5",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C31",
+      "claim": "The anterior cingulate cortex has been implicated in action selection over long timescales influenced by motivational factors such as value and effort.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the anterior cingulate cortex (ACC) has been implicated in action selection over long timescales that are influenced by a variety of motivational factors, such as the value and effort required for each outcome (Shenhav et al., 2013; Hauber and Sommer, 2009; Hillman and Bilkey, 2010; Wallis and Kennerley, 2011; Cowen et al., 2012; Shenhav et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on ACC function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "bf1a5530-189d-4d29-9ad1-295a64789b1e",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C32",
+      "claim": "Impairments to ACC result in animals failing to accurately allocate motivation toward strategies that maximize reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairments to the ACC results in animals failing to accurately allocate motivation toward strategies that maximize reward (Amiez et al., 2006; Kennerley et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on ACC lesion/impairment studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "bbf185e3-3fe7-4770-aac7-2e95669d71dd",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C33",
+      "claim": "ACC neurons encode for choices that require effort with a higher payoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-unit recordings from ACC have shown that neurons encode for choices that require effort with a higher payoff, giving support for the hypothesis that this region is important for action-outcome associations and allocating resources for learning and for the maximization of reward over long timescales (Hillman and Bilkey, 2010; Monosov et al., 2020; Holroyd and Yeung, 2012; Hillman and Bilkey, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on ACC single-unit recordings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "c702023e-a14f-4264-a343-0995118ae472",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C34",
+      "claim": "ACC's role in goal-directed learning is widely accepted.",
+      "claim_type": "EXPLICIT",
+      "source": "While the precise functions of ACC are still debated, its role in goal-directed learning is widely accepted (Shenhav et al., 2013; Holroyd and Yeung, 2012; Botvinick et al., 2001; Heilbronner and Hayden, 2016; Rushworth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on ACC function in goal-directed learning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "1002abee-0114-4889-b8cf-f25fe1f7bed3",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C35",
+      "claim": "OFC has been implicated in guiding adaptive, flexible behavior by signaling information about future outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The OFC has been implicated in guiding adaptive, flexible behavior by signaling information about future outcomes (Rudebeck et al., 2013; Montague and Berns, 2002; Mainen and Kepecs, 2009; Rich and Wallis, 2016; Padoa-Schioppa and Conen, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on OFC function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "02b086c8-b299-445a-bb33-6041d3764ca7",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C36",
+      "claim": "OFC neurons encode sensory-sensory associations even prior to any kind of learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, OFC neurons have been found to encode sensory-sensory associations even prior to any kind of learning (Sadacca et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "a2c7367e-396d-4b14-bbef-e24574e0fe19",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C37",
+      "claim": "Goal-directed learning requires the ability to maintain an extended motivational state even amid distracting and competing external variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Goal-directed learning often requires the ability to maintain an extended motivational state even in the midst of distracting and competing external variables (Miller and Cohen, 2001; Shenhav et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on goal-directed learning and cognitive control.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "167c0a19-18c6-4d6d-83f2-7f32f2eec692",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C38",
+      "claim": "Goal-directed learning is sensitive to the current value of outcomes and can lead to a novel sequence of actions for a desired outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "This learning is of a more deliberate, informed nature than habitual learning, as it is sensitive to the current value of outcomes and can lead to a novel sequence of actions for a desired outcome (Balleine and Dickinson, 1998; Tolman, 1948; Pezzulo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on goal-directed vs habitual learning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "8f7cffa5-a828-4111-b0d6-fa3018375699",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C39",
+      "claim": "Animals learn to exploit high-effort, high-reward options when given a choice between high-effort/high-reward and low-effort/low-reward options.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, when animals are given two choice options: one in which high effort leads to high rewards, and one in which low effort leads to low rewards, animals learn to exploit the high-effort, high-reward option (Walton et al., 2003; Schweimer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature on effort-based decision making.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "c0bdc576-b12f-476b-9fb5-74d2aec301a3",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C40",
+      "claim": "The virtual reality system uses a 200-mm-diameter styrofoam ball that allows free forward and backward rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, a 200-mm-diameter styrofoam ball was axially fixed with a 6-mm-diameter assembly rod (Thorlabs) passing through the center of the ball and resting on 90\u00b0 post holders (Thorlabs) at each end, allowing free forward and backward rotation of the ball.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental apparatus in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "39b45f10-3992-471f-9116-780cac36614b",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C41",
+      "claim": "The virtual environment encompasses approximately 220\u00b0 of the mouse's field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen encompasses \u223c220\u00b0 of the mouse's field of view and the virtual environment was back-projected onto this screen using a Vamvo Ultra Mini Portable projector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental apparatus in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "48fbe046-6d10-4b26-a112-97ccf34a2e75",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C42",
+      "claim": "Mice were water restricted to receive 1 mL water per day during behavioral training.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were group housed (3\u20135 per cage) with ad libitum food and water, unless mice were water restricted for behavioral assays, in which case they were given 1 mL water per day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "04b85cf7-c60f-40bb-ad69-8fa78d7e3ae6",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C43",
+      "claim": "Body weight was monitored daily to ensure it was maintained above 80% of the pre-restriction measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "Body weight was monitored daily to ensure it was maintained above 80% of the pre-restriction measurement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "90b7c365-1fa6-41ae-a466-e254c2f7d4de",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C44",
+      "claim": "The reward cues consisted of a 5 kHz tone and \u03b1-pinene odor.",
+      "claim_type": "EXPLICIT",
+      "source": "The cues for reward were a 5 kHz tone and \u0251-pinene while the cues for no-reward were 9 kHz tone and octanol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of behavioral task in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "67346be3-c39c-4d71-9c23-41db3a83b861",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C45",
+      "claim": "The no-reward cues consisted of a 9 kHz tone and octanol odor.",
+      "claim_type": "EXPLICIT",
+      "source": "The cues for reward were a 5 kHz tone and \u0251-pinene while the cues for no-reward were 9 kHz tone and octanol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of behavioral task in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "778954fa-f4f2-4bac-bc4b-93639fd3c0ef",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C46",
+      "claim": "Olfactory cues were diluted with mineral oil to 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "The auditory cues consisted of 5 kHz or 9 kHz tones outputted by a thin plastic speaker (Adafruit) and olfactory cues consisting of \u0251-pinene or octanol were diluted with mineral oil to 10% and released by a custom-built olfactometer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of behavioral task in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "60ca5941-74eb-429b-82c2-87cf7c2e6d44",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C47",
+      "claim": "The order of reward and no-reward cues was pseudorandomly predetermined to not lead to more than 2 of the same cues presented in a row.",
+      "claim_type": "EXPLICIT",
+      "source": "The order of reward and no-reward cue was pseudorandomly predetermined through code so as to not lead to more than 2 of the same cues presented in a row.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of behavioral task in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "b2337a54-433c-4efb-b7cc-21c86d9550f8",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C48",
+      "claim": "Mice were given 15 minutes on the ball for each training session.",
+      "claim_type": "EXPLICIT",
+      "source": "Each mouse was given 15 min on the ball for each training session, and supplemental water was given to each mouse if they failed to drink 1 mL during a session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of behavioral task in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "c37fd12b-382d-4762-a523-10efb0434565",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C49",
+      "claim": "A discrimination index of 1 indicates perfect discrimination while a discrimination index of 0 indicates chance performance.",
+      "claim_type": "EXPLICIT",
+      "source": "A DI of 1 therefore indicates perfect discrimination, while a DI of 0 indicates chance performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of behavioral analysis in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "d4dc2d79-108f-4e97-9936-1598f12031e0",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C50",
+      "claim": "CNO was administered at a dosage of 5 mg/kg for chemogenetic inhibition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A solution of CNO was prepared at a concentration of 0.5 mg/mL, and mice were injected at a dosage of 5 mg/kg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of chemogenetic inhibition procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "d8adad59-1f73-4b11-a21d-39d34e6bcc2e",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C51",
+      "claim": "Behavioral experiments were conducted 45 minutes after CNO injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral experiments were conducted 45 min after injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of chemogenetic inhibition procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "310935e2-fc4c-4afb-82d6-e6ba892e2a35",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C52",
+      "claim": "For optogenetic inhibition during training, 15 mW light at 473 nm was delivered at the fiber tip.",
+      "claim_type": "EXPLICIT",
+      "source": "For inhibition during training, light from a 473 nm laser (15 mW at fiber tip) was delivered through a mono fiber-optic patch cord for 3 s (cue zone followed by reinforcement zone) upon the animal entering the cue zone, throughout the duration of training (~15 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of optogenetic inhibition procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "a9e96521-0fb9-437f-ae4d-3de701255b80",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C53",
+      "claim": "Photometry recordings were performed at 18 Hz with excitation wavelengths alternating between 470 nm and 405 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded at 18 Hz with excitation wavelengths alternating between 470 nm and 405 nm, capturing calcium dependent and independent signals respectively, resulting in an effective frame rate of 10 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of photometry recording procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "6b29bdc4-64a4-4269-8314-db05dce6cf10",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C54",
+      "claim": "Two-photon imaging was performed using a laser tuned to 920 nm to excite GCaMP6f.",
+      "claim_type": "EXPLICIT",
+      "source": "Volumetric imaging was performed using a resonant galvanometer two-photon imaging system (Bruker), with a laser (Insight DS+, Spectra Physics) tuned to 920 nm to excite the calcium indicator, GCaMP6f, through a 16\u00d7/0.8 water immersion objective (Nikon) interfacing with an GRIN lens through a few drops of distilled water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of two-photon imaging procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "1be1e5f7-5419-426a-8393-fe235a6a8528",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C55",
+      "claim": "High-speed z-stacks were collected at approximately 3.1 Hz per volume.",
+      "claim_type": "EXPLICIT",
+      "source": "High-speed z-stacks were collected in the green channel (using a 520/44 bandpass filter, Semrock) at 512 \u00d7 512 pixels covering each x\u2013y plane of 800 \u00d7 800 mm over a depth of ~150 \u03bcm (30  \u03bcm apart) by coupling the 30 Hz rapid resonant scanning (x\u2013y) to a z-piezo to achieve ~3.1 Hz per volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of two-photon imaging procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "d69c5c0e-90d0-4b53-a457-e78b9c3ecdf8",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C56",
+      "claim": "Average beam power during imaging sessions was between 20 mW and 40 mW.",
+      "claim_type": "EXPLICIT",
+      "source": "Average beam power measured at the objective during imaging sessions was between 20 mW and 40 mW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of two-photon imaging procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "2e3db3b1-5fe2-4553-89e6-714a8e360a20",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C57",
+      "claim": "A transient was defined as significant if it reached above at least 3\u03c3 of the estimated noise level.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, we identified the limiting noise cutoff level for a given cell using time periods that are unlikely to contain neural events, and then defined a transient as significant if it reached above at least 3\u03c3 of this estimated noise level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of calcium imaging analysis procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "49b5d887-1619-4cd5-8b8b-08a4e030f8c5",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C58",
+      "claim": "Transients were required to persist above the noise level for at least 300 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional specifications required transients to persist above this noise level for at least 300 ms (roughly twice the duration of the half-life decay time of GCaMP6f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of calcium imaging analysis procedures in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "7465d049-4d24-499a-803c-249ab1b4320b",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C59",
+      "claim": "A cell was considered tuned if the magnitude of its trial averaged z-scored activity was at least 0.75 between 3 s before or after cue onset.",
+      "claim_type": "EXPLICIT",
+      "source": "A cell was considered tuned if the magnitude of its trial averaged z-scored activity was at least 0.75 between 3 s before or after cue onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of single-cell cue tuning analysis in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "dbce7b1a-37d9-4531-9a5f-a3491ce21351",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C60",
+      "claim": "OFC functions in model-based behaviors and accurate planning of actions based on learned transition structure of a task.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus parsimoniously position OFC as functioning in model-based behaviors, and in the accurate planning of actions based on the learned transition structure of a task (Drummond and Niv, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results with citation to theoretical framework.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "f51643d6-3259-4f7c-9c8c-b695098264af",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C61",
+      "claim": "Motivation could be computed as a combination of several variables such as time since last reward, value of reward, and effort to reach future rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivation could be computed as a combination of several variables such as time since last reward, value of reward, and effort to reach future rewards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative discussion of potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "d3c9e60b-4f47-4b6c-9a1f-d0228470b826",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C62",
+      "claim": "ACC reads information from OFC about task structure and value to perform computations relevant to allocating behavioral control.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that ACC reads information from OFC about task structure and value to perform computations relevant to allocating behavioral control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation based on experimental findings and theoretical framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "2fc7963b-34ad-4f23-9470-a9d2f7a9780f",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C63",
+      "claim": "The decision to run during no-reward cues is comparable to a foraging decision to leave a patch to find alternative options.",
+      "claim_type": "EXPLICIT",
+      "source": "We compare the decision to run during N cues to a foraging decision to leave a patch to find alternative options, and ACC's importance in the development of this behavior is reminiscent to signals previously described at the time a foraging decision is reached (Blanchard and Hayden, 2014; Hayden et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results with citations to related literature on foraging behavior.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "c569006e-6af8-464e-8978-148a92a3b5f9",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C64",
+      "claim": "Individual ACC neurons could encode the distribution of actions/opportunities taken during reward or no-reward cues.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not perform single-cell imaging of ACC in our task, we hypothesize that individual ACC neurons could encode the distribution of actions/opportunities (Klein-Fl\u00fcgge et al., 2022) (i.e. stop, run, lick, suppress lick) taken during R or N cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis about potential neural mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "4fb9f987-eb83-48d8-9d03-8d639983f768",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C65",
+      "claim": "The sustained increase in bulk ACC activity across no-reward cue trials could come from a stable sequence of individual neurons that encode the timescale of the actions taken.",
+      "claim_type": "EXPLICIT",
+      "source": "The sustained increase in bulk ACC activity across N cue trials (Figure 2) could come from a stable sequence of individual neurons that encode the timescale of the actions taken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis about potential neural mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "a6f052d7-33fe-4ea8-8caf-ec2f33770b0c",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C66",
+      "claim": "Motivational signals in OFC represent state since past rewards/goals, while in ACC these signals represent actions taken to pursue rewards/goals in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, OFC projections would encode current motivation across N cues before learning, which then triggers ACC to compute the value-based actions. Motivational signals in OFC would thus represent state since past rewards/goals, while in ACC these signals represent actions taken to pursue rewards/goals in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation and synthesis of experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "1ff0aea6-ad0a-4d8a-86c6-900a5ae452dc",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C67",
+      "claim": "Learning is a systems-level process guided by top-down signals that maintain a motivational state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we studied learning as a systems-level process guided by top-down signals that maintain a motivational state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the study's conceptual framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "57cd5a98-6d27-47c7-83ce-736bb7847668",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "claim_id": "C68",
+      "claim": "The recruitment of multiple frontal cortical areas is expected as animals build, maintain, and use representations of task structure and value to drive learned, motivated behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work showed the recruitment of multiple frontal cortical areas in this process, which is to be expected as animals are required to build, maintain, and use representations of task structure and value to drive learned, motivated behaviors (Klein-Fl\u00fcgge et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results with citation to theoretical framework.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ACC contains motivation-related signals required for learning to maximize rewards. ACC neural activity precedes speed onset during trial initiations and persists across consecutive unrewarded cues until reward-associated cues are reached. Chemogenetic and optogenetic inhibition of ACC impairs learning and reduces reward acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C9-C11 collectively demonstrate that ACC encodes motivation-related signals through photometry recordings (C1, C2, C3, C10), behavioral correlations (C9), and causal manipulations showing ACC is required for learning (C4, C11). The temporal precedence of neural activity before behavior (C10) and persistence across unrewarded trials (C3) support a motivational rather than purely motor role. Multiple complementary approaches converge on this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "6dc3c084-6cf7-4346-9226-5f992cac064f",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mice learn to suppress licking before learning to increase speed during no-reward cues, with ACC activity specifically increasing during no-reward cues as learning emerges. This ACC activity precedes behavioral changes and is required during early but not late training, suggesting a specific role in learning rather than performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C19 demonstrate temporal dissociation between licking suppression and speed increases (C12), correlations between ACC activity and learning (C13-C15), temporal precedence of neural activity (C16), task-specificity (C17), and critical period requirements (C18-C19). The optogenetic inhibition experiments showing early but not late effects (C18, C19) provide strong causal evidence for ACC's role in learning acquisition rather than performance maintenance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "ee06ee28-d469-4b31-b11e-47542fbf948c",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OFC-to-ACC projections exhibit a ramping pattern of neural activity across consecutive unrewarded cues that peaks upon reaching reward cues. This ramp emerges at the time of learning and is specific to mice that successfully learn the task ('Learners'), distinguishing it from other ACC inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C20-C25 demonstrate the OFC\u2192ACC ramp through projection-specific photometry across multiple trial sequences (RNR, RNNR). The comparison between Learner and Non-Learner mice (C25) provides strong evidence that this ramp is specifically tied to learning rather than task exposure. The specificity to OFC\u2192ACC and AM\u2192ACC but not BLA\u2192ACC or LC\u2192ACC (C23) further validates the finding. Multiple trial sequences and quantifications support the ramping pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "62eb8aea-9389-4e85-b7f9-d3c60386ba14",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual OFC projection neurons sequentially tile the motivational ramp, with separate ensembles uniquely active during first no-reward, second no-reward, or reward cues. After learning, neurons initially responsive to reward cues become progressively responsive to preceding no-reward cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C26-C28 demonstrate cellular-level mechanisms underlying the bulk OFC\u2192ACC ramp through two-photon calcium imaging. The identification of distinct neuronal ensembles tuned to different cues (C26) and their sequential tiling (C27) is well-supported. The longitudinal tracking showing shifts in neuronal tuning after learning (C28) provides mechanistic insight into how the circuit adapts. The cellular resolution data directly validates the bulk photometry findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "OFC maps task structure to convey an extended motivational state to ACC to facilitate goal-directed learning. Optogenetic inhibition of OFC\u2192ACC projections specifically impairs behavior when no-reward cues are preceded by other no-reward cues, demonstrating the functional importance of the OFC\u2192ACC pathway for maintaining motivation across trial sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C29, and interpretive claims C60, C62, C66-C68 synthesize the experimental findings into a mechanistic model. The optogenetic inhibition showing context-dependent impairments (C29) provides causal evidence for the pathway's functional role. However, some aspects remain interpretive (C60, C62, C66) rather than directly demonstrated. The model is well-supported by converging evidence from photometry, imaging, and perturbation experiments, though alternative mechanisms are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "0bfaf526-16d1-4d92-b50b-dd72133f0427",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within established literature on prefrontal cortex function in goal-directed learning, ACC's role in motivation and action selection, and OFC's role in adaptive behavior and outcome prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 accurately represent established findings from the cited literature. These claims provide appropriate context for the current work and are supported by citations to peer-reviewed studies. The characterization of PFC lesion effects (C30), ACC function (C31-C34), OFC function (C35-C36), and goal-directed learning principles (C37-C39) align with current understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript provides detailed methodological descriptions of the virtual reality system, behavioral task parameters, water restriction protocols, cue specifications, training procedures, discrimination index calculations, and parameters for chemogenetic inhibition, optogenetic inhibition, photometry recordings, two-photon imaging, and calcium imaging analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C59 provide comprehensive methodological details that are internally consistent and follow established practices. The specifications for equipment (C40-C41, C54-C56), behavioral protocols (C42-C48), analysis methods (C49, C57-C59), and intervention parameters (C50-C52) are clearly stated and appropriate for the experiments conducted. These methodological claims are well-documented and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "d6ee02af-2174-40ff-8f7f-9b3100d9323c",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript proposes speculative mechanisms for how motivation might be computed and represented in ACC, including potential encoding of action distributions and sequential neuronal representations underlying sustained bulk activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61, C64, C65 are explicitly speculative hypotheses about potential mechanisms not directly tested in the current study. While these hypotheses are reasonable extensions of the findings, they lack direct experimental support. The authors appropriately frame these as speculative (e.g., 'could be computed,' 'we hypothesize'), but they remain untested predictions requiring future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "6415bfd3-95e6-4d5e-ae10-797d6e8e88b2",
+      "content_id": "f4b33648-ab14-498b-92cd-9ab7f1a7ebeb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The decision to run during no-reward cues is conceptually comparable to foraging decisions to leave a patch for alternative options, with ACC's role reminiscent of signals observed during foraging decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 draws a conceptual parallel between the current task and foraging behavior, supported by citations to relevant literature (Blanchard and Hayden, 2014; Hayden et al., 2011). This analogy is reasonable given the structural similarity between leaving unrewarded cues to seek rewards and patch-leaving decisions. However, this remains an interpretive framework rather than a directly tested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "5d554101-85ed-47fa-92a4-077f85bd5da8",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "ACC encodes motivation-related signals during learning, with neural activity tied to trial initiations and persisting across unrewarded cues until reward-associated cues are reached. This activity precedes behavioral responses and is required for learning to maximize rewards.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm these findings. Reviewer 1 states the manuscript provides 'compelling experimental evidence of extended motivational signals encoded in the mouse anterior cingulate cortex (ACC).' Reviewer 3 notes 'the authors provide convincing experimental evidence to support their claims of an extended motivational signal encoded in the ACC' and describes the combination of recording and inhibition experiments as 'generally accepted.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "415d1b2c-4041-42d4-9f05-6330b79fc412",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "OFC-to-ACC projections exhibit a ramping pattern of neural activity across consecutive unrewarded cues, peaking upon reaching reward-associated cues. This ramping emerges at the time of learning and is specific to learner mice.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorse this finding. Reviewer 1 describes the results as providing 'compelling experimental evidence' that extended motivational signals are 'implemented by orbitofrontal cortex (OFC)-to-ACC signaling during learning.' Reviewer 3 specifically highlights 'the continuous ramping of activity upon repeated 'non-reward' cues, which could be exclusively observed in the 'fast learner' subgroup' as providing 'an interesting concept of how an extended motivational signal necessary for learning avoidance of unrewarded stimuli could be implemented in ACC.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "95ffbf0d-abf7-4ad2-8d59-0c67ca4a6088",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Individual OFC neurons sequentially tile the motivational ramp, with separate ensembles uniquely active across consecutive unrewarded and reward cues. These neurons shift their temporal responsiveness from reward cues to preceding unrewarded cues after learning.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this cellular-level finding. Reviewer 3 notes 'the shift in the temporal activity of initially reward-responsive neurons towards the preceding 'no reward' cue, provides a potential mechanism linking extended motivation to reward maximisation.' Reviewer 2 describes the 'combination of investigation of ACC neurons and of OFC regions projecting to ACC' as 'very impressive,' indicating acceptance of the cellular resolution findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "a2cb37ad-3f10-4244-bae5-2dc7fd78d0cc",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "OFC maps task structure to convey an extended motivational state to ACC to facilitate goal-directed learning. Optogenetic inhibition of OFC-ACC projections specifically impairs behavior during consecutive unrewarded cues.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this mechanistic interpretation. Reviewer 2 states the results 'provide new and interesting information about these two brain areas and they translate motivation into action' and notes 'there have been comparatively few direct tests of the idea and little is known of the specific mechanisms,' indicating this is a valuable contribution. Reviewer 3 affirms 'the authors provide convincing experimental evidence to support their claims' that the extended motivational signal is 'implemented by OFC-ACC signalling and critically involved in learning avoidance of unrewarded stimuli.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "b78a564c-c0bb-4f6a-8cf5-ca2b2f22d36a",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Behavioral correlates show that faster trial initiation correlates with more rewards obtained, and mice learn to suppress licking before learning to increase speed during unrewarded cues. Stop discrimination index correlates with reward maximization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these behavioral findings. Reviewer 3 states 'the newly designed task seems appropriate to identify correlates of relevant cognitive and behavioural variables (e.g. sustained motivation),' indicating acceptance of the behavioral measures and their interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "c11fb8ea-3eff-4804-a6e2-93b2700ecc21",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "ACC activity differences between reward and no-reward cues disappear during passive cue presentation. Early optogenetic inhibition of ACC prevents learning to run during unrewarded cues, while late inhibition has no effect.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these causal manipulation findings without critique. Reviewer 2 notes 'the combination of recording and inactivation/inhibition experiments' is 'very impressive,' and Reviewer 3 describes the 'subsequent evaluation of their causal role in establishing and maintaining this persistent motivational state using opto- and pharmacogenetic manipulations' as 'generally accepted.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "d06efd8c-140a-4da1-8017-4e68552c0acc",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Multiple projections to ACC (OFC, AM, BLA, LC) respond to rewards before learning, with OFC-ACC and AM-ACC showing higher baseline activity during trial initiations after no-rewards.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these comparative projection findings. Reviewer 2's statement that the 'combination of investigation of ACC neurons and of OFC regions projecting to ACC are very impressive' suggests acceptance of the projection-specific analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "79825480-5015-4a52-935e-f3f73c01e91b",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Background claims about PFC, ACC, and OFC function in motivation, goal-directed learning, and task structure representation based on established literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these literature-based contextual claims. Reviewer 2 notes the function 'seems intuitively plausible that ACC might perform' and that 'despite this intuition, there have been comparatively few direct tests of the idea,' indicating acceptance of the theoretical framework while highlighting the novelty of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Methodological details describing the virtual reality apparatus, behavioral training procedures, discrimination indices, chemogenetic and optogenetic inhibition parameters, photometry and two-photon imaging specifications, and calcium imaging analysis criteria.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorse the methods. Reviewer 1 states 'the experimental methods used were state-of-the-art,' Reviewer 2 notes 'the study is performed carefully,' and Reviewer 3 confirms 'experimental methods used are currently state-of-the-art.' No methodological concerns are raised about these technical specifications.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "13472c52-3f37-4b88-9943-e9509e2802c1",
+      "content_id": "64c18140-6a0f-4063-b4dd-e04a189d52cf",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Interpretive and speculative claims about OFC function in model-based behaviors, potential computational mechanisms for motivation, comparisons to foraging decisions, hypotheses about ACC single-neuron encoding, and the systems-level nature of learning.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these interpretations without challenge. Reviewer 2 states the results 'provide new and interesting information' about how these brain areas 'translate motivation into action,' indicating acceptance of the conceptual framework. Reviewer 3 notes the findings 'will be valuable for further research' and that the authors 'provided a promising concept of how persistent motivational states could be maintained,' though adds 'theoretical analysis seems to be incomplete/not extensive,' suggesting room for deeper theoretical development rather than rejection of the current interpretations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f9a75ec-868f-493a-b4a2-7513eca7fe3e",
+      "result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5"
+    },
+    {
+      "claim_id": "8a322564-0168-4799-8589-ae75c3ac1b2b",
+      "result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5"
+    },
+    {
+      "claim_id": "02011aad-57c8-4a2a-a1e7-82a442586f84",
+      "result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5"
+    },
+    {
+      "claim_id": "f767964b-aca6-4b82-94b9-ef6615d86a80",
+      "result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5"
+    },
+    {
+      "claim_id": "071d044c-9618-47e2-9970-400db224c94e",
+      "result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5"
+    },
+    {
+      "claim_id": "35382e98-333d-4d8e-95c8-f2ece660fd24",
+      "result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5"
+    },
+    {
+      "claim_id": "a4685536-571e-4e13-b803-9599c599b62b",
+      "result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5"
+    },
+    {
+      "claim_id": "bb2f50c0-62f0-437f-a980-adb43c3720b9",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "1bb07461-73d7-439f-b96e-96b75dda3f04",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "cd8b3012-353c-42ec-91d7-6b895644af1c",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "9c9cb24e-599e-461d-ab35-ce8e9567a7fe",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "14da1145-80cb-471b-863c-d1d9644efb7f",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "f4544d9d-f25e-4506-a614-2ef7c413cc4f",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "b4363122-3ede-477b-b4e3-1f55ccc4a464",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "dcb3eec8-2a6f-4896-b651-66ea24ade568",
+      "result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f"
+    },
+    {
+      "claim_id": "ced0af11-2a05-4a1e-b647-290b97a1fbc2",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "aa5c7575-1eb8-47f6-9eef-12b129f77598",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "f2a8735d-8eaa-4e9d-8675-91cf77e85059",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "c59feae2-f86a-4b0e-ab69-a21d9820a4ef",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "35ba8fb0-fb0f-41d3-bc77-ceec757a85ae",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "ddcf18fd-d81d-4281-859c-f99bc247af61",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "1bbc2542-6592-4df7-8daa-f329bf2cf1b1",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "dc669c52-6b85-4cb1-9bef-eee8ca01b027",
+      "result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c"
+    },
+    {
+      "claim_id": "15fcccb2-303c-429b-b712-a9d25b224c4f",
+      "result_id": "62eb8aea-9389-4e85-b7f9-d3c60386ba14"
+    },
+    {
+      "claim_id": "35637718-70ae-4478-8b7f-ba5b518076a0",
+      "result_id": "62eb8aea-9389-4e85-b7f9-d3c60386ba14"
+    },
+    {
+      "claim_id": "3f5e3b81-ae69-4b75-a4c6-dad3854ba8b6",
+      "result_id": "62eb8aea-9389-4e85-b7f9-d3c60386ba14"
+    },
+    {
+      "claim_id": "e89b15c1-0fa1-4706-9a94-e2ebf08e713f",
+      "result_id": "62eb8aea-9389-4e85-b7f9-d3c60386ba14"
+    },
+    {
+      "claim_id": "cb0a476f-5c22-405e-91c6-c2e6f52a4e84",
+      "result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd"
+    },
+    {
+      "claim_id": "7d62a65e-3e49-4b8b-90cc-deb05ad18d21",
+      "result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd"
+    },
+    {
+      "claim_id": "dbce7b1a-37d9-4531-9a5f-a3491ce21351",
+      "result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd"
+    },
+    {
+      "claim_id": "d3c9e60b-4f47-4b6c-9a1f-d0228470b826",
+      "result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd"
+    },
+    {
+      "claim_id": "a6f052d7-33fe-4ea8-8caf-ec2f33770b0c",
+      "result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd"
+    },
+    {
+      "claim_id": "1ff0aea6-ad0a-4d8a-86c6-900a5ae452dc",
+      "result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd"
+    },
+    {
+      "claim_id": "57cd5a98-6d27-47c7-83ce-736bb7847668",
+      "result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd"
+    },
+    {
+      "claim_id": "49a2dc17-e860-4bfe-beff-9d37104905a7",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "7bba7f09-1737-4fa1-b606-edfc96fbf0c5",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "bf1a5530-189d-4d29-9ad1-295a64789b1e",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "bbf185e3-3fe7-4770-aac7-2e95669d71dd",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "c702023e-a14f-4264-a343-0995118ae472",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "1002abee-0114-4889-b8cf-f25fe1f7bed3",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "02b086c8-b299-445a-bb33-6041d3764ca7",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "a2c7367e-396d-4b14-bbef-e24574e0fe19",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "167c0a19-18c6-4d6d-83f2-7f32f2eec692",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "8f7cffa5-a828-4111-b0d6-fa3018375699",
+      "result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427"
+    },
+    {
+      "claim_id": "c0bdc576-b12f-476b-9fb5-74d2aec301a3",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "39b45f10-3992-471f-9116-780cac36614b",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "48fbe046-6d10-4b26-a112-97ccf34a2e75",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "04b85cf7-c60f-40bb-ad69-8fa78d7e3ae6",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "90b7c365-1fa6-41ae-a466-e254c2f7d4de",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "67346be3-c39c-4d71-9c23-41db3a83b861",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "778954fa-f4f2-4bac-bc4b-93639fd3c0ef",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "60ca5941-74eb-429b-82c2-87cf7c2e6d44",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "b2337a54-433c-4efb-b7cc-21c86d9550f8",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "c37fd12b-382d-4762-a523-10efb0434565",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "d4dc2d79-108f-4e97-9936-1598f12031e0",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "d8adad59-1f73-4b11-a21d-39d34e6bcc2e",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "310935e2-fc4c-4afb-82d6-e6ba892e2a35",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "a9e96521-0fb9-437f-ae4d-3de701255b80",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "6b29bdc4-64a4-4269-8314-db05dce6cf10",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "1be1e5f7-5419-426a-8393-fe235a6a8528",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "d69c5c0e-90d0-4b53-a457-e78b9c3ecdf8",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "2e3db3b1-5fe2-4553-89e6-714a8e360a20",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "49b5d887-1619-4cd5-8b8b-08a4e030f8c5",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "7465d049-4d24-499a-803c-249ab1b4320b",
+      "result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe"
+    },
+    {
+      "claim_id": "f51643d6-3259-4f7c-9c8c-b695098264af",
+      "result_id": "d6ee02af-2174-40ff-8f7f-9b3100d9323c"
+    },
+    {
+      "claim_id": "c569006e-6af8-464e-8978-148a92a3b5f9",
+      "result_id": "d6ee02af-2174-40ff-8f7f-9b3100d9323c"
+    },
+    {
+      "claim_id": "4fb9f987-eb83-48d8-9d03-8d639983f768",
+      "result_id": "d6ee02af-2174-40ff-8f7f-9b3100d9323c"
+    },
+    {
+      "claim_id": "2fc7963b-34ad-4f23-9470-a9d2f7a9780f",
+      "result_id": "6415bfd3-95e6-4d5e-ae10-797d6e8e88b2"
+    },
+    {
+      "claim_id": "0f9a75ec-868f-493a-b4a2-7513eca7fe3e",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "8a322564-0168-4799-8589-ae75c3ac1b2b",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "02011aad-57c8-4a2a-a1e7-82a442586f84",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "f767964b-aca6-4b82-94b9-ef6615d86a80",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "35382e98-333d-4d8e-95c8-f2ece660fd24",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "a4685536-571e-4e13-b803-9599c599b62b",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "cd8b3012-353c-42ec-91d7-6b895644af1c",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "9c9cb24e-599e-461d-ab35-ce8e9567a7fe",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "14da1145-80cb-471b-863c-d1d9644efb7f",
+      "result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8"
+    },
+    {
+      "claim_id": "ced0af11-2a05-4a1e-b647-290b97a1fbc2",
+      "result_id": "415d1b2c-4041-42d4-9f05-6330b79fc412"
+    },
+    {
+      "claim_id": "aa5c7575-1eb8-47f6-9eef-12b129f77598",
+      "result_id": "415d1b2c-4041-42d4-9f05-6330b79fc412"
+    },
+    {
+      "claim_id": "35ba8fb0-fb0f-41d3-bc77-ceec757a85ae",
+      "result_id": "415d1b2c-4041-42d4-9f05-6330b79fc412"
+    },
+    {
+      "claim_id": "ddcf18fd-d81d-4281-859c-f99bc247af61",
+      "result_id": "415d1b2c-4041-42d4-9f05-6330b79fc412"
+    },
+    {
+      "claim_id": "1bbc2542-6592-4df7-8daa-f329bf2cf1b1",
+      "result_id": "415d1b2c-4041-42d4-9f05-6330b79fc412"
+    },
+    {
+      "claim_id": "dc669c52-6b85-4cb1-9bef-eee8ca01b027",
+      "result_id": "415d1b2c-4041-42d4-9f05-6330b79fc412"
+    },
+    {
+      "claim_id": "15fcccb2-303c-429b-b712-a9d25b224c4f",
+      "result_id": "95ffbf0d-abf7-4ad2-8d59-0c67ca4a6088"
+    },
+    {
+      "claim_id": "35637718-70ae-4478-8b7f-ba5b518076a0",
+      "result_id": "95ffbf0d-abf7-4ad2-8d59-0c67ca4a6088"
+    },
+    {
+      "claim_id": "3f5e3b81-ae69-4b75-a4c6-dad3854ba8b6",
+      "result_id": "95ffbf0d-abf7-4ad2-8d59-0c67ca4a6088"
+    },
+    {
+      "claim_id": "e89b15c1-0fa1-4706-9a94-e2ebf08e713f",
+      "result_id": "95ffbf0d-abf7-4ad2-8d59-0c67ca4a6088"
+    },
+    {
+      "claim_id": "cb0a476f-5c22-405e-91c6-c2e6f52a4e84",
+      "result_id": "a2cb37ad-3f10-4244-bae5-2dc7fd78d0cc"
+    },
+    {
+      "claim_id": "7d62a65e-3e49-4b8b-90cc-deb05ad18d21",
+      "result_id": "a2cb37ad-3f10-4244-bae5-2dc7fd78d0cc"
+    },
+    {
+      "claim_id": "d3c9e60b-4f47-4b6c-9a1f-d0228470b826",
+      "result_id": "a2cb37ad-3f10-4244-bae5-2dc7fd78d0cc"
+    },
+    {
+      "claim_id": "a6f052d7-33fe-4ea8-8caf-ec2f33770b0c",
+      "result_id": "a2cb37ad-3f10-4244-bae5-2dc7fd78d0cc"
+    },
+    {
+      "claim_id": "071d044c-9618-47e2-9970-400db224c94e",
+      "result_id": "b78a564c-c0bb-4f6a-8cf5-ca2b2f22d36a"
+    },
+    {
+      "claim_id": "bb2f50c0-62f0-437f-a980-adb43c3720b9",
+      "result_id": "b78a564c-c0bb-4f6a-8cf5-ca2b2f22d36a"
+    },
+    {
+      "claim_id": "1bb07461-73d7-439f-b96e-96b75dda3f04",
+      "result_id": "b78a564c-c0bb-4f6a-8cf5-ca2b2f22d36a"
+    },
+    {
+      "claim_id": "f4544d9d-f25e-4506-a614-2ef7c413cc4f",
+      "result_id": "c11fb8ea-3eff-4804-a6e2-93b2700ecc21"
+    },
+    {
+      "claim_id": "b4363122-3ede-477b-b4e3-1f55ccc4a464",
+      "result_id": "c11fb8ea-3eff-4804-a6e2-93b2700ecc21"
+    },
+    {
+      "claim_id": "dcb3eec8-2a6f-4896-b651-66ea24ade568",
+      "result_id": "c11fb8ea-3eff-4804-a6e2-93b2700ecc21"
+    },
+    {
+      "claim_id": "f2a8735d-8eaa-4e9d-8675-91cf77e85059",
+      "result_id": "d06efd8c-140a-4da1-8017-4e68552c0acc"
+    },
+    {
+      "claim_id": "c59feae2-f86a-4b0e-ab69-a21d9820a4ef",
+      "result_id": "d06efd8c-140a-4da1-8017-4e68552c0acc"
+    },
+    {
+      "claim_id": "49a2dc17-e860-4bfe-beff-9d37104905a7",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "7bba7f09-1737-4fa1-b606-edfc96fbf0c5",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "bf1a5530-189d-4d29-9ad1-295a64789b1e",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "bbf185e3-3fe7-4770-aac7-2e95669d71dd",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "c702023e-a14f-4264-a343-0995118ae472",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "1002abee-0114-4889-b8cf-f25fe1f7bed3",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "02b086c8-b299-445a-bb33-6041d3764ca7",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "a2c7367e-396d-4b14-bbef-e24574e0fe19",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "167c0a19-18c6-4d6d-83f2-7f32f2eec692",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "8f7cffa5-a828-4111-b0d6-fa3018375699",
+      "result_id": "79825480-5015-4a52-935e-f3f73c01e91b"
+    },
+    {
+      "claim_id": "c0bdc576-b12f-476b-9fb5-74d2aec301a3",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "39b45f10-3992-471f-9116-780cac36614b",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "48fbe046-6d10-4b26-a112-97ccf34a2e75",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "04b85cf7-c60f-40bb-ad69-8fa78d7e3ae6",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "90b7c365-1fa6-41ae-a466-e254c2f7d4de",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "67346be3-c39c-4d71-9c23-41db3a83b861",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "778954fa-f4f2-4bac-bc4b-93639fd3c0ef",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "60ca5941-74eb-429b-82c2-87cf7c2e6d44",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "b2337a54-433c-4efb-b7cc-21c86d9550f8",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "c37fd12b-382d-4762-a523-10efb0434565",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "d4dc2d79-108f-4e97-9936-1598f12031e0",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "d8adad59-1f73-4b11-a21d-39d34e6bcc2e",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "310935e2-fc4c-4afb-82d6-e6ba892e2a35",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "a9e96521-0fb9-437f-ae4d-3de701255b80",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "6b29bdc4-64a4-4269-8314-db05dce6cf10",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "1be1e5f7-5419-426a-8393-fe235a6a8528",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "d69c5c0e-90d0-4b53-a457-e78b9c3ecdf8",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "2e3db3b1-5fe2-4553-89e6-714a8e360a20",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "49b5d887-1619-4cd5-8b8b-08a4e030f8c5",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "7465d049-4d24-499a-803c-249ab1b4320b",
+      "result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82"
+    },
+    {
+      "claim_id": "dbce7b1a-37d9-4531-9a5f-a3491ce21351",
+      "result_id": "13472c52-3f37-4b88-9943-e9509e2802c1"
+    },
+    {
+      "claim_id": "f51643d6-3259-4f7c-9c8c-b695098264af",
+      "result_id": "13472c52-3f37-4b88-9943-e9509e2802c1"
+    },
+    {
+      "claim_id": "2fc7963b-34ad-4f23-9470-a9d2f7a9780f",
+      "result_id": "13472c52-3f37-4b88-9943-e9509e2802c1"
+    },
+    {
+      "claim_id": "c569006e-6af8-464e-8978-148a92a3b5f9",
+      "result_id": "13472c52-3f37-4b88-9943-e9509e2802c1"
+    },
+    {
+      "claim_id": "4fb9f987-eb83-48d8-9d03-8d639983f768",
+      "result_id": "13472c52-3f37-4b88-9943-e9509e2802c1"
+    },
+    {
+      "claim_id": "1ff0aea6-ad0a-4d8a-86c6-900a5ae452dc",
+      "result_id": "13472c52-3f37-4b88-9943-e9509e2802c1"
+    },
+    {
+      "claim_id": "57cd5a98-6d27-47c7-83ce-736bb7847668",
+      "result_id": "13472c52-3f37-4b88-9943-e9509e2802c1"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "4f523041-b1ed-4884-8cdc-3f90b6281e5d",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "62eb8aea-9389-4e85-b7f9-d3c60386ba14",
+      "peer_result_id": "95ffbf0d-abf7-4ad2-8d59-0c67ca4a6088",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on cellular-level mechanisms (C7, C26-C28). Both evaluations support the two-photon calcium imaging findings showing distinct neuronal ensembles, sequential tiling, and shifts in neuronal tuning after learning. OpenEval emphasizes mechanistic validation of bulk photometry; peer reviewers highlight the shift in temporal activity as a potential mechanism linking extended motivation to reward maximization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "316b06ca-60f2-414f-bedf-2340f11cdd15",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0bfaf526-16d1-4d92-b50b-dd72133f0427",
+      "peer_result_id": "79825480-5015-4a52-935e-f3f73c01e91b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on literature-based contextual claims (C30-C39). Both evaluations support these background claims about PFC lesions, ACC function, OFC function, and goal-directed learning. OpenEval notes they align with current field understanding; peer reviewers accept the theoretical framework while highlighting the novelty of the current work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "e5f9aad2-7d21-412d-9419-cd4b9104e0ea",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "9ff4886c-81b3-4691-b4c0-f97c018e07fe",
+      "peer_result_id": "bf6debaf-18d2-4b7f-9cff-deb7789ded82",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodological claims (C40-C59). Both evaluations fully support the comprehensive methodological details including equipment specifications, behavioral protocols, analysis methods, and intervention parameters. OpenEval describes them as internally consistent and reproducible; peer reviewers explicitly endorse methods as 'state-of-the-art.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "745d51a8-dee8-4aeb-a716-60dbd3b6a6af",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c",
+      "peer_result_id": "415d1b2c-4041-42d4-9f05-6330b79fc412",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on OFC\u2192ACC ramp findings (C5-C6, C22-C25). Both evaluations support the projection-specific photometry showing ramping patterns across trial sequences. OpenEval emphasizes the Learner vs Non-Learner comparison and pathway specificity; peer reviewers highlight the continuous ramping in 'fast learner' subgroup as an interesting concept for implementing extended motivational signals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "a0efc52d-75d6-4bd6-b0f8-3042bcc5fbf8",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5",
+      "peer_result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on ACC motivation-related signals (C1-C4, C10-C11). Both evaluations support photometry recordings, behavioral correlations, and causal manipulations showing ACC's role in learning. OpenEval includes C9 and emphasizes temporal precedence and persistence across unrewarded trials; peer reviewers include C14-C16 and describe evidence as 'compelling' and 'convincing.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "3d66fe04-d187-4c9e-a089-53a9c2ec9c0d",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd",
+      "peer_result_id": "a2cb37ad-3f10-4244-bae5-2dc7fd78d0cc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mechanistic interpretation (C8, C29, C62, C66). Both evaluations support the optogenetic inhibition showing context-dependent impairments and the mechanistic model. OpenEval includes C60, C67-C68 and notes some aspects remain interpretive; peer reviewers describe the evidence as 'convincing' and highlight the contribution to understanding how brain areas translate motivation into action.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "40e80db9-ed3b-4626-84b4-c54a37cd589c",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f",
+      "peer_result_id": "c11fb8ea-3eff-4804-a6e2-93b2700ecc21",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on causal manipulation findings (C17-C19). Both evaluations support the task-specificity and critical period requirements shown through optogenetic inhibition. OpenEval includes broader temporal dissociation and learning correlation claims (C12-C16); peer reviewers focus on the causal role findings and describe the combination of recording and inhibition experiments as 'impressive' and 'generally accepted.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "b0ea7ef2-ce74-4dcf-9a20-bd9a7ef2fbf6",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "d6ee02af-2174-40ff-8f7f-9b3100d9323c",
+      "peer_result_id": "13472c52-3f37-4b88-9943-e9509e2802c1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluation of speculative claims (C61, C64-C65). OpenEval rates these as UNCERTAIN, explicitly noting they are speculative hypotheses lacking direct experimental support. Peer reviewers rate them as SUPPORTED, accepting the interpretations without challenge and noting the findings 'will be valuable for further research,' though one reviewer suggests 'theoretical analysis seems to be incomplete.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "869d7b2f-f64b-4444-b711-74bfb8c1ca64",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ee06ee28-d469-4b31-b11e-47542fbf948c",
+      "peer_result_id": "d06efd8c-140a-4da1-8017-4e68552c0acc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address projection-specific findings. OpenEval R3 covers broader OFC\u2192ACC ramp claims (C5-C6, C20-C25); peer R7 specifically addresses comparative projection findings (C20-C21). Both support the projection-specific analyses, with peer reviewers noting the 'combination of investigation of ACC neurons and of OFC regions projecting to ACC are very impressive.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "96f8942e-eca0-44e1-9a72-7903c944d346",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f",
+      "peer_result_id": "b78a564c-c0bb-4f6a-8cf5-ca2b2f22d36a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on behavioral findings (C12-C13). OpenEval R2 covers temporal dissociation and learning correlations (C12-C19); peer R5 addresses behavioral measures (C9, C12-C13). Both support these findings, with peer reviewers noting the task is 'appropriate to identify correlates of relevant cognitive and behavioural variables.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "4a3cf263-a8fc-4e35-8898-af172bb5e017",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "6dc3c084-6cf7-4346-9226-5f992cac064f",
+      "peer_result_id": "5d554101-85ed-47fa-92a4-077f85bd5da8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on learning correlations (C14-C16). OpenEval R2 emphasizes temporal dissociation and critical period (C12-C19); peer R1 focuses on ACC motivation signals including learning correlations (C1-C4, C10-C11, C14-C16). Both support the temporal precedence of neural activity and its correlation with learning.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "396cd9c6-0222-45a6-a123-be6746f331e2",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "6415bfd3-95e6-4d5e-ae10-797d6e8e88b2",
+      "peer_result_id": "13472c52-3f37-4b88-9943-e9509e2802c1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on foraging analogy (C63). OpenEval R9 supports the conceptual parallel to foraging behavior as reasonable but interpretive; peer R10 accepts this interpretation along with other conceptual claims. Both evaluations support the foraging framework, though OpenEval notes it remains an interpretive framework rather than directly tested.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "0270c041-bab6-4513-b1e8-2087660133d7",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "38411fa1-d8ca-45a4-aecf-92a82e4edddd",
+      "peer_result_id": "13472c52-3f37-4b88-9943-e9509e2802c1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on interpretive claims (C60, C67-C68). OpenEval R5 includes mechanistic model claims (C8, C29, C60, C62, C66-C68) and rates them as SUPPORTED despite noting some aspects are interpretive; peer R10 covers broader interpretive claims (C60-C61, C63-C65, C67-C68) and accepts them as SUPPORTED, noting they provide 'a promising concept' though theoretical analysis could be more extensive.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    },
+    {
+      "id": "5ca37af3-18f6-4862-9978-c575b716b543",
+      "submission_id": "42ed95a8-e00c-48d5-a7ad-ae0fcb8ec5d7",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "6a40f5f7-d74f-4c29-bfb7-80e986201df5",
+      "peer_result_id": "b78a564c-c0bb-4f6a-8cf5-ca2b2f22d36a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on behavioral correlation (C9). OpenEval R1 includes behavioral correlations as part of broader ACC motivation evidence (C1-C4, C9-C11); peer R5 addresses behavioral measures (C9, C12-C13) as part of task validation. Both support the behavioral findings without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:21:58.932592Z"
+    }
+  ]
+}

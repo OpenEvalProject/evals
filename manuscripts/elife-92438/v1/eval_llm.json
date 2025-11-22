@@ -2,6 +2,141 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C14",
+      "C15",
+      "C18",
+      "C94"
+    ],
+    "result": "An unrelated amphipathic helix can functionally substitute for the native C-terminal domain (CTD) of CpxII, fully restoring both the flash-evoked exocytotic response and the ability to prevent premature secretion. This demonstrates that the amphipathic character of the helix, rather than specific amino acid sequences, is the key determinant for CpxII's inhibitory function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C18, and C94 are strongly supported by experimental data in Figure 1B-F showing that the CpxII 1-115 amp helix mutant (with an unrelated amphipathic helix replacing the native sequence) fully rescues both synchronized exocytosis and prevention of premature secretion. This is a surprising and important finding that challenges prior assumptions about sequence specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C31",
+      "C95"
+    ],
+    "result": "The hydrophobic face of the amphipathic helix at the C-terminus of CpxII is essential for its inhibitory function. Substitution of hydrophobic leucine residues (L124, L128, L117, L121) with charged glutamate residues abolishes the clamping function, while replacement with hydrophobic tryptophan residues preserves it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23, C25, C31, and C95 are well-supported by systematic mutagenesis experiments shown in Figures 2 and Figure 2\u2014figure supplement 2. The data demonstrate that preserving the hydrophobic character of the amphipathic helix is necessary and sufficient for preventing premature exocytosis, with consistent results across multiple leucine positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "The ability of CpxII CTD mutants to prevent premature exocytosis correlates with their ability to bind SNARE proteins (Syntaxin 1A, SynaptobrevinII) and Synaptotagmin I. Loss-of-function mutants (L124E-L128E) show abolished binding, while functional mutants (L124W-L128W, amphipathic helix replacement) preserve or enhance binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C40 are supported by GST pull-down experiments in Figure 3A-B showing differential binding patterns that correlate with functional phenotypes. However, the correlation does not establish causation, and the biochemical experiments use brain extracts rather than purified proteins, which could introduce confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "The glutamate cluster (amino acids 108-114) upstream of the amphipathic helix is required for rapid exocytosis timing but not for preventing premature secretion. The CpxII E-A mutant (glutamate-to-alanine substitution) maintains clamping function but exhibits slower fusion kinetics and increased secretory delay, suggesting the glutamate cluster facilitates SytI-mediated release of the molecular clamp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 and C50 are supported by experimental data in Figure 4 showing that the E-A mutant has a unique phenotype: preserved clamping but impaired kinetics. The interpretation that the glutamate cluster serves as a SytI contact site (C50) is speculative but reasonable given the functional data and prior biochemical evidence (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C65"
+    ],
+    "result": "SytI function is critically dependent on CpxII. Loss of SytI reduces the exocytotic burst and slows kinetics, but additional loss of SytI in CpxII knockout cells does not further aggravate the phenotype. The CpxII-SytVII double knockout phenotype resembles the SytI-SytVII double knockout, indicating CpxII serves as a gatekeeper for SytI function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C65 are supported by genetic epistasis experiments in Figure 5A-F showing non-additive effects of CpxII and SytI deficiencies. The comparison with SytVII double knockouts (C63-C65) provides strong evidence for the gatekeeper model. The logic is sound and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C96"
+    ],
+    "result": "The N-terminal domain (NTD) of CpxII specifically cooperates with SytI, but not SytVII, to accelerate synchronous exocytosis. Overexpression of CpxII or CpxII \u0394N has no effect on exocytosis kinetics in SytI knockout cells, but CpxII \u0394N slows secretion in SytVII knockout cells, demonstrating that the NTD directly regulates SytI rather than acting as a molecular switch between Syt isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 and C96 are supported by overexpression experiments in Figure 6A-J showing differential effects of CpxII \u0394N in SytI versus SytVII knockout backgrounds. The data clearly demonstrate SytI-specific cooperation. The clamping function (C76-C77) remains independent of Syt isoforms, supporting the model of separable NTD and CTD functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C97",
+      "C98"
+    ],
+    "result": "CpxII with its NTD can compensate for the functional deficiencies of the SytI R233Q Ca\u00b2\u207a-binding mutant. Overexpression of wild-type CpxII rescues the slow release kinetics of R233Q mutant cells to wild-type levels, while the CpxII \u0394N mutant further slows release, demonstrating that the NTD facilitates SytI-dependent triggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C83, C97, and C98 are supported by experiments in Figure 7 showing bidirectional rescue/impairment of the R233Q phenotype by CpxII WT versus \u0394N. This is a clever genetic approach that provides strong evidence for NTD-SytI functional interaction. The rescue is quantitatively significant and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C99"
+    ],
+    "result": "The CpxII NTD regulates mechanisms governed by the forward rate of Ca\u00b2\u207a binding to SytI. In calcium ramp experiments, CpxII WT shifts the half-maximal concentration for pool depletion (P50) to lower [Ca\u00b2\u207a]\u1d62 while CpxII \u0394N increases it, with similar Hill coefficients but different KD values, indicating that the NTD and Ca\u00b2\u207a binding to SytI act synergistically to accelerate exocytosis timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 and C99 are supported by calcium ramp experiments in Figure 8 showing systematic shifts in Ca\u00b2\u207a sensitivity. The Hill equation analysis (C89) provides quantitative support for unchanged cooperativity but altered affinity. The interpretation that NTD affects forward rate (C90, C99) is reasonable given the comparison between flash and ramp protocols, though the distinction between forward and backward rates cannot be definitively established from these experiments alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
       "C2",
       "C3",
       "C4",
@@ -9,252 +144,123 @@
       "C6",
       "C7",
       "C8",
-      "C9"
+      "C9",
+      "C91",
+      "C92",
+      "C93"
     ],
-    "result": "CpxII knockout strongly reduces Ca2+-triggered synchronized vesicle fusion and increases asynchronous exocytosis during priming. Wild-type CpxII expression fully restores synchronized exocytosis and prevents premature secretion. CpxII loss affects both RRP and SRP components similarly, slows RRP kinetics, and increases secretory delay.",
+    "result": "CpxII knockout strongly reduces Ca\u00b2\u207a-triggered synchronized vesicle fusion and increases asynchronous exocytosis during the priming phase. Wild-type CpxII expression fully restores synchronized release and prevents premature granule loss. CpxII affects both RRP and SRP components similarly and also accelerates exocytosis timing by reducing the time constant and secretory delay.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2-C9 are well-supported by experimental data shown in Figure 1B-F. The capacitance measurements demonstrate clear phenotypic differences between CpxII ko and rescue conditions, with appropriate controls and quantification of multiple exocytosis parameters. The dual role of CpxII in preventing premature secretion and accelerating exocytosis timing is convincingly demonstrated.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R2",
-    "claim_ids": [
-      "C10",
-      "C11",
-      "C12",
-      "C13",
-      "C14",
-      "C15",
-      "C17"
-    ],
-    "result": "The amphipathic helix at the C-terminus of CpxII (amino acids 115-134) is a key determinant for preventing premature secretion. Truncation of this helix reduces synchronized exocytosis and elevates premature secretion, but replacement with an unrelated amphipathic helix fully restores CpxII function.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10-C17 are strongly supported by experimental data in Figure 1. The functional substitution of the native amphipathic helix with an unrelated amphipathic sequence (C14-C15) provides compelling evidence that amphipathicity per se, rather than specific sequence, is critical for the clamping function. This is a key mechanistic insight supported by appropriate controls.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
-      "C18",
-      "C19",
-      "C20",
-      "C21",
-      "C22",
-      "C23",
-      "C24",
-      "C30"
-    ],
-    "result": "The hydrophobic face of the CpxII CTD amphipathic helix is essential for its inhibitory function. Substituting hydrophobic leucine residues (L124, L128) with charged glutamate residues abolishes clamping function, while substitution with hydrophobic tryptophan residues preserves it. Similar results were obtained for L117 and L121 mutations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C18-C24 and C30 are well-supported by systematic mutagenesis experiments shown in Figures 2 and supplementary figures. The contrasting effects of glutamate versus tryptophan substitutions at multiple positions (L124/L128 and L117/L121) provide strong evidence that hydrophobicity, not specific residues, is critical. The lack of kinetic changes (C23) appropriately controls for effects on the NTD function.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C25",
-      "C26",
-      "C27",
-      "C28",
-      "C29"
-    ],
-    "result": "The CpxII CTD shares structural similarity with the SNAP25-SN1 domain, and CpxII-SNAP25-SN1 chimeras restore function. However, point mutations on the polar side of the amphipathic helix (D118A, Q129A, D130A, K133A, D118K-D130K) show no obvious phenotype.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C25-C29 are supported by prior work (C25-C26, citations) and new experimental data (C27-C29, Figure 2 supplements 3-4). The lack of phenotype for polar side mutations contrasts with the critical role of the hydrophobic face, strengthening the conclusion about hydrophobicity. However, the negative results should be interpreted cautiously as they may reflect functional redundancy or compensatory mechanisms.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C36"
-    ],
-    "result": "GST-CpxII CTD pulls down SytI, Syntaxin 1A, and SynaptobrevinII from brain extracts. The L124E-L128E mutation abolishes these interactions, while the L124W-L128W mutation preserves or enhances them. The amphipathic helix replacement mutant also maintains binding. All mutants show normal membrane localization.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C31-C36 are supported by biochemical pull-down experiments (Figure 3A-B) and immunofluorescence data (Figure 3 supplements 1-2). The correlation between binding capacity and functional rescue (C36) is compelling. However, the pull-down assays use brain extracts rather than purified proteins, which may introduce complexity. The inference that these interactions are prerequisites for clamping (C36) is reasonable but not definitively proven by correlation alone.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C37",
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C42",
-      "C43"
-    ],
-    "result": "The glutamate cluster (amino acids 108-114) upstream of the amphipathic helix is conserved and may serve as a SytI interaction site. The CpxII E-A mutant (glutamates replaced with alanines) reduces synchronized exocytosis, slows fusion kinetics, and increases secretory delay, but still suppresses premature exocytosis. This suggests the glutamate cluster is required for SytI to release the molecular clamp.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C37-C43 are supported by experimental data in Figure 4. The E-A mutant shows a distinct phenotype from complete CTD truncation (C42), suggesting a specific role for the glutamate cluster in exocytosis timing rather than clamping. However, C43 is speculative and represents a mechanistic hypothesis rather than a proven mechanism. The claim appropriately acknowledges this uncertainty ('may be required').",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48"
-    ],
-    "result": "Loss of SytI reduces exocytotic burst size (specifically RRP) and prolongs SRP kinetics and secretory delay. Additional loss of SytI in CpxII knockout cells does not further aggravate the phenotype, suggesting all SytI functions depend on CpxII. SytI deficiency does not alter premature secretion.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C44-C48 are supported by experimental data in Figure 5A-F and consistent with prior work (citations). The lack of additive effects in the double knockout (C46) provides strong evidence for functional interdependence. However, the inference that 'all SytI functions' depend on CpxII (C47) is somewhat overstated\u2014the data show this for the measured parameters but cannot exclude other unmeasured SytI functions.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C49",
-      "C50",
-      "C51"
-    ],
-    "result": "Changes in CpxII expression systematically alter premature secretion, which inversely correlates with exocytotic burst size. This relationship holds in the absence of SytI, indicating CpxII hinders premature secretion in a SytI-independent manner.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C49-C51 are supported by experimental data in Figure 5 supplement 1. The inverse correlation between premature secretion and burst size is clearly demonstrated, and the persistence of this relationship in SytI knockout cells (C51) provides strong evidence for SytI-independence of the clamping function. The linear regression analysis (R\u00b2=0.99) supports the systematic relationship.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C58"
-    ],
-    "result": "Loss of SytVII reduces exocytotic burst size (both RRP and SRP) and slightly accelerates RRP kinetics. Deletion of SytVII in CpxII knockout background almost completely eliminates the exocytotic burst, resembling the SytI/SytVII double knockout phenotype. This supports the view that CpxII serves as a gatekeeper of SytI function.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C58 are supported by experimental data in Figure 5G-J and Figure 5 supplement 2. The similarity between CpxII/SytVII and SytI/SytVII double knockout phenotypes (C56) provides strong evidence for the gatekeeper hypothesis (C57). The comparison to prior work (Schonn et al., 2008) strengthens the interpretation. The data convincingly demonstrate differential interactions between CpxII and the two Syt isoforms.",
+    "evaluation": "Claims C2-C9 and C91-C93 are supported by capacitance measurements in Figure 1B-F showing clear phenotypic differences between CpxII ko, rescue, and wild-type conditions. The dual function (clamping and acceleration) is well-documented. These are foundational observations that establish the experimental system.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C59",
-      "C60",
-      "C61"
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
     ],
-    "result": "SytVII deficiency strongly reduces premature secretion compared to wild-type or CpxII knockout cells, profoundly altering exocytotic rates at submicromolar calcium. While SytI function is critically dependent on CpxII, SytVII appears to act independently, likely in Ca2+-dependent priming.",
+    "result": "CpxII inhibits premature secretion in a SytI-independent manner. SytI deficiency does not alter premature secretion compared to wild-type cells, and changes in CpxII expression systematically alter premature secretion in both the presence and absence of SytI, with an inverse correlation to exocytotic burst size.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C59-C61 are supported by experimental data in Figures 5K-L and 6. The differential effects of SytI versus SytVII loss on premature secretion are clearly demonstrated. The inference about SytVII's role in priming (C61) is supported by citation to Tawfik et al., 2021 and is consistent with the data, though the mechanism is not directly tested in this study.",
+    "evaluation": "Claims C55-C59 are supported by data in Figure 5E-F and Figure 5\u2014figure supplement 1 showing that premature secretion is controlled by CpxII independently of SytI. The inverse correlation between premature secretion and burst size (C56) provides mechanistic insight. This separates the clamping function from the SytI-dependent acceleration function.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
+      "C60",
+      "C61",
       "C62",
       "C63",
-      "C64",
-      "C65",
-      "C66",
       "C67",
-      "C68"
+      "C68",
+      "C69",
+      "C70"
     ],
-    "result": "Overexpression of CpxII or CpxII \u0394N has no effect on exocytosis kinetics in SytI knockout cells, demonstrating CpxII requires SytI to accelerate exocytosis. In SytVII knockout cells, CpxII \u0394N slows secretion as in wild-type cells. Both CpxII and CpxII \u0394N hinder premature exocytosis independent of Syt isoform, indicating CpxII hinders SNARE action rather than blocking calcium sensors. CpxII NTD and SytI are functionally interdependent, with CpxII NTD directly regulating SytI.",
+    "result": "SytVII acts independently of CpxII in regulating exocytosis. Loss of SytVII reduces the exocytotic burst and strongly reduces premature secretion. The CpxII-SytVII double knockout nearly eliminates the burst, but SytVII deficiency reduces premature secretion even in the absence of CpxII, indicating SytVII functions autonomously, likely in Ca\u00b2\u207a-dependent priming.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C62-C68 are supported by experimental data in Figure 6A-L. The differential effects in SytI versus SytVII knockout backgrounds provide strong evidence for specific CpxII-SytI interaction in the activation function. The preservation of clamping function across conditions (C65) appropriately separates the two functions of CpxII. The inferences about functional interdependence (C67) and direct regulation (C68) are well-supported by the genetic epistasis experiments.",
+    "evaluation": "Claims C60-C63, C67-C70 are supported by genetic experiments in Figure 5G-L showing additive effects of CpxII and SytVII deficiencies, contrasting with the non-additive effects of CpxII and SytI. The interpretation that SytVII acts in priming (C70) is speculative but supported by citation to Tawfik et al., 2021. The data clearly distinguish SytVII from SytI in terms of CpxII dependence.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74"
+      "C12",
+      "C13",
+      "C10",
+      "C11"
     ],
-    "result": "The SytI R233Q mutation slows exocytosis rate, prolongs secretory delay, and enhances burst size. Overexpression of CpxII \u0394N in R233Q cells further slows release and restores burst size to wild-type levels, while wild-type CpxII overexpression accelerates kinetics to wild-type levels. Both CpxII variants suppress premature exocytosis in R233Q cells, demonstrating CpxII with its NTD can compensate for R233Q functional deficiencies.",
+    "result": "The inhibitory function of CpxII resides within the last 34 amino acids of its CTD, which contains an amphipathic helix and an upstream glutamate cluster. Truncation of the amphipathic helix (CpxII 1-115) reduces the RRP component and elevates premature secretion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C74 are supported by experimental data in Figure 7A-F and consistent with prior work (citations to S\u00f8rensen et al., 2003; Dhara et al., 2014). The rescue of the R233Q phenotype by wild-type CpxII (C72) provides compelling evidence for functional compensation. The opposite effects of CpxII versus CpxII \u0394N (C71-C72) strengthen the conclusion about NTD function. The data convincingly demonstrate that CpxII can modulate the functional consequences of altered Ca2+ binding kinetics.",
+    "evaluation": "Claims C10-C13 are supported by data in Figure 1 and prior work (C10 cites Makke et al., 2018). The truncation phenotype establishes the importance of the CTD region. This provides the foundation for subsequent structure-function analysis.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C75",
-      "C76"
+      "C28",
+      "C29",
+      "C30"
     ],
-    "result": "Exocytosis timing in chromaffin cells is largely determined by Ca2+ binding kinetics to SytI. The opposite effects of wild-type CpxII and CpxII \u0394N on secretion kinetics indicate the CpxII NTD accelerates mechanisms regulated by Ca2+-binding kinetics of SytI.",
+    "result": "Point mutations on the polar side of the amphipathic helix (D118A, Q129A, D130A, K133A, D118K-D130K) show no obvious phenotype in either synchronous or asynchronous secretion, despite sequence similarity with SNAP-25-SN1.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C75-C76 are supported by citations to established work (Voets et al., 2001; S\u00f8rensen et al., 2003) and by inference from the experimental data. The logic connecting Ca2+ binding kinetics to the observed effects is sound. However, C76 represents an inference about mechanism rather than direct demonstration\u2014the data show correlation between CpxII NTD and altered kinetics but do not directly prove the NTD acts on Ca2+ binding per se versus downstream steps.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C28-C30 are supported by data in Figure 2\u2014figure supplements 3 and 4 showing that polar face mutations do not affect function. This negative result is important as it demonstrates specificity for the hydrophobic face and argues against a simple electrostatic mechanism.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C77",
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82"
+      "C38",
+      "C39"
     ],
-    "result": "In calcium ramp experiments with SytI R233Q cells, wild-type CpxII overexpression shifts the half-maximal concentration for pool depletion (P50) to lower calcium, while CpxII \u0394N increases it. Fusion rates as a function of calcium are shifted with similar slopes, indicating unchanged cooperativity. Hill equation fits show similar coefficients but different KD values. The NTD of CpxII and the forward rate of Ca2+ binding to SytI act synergistically to accelerate exocytosis timing.",
+    "result": "CpxII mutant variants show similar expression levels and co-localize with SybII like the wild-type protein, indicating unperturbed sorting to chromaffin granules and lipid binding.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77-C82 are supported by experimental data in Figure 8A-D. The calcium ramp experiments provide important complementary evidence to the flash experiments. The Hill equation analysis (C81) is appropriate and shows similar cooperativity with shifted affinity. However, the inference about synergistic action (C82) and specifically about 'forward rate' is somewhat speculative\u2014the ramp experiments measure quasi-steady-state conditions and cannot definitively distinguish forward versus backward rates, as the authors acknowledge in the text.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C38-C39 are supported by immunofluorescence data in Figure 3\u2014figure supplements 1 and 2. These are important control experiments that rule out expression level or localization artifacts as explanations for functional differences between mutants.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91"
+      "C16",
+      "C17",
+      "C24"
     ],
-    "result": "The hydrophobic face of the amphipathic helix at the C-terminus of CpxII binds SNARE proteins, prevents premature secretion, and allows vesicles to accumulate in a release-ready state. An unrelated amphipathic helix functionally substitutes for the CTD, while amino acid substitutions on the hydrophobic side compromise arrest of the pre-fusion intermediate. The NTD of CpxII specifically cooperates with SytI but not SytVII. CpxII expression rescues slow release kinetics of the SytI R233Q mutant, while the N-terminally truncated variant further delays it, indicating the CpxII NTD regulates mechanisms governed by the forward rate of Ca2+ binding to SytI.",
+    "result": "The CpxII NTD determines stimulus-secretion coupling. Both RRP secretion kinetics and secretory delay are fully rescued by CpxII 1-115 and CpxII 1-115 amp helix mutants, and no changes in kinetics are detected for L124E-L128E or L124W-L128W mutants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C83-C91 represent summary claims from the abstract that are supported by the collective experimental evidence presented in the manuscript. These claims accurately reflect the major findings demonstrated through multiple complementary approaches (mutagenesis, biochemistry, electrophysiology, genetic epistasis). The claims appropriately distinguish between demonstrated effects (binding, functional rescue) and mechanistic inferences (regulation of Ca2+ binding kinetics).",
+    "evaluation": "Claims C16-C17 and C24 are supported by data in Figures 1D and Figure 2\u2014figure supplement 1, along with citations to prior work. These results establish the functional separation between NTD (kinetics) and CTD (clamping) domains, which is central to the paper's model.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R16",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "CpxII expression in SytVII knockout cells enhances exocytosis like in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by data in Figure 5\u2014figure supplement 2 showing that CpxII can boost exocytosis in the absence of SytVII. This complements the main finding that CpxII requires SytI for its acceleration function, demonstrating specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
     "claim_ids": [
       "C1"
     ],
@@ -262,19 +268,128 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C1 is supported by citation to Cai et al., 2008. This is an established fact from prior work that provides important context for the experimental system. The claim is appropriately attributed to the original source.",
+    "evaluation": "Claim C1 is supported by citation to Cai et al., 2008. This establishes the experimental system and justifies focusing on CpxII. While not demonstrated in the current manuscript, the citation provides adequate support.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R17",
+    "result_id": "R18",
     "claim_ids": [
-      "C16"
+      "C26",
+      "C27"
     ],
-    "result": "The CpxII NTD determines the stimulus-secretion coupling.",
+    "result": "The CpxII CTD shares structural similarity with the C-terminal half of SNAP25-SN1, and CpxII-SNAP25-SN1 chimeras fully restore function in CpxII-deficient cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C16 is supported by citations to prior work (Dhara et al., 2014; Makke et al., 2018). This established finding provides important context for interpreting the rescue of kinetic parameters by CTD mutants in the current study. The claim is appropriately attributed to prior work.",
+    "evaluation": "Claims C26-C27 are supported by citation to Makke et al., 2018. This prior work provides important context for the current findings, particularly the surprising result that an unrelated amphipathic helix can substitute for the CTD.",
     "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The CpxII CTD transiently obstructs SNARE complex assembly, and may compete with SNAP25-SN1 for binding to SNARE partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by citation to Makke et al., 2018. Claim C33 is speculative but reasonable given the structural similarity and functional data. The current manuscript's finding that an unrelated amphipathic helix works suggests the mechanism may be more general than specific competition with SNAP25.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The region upstream of the amphipathic helix contains a conserved cluster of glutamate residues (aa 108-114) that may serve as a SytI interaction site according to prior biochemical experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by sequence analysis and citation to Tokumaru et al., 2008. This provides the rationale for testing the E-A mutant. The conservation across species (C42) strengthens the functional importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "No comparable slowing of exocytosis was observed when both the glutamate cluster and amphipathic helix were truncated (CpxII 1-100 mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by citation to Makke et al., 2018. This comparison is important for interpreting the E-A mutant phenotype, as it suggests the glutamate cluster specifically affects release of the CTD clamp rather than having an independent function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "N-terminally truncated complexin variants fail to restore normal release rates in chromaffin cells and reduce EPSC amplitude in hippocampal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by citations to prior work (Dhara et al., 2014; Xue et al., 2009; Xue et al., 2010). This establishes the importance of the NTD across different systems and provides context for the current mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Exocytosis timing in chromaffin cells is largely determined by the kinetics of Ca\u00b2\u207a binding to SytI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by citations to Voets et al., 2001 and S\u00f8rensen et al., 2003. This established principle provides the framework for interpreting how CpxII NTD affects exocytosis timing through modulation of SytI function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background and prior work establishing that Complexin determines magnitude and kinetics of synchronized secretion, prevents premature fusion, and has both clamping and fusion-promoting functions mediated by different domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 provide essential background supported by extensive citations. Notably, C106 states that the CTD cannot be replaced by an unrelated helix (citing Makke et al., 2018), which is contradicted by the current manuscript's findings (C14-C15, C94). This represents a significant advance over prior understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "CpxII WT and CpxII \u0394N show undiminished suppression of premature exocytosis in SytI R233Q knockin cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by data in Figure 7E-F. This control experiment confirms that the clamping function is independent of the NTD and unaffected by the R233Q mutation, supporting the model of separable CTD and NTD functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The NTD of CpxII accelerates mechanisms regulated by the Ca\u00b2\u207a-binding kinetics of SytI, as indicated by opposite effects of WT and \u0394N mutant on secretion kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is an inference from the experimental data showing opposite effects of CpxII WT versus \u0394N. This interpretation is well-supported by the systematic analysis across multiple experimental paradigms (flash, ramp, R233Q rescue).",
+    "result_type": "MAJOR"
   }
 ]

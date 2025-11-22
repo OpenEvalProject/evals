@@ -3,21 +3,23 @@
     "result_id": "R1",
     "claim_ids": [
       "C1",
-      "C15",
+      "C11",
+      "C12",
+      "C13",
       "C16",
       "C17",
+      "C18",
+      "C19",
       "C20",
       "C21",
       "C22",
-      "C23",
-      "C24",
-      "C25"
+      "C23"
     ],
-    "result": "All tested cell types (HEK293T-PalmGFP, HEK293, HepG2, HT29, HL1, BMMCs) and tissues (mouse kidney and liver) released multivesicular large EVs (MV-lEVs) that undergo budding, secretion, and extracellular rupture of their limiting membrane, releasing intraluminal vesicles (ILVs).",
+    "result": "All tested cell types (HEK293T-PalmGFP, HEK293, HepG2, HT29, HL1, BMMCs, mouse kidney, and mouse liver) released multivesicular large EVs (MV-lEVs) through budding and secretion, with evidence of extracellular rupture of the limiting membrane and release of ILVs observed in all cases.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C15-C17, C20-C25 are supported by extensive TEM imaging across multiple cell lines and tissue types showing consistent MV-lEV budding, secretion, and rupture. The in situ fixation methodology preserves the structures in their native state, and the phenomenon is documented across diverse biological contexts including in vivo tissues.",
+    "evaluation": "Claims C1, C11-C13, C16-C23 collectively demonstrate through extensive TEM imaging across multiple cell types and tissues that MV-lEV release is a general phenomenon. The evidence includes budding, secretion, and rupture phases documented in cultured cells and in vivo tissue sections, providing strong morphological support for the universality of this mechanism.",
     "result_type": "MAJOR"
   },
   {
@@ -25,26 +27,46 @@
     "claim_ids": [
       "C2",
       "C7",
-      "C8",
-      "C18",
-      "C19",
+      "C13",
+      "C14",
+      "C15",
+      "C41",
+      "C42",
       "C43",
-      "C44",
-      "C45",
-      "C58",
-      "C104"
+      "C56",
+      "C99"
     ],
-    "result": "The 'torn bag mechanism' describes a novel sEV release pathway where the limiting membrane of MV-lEVs spontaneously ruptures extracellularly, releasing ILVs within minutes (40-260 seconds), distinct from MVB/amphisome exocytosis and plasma membrane-derived ectosome release.",
+    "result": "Upon spontaneous rupture of the limiting membrane of MV-lEVs, ILVs escape to the extracellular environment by a 'torn bag mechanism' that is distinct from exocytosis of MVBs/amphisomes and plasma membrane-derived sEV release, with the process completing within approximately 5 minutes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C7-C8, C18-C19, C43-C45, C58, C104 are well-supported by converging evidence from TEM showing ruptured MV-lEVs, live-cell SIM2 imaging documenting the temporal dynamics (40-260s), and the demonstration that this is not a fixation artifact. The mechanism is clearly distinguished from previously described pathways through both morphological and temporal characteristics.",
+    "evaluation": "Claims C2, C7, C13-C15, C41-C43, C56, C99 provide converging evidence from TEM and live-cell imaging demonstrating spontaneous membrane rupture and ILV release. The live-cell imaging (C41-C43) rules out fixation artifacts and provides temporal dynamics (40s-260s), while TEM shows the morphological basis. The mechanistic distinction from other pathways is well-supported by the data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
       "C3",
+      "C9",
+      "C24",
+      "C25",
+      "C26",
+      "C55",
+      "C58"
+    ],
+    "result": "MV-lEVs are released by ectocytosis of amphisomes (termed amphiectosomes), with evidence suggesting a double membrane structure during budding that ruptures after release, and plasma membrane origin of the external membrane confirmed by WGA labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9, C24-C26, C55, C58 demonstrate amphisome origin through marker analysis (CD63 and LC3B positive ILVs), morphological evidence of double membranes during budding, and WGA labeling confirming plasma membrane origin. The hypothesis about post-release rupture (C26) is reasonable given the observed intact double membranes during budding and ruptured membranes after release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
       "C30",
       "C31",
       "C32",
@@ -52,38 +74,18 @@
       "C34",
       "C35",
       "C36",
-      "C37",
-      "C38",
       "C39",
-      "C40",
+      "C44",
+      "C45",
       "C46",
       "C47",
-      "C48",
-      "C49",
-      "C56",
-      "C57"
+      "C48"
     ],
-    "result": "MV-lEVs are amphiectosomes\u2014amphisomes released by ectocytosis\u2014containing both CD63-positive (MVB-derived) and LC3B-positive (autophagosome-derived) ILVs that do not co-localize, with Rab7 positivity indicating late endosomal origin.",
+    "result": "ILVs of amphiectosomes and sEVs separated from conditioned media contain either CD63 or LC3B, but not both markers simultaneously, with classical sEV markers (CD63, CD81, TSG101, ALIX) strongly co-localizing with each other but showing minimal co-localization with LC3B.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C30-C40, C46-C49, C56-C57 are strongly supported by multi-modal imaging (confocal microscopy, immunogold TEM, STED) showing: (1) co-existence of CD63 and LC3B markers within the same MV-lEV, (2) lack of co-localization between these markers on individual ILVs, (3) Rab7 positivity confirming late endosomal origin, and (4) consistent marker patterns across MVBs, autophagosomes, amphisomes, and amphiectosomes. The ectocytosis mechanism is demonstrated by TEM showing budding from the cell surface.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C4",
-      "C41",
-      "C42",
-      "C50",
-      "C51"
-    ],
-    "result": "Small EVs (sEVs) separated from conditioned medium are either exclusively CD63-positive or LC3B-positive, with LC3B-positive sEVs being significantly larger in diameter than LC3B-negative ones.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4, C41-C42, C50-C51 are supported by immunogold TEM showing distinct populations of CD63+ and LC3B+ sEVs without double-positive vesicles, and quantitative analysis demonstrating statistically significant size differences (p<0.0001). This provides direct evidence that the two sEV populations have different origins and characteristics.",
+    "evaluation": "Claims C4, C28-C36, C39, C44-C48 provide extensive confocal microscopy and immunogold TEM evidence demonstrating mutually exclusive populations of CD63+ and LC3B+ vesicles. The quantitative co-localization analysis (C35-C36) and immunogold TEM on different organelles (C44-C48) strongly support the existence of two distinct ILV populations within amphiectosomes.",
     "result_type": "MAJOR"
   },
   {
@@ -91,36 +93,51 @@
     "claim_ids": [
       "C5",
       "C6",
+      "C51",
+      "C52",
       "C53",
       "C54",
-      "C55",
-      "C59"
+      "C57"
     ],
-    "result": "Upon MVB-autophagosome fusion to form amphisomes, the LC3-positive inner autophagosomal membrane fragments and curls up to form LC3B-positive ILVs, while CD63-positive ILVs originate from MVBs, as documented by STED microscopy showing MVBs, autophagosomes, their fusion, membrane fragmentation, and mature amphisomes.",
+    "result": "Upon fusion of MVBs with autophagosomes to form amphisomes, the inner LC3 positive membrane of autophagosomes undergoes fragmentation and curls up to form LC3B positive ILVs, while CD63 positive ILVs originate from MVBs, resulting in amphisomes containing both populations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C6, C53-C55, C59 are supported by STED super-resolution microscopy directly visualizing the sequential stages of amphisome formation (Figure 3B-F), immunogold TEM showing the distinct marker distributions, and citation of established literature (Klionsky, 2021) for the membrane fragmentation process. The model is consistent with all observed marker patterns and ultrastructural features.",
+    "evaluation": "Claims C5-C6, C51-C54, C57 present a mechanistic model supported by STED microscopy showing MVB-autophagosome fusion, LC3 membrane fragmentation, and ILV formation. The model is consistent with the observed mutually exclusive marker distribution and is supported by direct visualization of intermediate stages. The citation to Klionsky 2021 provides additional support for the fragmentation process.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C26",
-      "C27",
-      "C28",
-      "C60"
+      "C37",
+      "C38"
     ],
-    "result": "MV-lEVs possess an at least partially intact double membrane during budding, with the plasma membrane-derived outer layer (confirmed by WGA labeling) and the original amphisome membrane (inner layer) that disrupts mainly after separation from the cell to prevent intracellular ILV release.",
+    "result": "ILVs of HEK293T-PalmGFP and HepG2 cell lines were Rab7 positive, suggesting a late endosomal origin.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C26-C28, C60 are supported by TEM images showing double membrane structures (Figure 1Y-AF), particularly the BMMC image showing single membrane at the cytoplasmic base and double membrane at the budding portion, and WGA live-cell labeling confirming plasma membrane origin of the external membrane. The hypothesis about post-separation disruption (C28) is reasonable given the observed structures, though it remains somewhat speculative.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C37-C38 demonstrate Rab7 positivity through confocal microscopy, and the inference of late endosomal origin is well-supported given that Rab7 is an established marker of late endosomes. This provides additional evidence for the MVB contribution to amphisome formation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
+      "C40",
+      "C49",
+      "C50"
+    ],
+    "result": "LC3B positive sEVs and ILVs had significantly larger diameters compared to LC3B negative ones, possibly indicating differences in membrane composition and intracellular origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C49-C50 present quantitative TEM measurements showing statistically significant size differences between LC3B+ and LC3B- vesicles. The interpretation regarding membrane composition and origin (C50) is reasonable speculation based on the data, though the exact mechanism remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
       "C61",
       "C62",
       "C63",
@@ -131,159 +148,107 @@
       "C68",
       "C69",
       "C70",
-      "C71",
       "C72",
-      "C73",
-      "C74",
-      "C76"
+      "C110"
     ],
-    "result": "Amphiectosome release is microtubule-dependent (inhibited by Colchicine) but not actin-dependent (unaffected by Cytochalasin B), is reduced by Rapamycin (which activates autophagic degradation), and is enhanced by Chloroquine and Bafilomycin (which block lysosomal degradation), with Rapamycin also reducing cellular metabolic activity.",
+    "result": "Amphiectosome release is microtubule-dependent (inhibited by Colchicine) but not actin-dependent (unaffected by Cytochalasin B), is inhibited by Rapamycin (which promotes degradation), and is enhanced by Chloroquine and Bafilomycin (which block lysosomal degradation).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C61-C76 are supported by quantitative confocal microscopy showing statistically significant effects of pharmacological treatments (Figure 3I), Resazurin metabolic assays, and appropriate citations for the mechanisms of action. The results are internally consistent with the proposed model where blocking degradation shifts the balance toward secretion. Sample sizes and statistical tests appear adequate (n=3-4 biological replicates, one-way ANOVA, t-tests).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C79",
-      "C80",
-      "C81"
-    ],
-    "result": "Membrane-bound LC3II is present in serum-free, lEV-depleted (sEV-containing) conditioned medium, with levels increasing approximately twofold upon Chloroquine treatment, as demonstrated by western blot analysis.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C79-C81 are supported by western blot data (Figure 3J) showing LC3II bands in conditioned medium and densitometry quantification showing ~2-fold increase with Chloroquine treatment (n=6 biological replicates). This provides biochemical confirmation of LC3-positive sEV release and is consistent with the imaging data and the effect of blocking lysosomal degradation.",
+    "evaluation": "Claims C59-C72, C110 provide systematic pharmacological evidence with quantitative confocal microscopy analysis. The effects are consistent with known mechanisms of the drugs (supported by citations) and demonstrate that amphiectosome release competes with degradation pathways. The metabolic activity data (C72) confirms that Rapamycin effects are not solely due to toxicity.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C92",
-      "C93"
+      "C75",
+      "C76",
+      "C73",
+      "C74",
+      "C109"
     ],
-    "result": "Amphiectosomes are distinct from migrasomes based on absence of TSPAN4 on their external membrane and lack of association with retraction fibers, though some cell types (HT29, HL1, HEK293T-PalmGFP, BMMCs) can release both migrasome-like structures (with retraction fibers and external TSPAN4) and amphiectosomes (budding from cell surface without external TSPAN4).",
+    "result": "Membrane-bound LC3II was present in serum-free, lEV-depleted conditioned medium, with levels increasing approximately twofold upon Chloroquine treatment, confirming the release of autophagy-related membranes into the extracellular space.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C85-C93 are supported by confocal microscopy showing differential TSPAN4 localization (intraluminal only in HEK293T-PalmGFP amphiectosomes vs. two populations in HT29 cells), co-localization analysis, live-cell imaging showing LC3+/- MV-lEVs, and TEM images showing both retraction fiber-associated and budding MV-lEVs from the same cell types. The distinction between amphiectosomes and migrasomes is clearly established through multiple criteria.",
+    "evaluation": "Claims C73-C76, C109 provide western blot evidence for LC3II in conditioned medium, with quantitative densitometry showing increased levels with Chloroquine treatment. This biochemical evidence complements the microscopy data and confirms that autophagy-related membranes are released extracellularly. The citations (C73-C74) establish LC3II as a valid autophagy marker.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C102",
-      "C103",
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111"
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88"
     ],
-    "result": "The in situ fixation methodology was critical for discovering the 'torn bag mechanism' because standard EV isolation methods (centrifugation, SEC, pipetting) likely rupture amphiectosomes, and the mechanism may have significant but previously unrecognized importance in sEV biogenesis given that MVB/amphisome exocytosis under steady-state conditions is rarely documented.",
+    "result": "Amphiectosomes are distinct from migrasomes based on the absence of TSPAN4 in their external membrane and lack of association with retraction fibers, though certain cell types can release both migrasome-like structures and amphiectosomes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C102-C111 are supported by the methodological rationale (avoiding serum starvation that affects autophagy, using gelatin/fibronectin coating to preserve released EVs, in situ fixation to prevent mechanical disruption), the observation that ILV release occurs within 5 minutes, and literature review noting the rarity of documented MVB/amphisome exocytosis. The proposal that this mechanism has been missed due to standard isolation methods is logical and well-justified, though the claim about 'significant importance' (C106) remains somewhat speculative pending further validation.",
+    "evaluation": "Claims C80-C88 provide confocal microscopy and TEM evidence distinguishing amphiectosomes from migrasomes. The TSPAN4 localization data (C80-C81) and morphological differences (C85, C87) support the distinction. The identification of two populations in HT29 cells (C81-C82) and the observation that cells can release both types (C84-C87) demonstrate the complexity of MV-lEV biogenesis.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C52"
+      "C27"
     ],
-    "result": "Size differences between LC3B-positive and LC3B-negative ILVs possibly indicate differences in membrane composition and intracellular origin.",
+    "result": "PalmGFP signal in HEK293T-PalmGFP cells principally associates with the plasma membrane, enabling identification of the plasma membrane-derived limiting membrane of MV-lEVs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C52 is supported by quantitative TEM analysis showing statistically significant size differences (Figure 2\u2014figure supplement 6R) and is a reasonable interpretation given the known differences in membrane composition between autophagosomes (source of LC3B+ ILVs) and MVBs (source of CD63+ ILVs). However, this remains an inference rather than direct demonstration of membrane composition differences.",
+    "evaluation": "Claim C27 is supported by confocal microscopy images and citation to previous work (Kov\u00e1cs et al., 2023). This validates the use of PalmGFP as a plasma membrane marker for tracking the external membrane of amphiectosomes.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C29"
+      "C97",
+      "C98",
+      "C108"
     ],
-    "result": "The PalmGFP signal in HEK293T-PalmGFP cells principally associates with the plasma membrane, enabling identification of the plasma membrane-derived limiting membrane of MV-lEVs.",
+    "result": "The in situ fixation approach made it possible to recognize the 'torn bag mechanism' because conventional EV purification methods (centrifugation, SEC, pipetting) may rupture the limiting membrane of amphiectosomes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C29 is supported by immunofluorescence data (Figure 2\u2014figure supplement 1A-C) showing co-localization of PalmGFP with anti-GFP antibody in the plasma membrane, and citation of prior work (Kov\u00e1cs et al., 2023). This validates the use of PalmGFP as a plasma membrane marker for the study.",
+    "evaluation": "Claims C97-C98, C108 provide a methodological explanation for why this mechanism may have been missed in previous studies. The reasoning is sound given that intact amphiectosomes are observed with in situ fixation and that mechanical forces could disrupt fragile structures. This is an important methodological insight.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C77",
-      "C78"
-    ],
-    "result": "LC3II is the membrane-associated, lipidated autophagic form of LC3 and is the hallmark of autophagy-related membranes.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77-C78 are supported by appropriate citations (Tanida et al., 2008; Klionsky, 2021) and represent established knowledge in the autophagy field. This provides the conceptual foundation for using LC3B as a marker of autophagosome-derived membranes.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
+      "C8",
       "C9",
       "C10",
-      "C11",
-      "C12",
-      "C13",
-      "C14",
-      "C82",
-      "C84",
+      "C77",
+      "C79",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
       "C94",
       "C95",
       "C96",
-      "C97",
-      "C99",
-      "C100"
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
     ],
-    "result": "Prior literature has documented: en bloc release of MVB-like sEV clusters by colorectal cancer cells in vivo; regulatory interactions between autophagy and EV biogenesis; LC3-carrying exosome secretion; amphisomes as MVB-autophagosome fusion products; suggested amphisome exocytosis; migrasomes as MV-lEVs with TSPAN4 as a marker; spheresomes in tumors (without autophagy link); MCMVs releasing ILVs by exocytosis-like mechanisms; and C. elegans exophers containing damaged organelles.",
+    "result": "The study was prompted by previous observations of en bloc release of MVB-like structures in colorectal cancer, and the findings relate to existing knowledge about amphisomes, migrasomes, spheresomes, MCMVs, exophers, and the intersection of autophagy and EV biogenesis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9-C14, C82, C84, C94-C97, C99-C100 accurately cite and represent prior literature, providing appropriate context for the current work. The citations appear accurate and the characterizations of prior findings are consistent with the cited sources. These claims establish the scientific background and distinguish the current findings from related phenomena.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C75"
-    ],
-    "result": "Enhanced exosome secretion from MVBs upon blocking degradation is a well-known effect in the literature.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C75 is supported by appropriate citations (Edgar et al., 2016; Ortega et al., 2019) and represents established knowledge that provides context for interpreting the Chloroquine/Bafilomycin effects on amphiectosome release.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C83",
-      "C91",
-      "C98",
-      "C101"
-    ],
-    "result": "Migrasomes resemble amphiectosomes in their pomegranate-like ultrastructure; elongated structures observed might be tunnelling nanotubes; 'nodal vesicular parcels' might be special examples of amphiectosomes; and amphiectosomes have multivesicular structure without recognizable damaged organelles (unlike C. elegans exophers).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C83, C91, C98, C101 involve comparisons and speculations about relationships to other structures. While C101 is supported by TEM images showing multivesicular structure without damaged organelles, claims C83, C91, and C98 are speculative comparisons based on morphological similarities. These are reasonable hypotheses but lack direct experimental validation of the proposed relationships.",
+    "evaluation": "Claims C8-C10, C77, C79, C89-C96, C100-C107 provide context from prior literature through appropriate citations. These claims establish the background and significance of the work, compare the findings to related structures, and discuss methodological considerations. The citations appear appropriate and the comparisons are reasonable.",
     "result_type": "MINOR"
   }
 ]

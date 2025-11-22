@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study developed a mechanomics approach combining mechanical characterization via RT-DC with machine learning-based PC-corr network analysis of transcriptomic data from five biological systems (glioblastoma, carcinoma, MCF10A, iPSCs, developing neurons) to identify a conserved module of five genes (CAV1, FHL2, IGFBP7, TAGLN, THBS1) associated with cell mechanical phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C17-18, C27-29 collectively describe the methodological approach and primary finding. The workflow is clearly documented with appropriate figures (Figure 1-3), the PC-corr method is properly cited (C27), and the five-gene module is consistently identified across multiple network thresholding strategies (Figure 3E-G). The approach is hypothesis-free and integrates information from diverse biological systems as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "RT-DC is a microfluidics-based method that enables rapid analysis of thousands of cells by flowing them through a narrow channel constriction and quantifying mechanical phenotype as apparent Young's modulus from cell size and deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-16 describe the RT-DC methodology with appropriate citations (Otto et al., 2015; Mokbel et al., 2017) and supporting figures (Figure 1\u2014figure supplement 1). The method is well-established and the physical principles underlying Young's modulus calculation (C16) are sound. This is a methodological description rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C22",
+      "C24",
+      "C26"
+    ],
+    "result": "Five biological systems showed distinct mechanical phenotypes: glioblastoma cells with higher STAT3-Ser/Hes3 activation were stiffer; small-cell carcinomas were softer than adenocarcinomas; MCF10A PIK3CA H1047R mutants were stiffer than wild-type; F-class iPSCs were softer than C-class; and newborn neurons were stiffer than proliferating progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C22, C24, C26 present mechanical characterization data for five systems shown in Figure 2 with statistical analysis using generalized linear mixed effects models. The glioblastoma and iPSC data are from previous publications (C19, C24), while carcinoma, MCF10A, and neuron data are new. All comparisons show statistically significant differences (p<0.05) with appropriate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The five target genes showed differential expression between soft and stiff cell states across datasets, but expression changes were not always in the same direction, suggesting non-monotonic relationships and context-dependent effects on cell stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-42 describe expression patterns shown in Figure 4 and Figure 4\u2014figure supplements 1-4. The observation of non-monotonic relationships (C40-41) is clearly documented in the data, though the interpretation (C41-42) is speculative. The clustering analysis (C39) demonstrates discriminative power despite directional inconsistencies, which is an important biological observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In silico validation showed the combinatorial marker achieved minimum AUC-ROC of 0.97 for universality across systems (positive hypothesis I), 0.92 for universality across data sources (positive hypothesis II), and 0.51 for tissue specificity (negative hypothesis), demonstrating the markers are universal and specific to mechanical phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-47 present quantitative validation results from Table 4. The AUC-ROC values are clearly reported with appropriate positive and negative control hypotheses. The negative hypothesis result (C46, AUC-ROC=0.51) effectively demonstrates specificity to mechanical phenotype rather than tissue origin. Individual genes CAV1, FHL2, and TAGLN showed particularly strong performance (C44, AUC-ROC\u22650.78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C50"
+    ],
+    "result": "Joint-view trustworthiness (JVT) analysis showed the combinatorial marker had remarkably low p-values (p=0.01) for positive hypotheses I and II but non-significant p-value (p=0.91) for the negative hypothesis, indicating the marker performance is rare to obtain by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C50 present JVT statistical validation from Table 4. The JVT method is novel and appropriately conservative, assessing whether the discriminative performance could arise by chance. The significant p-values for positive hypotheses and non-significant p-value for negative hypothesis provide strong statistical support for marker specificity and trustworthiness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "TGBC adenocarcinoma cells have higher CAV1 protein levels and are stiffer than ECC4 small-cell carcinoma cells when measured by RT-DC, AFM indentation, and AFM microrheology, with apparent Young's moduli varying by measurement frequency across methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-55 present baseline characterization data shown in Figure 5A-D. Western blot confirms higher CAV1 in TGBC (C51), and all three mechanical methods show TGBC is stiffer (C52). The frequency-dependent variation (C53-54) is well-documented in Figure 5\u2014figure supplement 2 and aligns with previous literature (C55). This provides essential baseline data for perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "CAV1 knockdown in TGBC cells using multiple RNAi approaches (esiRNA and siRNA) resulted in decreased apparent Young's modulus as measured by RT-DC, AFM indentation, and AFM microrheology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-57 present CAV1 knockdown results shown in Figure 5E-H. Multiple independent RNAi constructs (esiCAV1-1, -2, -3, and CAV1-pool) all produced consistent softening effects measured by RT-DC (C56). The most effective construct (esiCAV1-1) was validated by AFM indentation and microrheology (C57), providing orthogonal confirmation across three measurement techniques with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Transient CAV1 overexpression in ECC4 and TGBC cells resulted in increased apparent Young's modulus in fluorescence-positive cells compared to controls, with more pronounced effects in TGBC cells that natively express basal CAV1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-59 present CAV1 overexpression results shown in Figure 5I-J. RT-FDC enabled gating of fluorescence-positive transfected cells, providing an internal control (CAV1iT-) alongside external mock control. Both cell lines showed stiffening upon CAV1 overexpression (C58), with TGBC showing stronger effects (C59). The interpretation that cells with basal CAV1 are more responsive is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In MCF10A-ER-Src cells, TAM-induced transformation causes CAV1 downregulation and cell softening at 72h; CAV1 knockdown in uninduced cells mimics this softening, while CAV1 overexpression in TAM-induced cells rescues the stiff phenotype, demonstrating CAV1 is causative of mechanical phenotype change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-67 present a comprehensive gain-of-function/loss-of-function analysis in MCF10A-ER-Src cells (Figure 6). The temporal correlation between CAV1 decrease and softening (C62-64) is established using published microarray data and new western blot/AFM data. The knockdown (C65) and rescue (C66) experiments provide strong causal evidence. The conclusion (C67) that CAV1 is causative is well-supported by bidirectional perturbations across multiple cell systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "Mouse embryonic fibroblasts from CAV1 knockout mice are softer than wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 presents genetic knockout data shown in Figure 5\u2014figure supplement 1. This provides additional orthogonal evidence for CAV1's role in cell mechanics using a genetic rather than RNAi approach. The data includes western blot confirmation of CAV1 absence and RT-DC measurements with appropriate statistical analysis (p=0.0037, N=3 replicates).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The five identified genes have established roles in cellular processes: CAV1 in caveolae structure and mechanoprotection; FHL2 as a tension-sensitive LIM domain protein; IGFBP7 in cancer-related processes; TAGLN as an actin-binding protein upregulated by tension; and THBS1 in cell-cell and cell-matrix adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-38 provide literature-based functional context for the five target genes, all supported by appropriate citations. This background information establishes biological plausibility for the genes' involvement in cell mechanics. However, these are not novel findings from this study but rather synthesis of prior knowledge to contextualize the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Gene ontology analysis of target genes did not show enrichment for typical cell mechanics-related terms (actin cytoskeleton, actomyosin contractility, migration), but instead showed enrichment for negative regulation of transcription and growth, suggesting the identified genes may have relatively unknown associations with cell mechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-79 present GO analysis results from Figure 3\u2014figure supplement 1. The lack of obvious mechanics-related GO terms (C77) is clearly documented. The interpretation (C78-79) that this indicates novel associations is reasonable, though the enrichment for negative regulation of transcription/growth could also reflect the specific biological contexts studied rather than universal mechanics regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Literature analysis reveals connections between identified genes and cell mechanics: CAV1 interacts with Rho-signaling and actin, modulates YAP activation; YAP is a mechanotransducer and CAV1 co-activator; several identified genes (CYR61, ANKRD1, THBS1) are YAP targets; TAGLN and CNN2 stabilize actin under tension; FHL2 translocates to nucleus under low tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-90 synthesize literature evidence connecting the identified genes to known mechanotransduction pathways, particularly through YAP signaling. All claims are supported by appropriate citations. This provides important biological context and mechanistic hypotheses, though these connections were not experimentally validated in this study. The YAP connection is particularly interesting as it links multiple identified genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Comparison with previous studies shows overlap: three genes (CAV1, FHL2, TGLN) overlap with immediate compression response genes and four (CAV1, FHL2, TGLN, THBS1) with long-term response; PTRF (cavin 1) was identified in tissue-scale stiffness studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-95 compare findings with prior literature. The overlaps with compression response genes (C92-93) and tissue stiffness studies (C95) are properly cited. The speculation (C94) that overlap occurs because cells change stiffness during compression response is reasonable but unproven. These comparisons provide external validation that the identified genes are relevant to mechanical processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The non-monotonic relationship between gene expression and mechanical phenotype suggests context-dependent effects, similar to the dual roles of CAV1, THBS1, and IGFBP7 in cancer progression that vary by cancer stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-100 present interpretations of the non-monotonic expression patterns. While the observation of non-monotonic relationships is supported by data (C96-97), the mechanistic interpretation is speculative. The parallel to cancer progression (C98-100) is interesting but does not provide direct evidence for the proposed mechanism. Additional experiments would be needed to test whether different expression regimes have opposite effects on stiffness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The mechanomics approach presented is a hypothesis-free, data-driven workflow that integrates mechanical phenotyping with transcriptomics across diverse systems to identify universal cell mechanics regulators, with PC-corr offering advantages over classical co-expression analysis by incorporating discriminative information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-73 describe the methodological contribution and its advantages. The hypothesis-free nature and cross-system integration (C68, C71) are clearly demonstrated. The PC-corr advantages (C72) are conceptually sound and the method has proven efficacy in prior studies (C73). However, claims about future applications (C69) are speculative. This represents a valid methodological advance, though the generalizability requires testing on additional systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cell mechanical phenotype is a global readout integrating contributions from all cellular components, with the actin cortex believed to dominate at low deformations (<3 \u00b5m) used in RT-DC, AFM indentation, and AFM microrheology, though other components (membrane, microtubules, intermediate filaments, nucleus, organelles, cytoplasmic packing) can also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-76 provide important context about what mechanical measurements capture. These are well-established principles in the field (C74-75) supported by appropriate citations (C76). This contextualizes why the identified genes may not all be directly related to actin cytoskeleton, as they could affect other mechanical contributors. This is background knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Cell stiffness is an established label-free marker of cell state in health and disease, involved in development and cancer progression, with the actin cortex and Rho signaling as the most prominent contributors, though intermediate filaments, microtubules, intracellular packing, and organelles like the nucleus also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-12 provide background on cell mechanics from established literature, all supported by appropriate citations. These are not novel findings but essential context for understanding the study's significance. The claims accurately represent current knowledge in the field and justify why identifying genetic regulators of cell mechanics is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C25"
+    ],
+    "result": "Small-cell carcinomas have small cell sizes, short doubling times, high metastatic potential, and poor prognosis; MCF10A H1047R mutation causes constitutive PIK3CA activation and PI3K-AKT-mTOR pathway triggering; C-class iPSCs establish endogenous reprogramming factor expression while F-class depend on ectopic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, C25 provide biological context for the studied systems, all supported by appropriate citations to prior literature. These are not novel findings but necessary background to understand the biological significance of the mechanical differences observed. The information accurately represents established knowledge about these cell systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "There are no prior studies that aim at identifying gene signatures associated with single-cell mechanical phenotype changes across different cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 asserts the novelty of the approach. While the authors acknowledge related studies examining mechanical stimuli responses or tissue-scale proteomics, the specific combination of single-cell mechanics with transcriptomics across diverse cell types appears novel based on the literature review presented. However, comprehensive literature searches can miss relevant work, so this claim carries some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Transcriptomic analysis enables easy implementation of perturbation experiments with genetic tools; the framework is applicable to other omics types; the group has accumulated >200,000 RT-DC experiments on ~2 billion cells over 9 years; future developments could include AI prediction of stiffness from omics and control of cell mechanics for therapeutic intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-107 mix established facts (C102, C104) with speculative future directions (C103, C105-107). The data accumulation (C104) is impressive and demonstrates feasibility of large-scale mechanomics. However, claims about future AI algorithms (C105) and therapeutic applications (C106-107) are speculative and would require substantial additional work to realize. The applicability to other omics types (C103) is plausible but untested.",
+    "result_type": "MINOR"
+  }
+]

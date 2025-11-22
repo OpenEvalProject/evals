@@ -3,16 +3,19 @@
     "result_id": "R1",
     "claim_ids": [
       "C11",
+      "C12",
+      "C13",
+      "C14",
       "C15",
       "C16",
-      "C65",
-      "C66"
+      "C59",
+      "C60"
     ],
-    "result": "RNA-seq analysis reveals that genes belonging to Mtb sulfur metabolism pathways, particularly cysK2, are significantly upregulated during oxidative stress compared to other stress conditions.",
+    "result": "RNA-seq analysis under various stress conditions revealed that genes involved in sulfur metabolism and L-cysteine biosynthesis are significantly upregulated during oxidative stress, with CysK2 upregulated in all stresses except SDS. Starvation caused the most drastic transcriptional changes, while acidic pH caused the least.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11, C15, C16, C65, and C66 collectively demonstrate through RNA-seq data and pathway enrichment analysis that sulfur metabolism genes are specifically upregulated under oxidative stress. The data includes volcano plots, heat maps, and functional categorization showing consistent upregulation patterns.",
+    "evaluation": "Claims C11-C16, C59-C60 are supported by RNA-seq data with appropriate statistical thresholds (padj <0.05, log2FC >1). The functional categorization and pathway enrichment analyses provide converging evidence. The experimental design includes biological replicates and appropriate controls.",
     "result_type": "MAJOR"
   },
   {
@@ -27,13 +30,16 @@
       "C23",
       "C24",
       "C25",
-      "C26"
+      "C26",
+      "C62",
+      "C74",
+      "C75"
     ],
-    "result": "Deletion of cysM or cysK2 does not affect growth in nutrient-rich media but significantly compromises Mtb survival under nutrient-limited conditions and various host-like stresses, with the highest attenuation observed under oxidative stress (CHP treatment).",
+    "result": "Deletion of cysM or cysK2 did not affect growth in rich media but significantly compromised growth in defined Sauton's media (~2 log10) and survival under various stress conditions, with the highest attenuation observed under oxidative stress (CHP treatment: ~2.04 log10 for Rv\u0394cysM, ~1.31 log10 for Rv\u0394cysK2). Complementation rescued these phenotypes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C17-C26 provide comprehensive survival data across multiple conditions with appropriate controls and complementation strains. The data show consistent patterns of stress-specific attenuation with quantified log10 reductions in CFU, supported by statistical analysis (n=3, p<0.005).",
+    "evaluation": "Claims C17-C26 are supported by growth and survival experiments with appropriate controls including complementation strains. Statistical significance is reported (p<0.005, p<0.0005) with n=3 replicates. The differential sensitivity to various stresses is well-documented with quantitative CFU measurements.",
     "result_type": "MAJOR"
   },
   {
@@ -50,11 +56,11 @@
       "C35",
       "C36"
     ],
-    "result": "Under oxidative stress, deletion of cysM or cysK2 results in distinct transcriptional signatures affecting 33% and 53% of Mtb genes respectively, with 1023 genes commonly affected and 324 (CysM) or 1104 (CysK2) genes uniquely modulated.",
+    "result": "Transcriptomic analysis revealed that while Rv\u0394cysM and Rv\u0394cysK2 showed similar profiles under normal conditions (13 DEGs between them), oxidative stress caused dramatic divergence (1372 DEGs between mutants). CysM and CysK2 share influence over 1023 genes but also distinctively modulate 324 and 1104 genes respectively during oxidative stress.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27-C36 are supported by comprehensive RNA-seq analysis including PCA, volcano plots, Venn diagrams, and heat maps. The data demonstrate clear divergence between mutants under oxidative stress with appropriate statistical thresholds (log2FC >1, padj <0.05) and biological replicates.",
+    "evaluation": "Claims C27-C36 are supported by comprehensive RNA-seq analysis with PCA, volcano plots, and Venn diagrams. The statistical thresholds (absolute log2FC >1, padj <0.05) are appropriate. The dramatic difference between unstressed and stressed conditions (13 vs 1372 DEGs) provides strong evidence for distinct roles under oxidative stress.",
     "result_type": "MAJOR"
   },
   {
@@ -66,13 +72,14 @@
       "C41",
       "C42",
       "C43",
-      "C44"
+      "C44",
+      "C115"
     ],
-    "result": "Metabolomics analysis reveals differential effects of cysM and cysK2 deletion on downstream metabolites (L-methionine, ergothioneine, mycothiol, mycothione) under oxidative stress, with reduced synthesis rates in Rv\u0394cysM compared to Rv and Rv\u0394cysK2.",
+    "result": "Metabolomics analysis showed that L-cysteine levels were below detection limits, but downstream metabolites (L-methionine, mycothiol, mycothione, ergothioneine) showed differential responses to CHP treatment in the three strains. 34S labeling revealed reduced synthesis rates of mycothiol, mycothione, and ergothioneine in Rv\u0394cysM compared to Rv and Rv\u0394cysK2.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C44 are supported by LC-MS metabolomics data including pool size measurements and 34S labeling experiments (n=3 biological replicates). The data show statistically significant differences (p<0.05) in metabolite levels and synthesis rates, normalized to protein concentration.",
+    "evaluation": "Claims C38-C44, C115 are supported by LC-MS metabolomics data with n=3 biological replicates and statistical significance testing (p<0.05, p<0.005, p<0.0005). The 34S labeling experiments provide direct evidence for differential biosynthetic rates. Normalization to protein concentration is appropriate given the clumping tendency of Mtb.",
     "result_type": "MAJOR"
   },
   {
@@ -82,13 +89,16 @@
       "C46",
       "C47",
       "C48",
-      "C49"
+      "C49",
+      "C76",
+      "C77",
+      "C108"
     ],
-    "result": "In ex vivo macrophage infections, Rv\u0394cysM and Rv\u0394cysK2 show attenuated survival (~1.22 and ~0.85 log10 lower respectively) that is rescued by L-cysteine supplementation and completely nullified in macrophages lacking both ROS and RNS production.",
+    "result": "Ex vivo macrophage infection experiments showed that Rv\u0394cysM and Rv\u0394cysK2 had attenuated survival (~1.22 and ~0.85 log10 lower respectively at 96h p.i.). L-cysteine supplementation rescued this phenotype, and attenuation was partially reversed in phox\u2212/\u2212 macrophages and completely nullified in IFN\u03b3\u2212/\u2212 macrophages. Combined inhibition of ROS and RNS completely rescued mutant survival.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C45-C49 are supported by systematic macrophage infection experiments using WT, phox\u2212/\u2212, and IFN\u03b3\u2212/\u2212 mice with appropriate controls, complementation strains, and rescue experiments. The data demonstrate the specific role of ROS/RNS in the observed phenotypes with statistical significance (p<0.005, n=3).",
+    "evaluation": "Claims C45-C49, C76-C77, C108 are supported by well-controlled ex vivo experiments using macrophages from different mouse genotypes (WT, phox\u2212/\u2212, IFN\u03b3\u2212/\u2212) with appropriate activation (IFN\u03b3+LPS). The rescue experiments with L-cysteine and iNOS inhibitor provide strong mechanistic evidence. Statistical significance is reported with n=3 replicates.",
     "result_type": "MAJOR"
   },
   {
@@ -100,186 +110,61 @@
       "C53",
       "C54",
       "C55",
-      "C56",
-      "C57"
+      "C78",
+      "C79",
+      "C110"
     ],
-    "result": "In vivo mouse infection experiments show that Rv\u0394cysM and Rv\u0394cysK2 exhibit significantly reduced survival in lungs and spleens (~1.25-1.87 log10 lower at 4-8 weeks), with partial rescue in phox\u2212/\u2212 mice and greater rescue in IFN\u03b3\u2212/\u2212 mice.",
+    "result": "In vivo mouse infection experiments demonstrated that Rv\u0394cysM and Rv\u0394cysK2 showed significant attenuation in both lungs and spleens at 4 and 8 weeks p.i. (1.25-1.87 log10 lower). Attenuation was partially rescued in phox\u2212/\u2212 mice but not completely in IFN\u03b3\u2212/\u2212 mice, suggesting CysM may combat additional stresses beyond ROS/RNS.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C57 are supported by comprehensive in vivo infection data across multiple time points (day 1, 4 weeks, 8 weeks) and mouse genotypes (n=5-12 per group). The data show consistent attenuation patterns with statistical significance (p<0.05) and appropriate controls including complementation strains.",
+    "evaluation": "Claims C50-C55, C78-C79, C110 are supported by aerosol infection experiments in multiple mouse genotypes with appropriate sample sizes (n=5 per timepoint). The incomplete rescue in IFN\u03b3\u2212/\u2212 mice (unlike the complete rescue in ex vivo experiments) is acknowledged and interpreted as evidence for additional roles. Statistical significance is reported (p<0.05, p<0.005, p<0.0005).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
+      "C56",
+      "C57",
       "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C76"
+      "C71",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
     ],
-    "result": "L-cysteine synthase inhibitors (C1, C2, C3) show modest bactericidal activity alone but significantly enhance INH efficacy when combined at sub-MIC concentrations in vitro and within host macrophages.",
+    "result": "Chemical inhibitors of L-cysteine synthases (C1 inhibiting all three, C2 inhibiting CysM/CysK2, C3 inhibiting CysK1) showed bactericidal activity in macrophages (~1 log10 attenuation for C1). While ineffective alone at sub-MIC concentrations, combination with sub-MIC INH rendered Mtb highly susceptible.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C64 and C76 are supported by MIC measurements and combinatorial drug treatment experiments using Alamar Blue assays and macrophage infections. The data demonstrate synergistic effects with INH at sub-MIC concentrations with statistical significance (p<0.0005, n=3).",
+    "evaluation": "Claims C56-C58, C71, C81-C88 are supported by ex vivo macrophage infection experiments and MIC assays. The compound specificities are cited from prior work (Brunner et al., 2017). The synergy with INH is demonstrated through combination MIC assays. However, the lack of in vivo validation and limited mechanistic data for the synergy represent minor limitations.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C77",
-      "C82",
-      "C83",
-      "C102",
-      "C114",
-      "C116",
-      "C122"
+      "C72",
+      "C73",
+      "C90",
+      "C91",
+      "C92",
+      "C117",
+      "C118",
+      "C120"
     ],
-    "result": "The study demonstrates that CysM and CysK2 have non-redundant biological functions in combating host-induced redox stress and represent attractive targets for adjunct TB therapy.",
+    "result": "The study demonstrates that CysM and CysK2 have non-redundant biological functions despite producing the same end product (L-cysteine). They independently facilitate Mtb survival by alleviating host-induced redox stress and serve as attractive targets for adjunct therapy.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77, C82, C83, C102, C114, C116, and C122 represent the main conclusions supported by the collective data from transcriptomics, metabolomics, ex vivo, and in vivo experiments. The evidence consistently shows distinct roles for each enzyme despite producing the same end product.",
+    "evaluation": "Claims C72-C73, C90-C92, C117-C118, C120 represent the main conclusions drawn from the collective data. These are well-supported by the convergence of multiple lines of evidence: differential stress responses, distinct transcriptional signatures under oxidative stress, differential effects on downstream metabolites, and differential attenuation patterns in infection models.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
-    "claim_ids": [
-      "C103",
-      "C105",
-      "C106",
-      "C107"
-    ],
-    "result": "Functional categorization of differentially expressed genes reveals that intermediary metabolism, respiration, and cell wall pathways are among the most impacted categories upon deletion of CysM or CysK2 during oxidative stress.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C103, C105, C106, and C107 are supported by functional categorization and pathway enrichment analysis of RNA-seq data shown in multiple figures. The analysis uses appropriate statistical methods (DAVID) and shows consistent patterns across biological replicates.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C108",
-      "C109",
-      "C110",
-      "C111",
-      "C112",
-      "C113"
-    ],
-    "result": "Pool size measurements of L-methionine, mycothiol, and ergothioneine show temporal variability consistent with their functions in redox homeostasis, indicating partial redundancy in L-cysteine production but non-redundant downstream roles.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C108-C113 are supported by metabolomics data showing temporal changes in metabolite levels. The interpretation that these pathways are partially redundant is reasonable given they produce the same end product but show different downstream effects.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C12",
-      "C13",
-      "C14"
-    ],
-    "result": "Comparative RNA-seq analysis across different stress conditions shows that starvation causes the most drastic transcriptional changes, while acidic pH causes the least, with intermediary metabolism and respiration genes most affected across all conditions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12-C14 are supported by RNA-seq data comparing multiple stress conditions with appropriate statistical analysis. The data include volcano plots, heat maps, and functional categorization showing differential responses to various stresses.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C99",
-      "C130"
-    ],
-    "result": "CysM is relatively more important than CysK2 for survival under acidic stress, and metabolic reprogramming aided by these enzymes enables Mtb to grow optimally in limited nutritional environments.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C99 and C130 are supported by survival data under acidic conditions and growth experiments in Sauton's media. The differential importance of CysM vs CysK2 is demonstrated by quantified differences in survival (0.85 vs 0.24 log10 reduction).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C115"
-    ],
-    "result": "Reduced L-cysteine levels in mutant strains are responsible for their attenuated survival in macrophages, as demonstrated by rescue with L-cysteine supplementation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C115 is supported by rescue experiments showing that L-cysteine supplementation alleviates survival differences in macrophages. This provides direct evidence linking L-cysteine levels to the observed phenotype.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C117"
-    ],
-    "result": "The inability of host-derived sulfur/L-cysteine to compensate for mutant survival defects suggests either inaccessibility of sufficient L-cysteine in Mtb niches or inefficient transporter function in vivo.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C117 is speculative and not directly tested. While the observation that mutants show attenuated survival in vivo despite host L-cysteine availability is valid, the proposed mechanisms are not experimentally validated.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C57"
-    ],
-    "result": "Attenuated survival of Rv\u0394cysM in IFN\u03b3\u2212/\u2212 mice suggests CysM may be involved in alleviating additional stresses beyond ROS/RNS, such as nutrient deprivation.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C57 is based on the observation that rescue in IFN\u03b3\u2212/\u2212 mice is incomplete, but the proposed additional roles are speculative. Alternative explanations (e.g., incomplete knockout of ROS/RNS pathways) are not ruled out.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C121"
-    ],
-    "result": "L-cysteine synthase inhibitors are ineffective at sub-MIC concentrations alone due to redundant roles and relatively low requirement during regular growth conditions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C121 is supported by MIC measurements and is consistent with the observation that mutants show no growth defects in rich media. The interpretation regarding redundancy is reasonable given the experimental evidence.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C132"
-    ],
-    "result": "Changes in gene expression upon CysM and CysK2 deletion are likely due to distinct downstream consequences in addition to direct regulation by the synthases.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C132 is speculative about mechanisms underlying transcriptional changes. While the observation of extensive transcriptional changes is well-supported, the proposed mechanisms are not directly tested.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C133"
-    ],
-    "result": "Rv\u0394cysM displays better survival in phox\u2212/\u2212 and IFN\u03b3\u2212/\u2212 mice in the spleen than lungs, possibly due to relatively lower ROS/RNS stress or impaired clearance response.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C133 is based on observed differences between lung and spleen survival, but the proposed mechanisms are speculative. The data show the pattern but do not directly test the underlying causes.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
     "claim_ids": [
       "C1",
       "C2",
@@ -290,62 +175,69 @@
       "C7",
       "C8",
       "C9",
-      "C10"
-    ],
-    "result": "Background information establishes that Mtb causes 1.5 million deaths yearly, possesses three L-cysteine synthases (CysK1, CysM, CysK2) absent in humans, and upregulates L-cysteine biosynthesis genes under stress.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C10 provide established background knowledge supported by appropriate citations. These claims set the context for the study and are well-documented in the literature.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
+      "C10",
+      "C37",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
       "C67",
       "C68",
       "C69",
-      "C70",
-      "C72",
-      "C73",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127",
-      "C128"
+      "C89",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C112",
+      "C113"
     ],
-    "result": "Prior studies have consistently shown upregulation of sulfur metabolism genes under various stresses, attenuation of sulfur metabolism mutants in vivo, and identification of CysM and CysK2 as potential drug targets.",
+    "result": "Background knowledge claims about TB epidemiology, Mtb metabolism, sulfur assimilation pathways, L-cysteine biosynthesis, and prior research findings on sulfur metabolism genes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C67-C73 and C123-C128 summarize prior work with appropriate citations. These claims establish the rationale for the current study and are well-supported by the cited literature.",
+    "evaluation": "Claims C1-C10, C37, C61, C63-C69, C89, C93-C107, C111-C113 are background knowledge and literature citations that provide context. These are appropriately cited from peer-reviewed sources and represent established knowledge in the field. The citations appear accurate and relevant.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R21",
+    "result_id": "R10",
     "claim_ids": [
-      "C75"
+      "C70",
+      "C109",
+      "C114",
+      "C116",
+      "C119"
     ],
-    "result": "Both Rv\u0394cysM and Rv\u0394cysK2 displayed enhanced antibiotic sensitivity in vitro and within the host.",
+    "result": "Interpretive claims about enhanced antibiotic sensitivity of mutants, inaccessibility of L-cysteine in vivo, metabolic reprogramming, and metabolite pool instability.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C75 states that data are not shown, making it impossible to evaluate the quality or statistical significance of this observation. Without the data, this claim cannot be properly assessed.",
+    "evaluation": "Claims C70, C109, C114, C116, C119 are interpretive or speculative. C70 states data are not shown. C109 and C114 are reasonable inferences but lack direct experimental validation. C116 and C119 are mechanistic interpretations that, while plausible, are not directly tested. These represent hypotheses that would benefit from additional experimental support.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R22",
+    "result_id": "R11",
     "claim_ids": [
-      "C79",
-      "C80",
-      "C81"
+      "C80"
     ],
-    "result": "Three L-cysteine synthase inhibitors (C1, C2, C3) with different specificities were selected from prior work for testing in this study.",
+    "result": "CysM and CysK2 might serve as clinically important targets for adjunct TB therapy.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C79-C81 describe the selection of compounds based on prior characterization from Brunner et al., 2017. The specificity profiles are established from cited work.",
-    "result_type": "MINOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is a forward-looking conclusion about clinical potential. While supported by the genetic and chemical inhibition data, the lack of in vivo efficacy data for the inhibitors, pharmacokinetic/pharmacodynamic studies, and toxicity assessments means this remains a promising hypothesis rather than a demonstrated result. The synergy with INH is shown only in vitro.",
+    "result_type": "MAJOR"
   }
 ]

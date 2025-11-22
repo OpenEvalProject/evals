@@ -18,11 +18,11 @@
       "C23",
       "C24"
     ],
-    "result": "Beta oscillations are the most widely distributed cortical brain rhythm in resting state, with 56.6% of 1772 invasive recording channels showing beta dominance. Beta-dominant channels are distributed across the entire cortex with highest density in sensorimotor areas, while alpha channels are concentrated posteriorly in temporoparietal and occipital areas.",
+    "result": "Beta oscillations are the most widely distributed cortical brain rhythm at rest. Analysis of over 30 hours of invasive recordings from 1772 channels in epilepsy patients revealed that 56.6% of channels were beta-dominant, compared to 22.4% alpha-dominant, 15.6% theta-dominant, and 5.2% gamma-dominant. Beta-dominant channels were distributed across the entire cortex with highest density in sensorimotor areas, while alpha channels were concentrated posteriorly in temporoparietal and occipital regions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C11-C24 provide converging evidence from a large dataset (1772 channels from 106 epilepsy patients) showing beta as the most frequent dominant rhythm (56.6% vs 22.4% alpha, 15.6% theta, 5.2% gamma). The spatial distribution analysis using rigorous signal processing (FOOOF parametrization) and anatomical mapping supports the widespread cortical distribution of beta. The use of strict quality control criteria (C13) and comparison across electrode types (C24) strengthens the findings.",
+    "evaluation": "Claims C11-C24 provide converging evidence from a large-scale invasive recording dataset showing beta as the most prevalent cortical rhythm. The quantitative analysis is based on rigorous parametrization using FOOOF, and the data were carefully selected from healthy brain regions in epilepsy patients (C12-C13). The spatial distribution patterns are well-documented and consistent across electrode types (C24).",
     "result_type": "MAJOR"
   },
   {
@@ -32,17 +32,16 @@
       "C25",
       "C26",
       "C27",
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75"
+      "C67",
+      "C68",
+      "C69",
+      "C70"
     ],
-    "result": "Beta-dominant cortical areas share a common brain network characterized by significantly higher connectivity to prefrontal, cingulate, parietal cortical areas and basal ganglia structures (including substantia nigra, striatum, pallidum, subthalamic nucleus) compared to alpha-dominant areas, as revealed by both functional and structural MRI connectomics.",
+    "result": "Beta-dominant cortical areas share a common whole-brain network with strong connectivity to basal ganglia structures. MRI connectomics analysis using functional and structural connectivity maps from 1000+ healthy subjects revealed that beta networks showed significantly higher connectivity to prefrontal, cingulate, and parietal cortical areas, as well as ventral thalamus and basal ganglia (including substantia nigra, striatum, pallidum, and subthalamic nucleus) compared to alpha networks.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C25-C27, C71-C75 demonstrate a robust methodological approach using normative connectomes from large cohorts (1000 subjects for fMRI, 32 for dMRI) with appropriate statistical testing (FWE-corrected p<0.05). The convergence of functional and structural connectivity findings strengthens the result. However, the approach relies on indirect mapping from epilepsy patient electrode locations to healthy subject connectomes, which introduces some uncertainty about generalizability.",
+    "evaluation": "Claims C25-C27 demonstrate robust connectivity patterns using both functional and structural MRI from large normative datasets (C67-C68). The methodology appropriately uses FWE-corrected statistics (p<0.05) to identify significant differences between beta and alpha networks. The convergence of functional and structural connectivity findings strengthens the conclusion about shared beta networks.",
     "result_type": "MAJOR"
   },
   {
@@ -53,19 +52,13 @@
       "C29",
       "C30",
       "C31",
-      "C32",
-      "C79",
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84"
+      "C32"
     ],
-    "result": "Beta functional and structural networks show significant positive spatial correlations with dopamine uptake (measured by PET) in cortex (rho=0.22/0.40) and basal ganglia (rho=0.50/0.33), but not cerebellum. This relationship is specific to dopamine, as demonstrated by multiple dopamine-related tracers (FDOPA, D1/D2 receptors, DAT).",
+    "result": "Beta networks show significant spatial correlation with dopamine uptake patterns. Spatial correlation analysis between beta connectivity maps and PET imaging revealed significant positive relationships for both functional (rho=0.22, p=0.0001) and structural (rho=0.40, p=0.0001) networks in cortex, and for functional (rho=0.50, p=0.0001) and structural (rho=0.33, p=0.0001) networks in basal ganglia, but not in cerebellum.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4, C28-C32, C79-C84 provide statistically significant correlations between beta networks and dopamine uptake across multiple tracers and brain regions. The use of a comprehensive parcellation (476 regions) and non-parametric statistics (Spearman's correlation) is appropriate. The specificity is supported by the control analysis with GABA (C33-C38) showing no significant functional correlations. However, the correlation magnitudes are modest (rho=0.22-0.50), and the analysis aggregates data from different cohorts with varying sample sizes (N=12-180).",
+    "evaluation": "Claims C28-C32 provide quantitative evidence with appropriate statistical testing showing specific spatial overlap between beta networks and dopamine uptake. The use of a compound parcellation (476 regions) and Spearman correlations is methodologically sound. The lack of correlation in cerebellum (C32) serves as an important anatomical control, strengthening the specificity of the cortical and basal ganglia findings.",
     "result_type": "MAJOR"
   },
   {
@@ -78,55 +71,27 @@
       "C37",
       "C38"
     ],
-    "result": "As a control, beta functional networks show no significant correlation with GABA uptake in cortex, basal ganglia, or cerebellum. Beta structural networks show weak positive cortical correlation (rho=0.17) and negative basal ganglia correlation (rho=-0.55) with GABA, contrasting with the dopamine findings.",
+    "result": "Beta networks show specificity for dopamine over GABA. Control analysis using GABA PET imaging revealed no significant correlations between beta functional networks and GABA uptake in cortex (rho=0.04, p=0.22), basal ganglia (rho=0.07, p=0.27), or cerebellum (rho=0.10, p=0.22). Structural beta networks showed weak positive correlation in cortex (rho=0.17, p=0.0003) and negative correlation in basal ganglia (rho=-0.55, p=0.0001).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C33-C38 provide important negative control data demonstrating specificity of the beta-dopamine relationship. The lack of functional correlation with GABA (all p>0.05 for functional networks) contrasts with the significant dopamine correlations. However, the structural network shows some GABA correlations (C36-C37), which complicates interpretation. The GABA cohort is also smaller (N=16) than most dopamine cohorts.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C33-C38 provide important negative control data demonstrating that the spatial correlation with dopamine is specific and not a general property of neurotransmitter systems. The lack of functional connectivity correlation with GABA (C33-C35) contrasts with the robust dopamine findings, supporting the specificity of the dopamine-beta relationship. The structural connectivity findings with GABA are more complex but still distinct from dopamine patterns.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C5",
-      "C59"
+      "C5"
     ],
-    "result": "The authors conclude that beta oscillations emerge in cortico-subcortical brain networks modulated by dopamine, with the basal ganglia serving as the primary target for dopaminergic innervation from substantia nigra and ventral tegmental area.",
+    "result": "Beta oscillations emerge in cortico-subcortical brain networks that are modulated by dopamine. This integrative conclusion synthesizes the findings that beta is the most distributed cortical rhythm, shares connectivity with basal ganglia, and spatially correlates with dopamine uptake patterns.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C5 represents the main interpretive conclusion integrating all findings, while C59 provides neuroanatomical context. However, the study demonstrates spatial correlation between beta networks and dopamine uptake patterns, not causal modulation. The data are entirely static (C66) and cross-sectional, preventing inference about dynamic modulation or directionality of the relationship. The conclusion overstates what can be inferred from correlational spatial overlap data.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 represents the main interpretive conclusion of the study, integrating findings from invasive recordings (C2), MRI connectomics (C3), and PET imaging (C4). While this is an inference rather than direct measurement, it is well-supported by the convergence of multiple independent lines of evidence from different modalities and large normative datasets.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
-    "claim_ids": [
-      "C76",
-      "C77",
-      "C78"
-    ],
-    "result": "The study employed rigorous signal processing methodology, using Morlet wavelets for time-frequency transformation and FOOOF parametrization to extract oscillatory peak amplitudes while controlling for aperiodic activity. When multiple peaks occurred in the same frequency band, the highest amplitude peak was selected.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C76-C78 describe appropriate and well-established signal processing methods. The use of FOOOF (C77) to separate periodic from aperiodic components is a strength that addresses a common confound in oscillatory analysis. The winner-takes-all approach for multiple peaks (C78) is clearly stated, though the authors acknowledge in the discussion that this simplification may not capture the full complexity of multi-peak activity.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C65",
-      "C66"
-    ],
-    "result": "The study has important limitations: alpha recordings were performed with eyes closed (known to increase alpha power), and the data are static while beta oscillations and dopamine are dynamic processes.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C65-C66 represent acknowledged limitations. The eyes-closed condition (C65) may limit generalizability of alpha findings to eyes-open conditions, though the authors note alpha serves primarily as a control. The static nature of the data (C66) is a fundamental limitation that prevents inference about dynamic relationships or causality, which is critical given the study's conclusions about dopaminergic modulation.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R8",
     "claim_ids": [
       "C1",
       "C6",
@@ -134,7 +99,6 @@
       "C8",
       "C9",
       "C10",
-      "C39",
       "C40",
       "C41",
       "C42",
@@ -144,53 +108,77 @@
       "C46",
       "C47",
       "C48",
-      "C49",
-      "C50",
-      "C51"
+      "C49"
     ],
-    "result": "Prior literature establishes that beta rhythms have been proposed to serve multiple domains (motor control, cognition, memory, emotion), with particular emphasis on motor cortex and Parkinson's disease pathophysiology. Beta activity in basal ganglia is associated with dopamine loss in PD, and this relationship is mirrored in animal models. The 'status quo' hypothesis proposes beta signals maintenance of current states.",
+    "result": "Beta rhythms have been proposed to serve multiple functional domains beyond motor control. Prior literature has implicated beta activity in motor control, cognition, memory, emotion, working memory, sensory processing, language, motivation, sleep, emotion recognition, mood, and depression, though few studies have related these observations to dopamine signaling.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C6-C10, C39-C51 summarize established prior work through appropriate citations. These background claims provide context for the current study but do not represent new findings. The citations appear appropriate and the characterization of prior work is consistent with the field's understanding. However, these are literature review claims rather than results of the current study.",
+    "evaluation": "Claims C1, C9, C40-C49 are well-supported by citations to existing literature. These claims accurately represent prior work establishing diverse functional roles for beta oscillations. Claim C10 appropriately notes the gap in relating these functions to dopamine, which motivates the current study. These are primarily literature review claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C51",
+      "C50",
+      "C59",
+      "C71",
+      "C72"
+    ],
+    "result": "Theoretical framework for beta oscillations and dopamine. Prior work has proposed that oscillatory activity orchestrates brain function through rhythmic synchronization, that beta signals 'status quo' maintenance, and that dopamine is involved in synaptic plasticity, reinforcement learning, memory, and depression pathophysiology. The basal ganglia are the primary target for dopaminergic innervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C51, C50, C59, C71-C72 accurately represent established theoretical frameworks and neuroanatomical knowledge from prior literature. These claims provide important context for interpreting the current findings but are not novel contributions of this study. The citations appropriately support these background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Clinical and translational context for beta oscillations. Prior work has established adaptive deep brain stimulation using beta as a biomarker in Parkinson's disease and depression, demonstrated interactions between dopaminergic tone and beta amplitude, and identified beta networks connecting basal ganglia to frontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C58, C60-C62 accurately represent prior clinical and translational research on beta oscillations. These claims are well-supported by appropriate citations and provide important context for the clinical relevance of the current findings. However, they represent prior work rather than novel contributions of this manuscript.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C52",
-      "C53",
-      "C54",
       "C55",
       "C56",
-      "C57",
-      "C58",
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64"
+      "C57"
     ],
-    "result": "Prior work has established adaptive DBS using beta as a biomarker, demonstrated beta's utility for depression severity, and shown limitations of non-invasive source reconstruction methods. Previous studies have also identified beta networks connecting pallidum to frontal cortex and established dopamine's role in memory and depression pathophysiology.",
+    "result": "Methodological rationale for using invasive recordings and network mapping. Non-invasive EEG/MEG source reconstruction can be confounded by volume conduction and current mixing, while lesion and DBS network mapping has provided insights into circuit-level brain function.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C58, C60-C64 provide additional literature context through appropriate citations. These claims establish the rationale for the current study's approach and situate findings within existing knowledge. The characterization of prior work appears accurate based on the citations provided, though these represent background rather than new results.",
+    "evaluation": "Claims C55-C57 accurately represent methodological limitations of non-invasive approaches and advantages of network mapping approaches. These claims are appropriately cited and provide justification for the study's methodological choices. They represent established methodological knowledge rather than novel findings.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C67",
-      "C68",
-      "C69",
-      "C70"
+      "C63",
+      "C64",
+      "C65",
+      "C66"
     ],
-    "result": "Gamma oscillations are known to reflect local processing but are largely absent in resting-state activity, while resting beta activity may provide insights into global circuit synchrony. This distinction explains why gamma was not prominent in the resting-state recordings despite potentially being ubiquitous during active processing.",
+    "result": "Study limitations and interpretive caveats. The authors acknowledge that beta oscillations and dopamine are dynamic (not static as measured here), that gamma oscillations may be equally ubiquitous but absent in resting-state, and that resting beta may reflect global circuit synchrony while gamma reflects local microcircuit activity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C67-C70 provide interpretation of why gamma was infrequent (5.2% of channels, C17) in the resting-state data. While C67-C68 reflect established knowledge about gamma oscillations, C69-C70 represent speculative interpretations about the functional significance of resting beta vs. task-related gamma. The low gamma prevalence (C17) is consistent with known properties of resting-state activity, but the functional interpretations lack direct empirical support from the current study.",
+    "evaluation": "Claims C63-C66 represent important limitations and speculative interpretations. C63 is well-supported by citation, but C65-C66 are explicitly speculative (marked as SPECULATION/INFERENCE in evidence). These claims appropriately acknowledge limitations but do not constitute supported findings. The speculation about beta vs. gamma functional differences requires empirical validation.",
     "result_type": "MINOR"
   }
 ]

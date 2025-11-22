@@ -1,0 +1,1783 @@
+{
+  "submission": {
+    "id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:44:54.017199Z",
+    "updated_at": "2025-11-21T23:44:54.017199Z"
+  },
+  "content": [
+    {
+      "id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "content_type": "manuscript",
+      "content_text": "# Cerebellar Purkinje cells control posture in larval zebrafish (Danio rerio)\n\n## Authors\n\n- Franziska Auer<sup>1</sup> ([ORCID: 0000-0002-4389-9963](https://orcid.org/0000-0002-4389-9963))\n- Katherine Nardone<sup>1</sup>\n- Koji Matsuda<sup>2</sup>\n- Masahiko Hibi<sup>2</sup> ([ORCID: 0000-0002-9142-4444](https://orcid.org/0000-0002-9142-4444))\n- David Schoppik<sup>1</sup> ([ORCID: 0000-0001-7969-9632](https://orcid.org/0000-0001-7969-9632)) \u2020\n\n### Affiliations\n\n1. Depts. of Otolaryngology, Neuroscience & Physiology, and the Neuroscience Institute, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n2. Division of Biological Science, Graduate School of Science, Nagoya University Nagoya Japan ([ROR:04chrp450](https://ror.org/04chrp450))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCerebellar dysfunction leads to postural instability. Recent work in freely moving rodents has transformed investigations of cerebellar contributions to posture. However, the combined complexity of terrestrial locomotion and the rodent cerebellum motivate new approaches to perturb cerebellar function in simpler vertebrates. Here, we adapted a validated chemogenetic tool (TRPV1/capsaicin) to describe the role of Purkinje cells \u2014 the output neurons of the cerebellar cortex \u2014 as larval zebrafish swam freely in depth. We achieved both bidirectional control (activation and ablation) of Purkinje cells while performing quantitative high-throughput assessment of posture and locomotion. Activation modified postural control in the pitch (nose-up/nose-down) axis. Similarly, ablations disrupted pitch-axis posture and fin-body coordination responsible for climbs. Postural disruption was more widespread in older larvae, offering a window into emergent roles for the developing cerebellum in the control of posture. Finally, we found that activity in Purkinje cells could individually and collectively encode tilt direction, a key feature of postural control neurons. Our findings delineate an expected role for the cerebellum in postural control and vestibular sensation in larval zebrafish, establishing the validity of TRPV1/capsaicin-mediated perturbations in a simple, genetically tractable vertebrate. Moreover, by comparing the contributions of Purkinje cell ablations to posture in time, we uncover signatures of emerging cerebellar control of posture across early development. This work takes a major step towards understanding an ancestral role of the cerebellum in regulating postural maturation.\n\n## Introduction\n\nIn vertebrates, cerebellar activity underlies proper posture, defined as the relative orientation of body parts in space (Sprague and Chambers, 1953, Kleine et al., 2004, Ioffe, 2013, Tsutsumi et al., 2020, Becker and Person, 2019, Heiney et al., 2014, Bo et al., 2008, Darmohray et al., 2019). The cerebellum integrates sensory information from vestibular (balance), visual, and proprioceptive systems (Ioffe, 2013). These sensations are transformed into precise and coordinated adjustments in muscle tone and contraction allowing animals to control posture (Horak and Diener, 1994). Disruptions to mature cerebellar function lead to instability, unsteady gait and a compromised sense of balance (Morton et al., 2010). Development of the cerebellum coincides with postural maturation, and early development of the cerebellum has been extensively studied (Sepp et al., 2024, Leto et al., 2016, Beckinghausen and Sillitoe, 2019). Notably, changes to morphology and activity of the output neurons of the cerebellar cortex, Purkinje cells, are thought to underlie the gradual refinement of motor control (Beekhof et al., 2021). To date, the contributions of developing Purkinje cells to postural control remains poorly understood.\n\nKinematic quantification by pose estimation in rodents (Machado et al., 2015, Sheppard et al., 2022) has opened a window into cerebellar contributions to postural behaviors in health and disease (Darmohray et al., 2019, Machado et al., 2020, Jaarsma et al., 2023). However, terrestrial gait and locomotion are complex and especially difficult to study during development; tracking and analysis is often limited to measures such as the time of head elevation or the duration of walking stance (Swann and Brumley, 2019). In contrast, the biophysical challenges of maintaining posture underwater are straightforward to define (Erich Von Holst, 1973, Sfakiotakis et al., 1999, Bagnall and Schoppik, 2018). For example, larval zebrafish balance in the pitch axis (nose-up/nose-down) by timing locomotion to countermand gravity-induced destabilization (Ehrlich and Schoppik, 2017a, Ehrlich and Schoppik, 2017b) and by coordinated use of paired appendages (fins) and axial musculature (trunk; Ehrlich and Schoppik, 2019). The small size and rapid development of the larval zebrafish allow high-throughput measurements of postural control (i.e. pitch-axis kinematics and fin/trunk coordination) from freely swimming subjects (Zhu et al., 2023).\n\nThe larval zebrafish is a powerful model to investigate cerebellar development and function (Pose-M\u00e9ndez et al., 2023). Anatomically, the zebrafish cerebellum shares the same circuit structure as the mammalian cerebellum (Hibi and Shimizu, 2012). The zebrafish cerebellum is compartmentalized into regions with distinct response properties and output targets (Hibi and Shimizu, 2012, Heap et al., 2013, Matsui et al., 2014, Harmon et al., 2017, Dorigo et al., 2023). Multimodal representations were found in both cerebellar granule cells (Knogler et al., 2017, Sylvester et al., 2017) and Purkinje cells (Harmon et al., 2017, Chang et al., 2021). Functional assays established a role for the larval zebrafish cerebellum in motor control, sensorimotor integration and predictive neural processing, particularly in response to visual input (Ahrens et al., 2012, Sengupta and Thirumalai, 2015, Scalise et al., 2016, Knogler et al., 2019, Harmon et al., 2020, Lin et al., 2020, Prat et al., 2022, Najac et al., 2023, Narayanan et al., 2024). Finally, brain-wide imaging studies have established balance-relevant sensitivity in the cerebellum, identifying neurons that encode body angle and velocity (Migault et al., 2018) and neurons responsive to direct inner-ear stimulation (Favre-Bulle et al., 2018). Overwhelmingly, this work has been done in reduced or restrained preparations, limiting insight into the cerebellar contribution to natural behaviors.\n\nPowerful new opto- and chemogenetic (Armbruster et al., 2007) approaches allow control of particular cerebellar cell types, reviewed in Prestori et al., 2020. Recent work used such activation/inhibition to investigate cerebellar contributions to sensorimotor (Heiney et al., 2021, Gaffield et al., 2022, Verpeut et al., 2023, Soetedjo and Horwitz, 2023) and non-sensorimotor behaviors (Carta et al., 2019, Chen et al., 2022, Jackman et al., 2020, Zamudio et al., 2023) in health and disease (Chao et al., 2020, Chao et al., 2021, van der Heijden et al., 2023). Both approaches come with technical hurdles: optogenetics requires targeting light to the cerebellum, a particular challenge when untethered animals can move freely in depth, while chemogenetics uses bioactive co-factors (Gomez et al., 2017). A chemogenetic approach to cerebellar control with a non-bioactive ligand would be a welcome advance, particularly to study posture without visual interference (i.e. in the dark). One validated path forward is to express the rat non-selective cation channel TRPV1 and its ligand capsaicin in zebrafish (Chen et al., 2016). The endogenous zebrafish TRPV1 channel is capsaicin-insensitive (Gau et al., 2013), so targeted expression of rat TRPV1 allows cell-type-specific control: low-doses of capsaicin can activate sensory and hypothalamic neurons while high-doses are excitotoxic (Chen et al., 2016). Capsaicin can be dissolved in water and is readily absorbed by freely swimming larval zebrafish, sidestepping invasive procedures and the need for visible light. Finally, the conductance of a TRP channel is ~1000 x that of a channel rhodopsin (Bernstein et al., 2012) suggesting that even low levels of TRPV1 expression will be biologically effective.\n\nHere, we used the TRPV1/capsaicin system to investigate the contribution of cerebellar Purkinje cells to postural behaviors as larval zebrafish swam freely in depth. Both activation and ablation of Purkinje cells could induce changes in pitch axis posture. Ablation in older larvae resulted in bigger disruptions to posture, allowing inference of the functional consequences of cerebellar development. Furthermore, ablation of Purkinje cells in older larvae disrupted the coordination of trunk and paired appendages (fins), impairing vertical navigation. Finally, we could reliably decode pitch-tilt direction from patterns of Purkinje cell activity. Taken together our results establish a clear role for the cerebellum in larval zebrafish postural control, even during the earliest stages of development. More broadly, our work establishes a new method to manipulate cerebellar output while performing quantitative high-throughput measures of unconstrained posture and locomotion. Our data are therefore a step towards defining an ancestral role for the highly conserved cerebellum in postural control.\n\n## Results\n\n### A new tool for chemogenetic activation or ablation of Purkinje cells\n\nWe used a new tool to control Purkinje cells: the transgenic line Tg(aldoca:TRPV1-tagRFP). Fish in this line express rat TRPV1, a capsaicin-sensitive non-selective cation channel, exclusively in all cerebellar Purkinje cells (Figure 1A and B; Tanabe et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of a larval zebrafish overlaid with a confocal image of labeled Purkinje cells in the cerebellum. Gray rectangle corresponds to field of view in (B). (B) Confocal image of Purkinje cells in the cerebellum of a 7 days post-fertilization (dpf) Tg(aldoca:TRPV1-tagRFP) larvae. Scale bar 100 \u00b5m. (C) Schematic of strategy for dose-dependent activation (yellow, left) or lesion (red, right) of Purkinje cells by addition of the TRP channel agonist capsaicin (Csn). (D) Confocal image (inverted look-up table) of one cerebellar hemisphere of Tg(aldoca:TRPV1-tagRFP); Tg(elavl3:h2b-GCaMP6f) larvae before, 3, 6, and 9 hr after addition of capsaicin. Heart corresponds to the labelled trace in (E). (E) Normalized change in fluorescence following treatment with 1 \u00b5M capsaicin in individual Purkinje cells as a function of time. Purkinje cells from Tg(aldoca:TRPV1-tagRFP);Tg(elavl3:h2b-GCaMP6f) larvae (orange) and Tg(elavl3:h2b-GCaMP6f) control larvae (grey). (F) Timelapse images of Purkinje cell axons in Tg(aldoca:TRPV1-tagRFP) larvae immediately after addition of 10 \u00b5M capsaicin. Scale bar 10 \u00b5m. (G) Confocal images of cerebellar hemispheres of Tg(aldoca:TRPV1-tagRFP) larvae before (7 dpf, left) and after (9 dpf, right) treatment with 10 \u00b5M capsaicin. Control larvae (DMSO, top) and lesion larvae (10 \u00b5M capsaicin, bottom). Scale bar 10 \u00b5m. (H) Quantification of Purkinje cell numbers of fish (n=3) from (G).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Calcium imaging time series after 1 \u00b5M Capsaicin of TRPV1-(top) and TRPV1+ cells (bottom) in Tg(aldoca:TRPV1-tagRFP);Tg(elavl3:h2b-GCaMP6f) larvae. Two 1.5 min time series were recorded showing different cells being active (dF/F0 > 2) at different timepoints timelapse 1: TRPV1-: 0/16 (0%) cells and TRPV1+: 5/27 (19%) cells activated; timelapse 2: TRPV1-: 0/16 (0%) cells and TRPV1+: 4/27 (15%) cells activated. (B) Normalized change in fluorescence following treatment with 1 \u00b5M capsaicin at 6 hr post treatment and after washout in individual Purkinje cells from Tg(aldoca:TRPV1-tagRFP);Tg(elavl3:h2b-GCaMP6f) larvae. (C) Example confocal image of Purkinje cell nuclei after 3 and 9 hr of 1 \u00b5M capsaicin treatment. Speckled fluorescence could be observed after 9 hr of 1 \u00b5M capsaicin treatment indicative of cell death (white circle). Scale bar 10 \u00b5m.\n\nEndogenous zebrafish TRPV1 channels are insensitive to capsaicin (Gau et al., 2013). Previous descriptions of rat TRPV1 in zebrafish sensory and hypothalamic neurons establish dose-dependent chemogenetic manipulation (Chen et al., 2016). We expect low-doses of capsaicin to depolarize Purkinje cells (Figure 1C, left), while high-doses should be excitotoxic (Figure 1D, right).\n\nFirst, we assayed capsaicin concentrations and incubation times to identify a dose that would achieve long-term depolarization without cell death. We co-expressed a nuclear-targeted calcium indicator, GCaMP6f (Figure 1D) in all neurons using the Tg(elavl3:h2B-GCaMP6f) line for longitudinal imaging of neuronal activity. Previous work used 1 \u00b5M of capsaicin for long-term activation (Chen et al., 2016). We therefore imaged the cerebellum of Tg(aldoca:TRPV1-tagRFP);Tg(elavl3:h2B-GCaMP6f) fish prior to and 3, 6, and 9 hr after 1 \u00b5M capsaicin treatment (Figure 1D). We screened fish for comparable brightness and selected fish that had clearly visible expression but were not overly bright (Materials and methods).\n\nProlonged exposure to a low dose of capsaicin increased cerebellar activity (Figure 1E, Figure 1\u2014figure supplement 1A). At each timepoint, TRPV1-expressing cells showed increased intensity relative to a pre-capsaicin baseline, while TRPV1-negative cells did not (Figure 1E, 3/6 hr post 1 \u00b5M capsaicin: 28%/20%/ TRPV1+ cells F/F0 > 2; 40 cells from 3 fish vs. 0%/0%/ TRPV1- cells F/F0 > 2; 44 cells from 4 fish; activated cells after 6 hr of capsaicin treatment: 0/44 TRPV1- vs. 8/40 TRPV1+; Fisher\u2019s exact test: p=0.0018).\n\nDifferent cells showed increased activity at the 3,6, and 9 hr timepoints, and the same cells were differentially active at different timepoints. We interpret this as evidence that 1 \u00b5M of capsaicin could sporadically activate subsets of Purkinje cells. Notably, in one fish that had particularly strong tagRFP expression we observed a small number of neurons at the 9 hr timepoint with bright, speckled fluorescence suggestive of cell death (Figure 1\u2014figure supplement 1C). We did not observe any signs of cell death at the 6 hr timepoints (6 TRPV1+ fish at 6 hr post 1 \u00b5M capsaicin). We therefore set an upper limit of 6 hr of exposure to 1 \u00b5M capsaicin for activation experiments.\n\nInduced activation was reversible, even after prolonged exposure to 1 \u00b5M of capsaicin. We tested whether the elevated patterns of neuronal activity that we observed in the presence of capsaicin would return to baseline by imaging cerebellar Purkinje cells in Tg(elavl3:h2B-GCaMP6f) before exposure, after 6 hr of 1 \u00b5M capsaicin, and 40 min after washout. Relative to baseline, fluorescent intensities increased after 6 hr, as in Figure 1E. Importantly, fluorescence returned to baseline levels after 40 min of washout (Figure 1\u2014figure supplement 1B, 6h post 1 \u00b5M capsaicin: 40.9%/ TRPV1+ cells F/F0 > 2; washout: 0%/ TRPV1+ cells F/F0 > 2; 22 cells from 3 fish; activated cells before 1 \u00b5M capsaicin treatment vs. after washout: Fisher\u2019s exact test: p=1). We conclude that capsaicin-induced activation is reversible after washout.\n\nExposure to high doses of capsaicin caused rapid axonal degeneration and cell death. We developed a protocol for Purkinje cell lesion: Tg(aldoca:TRPV1-tagRFP) larvae (without GCaMP6f) were imaged at 7 dpf, at 8 dpf after 1 hr of 10 \u00b5M capsaicin treatment and again at 9 dpf (Figure 1G). Timelapse imaging of the Purkinje cell axons showed rapid degeneration already 15 min after capsaicin treatment started (Figure 1F). Cell numbers rapidly declined after 1 hr of 10 \u00b5M capsaicin treatment and did not show any signs of recovery at 9 dpf (Figure 1G and H; median [inter-quartile range]; 7 dpf: control 213 [195 \u2013 271] cells vs. pre lesion 282 [255 \u2013 366] cells; 9 dpf: control 218 [201 \u2013 250] cells vs. post lesion 68 [52 \u2013 70] cells; 3 control and 3 lesioned fish).\n\nConsistent with prior work in other cell populations (Chen et al., 2016), we found that chemogenetic use of the capsaicin/TRPV1 system can be used to reversibly activate or rapidly ablate cerebellar Purkinje cells in larval zebrafish.\n\n### Purkinje cells regulate postural control in the pitch axis\n\nWe used our Scalable Apparatus to Measure Posture and Locomotion (SAMPL) to measure posture and locomotion in freely swimming zebrafish (Zhu et al., 2023). SAMPL is a high-throughput videographic approach that measures kinematic parameters of posture and locomotion from fish swimming in a predominantly vertical arena that encourages navigation in depth (Figure 2A and B) allowing us to analyze postural changes in the pitch (nose-up/nose-down) axis. Larval zebrafish locomote in discrete bouts of rapid translation (Figure 2B, grey lines). To navigate up/down, fish sequence these bouts while maintaining a nose-up/nose-down pitch (Zhu et al., 2024). Notably, climb/dive bouts are defined relative to the trajectory of the bout. Climb/dive bouts can therefore be initiated from either nose-up (positive) or nose-down (negative) postures.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig2-v1.jpg)\n\n**Figure 2.:** (A) Sample image of a freely swimming zebrafish larva imaged from the side. Inset shows the larva at higher magnification view and its pitch, defined as the angle between the horizon (straight line) and the long axis of the body (dashed line). Scale bars 1 mm. (B) Pitch angle (posture, top) and speed (bottom) as a function of time for one recorded epoch. Individual swim bouts (speed > 5 mm/s threshold) are highlighted in grey (arrows). (C) Timecourse for activation experiments between 7 and 9 dpf. Larvae received 1 \u00b5M of capsaicin in 0.2% DMSO twice on days 8&9 for 6 hr each. (D) Timecourse for lesion experiments; larvae received a single dose of 10 \u00b5mM capsaicin in 0.2% DMSO for 1 hr on day 8. (E) Climbs are defined as a bout where the trajectory at peak speed took the fish nose-up (>0\u00b0). (F) Probability distribution of climb postures for control (black) and 1 \u00b5M capsaicin-treated larvae (yellow). Data is shown as median and inter-quartile range. (G) Average climb posture of control and activated larvae (8 repeats/149 control fish; 8 repeats/155 1 \u00b5M capsaicin-treated fish; climb postures: 14.7\u00b0 [14.0\u201315.4\u00b0] vs. 19.0\u00b0 [18.5\u201319.7\u00b0], p-value < 0.001, effect size: 29%, Wilcoxon rank sum test). (H) Probability distribution of climb postures for control (black) and 10 \u00b5M capsaicin-treated larvae (red). Data is shown as median and inter-quartile range. (I) Average climb posture of control and lesioned larvae (14 repeats/110 control fish; 14 repeats/120 10 \u00b5M capsaicin-treated fish; climb postures: 10.0\u00b0 [9.5\u201310.7\u00b0] vs. 13.6\u00b0 [13.1\u201314.3\u00b0], p-value < 0.001, effect size: 36%, Wilcoxon rank sum test). (J\u2013N) Same as E-I, but for dive bouts (trajectory that took the fish in the nose-down direction). (L) Average dive posture of control and activated larvae (8 repeats/149 control fish; 8 repeats/155 1 \u00b5M capsaicin-treated fish; dive postures: \u201316.6\u00b0 [-16.9 to \u201316.1\u00b0] vs. \u201320.5\u00b0 [-20.9 to \u201320.1\u00b0], p-value < 0.001, effect size = 24%, Wilcoxon rank sum test). (N) Average dive posture of control and lesioned larvae (14 repeats/110 control fish; 14 repeats/120 10 \u00b5mM capsaicin-treated fish; dive postures: \u201311.7\u00b0 [-11.9 to \u201311.5\u00b0] vs. \u201311.2\u00b0 [-11.4 to \u201311.0\u00b0], p-value = 0.002, effect size = \u20134%, Wilcoxon rank sum test). Unless otherwise indicated data are shown as median with 95% confidence interval, * indicates p-value < 0.05 and effect size \u226515%.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Distributions of swim kinematics and fin body coordination prior to 1 \u00b5M capsaicin treatment for control group (pre DMSO - grey) and 1 \u00b5M capsaicin group (pre 1 \u00b5M capsaicin - brown) reported in Appendix 1\u2014table 1. (B) Distributions of swim kinematics and fin body coordination during activation for control (DMSO - grey) and 1 \u00b5M capsaicin-treated (orange) groups reported in Appendix 1\u2014table 1.\n\nNose-up \u2018climb\u2019 bouts (Figure 2E) engage both axial musculature of the body and the fins to produce a net upward trajectory while nose-down \u2018dive\u2019 bouts (Figure 2J) rely on axial musculature alone and have a net downward trajectory (Ehrlich and Schoppik, 2019). Notably, postural angles after either climb or dive bouts tend to increase, a consequence of restorative rotations that counteract destabilizing torques (Ehrlich and Schoppik, 2017b). SAMPL\u2019s automated and high-throughput design yields data with large numbers of observations. To ensure a focus on only the most meaningful differences, we adopted two stringent criteria for significance: p-values <0.05, and an effect size of \u226515%. All p-values and effect sizes are reported in Appendix 1\u2014tables 1\u20135.\n\nWe used the timing and capsaicin concentrations we had previously validated (Figure 1) to design two behavioral paradigms: one to activate and one to ablate cerebellar Purkinje cells. Experiments were done from 7 to 9 dpf, and began with a single day without perturbations. Activation was then achieved by exposing Tg(aldoca:TRPV1-tagRFP); Tg(elavl3:h2B-GCaMP6f) fish to two 6 hr periods of 1 \u00b5M capsaicin while they swam freely in the dark (Figure 2C). Alternatively, Purkinje cells were ablated by exposing Tg(aldoca:TRPV1-tagRFP) fish to 10 \u00b5M of capsaicin for 1 hr (Figure 2D). All fish were screened before experiments for comparable levels of tagRFP fluorescence and control and experimental groups were randomly selected. A single experimental repeat consisted of 1\u20133 apparatus run in parallel with fish from a single clutch of embryos (i.e. siblings). To maintain consistency with genotypes used for validation, the activation and ablation experiments had different backgrounds (i.e. the presence/absence of the elavl3:h2B-GCaMP6f allele). Because of background variation (Zhu et al., 2023), all comparisons were restricted to control vs. experimental groups within an experimental paradigm over the same time period. We focused our analysis on the pitch axis as the current version of the SAMPL apparatus (Zhu et al., 2023) is not optimized for quantification of roll axis behavior. Across our datasets (Appendix 1\u2014tables 1\u20133), we did not observe meaningful differences between the control and experimental groups in the pre-manipulation period. To avoid adding noise to our estimates of effect size, we therefore report comparisons between control and experimental groups after perturbation. We did not observe global consequences for swimming: swim speed, swim frequency, and bout duration were unaffected during Purkinje cell activation (Figure 2\u2014figure supplement 1A and B) or after Purkinje cell lesion. Similarly, raw bout numbers were not different between the control and activation (median [inter-quartile range] 1256 [571\u20131454] bouts vs. 656 [444\u20131485] bouts; p-value 0.46) or lesion groups (2004 [1507\u20132471] bouts vs. 1913 [1556\u20132416] bouts; p-value 0.84, Appendix 1\u2014tables 1 and 2).\n\nClimbing postures were perturbed after both activation and ablation of Purkinje cells. During activation, fish adopted more nose-up postures before climb bouts. We observed a shift towards more positive values across the distribution of postures before fish initiated a climb bout (Figure 2F). The average climb posture of fish during depolarization was 29% higher than in control fish (Figure 2G, median [95% confidence interval]: 14.7\u00b0 [14.0\u201315.4\u00b0] vs. 19.0\u00b0 [18.5\u201319.7\u00b0], p-value < 0.001, effect size: 29%). Similarly, after Purkinje cell lesion, the average climb bout postural angle increased 36% relative to controls (Figure 2H and I, 10.0\u00b0 [9.5\u201310.7\u00b0] vs. 13.6\u00b0 [13.1\u201314.3\u00b0], p-value < 0.001, effect size: 36%); this increase replicates earlier findings that used a genetically encoded photosensitizer to ablate Purkinje cells (Ehrlich and Schoppik, 2019).\n\nWe observed an unexpected decrease in the climb bout postural angles for control fish in the post-lesion period (from 18.0\u00b0 [17.6\u201318.4\u00b0] to 10.0\u00b0 [9.5\u201310.7\u00b0], Appendix 1\u2014table 2). We do not have an explanation for this particular change and we have confirmed that it is not due to a single outlier experiment (detected outliers: 0/15 pre-lesion control experiments; 0/14 post-lesion control experiments). Notably, if we assess the effect of adding 10 \u00b5M capsaicin by comparing the magnitude of the relative difference between pre- and post-lesion periods, normalized to the pre-lesion period, we still see a significant difference (control vs. lesion: \u201346% vs -26%). We conclude that, even when accounting for observed changes between control fish at 7 vs 8 dpf, Purkinje cell ablation modifies climb postures.\n\nDive bout postures were similarly perturbed after activation, but not ablation of Purkinje cells. Fish adopted more nose-down postural angles before dive bouts with a leftward shift of the distribution of postures before dive bouts (Figure 2K). Average dive bout posture was 24% more negative than in control fish (Figure 2L, median [95% confidence interval]: \u201316.6\u00b0 [-16.9 to \u201316.1\u00b0] vs. \u201320.5\u00b0 [-20.9 to \u201320.1\u00b0], p-value < 0.001, effect size = 24%). Purkinje cell lesions at 7 dpf did not shift the average posture for dive bouts (Figure 2M and N -11.7\u00b0 [-11.9 to \u201311.5\u00b0] vs. \u201311.2\u00b0 [-11.4 to \u201311.0\u00b0], p-value = 0.002, effect size = \u20134%).\n\nWe interpret these data as evidence that Purkinje cell activity is crucial to ensure that posture during climbs and dives is maintained within a normal range.\n\n### Loss of Purkinje cells in older fish results in more global deficits to posture\n\nOver the first two weeks of life, larval zebrafish morphology and postural control strategies develop considerably (Ehrlich and Schoppik, 2017a). These changes are matched by similarly pronounced cerebellar growth (Hamling et al., 2015; Figure 3A and B). We observed that the number of Purkinje cells labeled in Tg(aldoca:TRPV1-tagRFP) roughly doubled between 7 and 14 dpf (Figure 3C, median [inter-quartile range] 7 dpf: 282 [255 \u2013 336]; 14 dpf: 662 [591 \u2013 733]). The increase in cell numbers is also evidence that the aldoca promoter continued to drive expression at later stages, allowing us to perform comparative experiments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig3-v1.jpg)\n\n**Figure 3.:** (A) Confocal image of Purkinje cells in the cerebellum of a 7 dpf Tg(aldoca:TRPV1-tagRFP) larvae. Scale bar: 25 \u00b5m. (B) Confocal image of Purkinje cells in the cerebellum of a 14 dpf Tg(aldoca:TRPV1-tagRFP) larvae. Scale bar: 25 \u00b5m. (C) Increase in Purkinje cell numbers between 7 and 14 dpf. (D) Average climb bouts postures for 7 dpf control and lesion larvae (left) and 14 dpf control and lesion larvae (right). (14 dpf lesion: 7 repeats/48 control fish; 7 repeats/44 10 \u00b5M capsaicin-treated fish; climb postures: 14.3\u00b0 [13.8\u201314.8\u00b0] vs. 17.1\u00b0 [16.2\u201317.8\u00b0]; p-value < 0.001; effect size: 20%, Wilcoxon rank sum test). (E) Average dive bouts postures for 7 dpf control and lesion larvae (left) and 14 dpf control and lesion larvae (right). (14 dpf lesion: 7 repeats/48 control fish; 7 repeats/44 10 \u00b5M capsaicin-treated fish; dive postures: \u20139.8\u00b0 [-10.1 to \u20139.5\u00b0] vs. \u201312.3\u00b0 [-12.6 to \u201311.9\u00b0]; p-value < 0.001; effect size: 26%, Wilcoxon rank sum test). all data are shown as median with 95% confidence interval, * indicates p-value < 0.05 and effect size \u226515%.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Probability distribution of climb postures for control (black) and 10 \u00b5M capsaicin-treated 14dpf larvae (red). Data is shown as median and inter-quartile range. (B) Probability distribution of dive postures for control (black) and 10 \u00b5M capsaicin-treated 14dpf larvae (red). Data is shown as median and inter-quartile range.\n\nSimilar to lesions at 7 dpf, we did not observe any differences in swim speed, frequency or bout duration (Appendix 1\u2014table 3). At 14 dpf, the effects of Purkinje cell lesions on postural angles were more widespread than at 7 dpf and also affected dive postures. We repeated our previous ablation experiments (Figure 2D) between 14\u201316 dpf, and analyzed climb (Figures 3 and 8) and dive bouts (Figure 3E, Figure 3\u2014figure supplement 1B). Loss of Purkinje cells created more widespread behavioral deficits. Specifically, climb bout posture was increased by 20% after Purkinje cell lesion (median [95% confidence interval]: 14.3\u00b0 [13.8\u201314.8\u00b0] vs. 17.1\u00b0 [16.2\u201317.8\u00b0]; p-value < 0.001; effect size: 20%). At 14 dpf we also observed an effect on dive bout postures. After lesion dive bouts postures were 26% more negative (\u20139.8\u00b0 [-10.1 to \u20139.5\u00b0] vs. \u201312.3\u00b0 [-12.6 to \u201311.9\u00b0]; p-value < 0.001; effect size: 26%).\n\nWe conclude that, consistent with morphological growth, Purkinje cells of the cerebellum play a broader role in postural control at 14 dpf than at younger ages.\n\n### Purkinje cells regulate speed-dependent fin engagement\n\nTo climb, larval zebrafish coordinate fin movements that generate lift with axial rotations that direct thrust (Figure 4A). The greater the axial rotation, the stronger the lift-producing fin movements; this relationship increases as larvae develop (Ehrlich and Schoppik, 2019). Our previous work suggested that Purkinje cells were necessary for such fin-body coordination (Ehrlich and Schoppik, 2019). Here, we observed that fin engagement is speed-dependent, with faster bouts producing greater lift for a given axial rotation (Figure 4B, left, Spearman\u2019s correlation coefficient: 0.2193; p = <0.001; of lift/rotation ratio [mm/deg] versus speed [mm/s] Figure 4\u2014figure supplement 1A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig4-v1.jpg)\n\n**Figure 4.:** (A) Larval zebrafish use two independent effectors (trunk and body) to climb. The contribution of each effector can be dissociated by the observed kinematics: changes to the angle of the trunk predict a trajectory for a particular bout (upward rotation). The actual position of the fish in depth at the end of the bout reveals the lift generated by the fins. A detailed kinematic examination of climbing, including fin ablations, is detailed in Ehrlich and Schoppik, 2019. (B) Coordination of fin and trunk engagement plotted as upward rotation against lift. Positive slopes reveal that larger rotations are coupled to greater fin engagement and greater changes in depth. The slope of this relationship becomes steeper for bouts with greater translational speed. Bouts from control (grey,left) and 10 \u00b5M capsaicin-treated larvae (red,right) are plotted at different swim speeds, shaded areas indicate 95% confidence interval of the median of the fast swim speeds. (C) Average slopes of lift/rotation curves for control and 10 \u00b5M capsaicin-treated larvae at different swim speeds. (8 repeats/15 control fish; 8 repeats/18 10 \u00b5M capsaicin-treated fish); slow: p=0.341; medium: p<0.001; fast: p<0.001. Data are plotted as median with inter-quartile range. * indicates p < 0.05 and effect size \u226515%.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Left: Fin Lift / rotation ratio versus speed for 14dpf DMSO-treated fish (Spearman correlation coefficient: 0.2193). Data is shown as median with 95% confidence interval of the median. Right: Fin Lift / rotation ratio versus speed for 14dpf fish 10 \u00b5M capsaicin-treated fish. Data is shown as median with 95% confidence interval of the median (Spearman correlation coefficient: 0.0397).\n\nAfter Purkinje cell ablation, 14 dpf fish produced less lift than expected when they swam fast. We divided swim bouts into three different bins according to their peak speed (slow: 5\u20137.5 mm/s; medium: 7.5\u201315 mm/s; fast >15 mm/s) for both control and fish treated with 10 \u00b5M capsaicin. We parameterized the relationship between upward rotation and lift by fitting a line to swim bouts for each speed. After capsaicin exposure, the slopes of the medium and fast speed bins were significantly lower (Figure 4C, Figure 4\u2014figure supplement 1), reflecting a loss of speed-dependent modulation (median [95% confidence interval]: slope slow: 0.029 [0.028\u20130.031 mm/\u00b0] vs. 0.033 [0.032\u20130.034 mm/\u00b0], p-value = 0.341, effect size: 6%; slope medium: 0.041 [0.040\u20130.044 mm/\u00b0] vs. 0.018 [0.018\u20130.019 mm/\u00b0], p-value <0.001, effect size: \u201334%; slope fast: 0.068 [0.067\u20130.071 mm/\u00b0] vs. 0.026 [0.026\u20130.027 mm/\u00b0], p-value <0.001, effect size: \u201362%;). The correlation between speed and fin-lift / rotation ratio is reduced after capsaicin exposure (Figure 4\u2014figure supplement 1; Spearman correlation coefficient: control 0.2193; 10 \u00b5M capsaicin: 0.0397; Z-test after z-transformation: p < 0.001) When analyzing fin lift and upward rotation across the three speed bins separately, we only observed significant differences for fast swim bouts, specifically showing a reduction in fin lift and an increase in upward rotation Appendix 1\u2014table 4.\n\nNext, to determine if lift was fin-dependent, we amputated the fins (Ehrlich and Schoppik, 2019, Zhu et al., 2023) and repeated our experiments. A detailed explanation of how fin amputation affects swim kinematics can be found here (Ehrlich and Schoppik, 2019, Zhu et al., 2023). We observed a near total loss of lift at all speeds; regardless of the speed bin, the slope of the relationship between upward rotation and lift was indistinguishable from zero (slope slow: 0.036 [0.035\u20130.037 mm/\u00b0] vs. \u20130.005 [-0.005 to -0.004 mm/\u00b0], p-value <0.00.1; effect size: \u201360%; slope medium: 0.055 [0.054\u20130.056] mm/\u00b0 vs. \u20130.005 [-0.005 to -0.005 mm/\u00b0], p-value <0.001; effect size: \u201388%; slope fast: 0.068 [0.067\u20130.069 mm/\u00b0] vs. 0.013 [0.013\u20130.013 mm/\u00b0], p-value <0.001; effect size: \u201381%). Finally, we examined fin-body coordination in our 7 dpf activation and ablation datasets. In contrast to older larvae, we observed no meaningful changes after activation of Purkinje cells at 7 dpf. For Purkinje cell lesions at 7 dpf we found only the fin body coordination at fast bouts to be affected Appendix 1\u2014tables 1 and 2.\n\nOur data show that loss of Purkinje cells disrupts the speed-dependent increase in fin-mediated lift in older, and to a lesser degree in younger fish. We interpret this finding as evidence that Purkinje cells are indispensable for normal coordination of the fins and body.\n\n### Purkinje cells encode pitch direction at both individual and population levels\n\nOur experiments establish that manipulations of Purkinje cells interfere with balance in the pitch axis. We therefore hypothesized that Purkinje cell activity would be modulated by nose-up/nose-down body tilts. We used Tilt In Place Microscopy (TIPM) (Zhu et al., 2023) to measure the response of individual Purkinje cells (Figure 5) to rapid pitch tilts. Briefly, fish are mounted on a mirror galvanometer and rapidly rotated to eccentric angles (Figure 5B, \u00b130\u00b0nose-up/nose-down).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig5-v1.jpg)\n\n**Figure 5.:** (A) Two-photon image of Purkinje cell somata expressing a calcium indicator in the Tg(aldoca:GAL4);Tg(UAS:GCaMP6s) line. Scale bar 10 \u00b5m. (B) Pitch tilt stimuli consisted of rapid galvanometer steps for 15 s in the nose up (+30\u00b0, pink) and nose-down (\u201330\u00b0, blue) direction. Inset in dotted rectangle shows the near-instantaneous timecourse of the step. (C) Example responses (n=42) from a single Purkinje cell sensitive to nose-down pitch (blue) but not nose-up (pink). (D) Example responses (n=42) from a single Purkinje cell without directional selectivity. (E) Superimposed positions of Purkinje cell somata within a single cerebellar hemisphere; no obvious topography separates tuned (black, n=16) and untuned (green, n=11 \u2014directionality index\u2014 < 0.35) cells. (F) Averaged integrated response (dFF) for individual cells over the 15 s stimulus plotted for nose-up vs. nose-down stimuli, colored by tuned (black) and untuned (green). (G) Heatmap of integrated response (dFF) for 13 untuned neurons on 21 up/down tilts. (H) Principal component analysis of integrated responses for untuned neurons for each of 21 up (pink) and 21 down (blue) trials. (Percentage of variance explained) (I) Performance of a support vector machine for binary classification of up/down tilt using integrated responses from increasing numbers of untuned neurons. Dots are different sets of neurons, gray lines shows the spread of performance from shuffled up/down identity (median [interquartile range] accuracy: 3/5/7/10/13 cells: 0.78 [0.68\u20130.91] / 0.88 [0.70\u20130.88] / 1 [0.84\u20131] / 1 [0.97\u20131] / 1 [1 \u2013 1]).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97614/elife-97614-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) One trial consisted of rapid galvanometer steps for 15 s in the nose down (\u201319\u00b0, blue) and nose-up (+19\u00b0, pink) direction. (B) Example responses (n=40) from a single Purkinje cell at 7 dpf to nose-down (blue) and nose-up (pink) pitch tilts. The thicker lines indicate the median response to all nose-down or nose-up trials. (C) Example responses (n=40) from a single Purkinje cell at 14 dpf to nose-down (blue) and nose-up (pink) pitch tilts. The thicker lines indicate the median response to all nose-down or nose-up trials. (D) Percentage of tuned cells from individual fish based on a directionality index larger than \u00b10.35 (median [inter-quartile range]:7 dpf: 7 [6 \u2013 34]%; 14 dpf: 8 [2 \u2013 19]%; p-value = 0.7763, Wilcoxon rank sum test). (E) Direction of tuned cells at 7 and 14 dpf (7 dpf: 2/31 cells up/down-tuned; 14 dpf 11/3 cells up/down-tuned, p-value < 0.001, Fisher\u2019s exact test). (F) Principal component analysis of all untuned cells at 7 dpf for each of 20 up (pink) and 20 down (blue) trials. (Percentage of variance explained) (G) Principal component analysis of all untuned cells at 14 dpf for each of 20 up (pink) and 20 down (blue) trials. (Percentage of variance explained) (H) Performance of a support vector machine for binary classification of up/down tilt using the responses from untuned neurons. Dots are individual fish at 7 dpf and 14 dpf (median [inter-quartile range]: 7 dpf: 0.68 [0.63\u20130.83]; 14 dpf: 0.73 [0.65\u20130.79]; P-value = 0.9468, Wilcoxon rank sum test).\n\nWe used Tg(aldoca:GAL4);Tg(UAS:GCaMP6s) to label Purkinje cells in the lateral parts of the cerebellum thought to receive vestibular input (Bae et al., 2009, Matsui et al., 2014, Knogler et al., 2019). To facilitate identification of the same cells from volumes imaged at both \u00b130\u00b0, we used doubly mono-allelic fish and screened for sparse expression of Purkinje cells. In total, we imaged 43 Purkinje cells from 8 fish. Of those, 31 cells could reliably identified at \u00b130\u00b0 and were included in the analysis.\n\nWe calculated a directionality index (DI) for all cells and categorized cells as either tuned (\u2014DI\u2014 >0.35) or as untuned (\u2014DI\u2014 < 0.35). Some cells showed, on average, higher responses to one direction (Figure 5F), but due to highly variable responses (median [inter-quartile range] Up response range: 23.3 [18.3\u201329.5]; Down response range: 43 [23.7\u201349.2]), they did not exhibit consistent tuning as determined by the directionality index. Individual Purkinje cells showed either directionally-tuned (Figure 5C, n=18) or untuned (Figure 5D, n=13) patterns of responses. Tuned cells were distributed throughout the lateral cerebellum (Figure 5E), and showed a slight preference for nose-down stimuli (12 vs 6, Figure 5F). We did not observe any systematic differences in the response properties across each experiment from untuned cells (Figure 5G).\n\nWhile untuned cells did not show overt directional preferences, pooling their responses allowed decoding of stimulus direction. We applied principal component analysis (PCA) to visualize the data and assess whether the trial types even for untuned cells exhibited distinct separation based on their trial identity (nose-up or nose-down). PCA of the integral of the full responses on each trial from untuned neurons showed near-complete segregation of trial types (Figure 5H). To assay whether there was indeed directional information we trained a decoder (support vector machine) and tested its accuracy on pseudo-populations of untuned cells of different sizes ranging from 3 to 13 cells (Figure 5I). We focused only on untuned cells, as including even a single tuned cell for the population coding will lead to excellent results. Training and test trials were different to avoid over-fitting. Pseudo-populations with more than three cells achieved accurate decoding well above chance levels (determined by shuffling trial identity)(median [inter-quartile range] accuracy: 3/5/7/10/13 cells: 0.78 [0.68\u20130.91] / 0.88 [0.70\u20130.88] / 1 [0.84\u20131] / 1 [0.97\u20131] / 1 [1 \u2013 1]). To ensure that the choice of cutoff for the directionality index (0.35) does not bias the decoding results, we also calculated the decoding accuracy using the 3, 5, and 7 least directionally tuned cells based on their directionality index. We again found that more than 3 cells achieve accurate decoding above chance level (3/5/7 least tuned cells: 0.67 [0.64\u20130.78] / 0.86 [0.73\u20130.88] / 0.88 [0.86\u20130.92]).\n\nOlder larvae showed additional changes to dive postures after Purkinje cell lesions. We therefore tested if: (1) Purkinje cells in older larvae exhibited differences in the numbers or direction of tuned cells or (2) if population-level decoding accuracy changed. We performed longitudinal TIPM, sampling from zebrafish larvae at 7 and 14 dpf. To improve throughput, we recorded the responses upon return from \u00b119\u00b0 stimuli (Figure 5\u2014figure supplement 1; 7 dpf: 138/11 cells/fish; 14 dpf: 90/7 cells/fish; of those 23/3 cells/fish were imaged at both timepoints); previous work established that responses upon return to baseline are highly correlated with the response at the eccentric position (Hamling et al., 2023b). We observed increased fluorescence relative to baseline values in 7 dpf and 14 dpf Purkinje cells upon return from \u00b119\u00b0 steps (Figure 5\u2014figure supplement 1). To analyze directional tuning we compared the maximum fluorescence in the first second after return to baseline. The relative number of tuned cells per fish was comparable between 7 and 14 dpf larvae (Figure 5\u2014figure supplement 1; median [inter-quartile range] at 7 dpf: 7 [6\u201334%]; 14 dpf: 8 [2\u201319%]; p-value = 0.7763). While most cells were not directionally selective, the preferred direction of tuned cells was different at 7 and 14 dpf: at 7 dpf more Purkinje cells were nose-down tuned (2/31 up/down) but at 14 dpf more cells were nose-up tuned (11/3 up/down Figure 5\u2014figure supplement 1; Fisher\u2019s exact test, p-value < 0.001).\n\nWe next assayed accuracy of directional encoding of simultaneously recorded untuned cells. We performed PCA for untuned cells at 7 (Figure 5\u2014figure supplement 1) and 14 dpf (Figure 5\u2014figure supplement 1) and tested decoding accuracy on the untuned cells of individual fish at 7 and 14 dpf. We did not observe differences in decoding accuracy between 7 and 14 dpf larvae (Figure 5\u2014figure supplement 1; median [inter-quartile range] 7 dpf: 0.68 [0.63\u20130.83]; 14 dpf: 0.73 [0.65\u20130.79]; p-value = 0.9468). We conclude that cerebellar Purkinje cells can encode pitch direction both at the single neuron and population levels with similar encoding accuracy in young and older larvae.\n\n## Discussion\n\nWe used a validated chemogenetic tool to investigate the role of cerebellar Purkinje cells in postural behavior as larval zebrafish swam freely in depth. Activation of Purkinje cells could induce changes in pitch axis (nose-up/nose-down) posture. Purkinje cell ablation changed posture, with broader effects in older larvae. Ablation disrupted fin-body coordination responsible for proper climbing. Finally, we could reliably decode pitch-tilt direction from patterns of Purkinje cell activity. We did not observe developmental changes in population coding of direction but found a shift in the tuning direction of Purkinje cells. Taken together our results establish a role for the cerebellum in postural control even during the earliest stages of larval zebrafish development. Our work establishes a new method that combines bidirectional manipulation of cerebellar output and quantitative high-throughput measures of unconstrained posture and locomotion.\n\n### Contributions of Purkinje cells to posture\n\nWhile activation and ablation manipulations both produced biologically meaningful behavior changes, the two experiments were run with different genetic backgrounds and on different generations of the SAMPL apparatus. Consequentially, our ability to define precisely what role Purkinje cells play in balance behaviors in larval zebrafish is limited. Activation experiments are particularly laborious as they require thorough pre-screening to ensure adequate brightness levels to achieve sufficient depolarization without excitotoxicity. To maintain consistency in depolarization effects, experiments involving different genetic backgrounds or developmental stages would require additional calcium imaging to confirm that 1 \u00b5M capsaicin elicits comparable responses. Hence, we restricted our experiments to 7 days post-fertilization (dpf) and did not extend the study to other developmental time points. Given that the primary purpose of this series of experiments was to establish TRPV1-mediated manipulation of Purkinje cells as a means to investigate postural control, it is beyond the scope of the work to repeat the experiments. Nonetheless, we consider the findings individually below in the context of prior work.\n\nPurkinje cell ablations modifies postural stability. Importantly, the differences we observed were more widespread in older larvae, underscoring the developmental importance of Purkinje cells for balance. Purkinje cell output is inhibitory (Ito et al., 1964, Ito et al., 1970), Purkinje cells in the lateral cerebellum project to vestibular nuclei (Matsui et al., 2014, Knogler et al., 2019), and Purkinje cells are tonically active (Cerminara and Rawson, 2004, Jadhav et al., 2023). We propose that the net effect of Purkinje cell loss would be disinhibition of target nuclei responsible for encoding posture and parameterizing corrective pitch-axis behaviors. While the precise nature of the transformation between larval zebrafish pitch and posture control kinematics is not yet known, loss of cerebellar-targeted nuclei can disrupt postural behaviors (Hamling et al., 2021, Ehrlich and Schoppik, 2019).\n\nThe effects of ablations became more widespread in older larvae. During early development, larval zebrafish grow in volume by roughly an order of magnitude and shift their postural control strategies to better climb/dive as they navigate in depth (Ehrlich and Schoppik, 2017a, Ehrlich and Schoppik, 2019). Unlike climb bouts, changes to postural stability during dives only emerge at 14 dpf. As activation of Purkinje cells produced meaningful changes during dives at 7 dpf, we infer that the delayed emergence of ablation effects does not reflect incomplete integration of Purkinje cells into dive-control circuits. Notably, the basal posture during dive bouts decreases in older control fish (Figure 3E) \u2014 ablation shifts the posture comparable to its younger state. Future work with our system enables testing of the hypothesis that Purkinje cell output plays a role in setting the postures older fish adopt during dives.\n\nPurkinje cell activation also modifies postural stability. Intriguingly, activation broadened the distribution of observed postures in the same way as ablation. Our imaging assay established that 1 \u00b5M of capsaicin would stochastically activate subsets of Purkinje cells. This stochasticity could reflect normal fluctuations in basal levels of activity, or it could arise from cells going in and out of depolarization block (Mattis et al., 2011). Synchronized/precisely timed Purkinje cell output is thought to shape movements (Heck et al., 2007, Person and Raman, 2011, Person and Raman, 2012, Han et al., 2018, Payne et al., 2019, Nashef et al., 2023), although perhaps not for all behaviors (Herzfeld et al., 2023). Our imaging suggests that the set of Purkinje cells activated at any one moment in time is limited and random. We therefore propose that the net effect of 1 \u00b5M of capsaicin is ultimately disruptive to Purkinje cell synchrony, and thus likely disruptive. Future work could test this hypothesis by intracellular recording from cerebello-recipient populations like the vestibular nuclei (Liu et al., 2020, Hamling et al., 2023a).\n\nPreviously, we reported that larval zebrafish coordinate their fins and trunk to climb effectively Ehrlich and Schoppik, 2019. The relationship between trunk-mediated changes to trajectory (upward rotation) and fin-mediated lift depends on locomotor speed. Here, we observed that after Purkinje cell loss, speed-dependent increases in lift with greater trunk rotation are disrupted (Figure 4C, Figure 4\u2014figure supplement 1A and B). In the fastest speed bin, we observed an increase in upward rotation and a decrease in average fin lift. In contrast, the medium-speed bin showed no significant changes in average fin lift or upward rotation, yet already displayed coordination deficits. Based on these observations, we argue that Purkinje cell lesions primarily affect coordination, rather than simply reducing one specific parameter such as lift or rotation. As we did not observe any change to locomotor speed after ablation (Appendix 1\u2014tables 1\u20133), we infer that Purkinje cell loss disrupts speed-dependent coordination for climbing. These results extend our original report where a lower throughput method (photoablation) suggested that Purkinje cell loss impacted the fin-trunk relationship (Ehrlich and Schoppik, 2019). In larval zebrafish, the neuronal substrates for axial speed control (Severi et al., 2014; Wang and McLean, 2014; Thiele et al., 2014; Kishore et al., 2020; D\u2019Elia et al., 2023; Carbo-Tano et al., 2023) and fin engagement (Uemura et al., 2020) are known. The potential for whole-brain imaging in larval zebrafish (Lin et al., 2020), particularly with high-speed voltage indicators (B\u00f6hm et al., 2022) and cutting-edge modeling approaches (Costabile et al., 2023), stands to reveal how Purkinje cell activity comes to coordinate body and fin movements. Importantly, since our behavioral data suggest that Purkinje cell activity impacts fin-trunk coordination more strongly in older larvae, longitudinal approaches will be key to understanding the developmental changes to cerebellar signaling that underlie effective coordination of trunk and limbs.\n\n### Encoding strategies for body tilt stimuli\n\nPurkinje cell activity reflects both sensory and motor inputs. One limitation of TIPM is that larvae are immobilized in agarose during tilts. Consequentially, our measurements of Purkinje cell activity are artificially constrained. Nonetheless, a subset of Purkinje cells were unambiguously direction-selective, and a simple decoder could use the activity of non-selective cells to differentiate tilt direction. We infer that vestibular information directly related to pitch axis posture is represented by the Purkinje cell population targeted in our ablation/activation experiments, consistent with broader imaging of cerebellar responses to body tilt (Migault et al., 2018, Favre-Bulle et al., 2018). Similar to the behavior results, we observed an asymmetry in the tuning direction of Purkinje cells at 7 dpf, with more cells being tuned to the nose-down direction. This asymmetry shifted between 7 and 14 dpf, suggesting developmental changes in how navigation in the pitch axis is processed in the cerebellum. These changes underscore the importance of longitudinal measurements of Purkinje cell activity across early development to understand emergent control of posture.\n\nThe ability to decode tilt direction from the collective activity of \u2018untuned\u2019 Purkinje cells suggests a role for population coding. Such mechanisms have been proposed for head/body motion (Zobeiri and Cullen, 2022) and eye movements (Sedaghat-Nejad et al., 2022, Herzfeld et al., 2023) in the primate cerebellum. Population coding requires that multiple Purkinje cells converge onto downstream targets, which is well-established in cerebellar target nuclei (Person and Raman, 2011, Heck et al., 2013). In larval zebrafish, Purkinje cells involved in locomotion converge on eurydendroid cells; electrophysiological recordings confirm a many-to-one convergence scheme that could similarly support population coding (Harmon et al., 2017). Vestibular-sensitive cells are located in the lateral cerebellum (Migault et al., 2018, Favre-Bulle et al., 2018), which projects to hindbrain regions that contain vestibular nuclei (Hamling et al., 2015). Comparing activity of vestibular nucleus neurons involved in tilt-driven behaviors (Bianco et al., 2012, Liu et al., 2020, Sugioka et al., 2023) before/after TRPV1-mediated ablation would speak to the collective contributions of Purkinje cells.\n\n### TRPV1/capsaicin as a tool to study cerebellar contributions to behavior\n\nOur use of TRPV1/capsaicin complements a modern suite of molecular tools to target cerebellar Purkinje cells (Prestori et al., 2020). In fish, different experiments have used opsins to excite / inhibit cerebellar Purkinje cells with exceptional temporal precision, establishing functional topography (Matsui et al., 2014) and an instructive role in learning (Harmon et al., 2017). TRPV1/capsaicin is a well-validated approach (Chen et al., 2016) that permits parametric (i.e. dose-dependent) activation/ablation with a single transgenic line. It does not require light, facilitating dissociation of vestibular from visual contributions without requiring genetically blind fish as in other studies using excitatory opsins (Schoppik et al., 2017). Additionally, our approach of using TRPV1/capsaicin for cell ablation offers multiple advantages compared to other lesion methods. For example, Killer Red requires extended exposure to high light intensities and mounting of single fish (Ehrlich and Schoppik, 2019). Nitroreductase ablation, while effective, requires extended pro-drug exposure, leading to slower and less precise results (Curado et al., 2008).\n\nIn contrast, TRPV1-mediated ablation is rapid and precise, with capsaicin triggering almost instantaneous cell death. This speed and simplicity make TRPV1 superior for experiments requiring quick, controlled ablation without the delays associated with other methods. Finally, chemogenetic approaches such as TRPV1/capsaicin permit prolonged experimentation in freely moving animals, allowing us to collect large kinematic datasets necessary to rigorously study posture and locomotion.\n\nConsiderable progress has been made in recent years using new tools (Machado et al., 2015, Sheppard et al., 2022, Darmohray et al., 2019, Machado et al., 2020, Jaarsma et al., 2023) and new perspectives (De Zeeuw et al., 2021) to understand the cerebellar contributions to sensorimotor (Heiney et al., 2021, Gaffield et al., 2022, Verpeut et al., 2023, Soetedjo and Horwitz, 2023) and non-sensorimotor behaviors (Carta et al., 2019, Chen et al., 2022, Jackman et al., 2020, Zamudio et al., 2023) in health and disease (Chao et al., 2020, Chao et al., 2021, van der Heijden et al., 2023). Underlying this considerable progress is an ever-improving ability to manipulate the cerebellum without compromising rigorous measures of behavior. Here \u2014 in support of similar goals \u2014 we validated a new chemogenetic approach (TRPV1/capsaicin-mediated activation and ablation) compatible with a high-throughput paradigm to measure behavior in freely swimming larval zebrafish (SAMPL). Our data uncover expected signatures of cerebellar contributions to posture and coordination, establishing the validity of our approach. Further, by comparing the impact of Purkinje cell ablation in time, we leverage the rapid maturation of the zebrafish to open a window into cerebellar control of posture and coordination across development. Our approach establishes a path forward for the larval zebrafish model to contribute to cerebellar mechanisms of postural control. The cerebellum emerged early in the evolution of vertebrates, when vertebrate life was underwater. Our work establishes a new tool to investigate ancient organizing principles of cerebellar function.\n\n## Materials and methods\n\n### Fish care\n\nAll procedures involving zebrafish larvae (Danio rerio) were approved by the Institutional Animal Care and Use Committee of New York University. Fertilized eggs were collected and maintained at 28.5 \u00b0C on a standard 14/10 hour light/dark cycle. Before 5 dpf, larvae were maintained at densities of 20\u201350 larvae per petri dish of 10 cm diameter, filled with 25\u201340 mL E3 with 0.5 ppm methylene blue. After 5 dpf, larvae were maintained at densities under 20 larvae per petri dish and fed cultured rotifers (Reed Mariculture) daily.\n\n### Fish lines\n\nTo generate the Tg(aldoca:TRPV1-TagRFP) line, the 5-kbp aldolase Ca (aldoca) promoter (Tanabe et al., 2010) and a gene cassette that includes TRPV1-Tag1RFP cDNA, rabbit beta-globin intron, and the SV40 polyadenylation signal (pAS) in pT2-4xUAS:TRPV1-RFPT (Chen et al., 2016) were subcloned into the Tol2 vector pT2KDest-RfaF (Nojima et al., 2010) by the Gateway system (pT2K-aldoca-TRPV1-Tag1RFP-pAS). To establish stable transgenic lines, Tol2 plasmid and transposase mRNA (25 ng/ \u00b5l each) were injected into one-cell-stage embryos.\n\nThe resulting Tg(aldoca:TRPV1-tagRFP) stable line allowed us to express the mammalian capsaicin-sensitive cation channel TRPV1 and the red fluorophore tagRFP in cerebellar Purkinje cells. Before exposure to capsaicin, fish were screened to ensure similar levels of tagRFP expression. When screening for transgene expression, we selected fish with clearly visible expression that was not excessively bright. The same criteria were applied when screening fish for GCaMP imaging and behavior experiments. Approximately a quarter of the fish that had aldoca:TRPV1-tagRFP expression had suitable expression levels for the activation experiment.\n\nWe measured neuronal activity using a genetically encoded calcium indicator, Tg(UAS:GCaMP6s) (Thiele et al., 2014), driven by Tg(aldoca:GAL4) (Takeuchi et al., 2015), or the Tg(elavl3:h2B-GCaMP6f) line (Dunn et al., 2016).\n\n### Confocal imaging of TRPV1-mediated activation / lesion\n\nImages were collected using a Zeiss LSM800 confocal microscope using a 20x1.0 NA water immersion objective. Larvae were mounted in 2% low melting point agar (catalog #16520, Thermo Fisher Scientific) in a dorsal up position. Anatomical images were acquired from fish anesthetized with 0.2 mg/ml ethyl- 3-aminobenzoic acid ethyl ester (MESAB, catalog # E10521, Sigma-Aldrich). To activate TRPV1-expressing Purkinje cells, fish were treated with 1 \u00b5M capsaicin in 0.2% DMSO in E3. To lesion Purkinje cells, fish were exposed to 10 \u00b5M capsaicin in 0.2% DMSO in E3. Control fish were treated with 0.2% DMSO in E3. Agar was removed around the tip of the tail to facilitate drug delivery. Fish were mounted throughout functional imaging experiments and kept in temperature controlled incubators between timepoints. Time series images were acquired with a two-photon microscope (Thorlabs Bergamo equipped with a Mai Tai HP laser tuned to 920 nm) with a framerate of 7.9 fps. Images were analyzed in Fiji (Schindelin et al., 2012); ROIs were drawn on nuclei of randomly selected Purkinje cells, which were then re-identified at each time point. Fluorescence for each cell and time point was normalized to the pre-capsaicin value. Cells with a dF/F0 of > 2 were considered activated and analyzed at the pre capsaicin and + 6 hr timpoint. A Fisher\u2019s exact test was performed to determine significance of the activated cells.\n\nTo image the anatomy of Purkinje cells exposed to 10 \u00b5M of capsaicin across time, the cerebellum was imaged at 7 dpf from fish mounted as above. Fish were unmounted and kept in E3 medium until the next day (8 dpf). At 8 dpf, fish were placed in 0.2% DMSO in E3 (control) or 10 \u00b5M capsaicin in 0.2% DMSO in E3 for 40\u201360 min, and imaged again after 1 hr of recovery in E3 post-treatment. Fish from both groups were imaged again at 9 dpf. Confocal images were analyzed in Fiji and Purkinje cell somata were counted in both hemispheres of the cerebellum. A conservative approach was taken for cell counting, with inclusion of any structures still resembling cells, regardless of potential non-functionality or signs of degradation. Consequently, the counts are likely an underestimate of the actual percentage of cell loss.\n\n### Zebrafish behavior recordings\n\nAll behavior was measured using the Scalable Apparatus for Measuring Posture and Locomotion (SAMPL) apparatus, consisting of a chamber where larvae could swim freely, an infrared illuminator, a camera, and software to process video in real time. A comprehensive description of the apparatus is contained in Zhu et al., 2023. Here we briefly describe the specific details of our experiments. Larvae were transferred to chambers at densities of 3\u20138 fish per chamber for 7 dpf experiments or 1\u20134 fish per chamber for 14 dpf experiments containing 25\u201330 ml of E3 or 0.2% DMSO / 1 \u00b5M capsaicin for activation experiments. After 24 hr, behavior recordings were paused for 30\u201360 min for feeding (feeding pause) and 1\u20132 ml of rotifer culture was added to each chamber. Larvae were removed from the apparatus after 48 hr.\n\nTo monitor behavior before/during Purkinje cell activation, 7 dpf larvae were placed in chambers with E3. At 8 and 9 dpf, control fish were placed in 0.2% DMSO in E3 and the condition fish were placed in 1 \u00b5M capsaicin in 0.2% DMSO in E3 for 6 hr. The recording started about 10\u201315 min after adding the fish to the capsaicin solution. Fish were fed after the 6 hr activation period. Video was sampled at 40 Hz in constant darkness. Control: 9626 bouts (63% climb bouts)/149 fish/8 experimental repeats; Activation: 9664 bouts (61% climb bouts)/155 fish/8 experimental repeats.\n\nTo monitor behavior before/after Purkinje cell lesions, 7 dpf/14 dpf larvae were placed in the chambers with E3. After feeding at 8 dpf/15 dpf, fish were placed in petri dishes with 0.2% DMSO in E3 (control) or 10 \u00b5M capsaicin in 0.2% DMSO in E3 for 40\u201360 min. Fish were then returned to the chambers in E3 and behavior recording was started. Video was sampled at 160 Hz in constant darkness. 7 dpf lesions: Control: 17895 bouts (61% climb bouts)/110 fish/14 experimental repeats; Lesion: 17819 bouts (57% climb bouts)/120 fish/14 experimental repeats; 14 dpf lesion: Control: 10666 bouts (58% climb bouts)/48 fish/7 experimental repeats; Lesion: 10708 bouts (54% climb bouts)/44 fish/7 experimental repeats.\n\nPectoral fin amputations were performed at 13 dpf. Two length-matched siblings were anesthetized in 0.2 mg/ml ethyl- 3-aminobenzoic acid ethyl ester (MESAB, catalog # E10521, Sigma-Aldrich) simultaneously and mounted in 2% low-melting temperature agar. Visualized under a stereomicroscope (Leica M80, 20 x/12 eyepieces, 1.0 x objective), the two pectoral fins from one larva were removed by pulling the base of the fin at the scapulocoracoid laterally with #5 Dumont forceps. After amputation, both fish were freed from the agar and allowed to recover in E3 until the next day, at which point half of the amputated and control fish were randomly selected for Purkinje cell lesions. Lesions were performed as above and behavior recorded for 48 hr. Behavior was recorded at a sampling rate of 160 Hz with a 14/10 hr light-dark cycle. Control: 1506/5090/5353 (slow/medium/fast) bouts/15 fish/8 experimental repeats; Purkinje cell lesion: 1667/6166/4299 (slow/medium/fast) bouts/18 fish/8 experimental repeats; Fin amputation: 1935/6295/4911 (slow/medium/fast) bouts/17 fish/8 experimental repeats.\n\n### Behavior analysis\n\nComprehensive descriptions of behavioral kinematics and baseline data for different genetic backgrounds are detailed in Zhu et al., 2023. Here, we describe the specific parameters used for our experiments. Behavior data were analyzed using custom-written software in MATLAB (Mathworks, Natick MA), which extracted individual swim bouts from the raw data (x/z position and pitch angle as a function of time).Only bouts during the circadian day were analyzed. Experimental repeats consisted of data collected across multiple SAMPL boxes from a single clutch of fish; the number of fish available determined how many apparatus were used (1-3). For comparisons across conditions (e.g. activation/control), fish from one clutch were randomly split into control and condition groups. As bout number is the fundamental unit of kinematic analysis, and different numbers of fish available would yield different numbers of bouts, we bounded our experiments to allow comparison across repeats. Specifically, if an experimental repeat contained less than 650 bouts it was excluded.\n\nBetween 22% and 27% of lesion experimental repeats contained less than 650 bouts and were not included in the analysis. For the activation experiments 56% (10 of 18) of experimental repeats were excluded with the 650 bouts threshold due to shorter recording times a higher fraction of experiments contained less than the threshold number of bouts. In subsequent analyses, the number of analyzed bouts was matched from both groups for a given experimental repeat to ensure an identical representation of control and condition bouts. Individual bouts were aligned at the time of peak speed. Bouts were excluded if their peak speed was <5 mm/s or the fish rotated more than 30\u00b0(120\u00b0/s) during the acceleration. The fractions excluded were as follows: for 7 dpf ablation: ctrl 0.2% lesion 0.15%; 7 dpf activation: ctrl 1% activation 1.7%; 14 dpf ablation dark: ctrl 0.05% ablation 0.05%; 14 dpf ablation light: ctrl 0.02% ablation 0.02%. For each experiment between 0.02% and 1.7% of bouts were excluded based on those criteria. Data was recorded either at 40 Hz (activation experiments) or 160 Hz (all other experiments). Effect size was calculated as the difference between the control value and the condition value relative to the control value. For fin body slope effect size the control value of the fast bin (i.e. largest slope) was used for effect size calculations to avoid overestimation of changes due to small control values.\n\nKinematic analyses proceeded as in Zhu et al., 2023; key parameters were defined as follows:\n\n### Functional GCaMP imaging in Purkinje cells\n\nAll calcium imaging experiments were performed using Tilt In Place Microscopy (TIPM), described comprehensively in Hamling et al., 2023b. Briefly, 7 dpf fish were mounted in the center of the uncoated side of a mirror galvanometer (catalog #GVS0111, Thorlabs) in 2% low-melting- point agarose. E3 was placed over the agarose, and the galvanometer mirror was placed under the microscope.\n\nA microscope (Thorlabs Bergamo) was used to measure fluorescence elicited by multiphoton excitation (920 nm) from a pulsed infrared laser (Mai Tai HP). Fast volumetric scanning was achieved using a piezo actuator (catalog #PFM450E, Thorlabs) to move the objective.Each frame of the volume (224x96 pixels) was collected with a 0.6 \u00b5s pixel dwell time (19.1 frames/s) resulting in a sampling rate of 3.82 volumes/s. While this imaging rate might be too slow to distinguish single spikes, it is suitable to measure a difference in calcium transients upon pitch stimulation to nose-up or nose-down direction. To set the galvanometer to a specific angle, a corresponding voltage was applied. The total angular range of the galvanometer is 40\u00b0. For the 30\u00b0stimuli, the galvanometer was driven to either +15\u00b0 or \u201315\u00b0 and then rotated so that the mirror was horizontal which allowed allowing for a 30\u00b0 deflection in one direction. For each cell, 21 trials were initially recorded for one stimulus direction. The galvanometer was then remounted to allow for a 30\u00b0 stimulus in the opposite direction, and 21 trials were similarly recorded for this direction. The order of nose-up and nose-down blocks were alternated for different fish. After all 42 trials were recorded fish were anesthetized with 0.2 mg/ml MESAB; after 10 min the baseline fluorescence at \u00b130\u00b0 was recorded to establish a baseline that controlled for eccentricity. Analysis was done using Fiji and MATLAB. In total, 43 Purkinje cells were imaged and 31 cells were kept from 8 fish. Only Purkinje cells that could be reliably identified at \u00b130\u00b0 were analyzed. To map the anatomical locations of the recorded cells, we imaged overview stacks for each fish. These stacks were manually aligned in Illustrator, and the cells included in the analysis were identified and color-coded according to their tuning properties.\n\nRegions of interest were drawn in Fiji and loaded into MATLAB to extract the intensity of fluorescence after motion correction was performed (Pnevmatikakis and Giovannucci, 2017). The integral of each stimulus was calculated and trials of the same direction were averaged as the tonic response to \u00b130\u00b0pitch. To extract cells with directional information the directionality index (DI) was calculated by dividing the difference of the up and down responses by the sum of it. Cells with a DI greater than \u00b1 0.35 were considered directionally tuned. Only Purkinje cells that were not directionally tuned were used for PCA and subsequent support vector machine decoding analysis.\n\nTo classify trial identity in the dataset, we used a support vector machine (SVM) with a linear kernel. The SVM model was trained using k-fold cross-validation, which splits the data into k subsets (folds). At each iteration, the model was trained on k-1 folds and tested on the remaining fold, ensuring that the model performance was evaluated on unseen data in each fold. Permutations were performed on randomized trial identity as a null hypothesis (fivefold cross-validation; 100 shuffles for randomization). Accuracy was calculated as 1 minus the classification loss.\n\nFor calcium imaging in 7 and 14 dpf larvae, a horizontal imaging protocol was used. In total 11 fish were imaged at 7 dpf and 7 fish at 14 dpf. A total of 138/90 (7/14 dpf) cells were recorded. Cells were imaged while the fish was horizontal. For horizontal imaging, we used a \u00b119\u00b0 stimulus, enabling us to alternate between up and down trials without the need to remount the galvanometer. Before each trial, a 15 s period was recorded; the average activity during this time was used as the baseline. Fish were pitched nose-down (\u201319\u00b0) for 15 s and rapidly returned to horizontal, whereupon calcium activity was measured. This stimulus was then repeated in the nose-up (+19\u00b0) direction. The maximum dFF of the first second upon return was analyzed. Cells were classified into directional or non-directional based on the directionality index as described above. PCA and decoder analyses were performed using activity from non-directional cells. Decoding accuracy was tested for each fish individually.\n\n### Statistics\n\nAll statistical testing was done in Matlab R2020a. Data across repeats was pooled for analysis. To assess the variability and determine whether pooling individual experimental repeats within each group was appropriate, we performed a two-way analysis of variance (ANOVA) on the interquartile ranges (IQRs) of the single experimental repeats for the 7 days post-fertilization (dpf) activation, the 7dpf lesion, and the 14dpf lesion experiments without excluding experimental repeats. The results of the ANOVAs and the IQRs for all experimental repeats are reported in Appendix 1\u2014tables 6\u201311.\n\nTo estimate the spread of the data we resampled distributions 100 times with replacement from the data from each condition and computed the expected value for control and perturbed datasets. These permutations were then used to explicitly compute a p-value for fitted variables (slope and R2 of fin body coordination).\n\nFor other variables two-sided Wilcoxon rank sum tests were performed. To correct for multiple testing the critical p-value was calculated based on \u03b1 = 0.05 using \u0160id\u00e1k\u2019s method. The critical p-value for each data set is reported in the respective table. Outliers were determined as deviating more than three times the scaled median absolute deviation (MAD) from the median. A scaling factor of 1.4826 was used to ensure that MAD-based outlier detection is consistent with other methods like Z-scores. Data is shown as median and 95% confidence interval of the median for measured parameters or as median with 25th and 75th percentile for bootstrapped variables. The 95% confidence intervals of the median were bootstrapped using 1000 samples. The medians with 95% confidence intervals for all parameters are reported in the tables. For linear fits a robust regression model (bisquare) was used and fitted variables (slope and R2 of fin body coordination) were bootstrapped (using 100 samples). To test speed dependency of the fin-lift/rotation ratio Spearman\u2019s rank correlation was computed and control and lesion values were compared. First, the correlation coefficients where transformed using Fisher\u2019s z-transformation to enable direct comparison of the z-scores. The difference between the z-scores was divided by the standard error and a z-test was performed. Additionally, we only considered effect sizes of \u226515% to be biologically relevant.\n",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Filippo Del Bene, Institut de la Vision France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97614.3.sa0](https://doi.org/10.7554/eLife.97614.3.sa0)\n\nThis important study successfully applies an innovative chemogenetic tool to investigate cerebellar function to advance our understanding of the contributions of Purkinje cell populations to postural control in larval zebrafish. The evidence supporting the conclusions is convincing and supported by rigorous statistical analysis. The study highlights the power of combining genetically targeted perturbations with quantitative high-throughput behavioral analysis and original microscopy tools.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97614.3.sa1](https://doi.org/10.7554/eLife.97614.3.sa1)\n\nThis study uses a variety of approaches to explore the role of cerebellum, and in particular Purkinje cells (PCs), in the development of postural control in larval zebrafish. A chemogenetic approach is used to either ablate PCs or disrupt their normal activity and a powerful, high-throughput behavioural tracking system then enables quantitative assessment of swim kinematics. Using this strategy, convincing evidence is presented that PCs are required for normal postural control in the pitch axis. Calcium imaging further shows that PCs encode tilt direction. Evidence is also presented that suggests the role of the cerebellum changes over the course of early development, although this claim is less robust. Finally, the authors build on their prior work showing that both axial muscles and pectoral fins contribute to \"climbs\" and show convincing evidence that PCs are required for speed-dependent engagement of the fins during this behavior. Overall, establishing a role for cerebellum in postural control is not very surprising. However, a clear motivation of this study was to establish a robust experimental platform to investigate the changing role of cerebellar circuits in the development of postural control in the highly experimentally accessible zebrafish larvae and in this regard the authors have certainly succeeded.\n\nThis revised version of the manuscript incorporates several improvements. In particular, additional analysis and methodological detail is provided regarding the chemogenetic manipulation, there is expanded analysis of the speed-dependency of pectoral fin engagement, and aspects of the decoding analysis are clearer. However, it is still not certain that the emergence of a dive phenotype over development (from 7 to 14 day post fertilisation) really represents changing role for the cerebellum as opposed to changing sensitivity of Purkinje cells to the chemogenetic treatment.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97614.3.sa2](https://doi.org/10.7554/eLife.97614.3.sa2)\n\nFranziska Auer et al. successfully applied the TRPV1/capsaicin tool to study the contribution of Purkinje cells to postural control. They leveraged the ability of this tool to both activate and ablate neurons within the same construct and tested its effects using their smart, high-throughput behavioral setup for postural control monitoring. With Purkinje cells ablated, balance did not appear to be disrupted; however, postural control was clearly modified along the pitch axis, with larval zebrafish maintaining, on average, a more nose-down posture compared to controls. While this effect is subtle, it is statistically robust and consistent with the group's previous findings using KillerRed-mediated ablation of Purkinje cells, where the observed postural angle change was explained by a disruption in cerebellar-mediated fin-trunk coordination. Here, the authors present a novel insight, demonstrating that this coordination is swim-speed dependent.\n\nFurthermore, the authors convincingly activated Purkinje cells at 7 dpf, and reported modifications in posture pitch angle comparable to those observed when ablating Purkinje cells. The authors suggest a potential desynchronization of Purkinje cells to explain this observation. Future characterization and application of this activation method to other developmental time points could be of major interest. The authors successfully validated the transfer of the TRPV1/capsaicin method for targeted cell ablation and activation to the study of cerebellar functions and reinforced our current understanding of the role of Purkinje cells in postural control.\n\nThis study also explores the developmental evolution of cerebellar function in postural control by comparing the effects of Purkinje cell ablation at 7 dpf and 14 dpf. Interestingly, only dive bout posture showed differential effects across these time points, with no significant impact at 7 dpf but a significant change in postural pitch angle at 14 dpf. In contrast, the effect of Purkinje cell ablation on the climbing bout postural angle remained comparable at both ages. Including additional developmental time points would further strengthen this critical characterization of cerebellar maturation in the context of postural control.\n\nTo examine whether Purkinje cell activity encodes postural tilt angle, the authors performed calcium imaging on 31 cells from 8 fish using their Tilt In Place Microscope (TIPM). They found that tilt-angle could be decoded from individual neurons with highly tuned responses, as well as from neurons that were not obviously tuned when pooling their data. The authors refer to this effect as pseudo-population coding because recordings were performed non-simultaneously across animals.\n\nThis study successfully integrates cutting-edge genetic tools, high-throughput behavioral assays, and advanced optical microscopy to investigate the role of populations of Purkinje cells in postural control. The authors have not only validated these powerful tools but have also provided novel insights into the cerebellar involvement in postural control, including the swim-speed dependence of fin-trunk coordination.\n\nThis work represents an important step toward a detailed understanding of cerebellar contributions to postural control and highlights the potential of combining genetically targeted perturbation with quantitative behavioral analysis.\n\nThe authors have addressed my previous concerns, and I congratulate them for their excellent work.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97614.3.sa3](https://doi.org/10.7554/eLife.97614.3.sa3)\n\nSummary:\n\nThis paper uses a new chemogenetic tool to investigate the role of cerebellar Purkinje cells in postural control. Using a high-throughput behavioral assay, they show that activation or ablation of Purkinje cells affects various aspects of postural control in zebrafish larvae during spontaneous swimming, and that the effects are more pronounced at later developmental time points, where the Purkinje cell number is much greater. Using a sophisticated imaging assay, they record Purkinje cell activity in response to tilt of the fish, and show that some Purkinje cells are tuned to tilt direction, and that the direction can even be decoded from untuned neurons.\n\nStrengths:\n\nOverall the study is nice, using a variety of genetic tools and behavioral analysis to address a fundamental question about the role of the cerebellum in postural control in fish\n",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3f8b6d6-1f41-4ae7-b94e-8d6238b80af0",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C1",
+      "claim": "Cerebellar dysfunction leads to postural instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebellar dysfunction leads to postural instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations to prior work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "5ba9d6d2-c41a-4c39-badf-d1ebea0e5819",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C2",
+      "claim": "The Tg(aldoca:TRPV1-tagRFP) line expresses rat TRPV1 exclusively in all cerebellar Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish in this line express rat TRPV1, a capsaicin-sensitive non-selective cation channel, exclusively in all cerebellar Purkinje cells (Figure 1A and B; Tanabe et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1A and B showing labeled Purkinje cells and citation to Tanabe et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "8bbc6841-b6b5-44f0-8408-e3e1849122fe",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C3",
+      "claim": "Endogenous zebrafish TRPV1 channels are insensitive to capsaicin.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous zebrafish TRPV1 channels are insensitive to capsaicin (Gau et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gau et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "b5ff1cbe-0366-4331-a0be-cf61bc9a48b5",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C4",
+      "claim": "Low doses of capsaicin can activate sensory and hypothalamic neurons while high doses are excitotoxic.",
+      "claim_type": "EXPLICIT",
+      "source": "low-doses of capsaicin can activate sensory and hypothalamic neurons while high-doses are excitotoxic (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "d90644fc-48f5-4b35-affb-5d91ea945c9f",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C5",
+      "claim": "Prolonged exposure to 1 \u00b5M capsaicin increased cerebellar activity in TRPV1-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Prolonged exposure to a low dose of capsaicin increased cerebellar activity (Figure 1E, Figure 1\u2014figure supplement 1A). At each timepoint, TRPV1-expressing cells showed increased intensity relative to a pre-capsaicin baseline, while TRPV1-negative cells did not (Figure 1E, 3/6 hr post 1 \u00b5M capsaicin: 28%/20%/ TRPV1+ cells F/F0 > 2; 40 cells from 3 fish vs. 0%/0%/ TRPV1- cells F/F0 > 2; 44 cells from 4 fish; activated cells after 6 hr of capsaicin treatment: 0/44 TRPV1- vs. 8/40 TRPV1+; Fisher's exact test: p=0.0018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data showing increased fluorescence in TRPV1+ cells and statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "018b19a0-4dc9-47e3-afce-4473513856bb",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C6",
+      "claim": "1 \u00b5M of capsaicin could sporadically activate subsets of Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Different cells showed increased activity at the 3,6, and 9 hr timepoints, and the same cells were differentially active at different timepoints. We interpret this as evidence that 1 \u00b5M of capsaicin could sporadically activate subsets of Purkinje cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation of variable activation patterns across timepoints.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "c5690691-7334-40b6-a9db-e9a4b17a107c",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C7",
+      "claim": "Capsaicin-induced activation is reversible after washout.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to baseline, fluorescent intensities increased after 6 hr, as in Figure 1E. Importantly, fluorescence returned to baseline levels after 40 min of washout (Figure 1\u2014figure supplement 1B, 6h post 1 \u00b5M capsaicin: 40.9%/ TRPV1+ cells F/F0 > 2; washout: 0%/ TRPV1+ cells F/F0 > 2; 22 cells from 3 fish; activated cells before 1 \u00b5M capsaicin treatment vs. after washout: Fisher's exact test: p=1). We conclude that capsaicin-induced activation is reversible after washout.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data showing return to baseline fluorescence after washout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "6112453e-ba21-4897-91c9-84a29109e9f3",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C8",
+      "claim": "Exposure to 10 \u00b5M capsaicin caused rapid axonal degeneration and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to high doses of capsaicin caused rapid axonal degeneration and cell death. We developed a protocol for Purkinje cell lesion: Tg(aldoca:TRPV1-tagRFP) larvae (without GCaMP6f) were imaged at 7 dpf, at 8 dpf after 1 hr of 10 \u00b5M capsaicin treatment and again at 9 dpf (Figure 1G). Timelapse imaging of the Purkinje cell axons showed rapid degeneration already 15 min after capsaicin treatment started (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by timelapse imaging showing axonal degeneration and cell counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "fd52487b-643c-4414-b45f-d6b477f3cea3",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C9",
+      "claim": "Cell numbers rapidly declined after 1 hr of 10 \u00b5M capsaicin treatment and did not show signs of recovery at 9 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell numbers rapidly declined after 1 hr of 10 \u00b5M capsaicin treatment and did not show any signs of recovery at 9 dpf (Figure 1G and H; median [inter-quartile range]; 7 dpf: control 213 [195 \u2013 271] cells vs. pre lesion 282 [255 \u2013 366] cells; 9 dpf: control 218 [201 \u2013 250] cells vs. post lesion 68 [52 \u2013 70] cells; 3 control and 3 lesioned fish).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification of Purkinje cell numbers before and after capsaicin treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "c765ba53-8591-4717-869d-ee971cb43e98",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C10",
+      "claim": "Larval zebrafish locomote in discrete bouts of rapid translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval zebrafish locomote in discrete bouts of rapid translation (Figure 2B, grey lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral recordings showing discrete swim bouts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "4107a8d2-4396-4853-9271-17ce2e92d820",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C11",
+      "claim": "To navigate up/down, fish sequence these bouts while maintaining a nose-up/nose-down pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "To navigate up/down, fish sequence these bouts while maintaining a nose-up/nose-down pitch (Zhu et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhu et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "fc69678e-4a44-403a-8381-279add43d942",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C14",
+      "claim": "Fish adopted more nose-down postural angles before dive bouts during activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish adopted more nose-down postural angles before dive bouts with a leftward shift of the distribution of postures before dive bouts (Figure 2K). Average dive bout posture was 24% more negative than in control fish (Figure 2L, median [95% confidence interval]: \u201316.6\u00b0 [-16.9 to \u201316.1\u00b0] vs. \u201320.5\u00b0 [-20.9 to \u201320.1\u00b0], p-value < 0.001, effect size = 24%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data showing more negative dive posture angles during activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "05887162-1526-44d4-8214-ef34a6931f48",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C15",
+      "claim": "Purkinje cell lesions at 7 dpf did not shift the average posture for dive bouts.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cell lesions at 7 dpf did not shift the average posture for dive bouts (Figure 2M and N -11.7\u00b0 [-11.9 to \u201311.5\u00b0] vs. \u201311.2\u00b0 [-11.4 to \u201311.0\u00b0], p-value = 0.002, effect size = \u20134%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data showing no meaningful change in dive posture angles after lesion at 7 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "4a8143ba-cde3-400e-b414-b748e23b5344",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C16",
+      "claim": "Purkinje cell activity is crucial to ensure that posture during climbs and dives is maintained within a normal range.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these data as evidence that Purkinje cell activity is crucial to ensure that posture during climbs and dives is maintained within a normal range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed postural changes after activation and ablation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "a8098360-870d-4fc7-844f-ed56104aa027",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C17",
+      "claim": "The number of Purkinje cells labeled in Tg(aldoca:TRPV1-tagRFP) roughly doubled between 7 and 14 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the number of Purkinje cells labeled in Tg(aldoca:TRPV1-tagRFP) roughly doubled between 7 and 14 dpf (Figure 3C, median [inter-quartile range] 7 dpf: 282 [255 \u2013 336]; 14 dpf: 662 [591 \u2013 733]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell counts from confocal imaging at 7 and 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "275dd764-5061-4555-b34b-86ad98870fa5",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C18",
+      "claim": "At 14 dpf, loss of Purkinje cells created more widespread behavioral deficits than at 7 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "At 14 dpf, the effects of Purkinje cell lesions on postural angles were more widespread than at 7 dpf and also affected dive postures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of behavioral effects at 7 dpf vs 14 dpf.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "57784af0-74d1-40df-9289-c7a4ea223da4",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C19",
+      "claim": "Climb bout posture was increased by 20% after Purkinje cell lesion at 14 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, climb bout posture was increased by 20% after Purkinje cell lesion (median [95% confidence interval]: 14.3\u00b0 [13.8\u201314.8\u00b0] vs. 17.1\u00b0 [16.2\u201317.8\u00b0]; p-value < 0.001; effect size: 20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing increased climb posture angles after lesion at 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "86ad0f70-9a19-4b82-b3e3-efddb1c4ba2b",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C20",
+      "claim": "After lesion at 14 dpf, dive bout postures were 26% more negative.",
+      "claim_type": "EXPLICIT",
+      "source": "At 14 dpf we also observed an effect on dive bout postures. After lesion dive bouts postures were 26% more negative (\u20139.8\u00b0 [-10.1 to \u20139.5\u00b0] vs. \u201312.3\u00b0 [-12.6 to \u201311.9\u00b0]; p-value < 0.001; effect size: 26%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data showing more negative dive posture angles after lesion at 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "29927ae7-aeea-498b-8eab-8d44954abf02",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C21",
+      "claim": "Purkinje cells of the cerebellum play a broader role in postural control at 14 dpf than at younger ages.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, consistent with morphological growth, Purkinje cells of the cerebellum play a broader role in postural control at 14 dpf than at younger ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the more widespread behavioral deficits observed at 14 dpf compared to 7 dpf.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "be6471c2-a4bc-438a-b315-b3f05dbabf40",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C22",
+      "claim": "Fin engagement is speed-dependent, with faster bouts producing greater lift for a given axial rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed that fin engagement is speed-dependent, with faster bouts producing greater lift for a given axial rotation (Figure 4B, left, Spearman's correlation coefficient: 0.2193; p = <0.001; of lift/rotation ratio [mm/deg] versus speed [mm/s] Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis of lift/rotation ratio versus speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "0758c019-f7eb-4b71-8889-e7315416f3a8",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C23",
+      "claim": "After Purkinje cell ablation at 14 dpf, fish produced less lift than expected when they swam fast.",
+      "claim_type": "EXPLICIT",
+      "source": "After Purkinje cell ablation, 14 dpf fish produced less lift than expected when they swam fast. We divided swim bouts into three different bins according to their peak speed (slow: 5\u20137.5 mm/s; medium: 7.5\u201315 mm/s; fast >15 mm/s) for both control and fish treated with 10 \u00b5M capsaicin. We parameterized the relationship between upward rotation and lift by fitting a line to swim bouts for each speed. After capsaicin exposure, the slopes of the medium and fast speed bins were significantly lower (Figure 4C, Figure 4\u2014figure supplement 1), reflecting a loss of speed-dependent modulation (median [95% confidence interval]: slope slow: 0.029 [0.028\u20130.031 mm/\u00b0] vs. 0.033 [0.032\u20130.034 mm/\u00b0], p-value = 0.341, effect size: 6%; slope medium: 0.041 [0.040\u20130.044 mm/\u00b0] vs. 0.018 [0.018\u20130.019 mm/\u00b0], p-value <0.001, effect size: \u201334%; slope fast: 0.068 [0.067\u20130.071 mm/\u00b0] vs. 0.026 [0.026\u20130.027 mm/\u00b0], p-value <0.001, effect size: \u201362%;).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of fin-body coordination at different swim speeds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "44612e5a-bbc3-4019-9339-f9e2fb99c3c5",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C24",
+      "claim": "Loss of Purkinje cells disrupts the speed-dependent increase in fin-mediated lift in older fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that loss of Purkinje cells disrupts the speed-dependent increase in fin-mediated lift in older, and to a lesser degree in younger fish. We interpret this finding as evidence that Purkinje cells are indispensable for normal coordination of the fins and body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observed disruption of fin-body coordination after Purkinje cell ablation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "b480049d-8083-4161-8aa5-14e77218d8ea",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C25",
+      "claim": "Individual Purkinje cells showed either directionally-tuned or untuned patterns of responses to pitch tilts.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual Purkinje cells showed either directionally-tuned (Figure 5C, n=18) or untuned (Figure 5D, n=13) patterns of responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data during pitch tilt stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "c2c9e5eb-6c4d-4284-960d-abd020cf4e5b",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C26",
+      "claim": "Tuned cells were distributed throughout the lateral cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuned cells were distributed throughout the lateral cerebellum (Figure 5E), and showed a slight preference for nose-down stimuli (12 vs 6, Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anatomical mapping of recorded cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "9039de19-986b-45a3-be91-582934b4d9d1",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C27",
+      "claim": "Pooling responses from untuned cells allowed decoding of stimulus direction.",
+      "claim_type": "EXPLICIT",
+      "source": "While untuned cells did not show overt directional preferences, pooling their responses allowed decoding of stimulus direction. We applied principal component analysis (PCA) to visualize the data and assess whether the trial types even for untuned cells exhibited distinct separation based on their trial identity (nose-up or nose-down). PCA of the integral of the full responses on each trial from untuned neurons showed near-complete segregation of trial types (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PCA analysis showing segregation of trial types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "7c039eba-842e-4cae-a88d-8d21413bdf70",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C28",
+      "claim": "Pseudo-populations with more than three untuned cells achieved accurate decoding well above chance levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudo-populations with more than three cells achieved accurate decoding well above chance levels (determined by shuffling trial identity)(median [inter-quartile range] accuracy: 3/5/7/10/13 cells: 0.78 [0.68\u20130.91] / 0.88 [0.70\u20130.88] / 1 [0.84\u20131] / 1 [0.97\u20131] / 1 [1 \u2013 1]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by support vector machine decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "6e2e2d86-8d06-44fb-ad0f-45def2f3cc23",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C29",
+      "claim": "The relative number of tuned cells per fish was comparable between 7 and 14 dpf larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative number of tuned cells per fish was comparable between 7 and 14 dpf larvae (Figure 5\u2014figure supplement 1; median [inter-quartile range] at 7 dpf: 7 [6\u201334%]; 14 dpf: 8 [2\u201319%]; p-value = 0.7763).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of tuned cell percentages at 7 and 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "73e026a8-77b7-480d-8888-e46682d13bcc",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C30",
+      "claim": "The preferred direction of tuned cells was different at 7 and 14 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "While most cells were not directionally selective, the preferred direction of tuned cells was different at 7 and 14 dpf: at 7 dpf more Purkinje cells were nose-down tuned (2/31 up/down) but at 14 dpf more cells were nose-up tuned (11/3 up/down Figure 5\u2014figure supplement 1; Fisher's exact test, p-value < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of tuning directions at 7 and 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "75501801-9df9-4995-8048-d2f48499f00f",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C31",
+      "claim": "Decoding accuracy of untuned cells did not differ between 7 and 14 dpf larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe differences in decoding accuracy between 7 and 14 dpf larvae (Figure 5\u2014figure supplement 1; median [inter-quartile range] 7 dpf: 0.68 [0.63\u20130.83]; 14 dpf: 0.73 [0.65\u20130.79]; p-value = 0.9468).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of decoding accuracy at 7 and 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "a93012db-face-4774-9486-0106662c5978",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C32",
+      "claim": "Cerebellar Purkinje cells can encode pitch direction both at the single neuron and population levels with similar encoding accuracy in young and older larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that cerebellar Purkinje cells can encode pitch direction both at the single neuron and population levels with similar encoding accuracy in young and older larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the imaging and decoding results at 7 and 14 dpf.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "0f902bd3-5472-4343-80f2-304395881670",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C33",
+      "claim": "The cerebellum integrates sensory information from vestibular (balance), visual, and proprioceptive systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum integrates sensory information from vestibular (balance), visual, and proprioceptive systems (Ioffe, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ioffe, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "ab029bd5-f0e4-4829-abcf-df043ad1cf49",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C34",
+      "claim": "Disruptions to mature cerebellar function lead to instability, unsteady gait and a compromised sense of balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruptions to mature cerebellar function lead to instability, unsteady gait and a compromised sense of balance (Morton et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Morton et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "ad78eadc-670c-46be-9b5e-1fc93809bb69",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C35",
+      "claim": "Development of the cerebellum coincides with postural maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Development of the cerebellum coincides with postural maturation, and early development of the cerebellum has been extensively studied (Sepp et al., 2024, Leto et al., 2016, Beckinghausen and Sillitoe, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sepp et al., 2024, Leto et al., 2016, Beckinghausen and Sillitoe, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "72b3ae40-b9c2-411d-ace6-c2353356419a",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C36",
+      "claim": "Changes to morphology and activity of Purkinje cells are thought to underlie the gradual refinement of motor control.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, changes to morphology and activity of the output neurons of the cerebellar cortex, Purkinje cells, are thought to underlie the gradual refinement of motor control (Beekhof et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Beekhof et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "58e40bdb-90e5-4d54-a763-6b19f6283326",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C37",
+      "claim": "The contributions of developing Purkinje cells to postural control remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the contributions of developing Purkinje cells to postural control remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "2cd076e0-e85f-471e-8968-13292c75e617",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C38",
+      "claim": "Larval zebrafish balance in the pitch axis by timing locomotion to countermand gravity-induced destabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, larval zebrafish balance in the pitch axis (nose-up/nose-down) by timing locomotion to countermand gravity-induced destabilization (Ehrlich and Schoppik, 2017a, Ehrlich and Schoppik, 2017b) and by coordinated use of paired appendages (fins) and axial musculature (trunk; Ehrlich and Schoppik, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ehrlich and Schoppik, 2017a, 2017b, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "aa900243-ecb3-46b3-b064-c3cbcda5baba",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C39",
+      "claim": "The zebrafish cerebellum shares the same circuit structure as the mammalian cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomically, the zebrafish cerebellum shares the same circuit structure as the mammalian cerebellum (Hibi and Shimizu, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hibi and Shimizu, 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "585aa733-9c5a-41fe-b842-54a83745be59",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C40",
+      "claim": "The zebrafish cerebellum is compartmentalized into regions with distinct response properties and output targets.",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish cerebellum is compartmentalized into regions with distinct response properties and output targets (Hibi and Shimizu, 2012, Heap et al., 2013, Matsui et al., 2014, Harmon et al., 2017, Dorigo et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "b2896c92-1829-40f8-a138-d38fb1fe467a",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C41",
+      "claim": "Multimodal representations were found in both cerebellar granule cells and Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Multimodal representations were found in both cerebellar granule cells (Knogler et al., 2017, Sylvester et al., 2017) and Purkinje cells (Harmon et al., 2017, Chang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "ab13a7c4-c77a-4d03-8374-74bb5d1ef788",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C42",
+      "claim": "Brain-wide imaging studies have established balance-relevant sensitivity in the cerebellum, identifying neurons that encode body angle and velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, brain-wide imaging studies have established balance-relevant sensitivity in the cerebellum, identifying neurons that encode body angle and velocity (Migault et al., 2018) and neurons responsive to direct inner-ear stimulation (Favre-Bulle et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Migault et al., 2018 and Favre-Bulle et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "f3ec56c5-315c-4001-9916-fdfb3a448861",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C43",
+      "claim": "The conductance of a TRP channel is ~1000 x that of a channel rhodopsin.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the conductance of a TRP channel is ~1000 x that of a channel rhodopsin (Bernstein et al., 2012) suggesting that even low levels of TRPV1 expression will be biologically effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bernstein et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "70a0c5b3-c7d8-4ddb-9a1b-140b3bb8a1a8",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C44",
+      "claim": "Both activation and ablation of Purkinje cells could induce changes in pitch axis posture.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used the TRPV1/capsaicin system to investigate the contribution of cerebellar Purkinje cells to postural behaviors as larval zebrafish swam freely in depth. Both activation and ablation of Purkinje cells could induce changes in pitch axis posture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "5defc461-6a4e-4a62-8f42-3c5841838361",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C45",
+      "claim": "Ablation in older larvae resulted in bigger disruptions to posture.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation in older larvae resulted in bigger disruptions to posture, allowing inference of the functional consequences of cerebellar development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the main findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "6616540a-31aa-4f3c-b954-b14a4af1ef28",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C46",
+      "claim": "Ablation of Purkinje cells in older larvae disrupted the coordination of trunk and paired appendages (fins), impairing vertical navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ablation of Purkinje cells in older larvae disrupted the coordination of trunk and paired appendages (fins), impairing vertical navigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "e701d9b2-d543-4d19-b96f-9190ef999b77",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C47",
+      "claim": "Pitch-tilt direction can be reliably decoded from patterns of Purkinje cell activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we could reliably decode pitch-tilt direction from patterns of Purkinje cell activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "713644c8-775d-4c1b-be84-ad912f2d78d8",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C48",
+      "claim": "This work establishes a clear role for the cerebellum in larval zebrafish postural control, even during the earliest stages of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together our results establish a clear role for the cerebellum in larval zebrafish postural control, even during the earliest stages of development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the main conclusions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "3a858b16-8da6-42e5-8556-7f9028bd2185",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C49",
+      "claim": "Purkinje cell output is inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cell output is inhibitory (Ito et al., 1964, Ito et al., 1970), Purkinje cells in the lateral cerebellum project to vestibular nuclei (Matsui et al., 2014, Knogler et al., 2019), and Purkinje cells are tonically active (Cerminara and Rawson, 2004, Jadhav et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "96fc48e7-24a8-4e08-9214-5258b0b51e63",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C50",
+      "claim": "Purkinje cells in the lateral cerebellum project to vestibular nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cell output is inhibitory (Ito et al., 1964, Ito et al., 1970), Purkinje cells in the lateral cerebellum project to vestibular nuclei (Matsui et al., 2014, Knogler et al., 2019), and Purkinje cells are tonically active (Cerminara and Rawson, 2004, Jadhav et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Matsui et al., 2014 and Knogler et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "adaf33c3-f4bd-47c4-961b-97278e929a02",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C51",
+      "claim": "Purkinje cells are tonically active.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cell output is inhibitory (Ito et al., 1964, Ito et al., 1970), Purkinje cells in the lateral cerebellum project to vestibular nuclei (Matsui et al., 2014, Knogler et al., 2019), and Purkinje cells are tonically active (Cerminara and Rawson, 2004, Jadhav et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cerminara and Rawson, 2004 and Jadhav et al., 2023.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "b0868b9e-f0bf-4a37-aa50-a597a5273c0b",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C52",
+      "claim": "The net effect of Purkinje cell loss would be disinhibition of target nuclei responsible for encoding posture and parameterizing corrective pitch-axis behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the net effect of Purkinje cell loss would be disinhibition of target nuclei responsible for encoding posture and parameterizing corrective pitch-axis behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on known properties of Purkinje cell output.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "0f75c3d7-fed9-459e-b539-586e8e970872",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C53",
+      "claim": "Synchronized/precisely timed Purkinje cell output is thought to shape movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronized/precisely timed Purkinje cell output is thought to shape movements (Heck et al., 2007, Person and Raman, 2011, Person and Raman, 2012, Han et al., 2018, Payne et al., 2019, Nashef et al., 2023), although perhaps not for all behaviors (Herzfeld et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "213dc9d2-e411-46d7-a142-9c8c9b7590bd",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C54",
+      "claim": "The net effect of 1 \u00b5M of capsaicin is ultimately disruptive to Purkinje cell synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Our imaging suggests that the set of Purkinje cells activated at any one moment in time is limited and random. We therefore propose that the net effect of 1 \u00b5M of capsaicin is ultimately disruptive to Purkinje cell synchrony, and thus likely disruptive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on imaging observations of stochastic activation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "cd137208-4b30-4248-9a07-80d4fd436caa",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C55",
+      "claim": "Population coding requires that multiple Purkinje cells converge onto downstream targets, which is well-established in cerebellar target nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Population coding requires that multiple Purkinje cells converge onto downstream targets, which is well-established in cerebellar target nuclei (Person and Raman, 2011, Heck et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Person and Raman, 2011 and Heck et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "cbffd32c-0e3d-4caa-af68-0333ac59d975",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C56",
+      "claim": "In larval zebrafish, Purkinje cells involved in locomotion converge on eurydendroid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In larval zebrafish, Purkinje cells involved in locomotion converge on eurydendroid cells; electrophysiological recordings confirm a many-to-one convergence scheme that could similarly support population coding (Harmon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Harmon et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "fefcee5e-a187-4395-8b70-c5a5ed292f04",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C57",
+      "claim": "Vestibular-sensitive cells are located in the lateral cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Vestibular-sensitive cells are located in the lateral cerebellum (Migault et al., 2018, Favre-Bulle et al., 2018), which projects to hindbrain regions that contain vestibular nuclei (Hamling et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Migault et al., 2018, Favre-Bulle et al., 2018, and Hamling et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "d93b94ff-cbc5-41d0-859e-0827f57a12d2",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C58",
+      "claim": "TRPV1/capsaicin is a well-validated approach that permits parametric (i.e. dose-dependent) activation/ablation with a single transgenic line.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPV1/capsaicin is a well-validated approach (Chen et al., 2016) that permits parametric (i.e. dose-dependent) activation/ablation with a single transgenic line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "331c551f-ec32-4a6d-af25-1f4af725c692",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C59",
+      "claim": "TRPV1/capsaicin does not require light, facilitating dissociation of vestibular from visual contributions.",
+      "claim_type": "EXPLICIT",
+      "source": "It does not require light, facilitating dissociation of vestibular from visual contributions without requiring genetically blind fish as in other studies using excitatory opsins (Schoppik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the properties of the TRPV1/capsaicin system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "a86055e2-de4a-4673-8fd4-86dac4120003",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C60",
+      "claim": "TRPV1-mediated ablation is rapid and precise, with capsaicin triggering almost instantaneous cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TRPV1-mediated ablation is rapid and precise, with capsaicin triggering almost instantaneous cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the timelapse imaging data showing rapid axonal degeneration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "4d71d739-6426-4023-8e29-4f3f48470f55",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "claim_id": "C61",
+      "claim": "The cerebellum emerged early in the evolution of vertebrates, when vertebrate life was underwater.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum emerged early in the evolution of vertebrates, when vertebrate life was underwater.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about evolutionary history.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The TRPV1/capsaicin system enables dose-dependent chemogenetic manipulation of Purkinje cells in larval zebrafish. Low doses (1 \u00b5M) of capsaicin reversibly activate TRPV1-expressing Purkinje cells, while high doses (10 \u00b5M) cause rapid excitotoxic cell death and ablation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C9 provide converging evidence from calcium imaging (C5, C7), timelapse microscopy (C8), and cell counts (C9) that validate both activation and ablation protocols. The reversibility of activation (C7) and rapidity of ablation (C8, C60) are well-documented. The approach builds on prior validation in other zebrafish cell types (C4, C58) and leverages the high conductance of TRP channels (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "12309552-65fb-4940-aec0-016bcd71cb62",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Purkinje cell activation and ablation both modify pitch-axis postural control in 7 dpf larvae. Activation with 1 \u00b5M capsaicin shifts both climb and dive postures (C14), while ablation with 10 \u00b5M capsaicin affects climb postures but not dive postures (C15).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 present quantitative behavioral data with appropriate statistical testing (p<0.001, effect sizes \u226515%) showing differential effects of activation versus ablation on postural control. The authors appropriately acknowledge limitations in directly comparing these experiments due to different genetic backgrounds and apparatus generations, but the individual findings within each paradigm are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "6843104a-99e9-4d6f-af6f-ea329441855a",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Purkinje cell ablation produces more widespread postural deficits at 14 dpf compared to 7 dpf, with effects on both climb and dive postures at the older age. This developmental difference correlates with a doubling of Purkinje cell numbers between these ages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 provide cell counts and behavioral data showing age-dependent expansion of cerebellar function. At 14 dpf, ablation affects both climb (20% increase) and dive (26% more negative) postures, whereas at 7 dpf only climb postures are affected. The correlation with morphological growth (C17) supports the developmental interpretation (C21).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "bccb6a15-2b3e-4224-a66b-d2037a22b621",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Purkinje cell ablation at 14 dpf disrupts speed-dependent fin-body coordination during climbing. After ablation, fish show reduced lift at medium and fast swim speeds, with effect sizes of -34% and -62% respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 establishes the baseline speed-dependent relationship (Spearman's r=0.2193, p<0.001), while C23 demonstrates significant disruption after ablation with appropriate statistical testing and effect size calculations. The interpretation (C24) is supported by the data, though the authors acknowledge this effect is stronger in older larvae.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Purkinje cells encode pitch-tilt direction both at single-cell and population levels. Individual cells show directional tuning (58% of cells, n=18/31), while untuned cells collectively enable accurate decoding of tilt direction through population coding (accuracy >0.88 with \u22655 cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 provide calcium imaging data, PCA analysis, and SVM decoding results demonstrating both single-cell tuning and population-level encoding. The decoding accuracy is validated against shuffled controls and shows clear above-chance performance. The conclusion (C32, C47) appropriately integrates these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "c8548eae-9b91-40e7-8a38-c8c78f413225",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The proportion of directionally tuned Purkinje cells remains similar between 7 and 14 dpf (7% vs 8%, p=0.78), but the preferred tuning direction shifts from predominantly nose-down at 7 dpf to nose-up at 14 dpf (p<0.001). Population decoding accuracy does not differ between ages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 present longitudinal imaging data with appropriate statistical comparisons. The shift in tuning direction (C30) is statistically significant (Fisher's exact test, p<0.001), while the proportion of tuned cells (C29) and decoding accuracy (C31) show no significant differences. These findings suggest developmental changes in cerebellar processing despite stable encoding capacity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "46148d87-469f-4a2a-84ff-d1e5a389625c",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that Purkinje cell ablation causes disinhibition of vestibular target nuclei, while 1 \u00b5M capsaicin activation disrupts Purkinje cell synchrony through stochastic activation of cell subsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C51 cite established properties of Purkinje cells, but C52 and C54 are mechanistic inferences not directly tested in this study. While the proposals are plausible given the imaging data (C6) and known circuit properties (C53), they remain speculative without direct measurements of downstream target activity or synchrony. The authors appropriately frame these as proposals requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "24f032de-b764-4bee-a295-8d682c3db6a8",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Population coding by Purkinje cells is supported by established convergence patterns onto downstream targets in both mammals and larval zebrafish, with vestibular-sensitive cells located in the lateral cerebellum projecting to vestibular nuclei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are well-supported by multiple citations to prior anatomical and electrophysiological work. These claims provide important context for interpreting the population decoding results but represent established knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The cerebellum plays a conserved role in postural control across vertebrates, integrating multimodal sensory information. In larval zebrafish, the cerebellum shares structural and functional features with mammals, making it a suitable model for studying cerebellar contributions to posture during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C33-C42, and C61 establish the broader context through citations to prior work. Claim C48 synthesizes the current findings to conclude that the cerebellum plays a clear role in larval zebrafish postural control even at early developmental stages. This conclusion is well-supported by the experimental results presented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "4d9ea0bd-abc6-42b6-ae22-8643bbdd6af6",
+      "content_id": "fe0adca4-fed0-46eb-8a67-9f4848cdd0c2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TRPV1/capsaicin offers methodological advantages over optogenetic approaches for studying cerebellar function, including dose-dependent control, no light requirement, and compatibility with freely swimming behavior in darkness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 accurately describe the advantages of the TRPV1/capsaicin system, supported by citation to prior validation work (C58) and logical inference about experimental design (C59). These advantages are demonstrated throughout the manuscript's experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "922ca045-b817-46f1-9155-1812ded8f30d",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The TRPV1/capsaicin chemogenetic system was validated for use in zebrafish Purkinje cells, demonstrating that low-dose capsaicin (1 \u00b5M) can sporadically activate subsets of Purkinje cells in a reversible manner, while high-dose capsaicin (10 \u00b5M) causes rapid and complete ablation of these cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers explicitly praised the validation and application of the TRPV1/capsaicin tool. One reviewer stated the authors 'successfully applied the TRPV1/capsaicin tool' and 'successfully validated the transfer of the TRPV1/capsaicin method for targeted cell ablation and activation.' Another noted the study 'successfully applies an innovative chemogenetic tool' with 'convincing evidence.' No concerns were raised about the methodology or validation of this approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "ee07615b-1ffa-4ea8-b690-b8069a377ed6",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "High-dose capsaicin (10 \u00b5M) treatment causes rapid axonal degeneration within 15 minutes and substantial loss of Purkinje cells that does not recover by 9 dpf.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the ablation protocol without critique. One reviewer noted 'TRPV1-mediated ablation is rapid and precise' and another stated the authors 'convincingly' demonstrated effects of Purkinje cell ablation. The timelapse imaging and cell count data supporting these claims were not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "56b7a361-8cdc-4a16-8755-1d25a49897ea",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Both activation (1 \u00b5M capsaicin) and ablation (10 \u00b5M capsaicin) of Purkinje cells at 7 dpf alter pitch axis posture during climbing bouts, with activation causing more nose-down postures and ablation causing more nose-up postures, while dive bout postures remain largely unaffected at this age.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers found this evidence 'convincing' with one stating 'convincing evidence is presented that PCs are required for normal postural control in the pitch axis.' Another reviewer noted the authors 'convincingly activated Purkinje cells at 7 dpf, and reported modifications in posture pitch angle comparable to those observed when ablating Purkinje cells.' The statistical robustness was explicitly praised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The cerebellum's role in postural control expands developmentally: Purkinje cell numbers double between 7 and 14 dpf, and ablation at 14 dpf produces more widespread behavioral deficits affecting both climb and dive postures, compared to more limited effects at 7 dpf.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledged the developmental comparison, one explicitly stated 'it is still not certain that the emergence of a dive phenotype over development (from 7 to 14 day post fertilisation) really represents changing role for the cerebellum as opposed to changing sensitivity of Purkinje cells to the chemogenetic treatment.' Another reviewer suggested 'Including additional developmental time points would further strengthen this critical characterization.' The claim about developmental changes is thus treated with some reservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "eda0e8e3-29d5-410f-ba6a-16d6047ba5e9",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Purkinje cells are required for speed-dependent fin-body coordination during vertical navigation, with ablation at 14 dpf disrupting the normal increase in fin-mediated lift at medium and fast swim speeds.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praised this finding. One stated the authors 'show convincing evidence that PCs are required for speed-dependent engagement of the fins during this behavior' and noted this represents 'a novel insight, demonstrating that this coordination is swim-speed dependent.' Another reviewer highlighted this as a key contribution, stating the work provided 'novel insights into the cerebellar involvement in postural control, including the swim-speed dependence of fin-trunk coordination.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "17b2430c-6757-4aec-a453-04695e1cd0d4",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Purkinje cells encode pitch-tilt direction both at single-cell and population levels, with some cells showing directional tuning and others contributing to population coding through pooled responses, and this encoding capability is present at both 7 and 14 dpf.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the calcium imaging and decoding results. One noted 'Calcium imaging further shows that PCs encode tilt direction' and another stated 'they show that some Purkinje cells are tuned to tilt direction, and that the direction can even be decoded from untuned neurons.' The manuscript revision was noted to have made 'aspects of the decoding analysis clearer,' suggesting initial concerns were addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "d01a131a-6620-49a3-8e16-0386120614d9",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Background claims establishing the cerebellum's role in postural control, its developmental importance, and the zebrafish model's relevance for studying cerebellar function.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are citation-based and were not questioned by reviewers. One reviewer noted 'establishing a role for cerebellum in postural control is not very surprising,' indicating acceptance of the general framework. The overall study was praised for establishing 'a clear role for the cerebellum in larval zebrafish postural control.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "6b7aee7b-605b-4ed6-a427-1213ef112442",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Mechanistic interpretations about how Purkinje cell loss leads to behavioral changes through disinhibition of target nuclei and disruption of synchronized output, and how population coding may operate in the zebrafish cerebellum.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive claims were not challenged by reviewers. One reviewer noted the authors 'suggest a potential desynchronization of Purkinje cells to explain' the activation results, indicating acceptance of this mechanistic reasoning. The discussion of population coding and convergence was not critiqued.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "e9da5bc0-de2c-4ddf-a37b-1af878f1b108",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The conductance of TRP channels is approximately 1000x greater than channelrhodopsins, making TRPV1 biologically effective even at low expression levels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This technical claim supporting the choice of TRPV1 was not questioned by reviewers and is supported by citation. It serves as methodological justification that reviewers implicitly accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "a42d4f4f-8362-4c04-a87c-d45e45c2a206",
+      "content_id": "0d8fee48-5d0d-43ec-a237-4613d1a7be57",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Larval zebrafish locomote in discrete swim bouts and navigate vertically by maintaining nose-up or nose-down pitch angles during these bouts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These basic behavioral observations were not questioned by reviewers and serve as established context for the experimental manipulations. One reviewer noted the authors 'build on their prior work' in this area.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ba9d6d2-c41a-4c39-badf-d1ebea0e5819",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "8bbc6841-b6b5-44f0-8408-e3e1849122fe",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "b5ff1cbe-0366-4331-a0be-cf61bc9a48b5",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "d90644fc-48f5-4b35-affb-5d91ea945c9f",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "018b19a0-4dc9-47e3-afce-4473513856bb",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "c5690691-7334-40b6-a9db-e9a4b17a107c",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "6112453e-ba21-4897-91c9-84a29109e9f3",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "fd52487b-643c-4414-b45f-d6b477f3cea3",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "f3ec56c5-315c-4001-9916-fdfb3a448861",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "d93b94ff-cbc5-41d0-859e-0827f57a12d2",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "a86055e2-de4a-4673-8fd4-86dac4120003",
+      "result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d"
+    },
+    {
+      "claim_id": "c765ba53-8591-4717-869d-ee971cb43e98",
+      "result_id": "12309552-65fb-4940-aec0-016bcd71cb62"
+    },
+    {
+      "claim_id": "4107a8d2-4396-4853-9271-17ce2e92d820",
+      "result_id": "12309552-65fb-4940-aec0-016bcd71cb62"
+    },
+    {
+      "claim_id": "fc69678e-4a44-403a-8381-279add43d942",
+      "result_id": "12309552-65fb-4940-aec0-016bcd71cb62"
+    },
+    {
+      "claim_id": "05887162-1526-44d4-8214-ef34a6931f48",
+      "result_id": "12309552-65fb-4940-aec0-016bcd71cb62"
+    },
+    {
+      "claim_id": "4a8143ba-cde3-400e-b414-b748e23b5344",
+      "result_id": "12309552-65fb-4940-aec0-016bcd71cb62"
+    },
+    {
+      "claim_id": "70a0c5b3-c7d8-4ddb-9a1b-140b3bb8a1a8",
+      "result_id": "12309552-65fb-4940-aec0-016bcd71cb62"
+    },
+    {
+      "claim_id": "a8098360-870d-4fc7-844f-ed56104aa027",
+      "result_id": "6843104a-99e9-4d6f-af6f-ea329441855a"
+    },
+    {
+      "claim_id": "275dd764-5061-4555-b34b-86ad98870fa5",
+      "result_id": "6843104a-99e9-4d6f-af6f-ea329441855a"
+    },
+    {
+      "claim_id": "57784af0-74d1-40df-9289-c7a4ea223da4",
+      "result_id": "6843104a-99e9-4d6f-af6f-ea329441855a"
+    },
+    {
+      "claim_id": "86ad0f70-9a19-4b82-b3e3-efddb1c4ba2b",
+      "result_id": "6843104a-99e9-4d6f-af6f-ea329441855a"
+    },
+    {
+      "claim_id": "29927ae7-aeea-498b-8eab-8d44954abf02",
+      "result_id": "6843104a-99e9-4d6f-af6f-ea329441855a"
+    },
+    {
+      "claim_id": "5defc461-6a4e-4a62-8f42-3c5841838361",
+      "result_id": "6843104a-99e9-4d6f-af6f-ea329441855a"
+    },
+    {
+      "claim_id": "be6471c2-a4bc-438a-b315-b3f05dbabf40",
+      "result_id": "bccb6a15-2b3e-4224-a66b-d2037a22b621"
+    },
+    {
+      "claim_id": "0758c019-f7eb-4b71-8889-e7315416f3a8",
+      "result_id": "bccb6a15-2b3e-4224-a66b-d2037a22b621"
+    },
+    {
+      "claim_id": "44612e5a-bbc3-4019-9339-f9e2fb99c3c5",
+      "result_id": "bccb6a15-2b3e-4224-a66b-d2037a22b621"
+    },
+    {
+      "claim_id": "6616540a-31aa-4f3c-b954-b14a4af1ef28",
+      "result_id": "bccb6a15-2b3e-4224-a66b-d2037a22b621"
+    },
+    {
+      "claim_id": "b480049d-8083-4161-8aa5-14e77218d8ea",
+      "result_id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d"
+    },
+    {
+      "claim_id": "c2c9e5eb-6c4d-4284-960d-abd020cf4e5b",
+      "result_id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d"
+    },
+    {
+      "claim_id": "9039de19-986b-45a3-be91-582934b4d9d1",
+      "result_id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d"
+    },
+    {
+      "claim_id": "7c039eba-842e-4cae-a88d-8d21413bdf70",
+      "result_id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d"
+    },
+    {
+      "claim_id": "a93012db-face-4774-9486-0106662c5978",
+      "result_id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d"
+    },
+    {
+      "claim_id": "e701d9b2-d543-4d19-b96f-9190ef999b77",
+      "result_id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d"
+    },
+    {
+      "claim_id": "6e2e2d86-8d06-44fb-ad0f-45def2f3cc23",
+      "result_id": "c8548eae-9b91-40e7-8a38-c8c78f413225"
+    },
+    {
+      "claim_id": "73e026a8-77b7-480d-8888-e46682d13bcc",
+      "result_id": "c8548eae-9b91-40e7-8a38-c8c78f413225"
+    },
+    {
+      "claim_id": "75501801-9df9-4995-8048-d2f48499f00f",
+      "result_id": "c8548eae-9b91-40e7-8a38-c8c78f413225"
+    },
+    {
+      "claim_id": "3a858b16-8da6-42e5-8556-7f9028bd2185",
+      "result_id": "46148d87-469f-4a2a-84ff-d1e5a389625c"
+    },
+    {
+      "claim_id": "96fc48e7-24a8-4e08-9214-5258b0b51e63",
+      "result_id": "46148d87-469f-4a2a-84ff-d1e5a389625c"
+    },
+    {
+      "claim_id": "adaf33c3-f4bd-47c4-961b-97278e929a02",
+      "result_id": "46148d87-469f-4a2a-84ff-d1e5a389625c"
+    },
+    {
+      "claim_id": "b0868b9e-f0bf-4a37-aa50-a597a5273c0b",
+      "result_id": "46148d87-469f-4a2a-84ff-d1e5a389625c"
+    },
+    {
+      "claim_id": "0f75c3d7-fed9-459e-b539-586e8e970872",
+      "result_id": "46148d87-469f-4a2a-84ff-d1e5a389625c"
+    },
+    {
+      "claim_id": "213dc9d2-e411-46d7-a142-9c8c9b7590bd",
+      "result_id": "46148d87-469f-4a2a-84ff-d1e5a389625c"
+    },
+    {
+      "claim_id": "cd137208-4b30-4248-9a07-80d4fd436caa",
+      "result_id": "24f032de-b764-4bee-a295-8d682c3db6a8"
+    },
+    {
+      "claim_id": "cbffd32c-0e3d-4caa-af68-0333ac59d975",
+      "result_id": "24f032de-b764-4bee-a295-8d682c3db6a8"
+    },
+    {
+      "claim_id": "fefcee5e-a187-4395-8b70-c5a5ed292f04",
+      "result_id": "24f032de-b764-4bee-a295-8d682c3db6a8"
+    },
+    {
+      "claim_id": "e3f8b6d6-1f41-4ae7-b94e-8d6238b80af0",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "0f902bd3-5472-4343-80f2-304395881670",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "ab029bd5-f0e4-4829-abcf-df043ad1cf49",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "ad78eadc-670c-46be-9b5e-1fc93809bb69",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "72b3ae40-b9c2-411d-ace6-c2353356419a",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "58e40bdb-90e5-4d54-a763-6b19f6283326",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "2cd076e0-e85f-471e-8968-13292c75e617",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "aa900243-ecb3-46b3-b064-c3cbcda5baba",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "585aa733-9c5a-41fe-b842-54a83745be59",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "b2896c92-1829-40f8-a138-d38fb1fe467a",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "ab13a7c4-c77a-4d03-8374-74bb5d1ef788",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "713644c8-775d-4c1b-be84-ad912f2d78d8",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "4d71d739-6426-4023-8e29-4f3f48470f55",
+      "result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2"
+    },
+    {
+      "claim_id": "d93b94ff-cbc5-41d0-859e-0827f57a12d2",
+      "result_id": "4d9ea0bd-abc6-42b6-ae22-8643bbdd6af6"
+    },
+    {
+      "claim_id": "331c551f-ec32-4a6d-af25-1f4af725c692",
+      "result_id": "4d9ea0bd-abc6-42b6-ae22-8643bbdd6af6"
+    },
+    {
+      "claim_id": "5ba9d6d2-c41a-4c39-badf-d1ebea0e5819",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "8bbc6841-b6b5-44f0-8408-e3e1849122fe",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "b5ff1cbe-0366-4331-a0be-cf61bc9a48b5",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "d90644fc-48f5-4b35-affb-5d91ea945c9f",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "018b19a0-4dc9-47e3-afce-4473513856bb",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "c5690691-7334-40b6-a9db-e9a4b17a107c",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "d93b94ff-cbc5-41d0-859e-0827f57a12d2",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "331c551f-ec32-4a6d-af25-1f4af725c692",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "a86055e2-de4a-4673-8fd4-86dac4120003",
+      "result_id": "922ca045-b817-46f1-9155-1812ded8f30d"
+    },
+    {
+      "claim_id": "6112453e-ba21-4897-91c9-84a29109e9f3",
+      "result_id": "ee07615b-1ffa-4ea8-b690-b8069a377ed6"
+    },
+    {
+      "claim_id": "fd52487b-643c-4414-b45f-d6b477f3cea3",
+      "result_id": "ee07615b-1ffa-4ea8-b690-b8069a377ed6"
+    },
+    {
+      "claim_id": "fc69678e-4a44-403a-8381-279add43d942",
+      "result_id": "56b7a361-8cdc-4a16-8755-1d25a49897ea"
+    },
+    {
+      "claim_id": "05887162-1526-44d4-8214-ef34a6931f48",
+      "result_id": "56b7a361-8cdc-4a16-8755-1d25a49897ea"
+    },
+    {
+      "claim_id": "4a8143ba-cde3-400e-b414-b748e23b5344",
+      "result_id": "56b7a361-8cdc-4a16-8755-1d25a49897ea"
+    },
+    {
+      "claim_id": "70a0c5b3-c7d8-4ddb-9a1b-140b3bb8a1a8",
+      "result_id": "56b7a361-8cdc-4a16-8755-1d25a49897ea"
+    },
+    {
+      "claim_id": "a8098360-870d-4fc7-844f-ed56104aa027",
+      "result_id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065"
+    },
+    {
+      "claim_id": "275dd764-5061-4555-b34b-86ad98870fa5",
+      "result_id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065"
+    },
+    {
+      "claim_id": "57784af0-74d1-40df-9289-c7a4ea223da4",
+      "result_id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065"
+    },
+    {
+      "claim_id": "86ad0f70-9a19-4b82-b3e3-efddb1c4ba2b",
+      "result_id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065"
+    },
+    {
+      "claim_id": "29927ae7-aeea-498b-8eab-8d44954abf02",
+      "result_id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065"
+    },
+    {
+      "claim_id": "5defc461-6a4e-4a62-8f42-3c5841838361",
+      "result_id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065"
+    },
+    {
+      "claim_id": "be6471c2-a4bc-438a-b315-b3f05dbabf40",
+      "result_id": "eda0e8e3-29d5-410f-ba6a-16d6047ba5e9"
+    },
+    {
+      "claim_id": "0758c019-f7eb-4b71-8889-e7315416f3a8",
+      "result_id": "eda0e8e3-29d5-410f-ba6a-16d6047ba5e9"
+    },
+    {
+      "claim_id": "44612e5a-bbc3-4019-9339-f9e2fb99c3c5",
+      "result_id": "eda0e8e3-29d5-410f-ba6a-16d6047ba5e9"
+    },
+    {
+      "claim_id": "6616540a-31aa-4f3c-b954-b14a4af1ef28",
+      "result_id": "eda0e8e3-29d5-410f-ba6a-16d6047ba5e9"
+    },
+    {
+      "claim_id": "b480049d-8083-4161-8aa5-14e77218d8ea",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "c2c9e5eb-6c4d-4284-960d-abd020cf4e5b",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "9039de19-986b-45a3-be91-582934b4d9d1",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "7c039eba-842e-4cae-a88d-8d21413bdf70",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "6e2e2d86-8d06-44fb-ad0f-45def2f3cc23",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "73e026a8-77b7-480d-8888-e46682d13bcc",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "75501801-9df9-4995-8048-d2f48499f00f",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "a93012db-face-4774-9486-0106662c5978",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "e701d9b2-d543-4d19-b96f-9190ef999b77",
+      "result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4"
+    },
+    {
+      "claim_id": "e3f8b6d6-1f41-4ae7-b94e-8d6238b80af0",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "0f902bd3-5472-4343-80f2-304395881670",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "ab029bd5-f0e4-4829-abcf-df043ad1cf49",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "ad78eadc-670c-46be-9b5e-1fc93809bb69",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "72b3ae40-b9c2-411d-ace6-c2353356419a",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "58e40bdb-90e5-4d54-a763-6b19f6283326",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "2cd076e0-e85f-471e-8968-13292c75e617",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "aa900243-ecb3-46b3-b064-c3cbcda5baba",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "585aa733-9c5a-41fe-b842-54a83745be59",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "b2896c92-1829-40f8-a138-d38fb1fe467a",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "ab13a7c4-c77a-4d03-8374-74bb5d1ef788",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "713644c8-775d-4c1b-be84-ad912f2d78d8",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "4d71d739-6426-4023-8e29-4f3f48470f55",
+      "result_id": "d01a131a-6620-49a3-8e16-0386120614d9"
+    },
+    {
+      "claim_id": "3a858b16-8da6-42e5-8556-7f9028bd2185",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "96fc48e7-24a8-4e08-9214-5258b0b51e63",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "adaf33c3-f4bd-47c4-961b-97278e929a02",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "b0868b9e-f0bf-4a37-aa50-a597a5273c0b",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "0f75c3d7-fed9-459e-b539-586e8e970872",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "213dc9d2-e411-46d7-a142-9c8c9b7590bd",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "cd137208-4b30-4248-9a07-80d4fd436caa",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "cbffd32c-0e3d-4caa-af68-0333ac59d975",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "fefcee5e-a187-4395-8b70-c5a5ed292f04",
+      "result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442"
+    },
+    {
+      "claim_id": "f3ec56c5-315c-4001-9916-fdfb3a448861",
+      "result_id": "e9da5bc0-de2c-4ddf-a37b-1af878f1b108"
+    },
+    {
+      "claim_id": "c765ba53-8591-4717-869d-ee971cb43e98",
+      "result_id": "a42d4f4f-8362-4c04-a87c-d45e45c2a206"
+    },
+    {
+      "claim_id": "4107a8d2-4396-4853-9271-17ce2e92d820",
+      "result_id": "a42d4f4f-8362-4c04-a87c-d45e45c2a206"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "3b534ff2-f835-41a2-bbc7-06ad88bca4f3",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d",
+      "peer_result_id": "922ca045-b817-46f1-9155-1812ded8f30d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the TRPV1/capsaicin validation (C2-C7, C58, C60). OpenEval emphasizes technical details including calcium imaging, timelapse microscopy, and cell counts. Peer reviewers praised the 'successful validation' and 'convincing evidence' for the chemogenetic tool. OpenEval includes additional claims (C8, C9, C43) that peer reviewers addressed separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "36ff7487-61f7-4f19-976b-ed91e447d953",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d",
+      "peer_result_id": "ee07615b-1ffa-4ea8-b690-b8069a377ed6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R1 includes ablation protocol validation (C8, C9) as part of broader TRPV1 validation. Peer R2 specifically addresses these ablation claims, noting 'TRPV1-mediated ablation is rapid and precise' and accepting the timelapse and cell count data without critique. Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "f2dc815d-195e-43cb-892f-01c103b95c85",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4d9ea0bd-abc6-42b6-ae22-8643bbdd6af6",
+      "peer_result_id": "922ca045-b817-46f1-9155-1812ded8f30d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R10 addresses advantages of TRPV1/capsaicin system (C58-C59). Peer R1 includes C58-C59 within broader validation discussion. Both support these claims, with OpenEval noting 'advantages are demonstrated throughout' and peer reviewers praising the 'innovative chemogenetic tool.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "82ec4dd2-961b-416d-9dc6-389e1c54103d",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "12309552-65fb-4940-aec0-016bcd71cb62",
+      "peer_result_id": "56b7a361-8cdc-4a16-8755-1d25a49897ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support behavioral findings on postural control (C14-C16, C44). OpenEval notes appropriate statistical testing (p<0.001, effect sizes \u226515%) and acknowledges limitations in comparing activation vs ablation. Peer reviewers found evidence 'convincing' and explicitly praised statistical robustness. Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "50f154dc-ce34-4b9c-ac72-28c96f524d49",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "12309552-65fb-4940-aec0-016bcd71cb62",
+      "peer_result_id": "a42d4f4f-8362-4c04-a87c-d45e45c2a206",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R2 includes basic behavioral observations (C10, C11) as context for postural control experiments. Peer R10 addresses these same claims as established context, noting authors 'build on their prior work.' Both evaluations are SUPPORTED, though these are foundational rather than novel claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "200eda75-29eb-4c46-a94f-e7ffe2108966",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "6843104a-99e9-4d6f-af6f-ea329441855a",
+      "peer_result_id": "6d7ccbe5-48c1-4976-b03a-2c9b51060065",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on developmental interpretation (C17-C21, C45). OpenEval finds age-dependent expansion 'SUPPORTED' by cell counts and behavioral data correlating with morphological growth. Peer reviewers rate this 'UNCERTAIN,' explicitly questioning whether dive phenotype emergence represents 'changing role for cerebellum as opposed to changing sensitivity' to treatment. Peer reviewers requested additional time points.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "0be4eb32-3929-4634-93dd-d63469bef0ab",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "bccb6a15-2b3e-4224-a66b-d2037a22b621",
+      "peer_result_id": "eda0e8e3-29d5-410f-ba6a-16d6047ba5e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support speed-dependent fin-trunk coordination findings (C22-C24, C46). OpenEval notes baseline correlation (r=0.2193, p<0.001) and significant disruption after ablation. Peer reviewers praised this as 'convincing evidence' and highlighted it as 'a novel insight' representing a key contribution. Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "bdfccbf9-4617-4845-9cb3-79e5d42bfec9",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8b423ac0-c03f-4c49-9aba-c10a4362b31d",
+      "peer_result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support calcium imaging and population encoding findings (C25-C28, C32, C47). OpenEval emphasizes PCA analysis, SVM decoding validation against shuffled controls, and above-chance performance. Peer reviewers accepted that 'PCs encode tilt direction' and noted revisions made 'aspects of the decoding analysis clearer,' suggesting initial concerns were addressed. Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "77c53571-16d8-43ea-af9b-a996b5bb42d6",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "c8548eae-9b91-40e7-8a38-c8c78f413225",
+      "peer_result_id": "17b2430c-6757-4aec-a453-04695e1cd0d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support longitudinal imaging findings (C29-C31). OpenEval notes significant shift in tuning direction (p<0.001) while proportion of tuned cells and decoding accuracy remain stable, suggesting developmental changes in processing despite stable encoding. Peer reviewers accepted these calcium imaging results without specific critique of the developmental comparison. Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "8b9d8bd8-a7a2-4712-8f32-6b30be3e1bdd",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "46148d87-469f-4a2a-84ff-d1e5a389625c",
+      "peer_result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on mechanistic interpretations (C49-C54). OpenEval rates these claims 'UNCERTAIN,' noting C52 and C54 are 'mechanistic inferences not directly tested' and remain 'speculative without direct measurements.' Peer reviewers rate these 'SUPPORTED,' noting authors 'suggest a potential desynchronization' and accepting the mechanistic reasoning without challenge. OpenEval is more conservative about unsupported mechanistic proposals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "32dc0165-d96c-4fb6-b9ba-7ff4a71d1935",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "24f032de-b764-4bee-a295-8d682c3db6a8",
+      "peer_result_id": "6b7aee7b-605b-4ed6-a427-1213ef112442",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support established anatomical/electrophysiological context (C55-C57). OpenEval notes these are 'well-supported by multiple citations' representing 'established knowledge rather than novel findings.' Peer reviewers did not question these citation-based claims. Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "8a97aef9-ed18-410c-8c48-3a367cdd4130",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "a3078264-2523-4dc3-a8ce-ce2f155ea6f2",
+      "peer_result_id": "d01a131a-6620-49a3-8e16-0386120614d9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support background context and overall conclusions (C1, C33-C42, C48, C61). OpenEval notes C48 synthesizes findings to conclude cerebellum plays 'clear role' in postural control, 'well-supported by experimental results.' Peer reviewers accepted the framework and praised establishment of 'a clear role for the cerebellum.' Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    },
+    {
+      "id": "1ac3b572-bf66-4d79-bbf1-4bac8cbeb408",
+      "submission_id": "2b39e0e5-fe18-41de-9454-8becc52ca136",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "6e5aa14a-64d2-4ef3-bef8-82241702a67d",
+      "peer_result_id": "e9da5bc0-de2c-4ddf-a37b-1af878f1b108",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R1 includes technical justification for TRPV1 choice (C43: high conductance of TRP channels). Peer R9 addresses this claim separately, noting it was 'not questioned by reviewers' and serves as 'methodological justification that reviewers implicitly accepted.' Both evaluations are SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:54.017199Z"
+    }
+  ]
+}

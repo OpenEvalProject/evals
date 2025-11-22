@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "MPS1 inhibitor treatment induces chromosomal instability (CIN) in B16F10 melanoma cells, as evidenced by >10-fold increase in micronuclei that persist for up to 12 days and result in 34% of cells showing aneuploidy by InferCNV analysis compared to 10% in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from multiple assays (microscopy, time-course, and single-cell RNA-seq with InferCNV) that MPS1i treatment successfully induces CIN. The quantitative data are consistent across methods and confirmed with multiple inhibitors (C1), demonstrating robust induction of chromosomal instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "CIN-afflicted tumors show transcriptional downregulation of M2-like pro-cancer macrophage markers and associated cytokines at days 5 and 10 post-challenge, along with downregulation of DNA damage, cell cycle, and growth pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by bulk RNA-sequencing data from whole tumors at two timepoints (Figure 1E-F). The findings are internally consistent and align with cited literature. However, the study uses only n=2 tumors per condition, which limits statistical power. Despite this limitation, the consistency across timepoints and pathway analyses supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Conditioned media from MPS1i-treated B16F10 cells polarizes bone marrow-derived macrophages toward an M1-like anti-cancer phenotype with increased pro-inflammatory markers and decreased M2-like markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by single-cell RNA-sequencing of BMDMs treated with conditioned media (Figure 1I-J). The clustering analysis clearly separates macrophages by treatment condition, and marker expression patterns are consistent with M1 polarization. The inference in C8 is reasonable given the data, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "BMDMs from immunotumoroids containing MPS1i-treated B16F10 cells show increased surface expression of M1-like markers (MHCII, CD86) and decreased expression of M2-like markers (CD163, CD206).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by flow cytometry data from 3D immunotumoroid cultures (Figure 2B-C). The results are consistent with the transcriptomic data (C7) and provide protein-level validation. Statistical significance is demonstrated with n=5 independent experiments, providing adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "MPS1i-treated cancer cells show decreased anti-Tyrp1 antibody binding and are approximately 20% larger in size as measured by flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by flow cytometry data (Figure 2\u2014figure supplement 1B-C). The increased cell size is consistent with known effects of CIN including cytokinesis defects and polyploidy. The decreased Tyrp1 binding is an important observation for interpreting subsequent phagocytosis experiments, though the mechanism is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "CIN-afflicted tumoroids are eliminated by BMDMs regardless of anti-Tyrp1 opsonization, whereas anti-Tyrp1 is required for clearance of DMSO control tumoroids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by 3D tumoroid phagocytosis assays (Figure 2D-E). The data show clear differential responses based on CIN status and opsonization. The results are consistent across multiple timepoints and provide functional validation of the M1 polarization observed in earlier claims. Sample size appears adequate (n=16 tumoroids from 2 experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "CIN-afflicted tumors show substantially increased immune infiltration at day 5 post-challenge, including 3-fold more CD45+ immune cells, 2.5-fold more myeloid cells, 6-fold more F4/80+ macrophages, and 6-fold more M1-like (CD86hi CD206lo) macrophages compared to controls, with M1-like macrophages outnumbering M2-like by 2-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are supported by flow cytometry analysis of tumor infiltrates (Figure 2G). The data show consistent increases across multiple immune cell populations with adequate sample sizes (n=5-8 mice). The findings align with earlier in vitro observations and provide in vivo validation. Statistical significance is demonstrated for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mice challenged with DMSO-treated B16F10 cells (both sgCtrl and CD47 KO) show exponential tumor growth and no long-term survivors regardless of anti-Tyrp1 treatment, while CIN-afflicted sgCtrl tumors show increased median survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by in vivo tumor growth data (Figure 3B-C). The results establish important baseline controls and demonstrate that neither CD47 KO alone nor anti-Tyrp1 alone is sufficient for tumor rejection in this model. Sample sizes are adequate (n=7-11 mice per group across multiple experiments). The findings are consistent with cited previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CIN-afflicted CD47 KO tumors show dramatically improved outcomes: 28% complete cures without anti-Tyrp1, 97% survival with anti-Tyrp1, and >80% survival even at the lowest MPS1i concentration tested when combined with anti-Tyrp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by in vivo survival data (Figure 3C-D, Figure 3\u2014figure supplement 1). The 97% survival rate is remarkably high and represents a major finding. The dose-response data (C25) strengthen the conclusion by showing efficacy even at low CIN levels. Sample sizes are substantial (n=14-35 mice depending on condition across multiple experiments), providing strong statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Adoptive transfer of engineered bone marrow enables survival of mice with CIN-afflicted WT tumors: 37% with anti-SIRP\u03b1 blockade, 50% with anti-Tyrp1 priming, and 80% with both combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by adoptive transfer experiments (Figure 3E). The data demonstrate that macrophages are key effector cells and that both CD47-SIRP\u03b1 disruption and IgG opsonization contribute to efficacy. The synergistic effect of combining both approaches (80% survival) is particularly notable. Sample sizes appear adequate though exact numbers per group are not specified in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Convalescent sera from survivors contain significantly elevated levels of IgG2a/c and IgG2b antibodies that bind both Tyrp1-positive and Tyrp1 KO B16F10 cells, indicating recognition of multiple tumor antigens beyond Tyrp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by flow cytometry and western blotting data (Figure 4B). The binding to Tyrp1 KO cells provides strong evidence for epitope spreading. Sample sizes are substantial (n=14-28 sera samples). The western blot qualitatively confirms multiple bands, supporting multi-epitope recognition. Statistical significance is demonstrated using appropriate non-parametric tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Convalescent sera promote phagocytosis of CD47 KO B16F10 cells at levels comparable to anti-Tyrp1 (~5-fold increase), and continue to enhance phagocytosis even in CD47/Tyrp1 double KO cells (~3-fold increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by 2D phagocytosis assays (Figure 4C-i). The functional validation of IgG activity is important for demonstrating biological relevance. The persistence of activity against double KO cells confirms targeting of antigens beyond Tyrp1. Sample sizes are large (n=14-23 sera samples), providing robust statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Convalescent serum IgG suppresses growth of B16F10 CD47 KO tumoroids in vitro and achieves tumor elimination in vivo with cure rates (25%) nearly identical to anti-Tyrp1 (22%) when used for pre-opsonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by 3D tumoroid assays and in vivo pre-opsonization experiments (Figure 4C-ii, 4D). The comparable efficacy to anti-Tyrp1 monoclonal antibody is notable given that sera contain polyclonal antibodies. The in vivo validation strengthens the conclusion, though cure rates are modest compared to the 97% achieved with fresh anti-Tyrp1 treatment (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Re-challenge experiments show that survivors have limited protection against DMSO-treated tumors (9% survival, but increased median survival from 14 to 21 days), but complete protection (100% survival) against MPS1i-treated tumors, even without anti-Tyrp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by second challenge survival data (Figure 4F). The differential response to CIN-afflicted versus stable tumors is striking and suggests that ongoing CIN provides antigens that maintain immune responses. Sample sizes are adequate (n=6-11 mice per group). The results are consistent with the IgG data and provide functional validation of acquired immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Non-surviving mice from second challenge show enhanced immune infiltration compared to na\u00efve mice, including 2-fold increases in total immune cells and CD8+ T cells, 3-fold increase in macrophages, and 4-fold increase in MHCII-high M1-like macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by flow cytometry analysis of second challenge tumors (Figure 4G). The data demonstrate enhanced cell-mediated immunity even in non-survivors, suggesting partial immune memory. Sample sizes are small (n=3-5 mice) but statistical significance is achieved. The findings provide mechanistic insight into the improved median survival observed in C38.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "In a third tumor challenge, approximately 56% of long-term survivors completely resist tumor growth when challenged with untreated B16F10 CD47 KO cells without any therapeutic intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by third challenge survival data (Figure 4H-i). The high rate of complete resistance demonstrates durable acquired immunity. The sample size is reasonable (n=9 mice) though relatively small. The result represents a strong validation of the vaccination-like effect of CIN-afflicted tumor clearance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Comparison of tumor growth in T- and B-cell deficient NSG mice versus immunocompetent C57BL/6 mice shows similar growth delays with MPS1i treatment, indicating that macrophages rather than T and B cells are the key initiating-effector cells in rejecting CIN-afflicted tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by comparative studies in NSG and C57BL/6 mice (Figure 4\u2014figure supplement 3) and adoptive transfer experiments. The similar growth delays in both mouse strains provide strong evidence that T and B cells are not required for initial tumor control. However, the inference in C47 that macrophages are the key initiating effectors, while well-supported by the adoptive transfer data (C26-C28), could benefit from additional depletion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "A 97% survival rate is achieved in immunocompetent mice challenged with CIN-afflicted B16F10 tumors when maximizing macrophage-mediated activity through CD47 disruption and IgG opsonization, demonstrating that early-stage CIN generates anti-cancer vulnerabilities favoring macrophage-mediated immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 synthesize the major finding of the study, supported by the in vivo survival data (Figure 3C-D). The 97% survival rate is exceptionally high for this poorly immunogenic tumor model. The conclusion that CIN generates vulnerabilities is well-supported by the convergent evidence from multiple experimental approaches. This represents the central thesis of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Survivors develop de novo anti-cancer IgG that are pro-phagocytic, multi-epitope, and efficacious in vivo. Early-stage CIN facilitates survival while generating IgGs that drive positive phagocytic feedback, and ongoing CIN strengthens cell-mediated immunity while creating an antigen reservoir for long-term humoral immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 synthesize findings from the IgG characterization and re-challenge experiments. The claims are well-supported by data showing IgG generation (C29-C31), functional activity (C32-C36), and improved responses in re-challenges (C37-C44). The mechanistic interpretations in C51-C52 are reasonable inferences from the data, though they represent hypotheses that could benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Prior studies have shown that highly aneuploid tumors contain M2-polarized macrophages, MPS1i-treated cells can escape immune clearance, and cancer cells respond to CIN with IL6-STAT3 signaling that protects from cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 accurately represent findings from cited literature (Davoli et al. 2017, Taylor et al. 2018, Wang et al. 2021, Hong et al. 2022). These claims provide important context for the current study by highlighting apparent contradictions with prior work. The authors appropriately distinguish between late-stage highly aneuploid tumors (prior studies) and early-stage CIN (current study).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Ploidy changes increase pro-phagocytic factors, phagocytosis is inhibited by CD47-SIRP\u03b1 interaction, and maximal phagocytosis requires disruption of this checkpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 represent established knowledge in the field, supported by cited literature (Chao et al. 2010, Krysko et al. 2018, Oldenborg et al. 2000, Tsai and Discher 2008). These claims provide essential background for the experimental design and interpretation. The knowledge is well-established and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Clinical trials of CD47 blockade have shown limited efficacy and safety concerns, CIN inhibits tumor growth in immunocompetent but not immunocompromised mice, early-stage CIN induces senescence and inflammatory pathways, and B16F10 tumors are poorly immunogenic with modest response to macrophage-directed therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide important clinical and experimental context. C59 accurately reflects the status of CD47-targeting clinical trials. C60-C61 are supported by cited literature (Senovilla et al. 2012, Boil\u00e8ve et al. 2013, Santaguida et al. 2017, Wang et al. 2021). C62 is supported by both general knowledge and cited studies (Dooling et al. 2023, Hayes et al. 2023). These contextual claims appropriately frame the significance of the current findings.",
+    "result_type": "MINOR"
+  }
+]

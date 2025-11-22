@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C25",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Humans and monkeys performed a virtual balancing task (CST) under matched experimental conditions and exhibited similar behavioral characteristics. As task difficulty increased, both species showed decreased success rates (sigmoidal pattern), increased hand-cursor correlation (approaching -1), decreased response lag, and decreased RMS ratio (with individual variability). The comparable behavior suggests similar control strategies across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C31 provide comprehensive experimental evidence from matched conditions in humans and monkeys. The data show consistent patterns across multiple behavioral metrics (success rate, correlation, lag, RMS ratio) as difficulty increases, with appropriate statistical characterization. The comparison is well-documented with specific measurements and references to figures, supporting the conclusion of cross-species behavioral similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Two distinct behavioral patterns were observed in single trials: one with oscillatory cursor movements around center (Position Control strategy, focusing on cursor position), and another with slow drift or stillness anywhere within boundaries (Velocity Control strategy, focusing on cursor velocity). These patterns are hypothesized to arise from different control objectives focused on different state variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe qualitative observations of trial-level behavior patterns with visual evidence (Figure 1C-D). The characterization of two distinct patterns is clear and the hypothesis linking them to different control objectives (position vs. velocity) is reasonable given the task structure. However, this is primarily descriptive/hypothesis-generating rather than quantitatively validated at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "An optimal feedback control (OFC) model was developed that simulates the CST with different control objectives (Position Control vs. Velocity Control). The model successfully reproduced aggregate behavioral characteristics observed in humans and monkeys, and predicted that while the two control strategies perform comparably in success rate and hand-cursor correlation, they differ significantly in response lag and hand/cursor RMS ratio (Position Control showing larger values).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C54 describe a well-specified computational model based on established OFC framework (with appropriate citations). The model architecture is clearly defined (controller, effector, state estimator, cost functions), and simulations (500 trials per difficulty level) demonstrate qualitative and quantitative agreement with empirical data. The model makes specific, testable predictions about differences between control strategies that are later validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Experiment 2 validated model predictions by instructing two groups of human subjects (n=6 each) to use specific control strategies. The Position Control group ('keep cursor at center') showed significantly larger hand-cursor lag (t10=3.79, p=0.004) and hand/cursor RMS ratio (t10=5.27, p<0.001) compared to the Velocity Control group ('keep cursor still'), matching model predictions and demonstrating that the model can qualitatively distinguish between control strategies at aggregate performance level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 describe a well-designed validation experiment with explicit instructions to induce different control strategies. Statistical comparisons are appropriate (unpaired t-tests with reported test statistics and p-values), sample sizes are adequate (n=6 per group), and results match model predictions. This provides strong evidence that the model captures behaviorally relevant differences between control strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Two state-space metrics were developed to distinguish control objectives at the individual level. Position Control resulted in trials scattered around the origin with little correlation between cursor position and velocity, while Velocity Control showed an elongated distribution with strong correlation. Sensitivity analyses confirmed these distinctions were due to control objectives, not other model parameters. Human subjects in the Velocity Control group showed significantly larger correlations than the Position Control group (t10=4.06, p=0.002), and this difference persisted across difficulty levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 describe novel metrics for distinguishing control strategies with clear predictions from the model and validation in human data. The sensitivity analyses (C70-C71) strengthen the conclusion by ruling out alternative explanations. Statistical testing is appropriate and the consistency across difficulty levels (C73) demonstrates robustness. The approach moves from aggregate to individual-level characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "A single-trial metric was developed using RMS of cursor position and velocity, directly related to the model's cost functions. Position Control trials lean toward the vertical axis (restricting position, allowing large velocities) while Velocity Control trials lean toward the horizontal axis (allowing large positions, restricting velocities). This distinction can be quantified by regression slope, with Position Control showing significantly larger slopes than Velocity Control (t10=6.33, p<0.001). This metric more clearly distinguishes individual trials than the correlation coefficient metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 describe a principled single-trial metric grounded in the model's cost functions. The geometric interpretation is clear and intuitive, and the quantification via regression slope is appropriate. Statistical validation in human data is strong (p<0.001), and the comparison to the previous metric (C81) demonstrates improved discriminative power. This enables trial-by-trial inference of control objectives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A support vector machine classifier was trained on model simulations (2250 trials per strategy) to infer control objectives from single trials. The classifier achieved ~94% accuracy on simulated data (6.2% and 5.5% misclassification rates) and successfully classified human subjects in Experiment 2 according to their instructed strategies, correctly determining each individual's control strategy without being trained on experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 describe a rigorous classification approach with appropriate training/testing procedures. The classifier performance is well-characterized on both simulated and experimental data. The key validation is that the classifier, trained only on model simulations, correctly identifies the instructed strategies in human subjects (C89-C91), demonstrating that the model captures behaviorally relevant features. This is a critical step enabling inference in uninstructed subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The validated classifier was applied to infer control objectives in uninstructed humans (Experiment 1) and monkeys, enabling trial-by-trial and subject-level inference. Specific examples include human NI-S2 adopting Velocity Control, human NI-S4 using Position Control, Monkey I preferring Velocity Control, and Monkey J preferring Position Control. This procedure enables inference of underlying control objectives when no explicit knowledge about strategy is available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 demonstrate the application of the validated approach to the key target populations (uninstructed humans and monkeys). The specific examples (C93-C96) provide concrete demonstrations with visual evidence (Figure 8). This represents the culmination of the three-pronged approach: matching task design, computational modeling, and validation in instructed humans enables inference in animals where explicit instructions are impossible. The logic is sound and the execution is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "The CST is a challenging task that exhibits redundancy (multiple ways to achieve success) and is suitable for comparative studies between humans and monkeys. Unlike traditional simple paradigms (e.g., center-out movements), the CST continuously engages feedback-driven control for prolonged periods and exhibits rich trial-to-trial and subject-to-subject variability. The ability to titrate difficulty enables both species to learn the task and achieve similar proficiency levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 provide context and justification for the experimental approach. The characterization of the CST's advantages is supported by the empirical results (matching performance across species, rich variability). The comparison to traditional paradigms is appropriate and well-cited (C100, C105-C106). The discussion of challenges in comparative research (C108) is accurate and provides important context for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The optimal feedback control (OFC) framework was chosen over simpler models (e.g., PD controller) because it provides a normative account of control gains and objectives. Despite differences from traditional reaching tasks (no stationary target, counter-intuitive control direction, prolonged duration), OFC proved appropriate for the CST. Cursor position and velocity were chosen as control variables because they are most directly related to the task goal and less demanding to predict from sensory feedback than higher derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C119 provide methodological justification for modeling choices. The critique of prior work (C109-C110) is appropriate and cited. The rationale for using OFC is well-supported by extensive literature (C111-C112). The justification for choosing position and velocity as control variables (C117-C119) is logical and supported by citations regarding sensory prediction. The discussion acknowledges differences from traditional tasks while demonstrating OFC's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The modeling approach generates behavioral patterns using control gains at extremes of Position and Velocity Control, providing a normative account of what gains and objectives underlie observed behavior. While many trials fall between the two control boundaries (possibly due to mixed strategies or switching), the study focused on identifying behavioral signatures of extreme cases to increase chances of detecting neural differences. Future work could employ perturbations or collect more trials to enhance distinction between control objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C130 provide honest discussion of model limitations and scope. The acknowledgment that many trials are intermediate (C124) is important and supported by data (Figures 7-8). The justification for focusing on extreme cases (C126-C127) is reasonable given the goal of identifying neural correlates. Suggestions for future work (C128-C130) are appropriate, with C130 supported by preliminary simulations. This demonstrates scientific rigor in acknowledging limitations while defending the approach's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The approach successfully provided normative explanations for macro-level behavioral characteristics and, due to its generative nature, can make predictions for new conditions and control objectives. Previous work shows motor cortex preparatory activity is task-specific, suggesting the identified control objectives may elicit different preparatory activity. The behavioral analysis holds promise for generating insights into neural principles of skillful manipulation in both monkeys and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 summarize contributions and discuss implications. The summary of achievements (C133-C134) is accurate based on the presented results. The speculation about neural implications (C131-C132) is appropriately tentative and grounded in relevant literature. The broader claim about promise for understanding neural principles (C135) is justified given the successful demonstration of the approach, though it remains prospective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C151",
+      "C153",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C162",
+      "C165",
+      "C167"
+    ],
+    "result": "The study employed appropriate methods including: 18 human subjects with informed consent and IRB approval; monkey data from prior published work with IACUC approval; motion capture at 250 Hz with ~50 ms processing delay; three-day experimental protocol with familiarization and multiple blocks; three experimental groups with different instructions; standard analysis methods (cross-correlation for lag, SVM for classification); and an OFC model with specified parameters (M=1 kg, \u03c4=0.06 s, 50 ms delay, 500 trials per difficulty level).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C167 describe methodological details that are generally well-specified and appropriate. Sample sizes are adequate for the analyses performed. Ethical approvals are documented. Equipment specifications are provided. The experimental protocol is clearly described with appropriate controls (familiarization excluded from analysis). Analysis methods are standard and appropriately applied. Model parameters are specified, though some details (e.g., noise magnitudes, exact Q matrix values) could be more explicit. Overall, methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  }
+]

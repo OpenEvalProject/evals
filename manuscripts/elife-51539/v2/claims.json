@@ -72,7 +72,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the abstract and supported by experimental data showing PCR verification of insertions.",
+    "evidence": "This is stated in the abstract and supported by experimental data showing precise integration.",
     "evidence_type": [
       "DATA"
     ]
@@ -92,6 +92,72 @@
   },
   {
     "claim_id": "C8",
+    "claim": "A main goal of the Drosophila Gene Disruption Project (GDP) is to create genetic tools that facilitate an integrated approach to analyze the function of each gene in detail.",
+    "claim_type": "EXPLICIT",
+    "source": "A main goal of the Drosophila Gene Disruption Project (GDP) is to create genetic tools that facilitate an integrated approach to analyze the function of each gene in detail.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the introduction as the project's goal.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The CRIMIC variety of SIC currently used by the GDP is an artificial exon consisting of attP-FRT-SA-T2A-GAL4-polyA-3XP3-EGFP-FRT-attP inserted in a coding intron of the GOI.",
+    "claim_type": "EXPLICIT",
+    "source": "The CRIMIC variety of SIC currently used by the GDP is an artificial exon consisting of attP-FRT-SA-T2A-GAL4-polyA-3XP3-EGFP-FRT-attP inserted in a coding intron (intron flanked by two coding exons) of the GOI (Lee et al., 2018a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the introduction with citation to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The CRIMIC insert typically creates a severe loss of function allele and generates a GAL4 protein that is expressed in the target gene's spatial and temporal expression pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "This insert typically creates a severe loss of function allele and generates a GAL4 protein that is expressed in the target gene's spatial and temporal expression pattern (Diao et al., 2015; Gnerer et al., 2015; Lee et al., 2018a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the introduction with citations to supporting literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The SIC can be replaced by an artificial exon that consists of SA-Linker-EGFP-FlAsH-StrepII-TEV-3xFlag-Linker-SD, abbreviated SA-GFP-SD, which adds an integral Green Fluorescent Protein (GFP) and other tags to the gene product.",
+    "claim_type": "EXPLICIT",
+    "source": "The SIC can also be replaced by an artificial exon that consists of SA-Linker-EGFP-FlAsH-StrepII-TEV-3xFlag-Linker-SD, abbreviated SA-GFP-SD, which adds an integral Green Fluorescent Protein (GFP) and other tags to the gene product (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the introduction with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The SA-GFP-SD tag does not disrupt protein function in 75% of cases examined.",
+    "claim_type": "EXPLICIT",
+    "source": "This tag does not disrupt protein function in 75% of cases examined and permits the determination of the subcellular protein localization (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a; Yoon et al., 2017; Lee et al., 2018a)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the introduction with citations to supporting studies.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
     "claim": "The cost for reagents and labor for the generation of a single CRIMIC fly line is $1,000\u20132,000.",
     "claim_type": "EXPLICIT",
     "source": "The cost for reagents and labor for the generation of a single CRIMIC fly line is $1,000\u20132,000.",
@@ -104,607 +170,73 @@
     ]
   },
   {
-    "claim_id": "C9",
+    "claim_id": "C14",
     "claim": "The overall success rate of CRIMIC transgenesis is ~50%.",
     "claim_type": "EXPLICIT",
     "source": "Since the production of each transgenic line involves multiple steps, low failure rates at each step accumulate and decrease the overall success rate to ~50%.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the introduction based on accumulated experience.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C10",
-    "claim": "Lambda Exonuclease is a 5'-to-3' nuclease with a preference for 5' phosphorylated DNA.",
-    "claim_type": "EXPLICIT",
-    "source": "When this PCR product is treated with Lambda Exonuclease, a 5'-to-3' nuclease with a preference for 5' phosphorylated DNA (Little, 1967; Mitsis and Kwagh, 1999), the 5'- phosphorylated strand is degraded, leaving the non-phosphorylated strand as a ssDNA homology donor.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to support the enzymatic properties.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C11",
-    "claim": "For 19 out of 20 genes targeted, GFP signal was observed by FACS.",
-    "claim_type": "EXPLICIT",
-    "source": "For 19 out of 20 genes targeted we observed GFP signal by FACS (Table 1).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section and supported by Table 1.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C12",
-    "claim": "For 12 of 19 genes, GFP+ clones were established, correct integration was verified by PCR, and subcellular localization was determined by immunostaining.",
-    "claim_type": "EXPLICIT",
-    "source": "For 12 of 19 genes, we could establish GFP+ clones, verify correct integration by PCR, and determine subcellular localization by immunostaining (Table 1, Figure 2C, Figure 2\u2014figure supplement 2).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Table 1 and figures.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C13",
-    "claim": "With the exception of Ref2P, all correct insertions of GFP resulted in fusion proteins with the expected subcellular distribution.",
-    "claim_type": "EXPLICIT",
-    "source": "With the exception of Ref2P, all correct insertions of GFP resulted in fusion proteins with the expected subcellular distribution.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on immunostaining data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C14",
-    "claim": "The frequency of GFP+ cells ranged between ~1\u20134% as determined by FACS.",
-    "claim_type": "EXPLICIT",
-    "source": "The frequency of GFP+ cells was determined by FACS (Figure 2\u2014figure supplement 1) to range between ~1\u20134%.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Figure 2\u2014figure supplement 1.",
+    "evidence": "This is stated directly in the introduction as an observed success rate.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C15",
-    "claim": "Sequencing of the SIC insertion sites for the 12 cell lines showed that the insertions are precise.",
+    "claim": "One of the main bottlenecks in CRIMIC production is the production of large (5 kb) SIC homology donor plasmids containing a visible dominant marker and flanked by two ~ 1 kb homology arms.",
     "claim_type": "EXPLICIT",
-    "source": "Sequencing of the SIC insertion sites (Table 1) for the 12 cell lines showed that the insertions are precise.",
+    "source": "One of the main bottlenecks is the production of large (5 kb) SIC homology donor plasmids containing a visible dominant marker and flanked by two ~ 1 kb homology arms to promote homologous recombination (Beumer et al., 2008; Beumer et al., 2013; Bier et al., 2018; Lee et al., 2018a).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section based on sequencing data.",
+    "evidence": "This is stated directly in the introduction with citations.",
     "evidence_type": [
-      "DATA"
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C16",
-    "claim": "Western blotting of cell lysates confirmed that the inserted tags lead to GFP fusion proteins of the expected molecular weights.",
+    "claim": "dsDNA homology donors for insertion of large cassettes in Drosophila typically require stretches of 500 nt to 1 kb of homology to the target site on either side of the SIC.",
     "claim_type": "EXPLICIT",
-    "source": "Western blotting of cell lysates confirmed that the inserted tags lead to GFP fusion proteins of the expected molecular weights (Figure 2\u2014figure supplement 3).",
+    "source": "dsDNA homology donors for insertion of large cassettes in Drosophila typically require stretches of 500 nt to 1 kb of homology to the target site on either side of the SIC (Rong and Golic, 2000; Beumer et al., 2013; Zhang et al., 2014; Diao et al., 2015; Bier et al., 2018; Lee et al., 2018a).",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is stated in the results section and supported by Figure 2\u2014figure supplement 3.",
+    "evidence": "This is stated directly in the results section with citations to supporting literature.",
     "evidence_type": [
-      "DATA"
+      "CITATION"
     ]
   },
   {
     "claim_id": "C17",
-    "claim": "Time-lapse confocal imaging of Polo-GFP showed that the protein is localized to centrosomes, spindle, and midbody during cell division, in agreement with the data obtained by immunofluorescence (Llamazares et al., 1991) or using polo-GFP transgenes (Moutinho-Santos et al., 1999).",
+    "claim": "Single stranded homology donors typically rely on much shorter homology arms (50\u2013100 nt) to successfully integrate short DNA segments in Drosophila (~200 nt) based on homology-directed repair.",
     "claim_type": "EXPLICIT",
-    "source": "Time-lapse confocal imaging of Polo-GFP showed that the protein is localized to centrosomes, spindle, and midbody during cell division, in agreement with the data obtained by immunofluorescence (Llamazares et al., 1991) or using polo-GFP transgenes (Moutinho-Santos et al., 1999; (Video 1).",
+    "source": "Single stranded homology donors typically rely on much shorter homology arms (50\u2013100 nt) to successfully integrate short DNA segments in Drosophila (~200 nt) based on homology-directed repair (Beumer et al., 2013; Gratz et al., 2013; Wissel et al., 2016; Bier et al., 2018).",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is stated in the results section with citations and supported by Video 1.",
+    "evidence": "This is stated directly in the results section with citations.",
     "evidence_type": [
-      "DATA",
       "CITATION"
     ]
   },
   {
     "claim_id": "C18",
-    "claim": "The empirical size limit for ssDNA production was ~2 kb.",
+    "claim": "The PCR-based approach for generating ssDNA donors includes homology arms in the ~125 nt primers as 5' overhangs such that a single PCR generates the complete donor without any cloning steps.",
     "claim_type": "EXPLICIT",
-    "source": "Our initial experiments showed that the empirical size limit for ssDNA production was ~2 kb, significantly smaller than the ~5 kb SIC present in the CRIMIC cassettes currently used by the GDP (Lee et al., 2018a).",
+    "source": "First, the homology arms are included in the ~125 nt primers as 5' overhangs such that a single PCR generates the complete donor without any cloning steps.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section based on experimental observations.",
+    "evidence": "This is stated directly in the results section as an advantage of the method.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C19",
-    "claim": "The attP-3XP3-EGFP-attP cassette is 1242 nt long and can be used for ssDNA donor (1442 nt including two 100 nt homology arms) generation.",
-    "claim_type": "EXPLICIT",
-    "source": "Hence, in order to remain under the size limit, we generated an attP-3XP3-EGFP-attP PCR template that is 1242 nt long and can be used for ssDNA donor (1442 nt including two 100 nt homology arms) generation (Figure 3A).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and illustrated in Figure 3A.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C20",
-    "claim": "The attP-3XP3-EGFP-attP cassette is not mutagenic unless inserted in exons and only generates a landing site for RMCE in the targeted region.",
-    "claim_type": "EXPLICIT",
-    "source": "The attP-3XP3-EGFP-attP cassette is not mutagenic unless inserted in exons and only generates a landing site for RMCE in the targeted region.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a property of the cassette.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C21",
-    "claim": "Four genes were successfully targeted with the CRIMIC approach: CG5009, CG9527, Khc, and NLaz.",
-    "claim_type": "EXPLICIT",
-    "source": "We were successful in targeting four genes with both approaches and obtained insertions in CG5009, CG9527, Khc, and NLaz with the CRIMIC approach and CG5009, endoB, Cp1, and Lst with the ssDNA drop-in construct.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on experimental data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C22",
-    "claim": "Four genes were successfully targeted with the ssDNA drop-in construct: CG5009, endoB, Cp1, and Lst.",
-    "claim_type": "EXPLICIT",
-    "source": "We were successful in targeting four genes with both approaches and obtained insertions in CG5009, CG9527, Khc, and NLaz with the CRIMIC approach and CG5009, endoB, Cp1, and Lst with the ssDNA drop-in construct.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on experimental data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C23",
-    "claim": "The use of CRIMIC constructs was more efficient than ssDNA drop-in constructs, as judged by the number of independent fly lines produced per successful gene.",
-    "claim_type": "EXPLICIT",
-    "source": "We found that the use of CRIMIC constructs was more efficient, as judged by the number of independent fly lines produced per successful gene (Figure 3B).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Figure 3B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C24",
-    "claim": "Homologous recombination is dependent on the size of the inserted cassette.",
-    "claim_type": "EXPLICIT",
-    "source": "One means of increasing the targeting rate is to shorten the SIC, since homologous recombination is dependent on the size of the inserted cassette (Beumer et al., 2013).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with a citation to support the claim.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C25",
-    "claim": "MiniGAL4 is about half the size of full-length GAL4 (1200 nt vs 2646 nt) and has about 50% of the transcriptional activity of full-length GAL4 in yeast.",
-    "claim_type": "EXPLICIT",
-    "source": "First, we used a shortened GAL4 construct, referred to as miniGAL4 (1200 nt), which is about half the size of full-length GAL4 (2646 nt) and has about 50% of the transcriptional activity of full-length GAL4 in yeast (Ding and Johnston, 1997).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with a citation to support the properties of miniGAL4.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C26",
-    "claim": "The U6:gRNA1 marker is only ~200 nt long.",
-    "claim_type": "EXPLICIT",
-    "source": "Because 3XP3-EGFP is ~1 kb in length, we opted to use an alternative marker that is only ~200 nt long and contains a ubiquitous U6 promoter expressing a gRNA sequence (gRNA1) that does not have a target in the fly genome.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a description of the marker.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C27",
-    "claim": "The attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct is 1968 nt in length, including homology arms.",
-    "claim_type": "EXPLICIT",
-    "source": "This resulted in attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP, which functions as a gene trap and is 1968 nt in length, including homology arms.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a description of the construct.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C28",
-    "claim": "The attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct is 715 nt in length including homology arms.",
-    "claim_type": "EXPLICIT",
-    "source": "We also generated a smaller minimal mutagenic construct, attP-SA-3XSTOP-minipolyA-U6gRNA1-attP, that is 715 nt in length including homology arms (Figure 4A).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and illustrated in Figure 4A.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C29",
-    "claim": "Both dsDNA drop-in constructs are small enough to be commercially synthesized at a low cost (less than $250).",
-    "claim_type": "EXPLICIT",
-    "source": "Both dsDNA drop-in constructs are small enough to be commercially synthesized at a low cost (less than $250).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a cost estimate.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C30",
-    "claim": "Linearization has previously been shown to boost homologous recombination rates in cell culture, zebrafish and mouse transgenesis.",
-    "claim_type": "EXPLICIT",
-    "source": "Linearization has previously been shown to boost homologous recombination rates in cell culture, zebrafish and mouse transgenesis (Cristea et al., 2013; Hisano et al., 2015; Suzuki et al., 2016; Yao et al., 2017).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to support the claim.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C31",
-    "claim": "65 independent transgenic lines were obtained for the attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct.",
-    "claim_type": "EXPLICIT",
-    "source": "We obtained 65 independent transgenic lines for the attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct, and 119 independent transgenic lines for the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on experimental data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C32",
-    "claim": "119 independent transgenic lines were obtained for the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct.",
-    "claim_type": "EXPLICIT",
-    "source": "We obtained 65 independent transgenic lines for the attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct, and 119 independent transgenic lines for the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on experimental data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C33",
-    "claim": "The insertion sites were verified by genomic PCR in 7/10 genes for both methods.",
-    "claim_type": "EXPLICIT",
-    "source": "We verified the insertion sites by genomic PCR in 7/10 genes for both methods.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on experimental data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C34",
-    "claim": "Three genes contained an unanticipated variation in the gRNA target site in the isogenized Cas9 injection stocks when compared to the FlyBase reference genome sequence.",
-    "claim_type": "EXPLICIT",
-    "source": "Analyses of the genomic DNA sequences of the three genes for which we could not verify the integration site revealed that these genes contain an unanticipated variation in the gRNA target site in the isogenized Cas9 injection stocks when compared to the FlyBase reference genome sequence (dos Santos et al., 2015; Goodman et al., 2018).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section with citations.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C35",
-    "claim": "The precise homologous recombination rate is dependent on efficient cutting of the target site and is likely higher than 70%.",
-    "claim_type": "EXPLICIT",
-    "source": "This suggests that the precise homologous recombination rate is dependent on efficient cutting of the target site and is likely higher than 70%.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as an inference from the data.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C36",
-    "claim": "The artificial exon attP-SA-3XSTOP-minipolyA-U6gRNA1-attP leads to ~40% decrease in protein levels.",
-    "claim_type": "EXPLICIT",
-    "source": "As shown in Figure 5A, the artificial exon attP-SA-3XSTOP-minipolyA-U6gRNA1-attP leads to ~40% decrease in protein levels and creates a much less severe allele than the CRIMIC allele.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Figure 5A.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C37",
-    "claim": "The attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP cassette leads to ~80\u201390% decrease in protein levels, similar to a CRIMIC insertion in the same locus.",
-    "claim_type": "EXPLICIT",
-    "source": "However, the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP cassette leads to ~80\u201390% decrease in protein levels, similar to a CRIMIC insertion in the same locus (Figure 5A).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Figure 5A.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C38",
-    "claim": "There was a ~ 60% reduction of reporter levels with T2A-miniGAL4 as compared to CRIMIC T2A-GAL4 driven UAS-LacZ expression for the CG5009 locus.",
-    "claim_type": "EXPLICIT",
-    "source": "As shown in Figure 5B, we observed a ~ 60% reduction of reporter levels with T2A-miniGAL4 as compared to CRIMIC T2A-GAL4 driven UAS-LacZ expression for the CG5009 locus (Figure 5B).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Figure 5B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C39",
-    "claim": "Synthesis of a full length 5 kb CRIMIC cassette would be cost prohibitive (>$1,000).",
-    "claim_type": "EXPLICIT",
-    "source": "Unfortunately, synthesis of a full length 5 kb CRIMIC cassette would be cost prohibitive (>$1,000) especially for thousands of genes.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a cost estimate.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C40",
-    "claim": "The cost of synthesizing a gRNA1 target-100nt homology arm-Restriction cassette-100nt homology arm-gRNA1 target inserted into a pUC57 vector is $80.",
-    "claim_type": "EXPLICIT",
-    "source": "Hence, we developed a modified cloning strategy in which we first synthesize a gRNA1 target-100nt homology arm-Restriction cassette-100nt homology arm-gRNA1 target inserted into a pUC57 vector for each target gene (cost is $80).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a cost estimate.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C41",
-    "claim": "Five genes were successfully targeted with drop-in int100-CRIMIC cassettes, as verified by PCR.",
-    "claim_type": "EXPLICIT",
-    "source": "Using the drop-in int100-CRIMIC cassette we obtained multiple knock-in alleles in five genes, as verified by PCR (Figure 6B).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Figure 6B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C42",
-    "claim": "100 nt homology arms are sufficient to integrate large SICs into target sites.",
-    "claim_type": "EXPLICIT",
-    "source": "Hence, 100 nt homology arms are sufficient to integrate large SICs into target sites.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a conclusion from the data.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C43",
-    "claim": "The drop-in int100 CRIMIC and the corresponding CRIMIC for CG5009 lead to mCherry expression in very similar patterns.",
-    "claim_type": "EXPLICIT",
-    "source": "To ensure functionality of knock-in alleles, we compared expression patterns of drop-in int100 CRIMIC with the corresponding CRIMIC for CG5009 (Figure 6C) as well as drop-in int100 CRIMIC with the T2A-miniGAL4 for Khc (Figure 6\u2014figure supplement 1) by crossing the flies to UAS-NLS::mCherry reporter lines. In both cases the constructs lead to mCherry expression in very similar patterns.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and supported by Figure 6C and Figure 6\u2014figure supplement 1.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C44",
-    "claim": "In vivo linearization was previously shown to lead to knock-ins in zebrafish and cell culture even when there is no homology arm, provided that the homology donor and target site are cut concomitantly.",
-    "claim_type": "EXPLICIT",
-    "source": "In vivo linearization was previously shown to lead to knock-ins in zebrafish and cell culture even when there is no homology arm, provided that the homology donor and target site are cut concomitantly (Cristea et al., 2013; Auer et al., 2014; Schmid-Burgk et al., 2016; Suzuki et al., 2016).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to support the claim.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C45",
-    "claim": "Homology independent knock-in is more prone to generating small deletions in the target site and the insertions are non-directional.",
-    "claim_type": "EXPLICIT",
-    "source": "This process is more prone to generating small deletions in the target site and the insertions are non-directional.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a property of the method.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C46",
-    "claim": "Bosch et al. (2019) integrated a CRIMIC cassette in 4 of 11 genes targeted using homology independent knock-in.",
-    "claim_type": "EXPLICIT",
-    "source": "Recently, a homology independent knock-in method was established for Drosophila cell culture and germline transformation (Bosch et al., 2019). By simultaneously cutting the donor construct and target region in the absence of homology arms, Bosch et al. (2019) integrated a CRIMIC cassette in 4 of 11 genes targeted.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with a citation to support the claim.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C47",
-    "claim": "The insertion events from homology independent knock-in were error-prone and non-directional.",
-    "claim_type": "EXPLICIT",
-    "source": "However, these insertion events were error-prone and non-directional.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section with a citation.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C48",
-    "claim": "The efficacy of CRIMIC constructs hovers around 50% in optimal conditions.",
-    "claim_type": "EXPLICIT",
-    "source": "Moreover, when the efficacy of fly transformation and the events that can be PCR verified on either side of knock-in region are included, the efficacy of CRIMIC constructs hover around 50% in optimal conditions.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on accumulated data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C49",
-    "claim": "With the drop-in cassette strategy, the cloning success rate is nearly 100%.",
-    "claim_type": "EXPLICIT",
-    "source": "With the drop-in cassette strategy, not only is the cloning success rate nearly 100%, but the protocol requires little troubleshooting, dramatically reducing the bench time.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on experimental experience.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C50",
-    "claim": "The drop-in method results in a 70\u201380% success rate.",
-    "claim_type": "EXPLICIT",
-    "source": "Finally, factoring in the transformation and verification rate drop-in results in a 70\u201380% success rate.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section based on experimental data.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C51",
-    "claim": "Shortening the homology arms to 100 nt allows synthesis followed by a simple cloning step, thus eliminating cloning failure and reducing the cost from ~$300 to ~$100 per construct.",
-    "claim_type": "EXPLICIT",
-    "source": "Key features that improved efficiency are: 1) shortening the homology arms to 100 nt, which allows synthesis followed by a simple cloning step, thus eliminating cloning failure and reducing the cost from ~$300 to ~$100 per construct",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a key improvement.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C52",
-    "claim": "Integration of target gRNA1 sites on either side of the SIC linearizes the donor with Cas9 in the germ cells.",
-    "claim_type": "EXPLICIT",
-    "source": "and 2) integration of target gRNA1 sites on either side of the SIC to linearize the donor with Cas9 in the germ cells.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a key improvement.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C53",
-    "claim": "The methods described are efficient, simple, and precise.",
-    "claim_type": "EXPLICIT",
-    "source": "In conclusion, the methods we describe are efficient, simple, and precise.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a conclusion.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C54",
     "claim": "Making ssDNA donors is about 5X faster than making CRIMIC donors.",
     "claim_type": "EXPLICIT",
     "source": "Making ssDNA donors is about 5X faster than making CRIMIC donors.",
@@ -712,401 +244,762 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is stated in Figure 1B caption.",
+    "evidence": "This is stated in Figure 1B comparing the two pipelines.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The frequency of GFP+ cells after ssDNA drop-in transfection in S2R+-MT::Cas9 cells ranged between ~1\u20134%.",
+    "claim_type": "EXPLICIT",
+    "source": "The frequency of GFP+ cells was determined by FACS (Figure 2\u2014figure supplement 1) to range between ~1\u20134%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to FACS data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "The SIC can be replaced by an artificial exon that consists of SA-Linker-EGFP-FlAsH-StrepII-TEV-3xFlag-Linker-SD, abbreviated SA-GFP-SD, which adds an integral Green Fluorescent Protein (GFP) and other tags to the gene product.",
+    "claim_id": "C21",
+    "claim": "For 19 out of 20 genes targeted with ssDNA drop-in, GFP signal was observed by FACS.",
     "claim_type": "EXPLICIT",
-    "source": "The SIC can also be replaced by an artificial exon that consists of SA-Linker-EGFP-FlAsH-StrepII-TEV-3xFlag-Linker-SD, abbreviated SA-GFP-SD, which adds an integral Green Fluorescent Protein (GFP) and other tags to the gene product (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a).",
+    "source": "For 19 out of 20 genes targeted we observed GFP signal by FACS (Table 1).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the introduction with citations.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C56",
-    "claim": "The SA-GFP-SD tag does not disrupt protein function in 75% of cases examined.",
-    "claim_type": "EXPLICIT",
-    "source": "This tag does not disrupt protein function in 75% of cases examined and permits the determination of the subcellular protein localization (Venken et al., 2011; Nagarkar-Jaiswal et al., 2015a; Yoon et al., 2017; Lee et al., 2018a)",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the introduction with citations.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C57",
-    "claim": "dsDNA homology donors for insertion of large cassettes in Drosophila typically require stretches of 500 nt to 1 kb of homology to the target site on either side of the SIC.",
-    "claim_type": "EXPLICIT",
-    "source": "dsDNA homology donors for insertion of large cassettes in Drosophila typically require stretches of 500 nt to 1 kb of homology to the target site on either side of the SIC (Rong and Golic, 2000; Beumer et al., 2013; Zhang et al., 2014; Diao et al., 2015; Bier et al., 2018; Lee et al., 2018a).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section with citations.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "Single stranded homology donors typically rely on much shorter homology arms (50\u2013100 nt) to successfully integrate short DNA segments in Drosophila (~200 nt) based on homology-directed repair.",
-    "claim_type": "EXPLICIT",
-    "source": "Single stranded homology donors typically rely on much shorter homology arms (50\u2013100 nt) to successfully integrate short DNA segments in Drosophila (~200 nt) based on homology-directed repair (Beumer et al., 2013; Gratz et al., 2013; Wissel et al., 2016; Bier et al., 2018).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section with citations.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "The CRIMIC variety of SIC currently used by the GDP is an artificial exon consisting of attP-FRT-SA-T2A-GAL4-polyA-3XP3-EGFP-FRT-attP inserted in a coding intron of the GOI.",
-    "claim_type": "EXPLICIT",
-    "source": "The CRIMIC variety of SIC currently used by the GDP is an artificial exon consisting of attP-FRT-SA-T2A-GAL4-polyA-3XP3-EGFP-FRT-attP inserted in a coding intron (intron flanked by two coding exons) of the GOI (Lee et al., 2018a).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the introduction with a citation.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C60",
-    "claim": "The CRIMIC insert typically creates a severe loss of function allele and generates a GAL4 protein that is expressed in the target gene's spatial and temporal expression pattern.",
-    "claim_type": "EXPLICIT",
-    "source": "This insert typically creates a severe loss of function allele and generates a GAL4 protein that is expressed in the target gene's spatial and temporal expression pattern (Diao et al., 2015; Gnerer et al., 2015; Lee et al., 2018a).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the introduction with citations.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C61",
-    "claim": "S2R+-MT::Cas9 cells are a derivative of S2R+ NPT005 and contain an mCherry tag in the Clic locus.",
-    "claim_type": "EXPLICIT",
-    "source": "We note that this cell line is a derivative of S2R+ NPT005 (DGRC #229) and thus contains an mCherry tag in the Clic locus (Neum\u00fcller et al., 2012).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the materials and methods section with a citation.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C62",
-    "claim": "The size of the attP-SA-sfGFP-SD-attP construct including the homology arms is 1392 nt.",
-    "claim_type": "EXPLICIT",
-    "source": "We therefore amplified a SIC consisting of attP-SA-Linker-sfGFP-Linker-SD-attP (1392 nt including homology arms) using 20 different gene-specific primer pairs (Figure 2A, Supplementary file 3).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section and shown in Figure 2A.",
+    "evidence": "This is stated directly in the results section with reference to Table 1.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C63",
-    "claim": "Genes for which GFP signal was observed by FACS but GFP+ clones could not be successfully isolated tended to be expressed at low levels in S2R+ cells based on modEncode expression profiling.",
+    "claim_id": "C22",
+    "claim": "For 12 of 19 genes targeted with ssDNA drop-in, GFP+ clones were established, correct integration was verified by PCR, and subcellular localization was determined by immunostaining.",
     "claim_type": "EXPLICIT",
-    "source": "The genes for which we observed GFP signal by FACS but could not successfully isolate GFP+ clones tended to be expressed at low levels in S2R+ cells based on modEncode expression profiling (Cherbas et al., 2011; Table 1).",
+    "source": "For 12 of 19 genes, we could establish GFP+ clones, verify correct integration by PCR, and determine subcellular localization by immunostaining (Table 1, Figure 2C, Figure 2\u2014figure supplement 2).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section with a citation and reference to Table 1.",
+    "evidence": "This is stated directly in the results section with references to data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "With the exception of Ref2P, all correct insertions of GFP resulted in fusion proteins with the expected subcellular distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "With the exception of Ref2P, all correct insertions of GFP resulted in fusion proteins with the expected subcellular distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Sequencing of the SIC insertion sites for the 12 cell lines showed that the insertions are precise.",
+    "claim_type": "EXPLICIT",
+    "source": "Sequencing of the SIC insertion sites (Table 1) for the 12 cell lines showed that the insertions are precise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Western blotting of cell lysates confirmed that the inserted tags lead to GFP fusion proteins of the expected molecular weights.",
+    "claim_type": "EXPLICIT",
+    "source": "Western blotting of cell lysates confirmed that the inserted tags lead to GFP fusion proteins of the expected molecular weights (Figure 2\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Western blot data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Time-lapse confocal imaging of Polo-GFP showed that the protein is localized to centrosomes, spindle, and midbody during cell division, in agreement with the data obtained by immunofluorescence or using polo-GFP transgenes.",
+    "claim_type": "EXPLICIT",
+    "source": "Time-lapse confocal imaging of Polo-GFP showed that the protein is localized to centrosomes, spindle, and midbody during cell division, in agreement with the data obtained by immunofluorescence (Llamazares et al., 1991) or using polo-GFP transgenes (Moutinho-Santos et al., 1999; (Video 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citations and reference to video data.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C64",
-    "claim": "For genes expressed at low levels in S2R+ cells, it is possible that the signal-to-noise ratio for GFP was insufficient to robustly select GFP+ clones, leading to the loss of positive cells in the population.",
-    "claim_type": "EXPLICIT",
-    "source": "For these genes it is possible that the signal-to-noise ratio for GFP was insufficient to robustly select GFP+ clones, leading to the loss of positive cells in the population.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as an inference.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C65",
-    "claim": "PCR generated double-stranded constructs containing GFP and an antibiotic resistance gene have been used for homologous recombination in S2 cells with about 2% integration frequency as judged by FACS.",
+    "claim_id": "C27",
+    "claim": "Previously, PCR generated double-stranded constructs containing GFP and an antibiotic resistance gene have been used for homologous recombination in S2 cells with about 2% GFP integration frequency as judged by FACS.",
     "claim_type": "EXPLICIT",
     "source": "Previously, PCR generated double-stranded constructs containing GFP and an antibiotic resistance gene have been used for homologous recombination in S2 cells (B\u00f6ttcher et al., 2014; Kunzelmann et al., 2016). However, selection with a drug resistance gene was used to enrich the population and GFP integration frequency was about 2% as judged by FACS.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section with citations.",
+    "evidence": "This is stated directly in the results section with citations.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C66",
-    "claim": "GFP protein traps were generated in S2 cells using long ssDNA in up to 4% transfected cells and clones were obtained without using drug-based selection.",
+    "claim_id": "C28",
+    "claim": "The authors were able to generate GFP protein traps in S2 cells using long ssDNA in up to 4% transfected cells and obtain clones without using drug-based selection.",
     "claim_type": "EXPLICIT",
     "source": "We were able to generate GFP protein traps in S2 cells using long ssDNA in up to 4% transfected cells and obtain clones without using drug-based selection (Figure 2, Figure 2\u2014figure supplement 2).",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is stated in the results section and supported by figures.",
+    "evidence": "This is stated directly in the results section with reference to figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C67",
-    "claim": "Richardson et al. (2016) analyzed the binding dynamics of Cas9 to target sites and showed an increase in homologous recombination efficiency by using homology donors with asymmetric homology arms.",
+    "claim_id": "C29",
+    "claim": "The empirical size limit for ssDNA production was ~2 kb.",
     "claim_type": "EXPLICIT",
-    "source": "Previous studies by Richardson et al. (2016) analyzed the binding dynamics of Cas9 to target sites and showed an increase in homologous recombination efficiency by using homology donors with asymmetric homology arms.",
+    "source": "Our initial experiments showed that the empirical size limit for ssDNA production was ~2 kb, significantly smaller than the ~5 kb SIC present in the CRIMIC cassettes currently used by the GDP (Lee et al., 2018a).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section with a citation.",
+    "evidence": "This is stated directly in the results section with citation.",
     "evidence_type": [
+      "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C68",
-    "claim": "ssDNA drop-in constructs provided an efficient homology substrate in S2R+ cells for about 60% of the tested genes.",
+    "claim_id": "C30",
+    "claim": "The smallest self-sufficient visible dominant marker in Drosophila is 3XP3-EGFP.",
     "claim_type": "EXPLICIT",
-    "source": "In summary, ssDNA drop-in constructs are simple to produce and provided an efficient homology substrate in S2R+ cells for about 60% of the tested genes.",
+    "source": "The smallest self-sufficient visible dominant marker in Drosophila is 3XP3-EGFP (Horn et al., 2000).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section as a summary of the data.",
+    "evidence": "This is stated directly in the results section with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The attP-3XP3-EGFP-attP PCR template is 1242 nt long and can be used for ssDNA donor (1442 nt including two 100 nt homology arms) generation.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, in order to remain under the size limit, we generated an attP-3XP3-EGFP-attP PCR template that is 1242 nt long and can be used for ssDNA donor (1442 nt including two 100 nt homology arms) generation (Figure 3A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Figure 3A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C69",
+    "claim_id": "C32",
+    "claim": "The attP-3XP3-EGFP-attP cassette is not mutagenic unless inserted in exons and only generates a landing site for RMCE in the targeted region.",
+    "claim_type": "EXPLICIT",
+    "source": "The attP-3XP3-EGFP-attP cassette is not mutagenic unless inserted in exons and only generates a landing site for RMCE in the targeted region.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The use of CRIMIC constructs was more efficient than ssDNA drop-in constructs for in vivo fly transformation, as judged by the number of independent fly lines produced per successful gene.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the use of CRIMIC constructs was more efficient, as judged by the number of independent fly lines produced per successful gene (Figure 3B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
     "claim": "Short ssDNA homology donors were previously used in Drosophila to integrate small epitope tags or site-specific recombination sites.",
     "claim_type": "EXPLICIT",
     "source": "Short ssDNA homology donors were previously used in Drosophila to integrate small epitope tags or site-specific recombination sites (Gratz et al., 2013; Wissel et al., 2016).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section with citations.",
+    "evidence": "This is stated directly in the results section with citations.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C70",
+    "claim_id": "C35",
     "claim": "Novel methods were developed to generate and use longer ssDNAs (~1000 nt) as homology donors in vivo in mice.",
     "claim_type": "EXPLICIT",
     "source": "More recently, novel methods were developed to generate and use longer ssDNAs (~1000 nt) as homology donors in vivo in mice (Miura et al., 2015; Quadros et al., 2017; Lanza et al., 2018).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section with citations.",
+    "evidence": "This is stated directly in the results section with citations.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C71",
-    "claim": "The ssDNA constructs are efficient donors for S2R+ cells for protein tagging by knock-in but for fly transgenesis they are not more efficient than the standard CRIMIC method.",
+    "claim_id": "C36",
+    "claim": "Homologous recombination is dependent on the size of the inserted cassette.",
     "claim_type": "EXPLICIT",
-    "source": "In summary, the ssDNA constructs are efficient donors for S2R+ cells for protein tagging by knock-in but for fly transgenesis they are not more efficient than the standard CRIMIC method.",
+    "source": "One means of increasing the targeting rate is to shorten the SIC, since homologous recombination is dependent on the size of the inserted cassette (Beumer et al., 2013).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section as a summary conclusion.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "The ease and low cost of producing ssDNA constructs and the transformation efficiency in S2 cells may justify their use to integrate GFP tags or landing sites in cultured cells or the germline.",
-    "claim_type": "EXPLICIT",
-    "source": "Nevertheless, the ease and low cost of producing these constructs and the transformation efficiency in S2 cells may justify their use to integrate GFP tags or landing sites in cultured cells or the germline.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a conclusion.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C73",
-    "claim": "The lower mutagenic efficacy of attP-SA-3XSTOP-minipolyA-U6gRNA1-attP may be the result of read through of stop codons, inefficient transcriptional stop at the minipolyA sequence or smaller size of the inserted artificial exon.",
-    "claim_type": "EXPLICIT",
-    "source": "The lower mutagenic efficacy of attP-SA-3XSTOP-minipolyA-U6gRNA1-attP may be the result of read through of stop codons, inefficient transcriptional stop at the minipolyA sequence or smaller size of the inserted artificial exon.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as speculation about the mechanism.",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "The combination of SA-T2A with minipolyA is stronger than SA-3XSTOP-minipolyA.",
-    "claim_type": "EXPLICIT",
-    "source": "The observation that attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP is potently mutagenic indicates that the combination of SA-T2A with minipolyA is stronger than SA-3XSTOP-minipolyA.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as an inference from the data.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C75",
-    "claim": "The increased size of artificial exon in attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP overcomes the limitation of attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct in mutagenesis efficacy.",
-    "claim_type": "EXPLICIT",
-    "source": "Alternatively, the increased size of artificial exon in attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP overcomes the limitation of attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct in mutagenesis efficacy.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as an alternative explanation.",
-    "evidence_type": [
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C76",
-    "claim": "The attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP may not be strong enough to drive robust reporter expression in genes with low expression levels.",
-    "claim_type": "EXPLICIT",
-    "source": "Hence, the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP drives lower levels of reporter expression when compared to CRIMIC, which may limit the use of miniGAL4 for genes expressed at low levels.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a limitation.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C77",
-    "claim": "The U6-gRNA1 dominant marker requires the presence of other transgenes for detection.",
-    "claim_type": "EXPLICIT",
-    "source": "However, this marker requires the presence of other transgenes for detection (Figure 4\u2014figure supplement 1) and the reconstituted dominant marker transgene segregates independently from the targeted gene.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is stated in the results section as a limitation.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C78",
-    "claim": "The reconstituted dominant marker transgene segregates independently from the targeted gene.",
-    "claim_type": "EXPLICIT",
-    "source": "However, this marker requires the presence of other transgenes for detection (Figure 4\u2014figure supplement 1) and the reconstituted dominant marker transgene segregates independently from the targeted gene.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a limitation.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C79",
-    "claim": "The limitations of the U6-gRNA1 marker make establishing and maintaining stocks more challenging.",
-    "claim_type": "EXPLICIT",
-    "source": "These limitations make establishing and maintaining stocks more challenging.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section as a conclusion about the limitations.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C80",
-    "claim": "In vitro linearized DNA or direct PCR products are very poor substrates for homologous recombination for germ line transformation in Drosophila.",
-    "claim_type": "EXPLICIT",
-    "source": "However, in vitro linearized DNA or direct PCR products are very poor substrates for homologous recombination for germ line transformation in Drosophila (Beumer et al., 2008; B\u00f6ttcher et al., 2014).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated in the results section with citations.",
+    "evidence": "This is stated directly in the results section with citation.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C81",
+    "claim_id": "C37",
+    "claim": "miniGAL4 (1200 nt) is about half the size of full-length GAL4 (2646 nt) and has about 50% of the transcriptional activity of full-length GAL4 in yeast.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we used a shortened GAL4 construct, referred to as miniGAL4 (1200 nt), which is about half the size of full-length GAL4 (2646 nt) and has about 50% of the transcriptional activity of full-length GAL4 in yeast (Ding and Johnston, 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The U6 promoter expressing a gRNA sequence (gRNA1) that does not have a target in the fly genome is only ~200 nt long.",
+    "claim_type": "EXPLICIT",
+    "source": "Because 3XP3-EGFP is ~1 kb in length, we opted to use an alternative marker that is only ~200 nt long and contains a ubiquitous U6 promoter expressing a gRNA sequence (gRNA1) that does not have a target in the fly genome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct functions as a gene trap and is 1968 nt in length, including homology arms.",
+    "claim_type": "EXPLICIT",
+    "source": "This resulted in attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP, which functions as a gene trap and is 1968 nt in length, including homology arms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct is 715 nt in length including homology arms.",
+    "claim_type": "EXPLICIT",
+    "source": "We also generated a smaller minimal mutagenic construct, attP-SA-3XSTOP-minipolyA-U6gRNA1-attP, that is 715 nt in length including homology arms (Figure 4A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Both dsDNA drop-in constructs are small enough to be commercially synthesized at a low cost (less than $250).",
+    "claim_type": "EXPLICIT",
+    "source": "Both dsDNA drop-in constructs are small enough to be commercially synthesized at a low cost (less than $250).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Linearization has previously been shown to boost homologous recombination rates in cell culture, zebrafish and mouse transgenesis.",
+    "claim_type": "EXPLICIT",
+    "source": "Linearization has previously been shown to boost homologous recombination rates in cell culture, zebrafish and mouse transgenesis (Cristea et al., 2013; Hisano et al., 2015; Suzuki et al., 2016; Yao et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
     "claim": "Higher transgenesis rates have been reported in mice and worms using donor constructs linearized in vitro.",
     "claim_type": "EXPLICIT",
     "source": "It is worth noting that higher transgenesis rates have been reported in mice and worms using donor constructs linearized in vitro (Paix et al., 2014; Paix et al., 2015; Paix et al., 2017; Dokshin et al., 2018; Yao et al., 2018).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section with citations.",
+    "evidence": "This is stated directly in the results section with citations.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C82",
-    "claim": "The presence of short homology arms allows the donor vectors to be synthesized cheaply and introducing larger SICs is accomplished by a single straightforward cloning step.",
+    "claim_id": "C44",
+    "claim": "In vitro linearized DNA or direct PCR products are very poor substrates for homologous recombination for germ line transformation in Drosophila.",
     "claim_type": "EXPLICIT",
-    "source": "Note that for drop-in constructs, the presence of short homology arms allows the donor vectors to be synthesized cheaply and introducing larger SICs is accomplished by a single straightforward cloning step, providing a good balance between ease of construct generation and efficient in vivo use.",
+    "source": "However, in vitro linearized DNA or direct PCR products are very poor substrates for homologous recombination for germ line transformation in Drosophila (Beumer et al., 2008; B\u00f6ttcher et al., 2014).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section as an advantage of the method.",
+    "evidence": "This is stated directly in the results section with citations.",
     "evidence_type": [
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C83",
-    "claim": "The decrease of SIC size and linearization increased the transgenesis rate compared to CRIMIC templates.",
+    "claim_id": "C45",
+    "claim": "65 independent transgenic lines were obtained for the attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct.",
     "claim_type": "EXPLICIT",
-    "source": "In summary, the decrease of SIC size and linearization increased the transgenesis rate compared to CRIMIC templates.",
+    "source": "We obtained 65 independent transgenic lines for the attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct, and 119 independent transgenic lines for the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section as a summary conclusion.",
+    "evidence": "This is stated directly in the results section.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C85",
-    "claim": "The cell lines will be a useful resource for small- and large-scale studies of organelle biogenesis, organelle function, and/or subcellular distribution of organelles or specific fusion proteins, and genetic and pharmacological screens to identify regulators of organelle homeostasis.",
+    "claim_id": "C46",
+    "claim": "119 independent transgenic lines were obtained for the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct.",
+    "claim_type": "EXPLICIT",
+    "source": "We obtained 65 independent transgenic lines for the attP-SA-3XSTOP-minipolyA-U6gRNA1-attP construct, and 119 independent transgenic lines for the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP construct.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The insertion sites were verified by genomic PCR in 7/10 genes for both dsDNA drop-in methods.",
+    "claim_type": "EXPLICIT",
+    "source": "We verified the insertion sites by genomic PCR in 7/10 genes for both methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Three genes for which integration could not be verified contained an unanticipated variation in the gRNA target site in the isogenized Cas9 injection stocks when compared to the FlyBase reference genome sequence.",
+    "claim_type": "EXPLICIT",
+    "source": "Analyses of the genomic DNA sequences of the three genes for which we could not verify the integration site revealed that these genes contain an unanticipated variation in the gRNA target site in the isogenized Cas9 injection stocks when compared to the FlyBase reference genome sequence (dos Santos et al., 2015; Goodman et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The artificial exon attP-SA-3XSTOP-minipolyA-U6gRNA1-attP leads to ~40% decrease in protein levels and creates a much less severe allele than the CRIMIC allele.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 5A, the artificial exon attP-SA-3XSTOP-minipolyA-U6gRNA1-attP leads to ~40% decrease in protein levels and creates a much less severe allele than the CRIMIC allele.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP cassette leads to ~80\u201390% decrease in protein levels, similar to a CRIMIC insertion in the same locus.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP cassette leads to ~80\u201390% decrease in protein levels, similar to a CRIMIC insertion in the same locus (Figure 5A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "T2A-miniGAL4 drives approximately 60% lower levels of reporter expression when compared to CRIMIC T2A-GAL4 driven UAS-LacZ expression for the CG5009 locus.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 5B, we observed a ~ 60% reduction of reporter levels with T2A-miniGAL4 as compared to CRIMIC T2A-GAL4 driven UAS-LacZ expression for the CG5009 locus (Figure 5B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Synthesis of a full length 5 kb CRIMIC cassette would be cost prohibitive (>$1,000).",
+    "claim_type": "EXPLICIT",
+    "source": "Unfortunately, synthesis of a full length 5 kb CRIMIC cassette would be cost prohibitive (>$1,000) especially for thousands of genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The cost of synthesizing a gRNA1 target-100nt homology arm-Restriction cassette-100nt homology arm-gRNA1 target inserted into a pUC57 vector for each target gene is $80.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, we developed a modified cloning strategy in which we first synthesize a gRNA1 target-100nt homology arm-Restriction cassette-100nt homology arm-gRNA1 target inserted into a pUC57 vector for each target gene (cost is $80).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Using the drop-in int100-CRIMIC cassette, multiple knock-in alleles were obtained in five genes, as verified by PCR.",
+    "claim_type": "EXPLICIT",
+    "source": "Using the drop-in int100-CRIMIC cassette we obtained multiple knock-in alleles in five genes, as verified by PCR (Figure 6B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "100 nt homology arms are sufficient to integrate large SICs into target sites.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, 100 nt homology arms are sufficient to integrate large SICs into target sites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section as a conclusion from the data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "In vivo linearization was previously shown to lead to knock-ins in zebrafish and cell culture even when there is no homology arm, provided that the homology donor and target site are cut concomitantly.",
+    "claim_type": "EXPLICIT",
+    "source": "In vivo linearization was previously shown to lead to knock-ins in zebrafish and cell culture even when there is no homology arm, provided that the homology donor and target site are cut concomitantly (Cristea et al., 2013; Auer et al., 2014; Schmid-Burgk et al., 2016; Suzuki et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "A homology independent knock-in method was established for Drosophila cell culture and germline transformation.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, a homology independent knock-in method was established for Drosophila cell culture and germline transformation (Bosch et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Bosch et al. (2019) integrated a CRIMIC cassette in 4 of 11 genes targeted by simultaneously cutting the donor construct and target region in the absence of homology arms.",
+    "claim_type": "EXPLICIT",
+    "source": "By simultaneously cutting the donor construct and target region in the absence of homology arms, Bosch et al. (2019) integrated a CRIMIC cassette in 4 of 11 genes targeted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The insertion events from homology independent knock-in were error-prone and non-directional.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these insertion events were error-prone and non-directional.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section referring to Bosch et al. (2019).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The drop-in method significantly improved the overall efficiency compared to the method described in Lee et al. (2018a).",
+    "claim_type": "EXPLICIT",
+    "source": "With respect to the dsDNA donors, we significantly improved the overall efficiency compared to the method described in Lee et al. (2018a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The efficacy of CRIMIC constructs hover around 50% in optimal conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, when the efficacy of fly transformation and the events that can be PCR verified on either side of knock-in region are included, the efficacy of CRIMIC constructs hover around 50% in optimal conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "With the drop-in cassette strategy, the cloning success rate is nearly 100%.",
+    "claim_type": "EXPLICIT",
+    "source": "With the drop-in cassette strategy, not only is the cloning success rate nearly 100%, but the protocol requires little troubleshooting, dramatically reducing the bench time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Drop-in results in a 70\u201380% success rate when factoring in the transformation and verification rate.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, factoring in the transformation and verification rate drop-in results in a 70\u201380% success rate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Shortening the homology arms to 100 nt allows synthesis followed by a simple cloning step, thus eliminating cloning failure and reducing the cost from ~$300 to ~$100 per construct.",
+    "claim_type": "EXPLICIT",
+    "source": "Key features that improved efficiency are: 1) shortening the homology arms to 100 nt, which allows synthesis followed by a simple cloning step, thus eliminating cloning failure and reducing the cost from ~$300 to ~$100 per construct",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Integration of target gRNA1 sites on either side of the SIC to linearize the donor with Cas9 in the germ cells improved efficiency.",
+    "claim_type": "EXPLICIT",
+    "source": "and 2) integration of target gRNA1 sites on either side of the SIC to linearize the donor with Cas9 in the germ cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Lambda Exonuclease is a 5'-to-3' nuclease with a preference for 5' phosphorylated DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "When this PCR product is treated with Lambda Exonuclease, a 5'-to-3' nuclease with a preference for 5' phosphorylated DNA (Little, 1967; Mitsis and Kwagh, 1999), the 5'- phosphorylated strand is degraded, leaving the non-phosphorylated strand as a ssDNA homology donor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "S2R+-MT::Cas9 cells are a derivative of S2R+ NPT005 and contain an mCherry tag in the Clic locus.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that this cell line is a derivative of S2R+ NPT005 (DGRC #229) and thus contains an mCherry tag in the Clic locus (Neum\u00fcller et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the materials and methods section with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The ssDNA constructs are efficient donors for S2R+ cells for protein tagging by knock-in.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, the ssDNA constructs are efficient donors for S2R+ cells for protein tagging by knock-in but for fly transgenesis they are not more efficient than the standard CRIMIC method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section as a summary conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "For fly transgenesis, ssDNA constructs are not more efficient than the standard CRIMIC method.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, the ssDNA constructs are efficient donors for S2R+ cells for protein tagging by knock-in but for fly transgenesis they are not more efficient than the standard CRIMIC method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section as a summary conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The decrease in size of SIC and linearization increased the transgenesis rate compared to CRIMIC templates.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, the decrease of SIC size and linearization increased the transgenesis rate compared to CRIMIC templates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section as a summary conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The U6-gRNA1 dominant marker requires the presence of other transgenes for detection.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this marker requires the presence of other transgenes for detection (Figure 4\u2014figure supplement 1) and the reconstituted dominant marker transgene segregates independently from the targeted gene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The reconstituted dominant marker transgene segregates independently from the targeted gene.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this marker requires the presence of other transgenes for detection (Figure 4\u2014figure supplement 1) and the reconstituted dominant marker transgene segregates independently from the targeted gene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "T2A-miniGAL4 may not be strong enough to drive robust reporter expression in genes with low expression levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, T2A-miniGAL4 may not be strong enough to drive robust reporter expression in genes with low expression levels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section as a limitation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The generated cell lines with marked organelles are listed at the Drosophila RNAi Screening Center (DRSC) website and available through the Drosophila Genomics Resource Center (DGRC).",
     "claim_type": "EXPLICIT",
     "source": "These cell lines will be a useful resource for small- and large-scale studies of organelle biogenesis, organelle function, and/or subcellular distribution of organelles or specific fusion proteins, and genetic and pharmacological screens to identify regulators of organelle homeostasis.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated in the results section as a conclusion about the utility of the resource.",
+    "evidence": "This is stated in the results section with URLs provided.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The cell lines generated will be a useful resource for small- and large-scale studies of organelle biogenesis, organelle function, and/or subcellular distribution of organelles or specific fusion proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "These cell lines will be a useful resource for small- and large-scale studies of organelle biogenesis, organelle function, and/or subcellular distribution of organelles or specific fusion proteins, and genetic and pharmacological screens to identify regulators of organelle homeostasis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The drop-in approaches will be useful in other species.",
+    "claim_type": "EXPLICIT",
+    "source": "We anticipate that the drop-in approaches will also be useful in other species.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the results section as an anticipation.",
     "evidence_type": [
       "SPECULATION"
     ]

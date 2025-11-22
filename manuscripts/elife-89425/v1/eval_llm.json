@@ -2,165 +2,164 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C32",
-      "C33",
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
       "C34",
       "C35",
       "C36"
     ],
-    "result": "WGCNA identified 12 gene co-expression modules from 12,444 well-expressed genes in juvenile zebra finch telencephalon. Two modules were excluded as technical artifacts, leaving 12 modules (A-L) for analysis.",
+    "result": "RNA-seq data from song nuclei and surrounding regions were obtained from juvenile zebra finches (PHD30) treated with vehicle or E2 from hatch, remapped to a new genome assembly with Z and W chromosomes, and quality-controlled by removing two technical outliers.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C32-C36 describe the WGCNA module identification process with specific numbers and quality control steps. The methodology is clearly described, technical outliers were appropriately identified and removed (C35), and the final module count is consistent across claims.",
+    "evaluation": "Claims C5, C26-C30, C34-C36 describe the experimental design, data source, remapping procedure, and quality control steps. The methodology is clearly documented with appropriate references to prior work (C26, C27) and technical details (C34, C35, C36). The removal of outliers (C36) is justified by hierarchical clustering analysis.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
       "C37",
-      "C42",
-      "C43",
-      "C44",
-      "C45"
+      "C38",
+      "C39",
+      "C40",
+      "C41"
     ],
-    "result": "In vehicle-treated males, each song nucleus showed unique gene module specializations (2-4 modules per nucleus), while vehicle-treated females showed specializations only in LMAN and RA, but not in HVC or Area X.",
+    "result": "Weighted gene correlation network analysis (WGCNA) identified 12 co-expression modules from 12,444 well-expressed genes after excluding two technically overfit modules.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C37-C45 describe specific module-to-nucleus associations with reference to Figure 2a-b. The pattern is internally consistent: males show specialization across all four nuclei, while females lack specialization in HVC and Area X, which aligns with known anatomical differences.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C37-C41 describe the WGCNA methodology and results. The approach is standard and well-documented, with appropriate parameterization (referenced in figure supplements). The exclusion of overfit modules (C40) is justified by technical criteria. The number of expressed genes (C38) is consistent with prior studies.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
       "C46",
       "C47",
       "C48",
-      "C49"
+      "C49",
+      "C50"
     ],
-    "result": "E2 treatment induced dramatic transcriptional changes in female song nuclei, causing them to more closely mirror male gene module specializations. Four core modules (F in LMAN, G in HVC, C in RA, and C/F/G in Area X) were most sensitive to E2 in females.",
+    "result": "In vehicle-treated males, each song nucleus showed specialization in 2-4 gene modules, while in vehicle-treated females, LMAN and RA showed module specializations but HVC and Area X did not.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C49 describe E2 effects with specific module identifications and comparisons between treatment groups. The claims are supported by Figure 2c-e and represent a coherent pattern of E2-induced masculinization at the transcriptional level.",
+    "evaluation": "Claims C42-C50 describe module-nucleus associations in control animals. The findings are directly supported by data presented in Figure 2a-b and represent the baseline transcriptomic organization. The lack of HVC and Area X specialization in females (C50) is consistent with known anatomical atrophy in these regions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C50",
       "C51",
       "C52",
       "C53",
-      "C54"
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
     ],
-    "result": "Module E showed strong sexual dimorphism across all brain regions (higher in males), while modules G, C, and H showed region-specific sex differences in song nuclei and surrounds.",
+    "result": "E2 treatment caused modest changes in male song nuclei module specializations but dramatic changes in females, with E2-treated females exhibiting a subset of male-like gene module specializations, particularly in HVC and Area X.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C54 describe sexually dimorphic module expression patterns with specific regional associations referenced to Figure 2f-g. The broad distribution of module E contrasts with region-specific patterns of other modules, providing a coherent picture of sex differences.",
+    "evaluation": "Claims C51-C60 describe E2 effects on gene module specializations. The data show clear sex-specific responses (Figure 2c-d), with females showing more dramatic transcriptional changes (C60). The findings are consistent with prior behavioral observations (C54) and represent a key result linking transcriptional changes to masculinization.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59"
+      "C61"
     ],
-    "result": "Several modules showed strong region-specific expression: module A in Area X/Str (containing FOXP2), module C in arcopallium/RA, module F exclusively in LMAN, and module G in HVC with sex and E2 dependence.",
+    "result": "Four core gene modules (F in LMAN, G in HVC, C in RA, and C/F/G in Area X) are most sensitive to E2 induction in females and most associated with vocal learning capacity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C59 describe region-specific module expression patterns with reference to Figure 2h-k. The inclusion of FOXP2 in module A (C56) provides biological validation, and the patterns are consistent with known song system anatomy.",
+    "evaluation": "Claim C61 synthesizes findings from multiple comparisons (Figure 2e) to identify modules most strongly associated with E2-induced vocal learning capacity in females. This represents a data-driven identification of candidate modules for further investigation and is well-supported by the comparative analyses.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C61",
       "C62",
-      "C63"
+      "C63",
+      "C64",
+      "C65",
+      "C66"
     ],
-    "result": "Three small modules (J, K, L) showed bird-specific expression patterns, likely representing biological inter-individual variation rather than technical artifacts.",
+    "result": "Module E showed broad sex differences across all brain regions, while other modules (G, C, H) showed region-specific sexual dimorphism in song nuclei or surrounds.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C61-C63 describe individual bird-specific modules with reference to Figure 2m-o. The authors appropriately interpret these as biological variation rather than technical issues, which is reasonable given the quality control performed earlier.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C62-C66 describe sex differences in module expression patterns. Module E's broad distribution (C62, C66) contrasts with region-specific patterns in other modules (C63-C65), as shown in Figure 2f-g. This distinction is important for understanding different mechanisms of sexual dimorphism.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C65",
-      "C66",
       "C67",
-      "C68"
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
     ],
-    "result": "GO enrichment analysis revealed that module G genes are enriched for developmental functions (cell differentiation, anatomical morphogenesis, extracellular matrix), while module E genes are enriched for nuclear functions (DNA repair, transcription, splicing).",
+    "result": "Several modules showed strong region-specific expression patterns (A in striatum, C in arcopallium, F in LMAN, G in HVC, E in males), while three small modules (J, K, L) showed animal-specific expression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C65-C68 describe GO enrichment results with specific functional categories. The functional annotations are appropriate for the observed expression patterns: module G's developmental functions fit its role in song system development, while module E's nuclear functions fit its broad distribution.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C67-C76 describe module expression patterns across regions and individuals. The region-specific patterns (C67-C72) are clearly demonstrated in Figure 2h-l. The animal-specific modules (C73-C76) represent biological variation, though the interpretation as non-technical variation is reasonable but not definitively proven.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C69",
-      "C70",
-      "C71",
-      "C72"
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
     ],
-    "result": "Gene modules showed significant enrichment for previously identified convergently specialized genes between songbird song nuclei and human speech regions: module B (LMAN/HVC-dLMC upper layers), module C (RA-dLMC lower layers), and modules A/I (Area X-striatum).",
+    "result": "GO enrichment analysis revealed that module G genes are enriched for developmental functions (cell differentiation, anatomical morphogenesis, extracellular matrix) while module E genes are enriched for nuclear functions (transcription, DNA repair).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C72 describe enrichment of convergent vocal learning genes with reference to Figure 3a and prior work. This provides important validation of the WGCNA approach by showing it recapitulates known evolutionary convergences.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C77-C81 describe functional enrichment results. The GO analysis methodology is standard (C77), and the enrichments for module G (C78-C79) and module E (C80-C81) provide functional context for the modules. However, the interpretation that module G genes \"potentially act to integrate and differentiate late-born neurons\" (C78) is speculative.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C73",
-      "C74",
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79",
-      "C80"
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
     ],
-    "result": "Each of the 12 modules was enriched for genes from specific chromosomes. Module E was strongly enriched for sex chromosomes (Z and W), while HVC-specialized modules B and G were enriched on chromosome 1A, a songbird-specific chromosomal fragment.",
+    "result": "Gene modules specialized in song nuclei were enriched for genes previously identified as convergently specialized between songbird song regions and human speech regions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C73-C80 describe chromosome enrichment patterns with reference to Figure 3b and appropriate statistical testing (bootstrapped FDR-corrected p-values). The songbird-specific chromosome 1A enrichment (C75-C76) is particularly interesting and well-supported by citations.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C82-C86 demonstrate that the WGCNA modules recapitulate previously identified convergent specializations between songbirds and humans. This validates the module assignments and places them in evolutionary context. The enrichment analysis (Figure 3a) provides statistical support.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C85"
-    ],
-    "result": "Sex chromosome gene expression analysis revealed that Z transcripts positively correlated with module E while W transcripts anticorrelated. Approximately 2/3 of sex chromosome genes showed sexual dimorphism in at least one brain region, with 1/3 showing dimorphism across all regions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C81-C85 describe sex chromosome expression patterns with specific percentages and reference to Figure 4. The findings are consistent with known lack of dosage compensation in birds (C82) and provide quantitative support for both broad and region-specific sex chromosome effects.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C86",
       "C87",
       "C88",
       "C89",
@@ -170,85 +169,85 @@
       "C93",
       "C94"
     ],
-    "result": "Two Z chromosome genes (PDE8B and HABP4) showed dual regulation: broad sex-based reduction throughout the brain and specialized upregulation in male HVC. Both genes have known functions relevant to neural development and vocal behavior.",
+    "result": "Each of the 12 modules was enriched for genes from at least one chromosome, with module E strongly enriched for Z and W sex chromosome genes, and modules B and G enriched on chromosome 1A.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C86-C94 identify specific candidate genes with dual regulatory patterns, supported by Figure 4j and citations for gene functions. The biological plausibility is strong given the known roles of these genes (C88-C91), though functional validation would strengthen the claims.",
+    "evaluation": "Claims C87-C94 describe chromosomal enrichments of gene modules. The finding that each module shows chromosomal enrichment (C87) is surprising and well-documented (Figure 3b). The sex chromosome enrichment in module E (C88) and the chromosome 1A enrichment for HVC modules (C89) are particularly notable given the songbird-specific chromosome fragmentation (C90).",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R12",
+    "result_id": "R11",
     "claim_ids": [
       "C95",
       "C96",
       "C97",
       "C98",
-      "C99",
-      "C100"
+      "C99"
     ],
-    "result": "Module E Z chromosome genes showed expression levels matching dosage predictions (65.1% vs 66.6% predicted), while non-E module Z genes showed varying degrees of dosage compensation. Module G Z genes in song nuclei were the only set exceeding dosage predictions.",
+    "result": "Sex chromosome gene expression analysis revealed that approximately two-thirds of Z and W chromosome genes are sexually dimorphic in at least one brain region, with about one-third showing broad dimorphism across all regions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C95-C100 describe dosage compensation patterns with specific quantitative measurements referenced to Figure 5. The finding that module E follows dosage while module G exceeds it in song nuclei is internally consistent and supports the dual regulation hypothesis.",
+    "evaluation": "Claims C95-C99 quantify sex chromosome gene expression patterns. The analysis shows both broad and region-specific sexual dimorphism (C99), with specific proportions documented (C97-C98). The correlation patterns (C95) and consistency with lack of Z inactivation (C96) provide mechanistic context.",
     "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Two Z chromosome genes (PDE8B and HABP4) were identified as outliers showing both module E and module G associations, with both genes upregulated in male HVC but not female HVC, suggesting Z chromosome genes may be subject to multiple regulatory programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 identify specific genes at the intersection of sex chromosome dosage effects and song nucleus specialization. The identification of PDE8B and HABP4 (C100-C101) is data-driven (Figure 4j), and their functional roles (C102-C105) and chromosomal location (C106-C107) are documented. The interpretation of multiple regulatory programs (C108) is reasonable.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C101",
-      "C102",
-      "C103"
-    ],
-    "result": "W chromosome genes in module E showed minimal male read mapping (6.8% average, 0.5% median), while non-module E W genes showed higher male mapping (33.0% average), likely due to Z chromosome paralog cross-mapping.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C101-C103 describe W chromosome mapping patterns with reference to Figure 5g-h. The interpretation of male reads as Z paralog cross-mapping is reasonable, and the difference between module E and non-E genes is consistent with module E containing less divergent sex chromosome genes.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C104",
-      "C105",
-      "C106",
-      "C107"
-    ],
-    "result": "WGCNA successfully resolved dosage effects in an unbiased manner: module E captured un-dosage-compensated sex chromosome genes, while song nucleus-specialized modules captured genes with regional dosage compensation, particularly module G in the song system.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C104-C107 summarize the methodological success of WGCNA in separating dosage effects from functional specialization. This is well-supported by the quantitative data in prior claims and represents an important validation of the analytical approach.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C108",
       "C109",
       "C110",
       "C111",
       "C112",
-      "C113",
-      "C114",
-      "C115",
-      "C116"
+      "C113"
     ],
-    "result": "A core set of 14 genes strongly correlated with vocal learning-capable HVC across all comparisons, with significant enrichment for Z chromosome genes (3/14: GHR, RGS7BP, THBS4, p=0.009). These three Z genes showed >50% reduced expression in control females but were upregulated in male HVC and E2-treated female HVC.",
+    "result": "Module E Z chromosome genes showed expression ratios matching chromosomal dosage predictions (65.1% vs 66.6% predicted), while non-E module Z genes showed varying degrees of dosage compensation, with module G genes being more male-biased in song nuclei than surrounds.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C108-C116 describe the identification of core genes through intersection of multiple comparisons (Figure 6) with appropriate statistical testing (hypergeometric test). The >3-fold enrichment of Z genes is statistically significant and biologically meaningful, though the small sample size (14 genes) should be noted.",
+    "evaluation": "Claims C109-C113 quantify dosage compensation patterns across modules. The near-perfect match to dosage predictions for module E (C109) contrasts with partial compensation in other modules (C110, C113). The enhanced male bias of module G in song nuclei (C111) is particularly important for the vocal learning hypothesis. Data are clearly presented in Figure 5.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R16",
+    "result_id": "R14",
     "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
       "C117",
       "C118",
-      "C119",
+      "C119"
+    ],
+    "result": "W chromosome gene analysis revealed that module E W genes showed minimal male read mapping (6.8% average) compared to non-E W genes (33.0%), and WGCNA successfully separated dosage-regulated genes (module E) from song nucleus-specialized genes with dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 describe W chromosome expression patterns and validate the WGCNA approach. The differential male read mapping (C114-C115) likely reflects paralog mapping (C116), and the separation of dosage effects from specialization (C117-C119) demonstrates the power of the unbiased network approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
       "C120",
       "C121",
       "C122",
@@ -256,127 +255,127 @@
       "C124",
       "C125",
       "C126",
-      "C127"
+      "C127",
+      "C128"
     ],
-    "result": "The 14 core genes include several with known roles in brain development and function across species. GHR (growth hormone receptor) is identified as the most likely candidate for E2-sensitive HVC atrophy based on its ligand's role in songbird evolution and avian neuroprotection.",
+    "result": "A core set of 14 genes strongly correlated with vocal learning-capable HVC across all comparisons, with significant enrichment for Z chromosome genes (3 of 14: GHR, RGS7BP, THBS4), which showed reduced expression in control females but upregulation in males and E2-treated females specifically in HVC.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C117-C127 provide literature support for the biological relevance of core genes, with appropriate citations. The identification of GHR as the top candidate (C127) is reasonable given the supporting evidence, though this remains a hypothesis requiring functional validation.",
+    "evaluation": "Claims C120-C128 identify candidate driver genes through systematic correlation analysis (Figure 6). The statistical enrichment of Z chromosome genes (C122) and their HVC-specific regulation patterns (C123-C128) provide strong evidence for Z chromosome involvement in vocal learning. The analysis is rigorous and well-documented.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R17",
+    "result_id": "R16",
     "claim_ids": [
-      "C128",
       "C129",
       "C130",
       "C131",
       "C132",
-      "C133"
-    ],
-    "result": "Control female HVC and Area X lacked gene module specialization, while E2-treated females showed a subset of male specializations. In contrast, RA and LMAN were similarly specialized in both sexes without E2. This supports a model where E2-induced transcriptomic masculinization of HVC facilitates Area X emergence and enables rudimentary vocal learning.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C128-C133 synthesize the main findings into a developmental model, supported by the data presented and prior work on HVC lesions (C133, citing Herrmann and Arnold 1991). The model is logically consistent with all observations, though it remains a hypothesis requiring further testing.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
+      "C133",
       "C134",
       "C135",
       "C136",
       "C137",
       "C138",
-      "C139",
-      "C140"
+      "C139"
     ],
-    "result": "The authors hypothesize that Z chromosome genes (including GHR) are co-regulated components of a growth-enabling transcriptional program (module G) downstream of estrogen receptor. Reduced Z gene dosage in females leads to insufficient module G expression, preventing HVC development and subsequent Area X emergence, which E2 treatment partially rescues.",
+    "result": "The 14 core genes include several with known roles in brain development and function in other species, with GHR identified as the most likely candidate gene related to E2-sensitive HVC atrophy based on its ligand's (GH) roles in songbird evolution and avian neuroprotection.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C135-C140 present a detailed mechanistic hypothesis integrating sex chromosomes, hormones, and development. While the hypothesis is consistent with the data and logically coherent, it is explicitly speculative (marked as SPECULATION in evidence_type) and requires experimental validation through gene manipulation studies.",
+    "evaluation": "Claims C129-C139 provide functional context for core genes through literature review. While the cited functions are accurate (C129-C138), the conclusion that GHR is \"the most likely candidate\" (C139) is speculative and not directly tested. The reasoning is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Control female HVC and Area X lacked gene module specializations, but E2-treated females showed male-like specializations in these regions, while RA and LMAN were similarly specialized in both sexes, supporting a model where HVC masculinization is critical for Area X emergence and vocal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 synthesize the main findings into a developmental model. The transcriptomic patterns (C140-C143) are well-supported by the data. The model (C144) is consistent with prior lesion studies (C19) showing HVC is necessary for Area X development, though the model itself requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors hypothesize that Z chromosome genes in module G form a growth-enabling transcriptional program downstream of estrogen receptor, which is reduced in females by lower Z chromosome dosage, preventing HVC specialization and subsequent Area X emergence and RA maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C150 present the authors' mechanistic hypothesis. While the hypothesis is consistent with the data and integrates multiple findings, it remains speculative (as indicated by \"hypothesize,\" \"could be,\" \"propose,\" \"may be\"). The model requires experimental validation through gene manipulation studies.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C141",
-      "C142",
-      "C143"
+      "C151",
+      "C152",
+      "C153",
+      "C154"
     ],
-    "result": "Comparison with prior developmental studies shows that Z chromosome sexual dimorphism increases from 28% to 39% between PHD20 and PHD50, suggesting that sexually dimorphic Z chromosome expression precedes autosomal dimorphism and is necessary for subsequent song system specializations.",
+    "result": "The model is consistent with recent developmental transcriptomic data showing increasing Z chromosome dimorphism from PHD20 to PHD50, leading to the conclusion that sexually dimorphic Z chromosome expression precedes autosomal dimorphism and is necessary for subsequent song system specializations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C141-C143 integrate findings from Friedrich et al. 2022 to support the temporal sequence of the proposed mechanism. The interpretation that Z chromosome effects precede autosomal effects is reasonable given the cited data, though direct temporal measurements in the current study would strengthen this claim.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C151-C154 integrate the current findings with independent developmental data. The reinterpretation of Friedrich et al. 2022 data (C151-C152) is reasonable, and the conclusion about temporal ordering (C153) follows logically. The consistency with the hypothesis (C154) provides external support, though the causal claim remains to be tested.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C144",
-      "C145",
-      "C146"
+      "C155",
+      "C156",
+      "C157"
     ],
-    "result": "The results support a model where sexual dimorphism in zebra finch vocal learning arises from interactions between sex hormone signaling and sex chromosome gene expression during HVC development, refining traditional hormone-only models and paralleling findings in Four Core Genotypes mice.",
+    "result": "The results refine the traditional organizational hormone hypothesis by demonstrating that sexual dimorphism in zebra finch vocal learning likely results from interactions between sex hormone signaling and sex chromosome gene expression within HVC during development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C144-C146 place the findings in broader context, appropriately citing relevant work in mice and chickens. The comparison to Four Core Genotypes mice (C146) is apt, though the authors correctly note that specific genes remain unknown in that system.",
+    "evaluation": "Claims C155-C157 place the findings in theoretical context. The data clearly show both hormonal (E2) and chromosomal (Z gene dosage) contributions to sexual dimorphism (C157), which does refine the traditional hormone-only model (C156). The consistency with GH's neuroprotective role (C155) provides additional support.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R21",
     "claim_ids": [
-      "C147",
-      "C148",
-      "C149",
-      "C150",
-      "C151"
+      "C158",
+      "C159"
     ],
-    "result": "The study revealed a strong relationship between gene module organization and chromosomal structure, with ~1/3 of sex chromosome genes showing brain-wide dimorphism and ~2/3 showing regional dimorphism. This pattern may provide a substrate for evolution of sexually dimorphic behaviors through recruitment of autosomal gene networks by regionally patterned sex chromosome genes.",
+    "result": "The findings are thematically similar to Four Core Genotypes mouse studies showing sex chromosome effects on brain gene expression and behavior, though the responsible genes remain unknown in mice.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C147-C151 describe broader implications for sexual dimorphism evolution. The quantitative findings (C148) are well-supported, while the evolutionary hypothesis (C149-C151) is speculative but reasonable and consistent with the data.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C158-C159 draw parallels to mammalian systems. The comparison is appropriate and well-cited, highlighting that the current study may identify specific sex chromosome genes (GHR, RGS7BP, THBS4) that could be relevant across vertebrates, though this remains to be tested.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R22",
     "claim_ids": [
-      "C5",
-      "C6",
-      "C7",
-      "C8",
-      "C9",
-      "C10"
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
     ],
-    "result": "E2 treatment specialized female HVC and Area X gene modules to exhibit a subset of male transcriptomic specializations, while RA and LMAN modules were less E2-dependent. E2-induced modules were enriched for developmental functions and correlated with Z chromosome genes, leading to the hypothesis that reduced Z gene dosage suppresses song system development, which E2 partially rescues.",
+    "result": "The unbiased gene network analysis revealed a strong relationship between gene expression modules and chromosomal structure, with sex chromosomes showing both brain-wide and region-specific dimorphism that may provide a substrate for evolution of sexually dimorphic behaviors through recruitment of autosomal gene networks.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C10 from the abstract accurately summarize the main findings. The data support the differential E2 sensitivity across nuclei (C5-C6), the functional enrichment (C7), and the Z chromosome correlation (C8). The hypothesis (C9-C10) is clearly marked as such and is consistent with all presented data.",
+    "evaluation": "Claims C160-C164 present a broader evolutionary hypothesis. The chromosomal organization of modules (C160) and quantification of sex chromosome dimorphism (C161) are well-supported. The evolutionary model (C162-C164) is speculative but plausible, providing a framework for understanding the evolution of sexual dimorphism in vocal learning.",
     "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C152",
-      "C153",
-      "C154",
-      "C155",
-      "C156",
-      "C157",
-      "C158"
-    ],
-    "result": "The E2 treatment protocol used (PHD0-30) was previously validated to induce song system masculinization in females. At PHD30, vehicle-treated males had larger HVC and RA than females, Area X was absent in females, and LMAN was similar between sexes. E2 treatment reduced male RA size, induced Area X appearance in females, and increased female HVC size.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C152-C158 describe the experimental design and anatomical validation from prior work (Choe et al. 2021). These provide essential context showing that the transcriptomic changes occur at a developmental stage when anatomical differences are emerging and that the treatment protocol is effective.",
-    "result_type": "MINOR"
   }
 ]

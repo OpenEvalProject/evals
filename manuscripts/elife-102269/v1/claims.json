@@ -269,7 +269,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to prior research.",
+    "evidence": "This claim is supported by citations to prior in vitro and in silico studies.",
     "evidence_type": [
       "CITATION"
     ]
@@ -282,7 +282,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to prior research.",
+    "evidence": "This claim is supported by citations to prior studies.",
     "evidence_type": [
       "CITATION"
     ]
@@ -295,7 +295,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to prior research.",
+    "evidence": "This claim is supported by citations to prior studies.",
     "evidence_type": [
       "CITATION"
     ]
@@ -310,7 +310,8 @@
     ],
     "evidence": "This claim is supported by citations to prior research.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
@@ -442,7 +443,8 @@
     ],
     "evidence": "This claim is supported by a citation to prior research.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
@@ -494,7 +496,8 @@
     ],
     "evidence": "This claim is supported by citations to prior research.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
@@ -519,7 +522,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by citations to prior research.",
+    "evidence": "This claim is supported by citations to prior in vivo studies.",
     "evidence_type": [
       "CITATION"
     ]
@@ -619,20 +622,6 @@
   },
   {
     "claim_id": "C47",
-    "claim": "This study represents the second-ever application of MD to investigate sTREM2, totaling an unprecedented 31.2 \u03bcs of simulation time.",
-    "claim_type": "EXPLICIT",
-    "source": "To our knowledge, this study represents the second-ever application of MD to investigate sTREM2, totaling an unprecedented 31.2 \u03bcs of simulation time.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is based on the authors' knowledge of the literature and the simulation data presented.",
-    "evidence_type": [
-      "DATA",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C48",
     "claim": "The AlphaFold model (AF-Q9NZC2-F1) was used as the initial structure for wild-type (WT) sTREM2 in the simulations.",
     "claim_type": "EXPLICIT",
     "source": "We employed the AlphaFold (Varadi et al., 2022; Jumper et al., 2021) model (AF-Q9NZC2-F1) as the initial structure for wild-type (WT) sTREM2 in our simulations, chosen for its inclusion of the unstructured flexible stalk domain.",
@@ -645,33 +634,33 @@
     ]
   },
   {
-    "claim_id": "C49",
+    "claim_id": "C48",
     "claim": "The partial stalk domain spans residues 130 through 157.",
     "claim_type": "EXPLICIT",
     "source": "The partial stalk domain spans residues 130 through 157, while the Ig-like domain consists of residues 19 through 130.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim describes the structural composition of the simulated protein.",
+    "evidence": "This claim describes the structural composition used in the study.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C50",
+    "claim_id": "C49",
     "claim": "The Ig-like domain consists of residues 19 through 130.",
     "claim_type": "EXPLICIT",
     "source": "The partial stalk domain spans residues 130 through 157, while the Ig-like domain consists of residues 19 through 130.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim describes the structural composition of the simulated protein.",
+    "evidence": "This claim describes the structural composition used in the study.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C51",
+    "claim_id": "C50",
     "claim": "A crystal structure of TREM2R47H (PDB code 5UD8) was used for the variant simulations.",
     "claim_type": "EXPLICIT",
     "source": "In contrast to the use of the AlphaFold model for WT, we utilized a crystal structure of TREM2R47H (Protein Data Bank (PDB) code 5UD8 Sudom et al., 2018), to which the unstructured stalk domain from the AlphaFold model was added using alignment tools in Visual Molecular Dynamics (VMD).",
@@ -680,12 +669,11 @@
     ],
     "evidence": "This claim describes the methodology used in the study.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C51",
     "claim": "All proteins, PLs, and counterions were parameterized using the CHARMM36 force field.",
     "claim_type": "EXPLICIT",
     "source": "All proteins, PLs, and counterions were parameterized using the CHARMM36 force field (Brooks et al., 2009; Lee et al., 2016), while the TIP3P model was used to describe water (Bussi et al., 2007).",
@@ -698,8 +686,8 @@
     ]
   },
   {
-    "claim_id": "C53",
-    "claim": "The TIP3P model was used to describe water.",
+    "claim_id": "C52",
+    "claim": "The TIP3P model was used to describe water in the simulations.",
     "claim_type": "EXPLICIT",
     "source": "All proteins, PLs, and counterions were parameterized using the CHARMM36 force field (Brooks et al., 2009; Lee et al., 2016), while the TIP3P model was used to describe water (Bussi et al., 2007).",
     "source_type": [
@@ -711,7 +699,7 @@
     ]
   },
   {
-    "claim_id": "C54",
+    "claim_id": "C53",
     "claim": "Production simulations were carried out at 310 K and 1 bar.",
     "claim_type": "EXPLICIT",
     "source": "Finally, production simulations were carried out at 310 K and 1 bar, utilizing the same thermostat and Parrinello-Rahman barostat (Parrinello and Rahman, 1981).",
@@ -724,7 +712,7 @@
     ]
   },
   {
-    "claim_id": "C55",
+    "claim_id": "C54",
     "claim": "The duration of the production simulations was 150 ns for each pure-component PL system and 1 \u03bcs for each pure-component protein system.",
     "claim_type": "EXPLICIT",
     "source": "The duration of the production simulations was 150 ns for each pure-component PL system and 1 \u03bcs for each pure-component protein system.",
@@ -737,33 +725,7 @@
     ]
   },
   {
-    "claim_id": "C56",
-    "claim": "All simulations were conducted using the GROMACS MD engine.",
-    "claim_type": "EXPLICIT",
-    "source": "All simulations were conducted using the GROMACS MD engine (Abraham et al., 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim describes the methodology used in the study.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C57",
-    "claim": "Docking calculations were carried out with AutoDock Vina.",
-    "claim_type": "EXPLICIT",
-    "source": "Docking calculations were carried out with AutoDock Vina (Trott and Olson, 2010; Eberhardt et al., 2021), treating the proteins as rigid receptors.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim describes the methodology used in the study.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C58",
+    "claim_id": "C55",
     "claim": "The Molecular Mechanics Poisson-Boltzmann Surface Area (MM-PBSA) approach was used to calculate PL-protein binding free energies.",
     "claim_type": "EXPLICIT",
     "source": "The Molecular Mechanics Poisson-Boltzmann Surface Area (MM-PBSA) approach was used to calculate PL-protein binding free energies, utilizing the gmx_MMPBSA implementation (Baker et al., 2001; Vald\u00e9s-Tresanco et al., 2021; Miller et al., 2012).",
@@ -776,8 +738,8 @@
     ]
   },
   {
-    "claim_id": "C59",
-    "claim": "IgR47H and sTREM2R47H showed persistently open CDR2 loops in the initial 1-\u03bcs simulations.",
+    "claim_id": "C56",
+    "claim": "Initial simulations showed persistently open CDR2 loops in both IgR47H and sTREM2R47H constructs.",
     "claim_type": "EXPLICIT",
     "source": "Consistent with prior studies, these 'initial' simulations showed persistently open CDR2 loops in both constructs (Figure 2\u2014figure supplement 1A, slate blue and teal lines, respectively; see Methods for loop characterization details).",
     "source_type": [
@@ -790,8 +752,8 @@
     ]
   },
   {
-    "claim_id": "C60",
-    "claim": "IgWT transitioned from a closed to an open CDR2 loop midway through the initial 1-\u03bcs simulation.",
+    "claim_id": "C57",
+    "claim": "A 1-\u03bcs simulation of IgWT revealed that it transitioned from a closed to an open CDR2 loop midway through the simulation.",
     "claim_type": "EXPLICIT",
     "source": "Surprisingly, however\u2014and in contrast to prior experimental studies (Menzies et al., 2019; Sudom et al., 2018)\u2014a 1-\u03bcs simulation each of IgWT and sTREM2WT (Figure 2\u2014figure supplement 1A, pink and red lines, respectively) revealed that the former transitioned from a closed to an open CDR2 loop midway through the simulation.",
     "source_type": [
@@ -804,7 +766,7 @@
     ]
   },
   {
-    "claim_id": "C61",
+    "claim_id": "C58",
     "claim": "The protonation state of histidine residue H43 does not explain the differences in CDR2 loop dynamics between IgWT and IgR47H.",
     "claim_type": "EXPLICIT",
     "source": "These results indicate that the protonation state of H43 does not explain the differences in loop dynamics.",
@@ -818,7 +780,7 @@
     ]
   },
   {
-    "claim_id": "C62",
+    "claim_id": "C59",
     "claim": "The R47H mutation appears to stabilize the open CDR2 loop conformation.",
     "claim_type": "EXPLICIT",
     "source": "Rather, the R47H mutation appears to stabilize the open CDR2 loop conformation, whereas loop opening in the WT construct may be more stochastic or transient.",
@@ -832,7 +794,7 @@
     ]
   },
   {
-    "claim_id": "C63",
+    "claim_id": "C60",
     "claim": "sTREM2WT maintained a closed-loop conformation throughout the initial 1-\u03bcs simulation.",
     "claim_type": "EXPLICIT",
     "source": "Notably, sTREM2WT maintained a closed-loop conformation throughout the initial 1-\u03bcs simulation (Figure 2\u2014figure supplement 1A).",
@@ -846,7 +808,7 @@
     ]
   },
   {
-    "claim_id": "C64",
+    "claim_id": "C61",
     "claim": "CDR2 loop opening occurs with a delay of approximately 200 ns in sTREM2WT compared to IgWT.",
     "claim_type": "EXPLICIT",
     "source": "However, averaging the loop distance across replicates suggests that CDR2 loop opening occurs with a delay of approximately 200 ns in sTREM2WT compared to IgWT (Figure 2A).",
@@ -861,7 +823,7 @@
     ]
   },
   {
-    "claim_id": "C65",
+    "claim_id": "C62",
     "claim": "The stalk may help stabilize the closed CDR2 loop state in sTREM2WT through intramolecular interactions.",
     "claim_type": "EXPLICIT",
     "source": "This observation hints at a stronger thermodynamic preference for the closed-loop conformation in sTREM2WT, potentially due to the presence of the partial stalk domain. In sTREM2WT, the stalk may help stabilize the closed state through intramolecular interactions that are sterically hindered in membrane-bound TREM2 (represented by IgWT), where it is tethered to the transmembrane domain and less conformationally flexible\u2014a hypothesis supported by additional structural analyses, described below.",
@@ -875,7 +837,7 @@
     ]
   },
   {
-    "claim_id": "C66",
+    "claim_id": "C63",
     "claim": "sTREM2WT-Ig exhibited slightly reduced, but statistically overlapping, residue-level fluctuations across most of the Ig-like domain compared to IgWT.",
     "claim_type": "EXPLICIT",
     "source": "On average, sTREM2WT-Ig exhibited slightly reduced, but statistically overlapping, residue-level fluctuations across most of the Ig-like domain compared to IgWT.",
@@ -888,7 +850,7 @@
     ]
   },
   {
-    "claim_id": "C67",
+    "claim_id": "C64",
     "claim": "The presence of the stalk in sTREM2R47H-Ig led to substantially increased residue-level fluctuations across much of the Ig-like domain, particularly in residues 70\u201380.",
     "claim_type": "EXPLICIT",
     "source": "In contrast to the WT model, the presence of the stalk in sTREM2R47H-Ig led to substantially increased residue-level fluctuations across much of the Ig-like domain, particularly in residues 70\u201380, which comprise most of the CDR2 loop (Figure 2B).",
@@ -902,8 +864,8 @@
     ]
   },
   {
-    "claim_id": "C68",
-    "claim": "The partial stalk has a dual role in modulating Ig-like domain dynamics: reducing the likelihood of stochastic CDR2 loop opening in WT constructs, while destabilizing the open loop conformation in the R47H mutant.",
+    "claim_id": "C65",
+    "claim": "The partial stalk domain plays a dual role in modulating Ig-like domain dynamics: reducing the likelihood of stochastic CDR2 loop opening in WT constructs, while destabilizing the open loop conformation in the R47H mutant.",
     "claim_type": "EXPLICIT",
     "source": "Collectively, these findings suggest a dual role for the partial stalk in modulating Ig-like domain dynamics: reducing the likelihood of stochastic CDR2 loop opening in WT constructs, while destabilizing the open loop conformation in the R47H mutant.",
     "source_type": [
@@ -916,7 +878,7 @@
     ]
   },
   {
-    "claim_id": "C69",
+    "claim_id": "C66",
     "claim": "The partial stalk domains were observed to consistently interact with the Ig-like domains of sTREM2WT and sTREM2R47H after initial RMSD increases.",
     "claim_type": "EXPLICIT",
     "source": "After the initial RMSD increases, the partial stalk domains were observed to consistently interact with the Ig-like domains of sTREM2WT and sTREM2R47H (inset panels ii of Figure 2C\u2013D).",
@@ -930,7 +892,7 @@
     ]
   },
   {
-    "claim_id": "C70",
+    "claim_id": "C67",
     "claim": "A notable increase in the interaction frequency between residues in Surface 1 and the partial stalk domain of sTREM2R47H was observed compared to sTREM2WT.",
     "claim_type": "EXPLICIT",
     "source": "We observed a notable increase in the interaction frequency between residues in Surface 1 and the partial stalk domain of sTREM2R47H compared to sTREM2WT.",
@@ -943,24 +905,10 @@
     ]
   },
   {
-    "claim_id": "C71",
-    "claim": "The more persistently open CDR2 loop of sTREM2R47H provides greater accessibility of Surface 1 residues for interaction with the stalk.",
-    "claim_type": "EXPLICIT",
-    "source": "This difference is likely due to the more persistently open CDR2 loop of sTREM2R47H, providing greater accessibility of Surface 1 residues for interaction with the stalk.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is based on inference from simulation data.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C72",
+    "claim_id": "C68",
     "claim": "The stalk domain in sTREM2WT frequently interacted with residues 20\u201335, which lie directly adjacent to residues comprising Surface 2.",
     "claim_type": "EXPLICIT",
-    "source": "In addition to these contacts, however, the stalk domain in sTREM2WT also frequently interacted with residues 20\u201335, though typically with lower occupancy. While this region has not been directly noted in previous experimental studies, it lies directly adjacent to residues comprising Surface 2 as defined by Belsare et al., 2022.",
+    "source": "In addition to these contacts, however, the stalk domain in sTREM2WT also frequently interacted with residues 20\u201335, though typically with lower occupancy. While this region has not been directly noted in previous experimental studies, it lies directly adjacent to residues comprising Surface 2 as defined by Belsare et al., 2022. We, therefore, refer to it here as 'Expanded Surface 2.'",
     "source_type": [
       "TEXT"
     ],
@@ -971,21 +919,7 @@
     ]
   },
   {
-    "claim_id": "C73",
-    "claim": "The region comprising residues 20\u201335 is referred to as 'Expanded Surface 2' in this study.",
-    "claim_type": "EXPLICIT",
-    "source": "We, therefore, refer to it here as 'Expanded Surface 2.'",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a definition introduced by the authors based on their simulation data.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C74",
+    "claim_id": "C69",
     "claim": "One study reported that sTREM2 exhibited slightly lower, but statistically insignificant, affinity for monomeric A\u03b21-42 compared to TREM2.",
     "claim_type": "EXPLICIT",
     "source": "One study reported that sTREM2 exhibited slightly lower, but statistically insignificant, affinity for monomeric A\u03b21-42 compared to TREM2 (Kober et al., 2021).",
@@ -998,21 +932,7 @@
     ]
   },
   {
-    "claim_id": "C75",
-    "claim": "The Ig-like domain constitutes the principal binding surface of sTREM2.",
-    "claim_type": "EXPLICIT",
-    "source": "Based on the similar binding affinities, the authors proposed that the Ig-like domain constitutes the principal binding surface of sTREM2.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is based on a proposal from prior research.",
-    "evidence_type": [
-      "CITATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C76",
+    "claim_id": "C70",
     "claim": "The TREM2 Ig-like domain does not engage ligands at 'Surface 2'.",
     "claim_type": "EXPLICIT",
     "source": "However, another recent report from the same group found that the TREM2 Ig-like domain does not engage ligands at 'Surface 2' (Greven et al., 2025), contrasting earlier cross-linked mass spectrometry data showing A\u03b2 fibrils binding to this region in sTREM2 (Moutinho and Landreth, 2021).",
@@ -1025,7 +945,7 @@
     ]
   },
   {
-    "claim_id": "C77",
+    "claim_id": "C71",
     "claim": "A crystal structure of a TREM2 trimer bound by three PS molecules revealed extensive PS interactions with residues in the CDR2 loop and hydrophobic tip.",
     "claim_type": "EXPLICIT",
     "source": "Another study presented a crystal structure of a TREM2 trimer bound by three PS molecules, revealing extensive PS interactions with residues in the CDR2 loop and hydrophobic tip (Sudom et al., 2018).",
@@ -1038,8 +958,8 @@
     ]
   },
   {
-    "claim_id": "C78",
-    "claim": "Across all four WT systems, the highest occupancy by both PLs was observed at residues within the CDR2 loop and hydrophobic tip.",
+    "claim_id": "C72",
+    "claim": "Across all four systems (IgWT and sTREM2WT with SOPS and SOPC), the highest occupancy by both PLs was observed at residues within the CDR2 loop and hydrophobic tip.",
     "claim_type": "EXPLICIT",
     "source": "Across all four systems, the highest occupancy by both PLs was observed at residues within the CDR2 loop and hydrophobic tip (Figure 3A\u2013D, primarily green regions), consistent with earlier in vitro findings and supporting the validity of our approach.",
     "source_type": [
@@ -1052,7 +972,7 @@
     ]
   },
   {
-    "claim_id": "C79",
+    "claim_id": "C73",
     "claim": "SOPS showed higher relative occupancy of the positively charged residues on Surface 1 compared to SOPC.",
     "claim_type": "EXPLICIT",
     "source": "Specifically, SOPS, being negatively charged, showed higher relative occupancy of the positively charged residues on Surface 1 compared to SOPC, which is neutrally charged (Figure 3A\u2013B vs. Figure 3C-D, respectively, blue regions).",
@@ -1066,7 +986,7 @@
     ]
   },
   {
-    "claim_id": "C80",
+    "claim_id": "C74",
     "claim": "SOPC showed higher relative occupancy of residues within the hydrophobic tip than SOPS.",
     "claim_type": "EXPLICIT",
     "source": "Conversely, SOPC showed higher relative occupancy of residues within the hydrophobic tip than SOPS (Figure 3C\u2013D vs. Figure 3A-B, green regions).",
@@ -1080,8 +1000,8 @@
     ]
   },
   {
-    "claim_id": "C81",
-    "claim": "A noticeable decrease in the relative occupancy of residues within Surface 1, the hydrophobic tip, and particularly the CDR2 loop was observed in the sTREM2WT systems compared to IgWT systems.",
+    "claim_id": "C75",
+    "claim": "PL/sTREM2WT simulations showed a noticeable decrease in the relative occupancy of residues within Surface 1, the hydrophobic tip, and particularly the CDR2 loop compared to PL/IgWT simulations.",
     "claim_type": "EXPLICIT",
     "source": "Upon comparing the fractional occupancy plots of the PL/sTREM2WT simulations (Figure 3B and D) with those of the PL/IgWT simulations (Figure 3A and C), we observed a noticeable decrease in the relative occupancy of residues within Surface 1, the hydrophobic tip, and particularly the CDR2 loop in the sTREM2WT systems.",
     "source_type": [
@@ -1094,7 +1014,7 @@
     ]
   },
   {
-    "claim_id": "C82",
+    "claim_id": "C76",
     "claim": "Both PL/sTREM2WT simulations showed ligand binding at the newly defined Expanded Surface 2.",
     "claim_type": "EXPLICIT",
     "source": "Instead, both PL/sTREM2WT simulations showed ligand binding at the newly defined Expanded Surface 2 (Figure 3B and D, light orange regions), which was previously shown to interact with the sTREM2WT stalk, albeit with lower occupancy than Surface 1 residues (Figure 2E).",
@@ -1108,34 +1028,20 @@
     ]
   },
   {
-    "claim_id": "C83",
+    "claim_id": "C77",
     "claim": "PL binding to Expanded Surface 2 was almost entirely absent in the IgWT simulations.",
     "claim_type": "EXPLICIT",
     "source": "In contrast, PL binding to Expanded Surface 2 was almost entirely absent in the IgWT simulations.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by fractional occupancy analysis.",
+    "evidence": "This claim is supported by fractional occupancy analysis of simulation data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C84",
-    "claim": "Expanded Surface 2 functions as a secondary ligand-binding surface in sTREM2, becoming preferentially engaged when Surface 1 is occupied by the flexible stalk.",
-    "claim_type": "EXPLICIT",
-    "source": "Collectively, these results suggest that Expanded Surface 2 functions as a secondary ligand-binding surface in sTREM2, becoming preferentially engaged when Surface 1 is occupied by the flexible stalk (and when Expanded Surface 2 is not itself engaged by the stalk).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is based on inference from simulation data.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C85",
+    "claim_id": "C78",
     "claim": "Frequent interactions between both PLs and residues within the stalk domain of sTREM2WT were observed.",
     "claim_type": "EXPLICIT",
     "source": "Finally, we observed frequent interactions between both PLs and residues within the stalk domain of sTREM2WT (Figure 3B and D, pink regions), suggesting that the stalk itself may independently serve as an additional binding site for diverse ligands.",
@@ -1149,20 +1055,20 @@
     ]
   },
   {
-    "claim_id": "C86",
-    "claim": "A SOPS/IgWT complex exhibited the most favorable (lowest) binding free energy among the WT systems.",
+    "claim_id": "C79",
+    "claim": "Among the WT systems, a SOPS/IgWT complex exhibited the most favorable (lowest) binding free energy.",
     "claim_type": "EXPLICIT",
     "source": "Among the WT systems, a SOPS/IgWT complex exhibited the most favorable (lowest) binding free energy, consistent with TREM2's known affinity for anionic ligands.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by binding free energy calculations.",
+    "evidence": "This claim is supported by MM-PBSA binding free energy calculations.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C87",
+    "claim_id": "C80",
     "claim": "In the lowest-energy binding models, both SOPS and SOPC directly engaged the CDR2 loop in IgWT.",
     "claim_type": "EXPLICIT",
     "source": "Notably, in the lowest-energy binding models, both SOPS and SOPC directly engaged the CDR2 loop in IgWT (Figure 3E, gray model; Figure 3G, orange model, respectively).",
@@ -1176,7 +1082,7 @@
     ]
   },
   {
-    "claim_id": "C88",
+    "claim_id": "C81",
     "claim": "Both SOPS and SOPC bound most favorably to the newly defined Expanded Surface 2 on sTREM2WT.",
     "claim_type": "EXPLICIT",
     "source": "In contrast, both SOPS and SOPC bound most favorably to the newly defined Expanded Surface 2 on sTREM2WT (Figure 3F, orange model; Figure 3H, purple model).",
@@ -1190,7 +1096,7 @@
     ]
   },
   {
-    "claim_id": "C89",
+    "claim_id": "C82",
     "claim": "PL binding perturbs homeostatic stalk/Ig-like domain interactions in sTREM2WT.",
     "claim_type": "EXPLICIT",
     "source": "RMSF calculations revealed heightened dynamics in the stalk domain of sTREM2WT for these particular models (Figure 3\u2014figure supplement 1B-iii and D-iii), suggesting that PL binding perturbs homeostatic stalk/Ig-like domain interactions.",
@@ -1205,21 +1111,21 @@
     ]
   },
   {
-    "claim_id": "C90",
+    "claim_id": "C83",
     "claim": "PLs compete with the stalk domain for access to the CDR2 loop and Surface 1.",
     "claim_type": "EXPLICIT",
     "source": "Together, these results indicate that the PLs compete with the stalk domain for access to the CDR2 loop and Surface 1, likely due to their shared amphipathic and negatively charged character.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from simulation data.",
+    "evidence": "This claim is based on inference from multiple simulation analyses.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C91",
+    "claim_id": "C84",
     "claim": "The entropic contributions (-T\u0394S) were positive across all systems, with higher values for SOPS models than SOPC models.",
     "claim_type": "EXPLICIT",
     "source": "Our results broadly indicate that the entropic contributions (-T\u0394S) were positive across all systems, with higher values for SOPS models than SOPC models, although the differences were not statistically significant (Figure 3\u2014figure supplement 2I).",
@@ -1233,22 +1139,22 @@
     ]
   },
   {
-    "claim_id": "C92",
+    "claim_id": "C85",
     "claim": "The larger entropic penalties observed for SOPS models suggest greater 'snugness' of binding.",
     "claim_type": "EXPLICIT",
-    "source": "Thus, the larger entropic penalties observed for SOPS models suggest greater 'snugness' of binding (Chang et al., 2007), implying that binding in these systems is more enthalpically driven.",
+    "source": "Entropic loss upon ligand binding reflects reduced conformational freedom in the ligand, protein, and/or surrounding solvent (Duan et al., 2016; Winkler, 2020). Thus, the larger entropic penalties observed for SOPS models suggest greater 'snugness' of binding (Chang et al., 2007), implying that binding in these systems is more enthalpically driven.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from Interaction Entropy calculations and a citation to prior research.",
+    "evidence": "This claim is based on inference from Interaction Entropy calculations and established thermodynamic principles.",
     "evidence_type": [
       "DATA",
       "INFERENCE",
-      "CITATION"
+      "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C93",
+    "claim_id": "C86",
     "claim": "Some PL/TREM2 complexes underwent rapid conformational changes in the CDR2 loop during the simulations.",
     "claim_type": "EXPLICIT",
     "source": "Finally, some PL/TREM2 complexes were observed to undergo rapid conformational changes in the CDR2 loop during the simulations, indicated by marked increases in the RMSD of the protein (Figure 3\u2014figure supplement 1A-i,C-i) combined with high RMSF values in CDR2 loop residues (Figure 3\u2014figure supplement 1A-iii,C-iii).",
@@ -1262,23 +1168,22 @@
     ]
   },
   {
-    "claim_id": "C94",
+    "claim_id": "C87",
     "claim": "The CDR2 loop may function as a dynamically responsive element during ligand binding.",
     "claim_type": "EXPLICIT",
     "source": "This suggests a mechanism by which the CDR2 loop may function as a dynamically responsive element during ligand binding.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from simulation data.",
+    "evidence": "This claim is based on inference from simulation data showing CDR2 loop conformational changes.",
     "evidence_type": [
       "DATA",
-      "INFERENCE",
-      "SPECULATION"
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C95",
-    "claim": "Previous studies have suggested that the decreased ligand-binding capabilities of TREM2R47H may underlie its observed loss-of-function.",
+    "claim_id": "C88",
+    "claim": "R47H reduces TREM2's affinity for endogenous ligands.",
     "claim_type": "EXPLICIT",
     "source": "Previous studies have suggested that the decreased ligand-binding capabilities of TREM2R47H may underlie its observed loss-of-function (Kober et al., 2016; Kober et al., 2021; Sudom et al., 2018; Wang et al., 2015).",
     "source_type": [
@@ -1290,7 +1195,7 @@
     ]
   },
   {
-    "claim_id": "C96",
+    "claim_id": "C89",
     "claim": "One study showed reduced reporter cell activity of TREM2R47H compared to TREM2WT when binding anionic lipids such as PS.",
     "claim_type": "EXPLICIT",
     "source": "Notably, one study showed reduced reporter cell activity of TREM2R47H compared to TREM2WT when binding anionic lipids such as PS, while no significant difference was observed in their binding to PC (Wang et al., 2015).",
@@ -1303,7 +1208,7 @@
     ]
   },
   {
-    "claim_id": "C97",
+    "claim_id": "C90",
     "claim": "sTREM2R47H and sTREM2WT bind A\u03b2 and inhibit fibrillization to a similar extent.",
     "claim_type": "EXPLICIT",
     "source": "Separately, sTREM2R47H and sTREM2WT were shown to bind A\u03b2 and inhibit fibrillization to a similar extent (Belsare et al., 2022).",
@@ -1316,8 +1221,8 @@
     ]
   },
   {
-    "claim_id": "C98",
-    "claim": "Broadly similar patterns of PL binding to the Ig-like domain were observed in the PL/(s)TREM2R47H simulations, regardless of stalk presence or PL charge.",
+    "claim_id": "C91",
+    "claim": "Fractional occupancy plots of the PL/(s)TREM2R47H simulations showed broadly similar patterns of binding to the Ig-like domain, regardless of stalk presence or PL charge.",
     "claim_type": "EXPLICIT",
     "source": "Upon examining the fractional occupancy plots of the PL/(s) TREM2R47H simulations, we observed broadly similar patterns of binding to the Ig-like domain, regardless of stalk presence or PL charge (Figure 4A\u2013D).",
     "source_type": [
@@ -1330,117 +1235,88 @@
     ]
   },
   {
-    "claim_id": "C99",
-    "claim": "PLs predominantly occupied the CDR2 loop and Surface 1 of the Ig-like domain across all four R47H simulations.",
+    "claim_id": "C92",
+    "claim": "PLs predominantly occupied the CDR2 loop and Surface 1 of the Ig-like domain in all four PL/(s)TREM2R47H simulations.",
     "claim_type": "EXPLICIT",
     "source": "Across all four simulations, PLs predominantly occupied the CDR2 loop and Surface 1 of the Ig-like domain.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by fractional occupancy analysis.",
+    "evidence": "This claim is supported by fractional occupancy analysis of simulation data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C100",
+    "claim_id": "C93",
     "claim": "The presence of R47H diminishes the ability of IgR47H and sTREM2R47H to distinguish between crucial brain-derived ligands.",
     "claim_type": "EXPLICIT",
     "source": "These results suggest that the presence of R47H diminishes the ability of IgR47H and sTREM2R47H to distinguish between crucial brain-derived ligands, proposing a novel mechanism of loss-of-function for this key AD-risk mutation.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from simulation data.",
+    "evidence": "This claim is based on inference from fractional occupancy analysis comparing WT and R47H models.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C101",
+    "claim_id": "C94",
     "claim": "All four PL/(s)TREM2R47H simulations demonstrated markedly reduced PL binding to the hydrophobic tip compared to the PL/(s)TREM2WT simulations.",
     "claim_type": "EXPLICIT",
     "source": "Compared to the PL/(s)TREM2WT simulations, all four PL/(s)TREM2R47H simulations demonstrated markedly reduced PL binding to the hydrophobic tip.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by fractional occupancy analysis.",
+    "evidence": "This claim is supported by fractional occupancy analysis comparing WT and R47H models.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C102",
-    "claim": "Diminished PL binding to Expanded Surface 2 was observed in the sTREM2R47H simulations.",
-    "claim_type": "EXPLICIT",
-    "source": "Consistent with these effects, we also observed diminished PL binding to Expanded Surface 2 in the sTREM2R47H simulations, suggesting that R47H not only impairs canonical ligand recognition surfaces but may also disrupt secondary binding modes unique to sTREM2.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by fractional occupancy analysis.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C103",
+    "claim_id": "C96",
     "claim": "Increased PL binding to Surface 1 was observed in all four R47H simulations.",
     "claim_type": "EXPLICIT",
     "source": "Compensating for these reductions in binding, increased PL binding to Surface 1 was observed in all four R47H simulations, along with enhanced PL binding to the flexible stalk of sTREM2R47H.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by fractional occupancy analysis.",
+    "evidence": "This claim is supported by fractional occupancy analysis of simulation data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C104",
+    "claim_id": "C97",
     "claim": "Enhanced PL binding to the flexible stalk of sTREM2R47H was observed.",
     "claim_type": "EXPLICIT",
     "source": "Compensating for these reductions in binding, increased PL binding to Surface 1 was observed in all four R47H simulations, along with enhanced PL binding to the flexible stalk of sTREM2R47H.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by fractional occupancy analysis.",
+    "evidence": "This claim is supported by fractional occupancy analysis of simulation data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C105",
+    "claim_id": "C98",
     "claim": "The stalk domain may possess an inherent capacity to 'rescue' sTREM2 deficiencies in ligand binding to the Ig-like domain caused by disease-associated mutations.",
     "claim_type": "EXPLICIT",
     "source": "Moreover, they suggest the stalk domain may possess an inherent capacity to 'rescue' sTREM2 deficiencies in ligand binding to the Ig-like domain caused by disease-associated mutations, offering a mechanistic explanation for sTREM2's neuroprotective role in AD.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from simulation data.",
+    "evidence": "This claim is based on inference from simulation data showing enhanced stalk binding in R47H models.",
     "evidence_type": [
       "DATA",
-      "INFERENCE",
-      "SPECULATION"
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C106",
-    "claim": "A SOPS/IgR47H complex exhibited the lowest (most favorable) binding free energy among the R47H models.",
-    "claim_type": "EXPLICIT",
-    "source": "Broadly, the trends align closely with those observed for the WT models (Figure 3E\u2013H), with a SOPS/IgR47H complex again exhibiting the lowest (most favorable) binding free energy (Figure 4E).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This claim is supported by binding free energy calculations shown in Figure 4E.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C107",
-    "claim": "High PL interaction frequencies with the CDR2 loop and Surface 1 persist in R47H complexes even when the stalk is present.",
+    "claim_id": "C99",
+    "claim": "High PL interaction frequencies with the CDR2 loop and Surface 1 persist even when the stalk is present in R47H models.",
     "claim_type": "EXPLICIT",
     "source": "Unlike the WT models, however, these results do not indicate competitive binding between the PLs and the stalk, as evidenced by high PL interaction frequencies with the CDR2 loop and Surface 1 that persist even when the stalk is present (Figure 4B and D vs.Figure 4A,C), despite the stalk's increased interaction frequency with Surface 1 in the context of R47H (Figure 2F vs. Figure 2E).",
     "source_type": [
@@ -1453,7 +1329,7 @@
     ]
   },
   {
-    "claim_id": "C108",
+    "claim_id": "C100",
     "claim": "Across all models, sTREM2 and TREM2 bind PS more favorably than PC.",
     "claim_type": "EXPLICIT",
     "source": "Our binding free energy results show that across all models, sTREM2 and TREM2 bind PS more favorably than PC (Figure 4I), affirming previous findings that TREM2 favors anionic ligands (Kober and Brett, 2017).",
@@ -1461,29 +1337,27 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This claim is supported by binding free energy calculations shown in Figure 4I and a citation to prior research.",
+    "evidence": "This claim is supported by binding free energy calculations shown in Figure 4I.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C109",
+    "claim_id": "C101",
     "claim": "No significant difference or trend in binding free energies was observed between PS/(s)TREM2WT and PS/(s)TREM2R47H complexes.",
     "claim_type": "EXPLICIT",
     "source": "We also observed no significant difference or trend in binding free energies between PS/(s)TREM2WT and PS/(s)TREM2R47H complexes, contrasting with previous experimental findings that R47H reduces TREM2's affinity for endogenous ligands (Kober et al., 2021; Sudom et al., 2018; Wang et al., 2015).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is supported by binding free energy calculations and contrasts with prior research.",
+    "evidence": "This claim is supported by binding free energy calculations.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C110",
-    "claim": "SOPS binding poses in the R47H models exhibited higher average entropic contributions than their SOPC counterparts.",
+    "claim_id": "C102",
+    "claim": "SOPS binding poses in the R47H models exhibited higher average entropic contributions than their SOPC counterparts, with statistically significant differences for sTREM2R47H but not for IgR47H.",
     "claim_type": "EXPLICIT",
     "source": "Similar to WT models, SOPS binding poses in the R47H models exhibited higher average entropic contributions than their SOPC counterparts, with statistically significant differences for sTREM2R47H but not for IgR47H (Figure 3\u2014figure supplement 2I).",
     "source_type": [
@@ -1496,35 +1370,35 @@
     ]
   },
   {
-    "claim_id": "C111",
+    "claim_id": "C103",
     "claim": "Reduced ligand affinity alone does not fully account for the signaling deficits associated with the R47H variant.",
     "claim_type": "EXPLICIT",
     "source": "Together, these observations suggest that reduced ligand affinity alone does not fully account for the signaling deficits associated with the R47H variant.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from simulation data.",
+    "evidence": "This claim is based on inference from binding free energy and occupancy analyses.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C112",
+    "claim_id": "C104",
     "claim": "Differences in binding across a range of ligands, (s)TREM2 variants, and between sTREM2 and TREM2 are likely driven by differences in accessibility of protein surface residues and ligand binding patterns.",
     "claim_type": "EXPLICIT",
     "source": "More broadly, our results indicate that differences in binding across a range of ligands, (s)TREM2 variants, and between sTREM2 and TREM2 are likely driven by differences in accessibility of protein surface residues and ligand binding patterns, factors that extend beyond mere differences in affinity.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from simulation data.",
+    "evidence": "This claim is based on inference from multiple simulation analyses.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C113",
+    "claim_id": "C105",
     "claim": "In most simulations, the CDR2 loop in IgR47H remained stably open regardless of PL binding.",
     "claim_type": "EXPLICIT",
     "source": "Lastly, we observed a prominent difference in the dynamic behavior of the CDR2 loop between IgR47H and IgWT. In most simulations, the CDR2 loop in IgR47H remained stably open regardless of PL binding (Figure 4\u2014figure supplement 1), whereas in IgWT, the loop underwent dynamic opening and closing in response to ligand engagement.",
@@ -1538,22 +1412,90 @@
     ]
   },
   {
-    "claim_id": "C114",
+    "claim_id": "C106",
     "claim": "The R47H mutation may hinder the CDR2 loop's ability to respond adaptively to ligand binding.",
     "claim_type": "EXPLICIT",
     "source": "These findings suggest that, beyond impairing ligand affinity and selectivity, the R47H mutation may also hinder the CDR2 loop's ability to respond adaptively to ligand binding, potentially disrupting physiological TREM2 signaling.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on inference from simulation data.",
+    "evidence": "This claim is based on inference from simulation data comparing IgWT and IgR47H.",
     "evidence_type": [
       "DATA",
-      "INFERENCE",
-      "SPECULATION"
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C115",
+    "claim_id": "C107",
+    "claim": "The flexible stalk domain of sTREM2 was established as the molecular basis for differential ligand binding between sTREM2 and TREM2 through analysis of RMSF, RMSD, and PL/protein residue occupancy calculations.",
+    "claim_type": "EXPLICIT",
+    "source": "We utilized long-timescale MD simulations to investigate relevant structural domains of sTREM2 and TREM2, along with their interactions with key PLs in the brain. Through the analysis of RMSF, RMSD, and PL/protein residue occupancy calculations, we established the flexible stalk domain of sTREM2 as the molecular basis for differential ligand binding between sTREM2 and TREM2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple simulation analyses presented in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Binding of PLs to Expanded Surface 2 arises from competitive binding of the flexible stalk to Surface 1 on the Ig-like domain.",
+    "claim_type": "EXPLICIT",
+    "source": "By integrating free energy, interaction entropy, and ligand occupancy calculations, we quantified the energetics of these interactions, confirming the presence of an alternate ligand binding site on sTREM2WT, which we termed the 'Expanded Surface 2.' Binding of PLs to this site arises from competitive binding of the flexible stalk to Surface 1 on the Ig-like domain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple simulation analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Stalk-Ig-like domain interactions were disrupted in the presence of the AD-risk mutation R47H.",
+    "claim_type": "EXPLICIT",
+    "source": "These stalk-Ig-like domain interactions were disrupted in the presence of the AD-risk mutation R47H and entirely absent in the Ig (TREM2) models, indicating occupancy of Expanded Surface 2 occurs solely with sTREM2WT.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulation data comparing WT and R47H models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Occupancy of Expanded Surface 2 occurs solely with sTREM2WT.",
+    "claim_type": "EXPLICIT",
+    "source": "These stalk-Ig-like domain interactions were disrupted in the presence of the AD-risk mutation R47H and entirely absent in the Ig (TREM2) models, indicating occupancy of Expanded Surface 2 occurs solely with sTREM2WT.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulation data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Rather than (or in addition to) sTREM2's previously conceived role as a dummy receptor for TREM2, the flexible stalk confers sTREM2 with unique ligand binding preferences and patterns that facilitate distinct endogenous functions compared to TREM2.",
+    "claim_type": "EXPLICIT",
+    "source": "These observations underscore our conclusion that, rather than (or in addition to) sTREM2's previously conceived role as a dummy receptor for TREM2, the flexible stalk confers sTREM2 with unique ligand binding preferences and patterns that facilitate distinct endogenous functions compared to TREM2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inference from multiple simulation analyses.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
     "claim": "Loss-of-function in sTREM2 and TREM2 occurs not only through reductions in ligand binding affinity, but also through a change in ligand binding patterns and a loss of ligand discrimination capacity.",
     "claim_type": "EXPLICIT",
     "source": "Our findings suggest that loss-of-function in sTREM2 and TREM2 occurs not only through reductions in ligand binding affinity, but also through a change in ligand binding patterns and a loss of ligand discrimination capacity.",
@@ -1568,53 +1510,67 @@
     ]
   },
   {
-    "claim_id": "C116",
-    "claim": "Altered ligand binding may hinder the ability of TREM2 and DAP12 to transmit signals across the cell membrane.",
+    "claim_id": "C113",
+    "claim": "Altered ligand binding may hinder the ability of TREM2 and its co-signaling partner DAP12 to transmit signals across the cell membrane.",
     "claim_type": "EXPLICIT",
     "source": "Altered ligand binding may hinder the ability of TREM2 and its co-signaling partner DAP12 to transmit signals across the cell membrane.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on speculation from the authors.",
+    "evidence": "This claim is speculative, based on inference from simulation results.",
     "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
+      "INFERENCE",
+      "SPECULATION"
     ]
   },
   {
-    "claim_id": "C117",
-    "claim": "Impaired microglial response to ligand binding would lead to reduced lipid uptake, diminished A\u03b2 plaque clearance, decreased microglial activation, and inhibited intracellular lipid metabolism.",
+    "claim_id": "C114",
+    "claim": "Impaired TREM2 signaling would lead to reduced lipid uptake, diminished A\u03b2 plaque clearance, decreased microglial activation, and inhibited intracellular lipid metabolism.",
     "claim_type": "EXPLICIT",
     "source": "This deficiency implicates an impaired microglial response to ligand binding as a key mechanism for dysfunction in AD. Pathologically, this would lead to reduced lipid uptake (McQuade et al., 2020), diminished A\u03b2 plaque clearance (Zhao et al., 2018), decreased microglial activation (McQuade et al., 2020), and inhibited intracellular lipid metabolism (Wei et al., 2024).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on speculation and citations to prior research.",
+    "evidence": "This claim is speculative, based on inference and citations to prior research.",
     "evidence_type": [
+      "INFERENCE",
       "SPECULATION",
-      "CITATION",
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C118",
+    "claim_id": "C115",
     "claim": "Reduced microglial lipid metabolism can trigger neurotoxic activation states or loss of neuroprotective functions.",
     "claim_type": "EXPLICIT",
     "source": "Previous studies speculate that reduced microglial lipid metabolism can trigger neurotoxic activation states or loss of neuroprotective functions (Damisah et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on speculation from prior research.",
+    "evidence": "This claim is speculative, supported by a citation to prior research.",
     "evidence_type": [
       "CITATION",
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C119",
-    "claim": "PS expression on the outer membrane leaflet increases in apoptotic cells, acting as a damage-associated signal.",
+    "claim_id": "C116",
+    "claim": "Failure to differentiate between PLs may lead to chronic over-activation of microglia, or at the very least, loss of endogenous protective functions.",
     "claim_type": "EXPLICIT",
-    "source": "While PC is the most abundant PL in cell membranes, PS expression on the outer membrane leaflet increases in apoptotic cells, acting as a damage-associated signal (Nagata et al., 2016).",
+    "source": "Failure to differentiate between these PLs may lead to chronic over-activation of microglia, or at the very least, loss of endogenous protective functions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is speculative, based on inference from simulation results.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "There are two known alternatively spliced isoforms of sTREM2 which constitute the minority of CSF sTREM2 levels.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, there are two known alternatively spliced isoforms of sTREM2 which constitute the minority of CSF sTREM2 levels. These isoforms occur due to alternate splice sites and skipping within exon 4 (Moutinho and Landreth, 2021).",
     "source_type": [
       "TEXT"
     ],
@@ -1625,47 +1581,7 @@
     ]
   },
   {
-    "claim_id": "C120",
-    "claim": "Failure to differentiate between PLs may lead to chronic over-activation of microglia, or at the very least, loss of endogenous protective functions.",
-    "claim_type": "EXPLICIT",
-    "source": "Failure to differentiate between these PLs may lead to chronic over-activation of microglia, or at the very least, loss of endogenous protective functions.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is based on speculation from the authors.",
-    "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C121",
-    "claim": "There are two known alternatively spliced isoforms of sTREM2 which constitute the minority of CSF sTREM2 levels.",
-    "claim_type": "EXPLICIT",
-    "source": "Additionally, there are two known alternatively spliced isoforms of sTREM2 which constitute the minority of CSF sTREM2 levels.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by established scientific knowledge.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C122",
-    "claim": "These isoforms occur due to alternate splice sites and skipping within exon 4.",
-    "claim_type": "EXPLICIT",
-    "source": "These isoforms occur due to alternate splice sites and skipping within exon 4 (Moutinho and Landreth, 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This claim is supported by a citation to prior research.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C123",
+    "claim_id": "C118",
     "claim": "Monoclonal antibodies targeting TREM2 have been designed to bind to the stalk region above its cleavage site.",
     "claim_type": "EXPLICIT",
     "source": "Recently, monoclonal antibodies targeting TREM2 have emerged (Fassler et al., 2023; Schlepckow et al., 2020; van Lengerich et al., 2023), designed to bind to the stalk region above its cleavage site (Schlepckow et al., 2020; van Lengerich et al., 2023).",
@@ -1678,8 +1594,8 @@
     ]
   },
   {
-    "claim_id": "C124",
-    "claim": "At least one of these antibodies reduces the shedding of sTREM2.",
+    "claim_id": "C119",
+    "claim": "At least one TREM2-targeting antibody reduces the shedding of sTREM2.",
     "claim_type": "EXPLICIT",
     "source": "Notably, this antibody also reduces the shedding of sTREM2 (van Lengerich et al., 2023).",
     "source_type": [
@@ -1691,44 +1607,45 @@
     ]
   },
   {
-    "claim_id": "C125",
+    "claim_id": "C120",
     "claim": "Treatment with TREM2-targeting antibodies may compromise the endogenous function of sTREM2.",
     "claim_type": "EXPLICIT",
     "source": "It is conceivable that treatment with this and similar antibodies may compromise the endogenous function of sTREM2, given that the stalk, a domain our study has identified as functionally significant, may be sequestered by the antibody.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on speculation from the authors.",
+    "evidence": "This claim is speculative, based on inference from the study's findings.",
     "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
+      "INFERENCE",
+      "SPECULATION"
     ]
   },
   {
-    "claim_id": "C126",
+    "claim_id": "C121",
     "claim": "The study assumed that the Ig-like domain is representative of membrane-bound TREM2.",
     "claim_type": "EXPLICIT",
-    "source": "Moreover, our study, like previous investigations of TREM2, partially assumed that the Ig-like domain is representative of membrane-bound TREM2.",
+    "source": "Moreover, our study, like previous investigations of TREM2, partially assumed that the Ig-like domain is representative of membrane-bound TREM2. This assumption overlooks potential contributions from the membrane, membrane-bound flexible stalk domain, DAP12, or TREM2 glycosylation.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a limitation acknowledged by the authors.",
+    "evidence": "This claim describes a limitation of the study methodology.",
     "evidence_type": [
+      "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C127",
-    "claim": "PLs are more likely co-presented with other components in lipoproteins or in contexts such as demyelination, cell debris, or A\u03b2 in vivo.",
+    "claim_id": "C122",
+    "claim": "PLs are unlikely to be presented as individual soluble ligands in the brain in an in vivo setting.",
     "claim_type": "EXPLICIT",
     "source": "Additionally, it is unlikely that PLs are presented as individual soluble ligands in the brain in an in vivo setting. Instead, they are more likely co-presented with other components in lipoproteins or in contexts such as demyelination, cell debris, or A\u03b2.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This claim is based on speculation and established knowledge.",
+    "evidence": "This claim is based on established biological knowledge and represents a limitation of the study.",
     "evidence_type": [
-      "SPECULATION",
-      "KNOWLEDGE"
+      "KNOWLEDGE",
+      "INFERENCE"
     ]
   }
 ]

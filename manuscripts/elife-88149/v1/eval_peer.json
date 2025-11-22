@@ -1,0 +1,169 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C44"
+    ],
+    "result": "The study identified 18 out of 62 covariates with significant and replicable R\u00b2 differences in PGS performance when stratifying individuals. The largest differences were observed for age, sex, blood lipids, physical activity, and alcohol consumption, with R\u00b2 nearly doubling between best- and worst-performing quintiles. These differences were comparable to ancestry-related differences and replicated across multiple cohorts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers explicitly state the results are 'interesting and well-supported' and describe the work as 'a convincing analysis of the effects of covariates...on the predictive accuracy of polygenic scores.' The finding that 'PGS has different predictive power across strata for 18 out of 62 covariates' is directly acknowledged without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Twenty-eight covariates showed significant PGS\u2013covariate interaction effects, with the largest effects observed for alcohol drinking frequency (20% decrease per SD), physical activity (9.4\u201312.5% decrease per SD), and blood lipids including HDL cholesterol (15.3% decrease per SD). Significant interactions were also found for blood pressure, HbA1c, type 2 diabetes, and other metabolic traits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers note that the authors 'investigated which types of covariates result in the largest differences in PGS predictive power, finding that covariates with larger interaction effects...tend to better stratify individuals by PGS performance.' This finding is presented as one of the 'important points of the paper' without any critique or concern raised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study found strong correlations between covariates' main effects on BMI and their maximum R\u00b2 differences (r=0.56) and interaction effects (r=0.58). Interaction effects and maximum R\u00b2 differences showed an even stronger correlation (r=0.80), indicating that covariates with larger interaction effects also had larger effects on PGS performance across quintiles, and that individuals most at risk for obesity have both disproportionately larger PGS effect and R\u00b2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers explicitly acknowledge this finding, stating that the authors found 'covariates with larger \"main effects\" on the trait and covariates with larger interaction effects (interacting with the PGS to affect the trait) tend to better stratify individuals by PGS performance.' The correlations are presented as part of the well-supported results without any concerns raised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "While interaction effects significantly modified PGS effects, their overall impact on model performance was relatively small. The maximum increase in R\u00b2 when including PGS\u2013covariate interaction terms was only 0.0024 (2.1% relative increase) in UKBB EUR and 0.0058 (6.1% relative increase) across all cohorts for age interaction in eMERGE EUR, despite large differences in R\u00b2 when stratifying by covariates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers note that 'PGS accuracy differs across covariates, but in a way that is not well-captured by linear models with interactions' and describe this as 'important for PGS method development.' This finding is presented as one of the key contributions without criticism, indicating reviewer acceptance of this somewhat paradoxical result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Using quantile regression, the study demonstrated that PGS effect consistently increases as BMI itself increases across all cohorts and ancestries, with effects ranging from 1.43 to 2.06 times larger between lowest and highest deciles. The analysis revealed that differences in PGS effects are directly related to differences in R\u00b2 when stratifying by covariates, and that higher R\u00b2 in certain strata results from increased slope magnitude rather than decreased error, suggesting R\u00b2 alone may not be an appropriate performance metric.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers specifically highlight 'the quantile regression analysis is an interesting approach to explore how and why PGS may differ in accuracy across different strata of individuals' as one of the important points of the paper. This explicit positive mention indicates strong support for these findings and their interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Machine learning models (neural networks) increased relative model R\u00b2 by a mean of 23% (up to 67%) across datasets compared to LASSO with interaction terms. The inclusion of interaction terms in LASSO increased R\u00b2 by a mean of 3.9% (up to 12%) compared to main effects only. Neural networks demonstrated the ability to improve model R\u00b2 beyond linear models with interactions, even when variable selection was performed using LASSO.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers state that the authors 'see if including interactions between the PGS and covariates improves predictive accuracy, finding that linear models only result in modest increases in performance but nonlinear models result in more substantial performance gains.' This finding is presented as part of the overall 'interesting and well-supported' results without any concerns raised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Creating PGS directly from SNP\u2013age interaction terms (GxAge GWAS effects) increased relative R\u00b2 by 7.8% compared to main effect PGS. This strategy outperformed both age-stratified PGS and post hoc modeling of interactions, demonstrating that directly incorporating interaction effects from GWAS improves performance without requiring additional data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers describe the work as presenting 'important approaches for improving prediction accuracy by accounting for such covariates' and note the overall results are 'well-supported.' The GxAge approach is part of the methods to improve PGS performance that the reviewers find convincing, with no specific concerns raised about this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The study demonstrated that differences in covariates can affect PGS performance more than differences due to ancestry. For example, the predicted R\u00b2 for 80-year-old European ancestry individuals (0.048) would be lower than that of African ancestry individuals aged 24.7 and younger.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers acknowledge the study provides 'a convincing analysis of the effects of covariates...on the predictive accuracy of polygenic scores' and note the work addresses 'a major impediment to the clinical use of PGS' which is 'the interaction between the PGS and various other routinely measure covariates.' This comparison between covariate and ancestry effects is part of the convincing empirical study the reviewers describe.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study analyzed genetic data with linked phenotypic information from electronic health records across four datasets (UKBB, PMBB, eMERGE, GERA) including 491,111 European ancestry and 21,612 African ancestry participants, assessing 62 covariates representing laboratory, survey, and biometric data associated with cardiometabolic health and adiposity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers describe the study design and scope without raising concerns, noting it presents 'a convincing analysis' across 'a variety of association studies.' The multi-cohort, multi-ancestry design is implicitly accepted as appropriate for the research questions addressed.",
+    "result_type": "MINOR"
+  }
+]

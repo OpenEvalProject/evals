@@ -1,0 +1,449 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study combined barcoded rabies virus with single-cell RNA-seq and in situ sequencing to perform retrograde and transsynaptic labeling in the mouse brain. A total of 96 retrogradely labeled cells and 295 transsynaptically labeled cells were sequenced using scRNA-seq, and 4130 retrogradely labeled cells and 2914 transsynaptically labeled cells were sequenced in situ. The transcriptomic identities of rabies virus-infected cells can be robustly identified using both approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 describe the core experimental approach and provide specific cell counts from both scRNA-seq and in situ sequencing experiments. The data presented in Figures 2 and 5, along with Tables 1 and 2, directly support these claims with detailed quality control metrics and mapping results showing that transcriptomic identities can be robustly determined despite rabies infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study performed two-plex retrograde labeling using two libraries of barcoded rabies virus with distinct barcode cassettes. One library contained a CCS sequence for library identification. The libraries contained at least 8,552 and 13,211 barcodes respectively, with no overlap between libraries. The viruses were injected into LGd and VISal, and 48 mCherry-expressing neurons were FACS-isolated from VISp for scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 describe the experimental design and barcode library characteristics for the retrograde labeling experiment. Figure 2A-C and the methods section provide clear documentation of the viral library construction, barcode diversity, and injection strategy. The barcode sequencing data (Figure 2B) confirms the library sizes and lack of overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "scRNA-seq data from rabies-infected cells had comparable quality to non-infected cells. Of 96 sequenced cells, 75 were high quality and 54 mapped to reference taxonomy with high confidence. While some immune response and activity-related genes were upregulated in infected cells, cell type marker expression patterns remained comparable to reference datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 address the critical question of whether rabies infection obscures transcriptomic identity. Figure 2D-F and supplementary figures 1-3 provide comprehensive evidence that despite some gene expression changes (particularly immune response genes), cell type markers remain sufficiently preserved for accurate cell type identification. The mapping confidence and correlation metrics support robust cell typing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Rabies transcripts were detected in all FACS-collected cells with expected relative abundances. 50 of 54 mapped neurons had barcode reads, with 48 carrying unique barcodes and 2 sharing a barcode. All barcodes matched their expected libraries (18 CCS-containing to CCS library, 31 non-CCS to non-CCS library).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 demonstrate successful barcode detection and library assignment. Figure 2G-H provides direct evidence of rabies transcript detection and barcode sequencing. The high success rate (50/54 cells with barcodes) and perfect library matching validate the technical approach for multiplexed retrograde tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The retrograde labeling results recapitulated known cortical projection patterns. L6 CT and L5 ET neurons projected to LGd (thalamus) while IT neurons projected to VISal (cortex), consistent with established connectivity. The false positive rate for distinguishing transcriptomic types was estimated at 0-3.1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 validate the barcoded rabies approach by showing it reproduces well-established projection patterns. Figure 2I shows clear segregation of cell types by projection target, matching literature expectations (C69-C70 cite Harris and Shepherd 2015; Tasic et al. 2018). The low estimated false positive rate (C74) provides confidence in the specificity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study adapted BARseq for rabies barcodes using specific RT primers for barcode regions and random primers for endogenous mRNAs. Padlock probes targeted 104 marker genes and barcode flanking regions. Seven rounds of sequencing read out 101 genes, one hybridization round detected high-level markers, and 15 rounds sequenced barcodes. Cells were segmented with Cellpose and registered to Allen CCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 describe the in situ sequencing methodology. Figure 3A illustrates the probe design strategy, and the methods section provides detailed protocols. The approach builds on established BARseq methods (Chen et al. 2019, 2023) with modifications for rabies barcodes. The technical details are sufficiently documented for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In situ sequencing was applied to retrograde labeling from VISal and RSP/SC. The study sequenced 791,966 cells on 8 sections from 2 animals, with 524,952 passing QC. De novo clustering identified 35 neuronal subclasses including 20 excitatory subclasses, which were further clustered into 116 types. BARseq subclasses showed one-to-one correspondence with scRNA-seq reference data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 demonstrate successful scaling of the approach to in situ sequencing. Figure 3B-F shows the experimental design, cell clustering, and correspondence to reference data. The large cell numbers (>500K QC-passed cells) and successful clustering into 116 types demonstrate the throughput advantage of in situ sequencing over scRNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Of 4,130 barcoded cells, 95.1% contained a single barcode above threshold. The primary barcode accounted for 82\u00b119% of reads per cell, with 93.2% of cells having the primary barcode represent >50% of reads. Barcoded cells co-mingled with non-barcoded cells in UMAP space and had similar read/gene counts, suggesting rabies labeling did not significantly alter targeted gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 address barcode specificity and potential artifacts in in situ sequencing. Figure 3G-M provides comprehensive quality metrics showing high barcode specificity and minimal transcriptomic perturbation. The high percentage of single-barcode cells (95.1%) and co-mingling in UMAP space validate the approach for cell type identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "From barcoded cells, 1,415 unique barcodes were identified. Many barcodes had 0-1 mismatch to the two libraries but not to random barcodes, indicating 15-base sequencing was sufficient for error correction. Allowing one mismatch, 1,169 VISal-projecting and 2,483 SC/RSP-projecting cells were identified. Barcode frequency in cells correlated with library frequency (r=0.41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 demonstrate successful barcode matching and projection assignment. Figure 4A-C shows the Hamming distance analysis validating the error correction strategy and the correlation between library and cellular barcode frequencies. The identification of projection-specific populations provides the foundation for subsequent connectivity analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "VISal-projecting and SC/RSP-projecting neurons showed differential spatial and transcriptomic distributions. VISal-projecting neurons were found in VISp and lateral areas (VISl, TEa), with L2/3 IT neurons mainly in VISp/VISl but not TEa, consistent with cortical hierarchy. SC/RSP-projecting neurons were found medial to VISp and in hippocampal areas, dominated by L4/5 IT neurons in VISpm/RSPd and L5 ET neurons in VISp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 describe the spatial organization of projection neurons. Figure 4D-G provides detailed anatomical and transcriptomic distributions. The findings recapitulate known features of visual cortical organization including dorsal/ventral streams and cortical hierarchy, validating the approach while providing cell-type-specific resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "IT neurons project to cortex but not SC, leading to the inference that L4/5 IT neurons projected to RSP while L5 ET neurons projected to SC. IT neurons projecting to VISal and RSP were separated along the mediolateral axis, consistent with ventral (VISl, TEa, ECT) and dorsal (VISpm, RSPd) visual streams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 integrate the experimental findings with established knowledge of cortical connectivity. The inferences about specific projection targets (C114-C115) are well-supported by combining the observed cell type distributions with known projection patterns (citing Harris et al. 2015, 2019; Peng et al. 2021). The alignment with dorsal/ventral stream organization (C117-C119, citing Wang et al. 2012) validates the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Transcriptomic types within L4/5 IT subclass are differentially enriched across cortical areas along the mediolateral axis. However, cell type composition alone cannot explain projection differences across areas. Combining cell type and source area explained significantly more variance (31.8\u00b125.7%) than cell type with shuffled areas (p=6\u00d710\u207b\u2075\u2078 for L4/5 IT, p=6\u00d710\u207b\u00b3\u2077 for all excitatory neurons), indicating projections are determined by both transcriptomic identity and anatomical location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C130 present a key finding about the determinants of cortical projections. Figure 4H-L provides the data showing differential type enrichment and the variance analysis. The statistical approach (ANOVA with shuffled controls) is appropriate, and the highly significant p-values support the conclusion that both cell type and location matter. This goes beyond simple cell type classification to reveal spatial organization principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "For transsynaptic labeling, AAV2-retro-syn-mCre was injected into dorsal striatum and helper AAVs into somatosensory cortex to express TVA and rabies glycoprotein in corticostriatal neurons. After 7 days, barcoded EnvA-pseudotyped \u0394G rabies was injected. After another 7 days, 32 consecutive 20\u03bcm sections spanning 640\u03bcm were collected and sequenced in situ. In situ sequencing captured cells split between sections, allowing interrogation of most source cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 describe the transsynaptic labeling experimental design. Figure 5B-D illustrates the approach and demonstrates the ability to capture split cells. The use of consecutive sections spanning the injection site addresses a critical requirement for comprehensive source cell sampling, which is essential for distinguishing different types of barcode-sharing networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The study sequenced 3,107,645 cells including 2,914 barcoded cells (\u22658 barcode counts, complexity >10\u207b\u2070\u00b7\u2079). Of these, 138 cells with \u22652 glycoprotein counts were potential source cells, 2,590 with no glycoprotein were potential presynaptic cells, and 186 with single glycoprotein reads were excluded. Barcoded cells had similar gene read counts as non-barcoded cells and clustered together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C144 provide the cell counts and classification criteria for the transsynaptic experiment. Table 2 and Figure 5E-H document these numbers and show the quality metrics. The manual proofreading approach (Figure 5\u2014supplement 2A) for determining thresholds strengthens confidence in the cell classifications. The similarity of barcoded and non-barcoded cells validates the transcriptomic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Focusing on 23 barcodes with \u226512 cells each, 80-93% were found in source cells. After filtering, 120 high-quality source cells with 59 unique barcodes were identified. Six source cells contained two barcodes each, resulting in 126 source cell/barcode combinations. Forty-three barcodes were found in single source cells only, with 31 of these shared with 381 presynaptic cells (12\u00b114 cells/barcode). The remaining 16 barcodes labeled multiple source cells (81 total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C150 describe the source cell recovery and barcode distribution. Figure 5I and supplement 2B provide the data supporting these counts. The high recovery rate (80-93%) validates the in situ approach for comprehensive source cell sampling. The distribution of barcodes across source cells sets up the subsequent analysis of network types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Using Bayesian analysis of barcode frequencies, the most likely number of independent transduction events was 76 (95% CI: 67-87), suggesting ~33 barcode/source cell combinations resulted from double labeling. The remaining 50 (126-76) source-barcode pairs likely resulted from connected source cells. Barcode sharing among source cells was dominated by connected-source networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 present a sophisticated analysis distinguishing double-labeled from connected-source networks. Figure 5J-K shows the Bayesian inference results. The approach leverages barcode frequency information to estimate independent infection events, which is mathematically sound. The conclusion that connected-source networks dominate (50/126 combinations) is well-supported and has important implications for interpreting the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "490 barcodes were found in presynaptic cells but not source cells. Of these, 429 (88%) were in <5 cells, suggesting dominance of no-source networks from direct infection. Considering networks with \u22655 cells and no source cell as lost-source networks yielded a conservative estimate of 61 dead source cells, compared to 120 observed source cells. This is consistent with previous observations that ~half of source cells die by 7 days post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 address the important issue of source cell death. Figure 5L shows the distribution supporting the distinction between no-source and lost-source networks. The estimate of 61 dead source cells is conservative and consistent with prior literature (Wertz et al. 2015, C159). This analysis is critical for understanding the limitations of the approach and interpreting the connectivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "IT neurons generally synapse onto similar cells (convergence bias 2.75-2.81 between superficial IT and L5 IT, FPR<0.05). However, L6 IT neurons were less likely to synapse onto the same postsynaptic cells as other cortical neurons (convergence bias 0.53-0.84 with various types). These differences are reminiscent of L6 IT neurons' characteristic projection patterns and may reflect specialized roles in cortical processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 present the main biological finding from the transsynaptic experiment. Figure 5N shows the convergence bias analysis with appropriate statistical controls (shuffled connectivity). The finding that L6 IT neurons show distinct convergence patterns is novel and well-supported by the data. The connection to known projection patterns (C162, citing Tasic et al. 2018; Chen et al. 2019) provides biological context, though the functional interpretation (C163) is appropriately presented as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "RNA barcode sequencing techniques have potential for brain-wide circuit mapping at cellular resolution, but existing Sindbis virus-based techniques only map long-range projections anterogradely. Rabies virus can enable retrograde labeling and monosynaptic tracing, but barcoded rabies has only been used for non-neuronal interactions in vivo and cultured neuron connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context supported by citations to prior work. These claims accurately characterize the state of the field and the gap that the current study addresses. The limitations of existing approaches (C2, C5-C6) motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "By associating gene expression with connectivity from barcode sequencing, the study distinguished long-range projecting cortical cell types from multiple areas and identified cell types with converging or diverging synaptic connectivity. The experiments recapitulated dorsal and ventral visual streams and revealed differences in projections across cortical areas and transcriptomic types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C164-C166 summarize the main findings of the study. These are well-supported by the detailed results presented in Figures 2-5 and the specific analyses described in other claim groups. The study successfully demonstrates both retrograde and transsynaptic labeling applications of barcoded rabies virus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43"
+    ],
+    "result": "Multiplexed retrograde tracing using barcoded rabies virus would allow association of neurons with projections to many injection sites within single brains. This is conceptually similar to barcoded AAV approaches but rabies virus potentially has different tropism. Combining transsynaptic labeling with RNA barcoding could allow sequencing-based readouts of synaptically-connected networks, mapping connectivity between many cells at cellular resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 describe the conceptual framework and potential of the approaches. While these contain speculative elements (C36, C42-C43 use 'would allow' and 'could allow'), they are supported by the proof-of-principle experiments presented in the paper. The comparison to AAV approaches (C37) is appropriate, and the potential advantages of rabies virus (C38) are supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Rabies virus alters gene expression of infected cells, which may obscure transcriptomic signatures. In situ sequencing can read out both endogenous mRNAs and random RNA barcodes with high throughput and low cost without tissue dissociation, making it uniquely suited to overcome challenges associated with barcoded rabies tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 identify a key challenge (gene expression alteration) and propose in situ sequencing as a solution. C47 is supported by citation (Pati\u00f1o et al. 2022) and confirmed by the study's own findings (C61-C62). C48-C49 accurately describe in situ sequencing capabilities (supported by citations to Ke et al. 2013; Chen et al. 2019, 2023). The experimental results validate that in situ sequencing successfully addresses these challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "In barcoded retrograde tracing, the number of targets is likely limited by injection number. Barcoded retrograde and anterograde approaches obtain complementary information: anterograde approaches reveal projection diversity within a region, while retrograde approaches reveal distribution of neurons with same projections across large regions. The approaches have different sensitivity constraints: MAPseq/BARseq sensitivity depends on detecting individual barcode molecules in axons, while barcoded rabies sensitivity is determined by viral transduction due to genome amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C173 provide thoughtful discussion of the complementary nature and relative advantages of different barcoding approaches. These claims are supported by the experimental results and logical inference. The discussion of sensitivity constraints (C171-C172) is particularly insightful and well-supported by the technical characteristics of the approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Accurately inferring synaptic relationships requires distinguishing different barcode-sharing network types and filtering out obscuring networks. This requires sequencing all source cells, which is difficult with scRNA-seq due to tissue dissociation losses. In situ sequencing bypasses dissociation and can potentially sequence all source cells, with section loss minimizable using tape-transfer systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C179 articulate the requirements for successful transsynaptic tracing and explain why in situ sequencing is advantageous. These claims are supported by the experimental design and results, particularly the high source cell recovery rate (C145). The limitations of scRNA-seq approaches (C176-C177) are supported by citations and confirmed by the study's own scRNA-seq results (Appendix 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Many source cells likely died in the experiment, preventing unambiguous determination of connectivity between source cells and presynaptic neurons. Nonetheless, the study could infer which neuronal types were more likely to synapse together onto the same source cell. This analysis goes beyond previous barcoded rabies approaches and represents a first proof-of-principle for inferring statistics of synaptic connectivity using barcoding. Reducing source cell death would allow more precise matching, with cytotoxicity ameliorable through various optimization strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C184 honestly acknowledge limitations while highlighting achievements. The source cell death issue (C180) is well-documented (C158-C159). The convergence analysis (C181) represents a meaningful advance despite limitations. The comparison to prior work (C182) is appropriate, and suggestions for improvement (C183-C184) are supported by citations to relevant optimization studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "In situ sequencing is ideally suited for barcoding-based neuroanatomical techniques, being faster and cheaper than dissociation-based techniques on a per-cell basis. The transsynaptic experiment sequencing 3.1 million cells across 32 sections cost <$4,000 in reagents. In situ sequencing captures neurons at high spatial resolution, revealing spatial organization of connectivity. Space-based connectivity rules are common in vertebrate brains and may exist independent of transcriptomic differences; spatial connectivity loss patterns are common in neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C190 make a strong case for in situ sequencing in neuroanatomical applications. The cost estimate (C187) is concrete and impressive. The advantages for spatial analysis (C188-C190) are well-articulated and supported by citations. These claims effectively communicate the broader significance and potential applications of the approach.",
+    "result_type": "MINOR"
+  }
+]

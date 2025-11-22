@@ -1,0 +1,133 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C47",
+      "C48"
+    ],
+    "result": "The cellular Potts model simulations with increased apical surface contractility failed to reproduce apical constriction. Instead, cells adopted drop shapes and delaminated one by one from edges, contradicting previous vertex model results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewers acknowledge this finding but note 'incomplete evidence supporting their major claims due to a rather coarse-grained exploration of the model.' The editors state the work 'highlights how choices inherent to modeling...may affect the outcome of simulations' but express concern about the depth of model exploration, suggesting the evidence is insufficient to fully support this major claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C53"
+    ],
+    "result": "An alternative model based on cell membrane elasticity and endocytosis, where pressure is balanced among cells, successfully reproduced apical constriction in cellular Potts model simulations across a wide range of parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers recognize this as a key finding ('an apical elastic term, with zero rest value...is necessary to achieve apical constriction'), they express concern about 'incomplete evidence supporting their major claims due to a rather coarse-grained exploration of the model.' The lack of 'summary quantification' noted by editors further undermines confidence in the robustness of these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C49",
+      "C51",
+      "C54"
+    ],
+    "result": "The cellular Potts model revealed that vertex models are substantially affected by the imposed straight lateral surface constraint, which is not natural for epithelial cells. The cellular Potts model's inclusion of curved surfaces and cell rearrangement allowed discovery of the importance of balanced pressure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this contribution, stating the study 'highlights how choices inherent to modeling \u2013 such as permitting straight or curved cell edges \u2013 may affect the outcome of simulations and, consequently, their biophysical interpretation.' This methodological insight is recognized as valuable despite concerns about other aspects of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C55",
+      "C73"
+    ],
+    "result": "Simulations suggested that too high apical surface tension or elastic modulus might prevent tissue invagination by keeping the apical surface flat, even when cells adopt wedge shapes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers note this finding ('a very high apical elastic constant promotes planar tissue configurations, opposing bending') but the editors' concern about 'incomplete evidence' and 'coarse-grained exploration' applies to these predictions as well. The lack of quantitative validation limits confidence in these model predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C74",
+      "C75"
+    ],
+    "result": "The supracellular myosin cable alone could not drive tissue invagination, but when combined with cell surface elasticity, it largely promoted invagination and created sharp bending when pulling force was sufficiently high.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this finding, stating 'tissue bending can be enhanced by adding a supracellular myosin cable.' This result is accepted as part of the model's predictions, though the overall concern about coarse-grained exploration may apply to the quantitative details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Analysis of tracheal pit invagination showed no obvious change in junctional tension distribution, but apical surface area decreased and relative pressure increased synchronously among invaginated cells, consistent with the balanced pressure model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While this experimental analysis is presented to support the model, the reviewers' note about 'incomplete evidence' and the editors' comment about 'lack of summary quantification' suggest insufficient validation. The connection between these observations and the model predictions is not strongly affirmed by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C76"
+    ],
+    "result": "The authors propose a four-step ratcheting model where endocytosis decreases the reference value of apical surface elasticity during pulsed myosin contraction, enabling progressive apical constriction. This model explains why endocytosis downregulation leads to edge-specific contraction similar to simulation results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic proposal connects simulations to experimental observations, but reviewers do not explicitly evaluate it. Given the overall assessment of 'incomplete evidence' for major claims and the speculative nature of this model (as indicated by evidence_type including 'SPECULATION'), the support for this interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The apical constriction model showed robustness across different cell shapes and was slightly promoted when surrounding cells had affinity to apical ECM. An alternative gradient contractility model often led to cell delamination.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are supporting simulation results that test model robustness. While reviewers express concern about coarse-grained exploration overall, they do not specifically challenge these robustness tests, and such parameter exploration is standard practice in computational modeling.",
+    "result_type": "MINOR"
+  }
+]

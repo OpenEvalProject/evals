@@ -182,7 +182,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by multiple citations describing in silico methods.",
+    "evidence": "This is supported by multiple citations describing in silico approaches.",
     "evidence_type": [
       "CITATION"
     ]
@@ -204,29 +204,29 @@
   },
   {
     "claim_id": "C17",
+    "claim": "Simulations can be repeated across a diverse range of cardiac phenotypes to ensure generality of the results.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulations can be repeated across a diverse range of cardiac phenotypes to ensure generality of the results (Britton et al., 2013; Ni et al., 2018; Gong and Sobie, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work using this approach.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
     "claim": "Individual phenotypes are constructed by randomizing the conductance parameters to mimic natural variation in ion channel expression.",
     "claim_type": "EXPLICIT",
     "source": "The individual phenotypes are constructed by randomizing the conductance parameters to mimic natural variation in ion channel expression.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the methodology for creating phenotypic diversity in the simulations.",
+    "evidence": "This describes a standard methodology in computational cardiac electrophysiology.",
     "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C18",
-    "claim": "The method produces a population of cardiac action potentials.",
-    "claim_type": "EXPLICIT",
-    "source": "The method produces a population of cardiac action potentials (Figure 1C).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is demonstrated in Figure 1C showing simulated action potentials.",
-    "evidence_type": [
-      "DATA"
+      "DATA",
+      "KNOWLEDGE"
     ]
   },
   {
@@ -252,10 +252,9 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the methodological choice for the study.",
+    "evidence": "This is a methodological choice based on established knowledge linking EADs to arrhythmia.",
     "evidence_type": [
-      "KNOWLEDGE",
-      "INFERENCE"
+      "KNOWLEDGE"
     ]
   },
   {
@@ -293,7 +292,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is demonstrated visually in Figures 2C and 2D.",
+    "evidence": "This is shown in Figure 2C and D.",
     "evidence_type": [
       "DATA"
     ]
@@ -306,7 +305,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the statistical methodology used in the study.",
+    "evidence": "This describes the statistical methodology used in the analysis.",
     "evidence_type": [
       "DATA"
     ]
@@ -340,14 +339,14 @@
   },
   {
     "claim_id": "C31",
-    "claim": "The axis of arrhythmia runs orthogonally to the decision boundary.",
+    "claim": "The axis of arrhythmia is defined as a line that runs orthogonally to the decision boundary.",
     "claim_type": "EXPLICIT",
     "source": "We define the axis of arrhythmia as a line that runs orthogonally to the decision boundary (Figure 3A).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a mathematical definition central to the method, illustrated in Figure 3A.",
+    "evidence": "This is a definition provided by the authors based on their mathematical framework.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -361,7 +360,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a mathematical property of orthogonal projection onto the decision boundary.",
+    "evidence": "This is a mathematical property of the orthogonal direction to the decision boundary.",
     "evidence_type": [
       "INFERENCE"
     ]
@@ -374,7 +373,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the mathematical methodology for calculating drug risk.",
+    "evidence": "This describes the mathematical method for calculating drug risk.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -382,7 +381,7 @@
   },
   {
     "claim_id": "C34",
-    "claim": "Drugs that shift the electrophysiology toward the ectopic region have positive risk scores.",
+    "claim": "Drugs that shift the electrophysiology toward the ectopic region have positive scores.",
     "claim_type": "EXPLICIT",
     "source": "According to our metric, drugs that shift the electrophysiology toward the ectopic region have positive scores, whereas drugs that shift it away from ectopy have negative scores.",
     "source_type": [
@@ -396,7 +395,7 @@
   },
   {
     "claim_id": "C35",
-    "claim": "Drugs that shift the electrophysiology away from ectopy have negative risk scores.",
+    "claim": "Drugs that shift the electrophysiology away from ectopy have negative scores.",
     "claim_type": "EXPLICIT",
     "source": "According to our metric, drugs that shift the electrophysiology toward the ectopic region have positive scores, whereas drugs that shift it away from ectopy have negative scores.",
     "source_type": [
@@ -409,119 +408,21 @@
     ]
   },
   {
-    "claim_id": "C36",
-    "claim": "The proportion of the natural population susceptible to a given drug can be calculated by analyzing how the drug shifts the population density with respect to the decision boundary.",
-    "claim_type": "EXPLICIT",
-    "source": "We calculated the proportion of the natural population that would be susceptible to a given drug by analyzing how the drug shifts the population density with respect to the decision boundary.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the methodology for population-level risk assessment.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C38",
-    "claim": "The natural population in logarithmic parameter space is represented by a symmetric multivariate Gaussian density function.",
-    "claim_type": "EXPLICIT",
-    "source": "The natural population is therefore represented in logarithmic parameter space by a symmetric multivariate normal distribution.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a mathematical consequence of the log-normal distribution assumption.",
-    "evidence_type": [
-      "INFERENCE",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C41",
-    "claim": "The size of the susceptible population is a monotonic function of the drug's risk score.",
-    "claim_type": "EXPLICIT",
-    "source": "The size of the susceptible population is a monotonic function of the drug's risk score, so the torsadogenic risk can be described using either terminology.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a mathematical property of the model demonstrated in the results.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE"
-    ]
-  },
-  {
     "claim_id": "C43",
-    "claim": "In the Credible Meds labeling scheme, Class 1 drugs carry a known torsadogenic risk.",
-    "claim_type": "EXPLICIT",
-    "source": "In that labeling scheme, Class 1 drugs carry a known torsadogenic risk; Class 2 drugs carry a possible risk; Class 3 drugs carry a risk but only in conjunction with other factors; Class 4 drugs have no evidence of risk at all.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the clinical risk classification system from Credible Meds.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C44",
-    "claim": "Class 2 drugs carry a possible torsadogenic risk.",
-    "claim_type": "EXPLICIT",
-    "source": "In that labeling scheme, Class 1 drugs carry a known torsadogenic risk; Class 2 drugs carry a possible risk; Class 3 drugs carry a risk but only in conjunction with other factors; Class 4 drugs have no evidence of risk at all.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the clinical risk classification system from Credible Meds.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C45",
-    "claim": "Class 3 drugs carry a torsadogenic risk but only in conjunction with other factors.",
-    "claim_type": "EXPLICIT",
-    "source": "In that labeling scheme, Class 1 drugs carry a known torsadogenic risk; Class 2 drugs carry a possible risk; Class 3 drugs carry a risk but only in conjunction with other factors; Class 4 drugs have no evidence of risk at all.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the clinical risk classification system from Credible Meds.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C46",
-    "claim": "Class 4 drugs have no evidence of torsadogenic risk.",
-    "claim_type": "EXPLICIT",
-    "source": "In that labeling scheme, Class 1 drugs carry a known torsadogenic risk; Class 2 drugs carry a possible risk; Class 3 drugs carry a risk but only in conjunction with other factors; Class 4 drugs have no evidence of risk at all.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the clinical risk classification system from Credible Meds.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C54",
-    "claim": "The signs of the risk scores suggest that Ajmaline is pro-arrhythmic whereas Linezolid is not, which agrees with the clinical risk labels.",
+    "claim": "The signs of the scores suggest that Ajmaline is pro-arrhythmic whereas Linezolid is not, which agrees with the clinical risk labels.",
     "claim_type": "EXPLICIT",
     "source": "The signs of the scores suggest that Ajmaline is pro-arrhythmic whereas Linezolid is not, which agrees with the clinical risk labels.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation of the risk scores in relation to clinical data.",
+    "evidence": "This is an inference comparing the calculated risk scores to known clinical outcomes.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C55",
+    "claim_id": "C44",
     "claim": "The sizable negative score for Linezolid suggests that it may actually have anti-arrhythmic properties.",
     "claim_type": "EXPLICIT",
     "source": "Indeed, the sizable negative score for Linezolid suggests that it may actually have anti-arrhythmic properties.",
@@ -535,100 +436,47 @@
     ]
   },
   {
-    "claim_id": "C56",
-    "claim": "At 25\u00d7 dose, Ajmaline shifts the population density by 1.16 units toward the ectopic regime, making 26% of the population susceptible to Torsades.",
+    "claim_id": "C45",
+    "claim": "Ajmaline shifts the population density by 1.16 units toward the ectopic regime, making 26% of the population susceptible to Torsades.",
     "claim_type": "EXPLICIT",
     "source": "Ajmaline shifts the population density by 1.16 units toward the ectopic regime, making 26% of the population susceptible to Torsades.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a quantitative result from the population analysis shown in Figure 5D.",
+    "evidence": "This is a calculated result from the population risk analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C57",
-    "claim": "At 25\u00d7 dose, Linezolid shifts the population 1.18 units away from the ectopic regime, making only 0.0095% of the population susceptible.",
+    "claim_id": "C46",
+    "claim": "Linezolid shifts the population 1.18 units away from the ectopic regime, making only 0.0095% of the population susceptible.",
     "claim_type": "EXPLICIT",
     "source": "Conversely, Linezolid shifts the population 1.18 units away from the ectopic regime, making only 0.0095% of the population susceptible, which is a substantial drop compared to the baseline rate of 0.93%.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a quantitative result from the population analysis shown in Figure 5D.",
+    "evidence": "This is a calculated result from the population risk analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C58",
-    "claim": "The baseline rate of ectopy in the population is 0.93%.",
-    "claim_type": "EXPLICIT",
-    "source": "Conversely, Linezolid shifts the population 1.18 units away from the ectopic regime, making only 0.0095% of the population susceptible, which is a substantial drop compared to the baseline rate of 0.93%.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a quantitative result from the population analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C59",
+    "claim_id": "C47",
     "claim": "The action of a drug subtly changes direction with dosage because of differing response rates for each ion channel.",
     "claim_type": "EXPLICIT",
     "source": "The action of a drug subtly changes direction with dosage because of differing response rates for each ion channel.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is demonstrated in Figure 6 showing curvilinear drug pathways.",
+    "evidence": "This is demonstrated through the analysis of dose-response curves in Figure 6.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C61",
-    "claim": "The dose-dependent action of drugs follows a gentle arc in parameter space rather than a straight line.",
-    "claim_type": "EXPLICIT",
-    "source": "Its dose-dependent action thus follows a gentle arc in parameter space rather than a straight line (Figure 6B, left).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is demonstrated visually in Figure 6B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C64",
-    "claim": "The risk scores depend on dosage due to the curvature of drug pathways in four-dimensional parameter space.",
-    "claim_type": "EXPLICIT",
-    "source": "That curvature influences how these drugs project onto the axis of arrhythmia, hence the risk scores depend on dosage.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference from the mathematical analysis of curvilinear drug pathways.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C65",
-    "claim": "The shifting risk scores reflect the changing balance of ionic currents that occur naturally with multi-channel drugs.",
-    "claim_type": "EXPLICIT",
-    "source": "The shifting scores reflect the changing balance of ionic currents that occur naturally with multi-channel drugs.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an interpretation of the dose-dependent risk scores.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C67",
+    "claim_id": "C49",
     "claim": "The classification accuracy for all dosage levels was found to lay between 88.1% and 90.8%.",
     "claim_type": "EXPLICIT",
     "source": "The classification accuracy for all dosage levels was found to lay between 88.1% and 90.8% (Figure 8A).",
@@ -636,91 +484,52 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a quantitative result from the validation study shown in Figure 8A.",
+    "evidence": "This is a quantitative result from the validation analysis across different doses.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C68",
+    "claim_id": "C50",
     "claim": "The conventional hERG assay has an accuracy of 78.9% for the same dataset.",
     "claim_type": "EXPLICIT",
     "source": "In comparison, the conventional hERG assay has an accuracy of 78.9% for the same dataset (Llopis-Lorente et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a comparison to results from Llopis-Lorente et al., 2020.",
+    "evidence": "This is a comparison to a benchmark result from the literature.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C69",
-    "claim": "The area under the ROC curve (AUROC) for drugs at 5\u00d7 dose is 91.3%.",
+    "claim_id": "C51",
+    "claim": "The areas under the ROC curves (AUROC) are 91.3% for drugs at 5\u00d7 dose and 91.5% for drugs at 25\u00d7 dose.",
     "claim_type": "EXPLICIT",
-    "source": "In our case, there is little difference between the ROC curves for drugs assessed at 5\u00d7 dose versus 25\u00d7 dose. The areas under the respective ROC curves (AUROC) are nearly identical at 91.3% and 91.5%.",
+    "source": "The areas under the respective ROC curves (AUROC) are nearly identical at 91.3% and 91.5%.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a quantitative result from the ROC analysis shown in Figure 8B.",
+    "evidence": "This is a quantitative result from the ROC analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C70",
-    "claim": "The area under the ROC curve (AUROC) for drugs at 25\u00d7 dose is 91.5%.",
-    "claim_type": "EXPLICIT",
-    "source": "In our case, there is little difference between the ROC curves for drugs assessed at 5\u00d7 dose versus 25\u00d7 dose. The areas under the respective ROC curves (AUROC) are nearly identical at 91.3% and 91.5%.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a quantitative result from the ROC analysis shown in Figure 8C.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "The major benefit of the metric is that it can be applied to novel drugs without conducting new computer simulations.",
-    "claim_type": "EXPLICIT",
-    "source": "The major benefit of the metric is that it can be applied to novel drugs without conducting new computer simulations.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a stated advantage of the proposed method.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "The ion currents can be measured using standard patch clamp techniques.",
+    "claim_id": "C54",
+    "claim": "The ion currents can be measured using standard patch clamp techniques and the risk metric can be calculated with pen and paper.",
     "claim_type": "EXPLICIT",
     "source": "The ion currents can be measured using standard patch clamp techniques and the risk metric can be calculated with pen and paper.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the practical application of the method using established experimental techniques.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C75",
-    "claim": "The risk metric can be calculated with pen and paper.",
-    "claim_type": "EXPLICIT",
-    "source": "The ion currents can be measured using standard patch clamp techniques and the risk metric can be calculated with pen and paper.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This emphasizes the simplicity of the calculation once the axis is established.",
+    "evidence": "This describes the practical applicability of the method.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C76",
+    "claim_id": "C55",
     "claim": "All of the simulations in the present study were conducted in the absence of drugs.",
     "claim_type": "EXPLICIT",
     "source": "All of the simulations in the present study were conducted in the absence of drugs.",
@@ -733,203 +542,113 @@
     ]
   },
   {
-    "claim_id": "C77",
+    "claim_id": "C56",
     "claim": "The simulations were only needed to identify the axis of arrhythmia and do not need to be repeated when applying the metric.",
     "claim_type": "EXPLICIT",
     "source": "The simulations were only needed to identify the axis of arrhythmia and do not need to be repeated when applying the metric.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the one-time nature of the computational work.",
+    "evidence": "This describes the efficiency advantage of the method.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C78",
-    "claim": "The axis encapsulates the principal relationship between ion channel blockade and the onset of early after-depolarizations.",
-    "claim_type": "EXPLICIT",
-    "source": "The axis encapsulates the principal relationship between ion channel blockade and the onset of early after-depolarizations.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the biological meaning of the axis of arrhythmia.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C79",
-    "claim": "The axis represents the most potent combination of pro-arrhythmic block that is theoretically possible for any drug, averaged across all cardiomyocytes.",
-    "claim_type": "EXPLICIT",
-    "source": "It represents the most potent combination of pro-arrhythmic block that is theoretically possible for any drug, averaged across all cardiomyocytes.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the theoretical interpretation of the axis.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C80",
+    "claim_id": "C57",
     "claim": "The assumption that the boundary is linear is crucial for generalizing the findings across all cardiomyocytes.",
     "claim_type": "EXPLICIT",
     "source": "The assumption that the boundary is linear is crucial for generalizing the findings across all cardiomyocytes.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This explains a key methodological choice in the study.",
+    "evidence": "This is a methodological justification provided by the authors.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C81",
-    "claim": "A linear boundary allows the effect of a drug to be analyzed independently of the individual cardiomyocytes.",
+    "claim_id": "C58",
+    "claim": "The method can predict the proportion of the population that would be susceptible to a drug without explicitly simulating it.",
     "claim_type": "EXPLICIT",
-    "source": "It allows the effect of a drug to be analyzed independently of the individual cardiomyocytes.",
+    "source": "Our method can also predict the proportion of the population that would be susceptible to a drug without explicitly simulating it.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This explains the advantage of the linear boundary assumption.",
+    "evidence": "This describes a capability of the method based on the mathematical framework.",
     "evidence_type": [
+      "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C82",
+    "claim_id": "C59",
     "claim": "Drug blockade and phenotypic diversity both operate on the same properties of ion channels.",
     "claim_type": "EXPLICIT",
     "source": "The analysis is possible because drug blockade and phenotypic diversity both operate on the same properties of ion channels.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This explains why the method can predict population effects without explicit simulation.",
+    "evidence": "This is a theoretical insight that enables the mathematical approach.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C83",
+    "claim_id": "C60",
     "claim": "The two biological processes (drug blockade and phenotypic diversity) are mathematically interchangeable.",
     "claim_type": "EXPLICIT",
     "source": "The two biological processes are therefore mathematically interchangeable.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a mathematical insight that enables the population analysis.",
+    "evidence": "This is a mathematical insight derived from the logarithmic framework.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C84",
-    "claim": "The distribution of the drugged population can be inferred from the drug-free population by shifting it according to the drug's risk score.",
-    "claim_type": "EXPLICIT",
-    "source": "As such, the distribution of the drugged population can be inferred from the drug-free population by shifting it according to the drug's risk score.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the mathematical method for population-level prediction.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C85",
-    "claim": "The CiPA steering committee recommends that the electrophysiology be simulated using the CiPAORdv1.0 variant of the O'Hara-Rudy model.",
-    "claim_type": "EXPLICIT",
-    "source": "The CiPA steering committee (Li et al., 2019) recommends that the electrophysiology be simulated using the CiPAORdv1.0 variant of the O'Hara-Rudy model which incorporates the kinetics of drugs binding with the hERG channel (Li et al., 2017).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is supported by citations to Li et al., 2019 and Li et al., 2017.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C87",
-    "claim": "Low versus intermediate-or-high risk CiPA drugs were predicted with 84\u201395% accuracy using manual patch clamp techniques.",
-    "claim_type": "EXPLICIT",
-    "source": "Low versus intermediate-or-high risk drugs were predicted with 84\u201395% accuracy using manual patch clamp techniques; or 93\u2013100% accuracy using automated patch clamping (Li et al., 2019).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a comparison to results from Li et al., 2019.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C88",
-    "claim": "Low versus intermediate-or-high risk CiPA drugs were predicted with 93\u2013100% accuracy using automated patch clamping.",
-    "claim_type": "EXPLICIT",
-    "source": "Low versus intermediate-or-high risk drugs were predicted with 84\u201395% accuracy using manual patch clamp techniques; or 93\u2013100% accuracy using automated patch clamping (Li et al., 2019).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a comparison to results from Li et al., 2019.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C89",
+    "claim_id": "C61",
     "claim": "Passini et al., 2017, used a larger dataset (n=62) to obtain 89% accuracy at predicting Class 1 versus Class 2\u20134 torsadogenic risk labels from Credible Meds.",
     "claim_type": "EXPLICIT",
     "source": "Passini et al., 2017, used a larger dataset (n=62) to obtain 89% accuracy at predicting Class 1 versus Class 2\u20134 torsadogenic risk labels from Credible Meds.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a comparison to results from Passini et al., 2017.",
+    "evidence": "This is a comparison to a previous study's results.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C90",
-    "claim": "Llopis-Lorente et al., 2020, found that qNet predicted Class 1\u20132 versus Class 3\u20134 torsadogenic risk with 92.7% accuracy.",
-    "claim_type": "EXPLICIT",
-    "source": "Their best performing biomarker was qNet, which predicted Class 1\u20132 versus Class 3\u20134 torsadogenic risk with 92.7% accuracy.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a comparison to results from Llopis-Lorente et al., 2020.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C91",
+    "claim_id": "C63",
     "claim": "Llopis-Lorente et al., 2020, increased the overall performance to 94.5% by combining the best biomarkers into a decision tree.",
     "claim_type": "EXPLICIT",
     "source": "Llopis-Lorente et al., 2020, increased the overall performance to 94.5% by combining the best biomarkers into a decision tree.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a comparison to results from Llopis-Lorente et al., 2020.",
+    "evidence": "This is a comparison to a previous study's results.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C92",
-    "claim": "Early after-depolarizations proved to be the worst biomarker in the Llopis-Lorente et al., 2020 study, with only 78.9% accuracy.",
+    "claim_id": "C64",
+    "claim": "Early after-depolarizations proved to be the worst biomarker in Llopis-Lorente et al., 2020, with only 78.9% accuracy.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, early after-depolarizations proved to be their worst biomarker, with only 78.9% accuracy, which is quite different to our findings.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a comparison to results from Llopis-Lorente et al., 2020.",
+    "evidence": "This is a comparison to a previous study's results.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C93",
-    "claim": "The Llopis-Lorente et al., 2020 method under-estimated the predictive power of early after-depolarizations by only exploring normal physiological limits where such events are rare.",
+    "claim_id": "C65",
+    "claim": "The authors suspect that Llopis-Lorente et al., 2020, under-estimated the predictive power of early after-depolarizations by only exploring normal physiological limits where such events are rare.",
     "claim_type": "EXPLICIT",
     "source": "We suspect that their method under-estimated the predictive power of early after-depolarizations by only exploring normal physiological limits where such events are rare.",
     "source_type": [
@@ -942,73 +661,60 @@
     ]
   },
   {
-    "claim_id": "C95",
-    "claim": "Kramer et al., 2013, trained six candidate MICE models on a dataset of 55 drugs.",
+    "claim_id": "C67",
+    "claim": "Kramer et al., 2013, trained six candidate models on a dataset of 55 drugs and their best model predicted the clinical risk labels with 90.9% accuracy using only the difference between hERG and Cav1.2.",
     "claim_type": "EXPLICIT",
-    "source": "Kramer et al., 2013, trained six candidate models on a dataset of 55 drugs.",
+    "source": "Kramer et al., 2013, trained six candidate models on a dataset of 55 drugs. Their best model predicted the clinical risk labels of the drugs with 90.9% accuracy using only the difference between hERG and Cav1.2.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a description of the MICE model study from Kramer et al., 2013.",
+    "evidence": "This is a comparison to a previous study's results.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C96",
-    "claim": "The best MICE model predicted the clinical risk labels of drugs with 90.9% accuracy using only the difference between hERG and Cav1.2.",
-    "claim_type": "EXPLICIT",
-    "source": "Their best model predicted the clinical risk labels of the drugs with 90.9% accuracy using only the difference between hERG and Cav1.2.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a comparison to results from Kramer et al., 2013.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C100",
-    "claim": "The accuracy of the MICE model and the current model is nearly identical, albeit on different datasets.",
+    "claim_id": "C69",
+    "claim": "The accuracy of the MICE model and the present model is nearly identical, albeit on different datasets.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, the accuracy of the two models is nearly identical, albeit on different datasets.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a comparison of performance between the two approaches.",
+    "evidence": "This is a comparison of performance between methods.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C101",
-    "claim": "Bnet predicts the torsadogenic risk of a drug directly from the net blockade of inward and outward ion currents.",
+    "claim_id": "C70",
+    "claim": "Bnet is a simple linear model that predicts the torsadogenic risk of a drug directly from the net blockade of inward and outward ion currents.",
     "claim_type": "EXPLICIT",
     "source": "Bnet (Mistry, 2018) is a simple linear model that predicts the torsadogenic risk of a drug directly from the net blockade of inward and outward ion currents.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the Bnet model with citation to Mistry, 2018.",
+    "evidence": "This describes a comparison method from the literature.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C102",
+    "claim_id": "C71",
     "claim": "Bnet predicts the clinical risk labels of the CiPA validation drugs as accurately as the CiPAORdv1.0 model when adjusted for drug binding kinetics.",
     "claim_type": "EXPLICIT",
     "source": "Bnet predicts the clinical risk labels of the CiPA validation drugs as accurately as the CiPAORdv1.0 model when adjusted for drug binding kinetics (Li et al., 2019; Mistry, 2019; Han et al., 2019).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations to Li et al., 2019, Mistry, 2019, and Han et al., 2019.",
+    "evidence": "This is a comparison to other methods from the literature.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C103",
-    "claim": "The current approach resolves the debate between model complexity and biophysical realism by combining both approaches into the same enterprise.",
+    "claim_id": "C72",
+    "claim": "The present approach resolves the debate between model complexity and biophysical realism by combining both approaches into the same enterprise.",
     "claim_type": "EXPLICIT",
     "source": "Our approach resolves the debate between model complexity and biophysical realism by combining both approaches into the same enterprise.",
     "source_type": [
@@ -1020,60 +726,47 @@
     ]
   },
   {
-    "claim_id": "C104",
-    "claim": "Complex biophysical models were used to identify the relationship between ion channels and torsadogenic risk as it is best understood by theory.",
+    "claim_id": "C73",
+    "claim": "Complex biophysical models were used to identify the relationship between ion channels and torsadogenic risk.",
     "claim_type": "EXPLICIT",
     "source": "Complex biophysical models were used to identify the relationship between ion channels and torsadogenic risk \u2014 as it is best understood by theory.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the first step of the methodological approach.",
+    "evidence": "This describes the methodological approach of the study.",
     "evidence_type": [
-      "DATA",
-      "INFERENCE"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C105",
+    "claim_id": "C74",
     "claim": "The findings were reduced to a simpler linear model that can be applied to novel drugs without recapitulating the complex computer simulations.",
     "claim_type": "EXPLICIT",
     "source": "Those findings were then reduced to a simpler linear model that can be applied to novel drugs without recapitulating the complex computer simulations.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the second step of the methodological approach.",
+    "evidence": "This describes the methodological contribution of the study.",
     "evidence_type": [
+      "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C106",
+    "claim_id": "C75",
     "claim": "The reduced model retains a biophysical description of multi-channel drug block, but only as far as necessary to predict the likelihood of early after-depolarizations.",
     "claim_type": "EXPLICIT",
     "source": "The reduced model retains a biophysical description of multi-channel drug block, but only as far as necessary to predict the likelihood of early after-depolarizations.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the balance achieved in the methodological approach.",
+    "evidence": "This describes the balance achieved by the method.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C107",
-    "claim": "The reduced model does not reproduce the action potential itself.",
-    "claim_type": "EXPLICIT",
-    "source": "It does not reproduce the action potential itself.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a limitation of the reduced model.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C108",
+    "claim_id": "C76",
     "claim": "The benefits of this approach will accelerate the adoption of computational assays in safety pharmacology and ultimately reduce the burden of animal testing.",
     "claim_type": "EXPLICIT",
     "source": "We believe the benefits of this approach will accelerate the adoption of computational assays in safety pharmacology and ultimately reduce the burden of animal testing.",
@@ -1086,33 +779,34 @@
     ]
   },
   {
-    "claim_id": "C109",
-    "claim": "The dataset of drugs was drawn from multiple sources and diverse experimental conditions.",
+    "claim_id": "C77",
+    "claim": "The method was evaluated using a dataset of drugs that were drawn from multiple sources and diverse experimental conditions.",
     "claim_type": "EXPLICIT",
     "source": "The method was evaluated using a dataset of drugs that were drawn from multiple sources and diverse experimental conditions (Llopis-Lorente et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes a limitation of the validation dataset.",
+    "evidence": "This describes a limitation of the validation study.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C110",
+    "claim_id": "C78",
     "claim": "Drug potency measurements differ prominently between laboratories and recording platforms.",
     "claim_type": "EXPLICIT",
     "source": "It is known that such measurements differ prominently between laboratories and recording platforms (Kramer et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by a citation to Kramer et al., 2020.",
+    "evidence": "This is a known limitation in the field, supported by citation.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C112",
+    "claim_id": "C80",
     "claim": "The accuracy of the predictions is limited by the quality of the drug potency measurements.",
     "claim_type": "EXPLICIT",
     "source": "The accuracy of the predictions is therefore limited by the quality of the drug potency measurements.",
@@ -1125,7 +819,7 @@
     ]
   },
   {
-    "claim_id": "C113",
+    "claim_id": "C81",
     "claim": "The accuracy of the axis of arrhythmia is limited by the quality of the biophysical model from which it is derived.",
     "claim_type": "EXPLICIT",
     "source": "The accuracy of the axis of arrhythmia is likewise limited by the quality of the biophysical model from which it is derived.",
@@ -1138,7 +832,7 @@
     ]
   },
   {
-    "claim_id": "C114",
+    "claim_id": "C82",
     "claim": "The present study only investigated one particular variant of the ORd model paced at 1 Hz.",
     "claim_type": "EXPLICIT",
     "source": "The present study only investigated one particular variant of the ORd model (O'Hara et al., 2011; Krogh-Madsen et al., 2017) paced at 1 Hz.",
@@ -1151,46 +845,46 @@
     ]
   },
   {
-    "claim_id": "C115",
+    "claim_id": "C83",
     "claim": "Other models and pacing rates are likely to produce differing estimates of the axis.",
     "claim_type": "EXPLICIT",
     "source": "Other models and pacing rates are likely to produce differing estimates of the axis.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculative statement about potential variations in results.",
+    "evidence": "This is a speculative statement about potential variability in results.",
     "evidence_type": [
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C116",
+    "claim_id": "C84",
     "claim": "The model was paced at 1 Hz with a stimulus of \u201370 mV and duration of 0.5 ms.",
     "claim_type": "EXPLICIT",
     "source": "The model was paced at 1 Hz with a stimulus of \u201370 mV and duration of 0.5 ms.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the simulation parameters used in the study.",
+    "evidence": "This describes a methodological detail of the simulations.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C117",
+    "claim_id": "C85",
     "claim": "All simulations were equilibrated for at least 1000 beats prior to analysis.",
     "claim_type": "EXPLICIT",
     "source": "All simulations were equilibrated for at least 1000 beats prior to analysis.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the simulation methodology.",
+    "evidence": "This describes a methodological detail of the simulations.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C118",
+    "claim_id": "C86",
     "claim": "Cells were classified as ectopic if any of four successive beats contained an early after-depolarization defined by any secondary peak that rose above \u201350 mV and was separated from other peaks by at least 100 ms.",
     "claim_type": "EXPLICIT",
     "source": "Cells were classified as ectopic if any of those four beats contained an early after-depolarization \u2014 as defined by any secondary peak that rose above \u201350 mV and was separated from other peaks by at least 100 ms.",
@@ -1203,55 +897,85 @@
     ]
   },
   {
-    "claim_id": "C120",
-    "claim": "The parameter domain is large enough to cover the ectopic region, but not so large as to be unduly influenced by biological extremes.",
-    "claim_type": "EXPLICIT",
-    "source": "That domain is large enough to cover the ectopic region, but not so large as to be unduly influenced by biological extremes.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This explains the rationale for the parameter domain choice.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C121",
+    "claim_id": "C88",
     "claim": "The parameters span between 0.05 and 20 times their baseline value.",
     "claim_type": "EXPLICIT",
     "source": "The parameters span between 0.05 and 20 times their baseline value.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the range of parameter variation.",
+    "evidence": "This describes the range of parameter variation used.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C123",
-    "claim": "The spread of the log-normal distribution was based on experience with previous simulations.",
+    "claim_id": "C91",
+    "claim": "The clinical risk labels for the drugs were transcribed from Table 1 of Llopis-Lorente et al., 2020.",
     "claim_type": "EXPLICIT",
-    "source": "The spread was based on our experience with previous simulations (Sadrieh et al., 2013; Sadrieh et al., 2014; Ballouz et al., 2021; TeBay et al., 2022).",
+    "source": "The clinical risk labels for the drugs were transcribed from Table 1 of Llopis-Lorente et al., 2020.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by citations to previous work.",
+    "evidence": "This describes the source of the clinical risk labels used for validation.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C124",
-    "claim": "The ion channel species were assumed to vary independently.",
+    "claim_id": "C92",
+    "claim": "In the Credible Meds labeling scheme, Class 1 drugs carry a known torsadogenic risk.",
     "claim_type": "EXPLICIT",
-    "source": "The ion channel species were assumed to vary independently.",
+    "source": "In that labeling scheme, Class 1 drugs carry a known torsadogenic risk",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes a modeling assumption.",
+    "evidence": "This describes the clinical risk classification system used.",
     "evidence_type": [
-      "INFERENCE"
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "In the Credible Meds labeling scheme, Class 2 drugs carry a possible risk.",
+    "claim_type": "EXPLICIT",
+    "source": "Class 2 drugs carry a possible risk",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the clinical risk classification system used.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "In the Credible Meds labeling scheme, Class 3 drugs carry a risk but only in conjunction with other factors.",
+    "claim_type": "EXPLICIT",
+    "source": "Class 3 drugs carry a risk but only in conjunction with other factors",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the clinical risk classification system used.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "In the Credible Meds labeling scheme, Class 4 drugs have no evidence of risk at all.",
+    "claim_type": "EXPLICIT",
+    "source": "Class 4 drugs have no evidence of risk at all.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the clinical risk classification system used.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
     ]
   }
 ]

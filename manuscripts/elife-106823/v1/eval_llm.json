@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors developed a SHERLOCK4AAT toolbox comprising seven assays targeting different trypanosome species and groups. Target selection was based on conserved regions of the 18S rRNA, IFX, and GAPDH genes, with specificity confirmed through BLAST analysis and sequence alignment showing appropriate conservation within target species and divergence from non-target species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C31, and C70-C77 collectively demonstrate systematic target selection and validation. The in silico analyses (BLAST, sequence alignments) and specificity testing (Figure 1B-C) provide strong evidence for appropriate target design. The molecular basis for discrimination is well-documented with specific sequence identity percentages and accession numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C78"
+    ],
+    "result": "The SHERLOCK4AAT assays demonstrated high specificity, with each assay detecting only its intended target species without cross-reactivity to non-target trypanosomes, co-endemic parasites (P. falciparum), or host genetic material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C78 are supported by experimental data in Figures 1B-C and Figure 2\u2014figure supplement 1. The specificity testing included appropriate positive and negative controls across multiple related species, demonstrating no cross-reactivity. The experimental design is sound with adequate replication (N=3-9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The analytical sensitivity (limit of detection) varied across assays: pan-trypanosomatid (10-10\u00b3 parasites/ml), pan-Trypanozoon (10 parasites/ml), T. theileri (10 parasites/ml), T. congolense (10-10\u00b3 parasites/ml), T. vivax (10\u2074-10\u2075 parasites/ml), and T. simiae/T. suis (10-100 fM synthetic controls).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by serial dilution experiments shown in Figure 2A-B. The LoD determinations follow standard methodology with appropriate controls. However, the T. vivax assay shows notably lower sensitivity (C35, C91), and T. simiae/T. suis were tested only with synthetic controls due to lack of parasite material, which limits confidence in real-world performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C79",
+      "C80"
+    ],
+    "result": "Multiplexing two crRNAs in the pan-trypanosomatid assay increased median sensitivity from 66.1% to 74.7% while maintaining specificity above 80%, and improved concordance with pan-Trypanozoon results from 7.8% to 25.7% double positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C79-C80 are supported by Bayesian statistical analysis (Figure 3B) and experimental comparison (Figure 3C, Figure 3\u2014figure supplement 1). The Monte Carlo method using Gibbs sampling is appropriate for estimating test performance in the absence of a gold standard. The improvement in fold-change readouts at lower dilutions is experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Positivity thresholds were established for each assay using ROC curve analysis, ranging from 1.546 (T. simiae) to 11.70 (pan-Trypanozoon).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by ROC curve analysis shown in Figure 2\u2014figure supplement 2. The methodology using Youden's index to maximize classification accuracy is statistically sound. Thresholds were selected to achieve 100% specificity, which is appropriate for diagnostic applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C55"
+    ],
+    "result": "The analytical sensitivities of the pan-trypanosomatid, pan-Trypanozoon, T. theileri, and T. congolense SHERLOCK assays were comparable to existing PCR-based molecular tools (1-10 parasites/ml for genus/species-specific primers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C55 are supported by comparison of LoD data (C32-C34) with cited literature values. The comparison is appropriate and shows SHERLOCK performance is within the range of existing methods. However, the advantage of RNA detection (C90) for identifying active infections is stated but not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The T. vivax SHERLOCK assay targeting the single-copy IFX gene did not meet sensitivity requirements for molecular diagnosis of animal trypanosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by the LoD data (C35) showing 10\u2074-10\u2075 parasites/ml, which is 100-1000\u00d7 less sensitive than other assays and comparable to microscopy methods (C16). The authors appropriately acknowledge this limitation and suggest identifying alternative targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C39",
+      "C40"
+    ],
+    "result": "A total of 424 blood samples were collected from domestic pigs: 224 free-ranging pigs in C\u00f4te d'Ivoire and 200 farm pigs in Guinea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C39-C40 describe the sample collection methodology. The sample sizes are adequate for epidemiological surveillance, and the geographic locations are appropriate for studying HAT foci. The sampling strategy is clearly described in the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C42"
+    ],
+    "result": "High prevalence of trypanosome infections was detected: 74.6% [68.9, 80.3] in C\u00f4te d'Ivoire and 49.5% [42.6, 56.9] in Guinea tested positive in at least one SHERLOCK assay, with an overall 62.7% [58.1, 67.3] infection rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41-C42 are supported by screening data shown in Figures 4B and 5B with appropriate confidence intervals. The high prevalence is consistent with the endemic nature of the study areas. Statistical reporting is appropriate with 95% confidence intervals calculated using the Wilson/Brown method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51"
+    ],
+    "result": "Species-specific prevalence varied between sites: multiplex pan-trypanosomatid detected 41.1% in C\u00f4te d'Ivoire and 29.5% in Guinea; pan-Trypanozoon detected ~38-39% in both countries; T. congolense was found in 23.2% in C\u00f4te d'Ivoire but only 7.5% in Guinea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C50-C51 are supported by quantitative data with confidence intervals shown in Figures 4C and 5C. The geographic differences in T. congolense prevalence are notable and appropriately reported. The data are consistent with known epidemiology of these parasites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C61"
+    ],
+    "result": "T. b. gambiense was detected in one pig at each site, representing a low prevalence of 0.45 \u00b1 0.9% in C\u00f4te d'Ivoire and 0.50 \u00b1 1.0% in Guinea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49, C61 are supported by screening data (Figures 4B, 5B). The low prevalence is accurately calculated and reported with uncertainty estimates. However, the characterization of one positive sample in C\u00f4te d'Ivoire is concerning as it was negative in all other assays and parasitological tests (C81), raising questions about false positivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C96"
+    ],
+    "result": "No T. vivax or T. theileri infections were detected in pigs from either study site, confirming that pigs are not frequent carriers of these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53 and C96 report negative findings. While the absence of detection is clearly stated, this could reflect either true absence or the poor sensitivity of the T. vivax assay (C91, LoD 10\u2074-10\u2075 parasites/ml). The inference that pigs are not frequent carriers (C96) is supported by citation but the current data cannot distinguish between low prevalence and assay insensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Co-infections with Trypanozoon species and T. congolense were common, detected in 15.2% [10.5, 19.9] of samples in C\u00f4te d'Ivoire, including 11.0 \u00b1 4.1% triple-positive (pan-trypanosomatid, pan-Trypanozoon, T. congolense) and 4.1 \u00b1 2.6% double-positive (pan-Trypanozoon, T. congolense).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C83-C87 are supported by data shown in Figures 4D and 5D. The identification of co-infections demonstrates the value of the multi-assay approach. The inference that triple-positive results indicate co-infection with T. b. brucei and T. congolense (C85, C87) is reasonable given the assay specificities, though direct species confirmation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C43"
+    ],
+    "result": "SHERLOCK4AAT assays showed comparable or superior sensitivity to combined parasitological methods (median sensitivity 91.4% vs 84.3%) while maintaining specificity above 75%, based on comparison with buffy coat examination, mAECT, and mouse isolation in C\u00f4te d'Ivoire samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C43 are supported by Bayesian latent class modeling shown in Figure 4\u2014figure supplement 1. The statistical approach is appropriate for comparing tests without a gold standard. The higher detection rate by SHERLOCK (74.6%) versus parasitology (47.3%) is consistent with the sensitivity estimates. However, parasitological data were not available for Guinea samples, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C61",
+      "C62",
+      "C103"
+    ],
+    "result": "Domestic pigs do not likely represent a significant risk to gHAT elimination given the low T. b. gambiense prevalence (0.45-0.50%), short commercial lifespan (6-8 months), absence of new human cases, and low tsetse abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C61-C62, C103 make an important public health inference. While the low prevalence (C61) and short lifespan (C62) are factual, the conclusion relies on unpublished data about human cases and tsetse abundance (C103). The inference also doesn't account for potential transmission dynamics, the possibility of higher prevalence in other pig populations, or the role of other animal reservoirs. This conclusion requires more comprehensive epidemiological modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C97",
+      "C104"
+    ],
+    "result": "Pigs could serve as sentinels to monitor T. b. gambiense circulation using SHERLOCK4AAT due to their proximity to humans, attractiveness to tsetse flies, and demonstrated ability to carry human-infective trypanosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C97, C104 propose pigs as sentinel animals. While the detection of T. b. gambiense in pigs (C5, C49) demonstrates feasibility, and pig characteristics (proximity to humans, tsetse attractiveness) are cited (C104, C67), this remains speculative. The very low prevalence (0.45-0.50%) would require large sample sizes for effective surveillance. The proposal lacks cost-effectiveness analysis or comparison with alternative surveillance strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C93",
+      "C57"
+    ],
+    "result": "SHERLOCK4AAT assays can be run in 2.5 hours at \u20ac2.5 per test, are optimized for high-throughput fluorescence screening in standard lab conditions, and are intended for eco-epidemiological surveillance rather than field diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C93, C57 describe practical characteristics of the assays. The time and cost estimates are clearly stated, and the technical requirements (fluorescence reader, basic molecular biology training) are appropriate for the described application. The authors appropriately acknowledge that the current version is not suitable for point-of-care field diagnosis (C57), though they suggest future development in this direction (C102).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C60",
+      "C100"
+    ],
+    "result": "The SHERLOCK4AAT results from C\u00f4te d'Ivoire (37.9% Trypanozoon, 23.2% T. congolense) are consistent with previous PCR studies (57% Trypanozoon, 24% T. congolense), confirming the effectiveness of the toolbox for analyzing trypanosome distribution in hypo-endemic gHAT foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C60, C100 compare current results with prior studies. The T. congolense prevalence is remarkably consistent (23.2% vs 24%), while Trypanozoon detection is lower (37.9% vs 57%). This difference could reflect the different assay sensitivities or true epidemiological changes. The consistency for T. congolense and the species discrimination capability support the effectiveness claim, though the lower Trypanozoon detection warrants discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Uncharacterized trypanosome species may be circulating in these pig populations, detectable only by the broad multiplex pan-trypanosomatid assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is speculative, based on samples positive only in the multiplex pan-trypanosomatid assay (8.7% in C\u00f4te d'Ivoire, 9.5% in Guinea). While this hypothesis is plausible and supported by citation to similar findings in other hosts (Vot\u00fdpka et al., 2022), alternative explanations include differential assay sensitivities or detection of known species at low parasite loads. Sequencing of these samples would be needed to confirm novel species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The two T. b. gambiense-positive samples showed different patterns: the C\u00f4te d'Ivoire sample was negative in all other assays and parasitological tests, while the Guinea sample was positive in multiplex pan-trypanosomatid, CATT, and mAECT but negative in pan-Trypanozoon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe discordant results that raise important questions about assay performance and interpretation. The C\u00f4te d'Ivoire sample's isolation as TgsGP-positive only (C81) is concerning and could represent a false positive, low-level infection, or assay-specific detection. The Guinea sample's pattern (C82) is more consistent with true infection. These discordances highlight the need for confirmatory testing and careful interpretation of single-assay positives.",
+    "result_type": "MINOR"
+  }
+]

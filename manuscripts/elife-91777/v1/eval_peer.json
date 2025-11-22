@@ -1,0 +1,142 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C20",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors successfully engineered the mammalian Musashi-1 (MSI-1) RNA-binding protein as an orthogonal post-transcriptional control system in E. coli, demonstrating that MSI-1* functions as a translation repressor with 2.5-fold downregulation of sfGFP expression. This establishes that eukaryotic RRM-containing regulators can be functionally transferred to prokaryotes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly affirm this core finding. The editor states the study 'demonstrates the use of the mammalian Musashi-1 (MSI-1) RNA-binding protein as a tool for regulating gene expression in Escherichia coli' and provides 'convincing evidence that MSI-1 functions as an effective repressor of translation.' The anonymous reviewer similarly confirms the authors 'convincingly show that MSI-1 can be directed to control translation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors demonstrate that MSI-1 can be allosterically controlled by oleic acid, with complete disruption of MSI-1*\u2013RNA interaction at 1 mM oleic acid in vitro and restoration of sfGFP expression in vivo (from 10% to 49% ON cells in the original system, and from ~0% to 71% in redesign-3).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly support this finding. The editor states the authors provide 'convincing evidence...that MSI-1 can be allosterically controlled by oleic acid.' The anonymous reviewer confirms 'translational control by MSI-1 can be modulated allosterically by oleic acid.' No concerns are raised about this aspect of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors characterized the molecular mechanism through in vitro binding kinetics (switchSENSE) and in vivo functionality of RNA mutants, finding that MSI-1h* binds the original RNA motif with an association rate of 1.1 nM\u207b\u00b9 min\u207b\u00b9, residence time of 1.5 min, and KD of 0.62 nM. The fold change correlated with 1/KD (R\u00b2 = 0.75), indicating near-equilibrium protein\u2013RNA interaction, and two copies of the consensus sequence are necessary for regulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not directly challenge the binding kinetics data, the anonymous reviewer raises a methodological concern: 'A minor weakness of the paper is that the authors used their initial, weakly regulated construct to assess the effect of MSI-1 binding site mutations and for their mathematical modeling; these experiments would be better suited to the more strongly regulated construct.' This suggests the mechanistic characterization may be incomplete or suboptimal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C46"
+    ],
+    "result": "The authors developed a bottom-up mathematical model that recapitulates the dynamic response of the system, predicting transient responses for different lactose concentrations with excellent agreement (R\u00b2 = 0.98).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer specifically critiques the modeling approach, noting that 'the authors used their initial, weakly regulated construct...for their mathematical modeling; these experiments would be better suited to the more strongly regulated construct.' This indicates the model may be based on suboptimal data, though the reviewers do not reject the modeling approach entirely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Through rational redesign, the authors improved the system to achieve 8.6-fold downregulation (redesign-3) with a Hill coefficient of 4.5, indicating apparent cooperativity between two MSI-1* proteins binding to adjacent sites. Single-cell analysis showed 91% ON cells in the uninduced state decreasing to 5.3% with 1 mM lactose.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly acknowledges this improvement: 'The authors initial construct design led to only weak regulation by MSI-1, presumably because the MSI-1 binding sites were not suitably positioned to repress translation initiation. A more rationally designed construct led to considerably greater repression.' This demonstrates reviewer acceptance of the redesigned system's enhanced performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors applied the MSI-1* post-transcriptional mechanism to specifically regulate a single gene (sfGFP) within a bicistronic operon and implement combinatorial regulation with lactose and aTC, demonstrating that MSI-1* does not operate transcriptionally through spurious DNA targeting.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly highlights this as an advantage: 'This is a potentially useful tool for synthetic biologists, with the advantage over transcriptional regulation that one gene in an operon could be targeted.' The reviewers raise no concerns about this application, indicating acceptance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C63"
+    ],
+    "result": "The authors demonstrate that MSI-1* reduces protein expression noise, with Fano factor reductions of 35% and 65% depending on the implementation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer raises concerns about the noise reduction findings. The editor's statement that this work 'establishes MSI-1 as a potential tool for synthetic biology applications' implicitly accepts the noise buffering capability as part of the system's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The authors demonstrate through Crick space analysis and RT-qPCR that the change in sfGFP expression with lactose comes from translation regulation rather than transcriptional effects, with the percentage of ON cells dropping from 87% to 15% upon addition of 1 mM lactose.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly confirm the translational mechanism. The editor states the authors provide 'convincing evidence that MSI-1 functions as an effective repressor of translation,' and the anonymous reviewer confirms the authors 'convincingly show that MSI-1 can be directed to control translation.' No concerns are raised about the mechanistic assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The authors conclude that the fast protein\u2013RNA association phase makes RRM-containing proteins versatile enough to function as specific post-transcriptional regulators in any living cell, from prokaryotes to eukaryotes, even in contexts where RNA molecules are short-lived.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor's summary that 'This work establishes MSI-1 as a potential tool for synthetic biology applications' and the anonymous reviewer's statement that 'The authors' MSI-1-regulated reporter constructs could also be useful for mechanistic studies of MSI-1' both implicitly support the broader conclusion about RRM protein versatility across domains of life.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C9"
+    ],
+    "result": "The authors applied their improved pyoverdine biosynthesis annotation pipeline to 9599 Pseudomonas genomes (94% draft), finding pyoverdine biosynthesis machinery in 97% of genomes. After quality filtering to remove truncated assemblies (63.4% of genomes), 1928 strains were retained, comprising 1664 producers and 264 non-producers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the pipeline's ability to analyze large-scale genomic datasets. Reviewer 3 explicitly states the authors 'applied their dataset to thousands of Pseudomonas strains, producing the first comprehensive overview,' and Reviewer 1 notes this is 'based on a dataset from nearly 2000 Pseudomonas genomes.' No concerns are raised about these genome-level statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11"
+    ],
+    "result": "The pipeline identified pyoverdine synthetic clusters ranging from 7690 to 21,333 amino acids in length, with 6-17 A domains per synthetase, totaling 35,281 A domains across all strains. A reference dataset of 101 A domains from 13 known pyoverdines with experimentally confirmed substrates was established for training.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly praises 'their high accuracy came from a relatively small training dataset of A domains from 13 pyoverdine BGCs,' directly affirming the reference dataset composition. The structural diversity metrics are not questioned by any reviewer, indicating implicit acceptance of these descriptive statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors developed a phylogeny-focused substrate prediction method identifying that information-rich positions for substrate prediction are located in motifs A4-A5 (Amotif4-5), not the full A domain sequence. Using Jukes-Cantor distance and Ward linkage clustering on this feature sequence performed best for substrate discrimination and could correct misclassified entries in the MIBiG database.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'The A domain substrate prediction is impressive, including the correction of entries in the MIBiG database,' directly affirming this methodological advance. Reviewer 2 notes the method 'aims to address the challenging task of predicting structures based on dispersed gene clusters,' acknowledging the innovation without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Experimental validation using 20 sequenced Pseudomonas strains showed 94.4% accuracy (151/160 amino acids correctly assigned), substantially outperforming antiSMASH 7.0 (58.8% accuracy). The method had specific limitations: 1.9% confusion between lysine/ornithine, 2.5% unknown substrates (including novel citrulline), and only 0.8% true mismatches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'To validate their predictions, they elucidated structures of several new pyoverdines, and their predictions performed well,' directly affirming the experimental validation. The comparison to antiSMASH is noted by Reviewer 3 as 'a clear improvement over existing tools for pyoverdine BGC annotation.' The acknowledged limitations are not criticized, suggesting acceptance of the method's performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The pipeline achieved 83% prediction accuracy for Burkholderiales NRPS metabolites (test set: 178 A domains; training set: 124 A domains), outperforming antiSMASH 7.0's 67% accuracy, demonstrating extensibility beyond Pseudomonas.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'The authors tested their workflow on Burkholderiales A domains and had good results, suggesting it can be used on other taxa,' directly affirming the extensibility claim. Reviewer 2 notes the method is 'highly useful for specific NRPS families such as the pyoverdines,' which implicitly acknowledges successful application to related systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C37",
+      "C62"
+    ],
+    "result": "Applying the pipeline to all producer strains, 97.75% of A domain substrates (17,880/18,292) were predicted unambiguously, yielding 188 different pyoverdine structures, of which only 37 were previously reported. This represents 151 novel pyoverdine candidate variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the study presents 'convincing evidence' and has 'broad theoretical and practical implications.' Reviewer 3 notes the authors 'produced the first comprehensive overview of pyoverdines and their receptors and predicting many new structural variants,' directly affirming the discovery of novel structures. The high prediction rate is not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Analysis revealed that the fluorophore is highly conserved, 13 amino acids form the main structural substrates, and pyoverdine structural diversity is not strongly linked to phylogeny. The same structure can occur in unrelated species while closely related species often have different structures, suggesting frequent recombination and horizontal gene transfer.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 describes the work as producing 'the first comprehensive overview of pyoverdines,' which encompasses these diversity patterns. The evolutionary interpretations about horizontal gene transfer are not challenged by any reviewer, suggesting acceptance of these inferences from the phylogenetic distribution data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed a feature sequence-based method for FpvA receptor identification, finding that full-sequence approaches fail due to substantial divergence between FpvA variants. Four informative regions near the Plug domain (involved in pyoverdine selectivity) were identified, and the feature sequence characterized 98% of the distance matrix compared to whole sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'Predicting outer membrane receptor specificity is likewise a challenging problem and the authors have made a promising achievement by finding specific gene regions that differentiate the pyoverdine receptor FpvA from FpvB and other receptor families,' directly affirming this methodological advance. The feature sequence approach is not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C63"
+    ],
+    "result": "The analysis identified 4547 FpvAs, 615 FpvBs, and 9139 other receptors. FpvA sequences clustered into 114 groups (60% identity threshold) or 94 groups (70% identity threshold), with 2254 FpvAs dissimilar to references potentially representing novel subtypes. 92% of FpvAs were located within 20 kb of pyoverdine genes. This represents 91 new receptor groups compared to only 3 previously reported.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes 'the authors have made a promising achievement' in receptor prediction and that 'the finding that only predicted FpvA receptors were proximate to the biosynthesis genes lends credence to the predictive power of the workflow.' The discovery of extensive receptor diversity is affirmed as the authors 'unveiled a substantial number of previously unrecognized pyoverdine receptors.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "FpvA diversity varied substantially across phylogenetic clades: P. aeruginosa and P. syringae clades had lower diversity (1.55 and 1.60) compared to P. putida and P. fluorescens clades (4.82 and 3.77).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is part of the comprehensive receptor diversity analysis that Reviewer 3 describes as producing 'the first comprehensive overview.' The specific diversity metrics are not questioned, indicating acceptance of these comparative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Extended search across >30,000 complete bacterial genomes identified 31,936 FpvA-like receptors dispersed across 12,944 strains spanning 13 phyla, 22 classes, 54 orders, 139 families, 468 genera, and 2598 species, suggesting FpvA receptors may be widely distributed throughout the bacterial kingdom.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 explicitly notes 'The authors find predicted pyoverdine receptors across an impressive 468 genera, an exciting finding' but immediately cautions 'However, whether or not these receptors can actually recognize pyoverdines (and if so, which structures!) remains to be investigated.' This indicates the broad distribution finding is acknowledged but its functional interpretation requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C64",
+      "C94",
+      "C107",
+      "C108",
+      "C114"
+    ],
+    "result": "The overall pipeline combining feature sequence with phylogenetic approaches predicted 188 chemically different pyoverdines with nearly 100% structural accuracy and 94 distinct receptor groups. This knowledge-guided learning approach outperforms existing tools like antiSMASH and is extendable to other metabolites and microbial genera.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states this is an 'important study' with 'convincing evidence' that 'emerges as powerful tool.' Reviewer 2 calls it 'a useful bioinformatic pipeline' that is 'highly useful for specific NRPS families.' Reviewer 3 describes the algorithm as 'sound and a clear improvement over existing tools.' The generalizability claim is supported by the successful Burkholderiales validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A major advantage of the pipeline is applicability to draft genomes, addressing a key limitation of existing tools like antiSMASH. However, 63.4% of genomes were still lost due to truncated biosynthesis machinery at contig edges, attributed to sequence quality limitations rather than pipeline limitations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges 'Predicting structures based on gene clusters is still challenging, especially pyoverdines as the gene clusters are often spread to different locations in the genome' and notes 'The revised manuscript has much improved in clarity and reproducibility.' The loss of draft genomes is acknowledged but attributed to data quality, not method failure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "A key insight is that full gene sequence comparisons are non-informative for functional prediction because overall diversity does not reflect functional diversity. Instead, extracting informative feature sequences whose diversity is tightly linked to function is imperative for both synthetases and receptors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly affirms this insight by stating the authors 'made a promising achievement by finding specific gene regions that differentiate the pyoverdine receptor FpvA from FpvB and other receptor families.' The feature sequence concept is central to the method's success and is not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "The high accuracy is attributed to the reference set capturing most substrate diversity despite containing only 13 pyoverdines. 'Unknown' predictions indicate uncharacterized A domains not in the reference dataset, which can be iteratively added to enhance precision through a progressive feedback loop.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'The authors acknowledge that this small dataset does not include all substrates, and correctly point out that new sequence/structure pairs can be added to the training set to refine the prediction algorithm,' directly affirming the iterative improvement strategy and the adequacy of the initial reference set.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C76",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "While P. aeruginosa strains have only 3 pyoverdine-receptor types as previously known, 91 new FpvA groups were discovered among environmental Pseudomonas. Certain receptor groups are widely distributed, enabling pyoverdine sharing among strains with matching receptors or competitive exclusion of strains with non-matching receptors. This functional diversity likely reflects evolutionary consequences of microbial competition for iron.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes the method 'revealed that certain receptor groups are widely distributed among Pseudomonas strains' and that the dataset 'could be used by a variety of researchers, including those studying natural product evolution, public good eco/evo dynamics.' The ecological and evolutionary interpretations are not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The current algorithm does not predict tailoring reactions, which are crucial for final NRPS product structure prediction. However, for pyoverdines specifically, backbone composition mainly determines specificity with tailoring reactions playing a relatively minor role.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 acknowledges 'The workflow unfortunately cannot differentiate between different variants of Asp and OHOrn,' recognizing specific limitations without challenging the overall validity. The limitation regarding tailoring reactions is presented as a general field challenge, not a specific criticism of this work.",
+    "result_type": "MINOR"
+  }
+]

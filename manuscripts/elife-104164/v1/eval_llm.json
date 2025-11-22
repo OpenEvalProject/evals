@@ -6,71 +6,69 @@
       "C30",
       "C31",
       "C32",
+      "C33",
       "C34",
       "C35",
-      "C36",
-      "C37",
-      "C38"
+      "C36"
     ],
-    "result": "New CRISPR-generated hamPR\u0394 alleles specifically disrupt PR-domain containing isoforms of Ham. The sgRNA targets the third exon shared by long isoforms B, D, and G, producing frameshift mutations validated by Sanger sequencing and western blot showing loss of the largest Ham protein band.",
+    "result": "New frameshift alleles of ham (hamPR\u0394) were generated using CRISPR/Cas9 targeting the third exon shared by the three long PR-domain containing isoforms (B, D, and G). The alleles were validated by Sanger sequencing and western blot, confirming specific disruption of the longest isoforms while preserving shorter isoforms.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C38 provide convergent evidence from molecular design (sgRNA targeting), sequencing validation, and protein-level confirmation via western blot. The western blot clearly shows loss of the largest band in hamPR\u0394 samples while preserving smaller bands, consistent with selective disruption of PR-containing isoforms.",
+    "evaluation": "Claims C29-C36 provide comprehensive evidence for the generation and validation of hamPR\u0394 alleles. The CRISPR design is clearly described (C29-C31), nomenclature is established (C32), and validation is demonstrated through both sequencing (C34) and protein analysis (C35-C36). The western blot data in Figure 1\u2014figure supplement 1C directly confirms loss of the largest Ham protein band in homozygous mutants.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
+      "C37",
+      "C38",
       "C39",
-      "C40",
-      "C41",
-      "C43",
-      "C44"
+      "C42",
+      "C43"
     ],
-    "result": "hamPR\u0394 mutants are viable and display normal sensory organs, unlike null alleles ham1 and hamSK1. About two-thirds of hamPR\u0394/Df animals survive to adulthood without gross defects, and sensory bristles appear normal, indicating PR-containing isoforms are dispensable for viability and sensory organ development.",
+    "result": "The hamPR\u0394 allele represents a hypomorphic condition where about two-thirds of hamPR\u0394/Df mutants are viable with normal sensory bristles, contrasting with the lethality of ham1/Df and hamSK1/Df animals. This demonstrates that PR-containing isoforms are dispensable for viability and sensory organ development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C39-C44 demonstrate a clear phenotypic distinction between hamPR\u0394 and null alleles. The viability data (Figure 1\u2014figure supplement 1D) and sensory organ analysis (Figure 1\u2014figure supplement 1E) provide direct evidence. This establishes hamPR\u0394 as a hypomorphic allele with tissue-specific requirements.",
+    "evaluation": "Claims C37-C39 and C42-C43 are well-supported by data in Figure 1\u2014figure supplement 1D-E showing differential viability and sensory organ phenotypes across alleles. The observation that hamPR\u0394 mutants survive and have normal sensory organs while null alleles are lethal with sensory defects provides strong evidence for the hypomorphic nature of hamPR\u0394 and the dispensability of PR-containing isoforms for these functions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C2",
-      "C3",
+      "C44",
       "C45",
       "C46",
       "C47",
       "C48",
       "C49",
-      "C50",
-      "C51",
-      "C52"
+      "C50"
     ],
-    "result": "Loss of ham causes sterility and reproductive system defects in both males and females. hamPR\u0394 mutants show abnormal testis, seminal vesicle, and accessory gland morphology in males, and egg retention in females. These defects are rescued by a pBAC transgene, confirming that PR-containing isoforms are essential for reproductive system formation.",
+    "result": "hamPR\u0394 mutant animals show abnormal reproductive system morphology and impaired fertility in both sexes, with mature eggs stuck in mutant female ovaries. A pBAC transgene carrying the ham genomic region with sfGFP rescues viability and at least partly restores male fertility, confirming that formation of the reproductive system depends on PR-containing isoforms.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2-C52 are well-supported by morphological data (Figures 1B, 1C, Figure 1\u2014figure supplement 2A-B) and genetic rescue experiments. The fertility quantification shows statistical significance, and the pBAC rescue confirms causality. The conclusion that PR-containing isoforms are specifically required for reproductive system development is justified.",
+    "evaluation": "Claims C44-C50 are strongly supported by data in Figure 1B-C and Figure 1\u2014figure supplement 2A-B. The reproductive system defects are clearly documented, and the genetic rescue experiment (C47-C48) provides critical evidence that the phenotypes are specifically caused by ham mutation. The inference that RS formation depends on PR-containing isoforms (C50) is well-justified given the contrast with normal sensory organ development in the same mutants.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C53",
+      "C51",
+      "C52",
+      "C55",
       "C56",
       "C58",
       "C59",
       "C60",
       "C61"
     ],
-    "result": "Ham is expressed in epithelial cells at the connection sites between gonadal and genital disc-derived tissues in both males and females. During larval and pupal stages, Ham_V5 is detected in testis terminal epithelial cells, seminal vesicle, and accessory gland, but not in myoblasts/myotubes.",
+    "result": "Ham is expressed in epithelial cells at the connection sites between gonadal and genital disc-derived tissues in both males and females. In larvae, Ham_V5 is detected in testis terminal epithelial cells and btl-Gal4-expressing mesenchymal cells in the genital disc. At the pupal stage, high Ham levels persist in testis terminal epithelial cells, seminal vesicle, and accessory gland, but are barely detectable in myoblasts/myotubes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53-C61 are supported by immunostaining data across multiple developmental stages (Figures 1D, 1F, 1H-J, Figure 1\u2014figure supplement 2C). The spatial expression pattern is consistent and clearly documented. The conclusion that Ham is an intrinsic epithelial factor at fusion sites is well-justified.",
+    "evaluation": "Claims C51-C61 are well-supported by immunofluorescence data in Figures 1D, F, H-J, and Figure 1\u2014figure supplement 2C. The spatial and temporal expression patterns are clearly documented across developmental stages and in both sexes. The tissue-specific expression (high in epithelia, low in myoblasts) is particularly well-demonstrated in Figure 1J with the mef2-Gal4 reporter.",
     "result_type": "MAJOR"
   },
   {
@@ -84,72 +82,69 @@
       "C67",
       "C68",
       "C69",
-      "C70",
-      "C71"
+      "C70"
     ],
-    "result": "ham mutants display failed epithelial fusion between testis and seminal vesicle. At 40-50h APF, mutant tissues show improper elongation, disconnected epithelial tubes, and failed myotube migration. The severity correlates with ham gene dosage, and defects are fully rescued by pBAC_ham_sfGFP, confirming Ham is required for testis-seminal vesicle fusion.",
+    "result": "At 40-50 hr APF, ham mutant testis and seminal vesicle tubes fail to properly elongate and appear shorter and wider than wild-type. The mutant reproductive system fails to form a continuous tube between testis and seminal vesicle, with tissues either separated or contacted but with disconnected epithelial tubes. The pBAC_ham_sfGFP transgene fully rescues this phenotype, confirming Ham is required for testis and seminal vesicle fusion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C62-C71 are strongly supported by morphological analysis (Figure 2A-B) showing consistent fusion defects across multiple alleles, with quantified penetrance. The genetic rescue (C69) confirms causality. The observation of heterotypic epithelial properties (differential E-Cad and Cor expression) adds mechanistic insight.",
+    "evaluation": "Claims C62-C70 are strongly supported by morphological data in Figure 2A-B and Figure 2\u2014figure supplement 1A. The dose-dependent severity of phenotypes across different alleles (C66) and the complete rescue by the transgene (C68) provide compelling evidence for Ham's role in epithelial fusion. The observation that TE and SV have distinct properties (C69) is supported by differential marker expression patterns.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
+      "C71",
       "C72",
       "C73",
       "C74",
       "C75",
       "C76",
-      "C77",
-      "C78"
+      "C77"
     ],
-    "result": "Ham regulates specification and/or survival of male-specific somatic gonadal precursors (msSGPs) in embryos. ham mutants show dramatic reduction in msSGPs labeled by Abd-B or Sox100B-GFP at embryonic stages S13 and S15, leading to loss of testis terminal epithelial cells in larval and pupal stages.",
+    "result": "Most testis epithelial cells are missing in ham mutant animals at both larval and pupal stages. Ham is expressed in male-specific somatic gonadal precursors (msSGPs) in the embryonic gonad, and the number of msSGPs labeled by Abd-B or Sox100B-GFP is dramatically reduced in ham mutant embryos. This indicates Ham is a master regulator for specification and/or survival of msSGPs, and their absence accounts for loss of testis terminal epithelial cells in later stages.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C78 trace the developmental defect from embryonic precursors to differentiated cells. The immunostaining data (Figure 2\u2014figure supplement 2C-G) shows quantifiable reduction in msSGPs, and the developmental lineage connection is well-established in the literature. The conclusion that Ham is a master regulator of msSGPs is justified.",
+    "evaluation": "Claims C71-C77 are well-supported by data in Figure 2B, Figure 2\u2014figure supplement 1A, and Figure 2\u2014figure supplement 2A-G. The developmental lineage from msSGPs to TE terminal epithelial cells is established in the literature (C53), and the data clearly show both Ham expression in msSGPs (C74) and their dramatic reduction in mutants (C75). The inference that Ham regulates msSGP specification/survival (C76) and that this accounts for later TE defects (C77) is logically sound.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
+      "C79",
       "C80",
       "C81",
-      "C82",
-      "C83",
-      "C84"
+      "C82"
     ],
-    "result": "Ham regulates epithelial cell differentiation in both seminal vesicle and testis. In ham mutants, E-Cad and Crumbs intensity is significantly reduced in seminal vesicle epithelial cells, coinciding with shortened septate junctions. Mosaic analysis shows reduced E-Cad at borders between ham mutant cells in testis terminal epithelium.",
+    "result": "The signal intensity of E-Cad and Crumbs are significantly reduced in ham mutant seminal vesicle epithelial cells, coinciding with shortened septate junctions labeled by Cor. In testis terminal epithelium, E-Cad levels at borders between ham mutant cells are significantly lower than between wild-type cells. These findings indicate Ham regulates epithelial cell differentiation in both seminal vesicle and testis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C84 are supported by quantified immunostaining data (Figure 2C-F) with statistical analysis. The mosaic clone experiment (C83-C84) provides cell-autonomous evidence. The conclusion that Ham regulates epithelial differentiation is well-supported by multiple markers and tissue types.",
+    "evaluation": "Claims C79-C82 are strongly supported by quantitative immunofluorescence data in Figure 2C-F. The significant reductions in epithelial markers (E-Cad, Crumbs, Cor) are clearly demonstrated with statistical analysis. The mosaic clone experiment (C81, Figure 2F) provides particularly strong evidence by directly comparing mutant and wild-type cells within the same tissue, controlling for environmental factors.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C91",
       "C92",
       "C93",
       "C94",
       "C95",
       "C96",
-      "C97"
+      "C97",
+      "C98"
     ],
-    "result": "Tissue-specific RNAi knockdown reveals Ham controls both early and late steps of epithelial fusion. Strong knockdown (with UAS-dcr2) phenocopies null alleles with loss of testis epithelial cells, while mild knockdown preserves epithelial cells but still causes fusion failure, indicating Ham also controls late fusion steps. E-Cad expression in testis is particularly sensitive to Ham levels.",
+    "result": "hamRSGAL4 driving ham RNAi with UAS-dcr2 nearly abolishes Ham expression and produces severe phenotypes similar to null alleles. Without UAS-dcr2, ham RNAi reduces Ham expression but preserves testis epithelial cells and normal-appearing seminal vesicle, yet testis and seminal vesicle epithelia still fail to fuse. E-Cad staining intensity is significantly reduced in ham RNAi testis but not seminal vesicle, suggesting Ham controls the late step of fusion and that E-Cad expression in testis is sensitive to even mild reduction of Ham protein levels.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C97 use a clever experimental design with graded knockdown to dissect temporal requirements. The morphological data (Figure 2G-J) clearly shows dose-dependent phenotypes, and the E-Cad quantification demonstrates tissue-specific sensitivity. This establishes Ham functions at multiple developmental stages.",
+    "evaluation": "Claims C92-C98 are well-supported by data in Figure 2G-J. The dose-dependent effects of RNAi knockdown (with vs. without dcr2) provide elegant evidence for Ham's role at different stages of RS development. The observation that fusion fails even when TE epithelial cells are present (C95) is particularly important for establishing Ham's role in the late fusion step (C96). The differential sensitivity of E-Cad in TE vs. SV (C97-C98) is clearly demonstrated with quantification.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C98",
       "C99",
       "C100",
       "C101",
@@ -158,112 +153,133 @@
       "C104",
       "C105",
       "C106",
-      "C107"
+      "C107",
+      "C108",
+      "C109"
     ],
-    "result": "RNA-seq and CUT&TAG identify Ham target genes in testis and genital disc. Over 2000 genes are dysregulated in each tissue. In genital disc, 17.3% of upregulated and 23.9% of downregulated genes contain Ham binding peaks. In testis, lower percentages (4.7% and 7%) suggest indirect regulation. Both up- and downregulated genes show Ham binding, indicating dual regulatory function.",
+    "result": "RNA-seq from dissected testis and seminal vesicle tissues at 18-25 hr APF identified more than 2000 up- and downregulated genes in both genital disc and testis of ham mutants. CUT&TAG assays identified 3433 and 691 Ham genomic binding peaks. Among dysregulated genes in the genital disc, 17.3% of upregulated and 23.9% of downregulated genes contained Ham CUT&TAG peaks. In testis, only 4.7% of upregulated and 7% of downregulated genes contained Ham peaks, suggesting dysregulated genes in testis are mainly indirectly controlled by Ham. Both up- and downregulated genes contain Ham binding peaks, indicating Ham can repress and activate gene expression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C98-C107 are supported by genome-wide data (Figure 3B-F) with appropriate controls and peak calling stringency. The integration of RNA-seq and CUT&TAG is methodologically sound. The conclusion that Ham can both activate and repress genes is justified by the data, though the mechanism of activation vs repression is not fully elucidated.",
+    "evaluation": "Claims C99-C109 are strongly supported by comprehensive genomic data in Figure 3. The RNA-seq experimental design is appropriate (C99), and the numbers of dysregulated genes are clearly documented (C100-C101). The CUT&TAG methodology is well-established (C102), and the integration of RNA-seq and CUT&TAG data (C104-C107) provides robust evidence for direct vs. indirect regulation. The inference that Ham has dual function in gene activation and repression (C109) is well-supported by the presence of binding peaks in both up- and downregulated gene sets.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C108",
-      "C109",
       "C110",
       "C111",
       "C112",
-      "C113"
+      "C113",
+      "C114",
+      "C115",
+      "C116"
     ],
-    "result": "STRING network analysis reveals Ham activates genes for epithelial differentiation and remodeling (cytoskeleton regulators, metabolic factors, cell adhesion, ECM proteins) while repressing genes for early development (patterning factors, cell cycle genes, transcriptional/translational regulators). Epithelial fusion requires complex metabolic balance.",
+    "result": "STRING MSL clustering analysis of Ham-bound dysregulated genes generated 114 functional clusters from downregulated genes and 62 from upregulated genes. Downregulated genes cluster into groups including cytoskeleton regulators, metabolic factors, cell adhesion, and extracellular matrix proteins, suggesting Ham activates genes to promote epithelial differentiation and remodeling. Upregulated genes are enriched for patterning factors, cell cycle genes, and transcriptional/translational regulators, suggesting Ham suppresses early developmental processes. Metabolic factors are enriched in both categories but belong to distinct functional groups, indicating epithelial fusion requires complex and balanced metabolic processes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C108-C113 are supported by systematic functional clustering analysis (Figure 4A, Supplementary file 1). The categorization into 114 and 62 functional clusters provides comprehensive coverage. The biological interpretation is reasonable, though the metabolic complexity claim (C113) is somewhat speculative based on enrichment in both categories.",
+    "evaluation": "Claims C110-C116 are well-supported by the STRING network analysis in Figure 4A and Supplementary file 1. The functional clustering is clearly documented (C110), and the biological interpretations (C111-C113, C115) are reasonable based on the gene categories identified. The observation that metabolic genes are both up- and downregulated but in different functional groups (C114) is particularly insightful and well-supported by the data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C114",
-      "C115",
-      "C116",
-      "C117"
+      "C117",
+      "C118",
+      "C119",
+      "C120"
     ],
-    "result": "Luciferase reporter assays demonstrate Ham can directly activate target gene expression. Full-length Ham, PR truncation, and NZF_VP16 fusion all activated reporters driven by seven of eight Ham-bound enhancers, while CZF_VP16 showed little activity. This indicates the NZF domain recruits Ham to enhancers.",
+    "result": "Luciferase reporter assays show that full-length Ham, PR truncation, and NZF_VP16 fusion all activated expression of reporters driven by seven out of eight Ham-bound elements, while CZF_VP16 had little activity. This confirms Ham can directly activate target gene expression and that the NZF domain directly or indirectly recruits Ham to enhancers.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C114-C117 are supported by systematic luciferase assays (Figure 4D-G) testing multiple Ham variants on multiple enhancers. The experimental design with VP16 fusions is appropriate for testing DNA-binding domains. Statistical significance is shown. The conclusion about NZF domain function is well-justified.",
+    "evaluation": "Claims C117-C120 are strongly supported by the luciferase reporter data in Figure 4D-G and Figure 3\u2014figure supplement 1C-D. The experimental design appropriately tests different Ham domains fused to VP16 activation domain, and the results clearly demonstrate that the NZF domain is necessary and sufficient for enhancer recruitment (C120). The conclusion that Ham can directly activate gene expression (C119) is well-supported, though the mechanism (direct vs. indirect recruitment) remains to be fully determined.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C118",
-      "C119",
-      "C120",
       "C121",
       "C122",
-      "C123",
-      "C124",
-      "C125"
+      "C123"
     ],
-    "result": "RNAi screen identifies 26 genes required for male fertility, including four causing complete sterility (shg, AP2-alpha, pebble, CG11406). shg knockdown causes aberrant mobilization of testis epithelial cells but not seminal vesicle cells, suggesting distinct E-Cad dependence and indicating testis epithelial cells become motile when E-Cad is reduced.",
+    "result": "De novo motif discovery from Ham CUT&TAG peaks identified nine and five significantly enriched motifs from up- and downregulated gene loci, respectively. The motifs for MAD, ZNF263, and two unknown factors were only enriched in upregulated genes, implying Ham may switch activation to repression activity when interacting with these co-factors in the context of reproductive system development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C118-C125 are supported by systematic RNAi screening (Figure 5, Supplementary file 2) with fertility quantification and morphological validation. The shg knockdown phenotype (C123) is particularly striking and well-documented (Figure 5C). The interpretation of differential E-Cad dependence is reasonable.",
-    "result_type": "MAJOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 are supported by the motif analysis in Figure 3\u2014figure supplement 1E. However, the inference that Ham switches from activation to repression when interacting with MAD and ZNF263 (C123) is speculative. While the differential motif enrichment is interesting, additional experiments (e.g., testing whether MAD/ZNF263 binding converts Ham to a repressor) would be needed to support this mechanistic claim. The claim is marked as speculation in the evidence type, which is appropriate.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
+      "C124",
+      "C125",
       "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C131",
-      "C132",
-      "C133",
-      "C134",
-      "C135",
-      "C136",
-      "C137",
-      "C138",
-      "C139",
-      "C140",
-      "C141",
-      "C142"
+      "C127"
     ],
-    "result": "SCRINSHOT multiplexed in situ hybridization maps spatial-temporal expression of 30 candidate genes. 17 genes are expressed in both testis terminal and seminal vesicle epithelial ends, while 8 are exclusive to seminal vesicle. Several genes show temporal dynamics: spz5 and CG11406 are present before fusion (20-25h APF) but absent during fusion (28-32h APF), while AP-2alpha, GstE11, Tl, and spz6 show opposite pattern. wnt2 and spz are enriched in leading cells.",
+    "result": "An RNAi screen identified 26 genes whose knockdown abolished or reduced male fertility. Knocking down shg, AP2-alpha, pebble, and CG11406 resulted in complete sterility, indicating their importance for male fertility. Knockdown of these genes led to failed testis and seminal vesicle fusion and abnormal morphology at the pupal stage.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C126-C142 are supported by comprehensive SCRINSHOT data (Figure 6, Figure 6\u2014figure supplements 2-5) showing clear spatial and temporal patterns. The method is appropriate for single-molecule resolution. The heterotypic nature of the two epithelial ends is well-documented. The temporal dynamics provide important mechanistic insights.",
+    "evaluation": "Claims C124-C127 are well-supported by the RNAi screen data in Figure 5B and Supplementary file 2, with validation shown in Figure 5C and Figure 5\u2014figure supplements 1-2. The screen design is appropriate, and the fertility assays provide clear phenotypic readouts. The confirmation of fusion defects for the top hits (C127) strengthens the conclusion that these genes are functionally important for the process.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C143",
-      "C144",
-      "C145",
-      "C146",
-      "C147"
+      "C131",
+      "C132",
+      "C135",
+      "C136"
     ],
-    "result": "In hamSK1 mutant seminal vesicle, seven genes are downregulated (four Wnt2 pathway genes: wnt2, fz, fz2, fz4; one Tl pathway gene: spz; and shg) and two are upregulated (GstE11, CG11069). Four genes (wnt2, fz, spz, shg) are also downregulated in ham RNAi, suggesting direct involvement in fusion downstream of Ham.",
+    "result": "shg knockdown led to aberrant mobilization of testis epithelial cells to the middle of the testis, while no such effect was found in seminal vesicle and accessory gland. This suggests the seminal vesicle and testis terminal epithelia have distinct dependence on E-Cad, and that testis epithelial cells are prone to becoming motile when E-Cad is reduced.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C143-C147 are supported by quantified SCRINSHOT data (Figure 6B-E) comparing mutant and control tissues. The consistency between hamSK1 and ham RNAi conditions strengthens the conclusion that these genes are direct Ham targets involved in fusion. Statistical significance is shown.",
+    "evaluation": "Claims C131-C132 and C135-C136 are well-supported by data in Figure 5C showing the tissue-specific effects of shg (E-Cad) knockdown. The observation that only TE cells become mobilized upon E-Cad reduction is clearly documented. The inference about distinct E-Cad dependence (C135) and TE cell motility (C136) is reasonable given the known role of E-Cad in epithelial-mesenchymal transition (cited in C133-C134).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C158"
+    ],
+    "result": "SCRINSHOT multiplexed RNA in situ hybridization was conducted to visualize expression of 37 candidate genes. 25 genes exhibited detectable signal in wild-type seminal vesicle and accessory gland, while 29 displayed signals in wild-type testis. Within the testis, 17 out of 29 genes were specifically localized in testis terminal epithelial cells. 17 genes exhibited expression in both testis terminal and seminal vesicle epithelial cells, while 8 were exclusively expressed in seminal vesicle epithelial cells, underscoring the heterotypic nature of the testis and seminal vesicle epitheliums. 29 of 30 successfully mapped genes displayed spatial or temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C149 and C158 are strongly supported by the comprehensive SCRINSHOT data in Figure 6 and supplementary figures. The method is well-established (C139), and the spatial expression patterns are clearly documented with high-resolution images. The quantification of gene numbers in different tissues (C144-C146) and the identification of tissue-specific expression (C147-C148) provide strong evidence for the heterotypic nature of TE and SV epithelia (C149). The observation that 29/30 genes show spatial or temporal dynamics (C158) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "CG11406, AP-2alpha, GstE11, Tl, spz5, and spz6 demonstrated temporal dynamic expression in the testis epithelium. spz5 and CG11406 are present during 20-25 hr APF (prior to fusion) but gone during 28-32 hr APF (when testis and seminal vesicle are undergoing fusion). AP-2alpha, GstE11, Tl, and spz6 showed the opposite trend, being expressed only later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 are well-supported by SCRINSHOT data in Figure 6 and Figure 6\u2014figure supplements 2-4 showing temporal expression patterns at different developmental stages. The observation of reciprocal temporal dynamics between early genes (spz5, CG11406) and late genes (AP-2alpha, GstE11, Tl, spz6) is clearly documented and suggests stage-specific functions in the fusion process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
     "claim_ids": [
       "C153",
       "C154",
@@ -271,98 +287,150 @@
       "C156",
       "C157"
     ],
-    "result": "Toll-9 knockdown causes male sterility with empty seminal vesicles lacking sperm, suggesting failed testis-seminal vesicle connection. This establishes an essential role for Toll signaling in male reproductive system development.",
+    "result": "In the genital disc, wnt2 and spz were predominantly expressed in the leading cells within the seminal vesicle. fz2 exhibited higher expression levels in seminal vesicle compared to accessory gland, fz3 demonstrated the opposite pattern, and Tl was primarily expressed in myoblasts. These findings imply Wnt2 and Tl signaling may have cell-type-specific roles in the fusion process.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C153-C157 are supported by fertility tests and morphological analysis (Figure 7\u2014figure supplement 1A-C) showing drastic reduction in progeny and empty seminal vesicles. The phenotype is consistent and quantified. The conclusion about Toll signaling's essential role is justified.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C158",
-      "C159",
-      "C160",
-      "C161",
-      "C162",
-      "C163",
-      "C164",
-      "C165",
-      "C166",
-      "C167",
-      "C168"
-    ],
-    "result": "Wnt2 is essential for testis-seminal vesicle fusion and genital disc patterning. wnt2O mutants show complete failure of testis-genital disc connection and lack of elongated seminal vesicle/accessory gland. Overexpression of wnt2 causes fusion defects and testis epithelial cell mis-localization with reduced E-Cad. fz2 knockdown phenocopies wnt2 overexpression. Both fz2 and fz knockdown reduce fertility, indicating optimal Wnt2 signaling levels are critical.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C158-C168 are supported by analysis of multiple genetic conditions (Figure 7A-D) including loss-of-function, gain-of-function, and receptor knockdowns. The dose-dependent effects and phenotypic similarities between wnt2 overexpression and fz2 knockdown are particularly informative. The conclusion about optimal signaling levels is well-justified.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C7",
-      "C177",
-      "C178",
-      "C179"
-    ],
-    "result": "Mammalian Ham orthologs PRDM16 and PRDM3/MECOM are highly expressed in epithelial tubular structures including lung, pancreas, kidney, urinary bladder, and gastrointestinal tract. Seminal vesicle and ductus deferens show highest PRDM16 expression, suggesting conserved roles in epithelial integrity and fusion across species.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7, C177-C179 are supported by Human Protein Atlas data (Figure 8) showing tissue-specific expression patterns. The high expression in reproductive and other epithelial tissues is clearly documented. However, the claim of conserved function (C8, C179) is inferential based on expression alone without functional validation in mammals.",
+    "evaluation": "Claims C153-C157 are well-supported by SCRINSHOT data in Figure 6B showing spatial expression patterns in the genital disc. The cell-type-specific expression of wnt2 and spz in leading cells (C153), the differential expression of fz2 and fz3 in SV vs. AG (C154-C155), and Tl expression in myoblasts (C156) are clearly documented. The inference about cell-type-specific roles (C157) is reasonable based on these expression patterns.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C180",
-      "C181"
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
     ],
-    "result": "Mouse embryos lacking Prdm16 show significantly reduced pancreas duct volume, indicating a crucial function in pancreatic epithelial duct formation.",
+    "result": "In hamSK1 mutant seminal vesicle, seven genes became downregulated (four Wnt2 pathway genes: wnt2, fz, fz2, fz4; one Tl pathway gene: spz; and shg), while two exhibited upregulation. wnt2, fz, spz, and shg also displayed downregulation in ham RNAi seminal vesicle, suggesting these genes and their associated signaling pathways may be directly involved in the fusion process downstream of Ham.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C180-C181 are stated as unpublished observations ('data not shown') without any figures, quantification, sample sizes, or statistical analysis provided. While potentially important, this result cannot be evaluated without the actual data. The authors acknowledge that cellular changes and molecular mechanisms await investigation.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 are well-supported by SCRINSHOT data in Figure 6B-E and Figure 6\u2014figure supplement 2. The downregulation of Wnt2 and Tl pathway genes in both hamSK1 and ham RNAi conditions (C162) provides strong evidence for their direct involvement in the fusion process (C163). The consistency across two different genetic conditions strengthens this conclusion.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C1",
-      "C19",
-      "C20"
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
     ],
-    "result": "Ham is a Drosophila PR domain containing transcription factor belonging to the evolutionarily conserved PRDM family. PRDM proteins are characterized by an N-terminal PR domain similar to the SET domain of histone methyltransferases.",
+    "result": "Toll-9 knockdown led to a drastic reduction in progeny numbers, with some males displaying abnormal testis shape and the majority showing empty seminal vesicle without sperms, suggesting failed connection between testis and seminal vesicle. These results pinpoint an essential role of Tl signaling in male reproductive system development.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C19-C20 state established knowledge about Ham and PRDM protein family structure, supported by appropriate citations. This provides necessary background context.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C170-C174 are well-supported by data in Figure 7\u2014figure supplement 1A-C. The fertility defects (C170), morphological abnormalities (C171), and absence of sperm in seminal vesicle (C172) are clearly documented. The inference of failed TE-SV connection (C173) is reasonable based on the empty SV phenotype. The conclusion about Tl signaling's essential role (C174) is well-justified by these phenotypes.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C21",
-      "C22",
-      "C23",
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C28"
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
     ],
-    "result": "PRDM16 and PRDM3 dysfunction is associated with human diseases including congenital diseases, metabolic disorders, and cancers. PRDM16 plays tumor suppressive roles in kidney and pancreas cancers. Ham was previously studied only in the nervous system where it regulates dendrite morphogenesis and cell fate maintenance through chromatin modification and CtBP interaction.",
+    "result": "The wnt2O mutant testis and genital disc never connect, and the mutant testis lacks pigment cell and myocyte layers (consistent with reported function in these cell types). The wnt2O mutant genital disc failed to form elongated seminal vesicle and accessory gland, suggesting Wnt2 is essential for the fusion process and required for genital disc patterning and differentiation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C21-C28 summarize prior literature with appropriate citations. This establishes the importance of PRDM proteins and the novelty of studying Ham outside the nervous system.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C175-C179 are well-supported by data in Figure 7A. The complete failure of TE-GD connection in wnt2O mutants (C175) provides strong evidence for Wnt2's essential role in fusion (C176). The loss of pigment cells and myocytes (C177) is consistent with previous reports (cited in C177), and the failure of SV/AG elongation (C178) supports the role in GD patterning and differentiation (C179).",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R21",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Overexpression of wnt2 resulted in fusion defects and mis-localization of testis epithelial cells, with wnt2-overexpressing cells displaying reduced E-Cad levels. fz2 knockdown animals exhibited comparable phenotypes including mobilized testis epithelial cells and failed tissue fusion. fz2 and fz knockdown also decreased male fertility. These results suggest the importance of optimal Wnt2 signaling levels in male reproductive system development and epithelial tissue fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C185 are well-supported by data in Figure 7B-D. The observation that both loss (wnt2O, fz2 RNAi) and gain (wnt2 overexpression) of Wnt2 signaling cause similar defects (C180, C183) provides strong evidence for the importance of optimal signaling levels (C185). The reduction of E-Cad in wnt2-overexpressing cells (C181) is clearly documented, though the mechanistic speculation about Wnt2 balancing E-Cad levels (C182) requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Ham plays a crucial role in controlling epithelial fusion during Drosophila reproductive system development. Early in embryonic development, Ham determines the cell fate of male-specific somatic gonadal precursors, which are progenitor cells for testis terminal epithelial cells. Later, Ham directly regulates the differentiation of epithelial cells in both testis and seminal vesicle by orchestrating a gene expression program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C188 represent well-supported summary statements of the major findings. The crucial role of Ham in epithelial fusion (C186) is demonstrated by the fusion defects in mutants. The early role in msSGP specification (C187) is supported by embryonic expression and msSGP reduction data. The later role in epithelial differentiation (C188) is supported by RNA-seq, CUT&TAG, and marker expression data. These claims appropriately synthesize the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "PRDM16 and PRDM3/MECOM exhibit high expression in epithelial tubular structures such as lung, pancreas, kidney, urinary bladder, and gastrointestinal tract according to Human Protein Atlas data. Seminal vesicle and ductus deferens are the top one and three tissues with the highest PRDM16 expression. This suggests a potential role for these proteins in controlling epithelial integrity and fusion in mammalian organogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C199 are supported by Human Protein Atlas data shown in Figure 8. The high expression of PRDM16 and PRDM3 in epithelial tissues (C197) and particularly in seminal vesicle and ductus deferens (C198) is clearly documented. The inference about potential roles in mammalian epithelial integrity and fusion (C199) is reasonable based on the expression patterns and the functional data from Drosophila, though direct functional evidence in mammals would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C200",
+      "C201"
+    ],
+    "result": "The pancreas duct volume in mouse embryos lacking Prdm16 is significantly reduced, underscoring a crucial function of Prdm16 in pancreatic epithelial duct formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C200-C201 are stated as unpublished observations (\"data not shown\") in the Discussion. While the authors indicate they observed reduced pancreas duct volume in Prdm16 mutant mice (C200), no data are presented to evaluate the quality of this observation, the sample size, statistical analysis, or potential confounding factors. The inference about Prdm16's crucial function in pancreatic duct formation (C201) may be reasonable, but cannot be properly evaluated without seeing the data. This result requires publication of the supporting data for full assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "The two epithelial ends in the Drosophila reproductive system are heterotypic. The testis terminal epithelial cells express higher levels of E-Cad and lower levels of Cor compared to seminal vesicle epithelial cells. In response to reduction of E-Cad or ectopic expression of wnt2, testis terminal epithelial cells become motile, resembling epithelial-to-mesenchymal transition, suggesting testis terminal epithelial cells may be more invasive during epithelial fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C211 are well-supported by data throughout the manuscript. The heterotypic nature of TE and SV epithelia (C208) is demonstrated by differential marker expression (C209, shown in Figure 2B), differential gene expression patterns (SCRINSHOT data), and differential responses to perturbations. The observation that TE cells become motile upon E-Cad reduction or wnt2 overexpression (C210) is clearly shown in Figures 5C and 7B. The inference about TE cells being more invasive (C211) is reasonable based on these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20"
+    ],
+    "result": "Hamlet (Ham) is a Drosophila PR domain containing transcription factor that belongs to the PRDM family whose members are evolutionarily conserved cell fate regulators. PRDM proteins are characterized by an N-terminal PR domain similar to the catalytic SET domain shared by histone methyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19, and C20 represent well-established background knowledge about Ham and PRDM proteins, appropriately cited from previous literature. These claims provide necessary context for understanding the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
     "claim_ids": [
       "C9",
       "C10",
@@ -375,167 +443,212 @@
       "C17",
       "C18"
     ],
-    "result": "Epithelial tissue fusion requires coordinated molecular events but regulatory mechanisms remain largely elusive. In Drosophila reproductive system, fusion unites gonad and genital disc-derived tissues. Similar fusion processes occur in human reproductive and other systems, with fusion defects causing diseases like cryptorchidism.",
+    "result": "Background on epithelial tissue fusion mechanisms and the Drosophila reproductive system. Epithelial fusion requires coordinated molecular events, but regulatory mechanisms remain largely elusive. In Drosophila, epithelial fusion unites the gonad and genital disc-derived tissues into a continuous tube. The human testis is linked to efferent and epididymal ducts, and anomalies in duct fusion cause cryptorchidism in at least 3% of newborn boys.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9-C18 provide background on epithelial fusion and reproductive system development, supported by appropriate citations. This establishes the biological context and medical relevance.",
+    "evaluation": "Claims C9-C18 represent background knowledge and context from the literature, appropriately cited. These claims establish the biological importance of the problem and the suitability of the Drosophila reproductive system as a model, but do not represent novel findings from this study.",
     "result_type": "MINOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C33",
-      "C42"
-    ],
-    "result": "Previous ham alleles (ham1, hamSK1) shift reading frames for all isoforms. Ham specifies internal cell types in mechano-sensory organs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C33 and C42 cite prior characterization of ham alleles and functions, providing context for the new alleles generated in this study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C54",
-      "C55",
-      "C57"
-    ],
-    "result": "During reproductive system development, testis terminal epithelial cells derive from embryonic male-specific somatic gonadal precursors, while seminal vesicle epithelium develops from genital disc mesenchymal cells undergoing mesenchymal-to-epithelial transition. Multiple coordinated events occur during pupal stages including epithelial tube formation, fusion, and cell migration.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54, C55, C57 describe established developmental processes with appropriate citations and illustration (Figure 1E, 1G). This provides necessary developmental context.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C85",
-      "C86",
-      "C87"
-    ],
-    "result": "Ham controls testis terminal epithelial cell formation in early embryo and regulates epithelial tube elongation and cell differentiation at pupal stage. Failed fusion could result from absence of testis epithelial cells, seminal vesicle defects, or both.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C85-C87 summarize the temporal requirements for Ham based on the phenotypic analyses. C87 appropriately acknowledges multiple possible mechanisms, though it is somewhat speculative.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R25",
-    "claim_ids": [
-      "C88",
-      "C89",
-      "C90"
-    ],
-    "result": "The hamRSGAL4 driver induces high GFP expression in testis and seminal vesicle epithelial cells with weak expression in myoblasts. Myotubes can still form and migrate in ham mutants, confirming loss of ham does not abolish myoblast fusion or myotube migration.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C90 characterize the Gal4 driver and demonstrate myotube development is not directly affected by ham loss (Figure 2\u2014figure supplement 3B-D). This is important for interpreting the epithelial-specific phenotypes.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R26",
-    "claim_ids": [
-      "C148",
-      "C149",
-      "C150",
-      "C151",
-      "C152"
-    ],
-    "result": "In hamSK1 mutant seminal vesicle, GstE11 and CG11069 are upregulated. In ham RNAi, CG11069 is upregulated and spz5 shows increased expression. In testis, only four genes (ham, shg, fz, fz2) show expression changes in ham RNAi, implicating functional requirement in both tissues.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C148-C152 report additional gene expression changes from SCRINSHOT (Figure 6\u2014figure supplement 3). The data support the conclusions, though the functional significance of upregulated genes is less clear than downregulated genes.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R27",
-    "claim_ids": [
-      "C169",
-      "C170",
-      "C171",
-      "C172",
-      "C173"
-    ],
-    "result": "Ham is a master regulator of epithelial tissue patterning and fusion in Drosophila reproductive system. Even slight Ham reduction disrupts epithelial differentiation and tissue assembly. Ham is expressed at oviduct-ovary fusion sites in females and mutants show non-functional oviduct, suggesting similar mechanisms in both sexes.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C169-C173 summarize the main conclusions with supporting data from both male and female reproductive systems. The female data (Figure 1\u2014figure supplement 2) is less extensive but consistent with the male findings.",
-    "result_type": "MAJOR"
   },
   {
     "result_id": "R28",
     "claim_ids": [
-      "C174",
-      "C175"
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
     ],
-    "result": "Based on expression patterns, Toll signaling may promote myoblast-epithelial cell interactions, while Wnt2 signaling mediates epithelial cell communication, remodeling, and fusion.",
+    "result": "Background on PRDM16, PRDM3, and Ham function. Dysfunction of PRDM16 and PRDM3 has been found in various human abnormalities including congenital diseases, metabolic disorders, and cancers. PRDM16 plays a tumor suppressive role in kidney and pancreas cancers. Ham was exclusively studied in the nervous system where it is required for neuronal dendrite morphogenesis and cell fate maintenance. Ham represses gene expression through modulating chromatin states or interacting with co-repressor CtBP, while PRDM16 and PRDM3 PR domains possess intrinsic histone methyltransferase activity and can interact with various co-activators and co-repressors.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C174-C175 are explicitly speculative (C174 states 'we can speculate') based on expression patterns and known functions. While reasonable hypotheses, they lack direct functional evidence for the proposed cell-cell interaction mechanisms. Further experiments would be needed to test these models.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 represent background knowledge from the literature, appropriately cited. These claims establish what was previously known about PRDM proteins and Ham, highlighting the gap in knowledge about Ham function outside the nervous system that this study addresses.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R29",
     "claim_ids": [
-      "C176"
+      "C40",
+      "C41"
     ],
-    "result": "Ham protein is highly expressed in other epithelial tissues including Malpighian tubes and intestine.",
+    "result": "Background on Ham function in sensory organ development. Ham specifies internal cell types (neuron and sheath) in the mechano-sensory organ lineage, as ham1 mutants exhibited ectopic external cell types (socket and shaft) at the expense of internal cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C176 is stated as unpublished observation ('data not shown') without any supporting figures or quantification. Cannot be evaluated without the data.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 represent background knowledge from previous literature (Moore et al., 2004), appropriately cited. This information provides context for comparing the differential requirements for PR-containing isoforms in sensory organs vs. reproductive system.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R30",
     "claim_ids": [
-      "C182",
-      "C183"
+      "C53",
+      "C54",
+      "C57",
+      "C78"
     ],
-    "result": "PR-containing isoforms are indispensable for reproductive system epithelial fusion and differentiation, and Ham can directly activate epithelial gene expression.",
+    "result": "Background on reproductive system development. Testis terminal epithelial cells are specified as male-specific somatic gonadal precursors in the embryo. Seminal vesicle epithelium develops from mesenchymal cells in the genital disc that undergo mesenchymal-to-epithelial transition during the larval stage. In the pupal reproductive system, multiple events including epithelial tube formation and fusion as well as myoblast and pigment cell migration are tightly coordinated. Epithelial cells in seminal vesicle and accessory gland originate from mesenchymal cells recruited by the FGF pathway involving Btl and Branchless.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C182-C183 summarize key findings comparing Ham function in nervous system vs reproductive system, and the direct activation function demonstrated by luciferase assays. These conclusions are well-supported by the data.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C53, C54, C57, and C78 represent background knowledge from the literature, appropriately cited. These claims provide necessary developmental context for understanding the stages at which Ham functions and the cellular processes involved in reproductive system assembly.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R31",
     "claim_ids": [
-      "C184",
-      "C185",
-      "C186",
-      "C187",
-      "C188",
-      "C189"
+      "C88",
+      "C89",
+      "C90",
+      "C91"
     ],
-    "result": "The two epithelial ends in Drosophila reproductive system are heterotypic, unlike homotypic fusion in neural tube or trachea. Testis terminal epithelial cells express higher E-Cad and lower Cor than seminal vesicle cells. When E-Cad is reduced or wnt2 overexpressed, testis epithelial cells become motile, suggesting they may be more invasive during fusion. Seminal vesicle cells show typical epithelial characteristics with many genes expressed exclusively in this tissue.",
+    "result": "Characterization of the hamRSGAL4 driver line. hamRSGAL4 induces high expression of UAS-GFP in testis and seminal vesicle epithelial cells and weak expression in myoblasts. Myotubes appeared at the junction site of testis and seminal vesicle in ham mutants and could migrate to the testis surface, confirming loss of ham does not abolish myoblast fusion or myotube migration.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C184-C189 describe the heterotypic nature of the fusion process with supporting immunostaining data (Figure 2B) and SCRINSHOT results (Figure 6). The comparison to homotypic fusion in other systems is appropriate. The interpretation of testis cell motility as EMT-like is reasonable.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C88-C91 are supported by data in Figure 2\u2014figure supplement 3B-D. The characterization of the hamRSGAL4 expression pattern (C88-C89) is important for interpreting RNAi experiments. The observation that myoblast fusion and myotube migration occur in ham mutants (C90-C91) is useful for ruling out these processes as the primary defect, but represents a relatively minor supporting observation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R32",
     "claim_ids": [
-      "C190",
-      "C191",
-      "C192"
+      "C128",
+      "C129",
+      "C130"
     ],
-    "result": "Heterotypic epithelial fusion occurs in many developmental processes and failure causes various developmental diseases. Studying epithelial fusion mechanisms will help understand disease pathogenesis.",
+    "result": "Background on genes identified in RNAi screen. pbl encodes a Rho guanine nucleotide exchange factor implicated in cytoskeleton reorganization. CG11406 gene product is a predicted triglyceride lipase cleaving triacylglycerol to produce diacylglycerol. AP-2alpha is a subunit in Adaptor complex 2 involved in intracellular trafficking and secretion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C190-C192 provide broader context about epithelial fusion in development and disease. C192 is somewhat speculative about future applications but reasonable as a rationale for the study.",
+    "evaluation": "Claims C128-C130 represent background knowledge about the molecular functions of genes identified in the screen, based on previous literature (C128, C130) or sequence prediction (C129). This information provides context for interpreting the screen results but does not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Background on E-Cadherin function. Downregulation of E-Cad is a key event during epithelial-to-mesenchymal transition, and E-Cad promotes cohesive cell migration of mesenchymal cells but suppresses cell motility of epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 represent well-established background knowledge from the literature, appropriately cited. This information provides context for interpreting the effects of shg (E-Cad) knockdown on testis epithelial cell behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C195",
+      "C196"
+    ],
+    "result": "Discussion of Ham expression in other tissues. Research on Ham function has primarily focused on its roles in the nervous system. Apart from the reproductive system, high expression of Ham protein was observed in other epithelial tissues including Malpighian tubes and intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C195 is supported background knowledge. However, C196 is stated as unpublished observation (\"data not shown\"). While this observation may be accurate, it cannot be properly evaluated without seeing the data. The claim about Ham expression in Malpighian tubes and intestine is interesting but requires publication of supporting data for full assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "Discussion of potential common mechanisms between dendrite and epithelial morphogenesis. Dendrite morphogenesis involves outgrowth and branching, somewhat analogous to epithelial tube growth and branching. Molecular mechanisms regulating polarized protein trafficking are crucial for both dendrite and epithelial tube branching. Several transcription factors like Sequoia, Tramtrack, and Cut play roles in both dendrite morphogenesis and tracheal tube fusion, suggesting there might be more unrecognized common mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C206 represent background knowledge from the literature, appropriately cited. Claim C207 is a reasonable speculation based on the cited examples, but represents a hypothesis for future investigation rather than a finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "Discussion of broader significance. Heterotypic epithelial fusion occurs in many developmental processes such as digestive system formation, vertebrate optic fissure closure, and mammalian urogenital development. Failure of epithelial fusion can lead to developmental diseases such as oesophageal atresia, spina bifida, ocular coloboma, and congenital abnormalities of kidney, urinary tract, and persistent cloaca. Studying basic processes and key players of normal epithelial tissue fusion in vivo will help understand the pathogenesis of these diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C214-C215 represent background knowledge establishing the broader significance of epithelial fusion. Claim C216 is a reasonable statement about the potential impact of this research, but represents a future direction rather than a finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Summary and speculation about Ham function. Ham controls formation of testis terminal epithelial cells in the early embryo and regulates epithelial tube elongation and cell differentiation at the pupal stage. Failed epithelium fusion in ham mutant reproductive system could result from: (1) absence of testis terminal epithelial cells, (2) defects in epithelial tube elongation and cell differentiation of seminal vesicle, or (3) a combination of both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 represent well-supported summary statements of findings. Claims C85-C87 represent reasonable speculation about the relative contributions of different defects to the fusion phenotype, appropriately marked as speculation in the evidence type. The RNAi experiments (C92-C98) provide some evidence that Ham also has a late role in fusion independent of TE cell loss, but the relative contributions remain to be fully quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Ham function in female reproductive system. Ham is expressed in cells at the fusion site of oviduct and ovary. Mutant females lacking functional Ham exhibit a non-functional oviduct epithelial tube, suggesting Ham likely employs a similar mechanism to control epithelium fusion in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C190 are supported by data in Figure 1\u2014figure supplement 2. The expression at the fusion site (C189) and the oviduct defects in mutants (C190) are clearly documented. The inference that Ham uses a similar mechanism in females (C191) is reasonable but represents a hypothesis that would benefit from more detailed analysis of the female phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Discussion of potential functions of Ham target genes. The cell-type- and tissue-specific spatial distribution of Ham target genes suggests they may regulate various aspects of fusion including cell migration, intercellular communication between myoblasts/myotubes and epithelial cells, specification of leading cells, and other steps. Tl signaling and the molecule itself may promote interaction between myoblasts and epithelial cells based on high expression of Tl in myoblasts and presence of multiple Spz ligands in testis and seminal vesicle epithelial cells. Wnt2 signaling mediates epithelial cell communication, remodeling, and fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C192 is a reasonable inference from the SCRINSHOT data showing spatial expression patterns. Claims C193-C194 represent reasonable speculation (C193 is explicitly marked as speculation) and inference based on expression patterns and functional requirements. While these interpretations are plausible, they represent hypotheses about molecular mechanisms that would benefit from additional functional experiments to test specific cell-cell interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C202",
+      "C203"
+    ],
+    "result": "Summary comparison with nervous system function. Compared to Ham function in the nervous system, the PR-containing isoforms are indispensable for reproductive system epithelial fusion and differentiation, and Ham can directly activate epithelial gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C203 represent well-supported summary statements comparing findings from this study with previous work on Ham in the nervous system. The differential requirement for PR-containing isoforms (C202) is clearly demonstrated by the hamPR\u0394 phenotypes. The direct activation of gene expression (C203) is supported by the luciferase reporter assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C212",
+      "C213"
+    ],
+    "result": "Characterization of seminal vesicle epithelial cells. Seminal vesicle epithelial cells, despite originating from mesenchymal cells, exhibit typical epithelial cell characteristics including regular Cor and E-Cad expression. Many genes are expressed exclusively in seminal vesicle epithelium, distinguishing it from testis epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C212-C213 are supported by marker expression data (Figure 2) and SCRINSHOT data (Figure 6). These observations contribute to the characterization of the heterotypic nature of TE and SV epithelia but represent descriptive findings that support the major conclusions rather than major findings themselves.",
     "result_type": "MINOR"
   }
 ]

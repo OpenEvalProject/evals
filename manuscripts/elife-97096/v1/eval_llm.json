@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Two published MDS cohorts were analyzed: BMMNCs from 94 MDS patients (Shiozawa et al., 2017) and bone marrow CD34+ cells from 82 MDS patients (Pellagatti et al., 2018), both enriched with splicing factor mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 clearly describe the datasets used in the study with appropriate citations. The manuscript explicitly states the sample sizes, cell types, and enrichment for splicing factor mutations, providing a solid foundation for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "MOFA identified ten factors with minimum explained variance of 2% in at least one biological view in both cohorts. Factor 1 was the most dominant factor linking immune profile, cell-type composition, and inflammation/aging profile in both cohorts, with notable differences in variance explained for RTE expression and genotype data between cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 describe the MOFA factor identification and variance patterns with explicit reference to figures. The threshold criteria (2% minimum variance) and the dominance of Factor 1 are clearly stated. The comparative observations between cohorts are appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "High Factor 1 in the BMMNC cohort represented patients with stem and progenitor-like characteristics, increased SINE:Alu expression, increased Th1 cells, and decreased neutrophils and exhausted CD8+ T cells, with an inverse correlation to GMP/GMP-like features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 characterize Factor 1 in the BMMNC cohort with consistent reference to figures. The correlations are explicitly stated, though the interpretation of SINE:Alu as representing genetic instability (C10) is somewhat speculative. Overall, the data support the characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In the CD34+ cohort, Factor 1 is associated with differentiated myeloid cells, cytolytic and cytotoxicity scores, and upregulation of inflammatory pathways, while Factors 2 and 4 are associated with HSPC and GMP signatures respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 describe Factor associations in the CD34+ cohort with appropriate figure references. The GSEA analysis (C18-C19) supports the inflammatory characterization. However, the interpretation of cytolytic/cytotoxicity signals potentially arising from T/NK cell contamination is acknowledged but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Cox regression analysis identified Factors 4 and 9 as significantly impacting OS and EFS in the BMMNC cohort in univariate analysis, with Factor 2 showing significant association with EFS in both univariate and multivariate analyses. No factors showed significance in the CD34+ cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 report survival analysis results with explicit hazard ratios and p-values referenced to Table 1. The loss of significance for Factor 4 on EFS after controlling for sex and age (C23) is appropriately noted. The negative finding for the CD34+ cohort (C25) is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Factors 4 and 9 exert protective influence on MDS prognosis in the BMMNC cohort, while Factor 2 predicts poorer prognosis. Low Factor 9 levels showed increased RTE expression (LTR:ERV1, SINE:MIR, SINE:Alu), identifying high RTE expression as a potential risk factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe prognostic associations with appropriate figure references. The interpretation of high RTE expression as a risk factor (C29) is supported by the inverse relationship with Factor 9 and survival data, though the mechanism remains to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "For Factor 2, inflammatory cytokines and SASP were increased when Factor 2 level was decreased, suggesting secretion of cytokines and downstream inflammation as a protective factor for MDS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31 describe an inverse relationship between Factor 2 and inflammatory markers, leading to the interpretation that inflammation is protective. While the data show the correlation, the causal interpretation (C31) is speculative and not directly tested. The survival data (C38) provide some support but do not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C90"
+    ],
+    "result": "Factor 4 in the BMMNC cohort is associated with immune cell accumulation and immune-active disease, with decreased progression to AML. Low Factor 4 patients show decreased healthy HSCs, increased malignant HSCs, high stroma content, and low leukocyte content, suggesting defective hematopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 and C90 characterize Factor 4 with consistent figure references. The interpretation of defective hematopoiesis (C90) is supported by the observed cellular composition changes and cited literature. The phenotypic characterization is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "High inflammatory cytokines in the BMMNC cohort were associated with superior OS (p=0.019). There is a trend of higher inflammatory chemokines relating to better prognosis in CD34+ cohorts. Higher IFN-I signature score was related to poorer prognosis in CD34+ cohorts but not in BMMNC cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 report survival associations for individual inflammatory features across cohorts. The statistical significance for inflammatory cytokines (C38) is clearly stated. The trends for inflammatory chemokines (C39) and IFN-I (C40-C41) are appropriately described as non-significant but suggestive, with cohort-specific differences noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C84",
+      "C85"
+    ],
+    "result": "SF3B1 mutation shows significant association with high inflammatory chemokines in both cohorts (BMMNC p<0.01; CD34+ p<0.05), with SF3B1 being the only mutation among 13 showing this association in multiple linear regression (p<0.0001). SF3B1 mutants show decreased HSC/Prog cells, increased myeloid/HSC-like/promo-like scores, increased inflammatory cytokines, and high macrophage levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50, C84-C85 describe SF3B1 associations with detailed statistical support including multiple linear regression controlling for confounding mutations. The findings are consistent across both cohorts and supported by prior literature (C50). The statistical rigor is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "SF3B1 mutant cases with higher inflammation tend to survive better than wild-type SF3B1, though not statistically significant. Literature supports the relationship between SF3B1 mutation and good prognosis. The study suggests inflammation might help MDS survival, possibly through macrophage activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C93 interpret the SF3B1-inflammation-survival relationship. While the trend is observed (C51) and literature supports good prognosis for SF3B1 mutants (C91), the lack of statistical significance weakens the conclusion. The mechanistic interpretation involving macrophage activation (C92-C93) is speculative and requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C87"
+    ],
+    "result": "SRSF2 mutant cases show statistically significant increase in GMP and GMP-like features (p<0.05) in both cohorts, decreased healthy myeloid features, increased malignant myeloid and senescence/immunosenescence, low T cell levels, decreased Th1 and Treg cells, lower cytolytic score (p<0.001), and increased central memory cells (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 and C87 characterize SRSF2 mutants with appropriate statistical support and figure references. The findings are consistent with known poor prognosis of SRSF2 mutations (C53, C61). The immunological characterization is well-documented with significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The decrease in T cells, particularly Th1 cells, which play crucial roles in tumor cell killing, may cause worse outcomes for SRSF2 mutant patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 provides a mechanistic interpretation of the SRSF2 findings with appropriate citation. The interpretation is reasonable given the observed T cell depletion and known role of Th1 cells in anti-tumor immunity, though direct causation is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Literature establishes that SF3B1 mutations associate with good prognosis while SRSF2 mutations associate with poor prognosis. Splicing factor mutations can induce chronic innate immunity. PD-L1 expression is elevated in senescent cells and protects them from immune clearance. The study observed correlation between senescence score and PD-L1 expression in CD34+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 provide literature context and supporting observations. The citations are appropriate and the observed correlation between senescence and PD-L1 (C67) supports the mechanistic framework, though the correlation alone does not establish causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript provides comprehensive background on MDS, current prognostic approaches, inflammation's dual role in cancer, inflammaging, RTEs and their regulation, and the prevalence of splicing factor mutations in MDS, establishing the rationale for the integrative multi-omics approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C81 provide background information with appropriate citations. These establish the scientific context and rationale for the study. The gap in RTE expression analysis (C80) and limitations of current risk prediction (C70) justify the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "MOFA could not identify any factor representing splicing factor mutations, leading to examination of individual features associated with SF3B1 and SRSF2 mutations. Seven views were derived from three data modalities to identify latent factors impacting MDS prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 describe the methodological approach and a key negative finding. The inability of MOFA to identify a splicing factor mutation factor is clearly stated and led to the alternative analysis strategy examining individual features, which is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C89",
+      "C95",
+      "C96"
+    ],
+    "result": "The study concludes that the MOFA factor representing inflammation shows good prognosis for high-inflammation MDS patients, RTE expression is a risk factor, and this integrative approach goes beyond current MDS scoring systems. The extracted features could enhance conventional risk-scoring systems and capture transcriptomic changes not reflected in clinical/genetic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C88-C89, C95-C96 present the study's main conclusions and implications. While the findings support inflammation as protective and RTE as risk factors, the claim that this approach \"goes beyond all scoring systems\" (C89) is not directly demonstrated through comparative analysis. The potential clinical utility (C95-C96) is speculative.",
+    "result_type": "MAJOR"
+  }
+]

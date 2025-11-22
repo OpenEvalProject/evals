@@ -49,7 +49,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is demonstrated through simulations shown in Figure 2 and supplementary figures.",
+    "evidence": "This is demonstrated through simulations shown in Figure 2 and related supplementary figures.",
     "evidence_type": [
       "DATA"
     ]
@@ -76,7 +76,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is demonstrated through simulations shown in Figure 4 and discussed in the Results section.",
+    "evidence": "This is demonstrated through simulations shown in Figure 4 and related analysis.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -104,11 +104,11 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by theoretical analysis and comparison with experimental data shown in Figure 6.",
+    "evidence": "This is supported by analysis of experimental data from Devanapally et al., 2021 and theoretical modeling shown in Figure 6.",
     "evidence_type": [
       "DATA",
-      "INFERENCE",
-      "CITATION"
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
@@ -119,7 +119,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by a citation to previous work.",
+    "evidence": "This is supported by a citation to prior work.",
     "evidence_type": [
       "CITATION"
     ]
@@ -132,7 +132,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is supported by a citation to previous work.",
+    "evidence": "This is supported by a citation to prior work.",
     "evidence_type": [
       "CITATION"
     ]
@@ -160,7 +160,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is explained with an example of mutual repression that is not compatible with perpetual inheritance.",
+    "evidence": "This is explained with an example of mutual repression that leads to transient amplification.",
     "evidence_type": [
       "INFERENCE",
       "KNOWLEDGE"
@@ -168,17 +168,16 @@
   },
   {
     "claim_id": "C13",
-    "claim": "Positive feedback loops that promote transient amplification of changes, such as those formed by two molecules that mutually repress each other's production, are not compatible with perpetual inheritance.",
+    "claim": "Positive feedback loops that promote transient amplification of changes are not compatible with perpetual inheritance because both molecules will be eventually lost by dilution or turnover.",
     "claim_type": "EXPLICIT",
     "source": "For example, positive feedback loops that promote the transient amplification of changes such as that formed by two molecules that mutually repress each other's production (Mitrophanov and Groisman, 2008) are not compatible with perpetual inheritance because both molecules will be eventually lost by dilution or turnover.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is explained with reasoning about dilution and turnover, supported by a citation.",
+    "evidence": "This is explained through theoretical reasoning and supported by a citation.",
     "evidence_type": [
       "INFERENCE",
-      "CITATION",
-      "KNOWLEDGE"
+      "CITATION"
     ]
   },
   {
@@ -222,13 +221,13 @@
   },
   {
     "claim_id": "C17",
-    "claim": "With four interactors, the maximal information that can be transmitted using heritable regulatory architectures (approximately 12.45 bits) surpasses that transmitted by a four base-pair long genome (8 bits).",
+    "claim": "With four interactors, the maximal information that can be transmitted using HRAs (approximately 12.45 bits) surpasses that transmitted by a four base-pair long genome (8 bits).",
     "claim_type": "EXPLICIT",
     "source": "Thus, with four interactors, the maximal information that can be transmitted using HRAs (log2[5604] \u224812.45 bits) surpasses that transmitted by a four base-pair long genome (log2[4].4 = 8 bits).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is calculated from the number of possible architectures and compared to genome information capacity.",
+    "evidence": "This is calculated from the enumeration results shown in Table 1.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -236,7 +235,7 @@
   },
   {
     "claim_id": "C18",
-    "claim": "The combinatorial growth in the numbers of heritable regulatory architectures with the number of interactors can provide vastly more capacity for storing information in larger architectures compared to that afforded by the proportional growth in longer genomes.",
+    "claim": "The combinatorial growth in the numbers of HRAs with the number of interactors can provide vastly more capacity for storing information in larger HRAs compared to that afforded by the proportional growth in longer genomes.",
     "claim_type": "EXPLICIT",
     "source": "The combinatorial growth in the numbers of HRAs with the number of interactors can thus provide vastly more capacity for storing information in larger HRAs compared to that afforded by the proportional growth in longer genomes.",
     "source_type": [
@@ -256,13 +255,40 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is demonstrated through simulations comparing permanent vs. transient perturbations in Figure 2.",
+    "evidence": "This is demonstrated through simulations shown in Figure 2 and supplementary figures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C20",
+    "claim": "The most widely used perturbation that is easy to accomplish using current experimental techniques is reducing the concentration of an entity/sensor.",
+    "claim_type": "EXPLICIT",
+    "source": "Of these, the most widely used perturbation that is easy to accomplish using current experimental techniques is reducing the concentration of an entity/sensor (e.g. using a loss-of-function mutation, knockdown of an mRNA, degradation of a protein, etc.).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of common experimental practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Genome editing for removal and RNA interference for reduction of an entity/sensor are common during the experimental analysis of living systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the use of genome editing (Anzalone et al., 2020) for removal and RNA interference (RNAi) (Fire et al., 1998) for reduction of an entity/sensor are common during the experimental analysis of living systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to relevant methodological papers.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
     "claim": "Genetic change can result in unrestrained growth or eventual decay of the remaining entities depending on the residual architecture.",
     "claim_type": "EXPLICIT",
     "source": "Thus, genetic change can result in unrestrained growth or eventual decay of the remaining entities depending on the residual architecture (Figure 1\u2014figure supplement 2c).",
@@ -272,11 +298,12 @@
     ],
     "evidence": "This is demonstrated through simulations shown in Figure 2 and supplementary figures.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C21",
+    "claim_id": "C23",
     "claim": "Epigenetic change can result in unrestrained growth, eventual decay, or recovery at a new steady state level of the remaining entities depending on the residual architecture and the nature of the perturbation.",
     "claim_type": "EXPLICIT",
     "source": "Thus, epigenetic change can result in unrestrained growth, eventual decay, or recovery at a new steady state level of the remaining entities depending on the residual architecture and the nature of the perturbation (Figure 1\u2014figure supplement 2d).",
@@ -286,125 +313,102 @@
     ],
     "evidence": "This is demonstrated through simulations shown in Figure 2 and supplementary figures.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C22",
-    "claim": "Heritable regulatory architectures that are nearly indistinguishable by genetic perturbation can be distinguished using epigenetic perturbations.",
+    "claim_id": "C24",
+    "claim": "HRAs that are nearly indistinguishable by genetic perturbation can be distinguished using epigenetic perturbations.",
     "claim_type": "EXPLICIT",
     "source": "HRAs that are nearly indistinguishable by genetic perturbation can be distinguished using epigenetic perturbations, underscoring the complementary nature of genetic and epigenetic perturbations.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is demonstrated through comparison of responses to different perturbations in simulations.",
+    "evidence": "This is inferred from the simulation results comparing genetic and epigenetic perturbations.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C23",
-    "claim": "The 26 simplest heritable regulatory architectures can be mutated to generate 61 different changes through single perturbations.",
-    "claim_type": "EXPLICIT",
-    "source": "enumeration of the changed HRAs that can result from a perturbation revealed that the 26 HRAs can be mutated to generate 61 different changes (24 through loss of interaction alone, 21 through change in polarity of interaction alone, and 16 through either change in regulation or though loss of an entity, with density of the change matrix \u22480.19 [61/325]).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is calculated through enumeration and shown in Figure 3.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C24",
-    "claim": "The density of the change matrix for heritable regulatory architectures is approximately 0.19.",
-    "claim_type": "EXPLICIT",
-    "source": "with density of the change matrix \u22480.19 [61/325]",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is calculated from the enumeration of possible changes.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
     "claim_id": "C25",
-    "claim": "Unlike changes in DNA sequence, not all changes are immediately accessible among heritable regulatory architectures.",
+    "claim": "The 26 HRAs can be mutated to generate 61 different changes.",
     "claim_type": "EXPLICIT",
-    "source": "Thus, unlike changes in DNA sequence, not all changes are immediately accessible among HRAs (change matrix of 1 vs 0.19, respectively).",
+    "source": "With these considerations, enumeration of the changed HRAs that can result from a perturbation revealed that the 26 HRAs can be mutated to generate 61 different changes (24 through loss of interaction alone, 21 through change in polarity of interaction alone, and 16 through either change in regulation or though loss of an entity, with density of the change matrix \u22480.19 [61/325]).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is inferred from comparing the density of change matrices for DNA vs. HRAs.",
+    "evidence": "This is stated as a result of enumeration shown in Figure 3.",
     "evidence_type": [
-      "INFERENCE",
       "DATA"
     ]
   },
   {
     "claim_id": "C26",
-    "claim": "Single mutations can result in the gain of new interactions that combine multiple heritable regulatory architectures into larger regulatory architectures with more interactors.",
+    "claim": "Unlike changes in DNA sequence, not all changes are immediately accessible among HRAs (change matrix of 1 vs 0.19, respectively).",
     "claim_type": "EXPLICIT",
-    "source": "This capacity is an underestimate because, single mutations can also result in the gain of new interactions that combine multiple HRAs into larger regulatory architectures with more interactors.",
+    "source": "Thus, unlike changes in DNA sequence, not all changes are immediately accessible among HRAs (change matrix of 1 vs 0.19, respectively).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a logical inference about possibilities not fully captured in the enumeration.",
+    "evidence": "This is calculated from the enumeration of possible changes.",
     "evidence_type": [
+      "DATA",
       "INFERENCE"
     ]
   },
   {
     "claim_id": "C27",
-    "claim": "Heritable regulatory architectures that rely on all components for their production cannot change into any other architectures from steady state without the addition of more positive regulation.",
+    "claim": "The heritable information transmitted using regulatory architectures is vast because even two or three interactors can form 26 heritable architectures that are collectively capable of 61 changes through single perturbations.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, the heritable information transmitted using regulatory architectures is vast because even two or three interactors can form 26 heritable architectures that are collectively capable of 61 changes through single perturbations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the enumeration results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Single mutations can result in the gain of new interactions that combine multiple HRAs into larger regulatory architectures with more interactors.",
+    "claim_type": "EXPLICIT",
+    "source": "This capacity is an underestimate because, single mutations can also result in the gain of new interactions that combine multiple HRAs into larger regulatory architectures with more interactors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative inference about additional possibilities not fully explored.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "HRAs that rely on all components for their production cannot change into any other HRAs from steady state without the addition of more positive regulation.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, HRAs that rely on all components for their production ('C', 'F', 'H', 'K', and 'T') cannot change into any other HRAs from steady state without the addition of more positive regulation because any permanent loss in regulation without compensatory changes in turnover will result in the ultimate collapse of the entire architecture.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is inferred from the analysis of possible transitions shown in Figure 3.",
+    "evidence": "This is inferred from theoretical analysis of the architectures.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C28",
-    "claim": "Of 225,000 entity-sensor-property systems simulated, 78,285 had heritable regulatory architectures that remained after 250 generations.",
-    "claim_type": "EXPLICIT",
-    "source": "Of 225,000 ESP systems thus simulated, 78,285 had heritable regulatory architectures that remained after 250 generations (system-ids and other details for exploration of individual systems are in Supplementary file 2).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct result from computational simulations.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C29",
-    "claim": "Only heritable regulatory architectures with a minimum of three entities/sensors at the start of the simulation showed heritable epigenetic changes.",
-    "claim_type": "EXPLICIT",
-    "source": "As expected, only HRAs with a minimum of three entities/sensors at the start of the simulation showed heritable epigenetic changes.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is observed from simulation results shown in Figure 4d.",
-    "evidence_type": [
-      "DATA"
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C30",
-    "claim": "The heritability of regulatory architectures that are intrinsically unstable can be enhanced through interactions that alter the regulation of one or more sensors.",
+    "claim": "Deducing regulatory architectures from outcomes after perturbations is complicated by multiple HRAs resulting in the same HRA when perturbed.",
     "claim_type": "EXPLICIT",
-    "source": "Collectively, these results reveal that the heritability of regulatory architectures that are intrinsically unstable can be enhanced through interactions that alter the regulation of one or more sensors.",
+    "source": "Deducing regulatory architectures from outcomes after perturbations is complicated by multiple HRAs resulting in the same HRA when perturbed (e.g. 16 HRAs can result in 'A' when perturbed, Figure 3).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is concluded from simulation results examining periodic perturbations.",
+    "evidence": "This is demonstrated by the analysis shown in Figure 3.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -412,552 +416,473 @@
   },
   {
     "claim_id": "C31",
-    "claim": "External regulators that enhance heritability of unstable architectures could be part of the environment or other cells.",
+    "claim": "Of 225,000 ESP systems simulated, 78,285 had heritable regulatory architectures that remained after 250 generations.",
     "claim_type": "EXPLICIT",
-    "source": "Such external regulators could be part of the environment (e.g. periodic interactions such as circadian signals) or other cells (e.g. periodic interactions with somatic cells for regulatory architectures transmitted along a germline).",
+    "source": "Of 225,000 ESP systems thus simulated, 78,285 had heritable regulatory architectures that remained after 250 generations (system-ids and other details for exploration of individual systems are in Supplementary file 2).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculative interpretation of the simulation results.",
+    "evidence": "This is a direct result from the simulations performed.",
     "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
+      "DATA"
     ]
   },
   {
     "claim_id": "C32",
-    "claim": "14 cell divisions are necessary to go from the zygote of one generation to the zygote of the next in C. elegans.",
+    "claim": "An excess of positive regulatory links was needed to sustain a system with negative regulatory links.",
     "claim_type": "EXPLICIT",
-    "source": "For example, 14 cell divisions are necessary to go from the zygote of one generation to the zygote of the next (Supplementary file 3).",
+    "source": "Furthermore, an excess of positive regulatory links was needed to sustain a system with negative regulatory links (Figure 4\u2014figure supplement 3, right), with the minimal system that can sustain a negative regulatory interaction requiring three sensors, as expected.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is stated as a fact about C. elegans development, supported by supplementary data.",
+    "evidence": "This is demonstrated through simulations shown in Figure 4\u2014figure supplement 3.",
     "evidence_type": [
-      "KNOWLEDGE",
       "DATA"
     ]
   },
   {
     "claim_id": "C33",
-    "claim": "Parental rde-4 can enable RNA silencing in adult rde-4(-) progeny in C. elegans.",
+    "claim": "The minimal system that can sustain a negative regulatory interaction requires three sensors.",
     "claim_type": "EXPLICIT",
-    "source": "For example, parental rde-4 can enable RNA silencing in adult rde-4(-) progeny (Marr\u00e9 et al., 2016).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from published experimental work.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C34",
-    "claim": "Loss of meg-3/4 can result in persistent RNA silencing defects despite restoration of wild-type meg-3/4 for multiple generations in C. elegans.",
-    "claim_type": "EXPLICIT",
-    "source": "Furthermore, loss of meg-3/\u20134 can result in persistent RNA silencing defects despite restoration of wild-type meg-3/\u20134 for multiple generations (Dodson and Kennedy, 2019; Lev et al., 2019; Ouyang et al., 2019).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from published experimental work.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C35",
-    "claim": "Of 10,000 entity-sensor-property systems simulating C. elegans development, 11 maintained all entities/sensors for 10 generations.",
-    "claim_type": "EXPLICIT",
-    "source": "Of the 10,000 such ESP systems simulated, 11 maintained all entities/sensors for 10 generations (Supplementary file 4).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct result from computational simulations.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C36",
-    "claim": "The maintenance of RNA silencing across generations is thought to require a positive feedback loop formed by antisense small RNAs called 22G RNAs bound to the Argonaute HRDE-1 and sense mRNA fragments processed into poly-UG RNAs.",
-    "claim_type": "EXPLICIT",
-    "source": "The maintenance of RNA silencing across generations is thought to require a positive feedback loop formed by antisense small RNAs called 22G RNAs that are bound to the Argonaute HRDE-1 (Buckley et al., 2012) and sense mRNA fragments processed into poly-UG RNAs (pUG RNAs) (Shukla et al., 2020) that can act as templates for RNA-dependent RNA polymerases that synthesize the 22G RNAs.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from published experimental work.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C37",
-    "claim": "Recognition of target mRNA by piRNAs prolongs RNA silencing in C. elegans.",
-    "claim_type": "EXPLICIT",
-    "source": "While this observation suggests that recognition of the target mRNA by piRNAs prolongs RNA silencing",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is inferred from experimental observations cited in the manuscript.",
-    "evidence_type": [
-      "INFERENCE",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C38",
-    "claim": "Loss of the Argonaute PRG-1 that binds piRNAs prolongs the duration of heritable RNA silencing in C. elegans.",
-    "claim_type": "EXPLICIT",
-    "source": "loss of the Argonaute PRG-1 that binds piRNAs and regulates more than 3000 genes in the germline (e.g. Reed et al., 2020) also prolongs the duration of heritable RNA silencing (Shukla et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from published experimental work.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C39",
-    "claim": "PRG-1 regulates more than 3000 genes in the germline of C. elegans.",
-    "claim_type": "EXPLICIT",
-    "source": "loss of the Argonaute PRG-1 that binds piRNAs and regulates more than 3000 genes in the germline (e.g. Reed et al., 2020)",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from published experimental work.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C40",
-    "claim": "The dynamics of heritable RNA silencing depends on the strength of an inhibitory feedback that can act across generations to reduce the HRDE-1-dependent positive feedback loop.",
-    "claim_type": "EXPLICIT",
-    "source": "Specifically, the dynamics of recovery from silencing depends on the strength of an inhibitory feedback that can act across generations to reduce the HRDE-1-dependent positive feedback loop.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a theoretical model proposed to explain experimental observations.",
-    "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C41",
-    "claim": "The transgenerational inhibition of RNA silencing relies on sensor(s) that are regulated by PRG-1 and is opposed by piRNA binding to the silenced mRNA.",
-    "claim_type": "EXPLICIT",
-    "source": "This transgenerational inhibition relies on sensor(s) that are regulated by PRG-1 and is opposed by piRNA binding to the silenced mRNA (Figure 6d).",
+    "source": "Furthermore, an excess of positive regulatory links was needed to sustain a system with negative regulatory links (Figure 4\u2014figure supplement 3, right), with the minimal system that can sustain a negative regulatory interaction requiring three sensors, as expected.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a theoretical model proposed to explain experimental observations, illustrated in Figure 6d.",
-    "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C42",
-    "claim": "A chromodomain protein HERI-1 has been reported to be recruited to genes undergoing heritable RNA silencing and is required to limit the duration of the silencing.",
-    "claim_type": "EXPLICIT",
-    "source": "Consistently, a chromodomain protein HERI-1 has been reported to be recruited to genes undergoing heritable RNA silencing and is required to limit the duration of the silencing (Perales et al., 2018).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from published experimental work.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C43",
-    "claim": "Additional sensors involved in transgenerational inhibition are likely among the >3000 genes mis-regulated in animals lacking PRG-1.",
-    "claim_type": "EXPLICIT",
-    "source": "Additional sensors are likely among the >3000 genes mis-regulated in animals lacking PRG-1 (Reed et al., 2020; Shukla et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative inference based on experimental observations.",
-    "evidence_type": [
-      "SPECULATION",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C44",
-    "claim": "Differences in the transgenerational feedback that reduces some component(s) of the 22G-pUG positive feedback loop can explain the persistence of, recovery from, and resistance to heritable RNA silencing when different genes are targeted for silencing.",
-    "claim_type": "EXPLICIT",
-    "source": "Regardless of the identities of such sensors, differences in the transgenerational feedback that reduces some component(s) of the 22G-pUG positive feedback loop can explain the persistence of, recovery from, and resistance to heritable RNA silencing when different genes are targeted for silencing.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a theoretical conclusion drawn from the model and simulations.",
-    "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C45",
-    "claim": "Entity-sensor-property systems can be used to analyze many types of regulatory interactions.",
-    "claim_type": "EXPLICIT",
-    "source": "ESP systems can be used to analyze many types of regulatory interactions",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is discussed as a general principle in the Discussion section.",
-    "evidence_type": [
-      "INFERENCE",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C46",
-    "claim": "A positive feedback loop can only support the inheritance of one property of an entity.",
-    "claim_type": "EXPLICIT",
-    "source": "A positive feedback loop can only support the inheritance of one property of an entity",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is explained with reasoning about prions and other examples in the Discussion.",
-    "evidence_type": [
-      "INFERENCE",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C47",
-    "claim": "Inducing heritable changes in epigenetic information is more challenging than inducing similar changes in genetic information.",
-    "claim_type": "EXPLICIT",
-    "source": "Inducing heritable changes in epigenetic information is more challenging than inducing similar changes in genetic information (Jose, 2020c).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated as a general principle with a citation.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C48",
-    "claim": "Only 6 different base exchanges are possible in DNA sequence through a single mutation.",
-    "claim_type": "EXPLICIT",
-    "source": "All DNA bases with induced chemical changes are deleted or converted into one of the other bases by the replication and repair pathways. Consequently, only 6 different base exchanges are possible in DNA sequence through a single mutation",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated as a fact about DNA mutations.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C49",
-    "claim": "61 different heritable regulatory architecture changes are possible through a single mutation when only up to three interactors are considered.",
-    "claim_type": "EXPLICIT",
-    "source": "but even when only up to three interactors are considered, 61 different HRA changes are possible through a single mutation (Figure 3).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is calculated from enumeration shown in Figure 3.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C50",
-    "claim": "The genome likely interacts with the largest number of sensors per molecule, making it the entity with the most information density.",
-    "claim_type": "EXPLICIT",
-    "source": "The genome likely interacts with the largest number of sensors per molecule, making it the entity with the most information density.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative inference about information density in living systems.",
-    "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C51",
-    "claim": "When a gene sequence is transcribed and translated, sequence information is transmitted from one molecule (DNA) to many (RNA(s) and/or protein(s)), thereby reducing the density of sequence information per entity.",
-    "claim_type": "EXPLICIT",
-    "source": "When a gene sequence is transcribed and translated, sequence information is transmitted from one molecule (DNA) to many (RNA(s) and/or protein(s)), thereby reducing the density of sequence information per entity (e.g. RNA or protein of a particular sequence).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a logical inference about information distribution during gene expression.",
-    "evidence_type": [
-      "INFERENCE",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C52",
-    "claim": "Information is added to RNAs and proteins through the process of RNA folding and protein folding, which depend on interactions with the surrounding chemical and physical context.",
-    "claim_type": "EXPLICIT",
-    "source": "However, information is also added to these entities through the process of RNA folding and protein folding, which depend on interactions with the surrounding chemical and physical context (e.g. Porter and Looger, 2018).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with a citation to support the claim.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C53",
-    "claim": "Proteins and RNAs can interact to create molecular complexes and organelles that concentrate information in higher-order entities present as fewer copies within cells.",
-    "claim_type": "EXPLICIT",
-    "source": "Importantly, these proteins and RNAs can interact to create molecular complexes and organelles that again concentrate information in higher-order entities present as fewer copies within cells (e.g. centrosomes).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a general statement about biological organization.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C54",
-    "claim": "As heritable regulatory architectures evolve and become more complex, entities with a large number of sensed properties can appear central or controlling.",
-    "claim_type": "EXPLICIT",
-    "source": "Thus, as heritable regulatory architectures evolve and become more complex, entities with a large number of sensed properties can appear central or controlling (see Dyson, 1982; Noble, 2008 for similar ideas).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a theoretical inference with citations to similar ideas.",
-    "evidence_type": [
-      "INFERENCE",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C55",
-    "claim": "When making synthetic life, any form of high-density information storage that interacts with heritable regulatory architectures can act as the 'genome' analogous to DNA.",
-    "claim_type": "EXPLICIT",
-    "source": "This pathway for increasing complexity through interactions since before the origin of life suggests that when making synthetic life, any form of high-density information storage that interacts with heritable regulatory architectures can act as the 'genome' analogous to DNA.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative inference about synthetic biology applications.",
-    "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C56",
-    "claim": "Only 7 of the 13 possible 3-node graphs formed by 3 interactors can be heritable regulatory architectures.",
-    "claim_type": "EXPLICIT",
-    "source": "Imposing the need for positive regulation for heritability reveals that only 7 of the 13 possible 3-node graphs formed by 3 interactors can be HRAs",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is calculated through computational enumeration.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C57",
-    "claim": "Only 125 of the 199 possible 4-node graphs can be heritable regulatory architectures.",
-    "claim_type": "EXPLICIT",
-    "source": "and only 125 of the 199 possible 4-node graphs can be HRAs (see Methods for computation).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is calculated through computational enumeration.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "Perpetual inheritance of regulatory architectures requires sustained production of all the interacting molecules.",
-    "claim_type": "EXPLICIT",
-    "source": "Perpetual inheritance of such regulatory architectures requires sustained production of all the interacting molecules, that is every interactor must have regulatory input that promotes its production to overcome dilution at every cell division and other turnover mechanisms, if any.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a fundamental requirement derived from first principles.",
-    "evidence_type": [
-      "INFERENCE",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "This requirement for sustained production was fundamental for conceiving the origin of life and remains necessary for its persistence.",
-    "claim_type": "EXPLICIT",
-    "source": "Indeed, this requirement was fundamental for conceiving the origin of life (Eigen, 1971; G\u00e1nti, 1975; Varela et al., 1974; Kauffman, 1993) and remains necessary for its persistence.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated with citations to foundational work on the origin of life.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C61",
-    "claim": "The use of genome editing for removal and RNA interference for reduction of an entity/sensor are common during the experimental analysis of living systems.",
-    "claim_type": "EXPLICIT",
-    "source": "Indeed, the use of genome editing (Anzalone et al., 2020) for removal and RNA interference (RNAi) (Fire et al., 1998) for reduction of an entity/sensor are common during the experimental analysis of living systems.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is stated as a fact about experimental methods with citations.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C62",
-    "claim": "RNAi can cause detectable defects that are heritable.",
-    "claim_type": "EXPLICIT",
-    "source": "RNAi can cause detectable defects that are heritable (Fire et al., 1998)",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from the original RNAi paper.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C63",
-    "claim": "The conditions that promote or inhibit heritable epigenetic change after RNAi of a gene have been proposed to depend upon the regulatory architecture.",
-    "claim_type": "EXPLICIT",
-    "source": "and the conditions that promote or inhibit heritable epigenetic change after RNAi of a gene have been proposed to depend upon the regulatory architecture (Chey and Jose, 2022).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is cited from previous work.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C64",
-    "claim": "Deducing regulatory architectures from outcomes after perturbations is complicated by multiple heritable regulatory architectures resulting in the same architecture when perturbed.",
-    "claim_type": "EXPLICIT",
-    "source": "Deducing regulatory architectures from outcomes after perturbations is complicated by multiple HRAs resulting in the same HRA when perturbed (e.g. 16 HRAs can result in 'A' when perturbed, Figure 3).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is demonstrated in Figure 3.",
+    "evidence": "This is demonstrated through simulations and is consistent with theoretical expectations.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C65",
-    "claim": "Measurement of dynamics after perturbations of each entity/sensor in turn can distinguish between all 26 architectures.",
+    "claim_id": "C34",
+    "claim": "Of the 78,285 stable systems, 14,180 showed heritable epigenetic change.",
     "claim_type": "EXPLICIT",
-    "source": "While measurement of dynamics after perturbations of each entity/sensor in turn can distinguish between all 26 architectures, the temporal resolution required is not obvious.",
+    "source": "Of the 78,285 stable systems, 14,180 showed heritable epigenetic change.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is inferred from the simulation results.",
+    "evidence": "This is stated as a result from simulations shown in Figure 4D.",
     "evidence_type": [
-      "INFERENCE",
       "DATA"
     ]
   },
   {
-    "claim_id": "C66",
-    "claim": "Simulations that enable exploration of outcomes when different interactors are perturbed at different times could enhance the understanding of underlying complexity, reduce biased inference, and better guide the next experiment.",
+    "claim_id": "C35",
+    "claim": "The heritability of regulatory architectures that are intrinsically unstable can be enhanced through interactions that alter the regulation of one or more sensors.",
     "claim_type": "EXPLICIT",
-    "source": "Therefore, simulations that enable exploration of outcomes when different interactors are perturbed at different times could enhance the understanding of underlying complexity, reduce biased inference, and better guide the next experiment.",
+    "source": "Collectively, these results reveal that the heritability of regulatory architectures that are intrinsically unstable can be enhanced through interactions that alter the regulation of one or more sensors.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a recommendation based on the challenges identified in the study.",
+    "evidence": "This is inferred from simulation results showing effects of periodic perturbations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "External regulators that enhance heritability of unstable architectures could be part of the environment or other cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Such external regulators could be part of the environment (e.g. periodic interactions such as circadian signals) or other cells (e.g. periodic interactions with somatic cells for regulatory architectures transmitted along a germline).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative inference about possible sources of external regulation.",
     "evidence_type": [
       "INFERENCE",
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C67",
-    "claim": "The most commonly considered regulatory networks are either limited in scope and/or are not causal in nature.",
+    "claim_id": "C37",
+    "claim": "14 cell divisions are necessary to go from the zygote of one generation to the zygote of the next in C. elegans.",
     "claim_type": "EXPLICIT",
-    "source": "The most commonly considered regulatory networks (Barab\u00e1si and Oltvai, 2004) are either limited in scope and/or are not causal in nature.",
+    "source": "For example, 14 cell divisions are necessary to go from the zygote of one generation to the zygote of the next (Supplementary file 3).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated as a limitation of existing approaches with a citation.",
+    "evidence": "This is based on curated data from the literature about C. elegans development.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Parental rde-4 can enable RNA silencing in adult rde-4(-) progeny.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, parental rde-4 can enable RNA silencing in adult rde-4(-) progeny (Marr\u00e9 et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Loss of meg-3/4 can result in persistent RNA silencing defects despite restoration of wild-type meg-3/4 for multiple generations.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, loss of meg-3/\u20134 can result in persistent RNA silencing defects despite restoration of wild-type meg-3/\u20134 for multiple generations (Dodson and Kennedy, 2019; Lev et al., 2019; Ouyang et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to experimental work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Of 10,000 ESP systems simulated with developmental timing and regulatory delays, 11 maintained all entities/sensors for 10 generations.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the 10,000 such ESP systems simulated, 11 maintained all entities/sensors for 10 generations (Supplementary file 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct result from simulations incorporating C. elegans developmental timing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The transgenerational waveforms traced by the relative numbers of all entities/sensors reveal periods of increased expression/activity for some entities/sensors during development.",
+    "claim_type": "EXPLICIT",
+    "source": "The transgenerational waveforms traced by the relative numbers of all entities/sensors reveal periods of increased expression/activity for some entities/sensors during development (red asterisks in Figure 5d), as observed for many genes expressed in the germline.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through simulations shown in Figure 5D and compared to known biological observations.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "22G RNAs and pUG RNAs are experimentally measurable molecular markers whose levels are thought to be proportional to the extent of gene silencing.",
+    "claim_type": "EXPLICIT",
+    "source": "22G RNAs and pUG RNAs are experimentally measurable molecular markers whose levels are thought to be proportional to the extent of gene silencing (e.g. Gu et al., 2009; Pak et al., 2012; Shirayama et al., 2012), although formally gene-specific regulatory features could influence this proportionality (Knudsen et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to experimental work, with a caveat noted.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C68",
-    "claim": "A common expression for all possible regulatory networks that preserves both causation and heritability can be derived by parsing all the contents of the bottleneck stage between two generations into entities, their sensors, and the sensed properties.",
+    "claim_id": "C43",
+    "claim": "The maintenance of RNA silencing across generations is thought to require a positive feedback loop formed by antisense small RNAs called 22G RNAs that are bound to the Argonaute HRDE-1 and sense mRNA fragments processed into poly-UG RNAs (pUG RNAs).",
     "claim_type": "EXPLICIT",
-    "source": "A common expression for all possible regulatory networks that preserves both causation and heritability can be derived by parsing all the contents of the bottleneck stage between two generations (e.g. one-cell zygote in the nematode C. elegans) into entities, their sensors, and the sensed properties (Jose, 2020b).",
+    "source": "The maintenance of RNA silencing across generations is thought to require a positive feedback loop formed by antisense small RNAs called 22G RNAs that are bound to the Argonaute HRDE-1 (Buckley et al., 2012) and sense mRNA fragments processed into poly-UG RNAs (pUG RNAs) (Shukla et al., 2020) that can act as templates for RNA-dependent RNA polymerases that synthesize the 22G RNAs.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is cited from previous work establishing the ESP framework.",
+    "evidence": "This is based on citations to prior experimental work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "When a gene silenced by disrupting RNA regulation within the germline is exposed to genes with matching sequences, different outcomes are possible.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, when a gene silenced by disrupting RNA regulation within the germline (iT, a transgene with silenced mCherry sequences) is exposed to genes with matching sequences (Figure 6, Devanapally et al., 2021), different outcomes are possible.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on experimental data from Devanapally et al., 2021.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "After initial silencing in trans, newly exposed genes can recover from silencing when separated from the source of silencing signals.",
+    "claim_type": "EXPLICIT",
+    "source": "After initial silencing in trans, the newly exposed genes can recover from silencing (mCherry and mCherry\u2206pi in Figure 6a) when separated from the source of silencing signals",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on experimental data from Devanapally et al., 2021 shown in Figure 6A.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Newly exposed genes can be either continually silenced or become resistant to silencing depending on the presence of intact piRNA-binding sequences despite the continued presence of the source.",
+    "claim_type": "EXPLICIT",
+    "source": "but can be either continually silenced (mCherry/iT in Figure 6a) or become resistant to silencing (mCherry\u2206pi/iT in Figure 6a) depending on the presence of intact piRNA-binding sequences despite the continued presence of the source.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is based on experimental data from Devanapally et al., 2021 shown in Figure 6A.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Recognition of the target mRNA by piRNAs prolongs RNA silencing.",
+    "claim_type": "EXPLICIT",
+    "source": "While this observation suggests that recognition of the target mRNA by piRNAs prolongs RNA silencing, loss of the Argonaute PRG-1 that binds piRNAs and regulates more than 3000 genes in the germline (e.g. Reed et al., 2020) also prolongs the duration of heritable RNA silencing (Shukla et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from experimental observations cited.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Loss of the Argonaute PRG-1 that binds piRNAs and regulates more than 3000 genes in the germline also prolongs the duration of heritable RNA silencing.",
+    "claim_type": "EXPLICIT",
+    "source": "While this observation suggests that recognition of the target mRNA by piRNAs prolongs RNA silencing, loss of the Argonaute PRG-1 that binds piRNAs and regulates more than 3000 genes in the germline (e.g. Reed et al., 2020) also prolongs the duration of heritable RNA silencing (Shukla et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on experimental data from cited studies.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C69",
-    "claim": "It is possible to consider entities that are sensed by a particular sensor even via unknown intermediate steps in entity-sensor-property systems.",
+    "claim_id": "C49",
+    "claim": "A chromodomain protein HERI-1 has been reported to be recruited to genes undergoing heritable RNA silencing and is required to limit the duration of the silencing.",
     "claim_type": "EXPLICIT",
-    "source": "An additional advantage of such entity-sensor-property systems is that it is possible to consider entities that are sensed by a particular sensor even via unknown intermediate steps, allowing for simulation of regulatory networks despite incomplete knowledge of regulators.",
+    "source": "Consistently, a chromodomain protein HERI-1 has been reported to be recruited to genes undergoing heritable RNA silencing and is required to limit the duration of the silencing (Perales et al., 2018).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is stated as an advantage of the ESP framework.",
+    "evidence": "This is based on experimental work cited.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The dynamics of recovery from silencing depends on the strength of an inhibitory feedback that can act across generations to reduce the HRDE-1-dependent positive feedback loop.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, the dynamics of recovery from silencing depends on the strength of an inhibitory feedback that can act across generations to reduce the HRDE-1-dependent positive feedback loop.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the proposed mechanism based on theoretical analysis and experimental data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The transgenerational inhibition relies on sensor(s) that are regulated by PRG-1 and is opposed by piRNA binding to the silenced mRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "This transgenerational inhibition relies on sensor(s) that are regulated by PRG-1 and is opposed by piRNA binding to the silenced mRNA (Figure 6d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is part of the proposed mechanism shown in Figure 6D.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The genome likely interacts with the largest number of sensors per molecule, making it the entity with the most information density.",
+    "claim_type": "EXPLICIT",
+    "source": "The genome likely interacts with the largest number of sensors per molecule, making it the entity with the most information density.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative inference about information density in biological systems.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "When a gene sequence is transcribed and translated, sequence information is transmitted from one molecule (DNA) to many (RNA(s) and/or protein(s)), thereby reducing the density of sequence information per entity.",
+    "claim_type": "EXPLICIT",
+    "source": "When a gene sequence is transcribed and translated, sequence information is transmitted from one molecule (DNA) to many (RNA(s) and/or protein(s)), thereby reducing the density of sequence information per entity (e.g. RNA or protein of a particular sequence).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of molecular biology and information theory.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Information is added to RNAs and proteins through the process of RNA folding and protein folding, which depend on interactions with the surrounding chemical and physical context.",
+    "claim_type": "EXPLICIT",
+    "source": "However, information is also added to these entities through the process of RNA folding and protein folding, which depend on interactions with the surrounding chemical and physical context (e.g. Porter and Looger, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of molecular biology supported by a citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Only a small number of possible regulatory architectures formed by a set of interactors are heritable.",
+    "claim_type": "EXPLICIT",
+    "source": "Only a small number of possible regulatory architectures formed by a set of interactors are heritable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a principle derived from the analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Maintenance of heritable regulatory architectures for many generations requires positive feedback loops.",
+    "claim_type": "EXPLICIT",
+    "source": "Their maintenance for many generations requires positive feedback loops.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a principle derived from theoretical analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Heritable regulatory architectures carry a vast amount of information that can quickly outstrip the information that can be stored in genomes as the number of interactors increase.",
+    "claim_type": "EXPLICIT",
+    "source": "Such heritable regulatory architectures carry a vast amount of information that can quickly outstrip the information that can be stored in genomes as the number of interactors increase.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the calculations shown in Table 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Transient perturbations reveal diagnostic differences between regulatory architectures.",
+    "claim_type": "EXPLICIT",
+    "source": "Transient perturbations reveal diagnostic differences between regulatory architectures and suggest ways to generate heritable epigenetic changes for particular architectures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through simulations in Figure 2 and supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Transgenerational inhibition that tunes the activity of positive feedback loops in regulatory architectures can explain the gene-specific dynamics of heritable RNA silencing observed in C. elegans.",
+    "claim_type": "EXPLICIT",
+    "source": "Transgenerational inhibition that tunes the activity of positive feedback loops in regulatory architectures can explain the gene-specific dynamics of heritable RNA silencing observed in the nematode Caenorhabditis elegans.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the proposed explanation based on theoretical modeling and experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Only 7 of the 13 possible 3-node graphs formed by 3 interactors can be HRAs.",
+    "claim_type": "EXPLICIT",
+    "source": "Imposing the need for positive regulation for heritability reveals that only 7 of the 13 possible 3-node graphs formed by 3 interactors can be HRAs",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a result of computational enumeration.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Only 125 of the 199 possible 4-node graphs can be HRAs.",
+    "claim_type": "EXPLICIT",
+    "source": "and only 125 of the 199 possible 4-node graphs can be HRAs (see Methods for computation).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a result of computational enumeration.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Perpetual inheritance of regulatory architectures requires sustained production of all the interacting molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "Perpetual inheritance of such regulatory architectures requires sustained production of all the interacting molecules, that is every interactor must have regulatory input that promotes its production to overcome dilution at every cell division and other turnover mechanisms, if any.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a fundamental requirement derived from theoretical considerations.",
     "evidence_type": [
       "INFERENCE",
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C70",
-    "claim": "The genome likely interacts with the largest number of sensors per molecule.",
+    "claim_id": "C63",
+    "claim": "Every interactor must have regulatory input that promotes its production to overcome dilution at every cell division and other turnover mechanisms.",
     "claim_type": "EXPLICIT",
-    "source": "The genome likely interacts with the largest number of sensors per molecule, making it the entity with the most information density.",
+    "source": "Perpetual inheritance of such regulatory architectures requires sustained production of all the interacting molecules, that is every interactor must have regulatory input that promotes its production to overcome dilution at every cell division and other turnover mechanisms, if any.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculative inference about the genome's role.",
+    "evidence": "This is a fundamental requirement derived from theoretical considerations.",
     "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
+      "INFERENCE",
+      "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C71",
-    "claim": "Progressive acquisition of entities and their interacting sensors would lead to the incorporation of regulators with increasing information density.",
+    "claim_id": "C64",
+    "claim": "This requirement for sustained production was fundamental for conceiving the origin of life and remains necessary for its persistence.",
     "claim_type": "EXPLICIT",
-    "source": "Beginning with the simplest of regulatory architectures (Figure 1), progressive acquisition of entities and their interacting sensors would lead to the incorporation of regulators with increasing information density.",
+    "source": "Indeed, this requirement was fundamental for conceiving the origin of life (Eigen, 1971; G\u00e1nti, 1975; Varela et al., 1974; Kauffman, 1993) and remains necessary for its persistence.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is a theoretical inference about evolutionary complexity.",
+    "evidence": "This is supported by citations to foundational work on the origin of life.",
     "evidence_type": [
-      "INFERENCE",
-      "SPECULATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   }
 ]

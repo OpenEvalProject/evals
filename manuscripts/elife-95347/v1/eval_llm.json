@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors validated their functional assay by demonstrating that codon-optimized CDKN2A and synonymous variants significantly reduced cell proliferation (p<0.0001) in PANC-1 cells, while pathogenic variants did not. A CellTag library assay confirmed stable representation of functionally neutral variants over the assay time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 provide strong validation of the assay system. The cell proliferation data (C14-C16) demonstrate expected behavior for wild-type and pathogenic variants with statistical significance. The CellTag stability experiment (C17) addresses potential drift artifacts. These controls are appropriate and well-executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The authors addressed underrepresentation of variants in plasmid libraries by individually generating 27 variants (0.87%) present at \u22641% and adding them to achieve 5% representation. Variant proportions in amplified plasmid libraries and day 9 cell pools were highly correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 describe appropriate quality control measures. The authors identified and corrected for underrepresented variants, and demonstrated correlation between plasmid and cellular representation, supporting the technical validity of the library construction and transduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors functionally characterized all 2964 possible CDKN2A missense variants using a high-throughput assay, finding that 17.7% (525 variants) were functionally deleterious, 60.2% (1784) were neutral, and 22.1% (655) were indeterminate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C24 present the core experimental findings from a comprehensive functional screen. The classification into three categories using a gamma GLM approach is methodologically sound, and the proportions are clearly stated with supporting data in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The functional assay showed high concordance with previously reported variant classifications: 84.4% of benchmark pathogenic variants were functionally deleterious, 100% of benchmark benign variants were neutral, and 90.3% and 88.9% of previously reported functionally deleterious and neutral VUSs, respectively, matched their prior classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate strong validation against known variants. The high concordance rates (84-100%) with benchmark variants and previously characterized VUSs support the assay's accuracy. The 5 benchmark pathogenic variants classified as indeterminate (C25) represent a limitation but do not undermine the overall validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Reproducibility analysis showed 80.7% of variants had concordant classifications between replicates, with no variant classified as both deleterious and neutral across replicates. Variant representation in the day 9 cell pool did not significantly affect classification (p=0.28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 address reproducibility and potential technical artifacts. The 80.7% concordance is reasonable for biological replicates, and the absence of deleterious/neutral discordance (C30) is reassuring. The analysis of underrepresented variants (C31-C32) appropriately addresses a potential confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Variant classifications using gamma GLM and log2 normalized fold change methods showed high concordance: 98.5% of deleterious variants and 88.9% of neutral variants were similarly classified by both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 demonstrate robustness of the classification approach. The high concordance between two independent methods strengthens confidence in the functional classifications, though the gamma GLM approach is preferred as it doesn't rely on benchmark variants for threshold setting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "All seven in silico variant effect predictors (CADD, PolyPhen-2, SIFT, VEST, AlphaMissense, ESM1b, PrimateAI-3D) performed similarly with accuracies of 39.5-85.4%, sensitivities of 0.25-0.98, specificities of 0.27-0.98, positive predictive values of 0.22-0.68, and negative predictive values of 0.87-0.98.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C37 provide comprehensive benchmarking of in silico predictors against experimental data. The wide range of performance metrics across models is clearly documented. PrimateAI-3D showed highest accuracy (85.4%) but lowest sensitivity (0.25), highlighting the trade-offs between different metrics. This is a rigorous comparison using a gold-standard experimental dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Functionally deleterious variants were significantly enriched in ankyrin repeats 1-3 (21.0-26.3%, adjusted p-values 0.01 to 2.6\u00d710\u207b\u00b9\u00b9) and depleted in ankyrin repeat 4 (6.5%, adjusted p-value 3.2\u00d710\u207b\u00b9\u00b3) and non-ankyrin regions (6.8%, adjusted p-value=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C42 describe the spatial distribution of deleterious variants across protein domains with strong statistical support. The enrichment in ankyrin repeats 1-3 and depletion in repeat 4 and non-ankyrin regions is biologically plausible given the functional importance of these domains for protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Functionally deleterious variants were further enriched in specific 10-residue subregions (37.0-48.0% in residues 16-25, 46-55, and 80-89). Five residues (p.G23, p.G55, p.H83, p.D84, p.G89) had 89.5% of possible missense variants classified as deleterious, while the mean across all residues was 17.7% (95% CI: 12.7-20.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 identify critical residues and subregions. The identification of five highly intolerant residues (C47) is supported by experimental data and consistent with their known structural/functional roles (C48-C50). However, the finding that NO residue was completely intolerant (C4) is important for variant interpretation guidelines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C51"
+    ],
+    "result": "No CDKN2A residue was completely intolerant to amino acid substitutions, with 18 residues tolerating all possible missense variants without functional impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C51 provide important negative results for variant interpretation. The absence of completely intolerant residues has implications for ACMG guidelines (discussed in C76-C77) and suggests that variant pathogenicity cannot be assumed based solely on residue position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Among 355 unique missense somatic mutations from cancer databases, 33.5% were functionally deleterious, representing enrichment compared to all possible variants (17.7%). In individual cohorts, 34.2-53.4% of unique mutations and 61.4-67.6% of patients had functionally deleterious mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 demonstrate that somatic mutations are enriched for functionally deleterious variants compared to the background rate, consistent with positive selection in cancer. The consistency across multiple databases (COSMIC, TCGA, JHU, MSK-IMPACT) strengthens this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Functionally deleterious somatic mutations were concentrated in ankyrin repeat 3, with 32.4-50.0% of all deleterious mutations occurring in this domain, affecting 48.0-58.0% of patients. Within this domain, 65.7-76.0% of deleterious mutations occurred in residues 80-89.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 identify ankyrin repeat 3, particularly residues 80-89, as a hotspot for functionally deleterious somatic mutations. This is consistent with the enrichment of deleterious variants in this region (C45) and has implications for understanding cancer biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Only 7.3% of unique somatic mutations would be classified as pathogenic/likely pathogenic by ACMG guidelines, with p.His83Tyr and p.Asp84Asn being the most prevalent. Colorectal adenocarcinoma showed significant depletion of functionally deleterious mutations (20.4%, adjusted p-value=5.4\u00d710\u207b\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 highlight the gap between functional deleteriousness and ACMG classification criteria. The low rate of ACMG pathogenic/likely pathogenic classifications (7.3%) despite 33.5% being functionally deleterious suggests many somatic mutations lack sufficient evidence for clinical classification. The colorectal cancer depletion may relate to mismatch repair deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Among germline variants in population databases, 11.7% of gnomAD VUSs (31/264) and 11.4% of ClinVar VUSs (45/395) were functionally deleterious, while 67.0% and 64.8% respectively were functionally neutral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 show that germline VUSs in population databases are depleted for functionally deleterious variants compared to all possible variants (17.7%) or somatic mutations (33.5%), consistent with purifying selection. The similar proportions between gnomAD and ClinVar support the robustness of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The functional assay provides evidence to reclassify 76.2% of ClinVar VUSs (301/395) and 78.8% of gnomAD VUSs (208/264), including 45 ClinVar and 31 gnomAD VUSs that could be reclassified as likely pathogenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C68 make strong assertions about reclassification potential, but this is based on inference rather than actual ACMG reclassification. While functional data is one line of evidence in ACMG guidelines, reclassification requires integration of multiple evidence types. The claims overstate the direct applicability without additional supporting evidence (segregation, case-control data, etc.).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The authors conclude that use of in silico models for clinical variant interpretation may be premature given their limited accuracy, but support current ACMG guidelines that include in silico predictions as supporting (not primary) evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 present reasonable conclusions based on the performance data. The moderate accuracies (39.5-85.4%) and variable performance metrics support caution in clinical use, while acknowledging their value as supporting evidence. This balanced interpretation is appropriate given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The authors suggest that ACMG guidelines recommending use of pathogenic variants at the same residue as moderate evidence should be applied with caution for CDKN2A, given that no residue was completely intolerant of amino acid changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 make an important inference from the finding that no CDKN2A residue is completely intolerant (C4). This has practical implications for variant interpretation and represents a valuable insight for clinical genetics, though it may not generalize to all genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors acknowledge potential limitations including that the assay may not capture all CDKN2A functions and that results could be cell line-specific, though previous work suggests cell-specific effects are limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 appropriately discuss study limitations. The acknowledgment of potential assay and cell line specificity (C78-C80) is balanced by citation of previous validation work (C81). This represents appropriate scientific caution about generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Functionally deleterious effects were enriched among somatic mutations and depleted in germline gnomAD VUSs compared to all possible CDKN2A missense variants, consistent with positive selection in cancer and purifying selection in the germline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 synthesize findings about differential enrichment patterns. The enrichment in somatic mutations (33.5% vs 17.7%) and depletion in gnomAD VUSs (11.7% vs 17.7%) is consistent with evolutionary and selective pressures, providing biological validation of the functional classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The five highly intolerant residues (p.G23, p.G55, p.H83, p.D84, p.G89) are conserved between human and murine p16, with p.H83 stabilizing ankyrin repeat structure and p.D84/p.G89 located in the CDK4/CDK6 interaction region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide structural and functional context for the highly intolerant residues identified experimentally. The conservation and known functional roles support the biological validity of the functional classifications and provide mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors used PANC-1, a PDAC cell line with homozygous CDKN2A deletion, for the functional assay. CDKN2A contains four ankyrin repeats (residues 11-40, 44-72, 77-106, 110-139) that mediate protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe the experimental system and protein structure. The use of a CDKN2A-null cell line is appropriate for the assay design, and the ankyrin repeat structure is well-established in the literature. These provide essential context for interpreting the results.",
+    "result_type": "MINOR"
+  }
+]

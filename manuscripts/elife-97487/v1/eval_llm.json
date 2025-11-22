@@ -2,204 +2,195 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C18",
+      "C19",
       "C20",
       "C21",
       "C22",
       "C23",
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C28",
-      "C29"
+      "C24"
     ],
-    "result": "A genetic screen identified mut-16 and rde-10 mutants with differential silencing of bli-1 versus unc-22. Genome editing confirmed that MUT-16 and RDE-10 are redundantly or additively required for unc-22 silencing, with the Maelstrom domain of RDE-10 being essential. The combined loss of both MUT-16 and RDE-10 eliminates silencing of even the sensitive target unc-22, suggesting that 1\u00b0 siRNA production alone is insufficient for silencing most genes.",
+    "result": "A genetic screen identified mut-16 mutants that selectively fail to silence bli-1 but retain unc-22 silencing. One mutant that failed to silence both genes had an additional mutation in rde-10. Genome editing confirmed that MUT-16 and RDE-10 are redundantly or additively required for unc-22 silencing, with the Maelstrom domain of RDE-10 being essential for this function.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C20-C29 are well-supported by experimental data from genetic screens and genome editing (Figures 1C, 1D). The differential silencing phenotypes are clearly demonstrated, and the structural analysis of the Ser228Phe mutation provides mechanistic insight. The inference that 1\u00b0 siRNAs alone are insufficient is logically sound given that the double mutant fails to silence even the highly sensitive unc-22 target.",
+    "evaluation": "Claims C18-C22 present experimental data from both a genetic screen and genome editing experiments showing differential silencing requirements. Claims C23-C24 are reasonable inferences from the data showing that loss of both MUT-16 and RDE-10 eliminates unc-22 silencing while loss of either alone does not, and that a mutation in the Maelstrom domain affects function. The data are internally consistent and support the conclusions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
       "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C36",
-      "C37",
-      "C38",
-      "C39"
+      "C31"
     ],
-    "result": "MUT-16, RDE-10, and NRDE-3 form an intersecting network where any two of the three proteins are required for unc-22 silencing, but each is individually required for bli-1 silencing. Computational modeling identified 145 parameter sets (out of 100,000 simulated) consistent with this 'any two of three' requirement, supporting an intersecting network model over strictly parallel pathways. Different genes show differential quantitative dependencies on these regulators.",
+    "result": "Single mutants lacking MUT-16, RDE-10, or NRDE-3 fail to silence bli-1 but silence unc-22, while all double mutant combinations fail to silence both genes. This pattern suggests the RNAi pathway cannot be strictly parallel downstream of RDE-1.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C30-C39 are strongly supported by systematic genetic analysis (Figure 2B) showing the 'any two of three' requirement and by computational modeling (Figure 2C-D) that demonstrates this pattern is consistent with an intersecting network. The graded silencing response (C37) and differential requirements for unc-54 and dpy-7 (C38-C39) provide additional experimental support for quantitative contributions by each regulator.",
+    "evaluation": "Claims C27-C30 present experimental data showing the genetic requirements for silencing. Claim C31 is a logical inference from the data: if the pathways were strictly parallel, double mutants would not show additive effects. The experimental data are clearly presented with statistical support, and the inference is sound.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C44",
-      "C45",
-      "C66",
-      "C67"
+      "C32",
+      "C33",
+      "C34",
+      "C35"
     ],
-    "result": "The requirement for NRDE-3 in bli-1 silencing can be bypassed by enhancing dsRNA processing through loss of ERI-1 or overexpression of RDE-4, but the requirements for MUT-16 and RDE-10 cannot be overcome by these manipulations. The combined loss of MUT-16 and RDE-10 eliminates all detectable silencing even with enhanced dsRNA processing.",
+    "result": "Computational modeling identified 145 parameter sets consistent with experimental constraints for an intersecting network model. Experimental validation showed graded silencing responses when dsRNA availability was reduced, and differential partial silencing of unc-54 and dpy-7 in different mutant backgrounds.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40-C45, C66-C67 are well-supported by systematic genetic experiments (Figures 3B-F). The selective bypass of NRDE-3 requirements but not MUT-16/RDE-10 requirements is clearly demonstrated. The observation that minimal RDE-4 expression is sufficient while minimal RDE-1 is not (C42-C43) provides additional mechanistic insight. The inability to rescue double mutants (C41, C67) is consistently shown across multiple experimental approaches.",
+    "evaluation": "Claim C32 presents modeling results that are verifiable from the methods described. Claims C33-C35 provide experimental validation of model predictions, showing quantitative differences in silencing efficiency across mutants and gene-specific differences in regulator requirements. The combination of modeling and experimental validation strengthens the conclusions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C52"
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
     ],
-    "result": "A dynamic computational model of RNAi reveals that different genes can have different residual RNA concentrations after silencing, that silencing can alter pre-mRNA/mRNA ratios, and that the time to knockdown and duration of knockdown are uncorrelated. The model predicts that 2\u00b0 siRNA accumulation does not correlate with silencing efficiency, that increased transcription reduces knockdown efficiency, and that genes with higher mRNA turnover are harder to silence.",
+    "result": "Loss of ERI-1 or overexpression of RDE-4 can bypass the requirement for NRDE-3 but not for MUT-16 or RDE-10 in bli-1 silencing. Small amounts of RDE-4 but not RDE-1 are sufficient for RNAi, and hypodermal RDE-4 expression can rescue bli-1 silencing in rde-4(-); nrde-3(-) double mutants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C52 are supported by computational modeling results (Figure 4, Figure 4\u2014figure supplements 1-2). The model incorporates known RNA intermediates and makes testable predictions. However, the model's predictions require experimental validation. The uncorrelated relationship between \u03c4kd and tkd (C49) and between 2\u00b0 siRNA levels and silencing efficiency (C50) are particularly important predictions that challenge common assumptions in the field.",
+    "evaluation": "Claims C36-C42 present a coherent set of experiments testing whether enhanced dsRNA processing can bypass genetic requirements. The data show selective bypass of NRDE-3 but not MUT-16/RDE-10 requirements, with appropriate controls and statistical analysis. The inference about RDE-4 sufficiency (C40) is reasonable given the rescue data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
+      "C50",
+      "C52",
       "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C5"
+      "C54"
     ],
-    "result": "Changing the 3' cis-regulatory regions of target genes alters their genetic requirements for RNAi. Replacing bli-1's 3'cis with unc-22's 3'cis reduces dependence on NRDE-3, while using the bli-1 promoter to drive gfp expression (with cye-1 3'cis) shows different requirements than native bli-1, demonstrating that genes expressed under the same promoter in the same tissue can have different silencing requirements.",
+    "result": "Changing the 3' cis-regulatory sequences of bli-1 to those of unc-22 reduced dependence on NRDE-3 for silencing. Expression of gfp under the bli-1 promoter showed different genetic requirements than bli-1 itself, demonstrating that two genes expressed under the same promoter can have different silencing requirements.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53-C57, C5 are supported by genome editing experiments and RNAi assays (Figure 5). The 3'cis swap experiments (C53-C54) directly test the role of cis-regulatory elements, though the unc-22::bli-1 3'cis construct shows baseline twitching that complicates interpretation (C54). The bli-1p::gfp experiments (C55-C57) clearly demonstrate that promoter alone does not determine silencing requirements. These results provide direct experimental validation of modeling predictions.",
+    "evaluation": "Claims C50, C52-C53 present experimental data from genome editing experiments showing that cis-regulatory elements influence genetic requirements for silencing. Claim C54 is a valid inference from the data comparing bli-1 and gfp silencing under the same promoter. The experiments directly test predictions from the modeling work.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
       "C58",
       "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C6"
+      "C60"
     ],
-    "result": "Animals can recover from RNAi-induced silencing in non-dividing muscle cells after a pulse of unc-22 dsRNA. Silencing reaches ~100% by day 3 but drops to ~50% by day 5 and ~36% by day 8, while continuous RNAi maintains ~100% silencing. Since body-wall muscle cells do not divide in adults, recovery cannot be explained by dilution through cell division.",
+    "result": "Animals exposed to a pulse of unc-22 dsRNA showed recovery from silencing over 8 days in non-dividing muscle cells. This recovery cannot be explained by cell division and supports turnover of all key RNA intermediates (1\u00b0 siRNA, 2\u00b0 siRNA, and pUG RNA).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C62, C6 are well-supported by pulse-chase RNAi experiments (Figure 6A). The temporal dynamics of silencing and recovery are clearly documented. The inference that recovery cannot be due to cell division (C62) is sound given the cited knowledge that muscle cells do not divide in adults (C61). This result provides the first experimental evidence for turnover of RNAi intermediates in non-dividing cells, supporting a key assumption of the dynamic model.",
+    "evaluation": "Claims C55-C57 present time-course experimental data showing recovery from silencing. Claims C58-C60 provide the logical framework: since muscle cells don't divide in adults (supported by citation C58), recovery must involve RNA turnover rather than dilution. This is the first demonstration of recovery in non-dividing cells despite RNA amplification, making it a significant finding.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
+      "C61",
+      "C62",
       "C63",
       "C64",
-      "C65",
-      "C7",
-      "C85"
+      "C65"
     ],
-    "result": "pUG RNAs are detected within sequences matching the dsRNA trigger, but all pUG RNAs detected using primers ~1 kb upstream are larger than 1 kb, indicating a dearth of pUG RNA formation upstream of the dsRNA-matching region. This suggests that pUG tail addition is enriched within 'pUG zones' matching the dsRNA, arguing against 3' trimming of templates and against successive rounds of 22G RNA production in somatic cells.",
+    "result": "pUG RNAs were detected within sequences matching the dsRNA trigger, but all pUG RNAs detected 1 kb upstream were larger than 1 kb, suggesting enrichment of pUG tail addition within a 'pUG zone' matching the dsRNA. This restricted production supports that amplification is not perpetual and mRNA levels can recover.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C65, C7, C85 are supported by RT-PCR experiments detecting pUG RNAs (Figure 6B-C). The absence of shorter pUG RNAs upstream (C64) is particularly striking given that shorter products should amplify more efficiently, strengthening the conclusion. The inference about restricted pUG zones (C65, C7) is logical, though the mechanism limiting pUG formation to these zones remains unclear. This result challenges models of unlimited siRNA amplification.",
+    "evaluation": "Claims C61-C62 present RT-PCR data showing the distribution of pUG RNAs. Claims C63-C65 are reasonable inferences from the data: the absence of shorter pUG RNAs upstream suggests restricted cleavage/tailing, which would limit perpetual amplification. The experimental approach is appropriate and the conclusions are logical.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C3",
-      "C4"
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
     ],
-    "result": "RDE-10, MUT-16, and NRDE-3 work together such that any two are required for silencing unc-22, but each is singly required for silencing bli-1, and only the requirement for NRDE-3 can be overcome by enhanced dsRNA processing.",
+    "result": "A dynamic model of RNAi reveals that different genes can have different residual RNA concentrations after silencing, that silencing can alter pre-mRNA/mRNA ratios, and that time to knockdown and duration are uncorrelated. The model also shows that 2\u00b0 siRNA accumulation does not correlate with silencing efficiency, increased transcription reduces knockdown, and genes with higher mRNA turnover are harder to silence.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C4 summarize the main findings and are directly supported by the experimental data in Figures 1-3. These claims integrate multiple lines of evidence including genetic screens, genome editing, and bypass experiments. The 'any two of three' requirement is clearly demonstrated, and the selective bypass of NRDE-3 requirements is well-documented.",
+    "evaluation": "Claims C43-C49 present results from computational modeling using ordinary differential equations. The model incorporates known biological processes and explores parameter space systematically. The predictions are testable and some are validated experimentally elsewhere in the manuscript. The modeling approach is appropriate and the conclusions are well-supported by the simulations.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C72",
-      "C73"
+      "C66",
+      "C67",
+      "C69"
     ],
-    "result": "The authors propose that in eri-1(\u2212); nrde-3(\u2212) double mutants, a different 2\u00b0 Argonaute compensates for NRDE-3 loss, whereas in mut-16(\u2212); eri-1(\u2212) or rde-10(\u2212); eri-1(\u2212) double mutants, the reduction of 2\u00b0 siRNAs is too great to cause detectable bli-1 defects.",
+    "result": "An intersecting network of regulators (MUT-16, RDE-10, NRDE-3, and other Argonautes) can explain silencing of somatic targets despite stark differences in genetic requirements for different genes. Combined loss of MUT-16 and RDE-10 eliminates all silencing and cannot be overcome by enhanced dsRNA processing. There is a dearth of pUG RNA generation by 2\u00b0 siRNAs, consistent with lack of 3\u00b0 siRNAs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C72-C73 are speculative explanations for observed genetic interactions. While the experimental observations are sound (Figure 3), the proposed mechanisms are not directly tested. Alternative explanations, such as differential thresholds or tissue-specific effects, are not ruled out. These claims represent reasonable hypotheses that require further experimental validation.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is a summary conclusion supported by the totality of experimental and modeling data. Claim C67 is directly supported by experimental data in Figures 1 and 3. Claim C69 is supported by the pUG RNA detection experiments in Figure 6C. These claims synthesize the major findings of the manuscript.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C96"
+      "C3",
+      "C4"
     ],
-    "result": "The authors propose a model for 22G RNA production where non-processive RdRPs make heterogeneous short RNAs, 2\u00b0 Argonautes bind the 5' ends, and RDE-10 and/or associated proteins trim the 3' ends to generate 22-nt siRNAs.",
+    "result": "RDE-10, MUT-16, and NRDE-3 work together such that any two are required for silencing unc-22, but each is singly required for silencing bli-1. Only the requirement for NRDE-3 can be overcome by enhanced dsRNA processing.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C96 is a proposed mechanistic model based on structural homology (C71, C87) and genetic data, but lacks direct biochemical evidence. The model is plausible given RDE-10's structural similarity to ERI-1 and the known role of exonucleases in small RNA maturation in other systems (C93-C95). However, no direct demonstration of RDE-10's biochemical activity or its interaction with pre-22G RNAs is provided. This remains a testable hypothesis.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize key findings that are directly supported by experimental data in Figures 1-3. The genetic requirements are clearly demonstrated, and the selective bypass of NRDE-3 by enhanced dsRNA processing is experimentally validated. This is a central finding of the manuscript.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C76",
-      "C80"
+      "C5",
+      "C6",
+      "C7"
     ],
-    "result": "Production of 2\u00b0 siRNAs in response to dsRNA is eliminated in animals lacking both MUT-16 and RDE-10, and RDE-10 and associated proteins play an independent role in 2\u00b0 siRNA amplification.",
+    "result": "Quantitative modeling led to three experimental discoveries: (1) changing cis-regulatory elements reduces NRDE-3 dependence, (2) animals can recover from silencing in non-dividing cells, and (3) pUG RNA production is enriched in zones matching the dsRNA.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C76 and C80 are inferences based on genetic data showing that mut-16(\u2212) rde-10(\u2212) double mutants fail to silence even unc-22 (Figure 3C). The inference that 2\u00b0 siRNA production is eliminated is logical but indirect, as 2\u00b0 siRNA levels were not directly measured in these mutants. The claim about RDE-10's independent role (C80) is supported by the observation that mut-16(\u2212) single mutants retain some silencing ability that is lost when rde-10 is also removed.",
+    "evaluation": "These claims summarize predictions from modeling that were experimentally validated. Each prediction is supported by experimental data presented in Figures 5 and 6. The integration of modeling and experimental validation is a strength of the work.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C101",
-      "C102",
-      "C103",
-      "C104",
-      "C105"
+      "C77",
+      "C79",
+      "C83",
+      "C84"
     ],
-    "result": "The modeling results suggest practical implications for RNAi-based therapeutics: drugs with longer onset may have longer duration, genes with higher mRNA turnover or transcriptional upregulation are harder to silence, genes with high silencing thresholds are more prone to resistance through single mutations, while genes with lower thresholds make better targets.",
+    "result": "The Ser228Phe mutation in RDE-10 is predicted to disrupt the Maelstrom domain based on structural modeling. RDE-10 has structural homology with the 3'-5' exonuclease ERI-1 but not with MUT-7.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C101-C105 are logical inferences from the modeling results (Figure 4). These predictions follow from the model's dynamics and are conceptually sound. However, they remain theoretical predictions that would benefit from experimental validation in therapeutic contexts. The uncorrelated relationship between \u03c4kd and tkd (C49) supports C101, and the effects of transcription and turnover (C51-C52) support C102-C103. Claims C104-C105 about resistance are reasonable extrapolations from the genetic data.",
+    "evaluation": "Claims C77, C83-C84 present structural analysis using AlphaFold predictions and structural alignments. Claim C79 is supported by Figure 1\u2014figure supplement 2. The structural predictions are reasonable given the methods used, though experimental validation of the predicted structural disruption would strengthen the conclusions.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C1",
-      "C2",
       "C8",
       "C9",
       "C10",
@@ -208,64 +199,179 @@
       "C13",
       "C14",
       "C15",
-      "C16",
-      "C17",
-      "C18",
-      "C19"
+      "C16"
     ],
-    "result": "Background claims establishing the RNAi pathway in C. elegans and its conservation across organisms, including dsRNA import, processing by RDE-4/DCR-1, recognition by RDE-1, pUG RNA formation, 2\u00b0 siRNA amplification by MUT-16/RDE-10, and nuclear silencing by NRDE-3.",
+    "result": "The manuscript describes the established RNAi pathway in C. elegans, including dsRNA import through SID-1, processing by RDE-4 and DCR-1, recognition by RDE-1, pUG RNA formation by RDE-3, amplification by RdRPs facilitated by MUT-16 and RDE-10, and recognition by secondary Argonautes including nuclear NRDE-3.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C2, C8-C19 provide established background knowledge supported by extensive citations to prior work. These claims accurately represent the current understanding of the RNAi pathway and set the context for the current study. Claim C2 is the key observation that motivates the current work and is supported by the experimental data presented.",
+    "evaluation": "Claims C8-C16 describe established knowledge about the RNAi pathway, each supported by appropriate citations to prior work. These provide necessary background context for the novel findings but are not new results from this study.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C74",
-      "C75",
-      "C77",
-      "C78",
-      "C79",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C97",
-      "C98",
-      "C99"
+      "C25",
+      "C26"
     ],
-    "result": "Background claims about MUT-16, RDE-10, and related proteins, including their localization, roles in small RNA pathways, structural features, and comparisons to similar systems in other organisms.",
+    "result": "RDE-1 is required for silencing all somatic targets, and MUT-16 and RDE-10 are proposed to act in parallel downstream of RDE-1 to promote 2\u00b0 siRNA amplification.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C68-C71, C74-C75, C77-C79, C81-C84, C86-C90, C92-C95, C97-C99 provide relevant background information supported by citations to published work. These claims accurately represent prior knowledge about the proteins and pathways studied. The structural homology between RDE-10 and ERI-1 (C71, C87) is supported by structural analysis (Figure 1\u2014figure supplement 2) and provides important context for the proposed model.",
+    "evaluation": "Claim C25 is supported by citations and is established knowledge. Claim C26 is a reasonable model based on the genetic data showing that loss of both MUT-16 and RDE-10 eliminates silencing. The model is consistent with the data though alternative models may exist.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C100"
+      "C73",
+      "C74",
+      "C75"
     ],
-    "result": "Silencing can fade despite the production of 2\u00b0 siRNAs, highlighting the importance of dosage for all RNAi systems.",
+    "result": "MUT-16 is found in germline perinuclear foci and throughout the soma, is required for silencing most somatic targets except unc-22 (which shows residual silencing), and unc-22 is a particularly sensitive RNAi target.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C100 is directly supported by the pulse-chase experiment (Figure 6A) showing recovery from silencing. This observation is important for understanding the dynamics of RNAi and has practical implications for therapeutic applications. The claim appropriately emphasizes that even systems with amplification mechanisms require sustained dsRNA exposure for maintained silencing.",
+    "evaluation": "These claims describe prior knowledge about MUT-16 and unc-22, each supported by appropriate citations. They provide context for why these genes were chosen for study but are not new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C82"
+    ],
+    "result": "The lack of unc-22 silencing in double mutants suggests that 1\u00b0 siRNA production and RDE-1-mediated recognition is likely insufficient for silencing most genes. Gene-specific requirements reflect quantitative contributions within an intersecting network rather than different pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable inferences from the experimental data. The conclusion that 1\u00b0 siRNAs alone are insufficient is supported by the double mutant data. The intersecting network model is supported by both experimental data and computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Proposed explanations for bypass experiments: in eri-1(-); nrde-3(-) mutants, a different 2\u00b0 Argonaute may compensate for NRDE-3, while in mut-16(-); eri-1(-) or rde-10(-); eri-1(-) mutants, the reduction in 2\u00b0 siRNAs is too great for detectable silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative explanations for experimental observations (C80, C81). While plausible, they are not directly tested. Alternative explanations may exist. The claims are clearly presented as interpretations rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "A proposed model for 22G RNA production: non-processive RdRPs make heterogeneous short RNAs, 2\u00b0 Argonautes bind the 5' ends, and RDE-10 and/or associated proteins trim excess 3' sequence to generate 22-nt siRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a proposed mechanistic model (C94) based on inference from experimental data and structural homology. While the model is plausible and consistent with available data, it lacks direct experimental validation of the proposed trimming mechanism. The authors appropriately note that future studies are needed to test the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Implications for drug development: genes with high silencing thresholds may develop resistance more easily through single mutations, while genes with lower thresholds remain silenced despite mutations in many regulators. The ideal drug would require minimal dose and use multiple intersecting paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C70-C72) are speculative extrapolations about drug development implications. While they follow logically from the findings, they are not experimentally tested in the manuscript. The speculation is reasonable but represents future applications rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Animals with bli-1 3'cis downstream of unc-22 coding sequence showed substantial twitching even without unc-22 RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by experimental data in Figure 5\u2014figure supplement 1B. However, the result is somewhat difficult to interpret as it suggests the cis-regulatory swap itself affects gene function independent of RNAi, which complicates interpretation of the RNAi experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Background on exonuclease activities: ERI-1 can trim RNA overhangs in vitro and is required for 26G RNA production and rRNA maturation. Maelstrom proteins in insects show endonuclease activity. RDE-10 can interact with ERGO-1. Similar trimming mechanisms exist in plants and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C85-C93) describe prior work from the literature, each supported by appropriate citations. They provide context for the proposed model of RDE-10 function but are not new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Plants and some insects have RdRPs that could make 2\u00b0 siRNAs, while many animals including humans lack RdRPs and are unlikely to produce 2\u00b0 siRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe established knowledge about the distribution of RdRPs across species, supported by citations (C95-C96) and general knowledge (C97). This provides context for the broader relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Implications for drug efficacy: silencing can fade despite 2\u00b0 siRNA production, drugs with slower onset may have longer-lasting effects, genes with higher mRNA turnover are harder to knockdown, and genes undergoing transcriptional upregulation during drug administration will be difficult to silence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is directly supported by experimental data. Claims C99-C101 are inferences from modeling results that are reasonable but somewhat speculative regarding drug applications. The modeling predictions are sound but their practical relevance to drug development is not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17"
+    ],
+    "result": "Background and motivation: dsRNA is generally effective for silencing many genes, but loss of some RNAi regulators in C. elegans can selectively impair silencing of some genes. Past studies have shown gene-specific differences in RNAi efficacy under different conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is general knowledge, C2 is supported by data in the manuscript, and C17 is supported by citations to prior work. These provide the motivation for the study but are not new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The biochemical function of RDE-10 is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a statement about the current state of knowledge in the field, which is accurate based on the literature. It motivates the structural analysis and proposed model for RDE-10 function.",
     "result_type": "MINOR"
   }
 ]

@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C24",
+      "C25",
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C57",
+      "C58",
+      "C75"
+    ],
+    "result": "RNNs can approximate the true generative model's predictive performance and the point of early stopping reflects the amount of noise in behavioral data. In simulations, RNNs achieved the second-best predictive score after the true generative model across different theoretical models (C37, C38), and the number of optimal training epochs correlated negatively with true noise levels regardless of the underlying generative model (C43, C44). These findings support the hypothesis that RNN predictive performance and early stopping can distinguish model misspecification from irreducible stochasticity (C3, C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (C37, C43, C44) provide strong evidence that RNNs can approximate diverse behavioral models and that early stopping correlates with noise levels. The theoretical framework (C19, C20, C24, C25) is validated by empirical simulation data showing consistent patterns across different generative models. The claims are internally consistent and supported by quantitative results (r=-0.67 to -0.74 correlations, 86% classification accuracy).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C40",
+      "C41",
+      "C108"
+    ],
+    "result": "RNNs can classify model misspecification with 86% accuracy in simulated agents, outperforming logistic regression (70% accuracy). The predictive performance of pre-trained RNNs using three datasets per agent successfully distinguished whether agents were misspecified by theoretical models (C31), and the number of optimal epochs from RNNs with random weights provided estimates of noise levels (C32). RNNs achieved higher true negative rates compared to logistic regression (C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification analysis provides clear quantitative evidence (C40) with specific accuracy metrics. The comparison between RNN and logistic regression is well-documented (C108), and the methodology is described with appropriate detail (C31, C32). The simulation design with three hypothetical labs provides a rigorous test of the classification approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C62",
+      "C74"
+    ],
+    "result": "In empirical data, low IQ participants showed lower predictability by the hybrid model (C4, C34), but RNN analysis revealed this was due to noisier behavior rather than model misspecification. The lack of IQ \u00d7 model type interaction (C49, C50) and the correlation between IQ and optimal epochs (C53) converge to suggest that low IQ individuals exhibit noisier decision-making (C6, C36, C62) with similar rates of model misspecification across IQ levels (C5, C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the statistical analyses are reported (posterior median = -0.11, 95% HDI between -0.35 and 0.13, pd 81.1% for interaction), the evidence for the null interaction effect is relatively weak (pd 81.1% is below conventional thresholds). The correlation between IQ and optimal epochs (r=0.33, p<0.05) provides supporting evidence, but the small sample size (N=54) and temporal confounds acknowledged in C69 introduce uncertainty. The conclusion about noise vs. misspecification relies heavily on interpreting a null effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Higher IQ individuals had higher predictive scores (posterior median = 0.614, 95% HDI 0.022-1.208), and RNN models obtained higher predictive scores than hybrid models on average (posterior median = 9.577, 95% HDI 6.94-12.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward main effects from Bayesian regression with clear posterior distributions and high probability of direction (pd 97.9% and 100%). The statistical evidence is strong and the claims are well-supported by the reported analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The simulation study design involved 100 agents per theoretical model (Hybrid, Habit, K-DH), each simulated for three blocks of 200 trials. Three hypothetical labs were assumed, each knowing only one data-generating model. RNNs were pre-trained on auxiliary data (200 agents, two blocks each) and then fine-tuned individually using early stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims describe the simulation design clearly and consistently. The approach is well-documented with specific parameters (100 agents, 200 trials, three blocks) and follows standard machine learning practices for pre-training and fine-tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "The number of optimal epochs is not an absolute estimate and can be influenced by factors including network architecture, learning rate, number of observations, and network size (C45, C68). The simulations were confined to known models (C70), and whether RNNs provide optimal fits for more complex tasks remains uncertain (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are acknowledged limitations that are appropriately cautious. The authors recognize factors that could influence their estimates (C68) and the need for validation on other model classes (C70). These represent honest assessments of the method's boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The empirical dataset had temporal confounds, with test data collected 6-18 months after training data, introducing the possibility of changes in decision-making strategies over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a clearly stated limitation of the empirical study design. The temporal gap between training and test sets is a valid concern that could affect generalization performance and is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "In the empirical study, RNN enhanced predictive accuracy uniformly for all participants, with no consistent difference in RNN improvement over the theoretical model based on IQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are supported by the lack of interaction effect reported in C49 and represent an important empirical observation that differs from the simulation scenarios. The uniform improvement pattern is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Theoretical computational models map latent cognitive processes to behavior but face the challenge that the true underlying model is always unknown (C7, C8). Model misspecification occurs when theoretical assumptions differ from true cognitive mechanisms (C9), and predictive gaps arise from both model misspecification and irreducible stochasticity (C10, C11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established principles in computational modeling, supported by appropriate citations (Box 1979, Beck et al. 2012, Nassar and Frank 2016, Griffiths and Schroeter 2018). The theoretical framework is sound and widely accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Neural networks, particularly RNNs, have been shown to surpass theoretical models in action prediction and can capture behavioral features that traditional models miss. However, they are overparameterized, flexible models that are often considered black boxes despite attempts at interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior work with appropriate citations (Dezfouli et al. 2019a,b; Fintz et al. 2022; Song et al. 2021). The characterization of neural networks as flexible but difficult to interpret is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C26",
+      "C27",
+      "C59"
+    ],
+    "result": "Early stopping is a common technique to prevent overfitting in neural networks. Estimating early stopping requires only two datasets (training and validation), while predictive accuracy estimation requires three datasets (training, validation, test), making early stopping more data-efficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate methodological statements about standard machine learning practices, supported by appropriate citations (Bishop and Nasrabadi 2006). The data requirements are correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "The study used a two-step reinforcement learning task with specific transition probabilities (0.7 common, 0.3 rare) and binary rewards. Three theoretical models were implemented (Hybrid, Habit, K-DH) with specific architectures. The RNN used a GRU architecture with 5 hidden units (192 parameters) trained with Adam optimizer. The empirical dataset came from the NSPN U-Change Cognition Cohort with N=54 participants performing the task at three time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly and consistently described throughout the manuscript. The task structure, model architectures, and dataset characteristics are well-documented with appropriate citations and specific parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "If a theoretical model is severely misspecified, theory-independent models should show significant improvement in prediction. However, if behavior is simply noisier, little to no improvement is expected from theory-independent models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are logical predictions that follow from the theoretical framework. They represent testable hypotheses that are subsequently evaluated in the empirical studies. The reasoning is sound and forms the basis for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The logistic regression model achieved poorer predictive scores compared to RNN, implying it is less expressive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is supported by the simulation results showing RNN achieved 86% classification accuracy versus 70% for logistic regression (C40). The comparison provides evidence for the relative expressiveness of the two approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "The study makes four key contributions: (1) validating that RNNs achieve nearly optimal fit across behavioral models, (2) introducing early stopping as a measure of inherent noise, (3) applying RNNs to multistage two-step tasks, and (4) investigating the relationship between model misspecification and intelligence scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contributions are clearly stated and supported by the results presented in the manuscript. Each contribution is demonstrated through either simulation (C57, C58) or empirical analysis (C60, C61).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The findings relate to concepts of 'decision acuity' (related to inverse temperature) and 'computation noise' (inherent to learning processes) from prior literature. The advantage of the current method is that it can estimate noise without specifying a theoretical mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately contextualize the findings within existing literature (Moutoussis et al. 2021, Findling et al. 2019) and correctly identify a methodological advantage of the RNN approach. The connections to prior work are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "Fitting data-driven neural networks is not sufficient for comprehensive theoretical description. Best practices require identifying conditions where models struggle and describing alternative theoretical models. Caution is warranted in equating RNN performance with generative model performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate acknowledgments of the limitations of data-driven approaches. The authors correctly note that RNNs complement but do not replace theoretical modeling (C66, C67) and that RNN performance should not be directly equated with the true generative model (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Theoretical computational models do not equally explain data across participants, with some individuals showing bigger predictive gaps than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-established observation in computational modeling that motivates the study. It is supported by the empirical findings showing variation in model fit across participants (e.g., C4, C34).",
+    "result_type": "MINOR"
+  }
+]

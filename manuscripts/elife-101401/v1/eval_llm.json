@@ -1,0 +1,407 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C16",
+      "C52",
+      "C57",
+      "C64",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The authors designed and synthesized novel pre-vinylsulfone prodrug compounds containing: (1) a primary sulfonamide group for CA recognition, (2) high-affinity moieties (cyclooctyl/cyclododecyl rings) for CAIX selectivity, and (3) SO2CH2CH2OCOR groups (esters or carbamates) that transform into reactive vinylsulfone warheads capable of covalently modifying His64 in the active site. This represents a novel warhead strategy for targeted covalent inhibition of histidine residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by extensive synthetic chemistry data (C57, C64, C167), structural characterization, and mechanistic evidence. The three-way recognition model (C4-C6, C81, C166) is clearly articulated and supported by control compounds (C70-C73) that validate the mechanism. The novelty of the pre-vinylsulfone warhead for histidine modification is established (C16, C63, C176).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The covalent modification mechanism proceeds via \u03b2-elimination of the SO2CH2CH2OCOR group in the enzyme active site, facilitated by fluorine electron-withdrawal, to generate a reactive vinylsulfone that then forms a covalent bond with His64. This mechanism was validated through control compounds (3, 9, 15) and requires specific structural features including the SO2 group at the para position and the -O-CO-R leaving group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed mechanism is well-supported by systematic structure-activity relationships (C67-C68), control compounds that prevent elimination (C70-C73), and demonstration that pre-formed vinylsulfone (compound 15) readily forms covalent bonds (C74-C75). The requirement for specific structural features is clearly demonstrated through negative controls. The novelty of applying this chemistry to enzyme inhibition is established (C63, C176).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C180"
+    ],
+    "result": "X-ray crystallography confirmed covalent bond formation between the compounds and histidine residues in CA isozymes, with compounds 21, 20, and 23 forming covalent bonds with His67 in CAI and His64 in CAII and CAIX. The distance between the histidine nitrogen and vinyl carbon was ~1.5 \u00c5, consistent with covalent bond length, with strong electron density visible in all structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic evidence (C82-C86) provides direct structural confirmation of covalent bond formation with appropriate bond distances and electron density. The data are presented with proper refinement statistics (Table 1) and multiple structures across different CA isozymes strengthen the conclusions. This represents gold-standard evidence for covalent modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Mass spectrometry confirmed covalent modification of CA isozymes by compound 12, showing a 319 Da mass shift (corresponding to compound minus ester group) for all isozymes except CAIII. Peptide mapping confirmed exclusive modification of the His64-containing peptide in CAXIII. However, NMR data revealed minor off-target modification in CAII, suggesting ester compound 12 may be too reactive for fully specific inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MS data (C87-C91, C98-C100) provide strong evidence for covalent modification with precise mass shifts matching the expected values. Peptide mapping (C91) confirms site-specificity for the primary modification site. The NMR evidence (C92) appropriately identifies a limitation (off-target modification), and the authors correctly conclude that ester 12 may be too reactive (C93, C101). The inclusion of negative control compound 6 (C94) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C95",
+      "C96",
+      "C97",
+      "C116",
+      "C117",
+      "C118",
+      "C157"
+    ],
+    "result": "Carbamate-containing compounds (18, 19, 22) were designed as less reactive alternatives to ester compounds, showing significantly slower (at least 100-fold) covalent modification rates while maintaining specificity. Compound 22 exhibited highly specific but slower modification of CAIX, representing an optimized balance between reactivity and selectivity suitable for drug design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The design rationale (C76-C77, C95, C116) is clearly articulated and supported by comparative data showing slower reaction rates for carbamates versus esters (C78, C97, C117). The characterization of compound 22 (C96-C101) demonstrates the desired properties. The conclusion about achieving a good balance for drug design (C101, C157) is reasonable based on the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C181"
+    ],
+    "result": "Dialysis experiments demonstrated irreversible inhibition by covalent compounds. Both non-covalent compound 5 and covalent compound 20 fully inhibited CAIX enzymatic activity at 1:1 molar ratio, but after 32-hour dialysis, CAIX with non-covalent 5 regained 73% activity while CAIX with covalent 20 showed no detectable activity recovery, confirming irreversible covalent modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dialysis experiment (C102-C107) is well-designed to distinguish reversible from irreversible inhibition. The comparison between covalent and non-covalent compounds provides appropriate controls, and the results clearly demonstrate irreversibility of covalent modification (C107, C181). The experimental design and interpretation are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The primary sulfonamide group is essential for guiding compounds to the CA active site and enabling specific His64 modification. Secondary sulfonamide 13 showed minimal covalent modification of CAII (only minor fraction after 2 hr at 10:1 ratio) compared to complete modification by primary sulfonamide 12 under identical conditions, with modification by 13 likely occurring at different nucleophilic residues outside the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between primary (12) and secondary (13) sulfonamides (C108-C115) provides strong evidence for the importance of the primary sulfonamide in directing site-specific modification. The MS data clearly show the difference in modification efficiency (C109-C110), and the inference about off-target modification by 13 (C112, C115) is reasonable given its low affinity for CA isozymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Covalent compounds specifically bound to CAIX expressed on live HeLa cell surfaces in a dose-dependent manner, competing with fluorescein-labeled GZ19-32. Para-substituted non-selective compounds (12, 18) showed weaker binding (15-22 nM) than meta-substituted CAIX-selective compounds, with ester compounds 20 and 24 exhibiting single-digit nanomolar affinities (1.8-4.0 nM) and carbamate compound 22 showing the highest affinity (300 pM) for cell-surface CAIX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-based competition assay (C119-C125) provides strong evidence for specific binding to CAIX on live cells without off-target modification of abundant cell-surface proteins. The systematic comparison of compounds with different structural features (C126-C135) demonstrates clear structure-activity relationships. The conclusion that compound 22 is a lead candidate (C136-C137) is well-supported by the data showing highest affinity and irreversible inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Fluorescence-based thermal shift assay (FTSA) was used to determine apparent dissociation constants (Kd,app) of covalent compounds across all 12 catalytically active CA isozymes. Compound 22 showed extremely tight binding to CAIX (Kd,app = 7.8 pM), representing the highest affinity among known CAIX-binding compounds. Covalent compounds showed 10-1000-fold higher apparent affinity than their non-covalent analogs, with the measurements being time-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FTSA methodology (C147) is appropriate for comparing relative affinities of covalent compounds, and the time-independence validation (C150) addresses a key concern. The comprehensive dataset across all CA isozymes (C154) is valuable. However, the authors appropriately acknowledge limitations in interpreting Kd,app for covalent compounds (C142-C146), noting the interplay of kinetic and thermodynamic factors. The claim of highest affinity for CAIX (C148) is supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C148",
+      "C163"
+    ],
+    "result": "The lead covalent CAIX-targeting compounds achieved picomolar affinities, with compound 22 reaching 7.8 pM (FTSA) or 2 pM (abstract claim), representing the highest affinity among known CAIX inhibitors and a rare level of affinity among any protein-ligand interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "There is a discrepancy between the reported affinities: the abstract claims 2 pM (C9), while the FTSA data shows 7.8 pM for compound 22 (C148), and the cell-based assay shows 300 pM (C135). These differences may reflect different assay methods and the complex kinetics of covalent inhibitors, but the inconsistency should be clarified. The claim of \"highest among known CAIX inhibitors\" (C9, C148, C163) requires comparison with literature values not fully presented. The interpretation of apparent Kd for covalent compounds remains challenging as acknowledged by the authors (C142-C146).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C162"
+    ],
+    "result": "The cyclooctyl or cyclododecyl ring at the meta-position provides CAIX selectivity by fitting into a hydrophobic pocket in CAIX but not readily into other isozymes. This structural feature both increases affinity for CAIX and greatly reduces affinity for non-target CAI and CAII, as part of a three-way recognition model involving sulfonamide-Zn coordination, selective ring recognition, and covalent His modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The selectivity mechanism (C80-C81, C162) is supported by prior work from the same group (citations in C80) and consistent with the binding data showing differential affinities across isozymes (Table 4). The three-way recognition model (C81) integrates multiple lines of evidence including crystallography, binding data, and structure-activity relationships. The explanation is mechanistically sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C164"
+    ],
+    "result": "A dual CAIX/CAXII targeting strategy may be beneficial since both isozymes are overexpressed in some cancers, while inhibition of the remaining 10 CA isozymes would cause harm. The covalent bond provides several hundred-fold gain in affinity, and compound 22 is more promising than compound 23 as a drug candidate due to slower covalent bond formation rate and lower off-target toxicity risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for dual CAIX/CAXII targeting (C158-C160) is reasonable based on cancer biology knowledge. The quantification of affinity gain from covalent bonding (C161) is supported by the comparative data in Table 4 and Figure 8. The preference for compound 22 over 23 (C164) is justified by the slower reaction kinetics of carbamates versus esters, reducing off-target modification risk. However, the claim about \"harm\" from inhibiting other isozymes (C160) is stated without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background on carbonic anhydrases and CAIX: There are 12 catalytically active CA isozymes in humans with different cellular localizations. CAIX is a hypoxia-inducible transmembrane protein overexpressed in hypoxic solid tumors that participates in cancer cell proliferation, metastasis, and interacts with transporters and adhesion proteins. Targeting CAIX is proposed to have therapeutic benefits, and isozyme-selective inhibitors would be more beneficial than current non-selective CA inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C2-C3, C25-C42) represent well-established background knowledge appropriately cited from the literature. The characterization of CA isozymes, their localization, and CAIX's role in cancer are supported by the cited references. This provides appropriate context for the study but does not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on targeted covalent inhibition: TCI compounds bear warheads (usually Michael acceptors) that initially bind reversibly then form irreversible covalent bonds with nucleophilic residues (mostly cysteine). This provides advantages including prolonged action, full target inactivation, lower dosages, and higher selectivity. However, histidine has weaker nucleophilicity than cysteine, and existing histidine-targeting compounds are highly reactive with poor selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C24) represent accurate background knowledge from the literature, appropriately cited. The description of TCI mechanisms, advantages, FDA-approved examples, and challenges with histidine targeting provides essential context for understanding the novelty of the current work. The characterization of existing histidine-targeting methods and their limitations is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background on prior CA covalent inhibitors: Previous covalent inhibitors for CAI and CAII (bromoacetazolamide, N-bromoacetylacetazolamide) formed covalent bonds with His67 (CAI) or His64 (CAII) but research was discontinued. Recent studies used CA as a model protein for fluorescent probes, with some compounds showing selective His64 modification. Different warheads including S(IV) fluoride have been applied to modify His64 and His3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C43-C51) accurately represent prior work on covalent CA inhibitors, appropriately cited from the literature. This historical context is important for establishing the novelty of the current approach, particularly the distinction that prior compounds were either discontinued or designed as probes rather than therapeutic inhibitors. The background is accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Summary of key findings: MS and X-ray crystallography confirmed covalent binding to His64. The sulfonylethyl ester/carbamate acts as a prodrug, undergoing elimination in the active site to form reactive vinylsulfone that then covalently modifies His64. This mechanism has great potential for developing high-affinity isozyme-selective compounds that could become precursors of new-generation drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C54-C56, C179-C181) accurately summarize the key findings that are supported by the detailed experimental evidence presented in other claim groups. The characterization of the prodrug mechanism (C55) is supported by the mechanistic studies. The forward-looking statement about potential (C56) is reasonable speculation based on the demonstrated proof-of-concept, though it remains to be validated through further drug development studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Initial compound design and discovery: The benzenesulfonamide group coordinates with Zn(II), and fluorine atoms were included to lower sulfonamide pKa and strengthen interaction. Surprisingly, compounds containing the -SO2CH2CH2OCOR group exhibited extremely strong binding affinity and formed unexpected covalent bonds with the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C58-C61) describe the initial design rationale and serendipitous discovery of covalent modification. The design logic for including fluorines (C59) is chemically sound. The characterization of the discovery as \"unexpected\" (C61) is appropriate given that this represents a novel warhead strategy. The claims are supported by the subsequent detailed mechanistic and binding studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Considerations for interpreting covalent compound affinities: Covalent compounds form irreversible bonds through a two-stage mechanism involving initial reversible binding followed by covalent modification. It is incorrect to use conventional Kd for covalent compounds since eventually all protein will be modified regardless of affinity. A rapid pre-equilibrium followed by slow covalent modification can be assumed, making relative affinity measurements valid but requiring cautious interpretation due to kinetic and thermodynamic contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C138-C146) provide important methodological considerations for interpreting the binding data. The authors appropriately acknowledge the limitations of using conventional dissociation constants for covalent inhibitors (C142-C143) and explain why relative comparisons remain valid (C145). This transparent discussion of limitations strengthens rather than weakens the overall conclusions and demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Discussion of covalent inhibitors in drug development: Covalent inhibitors have gained attention for advantages including complete target inhibition, low dosage, and effectiveness against mutated targets. Despite concerns about off-target toxicity, successful examples (ibrutinib, penicillin, aspirin) demonstrate that carefully designed covalent compounds can be safe. The most common strategy is attaching optimized warheads to known leads, but balanced reactivity is essential, with only six warheads currently FDA-approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points (C169-C175) provide appropriate context from the literature about covalent inhibitors in drug development. The cited examples of successful covalent drugs (C170) are accurate, and the emphasis on balanced reactivity (C174) is relevant to the design strategy employed in this work. The statement about only six FDA-approved warheads (C175) provides important perspective on the significance of developing new warhead chemistries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C10",
+      "C56"
+    ],
+    "result": "Broader applicability and potential: Targeted covalent compounds possess high initial affinity and selectivity followed by complete irreversible inactivation. The strategy could potentially be applied to any disease drug target protein bearing a His residue near the active site, with potential for developing new-generation drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim about broader applicability to any protein with His near the active site (C10) is speculative and not directly tested in this work. While the proof-of-concept with CA isozymes is strong, extending this to other protein targets would require: (1) demonstration that the elimination mechanism works in different active site environments, (2) evidence that sufficient selectivity can be achieved for other targets, and (3) validation that the approach works for proteins beyond the CA family. These remain important future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

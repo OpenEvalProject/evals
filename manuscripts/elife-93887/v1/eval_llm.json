@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study recruited 86 participants (20 MDD, 12 GAD, 54 healthy controls) with diagnoses confirmed via SCID for a subset, and symptom severity measured using multiple clinical questionnaires analyzed via bifactor analysis yielding three orthogonal factors (general, depression-specific, anxiety-specific).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C53-C57 provide comprehensive documentation of participant recruitment, diagnostic procedures, and clinical assessment methods. The use of standardized diagnostic interviews (SCID) for a subset and validated clinical questionnaires with bifactor analysis provides adequate methodological rigor for characterizing the sample, though the inconsistent use of SCID across all participants (C54) introduces some heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The volatile reversal learning task involved choosing between two stimuli across four contexts (reward/aversive \u00d7 stable/volatile), with stable contexts maintaining 75% feedback probability and volatile contexts switching dominant stimulus every 20 trials between 20% and 80% probabilities, with no explicit cues for context transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 and C58-C63 provide clear and detailed description of the experimental paradigm. The task design is well-specified with appropriate parameters for studying learning under uncertainty. The completion rates (C61-C63) indicate good participant retention, though incomplete data from 7 participants may introduce minor selection effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Patients with MDD and GAD exhibited three key behavioral deficits: significantly lower hit rates (p=0.001, d=0.723), slower learning curves with larger deviations from true feedback probability, and reduced hit rate differences between volatile and stable contexts (p=0.046, d=0.478), with the latter marginally associated with symptom severity (r=-0.194, p=0.074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 present converging behavioral evidence with appropriate statistical tests and effect sizes. The three behavioral patterns are well-documented in Figure 2 and supported by significant statistical tests. The marginal association with symptom severity (C6, p=0.074) is appropriately characterized as marginal rather than significant, showing appropriate statistical interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The mixture-of-strategies (MOS) model, which posits that behavior arises from weighted combinations of three strategies (EU: cognitively demanding but optimal; MO: magnitude-only, simpler; HA: habitual repetition), provided the best fit to behavioral data as measured by BIC (MOS6) and group-level Bayesian model comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 demonstrate superior model fit using multiple metrics (BIC, AIC, PXP) with appropriate citations to model selection criteria. Claims C34-C37 provide clear theoretical justification for the model architecture. The model comparison is rigorous and the theoretical framework is well-motivated, though the choice of these specific three strategies could benefit from additional justification beyond fit metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C20",
+      "C19"
+    ],
+    "result": "The MOS models revealed no significant group differences in learning rate parameters (MOS6: p=0.493, d=0.151) and no learning rate adaptation effect across volatile/stable contexts (MOS22: p=0.724, \u03b7\u00b2<0.001), with no correlation between learning rate adaptation and symptom severity (r=0.130, p=0.233).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C20, and C19 provide consistent null findings across multiple model variants with appropriate statistical tests. The absence of learning rate differences is a key finding that challenges traditional interpretations, and the statistical evidence is clear with non-significant p-values and small effect sizes. This represents a theoretically important negative result that is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Simulations revealed that the EU strategy achieved the highest hit rate, the MO strategy performed at chance level, and the HA strategy achieved above-chance hit rate by indirectly tracking feedback probability through repetition of EU-guided choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by simulation results shown in Figure 4B. The mechanistic explanation for HA strategy performance (C15) is plausible and provides insight into strategy interactions. The simulations appropriately isolate individual strategy contributions to understand the mixture model's behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Strategy preferences correlated with symptom severity: patients with more severe symptoms showed weaker preference for EU strategy (r=-0.221, p=0.040), stronger preference for MO strategy (r=0.360, p=0.001), and weaker preference for HA strategy (r=-0.285, p=0.007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 demonstrate clinically relevant correlations between computational parameters and symptom severity with significant statistical tests. The pattern of correlations is theoretically coherent (more severe symptoms \u2192 simpler strategies) and provides important validation of the model's clinical relevance. Effect sizes are moderate and consistent with the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Simulated data from MOS6 reproduced patient behavioral patterns, and when fit with the FLR22 model, showed apparent learning rate adaptation effects (p=0.003, d=0.721) and reduced adaptation in patient-like agents, demonstrating that strategy mixture can mimic learning rate adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide compelling evidence that strategy preferences can produce patterns traditionally attributed to learning rate adaptation. The simulation approach is methodologically sound, showing that fitting FLR22 to MOS6-generated data recovers apparent learning rate effects. This is a critical result demonstrating potential confounding between model interpretations, though the 'trend' language in C23 suggests this effect may be weaker than the others.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Parameter recovery analysis showed accurate estimation of MOS6 parameters (all r>0.720), and model recovery analysis demonstrated that the generating model was always best-fitting, with MOS and FLR models unable to adequately account for each other's synthetic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide essential validation of model identifiability through rigorous parameter and model recovery analyses shown in Figure 7. The high correlations in parameter recovery and successful model recovery demonstrate that the models are distinguishable and parameters are estimable. This addresses critical concerns about model confounding and supports the validity of the model comparison results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Model parameters were estimated using maximum a posteriori (MAP) method with the BFGS algorithm in Python, running 40 optimizations with random initial parameters per participant to avoid local minima, with the MOS22 model having 22 free parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C72-C74 provide adequate methodological detail for parameter estimation. The use of MAP with multiple random initializations is appropriate for avoiding local minima. However, the description lacks some details such as convergence criteria, prior specifications (mentioned elsewhere but not detailed here), and computational validation of convergence across the 40 runs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Prior research has established three phenomena: (1) individuals with anxiety/depression show reduced learning rates, (2) learning rates adapt to environmental volatility (learning rate adaptation), and (3) reduced learning rate adaptation is associated with multiple psychiatric disorders including anxiety, depression, psychosis, and autism spectrum disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 accurately summarize prior literature with appropriate citations. These claims establish the theoretical context and prior findings that the current study challenges. The characterization of prior work appears accurate based on the citations provided, though the authors' interpretation of these findings will be tested by their alternative model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The traditional learning rate approach has limitations: it increases overfitting risk by adding parameters for each context, implicitly assumes learning rate differences explain all behavioral variation, and learning rate is not directly observable, limiting interpretability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present valid critiques of traditional approaches. The overfitting concern (C46) is legitimate when adding context-specific parameters. The assumption critique (C47) is reasonable as it identifies a potential limitation in prior interpretations. The observability limitation (C48) is accurate\u2014learning rates are latent parameters estimated through modeling. These critiques provide appropriate motivation for the alternative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The MOS model reproduces three classic phenomena using strategy preferences without learning rate differences, accounts for novel behavioral patterns unexplained by FLR models, predicts individual symptom severity variations, and suggests atypical strategy preference as a mechanism for learning deficits in psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 summarize the main conclusions of the study. These are supported by the convergent evidence from model fitting (C7-C8), behavioral reproduction (C21), lack of learning rate effects (C12, C20), and symptom correlations (C16-C18). The conclusion about atypical strategy preference as a mechanism (C52) is appropriately framed as a suggestion rather than definitive proof, acknowledging the correlational nature of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The data and code are publicly available via OSF (https://osf.io/8mzuj/) and GitHub (https://github.com/fangzefunny/policy-analysis), respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 provide explicit data and code availability statements with URLs. This supports reproducibility and transparency. The availability of both data and code is a strength, though actual verification of completeness and functionality would require accessing these resources.",
+    "result_type": "MINOR"
+  }
+]

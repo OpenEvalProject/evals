@@ -269,7 +269,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statement based on established clinical knowledge about these disorders.",
+    "evidence": "This is a statement based on established knowledge about these disorders.",
     "evidence_type": [
       "KNOWLEDGE"
     ]
@@ -321,10 +321,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an observation about the field with supporting citations.",
+    "evidence": "This is an observation about the field, with citations to studies that have measured these behaviors.",
     "evidence_type": [
       "CITATION",
-      "KNOWLEDGE"
+      "INFERENCE"
     ]
   },
   {
@@ -335,7 +335,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference about the consequences of current research practices.",
+    "evidence": "This is an inference about the consequences of the current research practices.",
     "evidence_type": [
       "INFERENCE"
     ]
@@ -348,7 +348,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement is supported by citations to the authors' previous work.",
+    "evidence": "This statement is supported by citations to the authors' previous work and replication studies.",
     "evidence_type": [
       "CITATION",
       "DATA"
@@ -356,13 +356,13 @@
   },
   {
     "claim_id": "C28",
-    "claim": "The findings from the modified Pavlovian conditioning paradigm have been replicated by others in both mice and rats.",
+    "claim": "The findings that the modified paradigm elicits both freezing and flight behaviors have been replicated by others in both mice and rats.",
     "claim_type": "EXPLICIT",
     "source": "To address this critical need, we developed a modified Pavlovian conditioning paradigm that elicits both freezing and flight behaviors in response to conditioned stimuli (Fadok et al., 2017; Borkar et al., 2020; Borkar and Fadok, 2021; Borkar et al., 2024), findings that have been replicated by others in both mice and rats (Dong et al., 2019; Totty et al., 2021).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement is supported by citations to Dong et al., 2019 and Totty et al., 2021.",
+    "evidence": "This statement is supported by citations to replication studies by Dong et al., 2019 and Totty et al., 2021.",
     "evidence_type": [
       "CITATION"
     ]
@@ -375,10 +375,9 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct observation from previous studies using this paradigm.",
+    "evidence": "This is a direct observation from the experimental data.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
@@ -389,10 +388,9 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct observation from previous studies using this paradigm.",
+    "evidence": "This is a direct observation from the experimental data.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
@@ -438,7 +436,7 @@
   },
   {
     "claim_id": "C35",
-    "claim": "Some claim that the immediate transition from freezing to flight behavior is a result of the rapid change and relative increase in stimulus intensity from tone to WN caused by non-associative sensitization or inherent stimulus properties, akin to an acoustic startle response.",
+    "claim": "Others claim that the immediate transition from freezing to flight behavior is a result of the rapid change and relative increase in stimulus intensity from tone to WN that is caused by non-associative sensitization, or by inherent stimulus properties, akin to an acoustic startle response.",
     "claim_type": "EXPLICIT",
     "source": "Others claim that the immediate transition from freezing to flight behavior is a result of the rapid change and relative increase in stimulus intensity from tone to WN that is caused by non-associative sensitization, or by inherent stimulus properties, akin to an acoustic startle response (Fanselow et al., 2019; Trott et al., 2022).",
     "source_type": [
@@ -483,20 +481,20 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference about the current state of knowledge and research needs.",
+    "evidence": "This is an inference about the current state of knowledge and the need for further research.",
     "evidence_type": [
       "INFERENCE"
     ]
   },
   {
     "claim_id": "C39",
-    "claim": "An unpaired control procedure was utilized to test the importance of the SCS-shock contingency, in which the US and the SCS were presented in a separated, pseudorandom, and non-predictive fashion.",
+    "claim": "An unpaired control procedure was utilized to test the importance of the SCS-shock contingency.",
     "claim_type": "EXPLICIT",
     "source": "To test the importance of the SCS-shock contingency, we utilized an unpaired control procedure in which the US and the SCS were presented in a separated, pseudorandom, and non-predictive fashion (Rescorla, 1967).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design with a citation to Rescorla, 1967.",
+    "evidence": "This describes the experimental design, with a citation to Rescorla, 1967 for the unpaired control procedure.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -504,58 +502,72 @@
   },
   {
     "claim_id": "C40",
+    "claim": "In the unpaired control procedure, the US and the SCS were presented in a separated, pseudorandom, and non-predictive fashion.",
+    "claim_type": "EXPLICIT",
+    "source": "To test the importance of the SCS-shock contingency, we utilized an unpaired control procedure in which the US and the SCS were presented in a separated, pseudorandom, and non-predictive fashion (Rescorla, 1967).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design, with a citation to Rescorla, 1967.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
     "claim": "Footshock alone was presented during conditioning to test the effects of sensitization by the shock.",
     "claim_type": "EXPLICIT",
     "source": "To test the effects of sensitization by the shock, we presented footshock alone during conditioning.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C41",
-    "claim": "Paired and unpaired conditioning using a reversed SCS where the WN preceded the tone was conducted to test the impact of stimulus intensity and salience.",
-    "claim_type": "EXPLICIT",
-    "source": "To test the impact of stimulus intensity and salience, we conducted paired and unpaired conditioning using a reversed SCS where the WN preceded the tone.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the experimental design.",
+    "evidence": "This describes the experimental design for the shock-only control group.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C42",
-    "claim": "All groups went through two extinction sessions with SCS presentations alone to elucidate the extent to which prior associative pairing affects de-escalating response strategies.",
+    "claim": "Paired and unpaired conditioning using a reversed SCS where the WN preceded the tone was conducted to test the impact of stimulus intensity and salience.",
     "claim_type": "EXPLICIT",
-    "source": "All groups went through two extinction sessions with SCS presentations alone to elucidate the extent to which prior associative pairing affects de-escalating response strategies, as well as to identify defensive behaviors that are expressed in the absence of a strict threat-signaling association.",
+    "source": "To test the impact of stimulus intensity and salience, we conducted paired and unpaired conditioning using a reversed SCS where the WN preceded the tone.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design and its purpose.",
+    "evidence": "This describes the experimental design for the reversed SCS groups.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C43",
-    "claim": "The extinction sessions were designed to identify defensive behaviors that are expressed in the absence of a strict threat-signaling association.",
+    "claim": "All groups went through two extinction sessions with SCS presentations alone to elucidate the extent to which prior associative pairing affects de-escalating response strategies.",
     "claim_type": "EXPLICIT",
     "source": "All groups went through two extinction sessions with SCS presentations alone to elucidate the extent to which prior associative pairing affects de-escalating response strategies, as well as to identify defensive behaviors that are expressed in the absence of a strict threat-signaling association.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design and its purpose.",
+    "evidence": "This describes the experimental design for the extinction phase.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C44",
+    "claim": "The extinction sessions were conducted to identify defensive behaviors that are expressed in the absence of a strict threat-signaling association.",
+    "claim_type": "EXPLICIT",
+    "source": "All groups went through two extinction sessions with SCS presentations alone to elucidate the extent to which prior associative pairing affects de-escalating response strategies, as well as to identify defensive behaviors that are expressed in the absence of a strict threat-signaling association.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the extinction phase.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
     "claim": "Equal numbers of male and female mice were randomly assigned to either a paired (PA), unpaired (UN), shock-only (SO), paired reverse (PA-R), or unpaired reverse (UN-R) group for fear conditioning and fear extinction training.",
     "claim_type": "EXPLICIT",
     "source": "Equal numbers of male and female mice were randomly assigned to either a paired (PA), unpaired (UN), shock-only (SO), paired reverse (PA-R), or unpaired reverse (UN-R) group for fear conditioning and fear extinction training (Figure 1).",
@@ -563,13 +575,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This describes the experimental design and references Figure 1.",
+    "evidence": "This describes the experimental design, with reference to Figure 1.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C45",
+    "claim_id": "C46",
     "claim": "Data from the PA, UN, and SO groups were statistically tested for sex differences.",
     "claim_type": "EXPLICIT",
     "source": "Data from the PA, UN, and SO groups were statistically tested for sex differences and the significant results from these analyses are listed in Table 1.",
@@ -582,7 +594,7 @@
     ]
   },
   {
-    "claim_id": "C46",
+    "claim_id": "C47",
     "claim": "Most comparisons between males and females did not yield significant differences.",
     "claim_type": "EXPLICIT",
     "source": "Given that most comparisons did not yield significant differences, data from male and female mice were pooled for statistical comparisons between groups.",
@@ -595,60 +607,60 @@
     ]
   },
   {
-    "claim_id": "C47",
+    "claim_id": "C48",
     "claim": "Data from male and female mice were pooled for statistical comparisons between groups.",
     "claim_type": "EXPLICIT",
     "source": "Given that most comparisons did not yield significant differences, data from male and female mice were pooled for statistical comparisons between groups.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the data analysis approach.",
+    "evidence": "This describes the approach taken for statistical analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C48",
+    "claim_id": "C49",
     "claim": "The number of subjects in the PA-R and UN-R groups was reduced, and sex differences were not statistically tested in these groups.",
     "claim_type": "EXPLICIT",
     "source": "Additionally, given the minimal sex differences observed within the PA, UN, and SO groups, we reduced the number of subjects in the PA-R and UN-R groups and, therefore, did not statistically test for sex differences.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design decision based on initial findings.",
+    "evidence": "This describes the experimental design decision based on the results from other groups.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C49",
+    "claim_id": "C50",
     "claim": "In the UN group during CD2, males froze more to tone than females.",
     "claim_type": "EXPLICIT",
     "source": "Males froze more to tone than females in CD2",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a result from Table 1 showing a significant sex difference (p=0.0053).",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C50",
-    "claim": "In the UN group during CD2, males had higher activity to tone compared to females.",
-    "claim_type": "EXPLICIT",
-    "source": "Males had higher activity to tone compared to females in CD2",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a result from Table 1 showing a significant sex difference (p=0.0178).",
+    "evidence": "This is a direct observation from the statistical analysis reported in Table 1.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C51",
+    "claim": "In the UN group during CD2, males had higher activity to tone compared to females.",
+    "claim_type": "EXPLICIT",
+    "source": "Males had higher activity to tone compared to females in CD2",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct observation from the statistical analysis reported in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
     "claim": "There was no statistically significant interaction between the trial and group for tone-induced freezing during CD2.",
     "claim_type": "EXPLICIT",
     "source": "There was no statistically significant interaction between the trial and group for tone-induced freezing (Figure 2A; F(12, 340)=0.65, p=0.80); however, there was a significant main effect of the trial (F(4, 340)=6.3, p<0.0001) and group (F(3, 340)=19.6, p<0.0001).",
@@ -656,27 +668,27 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2A.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C52",
-    "claim": "There was a significant main effect of trial on tone-induced freezing during CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "There was no statistically significant interaction between the trial and group for tone-induced freezing (Figure 2A; F(12, 340)=0.65, p=0.80); however, there was a significant main effect of the trial (F(4, 340)=6.3, p<0.0001) and group (F(3, 340)=19.6, p<0.0001).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2A.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C53",
+    "claim": "There was a significant main effect of the trial on tone-induced freezing during CD2.",
+    "claim_type": "EXPLICIT",
+    "source": "There was no statistically significant interaction between the trial and group for tone-induced freezing (Figure 2A; F(12, 340)=0.65, p=0.80); however, there was a significant main effect of the trial (F(4, 340)=6.3, p<0.0001) and group (F(3, 340)=19.6, p<0.0001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
     "claim": "There was a significant main effect of group on tone-induced freezing during CD2.",
     "claim_type": "EXPLICIT",
     "source": "There was no statistically significant interaction between the trial and group for tone-induced freezing (Figure 2A; F(12, 340)=0.65, p=0.80); however, there was a significant main effect of the trial (F(4, 340)=6.3, p<0.0001) and group (F(3, 340)=19.6, p<0.0001).",
@@ -684,13 +696,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2A.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C54",
+    "claim_id": "C55",
     "claim": "All groups showed little freezing to the WN during CD2.",
     "claim_type": "EXPLICIT",
     "source": "All groups showed little freezing to the WN (Figure 2B), and no significant interaction between trial and group (F(12, 340)=0.76, p=0.69) or main effect of the trial (F(4, 340)=2.07, p=0.08) were found.",
@@ -698,55 +710,55 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 2B.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C55",
-    "claim": "There was no significant interaction between trial and group for WN-evoked freezing during CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "All groups showed little freezing to the WN (Figure 2B), and no significant interaction between trial and group (F(12, 340)=0.76, p=0.69) or main effect of the trial (F(4, 340)=2.07, p=0.08) were found.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 2B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C56",
-    "claim": "There was no main effect of trial on WN-evoked freezing during CD2.",
+    "claim": "There was no significant interaction between trial and group for WN-induced freezing during CD2.",
     "claim_type": "EXPLICIT",
     "source": "All groups showed little freezing to the WN (Figure 2B), and no significant interaction between trial and group (F(12, 340)=0.76, p=0.69) or main effect of the trial (F(4, 340)=2.07, p=0.08) were found.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2B.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C57",
-    "claim": "There was a main effect of group on WN-evoked freezing during CD2.",
+    "claim": "There was no main effect of the trial on WN-induced freezing during CD2.",
     "claim_type": "EXPLICIT",
-    "source": "We did find a main effect of group (F(3, 340)=3.00, p=0.03), which was attributed to greater freezing from the PA-R group during Trial 1.",
+    "source": "All groups showed little freezing to the WN (Figure 2B), and no significant interaction between trial and group (F(12, 340)=0.76, p=0.69) or main effect of the trial (F(4, 340)=2.07, p=0.08) were found.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C58",
-    "claim": "The main effect of group on WN-evoked freezing during CD2 was attributed to greater freezing from the PA-R group during Trial 1.",
+    "claim": "There was a main effect of group on WN-induced freezing during CD2.",
+    "claim_type": "EXPLICIT",
+    "source": "We did find a main effect of group (F(3, 340)=3.00, p=0.03), which was attributed to greater freezing from the PA-R group during Trial 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the two-way ANOVA statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The main effect of group on WN-induced freezing during CD2 was attributed to greater freezing from the PA-R group during Trial 1.",
     "claim_type": "EXPLICIT",
     "source": "We did find a main effect of group (F(3, 340)=3.00, p=0.03), which was attributed to greater freezing from the PA-R group during Trial 1.",
     "source_type": [
@@ -759,7 +771,7 @@
     ]
   },
   {
-    "claim_id": "C59",
+    "claim_id": "C60",
     "claim": "The activity indices for all groups were very low during the tone period of CD2.",
     "claim_type": "EXPLICIT",
     "source": "The activity indices for all groups were very low during the tone period (Figure 2C), and there was no significant interaction between the trial and group (F(12, 340)=0.98, p=0.47).",
@@ -767,41 +779,41 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 2C.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C60",
-    "claim": "There was no significant interaction between trial and group for tone-evoked activity indices during CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "The activity indices for all groups were very low during the tone period (Figure 2C), and there was no significant interaction between the trial and group (F(12, 340)=0.98, p=0.47).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2C.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 2C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C61",
-    "claim": "The activity index during the tone decreased over trials during CD2.",
+    "claim": "There was no significant interaction between the trial and group for activity index during the tone period of CD2.",
     "claim_type": "EXPLICIT",
-    "source": "The activity index during the tone decreased over trials, concomitant with the observed increase in freezing behavior (main effect of trial, F(4, 340)=3.58, p=0.007).",
+    "source": "The activity indices for all groups were very low during the tone period (Figure 2C), and there was no significant interaction between the trial and group (F(12, 340)=0.98, p=0.47).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data with statistical support.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C62",
-    "claim": "The decrease in activity index during tone over trials was concomitant with the observed increase in freezing behavior.",
+    "claim": "The activity index during the tone decreased over trials during CD2.",
+    "claim_type": "EXPLICIT",
+    "source": "The activity index during the tone decreased over trials, concomitant with the observed increase in freezing behavior (main effect of trial, F(4, 340)=3.58, p=0.007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct observation from the data and statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The decrease in activity index during the tone over trials was concomitant with the observed increase in freezing behavior.",
     "claim_type": "EXPLICIT",
     "source": "The activity index during the tone decreased over trials, concomitant with the observed increase in freezing behavior (main effect of trial, F(4, 340)=3.58, p=0.007).",
     "source_type": [
@@ -814,21 +826,21 @@
     ]
   },
   {
-    "claim_id": "C63",
-    "claim": "There was a significant effect of group on tone-evoked activity indices during CD2.",
+    "claim_id": "C64",
+    "claim": "There was a significant effect of group on activity index during the tone period of CD2.",
     "claim_type": "EXPLICIT",
     "source": "There was a significant effect of group (F(3, 340)=2.7, p=0.045), which was attributed to the UN-R group displaying higher activity during Trial 2.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C64",
-    "claim": "The significant effect of group on tone-evoked activity indices during CD2 was attributed to the UN-R group displaying higher activity during Trial 2.",
+    "claim_id": "C65",
+    "claim": "The significant effect of group on activity index during the tone period of CD2 was attributed to the UN-R group displaying higher activity during Trial 2.",
     "claim_type": "EXPLICIT",
     "source": "There was a significant effect of group (F(3, 340)=2.7, p=0.045), which was attributed to the UN-R group displaying higher activity during Trial 2.",
     "source_type": [
@@ -841,49 +853,49 @@
     ]
   },
   {
-    "claim_id": "C65",
-    "claim": "There was no significant trial by group interaction for WN-evoked activity indices during CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "While the WN-evoked activity indices in all groups showed no significant trial by group interaction (F(12, 340)=0.15, p=0.99), or main effect of the trial (F(4, 340)=0.54, p=0.70), a significant main effect of group (Figure 2D, F(3, 340)=9.03, p<0.0001) was observed.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2D.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
     "claim_id": "C66",
-    "claim": "There was no main effect of trial on WN-evoked activity indices during CD2.",
+    "claim": "The WN-evoked activity indices in all groups showed no significant trial by group interaction during CD2.",
     "claim_type": "EXPLICIT",
     "source": "While the WN-evoked activity indices in all groups showed no significant trial by group interaction (F(12, 340)=0.15, p=0.99), or main effect of the trial (F(4, 340)=0.54, p=0.70), a significant main effect of group (Figure 2D, F(3, 340)=9.03, p<0.0001) was observed.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2D.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C67",
-    "claim": "There was a significant main effect of group on WN-evoked activity indices during CD2.",
+    "claim": "The WN-evoked activity indices in all groups showed no main effect of the trial during CD2.",
     "claim_type": "EXPLICIT",
     "source": "While the WN-evoked activity indices in all groups showed no significant trial by group interaction (F(12, 340)=0.15, p=0.99), or main effect of the trial (F(4, 340)=0.54, p=0.70), a significant main effect of group (Figure 2D, F(3, 340)=9.03, p<0.0001) was observed.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 2D.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C68",
+    "claim": "A significant main effect of group was observed for WN-evoked activity indices during CD2.",
+    "claim_type": "EXPLICIT",
+    "source": "While the WN-evoked activity indices in all groups showed no significant trial by group interaction (F(12, 340)=0.15, p=0.99), or main effect of the trial (F(4, 340)=0.54, p=0.70), a significant main effect of group (Figure 2D, F(3, 340)=9.03, p<0.0001) was observed.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 2D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
     "claim": "The PA and PA-R groups showed significantly higher freezing during the tone than the UN group during CD2.",
     "claim_type": "EXPLICIT",
     "source": "The PA and PA-R group showed significantly higher freezing during the tone than the UN group (Figure 2E, F(3, 68)=9.56, p<0.0001; PA vs UN, p<0.0001; PA-R vs UN, p=0.046), and there was no significant difference between groups in their activity indices during tone (Figure 2F, F(3, 68)=2.14, p=0.10).",
@@ -891,13 +903,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA with post-hoc comparisons, referencing Figure 2E.",
+    "evidence": "This is a result from the one-way ANOVA and post-hoc comparisons, with reference to Figure 2E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C69",
+    "claim_id": "C70",
     "claim": "There was no significant difference between groups in their activity indices during tone in CD2.",
     "claim_type": "EXPLICIT",
     "source": "The PA and PA-R group showed significantly higher freezing during the tone than the UN group (Figure 2E, F(3, 68)=9.56, p<0.0001; PA vs UN, p<0.0001; PA-R vs UN, p=0.046), and there was no significant difference between groups in their activity indices during tone (Figure 2F, F(3, 68)=2.14, p=0.10).",
@@ -905,13 +917,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 2F.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 2F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C70",
+    "claim_id": "C71",
     "claim": "There were no differences in WN-evoked freezing between groups during CD2.",
     "claim_type": "EXPLICIT",
     "source": "On the contrary, while there were no differences in WN-evoked freezing between groups (Figure 2G, F(3, 68)=2.62, p=0.058), there was a significant interaction when analyzing activity indices during WN (Figure 2H, F(3, 68)=3.04, p=0.035).",
@@ -919,13 +931,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 2G.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 2G.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C71",
+    "claim_id": "C72",
     "claim": "There was a significant interaction when analyzing activity indices during WN in CD2.",
     "claim_type": "EXPLICIT",
     "source": "On the contrary, while there were no differences in WN-evoked freezing between groups (Figure 2G, F(3, 68)=2.62, p=0.058), there was a significant interaction when analyzing activity indices during WN (Figure 2H, F(3, 68)=3.04, p=0.035).",
@@ -933,26 +945,26 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 2H.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "Post-hoc comparisons did not yield significant pairwise differences for WN-evoked activity indices during CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "However, post-hoc comparisons did not yield significant pairwise differences.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 2H.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C73",
+    "claim": "Post-hoc comparisons did not yield significant pairwise differences for activity indices during WN in CD2.",
+    "claim_type": "EXPLICIT",
+    "source": "However, post-hoc comparisons did not yield significant pairwise differences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the post-hoc statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
     "claim": "There was a main effect of group for baseline contextual freezing during CD2.",
     "claim_type": "EXPLICIT",
     "source": "There was a main effect of group for baseline contextual freezing (Figure 2I, F(3, 68)=3.18, p=0.017), but significant differences were found only between the UN-R and SO groups (UN-R vs SO, p=0.013).",
@@ -960,13 +972,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 2I.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 2I.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C74",
+    "claim_id": "C75",
     "claim": "Significant differences in baseline contextual freezing during CD2 were found only between the UN-R and SO groups.",
     "claim_type": "EXPLICIT",
     "source": "There was a main effect of group for baseline contextual freezing (Figure 2I, F(3, 68)=3.18, p=0.017), but significant differences were found only between the UN-R and SO groups (UN-R vs SO, p=0.013).",
@@ -974,13 +986,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis, referencing Figure 2I.",
+    "evidence": "This is a result from the post-hoc comparisons, with reference to Figure 2I.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C75",
+    "claim_id": "C76",
     "claim": "The PA and PA-R groups showed significantly greater increases in freezing from pre-SCS to tone compared to the UN and UN-R groups during CD2.",
     "claim_type": "EXPLICIT",
     "source": "The PA and PA-R groups showed significantly greater increases in freezing from pre-SCS to tone compared to the UN and UN-R groups (Figure 2J, F(3, 68)=15.92, p<0.0001; PA vs UN, p<0.0001; PA vs UN-R, p=0.0009; PA-R vs UN, p<0.0001; PA-R vs UN-R, p=0.0055).",
@@ -988,13 +1000,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA with post-hoc comparisons, referencing Figure 2J.",
+    "evidence": "This is a result from the one-way ANOVA and post-hoc comparisons, with reference to Figure 2J.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C76",
+    "claim_id": "C77",
     "claim": "WN-evoked activity was higher in the PA group compared to the UN group during CD2.",
     "claim_type": "EXPLICIT",
     "source": "WN-evoked activity was higher in the PA group compared to the UN group (Figure 2K, PA vs UN, t(43.08)=2.36, p=0.023) and the PA-R group (Figure 2L, PA vs PA-R, t(31.62)=3.89, p=0.0005).",
@@ -1002,13 +1014,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from Welch's unpaired t-test, referencing Figure 2K.",
+    "evidence": "This is a result from the Welch's unpaired t-test, with reference to Figure 2K.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C77",
+    "claim_id": "C78",
     "claim": "WN-evoked activity was higher in the PA group compared to the PA-R group during CD2.",
     "claim_type": "EXPLICIT",
     "source": "WN-evoked activity was higher in the PA group compared to the UN group (Figure 2K, PA vs UN, t(43.08)=2.36, p=0.023) and the PA-R group (Figure 2L, PA vs PA-R, t(31.62)=3.89, p=0.0005).",
@@ -1016,65 +1028,65 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from Welch's unpaired t-test, referencing Figure 2L.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C78",
-    "claim": "The PA-R group displayed lower WN-evoked activity than both the UN and UN-R groups during CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "Additionally, the PA-R group displayed lower WN-evoked activity than both of the UN groups (PA-R vs UN, t(20.65)=2.65, p=0.015; PA-R mean \u00b1 SEM = 1.86\u00b10.28; UN mean \u00b1 SEM = 5.39\u00b11.31) and the UN-R group (PA-R vs UN-R, t(9.215)=2.75, p=0.022; UN-R mean \u00b1 SEM = 8.84\u00b12.52).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a statistical result from Welch's unpaired t-test.",
+    "evidence": "This is a result from the Welch's unpaired t-test, with reference to Figure 2L.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C79",
-    "claim": "There was no difference between the UN and UN-R groups with regards to WN-evoked activity during CD2.",
+    "claim": "The PA-R group displayed lower WN-evoked activity than both of the UN groups during CD2.",
     "claim_type": "EXPLICIT",
-    "source": "There was no difference between the UN and UN-R groups with regards to WN-evoked activity (UN vs UN-R, t(14) = 1.214, p=0.24).",
+    "source": "Additionally, the PA-R group displayed lower WN-evoked activity than both of the UN groups (PA-R vs UN, t(20.65)=2.65, p=0.015; PA-R mean \u00b1 SEM = 1.86\u00b10.28; UN mean \u00b1 SEM = 5.39\u00b11.31) and the UN-R group (PA-R vs UN-R, t(9.215)=2.75, p=0.022; UN-R mean \u00b1 SEM = 8.84\u00b12.52).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from Welch's unpaired t-test.",
+    "evidence": "This is a result from the Welch's unpaired t-test.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C80",
-    "claim": "The PA and UN groups significantly differed in average activity indices during WN in CD2.",
+    "claim": "The PA-R group displayed lower WN-evoked activity than the UN-R group during CD2.",
     "claim_type": "EXPLICIT",
-    "source": "While the PA and UN groups significantly differed in average activity indices during WN, the PA and UN-R groups did not (PA vs UN-R, t(30.42)=0.9962, p=0.33; PA mean \u00b1 SEM = 12.54\u00b12.73).",
+    "source": "Additionally, the PA-R group displayed lower WN-evoked activity than both of the UN groups (PA-R vs UN, t(20.65)=2.65, p=0.015; PA-R mean \u00b1 SEM = 1.86\u00b10.28; UN mean \u00b1 SEM = 5.39\u00b11.31) and the UN-R group (PA-R vs UN-R, t(9.215)=2.75, p=0.022; UN-R mean \u00b1 SEM = 8.84\u00b12.52).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from Welch's unpaired t-test.",
+    "evidence": "This is a result from the Welch's unpaired t-test.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C81",
-    "claim": "The PA and UN-R groups did not differ in average activity indices during WN in CD2.",
+    "claim": "There was no difference between the UN and UN-R groups with regards to WN-evoked activity during CD2.",
     "claim_type": "EXPLICIT",
-    "source": "While the PA and UN groups significantly differed in average activity indices during WN, the PA and UN-R groups did not (PA vs UN-R, t(30.42)=0.9962, p=0.33; PA mean \u00b1 SEM = 12.54\u00b12.73).",
+    "source": "There was no difference between the UN and UN-R groups with regards to WN-evoked activity (UN vs UN-R, t(14) = 1.214, p=0.24).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from Welch's unpaired t-test.",
+    "evidence": "This is a result from the Welch's unpaired t-test.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C82",
+    "claim": "The PA and UN-R groups did not significantly differ in average activity indices during WN in CD2.",
+    "claim_type": "EXPLICIT",
+    "source": "While the PA and UN groups significantly differed in average activity indices during WN, the PA and UN-R groups did not (PA vs UN-R, t(30.42)=0.9962, p=0.33; PA mean \u00b1 SEM = 12.54\u00b12.73).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the Welch's unpaired t-test.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
     "claim": "The respective changes in defensive behavior during tone and WN were significantly affected by the explicit pairing of SCS and shock during fear conditioning.",
     "claim_type": "EXPLICIT",
     "source": "Overall, these data show that the respective changes in defensive behavior during tone and WN were significantly affected by the explicit pairing of SCS and shock during fear conditioning, and that the order of tone and WN presentation influenced the intensity of WN-evoked responses.",
@@ -1088,7 +1100,7 @@
     ]
   },
   {
-    "claim_id": "C83",
+    "claim_id": "C84",
     "claim": "The order of tone and WN presentation influenced the intensity of WN-evoked responses.",
     "claim_type": "EXPLICIT",
     "source": "Overall, these data show that the respective changes in defensive behavior during tone and WN were significantly affected by the explicit pairing of SCS and shock during fear conditioning, and that the order of tone and WN presentation influenced the intensity of WN-evoked responses.",
@@ -1102,7 +1114,7 @@
     ]
   },
   {
-    "claim_id": "C84",
+    "claim_id": "C85",
     "claim": "A substantial percentage of PA mice jumped during WN on every trial of CD2.",
     "claim_type": "EXPLICIT",
     "source": "A substantial percentage of PA mice jumped during WN on every trial, and these jumps were distributed across the entire WN period (Figure 3A and B).",
@@ -1110,13 +1122,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 3A and B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3A and B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C85",
+    "claim_id": "C86",
     "claim": "Jumps in PA mice during WN were distributed across the entire WN period in CD2.",
     "claim_type": "EXPLICIT",
     "source": "A substantial percentage of PA mice jumped during WN on every trial, and these jumps were distributed across the entire WN period (Figure 3A and B).",
@@ -1124,13 +1136,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 3A and B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3A and B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C86",
+    "claim_id": "C87",
     "claim": "An exceedingly small percentage of the UN group jumped during WN in CD2.",
     "claim_type": "EXPLICIT",
     "source": "In contrast, an exceedingly small percentage of the UN group jumped during WN (Figure 3C), and when jumps occurred, they occurred at the onset of the WN (Figure 3D).",
@@ -1138,13 +1150,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 3C.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C87",
+    "claim_id": "C88",
     "claim": "When jumps occurred in the UN group during WN in CD2, they occurred at the onset of the WN.",
     "claim_type": "EXPLICIT",
     "source": "In contrast, an exceedingly small percentage of the UN group jumped during WN (Figure 3C), and when jumps occurred, they occurred at the onset of the WN (Figure 3D).",
@@ -1152,35 +1164,21 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 3D.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C88",
-    "claim": "Both the PA and UN groups responded to shock with a similar number of jumps in CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "Both groups responded to shock with a similar number of jumps (Figure 3B and D).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a direct observation from the data, referencing Figures 3B and D.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C89",
-    "claim": "Trial-by-trial, PA mice displayed more jumping behavior across the WN period compared to UN mice in CD2.",
+    "claim": "Both PA and UN groups responded to shock with a similar number of jumps in CD2.",
     "claim_type": "EXPLICIT",
-    "source": "Trial-by-trial, PA mice displayed more jumping behavior across the WN period (Figure 3E) compared to UN mice (Figure 3F).",
+    "source": "Both groups responded to shock with a similar number of jumps (Figure 3B and D).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 3E and F.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3B and D.",
     "evidence_type": [
       "DATA"
     ]
@@ -1194,35 +1192,35 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 3G and H.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3G and H.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C91",
-    "claim": "Jumps in the PA-R group during WN in CD2 occurred rarely near the transition from WN to tone.",
+    "claim": "Jumps in the PA-R group occurred rarely near the transition from WN to tone in CD2.",
     "claim_type": "EXPLICIT",
     "source": "Like the UN group, the reverse SCS groups also displayed lower jumping percentages to WN, with jumps in the PA-R group occurring rarely near the transition from WN to tone, (Figure 3G) and jumps in the UN-R group occurring near WN onset (Figure 3H).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 3G.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3G.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C92",
-    "claim": "Jumps in the UN-R group during WN in CD2 occurred near WN onset.",
+    "claim": "Jumps in the UN-R group occurred near WN onset in CD2.",
     "claim_type": "EXPLICIT",
     "source": "Like the UN group, the reverse SCS groups also displayed lower jumping percentages to WN, with jumps in the PA-R group occurring rarely near the transition from WN to tone, (Figure 3G) and jumps in the UN-R group occurring near WN onset (Figure 3H).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 3H.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3H.",
     "evidence_type": [
       "DATA"
     ]
@@ -1236,35 +1234,35 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 3I.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3I.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C94",
-    "claim": "All groups exhibited jumps to shock during CD2.",
+    "claim": "All groups exhibited jumps to shock in CD2.",
     "claim_type": "EXPLICIT",
     "source": "Lastly, all groups exhibited jumps to shock (Figure 3J), with greater percentages of the unpaired and reverse cohorts responding with jumps.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 3J.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3J.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C95",
-    "claim": "Greater percentages of the unpaired and reverse cohorts responded with jumps to shock during CD2.",
+    "claim": "Greater percentages of the unpaired and reverse cohorts responded with jumps to shock in CD2.",
     "claim_type": "EXPLICIT",
     "source": "Lastly, all groups exhibited jumps to shock (Figure 3J), with greater percentages of the unpaired and reverse cohorts responding with jumps.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 3J.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 3J.",
     "evidence_type": [
       "DATA"
     ]
@@ -1278,35 +1276,35 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 4A.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C97",
-    "claim": "Darts in PA mice during CD2 were specific for the WN.",
+    "claim": "Darts in PA mice were specific for the WN in CD2.",
     "claim_type": "EXPLICIT",
     "source": "A high percentage of PA mice showed darting during WN (Figure 4A), darts were specific for the WN, and they were spread across the stimulus period (Figure 4B).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 4B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C98",
-    "claim": "Darts in PA mice during CD2 were spread across the WN stimulus period.",
+    "claim": "Darts in PA mice were spread across the WN stimulus period in CD2.",
     "claim_type": "EXPLICIT",
     "source": "A high percentage of PA mice showed darting during WN (Figure 4A), darts were specific for the WN, and they were spread across the stimulus period (Figure 4B).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 4B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4B.",
     "evidence_type": [
       "DATA"
     ]
@@ -1320,7 +1318,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 4C and D.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4C and D.",
     "evidence_type": [
       "DATA"
     ]
@@ -1334,7 +1332,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 4E.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4E.",
     "evidence_type": [
       "DATA"
     ]
@@ -1348,7 +1346,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 4F.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4F.",
     "evidence_type": [
       "DATA"
     ]
@@ -1362,7 +1360,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 4G.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4G.",
     "evidence_type": [
       "DATA"
     ]
@@ -1382,20 +1380,6 @@
   },
   {
     "claim_id": "C104",
-    "claim": "The non-PA groups had elevated activity indices during WN in CD2.",
-    "claim_type": "EXPLICIT",
-    "source": "The non-PA groups only rarely expressed escape jumping or darting, yet they did have elevated activity indices (Figure 2D).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a direct observation from the data, referencing Figure 2D.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C105",
     "claim": "The groups did not differ in distance traveled during preSCS in CD2.",
     "claim_type": "EXPLICIT",
     "source": "The groups did not differ in distance traveled during preSCS (Figure 4H, F(3, 68)=0.28, p=0.84), but we did observe differences during tone (Figure 4I, F(3, 68)=3.34, p=0.024) and WN (Figure 4J, F(3, 68)=9.83, p<0.0001).",
@@ -1403,13 +1387,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 4H.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 4H.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C106",
+    "claim_id": "C105",
     "claim": "Differences in distance traveled were observed during tone in CD2.",
     "claim_type": "EXPLICIT",
     "source": "The groups did not differ in distance traveled during preSCS (Figure 4H, F(3, 68)=0.28, p=0.84), but we did observe differences during tone (Figure 4I, F(3, 68)=3.34, p=0.024) and WN (Figure 4J, F(3, 68)=9.83, p<0.0001).",
@@ -1417,13 +1401,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 4I.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 4I.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C107",
+    "claim_id": "C106",
     "claim": "Differences in distance traveled were observed during WN in CD2.",
     "claim_type": "EXPLICIT",
     "source": "The groups did not differ in distance traveled during preSCS (Figure 4H, F(3, 68)=0.28, p=0.84), but we did observe differences during tone (Figure 4I, F(3, 68)=3.34, p=0.024) and WN (Figure 4J, F(3, 68)=9.83, p<0.0001).",
@@ -1431,13 +1415,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 4J.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 4J.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C108",
+    "claim_id": "C107",
     "claim": "During the tone in CD2, the UN group had a significantly greater distance traveled than the PA group.",
     "claim_type": "EXPLICIT",
     "source": "During the tone, the UN group had a significantly greater distance traveled than the PA group (PA vs UN, p=0.014), which is reflective of the elevated freezing during the tone in the PA group (Figure 2E).",
@@ -1445,68 +1429,68 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis, referencing Figure 2E.",
+    "evidence": "This is a result from the post-hoc comparisons, with reference to Figure 2E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C109",
-    "claim": "The greater distance traveled by the UN group during tone in CD2 is reflective of the elevated freezing during the tone in the PA group.",
+    "claim_id": "C108",
+    "claim": "The greater distance traveled by the UN group during the tone in CD2 is reflective of the elevated freezing during the tone in the PA group.",
     "claim_type": "EXPLICIT",
     "source": "During the tone, the UN group had a significantly greater distance traveled than the PA group (PA vs UN, p=0.014), which is reflective of the elevated freezing during the tone in the PA group (Figure 2E).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is an interpretation linking two behavioral measures, referencing Figure 2E.",
+    "evidence": "This is an interpretation linking two behavioral measures, with reference to Figure 2E.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C110",
-    "claim": "During the WN in CD2, the PA group had greater distance traveled than the UN and PA-R groups.",
+    "claim_id": "C109",
+    "claim": "During the WN in CD2, the PA group had greater distance traveled than the UN and the PA-R groups.",
     "claim_type": "EXPLICIT",
     "source": "During the WN, the PA group had greater distance traveled than the UN (PA vs UN, p=0.0018) and the PA-R groups (PA vs PA-R, p<0.0001), but not the UN-R group (PA vs UN-R, p=0.083).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C111",
+    "claim_id": "C110",
     "claim": "During the WN in CD2, the PA group did not have greater distance traveled than the UN-R group.",
     "claim_type": "EXPLICIT",
     "source": "During the WN, the PA group had greater distance traveled than the UN (PA vs UN, p=0.0018) and the PA-R groups (PA vs PA-R, p<0.0001), but not the UN-R group (PA vs UN-R, p=0.083).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C112",
-    "claim": "All groups darted to shock in similar percentages during CD2.",
+    "claim_id": "C111",
+    "claim": "All groups darted to shock in similar percentages in CD2.",
     "claim_type": "EXPLICIT",
     "source": "Finally, all groups darted to shock in similar percentages (Figure 4K).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 4K.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 4K.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C113",
+    "claim_id": "C112",
     "claim": "Associative pairings of SCS and shock produced significant cue-induced freezing to the tone.",
     "claim_type": "EXPLICIT",
     "source": "In summary, associative pairings of SCS and shock produced significant cue-induced freezing to the tone, as well as robust jumping and darting behaviors that occurred over the entirety of WN presentations.",
@@ -1520,7 +1504,7 @@
     ]
   },
   {
-    "claim_id": "C114",
+    "claim_id": "C113",
     "claim": "Associative pairings of SCS and shock produced robust jumping and darting behaviors that occurred over the entirety of WN presentations.",
     "claim_type": "EXPLICIT",
     "source": "In summary, associative pairings of SCS and shock produced significant cue-induced freezing to the tone, as well as robust jumping and darting behaviors that occurred over the entirety of WN presentations.",
@@ -1534,7 +1518,7 @@
     ]
   },
   {
-    "claim_id": "C115",
+    "claim_id": "C114",
     "claim": "Altering the contingency between WN and shock in the unpaired or reversed SCS conditions profoundly reduced defensive behaviors.",
     "claim_type": "EXPLICIT",
     "source": "Altering the contingency between WN and shock in the unpaired or reversed SCS conditions profoundly reduced these defensive behaviors, but the increased activity in all groups during WN suggests that inherent properties of the WN interact with non-associative processes to induce locomotor responses.",
@@ -1548,7 +1532,7 @@
     ]
   },
   {
-    "claim_id": "C116",
+    "claim_id": "C115",
     "claim": "The increased activity in all groups during WN suggests that inherent properties of the WN interact with non-associative processes to induce locomotor responses.",
     "claim_type": "EXPLICIT",
     "source": "Altering the contingency between WN and shock in the unpaired or reversed SCS conditions profoundly reduced these defensive behaviors, but the increased activity in all groups during WN suggests that inherent properties of the WN interact with non-associative processes to induce locomotor responses.",
@@ -1562,21 +1546,21 @@
     ]
   },
   {
-    "claim_id": "C117",
-    "claim": "The increased distance traveled during WN in all groups compared to the tone period reflects the inherent properties of WN interacting with non-associative processes.",
+    "claim_id": "C116",
+    "claim": "The increased distance traveled during WN in all groups compared to the tone period reflects the increased activity in all groups during WN.",
     "claim_type": "EXPLICIT",
     "source": "This is reflected in the increased distance traveled during WN in all groups compared to the tone period.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an interpretation linking the observation to the previous inference.",
+    "evidence": "This is an inference linking the activity index to distance traveled.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C118",
+    "claim_id": "C117",
     "claim": "There was a significant interaction between trial and group for tone-evoked freezing across extinction within the PA, UN, and SO groups.",
     "claim_type": "EXPLICIT",
     "source": "When analyzing tone-evoked freezing across extinction within the PA, UN, and SO groups (Figure 5A), a significant interaction between trial and group (F(62, 2208)=2.3, p<0.0001) was found.",
@@ -1584,80 +1568,80 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 5A.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 5A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C119",
+    "claim_id": "C118",
     "claim": "For every trial except the last during extinction, the PA group exhibited a higher level of freezing during tone compared to the control groups.",
     "claim_type": "EXPLICIT",
     "source": "For every trial except the last, the PA group exhibited a higher level of freezing during tone compared to the control groups (p<0.05 for Trials 1\u201315, for both sessions).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C120",
-    "claim": "Tone-evoked freezing presented similarly between the PA-R and UN-R groups during extinction.",
+    "claim_id": "C119",
+    "claim": "There was a significant interaction between trial and group for tone-evoked freezing during extinction in the PA-R and UN-R groups.",
     "claim_type": "EXPLICIT",
     "source": "Tone-evoked freezing presented similarly between the PA-R and UN-R groups (Figure 5B), yielding a significant interaction between trial and group (F(31, 576)=1.63, p=0.018).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 5B.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 5B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C121",
+    "claim_id": "C120",
     "claim": "The PA-R group maintained consistently high freezing during the tone across both extinction sessions.",
     "claim_type": "EXPLICIT",
     "source": "The PA-R group maintained consistently high freezing during the tone across both extinction sessions, freezing more than the UN-R group for nearly all trials (p<0.05 for Trials 1, 3\u201316 on Ext1, all trials on Ext2).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct observation from the data with statistical support.",
+    "evidence": "This is a direct observation from the data and post-hoc comparisons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The PA-R group froze more during the tone than the UN-R group for nearly all trials during extinction.",
+    "claim_type": "EXPLICIT",
+    "source": "The PA-R group maintained consistently high freezing during the tone across both extinction sessions, freezing more than the UN-R group for nearly all trials (p<0.05 for Trials 1, 3\u201316 on Ext1, all trials on Ext2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C122",
-    "claim": "The PA-R group froze more during tone than the UN-R group for nearly all trials during extinction.",
-    "claim_type": "EXPLICIT",
-    "source": "The PA-R group maintained consistently high freezing during the tone across both extinction sessions, freezing more than the UN-R group for nearly all trials (p<0.05 for Trials 1, 3\u201316 on Ext1, all trials on Ext2).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C123",
-    "claim": "There was a significant difference between groups in the change in freezing during tone over the first extinction session.",
+    "claim": "There was a significant difference between groups on the first day of extinction in the change in freezing during the tone.",
     "claim_type": "EXPLICIT",
     "source": "There was a significant difference between groups on the first day of extinction (Figure 5C, F(4, 87)=11.9, p<0.0001), with the PA-R group being the only one to increase freezing during tone over the session (PA-R vs PA, p<0.0001; PA-R vs UN, p<0.0001; PA-R vs UN-R, p=0.007; PA-R vs SO, p=0.0032).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 5C.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 5C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C124",
+    "claim_id": "C123",
     "claim": "The PA-R group was the only one to increase freezing during tone over the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "There was a significant difference between groups on the first day of extinction (Figure 5C, F(4, 87)=11.9, p<0.0001), with the PA-R group being the only one to increase freezing during tone over the session (PA-R vs PA, p<0.0001; PA-R vs UN, p<0.0001; PA-R vs UN-R, p=0.007; PA-R vs SO, p=0.0032).",
@@ -1665,13 +1649,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data with statistical support, referencing Figure 5C.",
+    "evidence": "This is a direct observation from the data and post-hoc comparisons, with reference to Figure 5C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C125",
+    "claim_id": "C124",
     "claim": "Freezing for the PA and UN groups decreased similarly over the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "Freezing for the PA and UN groups decreased similarly over the session (PA vs UN, p=0.99), and the SO group had significantly less change in freezing compared to the PA group (PA vs SO, p=0.021), which was attributed to the low level of freezing during the tone in the SO group (Figure 2A).",
@@ -1679,13 +1663,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis, referencing Figure 2A.",
+    "evidence": "This is a result from the post-hoc comparisons, with reference to Figure 2A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C126",
+    "claim_id": "C125",
     "claim": "The SO group had significantly less change in freezing compared to the PA group during the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "Freezing for the PA and UN groups decreased similarly over the session (PA vs UN, p=0.99), and the SO group had significantly less change in freezing compared to the PA group (PA vs SO, p=0.021), which was attributed to the low level of freezing during the tone in the SO group (Figure 2A).",
@@ -1693,13 +1677,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis, referencing Figure 2A.",
+    "evidence": "This is a result from the post-hoc comparisons, with reference to Figure 2A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C127",
+    "claim_id": "C126",
     "claim": "The less change in freezing in the SO group compared to the PA group during the first extinction session was attributed to the low level of freezing during the tone in the SO group.",
     "claim_type": "EXPLICIT",
     "source": "Freezing for the PA and UN groups decreased similarly over the session (PA vs UN, p=0.99), and the SO group had significantly less change in freezing compared to the PA group (PA vs SO, p=0.021), which was attributed to the low level of freezing during the tone in the SO group (Figure 2A).",
@@ -1707,81 +1691,81 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is an interpretation of the statistical result, referencing Figure 2A.",
+    "evidence": "This is an interpretation of the statistical result, with reference to Figure 2A.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C128",
-    "claim": "A significant difference between groups was detected for the change in freezing during tone over the second extinction session.",
+    "claim_id": "C127",
+    "claim": "A significant difference between groups was detected for the second extinction session in the change in freezing during the tone.",
     "claim_type": "EXPLICIT",
     "source": "A significant difference between groups was also detected for the second extinction session (Figure 5D, F(4, 87)=19.2, p<0.0001).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 5D.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Only the PA group exhibited a decrease in freezing during tone compared to all other groups during the second extinction session.",
+    "claim_type": "EXPLICIT",
+    "source": "Only the PA group exhibited a decrease in freezing during tone compared to all other groups (PA vs UN, p<0.0001; PA vs PA-R, p=0.0007; PA vs UN-R, p<0.0001; PA vs SO, p<0.0001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C129",
-    "claim": "Only the PA group exhibited a decrease in freezing during tone over the second extinction session compared to all other groups.",
-    "claim_type": "EXPLICIT",
-    "source": "Only the PA group exhibited a decrease in freezing during tone compared to all other groups (PA vs UN, p<0.0001; PA vs PA-R, p=0.0007; PA vs UN-R, p<0.0001; PA vs SO, p<0.0001).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C130",
-    "claim": "For both the first and second sessions of extinction, only the PA and PA-R groups increased freezing levels during the tone compared to pre-SCS.",
+    "claim": "For both the first and second sessions of extinction, only the PA and PA-R groups increased freezing levels during the tone.",
     "claim_type": "EXPLICIT",
     "source": "For both the first (Figure 5E, F(4, 87)=105.5, p<0.0001) and second (Figure 5F, F(4, 87)=137.5, p<0.0001) sessions of extinction, only the PA and PA-R groups increased freezing levels during the tone (p<0.0001 for all PA and PA-R comparisons to other groups for both sessions).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA with post-hoc comparisons, referencing Figures 5E and F.",
+    "evidence": "This is a result from the one-way ANOVA and post-hoc comparisons, with reference to Figure 5E and F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C131",
+    "claim_id": "C130",
     "claim": "The PA-R group showed a greater change in freezing from pre-SCS to tone than the PA group during both extinction sessions.",
     "claim_type": "EXPLICIT",
     "source": "The PA-R group showed a greater change in freezing from pre-SCS to tone than the PA group (Ext1, PA vs PA-R, p=0.0003; Ext2, PA vs PA-R, p<0.0001), whereas the UN, UN-R, and SO groups had equivalent freezing during the pre-SCS and tone periods (p>0.25 for all pairwise comparisons that excluded the PA and PA-R groups for both sessions).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C132",
+    "claim_id": "C131",
     "claim": "The UN, UN-R, and SO groups had equivalent freezing during the pre-SCS and tone periods during both extinction sessions.",
     "claim_type": "EXPLICIT",
     "source": "The PA-R group showed a greater change in freezing from pre-SCS to tone than the PA group (Ext1, PA vs PA-R, p=0.0003; Ext2, PA vs PA-R, p<0.0001), whereas the UN, UN-R, and SO groups had equivalent freezing during the pre-SCS and tone periods (p>0.25 for all pairwise comparisons that excluded the PA and PA-R groups for both sessions).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C133",
+    "claim_id": "C132",
     "claim": "The PA and PA-R groups associated the tone with threat.",
     "claim_type": "EXPLICIT",
     "source": "Taken together, these data suggest that the PA and PA-R groups associated the tone with threat, while freezing in the UN, UN-R, and SO groups was more indicative of contextual fear.",
@@ -1795,7 +1779,7 @@
     ]
   },
   {
-    "claim_id": "C134",
+    "claim_id": "C133",
     "claim": "Freezing in the UN, UN-R, and SO groups was more indicative of contextual fear.",
     "claim_type": "EXPLICIT",
     "source": "Taken together, these data suggest that the PA and PA-R groups associated the tone with threat, while freezing in the UN, UN-R, and SO groups was more indicative of contextual fear.",
@@ -1809,7 +1793,7 @@
     ]
   },
   {
-    "claim_id": "C135",
+    "claim_id": "C134",
     "claim": "A phenotype more resistant to extinction was observed within the PA-R group.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, while pairing either order of SCS with shock resulted in greater freezing during tone, we observed a phenotype more resistant to extinction within the PA-R group.",
@@ -1822,7 +1806,7 @@
     ]
   },
   {
-    "claim_id": "C136",
+    "claim_id": "C135",
     "claim": "The extinction of cue-induced freezing in the conditioned flight paradigm depends on its proximity to conditioned threat.",
     "claim_type": "EXPLICIT",
     "source": "These data indicate that the extinction of cue-induced freezing in the conditioned flight paradigm depends on its proximity to conditioned threat.",
@@ -1836,7 +1820,7 @@
     ]
   },
   {
-    "claim_id": "C137",
+    "claim_id": "C136",
     "claim": "The PA, UN, and SO groups had elevated activity indices in the early trials of extinction training.",
     "claim_type": "EXPLICIT",
     "source": "The PA, UN, and SO groups had elevated activity indices in the early trials of extinction training, yet only the PA group showed a decrease in WN-evoked activity (Figure 6A).",
@@ -1844,13 +1828,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 6A.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 6A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C138",
+    "claim_id": "C137",
     "claim": "Only the PA group showed a decrease in WN-evoked activity during extinction.",
     "claim_type": "EXPLICIT",
     "source": "The PA, UN, and SO groups had elevated activity indices in the early trials of extinction training, yet only the PA group showed a decrease in WN-evoked activity (Figure 6A).",
@@ -1858,52 +1842,52 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 6A.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "There was a significant interaction between the trial and group for WN-evoked activity during extinction in the PA, UN, and SO groups.",
+    "claim_type": "EXPLICIT",
+    "source": "There was a significant interaction between the trial and group (F(62, 2208)=1.9, p<0.0001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the two-way ANOVA statistical analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C139",
-    "claim": "There was a significant interaction between trial and group for WN-evoked activity during extinction in the PA, UN, and SO groups.",
-    "claim_type": "EXPLICIT",
-    "source": "There was a significant interaction between the trial and group (F(62, 2208)=1.9, p<0.0001).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C140",
     "claim": "Starting with the fifth trial of the first extinction session, the PA group expressed significantly less activity to WN compared to the UN and SO groups.",
     "claim_type": "EXPLICIT",
     "source": "Starting with the fifth trial of the first extinction session, the PA group expressed significantly less activity to WN compared to the UN and SO groups (p<0.05 compared to UN and SO for Trials 5, 6, and 8\u201313), and PA activity index scores remained below 1 for the entirety of the second extinction session (p<0.05 compared to UN and SO for Trials 1, 2, and 4\u201316).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C141",
+    "claim_id": "C140",
     "claim": "PA activity index scores remained below 1 for the entirety of the second extinction session.",
     "claim_type": "EXPLICIT",
     "source": "Starting with the fifth trial of the first extinction session, the PA group expressed significantly less activity to WN compared to the UN and SO groups (p<0.05 compared to UN and SO for Trials 5, 6, and 8\u201313), and PA activity index scores remained below 1 for the entirety of the second extinction session (p<0.05 compared to UN and SO for Trials 1, 2, and 4\u201316).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct observation from the data with statistical support.",
+    "evidence": "This is a direct observation from the data.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C142",
+    "claim_id": "C141",
     "claim": "For the UN and SO groups, WN-evoked activity indices remained above 1 across extinction trials.",
     "claim_type": "EXPLICIT",
     "source": "For the UN and SO groups, WN-evoked activity indices remained above 1 across extinction trials, indicating levels of movement that were higher during the WN than the pre-SCS period.",
@@ -1916,8 +1900,8 @@
     ]
   },
   {
-    "claim_id": "C143",
-    "claim": "WN-evoked activity indices remaining above 1 in the UN and SO groups indicates levels of movement that were higher during the WN than the pre-SCS period.",
+    "claim_id": "C142",
+    "claim": "WN-evoked activity indices remaining above 1 across extinction trials indicates levels of movement that were higher during the WN than the pre-SCS period.",
     "claim_type": "EXPLICIT",
     "source": "For the UN and SO groups, WN-evoked activity indices remained above 1 across extinction trials, indicating levels of movement that were higher during the WN than the pre-SCS period.",
     "source_type": [
@@ -1930,83 +1914,96 @@
     ]
   },
   {
-    "claim_id": "C144",
-    "claim": "There was no interaction between trial and group for WN-evoked activity in the PA-R and UN-R groups during extinction.",
+    "claim_id": "C143",
+    "claim": "There was no interaction between the trial and group for WN-evoked activity during extinction in the PA-R and UN-R groups.",
     "claim_type": "EXPLICIT",
     "source": "There was no interaction between the trial and group (Figure 6B, F(31, 576)=0.7, p=0.89) for the PA-R and UN-R groups.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis, referencing Figure 6B.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis, with reference to Figure 6B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "There was an effect of group on WN-evoked activity during extinction in the PA-R and UN-R groups.",
+    "claim_type": "EXPLICIT",
+    "source": "There was an effect of group (F(1, 576)=64.7, p<0.0001), with activity being higher in the UN-R compared to the PA-R group.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the two-way ANOVA statistical analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C145",
-    "claim": "There was an effect of group on WN-evoked activity in the PA-R and UN-R groups during extinction, with activity being higher in the UN-R compared to the PA-R group.",
+    "claim": "Activity during WN was higher in the UN-R compared to the PA-R group during extinction.",
     "claim_type": "EXPLICIT",
     "source": "There was an effect of group (F(1, 576)=64.7, p<0.0001), with activity being higher in the UN-R compared to the PA-R group.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C146",
-    "claim": "There was no significant effect of trial on WN-evoked activity in the PA-R and UN-R groups during extinction.",
+    "claim": "There was no significant effect of the trial on WN-evoked activity during extinction in the PA-R and UN-R groups.",
     "claim_type": "EXPLICIT",
     "source": "There was no significant effect of the trial (F(31, 576)=0.66, p=0.92).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C147",
-    "claim": "The PA group showed a significant decrease in speed during WN compared to the UN-R and SO groups over the first extinction session.",
+    "claim": "The PA group showed a significant decrease in speed during WN compared to the UN-R and SO groups during the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "The PA group showed a significant decrease compared to the UN-R and SO groups (Figure 6C, F(4, 87)=6.4, p<0.0001; PA vs UN-R, p=0.0052; PA vs SO, p=0.0003) and a near-significant decrease compared to the UN group (PA vs UN, p=0.054).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA with post-hoc comparisons, referencing Figure 6C.",
+    "evidence": "This is a result from the one-way ANOVA and post-hoc comparisons, with reference to Figure 6C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C148",
-    "claim": "The PA group showed a near-significant decrease in speed during WN compared to the UN group over the first extinction session.",
+    "claim": "The PA group showed a near-significant decrease in speed during WN compared to the UN group during the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "The PA group showed a significant decrease compared to the UN-R and SO groups (Figure 6C, F(4, 87)=6.4, p<0.0001; PA vs UN-R, p=0.0052; PA vs SO, p=0.0003) and a near-significant decrease compared to the UN group (PA vs UN, p=0.054).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis, referencing Figure 6C.",
+    "evidence": "This is a result from the post-hoc comparisons, with reference to Figure 6C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C149",
-    "claim": "There were no significant differences between groups in speed during WN over the second extinction session.",
+    "claim": "There were no significant differences between groups in speed during WN during the second extinction session.",
     "claim_type": "EXPLICIT",
     "source": "There were no significant differences between groups during the second extinction session (Figure 6D, F(4, 87)=1.47, p=0.22).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA, referencing Figure 6D.",
+    "evidence": "This is a result from the one-way ANOVA, with reference to Figure 6D.",
     "evidence_type": [
       "DATA"
     ]
@@ -2020,7 +2017,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 6E.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 6E.",
     "evidence_type": [
       "DATA"
     ]
@@ -2034,7 +2031,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 6E.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 6E.",
     "evidence_type": [
       "DATA"
     ]
@@ -2047,7 +2044,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the two-way ANOVA analysis.",
+    "evidence": "This is a result from the two-way ANOVA statistical analysis.",
     "evidence_type": [
       "DATA"
     ]
@@ -2060,7 +2057,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
@@ -2073,63 +2070,63 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis.",
+    "evidence": "This is a result from the post-hoc comparisons.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C155",
-    "claim": "The PA group displayed significant increases in WN-evoked freezing compared to the UN and SO groups over the first extinction session.",
+    "claim": "The PA group displayed significant increases in WN-evoked freezing compared to the UN and SO groups during the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "When comparing changes in WN-evoked freezing between the first and last four trials for the first extinction session (Figure 6F, F(4, 87)=4.2, p=0.0036), the PA group displayed significant increases compared to the UN and SO groups (PA vs UN, p=0.0086; PA vs SO, p=0.017), but did not differ from the PA-R or UN-R groups (PA vs PA-R, p=0.18; PA vs UN-R, p=0.22).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA with post-hoc comparisons, referencing Figure 6F.",
+    "evidence": "This is a result from the one-way ANOVA and post-hoc comparisons, with reference to Figure 6F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C156",
-    "claim": "The PA group did not differ from the PA-R or UN-R groups in changes in WN-evoked freezing over the first extinction session.",
+    "claim": "The PA group did not differ from the PA-R or UN-R groups in changes in WN-evoked freezing during the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "When comparing changes in WN-evoked freezing between the first and last four trials for the first extinction session (Figure 6F, F(4, 87)=4.2, p=0.0036), the PA group displayed significant increases compared to the UN and SO groups (PA vs UN, p=0.0086; PA vs SO, p=0.017), but did not differ from the PA-R or UN-R groups (PA vs PA-R, p=0.18; PA vs UN-R, p=0.22).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis, referencing Figure 6F.",
+    "evidence": "This is a result from the post-hoc comparisons, with reference to Figure 6F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C157",
-    "claim": "The PA group exhibited a significant decrease in WN-evoked freezing compared to the UN, UN-R, and SO groups over the second extinction session.",
+    "claim": "The PA group exhibited a significant decrease in WN-evoked freezing compared to the UN, UN-R, and SO groups during the second extinction session.",
     "claim_type": "EXPLICIT",
     "source": "For the second session (Fig 6G, F(4, 87)=8.1, p<0.0001), the PA group exhibited a significant decrease in WN-evoked freezing compared to the UN, UN-R, and SO groups (PA vs UN, p=0.0005; PA vs UN-R, p=0.0006; PA vs SO, p=0.0015), but not the PA-R group (PA vs PA-R, p=0.85).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the one-way ANOVA with post-hoc comparisons, referencing Figure 6G.",
+    "evidence": "This is a result from the one-way ANOVA and post-hoc comparisons, with reference to Figure 6G.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C158",
-    "claim": "The PA group did not differ from the PA-R group in changes in WN-evoked freezing over the second extinction session.",
+    "claim": "The PA group did not differ from the PA-R group in changes in WN-evoked freezing during the second extinction session.",
     "claim_type": "EXPLICIT",
     "source": "For the second session (Fig 6G, F(4, 87)=8.1, p<0.0001), the PA group exhibited a significant decrease in WN-evoked freezing compared to the UN, UN-R, and SO groups (PA vs UN, p=0.0005; PA vs UN-R, p=0.0006; PA vs SO, p=0.0015), but not the PA-R group (PA vs PA-R, p=0.85).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a statistical result from the post-hoc analysis, referencing Figure 6G.",
+    "evidence": "This is a result from the post-hoc comparisons, with reference to Figure 6G.",
     "evidence_type": [
       "DATA"
     ]
@@ -2157,7 +2154,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 7A.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7A.",
     "evidence_type": [
       "DATA"
     ]
@@ -2171,7 +2168,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 7A.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7A.",
     "evidence_type": [
       "DATA"
     ]
@@ -2185,21 +2182,21 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 7A.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C163",
-    "claim": "Within the first four trials of extinction, minimal darting was observed during the tone period.",
+    "claim": "When examining darting behavior within the first four trials of extinction, minimal darting was observed during the tone period.",
     "claim_type": "EXPLICIT",
     "source": "When examining darting behavior within the first four trials of extinction, minimal darting was observed during the tone period, the PA and SO groups displayed darting behavior spread across the WN period, while the UN group darted only a few times (Figure 7B).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 7B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7B.",
     "evidence_type": [
       "DATA"
     ]
@@ -2213,7 +2210,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 7B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7B.",
     "evidence_type": [
       "DATA"
     ]
@@ -2227,7 +2224,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 7B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7B.",
     "evidence_type": [
       "DATA"
     ]
@@ -2254,21 +2251,21 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 7C and 7E.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C168",
-    "claim": "Jumps to WN rarely occurred in any group other than PA during the first extinction session.",
+    "claim": "Jumps to WN rarely occurred in any other group during the first extinction session.",
     "claim_type": "EXPLICIT",
     "source": "During the first extinction session, only the PA group displayed a concentration of jumping responses during WN within the first block of trials (Figure 7C), and jumps to WN rarely occurred in any other group (Figure 7E).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 7C and 7E.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7E.",
     "evidence_type": [
       "DATA"
     ]
@@ -2282,7 +2279,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 7D and F.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7D and F.",
     "evidence_type": [
       "DATA"
     ]
@@ -2296,14 +2293,14 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 7D and F.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 7D and F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C171",
-    "claim": "The increase in darting in the PA group occurs around Trial 7 of the first extinction session, which is approximately the time point at which jumping is fully extinguished.",
+    "claim": "The increase in darting in the PA group occurs around Trial 7, which is approximately the time point at which jumping is fully extinguished.",
     "claim_type": "EXPLICIT",
     "source": "Notably, the increase in darting in the PA group occurs around Trial 7, which is approximately the time point at which jumping is fully extinguished.",
     "source_type": [
@@ -2357,14 +2354,14 @@
   },
   {
     "claim_id": "C175",
-    "claim": "The control groups engage primarily in simple locomotor behaviors induced by stimulus salience.",
+    "claim": "Darting behaviors during conditioning contribute to the higher activity score observed during WN in the PA group.",
     "claim_type": "EXPLICIT",
-    "source": "Our data show that the control groups engage primarily in simple locomotor behaviors induced by stimulus salience (Figure 4J).",
+    "source": "Our data show that the control groups engage primarily in simple locomotor behaviors induced by stimulus salience (Figure 4J). Overall, darting behaviors during conditioning contribute to the higher activity score observed during WN in the PA group, and our data suggests that these contributions are the result of associative learning and threat imminence, rather than non-associative stimulus salience.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is an interpretation of the data, referencing Figure 4J.",
+    "evidence": "This is an inference drawn from the experimental data, with reference to Figure 4J.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -2372,13 +2369,14 @@
   },
   {
     "claim_id": "C176",
-    "claim": "Darting behaviors during conditioning contribute to the higher activity score observed during WN in the PA group.",
+    "claim": "The contributions of darting behaviors to the higher activity score during WN in the PA group are the result of associative learning and threat imminence, rather than non-associative stimulus salience.",
     "claim_type": "EXPLICIT",
-    "source": "Overall, darting behaviors during conditioning contribute to the higher activity score observed during WN in the PA group, and our data suggests that these contributions are the result of associative learning and threat imminence, rather than non-associative stimulus salience.",
+    "source": "Our data show that the control groups engage primarily in simple locomotor behaviors induced by stimulus salience (Figure 4J). Overall, darting behaviors during conditioning contribute to the higher activity score observed during WN in the PA group, and our data suggests that these contributions are the result of associative learning and threat imminence, rather than non-associative stimulus salience.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is an interpretation of the data.",
+    "evidence": "This is an inference drawn from the experimental data, with reference to Figure 4J.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -2386,16 +2384,15 @@
   },
   {
     "claim_id": "C177",
-    "claim": "The contributions of darting to the higher activity score in the PA group are the result of associative learning and threat imminence, rather than non-associative stimulus salience.",
+    "claim": "Tail rattling has been shown to increase in the presence of uncertain threat.",
     "claim_type": "EXPLICIT",
-    "source": "Overall, darting behaviors during conditioning contribute to the higher activity score observed during WN in the PA group, and our data suggests that these contributions are the result of associative learning and threat imminence, rather than non-associative stimulus salience.",
+    "source": "We previously observed heightened tail-rattling responses during the early trials of fear conditioning, which decreased with further conditioning (Borkar et al., 2020). Given that tail rattling has been shown to increase in the presence of uncertain threat (Salay et al., 2018), we measured tail rattling in all groups during extinction to determine the effects of associative and non-associative mechanisms on this defensive response.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the experimental data.",
+    "evidence": "This statement is supported by a citation to Salay et al., 2018.",
     "evidence_type": [
-      "DATA",
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
@@ -2413,19 +2410,6 @@
   },
   {
     "claim_id": "C179",
-    "claim": "Tail rattling has been shown to increase in the presence of uncertain threat.",
-    "claim_type": "EXPLICIT",
-    "source": "Given that tail rattling has been shown to increase in the presence of uncertain threat (Salay et al., 2018), we measured tail rattling in all groups during extinction to determine the effects of associative and non-associative mechanisms on this defensive response.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This statement is supported by a citation to Salay et al., 2018.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C180",
     "claim": "During the first extinction session, tail rattling behavior during SCS presentations was more prevalent in the UN, UN-R, and SO control groups.",
     "claim_type": "EXPLICIT",
     "source": "During the first extinction session, tail rattling behavior during SCS presentations was more prevalent in the UN, UN-R, and SO control groups and was most prominent during the tone period (Figure 8A and B).",
@@ -2433,13 +2417,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 8A and B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 8A and B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C181",
+    "claim_id": "C180",
     "claim": "Tail rattling during the first extinction session was most prominent during the tone period.",
     "claim_type": "EXPLICIT",
     "source": "During the first extinction session, tail rattling behavior during SCS presentations was more prevalent in the UN, UN-R, and SO control groups and was most prominent during the tone period (Figure 8A and B).",
@@ -2447,13 +2431,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figures 8A and B.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 8A and B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C182",
+    "claim_id": "C181",
     "claim": "During early extinction, SO and UN mice displayed more tail rattling than PA mice during the tone.",
     "claim_type": "EXPLICIT",
     "source": "During early extinction, SO and UN mice displayed more tail rattling than PA mice during the tone (Figure 8C).",
@@ -2461,13 +2445,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 8C.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 8C.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C183",
+    "claim_id": "C182",
     "claim": "The frequency of tail rattling was lower in all three groups during the second extinction session.",
     "claim_type": "EXPLICIT",
     "source": "The frequency of tail rattling was lower in all three groups during the second extinction session, yet the UN and SO groups both displayed more than the PA group (Figure 8D).",
@@ -2475,13 +2459,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 8D.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 8D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C184",
+    "claim_id": "C183",
     "claim": "During the second extinction session, the UN and SO groups both displayed more tail rattling than the PA group.",
     "claim_type": "EXPLICIT",
     "source": "The frequency of tail rattling was lower in all three groups during the second extinction session, yet the UN and SO groups both displayed more than the PA group (Figure 8D).",
@@ -2489,13 +2473,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 8D.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 8D.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C185",
+    "claim_id": "C184",
     "claim": "All three groups displayed similar levels of tail rattling by the end of the second extinction session.",
     "claim_type": "EXPLICIT",
     "source": "All three groups displayed similar levels of tail rattling by the end of the second session.",
@@ -2508,21 +2492,21 @@
     ]
   },
   {
-    "claim_id": "C186",
-    "claim": "Over the first extinction session, a larger proportion of the UN and SO groups displayed tail rattle during tone.",
+    "claim_id": "C185",
+    "claim": "Over the first extinction session, a larger proportion of the UN and SO groups displayed tail rattle during to tone.",
     "claim_type": "EXPLICIT",
     "source": "Over the first extinction session, a larger proportion of the UN and SO groups displayed tail rattle during to tone (Figure 8E), and the UN group had the greatest proportion of tail rattle to WN (Figure 8F).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 8E.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 8E.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C187",
+    "claim_id": "C186",
     "claim": "Over the first extinction session, the UN group had the greatest proportion of tail rattle to WN.",
     "claim_type": "EXPLICIT",
     "source": "Over the first extinction session, a larger proportion of the UN and SO groups displayed tail rattle during to tone (Figure 8E), and the UN group had the greatest proportion of tail rattle to WN (Figure 8F).",
@@ -2530,13 +2514,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is a direct observation from the data, referencing Figure 8F.",
+    "evidence": "This is a direct observation from the data, with reference to Figure 8F.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C188",
+    "claim_id": "C187",
     "claim": "Tail rattling during the SCS is mostly a non-associative defensive response that is suppressed when the SCS predictably signals threat.",
     "claim_type": "EXPLICIT",
     "source": "These data suggest that tail rattling during the SCS is mostly a non-associative defensive response that is suppressed when the SCS predictably signals threat.",
@@ -2550,7 +2534,7 @@
     ]
   },
   {
-    "claim_id": "C189",
+    "claim_id": "C188",
     "claim": "Associative pairings and a proximal stimulus-threat association during fear conditioning produce maximal expression of cue-induced freezing and flight responses.",
     "claim_type": "EXPLICIT",
     "source": "The results signify that associative pairings and a proximal stimulus-threat association during fear conditioning produce maximal expression of cue-induced freezing and flight responses.",
@@ -2564,14 +2548,14 @@
     ]
   },
   {
-    "claim_id": "C190",
+    "claim_id": "C189",
     "claim": "Non-associative elements such as cue salience, change in stimulus intensity, and shock-induced sensitization elicit stress-associated behaviors like tail rattling and activity bursts.",
     "claim_type": "EXPLICIT",
     "source": "Non-associative elements such as cue salience, change in stimulus intensity, and shock-induced sensitization elicit stress-associated behaviors like tail rattling and activity bursts, as hypothesized before (Trott et al., 2022), but the addition of the WN-threat associative pairing contributes significantly to eliciting high-intensity defensive responses like escape jumping.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary conclusion drawn from the experimental data with a citation to Trott et al., 2022.",
+    "evidence": "This is a summary conclusion drawn from the experimental data, with a citation to Trott et al., 2022.",
     "evidence_type": [
       "DATA",
       "CITATION",
@@ -2579,7 +2563,7 @@
     ]
   },
   {
-    "claim_id": "C191",
+    "claim_id": "C190",
     "claim": "The addition of the WN-threat associative pairing contributes significantly to eliciting high-intensity defensive responses like escape jumping.",
     "claim_type": "EXPLICIT",
     "source": "Non-associative elements such as cue salience, change in stimulus intensity, and shock-induced sensitization elicit stress-associated behaviors like tail rattling and activity bursts, as hypothesized before (Trott et al., 2022), but the addition of the WN-threat associative pairing contributes significantly to eliciting high-intensity defensive responses like escape jumping.",
@@ -2593,7 +2577,7 @@
     ]
   },
   {
-    "claim_id": "C192",
+    "claim_id": "C191",
     "claim": "Associative and non-associative factors combine to produce distinct behavioral transitions between freezing and flight.",
     "claim_type": "EXPLICIT",
     "source": "Therefore, these associative and non-associative factors combine to produce distinct behavioral transitions between freezing and flight.",
@@ -2607,7 +2591,7 @@
     ]
   },
   {
-    "claim_id": "C193",
+    "claim_id": "C192",
     "claim": "Comparable results to the current study were previously reported in rats conditioned using similar parameters.",
     "claim_type": "EXPLICIT",
     "source": "Notably, comparable results were previously reported in rats conditioned using similar parameters (Totty et al., 2021).",
@@ -2620,7 +2604,7 @@
     ]
   },
   {
-    "claim_id": "C194",
+    "claim_id": "C193",
     "claim": "Previous studies have factored jumping behaviors into normalized measures to gauge conditioned flight behavior.",
     "claim_type": "EXPLICIT",
     "source": "Previous studies have factored jumping behaviors into normalized measures to gauge conditioned flight behavior (Fadok et al., 2017; Hersman et al., 2020; Borkar et al., 2020), but given the increased activity indices in the PA, UN, and UN-R groups, we examined if the escape jumping we observed was associative or non-associative (Figure 3).",
@@ -2628,13 +2612,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This statement is supported by citations to previous studies, referencing Figure 3.",
+    "evidence": "This statement is supported by citations to previous studies, with reference to Figure 3.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C195",
+    "claim_id": "C194",
     "claim": "A salient stimulus is sufficient to induce conditioned jumping responses after multiple sessions.",
     "claim_type": "EXPLICIT",
     "source": "Others have found that a salient stimulus is sufficient to induce conditioned jumping responses after multiple sessions (Furuyama et al., 2023).",
@@ -2647,14 +2631,14 @@
     ]
   },
   {
-    "claim_id": "C196",
+    "claim_id": "C195",
     "claim": "A robust jumping response to WN in the SCS paradigm is not due to the non-associative salience of the WN but is instead due to its association with imminent threat.",
     "claim_type": "EXPLICIT",
     "source": "Given that the PA-R group did not display consistent jumping behavior to WN or tone, this suggests that a robust jumping response to WN in the SCS paradigm is not due to the non-associative salience of the WN as others have suggested (Hersman et al., 2020) but is instead due to its association with imminent threat.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the experimental data with a citation to Hersman et al., 2020.",
+    "evidence": "This is an inference drawn from the experimental data, with a citation to Hersman et al., 2020.",
     "evidence_type": [
       "DATA",
       "CITATION",
@@ -2662,7 +2646,7 @@
     ]
   },
   {
-    "claim_id": "C197",
+    "claim_id": "C196",
     "claim": "Darting has been reported to be increased in rodents that undergo stress and fear conditioning.",
     "claim_type": "EXPLICIT",
     "source": "Darting has been reported to be increased in rodents that undergo stress and fear conditioning, and it is more prevalent in female rats (Gruene et al., 2015; Brzozowska et al., 2017).",
@@ -2675,7 +2659,7 @@
     ]
   },
   {
-    "claim_id": "C198",
+    "claim_id": "C197",
     "claim": "Darting is more prevalent in female rats.",
     "claim_type": "EXPLICIT",
     "source": "Darting has been reported to be increased in rodents that undergo stress and fear conditioning, and it is more prevalent in female rats (Gruene et al., 2015; Brzozowska et al., 2017).",
@@ -2688,8 +2672,8 @@
     ]
   },
   {
-    "claim_id": "C199",
-    "claim": "Previous studies have measured darting to WN as a darts per minute measure or as part of a composite escape score.",
+    "claim_id": "C198",
+    "claim": "Previous studies have measured darting to WN as a darts per minute measure.",
     "claim_type": "EXPLICIT",
     "source": "Previous studies have measured darting to WN as a darts per minute measure (Morena et al., 2021; Hoffman et al., 2022; Trott et al., 2022) or as part of a composite escape score (Hersman et al., 2020), but our data suggests that examining darting requires a more detailed analysis.",
     "source_type": [
@@ -2701,8 +2685,21 @@
     ]
   },
   {
+    "claim_id": "C199",
+    "claim": "Previous studies have measured darting as part of a composite escape score.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have measured darting to WN as a darts per minute measure (Morena et al., 2021; Hoffman et al., 2022; Trott et al., 2022) or as part of a composite escape score (Hersman et al., 2020), but our data suggests that examining darting requires a more detailed analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation to Hersman et al., 2020.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
     "claim_id": "C200",
-    "claim": "Examining darting requires a more detailed analysis than darts per minute or composite escape scores.",
+    "claim": "Examining darting requires a more detailed analysis.",
     "claim_type": "EXPLICIT",
     "source": "Previous studies have measured darting to WN as a darts per minute measure (Morena et al., 2021; Hoffman et al., 2022; Trott et al., 2022) or as part of a composite escape score (Hersman et al., 2020), but our data suggests that examining darting requires a more detailed analysis.",
     "source_type": [
@@ -2757,54 +2754,50 @@
   },
   {
     "claim_id": "C204",
-    "claim": "The transition from freezing to flight behavior in the PA group reflects a larger perceived psychological distance from threat that influences defensive strategy.",
+    "claim": "The sustained tone-evoked freezing over multiple extinction sessions in the PA-R group is likely a product of the temporal proximity of the cue to the footshock.",
     "claim_type": "EXPLICIT",
-    "source": "In response to WN during extinction, the PA group transitioned from explosive circa-strike flight responses containing escape jumps to a combination of anticipatory post-encounter freezing and darting (Figure 6A, Figure 7). This likely reflects a larger perceived psychological distance from threat that influences defensive strategy (Perusini and Fanselow, 2015).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is an interpretation of the data with a citation to Perusini and Fanselow, 2015, referencing Figures 6A and 7.",
-    "evidence_type": [
-      "DATA",
-      "CITATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C205",
-    "claim": "The control groups showed only slight changes in WN-evoked activity over extinction, similar to responses of stressed mice to an unfamiliar WN.",
-    "claim_type": "EXPLICIT",
-    "source": "The control groups showed only slight changes in WN-evoked activity over extinction, similar to responses of stressed mice to an unfamiliar WN (Figure 4; Hoffman et al., 2022).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is an observation with a citation to Hoffman et al., 2022, referencing Figure 4.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C206",
-    "claim": "The lack of decrease in WN-evoked activity over extinction in the PA-R group compared to the PA group suggests that WN-evoked flight in the PA group is associative.",
-    "claim_type": "EXPLICIT",
-    "source": "The lack of decrease in WN-evoked activity over extinction in the PA-R group compared to the PA group, and the lack of the control groups transitioning to freezing behavior, suggests that WN-evoked flight in the PA group is associative and is dependent on the perceived threat value of the WN stimulus.",
+    "source": "The sustained tone-evoked freezing over multiple extinction sessions in the PA-R group is likely a product of the temporal proximity of the cue to the footshock, which is set at a greater intensity (0.9 mA) in the conditioned flight paradigm than is traditionally used in Pavlovian threat conditioning (typically 0.2\u20130.6 mA).",
     "source_type": [
       "TEXT"
     ],
     "evidence": "This is an inference drawn from the experimental data.",
     "evidence_type": [
       "DATA",
-      "INFERENCE"
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C205",
+    "claim": "The footshock intensity is set at 0.9 mA in the conditioned flight paradigm.",
+    "claim_type": "EXPLICIT",
+    "source": "The sustained tone-evoked freezing over multiple extinction sessions in the PA-R group is likely a product of the temporal proximity of the cue to the footshock, which is set at a greater intensity (0.9 mA) in the conditioned flight paradigm than is traditionally used in Pavlovian threat conditioning (typically 0.2\u20130.6 mA).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the experimental parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C206",
+    "claim": "The footshock intensity traditionally used in Pavlovian threat conditioning is typically 0.2\u20130.6 mA.",
+    "claim_type": "EXPLICIT",
+    "source": "The sustained tone-evoked freezing over multiple extinction sessions in the PA-R group is likely a product of the temporal proximity of the cue to the footshock, which is set at a greater intensity (0.9 mA) in the conditioned flight paradigm than is traditionally used in Pavlovian threat conditioning (typically 0.2\u20130.6 mA).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on established knowledge about traditional Pavlovian threat conditioning.",
+    "evidence_type": [
+      "KNOWLEDGE"
     ]
   },
   {
     "claim_id": "C207",
-    "claim": "WN-evoked flight in the PA group is dependent on the perceived threat value of the WN stimulus.",
+    "claim": "The reductions in freezing during the tone during extinction in the unpaired and SO groups can be attributed to reduced freezing overall.",
     "claim_type": "EXPLICIT",
-    "source": "The lack of decrease in WN-evoked activity over extinction in the PA-R group compared to the PA group, and the lack of the control groups transitioning to freezing behavior, suggests that WN-evoked flight in the PA group is associative and is dependent on the perceived threat value of the WN stimulus.",
+    "source": "Because freezing during the tone is not elevated over contextual freezing levels in the unpaired and SO groups, the reductions in freezing during the tone during extinction in these groups can be attributed to reduced freezing overall.",
     "source_type": [
       "TEXT"
     ],
@@ -2816,37 +2809,40 @@
   },
   {
     "claim_id": "C208",
-    "claim": "The presence of jumping during early extinction trials in the PA group indicates that the WN initially signaled imminent threat, resulting in an explosive circa-strike escape response.",
+    "claim": "The transition from explosive circa-strike flight responses to a combination of anticipatory post-encounter freezing and darting in the PA group likely reflects a larger perceived psychological distance from threat that influences defensive strategy.",
     "claim_type": "EXPLICIT",
-    "source": "The presence of jumping during early extinction trials in the PA group indicates that the WN initially signaled imminent threat, resulting in an explosive circa-strike escape response.",
+    "source": "In response to WN during extinction, the PA group transitioned from explosive circa-strike flight responses containing escape jumps to a combination of anticipatory post-encounter freezing and darting (Figure 6A, Figure 7). This likely reflects a larger perceived psychological distance from threat that influences defensive strategy (Perusini and Fanselow, 2015).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is an interpretation of the data.",
+    "evidence": "This is an inference drawn from the experimental data, with a citation to Perusini and Fanselow, 2015, and reference to Figure 6A and Figure 7.",
     "evidence_type": [
       "DATA",
+      "CITATION",
       "INFERENCE"
     ]
   },
   {
     "claim_id": "C209",
-    "claim": "The change from jumping to darting may reflect a change in perceived threat imminence consistent with the predatory imminence continuum.",
+    "claim": "The control groups showed only slight changes in WN-evoked activity over extinction, similar to responses of stressed mice to an unfamiliar WN.",
     "claim_type": "EXPLICIT",
-    "source": "However, the change from jumping to darting may reflect a change in perceived threat imminence in the same vein as the observed change from flight to freezing. This phenomenon was only observed in the PA group, indicating that this behavioral change is associative and is consistent with the predatory imminence continuum.",
+    "source": "The control groups showed only slight changes in WN-evoked activity over extinction, similar to responses of stressed mice to an unfamiliar WN (Figure 4; Hoffman et al., 2022).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is an interpretation of the data in the context of the predatory imminence continuum theory.",
+    "evidence": "This is a comparison to a previous study, with a citation to Hoffman et al., 2022, and reference to Figure 4.",
     "evidence_type": [
       "DATA",
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
     "claim_id": "C210",
-    "claim": "The behavioral change from jumping to darting was only observed in the PA group, indicating that this behavioral change is associative.",
+    "claim": "The lack of decrease in WN-evoked activity over extinction in the PA-R group compared to the PA group suggests that WN-evoked flight in the PA group is associative and is dependent on the perceived threat value of the WN stimulus.",
     "claim_type": "EXPLICIT",
-    "source": "However, the change from jumping to darting may reflect a change in perceived threat imminence in the same vein as the observed change from flight to freezing. This phenomenon was only observed in the PA group, indicating that this behavioral change is associative and is consistent with the predatory imminence continuum.",
+    "source": "The lack of decrease in WN-evoked activity over extinction in the PA-R group compared to the PA group, and the lack of the control groups transitioning to freezing behavior, suggests that WN-evoked flight in the PA group is associative and is dependent on the perceived threat value of the WN stimulus.",
     "source_type": [
       "TEXT"
     ],
@@ -2858,6 +2854,48 @@
   },
   {
     "claim_id": "C211",
+    "claim": "The presence of jumping during early extinction trials in the PA group indicates that the WN initially signaled imminent threat, resulting in an explosive circa-strike escape response.",
+    "claim_type": "EXPLICIT",
+    "source": "The presence of jumping during early extinction trials in the PA group indicates that the WN initially signaled imminent threat, resulting in an explosive circa-strike escape response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C212",
+    "claim": "The change from jumping to darting may reflect a change in perceived threat imminence in the same vein as the observed change from flight to freezing.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the change from jumping to darting may reflect a change in perceived threat imminence in the same vein as the observed change from flight to freezing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C213",
+    "claim": "The change from jumping to darting was only observed in the PA group, indicating that this behavioral change is associative and is consistent with the predatory imminence continuum.",
+    "claim_type": "EXPLICIT",
+    "source": "This phenomenon was only observed in the PA group, indicating that this behavioral change is associative and is consistent with the predatory imminence continuum.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C214",
     "claim": "Jumping behavior to WN is associative and can be extinguished, making it a suitable measure for future studies interested in how the nervous system controls experience-dependent high-intensity fear reactions.",
     "claim_type": "EXPLICIT",
     "source": "This jumping behavior to WN is associative and can be extinguished, making it a suitable measure for future studies interested in how the nervous system controls experience-dependent high-intensity fear reactions.",
@@ -2872,7 +2910,7 @@
     ]
   },
   {
-    "claim_id": "C212",
+    "claim_id": "C215",
     "claim": "The elevated activity indices from the UN and SO groups are similar to other studies that report heightened activity to WN after multiple footshocks, or a sudden change in stimulation.",
     "claim_type": "EXPLICIT",
     "source": "The elevated activity indices from the UN and SO groups are similar to other studies that report heightened activity to WN after multiple footshocks, or a sudden change in stimulation (Hoffman et al., 2022; Trott et al., 2022).",
@@ -2885,50 +2923,22 @@
     ]
   },
   {
-    "claim_id": "C213",
-    "claim": "The SO group maintained a consistent level of darting throughout the first extinction session, which contributed to their overall increased activity index.",
+    "claim_id": "C216",
+    "claim": "Shock sensitization can prime an animal to dart more readily to an unfamiliar, but highly salient, stimulus upon stimulus transition.",
     "claim_type": "EXPLICIT",
-    "source": "The SO group maintained a consistent level of darting throughout the first extinction session, which contributed to their overall increased activity index (Figure 7B and D).",
+    "source": "Given that darting can be elicited in stressed mice (Brzozowska et al., 2017), it is probable that shock sensitization can prime an animal to dart more readily to an unfamiliar, but highly salient, stimulus upon stimulus transition.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is an interpretation of the data, referencing Figures 7B and D.",
+    "evidence": "This is an inference drawn from the experimental data, with a citation to Brzozowska et al., 2017.",
     "evidence_type": [
       "DATA",
+      "CITATION",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C214",
-    "claim": "Darting can be elicited in stressed mice.",
-    "claim_type": "EXPLICIT",
-    "source": "Given that darting can be elicited in stressed mice (Brzozowska et al., 2017), it is probable that shock sensitization can prime an animal to dart more readily to an unfamiliar, but highly salient, stimulus upon stimulus transition.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This statement is supported by a citation to Brzozowska et al., 2017.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C215",
-    "claim": "It is probable that shock sensitization can prime an animal to dart more readily to an unfamiliar, but highly salient, stimulus upon stimulus transition.",
-    "claim_type": "EXPLICIT",
-    "source": "Given that darting can be elicited in stressed mice (Brzozowska et al., 2017), it is probable that shock sensitization can prime an animal to dart more readily to an unfamiliar, but highly salient, stimulus upon stimulus transition.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculative inference based on cited evidence.",
-    "evidence_type": [
-      "CITATION",
-      "INFERENCE",
-      "SPECULATION"
-    ]
-  },
-  {
-    "claim_id": "C216",
+    "claim_id": "C217",
     "claim": "Darting behavior has been shown to change based on multiple parameters, decreasing both with increased shock intensity and with prolonged extinction training.",
     "claim_type": "EXPLICIT",
     "source": "Indeed, darting behavior has been shown to change based on multiple parameters, decreasing both with increased shock intensity (Mitchell et al., 2022) and with prolonged extinction training (Demars et al., 2022), suggesting that darting is both an associative conditioned response to stimuli associated with threat and a response resulting from non-associative sensitization.",
@@ -2941,21 +2951,21 @@
     ]
   },
   {
-    "claim_id": "C217",
+    "claim_id": "C218",
     "claim": "Darting is both an associative conditioned response to stimuli associated with threat and a response resulting from non-associative sensitization.",
     "claim_type": "EXPLICIT",
     "source": "Indeed, darting behavior has been shown to change based on multiple parameters, decreasing both with increased shock intensity (Mitchell et al., 2022) and with prolonged extinction training (Demars et al., 2022), suggesting that darting is both an associative conditioned response to stimuli associated with threat and a response resulting from non-associative sensitization.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from cited evidence.",
+    "evidence": "This is an inference drawn from the cited studies.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C218",
+    "claim_id": "C219",
     "claim": "Tail rattling has been observed in mice when determining hierarchical relationships.",
     "claim_type": "EXPLICIT",
     "source": "Tail rattling has been observed in mice when determining hierarchical relationships (Haber and Simmel, 1976; Terranova et al., 1998; Dorofeikova et al., 2023), anticipating fighting (Miczek et al., 2001), and encountering looming threat (Salay et al., 2018).",
@@ -2968,7 +2978,7 @@
     ]
   },
   {
-    "claim_id": "C219",
+    "claim_id": "C220",
     "claim": "Tail rattling has been observed in mice when anticipating fighting.",
     "claim_type": "EXPLICIT",
     "source": "Tail rattling has been observed in mice when determining hierarchical relationships (Haber and Simmel, 1976; Terranova et al., 1998; Dorofeikova et al., 2023), anticipating fighting (Miczek et al., 2001), and encountering looming threat (Salay et al., 2018).",
@@ -2981,7 +2991,7 @@
     ]
   },
   {
-    "claim_id": "C220",
+    "claim_id": "C221",
     "claim": "Tail rattling has been observed in mice when encountering looming threat.",
     "claim_type": "EXPLICIT",
     "source": "Tail rattling has been observed in mice when determining hierarchical relationships (Haber and Simmel, 1976; Terranova et al., 1998; Dorofeikova et al., 2023), anticipating fighting (Miczek et al., 2001), and encountering looming threat (Salay et al., 2018).",
@@ -2994,30 +3004,18 @@
     ]
   },
   {
-    "claim_id": "C221",
+    "claim_id": "C222",
     "claim": "Tail rattling may be a behavior elicited in stressed mice in the face of uncertain threat.",
     "claim_type": "EXPLICIT",
     "source": "Thus, tail rattling may be a behavior elicited in stressed mice in the face of uncertain threat.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from cited evidence.",
+    "evidence": "This is an inference drawn from the cited studies and the experimental data.",
     "evidence_type": [
       "CITATION",
+      "DATA",
       "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C222",
-    "claim": "Tail rattling occurs most often during early trials of fear conditioning, with a prominent decline later in conditioning.",
-    "claim_type": "EXPLICIT",
-    "source": "Previously, we found that tail rattling occurs most often during early trials of fear conditioning, with a prominent decline later in conditioning (Borkar et al., 2020).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This statement is supported by a citation to Borkar et al., 2020.",
-    "evidence_type": [
-      "CITATION"
     ]
   },
   {
@@ -3049,13 +3047,13 @@
   },
   {
     "claim_id": "C225",
-    "claim": "Future studies interested in measuring defensive responses to threat signals should consider measuring tail rattling as a marker of non-associative anticipatory fear.",
+    "claim": "Future studies that are interested in measuring defensive responses to threat signals should consider measuring tail rattling as a marker of non-associative anticipatory fear.",
     "claim_type": "EXPLICIT",
     "source": "Future studies that are interested in measuring defensive responses to threat signals such as context, odor, or innately aversive sensory stimuli should consider measuring tail rattling as a marker of non-associative anticipatory fear.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a recommendation for future research based on the current findings.",
+    "evidence": "This is a recommendation for future research based on the findings.",
     "evidence_type": [
       "DATA",
       "INFERENCE",
@@ -3083,7 +3081,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement is supported by citations to recent studies.",
+    "evidence": "This statement is supported by citations to studies.",
     "evidence_type": [
       "CITATION"
     ]
@@ -3096,7 +3094,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary of the advantages of the current paradigm.",
+    "evidence": "This is a summary of the findings and a comparison to classical Pavlovian conditioning.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
@@ -3104,7 +3102,7 @@
   },
   {
     "claim_id": "C229",
-    "claim": "Behaviors like darting and tail rattling can occur due to non-associative stimulus-inherent properties.",
+    "claim": "Behaviors like darting and tail ratting can occur due to non-associative stimulus-inherent properties.",
     "claim_type": "EXPLICIT",
     "source": "While behaviors like darting and tail ratting can occur due to non-associative stimulus-inherent properties, transitions between freezing and jumping are robustly present when associative factors signal threat imminence.",
     "source_type": [
@@ -3132,7 +3130,7 @@
   },
   {
     "claim_id": "C231",
-    "claim": "Future studies can utilize the SCS paradigm to investigate neuronal mechanisms that contribute to threat association and direct dynamic responses to threat.",
+    "claim": "Future studies can utilize this paradigm to investigate neuronal mechanisms that contribute to threat association and direct dynamic responses to threat.",
     "claim_type": "EXPLICIT",
     "source": "Future studies can utilize this paradigm to investigate neuronal mechanisms that contribute to threat association and direct dynamic responses to threat, with important implications for developing new treatments for those who suffer from fear and anxiety disorders.",
     "source_type": [
@@ -3145,7 +3143,7 @@
   },
   {
     "claim_id": "C232",
-    "claim": "The SCS paradigm has important implications for developing new treatments for those who suffer from fear and anxiety disorders.",
+    "claim": "The paradigm has important implications for developing new treatments for those who suffer from fear and anxiety disorders.",
     "claim_type": "EXPLICIT",
     "source": "Future studies can utilize this paradigm to investigate neuronal mechanisms that contribute to threat association and direct dynamic responses to threat, with important implications for developing new treatments for those who suffer from fear and anxiety disorders.",
     "source_type": [
@@ -3203,20 +3201,20 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the ethical approval for the animal experiments.",
+    "evidence": "This describes the ethical approval for the animal procedures.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C237",
-    "claim": "Behavioral testing was performed in two contexts: Context A and Context B.",
+    "claim": "Behavioral testing was performed in two contexts.",
     "claim_type": "EXPLICIT",
     "source": "Behavioral testing was performed in two contexts.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental setup.",
+    "evidence": "This describes the experimental design.",
     "evidence_type": [
       "DATA"
     ]
@@ -3229,46 +3227,46 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental apparatus.",
+    "evidence": "This describes the apparatus used for Context A.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C239",
-    "claim": "Context B consisted of a modular fear conditioning chamber with metal grid flooring and walls of polycarbonate, stainless steel, and polyurethane, cleaned with 70% ethanol solution between sessions.",
+    "claim": "Context B consisted of a modular fear conditioning chamber (ENV-307W, Med Associates, Inc, Fairfax, Vermont) with metal grid flooring and walls of polycarbonate, stainless steel, and polyurethane, cleaned with 70% ethanol solution between sessions.",
     "claim_type": "EXPLICIT",
     "source": "Context B consisted of a modular fear conditioning chamber (ENV-307W, Med Associates, Inc, Fairfax, Vermont) with metal grid flooring and walls of polycarbonate, stainless steel, and polyurethane, cleaned with 70% ethanol solution between sessions.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental apparatus.",
+    "evidence": "This describes the apparatus used for Context B.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C240",
-    "claim": "Alternating current footshocks were delivered to the mice during conditioning in Context B.",
+    "claim": "Alternating current footshocks (ENV-414S, Med Associates, Inc) were delivered to the mice during conditioning in Context B.",
     "claim_type": "EXPLICIT",
     "source": "Alternating current footshocks (ENV-414S, Med Associates, Inc) were delivered to the mice during conditioning in Context B.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure.",
+    "evidence": "This describes the apparatus used to deliver footshocks.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C241",
-    "claim": "A programmable audio generator generated auditory stimuli that were delivered at 75 dB in each context via an overhead speaker.",
+    "claim": "A programmable audio generator (ANL-926, Med Associates, Inc) generated auditory stimuli that were delivered at 75 dB in each context via an overhead speaker (ENV-224AM, Med Associates, Inc).",
     "claim_type": "EXPLICIT",
     "source": "A programmable audio generator (ANL-926, Med Associates, Inc) generated auditory stimuli that were delivered at 75 dB in each context via an overhead speaker (ENV-224AM, Med Associates, Inc).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental apparatus and procedure.",
+    "evidence": "This describes the apparatus used to deliver auditory stimuli.",
     "evidence_type": [
       "DATA"
     ]
@@ -3281,7 +3279,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental stimulus with citations to previous work.",
+    "evidence": "This describes the stimulus used, with citations to previous descriptions.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -3295,7 +3293,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental stimulus.",
+    "evidence": "This describes the parameters of the SCS.",
     "evidence_type": [
       "DATA"
     ]
@@ -3308,20 +3306,20 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental stimulus.",
+    "evidence": "This describes the parameters of the reversed SCS.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C245",
-    "claim": "Behavioral protocols were generated using Med-PC software to control auditory stimuli and shock with high temporal precision.",
+    "claim": "Behavioral protocols were generated using Med-PC software (Med Associates, Inc) to control auditory stimuli and shock with high temporal precision.",
     "claim_type": "EXPLICIT",
     "source": "Behavioral protocols were generated using Med-PC software (Med Associates, Inc) to control auditory stimuli and shock with high temporal precision.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental control system.",
+    "evidence": "This describes the software used to control the experimental apparatus.",
     "evidence_type": [
       "DATA"
     ]
@@ -3334,20 +3332,20 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental timeline.",
+    "evidence": "This describes the duration of the behavioral testing.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C247",
-    "claim": "On Day 1 (Pre-Exposure), subjects were placed in Context A for a baseline period of 3 min, followed by four presentations of the SCS.",
+    "claim": "On Day 1 (Pre-Exposure), subjects were placed in Context A for a baseline period of 3 min, followed by four presentations of the SCS with a pseudorandom inter-stimulus interval (ISI) period of 90\u2013100 s and a period of 40 s following the final SCS presentation, totaling 590 s per session.",
     "claim_type": "EXPLICIT",
     "source": "On Day 1 (Pre-Exposure), subjects were placed in Context A for a baseline period of 3 min, followed by four presentations of the SCS with a pseudorandom inter-stimulus interval (ISI) period of 90\u2013100 s and a period of 40 s following the final SCS presentation, totaling 590 s per session.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure for Day 1.",
+    "evidence": "This describes the experimental protocol for Day 1.",
     "evidence_type": [
       "DATA"
     ]
@@ -3360,20 +3358,20 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure for Days 2 and 3.",
+    "evidence": "This describes the context for the conditioning days.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C249",
-    "claim": "On each conditioning day, mice were subjected to one of three conditions after a 3-min baseline period.",
+    "claim": "On each conditioning day (CD1 and CD2), mice were subjected to one of three conditions after a 3- min baseline period.",
     "claim_type": "EXPLICIT",
     "source": "On each conditioning day (CD1 and CD2), mice were subjected to one of three conditions after a 3- min baseline period.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure for conditioning days.",
+    "evidence": "This describes the experimental protocol for the conditioning days.",
     "evidence_type": [
       "DATA"
     ]
@@ -3393,39 +3391,39 @@
   },
   {
     "claim_id": "C251",
-    "claim": "PA mice and PA-R mice were presented with five pairings of the SCS co-terminating with a 1 s, 0.9 mA footshock during conditioning.",
+    "claim": "PA mice (n=16 males, 16 females) and PA-R mice (n=5 males, 5 females) were presented with five pairings of the SCS co-terminating with a 1 s, 0.9 mA footshock, with pseudorandom ISI periods of 90\u2013150 s and a period of 60 s following the final footshock of the session.",
     "claim_type": "EXPLICIT",
     "source": "PA mice (n=16 males, 16 females) and PA-R mice (n=5 males, 5 females) were presented with five pairings of the SCS co-terminating with a 1 s, 0.9 mA footshock, with pseudorandom ISI periods of 90\u2013150 s and a period of 60 s following the final footshock of the session.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure for the PA and PA-R groups.",
+    "evidence": "This describes the experimental protocol for the PA and PA-R groups.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C252",
-    "claim": "UN mice and UN-R mice were presented with pseudorandom presentations of SCS and footshocks separate from one another during conditioning.",
+    "claim": "UN mice (n=10 males, 10 females) and UN-R mice (n=5 males, 5 females) were presented with pseudorandom presentations of SCS and footshocks separate from one another with ISI periods of 40\u201360 s, with a period of 90 s following the final stimulus of the session.",
     "claim_type": "EXPLICIT",
     "source": "UN mice (n=10 males, 10 females) and UN-R mice (n=5 males, 5 females) were presented with pseudorandom presentations of SCS and footshocks separate from one another with ISI periods of 40\u201360 s, with a period of 90 s following the final stimulus of the session.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure for the UN and UN-R groups.",
+    "evidence": "This describes the experimental protocol for the UN and UN-R groups.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C253",
-    "claim": "Stimuli in the UN and UN-R groups were ordered such that the SCS could not reliably predict footshock.",
+    "claim": "Stimuli were ordered such that the SCS could not reliably predict footshock in the UN and UN-R groups.",
     "claim_type": "EXPLICIT",
     "source": "Stimuli were ordered such that the SCS could not reliably predict footshock.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design for the unpaired groups.",
+    "evidence": "This describes the experimental design for the UN and UN-R groups.",
     "evidence_type": [
       "DATA"
     ]
@@ -3445,13 +3443,13 @@
   },
   {
     "claim_id": "C255",
-    "claim": "SO mice did not receive presentations of the SCS during conditioning and were given five footshocks.",
+    "claim": "SO mice (n=10 males, 10 females) did not receive presentations of the SCS during conditioning and were given five footshocks with pseudorandom ISI periods of 120\u2013160 s each session, with a period of 80 s following the final shock of the session.",
     "claim_type": "EXPLICIT",
     "source": "SO mice (n=10 males, 10 females) did not receive presentations of the SCS during conditioning and were given five footshocks with pseudorandom ISI periods of 120\u2013160 s each session, with a period of 80 s following the final shock of the session.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure for the SO group.",
+    "evidence": "This describes the experimental protocol for the SO group.",
     "evidence_type": [
       "DATA"
     ]
@@ -3464,7 +3462,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design rationale.",
+    "evidence": "This describes the experimental design to control for anticipation.",
     "evidence_type": [
       "DATA"
     ]
@@ -3477,14 +3475,14 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental procedure for extinction days.",
+    "evidence": "This describes the context for the extinction days.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C258",
-    "claim": "Each Extinction session lasted 1910s.",
+    "claim": "Each Extinction session (Ext1 and Ext2) lasted 1910s.",
     "claim_type": "EXPLICIT",
     "source": "Each Extinction session (Ext1 and Ext2) lasted 1910s.",
     "source_type": [
@@ -3516,27 +3514,27 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the experimental design and replication.",
+    "evidence": "This describes the experimental design.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C261",
-    "claim": "All sessions were recorded to video using a camera mounted above the behavioral contexts with stimulus events encoded to the same files using TTL pulses.",
+    "claim": "All sessions were recorded to video using a camera (Pike, Allied Vision, Stadtroda, Germany) mounted above the behavioral contexts with stimulus events encoded to the same files using TTL pulses (Omniplex, Plexon, Dallas, Texas).",
     "claim_type": "EXPLICIT",
     "source": "All sessions were recorded to video using a camera (Pike, Allied Vision, Stadtroda, Germany) mounted above the behavioral contexts with stimulus events encoded to the same files using TTL pulses (Omniplex, Plexon, Dallas, Texas).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the video recording setup.",
+    "evidence": "This describes the video recording methods.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C262",
-    "claim": "Contour tracking was used to automatically detect freezing based on frame-by-frame changes in pixels.",
+    "claim": "Contour tracking (Cineplex, Plexon) was used to automatically detect freezing based on frame-by-frame changes in pixels.",
     "claim_type": "EXPLICIT",
     "source": "Contour tracking (Cineplex, Plexon) was used to automatically detect freezing based on frame-by-frame changes in pixels.",
     "source_type": [
@@ -3555,27 +3553,27 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the operational definition of freezing behavior.",
+    "evidence": "This describes the definition of freezing behavior.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C264",
-    "claim": "Freezing results were confirmed with an observer blinded to the condition.",
+    "claim": "Results were confirmed with an observer blinded to the condition.",
     "claim_type": "EXPLICIT",
     "source": "Freezing behavior was defined as a complete cessation of movement for at least 1 s, and results were confirmed with an observer blinded to the condition.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the validation method for freezing detection.",
+    "evidence": "This describes the method for confirming the results.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C265",
-    "claim": "Speed (cm/s) was extracted using the animal's center of gravity by determining a calibration coefficient using the known size of the behavioral context and the camera's pixel dimensions.",
+    "claim": "Speed (cm/s) was extracted using the animal's center of gravity.",
     "claim_type": "EXPLICIT",
     "source": "By determining a calibration coefficient using the known size of the behavioral context and the camera's pixel dimensions, speed (cm/s) was extracted using the animal's center of gravity.",
     "source_type": [
@@ -3588,7 +3586,7 @@
   },
   {
     "claim_id": "C266",
-    "claim": "An activity index was calculated for each animal using a ratio of its speed during either the tone or WN stimulus period and its average speed from the combined 10 s periods prior to each SCS presentation during the session; the number of jumps performed during that stimulus period was then added to this ratio.",
+    "claim": "An activity index was calculated for each animal using a ratio of its speed during either the tone or WN stimulus (CS) period and its average speed from the combined 10 s periods prior to each SCS presentation (pre-SCS) during the session; the number of jumps performed during that stimulus period was then added to this ratio (SpeedCS/Speedavg pre-SCS+Jumps).",
     "claim_type": "EXPLICIT",
     "source": "An activity index was calculated for each animal using a ratio of its speed during either the tone or WN stimulus (CS) period and its average speed from the combined 10 s periods prior to each SCS presentation (pre-SCS) during the session; the number of jumps performed during that stimulus period was then added to this ratio (SpeedCS/Speedavg pre-SCS+Jumps).",
     "source_type": [
@@ -3601,13 +3599,13 @@
   },
   {
     "claim_id": "C267",
-    "claim": "Previously, flight scores were calculated per trial using speed from each trial's pre-SCS period.",
+    "claim": "Previously flight scores were calculated per trial using speed from each trial's pre-SCS period.",
     "claim_type": "EXPLICIT",
     "source": "Previously we calculated flight scores per trial using speed from each trial's pre-SCS period (Fadok et al., 2017; Borkar et al., 2020), but here we utilized an average from all pre-SCS periods in our calculations to avoid denominators that were close to or equal to 0, a complication noted by other groups (Hersman et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes a change in methodology with citations to previous work.",
+    "evidence": "This describes a change in the method for calculating the activity index, with citations to previous methods and a complication noted by another group.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -3615,13 +3613,13 @@
   },
   {
     "claim_id": "C268",
-    "claim": "The activity index calculation was changed to use an average from all pre-SCS periods to avoid denominators that were close to or equal to 0.",
+    "claim": "An average from all pre-SCS periods was utilized in the activity index calculations to avoid denominators that were close to or equal to 0.",
     "claim_type": "EXPLICIT",
     "source": "Previously we calculated flight scores per trial using speed from each trial's pre-SCS period (Fadok et al., 2017; Borkar et al., 2020), but here we utilized an average from all pre-SCS periods in our calculations to avoid denominators that were close to or equal to 0, a complication noted by other groups (Hersman et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the rationale for the methodological change with a citation.",
+    "evidence": "This describes the rationale for the change in the method for calculating the activity index, with a citation to a complication noted by another group.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -3629,7 +3627,7 @@
   },
   {
     "claim_id": "C269",
-    "claim": "The measure of locomotor change is now referred to as an 'activity index' instead of a 'flight score'.",
+    "claim": "The measure of locomotor change is now referred to as an 'activity index' instead of a 'flight score' as before.",
     "claim_type": "EXPLICIT",
     "source": "Reflecting this change, we now refer to this measure of locomotor change as an 'activity index' instead of a 'flight score' as before.",
     "source_type": [
@@ -3648,7 +3646,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the method for classifying specific behaviors.",
+    "evidence": "This describes the method for classifying escape jumps and tail-rattling behaviors.",
     "evidence_type": [
       "DATA"
     ]
@@ -3661,7 +3659,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the operational definition of jumping behavior.",
+    "evidence": "This describes the definition of jumps.",
     "evidence_type": [
       "DATA"
     ]
@@ -3674,7 +3672,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the operational definition of tail rattling behavior.",
+    "evidence": "This describes the definition of tail rattling.",
     "evidence_type": [
       "DATA"
     ]
@@ -3687,7 +3685,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the method for detecting darting behavior.",
+    "evidence": "This describes the method for detecting and classifying darting behavior.",
     "evidence_type": [
       "DATA"
     ]
@@ -3700,7 +3698,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the operational definition of darting behavior.",
+    "evidence": "This describes the definition of darting.",
     "evidence_type": [
       "DATA"
     ]
@@ -3726,7 +3724,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the data analysis approach for frequency-based comparisons.",
+    "evidence": "This describes the method for performing behavioral analyses.",
     "evidence_type": [
       "DATA"
     ]
@@ -3739,7 +3737,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the data analysis approach for frequency-based comparisons.",
+    "evidence": "This describes the method for performing behavioral analyses.",
     "evidence_type": [
       "DATA"
     ]
@@ -3752,7 +3750,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the method for scoring darting behavior with a citation.",
+    "evidence": "This describes the method for scoring darts, with a citation to the software used.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -3760,13 +3758,13 @@
   },
   {
     "claim_id": "C279",
-    "claim": "Top-down footage of 16 male and female C57BL/6 J mice that underwent SCS fear conditioning in Context B was collected and analyzed in DeepLabCut to assign 8 tracking points to subjects.",
+    "claim": "Top-down footage (640\u00d7480 pixel resolution, 30 frames per second) of 16 male and female C57BL/6 J mice that underwent SCS fear conditioning in Context B was collected and analyzed in DeepLabCut (DLC) to assign 8 tracking points (Nose, L Ear, R Ear, Center of Mass, L Flank, R Flank, Tail Base, Tail Tip) to subjects.",
     "claim_type": "EXPLICIT",
     "source": "To generate this model, top-down footage (640\u00d7480 pixel resolution, 30 frames per second) of 16 male and female C57BL/6 J mice that underwent SCS fear conditioning in Context B was collected and analyzed in DeepLabCut (DLC) (Mathis et al., 2018) to assign 8 tracking points (Nose, L Ear, R Ear, Center of Mass, L Flank, R Flank, Tail Base, Tail Tip) to subjects.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the method for generating the machine learning model with a citation.",
+    "evidence": "This describes the method for generating the machine learning model, with a citation to DeepLabCut.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -3780,7 +3778,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the training of the machine learning model.",
+    "evidence": "This describes the method for generating the machine learning model.",
     "evidence_type": [
       "DATA"
     ]
@@ -3793,7 +3791,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the training data for the machine learning model.",
+    "evidence": "This describes the method for training the machine learning model.",
     "evidence_type": [
       "DATA"
     ]
@@ -3806,7 +3804,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the operational definition of darting behavior for the machine learning model.",
+    "evidence": "This describes the definition of the darting start point.",
     "evidence_type": [
       "DATA"
     ]
@@ -3819,20 +3817,20 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the operational definition of darting behavior for the machine learning model.",
+    "evidence": "This describes the definition of the darting endpoint.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C284",
-    "claim": "Once the model was generated, all videos from all subjects were analyzed using a discrimination threshold of .37 and a minimum duration of 266 ms (eight frames).",
+    "claim": "Once the model was generated, all videos from all subjects were analyzed using a discrimination threshold of.37 and a minimum duration of 266 ms (eight frames).",
     "claim_type": "EXPLICIT",
     "source": "Once the model was generated, all videos from all subjects were analyzed using a discrimination threshold of.37 and a minimum duration of 266 ms (eight frames).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the parameters used for the machine learning analysis.",
+    "evidence": "This describes the method for analyzing the videos using the machine learning model.",
     "evidence_type": [
       "DATA"
     ]
@@ -3845,14 +3843,14 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the statistical justification for sample sizes.",
+    "evidence": "This describes the method for determining sample sizes.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C286",
-    "claim": "Data were analyzed for statistical significance using Prism 9.",
+    "claim": "Data were analyzed for statistical significance using Prism 9 (GraphPad Software Inc, San Diego, California).",
     "claim_type": "EXPLICIT",
     "source": "Data were analyzed for statistical significance using Prism 9 (GraphPad Software Inc, San Diego, California).",
     "source_type": [
@@ -3871,7 +3869,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the statistical significance threshold.",
+    "evidence": "This describes the threshold for statistical significance.",
     "evidence_type": [
       "DATA"
     ]
@@ -3884,7 +3882,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the statistical test used to check for normality.",
+    "evidence": "This describes the method for checking for normal distribution.",
     "evidence_type": [
       "DATA"
     ]
@@ -3910,7 +3908,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the statistical test used for group comparisons.",
+    "evidence": "This describes the statistical test used for comparing all groups.",
     "evidence_type": [
       "DATA"
     ]
@@ -3923,7 +3921,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the statistical test used for interaction analyses.",
+    "evidence": "This describes the statistical test used for assessing interactions.",
     "evidence_type": [
       "DATA"
     ]
@@ -3936,7 +3934,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the post-hoc test used following ANOVA.",
+    "evidence": "This describes the post-hoc test used after ANOVA.",
     "evidence_type": [
       "DATA"
     ]

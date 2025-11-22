@@ -3,18 +3,29 @@
     "result_id": "R1",
     "claim_ids": [
       "C1",
-      "C2",
       "C9",
       "C10",
       "C30",
       "C33",
-      "C118"
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
     ],
-    "result": "The study finds that disciplines with higher proportions of women receive systematically lower research quality evaluations, affecting both male and female researchers in those disciplines. This pattern is demonstrated across PBRF data from New Zealand showing lower research scores in female-dominated disciplines.",
+    "result": "Researchers in female-dominated disciplines receive lower research quality evaluations than those in male-dominated disciplines, with this effect persisting across all three PBRF assessment rounds (2006, 2012, 2018) and affecting both men and women. The discipline gender balance effect is larger than the within-discipline gender gap, though both effects have diminished over time.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C9, C10, C30, C33, and C118 collectively establish this core finding through analysis of PBRF data across three time periods (2006, 2012, 2018) with over 18,000 data points. The statistical models control for age and institution, and Figure 1 clearly shows the relationship between discipline gender balance and scores for both genders. The finding is robust and well-documented.",
+    "evaluation": "The PBRF analysis with over 18,000 data points across three time periods provides robust evidence for this finding. The statistical models control for age and institution, show consistent significance (p<0.05), and the effect is visualized in Figure 1 across all three assessment rounds. The specific predicted scores for different discipline types strengthen the claim.",
     "result_type": "MAJOR"
   },
   {
@@ -24,142 +35,92 @@
       "C12",
       "C31",
       "C32",
-      "C82"
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
     ],
-    "result": "The study finds that disciplines with higher proportions of women have lower funding success rates across multiple countries and funding systems (ARC, CIHR, EIGE), affecting both male and female researchers.",
+    "result": "In Australian Research Council funding (2010-2019), the effect of discipline gender balance on funding success increased substantially over time, replacing individual gender disadvantage as the primary factor. By 2019, researchers in female-dominated disciplines had lower success rates regardless of individual gender, whereas in 2010 individual gender was the dominant factor.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C12, C31, C32, and C82 are supported by analysis of three independent funding datasets spanning 29 countries. Figure 3 demonstrates this pattern across all three funding systems. The models control for relevant variables and show consistent effects of discipline gender balance on funding success rates.",
+    "evaluation": "The ARC dataset covering 440 data points shows a clear temporal shift with all model terms significant (p<0.001). Figure 3A illustrates the reversal where women gained slight advantage within disciplines by 2019, but discipline gender balance became the dominant predictor. The model selection by AIC supports this interpretation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C3",
-      "C4",
-      "C10",
-      "C11",
-      "C34"
+      "C90",
+      "C92",
+      "C93",
+      "C94"
     ],
-    "result": "The relationship between discipline gender balance and research evaluation outcomes affects both men and women and is robust to controlling for age, number of research outputs, and bibliometric measures.",
+    "result": "In Canadian Institute of Health Research funding (2011-2016), male-dominated health sub-disciplines had higher funding success rates in both time periods, with the advantage of working in the most male-dominated discipline (Biomedical, 77% male) being almost three times larger than the direct advantage of being male.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C4, C10, C11, and C34 are supported by the statistical models that include these control variables. The UC subset analysis (N=384) specifically tested robustness to bibliometric measures and found the discipline effect persisted even after controlling for publication counts and citation metrics (Figure 2).",
+    "evaluation": "The CIHR analysis shows significant relationship (p<0.001) between discipline gender balance and funding success across both time periods. The finding is consistent with the original Witteman et al. 2019 study and is visualized in Figures 3B and 3C. However, the dataset has limited granularity (16 aggregated data points) which somewhat limits the strength of conclusions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54"
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
     ],
-    "result": "Within the PBRF system, the effect of discipline gender balance on research scores is larger than the direct effect of individual researcher gender. Specific model predictions show substantial score differences across discipline types.",
+    "result": "In European Institute of Gender Equality funding data (2019) covering 29 countries, researchers in male-dominated disciplines were 50% more likely to be successful than those in female-dominated disciplines, with discipline gender balance having a much larger effect than individual gender (11 percentage point advantage across disciplines vs. 2 percentage points within disciplines).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C48-C54 present specific quantitative predictions from the statistical model. These are supported by the model output and Figure 1C. The claim that discipline effects exceed gender effects within disciplines (C49) is demonstrated by comparing coefficient magnitudes. The specific score predictions appear consistent with the model structure described.",
+    "evaluation": "The EIGE dataset with 333 data points across multiple countries shows all model variables significant (p<0.05) with country as random effect. Figure 3D illustrates the strong discipline effect. The 50% relative increase claim is supported by the model predictions, though the manuscript notes a potential typo in the source text.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59"
+      "C4",
+      "C11",
+      "C66",
+      "C67",
+      "C72",
+      "C76",
+      "C77",
+      "C78"
     ],
-    "result": "The discipline gender balance effect on PBRF scores persisted across all three assessment rounds (2006, 2012, 2018) but was strongest in 2006 and has diminished over time, particularly the within-discipline gender gap.",
+    "result": "After controlling for bibliometric measures including number of research outputs in a University of Canterbury subset (N=384), researchers in female-dominated disciplines still received lower PBRF scores. The gender minority in any discipline received higher scores than the majority when publication rates were equal, but overall scores remained lower in female-dominated disciplines.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C59 are supported by Figure 1 showing all three time periods and the statistical models for each round. The visual evidence clearly shows steeper slopes and larger gaps in 2006 (Figure 1A) compared to 2018 (Figure 1C), supporting the temporal trend claims.",
-    "result_type": "MINOR"
+    "evaluation": "The UC subset analysis provides detailed bibliometric controls showing number of outputs is the best predictor (r\u00b2=0.325, p<0.001) but discipline gender balance remains significant even after controlling for this. Figure 2 illustrates these relationships clearly. However, the subset represents only ~5% of the full PBRF dataset and is from a single institution, limiting generalizability.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C64",
-      "C67",
-      "C68",
-      "C73",
-      "C77"
+      "C3",
+      "C34",
+      "C103",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
     ],
-    "result": "Number of research outputs is the best bibliometric predictor of PBRF scores (r\u00b2=0.325), while quality-related metrics have minimal predictive power (r\u00b2<0.09). Men have more outputs and higher scores on average, but within disciplines with equal output numbers, men still score higher than women.",
+    "result": "The pattern of lower evaluations and funding success in female-dominated disciplines affects both men and women, though the authors explicitly acknowledge this is a correlational finding and does not establish causality. The findings suggest research from female-dominated disciplines is consistently evaluated as lower quality regardless of who performs it.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C64, C67, C68, C73, and C77 are supported by the UC subset analysis (N=384) shown in Figure 2A-B and Supplementary file 4. The r\u00b2 values are explicitly reported, and Figure 2B shows no gender difference in outputs within disciplines while Figure 1 shows gender differences in scores within disciplines, supporting C73.",
+    "evaluation": "This conclusion is consistently supported across all four independent datasets (PBRF, ARC, CIHR, EIGE) with statistical models showing effects for both genders. The authors appropriately acknowledge the correlational nature and avoid causal claims (C103). The inference that more women will be adversely affected is logical given their concentration in female-dominated fields.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
-    "claim_ids": [
-      "C78",
-      "C79"
-    ],
-    "result": "Gender minorities within disciplines receive higher evaluation scores than the gender majority when controlling for publication numbers, but overall scores remain lower in female-dominated disciplines for everyone.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C78-C79 are based on the interaction term in the model including publication counts (Figure 2C). While C79 is clearly supported by Figure 2C showing lower scores in female-dominated disciplines, C78 about gender minority advantage is more complex and depends on specific model predictions that are less clearly demonstrated. The interaction effect is significant but the interpretation requires careful consideration of confounding factors.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C87",
-      "C88",
-      "C89",
-      "C93"
-    ],
-    "result": "In ARC funding, the pattern shifted between 2010 and 2019: in 2010, individual gender was the primary factor affecting success rates, but by 2019, discipline gender balance became the dominant factor while the direct gender effect reversed to slightly favor women.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C87-C93 are supported by the ARC analysis and Figure 3A showing both 2010 (solid lines) and 2019 (dashed lines). The model includes a significant Gender\u00d7Time interaction, and the visual evidence clearly shows the shift from relatively flat slopes with gender gaps in 2010 to steeper slopes with reversed gender effects in 2019.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C96",
-      "C97",
-      "C98"
-    ],
-    "result": "In CIHR funding, male-dominated health sub-disciplines have higher funding success rates in both time periods, and the discipline effect is approximately three times larger than the direct gender effect.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C96-C98 are supported by the CIHR analysis and Figures 3B-C. The positive slopes in both time periods demonstrate C97. The claim about the 3\u00d7 effect size (C98) is a specific quantitative comparison of model coefficients that appears to be directly calculated from the model output.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C101",
-      "C102",
-      "C103",
-      "C104",
-      "C105",
-      "C106"
-    ],
-    "result": "In EIGE funding data across EU countries, funding success rates increase with discipline masculinization, with this discipline effect being substantially larger than the direct gender effect. The relative advantage is approximately 50% higher success in male-dominated versus female-dominated disciplines.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C101-C106 are supported by the EIGE analysis and Figure 3D. The positive slope demonstrates C102, the small vertical gap between gender lines compared to the overall slope supports C103, and the specific percentage point advantages (C104-C105) and relative 50% increase (C106) appear to be calculated from model predictions. The large sample size (N=333 data points, >135,000 applicants) provides strong statistical power.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
     "claim_ids": [
       "C35",
       "C36",
@@ -172,37 +133,25 @@
       "C43",
       "C44"
     ],
-    "result": "The study uses four independent datasets: PBRF (New Zealand, 18,371 individual evaluations), ARC (Australia), CIHR (Canada), and EIGE (29 EU/UK countries), with PBRF providing holistic expert-based research quality assessments that explicitly focus on quality over quantity.",
+    "result": "The study utilized four independent datasets spanning 30 countries: PBRF (New Zealand, 18,371 holistic research evaluations), ARC (Australia, 440 aggregated funding records), CIHR (Canada, 16 aggregated records), and EIGE (29 countries, 333 aggregated records). The PBRF evaluation is a holistic, expert-based assessment that explicitly focuses on quality over quantity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C44 describe the data sources and methodology. These are straightforward methodological descriptions supported by Table 1 and the Methods section. The PBRF process description (C38-C43) is supported by citation to official documentation. The sample sizes and geographic coverage are clearly documented.",
+    "evaluation": "The methodological description is clear and detailed. The datasets are well-documented with sample sizes, time periods, and evaluation methods specified in Table 1. The PBRF process description is supported by citation. However, the aggregated nature of three datasets (not individual-level) limits some analyses.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R12",
-    "claim_ids": [
-      "C107",
-      "C109",
-      "C117"
-    ],
-    "result": "The study explicitly acknowledges that the findings are correlational and do not establish causality, though several possible causal mechanisms are discussed speculatively including feminization over time and spillover of discipline-specific perceptions about brilliance.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C107, C109, and C117 are explicit statements in the Discussion section acknowledging the correlational nature of the findings and presenting speculative explanations. This is appropriate scientific practice - acknowledging limitations and discussing possible mechanisms without claiming to have proven them.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R13",
+    "result_id": "R8",
     "claim_ids": [
       "C5",
       "C6",
       "C7",
+      "C8",
       "C13",
       "C14",
       "C15",
       "C16",
+      "C17",
       "C18",
       "C19",
       "C20",
@@ -216,45 +165,40 @@
       "C28",
       "C29"
     ],
-    "result": "The manuscript cites extensive prior literature documenting gender disparities in academic research including lower evaluations, funding success, publication rates, citations, authorship, credit, and awards for women, as well as disciplinary differences in publication norms and gender balance.",
+    "result": "Prior research has established that women's research is evaluated as lower quality, women have lower funding success rates, publish less, receive fewer citations, have lower h-indices, and receive less credit and recognition. Academic disciplines differ substantially in publication norms, citation rates, and gender balance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C29 are all citation-based claims from the Introduction providing context from prior research. These are appropriately cited and represent established findings in the literature. The authors are accurately representing prior work to motivate their study.",
+    "evaluation": "These claims are well-supported by multiple citations to peer-reviewed literature. They provide essential context for the current study and represent established findings in the field. The authors appropriately note some exceptions (C6) and acknowledge limitations in the empirical evidence for some claims (C105).",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R14",
+    "result_id": "R9",
     "claim_ids": [
-      "C81",
-      "C119",
-      "C121",
-      "C122"
+      "C80"
     ],
-    "result": "The study concludes that the observed patterns will disproportionately benefit men overall (since more men work in male-dominated disciplines) and that research perceived as 'women's work' is systematically devalued regardless of who performs it.",
+    "result": "Men will benefit overall from the pattern of evaluating research in male-dominated disciplines as higher quality because more men work in male-dominated disciplines (74% of men vs. 47% of women in disciplines with >50% men in PBRF 2018).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C81, C119, C121, and C122 are logical inferences from the demonstrated findings. C81 is supported by combining the finding that male-dominated disciplines receive higher evaluations with the documented fact that more men work in male-dominated disciplines (74% of men vs 47% of women in PBRF 2018). The interpretation about devaluing 'women's work' (C121-C122) follows logically from the discipline-level effects affecting both genders.",
-    "result_type": "MAJOR"
+    "evaluation": "This inference is logically sound given the demonstrated discipline effects and the documented gender distribution across disciplines. The specific percentages from PBRF 2018 data support the claim. However, this is an inference about aggregate effects rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
   },
   {
-    "result_id": "R15",
+    "result_id": "R10",
     "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
       "C108",
-      "C110",
-      "C111",
-      "C112",
-      "C113",
-      "C114",
-      "C115",
-      "C116"
+      "C109"
     ],
-    "result": "The Discussion section reviews several possible explanations for the findings including workforce feminization effects, unconscious bias, funding allocation mechanisms, and job choice, citing relevant prior literature for each.",
+    "result": "Possible explanations for the findings include workforce feminization effects on salaries, unconscious biases in academic evaluation, women's tendency to choose undervalued research areas, and perceptions that male-dominated disciplines require 'brilliance' while female-dominated disciplines require 'hard work'.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C108-C116 are citation-based claims from the Discussion section exploring possible explanations. These appropriately cite prior research and are used to contextualize the current findings. Claims C111-C112 about funding mechanisms are supported by citations and knowledge of the systems.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are cited explanations from prior literature that the authors discuss as potential mechanisms, but they are not tested in this study. The authors appropriately present these as speculative explanations for their correlational findings. The evidence for these mechanisms comes from citations, not from the current analysis.",
     "result_type": "MINOR"
   }
 ]

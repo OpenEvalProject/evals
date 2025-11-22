@@ -46,7 +46,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C19-C37 accurately describe the two competing models and their predictions based on cited literature. The theoretical framework is clearly presented with appropriate citations to prior work establishing these models at various synapses.",
+    "evaluation": "Claims C19-C37 accurately describe the two competing models and their theoretical predictions, properly citing the original sources (Miki et al., 2016; Neher and Brose, 2018). The distinction between simultaneous vs. mutually exclusive occupancy is clearly stated and forms the basis for testable predictions.",
     "result_type": "MINOR"
   },
   {
@@ -55,8 +55,6 @@
       "C25",
       "C38",
       "C39",
-      "C40",
-      "C41",
       "C42",
       "C43",
       "C44",
@@ -66,11 +64,11 @@
       "C186",
       "C187"
     ],
-    "result": "The authors employed a previously developed method to count individual SV release events at single PF-MLI synapses with 0.2 ms time resolution, and used experimental manipulations (3 mM external calcium, 4-AP, PTP protocol) to maximize release probability, docking site occupancy, and docking rate.",
+    "result": "The authors employed a previously developed method to count individual SV release events at single PF-MLI synapses with 0.2 ms time resolution, using C57BL/6 mice (10-16 days old), elevated external calcium (3 mM), 4-AP (15 \u03bcM), and a PTP protocol to maximize release probability, docking site occupancy, and synaptic depression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C25, C38-C44, C183-C187 describe well-established methods with appropriate citations. The experimental design rationale is sound: maximizing pr, \u03b4, and r is necessary to approach the theoretical maximum RRP size. The methods are adequately described and validated.",
+    "evaluation": "Claims C25, C38-C39, C42-C44, C183-C187 describe well-established methods with appropriate citations. The experimental design is logical for testing the hypothesis, combining multiple manipulations to approach the theoretical maximum RRP size. The deconvolution analysis method is previously validated (Malagon et al., 2016).",
     "result_type": "MINOR"
   },
   {
@@ -88,11 +86,11 @@
       "C149",
       "C150"
     ],
-    "result": "The number of docking sites (N) was reliably estimated using both variance-mean analysis and binomial analysis, yielding consistent values (mean N = 3.6 \u00b1 0.3, range 2-6). N remained constant across experimental conditions (control, 4-AP, PTP), and estimates were independent of release probability, indicating minimal undercounting artifacts.",
+    "result": "The number of docking sites (N) was reliably estimated using both variance-mean analysis and binomial analysis, yielding consistent values (mean N = 3.6 \u00b1 0.3, range 2-6) that remained constant across experimental conditions (control, 4-AP, PTP), indicating that the manipulations did not alter docking site number.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C45-C50, C146-C150 demonstrate rigorous validation of N estimates using multiple independent methods that converge on the same values. The independence of N from experimental manipulations and release probability (Figure 3, Figure 3-supplement 1) provides strong evidence against systematic errors. Statistical analyses are appropriate.",
+    "evaluation": "Claims C45-C50, C146-C150 demonstrate rigorous quantification of N using two independent methods that converge on the same values. The invariance of N across conditions (C48-C49) is critical for interpreting changes in release as reflecting occupancy/probability rather than structural changes. Multiple controls for potential undercounting (C147-C150, C188-C190) strengthen confidence in these estimates.",
     "result_type": "MAJOR"
   },
   {
@@ -109,30 +107,19 @@
       "C59",
       "C60",
       "C61",
-      "C62"
+      "C62",
+      "C63",
+      "C64"
     ],
-    "result": "Under 4-AP and PTP conditions, P1 (first stimulus release probability) increased to 0.69 and 0.88 respectively, and P2 (second stimulus) increased to 0.64 and 0.67. These values indicate that both \u03b4 (docking site occupancy) and pr (release probability) reached \u22650.69 in 4-AP and \u22650.88 in PTP, establishing conditions suitable for estimating maximal RRP size.",
+    "result": "Under optimized conditions, P1 (release probability after first AP) increased significantly from control (0.39) to 4-AP (0.69) to PTP (0.88), while P2 increased from control (0.46) to 4-AP (0.64) and remained stable during PTP (0.67). The sum P1 + P2 significantly exceeded 1 in both 4-AP (1.34 \u00b1 0.05) and PTP (1.54 \u00b1 0.05), indicating initial RRP size > 1 SV per docking site.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C51-C62 present statistically significant increases in P1 and P2 with appropriate paired t-tests (p < 0.01). The logical inference that Pi = \u03b4ipr implies both \u03b4 and pr must be \u2265 Pi is mathematically sound. The argument that P1 + P2 estimates maximal RRP size under these conditions is well-reasoned, though it relies on assumptions about replenishment being negligible (addressed in Methods).",
+    "evaluation": "Claims C51-C64 present statistically significant findings (paired t-tests, p < 0.01) with appropriate sample sizes (n=14 for 4-AP, n=8 for PTP). The logic connecting P1 and P2 values to lower bounds on \u03b4, pr, and \u03c1 (C55, C60) is sound. The critical finding that P1+P2 > 1 (C63-C64) directly contradicts the LS/TS model prediction and supports the RS/DS model, though the values are still below the theoretical maximum of 2.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
-    "claim_ids": [
-      "C63",
-      "C64"
-    ],
-    "result": "The sum P1 + P2 was significantly larger than 1 both in 4-AP (1.34 \u00b1 0.05; p < 0.01) and during PTP (1.54 \u00b1 0.05; p < 0.01), indicating that the initial RRP size exceeded 1 SV per docking site under both conditions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C64 present a key finding with appropriate statistical tests showing P1 + P2 significantly exceeds 1. This directly contradicts the LS/TS model prediction (max = 1) and supports the RS/DS model (max = 2). The statistical analysis is sound with adequate sample sizes (n = 14 for 4-AP, n = 8 for PTP).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
     "claim_ids": [
       "C65",
       "C66",
@@ -151,15 +138,15 @@
       "C79",
       "C80"
     ],
-    "result": "Synaptic depression increased progressively from control to 4-AP to PTP to 200 Hz stimulation, with the ratio s8/s1 decreasing from 0.83 to 0.10. The paired-pulse ratio (s2/s1) remained close to 1 across conditions, indicating the second response is largely immune to depression. At 200 Hz during PTP, synchronous release became nearly undetectable after stimulus 5, with most release becoming asynchronous.",
+    "result": "Synaptic depression increased progressively from control to 4-AP to PTP to 200 Hz stimulation, with the ratio s8/s1 decreasing from 0.83 (control) to 0.10 (200 Hz). The paired-pulse ratio (s2/s1) remained near 1 across conditions, indicating the second response is largely immune to depression. At 200 Hz during PTP, synchronous release became undetectable for i > 5, with most release being asynchronous, indicating near-complete RRP depletion.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C65-C80 describe progressive synaptic depression patterns consistent with RRP depletion. The data in Figure 5 clearly show the described trends. The interpretation that asynchronous release indicates RRP depletion is well-supported by cited literature. The exponential fit (\u03c4 = 8.3 ms) for the 200 Hz condition is appropriate and approaches model predictions.",
+    "evaluation": "Claims C65-C80 demonstrate systematic progression toward complete RRP depletion, consistent with the experimental goal of maximizing depression. The dissociation between s8/s1 (steep decline) and s2/s1 (stable near 1) is particularly important as it matches RS/DS model predictions (C80). The quantitative fitting of the 200 Hz decay (\u03c4 = 8.3 ms, C76) provides additional rigor. The shift from synchronous to asynchronous release (C71-C73) is well-documented and appropriately interpreted.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R7",
     "claim_ids": [
       "C81",
       "C82",
@@ -173,15 +160,15 @@
       "C124",
       "C125"
     ],
-    "result": "Using the SMN back-extrapolation method, RRP size estimates were 0.85 SV/site (control), 1.66 SV/site (4-AP), 1.87 SV/site (PTP at 100 Hz), and 2.09 SV/site (PTP at 200 Hz). The values after PTP approach the maximum value of 2 predicted by the RS/DS model. The method's validity was confirmed by demonstrating good separation between release and replenishment.",
+    "result": "Using the SMN back-extrapolation method, RRP size per docking site was estimated at 0.85 (control), 1.66 (4-AP), 1.87 (PTP at 100 Hz), and 2.09 (PTP at 200 Hz). The values after PTP approach the maximum value of 2 predicted by the RS/DS model, with the 200 Hz condition showing the closest approach due to more complete synaptic depression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C81-C86, C109, C122-C125 present RRP estimates using an established method (SMN) with appropriate caveats about its validity conditions. The progressive increase in estimates with enhanced depression is consistent with better RRP depletion. The quantitative analysis showing separation between release and replenishment rates (ratios 2.6-4.3) supports the method's applicability. The convergence toward 2 SVs/site is compelling.",
+    "evaluation": "Claims C81-C86, C109, C122-C125 apply the well-established SMN method appropriately, with proper acknowledgment of its validity conditions (strong depression, C81). The progressive increase in RRP estimates correlates with increasing depression (C85), and the approach to 2 SVs/site at 200 Hz (C84, C86) is the key quantitative support for the RS/DS model. The analysis of separation between release and replenishment (C123-C125) validates the method's assumptions. However, the SMN method's known tendency to underestimate RRP size (C128-C129) should be considered.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R9",
+    "result_id": "R8",
     "claim_ids": [
       "C87",
       "C88",
@@ -195,15 +182,15 @@
       "C96",
       "C97"
     ],
-    "result": "Monte Carlo simulations of the RS/DS model successfully reproduced experimental data across conditions. In control, the model yielded \u03b4 = 0.65, pr = 0.6, r = 0.7, s = 0.35. In 4-AP, pr increased to 0.9 and \u03b4 to 0.8. During PTP, \u03b4 further increased to 0.9. The model correctly predicted covariance patterns, including the marked peak at i = 2 in 4-AP and PTP.",
+    "result": "Monte Carlo simulations of the RS/DS model successfully reproduced experimental data across conditions by adjusting parameters: control (\u03b4=0.65, pr=0.6, r=0.7, s=0.35), 4-AP (\u03b4=0.8, pr=0.9, r=0.7, s=0.35), and PTP (\u03b4=0.9, pr=0.9, r=0.7, s=0.35). The model correctly predicted both mean release numbers and covariance patterns, including the characteristic peak at i=2 in 4-AP and PTP conditions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C87-C97 demonstrate that the RS/DS model with fitted parameters captures both mean release numbers and covariance patterns (Figure 6). The parameter values are physiologically reasonable and consistent with prior work. The model's ability to predict the distinctive covariance peak at i = 2 provides strong validation beyond simple curve fitting.",
+    "evaluation": "Claims C87-C97 demonstrate that the RS/DS model can quantitatively account for the data with biologically plausible parameters. The model's ability to predict both mean responses (C91, C96) and covariance patterns (C96-C97) without additional parameter adjustment strengthens confidence. The progressive increase in \u03b4 (0.65\u21920.8\u21920.9) and pr (0.6\u21920.9) across conditions is consistent with the experimental manipulations' known effects. The stability of r and s parameters (C94) is also reasonable.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R10",
+    "result_id": "R9",
     "claim_ids": [
       "C98",
       "C99",
@@ -212,15 +199,15 @@
       "C102",
       "C103"
     ],
-    "result": "The deficit in synaptic output for stimuli 6-8 is explained by depletion of an upstream intermediate pool (IP). Incorporating an IP of 10-15 SVs per AZ (2.5-3.25 SVs/site) improved model fits. The remaining discrepancy is attributed to asynchronous release, which the model does not explicitly account for.",
+    "result": "The deficit in synaptic output for stimuli 6-8 is explained by depletion of an upstream intermediate pool (IP). Incorporating an IP of 10-15 SVs per AZ (2.5-3.25 SVs per docking site) into simulations improved the fit at the end of trains. The model does not account for asynchronous release, which reflects SVs bypassing the RRP due to persistent calcium elevation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C98-C103 provide a reasonable explanation for model-data discrepancies at late stimuli, supported by recent findings (Tran et al., 2022). The IP modification (Figure 6-supplement 1) improves fits. The acknowledgment that asynchronous release is not modeled is appropriate transparency about model limitations.",
+    "evaluation": "Claims C98-C103 appropriately acknowledge model limitations and provide mechanistic explanations for discrepancies. The IP concept is supported by recent work (Tran et al., 2022, C98) and its incorporation improves model fit (C101). The acknowledgment that asynchronous release is not modeled (C102-C103) is important for interpreting late-train responses. These refinements demonstrate scientific rigor in model evaluation.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R11",
+    "result_id": "R10",
     "claim_ids": [
       "C104",
       "C105",
@@ -228,61 +215,65 @@
       "C107",
       "C108"
     ],
-    "result": "Comparison of RS/DS and LS/TS models showed that while both fit control data reasonably well, the LS/TS model failed to account for high P2 values in 4-AP and displayed incorrect covariance peak timing (i = 1 instead of i = 2). The LS/TS model may serve as an approximation for synapses with moderate release probability and/or docking site occupancy.",
+    "result": "Comparison of RS/DS and LS/TS models shows that while both fit control data reasonably well, the LS/TS model fails in 4-AP conditions: it underestimates P2 and incorrectly predicts peak covariance at i=1 rather than i=2. The LS/TS model may serve as an approximation for synapses with moderate release probability and/or docking site occupancy.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C104-C108 present a systematic model comparison (Figure 6-supplement 2). The LS/TS model's failure to predict P2 and covariance patterns in 4-AP provides strong discriminatory evidence favoring the RS/DS model. The conclusion that LS/TS may approximate moderate-pr conditions is reasonable and appropriately cautious.",
+    "evaluation": "Claims C104-C108 provide critical model discrimination. The LS/TS model's failure to predict P2 values (C105) and covariance patterns (C106-C107) in high-pr conditions is decisive evidence against it. The mechanistic explanation for the covariance peak shift (C107) is clear and testable. The conclusion that LS/TS may approximate moderate-pr synapses (C108) is appropriately cautious and acknowledges that different models may apply to different synapse types.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R12",
+    "result_id": "R11",
     "claim_ids": [
       "C110",
       "C111",
       "C112",
       "C151"
     ],
-    "result": "The results suggest a maximum RRP size of two SVs per docking site at PF-MLI synapses, in agreement with RS/DS model predictions. This finding, combined with extended covariance data under high occupancy/release probability conditions, provides strong experimental support for the RS/DS model at this synapse.",
+    "result": "The results suggest a maximum RRP size of two SVs per docking site at PF-MLI synapses, in agreement with RS/DS model predictions. This finding, combined with extended covariance data under high occupancy/probability conditions, provides strong experimental support for the RS/DS model at this synapse type.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C110-C112, C151 represent the main conclusion, which is well-supported by multiple converging lines of evidence: P1 + P2 > 1, SMN estimates approaching 2, model fitting success, and LS/TS model failure. The integration of functional, statistical, and modeling approaches provides robust support for this conclusion.",
+    "evaluation": "Claims C110-C112, C151 represent the main conclusion, which is well-supported by multiple converging lines of evidence: P1+P2 > 1 (C63-C64), SMN estimates approaching 2 (C82-C86), successful RS/DS model fitting (C87-C97), and LS/TS model failure (C104-C107). The conclusion is appropriately stated as specific to PF-MLI synapses, acknowledging potential differences across synapse types.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R13",
+    "result_id": "R12",
     "claim_ids": [
       "C113",
       "C114",
       "C115",
-      "C116"
+      "C116",
+      "C117",
+      "C118",
+      "C119"
     ],
-    "result": "While functional evidence supports the RS/DS model at PF-MLI synapses, molecular and morphological evidence is limited. Actin/myosin disruption uncouples RS and DS, and synapsin activation increases RRP size, but direct morphological evidence for SV movement between RS and DS is lacking at this synapse. Further molecular and morphological studies are needed.",
+    "result": "While functional evidence strongly supports the RS/DS model at PF-MLI synapses, molecular composition and morphological arrangement of docking sites remain uncertain. Actin/myosin disruption uncouples RS and DS, and synapsin activation increases RRP size, but direct morphological evidence for SV movement between RS and DS is lacking at this synapse. Alternative parallel models cannot be entirely ruled out.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C113-C116 appropriately acknowledge limitations in molecular/morphological evidence while citing relevant findings from other preparations. This honest assessment of what remains unknown strengthens rather than weakens the manuscript. The call for future work is appropriate.",
+    "evaluation": "Claims C113-C119 appropriately acknowledge limitations and uncertainties. The call for additional molecular and morphological studies (C116) is reasonable given the functional-only evidence. The acknowledgment that parallel models cannot be completely excluded (C117-C119) demonstrates appropriate scientific caution, though the authors correctly note that previous variance-mean analysis favored sequential models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Several key assumptions underlying the analysis are validated: (1) pr is independent of stimulus number i at PF-MLI synapses (unlike calyx of Held), (2) pr is high (0.9 in 4-AP), limiting potential increases during trains, and (3) RRP release is kinetically separated from replenishment, as evidenced by initial release rates 2.6-4.3\u00d7 higher than steady-state rates and negligible replenishment contribution to s1 and s2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 address critical assumptions with appropriate evidence. The independence of calcium entry from i (C120) is well-cited. The high pr value (C121) is directly measured. The separation of release and replenishment (C122-C125) is quantitatively demonstrated with rate ratios and calculations showing <3% replenishment contribution to P1+P2. These validations strengthen confidence in the main conclusions.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R14",
-    "claim_ids": [
-      "C117",
-      "C118",
-      "C119",
-      "C120",
-      "C121"
-    ],
-    "result": "The analysis assumes homogeneous docking site properties within an AZ, constant pr during trains, and kinetic separation between RRP release and replenishment. While alternative parallel models cannot be entirely ruled out, and pr constancy cannot be absolutely verified, the high pr values (0.9) and calcium entry independence from stimulus number support these assumptions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C117-C121 transparently discuss model assumptions and their potential limitations. The authors acknowledge that parallel models cannot be completely excluded (C119) and cite evidence both supporting and potentially challenging their assumptions. This honest uncertainty assessment is scientifically appropriate, though it introduces some ambiguity about the generalizability of conclusions.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
     "claim_ids": [
       "C126",
       "C127",
@@ -294,7 +285,18 @@
       "C133",
       "C134",
       "C135",
-      "C136",
+      "C136"
+    ],
+    "result": "Traditional RRP measurements underestimate the number of available binding sites due to incomplete RRP depletion and incomplete site filling at rest. Previous estimates in rats gave ~1 SV/site, while the current study in mice achieves higher values by maximizing occupancy and depression. Simulations indicate \u03c1 \u2248 1 in all conditions, with \u03c1 > \u03b4, suggesting that undocking rate exceeds docking rate under basal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C136 provide important context for interpreting RRP measurements and explain why previous estimates were lower. The explanation of SMN method limitations (C128-C131) is well-cited (Neher, 2015). The finding that \u03c1 > \u03b4 (C135-C136) is interesting and mechanistically informative, though it relies on model fitting rather than direct measurement. The species difference (mice vs. rats, C139) is a reasonable explanation for discrepancies with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
       "C137",
       "C138",
       "C139",
@@ -305,11 +307,11 @@
       "C144",
       "C145"
     ],
-    "result": "Traditional RRP measurements underestimate the number of available binding sites due to incomplete depletion and incomplete site filling. The experimental strategy of maximizing \u03b4 (through species selection, high calcium, PTP) and pr (through 4-AP + high calcium) was essential to approach the theoretical maximum RRP size. Simulations indicate \u03c1 \u2248 1 across conditions, with \u03c1 > \u03b4, suggesting faster undocking than docking in basal conditions.",
+    "result": "The experimental strategy successfully maximized docking site occupancy and release probability through multiple manipulations: elevated calcium (3 mM) increased \u03b4 from previous estimates (0.45-0.47 in rats) to 0.7 in mice; PTP further increased \u03b4 to 0.9; and 4-AP combined with high calcium achieved pr \u2248 0.9, resulting in P1 = 0.88 during PTP. This high pr ensured docking sites were cleared after single APs, enabling measurement of replacement site occupancy via P2.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C126-C145 provide thorough justification for the experimental approach and explain why previous estimates were lower. The logic is sound: to measure maximum capacity, one must maximize occupancy and release probability. The comparison with previous work (rats vs. mice, different calcium concentrations) is well-reasoned. The modeling-derived insights about \u03c1 and \u03b4 are consistent with the data.",
+    "evaluation": "Claims C137-C145 explain the rationale and success of the experimental design. The progressive increases in \u03b4 (C138, C141) and pr (C143) are well-documented and consistent with known effects of the manipulations. The comparison with previous work (C138-C139, C144) appropriately contextualizes the findings. The mechanistic explanation for why high pr is important (C145) demonstrates clear thinking about the experimental logic.",
     "result_type": "MINOR"
   },
   {
@@ -324,12 +326,12 @@
       "C158",
       "C159"
     ],
-    "result": "Under physiological conditions, the actual RRP size is likely significantly less than 2 SVs per docking site. In control conditions (3 mM calcium), estimates range from 0.85 (SMN, underestimate) to 1.65 SVs/site (\u03c1 + \u03b4 from simulations). RRP size varies across species and experimental conditions, and synapses do not operate at full capacity under ordinary conditions but modulate RRP size during plasticity.",
+    "result": "Under physiological conditions, actual RRP size is likely significantly less than the maximum of 2 SVs per docking site. In control conditions (3 mM Ca), realistic estimates are 1.65 SVs/site (from \u03c1+\u03b4) rather than 0.85 (SMN method). After PTP, estimates are 1.9-2.09 SVs/site. RRP size varies across species and conditions, synapses do not operate at full capacity under normal conditions, and RRP size is modulated during synaptic plasticity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C152-C159 provide important context that the maximum of 2 SVs/site is a capacity measure, not a typical physiological state. The comparison of different estimation methods and conditions is thorough. The conclusion that RRP size is dynamically regulated is well-supported by the data and appropriately cautious about extrapolating to normal physiology.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C152-C159 provide important physiological context and caveats. The distinction between maximum capacity (2 SVs/site) and typical operating conditions (1.1-1.65 SVs/site) is crucial for biological interpretation. The acknowledgment that SMN underestimates (C153) and the alternative estimates from \u03c1+\u03b4 (C154-C155) are appropriately presented. The conclusions about variability across conditions (C157) and plasticity-dependent modulation (C159) are well-supported.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R17",
@@ -339,11 +341,11 @@
       "C162",
       "C163"
     ],
-    "result": "PF-MLI synapses show high facilitation and fast replenishment, contrasting with synapses like the calyx of Held. At hippocampal mossy fiber-CA3 interneuron synapses (which show depression), RRP size was estimated at 1.6 SVs/site in 3 mM calcium. It is speculated that depressing synapses with high pr may more readily reach RRP/N ratios > 1 compared to facilitating synapses with low pr.",
+    "result": "PF-MLI synapses exhibit high facilitation and fast SV replenishment, contrasting with synapses like the calyx of Held. At hippocampal mossy fiber-CA3 interneuron synapses (which show prominent depression), RRP size was estimated at 1.6 SVs/site in 3 mM Ca. It is speculated that high-pr depressing synapses may more readily reach RRP/N ratios > 1 compared to low-pr facilitating synapses.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C160-C163 compare different synapse types and speculate about general principles. While the comparison with other synapses is well-cited, the speculation (C163) that depressing synapses more readily reach RRP/N > 1 is not directly tested and remains a hypothesis requiring future validation. The comparison is valuable but the generalization is uncertain.",
+    "evaluation": "Claims C160-C163 compare PF-MLI synapses with other synapse types, which is valuable for generalization. However, the speculation in C163 is based on limited comparative data (essentially one other synapse type, C162) and simulation results. While the hypothesis is reasonable, it requires testing across more synapse types. The comparison is appropriately framed as speculation requiring future work.",
     "result_type": "MINOR"
   },
   {
@@ -358,11 +360,11 @@
       "C170",
       "C171"
     ],
-    "result": "The finding of 2 SVs per docking site implies two separate SV-binding sites. EM studies show mixed evidence: some studies (neuromuscular junctions, hippocampal neurons) identify two sets of SVs at different distances (~1 SV diameter apart), consistent with RS/DS; other studies show SVs 5-10 nm from membrane with short-distance movement, consistent with LS/TS. These differences may reflect synapse-type-specific structural variations.",
+    "result": "The finding of 2 SVs per docking site implies two separate SV-binding sites capable of simultaneous occupancy. EM studies show mixed evidence: some studies at neuromuscular junctions and hippocampal neurons identify two sets of SVs at different distances (supporting RS/DS), while other studies show SVs 5-10 nm from membrane with short-distance movement (supporting LS/TS). These differences may reflect synapse-type-specific structural variations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C164-C171 appropriately integrate the functional findings with existing morphological literature. The acknowledgment that EM evidence is mixed and may reflect synapse-type differences is scientifically honest. The logical connection between functional and structural data is reasonable, though the authors appropriately note that direct morphological evidence at PF-MLI synapses is lacking.",
+    "evaluation": "Claims C164-C171 appropriately relate functional findings to structural evidence. The logical inference that 2 SVs/site requires two binding sites (C164) is sound. The summary of EM evidence (C165-C169) is balanced, acknowledging that different studies support different models. The speculation about synapse-type differences (C171) is reasonable given the mixed evidence. However, the lack of direct EM evidence at PF-MLI synapses (noted in C115) remains a limitation.",
     "result_type": "MINOR"
   },
   {
@@ -380,11 +382,11 @@
       "C181",
       "C182"
     ],
-    "result": "The RS/DS model with 2 SVs/site offers several functional advantages: (1) increased RRP capacity improving reliability, (2) more feasible facilitation via calcium-dependent occupancy increases, (3) spreading RRP release over more APs to stabilize output, and (4) potential regulation of replenishment rate via replacement site occupancy control.",
+    "result": "Having 2 SVs per docking site provides several potential functional advantages: (1) increased RRP capacity improves reliability at simple synapses with few docking sites, (2) facilitates calcium-dependent facilitation by providing more SVs for refilling, (3) spreads RRP release over more APs by delaying release of replacement SVs, counterbalancing depression, and (4) the replacement site may act as an entry gate to control RRP replenishment rate.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C172-C182 present reasonable functional interpretations, but these are largely speculative (especially C180-C182 about regulatory mechanisms). While the logic is sound and consistent with the data, these functional advantages are inferred rather than directly demonstrated. The speculation is appropriate for a Discussion but should not be considered proven.",
+    "evaluation": "Claims C172-C182 present reasonable functional hypotheses, but most are speculative (especially C180-C182). The increased capacity argument (C172-C174) is straightforward. The facilitation argument (C175-C176) is logical and cited. The spreading of release (C177-C179) is consistent with the data showing stable s2/s1 ratios. However, the entry gate hypothesis (C180-C182) is highly speculative with no direct evidence. These are appropriate for Discussion but should not be considered established results.",
     "result_type": "MINOR"
   },
   {
@@ -403,11 +405,11 @@
       "C198",
       "C199"
     ],
-    "result": "Methodological validation showed minimal event splitting (2.9-4.3% overall, 10-12% for first AP), indicating little undercounting. mEPSC templates remained unchanged across conditions, confirming purely presynaptic effects. Latency distributions were biphasic with fast (\u03c4f = 0.47-0.70 ms) and slow (\u03c4s = 4.0 ms) components, consistent with docked and two-step release respectively.",
+    "result": "Quality control analyses validate the experimental approach: event splitting was low (2.9-4.3% overall, 10-12% for first AP), indicating minimal undercounting; mEPSC templates were unchanged across conditions, confirming purely presynaptic effects; latency distributions were biphasic with fast (\u03c4f = 0.47-0.70 ms) and slow (\u03c4s = 4.0 ms) components reflecting docked and two-step release, respectively; 4-AP increased \u03c4f and added 0.2 ms latency, likely reflecting prolonged calcium entry.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C188-C199 provide important methodological validation. The low splitting percentages support the reliability of SV counting. The unchanged mEPSC properties confirm no postsynaptic confounds. The latency analysis is consistent with previous work and the two-step model. These technical validations strengthen confidence in the main findings.",
+    "evaluation": "Claims C188-C199 provide important methodological validation. The low splitting percentages (C188-C190) support the reliability of SV counting. The unchanged mEPSC properties (C191-C192) confirm that observed changes are presynaptic. The latency analysis (C193-C199) is consistent with previous work and provides additional mechanistic insight. These quality controls strengthen confidence in the main findings.",
     "result_type": "MINOR"
   }
 ]

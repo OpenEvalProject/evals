@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A bioinformatics pipeline was developed to identify putative inhibitory receptors by screening 96,457 protein-coding transcripts for ITIM/ITSM sequences, predicting membrane topology with TOPCONS, and filtering for intracellular ITIMs. The pipeline successfully recalled 51 of 52 known inhibitory receptors, yielding 1,562 genes with intracellular ITIMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe a systematic computational pipeline with clear filtering steps and quantitative results at each stage. The validation against known receptors (C29-C30) demonstrates 98% recall (51/52), with the single failure (MPIG6B) attributed to a specific technical limitation in transmembrane domain prediction. The methodology is transparent and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A permutation-based statistical filtering approach was implemented to exclude proteins likely to contain ITIMs by chance. Random permutation of intracellular domains (10,000 iterations) showed that 41/51 known receptors had <5% likelihood of containing ITIMs by chance, while 10/51 had 5-25% likelihood. A 25% threshold was applied, reducing candidates from 1,562 to 837 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe a rigorous statistical approach using the Fisher-Yates algorithm with 10,000 permutations per receptor. The threshold selection is justified by analysis of known receptors, and the observation that excluded proteins had longer intracellular domains (C37) validates the approach. The methodology addresses a key challenge in motif-based prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "AlphaFold structure predictions were used to filter for functional ITIMs in disordered regions. Analysis of 832 proteins showed that 99/101 ITIMs in known receptors had low confidence scores (<80 pLDDT, average 49.3), with 64 having pLDDT <50. An 80 pLDDT threshold was applied, yielding 390 putative inhibitory receptor genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 describe a novel application of AlphaFold confidence scores to predict functional ITIMs. The hypothesis that ITIMs locate in disordered regions (C40) is well-supported by protein biology (C38-C39) and validated by analysis of known receptors (C45-C46). The threshold selection is data-driven and the final count of 390 genes represents a substantial refinement from 837 candidates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The 390 predicted inhibitory receptors comprised 54.6% multi-spanning proteins, 37.2% type I, and 8.2% type II single transmembrane domain receptors. Most (275) were based on canonical transcripts, while 115 were non-canonical isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide a clear characterization of the predicted receptors by structural type and transcript annotation. The percentages sum correctly and the distinction between canonical and non-canonical isoforms is methodologically important for subsequent expression analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Expression analysis of 215 single-spanning inhibitory receptor genes across immune cell subsets showed that neutrophils (137 genes) and monocytes (120 genes) expressed the most receptors, while lymphoid cells expressed fewer: B and NK cells (111), CD8+ T cells (106), and CD4+ T cells (99). Novel targets were more prevalent in T cells (84-87%) than neutrophils (72%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64 describe a comprehensive expression analysis using publicly available bulk RNA-seq data with clearly defined expression criteria (C52). The quantitative results are internally consistent and show biologically plausible patterns. The observation that most receptors are shared between subsets (C64) is supported by the UpSet plot in Figure 2C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Multi-spanning inhibitory receptor genes showed similar expression patterns across immune subsets, with neutrophils expressing the most (118 genes), followed by monocytes (100), B cells (95), CD4+ T cells (90), CD8+ T cells (90), and NK cells (89). Multi-spanning receptors were more frequently shared between subsets than single-spanning receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 parallel the single-spanning analysis with consistent methodology. The observation that multi-spanning receptors are more frequently shared (C72) is an interesting biological finding supported by Figure 2\u2014figure supplement 1C. The expression patterns are plausible given the functional roles of these cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Functional categorization based on expression changes upon activation revealed that all immune subsets except B cells expressed receptors of all four categories (negative feedback, threshold, threshold-disinhibition, threshold-negative feedback), though threshold receptors predominated. Cell-type-specific patterns emerged: neutrophils showed minimal dynamic regulation, monocytes and NK cells mainly expressed negative feedback receptors among dynamic genes, while T and B cells expressed more threshold-disinhibition receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C107 describe functional categorization using clearly defined criteria (C73-C76) based on prior work (C8-C12). However, the categorization relies on in vitro activation with limited stimuli (acknowledged in C163), and the 0.5 log2 fold change threshold appears arbitrary without statistical justification. The biological interpretation is plausible but the functional categories remain computational predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Multi-spanning receptors showed similar functional categorization patterns to single-spanning receptors, with most categorized as threshold receptors. However, monocytes, B cells, and T cells showed opposite patterns for threshold-disinhibition versus negative feedback receptors compared to single-spanners. Multi-spanning targets were shared between subsets more frequently than single-spanners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 extend the functional categorization to multi-spanning receptors with consistent methodology. The observation of opposite patterns between single- and multi-spanning receptors (C109) is interesting and supported by Figure 2\u2014figure supplement 1B. The increased sharing of multi-spanning receptors (C112) is consistent with C72.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Analysis of tumor-infiltrating T cells from 21 cancer types showed variable expression of inhibitory receptors across subsets. Na\u00efve T cells expressed fewer receptors (27 genes for CD4+, 46 for CD8+) while differentiated subsets expressed more (68 for regulatory CD4+, 83 for exhausted CD8+). Similar patterns were observed for multi-spanning receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C130 describe expression analysis in tumor-infiltrating lymphocytes using single-cell RNA-seq data from Zheng et al., 2021b. The finding that differentiated T cell subsets express more inhibitory receptors (C125) is biologically plausible and consistent with known T cell exhaustion biology. The data quality control is mentioned (C119) and results are shown in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Tumor-infiltrating T cell subsets primarily expressed threshold receptors, similar to in vitro activated immune cells. Known immunotherapeutic targets like PD-1 and TIGIT showed high expression in melanoma tumor-infiltrating lymphocytes, validating the pipeline's ability to identify clinically relevant targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 provide validation of the pipeline by demonstrating that known therapeutic targets are detected in tumor-infiltrating lymphocytes. The functional categorization extrapolation from in vitro to in vivo (C131) is acknowledged as a limitation in C163, but the validation against known targets (C132-C133) strengthens confidence in the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The current study improves upon previous ITIM-bearing receptor predictions by Staub et al. (2004, 94 genes) and Da\u00ebron et al. (2008, ~1500 genes) through superior membrane topology prediction (TOPCONS vs TMHMM/Philius), statistical filtering of chance occurrences, and structural filtering using AlphaFold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 accurately describe methodological improvements over prior work. The comparison is fair and the advantages are well-documented: TOPCONS superiority is cited (C141), and the novel statistical and structural filtering steps (C142) are demonstrated in the results. The initial identification of 1562 genes (C140) aligns with Da\u00ebron's estimate, validating the starting point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The AlphaFold filtering approach effectively excluded olfactory receptors with ITIMs in structured regions. The 80 pLDDT threshold excluded ITIMs in CD5 (Y402, 85.2 pLDDT) and BTLA (Y282, 81.5 pLDDT), though the CD5 ITIM may not be functional. AlphaFold predictions are based on isolated proteins and may not reflect conformational changes upon ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 acknowledge important limitations of the AlphaFold approach. The exclusion of olfactory receptors (C144) demonstrates the method's utility. The threshold's exclusion of CD5 and BTLA ITIMs (C145) is transparent, and the citation suggesting CD5 Y402 may be non-functional (C146) partially validates the threshold. The limitations regarding protein isolation and conformational changes (C147-C148) are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The pipeline has several acknowledged limitations: reliance on known receptors for validation (98% recall), potential bias from large receptor families in threshold setting, inability to assess subcellular localization, and focus on ITIM/ITSM sequences while excluding receptors with alternative inhibitory mechanisms (e.g., CD200R, TIM-3). Some predicted receptors contain ITIMs embedded in ITAM sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C157 provide a thorough and honest assessment of limitations. The 98% recall rate (C149) is excellent but the single failure is acknowledged. The potential for family bias (C150), subcellular localization issues (C151-C152), and exclusion of non-ITIM inhibitory receptors (C153-C155) are all valid concerns that appropriately temper interpretation of results. The identification of ITAM-embedded ITIMs (C156) adds nuance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "No functional multi-spanning immune inhibitory receptors have been reported, though some ITIM-bearing multi-spanners (SSTR2, HCRTR1) recruit SHP-2. Multi-spanning receptors may be understudied due to size and limited targetability. Their frequent expression across multiple immune subsets suggests they may inhibit broad immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C161 discuss multi-spanning receptors, which represent a novel prediction class. The lack of known functional examples (C158) and evidence of SHP-2 recruitment (C159) are accurately cited. However, the speculation about broad immune inhibition (C161) based solely on expression patterns is not strongly supported\u2014shared expression could reflect housekeeping functions rather than immune regulation. This requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Functional categorization of receptors in tumor-infiltrating lymphocytes, extrapolated from in vitro data, showed predominantly threshold receptors and some negative feedback receptors. Targeting different functional categories (e.g., threshold + negative feedback) might be more effective than targeting two receptors of the same category, though this requires in vivo validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C165 present an interesting therapeutic hypothesis but acknowledge critical limitations. The extrapolation from in vitro to in vivo (C163) is a significant caveat, and the proposed combination strategy (C165) is speculative without experimental support. The functional categories themselves remain computational predictions. This represents a hypothesis-generating result rather than a validated finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Neutrophils expressed the most inhibitory receptor genes, consistent with the need to regulate their damaging effector functions. Despite minimal transcriptional changes upon activation, protein-level regulation may occur (e.g., LAIR-1 stored in granules). Monocytes expressed many negative feedback receptors, potentially enabling timely resolution of inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C169 provide biological interpretations of expression patterns. While the observations are accurate (C166-C167), the functional interpretations are speculative. The LAIR-1 example (C168) demonstrates that protein-level regulation can occur independently of transcription, but this doesn't validate the functional significance of other receptors. The monocyte interpretation (C169) is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "For 115 genes, non-canonical isoforms were predicted as inhibitory receptors. Expression analyses may not fully reflect individual isoform expression, as isoform usage varies between cells and activation states (e.g., CEACAM1). The study did not consider ligand expression, which adds additional regulatory layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C174 acknowledge important limitations regarding isoform-specific expression and ligand availability. The concern about isoform usage (C171-C172) is valid and well-cited. The lack of ligand analysis (C173-C174) is a significant limitation for understanding functional regulation, as receptor expression alone doesn't determine activity. These are appropriate caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "The study developed a novel bioinformatics pipeline integrating machine learning-guided structural predictions and sequence-based likelihood models to identify 51 known and 390 novel human inhibitory receptors. This pipeline will support future drug target selection in diseases where therapeutic targeting of immune inhibitory receptors is warranted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C191-C194 summarize the main findings. The pipeline successfully integrates multiple computational approaches (sequence analysis, statistical filtering, AlphaFold structure prediction) to reduce ~1600 initial candidates to 390 high-confidence predictions. The 98% recall of known receptors validates the approach. The statement about supporting drug target selection (C194) is reasonable given the comprehensive expression and functional categorization data provided.",
+    "result_type": "MAJOR"
+  }
+]

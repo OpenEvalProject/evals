@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C36",
+      "C37",
+      "C40",
+      "C42",
+      "C43",
+      "C45",
+      "C48",
+      "C54",
+      "C56"
+    ],
+    "result": "The canonical action selection model with standard iSPN plasticity rules fails to produce functional reinforcement learning because iSPN plasticity incorrectly reinforces activity patterns associated with negative outcomes, strengthening inputs to iSPNs corresponding to unselected actions after punishment, thereby increasing rather than decreasing the likelihood of repeating punished actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C20, C36-C37, C40, C42-C43, C45, C48 provide theoretical analysis showing the failure mechanism, while C54 and C56 provide simulation evidence demonstrating learning failure in go/no-go and two-alternative forced choice tasks with punishment protocols. The theoretical derivation is mathematically sound and simulation results directly confirm the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The efference model resolves the iSPN learning problem by proposing that opponent dSPNs and iSPNs receive simultaneous efferent excitatory input following action selection, creating 'sum mode' activity that drives correct learning while 'difference mode' activity drives action selection, with these modes being orthogonal and thus non-interfering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C70 provide the theoretical framework showing how efferent input to opponent SPNs enables correct learning through sum/difference mode decomposition. Claims C76-C78 provide simulation evidence that the efference model successfully learns tasks regardless of reward protocol and works with nonlinear responses and various plasticity rules. The mathematical derivation of orthogonality is sound and simulations confirm the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Firing rate simulations of a two-alternative forced choice task demonstrate that the efference model successfully multiplexes action selection and learning signals without interference, with difference mode activity driving action selection early in trials and sum mode activity appearing later to drive learning, both modes remaining separable throughout learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C94 describe detailed firing rate simulations showing temporal dynamics of sum and difference modes. The simulations demonstrate learning in ~10 trials (C85), show appropriate temporal separation of modes (C86-C90), and confirm non-interference (C91-C92). The simulation methodology is clearly described and results directly support the model's predictions about temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Analysis of bulk photometry recordings from spontaneously behaving mice reveals asymmetric temporal cross-correlation between dSPN and iSPN activity, with present dSPN activity correlating more strongly with future iSPN activity than past iSPN activity, consistent with the efference model's prediction but not the canonical model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 describe the experimental data and modeling approach. Claims C100-C102 derive the model prediction of asymmetric cross-correlation. Claims C104-C105 show that experimental data matches this prediction and that the result is not an artifact of different indicators. The analysis is appropriate and the control experiment (C105) strengthens the conclusion. However, the model used for prediction makes minimal assumptions (random feedforward inputs), which may limit interpretability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Calcium imaging data from spontaneously behaving mice shows that dSPNs and iSPNs exhibit similar selectivities to behavioral syllables, and that syllable-associated dSPN and iSPN activity modes display temporal dynamics consistent with the efference model: dSPNs are above baseline and iSPNs below baseline prior to syllable onset, both increase during syllable performance, with difference mode elevated before and sum mode elevated after action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 state model predictions about SPN selectivity and temporal dynamics. Claims C115-C122 describe experimental tests using calcium imaging and behavioral syllable segmentation. The analysis shows similar selectivities (C117), validates the mode identification method (C119), and demonstrates remarkable agreement between predicted and observed temporal dynamics (C120-C122). The cross-validation (C119) and replication in simultaneous recordings (C121-C122) strengthen the conclusions. The use of behavioral syllables as action analogs is reasonable but involves some interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The nonuniformity of dSPN and iSPN plasticity rules enables off-policy reinforcement learning, allowing the striatum to learn from actions driven by other neural pathways. Simulations show that efferent activity reflecting the actually selected action (rather than the striatum's preferred action) is critical for successful learning when action selection is shared between striatum and other pathways, and that the orthogonality of sum and difference modes is essential for this capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 state the main result about off-policy learning capability. Claims C123-C129 provide background and motivation from prior literature and biological considerations. Claims C130-C134 provide simulation evidence showing that off-policy efference is critical for learning when striatal control is weak (C131), that orthogonality prevents interference (C132), and that uniform plasticity rules would impair off-policy learning (C133). The simulations appropriately test the model's predictions, though experimental validation of off-policy learning in striatum would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C135",
+      "C138",
+      "C143",
+      "C144",
+      "C147",
+      "C148"
+    ],
+    "result": "Off-policy reinforcement learning predicts that dopamine in dorsal striatum should signal a Q-learning error (combining state-based reward prediction error with action prediction error) rather than standard TD error. Analysis of dopamine recordings from dorsolateral striatum during spontaneous behavior shows that a Q-learning model matches observed dopamine-behavior relationships significantly better than TD learning or alternative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C135, C138 establish the theoretical prediction that off-policy learning requires action-dependent dopamine signals. Claims C143-C144 show via simulation that Q-learning enables learning when striatal control is weak while TD learning fails. Claims C147-C148 report that Q-learning model fits dopamine data significantly better than alternatives. The analysis appropriately tests model predictions against data. However, the strength of the conclusion depends on the quality of the behavioral state/action inference from MoSeq syllables and the statistical significance of the model comparison, which are not fully detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims establish that SPNs in dorsal striatum are proposed as a locus of reinforcement learning, that dSPNs and iSPNs have opponent effects on action but correlated activity, that they express different dopamine receptors leading to opposite plasticity rules, and that prior models proposed dSPNs learn from positive reinforcement while iSPNs learn from negative reinforcement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C7-C18, C30-C35) are well-supported by extensive citations to prior experimental and theoretical literature. They establish the biological and theoretical context for the study. The claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C44",
+      "C47",
+      "C55"
+    ],
+    "result": "The dSPN plasticity rule correctly reinforces activity patterns leading to positive outcomes, and simulations show that when rewards are given for correct actions, the system learns successfully as dSPNs primarily drive learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C44, C47 provide theoretical analysis showing dSPN plasticity is consistent with reinforcement learning. Claim C55 provides simulation evidence. The logic is straightforward and the simulation confirms the theoretical prediction. This serves as a control/baseline for understanding why iSPN plasticity is problematic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The model provides an explanation for the paradox that dSPNs and iSPNs have correlated activity despite opponent functions, predicts that opponent dSPNs and iSPNs should be co-active following action selection (contrasting with prior models), and finds support for this prediction in experimental recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 states the model explains the correlation paradox. Claims C22-C23 state the prediction and contrast with prior models. Claim C24 states experimental support is found. This is supported by the theoretical model (sum mode activity) and the experimental analyses in Figures 5-6. The prediction is novel and distinguishes this model from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The sum and difference modes are mathematically orthogonal, which implies that difference mode activity does not promote learning and that sum mode activity does not affect action selection, providing a solution to the problem of interference between action selection and learning signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe the mathematical property of orthogonality and its consequences. This is a straightforward mathematical result given the model's structure (sum = dSPN + iSPN, difference = dSPN - iSPN). The orthogonality property is key to the model's ability to multiplex signals without interference. The mathematical reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The model's results apply to distributed representations of actions with larger action spaces, with success arising from the ability to form orthogonal subspaces for action selection and learning, and distributed representations are expected to be more faithful to neural recordings than discrete action spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 states the model works with distributed representations (supported by Figure 3\u2014figure supplement 1). Claim C80 explains why (orthogonal subspaces). Claim C81 is a speculation about biological relevance. The simulation evidence supports C79, and C80 provides a reasonable explanation. C81 is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C71",
+      "C103",
+      "C107",
+      "C114"
+    ],
+    "result": "The efference model makes predictions that contrast with the canonical action selection model: after action selection, the most active SPNs are those regulating the selected behavior (not other behaviors), temporal cross-correlation is asymmetric, dSPNs and iSPNs have similar selectivities (not different), and there are two phases of difference and sum mode activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C71, C103, C107, C114 state specific contrasts between the efference model and canonical model. These contrasts are logical consequences of the different model architectures and are supported by the experimental analyses showing the efference model predictions are consistent with data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C49",
+      "C50",
+      "C52",
+      "C57",
+      "C58"
+    ],
+    "result": "Additional theoretical considerations about iSPN plasticity: the inhibitory function of iSPNs doesn't change that reinforcing activity patterns leading to negative outcomes is undesirable; both positive and negative outcomes may cause incorrect iSPN learning; and alternative solutions like very small iSPN learning rates would be inconsistent with prior evidence for indirect pathway involvement in learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C49-C50, C52 provide logical inferences about the iSPN plasticity problem. Claims C57-C58 discuss and dismiss an alternative solution. The reasoning is sound and C58 appropriately cites prior literature showing iSPN involvement in learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "In simulations of learning tasks, dopamine activity was modeled as reward prediction error obtained using a temporal difference (TD) learning rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 describes the simulation methodology. This is a standard approach and is clearly stated in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Theoretical arguments and simulations suggest that simultaneous efferent input to opponent dSPNs and iSPNs is necessary for reinforcement learning given known plasticity rules, with these dynamics predicted to be particularly important in scenarios with large action spaces and continuous action selection without clear trial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 summarizes the theoretical and simulation results. Claim C96 is a prediction about when the model is most relevant. C95 is well-supported by the preceding results. C96 is a reasonable speculation that motivated the experimental data analysis approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Off-policy algorithms are commonly used in state-of-the-art machine learning models as they dramatically improve learning efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by citation to prior machine learning literature. This provides context for why off-policy learning would be advantageous for biological systems.",
+    "result_type": "MINOR"
+  }
+]

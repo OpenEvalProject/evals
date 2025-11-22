@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C40"
+    ],
+    "result": "The authors characterized the CC8 pangenome from 2027 S. aureus genomes, identifying 19,176 gene clusters with 2,291 core genes, 931 accessory genes, and 15,954 rare genes. The pangenome was determined to be closed, indicating good gene-level coverage of CC8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C40 provide consistent quantitative data from pangenomic analysis with appropriate filtering criteria. The closed pangenome conclusion (C14) is supported by Figure 1A showing saturation, and the methods describe standard pangenome analysis procedures with validation by Roary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C42",
+      "C43",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors classified 1,449 genomes as USA300 and 589 as non-USA300 using genetic markers (SCCmec IVa and PVL) combined with phylogenetic tree traversal. The classification method was validated by showing consistent results when initialized from different reference strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C42-C43, and C72-C74 describe a systematic classification approach with clear criteria (>90% SCCmec IVa and PVL positive) and validation. The method's robustness is demonstrated by obtaining the same USA300 root when starting from different reference strains (TCH1516 vs FPR3757).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C71"
+    ],
+    "result": "DBGWAS identified 149 components associated with 137 unique genes enriched in USA300 strains, including known markers such as mecA, ACME, cap5E mutation, and PVL, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C71 report DBGWAS results with specific quantitative findings. The recovery of previously known USA300 markers (C71) provides internal validation of the method, and the results are visualized in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The authors found extreme genome-wide linkage disequilibrium in USA300 strains, with k-mers separated by up to 1.4 million base pairs showing r\u00b2 > 0.9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 describe linkage disequilibrium analysis with specific quantitative results shown in Figure 3A. The finding of high r\u00b2 values even at maximum genomic distances is striking and well-documented, representing a key challenge for identifying causal mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C69",
+      "C70",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Position-specific entropy analysis of 61 USA300-enriched SNPs in ORFs revealed that only the cap5E Asp75Tyr mutation was found in other strains, while 28 mutations occurred near hotspot regions. The authors conclude that most USA300 ORF mutations are de novo rather than horizontally acquired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C69-C70 describe entropy analysis using 2,000-16,000 sequences per protein family from multiple clades (C76). The methodology is well-described (C78-C79), and the finding that only cap5E mutation (C22-C23) shows homoplasy is clearly stated. However, the conclusion about de novo origin (C24, C70) is somewhat inferential since lack of homoplasy doesn't definitively exclude horizontal transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C44"
+    ],
+    "result": "The authors reconstructed a transcriptional regulatory network using ICA on 670 RNA-seq samples (291 non-USA300, 379 USA300), generating 148 robust iModulons from 270 input components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C44 describe the ICA dataset and model parameters with specific numbers. The methods section provides detailed QC/QA procedures and the OptICA approach for determining optimal component numbers, supporting the robustness of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ICA identified two strain-specific iModulons containing genes with differential expression between USA300 and non-USA300 strains. While most genes belonged to mobile genetic elements, the iModulons also contained core genes suggesting regulatory differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe ICA results shown in Figure 4A and supplementary figures. The finding that strain-specific iModulons contain both mobile elements (expected) and core genes (more interesting) is clearly documented and represents a key observation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C5",
+      "C60"
+    ],
+    "result": "Integration of DBGWAS and ICA identified 10 core genes with both enriched mutations and strain-specific expression. The isdH gene showed a 38-bp deletion containing a Fur-binding site (q-val = 0.033e\u207b\u2074) present in all 1,385 USA300 genomes but only 95 of 589 non-USA300 genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe the integration of genomic and transcriptomic approaches with specific quantitative results. The 38-bp deletion is well-characterized with statistical support (C31) and clear prevalence data (C32). The sequence conservation outside the deletion (C60) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C6",
+      "C65"
+    ],
+    "result": "The deletion of the Fur repressor-binding site in isdH regulatory region is associated with increased isdH expression in USA300 strains, consistent with loss of iron-dependent repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C6, and C65 connect the genetic deletion to expression changes. The mechanistic link through Fur repression (C33, established knowledge) and observed expression increase (C34, C65, shown in Figure 4 supplement 1) provide converging evidence. However, the causal relationship remains inferential without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C59"
+    ],
+    "result": "A second mutation upstream of the -35 binding site was enriched in USA300, and interestingly, the MW2 strain (CC1) contained this same A\u2192T mutation despite lacking the 38-bp deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe an additional mutation with an interesting observation about MW2. The inclusion of MW2 as a reference is justified (C59) because its transcription start site was experimentally confirmed. This finding suggests potential convergent evolution or independent regulatory changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C62",
+      "C63"
+    ],
+    "result": "The Fur-binding site deletion is highly specific to USA300 within CC8. Among 3,515 non-CC8 strains, only 21 lacked the Fur-binding motif, with 6 belonging to ST72 and others distributed across various sequence types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C62-C63 describe motif search results across a large dataset of non-CC8 strains. The finding that the deletion is nearly universal outside USA300 (only 21/3,515 non-CC8 strains lack it) strengthens the specificity of this mutation to the USA300 lineage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C64"
+    ],
+    "result": "IsdH is a surface receptor that binds human hemoglobin to release heme, and S. aureus preferentially uses heme over transferrin-bound iron as an iron source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C64 describe established knowledge about IsdH function and S. aureus iron acquisition, supported by appropriate citations. This provides biological context for why altered isdH regulation might be functionally significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C66"
+    ],
+    "result": "The combination of genetic and transcriptomic evidence suggests that isdH regulation is altered in USA300 strains, and the integrated GWAS-TRN approach can predict potential causal mutations contributing to USA300's clinical burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C66 represent the main conclusions of the study. The evidence from multiple approaches (DBGWAS, ICA, sequence analysis, expression data) converges on isdH as a candidate. However, the causal link to clinical burden remains speculative without functional validation or clinical correlation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C46"
+    ],
+    "result": "Strong linkage disequilibrium from clonal propagation and low within-clade recombination rates in S. aureus confound efforts to identify causal mutations in emerging strains like USA300.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C11, and C46 describe well-established limitations in bacterial GWAS, supported by multiple citations. This provides the key motivation for the study's integrative approach combining genomic and transcriptomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The transcriptomic dataset was dominated by USA300 samples with undersampling of CC8a and CC8b clades, which may explain the limited overlap between DBGWAS and ICA results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 acknowledge important limitations in the study design. The imbalanced sampling (C52-C53) and its potential impact on results (C54) are honestly discussed, though this represents a significant caveat for the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The methods used are scalable to growing public data repositories, and increased scale could provide more granular insights into subclade-specific differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 discuss the scalability and future potential of the approach. While C67 is reasonable given the computational nature of the methods, C68 is somewhat speculative about future improvements with more data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "CC8 comprises multiple subtypes with varying clinical burden, and USA300 strains carry known virulence factors including antibiotic resistance cassettes, PVL, and enhanced colonization ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C9 provide background context supported by citations. These establish the clinical significance of USA300 and justify the study's focus on this lineage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "Whole-genome comparisons have enabled characterization of genetic basis for various S. aureus phenotypes, but current GWAS approaches have limitations for emerging strains that are often addressed by focusing on gene-level changes rather than point mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47-C48 describe the state of the field with appropriate citations, establishing context for why the study's integrative approach is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ICA-based TRN reconstruction captures both gene-regulator interactions and their sample-specific activities, and can identify strain-specific signals in addition to regulatory signals when applied to multi-strain datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe the ICA methodology and its application to multi-strain analysis, supported by citations to previous work in E. coli and S. enterica. This establishes the methodological foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Resolving linkage disequilibrium in clonal strains will require new modeling methods, and combining approaches like metabolic modeling, protein structure prediction, and TRN reconstruction may provide breakthroughs for population genetics of emerging pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C58 are largely speculative about future directions. While C56-C57 cite recent advances in other areas, C58's claim about breakthrough potential is aspirational rather than demonstrated. These represent discussion points rather than results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "A phylogenetic tree was reconstructed using 24,881 core SNPs identified by aligning genomes to the TCH1516 reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 describes a standard phylogenetic analysis with appropriate methods (PHaME pipeline, IQ-TREE with model selection). The number of core SNPs and methods are clearly specified.",
+    "result_type": "MINOR"
+  }
+]

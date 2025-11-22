@@ -1,0 +1,485 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C122"
+    ],
+    "result": "Single-cell transcriptomics of mouse vomeronasal sensory epithelium identified 18 distinct cell clusters representing diverse cell types, with 63.7% neuronal cells and 36.3% non-neuronal cells, from 9185 high-quality cells pooled from male and female samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C20-C24, and C122 collectively describe the experimental approach, quality control, clustering results, and data availability. The methods are clearly described, quantitative results are provided with specific cell counts and percentages, and Figure 1 shows UMAP clustering with distinct cell type markers. The web resource availability adds to reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C124"
+    ],
+    "result": "RNA in situ hybridization validated novel cell-type-specific markers including Ppic for sustentacular cells, Ly6d for non-sensory epithelium, Obp2a for glandular tissue, and Plp1/Mgp for peripheral cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C124 are supported by Figure 2A showing spatial RNA-ISH validation of marker expression. The identification of Ppic and Ly6d as better markers than Cbr2 (C27) is a logical inference from the observed expression patterns. These represent validated novel markers for VNO cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C125"
+    ],
+    "result": "Three distinct macrophage-like cell clusters (Mac1, Mac2, Mac3) were identified within the neuroepithelium based on differential expression of complement components, MHC class II genes, and microglial markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C125 describe macrophage cluster identification with specific marker expression patterns shown in Figure 2B-C. The differential expression analysis distinguishes Mac3 (activated with chemokines/interleukins), Mac2 (tissue-resident), and Mac1 (distinct profile with Napsa/Lsp1/H2-Aa). RNA-ISH validation confirms presence in tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "T-cell markers were not validated by RNA-ISH, suggesting possible blood contamination, while rare solitary chemosensory cells expressing Trpm5 and Gnat3 were successfully identified and validated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 appropriately acknowledges the lack of RNA-ISH validation for T-cell markers and offers a reasonable speculation about blood contamination. Claim C36 demonstrates successful capture of rare cell populations with RNA-ISH validation (Figure 2A) and citation support. The contrast between validated and non-validated populations is appropriately handled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Re-clustering of neuronal populations identified 13 subclusters representing different developmental stages from progenitor cells (n5) through immature neurons (n6-n7) to mature Gnao1 (n1-n4) and Gnai2 (n8-n13) neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 describe neuronal subclustering with developmental stage assignments based on established markers (Ascl1, Neurod1, Neurog1, Gap43). Figure 3\u2014figure supplement 1 shows the 13 clusters with marker expression. The identification of activity-dependent genes in n13 (C44) is supported by citation. The developmental progression is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Exclusion of vomeronasal receptor genes from clustering parameters did not affect the divergence of mature neurons into Gnai2/Gnao1 subtypes, indicating that neuronal identity is governed by gene expression differences beyond GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 describe a control analysis testing the contribution of VR genes to clustering. Figure 3\u2014figure supplement 2 shows clustering with and without VRs, demonstrating that the major Gnao1/Gnai2 dichotomy persists. This is an important control that strengthens the conclusion that neuronal identity involves broader transcriptional programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C130"
+    ],
+    "result": "Pseudotime trajectory analysis confirmed that neurons originating from common progenitors diverge during maturation, with immature Gap43+ neurons splitting into Gnao1 or Gnai2 lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, and C130 describe pseudotime analysis results shown in Figure 3A. The developmental trajectory starting from progenitor cells and branching into two neuronal fates is clearly visualized. This computational analysis is appropriate for inferring developmental relationships from single-cell data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C132"
+    ],
+    "result": "Novel transcription factors (Creb5, Prrxl1, Shisa8, Lmo4, Foxo1) were identified as enriched in immature Gnao1 neurons, with Creb5 and Prrxl1 showing transient expression only in immature stages, suggesting their role in developmental specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C132 identify novel transcription factors with temporal expression patterns shown in Figure 3B-C. The transient expression of Creb5 and Prrxl1 specifically in immature Gnao1 neurons is clearly demonstrated. Citation support for Prrxl1 autoregulation (C51) strengthens the interpretation. The inference about developmental roles (C52, C132) is reasonable but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C134"
+    ],
+    "result": "Four Gnao1 neuron subclusters (n1-n4) are organized based on differential expression of family-C V2Rs (Vmn2r1 vs Vmn2r2-7) and H2-Mv genes, with family-biased co-expression of ABD V2Rs (A1-A6 with Vmn2r2; A8-A10, B, D, E with Vmn2r1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 and C134 describe V2R and H2-Mv co-expression patterns supported by Figure 4B-E showing expression heatmaps. The family-biased associations are clearly demonstrated and agree with prior antibody/RNA probe studies (C59, C61). This represents a comprehensive single-cell resolution view of previously described co-expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Co-expression analysis revealed that Vmn2r1 is mostly expressed alone, while family-C2 V2Rs (Vmn2r2-7) co-express 2-6 members per cell; most Gnao1 neurons follow 'one ABD-V2R per neuron' rule with exceptions including Vmn2r20/22 (44 cells) and Vmn2r39/43/50 (10 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide quantitative co-expression data shown in Figure 4F-G. The threshold-based calling method is described in methods and Figure 4\u2014figure supplement 1. The identification of 31 cells co-expressing Vmn2r1 with Vmn2r7 (C63) contradicts prior reports but is appropriately noted. Cell counts for non-expressing cells (C67-C68) acknowledge detection limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "H2-Mv genes (1-4 per cell) are predominantly co-expressed with family-C2 V2Rs, except H2-M1/M9/M11 which co-express with Vmn2r1 and Vmn2r81/82 in cluster n4; 56.9% of Gnao1 cells expressing C1/C2-V2Rs lack H2-Mv expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe H2-Mv co-expression patterns with quantitative data (Figure 4H) and RNA-ISH validation (Figure 4\u2014figure supplement 2E). The deviation of H2-M1/M9/M11 from general patterns is well-documented with citation support (C70, C72). Validation in independent dataset from Hills et al. 2024 (C74) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Total V2R and H2-Mv expression scales proportionally with the number of genes expressed per cell, while Gnao1 levels remain constant, ruling out doublet artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe an important quality control analysis shown in Figure 4I-K. The proportional scaling of total expression with gene number, combined with constant Gnao1 levels, provides strong evidence against doublet contamination. This validates the co-expression findings and demonstrates appropriate data quality assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C133"
+    ],
+    "result": "Most Gnai2 neurons express a single V1R per cell with some co-expressing two V1Rs; major combinations (e.g., Vmn1r85/86) match those from recent functional studies, and total V1R expression scales with receptor number while Gnai2 levels remain constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C133 describe V1R co-expression in Gnai2 neurons shown in Figure 4\u2014figure supplement 4. The agreement with functional single-cell studies (C79, C133) validates the methodology. The proportional expression scaling with constant Gnai2 (C80) again rules out doublets. This extends the co-expression analysis to the Gnai2 population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Differential expression analysis identified 924 genes distinguishing mature Gnao1 and Gnai2 neurons (456 Gnao1-enriched, 468 Gnai2-enriched), including known markers (V2Rs, H2-Mvs, B2m, Robo2, Tfap2e, Calr4 in Gnao1; V1Rs, Meis2 in Gnai2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 describe differential expression results shown in Figure 5A volcano plot. The quantitative results (924 genes, 456 vs 468) are clearly stated with statistical thresholds (log2FC>1, adj p<10e-6). Agreement with prior studies for known markers (C83-C87) validates the analysis while identifying many novel differentially expressed genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "RNA-ISH validation confirmed differential expression of novel markers: Nrp2/Socs2 restricted to Gnai2 neurons, Tppp3/Gm36028 restricted to Gnao1 neurons, with additional genes showing graded or scattered expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 describe spatial validation of differentially expressed genes shown in Figures 5C-D and Figure 5\u2014figure supplement 1. The RNA-ISH images clearly demonstrate the claimed expression patterns. The identification of genes with graded expression (C93) or scattered subpopulation expression (C94-C95) adds nuance to the binary Gnao1/Gnai2 classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Gene ontology analysis revealed significant enrichment of ER-related processes (protein folding, ER stress response, ERAD pathway) in Gnao1 neurons, with >20% of protein folding genes enriched and validated by RNA-ISH for Creld2, Dnajc3, Pdia6, Sdf2l1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C97-C100 describe GO enrichment analysis (Figure 6A) and RNA-ISH validation (Figure 6B). The enrichment of ER-related terms with p<0.05 is clearly shown, and spatial validation confirms Gnao1-specific expression of ER genes. This represents a major novel finding about functional differences between neuronal subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C138",
+      "C139"
+    ],
+    "result": "Immunofluorescence demonstrated enrichment of multiple ER proteins (SEKDEL, Hspa5, PDI, Grp94, Calnexin, Sec61\u03b2, Atlastin1, NogoB, Climp63, Reep5) in Gnao1 neurons, quantified across 26 sections from three mice, with patterns ranging from Gnao1-selective to Gnao1-enriched with lower Gnai2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108, C138-C139 describe extensive immunofluorescence validation shown in Figure 7 and Figure 7\u2014figure supplement 1. The quantification methodology is clearly described (C103), and normalized intensity plots (Figure 7E) demonstrate Gnao1 enrichment. The agreement with Lin et al. 2022 (C138) provides independent validation. This extends the transcriptomic findings to the protein level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C140",
+      "C141"
+    ],
+    "result": "Comparison of RNA and protein levels revealed that some ER proteins (Hspa5, Grp94, Sec61b) show transcriptional enrichment in Gnao1 neurons, while others (Atlastin1, PDI) have comparable RNA levels but enriched protein, indicating both transcriptional and post-transcriptional regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C140-C141 compare transcriptomic data (Figure 7\u2014figure supplement 2) with protein immunofluorescence. The identification of both transcriptional and post-transcriptional mechanisms is a logical inference from the data showing discordance between RNA and protein levels for some genes. This adds mechanistic insight to the ER enrichment phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C153",
+      "C154"
+    ],
+    "result": "Electron microscopy revealed that Gnao1 neurons contain strikingly higher smooth ER content with cubic membrane (gyroid/sinusoidal) morphology occupying >50% of cytoplasm, while Gnai2 neurons have smaller cell bodies with denser but less abundant cubic ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C112-C117, C120, C153-C154 describe electron microscopy findings shown in Figure 8 and Figure 8\u2014figure supplement 1. The methods are clearly described with citation support (C112). The qualitative observations about ER ultrastructure are well-documented in the images. The cubic membrane morphology is identified with appropriate citations to prior work on OSER/cubic membranes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C121",
+      "C141",
+      "C142",
+      "C144",
+      "C163"
+    ],
+    "result": "Mature Gnao1 neurons exhibit a specialized ER environment characterized by selective upregulation of ER gene transcription, higher ER protein levels via transcriptional and post-transcriptional mechanisms, chaperone-rich environment, and hypertrophic cubic membrane ER ultrastructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119, C121, C141-C142, C144, C163 synthesize findings from transcriptomics, immunofluorescence, and electron microscopy. The conclusion about a specialized ER environment is well-supported by converging evidence from multiple experimental approaches. The characterization as 'chaperone-rich' (C142, C144) is supported by expression data for multiple chaperones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C143",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The V2R family and subfamily members (C2, A1-A6) as well as H2-Mv genes evolved in Muridae, and mouse Gnao1 neurons may have co-evolved ER protein folding mechanisms to handle multiple GPCR/H2-Mv co-expression, which remains challenging to reconstitute in heterologous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143, C145-C148 present evolutionary speculation based on cited prior work about V2R evolution and functional reconstitution challenges. While the citations support the evolutionary timeline and reconstitution difficulties, the proposed co-evolution of ER mechanisms (C147) is speculative and not directly tested. This represents a reasonable hypothesis but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "Olfactory receptors co-opt the ER UPR pathway via PERK/CHOP and ATF5 for functional expression and ONOR patterning; ATF5 is broadly expressed across Gnai2 and Gnao1 VNO neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 cite prior work on olfactory receptor ER mechanisms and ATF5 expression in VNO. These are appropriately presented as established knowledge from cited studies rather than novel findings. The broad ATF5 expression (C150) suggests VNO may use different mechanisms than MOE for receptor regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "Multiple ER structural proteins (Reep5, NogoB, Atlastin1, Climp-63, Sec61\u03b2) involved in membrane curvature, junction formation, and sheet spacing are highly expressed in Gnao1 neurons, suggesting modulation of total ER content or structure in neuronal subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 describe enrichment of ER structural proteins shown in Figure 7G-H and Figure 7\u2014figure supplement 1B, with citation support for protein functions. The inference about ER content/structure modulation (C152) is reasonable given the observed ultrastructural differences. This connects molecular and structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Prior electron microscopy studies identified higher smooth ER content in VSNs than olfactory neurons and reported ER whorls (cubic membranes), though these studies preceded discovery of Gnao1-Gnai2 dichotomy; cubic membranes are observed in various biological contexts but their functional significance remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 appropriately cite and contextualize prior EM work on VNO and cubic membranes. The acknowledgment that prior studies preceded the Gnao1/Gnai2 discovery (C155) and that cubic membrane function is unclear (C157) demonstrates appropriate scholarly caution. This places current findings in historical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C164",
+      "C165"
+    ],
+    "result": "The high ER content and cubic membrane packing in Gnao1 neurons may indicate a perpetual stress-like state necessary for unique V2R/H2-Mv protein folding requirements, potentially requiring slower ER transit or enhanced chaperone levels; ER genes identified could be downstream of transcription factors and functionally required for proper GPCR folding and co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C160, C164-C165 present speculative mechanistic interpretations of the ER findings. While the speculation is reasonable and grounded in the data, these represent hypotheses rather than tested conclusions. The claims appropriately use conditional language ('may', 'could') but lack direct experimental evidence for the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C161",
+      "C162"
+    ],
+    "result": "The onset of Vmn2r1 expression coincides with upregulation of ER chaperones in immature Gnao1 neurons (cluster n6), though some Gnao1 cells show upregulated ER gene expression without Vmn2r1/Vmn2r2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C162 describe temporal relationships shown in Figure 9A-B. The coincidence of Vmn2r1 and ER chaperone expression (C161) suggests a potential link, while the exceptions (C162) appropriately acknowledge complexity. The authors correctly note that further experiments are needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Macrophages could play important roles in VNO neuronal differentiation or regulation of inflammatory/immune responses to external insults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C126 presents speculation about macrophage function supported by citations to general macrophage literature but without VNO-specific functional data. While the identification of macrophage populations is well-supported, their functional roles remain speculative. The claim appropriately uses conditional language ('could').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C131"
+    ],
+    "result": "Prior studies established that Notch signaling and Bcl11b specify Gnao1 fate, Notch timing determines cell type outcomes, Tfap2e maintains Gnao1 fate, and Prrxl1 autoregulates its expression in dorsal root ganglion development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129, C131 appropriately cite prior work establishing developmental mechanisms. These are presented as established knowledge rather than novel findings. The citations support the stated conclusions and provide context for interpreting the current transcriptomic data on developmental trajectories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The co-expression patterns show non-random logic with family-biased associations (A1-A5 with Vmn2r2/C2; A6-A9,B,D,E with Vmn2r1), notable deviations (H2-M1/M9/M11 with Vmn2r1 and Vmn2r81/82), and proportional scaling of combined VR/H2-Mv expression with gene number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 synthesize co-expression findings with appropriate inference about non-random patterns. The family-biased associations are clearly demonstrated in Figure 4, deviations are documented with validation, and proportional scaling is shown in Figure 4I-K. This represents a comprehensive characterization of co-expression logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "The comprehensive scRNA-seq analysis contributes valuable insights into vomeronasal neuroepithelium complexity and offers a roadmap for further investigations; vomeronasal neurons may serve as a model system for studying specialized ER structure-function relationships in GPCR-expressing neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 present appropriate concluding statements about the study's significance. C166 is supported by the comprehensive dataset and validated findings. C167 is a reasonable forward-looking statement about the system's utility, appropriately using conditional language ('may serve'). These represent appropriate scholarly conclusions.",
+    "result_type": "MINOR"
+  }
+]

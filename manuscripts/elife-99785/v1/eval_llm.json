@@ -18,23 +18,22 @@
       "C67",
       "C68",
       "C69",
-      "C70"
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
     ],
-    "result": "Large IS-flanked genomic duplications encompassing folA arise spontaneously during trimethoprim adaptation in E. coli, with significantly higher frequency in lon-deficient strains (4/5 isolates) compared to wild-type (1/5 isolates). These duplications are flanked by IS-elements and their increased frequency in \u0394lon strains is associated with greater stability of IS-transposases in the absence of Lon protease.",
+    "result": "Large IS-flanked genomic duplications encompassing folA arise spontaneously during trimethoprim adaptation in E. coli, with higher frequency in lon-deficient strains. These duplications lead to DHFR overexpression and confer trimethoprim resistance. The duplicated regions are flanked by IS-elements, and IS-transposases show greater stability in lon-knockout strains, suggesting that Lon protease regulates IS-element activity and thereby influences GDA frequency.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C5, C48-C70 collectively demonstrate that folA duplications occur during trimethoprim adaptation with higher frequency in lon-deficient backgrounds. The evidence includes genomic sequencing data (coverage plots in Figure 1), immunoblotting showing DHFR overexpression (Figure 2A), and protein stability assays for transposases (Figure 1\u2014figure supplement 2). The mechanistic link to IS-transposase stability provides a plausible explanation for the elevated GDA frequency in \u0394lon strains.",
+    "evaluation": "Claims C3-C5, C48-C75 collectively demonstrate that folA-encompassing GDAs emerge during trimethoprim selection, occur more frequently in \u0394lon strains (3/5 vs 1/5 isolates), are flanked by IS-elements, lead to DHFR overexpression, and confer resistance. The mechanistic link to Lon is supported by transposase stability data (C65). The genomic, expression, and phenotypic data converge to support this result.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75",
       "C76",
       "C77",
       "C78",
@@ -47,17 +46,19 @@
       "C85",
       "C86"
     ],
-    "result": "The duplicated genomic region encompasses folA and acrAB genes, but folA duplication alone is sufficient for trimethoprim resistance. DHFR protein levels are elevated in GDA-containing isolates, while global transcriptional changes are primarily attributable to mgrB loss rather than the GDA itself. The fitness cost of GDA-containing strains (~20%) is comparable to mgrB inactivation alone and is alleviated by high Mg2+.",
+    "result": "GDA mutations encompassing folA cause selective overexpression of folA (2.3-5.7 fold) with minimal impact on other duplicated genes (~1.3-1.7 fold average). The fitness cost of GDA-containing strains is comparable to mgrB deletion alone (~20%) and is attributable to mgrB loss rather than the duplication itself, as demonstrated by rescue with high Mg2+.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71-C86 are well-supported by multiple lines of evidence: genomic data showing gene content (Figure 1C), immunoblotting demonstrating DHFR overexpression (Figure 2A), RNA-sequencing showing modest transcriptional effects of GDA (Figure 2B, Supplementary file 1), and competition experiments establishing fitness costs (Figure 2E-F). The inference that folA duplication is the primary adaptive mutation is supported by the LTMPR1 isolate lacking acrAB duplication but maintaining resistance.",
+    "evaluation": "Claims C76-C86 show that despite duplicating 173-531 genes, folA is selectively overexpressed while other genes show variable and modest increases. RNA-seq data (C77-C82) and fitness assays with Mg2+ rescue (C83-C85) demonstrate that the fitness cost derives from mgrB loss, not the GDA. This is well-supported by converging transcriptomic and phenotypic evidence.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
       "C6",
+      "C7",
+      "C8",
       "C87",
       "C88",
       "C89",
@@ -77,11 +78,11 @@
       "C103",
       "C104"
     ],
-    "result": "During evolution in drug-free media, folA duplications are rapidly lost (~252 generations), with bacteria reverting to single folA copies while maintaining mgrB mutations. GDA-mediated resistance is less stable than point mutation-mediated resistance. A second GDA mutation (GDA-2) emerges dynamically during evolution, appearing to enhance fitness independently of trimethoprim resistance.",
+    "result": "In drug-free conditions, folA duplications are rapidly lost over ~252 generations, with reversion to single copy and loss of resistance. GDA-mediated resistance is less stable than point mutation-mediated resistance. A second GDA (GDA-2) emerges dynamically in lon-deficient backgrounds, appearing unrelated to trimethoprim adaptation but associated with fitness enhancement through modulation of RpoS activity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6, C87-C104 are supported by longitudinal data from evolution experiments including IC50 measurements (Figure 3B), colony formation assays (Figure 3C), immunoblotting (Figure 3D), and genomic sequencing at multiple timepoints (Figure 3E-H, Supplementary file 2). The rapid loss of GDA in drug-free conditions contrasts with maintenance of point mutations (WTMPR5), supporting the instability conclusion. The dynamic nature of GDA-2 is evidenced by coverage plots showing repeated loss and gain.",
+    "evaluation": "Claims C6-C104 demonstrate rapid GDA loss in drug-free evolution through IC50 measurements (C87), colony formation assays (C88-C89), genomic sequencing (C91-C104), and DHFR expression (C91). The instability of GDA vs point mutations is directly compared (C89-C90). GDA-2 emergence and its link to RpoS are supported by genomic and fitness data (C94-C106). The temporal dynamics and mechanistic insights are well-documented.",
     "result_type": "MAJOR"
   },
   {
@@ -95,23 +96,21 @@
       "C110",
       "C111",
       "C112",
-      "C113",
-      "C114",
-      "C115",
-      "C116"
+      "C113"
     ],
-    "result": "Evolution in antibiotic-free media is characterized by acquisition of mutations that enhance fitness by reducing RpoS activity, either through direct rpoS mutations or through the GDA-2 mutation which downregulates rpoS transcription. Both mechanisms restore fitness in lon-deficient backgrounds where RpoS targets are overexpressed due to loss of Lon-mediated proteolysis.",
+    "result": "In lon-deficient E. coli evolving in drug-free media, fitness is recovered through either rpoS mutations or the GDA-2 mutation, both of which downregulate RpoS target genes. Lon protease normally degrades RpoS during exponential growth, and its absence leads to overexpression of 41 RpoS targets. GDA-2 reduces rpoS mRNA levels, functionally mimicking rpoS mutations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C105-C116 are supported by fitness competition data (Figure 4A, 4D), RNA-sequencing showing RpoS target expression (Figure 4B-C, Supplementary file 3), and genomic data identifying mutations (Figure 3F-H). The mechanistic connection between Lon deficiency, RpoS overexpression, and fitness cost is well-established through transcriptomic analysis. However, the precise mechanism by which GDA-2 reduces rpoS expression requires further investigation.",
+    "evaluation": "Claims C105-C113 show that both rpoS mutations and GDA-2 restore fitness in \u0394lon backgrounds through convergent downregulation of RpoS targets. RNA-seq data (C108-C112) demonstrate RpoS target overexpression in \u0394lon and their downregulation in evolved isolates. Fitness assays (C105-C106, C113) confirm the phenotypic benefit. The mechanistic model linking Lon, RpoS, and fitness is well-supported.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C7",
-      "C8",
+      "C114",
+      "C115",
+      "C116",
       "C117",
       "C118",
       "C119",
@@ -132,38 +131,37 @@
       "C134",
       "C135",
       "C136",
-      "C137",
-      "C138",
-      "C139",
-      "C140",
-      "C141"
+      "C137"
     ],
-    "result": "Under constant trimethoprim pressure (300 ng/mL), folA duplications are maintained longer than in drug-free conditions but are eventually replaced by point mutations in folA or its promoter. Reversion to single copy requires prior acquisition of resistance-conferring point mutations. A subpopulation maintains multiple folA copies through dynamic loss and gain of GDA mutations, including evolution of new, smaller duplications.",
+    "result": "Under constant trimethoprim pressure (300 ng/mL), folA duplications are maintained longer than in drug-free conditions but are eventually replaced by point mutations in folA or its promoter. Reversion to single copy requires prior acquisition of resistance-conferring point mutations. Some isolates maintain or evolve new GDA mutations, suggesting dynamic GDA maintenance in subpopulations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C8, C117-C141 are supported by comprehensive longitudinal data including IC50 measurements (Figure 5A-B), colony formation (Figure 5C), immunoblotting (Figure 5D), and population/clonal sequencing (Figure 5E-H, Supplementary files 4). The temporal sequence showing GDA maintenance until point mutations arise, followed by GDA loss, is clearly documented. The evolution of new GDA structures (Figure 5\u2014figure supplement 2) demonstrates the dynamic nature of copy number variation under selection.",
+    "evaluation": "Claims C114-C137 demonstrate delayed but eventual GDA loss under drug pressure through population sequencing (C116-C120), isolate sequencing (C121-C128), and identification of new GDAs (C129-C133). The requirement for point mutations before GDA loss is shown by temporal genomic data (C117-C118, C135). The dynamic nature of GDA maintenance is evidenced by new GDA formation (C129-C133). Multiple lines of genomic evidence support this result.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C142",
-      "C143",
-      "C144",
-      "C145"
+      "C138",
+      "C139",
+      "C140"
     ],
-    "result": "Point mutants outcompete GDA mutants under trimethoprim pressure (300 ng/mL) by ~100-fold enrichment over ~105 generations, despite similar doubling times and sometimes lower IC50 values. This suggests subtle fitness differences or differential stability between the two resistance mechanisms.",
+    "result": "In competition experiments at 300 ng/mL trimethoprim, point mutants outcompete GDA mutants by ~100-fold over 105 generations despite similar doubling times and comparable or lower IC50 values, indicating subtle fitness differences or differential stability.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C142-C145 are supported by competition experiments (Figure 6A) and phenotypic characterization (Figure 6B). The data clearly show enrichment of point mutants over GDA mutants despite similar growth rates, supporting the conclusion of competitive advantage. However, the mechanistic basis for this advantage (subtle fitness differences vs. stability) remains uncertain and is appropriately presented as inference.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C138-C140 show that point mutants invade GDA populations in trimethoprim through competition assays (C138), yet IC50 and doubling time measurements (C139-C140) reveal no obvious growth advantage. The data support competitive superiority of point mutants but the mechanism remains incompletely resolved. The experimental design with genetic markers and controls is appropriate.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C9",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
       "C146",
       "C147",
       "C148",
@@ -176,26 +174,36 @@
       "C155",
       "C156",
       "C157",
-      "C158",
-      "C159",
-      "C160",
-      "C161",
-      "C162",
-      "C163",
-      "C164"
+      "C158"
     ],
-    "result": "Under increasing trimethoprim pressure (1-10 \u03bcg/mL), all LTMPR1 lineages convergently evolve Trp30Arg mutations by 196 generations while maintaining folA duplications. Subsequently, lineages diverge: Line A acquires promoter mutations and loses GDA, while Lines B and C acquire a second DHFR mutation (Tyr151Asp) and maintain GDA. Some isolates retain GDA with point mutations in only one gene copy.",
+    "result": "Under increasing trimethoprim pressure (1-10 \u03bcg/mL), all three LTMPR1 lineages convergently evolved the Trp30Arg mutation by 196 generations while maintaining folA duplication. Subsequently, lineages diverged: Line A acquired a promoter mutation and lost the GDA, while Lines B and C acquired a second DHFR mutation (Tyr151Asp) and retained the GDA despite lower DHFR expression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9, C146-C164 are supported by extensive longitudinal data including IC50 measurements (Figure 7B), colony formation (Figure 7C), immunoblotting (Figure 7D), and detailed genomic analysis (Figure 7E-H, Supplementary file 5). The convergent evolution of Trp30Arg followed by divergent trajectories is well-documented. The maintenance of GDA in Lines B and C despite acquiring additional mutations is a key unexpected finding that motivates the proteostasis investigation.",
+    "evaluation": "Claims C141-C158 document the evolutionary trajectories through IC50 measurements (C141), colony formation (C142), DHFR expression (C143-C145), and comprehensive genomic sequencing (C146-C158). The convergent evolution of Trp30Arg followed by divergent paths is well-documented. The retention of GDA in Lines B/C despite acquiring additional mutations is unexpected and well-characterized. Multiple replicates and time points strengthen the conclusions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C11",
-      "C165",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The maintenance of folA duplication depends on the specific mutations acquired. Line A isolates with promoter mutations show similar IC50 and DHFR levels regardless of copy number, making duplication dispensable. Line B isolates with Trp30Arg-Tyr151Asp mutations show 3.5-fold lower IC50 with single copy, and DHFR protein levels are significantly compromised by these mutations, making duplication beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C165 demonstrate genotype-specific effects of GDA through IC50 measurements (C159-C160) and immunoblotting (C161-C163). The data clearly show that promoter mutations obviate the need for duplication while destabilizing DHFR mutations maintain selection for duplication. The mechanistic link between mutation type and GDA maintenance is well-established through quantitative protein and phenotypic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
       "C166",
       "C167",
       "C168",
@@ -209,67 +217,93 @@
       "C176",
       "C177",
       "C178",
-      "C179",
-      "C180",
-      "C181",
-      "C182",
-      "C183",
-      "C184",
-      "C185",
-      "C186",
-      "C187",
-      "C188"
+      "C179"
     ],
-    "result": "Maintenance of folA duplication under high drug pressure is driven by proteolysis of unstable DHFR mutants. The Trp30Arg-Tyr151Asp double mutant exhibits synergistic epistasis conferring high-level resistance only in lon-deficient backgrounds, where it escapes proteolytic degradation. Isolates with this double mutant require two folA copies to maintain sufficient DHFR levels, while isolates with promoter mutations do not.",
+    "result": "The Trp30Arg-Tyr151Asp double mutation in DHFR exhibits synergistic epistasis that is contingent on Lon absence. In wild-type E. coli, this combination confers lower resistance than wild-type DHFR, but in \u0394lon backgrounds it confers very high-level resistance. The effect is mediated by differential proteolytic stability, as DHFR expression levels mirror resistance levels and Lon clearance alters genotype-phenotype relationships.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11, C165-C188 are supported by IC50 measurements (Figure 8A), immunoblotting (Figure 8B), structural analysis (Figure 8C), and heterologous expression experiments (Figure 8E-F). The synergistic epistasis of Trp30Arg-Tyr151Asp is clearly demonstrated, and the correlation between DHFR expression levels and resistance supports the proteolysis mechanism. The differential requirement for GDA based on mutation type (promoter vs. coding) is well-documented. This represents a novel mechanistic insight into gene dosage evolution.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C10",
-      "C12",
-      "C189",
-      "C190",
-      "C191",
-      "C192",
-      "C193",
-      "C194",
-      "C195",
-      "C196",
-      "C197",
-      "C203",
-      "C204",
-      "C205"
-    ],
-    "result": "Gene dosage evolution is determined by expression demand generated by both antibiotic pressure and proteostasis. GDA mutations provide rapid but transient adaptation, while point mutations offer stable solutions. Lon protease influences GDA evolution through two mechanisms: promoting GDA formation by stabilizing IS-transposases, and driving GDA maintenance by degrading unstable DHFR mutants. The balance between these effects depends on drug concentration and the specific mutations acquired.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10, C12, C189-C197, C203-C205 represent the major conceptual synthesis of the study. These conclusions are well-supported by the collective evidence from all evolution experiments showing: (1) rapid GDA emergence and eventual replacement by point mutations, (2) differential GDA stability under varying drug pressures, (3) increased GDA frequency in lon-deficient strains, (4) maintenance of GDA with unstable DHFR mutants, and (5) loss of GDA with promoter mutations. The dual role of proteostasis is a novel and well-supported finding.",
+    "evaluation": "Claims C166-C179 demonstrate Lon-dependent epistasis through systematic testing of DHFR variants in wild-type and \u0394lon backgrounds. IC50 measurements (C169-C177) show the double mutant only confers high resistance in \u0394lon. Immunoblotting (C178) confirms that expression levels correlate with resistance. The structural context (C168) and hydrophobicity experiments (C172-C173) support the mechanistic model. The epistasis is well-characterized and mechanistically explained.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C1",
-      "C2",
-      "C48",
-      "C49"
+      "C180",
+      "C181",
+      "C187",
+      "C188",
+      "C10",
+      "C11"
     ],
-    "result": "Prior work established that mgrB mutations are beneficial under trimethoprim exposure and lead to PhoQP-dependent overexpression of folA in E. coli.",
+    "result": "Proteostatic machinery generates additional expression demand by clearing unstable mutant DHFR proteins, driving maintenance of folA duplications under high drug pressure. This represents a novel role for proteostasis as a determinant of gene dosage evolution in antibiotic-resistant bacteria, where expression demand depends on both antibiotic pressure and protein stability.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C2, C48-C49 accurately cite prior work (Patel and Matange, eLife, 2021) and are confirmed by data in the current manuscript (Figure 1B). This provides essential context for the current study.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C180-C181, C187-C188, C10-C11 synthesize the findings to propose that proteolysis of unstable DHFR mutants creates expression demand that maintains GDA selection. This is supported by: (1) Trp30Arg-Tyr151Asp mutants requiring GDA for high resistance, (2) Lon-dependent degradation of mutant DHFRs, (3) correlation between protein stability and GDA maintenance, and (4) differential evolutionary trajectories in wild-type vs \u0394lon backgrounds. The model integrates multiple lines of evidence.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Gene dosage increase is a rapid but transient evolutionary response to expression demand. Point mutations provide more stable routes to mitigating expression demand. Over short timescales, GDAs counter antibiotic effects, but their inherent instability leads to replacement by point mutations. Continued antibiotic exposure delays but cannot prevent reversion to low copy number in most cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 synthesize the evolutionary dynamics observed across all experiments. The rapid emergence of GDAs (C3-C5), their instability in drug-free conditions (C87-C91), delayed loss under drug pressure (C116-C135), and eventual replacement by point mutations (C117-C128) collectively support this model. The conclusions are well-grounded in the experimental observations across multiple conditions and timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C189"
+    ],
+    "result": "Gene dosage evolution is driven by a combination of environmental factors (antibiotic pressure) and physiological factors (proteostasis), which together alter the relationship between gene copy number and fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C189 represents the overarching conclusion integrating environmental selection (trimethoprim pressure) and physiological constraints (Lon-mediated proteolysis). This is supported by the differential GDA frequencies in wild-type vs \u0394lon (C4-C5), the role of DHFR stability in GDA maintenance (C162-C177), and the context-dependent fitness effects of GDAs (C83-C86, C159-C165). The synthesis is well-justified by the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C49"
+    ],
+    "result": "Prior work established that mgrB mutations are beneficial under trimethoprim exposure and lead to PhoQP-dependent overexpression of folA-encoded DHFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C49 reference prior work (Patel and Matange, eLife, 2021) establishing the mgrB-PhoQP-folA regulatory axis. This provides essential context for the current study. The claims are appropriately cited and the current work builds on this foundation by identifying GDA as an additional mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work from the authors' group identified Lon as a conserved quality control protease that degrades mutant DHFRs, reduces their half-lives in vivo, and affects genotype-phenotype relationships of resistance-conferring mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 reference prior work establishing Lon's role in DHFR proteolysis and trimethoprim resistance. This provides the mechanistic foundation for investigating Lon's role in GDA evolution. The claims are appropriately cited and essential for contextualizing the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
       "C13",
       "C14",
       "C15",
@@ -284,19 +318,19 @@
       "C24",
       "C25",
       "C26",
-      "C27",
-      "C28"
+      "C27"
     ],
-    "result": "GDAs are implicated in diverse biological phenomena including cancer, speciation, reproductive isolation, and antimicrobial resistance. They occur at higher frequencies than point mutations and can be lost, pseudogenized, sub-functionalized, or neo-functionalized depending on selection and fitness costs. In bacteria, GDAs occur through RecA-dependent and -independent mechanisms involving IS-elements.",
+    "result": "GDAs are implicated in diverse biological phenomena including cancer, speciation, reproductive isolation, and antimicrobial resistance. They occur at higher frequencies than point mutations, can be lost or functionally diversified, and their evolutionary fate depends on selection and fitness costs. In bacteria, GDAs are common during antibiotic adaptation, occur through RecA-dependent and -independent mechanisms involving IS-elements, and can create heteroresistance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C13-C28 accurately summarize established knowledge from the cited literature. These provide appropriate background context for the study.",
+    "evaluation": "Claims C12-C27 provide literature context for GDA biology. All claims are supported by appropriate citations to prior work. This background establishes the broader significance of the study and is appropriately referenced.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R12",
+    "result_id": "R16",
     "claim_ids": [
+      "C28",
       "C29",
       "C30",
       "C31",
@@ -313,33 +347,29 @@
       "C42",
       "C43"
     ],
-    "result": "DHFR is a ubiquitous essential enzyme that catalyzes NADPH-dependent reduction of tetrahydrofolate. It is the target of antifolate drugs including methotrexate, pyrimethamine, and trimethoprim. Copy number amplification and point mutations in DHFR confer resistance across multiple systems. In E. coli, resistance mechanisms include point mutations in folA and transcriptional upregulation through cis-regulatory or trans-acting (mgrB) mutations.",
+    "result": "DHFR is a ubiquitous essential enzyme that catalyzes NADPH-dependent reduction of tetrahydrofolate, a cofactor in nucleotide and amino acid biosynthesis. DHFR inhibitors (methotrexate, pyrimethamine, trimethoprim) are therapeutic agents, and DHFR copy number amplification confers resistance across cancer, malaria, and bacterial systems. In E. coli, folA encodes DHFR, and resistance arises through point mutations or transcriptional upregulation via promoter mutations or mgrB inactivation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C43 accurately summarize established knowledge about DHFR and trimethoprim resistance mechanisms from cited literature. This provides essential biological context.",
+    "evaluation": "Claims C28-C43 provide essential background on DHFR biology and trimethoprim resistance mechanisms. All claims are supported by appropriate citations or represent established knowledge. This context is necessary for understanding the significance of folA GDAs.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R13",
-    "claim_ids": [
-      "C44",
-      "C45",
-      "C46",
-      "C47"
-    ],
-    "result": "Prior work from the authors' group identified Lon as a posttranslational regulator of trimethoprim resistance that degrades mutant DHFRs and affects genotype-phenotype relationships of resistance mutations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C44-C47 accurately cite prior work from the authors' group (Matange, 2020; Rodrigues et al., 2016). This provides critical motivation for investigating Lon's role in the current study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
+    "result_id": "R17",
     "claim_ids": [
       "C52",
-      "C53",
+      "C53"
+    ],
+    "result": "Wild-type and lon-deficient E. coli have similar MIC for trimethoprim, though the lon-knockout has a higher IC50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 establish that Lon deficiency affects trimethoprim susceptibility (higher IC50) without changing MIC. This is cited to prior work (Matange, 2020) and provides important context for comparing evolutionary trajectories. The distinction between MIC and IC50 is relevant for understanding the baseline phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
       "C55",
       "C56",
       "C57",
@@ -347,87 +377,11 @@
       "C59",
       "C60"
     ],
-    "result": "Wild-type and lon-deficient E. coli have similar MIC but different IC50 for trimethoprim. LTMPR4 and LTMPR5 harbor mutations in pitA, which have been previously reported in trimethoprim-adapted E. coli. A pitA knockout shows enhanced colony formation on trimethoprim, confirming adaptive benefit.",
+    "result": "LTMPR4 and LTMPR5 harbored mutations in pitA, a metal-phosphate symporter gene previously reported in trimethoprim-adapted E. coli. Loss of PitA was beneficial in trimethoprim as demonstrated by enhanced colony formation of a pitA knockout, though the molecular mechanism is unknown.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C53, C55-C60 are supported by cited prior work (Matange, 2020; Vinchhi et al., 2023) and experimental data (Figure 1\u2014figure supplement 1, Table 1). The pitA findings are interesting but tangential to the main story about GDA evolution.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C100",
-      "C107",
-      "C112"
-    ],
-    "result": "Loss-of-function mutations in RpoS enhance fitness during trimethoprim adaptation without conferring resistance. Lon reduces RpoS levels during exponential growth, and loss of mgrB stabilizes RpoS.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C100, C107, C112 accurately cite prior work (Patel and Matange, 2021; Vinchhi et al., 2023; Ranquet and Gottesman, 2007; Xu et al., 2019). These provide context for understanding the fitness effects observed in the evolution experiments.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C126"
-    ],
-    "result": "The C-35T mutation in the folA promoter upregulates DHFR expression.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C126 cites prior work (Vinchhi et al., 2023) establishing the effect of this promoter mutation. This is relevant for interpreting the evolution results.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C172",
-      "C173",
-      "C174"
-    ],
-    "result": "Trp30 mutations in DHFR confer trimethoprim resistance but reduce proteolytic stability, affecting expression levels and limiting resistance.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C172-C174 cite prior work from the authors' group (Matange et al., 2018; Matange, 2020) establishing the proteolytic instability of Trp30 mutants. This provides critical context for the proteostasis findings.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R18",
-    "claim_ids": [
-      "C198",
-      "C199",
-      "C200",
-      "C201",
-      "C202",
-      "C206",
-      "C207",
-      "C208",
-      "C209",
-      "C212",
-      "C213",
-      "C214"
-    ],
-    "result": "Prior studies have shown connections between Lon protease and genomic duplications, IS-element mobility, and RecA regulation. Recent work by Tomanek and Guet (2022) demonstrated similar interplay between GDA and point mutations during evolution. Protein quality control machinery broadly influences mutational landscapes and evolutionary trajectories across diverse systems.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C198-C202, C206-C209, C212-C214 accurately cite relevant prior literature that contextualizes the current findings within the broader field. These comparisons strengthen the manuscript by connecting to established knowledge.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
-      "C210",
-      "C211"
-    ],
-    "result": "Given the instability of large GDAs, they are eventually lost and replaced with point mutations over longer evolution, suggesting that different mutational profiles of GDA-biased populations may be relevant only at short durations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C210-C211 represent reasonable inferences from the data showing eventual GDA loss across multiple evolution experiments. This synthesis is well-supported by the collective evidence.",
+    "evaluation": "Claims C55-C60 identify pitA mutations in two isolates and validate their adaptive value through knockout experiments (C59-C60). The observation is appropriately cited to prior work (C57) and the authors acknowledge the unknown mechanism. This represents a secondary finding that is adequately characterized.",
     "result_type": "MINOR"
   }
 ]

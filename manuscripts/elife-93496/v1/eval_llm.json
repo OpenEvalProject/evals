@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript describes the conventional understanding that apical constriction is a fundamental mechanism for epithelial morphogenesis, where columnar cells adopt a wedge shape to bend flat cell sheets, and that this process has long been thought to be driven by apically localized myosin generating contractile forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately summarize established knowledge in the field, supported by extensive prior literature. These are well-accepted background statements that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript reviews the molecular basis of apical constriction, describing how non-muscle myosin II forms cortical and circumferential actomyosin networks, and how these are regulated by transcription factors (Twist, Snail) and signaling pathways (Rho, Rock) across different organisms and tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 provide a comprehensive literature review with appropriate citations. These background claims accurately represent established findings from multiple studies across different model systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior computational studies using finite element and vertex models validated the myosin-based contractility model by successfully reproducing apical constriction through increased apical surface tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 accurately summarize prior modeling work with appropriate citations. These claims establish the context for why the current study's contradictory findings are significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C47",
+      "C48"
+    ],
+    "result": "Cellular Potts model simulations with increased apical surface contractility failed to reproduce apical constriction; instead, cells adopted drop shapes and delaminated one by one from edges, contradicting the conventional myosin-based contractility model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C23, C47-C48 describe consistent simulation results shown in Figure 2. The simulations were performed with multiple parameter sets and consistently showed cell delamination rather than apical constriction, directly challenging the conventional model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C49"
+    ],
+    "result": "Analysis of early cellular Potts model deformation revealed that only edge cells shrank their apical surface while inner cells remained columnar, with practical pulling forces remaining only at edges. The difference from vertex model results was attributed to the straight lateral surface constraint imposed on vertex models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C29, C49 provide mechanistic explanation for the simulation results based on force balance analysis (Figure 3). The energy landscape analysis (Figure 3f-h) supports the conclusion that vertex model constraints artificially enable apical constriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors identify two requirements for apical constriction: simultaneous apical shrinkage among cells in a cluster and maintenance of straight lateral surfaces. These requirements can be satisfied when the energy function and its derivative both increase with apical width, allowing pressure to balance among cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 present logical inferences from the simulation results and energy analysis. The reasoning is sound and supported by the energy landscape analysis in Figure 3f, though these are theoretical requirements rather than experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C53"
+    ],
+    "result": "An alternative model based on cell membrane elasticity with decreased elastic reference value (representing endocytosis) successfully reproduced apical constriction in cellular Potts model simulations across a wide range of parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C36, C53 describe the core positive result shown in Figure 4. The simulations succeeded in producing wedge-shaped cells with straight lateral surfaces and tissue invagination, validating the proposed elasticity-based model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C55",
+      "C6",
+      "C73"
+    ],
+    "result": "High surface elastic modulus kept the tissue apical surface relatively flat despite wedge-shaped cells, suggesting that excessively strong apical surface tension might prevent tissue invagination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C55, C6, C73 describe an interesting emergent property from the simulations (Figure 4b). This prediction is logically consistent with the model but represents a theoretical prediction rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "A gradient contractility model enabled simultaneous apical shrinkage but cells often delaminated by chance when some shrank faster than neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 describes results from testing an alternative mechanism (Figure 4\u2014figure supplement 1). This demonstrates that the gradient contractility model is less robust than the elasticity-based model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The elasticity-based apical constriction model was robust to variations in cell shape (thinner and thicker cells) and was slightly enhanced when surrounding cells had affinity to apical ECM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 describe robustness tests shown in supplementary figures. These results support the generalizability of the proposed model across different tissue configurations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C75"
+    ],
+    "result": "Combining the elasticity-based model with supracellular myosin cable greatly promoted tissue invagination and produced sharp bending with sufficient pulling force, though the supracellular cable alone could not drive invagination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C75 describe synergistic effects shown in Figure 5 and reference back to Figure 2c. The results demonstrate that multiple mechanisms work together, with the elasticity-based model being necessary but enhanced by the supracellular cable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Geometrical tension inference of Drosophila tracheal pit invagination showed no obvious change in junctional tension distribution but revealed decreased apical surface area and increased relative pressure among invaginating cells with synchronized variance, consistent with the balanced pressure model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe experimental validation using real tissue data (Figure 6). The 3D Bayesian tension inference provides independent support for the model's prediction that pressure increases synchronously during apical constriction. However, the method relies on geometric assumptions and indirect inference rather than direct pressure measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "The cellular Potts model's intrinsic inclusion of curved cell surfaces, cell rearrangement, and fluctuation allowed discovery of the importance of balanced pressure, with differences from vertex models potentially due to whether cell rearrangement was included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51, C54 present interpretations about why the cellular Potts model revealed different results than vertex models. While the reasoning is plausible, claim C50 explicitly acknowledges uncertainty ('could be due to'), and the actual cause of differences between models has not been definitively established through systematic comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The manuscript reviews evidence for pulsed myosin activity and ratcheting mechanisms in apical constriction, noting that endocytosis is required for ratcheting and that endocytosis downregulation produces edge-specific contraction resembling the contractility-based simulation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 accurately summarize prior experimental findings with appropriate citations. Claim C63 makes a reasonable connection between experimental observations (Miao et al., 2019) and the simulation results, though this is an inference rather than direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The authors propose a four-step ratcheting model where pulsed actomyosin contractility temporarily contracts the apical surface, endocytosis decreases the elastic reference value during contraction, and the surface is only partially relaxed afterward, contrasting with prior models that attributed endocytosis effects to actomyosin remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66, C68 present the authors' proposed mechanistic model (Figure 7a). While logically consistent with the simulation results and prior observations, this model is largely speculative (evidence_type includes 'SPECULATION'). The proposal that endocytosis directly modifies membrane elastic properties rather than indirectly affecting actomyosin requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The model predicts that constant myosin activity causes edge cell delamination, sporadic pulsed activity without elasticity modification produces no net change, pulsed activity with endocytosis produces proper apical constriction, and mechanisms not generating apical surface tension may promote deep invagination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C72, C74 present theoretical predictions from the model (Figure 7b-f). These are logical extensions of the model but are explicitly speculative (evidence_type includes 'SPECULATION', 'INFERENCE'). Experimental validation of these predictions is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C76"
+    ],
+    "result": "The requirement for simultaneous contraction is consistent with non-autonomous disruption of apical constriction observed in prior studies, and the simulation results overall are consistent with endocytosis studies, suggesting why endocytosis and ratcheting are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C76 connect the model predictions to prior experimental observations with appropriate citations. The consistency between model predictions and experimental observations provides indirect support, though direct experimental validation of the proposed mechanism is still needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30",
+      "C57",
+      "C67"
+    ],
+    "result": "The authors speculate that their contractility-based simulations may reproduce endocytosis downregulation phenotypes, that myosin condensation would promote delamination, and acknowledge alternative mechanisms like \u03b2H-spectrin involvement in ratcheting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30, C57, C67 are explicitly speculative statements about alternative mechanisms and interpretations. These represent hypotheses for future investigation rather than established results.",
+    "result_type": "MINOR"
+  }
+]

@@ -2,64 +2,216 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C1",
-      "C2",
-      "C52",
-      "C53",
-      "C54"
+      "C49",
+      "C50",
+      "C51",
+      "C52"
     ],
-    "result": "Lineage-depleted Cd47\u2212/\u2212 spleen cells show elevated expression of erythropoietic genes, including markers of stress-induced and adult definitive erythropoiesis, despite extramedullary erythropoiesis not being expected in healthy adult mice.",
+    "result": "Cd47\u2212/\u2212 mice exhibit splenomegaly with significantly increased total spleen cell numbers compared to WT and Thbs1\u2212/\u2212 mice, while Thbs1\u2212/\u2212 mice do not show significant spleen enlargement.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C52, C53, and C54 are directly supported by bulk RNA sequencing data (Table 1, Figure 1\u2014figure supplement 1), showing enrichment of heme metabolism, stress-induced erythropoiesis, and adult definitive erythropoiesis gene signatures in Cd47\u2212/\u2212 cells. Claim C1 establishes the baseline expectation. The data provide strong evidence for this unexpected finding.",
+    "evaluation": "Claims C49-C52 are supported by visual evidence (Figure 1\u2014figure supplement 1A) and quantitative flow cytometry data (Figure 1A) showing significantly higher spleen cell counts in Cd47\u2212/\u2212 mice. The lack of splenomegaly in Thbs1\u2212/\u2212 mice is also documented with appropriate controls.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C3",
-      "C4",
-      "C5",
-      "C44",
-      "C45",
-      "C46",
-      "C47"
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
     ],
-    "result": "Loss of CD47 or thrombospondin-1 leads to elevated expression of genes associated with early erythropoiesis and multipotent stem cell transcription factors in spleen, consistent with the inhibitory role of CD47/thrombospondin-1 signaling on stem cell transcription factors.",
+    "result": "Cd47\u2212/\u2212 spleens show significantly increased percentages of Ter119+, CD34+, Epor+, Gypa+, Ermap+, and Aqp1+ cells, while showing decreased Sca1+ cells. Thbs1\u2212/\u2212 spleens show decreased Epor+, Gypa+, and Aqp1+ cells compared to WT.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C5 and C44-C47 are supported by RNA sequencing data (Table 1) and cite previous work (Kaur et al., 2013). The consistency between current data and prior published evidence strengthens this result. However, the current study focuses more on committed progenitors than early multipotent cells.",
+    "evaluation": "Claims C53-C65 are supported by flow cytometry data in Figures 1B-J with statistical significance values provided (p<0.05 for most comparisons). The data consistently show opposing patterns between Cd47\u2212/\u2212 and Thbs1\u2212/\u2212 mice for committed erythroid markers.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C6",
-      "C7",
-      "C67",
-      "C68",
-      "C81",
-      "C82",
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90"
+      "C59",
+      "C60",
+      "C78",
+      "C79",
+      "C80"
     ],
-    "result": "Cd47\u2212/\u2212 spleens show increased abundance of committed erythroid progenitors (Ter119+, expressing Epor, Ermap, Gypa, Aqp1) spanning CD34+ progenitors through reticulocytes, while Thbs1\u2212/\u2212 spleens show depletion of these committed markers but depletion of Sca1+ multipotent progenitors in Cd47\u2212/\u2212 spleens.",
+    "result": "Cd47\u2212/\u2212 spleen cells show increased proliferation as measured by low Ki67 expression in both Ter119+ and Ter119\u2212 populations, suggesting that loss of CD47 but not Thbs1 increases proliferation of committed erythroid precursors.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6-C7 and C67-C90 are strongly supported by flow cytometry data (Figure 1B-R) with reported p-values indicating statistical significance. The data consistently show opposing effects of CD47 and thrombospondin-1 loss on committed erythroid progenitors, with appropriate statistical testing and multiple markers examined.",
+    "evaluation": "Claims C59-C60 and C78-C80 are supported by flow cytometry data (Figures 1E, 2C-D) showing statistically significant increases in Ki67lo cells in Cd47\u2212/\u2212 mice (p=0.0024 vs WT, p=0.0003 vs Thbs1\u2212/\u2212). The inference in C80 is reasonable based on the proliferation marker data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Alterations in erythroid marker expression (Epor, Ermap, Gypa, Aqp1) in Cd47\u2212/\u2212 and Thbs1\u2212/\u2212 spleens are restricted to Ter119+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by flow cytometry data in Figures 1K-R showing that most cells expressing these markers are Ter119+ and that genotype-dependent differences are observed only in the Ter119+ population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C61"
+    ],
+    "result": "A higher percentage of Cd47\u2212/\u2212 cells are Ter119+cKit+, while Ter119\u2212cKit+ cells are elevated in Thbs1\u2212/\u2212 spleens, with overall cKit+ cells higher only in Thbs1\u2212/\u2212 spleens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C76-C77 are supported by flow cytometry data in Figures 1F and 2A. The data resolve the apparent discrepancy between total cKit expression and its distribution across Ter119+ and Ter119\u2212 populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Loss of CD47 upregulates both early Ter119\u2212CD34+ progenitors and more mature Ter119+CD34\u2212 progenitors, with most increased proliferation occurring in the Ter119+CD34\u2212 subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by flow cytometry data in Figures 2E-G showing the distribution of CD34+ cells across Ter119+ and Ter119\u2212 populations and Ki67 expression patterns. The data provide clear evidence for CD47-dependent regulation of both early and committed progenitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Bulk RNA sequencing of lineage-depleted Cd47\u2212/\u2212 spleen cells shows elevated expression of erythropoietic genes including Trim10 (50-fold), Mki67, Gata1, Kit, and Xpo1, but not multipotent progenitor markers (Anpep, Cd33, Sca1, Gata2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C68-C73 are supported by bulk RNA-seq data presented in Table 1 and Figure 1\u2014figure supplement 1B-D. The data show statistically significant increases in committed erythroid markers but not multipotent markers, supporting preferential accumulation of committed progenitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Single-cell RNA sequencing reveals that Cd47\u2212/\u2212 cells are more abundant (65%) and Thbs1\u2212/\u2212 cells less abundant (15%) than WT cells (21%) in cluster 12, where erythroid differentiation correlates with increasing tSNE-2 scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by scRNA-seq data shown in Figures 3 and 4. The clustering analysis clearly identifies cluster 12 as enriched for erythroid markers, and the spatial distribution of differentiation markers supports the correlation with tSNE-2 scores.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In cluster 12, Cd47\u2212/\u2212 cells show significantly higher average mRNA expression of Tfrc, Ermap, Mki67 (p=9.2\u00d710\u22126), and Kit (p=0.0015), while Thbs1\u2212/\u2212 cells show significantly lower expression of Klf1, Aqp1, Epor, and Gata1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by scRNA-seq data in Figure 5A and Table 2 with appropriate statistical analysis. The violin plots and quantitative data provide strong evidence for genotype-dependent differential gene expression in the erythroid cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Xpo1 and Ranbp2 expression is higher in cluster 12 than cluster 14, with CD47-dependent expression of both genes in cluster 12 (higher in Cd47\u2212/\u2212 and Thbs1\u2212/\u2212 vs WT) but not in cluster 14, and this CD47-dependent expression is restricted to CD34\u2212 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by scRNA-seq data in Figures 4-5 and Tables 2. The cluster-specific and CD34-dependent expression patterns are clearly documented with statistical significance, supporting a role for exportin-1 in CD47-regulated erythropoiesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Mitochondrial-encoded genes Mt-Atp8, Mt-Nd3, Mt-Nd4l, Mt-Nd5, and Mt-Nd6 are significantly upregulated in Cd47\u2212/\u2212 cells in cluster 12, with some also increased in Thbs1\u2212/\u2212 cells, while other mitochondrial genes are decreased in Thbs1\u2212/\u2212 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by scRNA-seq data in Table 4 showing statistically significant differential expression of mitochondrial genes. This finding is consistent with known CD47/TSP1 regulation of mitochondrial homeostasis (cited references).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Reclustering analysis of cells expressing an erythroid gene signature confirms that Cd47\u2212/\u2212 cells are more abundant (271 cells) and Thbs1\u2212/\u2212 cells less abundant (58 cells) than WT cells (90 cells) in the erythroid cluster, with upregulation of erythrocyte lineage markers coinciding with Cd47\u2212/\u2212 cell abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by reclustering analysis shown in Figures 6-7. The module scoring approach and subsequent clustering validate the initial findings and confirm increased extramedullary erythropoiesis in Cd47\u2212/\u2212 mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Expression of genes associated with early erythropoiesis is elevated in both Cd47\u2212/\u2212 and Thbs1\u2212/\u2212 mice, consistent with the known role of CD47/thrombospondin-1 signaling in inhibiting multipotent stem cell transcription factors (Myc, Sox2, Oct4, Klf4) and regulating stem cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C43-C47 are supported by the current data showing elevated early markers and by citations to previous work (Kaur et al., 2013) demonstrating increased Sox2+ stem cells and multipotent transcription factors in both knockout strains. The consistency between studies strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
       "C8",
       "C9",
       "C10",
@@ -68,371 +220,85 @@
       "C13",
       "C14"
     ],
-    "result": "Loss of CD47 is associated with accumulation and increased proliferation of both Ter119\u2212CD34+ progenitors and Ter119+CD34\u2212 committed erythroid progenitors in spleen, with elevated expression of Kit, Ermap, and Tfrc.",
+    "result": "Cells expressing markers of committed erythroid progenitors (Ter119+CD34\u2212, Ter119\u2212CD34+) are more abundant in Cd47\u2212/\u2212 spleens but depleted in Thbs1\u2212/\u2212 spleens, with increased proliferation and elevated Kit, Ermap, and Tfrc expression in Cd47\u2212/\u2212 progenitors.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8-C14 are supported by single-cell RNA sequencing (Table 2, Figure 5) and flow cytometry data (Figure 2). Ki67 expression data demonstrate increased proliferation, and gene expression analysis shows elevated Kit, Ermap, and Tfrc mRNA levels with statistical significance reported.",
+    "evaluation": "Claims C6-C14 are supported by converging evidence from flow cytometry (Figures 1-2) and scRNA-seq (Tables 2, Figures 4-5) showing consistent patterns of committed progenitor accumulation in Cd47\u2212/\u2212 and depletion in Thbs1\u2212/\u2212 mice with appropriate statistical analysis.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R5",
+    "result_id": "R15",
     "claim_ids": [
-      "C103",
-      "C104",
       "C107",
       "C108",
       "C109",
       "C110",
       "C111"
     ],
-    "result": "Cd47\u2212/\u2212 spleens show specific enrichment of cKit+Ter119+ committed erythroid precursors with increased proliferation, while Thbs1\u2212/\u2212 spleens accumulate Ter119\u2212cKit+ early progenitors, demonstrating differential effects on erythroid progenitor populations.",
+    "result": "Thrombospondin-1-stimulated CD47 signaling limits early erythropoiesis in WT spleen, while thrombospondin-1 and CD47 have opposing roles in regulating SIRP\u03b1-dependent RBC turnover, resulting in anemic stress and committed progenitor abundance decreasing in the order Cd47\u2212/\u2212>WT>Thbs1\u2212/\u2212.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C103-C111 are supported by flow cytometry data (Figure 2A-D) showing differential distribution of cKit and Ter119 markers and Ki67 proliferation marker across genotypes. The data demonstrate CD47-specific versus thrombospondin-1-specific effects on different progenitor populations with appropriate statistical comparisons.",
+    "evaluation": "Claims C107-C111 represent the main conclusions synthesizing all experimental data. They are well-supported by the comprehensive flow cytometry and scRNA-seq data, and are consistent with known biology of CD47/SIRP\u03b1 (phagocytosis inhibition) and CD47/TSP1 (stem cell regulation) pathways.",
     "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C112",
-      "C113",
-      "C114",
-      "C115",
-      "C116",
-      "C117",
-      "C118"
-    ],
-    "result": "Loss of CD47 upregulates both early Ter119\u2212CD34+ progenitors and more mature Ter119+CD34\u2212 progenitors (which have lost CD34 expression), with most increased proliferation occurring in the Ter119+CD34\u2212 subset, indicating roles for both populations in mediating increased extramedullary erythropoiesis.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C112-C118 are supported by flow cytometry data (Figure 2E-G) showing CD34 and Ter119 co-expression patterns and Ki67 proliferation analysis. The data clearly demonstrate that both early and mature progenitor populations contribute to the phenotype, with quantitative evidence for proliferation differences.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C119",
-      "C120",
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C131",
-      "C132"
-    ],
-    "result": "Single-cell RNA sequencing analysis of cluster 12 reveals that Cd47\u2212/\u2212 cells are more abundant (65% vs 21% WT) and show higher expression of Tfrc, Ermap, and Mki67, while Thbs1\u2212/\u2212 cells are less abundant (15%) with lower expression of Klf1, Aqp1, Epor, and Gata1, with erythroid differentiation correlating with increasing TSNE-2 scores.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C119-C132 are supported by single-cell RNA sequencing data (Table 2, Figure 4, Figure 5A) with statistical significance reported (e.g., p=9.2\u00d710\u22126 for Mki67). The spatial distribution analysis and violin plots provide strong evidence for differential gene expression patterns across genotypes within the erythroid cluster.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C133",
-      "C134",
-      "C135",
-      "C136",
-      "C137",
-      "C138",
-      "C63",
-      "C64",
-      "C65",
-      "C66"
-    ],
-    "result": "Xpo1 expression is significantly elevated in both Cd47\u2212/\u2212 and Thbs1\u2212/\u2212 cells in cluster 12 but not in cluster 14, with CD47-dependent expression restricted to CD34\u2212 cells. Xpo1 is a Gata1 transcriptional target that promotes terminal erythroid differentiation by maintaining nuclear Gata1.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C133-C138 and C63-C66 are supported by single-cell RNA sequencing data (Table 2, Figure 4\u2014source data 2, Figure 5A-B) and cite established knowledge (Guillem et al., 2020; Kaur et al., 2022). The CD34-specific expression pattern is clearly demonstrated, and the mechanistic link to Gata1 is well-established in the literature.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C140",
-      "C141",
-      "C142"
-    ],
-    "result": "Nr3c1 (a marker of adult definitive erythropoiesis) and Ddx46 (required for hematopoietic stem cell differentiation) show increased percentages of positive cells and significantly increased average expression in both Cd47\u2212/\u2212 and Thbs1\u2212/\u2212 cells in cluster 12.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C140-C142 are supported by single-cell RNA sequencing data (Figure 4\u2014source data 1, Table 2) and cite established knowledge about these markers (Kingsley et al., 2013; Hirabayashi et al., 2013). The data show consistent upregulation in both knockout genotypes, suggesting a shared pathway effect.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C143",
-      "C144",
-      "C145"
-    ],
-    "result": "Mitochondrial-encoded genes (Mt-Atp8, Mt-Nd3, Mt-Nd4l, Mt-Nd5, Mt-Nd6) are among the most significantly upregulated genes in Cd47\u2212/\u2212 cells in cluster 12, with some also increased in Thbs1\u2212/\u2212 cells, while other mitochondrial genes are decreased in Thbs1\u2212/\u2212 cells.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C143-C145 are supported by single-cell RNA sequencing data (Table 4) and are consistent with known CD47/TSP1 regulation of mitochondrial homeostasis (cited references). The differential effects on mitochondrial genes between genotypes are clearly documented with statistical significance.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C146",
-      "C147",
-      "C148",
-      "C149"
-    ],
-    "result": "Reclustering analysis confirms that Cd47\u2212/\u2212 cells are more abundant (271 vs 90 WT) and Thbs1\u2212/\u2212 cells less abundant (58) in the erythroid cluster, with upregulation of erythrocyte lineage markers coinciding with increased Cd47\u2212/\u2212 cell abundance. Expression of Ermap, Klf1, and Aqp1 in 20-30% of T cells is consistent with previous reports.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C146-C149 are supported by reclustered single-cell RNA sequencing data (Figure 6, Figure 7) and cite previous reports of erythroid marker expression in T cell subsets (Moon et al., 2004; Su et al., 2021; Teruya et al., 2018). The reclustering validates the initial unsupervised clustering and confirms the main findings.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C150",
-      "C151",
-      "C152",
-      "C153",
-      "C158"
-    ],
-    "result": "The data support that thrombospondin-1-stimulated CD47 signaling limits early erythropoiesis in WT mouse spleen, while thrombospondin-1 and CD47 have opposing roles in regulating SIRP\u03b1-dependent RBC turnover. Increased anemic stress in Cd47\u2212/\u2212 spleen increases extramedullary erythropoiesis, while decreased RBC turnover in Thbs1\u2212/\u2212 spleen suppresses it, with anemic stress and committed progenitor abundance decreasing in the order Cd47\u2212/\u2212>WT>Thbs1\u2212/\u2212.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C150-C153 and C158 represent the main conclusions drawn from the experimental data. These are well-supported by the comprehensive flow cytometry, bulk RNA-seq, and single-cell RNA-seq data presented throughout the manuscript. The opposing roles of CD47 and thrombospondin-1 are consistently demonstrated across multiple experimental approaches.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C15",
-      "C16",
-      "C17",
-      "C154",
-      "C155",
-      "C156",
-      "C157"
-    ],
-    "result": "CD47 functions to limit phagocytic removal of aged erythrocytes, while loss of thrombospondin-1 delays RBC turnover, which may account for suppression of committed erythroid precursors in Thbs1\u2212/\u2212 spleens. These findings are consistent with reported increased RBC turnover in Cd47\u2212/\u2212 mice and decreased turnover in Thbs1\u2212/\u2212 mice.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C15-C17 and C154-C157 are supported by established knowledge and cite previous work (Wang et al., 2020; Kim et al., 2018; Oldenborg et al., 2000). The current data are consistent with these prior findings, and the mechanistic link between RBC turnover and erythropoietic demand is logical and well-supported.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C18",
-      "C98",
-      "C99",
-      "C164",
-      "C168"
-    ],
-    "result": "The studies reveal a thrombospondin-1-dependent basal level of extramedullary erythropoiesis in adult mouse spleen, with data consistent with increased extramedullary erythropoiesis in Cd47\u2212/\u2212 and suppressed extramedullary erythropoiesis in Thbs1\u2212/\u2212 spleens. Physiological levels of thrombospondin-1 are necessary to support this basal level.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C18, C98-C99, C164, and C168 represent a novel finding of the study. The presence of erythroid precursors in WT spleen (though less abundant than in Cd47\u2212/\u2212 spleen) and their depletion in Thbs1\u2212/\u2212 spleen provide strong evidence for a basal level of extramedullary erythropoiesis that is thrombospondin-1-dependent.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C48",
-      "C49",
-      "C50",
-      "C51"
-    ],
-    "result": "Spleen enlargement was confirmed in Cd47\u2212/\u2212 mice but not observed in Thbs1\u2212/\u2212 mice, with Cd47\u2212/\u2212 mice showing significantly higher total spleen cell numbers after RBC lysis compared to both WT and Thbs1\u2212/\u2212 mice.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C48-C51 are supported by experimental observations (Figure 1\u2014figure supplement 1A, Figure 1A) and cite previous reports of splenomegaly in Cd47\u2212/\u2212 mice (Bian et al., 2016; Nath et al., 2018). The quantitative cell count data provide clear evidence for the phenotype.",
-    "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62"
+      "C15",
+      "C16",
+      "C17",
+      "C18"
     ],
-    "result": "Lineage-depleted Cd47\u2212/\u2212 spleen cells show 50-fold elevation of Trim10 (an erythroid-specific RING finger protein required for terminal differentiation), higher Mki67 suggesting increased proliferation, elevated Gata1 (major erythroid transcription factor), and increased Kit but not other multipotent progenitor markers, suggesting preferential accumulation of committed rather than multipotent erythroid progenitors.",
+    "result": "The induction of committed erythroid precursors in Cd47\u2212/\u2212 spleens is consistent with CD47's known function to limit phagocytic removal of aged erythrocytes, while loss of thrombospondin-1 delays RBC turnover, accounting for suppression of committed precursors in Thbs1\u2212/\u2212 spleens and revealing a thrombospondin-1-dependent basal level of extramedullary erythropoiesis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C55-C62 are supported by bulk RNA sequencing data (Table 1) and cite established knowledge about gene functions (Harada et al., 1999; Guti\u00e9rrez et al., 2020). The differential expression pattern clearly supports the conclusion of committed progenitor accumulation.",
+    "evaluation": "Claims C15-C18 integrate the current findings with established knowledge about CD47/SIRP\u03b1 function (C15, supported by citations) and TSP1-dependent RBC turnover (C16, Wang et al., 2020). The mechanistic inference (C17) and conclusion about basal erythropoiesis (C18) are reasonable given the data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74",
-      "C75"
+      "C115",
+      "C116"
     ],
-    "result": "Flow cytometry analysis shows CD34 expressed at significantly higher percentages on Cd47\u2212/\u2212 cells versus WT (p=0.0008) and Thbs1\u2212/\u2212 cells (p=0.0001), while Sca1 was expressed in smaller percentages of Cd47\u2212/\u2212 versus WT (p=0.0001) and Thbs1\u2212/\u2212 cells (p=0.0009). Ki67 at low levels was higher in Cd47\u2212/\u2212 cells versus WT (p=0.0024) and Thbs1\u2212/\u2212 cells (p=0.0003).",
+    "result": "A low basal level of extramedullary erythropoiesis occurs in healthy WT mouse spleen, and physiological levels of thrombospondin-1 are necessary to support this basal erythropoiesis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C70-C75 are supported by flow cytometry data (Figure 1C-E) with reported p-values indicating statistical significance. The data are consistent with the overall finding of committed progenitor accumulation and increased proliferation in Cd47\u2212/\u2212 spleens.",
+    "evaluation": "Claims C115-C116 are supported by the detection of erythroid precursors in WT spleen (though less abundant than Cd47\u2212/\u2212) and the depletion of committed precursors in Thbs1\u2212/\u2212 mice. This represents a novel finding challenging the assumption in C1 that extramedullary erythropoiesis does not occur in healthy adults.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C91",
-      "C92",
-      "C93",
-      "C94",
-      "C95"
+      "C74",
+      "C75"
     ],
-    "result": "Erythropoietin binding to Epor stimulates survival, proliferation, and differentiation by inducing Tal1, Gata1, and Klf1. These mRNAs were strongly upregulated in Cd47\u2212/\u2212 spleens, consistent with significant increases in Epor+Ter119+ Cd47\u2212/\u2212 cells and decreases in Thbs1\u2212/\u2212 cells.",
+    "result": "Exportin-1 is a Gata1 transcriptional target that promotes terminal erythroid differentiation by maintaining Gata1 in the nucleus, suggesting a potential mechanism for CD47-dependent regulation of erythropoiesis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C95 combine established knowledge (Perreault and Venters, 2018) with experimental data (Table 1, Figure 1K). The consistency between gene expression and protein-level flow cytometry data strengthens the conclusion about erythropoietin-responsive cells.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C74-C75 cite established knowledge (Guillem et al., 2020) and connect it to the current finding of increased Xpo1 expression in Cd47\u2212/\u2212 cells (C73, C97). The mechanistic link is reasonable but remains speculative without direct functional validation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C96",
-      "C97"
+      "C112",
+      "C113"
     ],
-    "result": "Epor expression was minimal and unchanged in the Ter119\u2212 population, indicating that the Ter119 antigen is expressed in erythroid precursors that are responsive to erythropoietin.",
+    "result": "Previous studies showed that bone marrow from irradiated Cd47\u2212/\u2212 mice exhibited more CFU-E and BFU-E progenitors than irradiated WT mice, with loss of CD47 providing intrinsic protection of hematopoietic stem cells from genotoxic stress, possibly through increased autophagy.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C96-C97 are supported by flow cytometry data (Figure 1O). The inference that Ter119+ cells are erythropoietin-responsive is logical based on the co-expression pattern, though this is an indirect conclusion.",
+    "evaluation": "Claims C112-C113 accurately cite previous work (Maxhimer et al., 2009; Soto-Pantoja et al., 2012) and are used to provide context for the current findings. The citations are appropriate and the claims are accurately represented.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R20",
-    "claim_ids": [
-      "C100",
-      "C101",
-      "C102"
-    ],
-    "result": "The Ter119 antibody recognizes an antigen highly expressed in mouse proerythroblasts through mature erythrocytes, but its epitope does not map to a specific protein and requires 9-O-acetylation of sialic acids present on several RBC glycoproteins.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C100-C102 are established knowledge supported by cited references (Kina et al., 2000; Mahajan et al., 2019). This information provides important context for interpreting the Ter119 staining results.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R21",
-    "claim_ids": [
-      "C105",
-      "C106"
-    ],
-    "result": "Sca1+ cells in spleen did not differ in Ter119+ cells among genotypes but were less abundant in Ter119\u2212 cells from Cd47\u2212/\u2212 spleens relative to WT.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C105-C106 are supported by flow cytometry data (Figure 2B) and are consistent with bulk RNA sequencing data. This finding supports the conclusion that multipotent progenitors are depleted while committed progenitors accumulate in Cd47\u2212/\u2212 spleens.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R22",
-    "claim_ids": [
-      "C159",
-      "C160",
-      "C161"
-    ],
-    "result": "Bone marrow from Cd47\u2212/\u2212 mice subjected to ionizing radiation exhibited more CFU-E and BFU-E progenitors compared to irradiated wildtype mice. Loss of CD47 results in intrinsic protection of hematopoietic stem cells from genotoxic stress, which may be mediated by increased protective autophagy.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C159-C161 cite previous work (Maxhimer et al., 2009; Soto-Pantoja et al., 2012) and provide context for the current findings. The autophagy mechanism (C161) is speculative but supported by the cited reference. This represents prior work rather than new findings from the current study.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
-      "C162",
-      "C163",
-      "C165",
-      "C166",
-      "C167",
-      "C169",
-      "C170"
-    ],
-    "result": "The properties of erythroid precursors in Cd47\u2212/\u2212 spleens are consistent with stress-induced extramedullary erythropoiesis. Cd47\u2212/\u2212 spleen contains more abundant Ter119+ erythroid precursors that are more proliferative and express multiple committed markers, while Ter119+CD34\u2212 cells are depleted in Thbs1\u2212/\u2212 spleen. Both Thbs1\u2212/\u2212 and Cd47\u2212/\u2212 spleens contain more early erythroid precursors than WT, with Ter119\u2212Kit+ cells accumulating in Thbs1\u2212/\u2212 spleen.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C162-C163, C165-C167, C169-C170 synthesize the experimental findings and compare them to previous studies (Delic et al., 2020; Thompson et al., 2010; Kaur et al., 2013). The data consistently support these conclusions across multiple experimental approaches.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R24",
-    "claim_ids": [
-      "C171",
-      "C172"
-    ],
-    "result": "Early progenitors express CD45R, and inclusion of this antibody in the negative selection cocktail should deplete early progenitors from the populations used for RNAseq analyses.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C171-C172 represent established knowledge (C171) and a logical inference about the experimental method (C172). This provides important context for interpreting the RNA sequencing results and explains why early progenitors may be underrepresented in the lineage-depleted populations.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R25",
-    "claim_ids": [
-      "C173",
-      "C174"
-    ],
-    "result": "Reclustering analysis confirmed that erythropoietic markers are expressed in minor T cell populations, which also showed CD47-dependent gene expression changes.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C173-C174 are supported by single-cell RNA sequencing data from the reclustered analysis (Figure 7, Table 5) and cite previous reports of erythroid marker expression in T cells. This finding is important for interpreting the bulk and single-cell data and highlights the complexity of marker expression patterns.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R26",
-    "claim_ids": [
-      "C175",
-      "C176",
-      "C177",
-      "C178",
-      "C179"
-    ],
-    "result": "Therapeutic CD47 antibodies have entered clinical trials for cancer treatment, but anemia from loss of CD47-dependent inhibitory SIRP\u03b1 signaling has been a frequent side effect. These antibodies recognize CD47 on RBCs and sensitize them to removal, which would induce erythropoiesis. The CD47-dependent erythroid markers identified may be useful biomarkers for assessing hematologic side effects.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C175-C176 are established knowledge (Kaur et al., 2020). Claims C177-C178 are logical inferences about therapeutic mechanisms. Claim C179 is speculative about potential applications. While the translational relevance is plausible, no data are presented to validate these markers as biomarkers in clinical settings, making this uncertain.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R27",
     "claim_ids": [
       "C19",
       "C20",
@@ -448,7 +314,18 @@
       "C30",
       "C31",
       "C32",
-      "C33",
+      "C33"
+    ],
+    "result": "CD47 functions as a counter-receptor for SIRP\u03b1 and as part of a thrombospondin-1 signaling complex, with CD47/SIRP\u03b1 interaction inhibiting phagocytosis of RBCs and CD47 clustering on aged RBCs enhanced by thrombospondin-1 binding, while Thbs1\u2212/\u2212 RBCs show limited CD47 clustering and increased lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C33 accurately cite established knowledge from multiple references about CD47 function, structure, and regulation. These provide essential background for interpreting the current findings and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
       "C34",
       "C35",
       "C36",
@@ -457,21 +334,25 @@
       "C39",
       "C40",
       "C41",
-      "C42",
-      "C43",
-      "C76",
-      "C77",
-      "C78",
-      "C79",
-      "C80",
-      "C83",
-      "C139"
+      "C42"
     ],
-    "result": "Background information on CD47 and thrombospondin-1 signaling, RBC biology, hematopoiesis, and established functions of various markers.",
+    "result": "Background on hematopoiesis: liver and spleen are embryonic hematopoietic organs, bone marrow assumes this role after birth, extramedullary hematopoiesis can compensate for bone marrow compromise, and CD47/SIRP\u03b1 interactions are important in stress erythropoiesis and RBC clearance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "These claims (C19-C43, C76-C77, C79-C80, C83, C139) represent established knowledge supported by cited references. They provide essential background context for interpreting the experimental findings but do not represent new results from this study.",
+    "evaluation": "Claims C34-C42 accurately cite established knowledge from multiple references providing context for the study. The citations are appropriate and the background information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The properties of erythroid precursors accumulating in Cd47\u2212/\u2212 spleens are consistent with previous studies of stress-induced extramedullary erythropoiesis in malaria or trypanosome infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 makes a reasonable comparison to previous studies (Delic et al., 2020; Thompson et al., 2010) based on the marker expression patterns observed. The comparison is appropriate given the similar markers used (Ermap, Gypa, Epor, etc.).",
     "result_type": "MINOR"
   }
 ]

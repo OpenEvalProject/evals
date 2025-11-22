@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C4"
+    ],
+    "result": "Deletion of non-core RAG regions (Rag1c/c and Rag2c/c) results in more aggressive BCR-ABL1+ B-ALL with reduced survival, increased leukemia burden, enhanced proliferation, and reduced apoptosis compared to full-length RAG (Ragf/f).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide converging evidence from survival analysis (C33, C34), leukemia burden measurements (C35), cell cycle analysis (C36), and apoptosis assays (C37) that collectively support the conclusion (C38, C4) of a more aggressive disease phenotype in Ragc/c mice. The data are internally consistent and appropriately analyzed with statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ragc/c leukemic cells are arrested at the large pre-B-cell stage with oligoclonal VH rearrangements, while Ragf/f cells show more differentiation with polyclonal rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by flow cytometry data (C39-C42) and genomic PCR analysis (C43-C44) showing developmental arrest and clonal restriction in Ragc/c cells. The inference that this represents selection pressure (C45-C46) is reasonable given the data, though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C103",
+      "C95",
+      "C94"
+    ],
+    "result": "RAG proteins are expressed and active in BCR-ABL1+ B-ALL cells, with upregulated expression of Rag1c/c and Rag2c/c compared to full-length RAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by Western blotting (C47-C48) and functional V(D)J recombination assays (C49). The upregulation of truncated RAG proteins (C48, C95, C103) is demonstrated by quantitative Western blot analysis, and RAG activity is confirmed by in vitro assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Ragc/c leukemic cells exhibit elevated \u03b3-H2AX levels, indicating increased DNA damage and genomic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is directly supported by flow cytometry data showing elevated \u03b3-H2AX in Rag1c/c and Rag2c/c cells. The inference that this indicates increased structural variants (C52-C53) is reasonable given that \u03b3-H2AX is an established marker of DNA double-strand breaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C5",
+      "C77"
+    ],
+    "result": "Rag1c/c cells exhibit the highest frequency of structural variations (6-9 per sample), Rag2c/c cells show moderate SVs (1-4 per sample), and Ragf/f cells have low SVs (0-1 per sample).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by genome-wide sequencing data with appropriate filtering criteria for RAG-mediated events. The sample sizes are small (n=2-3 per genotype based on Figure 4) but the differences are substantial and consistent. The inference of elevated off-target recombination (C57, C5, C77) follows logically from the SV data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Off-target recombination breakpoints are distributed across gene bodies and regulatory regions, with significantly reduced P and N nucleotide frequencies at off-target sites compared to normal V(D)J recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C60-C61 are supported by genomic analysis of breakpoint locations and junction sequences. The inference that reduced P/N frequency indicates divergence from classical V(D)J repair (C62) is reasonable, though alternative explanations are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C81",
+      "C82"
+    ],
+    "result": "Hybrid joints are highly prevalent in Ragc/c leukemic cells (93-100%), suggesting that non-core RAG regions suppress harmful transposition events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by junction analysis data. The inference that non-core regions suppress hybrid joint formation (C64, C82) is reasonable given the dramatic difference between Ragf/f (0%) and Ragc/c (93-100%), though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C6"
+    ],
+    "result": "Rag1c/c leukemic cells harbor significantly more cancer-related genes affected by structural variations, correlating with the most aggressive leukemia phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by analysis using the COSMIC Cancer Gene Census database. The correlation with aggressive phenotype (C66) is a reasonable inference given the survival and disease burden data, though causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C7",
+      "C78"
+    ],
+    "result": "RAG cleavage accuracy is reduced in Ragc/c cells, with cleavage sites shifting from CACA (Ragf/f) to CAC (Ragc/c), broadening the spectrum of off-target substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by sequence logo analysis of cleavage sites. The inference that this represents decreased cleavage accuracy (C7, C78) and broadened substrate specificity (C70) is reasonable, though the functional significance of the one-nucleotide difference requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C8",
+      "C79"
+    ],
+    "result": "Rag1c/c cells produce predominantly smaller off-target recombinations (<10,000 bp), while Ragf/f and Rag2c/c cells produce larger recombinations (>10,000 bp), suggesting the non-core RAG1 region influences recombination size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by analysis of recombination sizes. The inference that RAG1's non-core region influences recombination extent (C73-C75) is reasonable given the specific difference in Rag1c/c versus Rag2c/c, though the mechanism is not established. The connection to increased off-target frequency (C75) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C104"
+    ],
+    "result": "High RAG expression correlates with low survival in pediatric acute lymphoid leukemia patients from the TARGET cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is based on survival analysis of the TARGET cohort shown in Figure 3\u2014figure supplement 2. However, the p-value is 0.0723 (not significant at p<0.05), and the sample size for the RAG1 upregulated group is very small (n=8 vs n=146). The claim of a relationship is overstated given the lack of statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Variations in the NHEJ repair pathway exist among leukemic cells from different genetic backgrounds, potentially contributing to increased hybrid joint formation in Ragc/c cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is supported by RNA-seq data, but the specific genes and magnitude of changes are not detailed in the main text. The inference of aberrant DNA repair pathway expression (C90) and its connection to hybrid joint formation (C91) is speculative without functional validation or more detailed pathway analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C96"
+    ],
+    "result": "RAG1 non-core region deletion results in more severe off-target V(D)J recombination than RAG2 non-core region deletion, attributed to RAG1's zinc-binding motifs and ubiquitin ligase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by the SV data showing higher frequency in Rag1c/c (6-9 per sample) versus Rag2c/c (1-4 per sample). The mechanistic explanation (C93) is based on established knowledge from cited literature. The conclusion (C96) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Mechanistic speculation about how RAGc/c PSCs may promote hybrid joint formation through altered stability or recruitment capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 are explicitly speculative (using terms like \"could,\" \"conceivable,\" \"may\") and represent hypotheses about mechanisms rather than demonstrated results. While grounded in cited literature (C83, C85, C86), these remain untested hypotheses in the context of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Over 90% of junctions in Ragc/c cells are hybrid joints, exceeding previous reports, suggesting NHEJ pathway deficiencies contribute to chromosomal instability and lymphomagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by the junction analysis data. The inference about NHEJ deficiencies (C88) is reasonable given the RNA-seq data showing pathway variations, though the causal connection is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "RAG-mediated off-target recombination in BCR-ABL1+ B-ALL represents secondary events promoting 'leukemia to aggressive leukemia' transition, analogous to but distinct from the 'pre-leukemia to leukemia' transition in ETV6-RUNX1 ALL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 establish the context from prior literature. Claims C100-C101 present a reasonable conceptual framework for understanding the role of off-target recombination in BCR-ABL1+ B-ALL progression. Claim C102 shows consistency with prior work. The model is supported by the data showing increased SVs correlating with more aggressive disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C80",
+      "C76"
+    ],
+    "result": "The non-core RAG regions, particularly RAG1's non-core region, play a crucial role in maintaining V(D)J recombination precision and genomic stability in BCR-ABL1+ B-ALL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion (C9, C80) synthesizing all experimental findings. It is well-supported by the convergent evidence from survival studies, SV analysis, cleavage accuracy assessment, and recombination size analysis. The emphasis on RAG1's non-core region is justified by the more severe phenotype in Rag1c/c versus Rag2c/c mice.",
+    "result_type": "MAJOR"
+  }
+]

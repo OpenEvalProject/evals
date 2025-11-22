@@ -1,0 +1,2324 @@
+{
+  "submission": {
+    "id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-22T00:36:19.431514Z",
+    "updated_at": "2025-11-22T00:36:19.431514Z"
+  },
+  "content": [
+    {
+      "id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "content_type": "manuscript",
+      "content_text": "# What fraction of cellular DNA turnover becomes cfDNA?\n\n## Authors\n\n- Ron Sender<sup>1</sup> ([ORCID: 0000-0002-1165-9818](https://orcid.org/0000-0002-1165-9818))\n- Elad Noor<sup>1</sup> ([ORCID: 0000-0001-8776-4799](https://orcid.org/0000-0001-8776-4799))\n- Ron Milo<sup>1</sup> ([ORCID: 0000-0003-1641-2299](https://orcid.org/0000-0003-1641-2299)) \u2020\n- Yuval Dor<sup>2</sup> ([ORCID: 0000-0003-2456-2289](https://orcid.org/0000-0003-2456-2289)) \u2020\n\n### Affiliations\n\n1. Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))\n2. Department of Developmental Biology and Cancer Research, Institute for Medical Research Israel Canada, the Hebrew University-Hadassah Medical School Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell-free DNA (cfDNA) tests use small amounts of DNA in the bloodstream as biomarkers. While it is thought that cfDNA is largely released by dying cells, the proportion of dying cells' DNA that reaches the bloodstream is unknown. Here, we integrate estimates of cellular turnover rates to calculate the expected amount of cfDNA. By comparing this to the actual amount of cell type-specific cfDNA, we estimate the proportion of DNA reaching plasma as cfDNA. We demonstrate that <10% of the DNA from dying cells is detectable in plasma, and the ratios of measured to expected cfDNA levels vary a thousand-fold among cell types, often reaching well below 0.1%. The analysis suggests that local clearance, presumably via phagocytosis, takes up most of the dying cells' DNA. Insights into the underlying mechanism may help to understand the physiological significance of cfDNA and improve the sensitivity of liquid biopsies.\n\n## Introduction\n\nThe human body is in a constant state of cellular turnover, with an estimated 0.3x1012 cells being replaced daily, two-thirds of which are erythrocytes (Sender and Milo, 2021). Apoptosis is the primary mechanism of cell death in tissues with rapid turnover, in which cells are disposed of orderly and engulfed by phagocytic cells to recycle their resources.\n\nApoptosis involves the fragmentation of DNA through two distinct mechanisms. The first mechanism occurs within the apoptotic cell, where endonucleases break down chromatin into nucleosomal units. The second mechanism is carried out by phagocytic cells, which engulf and degrade the DNA of apoptotic cells in order to prevent the release of potentially immunogenic intracellular materials (Nagata, 2005).\n\nIt has been known since the late 1940s that cell-free DNA (cfDNA) fragments can be found in the circulation of healthy and diseased individuals (Mandel and Metais, 1948; Bendich et al., 1965). The fragments are typically nucleosome-size (165 base pairs), likely representing molecules that were not completely degraded during the process of cell death. With the advent of next-generation sequencing (NGS), cfDNA has become a clinically useful biomarker for various applications. These include non-invasive prenatal testing (via detection of fetal chromosomal abnormalities via sampling of maternal cfDNA), cancer monitoring (via detection of oncogenic mutations in plasma, termed circulating tumor DNA [ctDNA]), and monitoring of allogeneic organ transplants (via detection of donor-derived SNPs in cfDNA)(Heitzer et al., 2019). Perhaps, the greatest promise of cfDNA is in cancer diagnostics \u2013 a blood test that can allow early detection at an actionable stage, real-time assessment of treatment response, detection of recurrence, and identification of specific genetic mutations to inform treatment decisions (Jamshidi et al., 2022; Wan et al., 2017).\n\nRegardless of somatic mutations, the mere presence of cfDNA from a given tissue is of great value as it often correlates with tissue-specific injury (Lehmann-Werman et al., 2016; Gala-Lopez et al., 2018; Lehmann-Werman et al., 2018; Zemmour et al., 2018; Heitzer et al., 2020). Multiple layers of epigenetic information allow the inference of the tissue origins of cfDNA. For example, the size, fragmentation patterns, and exact end position of cfDNA fragments, nucleosome positions reflected in the relative abundance of promoter sequences, and histone modification patterns all allow tracing cfDNA molecules to their tissue origin (Moss et al., 2018; Oberhofer et al., 2022; Zhou et al., 2022; Lo et al., 2021). One particularly sensitive approach is using DNA methylation patterns, a stable determinant of cell identity preserved on cfDNA. Deconvolution of cfDNA methylomes using a reference atlas of human cell-type-specific methylomes has revealed various tissues' relative and absolute contribution to cfDNA in health and disease. Under baseline conditions, over 90% of cfDNA originates in blood cells (neutrophils, megakaryocytes, monocytes, lymphocytes, and erythroblasts), with vascular endothelial cells and hepatocytes being the only solid tissue source (Loyfer et al., 2023). In both homeostatic and pathologic conditions, the exact mechanism by which cfDNA is released is not fully understood but is thought to involve cell death. Whether cfDNA can be released from cells that remain alive after the event is controversial (Stroun et al., 2001). Two striking examples of such a scenario are megakaryocytes and erythroblasts, whose physiological function is to release anuclear cells, namely platelets and erythrocytes (Moss et al., 2022).\n\nFrom a practical perspective, the amount of cfDNA (typically ~1000 genome equivalents per ml of plasma) is a major barrier to a sensitive diagnosis of diseases \u2013 particularly cancer \u2013 at an early stage. Beyond maximization of the volume of blood drawn and the number of markers tested in parallel, understanding and eventually manipulating the local release and systemic clearance of cfDNA hold great potential for improving the sensitivity of tests. For example, recent studies have suggested pharmacologic approaches for blocking the removal of cfDNA from the systemic circulation, leading to a transient elevation in cfDNA concentration (Tabrizi et al., 2023). The efficiency and determinants of local cfDNA release to circulation have not been examined.\n\nIn this study, we use recent estimates of cellular turnover rates (Sender and Milo, 2021) to calculate the expected amount of DNA resulting from cell death from each cell type at a given time. By comparing this to the amount of cell type-specific cfDNA present in the plasma, taking into account estimates of systemic cfDNA clearance rate, we estimate the fraction of DNA that reaches the plasma as cfDNA.\n\n## Results\n\nBased on atlases of human cell-type-specific methylation signatures, Moss et al. and Loyfer et al. analyzed the main cell types contributing to plasma cfDNA. They found the primary sources of plasma cfDNA to be blood cells: granulocytes, megakaryocytes, macrophages, and/or monocytes (the signature could not differentiate between the last two), lymphocytes, and erythrocyte progenitors. Other cells that had detectable contributions are endothelial cells and hepatocytes. Qualitatively, these cells represent most of the leading cell types in cellular turnover, as shown in Sender and Milo, 2021. Epithelial cells of the gastrointestinal tract, lung, kidney, bladder, and skin are other cell types that significantly contribute to cellular turnover. Dying cells in these tissues are shed into the gut lumen, the air spaces, the urine, or out of the skin (note that while DNA from gut, lung, and kidney epithelial cells can be found in stool, bronchoalveolar lavage, and urine, the fate of DNA from skin cells is not known). This arrangement may explain why DNA from these cell types is not represented in plasma cfDNA in healthy conditions. Therefore, it appears that cells with high cfDNA plasma levels are those with relatively high turnover that are not being shed out of the body.\n\nWe used the cellular turnover estimates of these cell types to calculate the potential amount of DNA discarded from each cell type. We derived the potential levels of cfDNA in the plasma (see Materials and methods). By comparing this data to the measured levels of cfDNA in plasma (Moss et al., 2018; Loyfer et al., 2023), we could calculate the fraction of potential DNA presented as cfDNA in the plasma, as illustrated in Figure 1. The results indicate that less than 4% of the DNA of dying cells reaches the plasma. The ratios of measured to expected cfDNA levels vary a thousand-fold, ranging from 1:30 (megakaryocytes and endothelial cells) to 1:3x104 (erythrocyte progenitors).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89321/elife-89321-fig1-v1.jpg)\n\n**Figure 1.:** Estimates for the DNA flux from homoeostatic cell turnover were made based on Sender and Milo, 2021 and converted to units of potential cfDNA plasma concentration (see Methods). Cell types are ordered by their estimated cellular turnover. Empty markers represent cell types being shed out of the body upon turnover. Observed levels of cfDNA (Moss et al., 2018; Loyfer et al., 2023) are shown for cell types found in the plasma, with labels depicting the ratio between potential and measured cfDNA concentrations. Circles, potential representation in cfDNA; diamonds, observed concentration of cfDNA. The assay\u2019s detection limit is presented by a gradient (from around ten genome equivalents for deconvolution assay to around one genome equivalent for targeted assays). Error bars represent the 95% confidence interval of the uncertainty, approximated by a lognormal distribution (see Materials and methods).\n\nIn general, around 1000 genome equivalents of cfDNA are found in the plasma in healthy individuals. The limit for detection of a cell type of specific origin depends on the assay in use. General essays using deconvolution have a sensitivity of around 1%, for example, ~10 genome equivalents (Loyfer et al., 2023). Targeted essays using markers for a specific cell type at a deep coverage can improve the sensitivity to around 0.1%, for example ~1, genome equivalent. The gradient in Figure 1 depicts this range of sensitivities. The low ratios of measured to potential cfDNA described for the mentioned cell types indicate that cells with lower cellular turnover, such as skeletal myocytes, adipocytes, and pancreatic beta cells, are not being detected in the plasma of healthy individuals because their plasma levels are lower than the sensitivities of existing essays. Notably, a comparison of potential cfDNA plasma levels of breast epithelial cells in healthy women to the limit of detection reveals the breast as an outlier. This might suggest that dying breast epithelial cells' local DNA utilization mechanism is extremely efficient.\n\n## Discussion\n\nIn this study, we report a surprising, dramatic discrepancy between the measured levels of cfDNA in the plasma and the potential DNA flux from dying cells. One hypothetical explanation for that discrepancy is the limited sensitivity of typical cfDNA assays to short DNA fragments, which may contribute a significant fraction of the overall cfDNA mass. Regular cfDNA analysis shows a size distribution concentrated around a length of 165 base pairs (bp). The sizes in ctDNA vary more, but most are longer than 100 bp (Alcaide et al., 2020; Udomruk et al., 2021). Recent studies suggested a significant fraction of single-strand ultrashort fragments (length of 25\u201360 bp; Cheng et al., 2022; Hisano et al., 2021). However, the total amount of DNA contained in these fragments is less than or comparable to that of the longer \u2018regular\u2019 nucleosome-protected cfDNA fragments (Cheng et al., 2022; Hisano et al., 2021), arguing against ultrashort fragments as a dominant explanation for the \u2018missing\u2019 cfDNA material. We integrated the estimate provided by Hisano et al. into our analysis as a modifying factor for both the total concentration and uncertainty of plasma cfDNA. Importantly, this incorporation did not alter the overall conclusions, as the discrepancy between the cfDNA plasma concentration and potential DNA flux remains on the same order of magnitude. We note that we cannot exclude the presence of abundant DNA fragments that are even shorter (e.g. 10 bp long) and are not measurable in cfDNA analysis. Thus, our formal conclusion is that only a small fraction of the DNA of dying cells appears as measurable cfDNA.\n\nAn alternative hypothetical explanation is that most DNA of dying enters the bloodstream but is rapidly degraded or taken up. Accounting for the tissue-specific DNA concentration found in the blood, we can estimate the half-life of cfDNA in the bloodstream in that case, based on the cellular turnover rate. This calculation suggests that the half-life of cfDNA in the bloodstream should be only a few seconds to a few minutes. However, previous research using various methods (mostly the decay of fetal cfDNA in maternal plasma after birth) has shown that the half-life of DNA in the bloodstream ranges from 15 to 120 min, orders of magnitude higher than this estimate suggest (Lo et al., 1999; Yao et al., 2016; Diehl et al., 2008; To et al., 2003). In addition, a systemic clearance mechanism cannot explain the differential representation of cfDNA from different cell types relative to their turnover rate.\n\nTherefore, the low fraction of DNA measured as cfDNA suggests that less than a few percent of the DNA from dying cells reaches the bloodstream. An unknown mechanism utilizes the rest with a tissue-specific efficiency. A potential explanation is that tissue-resident phagocytes are degrading the DNA after apoptosis, similar to what has been shown for extruded erythroblast nuclei (Yoshida et al., 2005). Studies in mice have revealed that lysosomal DNases in macrophages play a role in cleaving chromosomal DNA during apoptosis (McIlroy et al., 2000), as well as the degradation of erythroid nuclei in erythroblastic islands (Yoshida et al., 2005). The first DNA fragmentation occurs within the apoptotic cells, resulting in nucleosomal unit multiples of about 180 bp (Matassov et al., 2004). Therefore, up to 200 bp cfDNA fragments in plasma may indicate that phagocytes have not further degraded these fragments.\n\nOur current analysis focused on estimating plasma cfDNA concentration and cellular turnover in a cohort of healthy, relatively young individuals. The total plasma cfDNA concentrations were sourced from healthy individuals below 47 years, as reported by Meddeb et al., 2019. We use data analyzed based on plasma samples from healthy individuals to estimate the proportion of cfDNA originating from specific cell types (Loyfer et al., 2023). These values were then compared to the potential DNA flux resulting from homeostatic cellular turnover, estimated for reference healthy males aged between 20 and 30 (Sender and Milo, 2021). In our analysis, we considered various sources of uncertainty, including inter-individual variation, variability in the timing of sample collection, and analytical precision (Madsen et al., 2019; Meddeb et al., 2019). These factors collectively contributed to an uncertainty factor of less than 3. Importantly, this level of uncertainty does not alter our conclusion regarding the relatively small fraction of DNA present in plasma as cfDNA. Furthermore, we acknowledge that age and sex can impact total cfDNA concentration, as demonstrated by Meddeb et al., 2019, with potential variations of up to 30%. However, as the results of our analysis present a much larger difference, these effects do not change the conclusions drawn from our analysis. Nevertheless, age and health status may influence the proportion of cfDNA originating from specific cell types and their corresponding cellular turnover rates. Consequently, the ratios themselves may vary in the elderly population or individuals with underlying health conditions.\n\nA comparison between the different types of cells shows a trend in which less DNA flux from cells with higher turnover gets to the bloodstream. In particular, a tiny fraction (1 in 3x104) of DNA from erythroid progenitors arrives at the plasma, indicating an extreme efficiency of the DNA recovery mechanism. Erythroid progenitors are arranged in erythroblastic islands. Up to a few tens of erythroid progenitors surround a single macrophage that collects the nuclei extruded during the erythrocyte maturation process (pyrenocytes; Chasis and Mohandas, 2008). The amount of DNA discarded through the maturation of over 200 billion erythrocytes per day (Sender and Milo, 2021) exceeds all other sources of homeostatic discarded DNA. Our findings indicate that the organization of dedicated erythroblastic islands functions highly efficiently regarding DNA utilization. Neutrophils are another high-turnover cell type with a low level of cfDNA. When contemplating the process of NETosis (Vorobjeva and Chernyak, 2020), the existence of cfDNA originating from live neutrophils would potentially diminish the concentration of cfDNA released by dying neutrophils, thereby amplifying the observed ratio for this particular cell type. The overall trend of higher turnover resulting in a lower cfDNA to DNA flux ratio may indicate similar design principles, in which the utilization of DNA is better in tissues with higher turnover. However, our analysis is limited to only several cell types (due to cfDNA test and deconvolution sensitivities), and extrapolation to cells with lower cell turnover is problematic.\n\nA thorough explanation for the gap between the estimated DNA flux from dying cells and the measured cfDNA data requires more research. Since macrophages play a prominent role in the phagocytosis of dying cells, we hypothesize that the local uptake of cfDNA by activated macrophages is responsible for the uptake of most DNA from dying cells. An interesting implication of this possibility is that cfDNA levels are expected to be highly sensitive to perturbations in the local clearance mechanism. In other words, elevated levels of cfDNA from a given cell type may represent a disruption of local macrophages rather than an actual increase in the rate of cell death.\n\nComparing the DNA flux involved in the homeostatic cellular turnover of specific cell types to the sensitivity of cfDNA essays reveals some current limitations in the field. Cell types such as adipocytes, cardiomyocytes, and pancreatic beta cells are not represented in the cfDNA of healthy individuals. Our analysis suggests that current essays need to be more sensitive to identify the minute amount of those. Moreover, the quantitative analysis can predict potential cell types with a non-neglectable contribution to the plasma cfDNA and allow their focused study. The current analysis calls for a focus on breast epithelial cells and myocytes, as their potential cfDNA levels are relatively higher than the detection limit. Previous research regarding their contribution to cfDNA has used highly sensitive essays but found no contribution in healthy individuals (Moss et al., 2018; Moss et al., 2020; Loyfer et al., 2023). This might indicate a highly effective mechanism for the utilization of DNA from dying cells, for example, local degradation of myonuclei within the syncytium of skeletal muscle fibers.\n\nQuantitative characterization of the abundance of macrophages concerning the cellular death rate in different tissues could improve our understanding of the DNA clearance mechanism and the role of phagocytes.\n\nIlluminating the discrepancy between the dying cells' DNA flux and the measured cfDNA levels may open the door for research with clinical potential. The sensitivity of the assays and the amount of available DNA limit the utility of liquid biopsy, particularly in early disease detection. Better characterization of the mechanism that limits available plasma cfDNA could lead to potential interventions that increase the fraction of DNA flux arriving at the plasma and thus improve the sensitivity of liquid biopsies based on cfDNA.\n\n## Materials and methods\n\n### Cellular turnover\n\nNormal cellular turnover data for all cell types except hepatocytes and megakaryocytes were obtained from estimates provided by Sender and Milo, 2021. We estimated the cellular turnover of megakaryocytes in two ways. First, based on the number of megakaryocytes in the bone marrow (Harrison, 1962; Noetzli et al., 2019) and a maturation time of around five days (Machlus and Italiano, 2013). Second, using the production of platelets (Harker and Finch, 1969) and an average number of platelets produced per megakaryocyte (Trowbridge et al., 1984; Kaufman et al., 1965; Harker and Finch, 1969). Cellular turnover of hepatocytes was calculated based on Heinke et al., 2022 by combining estimates for the number of cells and the death rate for the different ploidy groups (Source data 1).\n\n### Tissue-specific cfDNA concentration\n\nOur estimates for total plasma cfDNA concentration were derived from the median concentration observed in individuals below 47 years of age (n=52), as reported by Meddeb et al., 2019. To complement this, we integrated our total concentration estimates with data on the proportion of cfDNA originating from specific cell types, leveraging a plasma methylome deconvolution method described by Loyfer et al., 2023, which did not provide absolute quantities of cfDNA.\n\nThe overall plasma cfDNA concentration was multiplied by a factor of 1.5 to accommodate for the presence of small fragments of approximately 50 base pairs of cfDNA in the plasma. These fragments are suggested to contribute comparable molar concentrations (Hisano et al., 2021). Despite having approximately one-third of the mass, it is reasonable to presume that these fragments represent a similar number of genomes. This assumption is based on the idea that their source is a broken nucleosome unit, and the fragments represent the portion that was not degraded. Given the restricted data and its interpretation, we consider factors spanning the range of 1 (negligible effect) and 2 (doubling of the amount). The chosen factor, 1.5, is selected as the midpoint within this range of uncertainty.\n\nTo quantify the uncertainty associated with our cfDNA concentration estimates, we employed a methodology that considered several sources of variation. First, we incorporated the confidence interval of the median concentration reported by Meddeb et al. as a measure of uncertainty. Additionally, we accounted for individual-specific and analytic variations based on the study by Madsen et al., 2019, encompassing factors such as the precise timing of measurements and assay precision. These sources of uncertainty were combined using the approach outlined below.\n\n### Estimation of the potential DNA flux\n\nWe estimated the potential cfDNA plasma levels if all the DNA from the dying cells had reached the bloodstream. Our estimate utilized the calculated cellular turnover rate and data regarding the ploidy of the cells, the volume of blood plasma, and the half-life of cfDNA molecules in the blood. For each cell type, we defined the cellular turnover in units of cells per day $d_{c}$ and the ploidy (average number of sets of chromosomes) $p_{c}$ . We used blood plasma volume $V_{plasma}=3L$ (Valentin, 2002), the mean lifespan of cfDNA molecules in the blood $\\tau=\\frac{half-life}{ln(2)}=0.7h$ (Lo et al., 1999; Yao et al., 2016; Diehl et al., 2008; To et al., 2003) and haploid genome mass $m_{h}=3.2\u22c510^{-12}g$ (Piovesan et al., 2019).\n\nThe expected level of cfDNA levels was calculated according to the formula:\n\n$$\nX_{c}=\\frac{d_{c}\u22c5p_{c}\u22c5\u22c5\\tau}{V_{plasma}}\n$$\n\nwhere $X_{c}$ is given in units of Genome equivalents/ml (Units of g/ml could be obtained by multiplication by $m_{h}$).\n\nIntuitively, the potential cfDNA level is obtained by calculating the amount of DNA in dying cells at a given moment (defined by the mean lifespan of cfDNA in plasma) when considering the total volume of the plasma.\n\nUltimately, we compared the measured cfDNA levels to the potential DNA flux estimates to determine the DNA fraction reaching the blood.\n\n### Uncertainties estimate\n\nStandard error was collected or calculated for each value used. In several cases, such as the half-life of plasma cfDNA, the value\u2019s uncertainty was big and best described as a multiplication factor of error (i.e. the uncertainty of a variable with lognormal distribution). To facilitate error propagation, we transformed all values and corresponding errors to be expressed in terms of multiplication error by fitting a lognormal distribution. Thus, we modeled the uncertainty around the median value as a log-normally distributed random variable $x$ with a with a shape parameter $s=ln(f_{x,})$, where $f_{x}$ is the multiplication error factor. For example, an $f_{x}=2$ means that there is a 68% probability (one sigma) that the actual value of $x$ is between half and double the given value. The shape parameter describes the standard error of the log-transformed random variable, defined as $ln(x)$, and is distributed normally by definition.\n\nThe multiplication of two lognormal variables $x$ and $y$ also follows a log-normal distribution, with a shape parameter equal to the square root of the sum of the squares of the original shape factors. Therefore, to propagate the error of the product ($x\u22c5y$), we used the formula: $f_{x\u22c5y}=e^{\\sqrt{ln(f_{x})^{2}+ln(f_{y})^{2}}}$.\n\nWe used bootstrapping to calculate error propagation for the summation of variables with log-normal uncertainty (lacking an analytical formula for error propagation). Specifically, we drew 1000 samples from the distribution that described the uncertainties of the values.\n\nThe overall concentration of cfDNA in plasma was adjusted to account for the ubiquity of small cfDNA fragments. Based on Hisano et al. results, we assumed that the uncertainty associated with this correction could be represented by a uniform distribution of the adjustment factor within the range of 1\u20132 (see Tissue-specific cfDNA concentration). To incorporate this uncertainty into the total plasma cfDNA concentration estimate, we employed bootstrapping with 10,000 iterations. Subsequently, a lognormal distribution was fitted to the results to facilitate further error propagation.\n",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "48350dab-66a7-4107-983f-35e67d640745",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan A Cooper, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89321.3.sa0](https://doi.org/10.7554/eLife.89321.3.sa0)\n\nThis manuscript describes a model to estimate what fraction of DNA from specific human tissues becomes cell-free DNA in plasma. This fundamental study, supported by convincing evidence, will be of great interest to the community, as the amount of DNA from a certain tissue (for example, a tumor) that becomes available for detection in the blood has significant implications for disease detection.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89321.3.sa1](https://doi.org/10.7554/eLife.89321.3.sa1)\n\nSummary\n\nSender et al describe a model to estimate what fraction of DNA becomes cell-free DNA in plasma. This is of great interest to the community, as the amount of DNA from a certain tissue (for example, a tumor) that becomes available for detection in the blood has important implications for disease detection.\n\nStrengths\n\nThe question asked by the authors has potentially important implications for disease diagnosis. Understanding how genomic DNA degrades in the human circulation can guide towards ways to enrich for DNA of interest or may lead to unexpected methods of conserving cell-free DNA. Thus, the question \"how much genomic DNA becomes cfDNA\" is of great interest to the scientific and medical community. I believe this manuscript has the potential to be a widely used resource. As more data is collected on cell-free DNA yields and cellular turnover in the body, this work will only increase in importance.\n\nAppraisal\n\nAt this stage of the manuscript (second submission), I think the authors provide important evidence and analysis that aim to answer their research question. Previous concerns about methodology have been addressed.\n\nImpact\n\nThis manuscript will be highly impactful on the community. The field of liquid biopsies (non-invasive diagnostics) has the potential to revolutionize the medical field (and has already in certain areas, such as prenatal diagnostics). Yet, there is a lack of basic science questions in the field. This manuscript is an important step forward in asking more \"basic science\" questions that seek to answer a fundamental biological question.\n",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "06654ddd-ee09-4203-9d9f-19663ba5149a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C1",
+      "claim": "An estimated 0.3\u00d710\u00b9\u00b2 cells are replaced daily in the human body.",
+      "claim_type": "EXPLICIT",
+      "source": "The human body is in a constant state of cellular turnover, with an estimated 0.3x1012 cells being replaced daily, two-thirds of which are erythrocytes (Sender and Milo, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sender and Milo, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "c98ee311-bace-4dfd-93db-8e10fc53105a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C2",
+      "claim": "Two-thirds of daily replaced cells are erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The human body is in a constant state of cellular turnover, with an estimated 0.3x1012 cells being replaced daily, two-thirds of which are erythrocytes (Sender and Milo, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sender and Milo, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "26407bfd-4a6a-4c3e-ad62-9e0de70ac372",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C3",
+      "claim": "Apoptosis is the primary mechanism of cell death in tissues with rapid turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptosis is the primary mechanism of cell death in tissues with rapid turnover, in which cells are disposed of orderly and engulfed by phagocytic cells to recycle their resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established scientific knowledge about apoptosis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "218194b7-765c-4f2a-a6a8-b8d81a1f747a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C4",
+      "claim": "Apoptosis involves DNA fragmentation through two distinct mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptosis involves the fragmentation of DNA through two distinct mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by subsequent description and citation to Nagata, 2005",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d9703655-408e-4f09-a861-3c129df47e2d",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C5",
+      "claim": "The first mechanism of DNA fragmentation occurs within the apoptotic cell, where endonucleases break down chromatin into nucleosomal units.",
+      "claim_type": "EXPLICIT",
+      "source": "The first mechanism occurs within the apoptotic cell, where endonucleases break down chromatin into nucleosomal units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nagata, 2005 in the context",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "cdd6cc49-fb7d-4cd3-afd5-88a224d2c8ad",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C6",
+      "claim": "The second mechanism of DNA fragmentation is carried out by phagocytic cells, which engulf and degrade the DNA of apoptotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The second mechanism is carried out by phagocytic cells, which engulf and degrade the DNA of apoptotic cells in order to prevent the release of potentially immunogenic intracellular materials (Nagata, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nagata, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "3ff14a7e-4710-4549-9cb1-02d4781aa054",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C7",
+      "claim": "Cell-free DNA (cfDNA) fragments can be found in the circulation of healthy and diseased individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been known since the late 1940s that cell-free DNA (cfDNA) fragments can be found in the circulation of healthy and diseased individuals (Mandel and Metais, 1948; Bendich et al., 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mandel and Metais, 1948 and Bendich et al., 1965",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "9e41584b-cfd1-42cf-8f5a-7150f0d3076e",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C8",
+      "claim": "cfDNA fragments are typically nucleosome-size (165 base pairs).",
+      "claim_type": "EXPLICIT",
+      "source": "The fragments are typically nucleosome-size (165 base pairs), likely representing molecules that were not completely degraded during the process of cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about cfDNA fragment sizes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "5b4a106d-a2bc-4ae3-8b34-ddc1f533bde6",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C9",
+      "claim": "cfDNA fragments likely represent molecules that were not completely degraded during the process of cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The fragments are typically nucleosome-size (165 base pairs), likely representing molecules that were not completely degraded during the process of cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about the origin of cfDNA fragments",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "af3e111a-3e69-434c-a63c-bd7660fe2410",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C10",
+      "claim": "cfDNA has become a clinically useful biomarker for various applications with the advent of next-generation sequencing (NGS).",
+      "claim_type": "EXPLICIT",
+      "source": "With the advent of next-generation sequencing (NGS), cfDNA has become a clinically useful biomarker for various applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about clinical applications of cfDNA",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "67f48e87-1316-40e2-9b3e-60df53731fa6",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C11",
+      "claim": "cfDNA applications include non-invasive prenatal testing via detection of fetal chromosomal abnormalities via sampling of maternal cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These include non-invasive prenatal testing (via detection of fetal chromosomal abnormalities via sampling of maternal cfDNA), cancer monitoring (via detection of oncogenic mutations in plasma, termed circulating tumor DNA [ctDNA]), and monitoring of allogeneic organ transplants (via detection of donor-derived SNPs in cfDNA)(Heitzer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heitzer et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "c7542f07-f98c-4204-aa6e-5412ff3cf921",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C12",
+      "claim": "cfDNA applications include cancer monitoring via detection of oncogenic mutations in plasma, termed circulating tumor DNA (ctDNA).",
+      "claim_type": "EXPLICIT",
+      "source": "These include non-invasive prenatal testing (via detection of fetal chromosomal abnormalities via sampling of maternal cfDNA), cancer monitoring (via detection of oncogenic mutations in plasma, termed circulating tumor DNA [ctDNA]), and monitoring of allogeneic organ transplants (via detection of donor-derived SNPs in cfDNA)(Heitzer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heitzer et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "5baeb271-f9b0-44f5-a129-260427674886",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C13",
+      "claim": "cfDNA applications include monitoring of allogeneic organ transplants via detection of donor-derived SNPs in cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These include non-invasive prenatal testing (via detection of fetal chromosomal abnormalities via sampling of maternal cfDNA), cancer monitoring (via detection of oncogenic mutations in plasma, termed circulating tumor DNA [ctDNA]), and monitoring of allogeneic organ transplants (via detection of donor-derived SNPs in cfDNA)(Heitzer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heitzer et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "c3ffc9af-a49f-474c-8791-3a37f1fb33fa",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C14",
+      "claim": "The presence of cfDNA from a given tissue often correlates with tissue-specific injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of somatic mutations, the mere presence of cfDNA from a given tissue is of great value as it often correlates with tissue-specific injury (Lehmann-Werman et al., 2016; Gala-Lopez et al., 2018; Lehmann-Werman et al., 2018; Zemmour et al., 2018; Heitzer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "3ce83442-923c-4082-973c-acf819bc3805",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C15",
+      "claim": "Multiple layers of epigenetic information allow the inference of the tissue origins of cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple layers of epigenetic information allow the inference of the tissue origins of cfDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by subsequent examples and citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "f0410f95-a4bc-4bee-aed4-f55d93bf9818",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C16",
+      "claim": "The size, fragmentation patterns, and exact end position of cfDNA fragments allow tracing cfDNA molecules to their tissue origin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the size, fragmentation patterns, and exact end position of cfDNA fragments, nucleosome positions reflected in the relative abundance of promoter sequences, and histone modification patterns all allow tracing cfDNA molecules to their tissue origin (Moss et al., 2018; Oberhofer et al., 2022; Zhou et al., 2022; Lo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "802224dd-229d-40e1-9d98-922c232899d4",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C17",
+      "claim": "DNA methylation patterns are a particularly sensitive approach for tracing cfDNA to tissue origin.",
+      "claim_type": "EXPLICIT",
+      "source": "One particularly sensitive approach is using DNA methylation patterns, a stable determinant of cell identity preserved on cfDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about DNA methylation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "b1b2a277-fa9e-4dec-96b0-66517066a12e",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C18",
+      "claim": "DNA methylation patterns are a stable determinant of cell identity preserved on cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "One particularly sensitive approach is using DNA methylation patterns, a stable determinant of cell identity preserved on cfDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about DNA methylation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "91470663-472f-42b8-aa7c-b1522bb6427c",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C19",
+      "claim": "Under baseline conditions, over 90% of cfDNA originates in blood cells (neutrophils, megakaryocytes, monocytes, lymphocytes, and erythroblasts).",
+      "claim_type": "EXPLICIT",
+      "source": "Under baseline conditions, over 90% of cfDNA originates in blood cells (neutrophils, megakaryocytes, monocytes, lymphocytes, and erythroblasts), with vascular endothelial cells and hepatocytes being the only solid tissue source (Loyfer et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Loyfer et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "51c7833c-cb9d-4cb3-ac85-b43870747a58",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C20",
+      "claim": "Vascular endothelial cells and hepatocytes are the only solid tissue source of cfDNA under baseline conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under baseline conditions, over 90% of cfDNA originates in blood cells (neutrophils, megakaryocytes, monocytes, lymphocytes, and erythroblasts), with vascular endothelial cells and hepatocytes being the only solid tissue source (Loyfer et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Loyfer et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "976bb018-7fb5-41f7-bf72-d94a76d45f8b",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C21",
+      "claim": "The exact mechanism by which cfDNA is released is not fully understood but is thought to involve cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "In both homeostatic and pathologic conditions, the exact mechanism by which cfDNA is released is not fully understood but is thought to involve cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement acknowledging current knowledge gaps",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "4d16f131-2575-4562-9d6f-f84bacbd1dd0",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C22",
+      "claim": "Whether cfDNA can be released from cells that remain alive after the event is controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether cfDNA can be released from cells that remain alive after the event is controversial (Stroun et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stroun et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "f0868313-ac54-4ded-b086-a0185f5de488",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C23",
+      "claim": "Megakaryocytes and erythroblasts are examples where cfDNA may be released from cells that remain alive, as their physiological function is to release anuclear cells (platelets and erythrocytes).",
+      "claim_type": "EXPLICIT",
+      "source": "Two striking examples of such a scenario are megakaryocytes and erythroblasts, whose physiological function is to release anuclear cells, namely platelets and erythrocytes (Moss et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moss et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "f01a4182-bb91-42e7-89f8-eb3a5590df57",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C24",
+      "claim": "The amount of cfDNA is typically ~1000 genome equivalents per ml of plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "From a practical perspective, the amount of cfDNA (typically ~1000 genome equivalents per ml of plasma) is a major barrier to a sensitive diagnosis of diseases \u2013 particularly cancer \u2013 at an early stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about cfDNA concentrations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "0d48c1aa-5bde-4b53-ab59-deb0c6464b53",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C25",
+      "claim": "The amount of cfDNA is a major barrier to sensitive diagnosis of diseases, particularly cancer, at an early stage.",
+      "claim_type": "EXPLICIT",
+      "source": "From a practical perspective, the amount of cfDNA (typically ~1000 genome equivalents per ml of plasma) is a major barrier to a sensitive diagnosis of diseases \u2013 particularly cancer \u2013 at an early stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the low concentration of cfDNA",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "184eae41-ab7a-45ab-b562-3e6e15e729f5",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C26",
+      "claim": "Recent studies have suggested pharmacologic approaches for blocking the removal of cfDNA from the systemic circulation, leading to a transient elevation in cfDNA concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, recent studies have suggested pharmacologic approaches for blocking the removal of cfDNA from the systemic circulation, leading to a transient elevation in cfDNA concentration (Tabrizi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tabrizi et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "872dac50-93a2-41d4-b620-24b52095a1b0",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C27",
+      "claim": "The efficiency and determinants of local cfDNA release to circulation have not been examined.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency and determinants of local cfDNA release to circulation have not been examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement identifying a knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "426b640e-4846-473c-b913-aa618e26459b",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C28",
+      "claim": "The primary sources of plasma cfDNA are blood cells: granulocytes, megakaryocytes, macrophages, and/or monocytes, lymphocytes, and erythrocyte progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "They found the primary sources of plasma cfDNA to be blood cells: granulocytes, megakaryocytes, macrophages, and/or monocytes (the signature could not differentiate between the last two), lymphocytes, and erythrocyte progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from Moss et al. and Loyfer et al. cited earlier in the paragraph",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "54c32044-e3db-4fc9-a126-f1951f6ceca7",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C29",
+      "claim": "Endothelial cells and hepatocytes have detectable contributions to plasma cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Other cells that had detectable contributions are endothelial cells and hepatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from Moss et al. and Loyfer et al. cited earlier in the paragraph",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "22f2aa17-86f9-4fa5-a302-20f227d72d08",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C30",
+      "claim": "Cells with high cfDNA plasma levels are those with relatively high turnover that are not being shed out of the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it appears that cells with high cfDNA plasma levels are those with relatively high turnover that are not being shed out of the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of cellular turnover and cfDNA detection",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "16ac0cf9-344b-4d57-af17-14b1421ab0bd",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C31",
+      "claim": "Less than 4% of the DNA from dying cells reaches the plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that less than 4% of the DNA of dying cells reaches the plasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of calculated potential DNA flux and measured cfDNA levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "bed6e3dc-a0d5-4b58-8e8c-48855170162a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C32",
+      "claim": "The ratios of measured to expected cfDNA levels vary a thousand-fold, ranging from 1:30 (megakaryocytes and endothelial cells) to 1:3\u00d710\u2074 (erythrocyte progenitors).",
+      "claim_type": "EXPLICIT",
+      "source": "The ratios of measured to expected cfDNA levels vary a thousand-fold, ranging from 1:30 (megakaryocytes and endothelial cells) to 1:3x104 (erythrocyte progenitors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of calculated potential DNA flux and measured cfDNA levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "f7877fda-264f-4336-a88e-8910869b33e5",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C33",
+      "claim": "Around 1000 genome equivalents of cfDNA are found in the plasma in healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, around 1000 genome equivalents of cfDNA are found in the plasma in healthy individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about cfDNA concentrations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "378ce2cc-72fe-4369-a1b0-d11dc3262b14",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C34",
+      "claim": "General assays using deconvolution have a sensitivity of around 1%, for example, ~10 genome equivalents.",
+      "claim_type": "EXPLICIT",
+      "source": "General essays using deconvolution have a sensitivity of around 1%, for example, ~10 genome equivalents (Loyfer et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Loyfer et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "599ab54b-c710-4918-91fc-6f13824cdf71",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C35",
+      "claim": "Targeted assays using markers for a specific cell type at deep coverage can improve the sensitivity to around 0.1%, for example ~1 genome equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted essays using markers for a specific cell type at a deep coverage can improve the sensitivity to around 0.1%, for example ~1, genome equivalent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on knowledge of assay capabilities",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "c2dec37c-7aa0-412d-a8dd-bb60b115a721",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C36",
+      "claim": "Cells with lower cellular turnover, such as skeletal myocytes, adipocytes, and pancreatic beta cells, are not being detected in the plasma of healthy individuals because their plasma levels are lower than the sensitivities of existing assays.",
+      "claim_type": "EXPLICIT",
+      "source": "The low ratios of measured to potential cfDNA described for the mentioned cell types indicate that cells with lower cellular turnover, such as skeletal myocytes, adipocytes, and pancreatic beta cells, are not being detected in the plasma of healthy individuals because their plasma levels are lower than the sensitivities of existing essays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of potential cfDNA levels and assay detection limits",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "3f767208-9478-4957-9e23-afb3278eeeda",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C37",
+      "claim": "The breast is an outlier when comparing potential cfDNA plasma levels of breast epithelial cells in healthy women to the limit of detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a comparison of potential cfDNA plasma levels of breast epithelial cells in healthy women to the limit of detection reveals the breast as an outlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d0ea32d2-a13b-4d69-84ba-f16a426fb05a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C38",
+      "claim": "The breast being an outlier might suggest that dying breast epithelial cells' local DNA utilization mechanism is extremely efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "This might suggest that dying breast epithelial cells' local DNA utilization mechanism is extremely efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "b7c8bcfc-0bfa-43f1-8297-c0a3e4b11918",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C39",
+      "claim": "Regular cfDNA analysis shows a size distribution concentrated around a length of 165 base pairs (bp).",
+      "claim_type": "EXPLICIT",
+      "source": "Regular cfDNA analysis shows a size distribution concentrated around a length of 165 base pairs (bp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about cfDNA fragment sizes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "8ca14ba1-95ef-4ac1-8192-3f10f75439bd",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C40",
+      "claim": "The sizes in ctDNA vary more, but most are longer than 100 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes in ctDNA vary more, but most are longer than 100 bp (Alcaide et al., 2020; Udomruk et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alcaide et al., 2020 and Udomruk et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "54f6972a-2466-44f0-a01e-0a4fe4bb8609",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C41",
+      "claim": "Recent studies suggested a significant fraction of single-strand ultrashort fragments (length of 25\u201360 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggested a significant fraction of single-strand ultrashort fragments (length of 25\u201360 bp; Cheng et al., 2022; Hisano et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheng et al., 2022 and Hisano et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d28faa1a-1438-4a38-b953-8c93d96359dc",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C42",
+      "claim": "The total amount of DNA contained in ultrashort fragments is less than or comparable to that of the longer 'regular' nucleosome-protected cfDNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the total amount of DNA contained in these fragments is less than or comparable to that of the longer 'regular' nucleosome-protected cfDNA fragments (Cheng et al., 2022; Hisano et al., 2021), arguing against ultrashort fragments as a dominant explanation for the 'missing' cfDNA material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheng et al., 2022 and Hisano et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "5e10f84c-b955-4e92-bc92-58e6259ddfaa",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C43",
+      "claim": "The half-life of DNA in the bloodstream ranges from 15 to 120 min.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous research using various methods (mostly the decay of fetal cfDNA in maternal plasma after birth) has shown that the half-life of DNA in the bloodstream ranges from 15 to 120 min, orders of magnitude higher than this estimate suggest (Lo et al., 1999; Yao et al., 2016; Diehl et al., 2008; To et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "8c9d893d-9b7d-4f7d-bd24-05a366ee6d70",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C44",
+      "claim": "A systemic clearance mechanism cannot explain the differential representation of cfDNA from different cell types relative to their turnover rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a systemic clearance mechanism cannot explain the differential representation of cfDNA from different cell types relative to their turnover rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the observed data patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "219e06ec-2276-4205-ba87-7d9648a3a323",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C45",
+      "claim": "The low fraction of DNA measured as cfDNA suggests that less than a few percent of the DNA from dying cells reaches the bloodstream.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the low fraction of DNA measured as cfDNA suggests that less than a few percent of the DNA from dying cells reaches the bloodstream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of measured and expected cfDNA levels",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "20a1f4a8-5d92-4c78-a3b7-c9ccccfda6df",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C46",
+      "claim": "Tissue-resident phagocytes may be degrading the DNA after apoptosis, similar to what has been shown for extruded erythroblast nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential explanation is that tissue-resident phagocytes are degrading the DNA after apoptosis, similar to what has been shown for extruded erythroblast nuclei (Yoshida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation supported by citation to Yoshida et al., 2005",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "3d771a94-e60d-45e8-9618-1ae67a90e0ef",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C47",
+      "claim": "Lysosomal DNases in macrophages play a role in cleaving chromosomal DNA during apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in mice have revealed that lysosomal DNases in macrophages play a role in cleaving chromosomal DNA during apoptosis (McIlroy et al., 2000), as well as the degradation of erythroid nuclei in erythroblastic islands (Yoshida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McIlroy et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "6077aa60-d1e5-4e5e-b2be-d28dab0ba8ac",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C48",
+      "claim": "Lysosomal DNases in macrophages play a role in the degradation of erythroid nuclei in erythroblastic islands.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in mice have revealed that lysosomal DNases in macrophages play a role in cleaving chromosomal DNA during apoptosis (McIlroy et al., 2000), as well as the degradation of erythroid nuclei in erythroblastic islands (Yoshida et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yoshida et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d3de135a-71e6-4e45-ac11-a3b28a5b888d",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C49",
+      "claim": "The first DNA fragmentation occurs within the apoptotic cells, resulting in nucleosomal unit multiples of about 180 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The first DNA fragmentation occurs within the apoptotic cells, resulting in nucleosomal unit multiples of about 180 bp (Matassov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Matassov et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "679dbf67-6c70-4df0-a560-8df49145d873",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C50",
+      "claim": "Up to 200 bp cfDNA fragments in plasma may indicate that phagocytes have not further degraded these fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, up to 200 bp cfDNA fragments in plasma may indicate that phagocytes have not further degraded these fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the size of cfDNA fragments and knowledge of DNA degradation mechanisms",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "3f66ac43-20c3-4141-a1f1-fe5713e56ccd",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C51",
+      "claim": "Less than 10% of the DNA from dying cells is detectable in plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that <10% of the DNA from dying cells is detectable in plasma, and the ratios of measured to expected cfDNA levels vary a thousand-fold among cell types, often reaching well below 0.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of calculated potential DNA flux and measured cfDNA levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "5cb9cbae-358d-4ae2-8c58-8be2207aae5b",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C52",
+      "claim": "The ratios of measured to expected cfDNA levels vary a thousand-fold among cell types, often reaching well below 0.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that <10% of the DNA from dying cells is detectable in plasma, and the ratios of measured to expected cfDNA levels vary a thousand-fold among cell types, often reaching well below 0.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of calculated potential DNA flux and measured cfDNA levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "273d3c36-a43c-4ab1-8459-2fddc85e03f2",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C53",
+      "claim": "Local clearance, presumably via phagocytosis, takes up most of the dying cells' DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis suggests that local clearance, presumably via phagocytosis, takes up most of the dying cells' DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the low fraction of DNA reaching plasma",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "a5b03f67-dadf-4e6b-ab03-1e77a13f6c90",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C54",
+      "claim": "A tiny fraction (1 in 3\u00d710\u2074) of DNA from erythroid progenitors arrives at the plasma, indicating an extreme efficiency of the DNA recovery mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a tiny fraction (1 in 3x104) of DNA from erythroid progenitors arrives at the plasma, indicating an extreme efficiency of the DNA recovery mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of calculated potential DNA flux and measured cfDNA levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "1af9b7d1-7c82-45fa-ade3-0201af42d25d",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C55",
+      "claim": "Erythroid progenitors are arranged in erythroblastic islands where up to a few tens of erythroid progenitors surround a single macrophage that collects the nuclei extruded during the erythrocyte maturation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Erythroid progenitors are arranged in erythroblastic islands. Up to a few tens of erythroid progenitors surround a single macrophage that collects the nuclei extruded during the erythrocyte maturation process (pyrenocytes; Chasis and Mohandas, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chasis and Mohandas, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "91885b9d-b38a-4004-a6b3-7ee179c3c4fd",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C56",
+      "claim": "The amount of DNA discarded through the maturation of over 200 billion erythrocytes per day exceeds all other sources of homeostatic discarded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of DNA discarded through the maturation of over 200 billion erythrocytes per day (Sender and Milo, 2021) exceeds all other sources of homeostatic discarded DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on citation to Sender and Milo, 2021 and comparison with other cell types",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "ced317ab-1527-44a3-9673-3b22a8191930",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C57",
+      "claim": "The organization of dedicated erythroblastic islands functions highly efficiently regarding DNA utilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that the organization of dedicated erythroblastic islands functions highly efficiently regarding DNA utilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the low fraction of erythroid progenitor DNA reaching plasma",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "35dddd16-950a-47e7-b48d-1fc562fb3003",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C58",
+      "claim": "The overall trend shows that higher turnover results in a lower cfDNA to DNA flux ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall trend of higher turnover resulting in a lower cfDNA to DNA flux ratio may indicate similar design principles, in which the utilization of DNA is better in tissues with higher turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on observed patterns in the data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d57d65df-19cd-4f5f-a6b5-7a1a53657dfa",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C59",
+      "claim": "The utilization of DNA may be better in tissues with higher turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall trend of higher turnover resulting in a lower cfDNA to DNA flux ratio may indicate similar design principles, in which the utilization of DNA is better in tissues with higher turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the observed trend",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "962065ea-5008-495c-b23d-e115f0adeaf9",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C60",
+      "claim": "The local uptake of cfDNA by activated macrophages is hypothesized to be responsible for the uptake of most DNA from dying cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since macrophages play a prominent role in the phagocytosis of dying cells, we hypothesize that the local uptake of cfDNA by activated macrophages is responsible for the uptake of most DNA from dying cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on known role of macrophages",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "24fb7255-5cf7-4f72-ad02-406f34620a78",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C61",
+      "claim": "Elevated levels of cfDNA from a given cell type may represent a disruption of local macrophages rather than an actual increase in the rate of cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting implication of this possibility is that cfDNA levels are expected to be highly sensitive to perturbations in the local clearance mechanism. In other words, elevated levels of cfDNA from a given cell type may represent a disruption of local macrophages rather than an actual increase in the rate of cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative implication of the hypothesis about macrophage uptake",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "905f5ab7-eeb5-47ce-af3c-f2cb5583cdb9",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C62",
+      "claim": "Cell types such as adipocytes, cardiomyocytes, and pancreatic beta cells are not represented in the cfDNA of healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell types such as adipocytes, cardiomyocytes, and pancreatic beta cells are not represented in the cfDNA of healthy individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of cfDNA detection limits and cellular turnover",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "1963e9a9-f4a2-4a7b-aa0b-389a2572113b",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C63",
+      "claim": "Current assays are not sensitive enough to identify the minute amount of cfDNA from adipocytes, cardiomyocytes, and pancreatic beta cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that current essays need to be more sensitive to identify the minute amount of those.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of potential cfDNA levels and assay detection limits",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "15cba7c3-41f9-4da3-bcab-9ba7a0271023",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C64",
+      "claim": "Previous research regarding the contribution of breast epithelial cells and myocytes to cfDNA has used highly sensitive assays but found no contribution in healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research regarding their contribution to cfDNA has used highly sensitive essays but found no contribution in healthy individuals (Moss et al., 2018; Moss et al., 2020; Loyfer et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "5d7f657e-9bf5-4619-86b3-24e4f95d3a0f",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C65",
+      "claim": "The lack of detectable cfDNA from breast epithelial cells and myocytes might indicate a highly effective mechanism for the utilization of DNA from dying cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This might indicate a highly effective mechanism for the utilization of DNA from dying cells, for example, local degradation of myonuclei within the syncytium of skeletal muscle fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the lack of detection",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "734f1e41-ff0b-4c41-b070-8fd90a51ad5a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C66",
+      "claim": "The potential cfDNA levels of breast epithelial cells and myocytes are relatively higher than the detection limit.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the quantitative analysis can predict potential cell types with a non-neglectable contribution to the plasma cfDNA and allow their focused study. The current analysis calls for a focus on breast epithelial cells and myocytes, as their potential cfDNA levels are relatively higher than the detection limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "c796ec7b-bade-44f3-8d3f-6b11083a7904",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C74",
+      "claim": "Epithelial cells of the gastrointestinal tract, lung, kidney, bladder, and skin are cell types that significantly contribute to cellular turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Epithelial cells of the gastrointestinal tract, lung, kidney, bladder, and skin are other cell types that significantly contribute to cellular turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on cellular turnover data from Sender and Milo, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "652efe90-df9a-4014-a421-210f9f242fb6",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C75",
+      "claim": "Dying cells in the gastrointestinal tract, lung, kidney, bladder, and skin are shed into the gut lumen, the air spaces, the urine, or out of the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Dying cells in these tissues are shed into the gut lumen, the air spaces, the urine, or out of the skin (note that while DNA from gut, lung, and kidney epithelial cells can be found in stool, bronchoalveolar lavage, and urine, the fate of DNA from skin cells is not known).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on knowledge of tissue physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "c128dcd6-e57a-4596-95f7-15c0cb04f9db",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C76",
+      "claim": "DNA from gut, lung, and kidney epithelial cells can be found in stool, bronchoalveolar lavage, and urine.",
+      "claim_type": "EXPLICIT",
+      "source": "Dying cells in these tissues are shed into the gut lumen, the air spaces, the urine, or out of the skin (note that while DNA from gut, lung, and kidney epithelial cells can be found in stool, bronchoalveolar lavage, and urine, the fate of DNA from skin cells is not known).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "b6e0b9b4-ac14-40db-8cca-46840d9d35fc",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C77",
+      "claim": "The fate of DNA from skin cells is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Dying cells in these tissues are shed into the gut lumen, the air spaces, the urine, or out of the skin (note that while DNA from gut, lung, and kidney epithelial cells can be found in stool, bronchoalveolar lavage, and urine, the fate of DNA from skin cells is not known).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement acknowledging a knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "820d7b3f-499a-4383-b10b-31e1f3a7001a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C78",
+      "claim": "The total plasma cfDNA concentrations were sourced from healthy individuals below 47 years, as reported by Meddeb et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The total plasma cfDNA concentrations were sourced from healthy individuals below 47 years, as reported by Meddeb et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meddeb et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "42276a42-dc4a-473b-a757-248bd57bc125",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C79",
+      "claim": "The potential DNA flux resulting from homeostatic cellular turnover was estimated for reference healthy males aged between 20 and 30.",
+      "claim_type": "EXPLICIT",
+      "source": "These values were then compared to the potential DNA flux resulting from homeostatic cellular turnover, estimated for reference healthy males aged between 20 and 30 (Sender and Milo, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sender and Milo, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "05531379-a842-4808-8322-f2510dd80f5f",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C80",
+      "claim": "Age and sex can impact total cfDNA concentration, with potential variations of up to 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we acknowledge that age and sex can impact total cfDNA concentration, as demonstrated by Meddeb et al., 2019, with potential variations of up to 30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meddeb et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "2b29c4a5-e91c-4422-96df-45146bb2009d",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C84",
+      "claim": "Megakaryocyte cellular turnover was estimated based on the number of megakaryocytes in the bone marrow and a maturation time of around five days.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the cellular turnover of megakaryocytes in two ways. First, based on the number of megakaryocytes in the bone marrow (Harrison, 1962; Noetzli et al., 2019) and a maturation time of around five days (Machlus and Italiano, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "306764cf-c0e2-47f7-8af7-cb3c6ea90157",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C85",
+      "claim": "Megakaryocyte cellular turnover was estimated using the production of platelets and an average number of platelets produced per megakaryocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, using the production of platelets (Harker and Finch, 1969) and an average number of platelets produced per megakaryocyte (Trowbridge et al., 1984; Kaufman et al., 1965; Harker and Finch, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "95452fb7-cd87-4611-b757-51050f44d75c",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C86",
+      "claim": "Cellular turnover of hepatocytes was calculated based on Heinke et al., 2022 by combining estimates for the number of cells and the death rate for the different ploidy groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular turnover of hepatocytes was calculated based on Heinke et al., 2022 by combining estimates for the number of cells and the death rate for the different ploidy groups (Source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heinke et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "b55bf2c2-07a0-465f-ad07-7c82aa247f75",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "claim_id": "C87",
+      "claim": "The overall plasma cfDNA concentration was multiplied by a factor of 1.5 to accommodate for the presence of small fragments of approximately 50 base pairs of cfDNA in the plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall plasma cfDNA concentration was multiplied by a factor of 1.5 to accommodate for the presence of small fragments of approximately 50 base pairs of cfDNA in the plasma. These fragments are suggested to contribute comparable molar concentrations (Hisano et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hisano et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7239f8de-0896-43cd-ae82-483ae35d49aa",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Less than 10% of DNA from dying cells reaches plasma as cfDNA, with ratios of measured to expected cfDNA varying 1000-fold among cell types (from 1:30 for megakaryocytes/endothelial cells to 1:30,000 for erythrocyte progenitors).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, C51, and C52 are supported by the quantitative comparison between calculated potential DNA flux from cellular turnover and measured cfDNA levels shown in Figure 1. The methodology integrates published cellular turnover rates with measured cfDNA concentrations, and the 1000-fold variation is clearly demonstrated across multiple cell types with appropriate uncertainty estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "1558af85-4d66-4ced-96aa-985c1d948baa",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Blood cells (granulocytes, megakaryocytes, monocytes, lymphocytes, erythrocyte progenitors) plus endothelial cells and hepatocytes are the primary sources of plasma cfDNA, while epithelial cells from GI tract, lung, kidney, bladder, and skin with high turnover are shed from the body and not detected in plasma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 and C74-C76 are supported by citations to Moss et al. and Loyfer et al. for cfDNA sources, and Sender and Milo for cellular turnover. The explanation that cells with high turnover but external shedding routes do not contribute to plasma cfDNA is logically consistent with the observed pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "361bca6d-a36c-413d-8ce4-5179aa625b3d",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Local clearance, presumably via tissue-resident phagocytes and macrophages, removes most DNA from dying cells before it reaches the bloodstream.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53, C45, C46, and C60 propose phagocytic clearance as the mechanism for the missing cfDNA, supported by citations to studies in mice (C47, C48). However, this remains speculative as the authors explicitly state this is a hypothesis and the mechanism has not been directly demonstrated in humans. The inference is reasonable but requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "0331c011-84db-472b-8e6c-69392ee66fa6",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Erythroid progenitors show extreme DNA clearance efficiency (only 1 in 30,000 DNA molecules reach plasma), attributed to the specialized erythroblastic island structure where macrophages efficiently collect extruded nuclei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by the quantitative analysis showing the extremely low ratio for erythrocyte progenitors (C54), combined with established knowledge about erythroblastic island organization (C55, cited to Chasis and Mohandas 2008) and the massive scale of erythrocyte production (C56, cited to Sender and Milo 2021). The inference about efficiency (C57) is well-justified by these data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "ad9fad44-e45d-4298-9af2-2368ab4d77f0",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cell types with low turnover (skeletal myocytes, adipocytes, pancreatic beta cells, cardiomyocytes) are not detected in plasma cfDNA of healthy individuals because their cfDNA levels fall below current assay detection limits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C62, and C63 are supported by the quantitative comparison in Figure 1 showing that potential cfDNA levels from these low-turnover cell types fall below the detection gradient (1-10 genome equivalents). The inference is logically sound given the established assay sensitivities (C34, C35) and calculated potential DNA flux.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "c13aa48b-4c7e-4117-8221-3d5dbbe0dcae",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Breast epithelial cells and myocytes show unexpectedly low or absent cfDNA despite having potential levels above detection limits, suggesting highly efficient local DNA clearance mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C37 and C66 indicate breast epithelial cells are outliers based on Figure 1 analysis, and C64 cites studies finding no contribution despite sensitive assays. However, C38 and C65 acknowledge this is speculative ('might suggest', 'might indicate'). The discrepancy is documented but the proposed mechanism of exceptionally efficient local clearance requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "5e85bceb-cc9c-4ec3-9038-217218eafc3f",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "While ultrashort cfDNA fragments (25-60 bp) exist, their total DNA content is comparable to or less than regular nucleosome-protected fragments (165 bp), making them unlikely to explain the missing cfDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by citations to Cheng et al. 2022 and Hisano et al. 2021. The authors appropriately account for ultrashort fragments by applying a 1.5x correction factor (C87) and conclude this does not resolve the order-of-magnitude discrepancy. The reasoning is sound given the cited evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "0c0d17a9-904e-48c1-b9a6-1c66a9bb3a77",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Systemic clearance cannot explain the missing cfDNA because measured cfDNA half-life (15-120 min) is orders of magnitude longer than would be required, and cannot account for cell-type-specific differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 are supported by multiple citations for cfDNA half-life and logical reasoning. If systemic clearance were responsible, the calculated half-life would need to be seconds to minutes (stated in Discussion), contradicting published measurements. The cell-type-specific variation further argues against a uniform systemic mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "7ba121ed-f285-4624-8df7-cecf32953015",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Higher cellular turnover correlates with lower cfDNA-to-DNA-flux ratios, suggesting tissues with higher turnover have more efficient DNA utilization mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58 and C59 identify a trend in the data, but the authors acknowledge this is limited to a few cell types and extrapolation is problematic. The correlation is observed but the mechanistic interpretation (C59) is explicitly speculative ('may indicate'). More cell types would need to be analyzed to establish this as a general principle.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "dc950b53-a5d3-4690-b655-6b607fa71247",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Elevated cfDNA from a specific cell type may indicate disruption of local macrophage clearance rather than increased cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 is an explicitly speculative implication ('may represent') of the macrophage clearance hypothesis (C60). While this is a logical consequence if the hypothesis is correct, it remains untested and would require experimental validation showing that macrophage dysfunction increases cfDNA without changing cell death rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d147c943-2de4-48a7-a3c6-e0ddd13cca16",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The analysis used cfDNA data from healthy individuals under 47 years and cellular turnover estimates from males aged 20-30, with age and sex potentially causing up to 30% variation in cfDNA concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 accurately describe the study population and acknowledge limitations. The citations to Meddeb et al. 2019 and Sender and Milo 2021 support the data sources. The authors appropriately note that 30% variation does not affect their main conclusions given the much larger discrepancies observed (orders of magnitude).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "6437ac15-989c-4dd9-88cf-78ad7e712328",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cellular turnover for megakaryocytes was estimated using two independent methods (bone marrow counts with maturation time, and platelet production rates), while hepatocyte turnover was calculated from ploidy-specific cell numbers and death rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 describe methodological approaches with appropriate citations. Using two independent methods for megakaryocytes (C84, C85) provides internal validation. The hepatocyte calculation (C86) is supported by citation to Heinke et al. 2022. These are standard approaches for estimating cellular turnover.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "dca60938-031b-4808-b856-04188e663e8a",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Total plasma cfDNA concentration was adjusted by a factor of 1.5 to account for ultrashort fragments (~50 bp) that contribute comparable molar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by citation to Hisano et al. 2021 and the Methods section describes this as a midpoint estimate (range 1-2) with appropriate uncertainty propagation. This adjustment is conservative and the authors demonstrate it does not change their main conclusions about the order-of-magnitude discrepancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on cellular turnover and apoptosis: ~0.3\u00d710\u00b9\u00b2 cells replaced daily (two-thirds erythrocytes), apoptosis involves two-stage DNA fragmentation (intracellular endonucleases and phagocytic degradation), and cfDNA fragments (~165 bp) have been known since the 1940s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide established background information supported by appropriate citations (Sender and Milo 2021, Nagata 2005, Mandel and Metais 1948, Bendich et al. 1965). These are well-established facts in the field. C9 is appropriately marked as speculative regarding the origin of cfDNA fragments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "f23bc61c-4f3f-497e-9c9a-914e98b68145",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on cfDNA applications and tissue-of-origin determination: cfDNA is used clinically for prenatal testing, cancer monitoring, and transplant monitoring; tissue origins can be determined through epigenetic markers including methylation patterns; blood cells contribute >90% of baseline cfDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C20 provide established background on cfDNA applications and deconvolution methods, supported by multiple appropriate citations (Heitzer et al. 2019, Moss et al. 2018, Loyfer et al. 2023, and others). These represent well-established knowledge in the cfDNA field and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on cfDNA release mechanisms and clinical challenges: the exact release mechanism is unclear but involves cell death; cfDNA concentration (~1000 genome equivalents/ml) limits diagnostic sensitivity; local release efficiency has not been examined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 accurately describe current knowledge gaps and challenges in the field, with appropriate citations (Stroun et al. 2001, Moss et al. 2022, Tabrizi et al. 2023). C27 explicitly identifies the knowledge gap that motivates this study. These claims provide appropriate context and justification for the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "81a956e9-07db-4126-b6c8-882bd081c50d",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Typical cfDNA levels and assay sensitivities: ~1000 genome equivalents/ml in healthy plasma; deconvolution assays detect ~1% (~10 genome equivalents); targeted assays can detect ~0.1% (~1 genome equivalent).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 describe established technical parameters for cfDNA analysis, with C34 supported by citation to Loyfer et al. 2023. These values are used appropriately to define the detection limit gradient in Figure 1 and interpret which cell types can be detected.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "0cde1dde-f8a0-47bb-90f1-2ea5abb54f39",
+      "content_id": "d285b1a2-157f-481d-b9e1-860dc262ec81",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "DNA fragmentation within apoptotic cells produces ~180 bp nucleosomal multiples, suggesting that cfDNA fragments up to 200 bp in plasma have not been further degraded by phagocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by citation to Matassov et al. 2004 regarding intracellular fragmentation. Claim C50 is a reasonable inference that fragments of this size indicate incomplete phagocytic degradation, consistent with the two-stage degradation model (C4-C6) and supporting the local clearance hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "51c0f793-166e-4f86-87be-bcc01538d60e",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors present a quantitative model estimating that less than 4-10% of DNA from dying cells reaches plasma as cfDNA, with ratios of measured to expected cfDNA levels varying a thousand-fold among cell types (ranging from 1:30 for megakaryocytes/endothelial cells to 1:30,000 for erythrocyte progenitors).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm this core finding. The editor states the manuscript is 'supported by convincing evidence' and the anonymous reviewer notes 'the authors provide important evidence and analysis that aim to answer their research question' with 'previous concerns about methodology have been addressed.' No critiques of these quantitative estimates are raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "3e3bf22f-f240-4572-bd6c-92fd6036504c",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors propose that local clearance via phagocytosis takes up most dying cells' DNA, with erythroid progenitors showing extreme efficiency (1 in 30,000 DNA molecules reaching plasma), suggesting erythroblastic islands function highly efficiently and that macrophages are responsible for local DNA uptake.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this mechanistic interpretation without challenge. The editor describes it as a 'fundamental study' and the reviewer emphasizes this addresses an important 'basic science question' about 'how genomic DNA degrades in the human circulation.' The mechanistic model is treated as a valuable contribution to understanding cfDNA biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "f39a3e1b-f6e1-40e6-b2f6-97014d53bd26",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors report that under baseline conditions, over 90% of cfDNA originates from blood cells (neutrophils, megakaryocytes, monocytes, lymphocytes, erythroblasts), with endothelial cells and hepatocytes being the only solid tissue sources, and that cells with high cfDNA levels are those with high turnover not shed from the body.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings about cfDNA tissue origins are accepted without question by reviewers. The editor notes the work will be 'of great interest to the community' for understanding 'what fraction of DNA from specific human tissues becomes cell-free DNA in plasma,' implicitly accepting these tissue-specific findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "13eb5cb8-6570-4b1d-9b79-afc388869780",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors conclude that cells with lower turnover (skeletal myocytes, adipocytes, pancreatic beta cells, breast epithelial cells) are not detected in healthy plasma because their levels fall below current assay sensitivities, though breast epithelial cells and myocytes warrant focused study as their potential levels are relatively higher than detection limits.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these interpretations about detection limits and undetectable cell types. The reviewer emphasizes the manuscript 'will be a widely used resource' and notes 'as more data is collected on cell-free DNA yields and cellular turnover in the body, this work will only increase in importance,' suggesting acceptance of the analytical framework including these predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors argue that systemic clearance mechanisms cannot explain differential cfDNA representation across cell types, proposing instead that tissue-resident phagocytes degrade DNA locally after apoptosis, with lysosomal DNases in macrophages playing a key role, and that cfDNA fragments up to 200 bp in plasma indicate incomplete phagocytic degradation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this mechanistic reasoning without objection. The reviewer specifically praises the work for 'asking more basic science questions that seek to answer a fundamental biological question' about DNA degradation, indicating acceptance of the proposed mechanisms. No alternative explanations are requested.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "aa5889f1-e24b-4ed0-a860-84104472a79d",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors propose that higher cellular turnover correlates with lower cfDNA-to-DNA-flux ratios, suggesting better DNA utilization in high-turnover tissues, and that elevated cfDNA from a given cell type may represent disruption of local macrophages rather than increased cell death.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive claims are not challenged by reviewers. The editor describes the study as having 'significant implications for disease detection' and the reviewer notes it has 'important implications for disease diagnosis,' suggesting acceptance of these mechanistic insights that would inform disease interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "baf1d855-4381-4431-875b-2fd4642246a6",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors provide background on cellular turnover (0.3\u00d710\u00b9\u00b2 cells replaced daily, two-thirds erythrocytes), apoptosis mechanisms involving two-stage DNA fragmentation, and the historical knowledge that cfDNA fragments (typically 165 bp, nucleosome-sized) exist in circulation representing incompletely degraded molecules from cell death.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This background information is accepted without comment by reviewers as established context. The reviewer notes the manuscript addresses fundamental questions in a field lacking 'basic science questions,' implicitly accepting this foundational framework.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors describe established clinical applications of cfDNA (prenatal testing, cancer monitoring, transplant monitoring) and methods for tracing cfDNA tissue origins using epigenetic information including DNA methylation patterns, fragmentation patterns, and nucleosome positioning.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this contextual information without challenge. The reviewer specifically mentions the field's success 'in certain areas, such as prenatal diagnostics,' confirming acceptance of these established applications as appropriate context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "6e544726-3426-40a3-8b2c-d82d2a894a21",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors describe their methodological approach using cfDNA concentrations from healthy individuals under 47 years, cellular turnover estimates for males aged 20-30, specific estimation methods for megakaryocytes and hepatocytes, and a 1.5\u00d7 correction factor for small cfDNA fragments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer explicitly states 'previous concerns about methodology have been addressed' at this second submission stage, indicating acceptance of the methodological framework. No specific methodological critiques are raised in this review round.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "6e5195a3-54db-45c4-964f-5a817e191525",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors discuss cfDNA fragment sizes (regular cfDNA ~165 bp, ctDNA varying but mostly >100 bp, ultrashort fragments 25-60 bp) and cfDNA half-life in bloodstream (15-120 minutes), arguing ultrashort fragments don't explain the 'missing' cfDNA material.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These technical details about cfDNA characteristics are not questioned by reviewers. The acceptance of the overall model implicitly supports these supporting observations about fragment sizes and half-life that inform the authors' reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "9a8de6c5-30fc-4986-aec5-1b3fdb9c9c31",
+      "content_id": "48350dab-66a7-4107-983f-35e67d640745",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors note that epithelial cells from gastrointestinal tract, lung, kidney, bladder, and skin contribute significantly to cellular turnover but are shed from the body (into gut lumen, air spaces, urine, or externally), with DNA from gut/lung/kidney found in stool/lavage/urine while the fate of skin cell DNA remains unknown.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This explanatory information about why certain high-turnover tissues don't contribute to plasma cfDNA is accepted without comment. It supports the authors' model of selective cfDNA representation and is not challenged by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "16ac0cf9-344b-4d57-af17-14b1421ab0bd",
+      "result_id": "7239f8de-0896-43cd-ae82-483ae35d49aa"
+    },
+    {
+      "claim_id": "bed6e3dc-a0d5-4b58-8e8c-48855170162a",
+      "result_id": "7239f8de-0896-43cd-ae82-483ae35d49aa"
+    },
+    {
+      "claim_id": "3f66ac43-20c3-4141-a1f1-fe5713e56ccd",
+      "result_id": "7239f8de-0896-43cd-ae82-483ae35d49aa"
+    },
+    {
+      "claim_id": "5cb9cbae-358d-4ae2-8c58-8be2207aae5b",
+      "result_id": "7239f8de-0896-43cd-ae82-483ae35d49aa"
+    },
+    {
+      "claim_id": "426b640e-4846-473c-b913-aa618e26459b",
+      "result_id": "1558af85-4d66-4ced-96aa-985c1d948baa"
+    },
+    {
+      "claim_id": "54c32044-e3db-4fc9-a126-f1951f6ceca7",
+      "result_id": "1558af85-4d66-4ced-96aa-985c1d948baa"
+    },
+    {
+      "claim_id": "22f2aa17-86f9-4fa5-a302-20f227d72d08",
+      "result_id": "1558af85-4d66-4ced-96aa-985c1d948baa"
+    },
+    {
+      "claim_id": "c796ec7b-bade-44f3-8d3f-6b11083a7904",
+      "result_id": "1558af85-4d66-4ced-96aa-985c1d948baa"
+    },
+    {
+      "claim_id": "652efe90-df9a-4014-a421-210f9f242fb6",
+      "result_id": "1558af85-4d66-4ced-96aa-985c1d948baa"
+    },
+    {
+      "claim_id": "c128dcd6-e57a-4596-95f7-15c0cb04f9db",
+      "result_id": "1558af85-4d66-4ced-96aa-985c1d948baa"
+    },
+    {
+      "claim_id": "273d3c36-a43c-4ab1-8459-2fddc85e03f2",
+      "result_id": "361bca6d-a36c-413d-8ce4-5179aa625b3d"
+    },
+    {
+      "claim_id": "219e06ec-2276-4205-ba87-7d9648a3a323",
+      "result_id": "361bca6d-a36c-413d-8ce4-5179aa625b3d"
+    },
+    {
+      "claim_id": "20a1f4a8-5d92-4c78-a3b7-c9ccccfda6df",
+      "result_id": "361bca6d-a36c-413d-8ce4-5179aa625b3d"
+    },
+    {
+      "claim_id": "3d771a94-e60d-45e8-9618-1ae67a90e0ef",
+      "result_id": "361bca6d-a36c-413d-8ce4-5179aa625b3d"
+    },
+    {
+      "claim_id": "6077aa60-d1e5-4e5e-b2be-d28dab0ba8ac",
+      "result_id": "361bca6d-a36c-413d-8ce4-5179aa625b3d"
+    },
+    {
+      "claim_id": "962065ea-5008-495c-b23d-e115f0adeaf9",
+      "result_id": "361bca6d-a36c-413d-8ce4-5179aa625b3d"
+    },
+    {
+      "claim_id": "a5b03f67-dadf-4e6b-ab03-1e77a13f6c90",
+      "result_id": "0331c011-84db-472b-8e6c-69392ee66fa6"
+    },
+    {
+      "claim_id": "1af9b7d1-7c82-45fa-ade3-0201af42d25d",
+      "result_id": "0331c011-84db-472b-8e6c-69392ee66fa6"
+    },
+    {
+      "claim_id": "91885b9d-b38a-4004-a6b3-7ee179c3c4fd",
+      "result_id": "0331c011-84db-472b-8e6c-69392ee66fa6"
+    },
+    {
+      "claim_id": "ced317ab-1527-44a3-9673-3b22a8191930",
+      "result_id": "0331c011-84db-472b-8e6c-69392ee66fa6"
+    },
+    {
+      "claim_id": "c2dec37c-7aa0-412d-a8dd-bb60b115a721",
+      "result_id": "ad9fad44-e45d-4298-9af2-2368ab4d77f0"
+    },
+    {
+      "claim_id": "905f5ab7-eeb5-47ce-af3c-f2cb5583cdb9",
+      "result_id": "ad9fad44-e45d-4298-9af2-2368ab4d77f0"
+    },
+    {
+      "claim_id": "1963e9a9-f4a2-4a7b-aa0b-389a2572113b",
+      "result_id": "ad9fad44-e45d-4298-9af2-2368ab4d77f0"
+    },
+    {
+      "claim_id": "3f767208-9478-4957-9e23-afb3278eeeda",
+      "result_id": "c13aa48b-4c7e-4117-8221-3d5dbbe0dcae"
+    },
+    {
+      "claim_id": "d0ea32d2-a13b-4d69-84ba-f16a426fb05a",
+      "result_id": "c13aa48b-4c7e-4117-8221-3d5dbbe0dcae"
+    },
+    {
+      "claim_id": "15cba7c3-41f9-4da3-bcab-9ba7a0271023",
+      "result_id": "c13aa48b-4c7e-4117-8221-3d5dbbe0dcae"
+    },
+    {
+      "claim_id": "5d7f657e-9bf5-4619-86b3-24e4f95d3a0f",
+      "result_id": "c13aa48b-4c7e-4117-8221-3d5dbbe0dcae"
+    },
+    {
+      "claim_id": "734f1e41-ff0b-4c41-b070-8fd90a51ad5a",
+      "result_id": "c13aa48b-4c7e-4117-8221-3d5dbbe0dcae"
+    },
+    {
+      "claim_id": "b7c8bcfc-0bfa-43f1-8297-c0a3e4b11918",
+      "result_id": "5e85bceb-cc9c-4ec3-9038-217218eafc3f"
+    },
+    {
+      "claim_id": "8ca14ba1-95ef-4ac1-8192-3f10f75439bd",
+      "result_id": "5e85bceb-cc9c-4ec3-9038-217218eafc3f"
+    },
+    {
+      "claim_id": "54f6972a-2466-44f0-a01e-0a4fe4bb8609",
+      "result_id": "5e85bceb-cc9c-4ec3-9038-217218eafc3f"
+    },
+    {
+      "claim_id": "d28faa1a-1438-4a38-b953-8c93d96359dc",
+      "result_id": "5e85bceb-cc9c-4ec3-9038-217218eafc3f"
+    },
+    {
+      "claim_id": "5e10f84c-b955-4e92-bc92-58e6259ddfaa",
+      "result_id": "0c0d17a9-904e-48c1-b9a6-1c66a9bb3a77"
+    },
+    {
+      "claim_id": "8c9d893d-9b7d-4f7d-bd24-05a366ee6d70",
+      "result_id": "0c0d17a9-904e-48c1-b9a6-1c66a9bb3a77"
+    },
+    {
+      "claim_id": "35dddd16-950a-47e7-b48d-1fc562fb3003",
+      "result_id": "7ba121ed-f285-4624-8df7-cecf32953015"
+    },
+    {
+      "claim_id": "d57d65df-19cd-4f5f-a6b5-7a1a53657dfa",
+      "result_id": "7ba121ed-f285-4624-8df7-cecf32953015"
+    },
+    {
+      "claim_id": "24fb7255-5cf7-4f72-ad02-406f34620a78",
+      "result_id": "dc950b53-a5d3-4690-b655-6b607fa71247"
+    },
+    {
+      "claim_id": "820d7b3f-499a-4383-b10b-31e1f3a7001a",
+      "result_id": "d147c943-2de4-48a7-a3c6-e0ddd13cca16"
+    },
+    {
+      "claim_id": "42276a42-dc4a-473b-a757-248bd57bc125",
+      "result_id": "d147c943-2de4-48a7-a3c6-e0ddd13cca16"
+    },
+    {
+      "claim_id": "05531379-a842-4808-8322-f2510dd80f5f",
+      "result_id": "d147c943-2de4-48a7-a3c6-e0ddd13cca16"
+    },
+    {
+      "claim_id": "2b29c4a5-e91c-4422-96df-45146bb2009d",
+      "result_id": "6437ac15-989c-4dd9-88cf-78ad7e712328"
+    },
+    {
+      "claim_id": "306764cf-c0e2-47f7-8af7-cb3c6ea90157",
+      "result_id": "6437ac15-989c-4dd9-88cf-78ad7e712328"
+    },
+    {
+      "claim_id": "95452fb7-cd87-4611-b757-51050f44d75c",
+      "result_id": "6437ac15-989c-4dd9-88cf-78ad7e712328"
+    },
+    {
+      "claim_id": "b55bf2c2-07a0-465f-ad07-7c82aa247f75",
+      "result_id": "dca60938-031b-4808-b856-04188e663e8a"
+    },
+    {
+      "claim_id": "06654ddd-ee09-4203-9d9f-19663ba5149a",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "c98ee311-bace-4dfd-93db-8e10fc53105a",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "26407bfd-4a6a-4c3e-ad62-9e0de70ac372",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "218194b7-765c-4f2a-a6a8-b8d81a1f747a",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "d9703655-408e-4f09-a861-3c129df47e2d",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "cdd6cc49-fb7d-4cd3-afd5-88a224d2c8ad",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "3ff14a7e-4710-4549-9cb1-02d4781aa054",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "9e41584b-cfd1-42cf-8f5a-7150f0d3076e",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "5b4a106d-a2bc-4ae3-8b34-ddc1f533bde6",
+      "result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca"
+    },
+    {
+      "claim_id": "af3e111a-3e69-434c-a63c-bd7660fe2410",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "67f48e87-1316-40e2-9b3e-60df53731fa6",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "c7542f07-f98c-4204-aa6e-5412ff3cf921",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "5baeb271-f9b0-44f5-a129-260427674886",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "c3ffc9af-a49f-474c-8791-3a37f1fb33fa",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "3ce83442-923c-4082-973c-acf819bc3805",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "f0410f95-a4bc-4bee-aed4-f55d93bf9818",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "802224dd-229d-40e1-9d98-922c232899d4",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "b1b2a277-fa9e-4dec-96b0-66517066a12e",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "91470663-472f-42b8-aa7c-b1522bb6427c",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "51c7833c-cb9d-4cb3-ac85-b43870747a58",
+      "result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145"
+    },
+    {
+      "claim_id": "976bb018-7fb5-41f7-bf72-d94a76d45f8b",
+      "result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe"
+    },
+    {
+      "claim_id": "4d16f131-2575-4562-9d6f-f84bacbd1dd0",
+      "result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe"
+    },
+    {
+      "claim_id": "f0868313-ac54-4ded-b086-a0185f5de488",
+      "result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe"
+    },
+    {
+      "claim_id": "f01a4182-bb91-42e7-89f8-eb3a5590df57",
+      "result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe"
+    },
+    {
+      "claim_id": "0d48c1aa-5bde-4b53-ab59-deb0c6464b53",
+      "result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe"
+    },
+    {
+      "claim_id": "184eae41-ab7a-45ab-b562-3e6e15e729f5",
+      "result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe"
+    },
+    {
+      "claim_id": "872dac50-93a2-41d4-b620-24b52095a1b0",
+      "result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe"
+    },
+    {
+      "claim_id": "f7877fda-264f-4336-a88e-8910869b33e5",
+      "result_id": "81a956e9-07db-4126-b6c8-882bd081c50d"
+    },
+    {
+      "claim_id": "378ce2cc-72fe-4369-a1b0-d11dc3262b14",
+      "result_id": "81a956e9-07db-4126-b6c8-882bd081c50d"
+    },
+    {
+      "claim_id": "599ab54b-c710-4918-91fc-6f13824cdf71",
+      "result_id": "81a956e9-07db-4126-b6c8-882bd081c50d"
+    },
+    {
+      "claim_id": "d3de135a-71e6-4e45-ac11-a3b28a5b888d",
+      "result_id": "0cde1dde-f8a0-47bb-90f1-2ea5abb54f39"
+    },
+    {
+      "claim_id": "679dbf67-6c70-4df0-a560-8df49145d873",
+      "result_id": "0cde1dde-f8a0-47bb-90f1-2ea5abb54f39"
+    },
+    {
+      "claim_id": "16ac0cf9-344b-4d57-af17-14b1421ab0bd",
+      "result_id": "51c0f793-166e-4f86-87be-bcc01538d60e"
+    },
+    {
+      "claim_id": "bed6e3dc-a0d5-4b58-8e8c-48855170162a",
+      "result_id": "51c0f793-166e-4f86-87be-bcc01538d60e"
+    },
+    {
+      "claim_id": "3f66ac43-20c3-4141-a1f1-fe5713e56ccd",
+      "result_id": "51c0f793-166e-4f86-87be-bcc01538d60e"
+    },
+    {
+      "claim_id": "5cb9cbae-358d-4ae2-8c58-8be2207aae5b",
+      "result_id": "51c0f793-166e-4f86-87be-bcc01538d60e"
+    },
+    {
+      "claim_id": "273d3c36-a43c-4ab1-8459-2fddc85e03f2",
+      "result_id": "3e3bf22f-f240-4572-bd6c-92fd6036504c"
+    },
+    {
+      "claim_id": "a5b03f67-dadf-4e6b-ab03-1e77a13f6c90",
+      "result_id": "3e3bf22f-f240-4572-bd6c-92fd6036504c"
+    },
+    {
+      "claim_id": "ced317ab-1527-44a3-9673-3b22a8191930",
+      "result_id": "3e3bf22f-f240-4572-bd6c-92fd6036504c"
+    },
+    {
+      "claim_id": "962065ea-5008-495c-b23d-e115f0adeaf9",
+      "result_id": "3e3bf22f-f240-4572-bd6c-92fd6036504c"
+    },
+    {
+      "claim_id": "91470663-472f-42b8-aa7c-b1522bb6427c",
+      "result_id": "f39a3e1b-f6e1-40e6-b2f6-97014d53bd26"
+    },
+    {
+      "claim_id": "51c7833c-cb9d-4cb3-ac85-b43870747a58",
+      "result_id": "f39a3e1b-f6e1-40e6-b2f6-97014d53bd26"
+    },
+    {
+      "claim_id": "426b640e-4846-473c-b913-aa618e26459b",
+      "result_id": "f39a3e1b-f6e1-40e6-b2f6-97014d53bd26"
+    },
+    {
+      "claim_id": "54c32044-e3db-4fc9-a126-f1951f6ceca7",
+      "result_id": "f39a3e1b-f6e1-40e6-b2f6-97014d53bd26"
+    },
+    {
+      "claim_id": "22f2aa17-86f9-4fa5-a302-20f227d72d08",
+      "result_id": "f39a3e1b-f6e1-40e6-b2f6-97014d53bd26"
+    },
+    {
+      "claim_id": "c2dec37c-7aa0-412d-a8dd-bb60b115a721",
+      "result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780"
+    },
+    {
+      "claim_id": "905f5ab7-eeb5-47ce-af3c-f2cb5583cdb9",
+      "result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780"
+    },
+    {
+      "claim_id": "1963e9a9-f4a2-4a7b-aa0b-389a2572113b",
+      "result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780"
+    },
+    {
+      "claim_id": "15cba7c3-41f9-4da3-bcab-9ba7a0271023",
+      "result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780"
+    },
+    {
+      "claim_id": "5d7f657e-9bf5-4619-86b3-24e4f95d3a0f",
+      "result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780"
+    },
+    {
+      "claim_id": "734f1e41-ff0b-4c41-b070-8fd90a51ad5a",
+      "result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780"
+    },
+    {
+      "claim_id": "8c9d893d-9b7d-4f7d-bd24-05a366ee6d70",
+      "result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e"
+    },
+    {
+      "claim_id": "219e06ec-2276-4205-ba87-7d9648a3a323",
+      "result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e"
+    },
+    {
+      "claim_id": "20a1f4a8-5d92-4c78-a3b7-c9ccccfda6df",
+      "result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e"
+    },
+    {
+      "claim_id": "3d771a94-e60d-45e8-9618-1ae67a90e0ef",
+      "result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e"
+    },
+    {
+      "claim_id": "6077aa60-d1e5-4e5e-b2be-d28dab0ba8ac",
+      "result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e"
+    },
+    {
+      "claim_id": "679dbf67-6c70-4df0-a560-8df49145d873",
+      "result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e"
+    },
+    {
+      "claim_id": "35dddd16-950a-47e7-b48d-1fc562fb3003",
+      "result_id": "aa5889f1-e24b-4ed0-a860-84104472a79d"
+    },
+    {
+      "claim_id": "d57d65df-19cd-4f5f-a6b5-7a1a53657dfa",
+      "result_id": "aa5889f1-e24b-4ed0-a860-84104472a79d"
+    },
+    {
+      "claim_id": "24fb7255-5cf7-4f72-ad02-406f34620a78",
+      "result_id": "aa5889f1-e24b-4ed0-a860-84104472a79d"
+    },
+    {
+      "claim_id": "06654ddd-ee09-4203-9d9f-19663ba5149a",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "c98ee311-bace-4dfd-93db-8e10fc53105a",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "26407bfd-4a6a-4c3e-ad62-9e0de70ac372",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "218194b7-765c-4f2a-a6a8-b8d81a1f747a",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "d9703655-408e-4f09-a861-3c129df47e2d",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "cdd6cc49-fb7d-4cd3-afd5-88a224d2c8ad",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "3ff14a7e-4710-4549-9cb1-02d4781aa054",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "9e41584b-cfd1-42cf-8f5a-7150f0d3076e",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "5b4a106d-a2bc-4ae3-8b34-ddc1f533bde6",
+      "result_id": "baf1d855-4381-4431-875b-2fd4642246a6"
+    },
+    {
+      "claim_id": "af3e111a-3e69-434c-a63c-bd7660fe2410",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "67f48e87-1316-40e2-9b3e-60df53731fa6",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "c7542f07-f98c-4204-aa6e-5412ff3cf921",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "5baeb271-f9b0-44f5-a129-260427674886",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "c3ffc9af-a49f-474c-8791-3a37f1fb33fa",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "3ce83442-923c-4082-973c-acf819bc3805",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "f0410f95-a4bc-4bee-aed4-f55d93bf9818",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "802224dd-229d-40e1-9d98-922c232899d4",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "b1b2a277-fa9e-4dec-96b0-66517066a12e",
+      "result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe"
+    },
+    {
+      "claim_id": "820d7b3f-499a-4383-b10b-31e1f3a7001a",
+      "result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21"
+    },
+    {
+      "claim_id": "42276a42-dc4a-473b-a757-248bd57bc125",
+      "result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21"
+    },
+    {
+      "claim_id": "05531379-a842-4808-8322-f2510dd80f5f",
+      "result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21"
+    },
+    {
+      "claim_id": "2b29c4a5-e91c-4422-96df-45146bb2009d",
+      "result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21"
+    },
+    {
+      "claim_id": "306764cf-c0e2-47f7-8af7-cb3c6ea90157",
+      "result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21"
+    },
+    {
+      "claim_id": "95452fb7-cd87-4611-b757-51050f44d75c",
+      "result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21"
+    },
+    {
+      "claim_id": "b55bf2c2-07a0-465f-ad07-7c82aa247f75",
+      "result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21"
+    },
+    {
+      "claim_id": "b7c8bcfc-0bfa-43f1-8297-c0a3e4b11918",
+      "result_id": "6e5195a3-54db-45c4-964f-5a817e191525"
+    },
+    {
+      "claim_id": "8ca14ba1-95ef-4ac1-8192-3f10f75439bd",
+      "result_id": "6e5195a3-54db-45c4-964f-5a817e191525"
+    },
+    {
+      "claim_id": "54f6972a-2466-44f0-a01e-0a4fe4bb8609",
+      "result_id": "6e5195a3-54db-45c4-964f-5a817e191525"
+    },
+    {
+      "claim_id": "d28faa1a-1438-4a38-b953-8c93d96359dc",
+      "result_id": "6e5195a3-54db-45c4-964f-5a817e191525"
+    },
+    {
+      "claim_id": "5e10f84c-b955-4e92-bc92-58e6259ddfaa",
+      "result_id": "6e5195a3-54db-45c4-964f-5a817e191525"
+    },
+    {
+      "claim_id": "c796ec7b-bade-44f3-8d3f-6b11083a7904",
+      "result_id": "9a8de6c5-30fc-4986-aec5-1b3fdb9c9c31"
+    },
+    {
+      "claim_id": "652efe90-df9a-4014-a421-210f9f242fb6",
+      "result_id": "9a8de6c5-30fc-4986-aec5-1b3fdb9c9c31"
+    },
+    {
+      "claim_id": "c128dcd6-e57a-4596-95f7-15c0cb04f9db",
+      "result_id": "9a8de6c5-30fc-4986-aec5-1b3fdb9c9c31"
+    },
+    {
+      "claim_id": "b6e0b9b4-ac14-40db-8cca-46840d9d35fc",
+      "result_id": "9a8de6c5-30fc-4986-aec5-1b3fdb9c9c31"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "4f40ade1-47da-4cfb-b417-ce51df69e439",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7239f8de-0896-43cd-ae82-483ae35d49aa",
+      "peer_result_id": "51c0f793-166e-4f86-87be-bcc01538d60e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C31, C32, C51, C52. Both evaluations find the quantitative comparison between calculated potential DNA flux and measured cfDNA levels to be well-supported. OpenEval emphasizes the methodology and 1000-fold variation demonstration, while peer reviewers affirm the evidence is 'convincing' with methodology concerns addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "dec0c504-67c8-47b8-b8fa-ab98a3a5eb6b",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "fb6c7cb3-7eb1-46b0-aa42-179cfb289fca",
+      "peer_result_id": "baf1d855-4381-4431-875b-2fd4642246a6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on background claims C1-C9. Both evaluations accept these as established foundational knowledge. OpenEval notes appropriate citations and marks C9 as appropriately speculative, while peer reviewers accept this framework as context for fundamental biological questions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "2dbe341b-056b-42d6-8dab-1d9732fdeee9",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "f23bc61c-4f3f-497e-9c9a-914e98b68145",
+      "peer_result_id": "d7ecfedc-eddb-48ba-a4fe-8863565177fe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C10-C18 regarding cfDNA applications and deconvolution methods. OpenEval finds these well-established with appropriate citations, peer reviewers accept this context including specific mention of prenatal diagnostics success (C10-C18 overlap).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "d472d337-8268-4850-ac8f-456c8a97d767",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "5e85bceb-cc9c-4ec3-9038-217218eafc3f",
+      "peer_result_id": "6e5195a3-54db-45c4-964f-5a817e191525",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C39-C42 about ultrashort fragments and technical cfDNA characteristics. OpenEval finds the 1.5x correction factor appropriately applied with sound reasoning, peer reviewers implicitly accept these technical details as supporting the overall model without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "aaf32905-fa94-47e5-a61f-7b41d18f5f56",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "361bca6d-a36c-413d-8ce4-5179aa625b3d",
+      "peer_result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on phagocytic clearance mechanism (C45-C48, C53, C60). OpenEval rates as UNCERTAIN, noting the hypothesis is speculative and requires validation in humans despite mouse studies. Peer reviewers rate as SUPPORTED, praising the mechanistic reasoning about DNA degradation without requesting alternative explanations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "aafc1748-b9db-41d9-8eff-73a200eda26d",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "0331c011-84db-472b-8e6c-69392ee66fa6",
+      "peer_result_id": "3e3bf22f-f240-4572-bd6c-92fd6036504c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address erythrocyte findings (C54, C57) but with different claim groupings. OpenEval evaluates C54-C57 as SUPPORTED based on quantitative analysis and erythroblastic island organization. Peer review groups C53, C54, C57, C60 together as SUPPORTED, treating the mechanistic interpretation as a valuable contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "aa67bc05-ce79-4e0d-9bfa-67f60ffb261a",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ad9fad44-e45d-4298-9af2-2368ab4d77f0",
+      "peer_result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C36, C62, C63 regarding low-turnover cell types falling below detection limits. OpenEval finds the quantitative comparison and inference logically sound, peer reviewers accept the analytical framework including these predictions about undetectable cell types.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "1f62ccc8-ac8a-40a1-ae56-2396218537f3",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "c13aa48b-4c7e-4117-8221-3d5dbbe0dcae",
+      "peer_result_id": "13eb5cb8-6570-4b1d-9b79-afc388869780",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on breast epithelial cells (C64-C66). OpenEval rates as UNCERTAIN, noting the speculation about exceptionally efficient local clearance requires validation. Peer reviewers include these claims (C64-C66) in their SUPPORTED evaluation of detection limit interpretations without expressing concern about the speculative nature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "38f02876-c377-40e7-8ed4-f697c40e247d",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "7ba121ed-f285-4624-8df7-cecf32953015",
+      "peer_result_id": "aa5889f1-e24b-4ed0-a860-84104472a79d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on correlation trends (C58, C59, C61). OpenEval rates C58-C59 as UNCERTAIN, noting limited cell types and problematic extrapolation with speculative mechanistic interpretation. Peer reviewers rate these interpretive claims as SUPPORTED, accepting the mechanistic insights for disease interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "729af8cf-39c2-4ddd-b0d0-cc28856eecf8",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "dc950b53-a5d3-4690-b655-6b607fa71247",
+      "peer_result_id": "aa5889f1-e24b-4ed0-a860-84104472a79d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on claim C61 about macrophage dysfunction implications. OpenEval rates as UNCERTAIN, calling it explicitly speculative and requiring experimental validation. Peer reviewers include C61 in SUPPORTED evaluation, accepting implications for disease diagnosis without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "58b96374-4d14-4d02-8b12-37254540a65f",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1558af85-4d66-4ced-96aa-985c1d948baa",
+      "peer_result_id": "f39a3e1b-f6e1-40e6-b2f6-97014d53bd26",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C28-C30 regarding cfDNA tissue sources. OpenEval finds citations and logical explanations well-supported, peer reviewers accept tissue-specific findings without question as being of great interest to the community.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "7e221a6a-ddef-4f2a-be32-b24d5bbe11c2",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "1558af85-4d66-4ced-96aa-985c1d948baa",
+      "peer_result_id": "9a8de6c5-30fc-4986-aec5-1b3fdb9c9c31",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C74-C76 about high-turnover tissues with external shedding routes. OpenEval finds the explanation logically consistent with appropriate citations, peer reviewers accept this explanatory information supporting the selective cfDNA representation model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "5de05187-6459-460a-8122-0bab3079c896",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "0c0d17a9-904e-48c1-b9a6-1c66a9bb3a77",
+      "peer_result_id": "6e5195a3-54db-45c4-964f-5a817e191525",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C43 regarding cfDNA half-life. OpenEval finds C43-C44 well-supported by citations and logical reasoning about systemic clearance, peer reviewers accept C43 among technical details supporting the overall model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "ee722fc5-7412-49e6-9f8a-7bccc1eb618f",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "0c0d17a9-904e-48c1-b9a6-1c66a9bb3a77",
+      "peer_result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C44 about systemic clearance. OpenEval finds the reasoning about half-life contradictions well-supported, peer reviewers accept C44 as part of mechanistic reasoning about DNA degradation without objection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "ef3548b6-5e83-425d-b75f-b3790327eaaf",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "d147c943-2de4-48a7-a3c6-e0ddd13cca16",
+      "peer_result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on methodological claims C78-C80. OpenEval finds the study population description and limitation acknowledgment appropriate, peer reviewers explicitly state 'previous concerns about methodology have been addressed,' accepting the framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "b55e004e-eaa0-4123-b068-19f6696294f6",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "6437ac15-989c-4dd9-88cf-78ad7e712328",
+      "peer_result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on methodological claims C84-C86. OpenEval finds the approaches standard with appropriate citations and internal validation, peer reviewers accept the methodology as addressed in this review round.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "20c1059b-2a31-4162-b683-0c65d05ee040",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "dca60938-031b-4808-b856-04188e663e8a",
+      "peer_result_id": "6e544726-3426-40a3-8b2c-d82d2a894a21",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C87 regarding ultrashort fragment correction. OpenEval finds the 1.5x correction factor appropriately applied with proper uncertainty propagation, peer reviewers accept this as part of the addressed methodological framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "bff091b4-321d-4eee-aa38-dc1499da45f3",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "6609fe1c-a04e-40c9-96f7-4f5df6ecdffe",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C21-C27 about knowledge gaps and challenges as SUPPORTED with appropriate citations. No corresponding peer review evaluation explicitly addresses these motivating knowledge gaps, though they implicitly accept the research justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "0d88c376-8ec6-47db-9dbf-447ec9f613bd",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "81a956e9-07db-4126-b6c8-882bd081c50d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C33-C35 about technical parameters for cfDNA analysis as SUPPORTED. No corresponding peer review evaluation explicitly addresses these detection limit parameters, though they are implicitly accepted in the analytical framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    },
+    {
+      "id": "84e03797-c7c1-4c2f-968f-2e55aed6b370",
+      "submission_id": "e411bbba-fef6-452d-a621-71a2d0b4025e",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "0cde1dde-f8a0-47bb-90f1-2ea5abb54f39",
+      "peer_result_id": "9cfa58fa-e82d-4360-bd68-122d9ef4413e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claim C50. OpenEval evaluates C49-C50 as SUPPORTED, finding the inference about incomplete phagocytic degradation reasonable. Peer reviewers include C50 in their SUPPORTED evaluation of mechanistic reasoning without specific comment on intracellular fragmentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:36:19.431514Z"
+    }
+  ]
+}

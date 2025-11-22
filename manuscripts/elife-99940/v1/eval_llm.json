@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C41",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Ferumoxytol contrast agent effectively reversed gray-white matter contrast and enhanced vessel visibility, with cortical \u0394R2* measured at 38.9 \u00b1 1.4 s\u207b\u00b9, serving as an indirect proxy for cerebral blood volume (CBV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C40-C41, and C122-C124 collectively demonstrate successful ferumoxytol administration with quantitative measurements shown in Table 1 and visual confirmation in Figures 1A-B. The methodology is well-established (Boxerman et al., 1995) and measurements are consistent with expected values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C45"
+    ],
+    "result": "CBV varies threefold across the brain, with highest vascular volume in the inferior colliculus and lowest in the corpus callosum, comparable to mouse studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C45 are directly supported by measurements shown in Figure 1F and Table 1. The threefold variation is quantitatively demonstrated and validated against published mouse data (Kirst et al., 2020), providing cross-species validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C80"
+    ],
+    "result": "In the cerebral cortex, CBV is notably high in primary sensory areas (especially V1 layer 4) and low in association areas, reflecting distinct energy demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C54, and C80 are supported by data in Figures 3B, 3D, and 4A showing clear regional differences. The pattern is consistent with known energy demands and cytochrome oxidase activity in these regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C113"
+    ],
+    "result": "Clustering analysis reveals extensive replication of translaminar vascular network motifs that vary with cytoarchitectonic types (Kendall's tau \u03c4 = 0.69, p < 10\u207b\u2075), suggesting distinct computational energy supply requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C63-C65, and C113 are supported by clustering analysis in Figure 5 with statistically significant association between CBV and cytoarchitecture. The interpretation linking vascular motifs to energy requirements is reasonable given the data, though somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Regionally, baseline R2* and CBV exhibit positive correlations with neuron density and negative correlations with receptor densities across cortical layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 and C70-C72 are supported by regression analysis shown in Figures 6E-F. The statistical relationships are clearly demonstrated, though the negative correlation with receptor density is somewhat counterintuitive and requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Adjusting image resolution to 0.23 mm isotropic based on critical sampling frequency allows delineation of approximately 30% (1.9-2.2 vessels/mm\u00b2) of arterial-venous vessels compared to anatomical ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C48-C50 are supported by vessel detection analysis in Figure 2E comparing MRI measurements to anatomical data from Weber et al., 2008 and Zheng et al., 1991. The 30% detection rate is clearly quantified and validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Around cortical midthickness, R2* spatial distribution resembled \u0394R2* vascular volume, but across cortical layers these measures exhibited reversed patterns with R2* increasing and \u0394R2* decreasing toward white matter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are directly demonstrated in Figures 1D-E and 1G showing the spatial similarity at midthickness and opposing laminar gradients. The interpretation of R2* as aggregate measure is supported by citation to Langkammer et al., 2012.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In V1, \u0394R2* more closely resembled microcapillary and oxidative metabolism than large vessel volume, with V2/V1 ratio (79 \u00b1 5%) and gray/white matter ratio (2.2 \u00b1 0.1) in excellent agreement with histological assessments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are validated against anatomical ground truth from Weber et al., 2008 and Zheng et al., 1991 as shown in Figures 3E-F and Table 1. The quantitative agreement provides strong validation of the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Sharp \u0394R2* gradients were observed at cortical area boundaries including V1/V2, area 3/4, and area 2/3, attributable to capillary density differences between areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are demonstrated in Figures 3D, 4A-B with gradient analysis. The findings are supported by citations to histological studies (Duvernoy et al., 1981; Zheng et al., 1991; Weber et al., 2008) showing corresponding capillary density differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "M132 atlas parcellated \u0394R2* was positively correlated with intra-cortical myelin (R = 0.49 \u00b1 0.16) and negatively correlated with cortical thickness (R = -0.37 \u00b1 0.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 report correlation analyses with moderate effect sizes. While statistically significant, the correlations are modest and the biological interpretation requires caution. The analysis is straightforward but the mechanistic links are complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "An extensive arterio-venous pial vessel network spanning almost the entire cortical surface was revealed in superficial layers (EL1a-2a), while continuous signal-dropout clusters were largely absent in middle and deep layers (EL2b-6b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are demonstrated in Figure 2A and Figure 2\u2014figure supplement 1A-B showing layer-specific vessel patterns. The findings are consistent across subjects and represent expected vascular anatomy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Periodogram analysis revealed dominant spatial frequencies of ~0.6 1/mm in superficial layers (pial vessels), bimodal distribution (0.6 and 1.2 1/mm) in middle layers, and ~1 1/mm in deep layers (white matter arteries).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by periodogram analysis in Figure 2D. The interpretations of vessel types are reasonable inferences based on known vascular anatomy, though direct validation of vessel identity is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Baseline R2* is associated with cytoarchitecture (\u03c4 = 0.73, p < 10\u207b\u2076), with isocortical areas showing high \u0394R2* in EL4 and systematically higher vascularity in input layer (EL4a/b) than output layer (EL5a/b, p < 10\u207b\u00b2\u2075), while agranular areas showed weak laminar differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by statistical analyses and clustering results in Figure 5. The highly significant p-values and consistent patterns across areas provide strong support, though the functional interpretation is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C30"
+    ],
+    "result": "Gradient-echo imaging is more sensitized toward large vessels and vessel orientation relative to B0 introduces strong layer-specific biases in \u0394R2* measurements, representing known methodological limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 and C30 acknowledge well-established limitations supported by citations (Boxerman et al., 1995; Ogawa et al., 1993; Zhao et al., 2006) and demonstrated in Figure 1\u2014figure supplement 1C. The authors appropriately address these confounds through B0 correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Based on anatomical data, total vessel density in V1 is 6.3 vessels/mm\u00b2, while MRI-measured vessel length density (~8 mm/mm\u00b3) corresponds to ~10% of ground-truth, with anatomical studies accounting for branching reporting up to 30 vessels/mm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 synthesize cited anatomical data (Weber et al., 2008; Zheng et al., 1991; Keller et al., 2011; Adams et al., 2015) with study measurements. The calculations are transparent and the limitations of MRI detection are clearly acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Primary sensory areas (V1, area 3, auditory cortex, MT) demonstrate elevated cytochrome oxidase activity, but the study does not support the hypothesis that V1 CO blobs could be delineated using contrast-agent MRI, aligning with anatomical studies challenging high capillary density in blobs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 appropriately cite CO activity studies and use periodogram analysis (Figure 2D) to test and reject the blob hypothesis. The negative result is well-supported and consistent with recent anatomical studies (Keller et al., 2011; Adams et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Neurons account for 80-90% of cortical energy demand (80% signaling, 20% resting potentials), with extrapolation to zero neuron density yielding large \u0394R2* intercept (~35 1/s, 60% of maximum), supporting that most energy consumption occurs in neuropil (80-90% of gray matter volume) rather than somata (10-20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 synthesize cited energy metabolism literature (Attwell and Laughlin, 2001; Howarth et al., 2012; Wong-Riley, 1989) with regression analysis from Figure 6\u2014figure supplement 1F. The interpretation is reasonable though involves assumptions about energy-CBV relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "\u0394R2* showed positive correlation with parvalbumin interneuron density (R = 0.72, p < 10\u207b\u2076) and negative correlations with calretinin interneuron density (R = -0.61, p < 0.001), dendritic tree size (R = -0.46, p < 0.01), and spine counts (R = -0.37, p = 0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 report correlations using data from Burt et al., 2018 and Elston, 2002. Most correlations are statistically significant with Bonferroni correction, though C97 (spines) is marginal (p = 0.06). The pattern is biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The range of superficial R2* values (~6 s\u207b\u00b9) is 12-30 times larger than task-based BOLD fMRI \u0394R2* (0.2-0.5 1/s), suggesting superficial R2* may serve as a more accurate proxy for total deoxyhemoglobin content and oxygen consumption scaling with neuron density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 make reasonable calculations based on data (Figure 6\u2014figure supplement 1D) and cited physiological parameters (Raichle and Mintun, 2006), but the interpretation that superficial R2* is a \"more accurate proxy\" for oxygen consumption requires additional validation beyond correlation with neuron density.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Myelin may indirectly contribute to increased energy consumption by facilitating higher frequency firing, with cortical myelin enwrapping parvalbumin interneuron axons that exhibit higher mitochondrial volume and threefold higher CO activity than principal neurons, making them vulnerable to vascular failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 synthesize multiple cited studies (Perge et al., 2012; Stedehouder et al., 2017; Guly\u00e1s et al., 2006; Kann, 2016) to build a coherent narrative linking myelin, parvalbumin interneurons, and metabolic vulnerability. The logic is sound though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CBV decreases along the canonical circuit pathway (L4\u2192L2/3\u2192L5) in V1 and along the cortical hierarchy (V1\u2192V2\u2192V3&4\u2192MT\u21927A), with V1 L4 showing 50% higher CO activity than L5 and the inferior colliculus showing highest vascular volume in auditory hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by data in Figures 3F and 6\u2014figure supplement 3 and citations to hierarchical organization studies (Felleman and Van Essen, 1991; Markov et al., 2014a). The pattern is consistent with feedforward processing energy demands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study reveals large-scale replication of translaminar vascular network motifs in primates, with strongest distinction between isocortex and allocortex, differing from mice where sensory vs motor-integrative areas show strongest distinction and somatosensory cortex shows highest vascularization (vs V1 in macaque).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C114-C117 compare primate findings (Figure 5) with mouse data (Kirst et al., 2020) and theoretical frameworks (Douglas and Martin, 2007). The species differences are clearly demonstrated and appropriately interpreted as potential evolutionary adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The combined surface density of intra-cortical vessels is ~7 vessels/mm\u00b2, requiring minimal sampling frequency of ~14 voxels/mm\u00b2 (~0.26 mm isotropic) according to sampling theorem, with ferumoxytol offering advantages over gadolinium for high-resolution vascular imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 appropriately apply Nyquist sampling theorem to cited vessel density data (Weber et al., 2008) and cite ferumoxytol advantages (Buch et al., 2022). The theoretical framework for resolution requirements is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Quantitative R2* measurements before and after ferumoxytol injection show cortical values of 17.5 \u00b1 0.6 and 56.4 \u00b1 1.3 s\u207b\u00b9 respectively (\u0394R2* = 38.9 \u00b1 1.4 s\u207b\u00b9), with cortex/white matter ratios and vascular volumes consistent with anatomical ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 and C125-C129 present quantitative measurements from Table 1 with appropriate error estimates (N=4). The values are internally consistent and validated against cited anatomical data (Weber et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establish that brain vasculature is crucial for nutrient delivery and metabolic clearance, understanding it is vital for clinical applications and fMRI advancement, yet knowledge of primate vascular architecture remains limited despite known anatomical features like layer-specific capillary density variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 provide well-cited background establishing study motivation. These are primarily literature review claims supported by appropriate citations (Iadecola, 2013; Duvernoy et al., 1981; Ji et al., 2021) and represent established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background claims establish that recent advances in mouse brain imaging show threefold regional variation and moderate laminar variation, while primate research is limited to few cortical regions despite well-documented variations in cellular composition, synaptic density, receptors, connectivity, myelination, and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C31-C39 provide literature-based justification for the study, appropriately citing mouse advances (Ji et al., 2021; Kirst et al., 2020) and limitations of primate studies (Harrison et al., 2002; Weber et al., 2008). These establish the knowledge gap.",
+    "result_type": "MINOR"
+  }
+]

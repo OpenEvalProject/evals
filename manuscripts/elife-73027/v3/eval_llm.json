@@ -2,7 +2,96 @@
   {
     "result_id": "R1",
     "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "SARS-CoV-2 has infected approximately 10% of the world's population and killed a confirmed ~5 million people, but likely considerably more.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1 and C2 present epidemiological statistics about SARS-CoV-2 infection and mortality rates. These are presented as background knowledge without supporting data or citations in the manuscript itself, making them uncertain in the context of this work's original contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Multiple factors including vaccine distribution inequities, waning immunity, and viral variants challenge pandemic containment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are supported by citations to published literature (Diamond et al., 2021; Lavine et al., 2021; Fraser et al., 2004; Wang et al., 2021a; Wang et al., 2021b) discussing these challenges to pandemic containment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The SARS-CoV-2 spike protein is the major surface glycoprotein that mediates viral entry by binding ACE2 and triggering membrane fusion, existing as a homotrimer with S1 and S2 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 describe established structural and functional properties of the spike protein, supported by multiple citations to published literature (Zhou et al., 2020; Wrapp et al., 2020b; Walls et al., 2020; Li et al., 2003; Li, 2016; Letko et al., 2020; Watanabe et al., 2020; Hsieh et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The RBD has been the major target of immunotherapeutics, but RBD point mutants have evolved to bypass neutralizing antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by citations to published literature on immunotherapeutics and viral escape (Hartenian et al., 2020; Wu et al., 2020; Baum et al., 2020; Wang et al., 2021b; Liu et al., 2021a; Weisblum et al., 2020; Garcia-Beltran et al., 2021; Starr et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Nanobodies possess multiple advantages over conventional antibodies including small size (~15 kDa), high affinity, stability, ease of production, low immunogenicity, and potential for nebulized delivery to the lungs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 describe established properties of nanobodies, supported by citations to published literature (Jov\u010devska and Muyldermans, 2020; Muyldermans, 2013; Corti et al., 2021; Revets et al., 2005; Bannas et al., 2017; Chanier and Chames, 2019; Vincke et al., 2009; Duggan, 2018; W\u00f6lfel et al., 2020; Nambulli et al., 2021; Erreni et al., 2020; Van Heeke et al., 2017; Zare et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
       "C23",
+      "C24"
+    ],
+    "result": "453 nanobodies are available against SARS-CoV-2 spike, primarily recognizing RBD regions with many subject to escape variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by citations to published literature on available nanobodies (Niu et al., 2021; Raybould et al., 2021; Schoof et al., 2020; Xiang et al., 2020; Koenig et al., 2021; Huo et al., 2020a; Pymm et al., 2021; Hanke et al., 2020; Cust\u00f3dio et al., 2020; Esparza et al., 2020; Wrapp, 2020a; Dong et al., 2020; Ye et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
       "C25",
       "C26",
       "C27",
@@ -19,19 +108,19 @@
       "C38",
       "C39",
       "C40",
-      "C41",
-      "C42"
+      "C41"
     ],
-    "result": "The authors developed an optimized nanobody generation pipeline that yielded 116 high-quality, highly diverse nanobody candidates against SARS-CoV-2 spike protein. The pipeline involved llama immunization, affinity purification of VHH domains, LC-MS/MS analysis, CDR3 clustering, and selection based on binding intensity, resulting in nanobodies with high sequence and paratope diversity.",
+    "result": "The authors generated a large, diverse repertoire of 116 high-quality nanobodies against SARS-CoV-2 spike by optimizing their generation pipeline, using affinity purification, LC-MS/MS analysis, and CDR3 clustering to maximize diversity.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C23-C42 collectively describe a well-documented methodology with specific numbers (180 candidates screened, 138 validated, 116 selected) and clear selection criteria (>20% binding intensity). The clustering analysis showing minimal overlap between S1 and S2 binders (4/183 clusters) and limited overlap with published work (1/109 clusters with Xiang et al.) supports the diversity claim. The methodology is supported by Figure 1 references.",
+    "evaluation": "Claims C25-C41 describe the nanobody generation methodology and results, supported by Figure 1A-C and detailed methods. The clustering analysis showed minimal overlap between S1 and S2 nanobodies (4/183 clusters), diverse CDR3 lengths (3-22 amino acids), and limited overlap with other published repertoires (1/109 clusters shared with Xiang et al., 2020), demonstrating successful generation of a diverse repertoire.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R2",
+    "result_id": "R8",
     "claim_ids": [
+      "C42",
       "C43",
       "C44",
       "C45",
@@ -40,348 +129,198 @@
       "C48",
       "C49",
       "C50",
-      "C51",
-      "C52"
+      "C51"
     ],
-    "result": "All 116 nanobodies bound with high affinity (>60% with KD < 1 nM, two with picomolar affinities), with 71 binding RBD, 19 binding non-RBD S1, and 26 binding S2. The nanobodies exhibited fast association rates (many kon \u2265 10^6 M^-1s^-1), surpassing typical monoclonal antibodies, with no obvious bias in affinity across spike domains.",
+    "result": "All 116 nanobodies bound with high affinity (>60% with KD < 1 nM, two with picomolar affinities), with 71 binding RBD, 19 binding non-RBD S1, and 26 binding S2, showing fast association rates (many kon \u2265 10^6) that surpass high-performing monoclonal antibodies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C43-C52 are supported by SPR data presented in Tables 1-2 and Figure 2. The specific percentages and affinity values are quantitative measurements. The distribution across spike domains is clearly documented. The comparison to monoclonal antibodies is supported by citations (Tian et al., 2020). The observation that homologous paratopes show no correlation in kinetics is an important finding supported by the data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60"
-    ],
-    "result": "Six of seven tested RBD-binding nanobodies retained strong binding to B.1.1.7/alpha and B.1.351/beta variants, with only S1-23 showing abolished binding to beta variant. Off rates were most affected by variants, and based on epitope mapping, a high percentage of the nanobody collection is expected to remain resistant to escape mutants including delta variant.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C56-C60 are supported by SPR data in Figure 2G and Table 3, showing specific KD values for variant binding. The prediction about delta variant resistance (C60) is supported by subsequent experimental validation (C134-C135) showing S1-1 effectively neutralized delta. The mechanistic insight about off rates (C59) is supported by citations to prior work.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65"
-    ],
-    "result": "The nanobodies demonstrated high thermal stability (Tm 50-80\u00b0C, bulk \u226560\u00b0C) and remained fully active after lyophilization without cryoprotectants, with no significant effects on stability, kinetics, or affinity, indicating suitability for various storage conditions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C61-C65 are supported by DSF data and SPR/DSF analysis pre- and post-freeze-drying (Figure 2E-F). The thermal stability range is consistent with published nanobody properties (Muyldermans, 2013). The lyophilization experiments provide direct evidence for stability claims, which is important for therapeutic development.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C66",
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C73",
-      "C74"
-    ],
-    "result": "Epitope binning using biolayer interferometry and SPR revealed three large, mostly non-overlapping bins for RBD-binding nanobodies (with at least 8 sub-bins by gap statistic), four S1-non-RBD bins, and five S2 bins. Mass photometry demonstrated at least three different nanobodies can bind simultaneously to the RBD.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C66-C74 describe comprehensive epitope mapping supported by Figure 3 data. The binning methodology is clearly described with quantitative analysis (gap statistic). The mass photometry experiments (Figure 3G) provide direct physical evidence for simultaneous binding of multiple nanobodies, which is a key advantage over larger antibodies. The hierarchical clustering and correlation analyses are appropriate methods.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C75",
-      "C76",
-      "C77",
-      "C78",
-      "C79",
-      "C80",
-      "C81",
-      "C82"
-    ],
-    "result": "In pseudovirus neutralization assays, 36% of monomeric nanobodies neutralized with IC50 \u2264100 nM, 23% with IC50 <50 nM, and 17 with IC50 \u226420 nM. The most potent neutralizers mapped to RBD, but importantly, nanobodies binding outside the RBD (S1-non-RBD and S2) also showed neutralizing activity, representing the first evidence of nanobody neutralization outside the RBD.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C75-C82 are supported by pseudovirus neutralization data in Figure 4A-C and Tables 1-2. The specific percentages and IC50 values are quantitative measurements. The novelty claim (C81) about first evidence of non-RBD nanobody neutralization is significant. The mechanistic inference (C82) that neutralization doesn't involve aggregation is logical given nanobodies are monomeric.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C83",
-      "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90"
-    ],
-    "result": "Oligomerization significantly improved neutralization potency for most nanobodies, with dramatic improvements observed (e.g., S1-RBD-35: 12 nM to 70 pM for trimer; S1-23: 6 nM to 90 pM for trimer; S2-7: non-neutralizer to IC50 ~30 nM for tetramer). However, enhancement was not universal and must be determined empirically.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C83-C90 are supported by neutralization data in Figure 4D-F and Table 4. The specific fold-improvements are quantitative measurements. The important caveat (C90) that multimerization doesn't always improve activity is supported by Table 4 data and demonstrates scientific rigor. The conversion of S2-7 from non-neutralizer to neutralizer upon dimerization is particularly notable.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C91",
-      "C92",
-      "C93",
-      "C94",
-      "C95"
-    ],
-    "result": "All tested nanobodies that neutralized pseudovirus also showed potent neutralization of authentic SARS-CoV-2 in plaque/focus reduction assays and in primary human airway epithelial cell (ALI) cultures. S1-1 potently neutralized at all concentrations tested, S1-23 showed dose-dependent inhibition (enhanced as trimer), and nanobodies inhibited at lower doses than recombinant ACE2.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C95 are supported by authentic virus neutralization data (Figure 5A, Table 6) and ALI culture experiments (Figure 5C). The correlation between pseudovirus and authentic virus assays validates the screening approach. The ALI culture experiments in primary human cells provide physiologically relevant evidence. The comparison to ACE2 (C95) is supported by measured KD values and citations.",
+    "evaluation": "Claims C42-C51 are supported by SPR data presented in Figure 2 and Tables 1-2. The distribution across spike domains and kinetic properties are well-documented. The lower number of non-RBD and S2 nanobodies is reasonably attributed to glycan shielding (C47), supported by citations (Grant et al., 2020; Watanabe et al., 2020).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C100",
-      "C101",
-      "C102"
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
     ],
-    "result": "Escape variant selection identified 32 unique rVSV-SARS-CoV-2 mutants resistant to 22 representative nanobodies. Some mutations matched those selected by human antibodies (e.g., E484K), while others were novel. Combining two nanobodies in cocktails prevented escape in 8/9 cases, with the single escape requiring two mutations (F490V and Y508H), greatly elevating the genetic barrier.",
+    "result": "Six of seven tested nanobodies retained strong binding to B.1.1.7/alpha and B.1.351/beta variants, with S1-23 showing reduced binding to alpha (17 pM to 230 pM) and abolished binding to beta, primarily through effects on off rates.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C96-C102 are supported by escape variant selection data (Table 7, Figure 6\u2014figure supplement 1E). The identification of 32 unique mutants provides comprehensive epitope mapping. The cocktail experiments demonstrate a key therapeutic strategy, with quantitative evidence (8/9 cases) and molecular characterization of the single escape. The conclusion about elevated genetic barrier (C102) is well-supported.",
+    "evaluation": "Claims C52-C56 are supported by SPR data in Figure 2G and Table 3. The variant binding data demonstrate that most nanobodies maintain activity against variants, with quantitative KD measurements provided. The observation that off rates are most affected is supported by citations (VanCott et al., 1994; Magnus, 2013; Steckbeck et al., 2005).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C103",
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108",
-      "C109",
-      "C110",
-      "C111",
-      "C112"
+      "C57",
+      "C58"
     ],
-    "result": "Using Integrative Modeling Platform (IMP) with spatial restraints from escape mutants, cross-linking MS, and epitope binning data, the authors solved integrative structures for 21 neutralizing nanobodies (18 RBD, 1 S1-NTD, 2 S2), classified into 10 groups. Nanobodies bind at sites complementary to glycosylation, concentrated at the glycan-free RBD.",
+    "result": "Nanobodies exhibit thermal stability (Tm 50-80\u00b0C) and maintain stability, kinetics, and affinity after freeze-drying without cryoprotectants.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C103-C112 describe a rigorous integrative modeling approach supported by Figure 6 and Tables 7-8. The methodology combines multiple data types (escape mutants, XL-MS, epitope binning) and was benchmarked against a published structure (Figure 6\u2014figure supplement 2). The classification into 10 groups is supported by the data. The observation about glycosylation complementarity is expected and supported by citations.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C57-C58 are supported by DSF data and lyophilization experiments shown in Figure 2D-F. The thermal stability range is consistent with published nanobody properties (Muyldermans, 2013), and the lyophilization data demonstrate practical stability for therapeutic applications.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C113",
-      "C114",
-      "C115",
-      "C116",
-      "C117",
-      "C118",
-      "C119"
+      "C59",
+      "C60",
+      "C61",
+      "C62"
     ],
-    "result": "Among the repertoire, ~80% of anti-RBD nanobodies are neutralizing, compared to ~20% of anti-S2 and ~60% of non-RBD anti-S1 nanobodies. The RBD-binding nanobodies fall into at least seven groups, with many binding epitopes partially overlapping with known IgG classes but more compact, while many others define previously unreported binding sites. The repertoire explores much of the remaining available epitope space.",
+    "result": "Epitope mapping revealed three large, mostly non-overlapping bins for anti-RBD nanobodies (with at least eight sub-bins by gap statistic), four S1-non-RBD bins, five S2 bins, and demonstrated that at least three different nanobodies can bind simultaneously to the RBD.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C113-C119 are supported by comprehensive data from Figures 3, 4, and 6, with citations to support comparisons with IgG epitopes. The percentages are calculated from the full dataset. The claim about exploring available epitope space (C116) is reasonable given glycosylation constraints (supported by citations) and the diversity of identified epitopes.",
+    "evaluation": "Claims C59-C62 are supported by biolayer interferometry data in Figure 3A-C, gap statistic analysis (Tibshirani et al., 2001), and mass photometry data in Figure 3G. The simultaneous binding of three nanobodies to RBD contrasts with larger immunoglobulins and is supported by citations (Corti et al., 2021; Stewart et al., 1997; Xu et al., 2021).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C120",
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126",
-      "C127",
-      "C128",
-      "C129",
-      "C130",
-      "C131",
-      "C132"
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
     ],
-    "result": "Detailed epitope mapping revealed seven RBD-binding groups with specific characteristics: Groups 3 and 4 overlap with the RBM; Group 1 overlaps with site IIa/class 4 (common nanobody epitope); Groups 2, 6, and 7 define unique binding sites; Group 5 binds adjacent to RBM. Group 8 binds S1-NTD, while Groups 9 (S2-10) and 10 (S2-40) uniquely bind S2 at distinct locations.",
+    "result": "36% of monomeric nanobodies neutralized with IC50s \u2264100 nM (23% <50 nM, 17 at \u226420 nM), with the most potent mapping to RBD, but importantly, nanobodies binding outside the RBD also showed neutralizing activity, representing the first evidence of nanobody neutralization outside the RBD.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C120-C132 provide detailed epitope characterization supported by integrative modeling (Figure 6) and citations comparing to known IgG epitopes. The structural descriptions are consistent with the modeling data and escape mutant locations. The identification of unique binding sites and S2-binding nanobodies represents novel findings.",
+    "evaluation": "Claims C63-C69 are supported by pseudovirus neutralization data in Figure 4A-C. The neutralization of non-RBD binding nanobodies (e.g., S1-64, S1-65) is novel and well-documented. The claim of being 'first evidence' (C69) is a strong statement but appears justified given the literature review presented.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C133",
-      "C134",
-      "C135"
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
     ],
-    "result": "Seven of ten nanobody groups (Groups 1, 2, 5, 7 targeting RBD; Group 8 targeting S1-NTD; Groups 9, 10 targeting S2) do not overlap with mutations in alpha, beta, gamma, and delta VOCs. Experimental validation confirmed S1-1 (Group 1) effectively neutralized delta virus while S1-RBD-35 (Group 6) did not.",
+    "result": "Oligomerization significantly improved IC50s and affinities for most nanobodies, with dramatic improvements observed (e.g., S1-RBD-35: ~12 nM to ~70 pM for trimer; S2-7: non-neutralizer to ~30 nM for tetramer), though enhancement was not universal and must be determined empirically.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C133-C135 are supported by structural mapping (Figure 6\u2014figure supplement 3A) and experimental validation with delta variant (Figure 6\u2014figure supplement 3B). The prediction based on epitope mapping was confirmed experimentally, demonstrating the utility of the structural analysis for predicting variant resistance.",
+    "evaluation": "Claims C70-C75 are supported by oligomerization data in Figure 4D-F and Table 4. The quantitative improvements are well-documented, and the caveat that enhancement is not universal (C75) demonstrates appropriate scientific caution.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C136",
-      "C137",
-      "C138",
-      "C139",
-      "C140",
-      "C141",
-      "C142",
-      "C143",
-      "C144",
-      "C145",
-      "C146",
-      "C147",
-      "C148"
+      "C76",
+      "C77",
+      "C78",
+      "C79"
     ],
-    "result": "Multiple neutralization mechanisms were proposed based on structural modeling: direct ACE2 competition, steric occlusion, RBD stabilization in 'up' conformation (promoting spike disassembly or premature fusion), and blocking RBD dynamics. Group 1 nanobodies bind only 'up' RBD, while Groups 3, 4, 6 are conformation-agnostic. Groups 2, 5, 7 likely stabilize 'up' conformation.",
+    "result": "Seven of 27 tested anti-RBD nanobodies neutralized SARS-CoV-1 pseudovirus, with S1-1, S1-39, and S1-RBD-6 showing similar IC50s against both SARS-CoV-2 and SARS-CoV-1, while S1-23, S1-37, and S1-48 showed no activity against SARS-CoV-1. Additionally, 3 of 11 non-RBD nanobodies neutralized SARS-CoV-1.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C136-C148 propose multiple mechanisms based on structural modeling and established knowledge about RBD dynamics (supported by citations). However, these are largely inferences and speculations rather than directly demonstrated mechanisms. The observation that some Group 1 nanobodies don't neutralize (C142) suggests additional complexity. Direct experimental validation of these mechanisms is not provided.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by SARS-CoV-1 pseudovirus neutralization data in Figure 4K and Table 5. The cross-neutralization data are well-documented and demonstrate the breadth of the nanobody repertoire.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C149",
-      "C150",
-      "C151",
-      "C152",
-      "C153",
-      "C154",
-      "C155",
-      "C156",
-      "C157",
-      "C158",
-      "C159"
+      "C80",
+      "C81",
+      "C82",
+      "C83"
     ],
-    "result": "This study presents the first neutralizing nanobodies binding S2 (Groups 9 and 10). S2-10 binds near heptad repeat 1 (escape mutant S982R) and may restrict conformational changes for fusion, accessible through a ~30 \u00c5 portal suitable for nanobodies but not conventional antibodies. S2-40 binds at the interface between spike subunits. S2 represents a largely unexplored therapeutic target not affected by most VOC mutations.",
+    "result": "All tested nanobodies that neutralized pseudovirus also showed potent neutralization of authentic SARS-CoV-2 in plaque/focus reduction assays and in primary human airway epithelial cell (ALI) cultures, with S1-1 showing potent neutralization and S1-23 showing dose-dependent inhibition that was enhanced as a trimer.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C149-C159 describe novel S2-binding neutralizing nanobodies supported by Figures 2, 4, 6 and escape mutant data. The novelty claim (C153) is supported by literature review (C154). The structural analysis of S2-10 binding site and accessibility is supported by integrative modeling. The therapeutic potential is well-argued based on VOC mutation patterns. However, the proposed mechanisms (C156) are speculative.",
+    "evaluation": "Claims C80-C83 are supported by authentic virus neutralization data in Figure 5A and Table 6, and ALI culture data in Figure 5C. The correlation between pseudovirus and authentic virus assays validates the pseudovirus screening approach, and the ALI culture data demonstrate efficacy in a physiologically relevant model.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C160",
-      "C161",
-      "C162",
-      "C163",
-      "C164"
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
     ],
-    "result": "Oligomerization effects varied: some nanobodies (S1-7, S1-25) did not become neutralizers upon dimerization, while others showed dramatic improvements (S1-RBD-35, S1-23). S2-7 converted from non-neutralizer to neutralizer upon dimerization, possibly through aggregation mechanisms. There appears to be a limit to oligomerization benefits, as trimers didn't show similar fold-improvements as dimers.",
+    "result": "32 unique escape mutants were identified against 22 nanobodies, with some selecting mutations at positions known from human antibody studies (e.g., E484K) and others selecting novel mutations. Importantly, combining two nanobodies in cocktails prevented escape in 8/9 cases, elevating the genetic barrier by requiring multiple mutations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C160-C164 are supported by neutralization data in Figure 4 and Table 4. The variable effects of oligomerization are well-documented with specific examples. The proposed aggregation mechanism for S2-7 (C163) is speculative but reasonable. The observation about limits to oligomerization (C164) is supported by data and citations, showing scientific nuance.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C84-C88 are supported by escape mutant selection data in Table 7 and Figure 6\u2014figure supplement 1E. The cocktail data demonstrate a critical advantage for therapeutic development. However, the interpretation that 'simply combining two nanobodies imposed the requirement for a minimum of two amino acid substitutions' (C88) is somewhat inferential, though well-supported by the data.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C172",
-      "C173",
-      "C174",
-      "C175",
-      "C176",
-      "C177",
-      "C178",
-      "C179",
-      "C180",
-      "C181",
-      "C182",
-      "C183"
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
     ],
-    "result": "Synergy experiments revealed that nanobodies binding the same epitope (S1-27 and S1-23) showed additive effects, while those binding different epitopes showed powerful synergy (e.g., S1-23 and S1-1: ~32-fold and ~21-fold improvements; S1-RBD-15 and S1-23: ~300-fold improvement). However, S1-46 antagonized both S1-23 and S1-RBD-15, likely by hindering adjacent RBD movement.",
+    "result": "Using integrative modeling with IMP, the authors solved structures for 21 neutralizing nanobodies (18 RBD, 1 NTD, 2 S2) classified into 10 groups, showing that neutralizing nanobodies bind at sites complementary to glycosylation sites and are concentrated at the glycan-free RBD.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C172-C183 are supported by synergy data in Figure 7 and Table 9. The quantitative fold-improvements are measured values. The mechanistic interpretations (C177, C183) based on RBD conformational dynamics are reasonable inferences from structural data. The identification of antagonism (C182) demonstrates thorough analysis and shows that synergy is not automatic.",
+    "evaluation": "Claims C89-C93 are supported by integrative modeling data in Figure 6, with spatial restraints from escape mutant data (Table 7) and cross-linking MS (Table 8). The modeling approach is validated by benchmarking against a published structure (Figure 6\u2014figure supplement 2). However, the models provide moderate resolution and the authors appropriately note that higher-resolution studies are warranted.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C184",
-      "C185",
-      "C186",
-      "C187",
-      "C188",
-      "C189"
+      "C94",
+      "C95",
+      "C96",
+      "C97"
     ],
-    "result": "Synergy between RBD-binders and non-RBD binders was observed: S1-49 (NTD-binding) with S1-1 showed >1000-fold increase; S2-10-dimer with S1-23 or S1-RBD-15 showed >4000-fold increase (greatest synergy observed). The mechanism is interpreted as RBD-binders promoting 'up' state, providing increased access for S2-10 which binds a site occluded in 'down' conformation.",
+    "result": "Among the entire repertoire, ~80% of anti-RBD nanobodies are neutralizing, ~20% of anti-S2 nanobodies are neutralizing, and ~60% of non-RBD anti-S1 nanobodies are neutralizing, with the repertoire exploring much of the remaining available epitope space given glycosylation constraints.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C184-C189 are supported by synergy data in Figure 7G-J and Table 9. The quantitative fold-improvements are remarkable and well-documented. The mechanistic interpretation (C188) is a reasonable inference based on structural modeling showing S2-10's epitope is occluded when RBD is 'down'. The magnitude of synergy with S2-10 is particularly significant for therapeutic development.",
+    "evaluation": "Claims C94-C96 are supported by neutralization data across Figures 3, 4, and 6, with epitope mapping showing concentration on the RBD. The interpretation that the repertoire explores much of the available epitope space (C97) is reasonable given glycosylation constraints cited (Watanabe et al., 2020; Zhang et al., 2020).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C190",
-      "C191",
-      "C192"
+      "C98"
     ],
-    "result": "The repeated observation of strong synergistic effects between nanobodies reflects their unique small size advantage over monoclonal antibodies. Structural modeling showed that IgGs with S1-23 and S1-1 binding characteristics would clash with other RBDs on the spike trimer, while IgGs at S1-23 and S1-RBD-15 epitopes would show strong inter-IgG steric clash.",
+    "result": "The authors present the first neutralizing nanobodies that bind to S2 (groups 9 and 10).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C190-C192 are supported by structural modeling comparing nanobodies to IgGs. The analysis demonstrates a key advantage of nanobodies for combination therapy. The structural predictions about IgG clashes are reasonable based on size differences and spike trimer geometry. This provides important context for why nanobody synergy is particularly powerful.",
-    "result_type": "MINOR"
+    "evaluation": "Claim C98 is supported by data in Figures 2, 4, 6, and Figure 6\u2014figure supplement 1. This represents a novel finding, as S2-targeting nanobodies with neutralizing activity have not been previously reported. The structural mapping provides mechanistic insights into their function.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C194",
-      "C195",
-      "C196",
-      "C197",
-      "C198",
-      "C199"
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
     ],
-    "result": "The study demonstrates the power of generating large, diverse nanobody repertoires against the entire spike ectodomain. Several nanobodies are effective against current variants, but escape experiments suggest variants haven't explored full escape potential. Judicious nanobody combinations with synergistic and orthogonal mechanisms can provide potent, broadly neutralizing, escape-resistant therapeutics for hospitalized patients and developing world populations.",
+    "result": "Powerfully synergistic effects were observed between numerous nanobody pairs, with dramatic potency increases: S1-23+S1-1 (~32- and ~21-fold), S1-RBD-15+S1-23 (~300-fold for S1-23), S1-49+S1-1 (>1000-fold), and S2-10-dimer with S1-23 or S1-RBD-15 (>4000-fold).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C194-C199 represent well-supported conclusions synthesizing the study's findings. The effectiveness against variants is demonstrated (C195), escape potential is shown experimentally (C196), and combination strategies are validated (C197). The therapeutic potential claims (C198-C199) are reasonable extrapolations from the data, though clinical validation would be needed. The citation about vaccine access (C199) supports the urgency.",
+    "evaluation": "Claims C99-C104 are supported by synergy data in Figure 7 and Table 9, using multiple synergy models (MuSyC, equivalent dose, BRAID). The quantitative fold-changes are well-documented, and the structural basis for synergy is explained through epitope mapping and RBD conformational dynamics. The extraordinary synergy with S2-10-dimer is particularly notable.",
     "result_type": "MAJOR"
   }
 ]

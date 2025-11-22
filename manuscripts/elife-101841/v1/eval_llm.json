@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Participants appropriately assigned credit to causal choices in both direct and indirect transition conditions, as demonstrated by logistic regression showing that \u03b2-values for appropriate credit assignment were significantly higher than those for credit spreading in both conditions (p<0.001). However, credit assignment was less precise in the indirect condition compared to the direct condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral analysis uses appropriate statistical methods (logistic regression, t-tests) with significant p-values and clear operational definitions of 'appropriate credit assignment' versus 'credit spreading'. The comparison between conditions is internally consistent, though the non-significant difference in credit spreading between conditions (C80) slightly weakens the precision claim. The follow-up analysis (C78) provides additional validation that participants used probability-magnitude integration rather than cached values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In the direct transition condition, multivariate pattern analysis revealed that lateral orbitofrontal cortex (lOFC) and hippocampus (HC) significantly decoded the causal choice at the time of feedback, with significant effects in left lOFC and right HC, and marginal effects in right lOFC and left HC (all pTFCE <0.081, ROI-corrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MVPA decoding analysis uses appropriate methods (linear SVM, searchlight, TFCE correction) with proper multiple comparison correction within a priori ROIs. The bilateral pattern with some marginal effects is reasonable given individual variability. The power analysis (C3) supports adequate sample size. However, the marginal effects (pTFCE = 0.08-0.081) are borderline and should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "In the indirect transition condition, no significant decoding of the causal choice was found in any a priori defined ROI or elsewhere in the brain when using the same analysis approach as the direct condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This null result is appropriately reported with proper statistical thresholds (pTFCE >0.05). The absence of effects is interpretable given the task complexity in the indirect condition and motivates the subsequent analysis of pending representations. However, null results should be interpreted cautiously as they may reflect insufficient power or inappropriate analysis approach rather than true absence of representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "During the indirect transition condition, right lateral frontopolar cortex (lFPC) significantly decoded the pending causal choice at feedback time (when viewing the outcome of an unrelated interim choice), with no significant effect in left lFPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis appropriately identifies pending representations by decoding the immediately preceding choice (which is causal for the next outcome) during interim feedback. The lateralization to right lFPC is consistent with prior literature on prospective memory. Statistical correction is appropriate (pTFCE <0.05 ROI-corrected). The interpretation that lFPC maintains pending information is logical given the task structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Information connectivity analysis revealed that the fidelity of pending causal choice representations in lFPC during interim feedback significantly predicted the fidelity of those same choice representations in bilateral lOFC and HC during subsequent credit assignment (all pTFCE <0.05 ROI-corrected). Control analyses confirmed this was due to increased correct decoding rather than reduced incorrect decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The information connectivity analysis using signed distances from the SVM hyperplane is methodologically sound and appropriately tests the hypothesis that pending representations support subsequent credit assignment. The correlation approach is valid, and control analyses (C95) strengthen the interpretation by ruling out alternative explanations. However, correlation does not establish causation, and the temporal resolution of fMRI limits mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Left hippocampus significantly decoded task-independent stimulus identity of the causal choice at feedback time when averaged across conditions (pTFCE <0.001), with significant effects in the indirect condition and marginal effects in the direct condition. This suggests HC retrieves stimulus identity representations to support credit assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-decoding approach (training on passive viewing, testing on feedback) is elegant and appropriately tests for task-independent representations. The strong effect in left HC is well-supported statistically. The interpretation that HC retrieves identity information is reasonable given the hippocampal literature on memory reinstatement. However, the marginal effect in direct condition (pTFCE = 0.08) and absence of right HC effects suggest some specificity that could be further explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The fidelity of task-independent stimulus identity decoding in lOFC, but not HC, significantly correlated with behavioral measures of credit assignment precision (pTFCE <0.05 ROI-corrected in lOFC; pTFCE >0.09 in HC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis appropriately links neural representations to behavior using a reasonable measure of credit assignment precision (correlation with ideal learner pattern). The dissociation between lOFC (significant) and HC (non-significant) is interesting and suggests different functional roles. However, the correlation is based on individual differences across only 20 participants, which limits statistical power and generalizability. The behavioral measure could also be influenced by factors beyond identity representation fidelity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Twenty healthy participants (11 females, 9 males, mean age 23.5) were recruited with appropriate ethical approval and informed consent. Sample size was justified by comparison to prior studies and an independent power analysis showing 84% power to detect the neural effect of interest in lOFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The participant recruitment and ethical procedures are appropriately documented. The power analysis (C3) using an independent dataset is a strength, though the specific effect being powered is not fully described. The sample size of 20 is modest for fMRI but justified by precedent and power analysis. Inclusion/exclusion criteria are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The learning task required participants to track probabilistic associations between abstract shapes and gift card outcomes, integrating probability estimates with trial-specific reward magnitudes. Reward magnitudes were predetermined but appeared random to participants (correlation <0.2 between consecutive trials), and one trial was randomly selected for real payment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The task design is well-described with appropriate controls. The low correlation between consecutive reward magnitudes (C19) supports the claim that participants couldn't track magnitudes. The incentive structure (one trial counts 'for real') is standard in decision-making research. The independent drifting probabilities (C16) appropriately prevent information sharing across shapes. All timing parameters and randomization procedures are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Trial structure included fixed viewing (0.5s), choice period (3.5s), selection highlight (0.5s), jittered ISI (4-8s), outcome presentation (2s), and jittered ITI (4-8s). Participants knew associations could change but had no prior knowledge of contingencies or change rates, requiring inference from choice-outcome history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trial timing is clearly specified with appropriate jittering for fMRI analysis. The temporal separation between choice and outcome (minimum 4s ISI) is sufficient for hemodynamic response separation. The task instructions appropriately balance providing structural knowledge while requiring learning. All parameters are precisely documented for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Template tasks involved passive viewing of task stimuli with catch trials to ensure attention. Participants achieved high accuracy on catch trials (mean=0.75, std=0.15), with monetary incentives (\u00a310 bonus, \u00a31 penalties) to maintain engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The template task design is appropriate for establishing task-independent stimulus representations. Catch trials with monetary incentives provide good attention checks. The high accuracy (75%) suggests participants were engaged, though 25% errors indicate some lapses. The timing parameters (1s stimulus, 2.5s ISI) are reasonable for establishing baseline representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Stimuli included two abstract shapes (randomly assigned as S1/S2) and two gift cards selected from six options based on participant ratings to minimize preference differences while maintaining high desirability. Stimuli were presented using Presentation software (Version 18.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stimulus selection procedure is well-designed to control for outcome preference while maintaining motivation. Selecting the two highest-rated cards with minimal difference is a good approach, though individual differences in preference stability are not addressed. Random assignment of shapes to S1/S2 appropriately controls for stimulus-specific effects. Software version is documented for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The reward schedule was predetermined and optimized so an ideal Bayesian learner would choose each shape approximately equally (42-57% S1 choices) to reduce sampling bias in multivariate analyses. Outcome probabilities for each shape drifted independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The schedule optimization using an ideal Bayesian learner is methodologically sophisticated and appropriate for ensuring balanced sampling. The 42-57% range for S1 choices is reasonably balanced. The rationale for reducing sampling bias in MVPA is valid. Independent probability drifts (C45) appropriately prevent information sharing. However, the optimization assumes participants behave like ideal learners, which may not hold perfectly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The experiment consisted of three scanning runs: two runs with template task followed by learning task (37 direct trials, 37 indirect trials), and one run with template task only. Conditions were clearly instructed, and bonus trials (3 per run) allowed outcome prediction for additional monetary reward (\u00a33 per correct prediction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental structure is clearly described with appropriate counterbalancing considerations. The blocked design (direct then indirect) is reasonable but could introduce order effects. Instructions clearly differentiated conditions. Bonus trials provide additional behavioral measures of learning. The number of trials per condition (37) provides adequate data for both behavioral and neural analyses given the event-related design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Participants completed a 76-trial behavioral training session with a unique reward schedule before scanning, including a comprehension quiz to verify task understanding. Training used shorter ISI/ITI durations (2-4s) than the main task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The training procedure is appropriate for familiarizing participants with task structure. The comprehension quiz is a good quality control measure. Using a unique reward schedule prevents direct transfer of learned associations. The shorter timing in training is reasonable for efficiency, though it introduces a slight procedural difference from the main task that could affect learning dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "fMRI data were acquired using a 3T Siemens Trio with 32-channel head coil, using T2*-weighted EPI (43 slices, 2mm thick, 1mm gap, 3x3mm in-plane, TR=3.01s, TE=70ms). Acquisition parameters included 30-degree slice tilt and local z-shim to minimize OFC signal loss, plus field map for distortion correction. T1-weighted anatomical scans (MPRAGE, 1x1x1mm) were acquired for registration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The imaging parameters are appropriate for fMRI and well-documented. The 30-degree slice tilt and z-shim (C62-C63) are important optimizations for OFC imaging, addressing a known challenge in this region. Field map acquisition enables distortion correction. The 5-volume discard for T1 equilibration is standard. Spatial resolution and coverage are adequate for the regions of interest. All parameters are specified for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "fMRI preprocessing included slice-timing correction, bias field correction, motion correction (6-parameter rigid body), spatial normalization to MNI space, and smoothing (8mm FWHM Gaussian kernel). Preprocessing was performed in SPM12 using Matlab 2018a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The preprocessing pipeline is standard and appropriate for fMRI analysis. All major steps are included and properly ordered. The 8mm smoothing kernel is reasonable for group analysis but may reduce spatial specificity for small structures like OFC subregions. Software versions are documented. However, no mention is made of artifact detection/correction (e.g., for motion spikes) or quality control metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Regions of interest were defined using anatomically-based functional connectivity parcellations (Neubert et al., 2015): lOFC (BA11, indexes 9 and 30), lFPC (indexes 14 and 35), thresholded at 60% inclusion, and anatomically-defined bilateral hippocampus (Yushkevich et al., 2015). Results were robust to different thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ROI definition approach using established parcellations is appropriate and reduces selection bias. The rationale for lOFC selection based on prior credit assignment literature (C189) is well-justified. The 60% threshold is reasonable, and robustness across thresholds (C192) strengthens confidence. Using anatomical HC ROIs is appropriate given the structure's size. However, the lFPC ROI selection rationale is less explicitly justified than lOFC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The study concludes that lOFC and HC are critical for using model-based knowledge to forge links between outcomes and causal choices, and that in complex tasks with interrupted choice-outcome transitions, this network relies on interactions with lFPC, which maintains pending representations of causal stimuli during interim decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conclusions are well-supported by the convergent evidence from behavioral analysis, MVPA decoding, and information connectivity analyses. The claims appropriately integrate findings across multiple analyses. However, the term 'critical' (C105) is strong given the correlational nature of fMRI data - lesion or causal manipulation studies would be needed to establish necessity. The mechanistic language about 'forging links' and 'maintaining' representations is reasonable but should be understood as functional descriptions rather than established mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

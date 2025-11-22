@@ -3,398 +3,477 @@
     "result_id": "R1",
     "claim_ids": [
       "C1",
-      "C24",
-      "C115",
-      "C116",
       "C117",
       "C118",
       "C119",
       "C120",
-      "C121"
+      "C121",
+      "C122"
     ],
-    "result": "The study used the Human Connectome Project in Aging (HCP-A) Release 2.0 dataset with 504 participants aged 36-100 years old after applying quality control and exclusion criteria.",
+    "result": "The study used the Human Connectome Project in Aging (HCP-A) Release 2.0 dataset with 504 participants aged 36-100 years old after exclusions based on quality control flags and missing data.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C24, C115-C121 collectively describe the dataset, sample size, age range, and exclusion criteria. The methodology is clearly documented with specific numbers for excluded participants (n=117 for quality control flags, n=15 for missing MRI data, n=111 for missing cognitive data), resulting in a final sample of 504 individuals. The data source and preprocessing steps are appropriately cited.",
+    "evaluation": "Claims C1, C117-C122 provide consistent and detailed information about the dataset, sample size, age range, and exclusion criteria. The methodological description is clear and the final sample characteristics are well-documented.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C28",
-      "C29",
-      "C50"
+      "C23",
+      "C24",
+      "C44"
     ],
-    "result": "Chronological age alone explains approximately 32% of the variation in fluid cognition (r=-0.57, p<0.001), with older individuals showing lower fluid cognition scores.",
+    "result": "Chronological age alone explained approximately 32% of the variation in fluid cognition (r=-0.57, p<0.001, R\u00b2=0.32), with older individuals showing lower fluid cognition scores.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28-C29 and C50 report a strong negative correlation between chronological age and fluid cognition with appropriate statistical metrics (r, p-value, R\u00b2). The finding is clearly presented in Figure 1a and represents a well-established baseline relationship. The statistical significance and effect size are properly reported.",
+    "evaluation": "Claims C23, C24, and C44 consistently report the strong negative relationship between chronological age and fluid cognition with specific statistical values. This finding is well-supported by the data and serves as a baseline for evaluating Brain Age contributions.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
       "C2",
-      "C40",
-      "C49",
-      "C51",
-      "C111"
+      "C35",
+      "C43",
+      "C45",
+      "C113"
     ],
-    "result": "Brain Age indices add minimal unique information beyond chronological age, with a maximum unique contribution of only 1.6% in explaining fluid cognition variation.",
+    "result": "Brain Age indices added only around 1.6% unique variance in explaining fluid cognition over and above chronological age, with maximum \u0394R\u00b2 of 0.0161 (statistically significant in only 10 out of 26 models).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C40, C49, C51, and C111 consistently report that Brain Age indices provide very limited additional explanatory power beyond chronological age. The commonality analyses (C40) show maximum \u0394R\u00b2 of 0.0161, with statistical significance in only 10 of 26 models. This finding is central to the manuscript's main conclusion and is supported by multiple analytical approaches including simple and multiple regression models.",
+    "evaluation": "Claims C2, C35, C43, C45, and C113 consistently report the small unique contribution of Brain Age indices. The quantitative findings from commonality analyses are specific and convergent, demonstrating limited utility of Brain Age beyond chronological age.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
       "C3",
-      "C4",
-      "C34",
-      "C35",
       "C36",
-      "C69",
-      "C70",
-      "C71",
-      "C72",
-      "C112"
+      "C37",
+      "C38",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
     ],
-    "result": "Better-performing age-prediction models do not necessarily create better Brain Age indices for capturing fluid cognition; instead, they create Brain Age that overlaps more with chronological age (up to 29% out of 32%).",
+    "result": "Better-performing age-prediction models created Brain Age that overlapped more with chronological age (up to 29% out of 32% common effects), with higher-performing models showing higher common effects and lower unique effects for chronological age.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C4, C34-C36, and C69-C72 demonstrate a counterintuitive finding that higher age-prediction performance does not translate to better utility for explaining fluid cognition. The best age-prediction model ('Stacked: All excluding Task Contrast', R\u00b2=0.775) showed weak unique effects (\u0394R\u00b2\u22640.0048, non-significant), while poorer models showed higher unique effects. This is supported by commonality analyses showing increased overlap with chronological age for better-performing models.",
+    "evaluation": "Claims C3, C36-C38, C47-C50 provide convergent evidence from commonality analyses showing that better age prediction leads to greater overlap with chronological age rather than unique predictive value. The pattern is consistent across multiple Brain Age indices.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C5",
-      "C6",
+      "C4",
+      "C41",
       "C77",
       "C78",
       "C79",
-      "C113"
+      "C80",
+      "C115"
     ],
-    "result": "Brain Age misses approximately 11% (up to one-third) of the total variation in fluid cognition that could be explained by brain MRI, as demonstrated by Brain Cognition's unique effects.",
+    "result": "Brain Age missed approximately 11% of the total variation in fluid cognition that could have been explained by brain MRI, representing about one-third of the total explainable variance (maximum \u0394R\u00b2cognition = 0.1183, significant in 24 out of 26 models).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C6, C77-C79, and C113 report that Brain Cognition shows large unique effects (maximum \u0394R\u00b2=0.1183, significant in 24/26 models) beyond Brain Age and chronological age. This represents approximately one-third improvement over using Brain Age and chronological age alone (from ~32% to ~43% total variance explained). The finding is supported by commonality analyses in multiple regression models.",
+    "evaluation": "Claims C4, C41, C77-C80, and C115 consistently report the unique effects of Brain Cognition that were missed by Brain Age. The quantitative findings are specific and demonstrate substantial information loss when using Brain Age instead of direct prediction.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
+      "C5",
+      "C21",
+      "C73",
+      "C74"
+    ],
+    "result": "Directly predicting fluid cognition from brain MRI data could lead to approximately one-third improvement in total variation explained compared to using Brain Age and chronological age, as Brain Cognition should explain equal or greater variance than Brain Age by design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, C73, and C74 provide logical and empirical support for the superiority of direct prediction. The design logic (C21) and methodological rationale (C73, C74) support the quantitative finding (C5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The top-performing age-prediction models were stacked models (R\u00b2>0.76), while the best fluid cognition-prediction model was 'Stacked: All' (R\u00b2=0.393). Cortical thickness was the best single feature set, and age-prediction models generally outperformed fluid cognition-prediction models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide specific quantitative results from the predictive modeling analysis. The findings are internally consistent and supported by the reported performance metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
       "C30",
       "C31",
       "C32",
       "C33"
     ],
-    "result": "The top-performing age-prediction models were stacked models combining multiple MRI modalities (R\u00b2>0.76), while cortical thickness was the best single feature set across both age and fluid cognition prediction.",
+    "result": "Brain Age and Corrected Brain Age from higher-performing models explained more variance in fluid cognition, while Brain Age Gap from lower-performing models explained more variance. Corrected Brain Age Gap showed weak effects (max R\u00b2=0.041) regardless of model performance, and Brain Cognition explained more variance than any Brain Age index.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C30-C33 report predictive performance metrics for different models. The results are clearly presented in Figure 1b-c with specific performance metrics (R\u00b2, r, MAE). The finding that stacked models perform best for age prediction while cortical thickness performs best as a single feature is well-documented. Age-prediction models consistently outperformed fluid cognition-prediction models.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C37",
-      "C56",
-      "C57",
-      "C60"
-    ],
-    "result": "Corrected Brain Age Gap showed weak effects in explaining fluid cognition (maximum R\u00b2=0.041) but was the only index that appeared to deconfound chronological age influences, though the correction may not be perfect.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C37, C56-C57, and C60 describe the performance of Corrected Brain Age Gap. The weak effects are consistently reported across analyses, and the commonality analyses show small but non-zero common effects with chronological age (max ~3.3%), suggesting imperfect correction. The finding is supported by both simple and multiple regression analyses.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C39",
-      "C41",
-      "C42",
-      "C43",
-      "C44"
-    ],
-    "result": "Multiple regression models with chronological age and Brain Age indices explained M=32.6% (SD=0.5%) of fluid cognition variance, with different Brain Age indices showing different patterns of unique and common effects with chronological age.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C39, C41-C44 report findings from commonality analyses of two-regressor models. The results show consistent total R\u00b2 across models but varying decomposition of unique and common effects depending on the Brain Age index used. For top-performing models, unique effects of chronological age were low for Brain Age/Corrected Brain Age but high for Brain Age Gap, with opposite patterns for common effects.",
+    "evaluation": "Claims C29-C33 present consistent findings from simple regression analyses showing differential patterns across Brain Age indices. The specific example (C31) and quantitative results support the general patterns described.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C45",
-      "C46",
-      "C47",
-      "C48"
+      "C34",
+      "C40"
     ],
-    "result": "Multiple regression models with chronological age, Brain Age indices, and Brain Cognition explained M=38.5% (SD=4.2%) of fluid cognition variance, with Brain Cognition showing much larger unique effects (maximum \u0394R\u00b2=0.1183, significant in 24/26 models).",
+    "result": "Multiple regression models with chronological age and Brain Age indices explained M=0.326 (SD=0.005) of variance, while models including Brain Cognition explained M=0.385 (SD=0.042) of variance in fluid cognition.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C45-C48 report findings from three-regressor commonality analyses. The substantial unique effects of Brain Cognition contrast sharply with the minimal unique effects of Brain Age indices. The pattern of common effects varies by model performance and Brain Age index type. Statistical significance is properly reported with p<0.05 threshold.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C34 and C40 provide specific quantitative results from multiple regression analyses. The values are precise and demonstrate the incremental contribution of Brain Cognition over Brain Age indices.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C25",
-      "C26",
-      "C27",
-      "C123",
-      "C126",
-      "C127",
-      "C129"
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C114"
     ],
-    "result": "The study computed four Brain Age indices from 26 prediction models based on different MRI feature sets using nested cross-validation with five outer folds and commonality analysis.",
+    "result": "The predictive performance of age-prediction models did not correspond to their utility in capturing fluid cognition beyond chronological age. The best age-prediction model ('Stacked: All excluding Task Contrast', R\u00b2=0.775) had weak unique effects (\u0394R\u00b2\u22640.0048), while a poorer model (FACENAME: Distractor, R\u00b2=0.204) had the highest unique effects (\u0394R\u00b2\u22640.0135).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C25-C27, C123, C126-C127, and C129 describe the methodological approach. The study design is clearly documented with specific numbers of models (26 total: 18 individual feature sets + 8 stacked models), four Brain Age indices, and appropriate cross-validation structure. The nested CV approach with ~100 participants per fold is justified for stability.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C67-C70 and C114 provide convergent evidence with specific examples demonstrating the disconnect between age-prediction performance and utility for fluid cognition. The quantitative comparisons are clear and support the conclusion.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C130",
-      "C131",
-      "C132",
-      "C133",
-      "C134"
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
     ],
-    "result": "The study used Elastic Net regression as the machine learning algorithm, which is commonly used for age-prediction models and performs comparably to more complex algorithms for cognitive prediction.",
+    "result": "Corrected Brain Age Gap showed weak effects in simple regression (max 4.1% variance explained) and was the only index that appeared to deconfound chronological age influences, though common effects with chronological age were small but non-zero (max 3.3%), suggesting imperfect correction possibly due to train-test set differences.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C130-C134 justify the choice of Elastic Net with appropriate citations. The algorithm choice is supported by prior work showing comparable or better performance than complex algorithms (C133) and the advantage of interpretable coefficients (C134). The description of Elastic Net properties is accurate.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C53-C58 provide a coherent analysis of Corrected Brain Age Gap performance. The quantitative findings (C53, C55) and interpretations (C54, C56-C58) are logically connected, though C57 is speculative about the mechanism.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
+      "C59",
+      "C60",
       "C61",
       "C62",
       "C63",
       "C64",
       "C65",
-      "C66",
-      "C67",
-      "C68"
+      "C66"
     ],
-    "result": "The small effects of Corrected Brain Age Gap in explaining fluid cognition are consistent with prior studies across different age groups (older adults and youth aged 8-22), datasets, and methodological approaches.",
+    "result": "The small effects of Corrected Brain Age Gap in explaining fluid cognition are consistent with findings from other studies across different age groups (older adults and youths aged 8-22), different algorithms, and different adjustment methods, with effect sizes ranging from r=-0.01 to partial eta-squared of 0.0059.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C61-C68 compare current findings with three prior studies (Cole 2020, Jirsaraie et al. 2023b, Butler et al. 2021) showing consistently small effects of adjusted Brain Age Gap on cognitive functioning. The comparisons are appropriate with proper citations, and the consistency across different populations, sample sizes (n>17,000 in Cole 2020), and adjustment methods strengthens the conclusion.",
+    "evaluation": "Claims C59-C66 provide a comprehensive synthesis of findings from multiple cited studies (Cole 2020, Jirsaraie et al. 2023a/b, Butler et al. 2021). The consistency across studies, age groups, and methods strengthens the conclusion about weak Brain Age effects.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C73",
-      "C74",
-      "C100",
+      "C71",
+      "C72",
       "C101",
       "C102",
       "C103",
-      "C104"
+      "C104",
+      "C106"
     ],
-    "result": "The discrepancy between age-prediction performance and biomarker utility is consistent with recent findings across cognitive functioning and neurological/psychological disorders, with specific MRI modalities or algorithms showing better utility despite lower age-prediction performance.",
+    "result": "The discrepancy between age-prediction performance and biomarker utility is consistent with recent findings across cognitive functioning and neurological/psychological disorders. Combining MRI modalities or using more complex algorithms often leads to better age prediction but not necessarily better phenotype explanation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C73-C74 and C100-C104 cite multiple studies showing that combining MRI modalities or using more complex algorithms leads to better age prediction but not necessarily better phenotype explanation. The examples from Rokicki et al. 2021, Jirsaraie et al. 2023a, and Bashyam et al. 2020 are appropriately cited and support the generalizability of the current findings.",
+    "evaluation": "Claims C71, C72, C101-C104, and C106 synthesize findings from multiple cited studies showing consistent patterns across different phenotypes and methodological approaches. The evidence from literature supports the generalizability of the main findings.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C75",
-      "C76",
-      "C38"
+      "C22",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
     ],
-    "result": "Brain Cognition from top-performing models (especially stacked models) showed relatively good predictive performance and explained more variation in fluid cognition than Brain Age indices, while exhibiting large common effects with chronological age.",
+    "result": "The study built 26 prediction models (18 individual feature sets plus 8 stacked models) for both Brain Age and Brain Cognition using nested 5-fold cross-validation with approximately 100 participants per outer fold to ensure stability.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C75-C76 and C38 report that Brain Cognition performs well (consistent with prior studies) and shows large common effects with chronological age similar to Brain Age indices. The comparison with Brain Age indices is clearly shown in Figure 5b. The finding is supported by both simple regression and commonality analyses.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C22, C151-C157 provide detailed and consistent methodological information about the prediction modeling approach. The nested cross-validation design and model specifications are clearly described.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C80",
-      "C81",
-      "C82",
-      "C83",
-      "C84",
-      "C89"
+      "C158",
+      "C159",
+      "C160",
+      "C161"
     ],
-    "result": "The study acknowledges limitations of the HCP-A dataset including use of non-standard clinical tasks, exclusion of neurological conditions, lack of younger populations, and potential limited generalizability to normative studies only.",
+    "result": "The study used Elastic Net as the machine learning algorithm, which is commonly used for age-prediction models and performs on par with or better than more complex algorithms for predicting cognitive abilities.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C84 and C89 appropriately acknowledge dataset limitations with supporting citations where relevant (C82). The authors recognize that exclusion criteria and task selection may limit generalizability. The distinction between normative and case-control studies (C89) is an important limitation that could affect interpretation.",
+    "evaluation": "Claims C158-C161 provide justification for the algorithm choice with citations to prior work. The rationale is sound and supported by literature, though C161's claim about performance superiority is based on the authors' own prior work.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C90"
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
     ],
-    "result": "The study distinguishes between normative and case-control approaches to Brain Age research, noting that case-control studies may suffer from under-fitted models when applied to clinical populations, while normative studies avoid this issue but cannot detect group-level anomalies.",
+    "result": "The study used multiple brain MRI modalities organized into 19 feature sets, including task fMRI contrasts (10 sets from Face Name, CARIT, and VISMOTOR tasks), task and resting-state functional connectivity (4 sets), and structural MRI (4 sets: cortical thickness, cortical surface area, subcortical volume, total brain volume), with appropriate preprocessing and parcellation methods.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C85-C88 and C90 provide a thoughtful discussion of methodological differences between study types. The distinction is logical and well-reasoned, with appropriate citations (C86). The acknowledgment that findings may not generalize to case-control studies (C90) is an important caveat that appropriately limits the scope of conclusions.",
+    "evaluation": "Claims C123-C148 provide comprehensive and detailed descriptions of MRI data acquisition, preprocessing, and feature extraction. The methods are well-documented with appropriate citations and appear technically sound, including proper handling of data leakage (C140).",
     "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C91",
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97"
+      "C149",
+      "C150"
     ],
-    "result": "The study recommends that researchers focus on Brain Age contributions beyond chronological age using Corrected Brain Age Gap or commonality analyses, as Brain Age Gap does not fix the overlap issue and unique effects may be too small to be clinically meaningful.",
+    "result": "Fluid cognition was measured using the NIH Toolbox 'fluidcogcomp_unadj' variable, which summarizes scores from five tests: Dimensional Change Card Sort, Flanker Inhibitory Control and Attention, Picture Sequence Memory, List Sorting Working Memory, and Pattern Comparison Processing Speed.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C97 provide methodological recommendations based on the study findings. The recommendations are well-justified by the data (C96-C97) and supported by prior work (C93-C94). The preference for commonality analysis is explained with appropriate rationale (C95). These are reasonable conclusions drawn from the empirical findings.",
+    "evaluation": "Claims C149 and C150 provide clear description of the fluid cognition measurement with appropriate citation. The composite measure is well-established and appropriately used.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C98",
-      "C99",
-      "C105",
-      "C106"
+      "C163",
+      "C164",
+      "C165",
+      "C166"
     ],
-    "result": "The study recommends that researchers should not select age-prediction models based solely on age-prediction performance but rather on their ability to explain phenotypes of interest, challenging the persisting assumption in the field.",
+    "result": "The study controlled for biological sex by residualizing it from brain features in each outer-fold training set and applying the regression to test sets. Brain features were standardized using training set statistics before model fitting.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C98-C99 and C105-C106 provide a key recommendation based on the study's main findings. The recommendation directly follows from the demonstrated lack of correspondence between age-prediction performance and utility for fluid cognition. The quote from Jirsaraie et al. 2023a (C105) supports that this is an important issue in the field.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C163-C166 describe appropriate preprocessing steps to control for confounds and prevent data leakage. The methods are standard and correctly implemented.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C107",
-      "C108",
-      "C109",
-      "C110"
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C90",
+      "C91"
     ],
-    "result": "The study recommends testing how much Brain Age misses brain MRI variation that could explain phenotypes of interest by building direct prediction models and using commonality analyses to quantify unique effects.",
+    "result": "The study acknowledges several limitations of the HCP-A dataset that may limit generalizability: tasks not widely used in clinical settings, exclusion of participants with neurological conditions, lack of younger populations, and potential limitation to normative (rather than case-control) studies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C107-C110 describe the methodological approach used in the study (Brain Cognition) and recommend it for future research. The approach is clearly demonstrated in the manuscript and provides a straightforward method to assess the limitations of Brain Age for specific phenotypes. The recommendation is well-justified by the study's findings.",
+    "evaluation": "Claims C81-C84, C90, and C91 provide honest assessment of dataset limitations. The authors appropriately acknowledge constraints on generalizability and call for future work to address these limitations.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C52",
-      "C53",
-      "C54",
-      "C55"
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
     ],
-    "result": "The small unique effects of Brain Age are attributed to its design as a predictor of chronological age, resulting in substantial overlap in the variation captured by both measures, with better age-prediction models creating Brain Age closer to chronological age.",
+    "result": "There is a notable difference between normative studies (focusing on largely healthy participants) and case-control studies (comparing participants with/without neurological/psychological disorders). Normative studies do not suffer from under-fitted models but cannot detect group-level anomalies, while case-control studies treat Brain Age as anomaly detection but must address model under-fitting.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C52-C55 provide interpretation of the empirical findings. The reasoning is logical and follows from the definition of Brain Age (C11). The interpretation is supported by the commonality analyses showing large common effects. The explanation for why better-performing models show more overlap (C54) is reasonable and supported by the data.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C85-C89 provide a thoughtful distinction between study types with appropriate citations. The conceptual framework helps contextualize the study's findings and limitations.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R21",
     "claim_ids": [
-      "C58",
-      "C59"
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
     ],
-    "result": "The correction for age dependency in Corrected Brain Age Gap may not be perfect, possibly because the estimation was done in the training set and may not fully apply to test sets.",
+    "result": "Researchers should be aware of the overlap between Brain Age and chronological age and focus on unique contributions. Using Brain Age Gap does not fix this overlap. Future work should use Corrected Brain Age Gap or commonality analyses to control for chronological age, though unique effects may be too small to be clinically meaningful for fluid cognition.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C58-C59 provide speculation about why the correction is imperfect. While C58 is supported by data showing non-zero common effects, C59 is explicitly speculative ('Perhaps this is because...'). The speculation is reasonable but not empirically tested in the study. Alternative explanations for imperfect correction are not explored.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 provide clear recommendations based on the study findings and prior literature. The methodological preference for commonality analysis (C96) is justified, and the conclusion about clinical meaningfulness (C98) is appropriately cautious.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R22",
     "claim_ids": [
-      "C114"
+      "C99",
+      "C100",
+      "C105",
+      "C107",
+      "C108"
     ],
-    "result": "Future research is needed to test the utility of Brain Age on other phenotypes, especially in case-control studies for anomaly detection.",
+    "result": "Researchers should not select age-prediction models based solely on age-prediction performance but should select models that explain phenotypes of interest best. Future research should aim to build models that capture phenotypes of interest rather than just predicting age accurately.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C114 appropriately identifies a limitation and direction for future work. Given the study's focus on fluid cognition in a normative sample, this recommendation is well-justified. The distinction between normative and case-control applications is important and properly acknowledged.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C99, C100, C105, C107, and C108 provide important methodological recommendations supported by the study findings and cited literature (C107). The call for paradigm shift is well-justified by the empirical results.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R23",
     "claim_ids": [
-      "C7",
-      "C8",
-      "C9",
-      "C10",
-      "C11",
-      "C12",
-      "C13",
-      "C14",
-      "C15",
-      "C16",
-      "C17",
-      "C18",
-      "C19",
-      "C20",
-      "C21",
-      "C22",
-      "C23"
+      "C109",
+      "C110",
+      "C111",
+      "C112"
     ],
-    "result": "The introduction provides background on fluid cognition decline in aging, the emergence of Brain Age as a biomarker, its calculation methodology, known issues with age dependency and regression to the mean, and the race to improve age-prediction models.",
+    "result": "Researchers should test how much Brain Age misses variation in brain MRI that could explain phenotypes of interest by building phenotype-prediction models and using commonality analyses. Large unique effects of the phenotype-predicted value suggest Brain Age may not be appropriate for that phenotype.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C23 provide well-cited background information establishing the context for the study. The claims accurately describe established knowledge about fluid cognition (C7), Brain Age methodology (C9-C10), known limitations (C14-C17), and prior work on model improvement (C20-C21). All claims are appropriately supported by citations to relevant literature.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C109-C112 provide a clear methodological recommendation based on the study's approach. The suggestion is practical and directly follows from the study's demonstration of Brain Cognition's utility.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R24",
     "claim_ids": [
-      "C122",
-      "C124",
-      "C125",
-      "C135"
+      "C9",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C46"
     ],
-    "result": "The study used pre-processed MRI data from HCP-A with MSMALL alignment and ICA-FIX, measured fluid cognition via NIH Toolbox (five tests), and controlled for biological sex by residualization.",
+    "result": "Brain Age is tightly close to chronological age by design, and Brain Age Gap still depends on chronological age. Brain Age demonstrates regression towards the mean, being shrunk towards the mean age of training samples, leading to more accurate predictions for individuals near the mean age while overestimating younger and underestimating older individuals' ages.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C122, C124-C125, and C135 describe data preprocessing and measurement procedures. The preprocessing methods are standard and appropriately cited (C122). The fluid cognition measure is well-established (C124-C125). Controlling for sex is appropriate, though the method (residualization in training, applied to test) is standard practice.",
+    "evaluation": "Claims C9, C12-C15, and C46 describe well-established statistical properties of Brain Age with appropriate citations. These conceptual points are fundamental to understanding the study's findings and are correctly characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Many adjustments have been proposed to correct for age dependency with similar outcomes. Corrected Brain Age Gap is viewed as controlling for age dependency, but improving age prediction may not make Brain Age Gap better at capturing fluid cognition. Perfect age prediction would result in zero Brain Age Gap with no utility beyond chronological age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 provide important conceptual context with appropriate citations. The logical argument about perfect prediction (C19) effectively illustrates the fundamental limitation of the Brain Age approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Brain Cognition from certain models (especially stacked models) has relatively good predictive performance consistent with previous studies and exhibits large common effects with chronological age similar to Brain Age indices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C76 report findings about Brain Cognition performance with appropriate citations to prior work. The results are consistent with the literature and provide important context for interpreting the unique effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "For top-performing age/cognition-prediction models, the largest proportion of fluid cognition variance was attributed to common effects among all three variables for Brain Age and Corrected Brain Age, and to common effects between chronological age and Brain Cognition for Brain Age Gap and Corrected Brain Age Gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 describes a specific pattern from the three-way commonality analysis. The finding is clearly stated and represents an important detail about how variance is partitioned across different Brain Age indices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Lower-performing age-prediction models created Brain Age Gap that explained higher variation in fluid cognition because when Brain Age is a poor indicator of chronological age, Brain Age Gap utility is driven more by chronological age itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C52 provide an explanation for the counterintuitive finding about lower-performing models. The interpretation is logical and supported by citation (Butler et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "Future empirical research is needed to test the utility of Brain Age on other phenotypes, especially when Brain Age is used for anomaly detection in case-control studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 appropriately identifies an important direction for future research. The recommendation acknowledges the study's focus on fluid cognition and the need to test generalizability to other contexts.",
     "result_type": "MINOR"
   }
 ]

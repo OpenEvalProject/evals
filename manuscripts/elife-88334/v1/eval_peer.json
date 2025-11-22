@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C18",
+      "C19"
+    ],
+    "result": "The TaG-EM method involves inserting DNA barcodes upstream of the polyadenylation site in a UAS-GFP construct, which can be read out during single-cell sequencing. The authors generated 20 distinctly barcoded Drosophila lines from a pool injection of 29 unique barcode-containing plasmids.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers across all three reviews acknowledged the method's design and implementation without raising concerns about the basic technical approach. The editor noted 'the evidence supporting the claims of the authors is solid,' and reviewers praised the 'novelty and scope' of the system, indicating acceptance of the core methodological claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "TaG-EM measurements are highly accurate and reproducible, with technical replicates showing minimal variability. In structured pool experiments, even pools showed all 20 barcodes at expected 5% abundance, and staggered pools showed R\u00b2 values >0.99 when multiple barcodes were averaged, indicating high quantitative accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the accuracy or reproducibility data. The editor stated 'the evidence supporting the claims of the authors is solid,' and Reviewer 3 noted 'Data Quality and Clarity: Figures and supplemental data are mostly clear and significantly enhanced in the revised manuscript,' indicating acceptance of these technical validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C28",
+      "C29"
+    ],
+    "result": "TaG-EM measurements in behavioral assays (phototaxis and fecundity) showed strong correlation with conventional manual measurements, with R\u00b2 values ranging from 0.52-0.84 for individual barcodes and 0.95-0.99 when barcodes were averaged across timepoints.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data showed correlations, Reviewer 1 questioned 'the usefulness of TaG-EM for phototaxis, egg laying or fecundity experiments,' noting these 'behaviours presented here are all easily quantifiable' and that 'the authors do not present any real evidence about the cost- or time-effectiveness of their method.' Reviewer 3 noted 'Behavioral Applications: The utility of TaG-EM in quantifying more complex behaviors remains underexplored,' indicating the practical utility remains uncertain despite technical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Caffeine reduces transit time through the larval gut, consistent with previous observations about bitter compounds activating enteric neurons. TaG-EM data recapitulated the results seen in manual gut transit assays.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 specifically noted 'Novelty and Scope: The study demonstrates the potential for TaG-EM to streamline multiplexing in both behavioral and transcriptomic contexts. The additional application to labor-intensive larval gut motility assays highlights its scalability and practical utility.' This indicates reviewer acceptance of the gut motility findings as a valid demonstration of TaG-EM's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "TaG-EM barcode 14 showed reduced abundance across multiple oviposition trials, suggesting that despite common landing site integration, differences with respect to specific behaviors may exist among the lines.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 noted 'Experiments in Figs S3 and S6 suggest that some tags have a detrimental effect on certain behaviours or on GFP expression. Whereas the authors rightly acknowledge these issues, they do not investigate their causes.' The reviewers acknowledged this limitation exists but accepted the authors' honest reporting of it. The editor noted 'the evidence supporting the claims of the authors is solid and highlights both the usefulness and the limitations of the approach.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "19 out of 20 TaG-EM lines showed GFP expression in expected patterns when crossed to dpp-Gal4, with one line (barcode 8) showing no GFP expression due to a deletion. All 156 additional TaG-EM lines showed robust GFP expression, and expression levels were similar to the base construct across multiple driver lines.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the GFP expression characterization data. Reviewer 3 noted 'Data Quality and Clarity: Figures and supplemental data are mostly clear and significantly enhanced in the revised manuscript,' and Reviewer 1 in their revision comments stated 'The authors have addressed many important points, providing reassurances about the initial weaknesses of their work,' indicating acceptance of the expression validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Adding an additional hexameric GFP construct could boost expression of weak driver lines to levels sufficient for robust detection in imaging and flow cytometry.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 initially requested 'FACS data is missing throughout the paper. The authors should include data from their comparative flow cytometry experiment of TaG-EM cells with or without additional hexameric GFP.' In revision comments, Reviewer 1 stated 'The authors have addressed many important points,' suggesting this data was provided and accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "TaG-EM barcodes were detected in single-cell sequencing data, including barcode 8 which lacked GFP expression. TaG-EM identified 298 multiplet droplets, with 100 additional doublets beyond those identified by DoubletFinder alone.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the doublet detection capability. The editor noted the evidence is 'solid,' and Reviewer 3 stated 'Improvements in Barcode Detection and Analysis: Enhanced enrichment protocols (Supplemental Figures 18-19) demonstrate progress in addressing limitations of barcode detection,' indicating acceptance of these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TaG-EM barcodes were observed in approximately one-quarter of cells in larval gut single-cell sequencing experiments. Specific barcodes driven by EB-Gal4, EC-Gal4, and EE-Gal4 were expressed primarily in enteroblasts, enterocytes, and enteroendocrine cells respectively, correlating with Gal4-driven expression patterns and appropriate marker gene expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raised major concerns: 'TaG-EM fails to detect most of the GFP-expressing cells' and 'the claim (L277-278) that \"the pan-midgut driver were broadly distributed across the cell clusters\" is misleading.' Reviewer 1 noted 'a large number of GFP reads will likely not include the 14bp TaG-EM barcode. When a given cell barcode is not associated with any TaG-EM barcode, then demultiplexing is impossible. This is a major problem.' While Reviewer 3 noted improvements in revised data, they also stated 'Barcode Detection Efficiency: While improvements are noted, the low barcode detection rate (~37% in optimized conditions) limits the method's scalability' and 'Sparse Labeling: Sparse labeling of cell populations, particularly in scRNA-seq assays, remains a concern.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Using an enriched TaG-EM barcode library, barcodes were detected in nearly 100% of cells at high sequencing depths, with high correlation between gene expression and enriched libraries when the most abundant barcode was 75-99.99% of total reads. However, the enriched library only modestly improved detection (26.8% vs 23.96%), with combined data showing ~37% of cells with identified barcodes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 acknowledged 'Improvements in Barcode Detection and Analysis: Enhanced enrichment protocols (Supplemental Figures 18-19) demonstrate progress in addressing limitations of barcode detection and increase the detection rate of labeled cells.' However, they also noted 'Barcode Detection Efficiency: While improvements are noted, the low barcode detection rate (~37% in optimized conditions) limits the method's scalability in some applications.' This indicates the improvements are recognized but the limitation remains significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TaG-EM barcodes are not observed in all cells in single-cell gene expression data, with detection in around one quarter of cells using endogenous expression (~37% with enriched library). The strength of the Gal4 driver likely contributes to labeling density, though variable recovery was observed even with the same pan-midgut driver.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledged this limitation. The editor noted the evidence 'highlights both the usefulness and the limitations of the approach.' Reviewer 1 stated 'The authors are generally honest about potential issues in their method, and areas that would benefit from future improvement.' Reviewer 3 noted 'Sparse Labeling: Sparse labeling of cell populations, particularly in scRNA-seq assays, remains a concern. Variability in driver strength and regional expression introduces inconsistencies in labeling density.' The authors' honest acknowledgment of this limitation was accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "TaG-EM enables positive identification of cell types in cell atlas projects, identification of multiplet droplets, and can be used for population-scale behavioral measurements through next-generation sequencing readout.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the editor stated the study is 'useful' and has 'potential for further applications,' Reviewer 1 concluded 'although a method for genetic tagging cell populations prior to multiplexing in single-cell experiments would be extremely useful, the method presented here is inadequate' (though later revised to 'the results are now sound'). Reviewer 3 noted limitations remain: 'low barcode detection rate (~37% in optimized conditions) limits the method's scalability' and 'The utility of TaG-EM in quantifying more complex behaviors remains underexplored.' The overall utility claims are accepted with significant caveats about practical limitations.",
+    "result_type": "MAJOR"
+  }
+]

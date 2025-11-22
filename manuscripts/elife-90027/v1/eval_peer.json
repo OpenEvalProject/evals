@@ -1,0 +1,172 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed a novel computational method called the 'axis of arrhythmia' by simulating 100,000 phenotypically diverse cardiomyocytes to identify the relationship between ion current blockade and ectopic beats. This axis serves as a metric for quantifying arrhythmogenic risk from multi-channel drug blockade profiles, defined as the orthogonal direction to the decision boundary separating benign and ectopic phenotypes in parameter space.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly praised the novelty and elegance of this approach. The editor called it 'compelling and novel,' Reviewer 1 described it as 'potentially paradigm-shifting' with 'novel combination of detailed mechanistic simulations with rigorous statistical modeling,' and Reviewer 2 acknowledged 'an elegance to the way the authors have communicated the scoring system.' No reviewer challenged the fundamental methodology or mathematical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The method achieved 88.1\u201390.8% accuracy in predicting clinical risk labels for 109 drugs across different dosage levels, with AUROC values of 91.3\u201391.5%, outperforming the conventional hERG assay (78.9% accuracy).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the method's performance, Reviewer 2 expressed concern that 'the comparison to conventional approaches suggests that the presented method isn't necessarily better than conventional methods' and questioned whether 'the method yield important information when realistic drug concentrations are used.' Reviewer 2 also 'struggled to grasp the exceptional novelty' given existing methods. The high accuracy is not disputed, but its practical superiority remains questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors demonstrated that drug action subtly changes direction with dosage due to differing response rates for each ion channel, and that logarithmic coordinates transform multiplicative drug blockade into an additive process.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raised a significant concern about this finding: 'when a drug blocks multiple channels, it is not only the IC50 but also the Hill coefficient that can differ,' noting that 'if the Hill coefficients were to be significantly different, the concentration-dependent curves shown in Figure 6 could look very different.' This suggests the dose-response analysis may be incomplete without considering Hill coefficient variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C57"
+    ],
+    "result": "The ectopic and benign phenotypes were clearly segregated in parameter space by a linear boundary identified through multivariate logistic regression, with this linear assumption being crucial for generalizing findings across all cardiomyocytes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 noted that 'the curved lines shown in Figure 6 can initially be difficult to comprehend, especially when all the previous presentations emphasized linearity,' and raised concerns about 'a two-dimensional projection of a 4-dimensional space' where 'differences in the \"hidden channels\" will influence the shapes of these curves.' This suggests the linearity assumption may be oversimplified when considering all four ion channels simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The method correctly predicted that Ajmaline is pro-arrhythmic (shifting population 1.16 units toward ectopy, making 26% susceptible) while Linezolid is not (shifting 1.18 units away, making only 0.0095% susceptible), with the latter potentially having anti-arrhythmic properties.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenged these specific drug predictions or the population risk calculations. The examples were used to illustrate the method's application without criticism of the results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The method's practical advantage is that simulations were conducted only once in the absence of drugs to identify the axis of arrhythmia, after which the risk metric can be calculated with pen and paper from standard patch clamp measurements without repeating complex simulations, combining biophysical realism with computational simplicity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly praised this aspect: 'The method is potentially useful because of its simplicity, accessibility, and ease of use. I do think it adds to the field for this reason - a number of existing methods are overly complex and unwieldy.' The editor also noted it 'will be valuable for future drug safety design.' No concerns were raised about this practical implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors acknowledged limitations including that drug potency measurements vary between laboratories, the method was evaluated on heterogeneous data from multiple sources, accuracy depends on measurement quality and the biophysical model used, and only one ORd model variant at 1 Hz pacing was investigated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly raised these concerns: 'The method described in the manuscript suffers from a number of weaknesses that plague current screening methods. Included in these are the data quality and selection used to inform the drug-blocking profile. It's well known that drug measurements vary widely.' Reviewer 2 also noted 'There doesn't seem to be any consideration of pacing frequency, which is an important consideration for arrhythmia triggers.' The authors' acknowledgment of these limitations aligns with reviewer concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors compared their method's performance to previous approaches including Passini et al. (89% accuracy), Llopis-Lorente et al. (94.5% with decision tree, 78.9% with EADs alone), Kramer et al. (90.9% accuracy), and Bnet, noting their method's accuracy is comparable while using a simpler approach.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the comparisons are factually presented, Reviewer 2's comment that 'the comparison to conventional approaches suggests that the presented method isn't necessarily better than conventional methods' and struggle to 'grasp the exceptional novelty of the new metric' indicates skepticism about whether the method represents a significant advance over existing approaches, despite its comparable performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C86"
+    ],
+    "result": "Early after-depolarizations (EADs) were chosen as the biomarker for Torsades des Pointes, with cells classified as ectopic if any of four successive beats contained an EAD defined by a secondary peak above \u221250 mV separated from other peaks by at least 100 ms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenged the choice of EADs as a biomarker or the classification criteria. The method's use of EADs was implicitly accepted as appropriate for the study's goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The method can predict the proportion of the population susceptible to a drug without explicit simulation because drug blockade and phenotypic diversity both operate on the same ion channel properties and are mathematically interchangeable in the logarithmic framework.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenged this theoretical insight or the population prediction capability. Reviewer 1 praised the 'clear explication of difficult concepts,' suggesting acceptance of the mathematical framework underlying this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The authors believe this approach will accelerate adoption of computational assays in safety pharmacology and reduce the burden of animal testing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor stated the method 'will be valuable for future drug safety design,' and Reviewer 1 noted it provides 'a method for predicting drug safety that can be used during drug development.' While speculative, reviewers expressed support for the potential impact.",
+    "result_type": "MINOR"
+  }
+]

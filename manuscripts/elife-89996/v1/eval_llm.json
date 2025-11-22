@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C14",
+      "C15",
+      "C2",
+      "C13"
+    ],
+    "result": "More than a third (33.1%) of mouse V1 neurons exhibit color-opponent responses in their receptive field center, with the color axis explaining 33% of variance in the RF center. In contrast, the RF surround predominantly captures luminance contrast, with the luminance axis explaining 82% of variance in the surround.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C14, C15 provide converging quantitative evidence from PCA analysis showing substantial color-opponency in RF centers (33% variance explained by color axis, 33.1% of neurons color-opponent). Claims C2 and C13 demonstrate surround responses are dominated by luminance (82% variance). The experimental design using center-surround color noise stimuli with appropriate controls (C72, C74) supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C86"
+    ],
+    "result": "Color-opponency is significantly more pronounced in posterior V1 (encoding the upper visual field) compared to anterior V1 (encoding the lower visual field). The color axis explains 39% of variance in posterior V1 versus only 19% in anterior V1, with significantly higher decoding discriminability for color in posterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C86 provide consistent quantitative evidence showing twice as much color variance explained in posterior versus anterior V1. Claim C25 confirms this with independent decoding analysis. The findings are reproducible across animals (C2\u2014figure supplement 1b) and align with natural scene statistics (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C31"
+    ],
+    "result": "The asymmetry in color representations across cortex is explained by an uneven distribution of response types. Green-On/UV-Off color-opponent types are almost exclusively confined to posterior V1 (explaining 73% of variance), while green-Off/UV-On types are uniformly distributed across V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide quantitative evidence from unsupervised clustering (GMM with 89.2% assignment accuracy, C28) showing differential distribution of response types. The finding that green-On/UV-Off types are posterior-enriched while green-Off/UV-On types are evenly distributed (C31) mechanistically explains the overall asymmetry. Results are consistent across animals (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C67"
+    ],
+    "result": "Computational modeling suggests that green-On/UV-Off color-opponent response types may enhance detection of predatory-like dark UV-objects in noisy daylight scenes by reducing responses to noise rather than increasing responses to objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C38 describe computational modeling results showing selective responses of green-On/UV-Off types. However, the model uses simplified parametric stimuli and linear-nonlinear assumptions (C93). The functional interpretation for predator detection (C6, C67) remains speculative without behavioral validation or more realistic natural scene testing. The model provides a plausible hypothesis but requires experimental verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The neuronal representation of color in mouse V1 greatly depends on ambient light levels, being strongest for photopic conditions that predominantly drive cone photoreceptors. Color representation decreases but remains detectable at low mesopic light levels, suggesting weak cone activation is sufficient for color extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C80 provide consistent evidence across multiple light levels showing decreased color representation with reduced illumination. Claim C81 rules out signal-to-noise as the primary explanation by showing luminance decoding was unaffected. Claims C83-C84 demonstrate residual color encoding at low mesopic levels. The experimental design tested three light levels with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C75",
+      "C76"
+    ],
+    "result": "The pronounced center color-opponency in V1 neurons cannot be solely attributed to color-opponency in retinal ganglion cell centers. At the retinal output level, the color axis explains only 12% of variance in RF centers, much lower than the 33% observed in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 provide quantitative comparison using publicly available retinal data showing much lower center color-opponency in retinal ganglion cells (12%) versus V1 (33%). Claims C19-C20 appropriately interpret this as evidence for cortical processing beyond simple inheritance from retinal inputs. However, C20 acknowledges this is speculative regarding specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Color-opponency in mouse V1 is at least partially mediated by comparison of cone signals (not purely cone-rod comparisons), though rods likely contribute to the observed color-opponent responses, particularly in posterior V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by the light-level experiments showing strongest color representation at photopic levels. Claims C44-C45 appropriately acknowledge rod contributions based on experimental conditions and prior literature. The interpretation balances data-driven conclusions with appropriate caveats about photoreceptor contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "For photopic light levels, neurons in mouse visual cortex strongly encode color features in their RF center, with significantly better discriminability for center versus surround stimuli. However, decoding performance is lower for color compared to luminance contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by independent decoding analysis using SVM with 10-fold cross-validation. The finding that color discriminability is lower than luminance but significantly better in center versus surround is consistent with the PCA results (C14-C15, C13). Statistical testing with Bonferroni correction was applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "V1 neurons exhibit expected center-surround antagonism with negatively correlated center and surround responses. Posterior and anterior V1 neurons preferentially respond to UV and green stimuli respectively, consistent with retinal opsin distribution, though this asymmetry is less pronounced in the surround.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe validation of the experimental approach by recovering known properties of V1 neurons. The findings are consistent with established literature on center-surround antagonism and retinal opsin distribution (citations provided). These results support the validity of the experimental paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Unsupervised clustering identified 17 distinct functional response types in mouse V1 with high assignment accuracy (89.2%). Approximately half are sensitive to luminance contrast and evenly distributed, while others show spatial enrichment patterns consistent with retinal opsin distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 establish the clustering methodology is robust (89.2% accuracy, consistent across animals). Claims C30, C88-C90 describe the identified response types and their distributions. Claim C91 provides independent validation through decoding analysis. The GMM approach with 17 components was justified by cross-validation (Figure 5\u2014supplement 1a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The linear ETA approach may inadequately capture stimulus selectivity of nonlinear neurons, though over 62% of neurons exhibited significant center ETAs, suggesting substantial coverage of the V1 population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 appropriately acknowledges a methodological limitation. Claim C50 provides evidence that despite this limitation, the approach captured a substantial proportion of neurons. This represents appropriate scientific caution about method limitations while demonstrating the approach was reasonably effective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C51",
+      "C52",
+      "C53",
+      "C87"
+    ],
+    "result": "The stronger cortical representation of color in posterior V1 may be an adaptation to efficiently encode enriched color contrast in the upper visual field of mouse natural scenes, as reported in prior studies of natural scene statistics and retinal processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C51-C52 cite prior work establishing asymmetric color contrast in natural scenes and retinal processing. Claim C87 appropriately frames the current findings as potentially adaptive, using cautious language ('might be'). The interpretation is speculative but well-grounded in prior literature and the current experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Mice are dichromatic with UV- and green-sensitive cone photoreceptors that predominantly sample upper and lower visual fields respectively. Behavioral studies demonstrate mice can discriminate colors, at least in the upper visual field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 summarize established background knowledge from cited literature. These are appropriately cited factual claims about mouse photoreceptor biology and color discrimination behavior that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The experimental approach used GCaMP6s-expressing mice with two-photon calcium imaging in L2/3 of posterior and anterior V1. The center stimulus size (37.5\u00b0) was slightly larger than individual neuron RFs (26.2\u00b14.6\u00b0), with validation showing >2/3 RF overlap for 83% of neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe methodological details with appropriate validation. Claim C72 provides quantitative evidence that stimulus alignment was adequate for most neurons. Claim C73 documents exclusion criteria. These methodological claims are well-supported by the described validation procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Color vision in most species is mediated by comparing signals from different cone photoreceptor types. Recent work demonstrates extensive rod-cone opponency in mice, involving integration of cone center signals with rod surround signals, with similar mechanisms potentially existing in monochromatic humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 summarize established literature on color vision mechanisms across species. These are appropriately cited background claims from review articles and primary research that contextualize the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The mouse visual system extracts color information at low mesopic light levels. Green-Off/UV-On color-opponency is equally distributed across cortex (suggesting color vision substrate across the visual field), while green-On/UV-Off opponency is confined to posterior V1 where it might aid aerial predator detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by experimental data at low light levels (C83-C84). Claim C47 is supported by response type distribution analysis (C31). Claim C48 appropriately uses cautious language ('might aid') for the functional interpretation, which is supported by modeling (C35-C38) but remains speculative without behavioral validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "At the retinal level, color-opponency is largely mediated by center-surround interactions with few neurons exhibiting center color-opponency. Recent work suggests LGN color processing cannot be fully explained by retinal mechanisms, and integration of retinal center-surround signals might contribute to V1 color-opponency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 appropriately cite prior literature on retinal and LGN color processing. Claim C57 offers a reasonable speculative interpretation connecting retinal mechanisms to V1 findings, appropriately qualified as inference. The interpretation is consistent with the comparative analysis of retinal and V1 data (C75-C76).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Color processing strategies differ across species. In primates, a small number of retinal cell types transmit color information with partial segregation in cortex (e.g., blob/inter-stripe regions). In contrast, zebrafish, birds, Drosophila, and mice show distributed color processing across many neuron types without clear segregation from other visual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 summarize comparative neuroscience literature on color processing strategies across species. These are appropriately cited background claims that contextualize the distributed color processing observed in mouse V1. The comparative framework is well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Chromatic signals may facilitate extraction of specific environmental features rather than only supporting color discrimination per se. UV wavelengths aid object detection by increasing contrast, and different photoreceptor types may have evolved to reduce lighting noise. Distributed chromatic tuning might make sense if chromatic signals primarily boost contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C68 present speculative functional interpretations supported by cited literature (C65-C66) and modeling results (C67). However, these remain hypotheses without direct behavioral or causal experimental validation. The reasoning is logical and grounded in prior work, but the claims are appropriately qualified as speculative ('may,' 'might').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Objects in sky, underwater, or snow environments are often more visible in UV than green wavelengths. Driving color-opponent neurons requires opposite polarity in UV and green channels. Functional neuron types with distinct color properties may unevenly sample visual space and serve distinct roles in visually guided behaviors like predator detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 is supported by cited literature. Claim C93 describes a mechanistic principle from modeling. Claims C94-C95 present speculative functional interpretations appropriately qualified with 'might' and 'suggest.' While the reasoning is logical and supported by modeling, the behavioral relevance remains untested and speculative.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2266 @@
+{
+  "submission": {
+    "id": "eda88090-6487-4966-bc8a-962874d5ce03",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-22T00:43:43.577849Z",
+    "updated_at": "2025-11-22T00:43:43.577849Z"
+  },
+  "content": [
+    {
+      "id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "content_type": "manuscript",
+      "content_text": "# Assessing drug safety by identifying the axis of arrhythmia in cardiomyocyte electrophysiology\n\n## Authors\n\n- Stewart Heitmann<sup>1</sup> ([ORCID: 0000-0003-3351-9514](https://orcid.org/0000-0003-3351-9514)) \u2020\n- Jamie I Vandenberg<sup>1</sup> ([ORCID: 0000-0002-3859-3716](https://orcid.org/0000-0002-3859-3716))\n- Adam P Hill<sup>1</sup>\n\n### Affiliations\n\n1. Victor Chang Cardiac Research Institute Darlinghurst Australia ([ROR:03trvqr13](https://ror.org/03trvqr13))\n2. School of Clinical Medicine, Faculty of Medicine and Health, University of New South Wales Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))\n3. Victor Chang Cardiac Research Institute Innovation Centre Darlinghurst Australia ([ROR:03trvqr13](https://ror.org/03trvqr13))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany classes of drugs can induce fatal cardiac arrhythmias by disrupting the electrophysiology of cardiomyocytes. Safety guidelines thus require all new drugs to be assessed for pro-arrhythmic risk prior to conducting human trials. The standard safety protocols primarily focus on drug blockade of the delayed-rectifier potassium current (IKr). Yet the risk is better assessed using four key ion currents (IKr, ICaL, INaL, IKs). We simulated 100,000 phenotypically diverse cardiomyocytes to identify the underlying relationship between the blockade of those currents and the emergence of ectopic beats in the action potential. We call that relationship the axis of arrhythmia. It serves as a yardstick for quantifying the arrhythmogenic risk of any drug from its profile of multi-channel block alone. We tested it on 109 drugs and found that it predicted the clinical risk labels with an accuracy of 88.1\u201390.8%. Pharmacologists can use our method to assess the safety of novel drugs without resorting to animal testing or unwieldy computer simulations.\n\n## Introduction\n\nTorsades des Pointes is a potentially lethal ventricular arrhythmia that can be induced by many classes of drugs. These include antibiotics, antipsychotics, antihistamines, chemotherapeutics, and anti-arrhythmics (Yap and Camm, 2003). The majority of torsadogenic drugs block the hERG ion channel which carries the delayed-rectifier potassium current $(I_{Kr})$ (Witchel, 2011). For this reason, international safety guidelines require hERG block to be assessed in living cells prior to conducting human trials (ICH, 2005). However, the standard hERG assay is overly sensitive. It does not accommodate multi-channel effects which render some drugs safe despite blocking hERG (Martin et al., 2004; Hoffmann and Warner, 2006). Consequently, many useful drugs are prematurely abandoned during pre-clinical trials. The safety pharmacology community is actively pursuing new in vitro and in silico assays that improve accuracy by targeting multiple ion channels (Pugsley et al., 2008; Colatsky et al., 2016).\n\nIn silico assays use computational models of cardiomyocyte electrophysiology in place of a living cell (Mirams et al., 2011; Lancaster and Sobie, 2016; Mann et al., 2016; Dutta et al., 2017; Passini et al., 2017; Ballouz et al., 2021; Llopis-Lorente et al., 2020). Drug blockade (Figure 1A) is simulated in the model (Figure 1B) by attenuating the conductivity of the relevant ion currents. The conductance parameters are labeled $G$ by convention. The simulations can be repeated across a diverse range of cardiac phenotypes to ensure generality of the results (Britton et al., 2013; Ni et al., 2018; Gong and Sobie, 2018). The individual phenotypes are constructed by randomizing the conductance parameters to mimic natural variation in ion channel expression. The method produces a population of cardiac action potentials (Figure 1C). Selected biomarkers within the action potentials are then statistically analyzed for drug-induced changes (e.g. Hondeghem, 2005; Varshneya et al., 2021). Contemporary research is largely concerned with improving those biomarkers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig1-v1.jpg)\n\n**Figure 1.:** (A) Drugs simultaneously block multiple species of ion channels to differing degrees. The principal ion currents implicated in drug-induced Torsades des Pointes are $I_{CaL},I_{Kr},I_{NaL}$, and $I_{Ks}$. (B) Simplified circuit diagram of cardiomyocyte electrophysiology. Drug blockade is simulated by attenuating the ionic conductances $(G_{CaL},G_{Kr},G_{NaL},G_{Ks})$. Those parameters are also varied randomly to mimic individual differences in electrophysiology. (C) Simulated action potentials of phenotypically diverse cardiomyocytes. Early after-depolarizations (red) are biomarkers for Torsades des Pointes. Conventional in silico assays simulate the effect of drugs on cardiomyocytes on a case-by-case basis. Our method inverts the procedure by simulating cardiomyocytes in the absence of drugs and then inferring how drugs would behave.\n\nYet the main problem with the conventional approach is that it requires multitudes of computationally intensive simulations for every drug that is assessed. Pharmacology laboratories must invest heavily in specialist computing resources and expertise before they can apply the methods to their drugs. We propose a new approach that allows drugs to be assessed without conducting drug-specific simulations. The method is initiated by simulating a diverse population of cardiomyocytes in the absence of drugs. That simulation need only be done once. The drug-free population is then used to identify the principal relationship between ionic conductances and ectopic phenotypes. We call that relationship the axis of arrhythmia because it describes the principal pathway for transforming benign cardiomyocytes into ectopic cardiomyocytes. Thereafter, the axis serves as a yardstick for assessing the torsadogenic risk of drugs directly from their physiological signature of ion channel blockade alone.\n\n## Results\n\nThe action potentials of 100,000 randomized ventricular cardiomyocytes (Figure 2A) were simulated using a variant of the O\u2019Hara-Rudy model (O\u2019Hara et al., 2011) that was optimized for long QT syndrome (Mann et al., 2016; Krogh-Madsen et al., 2017). Early after-depolarizations were chosen as a biomarker for Torsades des Pointes. Cardiomyocytes that exhibited early after-depolarizations were classified as ectopic (red) and those that did not were classified as benign (gray).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig2-v1.jpg)\n\n**Figure 2.:** (A) Simulated action potentials for cardiomyocytes with randomly scaled conductance parameters $G_{Kr}$, $G_{CaL}$, $G_{NaL}$, and $G_{Ks}$. Myocytes that exhibited early after-depolarizations were classified as ectopic (red). Those that did not were classified as benign (gray). (B) Swarm plots of the conductance scalars on a logarithmic scale. Color indicates the classification of the myocyte (benign versus ectopic). (C) Two-dimensional slice of parameter space showing the relationship between ectopic and benign phenotypes in $G_{CaL}$ versus $G_{Kr}$. The dashed line is the statistical decision boundary. $G_{NaL}$ and $G_{Ks}$ were fixed at unity $(e^{0}=1)$. (D) Two-dimensional slice showing $G_{NaL}$ versus $G_{Ks}$. In this case $G_{CaL}=e^{0.46}$ and $G_{Kr}=e^{\u22122.3}$.\n\nThe four cardiac ion currents that we investigated $(I_{CaL},I_{Kr},I_{NaL},I_{Ks})$ have previously been implicated in torsadogenic risk (Dutta et al., 2017; Llopis-Lorente et al., 2020). The myocytes were constructed by re-scaling the conductance parameters $(G_{CaL},G_{Kr},G_{NaL},G_{Ks})$ with randomly selected multipliers that were drawn uniformly from a logarithmic scale (Figure 2B). The use of the logarithmic coordinate frame is crucial to our subsequent analysis.\n\nThe ectopic and benign phenotypes were clearly segregated in parameter space (Figure 2C and D). Multivariate logistic regression was used to identify the linear boundary (dashed line) that best separated the two classes. We refer to it as the decision boundary following the conventions of classification statistics.\n\n### Decision boundary\n\nThe multivariate logistic regression equation,\n\n$$\nln\u2061\\frac{p}{1\u2212p}=\\beta_{0}+\\beta_{CaL}X_{CaL}+\\beta_{Kr}X_{Kr}+\\beta_{NaL}X_{NaL}+\\beta_{Ks}X_{Ks},\n$$\n\ndescribes the log-odds of a cardiomyocyte being ectopic where $X_{CaL}=ln\u2061(G_{CaL})$, $X_{Kr}=ln\u2061(G_{Kr})$, $X_{NaL}=ln\u2061(G_{NaL})$, and $X_{Ks}=ln\u2061(G_{Ks})$. The decision boundary is the hyperplane in four-dimensional parameter space $(X_{CaL},X_{Kr},X_{NaL},X_{Ks})$ where $p=0.5$. Figure 2C and D shows the intersection of that hyperplane (dashed) with two-dimensional slices of parameter space. Although we illustrate the concept in two dimensions, the analysis itself is conducted in four dimensions.\n\nOur estimates of the regression coefficients, $\\beta_{0}=\u22126.416\\pm0.059$, $\\beta_{CaL}=2.509\\pm0.024$, $\\beta_{Kr}=\u22122.471\\pm0.024$, $\\beta_{NaL}=0.847\\pm0.012$, $\\beta_{Ks}=\u22121.724\\pm0.018$, were all statistically significant $(p<0.001)$. The reported confidence intervals represent \u00b1 1 SE. The model itself was also significantly different from the null model, $\u03c7^{2}(99995,n=100000)=73900,$ $p<0.001$.\n\n### The action of drugs in logarithmic coordinates\n\nDrugs attenuate the conductivity of ion channels in a multiplicative fashion. The conductance of the drugged channel is defined as\n\n$$\nG_{drug}=\\delta\\timesG_{ion},\n$$\n\nwhere $G_{ion}$ is the baseline conductance of the ion channel and $\\delta\\in[0,1]$ is the fractional conductance imposed by the drug. Logarithmic coordinates transform the action of drug blockade into an additive process,\n\n$$\nln\u2061(G_{drug})=ln\u2061(\\delta)+ln\u2061(G_{ion}),\n$$\n\nwhich can be expressed with vector geometry (Figure 3A). We denote the action of a drug by the vector,\n\n$$\nA={\\alpha_{CaL},\\alpha_{Kr},\\alpha_{NaL},\\alpha_{Ks}},\n$$\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig3-v1.jpg)\n\n**Figure 3.:** (A) The axis of arrhythmia runs orthogonally to the decision boundary. As such, it describes the shortest pathway to ectopy for any cardiomyocyte. The basis vector of the axis is labeled $B$. The action of the drug is labeled $A$. The arrhythmogenic component of the drug is obtained by projecting vector $A$ onto vector $B$. The length of the projection is our measure of drug risk. (B) The probability of ectopy along the axis of arrhythmia. The origin corresponds to the baseline cardiomyocyte. The distance from the origin corresponds to the risk score. Distance is measured in log units, using the same scale as panel A.\n\nwhere $\\alpha=ln\u2061(\\delta)$. The values of $\\delta$ would ordinarily be obtained from patch clamp experiments. In our case, we calculated them from the published potencies of 109 drugs collated by Llopis-Lorente et al., 2020.\n\n### Axis of arrhythmia\n\nWe define the axis of arrhythmia as a line that runs orthogonally to the decision boundary (Figure 3A). It represents the shortest path for shifting any cardiomyocyte into the ectopic regime by modifying the conductances of its ion channels. The basis vector of the axis,\n\n$$\nB={\\beta_{CaL},\\beta_{Kr},\\beta_{NaL},\\beta_{Ks}},\n$$\n\nis defined by the coefficients of the regression equation.\n\n### Drug risk metric\n\nThe arrhythmogenic component of a drug is obtained by projecting the action of the drug onto the axis of arrhythmia. The length of the projection is our metric of drug risk. Specifically,\n\n$$\nrisk=\\frac{A\u22c5B}{||B||},\n$$\n\nwhere $A$ is the action of the drug, $B$ is the basis vector of the axis of arrhythmia, and\n\n$$\nA\u22c5B=\\sumi\\alpha_{i}\\beta_{i}\n$$\n\nis the dot product. The metric is normalized to the Euclidean length of $B$, which is denoted $||B||$. From our regression coefficients,\n\n$$\nB={2.509,\u22122.471,0.847,\u22121.724}\n$$\n\nand $||B||=\\sqrt{\\beta_{CaL}^{2}+\\beta_{Kr}^{2}+\\beta_{%NaL}^{2}+\\beta_{Ks}^{2}}=4.01$.\n\n### Risk scores\n\nAccording to our metric, drugs that shift the electrophysiology toward the ectopic region have positive scores, whereas drugs that shift it away from ectopy have negative scores. Drugs that do neither have scores near zero.\n\n### The a priori probability of ectopy\n\nThe probability of ectopy along the axis of arrhythmia,\n\n$$\np(x)=\\frac{1}{1+exp\u2061(x)},\n$$\n\nis obtained by rearranging Equation 1 and substituting $x=\\beta_{0}+\\beta_{CaL}X_{CaL}+\\beta_{Kr}X_{Kr}+\\beta_{NaL}X_{NaL}+\\beta_{Ks}X_{Ks}$. Equation 4 describes the a priori probability of a cardiomyocyte being ectopic, based on its proximity to the decision boundary (Figure 3B). The shallow slope of the profile reflects the uncertainty in fitting a linear boundary to the data, as seen in Figure 2C and D.\n\n### Susceptibility in the natural population\n\nAny given drug alters the electrophysiology of all cardiomyocytes to the same extent, but only some cardiomyocytes become ectopic. The most susceptible are those that are closest to the decision boundary. We calculated the proportion of the natural population that would be susceptible to a given drug by analyzing how the drug shifts the population density with respect to the decision boundary.\n\nFollowing the methods of Sobie, 2009, Sadrieh et al., 2013, Morotti and Grandi, 2017, Gong and Sobie, 2018, we assumed that ion channel conductances varied independently and were log-normally distributed $(\\mu=\u22120.112,\\sigma=0.472)$. A log-normal distribution maps onto a normal distribution in logarithmic coordinates, by definition. The natural population in our parameter space is therefore a symmetric multivariate Gaussian density function (Figure 4A). In the absence of drugs, the natural population density in four dimensions is centered at the point $O={\\mu,\\mu,\\mu,\\mu}$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig4-v1.jpg)\n\n**Figure 4.:** (A) Natural variation in ion channel conductivity is represented by a symmetric Gaussian density function centered at point $O$. In this example, a 10-fold dose of Ibutilide shifts the population by 1.44 units toward the ectopic region. The proportion of ectopic myocytes in the drugged population is 41.5% (red). (B) The relationship between the drug risk score and ectopy in the natural population. The drug risk score corresponds to position on the axis of arrhythmia. The shaded region is the a priori probability of ectopy along that axis (reproduced from Figure 3B). The Gaussian profile (thin gray line) is the natural population density centered at zero. The proportion of myocytes that are ectopic (heavy black line) is 0.93% at baseline. That proportion rises as the drug shifts the population density toward the decision boundary.\n\nThe proportion of myocytes that become ectopic depends on how far the population is shifted along the axis of arrhythmia according to the risk metric (Figure 4B). The proportion is calculated as the product of the a priori probability of the ectopy (Equation 4) and the density of the drugged population (Equation 6; Methods). For the case of 10\u00d7 therapeutic dose of Ibutilide \u2014 which is a potent $I_{Kr}$ blocker \u2014 the proportion of the natural population that is susceptible to drug-induced Torsades is 41.5% (Figure 4). The size of the susceptible population is a monotonic function of the drug\u2019s risk score, so the torsadogenic risk can be described using either terminology.\n\n### Validation against known drugs\n\nWe used the Hill equation to reconstruct the drug-response profiles of $G_{Kr}$, $G_{CaL}$, $G_{Ks}$, and $G_{NaL}$ from the half-maximal inhibitory concentrations $(IC_{50})$ of 109 drugs reported by Llopis-Lorente et al., 2020. They labeled the clinical risks according to the Credible Meds list of QT drugs (Woosley et al., 2019). In that labeling scheme, Class 1 drugs carry a known torsadogenic risk; Class 2 drugs carry a possible risk; Class 3 drugs carry a risk but only in conjunction with other factors; Class 4 drugs have no evidence of risk at all. The reconstructed drug-response profiles, along with their corresponding risk scores, are provided in Table 2\u2014source data 1 and plotted in Table 2\u2014source data 2.\n\n### Cases of Ajmaline and Linezolid\n\nAjmaline (Figure 5A, top) is an anti-arrhythmic drug that slows conduction by blocking the fast sodium current, $I_{Na}$ (Kiesecker et al., 2004). It also blocks $I_{Kr}$, which is the reason Ajmaline has a known risk (Class 1) of inducing Torsades. In comparison, Linezolid (Figure 5A, bottom) is an antibacterial agent that has no clinical evidence of Torsades (Class 4) even though it too blocks $I_{Kr}$, albeit to a lesser extent than it blocks $I_{CaL}$. Indeed, the two drugs have nearly opposite effects on $G_{CaL}$ and $G_{Kr}$, as can be seen in Figure 5B.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig5-v1.jpg)\n\n**Figure 5.:** (A) Drug-response profiles of $I_{CaL},I_{Kr},I_{NaL}$, and $I_{Ks}$ relative to the therapeutic dose. Open circles highlight 25\u00d7 therapeutic dose. For Ajmaline, $\\delta_{CaL}=0.654$ and $\\delta_{Kr}=0.0986$ at 25\u00d7 dose. For Linezolid, $\\delta_{CaL}=0.067$ and $\\delta_{Kr}=0.437$ at 25\u00d7 dose. Data for $I_{NaL}$ and $I_{Ks}$ were not available, so those channels were assumed to be unaffected by the drugs in both cases $(\\delta_{NaL}=1$ and $\\delta_{Ks}=1).$ (B) The blocking action of Ajmaline and Linezolid at 25\u00d7 dose. By definition, $\\alpha=ln\u2061(\\delta)$. (C) The corresponding risk scores for Ajmaline $(+1.16)$ and Linezolid $(\u22121.18)$ at that dose. (D) The drug-induced shifts of the natural population density along the axis of arrhythmia. The proportion of myocytes that are ectopic with 25\u00d7 dose of Ajmaline is 26% (red), compared to only 0.0095% for Linezolid.\n\nAt 25\u00d7 therapeutic dose, the blocking action of Ajmaline is written in vector notation as\n\n$$\nA_{Ajmaline}={\u22120.425,\u22122.32,0,0}.\n$$\n\nLikewise, the blocking action of Linezolid is\n\n$$\nA_{Linezolid}={\u22122.71,\u22120.828,0,0}.\n$$\n\nThe two drugs shift the electrophysiology in opposite directions along the axis of arrhythmia (Figure 5C). The corresponding risk scores are $+1.16$ for Ajmaline and $\u22121.18$ for Linezolid. The signs of the scores suggest that Ajmaline is pro-arrhythmic whereas Linezolid is not, which agrees with the clinical risk labels. Indeed, the sizable negative score for Linezolid suggests that it may actually have anti-arrhythmic properties.\n\nThe effect of both drugs on the natural population is shown in Figure 5D. Ajmaline shifts the population density by 1.16 units toward the ectopic regime, making 26% of the population susceptible to Torsades. Conversely, Linezolid shifts the population 1.18 units away from the ectopic regime, making only 0.0095% of the population susceptible, which is a substantial drop compared to the baseline rate of 0.93%.\n\n### The effect of dosage on multi-channel block\n\nThe action of a drug subtly changes direction with dosage because of differing response rates for each ion channel. For example, Ajmaline (Figure 6A, left) disproportionately blocks more $I_{Kr}$ than $I_{CaL}$ with increasing dosage. Its dose-dependent action thus follows a gentle arc in parameter space rather than a straight line (Figure 6B, left). The effect is less pronounced for Propafenone (Figure 6A, middle) which recruits the ion channels more uniformly. Nonetheless, its path is still not strictly linear (Figure 6B, middle). Linezolid (Figure 6B, right) follows a similar pattern to Ajmaline (Figure 6B, left), but in the opposite direction. Of these three drugs, only Propafenone blocks $I_{NaL}$ and none block $I_{Ks}$, hence their pathways in $G_{Ks}$ and $G_{NaL}$ (Figure 6C) are of little consequence. Nonetheless, the pathways of other drugs (gray traces) are often curvilinear in four dimensions ($G_{CaL}$, $G_{Kr}$, $G_{NaL}$, $G_{Ks}$). That curvature influences how these drugs project onto the axis of arrhythmia, hence the risk scores depend on dosage. The shifting scores reflect the changing balance of ionic currents that occur naturally with multi-channel drugs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig6-v1.jpg)\n\n**Figure 6.:** (A) The attenuation of $G_{CaL}$, $G_{Kr}$, $G_{NaL}$, and $G_{Ks}$ for 1\u00d7 to 30\u00d7 therapeutic doses of Ajmaline, Propafenone, and Linezolid, respectively. The ion channels respond to dosage at differing rates. (B) The dose-dependent action of each drug in the parameter space of $G_{CaL}$ and $G_{Kr}$. The paths are curvilinear because of the differing response rates of the ion channels. For comparison, the gray traces are the pathways of all 109 drugs in the dataset. (C) The corresponding pathways in $G_{NaL}$ and $G_{Ks}$. Propafenone attenuates $G_{NaL}$ but not $G_{Ks}$. Neither Ajmaline nor Linezolid attenuate $G_{NaL}$ or $G_{Ks}$, but other drugs do (gray traces).\n\n### Testing the risk metric\n\nThe metric was tested by scoring all 109 drugs over a range of doses and comparing the results to the clinical risk labels from Credible Meds. The clinical labels were lumped into two categories for this purpose: UNSAFE (Classes 1 and 2) versus SAFE (Classes 3 and 4). Drugs that scored above a given threshold $(risk>\\theta)$ were predicted to be unsafe and those that scored below the threshold $(risk<\\theta)$ were predicted to be safe. The threshold was optimized for each dosage. For example, a classification accuracy of 90.8% was achieved for drugs at 25\u00d7 dose using a scoring threshold of $\\theta=0.195$ (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig7-v1.jpg)\n\n**Figure 7.:** Colors indicate the clinical risk labels from Credible Meds. The drugs are sorted by the score returned by our risk metric (lower axis). The proportion of the natural population that would be susceptible to the drug is shown on the upper axis. Drugs to the right of the scoring threshold $(\\theta=0.195)$ were classified as unsafe and those to the left of it were classified as safe. Misclassified drugs are marked with a triangle and highlighted in bold. In this case, 90.8% of the drugs were correctly classified.\n\nThe procedure was repeated for doses ranging from 1\u00d7 to 32\u00d7. The classification accuracy for all dosage levels was found to lay between 88.1% and 90.8% (Figure 8A). The differences were primarily due to borderline cases, so we refrain from nominating any one dosage as being optimal. In comparison, the conventional hERG assay has an accuracy of 78.9% for the same dataset (Llopis-Lorente et al., 2020).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/90027/elife-90027-fig8-v1.jpg)\n\n**Figure 8.:** (A) Classification accuracy for drugs assessed at a range of dosages. (B) Receiver operating characteristic (ROC) curve for drugs at 5\u00d7 dose. (C) ROC curve for drugs at 25\u00d7 dose. AUROC is area under the ROC curve. TPR is true positive rate. FPR is false positive rate. The false negative rate is 1-TPR.\n\nFrom a safety perspective, the trade-off between false negatives and false positives can be tuned by adjusting the scoring threshold, $\\theta$. This is illustrated by the receiver operating characteristic (ROC) curves (Figure 8B and C). In our case, there is little difference between the ROC curves for drugs assessed at 5\u00d7 dose versus 25\u00d7 dose. The areas under the respective ROC curves (AUROC) are nearly identical at 91.3% and 91.5%. The conventional hERG assay, in comparison, has an AUROC of $77\\pm7%$ (Kramer et al., 2013).\n\n## Discussion\n\nIn this study, we have proposed a new metric of torsadogenic risk that is based on the axis of arrhythmia. The major benefit of the metric is that it can be applied to novel drugs without conducting new computer simulations. The drug-response profiles of four ion currents $(\\delta_{CaL},\\delta_{Kr},\\delta_{NaL},\\delta_{Ks})$ are all that is needed to calculate the torsadogenic risk of the drug. The ion currents can be measured using standard patch clamp techniques and the risk metric can be calculated with pen and paper. This simplicity removes a technological hurdle to the adoption of computational assays in safety pharmacology.\n\n### Identifying the axis of arrhythmia\n\nAll of the simulations in the present study were conducted in the absence of drugs. The simulations were only needed to identify the axis of arrhythmia and do not need to be repeated when applying the metric. The axis encapsulates the principal relationship between ion channel blockade and the onset of early after-depolarizations. It represents the most potent combination of pro-arrhythmic block that is theoretically possible for any drug, averaged across all cardiomyocytes. As such, it serves as an ideal yardstick for measuring the arrhythmogenic risk of real drugs.\n\nThe assumption that the boundary is linear is crucial for generalizing the findings across all cardiomyocytes. It allows the effect of a drug to be analyzed independently of the individual cardiomyocytes. So even though a nonlinear decision boundary might fit some cardiomyocytes better, it would not be helpful because the drug analysis would then be patient specific \u2014 which is not the aim of population safety pharmacology.\n\n### Susceptibility to drug-induced arrhythmia\n\nOur method can also predict the proportion of the population that would be susceptible to a drug without explicitly simulating it. The analysis is possible because drug blockade and phenotypic diversity both operate on the same properties of ion channels. The two biological processes are therefore mathematically interchangeable. As such, the distribution of the drugged population can be inferred from the drug-free population by shifting it according to the drug\u2019s risk score. The size of the susceptible population is a function of the risk score. So the torsadogenic risk can be reported either as a raw score or as a percentage of the population at risk.\n\n### Comparison to conventional approaches\n\nConventional in silico safety assays are designed to apply the drug directly to simulated cardiomyocytes and then use biomarkers in the action potential to predict the torsadogenic risk. The biomarkers are typically optimized using a formal set of training drugs proposed by the comprehensive in vitro proarrhythmia assay (CiPA) initiative (Colatsky et al., 2016). See Grandi et al., 2018, for a review. The CiPA steering committee (Li et al., 2019) recommends that the electrophysiology be simulated using the CiPAORdv1.0 variant of the O\u2019Hara-Rudy model which incorporates the kinetics of drugs binding with the hERG channel (Li et al., 2017). The recommended biomarker is qNet (Dutta et al., 2017) which measures the net charge of six major ion currents $(I_{Kr},I_{CaL},I_{NaL},I_{to},I_{Ks},I_{K1})$. The clinical risks of the CiPA drugs (n=28) are labeled low, intermediate, or high. Low versus intermediate-or-high risk drugs were predicted with 84\u201395% accuracy using manual patch clamp techniques; or 93\u2013100% accuracy using automated patch clamping (Li et al., 2019). Whereas low-or-intermediate versus high risk drugs were predicted to 92\u2013100% accuracy using manual patch clamp; or 88\u201398% using automated patch clamp (Li et al., 2019). The measurement of the drug potencies is a source of considerable variability, which is exacerbated by the small number of test drugs (n=16). The prediction accuracy reported by Li et al., 2019, is higher than our method, but the results cannot be compared directly because the risk labels are stratified very differently.\n\nPassini et al., 2017, used a larger dataset (n=62) to obtain 89% accuracy at predicting Class 1 versus Class 2\u20134 torsadogenic risk labels from Credible Meds. The cardiomyocytes were simulated using the baseline O\u2019Hara-Rudy model without dynamic drug-binding kinetics. The accuracy is within the range of our results, but it too uses a slightly different risk stratification scheme. They scored the risk independently of dosage by averaging the number of early after-depolarizations, weighted by the concentration of the drug (Passini et al., 2017). We believe it is better to quantify the risk as a function of dosage, since even the most lethal drug is safe at zero dose.\n\nThe present study uses the same dataset (n=109) as Llopis-Lorente et al., 2020, who investigated a suite of biomarkers using a recalibrated O\u2019Hara-Rudy model which also had revised gating kinetics for $I_{Na}$. Their best performing biomarker was qNet, which predicted Class 1\u20132 versus Class 3\u20134 torsadogenic risk with 92.7% accuracy. It exceeds our best result by approximately 2% on the same risk stratification scheme. Llopis-Lorente et al., 2020, increased the overall performance to 94.5% by combining the best biomarkers into a decision tree. Interestingly, early after-depolarizations proved to be their worst biomarker, with only 78.9% accuracy, which is quite different to our findings. We suspect that their method under-estimated the predictive power of early after-depolarizations by only exploring normal physiological limits where such events are rare.\n\n### Comparison to MICE models\n\nMICE models (Kramer et al., 2013) are purely statistical. They use logistic regression to predict the torsadogenic risk of a drug directly from the half-maximal inhibitory concentrations $(IC_{50})$ for hERG, Cav1.2 and Nav1.5. Kramer et al., 2013, trained six candidate models on a dataset of 55 drugs. Their best model predicted the clinical risk labels of the drugs with 90.9% accuracy using only the difference between hERG and Cav1.2. Specifically,\n\n$$\nln\u2061\\frac{p}{1-p}=\\beta_{0}+\\beta_{1}\u2062(C-H),\n$$\n\nwhere $H=\u2212ln\u2061(IC_{50})$ for hERG and $C=\u2212ln\u2061(IC_{50})$ for Cav1.2. Their regression equation is strikingly similar to ours (Equation 1) except that MICE models use $ln\u2061(IC_{50})$ for the predictor variables where we use $ln\u2061(G)$. The distinction is that the $\\beta$ coefficients in the MICE model have no biophysical interpretation, whereas in our model they are the basis of the axis of arrhythmia (Equation 2) and so represent the most potent combination of pro-arrhythmic channel blocks that is theoretically possible. Interestingly, the accuracy of the two models is nearly identical, albeit on different datasets.\n\n### Comparison to Bnet\n\nBnet (Mistry, 2018) is a simple linear model that predicts the torsadogenic risk of a drug directly from the net blockade of inward and outward ion currents. Notably,\n\n$$\nB_{net}=\\suminR_{r}\u2212\\sumjmD_{j}\n$$\n\nwhere $R_{i}$ and $D_{j}$ represent the percentage block of the repolarizing currents $(I_{Kr},I_{Ks},I_{to})$ and the depolarizing currents $(I_{CaL},I_{Na},I_{NaL},I_{K1})$, respectively. Percentage block is akin to $(1\u2212\\delta)$ in our model, but without the logarithmic transform. Bnet predicts the clinical risk labels of the CiPA validation drugs as accurately as the CiPAORdv1.0 model when adjusted for drug binding kinetics (Li et al., 2019; Mistry, 2019; Han et al., 2019). This has opened a debate between model complexity and biophysical realism in which proponents of biophysical models advocate their explanatory benefits (Lancaster and Sobie, 2017), whereas proponents of simple models advocate their predictive power without the computational expense (Mistry et al., 2015; Mistry, 2017).\n\n### Conclusion\n\nOur approach resolves the debate between model complexity and biophysical realism by combining both approaches into the same enterprise. Complex biophysical models were used to identify the relationship between ion channels and torsadogenic risk \u2014 as it is best understood by theory. Those findings were then reduced to a simpler linear model that can be applied to novel drugs without recapitulating the complex computer simulations. The reduced model retains a biophysical description of multi-channel drug block, but only as far as necessary to predict the likelihood of early after-depolarizations. It does not reproduce the action potential itself. Our approach thus represents a convergence of biophysical and simple models which retains the essential biophysics while discarding the unnecessary details. We believe the benefits of this approach will accelerate the adoption of computational assays in safety pharmacology and ultimately reduce the burden of animal testing.\n\n### Limitations\n\nThe method was evaluated using a dataset of drugs that were drawn from multiple sources and diverse experimental conditions (Llopis-Lorente et al., 2020). It is known that such measurements differ prominently between laboratories and recording platforms (Kramer et al., 2020). Some drugs in the dataset combined measurements from disparate experiments while others had missing values. Of all the drugs in the dataset, only 17 had a complete set of $IC_{50}$ values for $I_{CaL}$, $I_{Kr}$, $I_{NaL}$, and $I_{Ks}$. The accuracy of the predictions is therefore limited by the quality of the drug potency measurements.\n\nThe accuracy of the axis of arrhythmia is likewise limited by the quality of the biophysical model from which it is derived. The present study only investigated one particular variant of the ORd model (O\u2019Hara et al., 2011; Krogh-Madsen et al., 2017) paced at 1 Hz. Other models and pacing rates are likely to produce differing estimates of the axis.\n\n## Methods\n\nThe action potentials of human endocardial ventricular cardiomyocytes were simulated using a variant of the ORD11 model (O\u2019Hara et al., 2011) in which the maximal conductances of $G_{Ks}$, $G_{Kr}$, $G_{CaL}$, $G_{NaL}$, $P_{NaCa}$, and $P_{NaK}$ were re-scaled (Table 1) to better reproduce the clinical phenotypes of long QT syndrome (Mann et al., 2016; Krogh-Madsen et al., 2017). The source code for the ORD11 model (O\u2019Hara et al., 2011) was adapted to run in the Brain Dynamics Toolbox (Heitmann et al., 2018; Heitmann and Breakspear, 2022a). The adapted source code is publicly available (Heitmann, 2023). The differential equations were integrated forward in time using the matlab ode15s solver with error tolerances AbsTol = 1e-3 and RelTol = 1e-6. The model was paced at 1 Hz with a stimulus of \u201370 mV and duration of 0.5 ms. All simulations were equilibrated for at least 1000 beats prior to analysis.\n\n**Table 1.**\n The baseline scaling factors applied to the ORD11 model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Maximal conductance</th>\n      <th>Multiplier</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GKs</td>\n      <td>8.09</td>\n    </tr>\n    <tr>\n      <td>GKr</td>\n      <td>1.17</td>\n    </tr>\n    <tr>\n      <td>GCaL (PCa)</td>\n      <td>3.57</td>\n    </tr>\n    <tr>\n      <td>PNaCa</td>\n      <td>3.05</td>\n    </tr>\n    <tr>\n      <td>PNaK</td>\n      <td>1.91</td>\n    </tr>\n    <tr>\n      <td>GNaL</td>\n      <td>1.7</td>\n    </tr>\n  </tbody>\n</table>\n\n### Classification of ectopic phenotypes\n\nBlocks of four successive beats were analyzed to accommodate alternans. Cells were classified as ectopic if any of those four beats contained an early after-depolarization \u2014 as defined by any secondary peak that rose above \u201350 mV and was separated from other peaks by at least 100 ms. Cells that did not exhibit early after-depolarizations were classified as benign.\n\n### Parameter domain\n\nWe chose the domain of parameter space $(G\\ine^{\\pm3})$ through trial and error. That domain is large enough to cover the ectopic region, but not so large as to be unduly influenced by biological extremes. The parameters span between 0.05 and 20 times their baseline value.\n\n### Natural population density\n\nCell-to-cell variability was mimicked by scaling the conductances $(G_{CaL},G_{Kr},G_{NaL},G_{Ks})$ by a random multiplier that was drawn from a log-normal distribution (Sobie, 2009). The parameters of the distribution $(\\mu=0.112,\\sigma=0.472$) were chosen to give the multipliers a mean of 1 and standard deviation of 0.5. The spread was based on our experience with previous simulations (Sadrieh et al., 2013; Sadrieh et al., 2014; Ballouz et al., 2021; TeBay et al., 2022). The ion channel species were assumed to vary independently.\n\nBy definition, the log-normal distribution maps onto the normal distribution under the logarithmic transform. The natural population is therefore represented in logarithmic parameter space by a symmetric multivariate normal distribution. Specifically,\n\n$$\nf\u2062(w,x,y,z)=f\u2062(w)\u2062f\u2062(x)\u2062f\u2062(y)\u2062f\u2062(z),\n$$\n\nwhere\n\n$$\nf(x)=\\frac{1}{\\sqrt{2\\pi\\sigma^{2}}}exp\u2061(\u2212\\frac{(x\u2212\\mu)^{2}}{2\\sigma^{2}})\n$$\n\nis the univariate normal distribution.\n\n### Joint probability\n\nRotational symmetry allowed the multivariate distribution to be projected onto the axis of arrhythmia as a univariate distribution. The probability of a cardiomyocyte in the natural population being ectopic is\n\n$$\nP=\\intp(x)f(x)dx,\n$$\n\nwhere $p(x)$ is the a priori probability of ectopy for that phenotype (Equation 4) and $f(x)$ is the proportion of cells in the population with that phenotype (Equation 5). Drugs serve to shift $f(x)$ along the axis of arrhythmia. The size of that shift is defined by the risk metric (Equation 3).\n\n### Drug dataset\n\nThe drug-response curves were reconstructed using the Hill equation,\n\n$$\n\\delta=\\frac{IC_{50}^{h}}{IC_{50}^{h}+[C]^{h}},\n$$\n\nwhere $\\delta\\in[0,1]$ represents the fractional conductance of the ion channel. The concentration of the drug $(C)$ was normalized to the effective free therapeutic plasma concentration (EFTPC). The EFTPCs and half-maximal inhibitory concentrations $(IC_{50})$ were taken from Supplementary Table S2 of Llopis-Lorente et al., 2020, which was curated from publicly available datasets and scientific publications. Where multiple values were encountered, Llopis-Lorente et al., 2020, used the median $IC_{50}$ and the worst-case (highest) EFTPC values. We assumed that ion channels with missing $IC_{50}$ values were not blocked by the drug $(\\delta=1)$. We also fixed the Hill coefficients at $h=1$ because (i) there is no evidence for co-operative drug binding in the literature, and thus no theoretical justification for using coefficients other than one; (ii) only 17 of the 109 drugs in the dataset had a complete set of Hill coefficients $(h_{CaL},h_{Kr},h_{NaL},h_{Ks})$ anyway. The clinical risk labels for the drugs were transcribed from Table 1 of Llopis-Lorente et al., 2020.\n\n### Dataset availability\n\nThe dataset containing the reconstructed drug-response curves is included in the source data for Table 2.\n\n**Table 2.**\n The drug-response dataset.Table 2\u2014source data 1.The data in CSV format.Table 2\u2014source data 2.Dose-response plots for each drug in the dataset.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable name</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DrugID</td>\n      <td>Unique identifier for each compound in the dataset</td>\n    </tr>\n    <tr>\n      <td>Compound</td>\n      <td>Name of the compound</td>\n    </tr>\n    <tr>\n      <td>Class</td>\n      <td>Clinical risk label where 1=known risk, 2=possible risk, 3=conditional risk, 4=no evidence of risk</td>\n    </tr>\n    <tr>\n      <td>EFTPC</td>\n      <td>Effective free therapeutic plasma concentration (nM)</td>\n    </tr>\n    <tr>\n      <td>Cmax</td>\n      <td>Concentration relative to therapeutic dose</td>\n    </tr>\n    <tr>\n      <td>Conc</td>\n      <td>Concentration of the dose (nM)</td>\n    </tr>\n    <tr>\n      <td>GKrScale</td>\n      <td>\u03b4Kr for the given dose (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>GNaScale</td>\n      <td>\u03b4Na for the given dose (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>GNaLScale</td>\n      <td>\u03b4NaL for the given dose (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>GCaLScale</td>\n      <td>\u03b4CaL for the given dose (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>GKsScale</td>\n      <td>\u03b4Ks for the given dose (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>GK1Scale</td>\n      <td>\u03b4K1 for the given dose (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>GtoScale</td>\n      <td>\u03b4to for the given dose (Equation 7)</td>\n    </tr>\n    <tr>\n      <td>LogGKrScale</td>\n      <td>\u03b1Kr=ln\u2061(\u03b4Kr).</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u03b1Na=ln\u2061(\u03b4Na).</td>\n    </tr>\n    <tr>\n      <td>LogGNaLScale</td>\n      <td>\u03b1NaL=ln\u2061(\u03b4NaL).</td>\n    </tr>\n    <tr>\n      <td>LogGCaLScale</td>\n      <td>\u03b1CaL=ln\u2061(\u03b4CaL).</td>\n    </tr>\n    <tr>\n      <td>LogGKsScale</td>\n      <td>\u03b1Ks=ln\u2061(\u03b4Ks).</td>\n    </tr>\n    <tr>\n      <td>LogGK1Scale</td>\n      <td>\u03b1K1=ln\u2061(\u03b4K1).</td>\n    </tr>\n    <tr>\n      <td>LogGtoScale</td>\n      <td>\u03b1to=ln\u2061(\u03b4to).</td>\n    </tr>\n    <tr>\n      <td>Score</td>\n      <td>Risk score (Equation 3)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Source code availability\n\nThe source code for the cell model is available from https://zenodo.org/records/7796721 under the GNU General Public License v3.0. The cell model requires version 2022 or later of the Brain Dynamics Toolbox (Heitmann and Breakspear, 2022a) which can be downloaded from https://zenodo.org/records/7070703 under the BSD 2-clause license.\n",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher L-H Huang, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90027.3.sa0](https://doi.org/10.7554/eLife.90027.3.sa0)\n\nThis compelling and novel mathematical method assesses drug pro-arrhythmic cardiotoxicity by examining the electrophysiology of untreated cardiac cells. It will be valuable for future drug safety design.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90027.3.sa1](https://doi.org/10.7554/eLife.90027.3.sa1)\n\nSummary:\n\nHeitmann et al introduce a novel method for predicting the potential of drug candidates to cause Torsades de Pointes using simulations. Despite the fact that a multitude of such methods have been proposed in the past decade, this approach manages to provide novelty in a way that is potentially paradigm-shifting. The figures are beautiful and manage to convey difficult concepts intuitively.\n\nStrengths:\n\n(1) Novel combination of detailed mechanistic simulations with rigorous statistical modeling\n\n(2) A method for predicting drug safety that can be used during drug development\n\n(3) A clear explication of difficult concepts.\n\nWeaknesses:\n\n(1) In this reviewer's opinion, the most important scientific issue that can be addressed is the fact that when a drug blocks multiple channels, it is not only the IC50 but also the Hill coefficient that can differ. By the same token, two drugs that block the same channel may have identical IC50s but different Hill coefficients. This is important to consider since concentration-dependence is an important part of the results presented here. If the Hill coefficients were to be significantly different, the concentration-dependent curves shown in Figure 6 could look very different.\n\n(2) The curved lines shown in Figure 6 can initially be difficult to comprehend, especially when all the previous presentations emphasized linearity. But a further issue is obscured in these plots, which is the fact that they show a two-dimensional projection of a 4-dimensional space. Some of the drugs might hit the channels that are not shown (INaL & IKs), whereas others will not. It is unclear, and unaddressed in the manuscript, how differences in the \"hidden channels\" will influence the shapes of these curves. An example, or at least some verbal description, could be very helpful.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90027.3.sa2](https://doi.org/10.7554/eLife.90027.3.sa2)\n\nSummary:\n\nIn the paper from Hartman, Vandenberg, and Hill entitled \"assessing drug safety, by identifying the access of arrhythmia and cardio, myocytes, electro physiology\", the authors, define a new metric, the axis of arrhythmia\" that essentially describes the parameter space of ion channel conductance combinations, where early after depolarization can be observed.\n\nStrengths:\n\nThere is an elegance to the way the authors have communicated the scoring system. The method is potentially useful because of its simplicity, accessibility, and ease of use. I do think it adds to the field for this reason - a number of existing methods are overly complex and unwieldy and not necessarily better than the simple parameter regime scan presented here.\n\nWeaknesses:\n\nThe method described in the manuscript suffers from a number of weaknesses that plague current screening methods. Included in these are the data quality and selection used to inform the drug-blocking profile. It's well known that drug measurements vary widely, depending on the measurement conditions.\n\nThere doesn't seem to be any consideration of pacing frequency, which is an important consideration for arrhythmia triggers, resulting from repolarization abnormalities, but also depolarization abnormalities. Extremely high doses of drugs are used to assess the population risk. But does the method yield important information when realistic drug concentrations are used? In the discussion, the comparison to conventional approaches suggests that the presented method isn't necessarily better than conventional methods.\n\nIn conclusion, I have struggled to grasp the exceptional novelty of the new metric as presented, especially when considering that the badly needed future state must include a component of precision medicine.\n",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "67a45d7f-408f-4590-bc37-e0b5c4399c45",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C1",
+      "claim": "Many classes of drugs can induce fatal cardiac arrhythmias by disrupting the electrophysiology of cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Many classes of drugs can induce fatal cardiac arrhythmias by disrupting the electrophysiology of cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about drug-induced arrhythmias that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "62eec319-5498-473c-9cf5-97f25a007f9a",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C2",
+      "claim": "Safety guidelines require all new drugs to be assessed for pro-arrhythmic risk prior to conducting human trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Safety guidelines thus require all new drugs to be assessed for pro-arrhythmic risk prior to conducting human trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to established regulatory requirements in drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "edd6692f-cff8-4a9b-aa92-a5565d839d43",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C3",
+      "claim": "Standard safety protocols primarily focus on drug blockade of the delayed-rectifier potassium current (IKr).",
+      "claim_type": "EXPLICIT",
+      "source": "The standard safety protocols primarily focus on drug blockade of the delayed-rectifier potassium current (IKr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to ICH guidelines in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "fd5e713f-4f7d-42df-8048-a9da3084b04c",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C4",
+      "claim": "The risk is better assessed using four key ion currents (IKr, ICaL, INaL, IKs).",
+      "claim_type": "EXPLICIT",
+      "source": "Yet the risk is better assessed using four key ion currents (IKr, ICaL, INaL, IKs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the study's methodology and results, as well as citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "3241d830-4af4-4ccb-8492-c1f906fe3c15",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C5",
+      "claim": "100,000 phenotypically diverse cardiomyocytes were simulated to identify the relationship between ion current blockade and ectopic beats.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated 100,000 phenotypically diverse cardiomyocytes to identify the underlying relationship between the blockade of those currents and the emergence of ectopic beats in the action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "8f615831-8bd1-4494-9ff2-a8f7114de505",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C6",
+      "claim": "The axis of arrhythmia serves as a yardstick for quantifying the arrhythmogenic risk of any drug from its profile of multi-channel block alone.",
+      "claim_type": "EXPLICIT",
+      "source": "It serves as a yardstick for quantifying the arrhythmogenic risk of any drug from its profile of multi-channel block alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main methodological claim of the study, supported by the computational analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "0911bbb6-b703-4c63-9e08-76e5a2b049f5",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C7",
+      "claim": "The method predicted the clinical risk labels of 109 drugs with an accuracy of 88.1\u201390.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested it on 109 drugs and found that it predicted the clinical risk labels with an accuracy of 88.1\u201390.8%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the validation study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "23e25d80-cb3d-4f62-a461-4fd85f30e106",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C8",
+      "claim": "Torsades des Pointes is a potentially lethal ventricular arrhythmia that can be induced by many classes of drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Torsades des Pointes is a potentially lethal ventricular arrhythmia that can be induced by many classes of drugs. These include antibiotics, antipsychotics, antihistamines, chemotherapeutics, and anti-arrhythmics (Yap and Camm, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yap and Camm, 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "5e914766-8038-4e5d-b952-6427a13c0f0c",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C10",
+      "claim": "International safety guidelines require hERG block to be assessed in living cells prior to conducting human trials.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, international safety guidelines require hERG block to be assessed in living cells prior to conducting human trials (ICH, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to ICH, 2005 guidelines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "cd869e33-2a27-4f7e-aba5-f46586dfb593",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C11",
+      "claim": "The standard hERG assay is overly sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the standard hERG assay is overly sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by subsequent explanation and citations about multi-channel effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "1215779a-b077-411d-93c4-449969a8b521",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C12",
+      "claim": "The standard hERG assay does not accommodate multi-channel effects which render some drugs safe despite blocking hERG.",
+      "claim_type": "EXPLICIT",
+      "source": "It does not accommodate multi-channel effects which render some drugs safe despite blocking hERG (Martin et al., 2004; Hoffmann and Warner, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Martin et al., 2004 and Hoffmann and Warner, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ba6cd70a-9d4c-45c8-8d31-1f8808e2c3db",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C13",
+      "claim": "Many useful drugs are prematurely abandoned during pre-clinical trials due to the overly sensitive hERG assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, many useful drugs are prematurely abandoned during pre-clinical trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of the hERG assay described in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "95d9c2e5-3ae5-4384-a70f-bfc247c1f112",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C14",
+      "claim": "The safety pharmacology community is actively pursuing new in vitro and in silico assays that improve accuracy by targeting multiple ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The safety pharmacology community is actively pursuing new in vitro and in silico assays that improve accuracy by targeting multiple ion channels (Pugsley et al., 2008; Colatsky et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pugsley et al., 2008 and Colatsky et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "6eb38187-1a2c-4631-80ac-fa87fd10107f",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C15",
+      "claim": "In silico assays use computational models of cardiomyocyte electrophysiology in place of a living cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico assays use computational models of cardiomyocyte electrophysiology in place of a living cell (Mirams et al., 2011; Lancaster and Sobie, 2016; Mann et al., 2016; Dutta et al., 2017; Passini et al., 2017; Ballouz et al., 2021; Llopis-Lorente et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing in silico approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "be217458-fa61-40d6-aef4-79833284f083",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C16",
+      "claim": "Drug blockade is simulated in the model by attenuating the conductivity of the relevant ion currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug blockade (Figure 1A) is simulated in the model (Figure 1B) by attenuating the conductivity of the relevant ion currents.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational methodology and references Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "878781fb-2024-4604-838a-3f944d401b13",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C17",
+      "claim": "Simulations can be repeated across a diverse range of cardiac phenotypes to ensure generality of the results.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations can be repeated across a diverse range of cardiac phenotypes to ensure generality of the results (Britton et al., 2013; Ni et al., 2018; Gong and Sobie, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work using this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "785a586f-c4c1-4003-81ae-bb013fbc70ab",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C18",
+      "claim": "Individual phenotypes are constructed by randomizing the conductance parameters to mimic natural variation in ion channel expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The individual phenotypes are constructed by randomizing the conductance parameters to mimic natural variation in ion channel expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a standard methodology in computational cardiac electrophysiology.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "686217c4-d7b3-45de-8bb1-d97f2577b54c",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C19",
+      "claim": "The action potentials of 100,000 randomized ventricular cardiomyocytes were simulated using a variant of the O'Hara-Rudy model.",
+      "claim_type": "EXPLICIT",
+      "source": "The action potentials of 100,000 randomized ventricular cardiomyocytes (Figure 2A) were simulated using a variant of the O'Hara-Rudy model (O'Hara et al., 2011) that was optimized for long QT syndrome (Mann et al., 2016; Krogh-Madsen et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational methodology with citations to the model sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ec96bc8d-577d-4f04-9e46-cc24db8aa766",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C20",
+      "claim": "Early after-depolarizations were chosen as a biomarker for Torsades des Pointes.",
+      "claim_type": "EXPLICIT",
+      "source": "Early after-depolarizations were chosen as a biomarker for Torsades des Pointes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice based on established knowledge linking EADs to arrhythmia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "57abdf0c-f84b-46fb-9c5e-d069afba4574",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C21",
+      "claim": "Cardiomyocytes that exhibited early after-depolarizations were classified as ectopic.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocytes that exhibited early after-depolarizations were classified as ectopic (red) and those that did not were classified as benign (gray).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classification methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "de2188cc-f93a-439c-9310-ad4b8d0467ad",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C24",
+      "claim": "The use of the logarithmic coordinate frame is crucial to the subsequent analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the logarithmic coordinate frame is crucial to our subsequent analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained in the context of the mathematical framework developed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "af430600-00d1-4831-8a18-cd213372dbb2",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C25",
+      "claim": "The ectopic and benign phenotypes were clearly segregated in parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "The ectopic and benign phenotypes were clearly segregated in parameter space (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "1131b2d1-2c15-492a-bfff-c488f7e9584d",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C26",
+      "claim": "Multivariate logistic regression was used to identify the linear boundary that best separated the two classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate logistic regression was used to identify the linear boundary (dashed line) that best separated the two classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "c404bcd7-eeee-465f-a201-036767d72f24",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C29",
+      "claim": "Drugs attenuate the conductivity of ion channels in a multiplicative fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs attenuate the conductivity of ion channels in a multiplicative fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established pharmacological knowledge about drug-channel interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "902dbe17-3832-467f-9614-c9c9ee105717",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C30",
+      "claim": "Logarithmic coordinates transform the action of drug blockade into an additive process.",
+      "claim_type": "EXPLICIT",
+      "source": "Logarithmic coordinates transform the action of drug blockade into an additive process",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property demonstrated in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "67b0a720-63ca-4593-997c-17cfd7d3f070",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C31",
+      "claim": "The axis of arrhythmia is defined as a line that runs orthogonally to the decision boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "We define the axis of arrhythmia as a line that runs orthogonally to the decision boundary (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition provided by the authors based on their mathematical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "f805ab74-da11-44c7-8e0c-92f5cd7ba15a",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C32",
+      "claim": "The axis of arrhythmia represents the shortest path for shifting any cardiomyocyte into the ectopic regime by modifying the conductances of its ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "It represents the shortest path for shifting any cardiomyocyte into the ectopic regime by modifying the conductances of its ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the orthogonal direction to the decision boundary.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "39608546-e410-4d4a-95b6-5ca89e9b7049",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C33",
+      "claim": "The arrhythmogenic component of a drug is obtained by projecting the action of the drug onto the axis of arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "The arrhythmogenic component of a drug is obtained by projecting the action of the drug onto the axis of arrhythmia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical method for calculating drug risk.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ad1170a9-43fb-4d57-8732-09dfd3f04bb6",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C34",
+      "claim": "Drugs that shift the electrophysiology toward the ectopic region have positive scores.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our metric, drugs that shift the electrophysiology toward the ectopic region have positive scores, whereas drugs that shift it away from ectopy have negative scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the risk metric.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "a221ba95-60ae-4ed1-a86e-844f6e0d66b0",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C35",
+      "claim": "Drugs that shift the electrophysiology away from ectopy have negative scores.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our metric, drugs that shift the electrophysiology toward the ectopic region have positive scores, whereas drugs that shift it away from ectopy have negative scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of the risk metric.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "37ec2e0d-829a-4a66-a05b-8f62a019196e",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C43",
+      "claim": "The signs of the scores suggest that Ajmaline is pro-arrhythmic whereas Linezolid is not, which agrees with the clinical risk labels.",
+      "claim_type": "EXPLICIT",
+      "source": "The signs of the scores suggest that Ajmaline is pro-arrhythmic whereas Linezolid is not, which agrees with the clinical risk labels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the calculated risk scores to known clinical outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "50b61e02-01e3-4959-8862-e564fdfe092a",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C44",
+      "claim": "The sizable negative score for Linezolid suggests that it may actually have anti-arrhythmic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the sizable negative score for Linezolid suggests that it may actually have anti-arrhythmic properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the negative risk score.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "2f833e50-77fb-4b58-b366-7def95d4fd21",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C45",
+      "claim": "Ajmaline shifts the population density by 1.16 units toward the ectopic regime, making 26% of the population susceptible to Torsades.",
+      "claim_type": "EXPLICIT",
+      "source": "Ajmaline shifts the population density by 1.16 units toward the ectopic regime, making 26% of the population susceptible to Torsades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated result from the population risk analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "292799e5-b222-418e-9ace-117ecf9b46f9",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C46",
+      "claim": "Linezolid shifts the population 1.18 units away from the ectopic regime, making only 0.0095% of the population susceptible.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Linezolid shifts the population 1.18 units away from the ectopic regime, making only 0.0095% of the population susceptible, which is a substantial drop compared to the baseline rate of 0.93%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated result from the population risk analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "34cca161-1346-490d-90a1-607c1cdfff5b",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C47",
+      "claim": "The action of a drug subtly changes direction with dosage because of differing response rates for each ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The action of a drug subtly changes direction with dosage because of differing response rates for each ion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the analysis of dose-response curves in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "b636c2dc-0448-4dc4-a18d-79d63c08625d",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C49",
+      "claim": "The classification accuracy for all dosage levels was found to lay between 88.1% and 90.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "The classification accuracy for all dosage levels was found to lay between 88.1% and 90.8% (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the validation analysis across different doses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "72a48a7c-9d17-4315-93af-70df82abfe3c",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C50",
+      "claim": "The conventional hERG assay has an accuracy of 78.9% for the same dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the conventional hERG assay has an accuracy of 78.9% for the same dataset (Llopis-Lorente et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to a benchmark result from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "6722b6a3-ddd1-4435-ad6d-d8d5d9d46786",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C51",
+      "claim": "The areas under the ROC curves (AUROC) are 91.3% for drugs at 5\u00d7 dose and 91.5% for drugs at 25\u00d7 dose.",
+      "claim_type": "EXPLICIT",
+      "source": "The areas under the respective ROC curves (AUROC) are nearly identical at 91.3% and 91.5%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the ROC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "480c85f2-e2a1-4c87-b5c6-f1a5c21977ba",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C54",
+      "claim": "The ion currents can be measured using standard patch clamp techniques and the risk metric can be calculated with pen and paper.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion currents can be measured using standard patch clamp techniques and the risk metric can be calculated with pen and paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the practical applicability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "40332983-16e3-4cd4-8249-0e41ed3b21f1",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C55",
+      "claim": "All of the simulations in the present study were conducted in the absence of drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the simulations in the present study were conducted in the absence of drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key methodological feature of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "36c1ee5c-dcd7-4f98-82aa-0c45831c14ad",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C56",
+      "claim": "The simulations were only needed to identify the axis of arrhythmia and do not need to be repeated when applying the metric.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations were only needed to identify the axis of arrhythmia and do not need to be repeated when applying the metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the efficiency advantage of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "e910732a-facb-4ddd-a724-84e3c982dcb6",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C57",
+      "claim": "The assumption that the boundary is linear is crucial for generalizing the findings across all cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The assumption that the boundary is linear is crucial for generalizing the findings across all cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification provided by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "e5be61b0-0812-4d5b-b6ad-e462f6f299cf",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C58",
+      "claim": "The method can predict the proportion of the population that would be susceptible to a drug without explicitly simulating it.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method can also predict the proportion of the population that would be susceptible to a drug without explicitly simulating it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the method based on the mathematical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "a5ac0235-09e3-4cf5-86ae-6369f6839bba",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C59",
+      "claim": "Drug blockade and phenotypic diversity both operate on the same properties of ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis is possible because drug blockade and phenotypic diversity both operate on the same properties of ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical insight that enables the mathematical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "72d28428-96b8-4c96-a716-a2d73b45f4a4",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C60",
+      "claim": "The two biological processes (drug blockade and phenotypic diversity) are mathematically interchangeable.",
+      "claim_type": "EXPLICIT",
+      "source": "The two biological processes are therefore mathematically interchangeable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical insight derived from the logarithmic framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "b4dcb7cd-ca0b-4993-8876-479469b3f914",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C61",
+      "claim": "Passini et al., 2017, used a larger dataset (n=62) to obtain 89% accuracy at predicting Class 1 versus Class 2\u20134 torsadogenic risk labels from Credible Meds.",
+      "claim_type": "EXPLICIT",
+      "source": "Passini et al., 2017, used a larger dataset (n=62) to obtain 89% accuracy at predicting Class 1 versus Class 2\u20134 torsadogenic risk labels from Credible Meds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to a previous study's results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "25c01e76-d4df-4f07-8e04-bca598a2b9e6",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C63",
+      "claim": "Llopis-Lorente et al., 2020, increased the overall performance to 94.5% by combining the best biomarkers into a decision tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Llopis-Lorente et al., 2020, increased the overall performance to 94.5% by combining the best biomarkers into a decision tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to a previous study's results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "dc8eebae-d19a-4a3d-9808-de2142cb4db9",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C64",
+      "claim": "Early after-depolarizations proved to be the worst biomarker in Llopis-Lorente et al., 2020, with only 78.9% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, early after-depolarizations proved to be their worst biomarker, with only 78.9% accuracy, which is quite different to our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to a previous study's results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "a0e37b42-90fb-469e-b132-216f30ebc7d1",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C65",
+      "claim": "The authors suspect that Llopis-Lorente et al., 2020, under-estimated the predictive power of early after-depolarizations by only exploring normal physiological limits where such events are rare.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that their method under-estimated the predictive power of early after-depolarizations by only exploring normal physiological limits where such events are rare.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the difference in results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "23adb3d2-95a2-49e3-bb0c-ff3f0c28c570",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C67",
+      "claim": "Kramer et al., 2013, trained six candidate models on a dataset of 55 drugs and their best model predicted the clinical risk labels with 90.9% accuracy using only the difference between hERG and Cav1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Kramer et al., 2013, trained six candidate models on a dataset of 55 drugs. Their best model predicted the clinical risk labels of the drugs with 90.9% accuracy using only the difference between hERG and Cav1.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to a previous study's results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "3e705b01-a529-402a-833d-2f90f46c6563",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C69",
+      "claim": "The accuracy of the MICE model and the present model is nearly identical, albeit on different datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the accuracy of the two models is nearly identical, albeit on different datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of performance between methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "857e9596-3725-4ed9-928f-cc8338a905bf",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C70",
+      "claim": "Bnet is a simple linear model that predicts the torsadogenic risk of a drug directly from the net blockade of inward and outward ion currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Bnet (Mistry, 2018) is a simple linear model that predicts the torsadogenic risk of a drug directly from the net blockade of inward and outward ion currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a comparison method from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "36ebdbec-f684-470a-a7df-df7cb6ac0321",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C71",
+      "claim": "Bnet predicts the clinical risk labels of the CiPA validation drugs as accurately as the CiPAORdv1.0 model when adjusted for drug binding kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Bnet predicts the clinical risk labels of the CiPA validation drugs as accurately as the CiPAORdv1.0 model when adjusted for drug binding kinetics (Li et al., 2019; Mistry, 2019; Han et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other methods from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "337b21a8-b325-48bd-a167-6bc21527c01c",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C72",
+      "claim": "The present approach resolves the debate between model complexity and biophysical realism by combining both approaches into the same enterprise.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach resolves the debate between model complexity and biophysical realism by combining both approaches into the same enterprise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the methodological contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "789fbb06-4562-4c03-bd11-43ac240d5898",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C73",
+      "claim": "Complex biophysical models were used to identify the relationship between ion channels and torsadogenic risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex biophysical models were used to identify the relationship between ion channels and torsadogenic risk \u2014 as it is best understood by theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "af087d50-bdde-436a-9038-ab07dc3474f3",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C74",
+      "claim": "The findings were reduced to a simpler linear model that can be applied to novel drugs without recapitulating the complex computer simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Those findings were then reduced to a simpler linear model that can be applied to novel drugs without recapitulating the complex computer simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "e8426a47-b80b-4161-bc48-7cf93bd88bb9",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C75",
+      "claim": "The reduced model retains a biophysical description of multi-channel drug block, but only as far as necessary to predict the likelihood of early after-depolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced model retains a biophysical description of multi-channel drug block, but only as far as necessary to predict the likelihood of early after-depolarizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the balance achieved by the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "b2b98b7d-c8eb-4f5c-83b4-7280b9c2b4f2",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C76",
+      "claim": "The benefits of this approach will accelerate the adoption of computational assays in safety pharmacology and ultimately reduce the burden of animal testing.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe the benefits of this approach will accelerate the adoption of computational assays in safety pharmacology and ultimately reduce the burden of animal testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential impact of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "53adddb5-788e-49e8-83d3-3ac739d2f58f",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C77",
+      "claim": "The method was evaluated using a dataset of drugs that were drawn from multiple sources and diverse experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The method was evaluated using a dataset of drugs that were drawn from multiple sources and diverse experimental conditions (Llopis-Lorente et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the validation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "2c7598c3-5111-4a7e-ac69-dc93ef23aff7",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C78",
+      "claim": "Drug potency measurements differ prominently between laboratories and recording platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that such measurements differ prominently between laboratories and recording platforms (Kramer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "fd1c6606-c2e8-4838-8818-edba051ca907",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C80",
+      "claim": "The accuracy of the predictions is limited by the quality of the drug potency measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of the predictions is therefore limited by the quality of the drug potency measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "bf396a94-0295-4d78-91e0-00912a8a6ac1",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C81",
+      "claim": "The accuracy of the axis of arrhythmia is limited by the quality of the biophysical model from which it is derived.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of the axis of arrhythmia is likewise limited by the quality of the biophysical model from which it is derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "636cea83-024f-44d2-a983-cc3949ea3156",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C82",
+      "claim": "The present study only investigated one particular variant of the ORd model paced at 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study only investigated one particular variant of the ORd model (O'Hara et al., 2011; Krogh-Madsen et al., 2017) paced at 1 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study scope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "7b2425ef-a6aa-4355-af71-e911c45668f2",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C83",
+      "claim": "Other models and pacing rates are likely to produce differing estimates of the axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Other models and pacing rates are likely to produce differing estimates of the axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential variability in results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "9fe64907-a5ea-4bb9-9c01-71f61058b2b6",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C84",
+      "claim": "The model was paced at 1 Hz with a stimulus of \u201370 mV and duration of 0.5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was paced at 1 Hz with a stimulus of \u201370 mV and duration of 0.5 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail of the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "65761022-7b65-4207-b0c8-65a5de93af75",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C85",
+      "claim": "All simulations were equilibrated for at least 1000 beats prior to analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "All simulations were equilibrated for at least 1000 beats prior to analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail of the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "107e14d1-834e-4abe-9571-92bcdca569b6",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C86",
+      "claim": "Cells were classified as ectopic if any of four successive beats contained an early after-depolarization defined by any secondary peak that rose above \u201350 mV and was separated from other peaks by at least 100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were classified as ectopic if any of those four beats contained an early after-depolarization \u2014 as defined by any secondary peak that rose above \u201350 mV and was separated from other peaks by at least 100 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classification criteria used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "aa7b76b6-7c56-45ec-aa7f-82627b61f806",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C88",
+      "claim": "The parameters span between 0.05 and 20 times their baseline value.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameters span between 0.05 and 20 times their baseline value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the range of parameter variation used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "bf158de2-4fcc-4d88-b694-c0d174a2b171",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C91",
+      "claim": "The clinical risk labels for the drugs were transcribed from Table 1 of Llopis-Lorente et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical risk labels for the drugs were transcribed from Table 1 of Llopis-Lorente et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the clinical risk labels used for validation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "4532e5da-65ce-4e4a-aa90-5d51524662ba",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C92",
+      "claim": "In the Credible Meds labeling scheme, Class 1 drugs carry a known torsadogenic risk.",
+      "claim_type": "EXPLICIT",
+      "source": "In that labeling scheme, Class 1 drugs carry a known torsadogenic risk",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical risk classification system used.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "59089d5a-c399-4553-a2b1-4b8b1c2c3495",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C93",
+      "claim": "In the Credible Meds labeling scheme, Class 2 drugs carry a possible risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Class 2 drugs carry a possible risk",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical risk classification system used.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "c551c288-cb8e-496e-8655-8adbd8c049c5",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C94",
+      "claim": "In the Credible Meds labeling scheme, Class 3 drugs carry a risk but only in conjunction with other factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Class 3 drugs carry a risk but only in conjunction with other factors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical risk classification system used.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "b5f0759a-7856-4912-a7af-6b6397cfddbe",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "claim_id": "C95",
+      "claim": "In the Credible Meds labeling scheme, Class 4 drugs have no evidence of risk at all.",
+      "claim_type": "EXPLICIT",
+      "source": "Class 4 drugs have no evidence of risk at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical risk classification system used.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1a321f7e-93ca-4413-9988-f7d61e4a7280",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background context that drug-induced cardiac arrhythmias are a known safety concern, and that current regulatory guidelines require assessment of hERG blockade prior to human trials, with standard protocols focusing primarily on IKr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8, and C10 provide well-established background knowledge supported by appropriate citations (Yap and Camm 2003; ICH 2005) and general scientific consensus. These claims accurately describe the regulatory landscape and scientific understanding of drug-induced arrhythmias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "c7dc872c-eef0-45c3-b258-d5094164e6d7",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The standard hERG assay is overly sensitive because it does not accommodate multi-channel effects, leading to premature abandonment of potentially useful drugs during pre-clinical trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 are supported by citations (Martin et al. 2004; Hoffmann and Warner 2006) documenting the limitations of single-channel hERG assays. The inference about drug abandonment (C13) logically follows from the established over-sensitivity of the assay, though direct quantification of abandoned drugs is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Multi-channel assessment using four key ion currents (IKr, ICaL, INaL, IKs) provides better risk assessment than single-channel approaches, and in silico methods using computational models with phenotypic diversity are being actively pursued by the safety pharmacology community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C14-C18 are well-supported by multiple citations (Pugsley et al. 2008; Colatsky et al. 2016; Mirams et al. 2011; Britton et al. 2013; Ni et al. 2018; Gong and Sobie 2018) and represent established methodological approaches in the field. The claim about four currents being better (C4) is supported by both the current study's results and prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulation of 100,000 phenotypically diverse cardiomyocytes using a modified O'Hara-Rudy model identified clear segregation between ectopic and benign phenotypes in logarithmic parameter space, with a linear decision boundary determined by multivariate logistic regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C19-C21, C24-C26 describe the core computational methodology with appropriate model citations (O'Hara et al. 2011; Mann et al. 2016; Krogh-Madsen et al. 2017). The use of early after-depolarizations as a biomarker is well-established. Figure 2 provides visual evidence of the segregation. The statistical approach (logistic regression) is appropriate for binary classification, and all regression coefficients were statistically significant (p<0.001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The axis of arrhythmia, defined as the line orthogonal to the decision boundary in logarithmic parameter space, represents the shortest path to ectopy and enables quantification of drug risk through vector projection, with positive scores indicating pro-arrhythmic effects and negative scores indicating protective effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 present the novel mathematical framework of the study. The logarithmic transformation converting multiplicative drug effects to additive processes (C29-C30) is mathematically sound. The definition of the axis as orthogonal to the decision boundary (C31-C32) is geometrically correct and represents the direction of steepest gradient. The projection method (C33) and score interpretation (C34-C35) follow logically from the mathematical framework. This is the core methodological innovation of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ae35ef16-513e-441f-8ef6-6bdde785040e",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Application of the risk metric to Ajmaline and Linezolid at 25\u00d7 therapeutic dose yielded risk scores of +1.16 and -1.18 respectively, predicting that Ajmaline would make 26% of the population susceptible to Torsades while Linezolid would reduce susceptibility to 0.0095%, consistent with their clinical risk classifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C45-C46 present specific quantitative predictions that align with known clinical outcomes. The calculations are based on the established mathematical framework and drug-response data from Llopis-Lorente et al. 2020. The agreement between predicted risk and clinical labels provides validation of the method for these specific cases. Figure 5 provides supporting visualization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "d4e0929d-3441-4bd4-bf87-b94c4cace779",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The large negative risk score for Linezolid suggests it may have anti-arrhythmic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 is speculative and extends beyond what the data directly support. While the negative score indicates the drug shifts electrophysiology away from ectopy, inferring actual anti-arrhythmic therapeutic properties would require additional clinical or experimental validation not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "2e85814e-75a9-49a4-94fb-9bb248643000",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Drug action changes direction with dosage due to differing response rates for each ion channel, resulting in curvilinear pathways in parameter space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by the dose-response analysis shown in Figure 6, which demonstrates that different ion channels respond to drugs at different rates, creating curved rather than linear trajectories in parameter space. This is a logical consequence of the Hill equation kinetics with different IC50 values for different channels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ecdb73b9-baaf-4f82-a069-b6d4d3b8b483",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The axis of arrhythmia method predicted clinical risk labels for 109 drugs with 88.1-90.8% accuracy across dosage ranges (1\u00d7-32\u00d7), with AUROC values of 91.3-91.5%, outperforming the conventional hERG assay (78.9% accuracy).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C49-C51 present the main validation results. The accuracy range (88.1-90.8%) is clearly documented across multiple dosages (Figure 8A). The AUROC values (91.3-91.5%) are nearly identical for 5\u00d7 and 25\u00d7 doses (Figure 8B-C). The comparison to hERG assay performance (78.9%) is appropriately cited (Llopis-Lorente et al. 2020). The dataset size (n=109) is adequate for validation, though the heterogeneous data sources represent a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "9070dd2d-daf0-4384-93cb-aed7e0ce64b1",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The method's practical advantage is that ion currents can be measured using standard patch clamp techniques and risk calculated manually, with simulations only needed once to identify the axis of arrhythmia rather than for each drug assessment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 accurately describe the methodological efficiency advantage. The one-time simulation approach (C55-C56) is a key innovation that distinguishes this method from conventional in silico assays. The practical applicability (C54) is valid given that the risk metric requires only four IC50 values and simple vector projection calculations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "a8a2f6f0-b8f9-46db-908b-30c13e416091",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The linear boundary assumption enables generalization across all cardiomyocytes, and the mathematical interchangeability of drug blockade and phenotypic diversity allows prediction of population susceptibility without explicit simulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 present important theoretical insights. The justification for linearity (C57) is reasonable for population-level predictions, though nonlinear boundaries might fit individual cases better. The mathematical interchangeability (C59-C60) is a valid insight enabled by the logarithmic framework. The population prediction capability (C58) is demonstrated in Figures 4-5 and represents a significant methodological contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "a8810b80-05bf-4d98-83d1-8226c8a5855c",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Comparison to Passini et al. 2017 (89% accuracy, n=62) and Llopis-Lorente et al. 2020 (92.7% for qNet, 94.5% for decision tree) shows the current method performs comparably, with the authors suggesting that early after-depolarizations may have been underestimated in prior work due to limited parameter exploration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C63-C65 provide appropriate literature comparisons. The accuracy comparisons are valid though different risk stratification schemes limit direct comparison. The speculation about why Llopis-Lorente et al. found EADs to be a poor biomarker (C65) is reasonable but remains speculative without additional analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "fa4e7cc0-3d1d-4278-85c6-09e9ea9333ef",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparison to the MICE model of Kramer et al. 2013 shows nearly identical accuracy (90.9% vs 88.1-90.8%), though on different datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C69 provide appropriate comparison to a simpler statistical model. The similar performance is noteworthy, though the different datasets (n=55 vs n=109) and risk stratification schemes limit direct comparison. The observation supports the authors' claim of balancing complexity and performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "909b2cb9-7318-47bb-8abd-a5ca04cf6b68",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Bnet model predicts clinical risk labels as accurately as the CiPAORdv1.0 model when adjusted for drug binding kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 accurately describe another comparison method from the literature with appropriate citations (Mistry 2018; Li et al. 2019; Mistry 2019; Han et al. 2019). This provides context for the ongoing debate about model complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "324777bb-b417-4726-b984-0a7ce071d9bd",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The approach resolves the debate between model complexity and simplicity by using complex biophysical models to identify the ion channel-arrhythmia relationship, then reducing findings to a simpler linear model that retains essential biophysics while enabling practical application without complex simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 articulate the methodological philosophy and contribution of the work. The two-stage approach (complex simulation followed by simplified application) is well-executed and represents a valid synthesis of competing approaches. The claim of 'resolving the debate' (C72) may be somewhat overstated, but the methodological contribution is genuine.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "1ed38d08-516d-4dc9-ac3e-282f4b4f9e52",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The benefits of this approach will accelerate adoption of computational assays in safety pharmacology and reduce animal testing burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is speculative about future impact. While the method shows promise, actual adoption rates and reduction in animal testing would depend on regulatory acceptance, validation in prospective studies, and practical implementation challenges not addressed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "089ee5fc-f6ad-41ca-a1b4-88638f0c6c37",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The validation dataset was drawn from multiple sources with diverse experimental conditions, and drug potency measurements are known to vary between laboratories and platforms, limiting prediction accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78, C80 appropriately acknowledge data quality limitations. The heterogeneity of the dataset (Llopis-Lorente et al. 2020) and inter-laboratory variability (Kramer et al. 2020) are well-documented issues in the field. The authors correctly identify this as a limitation affecting prediction accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ce81d29d-f731-42b9-969a-1fe74e7291b1",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The accuracy of the axis of arrhythmia is limited by the biophysical model quality, with the current study using only one variant of the ORd model at 1 Hz pacing, and other models or pacing rates likely producing different axis estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 appropriately acknowledge model-dependent limitations. The restriction to one model variant and pacing rate (C82) is a clear limitation. The speculation about variability with other models (C83) is reasonable and represents an important caveat for generalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "75808565-530a-44a7-be58-34631f3972af",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Methodological details include pacing at 1 Hz with -70 mV stimulus for 0.5 ms, equilibration for at least 1000 beats, classification of ectopic cells based on secondary peaks above -50 mV separated by at least 100 ms, and parameter ranges spanning 0.05 to 20 times baseline values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86, C88 provide essential methodological details that are clearly stated and appropriate for the study design. The equilibration period (C85) is adequate for reaching steady state. The EAD detection criteria (C86) are reasonable though somewhat arbitrary. The parameter range (C88) is justified as covering the ectopic region without biological extremes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ad57b01a-52c3-418a-b6bb-c1b1a8f75ae1",
+      "content_id": "4f66bdce-2edf-4f5e-b3a5-752d474f5f40",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Clinical risk labels were obtained from Llopis-Lorente et al. 2020, using the Credible Meds classification scheme where Class 1 drugs have known risk, Class 2 have possible risk, Class 3 have conditional risk, and Class 4 have no evidence of risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C95 accurately describe the source and classification system for clinical risk labels. The Credible Meds database is a standard reference in the field, and the four-class system is appropriately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "399c7d2c-217c-4628-8f90-1d19cc243d35",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed a novel computational method called the 'axis of arrhythmia' by simulating 100,000 phenotypically diverse cardiomyocytes to identify the relationship between ion current blockade and ectopic beats. This axis serves as a metric for quantifying arrhythmogenic risk from multi-channel drug blockade profiles, defined as the orthogonal direction to the decision boundary separating benign and ectopic phenotypes in parameter space.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly praised the novelty and elegance of this approach. The editor called it 'compelling and novel,' Reviewer 1 described it as 'potentially paradigm-shifting' with 'novel combination of detailed mechanistic simulations with rigorous statistical modeling,' and Reviewer 2 acknowledged 'an elegance to the way the authors have communicated the scoring system.' No reviewer challenged the fundamental methodology or mathematical framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "d3e104be-f417-49ab-a00d-5935628d33f8",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The method achieved 88.1\u201390.8% accuracy in predicting clinical risk labels for 109 drugs across different dosage levels, with AUROC values of 91.3\u201391.5%, outperforming the conventional hERG assay (78.9% accuracy).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledged the method's performance, Reviewer 2 expressed concern that 'the comparison to conventional approaches suggests that the presented method isn't necessarily better than conventional methods' and questioned whether 'the method yield important information when realistic drug concentrations are used.' Reviewer 2 also 'struggled to grasp the exceptional novelty' given existing methods. The high accuracy is not disputed, but its practical superiority remains questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ef31b1f0-8174-4a74-b217-10ec91c1665f",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrated that drug action subtly changes direction with dosage due to differing response rates for each ion channel, and that logarithmic coordinates transform multiplicative drug blockade into an additive process.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raised a significant concern about this finding: 'when a drug blocks multiple channels, it is not only the IC50 but also the Hill coefficient that can differ,' noting that 'if the Hill coefficients were to be significantly different, the concentration-dependent curves shown in Figure 6 could look very different.' This suggests the dose-response analysis may be incomplete without considering Hill coefficient variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "becd00fc-811c-4f72-a781-23ee0297d9a6",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The ectopic and benign phenotypes were clearly segregated in parameter space by a linear boundary identified through multivariate logistic regression, with this linear assumption being crucial for generalizing findings across all cardiomyocytes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 noted that 'the curved lines shown in Figure 6 can initially be difficult to comprehend, especially when all the previous presentations emphasized linearity,' and raised concerns about 'a two-dimensional projection of a 4-dimensional space' where 'differences in the \"hidden channels\" will influence the shapes of these curves.' This suggests the linearity assumption may be oversimplified when considering all four ion channels simultaneously.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "3542f7eb-064e-4ced-9279-1e9c61280e2a",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The method correctly predicted that Ajmaline is pro-arrhythmic (shifting population 1.16 units toward ectopy, making 26% susceptible) while Linezolid is not (shifting 1.18 units away, making only 0.0095% susceptible), with the latter potentially having anti-arrhythmic properties.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenged these specific drug predictions or the population risk calculations. The examples were used to illustrate the method's application without criticism of the results themselves.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "be66779d-1ee5-4f12-96f3-6bf641228d1a",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The method's practical advantage is that simulations were conducted only once in the absence of drugs to identify the axis of arrhythmia, after which the risk metric can be calculated with pen and paper from standard patch clamp measurements without repeating complex simulations, combining biophysical realism with computational simplicity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly praised this aspect: 'The method is potentially useful because of its simplicity, accessibility, and ease of use. I do think it adds to the field for this reason - a number of existing methods are overly complex and unwieldy.' The editor also noted it 'will be valuable for future drug safety design.' No concerns were raised about this practical implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors acknowledged limitations including that drug potency measurements vary between laboratories, the method was evaluated on heterogeneous data from multiple sources, accuracy depends on measurement quality and the biophysical model used, and only one ORd model variant at 1 Hz pacing was investigated.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly raised these concerns: 'The method described in the manuscript suffers from a number of weaknesses that plague current screening methods. Included in these are the data quality and selection used to inform the drug-blocking profile. It's well known that drug measurements vary widely.' Reviewer 2 also noted 'There doesn't seem to be any consideration of pacing frequency, which is an important consideration for arrhythmia triggers.' The authors' acknowledgment of these limitations aligns with reviewer concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors compared their method's performance to previous approaches including Passini et al. (89% accuracy), Llopis-Lorente et al. (94.5% with decision tree, 78.9% with EADs alone), Kramer et al. (90.9% accuracy), and Bnet, noting their method's accuracy is comparable while using a simpler approach.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the comparisons are factually presented, Reviewer 2's comment that 'the comparison to conventional approaches suggests that the presented method isn't necessarily better than conventional methods' and struggle to 'grasp the exceptional novelty of the new metric' indicates skepticism about whether the method represents a significant advance over existing approaches, despite its comparable performance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "c187e42a-d100-412c-9bc4-828e42bb48a2",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Early after-depolarizations (EADs) were chosen as the biomarker for Torsades des Pointes, with cells classified as ectopic if any of four successive beats contained an EAD defined by a secondary peak above \u221250 mV separated from other peaks by at least 100 ms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenged the choice of EADs as a biomarker or the classification criteria. The method's use of EADs was implicitly accepted as appropriate for the study's goals.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "20cf4216-ffdf-4b1d-bc63-a53f24d6861f",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The method can predict the proportion of the population susceptible to a drug without explicit simulation because drug blockade and phenotypic diversity both operate on the same ion channel properties and are mathematically interchangeable in the logarithmic framework.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenged this theoretical insight or the population prediction capability. Reviewer 1 praised the 'clear explication of difficult concepts,' suggesting acceptance of the mathematical framework underlying this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "5642bac5-3874-4da6-956c-94a2992d5d2d",
+      "content_id": "2ae3e3bd-aefc-4373-ab38-960cb0ed6c7b",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors believe this approach will accelerate adoption of computational assays in safety pharmacology and reduce the burden of animal testing.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor stated the method 'will be valuable for future drug safety design,' and Reviewer 1 noted it provides 'a method for predicting drug safety that can be used during drug development.' While speculative, reviewers expressed support for the potential impact.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "67a45d7f-408f-4590-bc37-e0b5c4399c45",
+      "result_id": "1a321f7e-93ca-4413-9988-f7d61e4a7280"
+    },
+    {
+      "claim_id": "62eec319-5498-473c-9cf5-97f25a007f9a",
+      "result_id": "1a321f7e-93ca-4413-9988-f7d61e4a7280"
+    },
+    {
+      "claim_id": "edd6692f-cff8-4a9b-aa92-a5565d839d43",
+      "result_id": "1a321f7e-93ca-4413-9988-f7d61e4a7280"
+    },
+    {
+      "claim_id": "23e25d80-cb3d-4f62-a461-4fd85f30e106",
+      "result_id": "1a321f7e-93ca-4413-9988-f7d61e4a7280"
+    },
+    {
+      "claim_id": "5e914766-8038-4e5d-b952-6427a13c0f0c",
+      "result_id": "1a321f7e-93ca-4413-9988-f7d61e4a7280"
+    },
+    {
+      "claim_id": "cd869e33-2a27-4f7e-aba5-f46586dfb593",
+      "result_id": "c7dc872c-eef0-45c3-b258-d5094164e6d7"
+    },
+    {
+      "claim_id": "1215779a-b077-411d-93c4-449969a8b521",
+      "result_id": "c7dc872c-eef0-45c3-b258-d5094164e6d7"
+    },
+    {
+      "claim_id": "ba6cd70a-9d4c-45c8-8d31-1f8808e2c3db",
+      "result_id": "c7dc872c-eef0-45c3-b258-d5094164e6d7"
+    },
+    {
+      "claim_id": "fd5e713f-4f7d-42df-8048-a9da3084b04c",
+      "result_id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be"
+    },
+    {
+      "claim_id": "95d9c2e5-3ae5-4384-a70f-bfc247c1f112",
+      "result_id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be"
+    },
+    {
+      "claim_id": "6eb38187-1a2c-4631-80ac-fa87fd10107f",
+      "result_id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be"
+    },
+    {
+      "claim_id": "be217458-fa61-40d6-aef4-79833284f083",
+      "result_id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be"
+    },
+    {
+      "claim_id": "878781fb-2024-4604-838a-3f944d401b13",
+      "result_id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be"
+    },
+    {
+      "claim_id": "785a586f-c4c1-4003-81ae-bb013fbc70ab",
+      "result_id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be"
+    },
+    {
+      "claim_id": "3241d830-4af4-4ccb-8492-c1f906fe3c15",
+      "result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b"
+    },
+    {
+      "claim_id": "686217c4-d7b3-45de-8bb1-d97f2577b54c",
+      "result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b"
+    },
+    {
+      "claim_id": "ec96bc8d-577d-4f04-9e46-cc24db8aa766",
+      "result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b"
+    },
+    {
+      "claim_id": "57abdf0c-f84b-46fb-9c5e-d069afba4574",
+      "result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b"
+    },
+    {
+      "claim_id": "de2188cc-f93a-439c-9310-ad4b8d0467ad",
+      "result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b"
+    },
+    {
+      "claim_id": "af430600-00d1-4831-8a18-cd213372dbb2",
+      "result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b"
+    },
+    {
+      "claim_id": "1131b2d1-2c15-492a-bfff-c488f7e9584d",
+      "result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b"
+    },
+    {
+      "claim_id": "c404bcd7-eeee-465f-a201-036767d72f24",
+      "result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea"
+    },
+    {
+      "claim_id": "902dbe17-3832-467f-9614-c9c9ee105717",
+      "result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea"
+    },
+    {
+      "claim_id": "67b0a720-63ca-4593-997c-17cfd7d3f070",
+      "result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea"
+    },
+    {
+      "claim_id": "f805ab74-da11-44c7-8e0c-92f5cd7ba15a",
+      "result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea"
+    },
+    {
+      "claim_id": "39608546-e410-4d4a-95b6-5ca89e9b7049",
+      "result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea"
+    },
+    {
+      "claim_id": "ad1170a9-43fb-4d57-8732-09dfd3f04bb6",
+      "result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea"
+    },
+    {
+      "claim_id": "a221ba95-60ae-4ed1-a86e-844f6e0d66b0",
+      "result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea"
+    },
+    {
+      "claim_id": "37ec2e0d-829a-4a66-a05b-8f62a019196e",
+      "result_id": "ae35ef16-513e-441f-8ef6-6bdde785040e"
+    },
+    {
+      "claim_id": "2f833e50-77fb-4b58-b366-7def95d4fd21",
+      "result_id": "ae35ef16-513e-441f-8ef6-6bdde785040e"
+    },
+    {
+      "claim_id": "292799e5-b222-418e-9ace-117ecf9b46f9",
+      "result_id": "ae35ef16-513e-441f-8ef6-6bdde785040e"
+    },
+    {
+      "claim_id": "50b61e02-01e3-4959-8862-e564fdfe092a",
+      "result_id": "d4e0929d-3441-4bd4-bf87-b94c4cace779"
+    },
+    {
+      "claim_id": "34cca161-1346-490d-90a1-607c1cdfff5b",
+      "result_id": "2e85814e-75a9-49a4-94fb-9bb248643000"
+    },
+    {
+      "claim_id": "8f615831-8bd1-4494-9ff2-a8f7114de505",
+      "result_id": "ecdb73b9-baaf-4f82-a069-b6d4d3b8b483"
+    },
+    {
+      "claim_id": "0911bbb6-b703-4c63-9e08-76e5a2b049f5",
+      "result_id": "ecdb73b9-baaf-4f82-a069-b6d4d3b8b483"
+    },
+    {
+      "claim_id": "b636c2dc-0448-4dc4-a18d-79d63c08625d",
+      "result_id": "ecdb73b9-baaf-4f82-a069-b6d4d3b8b483"
+    },
+    {
+      "claim_id": "72a48a7c-9d17-4315-93af-70df82abfe3c",
+      "result_id": "ecdb73b9-baaf-4f82-a069-b6d4d3b8b483"
+    },
+    {
+      "claim_id": "6722b6a3-ddd1-4435-ad6d-d8d5d9d46786",
+      "result_id": "ecdb73b9-baaf-4f82-a069-b6d4d3b8b483"
+    },
+    {
+      "claim_id": "480c85f2-e2a1-4c87-b5c6-f1a5c21977ba",
+      "result_id": "9070dd2d-daf0-4384-93cb-aed7e0ce64b1"
+    },
+    {
+      "claim_id": "40332983-16e3-4cd4-8249-0e41ed3b21f1",
+      "result_id": "9070dd2d-daf0-4384-93cb-aed7e0ce64b1"
+    },
+    {
+      "claim_id": "36c1ee5c-dcd7-4f98-82aa-0c45831c14ad",
+      "result_id": "9070dd2d-daf0-4384-93cb-aed7e0ce64b1"
+    },
+    {
+      "claim_id": "e910732a-facb-4ddd-a724-84e3c982dcb6",
+      "result_id": "a8a2f6f0-b8f9-46db-908b-30c13e416091"
+    },
+    {
+      "claim_id": "e5be61b0-0812-4d5b-b6ad-e462f6f299cf",
+      "result_id": "a8a2f6f0-b8f9-46db-908b-30c13e416091"
+    },
+    {
+      "claim_id": "a5ac0235-09e3-4cf5-86ae-6369f6839bba",
+      "result_id": "a8a2f6f0-b8f9-46db-908b-30c13e416091"
+    },
+    {
+      "claim_id": "72d28428-96b8-4c96-a716-a2d73b45f4a4",
+      "result_id": "a8a2f6f0-b8f9-46db-908b-30c13e416091"
+    },
+    {
+      "claim_id": "b4dcb7cd-ca0b-4993-8876-479469b3f914",
+      "result_id": "a8810b80-05bf-4d98-83d1-8226c8a5855c"
+    },
+    {
+      "claim_id": "25c01e76-d4df-4f07-8e04-bca598a2b9e6",
+      "result_id": "a8810b80-05bf-4d98-83d1-8226c8a5855c"
+    },
+    {
+      "claim_id": "dc8eebae-d19a-4a3d-9808-de2142cb4db9",
+      "result_id": "a8810b80-05bf-4d98-83d1-8226c8a5855c"
+    },
+    {
+      "claim_id": "a0e37b42-90fb-469e-b132-216f30ebc7d1",
+      "result_id": "a8810b80-05bf-4d98-83d1-8226c8a5855c"
+    },
+    {
+      "claim_id": "23adb3d2-95a2-49e3-bb0c-ff3f0c28c570",
+      "result_id": "fa4e7cc0-3d1d-4278-85c6-09e9ea9333ef"
+    },
+    {
+      "claim_id": "3e705b01-a529-402a-833d-2f90f46c6563",
+      "result_id": "fa4e7cc0-3d1d-4278-85c6-09e9ea9333ef"
+    },
+    {
+      "claim_id": "857e9596-3725-4ed9-928f-cc8338a905bf",
+      "result_id": "909b2cb9-7318-47bb-8abd-a5ca04cf6b68"
+    },
+    {
+      "claim_id": "36ebdbec-f684-470a-a7df-df7cb6ac0321",
+      "result_id": "909b2cb9-7318-47bb-8abd-a5ca04cf6b68"
+    },
+    {
+      "claim_id": "337b21a8-b325-48bd-a167-6bc21527c01c",
+      "result_id": "324777bb-b417-4726-b984-0a7ce071d9bd"
+    },
+    {
+      "claim_id": "789fbb06-4562-4c03-bd11-43ac240d5898",
+      "result_id": "324777bb-b417-4726-b984-0a7ce071d9bd"
+    },
+    {
+      "claim_id": "af087d50-bdde-436a-9038-ab07dc3474f3",
+      "result_id": "324777bb-b417-4726-b984-0a7ce071d9bd"
+    },
+    {
+      "claim_id": "e8426a47-b80b-4161-bc48-7cf93bd88bb9",
+      "result_id": "324777bb-b417-4726-b984-0a7ce071d9bd"
+    },
+    {
+      "claim_id": "b2b98b7d-c8eb-4f5c-83b4-7280b9c2b4f2",
+      "result_id": "1ed38d08-516d-4dc9-ac3e-282f4b4f9e52"
+    },
+    {
+      "claim_id": "53adddb5-788e-49e8-83d3-3ac739d2f58f",
+      "result_id": "089ee5fc-f6ad-41ca-a1b4-88638f0c6c37"
+    },
+    {
+      "claim_id": "2c7598c3-5111-4a7e-ac69-dc93ef23aff7",
+      "result_id": "089ee5fc-f6ad-41ca-a1b4-88638f0c6c37"
+    },
+    {
+      "claim_id": "fd1c6606-c2e8-4838-8818-edba051ca907",
+      "result_id": "089ee5fc-f6ad-41ca-a1b4-88638f0c6c37"
+    },
+    {
+      "claim_id": "bf396a94-0295-4d78-91e0-00912a8a6ac1",
+      "result_id": "ce81d29d-f731-42b9-969a-1fe74e7291b1"
+    },
+    {
+      "claim_id": "636cea83-024f-44d2-a983-cc3949ea3156",
+      "result_id": "ce81d29d-f731-42b9-969a-1fe74e7291b1"
+    },
+    {
+      "claim_id": "7b2425ef-a6aa-4355-af71-e911c45668f2",
+      "result_id": "ce81d29d-f731-42b9-969a-1fe74e7291b1"
+    },
+    {
+      "claim_id": "9fe64907-a5ea-4bb9-9c01-71f61058b2b6",
+      "result_id": "75808565-530a-44a7-be58-34631f3972af"
+    },
+    {
+      "claim_id": "65761022-7b65-4207-b0c8-65a5de93af75",
+      "result_id": "75808565-530a-44a7-be58-34631f3972af"
+    },
+    {
+      "claim_id": "107e14d1-834e-4abe-9571-92bcdca569b6",
+      "result_id": "75808565-530a-44a7-be58-34631f3972af"
+    },
+    {
+      "claim_id": "aa7b76b6-7c56-45ec-aa7f-82627b61f806",
+      "result_id": "75808565-530a-44a7-be58-34631f3972af"
+    },
+    {
+      "claim_id": "bf158de2-4fcc-4d88-b694-c0d174a2b171",
+      "result_id": "ad57b01a-52c3-418a-b6bb-c1b1a8f75ae1"
+    },
+    {
+      "claim_id": "4532e5da-65ce-4e4a-aa90-5d51524662ba",
+      "result_id": "ad57b01a-52c3-418a-b6bb-c1b1a8f75ae1"
+    },
+    {
+      "claim_id": "59089d5a-c399-4553-a2b1-4b8b1c2c3495",
+      "result_id": "ad57b01a-52c3-418a-b6bb-c1b1a8f75ae1"
+    },
+    {
+      "claim_id": "c551c288-cb8e-496e-8655-8adbd8c049c5",
+      "result_id": "ad57b01a-52c3-418a-b6bb-c1b1a8f75ae1"
+    },
+    {
+      "claim_id": "b5f0759a-7856-4912-a7af-6b6397cfddbe",
+      "result_id": "ad57b01a-52c3-418a-b6bb-c1b1a8f75ae1"
+    },
+    {
+      "claim_id": "3241d830-4af4-4ccb-8492-c1f906fe3c15",
+      "result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35"
+    },
+    {
+      "claim_id": "8f615831-8bd1-4494-9ff2-a8f7114de505",
+      "result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35"
+    },
+    {
+      "claim_id": "67b0a720-63ca-4593-997c-17cfd7d3f070",
+      "result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35"
+    },
+    {
+      "claim_id": "f805ab74-da11-44c7-8e0c-92f5cd7ba15a",
+      "result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35"
+    },
+    {
+      "claim_id": "39608546-e410-4d4a-95b6-5ca89e9b7049",
+      "result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35"
+    },
+    {
+      "claim_id": "ad1170a9-43fb-4d57-8732-09dfd3f04bb6",
+      "result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35"
+    },
+    {
+      "claim_id": "a221ba95-60ae-4ed1-a86e-844f6e0d66b0",
+      "result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35"
+    },
+    {
+      "claim_id": "0911bbb6-b703-4c63-9e08-76e5a2b049f5",
+      "result_id": "d3e104be-f417-49ab-a00d-5935628d33f8"
+    },
+    {
+      "claim_id": "b636c2dc-0448-4dc4-a18d-79d63c08625d",
+      "result_id": "d3e104be-f417-49ab-a00d-5935628d33f8"
+    },
+    {
+      "claim_id": "72a48a7c-9d17-4315-93af-70df82abfe3c",
+      "result_id": "d3e104be-f417-49ab-a00d-5935628d33f8"
+    },
+    {
+      "claim_id": "6722b6a3-ddd1-4435-ad6d-d8d5d9d46786",
+      "result_id": "d3e104be-f417-49ab-a00d-5935628d33f8"
+    },
+    {
+      "claim_id": "34cca161-1346-490d-90a1-607c1cdfff5b",
+      "result_id": "ef31b1f0-8174-4a74-b217-10ec91c1665f"
+    },
+    {
+      "claim_id": "c404bcd7-eeee-465f-a201-036767d72f24",
+      "result_id": "ef31b1f0-8174-4a74-b217-10ec91c1665f"
+    },
+    {
+      "claim_id": "902dbe17-3832-467f-9614-c9c9ee105717",
+      "result_id": "ef31b1f0-8174-4a74-b217-10ec91c1665f"
+    },
+    {
+      "claim_id": "af430600-00d1-4831-8a18-cd213372dbb2",
+      "result_id": "becd00fc-811c-4f72-a781-23ee0297d9a6"
+    },
+    {
+      "claim_id": "1131b2d1-2c15-492a-bfff-c488f7e9584d",
+      "result_id": "becd00fc-811c-4f72-a781-23ee0297d9a6"
+    },
+    {
+      "claim_id": "e910732a-facb-4ddd-a724-84e3c982dcb6",
+      "result_id": "becd00fc-811c-4f72-a781-23ee0297d9a6"
+    },
+    {
+      "claim_id": "37ec2e0d-829a-4a66-a05b-8f62a019196e",
+      "result_id": "3542f7eb-064e-4ced-9279-1e9c61280e2a"
+    },
+    {
+      "claim_id": "50b61e02-01e3-4959-8862-e564fdfe092a",
+      "result_id": "3542f7eb-064e-4ced-9279-1e9c61280e2a"
+    },
+    {
+      "claim_id": "2f833e50-77fb-4b58-b366-7def95d4fd21",
+      "result_id": "3542f7eb-064e-4ced-9279-1e9c61280e2a"
+    },
+    {
+      "claim_id": "292799e5-b222-418e-9ace-117ecf9b46f9",
+      "result_id": "3542f7eb-064e-4ced-9279-1e9c61280e2a"
+    },
+    {
+      "claim_id": "480c85f2-e2a1-4c87-b5c6-f1a5c21977ba",
+      "result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a"
+    },
+    {
+      "claim_id": "40332983-16e3-4cd4-8249-0e41ed3b21f1",
+      "result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a"
+    },
+    {
+      "claim_id": "36c1ee5c-dcd7-4f98-82aa-0c45831c14ad",
+      "result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a"
+    },
+    {
+      "claim_id": "337b21a8-b325-48bd-a167-6bc21527c01c",
+      "result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a"
+    },
+    {
+      "claim_id": "789fbb06-4562-4c03-bd11-43ac240d5898",
+      "result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a"
+    },
+    {
+      "claim_id": "af087d50-bdde-436a-9038-ab07dc3474f3",
+      "result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a"
+    },
+    {
+      "claim_id": "e8426a47-b80b-4161-bc48-7cf93bd88bb9",
+      "result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a"
+    },
+    {
+      "claim_id": "53adddb5-788e-49e8-83d3-3ac739d2f58f",
+      "result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4"
+    },
+    {
+      "claim_id": "2c7598c3-5111-4a7e-ac69-dc93ef23aff7",
+      "result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4"
+    },
+    {
+      "claim_id": "fd1c6606-c2e8-4838-8818-edba051ca907",
+      "result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4"
+    },
+    {
+      "claim_id": "bf396a94-0295-4d78-91e0-00912a8a6ac1",
+      "result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4"
+    },
+    {
+      "claim_id": "636cea83-024f-44d2-a983-cc3949ea3156",
+      "result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4"
+    },
+    {
+      "claim_id": "7b2425ef-a6aa-4355-af71-e911c45668f2",
+      "result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4"
+    },
+    {
+      "claim_id": "b4dcb7cd-ca0b-4993-8876-479469b3f914",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "25c01e76-d4df-4f07-8e04-bca598a2b9e6",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "dc8eebae-d19a-4a3d-9808-de2142cb4db9",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "a0e37b42-90fb-469e-b132-216f30ebc7d1",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "23adb3d2-95a2-49e3-bb0c-ff3f0c28c570",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "3e705b01-a529-402a-833d-2f90f46c6563",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "857e9596-3725-4ed9-928f-cc8338a905bf",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "36ebdbec-f684-470a-a7df-df7cb6ac0321",
+      "result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3"
+    },
+    {
+      "claim_id": "ec96bc8d-577d-4f04-9e46-cc24db8aa766",
+      "result_id": "c187e42a-d100-412c-9bc4-828e42bb48a2"
+    },
+    {
+      "claim_id": "57abdf0c-f84b-46fb-9c5e-d069afba4574",
+      "result_id": "c187e42a-d100-412c-9bc4-828e42bb48a2"
+    },
+    {
+      "claim_id": "107e14d1-834e-4abe-9571-92bcdca569b6",
+      "result_id": "c187e42a-d100-412c-9bc4-828e42bb48a2"
+    },
+    {
+      "claim_id": "e5be61b0-0812-4d5b-b6ad-e462f6f299cf",
+      "result_id": "20cf4216-ffdf-4b1d-bc63-a53f24d6861f"
+    },
+    {
+      "claim_id": "a5ac0235-09e3-4cf5-86ae-6369f6839bba",
+      "result_id": "20cf4216-ffdf-4b1d-bc63-a53f24d6861f"
+    },
+    {
+      "claim_id": "72d28428-96b8-4c96-a716-a2d73b45f4a4",
+      "result_id": "20cf4216-ffdf-4b1d-bc63-a53f24d6861f"
+    },
+    {
+      "claim_id": "b2b98b7d-c8eb-4f5c-83b4-7280b9c2b4f2",
+      "result_id": "5642bac5-3874-4da6-956c-94a2992d5d2d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2cc02f82-fb03-4a3e-aa0c-8bdfd7f4b7c1",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "1ed38d08-516d-4dc9-ac3e-282f4b4f9e52",
+      "peer_result_id": "5642bac5-3874-4da6-956c-94a2992d5d2d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address C76 regarding future impact and reduction in animal testing. OpenEval rates this as UNCERTAIN due to speculation about adoption and regulatory acceptance, while peer reviewers are SUPPORTED, with the editor and reviewers expressing confidence in the method's future value for drug safety design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "956a9b62-7de4-4a4c-86b0-e8c07315ffa8",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "ecdb73b9-baaf-4f82-a069-b6d4d3b8b483",
+      "peer_result_id": "d3e104be-f417-49ab-a00d-5935628d33f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate validation results (C7, C49-C51) showing 88-91% accuracy. OpenEval finds these claims SUPPORTED with adequate documentation, while peer reviewers rate UNCERTAIN, questioning whether the method is truly better than conventional approaches and expressing concern about performance at realistic drug concentrations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "9af03705-e520-40b2-a51e-fd826cf32d2b",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ae35ef16-513e-441f-8ef6-6bdde785040e",
+      "peer_result_id": "3542f7eb-064e-4ced-9279-1e9c61280e2a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address specific drug predictions (C43, C45-C46). OpenEval rates SUPPORTED based on alignment with clinical outcomes and mathematical framework. Peer reviewers also rate SUPPORTED, with no challenges to the specific predictions or population risk calculations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "b71e72a3-8d0a-4900-90d3-3ee67b702cf4",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a8a2f6f0-b8f9-46db-908b-30c13e416091",
+      "peer_result_id": "20cf4216-ffdf-4b1d-bc63-a53f24d6861f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate theoretical insights about population prediction and mathematical interchangeability (C58-C60). OpenEval rates SUPPORTED as valid insights demonstrated in figures. Peer reviewers also rate SUPPORTED, with no challenges to the theoretical framework and praise for clear explication of concepts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "7c708fed-a3b5-4a17-8868-88f5e098bb7c",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "324777bb-b417-4726-b984-0a7ce071d9bd",
+      "peer_result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the methodological philosophy and two-stage approach (C72-C75). OpenEval rates SUPPORTED though notes 'resolving the debate' may be overstated. Peer reviewers rate SUPPORTED, explicitly praising the simplicity, accessibility, and practical value of the method.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "1e331747-07d0-4af2-83fb-ff5bd7776043",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea",
+      "peer_result_id": "399c7d2c-217c-4628-8f90-1d19cc243d35",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the core mathematical framework (C31-C35) and methodology (C5). OpenEval rates SUPPORTED as mathematically sound and the core innovation. Peer reviewers rate SUPPORTED with explicit praise for novelty and elegance, calling it 'potentially paradigm-shifting' with no challenges to the fundamental methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "912f5cee-d11f-4d30-b1be-cb93be7dff97",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "9070dd2d-daf0-4384-93cb-aed7e0ce64b1",
+      "peer_result_id": "be66779d-1ee5-4f12-96f3-6bf641228d1a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address methodological efficiency (C54-C56). OpenEval rates SUPPORTED as a key innovation distinguishing the method. Peer reviewers rate SUPPORTED, praising simplicity and ease of use as valuable contributions to the field.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "e42c5f0b-df12-43f0-a043-47a8a5f62686",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "2e85814e-75a9-49a4-94fb-9bb248643000",
+      "peer_result_id": "ef31b1f0-8174-4a74-b217-10ec91c1665f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate dose-response analysis and curved trajectories (C47). OpenEval rates SUPPORTED as logical consequence of Hill equation kinetics. Peer reviewers rate UNCERTAIN, raising concerns that Hill coefficient variability could significantly alter the curves shown in Figure 6.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "1893935c-158c-41bd-ad09-bd5f3a755ddc",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "089ee5fc-f6ad-41ca-a1b4-88638f0c6c37",
+      "peer_result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address data quality limitations (C77-C78, C80). OpenEval rates SUPPORTED as appropriate acknowledgment of well-documented issues. Peer reviewers rate SUPPORTED, explicitly raising these same concerns about data heterogeneity and inter-laboratory variability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "698c501a-e132-4761-a315-678bb52cd9fc",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ce81d29d-f731-42b9-969a-1fe74e7291b1",
+      "peer_result_id": "2136024c-eb6d-4efb-84f7-e95aaa7821d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate model-dependent limitations (C81-C83). OpenEval rates SUPPORTED as appropriate caveats for generalization. Peer reviewers rate SUPPORTED, with Reviewer 2 noting lack of consideration for pacing frequency as an important limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "e98d9dd6-2be9-4002-bcb6-ad5da7598769",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a8810b80-05bf-4d98-83d1-8226c8a5855c",
+      "peer_result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address literature comparisons (C61, C63-C65, C67, C69-C71). OpenEval rates SUPPORTED as valid comparisons despite different datasets. Peer reviewers rate UNCERTAIN, expressing skepticism about whether the method represents a significant advance over existing approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "e9ab8aee-bbcc-4c71-a6e6-c902bf3dacab",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b",
+      "peer_result_id": "becd00fc-811c-4f72-a781-23ee0297d9a6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate computational methodology including logistic regression (C25-C26) and linearity assumptions (C57). OpenEval rates SUPPORTED with appropriate statistical approach. Peer reviewers rate UNCERTAIN, noting difficulty comprehending curved lines in Figure 6 when previous presentations emphasized linearity, and concerns about 2D projection of 4D space.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "3799166f-1fa0-4886-a9fc-662789adf770",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "3b8f78fb-7830-49cc-a413-3c1690c1f47b",
+      "peer_result_id": "c187e42a-d100-412c-9bc4-828e42bb48a2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address EAD biomarker methodology (C20-C21, C86). OpenEval rates SUPPORTED as well-established approach with appropriate criteria. Peer reviewers rate SUPPORTED with no challenges to EAD choice or classification criteria.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "2a05f8f9-aeed-4d4b-ac41-5bbe777c005f",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "3de502f3-ae3b-436a-9f08-b8ff3070f4ea",
+      "peer_result_id": "ef31b1f0-8174-4a74-b217-10ec91c1665f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate logarithmic transformation framework (C29-C30). OpenEval rates SUPPORTED as mathematically sound. Peer reviewers rate UNCERTAIN, raising concerns about Hill coefficient variability affecting dose-response curves.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "802e3122-e1c1-44f1-8f3f-10cb2aeb1726",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "d4e0929d-3441-4bd4-bf87-b94c4cace779",
+      "peer_result_id": "3542f7eb-064e-4ced-9279-1e9c61280e2a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address C44 regarding lidocaine's anti-arrhythmic properties. OpenEval rates UNCERTAIN as speculative beyond data support. Peer reviewers rate SUPPORTED with no specific challenges to drug predictions, though this may reflect lack of detailed scrutiny rather than explicit endorsement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "b90a314d-9042-454b-9017-3064e6745b30",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "fa4e7cc0-3d1d-4278-85c6-09e9ea9333ef",
+      "peer_result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate comparison to simpler statistical models (C67, C69). OpenEval rates SUPPORTED noting similar performance despite different datasets. Peer reviewers rate UNCERTAIN, questioning whether comparable performance to conventional methods demonstrates true novelty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "fdbaffe1-9929-42d8-8c81-82d4b96e9f62",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "909b2cb9-7318-47bb-8abd-a5ca04cf6b68",
+      "peer_result_id": "7da65f81-49fa-4bd0-a7cb-f30cc6b7cdf3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address comparison to other literature methods (C70-C71). OpenEval rates SUPPORTED as appropriate context for model complexity debate. Peer reviewers rate UNCERTAIN, struggling to grasp exceptional novelty given existing methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "ae2f02b4-6497-4303-89e6-570c366db96c",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "1a321f7e-93ca-4413-9988-f7d61e4a7280",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims (C1-C3, C8, C10) as SUPPORTED with appropriate citations and scientific consensus. No corresponding peer review evaluation found for these foundational background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "80a174ce-ac9e-41bd-93d7-b007640a919a",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "c7dc872c-eef0-45c3-b258-d5094164e6d7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims about hERG assay limitations (C11-C13) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these background claims about existing assay problems.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "172daa41-569c-49a8-900e-a9e09d0d54bd",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "464e14b6-ccce-44e7-a8b4-ae082e49d9be",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims about four-current approach and established methodologies (C4, C14-C18) as SUPPORTED with multiple citations. No corresponding peer review evaluation found for these methodological background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "80ab9dde-e438-49d3-9dba-86c9cc2b4f1a",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "75808565-530a-44a7-be58-34631f3972af",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological details (C84-C86, C88) as SUPPORTED with appropriate study design choices. While peer R9 touches on C86, OpenEval R19 covers broader methodological specifications not explicitly evaluated by peer reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    },
+    {
+      "id": "c77632ed-89c9-4bdb-b109-c92799e5cd36",
+      "submission_id": "eda88090-6487-4966-bc8a-962874d5ce03",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "ad57b01a-52c3-418a-b6bb-c1b1a8f75ae1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims about clinical risk label sources and classification (C91-C95) as SUPPORTED with standard reference database. No corresponding peer review evaluation found for these data source descriptions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-22T00:43:43.577849Z"
+    }
+  ]
+}

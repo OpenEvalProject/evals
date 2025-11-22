@@ -1,0 +1,1842 @@
+{
+  "submission": {
+    "id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:54:33.336164Z",
+    "updated_at": "2025-11-21T23:54:33.336164Z"
+  },
+  "content": [
+    {
+      "id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "content_type": "manuscript",
+      "content_text": "# A differentiable Gillespie algorithm for simulating chemical kinetics, parameter estimation, and designing synthetic biological circuits\n\n## Authors\n\n- Krishna Rijal<sup>1</sup> ([ORCID: 0000-0001-7236-7387](https://orcid.org/0000-0001-7236-7387)) \u2020\n- Pankaj Mehta<sup>1</sup> ([ORCID: 0000-0003-1290-5897](https://orcid.org/0000-0003-1290-5897))\n\n### Affiliations\n\n1. Department of Physics, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Gillespie algorithm is commonly used to simulate and analyze complex chemical reaction networks. Here, we leverage recent breakthroughs in deep learning to develop a fully differentiable variant of the Gillespie algorithm. The differentiable Gillespie algorithm (DGA) approximates discontinuous operations in the exact Gillespie algorithm using smooth functions, allowing for the calculation of gradients using backpropagation. The DGA can be used to quickly and accurately learn kinetic parameters using gradient descent and design biochemical networks with desired properties. As an illustration, we apply the DGA to study stochastic models of gene promoters. We show that the DGA can be used to: (1) successfully learn kinetic parameters from experimental measurements of mRNA expression levels from two distinct Escherichia coli promoters and (2) design nonequilibrium promoter architectures with desired input\u2013output relationships. These examples illustrate the utility of the DGA for analyzing stochastic chemical kinetics, including a wide variety of problems of interest to synthetic and systems biology.\n\n## Introduction\n\nRandomness is a defining feature of our world. Stock market fluctuations, the movement of particles in fluids, and even the change of allele frequencies in organismal populations can all be described using the language of stochastic processes. For this reason, disciplines as diverse as physics, biology, ecology, evolution, finance, and engineering have all developed tools to mathematically model stochastic processes (Van Kampen, 1992; Gardiner, 2009; Rolski et al., 2009; Wong and Hajek, 2012). In the context of biology, an especially fruitful area of research has been the study of stochastic gene expression in single cells (McAdams and Arkin, 1997; Elowitz et al., 2002; Raj and van Oudenaarden, 2008; Sanchez and Golding, 2013). The small number of molecules involved in gene expression make stochasticity an inherent feature of protein production and numerous mathematical and computational techniques have been developed to model gene expression and relate mathematical models to experimental observations (Paulsson, 2005; Wilkinson, 2018).\n\nOne prominent computational algorithm for understanding stochasticity in gene expression is the Gillespie algorithm, with its Direct Stochastic Simulation Algorithm variant being the most commonly used method (Doob, 1945; Gillespie, 1977). The Gillespie algorithm is an extremely efficient computational technique used to simulate the time evolution of a system in which events occur randomly and discretely (Gillespie, 1977). Beyond gene expression, the Gillespie algorithm is widely employed across numerous disciplines to model stochastic systems characterized by discrete, randomly occurring events including epidemiology (Pineda-Krch, 2008), ecology (Parker and Kamenev, 2009; Dobramysl et al., 2018), neuroscience (Benayoun et al., 2010; Rijal et al., 2024), and chemical kinetics (Gillespie, 1976; Gillespie, 2007).\n\nHere, we revisit the Gillespie algorithm in light of the recent progress in deep learning and differentiable programming by presenting a \u2018fully differentiable\u2019 variant of the Gillespie algorithm we dub the differentiable Gillespie algorithm (DGA). The DGA modifies the traditional Gillespie algorithm to take advantage of powerful automatic differentiation libraries for example, PyTorch (Paszke et al., 2019), Jax (Bradbury et al., 2018), and Julia (Bezanson et al., 2017) and gradient-based optimization. The DGA allows us to quickly fit kinetic parameters to data and design discrete stochastic systems with a desired behavior. Our work is similar in spirit to other recent work that seeks to harness the power of differentiable programming to accelerate scientific simulations (Liao et al., 2019; Schoenholz and Cubuk, 2020; Wei et al., 2019; Degrave et al., 2019; Arya et al., 2022; Arya et al., 2023; Bezgin et al., 2023). The DGA\u2019s use of differential programming tools also complements more specialized numerical methods designed for performing parameter sensitivity analysis on Gillespie simulations such as finite-difference methods (Anderson, 2012; Srivastava et al., 2013; Thanh et al., 2018), the likelihood ratio method (Glynn, 1990; McGill et al., 2012; N\u00fa\u00f1ez and Vlachos, 2015), and pathwise derivative methods (Sheppard et al., 2012).\n\nOne of the difficulties in formulating a differentiable version of the Gillespie algorithm is that the stochastic systems it treats are inherently discrete. For this reason, there is no obvious way to take derivatives with respect to kinetic parameters without making approximations. As shown in Figure 1, in the traditional Gillespie algorithm both the selection of the index for the next reaction and the updates of chemical species are both discontinuous functions of the kinetic parameters. To circumnavigate these difficulties, the DGA modifies the traditional Gillespie algorithm by approximating discrete operations with continuous, differentiable functions, smoothing out abrupt transitions to facilitate gradient computation via automatic differentiation (Figure 1). This significant modification preserves the core characteristics of the original algorithm while enabling integration with modern deep learning techniques.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig1-v1.jpg)\n\n**Figure 1.:** (a) Example of kinetics with $N=3$ reactions with rates $r_{i}(i=1,2,3)$. (b) Illustration of the DGA\u2019s approximations: replacing the non-differentiable Heaviside and Kronecker delta functions with smooth sigmoid and Gaussian functions, respectively. (c) Flow chart comparing exact and differentiable Gillespie simulations.\n\nOne natural setting for exploring the efficacy of the DGA is recent experimental and theoretical works exploring stochastic gene expression. Here, we focus on a set of beautiful experiments that explore the effect of promoter architecture on steady-state gene expression (Jones et al., 2014). An especially appealing aspect of Jones et al., 2014 is that the authors independently measured the kinetic parameters for these promoter architectures using orthogonal experiments. This allows us to directly compare the predictions of DGA to ground truth measurements of kinetic parameters. We then extend our considerations to more complex promoter architectures (Lammers et al., 2023) and illustrate how the DGA can be used to design circuits with a desired input\u2013output relation.\n\n## Results\n\n### A differentiable approximation to the Gillespie algorithm\n\nBefore proceeding to discussing the DGA, we start by briefly reviewing how the traditional Gillespie algorithm simulates discrete stochastic processes. For concreteness, in our exposition, we focus on the chemical system shown in Figure 1 consisting of three species, A, B, and C, whose abundances are described by a state vector $x=(x_{1},x_{2},x_{3})$. These chemical species can undergo $N=3$ chemical reactions, characterized by rate constants, $r_{i}(x)$ where $i=1,\u2026,3$, and a stoichiometric matrix $S_{i\\alpha}$ whose ith row encodes how the abundance $x_{\\alpha}$ of species $\\alpha$ changes due to reaction $i$. Note that in what follows, we will often supress the dependence of the rates $r_{i}(x)$ on $x$ and simply write $r_{i}$.\n\nIn order to simulate such a system, it is helpful to discretize time into small intervals of size $\u0394t\u226a1$. The probability that a reaction $i$ with rate $r_{i}$ occurs during such an interval is simply $r_{i}\u0394t$. By construction, we choose $\u0394t$ to be small enough that $r_{i}\u0394t\u226a1$ and that the probability that a reaction occurs in any interval $\u0394t$ is extremely small and well described by a Poisson process. This means that naively simulating such a process is extremely inefficient because, in most intervals, no reactions will occur.\n\n### Gillespie algorithm\n\nThe Gillespie algorithm circumnavigates this problem by: (1) exploiting the fact that the reactions are independent so that the rate at which any reaction occurs is also described by an independent Poisson process with rate $R=\u03a3_{i}r_{i}$ and (2) the waiting time distribution $p(\\tau)$ of a Poisson process with rate $R$ is the exponential distribution $p(\\tau)=Re^{\u2212R\\tau}$. The basic steps of the Gillespie algorithm are illustrated in Figure 1.\n\nThe simulation begins with the initialization of time and state variables:\n\n$$\nt=0,x=x_{0},\n$$\n\nwhere $t$ is the simulation time. One then samples the waiting time distribution $p(\\tau)$ for a reaction to occur to determine when the next the reaction occurs. This is done by drawing a random number $u$ from a uniform distribution over $[0,1]$ and updating\n\n$$\nt\u2192t\u2212R^{\u22121}ln\u2061(u).\n$$\n\nNote that this time update is a fully differentiable function of the rates $r_{i}$.\n\nIn order to determine which of the reactions $i^{\u2032}$ occurs after a time $\\tau$, we note that probability that reaction $i$ occurs is simply given by $q_{i}=r_{i}/R$. Thus, we can simply draw another random number $u^{\u2032}$ and choose $i^{\u2032}$ such that $i^{\u2032}$ equals the smallest integer satisfying\n\n$$\n\\sumi=1i^{\u2032}r_{i}/R>u^{\u2032}.\n$$\n\nThe reaction abundances $x$ are then updated using the stoichiometric matrix\n\n$$\nx_{\\alpha}\u2192x_{\\alpha}+S_{i^{\u2032}\\alpha}.\n$$\n\nUnlike the time update, both the choice of the reaction $i^{\u2032}$ and the abundance updates are not differentiable since the choice of the reaction $i^{\u2032}$ is a discontinuous function of the parameters $r_{i}$.\n\n### Approximating updates in the Gillespie with differentiable functions\n\nIn order to make use of modern deep learning techniques and modern automatic differentiation packages, it is necessary to modify the Gillespie algorithm in such as way as to make the choice of reaction index (Equation 2) and abundance updates (Equation 3) differentiable functions of the kinetic parameters. To do so, we rewrite Equation 2 using a sum of Heaviside step function $\u0398(y)$ (recall $\u0398(y)=0$ if $y<0$ and $\u0398(y)=1$ if $y>0)$:\n\n$$\ni^{\u2032}=1+\\sumi=1N\u22121\u0398(u^{\u2032}\u2212\\frac{r_{i}}{R})\n$$\n\nThis formulation of index selection makes clear the source of non-differentiability. The derivative of the $i^{\u2032}$ with respect to $r_{i}$ does not exist at the transition points where the Heaviside function jumps (see Figure 1b).\n\nThis suggests a natural modification of the Gillespie algorithm to make it differentiable \u2013 replacing the Heaviside function $\u0398(y)$ by a sigmoid function of the form\n\n$$\n\\sigma(y)=\\frac{1}{1+e^{\u2212\\frac{y}{a}}}\n$$\n\nwhere we have introduced a \u2018hyper-parameter\u2019 $a$ that controls the steepness of the sigmoid and plays an analogous role to temperature in a Fermi function in statistical mechanics. A larger value of $a^{\u22121}$ results in a steeper slope for the sigmoid functions, thereby more closely approximating the true Heaviside functions which is recovered in the limit $a\u21920$ (see Figure 1b). With this replacement, the index selection equation becomes\n\n$$\ni^{\u2032}=1+\\sumi=1N\u22121\\sigma(\\frac{1}{a}(u^{\u2032}\u2212\\frac{r_{i}}{R}))\n$$\n\nNote that in making this approximation, our index is no longer an integer, but instead can take on all real values between 0 and $N$. However, by making $a$ sufficiently small, Equation 6 still serves as a good approximation to the discrete jumps in Equation 4. In general, $a$ is a hyperparameter that is chosen to be as small as possible while still ensuring that the gradient of $i^{\u2032}$ with respect to the kinetic parameters $r_{i}$ can be calculated numerically with high accuracy. For a detailed discussion, please see Appendix 1\u2014figure 1 and Appendix 1.\n\nSince the index $i^{\u2032}$ is no longer an integer but a real number, we must also modify the abundance update in Equation 3 to make it fully differentiable. To do this, we start by rewriting Equation 3 using the Kronecker delta $\\delta_{ij}$ (where $\\delta_{ij}=1$ if $i=j$ and $\\delta_{ij}=0$ if $i\\neqj$) as\n\n$$\nx_{\\alpha}\u2192x_{\\alpha}+\\sumi=1N\\delta_{ii^{\u2032}}S_{i\\alpha}\n$$\n\nSince $i^{\u2032}$ is no longer an integer, we can approximate the Kronecker delta $\\delta_{ii^{\u2032}}$ by a Gaussian function, to arrive at the approximate update equation\n\n$$\nx_{\\alpha}\u2192x_{\\alpha}+\\sumi=1Ne^{\u2212\\frac{1}{b}(i^{\u2032}\u2212i)^{2}}S_{i\\alpha}.\n$$\n\nThe hyperparameter $b$ is generally chosen to be as small as possible while still ensuring numerical stability of gradients (Appendix 1\u2014figure 1). Note by using an abundance update of the form Equation 8, the species abundances $x$ are now real numbers. This is in stark contrast with the exact Gillespie algorithm where the abundance update (Equation 7) ensures that the $x_{\\alpha}$ are all integers.\n\n### Combining the DGA with gradient-based optimization\n\nThe goal of making Gillespie simulations differentiable is to enable the computation of the gradient of a loss function, $L(\\theta)$, with respect to the kinetics parameters $\\theta$. A loss function quantifies the difference between simulated and desired values for quantities of interest. For example, when employing the DGA in the context of fitting noisy gene expression models, a natural choice for $L(\\theta)$ is the difference between the simulated and experimentally measured moments of mRNA/protein expression (or alternatively, the Kullback\u2013Leibler divergence between the experimental and simulated mRNA/protein expression distributions if full distributions can be measured). When using the DGA to design gene circuits, the loss function can be any function that characterizes the difference between the simulated and desired values of the input\u2013output relation.\n\nThe goal of the optimization using the DGA is to find parameters $\\theta$ that minimize the loss. The basic workflow of a DGA-based optimization is shown in Figure 2. One starts with an initial guess for the parameters $\\theta_{0}$. One then uses DGA algorithm to simulate the systems and calculate the gradient of the loss function $\u2207_{\\theta}L(\\theta)$. One then updates the parameters, moving in the direction of the gradient using gradient descent or more advanced methods such as ADAM (Kingma and Ba, 2014; Mehta et al., 2019), which uses adaptive estimates of the first and second moments of the gradients to speed up convergence to a local minimum of the loss function.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig2-v1.jpg)\n\n**Figure 2.:** The process begins by initializing the parameters $\\theta\u2192=\\theta_{0}\u2192$. Simulations are then run using the DGA to obtain statistics ${S_{i}(\\theta\u2192)}$ like moments. These statistics are used to compute the loss $L({S_{i}})$, and the gradient of the loss $\u2207L$ is obtained. Finally, parameters are updated using the ADAM optimizer, and the process iterates to minimize the loss.\n\n### The price of differentiability\n\nA summary of the DGA is shown in Figure 1. Unsurprisingly, differentiability comes at a price. The foremost of these is that unlike the Gillespie algorithm, the DGA is no longer exact. The DGA replaces the exact discrete stochastic system by an approximate differentiable stochastic system. This is done by allowing both the reaction index and the species abundances to be continuous numbers. Though in theory, the errors introduced by these approximations can be made arbitrarily small by choosing the hyper-parameters $a$ and $b$ small enough (see Figure 1), in practice, gradients become numerically unstable when $a$ and $b$ are sufficiently small (see Appendix 1 and Appendix 1\u2014figure 1).\n\nIn what follows, we focus almost exclusively on steady-state properties that probe the \u2018bulk\u2019, steady-state properties of the stochastic system of interest. We find the DGA works well in this setting. However, we note that the effect of the approximations introduced by the DGA may be pronounced in more complex settings such as the calculation of rare events, modeling of tail-driven processes, or dealing with non-stationary time series.\n\nIn order to better understand the DGA in the context of stochastic gene expression, we benchmarked the DGA on a simple two-state promoter model inspired by experiments in Escherichia coli (Jones et al., 2014). This simple model had several advantages that make it well suited for exploring the performance of DGA. These include the ability to analytically calculate mRNA expression distributions and independent experimental measurements of kinetic parameters.\n\n### Two-state promoter model\n\nGene regulation is tightly regulated at the transcriptional level to ensure that genes are expressed at the right time, place, and in the right amount (Phillips et al., 2012). Transcriptional regulation involves various mechanisms, including the binding of transcription factors to specific DNA sequences, the modification of chromatin structure, and the influence of non-coding RNAs, which collectively control the initiation and rate of transcription (Phillips et al., 2012; Sanchez et al., 2013; Phillips et al., 2019). By orchestrating these regulatory mechanisms, cells can respond to internal signals and external environmental changes, maintaining homeostasis and enabling proper development and function.\n\nHere, we focus on a classic two-state promoter gene regulation (Jones et al., 2014). Two-state promoter systems are commonly studied because they provide a simplified yet powerful model for understanding gene regulation dynamics. These systems, characterized by promoters toggling between active and inactive states, offer insights into how genes are turned on or off in response to various stimuli (see Figure 3a). The two-state gene regulation circuit involves the promoter region, where RNA polymerase (RNAP) binds to initiate transcription and synthesize mRNA molecules at a rate $r$. A repressor protein can also bind to the operator site at a rate $k_{on}^{R}$ and unbind at a rate $k_{off}^{R}$. When the repressor is bound to the operator, it prevents RNAP from accessing the promoter, effectively turning off transcription. mRNA is also degraded at a rate $\\gamma$. An appealing feature of this model is that both mean mRNA expression and the Fano factor can be calculated analytically and there exist beautiful quantitative measurements of both these quantities (Figure 3b). For this reason, we use this two-state promoters to benchmark the efficacy of DGA below.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic of gene regulatory circuit for transcriptional repression. RNA polymerase (RNAP) binds to the promoter region to initiate transcription at a rate $r$, leading to the synthesis of mRNA molecules (red curvy lines). mRNA is degraded at a rate $\\gamma$. A repressor protein can bind to the operator site, with association and dissociation rates $k_{on}^{R}$ and $k_{off}^{R}$, respectively. (b) Experimental data from Phillips et al., 2019, showing the relationship between the mean mRNA level and the Fano factor for two different promoter constructs: lacUD5 (green squares) and 5DL1 (red squares).\n\n### Characterizing errors due to approximations in the DGA\n\nWe begin by testing the DGA to do forward simulations on the two-state promoter system described above and comparing the results to simulations performed with the exact Gillespie algorithm (see Appendix 2 for simulation details). Figure 4a compares the probability distribution function (PDF) for the steady-state mRNA levels obtained from the DGA (in red) and the exact Gillespie simulation (in blue). The close overlap of these distributions demonstrates that the DGA can accurately replicate the results of the exact Gillespie simulation. This is also shown by the very close match of the first four moments $\u27e8m^{n}\u27e9$ of the mRNA count between the exact Gillespie and the DGA in Figure 4b, though the DGA systematically overestimates these moments. As observed in Figure 4a, the DGA also fails to accurately capture the tails of the underlying PDF. This discrepancy arises because rare events result from very frequent low-probability reaction events where the sigmoid approximation used in the DGA significantly impacts the reaction selection process and, consequently, the final simulation results.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig4-v1.jpg)\n\n**Figure 4.:** Comparison between the DGA and exact simulations for (a) steady-state mRNA distribution, (b) moments of the steady-state mRNA distribution, and (d) the probability for the promoter to be in the \u2018ON\u2019 or \u2018OFF\u2019 state. (c) Ratio of the Jensen\u2013Shannon divergence $JSD(p_{DGA}||p_{exact}^{ss})$ between the differentiable Gillespie probability distribution function (PDF) $p_{DGA}$ and the exact steady-state PDF $p_{exact}^{ss}$, and the Shannon entropy $H(p_{exact}^{ss})$ of the exact steady-state PDF. In all of the plots, 2000 trajectories are used. The simulation time used in panels (a), (b), and (d) is marked by blue \u2018x\u2019. Parameter values: $k_{on}^{R}=0.5$, $k_{off}^{R}=1.0$, $r=10$, $\\gamma=1$, $1/a=200$, and $1/b=20$.\n\nNext, we compare the accuracy of the DGA in simulating mRNA abundance distributions across a range of simulation times (see Figure 4c). The accuracy is quantified by the ratio of the Jensen\u2013Shannon divergence $JSD(p_{DGA}||p_{exact}^{ss})$ between the differentiable Gillespie PDF $p_{DGA}$ and the exact steady-state PDF $p_{exact}^{ss}$, and the entropy $H(p_{exact}^{ss})$ of the exact steady-state PDF. For probability distributions $P$ and $Q$ over the same discrete space $X$, the JSD and H are defined as:\n\n$$\nJSD(P\u2225Q)=\\frac{1}{2}D_{KL}(P\u2225M)+\\frac{1}{2}D_{KL}(Q\u2225M)H(P)=\u2212\\sumx\\inXP(x)log\u2061P(x)\n$$\n\nwhere $M=\\frac{1}{2}(P+Q)$ and $D_{KL}$ denotes the Kullback\u2013Leibler divergence\n\n$$\nD_{KL}(P\u2225Q)=\\sumx\\inXP(x)log\u2061\\frac{P(x)}{Q(x)}\n$$\n\nThe ratio $\\frac{JSD}{H}$ normalizes divergence by entropy, enabling meaningful comparison across systems. As expected, the $\\frac{JSD}{H}$ ratio decreases with increasing simulation time, indicating convergence toward the steady-state distribution of the exact Gillespie simulation. By \u2018steady-state distribution\u2019, we mean the long-term probability distribution of states that the exact Gillespie algorithm approaches after a simulation time of 104. The saturation of the $\\frac{JSD}{H}$ ratio at approximately 0.003 for long simulation times is due to the finite values of $a^{\u22121}$ and $b^{\u22121}$. In percentage terms, this ratio represents a 0.3% divergence, meaning that the DGA\u2019s approximation introduces only a 0.3% deviation from the exact distribution, relative to the total uncertainty (entropy) in the exact system.\n\nFinally, the bar plot in Figure 4d shows simulation results for the probability of the promoter being in the \u2018OFF\u2019 and \u2018ON\u2019 states as predicted by the DGA (in red) and the exact Gillespie simulation (in blue). The differentiable Gillespie overestimates the probability of being in the \u2018OFF\u2019 state and underestimates the probability of being in the \u2018ON\u2019 state. Nonetheless, given the discrete nature of this system, the DGA does a reasonable job of matching the results of the exact simulations.\n\nAs we will see below, despite these errors the DGA is able to accurately capture gradient information and hence works remarkably well at gradient-based optimization of loss functions.\n\n### Parameter estimation using the DGA\n\nIn many applications, one often wants to estimate kinetic parameters from experimental measurements of a stochastic system (Tian et al., 2007; Munsky et al., 2009; Komorowski et al., 2009; Villaverde et al., 2019). For example, in the context of gene expression, biologists are often interested in understanding biophysical parameters such as the rate at which promoters switch between states or a transcription factor unbinds from DNA. However, estimating kinetic parameters in stochastic systems poses numerous challenges because the vast majority of methods for parameter estimation are designed with deterministic systems in mind. Moreover, it is often difficult to analytically calculate likelihood functions making it difficult to perform statistical inference. One attractive method for addressing these difficulties is to combine differentiable Gillespie simulations with gradient-based optimization methods. By choosing kinetic parameters that minimize the difference between simulations and experiments as measured by a loss function, one can quickly and efficiently estimate kinetic parameters and error bars.\n\n### Loss function for parameter estimation\n\nTo use the DGA for parameter estimation, we start by defining a loss function $L(\\theta)$ that measures the discrepancy between simulations and experiments. In the context of the two-state promoter model (Figure 3), a natural choice of loss function is the square error between the simulated and experimentally measured mean and standard deviations of the steady-state mRNA distributions:\n\n$$\nL(\\theta)=(\u27e8m\u27e9^\u2212\u27e8m\u27e9)^{2}+(\\sigma^_{m}\u2212\\sigma_{m})^{2},\n$$\n\nwhere $\u27e8m\u27e9^$ and $\\sigma^_{m}$ denote the mean and standard deviation obtained from DGA simulations, and $\u27e8m\u27e9$ and $\\sigma_{m}$ are the experimentally measured values of the same quantities. Having specified the loss function and parameters, we then use the gradient-based optimization to minimize the loss and find the optimal parameters $\\theta^$ (see Figure 2). Note that in general the solution to the optimization problem need not be unique (see below).\n\n### Confidence intervals and visualizing loss landscapes\n\nGiven a set of learned parameters $\\theta^$ that minimize $L(\\theta)$, one would also ideally like to assign a confidence interval (CI) to this estimate that reflect how constrained these parameters are. One natural way to achieve this is by examining the curvature of the loss function as the parameter $\\theta_{i}$ varies around its minimum value, $\\theta_{i}^{min}$. Motivated by this, we define the 95% CIs for parameter $\\theta_{i}$ by:\n\n$$\nCI_{\\theta_{i}}=[\\theta_{i}^{min}\u2212\\delta,\\theta_{i}^{min}+1.96\\delta_{\\theta_{i}}]\n$$\n\nwhere\n\n$$\n\\delta_{\\theta_{i}}=(\\sqrt{\\frac{\u2202^{2}L}{\u2202\\theta_{i}^{2}}})^{\u22121}|_{\\theta_{i}=\\theta_{i}^{min}}\n$$\n\nand $L(\\theta_{i}^{min}\u2212\\delta)=L(\\theta_{i}^{min}+1.96\\delta_{\\theta_{i}})$. A detailed explanation of how to numerically estimate the CIs is given in Appendix 3.\n\nOne shortcoming of Equation 13 is that it treats each parameter in isolation and ignores correlations between parameters. On a technical level, this is reflected in the observation that the CIs only know about the diagonal elements of the full Hessian $\u2202_{ij}^{2}L(\\theta)$. This shortcoming is especially glaring when there are many sets of parameters that all optimize the loss function (Einav et al., 2018; Razo-Mejia et al., 2018). As discuss below, this is often the case in many stochastic systems including the two-state promoter architecture in Figure 3. For this reason, it is often useful to make two dimensional plots of the loss function $L(\\theta)$. To do so, for each pair of parameters, we simply sample the parameters around their optimal value and forward simulate to calculate the loss function $L(\\theta)$. We then use this simulations to create two-dimensional heat maps of the loss function. This allows us to identify \u2018soft directions\u2019 in parameter space, where the loss function $L(\\theta)$ changes slowly, indicating weak sensitivity to specific parameter combinations.\n\n### Parameter estimation on synthetic data\n\nBefore proceeding to experiments, we start by benchmarking the DGA\u2019s ability to perform parameter estimation on synthetic data generated using the two-state promoter model shown in Figure 3. This model nominally has four independent kinetic parameters: the rate at which repressors bind the promoter, $k_{on}^{R}$; the rate at which the repressor unbinds from the promoter, $k_{off}^{R}$; the rate at which mRNA is produced, $r$; and the rate at which mRNA degrades, $\\gamma$. Since we are only concerned with steady-state properties of the mRNA distribution, we choose to measure time in units of the off rate and set $k_{off}^{R}=1$ in everything that follows. In Appendix 4, we make use of exact analytical results for $\u27e8m\u27e9$ and $\\sigma_{m}$ to show that the solution to the optimization problem specified by loss function in Equation 11 is degenerate \u2013 there are many combinations of the three parameters ${k_{on}^{R},r,\\gamma}$ that all optimize $L(\\theta)$. On the other hand, if one fixes the mRNA degradation rate $\\gamma$, this degeneracy is lifted and there is a unique solution to the optimization problem for the two parameters ${k_{on}^{R},r}$. We discuss both these cases below.\n\n### Generating synthetic data\n\nTo generate synthetic data, we randomly sample the three parameters: $k_{on}^{R}$, $r$, and $\\gamma$ within the range $[0.1,10]$, while keeping $k_{off}^{R}$ fixed at 1. In total, we generate 20 different sets of random parameters. We then perform exact Gillespie simulations for each set of parameters. Using these simulations, we obtain the mean $\u27e8m\u27e9$ and standard deviation $\\sigma_{m}$ of the mRNA levels, which are then used as input to the loss function in Equation 11. We then use the DGA to estimate the parameters using the procedure outlined above and compare the resulting predictions with ground truth values for simulations.\n\n### Estimating parameters in the non-degenerate case\n\nWe begin by considering the case where the mRNA degradation rate $\\gamma$ is known and the goal is to estimate the two other parameters: the repressor binding rate $k_{on}^{R}$ and the mRNA production rate $r$. As discussed above, in this case, the loss function in Equation 11 has a unique minima, considerably simplifying the inference task. Figure 5a shows a scatter plot of the learned and the true parameter values for wide variety of choices of $\\gamma$. As can be seen, there is very good agreement between the true parameters and learned parameters. Figure 5c shows that even when the true and learned parameters differ, the DGA can predict the mean $\u27e8m\u27e9$ and standard deviation $\\sigma_{m}$ of the steady-state mRNA distribution almost perfectly (see Appendix 5 for discussion of how error bars were estimated). To better understand this, we selected a set of learned parameters: $k_{on}^{R}=0.87$, $r=3.83$, and $\\gamma=2.43$. We then plotted the loss function in the neighborhood of these parameters (Figure 5b). As can be seen, the loss function around the true parameters is quite flat and the learned parameters live at the edge of this flat region. The flatness of the loss function reflects the fact that the mean and standard deviation of the mRNA distribution depend weakly on the kinetic parameters.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig5-v1.jpg)\n\n**Figure 5.:** Parameters $k_{off}^{R}$ are fixed at 1, with $1/a=200$ and $1/b=20$ for a simulation time of 10. (a) Scatter plot of true versus inferred parameters ($k^_{on}^{R}$ and $r^$) with $\\gamma$ constant. Error bars are 95% confidence intervals (CIs). Panel (b) plots the logarithm of the loss function near a learned parameter set (shown in red circles in (a)), showing insensitivity regions. Panel (c) compares true and predicted mRNA mean and standard deviation with 95% CIs.\n\n### Estimating parameters for the degenerate case\n\nWe now estimate parameters for the two-state promoter model when all three parameters $k_{on}^{R}$, $r$, and $\\gamma$ are unknown. As discussed above, in this case, there are many sets of parameters that all minimize the loss function in Equation 11. Figure 6a shows a comparison between the learned and true parameters along with a heat map of the loss function for one set of synthetic parameters (Figure 6b). As can be seen in the plots, though the true parameters and learned parameter values differ significantly, they do so along \u2018sloppy\u2019 directions where loss function is flat. Consistent with this intuition, we performed simulations comparing the mean $\u27e8m\u27e9^$ and standard deviation $\\sigma^_{m}$ of the steady-state mRNA levels using the true and learned parameters and found near-perfect agreement across all of the synthetic data (Figure 6c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig6-v1.jpg)\n\n**Figure 6.:** Parameters $k_{off}^{R}$ are fixed at 1, with $1/a=200$ and $1/b=20$ for a simulation time of 10. (a) Scatter plot of true versus inferred parameters ($k^_{on}^{R}$, $r^$, and $\\gamma$). Error bars are 95% confidence intervals (CIs). Panel (b) plots the logarithm of the loss function near a learned parameter set (shown in red circles in (a)), showing insensitivity regions. Panel (c) compares true and predicted mRNA mean and standard deviation with 95% CIs.\n\n### Parameter estimation on experimental data\n\nIn the previous section, we demonstrated that our DGA can effectively obtain parameters for synthetic data. However, real experimental data often contains noise and variability, which can complicate the parameter estimation process. To test the DGA in this more difficult setting, we reanalyze experiments by Jones et al., 2014 which measured how mRNA expression changes in a system well described by the two-state gene expression model in Figure 3. In these experiments, two constitutive promoters lacUD5 and 5DL1 (with different transcription rates $r$) were placed under the control of a LacI repressor through the insertion of a LacI binding site. By systematically varying LacI concentrations, the authors were able to adjust the repressor binding rate $k_{on}^{R}$. mRNA fluorescence in situ hybridization was employed to measure mRNA expression, providing data on both mean expression levels $\u27e8m\u27e9$ and the variability as quantified by the Fano factor $f=\\sigma_{m}^{2}/\u27e8m\u27e9$ for both promoters (see Figure 3b).\n\nGiven a set of measurements of the mean and Fano factor ${\u27e8m\u27e9_{i},f_{i}^{m}}$ for a promoter (lacUD5 and 5DL1), we construct a loss function of the form:\n\n$$\nL=\\sumi=1N(\u27e8m\u27e9_{i}^\u2212\u27e8m\u27e9_{i})^{2}+\\sumi=1N(\\sigma^_{i}^{m}\u2212\\sqrt{f_{i}^{m}\u27e8m\u27e9_{i}})^{2},\n$$\n\nwhere $i$ runs over data points (each with a different lac repressor concentration) and $\u27e8m\u27e9_{i}^$ and $\\sigma^_{i}^{m}$ are the mean and standard deviation obtained from a sample of DGA simulations. This loss function is chosen because, at its minimum, $\u27e8m\u27e9_{i}^=\u27e8m\u27e9_{i}$ and $\\sigma^_{i}^{m}=\\sqrt{f_{i}^{m}\u27e8m\u27e9_{i}}$ for all $i$. As above, we set $k_{off}^{R}=1$, and focus on estimating the other three parameters ${r,\\gamma,k_{on}^{R}}$. When performing our gradient-based optimization, we assume that the transcription rate $r$ and the mRNA degradation rate $\\gamma$ are the same for all data points $i$, while allowing $k_{on}^{R}$ to vary across data points $i$. This reflects the fact that $k_{on}^{R}$ is a function of the lac repressor concentration which, by design, is varied across data points (see Appendix 6 for details on how this optimization is implemented and calculation of error bars).\n\nThe results of this procedure are summarized in Figure 7. We find that for the lacUD5 promoter $r^=90.25$, $\\gamma^=6.20$ and that $k^_{on}^{R}$ varies from a minimum value of 0.18 to a maximum value of 99.0. For the 5DL1 promoters $r^=87.48$ and $\\gamma^=9.80$ and $k^_{on}^{R}$ varies between 3.64 and 99.0. Recall that we have normalized all rates to the repressor unbinding rate $k_{off}^{R}=1$. These values indicate that mRNA transcription occurs much faster compared to the unbinding of the repressor, suggesting that once the promoter is in an active state, it produces mRNA rapidly. The relatively high mRNA degradation rates indicate a mechanism for fine-tuning gene expression levels, ensuring that mRNA does not persist too long in the cell, which could otherwise lead to prolonged expression even after promoter deactivation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig7-v1.jpg)\n\n**Figure 7.:** (a) Comparison between theoretical predictions from the DGA (solid curves) and experimental values of mean and the Fano factor for the steady-state mRNA levels are represented by square markers, along with the error bars, for two different promoters, lacUD5 and 5DL1. Solid curves are generated by using DGA to estimate $r^$, $\\gamma^$, and ${k^_{on}^{R}}$ and using this as input to exact analytical formulas. (b) Comparison between the inferred values of $\\frac{r^}{\\gamma^}$ using DGA with experimentally measured values of this parameter from Jones et al., 2014. (c) Inferred $k^_{on}^{R}$ values as a function of the mean mRNA level.\n\nAs expected, the repressor binding rates decrease with the mean mRNA level (see Figure 7c). The broad range of repressor binding rates shows that the system can adjust its sensitivity to repressor concentration, allowing for both tight repression and rapid activation depending on the cellular context.\n\nFigure 7a shows a comparison between the predictions of the DGA (solid curves) and the experimental data (squares) for mean mRNA levels and the Fano factor . The theoretical curves are obtained by using analytical expression for and from Gillespie, 2007 with parameters estimated from the DGA. We find that for the lacUD5 and the 5DL1 promoters, the mean percentage errors for predictions of the Fano factor are 25% and 28%, respectively (see Appendix 6).\n\nAn appealing feature of Jones et al., 2014 is that the authors performed independent experiments to directly measure the normalized transcription rate $r/\\gamma$ (namely the ratio of the transcription rate and the mRNA degradation rate). This allows us to compare the DGA predictions for these parameters to ground truth measurements of kinetic parameters. In Figure 7b, the predictions of the DGA agree remarkably well for both the lacUD5 and 5DL1 promoters.\n\n### Designing gene regulatory circuits with desired behaviors\n\nAnother interesting application of the DGA is to design stochastic chemical or biological networks that exhibit a particular behavior. In many cases, this design problem can be reformulated as identifying choices of parameter that give rise to a desired behavior. Here, we show that the DGA is ideally suited for such a task. We focus on designing the input\u2013output relation of a four state promoter model of gene regulation (Lammers et al., 2023). We have chosen this more complex promoter architecture because, unlike the two-state promoter model analyzed above, it allows for nonequilibrium currents. In making this choice, we are inspired by numerous recent works have investigated how cells can tune kinetic parameters to operate out of equilibrium in order to achieve increased sharpness/sensitivity (Nicholson and Gingrich, 2023Lammers et al., 2023; Zoller et al., 2022; Wong and Gunawardena, 2020; Dixit et al., 2024).\n\n### Model of nonequilibrium promoter\n\nWe focus on designing the steady-state input\u2013output relationship of the four-state promoter model of gene regulation model shown in Figure 8a; Lammers et al., 2023. The locus can be in either an \u2018ON\u2019 state where mRNA is transcribed at a rate $r$ or an \u2018OFF\u2019 state where the locus is closed and there is no transcription. In addition, a transcription factor (assumed to be an activator) with concentration $[c]$ can bind to the locus with a concentration dependent rate $[c]k_{b}$ in the \u2018OFF\u2019 state and a rate $[c]\u03b7_{ba}k_{b}$ in the \u2018ON\u2019 rate. The activator can also unbind at a rate $k_{u}$ in the \u2018OFF\u2019 state and a rate $\u03b7_{ua}k_{u}$ in the \u2018ON\u2019 state. The average mRNA production rate (averaged over many samples) in this model is given by\n\n$$\n\u27e8r\u00af\u27e9=r(\\pi_{2}+\\pi_{3})\n$$\n\nwhere $\\pi_{s}$ ($s=2,3$) is the steady-state probability of finding the system in each of the \u2018ON\u2019 states (see Figure 8a).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/103877/elife-103877-fig8-v1.jpg)\n\n**Figure 8.:** (a) Schematic of four-state promoter model. (b) Target input\u2013output relationships (solid curves) and learned input\u2013output relationships (blue dots) between activator concentration $[c]$ and average mRNA production rate. (c) Parameters learned by DGA for the two responses in (b). (d) The sharpness of the response $\\frac{d\u27e8r\u00af\u27e9}{d[c]}[c]$, and the energy dissipated per unit time for two responses in (b). (e) Logarithm of the loss function for the learned parameter set for Response-2, revealing directions (or curves) of insensitivity in the model\u2019s parameter space. The red circles are the learned parameter values.\n\nSuch promoter architectures are often studied in the context of protein gradient-based development (Lammers et al., 2023; Estrada et al., 2016; Owen and Horowitz, 2023). One well-known example of such a gradient is the dorsal protein gradient in Drosophila, which plays a crucial role in determining the spatial boundaries of gene expression domains during early embryonic development. In this context, the sharpness of the response as a function of activator concentration is a critical aspect. High sharpness ensures that the transition between different gene expression domains occurs over a very narrow region, leading to well-defined and precise boundaries. Inspired by this, our objective is to determine the parameters such that the variation in $\u27e8r\u00af\u27e9$ as a function of the activator concentration $[c]$ follows a desired response. We consider the two target responses (shown in Figure 8b) of differing sharpness, which following Lammers et al., 2023 we quantify as $max(\\frac{\u2202\u27e8r\u00af\u27e9}{\u2202[c]}[c])$. For simplicity, we use sixth-degree polynomials to model the input\u2013output functions, with the x-axis plotted on a logarithmic scale. We note that our results do not depend on this choice and any other functional form works equally well.\n\n### Loss function\n\nIn order to use the DGA to learn a desired input\u2013output relation, we must specify a loss function that quantifies the discrepancy between the desired and actual responses of the promoter network. To construct such a loss function, we begin by discretizing the activator concentration into $N=10$ logarithmically spaced points, $[c]_{i}$, where $i=1,2,\u2026,N$. For each $[c]_{i}$, we denote the corresponding average mRNA production rate $\u27e8r\u00af\u27e9_{i}$ (see Equation 15). After discretization, the loss function is simply the square error between the desired response, $\u27e8r\u00af\u27e9_{i}$, and the current response, $\u27e8r\u00af^(\\theta)\u27e9_{i}$, of the circuit\n\n$$\nL=\\sumi=1N(\u27e8r\u00af^(\\theta)\u27e9_{i}\u2212\u27e8r\u00af\u27e9_{i})^{2},\n$$\n\nwhere $\u27e8r\u00af^(\\theta)\u27e9_{i}$ denotes the predicted average mRNA production rates obtained from the DGA simulations given the current parameters $\\theta$. To compute $\u27e8r\u00af^\u27e9_{i}$ for a concentration $[c]_{i}$, we perform $n=600$ DGA simulations (indexed by capital letters $A=1,\u2026,n$) using the DGA and use these simulations to calculate the fraction of time spent in transcriptionally active states (states $s=2$ and $s=3$ in Figure 8a). If we denote the fraction of time spent in state $s$ in simulation $A$ by $w_{s}^{A}$, then we can calculate the probability $\\pi_{s}$ of being in state $s$ by\n\n$$\n\\pi_{s}=\\frac{1}{n}\\sumA=1nw_{s}^{A}\n$$\n\nand use Equation 15 to calculate $\u27e8r\u00af^(\\theta)\u27e9_{i}$\n\nAs before, we optimize this loss using gradient descent (see Figure 2). We assume that the transcription rate $r$ is known (this just corresponds to an overall scaling of mRNA numbers). Since we are concerned only with steady-state properties, we fix the activator binding rate to a constant value, $k_{b}=0.02$. This is equivalent to measuring time in units of $k_{b}^{\u22121}$. We then use gradient descent to optimize the remaining seven parameters governing transitions between promoter states.\n\n### Assessing circuits found by the DGA\n\nFigure 8b shows a comparison between the desired and learned input\u2013output relations. This is good agreement between the learned and desired responses, showing that the DGA is able to design dose\u2013response curves with different sensitivities and maximal values. Figure 8c shows the learned parameters for both response curves. Notably, the degree of activation resulting from transcription factor binding, denoted by $\u03b7_{ab}$, is substantially higher for the sharper response (Response-2). In contrast, the influence on transcription factor binding due to activation, represented by $\u03b7_{ba}$, is reduced for the sharper response curve. Additionally, the unbinding rate $k_{u}$ is observed to be lower for the sharper response. However, it is essential to approach these findings with caution, as the parameters are highly interdependent. These interdependencies can be visualized by plotting the loss function around the optimized parameter values. Figure 8e shows two dimensional heat maps of the loss function for Response-2. There are seven free parameters, resulting in a total of 21 possible 2D slices of the loss function within the seven-dimensional loss landscape.\n\nThe most striking feature of these plots is the central role played by the parameters $\u03b7_{ab}$ and $\u03b7_{ua}$ which must both be high, suggesting that the sharpness in Response-2 may result from creating a high-flux nonequilibrium cycle through the four promoter states (see Figure 8a). This observation is consistent with recent works suggesting that creating such nonequilibrium kinetics represents a general design principle for engineering sharp responses (Lammers et al., 2023; Zoller et al., 2022; Wong and Gunawardena, 2020; Dixit et al., 2024). To better understand if this is indeed what is happening, we quantified the energy dissipation per unit time (power consumption), $\u03a6$, in the nonequilibrium circuit. The energetic cost of operating biochemical networks can be quantified using ideas from nonequilibrium thermodynamics using a generalized Ohm\u2019s law of the form (Lammers et al., 2023; Qian, 2007; Mehta and Schwab, 2012; Lan et al., 2012; Lang et al., 2014; Mehta et al., 2016)\n\n$$\n\u03a6=J\u0394\\mu\n$$\n\nwhere we have defined a nonequilibrium drive\n\n$$\n\u0394\\mu=ln\u2061(\\frac{\u03b7_{ab}\u03b7_{ua}}{\u03b7_{ib}\u03b7_{ba}})\n$$\n\nand the nonequilibrium flux\n\n$$\nJ=\\pi_{0}k_{b}[c]\u2212\\pi_{1}k_{u},\n$$\n\nwhere $\\pi_{0}$ and $\\pi_{1}$ are the probabilities of finding the system in state 0 and 1, respectively. Figure 8d shows a comparison between energy consumption and sharpness of the two learned circuits. Consistent with the results of Lammers et al., 2023, we find that the sharper response curve is achieved by consuming more energy.\n\n## Discussion\n\nIn this paper, we introduced a fully differentiable variant of the Gillespie algorithm, the DGA. By integrating differentiable components into the traditional Gillespie algorithm, the DGA facilitates the use of gradient-based optimization techniques, such as gradient descent, for parameter estimation and network design. The ability to smoothly approximate the discrete operations of the traditional Gillespie algorithm with continuous functions facilitates the computation of gradients via both forward- and reverse-mode automatic differentiation, foundational techniques in machine learning, and has the potential to significantly expand the utility of stochastic simulations. Our work demonstrates the efficacy of the DGA through various applications, including parameter learning and the design of simple gene regulatory networks.\n\nWe benchmarked the DGA\u2019s ability to accurately replicate the results of the exact Gillespie algorithm through simulations on a two-state promoter architecture. We found the DGA could accurately approximate the moments of the steady-state distribution and other major qualitative features. Unsurprisingly, it was less accurate at capturing information about the tails of distributions. We then demonstrated that the DGA could be accurately used for parameter estimation on both simulated and real experimental data. This capability to infer kinetic parameters from noisy experimental data underscores the robustness of the DGA, making it a potentially powerful computation tool for real-world applications in quantitative biology. Furthermore, we showcased the DGA\u2019s application in designing biological networks. Specifically, for a complex four-state promoter architecture, we learned parameters that enable the gene regulation network to produce desired input\u2013output relationships. This demonstrates how the DGA can be used to rapidly design complex biological systems with specific behaviors. We expect computational design of synthetic circuits with differentiable simulations to become an increasingly important tool in synthetic biology.\n\nThere remains much work still to be done. In this paper, we focused almost entirely on properties of the steady states. However, a powerful aspect of the traditional Gillespie algorithm is that it can be used to simulate dynamical trajectories. How to adopt the DGA to utilize dynamical data remains an extremely important open question. In addition, it will be interesting to see if the DGA can be adapted to understand the kinetic of rare events. It will also be interesting to compare the DGA with other recently developed approximation methods such as those based on tensor networks (Strand et al., 2022; Nicholson and Gingrich, 2023). Beyond the gene regulatory networks, extending the DGA to handle larger and more diverse datasets will be crucial for applications in epidemiology, evolution, ecology, and neuroscience. On a technical level, this may be facilitated by developing more sophisticated smoothing functions and adaptive algorithms to improve numerical stability and convergence.\n\nThe DGA could also be extended to stochastic spatial systems by incorporating reaction\u2013diffusion master equations or lattice-based models. Its differentiability may enable efficient optimization of spatially heterogeneous reaction parameters. However, such extensions may need to address computational scalability and stability in high-dimensional spaces, especially in processes such as diffusion-driven pattern formation or spatial gene regulation.\n\n## Materials and methods\n\nA detailed explanation of how the DGA is implemented using PyTorch is given in the Appendix. In addition, all code for the DGA is available on Github at our Github repository https://github.com/Emergent-Behaviors-in-Biology/Differentiable-Gillespie-Algorithm (copy archived at Rijal, 2025).\n",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne-Florence Bitbol, Ecole Polytechnique Federale de Lausanne (EPFL) Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.103877.3.sa0](https://doi.org/10.7554/eLife.103877.3.sa0)\n\nThis important study introduces a fully differentiable variant of the Gillespie algorithm as an approximate stochastic simulation scheme for complex chemical reaction networks, allowing kinetic parameters to be inferred from empirical measurements of network outputs using gradient descent. The concept and algorithm design are convincing and innovative. While the proofs of concept are promising, some questions are left open about implications for more complex systems that cannot be addressed by existing methods. This work has the potential to be of significant interest to a broad audience of quantitative and synthetic biologists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103877.3.sa1](https://doi.org/10.7554/eLife.103877.3.sa1)\n\nSummary:\n\nThis work introduces the differentiable Gillespie algorithm, DGA, which is a differentiable variant of the celebrated (and exact) Gillespie algorithm commonly used to perform stochastic simulations across numerous fields, notably in the life sciences. The proposed DGA approximates the exact Gillespie algorithm using smooth functions yielding a suitable approximate differentiable stochastic system as a proxy for the underlying discrete stochastic system, where DGA stochastic reactions have continuous reaction index and the species abundances. To illustrate their methodology, the authors specifically consider in detail the case of a well-studied two-state promoter gene regulation system that they analyze using a machine learning approach, and by combining simulation data with analytical results. For the two-state promoter gene system, the DGA is benchmarked by accurately reproducing the results of the exact Gillespie algorithm. For this same simple system, the authors also show how the DGA can be used for estimating kinetic parameters of both simulated and real noisy experimental data. This lets them argue convincingly that the DGA can become a powerful computation tool for applications in quantitative and synthetic biology. In order to argue that the DGA can be employed to design circuits with ad-hoc input-output relations, these considerations are then extended to a more complex four-state promoter model of gene regulation. The main strength of the paper is its clarity and its pedagogical presentation of the simulation methods.\n\nStrengths:\n\nThe main strength of the paper is its clarity and its pedagogical presentation of the simulation methods.\n\nWeaknesses:\n\nIt would have been useful to have a brief discussion, based on a concrete example, of what can be achieved with the DGA and is totally beyond the reach of the Gillespie algorithm and the numerous existing stochastic simulation methods. A more comprehensive and quantitative analysis of the limitations of the DGA, e.g. for rare events, and how it might be used for stochastic spatial systems would have also been helpful. However, this is arguably beyond the scope of this study whose primary goal is to introduce the DGA and demonstrate that it can achieve tasks like parameter estimation and network design.\n\nComments on revisions:\n\nThe authors have made a sound effort to address many of the comments raised in the previous reports. This has helped improve the clarity of the discussion.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103877.3.sa2](https://doi.org/10.7554/eLife.103877.3.sa2)\n\nSummary:\n\nIn this work, the authors present a differentiable version of the widely-used Gillespie Algorithm. The Gillespie Algorithm has been used for decades to simulate the behavior of stochastic biochemical reaction networks. But while the Gillespie Algorithm is a powerful tool for the forward simulation of biochemical systems given some set of known reaction parameters, it cannot be used for reverse process, i.e. inferring reaction parameters given a set of measured system characteristics. The Differentiable Gillespie Algorithm (\"DGA\") overcomes this limitation by approximating two discontinuous steps in the Gillespie Algorithm with continuous functions. This makes it possible to calculate of gradients for each step in the simulation process which, in turn, allows the reaction parameters to be optimized via powerful backpropagation techniques. In addition to describing the theoretical underpinnings of DGA, the authors demonstrate different potential use-cases for the algorithm in the context of simple models of stochastic gene expression.\n\nOverall, the DGA represents an important conceptual step forward for the field and should lay the groundwork for exciting innovations in the analysis and design of stochastic reaction networks. At the same time, significantly more work is needed to establish when the approximations made by DGA are valid and to demonstrate the viability of the algorithm in the context of complicated reaction networks.\n\nStrengths:\n\nThis work makes an important conceptual leap by introducing a version of the Gillespie Algorithm that is end-to-end differentiable. This idea alone has the potential to drive a number of exciting innovations in the analysis, inference, and design of biochemical reaction networks. Beyond the theoretical adjustments, the authors also implement their algorithm in a Python-based codebase that combines DGA powerful optimization libraries like PyTorch. This codebase has the potential to be of interest to a wide range of researchers, even if the true scope of the method's applicability remains to be fully determined.\n\nThe authors also demonstrate how DGA can be used in practice both to infer reaction parameters from real experimental data (Figure 7) and to design networks with user-specified input-output characteristics (Figure 8). These illustrations should provide a nice roadmap for researchers interested in applying DGA to their own projects/systems.\n\nFinally, although it does not stem directly from DGA, the exploration of pairwise parameter dependencies in different network architectures provides an interesting window into the design constraints (or lack thereof) that shape the architecture of biochemical reaction networks.\n\nWeaknesses:\n\nWhile it is clear that the DGA represents an important conceptual advancement, the authors do not do enough in the present manuscript to (i) validate the robustness of DGA inference and (ii) demonstrate that DGA inference works in the kinds of complex biochemical networks where it would actually be of legitimate use.\n\nIt is to the authors' credit that they are open and explicit about the potential limitations of DGA due to breakdowns in its continuous approximations. However they do not provide the reader with nearly enough empirical (i.e. simulation-based) or theoretical context to assess when, why, and to what extent DGA will fail in different situations. In Figure 2, they compare DGA to GA (i.e. ground-truth) in the context of a simple two state model of a stochastic transcription. Even in this minimal system, we see that DGA deviates notably from ground-truth both in the simulated mRNA distributions (Figure 2A) and in the ON/OFF state occupancy (Figure 2C). This begs the question of how DGA will scale to more complicated systems, or systems with non-steady state dynamics. Will the deviations become more severe? This is important because, in practice, there is really not much need for using DGA with a simple 2 state system-we have analytic solutions for this case. It is the more complex systems where DGA has the potential to move the needle.\n\nA second concern is that the authors' present approach for parameter inference and error calculation does not seem to be reliable. For example, in Figure 5A, they show DGA inference results for the ON rate of a two-state system. We see substantial inference errors in this case, even though the inference problem should be non-degenerate in this case. One reason for this seems to be that the inference algorithm does not reliably find the global minimum of the loss function (Figure 2B). To turn DGA into a viable approach, it is paramount that the authors find some way to improve this behavior, perhaps by using multiple random initializations to better search the loss space.\n\nFinally, the authors do a good job of illustrating how DGA might be used to infer biological parameters (Figure 7) and design reaction networks with desired input-output characteristics (Figure 8). However, analytic solutions exist for both of the systems they select for examples. This means that, in practice, there would be no need for DGA in these contexts, since one could directly optimize, e.g., the expressions for the mean and Fano Factor of the system in Figure 7A. I still believe that it is useful to have these examples, but it seems critical to add a use-case where DGA is the only option.\n\nComments on revisions:\n\nI am concerned that the results in Figure 8D may not be correct, or that the authors may be mis-interpreting them. From my reading of the paper they cite (Lammers & Flamholz 2023), the equilibrium sharpness limit for the network they consider in Figure 8 should be 0.25. But both solutions shown in Figure 8D fall below this limit, which means that they have sharpness levels that could have been achieved with no energy expenditure. If this is the case, then it would imply that while both systems do dissipate energy, they are not doing so productively; meaning that the same results could be achieved while holding Phi=0.\n\nI acknowledge that this could be due to a difference in how they measure sharpness, but wanted to raise it here in case it is, in fact, a genuine issue with the analysis.\n\nThere should be an easy fix for this: just set the sharper \"desired response\" curve in 8b to be such that it demands non-equilibrium sharpness levels (0.25)\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.103877.3.sa3](https://doi.org/10.7554/eLife.103877.3.sa3)\n\nSummary:\n\nThis manuscript introduces a differentiable variant of the Gillespie algorithm (DGA) that allows gradient calculation using backpropagation. The most significant contribution of this work is the development of the DGA itself, a novel approach to making stochastic simulations differentiable. This is achieved by replacing discontinuous operations in the traditional Gillespie algorithm with smooth, differentiable approximations using sigmoid and Gaussian functions. This conceptual advance opens up new avenues for applying powerful gradient-based optimization techniques, prevalent in machine learning, to studying stochastic biological systems.\n\nThe method was tested on a simple two-state promoter model of gene expression. The authors found that the DGA accurately captured the moments of the steady-state distribution and other major qualitative features. However, it was less accurate at capturing information about the distribution's tails, potentially because rare events result from frequent low-probability reaction events where the approximations made by the DGA have a greater impact. The authors also used the DGA to design a four-state promoter model of gene regulation that exhibited a desired input-output relationship. The DGA could learn parameters that produced a sharper response curve, which was achieved by consuming more energy.\n\nThe authors conclude that the DGA is a powerful tool for analyzing and designing stochastic systems. The discussion lays several open questions in the field and constructively addresses shortcomings of the proposed method as well as potential ways forward.\n\nStrengths:\n\nThe DGA allows gradient-based optimization techniques to estimate parameters and design networks with desired properties.\n\nThe DGA efficacy in estimating kinetic parameters from both synthetic and experimental data. This capability highlights the DGA's potential to extract meaningful biophysical parameters from noisy biological data.\n\nThe DGA's ability to design a four-state promoter architecture exhibits a desired input-output relationship. This success indicates the potential of the DGA as a valuable tool for synthetic biology, enabling researchers to engineer biological circuits with predefined behaviours.\n\nWeaknesses:\n\nThe study primarily focuses on analysing the steady-state properties of stochastic systems.\n\nComments on revisions:\n\nThank you for addressing all the points raised. I am looking forward to seeing the next steps in DGAs development and performance!\n",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f798907d-cdd7-4052-ac78-8a566ca31ae5",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C1",
+      "claim": "The Gillespie algorithm is commonly used to simulate and analyze complex chemical reaction networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gillespie algorithm is commonly used to simulate and analyze complex chemical reaction networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about the Gillespie algorithm's usage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "4e26ae2f-6bf2-4350-b890-f5e14cff9197",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C2",
+      "claim": "The differentiable Gillespie algorithm (DGA) approximates discontinuous operations in the exact Gillespie algorithm using smooth functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The differentiable Gillespie algorithm (DGA) approximates discontinuous operations in the exact Gillespie algorithm using smooth functions, allowing for the calculation of gradients using backpropagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the core methodological claim stated in the abstract describing how the DGA works.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8b4cc819-2fa0-4c8d-bf2a-c1a03c01ddf9",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C3",
+      "claim": "The DGA allows for the calculation of gradients using backpropagation.",
+      "claim_type": "EXPLICIT",
+      "source": "The differentiable Gillespie algorithm (DGA) approximates discontinuous operations in the exact Gillespie algorithm using smooth functions, allowing for the calculation of gradients using backpropagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a direct consequence of the smooth function approximations in the DGA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "e5d9f6b0-318d-4a55-839b-a3718980c855",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C4",
+      "claim": "The DGA can be used to quickly and accurately learn kinetic parameters using gradient descent.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGA can be used to quickly and accurately learn kinetic parameters using gradient descent and design biochemical networks with desired properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the DGA in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "4e00b967-6780-4bab-874e-79edb2a101dc",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C5",
+      "claim": "The DGA can be used to design biochemical networks with desired properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGA can be used to quickly and accurately learn kinetic parameters using gradient descent and design biochemical networks with desired properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the DGA in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "6e6b8ee6-d998-4053-be5d-714eb3094e21",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C6",
+      "claim": "The DGA can successfully learn kinetic parameters from experimental measurements of mRNA expression levels from two distinct Escherichia coli promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the DGA can be used to: (1) successfully learn kinetic parameters from experimental measurements of mRNA expression levels from two distinct Escherichia coli promoters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated result in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "1e03a071-0241-4cef-b3f3-c0e56208e6bb",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C7",
+      "claim": "The DGA can design nonequilibrium promoter architectures with desired input\u2013output relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) design nonequilibrium promoter architectures with desired input\u2013output relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated result in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "451f3d47-9238-447e-a780-ef220590c121",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C8",
+      "claim": "Randomness is a defining feature of our world.",
+      "claim_type": "EXPLICIT",
+      "source": "Randomness is a defining feature of our world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement made in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a8442e7c-59ad-48d2-b976-c111e70b3f9e",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C9",
+      "claim": "Stock market fluctuations, the movement of particles in fluids, and the change of allele frequencies in organismal populations can all be described using the language of stochastic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Stock market fluctuations, the movement of particles in fluids, and even the change of allele frequencies in organismal populations can all be described using the language of stochastic processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as examples of stochastic processes in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "57830739-4879-451a-a85e-8de393fa4108",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C10",
+      "claim": "Disciplines as diverse as physics, biology, ecology, evolution, finance, and engineering have all developed tools to mathematically model stochastic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, disciplines as diverse as physics, biology, ecology, evolution, finance, and engineering have all developed tools to mathematically model stochastic processes (Van Kampen, 1992; Gardiner, 2009; Rolski et al., 2009; Wong and Hajek, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8cb3ab46-dcb2-4456-be6d-e0c81d38d906",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C11",
+      "claim": "An especially fruitful area of research has been the study of stochastic gene expression in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of biology, an especially fruitful area of research has been the study of stochastic gene expression in single cells (McAdams and Arkin, 1997; Elowitz et al., 2002; Raj and van Oudenaarden, 2008; Sanchez and Golding, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "bc513659-11fc-4c5d-aeaa-6f25c689fee6",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C12",
+      "claim": "The small number of molecules involved in gene expression make stochasticity an inherent feature of protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "The small number of molecules involved in gene expression make stochasticity an inherent feature of protein production and numerous mathematical and computational techniques have been developed to model gene expression and relate mathematical models to experimental observations (Paulsson, 2005; Wilkinson, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about gene expression with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "09861e0d-769f-4701-a76b-7f85c46ff8cc",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C13",
+      "claim": "The Gillespie algorithm is an extremely efficient computational technique used to simulate the time evolution of a system in which events occur randomly and discretely.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gillespie algorithm is an extremely efficient computational technique used to simulate the time evolution of a system in which events occur randomly and discretely (Gillespie, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of the Gillespie algorithm with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8016b81c-32a1-4386-a589-583cc72bbbde",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C14",
+      "claim": "The Gillespie algorithm is widely employed across numerous disciplines including epidemiology, ecology, neuroscience, and chemical kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond gene expression, the Gillespie algorithm is widely employed across numerous disciplines to model stochastic systems characterized by discrete, randomly occurring events including epidemiology (Pineda-Krch, 2008), ecology (Parker and Kamenev, 2009; Dobramysl et al., 2018), neuroscience (Benayoun et al., 2010; Rijal et al., 2024), and chemical kinetics (Gillespie, 1976; Gillespie, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature in multiple fields.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a0c4de88-f586-49a9-a317-6130f8bff0c3",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C15",
+      "claim": "The DGA modifies the traditional Gillespie algorithm to take advantage of powerful automatic differentiation libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGA modifies the traditional Gillespie algorithm to take advantage of powerful automatic differentiation libraries for example, PyTorch (Paszke et al., 2019), Jax (Bradbury et al., 2018), and Julia (Bezanson et al., 2017) and gradient-based optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the DGA with citations to the relevant libraries.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "e6be237e-64b4-4788-acb6-48795f94a894",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C16",
+      "claim": "The DGA allows us to quickly fit kinetic parameters to data and design discrete stochastic systems with a desired behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGA allows us to quickly fit kinetic parameters to data and design discrete stochastic systems with a desired behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the DGA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "4c03c355-7751-48f7-950a-6294fc51af76",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C17",
+      "claim": "In the traditional Gillespie algorithm both the selection of the index for the next reaction and the updates of chemical species are both discontinuous functions of the kinetic parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1, in the traditional Gillespie algorithm both the selection of the index for the next reaction and the updates of chemical species are both discontinuous functions of the kinetic parameters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a646b58d-c85b-46cb-8fe5-79254122b454",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C18",
+      "claim": "The DGA modifies the traditional Gillespie algorithm by approximating discrete operations with continuous, differentiable functions.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumnavigate these difficulties, the DGA modifies the traditional Gillespie algorithm by approximating discrete operations with continuous, differentiable functions, smoothing out abrupt transitions to facilitate gradient computation via automatic differentiation (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "044f2c37-7462-43a7-a871-05d6d673c3e7",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C19",
+      "claim": "The DGA preserves the core characteristics of the original Gillespie algorithm while enabling integration with modern deep learning techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "This significant modification preserves the core characteristics of the original algorithm while enabling integration with modern deep learning techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the DGA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "ed4895af-47f7-4abe-9c42-be13a4cd8953",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C20",
+      "claim": "Jones et al., 2014 independently measured the kinetic parameters for promoter architectures using orthogonal experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "An especially appealing aspect of Jones et al., 2014 is that the authors independently measured the kinetic parameters for these promoter architectures using orthogonal experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the Jones et al. 2014 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "5f699df1-35ce-49a0-bbf4-3d150bb04d92",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C33",
+      "claim": "The DGA is no longer exact, unlike the Gillespie algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The foremost of these is that unlike the Gillespie algorithm, the DGA is no longer exact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the DGA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "6937e148-262b-4d3d-99d8-aa6ee60d7d4d",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C34",
+      "claim": "The DGA replaces the exact discrete stochastic system by an approximate differentiable stochastic system.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGA replaces the exact discrete stochastic system by an approximate differentiable stochastic system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the approximations in the DGA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "f1547c3b-b39c-4924-9abd-07500f31f6e9",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C37",
+      "claim": "The effect of the approximations introduced by the DGA may be pronounced in complex settings such as the calculation of rare events, modeling of tail-driven processes, or dealing with non-stationary time series.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we note that the effect of the approximations introduced by the DGA may be pronounced in more complex settings such as the calculation of rare events, modeling of tail-driven processes, or dealing with non-stationary time series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential limitation of the DGA.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "fc723990-084d-40bd-aaf7-02aa412f0a74",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C38",
+      "claim": "The DGA can accurately replicate the results of the exact Gillespie simulation for steady-state mRNA distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4a compares the probability distribution function (PDF) for the steady-state mRNA levels obtained from the DGA (in red) and the exact Gillespie simulation (in blue). The close overlap of these distributions demonstrates that the DGA can accurately replicate the results of the exact Gillespie simulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the comparison shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a7179c18-7675-4183-9f55-9326bbfa59bc",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C40",
+      "claim": "The DGA fails to accurately capture the tails of the underlying PDF.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in Figure 4a, the DGA also fails to accurately capture the tails of the underlying PDF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "e6b85684-d0b0-4fc3-9d84-9265333f16b5",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C41",
+      "claim": "The discrepancy in capturing tails arises because rare events result from very frequent low-probability reaction events where the sigmoid approximation used in the DGA significantly impacts the reaction selection process.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy arises because rare events result from very frequent low-probability reaction events where the sigmoid approximation used in the DGA significantly impacts the reaction selection process and, consequently, the final simulation results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the tail discrepancy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "433edcc3-0578-4da1-b5b5-58e9707577df",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C44",
+      "claim": "The DGA's approximation introduces only a 0.3% deviation from the exact distribution, relative to the total uncertainty (entropy) in the exact system.",
+      "claim_type": "EXPLICIT",
+      "source": "In percentage terms, this ratio represents a 0.3% divergence, meaning that the DGA's approximation introduces only a 0.3% deviation from the exact distribution, relative to the total uncertainty (entropy) in the exact system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the JSD/H ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "aba619c2-2b23-4e25-a678-c11c2521387a",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C45",
+      "claim": "The differentiable Gillespie overestimates the probability of being in the 'OFF' state and underestimates the probability of being in the 'ON' state.",
+      "claim_type": "EXPLICIT",
+      "source": "The differentiable Gillespie overestimates the probability of being in the 'OFF' state and underestimates the probability of being in the 'ON' state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8c4598ad-2e26-4dd0-ac2c-d338c588e379",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C46",
+      "claim": "Despite errors, the DGA does a reasonable job of matching the results of the exact simulations for discrete systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, given the discrete nature of this system, the DGA does a reasonable job of matching the results of the exact simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an overall assessment of the DGA's performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "d9f0b6e2-e54d-4426-830e-31f45daa96af",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C47",
+      "claim": "Despite errors, the DGA is able to accurately capture gradient information and works remarkably well at gradient-based optimization of loss functions.",
+      "claim_type": "EXPLICIT",
+      "source": "As we will see below, despite these errors the DGA is able to accurately capture gradient information and hence works remarkably well at gradient-based optimization of loss functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding that will be demonstrated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a0d37af6-37ed-40bd-b653-90234d4b8fec",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C48",
+      "claim": "Two-state promoter systems are commonly studied because they provide a simplified yet powerful model for understanding gene regulation dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-state promoter systems are commonly studied because they provide a simplified yet powerful model for understanding gene regulation dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason for studying two-state promoters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "4714f505-8954-48f1-9762-d9089ddc48c4",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C49",
+      "claim": "For the two-state promoter model, both mean mRNA expression and the Fano factor can be calculated analytically.",
+      "claim_type": "EXPLICIT",
+      "source": "An appealing feature of this model is that both mean mRNA expression and the Fano factor can be calculated analytically and there exist beautiful quantitative measurements of both these quantities (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a property of the two-state promoter model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "67facc65-5229-475a-a869-152b2a760407",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C50",
+      "claim": "There exist quantitative measurements of mean mRNA expression and Fano factor for two-state promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "An appealing feature of this model is that both mean mRNA expression and the Fano factor can be calculated analytically and there exist beautiful quantitative measurements of both these quantities (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and shown in Figure 3b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "cca7b0a2-6413-452b-af7f-a70e6b8d7077",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C53",
+      "claim": "The loss function around the true parameters is quite flat.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, the loss function around the true parameters is quite flat and the learned parameters live at the edge of this flat region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5b and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "e2a3f40b-be8c-43d3-b4f9-7cfee0dc308e",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C54",
+      "claim": "The flatness of the loss function reflects the fact that the mean and standard deviation of the mRNA distribution depend weakly on the kinetic parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The flatness of the loss function reflects the fact that the mean and standard deviation of the mRNA distribution depend weakly on the kinetic parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the flat loss function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8bd70e86-caca-478e-83db-b747fc7fbd9f",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C55",
+      "claim": "When all three parameters k_on^R, r, and \u03b3 are unknown, there are many sets of parameters that all minimize the loss function.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed above, in this case, there are many sets of parameters that all minimize the loss function in Equation 11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the degenerate case.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "dc4f3ed4-6647-4bf7-b329-827ea2719f4b",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C56",
+      "claim": "Though the true parameters and learned parameter values differ significantly in the degenerate case, they do so along 'sloppy' directions where loss function is flat.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in the plots, though the true parameters and learned parameter values differ significantly, they do so along 'sloppy' directions where loss function is flat.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6b and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "2633f3b5-32d7-43b8-948d-13f05ee9bf32",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C58",
+      "claim": "Jones et al., 2014 measured how mRNA expression changes in a system well described by the two-state gene expression model.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the DGA in this more difficult setting, we reanalyze experiments by Jones et al., 2014 which measured how mRNA expression changes in a system well described by the two-state gene expression model in Figure 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the Jones et al. 2014 experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "1c702177-35d8-43ea-8bb0-a92d34e0eea3",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C66",
+      "claim": "The learned parameter values indicate that mRNA transcription occurs much faster compared to the unbinding of the repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "These values indicate that mRNA transcription occurs much faster compared to the unbinding of the repressor, suggesting that once the promoter is in an active state, it produces mRNA rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the learned parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "73d8348b-2056-4846-8610-8adaeff02598",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C67",
+      "claim": "The relatively high mRNA degradation rates indicate a mechanism for fine-tuning gene expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively high mRNA degradation rates indicate a mechanism for fine-tuning gene expression levels, ensuring that mRNA does not persist too long in the cell, which could otherwise lead to prolonged expression even after promoter deactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the learned parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "99410feb-1364-4dbd-9a7b-1b159f7f56c7",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C68",
+      "claim": "The repressor binding rates decrease with the mean mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the repressor binding rates decrease with the mean mRNA level (see Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7c and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "606d7924-11be-4490-994b-28e7e4409c98",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C69",
+      "claim": "For the lacUD5 promoter, the mean percentage error for predictions of the Fano factor is 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that for the lacUD5 and the 5DL1 promoters, the mean percentage errors for predictions of the Fano factor are 25% and 28%, respectively (see Appendix 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a quantification of the prediction error.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a1da0cfc-c7b8-429d-b583-8c3f43aa0272",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C70",
+      "claim": "For the 5DL1 promoter, the mean percentage error for predictions of the Fano factor is 28%.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that for the lacUD5 and the 5DL1 promoters, the mean percentage errors for predictions of the Fano factor are 25% and 28%, respectively (see Appendix 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a quantification of the prediction error.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "152057ba-94fc-446e-b3a5-dd6a951ec533",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C72",
+      "claim": "The predictions of the DGA for r/\u03b3 agree remarkably well with ground truth measurements for both the lacUD5 and 5DL1 promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 7b, the predictions of the DGA agree remarkably well for both the lacUD5 and 5DL1 promoters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7b and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "77f966e9-afe7-4b0b-8169-4b02702fd20e",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C73",
+      "claim": "The four-state promoter model allows for nonequilibrium currents, unlike the two-state promoter model.",
+      "claim_type": "EXPLICIT",
+      "source": "We have chosen this more complex promoter architecture because, unlike the two-state promoter model analyzed above, it allows for nonequilibrium currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a reason for choosing the four-state model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "6e19a8bb-1101-44fe-bb98-2066af819a2a",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C74",
+      "claim": "Recent works have investigated how cells can tune kinetic parameters to operate out of equilibrium in order to achieve increased sharpness/sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In making this choice, we are inspired by numerous recent works have investigated how cells can tune kinetic parameters to operate out of equilibrium in order to achieve increased sharpness/sensitivity (Nicholson and Gingrich, 2023Lammers et al., 2023; Zoller et al., 2022; Wong and Gunawardena, 2020; Dixit et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "b19810bf-030c-4a18-be5b-6820624f7a4b",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C75",
+      "claim": "There is good agreement between the desired and learned input-output relations for the four-state promoter model.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 8b shows a comparison between the desired and learned input\u2013output relations. This is good agreement between the learned and desired responses, showing that the DGA is able to design dose\u2013response curves with different sensitivities and maximal values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8b and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "702a7b76-9e22-4b5d-81fc-72865d2ca610",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C81",
+      "claim": "Creating nonequilibrium kinetics represents a general design principle for engineering sharp responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with recent works suggesting that creating such nonequilibrium kinetics represents a general design principle for engineering sharp responses (Lammers et al., 2023; Zoller et al., 2022; Wong and Gunawardena, 2020; Dixit et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "ff106d61-3fe3-423c-b69c-36e6b031f12c",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C82",
+      "claim": "The sharper response curve is achieved by consuming more energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 8d shows a comparison between energy consumption and sharpness of the two learned circuits. Consistent with the results of Lammers et al., 2023, we find that the sharper response curve is achieved by consuming more energy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8d and stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "06c9b30c-de09-408a-942e-1f78c8fa4bba",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C83",
+      "claim": "The DGA facilitates the use of gradient-based optimization techniques for parameter estimation and network design.",
+      "claim_type": "EXPLICIT",
+      "source": "By integrating differentiable components into the traditional Gillespie algorithm, the DGA facilitates the use of gradient-based optimization techniques, such as gradient descent, for parameter estimation and network design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the DGA in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "667702b8-b261-433f-a58c-137604207a4c",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C84",
+      "claim": "The ability to smoothly approximate the discrete operations of the traditional Gillespie algorithm with continuous functions facilitates the computation of gradients via both forward- and reverse-mode automatic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to smoothly approximate the discrete operations of the traditional Gillespie algorithm with continuous functions facilitates the computation of gradients via both forward- and reverse-mode automatic differentiation, foundational techniques in machine learning, and has the potential to significantly expand the utility of stochastic simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of the DGA in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "7f6dea62-db71-49f0-8d2b-42cbaaeac9dd",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C85",
+      "claim": "The DGA could accurately approximate the moments of the steady-state distribution and other major qualitative features.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the DGA could accurately approximate the moments of the steady-state distribution and other major qualitative features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the benchmarking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "7763c979-34ea-4193-8c6c-1960cbcc1702",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C86",
+      "claim": "The DGA was less accurate at capturing information about the tails of distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, it was less accurate at capturing information about the tails of distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation observed in the benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "106589ca-148c-458d-859b-2b8eba551227",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C87",
+      "claim": "The DGA could be accurately used for parameter estimation on both simulated and real experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "We then demonstrated that the DGA could be accurately used for parameter estimation on both simulated and real experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the parameter estimation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "6500d951-72c6-473e-8813-510a1938a0f2",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C88",
+      "claim": "The capability to infer kinetic parameters from noisy experimental data underscores the robustness of the DGA.",
+      "claim_type": "EXPLICIT",
+      "source": "This capability to infer kinetic parameters from noisy experimental data underscores the robustness of the DGA, making it a potentially powerful computation tool for real-world applications in quantitative biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the parameter estimation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "30f49735-462b-455b-b0a9-8228d0c3a459",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C89",
+      "claim": "The DGA can be used to rapidly design complex biological systems with specific behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates how the DGA can be used to rapidly design complex biological systems with specific behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the circuit design results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "7268e641-90e0-40d3-92fd-475da25bb31f",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C90",
+      "claim": "Computational design of synthetic circuits with differentiable simulations is expected to become an increasingly important tool in synthetic biology.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect computational design of synthetic circuits with differentiable simulations to become an increasingly important tool in synthetic biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction about the future impact of the DGA.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "47752739-c882-4b17-b87f-30e43466f768",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C91",
+      "claim": "How to adopt the DGA to utilize dynamical data remains an extremely important open question.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a powerful aspect of the traditional Gillespie algorithm is that it can be used to simulate dynamical trajectories. How to adopt the DGA to utilize dynamical data remains an extremely important open question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation and future direction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "3e95b1c7-ec8d-45b9-bb0d-be1f43d6734b",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C92",
+      "claim": "It will be interesting to see if the DGA can be adapted to understand the kinetic of rare events.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it will be interesting to see if the DGA can be adapted to understand the kinetic of rare events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future direction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "6f054620-4b44-4345-8aeb-268720aa88b1",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C93",
+      "claim": "It will be interesting to compare the DGA with other recently developed approximation methods such as those based on tensor networks.",
+      "claim_type": "EXPLICIT",
+      "source": "It will also be interesting to compare the DGA with other recently developed approximation methods such as those based on tensor networks (Strand et al., 2022; Nicholson and Gingrich, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future direction with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "0d2d0f54-6087-4210-b42d-9ae44edd7535",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C94",
+      "claim": "Extending the DGA to handle larger and more diverse datasets will be crucial for applications in epidemiology, evolution, ecology, and neuroscience.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the gene regulatory networks, extending the DGA to handle larger and more diverse datasets will be crucial for applications in epidemiology, evolution, ecology, and neuroscience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future direction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "2f1e0e35-d07a-45f2-a642-1bed8e60663e",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C95",
+      "claim": "The DGA could be extended to stochastic spatial systems by incorporating reaction\u2013diffusion master equations or lattice-based models.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGA could also be extended to stochastic spatial systems by incorporating reaction\u2013diffusion master equations or lattice-based models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential extension.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "594b2a6d-f1c4-4394-bbd3-a1819b1198d9",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C96",
+      "claim": "The DGA's differentiability may enable efficient optimization of spatially heterogeneous reaction parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Its differentiability may enable efficient optimization of spatially heterogeneous reaction parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential benefit of extending the DGA to spatial systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "0fa153ec-aa8e-4738-ab3a-b3747a183628",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "claim_id": "C97",
+      "claim": "Extensions of the DGA to spatial systems may need to address computational scalability and stability in high-dimensional spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such extensions may need to address computational scalability and stability in high-dimensional spaces, especially in processes such as diffusion-driven pattern formation or spatial gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential challenge for spatial extensions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The DGA modifies the traditional Gillespie algorithm by replacing discontinuous operations (Heaviside and Kronecker delta functions) with smooth, differentiable approximations (sigmoid and Gaussian functions), enabling gradient computation via automatic differentiation while preserving core algorithm characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C17, C18 provide clear methodological description supported by Figure 1, showing how discontinuous operations are approximated. Claims C15 and C19 establish integration with automatic differentiation libraries and preservation of core characteristics. The mathematical formulation and visual evidence in Figure 1 strongly support this methodological innovation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Benchmarking on the two-state promoter model shows the DGA accurately replicates steady-state mRNA distributions and moments (0.3% divergence) but fails to capture distribution tails and shows systematic errors in promoter state probabilities. Despite these approximation errors, the DGA captures gradient information effectively for optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C44, C85 demonstrate accuracy for bulk properties with quantitative metrics from Figure 4. Claims C40, C41, C45, C86 document specific limitations with visual evidence. Claim C47 bridges to optimization capability. The comprehensive benchmarking with both successes and limitations clearly documented supports this nuanced result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "924e0f79-dab7-457d-ab72-53fa2afe7457",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The DGA successfully performs parameter estimation on synthetic data for the two-state promoter model, accurately recovering parameters in non-degenerate cases and identifying 'sloppy' directions in degenerate cases where multiple parameter sets minimize the loss function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6, C16, C87 state the capability. Claims C53-C56 provide detailed analysis of loss landscape flatness and parameter degeneracy supported by Figures 5 and 6. The scatter plots showing learned vs. true parameters and loss function visualizations provide strong quantitative evidence for parameter estimation capability on synthetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a9c07500-f327-4614-91c8-121accb14167",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The DGA successfully estimates kinetic parameters from experimental E. coli promoter data (Jones et al., 2014), with predictions for r/\u03b3 agreeing remarkably well with independent ground truth measurements, though Fano factor predictions show 25-28% mean percentage error.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 establishes ground truth availability. Claims C58, C66-C68 describe parameter estimation results. Claims C69-C70 quantify errors, while C72 shows strong agreement for r/\u03b3 ratio (Figure 7b). The comparison to independently measured parameters provides crucial validation, though moderate errors in Fano factor predictions indicate limitations. The mixed accuracy supports cautious acceptance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a6613964-181c-4de3-8827-715fb8c5d829",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The DGA successfully designs nonequilibrium four-state promoter architectures with desired input-output relationships of varying sharpness, with sharper responses achieved through higher nonequilibrium flux and greater energy consumption, consistent with recent theoretical predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7, C89 state design capability. Claim C75 shows good agreement between desired and learned responses (Figure 8b). Claims C81-C82 connect to nonequilibrium design principles with supporting citations (C74). Figure 8 provides comprehensive evidence including learned parameters, loss landscapes, and energy-sharpness tradeoffs. The results align with cited theoretical work, providing strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "0de98f5e-4115-48d5-832a-7e7af24eef1f",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The DGA's differentiability enables gradient-based optimization for parameter estimation and network design, making it a potentially powerful tool for quantitative biology applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 describe the core capability enabled by differentiability. Claim C88 assesses robustness and potential impact. These claims are supported by the demonstrated applications in parameter estimation and circuit design throughout the paper. The integration of automatic differentiation with stochastic simulation is well-established through multiple examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "66ab04c6-c2a8-4fd8-8845-e290dc00fead",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The two-state promoter model provides a simplified yet powerful system for benchmarking because mean mRNA expression and Fano factor can be calculated analytically and quantitative experimental measurements exist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 establish the rationale for using this model system. Figure 3b shows experimental data. The analytical tractability and experimental validation make this an appropriate benchmark system. This is well-supported background knowledge with proper citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "25256547-5818-45b9-ba65-88a16886b11d",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Stochastic processes are ubiquitous across diverse fields, and the Gillespie algorithm is widely used to simulate discrete stochastic systems, particularly in gene expression where molecular stochasticity is inherent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C14 provide background context supported by appropriate citations. These are well-established facts about stochastic processes and the Gillespie algorithm. The claims accurately represent prior knowledge and properly cite relevant literature across multiple disciplines.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8d28410c-94ea-42ce-90b0-dd382637ddb8",
+      "content_id": "af894032-74a7-42a3-8a6e-fe57c5076ae1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Future work should address extending the DGA to dynamical trajectories, rare events, larger datasets across multiple disciplines, and spatial systems, while comparing with other approximation methods like tensor networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C97 outline future directions and limitations. These are speculative statements about potential extensions and comparisons. While reasonable suggestions, they represent\u672a\u5b8c\u6210 work rather than demonstrated results. The authors appropriately identify these as open questions and potential future developments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "8b383beb-6a5e-47ef-a29f-ad534cd9f088",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The DGA modifies the traditional Gillespie algorithm by approximating discontinuous operations with smooth, differentiable functions (using sigmoid and Gaussian functions), enabling gradient calculation via backpropagation while preserving core characteristics of the original algorithm and integrating with modern deep learning libraries.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this core methodological innovation. Reviewer 2 states 'This work makes an important conceptual leap by introducing a version of the Gillespie Algorithm that is end-to-end differentiable' and Reviewer 3 notes 'This is achieved by replacing discontinuous operations in the traditional Gillespie algorithm with smooth, differentiable approximations using sigmoid and Gaussian functions.' The editor calls the 'concept and algorithm design convincing and innovative.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "9bfe2742-f78b-4d55-8f48-81305cf724eb",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Benchmarking shows the DGA accurately replicates steady-state mRNA distributions and major qualitative features from exact Gillespie simulations, with only 0.3% deviation in entropy terms, though it fails to accurately capture distribution tails and shows errors in ON/OFF state probabilities due to sigmoid approximations affecting low-probability reaction events.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge both strengths and limitations. Reviewer 1 states 'the DGA is benchmarked by accurately reproducing the results of the exact Gillespie algorithm' while Reviewer 3 notes 'the DGA accurately captured the moments of the steady-state distribution and other major qualitative features. However, it was less accurate at capturing information about the distribution's tails.' Reviewer 2 raises concerns about deviations in Figure 2 but these are acknowledged limitations rather than refutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "22052bd5-e0c5-4242-8f85-48448c61254c",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The DGA is no longer exact unlike the Gillespie algorithm, replacing the exact discrete stochastic system with an approximate differentiable system, with approximation effects potentially pronounced in complex settings like rare events, tail-driven processes, or non-stationary time series.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge these limitations. Reviewer 2 states 'It is to the authors' credit that they are open and explicit about the potential limitations of DGA due to breakdowns in its continuous approximations.' Reviewer 1 notes 'A more comprehensive and quantitative analysis of the limitations of the DGA, e.g. for rare events...would have also been helpful' but accepts this is beyond scope. The limitations are treated as acknowledged trade-offs rather than fatal flaws.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "243d1f09-a754-4211-840a-4719377c04f6",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The DGA can accurately learn kinetic parameters from both simulated and experimental data (including E. coli promoter measurements) using gradient descent, accurately capturing gradient information despite approximation errors, demonstrating robustness for parameter estimation from noisy experimental data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this capability with some caveats. Reviewer 3 states 'The DGA efficacy in estimating kinetic parameters from both synthetic and experimental data...highlights the DGA's potential to extract meaningful biophysical parameters from noisy biological data.' Reviewer 2 notes the demonstration in Figure 7 provides 'a nice roadmap' but raises concerns about inference reliability in Figure 5A, suggesting the need for multiple random initializations rather than rejecting the capability outright.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "08ff7a94-87a8-433b-9e4d-caedafc22032",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "For E. coli promoters (lacUD5 and 5DL1), the DGA predictions show mean percentage errors of 25% and 28% for Fano factor predictions, while predictions for the r/\u03b3 ratio agree remarkably well with ground truth measurements.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these quantitative results without challenge. Reviewer 1 states the authors 'argue convincingly that the DGA can become a powerful computation tool for applications in quantitative and synthetic biology' based on these experimental validations. Reviewer 2 acknowledges the demonstration with real experimental data (Figure 7) as a strength, though notes analytic solutions exist for these systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "28849dcd-692e-4304-9ce5-5a967ebe6011",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The DGA can design biochemical networks with desired properties, including nonequilibrium promoter architectures with specified input-output relationships, as demonstrated by good agreement between desired and learned responses in a four-state promoter model, enabling rapid design of complex biological systems with specific behaviors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this design capability. Reviewer 3 states 'The DGA's ability to design a four-state promoter architecture exhibits a desired input-output relationship. This success indicates the potential of the DGA as a valuable tool for synthetic biology.' Reviewer 2 notes Figure 8 provides 'a nice roadmap for researchers' though raises concerns about whether analytic solutions make DGA unnecessary in these specific examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "7f9a8c42-938c-4ac1-8a25-5bf9a3ed5dbe",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The sharper response curve in the four-state promoter model is achieved by consuming more energy, consistent with recent literature on nonequilibrium design principles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises a specific concern in revision comments: 'From my reading of the paper they cite (Lammers & Flamholz 2023), the equilibrium sharpness limit...should be 0.25. But both solutions shown in Figure 8D fall below this limit, which means that they have sharpness levels that could have been achieved with no energy expenditure.' This suggests potential misinterpretation or measurement issues, though the reviewer acknowledges it could be due to differences in sharpness measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "bf7b3a1b-6886-4232-b3b6-7d31f3225c67",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Parameter estimation reveals flat loss function landscapes around true parameters, reflecting weak dependence of mRNA distribution moments on kinetic parameters, with multiple parameter sets minimizing the loss function in degenerate cases, though differences occur along 'sloppy' directions where the loss function is flat.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept these findings through their discussion of parameter inference challenges. Reviewer 2's concern that 'the inference algorithm does not reliably find the global minimum of the loss function (Figure 2B)' acknowledges the flat landscape issue. The 'exploration of pairwise parameter dependencies' is noted by Reviewer 2 as providing 'an interesting window into the design constraints.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "ccb953d0-e480-4e3b-a0d5-8121321a581b",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Learned parameter values from experimental data indicate that mRNA transcription occurs much faster than repressor unbinding, with relatively high mRNA degradation rates providing a mechanism for fine-tuning gene expression, and repressor binding rates decreasing with mean mRNA level as expected.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These biological interpretations are not challenged by reviewers. They are presented as inferences from the parameter estimation results that reviewers have accepted, and no reviewer questions these specific biological conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "b36f8191-f1b9-4475-93fd-a2749bfc7c9f",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The DGA facilitates gradient-based optimization techniques for parameter estimation and network design by enabling computation of gradients via forward- and reverse-mode automatic differentiation, which has potential to significantly expand the utility of stochastic simulations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is affirmed as a core strength. The editor states the work 'has the potential to be of significant interest to a broad audience' and Reviewer 2 notes 'This idea alone has the potential to drive a number of exciting innovations in the analysis, inference, and design of biochemical reaction networks.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c",
+      "content_id": "41d3e0c1-0015-4655-b2a7-3a7531914bfb",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Future directions include extending DGA to utilize dynamical data, adapting it for rare events, comparing with tensor network methods, handling larger datasets across multiple fields, and extending to spatial systems, though spatial extensions may face computational scalability challenges.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these as appropriate future directions. Reviewer 1 notes 'some questions are left open about implications for more complex systems' and suggests 'it would have been useful to have a brief discussion...of what can be achieved with the DGA and is totally beyond the reach of the Gillespie algorithm' but accepts this is 'arguably beyond the scope of this study.' Reviewer 3 notes 'The study primarily focuses on analysing the steady-state properties' as a weakness, implicitly supporting the need for dynamical extensions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4e26ae2f-6bf2-4350-b890-f5e14cff9197",
+      "result_id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d"
+    },
+    {
+      "claim_id": "8b4cc819-2fa0-4c8d-bf2a-c1a03c01ddf9",
+      "result_id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d"
+    },
+    {
+      "claim_id": "a0c4de88-f586-49a9-a317-6130f8bff0c3",
+      "result_id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d"
+    },
+    {
+      "claim_id": "4c03c355-7751-48f7-950a-6294fc51af76",
+      "result_id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d"
+    },
+    {
+      "claim_id": "a646b58d-c85b-46cb-8fe5-79254122b454",
+      "result_id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d"
+    },
+    {
+      "claim_id": "044f2c37-7462-43a7-a871-05d6d673c3e7",
+      "result_id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d"
+    },
+    {
+      "claim_id": "5f699df1-35ce-49a0-bbf4-3d150bb04d92",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "6937e148-262b-4d3d-99d8-aa6ee60d7d4d",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "f1547c3b-b39c-4924-9abd-07500f31f6e9",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "fc723990-084d-40bd-aaf7-02aa412f0a74",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "a7179c18-7675-4183-9f55-9326bbfa59bc",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "e6b85684-d0b0-4fc3-9d84-9265333f16b5",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "433edcc3-0578-4da1-b5b5-58e9707577df",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "aba619c2-2b23-4e25-a678-c11c2521387a",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "8c4598ad-2e26-4dd0-ac2c-d338c588e379",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "d9f0b6e2-e54d-4426-830e-31f45daa96af",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "7f6dea62-db71-49f0-8d2b-42cbaaeac9dd",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "7763c979-34ea-4193-8c6c-1960cbcc1702",
+      "result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0"
+    },
+    {
+      "claim_id": "e5d9f6b0-318d-4a55-839b-a3718980c855",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "6e6b8ee6-d998-4053-be5d-714eb3094e21",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "e6be237e-64b4-4788-acb6-48795f94a894",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "cca7b0a2-6413-452b-af7f-a70e6b8d7077",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "e2a3f40b-be8c-43d3-b4f9-7cfee0dc308e",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "8bd70e86-caca-478e-83db-b747fc7fbd9f",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "dc4f3ed4-6647-4bf7-b329-827ea2719f4b",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "106589ca-148c-458d-859b-2b8eba551227",
+      "result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457"
+    },
+    {
+      "claim_id": "ed4895af-47f7-4abe-9c42-be13a4cd8953",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "2633f3b5-32d7-43b8-948d-13f05ee9bf32",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "1c702177-35d8-43ea-8bb0-a92d34e0eea3",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "73d8348b-2056-4846-8610-8adaeff02598",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "99410feb-1364-4dbd-9a7b-1b159f7f56c7",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "606d7924-11be-4490-994b-28e7e4409c98",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "a1da0cfc-c7b8-429d-b583-8c3f43aa0272",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "152057ba-94fc-446e-b3a5-dd6a951ec533",
+      "result_id": "a9c07500-f327-4614-91c8-121accb14167"
+    },
+    {
+      "claim_id": "4e00b967-6780-4bab-874e-79edb2a101dc",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "1e03a071-0241-4cef-b3f3-c0e56208e6bb",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "77f966e9-afe7-4b0b-8169-4b02702fd20e",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "6e19a8bb-1101-44fe-bb98-2066af819a2a",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "b19810bf-030c-4a18-be5b-6820624f7a4b",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "702a7b76-9e22-4b5d-81fc-72865d2ca610",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "ff106d61-3fe3-423c-b69c-36e6b031f12c",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "30f49735-462b-455b-b0a9-8228d0c3a459",
+      "result_id": "a6613964-181c-4de3-8827-715fb8c5d829"
+    },
+    {
+      "claim_id": "06c9b30c-de09-408a-942e-1f78c8fa4bba",
+      "result_id": "0de98f5e-4115-48d5-832a-7e7af24eef1f"
+    },
+    {
+      "claim_id": "667702b8-b261-433f-a58c-137604207a4c",
+      "result_id": "0de98f5e-4115-48d5-832a-7e7af24eef1f"
+    },
+    {
+      "claim_id": "6500d951-72c6-473e-8813-510a1938a0f2",
+      "result_id": "0de98f5e-4115-48d5-832a-7e7af24eef1f"
+    },
+    {
+      "claim_id": "a0d37af6-37ed-40bd-b653-90234d4b8fec",
+      "result_id": "66ab04c6-c2a8-4fd8-8845-e290dc00fead"
+    },
+    {
+      "claim_id": "4714f505-8954-48f1-9762-d9089ddc48c4",
+      "result_id": "66ab04c6-c2a8-4fd8-8845-e290dc00fead"
+    },
+    {
+      "claim_id": "67facc65-5229-475a-a869-152b2a760407",
+      "result_id": "66ab04c6-c2a8-4fd8-8845-e290dc00fead"
+    },
+    {
+      "claim_id": "f798907d-cdd7-4052-ac78-8a566ca31ae5",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "451f3d47-9238-447e-a780-ef220590c121",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "a8442e7c-59ad-48d2-b976-c111e70b3f9e",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "57830739-4879-451a-a85e-8de393fa4108",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "8cb3ab46-dcb2-4456-be6d-e0c81d38d906",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "bc513659-11fc-4c5d-aeaa-6f25c689fee6",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "09861e0d-769f-4701-a76b-7f85c46ff8cc",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "8016b81c-32a1-4386-a589-583cc72bbbde",
+      "result_id": "25256547-5818-45b9-ba65-88a16886b11d"
+    },
+    {
+      "claim_id": "7268e641-90e0-40d3-92fd-475da25bb31f",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "47752739-c882-4b17-b87f-30e43466f768",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "3e95b1c7-ec8d-45b9-bb0d-be1f43d6734b",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "6f054620-4b44-4345-8aeb-268720aa88b1",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "0d2d0f54-6087-4210-b42d-9ae44edd7535",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "2f1e0e35-d07a-45f2-a642-1bed8e60663e",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "594b2a6d-f1c4-4394-bbd3-a1819b1198d9",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "0fa153ec-aa8e-4738-ab3a-b3747a183628",
+      "result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8"
+    },
+    {
+      "claim_id": "4e26ae2f-6bf2-4350-b890-f5e14cff9197",
+      "result_id": "8b383beb-6a5e-47ef-a29f-ad534cd9f088"
+    },
+    {
+      "claim_id": "8b4cc819-2fa0-4c8d-bf2a-c1a03c01ddf9",
+      "result_id": "8b383beb-6a5e-47ef-a29f-ad534cd9f088"
+    },
+    {
+      "claim_id": "a0c4de88-f586-49a9-a317-6130f8bff0c3",
+      "result_id": "8b383beb-6a5e-47ef-a29f-ad534cd9f088"
+    },
+    {
+      "claim_id": "a646b58d-c85b-46cb-8fe5-79254122b454",
+      "result_id": "8b383beb-6a5e-47ef-a29f-ad534cd9f088"
+    },
+    {
+      "claim_id": "044f2c37-7462-43a7-a871-05d6d673c3e7",
+      "result_id": "8b383beb-6a5e-47ef-a29f-ad534cd9f088"
+    },
+    {
+      "claim_id": "fc723990-084d-40bd-aaf7-02aa412f0a74",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "a7179c18-7675-4183-9f55-9326bbfa59bc",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "e6b85684-d0b0-4fc3-9d84-9265333f16b5",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "433edcc3-0578-4da1-b5b5-58e9707577df",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "aba619c2-2b23-4e25-a678-c11c2521387a",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "8c4598ad-2e26-4dd0-ac2c-d338c588e379",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "7f6dea62-db71-49f0-8d2b-42cbaaeac9dd",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "7763c979-34ea-4193-8c6c-1960cbcc1702",
+      "result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb"
+    },
+    {
+      "claim_id": "5f699df1-35ce-49a0-bbf4-3d150bb04d92",
+      "result_id": "22052bd5-e0c5-4242-8f85-48448c61254c"
+    },
+    {
+      "claim_id": "6937e148-262b-4d3d-99d8-aa6ee60d7d4d",
+      "result_id": "22052bd5-e0c5-4242-8f85-48448c61254c"
+    },
+    {
+      "claim_id": "f1547c3b-b39c-4924-9abd-07500f31f6e9",
+      "result_id": "22052bd5-e0c5-4242-8f85-48448c61254c"
+    },
+    {
+      "claim_id": "e5d9f6b0-318d-4a55-839b-a3718980c855",
+      "result_id": "243d1f09-a754-4211-840a-4719377c04f6"
+    },
+    {
+      "claim_id": "6e6b8ee6-d998-4053-be5d-714eb3094e21",
+      "result_id": "243d1f09-a754-4211-840a-4719377c04f6"
+    },
+    {
+      "claim_id": "d9f0b6e2-e54d-4426-830e-31f45daa96af",
+      "result_id": "243d1f09-a754-4211-840a-4719377c04f6"
+    },
+    {
+      "claim_id": "106589ca-148c-458d-859b-2b8eba551227",
+      "result_id": "243d1f09-a754-4211-840a-4719377c04f6"
+    },
+    {
+      "claim_id": "6500d951-72c6-473e-8813-510a1938a0f2",
+      "result_id": "243d1f09-a754-4211-840a-4719377c04f6"
+    },
+    {
+      "claim_id": "606d7924-11be-4490-994b-28e7e4409c98",
+      "result_id": "08ff7a94-87a8-433b-9e4d-caedafc22032"
+    },
+    {
+      "claim_id": "a1da0cfc-c7b8-429d-b583-8c3f43aa0272",
+      "result_id": "08ff7a94-87a8-433b-9e4d-caedafc22032"
+    },
+    {
+      "claim_id": "152057ba-94fc-446e-b3a5-dd6a951ec533",
+      "result_id": "08ff7a94-87a8-433b-9e4d-caedafc22032"
+    },
+    {
+      "claim_id": "4e00b967-6780-4bab-874e-79edb2a101dc",
+      "result_id": "28849dcd-692e-4304-9ce5-5a967ebe6011"
+    },
+    {
+      "claim_id": "1e03a071-0241-4cef-b3f3-c0e56208e6bb",
+      "result_id": "28849dcd-692e-4304-9ce5-5a967ebe6011"
+    },
+    {
+      "claim_id": "b19810bf-030c-4a18-be5b-6820624f7a4b",
+      "result_id": "28849dcd-692e-4304-9ce5-5a967ebe6011"
+    },
+    {
+      "claim_id": "30f49735-462b-455b-b0a9-8228d0c3a459",
+      "result_id": "28849dcd-692e-4304-9ce5-5a967ebe6011"
+    },
+    {
+      "claim_id": "ff106d61-3fe3-423c-b69c-36e6b031f12c",
+      "result_id": "7f9a8c42-938c-4ac1-8a25-5bf9a3ed5dbe"
+    },
+    {
+      "claim_id": "cca7b0a2-6413-452b-af7f-a70e6b8d7077",
+      "result_id": "bf7b3a1b-6886-4232-b3b6-7d31f3225c67"
+    },
+    {
+      "claim_id": "e2a3f40b-be8c-43d3-b4f9-7cfee0dc308e",
+      "result_id": "bf7b3a1b-6886-4232-b3b6-7d31f3225c67"
+    },
+    {
+      "claim_id": "8bd70e86-caca-478e-83db-b747fc7fbd9f",
+      "result_id": "bf7b3a1b-6886-4232-b3b6-7d31f3225c67"
+    },
+    {
+      "claim_id": "dc4f3ed4-6647-4bf7-b329-827ea2719f4b",
+      "result_id": "bf7b3a1b-6886-4232-b3b6-7d31f3225c67"
+    },
+    {
+      "claim_id": "1c702177-35d8-43ea-8bb0-a92d34e0eea3",
+      "result_id": "ccb953d0-e480-4e3b-a0d5-8121321a581b"
+    },
+    {
+      "claim_id": "73d8348b-2056-4846-8610-8adaeff02598",
+      "result_id": "ccb953d0-e480-4e3b-a0d5-8121321a581b"
+    },
+    {
+      "claim_id": "99410feb-1364-4dbd-9a7b-1b159f7f56c7",
+      "result_id": "ccb953d0-e480-4e3b-a0d5-8121321a581b"
+    },
+    {
+      "claim_id": "06c9b30c-de09-408a-942e-1f78c8fa4bba",
+      "result_id": "b36f8191-f1b9-4475-93fd-a2749bfc7c9f"
+    },
+    {
+      "claim_id": "667702b8-b261-433f-a58c-137604207a4c",
+      "result_id": "b36f8191-f1b9-4475-93fd-a2749bfc7c9f"
+    },
+    {
+      "claim_id": "7268e641-90e0-40d3-92fd-475da25bb31f",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    },
+    {
+      "claim_id": "47752739-c882-4b17-b87f-30e43466f768",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    },
+    {
+      "claim_id": "3e95b1c7-ec8d-45b9-bb0d-be1f43d6734b",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    },
+    {
+      "claim_id": "6f054620-4b44-4345-8aeb-268720aa88b1",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    },
+    {
+      "claim_id": "0d2d0f54-6087-4210-b42d-9ae44edd7535",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    },
+    {
+      "claim_id": "2f1e0e35-d07a-45f2-a642-1bed8e60663e",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    },
+    {
+      "claim_id": "594b2a6d-f1c4-4394-bbd3-a1819b1198d9",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    },
+    {
+      "claim_id": "0fa153ec-aa8e-4738-ab3a-b3747a183628",
+      "result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f6c1a06d-75f8-4879-af16-666c9097d94a",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "8ac74556-3f26-4c47-9d26-45b2ed871b2d",
+      "peer_result_id": "8b383beb-6a5e-47ef-a29f-ad534cd9f088",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on core methodological innovation (C2, C3, C15, C18, C19). Both evaluations find the differentiable Gillespie algorithm well-supported with clear methodological description. OpenEval additionally includes C17 in its analysis. Both cite Figure 1 and affirm the conceptual leap as convincing and innovative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "d276311b-5e0e-4806-853d-77c2a0eae8c0",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "8d28410c-94ea-42ce-90b0-dd382637ddb8",
+      "peer_result_id": "fe1bb342-0e28-4794-945a-ed6ed6c8e06c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Perfect agreement on future directions and limitations (C90-C97). Both evaluations classify these as appropriate speculative statements about potential extensions. OpenEval marks as UNCERTAIN (\u672a\u5b8c\u6210 work), while peer reviewers mark as SUPPORTED (appropriate future directions). The difference reflects interpretation of what constitutes 'support' for forward-looking claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "d9affaf5-6673-4801-a061-6f29e4e7eea1",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0",
+      "peer_result_id": "9bfe2742-f78b-4d55-8f48-81305cf724eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on benchmarking results (C38, C40, C41, C44, C45, C46, C85, C86). Both acknowledge accuracy for bulk properties and documented limitations for distribution tails. OpenEval additionally includes C33, C34, C37, C47 in this result. Both evaluations accept the nuanced picture of successes and limitations as well-supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "e1684f02-2e62-4f84-ac79-05de7068f036",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0",
+      "peer_result_id": "22052bd5-e0c5-4242-8f85-48448c61254c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on limitations (C33, C34, C37). OpenEval groups these limitation claims with broader benchmarking results (R2), while peer reviewers evaluate them separately. Both find the acknowledged limitations appropriately documented rather than problematic, treating them as accepted trade-offs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "ec27484c-0481-40f9-9672-ab43f7b4fb05",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "0de98f5e-4115-48d5-832a-7e7af24eef1f",
+      "peer_result_id": "b36f8191-f1b9-4475-93fd-a2749bfc7c9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on core capability enabled by differentiability (C83, C84). Both evaluations affirm this as a fundamental strength with broad potential impact. OpenEval additionally includes C88 in this result. Peer reviewers emphasize potential for driving innovations in biochemical network analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "d04dd816-27b3-4820-b810-2d968af0a147",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457",
+      "peer_result_id": "bf7b3a1b-6886-4232-b3b6-7d31f3225c67",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on parameter estimation challenges (C53, C54, C55, C56). Both evaluations accept findings about loss landscape flatness and parameter degeneracy. OpenEval groups these with broader capability claims (C4, C6, C16, C87), while peer reviewers focus specifically on the landscape analysis. Both cite Figures 5 and 6 as supporting evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "93abb453-bfcb-4478-ba11-6e8e74d43d82",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a6613964-181c-4de3-8827-715fb8c5d829",
+      "peer_result_id": "28849dcd-692e-4304-9ce5-5a967ebe6011",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on circuit design capability (C5, C7, C75, C89). Both evaluations affirm the demonstrated ability to design promoter architectures with desired input-output relationships. OpenEval additionally includes C73, C74, C81, C82 connecting to nonequilibrium design principles. Both cite Figure 8 as comprehensive supporting evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "3528b1ca-1b8d-4558-a8cd-b0bcc090ff2c",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "924e0f79-dab7-457d-ab72-53fa2afe7457",
+      "peer_result_id": "243d1f09-a754-4211-840a-4719377c04f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on parameter estimation capability (C4, C6, C87). OpenEval groups these capability statements with detailed landscape analysis (R3), while peer reviewers evaluate the general capability separately with some caveats about inference reliability. Both mark as SUPPORTED but peer review notes need for multiple random initializations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "95ff4d5d-cc7d-45c3-b236-822094fe61ce",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a9c07500-f327-4614-91c8-121accb14167",
+      "peer_result_id": "08ff7a94-87a8-433b-9e4d-caedafc22032",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on experimental validation results (C69, C70, C72). Both evaluations accept the quantitative error metrics and strong agreement for r/\u03b3 ratio. OpenEval groups these with broader experimental validation claims (C20, C58, C66-C68), while peer reviewers focus on the specific quantitative results without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "c0dfa5e0-133d-4f8c-8c99-17ca382f603a",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "a9c07500-f327-4614-91c8-121accb14167",
+      "peer_result_id": "ccb953d0-e480-4e3b-a0d5-8121321a581b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on biological interpretations (C66, C67, C68). OpenEval includes these in broader experimental validation result (R4), while peer reviewers note these biological inferences are not challenged. Both implicitly accept these as reasonable conclusions from parameter estimation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "515c591a-a22f-41ad-87a6-d7e238c21649",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a6613964-181c-4de3-8827-715fb8c5d829",
+      "peer_result_id": "7f9a8c42-938c-4ac1-8a25-5bf9a3ed5dbe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on nonequilibrium design claims (C82). OpenEval marks as SUPPORTED with citations to theoretical work, while peer reviewer marks as UNCERTAIN, raising specific concern about sharpness values falling below equilibrium limit (0.25), suggesting potential misinterpretation of cited work (Lammers & Flamholz 2023).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "fc4b545c-3850-4747-a0a0-28aec313de13",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "0de98f5e-4115-48d5-832a-7e7af24eef1f",
+      "peer_result_id": "243d1f09-a754-4211-840a-4719377c04f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on impact assessment (C88). OpenEval includes robustness and impact assessment in core capability result (R6), while peer reviewers briefly mention potential impact in their parameter estimation evaluation (R4). Both are positive but emphasize different aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "42027371-af00-4555-9ac8-568c8890ebab",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "21c4c1d3-a6d6-4d63-8ae2-c5dc9b9094a0",
+      "peer_result_id": "243d1f09-a754-4211-840a-4719377c04f6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on optimization capability (C47). OpenEval includes this as bridge claim in benchmarking result (R2), while peer reviewers mention it briefly in parameter estimation context (R4). Both accept the capability but don't emphasize it.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "55ffac1c-2415-4054-a7d8-30397b74bcea",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "66ab04c6-c2a8-4fd8-8845-e290dc00fead",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates model system rationale (C48, C49, C50) as SUPPORTED background knowledge with proper citations. No corresponding peer review evaluation found - peer reviewers did not separately evaluate the choice of benchmark system.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    },
+    {
+      "id": "a6fbf5a1-5508-44b6-b829-c36d25b553be",
+      "submission_id": "29441ef2-6527-4136-981c-39b9cf22a09b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "25256547-5818-45b9-ba65-88a16886b11d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background context claims (C1, C8-C14) about stochastic processes and Gillespie algorithm as SUPPORTED with appropriate citations. No corresponding peer review evaluation found - peer reviewers did not separately assess background literature claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:54:33.336164Z"
+    }
+  ]
+}

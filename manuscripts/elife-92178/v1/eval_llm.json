@@ -5,64 +5,54 @@
       "C1",
       "C2",
       "C3",
-      "C4"
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
     ],
-    "result": "Approximately one-third of the yeast genome (2399 genes) consists of aging-associated genes (AAGs), with mitochondrial function-related genes significantly enriched among those that decrease chronological lifespan. The authors identified 88 severely understudied AAGs as candidates for further investigation.",
+    "result": "Bioinformatics analysis identified YBR238C as a unique uncharacterized gene among aging-associated genes (AAGs) that is downregulated by rapamycin and increases both CLS and RLS upon deletion. About one-third of the yeast genome consists of AAGs, with significant enrichment of mitochondrial function-related genes, and approximately 35% of AAGs overlap with rapamycin response genes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C4 are well-supported by systematic database analysis and gene ontology enrichment with appropriate statistical thresholds (enrichment score 18.2, p<6e-13). The identification of understudied genes follows logically from database annotations.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C1-C10 provide converging evidence from database mining, RNA-Seq analysis, and literature curation. The identification of YBR238C as the only uncharacterized gene meeting specific criteria (rapamycin-downregulated, increases both CLS and RLS) is well-documented with appropriate statistical analysis (C2 reports enrichment scores and p-values). The overlap calculations are straightforward and verifiable from the provided data.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C5",
-      "C6",
-      "C7",
-      "C8",
-      "C9"
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C107",
+      "C108"
     ],
-    "result": "TORC1 positively regulates aging and its inhibition by rapamycin increases lifespan. RNA-Seq analysis identified 1155 upregulated and 1210 downregulated genes in response to rapamycin, with approximately 35% of AAGs overlapping with rapamycin response genes, indicating TORC1 controls about one-third of AAGs.",
+    "result": "YBR238C encodes a 731 amino acid protein with an intrinsically unstructured N-terminal region and a pentatricopeptide repeat region (residues 130-675), suggesting RNA binding function similar to its paralog RMD9. The protein localizes to mitochondria and is transcriptionally upregulated by TORC1.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C9 are supported by established literature (C5-C6) and new RNA-Seq data using two independent analysis methods (EdgeR and DESeq2) with appropriate validation by qRT-PCR. The overlap calculation between AAGs and RRGs is straightforward and well-documented.",
+    "evaluation": "Claims C11-C14 provide computational sequence analysis with specific structural predictions (HHpred E-value 2.e-56). The RNA binding hypothesis (C14) is appropriately labeled as speculation based on homology. The database annotation error (C15) demonstrates careful literature verification. Mitochondrial localization (C107) is supported by citation, and TORC1 regulation (C108) is inferred from rapamycin experiments.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C10",
-      "C11",
-      "C12",
-      "C13",
-      "C14",
-      "C15"
+      "C16",
+      "C17",
+      "C18",
+      "C6"
     ],
-    "result": "YBR238C is identified as the only uncharacterized gene among AAGs that increases both CLS and RLS upon deletion and is downregulated by rapamycin. The encoded 731 amino acid protein contains an intrinsically unstructured N-terminal region and a pentatricopeptide repeat region, suggesting potential RNA binding function similar to its paralog RMD9.",
+    "result": "YBR238C is downregulated by rapamycin treatment in both BY4743 and CEN.PK yeast strains, and deletion of YBR238C increases chronological lifespan (CLS) in both genetic backgrounds, confirming that rapamycin inhibits YBR238C expression and that this gene negatively regulates cellular lifespan.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10-C15 are supported by systematic gene list analysis, computational sequence analysis using established tools (ANNOTATOR, HHpred), and correction of database annotation errors. The RNA binding hypothesis (C14) is appropriately presented as speculation based on homology to RMD9.",
+    "evaluation": "Claims C16-C18 are supported by qRT-PCR validation in two independent yeast strains and CLS measurements using three different experimental methods (Figure 1C-F). The use of multiple strains and methods strengthens the conclusions. Statistical significance is reported with appropriate tests (two-way ANOVA, p<0.01-0.0001).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
-    "claim_ids": [
-      "C16",
-      "C17",
-      "C18"
-    ],
-    "result": "YBR238C is downregulated by rapamycin treatment in both BY4743 and CEN.PK yeast strains, and deletion of YBR238C increases chronological lifespan in both genetic backgrounds.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C16-C18 are well-supported by qRT-PCR validation in two independent yeast strains and CLS measurements using three different experimental methods, providing robust confirmation of the phenotype across genetic backgrounds and methodologies.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R5",
     "claim_ids": [
       "C19",
       "C20",
@@ -75,15 +65,15 @@
       "C27",
       "C28"
     ],
-    "result": "Deletion of YBR238C results in upregulation of 326 genes and downregulation of 61 genes, with significant enrichment of mitochondrial metabolic processes including oxidative phosphorylation and aerobic respiration. The ybr238c\u2206 mutant shows increased ATP levels, higher mtDNA copy number, upregulated stress response transcription factor MSN4, reduced ROS levels, and resistance to oxidative stress, indicating YBR238C is a TORC1-regulated gene involved in mitochondrial function and cellular aging.",
+    "result": "Deletion of YBR238C causes extensive transcriptional reprogramming with 326 genes upregulated and 61 downregulated. The ybr238c\u2206 mutant shows enrichment of mitochondrial metabolic processes (oxidative phosphorylation, aerobic respiration), increased ATP levels, higher mtDNA copy number, upregulation of stress response transcription factor MSN4, reduced ROS levels, and resistance to oxidative stress, indicating that YBR238C negatively regulates mitochondrial function and cellular aging.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C19-C28 are supported by comprehensive RNA-Seq analysis with functional enrichment, validated by multiple biochemical assays (ATP, mtDNA, ROS measurements) and qRT-PCR. The conclusion integrates multiple lines of evidence showing consistent metabolic rewiring toward enhanced mitochondrial function.",
+    "evaluation": "Claims C19-C28 present a comprehensive characterization combining RNA-Seq (C19-C21), metabolic measurements (C22-C23), gene expression analysis (C25), and stress response assays (C26-C27). The data are internally consistent and show the expected relationships between enhanced mitochondrial function and increased lifespan. Multiple replicates and statistical tests are reported. The conclusion (C28) appropriately integrates all findings.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R6",
+    "result_id": "R5",
     "claim_ids": [
       "C29",
       "C30",
@@ -97,32 +87,21 @@
       "C38",
       "C39",
       "C40",
-      "C41"
-    ],
-    "result": "HAP4, a transcription factor controlling mitochondrial electron transport chain gene expression, is upregulated in ybr238c\u2206 mutants and shows opposite transcriptional effects compared to YBR238C. HAP4 deletion partially reduces the lifespan extension of ybr238c\u2206 mutants and decreases ETC gene expression, while YBR238C deletion partially rescues hap4\u2206 lifespan defects, indicating YBR238C negatively regulates HAP4 activity and affects cellular lifespan through both HAP4-dependent and -independent mechanisms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C41 are supported by transcription factor enrichment analysis, qRT-PCR validation in multiple strains, and genetic epistasis experiments. The incomplete epistasis between YBR238C and HAP4 mutations appropriately supports the conclusion of both dependent and independent mechanisms.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
+      "C41",
       "C42",
       "C43",
       "C44",
       "C45"
     ],
-    "result": "YBR238C overexpression decreases HAP4 and mitochondrial ETC gene expression, reduces chronological lifespan more severely than hap4\u2206 deletion alone, confirming the existence of HAP4-independent mechanisms through which YBR238C affects cellular aging.",
+    "result": "YBR238C negatively regulates mitochondrial function through both HAP4-dependent and HAP4-independent mechanisms. HAP4, a transcription factor controlling mitochondrial electron transport chain genes, is upregulated in ybr238c\u2206 mutants. HAP4 deletion partially reduces the lifespan extension of ybr238c\u2206 cells, while YBR238C overexpression decreases lifespan more severely than HAP4 deletion alone, demonstrating the existence of additional regulatory pathways.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C42-C45 are supported by qRT-PCR and CLS experiments showing that YBR238C-OE has a more severe phenotype than hap4\u2206, providing strong evidence for additional mechanisms beyond HAP4 regulation.",
+    "evaluation": "Claims C29-C45 provide genetic epistasis analysis with appropriate controls. The incomplete rescue experiments (C35, C40) correctly demonstrate partial dependence on HAP4. The observation that YBR238C-OE has a more severe phenotype than hap4\u2206 (C44) provides strong evidence for HAP4-independent mechanisms. Gene expression data (C32-C34, C36, C42) support the regulatory relationships. Statistical analyses are appropriate.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R6",
     "claim_ids": [
       "C46",
       "C47",
@@ -137,48 +116,26 @@
       "C56",
       "C57"
     ],
-    "result": "YBR238C has a paralog RMD9 sharing ~45% amino acid identity. RMD9 deletion shortens CLS, causes mitochondrial dysfunction (inability to grow on glycerol, lowered ATP, higher ROS), similar to pet100\u2206 and cox6\u2206 mitochondrial mutants. In contrast, ybr238c\u2206 mutants show enhanced mitochondrial function with efficient growth on respiratory medium, high ATP, and low ROS, demonstrating that YBR238C and RMD9 antagonistically affect mitochondrial function and cellular aging.",
+    "result": "YBR238C and its paralog RMD9 (~45% amino acid identity) have antagonistic effects on mitochondrial function and cellular aging. RMD9 deletion shortens CLS, causes mitochondrial dysfunction (inability to grow on glycerol), and results in decreased ATP and increased ROS levels, opposite to the effects of YBR238C deletion. Long-lived ybr238c\u2206 mutants show enhanced mitochondrial function with high ATP and low ROS.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C57 are well-supported by growth assays on different carbon sources, CLS measurements, and metabolic analyses (ATP, ROS) across multiple mutants. The opposite phenotypes of YBR238C and RMD9 deletions are clearly demonstrated with appropriate controls (pet100\u2206, cox6\u2206).",
+    "evaluation": "Claims C46-C57 establish the antagonistic relationship between paralogs through multiple complementary experiments: growth assays on different carbon sources (C50, C52), CLS measurements (C47, C53), and metabolic analyses (C54-C56). The use of additional mitochondrial mutants (pet100\u2206, cox6\u2206) as controls strengthens the conclusions. The data are internally consistent and well-replicated.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R9",
+    "result_id": "R7",
     "claim_ids": [
       "C58",
       "C59",
       "C60",
       "C61",
-      "C62"
-    ],
-    "result": "YBR238C deletion largely fails to fully recover the lifespan of rmd9\u2206 mutants to wild-type levels but partially prevents early cell death, increases ATP, and reduces ROS in the rmd9\u2206 background. RMD9 expression is upregulated in ybr238c\u2206 cells and downregulated in YBR238C-OE cells, indicating YBR238C deletion increases cellular lifespan via RMD9-dependent mechanisms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C62 are supported by genetic epistasis experiments with double mutants, metabolic measurements, and qRT-PCR analysis showing reciprocal regulation. The incomplete rescue appropriately supports RMD9-dependent mechanisms while acknowledging complexity.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
+      "C62",
       "C63",
       "C64",
       "C65",
       "C66",
-      "C67"
-    ],
-    "result": "RMD9 overexpression increases cellular lifespan and ATP levels, while YBR238C overexpression decreases ATP and increases ROS levels. ROS levels in RMD9-OE cells are comparable to wild type.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C67 are supported by CLS experiments and metabolic measurements (ATP, ROS) in overexpression strains, providing complementary evidence to the deletion studies and confirming the antagonistic relationship between YBR238C and RMD9.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
+      "C67",
       "C68",
       "C69",
       "C70",
@@ -186,15 +143,15 @@
       "C72",
       "C73"
     ],
-    "result": "Antimycin A (AMA), an ETC complex III inhibitor, decreases ATP synthesis and reduces cellular lifespan. Cells with enhanced mitochondrial function (ybr238c\u2206, RMD9-OE) are resistant to AMA treatment, while mitochondrial defective YBR238C-OE cells show aggravated aging with AMA. Mitochondrial defective rmd9\u2206 cells are not further affected by AMA. These findings demonstrate that YBR238C affects CLS and cellular aging via modulating mitochondrial function through HAP4- and RMD9-dependent pathways.",
+    "result": "YBR238C affects cellular lifespan through RMD9-dependent mechanisms. YBR238C deletion fails to fully rescue rmd9\u2206 lifespan but partially prevents early cell death and improves ATP/ROS levels. RMD9 expression is upregulated in ybr238c\u2206 and downregulated in YBR238C-OE cells. RMD9 overexpression increases lifespan and ATP levels. Cells with enhanced mitochondrial function (ybr238c\u2206, RMD9-OE) are resistant to antimycin A (ETC complex III inhibitor), while mitochondrial-defective cells show sensitivity or no additional effect.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C68-C73 are supported by pharmacological experiments with AMA showing differential responses based on mitochondrial function status. The pattern of AMA sensitivity/resistance across different mutants provides strong evidence for the proposed mechanisms linking YBR238C to mitochondrial function.",
+    "evaluation": "Claims C58-C73 provide comprehensive genetic and pharmacological evidence for RMD9-dependent mechanisms. The incomplete rescue (C58) appropriately demonstrates pathway dependence. The reciprocal regulation of RMD9 expression (C61-C62) and the gain-of-function experiments (C63-C67) strengthen the conclusions. The antimycin A experiments (C68-C72) provide independent validation of mitochondrial function states. Statistical analyses are appropriate throughout.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R12",
+    "result_id": "R8",
     "claim_ids": [
       "C74",
       "C75",
@@ -206,137 +163,87 @@
       "C81",
       "C82"
     ],
-    "result": "Rapamycin treatment increases ATP levels and induces ETC gene expression while decreasing YBR238C expression. Rapamycin-induced changes in ETC gene expression are largely unaffected in ybr238c\u2206 cells and reduced in YBR238C-OE cells. Rapamycin does not further increase CLS of ybr238c\u2206 cells, and its anti-aging effect is significantly reduced in YBR238C-OE cells, indicating TORC1 regulates mitochondrial ETC genes via YBR238C and that YBR238C is a downstream effector of TORC1 signaling connecting mitochondrial function to cellular aging regulation.",
+    "result": "YBR238C is a downstream effector of TORC1 signaling that connects mitochondrial function to cellular aging regulation. Rapamycin treatment increases ATP levels and induces ETC gene expression while decreasing YBR238C expression. The rapamycin-induced changes in ETC gene expression are largely unaffected in ybr238c\u2206 cells and reduced in YBR238C-OE cells. Rapamycin does not further increase CLS in ybr238c\u2206 cells, and its anti-aging effect is significantly reduced in YBR238C-OE cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C74-C82 are supported by epistasis experiments between rapamycin treatment and YBR238C genetic manipulations, with qRT-PCR validation of gene expression changes and CLS measurements. The lack of additive effects appropriately supports the linear pathway model.",
+    "evaluation": "Claims C74-C82 establish YBR238C as a TORC1 effector through epistasis analysis. The lack of additive effects between rapamycin and ybr238c\u2206 (C80) and the reduced rapamycin response in YBR238C-OE (C81) provide strong evidence for a linear pathway. Gene expression data (C75-C78) support the regulatory hierarchy. The conclusion (C82) is appropriately supported by the data.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R13",
+    "result_id": "R9",
     "claim_ids": [
       "C83",
       "C84",
       "C85",
       "C86",
-      "C87"
-    ],
-    "result": "Rapamycin supplementation significantly rescues the shortened lifespan of mitochondrial defective YBR238C-OE cells, suggesting mitochondrial dysfunction induces TORC1 activity leading to accelerated cellular aging. Growth of mitochondrial dysfunctional YBR238C-OE cells is resistant to rapamycin at concentrations effective for wild-type, while ybr238c\u2206 cells show increased rapamycin sensitivity, indicating YBR238C affects TORC1 activity via modulating mitochondrial function.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C83-C87 are supported by CLS rescue experiments and growth assays showing differential rapamycin sensitivity based on mitochondrial function status. The bidirectional relationship between mitochondrial function and TORC1 activity is well-demonstrated through these complementary approaches.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
+      "C87",
       "C88",
       "C89",
       "C90",
       "C91",
       "C92"
     ],
-    "result": "Growth of RMD9-OE cells with enhanced mitochondrial function is sensitive to rapamycin, while defective mitochondrial mutants (rmd9\u2206, pet100\u2206, cox6\u2206) show rapamycin resistance. YBR238C deletion reduces the rapamycin growth resistance of mitochondrial dysfunctional rmd9\u2206 and hap4\u2206 cells, demonstrating YBR238C plays a junction role in integrating mitochondrial function and TORC1 signaling.",
+    "result": "Mitochondrial dysfunction activates TORC1, leading to accelerated cellular aging, establishing a feedback mechanism. Rapamycin rescues the shortened lifespan of mitochondrial-defective YBR238C-OE cells. Growth assays show that mitochondrial-dysfunctional cells are resistant to rapamycin inhibition, while cells with enhanced mitochondrial function are sensitive. YBR238C deletion reduces rapamycin resistance in mitochondrial-dysfunctional mutants, indicating that YBR238C integrates mitochondrial function and TORC1 signaling.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C92 are supported by systematic growth assays with rapamycin across multiple mutants with different mitochondrial function states. The pattern of rapamycin sensitivity/resistance and partial rescue by YBR238C deletion provides strong evidence for the proposed feedback loop.",
+    "evaluation": "Claims C83-C92 establish bidirectional regulation between TORC1 and mitochondria. The rescue experiments (C83) and differential rapamycin sensitivity based on mitochondrial status (C85-C86, C88-C89) provide strong evidence for feedback regulation. The genetic suppression experiments (C90-C91) support YBR238C's role as an integrator. The use of growth as a proxy for TORC1 activity is reasonable but indirect.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R15",
+    "result_id": "R10",
     "claim_ids": [
       "C93",
       "C94",
-      "C95"
-    ],
-    "result": "Rapamycin supplementation prevents the accelerated cellular aging of defective mitochondrial mutants (rmd9\u2206, pet100\u2206, cox6\u2206) and rescues AMA-mediated accelerated cellular aging, while increasing ATP levels in AMA-treated cells, demonstrating that TORC1 inhibition improves mitochondrial function and suppresses accelerated cellular aging.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C93-C95 are supported by CLS experiments with rapamycin treatment across multiple mitochondrial dysfunction models (genetic and pharmacological), with ATP measurements confirming the metabolic mechanism. The consistency across different models strengthens the conclusion.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
+      "C95",
       "C96",
       "C97",
       "C98",
       "C99",
-      "C100"
+      "C100",
+      "C101"
     ],
-    "result": "In human HEK293 cells, AMA treatment decreases cell viability due to mitochondrial dysfunction (evidenced by lower ATP levels), and rapamycin supplementation suppresses AMA-mediated cell death while increasing ATP levels, supporting that TORC1 inhibition suppresses cellular aging associated with mitochondrial dysfunction across species.",
+    "result": "TORC1 inhibition by rapamycin prevents accelerated cellular aging caused by mitochondrial dysfunction across species. Rapamycin rescues the shortened lifespan of mitochondrial-defective yeast mutants (rmd9\u2206, pet100\u2206, cox6\u2206) and antimycin A-treated cells, with concomitant increases in ATP levels. In human HEK293 cells, antimycin A decreases viability and ATP levels, and rapamycin suppresses antimycin A-mediated cell death while increasing ATP levels.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C96-C100 are supported by cell viability and ATP measurements in human cells, demonstrating conservation of the TORC1-mitochondria relationship across species. The parallel findings in yeast and human cells strengthen the translational relevance of the work.",
+    "evaluation": "Claims C93-C101 extend findings to human cells, strengthening evolutionary conservation arguments. The yeast experiments (C93-C95) are well-controlled with multiple mutants. The human cell experiments (C97-C100) provide cross-species validation, though they are more limited in scope. The ATP measurements provide mechanistic support. Statistical analyses are appropriate (n=3-6, p<0.0001).",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R17",
+    "result_id": "R11",
     "claim_ids": [
-      "C101",
       "C102",
       "C103",
       "C104",
-      "C105"
+      "C105",
+      "C106"
     ],
-    "result": "The authors propose a feedback loop between mitochondrial function and TORC1 signaling (TOMITO signaling process), where TORC1 signals to mitochondria via YBR238C, while mitochondria signal back to TORC1 via metabolite sensing (e.g., \u03b1-ketoglutarate, glutamine). This interpretation is supported by published studies showing TORC1 activation after mitochondrial ETC dysfunction and TORC1 inhibition delaying pathology in mitochondrial complex I knockout mice.",
+    "result": "A feedback loop exists between TORC1 and mitochondria (TOMITO signaling) that regulates cellular aging. The effector from TORC1 to mitochondria involves YBR238C, while feedback from mitochondria to TORC1 appears to occur via metabolite sensing. This interpretation is supported by published studies showing TORC1 activation after mitochondrial dysfunction and TORC1 inhibition delaying pathology in mitochondrial mutant mice.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C101-C105 integrate the current findings with supporting literature. The forward direction (TORC1\u2192mitochondria via YBR238C) is well-supported by experimental data. The reverse direction (mitochondria\u2192TORC1 via metabolites) is appropriately presented as inference based on known mechanisms and supporting citations, though not directly tested in this study.",
+    "evaluation": "Claims C102-C106 synthesize the manuscript's findings into a coherent model. The supporting citations (C102-C103) from independent studies strengthen the conclusions. However, the metabolite sensing mechanism (C106) is speculative and based on inference rather than direct experimental evidence in this study. The model is consistent with all presented data but would benefit from direct testing of the mitochondria-to-TORC1 signaling mechanism.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R18",
+    "result_id": "R12",
     "claim_ids": [
+      "C5",
       "C109",
       "C110",
       "C111",
       "C112",
       "C113",
       "C114",
-      "C115",
-      "C116",
-      "C119",
-      "C120"
+      "C115"
     ],
-    "result": "Background claims establishing the importance of cellular aging in disease, yeast as a model organism for aging research, definitions of CLS and RLS, TORC1's role in nutrient sensing and metabolism, and the association of metabolic switches and stress response activation with delayed cellular aging.",
+    "result": "Background and context: TORC1 positively regulates aging across species, yeast is a valid model for studying human cellular aging through CLS and RLS measurements, and functionally uncharacterized genes have been increasingly neglected despite their importance in aging processes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C109-C120 are well-established background information supported by appropriate citations to published literature. These provide necessary context for the study but do not represent novel findings.",
+    "evaluation": "Claims C5, C109-C115 provide appropriate background context supported by citations to established literature. These are well-accepted facts in the field and provide necessary justification for the study's approach. The definitions of CLS and RLS (C111-C114) are standard and correctly stated.",
     "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
-      "C106",
-      "C107",
-      "C108"
-    ],
-    "result": "Background information about rapamycin's discovery, YBR238C's mitochondrial localization, and its transcriptional upregulation by TORC1.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C106-C108 are supported by citations to published literature and consistent with the experimental data presented. These provide important context for understanding YBR238C but represent prior knowledge rather than novel findings.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R20",
-    "claim_ids": [
-      "C117",
-      "C118"
-    ],
-    "result": "Mitochondrial dysfunction leads to TORC1 activation in both yeast and human cells, while TORC1 activity decreases under enhanced mitochondrial function conditions.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C117-C118 are supported by rapamycin sensitivity/resistance experiments and lifespan rescue studies across multiple genetic and pharmacological models. The bidirectional relationship is demonstrated through complementary approaches, though TORC1 activity is inferred from growth as a proxy rather than directly measured.",
-    "result_type": "MAJOR"
   }
 ]

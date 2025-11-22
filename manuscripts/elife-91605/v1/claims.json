@@ -1,0 +1,1958 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Traditional methods that detect peaks over 1/f noise within the power spectrum fail to distinguish between the fundamental frequency and harmonics of often highly non-sinusoidal neural oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Traditional methods that detect peaks over 1/f noise within the power spectrum fail to distinguish between the fundamental frequency and harmonics of often highly non-sinusoidal neural oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of existing methods in the abstract, establishing the problem that CHO addresses.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "CHO outperforms conventional techniques in accurately detecting oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results demonstrate that CHO outperforms conventional techniques in accurately detecting oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulation and empirical results presented in the manuscript, particularly in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "CHO demonstrates high precision and specificity in detecting neural oscillations in time and frequency domains.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, CHO demonstrates high precision and specificity in detecting neural oscillations in time and frequency domains.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the simulation results in Figure 4 showing specificity and accuracy metrics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Neural oscillations in the mammalian brain are thought to play an important role in coordinating neural activity across different brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural oscillations in the mammalian brain are thought to play an important role in coordinating neural activity across different brain regions, allowing for the integration of sensory information, the control of motor movements, and the maintenance of cognitive functions (Pfurtscheller and Lopes da Silva, 1999; Caplan et al., 2003; Buzs\u00e1ki and Draguhn, 2004; Jensen and Mazaheri, 2010; Giraud and Poeppel, 2012; Schalk, 2015; Fries, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to established literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Neural oscillations are actually non-sinusoidal and exhibit spurious phase-amplitude coupling.",
+    "claim_type": "EXPLICIT",
+    "source": "However, there is an increasing realization that neural oscillations are actually non-sinusoidal and exhibit spurious phase-amplitude coupling (Belluscio et al., 2012; Cole et al., 2017; Scheffer-Teixeira and Tort, 2016; Gips et al., 2017; Donoghue et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to recent literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The fundamental frequency of non-sinusoidal neural oscillations is the most challenging problem in building an understanding of how neural oscillations govern interactions throughout the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "A recent review paper on methodological issues in analyzing neural oscillations (Donoghue et al., 2022) identified the fundamental frequency of non-sinusoidal neural oscillations as the most challenging problem in building an understanding of how neural oscillations govern interactions throughout the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to a review paper.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "FFT produces harmonic phase-locked components at multiples of the fundamental frequency when applied to non-sinusoidal neural signals.",
+    "claim_type": "EXPLICIT",
+    "source": "However, when applied to non-sinusoidal neural signals, the FFT produces harmonic phase-locked components at multiples of the fundamental frequency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of FFT when applied to non-sinusoidal signals, supported by signal processing knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Harmonics of non-sinusoidal oscillations are considered to be an artifact produced by the FFT that can confound the detection and physiological interpretation of neural oscillation.",
+    "claim_type": "EXPLICIT",
+    "source": "While the asymmetric nature of the fundamental oscillation can be of great physiological relevance (Mazaheri and Jensen, 2008; Cole et al., 2017; Donoghue et al., 2022), its harmonics are considered to be an artifact produced by the FFT that can confound the detection and physiological interpretation of neural oscillation (Belluscio et al., 2012; Donoghue et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to literature discussing harmonics as artifacts.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Phase-phase coupling analysis confirmed that the beta oscillation was indeed a harmonic of the theta oscillation in the example shown in Figure 1.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis confirmed that the beta oscillation was indeed a harmonic of the theta oscillation (Figure 1E and F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the phase-phase coupling analysis results shown in Figure 1E and F.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "For a sinusoidal neural oscillation, a phase-phase coupling analysis could not fully ascertain whether the oscillations are phase-locked and thus are harmonics of each other.",
+    "claim_type": "EXPLICIT",
+    "source": "In marked contrast, for a sinusoidal neural oscillation, a phase-phase coupling analysis could not fully ascertain whether the oscillations are phase-locked and thus are harmonics of each other (Figure 1G\u2013L).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the analysis results shown in Figure 1G-L.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Phase-phase coupling analysis has exorbitant computational complexity and requires permutation tests across all cross-frequency bands over all channels and trials.",
+    "claim_type": "EXPLICIT",
+    "source": "This ambiguity combined with the exorbitant computational complexity of the entailed permutation test and the requirement to perform the analysis across all cross-frequency bands over all channels and trials render phase-phase coupling impracticable for determining the fundamental frequency of neural oscillations in real time and, thus, the use in closed-loop neuromodulation applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of phase-phase coupling methods based on their computational requirements.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Autocorrelation can explain the periodicity of a signal without assuming that the signal is sinusoidal.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, autocorrelation can explain the periodicity of a signal without assuming that the signal is sinusoidal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of autocorrelation from signal processing theory.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The peaks in the output of the autocorrelation function indicate the fundamental frequency of the neural oscillation.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, the peaks in the output of the autocorrelation function indicate the fundamental frequency of the neural oscillation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 2 and is a property of autocorrelation.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The application of autocorrelation to neural oscillations has been impeded by the requirement to accurately determine the onset and offset of the oscillation.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite autocorrelation being a well-known method to identify the fundamental frequency of a signal, its application to neural oscillations has been impeded by the requirement to accurately determine the onset and offset of the oscillation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation that CHO addresses by combining autocorrelation with OEvent.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "CHO combines the autocorrelation method with the oscillation event (OEvent) method to determine the onset/offset of oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "To overcome this limitation, we combine the autocorrelation method with the oscillation event (OEvent) method (Neymotin et al., 2022) to determine the onset/offset of oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodological approach of CHO, citing the OEvent method.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "CHO replaced the empirical threshold in OEvent with a parametric threshold driven by an estimation of the underlying 1/f noise.",
+    "claim_type": "EXPLICIT",
+    "source": "To further improve OEvent, we replaced the empirical threshold that identifies bounding boxes in the time-frequency domain with a parametric threshold driven by an estimation of the underlying 1/f noise (Donoghue et al., 2020), as shown in Figure 3A.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an explicit methodological improvement described in the text and shown in Figure 3A.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "CHO rejects bounding boxes that exhibit less than 2 oscillatory cycles.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we improved OEvent to reject any short-cycled oscillations that could represent evoked potentials (EPs), event-related potentials (ERPs), or spike activities, as shown in Figure 3B.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3B and described as a criterion of CHO.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "EPs or ERPs in neural signals generate less than 2 cycles of fluctuations.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, EPs or ERPs in neural signals generate less than 2 cycles of fluctuations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a characteristic that distinguishes EPs/ERPs from oscillations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Large-amplitude EPs, ERPs, and spike activities can result in spurious oscillatory power in the frequency domain.",
+    "claim_type": "EXPLICIT",
+    "source": "Large-amplitude EPs, ERPs, and spike activities can result in spurious oscillatory power in the frequency domain (de Cheveign\u00e9 and Nelken, 2019; Donoghue et al., 2020; Donoghue et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "CHO identifies neural oscillations that fulfill three criteria: oscillations must be present in time and frequency domains, must exhibit at least 2 full cycles, and must have autocorrelation.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, the presented CHO method identifies neural oscillations that fulfill the following three criteria: (1) oscillations (peaks over 1/f noise) must be present in the time and frequency domains; (2) oscillations must exhibit at least 2 full cycles; and (3) oscillations must have autocorrelation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explicitly states the three principle criteria of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The three criteria of CHO are supported by studies in the neuroscience literature.",
+    "claim_type": "EXPLICIT",
+    "source": "These criteria are supported by studies in the neuroscience literature (Buzs\u00e1ki and Draguhn, 2004; Niedermeyer and da Silva, 2005; Buzsaki, 2006; Cohen, 2014; de Cheveign\u00e9 and Nelken, 2019; Donoghue et al., 2020; Donoghue et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "CHO was validated on electrophysiological signals including ECoG, EEG, and SEEG signals recorded from 27 human subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "We evaluated CHO by verifying its performance on simulated non-sinusoidal oscillatory bursts and validated its ability to determine the fundamental frequency of neural oscillations in electrocorticographic (ECoG), electroencephalographic (EEG), and stereoelectroencephalographic (SEEG) signals recorded from 27 human subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation approach using human data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "CHO outperformed FOOOF, OEvent, and SPRiNT in specificity for detecting the peak frequency of non-sinusoidal oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results in Figure 4B\u2013D demonstrate that CHO outperforms conventional techniques in specificity and accuracy for detecting the peak frequency of non-sinusoidal oscillations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results shown in Figure 4B-D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The average specificity of SPRiNT was below 0.3, which was significantly lower than the robust specificity of CHO across the entire range of signal-to-noise ratio.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the average specificity of SPRiNT was below 0.3, which was significantly lower than the robust specificity of CHO across the entire range of signal-to-noise ratio (SNR).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from the simulation study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The average SNR of oscillations in EEG and ECoG was found to be \u20137 and \u20136 dB, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on our physiological datasets, we found the average SNR of oscillations in EEG and ECoG to be \u20137 and \u20136 dB, respectively (Figure 4\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a measurement from the empirical data shown in Figure 4\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "At physiologically motivated SNR levels (\u20137 dB for EEG and \u20136 dB for ECoG), the sensitivity of CHO is comparable to that of SPRiNT.",
+    "claim_type": "EXPLICIT",
+    "source": "When tested at these physiologically motivated SNR levels, we found that the sensitivity of CHO is comparable to that of SPRiNT.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the simulation study at specific SNR levels.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "CHO outperformed all other methods in detecting the peak frequency of non-sinusoidal oscillations at the physiologically motivated SNR levels when considering accuracy combined with specificity and sensitivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, when considering the accuracy combined with specificity and sensitivity, CHO outperformed all other methods in detecting the peak frequency of non-sinusoidal oscillations at the physiologically motivated SNR levels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion from the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "CHO outperformed the OEvent method in specificity but not sensitivity for detecting the onset and offset of oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "In this analysis, CHO outperformed the OEvent method in specificity but not sensitivity, as shown in Figure 4E\u2013G.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in the simulation results in Figure 4E-G.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Alpha and beta oscillations were expected to be observed during the pre-stimulus period within task-relevant areas such as the auditory and motor cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "In the auditory reaction-time task, we expected to observe neural low-frequency oscillations during the pre-stimulus period within task-relevant areas, such as the auditory and motor cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an expectation based on the experimental design.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "FOOOF detected the presence of alpha and beta oscillations within temporal and motor cortex in ECoG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 5A for one representative subject, FOOOF detected the presence of alpha and beta oscillations within temporal and motor cortex.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5A for a representative subject.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "CHO detected alpha oscillations in temporal and motor cortex, but only detected beta oscillations in motor cortex in ECoG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, while CHO also detected alpha oscillations in temporal and motor cortex, it only detected beta oscillations in motor cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the ECoG analysis shown in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The pattern of CHO detecting alpha in temporal and motor cortex but beta only in motor cortex was consistent across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "We found this pattern to be consistent across subjects, as shown in Figure 5B and Figure 5\u2014figure supplement 1.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is stated as a consistent finding across subjects, shown in Figure 5B and supplement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "CHO and FOOOF demonstrated statistically comparable results in the theta and alpha bands in ECoG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO and FOOOF demonstrated statistically comparable results in the theta and alpha bands despite CHO exhibiting smaller median occurrence rates than FOOOF across eight subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical comparison result from the ECoG analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Within the beta band in ECoG, excluding specific regions such as precentral, pars opercularis, and caudal middle frontal areas, CHO's beta oscillation detection rate was significantly lower than that of FOOOF.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, within the beta band, excluding specific regions such as precentral, pars opercularis, and caudal middle frontal areas, CHO's beta oscillation detection rate was significantly lower than that of FOOOF (Wilcoxon rank-sum test, p<0.05 after Bonferroni correction).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical result from the ECoG analysis with specified test and significance level.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The detection of beta oscillations by FOOOF in temporal areas may represent harmonics of theta or alpha.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests comparable detection rates between CHO and FOOOF in pre-motor and Broca's areas, while the detection of beta oscillations by FOOOF in other regions, such as the temporal area, may represent harmonics of theta or alpha, as illustrated in Figure 5A and B.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the results shown in Figure 5A and B.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "FOOOF found alpha oscillations in mid-frontal and visual areas and beta oscillations throughout all areas of the scalp in EEG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, FOOOF found alpha oscillations in mid-frontal and visual areas and beta oscillations throughout all areas of the scalp.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the EEG analysis shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "CHO found more focal visual alpha and pre-motor beta in EEG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, CHO found more focal visual alpha and pre-motor beta.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the EEG analysis shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The low gamma oscillations detected by CHO in EEG were more focal than those detected by FOOOF.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, the low gamma oscillations detected by CHO were also more focal than those detected by FOOOF.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the EEG analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The entropy of CHO's alpha oscillation occurrences (3.82) was lower than that of FOOOF (4.15) in EEG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "The entropy of CHO's alpha oscillation occurrences (3.82) was lower than that of FOOOF (4.15), with a maximal entropy across 64 electrodes of 4.16.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from the EEG analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "In the beta band in EEG, CHO's entropy (4.05) was smaller than that of FOOOF (4.15).",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in the beta band, CHO's entropy (4.05) was smaller than that of FOOOF (4.15).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from the EEG analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "CHO may offer a more region-specific oscillation detection than FOOOF in EEG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "These findings suggest that CHO may offer a more region-specific oscillation detection than FOOOF.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation based on the entropy results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "CHO found fewer alpha oscillations in pre-motor cortex than in occipital cortex in EEG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "As illustrated in Figure 6C, CHO found fewer alpha oscillations in pre-motor cortex (FC2 and FC4) than in occipital cortex (O1 and O2), while FOOOF found more beta oscillation occurrences in pre-motor cortex (FC2 and FC4) than in occipital cortex.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "FOOOF found more alpha and beta oscillations in visual cortex than in pre-motor cortex in EEG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "However, FOOOF found more alpha and beta oscillations in visual cortex than in pre-motor cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the EEG analysis shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "CHO successfully detected offset times of 7 Hz neural oscillations in auditory cortex during an auditory reaction-time task.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 7, CHO successfully detected offset times of 7 Hz neural oscillations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "During the pre-stimulus period, the distribution of the onset time of oscillations remains uniform, reflecting the subject waiting for the stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "During the pre-stimulus period, the distribution of the onset time remains uniform, reflecting the subject waiting for the stimulus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the results shown in Figure 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "After the stimulus onset, the distribution of onset times becomes Gaussian, reflecting the variable reaction time to the auditory stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, after the stimulus onset, the distribution of onset times becomes Gaussian, reflecting the variable reaction time to the auditory stimulus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the results shown in Figure 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The detection of onset times peaks 950 ms post-stimulus, which occurs significantly later than the button press that happens 200 ms post-stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "Of note, the detection of onset times peaks 950 ms post-stimulus, which occurs significantly later than the button press that happens 200 ms post-stimulus (Figure 7B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a temporal result shown in Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The prominent peak in the offset and onset of oscillations at 300 and 950 ms post-stimulus, respectively, indicates a suspension of oscillations in response to the auditory stimulus, and their reemergence after the execution of the button press behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "The prominent peak in the offset and onset of oscillations at 300 and 950 ms post-stimulus, respectively, indicates a suspension of oscillations in response to the auditory stimulus, and their reemergence after the execution of the button press behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the temporal dynamics shown in Figure 7.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "On average, the detected 7 Hz oscillations de-synchronized 250 ms and synchronized 900 ms, post-stimulus, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, this means that, on average, the detected 7 Hz oscillations de-synchronized 250 ms and synchronized 900 ms, post-stimulus, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the temporal dynamics results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Hippocampal oscillations are known to be non-sinusoidal and a hallmark of memory processing.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we were interested in the frequency and duration of hippocampal oscillations, which are known to be non-sinusoidal and a hallmark of memory processing (Buzsaki, 2006; Lundqvist et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "CHO found primarily alpha-band oscillations in the hippocampus.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO found primarily alpha-band oscillations in the hippocampus (see Figure 8\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 8\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "CHO exhibits more specific results with less overlap between alpha and beta locations and almost no detection in the low gamma band (30\u201340 Hz) in hippocampus compared to FOOOF.",
+    "claim_type": "EXPLICIT",
+    "source": "When comparing the consistency between CHO and FOOOF across hippocampal locations, CHO exhibits more specific results with less overlap between alpha and beta locations and almost no detection in the low gamma band (30\u201340 Hz).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison result from the SEEG analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "7 and 11 Hz oscillations were the predominant neural oscillations for electrodes near the primary auditory cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 7 and 11 Hz oscillations were the predominant neural oscillations for electrodes near the primary auditory cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 9A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The average duration of an 11 Hz oscillation in primary auditory cortex was 450 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "The average duration of an 11 Hz oscillation was 450 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from the analysis shown in Figure 9A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "7 Hz was the predominant oscillation frequency in the motor cortex with 450 ms duration on average.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, our results for primary motor cortex (i.e. Brodmann area 4) showed that 7 Hz was the predominant oscillation frequency in the motor cortex with 450 ms duration on average, as shown in Figure 9B.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 9B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Motor cortex exhibits more beta-band oscillations (around 500 ms duration) than the auditory cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that motor cortex exhibits more beta-band oscillations (around 500 ms duration) than the auditory cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison result shown in Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Broca's area exhibited characteristics similar to those of the motor cortex, however, with a predominant beta-band frequency of 17 Hz, which is lower than the 22 or 24 Hz oscillations found in the motor cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, Broca's area exhibited characteristics similar to those of the motor cortex, however, with a predominant beta-band frequency of 17 Hz, which is lower than the 22 or 24 Hz oscillations found in the motor cortex (Figure 9C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 9C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "8 Hz was the predominant oscillatory frequency in the hippocampus with a 450 ms duration on average.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis showed that 8 Hz was the predominant oscillatory frequency in the hippocampus with a 450 ms duration on average.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 9D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "During the resting state, neural alpha- and beta-band oscillations within the hippocampus were shorter than in the motor cortex (p<0.05, Wilcoxon rank-sum test, N=6).",
+    "claim_type": "EXPLICIT",
+    "source": "During the resting state, neural alpha- and beta-band oscillations within the hippocampus were shorter than in the motor cortex (p<0.05, Wilcoxon rank-sum test, N=6).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical comparison result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "CHO demonstrated high specificity in detecting both the peak and onset/offset of neural oscillations in time and frequency domains in the simulation study.",
+    "claim_type": "EXPLICIT",
+    "source": "In our simulation study, CHO demonstrated high specificity in detecting both the peak and onset/offset of neural oscillations in time and frequency domains.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The first criterion of CHO is that neural oscillations (peaks over 1/f noise) must be present in the time and frequency domain.",
+    "claim_type": "EXPLICIT",
+    "source": "The first criterion was that neural oscillations (peaks over 1/f noise) must be present in the time and frequency domain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explicitly stated as the first criterion of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The 1/f trend estimation served as a threshold to reject aperiodic oscillatory power in the neural signals.",
+    "claim_type": "EXPLICIT",
+    "source": "The 1/f trend estimation served as a threshold to reject aperiodic oscillatory power in the neural signals (Donoghue et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the function of the 1/f estimation, with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The second condition of CHO is that oscillations must exhibit at least 2 complete cycles.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, the second condition was that oscillations must exhibit at least 2 complete cycles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explicitly stated as the second criterion of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The second condition distinguishes periodic oscillations from EPs/ERPs and spike artifacts.",
+    "claim_type": "EXPLICIT",
+    "source": "This condition distinguishes periodic oscillations from EPs/ERPs and spike artifacts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the purpose of the second criterion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The third and final condition of CHO is that oscillations should share the same periodicity as their autocorrelation.",
+    "claim_type": "EXPLICIT",
+    "source": "The third and final condition is that oscillations should share the same periodicity as their autocorrelation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explicitly stated as the third criterion of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Positive peaks in the autocorrelation can identify the oscillation's fundamental frequency even if it is non-sinusoidal.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because positive peaks in the autocorrelation can identify the oscillation's fundamental frequency even if it is non-sinusoidal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for using autocorrelation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The three principle criteria were essential to reject aperiodic harmonic oscillations and increase CHO's specificity in detecting both the peak frequency and the onset/offset of non-sinusoidal oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, these three principle criteria were essential to reject aperiodic harmonic oscillations and increase CHO's specificity in detecting both the peak frequency and the onset/offset of non-sinusoidal oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of how the three criteria contribute to CHO's performance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Even in the absence of any asymmetry in the oscillations, CHO still outperforms existing methods in specificity.",
+    "claim_type": "EXPLICIT",
+    "source": "The results of this analysis show that even in the absence of any asymmetry in the oscillations, CHO still outperforms existing methods in specificity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the analysis of sinusoidal oscillations shown in Figure 4\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The sensitivity of CHO increases with increasing SNR for sinusoidal oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "It further shows that the sensitivity increases with increasing SNR.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a result from the analysis of sinusoidal oscillations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Existing methods are susceptible to noise which results in the detection of spurious oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though this analysis is based on synthetic sinusoidal oscillations, our results demonstrated that existing methods are susceptible to noise which results in the detection of spurious oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the simulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Beta oscillations occur within the 13\u201330 Hz band throughout various brain regions, including the motor cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "Beta oscillations occur within the 13\u201330 Hz band throughout various brain regions, including the motor cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as background knowledge about beta oscillations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "In the motor cortex, beta oscillations are thought to be involved in motor planning and execution.",
+    "claim_type": "EXPLICIT",
+    "source": "In the motor cortex, beta oscillations are thought to be involved in motor planning and execution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as background knowledge about beta oscillations in motor cortex.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Studies have shown that beta oscillations increase and decrease in power during movement preparation and movement execution, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "Studies have shown that beta oscillations increase and decrease in power during movement preparation and movement execution, respectively (Pfurtscheller and Lopes da Silva, 1999; Jenkinson and Brown, 2011; Doyle et al., 2005; Senkowski et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Most of the beta oscillations detected by conventional methods within auditory cortex may be simply harmonics of the predominant asymmetric alpha oscillation.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that most of the beta oscillations detected by conventional methods within auditory cortex may be simply harmonics of the predominant asymmetric alpha oscillation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the ECoG results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Low gamma oscillations detected by conventional methods in pre-motor and frontal areas are harmonics of beta oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Along the same line, conventional methods found beta and low gamma oscillations in pre-motor and frontal areas, while CHO found predominantly beta oscillations. This suggests that low gamma oscillations detected by conventional methods are harmonics of beta oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the ECoG results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Auditory alpha rhythms may be difficult to observe in EEG.",
+    "claim_type": "EXPLICIT",
+    "source": "This is interesting as FOOOF exhibits a better sensitivity than CHO and suggests that auditory alpha rhythms may be difficult to observe in EEG.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the EEG results where neither CHO nor FOOOF found auditory alpha oscillations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Non-sinusoidal alpha and beta oscillations generate harmonic oscillations in both beta and low gamma in EEG.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar to the ECoG results, our analysis confirmed that non-sinusoidal alpha and beta oscillations generate harmonic oscillations in both beta and low gamma in EEG.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion from the EEG analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Recent studies suggest that the frequency range of hippocampal oscillations is wider than previously assumed (<40 Hz in Cole and Voytek, 2019 or 3\u201312 Hz in Li et al., 2022).",
+    "claim_type": "EXPLICIT",
+    "source": "Recent studies suggest that the frequency range of hippocampal oscillations is wider than previously assumed (<40 Hz in Cole and Voytek, 2019 or 3\u201312 Hz in Li et al., 2022) and that it does not match the conventional frequency range of theta/alpha rhythms (Buzsaki, 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to recent literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Harmonics can occur in any brain area and frequency band because neural oscillations are inherently non-sinusoidal.",
+    "claim_type": "EXPLICIT",
+    "source": "The recognition of the need to expand the frequency band within oscillation analysis is not limited to the hippocampus. Our ECoG and EEG results show that harmonics can occur in any brain area and frequency band because neural oscillations are inherently non-sinusoidal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general conclusion from the results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "A recent study showed that the phase of wideband oscillations could better predict neural firing.",
+    "claim_type": "EXPLICIT",
+    "source": "A recent study showed that the phase of wideband oscillations could better predict neural firing (Davis et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "CHO can determine the fundamental frequency of non-sinusoidal oscillations when applied within a wideband analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO can determine the fundamental frequency of non-sinusoidal oscillations when applied within a wideband analysis, as shown in Figure 8E.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 8E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "CHO provides onset/offset and the frequency range of an oscillation, allowing investigation of non-sinusoidal features, such as the degree of asymmetry and amplitudes of troughs/peaks.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, CHO provides onset/offset and the frequency range of an oscillation, allowing us to investigate non-sinusoidal features, such as the degree of asymmetry and amplitudes of troughs/peaks (Cole and Voytek, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of CHO with citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Knowing the onset/offset and duration of a neural oscillation is essential for realizing closed-loop neuromodulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Knowing the onset/offset and duration of a neural oscillation is essential for realizing closed-loop neuromodulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an application of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Neuromodulation may be most efficient when electrical stimulation is delivered phase-locked to the underlying ongoing oscillation.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because neuromodulation may be most efficient when electrical stimulation is delivered phase-locked to the underlying ongoing oscillation (Chen et al., 2013; Cagnan et al., 2017; Cagnan et al., 2019; Zanos et al., 2018; Shirinpour et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Deep-brain stimulation in phase with ongoing oscillation can reduce the stimulation necessary to achieve the desired therapeutic effect.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, deep-brain stimulation in phase with ongoing oscillation can reduce the stimulation necessary to achieve the desired therapeutic effect (Cagnan et al., 2017; Cagnan et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Improved efficiency in delivering stimulation therapy reduces power consumption and thus enhances the battery life of the implanted system.",
+    "claim_type": "EXPLICIT",
+    "source": "This improved efficiency in delivering the stimulation therapy reduces power consumption and thus enhances the battery life of the implanted system (Chen et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The temporal precision of CHO in detecting neural oscillations can improve the effectiveness of neurofeedback-based systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the temporal precision of CHO in detecting neural oscillations can improve the effectiveness of neurofeedback-based systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as an application of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "CHO demonstrated high specificity in detecting the onset and offset of fundamental non-sinusoidal oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO demonstrated high specificity in detecting the onset and offset of fundamental non-sinusoidal oscillations (see Figure 4E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "CHO revealed the temporal dynamics of oscillations within the temporal lobe in an auditory reaction-time task.",
+    "claim_type": "EXPLICIT",
+    "source": "Using CHO, our study revealed the temporal dynamics of oscillations within the temporal lobe in an auditory reaction-time task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the results shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "CHO revealed the spatial distribution of neural oscillations in EEG, SEEG, and ECoG recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO revealed the spatial distribution of neural oscillations in EEG, SEEG, and ECoG recordings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the empirical results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "CHO revealed the fundamental frequencies of asymmetric neural oscillations recorded from the scalp, auditory cortex, motor cortex, Broca's area, and hippocampus.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO revealed the fundamental frequencies of asymmetric neural oscillations recorded from the scalp, auditory cortex, motor cortex, Broca's area, and hippocampus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the results shown in Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "CHO showed high specificity in determining the fundamental frequency of synthetic non-sinusoidal oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO showed high specificity in determining the fundamental frequency of synthetic non-sinusoidal oscillations (see Figure 4B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "CHO can be applied in real time to detect the fundamental frequency and the onset/offset of neural oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "CHO can be applied in real time to detect the fundamental frequency and the onset/offset of neural oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a capability of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Recent studies reported that patients affected by severe Parkinson's disease exhibited more asymmetry between peak and trough amplitudes in beta oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, recent studies reported that patients affected by severe Parkinson's disease exhibited more asymmetry between peak and trough amplitudes in beta oscillations (Cole et al., 2017; Jackson et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The high specificity demonstrated by CHO in detecting asymmetric neural oscillations could benefit the investigation of neural pathologies.",
+    "claim_type": "EXPLICIT",
+    "source": "The high specificity demonstrated by CHO in detecting asymmetric neural oscillations could benefit the investigation of neural pathologies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a potential application of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "CHO could improve the quality of asymmetry measurements by providing onset/offset detection of the beta oscillations with high specificity.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, CHO could improve the quality of asymmetry measurements by providing onset/offset detection of the beta oscillations with high specificity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a potential application of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "CHO favors specificity over sensitivity when SNR is low.",
+    "claim_type": "EXPLICIT",
+    "source": "The results of this study show that our CHO method favors specificity over sensitivity when SNR is low.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of CHO.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "CHO exhibited a low sensitivity due to the high false-negative rate in a low-SNR environment.",
+    "claim_type": "EXPLICIT",
+    "source": "More specifically, CHO exhibited a low sensitivity due to the high false-negative rate in a low-SNR environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of CHO.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "At physiologically motivated SNR levels (\u20137 dB for EEG and \u20136 dB for ECoG), CHO can detect 50\u201360% of all true oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on our evaluation of synthetic data, we found that at these physiologically motivated SNR levels, CHO can detect 50\u201360% of all true oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a quantitative result from the simulation study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The sensitivity of CHO could be further improved by averaging across spatially correlated locations.",
+    "claim_type": "EXPLICIT",
+    "source": "This sensitivity could be further improved by averaging across spatially correlated locations, e.g., within the hippocampus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a potential improvement to CHO.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Wavelet transform can better capture short cycles of oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Wavelet transform can better capture short cycles of oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a potential improvement to CHO.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "CHO uses a Hilbert transform method rather than wavelet or short-time fast Fourier transform because it is easy to implement in MATLAB and provides better control over the spectral shape.",
+    "claim_type": "EXPLICIT",
+    "source": "Currently, CHO uses a Hilbert transform method rather than wavelet or short-time fast Fourier transform because it is easy to implement in MATLAB and provides better control over the spectral shape (i.e. better accuracy in detecting peak frequency of oscillations, Cohen, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the choice of Hilbert transform in CHO, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "In developing CHO, no significant differences were found when different approaches to estimate the time-frequency map were used.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the theoretical advantages of wavelet over Hilbert transform, in developing our CHO method, we found no significant differences when we used different approaches to estimate the time-frequency map.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a finding from the development of CHO.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "A comparative study by Bruns, 2004 supports the finding that different time-frequency estimation methods yield similar results.",
+    "claim_type": "EXPLICIT",
+    "source": "This finding is further supported by a comparative study shown by Bruns, 2004.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "CHO is modular, allowing the FFT-based time-frequency analysis to be replaced with more sophisticated time-frequency estimation methods.",
+    "claim_type": "EXPLICIT",
+    "source": "However, because our CHO method is modular, the FFT-based time-frequency analysis can be replaced with more sophisticated time-frequency estimation methods to improve the sensitivity of neural oscillation detection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of CHO's design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "A state-space model or empirical mode decomposition may improve the estimation of the autocorrelation of the harmonic structure underlying non-sinusoidal oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, a state-space model (Matsuda and Komaki, 2017; Beck et al., 2022; Brady and Bardouille, 2022; He et al., 2023) or empirical mode decomposition (Fabus et al., 2022; Quinn et al., 2021) may improve the estimation of the autocorrelation of the harmonic structure underlying non-sinusoidal oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a potential improvement to CHO, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "A Gabor transform or matching pursuit-based approach may improve the onset/offset detection of short burst-like neural oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, a Gabor transform or matching pursuit-based approach may improve the onset/offset detection of short burst-like neural oscillations (Ku\u015b et al., 2013; Morales and Bowers, 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a potential improvement to CHO, with citations.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Developing a better conceptual framework to reject harmonic peaks in the spectral domain may decrease the false-negative rate and increase the sensitivity in low-SNR situations.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, developing a better conceptual framework to reject harmonic peaks in the spectral domain may decrease the false-negative rate and, in turn, increase the sensitivity in low-SNR situations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a potential improvement to CHO.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "CHO does not assess the harmonic structure of neural oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "Another limitation of this study is that it does not assess the harmonic structure of neural oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "CHO cannot distinguish between oscillations that have the same fundamental frequency but differ in their non-sinusoidal properties.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, CHO cannot distinguish between oscillations that have the same fundamental frequency but differ in their non-sinusoidal properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "This limitation stems from the objective of this study, which is to identify the fundamental frequency of non-sinusoidal neural oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "This limitation stems from the objective of this study, which is to identify the fundamental frequency of non-sinusoidal neural oscillations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the reason for the limitation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Eight human subjects implanted with ECoG electrodes participated in an auditory reaction-time task at the Albany Medical Center in Albany, New York.",
+    "claim_type": "EXPLICIT",
+    "source": "Eight human subjects implanted with ECoG electrodes (x1\u2013x8, 4 females, average age = 41\u00b114) participated in an auditory reaction-time task at the Albany Medical Center in Albany, New York.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the study participants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "All ECoG subjects were patients with intractable epilepsy who underwent temporary placement of subdural electrode arrays to localize seizure foci before surgical resection.",
+    "claim_type": "EXPLICIT",
+    "source": "All subjects were patients with intractable epilepsy who underwent temporary placement of subdural electrode arrays to localize seizure foci before surgical resection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the clinical context of the ECoG subjects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Seven healthy human subjects served as a control group for which EEG was recorded while performing the same auditory reaction-time task.",
+    "claim_type": "EXPLICIT",
+    "source": "A further seven healthy human subjects (y1\u2013y7, all males, average age = 27\u00b13.6) served as a control group for which we recorded EEG while performing the same auditory reaction-time task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the EEG study participants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Six human subjects implanted with ECoG electrodes participated in resting-state recording at the Albany Medical Center in Albany, New York.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, six human subjects implanted with ECoG electrodes (ze1\u2013ze6, 1 female, mean age 46, range between 31 and 69) participated in resting-state recording at the Albany Medical Center in Albany, New York.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes additional ECoG study participants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Six human subjects implanted with SEEG electrodes participated in resting-state recordings at the Barnes Jewish Hospital in St. Louis, MO.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, six human subjects implanted with SEEG electrodes (zs1\u2013zs6, 3 females, average age = 46\u00b116.6) participated in resting-state recordings at the Barnes Jewish Hospital in St. Louis, MO.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the SEEG study participants.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "All SEEG subjects were patients with intractable epilepsy who underwent temporary placement of subdural electrodes to localize seizure foci prior to surgical resection.",
+    "claim_type": "EXPLICIT",
+    "source": "All subjects were patients with intractable epilepsy who underwent temporary placement of subdural electrodes to localize seizure foci prior to surgical resection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the clinical context of the SEEG subjects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "All subjects provided informed consent for participating in the study.",
+    "claim_type": "EXPLICIT",
+    "source": "All ECoG and EEG subjects provided informed consent for participating in the study, which was approved by the Institutional Review Board of Albany Medical College and the Human Research Protections Office of the U.S. Army Medical Research and Materiel Command.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ethical approval for the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The study was approved by the Institutional Review Board of Albany Medical College and the Human Research Protections Office of the U.S. Army Medical Research and Materiel Command.",
+    "claim_type": "EXPLICIT",
+    "source": "All ECoG and EEG subjects provided informed consent for participating in the study, which was approved by the Institutional Review Board of Albany Medical College and the Human Research Protections Office of the U.S. Army Medical Research and Materiel Command.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ethical approval for the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The SEEG study was approved by the Institutional Review Board of Washington University School of Medicine in St. Louis.",
+    "claim_type": "EXPLICIT",
+    "source": "All SEEG subjects provided informed consent for participating in the study, which was approved by the Institutional Review Board of Washington University School of Medicine in St. Louis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ethical approval for the SEEG study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "EEG, ECoG, and SEEG signals were recorded using the general-purpose Brain-Computer Interface (BCI2000) software.",
+    "claim_type": "EXPLICIT",
+    "source": "We recorded EEG, ECoG, and SEEG signals from the subjects at their bedside using the general-purpose Brain-Computer Interface (BCI2000) software (Schalk et al., 2004), interfaced with eight 16-channel g.USBamp biosignal acquisition devices (for EEG), one 256-channel g.HIamp biosignal acquisition device (g.tec., Graz, Austria, for ECoG), or one Nihon Kohden JE-120A long-term recording system (Nihon Kohden, Tokyo, Japan, for SEEG) to amplify, digitize (sampling rate 1200 Hz for EEG and ECoG and 2000 Hz for SEEG), and store the signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection methods, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The subjects performed an auditory reaction task, responding with a button press to a salient 1 kHz tone.",
+    "claim_type": "EXPLICIT",
+    "source": "The subjects performed an auditory reaction task, responding with a button press to a salient 1 kHz tone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The subjects performed between 134 and 580 trials in total.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, the subjects performed between 134 and 580 trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the number of trials performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "We penalized subjects with a warning tone to prevent false starts if they responded too fast (i.e. less than 100 ms after stimulus onset).",
+    "claim_type": "EXPLICIT",
+    "source": "We penalized subjects with a warning tone to prevent false starts if they responded too fast (i.e. less than 100 ms after stimulus onset).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of the experimental task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "False-start trials were excluded from the analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "We excluded false-start trials from our analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data analysis approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Raw, unfiltered EEG/ECoG/SEEG signals were acquired by the amplifiers.",
+    "claim_type": "EXPLICIT",
+    "source": "As our amplifiers acquired raw, unfiltered EEG/ECoG/SEEG signals, we removed any offset from our signals using a second-order Butterworth high-pass filter at 0.05 Hz.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data pre-processing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "A common median reference filter was used to remove any common noise.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, we removed any common noise using a common median reference filter (Liu et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data pre-processing, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Signals were downsampled from 1200 or 2000 Hz to 400 or 500 Hz, respectively, to improve the SNR and reduce computational complexity.",
+    "claim_type": "EXPLICIT",
+    "source": "To improve the SNR of our recordings and to reduce the computational complexity of our subsequent analysis, we downsampled our signals from 1200 or 2000 Hz to 400 or 500 Hz, respectively, using MATLAB's 'resample' function, which uses a polyphase antialiasing filter to resample the signal at the uniform sample rate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data pre-processing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The n:m phase-phase coupling method described in Belluscio et al., 2012 was utilized to demonstrate phase-locking.",
+    "claim_type": "EXPLICIT",
+    "source": "To demonstrate phase-locking, as illustrated between theta and beta oscillations in Figure 1E and Figure 1K, we utilized the n:m phase-phase coupling method described in Belluscio et al., 2012.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the method used for phase-phase coupling analysis, with citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The MATLAB code that implements CHO and sample data is available on GitHub.",
+    "claim_type": "EXPLICIT",
+    "source": "The MATLAB code that implements CHO and sample data is available on GitHub (https://github.com/neurotechcenter/CHO, copy archived at Cho, 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides information about code availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "The ability of CHO to detect neural oscillations and determine their fundamental frequency is governed by four principal hyper-parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability of CHO to detect neural oscillations and determine their fundamental frequency is governed by four principal hyper-parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the hyper-parameters of CHO.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "In the performance assessment of CHO, four time windows were used, resulting in estimation periods of 250 ms in duration for each 1/f spectrum.",
+    "claim_type": "EXPLICIT",
+    "source": "In our performance assessment of CHO, we used four windows, resulting in estimation periods of 250 ms in duration for each 1/f spectrum.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter setting used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The minimum number of cycles of a neural oscillation to be detected by CHO was specified to be 2 cycles in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "In our study, we specified this parameter to be 2 cycles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter setting used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The 'NumSTD' value was set to 1 in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "For this study, we set the 'NumSTD' value to 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter setting used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "The percentage of overlap between two bounding boxes that trigger their merger was set to 75% overlap in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "In our study, we set this parameter to 75% overlap.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter setting used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Empirical physiological signals generally lack the necessary ground truth to characterize neural oscillation with sinusoidal or non-sinusoidal properties.",
+    "claim_type": "EXPLICIT",
+    "source": "While empirical physiological signals are most appropriate for validating our method, they generally lack the necessary ground truth to characterize neural oscillation with sinusoidal or non-sinusoidal properties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for using synthetic signals for validation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "CHO was first validated on synthetic non-sinusoidal oscillatory bursts convolved with 1/f noise.",
+    "claim_type": "EXPLICIT",
+    "source": "To overcome this limitation, we first validated CHO on synthetic non-sinusoidal oscillatory bursts (2.5 cycles, 1\u20133 s long) convolved with 1/f noise to test the performance of the proposed method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the validation approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "5-s-long periods comprised of 1/f noise (i.e. pink noise) were generated for the simulation.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 4, we generated 5-s-long periods comprised of 1/f noise (i.e. pink noise).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the simulation setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "Non-sinusoidal oscillations with different amplitudes and lengths were added to the pink noise.",
+    "claim_type": "EXPLICIT",
+    "source": "We added non-sinusoidal oscillations with different amplitudes and lengths.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the simulation setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "The amplitudes of non-sinusoidal oscillations vary between 5 and 20 \u00b5V, while the pink noise remains at 10 \u00b5V in amplitude.",
+    "claim_type": "EXPLICIT",
+    "source": "The amplitudes of non-sinusoidal oscillations vary between 5 and 20 \u00b5V, while the pink noise remains at 10 \u00b5V in amplitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the simulation parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "10 iterations were simulated for each amplitude.",
+    "claim_type": "EXPLICIT",
+    "source": "We simulated 10 iterations for each amplitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the simulation setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "For each iteration, four different lengths of non-sinusoidal oscillations (1 cycle, 2.5 cycles, 1 s, and 3 s long) were tested.",
+    "claim_type": "EXPLICIT",
+    "source": "For each iteration, we tested four different lengths of non-sinusoidal oscillations (1 cycle, 2.5 cycles, 1 s, and 3 s long).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the simulation setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Non-sinusoidal oscillations were generated by introducing asymmetry between the trough and peak periods of sinusoidal waves.",
+    "claim_type": "EXPLICIT",
+    "source": "We generated non-sinusoidal oscillations by introducing asymmetry between the trough and peak periods of sinusoidal waves.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how non-sinusoidal oscillations were generated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "A 9:1 ratio between trough and peak amplitudes was applied to generate the asymmetric nature of an oscillation.",
+    "claim_type": "EXPLICIT",
+    "source": "To generate this asymmetric nature of an oscillation, we applied a 9:1 ratio between trough and peak amplitudes, as shown in an example of Figure 4A.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the simulation parameters, shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "A Tukey (tapered cosine) window function with a 0.40 ratio for the taper section was used to smooth the onset and offset of the non-sinusoidal oscillations.",
+    "claim_type": "EXPLICIT",
+    "source": "To smooth the onset and offset of the non-sinusoidal oscillations, we used Tukey (tapered cosine) window function with a 0.40 ratio for the taper section (Bloomfield, 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the simulation method, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "An accurate detection was defined as one that exhibited a difference between the ground truth peak frequency and detected frequency of less than 1.5 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "For evaluating the performance of each method in determining the fundamental frequency of the oscillations, we defined an accurate detection as one that exhibited a difference between the ground truth peak frequency and detected frequency of less than 1.5 Hz.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the evaluation criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "Onset/offset detections were defined as accurate if the correlation was positive and the p-value was smaller than 0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "We defined those onset/offset detections as accurate if the correlation was positive and the p-value was smaller than 0.05.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the evaluation criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

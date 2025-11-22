@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C27",
+      "C60",
+      "C92"
+    ],
+    "result": "CHO outperforms conventional methods (FOOOF, OEvent, SPRiNT) in specificity and accuracy for detecting the fundamental frequency of non-sinusoidal neural oscillations, as demonstrated through simulation studies with synthetic data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the validation and performance of CHO. The editor states the study 'provides convincing evidence for the accuracy of the method,' Reviewer 1 notes 'synthetic data are well-designed,' and Reviewer 2 emphasizes 'extensive validation using synthetic (simulated) data.' No concerns are raised about the simulation results or comparative performance claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C90",
+      "C91"
+    ],
+    "result": "CHO demonstrates more region-specific and focal detection of neural oscillations compared to FOOOF in empirical EEG and ECoG data, particularly distinguishing fundamental frequencies from harmonics in motor and auditory cortex.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the empirical validation across multiple recording modalities. The editor notes 'extensive validation using...various empirical data,' Reviewer 1 states 'using both non-invasive and invasive signals exposes CHO to conditions which may differ,' and Reviewer 2 confirms 'various empirical datasets from EEG, and intracranial EEG in various locations.' The spatial specificity findings are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C89"
+    ],
+    "result": "CHO successfully detected temporal dynamics of 7 Hz oscillations in auditory cortex during an auditory reaction-time task, revealing desynchronization at 250 ms and resynchronization at 900 ms post-stimulus.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dynamics results are implicitly accepted as reviewers do not raise concerns about these findings. Reviewer 1 notes the tool's validation across 'various real-data scenarios' and Reviewer 2 confirms validation in 'various locations and paradigms,' which would include the auditory task results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "CHO revealed fundamental frequencies and durations of oscillations in hippocampus, auditory cortex, motor cortex, and Broca's area from SEEG and ECoG recordings, showing region-specific patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These empirical findings are accepted without challenge. Reviewer 1 specifically mentions the authors' use cases include 'hippocampal bursts,' and Reviewer 2 confirms validation in 'various locations and domains (i.e. auditory cortex, hippocampus, etc.),' indicating acceptance of these regional characterizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CHO combines autocorrelation with an improved OEvent method using three criteria: oscillations must be present in time-frequency domains, exhibit at least 2 cycles, and show consistent autocorrelation periodicity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is accepted by all reviewers. The editor describes it as 'an important advancement,' Reviewer 1 states the authors 'implement an underexplored approach, using the auto-correlation structure,' and Reviewer 2 confirms 'a new algorithm which is based on autocorrelation.' The three-criteria framework is not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CHO favors specificity over sensitivity in low-SNR environments, detecting 50-60% of true oscillations at physiologically motivated SNR levels (-7 dB for EEG, -6 dB for ECoG).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly identifies this as a weakness, stating 'the algorithm seems to be quite conservative in identifying oscillatory activity which may render it only useful for analyzing very strong oscillatory signals (i.e. alpha), but less suitable for weaker oscillatory signals (i.e. gamma).' This directly challenges the practical utility of CHO's sensitivity-specificity tradeoff, though the quantitative findings themselves are not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C66"
+    ],
+    "result": "Autocorrelation can identify the fundamental frequency of non-sinusoidal oscillations through peaks in the autocorrelation function, but its application has been limited by difficulty in determining oscillation onset/offset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This theoretical foundation is accepted. Reviewer 1 notes the authors 'implement an underexplored approach, using the auto-correlation structure to identify the characteristic frequency,' and no reviewer questions the autocorrelation principle or its historical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Phase-phase coupling analysis can confirm harmonics in non-sinusoidal oscillations but has computational limitations and ambiguity for sinusoidal signals, making it impractical for real-time applications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This background claim establishing the problem CHO addresses is not challenged by reviewers. The motivation for developing CHO is accepted as valid across all reviews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "CHO's sensitivity could be improved through spatial averaging, alternative time-frequency methods (wavelet, state-space models, empirical mode decomposition), or better frameworks for rejecting harmonic peaks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises concerns about CHO's assumptions, noting 'the notion of consistent auto-correlation breaks down in scenarios where instantaneous frequency fluctuates significantly' and questions whether 'bounding boxes with a pre-specified overlap can capture complexes that manoeuvre across peak frequencies.' These concerns align with the authors' acknowledged limitations but suggest the proposed improvements may not fully address fundamental methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CHO cannot distinguish between oscillations with the same fundamental frequency but different non-sinusoidal properties, as it focuses on identifying fundamental frequency rather than characterizing harmonic structure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly critiques this limitation, stating 'this method appears to lack the implementation of statistical inferential techniques for estimating and interpreting auto-correlation and spectral structure' and notes the authors 'use auto-correlation and time-frequency decomposition more as a deterministic tool rather than an inferential one.' This suggests the limitation may be more significant than acknowledged.",
+    "result_type": "MINOR"
+  }
+]

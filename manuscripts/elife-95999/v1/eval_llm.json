@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "VE cells contain spatially organized endocytic vesicles arranged in three zones from apical to basal: zone 1 contains EEA1-positive early endosomes, zone 2 contains Rab7-positive late endosomes, and zone 3 contains LysoTracker Red/LAMP1-positive lysosomes. Endocytosed transferrin is rapidly transported through these zones from early endosomes to lysosomes via late endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are well-supported by confocal microscopy, immunostaining with organelle markers (EEA1, Rab7, LAMP1, LysoTracker Red), and time-lapse imaging of transferrin trafficking shown in Figure 1. The spatial organization and trafficking pathway are clearly demonstrated with appropriate markers and consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C2"
+    ],
+    "result": "Late endosomes undergo homotypic fusion in an explosive mode where two vesicles fuse quickly (mean 31.9\u00b10.2 s, n=37) with the fusion pore rapidly expanding. The fusion time is weakly correlated with vesicle size (r=0.60), and late endosomes of any size can undergo this type of fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by time-lapse imaging data (Figure 2, Video 1), quantitative measurements of fusion time, size distribution analysis, and correlation analysis. The explosive fusion mode is clearly documented with appropriate statistical analysis and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Late endosomes undergo heterotypic fusion with lysosomes in a bridge fusion mode where the pore does not expand and the late endosome gradually shrinks and disappears. This fusion is slower than homotypic fusion (mean 154.8\u00b11.4 s, n=25), the fusion time does not correlate with vesicle size, and larger late endosomes tend to undergo this type of fusion, though size is not the sole trigger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 are supported by time-lapse imaging (Figure 3, Video 2), differential labeling experiments with transferrin and dextran, electron microscopy showing pore formation, and quantitative size distribution analysis. The distinction from engulfment is demonstrated through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30"
+    ],
+    "result": "Mathematical modeling shows that vesicle size is a critical determinant of fusion types, with the free energy consisting of bending energy and osmotic energy. The model predicts that late endosomes are large enough to undergo bridge fusion, but membrane fluctuation forces can overcome vesicle size effects and shift the fusion mode from bridge to explosive fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C27, and C30 are supported by mathematical modeling based on thermodynamic principles (Figure 4), Monte Carlo simulations, and consistency with experimental observations. The model successfully explains the discrepancy between predicted and observed fusion modes by incorporating membrane fluctuation. However, some parameters (osmotic pressure, ion concentrations) are estimated rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29"
+    ],
+    "result": "Membrane fluctuation forces can overcome vesicle size effects on fusion type. Homotypic fusion is converted to bridge-like fusion after cytochalasin D treatment, suggesting that actin dynamics around vesicles cause fluctuation and affect fusion modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C29 are supported by experimental data showing that cytochalasin D treatment converts explosive fusion to bridge fusion (Figure 7C), consistent with mathematical modeling predictions (Figure 4F). The connection between actin dynamics and membrane fluctuation is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Two types of actin filaments are associated with late endosomes in VE cells: rod-like filaments extending along the apical-basal axis and fine filaments extending radially from endosomal membranes. Most actin punctates observed in the x-y plane correspond to cross-sections of bundled apical-basal filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C42 are well-supported by phalloidin staining, confocal microscopy, 3D reconstruction (Figure 5D-F), deconvolution microscopy (Figure 5H), and fascin-1 colocalization experiments (Figure 5G). The structural organization of actin around endosomes is clearly demonstrated with high-resolution imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Actin turnover on late endosomes is dynamically regulated with higher activity in the apical area than the basal area. EGFP-actin and Arp3-EGFP are localized at the rear-end of moving endosomes, suggesting that radial branched filaments are temporally polymerized by Arp2/3 to provide propulsive force for intracellular movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by FRAP assays showing differential recovery times (Figure 6C-E), time-lapse imaging of EGFP-actin and Arp3-EGFP localization during endosome movement (Figure 6F, Figure 6\u2014figure supplement 1B-C), and consistency with established knowledge about Arp2/3-dependent motility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Forces derived from dynamic actin remodeling are necessary for quick fusion during homotypic fusion. Treatment with cytochalasin D reduces fusion frequency and slows fusion in a dose-dependent manner, with higher concentrations converting explosive fusion to bridge fusion. Treatment with jasplakinolide also reduces fusion frequency, indicating that dynamic actin turnover is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C49-C54 are supported by dose-response experiments with cytochalasin D and jasplakinolide (Figure 7A-E, Videos 3-5), quantitative analysis of fusion frequency and time, and high-resolution imaging showing altered actin distribution after drug treatment. The requirement for dynamic actin is demonstrated through complementary pharmacological approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "During homotypic fusion, EGFP-actin is excluded from docking sites and transiently polymerized at distal regions of fusing vesicles. The total fluorescence intensity of EGFP-actin increases transiently after pore formation. Treatment with CK-666 (Arp2/3 inhibitor) decreases fusion frequency and slows fusion, suggesting that branched actin filaments nucleated by Arp2/3 on the distal surface are necessary for quick vesicle rounding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by time-lapse imaging of EGFP-actin during fusion (Figure 7F), quantitative analysis of spatial distribution and total intensity (Figure 7G-H), Arp3-EGFP localization (Figure 7\u2014figure supplement 4), and CK-666 inhibition experiments (Figure 7B-D). The role of Arp2/3 in fusion is demonstrated through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Actin plays distinct roles in homotypic and heterotypic fusion. Cytochalasin D reduces heterotypic fusion frequency in a dose-dependent manner, while jasplakinolide does not inhibit and even increases heterotypic fusion. CK-666 has no effect on heterotypic fusion, suggesting that stable actin filaments (not Arp2/3-dependent) drive heterotypic fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by differential effects of actin inhibitors on heterotypic fusion (Figure 8A-C, Videos 6-7). The contrasting effects of jasplakinolide (stabilizing actin) versus cytochalasin D, and the lack of CK-666 effect, provide strong evidence for distinct mechanisms. However, the mechanism by which jasplakinolide increases heterotypic fusion is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C81",
+      "C82"
+    ],
+    "result": "Different myosins contribute to fusion: myosin V and NM II are important for heterotypic fusion (MyoVin-1 reduces fusion to 20%, blebbistatin has lesser effect), while myosin I, V, and VI are important for homotypic fusion. EGFP-myosin IIA overlaps with phalloidin spots while EGFP-myosin Va is juxtaposed to them, suggesting myosin V facilitates directional transport along actin filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C81-C82 are supported by pharmacological inhibition experiments with specific myosin inhibitors (Figure 8D, Figure 8\u2014figure supplement 1) and localization studies (Figure 8E). The differential roles of myosins are demonstrated, though the mechanisms are inferred from localization patterns and established knowledge rather than direct mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cofilin plays a role in endocytic fusion by regulating actin turnover. Late endosomes undergo homotypic fusion initially then switch to heterotypic fusion over time. Cofilin is slightly more abundant in the apical region of late endosomes. S3 peptide (cofilin activator) increases actin turnover, decreases radial actin filaments, and strongly inhibits homotypic fusion but not heterotypic fusion, suggesting spatial differentiation of actin dynamics along the apical-basal direction is critical for fusion mode transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C80 are supported by time course analysis (Figure 9A), YFP-cofilin localization (Figure 9B-D), FRAP assays with S3 peptide (Figure 9E), imaging of actin changes (Figure 9\u2014figure supplement 1), and differential effects on fusion types (Figure 9F-G). The role of cofilin is demonstrated through multiple complementary approaches, though the mechanism is partially speculative (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Actin promotes vesicle fusion for efficient membrane trafficking in VE cells. VE cells vigorously endocytose maternal proteins to support embryonic development, but larger vesicle size would reduce fusion speed and trafficking efficiency. Forces generated by actin overcome this disadvantage, supported by the observation that knockout mice of actin-related genes (Arc, Myh9) show abnormal VE cells and embryonic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C31-C34 represent an integrative conclusion supported by the collective experimental results showing actin's role in fusion and the mathematical modeling. The functional significance is supported by citations to knockout studies (C34), though the direct connection between actin forces and overcoming size disadvantages is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C83",
+      "C84"
+    ],
+    "result": "In the apical region, late endosomes receive squeezing forces via active actin modification by cofilin and Arp2/3, leading to homotypic fusion in explosive mode. In the basal region, actin is more static and late endosomes receive sliding forces via myosins. In heterotypic fusion, lysosomes are too large and actin accumulation on lysosomal membrane is scarce, resulting in insufficient force for explosive fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C83-C84 represent a mechanistic model (Figure 10) that integrates multiple experimental findings. The model is supported by the differential distribution of cofilin, Arp2/3, and myosins, and the differential effects of inhibitors. However, C35 is partially speculative as the scarcity of actin on lysosomal membranes is inferred rather than directly quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Mouse yolk sac visceral endoderm (VE) cells have huge endocytic vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is supported by citations to previous literature and is consistent with the microscopy observations throughout the manuscript showing large endosomal vesicles in VE cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background knowledge about membrane fusion: hemifusion has been observed in live cells; explosive and bridge fusion modes exist; pore dynamics affect trafficking efficiency; membrane deformation is controlled by proteins and physical parameters; actin generates pushing and pulling forces; previous studies showed contradictory effects of actin on fusion, indicating complex regulation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C96 represent established knowledge from the literature, supported by appropriate citations. These provide context for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

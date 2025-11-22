@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C60",
+      "C61"
+    ],
+    "result": "Rats trained on a multisensory discrimination task showed improved behavioral performance and faster reaction times in multisensory trials compared to unisensory trials. Mean reaction times were 367\u00b153ms for multisensory, 426\u00b160ms for auditory, and 417\u00b153ms for visual trials (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging behavioral evidence with statistical support (p<0.001, paired t-test) and are consistent with prior literature. The interpretation that multisensory cues facilitate decision-making (C60, C61) is reasonable given the data, though causal mechanisms remain to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C20",
+      "C62"
+    ],
+    "result": "Multisensory discrimination training significantly increased the proportion of AC neurons showing visual responses (35% in trained vs. 14% in free-choice group, \u03c7\u00b2=27.5, p<0.001), suggesting that active multisensory engagement enhances visual representation in auditory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparison between groups (C5) is robust with chi-square test. The interpretation (C6, C62) that training enhances visual representation is well-supported by the comparison with the free-choice control group (C20), though the causal role of training versus task engagement cannot be fully disentangled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C39",
+      "C40",
+      "C41",
+      "C67"
+    ],
+    "result": "AC neurons exhibited strong selectivity for cues associated with contralateral behavioral choices, with 61% of auditory-responsive neurons showing auditory selectivity (mostly favoring A10k: 261 vs. 46 for A3k) and 41% of visual neurons showing visual preference (3:1 ratio for Vvt vs. Vhz). This pattern was mirrored in left AC with opposite preferences, suggesting learned cue-choice associations rather than inherent stimulus bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contralateral preference is well-documented across multiple analyses (C8-C13, C39-C41) with appropriate ROC analysis. The critical test using left AC recordings (C40-C41) provides strong evidence that preferences reflect learned associations (C67) rather than stimulus properties alone. However, the causal role remains correlational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C64"
+    ],
+    "result": "Pairing auditory and visual cues enhanced neuronal discrimination ability, with multisensory selectivity (0.25\u00b10.12) significantly exceeding auditory selectivity (0.23\u00b10.11, p<0.0001). Population decoding reached 90% accuracy 18ms earlier in multisensory trials, and AC neurons discriminated visual targets with ~80% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 provide converging evidence from single-neuron selectivity and population decoding analyses. The statistical comparison (Wilcoxon Signed Rank Test, p<0.0001) is appropriate. The interpretation (C64) that distinct integration enhances selectivity is supported by correlation analysis (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C49",
+      "C63"
+    ],
+    "result": "AC neurons adopted distinct, pairing-specific integration strategies, with multisensory enhancement predominantly for the A10k-Vvt pairing (114 enhanced vs. 36 inhibited neurons; mean MSI: 0.047\u00b10.124) but balanced enhancement/inhibition for A3k-Vhz (35 vs. 33; MSI: 0.003\u00b10.096, p<0.001). This differential pattern was absent in the free-choice group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pairing-specific integration is well-documented with appropriate statistical tests (paired t-tests) and neuron counts (C23-C27). The critical control using the free-choice group (C28) demonstrates that active discrimination is necessary (C63). The permutation test (p<0.05) for identifying significant modulation is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C64"
+    ],
+    "result": "The difference in MSI between pairings significantly correlated with enhanced multisensory versus auditory selectivity (R=0.65, p<0.001), and population neurons could discriminate between multisensory and unisensory stimuli, demonstrating that distinct integration strategies enhance cue discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C29) with Pearson's test is appropriate and shows a strong relationship. The SVM decoding (C30) provides independent support. However, correlation does not establish causation, and the interpretation (C64) remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "For most neurons, the observed multisensory response approximated 83% of the sum of auditory and visual responses, indicating subadditive integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bootstrap analysis comparing observed and predicted responses is methodologically sound. The 83% value is clearly stated and supported by Figure 3k-l. However, the analysis focuses on correct contralateral trials only, which may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C71"
+    ],
+    "result": "Multisensory integration strength was behaviorally relevant: MSI for correct choices significantly exceeded incorrect choices in the A10k-Vvt pairing (0.059\u00b10.137 vs. 0.006\u00b10.207, p=0.005) but not in A3k-Vhz pairing (p=0.542), suggesting integration strength shapes behavioral outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparisons (C32-C33) using paired t-tests are appropriate, though the interpretation (C71) is speculative. The differential effect between pairings strengthens the conclusion. However, the analysis requires minimum trial counts, potentially introducing selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C65",
+      "C66",
+      "C79",
+      "C80"
+    ],
+    "result": "Matched audiovisual pairings showed stronger integration than unmatched pairings (A10k-Vvt MSI: 0.052\u00b10.097 vs. A10k-Vhz: 0.016\u00b10.123, p<0.0001), though population decoding could discriminate matched from unmatched cues with 79-81% accuracy, demonstrating that semantic congruence modulates integration strength and that AC neurons can discriminate cue congruence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The matched vs. unmatched comparison (C34-C35) with appropriate statistics demonstrates congruence effects. Population decoding (C37-C38) shows discrimination ability despite weak single-neuron effects for A3k. The interpretations (C65, C66, C79, C80) are well-supported by the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C68"
+    ],
+    "result": "Left AC recordings showed the opposite pattern of multisensory enhancement compared to right AC, with higher MSI for A3k-Vhz (0.135\u00b10.126) than A10k-Vvt (-0.039\u00b10.138, p<0.0001) among audiovisual neurons, confirming that enhancement is based on learned cue-choice associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The left AC data (C42) provides critical evidence that the integration pattern reflects learned associations rather than stimulus properties. The statistical comparison is robust (paired t-test, p<0.0001). This is a strong experimental design addressing alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C69",
+      "C70"
+    ],
+    "result": "Rats trained on sequential unisensory discrimination (auditory then visual) showed 28% visual responses in AC but lacked visual preference and differential multisensory enhancement (A3k-Vhz vs. A10k-Vhz MSI: -0.02\u00b10.12 vs. -0.01\u00b10.13, p=0.327), demonstrating that multisensory training is necessary for developing selective enhancement and aligned preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unisensory training control (C43-C48) is a critical experiment demonstrating training specificity. The lack of differential integration (p=0.327) and visual preference (C44) contrasts sharply with multisensory-trained animals. This strongly supports the interpretation (C69-C70) that multisensory training drives the observed effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AC neurons effectively discriminated matched and mismatched audiovisual pairings, with a subset developing congruent auditory-visual selectivity, suggesting multisensory training establishes memory traces of audiovisual experiences in AC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C50-C52) integrate findings from multiple experiments. The discrimination ability is well-documented (C36-C38, C50), and the congruent selectivity is shown (C13, C51). However, the interpretation about memory traces (C52) is inferential and would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Prior literature establishes that visual stimuli can modulate AC responses via thalamic pathways, deep AC layers integrate cross-modal information, reciprocal projections exist between auditory and visual cortices, and sensory representations are context-dependent and shaped by learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C53-C59) accurately cite relevant prior work to establish context. The citations appear appropriate for the stated claims. However, the accuracy of these attributions cannot be fully verified without checking the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "The authors propose that sensory cortices like AC may bridge cross-modal communication, that task-related differential integration may be a general brain mechanism, and that multisensory training drives formation of specialized circuits, though acknowledging potential motor contributions to observed responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These speculative claims (C72-C76, C78) extend beyond the data. While plausible given the findings, they require additional experiments to test causality, examine other brain regions, and systematically control for motor activity. The acknowledgment of motor contributions (C78) is appropriate but highlights a significant confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The early timing of visual responses in AC (within 100ms) suggests responses are less likely modulated by visually evoked movements, which typically occur with delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the timing argument (C77) is reasonable and supported by citation, recent work (Clayton et al., 2024, mentioned in Discussion) shows rapid motor responses can occur within 50ms. The manuscript acknowledges this limitation but did not systematically track movements, leaving uncertainty about motor contributions.",
+    "result_type": "MINOR"
+  }
+]

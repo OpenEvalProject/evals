@@ -9,11 +9,11 @@
       "C59",
       "C60"
     ],
-    "result": "The authors identified 829 genes overexpressed in the oscular region of S. ciliatum with increased spicule formation, including 17 novel calcarins\u2014secreted proteins similar to coral galaxins. Known biomineralization genes (CA1, CA2, AE-like1, AE-like2, Diactinin, Triactinin, Spiculin) were also among the overexpressed genes, validating the differential gene expression approach.",
+    "result": "The study identified 829 genes overexpressed in the oscular region of S. ciliatum with increased spicule formation, including 17 novel calcarins\u2014secreted proteins similar to coral galaxins. These calcarins were identified through differential gene expression analysis and BLASTp searches of the S. ciliatum genome.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C51, C52, C59, and C60 are directly supported by the DGE analysis data (1575 differentially expressed genes, 829 overexpressed in oscular region). The identification of 17 calcarins via BLASTp and their similarity to coral galaxins (C4, C59, C60) is supported by sequence analysis. The detection of previously known biomineralization genes (C52) validates the experimental approach.",
+    "evaluation": "Claims C3, C51, C52 provide consistent quantitative findings from the DGE analysis (1575 total DEGs, 829 overexpressed in oscular region, including known biomineralization genes). Claims C4, C59, C60 describe the identification of 17 calcarins through sequence similarity and genomic analysis. The convergence of transcriptomic and genomic approaches provides strong support.",
     "result_type": "MAJOR"
   },
   {
@@ -26,13 +26,14 @@
       "C65",
       "C66",
       "C67",
-      "C68"
+      "C68",
+      "C189"
     ],
-    "result": "Calcarins are secreted proteins (signal peptides present) that lack recognizable domains except for a Reeler domain in Cal16. They contain 10\u201323 di-cysteine residues separated by 10\u201315 amino acids, with single cysteines flanking the di-cysteine region. AlphaFold predictions indicate these cysteines form disulfide bridges creating beta-hairpin structures similar to coral galaxins, though calcarins may show 1\u20132 interruptions in the disulfide bridge backbone.",
+    "result": "Calcarins are secreted proteins characterized by signal peptides, 10-23 di-cysteine residues typically separated by 10-15 amino acids, and a predicted tertiary structure featuring beta-hairpins connected by disulfide bridges. AlphaFold predictions indicate structural similarity to coral galaxins, though calcarins may show interruptions in the disulfide bridge backbone.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C61\u2013C68 are supported by sequence analysis (C61\u2013C64) and AlphaFold structural predictions (C65\u2013C68). The structural characterization is based on computational predictions with high confidence (pLDDT >90 for beta-hairpin regions), providing strong evidence for the proposed tertiary structure. The comparison with galaxins is appropriate and well-documented.",
+    "evaluation": "Claims C61-C68 and C189 describe consistent structural features of calcarins based on sequence analysis (C61-C64) and AlphaFold predictions (C65-C68). The inference of secretion from signal peptides (C61) is standard, and the structural predictions are appropriately qualified regarding confidence levels and differences from galaxins.",
     "result_type": "MAJOR"
   },
   {
@@ -58,11 +59,11 @@
       "C86",
       "C87"
     ],
-    "result": "In situ hybridization experiments (CISH and HCR-FISH) revealed that calcarins Cal1\u2013Cal8 are expressed in sclerocytes with distinct temporal and spatial patterns. Cal1 is expressed in founder cells of triactines/tetractines and transiently in diactine founder cells; Cal2 and Cal6 are expressed in late-stage diactine founder cells; Cal3, Cal7, and Cal8 are expressed in all founder cells regardless of spicule type; Cal4 is expressed in all thickener cells; and Cal5 is specific to triactine thickener cells. Expression patterns change as founder cells transform into thickener cells.",
+    "result": "In situ hybridization experiments revealed that calcarin expression varies temporally and spatially across spicule formation stages and between sclerocyte types. Different calcarins show specific expression patterns: Cal1, Cal3, Cal7, and Cal8 are expressed in founder cells; Cal4 and Cal5 in thickener cells; and Cal2 and Cal6 in late-stage diactine founder cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69\u2013C87 are well-supported by in situ hybridization data shown in Figure 3 and supplementary figures. The spatial and temporal expression patterns are clearly documented with appropriate controls (Spiculin, Triactinin, CA1 markers). The observations of transitional states with co-expression (C75, C80) provide evidence for cell type transitions. The specificity of expression patterns for different spicule types and developmental stages is convincingly demonstrated.",
+    "evaluation": "Claims C69-C87 present a comprehensive and internally consistent picture of calcarin expression patterns based on CISH and HCR-FISH experiments. The spatial and temporal specificity is well-documented with multiple calcarins showing distinct but complementary patterns. The observations of transitional co-expression (C75, C80) strengthen the interpretation of cell-type transitions.",
     "result_type": "MAJOR"
   },
   {
@@ -77,124 +78,134 @@
       "C96",
       "C97",
       "C98",
-      "C99"
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
     ],
-    "result": "Mass spectrometry of acid-insoluble spicule matrix proteins identified 35 proteins, of which 15 are encoded by transcripts overexpressed in the oscular region and are considered specialized biomineralization proteins. These include founder cell-specific calcarins (Cal1, Cal2, Cal3, Cal7, Cal8) as the most prominent, plus Cal9, Cal10 (one peptide only), and Cal11. Additional matrix proteins include three novel skeletal matrix proteins (SMP 1\u20133), CAP superfamily proteins, a fibronectin III-domain protein, a subtilisin-like protease, and an EGF-like domain protein. Thickener cell-specific proteins (Cal4, Cal5, Triactinin, Spiculin) were not detected.",
+    "result": "Proteomic analysis of acid-insoluble spicule matrix identified 35 proteins, of which 15 are encoded by genes overexpressed in the oscular region and are considered specialized biomineralization proteins. These include 7-8 calcarins (predominantly founder cell-specific: Cal1, Cal2, Cal3, Cal7, Cal8, plus Cal9, Cal11, and possibly Cal10), three novel skeletal matrix proteins (SMP 1-3), and proteins with recognizable domains including CAP superfamily members, fibronectin III, subtilisin-like protease, and EGF-like domain-containing proteins.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C90\u2013C99 are supported by proteomic data with appropriate thresholds (1.0% FDR, \u22652 peptides per protein, except Cal10 with 1 peptide noted as caveat in C94). The integration of proteomic and transcriptomic data (C91\u2013C92) strengthens the identification of specialized biomineralization proteins. The absence of thickener cell-specific proteins (C99) is a negative result that is appropriately interpreted. The proteomic approach is sound, though the acid-soluble fraction was too diluted for analysis, which is a limitation.",
+    "evaluation": "Claims C90-C103 describe proteomic findings with appropriate caveats (e.g., Cal10 supported by only one peptide in C94). The integration of proteomic and transcriptomic data (C91-C92) provides strong evidence for specialized biomineralization function. The absence of thickener cell-specific proteins (C103) is a clear negative result that informs interpretation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
+      "C107",
       "C108",
-      "C109"
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
     ],
-    "result": "Reanalysis of regeneration RNA-seq data showed that calcarins 1\u201313, other spicule-matrix proteins, and previously identified sclerocyte-specific genes are downregulated in early regeneration stages with no or minimal spicule formation (days 1\u20134) compared to later stages with active spicule production (days 6\u201318). Dissociated cells (day 0) also show low expression of sclerocyte-specific genes, suggesting most sclerocytes do not survive dissociation.",
+    "result": "Analysis of regeneration RNA-seq data showed that calcarins 1-13, other spicule-matrix proteins, and previously identified sclerocyte-specific genes are downregulated in early regeneration stages (days 1-4) with no or minimal spicule formation compared to later stages (days 6-18) with active spicule production. Dissociated cells (day 0) also show low expression of sclerocyte-specific genes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C108\u2013C109 are supported by reanalysis of published RNA-seq data (Soubigou et al., 2020) shown in Figure 5B. The correlation between gene expression and spicule formation stages validates the role of these genes in biomineralization. The interpretation about sclerocyte survival (C109) is reasonable based on the expression data, though direct cell viability measurements would strengthen this conclusion.",
+    "evaluation": "Claims C107-C113 describe reanalysis of published regeneration data (Soubigou et al., 2020) showing consistent temporal correlation between calcarin expression and spicule formation. The inference that sclerocytes don't survive dissociation (C113) is reasonable given the low expression at day 0, though alternative explanations exist.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C110",
-      "C111",
-      "C112",
-      "C113",
       "C114",
       "C115",
       "C116",
       "C117",
-      "C118"
-    ],
-    "result": "WGCNA identified eight meta-modules, with the 'midnightblue' module showing higher expression in high spicule formation contexts. This module contains 196 genes, including 189 overexpressed in the oscular region and most suggested biomineralization genes (except Cal6, Cal9, Cal13, SMP2). The module is enriched for GO terms relevant to spicule formation (monoatomic anion transport, cell junction organization, cell-to-cell signaling) and contains genes involved in transcriptional regulation, TGF-\u03b2 signaling, and Wnt signaling pathways.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C110\u2013C118 are supported by WGCNA analysis with appropriate statistical testing (permutation test, n=1000). The co-expression of biomineralization genes with regulatory pathway components (C116\u2013C118) provides insight into potential regulatory mechanisms. The GO-term enrichment analysis (C115) is appropriate, though the functional relevance of some enriched terms to biomineralization is speculative.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
+      "C118",
       "C119",
       "C120",
       "C121",
       "C122",
       "C123",
+      "C158"
+    ],
+    "result": "Weighted gene co-expression network analysis identified a 'midnightblue' meta-module of 196 genes (189 overexpressed in oscular region) showing coordinated expression changes associated with spicule formation. This module includes most biomineralization genes (except Cal6, Cal9, Cal13, SMP2) and is enriched for GO terms relevant to biomineralization, transcriptional regulation, and signaling pathways including Wnt and TGF-\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C123 and C158 describe WGCNA results showing that biomineralization genes change expression in concert. The statistical approach is appropriate, and the GO-term enrichments (C120-C123) provide functional context. The identification of regulatory genes and signaling pathways is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
       "C124",
       "C125",
       "C126",
       "C127",
       "C128",
-      "C129"
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
     ],
-    "result": "OrthoFinder analysis segregated 14 S. ciliatum calcarins into distinct orthogroups, with Cal2, Cal4, and Cal6 grouped together (25\u201336% identity among themselves, 44\u201358% identity with Grantia compressa orthologs). Some orthogroups included distantly related sequences from octocorals and scleractinian corals (12\u201324% identity), though these coral proteins have not been linked to biomineralization and their homology to calcarins remains uncertain. AlphaFold predictions show structural similarities between some octocoral proteins and calcarins (12 beta-hairpins), but Stylophora proteins have substantially more beta-hairpins.",
+    "result": "OrthoFinder analysis revealed that 14 S. ciliatum calcarins segregate into distinct orthogroups, while Cal2, Cal4, and Cal6 group together (25-36% identity among themselves, 44-58% to Grantia compressa orthologs). Some orthogroups include distantly related sequences from octocorals and scleractinian corals (12-24% identity), but these cnidarian proteins have not been linked to biomineralization and their homology to calcarins remains uncertain.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C119\u2013C129 are supported by OrthoFinder analysis and sequence comparisons. The low sequence identity between sponge and coral proteins (C125) and the lack of functional characterization of coral proteins in these orthogroups (C128) appropriately temper claims of homology (C129). The structural predictions (C126\u2013C127) provide additional context but do not resolve the homology question. The analysis is appropriately cautious about evolutionary relationships.",
+    "evaluation": "Claims C124-C134 describe phylogenetic relationships with appropriate caveats about distant relationships and uncertain homology. The structural predictions (C131-C132) support some similarity despite sequence divergence. The critical assessment that cnidarian proteins in these orthogroups lack functional evidence for biomineralization (C133-C134) is important and well-stated.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C142",
-      "C143",
-      "C145",
-      "C146",
       "C147",
       "C148",
-      "C149"
+      "C149",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
     ],
-    "result": "Genomic analysis revealed tandem arrangements of biomineralization genes in both S. ciliatum and A. millepora. In S. ciliatum, Cal12, Cal4, Cal6, and Cal2 are positioned sequentially on chromosome 2, with Cal4, Cal6, and Cal2 belonging to a single orthogroup. The founder cell-specific carbonic anhydrase CA2 is on the reverse strand of chromosome 4, flanked by non-biomineralizing carbonic anhydrases CA8 and CA3. In A. millepora, Galaxin1 and Galaxin2 are adjacent, and galaxin-like proteins occur in pairs or triplets separated by \u22642 short genes.",
+    "result": "Genomic analysis revealed that Cal4, Cal6, and Cal2 are positioned sequentially on chromosome 2 and belong to a single orthogroup, suggesting origin through two successive gene duplications. Their different expression patterns (Cal4 in thickener cells, Cal2 and Cal6 in late diactine founder cells) indicate functional divergence through neofunctionalization and subfunctionalization after duplication.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C142\u2013C149 are supported by genomic analysis shown in Figure 6. The tandem arrangements of functionally related genes in both sponges and corals (C142, C145, C147\u2013C149) provide strong evidence for gene duplication events. The orthogroup analysis (C143) supports the homology of Cal4, Cal6, and Cal2. The genomic organization is well-documented and appropriately interpreted.",
+    "evaluation": "Claims C147-C149 and C197-C201 present a clear evolutionary scenario supported by genomic location, sequence similarity, and expression data. The inference of two duplication events followed by functional divergence is well-reasoned, though the exact order and timing cannot be definitively determined from these data alone.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C192",
-      "C193",
-      "C194",
-      "C195",
-      "C196",
-      "C197",
-      "C198",
-      "C199",
-      "C200",
-      "C201",
-      "C202"
+      "C10",
+      "C156",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C215",
+      "C216"
     ],
-    "result": "The sequential arrangement and sequence similarity of Cal4, Cal6, and Cal2 suggest they originated from two successive gene duplications, with functional divergence evidenced by different expression patterns (thickener cells vs. late diactine founder cells). Similar patterns in A. millepora galaxins and the genomic arrangement of S. ciliatum CA2 flanked by non-biomineralizing carbonic anhydrases support a model where gene duplication followed by neofunctionalization gave rise to specialized biomineralization genes in both sponges and corals. This process enabled fine-tuning of biomineralization through subfunctionalization.",
+    "result": "The study concludes that there is parallel evolution of carbonate biomineralization between calcitic S. ciliatum and aragonitic corals, with similar gene families (calcarins/galaxins, carbonic anhydrases, bicarbonate transporters) independently recruited from a pre-adapted 'biomineralization toolkit' in their common ancestor.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C192\u2013C202 present a coherent evolutionary model supported by genomic organization (C192, C199), sequence similarity (C192), expression patterns (C193), and comparative analysis with corals (C197\u2013C198, C200). The reconstruction of duplication events (C194\u2013C195) is reasonable given the data, though direct phylogenetic evidence would strengthen these inferences. The parallel with coral SLC4\u03b3 (C200) is well-supported by citation. The model of subfunctionalization (C202) is consistent with the observed expression patterns.",
+    "evaluation": "Claims C10, C156, C183-C186, C215-C216 present the main evolutionary conclusion. This is well-supported by: (1) identification of similar protein families in both lineages, (2) evidence of independent gene duplication and neofunctionalization in each lineage, (3) distinct biomineralization machinery in other sponge groups, and (4) the biomineralization toolkit hypothesis framework. The parallel evolution interpretation is reasonable given the data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C10",
-      "C178",
-      "C179",
-      "C210",
-      "C211"
+      "C162",
+      "C163",
+      "C164",
+      "C170",
+      "C171",
+      "C172"
     ],
-    "result": "The authors conclude there is parallel evolution of carbonate biomineralization between calcitic S. ciliatum and aragonitic corals, based on similarities in essential biomineralization effector genes despite different mineral polymorphs. This demonstrates parallels at the proteome level between calcareous sponge spicule formation and coral skeleton formation.",
+    "result": "The temporal and spatial expression patterns suggest that all sclerocytes initially function as founder cells expressing the same biomineralization genes, with founder cell-specific calcarins becoming integrated into the spicule matrix. Thickener cells emerge from founder cells through gene expression changes, but thickener cell-specific proteins are absent from the spicule matrix, suggesting they may only affect the spicule surface.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C10, C178\u2013C179, C210\u2013C211 are supported by the comprehensive comparative analysis of biomineralization genes, including calcarins/galaxins, carbonic anhydrases, and bicarbonate transporters. The evidence for parallel evolution includes: (1) similar gene families recruited for biomineralization, (2) similar mechanisms of gene duplication and neofunctionalization, (3) structural similarities between calcarins and galaxins, and (4) similar genomic organization patterns. The conclusion of parallel evolution is well-justified by the data, though the different mineral polymorphs (calcite vs. aragonite) suggest independent evolutionary trajectories.",
+    "evaluation": "Claims C162-C164 and C170-C172 present interpretations well-supported by the expression (C69-C87) and proteomic (C90-C103) data. The inference that thickener cells emerge from founder cells is supported by transitional co-expression patterns. The speculation about surface-only effects (C172) is reasonable given the proteomic data but remains to be directly tested.",
     "result_type": "MAJOR"
   },
   {
@@ -204,83 +215,15 @@
       "C89",
       "C7"
     ],
-    "result": "Analysis of single-cell RNA-seq data from young coral polyps (980 calicoblastic cells) revealed nonoverlapping expression of skeletal matrix proteins (two galaxin-like proteins, an uncharacterized skeletal matrix protein, and a skeletal-aspartic acid-rich protein), suggesting spatiotemporal expression changes of skeletal matrix proteins also occur in coral calicoblasts, similar to the patterns observed in sponge sclerocytes.",
+    "result": "Analysis of published single-cell RNA-seq data from coral calicoblasts revealed non-overlapping expression of skeletal matrix proteins (two galaxin-like proteins, an uncharacterized skeletal matrix protein, and a skeletal-aspartic acid-rich protein) in young polyps, suggesting that spatiotemporal expression changes of skeletal matrix proteins also occur in coral biomineralization.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88\u2013C89 and C7 are supported by reanalysis of published single-cell sequencing data (Levy et al., 2021) shown in Appendix 2\u2014figure 1. The nonoverlapping expression patterns (C88) provide evidence for spatiotemporal regulation in corals (C89, C7). However, the analysis is limited to young polyps, and the functional significance of these expression patterns requires further investigation. The parallel with sponge findings is appropriate but should be considered preliminary.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C88-C89 and C7 describe reanalysis of published coral single-cell data showing patterns analogous to those observed in sponges. The analysis appears appropriate (normalization and scaling described), and the parallel to sponge findings strengthens the comparative conclusions. However, this is based on a single coral species and developmental stage.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
-    "claim_ids": [
-      "C150",
-      "C151",
-      "C152",
-      "C155",
-      "C156",
-      "C208",
-      "C209"
-    ],
-    "result": "The authors conclude that calcarins are galaxin-like biomineralization proteins based on multiple lines of evidence: higher expression in regions/stages with increased spicule formation, sclerocyte-specific expression, presence in spicule matrix, and co-expression with other biomineralization genes. The diversity of calcarins (7\u20138 in spicule matrix) is greater than galaxins in coral skeletons (typically 1\u20132), and their varied spatial and temporal expression patterns indicate specialized roles and precise genetic regulation in biomineralization.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C150\u2013C152, C155\u2013C156, C208\u2013C209 synthesize multiple lines of evidence from transcriptomics (C151), in situ hybridization (C151, C156), proteomics (C151), and co-expression analysis (C152). The conclusion that calcarins are biomineralization proteins (C150) is well-supported by the convergence of these independent datasets. The comparison with coral galaxins (C155) is appropriate and highlights the greater diversity in sponges. The interpretation of specialized functions (C156, C208\u2013C209) is reasonable based on the expression data.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C157",
-      "C158",
-      "C164",
-      "C165",
-      "C166"
-    ],
-    "result": "The authors propose that initially all sclerocytes function as founder cells expressing the same biomineralization genes, with founder cell-specific calcarins integrated into the spicule matrix. Thickener cells emerge from founder cells through changes in gene expression. Thickener cell-specific proteins (Cal4, Cal5, Triactinin, Spiculin) are not found in the spicule matrix, suggesting S. ciliatum thickener cells do not add significant calcite to the spicule core but may affect only the spicule surface.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C157, C164 are supported by in situ hybridization showing initial uniform expression and transitional states (C75, C80). Claim C158 is supported by proteomic data showing founder cell calcarins in the matrix. Claims C165\u2013C166 are inferred from the absence of thickener cell proteins in the matrix (C99), which is a negative result. The interpretation is reasonable but speculative (C166 includes speculation). Alternative explanations (e.g., proteins below detection threshold, lost during processing) are acknowledged (C168) but not fully explored.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C169",
-      "C170",
-      "C171",
-      "C172",
-      "C173",
-      "C174",
-      "C175",
-      "C176",
-      "C177"
-    ],
-    "result": "The biomineralization genes in calcareous sponges are distinct from those in other sponge classes (siliceous spicule-forming Demospongiae and Hexactinellida, aragonite-producing sclerosponges). Only subtilisin-like proteases and carbonic anhydrases are shared between S. ciliatum and the sclerosponge Vaceletia, and phylogenetic analyses suggest independent recruitment of carbonic anhydrases for biomineralization. Spherulin (sclerosponge skeletal protein) is absent from the calcareous sponge genome, and galaxin-like sequences in Vaceletia transcriptome are not reported in its skeleton. In contrast, calcarins are diverse in calcareous sponges.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C169\u2013C177 are supported by comparative analysis with other sponge biomineralization studies. The distinctiveness of calcareous sponge genes (C169) is supported by comparisons with siliceous sponges (C170, citations) and sclerosponges (C171\u2013C176). The limited overlap with Vaceletia (C172, C100) and phylogenetic evidence for independent recruitment (C173\u2013C174, citations) support the conclusion of independent evolution. The absence of Spherulin (C175) and non-detection of galaxin-like proteins in Vaceletia skeleton (C176) further support this conclusion.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C180",
-      "C181",
-      "C212"
-    ],
-    "result": "The authors conclude that the gene families involved in biomineralization (specialized carbonic anhydrases, bicarbonate transporters, galaxin-like proteins) are key parts of a pre-adapted carbonate 'biomineralization toolkit' inherited from the common ancestor of calcareous sponges and corals. Gene duplication and neofunctionalization of this original gene pool gave rise to dedicated biomineralization genes that could further differentiate to refine biological control of the process.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C180\u2013C181, C212 synthesize the major findings into an evolutionary framework consistent with the 'biomineralization toolkit' hypothesis (C1, C17). The evidence for shared gene families (C180\u2013C181) is supported by the identification of similar carbonic anhydrases, bicarbonate transporters, and galaxin-like proteins in both lineages. The role of gene duplication and neofunctionalization (C212) is well-supported by genomic and expression analyses (C192\u2013C202). However, the claim of inheritance from a common ancestor (C180) is an inference that requires additional phylogenetic evidence beyond the scope of this study.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R16",
     "claim_ids": [
       "C53",
       "C54",
@@ -289,115 +232,238 @@
       "C57",
       "C58"
     ],
-    "result": "GO-term enrichment analysis of genes overexpressed in the oscular region revealed enrichment for biomineralization-relevant terms (skeletal system development, ossification, bone mineralization) and genes similar to extracellular matrix components, growth factors (SciTgfBH similar to BMP2), transcription factors (SciMsx similar to MSX-2), and Wnt pathway components. Other enriched terms related to morphogenesis, cell differentiation, signaling, and matrix organization are indicative of the growth zone.",
+    "result": "GO-term enrichment analysis of genes overexpressed in the oscular region revealed enrichment for biomineralization-relevant terms (skeletal system development, ossification, bone mineralization) and genes similar to vertebrate biomineralization-associated proteins (Fibrilin-1, collagens, V-type proton ATPase, FGFR2, BMP2-like SciTgfBH, MSX-2-like SciMsx), as well as Wnt pathway components.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C53\u2013C58 are supported by GO-term enrichment analysis with appropriate methodology (topGO, Fisher's exact test, REVIGO summarization). The enrichment for biomineralization-related terms (C53) validates the experimental approach. The identification of specific genes (C54\u2013C56) and pathways (C58) is data-driven. The interpretation that enriched terms reflect the growth zone (C57) is reasonable. However, GO-term analysis relies on annotations from other organisms, which may not fully capture sponge-specific biology.",
+    "evaluation": "Claims C53-C58 describe GO-term enrichment results that validate the DGE approach and provide functional context. The identification of genes with similarity to vertebrate biomineralization proteins is interesting, though the functional significance of these similarities in sponges requires further investigation. The methodology (topGO with Fisher's exact test) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Comparative analysis shows that the biomineralization machinery of calcareous sponges is distinct from other sponge groups. Similarity to the sclerosponge Vaceletia is limited to subtilisin-like proteases and carbonic anhydrases (which belong to larger gene families and were likely independently recruited), while proteins of presumably intracellular origin found in both may represent contamination or ubiquitous ECM components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 and C175-C181 present comparative analyses showing limited similarity between calcareous sponge and demosponge biomineralization. The interpretation that shared proteins were independently recruited is supported by phylogenetic analyses cited from previous work (C179). The assessment of intracellular proteins as likely contaminants (C106) is reasonable and appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Galaxin-like sequences were detected in other sponge classes (one each in Homoscleromorpha and Hexactinellida species, four in Vaceletia transcriptome) and are part of PANTHER family PTHR34490 (623 proteins in InterPro) occurring across animal phyla and other eukaryotes. However, these proteins differ substantially from calcarins: hexactinellid and homoscleromorph proteins are large (~5000 aa) with multiple recognizable domains, while the galaxin-like region comprises only ~200 aa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C146 describe the broader distribution of galaxin-like proteins with appropriate characterization of their differences from calcarins. The database searches appear thorough, and the structural differences are clearly described. The presence in non-calcifying organisms (C146, C191) is important for understanding the evolutionary origin of these proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C202",
+      "C203"
+    ],
+    "result": "In the coral A. millepora, Galaxin1 and Galaxin2 are located adjacently on the genome, and galaxin-like proteins occur in pairs or triplets separated by at most two short genes, suggesting that gene duplication is a typical pattern in galaxins and galaxin-like proteins similar to that observed in calcareous sponges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 and C202-C203 describe genomic organization in corals that parallels the pattern observed in S. ciliatum. This supports the parallel evolution hypothesis. However, the analysis is limited to A. millepora, and functional data linking these genomic arrangements to expression patterns would strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "The founder cell-specific carbonic anhydrase gene CA2 is located on the reverse strand of chromosome 4, flanked by non-biomineralizing carbonic anhydrases CA8 and CA3 on the forward strand, providing additional evidence for gene duplication followed by neofunctionalization. A similar process gave rise to the coral-specific bicarbonate transporter SLC4\u03b3, demonstrating that similar genes in both lineages were independently duplicated and recruited for biomineralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 and C204-C206 describe genomic organization of carbonic anhydrases supporting the gene duplication/neofunctionalization model. The parallel to coral SLC4\u03b3 (C205, citing Tinoco et al., 2023) strengthens the argument for independent recruitment of similar gene families. The genomic location and strand orientation provide strong circumstantial evidence for the proposed evolutionary scenario.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C100",
-      "C101",
-      "C102"
+      "C166",
+      "C168",
+      "C169",
+      "C174"
     ],
-    "result": "Comparison of S. ciliatum spicule matrix proteins with Vaceletia skeletal matrix proteins showed limited similarity: only subtilisin-like proteases are shared among specialized biomineralization proteins. Eight additional proteins of presumably intracellular origin (histones, actin, tubulin, elongation factor 1a, mitochondrial ATP synthase alpha) were found in both proteomes but were not overexpressed in S. ciliatum oscular region and may represent ubiquitous extracellular matrix components or contamination.",
+    "result": "The authors speculate that calcarins may have similar roles to galaxins in corals (providing structural framework or influencing crystal nucleation and growth), potentially playing a role in calcium carbonate granule formation near sclerocyte membranes and influencing crystallographic features through differences in calcarin composition between spicule types.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C100\u2013C102 are supported by comparative proteomic analysis with appropriate citation (Germer et al., 2015). The limited overlap (C100) and identification of intracellular proteins (C101) are clearly documented. The interpretation that intracellular proteins may be contaminants or non-specific components (C102) is reasonable and consistent with previous studies (citations provided). The exclusion of these proteins from specialized biomineralization functions is appropriate.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166, C168, C169, and C174 are explicitly speculative hypotheses about calcarin function. While these are reasonable hypotheses based on the data (presence in matrix, expression patterns, similarity to galaxins), they lack direct experimental evidence. The speculation is appropriately qualified in the text, but functional studies would be needed to test these hypotheses.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C130",
-      "C131",
-      "C132",
-      "C133",
-      "C134",
-      "C135",
-      "C136",
-      "C137"
+      "C208",
+      "C209",
+      "C210",
+      "C212"
     ],
-    "result": "No other sponge proteins grouped with S. ciliatum calcarins in OrthoFinder analysis, though BLASTp detected a few galaxin-like sequences in other sponges: one in Homoscleromorpha, one in each Hexactinellida species, and four in Vaceletia transcriptome (not in skeletal proteome). Hexactinellid and homoscleromorph proteins are large (~5000 amino acids) with signal peptides and multiple recognizable domains (fibronectin type III, laminin EGF), with only ~200 amino acids from the di-cysteine region. Demosponges Ephydatia muelleri and Tethya wilhelma lack galaxin-like sequences.",
+    "result": "The authors acknowledge that understanding the gene regulatory networks controlling biomineralization (e.g., what triggers founder-to-thickener cell transitions) requires further research. They speculate that genes in the 'midnightblue' module enriched for regulatory GO terms and components of Wnt/BMP signaling pathways may be involved, but note that current methods cannot distinguish biomineralization-specific regulation from parallel growth and differentiation processes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C130\u2013C137 are supported by OrthoFinder and BLASTp analyses. The absence of calcarins in other sponge classes (C130, C137) and the structural differences of galaxin-like proteins in hexactinellids and homoscleromorphs (C133, C135\u2013C136) support the conclusion that calcarins are specific to calcareous sponges. The presence of signal peptides (C134) is appropriately inferred. The finding that Vaceletia galaxin-like sequences are not in the skeletal proteome (C131, citation) is consistent with their non-biomineralization function.",
+    "evaluation": "Claims C208-C210 and C212 appropriately identify limitations and future directions. The acknowledgment that the current study identifies effector genes but not regulatory mechanisms is important. The speculation about regulatory genes (C209-C210) is reasonable but clearly presented as requiring further investigation. This represents good scientific practice in acknowledging limitations.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C138",
-      "C139",
-      "C140"
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
     ],
-    "result": "Galaxins and galaxin-like proteins are attributed to PANTHER family PTHR34490, with 623 proteins currently annotated in InterPro. These proteins occur in several animal phyla, other eukaryotes, and archaeans, including non-skeleton-forming cnidarians (Hydra, Actinia, Exaiptasia, Nematostella).",
+    "result": "The introduction presents established knowledge about animal biomineralization, including the rapid emergence of mineralized structures during the Ediacaran-Cambrian transition, the 'biomineralization toolkit' hypothesis, and the role of gene duplication and neofunctionalization in the evolution of biomineralization. Sponges are identified as the oldest extant phylum with mineralized structures.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C138\u2013C140 are supported by database analysis (PANTHER, InterPro). The widespread distribution of galaxin-like proteins (C139\u2013C140) indicates they are not exclusively biomineralization proteins, which is consistent with the authors' interpretation (C186). This contextualizes the calcarins within a broader protein family and supports the hypothesis of recruitment for biomineralization (C183).",
+    "evaluation": "Claims C1-C2 and C11-C18 present background knowledge appropriately cited from the literature. These claims establish the conceptual framework for the study. The characterization of sponges as the oldest extant phylum with mineralized structures (C2) is consistent with current understanding, though the exact phylogenetic relationships and timing remain subjects of ongoing research.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
-      "C159",
-      "C160",
-      "C162",
-      "C163"
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
     ],
-    "result": "The authors speculate that calcarins may function similarly to coral galaxins, either providing a structural framework for the growing biomineral or influencing nucleation and growth of carbonate crystals. They hypothesize that secreted calcarins may play a role in forming calcium carbonate granules near sclerocyte membranes and that differences in calcarin composition between spicule types may influence their crystallographic features and macromorphology.",
+    "result": "The introduction reviews prior knowledge about coral and sponge biomineralization, including the identification of key genes in corals (SLC4\u03b3, galaxins, acidic proteins) and the limited knowledge of genetic mechanisms in calcareous sponges (a few carbonic anhydrases, bicarbonate transporters, and acidic proteins known, but skeletal matrix proteins not yet identified).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C159\u2013C160, C162\u2013C163 are speculative (explicitly noted in evidence_type). While the speculation is reasonable based on structural similarities to galaxins (C159, citations) and recent findings about granule formation (C161, citation), direct functional evidence is lacking. The hypotheses about calcarin roles (C162\u2013C163) are plausible but require experimental validation (e.g., functional assays, crystallographic analysis of spicules with different calcarin compositions). These are appropriate directions for future research but cannot be considered supported results.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C37 accurately summarize prior knowledge from the literature, appropriately citing previous work including the authors' own studies. The identification of the knowledge gap regarding skeletal matrix proteins in calcareous sponges (C37) provides clear motivation for the current study. The citations appear appropriate and the characterizations accurate.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R21",
     "claim_ids": [
-      "C203",
-      "C204",
-      "C205",
-      "C206",
-      "C207"
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
     ],
-    "result": "The authors acknowledge that while they identified biomineralization genes at the effector level, understanding the underlying gene regulatory networks requires further research. They speculate that genes in the 'midnightblue' module enriched for regulatory GO terms and cell-cell signaling components (Wnt, BMP pathways) may be key players, but note that the methods used cannot differentiate biomineralization-specific processes from parallel growth and differentiation processes in the apical region and regeneration.",
+    "result": "The study describes the anatomy and spicule formation in S. ciliatum, including the tube-shaped body structure with radial tubes, the role of sclerocytes in spicule formation (founder cells initiating elongation, thickener cells adding material), and the increased spicule production in the apical growth zone with specific arrangements of different spicule types.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C203\u2013C207 appropriately acknowledge limitations of the current study and identify areas for future research. The speculation about regulatory networks (C204\u2013C205) is reasonable based on GO-term enrichment and known roles of Wnt/BMP pathways in other systems (citations), but lacks direct evidence. The acknowledgment that the methods cannot differentiate biomineralization from other processes (C207) is an important limitation that affects interpretation of the regulatory gene candidates. These are appropriate caveats rather than supported results.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 provide anatomical and biological context for the study, combining established knowledge (appropriately cited, e.g., C42, C44, C47) with observations from the current study (e.g., C38, C40, C50 referencing Figure 1). This descriptive information is well-supported by the figures and provides necessary background for interpreting the molecular results.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R22",
     "claim_ids": [
-      "C182",
-      "C183",
-      "C188"
+      "C187",
+      "C188",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
     ],
-    "result": "The authors conclude that high sequence divergence within calcarins, galaxins, and galaxin-like proteins makes resolved phylogenetic analysis impossible. They speculate that the likeliest origin is recruitment of secreted di-cysteine-rich proteins with other functions and probably different origins, though it remains unclear whether galaxin-like proteins generally have common or multiple convergent origins.",
+    "result": "The authors discuss the evolutionary origin of calcarins and galaxins, noting that high sequence divergence makes resolved phylogenetic analysis impossible. They propose that these proteins likely originated from recruitment of secreted di-cysteine-rich proteins with other functions, possibly from different origins. Coral galaxins may have arisen through repeated duplication of motifs, while calcareous sponge calcarins lack such detailed repeat structures.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C182\u2013C183, C188 acknowledge significant uncertainty about evolutionary origins. The statement about phylogenetic analysis limitations (C182) is supported by the observed sequence divergence (C125, C182). However, the speculation about recruitment of di-cysteine-rich proteins (C183) and the uncertainty about common vs. convergent origins (C188) reflect the limits of the current data. The presence of galaxin-like proteins in non-calcifying organisms (C140, C186) supports the recruitment hypothesis, but definitive resolution requires additional phylogenetic and functional studies.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C196 present reasonable evolutionary interpretations given the limitations of the data. The acknowledgment that phylogenetic analysis is impossible due to sequence divergence (C187) is appropriate. The speculation about origins (C188, C195-C196) is clearly presented as such and based on observed structural features. The distinction between coral and sponge patterns (C196) is data-supported.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R23",
     "claim_ids": [
-      "C213"
+      "C5",
+      "C6",
+      "C213",
+      "C214",
+      "C217"
     ],
-    "result": "The authors suggest that coral biomineralization may equally depend on small-scale spatial and temporal expression changes to fine-tune calcification, based on single-cell expression data from coral calicoblasts, and note this aspect requires further study and could help predict coral responses to environmental changes.",
+    "result": "The study concludes that fine-tuned gene regulation through varied spatial and temporal expression patterns is crucial for biomineralization control in S. ciliatum, and that gene duplication and neofunctionalization have refined the biological control of the biomineralization process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C213-C214, C217 present conclusions well-supported by the expression data (C69-C87) and genomic analyses (C147-C155, C197-C207). The emphasis on fine-tuned regulation is justified by the detailed expression patterns observed. These represent appropriate synthesis of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C218"
+    ],
+    "result": "The authors suggest that coral biomineralization may equally depend on small-scale spatial and temporal expression changes to fine-tune calcification, based on single-cell expression data, and that this aspect requires further study and could help predict coral responses to environmental changes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claim C213 is based on limited analysis of coral single-cell data (C88\u2013C89) and extrapolates from sponge findings. While the nonoverlapping expression patterns in coral calicoblasts (C88) suggest spatiotemporal regulation, the functional significance and relevance to environmental responses are speculative. The claim appropriately notes that further study is required, but the connection to predicting responses to global environmental changes is not supported by the presented data. This is an interesting hypothesis for future research rather than a supported result.",
+    "evaluation": "Claim C218 extends the findings to corals and speculates about implications for climate change responses. While the single-cell data analysis (C88-C89) supports the first part, the connection to environmental responses is highly speculative and not directly supported by data in this study. This represents reasonable speculation about future research directions but should not be considered a supported conclusion of the current work.",
     "result_type": "MINOR"
   }
 ]

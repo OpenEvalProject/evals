@@ -353,14 +353,14 @@
     ]
   },
   {
-    "claim_id": "C28",
-    "claim": "The practical force to constrict the apical surface was attenuated by the deformation when lateral surfaces were restricted to be straight.",
+    "claim_id": "C29",
+    "claim": "The difference between vertex model and cellular Potts model results was due to the straight lateral surface imposed on the vertex model.",
     "claim_type": "EXPLICIT",
-    "source": "indicating that the practical force to constrict the apical surface was attenuated by the deformation.",
+    "source": "These results indicate that the difference between the vertex model and the cellular Potts model results was due to the straight lateral surface imposed on the vertex model, a restriction that seems not natural for epithelial cells.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference from the quadratic energy relationship.",
+    "evidence": "This is an inference from the energy analysis comparing the two models.",
     "evidence_type": [
       "INFERENCE",
       "DATA"
@@ -368,27 +368,27 @@
   },
   {
     "claim_id": "C30",
-    "claim": "When the practical constricting force remained constant, the inner cell would remain in the columnar shape.",
+    "claim": "The cellular Potts model simulation with increased apical surface contractility reproduced a phenotype of endocytosis down-regulation.",
     "claim_type": "EXPLICIT",
-    "source": "indicating that a cell could shrink its apical surface without attenuating the constricting force. When the practical constricting force remained constant, the inner cell would remain in the columnar shape.",
+    "source": "Also, we expect that the cellular Potts model simulation with the increased apical surface contractility reproduced a phenotype of endocytosis down-regulation as discussed later.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference from the linear energy relationship.",
+    "evidence": "This is a speculation by the authors to be discussed later.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "SPECULATION",
+      "INFERENCE"
     ]
   },
   {
     "claim_id": "C31",
-    "claim": "The difference between vertex model and cellular Potts model results was due to the straight lateral surface imposed on the vertex model.",
+    "claim": "Apical constriction requires a mechanism to simultaneously shrink the apical surface among cells in a cluster and a mechanism to keep the lateral surface straight.",
     "claim_type": "EXPLICIT",
-    "source": "These results indicate that the difference between the vertex model and the cellular Potts model results was due to the straight lateral surface imposed on the vertex model, a restriction that seems not natural for epithelial cells.",
+    "source": "Since the cellular Potts model simulation indicated that the increased apical surface contractility could not drive the apical constriction, we revisited requirements for the apical constriction. It requires (1) a mechanism to simultaneously shrink the apical surface among cells in a cluster, and (2) a mechanism to keep the lateral surface straight.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference from the energy landscape analysis.",
+    "evidence": "This is an inference from the simulation results.",
     "evidence_type": [
       "INFERENCE",
       "DATA"
@@ -396,15 +396,14 @@
   },
   {
     "claim_id": "C32",
-    "claim": "The cellular Potts model simulation with increased apical surface contractility reproduced a phenotype of endocytosis down-regulation.",
+    "claim": "The simultaneous apical shrinkage will increase pressures in cells, but the increase will be synchronized and the pressure will be balanced.",
     "claim_type": "EXPLICIT",
-    "source": "Also, we expect that the cellular Potts model simulation with the increased apical surface contractility reproduced a phenotype of endocytosis down-regulation as discussed later.",
+    "source": "Actually, the condition (2) can be satisfied when the condition (1) is achieved because the simultaneous apical shrinkage will increase the pressures in the cells, but the increase will also be synchronized and thus the pressure will be balanced.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculation about the interpretation of the simulation results.",
+    "evidence": "This is a logical inference about pressure balance.",
     "evidence_type": [
-      "SPECULATION",
       "INFERENCE"
     ]
   },
@@ -424,34 +423,7 @@
     ]
   },
   {
-    "claim_id": "C34",
-    "claim": "The energy function of the partitioned perimeters elasticity has the feature that both the function and its derivative increase with respect to apical width.",
-    "claim_type": "EXPLICIT",
-    "source": "The energy function of the partitioned perimeters elasticity (Equation 3) has a such feature",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a mathematical property of the proposed model.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C35",
-    "claim": "The partitioned perimeters elasticity may correspond to the stretching elasticity of cell membrane.",
-    "claim_type": "EXPLICIT",
-    "source": "and it may correspond to the stretching elasticity of cell membrane (Helfrich, 1973)",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a speculation about the physical basis of the model with citation.",
-    "evidence_type": [
-      "SPECULATION",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C38",
+    "claim_id": "C36",
     "claim": "Simulations with decreased elastic reference value succeeded in invaginating the tissue with various parameters.",
     "claim_type": "EXPLICIT",
     "source": "To validate our new model, we simulated the epithelial cell monolayer with the decreased elastic reference value (Figure 4a, Figure 4\u2014video 1). The inner cells shrank the apical surface simultaneously, and they were deformed into the wedge shape with fluctuating but almost straight lateral surfaces, succeeding in invaginating the tissue with various parameters.",
@@ -459,13 +431,13 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This describes simulation results shown in Figure 4a.",
+    "evidence": "This describes successful simulation results shown in Figure 4a.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C39",
+    "claim_id": "C37",
     "claim": "The tissue apical surface was kept relatively flat when the surface elastic modulus was high even though cells adopted wedge shape.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, the tissue apical surface was kept relatively flat when the surface elastic modulus was high even though the cells adopted the wedge shape (Figure 4b).",
@@ -479,37 +451,36 @@
     ]
   },
   {
-    "claim_id": "C40",
-    "claim": "The gradient contractility model with parabola-shaped gradient enabled cells to shrink apical surface simultaneously, but often some cells shrank faster and were delaminated by chance.",
+    "claim_id": "C38",
+    "claim": "The gradient contractility model enabled cells to shrink apical surface simultaneously, but often some cells shrank faster than neighbors and were delaminated by chance.",
     "claim_type": "EXPLICIT",
-    "source": "We also tested another model for the simultaneous apical shrinkage, a gradient contractility model (Spahn and Reuter, 2013; Rauzi et al., 2015). If the inner cells bear higher apical surface contractility than the edge cells, that inner cells may shrink their apical surface. To synchronize the apical shrinkage, the apical contractility must follow a parabola shape gradient. Even though the gradient contractility enabled the cells to shrink the apical surface simultaneously, often some of the cells shrank faster than neighbors and were delaminated by chance (Figure 4\u2014figure supplement 1).",
+    "source": "Even though the gradient contractility enabled the cells to shrink the apical surface simultaneously, often some of the cells shrank faster than neighbors and were delaminated by chance (Figure 4\u2014figure supplement 1).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
     "evidence": "This describes results from testing an alternative model shown in Figure 4\u2014figure supplement 1.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C41",
-    "claim": "The apical constriction by elasticity remodeling could bend tissue with thinner and thicker cells.",
+    "claim_id": "C39",
+    "claim": "The apical constriction model was robust against cell shapes, working with thinner and thicker cells.",
     "claim_type": "EXPLICIT",
-    "source": "Next we simulated the apical constriction by the elasticity remodeling with various conditions. The apical constriction could bend the tissue with thinner and thicker cells (Figure 5\u2014figure supplement 1), demonstrating that the model was robust against cell shapes.",
+    "source": "The apical constriction could bend the tissue with thinner and thicker cells (Figure 5\u2014figure supplement 1), demonstrating that the model was robust against cell shapes.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This describes simulation results shown in Figure 5\u2014figure supplement 1.",
+    "evidence": "This describes robustness testing results shown in Figure 5\u2014figure supplement 1.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C42",
-    "claim": "When surrounding cells were assigned an affinity to the apical ECM, the cells were spread on the ECM and pushed center cells toward the midline, slightly promoting invagination.",
+    "claim_id": "C40",
+    "claim": "When surrounding cells were assigned an affinity to the apical ECM, the invagination was slightly promoted.",
     "claim_type": "EXPLICIT",
     "source": "When the surrounding cells were assigned an affinity to the apical ECM, the cells were spread on the ECM and pushed the center cells toward the midline, and the invagination was slightly promoted (Figure 5\u2014figure supplement 2).",
     "source_type": [
@@ -522,35 +493,34 @@
     ]
   },
   {
-    "claim_id": "C43",
+    "claim_id": "C41",
     "claim": "Tissue invagination was largely promoted by the supracellular myosin cable with a wide range of pulling force and other parameters.",
     "claim_type": "EXPLICIT",
-    "source": "We also simulated the apical constriction by the elasticity remodeling with additional supracellular myosin cable (Figure 5). The edge pale green cells adjacent to the center pale blue cells were assigned the potential energy so that their adherens junctions were pulled toward the midline (Equation 4). Surprisingly, the tissue invagination was largely promoted by the supracellular myosin cable with a wide range of the pulling force and also wide ranges of other parameters.",
+    "source": "Surprisingly, the tissue invagination was largely promoted by the supracellular myosin cable with a wide range of the pulling force and also wide ranges of other parameters.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This describes simulation results shown in Figure 5.",
+    "evidence": "This describes simulation results from Figure 5.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C44",
+    "claim_id": "C42",
     "claim": "Combining both the supracellular myosin cable and the cell surface elasticity made a sharp bending when the pulling force was sufficiently high.",
     "claim_type": "EXPLICIT",
     "source": "However, combining both the supracellular myosin cable and the cell surface elasticity made a sharp bending when the pulling force acting on the adherens junction was sufficiently high.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes simulation results from combining mechanisms.",
+    "evidence": "This describes a synergistic effect observed in simulations.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C45",
-    "claim": "During tracheal pit formation, there was no obvious change in the distribution pattern of cellular junctional tension inside and around the tracheal pit.",
+    "claim_id": "C43",
+    "claim": "During tracheal pit invagination, there was no obvious change in the distribution pattern of cellular junctional tension inside and around the tracheal pit.",
     "claim_type": "EXPLICIT",
     "source": "During the process, there was no obvious change in the distribution pattern of cellular junctional tension inside and around the tracheal pit (Figure 6b).",
     "source_type": [
@@ -563,7 +533,7 @@
     ]
   },
   {
-    "claim_id": "C46",
+    "claim_id": "C44",
     "claim": "The apical surface area decreased and the relative pressure increased among the invaginated cells during tracheal pit formation.",
     "claim_type": "EXPLICIT",
     "source": "On the other hand, the apical surface area decreased and the relative pressure increased among the invaginated cells (Figure 6c\u2013e).",
@@ -577,36 +547,37 @@
     ]
   },
   {
-    "claim_id": "C47",
-    "claim": "Variances of the apical area and the relative pressure did not increase during tracheal pit formation.",
+    "claim_id": "C45",
+    "claim": "Variances of the apical area and the relative pressure did not increase during tracheal pit formation, suggesting actual pressure value was increased simultaneously by cell deformation.",
     "claim_type": "EXPLICIT",
     "source": "Note that variances of the apical area and the relative pressure did not increase (Figure 6d and e), suggesting that an actual pressure value was also increased simultaneously by the cell deformation.",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is an observation from the data shown in Figure 6d and e.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C48",
-    "claim": "The lateral cell-cell junction of the tracheal pit cell was kept straight by the increasing but balanced pressure.",
-    "claim_type": "EXPLICIT",
-    "source": "These results were consistent with our model, indicating that the lateral cell-cell junction of the tracheal pit cell was kept straight by the increasing but balanced pressure.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference from the tracheal pit analysis results.",
+    "evidence": "This is an inference from the data shown in Figure 6d and e.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C49",
-    "claim": "The increased apical surface contractility could not drive the apical constriction in the cellular Potts model.",
+    "claim_id": "C46",
+    "claim": "The tracheal pit results were consistent with the model that lateral cell-cell junction was kept straight by increasing but balanced pressure.",
+    "claim_type": "EXPLICIT",
+    "source": "These results were consistent with our model, indicating that the lateral cell-cell junction of the tracheal pit cell was kept straight by the increasing but balanced pressure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference connecting the experimental observations to the model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The increased apical surface contractility could not drive apical constriction in the cellular Potts model simulation.",
     "claim_type": "EXPLICIT",
     "source": "In this study, we demonstrated that the increased apical surface contractility could not drive the apical constriction",
     "source_type": [
@@ -618,20 +589,20 @@
     ]
   },
   {
-    "claim_id": "C50",
+    "claim_id": "C48",
     "claim": "When cells were assigned high apical surface contractility, cells became rounded and delaminated one by one from edges in the cellular Potts model simulation.",
     "claim_type": "EXPLICIT",
     "source": "When the cells were assigned a high apical surface contractility, the cells became rounded and delaminated one by one from edges in the cellular Potts model simulation.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This summarizes simulation results.",
+    "evidence": "This summarizes the simulation results.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C51",
+    "claim_id": "C49",
     "claim": "The vertex model simulation was substantially affected by the straight lateral surface.",
     "claim_type": "EXPLICIT",
     "source": "However, the vertex model simulation was substantially affected by the straight lateral surface (Figure 3d\u2013f), which was not natural for the epithelial cells.",
@@ -639,14 +610,14 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is an inference from the energy landscape analysis shown in Figure 3.",
+    "evidence": "This is an inference from the energy analysis shown in Figure 3d-f.",
     "evidence_type": [
-      "INFERENCE",
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C50",
     "claim": "The difference in simulation results between the models could be due to whether cell rearrangement was included or not.",
     "claim_type": "EXPLICIT",
     "source": "Thus the difference in simulation results between the models could be due to whether the cell rearrangement was included or not.",
@@ -660,29 +631,55 @@
     ]
   },
   {
-    "claim_id": "C53",
-    "claim": "The cellular Potts model included the curved cell surface and cell rearrangement innately.",
+    "claim_id": "C51",
+    "claim": "The cellular Potts model included curved cell surface and cell rearrangement innately, elucidating the importance of those factors.",
     "claim_type": "EXPLICIT",
     "source": "In contrast to the vertex model, the cellular Potts model included the curved cell surface and the cell rearrangement innately, it elucidated the importance of those factors.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes a property of the cellular Potts model.",
+    "evidence": "This is an inference about the advantages of the cellular Potts model.",
     "evidence_type": [
-      "KNOWLEDGE"
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The requirement of simultaneous contraction is consistent with the non-autonomous disruption of apical constriction.",
+    "claim_type": "EXPLICIT",
+    "source": "For the apical constriction, we considered the modified apical surface elasticity as a plausible underlying mechanism, where the synchronized decrease in cell volume and increase in pressure balances the pressure between the cells and keeps the lateral cell-cell interface straight. The requirement of simultaneous contraction is also consistent with the non-autonomous disruption of apical constriction (Guglielmi et al., 2015; Galea et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This connects the model predictions to experimental observations with citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The cellular Potts model reproduced tissue invagination with a wide range of parameter values, indicating robustness of the model.",
+    "claim_type": "EXPLICIT",
+    "source": "With the elasticity-based apical constriction model, the cellular Potts model reproduced a tissue invagination. It succeeded with a wide range of parameter values, indicating a robustness of the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This summarizes the simulation results demonstrating model robustness.",
+    "evidence_type": [
+      "DATA"
     ]
   },
   {
     "claim_id": "C54",
-    "claim": "The requirement of simultaneous contraction is consistent with the non-autonomous disruption of apical constriction.",
+    "claim": "The cellular Potts model intrinsically included a high degree of freedom for cell shape, cell rearrangement, and fluctuation, which allowed finding the importance of balanced pressure.",
     "claim_type": "EXPLICIT",
-    "source": "The requirement of simultaneous contraction is also consistent with the non-autonomous disruption of apical constriction (Guglielmi et al., 2015; Galea et al., 2021).",
+    "source": "That is, we could find the importance of the balanced pressure because the cellular Potts model intrinscally included a high degree of freedom for the cell shape, the cell rearrangement, and the fluctuation.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This connects the model's predictions with experimental observations from cited studies.",
+    "evidence": "This is an inference about why the cellular Potts model revealed new insights.",
     "evidence_type": [
-      "CITATION",
       "INFERENCE"
     ]
   },
@@ -701,72 +698,87 @@
   },
   {
     "claim_id": "C57",
-    "claim": "In many tissues, the apical myosin was found not permanently active but its flow, activation, and resultant apical surface contraction was pulsed, followed by partial relaxation.",
+    "claim": "If the apical myosin would be condensed by the shrinkage of the apical surface, it would increase the apical tension in the shrinking cell and promote cell delamination further.",
+    "claim_type": "EXPLICIT",
+    "source": "If we presumed that the apical myosin would be condensed by the shrinkage of the apical surface, it would increase the apical tension in the shrinking cell and is expected to promote the cell delamination further.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about the effect of myosin condensation.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "In many epithelial tissues, the apical myosin was found not permanently active but its flow, activation, and resultant apical surface contraction was pulsed, followed by partial relaxation.",
     "claim_type": "EXPLICIT",
     "source": "In many tissues, the apical myosin was found not permanently active but its flow, activation, and resultant apical surface contraction was pulsed, followed by a partial relaxation (Martin et al., 2009; Solon et al., 2009; Martin et al., 2010; Mason et al., 2013; Booth et al., 2014; Kerridge et al., 2016; Mason et al., 2016; Krueger et al., 2020; Martin and Goldstein, 2014; Miao and Blankenship, 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This summarizes findings from multiple cited studies.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "The contraction and partial relaxation is iterated to decrease the apical surface progressively, called ratchet model or ratcheting mechanism.",
-    "claim_type": "EXPLICIT",
-    "source": "The contraction and partial relaxation is iterated to decrease the apical surface progressively, and it is called ratchet model or ratcheting mechanism.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a known mechanism in the field.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "Some studies pointed out an involvement of endocytosis in the apical constriction.",
-    "claim_type": "EXPLICIT",
-    "source": "While it is yet to be clarified how the ratcheting prevents the apical surface from expanding back to its original width during the relaxation, some studies pointed out an involvement of the endocytosis in the apical constriction (Lee and Harland, 2010; Mateus et al., 2011; Ossipova et al., 2014; Ossipova et al., 2015; Le and Chung, 2021), and especially in its ratcheting (Miao et al., 2019; Kowalczyk et al., 2021; Chen and He, 2022).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This references studies that implicate endocytosis.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C60",
-    "claim": "When apical endocytosis was impaired but myosin activity was retained, cells exhibited pulsed apical contraction but fully turned back to their original shape in the following relaxation.",
-    "claim_type": "EXPLICIT",
-    "source": "When the apical endocytosis was impaired but the myosin activity was retained, cells exhibited the pulsed apical contraction but fully turned back to their original shape in the following relaxation.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This summarizes experimental findings.",
+    "evidence": "This describes observed myosin dynamics with multiple citations.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
     ]
   },
   {
+    "claim_id": "C59",
+    "claim": "The contraction and partial relaxation is iterated to decrease the apical surface progressively, called ratchet model or ratcheting mechanism.",
+    "claim_type": "EXPLICIT",
+    "source": "The contraction and partial relaxation is iterated to decrease the apical surface progressively, and it is called ratchet model or ratcheting mechanism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines a known mechanism in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Some studies pointed out an involvement of endocytosis in the apical constriction and especially in its ratcheting.",
+    "claim_type": "EXPLICIT",
+    "source": "While it is yet to be clarified how the ratcheting prevents the apical surface from expanding back to its original width during the relaxation, some studies pointed out an involvement of the endocytosis in the apical constriction (Lee and Harland, 2010; Mateus et al., 2011; Ossipova et al., 2014; Ossipova et al., 2015; Le and Chung, 2021), and especially in its ratcheting (Miao et al., 2019; Kowalczyk et al., 2021; Chen and He, 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This references studies on endocytosis involvement with citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
     "claim_id": "C61",
+    "claim": "When apical endocytosis was impaired but myosin activity was retained, cells exhibited pulsed apical contraction but fully turned back to their original shape in the following relaxation.",
+    "claim_type": "EXPLICIT",
+    "source": "When the apical endocytosis was impaired but the myosin activity was retained, cells exhibited the pulsed apical contraction but fully turned back to their original shape in the following relaxation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes experimental observations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
     "claim": "Miao et al., 2019 downregulated endocytosis in a Drosophila gastrula and observed apical contraction in the edge cells of a mesoderm.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, Miao et al., 2019 downregulated endocytosis in a Drosophila gastrula and observed the apical contraction in the edge cells of a mesoderm which would be invaginated by the apical constriction in the wild type embryo.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This references a specific experimental observation from a cited study.",
+    "evidence": "This describes a specific experimental result with citation.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C62",
+    "claim_id": "C63",
     "claim": "The edge-specific contraction observed by Miao et al., 2019 resembles the result of simulations with increased apical surface contractility.",
     "claim_type": "EXPLICIT",
     "source": "This edge-specific contraction resembles the result of simulations with the increased apical surface contractility (Figure 2)",
@@ -774,7 +786,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This connects experimental observations with simulation results.",
+    "evidence": "This connects experimental observations to simulation results.",
     "evidence_type": [
       "INFERENCE",
       "CITATION",
@@ -782,8 +794,22 @@
     ]
   },
   {
-    "claim_id": "C63",
-    "claim": "The cell membrane is an elastic sheet that bears surface tension when extended, and the surface tension magnitude is proportional to the change from the reference value.",
+    "claim_id": "C64",
+    "claim": "Most preceding studies supposed that endocytosis regulated ratcheting indirectly by facilitating apical actomyosin network remodeling.",
+    "claim_type": "EXPLICIT",
+    "source": "Although most of the preceding studies supposed that the endocytosis regulated the ratcheting indirectly by facilitating apical actomyosin network remodeling, here we would propose that the cell membrane itself increases the apical surface tension by changing the reference value.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This contrasts the authors' proposal with existing interpretations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The cell membrane bears surface tension when extended, and the surface tension magnitude is proportional to the change from the reference value.",
     "claim_type": "EXPLICIT",
     "source": "Since the cell membrane is an elastic sheet, it bears the surface tension when extended, and the surface tension magnitude is proportional to the change from the reference value.",
     "source_type": [
@@ -795,71 +821,42 @@
     ]
   },
   {
-    "claim_id": "C64",
+    "claim_id": "C66",
     "claim": "The reference value of cell membrane is an area when the membrane is not stretched nor compressed, and it can be decreased by endocytosis.",
     "claim_type": "EXPLICIT",
     "source": "The reference value is an area of the membrane when the membrane is not stretched nor compressed, and it can be decreased by the endocytosis.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes how endocytosis affects membrane properties.",
+    "evidence": "This proposes how endocytosis affects membrane properties.",
     "evidence_type": [
-      "KNOWLEDGE",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C65",
-    "claim": "The actomyosin generates pulsed contractility, and the cell apical surface is contracted temporally.",
-    "claim_type": "EXPLICIT",
-    "source": "In summary, we propose that (1) the actomyosin generates pulsed contractility, and the cell apical surface is contracted temporally",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is part of the authors' proposed model.",
-    "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C66",
-    "claim": "The contraction will be fully relaxed without endocytosis.",
-    "claim_type": "EXPLICIT",
-    "source": "(2) the contraction will be fully relaxed without the endocytosis",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is part of the authors' proposed model.",
-    "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
+      "INFERENCE",
+      "SPECULATION"
     ]
   },
   {
     "claim_id": "C67",
-    "claim": "Endocytosis decreases the reference value of the apical surface elasticity during the pulsed contraction.",
+    "claim": "Actin filament linker \u03b2H-spectrin was reported regulating the ratcheting.",
     "claim_type": "EXPLICIT",
-    "source": "(3) the endocytosis decreases the reference value of the apical surface elasticity during the pulsed contraction",
+    "source": "It might be also possible that the remodeling of the apical actomyosin ratchets the relaxation, as actin filament linker \u03b2H-spectrin was also reported regulating the ratcheting (Krueger et al., 2020).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is part of the authors' proposed model.",
+    "evidence": "This references an alternative mechanism with citation.",
     "evidence_type": [
-      "SPECULATION",
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
     "claim_id": "C68",
-    "claim": "After the pulsed contraction and endocytosis, the cell apical surface is partially relaxed.",
+    "claim": "The authors propose a four-step model: (1) actomyosin generates pulsed contractility contracting the apical surface temporally; (2) the contraction will be fully relaxed without endocytosis; (3) endocytosis decreases the reference value of apical surface elasticity during pulsed contraction; and (4) after pulsed contraction and endocytosis, the cell apical surface is partially relaxed.",
     "claim_type": "EXPLICIT",
-    "source": "and (4) after the pulsed contraction and endocytosis, the cell apical surface is partially relaxed (Figure 7a).",
+    "source": "In summary, we propose that (1) the actomyosin generates pulsed contractility, and the cell apical surface is contracted temporally; (2) the contraction will be fully relaxed without the endocytosis; (3) the endocytosis decreases the reference value of the apical surface elasticity during the pulsed contraction; and (4) after the pulsed contraction and endocytosis, the cell apical surface is partially relaxed (Figure 7a).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "This is part of the authors' proposed model illustrated in Figure 7a.",
+    "evidence": "This is the authors' proposed model illustrated in Figure 7a.",
     "evidence_type": [
       "SPECULATION",
       "INFERENCE"
@@ -897,7 +894,7 @@
   },
   {
     "claim_id": "C71",
-    "claim": "When the sporadic pulse of myosin activation is followed by endocytosis, cells undergo simultaneous apical contraction, and the pressure is balanced among cells, keeping the cell lateral cell-cell junction straight and deforming cells into wedge shape.",
+    "claim": "When sporadic pulse of myosin activation is followed by endocytosis, cells undergo simultaneous apical contraction, pressure is balanced among cells, keeping the lateral cell-cell junction straight and deforming cells into wedge shape.",
     "claim_type": "EXPLICIT",
     "source": "When the sporadic pulse of myosin activation is followed by the endocytosis, the cells undergo the simultaneous apical contraction, and then the pressure is balanced among the cells, keeping the cell lateral cell-cell junction straight and deforming the cells into the wedge shape (Figure 7d).",
     "source_type": [
@@ -912,23 +909,23 @@
   },
   {
     "claim_id": "C72",
-    "claim": "Too high myosin activation would prevent the apical constriction.",
+    "claim": "It may be possible that myosin activation is not patterned but pulsed across the entire tissue, while endocytosis is patterned, and the tissue will be bent at the site of increased endocytotic activity.",
     "claim_type": "EXPLICIT",
-    "source": "Another interesting notion was that too high myosin activation would prevent the apical constriction.",
+    "source": "In the actual tissue, the apical localization of the myosin and regulators of the endocytosis were both patterned. However, it may be possible in theory that the myosin activation is not patterned but is pulsed across the entire tissue, while the endocytosis is patterned, and the tissue will be bent at the site of the increased endocytotic activity (Figure 7e).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is a prediction from the model.",
+    "evidence": "This is a theoretical possibility illustrated in Figure 7e.",
     "evidence_type": [
-      "INFERENCE",
       "SPECULATION"
     ]
   },
   {
     "claim_id": "C73",
-    "claim": "Even if apical contraction is synchronized and lateral surface is kept straight so that cells are deformed into wedge shape, too high apical surface tension will try to make the apical surface as short as possible, and the apical surface will be kept flat.",
+    "claim": "Too high myosin activation would prevent apical constriction by keeping the apical surface flat.",
     "claim_type": "EXPLICIT",
-    "source": "Even if the apical contraction is synchronized and the lateral surface is kept straight so that the cells are deformed into the wedge shape, the too high apical surface tension will try to make the apical surface as short as possible, and the apical surface will be kept flat (Figure 7f).",
+    "source": "Another interesting notion was that too high myosin activation would prevent the apical constriction. Even if the apical contraction is synchronized and the lateral surface is kept straight so that the cells are deformed into the wedge shape, the too high apical surface tension will try to make the apical surface as short as possible, and the apical surface will be kept flat (Figure 7f).",
     "source_type": [
       "TEXT",
       "IMAGE"
@@ -941,17 +938,17 @@
   },
   {
     "claim_id": "C74",
-    "claim": "Mechanisms which do not generate apical surface tension, such as zippering or the supracellular myosin cable encircling contracting cells, may promote deep invagination.",
+    "claim": "Mechanisms that do not generate apical surface tension, such as zippering or supracellular myosin cable, may promote deep invagination.",
     "claim_type": "EXPLICIT",
     "source": "On the other hand, mechanisms which does not generate the apical surface tension, such like the zippering (Bahri et al., 2010; Hashimoto et al., 2015; Galea et al., 2017) or the supracellular myosin cable encircling the contracting cells (Nishimura et al., 2007; R\u00f6per, 2012; Chung et al., 2017), may promote the deep invagination.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculation based on the model with citations.",
+    "evidence": "This is a prediction from the model with citations to relevant mechanisms.",
     "evidence_type": [
-      "SPECULATION",
+      "INFERENCE",
       "CITATION",
-      "INFERENCE"
+      "SPECULATION"
     ]
   },
   {
@@ -970,271 +967,16 @@
   },
   {
     "claim_id": "C76",
-    "claim": "The cellular Potts model was first proposed to simulate cell sorting by assigning differential cell adhesion expressed by contact energy.",
+    "claim": "The simulation results were consistent with studies of endocytosis in apical constriction and suggested why and how endocytosis and ratcheting was required for apical constriction.",
     "claim_type": "EXPLICIT",
-    "source": "The model was first proposed to simulate cell sorting by assigning differential cell adhesion, which was expressed by a contact energy.",
+    "source": "In conclusion, we elucidated how distinctively the surface contractility and the surface elasticity would regulate tissue morphogenesis. Our simulation results were consistent with the studies of the endocytosis in apical constriction, and suggested why and how the endocytosis and the ratcheting was required for the apical constriction.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This describes the historical development of the cellular Potts model.",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C77",
-    "claim": "In the basic cellular Potts model, cells are represented by sets of sites in a 2D lattice.",
-    "claim_type": "EXPLICIT",
-    "source": "In the basic cellular Potts model, cells are represented by sets of sites in a 2D lattice (Figure 1a)",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This describes the basic structure of the cellular Potts model shown in Figure 1a.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C78",
-    "claim": "Cell deformation in the cellular Potts model is simulated by repeatedly updating a label on a randomly chosen site.",
-    "claim_type": "EXPLICIT",
-    "source": "and their deformation is simulated by repeatedly updating a label on a randomly chosen site (Figure 1b and b').",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This describes the algorithm of the cellular Potts model shown in Figure 1b and b'.",
-    "evidence_type": [
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C79",
-    "claim": "The cellular Potts model was employed with additional elements and extended to 3D in various studies of cell and tissue-scale phenomena.",
-    "claim_type": "EXPLICIT",
-    "source": "Later, in various studies of cell and tissue-scale phenomena, the cellular Potts model was employed with additional elements and was extended to 3D.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes the evolution of the cellular Potts model.",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C80",
-    "claim": "Fortuna et al., 2020 simulated cell migration with material labels representing nucleus, cytoplasm, and lamellipodium within each cell.",
-    "claim_type": "EXPLICIT",
-    "source": "For example, Fortuna et al., 2020 simulated a cell migration with material labels representing nucleus, cytoplasm, and lamellipodium within each cell.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This references a specific application of the cellular Potts model.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C81",
-    "claim": "To simulate morphogenesis of epithelial tissue with apico-basally polarized cells, intracellular material labels were utilized to represent cell apical surface, lateral cell-cell junction, and basal surface.",
-    "claim_type": "EXPLICIT",
-    "source": "To simulate morphogenesis of an epithelial tissue with apico-basally polarized cells, the intracellular material labels were utilized to represent cell apical surface, lateral cell-cell junction, and basal surface (Belmonte et al., 2016; Adhyapok et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes an extension of the cellular Potts model with citations.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C82",
-    "claim": "The cellular Potts model was combined with a finite element model to simulate how cells generated and were pulled by stress/strain on the extracellular matrix.",
-    "claim_type": "EXPLICIT",
-    "source": "Also, the cellular Potts model was combined with a finite element model so that it simulated how cells generated and were pulled by stress/strain on the extracellular matrix (ECM) (van Oers et al., 2014; Rens and Merks, 2017).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a hybrid modeling approach with citations.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C83",
-    "claim": "The monolayer tissue was represented in a 2D lattice to save on computational cost.",
-    "claim_type": "EXPLICIT",
-    "source": "The monolayer tissue was represented in a 2D lattice in order to save on computational cost",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This explains a design choice in the authors' model.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C84",
-    "claim": "While the general 2D cellular Potts model casts the epithelium plane to the lattice, the authors' model casts the tissue section perpendicular to the plane.",
-    "claim_type": "EXPLICIT",
-    "source": "and while the general 2D cellular Potts model cast the epithelium plane to the lattice, our model cast the tissue section perpendicular to the plane.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a key difference in the authors' modeling approach.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C85",
-    "claim": "In the authors' model, the cell's perimeter was partitioned automatically based on adjacency with other cells and marked as apical, lateral, or basal.",
-    "claim_type": "EXPLICIT",
-    "source": "The cells perimeter was partitioned automatically based on adjacency with other cells, and it was marked as apical, lateral, basal.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a feature of the authors' model.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C86",
-    "claim": "In the authors' model, surface contractility was defined by contact energy.",
-    "claim_type": "EXPLICIT",
-    "source": "In our cellular Potts model, the surface contractility was defined by the contact energy",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes how contractility is represented in the model.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C87",
-    "claim": "The authors assumed that cell surface tension consisted of contractility and elasticity.",
-    "claim_type": "EXPLICIT",
-    "source": "In this study, we assumed that the cell surface tension consisted of contractility and elasticity.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes an assumption in the authors' model.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C88",
-    "claim": "The authors modeled contractility as a constant force to decrease the surface, not dependent on surface width or strain.",
-    "claim_type": "EXPLICIT",
-    "source": "We modeled the contractility as a constant force to decrease the surface, but not dependent on surface width or strain.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes how contractility is modeled.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C89",
-    "claim": "The authors modeled elasticity as a force proportional to the surface strain, working to return the surface to its original width.",
-    "claim_type": "EXPLICIT",
-    "source": "We modeled the elasticity as a force proportional to the surface strain, working to return the surface to its original width.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes how elasticity is modeled.",
-    "evidence_type": [
-      "INFERENCE"
-    ]
-  },
-  {
-    "claim_id": "C90",
-    "claim": "An experiment with cells cultured on a micro pattern showed that myosin activity corresponded well to contractility, and its effect on elasticity, if any, was minor.",
-    "claim_type": "EXPLICIT",
-    "source": "Also, an experiment with cells cultured on a micro pattern showed that the myosin activity corresponded well to the contractility, and its effect on the elasticity, if any, was minor (Labouesse et al., 2015).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This references an experimental finding with citation.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C91",
-    "claim": "When the cell basal and apical surface tensions were equal to the lateral cell-cell junction tension, cells were rounded and disconnected from each other, and the epithelium could not maintain integrity.",
-    "claim_type": "EXPLICIT",
-    "source": "When the cell basal and apical surface tensions were equal to the lateral cell-cell junction tension, cells were rounded and disconnected from each other, and the epithelium could not maintain the integrity (Figure 1\u2014figure supplement 1).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a result from parameter testing shown in Figure 1\u2014figure supplement 1.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C92",
-    "claim": "The tracheal pit is formed in a tracheal placode by apical constriction.",
-    "claim_type": "EXPLICIT",
-    "source": "The tracheal pit is formed in a tracheal placode by the apical constriction (Nishimura et al., 2007; Kondo and Hayashi, 2013).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a biological process with citations.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C93",
-    "claim": "An initially flat apical surface of the tracheal placode tissue was bent to make the pit.",
-    "claim_type": "EXPLICIT",
-    "source": "An initially flat apical surface of the tissue was bent to make the pit (Figure 6a).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This describes an observation shown in Figure 6a.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C94",
-    "claim": "The geometrical tension inference is a method to measure relative junctional tensions and cell pressures from shapes of cells.",
-    "claim_type": "EXPLICIT",
-    "source": "The geometrical tension inference is a method to measure relative junctional tensions and cell pressures from shapes of the cells (Roffay et al., 2021)",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a method with citation.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C95",
-    "claim": "The authors extended 2D Bayesian method to 3D for the measurement of invaginated tissue.",
-    "claim_type": "EXPLICIT",
-    "source": "and we extended 2D Bayesian method (Ishihara and Sugimura, 2012) to 3D for the measurement of invaginated tissue.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This describes a methodological contribution by the authors.",
+    "evidence": "This is a summary of the main conclusions.",
     "evidence_type": [
       "INFERENCE",
-      "CITATION"
+      "DATA"
     ]
   }
 ]

@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C25",
+      "C56",
+      "C57",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors developed a chimeric DNA sequence (CCEN) that combines native centromeric sequences (35 bp of CDEII including the Mif2 footprint, all of CDEIII, and 17 bp downstream) with Widom 601 DNA sequences at the ends. CCEN stably wraps centromeric histone octamers and can be purified by size-exclusion chromatography, unlike constructs containing only CEN3 sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The design and characterization of CCEN is well-documented with experimental evidence. Figure 1A shows the sequence design, Figure 1B-C demonstrates successful purification by SEC, and Table 3 documents that pure CEN3 DNA failed to stably wrap histones while CCEN succeeded. The methodological details are comprehensive and the construct achieves its stated goal of combining native centromeric elements with stabilizing W601 sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C60"
+    ],
+    "result": "Both OA-based and Mif2-based kinetochore assemblies can form functional attachments to microtubules when using either W601-NCPs or CCEN-NCPs, with >78% of beads showing microtubule binding capability. Negative controls without OA or Mif2 showed 0% binding, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The microtubule binding assay data in Figure 2A and Table 1 provide strong evidence with appropriate negative controls. Statistical analysis using Barnard's test shows highly significant differences (p<10^-6) between experimental and control conditions. The result confirms that both inner kinetochore pathways remain functional with the CCEN construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C30",
+      "C31",
+      "C36",
+      "C62"
+    ],
+    "result": "OA-mediated kinetochore assemblies withstand significantly higher rupture forces when assembled on CCEN-NCPs (median 6.0 pN) compared to W601-NCPs (median 4.2 pN), with p=1.87\u00d710^-6. This represents the first evidence that OA distinguishes centromeric from non-centromeric nucleosomes based on DNA sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optical trap rupture force data in Figure 2B-C provide quantitative measurements with appropriate statistical analysis (Kolmogorov-Smirnov test). The ~43% increase in median rupture force is substantial and highly significant. The result is novel as prior work (Hornung et al., 2014) showed OA binds non-specifically to free DNA, suggesting the nucleosome context is critical for sequence preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C32",
+      "C33",
+      "C48",
+      "C63"
+    ],
+    "result": "Mif2-based kinetochore assemblies showed no significant strengthening with CCEN-NCPs (median 2.9 pN) compared to W601-NCPs (median 2.5 pN), p=0.302, despite CCEN containing the complete 35 bp Mif2 footprint from CDEII. This suggests Mif2 requires more than just its footprinted binding site to display sequence preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of significant difference is well-documented with appropriate statistical testing. The result is surprising given prior work (Xiao et al., 2017) showing Mif2 has 100-fold higher affinity for CEN3 DNA, but the authors provide a reasonable interpretation: CCEN lacks 47 bp of CDEII that may be necessary for full Mif2 sequence specificity. The negative result is properly reported and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C37",
+      "C58"
+    ],
+    "result": "Centromeric DNA sequences make significant contributions to the strength of kinetochore attachments, specifically through the OA pathway. The differential effect between free DNA binding (sequence-independent) and nucleosome-wrapped DNA (sequence-dependent) suggests the nucleosome context alters how OA interacts with centromeric sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the differential behavior of OA with CCEN vs W601 NCPs, combined with prior literature showing OA binds non-specifically to free DNA. The authors appropriately acknowledge this could be direct (OA-DNA contacts) or indirect (altered Cse4 N-terminus presentation). The structural data cited (Dendooven et al., 2023) showing OA near wrapped DNA supports plausibility of direct contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Two possible mechanisms are proposed for the enhanced OA-mediated force transmission with CCEN: (1) CCEN DNA may present the Cse4 N-terminus more favorably to OA, or (2) OA may demonstrate sequence preferences only when DNA is bent around a nucleosome. Structural data shows a small segment of OA is near wrapped DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative mechanistic proposals (claims C38-C39 are marked as speculation). While the structural evidence from Dendooven et al., 2023 (C40) supports the plausibility of direct OA-DNA contacts, the current data cannot distinguish between the two proposed mechanisms. Additional experiments (e.g., mutations in OA, altered Cse4 N-terminus) would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Despite prior work showing Mif2 has 100-fold higher affinity for CEN3 DNA-wrapped nucleosomes and footprints a 35 bp region in CDEII, the CCEN construct (which includes this footprint but lacks 47 bp of CDEII) does not confer increased rupture strength. This suggests Mif2 may require a more substantial portion of CEN3 for stable assembly and sequence-specific strengthening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation is reasonable given the experimental results and prior literature. The authors appropriately cite Xiao et al., 2017 for the affinity measurements and footprinting data, and note that current structures lack full-length Mif2. The inference that additional CDEII sequence beyond the footprint may be required is logical, though speculative (C52). The result highlights limitations of the CCEN design for studying Mif2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Structural studies of yeast centromeric nucleosomes have required stabilization methods or non-native DNA sequences. Previous structures either used stabilizing antibodies (Guan et al., 2021) or hybrid DNAs with limited centromeric content (6 bp CDEII), and none included full-length Mif2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This assessment of the structural biology literature is well-supported by appropriate citations and summarized in Table 3. The claims accurately represent the state of the field and provide context for why CCEN represents an advance. The limitation that no structure exists with authentic CEN3 DNA is correctly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work (Hamilton et al., 2020) established a minimal reconstituted kinetochore system using W601-NCPs that revealed two force transmission pathways through Mif2 and OA. However, W601 DNA lacks native centromeric sequences, limiting the ability to study DNA sequence contributions to force transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior published work with appropriate citations. The limitation of W601 DNA (lacking centromeric sequences) provides clear motivation for the current study. The claims represent established background knowledge that sets up the rationale for developing CCEN.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on kinetochore function: Kinetochores link microtubules to chromosomes via centromeric nucleosomes, transmit forces during mitosis, and tension signals correct biorientation. Centromeres are defined by Cse4/CENP-A histones and, in budding yeast, by ~125 bp DNA sequences (CDEI, CDEII, CDEIII).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge appropriately cited to review articles and foundational papers (Ariyoshi and Fukagawa 2023, Akiyoshi et al. 2010, Clarke and Carbon 1980/1985). The information is accurate and provides necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C34",
+      "C35",
+      "C59",
+      "C61",
+      "C70",
+      "C73"
+    ],
+    "result": "Methodological details and supporting observations: His6-tagged histones enable bead attachment; five kinetochore subcomplexes were purified; OA binds Cse4 N-terminus and non-specifically to free DNA; CCEN represents an advance toward native-like reconstitution; no difference between SEC fractions 6 and 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are well-documented in the Materials and Methods section and supported by appropriate citations for prior knowledge (e.g., OA binding properties). The claims provide important experimental details and quality controls (e.g., SEC fraction comparison).",
+    "result_type": "MINOR"
+  }
+]

@@ -8,36 +8,55 @@
       "C57",
       "C58"
     ],
-    "result": "The K99/R00 program represents a substantial annual investment by NIH, with approximately 230 K99 awards made per year from 2006-2021, totaling up to $250 million annually. From 2008-2021, an average of 234 extramural K99 awards were made per year, and from 2009-2022, an average of 198 R00 awards per year.",
+    "result": "The manuscript reports that approximately 230 K99 awards were made annually from 2006-2021, representing up to $250 million in annual investment. From 2008-2021, there were an average of 234 extramural K99 awards per year, and from 2009-2022, an average of 198 R00 awards per year.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C2, C52, C57, and C58 provide consistent quantitative data about K99/R00 award numbers and investment levels based on NIH Reporter data analysis. The figures are internally consistent and represent descriptive statistics from the dataset.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C1, C2, C52, C57, and C58 provide consistent descriptive statistics about K99 and R00 award numbers based on NIH Reporter data. The values are internally consistent (e.g., ~230 vs 234 average awards) and represent straightforward data summaries with no complex statistical analysis required.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
-      "C3",
       "C4",
       "C37",
       "C59",
       "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript demonstrates that approximately 89% of K99 awardees received R00 funding on a rolling yearly basis, with 78% overall conversion (2701 of 3456 extramural K99 awardees). The rolling conversion rate excluding 2006-2007 was 81.8%. Starting in 2015, R00 activation rates diverged between those staying at the same institution (69.4% average) versus moving to different institutions (93.9% average).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37, C59-C68 present conversion rate data with clear denominators and numerators. The temporal trend showing divergence starting in 2015 is supported by Figure 1C. The calculations are straightforward proportions that can be verified from the raw data described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
       "C99",
       "C100",
       "C101",
       "C102",
       "C103"
     ],
-    "result": "Gender distribution in K99/R00 awards shows that approximately 40% (58% men, 40% women) of awardees are women, with equal conversion rates from K99 to R00 for both genders. Men have consistently received more K99 awards than women each year since 2006, though the percentage of women receiving awards has risen slightly in the most recent decade. Overall, 81.8% of K99 awardees convert to R00 awards on a rolling basis.",
+    "result": "The manuscript reports that about 40% of K99 awardees were women (58% men), with the same conversion rates to R00 awards for both genders. Men have received more K99 awards than women each year since 2006, though the percentage of women receiving K99 awards has risen slightly in the most recent decade.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C4, C37, C59, C60, C99-C103 provide consistent data on gender distribution and conversion rates based on name-to-gender classification analysis. The authors acknowledge methodological limitations (C197-C200) regarding binary gender classification, which is appropriate. The data consistently shows gender disparities in award numbers but equal conversion rates.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C99-C103 rely on name-to-gender classification using GenderAPI, which the authors acknowledge is 'inherently biased unevenly across demographics and groups' (C200). The methodology cannot capture transgender, non-binary, or gender non-conforming individuals, and may misclassify names. While the data show trends, the fundamental measurement approach introduces systematic uncertainty.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R3",
+    "result_id": "R4",
     "claim_ids": [
       "C5",
       "C6",
@@ -49,85 +68,22 @@
       "C77",
       "C78",
       "C79",
+      "C80",
+      "C81",
       "C82",
+      "C83",
+      "C84",
       "C85"
     ],
-    "result": "K99 and R00 awards are geographically concentrated, with institutions receiving the most NIH funding producing and recruiting the most K99/R00 awardees. K99 awards were granted to 256 institutions while R00 awardees represented 357 institutions. Notably, 54% of K99 awardees were at just 10% of institutions, and Stanford alone had more K99 awards (237) than the 134 institutions with the fewest awards. Awards are concentrated on East and West coasts, particularly in California and Massachusetts.",
+    "result": "Institutions with the most NIH funding produced the most K99 awardees and recruited the most R00 awardees. K99 awards were granted to 256 institutions while R00 awardees represented 357 institutions. K99 awards were highly concentrated: 54% of awardees were at 10% of institutions, with Stanford alone having 237 K99 awardees. R00 awards were more geographically dispersed, with 73% of K99 awards on East/West coasts versus 55% of R00 awards.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5, C6, C72-C79, C82, and C85 provide detailed geographic and institutional distribution data from NIH Reporter analysis. The data consistently demonstrates concentration of awards at well-funded institutions, with specific quantitative evidence (e.g., Stanford's 237 awards, geographic distributions). The findings are internally consistent and well-documented.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65",
-      "C66",
-      "C67",
-      "C68",
-      "C69",
-      "C70"
-    ],
-    "result": "K99 awardees increasingly move to different institutions for R00 awards, with a shift occurring around 2013-2015. Until 2015, conversion rates were similar for those staying versus moving institutions, but after 2015, the activation rate for those staying at the same institution decreased. The average rolling conversion rate was 69.4% for same-institution R00 awardees versus 93.9% for different institutions. The proportion staying at the same institution declined from ~30% in early years to ~20% from 2013 onward.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C61-C70 describe temporal trends in institutional mobility patterns with specific quantitative data and time points. The data shows a clear shift around 2013-2015 in mobility patterns, supported by conversion rate statistics. The findings are internally consistent and based on longitudinal analysis of NIH data.",
+    "evaluation": "Claims C5-C6 and C72-C85 present descriptive statistics about institutional concentration supported by Figure 2 and the underlying NIH Reporter data. The geographic concentration metrics and specific institutional counts are straightforward data summaries. The claim that institutions with most NIH funding produce and recruit the most awardees is directly supported by Figure 3 and the data analysis.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
-    "claim_ids": [
-      "C7",
-      "C8",
-      "C9",
-      "C10",
-      "C113",
-      "C114",
-      "C115",
-      "C116",
-      "C117",
-      "C118",
-      "C119",
-      "C120",
-      "C121",
-      "C122",
-      "C123",
-      "C124",
-      "C125"
-    ],
-    "result": "Time to receive major NIH awards after R00 activation ranges from 4.6 to 7.4 years and is significantly affected by multiple factors. Cox proportional hazard modeling identified staying at the same institution (hazard ratio 0.7095, p<0.0001) as the strongest disadvantage, followed by R00 institution not being in top 25 NIH-funded institutions (p<0.0001), and being a woman (p=0.001). Each cumulative disadvantage adds ~6 months to median time and reduces overall chance of receiving awards by 5-6%. Men who moved to top-funded institutions had shortest time (4.6 years, 84.6% success), while women who stayed at lower-funded institutions had longest time (7.4 years, 60% success).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C10 and C113-C125 present results from Cox proportional hazard modeling with specific statistical values (hazard ratios, p-values, confidence intervals). The analysis appropriately identifies multiple factors affecting future funding success with quantitative effect sizes. The cumulative disadvantage model is well-supported by the data, showing additive effects of gender, mobility, and institutional funding level.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C11",
-      "C128",
-      "C129",
-      "C130",
-      "C131",
-      "C132",
-      "C133"
-    ],
-    "result": "There has been no K99 awardee from a historically Black college or university (HBCU), and only two K99 awardees activated R00 awards at HBCUs. HBCUs have limited active R01 awards: Morehouse School of Medicine (8), Howard (9), Meharry Medical College (5), and Jackson State University (5) as of April 2023.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C11 and C128-C133 document the complete absence of K99 awardees from HBCUs and minimal R00 activation at HBCUs, based on NIH Reporter data. The specific R01 counts at individual HBCUs provide context for the limited research infrastructure. This is a striking finding that is clearly stated and well-documented.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
     "claim_ids": [
       "C86",
       "C87",
@@ -143,15 +99,15 @@
       "C97",
       "C98"
     ],
-    "result": "Faculty hiring patterns show strong institutional stratification. Most K99 awardees (62%) attain positions at private institutions. Private institutions with highest NIH funding preferentially hire from other private institutions (31.2% from top-funded, 46.9% from other private). Public institutions with smaller NIH portfolios have hired 74% of K99 awardees from similar institutions, while top-funded institutions hired only 26% from these institutions. Self-hiring rates vary by institution type: 36% at top-funded private, 30.9% at top-funded public, 23.3% at lower-funded private, and 18.5% at lower-funded public institutions.",
+    "result": "Most K99 awardees (62%) attained faculty positions at private institutions. Private institutions with highest NIH funding hired R00 faculty primarily from other private institutions (31.2% top-funded, 46.9% lower-funded). Public institutions with smaller NIH portfolios hired 74% of K99 awardees from similar institutions. Self-hiring rates varied by institution type: 36% at top-funded private, 30.9% at top-funded public, 23.3% at lower-funded private, and 18.5% at lower-funded public institutions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C86-C98 describe detailed hiring patterns across institution types with specific percentages from data analysis. The findings demonstrate clear stratification in faculty flows, with institutions tending to hire from similar institution types. The data on self-hiring rates and cross-institutional hiring patterns are internally consistent and well-quantified.",
+    "evaluation": "Claims C86-C98 present hiring flow patterns supported by Table 1 and Figure 3. The percentages are calculated from the matched K99-R00 dataset (n=2703). The institutional classification into public/private and top-25/lower-funded is clearly defined in Methods. The self-hiring rates and cross-institutional hiring patterns are straightforward proportions from the data.",
     "result_type": "MAJOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R6",
     "claim_ids": [
       "C104",
       "C105",
@@ -163,16 +119,62 @@
       "C111",
       "C112"
     ],
-    "result": "K99 and R00 awards show different institutional distributions. For K99 awards, 45% went to top 25 highest-funded institutions (24 institutions) while 55% went to 226 lower-funded institutions. For R00 awards, only 32% went to top 25 institutions while 68% went to 327 lower-funded institutions. Top 25 institutions averaged 65.5 K99 and 38.2 R00 awards per institution, compared to 8.4 K99 and 5.8 R00 awards for lower-funded institutions.",
+    "result": "K99 awards were concentrated at top-funded institutions: 45% of K99 awards went to the top 25 highest funded institutions (representing only 24 institutions), while 55% went to 226 lower-funded institutions. R00 awards were more evenly distributed: 32% to top 25 institutions and 68% to 327 lower-funded institutions. Top-25 institutions averaged 65.5 K99 and 38.2 R00 awards per institution, versus 8.4 K99 and 5.8 R00 awards for lower-funded institutions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C104-C112 provide detailed quantitative comparison of award distributions across institution types. The data shows K99 awards are more concentrated at top-funded institutions while R00 awards are more dispersed, consistent with mobility patterns. The per-institution averages clearly demonstrate the concentration of awards at elite institutions.",
+    "evaluation": "Claims C104-C112 present institutional concentration metrics supported by Figure 5 and Tables 3-4. The classification of institutions into top-25 versus lower-funded is clearly defined in Methods based on 2022 NIH funding levels. The percentages and averages are straightforward calculations from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Time from R00 start to major NIH award (R01/DP2/R35) ranged from 4.6 to 7.4 years. Cox proportional hazard modeling identified three significant factors affecting future funding: staying at same institution (HR=0.7095, p<0.0001), R00 institution not in top-25 NIH funding (p<0.0001), and being a woman (p=0.001). Each cumulative disadvantage increased median time by ~6 months and reduced overall chance by 5-6%. Men moving to top-funded institutions had shortest time (4.6 years, 84.6% chance), while women staying at lower-funded institutions had longest time (7.4 years, 60% chance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 and C113-C123 present results from Cox proportional hazard modeling shown in Figure 6. The statistical approach is appropriate for time-to-event data. P-values and hazard ratios are reported with confidence intervals. The cumulative disadvantage model is supported by the data showing additive effects. However, the gender classification limitation (C99-C103) propagates uncertainty into these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "No K99 awardees were from HBCUs, and only two K99 awardees activated R00 awards at HBCUs. In April 2023, there were limited active R01 awards at HBCUs: 8 at Morehouse School of Medicine, 9 at Howard, 5 at Meharry Medical College, and 5 at Jackson State University.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C126-C131 present stark findings about HBCU representation based on NIH Reporter data. The zero K99 awardees from HBCUs and two R00 activations at HBCUs are verifiable from the dataset. The R01 counts at specific HBCUs are point-in-time observations from April 2023 NIH Reporter queries.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
+      "C132",
+      "C133",
       "C134",
       "C135",
       "C136",
@@ -181,7 +183,18 @@
       "C139",
       "C140",
       "C141",
-      "C142",
+      "C142"
+    ],
+    "result": "Analysis of Wapman et al. faculty flow data (65,120 total flows) showed 296 faculty with doctoral degrees from HBCUs and 529 faculty at HBCUs. Howard University granted the most doctoral degrees leading to faculty appointments (116 individuals, with 56 staying at Howard). Florida A&M was second (44 total, 32 staying). Very few HBCU doctoral degree holders work at top-25 NIH-funded institutions. HBCU faculty ranks employ large numbers of faculty with HBCU doctoral degrees, with Howard showing more diversity in doctoral institution origins than other HBCUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C142 analyze the publicly available Wapman et al. dataset, with clear methodology for field selection described in Methods. The faculty flow patterns are descriptive statistics from this dataset. Figure 7 provides visual support. The findings about HBCU self-hiring and limited representation at top-funded institutions are straightforward data summaries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
       "C143",
       "C144",
       "C145",
@@ -195,98 +208,104 @@
       "C153",
       "C154",
       "C155",
-      "C186",
-      "C187"
+      "C156"
     ],
-    "result": "Analysis of faculty flows using Wapman et al. data reveals that HBCU doctoral degree holders (296 total) rarely obtain faculty positions at non-HBCU institutions, particularly top-funded institutions. Howard University granted the most doctoral degrees leading to faculty positions (116), with 56 staying at Howard. HBCUs appear to be the only institution type that hires faculty with doctoral degrees from other HBCUs. At Harvard, only 1 of 938 biomedical faculty has an HBCU doctoral degree. Self-hiring rates are generally 10-20% at most institutions. Faculty at top-funded private institutions tend to have degrees from other well-funded private institutions, while HBCU faculty tend to have degrees from public institutions with smaller NIH portfolios or other HBCUs.",
+    "result": "Self-hiring rates vary by institution: 25% at USC, 10-12% at Duke and Yale, and relatively few at Princeton. Certain institutions (Harvard, Columbia, Penn, Stanford, Johns Hopkins, Michigan, UC Berkeley, Duke, UNC) are nearly ubiquitous in top-15 doctoral degrees for faculty at many institutions. Regional hiring patterns exist (e.g., Tufts/BU common at Harvard, Wayne State at Michigan). Faculty at private top-funded institutions tend to have degrees from other well-funded private institutions, while public institutions show similar within-category hiring patterns. HBCU doctoral degree holders rarely exceed 2% of faculty except at other HBCUs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C134-C155, C186-C187 analyze faculty flow patterns using external dataset (Wapman et al., 2022) focusing on HBCU doctoral degree holders. The analysis reveals stark isolation of HBCU graduates from mainstream academic hiring, with quantitative evidence of hiring patterns across institution types. The findings are consistent with the K99/R00 data showing systemic barriers for HBCU-affiliated researchers.",
+    "evaluation": "Claims C143-C156 present faculty hiring patterns from the Wapman et al. dataset, supported by Figure 7 supplements. The self-hiring rates and regional patterns are descriptive statistics. The observation about institutional prestige hierarchies aligns with prior literature (C157). The finding about HBCU doctoral holders being rare outside HBCUs is a straightforward data summary.",
     "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C54",
-      "C55",
-      "C56",
-      "C174",
-      "C175"
-    ],
-    "result": "755 extramural K99 awardees did not receive R00 awards. Of these, 426 received K99 awards in 2020 or later and may still be in the K99 phase, but 329 were from 2019 or earlier and are likely no longer eligible for R00 awards. Overall, 772 scientists with funded K99 awards did not get R00 awards, with 302 from 2019 or earlier.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54-C56, C174-C175 document K99 awardees who did not transition to R00 awards, with clear temporal distinctions between those potentially still eligible versus those who have passed eligibility windows. The numbers are consistent and based on NIH Reporter data analysis. The authors appropriately note that the reasons for non-transition are unknown.",
-    "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C192",
       "C193",
       "C194",
       "C195",
-      "C196"
+      "C196",
+      "C197"
     ],
-    "result": "FOIA data from 2007-2017 reveals racial disparities in K99/R00 award rates. White applicants had 31.0% K99 success rate compared to Asian (26.7%) and Black (16.2%) applicants. R00 transition rates were also higher for white applicants (77%) compared to Asian (76.1%) and Black (60.0%) awardees. While gender equity has improved, significant racial equity gaps persist.",
+    "result": "FOIA data from 2007-2017 showed successful K99 award rates of 31.0% for white applicants, 26.7% for Asian applicants, and 16.2% for Black applicants. R00 transition rates were 77% for white, 76.1% for Asian, and 60.0% for Black K99 awardees. While gender equity has improved, a significant racial equity gap persists.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C192-C196 present data from FOIA request showing clear racial disparities in both K99 award rates and R00 transition rates. The data is from an independent source (Dr. Pickett's FOIA request) and shows substantial differences across racial groups, particularly for Black applicants. The interpretation that racial equity gaps persist is well-supported by the quantitative data.",
+    "evaluation": "Claims C193-C197 cite specific FOIA data (request #47950) from Dr. Pickett for fiscal years 2007-2017. The racial disparities in both K99 award rates and R00 transition rates are clearly documented. The interpretation that racial equity gaps persist while gender equity has improved (C197) is supported by comparing these racial disparities with the gender parity in conversion rates (C101).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C156",
-      "C157",
-      "C161",
-      "C162",
-      "C163",
-      "C164",
-      "C165"
+      "C54",
+      "C55",
+      "C56",
+      "C175"
     ],
-    "result": "K99 to R00 faculty flow follows prestige hierarchies aligned with NIH funding portfolio size. A minority of private and public institutions with largest NIH funding portfolios produce the majority of K99 awardees and recruit the most R00 awardees. Many K99 awardees from top-funded institutions move to public institutions and institutions with smaller NIH portfolios for R00 phase. These findings align with the Matthew effect and support a core-periphery structure of hiring in academic biomedical science.",
+    "result": "755 extramural K99 awardees did not receive R00 awards. Of these, 426 received K99 awards in 2020 or later and may still be in the K99 phase, while 329 were from 2019 or earlier and are likely no longer eligible for R00 awards.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C156-C165 synthesize the overall pattern of faculty flows and interpret them in context of established theories (Matthew effect, prestige hierarchies). The interpretation is well-supported by the detailed quantitative data on institutional flows (C85-C112) and is consistent with prior literature (Clauset et al., Wapman et al.). The connection to NIH funding portfolio size as a measure of prestige is a novel contribution.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C54-C56 and C175 present straightforward counts from the NIH Reporter data about K99 awardees who did not transition to R00. The temporal cutoff reasoning (2019 or earlier being past eligibility) is logical given the 2-year K99 phase plus potential 1-year no-cost extension mentioned in the text. However, the manuscript acknowledges not knowing where these awardees went or why they didn't receive R00 awards.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C166",
-      "C167",
-      "C168",
-      "C169"
+      "C69",
+      "C70"
     ],
-    "result": "Several potential mechanisms may explain disadvantages for K99/R00 awardees who stay at the same institution: reduced start-up packages for internal candidates, additional service work and committee duties due to institutional familiarity, and internal or reviewer bias regarding independence from postdoctoral advisor.",
+    "result": "In the beginning of the K99/R00 program, nearly all awardees staying at the same institution remained in the same department. From 2013 onward, a greater number moved to new departments within the same institution.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C166-C169 are explicitly speculative (marked as SPECULATION in evidence_type) and propose possible explanations for observed disadvantages. While these are plausible hypotheses, the authors appropriately present them as speculation without empirical evidence. These represent reasonable interpretations but require future research to validate.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe temporal trends in departmental mobility for same-institution R00 activations, supported by Figure 1F. This represents a straightforward descriptive finding about changing patterns over time in the program.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C170",
-      "C171",
-      "C172",
-      "C173"
+      "C162",
+      "C163"
     ],
-    "result": "Cultural biases reward white and Asian male academics while devaluing work by non-white and non-Asian men. Cumulative disadvantages may contribute to lower promotion and tenure rates and gender disparities in faculty ranks and leadership. While the US has more even gender balance than some countries (Japan, South Korea), women remain disadvantaged. Additional disadvantages may exist for transgender, non-binary, or gender non-conforming individuals, those from marginalized groups, or those with disabilities.",
+    "result": "K99 to R00 faculty flow generally follows prestige hierarchies with some institutional deviation. Prestige hierarchies in academic biomedical science align with NIH funding portfolio size, supporting a core-periphery structure of hiring.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C170-C173 interpret the observed disparities in context of broader cultural biases, supported by citations (C170, C172) and the study's own data (C171). The inference about cumulative disadvantages contributing to promotion/tenure disparities is reasonable given the demonstrated delays in major award receipt. The acknowledgment of potential additional disadvantages for other marginalized groups (C173) is appropriately cautious.",
+    "evaluation": "Claims C162-C163 synthesize the hiring flow patterns (C85-C91, C104-C112) with reference to Wapman et al.'s conceptual framework. The alignment of prestige with NIH funding is directly demonstrated by the data showing top-funded institutions producing and recruiting the most awardees. This represents a valid inference from the presented data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Demonstrating independence from the postdoctoral advisor is a key component of R00 activation. Moving to a new institution clearly establishes independence, but staying at the same institution may result in disadvantages including reduced start-up packages, additional service duties, more committee work, or internal/reviewer bias about independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C164 states general knowledge about R00 requirements. Claim C165 makes a logical inference. However, claims C166-C169 are explicitly speculative explanations for the observed disadvantage (C113). The manuscript uses phrases like 'may be due to' and 'alternatively, this may be' indicating these are hypotheses rather than demonstrated mechanisms. No data are presented to test these specific explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C171",
+      "C173"
+    ],
+    "result": "Cumulative disadvantages may contribute to lower likelihood of promotion/tenure and gender disparities in faculty ranks and leadership. Additional disadvantages may exist for transgender, gender non-binary, non-conforming individuals, those from systematically marginalized groups, or those with disabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C171 and C173 are explicitly speculative inferences from the observed disadvantages (C113-C123). The manuscript uses 'may contribute' indicating these are hypotheses about downstream effects rather than demonstrated outcomes. No data on promotion, tenure, or leadership positions are presented. Claim C173 acknowledges unmeasured disadvantages beyond the binary gender classification used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
     "claim_ids": [
       "C176",
       "C177",
@@ -294,112 +313,55 @@
       "C180",
       "C181"
     ],
-    "result": "The concentration of K99 awards at top-funded institutions may reflect built-in support for grant writing at these institutions, greater access to scientific discoveries, or institutional prestige bias in grant review. The interpretation is that the grant review system has inherent bias toward less prestigious institutions, which is currently under NIH review.",
+    "result": "The concentration of K99 awards at top-funded institutions may be due to built-in grant writing support, greater access to scientific discoveries, or institutional prestige bias in grant review. The grant review system may have inherent bias toward less prestigious institutions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C176-C178, C180-C181 present competing explanations for observed patterns, mixing speculation (C176-C178, C180) with interpretation (C181). While the authors present these as possible explanations, they acknowledge uncertainty about mechanisms. The claim about NIH reviewing bias (C181) suggests institutional recognition of the issue, but the relative contributions of candidate quality, institutional support, and reviewer bias cannot be disentangled from the current data.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
-      "C184",
-      "C185",
-      "C188",
-      "C189",
-      "C190",
-      "C191"
-    ],
-    "result": "Self-hiring is common at most institutions including HBCUs, with rates generally between 10-20%. Self-hiring within HBCUs may occur to enable institutional survival. The K99 MOSAIC program, established in 2020, may increase equity, as might efforts to fund career development awards specifically at HBCUs.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C184-C185 are supported by data and citation. However, C188 is speculation about HBCU self-hiring motivations, and C190-C191 are speculative about potential impacts of MOSAIC and HBCU-targeted funding. The MOSAIC program is too new to evaluate effectiveness (as noted in C29), and HBCU-targeted funding is proposed rather than implemented. These represent reasonable suggestions for future interventions but lack empirical support.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
-      "C197",
-      "C198",
-      "C199",
-      "C200"
-    ],
-    "result": "The study used GenderAPI for binary name-to-gender classification, chosen for its low misclassification rate. However, name-based ascription tools are inherently biased with uneven biases across groups. Gender identity is non-binary and non-static, and individuals identifying as transgender, non-binary, or gender non-conforming, or whose gender has changed, are at risk of being misgendered by this methodology.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C197-C200 appropriately acknowledge methodological limitations of name-to-gender classification. The authors transparently describe the tool used (C198), its limitations (C197), and the conceptual issues with binary gender classification (C199-C200). This represents good scientific practice in acknowledging limitations while explaining methodological choices.",
+    "evaluation": "Claims C176-C178 and C180-C181 are explicitly speculative explanations for the observed concentration of K99 awards (C106-C107). The manuscript acknowledges that data on unfunded K99 applications are not publicly available (C174), preventing direct testing of these hypotheses. Claim C181 interprets the data as showing bias, but alternative explanations (e.g., differential application rates, applicant qualifications) are not ruled out.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C12",
-      "C13",
-      "C14",
-      "C15",
-      "C16",
-      "C17",
-      "C18",
-      "C19",
-      "C20",
-      "C21",
-      "C22",
-      "C23",
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C35",
-      "C36",
-      "C39",
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51"
+      "C189",
+      "C191",
+      "C192"
     ],
-    "result": "The introduction establishes context about postdoctoral fellows, academic career paths, and existing disparities in STEM. Postdocs typically have PhD or medical degrees and seek tenure-track positions, which are highly competitive due to increasing PhD graduates but stagnant faculty positions. University prestige impacts resources, publications, citations, and awards. Significant bias exists against women, LGBTQIA+, and marginalized groups, resulting in underrepresentation and fewer R01 awards. The K99/R00 award, launched in 2006, provides 2 years salary support (K99 phase) and $250,000/year for 3 years (R00 phase). About 50% of R00 awardees subsequently attain R01 funding, a higher rate than other K-awards. The specific factors influencing future NIH funding success for R00 awardees had not been examined prior to this study.",
+    "result": "Self-hiring within HBCUs may occur to enable institutional survival. The K99 MOSAIC program may increase equity, as might efforts to fund career development awards specifically at HBCUs.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12-C51 provide background context supported by citations to prior literature and established facts about NIH programs. These claims establish the rationale for the study and are appropriately supported by references. The identification of the research gap (C43) justifies the current study. All factual claims about the K99/R00 program structure are consistent with NIH documentation.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C189, C191, and C192 are explicitly speculative. Claim C189 offers a hypothesis about HBCU self-hiring without supporting data. Claims C191-C192 suggest potential interventions but acknowledge the MOSAIC program is too new to evaluate (C29). These represent policy recommendations rather than demonstrated findings.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
-      "C71",
-      "C126",
-      "C127",
-      "C158",
-      "C159",
-      "C160",
-      "C179",
-      "C182",
-      "C183"
+      "C198",
+      "C199",
+      "C200"
     ],
-    "result": "Supporting contextual claims include: ~20% of K99 recipients receive first R01 at same institution as K99 (Pickett 2019); tenure-track faculty typically have 6-7 years to earn tenure, often requiring a major research grant; scientists are most mobile early in careers; academic mobility has been termed 'forced mobility'; international postdocs may move to US due to perceived training advantages; senior faculty review K99/R00applications; most HBCUs specialize in undergraduate education though several perform biomedical research.",
+    "result": "The study is limited to K99/R00 awardees and faculty flows within the United States, excluding scientists without K99/R00 awards. Public data lack demographic details including self-identified gender, race, ethnicity, age, and degree type.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71, C126-C127, C158-C160, C179, C182-C183 provide contextual information supported by citations or general knowledge about academic careers and institutional characteristics. These claims help interpret the main findings and are appropriately supported. The claim about tenure timelines (C126-C127) is particularly important for understanding the significance of delays in major award receipt.",
+    "evaluation": "Claims C198-C200 accurately describe study limitations. These are straightforward statements about scope and data availability that are verifiable from the Methods section and NIH Reporter database structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The K99/R00 mechanism increases awardees' chances of securing faculty positions but doesn't guarantee them. Understanding these factors may help grant reviewers, hiring committees, and funding bodies more equitably evaluate candidates. Improvements could be achieved through NIH systemic changes or individual faculty searches, with systemic change likely more impactful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C201 is a reasonable inference from the 78-89% conversion rate (C59-C60), though 'undoubtedly' overstates certainty. Claim C202 appropriately acknowledges limitations. Claims C203-C205 are recommendations for future action rather than demonstrated findings. The suggestion that 'systemic change will likely lead to more impactful change' (C205) is logical but not empirically tested in this study.",
     "result_type": "MINOR"
   }
 ]

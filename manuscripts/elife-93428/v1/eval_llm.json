@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Crystal structures of N-terminal fragments of SCARF1 (f1: 20-132aa and f2: 20-221aa) were solved at 2.2 \u00c5 and 2.6 \u00c5 resolution, respectively. The structures reveal that SCARF1 forms homodimers and adopts a long-curved conformation with multiple EGF-like domains arranged in tandem, showing larger curvature than AlphaFold predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C55-C62 are well-supported by crystallographic data with appropriate resolution (2.2-2.6 \u00c5) and proper phasing methods (SAD with Pt derivatives for f1, molecular replacement for f2). The structural features described (homodimers, long-curved conformation, EGF-like domains) are directly observed in the crystal structures and validated across two different crystal forms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C125"
+    ],
+    "result": "SCARF1 forms homodimers through specific interactions at the dimeric interface, including hydrogen bonds between S88 and Y94, and \u03c0-\u03c0 interactions between F82 and Y94. Mutagenesis studies show that Y94A disrupts dimerization while S88A maintains dimers with reduced stability, and pH (6.0-8.0) does not significantly affect dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 are supported by converging evidence from crystal structures showing consistent dimeric interfaces in two crystal forms, SEC data demonstrating elution volume shifts for mutants, and DLS measurements confirming hydrodynamic diameter changes. The mutagenesis data (C69-C71) provide functional validation of the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C100"
+    ],
+    "result": "SCARF1 selectively binds modified LDLs (OxLDL and AcLDL) but not native LDL, HDL, or OxHDL, with higher affinity for OxLDL than AcLDL. The interaction is Ca2+-independent and retained at pH 6.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 and C100 are well-supported by flow cytometry data, confocal microscopy, and ELISA experiments showing specific binding to modified LDLs. The Ca2+-independence is demonstrated by binding in the presence of EDTA/EGTA, and pH stability is confirmed by assays at pH 6.0 and 7.4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C6"
+    ],
+    "result": "Deletion mutagenesis identifies the middle region (133-221aa) of SCARF1 ectodomain as critical for OxLDL binding. Deletion of residues 24-221aa abolishes binding, while deletions of 20-132aa or 222-353aa retain binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by systematic deletion mutagenesis analyzed by flow cytometry. The data clearly demonstrate that the 133-221aa region is necessary for binding, though the interpretation that deletion of 353-415aa reduces binding due to conformational changes (C82) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C7",
+      "C118",
+      "C119"
+    ],
+    "result": "Positively charged residues R160, R161 (Site 1) and R188, R189 (Site 2) in the 133-221aa region are crucial for SCARF1 binding to modified LDLs. Single mutations have minimal effect, double mutations reduce binding, and triple/quadruple mutations abolish binding. Substitution with lysines (R to K) retains binding, confirming the importance of positive charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C96 are strongly supported by systematic mutagenesis analyzed by flow cytometry, ELISA, and confocal microscopy. The data show a clear dose-response relationship: single mutants retain binding, double mutants show reduced binding, and multiple mutants lose binding. The R to K substitutions (C90-C94) provide critical evidence that charge, not specific arginine chemistry, is essential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Monomeric SCARF1 mutants (S88A/Y94A, F82A/S88A/Y94A) show higher affinity for OxLDL than dimeric wild-type in ELISA but lower binding in flow cytometry, suggesting dimeric form is more efficient for lipoprotein recognition on cell surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 present contradictory results between ELISA and flow cytometry. While the authors propose that steric hindrance in ELISA explains higher binding of monomers (C97), and that dimers are more efficient on cell surfaces (C99), these interpretations are speculative. The discrepancy could reflect assay artifacts or genuine differences in binding mechanisms, but insufficient evidence is provided to definitively support either interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C41"
+    ],
+    "result": "SCARF2 does not bind modified LDLs, but chimeric molecules where SCARF2 regions are replaced with SCARF1 fragments containing the binding sites (133-221aa) gain binding activity, confirming the identified binding region. The ectodomain of SCARF1 is sufficient for lipoprotein interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 are supported by flow cytometry and confocal microscopy of chimeric molecules. The systematic domain swapping experiments (SF1-1/SF2-1, SF1-2/SF2-2, SF1-3/SF2-3) provide strong evidence that the SCARF1 ectodomain, specifically the 133-221aa region, is both necessary and sufficient for modified LDL binding. The observation that SF2-2 and SF2-3 show weaker binding (C106-C107) suggests context-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C131",
+      "C132"
+    ],
+    "result": "Sequence alignment shows that positively charged residues at Site 1 (R160/R161) and Site 2 (R188/R189) are well conserved across SCARF1 from different species but absent in SCARF2, suggesting functional divergence between SCARF1 and SCARF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C131-C132 are supported by sequence alignment data showing conservation of critical arginines in SCARF1 across species but not in SCARF2. This phylogenetic evidence is consistent with the functional data showing SCARF1 binds modified LDLs while SCARF2 does not, supporting the conclusion of functional divergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C8",
+      "C9",
+      "C129",
+      "C130",
+      "C143"
+    ],
+    "result": "Teichoic acids efficiently inhibit SCARF1 binding to modified LDLs, with enhanced inhibition observed in double mutants (R160S/R161S, R188S/R189S), suggesting that modified LDLs and teichoic acids share overlapping binding sites on SCARF1 ectodomain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by flow cytometry showing teichoic acid inhibition of LDL binding. The observation that mutants with reduced LDL binding show enhanced teichoic acid inhibition (C110) provides evidence for overlapping binding sites. However, the conclusion that this region is a 'general binding position' (C130) is speculative and requires testing with additional ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C78",
+      "C117"
+    ],
+    "result": "SCARF1 EGF-like domains lack typical Ca2+-binding sites based on sequence analysis, no Ca2+ density is observed in crystal structures, and binding to modified LDLs is Ca2+-independent, contrasting with SR-A family members that bind modified LDLs in a Ca2+-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by converging evidence: sequence analysis showing absence of Ca2+-binding motifs, crystal structures lacking Ca2+ density, and functional assays showing binding in the presence of EDTA/EGTA. The comparison to SR-A family (C117) is appropriately cited and highlights a mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C128"
+    ],
+    "result": "The charge-dependent binding mechanism of SCARF1 to modified LDLs is similar to other scavenger receptors (LOX-1, CD36) and teichoic acid binding, where positively charged residues (arginines) play essential roles, and may have similarities with WIF-1 binding to glycosaminoglycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 and C128 are supported by appropriate citations to prior work on LOX-1, CD36, and teichoic acid binding. The comparison to WIF-1 (C120) is speculative but reasonable given the structural similarity (EGF-like domains) and mechanistic parallel (charge-dependent binding through conserved arginines/lysines). The inference that SCARF1 mechanism resembles LOX-1/SR-B rather than SR-A (C124) is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "SCARF1 homodimerization may facilitate accessibility or binding of modified lipoproteins on the cell surface and is analogous to lipoprotein receptors such as LOX-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 are speculative inferences based on structural data showing dimerization. While the comparison to LOX-1 is appropriately cited (C127), the functional significance of dimerization for lipoprotein binding (C126) is not directly tested. The contradictory ELISA vs. flow cytometry data (C97-C99) further complicate this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C113",
+      "C114",
+      "C133",
+      "C134",
+      "C135",
+      "C142"
+    ],
+    "result": "Background information on SCARF1, SCARF2, and scavenger receptors, including their structure, expression, ligand binding properties, physiological roles, and disease associations, as established by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C54, C113-C114, C133-C135, and C142 are background claims appropriately supported by citations to prior literature. These establish the context for the current study and are not novel findings from this manuscript. The claims accurately represent established knowledge about scavenger receptors and SCARF1/SCARF2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The ectodomain of SCARF1 adopts a long-curved conformation with multiple EGF-like domains arranged in tandem according to crystal structures and AlphaFold model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by both the crystal structures presented in this work (C4-C5, C61) and AlphaFold predictions, though the crystal structures show larger curvature than AlphaFold (C62). This represents a synthesis of structural data from multiple sources.",
+    "result_type": "MINOR"
+  }
+]

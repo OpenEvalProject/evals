@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C28"
+    ],
+    "result": "The study examined morphology in 28 hoverfly species and flight biomechanics/aerodynamics in 8 species with body masses ranging from 5 to 100 mg. The sampled species were well distributed throughout the hoverfly phylogeny, with 33 wingbeats quantified across the 8 flight species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C22, and C28 describe the study design and sample sizes, which are directly supported by the data presented in Figure 1 and the methods section. The phylogenetic distribution is shown in Figure 1, and the wingbeat data collection is documented in Figures 2-3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C107"
+    ],
+    "result": "Wingbeat kinematics showed no significant correlation with body mass across hoverfly species, with all measured kinematic parameters (frequency, amplitude, angular speed, angle-of-attack) remaining relatively stable across the size range studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C45, and C107 are strongly supported by PGLS regression analyses presented in Table 1 and Figure 3, showing non-significant relationships between body mass and all wingbeat kinematic parameters. While a small negative trend was observed for wingbeat frequency, it did not reach statistical significance (p=0.427).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "Wing morphology showed significant negative allometry with body mass, with smaller hoverflies evolving relatively larger wings. The second-moment-of-area scaling (aallo=1.01) closely matched the theoretical requirement for weight support (aws=1.0), deviating substantially from isometric scaling (asim=1.33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C54, C57, and C58 are well-supported by PGLS regression analyses in Table 1 and Figure 4. The statistical evidence shows significant negative allometry for wing size parameters (p<0.001, R\u00b2=86%), with the observed scaling factor nearly perfectly aligned with theoretical predictions for maintaining weight support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C62",
+      "C63"
+    ],
+    "result": "Smaller hoverflies evolved aerodynamically more effective wing shapes, with significant negative allometry in normalized second-moment-of-area. Phylogenetic geometric morphometrics revealed that PC1 (explaining 69% of variation) was correlated with both body mass and wing shape effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C62, and C63 are supported by the geometric morphometrics analysis (Figure 5) and PGLS regressions showing significant negative allometry in normalized second-moment-of-area (p<0.001, Table 1). The phyloPCA analysis quantitatively demonstrates the relationship between wing shape variation and body size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C67",
+      "C68",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CFD simulations using average wingbeat kinematics but species-specific wing morphology confirmed that morphological adaptations drive weight support in small hoverflies. However, species-specific wingbeat frequency variation (contributing 22% to weight support) was necessary for individual hoverflies to achieve full weight support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C67, C68, C74, C75, and C76 are supported by CFD simulation results in Figures 6-7 and Table 2. The simulations demonstrate that while morphology is the primary driver (81% contribution), wingbeat frequency variation cannot be entirely ignored (22% contribution), as shown by the comparison between species-specific and mean frequency simulations in Figure 6D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The combined allometric adaptations in wing morphology and kinematics fully explain variations in aerodynamic force production required for weight support across sizes, with the sum of relative scaling factors equaling 105%. Wingspan contributes 55%, mean chord 19%, normalized second-moment-of-area 9%, and wingbeat frequency 22%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C83, C103, C104, C105, and C106 are strongly supported by the integrated analysis combining PGLS regressions, CFD simulations, and quasi-steady aerodynamic modeling (Figure 7H, Table 2). The sum of relative scaling factors being approximately 100% validates both the analytical approach and the completeness of the explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C10",
+      "C11",
+      "C51",
+      "C147",
+      "C148"
+    ],
+    "result": "Morphological rather than kinematic changes compensate for size reduction in hoverflies, suggesting that hoverfly flight relies on highly specialized wingbeat kinematics that are largely conserved throughout evolution, while evolutionary adaptations in wing morphology enabled flight of small hoverflies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C10, C11, C51, C147, and C148 represent the main conclusion of the study, supported by the combined evidence from morphological analyses (Table 1, Figure 4), kinematic analyses (Table 1, Figure 3), and CFD simulations (Figures 6-7). The lack of kinematic scaling combined with significant morphological scaling provides strong support for this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C102"
+    ],
+    "result": "The quasi-steady aerodynamic model effectively captures the effect of wing morphology and kinematics on aerodynamic force production, as validated by the linear correlation between CFD-estimated forces and model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C102 are supported by the OLS regression analysis showing that CFD-estimated forces scale linearly with the product S\u2082\u03c9\u0304\u00b2 (R\u00b2=100%, p<0.001, Table 2, Figure 7A). This validates the analytical model used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The digitized wingbeats reliably represent hovering flight, with wingbeat frequencies highly correlated with full flight sequences (r=0.98, p<0.001) and mean advance ratios below the hovering threshold (J\u0304=0.08\u00b10.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C31, and C32 validate the experimental approach. The high correlation and low advance ratio provide strong evidence that the analyzed wingbeats are representative of hovering flight, supporting the validity of subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Sexual dimorphism in morphological traits was observed but varied in direction across species and was negligible compared to interspecific differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C25 are supported by statistical analyses in Supplementary file 1a showing that while sexual dimorphism exists, interspecific variation is much stronger. This justifies pooling sexes in subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C91",
+      "C92"
+    ],
+    "result": "Phylogenetic signal was significant for morphological traits among 28 species but non-significant for flight traits among 8 species, suggesting either higher evolutionary lability in flight or limited statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C91, and C92 are supported by phylogenetic signal analyses in Supplementary file 1b. However, the interpretation regarding evolutionary lability versus statistical power (C93) remains uncertain due to the small sample size for flight traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All eight hoverfly species exhibited similar wingbeat kinematics characterized by sinusoidal wing stroke within an inclined stroke-plane (\u03b2stroke-plane=-15\u00b0\u00b116\u00b0), minimal deviation movements, rapid wing rotation at stroke reversal, and a constant angle-of-attack (\u1fb1=42\u00b0\u00b110\u00b0) during the majority of each wingbeat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 describe the detailed wingbeat kinematics patterns observed across species, all supported by the temporal dynamics data in Figure 3A-E and quantitative measurements. These provide the empirical basis for concluding that kinematics are conserved across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C154"
+    ],
+    "result": "Despite differences in wing morphology and wingbeat frequency among species, the temporal dynamics of aerodynamic force production were strikingly similar, with characteristic force peaks during each stroke. This suggests wing shape does not strongly affect the characteristics of aerodynamic force production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C71, C72, and C154 are supported by CFD simulation results in Figure 6C and Figure 6\u2014figure supplement 1. The similarity in force dynamics despite morphological differences provides evidence for conserved aerodynamic mechanisms across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Flight speed had a positive significant effect on angular wing speed, but when controlling for this effect, the relationship between angular wing speed and body mass remained non-significant. Flight speed itself was not correlated with body mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C48, and C49 are supported by multiple regression analyses in Supplementary file 1c and the controlled regression results. This demonstrates that the lack of kinematic scaling with body mass is not confounded by flight speed variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Variation in wingbeat frequency, while uncorrelated with body mass across species, is crucial for individual hoverflies to achieve weight support, suggesting that hoverflies use wingbeat frequency to finely tune vertical aerodynamic force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C110, and C111 are supported by CFD simulation results comparing species-specific versus mean wingbeat frequency (Figures 6D, 7C-D). However, C111 is somewhat speculative as it infers function from the pattern without direct experimental validation of frequency modulation during flight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C118",
+      "C122"
+    ],
+    "result": "The lack of covariation between wingbeat kinematics and body mass contradicts general expectations from physical scaling laws and patterns observed in most other flying animals. The study attributes this to the narrow size range and similar Reynolds numbers examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C116, C118, and C122 appropriately contextualize the findings within the broader literature. The explanation regarding Reynolds number similarity is supported by CFD analysis (C119) showing negligible Reynolds number effects within the studied range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The lack of increased wingbeat frequency in small hoverflies is associated with disproportionately large wings, consistent with patterns in the literature showing that negative allometry in wing area is associated with lower-than-predicted wingbeat frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C128, and C129 connect the study findings to established patterns in the literature (supported by citations). This provides a broader evolutionary context for interpreting the observed scaling relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The absence of correlation between body mass and wingbeat kinematics may result from ecological specialization for hovering flight, where selective pressures for hovering performance (important for foraging and mating) maintain stable kinematics despite size variation, with morphological changes alone compensating for weight support requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C139 present a speculative evolutionary explanation for the observed patterns. While the hypothesis is plausible and consistent with patterns in other hovering specialists (C134, supported by citations), it lacks direct experimental evidence. The study does not test alternative ecological hypotheses or directly measure selection on flight performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Hoverflies employ a highly stereotyped, inclined stroke-plane wingbeat pattern (stroke-plane pitch angle \u2248-30\u00b0) where the wing moves not only back-to-front but also downward during the forward stroke, which may contribute to their specialized hovering abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150, C151, and C153 are supported by the wingbeat kinematics data and citation to Mou et al., 2011. However, C152 is speculative regarding the functional contribution of this pattern to hovering ability, as no experimental manipulation or comparative analysis directly tests this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Not only wingbeat kinematics but also the underlying aerodynamics, including the relative use of different unsteady aerodynamic mechanisms, are conserved between species. The specialized flight style of hoverflies is maintained across a large range of body masses and is robust to variations in wing shape and wingbeat frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155 and C156 are supported by the similarity in temporal force dynamics from CFD simulations (Figure 6C, Figure 6\u2014figure supplement 1). The inference about conserved aerodynamic mechanisms is reasonable given the similar force production patterns, though direct measurement of specific mechanisms (e.g., leading-edge vortices) was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "CFD analysis confirms that the effect of Reynolds number on aerodynamic force production was negligible within the studied size range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by CFD simulations performed at both species-specific and average Reynolds numbers, showing similar non-dimensional forces. This validates the assumption that Reynolds number effects do not confound the morphological comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The effects of morphological traits on CFD-based forces are strikingly similar to those from the comparative analysis between morphology and body mass, demonstrating that the kinematics analysis based on 8 species captures the major effects of wing morphology on aerodynamic force production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 validate the study design by showing consistency between the 8-species flight analysis and the 28-species morphological analysis. This addresses potential concerns about the limited sample size for flight measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study acknowledges that the interplay between wingbeat kinematics and muscle physiology is a critical but overlooked aspect, with findings largely decoupled from muscle constraints that may accompany changes in body size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144, C145, and C146 represent an appropriate acknowledgment of study limitations. The authors correctly identify that their focus on the wing-based propulsion system does not address potential constraints from the muscular motor system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Hoverfly species of different sizes should be able to maintain weight support during hovering flight almost purely through variations in the second-moment-of-area, based on the relative scaling factor being close to 100%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by the relative allometric scaling factor analysis showing a*S\u2082=103% (Figure 4E). However, this is somewhat of an oversimplification, as the subsequent analysis (C82, C106) shows that wingbeat frequency and wing shape also contribute meaningfully (22% and 9%, respectively).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Physical constraints associated with size reduction are strong enough to drive adaptations in wing shape, and evolutionary changes in body size may have favored wing shapes in smaller species that produce aerodynamic forces more effectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by the significant negative allometry in wing shape despite its relatively small contribution (10%) to weight support. Claim C101 is a reasonable inference but remains somewhat speculative as the study does not directly measure aerodynamic effectiveness of different wing shapes independent of size.",
+    "result_type": "MINOR"
+  }
+]

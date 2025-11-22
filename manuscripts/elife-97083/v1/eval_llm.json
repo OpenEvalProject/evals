@@ -2,316 +2,56 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C2",
-      "C3",
-      "C32",
-      "C34",
-      "C57",
-      "C58"
-    ],
-    "result": "During speaking, there is significant connectivity from the right cerebellum (R-CB6) to the left temporal areas (L-A5) in low frequencies (below 40-50 Hz), with reverse connectivity (from temporal to cerebellar areas) observed in high frequencies (above 40-60 Hz).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C3, C32, C34, C57, and C58 consistently report frequency-dependent bidirectional connectivity between the right cerebellum and left temporal areas during speaking. The findings are supported by multivariate Granger causality analysis (C30, C40) with appropriate statistical testing (C151-C156) and are visualized in Figures 2 and 4. The pattern shows low-frequency feedback and high-frequency feedforward signaling, which is internally consistent across multiple claims.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R2",
-    "claim_ids": [
-      "C4",
-      "C67",
-      "C68"
-    ],
-    "result": "High-frequency connectivity from the right cerebellum to the left temporal areas was absent during listening, though direct statistical comparison between speaking and listening conditions did not reveal significant differences.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "While C4 and C67 report absence of high-frequency cerebellar-temporal connectivity during listening, C68 indicates that direct statistical comparison did not show significant differences between conditions. This creates uncertainty about whether the observed pattern truly differs between speaking and listening or reflects insufficient statistical power. The lack of significant difference in direct comparison undermines the strength of the claim about condition-specific effects.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
-      "C42",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49"
-    ],
-    "result": "Node strength analysis reveals frequency-dependent reversal of information flow directionality: in low frequencies, sensorimotor areas (L-SCEF, R-CB6) predominantly send information while STG (L-A5) receives; in high frequencies, this pattern reverses.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C42-C49 describe consistent patterns of node strength analysis showing frequency-dependent directionality reversals. The findings are supported by appropriate methodology (C40, C41) and visualized in Figure 2. The pattern is internally consistent and aligns with the directional connectivity findings. However, the interpretation relies on node strength metrics which may be influenced by the choice of reference region (STG) in the connectivity analysis.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56"
-    ],
-    "result": "Top-down connectivity from higher-order cortical areas (L-SCEF, L-3b) to lower-order areas (L-A5) occurs predominantly in low-frequency bands (theta: 5-7 Hz; beta: 21 Hz), while bottom-up connectivity occurs in high-frequency bands, indicating frequency-specific dissociation of information flow during speaking.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C56 describe a consistent pattern of frequency-dependent bidirectional connectivity between cortical areas. The findings are supported by spectral analysis (Figure 2) and appropriate statistical testing (C151-C156). The pattern aligns with predictive coding frameworks cited in the manuscript (C78, C79). However, C107 notes recent concerns about the notion that top-down and bottom-up signals can only be transmitted via separate frequency channels, suggesting caution in interpretation.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C59",
-      "C60",
-      "C61",
-      "C62"
-    ],
-    "result": "Similar frequency-dependent connectivity patterns are observed in the right hemisphere, with connections from right higher-order regions (R-SCEF, R-3b) to lower-order areas (R-A5) in low frequencies (<30 Hz) and reverse connections in high frequencies (>30 Hz).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C59-C62 describe bilateral patterns of frequency-dependent connectivity that mirror the left hemisphere findings. The results are supported by connectogram analysis (Figure 3) and spectral analysis (Figure 4). The bilateral nature of the findings strengthens the overall conclusion about frequency-specific information flow in speech networks.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R6",
-    "claim_ids": [
-      "C63",
-      "C64",
-      "C65",
-      "C66"
-    ],
-    "result": "During listening, similar frequency-dependent connectivity patterns are observed but are less pronounced than during speaking, with stronger top-down signals in low frequencies and bottom-up signals in high frequencies during speaking compared to listening.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C66 describe condition-specific differences in connectivity strength while maintaining similar directional patterns. The findings are supported by direct statistical comparisons between conditions (C153) and visualized in Figures 3 and 4. The pattern suggests quantitative rather than qualitative differences between speaking and listening, which is consistent with the interpretation that both processes rely on similar neural representations but differ in temporal dynamics (C93).",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C69",
-      "C70",
-      "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C100"
-    ],
-    "result": "There is significant connectivity between the right cerebellum and left parietal cortex in low-frequency ranges (peaking in alpha band), with stronger connectivity during speaking than listening. The parietal cortex receives inputs from both motor cortex and cerebellum, potentially enabling encoding of predicted sensory consequences.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C69, C70, C94, C95, C97, and C99 report cerebellar-parietal connectivity supported by data analysis. However, claims C96, C98, and C100 involve substantial interpretation and speculation about functional roles (marked as INFERENCE and SPECULATION in evidence types). The mechanistic interpretation about the parietal cortex encoding predicted sensory consequences (C98) and selective inhibition (C100) goes beyond what the connectivity data directly demonstrate. The findings would benefit from additional validation through complementary methods.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R8",
-    "claim_ids": [
-      "C71",
-      "C72",
-      "C101",
-      "C102",
-      "C103"
-    ],
-    "result": "Significant connectivity exists between the right cerebellum and left thalamus, with low-frequency connectivity from cerebellum to thalamus and high-frequency connectivity in the opposite direction during speaking, supporting the thalamus's role as an intermediary in cortico-subcortical networks.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71, C72, and C102 report frequency-dependent bidirectional connectivity between cerebellum and thalamus, supported by connectivity analysis (Figure 4). Claims C101 and C103 provide theoretical context from prior literature. However, the interpretation of the thalamus as an intermediary (C103) involves inference beyond the direct connectivity measurements. Additionally, MEG has inherently lower spatial resolution for deep structures like thalamus (C104), which may affect the reliability of these subcortical connectivity estimates.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
-      "C73",
-      "C74",
-      "C87",
-      "C88",
-      "C89",
-      "C90",
-      "C91"
-    ],
-    "result": "Significant negative correlations exist between right cerebellar-to-left temporal connectivity and speech-STG coupling in the theta band during speaking, suggesting that stronger cerebellar predictions are associated with weaker speech-brain coupling, consistent with sensory attenuation mechanisms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C73 and C74 report significant negative correlations supported by appropriate statistical analysis (C160-C163) and visualized in Figure 5. Claims C87-C91 provide context from prior work showing similar patterns. The interpretation aligns with sensory attenuation theory (C89, C90). However, C163 notes that results are not corrected across frequencies, which may increase false positive risk. The correlation is significant but the mechanistic interpretation involves inference beyond the direct measurements.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R10",
-    "claim_ids": [
-      "C75",
-      "C76",
-      "C77",
-      "C80",
-      "C81",
-      "C82",
-      "C106"
-    ],
-    "result": "The multivariate Granger causality analysis suggests that predictive coding is implemented through distinct frequency channels in the auditory-motor domain during speaking and listening, with low-frequency feedback conveying predictions and high-frequency feedforward signaling conveying prediction errors.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C75, C80, and C106 present interpretations of the connectivity findings in the context of predictive coding theory. However, claims C76, C77, C81, and C82 are marked as INFERENCE and SPECULATION, indicating they go beyond what the data directly demonstrate. The interpretation relies on theoretical frameworks (C78, C79) but C107 notes recent concerns about the notion that top-down and bottom-up signals can only be transmitted via separate frequency channels. C108 explicitly states that further investigation is warranted to assess alignment with predictive coding frameworks. The data show frequency-dependent connectivity patterns, but the specific functional interpretation as predictions vs. prediction errors requires additional validation.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
-      "C31",
-      "C83",
-      "C84",
-      "C85",
-      "C86"
-    ],
-    "result": "The connectivity analysis confirms participation of subcortical regions (thalamus and cerebellum) in speech production and perception networks, with stronger feedback signaling from cerebellum to temporal areas during production, aligning with recent studies on cerebellar involvement in predictive internal modeling.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C31 and C83 report findings directly supported by connectivity analysis. Claims C84, C85, and C86 provide supporting context from recent literature (Stockert et al., 2021; Todorovi\u0107 et al., 2024; Kotz et al., 2014). The convergence with independent studies strengthens the findings. However, the functional interpretation about predictive internal modeling involves inference beyond the connectivity measurements themselves.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R12",
-    "claim_ids": [
-      "C29",
-      "C36",
-      "C37",
-      "C140",
-      "C141"
-    ],
-    "result": "ROI selection was based on meta-analysis of 642 fMRI studies from Neurosynth using the term 'speech', resulting in identification of 14 cortical and subcortical parcels involved in speech production and perception.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29, C36, C37, C140, and C141 describe the ROI selection methodology, which is clearly documented and uses an established meta-analysis platform (Neurosynth). The approach is appropriate for identifying regions consistently activated in speech tasks. However, the method may be biased toward regions with strong BOLD signals and may miss regions with more subtle or variable involvement. The selection of 14 parcels from a larger set of possible regions involves some subjective judgment in determining which coordinates to include.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R13",
-    "claim_ids": [
-      "C38",
-      "C39",
-      "C40",
-      "C41",
-      "C142",
-      "C143",
-      "C144",
-      "C145",
-      "C146",
-      "C147"
-    ],
-    "result": "Connectivity analysis used multivariate nonparametric Granger causality (mGC) with three-dimensional representations of parcel activity (first three SVD components), which estimates connectivity more accurately than traditional one-dimensional representations.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C40 and C142-C147 describe the connectivity analysis methodology in detail. The use of multivariate Granger causality with three-dimensional representations (C41) is supported by citation to Chalas et al., 2022. The methodology is appropriate for estimating directed functional connectivity. However, the claim that this approach is more accurate than one-dimensional representations (C41) relies on a single citation and may depend on specific data characteristics. The choice of three components (C39) appears somewhat arbitrary without justification for why three rather than a different number.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R14",
-    "claim_ids": [
-      "C151",
-      "C152",
-      "C153",
-      "C154",
-      "C155",
-      "C156"
-    ],
-    "result": "Statistical significance was determined using nonparametric cluster-based permutation tests with 5000 permutations and alpha = 0.05, with cluster-based correction for multiple comparisons across frequencies and parcels.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C151-C156 describe appropriate statistical methods for MEG connectivity analysis. Cluster-based permutation testing (Maris and Oostenveld, 2007) is a standard approach that controls family-wise error rate. The use of 5000 permutations and alpha = 0.05 are conventional choices. However, the analysis involves multiple frequency bands and multiple ROI pairs, creating a substantial multiple comparisons problem. While cluster-based correction is applied within each analysis, it's unclear whether additional correction was applied across the different types of comparisons (speaking vs. zero, listening vs. zero, speaking vs. listening).",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C104",
-      "C105"
-    ],
-    "result": "While MEG's spatial resolution is inherently lower for deep brain regions like the cerebellum compared to cortical areas, there is evidence demonstrating MEG's capability to record signals from subcortical regions including thalamus and cerebellum.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C104 and C105 acknowledge an important methodological limitation while citing supporting evidence (Attal and Schwartz, 2013). This is an appropriate acknowledgment of the challenges in recording from deep sources with MEG. However, the claim that there is 'a large body of evidence' (C105) is supported by only a single citation. The spatial resolution issue remains a significant limitation that affects confidence in the subcortical connectivity findings, particularly for the thalamus which is deeper than the cerebellum.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R16",
-    "claim_ids": [
       "C27",
       "C28",
-      "C109",
-      "C110",
       "C111",
       "C112",
-      "C119",
-      "C120"
-    ],
-    "result": "The study involved 30 native German-speaking participants who answered seven 60-second questions (speaking condition) and listened to recordings of their own speech (listening condition). The study was ethically approved and re-analyzes data from Abbasi et al., 2023.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27, C28, C109-C112, C119, and C120 describe the experimental design and ethical procedures. The methods are clearly documented and ethically sound. The sample size of 30 participants is reasonable for MEG studies. However, the fact that this is a re-analysis of previously published data (C112) means the current study is not independent validation. The use of participants' own speech in the listening condition is a strength for controlling acoustic properties but may introduce confounds related to self-recognition or familiarity.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R17",
-    "claim_ids": [
       "C113",
       "C114",
       "C115",
       "C116",
       "C117",
+      "C118",
+      "C119",
+      "C120",
       "C121",
       "C122",
-      "C123",
-      "C124",
-      "C125",
-      "C126"
+      "C123"
     ],
-    "result": "MEG data were acquired at 1200 Hz using a 275-channel system, with speech recorded at 44.1 kHz. Appropriate preprocessing steps were applied including artifact rejection, filtering, and downsampling.",
+    "result": "The study recruited 30 native German-speaking participants who performed speaking and listening tasks during MEG recording. Participants answered seven 60-second questions (speaking condition) and listened to recordings of their own speech (listening condition). The study was ethically approved and re-analyzes data from a previous publication (Abbasi et al., 2023).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C113-C117 and C121-C126 describe standard MEG acquisition and preprocessing procedures. The technical specifications are appropriate and clearly documented. The microphone placement at 155 cm (C115) is a reasonable compromise between audio quality and artifact minimization. The preprocessing steps are standard for MEG analysis. The fact that no bad channels or jump artifacts were detected (C122) suggests good data quality, though this could also indicate insufficient sensitivity in artifact detection.",
+    "evaluation": "Claims C27-C28 and C111-C123 describe the experimental design, participant demographics, and recording procedures. These methodological details are clearly stated and internally consistent, providing adequate documentation of the study design. The re-use of previously published data (C114) is transparently disclosed.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R18",
+    "result_id": "R2",
     "claim_ids": [
+      "C29",
+      "C36",
+      "C37",
+      "C141",
+      "C142"
+    ],
+    "result": "Brain regions involved in speech production and perception were identified using meta-analysis from Neurosynth.org with the term 'speech', resulting in 642 fMRI studies. MNI coordinates were extracted and mapped to 14 cortical and subcortical parcels using HCP and AAL atlases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C36-C37, and C141-C142 describe a systematic ROI selection procedure using established meta-analytic methods. The use of Neurosynth is well-documented and appropriate for identifying speech-related brain regions. The resulting 14 parcels are clearly defined in Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
       "C127",
       "C128",
       "C129",
       "C130",
-      "C131"
-    ],
-    "result": "Speech-related artifacts were removed using a four-step pipeline involving head movement regression, SVD-based spatial subspace estimation, component rejection based on visual inspection and MI analysis, and back-transformation to sensor level.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C127-C131 describe a systematic artifact rejection pipeline citing previous work (Abbasi et al., 2021; Stolk et al., 2013; Abbasi et al., 2016). The approach is appropriate for handling speech-related artifacts which are a major challenge in MEG studies of speech production. However, the reliance on visual inspection (C130) introduces subjectivity. The effectiveness of the artifact rejection cannot be fully evaluated without seeing residual artifact levels or validation analyses.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R19",
-    "claim_ids": [
+      "C131",
       "C132",
       "C133",
       "C134",
@@ -319,45 +59,312 @@
       "C136",
       "C137",
       "C138",
-      "C139"
+      "C139",
+      "C140"
     ],
-    "result": "Source localization used individual MRI scans aligned to digitized head shapes, with single-shell volume conductor models and linearly constrained minimum variance beamforming on a 5-mm grid. Data were parcellated using HCP atlas (cortical) and AAL atlas (subcortical), with the first three SVD components extracted per parcel.",
+    "result": "MEG data underwent comprehensive preprocessing including artifact rejection, source localization using beamforming, and parcellation. Speech-related artifacts were removed using a previously published pipeline (Abbasi et al., 2021). Source time-series were extracted and reduced to three SVD components per parcel.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C132-C139 describe standard source localization procedures for MEG. The use of individual MRIs (C132) is a strength compared to template-based approaches. The combination of HCP and AAL atlases (C137, C138) is appropriate given that HCP only covers cortical areas. The extraction of three SVD components (C139) is reasonable but somewhat arbitrary. The use of linear transformation to MNI space (C134) rather than nonlinear transformation may reduce spatial accuracy. Overall, the methods are appropriate but involve standard limitations of MEG source localization.",
+    "evaluation": "Claims C124-C140 describe standard MEG preprocessing procedures with appropriate citations. The artifact rejection pipeline is well-documented in prior work (C131-C132). The beamforming and parcellation procedures follow established methods. However, the choice of three SVD components (C39, C140) lacks explicit justification for why three components are optimal.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R20",
+    "result_id": "R4",
     "claim_ids": [
-      "C157",
+      "C30",
+      "C40",
+      "C41",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Connectivity analysis used multivariate nonparametric Granger causality (mGC) to estimate frequency-specific directed functional coupling between all 14 parcels. The method uses three-dimensional representations of parcel activity and computes directed asymmetry index (DAI) to determine directionality of information flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C40-C41, and C143-C151 describe the connectivity methodology with appropriate citations (Schaum et al., 2021; Chalas et al., 2022). The use of multivariate Granger causality with three-dimensional representations is methodologically sound. The DAI measure is clearly defined (C149-C150) and provides interpretable directionality information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Statistical significance of connectivity patterns was determined using nonparametric cluster-based permutation tests with 5000 permutations and alpha=0.05. Analyses compared connectivity during speaking and listening conditions to zero and to each other across different frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C157 describe appropriate statistical methods for MEG connectivity analysis. Cluster-based permutation testing (Maris & Oostenveld, 2007) is the standard approach for controlling multiple comparisons in this context. The parameters (5000 permutations, alpha=0.05) are conventional and adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Node strength analysis during speaking revealed that L-SCEF and R-CB6 show more outgoing edges in low frequencies and more incoming edges in high frequencies. The left STG (L-A5) shows the opposite pattern: more incoming connections in low frequencies and more outgoing connections in high frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 describe frequency-dependent reversal of connectivity patterns supported by Figure 2. The node strength analysis clearly shows differential patterns for motor/cerebellar regions versus auditory regions. The interpretation (C46-C48) follows logically from the data, though it remains descriptive rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "During speaking, sensorimotor areas and right cerebellum primarily send information to temporal regions in low frequencies (7-20 Hz, peak at 5-7 Hz theta), while receiving information in high frequencies (60-90 Hz). This demonstrates a dissociation of top-down (low frequency) and bottom-up (high frequency) information flow in distinct frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 describe the core connectivity findings supported by Figures 2-4. The frequency-specific reversal of connectivity direction is clearly demonstrated in the data. The interpretation as top-down versus bottom-up signaling (C55-C57) is consistent with the hierarchical organization of the regions and supported by prior work (C55 cites Abbasi et al., 2023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C2",
+      "C3"
+    ],
+    "result": "During speaking, there is directional connectivity from the right cerebellum lobule VI (R-CB6) to the left STG (L-A5) in frequencies below 50 Hz, with reverse signaling from left STG to right cerebellum in frequencies above 50 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C58-C59 describe the key cerebellar-temporal connectivity finding supported by Figure 2 and Figure 4. The frequency-specific bidirectional connectivity is clearly shown in the spectral DAI plots. This is a novel finding that extends prior cortico-cortical connectivity work to include subcortical structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Right hemisphere connectivity patterns during speaking mirror those of the left hemisphere, with connections from higher-order regions (R-SCEF, R-3b) to lower-order areas (R-A5) in low frequencies (<30 Hz), and reverse connections in high frequencies (>30 Hz). Strong bilateral connectivity occurs in theta (7 Hz) and beta (21 Hz) bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe bilateral connectivity patterns supported by Figures 3-4. The observation of similar patterns in both hemispheres strengthens the main findings. The specific frequency peaks (theta at 7 Hz, beta at 21 Hz) are clearly visible in the spectral plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C4",
+      "C69"
+    ],
+    "result": "During listening, similar frequency-dependent connectivity patterns were observed as in speaking, but with reduced magnitude. Direct statistical comparison between speaking and listening showed stronger top-down connectivity during speaking. High-frequency cerebellar-temporal connectivity was absent during listening (C4), though direct comparison did not reach significance (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C69 describe speaking versus listening differences supported by Figure 3-4. The qualitative observation of reduced connectivity during listening (C65) and absent high-frequency cerebellar-temporal connectivity (C4, C68) is visible in the figures. However, the lack of significant difference in direct comparison (C69) creates uncertainty about whether these differences are statistically reliable. This inconsistency between within-condition significance and between-condition comparison weakens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C96",
+      "C97",
+      "C99",
+      "C101"
+    ],
+    "result": "Robust connectivity exists between the right cerebellum and left parietal cortex in low-frequency ranges (peaking in alpha band), evident in both speaking and listening conditions, with stronger connectivity during speaking. The parietal cortex receives inputs from both motor cortex and cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C96-C97, C99, and C101 describe cerebellar-parietal connectivity supported by Figure 4. The alpha-band connectivity is consistent with prior work (C97 cites Abbasi et al., 2023). The observation that parietal cortex receives inputs from both cortical and subcortical sources (C99) is directly supported by the connectivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C104",
+      "C105"
+    ],
+    "result": "Significant connectivity exists from the right cerebellum to the left thalamus in low-frequency bands during speaking, with opposite direction (thalamus to cerebellum) in high-frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C104-C105 describe cerebellar-thalamic connectivity supported by Figure 4. The frequency-dependent bidirectional pattern mirrors that observed for cerebellar-cortical connections, suggesting a consistent organizational principle. This finding supports the thalamus as an intermediary in cortico-subcortical networks (C103, C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
       "C158",
       "C159",
       "C160",
       "C161",
       "C162",
-      "C163"
+      "C163",
+      "C164"
     ],
-    "result": "Speech-brain coupling was assessed using multivariate mutual information between speech envelope and spectral estimates from three SVD components, with correlation analysis examining relationships between connectivity and coupling. Results were not corrected across frequencies.",
+    "result": "Significant negative correlations exist between right cerebellar connectivity to left temporal area and speech-STG coupling in the theta band (at 130 ms lag) during speaking. Weaker speech-brain coupling is associated with stronger cerebellar-to-temporal information flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C158-C164 describe the correlation analysis supported by Figure 5. The negative correlation is statistically significant (p<0.05) and provides important mechanistic insight linking connectivity to speech-brain coupling. However, the lack of correction across frequency bands (C164) means these results should be interpreted cautiously. The 130 ms lag appears to be pre-selected rather than data-driven, which could introduce bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C76",
+      "C77",
+      "C78",
+      "C81"
+    ],
+    "result": "The connectivity analysis confirms participation of subcortical regions (thalamus and cerebellum) in speech production and perception. Multivariate Granger causality analysis suggests predictive coding is implemented through distinct frequency channels, with cerebellar predictions influencing auditory processing at low frequencies and prediction errors relayed back at high frequencies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C157-C159 describe the speech-brain coupling methodology using Gaussian Copula MI, which is appropriate. Claims C160-C162 describe correlation analysis with cluster-based correction across parcels. However, C163 explicitly states that results are not corrected across frequencies, which is a significant limitation given that multiple frequency bands were tested. This increases the risk of false positives in the correlation analysis. The lack of correction across frequencies undermines confidence in the specificity of the theta-band correlation reported in C73.",
+    "evaluation": "Claims C31-C35 and C76-C78, C81 present the main interpretive framework. While the connectivity data (C31-C32, C34) are well-supported, the interpretation as predictive coding (C33, C35, C76-C78) is speculative. The claims use cautious language ('might reflect', 'could potentially be indicative', 'suggests') acknowledging uncertainty. However, alternative explanations are not systematically considered. The predictive coding interpretation is plausible but not uniquely supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Feedback signaling between cerebellum and temporal areas occurs in low frequencies (<40 Hz), likely conveying timing information for upcoming speech. Feedforward signaling occurs in gamma frequency (>60 Hz), facilitating update of sensory predictions. Feedback signaling is stronger during speech production than perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 extend the predictive coding interpretation specifically to cerebellar-temporal connections. The directional connectivity data are supported (C84), but the functional interpretations ('likely conveying timing information' C82, 'facilitating update' C83) are speculative. These interpretations are plausible given the cerebellum's known role in timing, but direct evidence for these specific functions is not provided in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The negative correlation between cerebellar-temporal connectivity and speech-STG coupling resonates with prior work on sensory attenuation. The cerebellum is introduced as a key node in the sensory attenuation mechanism, expanding understanding of how the brain anticipates and minimizes sensory responses during speech production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 connect the current findings to the sensory attenuation literature with appropriate citations (C90-C91). The negative correlation (C74-C75) is consistent with sensory attenuation predictions. The interpretation that the cerebellum contributes to sensory attenuation (C92) is a reasonable extension of prior work, though it remains inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C100",
+      "C102"
+    ],
+    "result": "The parietal cortex controls and modulates alpha rhythms in early auditory areas, serving as a multidimensional filter. Inputs from cerebellum enable the parietal cortex to encode predicted sensory consequences during speaking. Enhanced cerebellar-parietal connectivity during speaking may reflect selective inhibition of auditory signals as predicted by internal predictive coding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C100, and C102 propose specific functional roles for parietal cortex based on connectivity patterns. While C98 is supported by prior work (cites Abbasi et al., 2023; Lakatos et al., 2019), claims C100 and C102 are speculative interpretations of the current connectivity data. The proposed mechanisms are plausible but not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C103"
+    ],
+    "result": "Cerebellar-thalamic connectivity patterns align with results between cerebellum and other cortical areas, supporting the thalamus's role in interconnecting cortical and subcortical structures and facilitating communication in verbal production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C106 interpret the thalamic connectivity findings in context of known thalamic anatomy and function. The interpretation is supported by appropriate citations (Barbas et al., 2013; Silveri, 2021; Crosson, 2013) and is consistent with the observed connectivity patterns showing similar frequency-dependent organization across cerebellar connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The findings align with recent studies on cerebellar involvement in predictive internal modeling in speech. Cortico-cerebellar and cortico-cortical predictions may interact, with the cerebellum involved in predicting well-learned speech while cortex flexibly applies predictions in novel contexts. Speech production and perception may rely on the same neural representations but differ in temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 and C93-C95 contextualize the findings within recent literature with appropriate citations (Stockert et al., 2021; Todorovi\u0107 et al., 2024; Ackermann, 2008; Giglio et al., 2024; Fairs et al., 2021). These claims appropriately acknowledge that the interpretations are based on convergent evidence from multiple studies rather than uniquely demonstrated by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "While MEG's spatial resolution is inherently lower for deep brain regions like the cerebellum compared to cortical areas, there is evidence demonstrating its capability to record signals from subcortical regions including thalamus and cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 appropriately acknowledges a methodological limitation while citing evidence (Attal & Schwartz, 2013) that MEG can detect subcortical signals. This is an important caveat for interpreting the cerebellar and thalamic findings. However, the claim does not quantify the reduced spatial resolution or discuss how this might affect the reliability of the subcortical connectivity estimates.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R21",
     "claim_ids": [
-      "C92",
-      "C93"
+      "C108",
+      "C109",
+      "C110"
     ],
-    "result": "The findings align with proposals that cortico-cerebellar and cortico-cortical predictions interact in speech networks, with cerebellum involved in predicting well-learned speech while cortex flexibly applies predictions in novel contexts, and that speech production and perception rely on same neural representations but differ in temporal dynamics.",
+    "result": "Both speech production and perception involve distinct frequency channels for predictive processing, emphasizing feedback and feedforward signaling. However, recent studies raise concerns about whether top-down and bottom-up signals can only be transmitted via separate frequency channels, warranting further investigation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C92 and C93 present interpretations of the findings in relation to broader theoretical frameworks, supported by citations to previous work. However, these claims involve substantial inference beyond what the current data directly demonstrate. The study does not directly test predictions about well-learned vs. novel speech (C92) or explicitly measure temporal dynamics (C93). These interpretations are plausible but speculative given the current experimental design.",
-    "result_type": "MINOR"
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 provide a balanced summary that acknowledges both the study's findings and important limitations raised by recent work (Ferro et al., 2021; Schneider et al., 2021; Vinck et al., 2023). This appropriately cautious conclusion recognizes that the frequency-specific interpretation, while supported by the data, may not be the only valid framework.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R22",
@@ -368,18 +375,7 @@
       "C8",
       "C9",
       "C10",
-      "C11"
-    ],
-    "result": "The study is framed within established theoretical frameworks of speech as dynamic systems coupled via sensory information, operating according to active inference principles, with predictive processing models implemented through brain rhythms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C11 provide theoretical background supported by appropriate citations to previous literature. These claims establish the conceptual framework for interpreting the findings but do not constitute results of the current study. The theoretical framework is well-established in the literature and appropriately cited.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R23",
-    "claim_ids": [
+      "C11",
       "C12",
       "C13",
       "C14",
@@ -394,13 +390,14 @@
       "C23",
       "C24",
       "C25",
-      "C26"
+      "C79",
+      "C80"
     ],
-    "result": "Prior literature has established roles for various brain regions in speech production and perception, including cortical areas, cerebellum, and thalamus, but no study has investigated spectrally resolved, directed functional coupling between cortical and subcortical areas during listening and speaking.",
+    "result": "The introduction reviews prior literature on speech production and perception, including predictive processing frameworks, brain rhythms, cortical and subcortical contributions, and previous MEG studies. This establishes the theoretical and empirical context for the current study.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12-C25 provide appropriate literature review supported by citations. Claim C26 identifies the gap in the literature that the current study addresses. The literature review is comprehensive and appropriately cited. However, the claim that 'no study' has investigated spectrally resolved directed coupling (C26) is difficult to verify definitively and may be overstated given the large literature on speech neuroscience.",
+    "evaluation": "Claims C5-C25 and C79-C80 summarize prior literature with appropriate citations. These claims accurately represent the cited work and establish the scientific context. The literature review appropriately identifies the gap (C26) that the current study addresses: lack of spectrally resolved, directed functional coupling between cortical and subcortical areas during speech.",
     "result_type": "MINOR"
   }
 ]

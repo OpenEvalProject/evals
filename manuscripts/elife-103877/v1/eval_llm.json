@@ -1,0 +1,165 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The DGA modifies the traditional Gillespie algorithm by replacing discontinuous operations (Heaviside and Kronecker delta functions) with smooth, differentiable approximations (sigmoid and Gaussian functions), enabling gradient computation via automatic differentiation while preserving core algorithm characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C17, C18 provide clear methodological description supported by Figure 1, showing how discontinuous operations are approximated. Claims C15 and C19 establish integration with automatic differentiation libraries and preservation of core characteristics. The mathematical formulation and visual evidence in Figure 1 strongly support this methodological innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C85",
+      "C86"
+    ],
+    "result": "Benchmarking on the two-state promoter model shows the DGA accurately replicates steady-state mRNA distributions and moments (0.3% divergence) but fails to capture distribution tails and shows systematic errors in promoter state probabilities. Despite these approximation errors, the DGA captures gradient information effectively for optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C44, C85 demonstrate accuracy for bulk properties with quantitative metrics from Figure 4. Claims C40, C41, C45, C86 document specific limitations with visual evidence. Claim C47 bridges to optimization capability. The comprehensive benchmarking with both successes and limitations clearly documented supports this nuanced result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C16",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C87"
+    ],
+    "result": "The DGA successfully performs parameter estimation on synthetic data for the two-state promoter model, accurately recovering parameters in non-degenerate cases and identifying 'sloppy' directions in degenerate cases where multiple parameter sets minimize the loss function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C16, C87 state the capability. Claims C53-C56 provide detailed analysis of loss landscape flatness and parameter degeneracy supported by Figures 5 and 6. The scatter plots showing learned vs. true parameters and loss function visualizations provide strong quantitative evidence for parameter estimation capability on synthetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C58",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "The DGA successfully estimates kinetic parameters from experimental E. coli promoter data (Jones et al., 2014), with predictions for r/\u03b3 agreeing remarkably well with independent ground truth measurements, though Fano factor predictions show 25-28% mean percentage error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 establishes ground truth availability. Claims C58, C66-C68 describe parameter estimation results. Claims C69-C70 quantify errors, while C72 shows strong agreement for r/\u03b3 ratio (Figure 7b). The comparison to independently measured parameters provides crucial validation, though moderate errors in Fano factor predictions indicate limitations. The mixed accuracy supports cautious acceptance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C81",
+      "C82",
+      "C89"
+    ],
+    "result": "The DGA successfully designs nonequilibrium four-state promoter architectures with desired input-output relationships of varying sharpness, with sharper responses achieved through higher nonequilibrium flux and greater energy consumption, consistent with recent theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, C89 state design capability. Claim C75 shows good agreement between desired and learned responses (Figure 8b). Claims C81-C82 connect to nonequilibrium design principles with supporting citations (C74). Figure 8 provides comprehensive evidence including learned parameters, loss landscapes, and energy-sharpness tradeoffs. The results align with cited theoretical work, providing strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "The DGA's differentiability enables gradient-based optimization for parameter estimation and network design, making it a potentially powerful tool for quantitative biology applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 describe the core capability enabled by differentiability. Claim C88 assesses robustness and potential impact. These claims are supported by the demonstrated applications in parameter estimation and circuit design throughout the paper. The integration of automatic differentiation with stochastic simulation is well-established through multiple examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The two-state promoter model provides a simplified yet powerful system for benchmarking because mean mRNA expression and Fano factor can be calculated analytically and quantitative experimental measurements exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 establish the rationale for using this model system. Figure 3b shows experimental data. The analytical tractability and experimental validation make this an appropriate benchmark system. This is well-supported background knowledge with proper citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Stochastic processes are ubiquitous across diverse fields, and the Gillespie algorithm is widely used to simulate discrete stochastic systems, particularly in gene expression where molecular stochasticity is inherent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C14 provide background context supported by appropriate citations. These are well-established facts about stochastic processes and the Gillespie algorithm. The claims accurately represent prior knowledge and properly cite relevant literature across multiple disciplines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Future work should address extending the DGA to dynamical trajectories, rare events, larger datasets across multiple disciplines, and spatial systems, while comparing with other approximation methods like tensor networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C97 outline future directions and limitations. These are speculative statements about potential extensions and comparisons. While reasonable suggestions, they represent\u672a\u5b8c\u6210 work rather than demonstrated results. The authors appropriately identify these as open questions and potential future developments.",
+    "result_type": "MINOR"
+  }
+]

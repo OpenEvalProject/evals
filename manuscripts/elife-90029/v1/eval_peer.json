@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C98",
+      "C108",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors developed a thick-tissue 3D MERFISH method that combines confocal microscopy for optical sectioning with deep learning to enhance imaging speed and quality, and demonstrated it on mouse brain tissue sections up to 200 \u00b5m thick with high detection efficiency and accuracy. The method uses commercially available equipment and publicly available code.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly affirm this as a major technical advance. The first reviewer states 'This is an important technical method paper that details the development and quality assessment of a 3D MERFISH method to enable spatial transcriptomics of thick tissues, representing a major step forward in the technical capacity of the MERFISH. The evidence presented is convincing.' The second reviewer similarly notes 'expanding the capacity of MERFISH to thick tissues represents a major technical advance to enable 3D spatial transcriptomics' and that 'conclusions are well supported by the data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C124",
+      "C125"
+    ],
+    "result": "Deep learning was used to enhance low-SNR confocal MERFISH images acquired with short exposure times (0.1 s), improving detection efficiency from 24% to 89% compared to long exposure (1 s) images, thereby enabling high-quality imaging at high speed under low illumination intensity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not raise concerns about the deep learning approach or its performance metrics. The second reviewer notes 'Extensive protocol optimization and quality assessments were carried out and conclusions are well supported by the data,' which encompasses the deep learning validation. The first reviewer states 'The evidence presented is convincing,' indicating acceptance of all technical components including deep learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Water-immersion objectives (NA = 1.15 or 1.2) were used instead of oil-immersion objectives to overcome refractive-index mismatch problems, allowing detection of individual RNA molecules without substantial decay of sensitivity and efficiency across the entire depth of 100-\u00b5m and 200-\u00b5m thick-tissue sections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not question the optical approach or the performance of water-immersion objectives. The second reviewer's statement that 'the methods were sufficiently detailed and the results are solid and compelling' indicates acceptance of the methodological choices including the switch to water-immersion objectives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors optimized the gel-based MERFISH protocol for thick-tissue imaging by addressing three sources of RNA molecule displacement between imaging rounds: piezo-actuator inconsistency (solved with Queensgate OP400 piezo), gel expansion/shrinkage (minimized with low initiator concentration, low polymerization temperature, and buffer optimization), and axial chromatic aberration (calibrated using fiducial beads).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers explicitly praise the optimization work. The second reviewer states 'Extensive protocol optimization and quality assessments were carried out and conclusions are well supported by the data' and 'The methods were sufficiently detailed and the results are solid and compelling.' No concerns are raised about the protocol optimization steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C77"
+    ],
+    "result": "Validation of the optimized protocol in 100-\u00b5m-thick mouse cortex sections showed that individual RNA molecules were clearly identified, average RNA copy numbers correlated highly with bulk RNA-seq, detection efficiency remained consistent across tissue depth, and was ~20% higher per z-plane than thin-tissue measurements. RNA copy number per cell was twofold higher in 100-\u00b5m samples compared to 10-\u00b5m sections, likely because most cell bodies were completely captured in thick tissues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers affirm the validation results without raising concerns. The first reviewer states 'The evidence presented is convincing' and the second reviewer notes 'conclusions are well supported by the data' and 'the results are solid and compelling.' The quality assessment data are explicitly praised by both reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Single-cell expression profiles from 3D thick-tissue MERFISH identified all previously known subclasses of excitatory neurons, inhibitory neurons, and non-neuronal cells in the mouse cortex, and showed the expected layered organization of transcriptionally distinct neuronal populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not question the cell type identification or spatial organization findings. The second reviewer's statement that 'application examples demonstrate its technical capacity, accuracy, sensitivity, and utility' indicates acceptance of these biological validation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The method was extended to 200-\u00b5m-thick sections of mouse anterior hypothalamus, where 156 genes were measured with excellent correlation of RNA copy numbers across tissue depth and only slight reduction. The analysis identified 21 excitatory neuronal clusters, 26 inhibitory neuronal clusters, and 7 non-neuronal cell subclasses with distinct and localized spatial distributions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not raise concerns about the 200-\u00b5m demonstration or the hypothalamus results. The first reviewer's statement that this represents 'a major step forward in the technical capacity of the MERFISH' implicitly includes the demonstration at 200 \u00b5m thickness. The second reviewer notes the study demonstrates 'technical capacity' without qualification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In the mouse cortex, interneurons of the same type showed significantly smaller nearest-neighbor distances compared to different cell types, with a bimodal distribution showing tightly juxtaposed pairs (<10 \u00b5m) that formed junctions causing morphological deformations. This is consistent with previous observations of interneuron pairing in mouse and human cortex.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not question these spatial analysis findings. The second reviewer's statement that 'application examples demonstrate its technical capacity, accuracy, sensitivity, and utility' encompasses these biological findings, and no concerns are raised about the interneuron pairing analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In the hypothalamus, interneurons showed different spatial organization compared to cortex: nearest-neighbor distances between same-type interneurons were not significantly smaller than different-type pairs, interneuron subtypes formed tight spatial clusters rather than scattered distributions, and tightly juxtaposed pairs with deformed cell bodies were much rarer. The authors note that spatially clustered distributions could make detection of juxtaposed pairs more difficult quantitatively.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge these comparative findings between cortex and hypothalamus. The second reviewer's acknowledgment that 'conclusions are well supported by the data' includes these regional differences in interneuron organization, and no concerns are raised about the interpretation or caveats provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors demonstrated 3D MERFISH of tissue blocks up to 200 \u00b5m and suggest the consistently high performance indicates applicability to thicker samples. They discuss multiple anticipated advantages including capturing full cell volumes for more accurate profiling, potential for imaging more genes, facilitated cell segmentation, integrated morphology-transcriptome measurements, efficient detection of cell-cell interactions, and combined activity-transcriptome measurements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not question the demonstration at 200 \u00b5m or the discussion of potential applications. The first reviewer states 'The evidence presented is convincing' and the second reviewer notes 'The method will likely have major impact on future spatial transcriptomics studies to benefit diverse biomedical fields,' which implicitly accepts the potential applications discussed by the authors.",
+    "result_type": "MINOR"
+  }
+]

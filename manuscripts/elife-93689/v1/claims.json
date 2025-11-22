@@ -165,10 +165,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement is supported by a citation and reflects established knowledge about methodological challenges.",
+    "evidence": "This statement is supported by a citation and reflects a logical inference about methodological challenges.",
     "evidence_type": [
       "CITATION",
-      "KNOWLEDGE"
+      "INFERENCE"
     ]
   },
   {
@@ -205,7 +205,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a theoretical claim based on the tri-partite network account discussed in the introduction.",
+    "evidence": "This statement is part of a theoretical framework described in the introduction, drawing on cited literature.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
@@ -219,9 +219,10 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a theoretical claim supported by citations to prior research.",
+    "evidence": "This statement is part of a theoretical framework supported by citations.",
     "evidence_type": [
-      "CITATION"
+      "CITATION",
+      "KNOWLEDGE"
     ]
   },
   {
@@ -349,7 +350,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement is supported by citations to prior research and represents a synthesis of evidence.",
+    "evidence": "This statement is supported by citations and represents a synthesis of prior research.",
     "evidence_type": [
       "CITATION",
       "INFERENCE"
@@ -520,7 +521,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the data included in the study.",
+    "evidence": "This is a direct statement about the study's data.",
     "evidence_type": [
       "DATA"
     ]
@@ -533,7 +534,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the data completeness.",
+    "evidence": "This is a direct statement about the study's data completeness.",
     "evidence_type": [
       "DATA"
     ]
@@ -572,724 +573,332 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the measurement methodology.",
+    "evidence": "This is a direct statement about the study's measurement methodology.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C45",
-    "claim": "The study included data from 21 personality questionnaires.",
+    "claim": "Application of principal component analysis to the battery of personality questionnaires resulted in five 'traits' with eigenvalues >1, explaining 48.4% of the variance.",
     "claim_type": "EXPLICIT",
-    "source": "To provide a broad description of individual traits, we included data from the following 21 questionnaires (Table 2).",
+    "source": "Application of PCA to the battery of personality questionnaires resulted in five 'traits' (Figure 1A, Figure 1\u2014figure supplement 1) with eigenvalues >1, explaining 48.4% of the variance.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is a direct statement about the measures included in the study.",
+    "evidence": "This is a direct statement of the study's results from PCA analysis, with supporting figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C46",
-    "claim": "Principal component analysis was performed on 71 trait variables from 21 questionnaires of 144 participants.",
-    "claim_type": "EXPLICIT",
-    "source": "Seventy-one scores from the personality questionnaires of 144 participants were included and missing data (3.15% of including all variables) were imputed by the variable mean. PCA was performed on this matrix and five 'trait' components (henceforth referred to as 'traits') were selected on the basis of eigenvalues >1, using the Kaiser\u2013Guttman criterion (Joliffe, 2002) and their congruence with the previously well-established 'Big Five' personality traits (Digman, 1990; Cobb-Clark and Schurer, 2012).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C47",
-    "claim": "Missing data (3.15% of all variables) were imputed by the variable mean.",
-    "claim_type": "EXPLICIT",
-    "source": "Seventy-one scores from the personality questionnaires of 144 participants were included and missing data (3.15% of including all variables) were imputed by the variable mean.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data preprocessing.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C48",
-    "claim": "Five trait components were selected on the basis of eigenvalues >1, using the Kaiser\u2013Guttman criterion.",
-    "claim_type": "EXPLICIT",
-    "source": "PCA was performed on this matrix and five 'trait' components (henceforth referred to as 'traits') were selected on the basis of eigenvalues >1, using the Kaiser\u2013Guttman criterion (Joliffe, 2002) and their congruence with the previously well-established 'Big Five' personality traits (Digman, 1990; Cobb-Clark and Schurer, 2012).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the component selection methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C49",
     "claim": "The five trait components largely map onto the 'Big Five' personality factors: neuroticism, conscientiousness, extraversion, agreeableness, and openness to experience.",
     "claim_type": "EXPLICIT",
     "source": "The five trait components, independent of the direction of loadings, largely map onto the 'Big Five' personality factors: neuroticism, conscientiousness (positive loading on 'procrastination' in our PCA result), extraversion (positive loading on 'introversion' in our PCA result), agreeableness (positive loading on anti-social in our results), and openness to experience, respectively.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the PCA analysis, as shown in Figure 1A.",
+    "evidence": "This is a direct statement of the study's interpretation of PCA results in relation to established personality theory.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C50",
-    "claim": "For the multidimensional experience sampling data, separate instances of responding for each participant were concatenated, resulting in a matrix with 576 observations of 12 variables.",
-    "claim_type": "EXPLICIT",
-    "source": "For the MDES data, separate instances of responding for each participant were concatenated, resulting in a matrix with 576 observations of 12 variables.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data processing methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C51",
-    "claim": "Principal component analysis of the multidimensional experience sampling data revealed five thought patterns with eigenvalues >1, explaining 65.4% of the variance.",
+    "claim_id": "C47",
+    "claim": "Application of principal component analysis to the multidimensional experience sampling questions revealed five 'thought patterns' with eigenvalues >1, explaining 65.4% of the variance.",
     "claim_type": "EXPLICIT",
     "source": "Application of PCA to the MDES questions revealed five 'thought patterns' (Figure 1B, Figure 1\u2014figure supplement 2) with eigenvalues >1, explaining 65.4% of the variance.",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is a finding from the PCA analysis, as shown in Figure 1B.",
+    "evidence": "This is a direct statement of the study's results from PCA analysis, with supporting figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C48",
     "claim": "The five thought patterns were named 'modality' (image vs words), 'positive episodic social', 'specific internal', 'self-relevant', and 'prospective'.",
     "claim_type": "EXPLICIT",
     "source": "Based on the most heavily loaded dimensions within each pattern, we named these 'modality' (image vs words), 'positive episodic social', 'specific internal', 'self-relevant', and 'prospective'.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the naming of the thought patterns based on the PCA results.",
+    "evidence": "This is a direct statement of how the authors labeled the thought patterns based on their analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The five thought patterns showed low-to-moderate agreement between individual scores from single sessions (modality = 0.5856, positive episodic-social = 0.4531, specific internal = 0.5226, self-relevant = 0.5832, prospective = 0.3118).",
+    "claim_type": "EXPLICIT",
+    "source": "The five thought patterns showed low-to-moderate agreement between individual scores from single sessions (modality = 0.5856, positive episodic-social = 0.4531, specific internal = 0.5226, self-relevant = 0.5832, prospective = 0.3118), indicating a degree of variability between sessions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the study's reliability analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The average of all thought pattern scores had high intra-class correlation coefficients for the first four components (modality = 0.8497, positive episodic social = 0.7783, specific internal = 0.8141, self-relevant = 0.8484, prospective = 0.6444).",
+    "claim_type": "EXPLICIT",
+    "source": "The average of all scores had high ICCs for the first four components (modality = 0.8497, positive episodic social = 0.7783, specific internal = 0.8141, self-relevant = 0.8484, prospective = 0.6444).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the study's reliability analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Trait 'negative affect' had a significant effect on thoughts (F(5,134) = 3.88, p=0.003, partial \u03b7\u00b2 = 0.127).",
+    "claim_type": "EXPLICIT",
+    "source": "Multiple multivariate regression using traits as predictor variables of thought patterns established that 'negative affect' had a significant effect on thoughts (5,134) = 3.88, p=0.003, partial \u03b7\u00b2 = 0.127.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the study's regression analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "A high score on trait neuroticism was significantly associated with less 'positive episodic social' thought (\u00df = \u20130.229, 95% CI = [-0.389 \u20130.07], p=0.005, partial \u03b7\u00b2 = 0.055).",
+    "claim_type": "EXPLICIT",
+    "source": "Univariate follow-up showed that a high score on trait neuroticism was significantly associated with less 'positive episodic social' thought (pattern 2; \u00df = \u20130.229, 95% CI = [-0.389 \u20130.07], p=0.005, partial \u03b7\u00b2 = 0.055) as well as greater 'self-relevant' thought (pattern 4; \u00df = 0.229, 95% CI = [0.066 0.391], p=0.006, partial \u03b7\u00b2 = 0.053) (Figure 1\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct statement of the study's regression analysis results, with supporting figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C53",
-    "claim": "Varimax rotation was applied to both trait and thought component solutions to optimise the distinctiveness of each component.",
+    "claim": "A high score on trait neuroticism was significantly associated with greater 'self-relevant' thought (\u00df = 0.229, 95% CI = [0.066 0.391], p=0.006, partial \u03b7\u00b2 = 0.053).",
     "claim_type": "EXPLICIT",
-    "source": "Varimax rotation was applied to both solutions to optimise the distinctiveness of each component.",
+    "source": "Univariate follow-up showed that a high score on trait neuroticism was significantly associated with less 'positive episodic social' thought (pattern 2; \u00df = \u20130.229, 95% CI = [-0.389 \u20130.07], p=0.005, partial \u03b7\u00b2 = 0.055) as well as greater 'self-relevant' thought (pattern 4; \u00df = 0.229, 95% CI = [0.066 0.391], p=0.006, partial \u03b7\u00b2 = 0.053) (Figure 1\u2014figure supplement 3).",
     "source_type": [
-      "TEXT"
+      "TEXT",
+      "IMAGE"
     ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
+    "evidence": "This is a direct statement of the study's regression analysis results, with supporting figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C54",
-    "claim": "The five thought pattern scores were averaged across the four scans, resulting in one score for each thought pattern for each participant.",
+    "claim": "The first gradient (G1) differentiates between visual regions at one end and default mode network at the other.",
     "claim_type": "EXPLICIT",
-    "source": "The five thought pattern scores were then averaged across the four scans, resulting in one score for each thought pattern for each participant, describing their location on a particular thought dimension.",
+    "source": "The first gradient (G1) differentiates between visual regions at one end and DMN at the other.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the data processing methodology.",
+    "evidence": "This is a direct statement of the study's gradient analysis results, as shown in Figure 2.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C55",
-    "claim": "Functional time series for each participant was extracted using the Schaefer 400 parcellation.",
+    "claim": "The second gradient (G2) describes the dissociation between somatomotor and visual cortices.",
     "claim_type": "EXPLICIT",
-    "source": "Functional time series for each participant was extracted using the Schaefer 400 parcellation (Schaefer et al., 2018) using the fully pre-processed data from all four resting-state scans.",
+    "source": "The second gradient (G2) describes the dissociation between somatomotor and visual cortices.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the data processing methodology.",
+    "evidence": "This is a direct statement of the study's gradient analysis results, as shown in Figure 2.",
     "evidence_type": [
-      "DATA",
-      "CITATION"
+      "DATA"
     ]
   },
   {
     "claim_id": "C56",
-    "claim": "A 400 \u00d7 400 connectivity matrix was calculated from the time series for each participant using Pearson correlation.",
+    "claim": "The third gradient (G3) captures the segregation between different transmodal systems (the default mode network vs the fronto-parietal system).",
     "claim_type": "EXPLICIT",
-    "source": "The data from separate scans were concatenated, and a 400 \u00d7 400 connectivity matrix was calculated from the resulting time series for each participant using Pearson correlation.",
+    "source": "The third gradient (G3) captures the segregation between different transmodal systems (the DMN vs the fronto-parietal system).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
+    "evidence": "This is a direct statement of the study's gradient analysis results, as shown in Figure 2.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C57",
-    "claim": "A group connectivity matrix of the whole sample was calculated by averaging the 144 individual matrices.",
-    "claim_type": "EXPLICIT",
-    "source": "A group connectivity matrix of the whole sample was calculated by averaging the 144 individual matrices.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "Ten macro-scale gradients were calculated for the group.",
-    "claim_type": "EXPLICIT",
-    "source": "In order to summarise whole-brain connectivity in a low-dimensional space, we performed gradient analysis using the BrainSpace toolbox (Vos de Wael et al., 2020). Ten macro-scale gradients were calculated for the group (Figure 2).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "PCA was chosen for gradient calculation because it provides better reliability and higher phenotypic predictive value for connectivity gradients compared to nonlinear decomposition methods.",
-    "claim_type": "EXPLICIT",
-    "source": "We chose the PCA approach for gradient calculation, as Hong et al., 2020 have shown that compared to nonlinear decomposition methods, PCA provides better reliability and higher phenotypic predictive value for connectivity gradients.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This statement is supported by a citation to Hong et al., 2020.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C60",
-    "claim": "Group gradients were aligned to a subsample of the HCP dataset included in BrainSpace.",
-    "claim_type": "EXPLICIT",
-    "source": "For ease of interpretation and comparability, group gradients were aligned to a subsample of the HCP dataset (Van Essen et al., 2013) included in BrainSpace.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C61",
-    "claim": "Individual gradients were calculated for each participant and aligned to the group-level gradients, resulting in a 400 \u00d7 10 matrix for each participant.",
-    "claim_type": "EXPLICIT",
-    "source": "Individual gradients were calculated for each participant, aligned to the group-level gradients, resulting in a 400 \u00d7 10 matrix for each participant.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C62",
-    "claim": "Subsequent regression analyses were limited to the first three group-aligned gradients.",
-    "claim_type": "EXPLICIT",
-    "source": "Subsequent regression analyses were limited to the first three group-aligned gradients, which have been relatively well characterised in previous work (Margulies et al., 2016; Mckeown et al., 2020; Turnbull et al., 2020b).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C63",
-    "claim": "Neurosynth decoding was performed on the group gradient maps to visualise the functional axis captured by each gradient.",
-    "claim_type": "EXPLICIT",
-    "source": "To visualise the functional axis captured by each gradient, we performed Neurosynth (Yarkoni et al., 2011) decoding on the group gradient maps (Figure 2).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C64",
-    "claim": "The average gradient score was calculated for all parcels within each of the seven connectivity networks described by Yeo and colleagues.",
-    "claim_type": "EXPLICIT",
-    "source": "Further, we calculated the average gradient score for all parcels within each of the seven connectivity networks described by Yeo and colleagues (Yeo et al., 2011; Figure 2).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C65",
-    "claim": "Intra-class correlation coefficients were calculated for the thought patterns to quantify their stability over the whole scanning period.",
-    "claim_type": "EXPLICIT",
-    "source": "To quantify the stability of thoughts and connectivity gradients over the whole scanning period, intra-class correlation coefficients (ICCs) were calculated for the thought patterns and following Hong et al., 2020, discriminability indices (Bridgeford et al., 2021) were calculated for whole gradients by treating the four scans and subsequent thought probes as separate instances.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C66",
-    "claim": "Discriminability indices were calculated for whole gradients to quantify their stability over the whole scanning period.",
-    "claim_type": "EXPLICIT",
-    "source": "To quantify the stability of thoughts and connectivity gradients over the whole scanning period, intra-class correlation coefficients (ICCs) were calculated for the thought patterns and following Hong et al., 2020, discriminability indices (Bridgeford et al., 2021) were calculated for whole gradients by treating the four scans and subsequent thought probes as separate instances.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the data analysis methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C67",
-    "claim": "The two-way mixed-effects model (type 3 ICC) was used for quantifying test\u2013retest reliability.",
-    "claim_type": "EXPLICIT",
-    "source": "We used the two-way mixed-effects model (i.e. type 3 ICC) used for quantifying test\u2013retest reliability where samples cannot be considered independent (Koo and Li, 2016).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the statistical methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C68",
-    "claim": "Only the 135 participants who had four full-length resting-state scans were included in the stability analysis.",
-    "claim_type": "EXPLICIT",
-    "source": "Only the 135 participants who had four full-length resting-state scans were included in this analysis.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the inclusion criteria for the stability analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C69",
-    "claim": "Multiple multivariate regression was used to investigate the relationship between individual differences in traits, thoughts, and macro-scale cortical gradients.",
-    "claim_type": "EXPLICIT",
-    "source": "To investigate the relationship between individual differences in traits, thoughts, and macro-scale cortical gradients, we used multiple multivariate regression as implemented in the MATLAB SurfStat Toolbox (Worsley et al., 2009; http://www.math.mcgill.ca/keith/surfstat/).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the statistical methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C70",
-    "claim": "400 separate linear models were estimated for 400 parcels, with the gradient scores from the first three gradients as the dependent variables.",
-    "claim_type": "EXPLICIT",
-    "source": "In total, 400 separate linear models were estimated for 400 parcels, with the gradient scores from the first three gradients as the dependent variables, and with five trait scores (Figure 1A) and five thought scores (Figure 1B), as well as nuisance variables age, motion, and gender included as independent variables.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the statistical methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C71",
-    "claim": "Five trait scores, five thought scores, and nuisance variables (age, motion, and gender) were included as independent variables in the regression models.",
-    "claim_type": "EXPLICIT",
-    "source": "In total, 400 separate linear models were estimated for 400 parcels, with the gradient scores from the first three gradients as the dependent variables, and with five trait scores (Figure 1A) and five thought scores (Figure 1B), as well as nuisance variables age, motion, and gender included as independent variables.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the statistical methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C72",
-    "claim": "Significant effects from 400 parcels were corrected for false discovery rate (q < 0.05) at the multivariate (three gradients) level.",
-    "claim_type": "EXPLICIT",
-    "source": "The resulting significant effects from 400 parcels were corrected for false discovery rate (q < 0.05) (Storey, 2003) at the multivariate (three gradients) level.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the statistical methodology.",
-    "evidence_type": [
-      "DATA",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C73",
-    "claim": "Follow-up univariate analyses were performed on the resulting parcels for each gradient separately, and effects were further Bonferroni-corrected (pbonf<0.025).",
-    "claim_type": "EXPLICIT",
-    "source": "In order to test which gradient score was affected, follow-up univariate analyses were performed on the resulting parcels for each gradient separately, and effects were further Bonferroni-corrected (pbonf<0.025) for the total number of comparisons performed for all parcels (including the analyses of all three gradients) for each variable.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the statistical methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "Multiple multivariate regression was performed with thoughts as dependent variables and traits as independent variables to examine how trait components related to thought components.",
-    "claim_type": "EXPLICIT",
-    "source": "Additionally, to see how the trait components related to the thought components, we performed multiple multivariate regression with the thoughts as dependent variables and traits as independent variables.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a direct statement about the statistical methodology.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C75",
-    "claim": "The five trait components explained 48.4% of the variance in the personality questionnaire data.",
-    "claim_type": "EXPLICIT",
-    "source": "Application of PCA to the battery of personality questionnaires resulted in five 'traits' (Figure 1A, Figure 1\u2014figure supplement 1) with eigenvalues >1, explaining 48.4% of the variance.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a finding from the PCA analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C76",
-    "claim": "The five thought patterns showed low-to-moderate agreement between individual scores from single sessions.",
-    "claim_type": "EXPLICIT",
-    "source": "The five thought patterns showed low-to-moderate agreement between individual scores from single sessions (modality = 0.5856, positive episodic-social = 0.4531, specific internal = 0.5226, self-relevant = 0.5832, prospective = 0.3118), indicating a degree of variability between sessions.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a finding from the ICC analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C77",
-    "claim": "The average of all thought pattern scores across sessions had high intra-class correlation coefficients for the first four components.",
-    "claim_type": "EXPLICIT",
-    "source": "The average of all scores had high ICCs for the first four components (modality = 0.8497, positive episodic social = 0.7783, specific internal = 0.8141, self-relevant = 0.8484, prospective = 0.6444).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a finding from the ICC analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C79",
-    "claim": "A high score on trait neuroticism was significantly associated with less 'positive episodic social' thought (\u00df = \u20130.229, 95% CI = [-0.389 \u20130.07], p=0.005, partial \u03b7\u00b2 = 0.055).",
-    "claim_type": "EXPLICIT",
-    "source": "Univariate follow-up showed that a high score on trait neuroticism was significantly associated with less 'positive episodic social' thought (pattern 2; \u00df = \u20130.229, 95% CI = [-0.389 \u20130.07], p=0.005, partial \u03b7\u00b2 = 0.055) as well as greater 'self-relevant' thought (pattern 4; \u00df = 0.229, 95% CI = [0.066 0.391], p=0.006, partial \u03b7\u00b2 = 0.053) (Figure 1\u2014figure supplement 3).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a finding from the univariate follow-up analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C80",
-    "claim": "A high score on trait neuroticism was significantly associated with greater 'self-relevant' thought (\u00df = 0.229, 95% CI = [0.066 0.391], p=0.006, partial \u03b7\u00b2 = 0.053).",
-    "claim_type": "EXPLICIT",
-    "source": "Univariate follow-up showed that a high score on trait neuroticism was significantly associated with less 'positive episodic social' thought (pattern 2; \u00df = \u20130.229, 95% CI = [-0.389 \u20130.07], p=0.005, partial \u03b7\u00b2 = 0.055) as well as greater 'self-relevant' thought (pattern 4; \u00df = 0.229, 95% CI = [0.066 0.391], p=0.006, partial \u03b7\u00b2 = 0.053) (Figure 1\u2014figure supplement 3).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a finding from the univariate follow-up analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C81",
-    "claim": "The first gradient (G1) differentiates between visual regions at one end and default mode network at the other.",
-    "claim_type": "EXPLICIT",
-    "source": "The first gradient (G1) differentiates between visual regions at one end and DMN at the other.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a finding from the gradient analysis, as shown in Figure 2.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C82",
-    "claim": "The second gradient (G2) describes the dissociation between somatomotor and visual cortices.",
-    "claim_type": "EXPLICIT",
-    "source": "The second gradient (G2) describes the dissociation between somatomotor and visual cortices.",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a finding from the gradient analysis, as shown in Figure 2.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C83",
-    "claim": "The third gradient (G3) captures the segregation between different transmodal systems (the default mode network vs the fronto-parietal system).",
-    "claim_type": "EXPLICIT",
-    "source": "The third gradient (G3) captures the segregation between different transmodal systems (the DMN vs the fronto-parietal system).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a finding from the gradient analysis, as shown in Figure 2.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C84",
     "claim": "The three gradients are largely similar to those reported by Margulies et al., 2016 and subsequent literature.",
     "claim_type": "EXPLICIT",
     "source": "The three gradients are largely similar to the ones reported by Margulies et al., 2016 and subsequent literature (Hong et al., 2019; Paquola et al., 2019; Bethlehem et al., 2020; Mckeown et al., 2020; Turnbull et al., 2020b).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement compares the current findings to prior research, supported by multiple citations.",
+    "evidence": "This is a direct statement comparing the study's results to prior research, supported by citations.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C85",
+    "claim_id": "C58",
     "claim": "Single gradients tended to be stable over the four sessions, with a discriminability index of 0.964 for gradient 1, 0.918 for gradient 2, and 0.983 for gradient 3.",
     "claim_type": "EXPLICIT",
     "source": "Single gradients tended to be stable over the four sessions, with a discriminability index of 0.964 for gradient 1, 0.918 for gradient 2, and 0.983 for gradient 3 over four adjacent scans from 135 participants.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the discriminability analysis.",
+    "evidence": "This is a direct statement of the study's stability analysis results.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C86",
+    "claim_id": "C59",
     "claim": "Discriminability indices are similar to those previously reported by Hong et al., 2020.",
     "claim_type": "EXPLICIT",
     "source": "Discriminability indices are similar to those previously reported by Hong et al., 2020.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement compares the current findings to prior research.",
+    "evidence": "This is a direct statement comparing the study's results to prior research, supported by a citation.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C87",
+    "claim_id": "C60",
     "claim": "Both trait 'introversion' and a pattern describing 'specific internal' thought showed significant effects at the multivariate level in the regression analysis.",
     "claim_type": "EXPLICIT",
     "source": "In these analyses, both trait 'introversion' and a pattern describing 'specific internal' thought showed significant effects at the multivariate level.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the multiple multivariate regression analysis.",
+    "evidence": "This is a direct statement of the study's regression analysis results.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C88",
-    "claim": "Along the first gradient, a parcel within the right orbitofrontal cortex (within the executive control network) showed more similarity with transmodal regions for individuals high on introversion.",
+    "claim_id": "C61",
+    "claim": "A parcel within the right orbitofrontal cortex (within the executive control network) showed more similarity with transmodal regions for individuals high on introversion along the first gradient.",
     "claim_type": "EXPLICIT",
     "source": "Along the first gradient, a parcel within the right orbitofrontal cortex (within the executive control network, shown in orange) showed more similarity with transmodal regions for individuals high on introversion.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is a finding from the univariate follow-up analysis, as shown in Figure 4 and Table 3.",
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 4 and Table 3.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C89",
+    "claim_id": "C62",
     "claim": "Six parcels within the ventral attention network, including anterior insula, operculum, and cingulate cortex, were closer to the somatomotor end along gradient 2 for individuals high on introversion.",
     "claim_type": "EXPLICIT",
     "source": "Six parcels within the VAN, including anterior insula, operculum, and cingulate cortex, were closer to the somatomotor end along gradient 2 (shown in purple).",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is a finding from the univariate follow-up analysis, as shown in Figure 4 and Table 3.",
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 4 and Table 3.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C90",
-    "claim": "The same ventral attention network regions showed lower scores along the third gradient in participants with higher introversion scores, indicating stronger integration with the default mode network.",
+    "claim_id": "C63",
+    "claim": "Regions within the ventral attention network showed lower scores along the third gradient in participants with higher introversion scores, indicating stronger integration with the default mode network.",
     "claim_type": "EXPLICIT",
     "source": "The same regions showed lower scores along the third gradient in participants with higher introversion scores, indicating stronger integration with the DMN.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is a finding from the univariate follow-up analysis, as shown in Figure 4 and Table 3.",
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 4 and Table 3.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C91",
-    "claim": "A parcel within posterior cingulate cortex (control network) was more segregated from the visual end of gradient 2 in participants with higher introversion scores.",
+    "claim_id": "C64",
+    "claim": "A parcel within posterior cingulate cortex (control) was more segregated from the visual end of gradient 2 in participants with higher introversion scores.",
     "claim_type": "EXPLICIT",
     "source": "A parcel within posterior cingulate cortex (control) was also more segregated from the visual end of gradient 2 in participants with higher introversion scores.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a finding from the univariate follow-up analysis, as shown in Figure 4 and Table 3.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C92",
-    "claim": "Relationships with patterns of more specific internal cognition were confined to the dorsal attention and visual networks.",
-    "claim_type": "EXPLICIT",
-    "source": "Relationships with patterns of more specific internal cognition were confined to the dorsal attention and visual networks.",
-    "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary of findings from the univariate follow-up analysis.",
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 4 and Table 3.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C93",
-    "claim": "A region within the superior parietal lobule (dorsal attention network) had lower scores on the first gradient (more transmodal) and higher scores on the second gradient (less visual) when ongoing experience was more 'specific' and 'internal'.",
+    "claim_id": "C65",
+    "claim": "A region within the superior parietal lobule (dorsal attention network) had lower scores on the first gradient (more transmodal) for individuals whose ongoing experience was more 'specific' and 'internal'.",
     "claim_type": "EXPLICIT",
     "source": "A region within the superior parietal lobule (DAN) had lower scores on the first gradient (more transmodal) and higher scores on the second gradient (less visual), indicating less similarity with visual regions whose ongoing experience was more 'specific' and 'internal'.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is a finding from the univariate follow-up analysis, as shown in Figure 5 and Table 3.",
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 5 and Table 3.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C94",
-    "claim": "Along the third gradient, higher 'specific internal' thought scores were associated with greater separation between superior parietal lobule regions and the default mode network.",
+    "claim_id": "C66",
+    "claim": "A region within the superior parietal lobule (dorsal attention network) had higher scores on the second gradient (less visual) for individuals whose ongoing experience was more 'specific' and 'internal'.",
+    "claim_type": "EXPLICIT",
+    "source": "A region within the superior parietal lobule (DAN) had lower scores on the first gradient (more transmodal) and higher scores on the second gradient (less visual), indicating less similarity with visual regions whose ongoing experience was more 'specific' and 'internal'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 5 and Table 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Higher 'specific internal' thought scores were associated with greater separation between regions in the superior parietal lobule and the default mode network along the third gradient.",
     "claim_type": "EXPLICIT",
     "source": "Along the third gradient, higher 'specific internal' thought scores were associated with greater separation between these regions and the DMN.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
+      "TEXT"
     ],
-    "evidence": "This is a finding from the univariate follow-up analysis, as shown in Figure 5 and Table 3.",
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 5 and Table 3.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C95",
+    "claim_id": "C68",
     "claim": "A parcel within the parahippocampal gyrus/extrastriate (visual network) showed a broad spread along gradient one, with participants with higher 'specific internal' thought scores falling on the transmodal/default mode network side and participants with lower scores closer to the visual system side.",
     "claim_type": "EXPLICIT",
     "source": "Finally, a parcel within the parahippocampal gyrus/extrastriate (visual network) showed a broad spread along gradient one, with participants with higher 'specific internal' thought scores falling on the transmodal/DMN side and participants with lower scores (higher 'surroundings') closer to the visual system side.",
     "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "This is a finding from the univariate follow-up analysis, as shown in Figure 5 and Table 3.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C96",
-    "claim": "Individuals who were high on dispositional 'introversion' showed variation in anterior insula, overlying operculum, and anterior cingulate cortex.",
-    "claim_type": "EXPLICIT",
-    "source": "For example, it has been hypothesised that the VAN helps adjudicate between internal and external influences on ongoing thought (Huang et al., 2021; Smallwood et al., 2021b), and we found that individuals who were high on dispositional 'introversion' showed variation in anterior insula, overlying operculum, and ACC: all regions making up part of the VAN.",
-    "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary of findings from the regression analysis.",
+    "evidence": "This is a direct statement of the study's regression analysis results, as shown in Figure 5 and Table 3.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C97",
-    "claim": "For more introverted people, ventral attention network regions showed greater alignment with somatomotor regions and less with visual cortex (gradient 2).",
-    "claim_type": "EXPLICIT",
-    "source": "For more introverted people, these regions showed greater alignment with somatomotor regions and less with visual cortex (gradient 2), and greater alignment with the DMN than the fronto-parietal network (gradient 3).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a summary of findings from the regression analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C98",
-    "claim": "For more introverted people, ventral attention network regions showed greater alignment with the default mode network than the fronto-parietal network (gradient 3).",
-    "claim_type": "EXPLICIT",
-    "source": "For more introverted people, these regions showed greater alignment with somatomotor regions and less with visual cortex (gradient 2), and greater alignment with the DMN than the fronto-parietal network (gradient 3).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a summary of findings from the regression analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C99",
+    "claim_id": "C69",
     "claim": "Prior studies have found that regions of sensorimotor cortex are linked to deliberate mind-wandering.",
     "claim_type": "EXPLICIT",
     "source": "Notably, prior studies have found that regions of sensorimotor cortex are linked to deliberate mind-wandering (Golchert et al., 2017) and individuals who tend to generate patterns of episodic social cognition during periods of low task demands show greater temporal correlation between the VAN and sensorimotor cortex (Turnbull et al., 2019b).",
@@ -1302,7 +911,7 @@
     ]
   },
   {
-    "claim_id": "C100",
+    "claim_id": "C70",
     "claim": "Individuals who tend to generate patterns of episodic social cognition during periods of low task demands show greater temporal correlation between the ventral attention network and sensorimotor cortex.",
     "claim_type": "EXPLICIT",
     "source": "Notably, prior studies have found that regions of sensorimotor cortex are linked to deliberate mind-wandering (Golchert et al., 2017) and individuals who tend to generate patterns of episodic social cognition during periods of low task demands show greater temporal correlation between the VAN and sensorimotor cortex (Turnbull et al., 2019b).",
@@ -1315,91 +924,50 @@
     ]
   },
   {
-    "claim_id": "C101",
+    "claim_id": "C71",
     "claim": "Introversion reflects a predisposition towards internal subjective states rather than external objects.",
     "claim_type": "EXPLICIT",
     "source": "Introversion reflects a predisposition towards internal subjective states rather than external objects (Jung, 1995), and so our analysis adds to an emerging literature (Golchert et al., 2017; Turnbull et al., 2019b) that suggests that there may be an important relationship between sensorimotor cortex and the VAN in patterns of internal self-generated thought.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement is supported by a citation to Jung, 1995.",
+    "evidence": "This statement is supported by a citation to Jung, 1995, and represents established knowledge about introversion.",
     "evidence_type": [
       "CITATION",
       "KNOWLEDGE"
     ]
   },
   {
-    "claim_id": "C102",
+    "claim_id": "C72",
     "claim": "There may be an important relationship between sensorimotor cortex and the ventral attention network in patterns of internal self-generated thought.",
     "claim_type": "EXPLICIT",
     "source": "Introversion reflects a predisposition towards internal subjective states rather than external objects (Jung, 1995), and so our analysis adds to an emerging literature (Golchert et al., 2017; Turnbull et al., 2019b) that suggests that there may be an important relationship between sensorimotor cortex and the VAN in patterns of internal self-generated thought.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is an inference drawn from the study's findings and prior research.",
+    "evidence": "This is an inference drawn from the study's findings in the context of prior research, supported by citations.",
     "evidence_type": [
       "DATA",
-      "INFERENCE",
-      "CITATION"
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C103",
-    "claim": "A pattern of detailed thinking during wakeful rest was correlated with stronger decoupling of a region within dorsal parietal cortex from the visual network (as indexed by changes in both gradients 1 and 2).",
-    "claim_type": "EXPLICIT",
-    "source": "For example, we found a pattern of detailed thinking during wakeful rest that was correlated with stronger decoupling between a region within dorsal parietal cortex from the visual network (as indexed by changes in both gradients 1 and 2), and greater separation from the DMN (gradient 3).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a summary of findings from the regression analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C104",
-    "claim": "A pattern of detailed thinking during wakeful rest was correlated with greater separation of a region within dorsal parietal cortex from the default mode network (gradient 3).",
-    "claim_type": "EXPLICIT",
-    "source": "For example, we found a pattern of detailed thinking during wakeful rest that was correlated with stronger decoupling between a region within dorsal parietal cortex from the visual network (as indexed by changes in both gradients 1 and 2), and greater separation from the DMN (gradient 3).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a summary of findings from the regression analysis.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C105",
-    "claim": "The region within dorsal parietal cortex showing decoupling overlaps with a region within the dorsal attention network identified by Turnbull et al., 2019a in which brain activity was reduced during self-generated thoughts relative to external task focus.",
+    "claim_id": "C73",
+    "claim": "Turnbull et al., 2019a identified a region within the dorsal attention network in which brain activity was reduced during self-generated thoughts relative to external task focus.",
     "claim_type": "EXPLICIT",
     "source": "This region overlaps with a region within the DAN identified by Turnbull et al., 2019a in which brain activity was reduced during self-generated thoughts relative to external task focus, suggesting an important role for the DAN in external facing attention.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement compares the current findings to prior research.",
+    "evidence": "This statement is supported by a citation to prior research.",
     "evidence_type": [
-      "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C106",
-    "claim": "The dorsal attention network has an important role in external facing attention.",
-    "claim_type": "EXPLICIT",
-    "source": "This region overlaps with a region within the DAN identified by Turnbull et al., 2019a in which brain activity was reduced during self-generated thoughts relative to external task focus, suggesting an important role for the DAN in external facing attention.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is an inference drawn from the study's findings and prior research.",
-    "evidence_type": [
-      "INFERENCE",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C107",
-    "claim": "Individuals who engaged in self-generated thought during situations of low external demand at rest showed greater separation between the dorsal attention network and lateral regions of the default mode network in a region of the dorsolateral prefrontal cortex.",
+    "claim_id": "C74",
+    "claim": "Turnbull et al., 2019a established that individuals who engaged in self-generated thought during situations of low external demand at rest showed greater separation between the dorsal attention network and lateral regions of the default mode network in a region of the dorsolateral prefrontal cortex.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, using a technique known as 'echoes' analysis (see Leech et al., 2012), Turnbull et al., 2019a established that individuals who engaged in self-generated thought during situations of low external demand at rest showed greater separation between the DAN and lateral regions of the DMN in a region of the dLPFC, also a member of the VAN.",
     "source_type": [
@@ -1411,104 +979,92 @@
     ]
   },
   {
-    "claim_id": "C108",
-    "claim": "Greater segregation between the dorsal attention network and the default mode network is associated with the capacity to engage in thoughts that are less linked to the external environment.",
-    "claim_type": "EXPLICIT",
-    "source": "Thus, our study confirms prior studies that highlight that greater segregation between the DAN and the DMN in the capacity to engage in thoughts that are less linked to the external environment.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This is a conclusion drawn from the study's findings and prior research.",
-    "evidence_type": [
-      "DATA",
-      "INFERENCE",
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C109",
+    "claim_id": "C75",
     "claim": "The convergence between the current analysis and perspectives from research on conscious experience highlights a high degree of overlap in both the regions identified and the hypothesised functions.",
     "claim_type": "EXPLICIT",
     "source": "Together, the convergence between the current analysis and perspectives from research on conscious experience highlights a high degree of overlap in both the regions identified and the hypothesised functions.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from comparing the study's findings to prior research.",
+    "evidence": "This is an inference drawn from comparing the study's findings to prior research.",
     "evidence_type": [
-      "INFERENCE",
-      "CITATION"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C110",
+    "claim_id": "C76",
     "claim": "With appropriate methodology, neural accounts of conscious experience provide an important valuable way to make sense of brain-cognition links observed at rest.",
     "claim_type": "EXPLICIT",
     "source": "Our observations are important, therefore, because they help establish that with the appropriate methodology (Mckeown et al., 2020; Finn, 2021; Gonzalez-Castillo et al., 2021) neural accounts of conscious experience (Huang et al., 2021; Smallwood et al., 2021b) provide an important valuable way to make sense of brain-cognition links observed at rest.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's findings, supported by citations.",
+    "evidence": "This is a conclusion drawn from the study's findings, supported by citations to relevant methodological and theoretical work.",
     "evidence_type": [
-      "INFERENCE",
-      "CITATION"
+      "DATA",
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C111",
+    "claim_id": "C77",
     "claim": "The data provides evidence for the 'decoupling' hypothesis of self-generated experience.",
     "claim_type": "EXPLICIT",
     "source": "Second, our data provides evidence for the 'decoupling' hypothesis of self-generated experience (Smallwood, 2013b).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a conclusion drawn from the study's findings.",
+    "evidence": "This is a conclusion drawn from the study's findings in relation to a theoretical hypothesis, supported by a citation.",
     "evidence_type": [
       "DATA",
-      "INFERENCE",
-      "CITATION"
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C112",
-    "claim": "The decoupling hypothesis assumes that reduced processing of external input allows an internal train of thought to persist in a more detailed manner.",
-    "claim_type": "EXPLICIT",
-    "source": "This perspective emerged from observations that cortical processing of external inputs is reduced when individuals focus on internal self-generated thought (Smallwood et al., 2008; Kam et al., 2011; Baird et al., 2014) and assumes that this reduced processing of external input allows an internal train of thought to persist in a more detailed manner (p.524, Smallwood, 2013a; Smallwood, 2013b).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "This statement is supported by citations to prior research.",
-    "evidence_type": [
-      "CITATION"
-    ]
-  },
-  {
-    "claim_id": "C113",
+    "claim_id": "C78",
     "claim": "Cortical processing of external inputs is reduced when individuals focus on internal self-generated thought.",
     "claim_type": "EXPLICIT",
     "source": "This perspective emerged from observations that cortical processing of external inputs is reduced when individuals focus on internal self-generated thought (Smallwood et al., 2008; Kam et al., 2011; Baird et al., 2014) and assumes that this reduced processing of external input allows an internal train of thought to persist in a more detailed manner (p.524, Smallwood, 2013a; Smallwood, 2013b).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement is supported by citations to prior research.",
+    "evidence": "This statement is supported by multiple citations to prior research.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C114",
+    "claim_id": "C79",
+    "claim": "Reduced processing of external input allows an internal train of thought to persist in a more detailed manner.",
+    "claim_type": "EXPLICIT",
+    "source": "This perspective emerged from observations that cortical processing of external inputs is reduced when individuals focus on internal self-generated thought (Smallwood et al., 2008; Kam et al., 2011; Baird et al., 2014) and assumes that this reduced processing of external input allows an internal train of thought to persist in a more detailed manner (p.524, Smallwood, 2013a; Smallwood, 2013b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to prior theoretical work.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
     "claim": "Both personality traits linked to internal focus ('introversion') and patterns of detail experience that are not directed externally ('specific internal thought') are linked to reductions in the similarity between neural activity in regions linked to attention and cognition, with regions of visual cortex.",
     "claim_type": "EXPLICIT",
     "source": "Our data is consistent with this view since both personality traits linked to internal focus ('introversion') and patterns of detail experience that are not directed externally ('specific internal thought') are linked to reductions in the similarity between neural activity in regions linked to attention and cognition, with regions of visual cortex.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary of the study's findings.",
+    "evidence": "This is a conclusion drawn from the study's findings.",
     "evidence_type": [
-      "DATA"
+      "DATA",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C115",
+    "claim_id": "C81",
     "claim": "The study provides novel insight into how the macro-scale functional patterns across the cortex support the emergence of detailed patterns of internal experience.",
     "claim_type": "EXPLICIT",
     "source": "In this way, our study provides novel insight into how the macro-scale functional patterns across the cortex support the emergence of detailed patterns of internal experience.",
@@ -1517,24 +1073,25 @@
     ],
     "evidence": "This is a conclusion drawn from the study's findings.",
     "evidence_type": [
+      "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C116",
+    "claim_id": "C82",
     "claim": "In the study, there was no external task from which thinking needed to be decoupled from.",
     "claim_type": "EXPLICIT",
     "source": "Critically, in our study there was no external task from which thinking needed to be decoupled from, ruling out accounts of this process as a 'lapse' in the normal upregulation of task-relevant material needed for task completion (for discussion, see Franklin et al., 2013; Smallwood, 2013a; Smallwood, 2013b).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the study design.",
+    "evidence": "This is a direct statement about the study's design.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C117",
+    "claim_id": "C83",
     "claim": "Contemporary work on ongoing conscious thought highlights time and context as key variables necessary for understanding the neural correlates of different features of thinking.",
     "claim_type": "EXPLICIT",
     "source": "For example, contemporary work on ongoing conscious thought highlights time and context as key variables necessary for understanding the neural correlates of different features of thinking (Smallwood et al., 2021b).",
@@ -1547,20 +1104,21 @@
     ]
   },
   {
-    "claim_id": "C118",
-    "claim": "Under different task conditions, neural correlates between thinking, personality, and neural activity may be different.",
+    "claim_id": "C84",
+    "claim": "Under different task conditions neural correlates between thinking, personality, and neural activity may be different.",
     "claim_type": "EXPLICIT",
     "source": "Since the aim of our study was to focus on the brain at rest, interpretations of our results should bear in mind that under different task conditions neural correlates between thinking, personality, and neural activity may be different.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculation about the generalizability of the findings.",
+    "evidence": "This is a speculation about the generalizability of the findings based on logical inference.",
     "evidence_type": [
+      "INFERENCE",
       "SPECULATION"
     ]
   },
   {
-    "claim_id": "C119",
+    "claim_id": "C85",
     "claim": "Prior studies have established that posterior elements of the default mode network can become integrated into task-positive systems.",
     "claim_type": "EXPLICIT",
     "source": "For example, prior studies have established that posterior elements of the DMN can become integrated into task-positive systems (Krieger-Redwood et al., 2016; Vatansever et al., 2017) and under demanding task conditions the DMN is linked to patterns of task-focused cognition (Sormaz et al., 2018).",
@@ -1573,8 +1131,8 @@
     ]
   },
   {
-    "claim_id": "C120",
-    "claim": "Under demanding task conditions, the default mode network is linked to patterns of task-focused cognition.",
+    "claim_id": "C86",
+    "claim": "Under demanding task conditions the default mode network is linked to patterns of task-focused cognition.",
     "claim_type": "EXPLICIT",
     "source": "For example, prior studies have established that posterior elements of the DMN can become integrated into task-positive systems (Krieger-Redwood et al., 2016; Vatansever et al., 2017) and under demanding task conditions the DMN is linked to patterns of task-focused cognition (Sormaz et al., 2018).",
     "source_type": [
@@ -1586,20 +1144,20 @@
     ]
   },
   {
-    "claim_id": "C121",
+    "claim_id": "C87",
     "claim": "The analysis focused on 'static' indices of neural activity rather than dynamic measures.",
     "claim_type": "EXPLICIT",
     "source": "Similarly, our analysis focused on 'static' indices of neural activity rather than dynamic measures.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a direct statement about the study's methodology.",
+    "evidence": "This is a direct statement about the study's methodological approach.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C122",
+    "claim_id": "C88",
     "claim": "Prior studies have shown that brain\u2013behaviour correlations can be relatively stable over time.",
     "claim_type": "EXPLICIT",
     "source": "We chose to focus on static indices of neural activity because our prior studies have shown that brain\u2013behaviour correlations can be relatively stable over time (Wang et al., 2020), and as we establish in our study these patterns show reasonable stability across a 1-hr session.",
@@ -1612,48 +1170,49 @@
     ]
   },
   {
-    "claim_id": "C123",
+    "claim_id": "C89",
     "claim": "The patterns of brain-behaviour correlations show reasonable stability across a 1-hour session.",
     "claim_type": "EXPLICIT",
     "source": "We chose to focus on static indices of neural activity because our prior studies have shown that brain\u2013behaviour correlations can be relatively stable over time (Wang et al., 2020), and as we establish in our study these patterns show reasonable stability across a 1-hr session.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the study's stability analysis.",
+    "evidence": "This is a direct statement of the study's findings regarding stability.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C124",
+    "claim_id": "C90",
     "claim": "The study's findings relating to the dorsal attention network map closely onto studies that use experience sampling to identify momentary correlations between neural activity and experience.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, our study, particularly with respect to the findings relating to the DAN, map closely onto studies that use experience sampling to identify momentary correlations between neural activity and experience (Turnbull et al., 2019a).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This statement compares the current findings to prior research.",
+    "evidence": "This is a comparison of the study's findings to prior research, supported by a citation.",
     "evidence_type": [
       "DATA",
-      "CITATION"
+      "CITATION",
+      "INFERENCE"
     ]
   },
   {
-    "claim_id": "C125",
+    "claim_id": "C91",
     "claim": "There are likely to be important dynamic features of ongoing experience that the analysis of static brain organisation cannot capture.",
     "claim_type": "EXPLICIT",
     "source": "Nonetheless, there are likely to be important dynamic features of ongoing experience that our analysis of static brain organisation cannot capture (Kucyi, 2018).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculation about the limitations of the study, supported by a citation.",
+    "evidence": "This is a speculation about the limitations of the study's approach, supported by a citation.",
     "evidence_type": [
-      "SPECULATION",
-      "CITATION"
+      "CITATION",
+      "SPECULATION"
     ]
   },
   {
-    "claim_id": "C126",
+    "claim_id": "C92",
     "claim": "Recent discussions in cognitive neuroscience have highlighted the link between sample size and the reproducibility of brain-wide associations with behavioural phenotypes.",
     "claim_type": "EXPLICIT",
     "source": "Recent discussions in cognitive neuroscience have highlighted the link between sample size and the reproducibility of brain-wide associations with behavioural phenotypes (Marek et al., 2022; Spisak et al., 2023).",
@@ -1666,21 +1225,47 @@
     ]
   },
   {
-    "claim_id": "C127",
-    "claim": "In the current data, neuroticism was the most prominent out of all five traits included in the analysis, accounting for 29% of the total variance explained by them.",
+    "claim_id": "C93",
+    "claim": "The analysis of the trait and thought data revealed that 'neuroticism' was related to high negative and episodic thoughts.",
     "claim_type": "EXPLICIT",
-    "source": "In the current data, neuroticism was the most prominent out of all five traits included in the analysis, accounting for 29% of the total variance explained by them.",
+    "source": "Our analysis of the trait and thought data alone revealed that 'neuroticism' was related to high negative and episodic thoughts; however, we did not find any other significant relationships among traits and thought patterns.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a finding from the PCA analysis.",
+    "evidence": "This is a direct statement of the study's findings.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C128",
-    "claim": "More extensive and robust correlations between thought patterns and other traits, as well as thoughts, traits, and macro-scale connectivity patterns, would likely emerge with data sets with larger sample sizes.",
+    "claim_id": "C94",
+    "claim": "The study did not find any other significant relationships among traits and thought patterns besides neuroticism.",
+    "claim_type": "EXPLICIT",
+    "source": "Our analysis of the trait and thought data alone revealed that 'neuroticism' was related to high negative and episodic thoughts; however, we did not find any other significant relationships among traits and thought patterns.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the study's findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Neuroticism was the most prominent out of all five traits included in the analysis, accounting for 29% of the total variance explained by them.",
+    "claim_type": "EXPLICIT",
+    "source": "In the current data, neuroticism was the most prominent out of all five traits included in the analysis, accounting for 29% of the total variance explained by them.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement of the study's findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "More extensive and robust correlations between thoughts patterns and other traits, as well as thoughts, traits, and macro-scale connectivity patterns, would likely emerge with data sets with larger sample sizes.",
     "claim_type": "EXPLICIT",
     "source": "It is therefore likely that more extensive and robust correlations between thoughts patterns and other traits, as well as thoughts, traits, and macro-scale connectivity patterns, would emerge with data sets with larger sample sizes.",
     "source_type": [
@@ -1692,24 +1277,24 @@
     ]
   },
   {
-    "claim_id": "C129",
+    "claim_id": "C97",
     "claim": "In the future, it may be important to consider measures of traits that could have relationships to both neural activity and/or experience at rest.",
     "claim_type": "EXPLICIT",
     "source": "In the future, it may also be important to consider measures of traits that could have relationships to both neural activity and/or experience at rest (e.g. self-consciousness [de Caso et al., 2017] or autistic tendencies [Turnbull et al., 2020a]).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a speculation about future research directions, supported by citations.",
+    "evidence": "This is a speculation about future research directions, supported by citations to relevant work.",
     "evidence_type": [
-      "SPECULATION",
-      "CITATION"
+      "CITATION",
+      "SPECULATION"
     ]
   },
   {
-    "claim_id": "C130",
+    "claim_id": "C98",
     "claim": "Mapping momentary changes between ongoing experience and neural activity will likely depend on a data set tailored to this question.",
     "claim_type": "EXPLICIT",
-    "source": "It is worth noting that mapping momentary changes between ongoing experience and neural activity will likely depend on a data set tailored to this question, in particular in which (i) experience sampling measures are collected more frequently as well as (ii) methodological advances that allow patterns of activity to be mapped without using temporal correlation.",
+    "source": "It is worth noting that mapping momentary changes between ongoing experience and neural activity will likely depend on a data set tailored to this question, in particular in which (i) experience sampling measures are collected more frequently as well as (ii) methodological advances that allow patterns of activity to be mapped without using temporal correlation. and that measure thinking across multiple contexts.",
     "source_type": [
       "TEXT"
     ],

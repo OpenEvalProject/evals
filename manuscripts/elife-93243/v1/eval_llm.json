@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C131",
+      "C132"
+    ],
+    "result": "The study developed and applied an MPN-based rifampicin killing assay to 242 clinical M. tuberculosis isolates (119 IS, 84 IR, 6 MDR after exclusions), treating them with 2 \u00b5g/mL rifampicin and measuring survival fractions at 0, 2, and 5 days with recovery periods of 15, 30, and 60 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C36 and C131-C132 describe the experimental design, sample composition, and methodology. The rifampicin concentration is justified by citation (C27-C28), the MPN assay is described with appropriate detail (C131-C132), and exclusion criteria are clearly stated (C32-C34). The study design is internally consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C121",
+      "C122"
+    ],
+    "result": "MDK90 values increased from ~1.2-1.3 days at 15-day recovery to ~2.0-2.6 days at 60-day recovery for both IS and IR isolates, indicating the presence of both fast- and slow-growing rifampicin-tolerant subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 and C121-C122 present quantitative MDK90 measurements with 95% confidence intervals derived from a Bayesian linear mixed-effects model (C138). The shift in MDK90 values between recovery periods is statistically robust and the interpretation of growth heterogeneity is reasonable given the data. Figure 2 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "At 5 days of rifampicin treatment with 15-day recovery, IR isolates showed significantly higher survival than IS isolates (p=0.017), but this difference disappeared at 60-day recovery, suggesting IR isolates harbor fast-growing rifampicin-tolerant bacilli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 describe a time-dependent association between isoniazid resistance and rifampicin tolerance. The statistical comparison uses appropriate non-parametric tests (C139), p-values are reported, and the interpretation that the difference is specific to fast-growing tolerant populations is consistent with the disappearance of the effect at longer recovery times. Figure 3A supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C123",
+      "C124"
+    ],
+    "result": "Rifampicin tolerance was categorized as low, medium, or high based on survival fraction percentiles. IR isolates were over-represented in medium (OR=2.68) and high (OR=4.42) tolerance groups at 15-day recovery (p-trend=0.0003), with high-tolerance non-resistant strains showing similar tolerance to MDR strains (p=0.78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 and C123-C124 describe tolerance categorization and statistical associations. The use of percentiles for categorization is reasonable, odds ratios are appropriately calculated (C140), and the Cochran-Armitage trend test (C141) is suitable for ordered categorical data. The finding that some genetically susceptible strains have MDR-level tolerance is striking and well-supported by Figure 3B and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Slower growth before rifampicin treatment showed no significant correlation with tolerance at 15-day recovery in IS isolates (p=0.058), but both IS and IR isolates with slower growth showed significantly lower survival fractions at 60-day recovery (p=0.0014 and p=0.0041, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 present correlation analyses using linear regression (C142) with appropriate statistical reporting. The p-value of 0.058 for IS at 15 days is marginally non-significant, correctly reported as such. The significant correlations at 60 days are well-supported. However, 19 outliers were removed (C61), which could introduce bias\u2014this exclusion criterion should be better justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In IS isolates, higher rifampicin MICs correlated with lower tolerance at 60-day recovery (p=0.007), but IR isolates showed no such correlation (p=0.12), possibly due to increased growth fitness of IR rifampicin-tolerant populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 describe MIC-tolerance correlations. While the statistical analyses are appropriate (C142), the interpretation in C68 is speculative. The lack of correlation in IR isolates could have multiple explanations beyond growth fitness, and no direct evidence for this mechanism is provided. The finding is interesting but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "IR isolates harbored three different isoniazid-resistance mutations (katG_S315X, inhA_I21T, fabG1_C-15X), with wide rifampicin tolerance distribution even within the dominant katG_S315X mutation group, indicating other genetic or epigenetic determinants influence tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe genetic characterization and tolerance distribution. The observation of wide tolerance variation within a single mutation class (C71) is well-documented in Figure 4\u2014figure supplement 4. The inference about additional determinants (C72) is reasonable, though the small sample sizes for inhA and fabG1 mutations limit definitive conclusions about mutation-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C125"
+    ],
+    "result": "IR isolates collected during the intensive phase of rifampicin-containing treatment (IR-IP) showed significantly higher tolerance and growth fitness (p=0.0018) compared to baseline, continuous phase, and IS isolates, suggesting rifampicin treatment selects for tolerant microvariants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 and C125 describe longitudinal analysis of treatment-associated tolerance changes. The study design appropriately accounts for treatment phases (C75-C76), and the statistical comparison (C79) shows significant differences. The interpretation that rifampicin treatment selects for tolerance (C80) is supported by the temporal association and cited literature (Zhu et al., 2018). Figure 5 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C126"
+    ],
+    "result": "Analysis of 18 patients with longitudinal IR isolates revealed three patterns of tolerance change (decrease, unchanged, increase). SNP differences between isolates were 0-3 (except one case with 11), and multiple genes previously associated with persistence showed non-synonymous SNPs linked to tolerance changes, though no single convergent mutation was identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 and C126 describe within-patient genetic microvariant analysis. The low SNP differences (C83) support clonal evolution, and the identification of multiple tolerance-associated genes (C85) is documented in Figure 7 and Supplementary file 1c. However, the lack of convergent mutations (C86) and small sample size (n=18 patients) limit mechanistic conclusions. The interpretation of epistasis (C87) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C118"
+    ],
+    "result": "Clinical M. tuberculosis isolates showed higher rifampicin tolerance than laboratory strains (90-99% survival reduction over 5 days), with wide distribution spanning 6 log10-fold differences. Some genetically susceptible strains exhibited tolerance similar to rifampicin-resistant isolates, and IR isolates were more likely to harbor fast-growing, high-tolerance subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 and C118 summarize the main findings. The comparison to lab strains (C88) lacks explicit data but is consistent with prior work (C103-C104). The wide tolerance distribution (C89) is well-documented across multiple figures. The association between IR and fast-growing tolerance (C90) is supported by multiple lines of evidence (C48-C58). This represents a well-supported synthesis of the study's key results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "MDK99 could be calculated for 81% (15-day) and 41% (60-day) of isolates, while MDK99.99 could only be calculated for 11% (15-day) and 8% (60-day) of isolates, with the remainder beyond assay limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 describe assay limitations for higher-order tolerance metrics. The percentages are clearly stated and the acknowledgment of assay limits is appropriate. This represents an honest assessment of methodological constraints, though it limits the ability to fully characterize the most tolerant subpopulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Growth rate heterogeneity in rifampicin-tolerant subpopulations likely represents a tradeoff between growth fitness and survival under antibiotic stress. IR isolates were slower-growing than IS isolates on average, possibly due to fitness costs of resistance mutations, and slower growth was associated with persister-like tolerance at 60-day recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 integrate experimental findings with theoretical frameworks from cited literature. The growth-survival tradeoff interpretation (C91-C92) is supported by Moreno-G\u00e1mez et al., 2020. The fitness cost explanation for slower IR growth (C93) is consistent with Gagneux, 2009. The association between slow growth and persister-like tolerance (C95-C96) is supported by the data, though the mechanistic link remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The emergence of higher rifampicin tolerance in longitudinal IR isolates under treatment supports the hypothesis that multiple genetic microvariants co-exist and rapidly change proportions under selection. The lack of convergent SNPs may reflect small sample size, epistasis, or a large set of tolerance-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 synthesize genetic and phenotypic findings. The interpretation of microvariant selection (C98) is supported by Trauner et al., 2017 and the longitudinal data. The explanations for lack of convergence (C99) are reasonable but speculative. The conclusion about rifampicin-driven selection (C100) is well-supported by the IR-IP findings (C79-C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The findings confirm and extend prior work on rifampicin tolerance in laboratory strains, suggesting that molecular testing for rifampicin resistance (via rpoB mutations) may not fully capture therapeutic response. The results provide a plausible mechanism for isoniazid resistance acting as a 'stepping stone' to rifampicin resistance via tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 contextualize findings within existing literature. The confirmation of prior work (C103-C104) is appropriate. The critique of molecular testing (C106) is reasonable given the tolerance data, though clinical validation is needed. The 'stepping stone' hypothesis (C107) is a logical inference supported by the association between IR and rifampicin tolerance, though direct evidence for progression to resistance is not provided in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The association between IR and rifampicin tolerance was specific to fast-growing recovered bacteria, potentially representing a divergence between growing and non-replicating persister forms of tolerance, consistent with rpoB regulation in response to rifampicin exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 interpret the time-dependent tolerance association. The specificity to fast-growing bacteria (C108) is well-supported by the disappearance of the IR-IS difference at 60-day recovery. The mechanistic interpretation involving rpoB regulation (C109-C110) is supported by Zhu et al., 2018, though direct evidence for this mechanism in the current study is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Study limitations include: (1) single culture condition tested, while tolerance phenotypes vary with conditions; (2) inability to capture transient or epigenetic tolerance drivers lost during sample processing; (3) isolates from an older treatment regimen lacking rifampicin in the continuation phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 acknowledge important study limitations. The single-condition limitation (C111-C113) is well-supported by Hicks et al., 2018. The concern about lost tolerance drivers (C116) is a valid methodological consideration. The treatment regimen context (C117) is important for interpretation. These represent honest and appropriate acknowledgments of study constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C127"
+    ],
+    "result": "The findings have implications for considering bacterial heterogeneity and emergence of tolerant microvariants in TB treatment optimization. IR tuberculosis should be assessed for high rifampicin tolerance to optimize treatment and prevent MDR-TB development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120 and C127 state clinical implications. While the scientific findings support the importance of tolerance, the recommendation for clinical assessment (C127) is premature without: (1) validation that tolerance predicts treatment outcomes, (2) development of practical clinical assays, and (3) evidence that tolerance-guided treatment improves outcomes. These are reasonable research directions but not yet evidence-based clinical recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The study used isolates from a previous Vietnamese cohort study with appropriate ethical approval, employing standard methods for culture, drug susceptibility testing (UKMYC6 plates, BACTEC MGIT 960), and genotypic characterization (whole genome sequencing, Mykrobe predictor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 and C133-C137 describe sample provenance and characterization methods. Ethical approval is documented (C128), methods are cited to published protocols (C133, C135, C137), and standard clinical thresholds are used (C134). The reuse of a well-characterized sample collection strengthens the study by enabling integration with prior genomic and clinical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Statistical analyses employed appropriate methods including Bayesian linear mixed-effects models for MDK90 estimation, Wilcoxon rank-sum tests for group comparisons, Chi-square and Cochran-Armitage tests for categorical associations, and linear regression for correlations, with p\u22640.05 considered significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 describe statistical methodology. The Bayesian approach for MDK90 (C138) is appropriate for repeated measures data. Non-parametric tests (C139) are suitable given potential non-normality. The use of trend tests (C141) for ordered categories is correct. Linear regression (C142) is appropriate for continuous correlations. The methods are well-matched to the data structure and research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction establishes that TB causes ~10 million cases and 1.5 million deaths annually, describes tolerance and persistence mechanisms, notes ~10% global prevalence of isoniazid resistance with associated poor outcomes and progression to MDR-TB, and identifies knowledge gaps regarding rifampicin tolerance distribution and its association with isoniazid resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 provide background context supported by appropriate citations. The epidemiological data (C1, C15) is from WHO and published studies. Mechanistic descriptions (C2-C14) are well-cited. The identification of knowledge gaps (C19-C22) appropriately motivates the study. The development of the MPN-based MDK assay (C23) is cited to prior work (Vijay et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Clinical M. tuberculosis isolates exhibit substantial lag time and growth heterogeneity, and prior studies showed correlation between slow growth and non-replicating persistence. For growth correlation analysis, 19 outliers deviating from normal distribution were removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C60 cite relevant prior work. However, C61 describes outlier removal without clear justification of the criteria used to identify outliers or assessment of whether their removal introduces bias. The removal of ~9% of samples (19/209) for growth analysis could substantially affect conclusions if these represent biologically meaningful extreme phenotypes rather than technical artifacts.",
+    "result_type": "MINOR"
+  }
+]

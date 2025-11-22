@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C8",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Several large-scale replication projects (RPCB, EPRP, RPP) have interpreted statistically non-significant results in both original and replication studies as 'replication success,' despite the widespread misconception that non-significance indicates evidence for absence of an effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C8, C42-C44 are factual statements about how replication projects have been conducted and interpreted, supported by direct citations to these projects. The claims accurately describe the methodological approaches used in these studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C10",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The non-significance criterion for replication success has fundamental logical and statistical problems: it does not ensure evidence for absence of an effect, can be achieved with arbitrarily small sample sizes, does not control error rates, and is misaligned with the inferential goal of quantifying evidence for absent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C6, C7, C10, C50-C52 present logically sound arguments based on established statistical principles. The reasoning is valid: non-significance depends on power (C6-C7), low-powered studies yield inconclusive results (C50), and the criterion can be gamed with small samples (C3, C51). The claim about error rate control (C10) is a correct statistical property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "The two-trials rule for positive results controls the error of falsely claiming presence of an effect at the squared significance level (e.g., 0.25% for \u03b1=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 describes a well-established statistical property of requiring significance in both studies, supported by citation to Senn (2021). This is mathematically correct and provides important context for comparison with the non-significance criterion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The RPCB reported that 11/15 (73%) replications of original null effects were successful using the non-significance criterion, with similar success rates (67-80%) for four additional criteria based on confidence intervals, prediction intervals, and meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C45-C48 report factual results from the RPCB study, directly citing the published success rates for different criteria. These are empirical observations from the original RPCB analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Two illustrative examples from RPCB show contrasting patterns: Dawson et al. (2011) had large effect estimates with high uncertainty due to small samples (n=3), while Goetz et al. (2011) had smaller effects with lower uncertainty due to larger samples (n=34, n=61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 accurately describe the data shown in Figure 1. The visual evidence clearly shows the described patterns of effect sizes, confidence intervals, and sample sizes for these two study pairs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Equivalence testing provides a principled frequentist approach for testing absence of effects by declaring equivalence when the confidence interval falls within a pre-specified equivalence range [-\u0394, +\u0394], equivalent to the TOST procedure where both one-sided tests are significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C53-C55 accurately describe the methodology of equivalence testing, supported by appropriate citations (Wellek 2010, Lakens 2017, Westlake 1972, Schuirmann 1987, Greenland 2023). The mathematical equivalence between the confidence interval and TOST approaches is correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C28",
+      "C29",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Reanalysis of 15 RPCB null results using equivalence testing with a liberal margin (\u0394=0.74) found only 4/15 (27%) study pairs achieved replication success at the 5% level, with the Goetz et al. example marginally failing and the Dawson et al. example clearly failing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C28-C29, C57-C59 report the equivalence testing reanalysis results shown in Figure 3. The data presentation is clear, the analytical approach is described (following RPCB methodology for aggregating internal replications), and the classification of the margin as 'liberal' is supported by citation to Wellek (2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Sensitivity analysis shows that for realistic equivalence margins between 0 and 1 on the SMD scale, replication success rates remain below 50%, and unrealistic margins >2 would be required to achieve the 73% success rate from the non-significance criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C60-C62 report sensitivity analysis results from Appendix 1. The reasoning about appropriate margins is supported by citations to Cohen (1992) conventions and clinical research standards (Lange and Freitag 2005). The claim about field differences (C60) is implicit but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C41",
+      "C65"
+    ],
+    "result": "Bayes factors provide a Bayesian approach for quantifying evidence, representing the updating factor from prior to posterior odds, with BF\u2080\u2081>1 indicating evidence for null, BF\u2080\u2081<1 for alternative, and BF\u2080\u2081\u22481 indicating absence of evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C41, C65 accurately describe Bayes factor methodology, supported by appropriate citations (Kass and Raftery 1995, Goodman 1999, Dienes 2014, Keysers et al. 2020, Held and Ott 2018). The interpretation rules are standard in Bayesian hypothesis testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Bayesian reanalysis of RPCB data using normal unit-information priors found only 1/15 replications successful with BF\u2080\u2081>3, with most cases showing no substantial evidence for either hypothesis; the Goetz et al. example showed substantial evidence for absence (BF\u2080\u2081=5, 4.1) while Dawson et al. showed anecdotal evidence for presence (BF\u2080\u2081=1/1.1, 1/1.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C67-C69 report Bayesian reanalysis results shown in Figure 3. The choice of unit-information prior is justified as reasonable (C68-C69), and the specific Bayes factors for the two examples match the visual data. The overall conclusion of ambiguity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Three effects from RPCB paper 48 (Lin et al. 2012, Lewis et al. 2018 replication) revealed a fundamental difference between methods: with very large samples (n=514, n=1153), Bayes factors indicated evidence against exactly zero effects while equivalence tests showed compatibility with the equivalence range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 identify an important conceptual distinction between the two approaches, supported by the data in Figure 3. The explanation (C71) correctly identifies that Bayes factors test point null hypotheses while equivalence tests use interval hypotheses. The interpretation for the large-sample case (C72) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Analysis of RPP and EPRP null results showed three study pairs were inconclusive due to large uncertainty, but most Bayes factors indicated non-anecdotal evidence for null effects where non-significance criterion was met, possibly due to larger samples and smaller effects in these fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C35 report results from Appendix 2 analysis of RPP/EPRP data. While the results are stated, the explanation in C35 is speculative ('possibly because'). Additionally, the manuscript notes these conclusions are 'merely anecdotal' due to only four study pairs, limiting confidence in the generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C79",
+      "C80"
+    ],
+    "result": "Reanalysis demonstrates that many RPCB null results meeting the non-significance criterion are actually inconclusive when assessed with equivalence testing or Bayes factors, with success rates remaining below 40% even with unrealistically liberal parameter choices compared to 73% with the non-significance criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C73, C79-C80 synthesize the main empirical findings. The reanalysis is thorough, using both frequentist and Bayesian approaches with sensitivity analyses. The contrast between 73% (non-significance) and <40% (principled methods) is well-documented in the results and sensitivity analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C81"
+    ],
+    "result": "The ambiguity of RPCB null results is not unexpected because detecting absence of effects requires larger sample sizes than detecting presence, yet RPCB replications were powered at 80% for superiority tests rather than equivalence tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C81 provide important context for interpreting the results. C26 is a well-established principle supported by citation (Matthews 2006), C27 is a factual statement about RPCB design, and C81 logically connects these to explain the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Study design should align with planned analysis: if the goal is to find evidence for absence of effects, sample sizes should be determined using equivalence testing or Bayesian approaches, and equivalence margins/priors should be pre-specified independently of the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 present methodological recommendations supported by appropriate citations (Anderson and Kelley 2022, Flight and Julious 2016, Pawel et al. 2023a). These are standard best practices in study design and pre-registration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C86"
+    ],
+    "result": "Equivalence tests and Bayes factors address different questions and have complementary strengths: equivalence tests control frequentist error rates while Bayes factors provide more natural symmetric evidence measures representing belief updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C86 present a balanced comparison of the two approaches. The statements about their different properties are accurate: equivalence tests do control error rates (C39), and Bayes factors do treat hypotheses symmetrically and represent belief updating (C40). The conclusion that they address different questions (C86) is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors conclude that replication success is multifaceted and should not be reduced to a single criterion; the non-significance criterion is not fit for purpose; null results should be replicated using more informative approaches; and multiple criteria should be used as already practiced in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78, C87-C89 present the main conclusions and recommendations. These are well-supported by the analyses presented throughout the manuscript. The critique of the non-significance criterion (C76) is justified by the logical arguments and empirical reanalyses. The recommendations for multiple criteria (C87-C88) align with current best practices (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "For single study pairs, Bayes factors and TOST p-values should be interpreted as quantitative measures rather than dichotomized; for multiple pairs, dichotomization may be necessary but should use multiple thresholds representing different evidence levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 provide practical guidance for interpreting results. The argument against arbitrary dichotomization (C82-C83) is well-established in statistical practice. The pragmatic acknowledgment that dichotomization may be needed for overall rates (C84) with the recommendation for multiple thresholds (C85) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The prediction interval criterion is usually recommended for assessing replication because it accounts for uncertainty from both studies and has adequate error rates when true effect sizes are the same.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 presents a methodological recommendation supported by multiple citations (Patil et al. 2016, Mathur and VanderWeele 2020, Schauer and Hedges 2021). This represents consensus in the replication literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Alternative approaches exist beyond equivalence testing and Bayes factors, including meta-analytic extensions that could improve power but require careful threshold calibration, and various advanced methods for quantifying evidence for absent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 acknowledge limitations and alternatives. C90 and C94 are supported by extensive citations to alternative methods. The proposed meta-analytic extension (C91-C93) is reasonable, with appropriate caution about threshold calibration supported by citation (Shun et al. 2005). C92 appropriately uses 'could potentially' to indicate speculation.",
+    "result_type": "MINOR"
+  }
+]

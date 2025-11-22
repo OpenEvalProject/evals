@@ -1,0 +1,2587 @@
+{
+  "submission": {
+    "id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:42:48.528036Z",
+    "updated_at": "2025-11-21T23:42:48.528036Z"
+  },
+  "content": [
+    {
+      "id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "content_type": "manuscript",
+      "content_text": "# Seasonally migratory songbirds have different historic population size characteristics than resident relatives\n\n## Authors\n\n- Kevin Winker<sup>1</sup> ([ORCID: 0000-0002-8985-8104](https://orcid.org/0000-0002-8985-8104)) \u2020\n- Kira Delmore<sup>2</sup> ([ORCID: 0000-0003-4108-9729](https://orcid.org/0000-0003-4108-9729))\n\n### Affiliations\n\n1. University of Alaska Museum and Department of Biology and Wildlife Fairbanks United States ([ROR:01j7nq853](https://ror.org/01j7nq853))\n2. Department of Biology, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))\n3. Ecology, Evolution, and Environmental Biology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nModern genomic methods enable estimation of a lineage\u2019s long-term effective population sizes back to its origins. This ability allows unprecedented opportunities to determine how the adoption of a major life-history trait affects lineages\u2019 populations relative to those without the trait. We used this novel approach to study the population effects of the life-history trait of seasonal migration across evolutionary time. Seasonal migration is a common life-history strategy, but its effects on long-term population sizes relative to lineages that don\u2019t migrate are largely unknown. Using whole-genome data, we estimated effective population sizes over millions of years in closely related seasonally migratory and resident lineages in a group of songbirds. Our main predictions were borne out: Seasonal migration is associated with larger effective population sizes (Ne), greater long-term variation in Ne, and a greater degree of initial population growth than among resident lineages. Initial growth periods were remarkably long (0.63\u20134.29 Myr), paralleling the expansion and adaptation phases of taxon cycles, a framework of lineage expansion and eventual contraction over time encompassing biogeography and evolutionary ecology. Heterogeneity among lineages is noteworthy, despite geographic proximity (including overlap) and close relatedness. Seasonal migration imbues these lineages with fundamentally different population size attributes through evolutionary time compared to closely related resident lineages.\n\n## Introduction\n\nModern genomic methods enable estimation of a lineage\u2019s long-term effective population sizes back to its origins (Li and Durbin, 2011; Mazet et al., 2015; Nadachowska-Brzyska et al., 2015). This ability allows unprecedented opportunities to study the populational effects of past evolutionary and climatic phenomena on organismal lineages, and this new area of paleodemographics is likely to grow rapidly (Nadachowska\u2010Brzyska et al., 2022, Germain et al., 2023a; Germain et al., 2023b). We use this approach in a novel way to test hypotheses about how the adoption of a major life-history trait affected lineages\u2019 populations relative to those without the trait.\n\nSeasonal migration is a common life-history strategy among the world\u2019s birds, but its effects on long-term population sizes relative to lineages that don\u2019t have this trait are largely unknown (Newton, 2007; Rappole, 2013). Demographic differences between seasonally migratory and resident lineages have been studied for decades, but, thus far, ecological, behavioral, and genetic approaches have necessarily been focused on recent and microevolutionary phenomena (e.g. Greenberg, 1980; Tris et al., 2004; Sandercock and Jaramillo, 2002). Here, we look much deeper, contrasting changes in effective population sizes through millions of years between closely related migratory and resident lineages.\n\nThrushes in the genus Catharus and this group\u2019s sister Hylocichla mustelina (Aves: Turdidae) are a model songbird system for studying the evolutionary effects of seasonal migration. This group has both migratory and resident lineages (Figure 1), and it has been important in the study of seasonal migration, divergence, and speciation (e.g. Blain et al., 2024; Delmore et al., 2015, Delmore et al., 2016; Everson et al., 2019; Justen et al., 2024; Outlaw et al., 2003; Ruegg et al., 2014; Termignoni-Garcia et al., 2022; Voelker et al., 2013; Winker, 2000; Winker, 2010; Winker and Pruett, 2006). These animals are relatively small, omnivorous or insectivorous, forest-related birds with lineages that are long-distance seasonal migrants in North America and others that are resident in tropical North and South America (Collar, 2005). The current breeding grounds of the migratory lineages span the Russian Far East, Alaska, northern Canada, and the United States, and their wintering ranges include Mexico, the Caribbean, Central America, and tropical South America. In contrast, the resident lineages occupy Mexico, Central America, and northwestern South America (Collar, 2005; Figure 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig1-v1.jpg)\n\n**Figure 1.:** Neotropical residents are shaded in gray.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig2-v1.jpg)\n\n**Figure 2.:** Among seasonal migrants, green indicates breeding range and yellow is wintering range. Among sedentary lineages (those shaded in gray), purple indicates year-round range. Data are from Bird Life International and the Handbook of the Birds of the World, 2021. Available at http://datazone.birdlife.org/species/requestdis.\n\nWe made three predictions about effective population sizes (Ne) in seasonally migratory vs. resident lineages of these thrushes. First, we can think of North America roughly as an inverted triangle, with substantially more geographic space in the north than in the south. Among these thrushes, the migratory lineages breed in that northern, on average, larger space. The resident lineages instead currently occupy, on average, smaller geographic ranges, even in South America, where they are largely montane (Figure 2). Thus, larger breeding ranges among migrants, on average, should yield higher population sizes (Ne).\n\nSecond, climatic variability is also higher with increased latitude, often temporarily rendering vast swaths of northern North America unoccupiable to many long-distance migrant species (e.g. Colinvaux et al., 2000; Pielou, 1991). Thus, higher-latitude breeding occupancy should cause larger fluctuations in population size, meaning that variation in Ne will on average be higher among seasonal migrants. Finally, seasonal migration is likely to cause enhanced ecological (and in this case also geographic) release (i.e. in the occupancy of new niche space) in relation to resident relatives. Thus, as migratory lineages\u2019 mobility enabled them to take advantage of seasonal resource blooms in ecosystems at higher latitudes and expand their breeding ranges (geographic and ecological expansion), their populations should, on average, have grown proportionally more and at a faster rate than sedentary lineages, thus achieving the first prediction.\n\nHere, we test these predictions by reconstructing effective population sizes of these thrush lineages through time using whole-genome data and the pairwise sequentially Markovian coalescent (PSMC; Li and Durbin, 2011).\n\n## Results\n\nThe focal variables of our hypotheses all lacked phylogenetic signal. Mean effective population sizes and their variation were both higher among migratory lineages, as predicted (Table 1; U=7 and 10, p<0.05 for both; one-tailed Mann-Whitney U-test). The degree of early population growth was also proportionally higher among migrants, as predicted (Table 1; U=9, p<0.05; one-tailed Mann-Whitney U-test), but the rate of this early growth was not different between the two groups (Table 1; U=21.5, p>0.05).\n\n**Table 1.**\n Data from pairwise sequentially Markovian coalescent (PSMC) analyses reflecting effective population sizes (Ne\u00d7104) through history at depths > 50 Kyr and the five variables derived and analyzed from that output.Taxa shaded in gray are Neotropical residents.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Taxon</th>\n      <th>Mean Ne (\u00b1SD)</th>\n      <th>SD/mean</th>\n      <th>Degree of early growth 1 - (Ntrough/Npeak)</th>\n      <th>Rate of early growth degree/deltaT</th>\n      <th>deltaT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>H. mustelina</td>\n      <td>35.63 (\u00b120.11)</td>\n      <td>0.56</td>\n      <td>0.86</td>\n      <td>2.92E-07</td>\n      <td>2,946,862</td>\n    </tr>\n    <tr>\n      <td>Catharus fuscescens</td>\n      <td>95.59 (\u00b150.99)</td>\n      <td>0.53</td>\n      <td>0.83</td>\n      <td>1.93E-07</td>\n      <td>4,284,020</td>\n    </tr>\n    <tr>\n      <td>Catharus guttatus E</td>\n      <td>75.34 (\u00b165.69)</td>\n      <td>0.87</td>\n      <td>0.90</td>\n      <td>4.48E-07</td>\n      <td>2,021,768</td>\n    </tr>\n    <tr>\n      <td>Catharus guttatus W</td>\n      <td>39.72 (\u00b124.20)</td>\n      <td>0.61</td>\n      <td>0.81</td>\n      <td>3.28E-07</td>\n      <td>2,477,684</td>\n    </tr>\n    <tr>\n      <td>Catharus minimus</td>\n      <td>63.71 (\u00b128.83)</td>\n      <td>0.45</td>\n      <td>0.78</td>\n      <td>2.17E-07</td>\n      <td>3,594,914</td>\n    </tr>\n    <tr>\n      <td>Catharus ustulatus swainsonii</td>\n      <td>76.61 (\u00b166.61)</td>\n      <td>0.87</td>\n      <td>0.79</td>\n      <td>2.12E-07</td>\n      <td>3,740,764</td>\n    </tr>\n    <tr>\n      <td>Catharus ustulatus ustulatus</td>\n      <td>39.56 (\u00b112.15)</td>\n      <td>0.31</td>\n      <td>0.63</td>\n      <td>2.14E-07</td>\n      <td>2,943,763</td>\n    </tr>\n    <tr>\n      <td>Catharus bicknelli</td>\n      <td>46.90 (\u00b124.12)</td>\n      <td>0.51</td>\n      <td>0.78</td>\n      <td>2.79E-07</td>\n      <td>2,781,554</td>\n    </tr>\n    <tr>\n      <td>Catharus aurantiirostris</td>\n      <td>12.38 (\u00b12.83)</td>\n      <td>0.23</td>\n      <td>\u20130.75</td>\n      <td>\u20131.00E-06</td>\n      <td>747,451</td>\n    </tr>\n    <tr>\n      <td>Catharus fuscater</td>\n      <td>11.38 (\u00b11.66)</td>\n      <td>0.15</td>\n      <td>0.39</td>\n      <td>6.18E-07</td>\n      <td>627,449</td>\n    </tr>\n    <tr>\n      <td>Catharus frantzii</td>\n      <td>24.71 (\u00b18.41)</td>\n      <td>0.34</td>\n      <td>0.17</td>\n      <td>2.20E-07</td>\n      <td>774,024</td>\n    </tr>\n    <tr>\n      <td>Catharus gracilirostris</td>\n      <td>29.98 (\u00b19.28)</td>\n      <td>0.31</td>\n      <td>0.58</td>\n      <td>3.52E-07</td>\n      <td>1,637,663</td>\n    </tr>\n    <tr>\n      <td>Catharus mexicanus</td>\n      <td>37.10 (\u00b116.18)</td>\n      <td>0.44</td>\n      <td>0.75</td>\n      <td>3.34E-07</td>\n      <td>2,250,295</td>\n    </tr>\n    <tr>\n      <td>Catharus occidentalis</td>\n      <td>76.40 (\u00b153.14)</td>\n      <td>0.70</td>\n      <td>0.91</td>\n      <td>2.11E-07</td>\n      <td>4,292,405</td>\n    </tr>\n    <tr>\n      <td>Means (\u00b1SD)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Migrants</td>\n      <td>59.34 (\u00b135.70)*</td>\n      <td>0.57 (\u00b10.20)*</td>\n      <td>0.798 (\u00b10.08)*</td>\n      <td>2.73E-7 (\u00b10.85E-7)</td>\n      <td>3,098,906 (\u00b1732,563)*</td>\n    </tr>\n    <tr>\n      <td>Residents</td>\n      <td>31.99 (\u00b115.25)</td>\n      <td>0.36 (\u00b10.19)</td>\n      <td>0.341 (\u00b10.59)</td>\n      <td>1.23E-7 (\u00b15.69E-7)</td>\n      <td>1,721,547 (+1,409,939)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*p<0.05._\n\nTo examine why the degree of initial migrant population growth was higher but the rate of growth was not, we considered that this might be because that growth extended over a longer period of time. To our surprise, we found that these growth periods were remarkably long, ranging from 0.63 to 4.29 Myr and averaging 2.51 Myr (Table 1, Figure 3). Migratory lineages did have a longer initial period of growth (migrants mean deltaT = 3.10 Myr vs. resident mean deltaT = 1.72 Myr; Table 1; U=9, p<0.05).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig3-v1.jpg)\n\n**Figure 3.:** Each peak of initial growth is set to zero years to set a common framework in which to visualize the periods and magnitudes of initial growth among migrant (red) and resident (blue) lineages. See specific lineages with their bootstrapped results in Figure 5.\n\nIn addition to testing our hypotheses, our results reveal other important attributes of these songbirds. First, they appear to show few of the general population declines at the beginning of the last glacial period (~115 Kya) that Nadachowska-Brzyska et al., 2016, found among a global sampling of birds (Figures 4 and 5). Second, and more importantly, there is a general lack of temporal synchrony in historic population size changes (Figures 4 and 5), despite considerable geographic proximity and overlap of ranges (especially during the nonbreeding season). Finally, a pattern widely shared in the group is that most of the recent populations are below each lineage\u2019s historic peak, and this trend predates the arrival of humans in the New World (Figures 4 and 5). A striking exception is C. ustulatus swainsonii, which has had remarkable long-term growth (Figure 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig4-v1.jpg)\n\n**Figure 4.:** Migrant lineages are in red and resident lineages in blue. See specific lineages with their bootstrapped results in Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig5-v1.jpg)\n\n**Figure 5.:** Sedentary lineages are highlighted in gray. Note that scales on both axes vary among panels, and that the X axis is on a log scale. Bold red lines are the main curves from the original data, and pink lines reflect 100 replicates from bootstrapped sequences. Bold red curves are all overlaid on common axes in the single panel of Figure 4.\n\n## Discussion\n\nTo our knowledge, this is the first study to contrast long-term effective population size changes among closely related species to test a priori hypotheses about the population effects of a major life-history trait; here, we focused on seasonal migration. This perspective offers several new insights into migrant demographics and evolutionary ecology. Migratory thrush lineages showed higher effective population sizes, greater population size variation, and proportionally larger initial population growth than resident relatives. A migratory life-history strategy thus imbues these lineages with population size characteristics that are fundamentally different, on average, from those of resident relatives.\n\nAlthough migratory thrush lineages showed higher proportional initial growth than resident relatives, this was not achieved through rapid adaptation to new geographic and ecological opportunities as we predicted. Population growth in migrants and residents was positive early in the lineages\u2019 histories (deltaT) in all cases but one (C. aurantiirostris), and it occurred over fairly long periods of time (Table 1, Figures 3 and 5). That this process initially (on average) involves millions of years of population growth in this group, apparently extended by a migratory life-history strategy that provided access to higher latitudes (Table 1; Appendix 1\u2014table 1), is an insight from our study that should be examined in future work from a broader taxonomic perspective. While actual census population sizes would likely have shown considerable variation across this time, especially after the glacial cycles of the Pleistocene began ~2.6 Mya, the long-term effective population sizes of migrants tended to show steady increases, achieving peaks on average almost 3 Myr after the lineages\u2019 PSMC inception (Figures 1 and 5; Table 1).\n\nWith deltaT being generally long but highly variable (Table 1), one can envision in this group a sort of ur-thrush trajectory in which unique, lineage-specific processes occur as each evolves, influenced by geography, ecological factors, and life-history strategy. These long periods of early growth are concordant with the initial expansion or adaptation phases of taxon cycles, a conceptual framework of lineage expansion and contraction over time through interactions between biogeography and evolutionary ecology (Pepke et al., 2019; Ricklefs and Bermingham, 2002; Ricklefs and Cox, 1972; Wilson, 1961).\n\nAnother noteworthy pattern widely shared in this group is that most recent populations are below each lineage\u2019s historic peak (Figures 4 and 5). This, too, is reminiscent of taxon cycles (smaller populations in later stages), and this trend both predates the arrival of humans in the New World (Figure 5) and reflects a broader pattern of historic avian declines (Germain et al., 2023b). Yet another pattern is a general lack of temporal synchrony in historic population size changes, despite considerable geographic proximity and overlap of ranges (Figures 4 and 5). In their review of taxon cycles, Ricklefs and Bermingham, 2002, inferred from such a lack of similarity among lineages that each is in a unique population-environment relationship, responding idiosyncratically in a coevolutionary relationship with factors such as parasites, predators, pathogens, and competitors.\n\nWe attribute the higher variation in Ne among migrants to be the result of the relative instability of northern biomes compared with tropical ones through glacial-interglacial cycles (e.g. Colinvaux et al., 2000; Pielou, 1991).\n\n### Population structure\n\nPSMC estimates of population size can be affected by population structure: a change in structure can produce the signal of a change in size (Mazet et al., 2015; Mazet et al., 2016; Wakeley, 1999). Some of the population size changes we observed might therefore reflect changes only in levels of population connectivity. There are well-understood differences between seasonal migrants and residents in population structure. Migrants generally have lower levels of geographic partitioning of both phenotypic (subspecies) and genetic variation (Belliure et al., 2000; Delmore et al., 2020; Mayr, 1963; Montgomery, 1896). The resident lineages we studied are more prone to this structure than the migrant lineages, with migrants having an average of 2.5 subspecies per lineage and residents having an average of 5.9 (Collar, 2005). Migratory lineages therefore come closer to meet the assumption of PSMC analyses that populations are panmictic. Thus, in addition to our geographic and ecological scenario differing between the migrant and resident lineages we studied, we also have a pervasive effect of population structure affecting our results, likely increasingly complementing geographic expansion among seasonal migrants as lineage ages approach the recent. However, the greatest effects of inflated Ne over evolutionary time would likely occur among nonmigrants, with more isolation and less mixing (Li and Durbin, 2011).\n\nAccounting for population structure in these models to distinguish between the two phenomena is a difficult computational problem; the correlation is not simple, and it might not be tractable with data from a single individual (Mazet et al., 2016; Nadachowska-Brzyska et al., 2016). However, each individual has a genome amalgamated from the entire lineage metapopulation, including individuals and populations that have not been sampled (Mazet et al., 2015). When not focusing on relatively recent or rapid changes (e.g. in human or other bottlenecked systems, where this has been most studied), these issues are probably not as important (Mazet et al., 2016). For example, sister lineages usually show identical effective population size attributes at their origins, reflecting their shared histories (Delmore et al., 2020; Li and Durbin, 2011; Nadachowska-Brzyska et al., 2016). Inasmuch as many of our most interesting results are in deep time, where we expect current individuals of a lineage to have the most thorough mixing or amalgamation of lineage-specific metapopulation history, the effects of population structure are likely to become less important, and the results reflect (as we have necessarily interpreted) more of a lineage-wide phenomenon than a variably structured, demically biased one. However, it is clear that the latter bias becomes stronger as lineages progress toward the present, and for more recent times, population structure will be an important aspect of comparing effective population size estimates and their changes between migrant and resident lineages. In this respect, we were conservative in ignoring the most recent 50 Kyr.\n\nIt is also important to consider the time scales involved and the sampling regime. Glacial-interglacial cycles averaged ~100 Kyr back to 0.74 Mya and then averaged ~41 Kyr from then back to 2.47 Mya; about 50\u201360 of these cycles occurred (Lisiecki and Raymo, 2005: figure 4). This probably caused considerable levels of structuring and mixing in these lineages. In addition, in the PSMC output from one of our lineages, C. ustulatus swainsonii, we find that there are 54 time segments sampled for the Pleistocene, indicating the inadequacy of this method to reflect fine-scale changes and suggesting that each estimate is generally capturing a lot of both structuring and mixing.\n\nAt present, there is no way to fully disentangle the effects of population structure and geographic space on our results, but we make two observations leading us to infer that general differences in population structure are not the main factor driving our results. First, structure will have smaller effects on the PSMC signal in the deep past than in more recent history. Second, climatic changes are known to cause coordinated shifts among codistributed taxa, e.g., in promoting the partitioning of genetic variation among glacial refugia (Hewitt, 2000). A lack of coordinated shifts in our PSMC results suggests that climate-driven shifts in population structure are not a major feature (Figure 5).\n\n### Geography and evolutionary ecology\n\nEarly population growth among migrant lineages is likely affected by some degree of ecological release as these birds engage with the novel environments their increased movements expose them to, and they occupy new niche space. However, in this system, we cannot readily decouple the expanded geographic and ecological opportunities that seasonal migration provides. The relationship between avian range size and migration is complex, but correlation with latitude is notably strong in North America (Pegan and Winger, 2020). Two aspects of our results suggest that geography operating alone is unlikely to explain the larger migrant population sizes observed (Table 1, Figure 5). The first is that early population growth is positive in all but one of the lineages we studied; despite a probable lack of marked geographic expansion among residents, they, too, experienced long-term growth. The second is that these initial growth periods are quite long, extending over much longer periods than we should expect for populations responding to opportunities for geographic expansion.\n\nPSMC analyses excel at long time frames, but initial growth in residents and migrants suggests a strong role for ecological factors. Global climate reconstruction data do not suggest that there were similar long, steady trends during these time periods to match these thrush population size changes (Lisiecki and Raymo, 2005; Figure 5). Perhaps geographic space does make a difference, on average, between the two life-history strategies. That these growth periods are long also suggests the importance of ecological factors, though. For example, the boreal and subarctic woodland breeding habitats of most C. ustulatus swainsonii and C. minimus expanded dramatically across North America as glaciers receded since the last glacial maximum (LGM), a period of <20 Kyr (Pielou, 1991). A spatial response of such rapidity, less than 1% of the time of the initial historic growth phases of these two lineages (>3 Myr; Table 1), leads us to infer that breeding range size alone is not a satisfactory explanation for our results. This post-LGM expansion reflects census size, and not effective population size (Ne), but it implies that a migratory Catharus lineage\u2019s matching (or mapping) of Ne to average long-term available geographic space is not likely to take millions of years. In other words, their comparatively recent rapid postglacial expansion into new space suggests a sort of preadaptation that is not apparent early in the lineages\u2019 histories. Together, these aspects of our results suggest that while geographic factors are involved, ecological factors are also important. Teasing these factors apart might also explain the finding of Germain et al., 2023a, that migrants in general have had larger populations than residents during the last 0.67 Myr.\n\nIdentifying key ecological mechanisms affecting population sizes among migrants is difficult, and they will likely vary among lineages. There are numerous factors potentially involved. Biotic interactions in general show greater effects on range limits at the warmer than the cooler edges (Paquette and Hargreaves, 2021). Long-distance migrants, especially in their extensive latitudinal movements, would receive a range expansion advantage in this respect regardless of continental landmass shape\u2014and also through higher diel food harvest rates due to longer days and shorter nights. Many additional ecological factors affect the population sizes of migrants vs. residents, but the relationships between seasonal migration and predators, parasites, diseases, and competitors are extremely complex, and key aspects remain poorly understood (Altizer et al., 2011; Newton, 2007).\n\nSeasonal migration can be integrally related to predator avoidance, but among birds, its effects are not understood in the full, circannual context relative to resident relatives, and they are not generalizable (Br\u00f6nmark et al., 2008; McKinnon et al., 2010; Newton, 2007; Rappole, 2013). Exposure to parasites and pathogens varies both spatially and seasonally. Although breeding range diminishment of these exposures can be important in some migrants (probably not among all lineages), full annual exposure to both disease and parasite diversity is likely higher, resulting in at least some lineages showing larger immune defense organs (Bennett and Fallis, 1960; Figuerola and Green, 2000; Jenkins et al., 2012; M\u00f8ller and Erritz\u00f8e, 1998; Piersma, 1997; Ricklefs et al., 2017). Exposure to higher circannual parasite and pathogen diversity might not be correlated with susceptibility, however; migration creates a geographic break that can lower transmission, causing migrants overall to be less vulnerable to population declines (Hall et al., 2014).\n\nPresently, C. minimus, for example, shows an increased breeding and migratory prevalence and diversity of avian malaria, a blood parasite, but aspects of this relationship probably changed over the time scales involved (Pulgar\u00edn\u2010R et al., 2019; Ricklefs et al., 2014). Avian migrants are more likely to be affected by blood parasites in ecological rather than evolutionary time, although the latter are also operating (Hellgren et al., 2007; Ricklefs et al., 2014). At the deeper times of avian families, seasonal migration is an important factor affecting blood parasite-host coevolution by breaking down the congruence of phylogenetic relationships between hosts and parasites, and there are also important differences among biting-fly vectors and their transmission of avian blood parasite hosts (Jenkins et al., 2012; Ricklefs et al., 2014). These issues suggest that reconstructing associations and their effects in deep time will be difficult.\n\nInterspecific competition has long been studied between migrants and residents, but its potential role in affecting relative population sizes between the two groups is largely unknown (Rappole, 2013). As close relatives, these thrushes are likely to be each other\u2019s closest competitors, so it is conceivable that the increased relative abundance of migrants might depress realized population sizes among residents. In this group, geographic ranges overlap broadly during the nonbreeding season, but the tropical residents tend to occupy higher elevations than nonbreeding migrants (Collar, 2005). Both interspecific competition and inland, montane, and mature-forest retreats among older taxa are major factors in taxon cycles (Ricklefs and Bermingham, 2002; Ricklefs and Cox, 1972; Wilson, 1961) and might also be operating in this system.\n\n### Conclusions\n\nPaleodemographic analyses in a hypothesis-testing framework offer important new insights into the effects of the major life-history trait of seasonal migration on long-term effective population sizes. Our results indicate larger and more variable migrant populations relative to residents, and these populations grow in a way suggesting an important role not only for seasonal migration and geography, but also for evolutionary ecology. Although there are several plausible ecological mechanisms, their relative importance is unknown. The differences we found are between group averages, and variation among lineages includes residents that are migrant-like (C. occidentalis; Table 1, Figures 1, 3, and 5) and vice versa (e.g. C. u. ustulatus; Table 1, Figure 5). Understanding why residents like C. occidentalis show migrant-like historic population characteristics will help us understand the mechanisms affecting these lineages. Such reasons could be as simple as realized range expansion (i.e. geographic and ecological opportunity), and this hypothesis appears to fit the deeply split eastern-western sister lineages within species in which smaller western ranges have smaller effective population sizes (C. guttatus and C. ustulatus; Figure 5). Or the reasons might be as complex as a lineage dropping out of migration to become sedentary (C. occidentalis is sister to the migrant C. guttatus; Figure 1).\n\nIt is clear that seasonally migratory lineages in this system have, on average, fundamentally different effective population size attributes through evolutionary time than closely related resident lineages. Population structure is probably not a main driver of these results. What remains unclear are the relative roles of geographic and ecological expansions in causing these differences. Both are likely important. More studies in other systems will be needed to tease these roles apart and to determine which ecological mechanisms are involved.\n\nWhat other patterns will emerge across geographic, temporal, and phylogenetic space?\n\nFurther sampling among other closely related groups containing mixed lineages of migrants and residents is needed, as are complementary approaches to reconstructing demographic history, using more individuals per lineage and other population genomic methods applicable to that type of sampling (e.g. Beichman et al., 2017; Delmore et al., 2020; Marchi et al., 2021). Such studies will also help determine the relative contributions of seasonal migration and its geographic and ecological expansion components in the context of what appears to be a normal tendency for early lineage growth (Figures 1 and 5, Table 1).\n\n## Materials and methods\n\nThe thrush lineages in our study are from the genus Catharus and its sister, the single species in the genus Hylocichla. These comprise Nearctic-Neotropic seasonal migrants and Neotropical residents. Among the latter, some lineages (C. aurantiirostris, occidentalis, frantzii, and mexicanus) have some populations that exhibit some short-distance migration\u2014likely partial migration or hard-weather movements, either in elevation or with extreme northern populations moving south (Collar, 2005). These lineages thus comprise two groups, which for simplicity we will refer to as \u2018seasonal migrants\u2019 and \u2018residents\u2019: seasonal migrants with extensive latitudinal movements, and residents that are either wholly sedentary or with some individuals moving rather limited distances within the Neotropics. The eight migrant lineages are: H. mustelina, C. fuscescens, C. guttatus E (eastern lineage), C. guttatus W (western lineage), C. minimus, C. ustulatus swainsonii, C. u. ustulatus, and C. bicknelli. (Note that four of these lineages represent two deeply divergent lineages, each within what are currently considered two biological species, C. guttatus and C. ustulatus; Topp et al., 2013.) The six resident lineages are: C. aurantiirostris, C. fuscater, C. frantzii, C. gracilirostris, C. mexicanus, and C. occidentalis. Over the full evolutionary history of this Hylocichla-Catharus clade, changes among lineages occurred in the trait of long-distance migration (Outlaw et al., 2003; Voelker et al., 2013; Winker and Pruett, 2006; Figure 1). Our study does not assume that this trait was constant within each lineage after the speciation events when these switches occurred. Instead, we consider that for a major trait like long-distance migration, losses and gains at the full lineage level are likely to be infrequent, and that current evidence of trait distribution on a phylogeny provides a powerful comparative framework in which to elucidate the effects of that trait on other lineage attributes.\n\nDNA was extracted from high-quality voucher specimens or blood samples for 14 thrush lineages (Appendix 1\u2014table 1; data are available on NCBI-SRA, see Delmore and Winker, 2024). Whole-genome sequencing libraries were constructed using Nextera (Illumina) DNA Flex Library Prep kits, and libraries were sequenced on a NovaSeq S4 (Illumina, San Diego, CA, USA) using paired-end 150 bp reads. Reads were aligned to the C. ustulatus genome (inland subspecies, Reference bCatUst1, NCBI PRJNA613294) using bwa (mem algorithm with default settings, Li and Durbin, 2009). We did not use a maskfile. Identical treatment of all lineages in these respects should provide a strong foundation for a comparative study like this among close relatives. Resulting .sam files were converted to .bam format with samtools (Li et al., 2009); picardtools was used to clean, sort, and add read groups to .bam files (https://broadinstitute.github.io/picard/; RRID:SCR_006525). Between 97% and 98% of reads mapped to the reference for an average read depth of 23\u00d7 (range 15.9\u201329.8\u00d7).\n\nWe analyzed whole-genomic data from the .bam files using the PSMC approach in the software package psmc (Li and Durbin, 2011; our code is available at doi 10.6084/m9.figshare.28828478). This analysis uses pairwise (allelic) estimates of coalescent times for each locus across the genome in a nonoverlapping manner, developing a distribution of times to most recent common ancestor, and the frequency of these coalescent events is inversely proportional to effective population size (Li and Durbin, 2011; Mather et al., 2020).\n\nWe used a generation time of 2.5 year, taken as an average among many of these species (Dellinger et al., 2020; Evans et al., 2020; Mack and Yong, 2020; Saether et al., 2005; Townsend et al., 2020; Whitaker et al., 2020), and a mutation rate of 2.3\u00d710\u22129 mutations per site per year (Smeds et al., 2016). Single individuals represent lineage characteristics using this approach (Li and Durbin, 2011; Mazet et al., 2015; Nadachowska-Brzyska et al., 2015). Importantly for our focal questions, variations in these parameters do not affect the shape of the curve of population sizes (Ne) through time, but rather the values of the time and Ne estimates (Nadachowska-Brzyska et al., 2015). Being closely related and of similar size, we expect these taxa to have very similar generation times and mutation rates (e.g. Bird et al., 2020; Healy et al., 2014). However, seasonal migration can have an effect on survival and thus generation time, and Bird et al., 2020, produced modeled estimates for this group, providing an alternate approach. The basis for these modeled values is tiny, and the accuracy of the modeled results is uncertain, so we use these estimates with caution. But as a check on our results, we ran all of our analyses again with the variable generation times given by Bird et al., 2020. As expected, most of the differences are time-related, and, importantly, the overall results are not different (Appendix 1\u2014table 2).\n\nHilgers et al., 2024, recently showed that artifactual peaks can occur due to recent time parameter settings in the PSMC program (Li and Durbin, 2011) that are often used as a default setting. They recommended that such recent peaks can be eliminated by breaking the first atomic time interval (typically 4) into either two (2+2) or four (1+1+1+1) smaller windows. We had four lineages that appeared to have such peaks: H. mustelina, C. fuscescens, C. guttatus E, and C. gracilirostris. For the latter three, breaking the recent period parameter into four windows (1+1+1+1) eliminated these peaks. For H. mustelina, smaller windows (2+2 and 1+1+1+1) made the recent peak even higher, so we have used the default setting (the most conservative result), as we did with the remaining taxa that did not show such peaks.\n\nThe PSMC method is not foolproof; e.g., aspects of selection, inbreeding, and isolation can affect population size estimates (Mather et al., 2020). No method of genomic population demographic reconstruction is known to be consistently and reliably accurate (Marchi et al., 2021), but uniform application of a powerful method like PSMC to genome-scale data in a closely related group of lineages can provide new insights into the evolutionary effects of major life-history strategies.\n\nFor all variables, PSMC output for times more recent than 50 Kya was ignored, because recent estimates of effective population size using this method are less reliable (Li and Durbin, 2011; Nadachowska-Brzyska et al., 2016). We consider this to be a conservative cutoff date. Our two focal variables, mean effective population size (Ne) and the coefficient of variation (SD/mean), were obtained from standard PSMC output. Our examination of early population growth involved deriving two additional variables from the PSMC output: degree of initial growth (1 - (Ntrough/Npeak)), and rate of growth (degree/time period over which initial growth occurred; the latter we term deltaT; Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig6-v1.jpg)\n\n**Figure 6.:** The variables in our analyses are the mean and SD of the effective population size (Ne) values, deltaT of initial growth (timetrough \u2013 timepeak), the degree of that growth (1 \u2013 [Ntrough/Npeak]), and the rate of that growth (degree/deltaT).\n\nWe note that estimates of the dates of divergence events in Catharus evolution vary by study, genetic marker, methodology, and parameter estimates such as generation time and mutation or substitution rates (Outlaw et al., 2003; Topp et al., 2013; Voelker et al., 2013; Winker and Pruett, 2006). Date estimates in our study that differ from previous work reflect these methodological issues, and here it is the relative values among lineages within our study that are most important.\n\nWe tested the assumption of phylogenetic independence of continuous characters obtained from the PSMC analyses using a phylogeny reconstructed using maximum likelihood from 1.5 Mb of autosomal sequence from chromosome 22 in MEGA X (Kumar et al., 2018; Figure 1), which produced the expected topology given prior work (e.g. Everson et al., 2019), and, for phylogenetic independence, the Abouheif-Moran approach (Abouheif, 1999; M\u00fcnkem\u00fcller et al., 2012) as implemented in the R package adephylo (Jombart et al., 2010). For those variables not showing phylogenetic signal, we tested our hypotheses using a one-tailed Mann-Whitney U-test. This nonparametric test has the advantage of not requiring that particular assumptions are met (e.g. homogeneity of variance) nor precise measurements (thus accommodating uncertainty in our Ne estimates; Sokal and Rohlf, 1995; Whitlock and Schluter, 2015).\n",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Biology T\u00fcbingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90848.3.sa0](https://doi.org/10.7554/eLife.90848.3.sa0)\n\nThis is a valuable study of the role that life history differences might play in determining population size and demography. While concerns about generation times and population structure leave the evidence for the claims in parts incomplete, the work is of considerable interest to anyone who tries to understand evolutionary consequences of life history changes.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90848.3.sa1](https://doi.org/10.7554/eLife.90848.3.sa1)\n\nSummary:\n\nThis interesting study applies the PSMC model to a set of new genome sequences for migratory and nonmigratory thrushes and seeks to describe differences in the population size history among these groups. The authors create a set of summary statistics describing the PSMC traces - mean and standard deviation of Ne, plus a set of metrics describing the shape of the oldest Ne peak - and use these to compare across migratory and resident species (taking single samples sequenced here as representative of the species). The analyses are framed as supporting or refuting aspects of a biogeographic model describing colonization dynamics from tropical to temperate North and South America.\n\nStrengths:\n\n* This is a creative use of PSMC to test explicit a priori hypotheses about season migration and Ne. The PSMC analyses seem well done and the authors acknowledge much of the complexity of interpretation in the discussion.\n\n* We appreciate the test-of-hypothesis design of the study and the explicit formulation of three main expectations to test. The data analysis has been done with appropriate available tools.\n\nKey weaknesses from the original round of review:\n\n* Short of developing some novel theory deep in the PSMC model, I think readers would need to see simulations showing that the analyses employed in this paper are capable of supporting or refuting their biogeographic hypothesis before viewing them as strongly supporting a specific biogeographic model. Tools like msprime and stdpopsim can be used to simulate genome-scale data with fairly complex biogeographic models. Running simulations of a thrush-like population under different biogeographic scenarios and then using PSMC to differentiate those patterns would be a more convincing argument for the biogeographic aspects of this paper. The other benefit of this approach would be to nail down a specific quantitative version of the taxon cycles model referenced in the abstract, and it would allow the authors to better study and explain the motivation behind the specific summary statistics they develop for PSMC posthoc analysis.\n\n* The authors hypothesized that the wider realized breeding and ecological range characterising migrants versus resident lineages could be a major drive for increased effective population size and population expansion in migrants versus residents. I understand that this pattern (wider range in migrants) is a common characteristic across bird lineages and that it is viewed as a result of adapting to migration. A problem that I see in their dataset is that the breeding grounds range of the two groups are located in very different geographic areas (mainly South versus North America). The authors could have expanded their dataset to include species whose breeding grounds are from the two areas, regardless of their migratory behaviour, as a comparison to disentangle whether ecological differences of these two areas can affect the population sizes or growth rates.\n\n* As I understand from previous literature, the time-scale to population growth and estimates of effective population sizes considered in the present paper for the resident versus migratory clades seem to widely predate the times to speciation for the same lineages, which were reported in previous work of the same authors (Everson et al 2019) and others (Termignoni-Garcia et al 2022). This piece of information makes the calculation of species-specific population size changes difficult to interpret in the light of lineages' comparison. It is unclear what the authors consider to be lineage-specific in these estimates, as the clades were likely undergoing substantial admixture during the time predating full isolation.\n\n* Regarding the methodological difficulties in interpreting the impact of population structure on the estimates of effective population sizes with the PSMC approach, I would think that performing simulations to compare different scenarios of different degrees of structured populations would have helped substantially understand some of the outcomes.\n\n* The authors use an average generation time for all taxa, but the citations imply generation time is known for at least some of them. Are there differences in generation time associated with migration? I am not a bird biologist, but quick googling suggests maybe this is the case? (https://doi.org/10.1111/1365-2656.13983). I think it important the authors address this, as differences in generation time I believe should affect estimates of Ne and growth.\n\n[Editors' note: the original reviews in full are here: https://elifesciences.org/reviewed-preprints/90848/reviews. The reviewers were not available to comment on the latest version of the submission.]\n",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b73db192-e77c-4833-9b4b-e3ba120aa503",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C1",
+      "claim": "Modern genomic methods enable estimation of a lineage's long-term effective population sizes back to its origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Modern genomic methods enable estimation of a lineage's long-term effective population sizes back to its origins (Li and Durbin, 2011; Mazet et al., 2015; Nadachowska-Brzyska et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published methods (Li and Durbin, 2011; Mazet et al., 2015; Nadachowska-Brzyska et al., 2015)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "00823512-2eeb-4465-b75c-6193960f8543",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C2",
+      "claim": "Seasonal migration is associated with larger effective population sizes (Ne) than among resident lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal migration is associated with larger effective population sizes (Ne), greater long-term variation in Ne, and a greater degree of initial population growth than among resident lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of PSMC data showing mean Ne differences (Table 1; U=7, p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "a506b4c4-c5c4-4048-be6a-d955297ecb40",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C3",
+      "claim": "Seasonal migration is associated with greater long-term variation in Ne than among resident lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal migration is associated with larger effective population sizes (Ne), greater long-term variation in Ne, and a greater degree of initial population growth than among resident lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of PSMC data showing SD/mean differences (Table 1; U=10, p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e36a284d-b39e-43ee-ae4e-9227e6fd26d2",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C4",
+      "claim": "Seasonal migration is associated with a greater degree of initial population growth than among resident lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal migration is associated with larger effective population sizes (Ne), greater long-term variation in Ne, and a greater degree of initial population growth than among resident lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of PSMC data (Table 1; U=9, p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ab6f8abc-ab22-4904-84f3-d698b9762cf1",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C5",
+      "claim": "Initial growth periods in these thrush lineages ranged from 0.63 to 4.29 Myr.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial growth periods were remarkably long (0.63\u20134.29 Myr), paralleling the expansion and adaptation phases of taxon cycles, a framework of lineage expansion and eventual contraction over time encompassing biogeography and evolutionary ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from PSMC analysis data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "cdf2b782-dc72-4583-9949-89e4599a3421",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C6",
+      "claim": "Initial growth periods parallel the expansion and adaptation phases of taxon cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial growth periods were remarkably long (0.63\u20134.29 Myr), paralleling the expansion and adaptation phases of taxon cycles, a framework of lineage expansion and eventual contraction over time encompassing biogeography and evolutionary ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of observed growth periods with taxon cycle framework",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "d40c9a22-1ccf-48c6-9ec2-60ad44e2da99",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C7",
+      "claim": "Heterogeneity among lineages is noteworthy, despite geographic proximity and close relatedness.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneity among lineages is noteworthy, despite geographic proximity (including overlap) and close relatedness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from PSMC results showing different population trajectories (Figures 4 and 5)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "08e62449-25ab-4ad5-9b8a-b8d087613c4f",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C8",
+      "claim": "Seasonal migration imbues lineages with fundamentally different population size attributes through evolutionary time compared to closely related resident lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal migration imbues these lineages with fundamentally different population size attributes through evolutionary time compared to closely related resident lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from statistical comparisons of multiple population parameters between migrants and residents",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e5d6379a-0e2b-4fc3-9460-a4feddfd7736",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C9",
+      "claim": "Thrushes in the genus Catharus and Hylocichla mustelina are a model songbird system for studying the evolutionary effects of seasonal migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thrushes in the genus Catharus and this group's sister Hylocichla mustelina (Aves: Turdidae) are a model songbird system for studying the evolutionary effects of seasonal migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies using this system (e.g. Blain et al., 2024; Delmore et al., 2015, Delmore et al., 2016; Everson et al., 2019; Justen et al., 2024; Outlaw et al., 2003; Ruegg et al., 2014; Termignoni-Garcia et al., 2022; Voelker et al., 2013; Winker, 2000; Winker, 2010; Winker and Pruett, 2006)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "9b2f4a29-cdb6-44c9-8eaf-34ae226a5204",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C10",
+      "claim": "This group has both migratory and resident lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "This group has both migratory and resident lineages (Figure 1), and it has been important in the study of seasonal migration, divergence, and speciation (e.g. Blain et al., 2024; Delmore et al., 2015, Delmore et al., 2016; Everson et al., 2019; Justen et al., 2024; Outlaw et al., 2003; Ruegg et al., 2014; Termignoni-Garcia et al., 2022; Voelker et al., 2013; Winker, 2000; Winker, 2010; Winker and Pruett, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in phylogeny (Figure 1) and supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "6f5eb09b-58c5-472a-bac2-c719a6251074",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C11",
+      "claim": "These thrushes are relatively small, omnivorous or insectivorous, forest-related birds.",
+      "claim_type": "EXPLICIT",
+      "source": "These animals are relatively small, omnivorous or insectivorous, forest-related birds with lineages that are long-distance seasonal migrants in North America and others that are resident in tropical North and South America (Collar, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collar, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "3ed49e3d-0e58-49d5-bece-b827e30f37f2",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C12",
+      "claim": "The current breeding grounds of the migratory lineages span the Russian Far East, Alaska, northern Canada, and the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "The current breeding grounds of the migratory lineages span the Russian Far East, Alaska, northern Canada, and the United States, and their wintering ranges include Mexico, the Caribbean, Central America, and tropical South America.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collar, 2005 and shown in Figure 2",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "c264d170-fdef-45aa-bb4e-e339af655dc8",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C13",
+      "claim": "The wintering ranges of migratory lineages include Mexico, the Caribbean, Central America, and tropical South America.",
+      "claim_type": "EXPLICIT",
+      "source": "The current breeding grounds of the migratory lineages span the Russian Far East, Alaska, northern Canada, and the United States, and their wintering ranges include Mexico, the Caribbean, Central America, and tropical South America.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collar, 2005 and shown in Figure 2",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "b8692e34-8c4b-4174-a2c3-878c776d9631",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C14",
+      "claim": "The resident lineages occupy Mexico, Central America, and northwestern South America.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the resident lineages occupy Mexico, Central America, and northwestern South America (Collar, 2005; Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Collar, 2005 and shown in Figure 2",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "78707611-39b7-4be4-b08f-61bc8b02c27a",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C15",
+      "claim": "Larger breeding ranges among migrants should yield higher population sizes (Ne).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, larger breeding ranges among migrants, on average, should yield higher population sizes (Ne).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on geographic reasoning about range size and population size relationship",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "490c25b7-33c1-48e9-bc31-6ee28d518934",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C16",
+      "claim": "Climatic variability is higher with increased latitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, climatic variability is also higher with increased latitude, often temporarily rendering vast swaths of northern North America unoccupiable to many long-distance migrant species (e.g. Colinvaux et al., 2000; Pielou, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Colinvaux et al., 2000 and Pielou, 1991",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "df0ca69f-d1e2-4549-9368-7790b4a0983a",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C17",
+      "claim": "Higher-latitude breeding occupancy should cause larger fluctuations in population size.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, higher-latitude breeding occupancy should cause larger fluctuations in population size, meaning that variation in Ne will on average be higher among seasonal migrants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on inference from climatic variability at higher latitudes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "64311013-4abf-4897-8690-8c8cb91e4edb",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C18",
+      "claim": "Mean effective population sizes were higher among migratory lineages than residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean effective population sizes and their variation were both higher among migratory lineages, as predicted (Table 1; U=7 and 10, p<0.05 for both; one-tailed Mann-Whitney U-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from Mann-Whitney U-test (U=7, p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "90c8bb9c-8f97-47ad-b5d1-adf6a738b82f",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C19",
+      "claim": "Variation in effective population sizes was higher among migratory lineages than residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean effective population sizes and their variation were both higher among migratory lineages, as predicted (Table 1; U=7 and 10, p<0.05 for both; one-tailed Mann-Whitney U-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from Mann-Whitney U-test (U=10, p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "7880ad31-eb4c-4d8e-8820-318797c3af60",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C20",
+      "claim": "The degree of early population growth was proportionally higher among migrants than residents.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of early population growth was also proportionally higher among migrants, as predicted (Table 1; U=9, p<0.05; one-tailed Mann-Whitney U-test), but the rate of this early growth was not different between the two groups (Table 1; U=21.5, p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from Mann-Whitney U-test (U=9, p<0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "88d8a630-2449-4c2f-9549-dcf7b4dff1e1",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C21",
+      "claim": "The rate of early growth was not different between migrants and residents.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of early population growth was also proportionally higher among migrants, as predicted (Table 1; U=9, p<0.05; one-tailed Mann-Whitney U-test), but the rate of this early growth was not different between the two groups (Table 1; U=21.5, p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from Mann-Whitney U-test (U=21.5, p>0.05)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "3f26e269-53e5-4187-9708-7a95169ed0ec",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C22",
+      "claim": "Growth periods ranged from 0.63 to 4.29 Myr and averaged 2.51 Myr.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, we found that these growth periods were remarkably long, ranging from 0.63 to 4.29 Myr and averaging 2.51 Myr (Table 1, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from PSMC data shown in Table 1 and Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "5c6178ea-6028-4afa-8bd1-5c24d8a56700",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C23",
+      "claim": "Migratory lineages had a longer initial period of growth than residents (migrants mean deltaT = 3.10 Myr vs. resident mean deltaT = 1.72 Myr).",
+      "claim_type": "EXPLICIT",
+      "source": "Migratory lineages did have a longer initial period of growth (migrants mean deltaT = 3.10 Myr vs. resident mean deltaT = 1.72 Myr; Table 1; U=9, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result from Mann-Whitney U-test (U=9, p<0.05) on deltaT values in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "21eb563b-a0f7-43ba-b6ad-387802c0daa4",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C24",
+      "claim": "These thrushes appear to show few of the general population declines at the beginning of the last glacial period (~115 Kya) that Nadachowska-Brzyska et al., 2016, found among a global sampling of birds.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they appear to show few of the general population declines at the beginning of the last glacial period (~115 Kya) that Nadachowska-Brzyska et al., 2016, found among a global sampling of birds (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of PSMC results (Figures 4 and 5) with findings from Nadachowska-Brzyska et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "57835a1a-3298-45ae-a8ae-60985268bb1d",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C25",
+      "claim": "There is a general lack of temporal synchrony in historic population size changes among these thrush lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, and more importantly, there is a general lack of temporal synchrony in historic population size changes (Figures 4 and 5), despite considerable geographic proximity and overlap of ranges (especially during the nonbreeding season).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from PSMC trajectories in Figures 4 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "6ad3570c-c928-4448-bf10-19b10fa66f5d",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C26",
+      "claim": "Most recent populations are below each lineage's historic peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a pattern widely shared in the group is that most of the recent populations are below each lineage's historic peak, and this trend predates the arrival of humans in the New World (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from PSMC trajectories in Figures 4 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "bea93802-dfad-441c-98fe-ec82d9f4c810",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C27",
+      "claim": "The trend of recent populations being below historic peaks predates the arrival of humans in the New World.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a pattern widely shared in the group is that most of the recent populations are below each lineage's historic peak, and this trend predates the arrival of humans in the New World (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from timing of population declines in Figures 4 and 5 relative to known human arrival dates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "7b9cda82-4744-4ba8-9df0-3ab34b47d8eb",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C28",
+      "claim": "C. ustulatus swainsonii has had remarkable long-term growth.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking exception is C. ustulatus swainsonii, which has had remarkable long-term growth (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from PSMC trajectory in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "d0b4ff0b-0268-4baa-884b-296f997ad3f9",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C29",
+      "claim": "This is the first study to contrast long-term effective population size changes among closely related species to test a priori hypotheses about the population effects of a major life-history trait.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first study to contrast long-term effective population size changes among closely related species to test a priori hypotheses about the population effects of a major life-history trait; here, we focused on seasonal migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' statement of novelty based on their knowledge of the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "9433b8f8-6a3e-4c59-8706-3c0bf8797480",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C30",
+      "claim": "Migratory thrush lineages showed higher effective population sizes than resident relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Migratory thrush lineages showed higher effective population sizes, greater population size variation, and proportionally larger initial population growth than resident relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "df0f19a2-128f-4ea8-829f-23ead27ddc4c",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C31",
+      "claim": "Migratory thrush lineages showed greater population size variation than resident relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Migratory thrush lineages showed higher effective population sizes, greater population size variation, and proportionally larger initial population growth than resident relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "4c2d7291-26f5-4608-b264-242abccc2186",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C32",
+      "claim": "Migratory thrush lineages showed proportionally larger initial population growth than resident relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Migratory thrush lineages showed higher effective population sizes, greater population size variation, and proportionally larger initial population growth than resident relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of statistical results from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "c761a3e0-2d7a-4185-8dfd-9ab8deea205a",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C33",
+      "claim": "A migratory life-history strategy imbues lineages with population size characteristics that are fundamentally different from those of resident relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "A migratory life-history strategy thus imbues these lineages with population size characteristics that are fundamentally different, on average, from those of resident relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple statistical comparisons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "b40e194e-f498-449b-ac0d-d74473c706aa",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C34",
+      "claim": "Population growth in migrants and residents was positive early in the lineages' histories (deltaT) in all cases but one (C. aurantiirostris).",
+      "claim_type": "EXPLICIT",
+      "source": "Population growth in migrants and residents was positive early in the lineages' histories (deltaT) in all cases but one (C. aurantiirostris), and it occurred over fairly long periods of time (Table 1, Figures 3 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from degree of early growth values in Table 1 and Figures 3 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "0be6bcd9-f74a-4104-80e8-3cc7607fc8cc",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C35",
+      "claim": "The initial population growth process involves millions of years of population growth in this group.",
+      "claim_type": "EXPLICIT",
+      "source": "That this process initially (on average) involves millions of years of population growth in this group, apparently extended by a migratory life-history strategy that provided access to higher latitudes (Table 1; Appendix 1\u2014table 1), is an insight from our study that should be examined in future work from a broader taxonomic perspective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Derived from deltaT values in Table 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e58147ab-79eb-4618-a075-4b1f2bd388cc",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C36",
+      "claim": "Long-term effective population sizes of migrants tended to show steady increases, achieving peaks on average almost 3 Myr after the lineages' PSMC inception.",
+      "claim_type": "EXPLICIT",
+      "source": "While actual census population sizes would likely have shown considerable variation across this time, especially after the glacial cycles of the Pleistocene began ~2.6 Mya, the long-term effective population sizes of migrants tended to show steady increases, achieving peaks on average almost 3 Myr after the lineages' PSMC inception (Figures 1 and 5; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from deltaT values in Table 1 and observed in Figures 1 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "c00a22e7-9925-4cab-a8f2-6e36fb0ec756",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C37",
+      "claim": "Long periods of early growth are concordant with the initial expansion or adaptation phases of taxon cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "These long periods of early growth are concordant with the initial expansion or adaptation phases of taxon cycles, a conceptual framework of lineage expansion and contraction over time through interactions between biogeography and evolutionary ecology (Pepke et al., 2019; Ricklefs and Bermingham, 2002; Ricklefs and Cox, 1972; Wilson, 1961).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison with taxon cycle framework from cited literature",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "8728bc22-db96-4b77-85c0-e821c1eb3cbc",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C38",
+      "claim": "The pattern of recent populations being below historic peaks is reminiscent of taxon cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "This, too, is reminiscent of taxon cycles (smaller populations in later stages), and this trend both predates the arrival of humans in the New World (Figure 5) and reflects a broader pattern of historic avian declines (Germain et al., 2023b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on comparison with taxon cycle framework and citation to Germain et al., 2023b",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "474a2407-e8db-44d4-ae97-ebbc6e249701",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C39",
+      "claim": "The lack of temporal synchrony among lineages suggests each is in a unique population-environment relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "In their review of taxon cycles, Ricklefs and Bermingham, 2002, inferred from such a lack of similarity among lineages that each is in a unique population-environment relationship, responding idiosyncratically in a coevolutionary relationship with factors such as parasites, predators, pathogens, and competitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from Ricklefs and Bermingham, 2002 applied to observed patterns",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "f4c379f5-c654-4d01-9aca-fcdff72f8030",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C40",
+      "claim": "The higher variation in Ne among migrants is attributed to the relative instability of northern biomes compared with tropical ones through glacial-interglacial cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute the higher variation in Ne among migrants to be the result of the relative instability of northern biomes compared with tropical ones through glacial-interglacial cycles (e.g. Colinvaux et al., 2000; Pielou, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference supported by citations to Colinvaux et al., 2000 and Pielou, 1991",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "d9489794-61d8-453b-a3f4-b07ef74e21e6",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C41",
+      "claim": "A change in population structure can produce the signal of a change in population size in PSMC estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "PSMC estimates of population size can be affected by population structure: a change in structure can produce the signal of a change in size (Mazet et al., 2015; Mazet et al., 2016; Wakeley, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mazet et al., 2015; Mazet et al., 2016; Wakeley, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "af2ce8ec-2b84-47ea-aa0b-11fcc43ce01c",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C42",
+      "claim": "Migrants generally have lower levels of geographic partitioning of both phenotypic and genetic variation than residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Migrants generally have lower levels of geographic partitioning of both phenotypic (subspecies) and genetic variation (Belliure et al., 2000; Delmore et al., 2020; Mayr, 1963; Montgomery, 1896).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Belliure et al., 2000; Delmore et al., 2020; Mayr, 1963; Montgomery, 1896",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "9ddfd1f7-fc3c-4aa9-9349-2401b932cd2f",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C43",
+      "claim": "The resident lineages studied are more prone to population structure than the migrant lineages, with migrants having an average of 2.5 subspecies per lineage and residents having an average of 5.9.",
+      "claim_type": "EXPLICIT",
+      "source": "The resident lineages we studied are more prone to this structure than the migrant lineages, with migrants having an average of 2.5 subspecies per lineage and residents having an average of 5.9 (Collar, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from Collar, 2005",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "1fd35967-611b-4886-b61a-8748727a5ef3",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C44",
+      "claim": "Migratory lineages come closer to meet the assumption of PSMC analyses that populations are panmictic.",
+      "claim_type": "EXPLICIT",
+      "source": "Migratory lineages therefore come closer to meet the assumption of PSMC analyses that populations are panmictic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on lower subspecies counts in migrants",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ef51cc0c-55b5-40d6-bfef-e634ed9a59eb",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C45",
+      "claim": "The greatest effects of inflated Ne over evolutionary time would likely occur among nonmigrants, with more isolation and less mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the greatest effects of inflated Ne over evolutionary time would likely occur among nonmigrants, with more isolation and less mixing (Li and Durbin, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference supported by citation to Li and Durbin, 2011",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "d3a6a7ca-815b-40a9-b47b-e5e750174119",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C46",
+      "claim": "Each individual has a genome amalgamated from the entire lineage metapopulation, including individuals and populations that have not been sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "However, each individual has a genome amalgamated from the entire lineage metapopulation, including individuals and populations that have not been sampled (Mazet et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mazet et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "2fb8351a-dd04-4fcb-a6a6-dbc0dc7b382d",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C47",
+      "claim": "Sister lineages usually show identical effective population size attributes at their origins, reflecting their shared histories.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, sister lineages usually show identical effective population size attributes at their origins, reflecting their shared histories (Delmore et al., 2020; Li and Durbin, 2011; Nadachowska-Brzyska et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Delmore et al., 2020; Li and Durbin, 2011; Nadachowska-Brzyska et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e0718050-ba2d-4803-911e-76832092fc0a",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C48",
+      "claim": "The effects of population structure become less important in deep time, where current individuals are expected to have the most thorough mixing of lineage-specific metapopulation history.",
+      "claim_type": "EXPLICIT",
+      "source": "Inasmuch as many of our most interesting results are in deep time, where we expect current individuals of a lineage to have the most thorough mixing or amalgamation of lineage-specific metapopulation history, the effects of population structure are likely to become less important, and the results reflect (as we have necessarily interpreted) more of a lineage-wide phenomenon than a variably structured, demically biased one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on understanding of genome amalgamation over time",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "da9244a5-31af-495b-89a3-72011d644c85",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C49",
+      "claim": "Population structure becomes a stronger bias as lineages progress toward the present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is clear that the latter bias becomes stronger as lineages progress toward the present, and for more recent times, population structure will be an important aspect of comparing effective population size estimates and their changes between migrant and resident lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on understanding of population structure effects over time",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ae29863c-dc28-476f-93a5-9c9f20fa2554",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C50",
+      "claim": "Glacial-interglacial cycles averaged ~100 Kyr back to 0.74 Mya and then averaged ~41 Kyr from then back to 2.47 Mya.",
+      "claim_type": "EXPLICIT",
+      "source": "Glacial-interglacial cycles averaged ~100 Kyr back to 0.74 Mya and then averaged ~41 Kyr from then back to 2.47 Mya; about 50\u201360 of these cycles occurred (Lisiecki and Raymo, 2005: figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lisiecki and Raymo, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "1c994c54-a50a-43c8-b3d4-46167c55ae70",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C51",
+      "claim": "About 50\u201360 glacial-interglacial cycles occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Glacial-interglacial cycles averaged ~100 Kyr back to 0.74 Mya and then averaged ~41 Kyr from then back to 2.47 Mya; about 50\u201360 of these cycles occurred (Lisiecki and Raymo, 2005: figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lisiecki and Raymo, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "8b2fa6ec-04e5-4406-aafc-692138da3a0b",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C52",
+      "claim": "There are 54 time segments sampled for the Pleistocene in the PSMC output from C. ustulatus swainsonii.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in the PSMC output from one of our lineages, C. ustulatus swainsonii, we find that there are 54 time segments sampled for the Pleistocene, indicating the inadequacy of this method to reflect fine-scale changes and suggesting that each estimate is generally capturing a lot of both structuring and mixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from PSMC analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "5151a79b-ac3e-466d-95be-446b6b6bc4d9",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C53",
+      "claim": "Structure will have smaller effects on the PSMC signal in the deep past than in more recent history.",
+      "claim_type": "EXPLICIT",
+      "source": "First, structure will have smaller effects on the PSMC signal in the deep past than in more recent history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on understanding of PSMC methodology and population structure effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "fb4a42e1-88f4-41f8-bca2-8dbba9453025",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C54",
+      "claim": "Climatic changes are known to cause coordinated shifts among codistributed taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, climatic changes are known to cause coordinated shifts among codistributed taxa, e.g., in promoting the partitioning of genetic variation among glacial refugia (Hewitt, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hewitt, 2000",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e392dfbb-65db-407e-adb2-5325314676dd",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C55",
+      "claim": "A lack of coordinated shifts in PSMC results suggests that climate-driven shifts in population structure are not a major feature.",
+      "claim_type": "EXPLICIT",
+      "source": "A lack of coordinated shifts in our PSMC results suggests that climate-driven shifts in population structure are not a major feature (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from observed lack of synchrony in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "562e9c29-d98b-498f-b2ef-c5f89564fb5c",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C56",
+      "claim": "The relationship between avian range size and migration is complex, but correlation with latitude is notably strong in North America.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between avian range size and migration is complex, but correlation with latitude is notably strong in North America (Pegan and Winger, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pegan and Winger, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "53b3bb17-00bf-4429-ad91-6dd4dd429695",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C57",
+      "claim": "Early population growth is positive in all but one of the lineages studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is that early population growth is positive in all but one of the lineages we studied; despite a probable lack of marked geographic expansion among residents, they, too, experienced long-term growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from degree of early growth values in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "eed36abb-5d35-4eba-9f7e-a82c57244504",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C58",
+      "claim": "Despite a probable lack of marked geographic expansion among residents, they experienced long-term growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is that early population growth is positive in all but one of the lineages we studied; despite a probable lack of marked geographic expansion among residents, they, too, experienced long-term growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from PSMC results in Table 1 and Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e01dc8d2-f3e2-4e38-8449-41e85ea785e6",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C59",
+      "claim": "Initial growth periods are quite long, extending over much longer periods than expected for populations responding to opportunities for geographic expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is that these initial growth periods are quite long, extending over much longer periods than we should expect for populations responding to opportunities for geographic expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from deltaT values in Table 1 compared to expected timescales",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "8fa0331a-cee3-4a1b-92e0-d9a6e1a147eb",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C60",
+      "claim": "The boreal and subarctic woodland breeding habitats of most C. ustulatus swainsonii and C. minimus expanded dramatically across North America as glaciers receded since the last glacial maximum, a period of <20 Kyr.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the boreal and subarctic woodland breeding habitats of most C. ustulatus swainsonii and C. minimus expanded dramatically across North America as glaciers receded since the last glacial maximum (LGM), a period of <20 Kyr (Pielou, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pielou, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "0d961410-8bbf-499f-bffe-6b063f429eb7",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C61",
+      "claim": "A migratory Catharus lineage's matching of Ne to average long-term available geographic space is not likely to take millions of years.",
+      "claim_type": "EXPLICIT",
+      "source": "This post-LGM expansion reflects census size, and not effective population size (Ne), but it implies that a migratory Catharus lineage's matching (or mapping) of Ne to average long-term available geographic space is not likely to take millions of years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of post-LGM expansion timescale with deltaT values",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "eb4d4537-7ed2-4f38-bb52-2935b8ed074d",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C62",
+      "claim": "The comparatively recent rapid postglacial expansion into new space suggests a sort of preadaptation that is not apparent early in the lineages' histories.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, their comparatively recent rapid postglacial expansion into new space suggests a sort of preadaptation that is not apparent early in the lineages' histories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of recent and ancient population dynamics",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "7d613f2a-040f-4526-a71c-3a503b090755",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C63",
+      "claim": "While geographic factors are involved in population size differences, ecological factors are also important.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these aspects of our results suggest that while geographic factors are involved, ecological factors are also important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from multiple lines of evidence about growth patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "9f08525c-356c-4d28-b3f9-d6fe0078fa72",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C64",
+      "claim": "Migrants in general have had larger populations than residents during the last 0.67 Myr.",
+      "claim_type": "EXPLICIT",
+      "source": "Teasing these factors apart might also explain the finding of Germain et al., 2023a, that migrants in general have had larger populations than residents during the last 0.67 Myr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Germain et al., 2023a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "2f3bc424-2ae9-43ef-80b7-a91def57bdbf",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C65",
+      "claim": "Biotic interactions in general show greater effects on range limits at the warmer than the cooler edges.",
+      "claim_type": "EXPLICIT",
+      "source": "Biotic interactions in general show greater effects on range limits at the warmer than the cooler edges (Paquette and Hargreaves, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Paquette and Hargreaves, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "8d346fd9-2d52-490c-8a53-82bef1fc06a4",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C66",
+      "claim": "Long-distance migrants would receive a range expansion advantage through higher diel food harvest rates due to longer days and shorter nights.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-distance migrants, especially in their extensive latitudinal movements, would receive a range expansion advantage in this respect regardless of continental landmass shape\u2014and also through higher diel food harvest rates due to longer days and shorter nights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on ecological reasoning about day length at higher latitudes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e35079f1-d612-41fc-8213-c6f5a341946e",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C67",
+      "claim": "The relationships between seasonal migration and predators, parasites, diseases, and competitors are extremely complex, and key aspects remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Many additional ecological factors affect the population sizes of migrants vs. residents, but the relationships between seasonal migration and predators, parasites, diseases, and competitors are extremely complex, and key aspects remain poorly understood (Altizer et al., 2011; Newton, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Altizer et al., 2011 and Newton, 2007",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "a673752d-eb5f-4da9-9fc2-8b0b8eea483d",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C68",
+      "claim": "Among birds, the effects of seasonal migration on predator avoidance are not understood in the full, circannual context relative to resident relatives, and they are not generalizable.",
+      "claim_type": "EXPLICIT",
+      "source": "Seasonal migration can be integrally related to predator avoidance, but among birds, its effects are not understood in the full, circannual context relative to resident relatives, and they are not generalizable (Br\u00f6nmark et al., 2008; McKinnon et al., 2010; Newton, 2007; Rappole, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Br\u00f6nmark et al., 2008; McKinnon et al., 2010; Newton, 2007; Rappole, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "66a7e426-f854-4768-8ff8-3818c2fbb85b",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C69",
+      "claim": "Full annual exposure to both disease and parasite diversity is likely higher in migrants, resulting in at least some lineages showing larger immune defense organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although breeding range diminishment of these exposures can be important in some migrants (probably not among all lineages), full annual exposure to both disease and parasite diversity is likely higher, resulting in at least some lineages showing larger immune defense organs (Bennett and Fallis, 1960; Figuerola and Green, 2000; Jenkins et al., 2012; M\u00f8ller and Erritz\u00f8e, 1998; Piersma, 1997; Ricklefs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bennett and Fallis, 1960; Figuerola and Green, 2000; Jenkins et al., 2012; M\u00f8ller and Erritz\u00f8e, 1998; Piersma, 1997; Ricklefs et al., 2017",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "3aeeb817-89d1-4326-b694-30de4e843d7b",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C70",
+      "claim": "Migration creates a geographic break that can lower parasite transmission, causing migrants overall to be less vulnerable to population declines.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to higher circannual parasite and pathogen diversity might not be correlated with susceptibility, however; migration creates a geographic break that can lower transmission, causing migrants overall to be less vulnerable to population declines (Hall et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hall et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "77ba4cc1-e3bb-487d-a9e3-a0263e52fd5c",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C71",
+      "claim": "C. minimus shows an increased breeding and migratory prevalence and diversity of avian malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Presently, C. minimus, for example, shows an increased breeding and migratory prevalence and diversity of avian malaria, a blood parasite, but aspects of this relationship probably changed over the time scales involved (Pulgar\u00edn\u2010R et al., 2019; Ricklefs et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pulgar\u00edn\u2010R et al., 2019 and Ricklefs et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "fd87c16b-4bf0-4606-9fd9-19ca4b1ecff2",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C72",
+      "claim": "Avian migrants are more likely to be affected by blood parasites in ecological rather than evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Avian migrants are more likely to be affected by blood parasites in ecological rather than evolutionary time, although the latter are also operating (Hellgren et al., 2007; Ricklefs et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hellgren et al., 2007 and Ricklefs et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "815886ca-f30a-40ca-8dd8-8716b0b46973",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C73",
+      "claim": "At the deeper times of avian families, seasonal migration is an important factor affecting blood parasite-host coevolution by breaking down the congruence of phylogenetic relationships between hosts and parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "At the deeper times of avian families, seasonal migration is an important factor affecting blood parasite-host coevolution by breaking down the congruence of phylogenetic relationships between hosts and parasites, and there are also important differences among biting-fly vectors and their transmission of avian blood parasite hosts (Jenkins et al., 2012; Ricklefs et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jenkins et al., 2012 and Ricklefs et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "26bec125-99d8-4420-b058-dae1b0ae72c5",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C74",
+      "claim": "The potential role of interspecific competition in affecting relative population sizes between migrants and residents is largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Interspecific competition has long been studied between migrants and residents, but its potential role in affecting relative population sizes between the two groups is largely unknown (Rappole, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rappole, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ad8f785b-4d06-46f5-bd23-b669266fd7fd",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C75",
+      "claim": "These thrushes are likely to be each other's closest competitors as close relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "As close relatives, these thrushes are likely to be each other's closest competitors, so it is conceivable that the increased relative abundance of migrants might depress realized population sizes among residents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on phylogenetic relatedness and ecological similarity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "99e679fd-715b-4549-a25d-2e9aafaa9aee",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C76",
+      "claim": "Geographic ranges of migrants and residents overlap broadly during the nonbreeding season, but tropical residents tend to occupy higher elevations than nonbreeding migrants.",
+      "claim_type": "EXPLICIT",
+      "source": "In this group, geographic ranges overlap broadly during the nonbreeding season, but the tropical residents tend to occupy higher elevations than nonbreeding migrants (Collar, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Collar, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "d3561639-5882-4f0a-802f-6b57fcfdb8f5",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C77",
+      "claim": "Both interspecific competition and inland, montane, and mature-forest retreats among older taxa are major factors in taxon cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Both interspecific competition and inland, montane, and mature-forest retreats among older taxa are major factors in taxon cycles (Ricklefs and Bermingham, 2002; Ricklefs and Cox, 1972; Wilson, 1961) and might also be operating in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ricklefs and Bermingham, 2002; Ricklefs and Cox, 1972; Wilson, 1961",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "80cb6d7a-7d3f-41ec-91bf-2bd4b5f43639",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C78",
+      "claim": "Variation among lineages includes residents that are migrant-like (C. occidentalis) and migrants that are resident-like (e.g. C. u. ustulatus).",
+      "claim_type": "EXPLICIT",
+      "source": "The differences we found are between group averages, and variation among lineages includes residents that are migrant-like (C. occidentalis; Table 1, Figures 1, 3, and 5) and vice versa (e.g. C. u. ustulatus; Table 1, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from data in Table 1 and Figures 1, 3, and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "37fe7847-4146-481c-9472-135165f58f3e",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C79",
+      "claim": "The hypothesis that realized range expansion explains why C. occidentalis shows migrant-like historic population characteristics appears to fit the deeply split eastern-western sister lineages within species in which smaller western ranges have smaller effective population sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such reasons could be as simple as realized range expansion (i.e. geographic and ecological opportunity), and this hypothesis appears to fit the deeply split eastern-western sister lineages within species in which smaller western ranges have smaller effective population sizes (C. guttatus and C. ustulatus; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from comparison of range sizes and Ne values in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "b57c793f-c37b-4832-947f-b3906c624c81",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C80",
+      "claim": "C. occidentalis is sister to the migrant C. guttatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Or the reasons might be as complex as a lineage dropping out of migration to become sedentary (C. occidentalis is sister to the migrant C. guttatus; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in phylogeny in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "9d0196bd-6b63-4ce8-b5f7-77a220121576",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C81",
+      "claim": "Seasonally migratory lineages in this system have, on average, fundamentally different effective population size attributes through evolutionary time than closely related resident lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that seasonally migratory lineages in this system have, on average, fundamentally different effective population size attributes through evolutionary time than closely related resident lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from all statistical analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ba23768b-90c9-4950-89ab-68cfecb93fb4",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C82",
+      "claim": "Population structure is probably not a main driver of the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Population structure is probably not a main driver of these results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from discussion of population structure effects and lack of coordinated shifts",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "7eb4ebd8-fd76-4681-9da4-d01670e3b38a",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C83",
+      "claim": "The relative roles of geographic and ecological expansions in causing differences between migrants and residents remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "What remains unclear are the relative roles of geographic and ecological expansions in causing these differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' assessment of current understanding",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "74f2b617-1cf3-41b3-9322-3a25fb7565b2",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C84",
+      "claim": "Both geographic and ecological factors are likely important in causing population size differences between migrants and residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Both are likely important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' inference from multiple lines of evidence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "34dddb99-3841-4311-bde7-576b5d037b6c",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C85",
+      "claim": "The eight migrant lineages are: H. mustelina, C. fuscescens, C. guttatus E (eastern lineage), C. guttatus W (western lineage), C. minimus, C. ustulatus swainsonii, C. u. ustulatus, and C. bicknelli.",
+      "claim_type": "EXPLICIT",
+      "source": "The eight migrant lineages are: H. mustelina, C. fuscescens, C. guttatus E (eastern lineage), C. guttatus W (western lineage), C. minimus, C. ustulatus swainsonii, C. u. ustulatus, and C. bicknelli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' classification of study lineages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "5fbaed13-3a02-44f7-bfba-36b7df7c7dcc",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C86",
+      "claim": "The six resident lineages are: C. aurantiirostris, C. fuscater, C. frantzii, C. gracilirostris, C. mexicanus, and C. occidentalis.",
+      "claim_type": "EXPLICIT",
+      "source": "The six resident lineages are: C. aurantiirostris, C. fuscater, C. frantzii, C. gracilirostris, C. mexicanus, and C. occidentalis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' classification of study lineages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "8cc25f9b-ea17-46e9-acf8-6f4ad1c8bd9c",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C87",
+      "claim": "Over the full evolutionary history of this Hylocichla-Catharus clade, changes among lineages occurred in the trait of long-distance migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the full evolutionary history of this Hylocichla-Catharus clade, changes among lineages occurred in the trait of long-distance migration (Outlaw et al., 2003; Voelker et al., 2013; Winker and Pruett, 2006; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Outlaw et al., 2003; Voelker et al., 2013; Winker and Pruett, 2006 and shown in Figure 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "3d0fc2fe-f90b-41a3-b69d-74b73eae24bf",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C88",
+      "claim": "Between 97% and 98% of reads mapped to the reference genome for an average read depth of 23\u00d7 (range 15.9\u201329.8\u00d7).",
+      "claim_type": "EXPLICIT",
+      "source": "Between 97% and 98% of reads mapped to the reference for an average read depth of 23\u00d7 (range 15.9\u201329.8\u00d7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sequencing quality metrics from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "f1881f1d-63a4-4162-a287-e2f132bdab95",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C89",
+      "claim": "A generation time of 2.5 years was used, taken as an average among many of these species.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a generation time of 2.5 year, taken as an average among many of these species (Dellinger et al., 2020; Evans et al., 2020; Mack and Yong, 2020; Saether et al., 2005; Townsend et al., 2020; Whitaker et al., 2020), and a mutation rate of 2.3\u00d710\u22129 mutations per site per year (Smeds et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Parameter choice supported by citations to Dellinger et al., 2020; Evans et al., 2020; Mack and Yong, 2020; Saether et al., 2005; Townsend et al., 2020; Whitaker et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "e9060c0f-9352-44e5-9eb1-68692d80aa90",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C90",
+      "claim": "A mutation rate of 2.3\u00d710\u22129 mutations per site per year was used.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a generation time of 2.5 year, taken as an average among many of these species (Dellinger et al., 2020; Evans et al., 2020; Mack and Yong, 2020; Saether et al., 2005; Townsend et al., 2020; Whitaker et al., 2020), and a mutation rate of 2.3\u00d710\u22129 mutations per site per year (Smeds et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Parameter choice supported by citation to Smeds et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "972f1627-b324-409b-819e-84d7f954975a",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C91",
+      "claim": "Single individuals represent lineage characteristics using the PSMC approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Single individuals represent lineage characteristics using this approach (Li and Durbin, 2011; Mazet et al., 2015; Nadachowska-Brzyska et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li and Durbin, 2011; Mazet et al., 2015; Nadachowska-Brzyska et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "010232bb-c0ed-4e76-bfaa-8859aa5132fa",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C92",
+      "claim": "Variations in generation time and mutation rate parameters do not affect the shape of the curve of population sizes (Ne) through time, but rather the values of the time and Ne estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly for our focal questions, variations in these parameters do not affect the shape of the curve of population sizes (Ne) through time, but rather the values of the time and Ne estimates (Nadachowska-Brzyska et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nadachowska-Brzyska et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "59e1bce8-feb7-440f-a2c8-c5a253bc08c2",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C93",
+      "claim": "Being closely related and of similar size, these taxa are expected to have very similar generation times and mutation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Being closely related and of similar size, we expect these taxa to have very similar generation times and mutation rates (e.g. Bird et al., 2020; Healy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference supported by citations to Bird et al., 2020 and Healy et al., 2014",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "fdab5226-1787-41cf-bac9-2d3947ca6e29",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C94",
+      "claim": "When analyses were run with variable generation times from Bird et al., 2020, the overall results were not different.",
+      "claim_type": "EXPLICIT",
+      "source": "But as a check on our results, we ran all of our analyses again with the variable generation times given by Bird et al., 2020. As expected, most of the differences are time-related, and, importantly, the overall results are not different (Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sensitivity analysis performed by authors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "02b867fe-2568-4d80-b458-733b3fbeeefd",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C96",
+      "claim": "Breaking the first atomic time interval into smaller windows can eliminate artifactual recent peaks in PSMC analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "They recommended that such recent peaks can be eliminated by breaking the first atomic time interval (typically 4) into either two (2+2) or four (1+1+1+1) smaller windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recommendation from Hilgers et al., 2024",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ddeb2a81-4ec6-42d9-9e6b-7c33c7c22cab",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C97",
+      "claim": "Four lineages appeared to have artifactual recent peaks: H. mustelina, C. fuscescens, C. guttatus E, and C. gracilirostris.",
+      "claim_type": "EXPLICIT",
+      "source": "We had four lineages that appeared to have such peaks: H. mustelina, C. fuscescens, C. guttatus E, and C. gracilirostris.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from PSMC results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "f89729c0-8891-4d9e-96fe-4865753fbaee",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C98",
+      "claim": "For C. fuscescens, C. guttatus E, and C. gracilirostris, breaking the recent period parameter into four windows (1+1+1+1) eliminated artifactual peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "For the latter three, breaking the recent period parameter into four windows (1+1+1+1) eliminated these peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of methodological adjustment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "7f5215c3-e8b1-4a95-acb5-fd997c138d97",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C99",
+      "claim": "For H. mustelina, smaller windows (2+2 and 1+1+1+1) made the recent peak even higher, so the default setting was used.",
+      "claim_type": "EXPLICIT",
+      "source": "For H. mustelina, smaller windows (2+2 and 1+1+1+1) made the recent peak even higher, so we have used the default setting (the most conservative result), as we did with the remaining taxa that did not show such peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of methodological adjustment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "275f4eff-cfb2-46f4-9829-c3ca83d5abda",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C100",
+      "claim": "PSMC output for times more recent than 50 Kya was ignored because recent estimates of effective population size using this method are less reliable.",
+      "claim_type": "EXPLICIT",
+      "source": "For all variables, PSMC output for times more recent than 50 Kya was ignored, because recent estimates of effective population size using this method are less reliable (Li and Durbin, 2011; Nadachowska-Brzyska et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological decision supported by citations to Li and Durbin, 2011 and Nadachowska-Brzyska et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "c1a634d2-c583-4207-bae6-1794c334136c",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C101",
+      "claim": "The focal variables of the hypotheses all lacked phylogenetic signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The focal variables of our hypotheses all lacked phylogenetic signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result of phylogenetic independence test using Abouheif-Moran approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "34730d93-25c8-4ec1-9df2-333833391289",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "claim_id": "C102",
+      "claim": "No method of genomic population demographic reconstruction is known to be consistently and reliably accurate.",
+      "claim_type": "EXPLICIT",
+      "source": "No method of genomic population demographic reconstruction is known to be consistently and reliably accurate (Marchi et al., 2021), but uniform application of a powerful method like PSMC to genome-scale data in a closely related group of lineages can provide new insights into the evolutionary effects of major life-history strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Marchi et al., 2021",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6974e9cc-1297-432b-91fc-196020189255",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Migratory thrush lineages have significantly larger effective population sizes (Ne), greater variation in Ne, and proportionally larger initial population growth compared to resident lineages. Statistical tests using Mann-Whitney U-tests showed significant differences (p<0.05) for mean Ne (U=7), variation (SD/mean, U=10), degree of early growth (U=9), and duration of growth period (deltaT, U=9), though the rate of early growth did not differ significantly (U=21.5, p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are well-supported by statistical analyses presented in Table 1 with appropriate non-parametric tests (Mann-Whitney U-tests) and significant p-values. The phylogenetic independence test (C101) validates the use of these statistical approaches. The sample sizes (8 migrants vs 6 residents) are modest but reasonable for this comparative framework, and the consistency across multiple population parameters strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "31b53832-1932-47fa-91d1-42b6728aa387",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Initial population growth periods in these thrush lineages were remarkably long, ranging from 0.63 to 4.29 Myr (mean 2.51 Myr), with positive growth in all lineages except C. aurantiirostris. These extended growth periods occurred in both migrants and residents, suggesting that geographic expansion alone cannot explain the observed patterns and that ecological factors are also important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The deltaT values are directly derived from PSMC analyses (Table 1, Figures 3, 5) and are well-documented. The inference that these timescales are too long for simple geographic expansion is supported by comparison with post-LGM expansion (<20 Kyr, C60). However, the interpretation regarding ecological factors (C63) is more speculative, though reasonably argued.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "4bd1b8ef-fc9b-4bba-a345-3282dc4b1ada",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The observed long periods of early population growth parallel the expansion and adaptation phases of taxon cycles, a framework describing lineage expansion and contraction over evolutionary time. The pattern of recent populations being below historic peaks and the lack of temporal synchrony among lineages are also consistent with taxon cycle predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the temporal patterns observed (C5, C22, C26) are consistent with taxon cycle predictions, this is primarily an interpretive framework applied post-hoc rather than a tested hypothesis. The comparison is qualitative and relies on conceptual parallels rather than quantitative tests of taxon cycle models. The inference is plausible but not definitively demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "2146b9ef-92d9-45db-997e-3665f2f71fd6",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "These thrush lineages show a general lack of temporal synchrony in historic population size changes and do not exhibit the population declines at ~115 Kya observed in other bird species. Most lineages show recent populations below historic peaks, a trend predating human arrival in the New World, with C. ustulatus swainsonii as a notable exception showing remarkable long-term growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These patterns are directly observable in the PSMC trajectories (Figures 4 and 5). The lack of synchrony is evident from visual inspection of the curves, and the comparison with Nadachowska-Brzyska et al. 2016 findings is appropriate. The timing relative to human arrival is reasonably inferred from the timescales shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "11579081-c8c3-40ce-8ed5-d93c37ccf429",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The higher variation in Ne among migrants is attributed to the relative instability of northern biomes compared to tropical ones through glacial-interglacial cycles. This prediction was based on the expectation that higher-latitude breeding occupancy would cause larger fluctuations in population size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The prediction (C17) was stated a priori and confirmed by statistical analysis (C3, C19). The mechanistic explanation (C40) is well-supported by citations to paleoclimate literature (Colinvaux et al., 2000; Pielou, 1991) and is consistent with established understanding of latitudinal climate variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "4b74979d-45e9-4a86-ab2d-9a614c715640",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Population structure could potentially confound PSMC estimates, as changes in structure can mimic changes in population size. However, migrants have lower population structure (2.5 subspecies/lineage) than residents (5.9 subspecies/lineage), and the effects of structure are expected to be less important in deep time. The lack of coordinated shifts in PSMC results suggests population structure is not the main driver of observed differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors provide a thorough discussion of this potential confound with appropriate citations (C41, C46, C47). The subspecies data (C43) provides quantitative support, and the reasoning about deep-time effects (C48, C53) is sound. The inference that structure would inflate Ne more in residents (C45) actually works against their main findings, strengthening the conclusion that observed differences reflect real population size differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "642be5c7-1a40-4751-8b0e-7d265cbabe68",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "While larger breeding ranges among migrants were predicted to yield higher population sizes, the relative contributions of geographic versus ecological factors remain unclear. The rapid post-LGM expansion (<20 Kyr) compared to million-year growth periods suggests that geographic expansion alone cannot explain the patterns, and both geographic and ecological factors are likely important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge uncertainty (C83) while providing reasonable evidence that geography alone is insufficient (C59, C60, C61). The comparison of timescales is compelling, though the inference about 'preadaptation' (C62) is more speculative. The conclusion that both factors are important (C84) is appropriately cautious given the available evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ddd0fba9-255e-4ca0-8d63-ab81b4bede98",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Approximately 50-60 glacial-interglacial cycles occurred during the study period, with cycles averaging ~100 Kyr (0.74 Mya to present) and ~41 Kyr (2.47 to 0.74 Mya). PSMC analysis of C. ustulatus swainsonii sampled 54 time segments for the Pleistocene, indicating limited temporal resolution for detecting fine-scale changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The glacial cycle data (C50, C51) are well-established from cited literature (Lisiecki and Raymo, 2005). The PSMC sampling resolution (C52) is directly observed from the analysis output and appropriately interpreted as indicating limited ability to resolve individual glacial cycles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple ecological mechanisms could affect population size differences between migrants and residents, including biotic interactions at range edges, predator-parasite-pathogen dynamics, and interspecific competition. However, these relationships are extremely complex and poorly understood, with effects varying among lineages and operating on both ecological and evolutionary timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is an appropriate synthesis of complex ecological literature with extensive citations. The authors correctly acknowledge the complexity and uncertainty (C67, C74) while providing specific examples (C71) and general principles (C65, C70, C73). This discussion contextualizes the findings but does not claim to resolve these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "31667a1e-9dfe-49c2-912e-395dffd6b2d4",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Variation among lineages includes exceptions to the general pattern, with resident C. occidentalis showing migrant-like characteristics and migrant C. u. ustulatus showing resident-like characteristics. The pattern in C. occidentalis may be explained by realized range expansion, and this species is sister to the migrant C. guttatus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The exceptions are clearly documented in Table 1 and Figures 1, 3, and 5. The phylogenetic relationship (C80) is shown in Figure 1. The hypothesis about range expansion (C79) is reasonable but speculative, appropriately presented as a possible explanation rather than a definitive conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "fea56a87-73d5-474f-b570-184000c7a122",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study system consists of thrushes in the genus Catharus and sister genus Hylocichla, comprising 8 migratory and 6 resident lineages. These are small, forest-related birds with migratory lineages breeding across northern North America and wintering in Central/South America, while residents occupy Mexico, Central America, and northwestern South America. Modern genomic methods (PSMC) enable estimation of long-term effective population sizes in these lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The study system description is well-documented with appropriate citations (C9, C11, C12-14) and visual evidence (Figures 1, 2). The lineage classifications (C85, C86) are clearly stated. The capability of PSMC methods (C1) is established by multiple citations to methodological papers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "5d588012-7395-4eb3-882d-b678e59cef27",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used whole-genome sequencing with high mapping rates (97-98%) and adequate coverage (23\u00d7 average). PSMC analyses used a generation time of 2.5 years and mutation rate of 2.3\u00d710\u207b\u2079, with sensitivity analyses confirming results are robust to parameter variation. Methodological adjustments addressed artifactual recent peaks in some lineages, and data >50 Kya were excluded due to lower reliability. Phylogenetic independence tests validated the statistical approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methods are thoroughly described with appropriate citations and quality metrics. The sensitivity analysis (C94) strengthens confidence in the results. The handling of artifactual peaks (C96-99) shows appropriate methodological rigor. The exclusion of recent data (C100) is conservative and well-justified. The acknowledgment of PSMC limitations (C102) is appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "cc7d608c-e3ff-43b3-8c75-db17f997ae7d",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This is claimed to be the first study to contrast long-term effective population size changes among closely related species to test a priori hypotheses about the population effects of a major life-history trait (seasonal migration).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the authors state this is the first such study (C29), this claim of novelty is difficult to verify without comprehensive literature review. The approach is certainly novel in its specific application, but the absolute claim of being 'first' should be viewed with appropriate caution as it relies on the authors' knowledge of the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "a97fb906-57c7-4a81-9ae6-698954fe6f80",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Heterogeneity among lineages is noteworthy despite geographic proximity and close relatedness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This observation is directly supported by the PSMC trajectories shown in Figures 4 and 5, which display substantial variation in population histories among closely related lineages with overlapping ranges. This heterogeneity is a key finding that informs the interpretation of lineage-specific evolutionary dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "74310093-704e-4047-a346-a028e29c5489",
+      "content_id": "9f4079c4-ff99-481f-811f-0170720c7993",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The rate of early population growth did not differ significantly between migrants and residents (U=21.5, p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This negative result is clearly stated with appropriate statistical test results. It provides important nuance to the main findings: while migrants showed greater degree of growth over longer periods, the rate of growth was similar between groups. This helps distinguish between different mechanisms of population expansion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "11452a0b-288a-4de6-be91-50c315e9f567",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors claim that migratory thrush lineages show higher effective population sizes, greater population size variation, and proportionally larger initial population growth than resident relatives, based on Mann-Whitney U-tests comparing PSMC-derived summary statistics between the two groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the creative use of PSMC and appropriate statistical tools, but express concerns about methodological limitations. One reviewer notes that 'concerns about generation times and population structure leave the evidence for the claims in parts incomplete.' Another reviewer emphasizes that simulations would be needed to demonstrate that 'the analyses employed in this paper are capable of supporting or refuting their biogeographic hypothesis,' suggesting the current evidence alone is insufficient to strongly support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors report remarkably long initial growth periods (0.63\u20134.29 Myr, averaging 2.51 Myr) in thrush lineages, with migratory lineages showing longer growth periods than residents (migrants mean deltaT = 3.10 Myr vs. resident mean deltaT = 1.72 Myr).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raise fundamental concerns about the interpretation of these long timescales. One reviewer notes that 'the time-scale to population growth and estimates of effective population sizes considered in the present paper for the resident versus migratory clades seem to widely predate the times to speciation for the same lineages,' making 'the calculation of species-specific population size changes difficult to interpret.' The reviewer questions 'what the authors consider to be lineage-specific in these estimates, as the clades were likely undergoing substantial admixture during the time predating full isolation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "526412df-cf7c-4cb3-9209-9eff5fbfbd60",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors interpret the long initial growth periods as paralleling the expansion and adaptation phases of taxon cycles, a conceptual framework of lineage expansion and contraction over time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers suggest that simulations would be needed to validate this biogeographic interpretation. One reviewer states that 'readers would need to see simulations showing that the analyses employed in this paper are capable of supporting or refuting their biogeographic hypothesis before viewing them as strongly supporting a specific biogeographic model.' The reviewer recommends that simulations would 'allow the authors to better study and explain the motivation behind the specific summary statistics they develop for PSMC posthoc analysis.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "981d5337-1d11-49da-bc4e-5e6e28684a48",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors report a general lack of temporal synchrony in historic population size changes among thrush lineages, suggesting each is in a unique population-environment relationship and that climate-driven shifts in population structure are not a major feature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not directly critique this observation, they express broader concerns about interpreting PSMC results in the context of population structure. One reviewer notes that 'performing simulations to compare different scenarios of different degrees of structured populations would have helped substantially understand some of the outcomes,' suggesting uncertainty about whether the observed patterns reflect true demographic history or methodological artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors argue that population structure is probably not a main driver of their results, reasoning that migrants have lower population structure than residents and that structure effects become less important in deep time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers identify population structure as a key concern. The editor notes that 'concerns about generation times and population structure leave the evidence for the claims in parts incomplete.' One reviewer specifically recommends that 'performing simulations to compare different scenarios of different degrees of structured populations would have helped substantially understand some of the outcomes,' indicating that the authors' arguments about population structure effects are not sufficiently convincing without additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "411b927c-f041-442a-b6fb-436dfd3ced38",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors used an average generation time of 2.5 years for all taxa, arguing that variations in generation time parameters do not affect the shape of PSMC curves and that closely related taxa should have similar generation times. They performed sensitivity analyses with variable generation times showing overall results were not different.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express significant concern about the generation time assumption. One reviewer notes that 'the citations imply generation time is known for at least some of them' and asks 'Are there differences in generation time associated with migration?' The reviewer states 'I think it important the authors address this, as differences in generation time I believe should affect estimates of Ne and growth.' The editor also specifically mentions 'concerns about generation times' as leaving evidence incomplete, despite the authors' sensitivity analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors hypothesize that larger breeding ranges and higher climatic variability at higher latitudes explain the population size differences between migrants and residents, while acknowledging that both geographic and ecological factors are likely important and their relative roles remain unclear.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers identify a fundamental confound in the study design. One reviewer notes that 'the breeding grounds range of the two groups are located in very different geographic areas (mainly South versus North America)' and suggests 'The authors could have expanded their dataset to include species whose breeding grounds are from the two areas, regardless of their migratory behaviour, as a comparison to disentangle whether ecological differences of these two areas can affect the population sizes or growth rates.' This critique indicates the current evidence cannot distinguish between migration effects and geographic/ecological differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "84d891c7-03f0-4f54-b7ef-b1d9a86e9c5c",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors report that these thrushes show few population declines at the beginning of the last glacial period, that most recent populations are below historic peaks (predating human arrival), and that C. ustulatus swainsonii is a striking exception with remarkable long-term growth.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise specific concerns about these descriptive observations from the PSMC analyses. These appear to be accepted as patterns in the data, though their interpretation in the broader biogeographic context remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "2d5f4926-656f-4491-822c-35da1c4d3880",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors state that modern genomic methods like PSMC enable estimation of long-term effective population sizes, that single individuals represent lineage characteristics using this approach, and that no method is consistently accurate but uniform application can provide insights.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the methodological foundation, with one stating 'This is a creative use of PSMC to test explicit a priori hypotheses about season migration and Ne. The PSMC analyses seem well done and the authors acknowledge much of the complexity of interpretation in the discussion.' The concerns raised are about interpretation and validation, not about the basic PSMC methodology itself.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "1a91a7c3-ca96-4eaa-a7a0-1b75bfd2899f",
+      "content_id": "0f0dbe97-f9e5-406a-b35c-c52b744ec645",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors claim this is the first study to contrast long-term effective population size changes among closely related species to test a priori hypotheses about the population effects of a major life-history trait.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the novelty and value of the approach. The editor states 'This is a valuable study of the role that life history differences might play in determining population size and demography' and notes the work is 'of considerable interest to anyone who tries to understand evolutionary consequences of life history changes.' One reviewer praises 'the test-of-hypothesis design of the study and the explicit formulation of three main expectations to test.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "00823512-2eeb-4465-b75c-6193960f8543",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "a506b4c4-c5c4-4048-be6a-d955297ecb40",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "e36a284d-b39e-43ee-ae4e-9227e6fd26d2",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "64311013-4abf-4897-8690-8c8cb91e4edb",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "90c8bb9c-8f97-47ad-b5d1-adf6a738b82f",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "7880ad31-eb4c-4d8e-8820-318797c3af60",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "5c6178ea-6028-4afa-8bd1-5c24d8a56700",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "9433b8f8-6a3e-4c59-8706-3c0bf8797480",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "df0f19a2-128f-4ea8-829f-23ead27ddc4c",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "4c2d7291-26f5-4608-b264-242abccc2186",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "c761a3e0-2d7a-4185-8dfd-9ab8deea205a",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "08e62449-25ab-4ad5-9b8a-b8d087613c4f",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "9d0196bd-6b63-4ce8-b5f7-77a220121576",
+      "result_id": "6974e9cc-1297-432b-91fc-196020189255"
+    },
+    {
+      "claim_id": "ab6f8abc-ab22-4904-84f3-d698b9762cf1",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "3f26e269-53e5-4187-9708-7a95169ed0ec",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "b40e194e-f498-449b-ac0d-d74473c706aa",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "0be6bcd9-f74a-4104-80e8-3cc7607fc8cc",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "e58147ab-79eb-4618-a075-4b1f2bd388cc",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "53b3bb17-00bf-4429-ad91-6dd4dd429695",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "eed36abb-5d35-4eba-9f7e-a82c57244504",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "e01dc8d2-f3e2-4e38-8449-41e85ea785e6",
+      "result_id": "31b53832-1932-47fa-91d1-42b6728aa387"
+    },
+    {
+      "claim_id": "cdf2b782-dc72-4583-9949-89e4599a3421",
+      "result_id": "4bd1b8ef-fc9b-4bba-a345-3282dc4b1ada"
+    },
+    {
+      "claim_id": "c00a22e7-9925-4cab-a8f2-6e36fb0ec756",
+      "result_id": "4bd1b8ef-fc9b-4bba-a345-3282dc4b1ada"
+    },
+    {
+      "claim_id": "8728bc22-db96-4b77-85c0-e821c1eb3cbc",
+      "result_id": "4bd1b8ef-fc9b-4bba-a345-3282dc4b1ada"
+    },
+    {
+      "claim_id": "474a2407-e8db-44d4-ae97-ebbc6e249701",
+      "result_id": "4bd1b8ef-fc9b-4bba-a345-3282dc4b1ada"
+    },
+    {
+      "claim_id": "21eb563b-a0f7-43ba-b6ad-387802c0daa4",
+      "result_id": "2146b9ef-92d9-45db-997e-3665f2f71fd6"
+    },
+    {
+      "claim_id": "57835a1a-3298-45ae-a8ae-60985268bb1d",
+      "result_id": "2146b9ef-92d9-45db-997e-3665f2f71fd6"
+    },
+    {
+      "claim_id": "6ad3570c-c928-4448-bf10-19b10fa66f5d",
+      "result_id": "2146b9ef-92d9-45db-997e-3665f2f71fd6"
+    },
+    {
+      "claim_id": "bea93802-dfad-441c-98fe-ec82d9f4c810",
+      "result_id": "2146b9ef-92d9-45db-997e-3665f2f71fd6"
+    },
+    {
+      "claim_id": "7b9cda82-4744-4ba8-9df0-3ab34b47d8eb",
+      "result_id": "2146b9ef-92d9-45db-997e-3665f2f71fd6"
+    },
+    {
+      "claim_id": "f4c379f5-c654-4d01-9aca-fcdff72f8030",
+      "result_id": "11579081-c8c3-40ce-8ed5-d93c37ccf429"
+    },
+    {
+      "claim_id": "490c25b7-33c1-48e9-bc31-6ee28d518934",
+      "result_id": "11579081-c8c3-40ce-8ed5-d93c37ccf429"
+    },
+    {
+      "claim_id": "df0ca69f-d1e2-4549-9368-7790b4a0983a",
+      "result_id": "11579081-c8c3-40ce-8ed5-d93c37ccf429"
+    },
+    {
+      "claim_id": "d9489794-61d8-453b-a3f4-b07ef74e21e6",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "af2ce8ec-2b84-47ea-aa0b-11fcc43ce01c",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "9ddfd1f7-fc3c-4aa9-9349-2401b932cd2f",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "1fd35967-611b-4886-b61a-8748727a5ef3",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "ef51cc0c-55b5-40d6-bfef-e634ed9a59eb",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "d3a6a7ca-815b-40a9-b47b-e5e750174119",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "2fb8351a-dd04-4fcb-a6a6-dbc0dc7b382d",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "e0718050-ba2d-4803-911e-76832092fc0a",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "da9244a5-31af-495b-89a3-72011d644c85",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "5151a79b-ac3e-466d-95be-446b6b6bc4d9",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "e392dfbb-65db-407e-adb2-5325314676dd",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "ba23768b-90c9-4950-89ab-68cfecb93fb4",
+      "result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640"
+    },
+    {
+      "claim_id": "78707611-39b7-4be4-b08f-61bc8b02c27a",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "562e9c29-d98b-498f-b2ef-c5f89564fb5c",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "8fa0331a-cee3-4a1b-92e0-d9a6e1a147eb",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "0d961410-8bbf-499f-bffe-6b063f429eb7",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "eb4d4537-7ed2-4f38-bb52-2935b8ed074d",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "7d613f2a-040f-4526-a71c-3a503b090755",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "37fe7847-4146-481c-9472-135165f58f3e",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "7eb4ebd8-fd76-4681-9da4-d01670e3b38a",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "74f2b617-1cf3-41b3-9322-3a25fb7565b2",
+      "result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68"
+    },
+    {
+      "claim_id": "ae29863c-dc28-476f-93a5-9c9f20fa2554",
+      "result_id": "ddd0fba9-255e-4ca0-8d63-ab81b4bede98"
+    },
+    {
+      "claim_id": "1c994c54-a50a-43c8-b3d4-46167c55ae70",
+      "result_id": "ddd0fba9-255e-4ca0-8d63-ab81b4bede98"
+    },
+    {
+      "claim_id": "8b2fa6ec-04e5-4406-aafc-692138da3a0b",
+      "result_id": "ddd0fba9-255e-4ca0-8d63-ab81b4bede98"
+    },
+    {
+      "claim_id": "fb4a42e1-88f4-41f8-bca2-8dbba9453025",
+      "result_id": "ddd0fba9-255e-4ca0-8d63-ab81b4bede98"
+    },
+    {
+      "claim_id": "2f3bc424-2ae9-43ef-80b7-a91def57bdbf",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "8d346fd9-2d52-490c-8a53-82bef1fc06a4",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "e35079f1-d612-41fc-8213-c6f5a341946e",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "a673752d-eb5f-4da9-9fc2-8b0b8eea483d",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "66a7e426-f854-4768-8ff8-3818c2fbb85b",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "3aeeb817-89d1-4326-b694-30de4e843d7b",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "77ba4cc1-e3bb-487d-a9e3-a0263e52fd5c",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "fd87c16b-4bf0-4606-9fd9-19ca4b1ecff2",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "815886ca-f30a-40ca-8dd8-8716b0b46973",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "26bec125-99d8-4420-b058-dae1b0ae72c5",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "ad8f785b-4d06-46f5-bd23-b669266fd7fd",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "99e679fd-715b-4549-a25d-2e9aafaa9aee",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "d3561639-5882-4f0a-802f-6b57fcfdb8f5",
+      "result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d"
+    },
+    {
+      "claim_id": "80cb6d7a-7d3f-41ec-91bf-2bd4b5f43639",
+      "result_id": "31667a1e-9dfe-49c2-912e-395dffd6b2d4"
+    },
+    {
+      "claim_id": "37fe7847-4146-481c-9472-135165f58f3e",
+      "result_id": "31667a1e-9dfe-49c2-912e-395dffd6b2d4"
+    },
+    {
+      "claim_id": "b57c793f-c37b-4832-947f-b3906c624c81",
+      "result_id": "31667a1e-9dfe-49c2-912e-395dffd6b2d4"
+    },
+    {
+      "claim_id": "b73db192-e77c-4833-9b4b-e3ba120aa503",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "e5d6379a-0e2b-4fc3-9460-a4feddfd7736",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "9b2f4a29-cdb6-44c9-8eaf-34ae226a5204",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "6f5eb09b-58c5-472a-bac2-c719a6251074",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "3ed49e3d-0e58-49d5-bece-b827e30f37f2",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "c264d170-fdef-45aa-bb4e-e339af655dc8",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "b8692e34-8c4b-4174-a2c3-878c776d9631",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "34dddb99-3841-4311-bde7-576b5d037b6c",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "5fbaed13-3a02-44f7-bfba-36b7df7c7dcc",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "8cc25f9b-ea17-46e9-acf8-6f4ad1c8bd9c",
+      "result_id": "fea56a87-73d5-474f-b570-184000c7a122"
+    },
+    {
+      "claim_id": "3d0fc2fe-f90b-41a3-b69d-74b73eae24bf",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "f1881f1d-63a4-4162-a287-e2f132bdab95",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "e9060c0f-9352-44e5-9eb1-68692d80aa90",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "972f1627-b324-409b-819e-84d7f954975a",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "010232bb-c0ed-4e76-bfaa-8859aa5132fa",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "59e1bce8-feb7-440f-a2c8-c5a253bc08c2",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "fdab5226-1787-41cf-bac9-2d3947ca6e29",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "02b867fe-2568-4d80-b458-733b3fbeeefd",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "ddeb2a81-4ec6-42d9-9e6b-7c33c7c22cab",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "f89729c0-8891-4d9e-96fe-4865753fbaee",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "7f5215c3-e8b1-4a95-acb5-fd997c138d97",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "275f4eff-cfb2-46f4-9829-c3ca83d5abda",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "c1a634d2-c583-4207-bae6-1794c334136c",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "34730d93-25c8-4ec1-9df2-333833391289",
+      "result_id": "5d588012-7395-4eb3-882d-b678e59cef27"
+    },
+    {
+      "claim_id": "d0b4ff0b-0268-4baa-884b-296f997ad3f9",
+      "result_id": "cc7d608c-e3ff-43b3-8c75-db17f997ae7d"
+    },
+    {
+      "claim_id": "d40c9a22-1ccf-48c6-9ec2-60ad44e2da99",
+      "result_id": "a97fb906-57c7-4a81-9ae6-698954fe6f80"
+    },
+    {
+      "claim_id": "88d8a630-2449-4c2f-9549-dcf7b4dff1e1",
+      "result_id": "74310093-704e-4047-a346-a028e29c5489"
+    },
+    {
+      "claim_id": "00823512-2eeb-4465-b75c-6193960f8543",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "a506b4c4-c5c4-4048-be6a-d955297ecb40",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "e36a284d-b39e-43ee-ae4e-9227e6fd26d2",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "64311013-4abf-4897-8690-8c8cb91e4edb",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "90c8bb9c-8f97-47ad-b5d1-adf6a738b82f",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "7880ad31-eb4c-4d8e-8820-318797c3af60",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "9433b8f8-6a3e-4c59-8706-3c0bf8797480",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "df0f19a2-128f-4ea8-829f-23ead27ddc4c",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "4c2d7291-26f5-4608-b264-242abccc2186",
+      "result_id": "11452a0b-288a-4de6-be91-50c315e9f567"
+    },
+    {
+      "claim_id": "ab6f8abc-ab22-4904-84f3-d698b9762cf1",
+      "result_id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41"
+    },
+    {
+      "claim_id": "3f26e269-53e5-4187-9708-7a95169ed0ec",
+      "result_id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41"
+    },
+    {
+      "claim_id": "5c6178ea-6028-4afa-8bd1-5c24d8a56700",
+      "result_id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41"
+    },
+    {
+      "claim_id": "b40e194e-f498-449b-ac0d-d74473c706aa",
+      "result_id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41"
+    },
+    {
+      "claim_id": "0be6bcd9-f74a-4104-80e8-3cc7607fc8cc",
+      "result_id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41"
+    },
+    {
+      "claim_id": "e58147ab-79eb-4618-a075-4b1f2bd388cc",
+      "result_id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41"
+    },
+    {
+      "claim_id": "cdf2b782-dc72-4583-9949-89e4599a3421",
+      "result_id": "526412df-cf7c-4cb3-9209-9eff5fbfbd60"
+    },
+    {
+      "claim_id": "c00a22e7-9925-4cab-a8f2-6e36fb0ec756",
+      "result_id": "526412df-cf7c-4cb3-9209-9eff5fbfbd60"
+    },
+    {
+      "claim_id": "8728bc22-db96-4b77-85c0-e821c1eb3cbc",
+      "result_id": "526412df-cf7c-4cb3-9209-9eff5fbfbd60"
+    },
+    {
+      "claim_id": "57835a1a-3298-45ae-a8ae-60985268bb1d",
+      "result_id": "981d5337-1d11-49da-bc4e-5e6e28684a48"
+    },
+    {
+      "claim_id": "474a2407-e8db-44d4-ae97-ebbc6e249701",
+      "result_id": "981d5337-1d11-49da-bc4e-5e6e28684a48"
+    },
+    {
+      "claim_id": "e392dfbb-65db-407e-adb2-5325314676dd",
+      "result_id": "981d5337-1d11-49da-bc4e-5e6e28684a48"
+    },
+    {
+      "claim_id": "d9489794-61d8-453b-a3f4-b07ef74e21e6",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "af2ce8ec-2b84-47ea-aa0b-11fcc43ce01c",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "9ddfd1f7-fc3c-4aa9-9349-2401b932cd2f",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "1fd35967-611b-4886-b61a-8748727a5ef3",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "ef51cc0c-55b5-40d6-bfef-e634ed9a59eb",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "e0718050-ba2d-4803-911e-76832092fc0a",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "da9244a5-31af-495b-89a3-72011d644c85",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "5151a79b-ac3e-466d-95be-446b6b6bc4d9",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "ba23768b-90c9-4950-89ab-68cfecb93fb4",
+      "result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79"
+    },
+    {
+      "claim_id": "f1881f1d-63a4-4162-a287-e2f132bdab95",
+      "result_id": "411b927c-f041-442a-b6fb-436dfd3ced38"
+    },
+    {
+      "claim_id": "010232bb-c0ed-4e76-bfaa-8859aa5132fa",
+      "result_id": "411b927c-f041-442a-b6fb-436dfd3ced38"
+    },
+    {
+      "claim_id": "59e1bce8-feb7-440f-a2c8-c5a253bc08c2",
+      "result_id": "411b927c-f041-442a-b6fb-436dfd3ced38"
+    },
+    {
+      "claim_id": "fdab5226-1787-41cf-bac9-2d3947ca6e29",
+      "result_id": "411b927c-f041-442a-b6fb-436dfd3ced38"
+    },
+    {
+      "claim_id": "78707611-39b7-4be4-b08f-61bc8b02c27a",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "490c25b7-33c1-48e9-bc31-6ee28d518934",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "df0ca69f-d1e2-4549-9368-7790b4a0983a",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "f4c379f5-c654-4d01-9aca-fcdff72f8030",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "562e9c29-d98b-498f-b2ef-c5f89564fb5c",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "7d613f2a-040f-4526-a71c-3a503b090755",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "7eb4ebd8-fd76-4681-9da4-d01670e3b38a",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "74f2b617-1cf3-41b3-9322-3a25fb7565b2",
+      "result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef"
+    },
+    {
+      "claim_id": "21eb563b-a0f7-43ba-b6ad-387802c0daa4",
+      "result_id": "84d891c7-03f0-4f54-b7ef-b1d9a86e9c5c"
+    },
+    {
+      "claim_id": "6ad3570c-c928-4448-bf10-19b10fa66f5d",
+      "result_id": "84d891c7-03f0-4f54-b7ef-b1d9a86e9c5c"
+    },
+    {
+      "claim_id": "bea93802-dfad-441c-98fe-ec82d9f4c810",
+      "result_id": "84d891c7-03f0-4f54-b7ef-b1d9a86e9c5c"
+    },
+    {
+      "claim_id": "7b9cda82-4744-4ba8-9df0-3ab34b47d8eb",
+      "result_id": "84d891c7-03f0-4f54-b7ef-b1d9a86e9c5c"
+    },
+    {
+      "claim_id": "b73db192-e77c-4833-9b4b-e3ba120aa503",
+      "result_id": "2d5f4926-656f-4491-822c-35da1c4d3880"
+    },
+    {
+      "claim_id": "972f1627-b324-409b-819e-84d7f954975a",
+      "result_id": "2d5f4926-656f-4491-822c-35da1c4d3880"
+    },
+    {
+      "claim_id": "34730d93-25c8-4ec1-9df2-333833391289",
+      "result_id": "2d5f4926-656f-4491-822c-35da1c4d3880"
+    },
+    {
+      "claim_id": "d0b4ff0b-0268-4baa-884b-296f997ad3f9",
+      "result_id": "1a91a7c3-ca96-4eaa-a7a0-1b75bfd2899f"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c176b024-459f-465c-95a3-cbfaebfbb52b",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6974e9cc-1297-432b-91fc-196020189255",
+      "peer_result_id": "11452a0b-288a-4de6-be91-50c315e9f567",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the main statistical findings comparing migrants vs residents (C2-C4, C18-C20, C30-C32). OpenEval finds claims well-supported by appropriate statistical tests and reasonable sample sizes. Peer reviewers acknowledge appropriate statistical tools but express uncertainty due to methodological concerns about generation times and population structure, suggesting evidence is incomplete without simulations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "bacd8b66-4104-4cbe-b9a7-7e781aa33a67",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "31b53832-1932-47fa-91d1-42b6728aa387",
+      "peer_result_id": "c3e42076-93a5-4afe-b5d5-2cca0d26fc41",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate deltaT values and long timescales (C5, C22, C34-C36). OpenEval finds these well-documented and reasonably interpreted. Peer reviewers express fundamental uncertainty, noting that timescales predate speciation events and questioning what is 'lineage-specific' when clades were likely undergoing admixture during these periods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "f454125e-98fa-4230-9030-9492470865b9",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4bd1b8ef-fc9b-4bba-a345-3282dc4b1ada",
+      "peer_result_id": "526412df-cf7c-4cb3-9209-9eff5fbfbd60",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address taxon cycle interpretation (C6, C37-C38). OpenEval rates as uncertain, noting this is a post-hoc interpretive framework rather than tested hypothesis, though plausible. Peer reviewers similarly express uncertainty, recommending simulations to validate whether the analyses can actually support or refute the biogeographic hypothesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "dd2112dc-0f75-4bf5-94de-a2256b16dcb9",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "2146b9ef-92d9-45db-997e-3665f2f71fd6",
+      "peer_result_id": "84d891c7-03f0-4f54-b7ef-b1d9a86e9c5c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate PSMC trajectory patterns (C24-C28). OpenEval finds these directly observable and well-supported by visual inspection of figures. Peer reviewers do not raise specific concerns about these descriptive observations, appearing to accept them as patterns in the data, though broader interpretation remains uncertain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "3829a080-89ac-4dd5-a740-08c3caceed3a",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4b74979d-45e9-4a86-ab2d-9a614c715640",
+      "peer_result_id": "113e9113-1c1c-4f02-bca2-7e431bfe8c79",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address population structure confounds (C41-C45, C48-C49, C53, C82). OpenEval finds the authors' discussion thorough and the reasoning sound, noting that structure effects would work against main findings. Peer reviewers express uncertainty, stating that simulations comparing different degrees of structured populations would be needed to validate the authors' arguments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "f13dd24f-cad9-4183-98cf-f1a4d1ee4d68",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "5d588012-7395-4eb3-882d-b678e59cef27",
+      "peer_result_id": "411b927c-f041-442a-b6fb-436dfd3ced38",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate methodological aspects including generation time assumptions (C89, C92-C94). OpenEval finds methods thoroughly described with appropriate sensitivity analysis. Peer reviewers express significant concern about generation time assumptions, questioning whether differences in generation time between migrants and residents affect Ne and growth estimates, despite the sensitivity analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "515f990e-e950-409e-a77f-2b9d2b1cf97c",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "642be5c7-1a40-4751-8b0e-7d265cbabe68",
+      "peer_result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the distinction between geographic and ecological factors (C15, C56, C63, C83-C84). OpenEval finds the evidence reasonably supports that geography alone is insufficient, with appropriate acknowledgment of uncertainty. Peer reviewers identify a fundamental confound: migrants and residents breed in different geographic areas (North vs South America), making it impossible to disentangle migration effects from geographic/ecological differences without additional comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "32aa3fae-3f18-4fb1-87ff-d4cac6e6e4d4",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "11579081-c8c3-40ce-8ed5-d93c37ccf429",
+      "peer_result_id": "9c63f5f8-5bf1-4282-9d84-0823adc857ef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates the a priori prediction and mechanistic explanation (C16-C17, C40) as well-supported by statistical confirmation and paleoclimate literature. Peer R7 addresses overlapping claims (C16-C17, C40) but focuses on the confound between migration and geographic location, expressing uncertainty about whether the pattern reflects migration effects or breeding ground differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "68c5da55-139b-4e25-b458-5a70674f2eef",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "cc7d608c-e3ff-43b3-8c75-db17f997ae7d",
+      "peer_result_id": "1a91a7c3-ca96-4eaa-a7a0-1b75bfd2899f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the novelty claim (C29). OpenEval expresses uncertainty, noting the claim is difficult to verify without comprehensive literature review. Peer reviewers support the novelty and value of the approach, praising the creative use of PSMC and test-of-hypothesis design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "973095d2-4876-45ff-8764-20d80e0e2b16",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "fea56a87-73d5-474f-b570-184000c7a122",
+      "peer_result_id": "2d5f4926-656f-4491-822c-35da1c4d3880",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address PSMC methodology foundations (C1). OpenEval finds the study system well-documented and PSMC capability established by citations. Peer reviewers acknowledge the creative use of PSMC and that analyses seem well done, with concerns focused on interpretation rather than basic methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "79e8fc21-669f-41ef-a74d-a87833f6a038",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "5d588012-7395-4eb3-882d-b678e59cef27",
+      "peer_result_id": "2d5f4926-656f-4491-822c-35da1c4d3880",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates comprehensive methodological details (C88-C102) as thoroughly described with appropriate rigor. Peer R9 addresses subset of methodological claims (C1, C91, C102), acknowledging PSMC analyses are well done and authors acknowledge complexity, with concerns about interpretation and validation rather than core methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "ce64bfa8-cd76-43be-8fb8-f3f9680183d1",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ddd0fba9-255e-4ca0-8d63-ab81b4bede98",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds glacial cycle data and PSMC sampling resolution claims (C50-C52, C54) well-supported by established literature and direct observation. No corresponding peer review evaluation found for these specific methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "cb1c3a77-bf5f-4b64-98c7-1861dd39ce1f",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "255a118b-ab16-4a97-a42c-d5a7c2d2932d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the ecological literature synthesis (C65-C77) appropriately complex with extensive citations and appropriate acknowledgment of uncertainty. No corresponding peer review evaluation found for these ecological mechanism discussions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "52458d2e-214a-44fa-ae81-9874a8ac8f44",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "31667a1e-9dfe-49c2-912e-395dffd6b2d4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the documented exceptions (C78-C80) clearly shown in figures and tables, with reasonable speculative explanation. No corresponding peer review evaluation found for these specific exceptions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "655db546-6c6c-4bd2-a2f9-384eb8129765",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "a97fb906-57c7-4a81-9ae6-698954fe6f80",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the observation of heterogeneity in population histories (C7) directly supported by PSMC trajectories in figures. No corresponding peer review evaluation found for this specific observation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "1ce3197d-fd10-4367-a017-6b548f00394b",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "74310093-704e-4047-a346-a028e29c5489",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds the negative result about growth rates (C21) clearly stated with appropriate statistics, providing important nuance. No corresponding peer review evaluation found for this specific finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    },
+    {
+      "id": "5ca252ad-efbd-425d-b068-c286fb293153",
+      "submission_id": "018c2a93-e987-4101-b8bc-5d06e4943919",
+      "comparison_id": "CMP17",
+      "openeval_result_id": null,
+      "peer_result_id": "981d5337-1d11-49da-bc4e-5e6e28684a48",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers express uncertainty about interpreting PSMC results in context of population structure (C25, C39, C55), suggesting simulations would help determine if patterns reflect true demography or artifacts. OpenEval R4 addresses C25 but in different context (lack of synchrony), while OpenEval R6 addresses C55 in population structure discussion with different conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:42:48.528036Z"
+    }
+  ]
+}

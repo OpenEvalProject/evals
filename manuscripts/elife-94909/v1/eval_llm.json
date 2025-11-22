@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C17",
+      "C42",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C94"
+    ],
+    "result": "The authors developed pubget, a Python command-line tool that downloads full-text articles from PubMed Central's Open Access subset, extracts metadata and content including stereotactic brain coordinates, and can perform large-scale meta-analyses. Pubget retrieved over 10,000 articles with stereotactic coordinates using a neuroimaging query, enabling fully automated and reproducible large-scale meta-analysis for the first time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C17, C42, and C52-C69 collectively describe pubget's functionality, implementation, and capabilities. The tool's design is well-documented with specific technical details (Python implementation, CSV output, E-utilities API usage, plugin architecture). The claim of enabling fully automated meta-analysis (C42) is supported by the successful retrieval of 10,000+ articles (C17) and integration with existing tools like NiMARE and labelbuddy (C63, C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Comparison of meta-analysis methods shows that pubget-NeuroSynth has higher statistical power and better face validity for rare terms than the original NeuroSynth, while the original NeuroQuery (trained on 13,000 full-text articles) performs better than pubget-NeuroQuery. The authors provide recommendations for method selection based on query type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C97-C100 are supported by visual evidence in Figure 3 showing brain map comparisons across methods. The performance differences are explained by corpus size differences (C19) and the recommendations (C97-C99) follow logically from the observed results. However, the evaluation is primarily qualitative ('face validity') rather than quantitative statistical comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C96"
+    ],
+    "result": "The authors developed labelbuddy, a lightweight desktop annotation application that runs on Linux, Windows, and MacOS without setup, stores annotations in SQLite format, exports to JSON, and integrates with pubget. An open repository (labelbuddy-annotations) was created to share annotations across projects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 and C96 describe labelbuddy's design, functionality, and integration. The technical specifications are concrete (SQLite storage, JSON export, cross-platform binaries) and the scalability claim (C77) is testable. The repository structure (C79-C81) is documented. The tool addresses a genuine gap in annotation workflows for small research projects (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors compared two approaches for extracting sample sizes from 4,230 fMRI articles: a heuristic rule-based method and GPT-3.5. GPT-3.5 achieved 50% exact match rate versus 36% for the heuristic, with similar median absolute percent errors (0.9% vs 0%), but GPT-3.5 had better recall (100% vs 54%). Both methods were validated on 291 manually annotated papers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 and C82-C88 provide detailed methodology and validation results. The comparison is well-designed with a proper train/validation split (C87: 188 training, 103 validation papers). Performance metrics are clearly reported (C27-C30, C32-C33) and shown in Figure 4A. The validation approach is appropriate, though the authors acknowledge this is illustrative rather than optimized for maximum performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C112"
+    ],
+    "result": "The authors reproduced and extended Poldrack et al. 2017's analysis of sample size trends in neuroimaging, finding that median sample sizes increased from 1995-2015. They additionally characterized participant demographics, finding that healthy participants' ages peak around university student age, while patients tend to be older, and that papers with large sample sizes are more likely to mention sample size in abstracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 accurately describe prior work (Poldrack et al. 2017), while C34-C39 present new findings supported by Figure 4B-C. The age distribution findings (C34, C36) are data-driven and shown visually. However, some interpretations are speculative (C35, C38 marked as INFERENCE/SPECULATION). The discrepancy noted in C37 is acknowledged with plausible explanations (C38). The annotation repository (C39) provides transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors analyzed dynamic functional connectivity (dFC) methods by downloading 385 papers and manually annotating 70 papers for method usage and citations. They found that Clustering was both highly cited and applied, Time-Frequency was highly cited but not highly applied, and Sliding Window was highly applied but less cited than Clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 document the data collection and annotation effort. Claims C113-C120 present findings supported by Figure 6, which shows the relationship between citations and application frequency for different dFC methods. The analysis is straightforward and the conclusions (C116-C120) follow directly from the plotted data. This demonstrates the utility of the litmining ecosystem for systematic literature reviews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The labelbuddy-annotations repository contains 930 documents across 8 projects with 102 labels, 14 annotators, and 6,180 total annotations, with the largest projects being review-neuro-meta-analyses (421 documents), cluster_inference (193 documents), and participant_demographics (188 documents).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 report descriptive statistics from Table 1. These are straightforward data summaries that demonstrate the scope and diversity of the annotation repository. The numbers are internally consistent (individual project totals sum to the reported overall total in C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The litmining ecosystem aims to maximize scalability, reproducibility, and accessibility of literature mining. Compared to existing approaches (re-using existing corpora, manual collection, or automated collection), the litmining ecosystem achieves medium accessibility, high scalability, and high reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 present the design goals and comparative evaluation shown in Figure 1. The comparison is reasonable and the characterizations of different approaches are justified by their inherent properties. The litmining ecosystem's ratings (C93) represent a balanced trade-off between the extremes of other approaches, which is consistent with the tool design described throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Pubget is limited to PMC's Open Access subset, excluding a large portion of biomedical literature, but this design choice ensures legal compliance (Creative Commons licensing), maintainability, and reliability. The authors note a trend toward more open-access papers may mitigate this limitation in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 acknowledge a significant limitation (C43-C44) while providing sound justification for the design choice (C45, C47-C49). The restriction to Open Access is a deliberate trade-off favoring legal clarity, maintainability, and reproducibility over comprehensiveness. The optimistic outlook (C46) is supported by citation to policy changes (White House 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C110",
+      "C111"
+    ],
+    "result": "The litmining tools are being used by Neurosynth-compose, a large funded project providing an online platform for PRISMA-compliant neuroimaging meta-analyses. Pubget is used for data collection, while both pubget and labelbuddy are used for prototyping and validating features like neural network-based information extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C110-C111 describe real-world adoption of the tools, supported by citations to Kent et al. 2024 and Page et al. 2021. This demonstrates that the tools have utility beyond the illustrative examples in the paper and are being integrated into larger, production systems. The specific use cases mentioned (data collection, prototyping, validation) are concrete and credible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C64",
+      "C65"
+    ],
+    "result": "The manuscript provides context on the growing biomedical literature (>1 million papers/year in PubMed), existing neuroimaging corpora (NeuroSynth, NeuroQuery), and the need for literature mining tools. Individual neuroimaging studies lack statistical power, but meta-analysis can extract more reliable brain-behavior associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 and C64-C65 establish background context through citations to relevant literature (Landhuis 2016, Simmonds 2022, Baker 2016, Huang et al. 2020, Yarkoni et al. 2011, Dock\u00e8s et al. 2020, Poldrack et al. 2017, Wager et al. 2007, Salo & Bottenhorn 2018). These are standard background claims that accurately represent prior work and establish the motivation for the current study.",
+    "result_type": "MINOR"
+  }
+]

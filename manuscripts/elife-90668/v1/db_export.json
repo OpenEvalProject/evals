@@ -1,0 +1,2471 @@
+{
+  "submission": {
+    "id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:44:28.438273Z",
+    "updated_at": "2025-11-21T23:44:28.438273Z"
+  },
+  "content": [
+    {
+      "id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "content_type": "manuscript",
+      "content_text": "# Interpreting roles of mutations associated with the emergence of S. aureus USA300 strains using transcriptional regulatory network reconstruction\n\n## Authors\n\n- Saugat Poudel<sup>1</sup> ([ORCID: 0000-0002-3732-2463](https://orcid.org/0000-0002-3732-2463))\n- Jason Hyun<sup>1</sup>\n- Ying Hefner<sup>1</sup>\n- Jon Monk<sup>2</sup>\n- Victor Nizet<sup>3</sup> ([ORCID: 0000-0003-3847-0422](https://orcid.org/0000-0003-3847-0422))\n- Bernhard O Palsson<sup>1</sup> ([ORCID: 0000-0003-2357-6785](https://orcid.org/0000-0003-2357-6785)) \u2020\n\n### Affiliations\n\n1. University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n2. Palmona Pathogenomics Menlo Park United States\n3. Collaborative to Halt Antibiotic-Resistant Microbes (CHARM), Department of Pediatrics, University of California San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n4. Department of Pediatrics, University of California San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Staphylococcus aureus clonal complex 8 (CC8) is made up of several subtypes with varying levels of clinical burden; from community-associated methicillin-resistant S. aureus USA300 strains to hospital-associated (HA-MRSA) USA500 strains and ancestral methicillin-susceptible (MSSA) strains. This phenotypic distribution within a single clonal complex makes CC8 an ideal clade to study the emergence of mutations important for antibiotic resistance and community spread. Gene-level analysis comparing USA300 against MSSA and HA-MRSA strains have revealed key horizontally acquired genes important for its rapid spread in the community. However, efforts to define the contributions of point mutations and indels have been confounded by strong linkage disequilibrium resulting from clonal propagation. To break down this confounding effect, we combined genetic association testing with a model of the transcriptional regulatory network (TRN) to find candidate mutations that may have led to changes in gene regulation. First, we used a De Bruijn graph genome-wide association study to enrich mutations unique to the USA300 lineages within CC8. Next, we reconstructed the TRN by using independent component analysis on 670 RNA-sequencing samples from USA300 and non-USA300 CC8 strains which predicted several genes with strain-specific altered expression patterns. Examination of the regulatory region of one of the genes enriched by both approaches, isdH, revealed a 38-bp deletion containing a Fur-binding site and a conserved single-nucleotide polymorphism which likely led to the altered expression levels in USA300 strains. Taken together, our results demonstrate the utility of reconstructed TRNs to address the limits of genetic approaches when studying emerging pathogenic strains.\n\n## Introduction\n\nComparative genomic methods represent an important approach to understand the emergence and evolution of new strains of pathogens. In Staphylococcus aureus alone, whole-genome comparisons have enabled rapid characterization of genetic basis for antibiotic resistance, increased virulence, host specificity, and altered metabolic capabilities (Young et al., 2019; Bosi et al., 2016; Choudhary et al., 2018; Correction for Copin, 2019; Krishna et al., 2018). However, genome-wide linkage disequilibrium and strong population structure currently limit the differentiation of causative alleles from genetically linked ones. By calculating lineage level associations, methods like bugwas address these issues for single, recurring phenotypes like antibiotic resistance (Earle et al., 2016).\n\nEmerging clonal complexes, on the other hand, exhibit multiple complex phenotypes that may contribute to their emergence and proliferation. For example, USA300 strains carry antibiotic resistance cassettes, Panton\u2013Valentine Leukocidin (PVL) associated with pyogenic skin infections, increased ability to colonize locations outside of the nasopharynx, etc. (Young et al., 2019; Diep et al., 2008; Faden et al., 2010). As these strains often emerge clonally from closely related \u2018ancestral strains\u2019, efforts to discern causal mutations that lead to their increased clinical burden is hampered by strong population-stratification and genome-wide linkage disequilibrium (Steinig et al., 2019; Challagundla et al., 2018b; Bal et al., 2016). Though recombination at species level is common in S. aureus, within clade recombination rates tend to be lower, thus preserving the linkage between mutations (Challagundla et al., 2018b; Uhlemann et al., 2014; Challagundla et al., 2018a; Everitt et al., 2014). Due to this limitation, studies of emerging strains often focus on gene-level analysis such as acquisition of mobile genetic elements or loss of gene function as their effect on phenotype is easier to determine than that of point mutations (Thurlow et al., 2012; Boyle-Vavra et al., 2015). Computational modeling methods can help tackle these challenges by predicting phenotype differences between strains, thus acting as a sieve to filter enriched mutations with potential phenotypic effects and therefore find candidate causal mutations (Nishizaki et al., 2020; Choi et al., 2012; Kavvas et al., 2020). Even if experimentally intractable, the large possible phenotypic space of an organism can be explored quickly with computational models. Taking advantage of these modeling techniques, we use a reconstruction of the transcriptional regulatory network (TRN) of clonal complex 8 (CC8) strains to find USA300-specific mutations that are associated with changes in gene regulation.\n\nFirst, we used De Bruijn graph genome-wide association study (DBGWAS) to discover enriched mutations associated with the USA300 strain within CC8 (Jaillard et al., 2018). Due to clonal expansion of USA300 strains from their progenitors within CC8, the enriched USA300-specific mutations were in high linkage disequilibrium. Further complicating the matter, we found that almost all mutations enriched within open reading frames (ORFs) were unique to USA300 lineage and not found in any other clonal complexes, precluding identification of potential causative mutations by homoplasy. Instead, we turned to reconstruction of a TRN to identify genes that were both associated with an enriched mutation and had altered regulation in USA300 strains. We built an independent component analysis (ICA)-based reconstruction of the TRN using 670 publicly available RNA-sequencing samples from both USA300 and non-USA300 CC8 strains. By factoring the RNA-sequencing data into a series of signals and their activities, the ICA-based reconstruction of the TRN shows both the static gene\u2013regulator interaction and the dynamic activity of these interactions in a sample-specific manner (Sastry et al., 2019). However, ICA is a generalized signal extraction algorithm and therefore does not distinguish between biological sources of signals like regulatory elements and \u2018artificial\u2019 sources that can be created by sourcing data from multiple strains. Therefore, in addition to signals associated with gene regulators, ICA also outputs signals associated with strain-specific changes in gene regulation. Furthermore, by utilizing RNA-sequencing data from hundreds of samples to identify genes with strain-specific expression patterns, this approach is more likely to find strain-specific differences than previous approaches that focus on specific conditions (Jones et al., 2014; Iqbal et al., 2016).\n\nThis analysis revealed several genes with distinct expression patterns in USA300 strains that were also associated with DBGWAS-enriched mutations. One of these genes, isdH, which encodes a haptoglobin-binding protein, showed several enriched mutations in the regulatory region of USA300 strains including the deletion of the Fur repressor-binding site. Additionally, the isdH gene generally had higher expression levels in samples from USA300 strains, connecting the mutation enriched by DBGWAS with differences in TRN enriched by ICA. Overall, our analysis shows how the reconstruction of TRN can be used to extend the limits of current GWAS approaches when studying emerging populations of bacterial pathogens.\n\n## Results\n\n### Classifying USA300 and non-USA300 genomes based on genetic markers\n\nWe sought to compare the genetic differences between USA300 community-associated methicillin-resistant S. aureus (CA-MRSA) strains and other subtypes within CC8 that have lower clinical and community burden. Given that both subtypes exist within the same clonal complex, this comparison allowed us to probe the genetic basis for the success of USA300 strains with limited confounding effects of different genetic backgrounds. We downloaded 2033 S. aureus genomes for analysis and excluded six of them with genome length of less than 2.5 million base pairs. The CC8 pangenome consisted of 19176 gene clusters with 2291 core genes that were present in at least ~95% of the genomes analyzed. Among the remainder of the genes, 931 were categorized as accessory genes and 15,954 were found in less than 5% of the genomes (Figure 1\u2014figure supplement 1A). The collection formed a closed pangenome, as adding new genomes did not introduce many new genes (Figure 1A), suggesting that our collection had a good gene-level coverage of the CC8 pangenome. We confirmed the pangenome coverage with Roary (Figure 1\u2014figure supplement 1B). To get a higher resolution view of these genomes, we surveyed unique alleles within the ORFs and in the 300-bp 5\u2032 upstream and 3\u2032 downstream sequences. We found a larger number of mutations within the ORFs, indicating the presence of greater genetic variation in the ORFs than in the neighboring regulatory regions. This is reflective of the fact that most of S. aureus genome sequence comprises of ORFs for example ~84% of TCH1516 genome is part of an ORF.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig1-v1.jpg)\n\n**Figure 1.:** (A) Pangenomic analysis of CC8 genomes shows the distribution of genes and mutations in open reading frames (ORFs) and regulatory regions. (B) Prevalence of USA300-specific genetic markers, Panton\u2013Valentine Leukocidin (PVL) and SCCmec IVa, as you traverse up the phylogenetic tree from TCH1516. The gray dashed line represents the node where the USA300 root is placed. (C) Phylogenetic tree of CC8 genomes classified into USA300 and non-USA300 strains.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Cumulative distribution of unique genes used to fit the pangenomic parameters. The core and unique genes threshold were calculated at 90% of the distance from the inflection point (black dot) of the curve. (B) Analysis with Roary confirmed that adding new genomes to the analysis collection were unlikely to introduce many new genes which indicates a good gene-level coverage of the clonal complex 8 (CC8) clade. (C) SCCmec and Panton\u2013Valentine Leukocidin (PVL) distribution in the CC8 tree as it is traversed up from the FPR3757 leaf toward the root. Starting from FPR3757 gives the same delineation between USA300 and non-USA300 genomes as the search that starts from TCH1516.\n\nNext, we classified the CC8 genomes into USA300 and non-USA300 strains using Genetic Marker Inference (GMI). GMI was previously developed to rapidly and systematically identify different subclades within inner-CC8 strictly based on genetic markers (Bowers et al., 2018). In this scheme, USA300 genomes can be differentiated from non-USA300 CC8 genomes by the presence of either SCCmec IVa or the presence of PVL in case of methicillin-susceptible S. aureus (MSSA).\n\nTo identify the root of the USA300 clades, we first traversed up nodes of the phylogenetic tree starting from known USA300 strain TCH1516 and determined the number of strains, fraction PVL positive and fraction SCCmec IVa positive for each node during traversal. The root was placed at the last node where >90% of the strains within the subclade represented by the daughter nodes were SCCmec IVa and PVL positive (Figure 1B). As phylogenetic trees are nested, root finding with this procedure is not dependent on the starting USA300 strain. Same root was identified when the procedure was initialized with another well-known USA300 reference strain FPR3757 (Figure 1\u2014figure supplement 1C). Combining the genetic markers with phylogenetic grouping led to the classification of 1449 genomes as USA300 and 589 genomes as non-USA300 (Figure 1C, Supplementary file 1). Strains previously identified as \u2018early USA300\u2019 were not part of our USA300 classification (Bowers et al., 2018). While many of these strains are PVL positive, they have variable SCCmec types and therefore are likely to be clinically distinct from the USA300 strains.\n\n### Enriching USA300-specific genes and mutations using DBGWAS\n\nAfter classifying the genomes into USA300 and non-USA300 strains, we identified genes and mutations associated with each subtype by using the DBGWAS (Jaillard et al., 2018). We used 2030 genomes for this analysis; the 2027 genomes in pangenomics analysis above were \u2018spiked\u2019 with three well-known CC8 genomes \u2013 TCH1516, COL, and Newman \u2013 to help annotate the DBGWAS unitigs. DBGWAS provides a reference genome-free method for conducting GWAS analysis in prokaryotes by building a compacted De Brujin graph to represent the pan genome of input sequences. The nodes of the graph represent unique compacted k-mers that are joined by edges to other nodes with k-mers that appear adjacent to it in genomes. The procedure enriches unique k-mers that appear with different frequencies in each classification and outputs the enriched k-mer as well as its genetic neighborhood (called \u2018components\u2019) from the De Bruijn graph. Visualizing the components associated with the enriched k-mers makes it easier to interpret the k-mers and makes it easy to identify large structural variations (e.g. cassette acquisition) which are often represented by multiple enriched k-mers that fall within the same component. We took the output component graphs and automatically extracted the enriched genetic changes, for example indels, single-nucleotide polymorphisms (SNPs), phage insertions, etc.\n\nMany of the components were associated with genes and genetic elements expected to be enriched with USA300 strains \u2013 SCCmec IVA (the GMI marker), Arginine Catabolite Repressor Element (ACME), cap5E point mutation, multiple prophages, etc. (Supplementary file 2). In total, we found k-mers in 149 components associated with 137 unique TCH1516 genes that were enriched in this analysis, pointing to a large array of mutations that are unique to the USA300 lineage (Figure 2A). Significant k-mers in some components did not uniquely match to TCH1516 genes or only matched to genes in non-USA300 reference genome, NCTC8325.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig2-v1.jpg)\n\n**Figure 2.:** (A) De Bruijn graph genome-wide association study (DBGWAS) recovers components associated with USA300 previously described markers of USA300 strains including mecA (SCCmec IVa), arcA (ACME), cap5e mutation, seq, sek, and Phi-PVL. In addition, components with many other mutations scattered throughout the genome (NC_010079) are also enriched. Each \u2018significant node\u2019 represents a k-mer sequence (with minimum size of 31 nucleotides) that are associated with USA300 strains (adjusted p-value <0.05).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Example of components associated with mobile genetic elements (MGEs); components have a series of nodes that are enriched in one group (blue circles). (B) Example of components associated with single-nucleotide polymorphism (SNP). Component graph contains a cycle around the mutation location with the paths from the cycle forming a sequence unique to either case or control group. Aligning the sequences reveals the enriched mutation.\n\n### Genome-wide linkage and de novo mutations obfuscate identification of causal mutations\n\nThough these mutations were enriched in USA300 strains with DBGWAS, we could not attribute the prevalence of any mutation to selection due to strong genome-wide linkage. We quantified the linkage disequilibrium by calculating the square of the correlation coefficient (r2) for each of the enriched k-mer not associated with mobile genetic elements. High correlation coefficient indicates tight co-occurrence of k-mers in the genomes and therefore high linkage disequilibrium between the sequences. There was a strong linkage between the k-mers that were enriched in USA300 strains. Surprisingly, even k-mers that were 1.4 million base pairs away (the maximum distance between two sites in the circular 2.8 million base pairs long S. aureus genome) still had r2 over 0.9 (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig3-v1.jpg)\n\n**Figure 3.:** (A) Enriched k-mers showed high linkage disequilibrium, with some k-mers at 1.4 Mbp distance still having r2 of greater than 0.98. (B) Schematic of position-specific entropy analysis. Positions with heterogeneous sequences have higher calculated entropy than more conserved sequences with fewer mutations. (C) Using position-specific entropy, we only found one example of shared enriched mutation in open reading frames (ORFs) of USA300 and non-USA300 strains. (D) Distance (in base pairs) between the position of enriched mutation in USA300 strains and the position of the nearest entropy peak in other non-clonal complex 8 (CC8) strains.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The activity of the SCCmec/ACME iModulon shows clear strain-specific separation. (B) Gene weighting for the iModulon primarily containing SCCmec and ACME. Genes encoding SarY and AraC family proteins were also enriched.\n\nTo differentiate potential causal mutations from genetically linked alleles, we searched for mutation hotspots by comparing the positions of USA300 mutations in ORFs to mutations in other clonal complexes. Barring recombination events, presence of mutation hotspots in the same position in multiple clades could point to selection acting on the sequence. Therefore, we searched for prevalence of enriched mutations in other non-CC8 clades. We identified 61 SNPs within ORFs that were enriched in USA300 strains. To identify mutational hotspots in other clades, we downloaded all the amino acid sequences belonging to the PATRIC genus protein family of each of the gene products encoded by the selected ORFs (Wattam et al., 2014). The PATRIC local protein family consists of sequences of homologous proteins within the same genus which were further filtered down to S. aureus species-specific sequences. After filtering, each protein family comprised 2000\u201316,000 unique sequences and the strains from which the amino acid sequences were derived spanned dozens of clades allowing for broad comparisons (Figure 2\u2014figure supplement 1). Lastly, we removed sequences associated with ST239 as it is thought to have emerged from large-scale recombination of ST8 and ST30 strains (Robinson and Enright, 2004).\n\nWe determined mutation hotspots by calculating position-specific allelic entropy. Allelic entropy at a given amino acid position is a function of the number of unique amino acids found in that position and the frequency of the mutation (Hyun et al., 2022). Positions where all queried sequences have the same amino acid have low entropy, while positions that have frequent amino acid substitutions (hotspots) have high entropy (Figure 3B). This measure allows us to quickly determine the positions of mutation hotspots while accounting for multiple possible amino acid substitutions and rare mutations. Before calculating the position-specific entropy, all sequences within each of the PATRIC local protein families were aligned with multiple sequence alignment (MSA). This alignment ensures proper comparison of amino acids even when there are deletions or insertions in some of the genes in the family.\n\nOf the 36 enriched ORF mutations only the Asp75Tyr mutation in the cap5E gene, which was previously shown to ablate capsule production in USA300 strains, was found in other strains (Figure 3C; Boyle-Vavra et al., 2015). Peaks in entropy corresponding to this mutation position were present in both the CC8 and non-CC8 strains while all other mutation positions were unique to CC8. Despite not having any perfect matches outside of the cap5E mutation, we found that for 28 of the mutations, a peak was present in sequences from other clades within 71 MSA positions. Together, our data suggest that mutations within ORFs in USA300 strains are likely de novo mutations and are not acquired through horizontal gene transfer though many of these mutations have occurred in hotspot regions (Figure 3D).\n\n### iModulon in the CC8 TRN points to mutations associated with differential regulation\n\nThe presence of genome-wide linkage and de novo mutations in ORFs severely limited the ability to distinguish causal SNPs contributing to increased pathogenesis in USA300 strains. The effect of some mutations, especially in ORFs, has been successfully linked to distinct phenotypes such as the absence of a capsule in USA300 and USA500 strains (Boyle-Vavra et al., 2015). However, the effect of mutations associated with changes in gene regulations can be much more difficult to assess (Thurlow et al., 2012). To look for mutations that may be associated with changes in transcriptional regulation, we used ICA to model gene regulation in CC8 strains which can predict strain-specific differences in expression patterns.\n\nWe collected CC8 strains associated RNA-sequencing data from Sequence Read Archive (SRA). After stringent QC/QA and curation, 291 non-USA300 strains (e.g. Newman, NCTC8325) and 379 USA300 (e.g. LAC, TCH1516) samples were used to create a single reconstruction of TRN across CC8 using ICA (Sastry et al., 2019; Sastry et al., 2021; Supplementary file 3). ICA calculates independently modulated sets of genes, iModulons, and the activities of those gene sets in each sample. iModulons calculated by ICA represent distinct sources of signals in the RNA-sequencing data. While most of the signals can be associated with different regulatory elements, iModulons associated with other biological features such as mobile genetic elements, genomic backgrounds are also enriched. In Escherichia coli and Salmonella enterica Typhimurium, multi-strain ICA has been used to calculate strain-specific iModulons that represent differences in gene expression (Sastry et al., 2019; Yuan et al., 2022).\n\nIn our reconstruction, two iModulons captured a large number of genes with different expression levels in the non-USA300 and USA300 strains (Figure 4A, Figure 3\u2014figure supplement 1A). Most of the genes in the strain-specific iModulons belonged to mobile elements associated with USA300 strains such as ACME, SCCmec, Phi-PVL, etc. However, the iModulons also contained core genes that are present in both strains, pointing to possible differences in gene regulation (Figure 4B, Figure 3\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig4-v1.jpg)\n\n**Figure 4.:** (A) Independent component analysis (ICA) of USA300 and non-USA300 RNA-sequencing data identified an iModulon with strain-specific activity. (B) The strain-specific iModulon contained various horizontally acquired elements (e.g. ACME, Phi-PVL) that are prevalent in USA300 lineage as well as conserved genes with strain-specific expression patterns. (C) Comparing the 5\u2032 regulatory region of the gene isdH from various S. aureus strains revealed a unique deletion containing Fur-binding site in USA300 reference strain TCH1516.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90668/elife-90668-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The increased expression level in USA300 is in line with the deletion of the Fur repressor-binding site. The expression levels are log-TPM centered on the expression profile from the TCH1516 strain grown in RPMI + 10% LB.\n\nWe mapped the enriched mutations from DBGWAS onto the core genes enriched in the strain-specific iModulon. 10 core genes \u2013 including isdH, argR1, and araC family regulator \u2013 with mutations in the ORF or in the regulatory region were also enriched in the strain-specific iModulon (Supplementary file 4). Of these genes, gene isdH, encoding a heme scavenger molecule showed distinct strain-specific expression levels and had enriched k-mers that are mapped to the upstream regulatory region. Therefore, we compared the upstream regulatory region of several reference strains including TCH1516 (USA300), NCTC8325 (CC8b), and 2395 (USA500). Additionally, we included MW2 (CC1 CA-MRSA) as the transcription start site in the region has been experimentally confirmed in this strain (Prados et al., 2016). Comparisons showed a 38-bp deletion in the 5\u2032 untranslated region containing a transcription factor Fur-binding site (q-val = 0.033e\u22124) (Figure 4C).\n\nThis deletion was detected in all of the 1385 USA300 genomes, but only present in 95 of the 589 non-USA300 genomes. As Fur is a repressor that blocks expression in presence of iron concentration, this deletion in the Fur-binding site may be responsible for the general increase in isdH expression observed in USA300 samples (Figure 4\u2014figure supplement 1). We also found a second mutation upstream of the predicted \u201335 binding site that was also enriched in USA300. Interestingly, while the MW2 strain did not have the 38 bp deletion, it contained the exact upstream A->T mutation. All other base pairs in the region were perfectly matched in between all the reference genomes. The combination of evidence from genetic and transcriptomic analysis suggests that regulation of isdH is altered in USA300 strains compared to its non-USA300 progenitors.\n\nAs with many point mutations detected in our analysis, the absence of Fur-binding site upstream of isdH gene is prevalent only in the USA300 lineage. We searched for Fur-binding motif in the 100-bp upstream regions from 3515 non-CC8 strains spanning multiple clonal complexes (Figure 2\u2014figure supplement 1). We detected the binding motif in all but 21 strains. Of the 21 strains with no detectable Fur-binding sites, 6 belonged to ST72 (out of 28 total from this type) and 6 had uncharacterized multilocus sequence type (MLST). The rest were distributed among types 121, 1750, 375, 1, 3317, 15, 7, 398, and 4803, with one positive strain per type.\n\n## Discussion\n\nEmergence of CA-MRSA USA300 strains from hospital-associated methicillin-resistant S. aureus USA500 progenitors presents a natural experiment to probe the genetic basis for the establishment of the USA300 lineage. However, in studying these groups, genetic methods like GWAS were limited in finding causal mutations due to genome-wide linkage disequilibrium and presence of an unexpectedly large number of de novo mutations unique to the USA300 lineage. Here, we demonstrated how a model of transcriptional regulation with iModulons can be used to make a headway through the impasse created by the high linkage disequilibrium and identify GWAS-enriched mutations that are also associated with measurable phenotypic changes in the TRN. From the combined RNA-sequencing dataset of USA300 and non-USA300 strains, ICA calculated two iModulons that captured strain-specific variation in gene expression. As expected, most genes in the iModulons were part of mobile genetic elements such as ACME and SCCmec because they have zero expression level in non-USA300 samples. However, the iModulon also contained several core genes that are present in both groups but are differentially regulated. A deeper analysis of the regulatory region of one of these genes with enriched mutation, isdH, revealed a deletion of a DNA segment containing the binding site of the Fur repressor. In congruence with this observation, we also found that USA300 strains with the deleted Fur-binding site showed general increase in isdH expression level. This gene encodes IsdH, a surface receptor that binds to human hemoglobin, causing it to release the heme (Ellis-Guardiola et al., 2020). It is part of an arsenal of S. aureus iron sequestration proteins including Staphyloferrins and ferrous iron transporters that it uses to compete with the host for essential iron (van Dijk et al., 2022). Despite having many different pathways for obtaining iron, it has been observed that S. aureus prefers heme as its iron source over transferrin-bound iron (Skaar et al., 2004). Our analysis shows that preference for heme is reflected in the genomic and transcriptomic signature of USA300 as a deletion of Fur-binding region upstream of isdH and subsequent increase in its expression. Combining GWAS with large-scale transcriptomic modeling was therefore able to predict potential causal mutations contributing to the increased clinical burden of the USA300 lineage.\n\nThe current analysis utilized the available DNA- and RNA-sequencing data and the methods used here are scalable to the rapidly growing number of data in the public repositories. Indeed, with the greater scale, we can get more granular insight into subclade-specific differences. The transcriptomic analysis consisted of samples primarily from the USA300 (CC8e and CC8f) clades, the CC8a clade represented by Newman and the CC8b clade represented by NCTC8325 and its derivatives. However, the CC8b and CC8a clades are currently undersampled due to its minimal clinical burden compared to USA300. We therefore combined strains from all non-USA300 clades into a single group for GWAS. The misalignment of RNA-sequencing samples from GWAS samples may explain the low number of hits that were enriched by both methods when many other unique gene expression patterns have been observed in USA300 strains. This misalignment points to the limit of our approach. Most other phenotypes of clinical interest such as antibiotic resistance may not separate cleanly into distinct clades. In those cases, it is not obvious which strains should be chosen as the reference strain for RNA-sequencing and subsequent TRN reconstruction. The choice of reference strain as well as the choices in the RNA-sequencing sample conditions will impact which association between mutations and changes in gene regulations are uncovered.\n\nWith time, the scaling of databases may be able to resolve the issue of imbalanced sampling. On the other hand, resolving the confounding effect of linkage disequilibrium inherent in emerging and clonal strains will require a new generation of modeling methods (Bal et al., 2016). Our current approach focuses on modeling the changes in gene regulation at the transcriptional level, but causal mutations can have any number of effects on the phenotype of the organism. New modeling methods that can systematically predict these other phenotypes are now rapidly emerging. Our recent work with Mycobacterium tuberculosis utilized a metabolic allele classifier which combines genome scale metabolic models with machine learning to estimate biochemical effects of alleles thus mapping mutations to changes in metabolic fluxes (Kavvas et al., 2020). Similarly, advances in protein structure prediction with AlphaFold2 and RosettaFold puts us at the cusp of predicting the effects of mutations on protein folding (Baek et al., 2021; Jumper et al., 2021). Combination of these modeling techniques may therefore prove to be the breakthrough required to advance solutions to the current challenges in population genetics of emerging pathogens.\n\n## Materials and methods\n\n### Pangenomic analysis\n\nThe pangenome analysis was run as described in detail before (Hyun et al., 2022). Briefly, \u2018complete\u2019 or \u2018WGS\u2019 samples from CC8/ST8 were downloaded from the PATRIC database (Wattam et al., 2014). Sequences with lengths that were not within 3 standard deviations of the mean length or those with more than 100 contigs were filtered out. A non-redundant list of CDSs from all genomes was created and clustered by protein sequence using CD-HIT (v4.6) with minimum identity (-T) and minimum alignment length (-aL) of 80% and word size of 5 (-w 5) (Fu et al., 2012). To get the 5\u2032 and 3\u2032 sequences, non-redundant 300 nucleotide upstream and downstream sequences from the CDS were extracted for each gene.\n\nThe CDSs were divided into core, accessory, and unique genes based on the frequency of genes as previously described (Hyun et al., 2022). To calculate the frequency thresholds for each category, P(x), the number of genes with frequency x and its integral F(x), the cumulative frequency less than or equal to x were calculated. The multimodal gene distribution can be estimated by sum of two power laws as:\n\n$$\nP(x)=c_{1}x^{\u2212\\alpha_{1}}+c_{2}(N+1\u2212x)^{\u2212\\alpha_{2}}x=1,2,...,N\n$$\n\nwhere N is the total number of genomes, x is the gene frequency and (c1, c2, \u2212\u03b11, \u2212\u03b12) are parameters fit based on the data. The cumulative distribution is then the integral of P(x) with additional parameter k:\n\n$$\nF(x)=k+\\frac{C_{1}}{1\u2212\\alpha_{1}}x^{1\u2212\\alpha_{1}}\\frac{\u2212C_{2}}{1\u2212\\alpha_{2}}(N+1\u2212x)^{1\u2212\\alpha_{2}}\n$$\n\nThe parameters (c1, c2, \u2212\u03b11, \u2212\u03b12, and k) were fitted based on the data using nonlinear least squares regression from scipy (Jones et al., 2001). The frequency threshold of core genomes was defined as greater than 0.9N + 0.1x* and the threshold for unique genome was defined as 0.1x*, where x* represents the inflection point of the fitted cumulative distribution.\n\nRoary (v3.13.0) was used with -i 95 flag to confirm the output of our pangenome analysis (Page et al., 2015).\n\n### Reconstructing CC8 phylogenetic tree\n\nThe phylogenetic tree was reconstructed using the standardized PHaME pipeline on the PATRIC sequences that passed the QC/QA (Shakya et al., 2020). Using the pipeline, the contigs and sequences were aligned to the reference TCH1516 genome NC_010079 and plasmids NC_012417, NC_010063 (Highlander et al., 2007) and 24881 core SNPs at were calculated. The core SNPs were then used to estimate the phylogenetic tree using IQ-TREE (v1.6.7) run with 1000 bootstraps and utilizing the ultrafast bootstrap (Minh et al., 2020; Hoang et al., 2018). The tree was built using the \u2018TVMe+ASC+G4\u2019 model as suggested by the IQ-TREE ModelFinder (Kalyaanamoorthy et al., 2017). Finally, iTOL was used to visualize, annotate, and root the tree with the USA100 D592 (NZ_CP035791) from CC5 as the outgroup (Letunic and Bork, 2021).\n\n### Classification of USA300 and non-USA300 strains\n\nThe USA300 and non-USA300 strains were classified based on a previously proposed and validated CC8 subtyping scheme (Bowers et al., 2018). In this scheme, USA300 strains can be identified from the whole genome if they are PVL positive MSSA or MRSA with SCCmec IVa cassette. We detected SCCmec types using SCCmecFinder (v1.2), and only those genomes where the cassette could be identified by both BLASTn and k-mer based methods were marked as positive (Kaya et al., 2018). PVL was detected using nucleotide BLAST (v2.2.31). We added additional criteria that all genomes identified as USA300 by GMI form a distinct subclade before they are labeled as USA300 that is PVL or SCCmec IVa positive genomes that grouped separately from other USA300 strains in the phylogenetic tree were not labeled as USA300. To find the root of the USA300 strains in the phylogenetic tree, the genomes in the tree were first annotated by their PVL and SCCmec status. Then the tree traversed from leaf to root starting from known USA300 strains \u2013 TCH1516 and FPR3757 \u2013 while keeping track of the number of descendant genomes from the current root that contained known markers SCCmec IVa and PVL. The node where the number of genomes with the markers started flatlining was marked as the root of USA300.\n\nWe detected SCCmec cassettes in 1588 genomes of which 1358 were SCCmec IVa positive. We also found 1431 PVL positive genomes using BLASTn search with PVL encoding genes from USA300 TCH1516 (USA300HOU_RS07645, USA300HOU_RS07650) as reference (Supplementary file 5). Lastly, we reconstructed the CC8 phylogenetic tree based on core SNPs and rooted the tree using strain D592 (CC5) as an outgroup. The tree was then traversed from reference strain TCH1516 to the CC8 root using ete3, while tracking the total number of genomes, the total number of SCCmec IVa positive genomes and the number of PVL positive genomes in each root (Huerta-Cepas et al., 2016). The root of USA300 was placed manually where the number of total genomes kept increasing while the number of PVL and SCCmec positive genomes plateaued. All strains in the clade represented by the USA300 root were classified as USA300 regardless of their SCCmec or PVL status.\n\n### DBGWAS and k-mer linkage calculations\n\nDBGWAS (v0.5.4) was used to enrich mutations unique to USA300 strains using default k-mer size of 31 (-k 31) and neighborhood size of 5 (-nh 5). Alleles with frequency less than 0.1 were filtered (-maf 0.1) and all components enriched with q-values less than 0.05 were documented (-SFF q0.05). Genome-wide linkage was estimated by Pearson correlation (calculated with built-in Pandas function) of the presence/absence of enriched k-mers and distance was measured based on the k-mer alignment to the reference TCH1516 genome as determined by BLASTn.\n\nTo determine the enriched \u2018genetic event\u2019 (e.g. SNP, indel, mobile genetic element, etc.), the graph output from DBGWAS was first loaded onto a networkX model (Hagberg et al., 2008). All nodes in the graph with frequency lower than 0.05 were discarded. MGEs were identified if all significant nodes from DBGWAS had higher frequencies in one strain, for example all nodes associated with SCCmec had higher frequencies in USA300 strains. To find SNPs and smaller indel events, the networkx was used to find cycles in the graph, which results from bifurcation and eventual re-collapse of Debruijn graphs around mutations . For each cycle, the \u2018end nodes\u2019 representing the start and end of the bifurcation were identified by finding the nodes in the cycle with highest frequency across all samples (Figure 2\u2014figure supplement 2). As \u2018end nodes\u2019 are present in both case and control samples, they will have higher frequency than other nodes in the cycle which are specific to either case or control. Once the end nodes are identified, the two paths around the bifurcations representing the case and control specific sequences were identified using the shortest path algorithm in networkx. The sequences from nodes of each path were concatenated, changing the sequences to reverse complements and removing overlaps in sequences when required. The concatenated sequences from each path were then compared using BioPython (v1.83) pairwise global alignments to find the SNPs or indels that differentiate the sequences from case and control (Cock et al., 2009). If reference sequences are passed, the concatenated sequences are aligned to the reference sequences using nucleotide BLAST and mutation positions were converted from k-mer positions to positions in the reference genomes. The code used for this analysis can be found in https://github.com/SBRG/dbgwas-network (copy archived at Systems Biology Research Group, 2022).\n\n### Mapping mutation hotspots with position-specific Shannon entropy\n\nFor each of the CDS with enriched mutations, the PATRIC local protein family (PLfam) was identified based on the reference TCH1516 genome. All available protein sequences for each CDS PLfam were downloaded and filtered for S. aureus sequences. The MLST of the source genome of each downloaded sequence was mapped using the PATRIC database. The online PATRIC website was used to find and filter the target sequences. The sequences were divided into ST8 and non-ST8 and ST239 sequences were filtered. MAFFT was used for multiple alignment and position-specific Shannon entropy was calculated on the aligned file (Katoh et al., 2002). The entropy is calculated as:\n\n$$\nH(X)=\u2212\\sumi=1nP(x_{i})log_{2}\u2061P(x_{i})\n$$\n\nwhere n is the total number of unique amino acids in the position and P(xi) is the probability of finding the given amino acid.\n\n### Calculating strain-specific iModulons with ICA\n\nICA of RNA-sequencing data was performed using the pymodulon package (Sastry et al., 2021). Using the package, all available RNA-sequencing data for non-USA300 and USA300 strains were downloaded, run through the QC/QA pipeline, manually curated for metadata and aligned to the TCH1516 genome (NC_010079, NC_012417, and NC_010063). The combined data were then transformed into log-TPM (transcripts per million) and normalized to a single reference condition (SRX3760886 and SRX3760891). This contrasts with other ICA models that normalize the data to project-specific reference conditions to reduce batch effects. However, normalizing to project-specific control conditions also erases the strain-specific information as almost all BioProjects contain data from only one isolate (e.g. NCTC8325, TCH1516, LAC, etc). ICA was then run following our previously established pipeline to generate iModulons for CC8 clade S. aureus (Sastry et al., 2019). This process is described in further detail below.\n\nWe began by collecting all available RNA-sequencing data and metadata for S. aureus strains from SRA that belonged to the CC8 clade. Most of the sequences were from well-studied CC8 strains \u2013 TCH1516, FPR3757, LAC, Newman, and NCTC8325. Others had fewer specific labels for example \u2018USA300\u2019 but still belonged to CC8. The fastq files for the samples were trimmed with TrimGalore (v0.6.5) and aligned to reference TCH1516 genome (NC_010079, NC_012417, and NC_010063) with bowtie2 (v1.2.3) (Krueger, 2015; Langmead and Salzberg, 2012). The gene-specific read counts were calculated with HTSeqCount (v2.0.1) using the intersection-strict criteria. The number of mapped reads was then normalized to TPM and log-transformed (log-TPM).\n\nBefore using the data, the quality of the reads and alignment was assessed using FastQC and MultiQC (v 1.11) (Andrews, 2010; Ewels et al., 2016). Any samples failing \u2018per base sequence quality\u2019, \u2018per sequence quality score\u2019, \u2018per base n content\u2019, or \u2018adapter content\u2019 were dropped. Additionally, we also removed samples with less than 500,000 reads aligned to the reference. Lastly, samples that did not contain replicates or those with replicates with Pearson correlation coefficients less than 0.9 were also excluded. We then collected additional metadata for the remaining 670 RNA-sequencing samples including growth conditions, genetic changes, associated experiment, etc. The log-TPM were then centered to the reference condition of S. aureus TCH1516 grown in RPMI+10% LB. By centering data from non-USA300 strains on USA300 reference, ICA is able to pick up strain-specific regulatory changes for example ICA captures the activity of Fur transcription factor as a linear combination of Fur iModulon containing gene regulated by Fur and a second \u2018strain-specific\u2019 iModulon that captures differences between USA300 and non-USA300 strains (Figure 3\u2014figure supplement 1).\n\nWe applied FastICA to the centered log-TPM to calculate the M and the A matrix which, respectively, describe the iModulon structure and their activities (Pedregosa, 2011; Koldovsk\u00fd et al., 2006). To find the best possible model, we first had to compute an optimal number of stable components. As FastICA is non-deterministic, each iteration yields a slightly different component weightings and activity levels. It may also yield \u2018spurious\u2019 components that are only present in a subset of runs. To find stable components, we ran ICA 100 times with a random seed. Similar components (e.g. same component containing Fur-associated iModulon) from different iterations which may have slightly different weightings were detected by clustering with DBSCAN. Only components that appear in every run were accepted. When running ICA, users must also provide the number of desired components that the data will be decomposed into. Decomposition into too few components could lead to signals from several transcription factors being combined into single components while over decomposition leads to many unstable and \u2018single-gene\u2019 iModulons that likely capture noise in the data. To find the optimal number of components we used a heuristic method, OptICA, which runs ICA with different numbers of input components from 10 to 340 and suggests an optimal component that minimizes single-gene iModulons while maximizing robust components (McConn et al., 2021). Based on this heuristic, the final model was built with 270 components as input, 148 of which were determined to be robust components.\n\nIn each component, we labeled a gene as being part of an iModulon if their weighting in that component did not fall within a Gaussian distribution as determined by D\u2019Agostino\u2019s test. The genes in each iModulon were then compared to genomic features (e.g. regulons, phage, mobile cassettes, etc.; see \u2018TRN\u2019 object in the model), and was determined to be associated with the feature if there was significant overlap between the two groups (hypergeometric test; adjusted p-value <0.05, precision \u22650.5, and coverage \u22650.2). We also manually curated other iModulons associated with other features for example iModulon where all member genes associated with translation were labeled \u2018Translation iModulon\u2019. The activities of the output iModulons were manually parsed to look for iModulons with the largest strain-specific differences.\n\n### Fur box motif search\n\nisdH genes in all the genomes were first clustered using CD-HIT with identity and coverage minimum of 0.8 (Fu et al., 2012). All annotated isdH genes fell within a single cluster. For each genome, the 100 bp upstream region was then extracted and used for motif search. Motif search for the Fur box was conducted using the FIMO package from the MEME suite (v5.1.0) with default settings (Bailey et al., 2009). The S. aureus strain NCTC8325 Fur motif from collecTF was used as a reference (Kili\u00e7 et al., 2014).\n",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marisa Nicol\u00e1s, Laborat\u00f3rio Nacional de Computa\u00e7\u00e3o Cient\u00edfica Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90668.3.sa0](https://doi.org/10.7554/eLife.90668.3.sa0)\n\nThis study presents valuable findings on core genome mutations that might have driven the emergence of the Staphylococcus aureus lineage USA300, a frequent cause of community-acquired infections. The authors present a solid novel approach that combines genome-wide association studies and RNA-expression analyses, both applied to extensive publicly available datasets. This approach generated an intriguing hypothesis that should be validated experimentally. The work will interest microbiologists working in genomic epidemiology and phenotype-genotype association studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90668.3.sa1](https://doi.org/10.7554/eLife.90668.3.sa1)\n\nSummary:\n\nThis is large-scale genomics and transcriptomics study of the epidemic community-acquired methicillin-resistant S. aureus clone USA300, designed to identify core genome mutations that drove the emergence of the clone. It used publicly available datasets and a combination of genome-wide association studies (GWAS) and independent principal-component analysis (ICA) of RNA-seq profiles to compare USA300 versus non-USA300 within clonal complex 8. By overlapping the analyses the authors identified a 38bp deletion upstream of the iron-scavenging surface-protein gene isdH that was both significantly associated with the USA300 lineage and with a decreased transcription of the gene.\n\nStrengths:\n\nSeveral genomic studies have investigated genomic factors driving the emergence of successful S. aureus clones, in particular USA300. These studies have often focussed on acquisition of key accessory genes or have focussed on a small number of strains. This study makes a smart use of publicly available repositories to leverage the sample size of the analysis and identify new genomics markers of USA300 success.\n\nThe approach of combining large-scale genomics and transcriptomics analysis is powerful, as it allows to make some inferences on the impact of the mutations. This is particular important for mutations in intergenic regions, whose functional impact is often uncertain.\n\nThe statistical genomics approaches are elegant and state-of-the-art and can be easily applied to other contexts or pathogens.\n\nWeaknesses:\n\nThe main weakness of this work is that these data don't allow a casual inference on the role of isdH in driving the emergence of USA300. It is of course impossible to prove which mutation or gene drove the success of the clone, however, experimental data would have strengthen the conclusions of the authors in my opinion.\n\nAnother limitation of this approach is that the approach taken here doesn't allow to make any conclusions on the adaptive role of the isdH mutation. In other words, it is still possible that the mutation is just a marker of USA300 success, due to other factors such as PVL, ACMI or the SCCmecIVa. This is because by its nature this analysis is heavy influenced by population structure. Usually, GWAS is applied to find genetic loci that are associated with a phenotype and are independent of the underlying population structure. Here, authors are using GWAS to find loci that are associated with a lineage. In other words, they are simply running a univariate analysis (likely a logistic regression) between genetic loci and the lineage without any correction for population structure, since population structure is the outcome. Therefore, this approach can't be applied to most phenotype-genotype studies where correction for population structure is critical.\n\nFinally, the approach used is complex and not easily reproduced to another dataset. Although I like DBGWAS and find the network analysis elegant, I would be interested in seeing how a simpler GWAS tool like Pyseer would perform.\n",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "389c88ad-d8c9-49ca-ba89-8864c85abe9f",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C1",
+      "claim": "Staphylococcus aureus clonal complex 8 (CC8) is made up of several subtypes with varying levels of clinical burden, including community-associated methicillin-resistant S. aureus USA300 strains, hospital-associated (HA-MRSA) USA500 strains, and ancestral methicillin-susceptible (MSSA) strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The Staphylococcus aureus clonal complex 8 (CC8) is made up of several subtypes with varying levels of clinical burden; from community-associated methicillin-resistant S. aureus USA300 strains to hospital-associated (HA-MRSA) USA500 strains and ancestral methicillin-susceptible (MSSA) strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing the composition of CC8.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "ce4809f8-11f5-4e70-b267-8f407bd09edb",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C2",
+      "claim": "Gene-level analysis comparing USA300 against MSSA and HA-MRSA strains have revealed key horizontally acquired genes important for its rapid spread in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-level analysis comparing USA300 against MSSA and HA-MRSA strains have revealed key horizontally acquired genes important for its rapid spread in the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references previous findings from gene-level comparative analyses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c99e06ff-4c9b-41f0-aad0-7df5ce9aab34",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C3",
+      "claim": "Efforts to define the contributions of point mutations and indels have been confounded by strong linkage disequilibrium resulting from clonal propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, efforts to define the contributions of point mutations and indels have been confounded by strong linkage disequilibrium resulting from clonal propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in current approaches to studying USA300 mutations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "64ea1238-e62c-464b-9784-6916c809e674",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C4",
+      "claim": "Independent component analysis on 670 RNA-sequencing samples from USA300 and non-USA300 CC8 strains predicted several genes with strain-specific altered expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we reconstructed the TRN by using independent component analysis on 670 RNA-sequencing samples from USA300 and non-USA300 CC8 strains which predicted several genes with strain-specific altered expression patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "cb92d598-e951-4b83-9648-4930ff2b7f1a",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C5",
+      "claim": "The isdH gene has a 38-bp deletion containing a Fur-binding site in USA300 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the regulatory region of one of the genes enriched by both approaches, isdH, revealed a 38-bp deletion containing a Fur-binding site and a conserved single-nucleotide polymorphism which likely led to the altered expression levels in USA300 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the analysis of the isdH regulatory region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "9b94a697-aa1e-41bf-b689-559201795c4b",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C6",
+      "claim": "The 38-bp deletion in isdH regulatory region likely led to altered expression levels in USA300 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the regulatory region of one of the genes enriched by both approaches, isdH, revealed a 38-bp deletion containing a Fur-binding site and a conserved single-nucleotide polymorphism which likely led to the altered expression levels in USA300 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the presence of the deletion and observed expression differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "3e765aca-9668-4b0a-8b3a-28455a769f4b",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C7",
+      "claim": "USA300 strains carry antibiotic resistance cassettes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, USA300 strains carry antibiotic resistance cassettes, Panton\u2013Valentine Leukocidin (PVL) associated with pyogenic skin infections, increased ability to colonize locations outside of the nasopharynx, etc. (Young et al., 2019; Diep et al., 2008; Faden et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "a99fb512-2834-492a-ae8d-27778848a721",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C8",
+      "claim": "USA300 strains carry Panton\u2013Valentine Leukocidin (PVL) associated with pyogenic skin infections.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, USA300 strains carry antibiotic resistance cassettes, Panton\u2013Valentine Leukocidin (PVL) associated with pyogenic skin infections, increased ability to colonize locations outside of the nasopharynx, etc. (Young et al., 2019; Diep et al., 2008; Faden et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "26341f21-8726-4595-a700-c002f45b0b0e",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C9",
+      "claim": "USA300 strains have increased ability to colonize locations outside of the nasopharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, USA300 strains carry antibiotic resistance cassettes, Panton\u2013Valentine Leukocidin (PVL) associated with pyogenic skin infections, increased ability to colonize locations outside of the nasopharynx, etc. (Young et al., 2019; Diep et al., 2008; Faden et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "9d6cd4db-3e89-4d87-bedc-73bd52cc8947",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C10",
+      "claim": "Efforts to discern causal mutations in USA300 strains are hampered by strong population-stratification and genome-wide linkage disequilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "As these strains often emerge clonally from closely related 'ancestral strains', efforts to discern causal mutations that lead to their increased clinical burden is hampered by strong population-stratification and genome-wide linkage disequilibrium (Steinig et al., 2019; Challagundla et al., 2018b; Bal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies describing this limitation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "6121a44b-2773-4d81-a7ff-f47f560d8975",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C11",
+      "claim": "Within clade recombination rates tend to be lower in S. aureus, thus preserving the linkage between mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Though recombination at species level is common in S. aureus, within clade recombination rates tend to be lower, thus preserving the linkage between mutations (Challagundla et al., 2018b; Uhlemann et al., 2014; Challagundla et al., 2018a; Everitt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "379b50ea-5b4e-4d84-b4e6-52bddd13cb13",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C12",
+      "claim": "The CC8 pangenome consisted of 19176 gene clusters with 2291 core genes present in at least ~95% of the genomes analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "The CC8 pangenome consisted of 19176 gene clusters with 2291 core genes that were present in at least ~95% of the genomes analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the pangenomic analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "86bf7706-5eb8-441a-bfa2-60bfbfccea6c",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C13",
+      "claim": "Among the remainder of the genes in CC8, 931 were categorized as accessory genes and 15,954 were found in less than 5% of the genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the remainder of the genes, 931 were categorized as accessory genes and 15,954 were found in less than 5% of the genomes (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the pangenomic analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "dcdf0767-07c3-4e72-b76f-3e876b5209e1",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C14",
+      "claim": "The CC8 collection formed a closed pangenome, as adding new genomes did not introduce many new genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The collection formed a closed pangenome, as adding new genomes did not introduce many new genes (Figure 1A), suggesting that our collection had a good gene-level coverage of the CC8 pangenome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the pangenome analysis results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "977e0be6-c968-4e53-9039-4e6b6e666a50",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C15",
+      "claim": "Most of S. aureus genome sequence comprises of ORFs, for example ~84% of TCH1516 genome is part of an ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "This is reflective of the fact that most of S. aureus genome sequence comprises of ORFs for example ~84% of TCH1516 genome is part of an ORF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific calculation based on the TCH1516 genome.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "2c5e467c-6764-4c26-8389-217bc3e7d5a7",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C16",
+      "claim": "1449 genomes were classified as USA300 and 589 genomes as non-USA300.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the genetic markers with phylogenetic grouping led to the classification of 1449 genomes as USA300 and 589 genomes as non-USA300 (Figure 1C, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the classification procedure described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "3e080714-62ea-428b-a1d5-f9953d81a69c",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C17",
+      "claim": "Strains previously identified as 'early USA300' were not part of the USA300 classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains previously identified as 'early USA300' were not part of our USA300 classification (Bowers et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific exclusion from the classification scheme with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "b71c2dcc-aea1-4677-b993-d6a261754c88",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C18",
+      "claim": "DBGWAS found k-mers in 149 components associated with 137 unique TCH1516 genes that were enriched in USA300 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we found k-mers in 149 components associated with 137 unique TCH1516 genes that were enriched in this analysis, pointing to a large array of mutations that are unique to the USA300 lineage (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the DBGWAS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "b7c70793-1ff9-4777-b56f-b6f944f12325",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C19",
+      "claim": "There was strong linkage between the k-mers that were enriched in USA300 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a strong linkage between the k-mers that were enriched in USA300 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the linkage disequilibrium analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "d0eb71c4-8635-48d0-bb25-ff7092013b48",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C20",
+      "claim": "K-mers that were 1.4 million base pairs away still had r2 over 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, even k-mers that were 1.4 million base pairs away (the maximum distance between two sites in the circular 2.8 million base pairs long S. aureus genome) still had r2 over 0.9 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the linkage disequilibrium analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "f7347374-c7cf-4972-82ad-5f400a0bbc66",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C21",
+      "claim": "61 SNPs within ORFs were enriched in USA300 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 61 SNPs within ORFs that were enriched in USA300 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "03621414-777d-4542-aff0-ebb1028afe21",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C22",
+      "claim": "Of the 36 enriched ORF mutations, only the Asp75Tyr mutation in the cap5E gene was found in other strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 36 enriched ORF mutations only the Asp75Tyr mutation in the cap5E gene, which was previously shown to ablate capsule production in USA300 strains, was found in other strains (Figure 3C; Boyle-Vavra et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the position-specific entropy analysis with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "02192877-9f77-4726-8410-e3dd0878fef5",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C23",
+      "claim": "The Asp75Tyr mutation in cap5E was previously shown to ablate capsule production in USA300 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 36 enriched ORF mutations only the Asp75Tyr mutation in the cap5E gene, which was previously shown to ablate capsule production in USA300 strains, was found in other strains (Figure 3C; Boyle-Vavra et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "12449d63-4440-4bf3-a66b-c360e91af372",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C24",
+      "claim": "Mutations within ORFs in USA300 strains are likely de novo mutations and are not acquired through horizontal gene transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data suggest that mutations within ORFs in USA300 strains are likely de novo mutations and are not acquired through horizontal gene transfer though many of these mutations have occurred in hotspot regions (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the entropy analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "06dc7ebf-aef5-432f-bd3c-7132c243a445",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C25",
+      "claim": "291 non-USA300 strains and 379 USA300 samples were used to create a single reconstruction of TRN across CC8 using ICA.",
+      "claim_type": "EXPLICIT",
+      "source": "After stringent QC/QA and curation, 291 non-USA300 strains (e.g. Newman, NCTC8325) and 379 USA300 (e.g. LAC, TCH1516) samples were used to create a single reconstruction of TRN across CC8 using ICA (Sastry et al., 2019; Sastry et al., 2021; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used for ICA analysis with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "bab0bc21-306a-4714-af4a-e88d13871c37",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C26",
+      "claim": "Two iModulons captured a large number of genes with different expression levels in the non-USA300 and USA300 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In our reconstruction, two iModulons captured a large number of genes with different expression levels in the non-USA300 and USA300 strains (Figure 4A, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the ICA analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "e9a2d563-6cac-4d50-a0e1-d0816582ddb7",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C27",
+      "claim": "Most of the genes in the strain-specific iModulons belonged to mobile elements associated with USA300 strains such as ACME, SCCmec, Phi-PVL.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the genes in the strain-specific iModulons belonged to mobile elements associated with USA300 strains such as ACME, SCCmec, Phi-PVL, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the iModulon analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "cf1b56b8-0ed0-4eff-bd2b-eaee14ff8c3a",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C28",
+      "claim": "The strain-specific iModulons also contained core genes that are present in both strains, pointing to possible differences in gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the iModulons also contained core genes that are present in both strains, pointing to possible differences in gene regulation (Figure 4B, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the iModulon analysis with inference about regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "69da9159-77d9-429b-bfea-f069b222523f",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C29",
+      "claim": "10 core genes with mutations in the ORF or in the regulatory region were also enriched in the strain-specific iModulon.",
+      "claim_type": "EXPLICIT",
+      "source": "10 core genes \u2013 including isdH, argR1, and araC family regulator \u2013 with mutations in the ORF or in the regulatory region were also enriched in the strain-specific iModulon (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from mapping DBGWAS mutations to iModulon genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "325151c2-d57d-4371-84e0-c28a1f73567b",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C30",
+      "claim": "The isdH gene showed distinct strain-specific expression levels and had enriched k-mers mapped to the upstream regulatory region.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these genes, gene isdH, encoding a heme scavenger molecule showed distinct strain-specific expression levels and had enriched k-mers that are mapped to the upstream regulatory region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the combined DBGWAS and iModulon analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "8b7834f2-ec54-4479-9ba5-0aec4f44c0c6",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C31",
+      "claim": "Comparisons of the isdH regulatory region showed a 38-bp deletion in the 5\u2032 untranslated region containing a transcription factor Fur-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons showed a 38-bp deletion in the 5\u2032 untranslated region containing a transcription factor Fur-binding site (q-val = 0.033e\u22124) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the regulatory region comparison with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "ef6647a8-1337-40eb-b9c2-37a4615553af",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C32",
+      "claim": "The 38-bp deletion was detected in all of the 1385 USA300 genomes, but only present in 95 of the 589 non-USA300 genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This deletion was detected in all of the 1385 USA300 genomes, but only present in 95 of the 589 non-USA300 genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the genome-wide analysis of the deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "d219113b-8ea8-47a4-85e6-a4a91357adc7",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C33",
+      "claim": "Fur is a repressor that blocks expression in presence of iron concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "As Fur is a repressor that blocks expression in presence of iron concentration, this deletion in the Fur-binding site may be responsible for the general increase in isdH expression observed in USA300 samples (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Fur function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "72dcc0df-5a5d-47fe-acb7-8aef913a9b84",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C34",
+      "claim": "The deletion in the Fur-binding site may be responsible for the general increase in isdH expression observed in USA300 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As Fur is a repressor that blocks expression in presence of iron concentration, this deletion in the Fur-binding site may be responsible for the general increase in isdH expression observed in USA300 samples (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the deletion and observed expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "53cf2d1a-f7b7-4a1b-b460-fea4386c0e66",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C35",
+      "claim": "A second mutation upstream of the predicted \u201335 binding site was also enriched in USA300.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a second mutation upstream of the predicted \u201335 binding site that was also enriched in USA300.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the regulatory region analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "47f7e588-d7a7-489e-9221-70e1669e8062",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C36",
+      "claim": "The MW2 strain did not have the 38 bp deletion, but contained the exact upstream A->T mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while the MW2 strain did not have the 38 bp deletion, it contained the exact upstream A->T mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "08666441-9eac-4954-b883-42a2dca11037",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C37",
+      "claim": "The Fur-binding motif was detected in the 100-bp upstream region of isdH in all but 21 strains out of 3515 non-CC8 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched for Fur-binding motif in the 100-bp upstream regions from 3515 non-CC8 strains spanning multiple clonal complexes (Figure 2\u2014figure supplement 1). We detected the binding motif in all but 21 strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the motif search analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "5f59ffac-e081-40ff-9794-8c39ccabd5b4",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C38",
+      "claim": "IsdH is a surface receptor that binds to human hemoglobin, causing it to release the heme.",
+      "claim_type": "EXPLICIT",
+      "source": "This gene encodes IsdH, a surface receptor that binds to human hemoglobin, causing it to release the heme (Ellis-Guardiola et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "737c6287-288e-47c5-9747-c6feeb0f31e3",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C39",
+      "claim": "S. aureus prefers heme as its iron source over transferrin-bound iron.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite having many different pathways for obtaining iron, it has been observed that S. aureus prefers heme as its iron source over transferrin-bound iron (Skaar et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "79305165-749e-4f3d-a238-ac07674b0347",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C40",
+      "claim": "2033 S. aureus genomes were downloaded for analysis and six were excluded with genome length of less than 2.5 million base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We downloaded 2033 S. aureus genomes for analysis and excluded six of them with genome length of less than 2.5 million base pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the initial dataset and filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "07a6afed-81d4-438c-ace9-84c6c79d3de1",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C41",
+      "claim": "The phylogenetic tree was reconstructed using 24881 core SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the pipeline, the contigs and sequences were aligned to the reference TCH1516 genome NC_010079 and plasmids NC_012417, NC_010063 (Highlander et al., 2007) and 24881 core SNPs at were calculated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method and result of phylogenetic tree reconstruction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "d5718084-0f10-45d6-8893-da15e4726869",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C42",
+      "claim": "SCCmec cassettes were detected in 1588 genomes of which 1358 were SCCmec IVa positive.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected SCCmec cassettes in 1588 genomes of which 1358 were SCCmec IVa positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the SCCmec detection analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c8c1f97d-9871-49f4-a5ef-d2bbc968e891",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C43",
+      "claim": "1431 PVL positive genomes were found using BLASTn search.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found 1431 PVL positive genomes using BLASTn search with PVL encoding genes from USA300 TCH1516 (USA300HOU_RS07645, USA300HOU_RS07650) as reference (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the PVL detection analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "6b36c828-9038-47ae-9c98-8b9dc1a856e3",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C44",
+      "claim": "The final ICA model was built with 270 components as input, 148 of which were determined to be robust components.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this heuristic, the final model was built with 270 components as input, 148 of which were determined to be robust components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameters of the final ICA model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "8676e1ed-c0b6-4338-9328-971237d82ef3",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C45",
+      "claim": "Whole-genome comparisons have enabled rapid characterization of genetic basis for antibiotic resistance, increased virulence, host specificity, and altered metabolic capabilities in S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "In Staphylococcus aureus alone, whole-genome comparisons have enabled rapid characterization of genetic basis for antibiotic resistance, increased virulence, host specificity, and altered metabolic capabilities (Young et al., 2019; Bosi et al., 2016; Choudhary et al., 2018; Correction for Copin, 2019; Krishna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c61f6387-2e51-4223-a319-3ef8d914558e",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C46",
+      "claim": "Genome-wide linkage disequilibrium and strong population structure currently limit the differentiation of causative alleles from genetically linked ones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genome-wide linkage disequilibrium and strong population structure currently limit the differentiation of causative alleles from genetically linked ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "dd6a0f5f-659a-47c2-ace2-1d4df4e176ca",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C47",
+      "claim": "Methods like bugwas address issues of linkage disequilibrium for single, recurring phenotypes like antibiotic resistance by calculating lineage level associations.",
+      "claim_type": "EXPLICIT",
+      "source": "By calculating lineage level associations, methods like bugwas address these issues for single, recurring phenotypes like antibiotic resistance (Earle et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work describing the bugwas method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "770a623c-e1b5-4fa9-97c3-e0b737193b41",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C48",
+      "claim": "Studies of emerging strains often focus on gene-level analysis such as acquisition of mobile genetic elements or loss of gene function as their effect on phenotype is easier to determine than that of point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to this limitation, studies of emerging strains often focus on gene-level analysis such as acquisition of mobile genetic elements or loss of gene function as their effect on phenotype is easier to determine than that of point mutations (Thurlow et al., 2012; Boyle-Vavra et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "ca2cbf92-3c44-4e29-8752-134858dc78f3",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C49",
+      "claim": "ICA-based reconstruction of the TRN shows both the static gene\u2013regulator interaction and the dynamic activity of these interactions in a sample-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "By factoring the RNA-sequencing data into a series of signals and their activities, the ICA-based reconstruction of the TRN shows both the static gene\u2013regulator interaction and the dynamic activity of these interactions in a sample-specific manner (Sastry et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation describing the ICA method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "63971b54-9b9b-4a95-945f-27ccf133081a",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C50",
+      "claim": "ICA outputs signals associated with strain-specific changes in gene regulation in addition to signals associated with gene regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in addition to signals associated with gene regulators, ICA also outputs signals associated with strain-specific changes in gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of the ICA method when applied to multi-strain data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "59aefb17-cab0-4237-aeb0-1ef420894d2b",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C51",
+      "claim": "In E. coli and S. enterica Typhimurium, multi-strain ICA has been used to calculate strain-specific iModulons that represent differences in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli and Salmonella enterica Typhimurium, multi-strain ICA has been used to calculate strain-specific iModulons that represent differences in gene expression (Sastry et al., 2019; Yuan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous applications of the method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "1cc7c3cf-e16a-482e-8880-cc4453f9ecb1",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C52",
+      "claim": "The transcriptomic analysis consisted of samples primarily from the USA300 (CC8e and CC8f) clades, the CC8a clade represented by Newman and the CC8b clade represented by NCTC8325 and its derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptomic analysis consisted of samples primarily from the USA300 (CC8e and CC8f) clades, the CC8a clade represented by Newman and the CC8b clade represented by NCTC8325 and its derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the RNA-seq dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "282f09dc-e1e3-4ebe-8c40-130403589b96",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C53",
+      "claim": "The CC8b and CC8a clades are currently undersampled due to their minimal clinical burden compared to USA300.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the CC8b and CC8a clades are currently undersampled due to its minimal clinical burden compared to USA300.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in the available data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "fd364397-b77c-44ee-b01b-92e0be50a2dd",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C54",
+      "claim": "The misalignment of RNA-sequencing samples from GWAS samples may explain the low number of hits that were enriched by both methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The misalignment of RNA-sequencing samples from GWAS samples may explain the low number of hits that were enriched by both methods when many other unique gene expression patterns have been observed in USA300 strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "d6366919-484b-49e5-938f-8fa616f6082d",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C55",
+      "claim": "Resolving the confounding effect of linkage disequilibrium inherent in emerging and clonal strains will require a new generation of modeling methods.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, resolving the confounding effect of linkage disequilibrium inherent in emerging and clonal strains will require a new generation of modeling methods (Bal et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future needs with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "b2f0a367-db61-46e2-a143-6a92c003d1d2",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C56",
+      "claim": "A metabolic allele classifier combining genome scale metabolic models with machine learning was used to estimate biochemical effects of alleles in M. tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent work with Mycobacterium tuberculosis utilized a metabolic allele classifier which combines genome scale metabolic models with machine learning to estimate biochemical effects of alleles thus mapping mutations to changes in metabolic fluxes (Kavvas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "75bfd504-f5b7-4f26-828b-fa4d5c0e805d",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C57",
+      "claim": "Advances in protein structure prediction with AlphaFold2 and RosettaFold enable predicting the effects of mutations on protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, advances in protein structure prediction with AlphaFold2 and RosettaFold puts us at the cusp of predicting the effects of mutations on protein folding (Baek et al., 2021; Jumper et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent advances in protein structure prediction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "a049abdf-4de4-464b-a353-c88654235b01",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C58",
+      "claim": "Combination of modeling techniques may prove to be the breakthrough required to advance solutions to current challenges in population genetics of emerging pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Combination of these modeling techniques may therefore prove to be the breakthrough required to advance solutions to the current challenges in population genetics of emerging pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "10c384ac-9689-4128-8b90-c8a1a49f0a07",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C59",
+      "claim": "The transcription start site in the isdH regulatory region has been experimentally confirmed in the MW2 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we included MW2 (CC1 CA-MRSA) as the transcription start site in the region has been experimentally confirmed in this strain (Prados et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "33792cd8-b14c-4670-a5d3-1c0acc524486",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C60",
+      "claim": "All other base pairs in the isdH regulatory region were perfectly matched between all the reference genomes except for the identified mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "All other base pairs in the region were perfectly matched in between all the reference genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "e7456a0e-209a-4402-9150-4747711f24d9",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C61",
+      "claim": "The combination of evidence from genetic and transcriptomic analysis suggests that regulation of isdH is altered in USA300 strains compared to its non-USA300 progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of evidence from genetic and transcriptomic analysis suggests that regulation of isdH is altered in USA300 strains compared to its non-USA300 progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of evidence from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "316c5401-128b-4b57-8915-90be0a6d390b",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C62",
+      "claim": "The absence of Fur-binding site upstream of isdH gene is prevalent only in the USA300 lineage among CC8 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "As with many point mutations detected in our analysis, the absence of Fur-binding site upstream of isdH gene is prevalent only in the USA300 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide analysis of the deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "4cf64312-4966-4193-8b10-e89e08578498",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C63",
+      "claim": "Of the 21 non-CC8 strains with no detectable Fur-binding sites upstream of isdH, 6 belonged to ST72 out of 28 total from this type.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 21 strains with no detectable Fur-binding sites, 6 belonged to ST72 (out of 28 total from this type) and 6 had uncharacterized multilocus sequence type (MLST).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the motif search analysis across non-CC8 strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "d56fb98f-d0a7-4fd8-80a6-5e661b0a4c22",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C64",
+      "claim": "IsdH is part of an arsenal of S. aureus iron sequestration proteins including Staphyloferrins and ferrous iron transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "It is part of an arsenal of S. aureus iron sequestration proteins including Staphyloferrins and ferrous iron transporters that it uses to compete with the host for essential iron (van Dijk et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "a838dfc6-fa74-4929-85e5-a6814f5d2b83",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C65",
+      "claim": "USA300 strains with the deleted Fur-binding site showed general increase in isdH expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "In congruence with this observation, we also found that USA300 strains with the deleted Fur-binding site showed general increase in isdH expression level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "f11e5f86-de00-4553-bbf8-b057df7495bb",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C66",
+      "claim": "Combining GWAS with large-scale transcriptomic modeling was able to predict potential causal mutations contributing to the increased clinical burden of the USA300 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining GWAS with large-scale transcriptomic modeling was therefore able to predict potential causal mutations contributing to the increased clinical burden of the USA300 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the combined approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "0338e3d3-cee8-482f-a5dd-80005e602bc2",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C67",
+      "claim": "The current analysis utilized available DNA- and RNA-sequencing data and the methods used are scalable to the rapidly growing number of data in public repositories.",
+      "claim_type": "EXPLICIT",
+      "source": "The current analysis utilized the available DNA- and RNA-sequencing data and the methods used here are scalable to the rapidly growing number of data in the public repositories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a property of the methods used.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "0f813376-4094-4746-8044-12b5408f5e40",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C68",
+      "claim": "With greater scale, more granular insight into subclade-specific differences can be obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, with the greater scale, we can get more granular insight into subclade-specific differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future potential with more data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "170e3dc6-d4e0-4716-a78d-94fbcd29cd92",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C69",
+      "claim": "For 28 of the USA300-enriched mutations, a peak in entropy was present in sequences from other clades within 71 MSA positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite not having any perfect matches outside of the cap5E mutation, we found that for 28 of the mutations, a peak was present in sequences from other clades within 71 MSA positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the position-specific entropy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c9f87b46-7666-4428-91e8-36b29346a931",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C70",
+      "claim": "Many USA300 ORF mutations have occurred in hotspot regions despite being de novo mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data suggest that mutations within ORFs in USA300 strains are likely de novo mutations and are not acquired through horizontal gene transfer though many of these mutations have occurred in hotspot regions (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the entropy analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "87e9f7e1-bfc4-4fbc-a113-9a0989ca4f29",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C71",
+      "claim": "DBGWAS recovered components associated with previously described markers of USA300 strains including mecA (SCCmec IVa), arcA (ACME), cap5e mutation, seq, sek, and Phi-PVL.",
+      "claim_type": "EXPLICIT",
+      "source": "De Bruijn graph genome-wide association study (DBGWAS) recovers components associated with USA300 previously described markers of USA300 strains including mecA (SCCmec IVa), arcA (ACME), cap5e mutation, seq, sek, and Phi-PVL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2A and describes validation of the DBGWAS approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c6356531-d1a5-491e-85d0-a239e516b7ca",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C72",
+      "claim": "The USA300 root was placed at the last node where >90% of the strains within the subclade represented by the daughter nodes were SCCmec IVa and PVL positive.",
+      "claim_type": "EXPLICIT",
+      "source": "The root was placed at the last node where >90% of the strains within the subclade represented by the daughter nodes were SCCmec IVa and PVL positive (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the criterion used for placing the USA300 root.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "0ce17181-7f85-414c-834b-75dbd35b334d",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C73",
+      "claim": "Root finding with the phylogenetic tree traversal procedure is not dependent on the starting USA300 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "As phylogenetic trees are nested, root finding with this procedure is not dependent on the starting USA300 strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the method used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "15a54654-308e-40f0-ac2a-e707c048b271",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C74",
+      "claim": "The same USA300 root was identified when the procedure was initialized with FPR3757 instead of TCH1516.",
+      "claim_type": "EXPLICIT",
+      "source": "Same root was identified when the procedure was initialized with another well-known USA300 reference strain FPR3757 (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validates the robustness of the root-finding procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "6e755a98-58ca-4a18-b01b-af0b2049c071",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C75",
+      "claim": "A larger number of mutations were found within the ORFs than in the neighboring regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a larger number of mutations within the ORFs, indicating the presence of greater genetic variation in the ORFs than in the neighboring regulatory regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mutation survey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "03442e31-ac59-45e2-90a9-b3a873a6bf6d",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C76",
+      "claim": "Each PATRIC protein family comprised 2000\u201316,000 unique sequences spanning dozens of clades.",
+      "claim_type": "EXPLICIT",
+      "source": "After filtering, each protein family comprised 2000\u201316,000 unique sequences and the strains from which the amino acid sequences were derived spanned dozens of clades allowing for broad comparisons (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the dataset used for the entropy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "fb1185b3-45df-48f5-9138-342ee5aeea4c",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C77",
+      "claim": "ST239 sequences were removed from the analysis as it is thought to have emerged from large-scale recombination of ST8 and ST30 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we removed sequences associated with ST239 as it is thought to have emerged from large-scale recombination of ST8 and ST30 strains (Robinson and Enright, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and describes a filtering step.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "415f821d-ff9e-4267-9037-53b59d5461f3",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C78",
+      "claim": "Allelic entropy at a given amino acid position is a function of the number of unique amino acids found in that position and the frequency of the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Allelic entropy at a given amino acid position is a function of the number of unique amino acids found in that position and the frequency of the mutation (Hyun et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation describing the method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "971d7204-cf8e-4a95-ad88-cb8596521ef9",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "claim_id": "C79",
+      "claim": "Positions where all queried sequences have the same amino acid have low entropy, while positions that have frequent amino acid substitutions have high entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Positions where all queried sequences have the same amino acid have low entropy, while positions that have frequent amino acid substitutions (hotspots) have high entropy (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the interpretation of the entropy measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4101f6ba-635f-4837-8d12-c60caf8b48a1",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors characterized the CC8 pangenome from 2027 S. aureus genomes, identifying 19,176 gene clusters with 2,291 core genes, 931 accessory genes, and 15,954 rare genes. The pangenome was determined to be closed, indicating good gene-level coverage of CC8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C40 provide consistent quantitative data from pangenomic analysis with appropriate filtering criteria. The closed pangenome conclusion (C14) is supported by Figure 1A showing saturation, and the methods describe standard pangenome analysis procedures with validation by Roary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "a11a1000-f190-4e6f-908c-1a70e2f532bb",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors classified 1,449 genomes as USA300 and 589 as non-USA300 using genetic markers (SCCmec IVa and PVL) combined with phylogenetic tree traversal. The classification method was validated by showing consistent results when initialized from different reference strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C42-C43, and C72-C74 describe a systematic classification approach with clear criteria (>90% SCCmec IVa and PVL positive) and validation. The method's robustness is demonstrated by obtaining the same USA300 root when starting from different reference strains (TCH1516 vs FPR3757).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "128829de-2ba2-40da-996e-0ecb9159eadf",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DBGWAS identified 149 components associated with 137 unique genes enriched in USA300 strains, including known markers such as mecA, ACME, cap5E mutation, and PVL, validating the approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18 and C71 report DBGWAS results with specific quantitative findings. The recovery of previously known USA300 markers (C71) provides internal validation of the method, and the results are visualized in Figure 2A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "3c24f6c7-8775-42ae-a3d2-40c024f7bd43",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors found extreme genome-wide linkage disequilibrium in USA300 strains, with k-mers separated by up to 1.4 million base pairs showing r\u00b2 > 0.9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 describe linkage disequilibrium analysis with specific quantitative results shown in Figure 3A. The finding of high r\u00b2 values even at maximum genomic distances is striking and well-documented, representing a key challenge for identifying causal mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "2107b865-20a3-4132-bc7d-1733bfed8e8e",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Position-specific entropy analysis of 61 USA300-enriched SNPs in ORFs revealed that only the cap5E Asp75Tyr mutation was found in other strains, while 28 mutations occurred near hotspot regions. The authors conclude that most USA300 ORF mutations are de novo rather than horizontally acquired.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C69-C70 describe entropy analysis using 2,000-16,000 sequences per protein family from multiple clades (C76). The methodology is well-described (C78-C79), and the finding that only cap5E mutation (C22-C23) shows homoplasy is clearly stated. However, the conclusion about de novo origin (C24, C70) is somewhat inferential since lack of homoplasy doesn't definitively exclude horizontal transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "53e0478e-4524-47fd-bae3-bf976fce9061",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors reconstructed a transcriptional regulatory network using ICA on 670 RNA-seq samples (291 non-USA300, 379 USA300), generating 148 robust iModulons from 270 input components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C44 describe the ICA dataset and model parameters with specific numbers. The methods section provides detailed QC/QA procedures and the OptICA approach for determining optimal component numbers, supporting the robustness of the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c8687da3-f0bb-4e17-8458-4f619c6b2082",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ICA identified two strain-specific iModulons containing genes with differential expression between USA300 and non-USA300 strains. While most genes belonged to mobile genetic elements, the iModulons also contained core genes suggesting regulatory differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 describe ICA results shown in Figure 4A and supplementary figures. The finding that strain-specific iModulons contain both mobile elements (expected) and core genes (more interesting) is clearly documented and represents a key observation for the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Integration of DBGWAS and ICA identified 10 core genes with both enriched mutations and strain-specific expression. The isdH gene showed a 38-bp deletion containing a Fur-binding site (q-val = 0.033e\u207b\u2074) present in all 1,385 USA300 genomes but only 95 of 589 non-USA300 genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 describe the integration of genomic and transcriptomic approaches with specific quantitative results. The 38-bp deletion is well-characterized with statistical support (C31) and clear prevalence data (C32). The sequence conservation outside the deletion (C60) strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "b4979255-4de0-478b-a910-420ab181bd66",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The deletion of the Fur repressor-binding site in isdH regulatory region is associated with increased isdH expression in USA300 strains, consistent with loss of iron-dependent repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34, C6, and C65 connect the genetic deletion to expression changes. The mechanistic link through Fur repression (C33, established knowledge) and observed expression increase (C34, C65, shown in Figure 4 supplement 1) provide converging evidence. However, the causal relationship remains inferential without experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c8e0bc18-3090-4af9-b10a-b2fbe77c8d09",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A second mutation upstream of the -35 binding site was enriched in USA300, and interestingly, the MW2 strain (CC1) contained this same A\u2192T mutation despite lacking the 38-bp deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 describe an additional mutation with an interesting observation about MW2. The inclusion of MW2 as a reference is justified (C59) because its transcription start site was experimentally confirmed. This finding suggests potential convergent evolution or independent regulatory changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "4bbfb883-f632-45b6-aa8b-6b59f6baffc4",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Fur-binding site deletion is highly specific to USA300 within CC8. Among 3,515 non-CC8 strains, only 21 lacked the Fur-binding motif, with 6 belonging to ST72 and others distributed across various sequence types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C62-C63 describe motif search results across a large dataset of non-CC8 strains. The finding that the deletion is nearly universal outside USA300 (only 21/3,515 non-CC8 strains lack it) strengthens the specificity of this mutation to the USA300 lineage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "303ec3fd-88d7-40ab-80ae-7ffe974d090b",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "IsdH is a surface receptor that binds human hemoglobin to release heme, and S. aureus preferentially uses heme over transferrin-bound iron as an iron source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C64 describe established knowledge about IsdH function and S. aureus iron acquisition, supported by appropriate citations. This provides biological context for why altered isdH regulation might be functionally significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "2f49d151-427f-43de-a03b-f3e4d2c7896b",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The combination of genetic and transcriptomic evidence suggests that isdH regulation is altered in USA300 strains, and the integrated GWAS-TRN approach can predict potential causal mutations contributing to USA300's clinical burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C66 represent the main conclusions of the study. The evidence from multiple approaches (DBGWAS, ICA, sequence analysis, expression data) converges on isdH as a candidate. However, the causal link to clinical burden remains speculative without functional validation or clinical correlation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "e014d5b7-4c04-427f-8bde-06055c1a024f",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Strong linkage disequilibrium from clonal propagation and low within-clade recombination rates in S. aureus confound efforts to identify causal mutations in emerging strains like USA300.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10-C11, and C46 describe well-established limitations in bacterial GWAS, supported by multiple citations. This provides the key motivation for the study's integrative approach combining genomic and transcriptomic data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "e5613fe1-47ab-400b-b560-807defed25a7",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The transcriptomic dataset was dominated by USA300 samples with undersampling of CC8a and CC8b clades, which may explain the limited overlap between DBGWAS and ICA results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 acknowledge important limitations in the study design. The imbalanced sampling (C52-C53) and its potential impact on results (C54) are honestly discussed, though this represents a significant caveat for the generalizability of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "79091f9c-e8f3-4161-82c1-44ac72d69dbc",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The methods used are scalable to growing public data repositories, and increased scale could provide more granular insights into subclade-specific differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 discuss the scalability and future potential of the approach. While C67 is reasonable given the computational nature of the methods, C68 is somewhat speculative about future improvements with more data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "486bdb64-4bc1-41fc-bbe9-c1d431f30a01",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CC8 comprises multiple subtypes with varying clinical burden, and USA300 strains carry known virulence factors including antibiotic resistance cassettes, PVL, and enhanced colonization ability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C9 provide background context supported by citations. These establish the clinical significance of USA300 and justify the study's focus on this lineage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "8e657911-5860-4a65-b070-6c0335f00009",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Whole-genome comparisons have enabled characterization of genetic basis for various S. aureus phenotypes, but current GWAS approaches have limitations for emerging strains that are often addressed by focusing on gene-level changes rather than point mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C47-C48 describe the state of the field with appropriate citations, establishing context for why the study's integrative approach is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "975a8eaf-79f9-4747-9b2e-caa388a8a99d",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "ICA-based TRN reconstruction captures both gene-regulator interactions and their sample-specific activities, and can identify strain-specific signals in addition to regulatory signals when applied to multi-strain datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 describe the ICA methodology and its application to multi-strain analysis, supported by citations to previous work in E. coli and S. enterica. This establishes the methodological foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "636a1d46-2fb6-4c2d-82c9-0a128d1d75c1",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Resolving linkage disequilibrium in clonal strains will require new modeling methods, and combining approaches like metabolic modeling, protein structure prediction, and TRN reconstruction may provide breakthroughs for population genetics of emerging pathogens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C58 are largely speculative about future directions. While C56-C57 cite recent advances in other areas, C58's claim about breakthrough potential is aspirational rather than demonstrated. These represent discussion points rather than results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "989afa76-c1ed-4da5-86b1-0aa3e0cb1482",
+      "content_id": "6d2f96a8-d5d2-436a-b776-d77f1101d312",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "A phylogenetic tree was reconstructed using 24,881 core SNPs identified by aligning genomes to the TCH1516 reference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 describes a standard phylogenetic analysis with appropriate methods (PHaME pipeline, IQ-TREE with model selection). The number of core SNPs and methods are clearly specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "421edbf9-b829-424b-b9a0-17a7d934fed3",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors characterized the CC8 pangenome from 2038 genomes, identifying 2291 core genes in a closed pangenome, and classified 1449 genomes as USA300 and 589 as non-USA300 based on phylogenetic analysis and genetic markers (SCCmec IVa, PVL).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these methodological and descriptive findings. Reviewer 2 acknowledges the study 'makes a smart use of publicly available repositories to leverage the sample size' and describes the approaches as 'elegant and state-of-the-art,' implicitly accepting these foundational analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "DBGWAS identified 137 unique genes with USA300-enriched mutations including 61 SNPs within ORFs. Most mutations appear to be de novo rather than horizontally acquired, with only the cap5E Asp75Tyr mutation found in other strains. The analysis recovered known USA300 markers validating the approach.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these GWAS findings as valid. Reviewer 2 states 'the statistical genomics approaches are elegant and state-of-the-art' and notes the study successfully identified 'new genomics markers of USA300 success.' The identification of mutations is not disputed, only their causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "5488c27b-5e64-4ed8-af06-408192b7d44d",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The study found strong genome-wide linkage disequilibrium among USA300-enriched k-mers, with r\u00b2 > 0.9 even for sites 1.4 million base pairs apart across the circular genome.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly acknowledges this finding, stating 'this analysis is heavy influenced by population structure' and noting that 'population structure is the outcome' of the analysis design. This confirms the LD finding while critiquing its implications for causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "cc0a0464-257f-48fe-bdab-8816e525cebf",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "ICA analysis of 670 RNA-seq samples identified strain-specific iModulons capturing genes with different expression levels between USA300 and non-USA300 strains, including both mobile element genes and core genes suggesting regulatory differences.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the transcriptomic analysis as valid and powerful. Reviewer 2 states 'the approach of combining large-scale genomics and transcriptomics analysis is powerful, as it allows to make some inferences on the impact of the mutations,' particularly for 'mutations in intergenic regions, whose functional impact is often uncertain.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "a82df74f-db12-4b34-b72e-81c77942f75d",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The isdH gene showed strain-specific expression and contains a 38-bp deletion in the 5' UTR that removes a Fur-binding site, present in all 1385 USA300 genomes but only 95 of 589 non-USA300 genomes. An additional upstream SNP was also identified. The Fur-binding motif is highly conserved across non-CC8 strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not dispute these observational findings about the deletion and its distribution. The editor calls these 'valuable findings' and Reviewer 2 acknowledges the study identified the deletion as 'significantly associated with the USA300 lineage and with a decreased transcription of the gene.' The data itself is accepted as solid.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "9577a254-db4a-4e31-9c39-2222b28ee416",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors infer that the 38-bp deletion removing the Fur-binding site likely led to altered isdH expression levels in USA300, with USA300 strains showing generally increased isdH expression compared to non-USA300 strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers accept the correlation between the deletion and expression changes, they express uncertainty about causality. The editor states the approach 'generated an intriguing hypothesis that should be validated experimentally,' and Reviewer 2 notes 'experimental data would have strengthened the conclusions,' indicating the mechanistic link requires validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "eac8087c-9d71-4012-b253-e5f3e71150b7",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors conclude that combining GWAS with transcriptomic modeling successfully predicted potential causal mutations (particularly in isdH regulation) contributing to USA300's increased clinical burden, demonstrating that isdH regulation is altered in USA300 compared to non-USA300 progenitors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly challenge the causal inference. Reviewer 2 states 'the main weakness of this work is that these data don't allow a casual inference on the role of isdH in driving the emergence of USA300' and notes 'it is still possible that the mutation is just a marker of USA300 success, due to other factors such as PVL, ACMI or the SCCmecIVa.' The strong population structure confounds causal claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "096dd04a-cfd1-462e-ad63-ce0996627879",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study addresses the known challenge that efforts to identify causal mutations in clonal strains like USA300 are confounded by strong linkage disequilibrium and population stratification due to clonal propagation and low within-clade recombination rates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers fully accept this as an established limitation in the field. Reviewer 2 explicitly confirms this, stating the analysis 'is heavy influenced by population structure' and noting 'by its nature this analysis' cannot distinguish causal from linked mutations because 'population structure is the outcome.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "6e24989d-3329-419b-b5df-8f064ee63b16",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about CC8 composition, USA300 characteristics (antibiotic resistance, PVL, colonization ability), IsdH function as a heme scavenger, and previous genomic studies of S. aureus.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background facts cited from literature. Reviewers do not question them and Reviewer 2 explicitly references these known factors (PVL, ACME, SCCmecIVa) when discussing alternative explanations for USA300 success.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Discussion of methodological context including limitations of existing GWAS approaches, advantages of ICA for multi-strain analysis, scalability of the methods, and speculation about future modeling approaches combining metabolic models and protein structure prediction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the methodological discussion. Reviewer 2 states the 'statistical genomics approaches are elegant and state-of-the-art and can be easily applied to other contexts or pathogens,' though notes 'the approach used is complex and not easily reproduced' and suggests comparing with simpler tools like Pyseer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "591fbd27-0618-4624-b0bb-c947510da439",
+      "content_id": "fa0c63c8-d55a-436f-93ef-a6e700b8c80a",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors acknowledge limitations including undersampling of CC8a and CC8b clades and potential misalignment between RNA-seq and GWAS samples explaining the low overlap between methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not dispute these acknowledged limitations. These represent appropriate caveats about data availability and study design that reviewers implicitly accept by not challenging them.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "379b50ea-5b4e-4d84-b4e6-52bddd13cb13",
+      "result_id": "4101f6ba-635f-4837-8d12-c60caf8b48a1"
+    },
+    {
+      "claim_id": "86bf7706-5eb8-441a-bfa2-60bfbfccea6c",
+      "result_id": "4101f6ba-635f-4837-8d12-c60caf8b48a1"
+    },
+    {
+      "claim_id": "dcdf0767-07c3-4e72-b76f-3e876b5209e1",
+      "result_id": "4101f6ba-635f-4837-8d12-c60caf8b48a1"
+    },
+    {
+      "claim_id": "977e0be6-c968-4e53-9039-4e6b6e666a50",
+      "result_id": "4101f6ba-635f-4837-8d12-c60caf8b48a1"
+    },
+    {
+      "claim_id": "79305165-749e-4f3d-a238-ac07674b0347",
+      "result_id": "4101f6ba-635f-4837-8d12-c60caf8b48a1"
+    },
+    {
+      "claim_id": "2c5e467c-6764-4c26-8389-217bc3e7d5a7",
+      "result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb"
+    },
+    {
+      "claim_id": "3e080714-62ea-428b-a1d5-f9953d81a69c",
+      "result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb"
+    },
+    {
+      "claim_id": "d5718084-0f10-45d6-8893-da15e4726869",
+      "result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb"
+    },
+    {
+      "claim_id": "c8c1f97d-9871-49f4-a5ef-d2bbc968e891",
+      "result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb"
+    },
+    {
+      "claim_id": "c6356531-d1a5-491e-85d0-a239e516b7ca",
+      "result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb"
+    },
+    {
+      "claim_id": "0ce17181-7f85-414c-834b-75dbd35b334d",
+      "result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb"
+    },
+    {
+      "claim_id": "15a54654-308e-40f0-ac2a-e707c048b271",
+      "result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb"
+    },
+    {
+      "claim_id": "b71c2dcc-aea1-4677-b993-d6a261754c88",
+      "result_id": "128829de-2ba2-40da-996e-0ecb9159eadf"
+    },
+    {
+      "claim_id": "87e9f7e1-bfc4-4fbc-a113-9a0989ca4f29",
+      "result_id": "128829de-2ba2-40da-996e-0ecb9159eadf"
+    },
+    {
+      "claim_id": "b7c70793-1ff9-4777-b56f-b6f944f12325",
+      "result_id": "3c24f6c7-8775-42ae-a3d2-40c024f7bd43"
+    },
+    {
+      "claim_id": "d0eb71c4-8635-48d0-bb25-ff7092013b48",
+      "result_id": "3c24f6c7-8775-42ae-a3d2-40c024f7bd43"
+    },
+    {
+      "claim_id": "f7347374-c7cf-4972-82ad-5f400a0bbc66",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "03621414-777d-4542-aff0-ebb1028afe21",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "02192877-9f77-4726-8410-e3dd0878fef5",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "12449d63-4440-4bf3-a66b-c360e91af372",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "170e3dc6-d4e0-4716-a78d-94fbcd29cd92",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "c9f87b46-7666-4428-91e8-36b29346a931",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "6e755a98-58ca-4a18-b01b-af0b2049c071",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "03442e31-ac59-45e2-90a9-b3a873a6bf6d",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "fb1185b3-45df-48f5-9138-342ee5aeea4c",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "415f821d-ff9e-4267-9037-53b59d5461f3",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "971d7204-cf8e-4a95-ad88-cb8596521ef9",
+      "result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e"
+    },
+    {
+      "claim_id": "06dc7ebf-aef5-432f-bd3c-7132c243a445",
+      "result_id": "53e0478e-4524-47fd-bae3-bf976fce9061"
+    },
+    {
+      "claim_id": "6b36c828-9038-47ae-9c98-8b9dc1a856e3",
+      "result_id": "53e0478e-4524-47fd-bae3-bf976fce9061"
+    },
+    {
+      "claim_id": "bab0bc21-306a-4714-af4a-e88d13871c37",
+      "result_id": "c8687da3-f0bb-4e17-8458-4f619c6b2082"
+    },
+    {
+      "claim_id": "e9a2d563-6cac-4d50-a0e1-d0816582ddb7",
+      "result_id": "c8687da3-f0bb-4e17-8458-4f619c6b2082"
+    },
+    {
+      "claim_id": "cf1b56b8-0ed0-4eff-bd2b-eaee14ff8c3a",
+      "result_id": "c8687da3-f0bb-4e17-8458-4f619c6b2082"
+    },
+    {
+      "claim_id": "69da9159-77d9-429b-bfea-f069b222523f",
+      "result_id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88"
+    },
+    {
+      "claim_id": "325151c2-d57d-4371-84e0-c28a1f73567b",
+      "result_id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88"
+    },
+    {
+      "claim_id": "8b7834f2-ec54-4479-9ba5-0aec4f44c0c6",
+      "result_id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88"
+    },
+    {
+      "claim_id": "ef6647a8-1337-40eb-b9c2-37a4615553af",
+      "result_id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88"
+    },
+    {
+      "claim_id": "cb92d598-e951-4b83-9648-4930ff2b7f1a",
+      "result_id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88"
+    },
+    {
+      "claim_id": "33792cd8-b14c-4670-a5d3-1c0acc524486",
+      "result_id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88"
+    },
+    {
+      "claim_id": "d219113b-8ea8-47a4-85e6-a4a91357adc7",
+      "result_id": "b4979255-4de0-478b-a910-420ab181bd66"
+    },
+    {
+      "claim_id": "72dcc0df-5a5d-47fe-acb7-8aef913a9b84",
+      "result_id": "b4979255-4de0-478b-a910-420ab181bd66"
+    },
+    {
+      "claim_id": "9b94a697-aa1e-41bf-b689-559201795c4b",
+      "result_id": "b4979255-4de0-478b-a910-420ab181bd66"
+    },
+    {
+      "claim_id": "a838dfc6-fa74-4929-85e5-a6814f5d2b83",
+      "result_id": "b4979255-4de0-478b-a910-420ab181bd66"
+    },
+    {
+      "claim_id": "53cf2d1a-f7b7-4a1b-b460-fea4386c0e66",
+      "result_id": "c8e0bc18-3090-4af9-b10a-b2fbe77c8d09"
+    },
+    {
+      "claim_id": "47f7e588-d7a7-489e-9221-70e1669e8062",
+      "result_id": "c8e0bc18-3090-4af9-b10a-b2fbe77c8d09"
+    },
+    {
+      "claim_id": "10c384ac-9689-4128-8b90-c8a1a49f0a07",
+      "result_id": "c8e0bc18-3090-4af9-b10a-b2fbe77c8d09"
+    },
+    {
+      "claim_id": "08666441-9eac-4954-b883-42a2dca11037",
+      "result_id": "4bbfb883-f632-45b6-aa8b-6b59f6baffc4"
+    },
+    {
+      "claim_id": "316c5401-128b-4b57-8915-90be0a6d390b",
+      "result_id": "4bbfb883-f632-45b6-aa8b-6b59f6baffc4"
+    },
+    {
+      "claim_id": "4cf64312-4966-4193-8b10-e89e08578498",
+      "result_id": "4bbfb883-f632-45b6-aa8b-6b59f6baffc4"
+    },
+    {
+      "claim_id": "5f59ffac-e081-40ff-9794-8c39ccabd5b4",
+      "result_id": "303ec3fd-88d7-40ab-80ae-7ffe974d090b"
+    },
+    {
+      "claim_id": "737c6287-288e-47c5-9747-c6feeb0f31e3",
+      "result_id": "303ec3fd-88d7-40ab-80ae-7ffe974d090b"
+    },
+    {
+      "claim_id": "d56fb98f-d0a7-4fd8-80a6-5e661b0a4c22",
+      "result_id": "303ec3fd-88d7-40ab-80ae-7ffe974d090b"
+    },
+    {
+      "claim_id": "e7456a0e-209a-4402-9150-4747711f24d9",
+      "result_id": "2f49d151-427f-43de-a03b-f3e4d2c7896b"
+    },
+    {
+      "claim_id": "f11e5f86-de00-4553-bbf8-b057df7495bb",
+      "result_id": "2f49d151-427f-43de-a03b-f3e4d2c7896b"
+    },
+    {
+      "claim_id": "c99e06ff-4c9b-41f0-aad0-7df5ce9aab34",
+      "result_id": "e014d5b7-4c04-427f-8bde-06055c1a024f"
+    },
+    {
+      "claim_id": "9d6cd4db-3e89-4d87-bedc-73bd52cc8947",
+      "result_id": "e014d5b7-4c04-427f-8bde-06055c1a024f"
+    },
+    {
+      "claim_id": "6121a44b-2773-4d81-a7ff-f47f560d8975",
+      "result_id": "e014d5b7-4c04-427f-8bde-06055c1a024f"
+    },
+    {
+      "claim_id": "c61f6387-2e51-4223-a319-3ef8d914558e",
+      "result_id": "e014d5b7-4c04-427f-8bde-06055c1a024f"
+    },
+    {
+      "claim_id": "1cc7c3cf-e16a-482e-8880-cc4453f9ecb1",
+      "result_id": "e5613fe1-47ab-400b-b560-807defed25a7"
+    },
+    {
+      "claim_id": "282f09dc-e1e3-4ebe-8c40-130403589b96",
+      "result_id": "e5613fe1-47ab-400b-b560-807defed25a7"
+    },
+    {
+      "claim_id": "fd364397-b77c-44ee-b01b-92e0be50a2dd",
+      "result_id": "e5613fe1-47ab-400b-b560-807defed25a7"
+    },
+    {
+      "claim_id": "0338e3d3-cee8-482f-a5dd-80005e602bc2",
+      "result_id": "79091f9c-e8f3-4161-82c1-44ac72d69dbc"
+    },
+    {
+      "claim_id": "0f813376-4094-4746-8044-12b5408f5e40",
+      "result_id": "79091f9c-e8f3-4161-82c1-44ac72d69dbc"
+    },
+    {
+      "claim_id": "389c88ad-d8c9-49ca-ba89-8864c85abe9f",
+      "result_id": "486bdb64-4bc1-41fc-bbe9-c1d431f30a01"
+    },
+    {
+      "claim_id": "ce4809f8-11f5-4e70-b267-8f407bd09edb",
+      "result_id": "486bdb64-4bc1-41fc-bbe9-c1d431f30a01"
+    },
+    {
+      "claim_id": "3e765aca-9668-4b0a-8b3a-28455a769f4b",
+      "result_id": "486bdb64-4bc1-41fc-bbe9-c1d431f30a01"
+    },
+    {
+      "claim_id": "a99fb512-2834-492a-ae8d-27778848a721",
+      "result_id": "486bdb64-4bc1-41fc-bbe9-c1d431f30a01"
+    },
+    {
+      "claim_id": "26341f21-8726-4595-a700-c002f45b0b0e",
+      "result_id": "486bdb64-4bc1-41fc-bbe9-c1d431f30a01"
+    },
+    {
+      "claim_id": "8676e1ed-c0b6-4338-9328-971237d82ef3",
+      "result_id": "8e657911-5860-4a65-b070-6c0335f00009"
+    },
+    {
+      "claim_id": "dd6a0f5f-659a-47c2-ace2-1d4df4e176ca",
+      "result_id": "8e657911-5860-4a65-b070-6c0335f00009"
+    },
+    {
+      "claim_id": "770a623c-e1b5-4fa9-97c3-e0b737193b41",
+      "result_id": "8e657911-5860-4a65-b070-6c0335f00009"
+    },
+    {
+      "claim_id": "ca2cbf92-3c44-4e29-8752-134858dc78f3",
+      "result_id": "975a8eaf-79f9-4747-9b2e-caa388a8a99d"
+    },
+    {
+      "claim_id": "63971b54-9b9b-4a95-945f-27ccf133081a",
+      "result_id": "975a8eaf-79f9-4747-9b2e-caa388a8a99d"
+    },
+    {
+      "claim_id": "59aefb17-cab0-4237-aeb0-1ef420894d2b",
+      "result_id": "975a8eaf-79f9-4747-9b2e-caa388a8a99d"
+    },
+    {
+      "claim_id": "d6366919-484b-49e5-938f-8fa616f6082d",
+      "result_id": "636a1d46-2fb6-4c2d-82c9-0a128d1d75c1"
+    },
+    {
+      "claim_id": "b2f0a367-db61-46e2-a143-6a92c003d1d2",
+      "result_id": "636a1d46-2fb6-4c2d-82c9-0a128d1d75c1"
+    },
+    {
+      "claim_id": "75bfd504-f5b7-4f26-828b-fa4d5c0e805d",
+      "result_id": "636a1d46-2fb6-4c2d-82c9-0a128d1d75c1"
+    },
+    {
+      "claim_id": "a049abdf-4de4-464b-a353-c88654235b01",
+      "result_id": "636a1d46-2fb6-4c2d-82c9-0a128d1d75c1"
+    },
+    {
+      "claim_id": "07a6afed-81d4-438c-ace9-84c6c79d3de1",
+      "result_id": "989afa76-c1ed-4da5-86b1-0aa3e0cb1482"
+    },
+    {
+      "claim_id": "379b50ea-5b4e-4d84-b4e6-52bddd13cb13",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "86bf7706-5eb8-441a-bfa2-60bfbfccea6c",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "dcdf0767-07c3-4e72-b76f-3e876b5209e1",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "977e0be6-c968-4e53-9039-4e6b6e666a50",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "2c5e467c-6764-4c26-8389-217bc3e7d5a7",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "3e080714-62ea-428b-a1d5-f9953d81a69c",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "79305165-749e-4f3d-a238-ac07674b0347",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "07a6afed-81d4-438c-ace9-84c6c79d3de1",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "d5718084-0f10-45d6-8893-da15e4726869",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "c8c1f97d-9871-49f4-a5ef-d2bbc968e891",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "c6356531-d1a5-491e-85d0-a239e516b7ca",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "0ce17181-7f85-414c-834b-75dbd35b334d",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "15a54654-308e-40f0-ac2a-e707c048b271",
+      "result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3"
+    },
+    {
+      "claim_id": "b71c2dcc-aea1-4677-b993-d6a261754c88",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "f7347374-c7cf-4972-82ad-5f400a0bbc66",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "03621414-777d-4542-aff0-ebb1028afe21",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "02192877-9f77-4726-8410-e3dd0878fef5",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "12449d63-4440-4bf3-a66b-c360e91af372",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "170e3dc6-d4e0-4716-a78d-94fbcd29cd92",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "c9f87b46-7666-4428-91e8-36b29346a931",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "87e9f7e1-bfc4-4fbc-a113-9a0989ca4f29",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "6e755a98-58ca-4a18-b01b-af0b2049c071",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "03442e31-ac59-45e2-90a9-b3a873a6bf6d",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "fb1185b3-45df-48f5-9138-342ee5aeea4c",
+      "result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2"
+    },
+    {
+      "claim_id": "b7c70793-1ff9-4777-b56f-b6f944f12325",
+      "result_id": "5488c27b-5e64-4ed8-af06-408192b7d44d"
+    },
+    {
+      "claim_id": "d0eb71c4-8635-48d0-bb25-ff7092013b48",
+      "result_id": "5488c27b-5e64-4ed8-af06-408192b7d44d"
+    },
+    {
+      "claim_id": "64ea1238-e62c-464b-9784-6916c809e674",
+      "result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf"
+    },
+    {
+      "claim_id": "06dc7ebf-aef5-432f-bd3c-7132c243a445",
+      "result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf"
+    },
+    {
+      "claim_id": "bab0bc21-306a-4714-af4a-e88d13871c37",
+      "result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf"
+    },
+    {
+      "claim_id": "e9a2d563-6cac-4d50-a0e1-d0816582ddb7",
+      "result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf"
+    },
+    {
+      "claim_id": "cf1b56b8-0ed0-4eff-bd2b-eaee14ff8c3a",
+      "result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf"
+    },
+    {
+      "claim_id": "6b36c828-9038-47ae-9c98-8b9dc1a856e3",
+      "result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf"
+    },
+    {
+      "claim_id": "1cc7c3cf-e16a-482e-8880-cc4453f9ecb1",
+      "result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf"
+    },
+    {
+      "claim_id": "cb92d598-e951-4b83-9648-4930ff2b7f1a",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "69da9159-77d9-429b-bfea-f069b222523f",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "325151c2-d57d-4371-84e0-c28a1f73567b",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "8b7834f2-ec54-4479-9ba5-0aec4f44c0c6",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "ef6647a8-1337-40eb-b9c2-37a4615553af",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "53cf2d1a-f7b7-4a1b-b460-fea4386c0e66",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "47f7e588-d7a7-489e-9221-70e1669e8062",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "08666441-9eac-4954-b883-42a2dca11037",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "33792cd8-b14c-4670-a5d3-1c0acc524486",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "316c5401-128b-4b57-8915-90be0a6d390b",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "4cf64312-4966-4193-8b10-e89e08578498",
+      "result_id": "a82df74f-db12-4b34-b72e-81c77942f75d"
+    },
+    {
+      "claim_id": "9b94a697-aa1e-41bf-b689-559201795c4b",
+      "result_id": "9577a254-db4a-4e31-9c39-2222b28ee416"
+    },
+    {
+      "claim_id": "d219113b-8ea8-47a4-85e6-a4a91357adc7",
+      "result_id": "9577a254-db4a-4e31-9c39-2222b28ee416"
+    },
+    {
+      "claim_id": "72dcc0df-5a5d-47fe-acb7-8aef913a9b84",
+      "result_id": "9577a254-db4a-4e31-9c39-2222b28ee416"
+    },
+    {
+      "claim_id": "a838dfc6-fa74-4929-85e5-a6814f5d2b83",
+      "result_id": "9577a254-db4a-4e31-9c39-2222b28ee416"
+    },
+    {
+      "claim_id": "e7456a0e-209a-4402-9150-4747711f24d9",
+      "result_id": "eac8087c-9d71-4012-b253-e5f3e71150b7"
+    },
+    {
+      "claim_id": "f11e5f86-de00-4553-bbf8-b057df7495bb",
+      "result_id": "eac8087c-9d71-4012-b253-e5f3e71150b7"
+    },
+    {
+      "claim_id": "c99e06ff-4c9b-41f0-aad0-7df5ce9aab34",
+      "result_id": "096dd04a-cfd1-462e-ad63-ce0996627879"
+    },
+    {
+      "claim_id": "9d6cd4db-3e89-4d87-bedc-73bd52cc8947",
+      "result_id": "096dd04a-cfd1-462e-ad63-ce0996627879"
+    },
+    {
+      "claim_id": "6121a44b-2773-4d81-a7ff-f47f560d8975",
+      "result_id": "096dd04a-cfd1-462e-ad63-ce0996627879"
+    },
+    {
+      "claim_id": "c61f6387-2e51-4223-a319-3ef8d914558e",
+      "result_id": "096dd04a-cfd1-462e-ad63-ce0996627879"
+    },
+    {
+      "claim_id": "389c88ad-d8c9-49ca-ba89-8864c85abe9f",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "ce4809f8-11f5-4e70-b267-8f407bd09edb",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "3e765aca-9668-4b0a-8b3a-28455a769f4b",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "a99fb512-2834-492a-ae8d-27778848a721",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "26341f21-8726-4595-a700-c002f45b0b0e",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "5f59ffac-e081-40ff-9794-8c39ccabd5b4",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "737c6287-288e-47c5-9747-c6feeb0f31e3",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "8676e1ed-c0b6-4338-9328-971237d82ef3",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "d56fb98f-d0a7-4fd8-80a6-5e661b0a4c22",
+      "result_id": "6e24989d-3329-419b-b5df-8f064ee63b16"
+    },
+    {
+      "claim_id": "dd6a0f5f-659a-47c2-ace2-1d4df4e176ca",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "770a623c-e1b5-4fa9-97c3-e0b737193b41",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "ca2cbf92-3c44-4e29-8752-134858dc78f3",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "63971b54-9b9b-4a95-945f-27ccf133081a",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "59aefb17-cab0-4237-aeb0-1ef420894d2b",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "d6366919-484b-49e5-938f-8fa616f6082d",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "b2f0a367-db61-46e2-a143-6a92c003d1d2",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "75bfd504-f5b7-4f26-828b-fa4d5c0e805d",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "a049abdf-4de4-464b-a353-c88654235b01",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "0338e3d3-cee8-482f-a5dd-80005e602bc2",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "0f813376-4094-4746-8044-12b5408f5e40",
+      "result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e"
+    },
+    {
+      "claim_id": "282f09dc-e1e3-4ebe-8c40-130403589b96",
+      "result_id": "591fbd27-0618-4624-b0bb-c947510da439"
+    },
+    {
+      "claim_id": "fd364397-b77c-44ee-b01b-92e0be50a2dd",
+      "result_id": "591fbd27-0618-4624-b0bb-c947510da439"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c1b2ef62-57d9-46ef-9ffe-d0b33ca8d3d8",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3c24f6c7-8775-42ae-a3d2-40c024f7bd43",
+      "peer_result_id": "5488c27b-5e64-4ed8-af06-408192b7d44d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on linkage disequilibrium findings (C19, C20). Both acknowledge the high LD values and their implications for population structure. OpenEval describes it as a 'key challenge for identifying causal mutations' while peer reviewers confirm 'this analysis is heavy influenced by population structure.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "58c4eab0-d332-4b71-ad72-5dd8c5be3564",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b4979255-4de0-478b-a910-420ab181bd66",
+      "peer_result_id": "9577a254-db4a-4e31-9c39-2222b28ee416",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on mechanistic causality (C33, C34, C6, C65). OpenEval rates as SUPPORTED noting 'converging evidence' but acknowledges the causal relationship 'remains inferential without experimental validation.' Peer reviewers rate as UNCERTAIN, stating the mechanistic link 'requires validation' and that 'experimental data would have strengthened the conclusions.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c27132e4-350c-47eb-b9ed-5d33c192527d",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2f49d151-427f-43de-a03b-f3e4d2c7896b",
+      "peer_result_id": "eac8087c-9d71-4012-b253-e5f3e71150b7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Major disagreement on main conclusions (C61, C66). OpenEval rates as SUPPORTED with caveat that 'causal link to clinical burden remains speculative.' Peer reviewers rate as UNSUPPORTED, explicitly stating 'these data don't allow a casual inference on the role of isdH in driving the emergence of USA300' and noting the mutation 'is still possible...just a marker of USA300 success.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "6fb0127f-f504-434e-9c0c-a1d093e952fc",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "e014d5b7-4c04-427f-8bde-06055c1a024f",
+      "peer_result_id": "096dd04a-cfd1-462e-ad63-ce0996627879",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on GWAS limitations (C3, C10, C11, C46). Both acknowledge these as well-established challenges in bacterial GWAS. OpenEval notes this provides 'key motivation for the study's integrative approach' and peer reviewers confirm the analysis 'is heavy influenced by population structure.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "fbe67587-a016-41e4-be30-19425b082a95",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "2107b865-20a3-4132-bc7d-1733bfed8e8e",
+      "peer_result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support entropy analysis and GWAS findings (C21-C24, C69-C71, C75-C77). OpenEval rates methodology as well-described and notes cap5E homoplasy finding. Peer reviewers accept GWAS results as valid, stating 'statistical genomics approaches are elegant and state-of-the-art' and the study successfully identified 'new genomics markers of USA300 success.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "4f3d9912-426d-496e-bd9b-e1d4fa81f37f",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "e5613fe1-47ab-400b-b560-807defed25a7",
+      "peer_result_id": "591fbd27-0618-4624-b0bb-c947510da439",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on study limitations (C52-C54). Both acknowledge the imbalanced sampling and its potential impact. OpenEval notes this as 'a significant caveat for the generalizability of findings' and peer reviewers implicitly accept these limitations by not challenging them.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "818245d5-eb2c-453a-9777-fac35cd02223",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "486bdb64-4bc1-41fc-bbe9-c1d431f30a01",
+      "peer_result_id": "6e24989d-3329-419b-b5df-8f064ee63b16",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background context (C1, C2, C7-C9). Both accept these as established facts about USA300 clinical significance. OpenEval notes they 'justify the study's focus on this lineage' and peer reviewers reference these known factors when discussing alternative explanations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "896349dd-1bc6-49d2-9358-d4b1bba4703d",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f44cce91-0e19-42f9-adfc-ba67bb9ecf88",
+      "peer_result_id": "a82df74f-db12-4b34-b72e-81c77942f75d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on observational findings about the deletion (C29-C32, C5, C60). OpenEval rates the 38-bp deletion as 'well-characterized with statistical support.' Peer reviewers accept these as 'valuable findings' and acknowledge the deletion is 'significantly associated with the USA300 lineage,' though both note correlation does not establish causation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "f60471e7-206d-40ca-8f33-f80f23a26e8e",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a11a1000-f190-4e6f-908c-1a70e2f532bb",
+      "peer_result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on classification methodology (C16, C17, C42, C43, C72-C74). OpenEval describes the approach as systematic with clear criteria and validation. Peer reviewers implicitly accept these foundational analyses, with Reviewer 2 describing approaches as 'elegant and state-of-the-art.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "7bd2d96d-99cd-4104-8fb0-041b988391a3",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "4101f6ba-635f-4837-8d12-c60caf8b48a1",
+      "peer_result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on pangenome analysis (C12-C15, C40). OpenEval notes consistent quantitative data with appropriate filtering and standard procedures. Peer reviewers do not question these methodological findings and acknowledge the study 'makes a smart use of publicly available repositories.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "25470cb8-3159-4327-948b-58ad6b1437fe",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "c8687da3-f0bb-4e17-8458-4f619c6b2082",
+      "peer_result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ICA results (C26-C28). OpenEval describes findings as 'clearly documented' noting strain-specific iModulons contain both mobile elements and core genes. Peer reviewers accept transcriptomic analysis as 'valid and powerful,' stating the approach 'allows to make some inferences on the impact of the mutations.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "0b22b0ae-055e-4ed4-b7c6-37d57e90246f",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "53e0478e-4524-47fd-bae3-bf976fce9061",
+      "peer_result_id": "cc0a0464-257f-48fe-bdab-8816e525cebf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ICA methodology (C25, C44). OpenEval notes detailed QC/QA procedures and OptICA approach support robustness. Peer reviewers accept the transcriptomic analysis, with Reviewer 2 stating 'the approach of combining large-scale genomics and transcriptomics analysis is powerful.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "0ce1cbea-1b26-47a3-8bf2-fc6dc8a36fd2",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "128829de-2ba2-40da-996e-0ecb9159eadf",
+      "peer_result_id": "3c1f4ba2-51d2-45c5-a4e3-6e7e17ffacc2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on DBGWAS results (C18, C71). OpenEval notes recovery of known USA300 markers provides internal validation. Peer reviewers accept these findings, stating the study identified 'new genomics markers of USA300 success' and noting 'the statistical genomics approaches are elegant and state-of-the-art.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "00a709bf-6a2c-4473-b938-3ce952eadb32",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "4bbfb883-f632-45b6-aa8b-6b59f6baffc4",
+      "peer_result_id": "a82df74f-db12-4b34-b72e-81c77942f75d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on motif search findings (C37, C62, C63). OpenEval notes the deletion is 'nearly universal outside USA300' which 'strengthens the specificity of this mutation to the USA300 lineage.' Peer reviewers do not dispute these observational findings about the deletion's distribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "c5632015-704f-4ef0-81c3-88be3cbd7ed0",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "c8e0bc18-3090-4af9-b10a-b2fbe77c8d09",
+      "peer_result_id": "a82df74f-db12-4b34-b72e-81c77942f75d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on additional mutation findings (C35, C36). OpenEval describes interesting observation about MW2 suggesting 'potential convergent evolution or independent regulatory changes.' Peer reviewers accept these observational findings without dispute.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "b6146ca9-fd9b-4a76-83dd-a5c694d80de6",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "303ec3fd-88d7-40ab-80ae-7ffe974d090b",
+      "peer_result_id": "6e24989d-3329-419b-b5df-8f064ee63b16",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background biology (C38, C39, C64). OpenEval notes these provide biological context for why altered isdH regulation might be significant. Peer reviewers accept these as established facts and explicitly reference iron acquisition factors when discussing the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "0be59b51-dbc0-4ea6-af75-96f68119cc78",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "975a8eaf-79f9-4747-9b2e-caa388a8a99d",
+      "peer_result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ICA methodology background (C49-C51). OpenEval notes this establishes methodological foundation with citations to previous work. Peer reviewers accept the methodological discussion, stating 'statistical genomics approaches are elegant and state-of-the-art.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "b7b570ec-72de-4e7a-bbc3-907887e455c9",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "8e657911-5860-4a65-b070-6c0335f00009",
+      "peer_result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on field context (C45, C47, C48). OpenEval notes these establish context for why integrative approach is needed. Peer reviewers accept the methodological discussion and acknowledge the approaches can be 'easily applied to other contexts or pathogens.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "111437c5-05a8-497c-bb2a-48cbfd2522cd",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "636a1d46-2fb6-4c2d-82c9-0a128d1d75c1",
+      "peer_result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial agreement on future directions (C55-C58, C67, C68). OpenEval rates as UNCERTAIN, noting claims are 'largely speculative' and 'aspirational rather than demonstrated.' Peer reviewers rate as SUPPORTED but note 'the approach used is complex and not easily reproduced' and suggest comparing with simpler tools.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "9d9ef665-d559-46ff-a827-09ed71e0105b",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "79091f9c-e8f3-4161-82c1-44ac72d69dbc",
+      "peer_result_id": "0bb6d637-ef6b-459c-9a88-4d71f0ba5e1e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on scalability discussion (C67, C68). OpenEval notes C67 is reasonable but C68 is 'somewhat speculative.' Peer reviewers accept the discussion while noting complexity and suggesting comparison with simpler approaches like Pyseer.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    },
+    {
+      "id": "d1cb0637-2ce7-4eef-90f3-4ff4eedee1ce",
+      "submission_id": "6416eabe-3301-48bc-89de-0af96e3304e7",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "989afa76-c1ed-4da5-86b1-0aa3e0cb1482",
+      "peer_result_id": "421edbf9-b829-424b-b9a0-17a7d934fed3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on phylogenetic analysis (C41). OpenEval describes standard phylogenetic methods with appropriate specifications. Peer reviewers do not question this methodological component, implicitly accepting it as part of the foundational analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:44:28.438273Z"
+    }
+  ]
+}

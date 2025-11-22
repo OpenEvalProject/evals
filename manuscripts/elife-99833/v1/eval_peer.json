@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors analyzed amino acid polarity patterns in the RBM region of SARS-CoV-2 variants, finding consecutive hydrophilic amino acids, increased polarity changes (NN* increased, PP* decreased), and a twofold increase in substitutions to lysine (K) and arginine (R) in later lineages, with specific nucleotide and codon position mutation patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the study provides 'valuable insight into the biological significance of SARS-CoV-2' with 'solid evidence' and praised the 'analysis on large scale data.' While one reviewer noted 'lack of clarity about the objectives,' no specific concerns were raised about these polarity and amino acid substitution findings, indicating implicit acceptance of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors found that commonly occurring mutations became fixed in viral sequences as SARS-CoV-2 evolved to Omicron, with reduced diversity of amino acid substitutions in later lineages. They correlated mutation diversity with epidemiological patterns: less diversity associated with decreased infections/deaths (periods 1 and 3), more diversity with increased cases/deaths (period 2).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer stated 'the logic of the study is also unclear' and noted 'the specific goals of the analyses in each subsection are unclear, as is how the results from these subsections are interconnected.' This suggests uncertainty about the causal interpretation linking mutation fixation patterns to infectivity and epidemiological outcomes, though the data itself was not directly challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C19",
+      "C20",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors identified a notable absence of mutations at D467 (only 7 instances out of 7,335,614 sequences), and demonstrated experimentally that D467P and D467I mutations reduced infectivity compared to wild-type. They showed these mutations disrupt salt bridges and cause structural changes from alpha helix to linear structure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted 'experimental validation on a partial set of searched mutations' as a strength and acknowledged 'solid evidence.' The specific D467 findings were not questioned, and the experimental validation was recognized positively, indicating acceptance of these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C68",
+      "C56"
+    ],
+    "result": "The authors found significant associations between specific mutations (L452R, T478K) and symptomatic infections in Delta variant, with gene expression analysis showing Delta had upregulated genes in molecular and virus infection pathways compared to Omicron. They attributed increased infectivity and severity from Alpha to Delta to abnormalities in host molecular signaling systems.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the study provides 'valuable insight' with 'solid evidence' and praised the 'very detailed analysis.' The gene expression and epidemiological correlation findings were not specifically challenged, suggesting acceptance of these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C54",
+      "C55",
+      "C57",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors demonstrated that amino acid substitutions impacted binding affinity to ACE2, with variants showing varying pDockQ scores (Delta 0.577, XBB 0.575, Beta 0.569). They concluded that binding affinity increased as lineages progressed to Omicron, resulting in increased infectivity for Delta and Omicron variants, while Beta showed high binding affinity but not high infectivity. Omicron showed lower severity but increased infectivity due to structural changes enabling better ACE2 binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer noted 'the logic of the study is also unclear' and stated 'there is no explanation in the results section about why' APESS correlates with infectivity. This critique extends to the binding affinity-infectivity relationship, as the mechanistic connection between computational binding predictions and actual infectivity is not clearly explained according to reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C58"
+    ],
+    "result": "The authors developed APESS, an evaluation model for infectivity based on four components (SCPS, PCS, MR, BPES). Alpha and Beta received lower APESS scores while Delta and Omicron variants received higher scores (>1.62 indicating high infectivity). Using GMM, they divided variants into four groups based on APESS scores, with sublineages having highest scores possessing K and R substitutions at S477.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly stated 'the authors developed an evaluation score, APESS, for analyzing viral sequences. Although they state that the APESS score correlates with viral infectivity, there is no explanation in the results section about why this is the case.' This indicates the reviewers found the model's biological rationale unclear despite acknowledging its development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C28",
+      "C29",
+      "C30",
+      "C53",
+      "C63"
+    ],
+    "result": "The authors validated APESS accuracy through in silico evaluation and in vitro viral entry assays. N437R mutation showed twofold increase in luciferase activity and viral entry, while N460K and Q493R showed decreased viral entry despite increased binding affinity (threefold for N460K and Q493R, twofold for Q493R in SPR). N460K viral entry was 10-fold higher than Q493R.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers specifically praised 'experimental validation on a partial set of searched mutations' as a strength and noted 'solid evidence.' The in vitro validation experiments were recognized positively, indicating acceptance of these validation results despite concerns about the overall model logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C49",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C79"
+    ],
+    "result": "The authors used machine learning to predict mutations with potential to become prominent, predicting approximately 440 mutations. They found APESS scores of candidate lineages with K and R substitutions were higher than existing variants, with S477K and S477R linked to increased infectivity. N460K showed ninefold increase in probability for XBB. Machine learning models showed high performance (>0.95 in Precision, Recall, F1; XGBoost accuracy >0.89, LightGBM >0.78).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the development of 'a machine learning tool AIVE to predict the infectivity of SARS-CoV-2 variants' and noted 'analysis on large scale data' as a strength. The machine learning methodology and performance metrics were not challenged, indicating acceptance of these predictive results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors created AIVE, a web-based system accessible at https://ai-ve.org that provides infectivity measurements of user-entered mutations. The system runs on HPC with 3 RTX8700 GPUs, 96 CPUs, and 256 GB memory, taking 50 minutes for analysis on RTX8000.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers specifically praised 'a user-friendly web-based analysis platform that is made public' as a strength and noted it 'would be helpful to easily analyze such data without indepth bioinformatics expertise.' The AIVE platform was positively received without concerns raised about its functionality or specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The authors validated their predictions by showing that one year later, BA.2.86, EG.5.1, and HK.3 were reported at highest frequencies (43%, 28%, 12% at Nextstrain) and had high APESS values (2.051, 1.982, 1.986 respectively).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged 'solid evidence' and did not challenge this prospective validation of the model's predictions. The real-world validation one year later supports the model's predictive capability and was implicitly accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors analyzed MERS-CoV mutations, finding consecutive hydrophilic patterns that mutations do not disrupt, with limited mutations identified (S390F, L411F, T424I, F473S, D510S, P515L, I529T, L588L, A597A). They inferred that consecutive hydrophilic amino acids contributed to MERS-CoV's low infectivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted the study provides 'valuable insight' and acknowledged 'solid evidence.' The comparative analysis with MERS-CoV was not specifically challenged, suggesting acceptance of these observations as supporting context for the SARS-CoV-2 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C78",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors established that unprecedented SARS-CoV-2 data accumulation enabled comprehensive analysis focused on the RBM region (amino acids 437-508), establishing a clear link between specific viral properties and increased infectivity. They contextualized this within the pandemic's evolution and available genomic databases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated the study 'would be of interest to many researchers' and provides 'valuable insight into the biological significance of SARS-CoV-2.' While presentation clarity was criticized, the overall premise and scope of the comprehensive analysis were accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C66",
+      "C67",
+      "C73",
+      "C74",
+      "C75",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors provided background context citing previous research on protein folding, hydrophobicity, salt bridges, coronavirus biology, deep learning methods, and comparative virology to support their analytical framework.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background claims supported by citations to established literature. Reviewers did not challenge the scientific background or theoretical framework, and one noted the 'complexity of the research' without disputing the foundational concepts.",
+    "result_type": "MINOR"
+  }
+]

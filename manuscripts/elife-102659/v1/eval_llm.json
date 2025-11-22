@@ -9,11 +9,11 @@
       "C5",
       "C6"
     ],
-    "result": "M-CSF-dependent macrophages (M-M\u00d8) exhibit higher levels of inhibitory GSK3 phosphorylation (Ser21-GSK3\u03b1 and Ser9-GSK3\u03b2) and elevated MAFB protein compared to GM-CSF-dependent macrophages (GM-M\u00d8), with no significant difference in activating phosphorylation (Tyr279-GSK3\u03b1 and Tyr216-GSK3\u03b2). This correlation suggests that higher inhibitory GSK3 phosphorylation in M-M\u00d8 is associated with increased MAFB expression.",
+    "result": "M-CSF-dependent macrophages (M-M\u00d8) exhibit higher levels of inhibitory GSK3 phosphorylation (Ser21-GSK3\u03b1 and Ser9-GSK3\u03b2) and elevated MAFB protein compared to GM-CSF-dependent macrophages (GM-M\u00d8), with no significant difference in activating phosphorylation (Tyr279-GSK3\u03b1 and Tyr216-GSK3\u03b2). This differential phosphorylation pattern correlates with higher MAFB expression in M-M\u00d8.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C6 are supported by Western blot data with appropriate statistical analysis (p<0.005 for phosphorylation, p<0.001 for MAFB). The correlation between MAFB levels and GSK3 phosphorylation is demonstrated through consistent patterns across multiple measurements. The use of GAPDH as a loading control and paired statistical tests are appropriate for the experimental design.",
+    "evaluation": "Claims C1-C6 are supported by western blot data with appropriate statistical analysis (p<0.005 for inhibitory phosphorylation, p<0.001 for MAFB, and n.s. for activating phosphorylation). The correlation between inhibitory GSK3 phosphorylation and MAFB levels is consistent with the known regulation of MAFB by GSK3-mediated degradation. The use of appropriate loading controls (GAPDH) and statistical tests strengthens the findings.",
     "result_type": "MAJOR"
   },
   {
@@ -21,246 +21,248 @@
     "claim_ids": [
       "C7",
       "C8",
-      "C61",
-      "C62"
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
     ],
-    "result": "Treatment of GM-M\u00d8 with the GSK3 inhibitor CHIR-99021 (10 \u03bcM for 24-48 hr) results in decreased activation-associated Tyr216-GSK3\u03b2 phosphorylation and robust elevation of MAFB protein levels. This effect is specific to CHIR-99021, as other GSK3 inhibitors (SB-216763, LiCl) do not produce the same reversal of the Tyr216/Ser9 GSK3\u03b2 phosphorylation ratio.",
+    "result": "GSK3 inhibition with CHIR-99021 in GM-M\u00d8 decreases activating GSK3\u03b2 phosphorylation, increases MAFB protein levels, and induces massive transcriptional reprogramming (>2000 differentially expressed genes). This reprogramming shifts the transcriptional profile toward M-M\u00d8 characteristics, including enrichment of M-M\u00d8 marker genes, pathogenic pro-fibrotic macrophage gene sets from COVID-19, and MoMac-VERSE resident macrophage signatures.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7, C8, C61, and C62 are supported by dose-response and kinetics data showing optimal conditions, along with Western blot data demonstrating significant changes (p<0.001). The comparison with other GSK3 inhibitors strengthens the specificity of the findings, though the mechanism underlying CHIR-99021's unique effect is not fully explained.",
+    "evaluation": "Claims C7-C14 are well-supported by multiple complementary approaches: western blot showing decreased Tyr216-GSK3\u03b2 phosphorylation (p<0.001) and increased MAFB, RNA-Seq with appropriate statistical thresholds (log2FC>1, adjp<0.05), and GSEA analyses showing consistent enrichment patterns. The convergence of evidence from protein, transcriptome, and gene set enrichment analyses provides strong support for the macrophage reprogramming effect.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C9",
-      "C10",
-      "C11",
-      "C12",
-      "C13"
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
     ],
-    "result": "GSK3 inhibition in GM-M\u00d8 induces massive transcriptional reprogramming with over 2000 differentially expressed genes. GSEA reveals enrichment of M-M\u00d8-specific genes, genes upregulated during monocyte-to-M-M\u00d8 differentiation, and gene sets defining pathogenic pro-fibrotic macrophages in severe COVID-19, while GM-M\u00d8-specific genes are downregulated.",
+    "result": "CHIR-99021-treated GM-M\u00d8 show enrichment of MAFB-regulated genes (by DoRoThEA and GSEA) and elevated expression of MAFB-dependent transcription factors (MAF), cell surface proteins (CD163, FOLR2), and soluble factors (CCL2, CCL18, IL-10, LGMN, SPP1), while showing decreased Activin A production.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9-C13 are supported by RNA-Seq data with appropriate statistical thresholds (log2FC>1, adjp<0.05) and GSEA analysis. The use of multiple independent gene sets from different studies (GSE68061, GSE178209, GSE145926, GSE155249, EGAS00001005634) provides robust validation. The consistency across different analytical approaches strengthens the conclusions.",
+    "evaluation": "Claims C15-C20 are supported by multiple orthogonal approaches: computational transcription factor analysis (DoRoThEA, Enrichr), GSEA with multiple MAFB-dependent gene sets, western blot validation of protein expression with statistical significance (p<0.005 to p<0.001), and ELISA measurements of secreted factors. The consistency across computational predictions, transcriptomics, and protein-level validation strengthens the conclusion that GSK3 inhibition induces a MAFB-dependent phenotypic shift.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C14",
-      "C15",
-      "C16",
-      "C17",
-      "C18",
-      "C19"
+      "C21",
+      "C22",
+      "C23",
+      "C24"
     ],
-    "result": "CHIR-GM-M\u00d8 exhibit enrichment in MAFB-regulated genes (confirmed by DoRoThEA and GSEA) and show elevated expression of MAFB-dependent transcription factors (MAF), cell surface proteins (CD163, FOLR2), and soluble factors (CCL2, CCL18, IL-10, LGMN, SPP1), while showing decreased expression of GM-M\u00d8-specific genes like INHBA and reduced Activin A production.",
+    "result": "CHIR-99021-treated GM-M\u00d8 exhibit enhanced anti-inflammatory and phagocytic functions, including increased IL-10 production upon stimulation with various inflammatory stimuli, enhanced phagocytosis of E. coli particles, improved efferocytosis, and altered metabolic parameters including reduced basal respiration and ATP production.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C14-C19 are supported by multiple complementary approaches: computational analysis (DoRoThEA, Enrichr, GSEA), Western blot data with statistical significance, and ELISA measurements. The convergence of transcriptomic and proteomic data strengthens the conclusions. The citation of prior work establishing these genes as MAFB targets provides additional validation.",
+    "evaluation": "Claims C21-C24 are supported by functional assays with appropriate statistical analysis: ELISA showing increased IL-10 under multiple stimulation conditions (p<0.05 to p<0.001), flow cytometry demonstrating enhanced phagocytosis (p<0.05) and efferocytosis (p<0.05 to p<0.005), and Seahorse bioenergetics showing metabolic changes (p<0.005). The functional validation complements the transcriptional and phenotypic data, demonstrating that GSK3 inhibition produces functionally relevant changes characteristic of M-M\u00d8.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C20",
-      "C21",
-      "C22",
-      "C23"
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
     ],
-    "result": "CHIR-GM-M\u00d8 demonstrate enhanced anti-inflammatory and phagocytic functions, including increased IL-10 production upon stimulation with inflammatory cytokines or PAMPs, increased phagocytosis of E. coli particles, enhanced efferocytosis, and altered metabolic parameters including basal respiration and ATP production.",
+    "result": "siRNA-mediated knockdown of GSK3A and/or GSK3B increases MAFB expression (with stronger effects from double knockdown) and modulates 329 genes, enriching for MAFB-dependent genes, M-M\u00d8 differentiation genes, and COVID-19 pathogenic macrophage signatures, while reducing GM-M\u00d8-specific and alveolar macrophage gene sets.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C20-C23 are supported by functional assays with appropriate statistical analysis: ELISA for IL-10 production under multiple stimulation conditions, flow cytometry for phagocytosis (p<0.05) and efferocytosis, and Seahorse bioenergetics data. The functional data complement the transcriptomic findings and demonstrate physiological relevance of the observed changes.",
+    "evaluation": "Claims C25-C31 are supported by genetic validation using siRNA knockdown, with western blot confirmation of target knockdown and MAFB upregulation, RNA-Seq showing 329 differentially expressed genes, and GSEA analyses consistent with pharmacological inhibition results. The additive effect of double knockdown (C26) and the concordance with CHIR-99021 effects strengthen the conclusion that GSK3\u03b1 and GSK3\u03b2 regulate macrophage phenotype through MAFB. This genetic approach provides important validation independent of pharmacological inhibition.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C28"
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
     ],
-    "result": "siRNA-mediated knockdown of GSK3A and/or GSK3B in GM-M\u00d8 augments MAFB expression (with stronger effects from simultaneous knockdown), modulates 329 genes, triggers enrichment of MAFB-dependent genes and M-M\u00d8 markers, enhances expression of COVID-19 pathogenic macrophage gene sets, and reduces expression of alveolar macrophage gene sets.",
+    "result": "Brief (16 hr) exposure of monocytes to CHIR-99021 increases MAFB levels and induces significant transcriptional changes (>2000 genes), enriching for MAFB-dependent genes and M-M\u00d8-specific markers (25% upregulated) while downregulating GM-M\u00d8-specific genes (30% downregulated).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C24-C28 are supported by Western blot data showing MAFB upregulation, RNA-Seq data with appropriate statistical thresholds, and GSEA analysis. The genetic approach validates the pharmacological findings with CHIR-99021, strengthening the conclusion that GSK3 regulates MAFB. The dose-dependent effect (single vs. double knockdown) provides additional mechanistic insight.",
+    "evaluation": "Claims C32-C36 are supported by western blot showing early MAFB induction (16 hr), RNA-Seq with appropriate statistical thresholds, and GSEA showing enrichment of MAFB-dependent genes. The rapid transcriptional response (16 hr) demonstrates that GSK3 inhibition can redirect monocyte differentiation early in the process. The quantitative overlap analysis (25% and 30%) provides specific evidence for the magnitude of the reprogramming effect.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C29",
-      "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34"
+      "C37",
+      "C38"
     ],
-    "result": "Brief exposure (16 hr) of monocytes to CHIR-99021 is sufficient to increase MAFB levels and induce significant transcriptional changes (>2000 genes), with enrichment of MAFB-dependent genes and M-M\u00d8-specific genes (25% upregulated) and downregulation of GM-M\u00d8-specific genes (30%). This effect is also observed in monocytes exposed to rheumatoid arthritis synovial fluid.",
+    "result": "CHIR-99021 treatment of monocytes in the presence of rheumatoid arthritis synovial fluid (RASF) enhances MAFB expression and MAFB-dependent genes (IL10, LGMN).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C34 are supported by Western blot data, RNA-Seq analysis, and GSEA showing enrichment of MAFB-dependent genes. The demonstration that GSK3 inhibition affects monocyte differentiation in both control conditions and pathological environments (RASF) extends the findings beyond fully differentiated macrophages. The statistical analysis is appropriate (p<0.01 for RASF experiments).",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C37-C38 are supported by western blot showing increased MAFB (p<0.01) and RT-PCR showing increased IL10 and LGMN expression (p<0.01) in a pathological inflammatory environment. This demonstrates that GSK3 inhibition can reprogram monocytes even in the presence of strong pro-inflammatory signals, which has therapeutic relevance. However, the sample size is limited (n=3 RASF samples), which somewhat limits generalizability.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C35",
-      "C36",
-      "C37",
-      "C38",
       "C39",
-      "C40"
-    ],
-    "result": "GSK3 inhibition in ex vivo isolated human alveolar macrophages (AM\u00d8) for 24 hr results in 865 differentially expressed genes, upregulation of COVID-19 pathogenic pro-fibrotic macrophage gene sets, reduced expression of lung-resident AM\u00d8 gene sets, higher MAFB expression, augmented secretion of Legumain and CCL2, and lower Activin A levels.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C40 are supported by RNA-Seq data from three independent AM\u00d8 isolates, GSEA analysis using multiple COVID-19 datasets, Western blot showing increased MAFB, and ELISA data. The demonstration that GSK3 inhibition reprograms primary tissue-resident macrophages ex vivo is a critical validation of the in vitro findings. However, IL-10 secretion was only observed in 2 of 3 samples, indicating some heterogeneity in primary cell responses.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R9",
-    "claim_ids": [
+      "C40",
       "C41",
       "C42",
       "C43",
       "C44"
     ],
-    "result": "Lung macrophages from severe COVID-19 patients show significantly augmented levels of phosphorylated Ser21-GSK3\u03b1 and Ser9-GSK3\u03b2, which correlate with robust enhancement of MAFB and CD163 expression, consistent with the shift from alveolar macrophages to monocyte-derived pro-fibrotic macrophages observed in severe COVID-19.",
+    "result": "GSK3 inhibition in ex vivo isolated human alveolar macrophages results in 865 differentially expressed genes, upregulating COVID-19 pathogenic pro-fibrotic macrophage gene sets while downregulating lung-resident alveolar macrophage signatures. This is accompanied by increased MAFB expression and altered secretion of Legumain, CCL2, and Activin A.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C44 are supported by immunofluorescence microscopy data from COVID-19 patient lung tissue with highly significant statistical differences (p<0.001). The correlation between inactive GSK3, MAFB, and CD163 in patient samples validates the in vitro findings and demonstrates clinical relevance. The use of CD68+ macrophages for quantification is appropriate, though the sample size (n=2 COVID-19, n=3 controls) is relatively small.",
+    "evaluation": "Claims C39-C44 are supported by RNA-Seq of primary human alveolar macrophages (n=3), GSEA showing consistent enrichment/depletion patterns, western blot showing increased MAFB, and ELISA measurements. The use of primary human tissue (ex vivo alveolar macrophages) rather than in vitro differentiated cells strengthens the physiological relevance. However, the IL-10 increase was only observed in 2 of 3 samples, indicating some heterogeneity in primary cell responses, which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Lung macrophages from severe COVID-19 patients show significantly elevated levels of inhibitory GSK3 phosphorylation (Ser21-GSK3\u03b1 and Ser9-GSK3\u03b2) that correlate with robust enhancement of MAFB and CD163 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by immunofluorescence microscopy of COVID-19 patient lung tissue (n=2 COVID-19, n=3 controls) with single-cell quantification showing highly significant increases (p<0.001 for all markers). This clinical validation demonstrates that the GSK3-MAFB axis is active in the pathological context the authors are modeling. However, the small sample size (n=2 COVID-19 patients) limits the strength of this conclusion, though the statistical significance and consistency with prior literature on COVID-19 macrophages provide support.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49"
-    ],
-    "result": "Genes upregulated by GSK3 inhibition (including MAFB-dependent genes like MAFB, IL10, LGMN, SPP1, CCL2) show higher expression in interstitial macrophages (IM\u00d8) compared to alveolar macrophages (AM\u00d8), while genes downregulated by CHIR-99021 are preferentially expressed in AM\u00d8. GSK3 inhibition in both GM-M\u00d8 and AM\u00d8, as well as GSK3A/B silencing, significantly enhances expression of MAFB-dependent IM\u00d8-specific genes while impairing AM\u00d8 gene expression.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C45-C49 are supported by re-analysis of single-cell RNA-Seq data from healthy human lungs (GSE128033), identification of 712 differentially expressed genes between IM\u00d8 and AM\u00d8, and GSEA showing consistent effects across pharmacological inhibition and genetic knockdown. The integration of single-cell data with the experimental findings provides strong evidence that GSK3 activity influences lung macrophage subset specification.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R11",
-    "claim_ids": [
+      "C49",
       "C50",
       "C51",
       "C52",
       "C53",
       "C54",
-      "C55"
+      "C55",
+      "C56"
     ],
-    "result": "GM-CSF directs monocyte-derived macrophages toward pro-inflammatory activity and alveolar macrophage phenotype and is essential for alveolar macrophage generation, while M-CSF gives rise to anti-inflammatory macrophages but promotes pro-fibrotic pathogenic macrophages in lung pathologies. Severe COVID-19 is characterized by increased monocyte-derived M-M\u00d8 and reduced tissue-resident GM-M\u00d8-like lung macrophages.",
+    "result": "GSK3 inhibition (pharmacological or genetic) shifts the gene expression profile from alveolar macrophage (AM\u00d8) toward interstitial macrophage (IM\u00d8) characteristics, with genes upregulated by GSK3 inhibition showing higher expression in IM\u00d8 and genes downregulated showing preferential AM\u00d8 expression. This effect is observed in both GM-M\u00d8 and ex vivo alveolar macrophages.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C50-C55 are supported by citations to multiple prior studies establishing these roles of GM-CSF and M-CSF in macrophage biology and COVID-19 pathology. These claims represent established knowledge in the field and provide important context for the current findings. The citations are appropriate and from peer-reviewed sources.",
+    "evaluation": "Claims C49-C56 are supported by re-analysis of published single-cell RNA-Seq data from healthy human lungs, showing differential expression patterns between AM\u00d8 and IM\u00d8 that align with GSK3 inhibition effects. GSEA analyses consistently show enrichment of IM\u00d8-specific genes and depletion of AM\u00d8-specific genes across multiple experimental systems (CHIR-GM-M\u00d8, CHIR-AM\u00d8, siGSK3A/B-GM-M\u00d8). The convergence of evidence from multiple approaches and the use of independent published datasets for validation strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "GM-CSF is essential for alveolar macrophage generation and deficiency causes pulmonary alveolar proteinosis, while M-CSF promotes pro-fibrotic pathogenic macrophages in lung pathologies including severe COVID-19, which is characterized by increased M-M\u00d8 and reduced GM-M\u00d8-like lung macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 represent established knowledge from the cited literature and provide important context for the study. The citations are appropriate and the statements accurately reflect the current understanding of macrophage biology in lung homeostasis and disease. These claims establish the biological rationale for the study but do not represent novel findings from this work.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60"
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
     ],
-    "result": "MAFB orchestrates the homeostatic and reparative transcriptional profile of human M-M\u00d8, influences IL-10 production, mediates macrophage reprogramming induced by methotrexate and LXR ligands, and is regulated through GSK3-mediated phosphorylation-induced proteasomal degradation.",
+    "result": "MAFB determines M-M\u00d8 specification and is regulated by GSK3-mediated phosphorylation-dependent proteasomal degradation. MAFB influences IL-10 production and mediates macrophage reprogramming induced by methotrexate and LXR ligands.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C56-C60 are supported by citations to prior work from the authors' group and others establishing MAFB's role in macrophage biology and its regulation by GSK3. These claims provide the mechanistic foundation for the current study's hypothesis. The citations are appropriate and represent established knowledge.",
+    "evaluation": "Claims C62-C67 represent prior work by the authors and others, providing the mechanistic foundation for the current study. The citations are appropriate and accurately represent the established literature. These claims establish the rationale for investigating GSK3 as a target for macrophage reprogramming but do not represent novel findings from this manuscript.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C63",
-      "C64",
-      "C65",
-      "C66",
       "C68"
     ],
-    "result": "PI3K\u03b3 inactivation stimulates NF\u03baB activation and promotes immunostimulatory programs, while PI3K\u03b3 inactivates GSK3 via phosphorylation of Ser9-GSK3\u03b2 and Ser21-GSK3\u03b1. GSK3 inhibitors redirect monocyte-derived dendritic cell development toward macrophage-like cells, and MAFB expression is higher in macrophages than dendritic cells. MAFB serves as a negative regulator of GM-CSF signaling.",
+    "result": "Modulating GSK3 activity could offer a viable avenue for reprogramming monocyte-derived macrophages.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C63-C68 are supported by citations to prior studies establishing these relationships. These claims provide important mechanistic context linking PI3K\u03b3 signaling to GSK3 activity and MAFB regulation, and connecting the findings to dendritic cell biology and GM-CSF signaling. The citations are appropriate.",
-    "result_type": "MINOR"
+    "evaluation": "Claim C68 represents the central hypothesis of the study, which is well-supported by the experimental results presented in the manuscript (C1-C56). The hypothesis is based on sound reasoning from established knowledge (C62-C67) and is validated by the comprehensive experimental evidence. This represents the key conceptual contribution of the work.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
-    "claim_ids": [
-      "C67"
-    ],
-    "result": "Pro-fibrotic monocyte-derived macrophages replace GM-CSF-dependent tissue-resident alveolar macrophages in severe COVID-19.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C67 is supported by citations to multiple studies characterizing macrophage populations in severe COVID-19. This claim provides critical pathological context for the therapeutic implications of the findings. The citations are appropriate and from peer-reviewed sources.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R15",
     "claim_ids": [
       "C69",
       "C70",
       "C71"
     ],
-    "result": "Monocyte-derived macrophages can acquire diverse functional states depending on the extracellular environment. The anti-inflammatory/pro-fibrotic macrophage profile is determined by MAFB, whose activity and protein levels are regulated by GSK3.",
+    "result": "Inhibiting GSK3 shifts alveolar macrophages toward interstitial macrophage gene profiles, indicating that GSK3 activation status influences lung-resident macrophage specification. The GSK3-MAFB axis represents a therapeutic target for macrophage reprogramming.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C71 represent established knowledge about macrophage plasticity and MAFB regulation that forms the conceptual foundation for the study. These claims are supported by general scientific knowledge and citations to prior work. They appropriately frame the research question.",
+    "evaluation": "Claims C69-C71 represent the major conclusions of the study, synthesizing evidence from multiple experimental approaches (C1-C56). The conclusion that GSK3 influences AM\u00d8 vs. IM\u00d8 specification is well-supported by the transcriptional data and single-cell analysis. The therapeutic potential (C71) is supported by the COVID-19 patient data (C45-C48) and the functional consequences of GSK3 inhibition. However, actual therapeutic validation would require in vivo studies, which are not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PI3K\u03b3 inactivates GSK3 via Ser9/Ser21 phosphorylation, and GSK3 inhibition may contribute to PI3K\u03b3's anti-inflammatory effects by enhancing MAFB expression. MAFB might participate in mTOR-mediated macrophage reprogramming due to GSK3-mTOR interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 represent mechanistic speculation connecting the current findings to other signaling pathways (PI3K\u03b3, mTOR). While C72 is established knowledge, C73 and C74 are inferences not directly tested in this study. The reasoning is plausible and based on known pathway interactions, but experimental validation of these connections is not provided. These represent interesting hypotheses for future work rather than demonstrated results.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C72",
-      "C73",
-      "C74",
-      "C75"
+      "C75",
+      "C76"
     ],
-    "result": "Inhibiting GSK3 in GM-M\u00d8 leads to acquisition of M-M\u00d8 characteristics including enhanced IL-10 expression, increased monocyte-recruiting factors, higher efferocytosis, and potentiation of the interstitial macrophage transcriptional signature while suppressing the alveolar macrophage gene profile.",
+    "result": "GSK3 inhibitors redirect GM-CSF+IL-4-dependent monocyte-derived dendritic cell development toward macrophage-like cells, and MAFB expression is higher in macrophages than dendritic cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C75 are summary statements from the abstract that are supported by the detailed experimental data presented in the results section (claims C20-C22, C45-C49). These high-level conclusions accurately reflect the comprehensive findings of the study.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C75-C76 represent established knowledge from cited literature that provides additional context for the role of GSK3 in myeloid cell lineage determination. The citations are appropriate and the statements accurately reflect published findings. These claims support the broader significance of GSK3 modulation in myeloid cell biology but do not represent novel findings from this work.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C76",
-      "C77"
+      "C77",
+      "C78",
+      "C79"
     ],
-    "result": "Heightened levels of inactive GSK3 and MAFB-dependent proteins are observed in severe COVID-19 patients' lung macrophages, highlighting the GSK3-MAFB axis as a therapeutic target for macrophage reprogramming.",
+    "result": "MAFB negatively regulates GM-CSF signaling, suggesting that downregulating MAFB through GSK3 modulation could redirect pathogenic macrophages toward alveolar macrophage-like profiles in COVID-19. This aligns with proposed therapeutic use of GM-CSF, which would limit MAFB-dependent pro-fibrotic factor upregulation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C76-C77 are summary statements from the abstract supported by the immunofluorescence data from patient samples (claims C41-C44). The conclusion about therapeutic targeting is a reasonable inference from the data, though actual therapeutic validation would require additional studies. The patient data provide critical translational relevance.",
-    "result_type": "MAJOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 represent a therapeutic strategy proposed based on the study findings and established knowledge. While C77 is supported by cited literature, C78 and C79 are speculative therapeutic proposals not tested in this study. The logic is sound and based on the experimental findings, but the proposed strategy (downregulating MAFB to promote AM\u00d8 phenotype) is opposite to the effects observed with GSK3 inhibition (which increases MAFB). This apparent contradiction is not fully resolved, and the therapeutic strategy would require experimental validation.",
+    "result_type": "MINOR"
   }
 ]

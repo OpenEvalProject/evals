@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "HGSOC constitutes approximately 75% of epithelial ovarian cancers and is treated with surgery and platinum-based chemotherapy. Despite initial response, recurrence rates are high and 5-year survival (~45%) has not improved substantially in three decades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide well-cited background on HGSOC epidemiology, treatment, and outcomes. All claims are supported by appropriate citations to established literature and clinical guidelines, establishing the clinical context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Previous bulk transcriptome studies identified molecular subtypes in HGSOC but did not yield novel drug targets, likely because bulk transcriptomes average signals from tumor and microenvironment, masking subtle but important transcriptional patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 establish the rationale for the study by citing limitations of prior bulk transcriptome approaches. The claims are appropriately supported by citations and represent established knowledge about bulk transcriptomics, providing clear motivation for using c-ICA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Consensus-independent component analysis (c-ICA) can decompose bulk transcriptomes into statistically independent transcriptional components (TCs), revealing both dominant and subtle patterns with activity measures for each sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 describe the c-ICA methodology with appropriate citations. This establishes the analytical approach used in the study and is well-supported by prior literature on the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study assembled a dataset of 1125 bulk transcriptomes from 32 studies, including 678 HGSOC samples, with survival data available for 541 patients and comprehensive clinicopathological data for 373 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe the data collection and preprocessing. The dataset composition is clearly documented with sample numbers and appropriate citations. The preprocessing steps are described and referenced, supporting the validity of the dataset assembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "c-ICA identified 374 independent transcriptional components from the 1125 transcriptomes, with 135 TCs capturing copy number alteration effects. Each TC showed enrichment for at least one gene set (Z-score >2), with variable numbers of enriched gene sets per TC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 present the primary c-ICA results with specific quantitative metrics. The claims are internally consistent and the statistical thresholds are clearly stated. The results are presented with appropriate detail including ranges and interquartile ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Fourteen TCs were associated with overall survival: 13 identified through univariate analysis and one additional TC (TC166) through multivariate analysis. These OS-associated TCs were enriched for diverse biological processes, with four capturing copy number alteration effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe the survival analysis results with appropriate statistical framework (FDR 5%, 80% confidence, permutation testing). The identification of 14 OS-associated TCs is clearly documented with distinction between univariate and multivariate findings, and the statistical approach appears rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Survival tree analysis stratified platinum-treated HGSOC patients into ten groups based on six OS-associated TCs, age, and stage, with good classification power (C-statistic=0.72). TC121 activity provided the most significant survival discrimination, with high TC121 activity identifying patients with shortest OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present survival tree analysis results with appropriate statistical metrics (concordance statistic, robustness statistics). The identification of TC121 as the most significant discriminator is supported by the data and figures. The classification power is reasonable for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "TC121 activity is highest in HGSOC compared to other ovarian cancer subtypes, though all subtypes contain subsets of samples with elevated TC121 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe the distribution of TC121 activity across cancer subtypes, supported by Figure 3\u2014figure supplement 2. The observation that all subtypes show some elevated TC121 activity is important for understanding the generalizability of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Three OS-associated TCs (TC166, TC247, TC76) captured copy number alteration effects at specific chromosomal regions. Higher TC166 activity associated with better OS, while higher activities of TC121, TC247, TC250, TC76, and TC146 associated with worse OS. Only TC166 validated in an independent ovarian clear cell carcinoma cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 characterize the biological basis and prognostic direction of OS-associated TCs. The chromosomal locations are documented, survival associations are clearly stated, and independent validation of TC166 is appropriately noted with statistical correction (Bonferroni). The lack of validation for other TCs in the independent cohort is an important limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The OS-associated TCs were enriched for distinct biological processes: TC166 (replication/apoptosis, chromosome 13q12-q14 containing RB1/BRCA2), TC247 (proliferation/immune activation), TC76 (replication stress), TC250 (ECM interactions), and TC146 (neurotransmitter signaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 describe the biological interpretation of OS-associated TCs based on gene set enrichment. The associations are supported by the analysis and appropriately cite established knowledge about genes in specific chromosomal regions. The biological characterizations appear consistent with the enrichment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "TC121 top genes revealed a co-functional cluster enriched for synaptic signaling, including pre-synaptic NRXN1, post-synaptic LRRTM2, neurofilament proteins, potassium ion channels (KCNC1, KCNN2, KCNIP1), and glutamate receptor signaling components (GRIN2C, SLC7A10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 characterize TC121's molecular composition through co-functionality analysis and are supported by Figure 4. The identification of synaptic signaling genes is well-documented with appropriate citations. The molecular characterization is internally consistent and represents a novel finding in HGSOC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TC121 showed high activity in neuroblastoma cell lines and glioblastoma/lower-grade glioma patient samples, but not in ovarian cancer cell lines or patient samples. TCGA's four-cluster classification did not capture high TC121 samples, but the eight-cluster set identified a cluster with elevated TC121 and TC146 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe cross-study projections supported by Figure 5 and comparison with TCGA classifications. The differential activity patterns across cancer types and the comparison with existing classifications provide important context for interpreting TC121's biological significance and novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Spatial transcriptomics showed TC121 was highly active in tumor regions of 11 ovarian cancer samples and in a subset of unannotated single cells from HGSOC patients, suggesting these cells could be neurons. Unannotated cells showed contrasting activity of different OS-associated TCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 present spatial and single-cell validation supported by Figure 6. The spatial localization to tumor regions and high activity in unannotated cells provides important evidence for TC121's biological relevance. However, the inference that unannotated cells are neurons (C61) is speculative and requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Spatial transcriptomics showed copy number TCs (TC166, TC247, TC76) were active in cancer cell regions as expected, TC250 was active in stromal regions, and TC146 showed strong inverse colocalization with TC76 (colocalization score -2.43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe spatial patterns of TC activity supported by Figure 6. The localization patterns are biologically plausible and consistent with the biological processes captured by each TC. The colocalization analysis provides additional validation of the TCs' biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "TC121 captured a clinically relevant transcriptional pattern linked to synaptic signaling not previously recognized in HGSOC, identifying 12% of patients with shortest OS. TC121 is active in tumor regions and the signal originates from cells within the tumor microenvironment, supporting the emerging role of neurons as cancer hallmark-inducing TME constituents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 synthesize the major findings about TC121. The claims are well-supported by the combination of survival analysis, molecular characterization, and spatial validation. The interpretation regarding TME origin is appropriately supported by multiple lines of evidence, though the exact cellular source requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "TC121's high activity in gliomas aligns with known neuronal presence in glioma TME where neurons form synapses with tumor cells. TC121 activity was lower in non-brain cancers with fewer TME neurons. Most cell lines showed low TC121 activity except neuroblastoma lines (likely due to retained synaptic capacity). Scattered high TC121 activity in spatial transcriptomics supports TME localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 provide mechanistic interpretation of TC121's activity patterns across cancer types and model systems. The reasoning is logical and supported by appropriate citations. The differential activity in cell lines versus patient samples and across cancer types provides strong evidence for TME origin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TC121's association with OS underscores the potential significance of synaptic signaling in HGSOC. Prior work demonstrated sympathetic innervation involves adrenergic signaling (norepinephrine binding beta-adrenergic receptors), triggering BDNF release and establishing a feed-forward loop. Increased intratumoral nerves correlate with elevated BDNF/norepinephrine, advanced stage, and shorter OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 connect the study's findings to established literature on tumor innervation. The claims are well-supported by appropriate citations and provide important biological context. However, the connection between TC121 and these specific mechanisms requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Pan-TRK inhibitors (entrectinib, larotrectinib) show promise in trials including ovarian cancer patients. A TRKB-specific inhibitor (ANA-12) exists but has not been tested in cancer trials. BDNF is prominent in 10 TCs but not TC121, suggesting TC121 represents a distinct process unrelated to BDNF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 discuss therapeutic implications and distinguish TC121 from BDNF-related processes. The therapeutic landscape is appropriately cited, and the observation that BDNF is not prominent in TC121 is an important finding that suggests a novel mechanism distinct from known BDNF-mediated tumor innervation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Sensory innervation in HGSOC is evidenced by TRPV1/\u03b2-III tubulin colocalization in patient samples and neural tracing showing sensory neurons from dorsal root and jugular-nodose ganglia extending into TME. Nociceptors are involved in tumor progression, and reducing calcitonin gene-related peptide release can improve anti-tumor immunity. TC121 may represent indirect influence via immune cell interactions promoting immunosuppressive TME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 discuss sensory innervation with appropriate citations. The connection to TC121 is speculative (C90) but reasonably inferred from the literature. The claims provide important context for potential mechanisms underlying TC121's association with survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Nociceptor influence in murine HGSOC involves substance P (SP) release, which binds NK1R and enhances proliferation in NK1R-positive cells. TAC1 and TACR1 are prominent in 15 and 2 TCs respectively, but not in TC121, and none of these TCs were associated with survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe substance P signaling with appropriate citations and distinguish it from TC121. The observation that TAC1/TACR1-containing TCs are not survival-associated further supports that TC121 represents a distinct mechanism, strengthening the novelty of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "No drugs currently target tumor innervation in ovarian cancer specifically. NK1R antagonist aprepitant inhibited metastasis in breast cancer models. Drugs targeting neuronal signaling (ifenprodil, lamotrigine, reserpine) exist, with in vitro studies showing ifenprodil inhibits HGSOC proliferation and reserpine induces apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 discuss therapeutic opportunities with appropriate citations. The claims establish that while no specific drugs target tumor innervation in ovarian cancer, existing drugs affecting neuronal signaling show promise in preclinical models, providing rationale for future therapeutic development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The study uncovered a clinically relevant TC linked to synaptic signaling not previously identified in HGSOC, potentially representing a novel cancer cell-extrinsic mechanism within the TME illustrating cancer-nerve cell interactions promoting proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 summarize the study's main conclusions. The claims are well-supported by the comprehensive analysis presented, though the mechanistic details (C103) remain speculative and require further experimental validation. The novelty and clinical relevance are appropriately established.",
+    "result_type": "MAJOR"
+  }
+]

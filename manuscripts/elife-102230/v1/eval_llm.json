@@ -11,7 +11,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C2, C6, and C7 are well-supported by connectome data (Cheong et al., 2023) and visualized in Figures 1A-C. The anatomical evidence clearly demonstrates distinct projection patterns and connectivity profiles for these two descending neuron types.",
+    "evaluation": "Claims C1, C2, C6, and C7 are well-supported by citations to published connectome studies (Braun et al., 2024; Cheong et al., 2023) and are illustrated in Figures 1A-C. The anatomical and connectome data provide strong evidence for the distinct projection patterns and synaptic targets of these two descending neuron types.",
     "result_type": "MAJOR"
   },
   {
@@ -26,7 +26,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C8-C11 are supported by electrophysiological recordings shown in Figure 1D-E. The temporal dynamics and correlation patterns between the two neuron types are clearly demonstrated through simultaneous dual recordings.",
+    "evaluation": "Claims C8-C11 are supported by electrophysiological recordings shown in Figure 1D and E. The temporal dynamics and correlation patterns between the two neuron types are clearly demonstrated in the data, establishing their distinct but coordinated roles in steering control.",
     "result_type": "MAJOR"
   },
   {
@@ -38,29 +38,29 @@
       "C15",
       "C16",
       "C17",
-      "C18"
+      "C18",
+      "C19"
     ],
     "result": "DNa01 and DNa02 firing rate increases predict large changes in rotational and sideways velocity but not forward velocity. DNa02 operates with higher gain than DNa01, with larger and biphasic steering filters compared to DNa01's monophasic filters, suggesting DNa02 produces more transient steering changes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12-C18 are well-supported by linear filter analysis shown in Figure 2A-C. The computational analysis appropriately characterizes the relationship between neural activity and behavior, with clear differences between the two neuron types. The interpretation of biphasic vs. monophasic filters (C17) is based on established signal processing principles.",
+    "evaluation": "Claims C12-C19 are supported by linear filter analysis shown in Figures 2A-E. The computational analysis of neural-behavioral relationships is methodologically sound, with appropriate normalization and statistical validation. The biphasic vs. monophasic filter distinction (C16-C18) is clearly demonstrated and correctly interpreted in terms of signal processing principles.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C19",
       "C20",
       "C21",
       "C22",
       "C23"
     ],
-    "result": "DNa02 filters produce better behavioral predictions than DNa01 filters. DNa02 fires more transiently, is recruited earlier, and has a more transient behavioral impulse response compared to DNa01, making it associated with more transient steering events.",
+    "result": "DNa02 fires more transiently than DNa01 and is recruited earlier. Even after normalizing for firing rate dynamics, the behavioral impulse response is more transient for DNa02, making it associated with more transient steering events compared to DNa01.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C19-C23 are supported by variance explained analysis (Figure 2D-E) and temporal correlation data (Figure 1D-E). The conclusion that DNa02 is associated with more transient steering events is well-justified by both the neural dynamics and the filter characteristics.",
+    "evaluation": "Claims C20-C23 synthesize findings from Figures 1D-E and 2A-B. The temporal precedence and transient nature of DNa02 activity are well-documented in the data. The normalization approach strengthens the conclusion that the transient behavioral responses are not solely due to transient neural firing patterns.",
     "result_type": "MAJOR"
   },
   {
@@ -74,7 +74,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C24-C26 are supported by the analysis shown in Figure 2F-H. The gain differences are quantified and visualized, providing clear evidence for differential functional roles of the two neuron types.",
+    "evaluation": "Claims C24-C26 are supported by data in Figures 2F-H. The gain analysis is consistent with earlier filter analysis results and provides converging evidence for functional specialization. However, the analysis would benefit from quantitative slope comparisons with statistical tests.",
     "result_type": "MAJOR"
   },
   {
@@ -89,11 +89,11 @@
       "C33",
       "C34"
     ],
-    "result": "Rotational velocity is linearly related to the right-left difference in DNa02 firing rates across the entire dynamic range, consistent during both forward and backward walking. Similar results were obtained for DNa01. Bilateral recordings allow accurate prediction of turns in both directions, suggesting turning could be driven by either ipsilateral excitation or contralateral inhibition.",
+    "result": "Rotational velocity is linearly related to the right-left difference in DNa02 firing rates across the entire dynamic range, consistent during both forward and backward walking. Similar results were obtained for DNa01. Bilateral DNa02 predictions accurately predict turns in both directions, and the neural networks presynaptic to these DNs are organized to recruit both ipsilateral excitation and contralateral inhibition.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27-C34 are well-supported by dual recording experiments shown in Figure 3. The linear relationship is demonstrated across multiple flies and behavioral contexts. The inference about ipsilateral excitation vs. contralateral inhibition (C33) is logically sound and later confirmed by connectome analysis (C34).",
+    "evaluation": "Claims C27-C34 are supported by dual recording experiments shown in Figures 3A-E and supplementary figures. The linear relationship is well-characterized with n=4 flies. The inference about ipsilateral excitation and contralateral inhibition (C33-C34) is reasonable given the bilateral recording data, though C34 is forward-looking to connectome analysis presented later.",
     "result_type": "MAJOR"
   },
   {
@@ -108,7 +108,7 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C35-C38 are supported by multiple citations establishing the role of EPG neurons and central complex connectivity. The hypothesis (C38) is reasonable given the anatomical evidence, though it requires experimental validation (provided in subsequent claims).",
+    "evaluation": "Claims C35-C38 are supported by multiple citations establishing the role of EPG neurons and central complex in steering (Seelig and Jayaraman, 2015; Giraldo et al., 2018; Green et al., 2019; and others). The anatomical connectivity to DNa02 is documented in cited studies (Hulse et al., 2021; Mussells Pires et al., 2024; Rayshubskiy et al., 2020; Westeinde et al., 2024). The hypothesis (C38) is a reasonable inference from this prior work.",
     "result_type": "MAJOR"
   },
   {
@@ -121,12 +121,12 @@
       "C43",
       "C44"
     ],
-    "result": "PEN1 neurons relay angular velocity information to EPG neurons, and micro-stimulating PEN1 causes the head direction system to register a fictive turn. The EPG bump represents working memory of heading direction and jumps to a new location upon PEN1 stimulation, with appropriate negative controls confirming specificity.",
+    "result": "PEN1 neurons relay angular velocity information to EPG neurons, and micro-stimulating them causes the head direction system to register a fictive turn. The EPG bump represents working memory of heading direction and jumps to a new location upon PEN1 stimulation, with bump jumps rarely occurring in genetic controls lacking the Gal4 transgene.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C39-C44 are supported by established knowledge of the head direction system and experimental data shown in Figure 4A-B. The negative control (C44) appropriately validates the experimental approach. The methods section provides detailed validation that ATP stimulation specifically activates PEN1 neurons.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C39-C44 describe established knowledge about the head direction system (C39-C42) supported by citations (Green et al., 2017, 2019; Seelig and Jayaraman, 2015; Turner-Evans et al., 2017) and experimental validation (C43-C44) shown in Figure 4B. The negative control (C44) is essential and properly executed.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R9",
@@ -138,11 +138,11 @@
       "C49",
       "C50"
     ],
-    "result": "Following EPG bump jumps, flies execute compensatory behavioral turns that return the bump to its initial location in 40% of trials. The direction of the compensatory turn is appropriate to return the bump via the shortest path, indicating the mechanism is sensitive to error direction.",
+    "result": "Following EPG bump jumps, flies execute compensatory behavioral turns that return the bump to its initial location in 40% of trials. The turn direction is appropriate to return the bump via the shortest path (clockwise jumps \u2192 rightward turns, counter-clockwise jumps \u2192 leftward turns), indicating the mechanism is sensitive to error direction.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C45-C50 are supported by behavioral analysis shown in Figure 4C-D. The directional specificity of compensatory turns is clearly demonstrated, and the inference about error direction sensitivity (C50) is well-justified by the data.",
+    "evaluation": "Claims C45-C50 are supported by experimental data in Figures 4C-D and are consistent with prior work (Green et al., 2019). The directional specificity of compensatory turns is well-documented. The 40% success rate (C46) indicates variable but consistent behavior. The inference about error direction sensitivity (C50) is well-supported by the data.",
     "result_type": "MAJOR"
   },
   {
@@ -154,438 +154,516 @@
       "C54",
       "C55",
       "C56",
-      "C57",
-      "C58",
-      "C59"
+      "C57"
     ],
-    "result": "DNa02 fires bursts before compensatory behavioral turns that return the EPG bump to its initial location. DNa02 activity predicts trial-to-trial variability in turn magnitude and is recruited specifically on the side predicting turn direction, not bilaterally. This demonstrates that DNa02 activity predicts magnitude and direction of steering maneuvers guided by the head direction system.",
+    "result": "DNa02 fires bursts just before compensatory behavioral turns that return the EPG bump to its initial location. The sequence is: bump jump \u2192 increased DNa02 firing on the appropriate side \u2192 steering maneuver \u2192 bump return. DNa02 predicts trial-to-trial variability in turn magnitude and is recruited specifically on the side predicting turn direction, not bilaterally.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C51-C59 are well-supported by simultaneous recordings of DNa02 activity, EPG imaging, and behavior shown in Figure 4E-H. The negative control trials (C54-C55) appropriately demonstrate specificity. The conclusion that pathways from head direction system to DNa02 are functionally strong (C59) is well-justified.",
+    "evaluation": "Claims C51-C57 are supported by data in Figures 4E-H. The temporal sequence and side-specificity of DNa02 activation are clearly demonstrated. The predictive power for trial-to-trial variability (C53) strengthens the causal interpretation. The negative control trials (C54-C55) and the inference about specificity (C56-C57) are well-supported.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C60",
-      "C61",
-      "C62",
-      "C63",
-      "C64"
+      "C58",
+      "C59",
+      "C60"
     ],
-    "result": "Fictive odor stimuli produce steering toward the stimulated antenna and asymmetric DNa02 responses with higher firing rates ipsilaterally. Lateralized stimuli often produce hyperpolarization in the contralateral DN, suggesting ipsilateral excitation is accompanied by contralateral inhibition. Appropriate negative controls confirm specificity.",
+    "result": "DNa02 activity predicts the magnitude and direction of steering maneuvers guided by the head direction system, arguing that pathways from the head direction system to DNa02 are functionally strong and recruited at appropriate times to mediate steering commands from the central complex.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C60-C64 are supported by optogenetic experiments shown in Figure 5A and supplementary figures. The inference about contralateral inhibition (C63) is reasonable given the observed hyperpolarization. Negative controls (C64) validate the experimental approach.",
+    "evaluation": "Claims C58-C60 synthesize findings from the head direction experiments. The functional strength of the pathway (C59-C60) is a reasonable inference from the predictive power and timing of DNa02 activation, though direct causal manipulation of this specific pathway would strengthen the conclusion.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C65",
-      "C66",
-      "C67",
-      "C68"
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
     ],
-    "result": "Fictive heat stimuli drive behavioral turning away from the stimulus and produce DNa02 responses with higher firing rates contralateral to the stimulus. DNa02 activity is higher ipsilateral to attractive stimuli but contralateral to aversive stimuli, indicating DNa02 encodes the laterality of the stimulus-evoked action, not the stimulus itself.",
+    "result": "Lateralized fictive odor stimuli produce steering toward the stimulated antenna and asymmetric DNa02 responses with higher firing rates ipsilaterally. Stimuli often produce contralateral hyperpolarization, suggesting ipsilateral excitation is accompanied by contralateral inhibition. Genetic controls lacking the LexA transgene show no response.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C65-C68 are supported by optogenetic experiments shown in Figure 5B. The inference that DNa02 encodes action laterality rather than stimulus laterality (C68) is well-justified by the opposite responses to attractive vs. aversive stimuli.",
+    "evaluation": "Claims C61-C65 are supported by data in Figure 5A and Figure 5\u2014figure supplement 1. The behavioral and neural responses are consistent with prior work (Borst and Heisenberg, 1982; Gaudry et al., 2013). The negative control (C65) is essential. The inference about contralateral inhibition (C64) is reasonable but would benefit from more direct evidence.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C69",
-      "C70",
-      "C71",
-      "C72"
+      "C66",
+      "C67",
+      "C68",
+      "C69"
     ],
-    "result": "DNa02 is activated about 150ms before stimulus-evoked turns and predicts trial-to-trial variability in turn magnitude, suggesting it participates in reorienting the body in response to lateralized stimuli. Similar results were obtained for DNa01.",
+    "result": "Fictive heat stimuli drive behavioral turning away from the stimulus and produce DNa02 responses with higher firing rates contralateral to the stimulus. DNa02 activity is higher ipsilateral to attractive stimuli but contralateral to aversive stimuli, encoding the laterality of the stimulus-evoked action rather than the stimulus itself.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C69-C72 are supported by temporal analysis shown in Figure 5C-D and supplementary data. The timing and predictive power of DNa02 activity support its role in stimulus-directed steering. The similar results for DNa01 (C72) suggest coordinated function.",
+    "evaluation": "Claims C66-C69 are supported by data in Figure 5B. The contrast between attractive and aversive stimulus responses (C68) is particularly important for establishing that DNa02 encodes action direction rather than stimulus location (C69). This is a key functional insight well-supported by the data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C73",
-      "C74",
-      "C75",
-      "C76"
+      "C70",
+      "C71",
+      "C72",
+      "C73"
     ],
-    "result": "DNa02 hyperpolarizes when the fly stops walking but continues responding to lateralized odors during immobility with similar stimulus-evoked changes as during walking. This suggests DNa02 contains information about latent steering drives even in quiescent behavioral states.",
+    "result": "DNa02 is activated ~150ms before stimulus-evoked turns and predicts trial-to-trial variability in turn magnitude, suggesting it participates in reorienting the body in response to lateralized stimuli. Similar results were obtained for DNa01.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C73-C76 are supported by experiments shown in Figure 6. The observation that DNa02 responds to stimuli during immobility is clearly demonstrated. The interpretation of latent steering drives (C76) is reasonable, though the authors acknowledge the possibility of undetected postural changes.",
+    "evaluation": "Claims C70-C73 are supported by data in Figures 5C-D and Figure 5\u2014figure supplement 2. The temporal precedence (C70) and predictive power (C71) support a causal role. The similarity between DNa01 and DNa02 responses (C73) suggests coordinated function, consistent with earlier findings.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C77",
-      "C78",
-      "C79",
-      "C80"
+      "C74",
+      "C75",
+      "C76",
+      "C77"
     ],
-    "result": "The inputs to DNa02 are largely non-overlapping with those of DNa01, consistent with DNa02 being recruited before DNa01 with more transient activity. Both DNs receive substantial input from central brain intrinsic neurons, but only DNa02 receives direct input from PFL3 cells.",
+    "result": "DNa02 hyperpolarizes when the fly stops walking but continues responding to lateralized odors during immobility with similar stimulus-evoked firing rate changes as during walking, suggesting DNa02 contains information about latent steering drives even in quiescent behavioral states.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C77-C80 are supported by connectome analysis shown in Figure 7A-B and supplementary figures. The anatomical data clearly demonstrate distinct input patterns for the two neuron types, consistent with their functional differences.",
+    "evaluation": "Claims C74-C77 are supported by data in Figures 6A-D. The persistence of sensory responses during immobility (C75-C76) is well-documented. The interpretation as latent steering drives (C77) is a reasonable inference, though the authors acknowledge alternative explanations (small undetected postural changes).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C81",
-      "C82"
+      "C78",
+      "C79",
+      "C80",
+      "C81"
     ],
-    "result": "PFL3 cells compare head direction signals with internal goal signals and produce directional steering commands upon mismatch. PFL3 neurons are the likely origin of turning signals in DNa02 during chemogenetic injection of error signals into the head direction system.",
+    "result": "DNa02 integrates multiple types of steering signals: internal goal-directed signals from the central complex, stimulus-directed signals from olfactory and thermosensory systems, and locomotor state signals that depolarize the cell during walking.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C81-C82 are supported by multiple citations establishing PFL3 function and by the connectivity data combined with experimental results from Figure 4. The inference about PFL3 being the origin of turning signals (C82) is well-justified by the anatomical and functional evidence.",
+    "evaluation": "Claims C78-C81 synthesize findings from multiple experiments (Figures 4-6). Each type of input is well-documented experimentally. This integration is a key finding establishing DNa02 as a convergence point for diverse steering control signals.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
+      "C82",
       "C83",
       "C84",
-      "C85",
-      "C86",
-      "C87",
-      "C88",
-      "C89",
-      "C90"
+      "C85"
     ],
-    "result": "PFL3 neurons send strong indirect projections to DNa02 via DNa03 and LAL010, which make excitatory ipsilateral connections. PFL3 also projects to cells that inhibit contralateral copies of DNa02, DNa03, and LAL010. This 'see-saw' architecture suggests central complex projections have opposite effects on the two copies of DNa02, consistent with observed lateralized stimulus responses.",
+    "result": "The inputs to DNa02 are largely non-overlapping with those of DNa01, consistent with DNa02 being recruited before DNa01 with more transient activity. Both DNs receive substantial input from central brain intrinsic neurons, but only DNa02 receives direct input from PFL3 cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C83-C90 are supported by detailed connectome analysis shown in Figure 7C-D. The see-saw model is well-justified by the anatomical connectivity pattern showing ipsilateral excitation and contralateral inhibition. The consistency with experimental observations (C90) validates the model.",
+    "evaluation": "Claims C82-C85 are supported by connectome analysis shown in Figure 7A-B and Figure 7\u2014figure supplement 1. The non-overlapping inputs (C82) explain the functional differences observed in earlier experiments. The selective PFL3 input to DNa02 (C85) is consistent with its role in head-direction-guided steering.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R18",
     "claim_ids": [
-      "C91",
-      "C92",
-      "C93",
-      "C94"
+      "C86",
+      "C87",
+      "C88"
     ],
-    "result": "Some indirect connections onto DNa02 are bilaterally symmetric. DNa03 and LAL010 receive strong bilaterally symmetric projections from PFL2, which is recruited when the fly is oriented away from its internal goal and increases steering gain without specifying direction.",
+    "result": "PFL3 cells compare head direction with internal goal signals and produce directional steering commands when there is a mismatch. PFL3 neurons are the likely origin of turning signals in DNa02 during chemogenetic injection of error signals into the head direction system.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C91-C94 are supported by connectome analysis shown in Figure 7E and citation to Westeinde et al., 2024. The bilaterally symmetric connections provide a mechanism for gain modulation independent of directional control.",
+    "evaluation": "Claims C86-C87 are supported by multiple citations (Dan et al., 2024; Goulard et al., 2021; Hulse et al., 2021; and others). The inference that PFL3 is the origin of turning signals (C88) is reasonable given the direct connectivity and the experimental results in Figure 4, though it remains an inference.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R19",
     "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
       "C95",
-      "C96",
-      "C97",
-      "C98"
+      "C96"
     ],
-    "result": "Multiple pathways connect olfactory and thermosensory peripheral cells to DNa02, with the shortest involving MBON32. MBON32 projections are organized for see-saw steering and could drive turning toward appetitive stimuli as well as away from aversive stimuli.",
+    "result": "PFL3 neurons send strong indirect projections to DNa02 via DNa03 and LAL010 (ipsilateral excitation) and via inhibitory interneurons (contralateral inhibition). This architecture suggests a 'see-saw' model of steering where excitation of one DN is accompanied by inhibition of the contralateral DN, consistent with observed responses to lateralized stimuli.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C95-C98 are supported by connectome analysis shown in Figure 7F-H. The see-saw organization of MBON32 projections is clearly demonstrated. The inference about bidirectional control (C98) is reasonable given the connectivity pattern.",
+    "evaluation": "Claims C89-C96 are supported by connectome analysis in Figure 7C-D. The see-saw model (C95) is a well-supported inference from the connectivity pattern and is consistent with experimental observations (C96). The amplification via indirect connections (C91) and contralateral suppression (C93) are reasonable functional predictions from the anatomy.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R20",
     "claim_ids": [
+      "C97",
+      "C98",
       "C99",
-      "C100",
-      "C101",
-      "C102",
-      "C103"
+      "C100"
     ],
-    "result": "Two parallel pathways connect antennal lobe projection neurons to MBON32: a plastic excitatory pathway and a fixed inhibitory pathway. Depression of the excitatory pathway could unmask inhibition, driven by aversive stimuli via dopamine neuron PPL103. This mechanism could explain how appetitive stimuli produce MBON32 excitation (driving ipsiversive turning) while aversive stimuli produce MBON32 inhibition (driving contraversive turning).",
+    "result": "Some indirect connections onto DNa02 are bilaterally symmetric. DNa03 and LAL010 receive strong bilaterally symmetric projections from PFL2, which is recruited when the fly is oriented away from its internal goal and increases steering gain without specifying turn direction.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C99-C103 are supported by established knowledge of mushroom body circuitry and multiple citations. The mechanistic model is well-reasoned and consistent with known plasticity rules in the mushroom body. However, this remains a proposed mechanism requiring direct experimental validation.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C97-C100 are supported by connectome analysis in Figure 7E and citation to Westeinde et al., 2024. The bilateral symmetry (C97-C98) contrasts with the asymmetric PFL3 connections, suggesting different functional roles. The PFL2 function (C99-C100) is from cited work.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R21",
     "claim_ids": [
-      "C104",
-      "C105",
-      "C106",
-      "C107",
-      "C108"
+      "C101",
+      "C102",
+      "C103",
+      "C104"
     ],
-    "result": "DNa02 receives abundant visual input from multiple sources: visual projection neurons from the optic lobe, projection neurons in the anterior optic tubercle downstream from LC10 cells (small object motion detectors), and via MBON32.",
+    "result": "Multiple pathways connect olfactory and thermosensory peripheral cells to DNa02, with the shortest involving mushroom body output neuron MBON32. MBON32 projections are organized for see-saw steering and could drive turning toward appetitive stimuli as well as away from aversive stimuli.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C104-C108 are supported by connectome analysis shown in Figure 7A and F, along with appropriate citations. The multiple visual input pathways are clearly documented in the connectome data.",
+    "evaluation": "Claims C101-C104 are supported by connectome analysis in Figure 7F-H and citation to Li et al., 2020. The see-saw organization (C103) is consistent with the PFL3 pattern. The bidirectional function (C104) is an inference from connectivity that is elaborated in subsequent claims.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R22",
     "claim_ids": [
-      "C109",
-      "C110",
-      "C111",
-      "C112"
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
     ],
-    "result": "DNa02 is a site of integration for many steering control pathways arranged for see-saw steering control. Many pathways involve parallel excitation and inhibition, which could specify steering direction based on E/I balance. When one pathway is plastic, changes in E/I balance could convert memory recall into bidirectional behavioral readout.",
+    "result": "Two parallel pathways connect antennal lobe projection neurons to MBON32: a plastic excitatory pathway (via Kenyon Cells) and a fixed inhibitory pathway. Depression of KC\u2192MBON32 synapses by aversive stimuli (via dopamine neuron PPL103) could unmask inhibition, allowing appetitive stimuli to excite MBON32 (driving ipsiversive turning) while aversive stimuli inhibit MBON32 (driving contraversive turning).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C109-C111 are well-supported by comprehensive connectome analysis. However, C112 is speculative about the role of plasticity in behavioral readout. While the speculation is reasonable given the connectivity patterns, it requires experimental validation and should be considered a hypothesis rather than a demonstrated result.",
+    "evaluation": "Claims C105-C109 are based on established knowledge of mushroom body circuitry (C105) and cited work on synaptic plasticity (C107: Cohn et al., 2015; Hige et al., 2015; Jacob and Waddell, 2020; Li et al., 2020; Perisse et al., 2016). The functional predictions (C108-C109) are reasonable inferences from this circuitry and are consistent with the behavioral observations in Figure 5.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R23",
     "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
       "C113",
       "C114"
     ],
-    "result": "Unilateral optogenetic activation of DNa02 evoked a small but statistically significant steering bias in the ipsilateral direction, as determined by bootstrap simulation comparing to bilateral expression controls.",
+    "result": "DNa02 receives abundant visual input from multiple sources: visual projection neurons from the optic lobe, projection neurons in the anterior optic tubercle downstream from LC10 cells (small object motion detectors), and via MBON32 which receives multimodal sensory input.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C113-C114 are supported by optogenetic experiments shown in Figure 8A-C. The statistical approach using bootstrap simulation with bilateral controls is appropriate for demonstrating significance of the small effect. The effect size is modest but the statistical validation is rigorous.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C110-C114 are supported by connectome analysis shown in Figure 7A and F, with citations to Li et al., 2020 (C111) and work on LC10 cells (C113: Hindmarsh Sten et al., 2021; Ribeiro et al., 2018; Schretter et al., 2025). The multimodal convergence onto DNa02 is well-documented.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R24",
     "claim_ids": [
       "C115",
-      "C116"
+      "C116",
+      "C117",
+      "C118"
     ],
-    "result": "Bilateral inhibition of DNa01 significantly reduced sideways speed, but surprisingly, rotational speed was unchanged when either DNa01 or DNa02 neurons were inhibited.",
+    "result": "DNa02 is a site of integration for many steering control pathways arranged for see-saw steering control. Many pathways involve parallel excitation and inhibition, which could specify steering direction based on E/I balance. When one pathway is plastic, changes in E/I balance could convert memory recall into bidirectional behavioral readout.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C115-C116 are supported by optogenetic inhibition experiments shown in Figure 8E. The lack of effect on rotational speed (C116) is surprising given the strong correlations observed in recordings, but the data are clear. The authors provide reasonable explanations involving compensatory mechanisms.",
+    "evaluation": "Claims C115-C117 synthesize connectome findings and are well-supported by Figures 7C-F. The E/I balance mechanism (C117) is a reasonable inference. However, C118 is more speculative, proposing a general principle for memory-guided behavior that extends beyond the direct evidence, though it is consistent with the MBON32 circuitry described.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R25",
     "claim_ids": [
-      "C117",
-      "C118",
       "C119",
-      "C120",
-      "C121",
-      "C122"
+      "C120"
     ],
-    "result": "Body rotation can be achieved via many different leg maneuvers, including pivoting on the inner back leg. Inhibiting DNa01 produced a significant defect in inner-back-leg stance prolongation, with a similar trend for DNa02. This defect appears to be compensated by other mechanisms to maintain normal rotational speed in freely moving flies.",
+    "result": "Unilateral optogenetic activation of DNa02 evoked a small but statistically significant steering bias in the ipsilateral direction, as determined by comparison with a bootstrap simulation using bilateral expression controls.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C117-C122 are supported by detailed leg kinematic analysis shown in Figure 8F-G and supplementary figures. The observation of specific leg maneuver defects without overall rotational defects (C122) is well-documented and provides insight into motor redundancy. The statistical analysis is appropriate with multiple comparison corrections.",
+    "evaluation": "Claims C119-C120 are supported by data in Figures 8B-C. The statistical approach using bootstrap simulation with bilateral controls is appropriate and rigorous. The effect size is small but significant, consistent with DNa02 being one of multiple steering DNs.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R26",
     "claim_ids": [
-      "C123",
-      "C124",
-      "C125"
+      "C121",
+      "C122"
     ],
-    "result": "Bilateral inhibition of DNa01 or DNa02 altered leg movement rhythm regardless of walking direction, increasing step length while decreasing step frequency. Inhibiting DNa01 also decreased forward velocity.",
+    "result": "Bilateral inhibition of DNa01 significantly reduced sideways speed, but surprisingly, rotational speed was unchanged when either DNa01 or DNa02 neurons were inhibited.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C123-C125 are supported by leg kinematic analysis shown in Figure 8H. The effects on step parameters are clearly demonstrated with appropriate statistical testing. The authors appropriately note these effects are weak and should be interpreted with caution given off-target expression.",
+    "evaluation": "Claims C121-C122 are supported by optogenetic inhibition experiments in Figure 8E. The lack of effect on rotational speed (C122) is surprising given the strong correlations observed in earlier experiments, but this is acknowledged and explained by the authors in terms of compensatory mechanisms and multiple steering DNs.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R27",
     "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
       "C126",
-      "C127",
-      "C128",
-      "C129"
+      "C127"
     ],
-    "result": "Both DNa01 and DNa02 can lengthen the stance phase of the ipsilateral back leg and/or decrease step length in ipsilateral legs, either promoting ipsiversive turning. The observed decrease in step frequency during inhibition may be a by-product of increasing step length.",
+    "result": "Body rotation can be achieved via many different leg maneuvers. Inhibiting DNa01 produced a significant defect in inner-back-leg stance prolongation (pivoting), with a similar trend for DNa02. This defect appears to be compensated by other mechanisms to achieve normal rotational movement in freely moving flies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C126-C129 are inferences from optogenetic inhibition data. While the interpretations are reasonable, they are indirect inferences about normal function based on loss-of-function experiments. The relationship between step length and step frequency (C129) is based on general knowledge but the causal link in this context is uncertain. Direct measurements of leg kinematics during normal turning would strengthen these claims.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by leg kinematics analysis in Figures 8F-G and Figure 8\u2014figure supplement 1, with C123 supported by citations (DeAngelis et al., 2019; Katsov et al., 2017; Yang et al., 2024). The compensatory mechanism inference (C127) is reasonable given the unchanged rotational speed despite specific leg maneuver defects. The analysis is methodologically sound with appropriate statistical corrections.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R28",
     "claim_ids": [
-      "C130",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Bilateral inhibition of either DNa01 or DNa02 altered leg movement rhythm (increased step length, decreased step frequency) regardless of walking direction. Inhibiting DNa01 also decreased forward velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by data in Figure 8H. The effects on step parameters are consistent across both DN types, suggesting shared functions. The forward velocity effect for DNa01 (C130) is interesting given the weak correlation with forward velocity during normal locomotion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
       "C131",
-      "C132",
+      "C132"
+    ],
+    "result": "Both DNs can lengthen the stance phase of the ipsilateral back leg and/or decrease step length in ipsilateral legs, either of which would promote ipsiversive turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C132 are inferences from the optogenetic inhibition results. While the stance prolongation effect (C131) has direct support from Figure 8G, the step length effect (C132) is more speculative. The authors appropriately express caution about these interpretations, noting the effects are weak and off-target expression is possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
       "C133",
       "C134",
       "C135",
       "C136",
       "C137",
-      "C138"
-    ],
-    "result": "DNa01 and DNa02 are both recruited during turning but receive largely non-overlapping inputs and have non-overlapping outputs, representing parallel pathways. DNa02 predicts large, rapid, transient steering events and is recruited earlier, while DNa01 predicts smaller, slower steering events. These distinct functional profiles indicate specialized roles.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C130-C138 synthesize findings from electrophysiology and connectome analysis. The conclusion about parallel pathways (C133) and specialized roles (C138) is well-supported by the combined anatomical and functional evidence presented throughout the manuscript.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R29",
-    "claim_ids": [
+      "C138",
       "C139",
-      "C140",
-      "C141"
+      "C140"
     ],
-    "result": "Both DNs can affect leg kinematics similarly, but DNa02 precedes larger and more rapid steering events possibly because it receives stronger and more direct input from steering circuits and has more direct connections onto motor neurons.",
+    "result": "DNa01 and DNa02 are both recruited during turning but receive largely non-overlapping inputs and have non-overlapping outputs, representing parallel and independent pathways. DNa02 predicts large, rapid, transient steering events while DNa01 predicts smaller, slower events. DNa02 is recruited earlier with more transient firing. These results argue for specialized roles.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C139-C141 integrate optogenetic and connectome data to explain functional differences. The inferences (C140-C141) are reasonable given the anatomical evidence, though the causal relationships remain somewhat speculative. The logic connecting anatomy to function is sound.",
+    "evaluation": "Claims C133-C140 synthesize major findings from electrophysiology (Figures 1-2) and connectome analysis (Figure 7). The functional specialization is well-supported by converging evidence from multiple experimental approaches. This is a central conclusion of the paper.",
     "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R30",
-    "claim_ids": [
-      "C142",
-      "C143",
-      "C144",
-      "C145",
-      "C146",
-      "C147",
-      "C148",
-      "C149"
-    ],
-    "result": "Subsequent studies confirmed key results: unilateral DNa02 excitation produces ipsilateral rotation, bilateral DNa02 ablation reduces corrective turning velocity, and bilateral activation can drive turning in either direction. The brain inputs onto DNa02 are arranged for see-saw control, explaining why DNa02 activity correlates with both ipsi- and contralateral leg movements during voluntary turns.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C142-C149 cite subsequent publications that confirm and extend the current findings. The see-saw connectivity model (C146) from this study explains observations from Yang et al., 2023. The comparison between studies (C149) appropriately notes methodological differences. These claims validate the current work through independent replication.",
-    "result_type": "MINOR"
   },
   {
     "result_id": "R31",
     "claim_ids": [
-      "C150",
-      "C151",
-      "C152",
-      "C153",
-      "C154"
+      "C141",
+      "C142"
     ],
-    "result": "While bilateral optogenetic activation increases locomotor activity and bilateral inhibition of DNa01 decreases forward velocity, DNa01 and DNa02 are only weakly correlated with forward velocity during normal locomotion. These DNs are normally recruited for steering control, but bilateral perturbations can affect forward velocity because they drive steering via laterally asymmetric step cycle changes.",
+    "result": "Both DNs can lengthen ipsilateral back leg stance phase and/or decrease ipsilateral leg step length, promoting ipsiversive turning. DNa02 receives stronger and more direct input from some steering circuits in the brain compared to DNa01.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C150-C154 reconcile apparently contradictory findings about forward velocity control. The explanation (C154) that bilateral perturbations inevitably affect forward velocity due to the mechanism of steering control is logical and supported by citations. The distinction between normal function and perturbation effects is appropriate.",
-    "result_type": "MAJOR"
+    "evaluation": "Claim C141 synthesizes optogenetic findings (Figures 8G-H) with appropriate caution. Claim C142 is supported by connectome analysis in Figure 7\u2014figure supplement 1. Together these help explain why DNa02 predicts larger steering events.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R32",
     "claim_ids": [
-      "C155",
-      "C156",
-      "C157",
-      "C158",
-      "C159",
-      "C160",
-      "C161"
+      "C143",
+      "C144",
+      "C145"
     ],
-    "result": "Many DNs influence steering during walking. Optogenetic inhibition of DNa01 or DNa02 produced only small or non-significant steering defects, consistent with DNa02 being one of many steering DNs. Subsequent studies identified additional steering DNs and hierarchical organization with broadcaster DNs recruiting specialized DNs. DNa02 is downstream from broadcaster DNs DNa03 and DNp09.",
+    "result": "Subsequent studies (Yang et al., 2023; Feng et al., 2024; Braun et al., 2024) confirmed that unilateral DNa02 excitation produces ipsilateral body rotation, bilateral DNa02 ablation reduces corrective turning velocity in head direction tasks, and bilateral activation of DNa02 or DNa01 can drive turning in either direction.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C155-C161 integrate findings from this study with subsequent publications. The modest effects of DN inhibition (C156-C157) are appropriately interpreted in the context of redundancy. The hierarchical organization (C159-C161) from subsequent studies provides important context for understanding DNa02 function.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C143-C145 cite subsequent work that confirms and extends the current study's findings. These provide independent validation of key results. The citations are appropriate and strengthen confidence in the main findings.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R33",
     "claim_ids": [
-      "C162",
-      "C163",
-      "C164",
-      "C165",
-      "C166",
-      "C167"
+      "C146",
+      "C147"
     ],
-    "result": "DNs targeting wings and legs are largely distinct populations, and DNs for flight steering differ from DNa01/DNa02. However, DNa02 has indirect connectivity to wing motor neurons suggesting it contributes to flight steering. DNa03 activation promotes turning in both flight and walking. VES041 suppresses flight steering and is predicted to have a similar role during walking based on connectivity.",
+    "result": "Yang et al., 2023 found that perturbing DNa02 mainly affected ipsilateral leg movements, while DNa02 activity during voluntary turns correlated with both ipsi- and contralateral legs with opposite changes. The brain connectome analyses in this study explain this effect through the see-saw arrangement of inputs producing concurrent excitation of one copy and inhibition of the other.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C162-C167 are supported by citations and connectome analysis. The prediction about VES041 function during walking (C167) is a reasonable inference from connectivity but requires experimental validation. The distinction between flight and walking control systems with some shared components is well-documented.",
+    "evaluation": "Claim C146 cites Yang et al., 2023. Claim C147 is a reasonable inference connecting the cited work with the connectome analysis in Figure 7. This demonstrates how the anatomical findings explain functional observations from other studies.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R34",
     "claim_ids": [
-      "C168",
-      "C169",
-      "C170",
-      "C171",
-      "C172",
-      "C173"
+      "C148",
+      "C149",
+      "C150"
     ],
-    "result": "Steering DNs respond to lateralized sensory stimuli even when the fly is not walking, similar to landing DNs responding to visual stimuli during non-flight. These residual responses may represent latent bias toward action or movement preparation. This discovery provides a starting point for investigating brain dynamics during motor preparation in Drosophila.",
+    "result": "Yang et al., 2023 found unilateral DNa02 inhibition had no effect on body rotation but increased ipsilateral step length. This study found bilateral DNa02 inhibition decreases step length bilaterally, as does bilateral DNa01 inhibition.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C168-C173 are supported by experimental data (C168) and appropriate citations to mammalian literature (C171-C172). The interpretation as latent motor activity (C170) is reasonable and draws valid parallels to mammalian systems. The suggestion for future work (C173) is appropriate.",
-    "result_type": "MAJOR"
+    "evaluation": "Claim C148 cites Yang et al., 2023. Claims C149-C150 are from this study's Figure 8H. The comparison highlights differences between unilateral and bilateral perturbations and between treadmill and freely walking conditions, as discussed by the authors.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R35",
     "claim_ids": [
-      "C174",
-      "C175",
-      "C176"
+      "C151",
+      "C152",
+      "C153"
     ],
-    "result": "Behavioral state transitions may be organized via pre-DN networks in the lateral accessory lobe. DNa03 and LAL010 receive bilateral input from high-level premotor control cells PFL2 and VES041. LAL013, a pre-DN with similar connectivity, plays an important role in modulating steering.",
+    "result": "Bilateral optogenetic inhibition of DNa01 decreased forward velocity, but electrophysiological results show DNa01 and DNa02 are only weakly correlated with forward velocity during normal locomotion. This suggests these DNs are normally recruited for steering control, but bilateral perturbations can produce forward velocity changes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C174-C176 are supported by citations and connectome analysis shown in Figure 7. The anatomical features of pre-DNs are clearly documented. The functional role of LAL013 (C176) from subsequent work validates the importance of this pre-DN network.",
+    "evaluation": "Claims C151-C153 reconcile apparently contradictory findings. C151 is from Figure 8H, C152 from earlier electrophysiology (Figure 2C), and C153 is a reasonable synthesis. The explanation that bilateral perturbations can have effects not seen during normal function is plausible.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R36",
     "claim_ids": [
-      "C177",
-      "C178",
-      "C179",
-      "C180",
-      "C181"
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
     ],
-    "result": "Steering is driven by combinations of DNs with distinct functional roles, recruited by distinct parallel pathways, targeting non-overlapping ventral cord cells. These results are relevant to vertebrates because walking organisms face the same physical constraints, and evolution likely found common solutions. Vertebrate steering DNs should also be diverse and specialized.",
+    "result": "Many DNs influence steering during walking. Optogenetic inhibition of DNa01 produced only small steering defects, and DNa02 inhibition had no significant effects, consistent with DNa02 being one of many steering DNs. Subsequent studies identified additional steering DNs including DNg13, DNb05, DNb06, DNa11, DNae003, DNa03, DNae014, and DNb02.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C177-C181 appropriately synthesize the main findings and draw connections to vertebrate systems. The prediction about vertebrate DN diversity (C181) is a reasonable inference based on shared physical constraints (C178-C179), though it remains to be tested. The comparative perspective is well-justified.",
+    "evaluation": "Claims C154-C159 are supported by this study's optogenetic results (Figure 8E) and citations to subsequent work (Yang et al., 2023; Feng et al., 2024; Braun et al., 2024). The modest effects of single DN perturbations are consistent with a distributed steering control system.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R37",
     "claim_ids": [
-      "C182",
-      "C183",
-      "C184",
-      "C185"
+      "C160",
+      "C161",
+      "C162"
     ],
-    "result": "Orienting behaviors are fundamental indicators of perceptions and intentions, providing a window into perception and cognition. Understanding DN specializations will allow reframing orientation control as a problem of generating specific DN dynamics, enabling understanding of sensory and cognitive computations as solutions to dynamical system control problems.",
+    "result": "Some steering DNs are organized hierarchically, with 'broadcaster' DNs recruiting other DNs with specialized functions. DNa02 is downstream from DNa03 (promotes decreased forward speed and ipsiversive steering) and DNp09 (promotes increased forward speed and ipsiversive steering).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C182-C185 present a conceptual framework based on general principles (C182-C183) and the findings of this study. The motor-centric perspective (C184-C185) is a reasonable inference from the demonstrated links between DN activity and behavior, though it represents a future research direction rather than a demonstrated result.",
+    "evaluation": "Claims C160-C162 are supported by citations to Braun et al., 2024; Sapkal et al., 2024; Feng et al., 2024; Westeinde et al., 2024; Bidaye et al., 2020. This places the current findings in the context of emerging understanding of hierarchical organization in the descending control system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "DNs targeting wings and legs are largely distinct populations, and DNs for flight steering differ from those identified here. However, DNa02 has indirect connectivity to wing motor neurons suggesting flight steering contribution, and DNa03 activation promotes turning in both flight and walking. VES041 suppresses flight steering and is predicted to have a similar role during walking based on connectivity upstream from DNa02.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 are supported by citations (Namiki et al., 2018; Ros et al., 2024; Schnell et al., 2017; Cheong et al., 2023; Feng et al., 2024). Claim C168 is an inference from connectome data that is reasonable but untested. The discussion appropriately distinguishes between established findings and predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Clear responses to lateralized sensory stimuli were observed in steering DNs even when the fly was not walking. Similarly, Drosophila landing DNs respond to visual stimuli when not flying. These residual DN responses can be thought of as latent bias toward action or preparation for action that doesn't occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C169 is from this study's Figure 6. Claim C170 cites Ache et al., 2019. Claim C171 is an interpretation supported by citation to Kien, 1990. The concept of latent motor commands is interesting and well-supported, though alternative explanations (small undetected movements) cannot be fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Mammalian corticospinal neurons can be active without movement, during movement preparation or observation. These latent signals may represent movement preparation and drive latent spinal neuron activity. The discovery of latent motor activity in Drosophila provides a starting point for mechanistic investigations of motor preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C173 cite relevant mammalian literature (Tanji and Evarts, 1976; Kraskov et al., 2014; Churchland et al., 2010; Prut and Fetz, 1999). Claim C174 is a reasonable forward-looking statement about the potential of the Drosophila system for studying motor preparation, given the genetic and connectomic tools available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Behavioral state transitions may be organized via pre-DN networks in the lateral accessory lobe. DNa03 and LAL010 receive bilateral input from PFL2 and VES041, cell types known for high-level premotor control. LAL013, another pre-DN with similar connectivity, plays an important role in modulating steering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C175 cites Namiki and Kanzaki, 2016. Claims C176-C177 are supported by connectome analysis and citations (Westeinde et al., 2024; Ros et al., 2024; Feng et al., 2024). This highlights the importance of pre-DN networks in steering control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C178"
+    ],
+    "result": "Steering is driven by combinations of DNs with distinct functional roles, recruited by distinct parallel pathways in the brain, and targeting largely non-overlapping sets of cells in the ventral cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C178 is a high-level summary of the paper's main findings, well-supported by the combined electrophysiological and connectomic evidence presented throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Any walking organism faces the same basic physical constraints, so evolution likely found common solutions. Recent work has begun identifying vertebrate steering DNs. Based on these results, vertebrate steering DNs should also be diverse and specialized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C180 cite Dickinson et al., 2000 for the principle of common physical constraints. Claim C181 cites vertebrate work (Cregg et al., 2020; Usseglio et al., 2020). Claim C182 is a reasonable prediction based on the Drosophila findings, though it remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Orienting behaviors are fundamental indicators of an organism's perceptions and intentions, providing a window into perception and cognition. Understanding DN specializations should allow reframing orientation control as a problem of generating specific DN dynamics, enabling understanding of sensory and cognitive computations as solutions to dynamical system control problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C184 state general principles about the importance of orienting behaviors. Claims C185-C186 are forward-looking statements about how understanding motor control neurons can inform understanding of upstream sensory and cognitive processes. These are reasonable perspectives supported by the study's findings, though they represent a conceptual framework rather than tested hypotheses.",
     "result_type": "MINOR"
   }
 ]

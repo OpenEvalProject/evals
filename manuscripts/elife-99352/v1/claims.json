@@ -141,7 +141,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The number of transcripts with environment effects is stated.",
+    "evidence": "The number of transcripts with environment effects is directly stated.",
     "evidence_type": [
       "DATA"
     ]
@@ -181,7 +181,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Statistical test result is provided.",
+    "evidence": "Statistical test result is directly stated.",
     "evidence_type": [
       "DATA"
     ]
@@ -194,7 +194,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Statistical significance results are stated.",
+    "evidence": "Statistical significance results are directly stated.",
     "evidence_type": [
       "DATA"
     ]
@@ -233,7 +233,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Statistical test result is provided.",
+    "evidence": "Statistical test result is directly stated.",
     "evidence_type": [
       "DATA"
     ]
@@ -247,7 +247,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Statistical test result is provided with figure reference.",
+    "evidence": "Statistical test results are provided with figure references.",
     "evidence_type": [
       "DATA"
     ]
@@ -274,7 +274,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Percentages are stated with figure reference.",
+    "evidence": "Percentages are directly stated with figure reference.",
     "evidence_type": [
       "DATA"
     ]
@@ -307,7 +307,7 @@
   },
   {
     "claim_id": "C24",
-    "claim": "Gene ontology term analyses of the 38 antagonistically pleiotropic transcripts beneficial in normal conditions indicated that many of these genes were involved in photosynthesis and metabolic processes.",
+    "claim": "Gene ontology term analyses indicated that many antagonistically pleiotropic genes beneficial in normal conditions were involved in photosynthesis and metabolic processes.",
     "claim_type": "EXPLICIT",
     "source": "Gene ontology (GO) term analyses of these 38 transcripts indicated that many of these genes were involved in photosynthesis and metabolic processes (Figure 1\u2014figure supplement 1; Supplementary file 4).",
     "source_type": [
@@ -321,21 +321,20 @@
   },
   {
     "claim_id": "C25",
-    "claim": "The finding that many antagonistically pleiotropic genes are involved in photosynthesis and metabolic processes is consistent with an observed reduction of photosynthesis in rice under salinity stress.",
+    "claim": "The reduction of photosynthesis in rice under salinity stress has been observed in previous studies.",
     "claim_type": "EXPLICIT",
     "source": "This is consistent with an observed reduction of photosynthesis in rice under salinity stress (Radanielson et al., 2018; Tsai et al., 2019).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript cites prior studies supporting this interpretation.",
+    "evidence": "The manuscript cites previous studies supporting this observation.",
     "evidence_type": [
-      "CITATION",
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
     "claim_id": "C26",
-    "claim": "SNPs regulating expression of two photosynthesis related antagonistically pleiotropic transcripts (PSAN and CRR7) were found only in the normal environment.",
+    "claim": "SNPs regulating expression of two photosynthesis related antagonistically pleiotropic transcripts (PSAN and CRR7) were identified only in the normal environment.",
     "claim_type": "EXPLICIT",
     "source": "We found SNPs regulating expression of two photosynthesis related AP transcripts (PSAN and CRR7) only in the normal environment (Figure 1\u2014figure supplement 2).",
     "source_type": [
@@ -349,13 +348,13 @@
   },
   {
     "claim_id": "C27",
-    "claim": "Among the 13 antagonistically pleiotropic transcripts beneficial only in the saline environment, a cyclophilin-encoding transcript (OsCYP2) was identified, which has been shown to confer salt tolerance in rice.",
+    "claim": "Among the 13 antagonistically pleiotropic transcripts beneficial only in the saline environment, a cyclophilin-encoding transcript (OsCYP2) was identified.",
     "claim_type": "EXPLICIT",
     "source": "We further looked at the 13 AP transcripts that were beneficial only in the saline environment (Supplementary file 4). Although there was no significant GO enrichment for these transcripts, among them we identified a cyclophilin-encoding transcript (OsCYP2), which has been shown to confer salt tolerance in rice (Lee et al., 2015; Roy et al., 2022; Ruan et al., 2011).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript identifies a specific gene and cites prior studies on its function.",
+    "evidence": "The transcript is identified and previous studies are cited.",
     "evidence_type": [
       "DATA",
       "CITATION"
@@ -369,7 +368,7 @@
     "source_type": [
       "TEXT"
     ],
-    "evidence": "eQTL analysis results are stated.",
+    "evidence": "eQTL analysis results are directly stated.",
     "evidence_type": [
       "DATA"
     ]
@@ -383,7 +382,7 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "The number of processes under selection is stated with figure reference.",
+    "evidence": "The numbers of processes are stated with figure reference.",
     "evidence_type": [
       "DATA"
     ]
@@ -410,41 +409,52 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Selection analysis results on biological processes are stated with figure reference.",
+    "evidence": "Selection analysis results are stated with figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C32",
-    "claim": "Salinity stress affects cell cycle regulation, leading to reduced growth and reproduction.",
+    "claim": "Salinity stress has been associated with changes in flowering time and reduced yield in multiple species.",
     "claim_type": "EXPLICIT",
-    "source": "Aligned with this, our study also supports the notion that salinity stress affects cell cycle regulation, and leads to reduced growth and reproduction.",
+    "source": "This provides insight into the specific biological processes related to changes in flowering time and reduced yield, both of which have been associated with salinity stress in multiple species (Chang et al., 2019; Li et al., 2007; Zandt and Mopper, 2002; Zhang et al., 2022b).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript interprets findings in context of prior knowledge.",
+    "evidence": "Previous studies are cited to support this association.",
     "evidence_type": [
-      "DATA",
-      "INFERENCE",
-      "KNOWLEDGE"
+      "CITATION"
     ]
   },
   {
     "claim_id": "C33",
+    "claim": "Osmotic stress induced by salinity causes a reduction in cyclin-dependent kinases (CDKs) responsible for cell-cycle transitions.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, studies have found that the osmotic stress induced by salinity causes a reduction in the cyclin-dependent kinases (CDKs) responsible for cell-cycle transitions (G1/S and G2/M; Ma et al., 2015; Schuppler et al., 1998; West et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Previous studies are cited to support this mechanism.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
     "claim": "Over half of principal components (7 of 11 in normal and 7 of 12 in saline conditions) displayed opposite signs of direct and indirect responses to selection.",
     "claim_type": "EXPLICIT",
     "source": "We found that over half of PCs (7 of 11 and 7 of 12 PCs in normal and saline conditions, respectively) displayed opposite signs of direct and indirect responses to selection (Supplementary file 7).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Analysis results on selection responses are stated.",
+    "evidence": "Multivariate selection analysis results are stated.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C34",
+    "claim_id": "C35",
     "claim": "PCs enriched for metabolic pathways and biosynthesis of phenylpropanoids and secondary metabolites were under selection in the normal environment.",
     "claim_type": "EXPLICIT",
     "source": "We found PCs enriched for metabolic pathways and biosynthesis of phenylpropanoids and secondary metabolites to be under selection in the normal environment (Figure 2a; Figure 2\u2014figure supplement 1; Supplementary file 7).",
@@ -458,7 +468,7 @@
     ]
   },
   {
-    "claim_id": "C35",
+    "claim_id": "C36",
     "claim": "Circadian rhythm was found to be under positive directional selection, with an overall positive response to selection, in the saline environment.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, circadian rhythm was found to be under positive directional selection, with an overall positive response to selection, in the saline environment (Figure 2a; Figure 2\u2014figure supplement 1; Supplementary file 7).",
@@ -472,21 +482,20 @@
     ]
   },
   {
-    "claim_id": "C36",
-    "claim": "The finding that circadian rhythm is under positive directional selection in the saline environment is in alignment with the role of circadian clock genes in conferring salt tolerance.",
+    "claim_id": "C37",
+    "claim": "Circadian clock genes have been associated with conferring salt tolerance.",
     "claim_type": "EXPLICIT",
     "source": "This is in alignment with the role of circadian clock genes in conferring salt tolerance (Kim et al., 2013; Wei et al., 2021; Xu et al., 2022)",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript cites prior studies supporting this interpretation.",
+    "evidence": "Previous studies are cited to support this role.",
     "evidence_type": [
-      "CITATION",
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C37",
+    "claim_id": "C38",
     "claim": "More than 29,000 transcript pairs (involving 1742 unique transcripts) showed significantly different correlations between normal and saline conditions (FDR <5%).",
     "claim_type": "EXPLICIT",
     "source": "We found that the correlation structure for gene expression was broadly similar across the 2.10 M unique transcript pairs, but >29,000 transcript pairs (involving 1742 unique transcripts) showed significantly different correlations between normal and saline conditions (FDR <5%) (Figure 3a; Supplementary file 8).",
@@ -500,7 +509,7 @@
     ]
   },
   {
-    "claim_id": "C38",
+    "claim_id": "C39",
     "claim": "GO term enrichment analysis of transcripts showing decoherence highlighted important pathways related to plant responses and potentially tolerance to excess salt.",
     "claim_type": "EXPLICIT",
     "source": "GO term enrichment analysis of the transcripts that show decoherence with significant pairs greater than the median (median significant pair per transcript = 12, n=853) highlighted important pathways related to plant responses and potentially tolerance to excess salt (Figure 3b).",
@@ -514,35 +523,61 @@
     ]
   },
   {
-    "claim_id": "C39",
-    "claim": "Circadian rhythm genes like OsPRR37 and GIGANTA (GI), which have been shown to confer salt tolerance in rice and Arabidopsis, differed significantly in their interactions between the two environments.",
+    "claim_id": "C40",
+    "claim": "Circadian rhythm genes like OsPRR37 and GIGANTA (GI) differed significantly in their interactions between the two environments.",
     "claim_type": "EXPLICIT",
     "source": "For instance, circadian rhythm genes like OsPRR37 and GIGANTA (GI), which have been shown to confer salt tolerance in rice and Arabidopsis (Kim et al., 2013; Wei et al., 2021), differed significantly in their interactions between the two environments.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Decoherence analysis results are stated with citations to prior functional studies.",
+    "evidence": "Decoherence analysis results are stated with citations to previous studies.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C40",
-    "claim": "Three traits \u2013 leaf osmotic potential (LOP), chlorophyll a content (Chl_a), and flowering time (FT) \u2013 displayed different selection patterns in normal versus saline environments.",
+    "claim_id": "C41",
+    "claim": "The relative abundance of metabolites involved in energy producing pathways like glycolysis, tricarboxylic acid (TCA) cycle and various other metabolic processes have been shown to be altered as an early response to salt stress.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, to manage the energy requirements of salt stress, the relative abundance of metabolites involved in energy producing pathways like glycolysis, tricarboxylic acid (TCA) cycle and various other metabolic processes have been shown to be altered as an early response to salt stress (Che-Othman et al., 2017; Jacoby et al., 2011; Yang and Guo, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Previous studies are cited to support this metabolic response.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Multiple studies have reported a positive correlation between salt tolerance and levels of secondary metabolites and amino acids with osmoprotectant properties.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, aligned with our results, multiple studies have reported a positive correlation between salt tolerance and levels of secondary metabolites and amino acids with osmoprotectant properties associated with lowering osmotic stress (Krishnamurthy and Bhagwat, 1990; Petrusa and Winicov, 1997; Tari et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Previous studies are cited to support this correlation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Three traits (leaf osmotic potential, chlorophyll a content, and flowering time) displayed different selection patterns in normal versus saline environments.",
     "claim_type": "EXPLICIT",
     "source": "We identified three traits \u2013 leaf osmotic potential (LOP), chlorophyll a content (Chl_a), and flowering time (FT) \u2013 that displayed different selection patterns in normal versus saline environments (Figure 4; Supplementary file 9).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Selection analysis results on phenotypic traits are stated with figure reference.",
+    "evidence": "Selection analysis results on organismal traits are stated with figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C41",
+    "claim_id": "C44",
     "claim": "Leaf osmotic potential was under positive directional selection in the control environment but under stabilizing selection under saline conditions.",
     "claim_type": "EXPLICIT",
     "source": "Leaf osmotic potential is a key trait associated with water transport in plants, and which decreases with increasing salinity, leading to low water uptake by the plant. This trait was under positive directional selection in the control environment but under stabilizing selection under saline conditions, which suggests that an optimal LOP is important under salt stress (Figure 4).",
@@ -550,42 +585,39 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Selection analysis results are stated with figure reference and biological interpretation.",
+    "evidence": "Selection analysis results are stated with figure reference.",
     "evidence_type": [
-      "DATA",
-      "INFERENCE"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C42",
+    "claim_id": "C45",
     "claim": "Chlorophyll a content at the reproductive stage was under negative directional selection in saline conditions.",
     "claim_type": "EXPLICIT",
     "source": "Furthermore, we found Chl_a content at the reproductive stage to be under negative directional selection in saline conditions.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Selection analysis results are stated.",
+    "evidence": "Selection analysis results are directly stated.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C43",
-    "claim": "The reduction in chlorophyll a content is associated with increased survival and reproductive fitness under saline conditions.",
+    "claim_id": "C46",
+    "claim": "Ion toxicity has been shown to reduce chlorophyll content.",
     "claim_type": "EXPLICIT",
-    "source": "Although ion toxicity has previously been shown to reduce chlorophyll content (Ashraf and Bhatti, 2000; Ta\u00efbi et al., 2016), our results showed that this reduction is associated with increased survival and reproductive fitness, consistent with the general trend for reduced photosynthesis under salinity stress.",
+    "source": "Although ion toxicity has previously been shown to reduce chlorophyll content (Ashraf and Bhatti, 2000; Ta\u00efbi et al., 2016)",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript interprets findings with citations to prior studies.",
+    "evidence": "Previous studies are cited to support this effect.",
     "evidence_type": [
-      "DATA",
-      "CITATION",
-      "INFERENCE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C44",
+    "claim_id": "C47",
     "claim": "Flowering time was under positive directional selection (selection for later flowering) in normal conditions but under stabilizing selection in saline conditions.",
     "claim_type": "EXPLICIT",
     "source": "We also found that FT was under positive directional selection (selection for later flowering) in normal conditions but under stabilizing selection in saline conditions (Figure 4).",
@@ -599,7 +631,7 @@
     ]
   },
   {
-    "claim_id": "C45",
+    "claim_id": "C48",
     "claim": "Flowering time was significantly reduced under saline conditions (two-tailed paired t-test p=0.0012).",
     "claim_type": "EXPLICIT",
     "source": "Moreover, FT was significantly reduced under saline conditions (two-tailed paired t-test p=0.0012; Figure 4\u2014figure supplement 2)",
@@ -613,72 +645,85 @@
     ]
   },
   {
-    "claim_id": "C46",
-    "claim": "cis- and trans-eQTLs (FDR <0.001) were identified regulating expression of 3065 and 3277 genes in normal and salinity stress conditions, respectively.",
+    "claim_id": "C49",
+    "claim": "cis- and trans-eQTLs (FDR <0.001) regulating expression of 3065 and 3277 genes were identified in normal and salinity stress conditions, respectively.",
     "claim_type": "EXPLICIT",
     "source": "We identified cis- and trans-eQTLs (FDR <0.001) regulating expression of 3065 and 3277 genes in normal and salinity stress conditions, respectively (Supplementary file 10).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "eQTL analysis results are stated.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C47",
-    "claim": "The median number of cis- and trans-eQTLs regulating the expression of a gene were similar between environments (median eQTL per gene cis-normal=14, cis-saline=13, trans-normal=5, trans-saline=4).",
-    "claim_type": "EXPLICIT",
-    "source": "The median number of cis- and trans-eQTLs regulating the expression of a gene were similar between environments (median eQTL per gene cis-normal=14, cis-saline=13, trans-normal=5, trans-saline=4).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "eQTL analysis results are stated.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C48",
-    "claim": "49.64% (29,623 of a total 59,669) of cis-eQTLs were common in both environments, as compared to 18.62% (25,528 of a total 137,100) of trans-eQTLs.",
-    "claim_type": "EXPLICIT",
-    "source": "We observed that 49.64% (29,623 of a total 59,669) of cis-eQTLs were common in both environments, as compared to 18.62% (25,528 of a total 137,100) of trans-eQTLs",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "eQTL overlap analysis results are stated.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C49",
-    "claim": "trans-eQTLs explain more variation in transcript abundance as compared to cis-eQTLs in both environments (two-tailed t-test p<10\u201316; mean effect size: cis-normal=0.77, trans-normal=1.04, cis-saline=0.80, trans-saline=1.08).",
-    "claim_type": "EXPLICIT",
-    "source": "Moreover, comparing the effect sizes of the two categories of eQTLs, we found that trans-eQTLs explain more variation in transcript abundance as compared to cis-eQTLs in both environments (two-tailed t-test p<10\u201316; mean effect size: cis-normal=0.77, trans-normal=1.04, cis-saline=0.80, trans-saline=1.08).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Statistical test results comparing effect sizes are provided.",
+    "evidence": "eQTL analysis results are directly stated.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C50",
-    "claim": "At FDR of 0.05, cis-eQTLs constituted merely 0.28% (142 of 50718) of the total identified G\u00d7eQTLs.",
+    "claim": "The median number of cis- and trans-eQTLs regulating the expression of a gene were similar between environments (median eQTL per gene cis-normal=14, cis-saline=13, trans-normal=5, trans-saline=4).",
     "claim_type": "EXPLICIT",
-    "source": "We tested this explicitly by identifying loci showing gene-environment interaction (G\u00d7eQTL) and found that at FDR of 0.05, cis-eQTLs constituted merely 0.28% (142 of 50718) of the total identified G\u00d7eQTLs.",
+    "source": "The median number of cis- and trans-eQTLs regulating the expression of a gene were similar between environments (median eQTL per gene cis-normal=14, cis-saline=13, trans-normal=5, trans-saline=4).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "G\u00d7eQTL analysis results are stated.",
+    "evidence": "eQTL analysis results are directly stated.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C51",
+    "claim": "49.64% (29,623 of a total 59,669) of cis-eQTLs were common in both environments, as compared to 18.62% (25,528 of a total 137,100) of trans-eQTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that 49.64% (29,623 of a total 59,669) of cis-eQTLs were common in both environments, as compared to 18.62% (25,528 of a total 137,100) of trans-eQTLs",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "eQTL overlap analysis results are directly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Previous studies have found 48\u201377% overlapping cis-eQTLs and 9\u201360% common trans-eQTLs across environments.",
+    "claim_type": "EXPLICIT",
+    "source": "this result was robust to FDR cutoff (FDR of 0.01 and 0.05). This is consistent with previous observations from studies on other species that have found 48\u201377% overlapping cis-eQTLs and 9\u201360% common trans-eQTLs across environments (Smith and Kruglyak, 2008; Snoek et al., 2012; Sterken et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Previous studies are cited to support the comparison.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "trans-eQTLs explain more variation in transcript abundance as compared to cis-eQTLs in both environments (two-tailed t-test p<10\u201316; mean effect size: cis-normal=0.77, trans-normal=1.04, cis-saline=0.80, trans-saline=1.08).",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, comparing the effect sizes of the two categories of eQTLs, we found that trans-eQTLs explain more variation in transcript abundance as compared to cis-eQTLs in both environments (two-tailed t-test p<10\u201316; mean effect size: cis-normal=0.77, trans-normal=1.04, cis-saline=0.80, trans-saline=1.08).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test results and effect sizes are provided.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "At FDR of 0.05, cis-eQTLs constituted merely 0.28% (142 of 50718) of the total identified G\u00d7eQTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "We tested this explicitly by identifying loci showing gene-environment interaction (G\u00d7eQTL) and found that at FDR of 0.05, cis-eQTLs constituted merely 0.28% (142 of 50718) of the total identified G\u00d7eQTLs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "G\u00d7eQTL analysis results are directly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
     "claim": "11 trans-eQTL hotspots (number of unique genes >30) were identified in saline conditions, but none in normal conditions.",
     "claim_type": "EXPLICIT",
     "source": "Through this approach, we identified 11 trans-eQTL hotspots (number of unique genes >30) in saline conditions, but none in normal conditions (Figure 5\u2014figure supplement 1; Supplementary file 11).",
@@ -692,61 +737,62 @@
     ]
   },
   {
-    "claim_id": "C52",
+    "claim_id": "C56",
+    "claim": "Natural variation in gene regulation under stress conditions may be dependent on a few master-regulators.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that natural variation in gene regulation under stress conditions may be dependent on a few master-regulators, as has been shown for drought stress in rice and maize (Kuroha et al., 2017; Liu et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The interpretation is supported by citations to previous studies.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
     "claim": "One hotspot, Chr7: 25.9\u201326.0 Mb, influenced the expression of 191 genes and contains the gene OsFLP, a R2R3 myb-like transcription factor that regulates stomatal development.",
     "claim_type": "EXPLICIT",
     "source": "Interestingly, one of the hotspots, Chr7: 25.9\u201326.0 Mb, influenced the expression of a disproportionately high number of genes (191 genes) and contains the gene OsFLP, a R2R3 myb-like transcription factor that regulates stomatal development (Wu et al., 2019).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "eQTL hotspot analysis results are stated with citation to gene function.",
+    "evidence": "eQTL hotspot analysis results are stated with citation to previous study.",
     "evidence_type": [
       "DATA",
       "CITATION"
     ]
   },
   {
-    "claim_id": "C53",
-    "claim": "OsFLP has recently been associated with salt tolerance in rice.",
+    "claim_id": "C58",
+    "claim": "OsFLP has been associated with salt tolerance in rice.",
     "claim_type": "EXPLICIT",
     "source": "OsFLP has recently been associated with salt tolerance in rice (Qu et al., 2022).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript cites a prior study on gene function.",
+    "evidence": "A previous study is cited to support this association.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C54",
-    "claim": "More than half of genes with both cis and trans regulation appear to have a reinforcing rather than a compensatory pattern (two-tailed proportion z-test p=1.65 x 10\u201311).",
+    "claim_id": "C59",
+    "claim": "More than half genes (317 of 524) appear to have a reinforcing rather than a compensatory pattern (two-tailed proportion z-test p=1.65 x 10\u201311) in saline conditions.",
     "claim_type": "EXPLICIT",
-    "source": "Contrary to this expectation, we found that more than half genes appear to have a reinforcing (cis and trans effect in the same direction) rather than a compensatory pattern (two-tailed proportion z-test p=1.65 x 10\u201311; Figure 5a; Supplementary file 12).",
+    "source": "Contrary to this expectation, we found that more than half genes appear to have a reinforcing (cis and trans effect in the same direction) rather than a compensatory pattern (two-tailed proportion z-test p=1.65 x 10\u201311; Figure 5a; Supplementary file 12). Among the 524 cis-trans co-occurring genes in saline conditions, 317 were reinforcing (~60.5%) and 207 were compensatory (39.5%).",
     "source_type": [
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Statistical test result is provided with figure reference.",
+    "evidence": "Statistical test results are provided with figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C55",
-    "claim": "Among the 524 cis-trans co-occurring genes in saline conditions, 317 were reinforcing (~60.5%) and 207 were compensatory (39.5%).",
-    "claim_type": "EXPLICIT",
-    "source": "Among the 524 cis-trans co-occurring genes in saline conditions, 317 were reinforcing (~60.5%) and 207 were compensatory (39.5%).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The numbers of genes in each category are stated.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C56",
+    "claim_id": "C60",
     "claim": "Genes under cis-trans reinforcement showed significantly higher inter-varietal expression variation as compared to genes under cis-trans compensation in saline conditions (Mann-Whitney U-test=0.002; mean-inter-varietal expression variation compensating = 1.12, reinforcing = 1.27).",
     "claim_type": "EXPLICIT",
     "source": "Supporting our hypothesis, we found significantly higher inter-varietal expression variation for genes under cis-trans reinforcement in saline (Figure 5b; Mann-Whitney U-test=0.002; mean-inter-varietal expression variation compensating = 1.12, reinforcing = 1.27)",
@@ -754,79 +800,79 @@
       "TEXT",
       "IMAGE"
     ],
-    "evidence": "Statistical test result is provided with figure reference.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C57",
-    "claim": "Estimated linkage disequilibrium between all pairs of cis- and trans-regulatory variants for the identified compensating and reinforcing genes was significantly higher as compared to the background LD (mean r2 compensating: 0.33, reinforcing: 0.36, background = 0.056; two-tailed permutation test p=0.0019).",
-    "claim_type": "EXPLICIT",
-    "source": "This was indeed the case: estimated LD between all pairs of cis- and trans-regulatory variants for the identified compensating and reinforcing genes was significantly higher as compared to the background LD (mean r2 compensating: 0.33, reinforcing: 0.36, background = 0.056; two-tailed permutation test p=0.0019).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Statistical test result is provided.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C58",
-    "claim": "trans-eQTLs for both environments had been under strong purifying selection, with the site-frequency spectrum being significantly left-shifted compared to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, trans normal = 0.0936, trans saline = 0.0910).",
-    "claim_type": "EXPLICIT",
-    "source": "We found that trans-eQTLs for both environments had been under strong purifying selection, with the SFS being significantly left-shifted compared to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, trans normal = 0.0936, trans saline = 0.0910).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Statistical test result is provided.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C59",
-    "claim": "trans-eQTLs regulating multiple genes showed stronger purifying selection than those regulating single genes (two-tailed t-test p<10\u201316; normal mean MAF in unique trans-eQTLs=0.099, multiple trans-eQTL=0.073; saline mean MAF in unique trans-eQTLs=0.097, multiple trans-eQTL=0.071).",
-    "claim_type": "EXPLICIT",
-    "source": "Not surprisingly, given their highly pleiotropic nature, this effect was more pronounced for trans-eQTLs regulating multiple genes (two-tailed t-test p<10\u201316; normal mean MAF in unique trans-eQTLs=0.099, multiple trans-eQTL=0.073; saline mean MAF in unique trans-eQTLs=0.097, multiple trans-eQTL=0.071).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "Statistical test result is provided.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C60",
-    "claim": "cis-eQTLs in both normal and saline conditions had potentially been under balancing selection with the site-frequency spectrum being significantly right-shifted for cis-eQTLs relative to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, cis normal = 0.238, cis saline = 0.237).",
-    "claim_type": "EXPLICIT",
-    "source": "In contrast to trans-eQTLs, we found that cis-eQTLs in both normal and saline conditions had potentially been under balancing selection (Figure 5C, Figure 5\u2014figure supplement 3) with the SFS being significantly right-shifted for cis-eQTLs relative to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, cis normal = 0.238, cis saline = 0.237).",
-    "source_type": [
-      "TEXT",
-      "IMAGE"
-    ],
-    "evidence": "Statistical test result is provided with figure reference.",
+    "evidence": "Statistical test results are provided with figure reference.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C61",
-    "claim": "The estimated nucleotide diversity (\u03c0) for 100 kb regions flanking cis-eQTLs was significantly higher as compared to genome-wide 100 kb blocks (two-tailed t-test p<10\u201311; mean \u03c0 background = 0.286, cis normal = 0.297, cis saline = 0.297).",
+    "claim": "Estimated LD between all pairs of cis- and trans-regulatory variants for the identified compensating and reinforcing genes was significantly higher as compared to the background LD (mean r2 compensating: 0.33, reinforcing: 0.36, background = 0.056; two-tailed permutation test p=0.0019).",
     "claim_type": "EXPLICIT",
-    "source": "Moreover, for both conditions, the estimated nucleotide diversity (\u03c0) for 100 kb regions flanking cis-eQTLs was also significantly higher as compared to genome-wide 100 kb blocks (two-tailed t-test p<10\u201311; mean \u03c0 background = 0.286, cis normal = 0.297, cis saline = 0.297).",
+    "source": "This was indeed the case: estimated LD between all pairs of cis- and trans-regulatory variants for the identified compensating and reinforcing genes was significantly higher as compared to the background LD (mean r2 compensating: 0.33, reinforcing: 0.36, background = 0.056; two-tailed permutation test p=0.0019).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "Statistical test result is provided.",
+    "evidence": "Statistical test results are provided.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C62",
+    "claim": "trans-eQTLs for both environments had been under strong purifying selection, with the SFS being significantly left-shifted compared to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, trans normal = 0.0936, trans saline = 0.0910).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that trans-eQTLs for both environments had been under strong purifying selection, with the SFS being significantly left-shifted compared to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, trans normal = 0.0936, trans saline = 0.0910).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test results are provided.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "This effect was more pronounced for trans-eQTLs regulating multiple genes (two-tailed t-test p<10\u201316; normal mean MAF in unique trans-eQTLs=0.099, multiple trans-eQTL=0.073; saline mean MAF in unique trans-eQTLs=0.097, multiple trans-eQTL=0.071).",
+    "claim_type": "EXPLICIT",
+    "source": "Not surprisingly, given their highly pleiotropic nature, this effect was more pronounced for trans-eQTLs regulating multiple genes (two-tailed t-test p<10\u201316; normal mean MAF in unique trans-eQTLs=0.099, multiple trans-eQTL=0.073; saline mean MAF in unique trans-eQTLs=0.097, multiple trans-eQTL=0.071).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test results are provided.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "cis-eQTLs in both normal and saline conditions had potentially been under balancing selection with the SFS being significantly right-shifted for cis-eQTLs relative to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, cis normal = 0.238, cis saline = 0.237).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to trans-eQTLs, we found that cis-eQTLs in both normal and saline conditions had potentially been under balancing selection (Figure 5C, Figure 5\u2014figure supplement 3) with the SFS being significantly right-shifted for cis-eQTLs relative to background SNPs (two-tailed t-test p<10\u201316; mean MAF background = 0.20, cis normal = 0.238, cis saline = 0.237).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical test results are provided with figure reference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The estimated nucleotide diversity (\u03c0) for 100 kb regions flanking cis-eQTLs was significantly higher as compared to genome-wide 100 kb blocks (two-tailed t-test p<10\u201311; mean \u03c0 background = 0.286, cis normal = 0.297, cis saline = 0.297).",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, for both conditions, the estimated nucleotide diversity (\u03c0) for 100 kb regions flanking cis-eQTLs was also significantly higher as compared to genome-wide 100 kb blocks (two-tailed t-test p<10\u201311; mean \u03c0 background = 0.286, cis normal = 0.297, cis saline = 0.297).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test results are provided.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
     "claim": "trans-eQTLs in saline conditions were under stronger purifying selection compared to normal conditions (two-tailed t-test p=0.017).",
     "claim_type": "EXPLICIT",
     "source": "However, we did observe trans-eQTLs in saline conditions to be under stronger purifying selection (two-tailed t-test p=0.017).",
@@ -839,7 +885,7 @@
     ]
   },
   {
-    "claim_id": "C63",
+    "claim_id": "C67",
     "claim": "Salinity stress induces increased selective pressure on gene expression.",
     "claim_type": "EXPLICIT",
     "source": "We find that salinity stress induces increased selective pressure on gene expression.",
@@ -852,7 +898,7 @@
     ]
   },
   {
-    "claim_id": "C64",
+    "claim_id": "C68",
     "claim": "trans-eQTLs rather than cis-eQTLs are primarily associated with rice's gene expression under salinity stress, potentially via a few master-regulators.",
     "claim_type": "EXPLICIT",
     "source": "Further, we show that trans-eQTLs rather than cis-eQTLs are primarily associated with rice's gene expression under salinity stress, potentially via a few master-regulators.",
@@ -861,13 +907,12 @@
     ],
     "evidence": "This is a summary claim stated in the abstract and supported by eQTL analysis data.",
     "evidence_type": [
-      "DATA",
-      "INFERENCE"
+      "DATA"
     ]
   },
   {
-    "claim_id": "C65",
-    "claim": "cis-trans reinforcement is more common than cis-trans compensation, which may be reflective of rice diversification subsequent to domestication.",
+    "claim_id": "C69",
+    "claim": "cis-trans reinforcement is more common than cis-trans compensation which may be reflective of rice diversification subsequent to domestication.",
     "claim_type": "EXPLICIT",
     "source": "Importantly, and contrary to the expectations, we find that cis-trans reinforcement is more common than cis-trans compensation which may be reflective of rice diversification subsequent to domestication.",
     "source_type": [
@@ -880,174 +925,860 @@
     ]
   },
   {
-    "claim_id": "C66",
+    "claim_id": "C70",
     "claim": "Genetic fixation is the likely mechanism underlying cis-trans compensation/reinforcement.",
     "claim_type": "EXPLICIT",
     "source": "We further identify genetic fixation as the likely mechanism underlying this compensation/reinforcement.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary claim stated in the abstract and supported by linkage disequilibrium analysis.",
+    "evidence": "This is a summary claim stated in the abstract and supported by LD analysis.",
     "evidence_type": [
       "DATA",
       "INFERENCE"
     ]
   },
   {
-    "claim_id": "C67",
-    "claim": "cis-eQTLs are under balancing selection and trans-eQTLs are under purifying selection.",
+    "claim_id": "C71",
+    "claim": "cis- and trans-eQTLs are under balancing and purifying selection, respectively.",
     "claim_type": "EXPLICIT",
     "source": "Additionally, we show that cis- and trans-eQTLs are under balancing and purifying selection, respectively, giving us insights into the evolutionary dynamics of gene expression variation.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "This is a summary claim stated in the abstract and supported by site-frequency spectrum analysis.",
+    "evidence": "This is a summary claim stated in the abstract and supported by site frequency spectrum analysis.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
-    "claim_id": "C68",
-    "claim": "An estimated ~50\u201370% of crop yields are lost as a direct result of various abiotic stresses.",
+    "claim_id": "C72",
+    "claim": "Soil salinity causes osmotic imbalance between the plant and the soil, which impedes the uptake of water and other key nutrients.",
     "claim_type": "EXPLICIT",
-    "source": "indeed, as a direct result of various abiotic stresses, an estimated ~50\u201370% of crop yields are lost (Francini and Sebastiani, 2019).",
+    "source": "Soil salinity causes osmotic imbalance between the plant and the soil, which impedes the uptake of water and other key nutrients (Hakim et al., 2014; Munns, 2002), possibly leading to acute ion toxicity (Liang et al., 2018).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript cites a prior study for this estimate.",
+    "evidence": "Previous studies are cited to support this mechanism.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C69",
+    "claim_id": "C73",
     "claim": "Oryza sativa (Asian rice) is a salt-sensitive crop, facing significant yield loss due to soil salinity.",
     "claim_type": "EXPLICIT",
     "source": "Oryza sativa (Asian rice) is one such salt-sensitive crop, facing significant yield loss due to soil salinity (Hussain et al., 2017; Melino and Tester, 2023).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript cites prior studies supporting this claim.",
+    "evidence": "Previous studies are cited to support this characterization.",
     "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
+      "CITATION"
     ]
   },
   {
-    "claim_id": "C70",
+    "claim_id": "C74",
     "claim": "Rice responds to salinity stress by adjusting physiological and biochemical processes involved in osmotic and ion homeostasis, nutritional balances and oxidative stress.",
     "claim_type": "EXPLICIT",
     "source": "Rice responds to salinity stress by adjusting physiological and biochemical processes involved in osmotic and ion homeostasis, nutritional balances and oxidative stress (Castillo et al., 2007; Miller et al., 2010; Munns and Tester, 2008; Qin and Huang, 2020; Wang et al., 2012).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript cites multiple prior studies supporting this claim.",
-    "evidence_type": [
-      "CITATION",
-      "KNOWLEDGE"
-    ]
-  },
-  {
-    "claim_id": "C71",
-    "claim": "The study builds on prior work that examined selection on gene expression in rice in response to normal and dry conditions.",
-    "claim_type": "EXPLICIT",
-    "source": "This study builds on prior work by our group that examined selection on gene expression in rice in response to normal and dry conditions (Calic et al., 2022; Groen et al., 2020; Groen et al., 2021).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The manuscript cites prior studies by the same research group.",
+    "evidence": "Previous studies are cited to support these response mechanisms.",
     "evidence_type": [
       "CITATION"
     ]
   },
   {
-    "claim_id": "C72",
-    "claim": "The study used genomic, transcriptomic, and phenotypic datasets obtained from 130 diverse accessions of rice subjected to moderate levels of salinity stress.",
-    "claim_type": "EXPLICIT",
-    "source": "Using genomic, transcriptomic, and phenotypic datasets obtained from 130 diverse accessions of rice subjected to moderate levels of salinity stress",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The manuscript describes the study design.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C73",
-    "claim": "A total of 130 O. sativa ssp. indica (including indica and circum-aus groups) and 65 O. sativa ssp. japonica accessions were selected for the study.",
-    "claim_type": "EXPLICIT",
-    "source": "For this study, a total of 130 O. sativa ssp. indica (including indica and circum-aus groups) and 65 O. sativa ssp. japonica (including circum-basmati, tropical japonica, and temperate japonica) accessions were selected, including traditional varieties/landraces and three additionally replicated salt-sensitive and -tolerant test varieties.",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The manuscript describes the plant material used.",
-    "evidence_type": [
-      "DATA"
-    ]
-  },
-  {
-    "claim_id": "C74",
-    "claim": "The study focused analyses on O. sativa ssp. indica since it is the predominant global varietal group.",
-    "claim_type": "EXPLICIT",
-    "source": "We focused our analyses on O. sativa ssp. indica since it is the predominant global varietal group (Supplementary file 13).",
-    "source_type": [
-      "TEXT"
-    ],
-    "evidence": "The manuscript explains the rationale for focusing on indica subspecies.",
-    "evidence_type": [
-      "KNOWLEDGE",
-      "INFERENCE"
-    ]
-  },
-  {
     "claim_id": "C75",
-    "claim": "The application of salt in the saline field started on January 19, 2017, when the plants were 31 days old.",
+    "claim": "An estimated ~50\u201370% of crop yields are lost as a direct result of various abiotic stresses.",
     "claim_type": "EXPLICIT",
-    "source": "The application of salt in site L5 started on January 19, 2017, when the plants were 31 days old.",
+    "source": "indeed, as a direct result of various abiotic stresses, an estimated ~50\u201370% of crop yields are lost (Francini and Sebastiani, 2019).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript describes the experimental protocol.",
+    "evidence": "A previous study is cited to support this estimate.",
     "evidence_type": [
-      "DATA"
+      "CITATION"
     ]
   },
   {
     "claim_id": "C76",
-    "claim": "The salinity levels were maintained at 6 dSm\u20131 (considered mild to moderate salinity stress) until maturity.",
+    "claim": "130 accessions of O. sativa ssp. indica were used in the study.",
     "claim_type": "EXPLICIT",
-    "source": "The salinity levels were then maintained at 6 dSm\u20131 (considered mild to moderate salinity stress) until maturity.",
+    "source": "To understand the microevolutionary dynamics of gene expression variation under salinity stress, we first investigated variation in transcript abundance in 130 accessions of O. sativa ssp. indica.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript describes the experimental conditions.",
+    "evidence": "The manuscript directly states the number and type of accessions used.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C77",
-    "claim": "Raw sequence reads have been submitted to the SRA (BioProject PRJNA1010833).",
+    "claim": "The field experiment was conducted with three replicates of each accession planted in both normal and saline fields.",
     "claim_type": "EXPLICIT",
-    "source": "Raw sequence reads have been submitted to the SRA (BioProject PRJNA1010833).",
+    "source": "Within each field environment, there were three blocks and three replicates of each genotype (accession), with each genotype planted once per block in a random location.",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript states data availability.",
+    "evidence": "The experimental design is explicitly described.",
     "evidence_type": [
       "DATA"
     ]
   },
   {
     "claim_id": "C78",
+    "claim": "The application of salt started on January 19, 2017, when the plants were 31 days old.",
+    "claim_type": "EXPLICIT",
+    "source": "The application of salt in site L5 started on January 19, 2017, when the plants were 31 days old.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The timing of salt application is explicitly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The salinity levels were maintained at 6 dSm\u20131 (considered mild to moderate salinity stress) until maturity.",
+    "claim_type": "EXPLICIT",
+    "source": "The salinity levels were then maintained at 6 dSm\u20131 (considered mild to moderate salinity stress) until maturity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The salt concentration and duration are explicitly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Population variance in gene expression of 18,141 widely expressed transcripts was partitioned into genotype (G), environment (E), and genotype \u00d7environment (G\u00d7E) effects using a two-way mixed ANOVA.",
+    "claim_type": "EXPLICIT",
+    "source": "Population variance in gene expression of 18,141 widely expressed transcripts was partitioned into genotype (G), environment (E), and genotype \u00d7environment (G\u00d7E) effects using a two-way mixed analyses of variance (ANOVA) with environment as a fixed effect and genotype and genotype \u00d7environment as random effects (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The statistical analysis method is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The significant G\u00d7E indicates genetic variation for plasticity, indicating that this plasticity can evolve.",
+    "claim_type": "EXPLICIT",
+    "source": "The significant G\u00d7E indicates genetic variation for plasticity, indicating that this plasticity can evolve.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the statistical results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Both mean and variance of transcript expression vary significantly between conditions (Mann-Whitney U-test, mean and standard deviation: p<2.2 x 10\u201316).",
+    "claim_type": "EXPLICIT",
+    "source": "We found that both mean and variance of transcript expression vary significantly between conditions (Mann-Whitney U-test, mean and standard deviation: p<2.2 x 10\u201316), which means that the interpretation of the strength of selection based on either of these differentials could be misleading (Supplementary file 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical test results are provided.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The G\u00d7E of transcripts does not translate to the complex trait of fitness.",
+    "claim_type": "EXPLICIT",
+    "source": "This could be due to a combination of factors, like gene interactions (pleiotropy and epistasis) leading to little to no effect on fitness, or environment specific genotype-dependent gene regulation (environment specific eQTLs). Furthermore, only a relatively small number of transcripts (254) showed significant variation due to E, indicating genotype-independent plasticity in gene expression for only a small fraction of genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the lack of G\u00d7E for fitness despite G\u00d7E for transcripts.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "In the saline environment, an increase in fitness is associated with extremes in transcript abundance.",
+    "claim_type": "EXPLICIT",
+    "source": "This indicates that in the saline environment, as compared to normal conditions, an increase in fitness is associated with extremes in transcript abundance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the disruptive selection results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The results are consistent with a lack of trade-offs in which the expression of a gene is favored in one environment and disfavored in another.",
+    "claim_type": "EXPLICIT",
+    "source": "These results are consistent with a lack of trade-offs in which the expression of a gene is favored in one environment and disfavored in another.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the conditional neutrality vs antagonistic pleiotropy results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "This change in correlation structure indicates possible divergence in gene interactions between environments, which may presage a restructuring of gene networks.",
+    "claim_type": "EXPLICIT",
+    "source": "This change in correlation structure indicates possible divergence in gene interactions between environments, which may presage a restructuring of gene networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the decoherence results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Salt exposure induces decoherence of gene expression in some transcripts, that this decoherence results from a restructuring of the gene expression network, and this restructuring can allow salt stress tolerance.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results suggest that salt exposure induces decoherence of gene expression in some transcripts, that this decoherence results from a restructuring of the gene expression network, and this restructuring can allow salt stress tolerance, providing a potential molecular mechanism underlying this tolerance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the decoherence analysis results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "An optimal leaf osmotic potential is important under salt stress.",
+    "claim_type": "EXPLICIT",
+    "source": "This trait was under positive directional selection in the control environment but under stabilizing selection under saline conditions, which suggests that an optimal LOP is important under salt stress (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the selection analysis results on LOP.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The reduction in chlorophyll a content is associated with increased survival and reproductive fitness under salinity stress.",
+    "claim_type": "EXPLICIT",
+    "source": "Although ion toxicity has previously been shown to reduce chlorophyll content (Ashraf and Bhatti, 2000; Ta\u00efbi et al., 2016), our results showed that this reduction is associated with increased survival and reproductive fitness, consistent with the general trend for reduced photosynthesis under salinity stress.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the selection analysis results on chlorophyll a content.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Salt stress selects for an earlier flowering compared to that in the normal wet paddy.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, FT was significantly reduced under saline conditions (two-tailed paired t-test p=0.0012; Figure 4\u2014figure supplement 2), implying that salt stress selects for an earlier flowering compared to that in the normal wet paddy.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the flowering time results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "trans-eQTLs might be more environment-specific than cis-eQTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, comparing the effect sizes of the two categories of eQTLs, we found that trans-eQTLs explain more variation in transcript abundance as compared to cis-eQTLs in both environments (two-tailed t-test p<10\u201316; mean effect size: cis-normal=0.77, trans-normal=1.04, cis-saline=0.80, trans-saline=1.08). This further indicates that trans-eQTLs might be more environment-specific than cis-eQTLs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the eQTL effect size comparison.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The excess of reinforcing rather than compensatory effects could be driven by the extensive diversity among rice landraces that arose from crop diversification following domestication.",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesized that this excess of reinforcing rather than compensatory effects could be driven by the extensive diversity among rice landraces that arose from crop diversification following domestication (Meyer and Purugganan, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis stated with citation to support the context.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "cis-trans compensation/reinforcement can arise due to the genetic fixation of compensating/reinforcing trans-regulatory variants, potentially due to epistasis.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, it has been suggested that cis-trans compensation/reinforcement can arise due to the genetic fixation of compensating/reinforcing trans-regulatory variants, potentially due to epistasis (McManus et al., 2014; Signor and Nuzhdin, 2018), which could lead to elevated linkage disequilibrium (LD) between the cis- and trans-regulatory variants acting on a gene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Previous studies are cited to support this mechanism.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "cis- and trans-eQTLs are under different selection regimes in rice.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, this indicates that cis- and trans-eQTLs are under different selection regimes in rice",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary interpretation of the selection analysis on eQTLs.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Purifying selection is stronger on trans-eQTLs regulating gene expression under salt stress conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "and that purifying selection is stronger on trans-eQTLs regulating gene expression under salt stress conditions, giving us insights into the macroevolutionary dynamics of gene-expression variation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary interpretation of the selection analysis comparing normal and saline conditions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "It may be feasible to breed salinity tolerant rice varieties without a yield penalty under non-saline conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, both conditional neutrality and antagonistic pleiotropy have been shown to underlie local adaptation (Anderson et al., 2013; Wadgymar et al., 2017), following which our findings indicate that it may be feasible to breed salinity tolerant rice varieties without a yield penalty under non-saline conditions, though further work is needed to verify this.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the conditional neutrality results with citations to support the context.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Different types of stress may either constrain or facilitate the response to selection.",
+    "claim_type": "EXPLICIT",
+    "source": "This finding contrasts with prior work in rice under dry and wet conditions that found a lack of constraint in response to selection for most traits except seed size because direct and indirect responses to selection were largely similar (Calic et al., 2022), indicating that different types of stress may either constrain or facilitate the response to selection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation comparing results to previous work with citation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Continuous exposure to soil salinity may lead to a tentative increase in expression of circadian clock genes.",
+    "claim_type": "EXPLICIT",
+    "source": "This is in alignment with the role of circadian clock genes in conferring salt tolerance (Kim et al., 2013; Wei et al., 2021; Xu et al., 2022), and indicates a tentative increase in expression of circadian clock genes with continuous exposure to soil salinity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the selection results on circadian rhythm with citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Responses to salt stress may alter the expression patterns of genes in the circadian rhythm network, leading to decoherence.",
+    "claim_type": "EXPLICIT",
+    "source": "These findings make sense in light of the fact that circadian rhythm has been shown to regulate salt tolerance and flowering time in rice (Liang et al., 2021; Wei et al., 2021), so responses to salt stress may alter the expression patterns of genes in the circadian rhythm network, leading to decoherence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the decoherence results with citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Detection of population-level correlations are temporally biased and may fail to detect the transient environmentally responsive links resulting in false negatives.",
+    "claim_type": "EXPLICIT",
+    "source": "But as is with such analyses, detection of population-level correlations are temporally biased and may fail to detect the transient environmentally responsive links resulting in false negatives (Cai and Des Marais, 2023) and leading to the failure to detect temporally key processes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a caveat about the analysis method with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "These loci (OsCYP2, PSAN, CRR7, OsFLP) are possible new targets for functional and translational studies of salinity stress in rice.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, these loci are possible new targets for functional and translational studies of salinity stress in rice.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion about potential applications of the findings.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Domesticated rice is primarily classified into two distinct genetic subgroups, O. sativa ssp. indica and O. sativa ssp. japonica.",
+    "claim_type": "EXPLICIT",
+    "source": "Domesticated rice is primarily classified into two distinct genetic subgroups, O. sativa ssp. indica and O. sativa ssp. japonica. These subgroups are grown in sympatry and are often recognized as subspecies, given the reproductive barriers between them (Nadir et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is background information with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "A widely accepted classification consists of genetically distinct varietal groups namely, indica, aus/circum-aus, aromatic/circum-basmati, tropical japonica, and temperate japonica.",
+    "claim_type": "EXPLICIT",
+    "source": "Further analyses have identified a widely accepted classification consisting of genetically distinct varietal groups namely, indica, aus/circum-aus, aromatic/circum-basmati, tropical japonica, and temperate japonica (Garris et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is background information with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "A total of 130 O. sativa ssp. indica (including indica and circum-aus groups) and 65 O. sativa ssp. japonica accessions were selected for the study.",
+    "claim_type": "EXPLICIT",
+    "source": "For this study, a total of 130 O. sativa ssp. indica (including indica and circum-aus groups) and 65 O. sativa ssp. japonica (including circum-basmati, tropical japonica, and temperate japonica) accessions were selected, including traditional varieties/landraces and three additionally replicated salt-sensitive and -tolerant test varieties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The plant material selection is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Seeds were obtained from the International Rice Genebank Collection (IRGC) at IRRI and from a 2016 bulk seed collection.",
+    "claim_type": "EXPLICIT",
+    "source": "Seeds were obtained from the International Rice Genebank Collection (IRGC) at the International Rice Research Institute (IRRI) in the Philippines, and from a 2016 bulk seed collection obtained from plants grown under normal (wet and non-saline) conditions at IRRI during the course of a previous study (Groen et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The seed source is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Seeds were sown on December 16, 2016, and seedlings were transplanted into the experimental fields at 17 days after sowing on January 5, 2017.",
+    "claim_type": "EXPLICIT",
+    "source": "Seeds from each accession were sown on December 16, 2016, and seedlings were then transplanted into the experimental fields at 17 days after sowing (DAS), on January 5, 2017.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The timing of planting is explicitly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Each plant was planted in a single-row with 0.2-m \u00d7 0.2-m spacing between them for a total of one focal plant and seven neighboring plants per plot.",
+    "claim_type": "EXPLICIT",
+    "source": "Each plant was planted in a single-row with 0.2-m \u00d7 0.2-m spacing between them for a total of one focal plant and seven neighboring plants (included in the experiment) per plot.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The planting design is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The EC levels were recorded twice per day until reaching an EC = 6 dSm\u20131 and then recorded daily.",
+    "claim_type": "EXPLICIT",
+    "source": "The EC levels were recorded twice per day until reaching an EC = 6 dSm\u20131 and then recorded daily.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The monitoring protocol is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Total RNA was extracted using the RNeasy Plant Mini Kit according to manufacturer's protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "After this, total RNA was extracted using the RNeasy Plant Mini Kit according to manufacturer's protocol (QIAGEN) and eluted in nuclease-free water.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The RNA extraction method is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Library preparation followed a plate-based 3\u2032-end mRNA sequencing (3\u2032 mRNA-seq) protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "Library preparation for 780 samples was performed as described in Groen et al., 2020 and followed a plate-based 3\u2032-end mRNA sequencing (3\u2032 mRNA-seq) protocol.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The library preparation method is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The resulting cDNA libraries were sequenced at the NYU Genomics Core on an Illumina NextSeq 500 with the configuration HighOutput 1x75 base pairs.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting cDNA libraries were then quantified on an Agilent BioAnalyzer and sequenced at the NYU Genomics Core on an Illumina NextSeq 500 with the configuration HighOutput 1x75 base pairs (bp) and the settings: Read 1 of 20 bp (bases 1\u201312, well barcode; bases 13\u201320, unique molecular identifier [UMI]) and Read 2 of 50 bp.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The sequencing method is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Raw sequence reads have been submitted to the SRA (BioProject PRJNA1010833).",
+    "claim_type": "EXPLICIT",
+    "source": "Raw sequence reads have been submitted to the SRA (BioProject PRJNA1010833).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Data availability is explicitly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Drop-seq tools v1.12 and Picard tools v2.9.0 were used to generate the metadata.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly, Drop-seq tools v1.12 (RRID:SCR_018142; https://github.com/broadinstitute/Drop-seq) and Picard tools v2.9.0 (https://broadinstitute.github.io/picard/) were used to generate the metadata.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The data processing tools are explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The reference genome, Nipponbare IRGSP 1.0, and annotations were indexed with STAR v020201.",
+    "claim_type": "EXPLICIT",
+    "source": "The reference genome, Nipponbare IRGSP 1.0 (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/433/935/GCF_001433935.1_IRGSP-1.0), and annotations were indexed with STAR v020201 (Dobin et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The reference genome and indexing method are explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Broad-sense heritability was estimated as H2 = \u03c32G /(\u03c32G + \u03c32GE/e + \u03c32E/re).",
+    "claim_type": "EXPLICIT",
+    "source": "Broad-sense heritability was estimated as H2 = \u03c32G /(\u03c32G + \u03c32GE/e + \u03c32E/re), with \u03c32G, \u03c32E and \u03c32GE as the variance explained due to G, E, and G\u00d7E; e and r represent the number of environments and number of replicates per environment, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The heritability calculation formula is explicitly provided.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Fitness was estimated as fecundity, which was the total number of filled rice grains per individual.",
+    "claim_type": "EXPLICIT",
+    "source": "Fitness was estimated as fecundity, which was the total number of filled rice grains per individual.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The fitness measure is explicitly defined.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Unstandardized linear selection differentials (S) on gene expression were estimated as coefficients of linear regression with fecundity as the dependent variable.",
+    "claim_type": "EXPLICIT",
+    "source": "Unstandardized linear selection differentials (S) on gene expression were estimated as coefficients of linear regression with fecundity as the dependent variable in each regression and transcript abundance and block as the independent variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The selection differential calculation method is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Principal component analysis (PCA) was performed on transcript abundance using the prcomp function in R.",
+    "claim_type": "EXPLICIT",
+    "source": "Principal component analysis (PCA) was performed on transcript abundance using the prcomp function in R (R Development Core Team, 2013; Kassambara, 2017) and PCs explaining over 0.5% of variance in each environment were chosen for multivariate selection analyses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The PCA method is explicitly described with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Gene Ontology (GO) term annotations for rice genes/transcripts were downloaded from Monocots PLAZA 5.0.",
+    "claim_type": "EXPLICIT",
+    "source": "Gene Ontology (GO) term annotations for rice genes/transcripts were downloaded from Monocots PLAZA 5.0 (Van Bel et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The GO annotation source is explicitly stated with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "CILP (Correlation by Individual Level Product) method was used to examine regulatory decoherence in rice.",
+    "claim_type": "EXPLICIT",
+    "source": "To examine regulatory decoherence in rice, a recently developed method, CILP (Correlation by Individual Level Product), was used (Lea et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The decoherence analysis method is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Raw FASTQ files were downloaded from the Sequence Read Archive (SRA) for 14 accessions under BioProject PRJEB6180 and for 92 accessions under Bioprojects PRJNA422249 and PRJNA557122.",
+    "claim_type": "EXPLICIT",
+    "source": "Raw FASTQ files were downloaded from the Sequence Read Archive (SRA) website under BioProject PRJEB6180 for 14 accessions (Wang et al., 2018) and under Bioprojects PRJNA422249 and PRJNA557122 for 92 accessions (Gutaker et al., 2020; Supplementary file 13).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The genomic data sources are explicitly stated with citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
     "claim": "Genomes of 19 accessions were re-sequenced and submitted to the SRA (BioProject PRJNA1012700).",
     "claim_type": "EXPLICIT",
     "source": "Further, genomes of 19 accessions were re-sequenced, and submitted to the SRA (BioProject PRJNA1012700), leading to a total of 125 accessions for which genomic data was available (Supplementary file 13).",
     "source_type": [
       "TEXT"
     ],
-    "evidence": "The manuscript states data generation and availability.",
+    "evidence": "The re-sequencing and data submission are explicitly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Raw reads were processed for quality control and adapter trimming using the bbduk program of BBTools version 37.66.",
+    "claim_type": "EXPLICIT",
+    "source": "Raw reads were processed for quality control and adapter trimming using the bbduk program of BBTools version 37.66 (https://jgi.doe.gov/data-and-tools/bbtools/) using the options: minlen = 25 qtrim = rl trimq = 10 ktrim = r k=25 mink=11 hdist = 1 tpe tbo.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The quality control method is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The output was mapped to the reference genome O. sativa Nipponbare IRGSP 1.0 genome using bwa-mem2 v2.1.",
+    "claim_type": "EXPLICIT",
+    "source": "The output from this program was mapped to the reference genome O. sativa Nipponbare IRGSP 1.0 genome that was downloaded from NCBI Genome (https://www.ncbi.nlm.nih.gov/genome/?term=txid4530[orgn]) using bwa-mem2 v2.1 (Vasimuddin et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The mapping method is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "SNPs were called using GATK HaplotypeCaller v4.2.0.0 to obtain a multi-accession joint SNP file.",
+    "claim_type": "EXPLICIT",
+    "source": "SNPs were called using GATK HaplotypeCaller v4.2.0.0 to obtain a multi-accession joint SNP file.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The SNP calling method is explicitly described.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "SNPs were filtered using the recommended GATK hard filtering.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, SNPs were filtered using the recommended GATK hard filtering (Van der Auwera et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The SNP filtering method is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Missing genotype calls were imputed and phased using Beagle v4.1.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, missing genotype calls were imputed and phased using Beagle v4.1 (Browning and Browning, 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The imputation method is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "SNPs were randomly pruned such that one SNP per 1000 bp was retained, leaving a SNP dataset of 246,714 markers.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, SNPs were randomly pruned such that one SNP per 1000 bp was retained using vcftools v0.1.16 \u2013thin (Danecek et al., 2011), leaving a SNP dataset of 246,714 markers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The SNP pruning method and final dataset size are explicitly stated with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Association mapping was performed between the SNP markers and gene expression values using the linear model in Matrix eQTL.",
+    "claim_type": "EXPLICIT",
+    "source": "Association mapping was performed between the SNP markers and gene expression values recorded in the normal and saline environments. For this, the linear model in Matrix eQTL was used (Shabalin, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The eQTL mapping method is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The first five principal components (PCs) of the kinship matrix were estimated using GAPIT v3 and added as covariates to control for population structure.",
+    "claim_type": "EXPLICIT",
+    "source": "The first five principal components (PCs) of the kinship matrix were estimated using GAPIT v3 (Wang and Zhang, 2021) and added as covariates to control for population structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The population structure correction method is explicitly described with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "trans-eQTLs were defined as being on a different chromosome or at least 1 Mb away from a gene under its influence on the same chromosome; cis-eQTLs were defined as <100 kb away from an associated gene.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to long stretches of homozygosity attributed to the highly inbred nature of rice, trans-eQTLs were defined as being on a different chromosome or at least 1 Mb away from a gene under its influence on the same chromosome; cis-eQTLs were defined as <100 kb away from an associated gene.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The eQTL classification criteria are explicitly defined.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "A lead SNP was identified as the SNP with the most significant association within a 100 kb region.",
+    "claim_type": "EXPLICIT",
+    "source": "For each gene regulated by a SNP in cis or trans, a lead SNP was identified as the SNP with the most significant association within a 100 kb region.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The lead SNP definition is explicitly stated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "Genes were defined as compensating and reinforcing if they had at least 60% of individuals with opposite and same cis-trans allelic configuration, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "Genes were defined as compensating and reinforcing if they had at least 60% of individuals with opposite and same cis-trans allelic configuration, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The compensation/reinforcement classification criteria are explicitly defined.",
     "evidence_type": [
       "DATA"
     ]

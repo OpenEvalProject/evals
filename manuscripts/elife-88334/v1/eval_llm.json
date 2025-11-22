@@ -5,22 +5,21 @@
       "C1",
       "C2",
       "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
       "C14",
       "C15",
       "C16",
-      "C17",
-      "C18",
-      "C19",
-      "C20",
-      "C21",
-      "C22",
-      "C23"
+      "C17"
     ],
-    "result": "The manuscript establishes the context and motivation for TaG-EM by describing the current state and limitations of single-cell sequencing technologies, spatial genomics, and existing barcoding approaches. Single-cell sequencing has enabled transcriptomic cell atlases but faces challenges in linking anatomical information to transcriptomic data and positively identifying cell types. Current spatial genomics technologies have cost and applicability constraints, and manual annotation is labor-intensive.",
+    "result": "The manuscript establishes the context and motivation for TaG-EM by describing the current state of single-cell sequencing technologies and their limitations. Single-cell sequencing has enabled transcriptomic cell atlases but faces challenges in linking anatomical information to transcriptomic data and positively identifying cell types. Current methods rely on inference from marker gene expression, which is labor-intensive and introduces uncertainty. Existing antibody-based multiplexing approaches typically barcode at the population level rather than cell subpopulations.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C3, C14-C23 provide well-established background knowledge about single-cell sequencing capabilities and limitations, supported by appropriate citations to prior literature. These claims accurately represent the current state of the field and establish the scientific context and need for the TaG-EM approach.",
+    "evaluation": "Claims C1-C17 collectively describe established knowledge in the field, supported by appropriate citations to prior literature. These claims accurately represent the capabilities and limitations of current single-cell sequencing approaches and provide appropriate context for the development of TaG-EM. The characterization of current challenges is consistent with the cited literature.",
     "result_type": "MINOR"
   },
   {
@@ -28,202 +27,210 @@
     "claim_ids": [
       "C4",
       "C5",
-      "C24",
-      "C25",
-      "C26"
+      "C18",
+      "C19"
     ],
-    "result": "The authors developed TaG-EM by inserting a 14 bp DNA barcode just upstream of the polyadenylation site in a Gal4-inducible UAS-GFP construct. A pool of 29 unique barcode-containing plasmids was injected into Drosophila embryos for PhiC31-mediated integration, resulting in 20 distinctly barcoded transgenic lines that were confirmed by Sanger sequencing.",
+    "result": "The authors developed TaG-EM by inserting DNA barcodes upstream of the polyadenylation site in a Gal4-inducible UAS-GFP construct. A pool of 29 unique barcode-containing plasmids was injected into Drosophila embryos for PhiC31-mediated integration, resulting in 20 distinctly barcoded transgenic lines that were confirmed by Sanger sequencing.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C4-C5, C24-C26 describe the construction and generation of TaG-EM lines with appropriate experimental detail. The results are supported by Figure 1A-B and Figure 1\u2014figure supplement 1, which show the construct design and sequence verification. The methodology is clearly described and the recovery of 20 distinct lines from 29 injected constructs is documented.",
+    "evaluation": "Claims C4, C5, C18, and C19 describe the technical design and generation of TaG-EM lines. The experimental procedures are clearly described in the Methods section, and the recovery of 20 distinct lines from 29 injected constructs is documented in Figure 1\u2014figure supplement 1. The technical approach is sound and well-documented.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R3",
     "claim_ids": [
-      "C27",
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C32"
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
     ],
-    "result": "TaG-EM barcode measurements are highly accurate and reproducible based on structured pool experiments. Technical replicates showed minimal variability, even pools produced consistent data with all 20 barcodes detected at expected 5% abundance, and staggered pools showed barcode abundances consistent with input values. When multiple barcodes were averaged, R\u00b2 values exceeded 0.99, indicating high quantitative accuracy.",
+    "result": "TaG-EM measurements demonstrate high accuracy and reproducibility in structured pool experiments. Technical replicates showed minimal variability, even pools produced consistent detection of all 20 barcodes at expected 5% abundance, and staggered pools showed R\u00b2 values >0.99 when multiple barcodes per condition were averaged. High quantitative accuracy can be attained, particularly when averaging 3-4 independent barcodes per experimental condition.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C27-C32 are well-supported by the structured pool experiments shown in Figure 2B-E. The experimental design with even and staggered pools, technical replicates, and independent extractions provides robust validation. The high R\u00b2 values (>0.99) when averaging 3-4 barcodes demonstrate quantitative accuracy. However, the manuscript does not provide statistical tests or confidence intervals for these correlations.",
+    "evaluation": "Claims C20-C24 are directly supported by experimental data shown in Figure 2. The structured pool experiments with defined inputs provide strong validation of the quantitative accuracy of TaG-EM. The high R\u00b2 values and low variability across technical and biological replicates demonstrate robust performance. The experimental design appropriately tests both precision (technical replicates) and accuracy (comparison to expected values).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R4",
     "claim_ids": [
-      "C33"
+      "C25"
     ],
-    "result": "TaG-EM-based phototaxis measurements were nearly identical to conventional video-based behavioral measurements for both wild type and norpA mutants.",
+    "result": "TaG-EM-based measurements of phototaxis behavior were nearly identical to conventional video-based measurements for both wild-type and norpA mutant flies.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C33 is supported by Figure 3A-B showing comparable preference indices between TaG-EM and manual measurements. However, no statistical test is provided to quantify 'nearly identical,' and the sample size (n=3 biological replicates for 4 barcode lines per genotype) is modest. The visual agreement in the figures is convincing but lacks formal statistical validation.",
+    "evaluation": "Claim C25 is directly supported by experimental data comparing TaG-EM and manual video scoring shown in Figure 3A-B. The preference indices calculated by both methods show strong agreement for both genotypes, validating TaG-EM for behavioral measurements. The use of a blind mutant (norpA) as a negative control strengthens the result.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C34",
-      "C35"
+      "C26",
+      "C27"
     ],
-    "result": "TaG-EM measurements of oviposition generally correlated with fly numbers, but barcode 14 showed reduced abundance across multiple trials, suggesting that behavioral differences may exist among TaG-EM lines despite insertion in a common landing site.",
+    "result": "TaG-EM barcode 14 showed reduced abundance in oviposition experiments, suggesting that despite insertion in a common landing site, behavioral differences may exist among lines that should be tested for specific assays.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C34-C35 are supported by Figure 3\u2014figure supplement 1 showing the reduced performance of barcode 14. The inference that line-specific behavioral differences may exist (C35) is reasonable given the data, though the mechanism is not explored. This represents an important limitation that the authors appropriately acknowledge.",
+    "evaluation": "Claims C26 and C27 are supported by data in Figure 3\u2014figure supplement 1 showing consistent poor performance of barcode 14 across multiple trials. The inference that lines should be validated for specific behavioral assays (C27) is reasonable given this observation. This represents an important limitation and quality control consideration for the method.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C36",
-      "C37"
+      "C28",
+      "C29"
     ],
-    "result": "In age-dependent fecundity experiments, manually scored viable egg numbers and TaG-EM barcode abundances were well correlated (R\u00b2 = 0.52-0.84 for individual barcodes), with correlations improving substantially when barcodes from each timepoint were averaged (R\u00b2 = 0.95-0.99).",
+    "result": "TaG-EM measurements of age-dependent fecundity correlated well with manual egg counts. Individual barcode measurements showed R\u00b2 values of 0.52-0.84 across two trials, while averaged measurements per timepoint showed R\u00b2 values of 0.95-0.99.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36-C37 are supported by the data shown in Figure 3C and Figure 3\u2014figure supplement 2-3. The improvement in correlation when averaging multiple barcodes is consistent with the structured pool results. However, the moderate R\u00b2 values for individual barcodes (0.52-0.84) indicate substantial noise, and no statistical tests are provided to assess significance of the correlations.",
+    "evaluation": "Claims C28 and C29 are directly supported by experimental data in Figure 3C and supplementary figures. The correlation improves substantially when averaging multiple barcodes per condition, consistent with the structured pool results (C24). The data demonstrate that TaG-EM can quantify biological phenomena with temporal dynamics.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C38",
-      "C39",
-      "C40"
+      "C30",
+      "C31",
+      "C32"
     ],
-    "result": "Caffeine reduces transit time through the larval gut, consistent with previous observations that bitter compounds activate enteric neurons and promote gut motility. TaG-EM measurements recapitulated the results from manual gut motility assays.",
+    "result": "Caffeine reduces transit time through the larval gut, consistent with prior observations that bitter compounds activate enteric neurons and promote gut motility. TaG-EM measurements recapitulated results from manual gut transit assays.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C38-C40 are supported by Figure 4C-D showing reduced transit time with caffeine in both manual and TaG-EM assays. The consistency with prior literature (C39) is appropriately cited. However, the manuscript states p-values (p=0.0340 for manual, p=0.0488 for TaG-EM) but does not clearly describe the statistical test used beyond mentioning a 'modified Chi-squared method' in the figure legend.",
+    "evaluation": "Claims C30-C32 are supported by experimental data in Figure 4C-D showing consistent results between manual and TaG-EM assays. The effect of caffeine is statistically significant (p=0.034 for manual, p=0.049 for TaG-EM) and consistent with cited prior work. This demonstrates TaG-EM's utility for a labor-intensive assay.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C41",
-      "C42",
-      "C43",
-      "C44"
+      "C33",
+      "C34",
+      "C35",
+      "C36"
     ],
-    "result": "GFP expression was observed in 19/20 original TaG-EM lines at similar levels to the base pJFRC12 construct when driven by dpp-Gal4. Barcode 8 lacked GFP expression due to an 853 bp deletion in the GFP coding region. All 156 additional TaG-EM lines showed robust GFP expression, and expression levels were similar to the base construct across multiple driver lines.",
+    "result": "TaG-EM constructs show robust GFP expression when driven by Gal4. 19 of 20 original lines showed expected GFP expression patterns in wing imaginal discs (one line had a deletion in GFP), 156 additional lines showed robust expression, and expression levels were similar to the base pJFRC12 construct across multiple driver lines.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C44 are supported by Figure 5A and Figure 5\u2014figure supplements 1-2. The characterization of barcode 8's deletion explains its lack of GFP expression. The testing of 156 additional lines demonstrates scalability, though the data is not shown. The comparison to the base construct across multiple drivers validates that barcode insertion does not generally impair expression.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C33-C36 are supported by imaging data in Figure 5A and supplementary figures. The high success rate (19/20 for original lines, 156/156 for additional lines) demonstrates that barcode insertion does not generally impair GFP expression. The molecular characterization of the non-expressing line (C34) provides appropriate quality control. However, data for the 156 additional lines is not shown, which is a minor limitation.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C45"
+      "C37"
     ],
     "result": "Adding a hexameric GFP construct can boost expression of weak driver lines to levels sufficient for robust detection and flow cytometry.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C45 is supported by Figure 5B and Figure 6\u2014figure supplement 1 showing enhanced GFP signal with the hexameric construct. This provides a practical solution for weak drivers, though the manuscript does not quantify the fold-increase in expression or systematically test multiple weak drivers.",
+    "evaluation": "Claim C37 is supported by imaging and flow cytometry data in Figure 5B and Figure 6\u2014figure supplement 1. This provides a practical solution for driver lines with weak expression, extending the applicability of TaG-EM. The approach is well-validated with visual and quantitative data.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C46",
-      "C47"
+      "C38",
+      "C39"
     ],
-    "result": "TaG-EM barcodes can be detected in single-cell sequencing data. All three PC-Gal4-driven barcodes were observed in the intestinal precursor cell cluster, and barcode 8 (which lacked GFP expression) was also detected, indicating that the GFP deletion does not prevent mRNA expression.",
+    "result": "TaG-EM barcodes can be detected in single-cell sequencing data. All three PC-Gal4-driven barcodes were detected in intestinal precursor cells, including barcode 8 which lacked GFP expression due to a deletion, indicating that the GFP lesion does not prevent mRNA expression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C47 are supported by Figure 6\u2014figure supplement 3 showing barcode expression in the expected cell cluster. The detection of barcode 8 despite lack of GFP protein is an interesting observation that validates the barcode can be transcribed independently of GFP translation. However, the manuscript does not quantify detection rates or compare expression levels across barcodes.",
+    "evaluation": "Claims C38 and C39 are supported by single-cell sequencing data in Figure 6\u2014figure supplement 3. The detection of barcode 8 despite lack of GFP protein expression is an interesting observation that demonstrates barcode detection is independent of protein expression. This validates the core concept of TaG-EM for single-cell applications.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C48",
-      "C49",
-      "C50"
+      "C40",
+      "C41",
+      "C42"
     ],
-    "result": "DoubletFinder identified 2019 multiplet droplets while TaG-EM barcodes identified 298 multiplets, with 198 (66.4%) overlapping. TaG-EM identified an additional 100 doublets that would have been overlooked by computational methods alone.",
+    "result": "TaG-EM barcodes identified 298 multiplet droplets in single-cell sequencing, with 198 (66.4%) overlapping with the 2019 doublets identified by DoubletFinder. TaG-EM identified an additional 100 doublets beyond computational methods.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C48-C50 are supported by Figure 6\u2014figure supplement 5 showing the overlap between methods. The identification of additional doublets by TaG-EM is valuable, though the manuscript does not validate these 100 additional doublets or explain why TaG-EM detected fewer total doublets than DoubletFinder. The lower sensitivity of TaG-EM may be due to incomplete barcode detection.",
+    "evaluation": "Claims C40-C42 are supported by computational analysis in Figure 6\u2014figure supplement 5. The complementary nature of TaG-EM and computational doublet detection demonstrates added value. However, the manuscript does not validate whether the TaG-EM-unique doublets are true positives, which would strengthen this result.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C51",
-      "C52",
-      "C53",
-      "C54",
-      "C55",
-      "C56",
-      "C57"
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
     ],
-    "result": "TaG-EM barcodes were observed in approximately one-quarter of cells from eight multiplexed genotypes. Cell-type-specific barcodes showed restricted expression patterns correlating with known marker genes: EB-Gal4-driven barcode 6 was expressed in enteroblasts, EC-Gal4-driven barcode 4 in enterocytes (with regional restriction), and EE-Gal4-driven barcode 9 in enteroendocrine cells. This demonstrates that TaG-EM can label specific cell populations correlating with in vivo Gal4-driven expression patterns.",
+    "result": "TaG-EM barcodes label specific cell populations that correlate with Gal4-driven expression patterns in vivo. In larval gut, barcodes were detected in approximately one-quarter of cells, with cell-type-specific drivers (EB-Gal4, EC-Gal4, EE-Gal4) showing expression in enteroblasts, enterocytes, and enteroendocrine cells respectively, co-localizing with known marker genes. Immunostaining confirmed driver specificity and regional expression patterns.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C51-C57 are supported by Figure 6C-N and Figure 6\u2014figure supplement 11 showing co-localization of TaG-EM barcodes with appropriate marker genes and immunostaining validation. The ~25% detection rate is a significant limitation acknowledged by the authors. The regional expression patterns of EC-Gal4 and EE-Gal4 are well-characterized. However, the manuscript does not provide quantitative analysis of co-localization or statistical validation of the correlations.",
+    "evaluation": "Claims C43-C49 are comprehensively supported by single-cell sequencing data (Figure 6C-N) and immunostaining validation (Figure 6\u2014figure supplement 11). The correlation between TaG-EM barcode expression and known cell-type markers provides strong validation. The detailed characterization of driver expression patterns (C46, C48) demonstrates appropriate rigor. This represents the key proof-of-concept for using TaG-EM in single-cell sequencing applications.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C58",
-      "C59",
-      "C60",
-      "C61"
+      "C50",
+      "C51",
+      "C52",
+      "C53"
     ],
-    "result": "TaG-EM barcodes are not observed in all cells in single-cell gene expression data, with detection in approximately one-quarter of cells (or ~37% with enriched library). The strength of the Gal4 driver likely contributes to labeling density, but variable recovery was observed even with the same pan-midgut driver.",
+    "result": "An enriched TaG-EM barcode library detected barcodes in nearly 100% of cells at high sequencing depth. High-purity detections (75-99.99% of reads from one barcode) showed high correlation between gene expression and enriched libraries. The enriched library identified barcodes in 26.8% of cells (vs. 23.96% in gene expression library alone), with combined analysis identifying barcodes in approximately 37% of cells.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C61 identify and characterize a key limitation of TaG-EM. The data in Figure 6\u2014figure supplement 7, 9, and 10 support these observations. The variable recovery with the same driver (C60) suggests factors beyond driver strength affect detection. However, the manuscript does not systematically investigate the causes of incomplete detection or provide strategies to improve it beyond the enriched library approach.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C50-C53 are supported by data in Figure 6\u2014figure supplement 9 and Figure 6B. The enrichment strategy successfully increases barcode detection, though the improvement is modest (26.8% vs. 23.96%). The correlation analysis as a function of barcode purity is appropriate for assessing reliability. The authors correctly identify that expression level, not detection, is the main constraint.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C6",
-      "C7",
-      "C8",
-      "C9",
-      "C10",
-      "C63",
-      "C64",
-      "C65"
-    ],
-    "result": "TaG-EM enables multiple applications: positive identification of cell types in cell atlas projects, identification of multiplet droplets, barcoding of experimental conditions, multiplexed behavioral measurements via NGS, and has potential for large-scale behavioral screens. Combined with existing Gal4 collections, TaG-EM provides a flexible system for barcoding cells and organisms.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C6-C10, C63-C65 summarize the demonstrated and potential capabilities of TaG-EM. The cell type identification (C6) is supported by the gut cell experiments. Multiplet identification (C7) is demonstrated but with limitations. Experimental barcoding (C8) and behavioral measurements (C9) are validated by multiple assays. The potential for large-scale screens (C10) is speculative but reasonable given the demonstrated capabilities. The overall assessment is well-supported by the collective experimental evidence.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R15",
-    "claim_ids": [
-      "C62"
+      "C54"
     ],
     "result": "TaG-EM differs from RABID-Seq in that RABID-Seq relies on stochastic viral infection while TaG-EM allows reproducible targeting of defined cell populations, enabling unambiguous cell identification and assessment of the same populations across conditions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C62 provides a reasonable comparison between TaG-EM and RABID-Seq based on the fundamental design differences between the approaches. However, this is primarily an inference about the relative advantages rather than a directly tested result. The manuscript does not provide experimental validation of the claimed advantages over RABID-Seq.",
+    "evaluation": "Claim C54 accurately distinguishes TaG-EM from RABID-Seq based on the fundamental design principles of each method. The comparison is appropriate and highlights a key advantage of TaG-EM. However, this is primarily a conceptual distinction rather than an experimentally demonstrated result in this manuscript.",
     "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TaG-EM barcodes are not detected in all cells in single-cell sequencing data, representing a current limitation. Driver strength likely contributes to labeling density, though variable recovery was observed even with the same pan-midgut driver. For the tested drivers, barcodes were detected in approximately 25% of cells using the gene expression library alone, or ~37% when including an enriched barcode library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 appropriately acknowledge limitations of the method. The incomplete barcode detection is documented in Figure 6\u2014figure supplement 7 and Figure 6\u2014figure supplement 10. The observation of variable recovery even with the same driver (C57) suggests factors beyond driver strength affect detection. The quantification of detection rates provides important benchmarks for users. This represents honest and important reporting of method limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "TaG-EM enables positive identification of cell types in cell atlas projects, identification of multiplet droplets, and barcoding of experimental conditions. TaG-EM barcodes can be read out using next-generation sequencing to facilitate population-scale behavioral measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 represent the main capabilities of TaG-EM that are demonstrated throughout the manuscript. C6 is supported by single-cell sequencing experiments (C44-C49), C7 by doublet detection analysis (C40-C42), and C8 by behavioral experiments (C25, C29, C32). These claims accurately summarize the demonstrated applications of TaG-EM.",
+    "result_type": "MAJOR"
   }
 ]

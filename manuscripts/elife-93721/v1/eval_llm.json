@@ -2,38 +2,37 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C28",
-      "C29",
-      "C30",
-      "C31",
-      "C32",
-      "C33",
-      "C34",
-      "C35"
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
     ],
-    "result": "Spontaneous vasomotion was characterized in awake mice through intact skull using TexasRed fluorescence. Vasodilation events occurred periodically (15.8\u00b14.8s interval), with relatively fixed amplitude (10.4\u00b13.7%) and duration (1.6\u00b10.4s half-width). Vessel diameter correlated with peak TexasRed fluorescence, and mostly pial arteries/arterioles (45.7\u00b19.6 \u00b5m) were observed.",
+    "result": "Spontaneous vasomotion was observed and quantified in awake mice through thinned-skull cranial windows using TexasRed fluorescence. Vasodilation events occurred periodically with an inter-event interval of 15.8 \u00b1 4.8 s, amplitude of 10.4 \u00b1 3.7%, and half-width duration of 1.6 \u00b1 0.4 s. Vessel diameter measurements (45.7 \u00b1 9.6 \u00b5m) indicated observation of pial arteries or arterioles.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C28-C35 provide converging quantitative evidence for spontaneous vasomotion characteristics. The measurements are internally consistent (diameter correlates with fluorescence intensity, C31), sample sizes are stated (n=5 vessels, n=9 sessions), and the methodology for diameter estimation is described with validation referenced in methods. The temporal characteristics show appropriate statistical reporting with means and standard deviations.",
+    "evaluation": "Claims C36-C44 provide converging evidence from direct observations (C36, C39), validated measurement methods (C40, C42), and quantitative characterization (C43, C44) of spontaneous vasomotion. The measurements are internally consistent and the vessel type inference (C41) is reasonable based on diameter data.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R2",
     "claim_ids": [
       "C2",
-      "C37",
-      "C38",
-      "C39",
-      "C53",
-      "C54",
-      "C55"
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C46",
+      "C47"
     ],
-    "result": "Autofluorescence from brain parenchyma can be used to quantify vasomotion via 'shadow imaging' where blood vessels appear dark. TexasRed and autofluorescence/dYFP signals mirrored each other with phase shifts of 184.4\u00b0\u00b117.6\u00b0 (dYFP, n=13) indicating near-complete inversion, validating the shadow imaging approach.",
+    "result": "Endogenous autofluorescence from brain parenchyma can be used to quantify vasomotion through the 'shadow' imaging principle. Autofluorescence (excited at ~430 nm, emission ~540 nm) is absent from blood vessels, and autofluorescence dynamics mirror TexasRed fluorescence dynamics in blood vessels, allowing vasomotion quantification through intact skull.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C2, C37-C39, C53-C55 establish the methodological validity of using autofluorescence for vasomotion measurement. The phase analysis (C55) with quantitative data (184.4\u00b0\u00b117.6\u00b0, n=13 segments) demonstrates the signals are anti-phase as expected for shadow imaging. Multiple fluorescence modalities (autofluorescence, dYFP) show consistent mirroring behavior, strengthening the conclusion.",
+    "evaluation": "Claims C2, C48-C51 establish the methodological principle with direct observations showing spatial separation (C49) and temporal correlation (C50) between autofluorescence and TexasRed signals. Claims C46-C47 validate the method's applicability through intact skull, addressing a key technical challenge.",
     "result_type": "MAJOR"
   },
   {
@@ -42,113 +41,112 @@
       "C1",
       "C5",
       "C6",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C51",
-      "C52"
-    ],
-    "result": "Visual stimulation at 0.25 Hz induces frequency-locked vasomotion that becomes entrained with training. In novice mice, no 0.25 Hz peak was observed, but after training a clear peak appeared, and in expert mice the oscillation was visible in raw traces. This entrainment occurred globally across cortex and cerebellum with synchronized phases, with PR0.25 significantly increasing from novice to trained (p=0.039) and expert (p=0.0030) states (n=5 animals).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C5-C6, C43-C52 provide strong evidence for plastic vasomotion entrainment. The progression from novice\u2192trained\u2192expert is well-documented with spectral analysis, statistical testing with appropriate corrections (Holm correction), and adequate sample size (n=5). The global nature of entrainment (C48, C52) is a novel finding supported by whole-brain imaging. Statistical significance is properly reported with p-values and test types.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
+      "C29",
+      "C30",
       "C57",
       "C58",
-      "C59",
-      "C83",
-      "C84",
-      "C85"
-    ],
-    "result": "When measured with fiber photometry (400 \u00b5m diameter), autofluorescence and TexasRed showed significant phase shift (246.9\u00b0\u00b149.9\u00b0, n=28 segments) rather than complete mirroring. Both signals increased in amplitude with training and showed strong correlation in PR0.25. The phase shift suggests autofluorescence contains both shadow imaging and a time-delayed metabolic component (NADH, NADPH, FAD).",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C57-C59, C83-C85 address an important technical observation. The phase shift (C57) is quantified with adequate sample size (n=28), and the strong correlation between PR0.25 values (C59) validates autofluorescence as a vasomotion proxy despite the phase difference. The mechanistic interpretation (C83-C85) is speculative but reasonable given known metabolic dynamics. The distinction between microscopy and fiber photometry measurements is appropriately noted.",
-    "result_type": "MINOR"
-  },
-  {
-    "result_id": "R5",
-    "claim_ids": [
-      "C7",
-      "C60",
       "C61",
       "C62",
       "C63",
       "C64",
       "C65",
-      "C66"
+      "C66",
+      "C67"
     ],
-    "result": "Visually induced vasomotion adapts to a wide range of stimulation parameters. Vasomotion locked to temporal frequencies from 0.15-0.50 Hz with no significant differences in peak ratio, adapted to spatial amplitudes from 4-25\u00b0, and followed stimuli with varying stripe spatial cycles (3-18\u00b0). Adaptation was rapid and reversible.",
+    "result": "Visual stimulation with horizontally oscillating vertical stripes (0.25 Hz) induces frequency-locked vasomotion that becomes entrained with repeated training. This entrainment progresses from Novice (no fixed frequency) to Trained (clear 0.25 Hz peak) to Expert (visible oscillations in raw traces), and occurs globally across cortex and cerebellum, not just in visual areas.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7, C60-C66 demonstrate the robustness and flexibility of vasomotion entrainment across parameter space. The lack of significant differences across temporal frequencies (C61) is properly reported, though the statistical test details are not fully specified. The rapid adaptation and reversibility (C63) strengthen the biological plausibility. Sample size appears adequate (n=5 mice mentioned in Figure 5D) though not explicitly stated for all conditions.",
+    "evaluation": "Claims C1, C5-C6, C29-C30, C57-C58, C61-C67 provide comprehensive evidence for plastic vasomotion entrainment. The progression from Novice to Expert is well-documented with spectral analysis (C57-C58, C61), temporal dynamics (C62-C63), and spatial distribution data (C64-C67) showing global rather than local effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Visually induced vasomotion adapts to a wide range of stimulation parameters. Vasomotion can lock to temporal frequencies from 0.15-0.50 Hz, spatial amplitudes from 4-25\u00b0, and various spatial cycles of stripe patterns, with no significant differences in peak ratio across these parameter ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C83-C89 demonstrate parameter flexibility through systematic variation experiments. Statistical analysis (C84) confirms no significant differences across temporal frequencies, and similar robustness is shown for amplitude (C87-C88) and spatial cycle (C89) variations, supporting the broad adaptability claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C33",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "There is a strong correlation between HOKR performance gain and vasomotion entrainment magnitude in the cerebellar flocculus. Average HOKR relative gains correlated strongly with average PR0.25 values across training sessions (C101), and a moderate correlation was found between day 5 HOKR performance and day 1 vasomotion levels (C103), suggesting parallel plasticity of vasomotion and neuronal circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C33, C99-C105 establish correlations between behavioral and vascular measures. The strong population-level correlation (C101) is supported by quantitative data from 15 mice across 10 tests. The moderate individual-level correlation (C103) and large variance (C102) are appropriately acknowledged, supporting the interpretation of parallel plasticity (C105).",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C67",
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72"
-    ],
-    "result": "Eye movement tracked visual stimulation with virtually no phase shift, while vasomotion in the flocculus showed either 0\u00b0 or 180\u00b0 phase relative to stimulation depending on the animal. Maximum vasodilation/constriction occurred when eye movement speed reached zero. Control experiments confirmed vasomotion was not an artifact of eye movement, anesthesia abolished both responses, and no correlation existed between eye movement amplitude and vasomotion PR0.25.",
-    "reviewer_id": "OpenEval",
-    "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C67-C72 establish that vasomotion is not simply a consequence of eye movement through multiple lines of evidence: phase analysis (C67-C69), control experiments under anesthesia (C70), optical controls (C71), and lack of correlation between eye amplitude and vasomotion (C72). The bimodal phase distribution (0\u00b0 or 180\u00b0, C68) is interesting but unexplained. The controls are appropriate and strengthen the independence of vasomotion from mechanical artifacts.",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R7",
-    "claim_ids": [
-      "C12",
       "C73",
       "C74",
       "C75",
       "C76",
       "C77"
     ],
-    "result": "HOKR performance and vasomotion entrainment in the flocculus showed parallel increases during training. A strong correlation was found between average HOKR relative gains and average PR0.25 values across 10 tests (n=15 mice). Additionally, a moderate but significant correlation was found between HOKR performance on day 5 and PR0.25 during the fourth training on day 1 (n=15 mice), suggesting vasomotion may contribute to consolidation of motor learning.",
+    "result": "Direct YFP fluorescence (dYFP) from astrocyte-expressed YCnano50 can be used to assess vasomotion dynamics in deep brain regions via fiber photometry. TexasRed and dYFP signals fluctuated at 0.25 Hz with nearly opposite phase (184.4\u00b0 \u00b1 17.6\u00b0), demonstrating vasomotion in the cerebellum.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12, C73-C77 establish a correlation between vasomotion plasticity and motor learning. The sample size is adequate (n=15 mice), and the correlation is described as 'strong' for averaged data (C75) and 'moderate but significant' for individual animals (C76). However, the manuscript does not provide R\u00b2 values or p-values for these correlations in the text, though Figure 7F-G shows R\u00b2=0.801 and R\u00b2=0.556. The interpretation (C77) appropriately uses cautious language ('may suggest', 'contribute') acknowledging correlation does not prove causation.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C73-C76 validate the dYFP shadow imaging method with quantitative phase analysis showing near-perfect inversion. Claim C74 extends vasomotion detection to deep cerebellar regions. However, C77 notes this approach failed for HOKR learning studies, limiting its broader applicability.",
+    "result_type": "MINOR"
   },
   {
-    "result_id": "R8",
+    "result_id": "R7",
     "claim_ids": [
-      "C13",
-      "C14",
       "C78",
       "C79",
       "C80",
       "C81",
-      "C82",
-      "C106",
-      "C107",
-      "C111"
+      "C82"
     ],
-    "result": "The authors propose that plasticity of vasomotion and neuronal circuits occur in parallel, with efficient energy delivery by entrained vasomotion potentially supporting increased neuronal activity and circuit reorganization. Mechanisms could involve neurovascular coupling enhancement, central autonomic control, or vascular-to-vascular coupling potentiation. Vasomotion entrainment may enhance paravascular clearance and provide a basis for neuronal meta-plasticity.",
+    "result": "Autofluorescence signals measured by fiber photometry show a phase shift (246.9\u00b0 \u00b1 49.9\u00b0) relative to TexasRed, likely due to combined effects of shadow imaging and metabolite concentration fluctuations. Despite this phase shift, PR0.25 of autofluorescence strongly correlates with TexasRed PR0.25 and reflects vasomotion amplitude locked to visual stimulation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C13-C14, C78-C82, C106-C107, C111 present mechanistic interpretations and functional hypotheses. While the parallel occurrence of vasomotion and circuit plasticity is supported by correlation data (C13), the causal relationships and specific mechanisms (C14, C80-C82, C106-C107, C111) remain speculative. The manuscript appropriately uses tentative language ('may', 'could', 'it is possible'), but these claims require additional experimental validation such as perturbation experiments, measurements of metabolic parameters, or clearance assays.",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 acknowledge a methodological complexity (phase shift) while demonstrating that the metric (PR0.25) remains valid. The strong correlation (C81) between autofluorescence and TexasRed PR0.25 supports using autofluorescence for quantifying vasomotion amplitude despite the phase shift. The proposed explanation (C79) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Vasomotion is not a direct consequence of eye movements. Eye movements tracked visual stimulation with virtually no phase shift (C90), but vasomotion phase in the flocculus varied between animals (0\u00b0 or 180\u00b0, C91). Under anesthesia, neither eye movement nor vasomotion occurred (C93), and no correlation was found between eye movement amplitude and vasomotion amplitude within sessions (C95-C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 provide multiple lines of evidence ruling out eye movement as the direct cause of vasomotion. Control experiments (C93-C94) eliminate artifacts, and the lack of correlation between eye movement and vasomotion amplitudes (C95-C96) within sessions is particularly compelling. The variable phase relationship (C91) further supports independence.",
     "result_type": "MAJOR"
   },
   {
@@ -161,132 +159,289 @@
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C4 describe methodological capabilities demonstrated throughout the manuscript. Both methods are extensively used and validated with autofluorescence measurements in wild-type C57BL/6NJcl mice. The methods section provides detailed protocols, and results from both approaches are presented with consistent findings.",
+    "evaluation": "Claims C3-C4 are directly supported by the experimental demonstrations throughout the manuscript. Both methods are validated with autofluorescence measurements in wild-type mice, avoiding the need for transgenic animals. This is a significant methodological advance.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C36",
-      "C40",
-      "C86",
-      "C87"
+      "C8",
+      "C29",
+      "C138"
     ],
-    "result": "Methodological considerations include that thinned skull preparation may perturb vasomotion due to drilling-induced heat/vibration, spontaneous behaviors in awake mice may interrupt periodic vasomotion, and tail-vein injection stress appeared to interfere with HOKR learning but not vasomotion generation.",
+    "result": "Repeated trials of visual stimulus presentations result in plastic entrainment of vasomotion, with the entrainment becoming perfectly frequency-locked to presented stimuli with repeated training.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C36, C40, C86-C87 address important methodological limitations and observations. C36 is supported by citation (Augustinaite and Kuhn, 2020), C40 provides a reasonable explanation for less periodic spontaneous vasomotion, and C86-C87 report an empirical observation about injection stress effects. These are appropriately presented as considerations rather than definitive conclusions.",
-    "result_type": "MINOR"
+    "evaluation": "Claims C8, C29, C138 describe the core plasticity phenomenon. The progression from non-entrained to entrained states is well-documented through spectral analysis and temporal dynamics data. The term 'perfectly frequency-locked' (C29) may be slightly overstated given the variability noted in C62-C63, but the overall plasticity is clearly demonstrated.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C56"
+      "C13",
+      "C34",
+      "C105",
+      "C140"
     ],
-    "result": "Robust HOKR learning could not be reliably induced in Mlc1-tTA::tetO-YCnano50 transgenic mice for unknown reasons.",
+    "result": "Plasticity of vasomotion and neuronal circuits occur in parallel, with synaptic plasticity related to cerebellar motor learning enhanced alongside vasomotion entrainment.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C56 reports a negative result that led to the use of wild-type mice for most experiments. This is an honest reporting of experimental limitations and appropriately acknowledges the unknown cause.",
-    "result_type": "MINOR"
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C34, C105, C140 propose parallel plasticity based on correlations between HOKR performance and vasomotion. While the correlations are demonstrated (C101, C103), the causal relationship and mechanistic basis remain unclear. The large variance (C102) and moderate individual-level correlation (C103) suggest the relationship is complex. Additional experiments would be needed to establish whether these are truly parallel processes or if one drives the other.",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C8"
+      "C14",
+      "C104",
+      "C139",
+      "C141",
+      "C145"
     ],
-    "result": "Repeated trials of visual stimulus presentations result in plastic entrainment of vasomotion.",
+    "result": "Efficient energy delivery by entrained vasomotion may contribute to meeting energy demand for neuronal activity and circuit reorganization, potentially enhancing meta-plasticity and supporting long-term plastic changes in the brain.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Claim C8 is a summary statement supported by the detailed evidence in claims C43-C51 showing progressive development of frequency-locked vasomotion from novice to expert states with statistical significance.",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C104, C139, C141, C145 propose functional significance of vasomotion entrainment but are largely speculative. While the correlation data (C101, C103) are consistent with this interpretation, no direct measurements of energy delivery, metabolic demand, or meta-plasticity are provided. These remain hypotheses requiring future experimental validation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C9",
-      "C10",
-      "C11",
-      "C41",
-      "C42"
+      "C52",
+      "C53",
+      "C54"
     ],
-    "result": "Horizontally oscillating visual stimuli induce HOKR with eye movement amplitude increasing with repeated training, and the cerebellar flocculus is essential for this learning.",
+    "result": "Spontaneous vasomotion in awake mice shows oscillatory fluctuations at low frequencies (0.1-0.5 Hz) that are less periodic than previously reported, possibly due to interruptions from spontaneous behaviors causing functional hyperemia.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C9-C11, C41-C42 present established knowledge about HOKR that provides context for the study. These are appropriately cited (Aziz et al., 2014; Ito, 1982) and serve as background for the novel vasomotion findings.",
+    "evaluation": "Claims C52-C54 describe characteristics of spontaneous vasomotion with appropriate caveats. The observation of variable frequency (C53) and proposed explanation involving behavioral interruptions (C54) is reasonable given the awake preparation. This contrasts with more periodic vasomotion reported in other preparations, which is appropriately acknowledged.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C113"
+    ],
+    "result": "Stress induced by tail vein injection may interfere with HOKR learning acquisition but does not interfere with generation of visually induced vasomotion or maintenance of already acquired HOKR learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C113 describe an important methodological observation. The differential effects on learning acquisition versus maintenance/vasomotion generation are clearly demonstrated and led to the development of the autofluorescence method. This is well-supported by the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The initial drive for visually induced vasomotion likely comes from neuronal activity in the visual system via neurovascular coupling, but the global entrainment mechanism remains unclear and could involve either central control through autonomic projections or enhanced local neurovascular and vascular-to-vascular coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C110 propose mechanisms for vasomotion induction and global entrainment but are largely speculative. While the initial neurovascular coupling trigger (C106-C107) is well-supported by prior literature, the mechanisms for global entrainment (C108-C110) are hypothetical. The manuscript does not provide direct evidence to distinguish between the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C79"
+    ],
+    "result": "The phase shift observed in autofluorescence signals may reflect temporal lag in metabolite concentration changes (NADH, NADPH, FAD) relative to blood flow changes, with glucose and oxygen delivery varying between vasodilation and vasoconstriction phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112, C79 propose a mechanistic explanation for the observed phase shift in autofluorescence. While physiologically plausible, this remains speculative without direct measurements of metabolite concentrations or identification of the autofluorescent species. The explanation is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C37",
+      "C45",
+      "C38",
+      "C46"
+    ],
+    "result": "Imaging through intact skull coated with transparent resin allows visualization of blood vessels without invasive procedures that could perturb vasomotion, though with reduced resolution compared to thinned-skull preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C45-C46 describe methodological considerations and solutions. The concern about perturbation from invasive procedures (C37, C45) is well-founded and cited. The intact skull method (C38, C46) successfully addresses this concern while acknowledging the trade-off in image quality. This is a practical methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The mechanisms underlying visually induced vasomotion are unclear and could involve spontaneous vasomotion mechanisms (SMC coordination, pericyte control), functional hyperemia mechanisms (neurovascular coupling), or systemic factors (blood pressure, CO2), with multiple cellular players (SMCs, pericytes, astrocytes, neurons) potentially involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C123 provide a comprehensive discussion of potential mechanisms, appropriately acknowledging uncertainty (C114) while reviewing established knowledge from the literature. This represents a fair assessment of the current state of understanding rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C28"
+    ],
+    "result": "Previous studies showed that visual stimulation induces functional hyperemia and that periodic visual stimuli can induce vasomotion at matching frequencies, but this was reported to be restricted to the visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126, C28 accurately summarize prior work with appropriate citations. This provides important context for the novelty of the current findings showing global rather than local vasomotion entrainment. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C21",
+      "C22"
+    ],
+    "result": "Vasomotion has been shown to be beneficial for blood flow efficiency, tissue oxygenation, and paravascular clearance/waste drainage, with mathematical modeling supporting these functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131, C21-C22 accurately summarize established findings from the literature with appropriate citations. This provides important functional context for why vasomotion entrainment might be significant, though these are not new findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C139",
+      "C146"
+    ],
+    "result": "The study's findings on low-frequency (0.25 Hz) vasomotion entrainment may have implications for Alzheimer's disease treatment, as vasomotion can enhance paravascular clearance of waste products like A\u03b2, though this remains speculative and requires validation in AD models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C137, C139, C146 discuss potential therapeutic implications but are highly speculative. While the connection to paravascular clearance is supported by prior literature (C134-C136), the therapeutic potential for AD (C139) is hypothetical. The manuscript appropriately notes that evidence in AD models would be required (implied in discussion), but this remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C31",
+      "C32",
+      "C55",
+      "C56",
+      "C97",
+      "C98"
+    ],
+    "result": "Horizontally oscillating visual stimuli induce HOKR, with eye movement amplitude increasing through repeated training via neuronal circuit plasticity in the cerebellar flocculus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C31-C32, C55-C56, C97-C98 accurately describe established knowledge about HOKR with appropriate citations. This provides essential background for understanding the experimental paradigm used in the study. The citations to prior work appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Neuron-astrocyte signaling pathways in the cerebellum are essential for HOKR learning, with late offline learning dependent on astrocyte phagocytosis activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 accurately summarize recent findings on the cellular mechanisms of HOKR learning with appropriate citations. This provides important context for interpreting the vasomotion-HOKR correlation findings, suggesting potential roles for astrocytes in coordinating vascular and neuronal plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
     "claim_ids": [
       "C15",
       "C16",
       "C17",
       "C18",
       "C19",
-      "C20",
-      "C21",
-      "C22",
+      "C20"
+    ],
+    "result": "Energy consumption in the brain is super-efficient compared to computers, with energy delivered via blood vessels. Spontaneous vasomotion (~0.1 Hz) is distinct from heartbeat pulsation (~10 Hz) and was first described in bat wing veins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide accurate background information with appropriate citations. The distinction between vasomotion and heartbeat pulsation (C19-C20) is important for understanding the phenomenon studied. These represent established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
       "C23",
       "C24",
       "C25",
       "C26",
       "C27"
     ],
-    "result": "Background on brain energetics, vasomotion history, and neurovascular coupling mechanisms.",
+    "result": "Vasomotion can be affected by neurovascular coupling mechanisms, where neuronal firing triggers release of vasodilator signals from neurons/astrocytes, leading to blood vessel dilation through SMC and pericyte relaxation (functional hyperemia), which underlies fMRI signals.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C15-C27 provide literature context with appropriate citations. These establish the scientific background for the study including brain energy efficiency, spontaneous vasomotion characteristics, distinction from heartbeat, and neurovascular coupling mechanisms. All claims are properly attributed to prior work.",
+    "evaluation": "Claims C23-C27 accurately describe established neurovascular coupling mechanisms with appropriate citations. This provides essential background for understanding how visual stimulation could affect vasomotion. The connection to fMRI (C27) is well-established.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R15",
+    "result_id": "R26",
     "claim_ids": [
-      "C88",
-      "C89",
-      "C90",
-      "C91",
-      "C92",
-      "C93",
-      "C94",
-      "C95",
-      "C96",
-      "C97",
-      "C98",
-      "C99",
-      "C100",
-      "C101",
-      "C102",
-      "C103",
-      "C104",
-      "C105",
-      "C108",
-      "C109",
-      "C110",
-      "C112"
+      "C35"
     ],
-    "result": "Discussion of mechanisms underlying vasomotion including SMC coordination, pericyte control, astrocyte involvement, neuronal drive, systemic factors, functional benefits for oxygenation and clearance, and connections to Alzheimer's disease research.",
+    "result": "Blood vessels in the brain can change their diameter through the actions of SMCs and pericytes.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C88-C105, C108-C110, C112 present literature context in the Discussion section with appropriate citations. These synthesize prior work on vasomotion mechanisms, functional significance, and potential therapeutic implications. The citations appear appropriate and the discussion contextualizes the current findings within existing knowledge.",
+    "evaluation": "Claim C35 states basic established knowledge about vascular control mechanisms with appropriate citations. This is fundamental background information for the study.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R16",
+    "result_id": "R27",
     "claim_ids": [
-      "C113",
-      "C114"
+      "C147"
     ],
-    "result": "Experimental design choices: C57BL/6NJcl male mice (2-4 months) were used to reduce HOKR performance variance, and Mlc1-tTA::tetO-YCnano50 transgenic mice express YCnano50 specifically in astrocytes.",
+    "result": "C57BL/6NJcl male mice (2-4 months old) were used to reduce variance of HOKR performance among animals.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C113-C114 describe methodological choices with appropriate citations (Aziz et al., 2014; Tanaka et al., 2012; Kanemaru et al., 2014). These are standard experimental design considerations properly documented in the methods section.",
+    "evaluation": "Claim C147 describes the experimental subjects with appropriate justification and citation. This is a reasonable methodological choice for reducing variability in behavioral experiments.",
     "result_type": "MINOR"
   }
 ]

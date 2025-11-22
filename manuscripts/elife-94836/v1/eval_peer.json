@@ -2,17 +2,16 @@
   {
     "result_id": "R1",
     "claim_ids": [
-      "C8",
-      "C9",
-      "C10",
+      "C3",
       "C11",
-      "C12"
+      "C67",
+      "C68"
     ],
-    "result": "The authors analyzed 5.06 million high-quality SARS-CoV-2 sequences from Nextstrain (January 2023), identifying ~43 million mutation instances across ~92% of N-protein residues. Sequence plasticity was highest in IDRs (average 5.2 different amino acids per residue) compared to folded domains (2.9 different mutations on average), with 6300 distinct full-length N-protein sequences identified.",
+    "result": "The computational analysis of 5.06 million SARS-CoV-2 sequences reveals that mutations in N-protein are concentrated in intrinsically disordered regions (IDRs), with higher sequence plasticity (5.2 vs 2.9 different amino acids per residue) compared to folded domains. Despite this local plasticity, distinct physicochemical properties are maintained between IDR sub-regions (SR-rich vs L-rich linker, N3 vs C-arm1).",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers explicitly affirmed the bioinformatic analysis, with one stating the work 'analyze[s] 5 million viral sequence variants to assess the conservation of specific amino acids' and another noting the 'bioinformatic analysis of mutational variants...from the large genomic database.' The evidence is described as 'convincing' and the conclusions as 'supported by the evidence presented.'",
+    "evaluation": "Reviewers explicitly affirm this finding, with one stating 'disordered regions are particularly variable but that the general hydrophobic and charge character of these regions are conserved' and another noting the analysis 'shows that disordered regions are particularly variable.' The computational predictions are described as 'convincing' and 'supported by the evidence presented.'",
     "result_type": "MAJOR"
   },
   {
@@ -22,63 +21,52 @@
       "C14",
       "C15",
       "C19",
-      "C20"
-    ],
-    "result": "Computational analysis of physicochemical properties revealed that hydrophobicity is uniformly high and polarity low in folded NTD and CTD domains, while the N-arm and C-arm are the most polar regions. The linker IDR subdivides into the SR-rich region (high polarity, low hydrophobicity) and L-rich region (opposite behavior), and the C-arm subdivides into C-arm1 (most polar region) and N3 (among most hydrophobic regions).",
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "Peer Reviewer",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers affirmed these findings, with one noting 'the analysis shows that disordered regions are particularly variable but that the general hydrophobic and charge character of these regions are conserved, particularly in the SR and leucine-rich regions of the central linker.' The overall assessment states the evidence 'nicely supports the conclusions.'",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R3",
-    "claim_ids": [
+      "C20",
       "C22",
       "C23",
       "C24",
-      "C26",
-      "C27"
-    ],
-    "result": "Viable N-protein sequences show significant spread of net charges (\u00b11-2 from ancestral), with notable contrasts: the L-rich sequence is nearly neutral despite the linker's basic character, and the C-arm splits into a more basic C-arm1 and acidic N3 region. Maximal phosphorylation of all serine, threonine, and tyrosine residues in IDRs leads to negative charge for all IDRs, with the largest impact in the SR-rich region.",
-    "reviewer_id": "PEER_REVIEW",
-    "reviewer_name": "Peer Reviewer",
-    "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers accepted these computational predictions without critique. One reviewer noted the work 'computationally determined the effects of these mutations on the physicochemical properties of the protein' and that 'conclusions drawn are supported by the evidence presented.'",
-    "result_type": "MAJOR"
-  },
-  {
-    "result_id": "R4",
-    "claim_ids": [
-      "C30",
       "C31",
       "C32",
       "C33",
       "C34"
     ],
-    "result": "Comparative analysis across related coronaviruses (SARS-CoV-1, MERS, MHV) showed high sequence identity in folded domains but little to no sequence identity in IDRs (except SARS-CoV-1). Despite low sequence conservation, the pattern of hydrophobicity and polarity values of IDRs relative to folded domains is closely mirrored across species, suggesting these physicochemical properties are functional biophysical constraints maintained across coronaviruses.",
+    "result": "Computational analysis of physicochemical properties across N-protein regions and related coronaviruses shows that folded domains maintain high hydrophobicity and low polarity, while IDRs exhibit contrasting properties. The SR-rich linker region is highly polar while the L-rich region is hydrophobic; the C-arm1 is highly polar while N3 is hydrophobic. These patterns are conserved across SARS-CoV-1, MERS, and MHV despite low sequence identity in IDRs.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers did not challenge these comparative findings. The overall assessment that the work is 'well written, easy to follow and the conclusions drawn are supported by the evidence presented' encompasses these cross-species comparisons.",
+    "evaluation": "Reviewers accept these computational findings without challenge. One reviewer notes the work 'shows that disordered regions are particularly variable but that the general hydrophobic and charge character of these regions are conserved, particularly in the SR and leucine-rich regions of the central linker.' The comparative analysis across coronaviruses is implicitly accepted as part of the overall 'convincing combination of genetic and biophysical data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Computational analysis of phosphorylation potential shows that most serine, threonine, and tyrosine residues in IDRs (30 of 37) can be phosphorylated, with maximal phosphorylation leading to negative charge in all IDRs. The SR-rich region shows the largest impact due to highest density of phosphorylation sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these computational predictions about phosphorylation. The findings are presented as part of the broader analysis that reviewers describe as providing 'convincing' evidence. The phosphorylation analysis is implicitly accepted as part of the overall characterization of IDR properties.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R5",
+    "result_id": "R4",
     "claim_ids": [
       "C35",
       "C36",
       "C37"
     ],
-    "result": "The N:D63G mutation (Delta variant) exhibits a shift in intrinsic fluorescence quantum yield compared to ancestral N-protein, attributed to changes in the local environment of tryptophan W108. However, no significant differences in intrinsic binding affinity to T10 oligonucleotides were detected between N:D63G and the ancestral species.",
+    "result": "The D63G mutation in the NTD causes a shift in intrinsic fluorescence quantum yield, attributed to changes in the local environment of tryptophan W108, but does not significantly affect RNA binding affinity to T10 oligonucleotides.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers acknowledged this finding, with one noting 'the work also addresses the impact of another unstudied mutation, D63G, that is located on the surface of the globular NTD and has no significant effect on the properties analyzed here, raising interesting questions about how this mutation enhances viral fitness.' This indicates acceptance of the data while noting its implications.",
+    "evaluation": "Reviewers acknowledge this finding, with one noting 'the work also addresses the impact of another unstudied mutation, D63G, that is located on the surface of the globular NTD and has no significant effect on the properties analyzed here, raising interesting questions about how this mutation enhances viral fitness.' The lack of functional effect is accepted as an intriguing observation.",
     "result_type": "MINOR"
   },
   {
-    "result_id": "R6",
+    "result_id": "R5",
     "claim_ids": [
       "C38",
       "C39",
@@ -86,115 +74,202 @@
       "C41",
       "C42"
     ],
-    "result": "Differential scanning fluorometry revealed that Omicron mutations (No, N:R203K/G204R, N:P13L/\u039431-33) are neutral with respect to thermal stability, while Delta variant mutations (N:D63G, N:G215C, N\u03b4) are destabilizing. Notably, N:G215C shows destabilization despite the mutation being in the linker IDR, not in folded domains, pointing to nonlocal effects through altered intra-molecular interactions or oligomeric state changes.",
+    "result": "Differential scanning fluorimetry reveals that Omicron mutations (No, N:R203K/G204R, N:P13L/\u039431\u201333) are neutral with respect to thermal stability (Ti \u2248 49\u00b0C), while Delta mutations (N:D63G, N:G215C, N\u03b4) are destabilizing. Notably, N:G215C destabilizes folded domains despite being located in the linker IDR, suggesting nonlocal effects through altered intra-molecular or inter-domain interactions.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers accepted these thermal stability findings without critique. The comprehensive biophysical characterization was praised, with one reviewer noting the authors 'subject these mutant proteins to a comprehensive array of biophysical analyses (temperature sensitivity, circular dichroism, oligomerization, RNA binding, and phase separation).'",
+    "evaluation": "Reviewers accept these thermal stability findings without challenge. The data are part of the 'comprehensive array of biophysical analyses' that reviewers describe as convincing. The nonlocal effect of G215C is implicitly accepted as part of the overall characterization of mutation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Circular dichroism analysis shows that N:G215C exhibits significantly less disorder and greater helicity compared to ancestral Nref, attributed to stabilization of transient helices in the leucine-rich linker region. N:R203K/G204R shows slightly more disorder than Nref.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these CD spectroscopy findings. The structural changes are accepted as part of the 'comprehensive array of biophysical analyses' that support the conclusions. The interpretation linking increased helicity to L-rich region stabilization is consistent with the reviewers' acceptance of the overall mechanistic framework.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C43",
-      "C44"
+      "C46",
+      "C47",
+      "C48",
+      "C49"
     ],
-    "result": "Circular dichroism analysis showed significantly less disorder and greater helicity for N:G215C compared to ancestral Nref, attributed to stabilization of transient helices in the leucine-rich region of the central linker IDR.",
+    "result": "Sedimentation velocity analytical ultracentrifugation shows that ancestral N-protein and most mutants (N:D63G, No, N:R203K/G204R, N:P13L/\u039431\u201333) exist as dimers (~4 S) at low micromolar concentrations. However, N:G215C promotes formation of higher oligomers via stabilization of coiled-coil interactions in the L-rich linker, with N\u03b4 showing intermediate oligomerization.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers did not challenge these structural findings. The overall positive assessment of the biophysical analyses and the statement that 'the evidence...nicely supports the conclusions' encompasses these CD results.",
-    "result_type": "MINOR"
+    "evaluation": "Reviewers accept these oligomerization findings as part of the comprehensive biophysical characterization. The G215C oligomerization effect is consistent with the reviewers' understanding that this mutation 'was shown previously by these authors to promote N protein oligomerization.' The data are described as part of the 'convincing combination of genetic and biophysical data.'",
+    "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C45",
-      "C46",
-      "C47",
-      "C48"
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
     ],
-    "result": "Sedimentation velocity analysis revealed that ancestral N-protein and most mutants (N:D63G, No, N:R203K/G204R, N:P13L/\u039431-33) exist as tightly linked dimers (~4 S) at low micromolar concentrations. In contrast, the G215C mutation promotes formation of higher oligomers via stabilization of coiled-coil interactions in the L-rich linker region, with N\u03b4 showing intermediate oligomerization.",
+    "result": "Temperature-dependent dynamic light scattering reveals differential particle formation among mutants. N:G215C shows strongly enhanced particle formation at lower temperatures due to linker oligomerization. N:D63G shows moderate enhancement. N:R203K/G204R strongly inhibits particle formation (>70\u00b0C threshold), while N:P13L/\u039431\u201333 shows suppression. Notably, the Omicron variant (No) combining both mutations shows intermediate behavior, suggesting non-additive compensatory effects.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers affirmed these oligomerization findings without critique. The comprehensive biophysical characterization including 'oligomerization' was explicitly noted as part of the convincing evidence supporting the conclusions.",
+    "evaluation": "Reviewers explicitly acknowledge these findings, noting 'the paper ends with studies showing that another common mutant, R203K/G204R, disrupts phase separation and might thereby alter N protein function in a way that enhances viral fitness.' The compensatory effects in Omicron are accepted as 'provocative results' worthy of further study. The overall particle formation data are part of the 'convincing' evidence.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C49",
-      "C50",
-      "C51",
-      "C52",
-      "C53",
-      "C54"
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
     ],
-    "result": "Temperature-dependent particle formation studies showed that Nref forms particles above 55\u00b0C, which is strongly enhanced and occurs at lower temperature for N:G215C. N:D63G shows moderate enhancement with onset at ~50\u00b0C. In contrast, N:R203K/G204R strongly inhibits particle formation (only above 70\u00b0C), while No exhibits slightly enhanced particle formation comparable to N:D63G despite containing the R203K/G204R mutation.",
+    "result": "The P13L mutation in the N-arm creates new protein self-association interfaces, as demonstrated by elevated viscosity, ColabFold predictions of parallel sheet oligomers, very large correlation times in DLS, and ~100-fold larger sedimentation coefficients in SV-AUC for P13L-containing constructs compared to reference peptides.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers accepted these particle formation findings. One reviewer specifically noted 'the paper ends with studies showing that another common mutant, R203K/G204R, disrupts phase separation and might thereby alter N protein function in a way that enhances viral fitness,' indicating acceptance of the differential effects on particle formation.",
+    "evaluation": "Reviewers highlight this as a major novel finding, stating 'Most notable are the analyses of the previously unstudied P31L mutation of the Omicron variant. The authors use ColabFold and sedimentation analysis to suggest that this mutation promotes self-association of the disordered N-terminal region and stimulates the formation of N protein condensates.' They note 'it seems likely that this mutation enhances viral fitness by promoting N-terminal interactions.'",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C55",
-      "C56",
-      "C57",
-      "C58",
-      "C59",
-      "C60"
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
     ],
-    "result": "The P13L mutation in the N-arm causes unexpected self-association: solutions exhibited elevated viscosity after storage, ColabFold predicts formation of parallel sheets in higher-order oligomers, DLS showed very large correlation times, and SV-AUC revealed rapidly sedimenting boundaries with ~100-fold larger sedimentation coefficient. This unequivocally demonstrates introduction of new protein self-association interfaces from the P13L mutation.",
+    "result": "Liquid-liquid phase separation assays with T40 oligonucleotides show that ancestral Nref readily forms droplets, while N:R203K/G204R does not form droplets but instead produces fibrillar particles. N:P13L/\u039431\u201333 forms rapidly merging droplets, while No (Omicron) shows intermediate LLPS propensity. N:G215C produces the most polydisperse distribution with largest droplets.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers highlighted this as a major novel finding, stating 'Most notable are the analyses of the previously unstudied P31L mutation of the Omicron variant. The authors use ColabFold and sedimentation analysis to suggest that this mutation promotes self-association of the disordered N-terminal region and stimulates the formation of N protein condensates.' The reviewer notes 'it seems likely that this mutation enhances viral fitness by promoting N-terminal interactions.'",
+    "evaluation": "Reviewers explicitly affirm these LLPS findings, noting 'the paper ends with studies showing that another common mutant, R203K/G204R, disrupts phase separation and might thereby alter N protein function in a way that enhances viral fitness.' The differential LLPS behaviors are accepted as part of the 'comprehensive array of biophysical analyses' and described as 'provocative results that set the stage for in-depth analyses of these mutations in future work.'",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C61",
-      "C62",
-      "C63",
-      "C64",
-      "C65"
+      "C69",
+      "C70",
+      "C71",
+      "C72"
     ],
-    "result": "Liquid-liquid phase separation (LLPS) assays with T40 oligonucleotides showed that Nref readily forms droplets, while N:R203K/G204R does not form droplets but instead forms few large particles with fibrillar morphology. N:P13L/\u039431-33 readily forms droplets that merge and grow more rapidly than Nref, No exhibits intermediate LLPS propensity, and N:G215C shows the most polydisperse distribution with largest droplets.",
+    "result": "The study concludes that point mutations in IDRs have nonlocal impacts on multiple biophysical properties (thermodynamic stability, secondary structure, oligomeric state, particle formation, LLPS). In Omicron, distant mutations in different IDRs show compensatory effects, including creation of a new protein-protein interaction interface through P13L, resulting in significant variation in biophysical characteristics across functional N-protein variants.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers explicitly affirmed these LLPS findings, with one stating 'the paper ends with studies showing that another common mutant, R203K/G204R, disrupts phase separation' and describing the results as 'provocative' that 'set the stage for in-depth analyses of these mutations in future work.' The overall assessment describes the evidence as 'convincing.'",
+    "evaluation": "Reviewers strongly support these overarching conclusions, describing the manuscript as providing 'new insights into the biophysics of the SARS-CoV-2 nucleocapsid' with evidence that 'nicely supports the conclusions.' One reviewer states the work includes 'a number of novel findings that are worthy of further exploration' and describes the results as 'provocative.' Another notes 'the conclusions drawn are supported by the evidence presented.'",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C66",
-      "C67"
+      "C28",
+      "C29"
     ],
-    "result": "The study reveals that viable N-protein sequences can have significant variation of physicochemical properties within the mutant spectrum in IDRs, yet a very clear separation of physicochemical parameters far exceeding mutational dispersion is maintained between the L-rich and SR-rich regions of the linker IDR, and between the N3 and remaining regions of the C-arm IDR.",
+    "result": "The defining mutations of Delta and Omicron variants impact physicochemical properties across all N-protein regions, but their values do not stand out from the broader mutant spectrum, which includes more extreme values.",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers accepted these overarching conclusions about the biophysical fitness landscape. One reviewer noted 'the analyses and conclusions are interesting and will be of value to virologists, cell biologists, and biophysicists studying SARS-CoV-2 function and assembly,' indicating acceptance of these interpretive findings.",
-    "result_type": "MAJOR"
+    "evaluation": "Reviewers do not challenge this observation. It is accepted as part of the computational analysis showing that while specific variant mutations have effects, they exist within a broader landscape of viable mutations. This finding supports the overall conclusion about the plasticity of IDRs.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C68",
-      "C69"
+      "C30"
     ],
-    "result": "The experimental results demonstrate that point mutations in N-protein can affect protein properties on all levels of organization, from thermodynamic stability and secondary structure to intra- and inter-molecular interactions, oligomeric state, particle formation, and LLPS. Specifically, mutations can impact the transient helix in the hydrophobic L-rich region of the linker and promote its helical conformation and self-association into higher oligomeric states.",
+    "result": "Comparative sequence analysis shows that related coronaviruses (SARS-CoV-1, MERS, MHV) have high sequence identity in full-length protein and folded domains but little to no sequence identity in IDRs (except SARS-CoV-1).",
     "reviewer_id": "PEER_REVIEW",
     "reviewer_name": "Peer Reviewer",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Reviewers affirmed these broad mechanistic conclusions. One reviewer stated 'The results include a number of novel findings that are worthy of further exploration' and described the work as providing 'new insights into the biophysics of the SARS-CoV-2 nucleocapsid' with evidence that 'nicely supports the conclusions.'",
-    "result_type": "MAJOR"
+    "evaluation": "Reviewers do not question this comparative sequence analysis. It is accepted as supporting evidence for the conservation of physicochemical properties despite sequence divergence in IDRs, which is central to the manuscript's conclusions about functional constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C83"
+    ],
+    "result": "The manuscript cites epidemiological and functional studies showing that the mutations studied (R203K/G204R, P13L, G215C, D63G) are associated with increased viral fitness, enhanced assembly, modulated phosphorylation, T-cell evasion, and altered virion morphology.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these cited findings as context for the biophysical studies. One reviewer notes 'P13L itself has been identified epidemiologically as the most important driver of fitness in N-protein' and acknowledges 'its biophysical effects have not been previously studied,' validating the novelty of the current work. The citations are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12"
+    ],
+    "result": "The manuscript provides background context on SARS-CoV-2 genomic databases, N-protein structure and function, dataset composition (5.06 million sequences with ~36% Delta and ~49% Omicron variants), and identification of 6300 distinct N-protein sequences for analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these background claims or dataset descriptions. One reviewer notes the work 'analyze[s] 5 million viral sequence variants' and describes the approach as using 'bioinformatic analysis of mutational variants of SARS-CoV-2 Nucleocapsid (N) protein from the large genomic database.' The dataset and methodology are implicitly accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript describes known functional roles of IDR sub-regions (SR-rich region for phosphorylation and RNA binding; L-rich region for transient helix formation, NSP3 interaction, and coiled-coil oligomerization; N3 region for packaging signal and M-protein interactions) and demonstrates that mutations near the L-rich helix impact weak protein interactions, particle formation, and LLPS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these functional descriptions and mechanistic interpretations. One reviewer notes 'the central disordered linker is particularly well understood: it contains a long SR-rich region that is extensively phosphorylated in infected cells, followed by a leucine-rich helical segment that was shown previously by these authors to promote N protein oligomerization.' The current findings are seen as extending this understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript notes that the studied mutations can occur independently in viable viruses and discusses general principles that intrinsic disorder in RNA virus proteins promotes functional promiscuity and evolvability, though evolutionary constraints for IDRs differ from globular proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these contextual observations about mutation independence or general principles of viral protein evolution. These claims provide theoretical framework that reviewers implicitly accept as part of the manuscript's interpretation of findings.",
+    "result_type": "MINOR"
   }
 ]

@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C56",
+      "C57",
+      "C69"
+    ],
+    "result": "Single-cell RNA sequencing of postnatal day 5 mouse autonomic ganglia reveals that the pelvic ganglion contains four distinct neuronal clusters (P1-P4) that segregate separately from both sympathetic and parasympathetic neurons in UMAP analysis, with one subset (P3) positioned close to the sympathetic cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C23, C56-C57, and C69 collectively demonstrate clear clustering of pelvic neurons into four groups using appropriate scRNA-seq methodology and UMAP dimensionality reduction. The data show consistent batch effects were controlled (C56), and the clustering is reproducible across technical replicates. However, there is an internal inconsistency between C21 (stating P3 is close to sympathetic) and C23 (stating none co-segregate), which requires clarification but doesn't undermine the core finding of four distinct clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Gene expression analysis reveals that pelvic ganglion neurons share a core set of 12 transcription factors with sympathetic neurons (including Isl1, Gata2, Gata3, Hand1, Hmx1, Tbx20, and 6 Hox genes) but lack parasympathetic markers (Hmx2, Hmx3, Dlx5, Dlx6, Ebf3, Satb2), establishing a sympathetic-like identity with pelvic-specific modifications driven by Hox genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C6-C7, and C24-C32 are well-supported by comprehensive gene expression analysis showing 7 distinct expression patterns among the top 100 genes. The identification of shared sympathetic transcription factors (C25, C27-C31) and distinct parasympathetic markers (C26) is backed by both current data and appropriate citations to functional studies. The Hox gene expression patterns (C32, C58-C61) provide a molecular basis for pelvic-specific identity. Only 3 genes (C77-C78) support the classical mixed model, strongly arguing against it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Anterograde tracing from lumbar spinal preganglionic neurons demonstrates that both noradrenergic (TH+) and cholinergic (CHAT+) neurons in the pelvic ganglion receive equal innervation, with CHAT+ cells representing 51% of total cells and 50% of dextran-decorated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C62-C64 are supported by rigorous anatomical tracing with appropriate quantification (3186 cells, 529 decorated cells, 48 sections, 4 mice). The finding that lumbar preganglionic neurons synapse equally on both cell types (C4, C64) challenges the classical model. However, C5's inference that both serve as 'sympathetic relays' depends on the genetic evidence and represents an interpretation rather than direct demonstration of function. The methodology is sound and sample size adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors propose that the entire taxonomy of autonomic ganglia could be a developmental readout of Hox genes, given the rostro-caudal deployment pattern of parasympathetic, sympathetic, and pelvic ganglia, analogous to Hox gene roles in neuronal specification in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 is explicitly presented as a conjecture that is 'hard to test' due to Hox gene multiplicity. While the rostro-caudal pattern (C34-C36) is established anatomical knowledge and Hox gene roles in other organisms (C37-C39) are well-cited, the extrapolation to autonomic ganglia taxonomy lacks direct experimental evidence. This represents an interesting hypothesis requiring functional validation through genetic manipulation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Integration with prior work demonstrates that both preganglionic (lumbar and sacral) and postganglionic (pelvic ganglion) neurons of the sacral autonomic outflow share sympathetic genetic signatures, contradicting the century-old classification of sacral preganglionic neurons as parasympathetic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 appropriately integrate the current findings with prior work (Espinosa-Medina et al., 2016; Blum et al., 2021; Alkaslasi et al., 2021). The citations to transcriptomic studies of preganglionic neurons (C42-C43) support the interpretation that sacral neurons are sympathetic with caudal modifications (C44-C45). C46 synthesizes both pre- and postganglionic evidence to reach a coherent conclusion. The logic is sound, though the interpretation relies on genetic signatures rather than functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors argue that the classical parasympathetic designation for the sacral autonomic outflow, based on Langley's physiological observations, is both unnecessary and incongruent with pelvic physiology, and should be replaced with a sympathetic classification modified for pelvic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C14 and C47-C51 accurately represent historical context and cite appropriate reviews (Espinosa-Medina et al., 2018). However, C52-C54 make strong interpretive claims about physiological compatibility without presenting new physiological data in this manuscript. The argument relies heavily on a prior review (C47-C51) rather than direct experimental evidence. While the genetic data are compelling, the physiological argument would benefit from functional validation. The recommendation to drop the parasympathetic label (C54) is a significant conceptual claim requiring broader experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Anatomical context and established knowledge about autonomic nervous system organization, including the presence of both noradrenergic and cholinergic neurons in the pelvic ganglion and the typical neurotransmitter profiles of sympathetic versus parasympathetic ganglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C66-C72 represent established anatomical knowledge that is appropriately cited or confirmed by the current data. These provide necessary context for interpreting the novel findings. C15 is confirmed by the tracing data in Figure 3, while C16-C17 represent standard textbook knowledge about autonomic organization. The anatomical descriptions (C66-C68, C70-C72) are accurate and well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Among the four pelvic clusters, P1 is the least sharply defined by specific genes, while P2 and P3 are characterized by expression of transcription factors Gata5 and Mecom, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by gene expression data in Figure 1\u2014figure supplement 3. The observation that P1 lacks sharp molecular definition (C73) is important for understanding cluster heterogeneity. The identification of cluster-specific transcription factors (C74-C75) provides molecular handles for future functional studies, though the functional significance of these markers is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The functional roles of the six parasympathetic-specific transcription factors (Hmx2, Hmx3, Dlx5, Dlx6, Ebf3, Satb2) in parasympathetic development are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 accurately represents a gap in current knowledge. This is an honest acknowledgment of limitations in interpreting the parasympathetic markers, contrasting with the well-characterized sympathetic transcription factors. This knowledge gap does not undermine the main findings but highlights an area for future investigation.",
+    "result_type": "MINOR"
+  }
+]

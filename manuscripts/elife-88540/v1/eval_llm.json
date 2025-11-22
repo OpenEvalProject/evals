@@ -10,11 +10,11 @@
       "C76",
       "C77"
     ],
-    "result": "The study analyzed 100,347 articles and 5,061,417 citations from 63 high-impact neuroscience journals published between 2000-2020, downloaded from Scopus.",
+    "result": "The study analyzed 100,347 articles and 5,061,417 citations from 63 high-impact neuroscience journals published between 2000-2020, downloaded from Scopus. The dataset was derived from an initial collection of 157,287 papers after applying exclusion criteria.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C2, C11, C12, C75, C76, and C77 collectively describe the dataset composition and collection methodology. The data source (Scopus), time period (2000-2020), number of journals (63), final article count (100,347), and citation count (5,061,417) are all explicitly stated with clear documentation of the data collection process.",
+    "evaluation": "Claims C1, C2, C11, C12, C75, C76, and C77 provide consistent and explicit descriptions of the dataset size, scope, and collection methods. The numbers are clearly stated with appropriate context about data sources and exclusion criteria, providing a well-documented foundation for the study.",
     "result_type": "MINOR"
   },
   {
@@ -22,13 +22,16 @@
     "claim_ids": [
       "C13",
       "C78",
-      "C79"
+      "C79",
+      "C80",
+      "C81",
+      "C82"
     ],
-    "result": "The computational method for calculating self-citation rates was validated against manual scoring, showing strong agreement (r=0.98 for First Authors, 0.95 for Last Authors, 0.96 for Any Authors) across 906 manually scored articles.",
+    "result": "The computational method for calculating self-citation metrics was validated against 906 manually scored articles, showing strong agreement (r=0.98 for First Authors, 0.95 for Last Authors, 0.96 for Any Authors). Statistical methods included bootstrap resampling with 1000 iterations and permutation testing with 10,000 permutations, with FDR correction applied.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C13, C78, and C79 describe the validation of the computational approach. The high correlation coefficients between automated and manual scoring provide strong evidence for the reliability of the self-citation detection method using Scopus Author IDs.",
+    "evaluation": "Claims C13 and C78-C82 describe rigorous validation and statistical methods. The high correlation coefficients (C13) demonstrate that the automated approach accurately captures self-citation patterns. The statistical methodology is clearly documented with appropriate sample sizes for resampling and permutation testing.",
     "result_type": "MINOR"
   },
   {
@@ -40,11 +43,11 @@
       "C17",
       "C18"
     ],
-    "result": "In 2016-2020, overall self-citation rates were 3.98% for First Authors, 8.15% for Last Authors, and 14.41% for Any Authors, with Last Author rates significantly higher than First Author rates across all fields (p=2.9e-4).",
+    "result": "In 2016-2020, overall self-citation rates were 3.98% for First Authors, 8.15% for Last Authors, and 14.41% for Any Authors. Last Author rates were significantly higher than First Author rates across all fields (p=2.9e-4), and Neuroscience had significantly lower rates than Neurology and Psychiatry.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C14-C18 present the baseline self-citation rates with confidence intervals and statistical significance testing. The data are clearly presented with appropriate statistical methods (bootstrap confidence intervals, permutation testing with FDR correction), supporting the reported differences between author positions and fields.",
+    "evaluation": "Claims C14-C18 present baseline self-citation rates with confidence intervals and statistical significance tests. The data are internally consistent and show clear patterns across authorship positions and fields. The statistical tests appropriately support the claims of significant differences.",
     "result_type": "MAJOR"
   },
   {
@@ -54,14 +57,13 @@
       "C19",
       "C20",
       "C21",
-      "C22",
-      "C53"
+      "C22"
     ],
-    "result": "First Author self-citation rates decreased significantly from 2000 to 2020 (-1.21% per decade), while Last Author rates decreased minimally (-0.18% per decade) and Any Author rates increased (0.32% per decade), likely due to increasing collaborations and expanding author lists.",
+    "result": "From 2000 to 2020, First Author self-citation rates decreased from 6.22% to 3.68% (-1.21% per decade), Last Author rates decreased slightly (-0.18% per decade), while Any Author rates increased (0.32% per decade), indicating increasing relative self-citation by Last Authors compared to First Authors.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3, C19-C22, and C53 describe temporal trends with specific rates of change and confidence intervals. The diverging trends between First and Last Authors are well-documented with statistical support. The interpretation regarding collaborations (C53) is reasonable but speculative.",
+    "evaluation": "Claims C3, C19-C22 describe temporal trends with specific rates, confidence intervals, and linear trend estimates. The data consistently show diverging patterns between First and Last Authors, supporting the key finding of increasing relative Last Author self-citation. The statistical evidence is robust with appropriate confidence intervals.",
     "result_type": "MAJOR"
   },
   {
@@ -69,49 +71,47 @@
     "claim_ids": [
       "C23",
       "C24",
-      "C25",
-      "C57"
+      "C55"
     ],
-    "result": "Self-citation rates increase substantially with academic age, with authors at 30 years citing themselves approximately twice as much as those at 10 years, and academic age being a more robust predictor than authorship position.",
+    "result": "Academic age is a more robust indicator of self-citation than authorship position, with self-citation rates increasing from about 5% at 10 years to over 10% at 30 years. Authors with 30 years experience cite themselves approximately twice as much as those with 10 years experience.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C23-C25 and C57 describe the relationship between academic age and self-citation with specific examples and visual support (Figure 2). The 'snowball effect' is clearly demonstrated in the data, showing that for a given academic age, First and Last Author self-citation rates converge.",
+    "evaluation": "Claims C23, C24, and C55 are supported by Figure 2 showing comparable self-citation rates for First and Last Authors at the same academic age. The data demonstrate a clear relationship between career stage and self-citation behavior, with appropriate visual evidence provided.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
+      "C4",
+      "C25",
       "C26",
       "C27",
-      "C28",
-      "C4",
-      "C47",
-      "C48"
+      "C45",
+      "C46"
     ],
-    "result": "Self-citation rates vary substantially by country, with rates in the highest self-citing countries doubling those in the lowest. Papers from LMIC institutions had significantly lower self-citation counts and rates compared to non-LMIC institutions even after controlling for covariates.",
+    "result": "Self-citation rates vary substantially by country, with the highest rates doubling the lowest (e.g., Italy 5.65% vs China 2.52% for First Authors). LMIC institutions had significantly lower self-citation counts and rates (-12.7% for First Authors, -23.7% for Last Authors) compared to non-LMIC institutions. Geographic patterns were highly correlated with the number of previous papers.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C26-C28, C4, C47, and C48 describe geographic differences with specific examples (Italy vs. China) and correlation analyses. The LMIC findings are supported by GAM modeling with specific coefficient values. The correlation with number of previous papers (C28) provides mechanistic insight.",
+    "evaluation": "Claims C4, C25-C27, C45-C46 present geographic differences with specific examples, correlation statistics, and model coefficients. The data are supported by maps (Figure 3) and statistical models. The correlation with publication history (r=0.576-0.654) provides mechanistic insight into geographic differences.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
+      "C6",
+      "C28",
       "C29",
       "C30",
       "C31",
-      "C32",
-      "C6",
-      "C84",
-      "C85"
+      "C32"
     ],
-    "result": "Self-citation rates vary significantly by research subtopic, with clinical trial research showing the highest First Author rates (6.07%) and mechanistic research the lowest (3.10%), as determined by LDA topic modeling with 13 topics.",
+    "result": "Self-citation rates vary by research subtopic, identified through LDA topic modeling with 13 topics. Clinical trial research had the highest First Author rate (6.07%), while mechanistic research had the lowest (3.10%). For Last Authors, dementia research was highest (10.34%) and social neuroscience lowest (6.34%).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C32, C6, C84, and C85 describe field-specific differences identified through topic modeling. The LDA approach is appropriately documented with parameter selection justified by perplexity analysis. The confidence intervals for each subtopic support the reported differences.",
+    "evaluation": "Claims C6, C28-C32 describe field-specific patterns based on topic modeling. The LDA approach is appropriately documented with model selection criteria (Figure 4-supplement 1). The self-citation rates by topic are clearly presented with confidence intervals, though the topic assignments involve some subjective interpretation.",
     "result_type": "MAJOR"
   },
   {
@@ -124,130 +124,128 @@
       "C37",
       "C38",
       "C39",
-      "C40"
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
     ],
-    "result": "Men had significantly higher raw self-citation rates than women (4.54% vs 3.39% for First Authors in 2016-2020), with men citing themselves 27-56% more than women depending on year and author position, though gender parity in authorship and self-citation rates is projected for the 2040s based on linear trends.",
+    "result": "Men and women were nearly equally represented as First Authors in 2020 (48.60% women), but gender parity for Last Authors is projected for 2043. Men had significantly higher raw self-citation rates than women (4.54% vs 3.39% for First Authors in 2016-2020, p=2.9e-4), with men citing themselves 27-56% more depending on year and position. Early-career men (\u226410 years) had 33.13% higher self-citation rates than women.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C33-C40 document gender differences in self-citation with specific rates, confidence intervals, and statistical significance. The temporal trends and projections are based on linear modeling with appropriate uncertainty quantification. However, the projections assume linear trends will continue, which may not hold.",
+    "evaluation": "Claims C33-C44 present detailed gender differences with statistical significance tests, confidence intervals, and specific examples. The data show consistent patterns across multiple analyses. However, the projections (C34, C37, C38) assume linear trends will continue, which may not hold. The raw differences are well-documented.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
       "C5",
-      "C41",
-      "C42",
-      "C43",
-      "C44",
-      "C45",
-      "C46",
-      "C52",
-      "C63",
-      "C69"
+      "C60",
+      "C50"
     ],
-    "result": "Gender differences in self-citation stem primarily from differences in the number of previously published papers rather than differences in self-citation behavior itself. Men had significantly more papers than women at all career stages (e.g., 42.32 vs 30.09 papers at academic age 10), and being a man was associated with about 0.25 more papers in GAM models.",
+    "result": "Gender differences in self-citation stem primarily from differences in the number of previously published papers rather than self-citation behavior itself. Men were associated with about 0.25 more papers in the publication history model, and this difference in publication history explains the largest portion of self-citation differences between genders.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5, C41-C46, C52, C63, and C69 collectively demonstrate that publication history explains most gender differences in self-citation. The early-career analysis (C41-C43) shows a 33% higher self-citation rate for men, but when grouped by number of papers (C46), differences are small and only significant for low paper counts. The GAM results (C52) and consistency with prior literature (C63) strengthen this conclusion.",
+    "evaluation": "Claims C5, C60, and C50 are supported by GAM modeling results (Table 2) showing that gender effects on self-citation largely disappear or reverse when controlling for number of previous papers. This finding is consistent with prior literature (C59-C60) and represents a key mechanistic insight. The statistical modeling appropriately addresses confounding.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C49",
-      "C50",
-      "C51",
-      "C88",
-      "C89",
-      "C90"
+      "C47",
+      "C48",
+      "C49"
     ],
-    "result": "Generalized additive models revealed that review articles were associated with lower self-citation counts and rates, self-citations were greater for papers with fewer authors (effect diminishing after ~5 authors), and Neuroscience was associated with the fewest papers per author.",
+    "result": "In GAM analyses, a greater number of references was associated with higher self-citation counts but lower rates. Review articles were associated with lower self-citation counts and rates. Neuroscience was associated with the fewest papers per author in publication history models.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C49-C51 and C88-C90 describe GAM findings with appropriate methodological documentation. The Tweedie distribution selection (C90) is empirically justified, and the random subsampling approach (C89) addresses the nested data structure. The findings are supported by model diagnostics (Figure 6-supplement 1).",
+    "evaluation": "Claims C47-C49 describe findings from the GAM models presented in Table 2 and Figure 6. The results are clearly stated with appropriate statistical support. The finding about number of references (C47) makes intuitive sense - more references provide more opportunities for self-citation but dilute the rate.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C54",
-      "C55",
-      "C56"
+      "C51",
+      "C52",
+      "C53",
+      "C54"
     ],
-    "result": "The decrease in First Author relative to Last Author self-citations since 2000 could make it harder for early-career scientists to advance academically, though alternative explanations include increasing numbers of early-career researchers leaving academia or researchers becoming more specialized throughout their careers.",
+    "result": "The authors interpret that increasing collaborations likely explain rising Any Author self-citation rates, while decreasing First Author relative to Last Author self-citations could disadvantage early-career scientists. Alternative explanations include early-career researchers leaving academia or increased specialization throughout careers.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "UNCERTAIN",
-    "evaluation": "Claims C54-C56 present interpretations and speculations about the implications of temporal trends. While the observed trend is well-supported, the causal claims about career advancement (C54) and the alternative explanations (C55-C56) are speculative and not directly tested. These represent reasonable hypotheses but lack empirical validation in the current study.",
+    "evaluation": "Claims C51-C54 are interpretations and speculations about observed trends rather than direct findings. While the interpretations are reasonable, they are not directly tested. C52 makes a concerning claim about career impacts that warrants further investigation but is not empirically demonstrated. C53 is supported only by a citation to prior work, not data from this study.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C80",
-      "C81",
-      "C82",
-      "C83"
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
     ],
-    "result": "Statistical inference used 1000 bootstrap iterations for confidence intervals and 10,000 permutation iterations for p-values, with Benjamini/Hochberg FDR correction applied and co-authorship exchangeability blocks used to account for nested data structure.",
+    "result": "The study employed LDA topic modeling using Gensim, gender estimation via Genderize.io (\u226580% probability threshold), GAMs using mgcv in R with Tweedie distribution (P=1.2), and LMIC classification from OECD definitions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C83 describe the statistical methodology comprehensively. The use of bootstrap resampling, permutation testing, FDR correction, and exchangeability blocks represents appropriate statistical practices for this type of observational data with nested structure. The methods are clearly documented and reproducible.",
+    "evaluation": "Claims C83-C88 describe methodological choices that are clearly documented with appropriate citations. The methods are standard for this type of analysis. The 80% probability threshold for gender (C85) is a reasonable choice to balance sample size and accuracy, though it introduces some uncertainty.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C7",
-      "C8",
-      "C9",
-      "C10",
-      "C62",
-      "C64",
-      "C65",
       "C66",
       "C67",
-      "C68"
+      "C68",
+      "C69",
+      "C70"
     ],
-    "result": "The study situates self-citation within broader citation practices and gender disparities in science, noting that citation metrics are critical for academic careers, prior work has shown under-citation of women and minorities, and women are underrepresented across multiple dimensions of science.",
+    "result": "The authors acknowledge several limitations: restriction to top-ranked journals limits generalizability, high impact factor selection may skew toward higher self-citation rates, gender assignment doesn't account for nonbinary/transgender/intersex authors, models provide insight into trends rather than prediction, and the analysis is descriptive rather than causal.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C10 and C62-C68 provide context from prior literature through appropriate citations. These claims establish the motivation and situate the current findings within existing knowledge about citation practices and gender disparities in science. The citations appear appropriate and accurately represent prior work.",
+    "evaluation": "Claims C66-C70 appropriately identify key limitations of the study. These are reasonable and important caveats. The restriction to high-impact journals (C66-C67) is a significant limitation for generalizability. The gender methodology limitation (C68) is particularly important given the prominence of gender findings. The acknowledgment of non-causal analysis (C70) is appropriate.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C58",
-      "C59",
-      "C60",
-      "C61"
+      "C7",
+      "C8",
+      "C9",
+      "C10"
     ],
-    "result": "Geographic and field differences in self-citation may be explained by cultural differences (individualist vs. collectivist cultures), academic pressures (e.g., US researchers reporting more pressure to publish), policy incentives (e.g., Italy's 2010 citation-based promotion policy), and research characteristics (e.g., clinical trials building on prior phases).",
+    "result": "The authors cite prior literature establishing that citation metrics are critical for academic careers, that under-citation of women and racial/ethnic minorities has been documented, and that each self-citation leads to approximately three additional citations after five years.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C61 provide explanatory context for observed patterns through citations to prior literature. These represent plausible mechanisms supported by evidence from other fields and contexts. However, these are interpretations rather than direct findings of the current study.",
+    "evaluation": "Claims C7-C10 accurately represent prior literature with appropriate citations. These claims establish the context and importance of studying self-citation practices. The claims are properly attributed to prior work rather than presented as findings of this study.",
     "result_type": "MINOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C70",
-      "C87",
-      "C91"
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
     ],
-    "result": "The study has important limitations including restriction to top-ranked journals, use of binary gender assignment from names (not accounting for nonbinary, transgender, or intersex authors), and use of OECD definitions for LMIC status.",
+    "result": "The authors cite prior literature on cultural differences in self-citation, publishing pressure in different countries, policy effects on self-citation (Italy 2010), gender differences in self-citation, and broader underrepresentation of women in science across multiple domains.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C70, C87, and C91 acknowledge key limitations of the study design and methodology. These limitations are appropriately recognized and could affect generalizability and interpretation of findings, particularly regarding gender analysis and geographic comparisons.",
+    "evaluation": "Claims C56-C65 appropriately cite and represent prior literature to contextualize findings. The citations appear accurate and relevant. These claims help interpret the study's findings within the broader literature on citation practices and gender disparities in science.",
     "result_type": "MINOR"
   },
   {
@@ -258,11 +256,24 @@
       "C73",
       "C74"
     ],
-    "result": "According to COPE, self-promotional citations violate publication ethics, yet few journals have self-citation policies (24.71% of General Surgery journals, 14.29% of Critical Care journals), and existing policies have shown no significant effect on self-citation rates.",
+    "result": "According to COPE, self-promotional citations violate publication ethics. Prior studies found that only 24.71% of General Surgery and 14.29% of Critical Care journals had self-citation policies, and these policies had no significant effect on self-citation rates.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C71-C74 cite prior literature on self-citation policies and their effectiveness. The COPE guideline (C71) and the empirical findings from other fields (C72-C74) are appropriately cited and provide context for the policy implications of the current findings.",
+    "evaluation": "Claims C71-C74 accurately cite COPE guidelines and prior literature on journal policies. The findings about limited policy adoption and effectiveness (C72-C74) provide important context for the discussion of self-citation practices and potential interventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The study's own references contain 12.53% woman/woman, 19.27% man/woman, 13.17% woman/man, and 55.03% man/man citations. By race/ethnicity, references contain 7.46% author of color/author of color, 17.45% white/author of color, 14.81% author of color/white, and 60.29% white/white citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 demonstrate transparency by analyzing the citation diversity of the manuscript itself. This self-reflection is commendable and shows awareness of citation bias issues. The percentages are explicitly stated, though the methods for these calculations have known limitations as acknowledged in the citation diversity statement.",
     "result_type": "MINOR"
   }
 ]

@@ -4,16 +4,21 @@
     "claim_ids": [
       "C1",
       "C2",
-      "C73",
-      "C74",
-      "C75",
-      "C76"
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
     ],
-    "result": "A field experiment was conducted with 130 O. sativa ssp. indica accessions in normal and moderate salinity stress (6 dSm\u207b\u00b9) conditions at IRRI, Philippines, during the dry season of 2017. Three replicates per accession were planted in each environment, with salt application starting when plants were 31 days old.",
+    "result": "A field experiment was conducted with 130 O. sativa ssp. indica accessions in normal and moderate salinity stress (6 dSm\u207b\u00b9) conditions at IRRI, Philippines, with three replicates per accession in each environment.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1, C2, C73-C76 provide comprehensive experimental design details including location, timing, plant material, replication, and stress treatment protocol. The methodology is clearly described with specific parameters (salt concentration, timing, sample sizes) that enable reproducibility.",
+    "evaluation": "Claims C1, C2, C76-C79, C104-C108 provide comprehensive experimental design details including location, timing, sample size, replication, salt concentration, and monitoring protocols. The experimental setup is clearly described with appropriate controls and replication.",
     "result_type": "MINOR"
   },
   {
@@ -22,11 +27,11 @@
       "C3",
       "C4"
     ],
-    "result": "Salinity stress significantly reduced fecundity in rice, with average fecundity lower in saline conditions (p=1.658\u00d710\u207b\u2078) and most genotypes (94 of 130) showing significantly reduced fecundity under salt stress (p=3.639\u00d710\u207b\u2077).",
+    "result": "Salinity stress significantly reduced fecundity in rice, with average fecundity lower in saline conditions (p=1.658\u00d710\u207b\u2078) and most genotypes (94 of 130) showing significantly reduced fecundity under salt stress.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C4 present statistically significant fitness effects of salinity stress with appropriate statistical tests (paired t-test, one-sample proportion test) and highly significant p-values. The results are consistent with expected physiological responses to salt stress.",
+    "evaluation": "Claims C3-C4 provide statistical evidence with appropriate tests (paired t-test, one-sample proportion test) and significant p-values demonstrating the negative fitness effect of salinity stress. The results are consistent and well-supported.",
     "result_type": "MAJOR"
   },
   {
@@ -34,14 +39,18 @@
     "claim_ids": [
       "C5",
       "C6",
-      "C77",
-      "C78"
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
     ],
-    "result": "Gene expression was measured via 3'-end-biased mRNA sequencing in leaf blades from 780 plants (130 accessions \u00d7 3 replicates \u00d7 2 environments) sampled 38 days after sowing, corresponding to 7 days of salt exposure. Genomic data were obtained for 125 accessions through re-sequencing and public databases.",
+    "result": "Gene expression was measured via 3'-end-biased mRNA sequencing in leaf blades from 780 plants sampled 38 days after sowing (7 days after salt exposure began), with appropriate molecular and bioinformatic methods.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C6 and C77-C78 describe the transcriptomic and genomic data generation with appropriate detail. Sample sizes, timing, tissue type, and sequencing methodology are clearly specified. Data availability is documented with accession numbers.",
+    "evaluation": "Claims C5-C6 and C109-C114 describe the transcriptomic methodology in detail, including tissue sampling timing, sequencing protocol, data processing pipeline, and data availability. The methods are standard and appropriately documented.",
     "result_type": "MINOR"
   },
   {
@@ -49,219 +58,387 @@
     "claim_ids": [
       "C7",
       "C8",
-      "C9",
-      "C10",
-      "C11"
+      "C80",
+      "C115"
     ],
-    "result": "Gene expression showed high heritability (median H\u00b2=0.53) with significant genotype effects for nearly all transcripts (FDR<0.001). Genotype-by-environment interactions were detected for 16,371 transcripts, but no genotype-dependent plasticity in fitness was observed (G\u00d7E for fitness p=0.49). Only 254 transcripts showed environment-independent plasticity.",
+    "result": "Gene expression shows high heritability, with all but 3 of 18,141 transcripts displaying significant genotype effects (FDR<0.001) and median broad-sense heritability of 0.53.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C11 present quantitative genetics results with appropriate statistical thresholds and effect sizes. The finding of widespread G\u00d7E for gene expression but not fitness is notable and well-supported by ANOVA results. The contrast between molecular and fitness plasticity is clearly documented.",
+    "evaluation": "Claims C7-C8, C80, C115 provide statistical evidence from ANOVA showing that gene expression is highly heritable. The heritability calculation formula is provided and the FDR threshold is appropriately conservative.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C12",
-      "C13",
-      "C14",
-      "C15"
+      "C9",
+      "C81"
     ],
-    "result": "Most transcripts showed nearly neutral selection (|S|<0.1) in both environments. In normal conditions, positive directional selection was stronger than negative (p=3.95\u00d710\u207b\u00b9\u2075), with 17 transcripts passing Bonferroni correction. In saline conditions, higher expression was generally associated with lower fitness (p=0.0068), with no transcripts passing Bonferroni correction.",
+    "result": "16,371 transcripts showed significant genotype\u00d7environment (G\u00d7E) interaction, indicating genetic variation for plasticity in gene expression that can evolve.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C12-C15 present selection analysis results with appropriate statistical tests and multiple testing corrections. The finding that most genes are under weak selection is consistent with evolutionary theory. The directional differences between environments are well-documented with significant p-values.",
+    "evaluation": "Claims C9 and C81 demonstrate widespread G\u00d7E effects on gene expression using appropriate statistical methods. The interpretation that this indicates evolvable plasticity is reasonable given the significant G\u00d7E term.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C16",
-      "C17",
-      "C18"
+      "C10",
+      "C83"
     ],
-    "result": "Stabilizing selection was prevalent in both environments but stronger in normal conditions (p<2.2\u00d710\u207b\u00b9\u2076). In saline conditions, there was no significant difference between stabilizing and disruptive selection (p=0.514), indicating increased disruptive selection under stress.",
+    "result": "Despite widespread G\u00d7E for gene expression, there was no evidence of genotype-dependent plasticity in fitness (G\u00d7E for fitness p=0.49).",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C16-C18 document quadratic selection patterns with appropriate statistical tests. The shift from predominantly stabilizing to mixed stabilizing/disruptive selection under stress is biologically meaningful and well-supported by Mann-Whitney U-tests.",
+    "evaluation": "Claims C10 and C83 show a disconnect between molecular and fitness-level plasticity. The statistical test is appropriate and the interpretation acknowledges potential mechanisms (pleiotropy, epistasis, environment-specific eQTLs) for this pattern.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C19",
-      "C20",
-      "C63"
+      "C11"
     ],
-    "result": "Selection on gene expression was significantly stronger under salinity stress compared to normal conditions for overall directional selection (p=0.012), negative directional selection (p=8.27\u00d710\u207b\u2076), stabilizing selection (p<2.2\u00d710\u207b\u00b9\u2076), and disruptive selection (p<2.2\u00d710\u207b\u00b9\u2076), but not for positive directional selection (p=0.735).",
+    "result": "Only 254 transcripts showed significant environment (E) effects, indicating limited genotype-independent plasticity in gene expression.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C19-C20 and C63 demonstrate increased selective pressure under stress with multiple statistical comparisons. The pattern is consistent across different selection modes (except positive directional), providing strong evidence for the main conclusion that salinity induces increased selection pressure.",
+    "evaluation": "Claim C11 is directly supported by ANOVA results. The small number of transcripts with pure environment effects contrasts with the large number showing G\u00d7E effects, supporting the interpretation of limited genotype-independent plasticity.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C21",
-      "C22",
-      "C23",
-      "C24",
-      "C25",
-      "C26",
-      "C27",
-      "C28"
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C82",
+      "C116",
+      "C117"
     ],
-    "result": "Conditional neutrality (10.80% of transcripts) was significantly more common than antagonistic pleiotropy (0.28%, p<2.2\u00d710\u207b\u00b9\u2076). Among 38 antagonistically pleiotropic transcripts beneficial in normal conditions, many were involved in photosynthesis and metabolic processes, consistent with reduced photosynthesis under salt stress. Two photosynthesis-related AP transcripts (PSAN, CRR7) had eQTLs only in normal conditions. Among 13 AP transcripts beneficial in saline conditions, OsCYP2 was identified but had no associated eQTLs.",
+    "result": "Most transcripts were under nearly neutral selection (|S|<0.1) in both environments, with a trend toward positive directional selection in normal conditions but negative directional selection in saline conditions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C21-C28 document trade-offs with appropriate statistical tests and functional validation through GO analysis and literature citations. The low frequency of antagonistic pleiotropy is well-supported. The identification of specific genes with known functions (OsCYP2, PSAN, CRR7) strengthens the biological interpretation, though the lack of eQTLs for some genes suggests additional regulatory complexity.",
+    "evaluation": "Claims C12-C15, C82, C116-C117 describe selection on gene expression using appropriate phenotypic selection analysis methods. The statistical tests are appropriate and the fitness proxy (filled grain number) is clearly defined. The manuscript acknowledges issues with standardization of selection differentials.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C29",
-      "C30",
-      "C31",
-      "C32"
+      "C16",
+      "C17",
+      "C18",
+      "C84"
     ],
-    "result": "Differential selection analysis identified 13 biological processes under stronger selection in normal conditions (primarily growth and defense) and 18 processes in saline conditions (flowering regulation, cell cycle control, reproduction). These findings support that salinity stress affects cell cycle regulation and reduces growth and reproduction.",
+    "result": "Stabilizing selection was stronger than disruptive selection in normal conditions, but there was no difference between stabilizing and disruptive selection in saline conditions, indicating that fitness is associated with extreme transcript abundance under salt stress.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C29-C32 present GO-level selection analysis with clear environmental differences. The biological interpretation is supported by prior knowledge of salt stress effects on cell cycle and reproduction. The analysis appropriately aggregates gene-level selection to pathway level.",
+    "evaluation": "Claims C16-C18, C84 provide statistical evidence for different patterns of quadratic selection between environments. The interpretation that extreme expression is favored under stress is reasonable given the disruptive selection pattern.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C33",
-      "C34",
-      "C35",
-      "C36"
+      "C19",
+      "C20",
+      "C67"
     ],
-    "result": "Multivariate selection analysis revealed that over half of principal components (7 of 11 in normal, 7 of 12 in saline) showed opposite signs of direct and indirect selection responses, indicating constraints. PCs enriched for metabolic pathways and secondary metabolite biosynthesis were under selection in normal conditions. Circadian rhythm showed positive directional selection with overall positive response in saline conditions, consistent with its role in salt tolerance.",
+    "result": "Selection on gene expression was stronger in saline conditions compared to normal conditions for overall directional, negative directional, stabilizing, and disruptive selection, indicating that salinity stress induces increased selective pressure.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C33-C36 present multivariate selection analysis using PCA to account for trait correlations. The finding of constraints (opposite direct/indirect responses) is methodologically sound. The identification of circadian rhythm under selection in saline conditions is supported by literature citations on its role in salt tolerance.",
+    "evaluation": "Claims C19-C20, C67 provide statistical comparisons of selection strength between environments using Mann-Whitney U-tests. The results consistently show stronger selection under stress, supporting the main conclusion about increased selective pressure under salinity.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R11",
     "claim_ids": [
-      "C37",
-      "C38",
-      "C39"
+      "C21",
+      "C22",
+      "C85"
     ],
-    "result": "Decoherence analysis identified >29,000 transcript pairs (1,742 unique transcripts) with significantly different correlations between environments (FDR<5%). GO enrichment highlighted pathways related to salt tolerance, including circadian rhythm genes (OsPRR37, GI), carbon metabolism, and secondary metabolite accumulation.",
+    "result": "Conditional neutrality (10.80% of transcripts) was much more common than antagonistic pleiotropy (0.28% of transcripts), indicating limited trade-offs in gene expression between environments.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C37-C39 present decoherence analysis using the CILP method with appropriate FDR control. The identification of specific genes with known salt tolerance functions (OsPRR37, GI) and relevant metabolic pathways strengthens the biological interpretation. The analysis appropriately focuses on transcripts under selection to reduce dimensionality.",
+    "evaluation": "Claims C21-C22, C85 show that most genes under selection in one environment are neutral in the other, rather than showing opposite selection. The statistical test is appropriate and the authors acknowledge the inherent bias toward detecting conditional neutrality.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R12",
     "claim_ids": [
-      "C40",
-      "C41",
-      "C42",
-      "C43",
-      "C44",
-      "C45"
+      "C23",
+      "C24",
+      "C25",
+      "C26"
     ],
-    "result": "Three physiological traits showed environment-specific selection patterns: leaf osmotic potential (positive directional in normal, stabilizing in saline), chlorophyll a content (negative directional in saline, associated with increased fitness), and flowering time (positive directional in normal, stabilizing in saline). Flowering time was significantly reduced under salinity (p=0.0012).",
+    "result": "Among 38 antagonistically pleiotropic transcripts beneficial in normal conditions, many were involved in photosynthesis and metabolic processes, consistent with reduced photosynthesis under salinity stress, and eQTLs for two photosynthesis genes (PSAN, CRR7) were identified only in normal conditions.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C40-C45 present phenotypic selection analysis with variance-standardized gradients and appropriate statistical tests. The biological interpretations are reasonable given known salt stress physiology. The finding that reduced chlorophyll is associated with higher fitness under stress is counterintuitive but supported by citations and consistent with reduced photosynthesis under stress.",
+    "evaluation": "Claims C23-C26 identify specific genes showing antagonistic pleiotropy and link them to known physiological responses (reduced photosynthesis under salt stress). The GO enrichment and eQTL analyses support the biological interpretation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R13",
     "claim_ids": [
-      "C46",
-      "C47",
-      "C48",
-      "C49",
-      "C50",
-      "C64"
+      "C27",
+      "C28"
     ],
-    "result": "eQTL analysis identified cis- and trans-eQTLs (FDR<0.001) regulating 3,065 and 3,277 genes in normal and saline conditions, respectively. Nearly 50% of cis-eQTLs were common between environments compared to only 18.62% of trans-eQTLs. trans-eQTLs explained more variation than cis-eQTLs (p<10\u207b\u00b9\u2076) and constituted 99.72% of G\u00d7eQTLs, indicating trans-regulation is primarily associated with environment-specific expression.",
+    "result": "Among 13 antagonistically pleiotropic transcripts beneficial in saline conditions, OsCYP2 (a cyclophilin) was identified, which has been associated with salt tolerance, but no eQTL was detected for this gene.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C46-C50 and C64 present comprehensive eQTL analysis with appropriate statistical thresholds. The finding that trans-eQTLs are more environment-specific than cis-eQTLs is well-supported by multiple lines of evidence (overlap analysis, effect sizes, G\u00d7eQTL analysis). This supports the conclusion that trans-regulation mediates stress responses.",
-    "result_type": "MAJOR"
+    "evaluation": "Claims C27-C28 identify a specific gene with known salt tolerance function showing antagonistic pleiotropy. The lack of detected eQTL is clearly stated and may reflect limitations in detection power or regulatory complexity.",
+    "result_type": "MINOR"
   },
   {
     "result_id": "R14",
     "claim_ids": [
-      "C51",
-      "C52",
-      "C53"
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
     ],
-    "result": "Eleven trans-eQTL hotspots (>30 genes) were identified in saline conditions but none in normal conditions. One hotspot (Chr7: 25.9-26.0 Mb) influenced 191 genes and contains OsFLP, a transcription factor regulating stomatal development that has been associated with salt tolerance.",
+    "result": "Different biological processes were under stronger selection in normal (growth and defense) versus saline (flowering, cell cycle, reproduction) conditions, consistent with known effects of salinity on flowering time, yield, and cell cycle regulation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C51-C53 identify trans-eQTL hotspots using lead SNPs to account for LD. The environment-specific nature of hotspots (only in saline) supports the master-regulator hypothesis. The identification of OsFLP with known salt tolerance function provides biological validation, though functional experiments would strengthen this inference.",
+    "evaluation": "Claims C29-C33 identify environment-specific selection on biological processes using GO enrichment analysis. The results are consistent with prior literature on salinity stress effects, strengthening the interpretation.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R15",
     "claim_ids": [
-      "C54",
-      "C55",
-      "C56",
-      "C57",
-      "C65",
-      "C66"
+      "C34",
+      "C97"
     ],
-    "result": "Contrary to expectations, cis-trans reinforcement (60.5%, 317 of 524 genes) was more common than compensation (39.5%, p=1.65\u00d710\u207b\u00b9\u00b9). Reinforcing genes showed significantly higher inter-varietal expression variation (p=0.002). Elevated linkage disequilibrium between cis- and trans-regulatory variants (mean r\u00b2=0.33-0.36 vs. background=0.056, p=0.0019) indicates genetic fixation underlies this pattern, potentially reflecting rice diversification after domestication.",
+    "result": "Over half of principal components showed opposite signs of direct and indirect responses to selection, indicating constraints on evolutionary response that differ from previous findings in rice under drought stress.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C54-C57, C65-C66 present unexpected findings on cis-trans interactions with multiple supporting analyses (proportion tests, expression variation, LD analysis). The mechanistic explanation (genetic fixation via LD) is well-supported by permutation tests. The interpretation linking this to post-domestication diversification is reasonable but somewhat speculative.",
+    "evaluation": "Claims C34 and C97 use multivariate selection analysis to show that correlated gene expression can constrain evolutionary responses. The comparison to prior work on drought stress is appropriate and highlights stress-specific patterns.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R16",
     "claim_ids": [
-      "C58",
-      "C59",
-      "C60",
-      "C61",
-      "C62",
-      "C67"
+      "C35",
+      "C36",
+      "C37",
+      "C98"
     ],
-    "result": "Site-frequency spectrum analysis revealed that trans-eQTLs were under strong purifying selection (left-shifted SFS, p<10\u207b\u00b9\u2076), especially for multi-gene regulators, and stronger in saline conditions (p=0.017). In contrast, cis-eQTLs showed evidence of balancing selection (right-shifted SFS, p<10\u207b\u00b9\u2076) with elevated nucleotide diversity in flanking regions (p<10\u207b\u00b9\u00b9).",
+    "result": "Metabolic pathways and secondary metabolite biosynthesis were under selection in normal conditions, while circadian rhythm was under positive directional selection in saline conditions, consistent with the role of circadian clock genes in salt tolerance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C58-C62 and C67 present evolutionary analysis of eQTLs using MAF distributions and nucleotide diversity. The contrasting selection regimes (purifying for trans, balancing for cis) are well-supported by multiple statistical tests. The finding that trans-eQTLs under stronger purifying selection in saline conditions is consistent with their larger effects and pleiotropy.",
+    "evaluation": "Claims C35-C37, C98 identify specific pathways under selection using PC-based multivariate analysis. The link to circadian rhythm and salt tolerance is supported by citations to prior functional studies.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R17",
     "claim_ids": [
-      "C68",
-      "C69",
-      "C70",
-      "C71",
-      "C72"
+      "C38",
+      "C39",
+      "C40",
+      "C86",
+      "C87",
+      "C99",
+      "C100",
+      "C120"
     ],
-    "result": "The study addresses the significant problem of crop yield loss due to abiotic stresses (~50-70% of yields lost), focusing on rice, a salt-sensitive crop facing yield losses from soil salinity. The study builds on prior work examining selection on gene expression in rice under drought stress, using a systems genomics approach with 130 diverse accessions.",
+    "result": "Over 29,000 transcript pairs (involving 1,742 transcripts) showed significantly different correlations between environments (decoherence), particularly in pathways related to salt stress responses including circadian rhythm, energy metabolism, and osmoprotectant biosynthesis.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C68-C72 provide context and rationale for the study with appropriate citations. The background on crop losses and rice salt sensitivity is well-established. The connection to prior work by the same group is clearly stated. These claims establish the study's significance and approach.",
+    "evaluation": "Claims C38-C40, C86-C87, C99-C100, C120 use the CILP method to detect changes in gene expression correlation structure. The GO enrichment results link decoherence to biologically relevant pathways. The authors appropriately acknowledge temporal limitations of the analysis (C100).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C88"
+    ],
+    "result": "Leaf osmotic potential was under positive directional selection in normal conditions but stabilizing selection under saline conditions, suggesting an optimal value is important under salt stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C88 show environment-specific selection patterns on a physiologically relevant trait. The interpretation that an optimal osmotic potential is important under stress is reasonable given the stabilizing selection pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C89"
+    ],
+    "result": "Chlorophyll a content was under negative directional selection in saline conditions, with the reduction associated with increased fitness, consistent with reduced photosynthesis under salinity stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C89 show that lower chlorophyll content is favored under salt stress. This counterintuitive result is supported by citations showing ion toxicity reduces chlorophyll and by the general pattern of reduced photosynthesis under stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C90"
+    ],
+    "result": "Flowering time was under positive directional selection (for later flowering) in normal conditions but stabilizing selection in saline conditions, with flowering time significantly reduced under salt stress (p=0.0012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C90 show environment-specific selection on flowering time with statistical support. The interpretation that salt stress selects for earlier flowering is supported by the observed reduction in flowering time under stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "eQTL mapping identified cis- and trans-eQTLs regulating expression of 3,065 and 3,277 genes in normal and saline conditions respectively, with ~50% of cis-eQTLs but only ~19% of trans-eQTLs shared between environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C121-C132 describe comprehensive eQTL mapping with appropriate methods including population structure correction, clear cis/trans definitions, and comparison to prior studies. The genomic data sources and processing pipeline are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C53",
+      "C91"
+    ],
+    "result": "trans-eQTLs explain more variation in transcript abundance than cis-eQTLs in both environments (p<10\u207b\u00b9\u2076), suggesting trans-eQTLs are more environment-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C91 compare effect sizes between cis- and trans-eQTLs with appropriate statistical testing. The interpretation that trans-eQTLs are more environment-specific is supported by the larger effect sizes and lower overlap between environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "cis-eQTLs constituted only 0.28% of identified gene\u00d7environment interaction eQTLs (G\u00d7eQTLs), further supporting that trans-eQTLs are more environment-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 provides additional evidence for environment-specificity of trans-eQTLs through explicit testing for G\u00d7E interactions. The low proportion of cis-eQTLs showing G\u00d7E is consistent with claims about trans-eQTL environment-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C68"
+    ],
+    "result": "11 trans-eQTL hotspots were identified in saline conditions but none in normal conditions, suggesting gene regulation under stress depends on a few master-regulators, including OsFLP on chromosome 7 which regulates 191 genes and has been associated with salt tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C68 identify trans-eQTL hotspots using appropriate methods to account for LD. The identification of OsFLP as a candidate master-regulator is supported by its location in a major hotspot and prior functional studies linking it to salt tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C69",
+      "C70",
+      "C92",
+      "C93",
+      "C133"
+    ],
+    "result": "cis-trans reinforcement (60.5% of genes) was more common than compensation (39.5%) in saline conditions (p=1.65\u00d710\u207b\u00b9\u00b9), with reinforcing genes showing higher inter-varietal expression variation and elevated LD between cis- and trans-regulatory variants, suggesting genetic fixation as the underlying mechanism related to rice diversification after domestication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C69-C70, C92-C93, C133 show an unexpected pattern of cis-trans reinforcement using appropriate statistical tests. The mechanistic interpretation is supported by elevated LD and higher expression variation in reinforcing genes. The link to post-domestication diversification is a reasonable hypothesis supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C66",
+      "C95"
+    ],
+    "result": "trans-eQTLs were under strong purifying selection (left-shifted site frequency spectrum, p<10\u207b\u00b9\u2076), especially for multi-gene regulators, with stronger purifying selection in saline conditions (p=0.017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C66, C95 use site frequency spectrum analysis to infer historical selection on trans-eQTLs. The statistical tests are appropriate and the stronger purifying selection on pleiotropic variants and under stress conditions is biologically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C71",
+      "C94"
+    ],
+    "result": "cis-eQTLs were under balancing selection (right-shifted site frequency spectrum, p<10\u207b\u00b9\u2076) with higher nucleotide diversity in flanking regions (p<10\u207b\u00b9\u00b9), indicating cis- and trans-eQTLs are under different selection regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C71, C94 use multiple lines of evidence (site frequency spectrum, nucleotide diversity) to infer balancing selection on cis-eQTLs. The contrast with trans-eQTLs is well-supported and provides insights into regulatory evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The prevalence of conditional neutrality over antagonistic pleiotropy suggests it may be feasible to breed salinity-tolerant rice varieties without yield penalty under non-saline conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is a speculative translational interpretation of the conditional neutrality results. While the logic is reasonable and supported by citations about local adaptation, the authors appropriately note that further work is needed to verify this possibility. The claim goes beyond what the data directly support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "OsCYP2, PSAN, CRR7, and OsFLP are identified as possible new targets for functional and translational studies of salinity stress in rice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 synthesizes findings about specific genes showing antagonistic pleiotropy or located in eQTL hotspots. While speculative about future applications, the identification of these candidates is well-supported by the analyses and prior functional studies.",
     "result_type": "MINOR"
   }
 ]

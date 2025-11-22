@@ -24,11 +24,11 @@
       "C27",
       "C28"
     ],
-    "result": "Microglial morphology is diverse and reflects functional states, environmental conditions, and pathological contexts. The traditional binary classification of microglia as either ramified or amoeboid is oversimplified, as microglia display a continuum of morphologies that correlate with their functional roles and local environment.",
+    "result": "The manuscript establishes the biological context that microglia exhibit diverse morphologies reflecting their functional states and environmental conditions, and that morphological analysis is important for understanding microglial function. The traditional binary classification (ramified vs. amoeboid) is oversimplified, as microglia display a continuum of morphologies in various pathological contexts.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C1-C28 establish the biological context for the study through well-cited prior work. These claims describe established knowledge about microglial morphology and its relationship to function, supported by multiple citations to peer-reviewed literature. This background provides the scientific rationale for developing a new morphological analysis tool.",
+    "evaluation": "Claims C1-C28 provide well-supported background knowledge about microglial morphology and its relationship to function, drawing from established literature with appropriate citations. These claims establish the scientific rationale for developing improved morphological analysis methods and are consistently supported by cited prior work.",
     "result_type": "MINOR"
   },
   {
@@ -42,11 +42,11 @@
       "C32",
       "C33"
     ],
-    "result": "Current morphological analysis methods that rely on classification and clustering have significant limitations, including lack of biological relevance, subjective categorization, and difficulty in comparing results across studies due to methodological diversity.",
+    "result": "Current morphological analysis methods rely on classification approaches that may lack biological relevance because microglial morphology exists along a continuum rather than in distinct categories. The variety of metrics and inconsistent categorization methods across studies makes comparisons difficult.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C3-C4 and C29-C33 identify problems with existing methods through citations and logical arguments. The authors correctly identify that microglial morphology exists along a continuum (C4, C33), making arbitrary clustering problematic. The observation about methodological inconsistency (C31-C32) is supported by the cited literature showing diverse approaches.",
+    "evaluation": "Claims C3-C33 identify limitations in current methodologies through cited literature and logical arguments. The conceptual argument that morphology represents a continuum (C4, C33) is well-supported by recent citations (C60) and provides clear motivation for the ranking approach developed in this study.",
     "result_type": "MINOR"
   },
   {
@@ -69,13 +69,14 @@
       "C55",
       "C56",
       "C57",
-      "C58"
+      "C58",
+      "C59"
     ],
-    "result": "K-means clustering applied to microglial morphology in a stroke model produces four clusters (ramified, reactive, amoeboid, and rod-like), but these clusters are highly morphologically heterogeneous, with approximately 60% of cells not fitting clearly into defined categories.",
+    "result": "K-means clustering applied to rat microglia from a stroke model identified four clusters (ramified, reactive, amoeboid, and rod-like), but these clusters were highly morphologically heterogeneous. About 60% of cells in the dataset would not fit into defined categories or would belong to multiple categories when using supervised AI approaches.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C41-C58 demonstrate the limitations of k-means clustering through experimental data (Figure 1). The quantitative results (C50-C55) show differential distribution between ipsilateral and contralateral sides, but the critical observation of cluster heterogeneity (C56-C57) is supported by visual evidence in Figure 1C. The 60% figure (C58) provides quantitative support for the inadequacy of classification approaches.",
+    "evaluation": "Claims C41-C59 demonstrate limitations of k-means clustering through empirical analysis. The observation of cluster heterogeneity (C56-C57) is supported by visual evidence in Figure 1C, and the quantitative distributions (C50-C55) are shown in Figure 1D. The finding that 60% of cells don't fit established categories (C59) effectively motivates the need for alternative approaches.",
     "result_type": "MAJOR"
   },
   {
@@ -88,9 +89,6 @@
       "C36",
       "C37",
       "C38",
-      "C39",
-      "C40",
-      "C60",
       "C61",
       "C62",
       "C63",
@@ -101,74 +99,82 @@
       "C68",
       "C69",
       "C70",
-      "C71"
+      "C71",
+      "C72"
     ],
-    "result": "MorphoCellSorter is a novel automated tool that computes 20 morphological parameters, uses PCA to select the most discriminant parameters, and employs Andrews plots to rank cells along a morphological continuum rather than classifying them into discrete categories.",
+    "result": "MorphoCellSorter is a new automated tool that uses PCA to select the most discriminant morphological parameters from 20 computed indices, then employs Andrews plots to generate a continuous ranking of cells based on their morphology. The method was developed on a rat ischemic stroke dataset where PC1 and PC2 account for over 70% of variance.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C5-C6 and C34-C71 describe the development and methodology of MorphoCellSorter. The approach is well-documented with clear descriptions of PCA-based parameter selection (C35, C66-C69) and the novel use of Andrews plots for ranking (C37, C70-C71). The methodology is supported by Figure 2, which illustrates each step. The choice to rank rather than classify (C60) directly addresses the limitations identified in earlier results.",
+    "evaluation": "Claims C5-C72 describe the core methodology of MorphoCellSorter with appropriate technical detail. The PCA approach (C67-C68) follows standard statistical principles, and the use of Andrews plots for ranking (C71-C72) is novel and well-justified. The methodology is clearly illustrated in Figure 2, and the technical implementation appears sound.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R5",
     "claim_ids": [
-      "C72",
       "C73",
       "C74",
       "C75",
       "C76",
       "C77",
       "C78",
-      "C79"
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C135",
+      "C136",
+      "C137"
     ],
-    "result": "MorphoCellSorter's automated ranking shows high correlation with manual expert rankings (Spearman's rS = 0.96 and 0.97 for two experts), with variability comparable to inter-expert variability (rS = 0.93), demonstrating that the automated method is as reliable as manual assessment.",
+    "result": "The automated ranking from MorphoCellSorter was validated against manual expert rankings, showing high Spearman correlations (rS = 0.96 with expert 1, rS = 0.97 with expert 2). The correlation between two expert rankings was rS = 0.93, indicating that automated ranking has comparable or better consistency than manual approaches.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C72-C79 present validation results comparing automated to manual rankings (Figure 3). The high Spearman correlation coefficients (C74-C76) demonstrate strong agreement. Critically, the comparison between two expert rankings (C76-C77) shows similar or greater variability than automated vs. manual comparisons, validating the automated approach. The statistical analysis is appropriate for rank-order data.",
+    "evaluation": "Claims C73-C82 and C135-C137 provide strong validation evidence with appropriate statistical tests. The Spearman correlations are high and statistically significant (p<0.0001), and the comparison showing that inter-expert variability (rS=0.93) is similar to or greater than automated-expert variability demonstrates the objectivity advantage of the automated method. The validation approach is rigorous and well-executed.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R6",
     "claim_ids": [
-      "C80",
-      "C81",
-      "C100",
-      "C101",
-      "C107"
+      "C7",
+      "C8",
+      "C39",
+      "C40",
+      "C83",
+      "C103",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
     ],
-    "result": "MorphoCellSorter was validated on five diverse datasets (different species, ages, imaging techniques, and tissue preparations), with a threshold of 0.8 for parameter selection providing optimal rankings across all datasets.",
+    "result": "MorphoCellSorter was tested on five heterogeneous datasets (different species, ages, imaging techniques, and experimental conditions). A threshold of 0.8 for parameter selection (leading to 11-12 parameters) provided good rankings across all datasets. Some parameters (ramification index, perimeter area ratio) were consistently selected, while others (inertia, linearity) were never selected.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C80-C81 and C100-C101 describe comprehensive validation testing shown in Table 1 and Figure 4. The testing across heterogeneous datasets (different animals, ages, imaging modalities) demonstrates broad applicability. The systematic evaluation of different thresholds (C81, C107, Table 1) provides empirical justification for the recommended threshold of 0.8. The Spearman correlations in Table 1 show consistently high agreement with expert rankings across all datasets.",
+    "evaluation": "Claims C7-C8, C39-C40, C83, C103, C107-C110 demonstrate broad applicability through systematic testing across diverse conditions. Table 1 shows Spearman correlations ranging from 0.744 to 0.972 across different datasets and thresholds, supporting the robustness claim. The identification of consistently selected vs. never-selected parameters (C109-C110) provides useful insights, though the biological interpretation of why certain parameters are never selected could be explored further.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R7",
     "claim_ids": [
-      "C82",
-      "C83",
       "C84",
       "C85",
       "C86",
       "C87",
       "C88",
-      "C102"
+      "C89",
+      "C90"
     ],
-    "result": "In an Alzheimer's disease mouse model, MorphoCellSorter detected significant morphological differences between APPxPS1-KI and control microglia, with only 16.4% overlap in distributions and decreased ramification in APPxPS1-KI cells, but no differences in linearity or polarity.",
+    "result": "In an Alzheimer's disease mouse model, MorphoCellSorter detected significant morphological differences between APPxPS1-KI and control microglia, with only 16.4% overlap in distributions. Morphological complexity parameters showed decreased ramification in APPxPS1-KI microglia, but linearity and polarity were not significantly different.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C82-C88 present application of MorphoCellSorter to an AD model (Figure 5). The automated ranking successfully segregated control and APPxPS1-KI populations (C83), with quantitative overlap analysis (C84). The morphological parameter analysis (C85-C87) shows specific differences in complexity measures but not in linearity/polarity, demonstrating the tool's ability to detect nuanced morphological changes. Statistical testing appears appropriate (linear mixed models), though sample sizes are modest (N=3 mice per group).",
+    "evaluation": "Claims C84-C90 demonstrate successful application to detect pathological changes. The segregation of populations (C84) is clearly shown in Figure 5B, the 16.4% overlap (C85) is quantified in Figure 5C, and the statistical comparisons of individual parameters (C87-C89) are shown in Figure 5D-W with appropriate statistical tests (linear mixed models). The selective changes in complexity but not linearity/polarity parameters provide biologically meaningful insights.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R8",
     "claim_ids": [
-      "C89",
-      "C90",
       "C91",
       "C92",
       "C93",
@@ -176,59 +182,88 @@
       "C95",
       "C96",
       "C97",
-      "C103"
+      "C98",
+      "C99"
     ],
-    "result": "In a congenital central hypoventilation syndrome (CCHS) embryonic model, MorphoCellSorter found no significant morphological differences between wildtype and Phox2b mutant microglia, with 78.9% overlap in distributions and no significant differences in morphological indices.",
+    "result": "In a congenital central hypoventilation syndrome (CCHS) embryonic mouse model, MorphoCellSorter found no significant morphological differences between WT and Phox2b mutant microglia, with 78.9% overlap in distributions. Both populations showed high morphological variability consistent with developing microglia.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C89-C97 present application to an embryonic CCHS model (Figure 6). The tool successfully analyzed embryonic microglia, which show high morphological variability (C93-C94), consistent with cited literature. The finding of no significant differences (C95-C97) is a valid negative result, properly supported by statistical analysis and high distribution overlap (C96). The authors appropriately note this may be stage-specific and suggest additional experiments are needed.",
+    "evaluation": "Claims C91-C99 demonstrate that the tool can also identify the absence of morphological changes. The high overlap (78.9%, C97) and lack of significant differences (C96, C98) are clearly shown in Figure 6C and 6D-W. The interpretation that high variability is consistent with developing microglia (C94-C95) is appropriately supported by citation. This negative result is valuable for demonstrating specificity, though the authors appropriately note that additional experiments are needed to determine if this is stage-specific.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R9",
     "claim_ids": [
-      "C7",
-      "C8",
-      "C9",
-      "C98",
-      "C99",
+      "C100",
+      "C101",
       "C104",
       "C105",
       "C106",
-      "C108",
-      "C109",
-      "C110",
       "C111",
       "C112",
       "C113",
-      "C120",
-      "C121"
+      "C114",
+      "C115",
+      "C116",
+      "C117"
     ],
-    "result": "MorphoCellSorter is a versatile, open-source tool that enables automated morphological analysis across diverse experimental conditions, autonomously identifies discriminant parameters, and provides continuous ranking rather than arbitrary classification, addressing key limitations of existing methods.",
+    "result": "MorphoCellSorter provides automated measurement of morphological descriptors and enables meaningful population comparisons through continuous ranking rather than classification. This approach overcomes limitations of clustering methods (k-means, hierarchical) and AI-based classification that impose arbitrary categories on continuous morphological variation.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C7-C9 and C98-C121 summarize the tool's capabilities and advantages. The broad applicability is demonstrated by successful application across multiple datasets (C7-C8). The autonomous parameter selection (C104, C108-C109) and continuous ranking approach (C111, C113) directly address limitations identified earlier. The tool is available as open-source code (C121), supporting reproducibility. The conceptual advantages of ranking over classification (C106, C113) are well-justified by the biological reality of morphological continua.",
+    "evaluation": "Claims C100-C117 summarize the tool's capabilities and advantages. The critiques of alternative approaches (C113-C115) are well-supported by citations and the empirical demonstration of k-means limitations. The conceptual advantage of ranking over classification (C112, C116) is logically sound given the continuum nature of morphology. The suggestion that Andrews plots could also be used for clustering (C117) is reasonable speculation based on the methodology.",
     "result_type": "MAJOR"
   },
   {
     "result_id": "R10",
     "claim_ids": [
-      "C114",
-      "C115",
-      "C116",
-      "C117",
       "C118",
       "C119",
+      "C120",
+      "C121",
       "C122",
-      "C123"
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
     ],
-    "result": "MorphoCellSorter has acknowledged limitations including use of 2D projections rather than 3D reconstructions and lack of integrated segmentation, but is designed as a rapid screening tool that can be complemented with additional analyses such as marker expression or spatial transcriptomics.",
+    "result": "MorphoCellSorter was designed to work with 2D Z-stack projections rather than 3D reconstructions to enable fast, broadly applicable analysis. The tool does not require perfect segmentation and can work with lower-resolution microscopes, though segmentation quality affects ranking results. The approach does not provide precise 3D measurements but serves as a rapid screening method.",
     "reviewer_id": "OpenEval",
     "reviewer_name": "OpenEval",
     "evaluation_type": "SUPPORTED",
-    "evaluation": "Claims C114-C123 discuss limitations and future directions. The authors transparently acknowledge the 2D limitation (C117) and justify it based on the goal of developing a broadly applicable, rapid method (C118-C119). The lack of integrated segmentation (C115-C116) is explained as a deliberate design choice to accommodate diverse imaging conditions. Future applications (C122-C123) are appropriately framed as speculation rather than demonstrated capabilities.",
+    "evaluation": "Claims C118-C128 transparently discuss design decisions and limitations. The rationale for 2D analysis (C124-C125) is practical and well-justified. The acknowledgment that the method doesn't provide precise 3D measurements (C126) while citing tools that do (C127) is appropriately honest. The characterization as a rapid screening method (C128) accurately positions the tool's intended use case. However, the lack of systematic evaluation of how segmentation quality or microscope resolution affects ranking accuracy is a limitation.",
     "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "MorphoCellSorter is an efficient, user-friendly, open-source tool available on GitHub that can be complemented with additional measures such as marker expression. The emergence of spatial transcriptomics provides promising opportunities for linking morphology to phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 describe the tool's accessibility and future applications. The open-source availability (C130) is verifiable and important for reproducibility. The suggestions for complementary analyses (C131) and spatial transcriptomics integration (C132) are reasonable forward-looking statements, though they remain speculative until demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C33",
+      "C4"
+    ],
+    "result": "Microglial morphology represents a continuum rather than discrete categories, making classification approaches biologically arbitrary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C33, and C4 present the core conceptual argument motivating the ranking approach. This is well-supported by recent citation (Paolicelli et al., 2022) and is consistent with the empirical observations of cluster heterogeneity demonstrated in the k-means analysis. The continuum concept is central to justifying the methodological innovation.",
+    "result_type": "MAJOR"
   }
 ]
